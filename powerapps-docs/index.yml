@@ -1,0 +1,127 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Microsoft PowerApps 文档
+metadata:
+  title: Microsoft PowerApps 文档、视频、引用等
+  description: 通过使用此处提供的资源开始在 PowerApps 中创建、自定义和共享应用。
+  author: SKjerland
+  manager: anneta
+  layout: LandingPage
+  ms.assetid: null
+  ms.service: powerapps
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 11/05/2017
+  ms.author: sharik
+sections:
+  - items:
+      - type: markdown
+        text: |
+          通过使用此处提供的资源开始创建、自定义和共享应用。 你可以先自动生成一个应用，然后对其进行自定义，也可以尝试从零开始生成应用。
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: guided-learning
+            html: <p>体验引导式学习课程</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_overview.svg'
+            title: 体验教程
+          - href: getting-started
+            html: <p>概要了解 PowerApps</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
+            title: 入门
+          - href: webinars-listing
+            html: <p>按需观看实时网络研讨会</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_video.svg'
+            title: 向专家学习
+          - href: 'https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1'
+            html: <p>加入 PowerApps 社区</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_configure-teams.svg'
+            title: 与其他人沟通
+          - href: 'https://powerapps.microsoft.com/blog/'
+            html: <p>查看 PowerApps 博客</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_blog.svg'
+            title: 随时了解
+          - href: 'https://powerapps.microsoft.com/support/'
+            html: <p>获取帮助和支持</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_support.svg'
+            title: 我们很乐意为你提供帮助
+  - title: 分步教程
+    items:
+      - type: paragraph
+        text: 了解有关如何生成应用的基础知识。
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: app-from-sharepoint
+            title: 生成应用以管理 SharePoint 列表中的数据
+            image:
+              src: media/index/i_sharepoint-list.svg
+          - href: get-started-create-from-data
+            title: 通过 Excel 数据生成应用
+            image:
+              src: media/index/i_excel-data.svg
+          - href: get-started-test-drive
+            title: 从模板创建并运行应用
+            image:
+              src: media/index/i_template.svg
+          - href: get-started-create-from-blank
+            title: 从头开始创建应用
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+          - href: connections-list
+            title: 连接器概述
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_multi-connect.svg'
+          - href: working-with-formulas
+            title: 公式入门
+            image:
+              src: media/index/i_formula.svg
+  - title: PowerApps 视频概述
+    items:
+      - type: markdown
+        text: '<iframe width="560" height="315" src="https://www.youtube.com/embed/sEHsnVIx31E" frameborder="0" allowfullscreen></iframe>'
+  - title: 高级教程
+    items:
+      - type: paragraph
+        text: 了解更多高级概念。
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: working-with-data-sources
+            title: 了解数据源
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
+          - href: working-with-tables
+            title: 了解表和记录
+            image:
+              src: media/index/i_table.svg
+          - href: working-with-forms
+            title: 了解数据表单
+            image:
+              src: media/index/i_form.svg
+          - href: working-with-variables
+            title: 了解变量
+            image:
+              src: media/index/i_variable.svg
+          - href: gateway-reference
+            title: 了解本地数据网关
+            image:
+              src: media/index/i_data-gateway.svg
+          - href: data-platform-intro
+            title: 了解 Common Data Service 中的实体
+            image:
+              src: media/index/i_common-data-service.svg

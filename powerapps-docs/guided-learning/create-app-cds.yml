@@ -1,0 +1,47 @@
+### YamlMime:YamlDocument
+documentType: Tutorial
+title: 利用 Common Data Service 创建应用
+metadata:
+  title: 利用 Common Data Service 创建应用 | Microsoft PowerApps
+  description: 生成基于 Common Data Service 的三屏应用，然后探索并更新应用。
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: manage-apps
+  nextTutorialTitle: 管理应用
+  displayType: one-column
+  author: mgblythe
+  manager: anneta
+  ms.service: powerapps
+  ms.topic: get-started-article
+  ms.date: 10/27/2017
+  ms.author: mblythe
+items:
+  - durationInMinutes: 1
+    content: |
+      生成基于 Common Data Service 的三屏应用，然后通过应用探索屏幕和控件。 更新应用屏幕、控件和字段；引入其他数据并在应用中触发流。
+  - title: 生成应用
+    durationInMinutes: 6
+    content: |
+      > [!Video https://www.youtube.com/embed/Gi5TQF7_pz8?rel=0]
+
+      [!INCLUDE [](includes/learning-case-app-generate.md)]
+  - title: 探索生成的应用
+    durationInMinutes: 5
+    content: |
+      > [!Video https://www.youtube.com/embed/98d6SZueEek?rel=0]
+
+      [!INCLUDE [](includes/learning-case-app-explore-controls.md)]
+  - title: 自定义应用
+    durationInMinutes: 12
+    content: |
+      > [!Video https://www.youtube.com/embed/wHy72cOe8Os?rel=0]
+
+      [!INCLUDE [](includes/learning-case-app-customize.md)]
+  - title: 添加数据源和流
+    durationInMinutes: 11
+    content: |
+      > [!Video https://www.youtube.com/embed/Y057qUJ2NNk?rel=0]
+
+      [!INCLUDE [](includes/learning-case-app-add-source.md)]
+  - content: |
+      你已完成“Microsoft PowerApps 引导式学习课程”中的“利用 Common Data Service 创建应用”部分。

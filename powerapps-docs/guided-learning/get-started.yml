@@ -1,0 +1,57 @@
+### YamlMime:YamlDocument
+documentType: Tutorial
+title: 入门
+metadata:
+  title: 入门 | Microsoft PowerApps
+  description: 了解什么是 PowerApps，及其软件元素和相关技术。
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: create-app-sharepoint
+  nextTutorialTitle: 利用 SharePoint 创建应用
+  displayType: one-column
+  author: mgblythe
+  manager: anneta
+  ms.service: powerapps
+  ms.topic: get-started-article
+  ms.date: 10/27/2017
+  ms.author: mblythe
+items:
+  - durationInMinutes: 1
+    content: |
+      了解什么是 PowerApps，及其软件元素和相关技术。 查看可以创建应用的不同方式，然后生成基于 SharePoint 列表的应用。
+  - title: PowerApps 简介
+    durationInMinutes: 5
+    content: |
+      > [!Video https://www.youtube.com/embed/n9fkvkekINE?rel=0]
+
+      [!INCLUDE [](includes/learning-introducing-powerapps.md)]
+  - title: PowerApps 组成部分
+    durationInMinutes: 6
+    content: |
+      > [!Video https://www.youtube.com/embed/r6mowYePq1Q?rel=0]
+
+      [!INCLUDE [](includes/learning-powerapps-parts.md)]
+  - title: 相关技术
+    durationInMinutes: 6
+    content: |
+      > [!Video https://www.youtube.com/embed/C81IfqIn9LI?rel=0]
+
+      [!INCLUDE [](includes/learning-related-technologies.md)]
+  - title: 快速了解如何创建应用
+    durationInMinutes: 6
+    content: |
+      > [!Video https://www.youtube.com/embed/NOv3kacXqho?rel=0]
+
+      [!INCLUDE [](includes/learning-quick-look-powerapps.md)]
+  - title: 创建第一个应用
+    durationInMinutes: 5
+    content: |
+      > [!Video https://www.youtube.com/embed/ixRpT48Z6IQ?rel=0]
+
+      [!INCLUDE [](includes/learning-create-first-app-powerapps.md)]
+  - title: 本部分回顾
+    durationInMinutes: 2
+    content: |
+      [!INCLUDE [](includes/learning-review-section-one.md)]
+  - content: |
+      你已完成“Microsoft PowerApps 引导式学习课程”中的“入门”部分。
