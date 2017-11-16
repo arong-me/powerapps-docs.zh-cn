@@ -1,0 +1,82 @@
+---
+title: "了解 Common Data Service 实体 | Microsoft 文档"
+description: "定义和使用映射到业务数据和流程的实体"
+services: 
+suite: powerapps
+documentationcenter: na
+author: mgblythe
+manager: anneta
+editor: 
+tags: 
+featuredvideoid: JJa6n_YaD-w
+courseduration: 8m
+ms.service: powerapps
+ms.devlang: na
+ms.topic: get-started-article
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 12/09/2016
+ms.author: mblythe
+ms.openlocfilehash: 3239a2c90edcd4274f9fabbbb47bd110c3ebcee6
+ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/07/2017
+---
+# <a name="understand-entities"></a>了解实体
+在此部分的第一个主题中，我们介绍了 Common Data Service，其中包含通用数据模型。 相对应的，此模型包含实体。 实体是可以修改、存储、检索和交互的共享数据区块。 此主题将详细介绍实体、字段和数据类型。
+
+## <a name="standard-entities"></a>标准实体
+通用数据模型附带一组标准实体，可满足各种常见业务需求。 下图展示了一些标准实体。
+
+![Common Data Service 标准实体](./media/learning-common-data-service-entities/standard-entities.png)
+
+实体分为不同类别，以便可以轻松判断通常可以在解决方案中结合使用哪些实体。
+
+| 功能组 | 说明 |
+| --- | --- |
+| 客户服务 |“客户服务”实体负责管理客户遇到的问题，包括跟踪、升级和文档处理。 |
+| 基金会 |基金会实体所含信息几乎与每个其他实体组相关。 该组包含诸如地址和货币等实体。 |
+| 人员、组织和组 |这些实体包含一组可以与之进行交互的大量人员和组织，包括员工、承办商、捐赠者、志愿者、爱好者、校友和家庭。 |
+| 采购 |可通过采购实体创建采购解决方案。 |
+| 销售热线 |借助“销售”实体，可以创建端到端销售解决方案，包括跟踪潜在客户和商机、跟进联系人、接受并提交订单以及发送发票。 |
+
+## <a name="fields-and-data-types"></a>字段和数据类型
+每个实体均包含一组默认字段，不能更改，也不能删除。 一些字段（如“**联系人 ID**”）专用于某个实体。 另一些字段（如“**创建日期/时间**”）对所有实体都通用。 可以通过添加字段来扩展标准实体。 只需单击或点击“**添加字段**”并指定新字段的属性即可。
+
+![“联系人”实体中的字段和数据类型](./media/learning-common-data-service-entities/contact-entity-fields.png)
+
+如果需要完全不同的实体（即扩展标准实体还不够），请创建自定义实体。 下一主题将对此进行介绍。
+
+实体中的每个字段都对应有一种数据类型（如数字）。 设置不同的数据类型（而不是一种通用的数据类型）十分有用，因为这样应用就可执行各种类型的炫酷操作。 例如，若字段的数据类型为数字，当用户编辑此字段时，应用可以使用滑块控件。 可以从十多个数据类型中进行选择，下面列出了一些具有代表性的数据类型：
+
+* 基本类型：如文本和数字
+* 更复杂的类型：如电子邮件地址和电话号码
+* 特殊类型：如查找（用于创建关系）和选择列表（用于保留一组固定的字段值）  
+
+## <a name="working-with-entities"></a>处理实体
+打开实体后，即可看到大量信息和可以执行的多项操作。 我们将简要介绍一下可用的选项卡，以及可执行的实体数据管理操作。
+
+![实体选项卡](./media/learning-common-data-service-entities/entity-tabs.png)
+
+* **字段**：查看字段和数据类型，并添加字段，如上文所述。
+* **密钥**：标识实体中各行的字段，如“联系人”实体的“联系人 ID”。
+* **关系**：相关实体之间的联系，如“产品”和“产品类别”。 下一主题将举例说明。
+* **字段组**：用于控制各种行为，例如在 PowerApps 中创建应用屏幕时，自动显示哪些字段。
+* **数据**：浏览导入的示例数据和你自己的数据。
+
+![实体操作](./media/learning-common-data-service-entities/entity-actions.png)
+
+* **在 Excel 中打开**：如果安装了 PowerApps 外接程序，可以使用此选项在 Excel 中浏览和编辑数据。
+* **导入数据**：从 Excel 和 CSV 文件导入数据。
+* **导出数据**：将数据导出到 Excel 文件。
+* **导出模板**：将实体结构导出到 Excel 文件，以便填充文件并将其重新导入实体。
+* **设置**和**删除**：不适用于标准实体。
+
+## <a name="connecting-to-a-standard-entity-in-powerapps-studio"></a>在 PowerApps Studio 中连接标准实体
+至此，你已了解实体的概念，我们将介绍如何在 PowerApps Studio 中连接“联系人”实体。 依次单击“**新建**”和“**Common Data Service**”下的“**手机布局**”。 左侧显示可用的数据连接，右侧显示实体列表。 尝试自行连接，并生成基于实体的应用。
+
+![在 PowerApps Studio 中连接实体](./media/learning-common-data-service-entities/connect-to-standard-entity.png)
+
+下一主题将介绍如何创建自定义实体以及实体之间的关系。
+
