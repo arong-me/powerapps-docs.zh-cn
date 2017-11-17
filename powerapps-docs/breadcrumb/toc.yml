@@ -1,0 +1,11 @@
+- name: 文档
+  href: /
+  topicHref: /
+  items:
+    - name: PowerApp
+      tocHref: /powerapps/
+      topicHref: /powerapps/
+      items:
+        - name: 引导学习
+          tocHref: /powerapps/guided-learning/
+          topicHref: /powerapps/guided-learning/
