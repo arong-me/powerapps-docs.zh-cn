@@ -242,7 +242,7 @@ ms.lasthandoff: 11/07/2017
 ## <a name="release-20480"></a>版本 2.0.480
 1. **在浏览器中创建和修改应用**。
    
-    打开 PowerApps Studio 或浏览器（例如 Edge、Chrome 或 Internet Explorer 11）即可创建和修改应用。 有关详细信息，请参阅 [在浏览器中创建应用](create-app-browser.md)。
+    打开 PowerApps Studio 或浏览器（例如 Microsoft Edge、Chrome 或 Internet Explorer 11）即可创建和修改应用。 有关详细信息，请参阅 [在浏览器中创建应用](create-app-browser.md)。
 2. **从 SharePoint 中的现代列表内创建应用**。
    
     有关详细信息，请参阅此 [博客文章](http://go.microsoft.com/fwlink/?LinkID=808680)。
