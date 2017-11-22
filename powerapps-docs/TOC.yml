@@ -32,27 +32,31 @@
       href: open-and-run-a-sample-app.md
     - name: 使用模板
       href: get-started-test-drive.md
-- name: 利用 SharePoint 创建应用
+- name: 从 SharePoint 列表开始
   items:
-    - name: 从 SharePoint 开始
+    - name: 利用 SharePoint 创建应用
       href: generate-app-from-sharepoint-list-interface.md
-    - name: 从 PowerApps 开始
+    - name: 从 PowerApps 创建应用
       href: app-from-sharepoint.md
+    - name: 使用 PowerApps 自定义列表窗体
+      href: customize-list-form.md
+    - name: 了解 SharePoint 窗体集成
+      href: sharepoint-form-integration.md
     - name: 创建连接
       href: connect-to-sharepoint.md
-    - name: 自定义布局
+    - name: 自定义库布局
       href: customize-layout-sharepoint.md
-    - name: 自定义表单
+    - name: 自定义 PowerApps 窗体
       href: customize-forms-sharepoint.md
     - name: 自定义卡片
       href: customize-card.md
-    - name: 添加查找字段
+    - name: 使用查找功能连接列表
       href: sharepoint-lookup-fields.md
-- name: 利用其他数据源创建应用
+- name: 开始处理其他数据源
   items:
-    - name: 来自实体
+    - name: 从实体创建应用
       href: data-platform-create-app.md
-    - name: 从 Excel 数据
+    - name: 通过 Excel 数据创建应用
       href: get-started-create-from-data.md
     - name: 公式入门
       href: working-with-formulas.md
