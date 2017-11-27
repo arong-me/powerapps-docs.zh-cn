@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/13/2017
 ms.author: sharik
-ms.openlocfilehash: 162314b1bb94e8358e5ddb290adf9db9f43950a0
-ms.sourcegitcommit: ce66ba8eadc41d5f260217d164f8317b90ae1504
+ms.openlocfilehash: dbcafbc8d77aa427e5d129cb1d5760e10b1a106c
+ms.sourcegitcommit: e1572ad0f9e1f1e6149551e91a9bc1fed45e3132
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>使用 PowerApps 自定义 SharePoint 列表窗体
 
@@ -47,9 +47,16 @@ PowerApps 与 SharePoint 直接集成 - 无需将另一个应用下载到计算�
 
 ## <a name="customize-the-list-form"></a>自定义列表窗体
 
-PowerApps 提供了多种自定义窗体的方法。 例如，可以更改布局、设置文本格式、添加图像或图表、添加自定义数据验证、添加规则，或创建其他视图。
+PowerApps 提供了多种自定义窗体的方法。 下面是一些示例：
 
-假设你的窗体有你不希望显示的“AccountID”字段。
+* [更改大小和方向](set-aspect-ratio-portrait-landscape.md)
+* [设置文本格式](controls/properties-text.md)
+* [添加图像](add-images-pictures-audio-video.md)或[图表](use-line-pie-bar-chart.md)
+* [添加自定义数据验证](functions/function-validate.md)
+* [添加规则](working-with-rules.md)
+* [创建其他视图](https://powerapps.microsoft.com/blog/separate-custom-forms/)
+
+举例来说，假设需要在表单中隐藏“AccountID”字段。
 
 ![选择“AccountID”字段](./media/customize-list-form/select-card.png)
 
@@ -57,7 +64,7 @@ PowerApps 提供了多种自定义窗体的方法。 例如，可以更改布局
 
 ![清除“AccountID”复选框](./media/customize-list-form/checkbox.png)
 
-有关如何隐藏字段和更改其他窗体的分步说明，请参阅[在 PowerApps 中自定义窗体](customize-forms-sharepoint.md)。
+有关如何隐藏字段和更改其他窗体的分步说明，请参阅[在 PowerApps 中自定义窗体](customize-forms-sharepoint.md)。 有关资源的完整列表，请参阅 [Microsoft PowerApps 文档](https://docs.microsoft.com/powerapps/)。
 
 ## <a name="save-and-publish-the-list-form-back-to-sharepoint"></a>保存并将列表窗体发布回 SharePoint
 
