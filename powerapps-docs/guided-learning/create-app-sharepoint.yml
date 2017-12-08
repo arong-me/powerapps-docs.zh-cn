@@ -1,13 +1,12 @@
-### YamlMime:YamlDocument
 documentType: Tutorial
-title: 利用 SharePoint 创建应用
+title: "利用 SharePoint 创建应用"
 metadata:
-  title: 利用 SharePoint 创建应用 | Microsoft PowerApps
-  description: 生成基于 SharePoint 列表的三屏应用，然后探索并更新应用。
+  title: "利用 SharePoint 创建应用 | Microsoft PowerApps"
+  description: "生成基于 SharePoint 列表的三屏应用，然后探索并更新应用。"
   audience: Business User
   level: Beginner
   nextTutorialHref: create-app-cds
-  nextTutorialTitle: 利用 Common Data Service 创建应用
+  nextTutorialTitle: "利用 Common Data Service 创建应用"
   displayType: one-column
   author: mgblythe
   manager: anneta
@@ -16,32 +15,39 @@ metadata:
   ms.date: 10/27/2017
   ms.author: mblythe
 items:
-  - durationInMinutes: 1
-    content: |
-      生成基于 SharePoint 列表的三屏应用，然后通过应用探索屏幕和控件。 更新应用屏幕、控件和字段，并使用公式来进一步自定义应用行为。
-  - title: 生成应用
-    durationInMinutes: 3
-    content: |
-      > [!Video https://www.youtube.com/embed/m6KfAwEdtYU?rel=0]
+- durationInMinutes: 1
+  content: "生成基于 SharePoint 列表的三屏应用，然后通过应用探索屏幕和控件。 更新应用屏幕、控件和字段，并使用公式来进一步自定义应用行为。\n"
+  ms.openlocfilehash: b18bd904adbe96d473e170443945c6464c02d6ea
+  ms.sourcegitcommit: fb1a20690729f1958a27bd553774a6047a2cd54e
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/12/2017
+- title: "生成应用"
+  durationInMinutes: 3
+  content: >
+    > [!Video https://www.youtube.com/embed/m6KfAwEdtYU?rel=0]
 
-      [!INCLUDE [](includes/learning-spo-app-generate.md)]
-  - title: 探索生成的应用
-    durationInMinutes: 5
-    content: |
-      > [!Video https://www.youtube.com/embed/OJ8a9VINeKU?rel=0]
 
-      [!INCLUDE [](includes/learning-spo-app-explore-controls.md)]
-  - title: 自定义应用
-    durationInMinutes: 5
-    content: |
-      > [!Video https://www.youtube.com/embed/KydeusvKndQ?rel=0]
+    [!INCLUDE [](includes/learning-spo-app-generate.md)]
+- title: "探索生成的应用"
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/OJ8a9VINeKU?rel=0]
 
-      [!INCLUDE [](includes/learning-spo-app-customize.md)]
-  - title: 探索应用公式
-    durationInMinutes: 9
-    content: |
-      > [!Video https://www.youtube.com/embed/9TBA19YU7EA?rel=0]
 
-      [!INCLUDE [](includes/learning-spo-app-explore-formulas.md)]
-  - content: |
-      你已完成“Microsoft PowerApps 引导式学习课程”中的“利用 Sharepoint 创建应用”部分。
+    [!INCLUDE [](includes/learning-spo-app-explore-controls.md)]
+- title: "自定义应用"
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/KydeusvKndQ?rel=0]
+
+
+    [!INCLUDE [](includes/learning-spo-app-customize.md)]
+- title: "探索应用公式"
+  durationInMinutes: 9
+  content: >
+    > [!Video https://www.youtube.com/embed/9TBA19YU7EA?rel=0]
+
+
+    [!INCLUDE [](includes/learning-spo-app-explore-formulas.md)]
+- content: "你已完成“Microsoft PowerApps 引导式学习课程”中的“利用 Sharepoint 创建应用”部分。\0"

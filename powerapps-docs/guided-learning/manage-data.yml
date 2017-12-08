@@ -1,9 +1,8 @@
-### YamlMime:YamlDocument
 documentType: Tutorial
-title: 管理数据
+title: "管理数据"
 metadata:
-  title: 管理数据 |Microsoft PowerApps
-  description: 了解如何存储、建模、扩展和保护 Common Data Service 中的数据。
+  title: "管理数据 |Microsoft PowerApps"
+  description: "了解如何存储、建模、扩展和保护 Common Data Service 中的数据。"
   audience: Business User
   level: Beginner
   displayType: one-column
@@ -14,38 +13,46 @@ metadata:
   ms.date: 10/27/2017
   ms.author: mblythe
 items:
-  - durationInMinutes: 1
-    content: |
-      了解如何存储和建模 Common Data Service 中的数据。 定义和使用映射到业务数据和流程的实体，并使用自定义实体扩展通用数据模型。 使用基于角色的安全性来控制对实体的访问权限。 直接处理服务和 Excel 中的数据。
-  - title: Common Data Service
-    durationInMinutes: 5
-    content: |
-      > [!Video https://www.youtube.com/embed/os33pHQ9jSU?rel=0]
+- durationInMinutes: 1
+  content: "了解如何存储和建模 Common Data Service 中的数据。 定义和使用映射到业务数据和流程的实体，并使用自定义实体扩展通用数据模型。 使用基于角色的安全性来控制对实体的访问权限。 直接处理服务和 Excel 中的数据。\n"
+  ms.openlocfilehash: 78638bd391ae00e2305b5be8b37a078296d98401
+  ms.sourcegitcommit: fb1a20690729f1958a27bd553774a6047a2cd54e
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/12/2017
+- title: Common Data Service
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/os33pHQ9jSU?rel=0]
 
-      [!INCLUDE [](includes/learning-common-data-service.md)]
-  - title: 了解 Common Data Service 实体
-    durationInMinutes: 8
-    content: |
-      > [!Video https://www.youtube.com/embed/JJa6n_YaD-w?rel=0]
 
-      [!INCLUDE [](includes/learning-common-data-service-entities.md)]
-  - title: 创建自定义实体
-    durationInMinutes: 6
-    content: |
-      > [!Video https://www.youtube.com/embed/qg25q3MjFBo?rel=0]
+    [!INCLUDE [](includes/learning-common-data-service.md)]
+- title: "了解 Common Data Service 实体"
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/JJa6n_YaD-w?rel=0]
 
-      [!INCLUDE [](includes/learning-common-data-service-custom-entities.md)]
-  - title: 管理实体数据
-    durationInMinutes: 7
-    content: |
-      > [!Video https://www.youtube.com/embed/n6RizzixvxM?rel=0]
 
-      [!INCLUDE [](includes/learning-common-data-service-manage.md)]
-  - title: Common Data Service 安全性
-    durationInMinutes: 8
-    content: |
-      > [!Video https://www.youtube.com/embed/uwm8ghMUCeI?rel=0]
+    [!INCLUDE [](includes/learning-common-data-service-entities.md)]
+- title: "创建自定义实体"
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/qg25q3MjFBo?rel=0]
 
-      [!INCLUDE [](includes/learning-common-data-service-security.md)]
-  - content: |
-      你已完成“Microsoft PowerApps 引导式学习课程”中的“管理数据”部分。
+
+    [!INCLUDE [](includes/learning-common-data-service-custom-entities.md)]
+- title: "管理实体数据"
+  durationInMinutes: 7
+  content: >
+    > [!Video https://www.youtube.com/embed/n6RizzixvxM?rel=0]
+
+
+    [!INCLUDE [](includes/learning-common-data-service-manage.md)]
+- title: "Common Data Service 安全性"
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/uwm8ghMUCeI?rel=0]
+
+
+    [!INCLUDE [](includes/learning-common-data-service-security.md)]
+- content: "你已完成“Microsoft PowerApps 引导式学习课程”中的“管理数据”部分。\0"

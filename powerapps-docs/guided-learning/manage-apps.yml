@@ -1,13 +1,12 @@
-### YamlMime:YamlDocument
 documentType: Tutorial
-title: 管理应用
+title: "管理应用"
 metadata:
-  title: 管理应用 | Microsoft PowerApps
-  description: 共享应用、控制使用和共享的应用版本，并使用容器。
+  title: "管理应用 | Microsoft PowerApps"
+  description: "共享应用、控制使用和共享的应用版本，并使用容器。"
   audience: Business User
   level: Beginner
   nextTutorialHref: manage-data
-  nextTutorialTitle: 管理数据
+  nextTutorialTitle: "管理数据"
   displayType: one-column
   author: mgblythe
   manager: anneta
@@ -16,24 +15,29 @@ metadata:
   ms.date: 10/27/2017
   ms.author: mblythe
 items:
-  - durationInMinutes: 1
-    content: |
-      与同事和其他人共享应用，并控制使用和共享的应用版本。 使用应用、连接和其他资源的容器。
-  - title: 共享应用
-    durationInMinutes: 5
-    content: |
-      > [!Video https://www.youtube.com/embed/_nUU7oOy4oU?rel=0]
+- durationInMinutes: 1
+  content: "与同事和其他人共享应用，并控制使用和共享的应用版本。 使用应用、连接和其他资源的容器。\n"
+  ms.openlocfilehash: 706c686d84b520e2366e1fe8152ad9021949b0fe
+  ms.sourcegitcommit: fb1a20690729f1958a27bd553774a6047a2cd54e
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/12/2017
+- title: "共享应用"
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/_nUU7oOy4oU?rel=0]
 
-      [!INCLUDE [](includes/learning-manage-share-apps.md)]
-  - title: 对应用进行版本控制
-    durationInMinutes: 1
-    content: |
-      [!INCLUDE [](includes/learning-manage-version-apps.md)]
-  - title: 环境
-    durationInMinutes: 8
-    content: |
-      > [!Video https://www.youtube.com/embed/32olG9uCmBU?rel=0]
 
-      [!INCLUDE [](includes/learning-manage-environments.md)]
-  - content: |
-      你已完成“Microsoft PowerApps 引导式学习课程”中的“管理应用”部分。
+    [!INCLUDE [](includes/learning-manage-share-apps.md)]
+- title: "对应用进行版本控制"
+  durationInMinutes: 1
+  content: >
+    [!INCLUDE [](includes/learning-manage-version-apps.md)]
+- title: "环境"
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/32olG9uCmBU?rel=0]
+
+
+    [!INCLUDE [](includes/learning-manage-environments.md)]
+- content: "你已完成“Microsoft PowerApps 引导式学习课程”中的“管理应用”部分。\0"
