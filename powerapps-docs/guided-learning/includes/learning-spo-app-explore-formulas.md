@@ -48,8 +48,8 @@ PowerApps 的主要优势之一是，无需编写传统的应用程序代码。�
 
 至此，你已阅读完有关 SharePoint 应用的部分，可以选择接下来要浏览的主题：
 
-* [管理应用](learning-manage-share-apps.md)
-* [创建并自定义基于 Common Data Service 的应用](learning-case-app-generate.md)
+* [管理应用](../manage-apps#step-1)
+* [创建并自定义基于 Common Data Service 的应用](../create-app-cds#step-1)
 
 管理部分不仅介绍了如何共享应用和进行版本控制，还介绍了环境（即应用、数据和其他资源的容器）。 建议每个人都适时浏览管理部分，不过 Common Data Service 部分也介绍了一些非常有用的信息，包括自定义应用的更多方面。 
 
