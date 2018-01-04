@@ -9,13 +9,13 @@ PowerApps 连接你已在使用的**云服务和数据源**，以便你可以利
 ## <a name="whats-next"></a>后续部分
 祝贺你！ 你已阅读完 PowerApps 引导式课程的第一部分。 无论你最初的经验如何，我们由衷希望你现在非常明确 PowerApps 概念以及如何开始创建应用。 虽然我们在下面提供了一些实用资源和下载链接，但你仍应学习本引导式课程的更多内容。 此时，可以选择接下来要学习的部分：
 
-* [创建并自定义基于 SharePoint 列表的应用](../create-app-sharepoint#step-1)
-* [创建并自定义基于 Common Data Service 的应用](../create-app-cds#step-1) 
+* [创建并自定义基于 SharePoint 列表的应用](https://docs.microsoft.com/powerapps/guided-learning/create-app-sharepoint#step-1)
+* [创建并自定义基于 Common Data Service 的应用](https://docs.microsoft.com/powerapps/guided-learning/create-app-cds#step-1) 
 
 两个部分均介绍了如何生成和自定义应用。 SharePoint 部分详细介绍了生成的应用，而 Common Data Service 部分则介绍了更多复杂的自定义操作。 当然可以两个部分都阅读，只需任选一个部分开始阅读即可。 
 
 ## <a name="powerapps-resources"></a>PowerApps 资源
-* 使用 [PowerApps 文档](https://powerapps.microsoft.com/tutorials/getting-started/)进行深入探究
+* 使用 [PowerApps 文档](https://docs.microsoft.com/powerapps/)进行深入探究
 * 关注最新的 [PowerApps 博客](https://powerapps.microsoft.com/blog/)
 * 加入 [PowerApps 社区](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)
 * 通过提交[反馈](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas)改进 PowerApps
