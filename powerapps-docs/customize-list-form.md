@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/13/2017
+ms.date: 01/02/2018
 ms.author: sharik
-ms.openlocfilehash: dbcafbc8d77aa427e5d129cb1d5760e10b1a106c
-ms.sourcegitcommit: e1572ad0f9e1f1e6149551e91a9bc1fed45e3132
+ms.openlocfilehash: 8c46d7c5e8677d37b0a50b0c60dab4b81bd54c44
+ms.sourcegitcommit: 1083f55a35cee22920460d3d91d3ccae306a5754
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>使用 PowerApps 自定义 SharePoint 列表窗体
 
@@ -164,7 +164,7 @@ PowerApps 提供了多种自定义窗体的方法。 下面是一些示例：
 
 **答：**不能。 当前不支持此功能。
 
-### <a name="administering-your-custom-list-form"></a>管理自定义列表窗体
+### <a name="administering-custom-list-forms"></a>管理自定义列表表单
 
 问：如何与其他人共享我的自定义列表窗体？
 
@@ -173,6 +173,10 @@ PowerApps 提供了多种自定义窗体的方法。 下面是一些示例：
 问：谁可以自定义列表窗体？
 
 答：任何具有 SharePoint 权限的人员都可以管理、设计或编辑关联的列表。
+
+**问：**是否需要使用 PowerApps 许可证才能创建或使用自定义列表表单？
+
+**答：**若有任何[包含 PowerApps 的 Office 365 计划](pricing-billing-skus.md#licenses)，便可以创建或使用自定义列表表单。
 
 问：当来宾用户访问具有自定义窗体的列表时，会发生什么情况？
 
