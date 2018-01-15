@@ -150,29 +150,31 @@
       href: data-platform-interactive-excel.md
     - name: 示例和资源
       href: samples-resources.md
-- name: 集成方案
+- name: 与其他技术集成
   items:
-    - name: 与 SharePoint Online 集成（系列教程）
-      href: sharepoint-scenario-intro.md
-    - name: 设置 SharePoint Online 列表
-      href: sharepoint-scenario-setup.md
-    - name: 生成应用
-      href: sharepoint-scenario-generate-app.md
-    - name: 创建审批流
-      href: sharepoint-scenario-approval-flow.md
-    - name: 从头开始创建应用
-      href: sharepoint-scenario-build-app.md
-    - name: 创建 Power BI 报表
-      href: sharepoint-scenario-build-report.md
-    - name: 发布 Power BI 报表
-      href: sharepoint-scenario-publish-report.md
-    - name: 嵌入 Power BI 报表
-      href: sharepoint-scenario-embed-report.md
-    - name: 创建警报流
-      href: sharepoint-scenario-alerts-flow.md
-    - name: 浏览已完成方案
-      href: sharepoint-scenario-summary.md
-    - name: 集成认知服务
+    - name: 与 SharePoint Online 集成
+      items:
+        - name: SharePoint Online 集成概述
+          href: sharepoint-scenario-intro.md
+        - name: 设置 SharePoint Online 列表
+          href: sharepoint-scenario-setup.md
+        - name: 生成应用
+          href: sharepoint-scenario-generate-app.md
+        - name: 创建审批流
+          href: sharepoint-scenario-approval-flow.md
+        - name: 从头开始创建应用
+          href: sharepoint-scenario-build-app.md
+        - name: 创建 Power BI 报表
+          href: sharepoint-scenario-build-report.md
+        - name: 发布 Power BI 报表
+          href: sharepoint-scenario-publish-report.md
+        - name: 嵌入 Power BI 报表
+          href: sharepoint-scenario-embed-report.md
+        - name: 创建警报流
+          href: sharepoint-scenario-alerts-flow.md
+        - name: 浏览已完成方案
+          href: sharepoint-scenario-summary.md
+    - name: 与认知服务集成
       href: cognitive-services-api.md
 - name: 开发：企业开发人员
   items:
