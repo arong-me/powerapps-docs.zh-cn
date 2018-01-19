@@ -15,15 +15,15 @@ ms.workload: na
 ms.date: 04/28/2017
 ms.author: archanan
 ms.openlocfilehash: fd060ff873ee376b7ca886f721d360372c1d13ed
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="describe-a-custom-connector-with-postman"></a>使用 Postman 描述自定义连接器
 [Postman](https://www.getpostman.com/) 是用于加快和简化 API 开发的工具。 本教程介绍了如何创建 Postman 集合，然后你就可以使用此集合在 PowerApps 中轻松创建[自定义连接器](register-custom-api.md)了。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 * 安装 [Postman 应用](https://www.getpostman.com/apps)
 
 ## <a name="create-a-postman-collection"></a>创建 Postman 集合

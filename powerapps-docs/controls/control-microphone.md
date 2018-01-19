@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 3ffede0018a371b3c3a4cf4a3a1f9fc8115140de
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="microphone-control-in-powerapps"></a>PowerApps 中的麦克风控件
 用户可以用来记录声音的控件。
@@ -59,13 +59,13 @@ ms.lasthandoff: 11/07/2017
 
 **[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景颜色。
 
-**[Image](properties-visual.md)** – 在图像、音频或麦克风控件中显示的图像名称。
+**[Image](properties-visual.md)** - 图像、音频或麦克风控件中显示的图像名称。
 
-**[ImagePosition](properties-visual.md)** – 屏幕或控件与图像大小不同时图像的位置（“填充”、“适应”、“拉伸”、“平铺”或“居中”）。
+**[ImagePosition](properties-visual.md)** – 屏幕或控件大小与图像大小不同时，其中图像的位置（“填充”、“适应”、“拉伸”、“平铺”或“居中”）。
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 
-**OnStart** – 用户使用麦克风控件开始录制时应用的响应方式。
+**OnStart** - 用户使用麦克风控件开始录制时应用如何响应。
 
 **[PressedBorderColor](properties-color-border.md)** – 用户在点击或单击控件时，该控件边框的颜色。
 
@@ -75,13 +75,13 @@ ms.lasthandoff: 11/07/2017
 
 **[Reset](properties-core.md)** – 控件是否还原为其默认值。
 
-**[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
+**[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 

@@ -16,17 +16,17 @@ ms.workload: na
 ms.date: 10/11/2016
 ms.author: sharik
 ms.openlocfilehash: be3b366ae1e3b957b715edcb3e32e776246938cd
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="open-app-from-a-sharepoint-online-list"></a>从 SharePoint Online 列表打开应用
 可在 SharePoint Online 内打开现有应用，并管理列表。
 
 有关 SharePoint 数据 PowerApps 支持的信息类型，请参阅[已知问题](connections/connection-sharepoint-online.md#known-issues)。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 [在 SharePoint 界面中创建应用](generate-app-from-sharepoint-list-interface.md)。
 
 ## <a name="open-the-app"></a>打开应用

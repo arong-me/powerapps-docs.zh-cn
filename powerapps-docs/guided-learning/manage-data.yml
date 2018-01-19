@@ -13,14 +13,13 @@ metadata:
   ms.date: 10/27/2017
   ms.author: mblythe
   ms.openlocfilehash: 774d21575a25a8b2b0ee620b3faa681f0afc28e5
-  ms.sourcegitcommit: 9137e8800421a6623cb277d7f480d3d4f0da1a64
+  ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/09/2017
+  ms.lasthandoff: 01/12/2018
 items:
 - durationInMinutes: 1
-  content: >
-    Understand how to store and model data in the Common Data Service. Define and use entities that map to your business data and processes, and extend the common data model with custom entities. Use role-based security to control access to entities. Work with data directly in the service, and in Excel.
+  content: "了解如何存储和建模 Common Data Service 中的数据。 定义和使用映射到业务数据和流程的实体，并使用自定义实体扩展通用数据模型。 使用基于角色的安全性来控制对实体的访问权限。 直接处理服务和 Excel 中的数据。\n"
 - title: Common Data Service
   durationInMinutes: 5
   content: >
@@ -56,4 +55,4 @@ items:
 
 
     [!INCLUDE [](includes/learning-common-data-service-security.md)]
-- content: "You've completed the **Managing data** section of Microsoft PowerApps Guided Learning.\0"
+- content: "你已完成“Microsoft PowerApps 引导式学习课程”中的“管理数据”部分。\0"

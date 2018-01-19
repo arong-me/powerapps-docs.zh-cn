@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 05/06/2017
 ms.author: astay
 ms.openlocfilehash: 74bac3b0f5bad2b95ab9b6b312fc5209bf5da3a2
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="api-connector-overview-powerapps"></a>API 连接器概述 (PowerApps)
 **API 连接器**是使用 REST API 的 OpenAPI (Swagger) 包装器，可方便基础服务与 [Microsoft Flow](https://flow.microsoft.com)、[PowerApps](https://powerapps.microsoft.com) 和[逻辑应用](https://docs.microsoft.com/azure/logic-apps/)进行通信。 这样一来，用户可以连接自己的帐户，并利用预生成的一组**触发器**和**操作**来生成应用和工作流。

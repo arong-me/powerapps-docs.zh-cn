@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/01/2015
 ms.author: gregli
 ms.openlocfilehash: 933e97d569eb1be173dac7e609fa1a7151df1e18
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="validate-function-in-powerapps"></a>PowerApps 中的 Validate 函数
 **Validate** 函数检查单个[列](../working-with-tables.md#columns)或整条[记录](../working-with-tables.md#records)的值对[数据源](../working-with-data-sources.md)是否有效。  
@@ -43,13 +43,13 @@ ms.lasthandoff: 11/07/2017
 ## <a name="syntax"></a>语法
 **Validate**( *DataSource*, *Column*, *Value* )
 
-* *DataSource* - 必需。 要通过其进行验证的数据源。
+* *DataSource* – 必需。 要通过其进行验证的数据源。
 * *Column* - 必需。 要验证的列。
 * *Value* - 必需。 要验证的所选列的值。
 
 **Validate**( *DataSource*, *OriginalRecord*, *Updates* )
 
-* *DataSource* - 必需。 要通过其进行验证的数据源。
+* *DataSource* – 必需。 要通过其进行验证的数据源。
 * *OriginalRecord* - 必需。  要验证其更新的记录。
 * *Updates* - 必需。  将应用于原始记录的更改。
 

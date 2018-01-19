@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 3784e90bbf6ed45d2b67b6211efaab279e37feca
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="check-box-control-in-powerapps"></a>PowerApps 中的复选框控件
 用户可选择或清除以将其值设置为 **true** 或 **false** 的控件。
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/07/2017
 
 **[Text](properties-core.md)** – 在控件上显示或用户键入到控件中的文本。
 
-**[Value](properties-core.md)** - 输入控件的值。
+**[Value](properties-core.md)** – 输入控件的值。
 
 ## <a name="additional-properties"></a>其他属性
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
@@ -81,7 +81,7 @@ ms.lasthandoff: 11/07/2017
 
 **OnUncheck** - 复选框或切换控件的值更改为 **false** 时应用的响应方式。
 
-**[PaddingBottom](properties-size-location.md)** - 控件中的文本与该控件的下边缘之间的距离。
+**[PaddingBottom](properties-size-location.md)** – 控件中的文本与该控件下边缘之间的距离。
 
 **[PaddingLeft](properties-size-location.md)** - 控件中的文本与该控件的左边缘之间的距离。
 
@@ -95,7 +95,7 @@ ms.lasthandoff: 11/07/2017
 
 **[PressedFill](properties-color-border.md)** – 用户在点击或单击控件时，该控件的背景色。
 
-**[Reset](properties-core.md)** - 控件是否还原为其默认值。
+**[Reset](properties-core.md)** - 是否还原控件的默认值。
 
 **[Size](properties-text.md)** – 控件上显示的文本的字号。
 
@@ -111,7 +111,7 @@ ms.lasthandoff: 11/07/2017
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
@@ -125,9 +125,9 @@ ms.lasthandoff: 11/07/2017
 2. 添加[日期选取器](control-date-picker.md)控件，将其 [Visible](properties-core.md) 属性设置为此公式：
    <br>**If(chkReserve.Value = true, true)**
    
-    想要了解有关 **[If](../functions/function-if.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
+    想要详细了解 **[If](../functions/function-if.md)** 函数或[其他函数](../formula-reference.md)吗？
 3. 按 F5，单击或点击“chkReserve”，将其“[Value](properties-core.md)”属性设置为 **true**，然后再次单击或点击“chkReserve”，将其“[Value](properties-core.md)”属性设置为 **false**。
    
     如果 **chkReserve** 的 [Value](properties-core.md) 属性为 **true**，则将显示“[日期选取器](control-date-picker.md)”控件，如果为 **false**，则不会显示。
-4. 若要返回到默认工作区，请按 Esc。
+4. 若要返回到默认工作区，请按 Esc 键。
 

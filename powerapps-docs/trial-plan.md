@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 04/18/2017
 ms.author: manasma
 ms.openlocfilehash: 40fb29976ddc89296b4e7911481c09b9ccf6fb9e
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="plan-2-trial-for-powerapps"></a>PowerApps 计划 2 试用版
 注册 PowerApps 计划 2 试用版，以获取可免费试用 90 天的所有功能。 除了从许多 [Office 365 和 Dynamics 365 计划](pricing-billing-skus.md)中获取的 PowerApps 功能外，此试用版还提供了更多容量和高级功能。 高级功能包括：

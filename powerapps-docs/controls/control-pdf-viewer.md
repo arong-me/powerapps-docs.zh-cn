@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 51b0045bd8b5e83f754c4d68e1dfe63566371ae1
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="pdf-viewer-control-in-powerapps"></a>PowerApps 中的 PDF 查看器控件
 显示 PDF 文件内容的控件。
@@ -63,13 +63,13 @@ ms.lasthandoff: 11/07/2017
 
 **OnStateChange** - 控件状态发生更改时应用响应的方式。
 
-**[PaddingBottom](properties-size-location.md)** - 控件中的文本与该控件的下边缘之间的距离。
+**[PaddingBottom](properties-size-location.md)** – 控件中的文本与该控件下边缘之间的距离。
 
 **[PaddingLeft](properties-size-location.md)** - 控件中的文本与该控件的左边缘之间的距离。
 
 **[PaddingRight](properties-size-location.md)** - 控件中的文本与该控件的右边缘之间的距离。
 
-**[PaddingTop](properties-size-location.md)** - 控件中的文本与该控件的上边缘之间的距离。
+**[PaddingTop](properties-size-location.md)** – 控件中的文本与该控件上边缘之间的距离。
 
 **Page** - 要显示的页码。
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 11/07/2017
 
 **[PressedBorderColor](properties-color-border.md)** – 用户在点击或单击控件时，该控件边框的颜色。
 
-**ShowControls** - 音频或视频播放器是否显示播放按钮和音量滑块等内容，以及笔控件是否显示绘图、擦除和清除等图标。
+**ShowControls** – 音频或视频播放器是否显示播放按钮和音量滑块等组件，笔控件是否显示绘图、擦除和清除图标等。
 
 **[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
 
@@ -85,11 +85,11 @@ ms.lasthandoff: 11/07/2017
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
-**Zoom** - 照相机中图像被放大的百分比或 PDF 查看器中文件的视图百分比。
+**Zoom** – 相机中图像被放大的百分比或 PDF 查看器中文件的视图百分比。
 
 ## <a name="example"></a>示例
 * 添加 **PDF 查看器**控件，并将其 **Document** 属性设置为 PDF 文件的 URL（用双引号括住），如下例所示：<br>

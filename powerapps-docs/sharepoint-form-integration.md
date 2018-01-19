@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/11/2017
 ms.author: ankitsar
 ms.openlocfilehash: 2a5fd3cb6805f5e22fe6d4bc7fba0de64df8afd2
-ms.sourcegitcommit: e1572ad0f9e1f1e6149551e91a9bc1fed45e3132
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="understand-sharepoint-forms-integration"></a>了解 SharePoint 窗体集成
 现在可以在 PowerApps 中轻松[自定义任何 SharePoint 列表窗体](customize-list-form.md)。 在本文中，我们将详细演示这些窗体的工作原理，以及如何对其作进一步的自定义。
@@ -38,7 +38,7 @@ ms.lasthandoff: 11/17/2017
 
     * Item - 从列表中选定的项。 在 PowerApps Studio 中工作时，为方便起见，这在列表中将设置为 First() 项。
 
-        **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected),First('YourListName**'),SharePointIntegration.Selected)**
+        **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected),First('*YourListName*'),SharePointIntegration.Selected)**
 
     * OnSuccess - 一旦成功创建或保存项，则将重置窗体并且 SharePoint 会隐藏窗体。
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 11/17/2017
 
     * Data Source - 已为其自定义窗体的列表。
 
-        **'YourListName**'**
+        **'*YourListName*'**
 
     * **OnNew** - 将“SharePointForm1”设置为新建模式。
 

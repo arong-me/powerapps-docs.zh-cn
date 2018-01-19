@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 05/01/2017
 ms.author: mblythe
 ms.openlocfilehash: 7dcc4a37ac8b3ba00d03baac58c9a12b388860bb
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="powerapps-for-enterprise-developers"></a>适用于企业开发人员的 PowerApps
 作为企业开发者，需要为你的组织提供支持，以便可以在 PowerApps 上生成可靠的定制解决方案。 使用可连接数据和 Web 服务的自定义连接器；将应用嵌入组织的网站；在 Common Data Service 中处理数据。
