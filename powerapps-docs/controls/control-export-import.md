@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 2bc1eddc09fde255fbc1f7a7899ba2f416374e0c
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="export-control-and-import-control-in-powerapps"></a>PowerApps 中的导出控件和导入控件
 该控件用于将数据导出到本地文件，然后将该数据导入到 PowerApps 中的其他应用。
@@ -102,7 +102,7 @@ ms.lasthandoff: 11/07/2017
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
@@ -118,7 +118,7 @@ ms.lasthandoff: 11/07/2017
 4. 按 F5，单击或点击“**导出**”控件，然后指定要将数据导出的文件名称。
 5. 单击或点击“**保存**”，然后按 Esc 返回默认工作区。
 6. 在新的或现有应用中，添加“**导入**”控件，将其命名为 **MyData**，并将其 **[OnSelect](properties-core.md)** 属性设置以下此公式：<br>
-   **Collect(ImportedProducts, MyData.Data)**
+   **收集 (ImportedProducts，MyData.Data)**
 7. 按 F5，单击或点击 **MyData**，再单击或点击导出的文件，然后单击或点击“**打开**”。
 8. 按 Esc，单击或点击“**文件**”菜单上的“**集合**”，并确认当前应用中包含你导出的数据。
 

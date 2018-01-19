@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 039b267394ef6be5e3038fa0b07149f69fee6a51
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>PowerApps 中的柱形图和折线图控件
 用包含 x 轴和 y 轴的图显示数据的控件。
@@ -71,7 +71,7 @@ MinimumBarWidth - 柱形图中的柱形宽度下限。
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 
-**[PaddingBottom](properties-size-location.md)** - 控件中的文本与该控件的下边缘之间的距离。
+**[PaddingBottom](properties-size-location.md)** – 控件中的文本与该控件下边缘之间的距离。
 
 **[PaddingLeft](properties-size-location.md)** - 控件中的文本与该控件的左边缘之间的距离。
 
@@ -99,7 +99,7 @@ SeriesAxisMin - 柱形图 y 轴的最小值。
 
 XLabelAngle - 柱形图或折线图的 x 轴下方的标签角度。
 
-[Y](properties-size-location.md) - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 YAxisMax - 折线图 y 轴的最大值。
 
@@ -116,7 +116,7 @@ YLabelAngle - 折线图或柱形图 y 轴旁边标签的角度。
 
 ## <a name="example"></a>示例
 1. 添加“**[按钮](control-button.md)**”控件，并将其 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
-   **Collect(Revenue, {Year:"2013", Europa:24000, Ganymede:22300, Callisto:21200}, {Year:"2014", Europa:26500, Ganymede:25700, Callisto:24700},{Year:"2014", Europa:27900, Ganymede:28300, Callisto:25600})**
+   **收集 (收入，{年:"2013"木： 24000、 木： 22300、 Callisto: 21200}，{年:"2014"木： 26500、 木： 25700、 Callisto: 24700}，{年:"2014"木： 27900、 木： 28300、 Callisto: 25600})**
    
     不知道如何[添加和配置控件](../add-configure-controls.md)？
    

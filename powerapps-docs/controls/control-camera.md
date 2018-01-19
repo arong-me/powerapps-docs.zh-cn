@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: a3a724ad42082962ec8aea4e616f1d75aa7299ec
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="camera-control-in-powerapps"></a>PowerApps 中的照相机控件
 一个控件，用户通过此控件可使用设备上的照相机拍照。
@@ -61,11 +61,11 @@ ms.lasthandoff: 11/07/2017
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
-**Zoom** - 照相机中图像被放大的百分比或 PDF 查看器中文件的视图百分比。
+**Zoom** – 相机中图像被放大的百分比或 PDF 查看器中文件的视图百分比。
 
 ## <a name="related-functions"></a>相关函数
 [**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
@@ -73,7 +73,7 @@ ms.lasthandoff: 11/07/2017
 ## <a name="example"></a>示例
 ### <a name="add-photos-to-an-image-gallery-control"></a>向图像库控件添加照片
 1. 添加“照相机”控件，将其命名为 **MyCamera**，并将其 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
-   **Collect(MyPix, MyCamera.Photo)**
+   **收集 (MyPix，MyCamera.Photo)**
    
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
    

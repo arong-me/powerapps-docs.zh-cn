@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 4082034d843765025bb6e40cab83705582417d51
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="text-input-control-in-powerapps"></a>PowerApps 中的文本输入控件
 用户可在其中键入文本、数字和其他数据的框。
@@ -41,7 +41,7 @@ ms.lasthandoff: 11/07/2017
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-**[FocusedBorderThickness](properties-color-border.md)** - 控件具有键盘焦点时，该控件边框的粗细。
+**[FocusedBorderThickness](properties-color-border.md)** – 控件具有键盘焦点时的边框粗细。
 
 **Clear** - 文本输入控件是否显示“X”，用户可点击或单击该符号以清除该控件的内容。
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 11/07/2017
 
 **[Italic](properties-text.md)** – 控件中的文本是否为斜体。
 
-**[LineHeight](properties-text.md)** - 诸如文本行之间或列表中各项之间的距离。
+**[LineHeight](properties-text.md)** – 诸如文本行之间或列表中各项之间的距离。
 
 **MaxLength** - 用户可键入文本输入控件中的字符数。
 
@@ -87,7 +87,7 @@ ms.lasthandoff: 11/07/2017
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 
-**[PaddingBottom](properties-size-location.md)** - 控件中的文本与该控件的下边缘之间的距离。
+**[PaddingBottom](properties-size-location.md)** – 控件中的文本与该控件下边缘之间的距离。
 
 **[PaddingLeft](properties-size-location.md)** - 控件中的文本与该控件的左边缘之间的距离。
 
@@ -109,7 +109,7 @@ ms.lasthandoff: 11/07/2017
 
 **[RadiusTopRight](properties-size-location.md)** – 控件右上角圆角的程度。
 
-**[Reset](properties-core.md)** - 控件是否还原为其默认值。
+**[Reset](properties-core.md)** - 是否还原控件的默认值。
 
 **[Size](properties-text.md)** – 控件上显示的文本的字号。
 
@@ -117,7 +117,7 @@ ms.lasthandoff: 11/07/2017
 
 **[TabIndex](properties-accessibility.md)** - 设置为非零值时，在运行时自定义控件的选项卡顺序。
 
-**[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
+**[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
 
 **[Underline](properties-text.md)** – 在文本下方显示的线是否在控件上显示。
 
@@ -125,7 +125,7 @@ ms.lasthandoff: 11/07/2017
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
@@ -138,7 +138,7 @@ ms.lasthandoff: 11/07/2017
    
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 2. 添加一个按钮，将其 **[Text](properties-core.md)** 属性设置为 **Add**，并将其 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
-   **Collect(Names, {FirstName:inputFirst.Text, LastName:inputLast.Text})**
+   **收集 （名称、 {FirstName:inputFirst.Text、 LastName:inputLast.Text}）**
    
     想要了解有关 **[Collect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
 3. 以纵向/垂直方向添加文本库，将其 **[Items](properties-core.md)** 属性设置为 **Names**，并将 **Subtitle1** 的 **[Text](properties-core.md)** 属性设置为 **ThisItem.FirstName**。
@@ -149,13 +149,13 @@ ms.lasthandoff: 11/07/2017
 ### <a name="prompt-for-a-password"></a>提示输入密码
 1. 添加文本输入控件，将其命名为 **inputPassword**，并将其 **Mode** 属性设置为 **Password**。
 2. 添加一个标签，然后将其 **[Text](properties-core.md)** 属性设置为以下公式：<br>
-   **If(inputPassword.Text = "P@ssw0rd", "Access granted", "Access denied")**
+   **如果 (inputPassword.Text ="P@ssw0rd"，"授予访问权限"、"拒绝访问")**
    
-    想要了解有关 **[If](../functions/function-if.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
+    想要详细了解 **[If](../functions/function-if.md)** 函数或[其他函数](../formula-reference.md)吗？
 3. 按 F5，然后在 **inputPassword** 中键入 **P@ssw0rd**。
    
     密码键入完毕后，标签不再显示“拒绝访问”，而会显示“已授予访问权限”。
-4. 若要返回到默认工作区，请按 Esc。
+4. 若要返回到默认工作区，请按 Esc 键。
 5. （可选）添加一个控件（如箭头），配置它以导航到另一个屏幕，且仅在用户键入密码后才显示。
 6. （可选）添加一个按钮，配置其 **[Text](properties-core.md)** 属性，使其显示**登录**，添加一个计时器，如果用户键入错误的密码，则禁用输入文本控件一段时间，然后单击或点击“登录”按钮。
 

@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: dc10ac44c1c14f182c39176a6b0216f3ede3816d
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="slider-control-in-powerapps"></a>PowerApps 中的滑块控件
 一个控件，用户可通过拖动图柄使用该控件指定值。
@@ -34,7 +34,7 @@ ms.lasthandoff: 11/07/2017
 
 **Min** - 用户可对滑块设置的最小值。
 
-**[Value](properties-core.md)** - 输入控件的值。
+**[Value](properties-core.md)** – 输入控件的值。
 
 ## <a name="additional-properties"></a>其他属性
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
@@ -43,7 +43,7 @@ ms.lasthandoff: 11/07/2017
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-**[FocusedBorderThickness](properties-color-border.md)** - 控件具有键盘焦点时，该控件边框的粗细。
+**[FocusedBorderThickness](properties-color-border.md)** – 控件具有键盘焦点时的边框粗细。
 
 [DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
@@ -73,7 +73,7 @@ ms.lasthandoff: 11/07/2017
 
 **ReadOnly** - 用户是否可以更改滑块或评分控件的值。
 
-**[Reset](properties-core.md)** - 控件是否还原为其默认值。
+**[Reset](properties-core.md)** - 是否还原控件的默认值。
 
 **ShowValue** – 用户更改滑块或评分的值或将鼠标悬停在控件上时，是否显示该值。
 
@@ -89,7 +89,7 @@ ms.lasthandoff: 11/07/2017
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
@@ -107,8 +107,8 @@ ms.lasthandoff: 11/07/2017
 3. 添加一个滑块，将其移动到按钮下方，然后将滑块命名为 **MinPopulation**。
 4. 将滑块的 **Max** 属性设置为 **5000000**，**Min** 属性设置为 **1000000**。
 5. 在垂直方向/纵向添加一个文本库，将其移动到滑块下方，然后将该库的 **[Items](properties-core.md)** 属性设置为以下公式：<br>
-   **Filter(CityPopulations, Population > MinPopulation)**
+   **筛选器 (CityPopulations、 填充 > MinPopulation)**
 6. 在库的第一个项中，将顶部标签的“[Text](properties-core.md)”属性设置为“ThisItem.City”，然后将底部标签的“[Text](properties-core.md)”属性设置为以下公式：<br> **Text(ThisItem.Population, "##,###")**
 7. 按 F5，然后调整 **MinPopulation** 以仅显示人口数大于所指定值的城市。
-8. 若要返回到默认工作区，请按 Esc。
+8. 若要返回到默认工作区，请按 Esc 键。
 

@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 07/24/2017
 ms.author: gregli
 ms.openlocfilehash: 3250251e02170d2dd7bab441bc3c94705216ec00
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="operators-and-data-types-in-powerapps"></a>PowerApps 中的运算符和数据类型
 其中的某些运算符依赖于作者的语言。  有关详细信息，请参阅[全局应用](../global-apps.md)。
@@ -86,8 +86,8 @@ PowerApps 中的任何控件都可由应用内任何位置的名称引用。 **S
 ## <a name="disambiguation-operator"></a>消除歧义运算符
 某些函数创建[记录作用域](../working-with-tables.md#record-scope)，从而在处理每个记录时访问表的字段，例如 **Filter**、**AddColumns** 和 **Sum**。  使用记录作用域添加的字段名称将替代应用中来自其他位置的同一名称。  在此情况下，仍可以使用 **@** 消除歧义运算符访问来自记录作用域外部的值：
 
-* 若要访问来自嵌套记录作用域的值，请使用 **@** 运算符，其中所操作的表名称使用模式 ***Table*[@*FieldName*]**。  
-* 若要访问全局值，如数据源、集合和上下文变量，请使用模式 **[@*ObjectName*]**（无需指派表）。
+* 若要访问来自嵌套记录作用域的值，请使用 **@** 运算符，其中所操作的表名称使用模式 **Table*[@*FieldName**]**。  
+* 若要访问全局值，如数据源、集合和上下文变量，请使用模式 ***[@*ObjectName**]**（无需指派表）。
 
 有关详细信息和示例，请参阅[记录作用域](../working-with-tables.md#record-scope)上探讨的内容。
 

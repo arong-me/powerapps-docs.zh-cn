@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 2f543a75019bfe5d665aedb2e6171200e8321690
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="table-function-in-powerapps"></a>PowerApps 中的 Table 函数
 创建一个临时[表](../working-with-tables.md)。
@@ -44,7 +44,7 @@ ms.lasthandoff: 11/07/2017
   
     列表框将每种颜色显示为一个选项。
 * 添加一个文本库，然后将其 **[Items](../controls/properties-core.md)** 属性设置为以下函数：<br>
-  **Table({Item:"Violin123", Location:"France", Owner:"Fabrikam"}, {Item:"Violin456", Location:"Chile"})**
+  **表 ({项:"Violin123"，位置:"华北"、 所有者:"Fabrikam"}，{项:"Violin456"，位置:"智利"})**
   
     该库显示两条记录，每个记录都包含项的名称和位置。 只有一条记录包含所有者的名称。
 

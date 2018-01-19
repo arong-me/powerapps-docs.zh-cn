@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 7e5be9b68b501279329c23f9afe5d451487fa8d1
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="pen-input-control-in-powerapps"></a>PowerApps 中的笔输入控件
 用户可用其进行绘图、擦除和突出显示图像区域的控件。
@@ -53,7 +53,7 @@ ms.lasthandoff: 11/07/2017
 
 **SelectionThickness** - 笔输入控件的选择工具的粗细。
 
-**ShowControls** - 音频或视频播放器是否显示播放按钮和音量滑块等内容，以及笔控件是否显示绘图、擦除和清除等图标。
+**ShowControls** – 音频或视频播放器是否显示播放按钮和音量滑块等组件，笔控件是否显示绘图、擦除和清除图标等。
 
 **[Size](properties-text.md)** – 控件上显示的文本的字号。
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 11/07/2017
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 11/07/2017
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 2. 添加[按钮](control-button.md)控件，将其移到 **MyDoodles** 下方，然后设置[按钮](control-button.md)控件的 [Text](properties-core.md) 属性，使其显示为“添加”。
 3. 将此**[按钮](control-button.md)**控件的 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
-   **Collect(Doodles, {Sketch:MyDoodles.Image})**
+   **收集 (Doodles，{草： MyDoodles.Image})**
 4. 添加**图像库**控件，将其移到[按钮](control-button.md)控件下方，然后缩小**图像库**控件的宽度，直至它显示三个项。
 5. 将**映像库**控件的[项](properties-core.md)属性设置为 **Doodles**，然后再按 F5。
 6. 在 **MyDoodles** 中绘制图像，然后单击或点击[按钮](control-button.md)控件。
@@ -85,7 +85,7 @@ ms.lasthandoff: 11/07/2017
     绘制的图像将在“图像库”控件中显示。
 7. （可选）在“笔输入”控件中，单击或点击图标，清除所绘制的图像，绘制另一个图像，再单击或点击[按钮](control-button.md)控件。
 8. 在**图像库**控件中，将**[图像](control-image.md)**控件的 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
-   **Remove(Doodles, ThisItem)**
+   **删除 (Doodles，ThisItem)**
 9. 单击或点击“图像库”控件中的绘图，可将其删除。
 
 使用 **[SaveData](../functions/function-savedata-loaddata.md)** 函数本地保存绘图，或使用 **[Patch](../functions/function-patch.md)** 函数将其保存至数据源。

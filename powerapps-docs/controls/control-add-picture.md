@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 6a7c60755f5623803d20bec4ec9881108b1116c6
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="add-picture-control-in-powerapps"></a>PowerApps 中的添加图片控件
 拍摄照片或加载本地设备中的图像。
@@ -66,7 +66,7 @@ ms.lasthandoff: 11/07/2017
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 [Y](properties-size-location.md) - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
@@ -113,7 +113,7 @@ ms.lasthandoff: 11/07/2017
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 2. 在“打开”对话框中，单击或点击图像文件，然后单击或点击“打开”。
 3. 添加“[按钮](control-button.md)”控件，将其移到“添加图片”控件下方，然后将“[按钮](control-button.md)”控件的 “[OnSelect](properties-core.md)”属性设置为以下公式：<br>
-   **Collect(MyPix, AddMediaButton1.Media)**
+   **收集 (MyPix，AddMediaButton1.Media)**
    
     想要了解有关 **[Collect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
 4. 添加“图像库”控件，并将其 “[项](properties-core.md)” 属性设置为 **MyPix**。
