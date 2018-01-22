@@ -107,7 +107,7 @@ ms.lasthandoff: 01/12/2018
 3. 添加一个滑块，将其移动到按钮下方，然后将滑块命名为 **MinPopulation**。
 4. 将滑块的 **Max** 属性设置为 **5000000**，**Min** 属性设置为 **1000000**。
 5. 在垂直方向/纵向添加一个文本库，将其移动到滑块下方，然后将该库的 **[Items](properties-core.md)** 属性设置为以下公式：<br>
-   **筛选器 (CityPopulations、 填充 > MinPopulation)**
+   **Filter(CityPopulations, Population > MinPopulation)**
 6. 在库的第一个项中，将顶部标签的“[Text](properties-core.md)”属性设置为“ThisItem.City”，然后将底部标签的“[Text](properties-core.md)”属性设置为以下公式：<br> **Text(ThisItem.Population, "##,###")**
 7. 按 F5，然后调整 **MinPopulation** 以仅显示人口数大于所指定值的城市。
 8. 若要返回到默认工作区，请按 Esc 键。

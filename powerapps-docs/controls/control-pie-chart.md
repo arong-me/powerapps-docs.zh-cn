@@ -80,7 +80,7 @@ ms.lasthandoff: 01/12/2018
 
 ## <a name="example"></a>示例
 1. 添加“**[按钮](control-button.md)**”控件，并将其 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
-   **收集 (Revenue2015，{产品:"木"，收入： 27000}，{产品:"木"，收入： 26300}，{产品:"Callisto"，收入： 29200})**
+   **Collect(Revenue2015, {Product:"Europa", Revenue:27000}, {Product:"Ganymede", Revenue:26300}, {Product:"Callisto", Revenue:29200})**
    
     不知道如何[添加和配置控件](../add-configure-controls.md)？
    

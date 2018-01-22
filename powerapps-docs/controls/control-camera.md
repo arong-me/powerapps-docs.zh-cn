@@ -73,7 +73,7 @@ ms.lasthandoff: 01/12/2018
 ## <a name="example"></a>示例
 ### <a name="add-photos-to-an-image-gallery-control"></a>向图像库控件添加照片
 1. 添加“照相机”控件，将其命名为 **MyCamera**，并将其 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
-   **收集 (MyPix，MyCamera.Photo)**
+   **Collect(MyPix, MyCamera.Photo)**
    
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
    

@@ -138,7 +138,7 @@ ms.lasthandoff: 01/12/2018
    
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 2. 添加一个按钮，将其 **[Text](properties-core.md)** 属性设置为 **Add**，并将其 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
-   **收集 （名称、 {FirstName:inputFirst.Text、 LastName:inputLast.Text}）**
+   **Collect(Names, {FirstName:inputFirst.Text, LastName:inputLast.Text})**
    
     想要了解有关 **[Collect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
 3. 以纵向/垂直方向添加文本库，将其 **[Items](properties-core.md)** 属性设置为 **Names**，并将 **Subtitle1** 的 **[Text](properties-core.md)** 属性设置为 **ThisItem.FirstName**。
@@ -149,7 +149,7 @@ ms.lasthandoff: 01/12/2018
 ### <a name="prompt-for-a-password"></a>提示输入密码
 1. 添加文本输入控件，将其命名为 **inputPassword**，并将其 **Mode** 属性设置为 **Password**。
 2. 添加一个标签，然后将其 **[Text](properties-core.md)** 属性设置为以下公式：<br>
-   **如果 (inputPassword.Text ="P@ssw0rd"，"授予访问权限"、"拒绝访问")**
+   **If(inputPassword.Text = "P@ssw0rd", "Access granted", "Access denied")**
    
     想要详细了解 **[If](../functions/function-if.md)** 函数或[其他函数](../formula-reference.md)吗？
 3. 按 F5，然后在 **inputPassword** 中键入 **P@ssw0rd**。

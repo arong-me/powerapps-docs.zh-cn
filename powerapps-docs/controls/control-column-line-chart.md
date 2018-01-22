@@ -116,7 +116,7 @@ YLabelAngle - 折线图或柱形图 y 轴旁边标签的角度。
 
 ## <a name="example"></a>示例
 1. 添加“**[按钮](control-button.md)**”控件，并将其 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
-   **收集 (收入，{年:"2013"木： 24000、 木： 22300、 Callisto: 21200}，{年:"2014"木： 26500、 木： 25700、 Callisto: 24700}，{年:"2014"木： 27900、 木： 28300、 Callisto: 25600})**
+   **Collect(Revenue, {Year:"2013", Europa:24000, Ganymede:22300, Callisto:21200}, {Year:"2014", Europa:26500, Ganymede:25700, Callisto:24700},{Year:"2014", Europa:27900, Ganymede:28300, Callisto:25600})**
    
     不知道如何[添加和配置控件](../add-configure-controls.md)？
    

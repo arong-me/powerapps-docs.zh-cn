@@ -77,7 +77,7 @@ ms.lasthandoff: 01/12/2018
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 2. 添加[按钮](control-button.md)控件，将其移到 **MyDoodles** 下方，然后设置[按钮](control-button.md)控件的 [Text](properties-core.md) 属性，使其显示为“添加”。
 3. 将此**[按钮](control-button.md)**控件的 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
-   **收集 (Doodles，{草： MyDoodles.Image})**
+   **Collect(Doodles, {Sketch:MyDoodles.Image})**
 4. 添加**图像库**控件，将其移到[按钮](control-button.md)控件下方，然后缩小**图像库**控件的宽度，直至它显示三个项。
 5. 将**映像库**控件的[项](properties-core.md)属性设置为 **Doodles**，然后再按 F5。
 6. 在 **MyDoodles** 中绘制图像，然后单击或点击[按钮](control-button.md)控件。
@@ -85,7 +85,7 @@ ms.lasthandoff: 01/12/2018
     绘制的图像将在“图像库”控件中显示。
 7. （可选）在“笔输入”控件中，单击或点击图标，清除所绘制的图像，绘制另一个图像，再单击或点击[按钮](control-button.md)控件。
 8. 在**图像库**控件中，将**[图像](control-image.md)**控件的 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
-   **删除 (Doodles，ThisItem)**
+   **Remove(Doodles, ThisItem)**
 9. 单击或点击“图像库”控件中的绘图，可将其删除。
 
 使用 **[SaveData](../functions/function-savedata-loaddata.md)** 函数本地保存绘图，或使用 **[Patch](../functions/function-patch.md)** 函数将其保存至数据源。

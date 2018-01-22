@@ -44,7 +44,7 @@ ms.lasthandoff: 01/12/2018
   
     列表框将每种颜色显示为一个选项。
 * 添加一个文本库，然后将其 **[Items](../controls/properties-core.md)** 属性设置为以下函数：<br>
-  **表 ({项:"Violin123"，位置:"华北"、 所有者:"Fabrikam"}，{项:"Violin456"，位置:"智利"})**
+  **Table({Item:"Violin123", Location:"France", Owner:"Fabrikam"}, {Item:"Violin456", Location:"Chile"})**
   
     该库显示两条记录，每个记录都包含项的名称和位置。 只有一条记录包含所有者的名称。
 

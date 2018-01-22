@@ -118,7 +118,7 @@ ms.lasthandoff: 01/12/2018
 4. 按 F5，单击或点击“**导出**”控件，然后指定要将数据导出的文件名称。
 5. 单击或点击“**保存**”，然后按 Esc 返回默认工作区。
 6. 在新的或现有应用中，添加“**导入**”控件，将其命名为 **MyData**，并将其 **[OnSelect](properties-core.md)** 属性设置以下此公式：<br>
-   **收集 (ImportedProducts，MyData.Data)**
+   **Collect(ImportedProducts, MyData.Data)**
 7. 按 F5，单击或点击 **MyData**，再单击或点击导出的文件，然后单击或点击“**打开**”。
 8. 按 Esc，单击或点击“**文件**”菜单上的“**集合**”，并确认当前应用中包含你导出的数据。
 

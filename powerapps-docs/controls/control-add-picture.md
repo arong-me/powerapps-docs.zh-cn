@@ -113,7 +113,7 @@ ms.lasthandoff: 01/12/2018
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 2. 在“打开”对话框中，单击或点击图像文件，然后单击或点击“打开”。
 3. 添加“[按钮](control-button.md)”控件，将其移到“添加图片”控件下方，然后将“[按钮](control-button.md)”控件的 “[OnSelect](properties-core.md)”属性设置为以下公式：<br>
-   **收集 (MyPix，AddMediaButton1.Media)**
+   **Collect(MyPix, AddMediaButton1.Media)**
    
     想要了解有关 **[Collect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
 4. 添加“图像库”控件，并将其 “[项](properties-core.md)” 属性设置为 **MyPix**。
