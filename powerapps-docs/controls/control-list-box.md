@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: ada7fed1ac9fabb9a89f79a876fcce68b4415d30
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 687b66a50e168559f670d07f4e6c7dd7214ccde8
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="list-box-control-in-powerapps"></a>PowerApps 中的列表框控件
 用户可以选择一个或多个项的列表。
@@ -28,11 +28,11 @@ ms.lasthandoff: 11/07/2017
 **列表框**控件始终显示所有可用的选项（不同于**[下拉](control-drop-down.md)**控件），用户可以一次选择多个项（不同于**[单选](control-radio.md)**控件）。
 
 ## <a name="key-properties"></a>关键属性
-**[Default](properties-core.md)** – 用户更改控件前的初始值。
+**[Default](properties-core.md)** - 用户更改控件前的初始值。
 
 **[Items](properties-core.md)** - 控件中显示的数据源，如库、列表或图表。
 
-[!INCLUDE [long-items](../../includes/long-items.md)]
+[!INCLUDE [long-items](../includes/long-items.md)]
 
 ## <a name="additional-properties"></a>其他属性
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
@@ -41,7 +41,7 @@ ms.lasthandoff: 11/07/2017
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-**[FocusedBorderThickness](properties-color-border.md)** - 控件具有键盘焦点时，该控件边框的粗细。
+**[FocusedBorderThickness](properties-color-border.md)** – 控件具有键盘焦点时的边框粗细。
 
 **[Color](properties-color-border.md)** – 控件中文本的颜色。
 
@@ -73,11 +73,11 @@ ms.lasthandoff: 11/07/2017
 
 **[LineHeight](properties-text.md)** - 文本行之间或列表中项之间的距离。
 
-**[OnChange](properties-core.md)** – 用户更改控件的值（例如，通过调整滑块）时应用的响应方式。
+**[OnChange](properties-core.md)** - 用户更改控件的值（例如，通过调整滑块）时应用的响应方式。
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 
-**[PaddingBottom](properties-size-location.md)** - 控件中的文本与该控件的下边缘之间的距离。
+**[PaddingBottom](properties-size-location.md)** – 控件中的文本与该控件下边缘之间的距离。
 
 **[PaddingLeft](properties-size-location.md)** - 控件中的文本与该控件的左边缘之间的距离。
 
@@ -91,7 +91,7 @@ ms.lasthandoff: 11/07/2017
 
 **[PressedFill](properties-color-border.md)** – 用户在点击或单击控件时，该控件的背景色。
 
-**[Reset](properties-core.md)** - 控件是否还原为其默认值。
+**[Reset](properties-core.md)** - 是否还原控件的默认值。
 
 **[SelectionColor](properties-color-border.md)** – 所选项目或列表中项目的文本颜色，或笔控件中选择工具的颜色。
 
@@ -105,7 +105,7 @@ ms.lasthandoff: 11/07/2017
 
 **[TabIndex](properties-accessibility.md)** - 设置为非零值时，在运行时自定义控件的选项卡顺序。
 
-**[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
+**[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
 
 **[Underline](properties-text.md)** – 在文本下方显示的线是否在控件上显示。
 
@@ -113,7 +113,7 @@ ms.lasthandoff: 11/07/2017
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
@@ -141,7 +141,7 @@ ms.lasthandoff: 11/07/2017
    * HardwoodList：**If("Hardwood" in CategoryList.SelectedItems.Value, true)**
    * TileList：**If("Tile" in CategoryList.SelectedItems.Value, true)**
      
-     想要了解有关 **[If](../functions/function-if.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
+     想要详细了解 **[If](../functions/function-if.md)** 函数或[其他函数](../formula-reference.md)吗？
 5. 按 F5，然后在“CategoryList”中选择一个或多个项。
    
     根据你的选择，将显示相应的一个或多个**[下拉](control-drop-down.md)**控件。

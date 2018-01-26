@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 57c591e134eafeae422289ad47afc8952ff67110
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 631b0c8fbfc98d73cf1d944c2a0f3933f8f10c11
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="refresh-function-in-powerapps"></a>PowerApps 中的 Refresh 函数
 刷新[数据源](../working-with-data-sources.md)的[记录](../working-with-tables.md#records)。
@@ -27,12 +27,12 @@ ms.lasthandoff: 11/07/2017
 ## <a name="description"></a>说明
 **Refresh** 函数检索数据源的新副本。  你将看到其他用户所做的更改。
 
-**Refresh** 没有返回值，只可以在[行为公式](../working-with-formulas-in-depth.md#behavior-formulas)中使用它。
+**Refresh** 没有返回值，只可以在[行为公式](../working-with-formulas-in-depth.md)中使用它。
 
 ## <a name="syntax"></a>语法
 **Refresh**( DataSource )
 
-* *DataSource* - 必需。 要刷新的数据源。
+* *DataSource* – 必需。 要刷新的数据源。
 
 ## <a name="example"></a>示例
 在此示例中，你将将刷新名为 **IceCream** 的数据源，该数据源以下面的数据开头：

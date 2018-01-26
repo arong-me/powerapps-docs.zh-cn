@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/24/2017
 ms.author: gregli
-ms.openlocfilehash: 6b969ca59f28abfefe91c887c2755ee7a7d28ed4
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 9254eaf63d816fc8ac9890026f74bdeaeaa9b1a4
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="if-and-switch-functions-in-powerapps"></a>PowerApps 中的 If 和 Switch 函数
 确定集中的任何条件是否为 true (If)，或确定公式的结果是否与集中的任何值一致 (Switch)，再返回结果或执行操作。
@@ -35,7 +35,7 @@ Switch 函数先对公式求值，再确定结果是否与指定序列中的任�
 * 使用 If 函数对多个不相关条件求值。 在 PowerApps 中，可以指定多个条件，而无需嵌套 If 公式（不同于 Microsoft Excel）。
 * 使用 Switch 对一个条件求值，以进行多次匹配。 在这种情况下，还可以使用 If 函数，但需要为每次匹配重复执行公式。
 
-可以在[行为公式](../working-with-formulas-in-depth.md#behavior-formulas)中结合使用这两个函数，在两个或多个操作之间形成分支。 操作只由一个分支触发。 将按顺序对条件和匹配进行求值，如果条件为 true 或找到匹配项，将停止求值。
+可以在[行为公式](../working-with-formulas-in-depth.md)中结合使用这两个函数，在两个或多个操作之间形成分支。 操作只由一个分支触发。 将按顺序对条件和匹配进行求值，如果条件为 true 或找到匹配项，将停止求值。
 
 如果没有条件为 true、找不到任何匹配项且未指定默认结果，将返回 Blank。
 

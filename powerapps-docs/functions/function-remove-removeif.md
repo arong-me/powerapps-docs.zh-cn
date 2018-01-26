@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 76b41c6dc3b23a3d1f30425b9eac1011406a8757
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 736d634e9db5bc97ceb69852c59b229c7478863b
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remove-and-removeif-functions-in-powerapps"></a>PowerApps 中的 Remove 和 RemoveIf 函数
 从[数据源](../working-with-data-sources.md)删除[记录](../working-with-tables.md#records)。
@@ -33,29 +33,29 @@ ms.lasthandoff: 11/07/2017
 ### <a name="removeif-function"></a>RemoveIf 函数
 使用 **RemoveIf** 函数根据一个或一组条件删除一个或多个记录。 每个条件都可以是其结果为 **true** 或 **false** 的任意公式，并且可以通过名称引用数据源的[列](../working-with-tables.md#columns)。 将会针对每个记录单独评估每个条件，如果所有条件的评估结果为 **true**，则会删除该记录。
 
-**Remove** 和 **RemoveIf** 都以[表](../working-with-tables.md)的形式返回修改的数据源。 只能在[行为公式](../working-with-formulas-in-depth.md#behavior-formulas)中使用这两个函数。
+**Remove** 和 **RemoveIf** 都以[表](../working-with-tables.md)的形式返回修改的数据源。 只能在[行为公式](../working-with-formulas-in-depth.md)中使用这两个函数。
 
 还可使用 **[Clear](function-clear-collect-clearcollect.md)** 函数删除数据源中的所有记录。
 
 ### <a name="delegation"></a>委派
-[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>语法
 **Remove**( *DataSource*, *Record1* [, *Record2*, ... ] [, **All** ] )
 
-* *DataSource* - 必需。 数据源，其中包含要删除的一个或多个记录。
+* *DataSource* – 必需。 数据源，其中包含要删除的一个或多个记录。
 * *Record(s)* - 必需。 要删除的一个或多个记录。
 * **All** - 可选。 在集合中，同一记录可能出现多次。  添加 **All** 参数即可删除记录的所有副本。
 
 **Remove**( *DataSource*, *Table* [, **All** ] )
 
-* *DataSource* - 必需。 数据源，其中包含要删除的记录。
+* *DataSource* – 必需。 数据源，其中包含要删除的记录。
 * *Table* - 必需。 要删除的记录表。
 * **All** - 可选。 在集合中，同一记录可能出现多次。  添加 **All** 参数即可删除记录的所有副本。
 
 **RemoveIf**( *DataSource*, *Condition* [, ... ] )
 
-* *DataSource* - 必需。 数据源，其中包含要删除的一个或多个记录。
+* *DataSource* – 必需。 数据源，其中包含要删除的一个或多个记录。
 * *Condition(s)* - 必需。 一个公式，对于要删除的一个或多个记录，该公式的求值结果为 **true**。  可以在公式中使用 *DataSource* 中的列名。  如果指定多个 Conditions ，则所有 Conditions 的求值结果都必须为 **true**，然后才能删除一个或多个记录。
 
 ## <a name="examples"></a>示例

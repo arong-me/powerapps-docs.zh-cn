@@ -14,18 +14,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/06/2016
 ms.author: kfend
-ms.openlocfilehash: f3cc5a8116f84d61576d75b22a8e3197d6ec7e42
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 214b11c4f23db29d097b2d97052473d8f436d533
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-an-app-from-scratch-using-a-common-data-service-database"></a>使用 Common Data Service 数据库从头开始创建应用
 生成一个应用，以使用（内置的）标准实体和/或（组织创建的）自定义实体来管理 Common Data Service 中存储的数据。
 
 使用 Common Data Service 生成应用时，无需从 Microsoft PowerApps 建立连接，而处理 SharePoint、Dynamics 365 或 Salesforce 等数据源时则需要这样做。 只需指定要显示、管理或在应用中用于这两种活动的实体即可。
 
-[!VIDEO nb:cid:UUID:5db63c4d-6aeb-45c5-9609-8f4bbdd37bc6]
+
 
 
 1. 创建 Common Data Service 数据库。 有关详细信息，请参阅[创建 Common Data Service 数据库](create-database.md)。

@@ -14,18 +14,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: anneta
-ms.openlocfilehash: 0fcfb90de55c0504a7a7ff5e7d75cd782b8f56e6
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1f87b952378c64ec7c67d98b5dfc194cb62be767
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="show-text-and-format-dates-and-times-in-powerapps"></a>在 PowerApps 中显示文本以及设置日期和时间格式
 添加日期和时间，然后设置其格式，以便显示正确级别的详细信息，或者让其反映你的区域设置。 计算两个日期相差多少时间，或者计算一个日期，该日期比指定的日期早或晚一定的时间。 将日期转换成按年、月、日表示的不同值（或者反过来），以及将时间转换成按小时、分钟、秒表示的不同值（或者反过来）。
 
 例如，添加用户提供的有关股票交易或客户会议的数据、添加外部源提供的数据，或者添加在 PowerApps 中创建的另一应用提供的数据。 如果该数据包含的时间为毫秒级，则为了简单起见，可将其舍入为最接近的分钟。 计算还有多少天会发生重大事件。 如果需要每隔五天安排一次客户会议，可自动计算相关日期。 如果“1985 年 5 月 10 日”是按年、月、日存储在不同的字段中，可将其合并为一个值。 也可反过来将每个日期拆分成不同的值（如果应用是对其分别进行管理的）。
 
-**先决条件**
+## <a name="prerequisites"></a>先决条件
 
 * [注册](signup-for-powerapps.md)、[安装](http://aka.ms/powerappsinstall) PowerApps，然后打开该程序，并提供注册所用的同一凭据进行登录。
 * 在 PowerApps 中创建一个应用，或打开一个现有应用。
@@ -56,7 +56,9 @@ ms.lasthandoff: 11/07/2017
    * **Today**：计算当天的日期，以单个值表示。
    * **DateValue**：将双引号引起来的字符串转换为一个可以进行计算的值。
 3. 添加名为 **BirthDate** 的**[文本输入](controls/control-text-input.md)**控件，将其移至 **ShowText** 下。
+
 4. 在 **BirthDate** 中键入你的出生月和日（例如 **05/18**）。
+
 5. 将 **ShowText** 的 **[Text](controls/properties-core.md)** 属性设置为以下公式：
    <br>**DateDiff(Today(), DateValue(BirthDate.Text))**
    
@@ -122,7 +124,9 @@ ms.lasthandoff: 11/07/2017
    > 
 
 ## <a name="format-a-date-by-using-datevalue"></a>使用 DateValue 设置日期格式
+
 1. 添加名为 **ArrivalDate** 的**[文本输入](controls/control-text-input.md)**控件，然后在其中键入日期（例如 **5/10/85**）。
+
 2. 添加一个名为“FormatDate”的“[标签](controls/control-text-box.md)”控件，然后将“[Text](controls/properties-core.md)”属性设置为以下公式：
    <br>**DateValue(ArrivalDate.Text)**
    
@@ -141,8 +145,11 @@ ms.lasthandoff: 11/07/2017
     **FormatDate** 按指定格式显示日期。
 
 ## <a name="format-a-time-using-datetimevalue"></a>使用 DateTimeValue 设置时间格式
+
 1. 添加名为 **ArrivalTime** 的**[文本输入](controls/control-text-input.md)**控件，然后在其中键入 **6:15 AM**。
+
 2. 添加一个名为“ShowTime”的“[标签](controls/control-text-box.md)”控件。
+
 3. 若要使用多个内置格式之一，请将 **ShowTime** 的 **[Text](controls/properties-core.md)** 属性设置为以下公式：
    <br>**Text(DateTimeValue(ArrivalTime.Text), DateTimeFormat.LongTime)**
    
@@ -158,8 +165,11 @@ ms.lasthandoff: 11/07/2017
    > 
 
 ## <a name="show-the-time-between-dates"></a>显示两个日期之间有多少时间
+
 1. 添加两个**[文本输入](controls/control-text-input.md)**控件，分别名为 **Start** 和 **End**。
+
 2. 将 **4/1/2015** 键入到 **Start** 中，将 **1/1/2016** 键入到 **End** 中。
+
 3. 添加一个名为“DateDiff”的“[标签](controls/control-text-box.md)”控件，然后将“[Text](controls/properties-core.md)”属性设置为以下公式：
    <br>**DateDiff(DateValue(Start.Text), DateValue(End.Text))**
    
@@ -171,7 +181,9 @@ ms.lasthandoff: 11/07/2017
     **DateDiff** 显示 **9**，表示 2015 年 4 月 1 日到 2016 年 1 月 1 日相差多少月。 将 **Months** 替换为 **Quarters** 或 **Years** 即可显示相应单位的时间。
 
 ## <a name="identify-a-date-before-or-after-another-date"></a>确定一个日期之前或之后的另一个日期
+
 1. 添加名为 **Start** 的**[文本输入](controls/control-text-input.md)**控件，然后在其中键入 **5/10/1985**。
+
 2. 添加一个名为“DateAdd”的“[标签](controls/control-text-box.md)”控件，然后将“[Text](controls/properties-core.md)”属性设置为以下公式：
    <br>**DateAdd(DateValue(Start.Text), 3)**
    
@@ -192,13 +204,18 @@ ms.lasthandoff: 11/07/2017
     标签显示 **8/10/1985**，此日期晚于 **Start** 中的日期三月。 将 **Months** 替换为 **Quarters** 或 **Years** 即可确定一个早于或晚于 **Start** 中的日期指定季度数或年数的日期。
 
 ## <a name="calculate-dates-based-on-years-months-and-days"></a>根据年、月、日计算日期
+
 1. 添加三个**[下拉](controls/control-drop-down.md)**控件，分别名为 **Year**、**Month** 和 **Day**。
+
 2. 将 **Year** 的 **[Items](controls/properties-core.md)** 属性设置为以下公式：
    <br>**Table({Year:"2014"}, {Year:"2015"}, {Year:"2016"})**
+
 3. 将 **Month** 的 **[Items](controls/properties-core.md)** 属性设置为以下公式：
    <br>**Table({Month:"1"}, {Month:"2"}, {Month:"3"}, {Month:"4"}, {Month:"5"}, {Month:"6"}, {Month:"7"}, {Month:"8"}, {Month:"9"}, {Month:"10"}, {Month:"11"}, {Month:"12"})**
+
 4. 将 **Day** 的 **[Items](controls/properties-core.md)** 属性设置为以下公式：
    <br>**Table({Day:"1"}, {Day:"2"}, {Day:"3"}, {Day:"4"}, {Day:"5"}, {Day:"6"}, {Day:"7"}, {Day:"8"}, {Day:"9"}, {Day:"10"}, {Day:"11"}, {Day:"12"}, {Day:"13"}, {Day:"14"}, {Day:"15"}, {Day:"16"}, {Day:"17"}, {Day:"18"}, {Day:"19"}, {Day:"20"}, {Day:"21"}, {Day:"22"}, {Day:"23"}, {Day:"24"}, {Day:"25"}, {Day:"26"}, {Day:"27"}, {Day:"28"}, {Day:"29"}, {Day:"30"}, {Day:"31"})**
+
 5. 添加一个“[标签](controls/control-text-box.md)”控件，然后将“[Text](controls/properties-core.md)”属性设置为以下公式：
    <br>**Text(Date(Value(Year.Selected.Value), Value(Month.Selected.Value), Value(Day.Selected.Value)), DateTimeFormat.LongDate)**
    
@@ -215,13 +232,18 @@ ms.lasthandoff: 11/07/2017
 * 如果日值小于 1，函数将从指定月份的第一天减去该天数，再加 1。
 
 ## <a name="calculate-times-based-on-hours-minutes-and-seconds"></a>根据小时、分钟和秒计算时间
+
 1. 添加两个**下拉**列表，分别名为 **Hour** 和 **Minute**。
+
 2. 将 **Hour** 的 **[Items](controls/properties-core.md)** 属性设置为以下公式：
    <br>**Table({Hour:"9"}, {Hour:"10"}, {Hour:"11"}, {Hour:"12"}, {Hour:"13"}, {Hour:"14"}, {Hour:"15"}, {Hour:"16"}, {Hour:"17"})**
+
 3. 将 **Minute** 的 **[Items](controls/properties-core.md)** 属性设置为以下公式：
    <br>**Table({Minute:"0"}, {Minute:"15"}, {Minute:"30"}, {Minute:"45"})**
+
 4. 添加一个“[标签](controls/control-text-box.md)”控件，然后将“[Text](controls/properties-core.md)”属性设置为以下公式：  
    <br>**Text(Time(Value(Hour.Selected.Value), Value(Minute.Selected.Value), 0), DateTimeFormat.ShortTime)**
+
 5. 在 **Hour** 中选择 **15**，在 **Minute** 中选择 **45**。
    
     此时，“[标签](controls/control-text-box.md)”控件显示“3:45 PM”。

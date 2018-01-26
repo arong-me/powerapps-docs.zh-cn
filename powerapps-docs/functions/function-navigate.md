@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: 710e48f8619c44082d81907e64896b15425e4531
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 58f8c4bf55167e7c891a614a2bfb98ef20dcfd7c
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Microsoft PowerApps 中的 Back 和 Navigate 函数
 更改显示的屏幕。
@@ -53,7 +53,7 @@ ms.lasthandoff: 11/07/2017
 
 **Back** 通常返回 **true**，但如果当前显示的是第一个屏幕（之前没有显示其他屏幕），则会返回 **false**。  **Navigate** 通常返回 **true**，但如果它的某个参数有问题，则会返回 **false**。
 
-这两个函数只能在[行为公式](../working-with-formulas-in-depth.md#behavior-formulas)中使用。
+这两个函数只能在[行为公式](../working-with-formulas-in-depth.md)中使用。
 
 ## <a name="syntax"></a>语法
 **Back**()

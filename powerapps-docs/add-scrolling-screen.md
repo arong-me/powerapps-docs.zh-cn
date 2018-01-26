@@ -15,18 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: lonu
-ms.openlocfilehash: 8441ac93c1d3f96e0316ff1f044dc58b800d4dd5
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 02e45c98aa991c14ad99d3bf3f11d02dbc0752aa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="add-a-scrolling-screen-in-powerapps"></a>在 PowerApps 中添加滚动屏幕
 创建用户可以滚动浏览不同项的屏幕。 例如，不妨创建一个用柱形图和折线图显示数据的应用。 通过添加滚动屏幕，可以添加多个控件，以便用户可以滚动浏览这些控件。
 
 在一个分区中添加多个控件时，这些控件会在这一分区中保持相对位置不变，无论是手机应用，还是平板电脑应用。 请注意，屏幕尺寸和方向可能会决定各分区的排列方式。  
-
-&nbsp;
 
 [!INCLUDE [app-customization-requirements](includes/app-customization-requirements.md)]
 

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 30b36217b0871b85b3868cd305992d7e4f364557
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 95e0b5a003586dc028dfe772521a7d8533874c15
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="drop-down-control-in-powerapps"></a>PowerApps 中的下拉列表控件
 一个列表，在用户不将其打开的情况下，该表仅显示第一项。
@@ -28,11 +28,11 @@ ms.lasthandoff: 11/07/2017
 “下拉列表”控件可以节省屏幕的实际空间，尤其是在列表包含大量选项时。 此控件仅占用一行空间，除非用户选择箭头符号来显示更多选项。
 
 ## <a name="key-properties"></a>关键属性
-**[Default](properties-core.md)** – 用户更改控件前的初始值。
+**[Default](properties-core.md)** - 用户更改控件前的初始值。
 
 **[Items](properties-core.md)** - 控件中显示的数据源，如库、列表或图表。
 
-[!INCLUDE [long-items](../../includes/long-items.md)]
+[!INCLUDE [long-items](../includes/long-items.md)]
 
 Selected - 选定项。
 
@@ -43,7 +43,7 @@ Selected - 选定项。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-**[FocusedBorderThickness](properties-color-border.md)** - 控件具有键盘焦点时，该控件边框的粗细。
+**[FocusedBorderThickness](properties-color-border.md)** – 控件具有键盘焦点时的边框粗细。
 
 **ChevronBackground** - 下拉列表中向下箭头的背景色。
 
@@ -79,7 +79,7 @@ Selected - 选定项。
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 
-**[PaddingBottom](properties-size-location.md)** - 控件中的文本与该控件的下边缘之间的距离。
+**[PaddingBottom](properties-size-location.md)** – 控件中的文本与该控件下边缘之间的距离。
 
 **[PaddingLeft](properties-size-location.md)** - 控件中的文本与该控件的左边缘之间的距离。
 
@@ -93,7 +93,7 @@ Selected - 选定项。
 
 **[PressedFill](properties-color-border.md)** – 用户在点击或单击控件时，该控件的背景色。
 
-**[Reset](properties-core.md)** - 控件是否还原为其默认值。
+**[Reset](properties-core.md)** - 是否还原控件的默认值。
 
 **[SelectionColor](properties-color-border.md)** – 所选项目或列表中项目的文本颜色，或笔控件中选择工具的颜色。
 
@@ -105,7 +105,7 @@ Selected - 选定项。
 
 **[TabIndex](properties-accessibility.md)** - 设置为非零值时，在运行时自定义控件的选项卡顺序。
 
-**[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
+**[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
 
 **[Underline](properties-text.md)** – 在文本下方显示的线是否在控件上显示。
 
@@ -113,7 +113,7 @@ Selected - 选定项。
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 

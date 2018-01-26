@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 4a0b39a9b247a6d410ac1a705234f90833ec707a
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: e61566077ccdf9f3b2913ec0293868c1863c26fa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="revert-function-in-powerapps"></a>PowerApps 中的 Revert 函数
 刷新[数据源](../working-with-data-sources.md)的[记录](../working-with-tables.md#records)并清除错误。
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/07/2017
 
 如果 **[Errors](function-errors.md)** 函数在执行 **[Patch](function-patch.md)** 或其他数据操作后报告了冲突，则**还原**记录，从冲突版本开始并重新应用更改。
 
-**Revert** 函数没有返回值。 只能在[行为公式](../working-with-formulas-in-depth.md#behavior-formulas)中使用。
+**Revert** 函数没有返回值。 只能在[行为公式](../working-with-formulas-in-depth.md)中使用。
 
 ## <a name="syntax"></a>语法
 **Revert**( *DataSource* [, *Record* ] )

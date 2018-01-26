@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: c8eab64efa3ad4487c129cec9be7f12147d3ca8d
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f0413cfab990e6452e97b9f60c4d5d88e4fb5f7a
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="radio-control-in-powerapps"></a>PowerApps 中的单选控件
 显示所有选项的列表，但用户只能一次选择一个选项。
@@ -28,13 +28,13 @@ ms.lasthandoff: 11/07/2017
 用户有几十年使用经验的“单选”控件最好只与几个互斥选项一同使用。
 
 ## <a name="key-properties"></a>关键属性
-**[Default](properties-core.md)** – 用户更改控件前的初始值。
+**[Default](properties-core.md)** - 用户更改控件前的初始值。
 
 **[Items](properties-core.md)** - 控件中显示的数据源，如库、列表或图表。
 
-[!INCLUDE [long-items](../../includes/long-items.md)]
+[!INCLUDE [long-items](../includes/long-items.md)]
 
-**[Value](properties-core.md)** - 输入控件的值。
+**[Value](properties-core.md)** – 输入控件的值。
 
 ## <a name="all-properties"></a>所有属性
 **[Align](properties-text.md)** – 文本相对于其控件的水平居中的位置。
@@ -45,7 +45,7 @@ ms.lasthandoff: 11/07/2017
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-**[FocusedBorderThickness](properties-color-border.md)** - 控件具有键盘焦点时，该控件边框的粗细。
+**[FocusedBorderThickness](properties-color-border.md)** – 控件具有键盘焦点时的边框粗细。
 
 **[Color](properties-color-border.md)** – 控件中文本的颜色。
 
@@ -73,11 +73,11 @@ ms.lasthandoff: 11/07/2017
 
 **[LineHeight](properties-text.md)** - 文本行之间或列表项之间的距离。
 
-**[OnChange](properties-core.md)** – 用户更改控件的值（例如，通过调整滑块）时应用的响应方式。
+**[OnChange](properties-core.md)** - 用户更改控件的值（例如，通过调整滑块）时应用的响应方式。
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 
-**[PaddingBottom](properties-size-location.md)** - 控件中的文本与该控件的下边缘之间的距离。
+**[PaddingBottom](properties-size-location.md)** – 控件中的文本与该控件下边缘之间的距离。
 
 **[PaddingLeft](properties-size-location.md)** - 控件中的文本与该控件的左边缘之间的距离。
 
@@ -105,7 +105,7 @@ RadioSize - 单选按钮控件中的圆圈直径。
 
 **[TabIndex](properties-accessibility.md)** - 设置为非零值时，在运行时自定义控件的选项卡顺序。
 
-**[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
+**[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
 
 **[Underline](properties-text.md)** – 在文本下方显示的线是否在控件上显示。
 
@@ -113,7 +113,7 @@ RadioSize - 单选按钮控件中的圆圈直径。
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 

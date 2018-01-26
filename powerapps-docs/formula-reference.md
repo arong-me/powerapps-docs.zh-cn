@@ -15,16 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/28/2017
 ms.author: gregli
-ms.openlocfilehash: 9a3aade41bd375a937d68e7da5881d4475693727
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: dac61ab9ce4195f6336fe1625cea12f728eb3e41
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps 的公式参考
 公式组合了许多元素。  下面列出的包括：
 
-* **函数**，它接受参数、执行操作并返回值。 例如，**Sqrt(25)** 返回 **5**。 函数模仿了 Microsoft Excel 函数。  某些函数具有副作用，例如 **SubmitForm**，该函数仅在诸如 **Button.OnSelect** 的[行为公式](working-with-formulas-in-depth.md#behavior-formulas)中适用。
+* **函数**，它接受参数、执行操作并返回值。 例如，**Sqrt(25)** 返回 **5**。 函数模仿了 Microsoft Excel 函数。  某些函数具有副作用，例如 **SubmitForm**，该函数仅在诸如 **Button.OnSelect** 的[行为公式](working-with-formulas-in-depth.md)中适用。
 * **信号**，它返回关于环境的信息。 例如，**[Location](functions/signals.md)** 返回设备的当前 GPS 坐标。 信号不接受参数，也没有副作用。
 * **枚举**，它返回预定义的常量值。 例如，**[Color](functions/function-colors.md)** 是一个具有预定义值 **Color.Red**、**Color.Blue** 等等的枚举。  此处包括了通用枚举；函数特定的枚举随函数进行了介绍。
 * **已命名运算符**，例如 **[ThisItem](functions/operators.md#thisitem-operator)** 和 **[Parent](functions/operators.md#parent-operator)**，用于从容器内访问信息。

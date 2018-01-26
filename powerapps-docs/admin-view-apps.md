@@ -15,16 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/14/2017
 ms.author: manasma
-ms.openlocfilehash: 8ce5f86f37bccba952d5b9c662049f17df43fb14
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 18c72e1324a9c1c7c0bb666b3baf16c6e5f84ead
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="view-powerapps-created-in-your-organization"></a>查看在组织中创建的 PowerApps
 作为环境管理员，你现在可以从 [PowerApps 管理中心][1]下载在环境中创建的应用列表。 如果你是 Office 365 全局管理员或 Azure Active Directory 租户管理员，则可以在组织中下载适用于所有环境的应用列表。 该列表包含应用名称、应用的创建者，应用用于连接到数据源的任何连接器以及其他信息。
 
-## <a name="download-the-list-of-apps"></a>下载应用列表
+### <a name="download-the-list-of-apps"></a>下载应用列表
 1. 在 PowerApps 管理中心中，单击左边缘附近的“环境”，并选择要为其查看应用列表的环境：
    
     ![文件和共享](./media/admin-view-apps/environment.png)

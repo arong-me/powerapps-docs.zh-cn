@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 11eb01c2476d06f11299bd91e34f353f5b1075d2
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 57f2b9a23207c2c866738ac40f46a37747fcd54d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="global-support"></a>全球支持
 PowerApps 是全球性的产品。  可以在许多不同的区域中构建和使用许多不同语言的应用。
@@ -79,11 +79,11 @@ PowerApps 列表分隔符的更改将与 Excel 列表分隔符的更改保持一
 
 例如，请考虑用“美国英语”表示的以下公式：
 
-* **If( Slider1.Value > 12.59, UpdateContext( { Validation: true, MovingOn: 1 } ); Navigate( "NextScreen", "" ), UpdateContext( { Validation: false } ) )**
+**If( Slider1.Value > 12.59, UpdateContext( { Validation: true, MovingOn: 1 } ); Navigate( "NextScreen", "" ), UpdateContext( { Validation: false } ) )**
 
 在“,”用作小数分隔符的语言中，这将在创作体验中显示为：
 
-* **If( Slider1.Value > 12,59; UpdateContext( { Validation: true; MovingOn: 1 } );; Navigate( "NextScreen", "" ); UpdateContext( { Validation: false } ) )**
+**If( Slider1.Value > 12,59; UpdateContext( { Validation: true; MovingOn: 1 } );; Navigate( "NextScreen", "" ); UpdateContext( { Validation: false } ) )**
 
 请注意，属性选择运算符 **.** （在 **Slider1.Value** 中）始终相同，而与小数分隔符无关。
 
@@ -101,7 +101,7 @@ PowerApps 列表分隔符的更改将与 Excel 列表分隔符的更改保持一
 
 然后可以使用如下所示的公式从该表中提取已翻译的字符串：
 
-* **LookUp( Table1, TextID = "Hello" && (LanguageTag = Left( Language(), 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
+**LookUp( Table1, TextID = "Hello" && (LanguageTag = Left( Language(), 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
 
 请注意，将字符串翻译成其他语言后比你的语言长得多。  在很多情况下，要将在用户界面中显示字符串的标签和其他元素设计得稍宽一些，以便容纳较长的语言版本。
 
@@ -117,7 +117,7 @@ PowerApps 列表分隔符的更改将与 Excel 列表分隔符的更改保持一
 * **全球知晓的枚举。**  例如，**Text(Now(), DateTimeFormat.LongDate)**。  此公式将使用语言相应的格式设置当前日期的格式。  这是用于指定格式字符串的首选方法。
 * **自定义格式字符串。**  例如，**Text( Now(), "[$-en-US]dddd, mmmm dd, yyyy" )** 在以语言“en-US”使用时将显示与枚举相同的文本。  自定义格式字符串的优点是，你可以确切地指定所需的格式。
 
-自定义格式字符串前面的 "[$-en-US]" 告知 **Text** 用哪种语言解释该自定义格式字符串。  这会插入并默认为你的创作语言。  通常不需要更改它。  在使用不同语言的作者编辑同一应用时，它将十分有用。
+自定义格式字符串前面的 "[$-en-US]" 告知 **Text** 用哪种语言解释该自定义格式字符串。  这会被插入并默认为你的创作语言。  通常不需要更改它。  在使用不同语言的作者编辑同一应用时，它将十分有用。
 
 **Text** 的第三个参数指定要将哪种语言用于函数的结果。  默认值为当前用户的语言设置。
 
@@ -153,4 +153,3 @@ PowerApps 列表分隔符的更改将与 Excel 列表分隔符的更改保持一
 此外，使用这些函数可为“下拉列表”控件提供选项列表。  
 
 有关详细信息，请参阅 **[Calendar](functions/function-clock-calendar.md)** 和 **[Clock](functions/function-clock-calendar.md)** 函数的文档。
-

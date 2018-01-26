@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 37261f710ffd13cb9eae4aa6aa9eb551e7964fb9
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: bbd440528e3af9e199e5e37bc5c4e9f4d36dbe21
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>PowerApps 中的 AddColumns、DropColumns、RenameColumns 和 ShowColumns 函数
 通过添加、删除、重命名和选择[表](../working-with-tables.md)的[列](../working-with-tables.md#columns)来为表造型。
@@ -39,7 +39,7 @@ ms.lasthandoff: 11/07/2017
 **AddColumns** 函数将列添加到表，某个公式将定义该列中的值。 现有列保持不变。
 
 将会针对表的每条记录计算该公式。
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 **DropColumns** 函数从表中排除列。  其他所有列保持不变。 **DropColumns** 排除列，**ShowColumns** 包含列。
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 11/07/2017
 
 对于所有这些函数，结果是已应用转换的新表。  不会修改原始表。
 
-[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>语法
 **AddColumns**( *Table*, *ColumnName1*, *Formula1* [, *ColumnName2*, *Formula2*, ... ] )

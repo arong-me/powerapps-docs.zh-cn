@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: b4051bdb312707cfafe63a97b5e77a2860feb60c
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 3b9801e804284cb52d389aa0c57d1247a008dd0d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="enable-and-disable-functions-in-powerapps"></a>PowerApps 中的 Enable 和 Disable 函数
 打开或关闭[信号](signals.md)。
@@ -34,7 +34,7 @@ ms.lasthandoff: 11/07/2017
 
 这两个函数仅对**[定位](signals.md)**信号有效。
 
-这两个函数没有返回值。 它们只能在[行为公式](../working-with-formulas-in-depth.md#behavior-formulas)中使用。
+这两个函数没有返回值。 它们只能在[行为公式](../working-with-formulas-in-depth.md)中使用。
 
 ## <a name="syntax"></a>语法
 **Enable**( *Signal* )<br>**Disable**( *Signal* )

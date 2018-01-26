@@ -15,14 +15,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: a5dbc7be8840e1fa596594262cf03de358a14225
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 56cfcc2e19620f5acd8c0fcc4c207020f1a453c1
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="image-properties-in-powerapps"></a>PowerApps 中的图像属性
-## <a name="overview"></a>概述
 在应用中配置图形元素，包括图像、照片和笔控件的元素。
 
 **BackgroundImage** - 显示在屏幕背景中的图像文件的名称。

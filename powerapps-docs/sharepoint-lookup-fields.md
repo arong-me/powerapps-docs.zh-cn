@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/20/2017
 ms.author: sharik
-ms.openlocfilehash: b589a03f592c02547dce0e74a5c4d3ac74c436a1
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: a1966016b07a79a23880511a5cc0d6da8643adbc
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="how-to-link-sharepoint-lists-using-lookup-fields"></a>如何使用查阅字段链接 SharePoint 列表
 本教程演示如何使用查阅字段连接两个 SharePoint 列表。
@@ -58,58 +58,77 @@ SharePoint 提供两种查阅字段：
 先执行此操作，以便在向 **Assets** 列表添加数据时，可从 *Assets.RepairShop* 查阅字段中选择 **RepairShop** 条目。
 
 1. 在 SharePoint 站点上，创建一个新的 **RepairShop** 列表。
-   
+
     ![](./media/sharepoint-lookup-fields/new-list.png)
+
 2. 添加“单行文本”类型的 *ContactEmail* 字段。
-   
+
     ![](./media/sharepoint-lookup-fields/add-email-field.png)
+
 3. 添加所需的任何其他字段。
+
 4. 单击或点击“+ 新建”向列表中输入示例数据，至少输入 3 行，每行包含不同的 *ContactEmail* 值。 当资产需要修复时，从中选择一个。
-   
+
     ![](./media/sharepoint-lookup-fields/add-repair-shops.png)
 
 ### <a name="define-the-assets-list"></a>定义 Assets 列表
 1. 在 SharePoint 站点上，创建一个新的 **Assets** 列表。
+
 2. 单击或点击加号，然后选择“更多”。
-   
+
     ![](./media/sharepoint-lookup-fields/choose-more-type.png)
+
 3. 添加一个“选项”类型的 *AssetType* 字段，然后在“分行键入每个选项”文本框中，填写要在选项菜单中显示的值。 然后单击或点击“确定”。
-   ![](./media/sharepoint-lookup-fields/define-choice-column.png)
+
+    ![](./media/sharepoint-lookup-fields/define-choice-column.png)
+
 4. 开始添加另一个字段，过程与步骤 2 一样：单击或点击加号，然后选择“更多”。
+
 5. 添加一个“查阅”类型的 *RepairShop* 字段，然后从“信息来源”文本框中选择“RepairShop”，从“在此列中”文本框中选择“ContactEmail”。 然后单击或点击“确定”。
-   ![](./media/sharepoint-lookup-fields/setup-lookup-column.png)
+
+    ![](./media/sharepoint-lookup-fields/setup-lookup-column.png)
+
 6. 添加所需的任何其他字段。
 
 ## <a name="create-an-app-from-the-assets-list"></a>根据 Assets 列表创建应用
 使用此应用向 **Assets** 列表添加数据。
 
 1. 打开 PowerApps Studio。 如果未用过 PowerApps，请使用组织电子邮件地址[免费注册](https://powerapps.microsoft.com)，然后按照说明从 Windows 应用商店下载 PowerApps Studio。
+
 2. 在“文件”菜单中（沿左边缘），单击或点击“新建”，然后单击或点击“SharePoint”。
 
-![](./media/sharepoint-lookup-fields/create-app.png)
+    ![](./media/sharepoint-lookup-fields/create-app.png)
 
 1. 从“最近访问过的站点”列表中选择 SharePoint 站点，或直接在文本框中输入站点 URL。 单击或点击“转到”。
 
-![](./media/sharepoint-lookup-fields/choose-sharepoint-site.png)
+    ![](./media/sharepoint-lookup-fields/choose-sharepoint-site.png)
 
 1. 从 SharePoint 站点中选择主列表，此例中为 **Assets**。 单击或点击右下角的“连接”按钮。
 
-![](./media/sharepoint-lookup-fields/choose-main-list.png)
+    ![](./media/sharepoint-lookup-fields/choose-main-list.png)
+
 
 ## <a name="add-data-to-the-assets-list"></a>向 Assets 列表添加数据
 现在可以运行应用，查看查阅字段的“查看详细信息”屏幕的外观。
 
 1. 按 F5，或选择“预览”( ![](./media/sharepoint-lookup-fields/preview.png) )。
+
 2. 单击或点击右上角的 **+** 符号以添加条目。
+
 3. 为此资产输入“标题”。
+
 4. 单击或点击 **AssetType** 向下箭头。 显示的值是创建此字段时输入的值。 选择其中一个条目。
-   
+
     ![](./media/sharepoint-lookup-fields/fill-asset-type-3.png)
+
 5. 单击或点击 **RepairShop** 向下箭头。 选择其中一个条目。
-   
+
     ![](./media/sharepoint-lookup-fields/fill-repair-shop-3.png)
+
 6. 在右上角单击或点击复选标记以保存新条目。
+
 7. （可选）重复此过程，以便向列表中添加所需数量的项。
+
 8. 按 Esc 返回默认工作区。
 
 ## <a name="for-more-information"></a>有关
@@ -117,4 +136,3 @@ SharePoint 提供两种查阅字段：
 * [性能、刷新按钮、ForAll 和多字段查阅](https://powerapps.microsoft.com/blog/performance-refresh-forall-multiple-field-lookups-531/)
 * [使用 Common Data Service 数据库生成应用](data-platform-create-app.md)
 * [使用 Common Data Service 数据库从头开始创建应用](data-platform-create-app-scratch.md)
-

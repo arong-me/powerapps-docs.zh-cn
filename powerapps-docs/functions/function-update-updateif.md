@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 36f259989c01d295dd1e6d3894032748133483d3
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 71732f7d2785dba42ba2a6e05b70ce16d3f017a5
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="update-and-updateif-functions-in-powerapps"></a>PowerApps 中的 Update 和 UpdateIf 函数
 更新[数据源](../working-with-data-sources.md)中的[记录](../working-with-tables.md#records)。
@@ -39,22 +39,22 @@ ms.lasthandoff: 11/07/2017
 
 就像使用 **UpdateIf** 一样，也可使用 **[Patch](function-patch.md)** 函数更改记录的特定列，而不影响其他列。
 
-**Update** 和 **UpdateIf** 都以[表](../working-with-tables.md)的形式返回修改的数据源。 必须在[行为公式](../working-with-formulas-in-depth.md#behavior-formulas)中使用任一函数。
+**Update** 和 **UpdateIf** 都以[表](../working-with-tables.md)的形式返回修改的数据源。 必须在[行为公式](../working-with-formulas-in-depth.md)中使用任一函数。
 
 ### <a name="delegation"></a>委派
-[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>语法
 **Update**( *DataSource*, *OldRecord*, *NewRecord* [, **All** ] )
 
-* *DataSource* - 必需。 数据源，其中包含要替换的记录。
+* *DataSource* – 必需。 数据源，其中包含要替换的记录。
 * *OldRecord* - 必需。 要替换的记录。
 * *NewRecord* - 必需。 替换记录。 这不是更改记录。 将替换整个记录，缺失的属性将包含“空”。
 * **All** - 可选。 在集合中，同一记录可能出现多次。 指定 **All** 参数即可删除记录的所有副本。
 
 **UpdateIf**( *DataSource*, *Condition1*, *ChangeRecord1* [, *Condition2*, *ChangeRecord2*, ... ] )
 
-* *DataSource* - 必需。 数据源，其中包含要修改的一个或多个记录。
+* *DataSource* – 必需。 数据源，其中包含要修改的一个或多个记录。
 * *Condition(s)* - 必需。 一个公式，对于一个或多个需修改的记录，该公式的求值结果为 **true**。  可以在公式中使用 *DataSource* 的列名。  
 * *ChangeRecord(s)* - 必需。  对于每个相应的条件，将对符合条件的 *DataSource* 记录应用新属性值的更改记录。 如果使用大括号以内联方式提供记录，则可在属性公式中使用现有记录的属性值。
 

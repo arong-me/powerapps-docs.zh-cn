@@ -15,17 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 25094d77809e754afbc54fe5e7b2cd644497ff3e
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: cad53141d6896ad71caaca77b7bf07fee2ac0600
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="core-properties-in-powerapps"></a>PowerApps 中的核心属性
-## <a name="overview"></a>概述
 配置用户是否能看到控件并与之交互。
 
-## <a name="properties"></a>属性
+### <a name="properties"></a>属性
 **Default**：用户更改控件前的初始值。
 
 * 适用于**[卡片](control-card.md)**、**[复选框](control-check-box.md)**、**[下拉列表](control-drop-down.md)**、**[库](control-gallery.md)**、**[列表框](control-list-box.md)**、**[单选按钮](control-radio.md)**、**[评级](control-rating.md)**、**[滑块](control-slider.md)**、**[文本输入](control-text-input.md)**和**[切换](control-toggle.md)**控件。

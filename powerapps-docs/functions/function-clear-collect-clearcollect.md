@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/01/2015
 ms.author: gregli
-ms.openlocfilehash: 532b30b2a8740dc3f4adf879029608c6f764c6e2
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: cc12241861a1dd6a0242810bb1a6faab70a2de27
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>PowerApps 中的 Collect、Clear 和 ClearCollect 函数
 创建和清除[集合](../working-with-data-sources.md#collections)，以及将[记录](../working-with-tables.md#records)添加到任意[数据源](../working-with-data-sources.md)。
@@ -40,7 +40,7 @@ ms.lasthandoff: 11/07/2017
 
 还可使用 **[Patch](function-patch.md)** 函数在数据源中创建记录。
 
-**Collect** 以表格形式返回修改后的数据源。  **Collect** 只能在[行为公式](../working-with-formulas-in-depth.md#behavior-formulas)中使用。
+**Collect** 以表格形式返回修改后的数据源。  **Collect** 只能在[行为公式](../working-with-formulas-in-depth.md)中使用。
 
 ### <a name="clear"></a>Clear
 **Clear** 函数删除集合的所有记录。  集合的列将保留。
@@ -59,7 +59,7 @@ ms.lasthandoff: 11/07/2017
 ## <a name="syntax"></a>语法
 **Collect**( *DataSource*, *Item*, ... )
 
-* *DataSource* - 必需。 要向其添加数据的数据源。  如果尚不存在，将创建一个新的集合。
+* *DataSource* – 必需。 要向其添加数据的数据源。  如果尚不存在，将创建一个新的集合。
 * *Item(s)* - 必需。  要添加到数据源的一个或多个记录或表。  
 
 **Clear**( *Collection* )

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 944d6d8bf8c02790af7fa6726c15a94587c6af24
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: c0ca5547f433aea1bee8d5d0d430c3e11a7f4caa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="forall-function-in-powerapps"></a>PowerApps 中的 ForAll 函数
 针对[表](../working-with-tables.md)中的所有[记录](../working-with-tables.md#records)计算值和执行操作。
@@ -27,7 +27,7 @@ ms.lasthandoff: 11/07/2017
 ## <a name="description"></a>说明
 **ForAll** 函数针对表中的所有记录对公式求值。  该公式可以计算值并/或执行操作，例如修改数据或使用连接。
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 ### <a name="return-value"></a>返回值
 每个公式求值的结果都在表中返回，并采用与输入表相同的顺序。
@@ -49,7 +49,7 @@ PowerApps 中的许多函数可以通过使用单列表一次处理多个值。 
 另一个需要注意的事项是 **ForAll** 不可委派，而诸如 **Filter** 之类的其他函数则可以。  
 
 ### <a name="delegation"></a>委派
-[!INCLUDE [delegation-no-one](../../includes/delegation-no-one.md)]
+[!INCLUDE [delegation-no-one](../includes/delegation-no-one.md)]
 
 ## <a name="syntax"></a>语法
 **ForAll**( *Table*, *Formula* )

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/02/2017
 ms.author: archanan
-ms.openlocfilehash: 3fe41ceddcce1ee8d1daa9b3532b4c92a94d8eee
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: b4377bd869e2b8879fd95d0a6729664104cd1368
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="add-a-data-connection-in-powerapps"></a>在 PowerApps 中添加数据连接
 在 PowerApps 中，向现有应用或从头开始生成的应用添加数据连接。 本主题使用的是 PowerApps Studio，也可以使用 [powerapps.com](https://web.powerapps.com)，如[管理连接](add-manage-connections.md)主题所述。
@@ -46,41 +46,48 @@ ms.lasthandoff: 11/07/2017
 
 ## <a name="add-a-connection"></a>添加连接
 1. 单击或点击“文件”菜单（左边缘附近）上的“新建”。
-   
+
     ![“文件”菜单上的“新建”选项](./media/add-data-connection/file-new.png)
+
 2. 在“空白应用”磁贴上，单击或点击“手机布局”。
-   
+
     ![从头开始创建应用](./media/add-data-connection/blank-app.png)
+
 3. 在中心窗格中，单击或点击“连接到数据”。
+
 4. 如果“数据”窗格中的连接列表包含要使用的连接，请单击或点击相应连接，将其添加到应用中。 否则，请跳到下一步。
-   
+
     ![添加数据源](./media/add-data-connection/choose-existing-connections.png)
+
 5. 单击或点击“新建连接”，查看连接器列表。
-   
+
     ![添加连接](./media/add-data-connection/new-connection.png)
+
 6. 滚动浏览连接器列表，直到发现要创建的连接类型（例如，Office 365 Outlook），然后单击或点击此类型。
-   
+
     ![选择连接](./media/add-data-connection/choose-connection.png)
+
 7. 单击或点击“创建”，创建连接并将其添加到应用中。
-   
+
     某些连接器（如 Microsoft Translator）不需要执行额外步骤即可立即从中显示数据。 其他连接器将提示你提供凭据，指定一组特定的数据或执行其他步骤。 例如，[SharePoint](connections/connection-sharepoint-online.md) 和 [SQL Server](connections/connection-azure-sqldatabase.md) 需要在使用之前提供其他信息。
 
 ## <a name="view-or-change-a-data-source"></a>查看或更改数据源
 如果正在更新应用，则可能需要确定或更改具有 Item 属性的库、窗体或其他控件中显示的数据源。 例如，你可能正在使用其他人创建的应用，或者你可能想要提醒自己你在不久前配置的数据源。
 
 1. 选择想要为其标识数据源的控件。
-   
+
     例如，通过在左边缘附近的屏幕和控件的层次结构列表中单击或点击一个库（而非库中的控件）来选择此库。
-   
+
     数据源的名称在右侧窗格的“属性”选项卡上显示。
-   
+
     ![“属性”选项卡上的数据源](./media/add-data-connection/properties-tab.png)
+
 2. 若要显示此数据源的详细信息或更改它，请单击或点击右侧窗格中的“数据”。
-   
+
     ![“数据”窗格](./media/add-data-connection/data-pane.png)
+
 3. 若要更改该数据源，请单击或点击该数据源旁的向下箭头，然后选择或创建其他源。
 
 ## <a name="next-steps"></a>后续步骤
 * 若要显示和更新数据源（如 Excel、SharePoint Online 或 SQL Server）中的数据，请先[添加库](add-gallery.md)，然后[添加窗体](add-form.md)。
 * 对于其他源中的数据，请使用连接器特定的函数，例如，适用于 [Office 365 Outlook](connections/connection-office365-outlook.md)、[Twitter](connections/connection-twitter.md) 和 [Microsoft Translator](connections/connection-microsoft-translator.md) 的函数。
-

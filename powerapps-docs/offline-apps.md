@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: 95dad93f75503415f714cc36c0f9413b66223353
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 0c06b24c0ed253a6589c4eb073a6d01595ed5b59
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="develop-offline-capable-apps-with-powerapps"></a>使用 PowerApps 开发可脱机运行的应用
 作为移动应用开发者，最常遇到的情境之一是，让用户能够在联网受限或根本无法联网的情况下高效工作。 PowerApps 提供了一系列功能和行为，有助于开发可脱机运行的应用。 你可以：
@@ -59,8 +59,11 @@ PowerApps 最有趣的方面之一是，它提供一系列功能和公式，以�
     ![空白应用 -> 手机布局](media/offline-apps/blank-app.png)
 
 ### <a name="step-2-add-a-twitter-connection"></a>第 2 步：添加 Twitter 连接
+
 1. 依次单击或点击“内容” > “数据源”，然后选择“数据源”面板上的“添加数据源”。
+
 2. 单击或点击“新建连接”，选择“Twitter”，然后单击或点击“创建”。
+
 3. 输入凭据，然后创建连接。
    
     ![添加 Twitter 连接](media/offline-apps/twitter-connection.png)
@@ -96,8 +99,11 @@ SaveData(LocalTweets, "Tweets")
 * 如果设备处于脱机状态，则会从“Tweets”文件（若有）加载本地缓存。
 
 ### <a name="step-4-add-a-gallery-and-bind-it-to-the-localtweets-collection"></a>第 4 步：添加并将库绑定到“LocalTweets”集合
+
 1. 插入一个高度可调的新库：依次单击或点击“插入” > “库” > “高度可调的空白库”。
+
 2. 将“Items”属性设置为“LocalTweets”。
+
 3. 添加四个“标签”控件来显示每篇推文的数据，然后将“Text”属性设置为：
    * **ThisItem.TweetText**
    * **ThisItem.UserDetails.FullName & " @" & ThisItem.UserDetails.UserName**
@@ -115,7 +121,9 @@ If (Connection.Connected, "Connected", "Offline")
 此公式检查设备是否处于联机状态。 如果处于联机状态，标签文本显示“已连接”；否则，显示“脱机”。
 
 ### <a name="step-6-add-a-text-input-to-compose-new-tweets"></a>第 6 步：添加用于撰写新推文的文本输入控件
+
 1. 插入一个名为“NewTweetTextInput”的新“文本输入”控件。
+
 2. 将文本输入控件的“Reset”属性设置为“resetNewTweet”。
 
 ### <a name="step-7-add-a-button-to-post-the-tweet"></a>第 7 步：添加用于发布推文的按钮
@@ -149,7 +157,9 @@ If (Connection.Connected, "Connected", "Offline")
 添加一个新“计时器”控件：
 
 * 将“Duration”属性设置为“300000”。
+
 * 将“AutoStart”属性设置为“true”。
+
 * 将“OnTimerEnd”设置为以下公式：
   
     ```
@@ -176,16 +186,12 @@ If (Connection.Connected, "Connected", "Offline")
 ## <a name="testing-the-app"></a>测试应用
 请按照以下步骤操作，测试此应用：
 
-1. 在处于联机状态的移动设备上运行 PowerApps。
-   
-    至少必须在处于联机状态下运行一次应用，才能将应用下载到设备上。
+1. 在处于联机状态的移动设备上运行 PowerApps。 至少必须在处于联机状态下运行一次应用，才能将应用下载到设备上。
 2. 启动 Twitter 应用。
 3. 你会发现，推文已加载，且状态显示为“已连接”。
 4. 完全关闭 PowerApps。
 5. 为了确保设备处于脱机状态，将设备设置为飞行模式。
-6. 运行 PowerApps。
-   
-    现在可以脱机运行 Twitter 应用，并能访问以前联机时在此设备上运行过的其他任何应用（即，PowerApps 会隐藏尚未下载到设备中的所有应用）。
+6. 运行 PowerApps。 现在可以脱机运行 Twitter 应用，并能访问以前联机时在此设备上运行过的其他任何应用（即，PowerApps 会隐藏尚未下载到设备中的所有应用）。
 7. 再次运行此应用。
 8. 你会发现，此应用可以正确反映连接状态，状态显示为“脱机”。
 9. 撰写新推文。 它会存储在“LocalTweetsToPost”本地集合中。

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/15/2017
 ms.author: archanan
-ms.openlocfilehash: 94e4eaa5209bbcaf6cd191ed2dfdf27d9eab1d5f
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: e073c0a8c471dc8b863894e2d229b15b66b3ce60
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="delegable-data-sources"></a>可委托的数据源
 如[了解委托](delegation-overview.md)一文中所详述，委托是指 PowerApps 将数据处理这项任务委托给数据源，而不是将数据移到应用中进行本地处理。
@@ -31,7 +31,6 @@ ms.lasthandoff: 11/07/2017
 * SQL Server - **是**
 * Dynamics 365 - **是**
 * Salesforce - **是**
-* Excel - **即将支持**
 * Dynamics 365 for Operations - 尚不支持
 * Dynamics 365 for Financials - 尚不支持
 * Dynamics NAV - 尚不支持
@@ -41,7 +40,7 @@ ms.lasthandoff: 11/07/2017
 
 本文档列出了每个数据源的委托支持的最新状态。
 
-**先决条件**
+## <a name="prerequisites"></a>先决条件
 
 * 阅读[了解委托](delegation-overview.md)一文
 
@@ -77,4 +76,3 @@ ms.lasthandoff: 11/07/2017
 | StartsWith |否 |是 |否 |否 |否 |
 
 <sup>2</sup>仅限运算符。 不委托 And/Or/Not 函数。
-

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2017
 ms.author: millopis
-ms.openlocfilehash: 230ad9f61185caff93fb3a5f56c62176b4f78c16
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: b534400317e39dffec30f185c180de34098a378f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="troubleshooting---unable-to-create-or-retrieve-a-mashup-for-this-database"></a>疑难解答 - 无法为此数据库创建或检索混合
 使用“根据数据新建实体(技术预览版)”功能时，可能会看到以下错误：
@@ -31,7 +31,6 @@ ms.lasthandoff: 11/07/2017
 * Azure Active Directory (AAD) 租户管理员已禁止用户同意应用代表他们访问公司数据。
 * 使用非托管 Active Directory 租户。 非托管租户是不含全局管理员的目录，旨在完成自助注册服务。 若要解决这种情况的问题，用户必须先转换为托管租户，然后再使用以下部分中描述的两个解决方案之一解决此问题。
 
-## <a name="how-to-fix-the-issue"></a>如何解决此问题
 上述问题有两种解决方法：
 
 * 让 AAD 管理员按照必要步骤操作，允许用户同意应用代表他们访问公司数据
@@ -39,7 +38,8 @@ ms.lasthandoff: 11/07/2017
 
 下面介绍了这些解决方案的所有必要步骤。
 
-### <a name="allowing-users-to-give-apps-consent-to-access-company-data"></a>允许用户同意应用代表他们访问公司数据
+## <a name="allowing-users-to-give-apps-consent-to-access-company-data"></a>允许用户同意应用代表他们访问公司数据
+
 可以联系 AAD 管理员，让他/她按照下列步骤操作，允许用户同意任意应用代表他们访问公司数据：
 
 1. 访问 [https://portal.azure.com](https://portal.azure.com)
@@ -50,7 +50,7 @@ ms.lasthandoff: 11/07/2017
 
 这可能是最简单的方法，但与下一种方法相比，允许的权限更为宽泛。
 
-### <a name="allowing-power-query-to-access-company-data"></a>允许 Power Query 访问公司数据
+## <a name="allowing-power-query-to-access-company-data"></a>允许 Power Query 访问公司数据
 另一种解决方案是让租户管理员允许 Power Query 访问公司数据，而不修改全租户权限。 为此，请让租户管理员按照下列步骤操作：
 
 1. 安装 [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-azurerm-ps)

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: 16d2ed94b44b8b0e521aa5690885fcd1617dc024
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: bcade879bfad04a50f80c26638f994897d9b42c0
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="updatecontext-function-in-powerapps"></a>PowerApps 中的 UpdateContext 函数
 创建或更新当前屏幕的[上下文变量](../working-with-variables.md#create-a-context-variable)。
@@ -38,9 +38,9 @@ PowerApps 以公式为基础，这些公式会在用户与应用交互时自动�
 * 如果指定尚不存在的变量的名称，**UpdateContext** 会以该名称创建一个变量并将该变量的值设置为指定的值。
 * 如果之前已定义某变量，但未在这一特定 **UpdateContext** 公式中指定它，其值保持不变。
 
-使用 UpdateContext 或 [Navigate 函数](function-navigate.md)隐式创建上下文变量。  无需显式声明。  如果删除所有 UpdateContext 和 Navigate 到上下文变量的引用，则该上下文变量将不复存在。  若要清除变量，请将其值设置为 [Blank 函数](function-blank.md)的结果。 
+使用 UpdateContext 或 [Navigate 函数](function-navigate.md)隐式创建上下文变量。  无需显式声明。  如果删除所有 UpdateContext 和 Navigate 到上下文变量的引用，则该上下文变量将不复存在。  若要清除变量，请将其值设置为 [Blank 函数](function-isblank-isempty.md)的结果。
 
-在创作环境中，可以使用“文件”菜单下的“变量”视图查看变量的值、定义和使用情况。 
+在创作环境中，可以使用“文件”菜单下的“变量”视图查看变量的值、定义和使用情况。
 
 使用变量的列名称可引用公式中的上下文变量。 例如，**UpdateContext( { ShowLogo: true } )** 创建一个名为 **ShowLogo** 的上下文变量，并将其值设置为 **true**。 然后可通过在公式中使用名称 **ShowLogo** 来使用此上下文变量的值。  可将 **ShowLogo** 编写为图像控件 **Visible** 属性的公式，然后根据上下文变量的值是 **true** 还是 **false** 来显示或隐藏该控件。
 
@@ -56,7 +56,7 @@ PowerApps 以公式为基础，这些公式会在用户与应用交互时自动�
 
 每个上下文变量的作用于限于一个屏幕。 如果想要在一个屏幕上定义上下文变量，但想要从另一个屏幕修改该变量，必须生成一个基于 **[Navigate](function-navigate.md)** 函数的公式。  或者，使用全局变量。
 
-**UpdateContext** 没有返回值，只可以在[行为公式](../working-with-formulas-in-depth.md#behavior-formulas)中使用它。
+**UpdateContext** 没有返回值，只可以在[行为公式](../working-with-formulas-in-depth.md)中使用它。
 
 ## <a name="syntax"></a>语法
 **UpdateContext**( *UpdateRecord* )

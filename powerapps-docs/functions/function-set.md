@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/29/2017
 ms.author: gregli
-ms.openlocfilehash: ddd772b8db016c69001d2d19f33863fe65fbd25a
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ef44d704d16892c7c37ac4fbf7c3eebc0ffcb966
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="set-function-in-powerapps"></a>PowerApps 中的 Set 函数
 设置全局变量的值。
@@ -32,9 +32,9 @@ ms.lasthandoff: 11/07/2017
 PowerApps 以公式为基础，这些公式会在用户与应用交互时自动重新计算。  全局变量不具有此优势，因此，在应用的创建和理解上可能难度更大。  使用变量之前，请参阅[使用变量](../working-with-variables.md)。
 
 ## <a name="description"></a>说明
-全局变量是使用 **Set** 函数隐式创建而成。  无需显式声明。  如果删除了全局变量的所有 **Set** 函数，则该全局变量将不再存在。  若要清除变量，请将其值设置为 [Blank 函数](function-blank.md)的结果。 
+全局变量是使用 **Set** 函数隐式创建而成。  无需显式声明。  如果删除了全局变量的所有 **Set** 函数，则该全局变量将不再存在。  若要清除变量，请将其值设置为 [Blank 函数](function-isblank-isempty.md)的结果。
 
-在创作环境中，可以使用“文件”菜单下的“变量”视图查看变量的值、定义和使用情况。 
+在创作环境中，可以使用“文件”菜单下的“变量”视图查看变量的值、定义和使用情况。
 
 如本主题后面的示例所示，全局变量可保留多种信息，包括：
 
@@ -48,7 +48,7 @@ PowerApps 以公式为基础，这些公式会在用户与应用交互时自动�
 
 全局变量使用的名称不能与已有集合或控件相同。  其使用的名称可以与上下文变量相同。  若要区分这两者，请使用[消除歧义运算符](operators.md#disambiguation-operator)。
 
-**Set** 没有返回值，只可以在[行为公式](../working-with-formulas-in-depth.md#behavior-formulas)中使用它。
+**Set** 没有返回值，只可以在[行为公式](../working-with-formulas-in-depth.md)中使用它。
 
 ## <a name="syntax"></a>语法
 **Set**( *VariableName*, *Value* )

@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: c5d4780908ebd20989649df14dec51d70e8eecde
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ce4d0db7a82e87d25df950c99da718bf8c84b9bd
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="show-information-about-a-powerapps-user"></a>显示 PowerApps 用户的相关信息
 User 函数可显示与已登录用户关联的全名、电子邮件地址和图片。 可以使用此信息来自动填充窗体。
@@ -30,8 +30,6 @@ User 函数可显示与已登录用户关联的全名、电子邮件地址和图
 * 联系支持人员时，自动输入电子邮件地址。
 
 基本上可在自动填充窗体或标签的任意情景中使用此功能，用户会因此而获益
-
-&nbsp;
 
 [!INCLUDE [app-customization-requirements](includes/app-customization-requirements.md)]
 
