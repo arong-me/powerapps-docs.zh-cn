@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/08/2017
 ms.author: litran
-ms.openlocfilehash: 39cf496539a1db041a0ba025bd46a9f858200aee
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ff2c45b1d15bdb6d937756b5e7ed00e5c9e9fdfa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="let-customers-test-drive-your-apps-on-appsource"></a>让客户在 AppSource 上体验你的应用
 是否热衷于在 PowerApps 中生成应用？ 是否有应用要与客户共享？ [AppSource.com](https://appsource.microsoft.com) 现在支持 PowerApps 体验版解决方案，以便你可以与客户共享应用，为你的企业带来新的潜在客户。
@@ -93,7 +93,8 @@ UpdateIf(SiteInspectorCollect,ID=record.ID,
 RemoveIf(SiteInspectorCollect,ID=record.ID)
 ```
 
-**注意**：只在应用运行时，集合才会保存数据；在应用关闭时，所有更改都会遭放弃。
+> [!NOTE]
+> 只有在应用运行时，集合才会保留数据；如果应用关闭，所有更改都会遭放弃。
 
 总之，可以创建包含嵌入数据的应用版本，从而模拟连接外部数据的应用体验。 嵌入数据后，可以在 AppSource.com 上将此应用发布为体验版解决方案。
 

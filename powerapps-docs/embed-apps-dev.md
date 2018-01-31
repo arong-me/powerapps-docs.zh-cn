@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/12/2017
+ms.date: 10/20/2017
 ms.author: mblythe
-ms.openlocfilehash: 541de1bcea9b76262d4f2d1cbe79c76b1c117245
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 0bf7675248a8b5734b86dbfb79ca9272d72e93b9
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="integrate-powerapps-into-websites-and-other-services"></a>将 PowerApps 集成到网站和其他服务中
 如果能够直接将生成的应用集成到用户工作时使用的工具中，通常最为实用。 借助 PowerApps，可以将应用嵌入 iframe，以便于将这些应用集成到网站和其他服务中（如 Power BI 或 SharePoint）。
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/07/2017
 请记住以下限制：
 
 * 只有同一租户中的 PowerApps 用户，才能访问嵌入应用。
-* PowerApps 仅支持关闭兼容性视图的 Internet Explorer 11。
+* 若要使用 Internet Explorer 11 访问 PowerApps，必须禁用兼容性视图。
 
 还可以将 PowerApps 集成到 SharePoint Online 中（不使用 iframe）。 有关详细信息，请参阅[使用 PowerApps 从 SharePoint 中生成应用](generate-app-from-sharepoint-list-interface.md)。
 
@@ -43,7 +43,8 @@ https://web.powerapps.com/webplayer/iframeapp?source=iframe
 &appId=/providers/Microsoft.PowerApps/apps/[AppID]
 ```
 
-**注意**：为了提升 URI 在页面上的显示效果，我们添加了换行符。
+> [!NOTE]
+> 为了提升 URI 在页面上的显示效果，添加了换行符。
 
 只需将 URI 中的 [AppID] 替换成应用 ID（包括 '[' & ']'）。 稍后，我们将介绍如何获取此值，而现在将先介绍 URI 中的所有参数：
 

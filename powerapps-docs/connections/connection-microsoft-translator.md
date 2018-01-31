@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2017
 ms.author: archanan
-ms.openlocfilehash: 9d5ccfd11399188e739353e2994f779347377de4
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 104afc3d2a5b243b7315b1638f23b7778d049370
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>从 PowerApps 连接到 Microsoft Translator
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -28,11 +28,10 @@ ms.lasthandoff: 11/07/2017
 
 本主题演示如何创建 Microsoft Translator 连接，如何在应用中使用 Microsoft Translator 连接，并列出可用的函数。
 
-**请注意**：此连接器限定每个用户每天进行 150 次调用。
+> [!NOTE]
+> 此连接器的限制为，每个用户每天只能执行 150 次调用。
 
-&nbsp;
-
-[!INCLUDE [connection-requirements](../../includes/connection-requirements.md)]
+[!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
 ## <a name="connect-to-microsoft-translator"></a>连接到 Microsoft Translator
 1. 打开 PowerApps，选择“新建”，然后创建一个“空白应用”。 选择手机或平板电脑布局。 平板电脑布局为你提供了多个工作区：  

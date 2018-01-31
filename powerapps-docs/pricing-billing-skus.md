@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/19/2017
 ms.author: jamesol
-ms.openlocfilehash: ebe54d21ffc55024e1af7ab81fb2835835f39e6f
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f3b53905bb335cf61eae3e184d4984d56907fe4c
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="licensing-overview"></a>许可概述
 PowerApps 按用户提供许可证。 为了创建和运行应用而访问该服务的每个用户都需要有许可证。 Office 365 和 Dynamics 365 客户可立即享用这些产品随附的 PowerApps 和 Microsoft Flow 功能。 想要构建应用和流来访问 Office 365 和 Dynamics 365 外部的数据源或者需要其他功能的客户可以购买 PowerApps 和 Microsoft Flow 的独立订阅。 这几组许可证之间存在重要的功能差别。
@@ -80,7 +80,8 @@ PowerApps 不提供免费帐户，但用户可对 PowerApps 计划 2 免费试�
 * 有权通过 Office 365 或 Dynamics 365 访问 PowerApps 或 Microsoft Flow 的用户仍可访问 PowerApps 或 Microsoft Flow。  但根据 [PowerApps 定价页][2]中所述，这些用户将失去计划 2 特有的所有功能的访问权限。
 * 无权通过 Office 365 或 Dynamics 365 访问的用户可以申请延长试用，或者购买独立的计划。 有关详细信息，请参阅[为组织购买 PowerApps][4]。
 
-> **注意**：若要为组织购买 PowerApps，你必须是租户的 Office 365 全局管理员或计费管理员，或者创建一个租户。
+> [!NOTE]
+>   必须已是租户的 Office 365 全局管理员或计费管理员，或必须创建租户，才能为组织购买 PowerApps。
 > 
 > 
 

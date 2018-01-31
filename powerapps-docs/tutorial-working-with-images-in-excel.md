@@ -14,18 +14,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/15/2016
 ms.author: anneta
-ms.openlocfilehash: 13b15a29cf2f9e211328b815b8419799024e481e
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 5ba6f02db0de796cb75c57d914abf41caa259cbf
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>如何在 Excel 文件中保存图像，并将其添加到你的应用
-&nbsp;
-
-[!INCLUDE [app-customization-requirements](includes/app-customization-requirements.md)]
-
-* 了解如何[添加数据源](add-data-connection.md)
 
 在本教程中，我们将：
 
@@ -35,7 +30,11 @@ ms.lasthandoff: 11/07/2017
 * 将笔输入控件所创建的图像保存到 Excel 文件
 * 在应用中显示来自 Excel 文件的图像
 
+[!INCLUDE [app-customization-requirements](includes/app-customization-requirements.md)]
+* 了解如何[添加数据源](add-data-connection.md)
+
 ## <a name="create-the-excel-file-as-a-table"></a>将 Excel 文件创建为表格
+
 1. 在空白的 Excel 文件中，将列命名为“图像 [image]”。
 2. 按以下步骤创建表格：    
    
@@ -77,7 +76,8 @@ ms.lasthandoff: 11/07/2017
 
 在本示例中，我们使用包含一些 .jpeg 文件的 [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)。
 
-**请注意**：在显示来自 Excel 文件的图像时，访问这些图像的路径必须使用正斜杠。 当 PowerApps 将图像保存到 Excel 表格时（如上述步骤所述），路径将使用反斜杠。 因此，还可以使用前面示例中的 **SavePen_images**。 如果这样做，请将 Excel 表格中路径的反斜杠改为正斜杠。 否则将不会显示图像。  
+> [!NOTE]
+> 显示 Excel 文件中的图像时，这些图像的路径必须使用正斜线。 当 PowerApps 将图像保存到 Excel 表格时（如上述步骤所述），路径将使用反斜杠。 因此，还可以使用前面示例中的 **SavePen_images**。 如果这样做，请将 Excel 表格中路径的反斜杠改为正斜杠。 否则将不会显示图像。  
 
 1. 下载 [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)，并将 **Assets** 文件夹提取到云存储帐户。
 2. 在 Excel 电子表格中创建一个与下表类似的表格：

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/12/2016
 ms.author: sirsu
-ms.openlocfilehash: 59b19a81a7c3bfca059adb00e2b3140c122f53eb
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 62dbb11d167155d7f0c47b889674a61b1b1047f3
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>从 PowerApps 连接到 Power BI
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
@@ -28,7 +28,7 @@ Power BI 是一套用于分析数据和共享见解的业务分析工具。 通�
 
 本主题演示如何在应用中使用 Power BI 连接，并列出可用的函数。
 
-## <a name="what-you-need-to-get-started"></a>开始之前的准备工作
+## <a name="prerequisites"></a>先决条件
 * 访问 [powerapps.com](https://powerapps.com) 或安装 [PowerApps](http://aka.ms/powerappsinstall)
 * 添加 Power BI [连接](https://powerapps.microsoft.com/tutorials/add-manage-connections/)
 * 通过[模板](https://powerapps.microsoft.com/tutorials/get-started-test-drive/)、[数据](https://powerapps.microsoft.com/tutorials/get-started-create-from-data/)或[从头开始](https://powerapps.microsoft.com/tutorials/get-started-create-from-blank/)创建应用
@@ -78,7 +78,8 @@ Power BI 是一套用于分析数据和共享见解的业务分析工具。 通�
 ## <a name="checkalertstatus"></a>CheckAlertStatus
 检查警报状态。
 
-**注意：**如果调用过于频繁，则将基于警报限制对该终结点的请求。
+> [!NOTE]
+> 如果调用过于频繁，将会在每次发出警报时限制对此终结点的请求。
 
 #### <a name="input-properties"></a>输入属性
 | 属性名称 | 数据类型 | 需要 | 说明 |

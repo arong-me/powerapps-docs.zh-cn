@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/07/2016
 ms.author: jamesol
-ms.openlocfilehash: 661483b6d240785f2945011005b4e552e04ac075
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 3ea0d8a3f10a1b9dad7641c1291bae3aef40000a
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="powerapps-in-your-organization-qa"></a>组织中的 PowerApps 问答
 本主题介绍了你的组织中的用户可以如何使用 PowerApps 以及你可以如何控制 PowerApps 服务。
@@ -65,9 +65,13 @@ Microsoft PowerApps 可供用户用来创建适用于 Windows、iOS 和 Android 
 如果为某个用户分配了 PowerApps 计划 1 或 PowerApps 计划 2 许可证，则可以执行以下步骤来为该用户删除 PowerApps 许可证：
 
 1. 转到 [Office 365 管理门户](https://portal.microsoftonline.com/)。
+
 2. 在左侧导航栏中，选择“用户”，然后选择“活动用户”。
+
 3. 找到你要为其删除许可证的用户，选择选择其名称。
+
 4. 在用户详细信息窗格中，在“产品许可证”部分中选择“编辑”。
+
 5. 找到名为 **Microsoft PowerApps 计划 1** 或 **Microsoft PowerApps 计划 2** 的许可证，将开关设置为“关闭”，然后选择“保存”。
    
     ![](./media/signup-question-and-answer/remove-license.png)
@@ -75,9 +79,13 @@ Microsoft PowerApps 可供用户用来创建适用于 Windows、iOS 和 Android 
 如果用户通过其 Office 365 和 Dynamics 365 计划许可证获得了对 PowerApps 的访问权限，则可以执行以下步骤来禁用其对 PowerApps 服务的访问权限：
 
 1. 转到 [Office 365 管理门户](https://portal.microsoftonline.com/)。
+
 2. 在左侧导航栏中，选择“用户”，然后选择“活动用户”。
+
 3. 找到你要为其删除访问权限的用户，然后选择其名称。
+
 4. 在用户详细信息窗格中，在“产品许可证”部分中选择“编辑”。
+
 5. 展开用户的 Office 365 或 Dynamics 365 许可证，禁用对名为 **PowerApps for Office 365** 或 **PowerApps for Dynamics 365** 的服务的访问权限，然后选择“保存”。
    
     ![](./media/signup-question-and-answer/remove-service-plan.png)
@@ -93,7 +101,7 @@ Microsoft PowerApps 可供用户用来创建适用于 Windows、iOS 和 Android 
   
     ![](./media/signup-question-and-answer/office-waffle.png)
 
-### <a name="how-can-restrict-my-users-ability-to-access-my-organizations-business-data-using-powerapps"></a>如何限制用户使用 PowerApps 访问我的组织的业务数据的能力？
+### <a name="how-can-i-restrict-my-users-ability-to-access-my-organizations-business-data-using-powerapps"></a>我如何限制用户使用 PowerApps 访问我所在组织的业务数据？
 PowerApps 允许你针对业务数据和非业务数据创建数据区域，如下所示。  在实现这些数据丢失防护策略后，将会阻止用户设计或运行组合了业务数据和非业务数据的 PowerApps。 有关更多详细信息，请参阅[数据丢失防护 (DLP) 策略](prevent-data-loss.md)。
 
 ![](./media/signup-question-and-answer/data-loss-prevention-policy.png)
@@ -129,7 +137,8 @@ PowerApps 允许你针对业务数据和非业务数据创建数据区域，如�
 4. 选择左上角的应用启动器图标，然后选择“管理”。
 5. 阅读“成为管理员”页面上的说明，然后选择“是，我想成为管理员”。  
 
-**注意**：如果没有出现此选项，则说明已经存在 Office 365 管理员。
+> [!NOTE]
+> 如果看不到此选项，表明已有 Office 365 管理员。
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>如果我有多个域，是否可以控制要将用户添加哪个 Office 365 租户？
 如果你不做任何事情，则会为每个用户电子邮件域和子域创建一个租户。
@@ -138,5 +147,6 @@ PowerApps 允许你针对业务数据和非业务数据创建数据区域，如�
 
 * 提前创建一个目标租户或者使用某个现有租户。 在该租户内添加你希望合并的所有现有域和子域。 然后，其电子邮件地址以这些域和子域结尾的所有用户在注册时都将自动加入目标租户。
 
-**重要信息**：没有受支持的自动化机制可用来在用户创建后在租户之间移动用户。 若要了解向单个 Office 365 租户添加域的信息，请参阅[向 Office 365 添加用户和域](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7)。
+> [!IMPORTANT]
+> 尚无受支持的自动化机制，可用于在租户创建后立即跨租户移动用户。 若要了解向单个 Office 365 租户添加域的信息，请参阅[向 Office 365 添加用户和域](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7)。
 

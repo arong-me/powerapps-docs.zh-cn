@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/07/2016
 ms.author: archanan
-ms.openlocfilehash: c6f4d61728d41df880e595e74e91ff6012bc29aa
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ca6a91359f04aa54dfb9db146dc08b098763cc2d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>从 PowerApps 连接到 Office 365 用户连接
 ![Office 365 用户](./media/connection-office365-users/office365icon.png)
@@ -30,9 +30,7 @@ ms.lasthandoff: 11/07/2017
 
 本主题演示了如何将 Office 365 用户添加为连接、如何将 Office 365 用户添加为应用的数据源，以及如何在库控件中使用表数据。
 
-&nbsp;
-
-[!INCLUDE [connection-requirements](../../includes/connection-requirements.md)]
+[!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
 ## <a name="add-a-connection"></a>添加连接
 1. [添加数据连接](../add-data-connection.md)并选择 **Office 365 用户**：  
@@ -97,7 +95,8 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 
 此时，标签显示所输入的有关指定用户或其经理的信息。
 
-**注意**：如果正在基于 Common Data Service 中的某个实体开发应用，则可以基于 ID 而非电子邮件地址指定用户。
+> [!NOTE]
+> 若要根据 Common Data Service 中的实体开发应用，可以根据 ID（而不是电子邮件地址）指定用户。
 
 例如，可以[自动创建应用](../data-platform-create-app.md)，添加包含“标签”控件的屏幕，然后将控件的“Text”属性设置为以下公式：
 <br>**Office365Users.UserProfile(BrowseGallery1.Selected.CreatedByUser).DisplayName**
@@ -116,7 +115,8 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
     选择库后，右侧窗格显示该库的选项。
 4. 在第二个列表中，选择 **JobTitle** 在第三个列表中，选择 **DisplayName** 库将更新，以显示这些值。  
    
-    <br/>**注意**：第一个框实际上是图像控件。 如果没有图像，可以删除图像控件，然后在原处添加一个标签控件。 [添加和配置控件](../add-configure-controls.md)是一个好资源。
+> [!NOTE]
+> 第一个框实际上是图像控件。 如果没有图像，可以删除图像控件，然后在原处添加一个标签控件。 [添加和配置控件](../add-configure-controls.md)是一个好资源。
 
 ### <a name="search-for-users"></a>搜索用户
 1. 添加“**文本输入**” 控件（“**插入**”菜单 >“**文本**”），并将其重命名为 **SearchTerm**。 输入要搜索的名称。 例如，输入你的名。

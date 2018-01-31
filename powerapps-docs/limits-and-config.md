@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/06/2017
 ms.author: sharik
-ms.openlocfilehash: 337f3fc00fe52e0008190e2144f21f40d1632f52
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4012439f121a212f6117aa18c1d906cab893248f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="limits-and-configuration-in-microsoft-powerapps"></a>Microsoft PowerApps 中的限制和配置
 本主题包含有关 PowerApps 的当前限制和配置的详细信息。
@@ -32,7 +32,8 @@ ms.lasthandoff: 11/07/2017
 | 超时 |180 秒 |
 | 重试尝试次数 |4 |
 
-注意：重试值可能会有所不同。 对于某些错误条件，重试不起作用。
+> [!NOTE]
+> 重试值可能会因具体情况而异。 对于某些错误条件，重试不起作用。
 
 ## <a name="ip-addresses"></a>IP 地址
 PowerApps 请求使用的 IP 地址取决于该应用所在[环境](environments-overview.md)的区域。 我们未发布适用于 PowerApps 方案的完全限定的域名。

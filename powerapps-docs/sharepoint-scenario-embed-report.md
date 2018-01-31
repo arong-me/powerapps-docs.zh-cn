@@ -15,14 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 6574ad1c67c6fc42da3b1cd5940f163307829333
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 481e6d13cce7624cf46cadbf78f877fdfb9fd481
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="embed-the-power-bi-project-report-in-sharepoint-online"></a>将 Power BI 项目报表嵌入 SharePoint Online
-注意：本文属于将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> [!NOTE]
+> 本文属于介绍如何将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
 此方案的最后一个任务是将 Power BI 报表嵌入托管我们两个列表的相同 SharePoint Online 网站。 Power BI 支持多种嵌入方法，最近新增了可将 Web 和移动视图直接集成到 SharePoint 网页的功能。
 

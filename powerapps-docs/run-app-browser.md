@@ -13,30 +13,31 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/12/2017
+ms.date: 01/16/2018
 ms.author: litran
-ms.openlocfilehash: 1cdd7fbf5b5940550e6e7c98ecaf2262940baa1c
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 0aff680aa5b8840330ee3a1758a895785f05da6f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="use-powerapps-in-a-web-browser"></a>在 Web 浏览器中使用 PowerApps
 如果在 PowerApps 中创建了应用，则可在浏览器中运行该应用，方法是打开 [Dynamics 365](https://home.dynamics.com)，然后在主页上单击或点击应用的磁贴。
 
-**请注意**：如果有 Dynamics 365 应用方面的疑问（例如销售），可查找有关 [Microsoft Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/) 的一般信息或[联系支持人员](https://www.microsoft.com/en-us/dynamics365/contact-us)。
+> [!NOTE]
+> 若对 Dynamics 365 应用（如“销售”）有疑问，可以大致了解一下 [Microsoft Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/)，也可以[联系支持人员](https://www.microsoft.com/en-us/dynamics365/contact-us)。
 
 支持以下浏览器和操作系统：
 
 | **浏览器** | **操作系统** |
 | --- | --- |
-| Google Chrome（最新版本） |Windows 7 SP1、8.1 和 10 <br>macOS <br>iOS 8 或更高版本<br>Android |
-| Microsoft Edge |Windows 10 |
+| Google Chrome（最新版本）<br>（建议） |Windows 7 SP1、8.1 和 10 <br>macOS <br>iOS 8 或更高版本<br>Android |
+| Microsoft Edge（最新版本）<br>（建议） |Windows 10 |
 | Microsoft Internet Explorer 11（关闭兼容性视图） |Windows 7 SP1、8.1 和 10 |
 | Mozilla Firefox（最新版本） |Windows 7 SP1、8.1 和 10 <br> Android <br>macOS |
 | Apple Safari（最新版本） |macOS <br> iOS 8 或更高版本 |
 
-如果浏览器不支持应用中使用的所有控件，请通过下载适用于 iOS、Android 或 Windows 的 PowerApps Mobile 在移动设备（例如手机）上使用。
+如果浏览器不支持应用中使用的任何控件，请下载适用于 iOS 或 Android 的 PowerApps，在移动设备（如手机）上使用它。
 
 ## <a name="find-an-app-on-the-home-page"></a>在主页上查找应用
 主页上可能显示多种类型的商业应用，可通过在搜索框中键入至少一部分名称来找到特定应用。 还可以筛选列表以仅显示 PowerApps 中创建的应用。
@@ -68,4 +69,3 @@ ms.lasthandoff: 11/07/2017
 
 ## <a name="close-an-app"></a>关闭应用
 若要关闭应用，请退出 Dynamics 365 主页，或打开其他应用。
-

@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/09/2016
 ms.author: kfend
-ms.openlocfilehash: 1aff4df6e314f50a67aff6a08298d3d7aa4a9cfa
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 21f33f8810b545b11f611b86261227c9443be5de
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="build-a-relationship-between-entities"></a>生成实体关系
 一个实体中的数据通常与另一个实体中的数据相关。 例如，你可能有“Customers”和“Orders”实体，而“Orders”实体可能与“Customers”实体有查阅关系，以显示是哪个客户下达订单的。 可以使用查阅字段显示“Customers”实体中下达订单的用户的相关数据。 有关详细信息，请参阅[实体关系和查阅字段](https://docs.microsoft.com/en-us/common-data-service/entity-reference/relationships)。
@@ -50,7 +50,8 @@ ms.lasthandoff: 11/07/2017
 * 可以无限制地删除实体 A 中的任何记录。
 * 如果实体 B 中的一条记录与实体 A 中的一条或多条记录匹配，则必须先删除实体 A 中的所有匹配记录，然后才能删除实体 B 中的记录。
 
-**注意**：当实体 B 是与实体 A 有父关系的标准实体时，如果从实体 A 中删除一条记录，也会删除实体 B 中的所有匹配记录。
+> [!NOTE]
+> 如果实体 B 是与实体 A 有父关系的标准实体，且删除实体 A 中的记录，那么实体 B 中的所有匹配记录也会随之删除。
 
 有关如何删除字段的信息，请参阅 [管理字段](data-platform-manage-fields.md)。
 

@@ -12,17 +12,15 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/24/2017
+ms.date: 10/20/2017
 ms.author: kfend
-ms.openlocfilehash: 9078daccfd3d72ab5cbf3b26a67ffc2a27af1332
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: bbc501542e634fab925654734cf709fe87248883
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-entities-in-the-common-data-service"></a>了解 Common Data Service 中的实体
-[!VIDEO nb:cid:UUID:beec68e8-1541-41fb-8fc6-28714ccaca68]
-
 
 可以使用 Common Data Service 在一组标准实体和自定义实体中安全地存储和管理数据。 实体是一组字段，用于存储数据，类似于在数据库中存储表。 存储数据以后，即可通过 Microsoft PowerApps 使用数据生成丰富的应用程序：
 
@@ -50,20 +48,20 @@ Common Data Service 中的实体，包括标准实体和自定义实体，都可
 * **选项列表** - 包含一系列的标准选择列表，可在实体和应用中实现快速下拉。
 
 ## <a name="standard-and-custom-entities"></a>标准和自定义实体
-开发应用时，可以使用标准实体、自定义实体或将两者一起使用。 如果标准实体在应用中具有特殊用途，则应当使用它，而不是开发一个执行同样操作的自定义实体。 如果标准实体需要进行几项更改才能发挥特殊用途，可以添加字段以适应需求。 
+开发应用时，可以使用标准实体、自定义实体或将两者一起使用。 如果标准实体在应用中具有特殊用途，则应当使用它，而不是开发一个执行同样操作的自定义实体。 如果标准实体需要进行几项更改才能发挥特殊用途，可以添加字段以适应需求。
 
 * Common Data Service 在默认情况下提供标准实体。 这些实体根据最佳实践设计，为组织获取最基本的概念，如联系人、帐户和产品。 有关实体的完整列表，请参阅[标准实体](data-platform-intro.md#standard-entities)。
 * 可以通过创建一个或多个自定义实体来扩展标准实体的功能，存储组织专用信息。 有关详细信息，请参阅[如何创建自定义实体](data-platform-create-entity.md)。
 
-> **注意：**可能情况下，请使用标准实体（在需要时添加自定义字段）。 这样可确保你能够受益于那些在未来利用这些实体的新功能或应用。
-> 
-> 
+> [!NOTE]
+> 如果可能，请使用标准实体（必要时，其中添加了自定义字段）。 这样可确保你能够受益于那些在未来利用这些实体的新功能或应用。
+
 
 ## <a name="fields"></a>字段
 每个字段均包含名称、显示名称、数据类型和一些简单的验证。 数据类型包括多种类型，例如 **text**、**date** 或 **number**。 验证可确保必填字段所含数据和记录是唯一的（如果实体对其要求如此）。 每个字段均包含以下三个类别之一：系统字段、标准字段或自定义字段。
 
 ### <a name="system-fields"></a>系统字段
-所有实体（标准实体或自定义实体）均使用一组只读字段创建，不能对其进行更改、删除或设置为某值。 有关详细信息，请参阅 [系统和记录标题字段](data-platform-create-entity.md#system-and-record-title-fields)。 以下是最重要的系统字段：
+所有实体（标准实体或自定义实体）均使用一组只读字段创建，不能对其进行更改、删除或设置为某值。 有关详细信息，请参阅 [系统和记录标题字段](data-platform-create-entity.md#system-fields-and-the-record-title-field)。 以下是最重要的系统字段：
 
 * **创建记录日期** - 创建记录的日期和时间。
 * **创建者** - 创建记录的用户。

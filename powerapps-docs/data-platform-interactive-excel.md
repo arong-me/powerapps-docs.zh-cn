@@ -14,16 +14,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/06/2016
 ms.author: kfend
-ms.openlocfilehash: 2a72bfa21c8d4cb7eab0a3cb2292a61d5c036696
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: d559774c65ee2db99f891e41472f6110e330bfc1
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="open-entity-data-in-excel"></a>在 Excel 中打开实体数据
 通过在 Microsoft Excel 中打开实体数据，可以使用 Microsoft PowerApps Excel 外接程序快速轻松地查看和编辑数据。 PowerApps Excel 外接程序要求安装 Microsoft Excel 2016。
 
-**注意**：如果 Microsoft Azure Active Directory (Azure AD) 租户配置为使用 Active Directory 联合身份验证服务 (ADFS)，则必须确保已应用 2016 年 5 月更新，以便 Excel 外接程序可以正确地登录。
+> [!NOTE]
+> 如果将 Microsoft Azure Active Directory (Azure AD) 租户配置为使用 Active Directory 联合身份验证服务 (AD FS)，必须确保已应用 2016 年 5 月更新，以便 Excel 加载项能够正确登录。
 
 ## <a name="open-entity-data-in-excel"></a>在 Excel 中打开实体数据
 1. 在 [powerapps.com](https://web.powerapps.com) 上，展开“Common Data Service” 部分，然后单击或点击左侧导航窗格中的“实体”。 显示所有实体。

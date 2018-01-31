@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/28/2016
 ms.author: archanan
-ms.openlocfilehash: 75cd4137babde948ea70d8ee48a938c9acc092cc
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: fbd108d1a089072a89f8e6cb06ded07c8493bb4d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="share-app-resources"></a>共享应用资源
 [共享应用](share-app.md)前，先考虑应用依赖的资源类型，如以下一个或多个资源类型：
@@ -47,7 +47,8 @@ ms.lasthandoff: 11/07/2017
 1. 打开 [powerapps.com](https://web.powerapps.com)，在左侧导航栏中单击或点击“**管理**”，然后单击或点击“**网关**”。
 2. 单击或点击一个网关，然后单击或点击“**连接**”选项卡。
 
-**注意**：如果手动共享了一个或多个连接，则需在下列情况下重新对其共享：
+> [!NOTE]
+> 如果手动共享一个或多个连接，可能需要在下列情况下重新共享：
 
 * 向已共享的应用添加本地数据网关。
 * 更改与你共享应用（该应用具有本地数据网关）的用户或组的设置。

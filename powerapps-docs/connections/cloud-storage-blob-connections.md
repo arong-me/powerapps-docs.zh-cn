@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2016
 ms.author: archanan
-ms.openlocfilehash: 379b9773033245ba5e2a88486a7738f51f000e6b
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1f437b91ef20412dab3238bea7f5488e148c7c29
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>从 PowerApps 连接到云存储
 PowerApps 提供多个云存储连接。 使用其中任何一种连接，都可以存储 Excel 文件，并将其中的信息用于整个应用。 这些连接包括：  
@@ -28,7 +28,7 @@ PowerApps 提供多个云存储连接。 使用其中任何一种连接，都可
 | --- | --- | --- | --- | --- | --- |
 | ![图标](./media/cloud-storage-blob-connections/blobicon.png) |![API 图标][boxicon] |![API 图标][dropboxicon] |![API 图标][googledriveicon] |![API 图标][onedriveicon] |![API 图标][onedriveforbusinessicon] |
 
-[!INCLUDE [connection-requirements](../../includes/connection-requirements.md)]
+[!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
 * 数据[已格式化为表](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)的 Excel 文件：
   
@@ -53,7 +53,8 @@ PowerApps 提供多个云存储连接。 使用其中任何一种连接，都可
    
     ![选择 Excel 表](./media/cloud-storage-blob-connections/selecttable.png)
    
-    **注意：**请注意，必须将 Excel 数据格式化为表。
+    > [!NOTE]
+> 请注意，必须将 Excel 数据格式化为表。
 
 ## <a name="using-the-excel-data-in-your-app"></a>在应用中使用 Excel 数据
 1. 在“插入”选项卡上，依次选择“库”和“包含文本”库控件。
@@ -73,7 +74,8 @@ PowerApps 提供多个云存储连接。 使用其中任何一种连接，都可
     示例输出：  
     ![第二个和第三个标签](./media/cloud-storage-blob-connections/secondthirdtextboxes.png)
    
-    <br/>**注意**：第一个框实际上是图像控件。 如果 Excel 表中没有图像，可以删除图像控件，然后在原处添加一个标签控件。 [添加和配置控件](../add-configure-controls.md)是一个好资源。
+> [!NOTE]
+> 第一个框实际上是图像控件。 如果 Excel 表中没有图像，可以删除图像控件，然后在原处添加一个标签控件。 [添加和配置控件](../add-configure-controls.md)是一个好资源。
 
 [了解表和记录](../working-with-tables.md)介绍了更多详细信息和一些示例。  
 

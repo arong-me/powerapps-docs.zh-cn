@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: b3473d0dcf1462648f39c3dbbdedd12d1cfce08c
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f7f8ec5c63b3d0936a1123d547b5c19097f1e04b
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="count-counta-countif-and-countrows-functions-in-powerapps"></a>PowerApps 中的 Count、CountA、CountIf 和 CountRows 函数
 对[表](../working-with-tables.md)中所有[记录](../working-with-tables.md#records)计数，或对所有满足条件的记录计数。
@@ -35,11 +35,11 @@ ms.lasthandoff: 11/07/2017
 
 这些函数每一个都会返回一个数值。
 
-[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>语法
 **Count**( *SingleColumnTable* )<br>
-**CountA**( *SingleColumnTable* )
+**CountA**( SingleColumnTable )
 
 * *SingleColumnTable* - 必需。  要计数的记录的列。  
 

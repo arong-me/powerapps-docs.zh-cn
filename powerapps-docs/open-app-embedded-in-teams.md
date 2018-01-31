@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/20/2017
 ms.author: ankitsar
-ms.openlocfilehash: 64c14c7e3a6ab599aa14d2200679134cc3fcc7d2
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 19d6a2718a39e3426fc0fcb4aca3223825f29a07
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="add-and-open-an-app-in-microsoft-teams"></a>在 Microsoft Teams 中添加并打开应用
 将应用添加到 Microsoft Teams 频道，以便应用的所有共享对象都可以在此频道中打开应用。 可以添加自己生成或拥有“可使用”或“可编辑”权限的任何应用，并能在浏览器或 Microsoft Teams 相关桌面应用中添加和打开应用。
@@ -37,7 +37,8 @@ ms.lasthandoff: 11/07/2017
     ![](./media/open-app-embedded-in-teams/add-a-tab.png)
 5. 单击或点击要添加的应用。
    
-    注意：可以按名称、作者或环境搜索应用。
+    > [!NOTE]
+> 可以按名称、作者或环境搜索应用。
    
     ![](./media/open-app-embedded-in-teams/select-an-app.png)
 6. 单击或点击“保存”按钮。

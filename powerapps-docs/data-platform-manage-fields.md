@@ -12,37 +12,51 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/06/2016
+ms.date: 10/20/2017
 ms.author: kfend
-ms.openlocfilehash: 8255f597a1c9261c55bef465a8340fea49c69aa4
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 87be6f571688fd040c5f2578015e1a3393ca9ea1
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="manage-custom-fields"></a>管理自定义字段
 可以在任意实体中创建和更新一个或多个自定义字段。 创建自定义字段时，可以指定一组属性，例如字段名称、其显示名称及其将包含的数据类型。 有关详细信息，请参阅 [Enity field data types](https://docs.microsoft.com/en-us/common-data-service/entity-reference/field-data-types)（实体字段数据类型）和 [Entity field properties](https://docs.microsoft.com/en-us/common-data-service/entity-reference/field-properties)（实体字段属性）。
 
-**注意：**每个实体都有[系统字段](data-platform-create-entity.md#system-and-record-title-fields)，如指示上次更新记录的时间和更新人员的字段。 此外，[标准实体](data-platform-intro.md#standard-entities)还包含标准（默认）字段。 无法修改或删除系统字段或标准字段。 如果创建自定义字段，则它应在这些内置字段上提供功能。
+> [!NOTE]
+> 每个实体都有[系统字段](data-platform-create-entity.md#system-fields-and-the-record-title-field)，如指示上次记录更新时间和更新人员的字段。 此外，[标准实体](data-platform-intro.md#standard-entities)还包含标准（默认）字段。 无法修改或删除系统字段或标准字段。 如果创建自定义字段，则它应在这些内置字段上提供功能。
 
 ## <a name="create-a-field"></a>创建字段
+
 1. 在 [powerapps.com](https://web.powerapps.com) 上，展开“Common Data Service”部分，单击或点击左侧导航窗格中的“实体”。 将显示实体列表。 若要在列表顶部显示自定义实体，请单击或点击“类型”列标题。 此外，在搜索栏中键入一个或多个字符可筛选列表。
+
 2. 单击或点击实体，然后单击或点击屏幕顶部附近的“**添加字段**”。
+
 3. 在“显示名称”下，指定可为用户识别字段的文本字符串。 有关详细信息，请参见[创建应用](data-platform-create-app.md)。
+
 4. 在“名称”下，指定将用于引用字段的文本字符串，例如生成应用时的公式。
    
-    **重要信息：**指定唯一、明确且具有意义的名称，因为创建字段后无法再更改名称。
+    > [!IMPORTANT]
+    > 请指定唯一、明确的有意义名称，因为创建字段后便无法再更改名称。
+
 5. 在“类型”下，指定该字段将包含的数据类型，例如**文本**或**数字**。
    
-    **重要信息：**请慎重指定此属性，因为字段包含数据后无法进行更改。 有关可以指定的数据类型的信息，请参阅 [了解实体](data-platform-intro.md#custom-fields)。
+    > [!IMPORTANT]
+    > 请慎重指定此属性，因为在字段包含数据后便无法再更改它。 有关可以指定的数据类型的信息，请参阅 [了解实体](data-platform-intro.md#custom-fields)。
+
 6. 如果系统提示，则指定你所指定的数据类型的其他信息。
+
 7. 如果每条记录必须包含此字段中的唯一值，请选中“唯一”复选框。
+
 8. 如果每条记录必须包含此字段中的一个值，请选中“必需”复选框。
    
-    **重要信息：**无法要求标准实体中的自定义字段包含数据。 此限制可以保护依赖于该实体的任何应用。
+    > [!IMPORTANT]
+    > 无法要求标准实体中的自定义字段必须包含数据。 此限制可以保护依赖于该实体的任何应用。
+
 9. 单击或点击“**保存**”，提交所做更改。
    
-    **重要信息：**如果在浏览器中打开其他页面或退出浏览器前未保存更改，所做的更改将丢失。
+    > [!IMPORTANT]
+    > 如果在浏览器中打开其他页面或退出浏览器前未保存更改，所做更改将会丢失。
 
 该操作成功完成后，你将收到通知。 如果操作失败，错误消息会指示出现的问题以及修复方法。
 
@@ -56,7 +70,8 @@ ms.lasthandoff: 11/07/2017
    * 单击或点击字段右边缘附近的省略号 (...)，然后单击或点击“删除”可删除该字段。
 3. 单击或点击“**保存**”，提交所做更改。
    
-    **重要信息：**如果在浏览器中打开其他页面或退出浏览器前未保存更改，所做的更改将丢失。
+    > [!IMPORTANT]
+    > 如果在浏览器中打开其他页面或退出浏览器前未保存更改，所做更改将会丢失。
 
 该操作成功完成后，你将收到通知。 如果操作失败，错误消息会指示出现的问题以及修复方法。
 

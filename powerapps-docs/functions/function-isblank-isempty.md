@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: b9d93fe540d32bc547cec3254b5aa3968b460660
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1c5972d35f98d15f1cad45e74763320011ab98c6
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>PowerApps 中的 Blank、Coalesce、IsBlank 和 IsEmpty 函数
 测试值是否为空白值，或测试[表](../working-with-tables.md)是否不包含任何[记录](../working-with-tables.md#records)，并能创建*空白*值。
@@ -27,7 +27,8 @@ ms.lasthandoff: 11/07/2017
 ## <a name="overview"></a>概述
 *Blank* 是“空值”或“未知值”的占位符。 如果用户没有输入任何字符，那么“[文本输入](../controls/control-text-input.md)”控件便是*空白*的。 当用户在文本输入框中输入一个字符后，该文本框的值就不再是 *blank* 值。  一些数据源可以存储和返回 NULL 值，此类值在 PowerApps 中表示为*空白*值。
 
-**注意**：暂时只有本地集合支持存储*空白*值。 我们知道，多个数据源支持*空白* (NULL) 值，我们正在努力取消此限制。
+> [!NOTE]
+> 目前，只有本地集合支持存储空白值。 我们知道，多个数据源支持*空白* (NULL) 值，我们正在努力取消此限制。
 
 任何属性的值或计算的值都可以是 *blank* 值。  例如，布尔型数据的值通常是：**true** 或 **false**。  但除了这两个值，它还可以是 *blank* 值。  这跟 Microsoft Excel 很相似。Excel 工作表的单元格一开始可能是空的，但是它可以包含 **TRUE** 或 **FALSE** 值等等。 你随时可以删除单元格中的内容，如果将其删除，单元格又会变成 *blank* 状态。
 
@@ -70,7 +71,8 @@ Coalesce 函数按顺序评估其参数并返回第一个值（不是空值）�
 
 ## <a name="examples"></a>示例
 ### <a name="blank"></a>Blank
-注意：下面的示例暂只适用于本地集合。  我们知道，多个数据源支持*空白* (NULL) 值，我们正在努力取消此限制。
+> [!NOTE]
+> 下面的示例暂只适用于本地集合。  我们知道，多个数据源支持*空白* (NULL) 值，我们正在努力取消此限制。
 
 1. 从头开始创建应用，然后添加一个“按钮”控件。
 2. 将该按钮的 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：

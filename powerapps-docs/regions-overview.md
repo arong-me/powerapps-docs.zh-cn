@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/04/2017
 ms.author: sharik
-ms.openlocfilehash: 1ffa79a35d93249756316e52876922ce1d850c49
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 114aa01bd745ed501e209e314e75904751aad3f5
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="regions-overview-in-powerapps"></a>PowerApps 中的区域概述
 ## <a name="how-do-i-find-out-where-my-app-is-deployed"></a>如何确定我的应用的部署位置？
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/07/2017
   
     在管理中心内，现有的所有环境都列在“环境”选项卡中。此列表显示了应用的部署**区域**：
   
-   ![](./media/regions-overview/environment-list.png)
+   ![“环境”选项卡](./media/regions-overview/environment-list.png)
 
 ## <a name="what-regions-are-available"></a>可用区域有哪些？
 * 美国
@@ -47,5 +47,6 @@ ms.lasthandoff: 11/07/2017
 
 为获得最理想的效果，如果用户位于欧洲，请在欧洲区域创建并使用此环境。 如果用户位于美国，请在美国创建并使用此环境。
 
-**注意**：本地数据网关在印度区域或自定义环境中不可用。 必须在默认环境中创建网关。
+> [!NOTE]
+> 本地数据网关不适用于印度区域或自定义环境。 必须在默认环境中创建网关。
 

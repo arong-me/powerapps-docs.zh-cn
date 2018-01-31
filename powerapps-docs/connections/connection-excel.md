@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/02/2016
 ms.author: archanan
-ms.openlocfilehash: eda1a7ddc5cdebf3eeffc22ce20efb33b318f890
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 28d4895da2d7d9bb871fdd2d803b2c6dad7874a1
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-excel-from-powerapps"></a>从 PowerApps 连接到 Excel
 ![Excel](./media/connection-excel/excelicon.png)
@@ -31,12 +31,13 @@ Excel *类似*一种连接。 在应用中显示 Excel 数据：
 3. [连接到云存储帐户](../add-manage-connections.md)，然后将 Excel 表格作为数据源添加。
 4. 通过[自动生成应用](../get-started-create-from-data.md)或添加和配置**库**控件等内容，在应用中显示此信息。
 
-注意：从 PowerApps 连接到 Excel 表后，PowerApps 将新建一个名为 **\_*PowerAppsId_*** 的列，并且 Excel 表的每一行都将具有唯一的 ID。
+> [!NOTE]
+> 在用户从 PowerApps 连接到 Excel 表后，PowerApps 会立即新建 \_PowerAppsId_**** 列，并且 Excel 表的每一行都有唯一 ID。
 
 [云存储连接概述](cloud-storage-blob-connections.md)中介绍了如何添加连接、将 Excel 表格作为数据源添加以及在应用中使用 Excel 数据。
 
 有关如何连接到其他数据类型的信息，请参阅 [PowerApps 的连接列表](../connections-list.md)。
 
-## <a name="known-limitations"></a>已知的限制
+### <a name="known-limitations"></a>已知的限制
 若要了解如何在组织内共享 Excel 数据，请[查看这些限制](cloud-storage-blob-connections.md#sharing-excel-tables)。
 

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 5bf844e4debf7b4614fafe948a6ec15943fd35f5
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 6266e8b59f19862e4b4a7f2364785da8e7547e73
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="image-control-in-powerapps"></a>PowerApps 中的图像控件
 显示来自本地文件或数据源等来源的图像的控件。
@@ -31,7 +31,9 @@ ms.lasthandoff: 11/07/2017
 **[Image](properties-visual.md)** – 在图像、音频或麦克风控件中显示的图像名称。
 
 ## <a name="additional-properties"></a>其他属性
-**AutoDisableOnSelect** – 在执行 OnSelect 行为时自动禁用该控件。
+**ApplyEXIFOrientation** - 是否自动应用随图像一起嵌入的 EXIF 数据中指定的方向。
+
+**AutoDisableOnSelect** – 在执行 OnSelect 行为时自动禁用控件。
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
@@ -51,13 +53,19 @@ ms.lasthandoff: 11/07/2017
 
 **[Fill](properties-color-border.md)** – 控件的背景颜色。
 
+**FlipHorizontal** - 是否在显示前先水平翻转图像。
+
+**FlipVertical** - 是否在显示前先垂直翻转图像。
+
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
 **[HoverBorderColor](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件边框的颜色。
 
 **[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景颜色。
 
-**[ImagePosition](properties-visual.md)** – 屏幕或控件与图像大小不同时图像的位置（“填充”、“适应”、“拉伸”、“平铺”或“居中”）。
+**[ImagePosition](properties-visual.md)** – 屏幕或控件大小与图像大小不同时，其中图像的位置（“填充”、“适应”、“拉伸”、“平铺”或“居中”）。
+
+**ImageRotation** - 如何在显示前旋转图像。  值可以是不旋转、顺时针 (CW) 旋转 90 度、逆时针 (CCW) 旋转 90 度和顺时针旋转 180 度。
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 
@@ -93,7 +101,7 @@ ms.lasthandoff: 11/07/2017
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
@@ -105,21 +113,20 @@ ms.lasthandoff: 11/07/2017
 1. 在“内容”选项卡上，单击或点击“媒体”，然后单击或点击“浏览”。
 2. 单击或点击要添加的图像文件，然后单击或点击“打开”，按 Esc 返回到默认工作区。
 3. 添加**图像**控件，并将其 **[Items](properties-core.md)** 属性设置为你添加的文件的名称。
-   
+
     不知道如何[添加和配置控件](../add-configure-controls.md)？
-   
+
     **图像**控件显示你指定的图像。
 
 ### <a name="show-a-set-of-images-from-a-data-source"></a>显示一组数据源的图像
 1. 下载此 [Excel 文件](https://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx)，并将其保存在本地设备上。
 2. 在 PowerApps Studio 中，创建或打开应用，再单击或点击右侧窗格中的“添加数据源”。
-   
+
     如果右侧窗格未显示“添加数据源”选项卡，请单击或点击左侧导航栏中的任意屏幕。
 3. 单击或点击“将静态数据添加到应用”，单击或点击已下载的 Excel 文件，然后单击或点击“打开”。
 4. 选择“地板估计”复选框，然后单击或点击“连接”。
 5. 添加带图像的“库”控件，并将“[Items](properties-core.md)”属性设置为“FlooringEstimates”。
-   
-    不知道如何[添加和配置控件](../add-configure-controls.md)？
-   
-    “库”控件根据所下载的 Excel 文件中的链接显示地毯、硬木和地砖产品的图像。
 
+    不知道如何[添加和配置控件](../add-configure-controls.md)？
+
+    “库”控件根据所下载的 Excel 文件中的链接显示地毯、硬木和地砖产品的图像。

@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/05/2017
 ms.author: mblythe
-ms.openlocfilehash: 80f56a849dca7488f5b38908a7ec87b3a0916187
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 2eac422675fc8741848ab90777824a10ec9e0e1e
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="register-and-use-custom-connectors-in-powerapps"></a>在 PowerApps 中注册和使用自定义连接器
 借助 PowerApps，无需使用任何传统应用代码，即可生成功能齐全的应用。 但在某些情况下，需要扩展 PowerApps 功能，而 Web 服务则自然派上用场了。 应用可以连接服务、执行操作并传回数据。 若有要使用 PowerApps 进行连接的 Web 服务，请将此服务注册为自定义连接器。 这样一来，PowerApps 可以了解 Web API 的特性，包括需要执行的身份验证、支持的操作以及每项操作的参数和输出。
@@ -27,7 +27,7 @@ ms.lasthandoff: 11/07/2017
 
 ![API、自定义连接器和应用](./media/register-custom-api/intro-graphic.png)
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 * [PowerApps 帐户](https://powerapps.microsoft.com)。
 * JSON 格式的 OpenAPI 文件、OpenAPI 定义 URL 或 API 的 Postman 集合。 如果你没有其中任一内容，我们将为你提供指南。
 * 用作自定义连接器图标的图像（可选）。
@@ -49,12 +49,12 @@ ms.lasthandoff: 11/07/2017
    * 基本身份验证
 3. 采用两种行业标准方式之一**描述 API**，以便 PowerApps 可以连接它。
    
-   * OpenAPI 文件（亦称为“Swagger 文件”）
+   * OpenAPI 文件（亦称为“Swagger 文件”）：也可以在第 4 步的注册过程中生成 OpenAPI 文件。
    * Postman 集合
-     
-     也可以在第 4 步的注册过程中生成 OpenAPI 文件。
 4. 使用 PowerApps 中的向导**注册自定义连接器**，可以在向导中指定 API 说明、安全详细信息和其他信息。
+
 5. 在应用中**使用自定义连接器**。 在应用中创建与 API 的连接，并调用 API 提供的任何操作，就像在 PowerApps 中调用本机函数一样。
+
 6. **共享自定义连接器**，就像在 PowerApps 中共享其他数据连接一样。 虽然此为可选步骤，但通常有必要跨多个应用创建者共享自定义连接器。
 
 ## <a name="describe-your-api"></a>描述 API
@@ -70,7 +70,8 @@ ms.lasthandoff: 11/07/2017
 * 如果还没有为 API 提供 OpenAPI 文件，也不想创建此文件，仍可以使用 Postman 集合轻松创建自定义连接器。 有关详细信息，请参阅[创建 Postman 集合](postman-collection.md)。
 * 由于 PowerApps 最终会在幕后使用 OpenAPI，因此 Postman 集合会被分析并转换成 OpenAPI 定义文件。
 
-**注意**：文件必须小于 1 MB。
+> [!NOTE]
+> 文件必须小于 1MB。
 
 ### <a name="getting-started-with-openapi-and-postman"></a>OpenAPI 和 Postman 入门
 * 如果你刚开始接触 OpenAPI，请参阅 swagger.io 网站上的 [OpenAPI 入门](http://swagger.io/getting-started/)。
@@ -82,7 +83,8 @@ ms.lasthandoff: 11/07/2017
 
 1. 在 [powerapps.com](https://web.powerapps.com) 的左侧菜单中，单击“连接”。 依次选择省略号（“...”）和右上角的“管理自定义连接器”。
    
-     **提示**：如果在移动浏览器中找不到自定义连接器的管理位置，可能是位于左上角的菜单下方。
+     > [!TIP]
+> 如果在移动浏览器中找不到自定义连接器的管理位置，可能是在左上角的菜单下方。
    
     ![创建自定义连接器](./media/register-custom-api/managecustomapi.png)  
 2. 选择“创建自定义连接器”。
@@ -91,7 +93,9 @@ ms.lasthandoff: 11/07/2017
 3. 在“常规”选项卡上，选择自定义连接器的创建方式。
    
    * 上载 OpenAPI 文件
+
    * 使用 OpenAPI URL
+
    * 上载 Postman 集合 V1
      
      ![如何创建自定义连接器](./media/register-custom-api/choosehowtocreate.png)
@@ -126,6 +130,7 @@ ms.lasthandoff: 11/07/2017
    2. 在“请求”部分中，选择右上角的“从示例导入”。 在右侧窗体中，粘贴示例请求。 示例请求通常位于 API 文档中，可以使用其中的信息来填充“谓词”、“请求 URL”、“标头”和“正文”字段。 有关示例，请参阅[文本分析 API 文档](https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0/operations/56f30ceeeda5650db055a3c6)。
       
        ![从示例导入](./media/register-custom-api/importfromsample.png)
+
    3. 选择“导入”，完成请求定义。 以类似的方式定义响应。
 6. 定义完所有操作后，请选择“创建”，创建自定义连接器。
 7. 创建自定义连接器后，请转到“测试”选项卡，测试 API 中定义的操作。 选择一个连接，然后提供输入参数来测试操作。

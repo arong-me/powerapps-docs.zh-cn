@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 99fc1a29604c15cc473e0d4442a32a8b5d915f48
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f3f4cf53e8db612004619017304f222d3863430b
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="get-started-with-formulas"></a>公式入门
 为应用配置公式，不仅用于计算值和执行其他任务（与在 Excel 中的操作一样），还能（根据应用需求）响应用户输入。
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/07/2017
 
 本主题仅提供使用公式的概述。 浏览 [公式引用](formula-reference.md) 了解详细信息以及可以使用的函数、运算符和其他构建基块的完整列表。
 
-**先决条件**
+## <a name="prerequisites"></a>先决条件
 
 * [注册](signup-for-powerapps.md)、[安装](http://aka.ms/powerappsinstall) PowerApps，然后打开该程序，并提供注册所用的同一凭据进行登录。
 * 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
@@ -71,7 +71,8 @@ ms.lasthandoff: 11/07/2017
    
     在 Excel 中，可以显示一个数字，如 **42**，方法是将其键入一个单元格或键入用于解析到该数字的公式，如 **=SUM(30,12)**。 在 PowerApps 中，可以将标签等控件的“Text”属性设置为“42”或“Sum(30,12)”，从而达到同样的效果。 无论在工作表或应用中进行了其他何种更改，单元格和标签始终都会显示此数字。
    
-    **注意：**在 PowerApps 中，并不在公式前使用等号或加号，这一点与在 Excel 中不同。 默认情况下，编辑栏将在该处键入的任何内容均视为一个公式。 此外，也不使用双引号 (") 将公式括起来（在之前的操作中使用它指定文本的字符串）。
+    > [!NOTE]
+> 在 PowerApps 中，并不在公式前使用等号或加号，这一点与在 Excel 中不同。 默认情况下，编辑栏将在该处键入的任何内容均视为一个公式。 此外，也不使用双引号 (") 将公式括起来（在之前的操作中使用它指定文本的字符串）。
 5. 在标签的“[Text](controls/properties-core.md)”属性中，将“"Hello World"”替换成“Sum(1,2,3)”。
    
     ![键入部分函数 Sum(1,2,3（不加右括号）显示错误](./media/working-with-formulas/label-sum-partial.png)
@@ -98,7 +99,8 @@ ms.lasthandoff: 11/07/2017
 
 1. 将标签的“[Color](controls/properties-color-border.md)”属性设置为以下公式：<br>**If( Value(TextBox1.Text) < 0, Red, Black )**
    
-    **注意：**在公式中，通过提供控件的名称（后跟句点、属性名称）指定控件的属性。 例如，通过键入 **TextBox1.Text** 指定 **TextBox1** 的 **[Text](controls/properties-core.md)** 属性。
+    > [!NOTE]
+> 在公式中，通过提供控件名称且后跟句点和属性名，指定控件的属性。 例如，通过键入 **TextBox1.Text** 指定 **TextBox1** 的 **[Text](controls/properties-core.md)** 属性。
    
     ![PowerApps 基于值重新计算更改标签颜色的图示](./media/working-with-formulas/recalc-color1.png)
 2. 在 **TextInput1** 和 **TextInput2** 中，指定两个数字（这两个数字在相加后的结果为负数）。

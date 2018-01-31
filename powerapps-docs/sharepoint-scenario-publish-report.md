@@ -15,14 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 5e229e8767d4fdc16d37a69d82766af48a414686
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: cb300617fbf08f7b9ed5ff87ed5633d7714d51e0
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>发布 Power BI 项目报表并创建仪表板
-注意：本文属于将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> [!NOTE]
+> 本文属于介绍如何将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
 在此任务中，我们将把数据集和报表发布到 Power BI 服务中，然后再根据报表创建仪表板。 在许多情况下，报表包含大量可视化效果，但只有一小部分用于仪表板。 在此示例中，我们将向仪表板添加全部四个可视化效果。
 
@@ -48,7 +49,8 @@ ms.lasthandoff: 11/07/2017
    
     可以发现，在我们发布报表后，Power BI Desktop 上传了数据集 (d) 和报表 (c)。 将在 Power BI 服务（而不是 Power BI Desktop）中创建仪表板，此工作区中还没有任何仪表板 (b)。 我们将在下一步中创建仪表板。
    
-    注意：Power BI 即将推出全新的导航体验，可以在网站中启用此体验。 如果左侧导航窗格看起来与上图不同，请参阅[新的 Power BI 导航体验](https://powerbi.microsoft.com/documentation/powerbi-service-the-new-power-bi-experience)，了解详细信息。
+    > [!NOTE]
+> Power BI 即将推出全新的导航体验，可以在网站中启用此体验。 如果左侧导航窗格看起来与上图不同，请参阅[新的 Power BI 导航体验](https://powerbi.microsoft.com/documentation/powerbi-service-the-new-power-bi-experience)，了解详细信息。
 
 ## <a name="step-2-configure-credentials-for-refresh"></a>第 2 步：配置凭据以进行刷新
 1. 在 Power BI 服务中，依次单击或点击右上角的 ![齿轮图标](./media/sharepoint-scenario-publish-report/icon-gear.png) 和“设置”。
@@ -82,10 +84,13 @@ ms.lasthandoff: 11/07/2017
 4. 选择现有仪表板，再单击或点击“固定”。
    
     ![将图表固定到现有仪表板](./media/sharepoint-scenario-publish-report/06-01-15-pin-existing.png)
+
 5. 对其他两个视觉对象重复执行固定流程。
+
 6. 在左侧导航窗格中，单击或点击仪表板名称。
    
     ![网站导航中的新仪表板](./media/sharepoint-scenario-publish-report/06-01-16-dashboard-menu.png)
+
 7. 查看仪表板。 如果单击磁贴，将返回到报表。
    
     ![已完成的仪表板](./media/sharepoint-scenario-publish-report/06-01-17-dashboard-completed.png)

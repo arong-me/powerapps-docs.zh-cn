@@ -15,14 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 064ff0778cbc02a81fb64214dbed64f32c04aa15
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4e5c34c557e165625c23e78f86e5cbb1c0faacba
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>对完成的 SharePoint Online 集成方案进行端到端演练
-注意：本文属于将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> [!NOTE]
+> 本文属于介绍如何将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
 本系列教程涉及大量基础知识，包括生成应用和流、创建并将报表嵌入 SharePoint 中。 我们由衷希望你已学到很多知识，并且充分了解如何集成这些技术，以便可以根据自己的需求将应用、流和报表集成到 SharePoint 中。 最后，我们希望对此方案进行端到端演练，以展示各方面的工作是如何完美配合的。
 
@@ -37,11 +38,17 @@ ms.lasthandoff: 11/07/2017
 4. 在表单中填写以下值：
    
    * “Title”的值为“Mobile devices for design team”
+
    * “Approved”的值为“Pending”
+
    * “Description”的值为“The design team will now use Contoso-supplied devices”
+
    * “EstimatedDays”的值为“30”
+
    * “ProjectType”的值为“New hardware”
+
    * “RequestDate”的值为“03/01/2017”
+
    * “Requestor”的值为“Emily Braun”
      
      ![“项目申请”编辑表单](./media/sharepoint-scenario-summary/09-01-01-app-new.png)
@@ -100,8 +107,11 @@ ms.lasthandoff: 11/07/2017
 4. 在“更新详细信息”屏幕上，设置以下值：
    
    * “Status”字段的值为“Not started”
+
    * “ProjectedStartDate”字段的值为“3/6/2017”
+
    * “ProjectedEndDate”字段的值为“3/24/2017”
+
    * “ProjectedDays”字段的值为“15”
      
      ![更新项目详细信息](./media/sharepoint-scenario-summary/09-04-03-update.png)

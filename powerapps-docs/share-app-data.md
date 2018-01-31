@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: e6bae4500d3c3ac81c12da3c5b509dc1ea9e711e
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: b413bd52e9bbdd328ca5197ff5d5a76348298fe9
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="share-excel-data-used-by-your-app"></a>共享应用中使用的 Excel 数据
 在[云帐户](connections/cloud-storage-blob-connections.md)（如 OneDrive）中可以与你的应用用户们共享 Excel 数据。
@@ -49,7 +49,8 @@ ms.lasthandoff: 11/07/2017
    
     ![共享命令](./media/share-app-data/onedrive-share.png)
    
-    注意：在 OneDrive for Business 中，共享文件本身，而非包含文件的文件夹。
+    > [!NOTE]
+> 在 OneDrive for Business 中，共享文件本身，而不是包含此文件的文件夹。
 3. 在对话框中，选择“电子邮件”。
    
     ![通过电子邮件共享](./media/share-app-data/onedrive-email.png)
@@ -72,6 +73,6 @@ ms.lasthandoff: 11/07/2017
 
 有关详细信息，请参阅[共享 Google Drive 文件和文件夹](https://support.google.com/drive/answer/2494822)。
 
-## <a name="known-limitations"></a>已知的限制
+### <a name="known-limitations"></a>已知的限制
 若要了解如何在组织内共享 Excel 数据，请[查看这些限制](connections/cloud-storage-blob-connections.md#sharing-excel-tables)。
 

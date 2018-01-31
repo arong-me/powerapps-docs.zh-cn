@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/17/2017
 ms.author: gregli
-ms.openlocfilehash: fc64817566f30f0370538c6e5d1619a1d54c0be3
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f75eeddf5a3a7b693e81f561ffd227f95e41cc5f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-data-form-layout-in-microsoft-powerapps"></a>了解 Microsoft PowerApps 中的数据表单布局
 在 PowerApps 中，可以轻松创建具有吸引力且高效使用的表单。 例如，假设记录销售订单的基本表单如下：
@@ -59,12 +59,17 @@ ms.lasthandoff: 11/07/2017
     该标签将显示你在库中选择的记录的销售订单号。
 3. （可选）将该标签的格式设置如下：
    
-   1. 将其 **Align** 属性设置为 **Center**。
-   2. 将其 **Size** 属性设置为 **20**。
-   3. 将其 **Fill** 属性设置为 **Navy**。
-   4. 将其 **Color** 属性设置为 **White**。
-   5. 将其 **Width** 属性设置为 **Parent.Width**。
-   6. 将其 **X** 和 **Y** 属性设置为 **0**。
+    1. 将其 **Align** 属性设置为 **Center**。
+   
+    2. 将其 **Size** 属性设置为 **20**。
+   
+    3. 将其 **Fill** 属性设置为 **Navy**。
+   
+    4. 将其 **Color** 属性设置为 **White**。
+   
+    5. 将其 **Width** 属性设置为 **Parent.Width**。
+   
+    6. 将其 **X** 和 **Y** 属性设置为 **0**。
       
       ![标题栏](media/working-with-form-layout/title-bar.png)
 
@@ -97,7 +102,8 @@ ms.lasthandoff: 11/07/2017
 
 ![选择数据卡](media/working-with-form-layout/sales-order-data-card-selection.png)
 
-注意：若要删除卡（不仅仅是将其隐藏），请将其选中，然后按“删除”。
+> [!NOTE]
+> 若要删除卡片（而不仅仅是隐藏它），请选择卡片，再按“删除”。
 
 ## <a name="arrange-cards-in-columns"></a>排列列中的卡
 默认情况下，平板电脑应用中的表单包含 3 列，手机应用中的表单包含 1 列。 你不仅可以指定窗体包含的列数，还可以指定所有卡是否要适应列边框内部的大小。
@@ -124,7 +130,9 @@ ms.lasthandoff: 11/07/2017
 3. 对“订单状态”和“客户采购订单参考”卡重复执行上述步骤。
    
     ![第一行中的三个卡](media/working-with-form-layout/card-resize-2.png)
+
 4. 调整“名称”和“说明”卡的大小，使其占据表单的六列（或 1/2）。
+
 5. 让“交货地址”的前两行完全横跨整个表单：
 
 大功告成！ 我们已生成所需表单，让各行的列数不同：

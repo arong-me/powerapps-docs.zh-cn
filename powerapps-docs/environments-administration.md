@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/11/2017
 ms.author: jamesol
-ms.openlocfilehash: 1eeb79d0c109181ae75b86a78cecdb4babe058ab
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f26c97681a4af40e042d1c943e108a424861f810
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="environments-administration-in-powerapps"></a>PowerApps 中的环境管理
 在 [PowerApps 管理中心][1]内，管理已创建的环境及已将已添加到其环境管理员角色的环境。 从管理中心可执行以下管理操作：
@@ -36,18 +36,21 @@ ms.lasthandoff: 11/07/2017
 若要访问 PowerApps 管理中心，请执行以下操作：
 
 * 直接转到 [admin.powerapps.com][1]，或
-* 转到 [powerapps.com][2]，然后在导航标题中选择齿轮图标。
+
+* 转到 [powerapps.com][2]，再选择导航标头中的齿轮图标。
   
     ![](./media/environment-admin/powerapps-gear-dropdown.png)
 
 若要在 PowerApps 管理中心管理某个环境，必须拥有以下角色之一：
 
-* 该环境的“环境管理员”角色，或
+* 环境的“环境管理员”角色，或
+
 * Azure AD 或 Office 365 租户的“全局管理员”角色。
 
 此外，还需要 PowerApps 计划 2 或 Flow 计划 2 才能访问管理中心。 有关详细信息，请参阅 [PowerApps 定价页][3]。
 
-**重要说明**：在 PowerApps 管理中心所做的任何更改将影响 [Flow 管理中心][4]，反之亦然。
+> [!IMPORTANT]
+> 在 PowerApps 管理中心内所做的任何更改都会影响 [Flow 管理中心][4]，反之亦然。
 
 ## <a name="create-an-environment"></a>创建环境
 首先，单击“+ 新建环境”打开一个对话框并创建环境。
@@ -120,18 +123,20 @@ ms.lasthandoff: 11/07/2017
 创建数据库后，请选择安全模型。 有关详细信息，请参阅[配置数据库安全性](database-security.md)。
 
 ## <a name="manage-security-for-your-environments"></a>管理环境的安全性
+
 ### <a name="environment-permissions"></a>环境权限
 在环境中，Azure AD 租户中的所有用户都是该环境的用户。 但是，若要让这些用户扮演更高特权的角色，需要将他们添加到特定的环境角色。 环境中内置两个角色，在环境中拥有相应的权限：
 
 * “环境管理员”角色可以执行所有环境管理操作，包括：
   
-  o    授予或撤销用户或组的“环境管理员”或“环境创建者”角色。
+    * 授予或撤销用户或组的环境管理员或环境创建者角色。
   
-  o    为环境预配 Common Data Service 数据库。
+    * 为环境预配 Common Data Service 数据库。
   
-  o    查看和管理环境中的所有资源。
+    * 查看和管理在环境中创建的所有资源。
   
-  o    设置数据丢失防护策略。 有关详细信息，请参阅[数据丢失防护策略](prevent-data-loss.md)。
+    * 设置数据丢失防护策略。 有关详细信息，请参阅[数据丢失防护策略](prevent-data-loss.md)。
+
 * **环境创建者**角色可以在环境中创建资源，包括应用、连接、自定义连接器、网关和 Microsoft Flow 流。 环境创建者还可将他们在环境中构建的应用分发到组织中的其他用户。 他们可与组织中的单个用户、安全组或所有用户共享应用。 有关详细信息，请参阅[在 PowerApps 中共享应用](share-app.md)。
 
 若要将用户或安全组分配到某个环境角色，环境管理员可在 [PowerApps 管理中心][1]执行以下步骤：

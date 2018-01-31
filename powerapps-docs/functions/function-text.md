@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 7de7d1e208dffa47dbe8580321f93023d5111389
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 37c4eebc80f363088bd637fbcd41d37cbafb245d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="text-function-in-powerapps"></a>PowerApps 中的 Text 函数
 设置数字或日期/时间值的格式，使其作为文本字符串显示。
@@ -72,8 +72,10 @@ ms.lasthandoff: 11/07/2017
 | **yyyy** |将年份显示为四位数的数字。 |
 | **h** |将小时显示为不带前导零的数字。 |
 | **hh** |视情况将小时显示为带前导零的数字。 如果格式中包含 **AM** 或 **PM**，以 12 小时制显示小时。 如果不包含，以 24 小时制显示小时。 |
-| **m** |将分显示为不带前导零的数字。  注意：**m** 或 **mm** 代码必须紧跟在 **h** 或 **hh** 代码之后，或后面紧跟 **ss** 代码。否则 **Text** 会返回月份，而不是分。 |
-| **mm** |视情况将分显示为带前导零的数字。 注意：**m** 或 **mm** 占位符必须紧跟在 **h** 或 **hh** 占位符之后，或后面紧跟 **ss** 占位符。 否则，**Text** 会返回月份，而不是分。 |
+| **m** |将分显示为不带前导零的数字。  > [!NOTE]
+> m 或 mm 代码必须紧跟在 h 或 hh 代码后面，或后面紧跟 ss 代码；否则 Text 返回的是月份，而不是分钟。 |
+| **mm** |视情况将分显示为带前导零的数字。 > [!NOTE]
+> m 或 mm 占位符必须紧跟在 h 或 hh 占位符后面，或后面紧跟 ss 占位符。 否则，**Text** 会返回月份，而不是分。 |
 | **s** |将秒显示为不带前导零的数字。 |
 | **ss** |视情况将秒显示为带前导零的数字。 |
 | **f** |显示秒的小数部分。 |
@@ -115,7 +117,7 @@ ms.lasthandoff: 11/07/2017
 
 | 占位符 | 说明 |
 | --- | --- |
-| **[$-*LanguageTag*]** |*LanguageTag* 是 **Language** 函数返回的语言标记。  语言标记的形式可以是只包含语言，如 **[$-en]** 表示英语；也可以是包含区域，如 **[$-en-GB]** 进一步指定英国。 |
+| **[$-LanguageTag]** |*LanguageTag* 是 **Language** 函数返回的语言标记。  语言标记的形式可以是只包含语言，如 **[$-en]** 表示英语；也可以是包含区域，如 **[$-en-GB]** 进一步指定英国。 |
 
 语言占位符可以显示在自定义格式中的任意位置，但只能出现一次。
 
@@ -123,7 +125,8 @@ ms.lasthandoff: 11/07/2017
 
 如果在应用运行时未找到此占位符，则假定是 **[$-en-US]**。 
 
-**注意：**在以后的版本中，此占位符的语法可能会有所变化，以免与 Excel 支持的其他类似占位符混淆。
+> [!NOTE]
+> 在今后推出的版本中，此占位符的语法可能会有所变化，以免与 Excel 支持的其他类似占位符混淆。
 
 #### <a name="result-language-tag"></a>结果语言标记
 **Text** 结果包含月份、星期几和 AM/PM 标记的已翻译字符串，以及相应的组分隔符和十进制分隔符。

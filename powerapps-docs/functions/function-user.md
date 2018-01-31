@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/07/2016
 ms.author: gregli
-ms.openlocfilehash: 6fee690b849a305d1dd97361cd76b74889f258d9
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 2a2adaf10a9d78bb2a899e68d5c33948aae88d1b
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="user-function-in-powerapps"></a>PowerApps 中的 User 函数
 返回当前用户的相关信息。
@@ -33,7 +33,8 @@ ms.lasthandoff: 11/07/2017
 | **User().FullName** |当前用户的全名（包括姓和名）。 |
 | **User().Image** |当前用户的图像。 此为 "blob:*identifier*" 形式的图像 URL。 将 **[Image](../controls/control-image.md)** 控件的 **[Image](../controls/properties-visual.md)** 属性设置为此值可以在应用中显示用户图像。 |
 
-**注意：**返回的是当前 PowerApps 用户的相关信息。  该信息与 PowerApps 播放器和 PowerApps Studio 中显示的“帐户”信息一致，可在任何已创作的应用范围外找到。  该信息可能与当前用户在 Office 365 或其他服务中的信息不一致。
+> [!NOTE]
+> 返回的是当前 PowerApps 用户的相关信息。  该信息与 PowerApps 播放器和 PowerApps Studio 中显示的“帐户”信息一致，可在任何已创作的应用范围外找到。  该信息可能与当前用户在 Office 365 或其他服务中的信息不一致。
 
 ## <a name="syntax"></a>语法
 **User**()

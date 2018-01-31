@@ -1,5 +1,5 @@
 ---
-title: "# <a name=\"powerapps-community-plan-a-free-development-environment-for-individual-use--microsoft-docs\"></a>PowerApps 社区计划：供个人使用的免费开发环境 | Microsoft 文档"
+title: "# PowerApps 社区计划：供个人使用的免费开发环境 | Microsoft 文档"
 description: "注册后可掌握技能，并详细了解 PowerApps、Microsoft Flow 和 Common Data Service。"
 services: 
 suite: powerapps
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/01/2016
 ms.author: mblythe
-ms.openlocfilehash: 4fea217638bdcff52f626694f5b43662f89dbe9b
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: bbde4b033afcd530128f330432f262257f5d771c
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps 社区计划：供个人使用的免费开发环境
 若要掌握技能并详细了解 PowerApps、Microsoft Flow 和 Common Data Service，PowerApps 社区计划是你的不二之选。 PowerApps 社区计划提供了供个人使用的免费开发环境，你可以在其中：
@@ -43,7 +43,7 @@ ms.lasthandoff: 11/07/2017
 ![社区计划的个人环境](media/dev-community-plan/individual-environment.png)
 
 ### <a name="get-the-community-plan-with-visual-studio-dev-essentials"></a>通过 Visual Studio Dev Essentials 注册社区计划
-如果你是 Visual Studio Dev Essentials 用户，那么你的权益中就已包含 PowerApps。 请访问[“我的权益”](https://my.visualstudio.com/benefits)，然后单击或点击 PowerApps 磁贴，即可注册 PowerApps 社区计划。
+如果你是 Visual Studio Dev Essentials 用户，那么你的权益中就已包含 PowerApps。 请访问[“我的权益”](https://my.visualstudio.com/benefits)，再单击或点击 PowerApps 磁贴，即可注册 PowerApps 社区计划。
 
 ![Visual Studio 中的社区计划](media/dev-community-plan/visual-studio.png)
 
@@ -85,43 +85,49 @@ ms.lasthandoff: 11/07/2017
 
 无法扩展容量上限。 如果达到容量上限，建议购买 PowerApps 计划 2。 有关详细信息，请参阅 [PowerApps 定价页](https://powerapps.microsoft.com/pricing/)。
 
-**注意**：无论是否使用，个人环境的容量都不会影响公司的整体配额。
+> [!NOTE]
+> 无论是否使用，个人环境的容量都不会影响公司的整体配额。
 
 ## <a name="publishing-to-appsource"></a>发布到 AppSource
 是否有应用要与客户共享？ [AppSource.com](https://appsource.microsoft.com) 现在支持 PowerApps 体验版解决方案，以便你可以与客户共享应用和流，为你的企业带来新的潜在客户。 有关详细信息，请参阅[让客户在 AppSource 上体验你的应用](dev-appsource-test-drive.md)。
 
 ## <a name="frequently-asked-questions"></a>常见问题
-1. **问：**达到环境的容量上限后，我应该怎么办？
-   
-    **答：**之所以有容量上限是因为此环境是供个人使用，而不是供团队或生产使用。 规定的容量上限为：
-   
-   | **容量** |  |
-   | --- | --- |
-   | 流运行次数/月 |750 |
-   | 数据库大小 |200 MB |
-   | 文件存储 |2GB |
-   
-    如果达到了一个或多个容量上限，建议购买支持生产用途的计划。 若要详细了解我们的计划及其限制，请参阅 [PowerApps 定价页](https://powerapps.microsoft.com/pricing/)。
-2. **问：**能否将在个人环境中创建的应用、流和其他资源迁移到其他环境中？
-   
-    **答：**能，应该可以将此环境中的资源导出到其他环境中。 有关详细信息，请参阅[环境和租户应用迁移](environment-and-tenant-migration.md)。
-3. **问：**我的 PowerApps 社区计划订阅是否会到期？
-   
-    **答：**可以永久免费使用 PowerApps 社区计划订阅。 如果仍在使用个人环境，就不会失去对此环境中任何资源或功能的访问权限。 不过，在长时间不使用后首次访问 Common Data Service 数据库时，你可能会注意到有延迟。  但此延迟并不影响 Common Data Service 中存储的数据或实体。
-4. **问：**能否获取或创建多个个人环境？
-   
-    **答：**不能，只能有一个个人环境，这就是 PowerApps 在你注册社区计划时为你创建的环境。
-5. **问：**PowerApps 计划 2 试用版和 PowerApps 社区计划有什么区别？我应注册哪一个？
-   
-    **答：**PowerApps 计划 2 试用版和 PowerApps 社区计划均可免费注册，不同之处在于它们的创建目的不同：
-   
-    注册 **PowerApps 计划 2 试用版**，可以使用 PowerApps 计划 2 90 天。 旨在方便你试用 PowerApps、Common Data Service 和 Microsoft Flow。 试用到期后，可以购买计划。 如果你是使用 Office 365 或 Dynamics 365 的现有 PowerApps 用户，PowerApps 计划 2 就非常适合试用其提供的 PowerApps 高级功能。
-   
-    注册 **PowerApps 社区计划**，可以访问 PowerApps 高级功能、Common Data Service 和 Microsoft Flow，以供个人使用。 此计划主要用于学习目的或创建要作为 [AppSource 体验版应用](dev-appsource-test-drive.md)分发的业务解决方案。 此计划可永久免费使用，但仅限用于学习和掌握 PowerApps、Common Data Service 和 Microsoft Flow 相关技能。
-6. **问：**能否使用个人帐户进行注册？
-   
-    **答：**不能，只能使用[工作或学校帐户](signup-for-powerapps.md#what-email-addresses-can-you-use)进行注册。 暂不支持使用个人帐户进行注册。
-7. **问：**能否删除我的个人环境？
-   
-    **答：**你无法自行删除此环境。 租户管理员才有权删除此环境。
+**问：**达到环境的容量上限后，我应该怎么办？
 
+**答：**之所以有容量上限是因为此环境是供个人使用，而不是供团队或生产使用。 规定的容量上限为：
+
+| **容量** |  |
+| --- | --- |
+| 流运行次数/月 |750 |
+| 数据库大小 |200 MB |
+| 文件存储 |2GB |
+
+如果达到了一个或多个容量上限，建议购买支持生产用途的计划。 若要详细了解我们的计划及其限制，请参阅 [PowerApps 定价页](https://powerapps.microsoft.com/pricing/)。
+
+**问：**能否将在个人环境中创建的应用、流和其他资源迁移到其他环境中？
+
+**答：**能，应该可以将此环境中的资源导出到其他环境中。 有关详细信息，请参阅[环境和租户应用迁移](environment-and-tenant-migration.md)。
+
+**问：**我的 PowerApps 社区计划订阅是否会到期？
+
+**答：**可以永久免费使用 PowerApps 社区计划订阅。 如果仍在使用个人环境，就不会失去对此环境中任何资源或功能的访问权限。 不过，在长时间不使用后首次访问 Common Data Service 数据库时，你可能会注意到有延迟。  但此延迟并不影响 Common Data Service 中存储的数据或实体。
+
+**问：**能否获取或创建多个个人环境？
+
+**答：**不能，只能有一个个人环境，这就是 PowerApps 在你注册社区计划时为你创建的环境。
+
+**问：**PowerApps 计划 2 试用版和 PowerApps 社区计划有什么区别？我应注册哪一个？
+
+**答：**PowerApps 计划 2 试用版和 PowerApps 社区计划均可免费注册，不同之处在于它们的创建目的不同：
+
+注册 **PowerApps 计划 2 试用版**，可以使用 PowerApps 计划 2 90 天。 旨在方便你试用 PowerApps、Common Data Service 和 Microsoft Flow。 试用到期后，可以购买计划。 如果你是使用 Office 365 或 Dynamics 365 的现有 PowerApps 用户，PowerApps 计划 2 就非常适合试用其提供的 PowerApps 高级功能。
+
+注册 **PowerApps 社区计划**，可以访问 PowerApps 高级功能、Common Data Service 和 Microsoft Flow，以供个人使用。 此计划主要用于学习目的或创建要作为 [AppSource 体验版应用](dev-appsource-test-drive.md)分发的业务解决方案。 此计划可永久免费使用，但仅限用于学习和掌握 PowerApps、Common Data Service 和 Microsoft Flow 相关技能。
+
+**问：**能否使用个人帐户进行注册？
+
+**答：**不能，只能使用[工作或学校帐户](signup-for-powerapps.md#what-email-addresses-can-you-use)进行注册。 暂不支持使用个人帐户进行注册。
+
+**问：**能否删除我的个人环境？
+
+**答：**你无法自行删除此环境。 租户管理员才有权删除此环境。

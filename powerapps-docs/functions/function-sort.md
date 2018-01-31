@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 780c72323e4b0d406d89ba35201c78456bb0dbca
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 72bbbc882250d25ddabc8086e81bfc7779e26b60
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>PowerApps 中的 Sort 和 SortByColumns 函数
 对[表](../working-with-tables.md)进行排序。
@@ -29,7 +29,7 @@ ms.lasthandoff: 11/07/2017
 
 系统会针对表的每条[记录](../working-with-tables.md#records)计算公式，然后根据结果对表进行排序。  公式的计算结果必须是数字、字符串或布尔值；不得是表或记录。
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 若要先按一列进行排序，然后再按另一列进行排序，请在 **Sort** 公式中嵌入另一个此公式。 例如，可以使用以下公式先按 **LastName** 列对 **Contacts** 表进行排序，然后再按 **FirstName** 列进行排序：**Sort( Sort( Contacts, LastName ), FirstName )**
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 11/07/2017
 
 [表](../working-with-tables.md)是 PowerApps 中的一个值，与字符串或数字类似。  可以向函数传递表，也可以从函数返回表。  **Sort** 和 **SortByColumn** 并不修改表，而是将表视为参数，然后返回排序后的新表。  请参阅[使用表](../working-with-tables.md)，了解更多详情。
 
-[!INCLUDE [delegation](../../includes/delegation.md)]
+[!INCLUDE [delegation](../includes/delegation.md)]
 
 ## <a name="syntax"></a>语法
 **Sort**( *Table*, *Formula* [, *SortOrder* ] )
@@ -58,7 +58,8 @@ ms.lasthandoff: 11/07/2017
 * *ColumnName(s)* - 必需。 要排序的列名称（以字符串形式）。
 * *SortOrder(s)* - 可选。  **SortOrder.Ascending** 或 **SortOrder.Descending**。  **SortOrder.Ascending** 是默认值。  如果提供了多个 *ColumnNames* ，则最后一列必须包括 *SortOrder* 。
   
-    注意：对于列名称带空格的 SharePoint 和 Excel 数据源，将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
+    > [!NOTE]
+> 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
 
 **SortByColumns**( *Table*, *ColumnName*, *SortOrderTable* )
 
@@ -66,7 +67,8 @@ ms.lasthandoff: 11/07/2017
 * *ColumnName* - 必需。 要排序的列名称（以字符串形式）。
 * *SortOrderTable* - 必需。  作为排序依据的单列表值。
   
-    注意：对于列名称带空格的 SharePoint 和 Excel 数据源，将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
+    > [!NOTE]
+> 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
 
 ## <a name="examples"></a>示例
 在下面的示例中，我们将使用 **IceCream** [数据源](../working-with-data-sources.md)，其中包含下表中的数据：

@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: 5a957feab279c2a2a79f629ec6a47eae07f323a3
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 5b11234842477ea0a204555e5adaa747d51958db
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>在 PowerApps 中使用折线图、饼图或条形图显示数据
 使用折线图、饼图和条形图显示数据。 使用图表时，所导入数据的结构应如下所示：
@@ -26,12 +26,13 @@ ms.lasthandoff: 11/07/2017
 * 各系列应在第一行。
 * 标签应在最左边的列。
 
-例如，数据看起来应与下图类似：  
+例如，数据看起来应与下图类似：
+
 ![][9]
 
 可以在 PowerApps 中创建并使用这些图表。 让我们开始吧。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 * [注册](signup-for-powerapps.md) PowerApps，然后[安装](http://aka.ms/powerappsinstall) PowerApps。 打开 PowerApps 时，使用注册所用的凭据登录。
 * 根据[模板](get-started-test-drive.md)、[数据](get-started-create-from-data.md)或[从头开始](get-started-create-from-blank.md)创建应用。
 * 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
@@ -41,59 +42,71 @@ ms.lasthandoff: 11/07/2017
 在以下步骤中，我们将示例数据导入到名为“ProductRevenue”的集合。
 
 1. 在“插入”选项卡上，选择“控件”，然后选择“导入”：  
-   
+
     ![][11]  
+
 2. 将控件的 **[OnSelect](controls/properties-core.md)** 属性设置为下面的函数：  
+
    ```Collect(ProductRevenue, Import1.Data)```
+
 3. 按 F5 打开预览模式，然后选择“导入数据”按钮。
-4. 在“打开”对话框中，选择 ChartData.zip，选择“打开”，然后按 Esc。  
+
+4. 在“打开”对话框中，选择 ChartData.zip，选择“打开”，然后按 Esc。
+
 5. 在“文件”菜单上，选择“集合”。
-   
-    随即会列出包含已导入的图表数据的 ProductRevenue 集合：  
+
+    随即会列出包含已导入的图表数据的 ProductRevenue 集合：
+
     ![][1]  
-   
+
    > [!NOTE]
    > 导入控件用于导入类似于 Excel 的数据并创建集合。 导入控件在创建应用和预览应用时导入数据。 目前，导入控件不在发布应用时导入数据。
-   > 
-   > 
+   >
+
 6. 按 Esc 返回默认工作区。
 
 ## <a name="add-a-pie-chart"></a>添加饼图
 1. 在“插入”选项卡上，选择“图表”，然后选择“饼图”。
+
 2. 将饼图移到“导入数据”按钮下面。
+
 3. 在饼图控件中，选择饼图的中间：   
-   
+
     ![][10]
-4. 将饼图的 **[Items](controls/properties-core.md)** 属性设置为此表达式：</br>
-   ```ProductRevenue.Revenue2014```
-   
+
+4. 将饼图的 [Items](controls/properties-core.md) 属性设置为以下表达式：`ProductRevenue.Revenue2014`
+
     ![][2]  
-   
+
     该饼图显示 2014 年以来的收入数据。
-   
+
     ![][3]  
 
 ## <a name="add-a-bar-chart-to-display-your-data"></a>添加条形图以显示数据
 现在，让我们在条形图中使用此 ProductRevenue 集合：
 
-1. 在“主页”选项卡上添加屏幕。
+1. 在“主页”选项卡上，添加一个屏幕。
+
 2. 在“插入”选项卡上，选择“图表”，然后选择“柱形图”。
+
 3. 选择柱形图的中间。 将柱形图的 **[Items](controls/properties-core.md)** 属性设置为 ```ProductRevenue```：
-   
+
     ![][12]  
-   
+
     该柱形图显示 2012 年以来的收入数据：
-   
+
     ![][4]  
+
 4. 在柱形图中，选择中心方形：
-   
+
     ![][5]
+
 5. 在“图表”选项卡上，选择“系列数”，然后在公式栏中输入 **3**：
-   
+
     ![][6]  
-   
+
     该柱形图显示每个产品三年的收入数据：
-   
+
     ![][7]  
 
 [1]: ./media/use-line-pie-bar-chart/productrevenuecollection.png

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/15/2017
 ms.author: gregli
-ms.openlocfilehash: d4305884c14a4b85b2ed992a5df13a7d3bb2baa7
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: b6410a6b392f074c5e5a240e471fa2591e1e135d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-delegation"></a>了解委派
 PowerApps 包括一组用于数据表筛选、排序和整理的功能强大的函数：**[Filter](functions/function-filter-lookup.md)**、**[Sort](functions/function-sort.md)**、**[AddColumns](functions/function-table-shaping.md)**，等等。  可以使用这些函数，让用户重点访问其所需的信息。  对于具有数据库背景的用户来说，使用这些函数相当于编写数据库查询。  
@@ -95,7 +95,7 @@ PowerApps 包括一组用于数据表筛选、排序和整理的功能强大的�
 
 常见模式是使用 **AddColumns** 和 **LookUp** 将一个表中的信息合并到另一个表中，用数据库术语来说，通常就是指“联接”。  例如：
 
-* **AddColumns( Products, "Supplier Name", LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name )**
+**AddColumns( Products, "Supplier Name", LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name )**
 
 即使 **Products** 和 **Suppliers** 是可委派的数据源且 **LookUp** 是可委派的函数，**AddColumns** 函数也不可委派。  整个公式的结果将仅限于 **Products** 数据源的第一部分。  
 
@@ -118,27 +118,26 @@ PowerApps 包括一组用于数据表筛选、排序和整理的功能强大的�
 ## <a name="examples"></a>示例
 在此示例中，我们将使用一个 SQL Server 表，其中包含产品，具体说来就是水果，其名称为 **[dbo].[Products]**。  在“新建”屏幕上，PowerApps 可以创建一个基本的三屏幕应用，该应用连接到以下数据源：
 
-![](media/delegation-overview/products-afd.png)
+![三屏幕应用](media/delegation-overview/products-afd.png)
 
 请注意库的 **Items** 属性的公式。  该公式使用 **SortByColumns** 和 **Search** 函数，二者均可委派。
 
 让我们在搜索文本输入控件中键入“Apple”。  如果仔细观察，我们就会发现，在新搜索中处理新条目时，屏幕顶部会短暂地出现一串移动的点。  这串移动的点表示我们正在与 SQL Server 通信：
 
-![](media/delegation-overview/products-apple.png)
+![搜索文本输入控件](media/delegation-overview/products-apple.png)
 
 由于这都是可以委派的，因此即使 **[dbo].[Products]** 表包含数百万记录，我们也仍然可以全部找到它们，当用户滚动浏览结果时在库中对这些记录分页。
 
 你会注意到，我们看到的匹配项包含“Apple”和“Pineapple”。  **Search** 函数会在文本列的任何位置查找搜索词。  如果我们只想在水果名称的开头查找搜索词，  则可使用另一委派函数：**Filter**，该函数的搜索词更复杂（为简便起见，我们将删除 **SortByColumns** 调用）：
 
-![](media/delegation-overview/products-apple-bluedot.png)
+![删除 SortByColumns 调用](media/delegation-overview/products-apple-bluedot.png)
 
 看起来发挥作用了，仅“Apples”显示，“Pineapple”没有显示。  但是，在库旁边显示了一个蓝点，在部分公式下标有蓝色的波浪线。  甚至在屏幕缩略图中也显示了一个蓝点。  如果我们将鼠标悬停在库旁边的蓝点上方，则会显示以下消息：
 
-![](media/delegation-overview/products-apple-bluepopup.png)
+![将鼠标悬停在蓝点之上](media/delegation-overview/products-apple-bluepopup.png)
 
 虽然我们使用的 **Filter** 是可委派的函数，使用的 SQL Server 是可委派的数据源，但在 **Filter** 中使用的公式是不可委派的。  **Mid** 和 **Len** 不能委派给任何数据源。
 
 但它确起作用了，不是吗？  嗯，在某种程度上可以这么说。  这就是为何只显示蓝点而不显示黄色危险图标和红色波浪线（表示错误）的原因。  如果 **[dbo].[Products]** 表包含的记录不到 500 条，则没错，此方法完全可以使用。   所有记录都会转到设备，并在本地应用 **Filter**。  
 
 但如果该表包含的记录超过 500 条，则只会在库中显示表的头 500 条记录中以“Apple”开头的水果。  如果“Apple, Fuji”作为名称出现在第 501 或 500,001 条记录中，就会找不到它。
-

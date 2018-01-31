@@ -13,16 +13,17 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/12/2017
+ms.date: 01/09/18
 ms.author: mblythe
-ms.openlocfilehash: 5fd4448eba2429dc7bd5027327b132c1b0ff5dd8
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4af1571bb72c713c6186f5237d6b3791eb95808b
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-flow-to-manage-project-approvals"></a>创建用于管理项目审批的流
-注意：本文属于将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> [!NOTE]
+> 本文属于介绍如何将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
 在此任务中，我们将创建用于驱动项目审批流程的流。 由于 Microsoft Flow 已与 SharePoint 集成，因此可以很容易地直接通过列表创建流。 当“项目申请”列表添加有新项时，将会触发我们创建的流。 此流会向项目审批者发送电子邮件，以便其可以直接在电子邮件中批准或拒绝申请。 然后，此流会向项目申请者发送批准或拒绝电子邮件，并相应地更新 SharePoint 列表。
 
@@ -123,25 +124,33 @@ ms.lasthandoff: 11/07/2017
 8. 在“已批准”框中，输入“否”。 此时，这部分流应如下图所示。
    
     ![列表更新](./media/sharepoint-scenario-approval-flow/03-01-08-no-update-complete.png)
-9. 在屏幕的右上角，依次单击或点击“创建流”和“完成”。
-   
-    ![“完成”按钮](./media/sharepoint-scenario-approval-flow/03-01-15a-done-button.png)
+9. 单击或点击屏幕右上角的“创建流”。
    
     此时，流已创建完成。如果将框折叠起来，应如下图所示。
    
     ![已完成的流](./media/sharepoint-scenario-approval-flow/03-01-16-flow-complete.png)
 
+10. 单击或点击屏幕右上角的“完成”。
+   
+    ![“完成”按钮](./media/sharepoint-scenario-approval-flow/03-01-15a-done-button.png)
+
 ## <a name="step-4-run-the-approval-flow"></a>第 4 步：运行审批流
 1. 在“项目申请”列表中，单击“快速编辑”，并添加一项，如下所示：
    
    * “Title”的值为“New monitor for Megan”
-   * “Approved”的值为“Pending”
+
    * “Description”的值为“Megan needs a 24" monitor”
-   * “EstimatedDays”的值为“1”
+
    * “ProjectType”的值为“New hardware”
+
    * “RequestDate”的值为“02/03/2017”
+
    * “Requestor”的值为“Megan Bowen”
-     
+
+   * “EstimatedDays”的值为“1”
+
+   * “Approved”的值为“Pending”
+
      ![添加到列表中的项](./media/sharepoint-scenario-approval-flow/03-02-01-list-add.png)
 2. 完成后，单击网页顶部的“完成”。
    

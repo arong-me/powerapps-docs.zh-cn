@@ -14,12 +14,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/19/2017
-ms.author: karthikb
-ms.openlocfilehash: 7015a224d2ed914f84d4b56c58addd5f0fd88f8b
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.author: sharik
+ms.openlocfilehash: daa1aa994f13c9e79171b4c34101e397aaf5eff7
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="edit-an-app-in-powerapps"></a>在 PowerApps 中编辑应用
 编辑自己生成、拥有或拥有“可编辑”权限的任何应用。 可以在适用于 Web 的 PowerApps Studio 或适用于 Windows 的 PowerApps Studio 中编辑应用。 如果尝试编辑的应用已在别处打开以供编辑，将会看到一条消息，指明是你自己还是其他用户打开的。
@@ -34,7 +34,8 @@ ms.lasthandoff: 11/07/2017
    
     可以编辑随即显示的列表中的任何应用。 还可以在右上角附近的搜索框中键入一个或多个字符来搜索应用。
    
-    注意：如果仍未看到要编辑的应用，请验证是否已在右上角附近选择正确的环境。
+    > [!NOTE]
+> 如果仍未看到要编辑的应用，请验证是否已在右上角附近选择正确的环境。
    
     ![环境列表](./media/edit-app/environment-list.png)
 

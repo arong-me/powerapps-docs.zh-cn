@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/21/2017
 ms.author: sharik
-ms.openlocfilehash: 62f46339e2136494225bf218d372f539c389e1ad
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 8ac8fb34f9cdeb0c9e0ce6172938cef33ecccbc5
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="generate-an-app-from-within-sharepoint-using-powerapps"></a>使用 PowerApps 从 SharePoint 中生成应用
-[!VIDEO nb:cid:UUID:639d7eaf-bae5-447c-a34b-ec539a01a15c]
+
 
 
 在 PowerApps 中自动生成应用，以便用户管理自定义 SharePoint Online 列表中的项。 应用将有三个屏幕，用户可以在其中执行以下操作：
@@ -33,7 +33,8 @@ ms.lasthandoff: 11/07/2017
 
 如果从 SharePoint Online 命令栏创建自定义列表的应用，则应用会显示为该列表的视图。 除了 Web 浏览器，还可以在 Windows Phone、iOS 或 Android 设备上运行应用。
 
-**重要说明**：PowerApps 并不支持所有类型的 SharePoint 数据。 有关详细信息，请参阅 [已知问题](connections/connection-sharepoint-online.md#known-issues)。
+> [!IMPORTANT]
+> PowerApps 并不支持所有类型的 SharePoint 数据。 有关详细信息，请参阅 [已知问题](connections/connection-sharepoint-online.md#known-issues)。
 
 ## <a name="generate-an-app"></a>生成应用
 1. 在 SharePoint Online 中打开自定义列表，单击或点击命令栏中的“PowerApps”，然后单击或点击“创建应用”。
@@ -48,7 +49,8 @@ ms.lasthandoff: 11/07/2017
     ![](./media/generate-app-from-sharepoint-list-interface/powerapp-studio-for-web.png)  
 3. 单击或点击 SharePoint 列表的浏览器选项卡，然后单击或点击“打开”。
    
-    **注意**：可能需要刷新浏览器窗口（例如，按 F5 进行刷新），然后应用才会打开。
+    > [!NOTE]
+> 可能需要先刷新浏览器窗口（例如，按 F5 刷新），然后应用才会打开。
    
     ![](./media/generate-app-from-sharepoint-list-interface/open-app-in-browser.png)
    

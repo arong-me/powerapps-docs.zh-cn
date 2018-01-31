@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2017
 ms.author: millopis
-ms.openlocfilehash: 834e05a89fff2142bc38b359ea5b6bccc08894aa
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 18f580c06412968b27a279a526b562e27cb89e26
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-new-entities-in-the-common-data-service-cds-using-power-query"></a>使用 Power Query 在 Common Data Service (CDS) 中新建实体
 集成 Power Query 后，商业应用程序开发者可以根据各种数据源在 Common Data Service (CDS) 中新建实体。
@@ -33,12 +33,15 @@ ms.lasthandoff: 11/07/2017
 ## <a name="enabling-the-cds-new-entities-from-power-query-feature"></a>启用使用 Power Query 新建 CDS 实体的功能
 此功能在 PowerApps 租户中可用，但默认处于禁用状态。 可以在 [web.powerapps.com](https://aka.ms/pqocds) 中启用此功能。
 
-**注意：**只能在已创建的数据库中新建自定义实体。
+> [!NOTE]
+> 只能在已创建的数据库中新建自定义实体。
 
 在 PowerApps 门户中，按照下列步骤操作，启用此功能：
 
 1. 在左侧导航窗格中，依次转到“Common Data Service”>“实体”选项卡。
+
 2. 在“实体”列表中，选择“新建实体”下拉菜单。
+
 3. 在下拉菜单显示的列表中，选择“根据数据新建实体(技术预览版)”，如下图所示。
    
     ![根据数据新建实体](media/data-platform-cds-newentity-pq/data-platform-cds-pq-02.jpg)

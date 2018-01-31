@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/08/2017
 ms.author: jamesol
-ms.openlocfilehash: f588a6fa9952f3d40d51fbedbd672031b9c837f5
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1e51ca684129c538ced47863c73269284cc13719
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>在 PowerApps 中发送推送通知
 推送通知用于移动应用中的使用者和业务情形，主要用来与应用用户进行交互，并帮助他们优先处理关键任务。 在 PowerApps 中，可以使用 PowerApps 通知连接器发送通知。 可以将原生推送通知发送到在 PowerApps 中创建的任何应用。 我们计划在今后支持更多通知类型。
@@ -32,13 +32,15 @@ ms.lasthandoff: 11/07/2017
 * 用户必须使用应用在预加载的上下文中完成重要任务。
 * 希望按特定时间间隔与用户进行交互，或需要用户在特定情况下进入应用。
 
-**注意**：每个用户必须在 PowerApps Mobile 中打开过一次应用，或在 [Dynamics 365](https://home.dynamics.com/) 中从 AppSource 获取过应用，才能接收推送通知。
+> [!NOTE]
+> 每个用户都必须在 PowerApps Mobile 中打开过一次应用，或在 [Dynamics 365](https://home.dynamics.com/) 中从 AppSource 获取过应用，才能接收推送通知。
 
 ## <a name="before-you-start"></a>开始之前
 在拥有参与者权限的应用中，添加 PowerApps 通知连接。 如果尚未生成应用，可以[通过模板快速创建一个](get-started-test-drive.md)，默认拥有所需的权限。 上面提及的教程和本教程均使用根据用例管理模板生成的应用。
 
 ## <a name="send-a-notification-from-a-flow"></a>通过流发送通知
-**注意**：如果通过流触发推送通知，那么目前一次只能向一个用户或安全组发送通知。
+> [!NOTE]
+> 如果通过流触发推送通知，那么目前一次只能向一个用户或安全组发送通知。
 
 1. 在 [Microsoft Flow](https://flow.microsoft.com) 中，创建一个触发器，指定何时发送推送通知。
    
@@ -89,10 +91,11 @@ ms.lasthandoff: 11/07/2017
 2. （可选）将 Visible 属性设置为 false，隐藏“计时器”控件。
 3. 将屏幕的 OnVisible 属性设置为 Timer.Start()。
 
-**提示**：最好在应用中为通知创建专属首页：
+> [!TIP]
+> 最好在应用中为通知创建专属首页：
 
-1. 创建应用尚未打开的空页，添加“文本输入”控件，并设置 timer.Duration 值。
-2. 创建应用时，将计时器设置为非零值。 如果已准备好发布应用，请将值设置为 0，以立即触发计时器。
+>1. 创建应用尚未打开的空页，添加“文本输入”控件，并设置 timer.Duration 值。
+>2. 创建应用时，将计时器设置为非零值。 如果已准备好发布应用，请将值设置为 0，以立即触发计时器。
 
 ## <a name="syntax"></a>语法
 | 名称 | 说明 |

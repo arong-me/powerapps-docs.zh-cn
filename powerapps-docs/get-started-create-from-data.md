@@ -14,12 +14,12 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
-ms.author: karthikb
-ms.openlocfilehash: e6ad4896beb28b5b38b22706838fec5f6a6840ec
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.author: sharik
+ms.openlocfilehash: cf90156292985e58e2d68d2828d7c943b45facdf
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="generate-an-app-from-excel-data"></a>通过 Excel 数据生成应用
 基于上传到云存储帐户（例如 OneDrive）的 Excel 文件中的数据自动构建应用。 生成应用后，自定义该应用，使其更好地满足你的需求，然后运行该应用并确保其按预期方式工作。
@@ -30,16 +30,18 @@ ms.lasthandoff: 11/07/2017
 * **DetailsScreen1** 显示特定记录的多个字段或所有字段。
 * **EditScreen1** 提供 UI 元素，用户可在其中创建或更新记录并保存其更改。
 
-**注意**：还可基于[自定义 SharePoint 列表](app-from-sharepoint.md)生成应用。
+> [!NOTE]
+> 还可以根据[自定义 SharePoint 列表](app-from-sharepoint.md)生成应用。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 * [注册](signup-for-powerapps.md) PowerApps，然后执行下列步骤之一：
   * 在运行 Windows 8、Windows 8.1 或 Windows 10 的计算机上安装[ PowerApps Studio for Windows](http://aka.ms/powerappsinstall)。
   * 在浏览器中打开[适用于 Web 的 PowerApps Studio](create-app-browser.md)（预览版）。
 * 使用注册所用的同一凭据登录到 PowerApps。
 * 请下载此 [Excel 文件](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx)，并完全按照本教程操作。
   
-    **重要提示**：如果数据已设置为表格式，则可使用自己的 Excel 文件。 有关详细信息，请参阅 [Create an Excel table in a worksheet](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)（在工作表中创建 Excel 表）。
+    > [!IMPORTANT]
+> 如果已将数据的格式设置为表，可以使用自己的 Excel 文件。 有关详细信息，请参阅 [Create an Excel table in a worksheet](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)（在工作表中创建 Excel 表）。
 * 将 Excel 文件上传到 OneDrive 或其他[云存储帐户](connections/cloud-storage-blob-connections.md)。
 
 ## <a name="create-an-app"></a>创建应用
@@ -66,7 +68,8 @@ ms.lasthandoff: 11/07/2017
    
     ![选择“下一步”获取教程](./media/get-started-create-from-data/quick-tour.png)
    
-    **注意**：稍后可以通过单击或点击右上角附近的问号图标，然后单击或点击“**获取简介教程**”，随时获取此教程。
+    > [!NOTE]
+> 稍后可以通过单击或点击右上角附近的问号图标，然后单击或点击“**获取简介教程**”，随时获取教程。
 
 ## <a name="change-the-gallery-layout"></a>更改库布局
 生成应用后，虽然其中包含以你的数据为依据的默认布局，但可以根据自己的需求自定义库布局。
@@ -103,7 +106,8 @@ ms.lasthandoff: 11/07/2017
    
     ![包含新内容的 BrowseScreen1](./media/get-started-create-from-data/browse-content.png)
    
-    **注意**：默认情况下，使用鼠标滚轮或在触摸屏上向上和向下轻扫可以滚动浏览列表（称为库）。 若要使用触控板或没有滚轮的鼠标，请选择库，单击或点击属性列表中的“显示滚动条”，然后在公式栏中将 **false** 替换为 **true**。
+    > [!NOTE]
+> 默认情况下，使用鼠标滚轮或在触摸屏中向上和向下轻扫可以滚动浏览列表（称为“库”）。 若要使用触控板或没有滚轮的鼠标，请选择库，单击或点击属性列表中的“显示滚动条”，然后在公式栏中将 **false** 替换为 **true**。
 
 ## <a name="change-the-order-of-fields-in-a-form"></a>更改窗体中的字段顺序
 1. 在左侧导航栏中，单击或点击中间的缩略图来打开详细信息屏幕 (**DetailsScreen1**)。
@@ -155,7 +159,7 @@ ms.lasthandoff: 11/07/2017
    
     ![关闭预览模式](./media/get-started-create-from-data/close-preview.png)
 
-## <a name="known-limitations"></a>已知的限制
+### <a name="known-limitations"></a>已知的限制
 若要了解如何在组织内共享 Excel 数据，请[查看这些限制](connections/cloud-storage-blob-connections.md#sharing-excel-tables)。
 
 ## <a name="next-steps"></a>后续步骤

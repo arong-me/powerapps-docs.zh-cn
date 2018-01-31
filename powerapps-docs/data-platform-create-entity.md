@@ -12,28 +12,29 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/06/2016
+ms.date: 10/20/2017
 ms.author: kfend
-ms.openlocfilehash: 5d927e84144da8e3b011bb4e4a7ac107aedac74f
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: e02a423f6a951c1c479b3941c6f361383244cafc
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-custom-entity"></a>创建自定义实体
 可以创建自定义实体来存储特定于组织的数据。 然后可通过开发引用该实体的应用来显示该数据。
 
 创建实体的方法有两种：
 
-* 从头开始创建实体。 默认情况下，实体仅包含[四个系统字段和一个记录标题字段](data-platform-create-entity.md#system-and-record-title-fields)。
+* 从头开始创建实体。 默认情况下，实体仅包含[四个系统字段和一个记录标题字段](data-platform-create-entity.md#system-fields-and-the-record-title-field)。
 * 复制另一实体的字段和设置，但不复制数据，从而在此实体的基础上创建新实体。
 
 在这两种情况下，Microsoft PowerApps 都会自动存储并帮助保护数据。 创建实体后，可以[创建或修改实体的一个或多个字段](data-platform-manage-fields.md)，以及 [构建实体之间的关系](data-platform-entity-lookup.md)。
 
-**注意：**创建实体之前，请参阅[标准实体列表](data-platform-intro.md#standard-entities)。 这些实体涵盖典型的方案，如客户和联系人。 如果有符合你要求的现成实体或仅需稍加更改的实体，可使用该实体以节省时间。
+> [!NOTE]
+> 创建实体前，请先参阅[标准实体列表](data-platform-intro.md#standard-entities)。 这些实体涵盖典型的方案，如客户和联系人。 如果有符合你要求的现成实体或仅需稍加更改的实体，可使用该实体以节省时间。
 
 ## <a name="create-an-entity"></a>创建实体
-1. 1. 在 [powerapps.com](https://web.powerapps.com) 上，展开“Common Data Service”部分，单击或点击左侧导航窗格中的“实体”。
+1. 在 [powerapps.com](https://web.powerapps.com) 上，展开“Common Data Service”部分，然后单击或点击左侧导航窗格中的“实体”。
 2. 如果尚未创建数据库，需要创建一个数据库。 有关详细信息，请参阅[创建 Common Data Service 数据库](create-database.md)。
 3. 在右上角附近，单击或点击“新建实体”。
 4. 在“实体名称”字段中，输入实体的名称。 确保实体名称清楚且有意义，因为创建该实体后无法再进行更改。 开发应用时，将通过此名称在公式中引用该实体。

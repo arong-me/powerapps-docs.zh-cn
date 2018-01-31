@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/28/2016
 ms.author: litran
-ms.openlocfilehash: 0d580471b5dc70852468f6571d356dddd5ca172c
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: a6ec814d057f85b39f794bd7c0c100c5a28f652f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="introduction-to-powerappscom"></a>powerapps.com 简介
-从 11 月开始，PowerApps 团队将会重新引入 [powerapps.com](http://web.powerapps.com) 作为应用创作者的新门户。 我们已将页面重新设计为主站点，让创建者轻松着手创建应用，使用 Microsoft Common Data Service，以及在一个位置管理他们的应用。 本文逐步讲解以下内容：
+PowerApps 团队将会重新引入 [powerapps.com](http://web.powerapps.com) 作为应用创建者的新门户。 我们已将页面重新设计为主站点，让创建者轻松着手创建应用，使用 Microsoft Common Data Service，以及在一个位置管理他们的应用。 本文逐步讲解以下内容：
 
 * 标题
 * 主页
@@ -111,7 +111,7 @@ ms.lasthandoff: 11/07/2017
 
 请注意，列表视图仅显示选定环境中的应用。 若要查看某个不同环境中的应用，请使用标题中的环境切换器切换到该环境。 [详细了解如何切换环境](working-with-environments.md)。
 
-新功能
+## <a name="whats-new"></a>新功能
 
 * 单击或点击某个应用会立即在 PowerApps Studio for Web 的新标签页中打开该应用。
 * 默认情况下，“应用”页显示你有权编辑的所有应用。 若要查看“所有应用”（包括你只能使用的应用），请选择“所有应用”筛选器。
