@@ -15,17 +15,19 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/17/2016
 ms.author: gregli
-ms.openlocfilehash: 0565bba26f9ab78437dd4b5a7729ff518a89e6e8
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 8aa5fb671878af21fa483dde348460bf7c05fc70
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="controls-and-properties-in-powerapps"></a>PowerApps 中的控件和属性
 通过设置控件的属性之一配置该控件的外观和行为。 每种类型的控件都有一组不同的属性。 某些属性（例如 **Height** 和 **Width**）是几乎每种类型的控件共有的，但其他属性（例如 **CheckboxSize**）特定于某种类型的控件。
 
 ## <a name="controls"></a>控件
 **[添加图片](controls/control-add-picture.md)** – 从本地设备加载要上载到数据源的图像。
+
+**[附件](controls/control-attachments.md)** - 下载文件，以及将文件从本地设备上传到数据源。
 
 **[音频](controls/control-audio-video.md)** – 播放音频剪辑，或视频剪辑的音频部分。
 
@@ -175,7 +177,7 @@ ms.lasthandoff: 11/07/2017
 
 **[DataSource](controls/control-form-detail.md)** – 数据源，其中包含允许用户显示、编辑或创建的记录。  适用于**[显示窗体](controls/control-form-detail.md)**和**[编辑窗体](controls/control-form-detail.md)**控件。
 
-**[Default](controls/properties-core.md)** – 用户更改控件前的初始值。  适用于许多控件。
+**[Default](controls/properties-core.md)** - 用户更改控件前的初始值。  适用于许多控件。
 
 **[DefaultDate](controls/control-date-picker.md)** – 用户更改日期控件前的初始值。  适用于**[日期选取器](controls/control-date-picker.md)**控件。
 
@@ -248,7 +250,7 @@ ms.lasthandoff: 11/07/2017
 **[HTMLText](controls/control-html-text.md)** – HTML 文本控件中显示的文本，可能包含 HTML 标记。  适用于 **[HTML 文本](controls/control-html-text.md)**控件。
 
 ### <a name="i"></a>I
-**[Image](controls/properties-visual.md)** – 在图像、音频或麦克风控件中显示的图像名称。  适用于**[音频](controls/control-audio-video.md)**、**[图像](controls/control-image.md)**、**[麦克风](controls/control-microphone.md)**和**[视频](controls/control-audio-video.md)**控件。
+**[Image](controls/properties-visual.md)** - 图像、音频或麦克风控件中显示的图像名称。  适用于**[音频](controls/control-audio-video.md)**、**[图像](controls/control-image.md)**、**[麦克风](controls/control-microphone.md)**和**[视频](controls/control-audio-video.md)**控件。
 
 **[ImagePosition](controls/properties-visual.md)** – 屏幕或控件大小与图像大小不同时，其中图像的位置（“填充”、“适应”、“拉伸”、“平铺”或“居中”）。  适用于许多控件。
 
@@ -266,7 +268,7 @@ ms.lasthandoff: 11/07/2017
 
 **[ItemPaddingLeft](controls/control-list-box.md)** – 列表框中的文本与其左边缘之间的距离。  适用于**[列表框](controls/control-list-box.md)**控件。
 
-**[Items](controls/properties-core.md)** – 控件中显示的数据源，如库、列表或图表。  适用于许多控件。
+**[Items](controls/properties-core.md)** - 控件中显示的数据源，如库、列表或图表。  适用于许多控件。
 
 **[ItemsGap](controls/control-column-line-chart.md)** – 柱形图中各列之间的距离。  适用于**[柱形图](controls/control-column-line-chart.md)**控件。
 
@@ -284,7 +286,7 @@ ms.lasthandoff: 11/07/2017
 ### <a name="m"></a>M
 **[Markers](controls/control-column-line-chart.md)** – 柱形图或折线图是否显示每个数据点的值。  适用于**[柱形图](controls/control-column-line-chart.md)**和**[折线图](controls/control-column-line-chart.md)**控件。
 
-**[MarkerSuffix](controls/control-column-line-chart.md)** – 在柱形图中每个值后显示的文本，其中 **[Markers](controls/control-column-line-chart.md)** 属性设置为 **true**。  适用于**[柱形图](controls/control-column-line-chart.md)**控件。
+**[MarkerSuffix](controls/control-column-line-chart.md)** – 在柱形图中每个值后显示的文本，其中 **[Markers](controls/control-column-line-chart.md)** 属性设置为 **true**。  适用于**[柱状图](controls/control-column-line-chart.md)**控件。
 
 **Max** – 用户可对滑块或评分设置的最大值。  适用于**[评分](controls/control-rating.md)**和**[滑块](controls/control-slider.md)**控件。
 
@@ -406,7 +408,7 @@ ms.lasthandoff: 11/07/2017
 
 **[Required](controls/control-card.md)** – 用于编辑数据源字段的卡片是否必须包含值。  适用于**[卡片](controls/control-card.md)**控件。
 
-**[Reset](controls/properties-core.md)** – 控件是否还原为其默认值。  适用于许多控件。  另请参阅 [Reset](functions/function-reset.md) 函数。
+**[Reset](controls/properties-core.md)** - 是否还原控件的默认值。  适用于许多控件。  另请参阅 [Reset](functions/function-reset.md) 函数。
 
 ### <a name="s"></a>S
 **Selected** – 选定的项。  适用于**[下拉列表](controls/control-drop-down.md)**和**[库](controls/control-gallery.md)**控件。
@@ -421,9 +423,9 @@ ms.lasthandoff: 11/07/2017
 
 **[SelectMultiple](controls/control-list-box.md)** – 用户是否可以选择列表框中的多个项。  适用于**[列表框](controls/control-list-box.md)**控件。
 
-**[SeriesAxisMax](controls/control-column-line-chart.md)** – 柱形图或折线图 Y 轴的最大值。  适用于**[柱形图](controls/control-column-line-chart.md)**控件。
+**[SeriesAxisMax](controls/control-column-line-chart.md)** – 柱形图或折线图 Y 轴的最大值。  适用于**[柱状图](controls/control-column-line-chart.md)**控件。
 
-**[SeriesAxisMin](controls/control-column-line-chart.md)** – 用于确定柱形图 Y 轴最小值的数值。  适用于**[柱形图](controls/control-column-line-chart.md)**控件。
+**[SeriesAxisMin](controls/control-column-line-chart.md)** – 用于确定柱形图 Y 轴最小值的数值。  适用于**[柱状图](controls/control-column-line-chart.md)**控件。
 
 **ShowControls** – 音频或视频播放器是否显示播放按钮和音量滑块等组件，笔控件是否显示绘图、擦除和清除图标等。  适用于**[音频](controls/control-audio-video.md)**、**[PDF 查看器](controls/control-pdf-viewer.md)**、**[笔输入](controls/control-pen-input.md)**和**[视频](controls/control-audio-video.md)**控件。
 
@@ -462,7 +464,7 @@ ms.lasthandoff: 11/07/2017
 
 **[Time](controls/control-audio-video.md)** – 媒体控件的当前位置。  适用于**[音频](controls/control-audio-video.md)**和**[视频](controls/control-audio-video.md)**控件。
 
-**[Tooltip](controls/properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。  适用于许多控件。
+**[Tooltip](controls/properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。  适用于许多控件。
 
 **[Transition](controls/control-gallery.md)** – 用户将鼠标悬停在库中的项上时显示的视觉效果（“弹出”、“推出”或“无”）。  适用于**[库](controls/control-gallery.md)**控件。
 
@@ -500,19 +502,18 @@ ms.lasthandoff: 11/07/2017
 **[WrapCount](controls/control-gallery.md)**  – 库的每个项中显示多少条记录。  适用于**[库](controls/control-gallery.md)**控件。
 
 ### <a name="x"></a>X
-**[X](controls/properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。 适用于许多控件。 对于多列容器中的“[数据卡](controls/control-card.md)”控件，此属性将确定数据卡出现在哪一列。
+[X](controls/properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。 适用于许多控件。 对于多列容器中的“[数据卡](controls/control-card.md)”控件，此属性将确定数据卡出现在哪一列。
 
 **[XLabelAngle](controls/control-column-line-chart.md)** – 柱形图或折线图的 X 轴下方的标签角度。  适用于**[柱形图](controls/control-column-line-chart.md)**和**[折线图](controls/control-column-line-chart.md)**控件。
 
 ### <a name="y"></a>Y
 **[Y](controls/properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。 适用于许多控件。 对于多行容器中的“[数据卡](controls/control-card.md)”控件，此属性将确定数据卡出现在哪一行。
 
-**[YAxisMax](controls/control-column-line-chart.md)** – 折线图 Y 轴的最大值。  适用于**[柱形图](controls/control-column-line-chart.md)**控件。
+**[YAxisMax](controls/control-column-line-chart.md)** – 折线图 Y 轴的最大值。  适用于“[折线图](controls/control-column-line-chart.md)”控件。
 
-**[YAxisMin](controls/control-column-line-chart.md)** – 折线图 Y 轴的最小值。  适用于**[柱形图](controls/control-column-line-chart.md)**控件。
+**[YAxisMin](controls/control-column-line-chart.md)** – 折线图 Y 轴的最小值。  适用于“[折线图](controls/control-column-line-chart.md)”控件。
 
 **[YLabelAngle](controls/control-column-line-chart.md)** – 折线图或柱形图 Y 轴旁边的标签角度。  适用于**[柱形图](controls/control-column-line-chart.md)**和**[折线图](controls/control-column-line-chart.md)**控件。
 
 ### <a name="z"></a>Z
 **Zoom** – 相机中图像被放大的百分比或 PDF 查看器中文件的视图百分比。  适用于**[相机](controls/control-camera.md)**和 **[PDF 查看器](controls/control-pdf-viewer.md)**控件。
-

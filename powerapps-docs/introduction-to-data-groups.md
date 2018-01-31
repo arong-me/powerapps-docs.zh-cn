@@ -15,20 +15,21 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/28/2016
 ms.author: deonhe
-ms.openlocfilehash: a9be5bfa8f6ad7f77b966a5acc8cda4114cf3e70
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 601fe663d36383d5a89b0f93584e3a8c7cda43c8
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="learn-all-about-data-groups"></a>全面了解数据组
-## <a name="what-is-a-data-group"></a>什么是数据组？
+
 数据组是对[数据丢失防护 (DLP) 策略](prevent-data-loss.md)中的服务进行分类的一种简单方式。 两个可用的数据组为“仅限业务数据”组和“不允许业务数据”组。 组织可以自由确定要将哪些服务放置到哪个特定的数据组中。 为服务分类的一种合理方式是根据对组织造成的影响将服务放置在组中。 默认情况下，所有服务放置在“不允许业务数据”数据组中。 通过管理中心创建或修改 DLP 策略的属性时，可以管理数据组中的服务。
 
 ## <a name="how-data-is-shared-between-data-groups"></a>数据在数据组之间的共享方式
 无法在不同组中的服务之间共享数据。 例如，如果将 SharePoint 和 Salesforce 放置在“仅限业务数据”组中，将 Facebook 和 Twitter 放置在“不允许业务数据”组中，则无法创建用于在 SharePoint 与 Facebook 之间移动数据的 PowerApp。 尽管无法在不同组中的服务之间共享数据，但可以在特定组中的服务之间共享数据。 追溯到前面的示例，由于 SharePoint 和 Salesforce 放置在同一个数据组中，因此最终用户创建的 PowerApps 可在 SharePoint 与 Salesforce 之间共享数据。 关键之处在于，特定组中的服务可以共享数据，而不同组中的服务无法共享数据。
 
-此外，必须将一个数据组指定为默认组。 最初，“不允许业务数据”组是默认组，所有服务都放置在该数据组中。 管理员可将默认数据组更改为“仅限业务数据”数据组。 **请注意**，添加到 PowerApps 的所有新服务都将放置在指定的默认组中。 为此，我们建议将“不允许业务数据”保留为默认组，在组织已评估允许与新服务共享业务数据所造成的影响后，手动将服务添加到“仅限业务数据”组中。
+此外，必须将一个数据组指定为默认组。 最初，“不允许业务数据”组是默认组，所有服务都放置在该数据组中。 管理员可将默认数据组更改为“仅限业务数据”数据组。 > [!NOTE]
+> 添加到 PowerApps 的所有新服务都将被置于指定的默认组中。 为此，我们建议将“不允许业务数据”保留为默认组，在组织已评估允许与新服务共享业务数据所造成的影响后，手动将服务添加到“仅限业务数据”组中。
 
 ## <a name="add-services-to-a-data-group"></a>将服务添加到数据组
 本演练将 SharePoint 和 Salesforce 添加到数据丢失防护 (DLP) 策略的“仅限业务数据”数据组。
@@ -50,7 +51,8 @@ ms.lasthandoff: 11/07/2017
 ## <a name="change-the-default-data-group"></a>更改默认数据组
 本演练将默认数据组从“不允许业务数据”数据组更改为“仅限业务数据”数据组。  
 
-**重要说明**：添加到 PowerApps 的所有新服务都将放置在指定的默认组中。 为此，我们建议将“不允许业务数据”保留为默认组，并手动将服务添加到“仅限业务数据”组中。
+> [!IMPORTANT]
+> 添加到 PowerApps 的所有新服务都将被置于指定的默认组中。 为此，我们建议将“不允许业务数据”保留为默认组，并手动将服务添加到“仅限业务数据”组中。
 
 1. 选择想要指定为默认数据组的数据组右上角的“...”：    
    ![更改默认组](./media/introduction-to-data-groups/default-data-group-0.png)  

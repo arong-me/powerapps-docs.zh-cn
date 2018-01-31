@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/05/2017
 ms.author: gregli
-ms.openlocfilehash: f06c242d7eed3d7519af829400708362ab1a77d6
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f55b66e615b79852b86cc5ea88ee9fbef321f8aa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="filter-search-and-lookup-functions-in-powerapps"></a>PowerApps 中的 Filter、Search 和 LookUp 函数
 查找[表](../working-with-tables.md)中的一个或多个[记录](../working-with-tables.md#records)。
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/07/2017
 
 对于这两者，系统都会针对表的每条记录计算公式。  结果为 *true* 的记录将包含在结果中。  除常规公式[运算符](operators.md)外，还可对子字符串匹配项使用 **[in](operators.md#in-and-exactin-operators)** 和 **[exactin](operators.md#in-and-exactin-operators)** 运算符。
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 **Search** 函数在表中查找其某个列中包含某个字符串的记录。 字符串可能出现在列中的任何位置；例如，搜索“rob”或“bert”会在包含“Robert”的列中找到匹配项。 搜索不区分大小写。 与 **Filter** 和 **LookUp** 不同，**Search** 函数使用单个字符串而非公式进行匹配。
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 11/07/2017
 
 [表](../working-with-tables.md)是 PowerApps 中的一个值，与字符串或数字类似。 可以向函数传递表，也可以从函数返回表。  **Filter**、**Search** 和 **LookUp** 不会修改表。 相反，它们将表作为参数，并从中返回表、记录或单个值。 请参阅[使用表](../working-with-tables.md)，了解更多详情。
 
-[!INCLUDE [delegation](../../includes/delegation.md)]
+[!INCLUDE [delegation](../includes/delegation.md)]
 
 ## <a name="syntax"></a>语法
 **Filter**( *Table*, *Formula1* [, *Formula2*, ... ] )
@@ -51,9 +51,10 @@ ms.lasthandoff: 11/07/2017
 
 * *Table* - 必需。 要搜索的表。
 * *SearchString* - 必需。 要搜索的字符串。 如果为空白或者是空字符串，将返回所有记录。
-* *Column(s)* - 必需。 要在*表*中搜索的列的名称。 要搜索的列必须包含文本。 列名称必须是用双引号括起来的字符串。 但是，列名称必须是静态的，并且不能使用公式计算。 如果在任意这些列的数据中找到了作为部分匹配项的 *SearchString*，将返回完整记录。
+* *Column(s)* - 必需。 要在*表*中搜索的列的名称。 要搜索的列必须包含文本。 列名称必须是用双引号括起来的字符串。 但是，列名称必须是静态的，并且不能使用公式计算。 如果在任意这些列的数据中找到了作为部分匹配项的 *SearchString* ，将返回完整记录。
 
-注意：对于列名称带空格的 SharePoint 和 Excel 数据源，将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
+> [!NOTE]
+> 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
 
 **LookUp**( *Table*, *Formula* [, *ReductionFormula* ] )
 

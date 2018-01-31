@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/13/2017
 ms.author: fikaradz
-ms.openlocfilehash: 7220771d9798e6bb5481bbc86c430a357aeab7d2
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4d298e24ea967cbf5cb47638d4296f6efbd758c7
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="combo-box-control-in-powerapps"></a>PowerApps 中的组合框控件
 用户可以在其中提供的选项之间进行选择的控件。  支持搜索和多重选择。
@@ -29,7 +29,10 @@ ms.lasthandoff: 11/07/2017
 
 单选或多重选择模式是通过 SelectMultiple 属性进行配置。
 
-搜索要选择的项时，可以针对所有项修改“数据”窗格中的“布局”设置，从而选择是显示一个数据值、两个数据值，还是一个图片和两个值 (Person)。
+搜索要选择的项时，可以对所有项修改“数据”窗格中的“布局”设置，选择是显示一个数据值、两个数据值，还是一张图片和两个值（“人员”模板）。
+
+## <a name="people-picker"></a>人员选取器
+若要将组合框用作人员选取器，请从“数据”窗格的“布局”设置中选择“人员”模板，并配置要显示的如下人员相关数据属性。
 
 ## <a name="key-properties"></a>关键属性
 **[Items](properties-core.md)** - 提供待选选项的数据源。
@@ -69,7 +72,7 @@ ms.lasthandoff: 11/07/2017
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
@@ -78,8 +81,7 @@ ms.lasthandoff: 11/07/2017
 2. 在“属性选项”选项卡中，单击“数据”。  
 3. 在下面选择数据源、布局和相关属性。
 4. 在“高级”选项卡中设置 SelectMultiple 属性。
-   
-    正常运行的组合框将会在应用中显示。
-   
-    不知道如何[添加和配置控件](../add-configure-controls.md)？
 
+    正常运行的组合框将会在应用中显示。
+
+    不知道如何[添加和配置控件](../add-configure-controls.md)？

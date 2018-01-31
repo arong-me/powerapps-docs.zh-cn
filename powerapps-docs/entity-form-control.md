@@ -14,24 +14,26 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/11/2017
 ms.author: aneesa
-ms.openlocfilehash: f8962ea7ea89892b834541aba25653759212a652
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 33c113441bd9842ec267cc658ffd955decde86c0
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="use-the-entity-form-control"></a>使用实体窗体控件
-可以使用“实体窗体”控件以更快的速度创建应用，以添加 [Common Data Service 实体](guided-learning/learning-common-data-service-entities.md)的丰富窗体。
+可以使用“实体窗体”控件以更快的速度创建应用，以添加 [Common Data Service 实体](guided-learning/manage-data.yml#step-2)的丰富窗体。
 
 有关“实体窗体”控件的简介，请参阅此博客文章：[New entity form control (experimental feature) for Common Data Service](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/)（Common Data Service 的新实体窗体控件（实验性功能））。
 
-**重要说明**：请注意该博客文章中提到的“实体窗体”控件是实验性的，因此在生产应用中使用“实体窗体”控件时请保持谨慎，最起码目前是这样。
+> [!IMPORTANT]
+> 请注意“实体表单”控件是实验性控件（如博客文章所述），并在生产应用中谨慎使用“实体表单”控件（至少目前如此）。
 
 ## <a name="key-properties"></a>关键属性
 下面是“实体窗体”控件的关键属性。
 
 **DataSource** – 指定包含想要显示的记录的数据源。   
-**注意**：目前仅支持将 Common Data Service 中的实体用作“实体窗体”控件的数据源。  
+> [!NOTE]
+> 目前仅支持将 Common Data Service 中的实体用作“实体表单”控件的数据源。  
 
 **Pattern** – 指定想要在“实体窗体”控件中显示的窗体样式。 可使用 **FormPattern** 枚举设置此属性。
 
@@ -82,7 +84,8 @@ ms.lasthandoff: 11/07/2017
 
 了解各个属性和函数的概述后，接下来我们了解它们的工作方式。
 
-**注意**：如果你无权访问 Common Data Service 数据库，请在执行以下步骤之前，先[创建一个数据库](guided-learning/learning-common-data-service.md)。
+> [!NOTE]
+> 如果无权访问 Common Data Service 数据库，请先[创建一个](guided-learning/manage-data.yml#step-1)，再开始执行以下步骤。
 
 ## <a name="display-a-list-of-records"></a>显示记录列表
 下面的五个过程提供一个端到端示例来演示如何使用“实体窗体”控件。 在此过程中，添加一个用于显示销售订单列表的窗体。  
@@ -125,7 +128,7 @@ ms.lasthandoff: 11/07/2017
       
       ![](media/entity-form-control/entityform-tutorial-01-08.png)   
       
-      在 **Common Data Service** 中，可以[修改](field-groups.md)自定义实体（但不能是[标准实体](guided-learning/learning-common-data-service-entities.md)）的字段组，以更改“实体窗体”控件显示的相应窗体中出现的字段。 最有利的是，对字段组所做的任何更改将自动反映在使用“实体窗体”控件显示相应窗体的所有应用中。
+      在 **Common Data Service** 中，可以[修改](field-groups.md)自定义实体（但不能是[标准实体](guided-learning/manage-data.yml#step-2)）的字段组，以更改“实体窗体”控件显示的相应窗体中出现的字段。 最有利的是，对字段组所做的任何更改将自动反映在使用“实体窗体”控件显示相应窗体的所有应用中。
 
 ## <a name="display-the-details-of-a-record"></a>显示记录详细信息
 我们添加另一个“实体窗体”控件来显示在前面创建的列表中选择的销售订单的详细信息。  
@@ -206,7 +209,8 @@ ms.lasthandoff: 11/07/2017
 
 ![](media/entity-form-control/entityform-tutorial-01-21.png)  
 
-**注意**：使用窗体自定义窗格时，将会智能确定 **NavigationContext**。 当用户单击或点击 **SalesOrderId** 时，**NavigationContext** 将设置为 **SalesOrderListForm.Selected**，如前面的公式所示。 如果为导航指定 **Account** 字段，**NavigationContext** 将设置为 **SalesOrderListForm.Selected.Account**，确保传递正确的上下文。 但是，若要使用该上下文，需要一个与 Common Data Service 中的 **Account** 实体连接的“实体窗体”控件。
+> [!NOTE]
+> 使用表单自定义窗格时，系统将会智能确定 NavigationContext。 当用户单击或点击 **SalesOrderId** 时，**NavigationContext** 将设置为 **SalesOrderListForm.Selected**，如前面的公式所示。 如果为导航指定 **Account** 字段，**NavigationContext** 将设置为 **SalesOrderListForm.Selected.Account**，确保传递正确的上下文。 但是，若要使用该上下文，需要一个与 Common Data Service 中的 **Account** 实体连接的“实体窗体”控件。
 
 ## <a name="edit-and-save-a-record"></a>编辑和保存记录
 最后，我们了解如何在“实体窗体”控件中编辑和保存记录。  

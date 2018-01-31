@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/01/2016
+ms.date: 10/20/2017
 ms.author: sharik
-ms.openlocfilehash: 5ca84afd86144bec23c66825e72ef72694428df1
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 3d5ae546d10c0713fe346db1fbe49a6f6701f7a1
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>了解 Microsoft PowerApps 的本地数据网关
 ## <a name="installation-and-configuration"></a>安装和配置
@@ -44,27 +44,33 @@ ms.lasthandoff: 11/07/2017
 **安装网关**
 
 1. [下载安装程序](http://go.microsoft.com/fwlink/?LinkID=820931)，然后运行该程序。
-   
+
     ![运行该安装程序](./media/gateway-reference/run-installer.png)
+
 2. 在安装向导的第一个屏幕上，单击或点击“下一步”确认有关在笔记本电脑上安装网关的提醒。
-   
+
     ![提醒屏幕](./media/gateway-reference/laptop-reminder.png)
+
 3. 指定网关的安装位置，选中接受使用条款和隐私声明的复选框，然后单击或点击“安装”。
+
 4. 在“用户帐户控制”对话框中，单击或点击“是”继续安装。
+
 5. 在向导的下一个屏幕上，单击或点击“登录”。
-   
+
     ![登录](./media/gateway-reference/sign-in.png)
+
 6. 单击或点击用于注册新网关或者迁移、还原或接管现有网关的选项，然后单击或点击“下一步”。
-   
+
     ![选择新的或现有网关](./media/gateway-reference/new-existing.png)
-   
+
    * 若要配置某个网关，请键入该网关的**名称**和**恢复密钥**，单击或点击“配置”，然后单击或点击“关闭”。
-     
+
        ![配置新网关](./media/gateway-reference/configure-new.png)
-     
+
        指定至少包含八个字符的恢复密钥并将其保存在安全位置。 如果想要迁移、还原或接管网关，需要使用此密钥。
+
    * 若要迁移、还原或接管现有的网关，请提供该网关的名称和恢复密钥，单击或点击“配置”，然后遵照任何附加的提示操作。
-     
+
        ![恢复现有网关](./media/gateway-reference/recover-existing.png)
 
 **重新启动网关**
@@ -73,6 +79,7 @@ ms.lasthandoff: 11/07/2017
 
 * 若要停止该服务，请运行以下命令：<br>
   **net stop PBIEgwService**
+
 * 若要启动该服务，请运行以下命令：<br>
   **net start PBIEgwService**
 
@@ -82,7 +89,7 @@ ms.lasthandoff: 11/07/2017
 
 在 PowerShell 提示符下运行以下命令可以验证防火墙或代理是否可能阻止了连接。 此命令将测试与 Azure 服务总线之间的连接。 此命令只是测试网络连接，不会与云服务器服务或网关有任何交互。 此测试有助于确定计算机是否可以真正连接到 Internet。
 
-    Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
+**Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350**
 
 结果应类似于以下示例。 如果 **TcpTestSucceeded** 不为 **True**，可能是防火墙阻止了连接。
 
@@ -107,7 +114,8 @@ ms.lasthandoff: 11/07/2017
 
 建议在防火墙中将数据区域的 IP 地址加入允许列表。 可以下载每周更新的 [Microsoft Azure 数据中心 IP 列表](https://www.microsoft.com/download/details.aspx?id=41653)。
 
-**注意：**在 Azure 数据中心 IP 列表中，地址以 [CIDR 表示法](http://whatismyipaddress.com/cidr)列出。 例如，10.0.0.0/24 并不表示 10.0.0.0 到 10.0.0.24。
+> [!NOTE]
+> 在 Azure 数据中心 IP 列表中，地址以 [CIDR 表示法](http://whatismyipaddress.com/cidr)列出。 例如，10.0.0.0/24 并不表示 10.0.0.0 到 10.0.0.24。
 
 下面是网关使用的完全限定域名列表。
 
@@ -156,7 +164,7 @@ ms.lasthandoff: 11/07/2017
 **回答：**否。 网关使用与 Azure 服务总线之间的出站连接。
 
 **问题：**如果阻止出站连接，会发生什么情况？ 需要打开什么？  
-**回答：**请查看网关使用的[端口](gateway-reference.md#ports)和主机。
+**回答：**请参阅上面的网关使用端口和主机列表。
 
 **问题：**网关是否必须安装在与数据源相同的计算机上？  
 **回答：**否。 网关使用提供的连接信息连接到数据源。 从这种意义上讲，可将网关视为客户端应用程序。 网关只需能够连接到提供的服务器名称即可。
@@ -206,10 +214,15 @@ ms.lasthandoff: 11/07/2017
 当用户与连接到本地数据源的元素交互时：  
 
 1. 云服务创建一个查询以及用于数据源的加密凭据，然后将该查询发送到队列供网关处理。
+
 2. 网关云服务将分析该查询，并将请求推送到 [Azure 服务总线](https://azure.microsoft.com/documentation/services/service-bus/)。
+
 3. 本地数据网关在 Azure 服务总线中轮询挂起的请求。
+
 4. 网关获取该查询，解密凭据，然后使用这些凭据连接到数据源。
+
 5. 网关将查询发送到数据源以便执行。
+
 6. 结果将从数据源发回到网关，然后发送到云服务。 服务随后使用结果。
 
 ## <a name="troubleshooting"></a>故障排除
@@ -225,15 +238,15 @@ ms.lasthandoff: 11/07/2017
 
 **安装程序日志**
 
-    %localappdata%\Temp\On-premises_data_gateway_*.log
+%localappdata%\Temp\On-premises_data_gateway_*.log
 
 **配置日志**
 
-    %localappdata%\Microsoft\on-premises data gateway\GatewayConfigurator*.log
+%localappdata%\Microsoft\on-premises data gateway\GatewayConfigurator*.log
 
 **企业网关服务日志**
 
-    C:\Users\PBIEgwService\AppData\Local\Microsoft\on-premises data gateway\Gateway*.log
+C:\Users\PBIEgwService\AppData\Local\Microsoft\on-premises data gateway\Gateway*.log
 
 **事件日志**
 
@@ -243,4 +256,3 @@ ms.lasthandoff: 11/07/2017
 
 #### <a name="fiddler-trace"></a>Fiddler 跟踪
 [Fiddler](http://www.telerik.com/fiddler) 是 Telerik 提供的一个免费工具，可以监视 HTTP 流量。  可在客户端计算机中查看 Power BI 服务前前后后的活动。 此工具可显示错误和其他相关信息。
-

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 6af28020810394c90c86f87fc40e3cbe9c75a877
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 794263448bc067ef8bf44ae46480865c56fdbdf8
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>了解 PowerApps 中的表和记录
 可以创建一个应用，用于访问 Microsoft Excel、SharePoint、SQL Server 以及在记录和表中存储数据的其他多个源中的信息。 若要最有效地处理此类数据，请查看这些结构的基本概念。
@@ -63,7 +63,8 @@ ms.lasthandoff: 11/07/2017
 
 在其他工具中，列可能称为“字段”。
 
-注意：对于列名称带空格的 SharePoint 和 Excel 数据源，PowerApps 会将空格替换为“\_x0020\_”。 例如，如果 SharePoint 或 Excel 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
+> [!NOTE]
+> 对于列名称带空格的 SharePoint 和 Excel 数据源，PowerApps 会将空格替换为“\_x0020\_”。 例如，如果 SharePoint 或 Excel 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
 
 ### <a name="table"></a>表
 表由一条或多条记录组成，每条记录包含多个字段，字段包含记录中的一致名称。
@@ -96,7 +97,8 @@ ms.lasthandoff: 11/07/2017
    
     默认情况下，该库显示名为 **TextualGallerySample** 的表中的占位符文本。 库的 **[Items](controls/properties-core.md)** 属性将自动设置为该表。
    
-    **注意：**为方便演示，某些控件已重新排列并扩大。
+    > [!NOTE]
+> 为方便演示，已重新排列并放大一些控件。
    
     ![](media/working-with-tables/gallery-items.png)
 2. 以下示例未将 **[Items](controls/properties-core.md)** 属性设置为表的名称，而是设置为将表名称包含为参数的公式：<br>
@@ -149,7 +151,9 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 
 1. 添加一个按钮，然后将其 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：<br>
     Collect( SelectedRecord, Gallery1.Selected )
+
 2. 如果不选择该按钮，请单击将它选中，然后再次单击即可运行该公式。
+
 3. 在“文件”菜单中选择“集合”。
 
 ![](media/working-with-tables/selected-collection.png)
@@ -159,6 +163,7 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 选择记录后，可以使用 **.** 运算符从中提取单个字段 。
 
 1. 按 Esc 键返回到默认工作区，然后在库下面添加一个标签。
+
 2. 将标签的“[Text](controls/properties-core.md)”属性设置为以下公式：<br>
     Gallery.Selected.Heading
    
@@ -232,8 +237,8 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 ### <a name="disambiguation"></a>消除歧义
 使用记录范围添加的字段名称将替代应用中来自其他位置的同一名称。  在此情况下，仍可使用 [**@** 消除歧义](functions/operators.md)运算符访问来自记录范围外部的值：
 
-* 若要访问来自嵌套记录范围的值，请使用 **@** 运算符，其中所操作的表名称使用模式 ***表*[@*FieldName*]**。  
-* 若要访问全局值，如数据源、集合和上下文变量，请使用模式 **[@*ObjectName*]** （无需指派表）。
+* 若要访问来自嵌套记录作用域的值，请使用 **@** 运算符，其中所操作的表名称使用模式 **Table*[@*FieldName**]**。  
+* 若要访问全局值，如数据源、集合和上下文变量，请使用模式 ***[@*ObjectName**]**（无需指派表）。
 
 如果所操作的表是一个表达式，例如 **Filter( *table*, ... )**，则不能使用消除歧义运算符。  只有最里面的记录范围可以在不使用消除歧义运算符的情况下从此表表达式访问字段。
 

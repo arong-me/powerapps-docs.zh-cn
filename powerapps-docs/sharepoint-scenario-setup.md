@@ -13,16 +13,17 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/12/2017
+ms.date: 12/19/2017
 ms.author: mblythe
-ms.openlocfilehash: 35c6e2b7ddadc0ff907ce34986accdd11a794dd4
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ad9033b51142d1bb6b014abe0cc049a0b5c27ee5
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-microsoft-flow-and-power-bi"></a>创建列表以便将 SharePoint Online 与 PowerApps、Microsoft Flow 和 Power BI 集成
-注意：本文属于将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> [!NOTE]
+> 本文属于介绍如何将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
 SharePoint 具有大量共享和协作功能，但对于此方案，我们将重点关注其中一种功能，即 [SharePoint 列表](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7)。 列表就是一系列可以与团队成员和其他网站用户共享的数据。 我们将回顾一下用于此方案的列表，以便你可以在自己的 SharePoint Online 网站中创建列表。
 
@@ -39,7 +40,8 @@ SharePoint 具有大量共享和协作功能，但对于此方案，我们将重
 | EstimatedDays |Number |将申请者的预计天数与项目经理的预计天数以及实际天数进行比较 |
 | Approved |单行文本 |值：pending、yes、no |
 
-注意：我们还使用“ID”列，此列由 SharePoint 生成，并且默认隐藏。 为简单起见，我们使用基本的数据类型，但实际应用可能会使用更为复杂的类型，如“Requestor”列的“Person or Group”类型。 若要了解 PowerApps 支持的数据类型，请参阅[从 Microsoft PowerApps 到 SharePoint 的连接](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/#known-issues)。
+> [!NOTE]
+> 还使用由 SharePoint 生成且默认隐藏的“ID”列。 为简单起见，我们使用基本的数据类型，但实际应用可能会使用更为复杂的类型，如“Requestor”列的“Person or Group”类型。 若要了解 PowerApps 支持的数据类型，请参阅[从 Microsoft PowerApps 到 SharePoint 的连接](connections/connection-sharepoint-online.md#known-issues)。
 
 第二个列表是“项目详细信息”列表，用于跟踪所有已获准项目的详细信息，如已分配的项目经理。
 
@@ -58,12 +60,15 @@ SharePoint 具有大量共享和协作功能，但对于此方案，我们将重
 ## <a name="step-2-create-and-review-the-lists"></a>第 2 步：创建并检查列表
 若要继续完成此方案，需要创建两个 SharePoint 列表，并在其中填充示例数据。 为此，我们将介绍如何创建列表，并在其中粘贴示例数据。 请确保已从[下载包](https://aka.ms/o4ia0f)获取 Excel 文件。
 
-注意：在这一步中，使用 Internet Explorer。
+> [!NOTE]
+> 在这一步中，使用 Internet Explorer。
 
 ### <a name="create-the-lists"></a>创建列表
+
 1. 在 Internet Explorer 中，依次单击或点击 SharePoint 网站上的“新建”和“列表”。
    
     ![新建 SharePoint 列表](./media/sharepoint-scenario-setup/01-01-01-new-list.png)
+
 2. 输入名称“项目申请”，再单击或点击“创建”。
    
     ![指定新列表的名称](./media/sharepoint-scenario-setup/01-01-02-create-list.png)
@@ -73,12 +78,13 @@ SharePoint 具有大量共享和协作功能，但对于此方案，我们将重
     ![“项目申请”列表](./media/sharepoint-scenario-setup/01-01-03-initial-list.png)
 
 ### <a name="add-columns-to-the-list"></a>向列表添加列
+
 1. 依次单击或点击 ![“新建项”图标](./media/sharepoint-scenario-setup/icon-new.png) 和“单行文本”。
    
     ![添加单行文本字段](./media/sharepoint-scenario-setup/01-01-04-add-column.png)
-2. 输入名称“Description”，再单击或点击“创建”。
+
+2. 输入名称“Description”，再单击或点击“保存”。
    
-    ![创建“Description”列](./media/sharepoint-scenario-setup/01-01-05-description-column.png)
 3. 对列表中的其他列重复执行第 1 步 和第 2 步 ：
    
    1. “Single line of text”>“ProjectType”
@@ -106,23 +112,37 @@ SharePoint 具有大量共享和协作功能，但对于此方案，我们将重
 正如本系列教程简介部分中所述，我们在[下载包](https://aka.ms/o4ia0f)中添加了两个示例应用和一个报表。 可以在不使用这些示例的情况下完成此方案，但若要使用示例，必须更新与 SharePoint 列表的连接。 更新为使用你自己的列表（而不是我们的列表）作为数据源。
 
 ### <a name="update-connections-for-the-sample-apps"></a>为示例应用更新连接
-1. 在 PowerApps Studio 中打开“project-management-app.msapp”。
-2. 单击或点击“允许”，以便 PowerApps 可以使用 SharePoint。
-3. 在功能区中的“视图”选项卡上，单击或点击“数据源”。
-   
+
+1. 在[PowerApps Studio](https://create.powerapps.com/studio/)，单击或点击**打开**的左窗格中。 
+
+2. 单击或点击“浏览”，再打开下载的“project-management-app.msapp”文件。
+
+3. 单击或点击“允许”，以便 PowerApps 可以使用 SharePoint。
+
+4. 在功能区中的“视图”选项卡上，单击或点击“数据源”。
+
     ![PowerApps 数据源](./media/sharepoint-scenario-setup/01-03-01-data-sources.png)
-4. 在右侧窗格中，依次单击或点击“项目详细信息”旁边的省略号 (...) 和“删除”。
+5. 在“数据”面板中，依次单击或点击“项目详细信息”旁边的省略号 (...) 和“删除”。
    
     ![删除“项目详细信息”数据源](./media/sharepoint-scenario-setup/01-03-02-remove.png)
-5. 在右侧窗格中，单击或点击“添加数据源”。
+6. 单击或点击“添加数据源”。
    
     ![添加数据源](./media/sharepoint-scenario-setup/01-03-03-add.png)
-6. 单击或点击“新建连接”。
+
+7. 接下来，将介绍两种连接到列表的方式，具体取决于 PowerApps 是否已建立 SharePoint 连接： 
+
+    * 如果已看到 SharePoint 连接，请单击或点击此连接。
+
+        ![现有连接](./media/sharepoint-scenario-setup/01-03-03aa-existing-connection.png)
+
+    * 如果看不到 SharePoint 连接，请单击或点击“新建连接”。
+
+        ![新建连接](./media/sharepoint-scenario-setup/01-03-03a-new-connection.png)
+
+        然后，依次单击或点击“SharePoint”和“创建”。
    
-    ![新建连接](./media/sharepoint-scenario-setup/01-03-03a-new-connection.png)
-7. 依次单击或点击“SharePoint”和“连接”。
-   
-    ![SharePoint 连接](./media/sharepoint-scenario-setup/01-03-03b-sharepoint.png)
+        ![SharePoint 连接](./media/sharepoint-scenario-setup/01-03-03b-sharepoint.png)
+
 8. 输入包含你创建的列表的 SharePoint Online 网站 URL，再单击或点击“前往”。
    
     ![SharePoint URL](./media/sharepoint-scenario-setup/01-03-03c-sharepoint-url.png)
@@ -130,30 +150,40 @@ SharePoint 具有大量共享和协作功能，但对于此方案，我们将重
    
     ![“项目详细信息”列表](./media/sharepoint-scenario-setup/01-03-03d-project-details.png)
    
-    此时，右侧窗格中的“数据源”选项卡显示你创建的连接。
+    此时，“数据”面板显示所创建的连接。
    
     ![数据源](./media/sharepoint-scenario-setup/01-03-03e-data-sources.png)
-10. 在右侧窗格中，依次单击或点击“项目详细信息”旁边的省略号 (...) 和“刷新”。
+
+10. 依次单击或点击“项目详细信息”旁边的省略号 (...) 和“刷新”。
     
     ![刷新“项目详细信息”数据源](./media/sharepoint-scenario-setup/01-03-02-remove.png)
-11. 单击右上角的  ![“运行应用”图标](./media/sharepoint-scenario-setup/icon-run-arrow.png) ，以运行应用并确保连接能够正常工作。
+
+11. 单击右上角的  ![“运行应用”图标](./media/sharepoint-scenario-setup/icon-run-arrow.png) 以运行应用，并确保连接有效。
+
+12. 单击或点击“文件”，再将应用保存到云中。 
+
 12. 使用“项目申请”列表，对“project-requests-app.msapp”重复执行此部分中的步骤。
 
 ### <a name="update-connections-for-the-sample-report"></a>为示例报表更新连接
 1. 在 Power BI Desktop 中打开“project-analysis.pbix”。
+
 2. 在功能区的“开始”选项卡上，依次单击或点击“编辑查询”和“数据源设置”。
    
     ![编辑查询](./media/sharepoint-scenario-setup/01-03-04-edit-queries.png)
+
 3. 单击或点击“更改源”。
    
     ![数据源设置](./media/sharepoint-scenario-setup/01-03-05-settings.png)
-4. 输入你的 SharePoint Online 网站 URL，再单击或点击“确定”。
+
+4. 输入 SharePoint Online 网站 URL，再依次单击或点击“确定”和“关闭”。
    
     ![SharePoint 列表 URL](./media/sharepoint-scenario-setup/01-03-06-list-url.png)
+
 5. 此时，Power BI Desktop 在功能区下显示横幅，以便可以应用更改并导入新源中的数据。 单击或点击“应用更改”。
    
     ![应用查询更改](./media/sharepoint-scenario-setup/01-03-07-apply.png)
-6. 使用组织帐户（用于访问 SharePoint Online 的帐户）登录，再单击或点击“连接”。
+
+6. 使用 Microsoft 帐户（用于访问 SharePoint Online 的帐户）登录，再单击或点击“连接”。
    
     ![连接 SharePoint Online](./media/sharepoint-scenario-setup/01-03-08-connect.png)
 

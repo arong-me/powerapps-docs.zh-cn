@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2017
 ms.author: archanan
-ms.openlocfilehash: f99c293184a33ea204f21462badb5e6eb498ee40
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 0d46a203c6381285c281e745dae8554896aee95a
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>从 PowerApps 连接到 Twitter
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -30,9 +30,7 @@ ms.lasthandoff: 11/07/2017
 
 本主题演示如何创建 Twitter 连接，如何在应用中使用 Twitter 连接，并列出可用的函数。
 
-&nbsp;
-
-[!INCLUDE [connection-requirements](../../includes/connection-requirements.md)]
+[!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
 ## <a name="connect-to-twitter"></a>连接到 Twitter
 1. 打开 PowerApps，选择“新建”，然后创建一个“空白应用”。 选择手机或平板电脑布局。 平板电脑布局为你提供了多个工作区：  
@@ -72,7 +70,8 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
      
        库控件将自动显示键入的 Twitter 用户名的推文。
      
-     **提示**：部分公式使用 **maxResults** 参数显示时间线中最新推文的 *x* 数量。
+     > [!TIP]
+> 部分公式使用 maxResults 参数显示时间线中最新推文的 x 数量。
 3. 将库的 **Items** 属性设置为 `Twitter.HomeTimeline()`。
    
     选择库后，右侧窗格显示该库的选项。
@@ -100,7 +99,8 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
      
        库控件自动显示关注你所键入的 Twitter 用户名的用户。
      
-     **提示**：部分公式使用 **maxResults** 参数显示时间线中最新推文的 *x* 数量。
+     > [!TIP]
+> 部分公式使用 maxResults 参数显示时间线中最新推文的 x 数量。
 2. 将库的 **Items** 属性设置为 `Twitter.MyFollowers()`。
    
     选择库后，右侧窗格显示该库的选项。
@@ -158,7 +158,8 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
    
     或者，可以使用**输入文本**控件指定搜索项，如本主题中所述。
    
-    **提示**使用 maxResults 可显示前五个结果：  
+    > [!TIP]
+> 使用 maxResults 可显示前五个结果：  
    
     `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5}).TweetText`
 2. 将库的 **Items** 属性设置为 `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5})`。

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/02/2017
 ms.author: sharik
-ms.openlocfilehash: c581abad70012eb66413a31bd765437df69b7a70
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ce0f0693298977ca991636d0a9bf18e238e8368e
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="customize-a-gallery-layout-in-powerapps"></a>在 PowerApps 中自定义库布局
 在 PowerApps 中自动生成应用后，自定义默认显示的浏览屏幕。 指定要使用的布局、要显示的列，以及排序和筛选记录时使用的列。
@@ -27,7 +27,7 @@ ms.lasthandoff: 11/07/2017
 * 有关如何自动生成应用的信息，请参阅 [生成应用以管理 SharePoint 列表中的数据](app-from-sharepoint.md)。
 * 如果不熟悉 PowerApps，请参阅 [PowerApps 简介](getting-started.md)。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 你可以查看本教程，了解一些基本概念，也可以严格按照以下步骤完成操作。
 
 1. [创建连接](connect-to-sharepoint.md)（从 PowerApps 到 SharePoint）。
@@ -97,7 +97,8 @@ ms.lasthandoff: 11/07/2017
     编辑栏现在应包含类似于以下示例的公式：<br>
     **SortByColumns(Filter(AppGen, StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))**
    
-    **注意**：在 **TextSearchBox** 之后出现的数字可能较大，具体取决于之前执行的操作。 但是，公式应仍会按预期运行。
+    > [!NOTE]
+> TextSearchBox 后面的数字可能较大，具体视之前执行的操作而定。 但是，公式应仍会按预期运行。
 
 ## <a name="test-sorting-and-searching"></a>测试排序和搜索
 1. 按 F5（或者单击或点击靠近右上角的播放按钮）即可打开预览模式。

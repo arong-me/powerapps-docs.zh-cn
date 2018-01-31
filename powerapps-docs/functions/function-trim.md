@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/09/2016
 ms.author: gregli
-ms.openlocfilehash: 9f829e8c98b03bc47bc36f26273267265819f4ae
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: b40f44f8bdcb319191221d0f2cee39e15d5b3b49
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="trim-and-trimends-functions-in-powerapps"></a>PowerApps 中的 Trim 和 TrimEnds 函数
 从文本字符串中删除多余空格。
@@ -60,5 +60,6 @@ ms.lasthandoff: 11/07/2017
 | **Trim(&nbsp;Spaces&nbsp;)** |修剪 **Spaces** 集合中每个字符串开头和结尾的所有空格，以及该集合中每个字符串内的多余空格。 |<style> img { max-width: none } </style> ![](media/function-trim/output-trim.png) |
 | **TrimEnds(&nbsp;Spaces&nbsp;)** |修剪 **Spaces** 集合中每个字符串开头和结尾的所有空格。 |<style> img { max-width: none } </style> ![](media/function-trim/output-trimends.png) |
 
-**请注意**：如果通过在“文件”菜单上单击或点击“集合”来显示集合，则不会出现多余的空格。 若要验证字符串长度，请使用 **[Len](function-len.md)** 函数。
+> [!NOTE]
+> 如果通过单击或点击“文件”菜单上的“集合”来显示集合，则不会出现多余空格。 若要验证字符串长度，请使用 **[Len](function-len.md)** 函数。
 

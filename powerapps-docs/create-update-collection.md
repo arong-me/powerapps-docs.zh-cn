@@ -14,18 +14,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/30/2015
 ms.author: lonu
-ms.openlocfilehash: f0fc171930e190e9530782ee93b27644e36a5978
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1c77ce03c92925225f8b16bd1d3bbb7083749cc9
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-and-update-a-collection-in-your-app"></a>创建和更新应用中的集合
 集合用于存储可在应用中使用的数据。 集合是一组类似的项。 例如，你会创建“MyImages”集合来存储公司出售的所有产品的图像。 在 PowerApps 内，可以添加“MyImages”集合，然后创建一个应用来显示这些产品的所有图片。 再比如，可以创建“PriceList”集合，列出所有产品及其价格。
 
 可以在 PowerApps 中创建和使用集合。 现在就开始吧。
 
-### <a name="prerequisites"></a>必备组件
+### <a name="prerequisites"></a>先决条件
 * [注册](signup-for-powerapps.md)、[安装](http://aka.ms/powerappsinstall) PowerApps，然后打开该程序，并提供注册所用的同一凭据进行登录。
 * 在 PowerApps 中创建一个应用，或打开一个现有应用。
 * 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
@@ -85,14 +85,16 @@ ms.lasthandoff: 11/07/2017
 5. 将“City”和“States”文本控件移到能够同时容纳这两个控件的位置上：  
    ![][10]  
    
-    **注意**：可以将“Text Input”替换成“City”或“State”，如上图中所示。  
+    > [!NOTE]
+> 可以将“文本输入”替换为“城市”或“州/省/自治区/直辖市”，如上图所示。  
 6. 选择“插入”选项卡上的“按钮”。 将其“[OnSelect](controls/properties-core.md)”属性设为以下函数：  
    ```Collect(Destinations, {Cities:City!Text, States:States!Text})```  
    
     具体设置应如下所示：  
     ![][11]  
    
-    **注意**：可以使用同一函数向此集合添加其他列。 例如，可以再添加一个“Country”文本输入控件，从而添加“Countries”列：
+    > [!NOTE]
+> 可以使用同一函数向此集合添加其他列。 例如，可以再添加一个“Country”文本输入控件，从而添加“Countries”列：
    
     `Collect(Destinations, {Cities:City!Text, States:States!Text}, {Countries:Country!Text})`
 7. 将按钮控件重命名为“AddCityStateButton”，然后将其“[Text](controls/properties-core.md)”属性设为“Add City and State”：  
@@ -114,7 +116,7 @@ ms.lasthandoff: 11/07/2017
 ### <a name="import-the-price-list-and-create-the-collection"></a>导入价格列表并创建集合
 1. 下载“[PriceList](http://pwrappssamples.blob.core.windows.net/samples/PriceList.zip)”zip 文件。
 2. 在“开始”选项卡上，添加一个新屏幕。
-3. 在“插入”选项卡上，依次选择“控件”和“导入”：  
+3. 在“插入”选项卡上，选择“控件”，然后选择“导入”：  
    ![][14]  
 4. 选择“操作”选项卡上的“OnSelect”。 输入以下函数：  
    
@@ -154,7 +156,8 @@ ms.lasthandoff: 11/07/2017
    
     ```Collect(OrderList, {Name:PriceGallery!Selected!Name, Qty:OrderQty!Value, Cost:OrderQty!Value*LookUp(PriceList, PriceGallery!Selected!Name in Name, Price)});SaveData(OrderList, "orderfile")```  
    
-    **注意：**稍后在此过程中选择这个按钮时，将创建并保存“OrderList”集合。 此集合中包含你在库中输入的产品名称、使用滑块选择的产品数量，以及通过将产品数量与价格相乘计算得出的总成本。
+    > [!NOTE]
+> 稍后在此过程中选择这个按钮时，将创建并保存“OrderList”集合。 此集合中包含你在库中输入的产品名称、使用滑块选择的产品数量，以及通过将产品数量与价格相乘计算得出的总成本。
 4. 选择“屏幕”选项卡，然后将其“[OnVisible](controls/control-screen.md)”属性设为以下表达式：  
    
     ```If(IsEmpty(PriceList), LoadData(PriceList, "pricefile"));If(IsEmpty(OrderList), LoadData(OrderList, "orderfile"))```

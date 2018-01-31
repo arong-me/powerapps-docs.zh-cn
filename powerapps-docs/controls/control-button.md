@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 86329003ee2f5e6e4ffbe91714be290eacd04ad7
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: dfb50597af4012fe6145664fb645439a54686825
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="button-control-in-powerapps"></a>PowerApps 中的按钮控件
 用户单击或点击后可与应用进行交互的控件。
@@ -77,7 +77,7 @@ ms.lasthandoff: 11/07/2017
 
 **[PaddingRight](properties-size-location.md)** - 控件中的文本与该控件的右边缘之间的距离。
 
-**[PaddingTop](properties-size-location.md)** - 控件中的文本与此控件的上边缘之间的距离。
+**[PaddingTop](properties-size-location.md)** – 控件中的文本与该控件上边缘之间的距离。
 
 Pressed - 如果用户按下控件，值为“true”，否则值为“false”。
 
@@ -101,7 +101,7 @@ Pressed - 如果用户按下控件，值为“true”，否则值为“false”�
 
 **[TabIndex](properties-accessibility.md)** - 设置为非零值时，在运行时自定义控件的选项卡顺序。
 
-**[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
+**[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
 
 **[Underline](properties-text.md)** – 在文本下方显示的线是否在控件上显示。
 
@@ -111,7 +111,7 @@ Pressed - 如果用户按下控件，值为“true”，否则值为“false”�
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
@@ -145,7 +145,8 @@ Pressed - 如果用户按下控件，值为“true”，否则值为“false”�
    
     **UpdateContext({Total:Total + Value(Source.Text)});<br>UpdateContext({ClearInput: ""})**
    
-    注意：用分号“;”分隔多个公式。
+    > [!NOTE]
+> 请用分号“;”隔开多个公式。
 3. 将“源”的“[Default](properties-core.md)”属性设置为“ClearInput”。
 4. 按 F5，再通过同时添加多个数字来测试应用。
 
@@ -161,7 +162,8 @@ Pressed - 如果用户按下控件，值为“true”，否则值为“false”�
 #### <a name="change-a-buttons-shape"></a>更改按钮形状
 默认情况下，PowerApps 创建具有圆角的矩形“按钮”控件。 可以设置“[Height](properties-size-location.md)”、“[Width](properties-size-location.md)”和“[Radius](properties-size-location.md)”属性，对“按钮”控件的形状进行基本修改。
 
-注意：“[图标和形状](control-shapes-icons.md)”提供了多种设计，并可执行“按钮”控件计算的一些基本函数。 不过，“[图标和形状](control-shapes-icons.md)”没有“[Text](properties-core.md)”属性。
+> [!NOTE]
+> [“图标”和“形状”](control-shapes-icons.md)提供了各种设计，并可执行“按钮”控件执行的一些基本函数。 不过，“[图标和形状](control-shapes-icons.md)”没有“[Text](properties-core.md)”属性。
 
 1. 添加“按钮”控件，并将“[Height](properties-size-location.md)”和“[Width](properties-size-location.md)”属性设置为“300”，以生成大方形按钮。
 2. 修改“[RadiusTopLeft](properties-size-location.md)”、“[RadiusTopRight](properties-size-location.md)”、“[RadiusBottomLeft](properties-size-location.md)”，和“[RadiusBottomRight](properties-size-location.md)”属性，以调整每个角的曲率。 下面的示例展示了一些不同形状的按钮，每种都在 300x300 方形按钮基础之上生成：
@@ -177,7 +179,8 @@ Pressed - 如果用户按下控件，值为“true”，否则值为“false”�
 
 也可以将按钮的“[HoverFill](properties-color-border.md)”属性设置为包含“[ColorValue](../functions/function-colors.md)”函数（而不是“[ColorFade](../functions/function-colors.md)”函数）的公式，从而指定“按钮”的颜色，如 ColorValue("Red") 所示。
 
-注意：颜色值可以是任意 CSS 颜色定义（可以是名称，也可以是十六进制值）。
+> [!NOTE]
+> 颜色值可以是任意 CSS 颜色定义（可以是名称，也可以是十六进制值）。
 
 * 在创建的一个按钮中，将“[ColorFade](../functions/function-colors.md)”函数替换为“[ColorValue](../functions/function-colors.md)”函数，并观察效果。
 

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/09/2017
 ms.author: archanan
-ms.openlocfilehash: 9336df54dab2f95114367267408aec6b500a131f
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 7739607b103d98b934805e62cb9a2bfdf1cc14e6
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="manage-your-connections-in-powerapps"></a>管理 PowerApps 中的连接
 在 [powerapps.com](https://web.powerapps.com) 中，创建从 PowerApps 到一个或多个数据源的连接、删除连接或更新其凭据。
@@ -35,7 +35,7 @@ ms.lasthandoff: 11/07/2017
 * 发送推文。
 * 连接到 Twilio，并从应用发送短信。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 1. [注册](signup-for-powerapps.md) PowerApps。
 2. 使用注册所用的同一凭据登录到 [powerapps.com](https://web.powerapps.com)。
 
@@ -54,7 +54,8 @@ ms.lasthandoff: 11/07/2017
 * 更新现有应用，或从头开始创建应用，如 [添加连接](add-data-connection.md) 中所述。
 * 打开由其他用户创建的应用并 [与你共享](share-app.md)。
 
-**注意**：如果要改用 PowerApps Studio，请打开“文件”菜单，然后单击或点击“连接”，随即会打开 [powerapps.com](https://web.powerapps.com)，你可以在其中创建和管理连接。
+> [!NOTE]
+> 若要改用 PowerApps Studio，请打开“文件”菜单，再单击或点击“连接”，随即会打开 [powerapps.com](https://web.powerapps.com)，可以在其中创建和管理连接。
 
 ## <a name="create-a-new-connection"></a>创建新连接
 1. 如果尚未这样做，请登录到 [powerapps.com](https://web.powerapps.com)。

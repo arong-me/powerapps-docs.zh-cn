@@ -15,18 +15,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2016
 ms.author: archanan
-ms.openlocfilehash: 39152b27c8d00a1ee6233dabbffd59b60112dfd5
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: a2b0f13e2920d456dfa4795b38e35212006dc7e4
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>从 PowerApps 连接到 SQL Server
 ![SQL Server 图标](./media/connection-azure-sqldatabase/sqlicon.png)
 
 在 Azure 或本地数据库中连接到 SQL Server，以便在 PowerApps 中显示其中的信息。
 
-**先决条件**
+## <a name="prerequisites"></a>先决条件
 
 * [注册](../signup-for-powerapps.md) PowerApps、[安装](http://aka.ms/powerappsinstall) PowerApps Studio，打开该程序，然后提供过去注册所用的同一凭据进行登录。
 * 使用主键收集包含至少一个表的数据库的以下信息：
@@ -39,7 +39,8 @@ ms.lasthandoff: 11/07/2017
     如果没有此信息，请询问要使用的数据库的管理员。
 * 对于本地数据库，标识与你共享的[数据网关](../gateway-management.md)（或创建一个数据网关）。
   
-    **注意**：只能在用户的[默认环境](../working-with-environments.md)中创建和使用网关和本地连接。
+    > [!NOTE]
+> 只能在用户的[默认环境](../working-with-environments.md)中创建和使用网关和本地连接。
 
 ## <a name="generate-an-app-automatically"></a>自动生成应用
 1. 在 PowerApps Studio 中，单击或点击“文件”菜单（沿左边缘）上的“新建”。
@@ -59,7 +60,8 @@ ms.lasthandoff: 11/07/2017
      
        ![连接到本地数据库](./media/connection-azure-sqldatabase/connect-onprem.png)
      
-       **注意**：如果没有网关，可[安装网关](../gateway-reference.md)，然后单击或点击“刷新网关列表”。
+       > [!NOTE]
+> 如果没有网关，可以先[安装网关](../gateway-reference.md)，再单击或点击“刷新网关列表”。
 6. 单击或点击“连接”。
 7. 单击或点击“选择数据集”下的选项，单击或点击“选择表”下的选项，然后单击或点击“连接”。
    
@@ -81,7 +83,8 @@ ms.lasthandoff: 11/07/2017
      
        ![连接到 Azure 中的数据库](./media/connection-azure-sqldatabase/connect-onprem-portal.png)
      
-       **注意**：如果没有网关，可[安装网关](../gateway-reference.md)，然后单击或点击顺时针图标来刷新列表。
+       > [!NOTE]
+> 如果没有网关，可以先[安装网关](../gateway-reference.md)，再单击或点击顺时针图标来刷新列表。
 5. 单击或点击“创建”以创建连接。
 6. 通过使用类似[从头开始创建应用](../get-started-create-from-blank.md)中介绍的技术来创建应用。
 
@@ -101,7 +104,8 @@ ms.lasthandoff: 11/07/2017
      
        ![连接到 Azure 中的数据库](./media/connection-azure-sqldatabase/connect-onprem-fromblank.png)
      
-       **注意**：如果没有网关，可[安装网关](../gateway-reference.md)，然后单击或点击圆形图标来刷新列表。
+       > [!NOTE]
+> 如果没有网关，可以先[安装网关](../gateway-reference.md)，再单击或点击圆形图标来刷新列表。
 6. 单击或点击“连接”。
 7. 单击或点击“选择数据集”下的选项。
 8. 在“**选择表**”下，选中一个或多个复选框，然后单击或点击“连接”。

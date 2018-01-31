@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/11/2015
 ms.author: gregli
-ms.openlocfilehash: 51608399a03716972a02d414d47dad46a8676bef
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 2c45649938ad769203cbcab25c8b81689c633657
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="datasourceinfo-function-in-powerapps"></a>PowerApps 中的 DataSourceInfo 函数
 提供[数据源](../working-with-data-sources.md)的相关信息。
@@ -61,11 +61,12 @@ ms.lasthandoff: 11/07/2017
 ## <a name="syntax"></a>语法
 **DataSourceInfo**( *DataSource*, *Information*, *ColumnName* )
 
-* *DataSource* - 必需。 要使用的数据源。
+* *DataSource* – 必需。 要使用的数据源。
 * *Information* – 必需。 要检索的信息类型。
 * *ColumnName* – 可选。 对于列级信息，为字符串形式的列名称。 例如，“手机”列将传递为“Phone”（含双引号）。 对于数据源级别的信息，不能使用 ColumnName 自变量。
   
-    注意：对于列名称带空格的 SharePoint 和 Excel 数据源，将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
+    > [!NOTE]
+> 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
 
 ## <a name="examples"></a>示例
 本部分中的示例使用以下名为 **IceCream** 的数据源：

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: f9a4a274146373acd22fd4fdcebf9a83b252958c
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: d9664b490970f7eada757b83d6c9934753af3ad5
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-data-forms-in-microsoft-powerapps"></a>了解 Microsoft PowerApps 中的数据窗体
 添加三种类型的控件，使用户能够浏览记录、显示有关记录的详细信息，以及编辑或创建记录：
@@ -36,7 +36,7 @@ ms.lasthandoff: 11/07/2017
 
 根据本主题中所述，使用公式组合这些控件，以创建整体用户体验。
 
-**先决条件**
+## <a name="prerequisites"></a>先决条件
 
 * [注册](signup-for-powerapps.md)、[安装](http://aka.ms/powerappsinstall) PowerApps，然后打开该程序，并提供注册所用的同一凭据进行登录。
 * 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
@@ -59,7 +59,8 @@ PowerApps 可以根据指定的数据源自动生成应用。 每个应用包含
 
 将库的 **[Items](controls/properties-core.md)** 属性设置为显示库中数据源的记录。 例如，将该属性设置为 **Assets** 可显示使用该名称的数据源中的记录。
 
-**注意**：在生成的应用中，**[Items](controls/properties-core.md)** 默认设置为复杂得多的公式，使用户能够排序和搜索记录。 本主题稍后将介绍如何构建该公式；暂时使用更简单的版本便已足够。
+> [!NOTE]
+> 在生成的应用中，[Items](controls/properties-core.md) 默认设置为更复杂的公式，以便用户能够排序和搜索记录。 本主题稍后将介绍如何构建该公式；暂时使用更简单的版本便已足够。
 
 用户可以选择库上面的“+”符号创建记录，而无需查找要显示或编辑的记录。 添加一个 **[Image](controls/control-image.md)** 控件，在其中显示“+”符号，然后将其 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式，即可创建这种效果：
 <br>**NewForm( EditForm1 ); Navigate( EditScreen1, None )**
@@ -148,7 +149,8 @@ PowerApps 可以根据指定的数据源自动生成应用。 每个应用包含
 ## <a name="identify-test-data"></a>确定测试数据
 为了让本主题发挥最大的参考价值，可以从一个可以试验的数据源着手。 该数据源应该包含可以任意读取和更新的测试数据。
 
-注意：如果使用列名称带空格的 SharePoint 列表或 Excel 表作为数据源，PowerApps 会将空格替换为“\_x0020\_”。 例如，如果 SharePoint 或 Excel 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
+> [!NOTE]
+> 如果使用列名称带空格的 SharePoint 列表或 Excel 表作为数据源，PowerApps 会将空格替换为“\_x0020\_”。 例如，如果 SharePoint 或 Excel 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
 
 若要完全根据原文参考本主题的余下部分，请创建名为“Ice Cream”的 SharePoint 列表，其中包含以下数据：
 
@@ -156,7 +158,8 @@ PowerApps 可以根据指定的数据源自动生成应用。 每个应用包含
 
 * 从头开始创建一个手机应用，并[将其连接到数据源](add-data-connection.md)。
   
-    **注意：**平板电脑中的应用非常相似，但可能需要使用不同的[屏幕布局](#screen-design)，以充分利用多出的屏幕空间。
+    > [!NOTE]
+> 虽然平板电脑应用非常相似，但不妨使用不同的[屏幕布局](#screen-design)，以充分利用多余的屏幕空间。
   
     本主题余下部分中的示例基于名为 **Ice Cream** 的数据源。
 
@@ -201,7 +204,7 @@ PowerApps 可以根据指定的数据源自动生成应用。 每个应用包含
 
 最后，需要将**[显示窗体](controls/control-form-detail.md)**控制连接到**[库](controls/control-gallery.md)**控制，以便查看特定记录的详细信息。  完成设置 **[Item](controls/control-form-detail.md)** 属性后，窗体中将显示库中的第一条记录。
 
-1. 将**[显示窗体](controls/control-form-detail.md)**控制的 **[Item](controls/control-form-detail.md)** 属性设置为 **Gallery1.Selected**。
+* 将**[显示窗体](controls/control-form-detail.md)**控制的 **[Item](controls/control-form-detail.md)** 属性设置为 **Gallery1.Selected**。
    
     所选项的详细信息将显示在窗体中。
    
@@ -209,20 +212,23 @@ PowerApps 可以根据指定的数据源自动生成应用。 每个应用包含
 
 很好！  接下来，我们了解导航：用户如何从库屏幕打开详细信息屏幕，以及从详细信息屏幕打开库屏幕。
 
-1. 在屏幕中添加一个**[按钮](controls/control-button.md)**控件，将其 **[Text](controls/properties-core.md)** 属性设置为显示**[后退](functions/function-navigate.md)**，然后将其 **[OnSelect](controls/properties-core.md)** 属性设置为 **Back()**。
+* 在屏幕中添加一个**[按钮](controls/control-button.md)**控件，将其 **[Text](controls/properties-core.md)** 属性设置为显示**[后退](functions/function-navigate.md)**，然后将其 **[OnSelect](controls/properties-core.md)** 属性设置为 **Back()**。
    
     在用户查看完详细信息后，此公式会将用户返回到库。
 
-![包含后退按钮的 Ice Cream 数据源显示窗体](./media/working-with-forms/viewform-icecream-back.png)
+    ![包含后退按钮的 Ice Cream 数据源显示窗体](./media/working-with-forms/viewform-icecream-back.png)
 
 现在，我们返回到**[库](controls/control-gallery.md)**控件，并在详细信息屏幕中添加一些导航控件。
 
 1. 切换到托管“[库](controls/control-gallery.md)”控件的第一屏，再选择库中第一项内的箭头。
+
 2. 将该形状的 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
    <br>**Navigate( Screen2, None )**
    
     ![包含后退按钮的 Ice Cream 数据源显示窗体](./media/working-with-forms/gallery-icecream-nav-new.png)
+
 3. 按 F5，再在库中选择箭头，以显示项的详细信息。
+
 4. 选择**[后退](functions/function-navigate.md)**按钮返回到产品的库，然后按 Esc。
 
 ## <a name="editing-details"></a>编辑详细信息
@@ -302,12 +308,11 @@ PowerApps 可以根据指定的数据源自动生成应用。 每个应用包含
 
 如果 **[SubmitForm](functions/function-form.md)** 出于任何原因而失败**[编辑窗体](controls/control-form-detail.md)**控件的 **Error** 属性将包含一条向用户显示的错误消息。 用户应该可以参考此信息纠正问题，然后重新提交更改或取消更新。
 
-1. 在“编辑和创建”屏幕中，添加“[标签](controls/control-text-box.md)”控件，然后将它移到“保存”按钮的正下方。
-   
-    用户选择此控件保存更改后，任何错误将显而易见。
+1. 在“编辑和创建”屏幕中，添加“[标签](controls/control-text-box.md)”控件，然后将它移到“保存”按钮的正下方。 用户选择此控件保存更改后，任何错误将显而易见。
+
 2. 将“[标签](controls/control-text-box.md)”控件的“[Text](controls/properties-core.md)”属性设置为显示“Form1.Error”。
 
-![包含添加的“编辑”按钮的显示窗体](./media/working-with-forms/edit-icecream-error.png)
+    ![包含添加的“编辑”按钮的显示窗体](./media/working-with-forms/edit-icecream-error.png)
 
 在 PowerApps 基于数据生成的应用中，此控件的 **[AutoHeight](controls/control-text-box.md)** 属性设置为 *true*，以便在未出错时不会占用空间。 考虑到出错时此控件会扩大，**[编辑窗体](controls/control-form-detail.md)**控件的 **[Height](controls/properties-size-location.md)** 和 **[Y](controls/properties-size-location.md)** 属性也会动态调整。 若要了解其他详细信息，可基于现有数据生成一个应用并查看这些属性。 未发生错误时，用于显示错误的文本框控件很短，可能需要打开“高级”视图（位于“视图”选项卡上）才能选择此控制。
 
@@ -319,9 +324,10 @@ PowerApps 可以根据指定的数据源自动生成应用。 每个应用包含
 每当用户打开应用时，数据源将会刷新，但用户可能想要在不关闭应用的情况刷新库中的记录。 可以添加一个“刷新”按钮，让用户选择它来手动刷新数据：
 
 1. 在包含**[库](controls/control-gallery.md)**控件的屏幕中添加**[按钮](controls/control-button.md)**控件，并将其 **[Text](controls/properties-core.md)** 属性设置为显示“刷新”。
+
 2. 将此控件的 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：<br> **Refresh( 'Ice Cream' )**
 
-![刷新数据源](./media/working-with-forms/browse-icecream-refresh.png)
+    ![刷新数据源](./media/working-with-forms/browse-icecream-refresh.png)
 
 ## <a name="search-and-sort-the-gallery"></a>搜索和排序库
 在 PowerApps 基于数据生成的应用中，我们忘记了讨论“浏览”屏幕顶部显示的两个控件。 用户可以使用这些控件搜索一个或多个记录，以及按升序和/或降序为记录列表排序。

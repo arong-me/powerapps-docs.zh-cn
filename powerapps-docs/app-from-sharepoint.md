@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/05/2017
 ms.author: sharik
-ms.openlocfilehash: 5d47366fafa137d8e5b0311f8820b11ff60f648a
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 36a9188615c14262de0bfdea21d58010a053e01f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="generate-an-app-to-manage-data-in-a-sharepoint-list"></a>生成应用以管理 SharePoint 列表中的数据
-[!VIDEO nb:cid:UUID:34ccfd46-7826-49ce-90d8-cf6a144b6968]
+
 
 
 在 PowerApps 中，无论站点是在本地还是云中，都可以自动生成三屏应用来管理 SharePoint 列表中的数据。
@@ -33,7 +33,8 @@ ms.lasthandoff: 11/07/2017
 
 截至本文，PowerApps 支持自定义列表，但不支持自定义库。 此外，还可以在某些类型的列（例如**选项**和**图片**）中显示数据，但无法更新该数据。 有关详细信息，请参阅 [已知问题](connections/connection-sharepoint-online.md#known-issues)。
 
-注意：如果任何列名称包含空格，PowerApps 会将空格显示为“\_x0020\_”。 例如，“Column Name”显示为“Column_x0020_Name”。
+> [!NOTE]
+> 如果任何列名称包含空格，PowerApps 会将空格替换为“\_x0020\_”。 例如，“Column Name”显示为“Column_x0020_Name”。
 
 ## <a name="specify-a-sharepoint-app"></a>指定 SharePoint 应用
 1. 如果尚未创建 [到 SharePoint 的连接](connect-to-sharepoint.md)，请创建该连接。
@@ -52,7 +53,8 @@ ms.lasthandoff: 11/07/2017
 ## <a name="specify-a-site-and-a-list"></a>指定站点和列表
 1. 在“**连接到 SharePoint 站点**”下，键入或粘贴包含要使用列表的站点的 URL，然后单击或点击“**转到**”。
    
-    **注意**：请勿在 URL 中加入特定列表。
+    > [!NOTE]
+> 请勿在 URL 中添加特定列表。
    
     ![](./media/app-from-sharepoint/specify-site.png)
 2. 在“**选择列表**”下，单击或点击要使用列表的名称。

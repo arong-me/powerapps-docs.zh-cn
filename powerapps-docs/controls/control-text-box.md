@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: c6da4216a4ce2c95f20db322a3ec529299410deb
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4fd0b50796bc8c1ba9574d1c401042e3d10c863c
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="label-control-in-powerapps"></a>PowerApps 中的标签控件
 一个框，显示文本、数字、日期或货币等数据。
@@ -107,7 +107,7 @@ ms.lasthandoff: 11/07/2017
 
 **Wrap** - 太长而无法容纳在标签中的文本是否换到下一行。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
@@ -124,7 +124,8 @@ ms.lasthandoff: 11/07/2017
 * 添加一个标签，然后将“[Text](properties-core.md)”属性设置为如下公式：<br>
   **Today()**
   
-    **请注意：**指定公式时，除非公式的参数是文本字符串，否则不使用引号。 在这种情况下，用双引号将参数（而不是公式）括住。
+    > [!NOTE]
+> 指定公式时，请勿使用引号，除非公式的参数是文本字符串。 在这种情况下，用双引号将参数（而不是公式）括住。
   
     想要了解有关 **[Today](../functions/function-now-today-istoday.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
 

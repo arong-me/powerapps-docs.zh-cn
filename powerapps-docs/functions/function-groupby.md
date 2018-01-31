@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: a3f2698eb0df8861bccf3221f53f5458f6e1b307
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 7f7a3f1add6f91d920ed38308e577d14386f81ec
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>PowerApps 中的 GroupBy 和 Ungroup 函数
 对[表](../working-with-tables.md)[记录](../working-with-tables.md#records)进行分组和取消分组。
@@ -52,14 +52,16 @@ GroupBy( Table, ColumnName1 [, ColumnName2, ... ], GroupColumnName )
 * *ColumnName(s)* - 必需。  作为记录分组依据的表中的列名称。  这些列将变为生成的表中的列。
 * GroupColumnName - 必需。  ColumnName 中不包含的记录数据存储的列名称。
   
-    注意：对于列名称带空格的 SharePoint 和 Excel 数据源，将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
+    > [!NOTE]
+> 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
 
 Ungroup( Table, GroupColumnName )
 
 * *Table* - 必需。 要取消分组的表。
 * GroupColumnName - 必需。 包含使用 **GroupBy** 函数设置的记录数据的列。
   
-    注意：对于列名称带空格的 SharePoint 和 Excel 数据源，将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
+    > [!NOTE]
+> 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
 
 ## <a name="examples"></a>示例
 ### <a name="create-a-collection"></a>创建集合

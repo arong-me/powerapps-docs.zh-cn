@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 4121593bb34fe135262d925ae6c9f381d0fcd9f7
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: e8234526c73f6d55494334a386e8dbd7442c8d62
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>PowerApps 中的编辑窗体和显示窗体控件
 在数据源中显示、编辑和创建记录。
@@ -60,7 +60,8 @@ ms.lasthandoff: 11/07/2017
 
 当两名人员尝试同时更新同一记录时，某些数据源可以检测到这种情况，并将 **ErrorKind** 设置为 **ErrorKind.Conflict**，同时会采取补救措施，使用一个用户所做的更改刷新数据源，并重新应用该用户的更改。
 
-**提示：**如果在窗体上提供“取消”按钮，允许用户放弃正在进行的更改，则请将 **[ResetForm](../functions/function-form.md)** 函数添加到按钮的 **[OnSelect](properties-core.md)** 属性，即使该属性也包含用于更改屏幕的 **[Navigate](../functions/function-navigate.md)** 函数。 否则，该窗体将保留用户所做的更改。
+> [!TIP]
+> 如果在表单上提供“取消”按钮，以允许用户放弃正在进行的更改，请将 [ResetForm](../functions/function-form.md) 函数添加到按钮的 [OnSelect](properties-core.md) 属性，即使此属性也包含用于更改屏幕的 [Navigate](../functions/function-navigate.md) 函数，也不例外。 否则，该窗体将保留用户所做的更改。
 
 ### <a name="layout"></a>布局
 默认情况下，数据卡被置于手机应用的一列和平板电脑应用的三列中。 可以在配置表单时指定表单列数以及数据卡是否应贴靠列。 这些设置不作为属性公开，因为它们仅用于设置数据卡的“X”、“Y”和“Width”属性。
@@ -171,7 +172,7 @@ DisplayMode - 用于表单控件内的数据卡和控件的模式。
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 

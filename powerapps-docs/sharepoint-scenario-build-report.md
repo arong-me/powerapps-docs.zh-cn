@@ -13,20 +13,22 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/12/2017
+ms.date: 01/10/2018
 ms.author: mblythe
-ms.openlocfilehash: c576f71532049405b879cc904c4232e297478cac
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1b22885a6ff97b1ffcf67da291ab89d091863981
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>创建用于分析项目的 Power BI 报表
-注意：本文属于将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> [!NOTE]
+> 本文属于介绍如何将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
 在此任务中，我们将创建以两个 SharePoint 列表为依据的 Power BI 报表。 我们将把列表数据导入 Power BI Desktop 并稍作清理，再进行一些基本数据建模，并创建一组可提供数据信息的视觉对象。
 
-提示：此方案的[下载包](https://aka.ms/o4ia0f)包括该报表的完成版 (project-analysis.pbix)。
+> [!TIP]
+> 这个方案的[下载包](https://aka.ms/o4ia0f)包含此报表的最终版本 (project-analysis.pbix)。
 
 ## <a name="quick-review-of-power-bi-desktop"></a>快速回顾 Power BI Desktop
 在我们深入介绍如何创建报表之前，让我们先来回顾一下 Power BI Desktop。 这是一款功能非常强大的工具，具有许多功能。那么，我们将重点概述此任务将用到的工作区。 Power BI Desktop 有以下三个主要工作区或视图：“报表”视图、“数据”视图和“关系”视图。 Power BI Desktop 还包括在单独窗口中打开的“查询编辑器”。
@@ -93,11 +95,13 @@ ms.lasthandoff: 11/07/2017
 2. 在中间窗格中，选择“FileSystemObjectType”列，再单击或点击“删除列”。
    
     ![删除列](./media/sharepoint-scenario-build-report/05-01-07-remove-column.png)
-3. 删除“Id”列后的两列，即“ServerRedirectedEmbedURL”和“ContentTypeId”列。 提示：使用 Shift 键选择这两列，再单击或点击“删除列”。
+3. 删除“Id”列后的两列，即“ServerRedirectedEmbedURL”和“ContentTypeId”列。 
+> [!TIP]
+> 按 Shift 键选择这两列，再单击或点击“删除列”。
 4. 删除“PMAssigned”列右侧的所有列（共 22 列）。 表应与下图一致：
    
     ![查询编辑器中的“项目详细信息”表](./media/sharepoint-scenario-build-report/05-01-08-table-details.png)
-5. 重复对“项目详细信息”执行的过程，并删除“Approved”列右侧的所有列（共 22 列）。 表应与下图一致：
+5. 重复执行刚才的过程，现在对于“项目请求”，删除 FileSystemObjectType、ServerRedirectedEmbedURL、ContentTypeId，并删除“已批准”列右侧的所有列（共 22 列）。 表应与下图一致：
    
     ![ 查询编辑器中的“项目申请”表](./media/sharepoint-scenario-build-report/05-01-09-table-requests.png)
 
@@ -109,16 +113,21 @@ ms.lasthandoff: 11/07/2017
 3. 选择“ApprovedDate”列，依次单击或点击“数据类型:任意”和“日期”。
    
     ![ 将数据类型更改为日期](./media/sharepoint-scenario-build-report/05-01-11-datatype-date.png)
+
 4. 对“ProjectedStartDate”和“ProjectedEndDate”列重复执行上一步。
 
 ### <a name="change-the-data-type-on-project-requests-columns"></a>更改“项目申请”表中列的数据类型
+
 1. 选择“EstimatedDays”列，依次单击或点击“数据类型:任意”和“整数”。
+
 2. 选择“RequestDate”列，依次单击或点击“数据类型:任意”和“日期”。
 
 ### <a name="apply-and-save-changes"></a>应用并保存更改
+
 1. 在“开始”选项卡上，单击“关闭并应用”关闭查询编辑器，再返回到 Power BI Desktop 主窗口。
    
     ![关闭并应用更改](./media/sharepoint-scenario-build-report/05-01-12-close-apply.png)
+
 2. 依次单击或点击“文件”和“保存”，保存为 project-analysis.pbix。
 
 ## <a name="step-2-improve-the-data-model"></a>第 2 步：改进数据模型
@@ -137,18 +146,24 @@ ms.lasthandoff: 11/07/2017
 1. 单击或点击“数据”视图图标。
    
     ![“数据”视图](./media/sharepoint-scenario-build-report/05-02-01-data-view.png)
+
 2. 在“建模”选项卡上，单击或点击“管理关系”。 我们将留在“数据”视图中的这个选项卡上，继续执行所有数据建模步骤。
    
     ![管理关系](./media/sharepoint-scenario-build-report/05-02-02-manage-relationships.png)
+
 3. 确保已选择现有关系，依次单击或点击“删除”和“删除”进行确认。
    
     ![删除关系](./media/sharepoint-scenario-build-report/05-02-03-delete-relationship.png)
+
 4. 单击“新建”创建其他关系。
+
 5. 在“创建关系”对话框中：
    
    1. 对于第一个表，依次选择“项目申请”和“Id”列。
+   
    2. 对于第二个表，依次选择“项目详细信息”和“RequestId”列。
-   3. 屏幕应如下图所示。 准备就绪后，单击或点击“确定”。
+   
+   3. 屏幕应如下图所示。 准备就绪后，依次单击或点击“确定”和“关闭”。
       
        ![创建关系](./media/sharepoint-scenario-build-report/05-02-04-create-relationship.png)
 
@@ -363,16 +378,16 @@ ms.lasthandoff: 11/07/2017
 4. 将“字段”窗格内“项目详细信息”中的“ProjectedStartDate”拖到“可视化效果”窗格内的“筛选器”区域中，再选中除“(空白)”之外的所有日期。
    
     ![按 ProjectedStartDate 筛选](./media/sharepoint-scenario-build-report/05-03-17-filters-diff.png)
-5. 重设表列的大小，以便可以看到所有数据。 此时，可视化效果应如下图所示。
+5. 重设表列大小，以便能够看到所有数据，并按 ApprovedStartDiff 降序排序数据。 此时，可视化效果应如下图所示。
    
     ![显示 ApprovedStartDiff 值的表](./media/sharepoint-scenario-build-report/05-03-18-chart-diff.png)
-6. 依次单击或点击“ApprovedStartDiff”的向下箭头和“平均值”，这样我们就可以看到项目获准日期与预计开始日期的平均时间跨度。
+6. 在“值”区域中，依次单击或点击“ApprovedStartDiff”的向下箭头和“平均值”。 现在，可以看到从项目审批到计划开始日期的平均持续时间。
    
     ![计算平均值](./media/sharepoint-scenario-build-report/05-03-20a-average-menu.png)
-7. 依次单击或点击“ApprovedStartDiff”的向下箭头和“条件格式”。
+7. 再依次单击或点击“ApprovedStartDiff”的向下箭头、“条件格式”和“背景色阶”。
    
    ![条件格式](./media/sharepoint-scenario-build-report/05-03-20b-conditional-menu.png)
-8. 使用默认设置，再单击“确定”。
+8. 按如下所示，设置“最小值”和“最大值”字段的颜色，再单击或点击“确定”。
    
    ![“条件格式”选项](./media/sharepoint-scenario-build-report/05-03-21-conditional-dialog.png)
    

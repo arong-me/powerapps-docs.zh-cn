@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/15/2017
 ms.author: gregli
-ms.openlocfilehash: e3eac64ddfc7c4e029c970367b81331722985861
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 40cc6703b2f3467365b6fab36e390fa9ff0f1659
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="average-max-min-stdevp-sum-and-varp-functions-in-powerapps"></a>PowerApps 中的 Average、Max、Min、StdevP、Sum 和 VarP 函数
 用于对一组数字进行汇总的聚合函数。
@@ -42,7 +42,7 @@ ms.lasthandoff: 11/07/2017
 * 分别列出每个参数。 例如，**Sum( 1, 2, 3 )** 会返回 6。
 * 一个[表](../working-with-tables.md)和一个对表进行运算的公式。  通过公式对每条[记录](../working-with-tables.md#records)的值计算聚合。  
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 这些函数只能对数值进行运算。 它们会忽略其他类型的值（例如字符串或记录）。 可使用 **[Value](function-value.md)** 函数将字符串转换成数值。
 

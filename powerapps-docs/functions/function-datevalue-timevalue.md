@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: fe4bf1a01711c35cda4566ed02bb3bc1297076ed
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: d171cc5de26d1dd6e6caa91b0205771707d8048c
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-powerapps"></a>PowerApps 中的 DateValue、TimeValue 和 DateTimeValue 函数
 将字符串类型的日期和/或时间转换为日期/时间值。
@@ -62,7 +62,8 @@ ms.lasthandoff: 11/07/2017
   
     如果你的计算机区域设置为 **en**，这个标签就会显示 **Saturday, October 11, 2014**。
   
-    **注意：**可以将几个选项与 **DateTimeFormat** 参数一起使用（**LongDateTime** 除外）。 要显示这些选项的列表，请在函数框中输入该参数，然后输入一个感叹号。
+    > [!NOTE]
+> 可以将多个选项（LongDateTime 除外）与 DateTimeFormat 参数结合使用。 要显示这些选项的列表，请在函数框中输入该参数，然后输入一个感叹号。
 * **Text(DateValue(Startdate.Text, "fr"), DateTimeFormat.LongDate)**
   
     这个标签会显示 **Monday, November 10, 2014**。
@@ -80,7 +81,8 @@ ms.lasthandoff: 11/07/2017
   
     如果你的计算机的区域设置为“en”，这个标签会显示 **Saturday, October 11, 2014 1:50:24 PM**。
   
-    **注意：**可以将几个选项与 **DateTimeFormat** 参数一起使用（**LongDateTime** 除外）。 要显示这些选项的列表，请在函数框中输入该参数，然后输入一个感叹号。
+    > [!NOTE]
+> 可以将多个选项（LongDateTime 除外）与 DateTimeFormat 参数结合使用。 要显示这些选项的列表，请在函数框中输入该参数，然后输入一个感叹号。
 * **Text(DateTimeValue(Start.Text, "fr"), DateTimeFormat.LongDateTime)**
   
     这个标签会显示 **Monday, November 10, 2014 1:50:24 PM**。

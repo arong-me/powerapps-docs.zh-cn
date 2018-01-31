@@ -15,18 +15,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 2131e964626bee5b90062002619b7f46f7910ae0
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: eb7bb74362a810487e88efb1177b3c1dfa7a694d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-variables-in-powerapps"></a>了解 PowerApps 中的变量
 如果你使用过其他编程工具（例如 Visual Basic 或 JavaScript），你可能会问：**变量在哪里？** PowerApps 稍有不同，需要不同的方法。 与其去获取变量，不妨问自己：**我会在 Excel 中做什么？**
 
 在其他工具中，你可能会显式执行某个计算，然后将结果存储在变量中。 但是，PowerApps 和 Excel 都会在输入数据更改时自动重新计算公式，因此你通常不需要创建和更新变量。 尽可能使用这种方法，你就可以更轻松地创建、了解和维护应用。
 
-某些情况下，需要在 PowerApps 中使用变量，通过添加[行为公式](working-with-formulas-in-depth.md#behavior-formulas)扩展 Excel 的模型。 这些公式在特定情况下（例如，用户选择某个按钮）运行。 在行为公式中，设置一个可在其他公式中使用的变量通常很有用。
+某些情况下，需要在 PowerApps 中使用变量，通过添加[行为公式](working-with-formulas-in-depth.md)扩展 Excel 的模型。 这些公式在特定情况下（例如，用户选择某个按钮）运行。 在行为公式中，设置一个可在其他公式中使用的变量通常很有用。
 
 一般情况下，应避免使用变量。 但有时候，只有使用变量才能获得所需的体验。
 
@@ -94,13 +94,15 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 全局变量的工作方式：
 
 * 使用 [Set](functions/function-set.md) 函数设置全局变量的值。  Set( MyVar, 1 ) 可将全局变量 MyVar 的值设置为 1。
-* 可以通过引用 Set 函数使用的名称来使用全局变量。  在这种情况下， MyVar 将返回 1。 
+* 可以通过引用 Set 函数使用的名称来使用全局变量。  在这种情况下， MyVar 将返回 1。
 * 全局变量可以存储包括字符串、数字、记录和[表](working-with-tables.md)在内的任何值。
 
 让我们使用全局变量重新生成加法机：
 
 1. 添加一个文本输入控件，将其命名为 **TextInput1**，同时添加两个按钮，分别命名为 **Button1** 和 **Button2**。
+
 2. 将 **Button1** 的 **[Text](controls/properties-core.md)** 属性设置为“加”，将 **Button2** 的“Text”属性设置为“清除”。
+
 3. 若要在用户选择“加”按钮时更新汇总，请将 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
    
     Set( RunningTotal, RunningTotal + Text1 )
@@ -135,7 +137,7 @@ PowerApps 中有三种类型的变量：
 | --- | --- | --- | --- |
 | 全局变量 |应用 |用法最为简单。  包含可从应用程序的任何位置进行引用的数字、文本字符串、布尔值、记录、表等。 |[Set](functions/function-set.md) |
 | 上下文变量 |屏幕 |非常适合将值传递到屏幕，与其他语言中的过程的参数非常类似。  仅可以从一个屏幕进行引用。 |[UpdateContext](functions/function-updatecontext.md)<br>[Navigate](functions/function-navigate.md) |
-| 集合 |应用 |包含可从应用任意位置进行引用的一个表。  允许修改表的内容，而不是作为一个整体进行设置。 可以保存到本地设备，以供将来使用。 |[Collect](functions/function-clear-collect-clearcollect.md)<br>[ClearCollect](functions/function-clear-collect-clearcollect.md)<br>[Patch](functions/function-patch.md)<br>[Update](functions/function-update.md)<br>[Remove](functions/function-remove.md)<br>[SaveData](functions/function-savedata-loaddata.md)<br>[LoadData](functions/function-savedata-loaddata.md)<br>等等。 |
+| 集合 |应用 |包含可从应用任意位置进行引用的一个表。  允许修改表的内容，而不是作为一个整体进行设置。 可以保存到本地设备，以供将来使用。 |[Collect](functions/function-clear-collect-clearcollect.md)<br>[ClearCollect](functions/function-clear-collect-clearcollect.md)<br>[Patch](functions/function-patch.md)<br>[Update](functions/function-update-updateif.md)<br>[Remove](functions/function-remove-removeif.md)<br>[SaveData](functions/function-savedata-loaddata.md)<br>[LoadData](functions/function-savedata-loaddata.md)<br>等等。 |
 
 在 Set、UpdateContext、Navigate 或 Collect 函数中使用变量时，所有变量均将隐式创建。  如其他编程工具中的操作一样，没有显式声明的变量。  变量类型也可以基于其中放置的值隐式派生。
 
@@ -157,7 +159,9 @@ PowerApps 中有三种类型的变量：
 让我们使用一个上下文变量重新生成加法机：
 
 1. 添加一个文本输入控件，将其命名为 **TextInput1**，同时添加两个按钮，分别命名为 **Button1** 和 **Button2**。
+
 2. 将 **Button1** 的 **[Text](controls/properties-core.md)** 属性设置为“加”，将 **Button2** 的“Text”属性设置为“清除”。
+
 3. 若要在用户选择“加”按钮时更新汇总，请将 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
    
     UpdateContext( { RunningTotal: RunningTotal + Text1 } )
@@ -182,7 +186,7 @@ PowerApps 中有三种类型的变量：
     ![](media/working-with-variables/context-variable-4.png)
 7. 导航到屏幕时，可以设置上下文变量的值。  这对于将“上下文”或“参数”从一个屏幕传递到另一个屏幕很有用。  要查看此内容，请插入一个新屏幕，然后插入将 OnSelect 属性设置为以下公式的按钮：
    
-    Navigate( Screen1, None, { RunningTotal: -1000 } ) 
+    Navigate( Screen1, None, { RunningTotal: -1000 } )
    
     ![](media/working-with-variables/context-variable-5.png)
    
@@ -207,7 +211,9 @@ PowerApps 中有三种类型的变量：
 让我们使用集合重新创建加法机：
 
 1. 添加一个**[文本输入](controls/control-text-input.md)**控件，将其命名为 **TextInput1**，同时添加两个按钮，分别命名为 **Button1** 和 **Button2**。
+
 2. 将 **Button1** 的 **[Text](controls/properties-core.md)** 属性设置为“加”，将 **Button2** 的“Text”属性设置为“清除”。
+
 3. 若要在用户选择“加”按钮时更新汇总，请将 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
    
     Collect( PaperTape, TextInput1.Text )
@@ -253,5 +259,6 @@ PowerApps 中有三种类型的变量：
      ![](media/working-with-variables/papertape-6.png)
 12. 按 F5 键再次预览，在文本输入控件中输入数字，然后选择按钮。  选择“保存”按钮。  关闭并重新加载应用，然后选择“加载”按钮以重新加载集合。  
     
-     注意：在 Web 浏览器中运行时，SaveData 和 LoadData 不起作用，你必须使用 Windows 上安装的工作室或移动设备的其中一个播放器。  
+    > [!NOTE]
+    > 在 Web 浏览器中运行时，SaveData 和 LoadData 不起作用。 必须使用在 Windows 上安装的 Studio 或移动设备播放器之一。  
 

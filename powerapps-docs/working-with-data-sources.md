@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/08/2017
 ms.author: gregli
-ms.openlocfilehash: 0c8aa48d1e8d2b524d287b5a123117c764e22385
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 381fe4021a06b13d6fbdf3887e42616a30053030
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-data-sources-in-powerapps"></a>了解 PowerApps 中的数据源
 大多数 PowerApps 应用使用所谓**数据源**的云服务中存储的外部信息。 OneDrive for Business 中存储的 Excel 文件包含的表就一个常见的例子。 应用使用**连接**访问这些数据源。
@@ -55,7 +55,8 @@ PowerApps 应用内部的表为固定值，就如同数字或字符串是值一�
 
 * 数据源包含的列名称和数据类型与连接中的基础表相同。
   
-    注意：对于列名称带空格的 SharePoint 和 Excel 数据源，PowerApps 会将空格替换为“\_x0020\_”。 例如，如果 SharePoint 或 Excel 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
+    > [!NOTE]
+> 对于列名称带空格的 SharePoint 和 Excel 数据源，PowerApps 会将空格替换为“\_x0020\_”。 例如，如果 SharePoint 或 Excel 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
 * 加载应用时，将自动从服务中加载数据源。  可以 **[Refresh](functions/function-refresh.md)** 函数强制刷新数据。
 * 用户运行某个应用时，可以创建、修改和删除记录，然后将这些更改推回到服务中的基础表。
   * 可以使用 **[Patch](functions/function-patch.md)** 和 **[Collect](functions/function-clear-collect-clearcollect.md)** 函数创建记录。  

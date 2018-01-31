@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 0a056aa20532ffe6e2e8ae502e67b5b27d134839
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: dcbc897f14c34a84757a3d99d5433715b4c1d3c0
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>PowerApps 中的 First、FirstN、Last 和 LastN 函数
 返回表中的第一组或最后一组[记录](../working-with-tables.md#records)。
@@ -35,7 +35,7 @@ ms.lasthandoff: 11/07/2017
 
 **First** 和 **Last** 都返回单个记录。  **FirstN** 和 **LastN** 都返回一个表，即使仅指定了单个记录。
 
-[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>语法
 **First**( *Table* )<br>**Last**( *Table* )
