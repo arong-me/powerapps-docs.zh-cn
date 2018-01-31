@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/20/2017
 ms.author: mblythe
-ms.openlocfilehash: 0bf7675248a8b5734b86dbfb79ca9272d72e93b9
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: a5c0e2c69ccf5e7359318794e4c39bb66bba9dac
+ms.sourcegitcommit: faaf9adebd72794d2988fba1b27a31d70b5268f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="integrate-powerapps-into-websites-and-other-services"></a>将 PowerApps 集成到网站和其他服务中
 如果能够直接将生成的应用集成到用户工作时使用的工具中，通常最为实用。 借助 PowerApps，可以将应用嵌入 iframe，以便于将这些应用集成到网站和其他服务中（如 Power BI 或 SharePoint）。
@@ -65,16 +65,14 @@ https://web.powerapps.com/webplayer/iframeapp?source=iframe
 3. 替换 URI 中的 `[AppID]` 值。 对于资产订购应用，URI 如下所示：
    
     ```
-    https://web.powerapps.com/webplayer/iframeapp?hideNavBar=true&
-    source=iframe&appId=/providers/Microsoft.PowerApps/apps/76897698-91a8-b2de-756e-fe2774f114f2
+    https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Microsoft.PowerApps/apps/76897698-91a8-b2de-756e-fe2774f114f2
     ```
 
 ## <a name="embed-your-app-in-a-website"></a>将应用嵌入网站
 嵌入应用现在与向网站的 HTML 代码添加 iframe（或支持 iframe 的任何其他服务，如 Power BI 或 SharePoint）一样简单：
 
 ```
-<iframe width="[W]" height="[H]" src="https://web.powerapps.com/webplayer/iframeapp?hideNavBar=true&
-source=website&screenColor=rgba(165,34,55,1)&appId=/providers/Microsoft.PowerApps/apps/[AppID]"/>
+<iframe width="[W]" height="[H]" src="https://web.powerapps.com/webplayer/iframeapp?source=website&screenColor=rgba(165,34,55,1)&appId=/providers/Microsoft.PowerApps/apps/[AppID]"/>
 ```
 
 指定 iframe 宽度和高度值，然后将 `[AppID]` 替换成应用 ID。
