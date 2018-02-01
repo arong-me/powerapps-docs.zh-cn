@@ -176,34 +176,16 @@
           href: sharepoint-scenario-summary.md
     - name: 与认知服务集成
       href: cognitive-services-api.md
-- name: 开发：企业开发人员
+- name: 为 PowerApps 开发
   items:
-    - name: 适用于企业开发人员的 PowerApps
+    - name: 适用于企业开发人员、合作伙伴和 ISV 的 PowerApps
       href: dev-enterprise-intro.md
-    - name: 注册和使用自定义连接器
+    - name: 生成并认证自定义连接器
       href: register-custom-api.md
-    - name: 使用 Postman 描述自定义连接器
-      href: postman-collection.md
-    - name: 将 Azure Active Directory 用于自定义连接器
-      href: customapi-azure-resource-manager-tutorial.md
-    - name: 生成 Web API 的自定义连接器
-      href: customapi-web-api-tutorial.md
     - name: 集成网站和其他技术
       href: embed-apps-dev.md
     - name: 开发可脱机使用的应用
       href: offline-apps.md
-- name: 开发：合作伙伴和 ISV
-  items:
-    - name: 适用于 Microsoft 合作伙伴和 ISV 的 PowerApps
-      href: dev-isv-partner-intro.md
-    - name: 对 API 连接器进行认证的概述
-      href: api-connector-overview.md
-    - name: 开发用于认证的 API 连接器
-      href: api-connector-dev.md
-    - name: 提交用于认证的 API 连接器
-      href: api-connector-submission.md
-    - name: 对 API 连接器进行认证的常见问题解答
-      href: api-connector-faq.md
     - name: 让客户体验你的应用
       href: dev-appsource-test-drive.md
 - name: 管理和 ALM
