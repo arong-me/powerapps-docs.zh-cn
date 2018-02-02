@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 05/06/2017
 ms.author: astay
 ms.openlocfilehash: 68a0be6c6be91ff5b89b3e06aecc242f987a4cf4
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="develop-an-api-connector-powerapps"></a>开发 API 连接器 (PowerApps)
 连接器生成工作由多项步骤组成。 首先，在 [PowerApps](https://web.powerapps.com/) 中，单击或点击页面右上角的“设置”按钮（齿轮图标）。 然后，单击或点击“自定义连接器”。

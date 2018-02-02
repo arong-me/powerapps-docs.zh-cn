@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 05/01/2017
 ms.author: mblythe
 ms.openlocfilehash: 225f4d79cee5a960116cb29efd06a8a5d229673c
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="powerapps-for-microsoft-partners-and-isvs"></a>适用于 Microsoft 合作伙伴和 ISV 的 PowerApps
 作为 Microsoft 合作伙伴或独立软件供应商 (ISV)，可以扩展自己的产品来集成客户的数据和业务流程，从而加快客户采用产品的速度。 使用 Common Data Service 中存储的数据，并生成连接器，以便客户能够通过在 PowerApps 中生成的应用连接你的产品。 使用 PowerApps 生成应用，并将应用发布到 AppSource 以供新客户体验，为你的企业带来新的潜在客户。
