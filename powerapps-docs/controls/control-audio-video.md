@@ -15,17 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 7aa3c2e2e6b0e6baaaec9666fc7b4e56c9568317
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: a79ef2ff58667b5a2516056f29845330745e5936
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>PowerApps 中的音频和视频控件
 一个控件，用于播放 YouTube 上的音频文件、视频文件或视频。
 
 ## <a name="description"></a>说明
-“音频”控件播放文件中的声音剪辑、“[麦克风](control-microphone.md)”控件中的录制内容或视频文件中的音轨。 “视频”控件播放文件或 YouTube（如果指定 URL）中的视频剪辑。
+“音频”控件播放文件中的声音剪辑、“[麦克风](control-microphone.md)”控件中的录制内容或视频文件中的音轨。 如果指定了具有可选隐藏式字幕的 URL，则“视频”控件将播放文件或 YouTube 中的视频剪辑。
 
 ## <a name="key-properties"></a>关键属性
 **Loop** - 音频或视频剪辑是否在播放完后自动重新开始。
@@ -44,6 +44,8 @@ ms.lasthandoff: 01/23/2018
 **[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
+
+ClosedCaptionsUrl – 仅视频控件适用。  WebVTT 格式的隐藏式字幕文件的 URL。  视频和标题的 URL都必须是 HTTPS。 托管视频和字幕文件的服务器需要启用 CORS。
 
 [DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
@@ -89,10 +91,10 @@ ms.lasthandoff: 01/23/2018
 1. 在“文件”菜单上，依次单击或点击“媒体”、“视频”或“音频”、“浏览”。
 2. 浏览到想要使用的文件，单击或点击它，然后单击或点击“打开”。
 3. 按 Esc 返回默认工作区，添加“音频”或“视频”控件，并将其 **Media** 属性设置为已添加的文件。
-   
+
     不知道如何[添加和配置控件](../add-configure-controls.md)？
 4. 按 F5，然后通过单击或点击所添加的控件的播放按钮来播放剪辑。
-   
+
     > [!TIP]
 > 将鼠标悬停在“视频”控件之上时，便会看到此控件的播放按钮。
 5. 按 Esc 返回默认工作区。
@@ -101,4 +103,3 @@ ms.lasthandoff: 01/23/2018
 1. 添加“视频”控件，并将其 **Media** 属性设置为 YouTube 视频的 URL（括在双引号内）。
 2. 按 F5，然后通过单击或点击“视频”控件的播放按钮来播放剪辑。
 3. 按 Esc 返回默认工作区。
-

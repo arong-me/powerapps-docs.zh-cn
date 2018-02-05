@@ -15,17 +15,21 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 51b0045bd8b5e83f754c4d68e1dfe63566371ae1
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 8a67a071a19bae57f022fe960a0b29296b58cf5d
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="pdf-viewer-control-in-powerapps"></a>PowerApps 中的 PDF 查看器控件
 显示 PDF 文件内容的控件。
 
 ## <a name="description"></a>说明
 通过添加此类型的控件并将其 **Document** 属性设置为要显示的文件的 URL（用双引号括住），来显示 PDF 文件中的文本、图形和其他内容。
+
+## <a name="limitations"></a>限制
+请注意，由于 PowerApps 的安全体系结构，PDF 查看器仅支持 HTTPS 链接，而不支持 HTTP。  
+如果 PDF 文档所在的服务器具有限制 CORS 的设置，则无法在应用程序中进行查看。  如果文档无法在 PowerApps 中打开，则在外部浏览器中打开文档的选项会显示给最终用户。
 
 ## <a name="key-properties"></a>关键属性
 **Document** - 用双引号括住的 PDF 文件的 URL。
@@ -94,8 +98,7 @@ ms.lasthandoff: 01/12/2018
 ## <a name="example"></a>示例
 * 添加 **PDF 查看器**控件，并将其 **Document** 属性设置为 PDF 文件的 URL（用双引号括住），如下例所示：<br>
   **"http://www.who.int/gho/publications/world_health_statistics/EN_WHS2015_TOC.pdf?ua=1"**
-  
-    此控件显示 PDF 文件。
-  
-    不知道如何[添加和配置控件](../add-configure-controls.md)？
 
+    此控件显示 PDF 文件。
+
+    不知道如何[添加和配置控件](../add-configure-controls.md)？
