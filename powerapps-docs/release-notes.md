@@ -13,22 +13,26 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/18/2018
+ms.date: 01/31/2018
 ms.author: sharik
-ms.openlocfilehash: 5f3336d4cd3ab45f35a3ce93441dd30ffccbaca5
-ms.sourcegitcommit: 7d66f33f1419751dd1c758e344cc6d55818a0fd5
+ms.openlocfilehash: f98d8f3dd19d39a31f6f8e7ca2551efb6de18e34
+ms.sourcegitcommit: 19a83f07ad11e630e6b85b3540d78a2d2428d7b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps 的最近更新
 有关已知限制的信息，请参阅[常见问题和解决方法](common-issues-and-resolutions.md)。
 
+## <a name="jan-31"></a>1 月 31 日
+1. 将隐藏式字幕添加到[视频](controls/control-audio-video.md)控件。
+2. 改进了 [PDF 查看器](controls/control-pdf-viewer.md)控件中的错误处理。
+
 ## <a name="jan-18"></a>1 月 18 日
-* 适用于 iOS 和 Android 的 PowerApps 现在支持与 Microsoft Authenticator 集成。
-* [组合框](controls/control-combo-box.md)替换了表单中的 [SharePoint 查阅控件](sharepoint-lookup-fields.md)，并且单选查阅字段的新[数据卡](working-with-cards.md)模板在 PowerApps Studio 中默认处于选择状态。
-* 在[组合框](controls/control-combo-box.md)中，通过增强型阅读模式在长列表中查看所有项。
-* 控制本地记录存储大小限制，最多能够在[非可委派查询](delegation-overview.md#non-delegable-limits)中存储 2000 条记录。 （实验性功能）
+1. 适用于 iOS 和 Android 的 PowerApps 现在支持与 Microsoft Authenticator 集成。
+2. [组合框](controls/control-combo-box.md)替换了表单中的 [SharePoint 查阅控件](sharepoint-lookup-fields.md)，并且单选查阅字段的新[数据卡](working-with-cards.md)模板在 PowerApps Studio 中默认处于选择状态。
+3. 在[组合框](controls/control-combo-box.md)中，通过增强型阅读模式在长列表中查看所有项。
+4. 控制本地记录存储大小限制，最多能够在[非可委派查询](delegation-overview.md#non-delegable-limits)中存储 2000 条记录。 （实验性功能）
 
 ## <a name="jan-5"></a>1 月 5 日
 * 通过集成 [PowerApps 自定义视觉对象（预览版）](https://powerapps.microsoft.com/blog/powerbi-powerapps-visual/)，从 Power BI 报表拉取上下文数据，从而直接通过 Power BI 报表或仪表板处理数据。
@@ -63,9 +67,3 @@ ms.lasthandoff: 01/23/2018
 ## <a name="aug-15"></a>8 月 15 日
 1. 下载组织中使用的[应用列表](admin-view-apps.md)。
 2. 为 SQL Server 委派 Sum、Average、Min 和 Max 函数。
-
-## <a name="july-26"></a>7 月 26 日
-1. 在应用内显示 [Power BI 磁贴](controls/control-power-bi-tile.md)。
-2. 使用 **[Coalesce](functions/function-isblank-isempty.md)** 函数可以更容易地替换空值，同时保留其他值不变。
-3. 使用 **[EndsWith](functions/function-startswith.md)** 函数可以测试文本字符串是否以其他文本字符串结尾。
-4. 在公式中使用 **[And](functions/operators.md)**、**[Or](functions/operators.md)** 或 **[Not](functions/operators.md)** 运算符。

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: c84eec1bdd541429d4524640d9e1ffa649b895fd
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 008c992ad3452c1844064335a51593c222fb1ac1
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="timer-control-in-powerapps"></a>PowerApps 中的计时器控件
 一个控件，可确定特定时间后应用的响应方式。
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/12/2018
 请注意，必须先预览应用，然后计时器才能在设计器中运行。  这样一来，用户可以在设计器中配置计时器，不受任何时间限制。
 
 ## <a name="key-properties"></a>关键属性
-**Duration** - 计时器运行的时长。
+**Duration** – 计时器运行的时长（毫秒计）。  不存在最大值。
 
 **OnTimerEnd** - 计时器运行完毕时应用的响应方式。
 
@@ -113,29 +113,28 @@ ms.lasthandoff: 01/12/2018
 ## <a name="examples"></a>示例
 ### <a name="show-a-countdown"></a>显示倒计时
 1. 添加一个计时器，并将其命名为 **Countdown**。
-   
+
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 2. 将计时器的 **Duration** 属性设置为 **10000**，其 **Repeat** 和 **Autostart** 属性设置为 **true**。
 3. （可选）通过以下方法可使计时器更易于读取：将其 **[Height](properties-size-location.md)** 属性设置为 **160**，**[Width](properties-size-location.md)** 属性设置为 **600**，并将其 **[Size](properties-text.md)** 属性设置为 **60**。
 4. 添加一个标签，然后将其 **[Text](properties-core.md)** 属性设置为以下公式：
    <br>**"Number of seconds remaining: " & RoundUp(10-Countdown.Value/1000, 0)**
-   
+
     想要了解有关 **[RoundUp](../functions/function-round.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
-   
+
     标签显示还有多少秒计时器重启。
 5. （可选）将计时器的 **[Visible](properties-core.md)** 属性设置为 **false**。
 
 ### <a name="animate-a-control"></a>为控件添加动画效果
 1. 添加一个计时器，并将其命名为 **FadeIn**。
-   
+
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 2. 将计时器的 **Duration** 属性设置为 **5000**，其 **Repeat** 和 **Autostart** 属性设置为 **true**。
 3. （可选）通过以下方法可使计时器更易于读取：将其 **[Height](properties-size-location.md)** 属性设置为 **160**，**[Width](properties-size-location.md)** 属性设置为 **600**，并将其 **[Size](properties-text.md)** 属性设置为 **60**。
 4. 添加一个标签，然后将“[Text](properties-core.md)”属性设置为显示“Welcome!” 并将其 **[Color](properties-color-border.md)** 属性设置为以下公式：
    <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
-   
+
     想要了解有关 **[ColorFade](../functions/function-colors.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
-   
+
     标签中的文本渐变为白色，恢复最大亮度，并重复此过程。
 5. （可选）将计时器的 **[Visible](properties-core.md)** 属性设置为 **false**。
-

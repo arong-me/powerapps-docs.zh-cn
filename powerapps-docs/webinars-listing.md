@@ -13,41 +13,25 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 1/16/2018
+ms.date: 1/29/2018
 ms.author: v-malyng
-ms.openlocfilehash: 46bb36b3fd712124624e9435581379b56702e20c
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: c683d371525ec4e1554ad5f79df2c4c578c6f50d
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps 网络研讨会列表 #
 这些网络研讨会可以帮助你使用 Microsoft PowerApps 的功能。 请随时在本主题下的评论中提出其他主题建议。
 
 ## <a name="upcoming-webinars"></a>即将举办的网络研讨会 ##
-**与 Vishwas Lele 一起使用 PowerApps 和 Flow 创建业务线“门户”**
-<br>主讲人：Vishwas Lele
-<br>1 月 18 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
-
-Vishwas 将展示 PowerApps，这实际上就是现有业务线企业应用（库存、合同等）和服务（Dynamics、O365、DropBox 等）的“门户”。通过使用 PowerApps 功能（如现成的连接器、与 Flow 集成和移动支持启用），就会发现为信息工作人员生成应用是多么轻松，他们可以借助应用在选定设备上的一个位置处集中查看所有信息。  
-
-[1 月 18 日单击此处观看](http://www.youtube.com/watch?v=eSMAAFHK44c)
-
-**连接器系列 | 使用连接器：使用 Planner 连接器**
-<br>主讲人：Audrie Gordon
-<br>1 月 22 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
-
-在本月的新“连接器系列”网络研讨会中，我们将探索如何将超过 200 个数据和 SaaS 连接器与 PowerApps 和 Flow 结合使用。 在本系列开始时，我们将先回顾一下 Office 365 Planner 连接器。 届时，我们应该会介绍一些使用提示，以及几个有关将 PowerApps 与 Planner 连接器结合用于商业应用的新创意。
-
-[1 月 22 日单击此处观看](https://www.youtube.com/watch?v=NBPL9Uw7qzg)
-
 **入门 | 产品集成：Teams + PowerApps 提示和技巧**
 <br>主讲人：Audrie Gordon
-<br>1 月 29 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
+<br>1 月 31 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
 
 请加入此网络研讨会，了解如何结合使用 PowerApps 和 Teams 快速创建更强大的业务解决方案！ 我们将介绍如何在 Teams 频道内利用 PowerApps，以及几个有关如何同时利用这些产品来改进团队协作的新创意。
 
-[1 月 29 日单击此处观看](https://www.youtube.com/watch?v=obBQk-aSElI)
+[1 月 31 日单击此处观看](https://www.youtube.com/watch?v=obBQk-aSElI)
 
 **连接器系列 | 结合使用功能强大的 Office Graph 和 PowerApps**
 <br>主讲人：Audrie Gordon
@@ -56,6 +40,14 @@ Vishwas 将展示 PowerApps，这实际上就是现有业务线企业应用（�
 PowerApps 团队的高级项目经理 Audrie Gordon 将介绍如何利用 PowerApps 与 Office Graph 技术。 我们将自定义一个模板，并最大限度地扩大 Office 组对典型业务方案的影响。
 
 [2 月 5 日单击此处观看](https://www.youtube.com/watch?v=AOGGyoElGaQ)
+
+**深入研究 | 使用 PowerApps 构建服务器修补解决方案，作者：Brian Blanchard**
+<br>主讲人：Audrie Gordon
+<br>2 月 19 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
+
+来自微软零售商店的 Brian Blanchard 将演示他如何为自己的团队构建用于管理服务器修补计划的应用程序。 他将分享他们如今使用的桌面和移动版本，以加快和简化修补过程。 荣誉属于 Brian，他利用 PowerApps 和 Flow 为他的团队节省了时间和金钱。
+
+[2 月 19 日单击此处观看](https://www.youtube.com/watch?v=QAe0oBecowU)
 
 ## <a name="past-webinars"></a>过往网络研讨会 ##
 直播结束后，可按需观看网络研讨会。 请注意，必须重新输入注册详细信息，然后才能通过电子邮件收到视频录制链接。
@@ -124,6 +116,12 @@ PowerApps 团队的高级项目经理 Audrie Gordon 将介绍如何利用 PowerA
 
 **新 Office Graph 模板（第 2 部分）**
 <br>主讲人：Emma Cooper [立即观看](https://www.youtube.com/watch?v=9PopTeLdpmU)
+
+**使用 PowerApps 和 Flow 创建业务线“门户”**
+<br>主讲人：Vishwas Lele [立即观看](http://www.youtube.com/watch?v=eSMAAFHK44c)
+
+**使用连接器：使用 Planner 连接器**
+<br> 主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=NBPL9Uw7qzg)
 
 ### <a name="app-designer-topics"></a>应用设计人员主题 ###
 **与一位 PowerApps 开发人员 Marie Hoeger 一起探究幕后的秘密 - 深入了解模板**
