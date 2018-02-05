@@ -13,16 +13,20 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/08/2017
+ms.date: 01/24/2018
 ms.author: sharik
-ms.openlocfilehash: b359a4f5dcc930b344ded68d5ffcd3ae72c007c6
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: f6b91bcc8b5e4c9d0128c2cba1eb3f772c6f7451
+ms.sourcegitcommit: faaf9adebd72794d2988fba1b27a31d70b5268f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps 常见问题和解决方法
 ## <a name="recently-addedchanged"></a>最近添加/更改的内容
+1. **应用程序不工作**
+
+    如果创建的应用在未发出警告的情况下停止工作，则可能是因为在过去六个月的时间里没有对其进行更新或重新发布。 若要解决此问题，更新和/或重新发布应用以使其与最新版本的 PowerApps 同步，并确保在最后一次发布时起的六个月内继续更新和/或重新发布该应用。
+
 1. **“数据表”控件**
 
     如果复制并粘贴“数据表”控件，且它的 Items 属性设置为包含 Filter 函数的公式，新“数据表”控件的 Items 属性的公式以包含 _1 后缀的字段名称结尾。 这就会导致字段名称无效，且数据表不显示任何数据。 若要解决此问题，请在复制此控件前，先确认 Filter 函数从数据源中引用的任何字段都不与“数据表”控件中的列同名。 如果是，请重命名“数据表”控件中的列。 也可以从无效的字段名称中删除 _1 后缀，让它们与实体中的名称保持一致。
