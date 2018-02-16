@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2017
 ms.author: sharik
-ms.openlocfilehash: 849bde71d8f5dcf6505721758e2edca0921146bb
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 49ff8b15b3697afb7367aa5d4a587b389c9b538c
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>在 PowerApps 中使用多媒体文件
 本主题介绍如何在应用中嵌入多媒体文件、将笔绘作品上载到数据源，然后在应用中显示该数据源中的图像。 本主题使用的数据源是 OneDrive for Business 中的一个 Excel 文件。
@@ -119,7 +119,7 @@ ms.lasthandoff: 01/23/2018
 
        ![创建表格](./media/add-images-pictures-audio-video/create-table.png)
 
-       Excel 文件现在采用表格格式。 有关 Excel 中表格格式设置的详细信息，请参阅[将数据设为表格格式](https://support.office.com/en-us/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370)。
+       Excel 文件现在采用表格格式。 有关 Excel 中表格格式设置的详细信息，请参阅[将数据设为表格格式](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370)。
 
    4. 将表格命名为 **Drawings**：
 

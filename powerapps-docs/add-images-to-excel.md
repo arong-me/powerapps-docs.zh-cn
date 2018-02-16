@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: sharik
-ms.openlocfilehash: f3e5fdce6948928cdd393e7a9933b3261af4e3f6
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 75b3315833fc6ced9ef3d8eb252d0f8639ccd696
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="add-images-to-excel-from-powerapps"></a>通过 PowerApps 将图像添加到 Excel 中
 自动创建应用，用户可以在其中显示、添加或删除各文件中的图像，或通过“笔”控件绘制的画图。 此应用以你创建并上载到云存储帐户中的 Excel 文件为依据。
@@ -26,7 +26,7 @@ ms.lasthandoff: 01/23/2018
 ## <a name="prerequisites"></a>先决条件
 
 * 熟悉如何[添加和配置控件](add-configure-controls.md)。
-* 熟悉如何[将 Excel 数据配置为表](https://support.office.com/en-us/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370?ui=en-US&rs=en-US&ad=US)。
+* 熟悉如何[将 Excel 数据配置为表](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370?ui=en-US&rs=en-US&ad=US)。
 * 已建立与云存储帐户（如 Dropbox、OneDrive 或 Google 云端硬盘）的 [PowerApps 连接](add-data-connection.md)，以便可以在其中存储 Excel 文件。
 
 ## <a name="create-the-data-source-and-the-app"></a>创建数据源和应用

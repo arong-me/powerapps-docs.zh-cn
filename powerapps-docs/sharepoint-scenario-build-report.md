@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/10/2018
 ms.author: mblythe
-ms.openlocfilehash: 1b22885a6ff97b1ffcf67da291ab89d091863981
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 6f3045a67de492866c3db7d9238a5c4c2111bcb6
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>创建用于分析项目的 Power BI 报表
 > [!NOTE]
@@ -177,7 +177,7 @@ ms.lasthandoff: 01/23/2018
    
     此公式将创建名为“日期”的表，其中包含一个日期列。 此表涵盖了其他表中的所有日期，并会在添加其他日期（即刷新数据）时自动更新。
    
-    此公式以及本部分中的其他公式使用数据分析表达式 (DAX)，这是一种适用于 Power BI 和其他技术的公式语言。 有关详细信息，请参阅 [Power BI Desktop 中的 DAX 基本概念](https://powerbi.microsoft.com/documentation/powerbi-desktop-quickstart-learn-dax-basics/)。
+    此公式以及本部分中的其他公式使用数据分析表达式 (DAX)，这是一种适用于 Power BI 和其他技术的公式语言。 有关详细信息，请参阅 [Power BI Desktop 中的 DAX 基本概念](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics)。
 3. 按 Enter，创建“日期”表。
    
     ![“日期”表](./media/sharepoint-scenario-build-report/05-02-07-date-table.png)

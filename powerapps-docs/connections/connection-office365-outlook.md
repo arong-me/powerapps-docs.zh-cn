@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/20/2017
 ms.author: archanan
-ms.openlocfilehash: 637cccf5a5a88d012657172a9e312e232915a615
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 7af7e2dc89e96501b3d8f12c71bc17112ee9d2e9
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="connect-to-office-365-outlook-from-powerapps"></a>从 PowerApps 连接到 Office 365 Outlook
 ![Office 365 Outlook](./media/connection-office365-outlook/office365icon.png)
@@ -128,7 +128,7 @@ Office 365 Outlook 连接已创建，并已添加到应用中。 现在可供使
 3. 按 Esc 返回默认工作区。
 
 ## <a name="helpful-links"></a>有用链接
-* 有关所有函数及其参数的列表，请参阅 [Office 365 Outlook 参考](https://docs.microsoft.com/en-us/connectors/office365connector/)。
+* 有关所有函数及其参数的列表，请参阅 [Office 365 Outlook 参考](https://docs.microsoft.com/connectors/office365connector/)。
 * 查看所有[可用连接](../connections-list.md)。  
 * 了解如何[管理连接](../add-manage-connections.md)。
 

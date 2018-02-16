@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: sharik
-ms.openlocfilehash: cf90156292985e58e2d68d2828d7c943b45facdf
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 1558dba59f4b755ded709329c099feb94b55fac6
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="generate-an-app-from-excel-data"></a>通过 Excel 数据生成应用
 基于上传到云存储帐户（例如 OneDrive）的 Excel 文件中的数据自动构建应用。 生成应用后，自定义该应用，使其更好地满足你的需求，然后运行该应用并确保其按预期方式工作。
@@ -41,7 +41,7 @@ ms.lasthandoff: 01/23/2018
 * 请下载此 [Excel 文件](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx)，并完全按照本教程操作。
   
     > [!IMPORTANT]
-> 如果已将数据的格式设置为表，可以使用自己的 Excel 文件。 有关详细信息，请参阅 [Create an Excel table in a worksheet](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)（在工作表中创建 Excel 表）。
+> 如果已将数据的格式设置为表，可以使用自己的 Excel 文件。 有关详细信息，请参阅 [Create an Excel table in a worksheet](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)（在工作表中创建 Excel 表）。
 * 将 Excel 文件上传到 OneDrive 或其他[云存储帐户](connections/cloud-storage-blob-connections.md)。
 
 ## <a name="create-an-app"></a>创建应用

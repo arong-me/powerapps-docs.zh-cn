@@ -15,18 +15,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/01/2016
 ms.author: mblythe
-ms.openlocfilehash: bbde4b033afcd530128f330432f262257f5d771c
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 40feb1f2412408e732be91e649ab2b4c54e4ba98
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps 社区计划：供个人使用的免费开发环境
 若要掌握技能并详细了解 PowerApps、Microsoft Flow 和 Common Data Service，PowerApps 社区计划是你的不二之选。 PowerApps 社区计划提供了供个人使用的免费开发环境，你可以在其中：
 
 * 了解如何使用 PowerApps 和 Microsoft Flow 的全部功能生成业务应用和工作流。
 * 使用超过 100 个[现成连接器](connections-list.md)或创建你自己的[自定义连接器](register-custom-api.md)，连接任意数据源。
-* 了解如何使用 [Common Data Service](https://docs.microsoft.com/en-us/common-data-service/entity-reference/introduction) 通过通用数据模型和 [SDK](https://aka.ms/eek20s) 生成功能强大的业务应用。
+* 了解如何使用 [Common Data Service](https://docs.microsoft.com/common-data-service/entity-reference/introduction) 通过通用数据模型和 [SDK](https://aka.ms/eek20s) 生成功能强大的业务应用。
 * 导出在个人环境中创建的解决方案，并[在 AppSource 上列出它们](dev-appsource-test-drive.md)，以便客户可以体验。
 
 ## <a name="who-can-sign-up-for-the-powerapps-community-plan"></a>哪些人可以注册 PowerApps 社区计划？

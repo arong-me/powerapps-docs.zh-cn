@@ -15,17 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: fb750e6345c6aa576e378134ed98be92c234a86b
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 6696f03be879e1c6f764cc444aa874e0b4a73905
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="set-up-data-alerts-for-the-power-bi-dashboard"></a>创建 Power BI 仪表板的数据警报
 > [!NOTE]
 > 本文属于介绍如何将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
-在此任务中，我们将在 Power BI 中添加警报，以便了解待审批项目的等待时间是否过长，并添加用于响应触发的警报的流。 有关警报的详细信息，请参阅 [Power BI 服务中的数据警报](https://powerbi.microsoft.com/documentation/powerbi-service-set-data-alerts)。
+在此任务中，我们将在 Power BI 中添加警报，以便了解待审批项目的等待时间是否过长，并添加用于响应触发的警报的流。 有关警报的详细信息，请参阅 [Power BI 服务中的数据警报](https://docs.microsoft.com/power-bi/service-set-data-alerts)。
 
 ## <a name="step-1-create-an-alert"></a>第 1 步：创建警报
 1. 在 Power BI 服务中，打开在上一任务中创建的仪表板。

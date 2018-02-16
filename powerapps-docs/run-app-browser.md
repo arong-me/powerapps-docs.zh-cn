@@ -15,17 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/16/2018
 ms.author: litran
-ms.openlocfilehash: 0aff680aa5b8840330ee3a1758a895785f05da6f
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: a833bc4a0364ccf427815cd75b43fad0f971c3e6
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="use-powerapps-in-a-web-browser"></a>在 Web 浏览器中使用 PowerApps
 如果在 PowerApps 中创建了应用，则可在浏览器中运行该应用，方法是打开 [Dynamics 365](https://home.dynamics.com)，然后在主页上单击或点击应用的磁贴。
 
 > [!NOTE]
-> 若对 Dynamics 365 应用（如“销售”）有疑问，可以大致了解一下 [Microsoft Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/)，也可以[联系支持人员](https://www.microsoft.com/en-us/dynamics365/contact-us)。
+> 若对 Dynamics 365 应用（如“销售”）有疑问，可以大致了解一下 [Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/)，也可以[联系支持人员](https://www.microsoft.com/dynamics365/contact-us)。
 
 支持以下浏览器和操作系统：
 

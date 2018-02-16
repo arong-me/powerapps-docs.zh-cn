@@ -15,16 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/12/2016
 ms.author: sirsu
-ms.openlocfilehash: 62dbb11d167155d7f0c47b889674a61b1b1047f3
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: a9d625f5c30d2619eeb6376aae6076125789cd2c
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>从 PowerApps 连接到 Power BI
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
 
-Power BI 是一套用于分析数据和共享见解的业务分析工具。 通过每个设备上提供的丰富的仪表板来监视业务并快速获取答案。 可以在应用中检查在 Power BI 服务中设置的数据警报的状态。 有关 Power BI 中数据警报的详细信息，请转到[文档页](https://powerbi.microsoft.com/documentation/powerbi-service-set-data-alerts/)。
+Power BI 是一套用于分析数据和共享见解的业务分析工具。 通过每个设备上提供的丰富的仪表板来监视业务并快速获取答案。 可以在应用中检查在 Power BI 服务中设置的数据警报的状态。 有关 Power BI 中数据警报的详细信息，请转到[文档页](https://https://docs.microsoft.com/power-bi/service-set-data-alerts)。
 
 本主题演示如何在应用中使用 Power BI 连接，并列出可用的函数。
 

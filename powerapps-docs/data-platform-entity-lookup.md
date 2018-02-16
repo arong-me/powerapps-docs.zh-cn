@@ -14,14 +14,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/09/2016
 ms.author: kfend
-ms.openlocfilehash: 21f33f8810b545b11f611b86261227c9443be5de
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 51138467e93dc4ef3fd2a08163536971c3811d23
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="build-a-relationship-between-entities"></a>生成实体关系
-一个实体中的数据通常与另一个实体中的数据相关。 例如，你可能有“Customers”和“Orders”实体，而“Orders”实体可能与“Customers”实体有查阅关系，以显示是哪个客户下达订单的。 可以使用查阅字段显示“Customers”实体中下达订单的用户的相关数据。 有关详细信息，请参阅[实体关系和查阅字段](https://docs.microsoft.com/en-us/common-data-service/entity-reference/relationships)。
+一个实体中的数据通常与另一个实体中的数据相关。 例如，你可能有“Customers”和“Orders”实体，而“Orders”实体可能与“Customers”实体有查阅关系，以显示是哪个客户下达订单的。 可以使用查阅字段显示“Customers”实体中下达订单的用户的相关数据。 有关详细信息，请参阅[实体关系和查阅字段](https://docs.microsoft.com/common-data-service/entity-reference/relationships)。
 
 ## <a name="define-a-relationship"></a>定义关系
 可以创建从一个实体到另一个实体（或实体与其自身之间）的几种类型的关系。 一个实体可以与多个实体有关系，并且一个实体可以与另一个实体有多种关系。 一些常见关系类型如下：

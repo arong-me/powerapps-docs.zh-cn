@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/08/2017
 ms.author: jamesol
-ms.openlocfilehash: 1e51ca684129c538ced47863c73269284cc13719
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 6b3bab666ddd842c868dfdac752cd8897a5427b2
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>在 PowerApps 中发送推送通知
 推送通知用于移动应用中的使用者和业务情形，主要用来与应用用户进行交互，并帮助他们优先处理关键任务。 在 PowerApps 中，可以使用 PowerApps 通知连接器发送通知。 可以将原生推送通知发送到在 PowerApps 中创建的任何应用。 我们计划在今后支持更多通知类型。
@@ -141,5 +141,5 @@ PowerAppsNotification.SendPushNotification(
 * 通知显示常规 PowerApps 图标，而不是特定应用图标。
 * 使用 Microsoft Flow 时，一次只能向一个接收人发送推送通知。
 
-有关参考信息，请参阅 [PowerApps 通知参考](https://docs.microsoft.com/en-us/connectors/powerappsnotification/)。
+有关参考信息，请参阅 [PowerApps 通知参考](https://docs.microsoft.com/connectors/powerappsnotification/)。
 

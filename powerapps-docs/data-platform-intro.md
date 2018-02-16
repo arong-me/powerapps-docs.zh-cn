@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/20/2017
 ms.author: kfend
-ms.openlocfilehash: bbc501542e634fab925654734cf709fe87248883
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: da01fe6e89e64e07b5ce4eb0350bc2ac1f54ff30
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="understand-entities-in-the-common-data-service"></a>了解 Common Data Service 中的实体
 
@@ -72,7 +72,7 @@ Common Data Service 中的实体，包括标准实体和自定义实体，都可
 每个标准实体均包含一组默认字段，不能对其进行更改或删除。 如需实体及其字段的列表，以及选择列表的列表，请参阅 [Standard entities](https://docs.microsoft.com/common-data-service/entity-reference/standard-entities)（标准实体）。
 
 ### <a name="custom-fields"></a>自定义字段
-可以在标准实体或自定义实体中创建自定义字段。 必须指定每个自定义字段的名称、显示名称和数据类型。 有关受支持类型的完整列表，请参阅 [Entity field data types](https://docs.microsoft.com/en-us/common-data-service/entity-reference/field-data-types)（实体字段数据类型）。
+可以在标准实体或自定义实体中创建自定义字段。 必须指定每个自定义字段的名称、显示名称和数据类型。 有关受支持类型的完整列表，请参阅 [Entity field data types](https://docs.microsoft.com/common-data-service/entity-reference/field-data-types)（实体字段数据类型）。
 
 ## <a name="lookup-relationships"></a>查找关系
 可以在实体中的记录间导航，前提是它们具有被定义为 **Lookup** 数据类型的字段的关系。 若要创建查找关系，请在一个实体中添加数据类型为 **Lookup** 的字段，并指向要在其中查找信息的实体。 有关详细信息，请参阅 [通过查找字段的实体关系](data-platform-entity-lookup.md)。

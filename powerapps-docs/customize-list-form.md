@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/02/2018
+ms.date: 02/05/2018
 ms.author: sharik
-ms.openlocfilehash: 8c46d7c5e8677d37b0a50b0c60dab4b81bd54c44
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: a1ebe4011619b0a2baaa3b9a98579bb22d02774e
+ms.sourcegitcommit: 290e81488ec5c2e0bb820ef0e3b7f5c0f54c80eb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>使用 PowerApps 自定义 SharePoint 列表窗体
 
@@ -30,9 +30,6 @@ PowerApps 与 SharePoint 直接集成 - 无需将另一个应用下载到计算�
 而且，由于 PowerApps 无缝集成到 SharePoint 中，因此，无需从两个位置来管理窗体：权限继承自 SharePoint 并在其中托管。 最重要的是，将 PowerApps 与 SharePoint 集成后，你可以访问许多强大的功能，例如分析报告、用于条件格式化的简单点击规则，以及与其他数据源的连接。
 
 准备好开始进行自定义了吗？ 让我们开始吧！
-
-> [!NOTE]
-> 此功能即将向 SharePoint 客户分阶段推出。 如果当前在 SharePoint 列表中没有看到“自定义窗体”选项，那么你很快就会看到它了。
 
 ## <a name="create-a-custom-list-form-app-in-powerapps"></a>在 PowerApps 中创建自定义列表窗体应用
 

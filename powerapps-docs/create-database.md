@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/06/2016
 ms.author: kfend
-ms.openlocfilehash: a2224d97c9cfc1261e43f7d30c8d8bdd2dd6e86b
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 892f434d54c723d8de4ad6e9a48ced05cf23b311
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-a-common-data-service-database"></a>创建 Common Data Service 数据库
 可以将 Common Data Service 用作数据存储，从而创建数据库并生成应用。 可以创建你自己的自定义实体，也可以使用预定义的实体。 若要创建数据库，要么必须先创建一个环境，要么必须以管理员身份分配到现有环境。 此外，还必须分配有相应的许可证。 若要了解如何购买 Common Data Service 使用套餐，请参阅[定价信息](pricing-billing-skus.md)。
@@ -65,7 +65,7 @@ ms.lasthandoff: 01/12/2018
    * 若要禁用安全规范，请选中“开放访问”。
 
 ## <a name="license-and-security-permissions"></a>许可证和安全权限
-必须是选定环境中的管理员，并且分配有相应的许可证，才能创建数据库。 在环境中，可以使用“安全”选项卡进一步配置其他用户的安全权限。有关详细信息，请参阅[配置数据库安全设置](database-security.md)和[安全模型](https://docs.microsoft.com/en-us/common-data-service/entity-reference/security-model)。
+必须是选定环境中的管理员，并且分配有相应的许可证，才能创建数据库。 在环境中，可以使用“安全”选项卡进一步配置其他用户的安全权限。有关详细信息，请参阅[配置数据库安全设置](database-security.md)和[安全模型](https://docs.microsoft.com/common-data-service/entity-reference/security-model)。
 
 ## <a name="privacy-notice"></a>隐私声明
 通过 Microsoft PowerApps 通用数据模型，我们收集自定义实体和字段名称并将其存储在诊断系统中。  我们利用这一知识来改进我们客户的通用数据模型。 创建者创建的实体和字段名称帮助我们了解 Microsoft PowerApps 社区中的常见方案，并确定服务标准实体范围中的缺口，如与组织相关的架构。 Microsoft 无法访问或使用数据库表中与这些实体相关联的数据，此类数据也无法在预配了数据库的区域之外进行复制。 不过，请注意，自定义实体和字段名称可能可以进行跨区域复制，并根据我们的数据保留策略进行删除。 Microsoft 致力于保护你的隐私安全，我们的[信任中心](https://www.microsoft.com/trustcenter/Privacy/default.aspx)对此进行了详述。

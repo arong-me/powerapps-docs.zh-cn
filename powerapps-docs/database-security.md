@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/08/2017
 ms.author: kfend
-ms.openlocfilehash: a8c13158ab2c3f152aa99357684c818f48e637ae
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: ea4fc21eb98ddb4861739559062f01190fb14819
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="configure-database-security"></a>配置数据库安全性
 Common Data Service 使用基于角色的安全模型来帮助保护对数据库的访问。 本主题介绍了如何创建保护应用所必需的安全项目。 用户角色可控制对数据的运行时访问，不同于管理环境管理员和环境创建者的环境角色。 有关环境的概述，请参阅[环境概述](environments-overview.md)。
@@ -32,7 +32,7 @@ Common Data Service 使用基于角色的安全模型来帮助保护对数据库
 
 最常用的两个权限级别是只读访问权限和完全访问权限。 Common Data Service 包含在这两个权限级别适用于所有实体的权限集。 查看权限集提供对实体的读取访问权限。 维护权限集提供对实体的完全访问权限。
 
-使用安全模型，可以任意组合要分配给用户角色的这些权限。 角色结合了跨所包含的权限集授予的各种权限。 因此，角色成员可以访问角色中包含的权限集允许访问的所有数据。 有关 Common Data Service 安全模型的详细信息，请参阅[安全模型](https://docs.microsoft.com/en-us/common-data-service/entity-reference/security-model)。
+使用安全模型，可以任意组合要分配给用户角色的这些权限。 角色结合了跨所包含的权限集授予的各种权限。 因此，角色成员可以访问角色中包含的权限集允许访问的所有数据。 有关 Common Data Service 安全模型的详细信息，请参阅[安全模型](https://docs.microsoft.com/common-data-service/entity-reference/security-model)。
 
 ## <a name="identify-the-entities"></a>确定实体
 若要为应用配置正确的访问控制，必须知道应用使用的实体。 若要查看应用使用的实体列表，请按照以下步骤操作。

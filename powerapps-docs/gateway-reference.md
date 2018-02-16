@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/20/2017
 ms.author: sharik
-ms.openlocfilehash: 3d5ae546d10c0713fe346db1fbe49a6f6701f7a1
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: e5bcf28febb2d37284203a4856a8fea590637aed
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>了解 Microsoft PowerApps 的本地数据网关
 ## <a name="installation-and-configuration"></a>安装和配置
@@ -85,7 +85,7 @@ ms.lasthandoff: 01/23/2018
 
 **配置防火墙或代理**
 
-若要了解如何提供网关的代理信息，请参阅[配置代理设置](https://powerbi.microsoft.com/en-us/documentation/powerbi-gateway-proxy/)。
+若要了解如何提供网关的代理信息，请参阅[配置代理设置](https://docs.microsoft.com/power-bi/service-gateway-proxy)。
 
 在 PowerShell 提示符下运行以下命令可以验证防火墙或代理是否可能阻止了连接。 此命令将测试与 Azure 服务总线之间的连接。 此命令只是测试网络连接，不会与云服务器服务或网关有任何交互。 此测试有助于确定计算机是否可以真正连接到 Internet。
 
@@ -140,7 +140,7 @@ ms.lasthandoff: 01/23/2018
 
 此帐户不是用于连接到本地数据源的帐户，也不是用于登录到云服务的工作或学校帐户。
 
-如果代理服务器由于身份验证而发生问题，可以根据[代理配置](https://powerbi.microsoft.com/documentation/powerbi-gateway-proxy/#changing-the-gateway-service-account-to-a-domain-user)中所述，将 Windows 服务帐户更改为域用户帐户或托管服务帐户。
+如果代理服务器由于身份验证而发生问题，可以根据[代理配置](https://docs.microsoft.com/power-bi/service-gateway-proxy#changing-the-gateway-service-account-to-a-domain-user)中所述，将 Windows 服务帐户更改为域用户帐户或托管服务帐户。
 
 ## <a name="frequently-asked-questions"></a>常见问题
 #### <a name="general"></a>常规

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2016
 ms.author: archanan
-ms.openlocfilehash: 1f437b91ef20412dab3238bea7f5488e148c7c29
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 665a772807179b2a33d6d47bb09483ebed69ed45
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>从 PowerApps 连接到云存储
 PowerApps 提供多个云存储连接。 使用其中任何一种连接，都可以存储 Excel 文件，并将其中的信息用于整个应用。 这些连接包括：  
@@ -30,7 +30,7 @@ PowerApps 提供多个云存储连接。 使用其中任何一种连接，都可
 
 [!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
-* 数据[已格式化为表](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)的 Excel 文件：
+* 数据[已格式化为表](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)的 Excel 文件：
   
   1. 打开 Excel 文件，然后在数据中选择要使用的任意单元格。
   2. 选择插入”选项卡上的“表格”。
@@ -87,7 +87,7 @@ PowerApps 提供多个云存储连接。 使用其中任何一种连接，都可
 涉及 Excel 文件的连接器存在[某些限制](#sharing-excel-tables)。
 
 ## <a name="known-limitations"></a>已知的限制
-如果尝试在应用中使用 Excel 连接时，**数据类型不受支持**或**未格式化为表**，请[将数据格式化为表](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)。
+如果尝试在应用中使用 Excel 连接时，**数据类型不受支持**或**未格式化为表**，请[将数据格式化为表](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)。
 
 如果 Excel 数据包含计算列，则无法用于生成应用，也无法将相应数据添加到现有应用中。
 

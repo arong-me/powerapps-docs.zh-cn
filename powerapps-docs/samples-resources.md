@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/06/2016
 ms.author: kfend
-ms.openlocfilehash: 156a213fbf2bb1d5c7d4f032331ce4ca91f2641c
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: f8fb8da441c037e47f508282e9677fdda35874a0
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="samples-and-other-resources--for-the-common-data-service"></a>Common Data Service 示例和其他资源
 ## <a name="samples"></a>示例
@@ -36,5 +36,5 @@ ms.lasthandoff: 01/12/2018
 Microsoft Ignite 会议的许多讲座都有记录，可在 [Microsoft Ignite On-Demand](https://myignite.microsoft.com/videos) （Microsoft Ignite 点播）获取。 搜索“PowerApps”和“通用数据模型”。
 
 ## <a name="overview"></a>概述
-通过 [Common Data Service 和通用数据模型概述](https://docs.microsoft.com/en-us/common-data-service/entity-reference/security-model)，深入了解 Common Data Service 和通用数据模型。
+通过 [Common Data Service 和通用数据模型概述](https://docs.microsoft.com/common-data-service/entity-reference/security-model)，深入了解 Common Data Service 和通用数据模型。
 

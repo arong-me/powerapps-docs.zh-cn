@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: sharik
-ms.openlocfilehash: 7a81e7287f2891e428062241d747ea451dff9e10
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: d530fb5f77f00cb37322383a3817e9c38533ca1d
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-an-app-from-scratch"></a>从头开始创建应用
 使用多种数据源中的任意一种从头开始创建自己的应用，之后如果需要，还可添加更多资源。 指定每个 UI 元素的外观和行为，这样就可以优化具体目标和工作流的结果。 与[自动生成应用](get-started-create-from-data.md)相比，此方法耗费的时间要多得多，但有经验的应用创作者可以根据需要生成最佳应用。
@@ -51,7 +51,7 @@ ms.lasthandoff: 01/23/2018
 
 2. 将该数据格式化为名为 **Schedule** 的表，以便 PowerApps 能够分析信息。
 
-    有关详细信息，请参阅 [Create an Excel table in a worksheet](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)（在工作表中创建 Excel 表）。
+    有关详细信息，请参阅 [Create an Excel table in a worksheet](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)（在工作表中创建 Excel 表）。
 
 3. 将文件以 **eventsignup.xls** 名称保存，然后将其上载到[云存储帐户](connections/cloud-storage-blob-connections.md)，例如 OneDrive。
 

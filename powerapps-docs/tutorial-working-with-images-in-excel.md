@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/15/2016
 ms.author: anneta
-ms.openlocfilehash: 5ba6f02db0de796cb75c57d914abf41caa259cbf
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: e789a253a2c1d52cc85dadc6f532604021f6b004
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>如何在 Excel 文件中保存图像，并将其添加到你的应用
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 01/23/2018
    2. 在“插入”功能区中，选择“表格”。
    3. 在对话框窗口中，选择“表包含标题”，然后选择“确定”。
       
-      现在，Excel 文件将为表格格式。 [将数据格式设置为表格](https://support.office.com/en-us/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370)提供了关于在 Excel 中设置表格式的其他详细信息。
+      现在，Excel 文件将为表格格式。 [将数据格式设置为表格](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370)提供了关于在 Excel 中设置表格式的其他详细信息。
    4. 将表格命名为“绘图”：  
       
       ![将表格重命名为“绘图”](./media/tutorial-working-with-images-in-excel/drawings-table.png)
