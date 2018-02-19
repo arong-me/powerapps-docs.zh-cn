@@ -13,16 +13,27 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/31/2018
+ms.date: 02/13/2018
 ms.author: sharik
-ms.openlocfilehash: f98d8f3dd19d39a31f6f8e7ca2551efb6de18e34
-ms.sourcegitcommit: 19a83f07ad11e630e6b85b3540d78a2d2428d7b9
+ms.openlocfilehash: b8d06bb8ffbe1446f4c918e6cf1c6657c1890e65
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps 的最近更新
 有关已知限制的信息，请参阅[常见问题和解决方法](common-issues-and-resolutions.md)。
+
+> [!NOTE]
+> 版本会在几天内推出。 新功能或更新功能可能不会立即显示。
+
+## <a name="feb-12"></a>2 月 12 日
+* 现已内联嵌入[视频](controls/control-audio-video.md)和[音频](controls/control-audio-video.md)播放的音量控件。 若要静音模式播放，用户不能单击或点击按钮，而是必须使用音量控件来降低音量。
+
+## <a name="feb-7"></a>2 月 7 日
+1. 从[相机](controls/control-camera.md)和[条形码扫描程序](controls/control-barcodescanner.md)控件中删除 Zoom、Brightness 和 Contrast属性。
+2. 修复了[文本输入](controls/control-text-input.md)控件上的“清除”按钮限制对用户输入分配空间的问题。 在此修补后，仅在 Microsoft Edge（最新版本）和 Internet Explorer 11 Web 浏览器中支持文本输入控件的 [Clear](controls/control-text-input.md#additional-properties) 属性。
+3. 添加了对[多媒体](add-images-pictures-audio-video.md)控件的辅助功能增强。
 
 ## <a name="jan-31"></a>1 月 31 日
 1. 将隐藏式字幕添加到[视频](controls/control-audio-video.md)控件。
@@ -63,7 +74,3 @@ ms.lasthandoff: 02/01/2018
 ## <a name="sept-6"></a>9 月 6 日
 1. 对于创建的应用，可以在 Power BI 嵌入式仪表板中[跟踪使用情况](app-analytics.md)。
 2. 使用 [Split](functions/function-split.md) 函数，可以根据分隔符将文本字符串拆分成多个部分。
-
-## <a name="aug-15"></a>8 月 15 日
-1. 下载组织中使用的[应用列表](admin-view-apps.md)。
-2. 为 SQL Server 委派 Sum、Average、Min 和 Max 函数。

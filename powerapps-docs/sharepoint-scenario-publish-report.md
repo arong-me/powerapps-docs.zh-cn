@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/12/2017
+ms.date: 01/30/2018
 ms.author: mblythe
-ms.openlocfilehash: cb300617fbf08f7b9ed5ff87ed5633d7714d51e0
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 6f54274af043964f02ef02a5ce97c261a410391d
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>发布 Power BI 项目报表并创建仪表板
 > [!NOTE]
@@ -37,20 +37,17 @@ ms.lasthandoff: 01/23/2018
 3. 输入密码，再单击或点击“登录”。
    
     ![输入帐户密码](./media/sharepoint-scenario-publish-report/06-01-03-password.png)
-4. 选择报表的目标位置，再单击或点击“选择”。 建议发布到组工作区，以简化对 SharePoint 中报表的访问。 在此示例中，我们要发布到“项目管理”组工作区。 有关详细信息，请参阅[在 Power BI 中创建组](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-group-in-power-bi)。
+4. 选择报表的目标位置，再单击或点击“选择”。 建议发布到组工作区，以简化对 SharePoint 中报表的访问。 在此示例中，我们要发布到“项目管理”组工作区。 有关详细信息，请参阅[在 Power BI 应用工作区中展开协作](https://docs.microsoft.com/power-bi/service-collaborate-power-bi-workspace)。
    
     ![目标工作区](./media/sharepoint-scenario-publish-report/06-01-04-workspace.png)
 5. 发布完成后，单击或点击“在 Power BI 中打开‘project-analysis.pbx’”。
    
     ![发布成功](./media/sharepoint-scenario-publish-report/06-01-05-open-report.png)
-6. Power BI 服务在浏览器中加载此报表。 单击或点击左上角的菜单 (a)，以查看左侧导航窗格。
+6. Power BI 服务在浏览器中加载此报表。 如果左侧导航窗格未展开，请单击或点击左上角“(a)”处的菜单来将其展开。
    
     ![Power BI 服务中的报表](./media/sharepoint-scenario-publish-report/06-01-06-service-report.png)
    
-    可以发现，在我们发布报表后，Power BI Desktop 上传了数据集 (d) 和报表 (c)。 将在 Power BI 服务（而不是 Power BI Desktop）中创建仪表板，此工作区中还没有任何仪表板 (b)。 我们将在下一步中创建仪表板。
-   
-    > [!NOTE]
-> Power BI 即将推出全新的导航体验，可以在网站中启用此体验。 如果左侧导航窗格看起来与上图不同，请参阅[新的 Power BI 导航体验](https://powerbi.microsoft.com/documentation/powerbi-service-the-new-power-bi-experience)，了解详细信息。
+    可以发现，在我们发布报表后，Power BI Desktop 上传了数据集 (d) 和报表 (c)。 将在 Power BI 服务（而不是 Power BI Desktop）中创建仪表板，此工作区中还没有任何仪表板 (b)。 我们快速创建一个仪表板。
 
 ## <a name="step-2-configure-credentials-for-refresh"></a>第 2 步：配置凭据以进行刷新
 1. 在 Power BI 服务中，依次单击或点击右上角的 ![齿轮图标](./media/sharepoint-scenario-publish-report/icon-gear.png) 和“设置”。
@@ -72,13 +69,16 @@ ms.lasthandoff: 01/23/2018
     ![数据源已更新](./media/sharepoint-scenario-publish-report/06-01-11-updated.png)
 
 ## <a name="step-3-create-a-dashboard"></a>第 3 步：创建仪表板
-1. 在 Power BI 服务中，依次单击或点击左上角的图表和  ![大头针图标](./media/sharepoint-scenario-publish-report/icon-pin.png)。
+
+1. 若要返回到报表，请在“报表”下，单击或点击“项目分析”。
+
+1. 依次单击或点击左上角的图表和 ![大头针图标](./media/sharepoint-scenario-publish-report/icon-pin.png)。
    
     ![固定图表](./media/sharepoint-scenario-publish-report/06-01-12-pin-projected.png)
 2. 输入要固定到的仪表板的名称，再单击或点击“固定”。
    
     ![将图表固定到新的仪表板](./media/sharepoint-scenario-publish-report/06-01-13-pin-new.png)
-3. 依次单击或点击左上角的图表和  ![大头针图标](./media/sharepoint-scenario-publish-report/icon-pin.png)。
+3. 依次单击或点击右上角的图表和 ![大头针图标](./media/sharepoint-scenario-publish-report/icon-pin.png)。
    
     ![固定图表](./media/sharepoint-scenario-publish-report/06-01-14-pin-variance.png)
 4. 选择现有仪表板，再单击或点击“固定”。
