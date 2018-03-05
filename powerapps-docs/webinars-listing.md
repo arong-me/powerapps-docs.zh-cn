@@ -13,41 +13,26 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 1/29/2018
+ms.date: 2/23/2018
 ms.author: v-malyng
-ms.openlocfilehash: c683d371525ec4e1554ad5f79df2c4c578c6f50d
-ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
+ms.openlocfilehash: 08c2263b88d78e708b21d1912334476d693295a7
+ms.sourcegitcommit: badede93a7d250f46db176792494b522994237b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps 网络研讨会列表 #
 这些网络研讨会可以帮助你使用 Microsoft PowerApps 的功能。 请随时在本主题下的评论中提出其他主题建议。
 
 ## <a name="upcoming-webinars"></a>即将举办的网络研讨会 ##
-**入门 | 产品集成：Teams + PowerApps 提示和技巧**
-<br>主讲人：Audrie Gordon
-<br>1 月 31 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
-
-请加入此网络研讨会，了解如何结合使用 PowerApps 和 Teams 快速创建更强大的业务解决方案！ 我们将介绍如何在 Teams 频道内利用 PowerApps，以及几个有关如何同时利用这些产品来改进团队协作的新创意。
-
-[1 月 31 日单击此处观看](https://www.youtube.com/watch?v=obBQk-aSElI)
-
-**连接器系列 | 结合使用功能强大的 Office Graph 和 PowerApps**
-<br>主讲人：Audrie Gordon
-<br>2 月 5 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
-
-PowerApps 团队的高级项目经理 Audrie Gordon 将介绍如何利用 PowerApps 与 Office Graph 技术。 我们将自定义一个模板，并最大限度地扩大 Office 组对典型业务方案的影响。
-
-[2 月 5 日单击此处观看](https://www.youtube.com/watch?v=AOGGyoElGaQ)
-
 **深入研究 | 使用 PowerApps 构建服务器修补解决方案，作者：Brian Blanchard**
-<br>主讲人：Audrie Gordon
-<br>2 月 19 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
+<br>作者：Brian Blanchard 和 Audrie Gordon
+<br>2 月 26 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
 
 来自微软零售商店的 Brian Blanchard 将演示他如何为自己的团队构建用于管理服务器修补计划的应用程序。 他将分享他们如今使用的桌面和移动版本，以加快和简化修补过程。 荣誉属于 Brian，他利用 PowerApps 和 Flow 为他的团队节省了时间和金钱。
 
-[2 月 19 日单击此处观看](https://www.youtube.com/watch?v=QAe0oBecowU)
+[2 月 26 日单击此处观看](https://www.youtube.com/watch?v=QAe0oBecowU)
+
 
 ## <a name="past-webinars"></a>过往网络研讨会 ##
 直播结束后，可按需观看网络研讨会。 请注意，必须重新输入注册详细信息，然后才能通过电子邮件收到视频录制链接。
@@ -122,6 +107,12 @@ PowerApps 团队的高级项目经理 Audrie Gordon 将介绍如何利用 PowerA
 
 **使用连接器：使用 Planner 连接器**
 <br> 主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=NBPL9Uw7qzg)
+
+**入门 | 产品集成：Teams + PowerApps 提示和技巧**
+<br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=obBQk-aSElI)
+
+**连接器系列 | 结合使用功能强大的 Office Graph 和 PowerApps**
+<br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=AOGGyoElGaQ)
 
 ### <a name="app-designer-topics"></a>应用设计人员主题 ###
 **与一位 PowerApps 开发人员 Marie Hoeger 一起探究幕后的秘密 - 深入了解模板**
