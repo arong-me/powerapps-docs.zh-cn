@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 06/17/2017
 ms.author: gregli
 ms.openlocfilehash: f75eeddf5a3a7b693e81f561ffd227f95e41cc5f
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/06/2018
 ---
 # <a name="understand-data-form-layout-in-microsoft-powerapps"></a>了解 Microsoft PowerApps 中的数据表单布局
 在 PowerApps 中，可以轻松创建具有吸引力且高效使用的表单。 例如，假设记录销售订单的基本表单如下：

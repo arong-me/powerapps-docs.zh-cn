@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
 ms.openlocfilehash: 794263448bc067ef8bf44ae46480865c56fdbdf8
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/06/2018
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>了解 PowerApps 中的表和记录
 可以创建一个应用，用于访问 Microsoft Excel、SharePoint、SQL Server 以及在记录和表中存储数据的其他多个源中的信息。 若要最有效地处理此类数据，请查看这些结构的基本概念。
@@ -237,7 +237,7 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 ### <a name="disambiguation"></a>消除歧义
 使用记录范围添加的字段名称将替代应用中来自其他位置的同一名称。  在此情况下，仍可使用 [**@** 消除歧义](functions/operators.md)运算符访问来自记录范围外部的值：
 
-* 若要访问来自嵌套记录作用域的值，请使用 **@** 运算符，其中所操作的表名称使用模式 **Table*[@*FieldName**]**。  
+* 若要访问来自嵌套记录作用域的值，请使用 **@** 运算符，其中所操作的表名称使用模式 ***Table*[@*FieldName***]。  
 * 若要访问全局值，如数据源、集合和上下文变量，请使用模式 ***[@*ObjectName**]**（无需指派表）。
 
 如果所操作的表是一个表达式，例如 **Filter( *table*, ... )**，则不能使用消除歧义运算符。  只有最里面的记录范围可以在不使用消除歧义运算符的情况下从此表表达式访问字段。

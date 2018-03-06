@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 07/24/2017
 ms.author: gregli
 ms.openlocfilehash: 3250251e02170d2dd7bab441bc3c94705216ec00
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/06/2018
 ---
 # <a name="operators-and-data-types-in-powerapps"></a>PowerApps 中的运算符和数据类型
 其中的某些运算符依赖于作者的语言。  有关详细信息，请参阅[全局应用](../global-apps.md)。

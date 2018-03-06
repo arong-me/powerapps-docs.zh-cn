@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 03/11/2017
 ms.author: aneesa
 ms.openlocfilehash: d791d04965873c133be85013feb181dc5a1e1bad
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/06/2018
 ---
 # <a name="use-field-groups"></a>使用字段组
 字段组提供了一种对实体的一个或多个字段进行分组的方法。 这个功能还可以帮助你提高创建和维护应用的速度，同时降低难度。 一个字段组可以包含一个或多个字段，而一个字段可以出现在任意多个的字段组中。 但一个字段在同一个字段组中不能出现多次。
