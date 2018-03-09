@@ -13,19 +13,23 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/13/2018
+ms.date: 03/05/2018
 ms.author: sharik
-ms.openlocfilehash: b8d06bb8ffbe1446f4c918e6cf1c6657c1890e65
-ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
+ms.openlocfilehash: e259c4c235809f75c03b3ea87df580b9b17a790c
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps 的最近更新
 有关已知限制的信息，请参阅[常见问题和解决方法](common-issues-and-resolutions.md)。
 
 > [!NOTE]
 > 版本会在几天内推出。 新功能或更新功能可能不会立即显示。
+
+## <a name="mar-5"></a>3 月 5 日
+1. 在 SharePoint 列表中添加（和删除）[附件](controls/control-attachments.md)。
+2. 在 Web 浏览器中打开外部 [PDF](controls/control-pdf-viewer.md) 文件。 （实验性功能）
 
 ## <a name="feb-12"></a>2 月 12 日
 * 现已内联嵌入[视频](controls/control-audio-video.md)和[音频](controls/control-audio-video.md)播放的音量控件。 若要静音模式播放，用户不能单击或点击按钮，而是必须使用音量控件来降低音量。
@@ -64,13 +68,3 @@ ms.lasthandoff: 02/14/2018
 1. 在应用中[显示所有规则](working-with-rules.md)，而不仅仅是选定控件的规则。
 2. 添加应用创建者最需要的图标。
 3. 提升了应用在 Android 和 iOS 设备上的性能。
-
-## <a name="sept-20"></a>9 月 20 日
-1. 在用户首次[保存应用](save-publish-app.md)后，默认每两分钟自动保存一次其他更改。
-2. 可以轻松[创建规则](working-with-rules.md)来设置条件格式，而无需编写表达式。只需设置条件，然后直接在 PowerApps 画布上设计结果即可。
-3. 使用添加控件时弹出的全高“数据”窗格，可以更轻松地配置窗体、库和数据表。
-4. 可以获取有助于创建应用的上下文快速提示，无论是从空白应用、模板、数据源还是从 SharePoint 开始创建。
-
-## <a name="sept-6"></a>9 月 6 日
-1. 对于创建的应用，可以在 Power BI 嵌入式仪表板中[跟踪使用情况](app-analytics.md)。
-2. 使用 [Split](functions/function-split.md) 函数，可以根据分隔符将文本字符串拆分成多个部分。

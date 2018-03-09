@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/17/2016
 ms.author: gregli
-ms.openlocfilehash: 8aa5fb671878af21fa483dde348460bf7c05fc70
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 11f3a29989057a3dc1a75c40877314596a62859d
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="controls-and-properties-in-powerapps"></a>PowerApps 中的控件和属性
 通过设置控件的属性之一配置该控件的外观和行为。 每种类型的控件都有一组不同的属性。 某些属性（例如 **Height** 和 **Width**）是几乎每种类型的控件共有的，但其他属性（例如 **CheckboxSize**）特定于某种类型的控件。
@@ -31,7 +31,7 @@ ms.lasthandoff: 01/23/2018
 
 **[音频](controls/control-audio-video.md)** – 播放音频剪辑，或视频剪辑的音频部分。
 
-**[条形码扫描程序](controls/control-barcodescanner.md)** – 使用带有相机的设备扫描条形码。
+**[条形码扫描程序（实验性）](controls/control-barcodescanner.md)**- 使用带摄像头的设备扫描条形码。
 
 **[按钮](controls/control-button.md)** – 通过单击或点击来与应用交互。
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 01/23/2018
 
 **[麦克风](controls/control-microphone.md)** – 在应用或数据源中录制和保存声音。
 
-**[PDF 查看器](controls/control-pdf-viewer.md)** – 显示 Internet 上的 PDF 文件的内容。
+**[PDF 查看器（实验性）](controls/control-pdf-viewer.md)**- 显示 Internet 上 PDF 文件的内容。
 
 **[笔输入](controls/control-pen-input.md)** – 绘制图像或文本，并将其保存到应用或数据源。
 

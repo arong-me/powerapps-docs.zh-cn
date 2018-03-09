@@ -13,26 +13,52 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 2/23/2018
+ms.date: 3/1/2018
 ms.author: v-malyng
-ms.openlocfilehash: 08c2263b88d78e708b21d1912334476d693295a7
-ms.sourcegitcommit: badede93a7d250f46db176792494b522994237b0
+ms.openlocfilehash: d1f10a12a188acaf2ee4bc4590e7dba9f3587611
+ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps 网络研讨会列表 #
 这些网络研讨会可以帮助你使用 Microsoft PowerApps 的功能。 请随时在本主题下的评论中提出其他主题建议。
 
 ## <a name="upcoming-webinars"></a>即将举办的网络研讨会 ##
-**深入研究 | 使用 PowerApps 构建服务器修补解决方案，作者：Brian Blanchard**
+**连接器系列 | Project Online (PWA)**
+<br>主讲人：Audrie Gordon
+<br>3 月 12 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
+
+在此连接器系列演示中，我们将介绍如何使用 Project Online（亦称为 PWA）连接器选项。 欢迎加入，并针对生成利用项目组合管理工具和 Project Online 的应用提问。
+
+[3 月 12 日单击此处观看](https://www.youtube.com/watch?v=oncGxlmFqy8)
+
+
+**深入研究 | 使用 PowerApps 生成服务器修补解决方案（第 2 部分），主讲人：Brian Blanchard**
 <br>作者：Brian Blanchard 和 Audrie Gordon
-<br>2 月 26 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
+<br>3 月 19 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
 
-来自微软零售商店的 Brian Blanchard 将演示他如何为自己的团队构建用于管理服务器修补计划的应用程序。 他将分享他们如今使用的桌面和移动版本，以加快和简化修补过程。 荣誉属于 Brian，他利用 PowerApps 和 Flow 为他的团队节省了时间和金钱。
+这是 Brian Blanchard 演示的第 2 部分，介绍了他是如何为团队生成应用以管理服务器修补计划的。 他将分享 Azure 自动化设置和 Microsoft Flow 中的高级工作流的幕后详情。 荣誉属于 Brian，他利用 PowerApps 和 Flow 为他的团队节省了时间和金钱。
 
-[2 月 26 日单击此处观看](https://www.youtube.com/watch?v=QAe0oBecowU)
+[3 月 19 日单击此处观看](https://www.youtube.com/watch?v=oncGxlmFqy8)
 
+**深入研究 | PowerApps 点击链接分析，主讲人：Vivek Bavishi**
+<br>主讲人：Vivek Bavishi 和 Audrie Gordon
+<br>4 月 17 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
+
+Vivek Bavishi 是国际 PowerApps 冠军组成员，与 PowerApps 团队成员 Audrie Gordon 一起介绍了一种简单方法，以使用 PowerApps 和 Flow 创建自己的点击链接分析。 将报表选项扩展为包含统计数据，有助于深入了解应用使用者如何导航应用，从而使用数据来验证应用使用和设计假设！ 如果是认真的应用创建者，就一定不会想错过 Vivek 的演示吧。
+
+[4 月 17 日单击此处观看](https://www.youtube.com/watch?v=OM-rlhKJFTA)
+
+**连接器系列 | 利用 Common Data Service 的优势**
+<br>主讲人：Audrie Gordon
+<br>4 月 23 日上午 10:30（太平洋标准时间）/下午 1:30（东部标准时间）
+
+开始探索 Common Data Service（亦称为 CDS）了吗？ 了解跨商业应用使用常见数据架构的最新优势吗？ 听闻过有关此领域最近更新和精彩创意的相关评价吗？
+
+此网络研讨会将深入探讨跨所有 Microsoft 云订阅（对于 Office 365、Azure 和 Dynamics 365 应用启用）利用 Common Data Service 的优势。 欢迎加入此实时网络研讨会，大致了解 CDS 最新进展动态，以及使用此平台对应用建模的强大功能。 迫不及待地想要告诉大家一些无限可能性了！
+
+[4 月 23 日单击此处观看](https://www.youtube.com/watch?v=JY8r46HnHoI)
 
 ## <a name="past-webinars"></a>过往网络研讨会 ##
 直播结束后，可按需观看网络研讨会。 请注意，必须重新输入注册详细信息，然后才能通过电子邮件收到视频录制链接。
@@ -113,6 +139,10 @@ ms.lasthandoff: 02/24/2018
 
 **连接器系列 | 结合使用功能强大的 Office Graph 和 PowerApps**
 <br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=AOGGyoElGaQ)
+
+**深入研究 | 使用 PowerApps 构建服务器修补解决方案，作者：Brian Blanchard**
+<br>主讲人：Brian Blanchard 和 Audrie Gordon [立即观看](https://www.youtube.com/watch?v=QAe0oBecowU)
+
 
 ### <a name="app-designer-topics"></a>应用设计人员主题 ###
 **与一位 PowerApps 开发人员 Marie Hoeger 一起探究幕后的秘密 - 深入了解模板**

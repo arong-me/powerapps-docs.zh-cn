@@ -15,22 +15,32 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/29/2017
 ms.author: fikaradz
-ms.openlocfilehash: 2fd5db380eead5403d4cc7d927da5a24aa24abc9
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: b58e99e4775ed5c18d3498864c6e652e814ddf19
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="attachments-control-in-powerapps"></a>PowerApps 中的附件控件
-使用该控件用户可将文件下载到其自己的设备。  上传功能即将推出。
+方便用户将文件下载到设备，并在 SharePoint 列表中上传和删除文件的控件。
+
+## <a name="limitations"></a>限制
+附件控件具有以下临时限制：
+1. 附件上传仅适用于 SharePoint 列表数据源。  将逐步递增对其他数据源的支持，首先是对 CDS 的支持。
+
+1. 上传和删除功能仅在表单内部有效。  在编辑模式下，如果不在表单内部，附件控件会处于禁用状态。   请注意，最终用户必须保存表单，才能将文件添加和删除操作保存到后端。
+
+1. 最大只能上传 10MB 文件。  
 
 ## <a name="description"></a>说明
-“附件”控件可让用户打开存储在数据源上的文件。
+使用附件控件，可以打开在数据源中存储的文件，并能在 SharePoint 列表中添加和删除文件。
 
 ## <a name="key-properties"></a>关键属性
 [Items](properties-core.md) – 描述可下载文件的源。
 
 MaxAttachments – 控件将接受的文件数上限。
+
+**MaxAttachmentSize** - 每个新附件的文件大小上限（以 MB 为单位）。  暂不得超过 10MB。
 
 OnAttach – 当用户添加新的文件附件时，应用的响应方式。
 
@@ -39,7 +49,9 @@ OnRemove – 当用户删除现有附件时，应用的响应方式。
 [OnSelect](properties-core.md) – 当用户单击附件时，应用的响应方式。
 
 ## <a name="additional-properties"></a>其他属性
-AddAttachmentText – 用于添加新附件的按钮的标签文本。
+**AccessibleLabel** - 屏幕阅读器声明的标签。
+
+**AddAttachmentText** - 用于添加新附件的链接的标签文本。
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
@@ -47,11 +59,13 @@ AddAttachmentText – 用于添加新附件的按钮的标签文本。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+**[DisplayMode](properties-core.md)** - 控件是允许添加和删除文件 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
-NoAttachmentsText – 当没有要显示的附件时，向用户显示的说明文本。
+**MaxAttachmentsText** - 当控件中的文件数达到上限时，用于替换“附加文件”链接的文本。
+
+**NoAttachmentsText** - 在未附加任何文件时向用户显示的说明文本。
 
 [Visible](properties-core.md) – 控件可见还是隐藏。
 

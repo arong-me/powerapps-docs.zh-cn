@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: c27a2319d74db9a50acff84e40ea7df83dc1c126
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 264c360af0175b6a5dddd74306b32c7d1ecaef1d
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="barcode-scanner-control-in-powerapps"></a>PowerApps 中的条码扫描器控件
-通过在设备上使用条码扫描器，用户可用来拍摄照片的控件。
+# <a name="barcode-scanner-control-experimental-in-powerapps"></a>PowerApps 中的条形码扫描程序控件（实验性）
+通过在设备上使用条形码扫描程序，用户可用来拍摄照片的实验性控件。
 
 ## <a name="description"></a>说明
 如果添加此控件，用户可从应用运行的任何位置使用一张或多张照片更新数据源。
@@ -73,9 +73,8 @@ ms.lasthandoff: 01/12/2018
 ## <a name="example"></a>示例
 ### <a name="add-photos-to-an-image-gallery-control"></a>向图像库控件添加照片
 1. 添加**条码扫描器**控件，将其命名为 **Mybarcode scanner**
-   
+
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 2. 添加一个“标签”控件，然后将输出设置为条形码的值。  
 3. 扫描 BarcodeType 属性下设置的类型的条形码。
 4. 标签将显示扫描的条形码。
-
