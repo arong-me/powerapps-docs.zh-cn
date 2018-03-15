@@ -1,5 +1,5 @@
 ## <a name="prerequisites"></a>先决条件
 * [注册](../signup-for-powerapps.md)并[安装](http://aka.ms/powerappsinstall) PowerApps。 打开 PowerApps 时，使用注册所用的凭据登录。
 * 通过[模板](../get-started-test-drive.md)、[数据](../get-started-create-from-data.md)或[从头开始](../get-started-create-from-blank.md)构建应用。
-* 了解如何 [添加和配置控件](../add-configure-controls.md)。
+* 了解如何 [添加和配置控件](../add-configure-controls.md)。 
 

@@ -5,7 +5,7 @@ services:
 suite: powerapps
 documentationcenter: na
 author: skjerland
-manager: anneta
+manager: kfile
 editor: 
 tags: 
 ms.service: powerapps
@@ -15,15 +15,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/21/2017
 ms.author: sharik
-ms.openlocfilehash: 8ac8fb34f9cdeb0c9e0ce6172938cef33ecccbc5
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: e5299b12e3034978b14c70193151440626267c5a
+ms.sourcegitcommit: 91851aebdf650e99d15374478901b3762d2b4a4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="generate-an-app-from-within-sharepoint-using-powerapps"></a>使用 PowerApps 从 SharePoint 中生成应用
-
-
 
 在 PowerApps 中自动生成应用，以便用户管理自定义 SharePoint Online 列表中的项。 应用将有三个屏幕，用户可以在其中执行以下操作：
 
