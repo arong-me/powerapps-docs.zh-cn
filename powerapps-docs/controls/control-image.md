@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 6266e8b59f19862e4b4a7f2364785da8e7547e73
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 0ab25713976e9f89fa74b5f7664b13dca447841e
+ms.sourcegitcommit: 87327f99636c68c62c755c4eb48861249a5a3add
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="image-control-in-powerapps"></a>PowerApps 中的图像控件
 显示来自本地文件或数据源等来源的图像的控件。
@@ -110,9 +110,9 @@ ms.lasthandoff: 01/23/2018
 
 ## <a name="examples"></a>示例
 ### <a name="show-an-image-from-a-local-file"></a>显示来自本地文件的图像
-1. 在“内容”选项卡上，单击或点击“媒体”，然后单击或点击“浏览”。
+1. 在“文件”菜单上，依次单击或点击“媒体”和“浏览”。
 2. 单击或点击要添加的图像文件，然后单击或点击“打开”，按 Esc 返回到默认工作区。
-3. 添加**图像**控件，并将其 **[Items](properties-core.md)** 属性设置为你添加的文件的名称。
+3. 添加图像控件，并将它的 Image 属性设置为添加的文件的名称。
 
     不知道如何[添加和配置控件](../add-configure-controls.md)？
 
