@@ -1,12 +1,12 @@
 ---
-title: "自定义连接器内容链接 | Microsoft 文档"
-description: "用于创建、使用、共享和认证自定义连接器的内容的链接。"
-services: 
+title: 自定义连接器内容链接 | Microsoft 文档
+description: 用于创建、使用、共享和认证自定义连接器的内容的链接。
+services: ''
 suite: powerapps
-documentationcenter: 
+documentationcenter: ''
 author: mgblythe
 manager: anneta
-editor: 
+editor: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 05/05/2017
 ms.author: mblythe
 ms.openlocfilehash: 2f8908241c03c5c0fd9a2d254aead52e29087387
-ms.sourcegitcommit: 6a43e35eacb48e7f4724aa213dee801571ea8928
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="custom-connectors-in-powerapps"></a>在 PowerApps 中自定义连接器
 

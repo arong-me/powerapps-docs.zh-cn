@@ -1,13 +1,13 @@
 ---
-title: "添加和切换屏幕 | Microsoft 文档"
-description: "在应用中添加屏幕，然后在 PowerApps 中使用前进和后退箭头切换屏幕"
-services: 
+title: 添加和切换屏幕 | Microsoft 文档
+description: 在应用中添加屏幕，然后在 PowerApps 中使用前进和后退箭头切换屏幕
+services: ''
 suite: powerapps
 documentationcenter: na
 author: skjerland
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 07/10/2017
 ms.author: sharik
 ms.openlocfilehash: 64c38e561be90cbebabe17f73377e4d754d99c54
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-a-screen-and-navigate-between-screens"></a>添加和切换屏幕
 创建包含多个屏幕的应用，然后为用户提供屏幕切换方式。

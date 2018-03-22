@@ -1,13 +1,13 @@
 ---
-title: "从头开始创建应用 | Microsoft 文档"
-description: "通过配置每个 UI 元素和行为从头开始创建应用，以便管理推动业务发展的日常数据。"
-services: 
+title: 从头开始创建应用 | Microsoft 文档
+description: 通过配置每个 UI 元素和行为从头开始创建应用，以便管理推动业务发展的日常数据。
+services: ''
 suite: powerapps
 documentationcenter: na
 author: karthik-1
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/16/2016
 ms.author: sharik
 ms.openlocfilehash: d530fb5f77f00cb37322383a3817e9c38533ca1d
-ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-an-app-from-scratch"></a>从头开始创建应用
 使用多种数据源中的任意一种从头开始创建自己的应用，之后如果需要，还可添加更多资源。 指定每个 UI 元素的外观和行为，这样就可以优化具体目标和工作流的结果。 与[自动生成应用](get-started-create-from-data.md)相比，此方法耗费的时间要多得多，但有经验的应用创作者可以根据需要生成最佳应用。

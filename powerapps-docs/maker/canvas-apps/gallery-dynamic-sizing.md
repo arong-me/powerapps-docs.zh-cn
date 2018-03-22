@@ -1,13 +1,13 @@
 ---
-title: "显示库中具有不同高度的项目 | Microsoft 文档"
-description: "添加和配置可变高度库，以自动适应库各个项目中的内容量大小"
-services: 
+title: 显示库中具有不同高度的项目 | Microsoft 文档
+description: 添加和配置可变高度库，以自动适应库各个项目中的内容量大小
+services: ''
 suite: powerapps
 documentationcenter: na
 author: fikaradz
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 04/01/2017
 ms.author: fikaradz
 ms.openlocfilehash: 2f4f4867fa9d1fb13dfd613cc3564703b0c220e2
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="show-items-of-different-heights-in-a-powerapps-gallery"></a>显示 PowerApps 库中具有不同高度的项目
 如果数据集中的不同项目在同一字段中包含的数据量不同，则可完全显示出包含更多数据的项目，而无需在包含较少数据的项目后面添加空格。 添加或配置**可变高度**库控件，以便可以：

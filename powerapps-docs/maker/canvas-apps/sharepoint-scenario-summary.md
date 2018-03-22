@@ -1,13 +1,13 @@
 ---
-title: "SharePoint Online 集成方案的端到端演练 | Microsoft 文档"
-description: "对我们在本系列教程中生成的方案进行端到端演练。"
-services: 
+title: SharePoint Online 集成方案的端到端演练 | Microsoft 文档
+description: 对我们在本系列教程中生成的方案进行端到端演练。
+services: ''
 suite: powerapps
 documentationcenter: na
 author: mgblythe
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
 ms.openlocfilehash: 4e5c34c557e165625c23e78f86e5cbb1c0faacba
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>对完成的 SharePoint Online 集成方案进行端到端演练
 > [!NOTE]

@@ -1,13 +1,13 @@
 ---
-title: "了解表 | Microsoft 文档"
-description: "有关使用表、列和记录的参考信息"
-services: 
+title: 了解表 | Microsoft 文档
+description: 有关使用表、列和记录的参考信息
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
 ms.openlocfilehash: 794263448bc067ef8bf44ae46480865c56fdbdf8
-ms.sourcegitcommit: 397a968f57ce5aaaf2b86e804dfedda8cf34f307
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>了解 PowerApps 中的表和记录
 可以创建一个应用，用于访问 Microsoft Excel、SharePoint、SQL Server 以及在记录和表中存储数据的其他多个源中的信息。 若要最有效地处理此类数据，请查看这些结构的基本概念。

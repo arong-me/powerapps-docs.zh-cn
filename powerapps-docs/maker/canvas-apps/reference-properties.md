@@ -1,13 +1,13 @@
 ---
-title: "查找属性 | Microsoft 文档"
-description: "按控件、按类别或按字母顺序查找属性。"
-services: 
+title: 查找属性 | Microsoft 文档
+description: 按控件、按类别或按字母顺序查找属性。
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 03/17/2016
 ms.author: gregli
 ms.openlocfilehash: 11f3a29989057a3dc1a75c40877314596a62859d
-ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="controls-and-properties-in-powerapps"></a>PowerApps 中的控件和属性
 通过设置控件的属性之一配置该控件的外观和行为。 每种类型的控件都有一组不同的属性。 某些属性（例如 **Height** 和 **Width**）是几乎每种类型的控件共有的，但其他属性（例如 **CheckboxSize**）特定于某种类型的控件。

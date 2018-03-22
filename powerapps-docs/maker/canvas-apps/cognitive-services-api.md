@@ -1,13 +1,13 @@
 ---
-title: "在 PowerApps 中使用认知服务 | Microsoft 文档"
-description: "生成使用 Microsoft 认知服务文本分析 API 分析文本的基本应用。"
-services: 
+title: 在 PowerApps 中使用认知服务 | Microsoft 文档
+description: 生成使用 Microsoft 认知服务文本分析 API 分析文本的基本应用。
+services: ''
 suite: powerapps
 documentationcenter: na
 author: mgblythe
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 12/08/2017
 ms.author: mblythe
 ms.openlocfilehash: 2e82feb9df4121b24ffd1f5cad7669c6aa58c8e8
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="use-cognitive-services-in-powerapps"></a>在 PowerApps 中使用认知服务
 本文介绍如何生成使用 [Microsoft 认知服务文本分析 API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) 分析文本的基本应用。 我们将介绍如何设置文本分析 API，以及如何使用[文本分析连接器](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/)连接到它。 随后将介绍如何创建调用此 API 的应用。

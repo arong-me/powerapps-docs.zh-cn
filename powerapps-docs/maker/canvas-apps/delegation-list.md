@@ -1,13 +1,13 @@
 ---
-title: "可委托的数据源 | Microsoft 文档"
-description: "列出了所有受支持的可委托数据源"
-services: 
+title: 可委托的数据源 | Microsoft 文档
+description: 列出了所有受支持的可委托数据源
+services: ''
 suite: powerapps
 documentationcenter: na
 author: archnair
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 08/15/2017
 ms.author: archanan
 ms.openlocfilehash: e073c0a8c471dc8b863894e2d229b15b66b3ce60
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="delegable-data-sources"></a>可委托的数据源
 如[了解委托](delegation-overview.md)一文中所详述，委托是指 PowerApps 将数据处理这项任务委托给数据源，而不是将数据移到应用中进行本地处理。

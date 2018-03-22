@@ -1,13 +1,13 @@
 ---
-title: "Accessibility 属性 | Microsoft 文档"
-description: "有关 TabIndex、Tooltip 等属性的参考信息"
-services: 
+title: Accessibility 属性 | Microsoft 文档
+description: 有关 TabIndex、Tooltip 等属性的参考信息
+services: ''
 suite: powerapps
 documentationcenter: na
 author: fikaradz
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 01/26/2017
 ms.author: fikaradz
 ms.openlocfilehash: d35b4bc7a6e479ce47ad0a0b841a6ed9ccfd1a52
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="accessibility-properties-in-powerapps"></a>PowerApps 中的辅助功能属性
 配置有助于残障用户以其他合适方式与控件进行交互的属性。

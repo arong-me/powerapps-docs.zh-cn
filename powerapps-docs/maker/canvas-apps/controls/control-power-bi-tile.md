@@ -1,13 +1,13 @@
 ---
-title: "Power BI 磁贴控件：参考 | Microsoft 文档"
-description: "有关 Power BI 磁贴控件的信息（包括属性和示例）"
-services: 
+title: Power BI 磁贴控件：参考 | Microsoft 文档
+description: 有关 Power BI 磁贴控件的信息（包括属性和示例）
+services: ''
 suite: powerapps
 documentationcenter: na
 author: fikaradz
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 07/07/2016
 ms.author: fikaradz
 ms.openlocfilehash: 1f351877e3c05b83b4bd9cfa104a7eb22cef5028
-ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>PowerApps 中的 Power BI 磁贴控件
 在应用内显示 [Power BI ](https://powerbi.microsoft.com) 磁贴的控件。

@@ -1,13 +1,13 @@
 ---
-title: "Len 函数 | Microsoft 文档"
-description: "PowerApps 中 Len 函数的参考信息（包括语法和示例）"
-services: 
+title: Len 函数 | Microsoft 文档
+description: PowerApps 中 Len 函数的参考信息（包括语法和示例）
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 06f8e7a80adc7a2175f2da7ab98fb1966d8cf015
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="len-function-in-powerapps"></a>PowerApps 中的 Len 函数
 返回文本字符串的长度。

@@ -1,13 +1,13 @@
 ---
-title: "创建规则 | Microsoft 文档"
-description: "逐步介绍了如何创建规则，从而生成应用逻辑"
-services: 
+title: 创建规则 | Microsoft 文档
+description: 逐步介绍了如何创建规则，从而生成应用逻辑
+services: ''
 suite: PowerApps
 documentationcenter: na
 author: karthik-1
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/10/2017
 ms.author: sharik
 ms.openlocfilehash: 30c069a65d19b965ee5c66411ca08723a6f510ae
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-a-rule-in-powerapps"></a>在 PowerApps 中创建规则
 创建根据指定条件自动修改应用的规则。 例如，根据列表项状态以红色、黄色或绿色显示列表项，或仅对特定用户（如管理人员）显示批准按钮。

@@ -1,13 +1,13 @@
 ---
-title: "Core 属性 | Microsoft 文档"
-description: "有关 Disabled、Visible 和 ReadOnly 属性的参考信息"
-services: 
+title: Core 属性 | Microsoft 文档
+description: 有关 Disabled、Visible 和 ReadOnly 属性的参考信息
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
 ms.openlocfilehash: cad53141d6896ad71caaca77b7bf07fee2ac0600
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="core-properties-in-powerapps"></a>PowerApps 中的核心属性
 配置用户是否能看到控件并与之交互。

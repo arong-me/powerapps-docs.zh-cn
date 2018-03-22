@@ -1,13 +1,13 @@
 ---
-title: "保存并发布应用 | Microsoft 文档"
-description: "面向应用开发者的应用保存和发布分步说明"
-services: 
+title: 保存并发布应用 | Microsoft 文档
+description: 面向应用开发者的应用保存和发布分步说明
+services: ''
 suite: powerapps
 documentationcenter: na
 author: SKjerland
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 09/14/2017
 ms.author: sharik
 ms.openlocfilehash: 739813b2b4905653543461008986901d4e2ee95b
-ms.sourcegitcommit: faaf9adebd72794d2988fba1b27a31d70b5268f8
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="save-and-publish-an-app-in-powerapps"></a>在 PowerApps 中保存并发布应用
 每当保存应用更改时，都只会对你自己和有权编辑此应用的其他所有人自动发布更改。 完成更改后，必须显式发布更改，以便应用的所有共享对象都能使用。

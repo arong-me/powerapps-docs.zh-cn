@@ -1,13 +1,13 @@
 ---
-title: "更改屏幕的大小和方向 | Microsoft 文档"
-description: "更改设置（例如屏幕大小和方向）的分步说明"
-services: 
+title: 更改屏幕的大小和方向 | Microsoft 文档
+description: 更改设置（例如屏幕大小和方向）的分步说明
+services: ''
 suite: powerapps
 documentationcenter: na
 author: lonu
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/16/2016
 ms.author: lonu
 ms.openlocfilehash: be123445c1b719012dcb71c7aa93d93dace64935
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="change-screen-size-and-orientation-in-powerapps"></a>在 PowerApps 中更改屏幕的大小和方向
 通过更改应用屏幕大小和方向来自定义应用。

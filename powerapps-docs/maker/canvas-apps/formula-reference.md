@@ -1,13 +1,13 @@
 ---
-title: "函数、信号和枚举 |Microsoft 文档"
-description: "有关 PowerApps 中的函数、信号和枚举的参考信息。"
-services: 
+title: 函数、信号和枚举 |Microsoft 文档
+description: 有关 PowerApps 中的函数、信号和枚举的参考信息。
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 08/28/2017
 ms.author: gregli
 ms.openlocfilehash: dac61ab9ce4195f6336fe1625cea12f728eb3e41
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps 的公式参考
 公式组合了许多元素。  下面列出的包括：

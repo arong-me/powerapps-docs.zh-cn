@@ -1,12 +1,12 @@
 ---
-title: "列控件 | Microsoft 文档"
-description: "本主题介绍了 Microsoft PowerApps 中的“列”控件。"
+title: 列控件 | Microsoft 文档
+description: 本主题介绍了 Microsoft PowerApps 中的“列”控件。
 services: powerapps
 documentationcenter: na
 author: jasongre
 manager: kfend
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 06/05/2017
 ms.author: kfend
 ms.openlocfilehash: 0e9c04c4786ff4cee11d7aae75245054e93391fa
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="column-control-in-powerapps"></a>PowerApps 中的“列”控件
 用于在“[数据表](control-data-table.md)”控件中显示单个字段。

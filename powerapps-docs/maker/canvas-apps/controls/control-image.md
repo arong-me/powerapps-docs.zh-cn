@@ -1,13 +1,13 @@
 ---
-title: "图像控件：参考 | Microsoft 文档"
-description: "有关图像控件的信息（包括属性和示例）"
-services: 
+title: 图像控件：参考 | Microsoft 文档
+description: 有关图像控件的信息（包括属性和示例）
+services: ''
 suite: powerapps
 documentationcenter: na
 author: fikaradz
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 0ab25713976e9f89fa74b5f7664b13dca447841e
-ms.sourcegitcommit: 87327f99636c68c62c755c4eb48861249a5a3add
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="image-control-in-powerapps"></a>PowerApps 中的图像控件
 显示来自本地文件或数据源等来源的图像的控件。

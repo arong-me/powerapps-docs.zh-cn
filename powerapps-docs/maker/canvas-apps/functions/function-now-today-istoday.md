@@ -1,13 +1,13 @@
 ---
-title: "Now、Today 和 IsToday 函数 | Microsoft 文档"
-description: "PowerApps 中 Now、Today 和 IsToday 函数的引用信息（包括语法和示例）"
-services: 
+title: Now、Today 和 IsToday 函数 | Microsoft 文档
+description: PowerApps 中 Now、Today 和 IsToday 函数的引用信息（包括语法和示例）
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 483922d2c96c23d1d2672aed7e284e30d38f298a
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="now-today-and-istoday-functions-in-powerapps"></a>PowerApps 中的 Now、Today 和 IsToday 函数
 返回当前日期和时间，以及测试某个日期/时间值是否为今天。

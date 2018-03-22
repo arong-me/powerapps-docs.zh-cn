@@ -1,13 +1,13 @@
 ---
-title: "发送推送通知 | Microsoft 文档"
-description: "了解如何在 PowerApps 中向应用发送原生推送通知。"
-services: 
+title: 发送推送通知 | Microsoft 文档
+description: 了解如何在 PowerApps 中向应用发送原生推送通知。
+services: ''
 suite: powerapps
 documentationcenter: na
 author: jamesol-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 08/08/2017
 ms.author: jamesol
 ms.openlocfilehash: 29199a60004f2cf77e4c4eaea3d812c4d98fcc20
-ms.sourcegitcommit: badede93a7d250f46db176792494b522994237b0
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="send-a-pull-notification-in-powerapps"></a>在 PowerApps 发送推送通知
 推送通知用于移动应用中的使用者和业务情形，主要用来与应用用户进行交互，并帮助他们优先处理关键任务。 在 PowerApps 中，可以使用 PowerApps 通知连接器发送通知。 可以将原生推送通知发送到在 PowerApps 中创建的任何应用。 我们计划在今后支持更多通知类型。
