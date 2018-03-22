@@ -2,9 +2,5 @@
   href: 'get-started.yml#step-1'
 - name: 利用 SharePoint 创建应用
   href: 'create-app-sharepoint.yml#step-1'
-- name: 利用 Common Data Service 创建应用
-  href: 'create-app-cds.yml#step-1'
 - name: 管理应用
   href: 'manage-apps.yml#step-1'
-- name: 管理数据
-  href: 'manage-data.yml#step-1'

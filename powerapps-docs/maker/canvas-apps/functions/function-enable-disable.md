@@ -1,13 +1,13 @@
 ---
-title: "Enable 和 Disable 函数 | Microsoft 文档"
-description: "PowerApps 中 Enable 和 Disable 函数的参考信息（包括语法和示例）"
-services: 
+title: Enable 和 Disable 函数 | Microsoft 文档
+description: PowerApps 中 Enable 和 Disable 函数的参考信息（包括语法和示例）
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 3b9801e804284cb52d389aa0c57d1247a008dd0d
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enable-and-disable-functions-in-powerapps"></a>PowerApps 中的 Enable 和 Disable 函数
 打开或关闭[信号](signals.md)。

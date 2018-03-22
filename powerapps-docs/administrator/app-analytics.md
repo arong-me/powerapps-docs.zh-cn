@@ -1,13 +1,13 @@
 ---
-title: "应用分析 | Microsoft 文档"
-description: "查看报告，了解应用的使用情况和性能。"
-services: 
+title: 应用分析 | Microsoft 文档
+description: 查看报告，了解应用的使用情况和性能。
+services: ''
 suite: powerapps
 documentationcenter: na
 author: jamesol-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 08/29/2017
 ms.author: jamesol
 ms.openlocfilehash: e66978f6134919b18f4cfba913f1bb34394d8832
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="view-analytics-reports-for-your-app"></a>查看应用的分析报告
 你是否构建了一个应用并将其共享到了组织？  你是否想要知道每天有多少个同事在使用它？
