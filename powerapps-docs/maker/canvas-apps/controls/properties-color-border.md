@@ -1,13 +1,13 @@
 ---
-title: "Color and border 属性 | Microsoft 文档"
-description: "有关 BorderColor、HoverBorderColor 和 PressedBorderColor 等属性的参考信息"
-services: 
+title: Color and border 属性 | Microsoft 文档
+description: 有关 BorderColor、HoverBorderColor 和 PressedBorderColor 等属性的参考信息
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
 ms.openlocfilehash: 913e9b78445db03fbd59fedbdd0bf9d992175bf1
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="color-and-border-properties-in-powerapps"></a>PowerApps 中的颜色和边框属性
 ## <a name="overview"></a>概述
@@ -59,7 +59,7 @@ DisabledBorderColor – 控件的 [DisplayMode](properties-core.md) 属性设置
 
 * 适用于[添加图片](control-add-picture.md)、[按钮](control-button.md)、[复选框](control-check-box.md)、[柱状图](control-column-line-chart.md)、[日期选取器](control-date-picker.md)、[下拉列表](control-drop-down.md)、[导出](control-export-import.md)、[HTML 文本](control-html-text.md)、[图像](control-image.md)、[导入](control-export-import.md)、[标签](control-text-box.md)、[折线图](control-column-line-chart.md)、[列表框](control-list-box.md)、[麦克风](control-microphone.md)、[PDF 查看器](control-pdf-viewer.md)、[饼图](control-pie-chart.md)、[单选按钮](control-radio.md)、[滑块](control-slider.md)、[文本输入](control-text-input.md)、[计时器](control-timer.md)和[切换](control-toggle.md)控件。
 
-DisabledColor – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件中的文本颜色。
+**DisabledColor** – 控件的 **[DisplayMode](properties-core.md)** 属性设置为 **Disabled** 时，该控件中的文本颜色。
 
 * 适用于[添加图片](control-add-picture.md)、[按钮](control-button.md)、[复选框](control-check-box.md)、[日期选取器](control-date-picker.md)、[下拉列表](control-drop-down.md)、[导出](control-export-import.md)、[导入](control-export-import.md)、[标签](control-text-box.md)、[列表框](control-list-box.md)、[麦克风](control-microphone.md)、[单选按钮](control-radio.md)、[文本输入](control-text-input.md)和[计时器](control-timer.md)控件。
 
