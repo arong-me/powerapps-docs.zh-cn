@@ -255,7 +255,7 @@ ms.lasthandoff: 03/22/2018
 
 **[Replace](functions/function-replace-substitute.md)** – 从字符串的起始位置开始，将一个字符串的一部分替换为另一个字符串。
 
-[Reset](functions/function-reset.md) - 将输入控件重置为默认值，放弃任何用户更改。
+**[Reset](functions/function-reset.md)** - 将输入控件重置为默认值，放弃任何用户更改。
 
 **[ResetForm](functions/function-form.md)** – 重置用于编辑某个现有项的表单控件。
 
@@ -278,7 +278,7 @@ ms.lasthandoff: 03/22/2018
 
 **[Second](functions/function-datetime-parts.md)** – 检索日期/时间值的秒部分。
 
-[Set](functions/function-set.md) – 设置全局变量的值。
+**[Set](functions/function-set.md)** – 设置全局变量的值。
 
 **[ShowColumns](functions/function-table-shaping.md)** – 返回仅包含所选列的表。
 
@@ -332,7 +332,7 @@ ms.lasthandoff: 03/22/2018
 
 **[Update](functions/function-update-updateif.md)** – 替换数据源中的某条记录。
 
-[UpdateContext](functions/function-updatecontext.md) – 设置当前屏幕的一个或多个[上下文变量](working-with-variables.md#create-a-context-variable)的值。
+**[UpdateContext](functions/function-updatecontext.md)** – 设置当前屏幕的一个或多个[上下文变量](working-with-variables.md#create-a-context-variable)的值。
 
 **[UpdateIf](functions/function-update-updateif.md)** – 基于某个条件修改数据源中的一组记录。
 
@@ -347,7 +347,7 @@ ms.lasthandoff: 03/22/2018
 
 **[VarP](functions/function-aggregates.md)** – 返回其参数的方差。  
 
-[ResetForm](functions/function-form.md) – 重置用于查看现有项的表单控件。
+**[ViewForm](functions/function-form.md)** – 重置用于查看现有项的表单控件。
 
 ## <a name="w"></a>W
 **[Weekday](functions/function-datetime-parts.md)** – 检索日期/时间值的星期几部分。
