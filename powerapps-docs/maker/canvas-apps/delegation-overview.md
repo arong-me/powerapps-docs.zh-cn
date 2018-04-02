@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/15/2017
+ms.date: 03/27/2018
 ms.author: gregli
-ms.openlocfilehash: 40c933fb46883d7fa33ffa626d8ef317d4206060
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 98cf32e1b379812e1d3175e6403b7c6fd7fb794b
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="understand-delegation"></a>了解委派
 PowerApps 包括一组用于数据表筛选、排序和整理的功能强大的函数：**[Filter](functions/function-filter-lookup.md)**、**[Sort](functions/function-sort.md)**、**[AddColumns](functions/function-table-shaping.md)**，等等。  可以使用这些函数，让用户重点访问其所需的信息。  对于具有数据库背景的用户来说，使用这些函数相当于编写数据库查询。  
@@ -30,7 +30,7 @@ PowerApps 包括一组用于数据表筛选、排序和整理的功能强大的�
 
 但这会很复杂，这也是写作本文的原因，因为并非所有能够在 PowerApps 公式中表示的内容都可以委派给所有数据源。  PowerApps 语言与 Excel 的公式语言类似，旨在让用户能够完整且即时地访问内存中的整个工作簿，并且提供各种数字和文本操作函数。  因此，PowerApps 语言要比大多数数据源能够支持的语言（包括强大的数据库引擎，例如 SQL Server）丰富得多。
 
-**处理大型数据集需要使用数据源和能够委派的公式。**  若要让应用始终运行良好，同时要确保用户能够访问所需的全部信息，这是唯一的方式。 请注意[蓝点建议](delegation-overview.md#blue-dot-suggestions)，这表示不能使用委派的地方。  如果处理的是小型数据集（不到 500 条记录），则可使用任何数据源和公式，因为在公式不能委派的情况下，可以在本地处理。  
+**处理大型数据集需要使用数据源和能够委派的公式。**  若要让应用始终运行良好，同时要确保用户能够访问所需的全部信息，这是唯一的方式。 请注意[蓝点建议](delegation-overview.md#blue-dot-suggestions)，这表示不能使用委派的地方。  如果处理的是小型数据集（不到 500 条记录），则可使用任何数据源和公式，因为在公式不能委派的情况下，可以在本地处理。 
 
 ## <a name="delegable-data-sources"></a>可委托的数据源
 请参阅[委派列表](delegation-list.md)以获取完整的列表，了解哪些数据源支持委派，以及支持到何种程度。
@@ -83,7 +83,7 @@ PowerApps 包括一组用于数据表筛选、排序和整理的功能强大的�
 
 无法委派 [StdevP](functions/function-aggregates.md) 和 [VarP](functions/function-aggregates.md) 等其他聚合函数。
 
-### <a name="other-functions"></a>其他函数
+## <a name="non-delegable-functions"></a>非可委派函数
 所有其他函数都不支持委派，包括以下重要函数：
 
 * 表整理：**[AddColumns](functions/function-table-shaping.md)**、**[DropColumns](functions/function-table-shaping.md)**、**[ShowColumns](functions/function-table-shaping.md)**...
@@ -104,11 +104,19 @@ PowerApps 包括一组用于数据表筛选、排序和整理的功能强大的�
 ## <a name="non-delegable-limits"></a>不可委派限制
 将在本地处理不可委派的公式。  这样就可以使用整套 PowerApps 公式语言。  但是也有代价：所有数据都必须先转到设备上，这可能需要通过网络检索大量的数据。  这可能需要一段时间，让人以为应用很慢或者可能已挂起。
 
-为了避免这种情况，PowerApps 对能够在本地处理的数据量施加了一个限制：500 条记录。  我们选择此数字是为了让你仍然能够对小型数据集进行完整的访问，同时让你虽然只能看到部分结果，也能练习对大型数据集的使用。
+为了避免这种情况，PowerApps 对能够在本地处理的数据量进行了限制：默认情况下为 500 条记录。  我们选择此数字是为了让你仍然能够对小型数据集进行完整的访问，同时让你虽然只能看到部分结果，也能练习对大型数据集的使用。
 
 显然，使用此工具时必须小心，因为这可能会让用户感到困惑。  例如，你有一个 **Filter** 函数，其选择公式不能委派，你需要对一个记录数为 1 百万的数据源应用该函数。  由于筛选在本地进行，因此只会扫描这 1 百万记录中的前 500 个记录。  如果所需记录是第 501 或第 500,001 个记录，则 **Filter** 不会考虑或返回该记录。
 
 另一可能会造成混淆的情形是使用聚合函数。  对上述包含百万记录的数据源的一个列运行 **Average** 函数。  由于 **Average** 尚无法进行委派，因此只会对前 500 个记录进行平均。  必须小心这种情况，否则你会将应用用户基于部分数据得出的答案误认为是基于完整数据得出的答案。
+
+## <a name="changing-the-limit"></a>更改限制
+
+默认记录数为 500 条。  通过转到“文件”选项卡，选择左侧导航窗格中的“应用设置”，并在试验性功能下查找，可以更改此数字。  在此处可找到“非可委派查询的数据行限制”设置，可以在 1 到 2000 的范围内进行更改。  此设置在应用内有效。
+
+在某些情况下，你会发现 2000（或 1000 或 1500）即可满足方案的需求。  可以谨慎增大此数字以适应你的方案。  请注意，如果增大此数字，应用的性能可能会降低，特别是对于具有大量列的宽表。  最好的做法仍是始终在你的能力范围内进行委派。
+
+要确保应用可以扩展为大型数据集，请将此设置降低为 1。  现在，任何无法委派的内容只会返回一条记录，在测试应用时应该很容易被检测到。  这有助于在尝试将概念证明应用用于生产时防止意外发生。
 
 ## <a name="blue-dot-suggestions"></a>蓝点建议
 为了方便用户了解什么可以委派，什么不可以委派，特此根据创作体验提出了蓝点建议，这些建议针对的是包含不可委派内容的公式。

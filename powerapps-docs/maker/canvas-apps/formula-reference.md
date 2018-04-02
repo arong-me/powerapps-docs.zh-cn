@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/28/2017
 ms.author: gregli
-ms.openlocfilehash: dac61ab9ce4195f6336fe1625cea12f728eb3e41
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 3ceb9eae42e88e7cfb78492f9e58812481a0881d
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps 的公式参考
 公式组合了许多元素。  下面列出的包括：
@@ -165,7 +165,9 @@ ms.lasthandoff: 03/22/2018
 **[Hour](functions/function-datetime-parts.md)** – 返回日期/时间值的小时部分。
 
 ## <a name="i"></a>I
-**[If](functions/function-if.md)** – 如果条件为 true，返回一个值，否则返回另一个值。  
+**[If](functions/function-if.md)** – 如果条件为 true，返回一个值，否则返回另一个值。 
+
+**[IfError](functions/function-iferror.md)**  - 检测错误并提供替代值或执行操作。 
 
 **[IsBlank](functions/function-isblank-isempty.md)** – 检查是否为[空](functions/function-isblank-isempty.md)值。
 
@@ -255,7 +257,7 @@ ms.lasthandoff: 03/22/2018
 
 **[Replace](functions/function-replace-substitute.md)** – 从字符串的起始位置开始，将一个字符串的一部分替换为另一个字符串。
 
-**[Reset](functions/function-reset.md)** - 将输入控件重置为默认值，放弃任何用户更改。
+[Reset](functions/function-reset.md) - 将输入控件重置为默认值，放弃任何用户更改。
 
 **[ResetForm](functions/function-form.md)** – 重置用于编辑某个现有项的表单控件。
 
@@ -278,9 +280,11 @@ ms.lasthandoff: 03/22/2018
 
 **[Second](functions/function-datetime-parts.md)** – 检索日期/时间值的秒部分。
 
-**[Set](functions/function-set.md)** – 设置全局变量的值。
+[Set](functions/function-set.md) – 设置全局变量的值。
 
 **[ShowColumns](functions/function-table-shaping.md)** – 返回仅包含所选列的表。
+
+**[ShowError](functions/function-showerror.md)**  – 向用户显示一条错误消息。
 
 **[Shuffle](functions/function-shuffle.md)** – 随机重新排列表记录的顺序。
 
@@ -332,7 +336,7 @@ ms.lasthandoff: 03/22/2018
 
 **[Update](functions/function-update-updateif.md)** – 替换数据源中的某条记录。
 
-**[UpdateContext](functions/function-updatecontext.md)** – 设置当前屏幕的一个或多个[上下文变量](working-with-variables.md#create-a-context-variable)的值。
+[UpdateContext](functions/function-updatecontext.md) – 设置当前屏幕的一个或多个[上下文变量](working-with-variables.md#create-a-context-variable)的值。
 
 **[UpdateIf](functions/function-update-updateif.md)** – 基于某个条件修改数据源中的一组记录。
 
@@ -347,7 +351,7 @@ ms.lasthandoff: 03/22/2018
 
 **[VarP](functions/function-aggregates.md)** – 返回其参数的方差。  
 
-**[ViewForm](functions/function-form.md)** – 重置用于查看现有项的表单控件。
+[ResetForm](functions/function-form.md) – 重置用于查看现有项的表单控件。
 
 ## <a name="w"></a>W
 **[Weekday](functions/function-datetime-parts.md)** – 检索日期/时间值的星期几部分。
