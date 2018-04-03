@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: bc8b69c482bd8266b0915d079db05aacc847be19
-ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+ms.openlocfilehash: 3eef0259c97819de9d98af248457faa90e373323
+ms.sourcegitcommit: c5e3991e0e4e9f22a1e094d699f35adabfb97c6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="find-and-run-apps-overview"></a>查找并运行应用概述
 无论是面向在现场工作的移动工作者还是热门医院里业务繁忙的医生，应用制造商都可以创建基于任务和角色的定制画布应用来适应所需的工作方式。 画布应用制造商可自定义画布应用的几乎各个方面，并可连接多个数据源，帮助用户集中精力完成正在处理的任务。
@@ -34,10 +34,11 @@ ms.lasthandoff: 03/28/2018
 
 * [在 Web 浏览器中运行应用](run-app-browser.md)
 * [在移动设备上运行画布应用](run-app-client.md)
+* [在移动设备上运行模型驱动应用](run-app-client-model-driven.md)
 * [在 Microsoft Teams 中添加并运行应用](open-app-embedded-in-teams.md)
 * [在 AppSource 中查找并运行应用](app-source.md)
 
 ## <a name="next-steps"></a>后续步骤
 * 确保使用的是[支持的设备平台和浏览器](../maker/canvas-apps/limits-and-config.md)。
 * 若要运行画布应用，请从 [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) 或 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) 下载并安装 PowerApps。
-* 若要在手机上运行模型驱动的应用，请从 [App Store](https://itunes.apple.com/app/dynamics-crm-for-phones/id1003997947?ls=1&mt=8) 或 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmphone) 下载并安装手机版 Dynamics 365。 若要在平板电脑上运行模型驱动的应用，请从 [App Store](https://itunes.apple.com/app/microsoft-dynamics-crm/id678800460?mt=8)、[Google Play](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmtablet) 或 [Windows Store](https://www.microsoft.com/store/p/microsoft-dynamics-365/9nblggh4rfqp) 下载平板电脑版 Dynamics 365。 有关详细信息，请参阅[快速入门：在移动设备上运行模型驱动的应用](run-app-client-model-driven.md)。
+* 若要在手机上运行模型驱动的应用，请从 [App Store](https://itunes.apple.com/app/dynamics-crm-for-phones/id1003997947?ls=1&mt=8) 或 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmphone) 下载并安装手机版 Dynamics 365。 若要在平板电脑上运行模型驱动的应用，请从 [App Store](https://itunes.apple.com/app/microsoft-dynamics-crm/id678800460?mt=8)、[Google Play](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmtablet) 或 [Windows Store](https://www.microsoft.com/store/p/microsoft-dynamics-365/9nblggh4rfqp) 下载平板电脑版 Dynamics 365。
