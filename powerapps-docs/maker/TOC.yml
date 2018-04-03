@@ -1,0 +1,231 @@
+- name: 创建应用
+  href: index.md
+  expanded: true
+  items:
+    - name: 注册 30 天免费试用版
+      href: signup-for-powerapps.md
+    - name: 注册 PowerApps 社区计划
+      href: dev-community-plan.md
+- name: 画布应用
+  href: ./canvas-apps/getting-started.md
+  items:
+    - name: 快速入门
+      items:
+        - name: 打开示例应用
+          href: ./canvas-apps/open-and-run-a-sample-app.md
+        - name: 生成应用
+          items:
+            - name: 从 Common Data Service for Apps
+              href: ./canvas-apps/data-platform-create-app.md
+            - name: 从 SharePoint
+              href: ./canvas-apps/app-from-sharepoint.md
+            - name: 从 Excel
+              href: ./canvas-apps/get-started-create-from-data.md
+        - name: 自定义 SharePoint 列表窗体
+          href: ./canvas-apps/customize-list-form.md
+        - name: 在 SharePoint 中创建应用
+          href: ./canvas-apps/generate-app-from-sharepoint-list-interface.md
+    - name: 教程
+      items:
+        - name: 自定义生成的应用
+          items:
+            - name: 自定义浏览屏幕
+              href: ./canvas-apps/customize-layout-sharepoint.md
+            - name: 自定义窗体
+              href: ./canvas-apps/customize-forms-sharepoint.md
+            - name: 自定义卡片
+              href: ./canvas-apps/customize-card.md
+        - name: 从头开始创建应用
+          href: ./canvas-apps/data-platform-create-app-scratch.md
+        - name: 共享应用
+          href: ./canvas-apps/share-app.md
+        - name: 在 Power BI 中嵌入应用
+          href: ./canvas-apps/embed-powerapps-powerbi.md
+    - name: 概念
+      items:
+        - name: 公式入门
+          href: ./canvas-apps/working-with-formulas.md
+        - name: 表和记录
+          href: ./canvas-apps/working-with-tables.md
+        - name: 数据窗体
+          href: ./canvas-apps/working-with-forms.md
+        - name: 数据窗体布局
+          href: ./canvas-apps/working-with-form-layout.md
+        - name: 数据卡
+          href: ./canvas-apps/working-with-cards.md
+        - name: 变量
+          href: ./canvas-apps/working-with-variables.md
+        - name: 公式
+          href: ./canvas-apps/working-with-formulas-in-depth.md
+        - name: 日期和时间
+          href: ./canvas-apps/show-text-dates-times.md
+        - name: 数据源
+          href: ./canvas-apps/working-with-data-sources.md
+        - name: 了解 SharePoint 窗体集成
+          href: ./canvas-apps/sharepoint-form-integration.md
+        - name: PowerApps 自定义视觉对象
+          href: ./canvas-apps/powerapps-custom-visual.md
+        - name: 画布应用开发
+          items:
+            - name: 适用于企业开发人员、合作伙伴和 ISV 的 PowerApps
+              href: ./canvas-apps/dev-enterprise-intro.md
+            - name: 生成并认证自定义连接器
+              href: ./canvas-apps/register-custom-api.md
+            - name: 集成网站和其他技术
+              href: ./canvas-apps/embed-apps-dev.md
+            - name: 开发可脱机使用的应用
+              href: ./canvas-apps/offline-apps.md
+            - name: 让客户体验你的应用
+              href: ./canvas-apps/dev-appsource-test-drive.md
+    - name: 操作方法指南
+      items:
+        - name: 从模板创建应用
+          href: ./canvas-apps/get-started-test-drive.md
+        - name: 从零开始生成 Excel 应用
+          href: ./canvas-apps/get-started-create-from-blank.md
+        - name: 自定义应用
+          items:
+            - name: 添加并配置控件
+              href: ./canvas-apps/add-configure-controls.md
+            - name: 添加屏幕
+              href: ./canvas-apps/add-screen-context-variables.md
+            - name: 添加数据连接
+              href: ./canvas-apps/add-data-connection.md
+            - name: 显示项目列表
+              href: ./canvas-apps/add-gallery.md
+            - name: 显示具有不同高度的项目
+              href: ./canvas-apps/gallery-dynamic-sizing.md
+            - name: 添加表单
+              href: ./canvas-apps/add-form.md
+            - name: 显示当前用户
+              href: ./canvas-apps/show-current-user.md
+            - name: 添加列表控件
+              href: ./canvas-apps/add-list-box-drop-down-list-radio-button.md
+            - name: 使用查找功能连接列表
+              href: ./canvas-apps/sharepoint-lookup-fields.md
+            - name: 添加图表
+              href: ./canvas-apps/use-line-pie-bar-chart.md
+            - name: 添加多媒体
+              href: ./canvas-apps/add-images-pictures-audio-video.md
+            - name: 扫描条码
+              href: ./canvas-apps/scan-barcode.md
+            - name: 添加流
+              href: ./canvas-apps/using-logic-flows.md
+            - name: 添加滚动屏幕
+              href: ./canvas-apps/add-scrolling-screen.md
+            - name: 构建全局应用
+              href: ./canvas-apps/global-apps.md
+        - name: 管理应用
+          items:
+            - name: powerapps.com 简介
+              href: ./canvas-apps/intro-maker-portal.md
+            - name: 编辑应用
+              href: ./canvas-apps/edit-app.md
+            - name: 更改屏幕的大小和方向
+              href: ./canvas-apps/set-aspect-ratio-portrait-landscape.md
+            - name: 更改应用名称和磁贴
+              href: ./canvas-apps/set-name-tile.md
+            - name: 保存并发布应用
+              href: ./canvas-apps/save-publish-app.md
+            - name: 删除应用
+              href: ./canvas-apps/delete-app.md
+            - name: 将你的应用还原到之前的版本
+              href: ./canvas-apps/restore-an-app.md
+        - name: 连接到数据
+          items:
+            - name: 管理数据连接
+              href: ./canvas-apps/add-manage-connections.md
+            - name: 连接到 SharePoint
+              href: ./canvas-apps/connect-to-sharepoint.md
+            - name: 委派
+              href: ./canvas-apps/delegation-overview.md
+            - name: 可委托的数据源
+              href: ./canvas-apps/delegation-list.md
+            - name: 管理网关
+              href: ./canvas-apps/gateway-management.md
+            - name: 了解网关
+              href: ./canvas-apps/gateway-reference.md
+        - name: 与其他技术集成
+          items:
+            - name: SharePoint Online
+              items:
+                - name: SharePoint Online 集成概述
+                  href: ./canvas-apps/sharepoint-scenario-intro.md
+                - name: 设置 SharePoint Online 列表
+                  href: ./canvas-apps/sharepoint-scenario-setup.md
+                - name: 生成应用
+                  href: ./canvas-apps/sharepoint-scenario-generate-app.md
+                - name: 创建审批流
+                  href: ./canvas-apps/sharepoint-scenario-approval-flow.md
+                - name: 从头开始创建应用
+                  href: ./canvas-apps/sharepoint-scenario-build-app.md
+                - name: 创建 Power BI 报表
+                  href: ./canvas-apps/sharepoint-scenario-build-report.md
+                - name: 发布 Power BI 报表
+                  href: ./canvas-apps/sharepoint-scenario-publish-report.md
+                - name: 嵌入 Power BI 报表
+                  href: ./canvas-apps/sharepoint-scenario-embed-report.md
+                - name: 创建警报流
+                  href: ./canvas-apps/sharepoint-scenario-alerts-flow.md
+                - name: 浏览已完成方案
+                  href: ./canvas-apps/sharepoint-scenario-summary.md
+            - name: 认知服务
+              href: ./canvas-apps/cognitive-services-api.md
+    - name: 参考
+      items:
+        - name: 公式参考
+          href: ./canvas-apps/formula-reference.md
+        - name: 控件参考
+          href: ./canvas-apps/reference-properties.md
+        - name: 连接器参考
+          href: ./canvas-apps/connections-list.md
+        - name: 系统要求、限制和配置
+          href: ./canvas-apps/limits-and-config.md
+    - name: 资源
+      items:
+        - name: 使用环境
+          href: ./canvas-apps/working-with-environments.md
+        - name: 新功能
+          href: ./canvas-apps/release-notes.md
+        - name: 常见问题和解决方法
+          href: ./canvas-apps/common-issues-and-resolutions.md
+        - name: 即将推出的网络研讨会和近期网络研讨会
+          href: ./canvas-apps/webinars-listing.md
+- name: 模型驱动应用
+  href: ./model-driven-apps/model-driven-app-overview.md
+  items:
+    - name: 示例应用概述
+      href: ./model-driven-apps/overview-model-driven-samples.md
+    - name: 共享模型驱动应用
+      href: ./model-driven-apps/share-model-driven-app.md
+    - name: 在移动设备上运行模型驱动应用
+      href: ./model-driven-apps/run-app-client-model-driven.md
+- name: Common Data Service for Apps
+  href: ./common-data-service/data-platform-intro.md
+  items:
+    - name: 快速入门
+      items:
+        - name: 创建实体
+          href: ./common-data-service/data-platform-create-entity.md
+        - name: 通过数据创建自定义实体
+          href: ./common-data-service/data-platform-cds-newentity-pq.md
+        - name: 管理字段
+          href: ./common-data-service/data-platform-manage-fields.md
+        - name: 创建选项集
+          href: ./common-data-service/custom-picklists.md
+        - name: 创建关系
+          href: ./common-data-service/data-platform-entity-lookup.md
+        - name: 创建业务规则
+          href: ./common-data-service/data-platform-create-business-rule.md
+        - name: 删除自定义实体
+          href: ./common-data-service/data-platform-delete-entity.md
+    - name: 教程
+      items:
+        - name: 创建带组件的自定义实体
+          href: ./common-data-service/create-custom-entity.md
+    - name: 示例和资源
+      href: ./common-data-service/samples-resources.md
+    - name: 面向开发人员
+      href: ../developer/common-data-service/TOC.yml
+- name: 常见数据模型
+  href: ../common-data-model/overview.md

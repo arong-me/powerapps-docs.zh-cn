@@ -1,0 +1,10 @@
+- name: 查找并运行应用
+  href: index.md
+- name: 在浏览器中
+  href: run-app-browser.md
+- name: 在手机（画布）上
+  href: run-app-client.md
+- name: 在 Microsoft Teams 中
+  href: open-app-embedded-in-teams.md
+- name: 从 AppSource
+  href: app-source.md

@@ -1,0 +1,19 @@
+- name: 概述
+  href: overview.md
+- name: 解决方案简介
+  href: introduction-solutions.md
+- name: Common Data Service for Apps 数据实体
+  href: entities.md
+  items:
+    - name: 实体元数据
+      href: entity-metadata.md
+    - name: 属性元数据
+      href: entity-attribute-metadata.md
+    - name: 实体关系元数据
+      href: entity-relationship-metadata.md
+    - name: 实体参考
+      href: reference/entities/toc.yml
+- name: 使用代码应用业务逻辑
+  href: apply-business-logic-with-code.md
+- name: 使用 Common Data Service for Apps Web 服务
+  href: use-web-services.md

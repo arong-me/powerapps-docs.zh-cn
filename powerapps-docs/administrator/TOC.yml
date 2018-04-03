@@ -1,0 +1,40 @@
+- name: 管理 PowerApps
+  href: index.md
+- name: 快速入门
+  items:
+    - name: 创建环境
+      href: create-environment.md
+    - name: 创建 DLP 策略
+      href: create-dlp-policy.md
+    - name: 查看租户中的活动用户
+      href: admin-view-user-licenses.md
+    - name: 查找环境中的应用
+      href: admin-view-apps.md
+- name: 概念
+  items:
+    - name: 许可概述
+      href: pricing-billing-skus.md
+    - name: 环境概述
+      href: environments-overview.md
+    - name: 数据组简介
+      href: introduction-to-data-groups.md
+    - name: 区域概述
+      href: regions-overview.md
+- name: 操作方法指南
+  items:
+    - name: 购买 PowerApps
+      href: signup-for-powerapps-admin.md
+    - name: 管理组织中的许可证
+      href: signup-question-and-answer.md
+    - name: 管理 DLP 策略
+      href: prevent-data-loss.md
+    - name: 创建数据库
+      href: create-database.md
+    - name: 管理员环境
+      href: environments-administration.md
+    - name: 配置环境安全设置
+      href: database-security.md
+    - name: 管理组织中的应用
+      href: admin-manage-apps.md
+    - name: 在租户或环境之间移动应用
+      href: environment-and-tenant-migration.md
