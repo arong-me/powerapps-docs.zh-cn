@@ -13,6 +13,10 @@
       items:
         - name: 打开示例应用
           href: ./canvas-apps/open-and-run-a-sample-app.md
+        - name: 从模板创建应用
+          href: ./canvas-apps/get-started-test-drive.md
+        - name: 在 SharePoint 中创建应用
+          href: ./canvas-apps/generate-app-from-sharepoint-list-interface.md
         - name: 生成应用
           items:
             - name: 从 Common Data Service for Apps
@@ -21,10 +25,6 @@
               href: ./canvas-apps/app-from-sharepoint.md
             - name: 从 Excel
               href: ./canvas-apps/get-started-create-from-data.md
-        - name: 自定义 SharePoint 列表窗体
-          href: ./canvas-apps/customize-list-form.md
-        - name: 在 SharePoint 中创建应用
-          href: ./canvas-apps/generate-app-from-sharepoint-list-interface.md
     - name: 教程
       items:
         - name: 自定义生成的应用
@@ -79,8 +79,8 @@
               href: ./canvas-apps/dev-appsource-test-drive.md
     - name: 操作方法指南
       items:
-        - name: 从模板创建应用
-          href: ./canvas-apps/get-started-test-drive.md
+        - name: 自定义 SharePoint 列表窗体
+          href: ./canvas-apps/customize-list-form.md
         - name: 从零开始生成 Excel 应用
           href: ./canvas-apps/get-started-create-from-blank.md
         - name: 自定义应用
@@ -115,6 +115,8 @@
               href: ./canvas-apps/add-scrolling-screen.md
             - name: 构建全局应用
               href: ./canvas-apps/global-apps.md
+            - name: 创建提供辅助功能的应用
+              href: ./canvas-apps/accessible-apps.md
         - name: 管理应用
           items:
             - name: powerapps.com 简介
@@ -145,6 +147,8 @@
               href: ./canvas-apps/gateway-management.md
             - name: 了解网关
               href: ./canvas-apps/gateway-reference.md
+            - name: Power Query 疑难解答
+              href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
         - name: 与其他技术集成
           items:
             - name: SharePoint Online
@@ -198,8 +202,8 @@
       href: ./model-driven-apps/overview-model-driven-samples.md
     - name: 共享模型驱动应用
       href: ./model-driven-apps/share-model-driven-app.md
-    - name: 在移动设备上运行模型驱动应用
-      href: ./model-driven-apps/run-app-client-model-driven.md
+    - name: 面向开发人员
+      href: ../developer/model-driven-apps/TOC.yml
 - name: Common Data Service for Apps
   href: ./common-data-service/data-platform-intro.md
   items:
