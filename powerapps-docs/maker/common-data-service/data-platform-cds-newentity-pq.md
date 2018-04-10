@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: anneta
-ms.openlocfilehash: def53153d3db75b0f56d7878324fa1391c8c58a8
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 77906602fad6708857a6c34f44d1bc3c7c258f6c
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="quickstart-add-data-to-an-entity-in-the-common-data-service-by-using-power-query"></a>快速入门：使用 Power Query 将数据添加到 Common Data Service 中的实体
 在此过程中，将在 [Common Data Service for Apps](data-platform-intro.md) 中创建实体，并使用 Power Query 将来自 OData 源的数据填充到该实体。 可以使用相同的技术来集成来自这些联机和本地源的数据，其中包括：
@@ -91,3 +91,4 @@ ms.lasthandoff: 03/22/2018
 
 我们非常高兴地宣布推出此功能，很想听到大家的反馈。 请[向我们发送对此功能的建议和反馈](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)！
 
+如果看到[与权限相关的错误消息](data-platform-cds-newentity-troubleshooting-mashup.md)，请联系管理员。

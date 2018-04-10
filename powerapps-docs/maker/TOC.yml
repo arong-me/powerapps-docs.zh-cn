@@ -41,6 +41,12 @@
           href: ./canvas-apps/share-app.md
         - name: 在 Power BI 中嵌入应用
           href: ./canvas-apps/embed-powerapps-powerbi.md
+    - name: 示例
+      items:
+        - name: 零用金报销单应用
+          href: ./canvas-apps/expense-report-install.md
+        - name: 技术支持应用
+          href: ./canvas-apps/help-desk-install.md
     - name: 概念
       items:
         - name: 公式入门
@@ -65,6 +71,8 @@
           href: ./canvas-apps/sharepoint-form-integration.md
         - name: PowerApps 自定义视觉对象
           href: ./canvas-apps/powerapps-custom-visual.md
+        - name: 将 InfoPath 表单转换为 PowerApps
+          href: ./canvas-apps/transform-infopath.md
         - name: 画布应用开发
           items:
             - name: 适用于企业开发人员、合作伙伴和 ISV 的 PowerApps
@@ -139,6 +147,8 @@
               href: ./canvas-apps/add-manage-connections.md
             - name: 连接到 SharePoint
               href: ./canvas-apps/connect-to-sharepoint.md
+            - name: 准备 Excel 数据
+              href: ./canvas-apps/how-to-excel-tips.md
             - name: 委派
               href: ./canvas-apps/delegation-overview.md
             - name: 可委托的数据源

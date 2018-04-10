@@ -1,7 +1,7 @@
 ---
 title: PowerApps 中的新增功能 | Microsoft 文档
 description: 按发布日期列出的 PowerApps 更新
-services: ''
+services: powerapps
 suite: powerapps
 documentationcenter: na
 author: skjerland
@@ -15,17 +15,24 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: 83a04905de797cb25012a05244dfae59ef54c5ae
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e9e5c156e9cb3ad47375be9a237a757a6db1158b
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps 的最近更新
 有关已知限制的信息，请参阅[常见问题和解决方法](common-issues-and-resolutions.md)。
 
+
 > [!NOTE]
 > 版本会在几天内推出。 新功能或更新功能可能不会立即显示。
+
+## <a name="announcing-the-business-applications-spring-18-release-notes"></a>宣布推出商业应用程序 2018 年春季发行说明
+
+发现商业应用程序的最新更新和许多新增功能，这些功能便于用户在我们平台的基础之上生成用户自己的应用程序和扩展。 [下载 2018 年春季发行说明 PDF](https://aka.ms/businessappsreleasenotes)，其中涉及 Dynamics 365、PowerApps、Microsoft Flow 和 Power BI。
+
+**即将推出**：我们将会不断更新发行说明 PDF，以收录新发布的功能。同时，我们还会将它们发布在网页上。
 
 ## <a name="mar-21"></a>3 月 21 日
 1. 创建[模型驱动应用](../model-driven-apps/model-driven-app-overview.md)，它从数据模型入手，通过你的核心业务数据和流程在 Common Data Service 中的形态生成数据模型，对窗体、视图和其他组件建模。 模型驱动应用自动生成跨设备的响应式 UI。
@@ -33,11 +40,11 @@ ms.lasthandoff: 03/22/2018
 3. Common Data Service for Apps 现在包括：
 
     - 其他数据类型支持更复杂的实体定义并提供更丰富的体验。 （适用于画布和模型驱动应用。）
-    - 直接从 PowerApps 站点的 Common Data Service for Apps [创建和自定义实体](../common-data-service/data-platform-create-entity.md)。 更新的体验包括性能改进、更好用的 UI 和有用的功能，如在行中创建选项集。 （适用于画布和模型驱动应用。） 
+    - 直接从 PowerApps 站点的 Common Data Service for Apps [创建和自定义实体](../common-data-service/data-platform-create-entity.md)。 更新的体验包括性能改进、更好用的 UI 和有用的功能，如在行中创建选项集。 （适用于画布和模型驱动应用。）
     - 创建服务器端业务规则，用于验证输入到 Common Data Service for Apps 中的数据。 （适用于画布和模型驱动应用。）
     - 直接从 PowerApps 站点在 Common Data Service for Apps 实体中创建计算和汇总字段。 （适用于画布和模型驱动应用。）  
-    - 开发人员可以使用 Common Data Service for Apps 软件开发工具包 (SDK) 为 Common Data Service 创建基于代码的自定义项。 
-    - 高级用户可以通过新 OData Web API 访问存储在 Common Data Service for Apps 中的数据。 
+    - 开发人员可以使用 Common Data Service for Apps 软件开发工具包 (SDK) 为 Common Data Service 创建基于代码的自定义项。
+    - 高级用户可以通过新 OData Web API 访问存储在 Common Data Service for Apps 中的数据。
     - 使用 Power Query [将数据导入](../common-data-service/data-platform-cds-newentity-pq.md) Common Data Service。 在 Web 上使用 Power Query 将数据直接从多个源导入到 Common Data Service for Apps
 
 ## <a name="mar-5"></a>3 月 5 日

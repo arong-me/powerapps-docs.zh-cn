@@ -15,15 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 94ae54308f49838159ff06e0e642ab9f2503eab1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 872e06e3d260480f09f66c52b592540bae44bdda
+ms.sourcegitcommit: a9ac8a3ed734cb5f70b61476168d1bff5de844f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="overview-of-building-a-model-driven-app"></a>生成模型驱动应用的概述
 
-模型驱动应用设计是一种针对组件的无代码或低代码应用开发方法。 画布应用开发中的应用布局完全受设计器控制，但是对于模型驱动应用，大多数布局已为你确定，并主要由添加到应用的组件指定。 
+模型驱动应用设计是一种侧重于组件的应用开发方法。 模型驱动应用设计不需要代码，无论是简单还是非常复杂的应用，都可以开发。  画布应用开发中的应用布局完全受设计器控制，但是对于模型驱动应用，大多数布局已为你确定，并主要由添加到应用的组件指定。 
 
 ![示例模型驱动应用](media/model-driven-app-overview/model-app-sample.png)
 
@@ -44,12 +44,12 @@ ms.lasthandoff: 03/22/2018
 - 编写应用
 
 ### <a name="modeling-business-data"></a>业务数据建模
-对于业务数据建模，确定应用需要什么数据并确定此数据将如何与其他数据关联。 模型驱动设计使用元数据驱动的体系结构，使设计者无需编写代码即可自定义应用程序。 元数据是“描述数据的数据”，它定义了系统中存储的数据的结构。
+对于业务数据建模，确定应用需要什么数据并确定此数据将如何与其他数据关联。 模型驱动设计使用元数据驱动的体系结构，使设计者无需编写代码即可自定义应用程序。 元数据是“描述数据的数据”，它定义了系统中存储的数据的结构。 [教程：在 PowerApps 中创建含组件的自定义实体](../common-data-service/create-custom-entity.md)
 
 ### <a name="defining-business-processes"></a>定义业务流程
 定义并强制执行一致的业务流程是模型驱动应用设计的一个重要方面。 一致的流程可以确保应用的用户能专注于他们的工作，而无需花精力记住手动步骤。 流程可以简单也可以复杂，并且不断变化。 若要创建流程，选择“高级”，打开[解决方案资源管理器](#advanced-model-driven-app-making)。 接下来，在解决方案资源管理器的左侧导航窗格中选择“流程”，然后选择“新建”。 更多信息：[处理业务逻辑](#working-with-business-logic)  
 
-### <a name="composing-the-app"></a>编写应用
+### <a name="composing-the-model-driven-app"></a>编写模型驱动应用
 完成数据建模和流程定义后，使用应用设计器选择并配置所需组件以生成应用。
 
 ![应用设计器](media/model-driven-app-overview/app-designer.png)
@@ -119,14 +119,16 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="model-driven-app-development-resources"></a>模型驱动应用开发资源
 若要详细了解模型驱动应用开发，请查看下列主题。
-### <a name="modeling-and-composing-your-app"></a>建模并编写应用
+### <a name="modeling-your-data"></a>数据建模
 - [使用应用程序设计器设计自定义商业应用](https://docs.microsoft.com/dynamics365/customer-engagement/customize/design-custom-business-apps-using-app-designer)
-- [创建或编辑实体](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-entities)
 - [创建并设计窗体](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-design-forms)
+- [创建或编辑视图](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-views)  
+
+### <a name="modeling-and-composing-your-app"></a>建模并编写应用
+- [创建或编辑实体](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-entities)
+- [创建并编辑关系](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-entity-relationships) 
 - [创建并编辑字段](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-fields)
 - [创建并编辑全局选项集](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-global-option-sets)
-- [创建或编辑视图](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-views)  
-- [创建并编辑关系](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-entity-relationships) 
 
 ### <a name="working-with-business-logic"></a>处理业务逻辑
 - [业务流程概述](https://docs.microsoft.com/dynamics365/customer-engagement/customize/business-process-flows-overview)
@@ -143,5 +145,7 @@ ms.lasthandoff: 03/22/2018
 [创建解决方案](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-solution)
 
 ## <a name="next-steps"></a>后续步骤
-[在 PowerApps 中创建自定义实体](../common-data-service/create-custom-entity.md)
+[快速入门：创建自定义实体](../common-data-service/data-platform-create-entity.md)
+
+[教程：在 PowerApps 中创建含组件的自定义实体](../common-data-service/create-custom-entity.md)
 

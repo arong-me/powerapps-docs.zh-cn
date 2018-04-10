@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: f8bafc0d4a2e06563142a3a8f575cf96437e097a
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 8d1f04f5b559e179e1549c92e75c16dac79210df
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="quickstart-download-a-list-of-active-users-in-your-tenant"></a>快速入门：下载租户中活动用户的列表
-365 全局管理员或 Azure Active Directory 租户可下载租户中活动用户的列表，不仅可查看哪些用户访问过 PowerApps、Microsoft Flow 或同时访问过两者，还可查看分配给这些用户的许可证。
+若为 365 全局管理员或 Azure Active Directory 租户管理员，可以下载租户中活跃用户的列表，这样不仅能确定谁访问过 PowerApps 和/或 Microsoft Flow，还能查看分配给这些用户的许可证。
 
 本快速入门教程介绍如何将活动用户列表下载到 .csv 文件，然后在 Excel 中查看该列表。
 

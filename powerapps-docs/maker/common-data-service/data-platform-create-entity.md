@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 3/21/2018
 ms.author: clwesene
-ms.openlocfilehash: d26b7a086e75a52d9da3369196f59d3fb439f50b
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e22a18bacb258ca46c8f36d647f9ebcc45282929
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="quickstart-create-a-custom-entity"></a>快速入门：创建自定义实体
 可以创建自定义实体来存储特定于组织的数据。 然后可通过开发引用该实体的应用来显示该数据。 创建实体后，可以[创建或修改实体的一个或多个字段](data-platform-manage-fields.md)，以及 [构建实体之间的关系](data-platform-entity-lookup.md)。
@@ -37,7 +37,7 @@ ms.lasthandoff: 03/22/2018
 3. 在“显示名称”字段中，输入一个易于识别的名称，以便在将来引用该实体。 这也用于使用该实体创建的窗体、图表和其他对象。 注意还会填充另外两个字段：
 
     * 复数显示名称 - 从 PowerApps 或 Flow 中与此实体交互时使用，并通过 Common Data Service WebAPI 作为实体的名称使用。 复数名称应自动生成，但可以更改。
-    * 名称 - 实体的唯一名称，它不能包含特殊字符或空格，且必须唯一。 该名称还包括一个在创建环境时设置的前缀，用于确保创建的实体可以通过与其他实体名称冲突的方式导出和导入到其他环境中。 可以通过为 Common Data Service 默认解决方案更新发布服务器上的前缀来更改此前缀。
+    * 名称 - 这是实体的唯一名称，不得包含特殊字符或空格，且必须唯一。 此名称还包含在创建环境时设置的前缀，用于确保所创建的实体可以在其他环境中导出和导入，而不会与其他实体名称发生冲突。 可以通过为 Common Data Service 默认解决方案更新发布服务器上的前缀来更改此前缀。
 
     > [!NOTE]
     > 可以随时更新“显示名称”字段以在应用中以不同方式显示，在保存实体后，“名称”字段不能更改，因为这可能导致现有应用中断。
@@ -59,12 +59,12 @@ ms.lasthandoff: 03/22/2018
 6. 单击“完成”以添加字段，然后重复步骤 5 以添加其他字段。
 7. 单击“保存实体”以保存实体并使它在应用中可用。
 
-    实体将出现在数据库的实体列表中。 若要查看已创建的实体，可以在命令栏中将筛选器从“默认”更改为"自定义"
+    实体将出现在数据库的实体列表中。 若要查看已创建的实体，可以将命令栏中的筛选器从“默认”更改为“自定义”
 
 ## <a name="system-fields"></a>系统字段
 所有实体均包含系统字段。 这些字段为只读。 因此，无法更改或删除这些字段，且无法为它们赋值。 默认情况下，系统字段不会显示在字段列表中，即使它们存在于实体上。 若要查看所有字段，可以在命令栏上将筛选器从“默认”更改为“所有”。
 
-有关与实体相关的元数据的更多信息，请参阅[实体元数据](../../developer/common-data-service/entity-metadata.md)
+若要详细了解与实体相关的元数据，请参阅[实体元数据](../../developer/common-data-service/entity-metadata.md)
 
 ## <a name="next-steps"></a>后续步骤
 * [管理实体中的字段](data-platform-manage-fields.md)
