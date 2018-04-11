@@ -1,13 +1,13 @@
 ---
-title: "PDF 查看器控件：参考 | Microsoft 文档"
-description: "有关 PDF 查看器控件的信息，包括属性和示例"
-services: 
+title: PDF 查看器控件：参考 | Microsoft 文档
+description: 有关 PDF 查看器控件的信息，包括属性和示例
+services: ''
 suite: powerapps
 documentationcenter: na
 author: fikaradz
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: c3ed17faae5963f71531b2fdc2ef9b08ee2569cc
-ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PowerApps 中的 PDF 查看器控件（实验性）
 显示 PDF 文件内容的实验性控件。
@@ -99,7 +99,7 @@ ms.lasthandoff: 03/08/2018
 
 ## <a name="example"></a>示例
 * 添加 **PDF 查看器**控件，并将其 **Document** 属性设置为 PDF 文件的 URL（用双引号括住），如下例所示：<br>
-  **"http://www.who.int/gho/publications/world_health_statistics/EN_WHS2015_TOC.pdf?ua=1"**
+  "http://www.who.int/gho/publications/world_health_statistics/EN_WHS2015_TOC.pdf?ua=1"
 
     此控件显示 PDF 文件。
 

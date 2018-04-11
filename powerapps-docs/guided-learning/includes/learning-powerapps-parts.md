@@ -4,6 +4,7 @@
 * **PowerApps Studio** - 使用易用的可视化工具生成功能强大的应用
 * **PowerApps Mobile** - 在 Windows、iOS 和 Android 设备上运行应用
 * **PowerApps 管理中心** - 管理 PowerApps 环境和其他组成部分
+* **Common Data Service for Apps** - 使用通用数据模型集成业务数据
 
 我们并不希望你花大量时间就学习了 PowerApps *概念*，我们认为学习更充实的课程对你更有帮助。
 
@@ -33,6 +34,11 @@
 **PowerApps 管理中心**是为组织集中管理 PowerApps 的位置。 在这里，可以定义不同的**环境**，其中包含应用、数据连接和其他元素。 还可以在管理中心内创建 Common Data Service 数据库，并管理权限和数据策略。
 
 ![PowerApps 管理中心](./media/learning-powerapps-parts/powerapps-admin-center.png)
+
+### <a name="microsoft-common-data-service-for-apps"></a>Microsoft Common Data Service for Apps
+Common Data Service for Apps 可以轻松集成多个数据源的业务数据。 此服务采用一种通用数据模型，包含应用和业务流程通用的许多实体。 此服务可靠地存储可扩展的数据，让数据可供多个应用程序使用。 可以是在 PowerApps、Dynamics 365、其他 Microsoft 应用程序或第三方应用程序中生成的应用程序。 下图展示了 web.powerapps.com 中实体的一部分。
+
+![PowerApps“联系人”实体](./media/learning-powerapps-parts/powerapps-contact.png)
 
 下一主题将介绍为了搭建功能强大的生态系统进行应用开发，与 PowerApps 结合使用的一系列相关技术。
 
