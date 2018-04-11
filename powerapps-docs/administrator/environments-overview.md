@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 1747eeb669411e1069d9767d590866d8a4e6eecb
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: d2c9b027506ef460fa9ed7a38f35b71e1ebfb401
+ms.sourcegitcommit: c5e3991e0e4e9f22a1e094d699f35adabfb97c6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="environments-overview"></a>环境概述
 环境是用来存储、管理和共享组织的业务数据、应用和流的空间。 还可以将环境用作分隔具有不同角色、安全要求或目标受众的应用的容器。 环境的使用方式视组织和要生成的应用而定。 例如：
@@ -112,24 +112,6 @@ PowerApps 自动为每个租户创建一个默认环境，并由相应租户中�
 
 ![](./media/environments-overview/CreateEnvironmentDialog-New.png)
 
-## <a name="what-will-change-for-powerapps-preview-users"></a>PowerApps 预览版用户会发现什么变化？
-随着环境的引入，已加入 PowerApps 预览版的所有用户都会发现用户体验有所变化。  下表列出了美国和非美国用户可能会发现的变化：
-
-| 用户 | 变化 |
-| --- | --- |
-| 创建了 Common Data Service 数据库的预览版用户 |你将看到名为“{你的名称} 的环境”的环境，其中包含预览版 Common Data Service 数据库，以及你针对此数据库生成的所有应用。  你将获得此环境的环境创建者和环境管理员角色，并成为该数据库的数据库所有者。 当 PowerApps 公开上市时，我们将升级 Common Data Service 的元数据。 此变化带来以下影响：仍能使用你针对预览版 Common Data Service 数据库生成的实体和应用，但无法在该数据库中创建字段或实体。 我们将很快发布指南，指导你如何创建数据库包含已升级元数据的环境，以及如何将应用迁移到此环境中。 <br> 如果以预览版 Common Data Service 数据库为依据生成的任何应用还使用自定义连接器作为数据源，那么这些应用在此环境中暂时无效，因为所有自定义连接器都将迁移到默认环境中。 必须在此环境中重新创建自定义连接器，从而修复任何受影响的应用。 |
-| 美国预览用户 |你在 PowerApps 预览期间创建的以下资源在租户的默认环境中可用：<br>- 创建的所有应用（不包括任何已连接预览版 Common Data Service 数据库的应用）<br>- 创建的所有连接和自定义连接器<br>- 安装的所有本地数据网关 |
-| 非美国预览用户 |除了默认环境外，你还将看到名为“{Azure AD 租户} (来自预览)”的环境，其中包含你在 PowerApps 预览期间创建的以下资源：<br>- 创建的所有应用（不包括任何已连接预览版 Common Data Service 数据库的应用）<br>- 创建的所有连接和自定义连接器<br>- 安装的所有本地数据网关。<br>你将获得此环境的环境创建者角色。 |
-
-预览用户是指 Microsoft PowerApps 公开上市 (GA) 前的用户。
-
-在 PowerApps 公开上市 (GA) 两周后，包含预览内容的环境将被标记为只读（默认环境除外）；所有现有应用和流将继续在这些环境中正常运行，但你将无法创建应用或流。 我们强烈建议这些环境的用户将其内容迁移到默认环境或其他自定义环境中。 有关迁移流程的详细信息，请参阅以下博客（将在本周发布）：[Common Data Service 功能公告博客][3]。
-
-### <a name="example-environments-for-a-preview-user-in-us"></a>针对美国预览用户的示例环境。
-![](./media/environments-overview/USuser1.png)
-
-### <a name="example-environments-for-a-preview-user-not-in-us"></a>针对非美国预览用户的示例环境。
-![](./media/environments-overview/non-USuser1.png)
 
 ## <a name="managing-environments-for-your-organization"></a>为组织管理环境
 在 PowerApps 管理中心，可以管理所有已创建或已添加环境管理员角色的环境。 在管理中心内，可以执行所有环境管理操作，包括以下操作：
