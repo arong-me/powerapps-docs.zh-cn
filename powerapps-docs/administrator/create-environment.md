@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: 1d8034d877aee9131a98517d981ac68275b49a4d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a9138c636d70ea4701cbf685c3d7c7965c0e8469
+ms.sourcegitcommit: c5e3991e0e4e9f22a1e094d699f35adabfb97c6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="quickstart-create-an-environment"></a>快速入门：创建环境
 环境是用来存储、管理和共享组织的业务数据、应用和流的空间。 还可以将环境用作分隔具有不同角色、安全要求或目标受众的应用的容器。 PowerApps 自动为每个租户创建一个默认环境，并由相应租户中的所有用户共享。
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="prerequisites"></a>先决条件
  若要按照本快速入门教程，则需要以下项目：
- * PowerApps 计划 2 或 Flow 计划 2。 此外，也可以注册 [PowerApps 计划 2 免费试用版](https://web.powerapps.com/signup?redirect=marketing&email=)。
+ * PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证。 此外，也可以注册 [PowerApps 计划 2 免费试用版](https://web.powerapps.com/signup?redirect=marketing&email=)。
  * PowerApps 环境管理员、Office 365 全局管理员或 Azure Active Directory 租户管理员权限。 有关详细信息，请参阅 [PowerApps 中的环境管理](environments-administration.md)。
 
 ## <a name="sign-in-to-the-powerapps-admin-center"></a>登录到 PowerApps 管理中心

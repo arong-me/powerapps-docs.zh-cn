@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 0a6080b7ceb14de14b7ad6ae2f851843bac0c73b
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: d94ebeeada15f5e7f176b20575f7570c73e28c08
+ms.sourcegitcommit: c5e3991e0e4e9f22a1e094d699f35adabfb97c6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="administer-environments-in-powerapps"></a>管理 PowerApps 中的环境
 在 [PowerApps 管理中心][1]内，管理已创建的环境及已将已添加到其环境管理员或系统管理员角色的环境。 从管理中心可执行以下管理操作：
@@ -47,10 +47,10 @@ ms.lasthandoff: 03/22/2018
 
 * Azure AD 或 Office 365 租户的“全局管理员”角色。
 
-此外，还需要 PowerApps 计划 2 或 Flow 计划 2 才能访问管理中心。 有关详细信息，请参阅 [PowerApps 定价页][3]。
+此外，还需要 PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证才能访问管理中心。 有关详细信息，请参阅 [PowerApps 定价页][3]。
 
 > [!IMPORTANT]
-> 在 PowerApps 管理中心内所做的任何更改都会影响 [Flow 管理中心][4]，反之亦然。
+> 在 PowerApps 管理中心内所做的任何更改都会影响 [Microsoft Flow 管理中心][4]，反之亦然。
 
 ## <a name="create-an-environment"></a>创建环境
 有关如何创建环境的说明，请参阅[快速入门：创建环境](create-environment.md)。
@@ -66,7 +66,7 @@ ms.lasthandoff: 03/22/2018
 1. 打开 [PowerApps 管理中心][1]，在列表中找到要重命名的环境，然后单击或点击它。
 
     ![](./media/environment-admin/environment-list-updated3.png)
- 
+
 2. 单击或点击“详细信息”。
 
     ![](./media/environment-admin/environment-rename-details-2.png)
