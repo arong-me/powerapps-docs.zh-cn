@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
 ms.openlocfilehash: 57f2b9a23207c2c866738ac40f46a37747fcd54d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.sourcegitcommit: 397a968f57ce5aaaf2b86e804dfedda8cf34f307
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="global-support"></a>全球支持
 PowerApps 是全球性的产品。  可以在许多不同的区域中构建和使用许多不同语言的应用。
@@ -117,7 +117,7 @@ PowerApps 列表分隔符的更改将与 Excel 列表分隔符的更改保持一
 * **全球知晓的枚举。**  例如，**Text(Now(), DateTimeFormat.LongDate)**。  此公式将使用语言相应的格式设置当前日期的格式。  这是用于指定格式字符串的首选方法。
 * **自定义格式字符串。**  例如，**Text( Now(), "[$-en-US]dddd, mmmm dd, yyyy" )** 在以语言“en-US”使用时将显示与枚举相同的文本。  自定义格式字符串的优点是，你可以确切地指定所需的格式。
 
-自定义格式字符串前面的 "[$-en-US]" 告知 **Text** 用哪种语言解释该自定义格式字符串。  这会被插入并默认为你的创作语言。  通常不需要更改它。  在使用不同语言的作者编辑同一应用时，它将十分有用。
+自定义格式字符串前面的 "[$-en-US]" 告知 **Text** 用哪种语言解释该自定义格式字符串。  这会插入并默认为你的创作语言。  通常不需要更改它。  在使用不同语言的作者编辑同一应用时，它将十分有用。
 
 **Text** 的第三个参数指定要将哪种语言用于函数的结果。  默认值为当前用户的语言设置。
 
