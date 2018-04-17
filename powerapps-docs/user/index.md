@@ -15,13 +15,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: 3eef0259c97819de9d98af248457faa90e373323
-ms.sourcegitcommit: c5e3991e0e4e9f22a1e094d699f35adabfb97c6c
+ms.openlocfilehash: cc1483fbaffaac51f3c0999996cb3f91fac9e64a
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="find-and-run-apps-overview"></a>查找并运行应用概述
+# <a name="how-do-i-find-and-run-apps"></a>如何查找并运行应用？
 无论是面向在现场工作的移动工作者还是热门医院里业务繁忙的医生，应用制造商都可以创建基于任务和角色的定制画布应用来适应所需的工作方式。 画布应用制造商可自定义画布应用的几乎各个方面，并可连接多个数据源，帮助用户集中精力完成正在处理的任务。
 
 应用制造商还可以使用组织的数据生成模型驱动的应用。 模型驱动的应用构造复杂、响应性强，可帮助用户专注于眼前工作，而无需纠缠于一系列手动操作步骤。 模型驱动的应用制造商决定应用所需的数据以及与其他数据的关系，定义应用需遵循的业务流程，然后添加和配置执行该流程的组件。 与高度可自定义的画布应用不同，模型驱动应用的布局主要取决于制造商添加到应用的组件。
