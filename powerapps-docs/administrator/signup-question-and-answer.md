@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: jamesol
-ms.openlocfilehash: 01614846f0b1172e23e2399aa0f1f03f646df84d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 5d6db5bded909387b5bc4ef15dc0bf6c163bfa7a
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="manage-licenses-in-my-org"></a>管理组织中的许可证
 本主题介绍了组织中的用户如何获得使用 PowerApps 的访问权限以及可如何控制对 PowerApps 服务的访问权限。
@@ -60,9 +60,9 @@ Microsoft PowerApps 可供用户用来创建适用于 Windows、iOS 和 Android 
 
 ## <a name="administration-of-powerapps"></a>PowerApps 的管理
 ### <a name="why-has-the-powerapps-icon-appeared-in-the-office-365-app-launcher"></a>为何让 PowerApps 图标显示在 Office 365 应用启动器中？
-如八月份所宣布，Microsoft PowerApps 现在是 Office 365 套件的一个基础部件。 在宣布此消息三个月后，Microsoft PowerApps 已作为属于现有 Office 365 SKU 的一项服务而启用。 因为世界各地的用户现在都可以使用 Microsoft PowerApps，所以已经为用户将其显示在了应用启动器中。 若要了解哪些 Office 365 SKU 现在包括 PowerApps，请参阅[授权概述](pricing-billing-skus.md)。
+Microsoft PowerApps 是 Office 365 套件的基本组成部分，已作为现有 Office 365 SKU 的一项服务启用。 由于世界各地的用户现在都可以使用 Microsoft PowerApps，所以它显示在应用启动器屏幕中的“所有应用”中。 若要了解哪些 Office 365 SKU 现在包括 PowerApps，请参阅[授权概述](pricing-billing-skus.md)。
 
-如果希望默认情况下从应用启动器中删除 PowerApps 磁贴，请参阅下一部分。
+如果希望默认情况下从“所有应用”中删除 PowerApps 磁贴，请参阅下一部分。
 
 ### <a name="how-do-i-remove-powerapps-from-existing-users"></a>如何为现有用户删除 PowerApps？
 如果为某个用户分配了 PowerApps 计划 1 或 PowerApps 计划 2 许可证，则可以执行以下步骤来为该用户删除 PowerApps 许可证：

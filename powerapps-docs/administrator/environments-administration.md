@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: d94ebeeada15f5e7f176b20575f7570c73e28c08
-ms.sourcegitcommit: c5e3991e0e4e9f22a1e094d699f35adabfb97c6c
+ms.openlocfilehash: c11c1d2122cf4306aede621e3c98a95a6ec9a967
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="administer-environments-in-powerapps"></a>管理 PowerApps 中的环境
 在 [PowerApps 管理中心][1]内，管理已创建的环境及已将已添加到其环境管理员或系统管理员角色的环境。 从管理中心可执行以下管理操作：
@@ -175,26 +175,57 @@ ms.lasthandoff: 04/03/2018
 ![](./media/environment-admin/data-policies.png)
 
 ## <a name="frequently-asked-questions"></a>常见问题
-### <a name="how-many-environments-can-i-create"></a>可以创建多少个环境？
-每个用户可以创建最多两个试用环境和两个生产环境，具体取决于其许可证。
+### <a name="how-many-environments-and-databases-can-i-create"></a>可以创建多少个环境和数据库？
+最多可以创建两个试用环境和两个生产环境，具体取决于许可证。 [请参阅此处](environments-overview.md#creating-an-environment)了解详细信息。 每个用户可以在两个试用环境和两个生产环境中预配数据库，具体取决于其许可证。 
 
-### <a name="how-many-databases-can-i-provision"></a>可以预配多少个数据库？
-每个用户可以在两个试用环境和两个生产环境中预配数据库，具体取决于其许可证。 用户需要环境中的“环境管理员”。
+### <a name="which-license-includes-common-data-service"></a>哪个许可证包含 Common Data Service？
+PowerApps 计划 2。  有关包含此许可证的所有计划的详细信息，请参阅 [PowerApps 定价页][3]。
+
+### <a name="while-trying-to-create-a-new-environment-i-am-getting-an-error-how-should-i-resolve-it"></a>尝试创建新环境时发生错误。 应如何解决？
+如果收到以下错误消息：“计划不支持所选环境类型或已达该类型的环境限制。” ，表示可能存在以下两种情况之一
+
+1. 已经用完用于创建特定类型环境的配额。 假设在创建试用环境时收到此错误消息。 这说明预配了两个试用环境。 可在 [PowerApps 管理中心][1]查看所有环境。
+如果需要，可删除该特定类型的现有环境并创建新环境。 但是，请确保不会丢失希望保留的数据、应用、流和其他资源。
+
+2. 没有用于创建该特定类型环境的配额。 请在[此处](environments-overview.md#creating-an-environment)查看可以创建的环境类型。
+
+如果收到任何其他错误消息或有更多疑问，请在[此处][5]与我们联系。
+
+### <a name="while-trying-to-create-a-database-in-an-environment-i-am-getting-an-error-how-should-i-resolve-it"></a>尝试在环境中创建数据库时发生错误。 应如何解决？
+在以下情况下，可能会在创建数据库时出现错误：
+
+1. **默认环境**：租户的默认环境目前不支持创建数据库。 
+
+2. **个人使用环境**：通过注册 PowerApps 社区计划获得个人使用环境。 如果尚未创建数据库，则目前无法在个人使用环境中预配数据库。 
+
+3. **环境位于 AAD 租户主区域以外的区域**：目前，仅可在 Azure Active Directory 租户主区域中创建的环境中预配数据库。 即将推出在其他区域中预配数据库这一功能。 因此，如果要在环境中创建数据库，请确保环境区域与租户默认位置所在区域相同。
+
+4. **某些区域不支持创建数据库**：某些区域尚不支持创建数据库。 例如，南美洲的国家/地区。 因此，如果租户主位置位于南美洲，则目前无法在任何环境中预配数据库。 
+    
+我们正在努力为以上所有情况提供支持。
+如果收到任何其他错误消息或有更多疑问，请在[此处][5]与我们联系
+
+### <a name="when-will-my-trial-environment-expire"></a>试用环境何时过期？   
+试用环境在创建后 30 天过期。 如果不希望环境过期，可通过几种方法将其转换为生产环境。 此功能即将推出，推出之前试用环境不会过期。
+
+### <a name="does-my-current-database-created-with-previous-version-of-the-common-data-service-also-gets-counted-in-the-quota"></a>当前数据库（使用以前版本的 Common Data Service 创建）是否也会计入配额？
+如果之前已拥有数据库（使用以前版本的 Common Data Service 创建），它们也将计入生产环境配额。 如果现在在环境（于 2018 年 5 月 15 日前创建）中创建数据库，则同样会计为生产环境。
 
 ### <a name="can-i-rename-an-environment"></a>是否可以重命名环境？
 可以，可在 PowerApps 管理中心找到此功能。 有关详细信息，请参阅[环境管理](environments-administration.md#rename-your-environment)。
 
 ### <a name="can-i-delete-an-environment"></a>是否可以删除环境？
 可以，可在 PowerApps 管理中心找到此功能。 有关详细信息，请参阅[环境管理](environments-administration.md#delete-your-environment)。
+请注意，目前不能删除具有数据库（使用最新版 Common Data Service 创建）的生产环境。 此功能即将推出！
 
 ### <a name="as-an-environment-admin-can-i-view-and-manage-all-resources-apps-flows-apis-etc-for-an-environment"></a>环境管理员是否可以查看和管理环境的所有资源（应用、流、API 等等）？
 可以，可在 PowerApps 管理中心找到查看环境的应用和流的功能。 有关详细信息，请参阅[查看应用](admin-view-apps.md)。
 
-### <a name="which-license-includes-common-data-service"></a>哪个许可证包含 Common Data Service？
-PowerApps 计划 2。  有关包含此许可证的所有计划的详细信息，请参阅 [PowerApps 定价页][3]。
+
 
 <!--Reference links in article-->
 [1]: https://admin.powerapps.com
 [2]: https://web.powerapps.com
 [3]: https://powerapps.microsoft.com/pricing/
 [4]: https://admin.flow.microsoft.com
+[5]: https://go.microsoft.com/fwlink/?linkid=871628

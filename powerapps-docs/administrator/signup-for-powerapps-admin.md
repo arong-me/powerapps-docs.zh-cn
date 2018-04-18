@@ -4,7 +4,7 @@ description: 按照以下步骤操作即可注册为 PowerApps 管理员。
 services: powerapps
 suite: powerapps
 documentationcenter: na
-author: jamesol-msft
+author: manasmams
 manager: anneta
 editor: ''
 tags: ''
@@ -14,12 +14,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
-ms.author: jamesol
-ms.openlocfilehash: af0d7bad79aea3443f4813945e0cc369ca0b8640
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: manasma
+ms.openlocfilehash: 43d39abbd78723202efd756edf6d070724e3157e
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="purchase-powerapps-for-your-organization"></a>为组织购买 PowerApps
 本文介绍了如何以管理员身份为组织购买 PowerApps。 你可以直接通过 PowerApps 网站购买 PowerApps，也可以通过 Office 365 管理中心、Microsoft 代表或合作伙伴购买。 本文将讨论 PowerApps 计划 1 或计划 2 的可用试用选项，然后阐述如何以组织身份购买 PowerApps 计划 1 或计划 2。 有关详细信息，请参阅[组织中的 PowerApps 问答](signup-question-and-answer.md)。
@@ -49,7 +49,7 @@ ms.lasthandoff: 03/22/2018
 >
 > * 在此变更结束前，如果使用 Office 365 订阅登录 PowerApps，系统则提示你注册免费的 PowerApps 计划 2 试用版。
 > * 如果想要试用 PowerApps，请自行注册试用版，直至你的 Office 365 订阅更新完成。  
-> * 但请注意，在 90 天的试用版过期后，试用版许可证可能包含无法通过 Office 365 订阅获取的 PowerApps 功能。  请参阅 [PowerApps 定价][2] 了解 Office 365 订阅中包括的功能。
+> * 但请注意，在 30 天的试用版过期后，试用版许可证可能包含无法通过 Office 365 订阅获取的 PowerApps 功能。  请参阅 [PowerApps 定价][2] 了解 Office 365 订阅中包括的功能。
 
 
 ### <a name="purchase-a-subscription-trial"></a>购买订阅试用版
@@ -81,15 +81,15 @@ ms.lasthandoff: 03/22/2018
 5. 输入要添加的许可证数，然后选择“**立即结帐**”或“**添加到购物车**”。
 
    > [!NOTE]
-> 如果需要，稍后可以添加更多。
-   >
+   > 如果需要，稍后可以添加更多许可证。
+
 
 6. 输入结帐流程中的所需信息，
 
     在“**计费->订阅**”下，你将看到列出的“**Microsoft PowerApps 计划 1**”或“**Microsoft PowerApps 计划 2**”。 如果你以后想要添加更多许可证，则可以返回到“**添加订阅**”，然后选择“**更改许可证数量**”。
 
 ## <a name="add-ons"></a>外接程序
-这些程序即将推出，但目前尚不受支持。
+目前尚不支持。
 
 ## <a name="see-also"></a>另请参阅
 [组织中的 PowerApps 问答](signup-question-and-answer.md)  

@@ -15,17 +15,19 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/29/2017
 ms.author: fikaradz
-ms.openlocfilehash: b58e99e4775ed5c18d3498864c6e652e814ddf19
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 5bb7e4f27ed7ee0a30fb028d4d8dfd20a5fc250b
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="attachments-control-in-powerapps"></a>PowerApps 中的附件控件
 方便用户将文件下载到设备，并在 SharePoint 列表中上传和删除文件的控件。
 
 ## <a name="limitations"></a>限制
 附件控件具有以下临时限制：
+1. Internet Explorer 中不支持附件下载。
+
 1. 附件上传仅适用于 SharePoint 列表数据源。  将逐步递增对其他数据源的支持，首先是对 CDS 的支持。
 
 1. 上传和删除功能仅在表单内部有效。  在编辑模式下，如果不在表单内部，附件控件会处于禁用状态。   请注意，最终用户必须保存表单，才能将文件添加和删除操作保存到后端。

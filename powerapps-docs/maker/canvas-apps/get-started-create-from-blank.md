@@ -4,8 +4,8 @@ description: 通过配置每个 UI 元素和行为从头开始创建应用，以
 services: ''
 suite: powerapps
 documentationcenter: na
-author: karthik-1
-manager: anneta
+author: AFTOwen
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -14,18 +14,15 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
-ms.author: sharik
-ms.openlocfilehash: d530fb5f77f00cb37322383a3817e9c38533ca1d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: anneta
+ms.openlocfilehash: efc965d607198ed6366f3390960ccdf44b2ea210
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="create-an-app-from-scratch"></a>从头开始创建应用
 使用多种数据源中的任意一种从头开始创建自己的应用，之后如果需要，还可添加更多资源。 指定每个 UI 元素的外观和行为，这样就可以优化具体目标和工作流的结果。 与[自动生成应用](get-started-create-from-data.md)相比，此方法耗费的时间要多得多，但有经验的应用创作者可以根据需要生成最佳应用。
-
-> [!NOTE]
-> 本主题针对 Windows 版 PowerApps Studio 编写，但[在浏览器中打开 PowerApps](create-app-browser.md) 的步骤是类似的。
 
 按照本教程中的步骤进行操作，可以创建包含两个屏幕的应用。 在一个屏幕上，用户可以浏览一组记录：
 
@@ -36,7 +33,9 @@ ms.lasthandoff: 03/22/2018
 ![用户可以在其中添加或更新数据的屏幕](./media/get-started-create-from-blank/changescreen-final.png)
 
 ## <a name="prerequisites"></a>先决条件
-你可以查看本教程，了解一些基本概念，也可以严格按照以下步骤完成操作。
+可以使用自己的 Excel 文件，而仅通过此教程学习基本概念。 但是，Excel 文件中的数据必须设置为表格格式。 有关详细信息，请参阅[在 Excel 中设置表格格式](how-to-excel-tips.md)。
+
+要完全按照以下步骤执行，请首先使用此示例数据创建 Excel 文件。
 
 1. 复制此数据，并将其粘贴到 Excel 文件中。
 
@@ -51,7 +50,7 @@ ms.lasthandoff: 03/22/2018
 
 2. 将该数据格式化为名为 **Schedule** 的表，以便 PowerApps 能够分析信息。
 
-    有关详细信息，请参阅 [Create an Excel table in a worksheet](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)（在工作表中创建 Excel 表）。
+    有关详细信息，请参阅[在 Excel 中设置表格格式](how-to-excel-tips.md)。
 
 3. 将文件以 **eventsignup.xls** 名称保存，然后将其上载到[云存储帐户](connections/cloud-storage-blob-connections.md)，例如 OneDrive。
 

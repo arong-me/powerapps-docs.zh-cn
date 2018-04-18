@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: d2c9b027506ef460fa9ed7a38f35b71e1ebfb401
-ms.sourcegitcommit: c5e3991e0e4e9f22a1e094d699f35adabfb97c6c
+ms.openlocfilehash: 4b71f931aa3e8263166d52b68ba375917405c2b8
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="environments-overview"></a>环境概述
 环境是用来存储、管理和共享组织的业务数据、应用和流的空间。 还可以将环境用作分隔具有不同角色、安全要求或目标受众的应用的容器。 环境的使用方式视组织和要生成的应用而定。 例如：
@@ -97,15 +97,14 @@ PowerApps 自动为每个租户创建一个默认环境，并由相应租户中�
 
 | 许可证 | 允许创建环境 |
 | --- | --- |
-| PowerApps P2 |√ |
-| PowerApps P2 试用版 |√ |
+| PowerApps P2 |√（两个生产环境和两个试用环境）|
+| PowerApps P2 试用版 |√（两个试用环境）|
 | PowerApps P1 |x |
 | PowerApps P1 试用版 |x |
 | Dynamics 365 计划 |x |
 | Office 365 计划 |x |
 | Dynamics 365 应用和团队计划 |x |
 
-每个用户最多可以创建两个试用环境。 PowerApps P2 还可以创建最多两个生产环境。
 
 ### <a name="where-can-environments-be-created"></a>在哪里可以创建环境？
 可以通过 [PowerApps.com][2] 和 [PowerApps 管理中心][1]新建环境。 创建环境后，你会自动获得该环境的环境管理员角色。 作为环境管理员或环境创建者角色成员可以加入无限多个环境。 有关环境的详细信息，请参阅[管理 PowerApps 中的环境](environments-administration.md)。 有关如何创建环境的说明，请参阅[创建环境](create-environment.md)。

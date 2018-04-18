@@ -14,20 +14,24 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 6556e16fef3908a77be02f270fdb25f2f01ed4b4
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a2bbcead313961e064a57d2ea567b5596ece4f7a
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="generate-an-app-from-excel-in-powerapps"></a>使用 Excel 在 PowerApps 中生成应用
 在本主题中，将使用 Excel 表中的数据，在 PowerApps 中自动生成你的第一个应用。 将选择一个 Excel 文件，生成一个应用，然后运行生成的应用。 每个生成的应用都包括屏幕，用于浏览记录、显示记录的详细信息以及创建或更新记录。 通过生成应用，可以使用 Excel 数据快速利用应用，然后自定义该应用以更好地满足需要。 
 
 Excel 文件必须位于云存储帐户（如 OneDrive、GoogleDrive 或 Dropbox）中。 本主题使用 OneDrive for Business。
 
-若要了解本主题，请在 Excel 中下载 [Flooring Estimates](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx) 文件，并将其保存在[云存储帐户](connections/cloud-storage-blob-connections.md)中。 或者，如果数据格式[已设置为表格](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)，则可使用自己的 Excel 文件。 
-
 如果没有适用于 PowerApps 的许可证，可以[免费注册](../signup-for-powerapps.md)。
+
+## <a name="prerequisites"></a>先决条件 ##
+若要完全按照本主题执行操作，请在 Excel 中下载 [Flooring Estimates](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx) 文件，并将其保存在[云存储帐户](connections/cloud-storage-blob-connections.md)中。
+
+> [!IMPORTANT]
+> 可以使用自己的 Excel 文件，但必须将数据格式设置为表格。 有关详细信息，请参阅[设置表格格式](how-to-excel-tips.md)。 
 
 ## <a name="generate-the-app"></a>生成应用
 1. 登录 [PowerApps](https://web.powerapps.com)。
