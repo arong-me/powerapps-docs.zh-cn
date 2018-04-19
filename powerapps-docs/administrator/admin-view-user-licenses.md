@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
 ms.openlocfilehash: 8d1f04f5b559e179e1549c92e75c16dac79210df
-ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-download-a-list-of-active-users-in-your-tenant"></a>快速入门：下载租户中活动用户的列表
 若为 365 全局管理员或 Azure Active Directory 租户管理员，可以下载租户中活跃用户的列表，这样不仅能确定谁访问过 PowerApps 和/或 Microsoft Flow，还能查看分配给这些用户的许可证。
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/28/2018
 要按照此本快速入门教程操作，需具有 Office 365 全局管理员或 Azure Active Directory 租户管理员权限。
 
 ## <a name="sign-in-to-the-powerapps-admin-center"></a>登录到 PowerApps 管理中心
-在 [https://admin.powerapps.com]([https://admin.powerapps.com) 处登录到管理中心。
+在 [https://admin.powerapps.com]([https://admin.powerapps.com) 上登录到管理中心。
 
 ## <a name="download-the-list-of-users"></a>下载用户列表
 在导航窗格中，单击或点击“用户许可证”，然后单击或点击“下载活动用户许可证列表”。

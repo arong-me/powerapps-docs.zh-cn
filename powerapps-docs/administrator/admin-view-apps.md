@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
 ms.openlocfilehash: debe9dd0ab3aa948537820cccd3304a6b4225c54
-ms.sourcegitcommit: c5e3991e0e4e9f22a1e094d699f35adabfb97c6c
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-download-a-list-of-apps-created-in-your-environments"></a>快速入门：下载环境中创建的应用列表
 如果你是环境管理员，那么你可以查看和下载你管理的环境中创建的应用列表。 如果你是 365 全局管理员或 Azure Active Directory 租户管理员，那么你可以查看和下载组织所有环境中创建的应用列表。

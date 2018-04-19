@@ -16,10 +16,10 @@ ms.topic: article
 ms.date: 03/21/2018
 ms.author: matp
 ms.openlocfilehash: 4f971668b506776cfd1a9cce2f61d591a4a0db5e
-ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="tutorial-share-a-model-driven-app-with-powerapps"></a>教程：借助 PowerApps 共享模型驱动应用
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 03/28/2018
 要共享应用，必须具备 [!INCLUDE [powerapps](../../includes/powerapps.md)] 环境管理员角色或系统管理员角色。 
 
 ## <a name="sign-in-to-powerapps"></a>登录到 PowerApps
-登录到 [PowerApps](https://powerapps.microsoft.com/)。 如果还没有 [!INCLUDE [powerapps](../../includes/powerapps.md)] 帐户，请选择“开始免费使用”链接。
+登录 [PowerApps](https://powerapps.microsoft.com/)。 如果还没有 [!INCLUDE [powerapps](../../includes/powerapps.md)] 帐户，请选择“开始免费使用”链接。
 
 ## <a name="share-an-app"></a>共享应用 
 本教程将以 Contoso 公司为例，该公司的主营业务是针对狗和猫的宠物美容。 已创建并发布包含跟踪宠物美容业务的自定义实体的应用。 现在必须共享该应用，让负责宠物美容的工作人员可以使用它。 要共享该应用，管理员或应用创建者需要将一种或多种安全角色分配给用户和应用。 
