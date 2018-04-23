@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/21/2018
+ms.date: 04/09/2018
 ms.author: sharik
-ms.openlocfilehash: e9e5c156e9cb3ad47375be9a237a757a6db1158b
-ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+ms.openlocfilehash: 92438c37b870ace2ed5b2ec086cf6c5fb1548fdc
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps 的最近更新
 有关已知限制的信息，请参阅[常见问题和解决方法](common-issues-and-resolutions.md)。
@@ -34,18 +34,20 @@ ms.lasthandoff: 03/28/2018
 
 **即将推出**：我们将会不断更新发行说明 PDF，以收录新发布的功能。同时，我们还会将它们发布在网页上。
 
-## <a name="mar-21"></a>3 月 21 日
-1. 创建[模型驱动应用](../model-driven-apps/model-driven-app-overview.md)，它从数据模型入手，通过你的核心业务数据和流程在 Common Data Service 中的形态生成数据模型，对窗体、视图和其他组件建模。 模型驱动应用自动生成跨设备的响应式 UI。
-2. 在环境中使用最新版本的 Common Data Service 最新版本[创建数据库](../../administrator/create-database.md)。
-3. Common Data Service for Apps 现在包括：
+## <a name="apr-9"></a>4 月 9 日
+* web 浏览器的应用中的剪切 (Ctrl+X)、复制 (Ctrl+C) 和粘贴 (Ctrl+V) 控件，包括控件的样式、公式和属性&mdash;&mdash;。
 
+## <a name="mar-21"></a>3 月 21 日
+1. 创建[模型驱动应用](../model-driven-apps/model-driven-app-overview.md)，它从数据模型入手，通过你的核心业务数据和流程在 Common Data Service for Apps 中的形态生成数据模型，对窗体、视图和其他组件建模。 模型驱动应用自动生成在各种设备中反应敏捷的好用 UI。
+2. 在环境中使用 CDS for Apps 最新版本[创建数据库](../../administrator/create-database.md)。
+3. CDS for Apps 现包括：
     - 其他数据类型支持更复杂的实体定义并提供更丰富的体验。 （适用于画布和模型驱动应用。）
-    - 直接从 PowerApps 站点的 Common Data Service for Apps [创建和自定义实体](../common-data-service/data-platform-create-entity.md)。 更新的体验包括性能改进、更好用的 UI 和有用的功能，如在行中创建选项集。 （适用于画布和模型驱动应用。）
-    - 创建服务器端业务规则，用于验证输入到 Common Data Service for Apps 中的数据。 （适用于画布和模型驱动应用。）
-    - 直接从 PowerApps 站点在 Common Data Service for Apps 实体中创建计算和汇总字段。 （适用于画布和模型驱动应用。）  
-    - 开发人员可以使用 Common Data Service for Apps 软件开发工具包 (SDK) 为 Common Data Service 创建基于代码的自定义项。
-    - 高级用户可以通过新 OData Web API 访问存储在 Common Data Service for Apps 中的数据。
-    - 使用 Power Query [将数据导入](../common-data-service/data-platform-cds-newentity-pq.md) Common Data Service。 在 Web 上使用 Power Query 将数据直接从多个源导入到 Common Data Service for Apps
+    - 直接从 PowerApps 站点的 CDS for Apps [创建和自定义实体](../common-data-service/data-platform-create-entity.md)。 更新的体验包括性能改进、更好用的 UI 和有用的功能，如在行中创建选项集。 （适用于画布和模型驱动应用。）
+    - 创建服务器端业务规则，用于验证输入到 CDS for Apps 中的数据。 （适用于画布和模型驱动应用。）
+    - 直接从 PowerApps 站点在 CDS for Apps 实体中创建计算和汇总字段。 （适用于画布和模型驱动应用。）  
+    - 开发人员可以使用 CDS for Apps 软件开发工具包 (SDK) 为 CDS for Apps 创建基于代码的自定义项。
+    - 高级用户可以通过新 OData Web API 访问存储在 CDS for Apps 中的数据。
+    - 使用 Power Query [将数据导入](../common-data-service/data-platform-cds-newentity-pq.md) CDS for Apps。 在 Web 上使用 Power Query 将数据直接从多个源导入到 CDS for Apps
 
 ## <a name="mar-5"></a>3 月 5 日
 1. 在 SharePoint 列表中添加（和删除）[附件](controls/control-attachments.md)。
@@ -83,8 +85,3 @@ ms.lasthandoff: 03/28/2018
 
 ## <a name="nov-10"></a>11 月 10 日
 * 在应用中[重命名规则](working-with-rules.md)，并在规则条件中包含选定控件时显示规则。
-
-## <a name="oct-30"></a>10 月 30 日
-1. 在应用中[显示所有规则](working-with-rules.md)，而不仅仅是选定控件的规则。
-2. 添加应用创建者最需要的图标。
-3. 提升了应用在 Android 和 iOS 设备上的性能。
