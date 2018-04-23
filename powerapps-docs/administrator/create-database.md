@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: cc068fc475643ae68e74d22981679dd9b038eb83
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: 68ce23ae4b4a961a69cc60173b4f98ec18f05dd2
+ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="create-a-common-data-service-database"></a>创建 Common Data Service 数据库
 可以将 Common Data Service 用作数据存储，从而创建数据库并生成应用。 可以创建你自己的自定义实体，也可以使用预定义的实体。 若要创建数据库，要么必须先创建一个环境，要么必须以“环境管理员”身份分配到现有环境。此外，还必须分配有相应的许可证。 若要了解如何购买 Common Data Service 使用套餐，请参阅[定价信息](pricing-billing-skus.md)。
@@ -57,7 +57,7 @@ ms.lasthandoff: 04/19/2018
 创建数据库后，具有环境角色的用户继续保有相应权限。  
     具有“环境管理员”角色的用户现分配到“系统管理员”角色。 具有“环境创建者”角色的用户保留该角色。
 
-可将更多用户分配到预定义的角色，甚至可创建[自定义角色][1]。 有关详细信息，请参阅[数据库安全性](create-database.md)。
+可将更多用户分配到预定义的角色，甚至可创建[自定义角色][1]。 有关详细信息，请参阅[数据库安全性](database-security.md)。
 
 > [!NOTE]
 > 创建数据库时，分配给环境管理员或环境创建者角色的任何安全组将失效。 目前，数据库中的权限分配不支持 AAD 安全组。
