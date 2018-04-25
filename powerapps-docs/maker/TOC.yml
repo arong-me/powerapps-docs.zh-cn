@@ -6,6 +6,12 @@
       href: signup-for-powerapps.md
     - name: 注册 PowerApps 社区计划
       href: dev-community-plan.md
+    - name: 新功能
+      href: ./canvas-apps/release-notes.md
+    - name: 常见问题和解决方法
+      href: ./canvas-apps/common-issues-and-resolutions.md
+    - name: 即将推出的网络研讨会和近期网络研讨会
+      href: ./canvas-apps/webinars-listing.md
 - name: 画布应用
   href: ./canvas-apps/getting-started.md
   items:
@@ -123,12 +129,14 @@
               href: ./canvas-apps/add-scrolling-screen.md
             - name: 构建全局应用
               href: ./canvas-apps/global-apps.md
-            - name: 创建提供辅助功能的应用
+            - name: 创建可访问应用
               href: ./canvas-apps/accessible-apps.md
         - name: 管理应用
           items:
             - name: powerapps.com 简介
               href: ./canvas-apps/intro-maker-portal.md
+            - name: 使用环境
+              href: ./canvas-apps/working-with-environments.md
             - name: 编辑应用
               href: ./canvas-apps/edit-app.md
             - name: 更改屏幕的大小和方向
@@ -195,21 +203,13 @@
           href: ./canvas-apps/connections-list.md
         - name: 系统要求、限制和配置
           href: ./canvas-apps/limits-and-config.md
-    - name: 资源
-      items:
-        - name: 使用环境
-          href: ./canvas-apps/working-with-environments.md
-        - name: 新功能
-          href: ./canvas-apps/release-notes.md
-        - name: 常见问题和解决方法
-          href: ./canvas-apps/common-issues-and-resolutions.md
-        - name: 即将推出的网络研讨会和近期网络研讨会
-          href: ./canvas-apps/webinars-listing.md
 - name: 模型驱动应用
   href: ./model-driven-apps/model-driven-app-overview.md
   items:
     - name: 示例应用概述
       href: ./model-driven-apps/overview-model-driven-samples.md
+    - name: 生成首个模型驱动应用
+      href: .//model-driven-apps/build-first-model-driven-app.md
     - name: 共享模型驱动应用
       href: ./model-driven-apps/share-model-driven-app.md
     - name: 面向开发人员
