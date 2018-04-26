@@ -1,24 +1,21 @@
 ---
 title: 显示文本或设置日期或时间格式 | Microsoft 文档
 description: 使用 PowerApps 添加日期和时间以及设置其格式
-services: ''
-suite: powerapps
 documentationcenter: ''
 author: AFTOwen
-manager: anneta
+manager: kfile
 editor: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 10/16/2016
 ms.author: anneta
-ms.openlocfilehash: 98bd76540e4e4d167535bd66ff556ef343ef7ef6
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 71f527486b16db6344340c14672ede9cdaeb09ab
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="show-text-and-format-dates-and-times-in-powerapps"></a>在 PowerApps 中显示文本以及设置日期和时间格式
 添加日期和时间，然后设置其格式，以便显示正确级别的详细信息，或者让其反映你的区域设置。 计算两个日期相差多少时间，或者计算一个日期，该日期比指定的日期早或晚一定的时间。 将日期转换成按年、月、日表示的不同值（或者反过来），以及将时间转换成按小时、分钟、秒表示的不同值（或者反过来）。
@@ -55,7 +52,7 @@ ms.lasthandoff: 03/22/2018
    * **DateDiff**：计算两个日期之间的天数、季度数或年数。
    * **Today**：计算当天的日期，以单个值表示。
    * **DateValue**：将双引号引起来的字符串转换为一个可以进行计算的值。
-3. 添加名为 **BirthDate** 的**[文本输入](controls/control-text-input.md)**控件，将其移至 **ShowText** 下。
+3. 添加名为 **BirthDate** 的**[文本输入](controls/control-text-input.md)** 控件，将其移至 **ShowText** 下。
 
 4. 在 **BirthDate** 中键入你的出生月和日（例如 **05/18**）。
 
@@ -79,7 +76,7 @@ ms.lasthandoff: 03/22/2018
 > 
 > 
 
-1. 添加名为 **ArrivalDateTime** 的**[文本输入](controls/control-text-input.md)**控件，然后按以下格式键入日期和时间：
+1. 添加名为 **ArrivalDateTime** 的**[文本输入](controls/control-text-input.md)** 控件，然后按以下格式键入日期和时间：
    <br>**5/10/85 6:15 AM**
 2. 添加一个名为“ShowDate”的“[标签](controls/control-text-box.md)”控件，然后将“[Text](controls/properties-core.md)”属性设置为以下公式：
    <br>**DateTimeValue(ArrivalDateTime.Text)**
@@ -125,7 +122,7 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="format-a-date-by-using-datevalue"></a>使用 DateValue 设置日期格式
 
-1. 添加名为 **ArrivalDate** 的**[文本输入](controls/control-text-input.md)**控件，然后在其中键入日期（例如 **5/10/85**）。
+1. 添加名为 **ArrivalDate** 的**[文本输入](controls/control-text-input.md)** 控件，然后在其中键入日期（例如 **5/10/85**）。
 
 2. 添加一个名为“FormatDate”的“[标签](controls/control-text-box.md)”控件，然后将“[Text](controls/properties-core.md)”属性设置为以下公式：
    <br>**DateValue(ArrivalDate.Text)**
@@ -146,7 +143,7 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="format-a-time-using-datetimevalue"></a>使用 DateTimeValue 设置时间格式
 
-1. 添加名为 **ArrivalTime** 的**[文本输入](controls/control-text-input.md)**控件，然后在其中键入 **6:15 AM**。
+1. 添加名为 **ArrivalTime** 的**[文本输入](controls/control-text-input.md)** 控件，然后在其中键入 **6:15 AM**。
 
 2. 添加一个名为“ShowTime”的“[标签](controls/control-text-box.md)”控件。
 
@@ -166,7 +163,7 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="show-the-time-between-dates"></a>显示两个日期之间有多少时间
 
-1. 添加两个**[文本输入](controls/control-text-input.md)**控件，分别名为 **Start** 和 **End**。
+1. 添加两个**[文本输入](controls/control-text-input.md)** 控件，分别名为 **Start** 和 **End**。
 
 2. 将 **4/1/2015** 键入到 **Start** 中，将 **1/1/2016** 键入到 **End** 中。
 
@@ -182,7 +179,7 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="identify-a-date-before-or-after-another-date"></a>确定一个日期之前或之后的另一个日期
 
-1. 添加名为 **Start** 的**[文本输入](controls/control-text-input.md)**控件，然后在其中键入 **5/10/1985**。
+1. 添加名为 **Start** 的**[文本输入](controls/control-text-input.md)** 控件，然后在其中键入 **5/10/1985**。
 
 2. 添加一个名为“DateAdd”的“[标签](controls/control-text-box.md)”控件，然后将“[Text](controls/properties-core.md)”属性设置为以下公式：
    <br>**DateAdd(DateValue(Start.Text), 3)**
@@ -205,7 +202,7 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="calculate-dates-based-on-years-months-and-days"></a>根据年、月、日计算日期
 
-1. 添加三个**[下拉](controls/control-drop-down.md)**控件，分别名为 **Year**、**Month** 和 **Day**。
+1. 添加三个**[下拉](controls/control-drop-down.md)** 控件，分别名为 **Year**、**Month** 和 **Day**。
 
 2. 将 **Year** 的 **[Items](controls/properties-core.md)** 属性设置为以下公式：
    <br>**Table({Year:"2014"}, {Year:"2015"}, {Year:"2016"})**
@@ -221,7 +218,7 @@ ms.lasthandoff: 03/22/2018
    
     默认情况下将列出 **Wednesday, January 1, 2014**。 在“[下拉列表](controls/control-drop-down.md)”控件中选择不同的值，以更改“[标签](controls/control-text-box.md)”控件中的日期。
 
-可能需要对不正常的数据进行转换。 如果添加了**[文本输入](controls/control-text-input.md)**控件而不是**[下拉](controls/control-drop-down.md)**控件，则用户可能会输入不正确的日期，例如 May 45。 **[Date](functions/function-date-time.md)** 函数按以下方式处理异常数据：
+可能需要对不正常的数据进行转换。 如果添加了**[文本输入](controls/control-text-input.md)** 控件而不是**[下拉](controls/control-drop-down.md)** 控件，则用户可能会输入不正确的日期，例如 May 45。 **[Date](functions/function-date-time.md)** 函数按以下方式处理异常数据：
 
 * 如果年份值介于 0 到 1899（含）之间，则函数将该值添加到 1900，以计算年份。
 * 如果年份值介于 1900 到 9999（含）之间，则函数使用该值作为年份。
@@ -248,5 +245,5 @@ ms.lasthandoff: 03/22/2018
    
     此时，“[标签](controls/control-text-box.md)”控件显示“3:45 PM”。
    
-    可以向 **Hour** 和 **Minute** 添加条目，以便用户能够在更大范围内选择小时数，以更精确的方式选择分钟数。 也可添加第三个**[下拉](controls/control-drop-down.md)**控件，允许用户指定秒。 如果添加第三个列表，请将“[标签](controls/control-text-box.md)”控件的“[Text](controls/properties-core.md)”属性设置为以下表达式：<br>**Text(Time(Value(Hour.Selected.Value), Value(Minute.Selected.Value), Value(Second.Selected.Value)), DateTimeFormat.LongTime)**
+    可以向 **Hour** 和 **Minute** 添加条目，以便用户能够在更大范围内选择小时数，以更精确的方式选择分钟数。 也可添加第三个**[下拉](controls/control-drop-down.md)** 控件，允许用户指定秒。 如果添加第三个列表，请将“[标签](controls/control-text-box.md)”控件的“[Text](controls/properties-core.md)”属性设置为以下表达式：<br>**Text(Time(Value(Hour.Selected.Value), Value(Minute.Selected.Value), Value(Second.Selected.Value)), DateTimeFormat.LongTime)**
 

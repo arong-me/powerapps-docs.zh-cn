@@ -1,24 +1,21 @@
 ---
 title: 启动应用中的流 | Microsoft 文档
 description: 创建一个流，该流在应用中发生某个事件（例如用户选择某个按钮）后执行一个或多个任务。
-services: ''
-suite: powerapps
 documentationcenter: ''
 author: stepsic-microsoft-com
-manager: anneta
+manager: kfile
 editor: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 06/05/2017
 ms.author: sharik
-ms.openlocfilehash: 378394fe0c42d0418a62974c26b217ab473d40ed
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: bf9cbe451cc9ac5fa0ef98ba3e32963e240c0b5e
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="start-a-flow-in-an-app"></a>启动应用中的流
 可以使用 Microsoft Flow 来创建逻辑，以便在应用中发生某个事件时执行一个或多个任务。 例如，配置一个按钮，以便用户选择它时在 SharePoint 列表中创建一个项、发送电子邮件或会议请求、将文件添加到云，或执行所有上述操作。 可以在应用中配置任何用于启动流的控件，该控件在关闭 PowerApps 的情况下仍会继续运行。
@@ -80,11 +77,11 @@ ms.lasthandoff: 03/22/2018
 
 2. 在“空白应用”磁贴上，选择“手机布局”。
 
-3. 添加**[文本输入](controls/control-text-input.md)**控件，将其命名为 **RecordTitle**。
+3. 添加**[文本输入](controls/control-text-input.md)** 控件，将其命名为 **RecordTitle**。
 
-4. 添加**[按钮](controls/control-button.md)**控件，将其移至 **RecordTitle** 下。
+4. 添加**[按钮](controls/control-button.md)** 控件，将其移至 **RecordTitle** 下。
 
-5. 选择**[按钮](controls/control-button.md)**控件后，在“操作”选项卡上选择“流”。
+5. 选择**[按钮](controls/control-button.md)** 控件后，在“操作”选项卡上选择“流”。
 
     ![“操作”选项卡上的“流”选项](./media/using-logic-flows/action-tab.png)
 

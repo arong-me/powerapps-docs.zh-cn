@@ -1,24 +1,22 @@
 ---
 title: 通过查找字段创建 SharePoint 列表之间的关系 | Microsoft 文档
 description: 通过使用查阅字段创建 SharePoint 列表之间的关系。
-services: powerapps
 documentationcenter: na
 author: skjerland
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 01/20/2017
 ms.author: sharik
-ms.openlocfilehash: a1966016b07a79a23880511a5cc0d6da8643adbc
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 194bc4d68d4b26360074d8ed431cacaf231d0cdf
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-link-sharepoint-lists-using-lookup-fields"></a>如何使用查阅字段链接 SharePoint 列表
 本教程演示如何使用查阅字段连接两个 SharePoint 列表。

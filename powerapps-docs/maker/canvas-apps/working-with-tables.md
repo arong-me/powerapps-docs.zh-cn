@@ -1,25 +1,22 @@
 ---
 title: 了解表 | Microsoft 文档
 description: 有关使用表、列和记录的参考信息
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 794263448bc067ef8bf44ae46480865c56fdbdf8
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 42a7c0db6aaf46d8cdbd112cf72c6f95f58dc9ec
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>了解 PowerApps 中的表和记录
 可以创建一个应用，用于访问 Microsoft Excel、SharePoint、SQL Server 以及在记录和表中存储数据的其他多个源中的信息。 若要最有效地处理此类数据，请查看这些结构的基本概念。
@@ -174,7 +171,7 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 可以使用记录作为相关命名值的通用容器。
 
 * 如果围绕 **[UpdateContext](functions/function-updatecontext.md)** 和 **[Navigate](functions/function-navigate.md)** 函数构建公式，请使用记录来收集想要更新的[上下文变量](working-with-variables.md#create-a-context-variable)。
-* 在**[编辑窗体](controls/control-form-detail.md)**控件中使用 **[Updates](controls/control-form-detail.md)** 属性可收集用户在窗体中所做的更改。
+* 在**[编辑窗体](controls/control-form-detail.md)** 控件中使用 **[Updates](controls/control-form-detail.md)** 属性可收集用户在窗体中所做的更改。
 * 使用 **[Patch](functions/function-patch.md)** 函数不仅可以更新数据源，而且还能合并记录。
 
 在这些情况下，记录永远不能是表的一部分。
@@ -237,8 +234,8 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 ### <a name="disambiguation"></a>消除歧义
 使用记录范围添加的字段名称将替代应用中来自其他位置的同一名称。  在此情况下，仍可使用 [**@** 消除歧义](functions/operators.md)运算符访问来自记录范围外部的值：
 
-* 若要访问来自嵌套记录作用域的值，请使用 **@** 运算符，其中所操作的表名称使用模式 ***Table*[@*FieldName***]。  
-* 若要访问全局值，如数据源、集合和上下文变量，请使用模式 ***[@*ObjectName**]**（无需指派表）。
+* 若要访问来自嵌套记录作用域的值，请使用 **@** 运算符，其中所操作的表名称使用模式 ***Table *[@* FieldName***]。  
+* 若要访问全局值，如数据源、集合和上下文变量，请使用模式 ***[@* ObjectName**]**（无需指派表）。
 
 如果所操作的表是一个表达式，例如 **Filter( *table*, ... )**，则不能使用消除歧义运算符。  只有最里面的记录范围可以在不使用消除歧义运算符的情况下从此表表达式访问字段。
 

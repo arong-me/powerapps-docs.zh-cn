@@ -1,25 +1,22 @@
 ---
 title: EditForm、NewForm、SubmitForm、ResetForm 和 ViewForm 函数 | Microsoft 文档
 description: PowerApps 中 EditForm、NewForm、SubmitForm、ResetForm 和 ViewForm 函数的引用信息（包括语法和示例）
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 7e64426cfee2b72cd8fda51b889b99b285147fcc
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 6a32068d0de49ea0a6cf752fde0fd486159f39e9
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>PowerApps 中的 EditForm、NewForm、SubmitForm、ResetForm 和 ViewForm 函数
 查看、编辑或创建一个项，保存内容，以及在[编辑表单](../controls/control-form-detail.md)控件中重置控件。
@@ -34,7 +31,7 @@ ms.lasthandoff: 03/22/2018
 | FormMode.View |表单使用现有记录填充，但用户无法修改字段的值。 |
 
 ## <a name="description"></a>说明
-这些函数通常从**[按钮](../controls/control-button.md)**或**[图像](../controls/control-image.md)**控件的 **[OnSelect](../controls/properties-core.md)** 公式中调用，以便用户可以保存编辑、放弃编辑或创建记录。 可通过[将控件和这些函数结合使用](../working-with-forms.md)来创建完整的解决方案。
+这些函数通常从**[按钮](../controls/control-button.md)** 或**[图像](../controls/control-image.md)** 控件的 **[OnSelect](../controls/properties-core.md)** 公式中调用，以便用户可以保存编辑、放弃编辑或创建记录。 可通过[将控件和这些函数结合使用](../working-with-forms.md)来创建完整的解决方案。
 
 这些函数不返回任何值。
 
@@ -43,7 +40,7 @@ ms.lasthandoff: 03/22/2018
 
 提交任何更改之前，针对被标记为必需或其值有一个或多个约束的字段，此函数会检查验证问题。 此行为与 **[Validate](function-validate.md)** 函数类似。
 
-**SubmitForm** 还会检查窗体的 **[Valid](../controls/control-form-detail.md)** 属性，这包括窗体控件所包含的**[卡片](../controls/control-card.md)**控件的所有 **[Valid](../controls/control-card.md)** 属性。 如果出现问题，数据将不会提交，并且窗体控件的 **[Error](../controls/control-form-detail.md)** 和 **[ErrorKind](../controls/control-form-detail.md)** 属性会进行相应的设置。
+**SubmitForm** 还会检查窗体的 **[Valid](../controls/control-form-detail.md)** 属性，这包括窗体控件所包含的**[卡片](../controls/control-card.md)** 控件的所有 **[Valid](../controls/control-card.md)** 属性。 如果出现问题，数据将不会提交，并且窗体控件的 **[Error](../controls/control-form-detail.md)** 和 **[ErrorKind](../controls/control-form-detail.md)** 属性会进行相应的设置。
 
 如果通过验证，**SubmitForm** 会将更改提交到数据源。
 

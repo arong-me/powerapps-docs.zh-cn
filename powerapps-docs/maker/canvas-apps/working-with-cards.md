@@ -1,28 +1,25 @@
 ---
 title: 了解数据卡 | Microsoft 文档
 description: 使用表单卡从数据源收集和显示信息。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 64a7132151ea9df7071c21427d2554bd12bb026c
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 074e40dd2fc19279bef36ac91196c61b050abda3
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-data-cards"></a>了解数据卡
-**[卡](controls/control-card.md)**控件是**[编辑表单](controls/control-form-detail.md)**和**[显示表单](controls/control-form-detail.md)**控件的构建基块。 表单表示整条记录，每个卡表示该记录的单个字段。
+**[卡](controls/control-card.md)** 控件是**[编辑表单](controls/control-form-detail.md)** 和**[显示表单](controls/control-form-detail.md)** 控件的构建基块。 表单表示整条记录，每个卡表示该记录的单个字段。
 
 在设计工作区中选择表单控件后即可在右窗格中与卡轻松地进行交互。 在该窗格中，可以选择要显示哪些字段、每个字段的显示方式，以及按何种顺序进行显示。 此示例显示了从名为“资产”的 SharePoint 列表生成的应用中的“编辑表单”控件。
 
@@ -44,14 +41,14 @@ PowerApps 为字符串、数字和其他数据类型提供了一组预定义的�
 ![](./media/working-with-cards/add-security-code.png)
 
 ## <a name="customize-a-card"></a>自定义卡片
-卡还包含其他控件。 在“编辑表单”控件中，用户在你从“插入”选项卡添加的标准**[文本输入](controls/control-text-input.md)**控件中输入数据。  
+卡还包含其他控件。 在“编辑表单”控件中，用户在你从“插入”选项卡添加的标准**[文本输入](controls/control-text-input.md)** 控件中输入数据。  
 
 下面，让我们举例说明如何通过操作其中的控件来更改卡的外观。
 
 1. 首先，让我们返回到最近为 **SecurityCode** 字段插入的卡。 通过单击或点击一次来选择此卡：
    
     ![](./media/working-with-cards/select-security-code.png)
-2. 选择该卡内的**[文本输入](controls/control-text-input.md)**控件（通过单击或点击输入控件本身）。
+2. 选择该卡内的**[文本输入](controls/control-text-input.md)** 控件（通过单击或点击输入控件本身）。
    
     ![](./media/working-with-cards/select-text-input.png)
 3. 通过拖动选择框在卡内移动此控件，通过沿选择框的边缘拖动手柄来调整控件大小：

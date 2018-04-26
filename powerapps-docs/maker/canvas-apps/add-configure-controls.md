@@ -1,25 +1,22 @@
 ---
 title: 添加和配置控件 | Microsoft 文档
 description: 有关直接在“属性”选项卡的工具栏或编辑栏中添加和配置控件的分步说明。
-services: ''
-suite: powerapps
 documentationcenter: na
-author: skjerland
-manager: anneta
+author: aftowen
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 07/10/2017
-ms.author: sharik
-ms.openlocfilehash: e16513c9ce4ec1a4274993640a3e0690d552f07c
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: anneta
+ms.openlocfilehash: 90689d708d5b86d243647a14282c6599e51f7450
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-and-configure-a-control-in-powerapps"></a>在 PowerApps 中添加和配置控件
 将各种 UI 元素添加到应用中，然后直接在“属性”选项卡的工具栏或编辑栏中配置其各方面外观和行为。 这些 UI 元素称为“控件”，配置的各方面外观和行为称为“属性”。
@@ -75,7 +72,7 @@ ms.lasthandoff: 03/22/2018
 
     ![重设大小的标签](./media/add-configure-controls/shorter-text-box.png)
 
-     也可以通过修改此控件的**[“Height”](controls/properties-size-location.md)**和/或**[“Width”](controls/properties-size-location.md)**属性来重设控件大小，本主题稍后将会对此进行介绍。
+     也可以通过修改此控件的**[“Height”](controls/properties-size-location.md)** 和/或**[“Width”](controls/properties-size-location.md)** 属性来重设控件大小，本主题稍后将会对此进行介绍。
 
 3. 拖动选择框本身（或修改“[X](controls/properties-size-location.md)”和/或“[Y](controls/properties-size-location.md)”属性，本主题稍后将会对此进行介绍），移动“标签”控件。
 
@@ -83,7 +80,7 @@ ms.lasthandoff: 03/22/2018
 
     ![内含自定义文本的标签](./media/add-configure-controls/change-text-directly.png)
 
-     也可以通过设置此控件的**[“Text”](controls/properties-core.md)**属性来修改该文本，本主题稍后将会对此进行介绍。
+     也可以通过设置此控件的**[“Text”](controls/properties-core.md)** 属性来修改该文本，本主题稍后将会对此进行介绍。
 
 ## <a name="configure-a-control-from-the-toolbar"></a>在工具栏中配置控件
 与直接配置控件相比，在工具栏中配置控件可以指定更多不同类型的选项。
@@ -156,9 +153,9 @@ ms.lasthandoff: 03/22/2018
 
 本主题前面所做的全部更改均更新了你配置的控件的[属性](reference-properties.md)值。
 
-* 重设此控件的大小时，更改了它的**[“Width”](controls/properties-size-location.md)**属性。
-* 移动此控件时，更改了它的**[“X”](controls/properties-size-location.md)**和**[“Y”](controls/properties-size-location.md)**属性。
-* 更改此控件显示的文本时，更改了它的**[“Text”](controls/properties-core.md)**属性。
+* 重设此控件的大小时，更改了它的**[“Width”](controls/properties-size-location.md)** 属性。
+* 移动此控件时，更改了它的**[“X”](controls/properties-size-location.md)** 和**[“Y”](controls/properties-size-location.md)** 属性。
+* 更改此控件显示的文本时，更改了它的**[“Text”](controls/properties-core.md)** 属性。
 
 除了在“属性”选项卡中或在工具栏中直接配置控件外，也可以通过在属性列表中选择一个属性，然后在编辑栏中指定一个值来更新该属性的值。 使用这种方法，可以按字母顺序搜索属性，并能指定更多类型的值。
 
@@ -206,7 +203,7 @@ ms.lasthandoff: 03/22/2018
 
     **If(MyCheckbox.Value = true, true, false)**
 
-    这个 **[If 函数](functions/function-if.md)**声明了标签应仅在复选框处于选中状态时显示。 由于复选框处于取消选中状态，因此“标签”控件消失（选择框仍可见）。
+    这个 **[If 函数](functions/function-if.md)** 声明了标签应仅在复选框处于选中状态时显示。 由于复选框处于取消选中状态，因此“标签”控件消失（选择框仍可见）。
 
     ![“Visible”属性公式](./media/add-configure-controls/visible-formula.png)
 
