@@ -1,25 +1,22 @@
 ---
 title: Calendar 和 Clock 函数 | Microsoft 文档
 description: PowerApps 中 Calendar 和 Clock 函数的参考信息（包括语法和示例）
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: d04899e4557379f07b9f434b928b35e406a9e9ca
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 0d725f00dc3617449eca9e16aedcf07c1414411f
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="calendar-and-clock-functions-in-powerapps"></a>PowerApps 中的 Calendar 和 Clock 函数
 检索有关当前区域设置的日历和时钟信息。

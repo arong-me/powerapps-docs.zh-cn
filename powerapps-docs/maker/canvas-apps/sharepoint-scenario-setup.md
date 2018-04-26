@@ -1,25 +1,22 @@
 ---
 title: 创建列表以便将 SharePoint Online 与 PowerApps、Microsoft Flow 和 Power BI 集成 | Microsoft 文档
 description: 在此任务中，我们将创建 SharePoint 列表，以用作应用、流、报表和仪表板的数据源。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: mgblythe
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 12/19/2017
 ms.author: mblythe
-ms.openlocfilehash: ad9033b51142d1bb6b014abe0cc049a0b5c27ee5
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 1dde9695f3fb3f0fe7351a22a1a6f5300fb53da8
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-microsoft-flow-and-power-bi"></a>创建列表以便将 SharePoint Online 与 PowerApps、Microsoft Flow 和 Power BI 集成
 > [!NOTE]

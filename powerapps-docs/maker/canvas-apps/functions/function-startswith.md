@@ -1,25 +1,22 @@
 ---
 title: EndsWith 和 StartsWith 函数 | Microsoft 文档
 description: PowerApps 中 EndsWith 和 StartsWith 函数的参考信息（包括语法和示例）
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: 2ffc183221e399ee978ac9a600b400e96a00f704
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: c01a69f311378e8e818036c866b96a78f223baf9
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>PowerApps 中的 EndsWith 和 StartsWith 函数
 测试文本字符串是否以另一个文本字符串开头或结尾。
@@ -66,7 +63,7 @@ EndsWith 函数测试某个文本字符串是否以其他文本字符串结尾�
 
 ![](media/function-startswith/customers.png)
 
-若要将此数据源创建为集合，请创建一个**[按钮](../controls/control-button.md)**控件，并将其 **OnSelect** 属性设置为以下公式：
+若要将此数据源创建为集合，请创建一个**[按钮](../controls/control-button.md)** 控件，并将其 **OnSelect** 属性设置为以下公式：
 
 **ClearCollect( Customers, Table( { Name: "Fred Garcia", Company: "Northwind Traders" }, { Name: "Cole Miller", Company: "Contoso" }, { Name: "Glenda Johnson", Company: "Contoso" }, { Name: "Mike Collins", Company: "Adventure Works" }, { Name: "Colleen Jones", Company: "Adventure Works" } ) )**
 

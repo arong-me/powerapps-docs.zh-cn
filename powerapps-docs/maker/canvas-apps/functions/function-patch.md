@@ -1,25 +1,22 @@
 ---
 title: Patch 函数 | Microsoft 文档
 description: PowerApps 中 Patch 函数的参考信息（包括语法和示例）
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 44d4c9e15b63cfbbd2f5304e6df7bd70fe748a04
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: d0b2ff351f7026967359f1b4d386a71d7ed5441f
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="patch-function-in-powerapps"></a>PowerApps 中的 Patch 函数
 在[数据源](../working-with-data-sources.md)中修改或创建一条或多条[记录](../working-with-tables.md#records)，或者合并数据源外的记录。
@@ -45,7 +42,7 @@ ms.lasthandoff: 03/22/2018
 ### <a name="modify-or-create-a-record-in-a-data-source"></a>在数据源中修改或创建记录
 要在数据源中使用这个函数，请指定数据源，然后指定一条基本记录：
 
-* 要修改记录，基本记录必须来自数据源。  基本记录可能来自一个库的**[项](../controls/properties-core.md)**属性（在[上下文变量](../working-with-variables.md#create-a-context-variable)中），也可能来自其他途径。 不管怎样，最终必须能够追溯到基本记录来自数据源。  这一点非常重要，因为记录中包含一些额外的信息，可以帮助你重新找到记录，以便进行修改。  
+* 要修改记录，基本记录必须来自数据源。  基本记录可能来自一个库的**[项](../controls/properties-core.md)** 属性（在[上下文变量](../working-with-variables.md#create-a-context-variable)中），也可能来自其他途径。 不管怎样，最终必须能够追溯到基本记录来自数据源。  这一点非常重要，因为记录中包含一些额外的信息，可以帮助你重新找到记录，以便进行修改。  
 * 要创建记录，请使用 **[Defaults](function-defaults.md)** 函数创建一条包含默认值的基本记录。  
 
 然后指定一条或多条更改记录，每条记录都包含用于替代基本记录中属性值的新属性值。 更改记录按照参数列表从头到尾的顺序进行处理，并且使用后者的属性值替换前者的属性值。

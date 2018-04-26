@@ -1,25 +1,22 @@
 ---
 title: 教程：借助 PowerApps 创建带组件的自定义实体 | Microsoft Docs
 description: 本教程提供分步说明，介绍如何创建并配置实体以将其与 PowerApps 应用结合使用。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: Mattp123
-manager: bycho
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: cds
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 3fd8b262849fb1f6bf2a7ff70d9d9af8b082efac
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 685a275f496c631e6c784bde4e8b2b245507388f
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-create-a-custom-entity-that-has-components-in-powerapps"></a>教程：在 PowerApps 中创建带组件的自定义实体
 

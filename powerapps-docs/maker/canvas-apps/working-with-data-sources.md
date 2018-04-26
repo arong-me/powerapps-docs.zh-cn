@@ -1,25 +1,22 @@
 ---
 title: 了解数据源 | Microsoft 文档
 description: 有关使用 Microsoft PowerApps 中的连接和数据源的参考信息。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/08/2017
 ms.author: gregli
-ms.openlocfilehash: ae53ebb6c0ae4743ffd4e978e680920a56452a7d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 5e9b9ec980e6dd4aeacfef42b40fe7f52c19d558
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-data-sources-in-powerapps"></a>了解 PowerApps 中的数据源
 大多数 PowerApps 应用使用所谓**数据源**的云服务中存储的外部信息。 OneDrive for Business 中存储的 Excel 文件包含的表就一个常见的例子。 应用使用**连接**访问这些数据源。
@@ -37,7 +34,7 @@ ms.lasthandoff: 03/22/2018
 除表以外的其他数据源包括电子邮件、日历、Twitter 和通知，但本文并不介绍其他这些类型的数据源。
 
 ### <a name="local-data-sources"></a>本地数据源
-使用**[库](controls/control-gallery.md)**、**[显示窗体](controls/control-form-detail.md)**和**[编辑窗体](controls/control-form-detail.md)**控件可以轻松创建一个可在数据源中读取和写入数据的应用。  若要开始，请阅读[了解数据窗体](working-with-forms.md)一文。  
+使用**[库](controls/control-gallery.md)**、**[显示窗体](controls/control-form-detail.md)** 和**[编辑窗体](controls/control-form-detail.md)** 控件可以轻松创建一个可在数据源中读取和写入数据的应用。  若要开始，请阅读[了解数据窗体](working-with-forms.md)一文。  
 
 如果想要让 PowerApps 基于数据创建应用，需使用这些控件。 在幕后，应用使用内部表来存储和处理来自数据源的数据。
 
@@ -92,7 +89,7 @@ PowerApps 应用内部的表为固定值，就如同数字或字符串是值一�
 * 用户可以使用屏幕上的按钮或图像控件来保存对记录所做的更改。  控件的 **[OnSelect](controls/properties-core.md)** 公式调用 **[SubmitForm](functions/function-form.md)** 函数来执行此操作。  **[SubmitForm](functions/function-form.md)** 读取卡片的所有 **[Update](controls/control-card.md)** 属性，并使用此信息写回到数据源。
 * 有时会出现问题。  网络连接可能会出现故障，或者服务会执行应用所不知道的验证检查。  窗体控件的 **Error** 和 **[ErrorKind](controls/control-form-detail.md)** 属性可提供此信息，让你向用户显示。  
 
-若要对整个过程进行更精细的控制，还可以使用 **[Patch](functions/function-patch.md)** 和 **[Errors](functions/function-errors.md)** 函数。  **[编辑窗体](controls/control-form-detail.md)**控件公开一个 **[Updates](controls/control-form-detail.md)** 属性，用于读取窗体中字段的值。  还可以使用此属性对连接调用自定义连接器，从而完全绕过 **Patch** 和 **SubmitForm** 函数。
+若要对整个过程进行更精细的控制，还可以使用 **[Patch](functions/function-patch.md)** 和 **[Errors](functions/function-errors.md)** 函数。  **[编辑窗体](controls/control-form-detail.md)** 控件公开一个 **[Updates](controls/control-form-detail.md)** 属性，用于读取窗体中字段的值。  还可以使用此属性对连接调用自定义连接器，从而完全绕过 **Patch** 和 **SubmitForm** 函数。
 
 ### <a name="validation"></a>验证
 在对记录进行更改之前，应用应该尽力确保该项更改被接受。  原因有两点：
@@ -130,7 +127,7 @@ PowerApps 提供两个验证工具：
 * 随时可以使用 **[Collect](functions/function-clear-collect-clearcollect.md)** 函数修改集合的列。
 * 集合允许重复记录。  一个集合中可以存在同一记录的多个副本。  除非提供了 **All** 参数，否则 **[Remove](functions/function-remove-removeif.md)** 等函数将针对它们找到的第一个匹配项运行。
 * 可以使用 **[SaveData](functions/function-savedata-loaddata.md)** 和 **[LoadData](functions/function-savedata-loaddata.md)** 函数来保存和重新加载集合的副本。  信息存储在其他用户、应用或设备无法访问的专用位置。
-* 可以使用**[导出](controls/control-export-import.md)**和**[导入](controls/control-export-import.md)**控件将集合的副本保存和重新加载到用户可交互的文件中。  
+* 可以使用**[导出](controls/control-export-import.md)** 和**[导入](controls/control-export-import.md)** 控件将集合的副本保存和重新加载到用户可交互的文件中。  
 
 有关使用集合作为数据源的详细信息，请参阅[创建和更新集合](create-update-collection.md)。
 

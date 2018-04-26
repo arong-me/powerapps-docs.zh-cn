@@ -1,7 +1,6 @@
 ---
 title: 使用 Common Data Service 数据库从头开始创建应用 | Microsoft 文档
 description: 创建用于添加、更新和删除记录的应用。
-services: powerapps
 documentationcenter: na
 author: AFTOwen
 manager: kfile
@@ -9,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: cb60ea139be12e51ea9faac7f61ca769d80c1af7
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a0aab890e52b49bb0cac382338a8fa02eec736a0
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-an-app-from-scratch-using-a-common-data-service-database"></a>使用 Common Data Service 数据库从头开始创建应用
 生成一个应用，以使用（内置的）标准实体和/或（组织创建的）自定义实体来管理 Common Data Service 中存储的数据。
@@ -41,7 +39,6 @@ ms.lasthandoff: 03/22/2018
     可从头开始设计一个在手机或其他设备（如平板电脑）上使用的应用；本主题将重点介绍如何设计在手机上使用的应用。
 
 ## <a name="specify-an-entity"></a>指定实体
-
 1. 在屏幕中间，单击或点击“连接到数据”，然后在“数据”窗格中，单击或点击“Common Data Service”连接。
 
 1. 在搜索框中，键入或粘贴帐户的前几个字母以筛选实体列表，选择“帐户”复选框，然后单击或点击“连接”。
@@ -122,7 +119,7 @@ ms.lasthandoff: 03/22/2018
     ![“下一步”图标](./media/data-platform-create-app-scratch/next-icon.png)
 
 1. 在“FormScreen”上，单击或点击取消图标，然后将其“OnSelect”属性设置为此公式：<br>
-`ResetForm(EditForm1);Navigate(FormScreen, ScreenTransition.None)`
+`ResetForm(EditForm1);Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![“取消”图标](./media/data-platform-create-app-scratch/cancel-icon.png)
 

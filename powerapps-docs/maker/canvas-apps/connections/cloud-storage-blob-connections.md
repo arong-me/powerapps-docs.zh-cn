@@ -1,25 +1,22 @@
 ---
 title: 云存储连接概述 | Microsoft 文档
 description: 了解如何连接云存储帐户，并在应用中显示 Excel 数据
-services: ''
-suite: powerapps
 documentationcenter: ''
-author: archnair
-manager: anneta
+author: lancedMicrosoft
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 07/12/2016
-ms.author: archanan
-ms.openlocfilehash: fbe6cf68dace0ae8924f1ec5dc12b1a1ec1cde25
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: lanced
+ms.openlocfilehash: 7c3d88498c92d8e1d0e8490bfafc0654b044e98b
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>从 PowerApps 连接到云存储
 PowerApps 提供多个云存储连接。 使用其中任何一种连接，都可以存储 Excel 文件，并将其中的信息用于整个应用。 这些连接包括：  
@@ -58,7 +55,7 @@ PowerApps 提供多个云存储连接。 使用其中任何一种连接，都可
 
 ## <a name="using-the-excel-data-in-your-app"></a>在应用中使用 Excel 数据
 1. 在“插入”选项卡上，依次选择“库”和“包含文本”库控件。
-2. 将库的**[“Items”](../controls/properties-core.md)**属性设为 Excel 表。 例如，如果 Excel 表名为“Table1”，请将此属性设为 Table1：  
+2. 将库的**[“Items”](../controls/properties-core.md)** 属性设为 Excel 表。 例如，如果 Excel 表名为“Table1”，请将此属性设为 Table1：  
    
     ![项属性](./media/cloud-storage-blob-connections/itemsproperty.png)  
    

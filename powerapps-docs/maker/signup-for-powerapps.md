@@ -1,8 +1,6 @@
 ---
 title: 注册免费试用版许可证 | Microsoft Docs
 description: 注册免费许可证，以个人身份试用 PowerApps 30 天。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: AFTOwen
 manager: kfile
@@ -10,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/12/2018
 ms.author: anneta
-ms.openlocfilehash: a982e888e19fecd835a45f0e72e7c02ac4387897
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 485dfcf47f76a042afab80c769f994c6cbf1ceac
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sign-up-for-a-free-license-to-try-powerapps"></a>注册免费许可证试用 PowerApps
 若要在 PowerApps 中创建应用，需要几种类型的许可证之一，这些许可证提供不同的功能级别。 如果你的组织为你购买了 Office 365 或 Dynamics 365 的任何一个版本，或者你的组织为你购买了 PowerApps 计划 1 或计划 2 许可证，则你已经拥有 PowerApps 许可证。

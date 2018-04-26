@@ -1,25 +1,22 @@
 ---
 title: Filter、Search 和 LookUp 函数 | Microsoft 文档
 description: PowerApps 中 Filter 和 LookUp 函数的引用信息（包括语法和示例）
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 02/05/2017
 ms.author: gregli
-ms.openlocfilehash: 2a9fa8c08423cfdfb5094547602041b8dda571f2
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 35dec320b52dd934d616ba067932228b0e15ee3d
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="filter-search-and-lookup-functions-in-powerapps"></a>PowerApps 中的 Filter、Search 和 LookUp 函数
 查找[表](../working-with-tables.md)中的一个或多个[记录](../working-with-tables.md#records)。

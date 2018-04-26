@@ -1,7 +1,6 @@
 ---
 title: 创建自定义实体的快速入门 | Microsoft Docs
 description: 创建以其他实体为基础的自定义实体或从头开始创建自定义实体的快速入门。
-services: powerapps
 documentationcenter: na
 author: clwesene
 manager: kfile
@@ -9,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: cds
 ms.date: 3/21/2018
 ms.author: clwesene
-ms.openlocfilehash: e22a18bacb258ca46c8f36d647f9ebcc45282929
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: 2232083de556bafcc978423dafb0e98e564aaa3b
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-a-custom-entity"></a>快速入门：创建自定义实体
 可以创建自定义实体来存储特定于组织的数据。 然后可通过开发引用该实体的应用来显示该数据。 创建实体后，可以[创建或修改实体的一个或多个字段](data-platform-manage-fields.md)，以及 [构建实体之间的关系](data-platform-entity-lookup.md)。

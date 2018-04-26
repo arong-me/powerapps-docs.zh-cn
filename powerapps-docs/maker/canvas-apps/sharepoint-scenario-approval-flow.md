@@ -1,25 +1,22 @@
 ---
 title: 创建用于管理项目审批的流 | Microsoft 文档
 description: 在此任务中，我们将创建用于驱动项目审批流程的流。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: mgblythe
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 01/09/18
 ms.author: mblythe
-ms.openlocfilehash: 4af1571bb72c713c6186f5237d6b3791eb95808b
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 2a3bb307d403d372d0cae89a0eb9d3fd86271768
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-a-flow-to-manage-project-approvals"></a>创建用于管理项目审批的流
 > [!NOTE]

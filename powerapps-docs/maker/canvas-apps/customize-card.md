@@ -1,8 +1,6 @@
 ---
 title: 自定义卡 | Microsoft 文档
 description: 在 PowerApps 中更改“详细信息”或“编辑”窗体上的卡片中所显示的默认控件
-services: ''
-suite: powerapps
 documentationcenter: ''
 author: AFTOwen
 manager: kfile
@@ -10,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 0a46aeaf5e37a4c461daae65a01a00c38ed53414
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: aa9d5785f1c005da7c22c63bd94cb41e1a643ad3
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customize-a-card-in-powerapps"></a>在 PowerApps 中自定义卡片
 举例来说，通过更改卡控件执行基本的自定义（无需解锁卡）。 例如，通过解锁卡及添加默认情况下该卡无法使用的控件来执行高级自定义。

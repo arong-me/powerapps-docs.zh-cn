@@ -1,25 +1,22 @@
 ---
 title: 在云服务中添加和管理到数据源的连接 | Microsoft 文档
 description: 添加、删除和更新到 SharePoint、SQL Server、OneDrive for Business、Salesforce 和 Office 365 等数据源的连接
-services: ''
-suite: powerapps
 documentationcenter: na
-author: archnair
-manager: anneta
+author: lancedMicrosoft
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/09/2017
-ms.author: archanan
-ms.openlocfilehash: 890bf55524189abb7b4d5c9c62a8318ae1637546
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: lanced
+ms.openlocfilehash: 63db86984ef68571329aa953cb6bbaac505d834e
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-your-connections-in-powerapps"></a>管理 PowerApps 中的连接
 在 [powerapps.com](https://web.powerapps.com) 中，创建从 PowerApps 到一个或多个数据源的连接、删除连接或更新其凭据。
@@ -46,7 +43,7 @@ ms.lasthandoff: 03/22/2018
 
 除表以外，还有其他数据源类型，例如电子邮件、日历、Twitter 和（即将推出的）通知。
 
-使用**[库](controls/control-gallery.md)**、**[显示窗体](controls/control-form-detail.md)**和**[编辑窗体](controls/control-form-detail.md)**控件，可以轻松创建一个在数据源中读取和写入数据的应用。 若要开始操作，请阅读[了解数据窗体](working-with-forms.md)一文。
+使用**[库](controls/control-gallery.md)**、**[显示窗体](controls/control-form-detail.md)** 和**[编辑窗体](controls/control-form-detail.md)** 控件，可以轻松创建一个在数据源中读取和写入数据的应用。 若要开始操作，请阅读[了解数据窗体](working-with-forms.md)一文。
 
 除了在 [powerapps.com](https://web.powerapps.com) 中创建和管理连接外，还可以在执行以下任务时创建连接：
 

@@ -1,25 +1,22 @@
 ---
 title: Abs、Exp、Ln、Power 和 Sqrt 函数 | Microsoft 文档
 description: PowerApps 中 Abs、Sqrt 和其他函数的参考信息（包括语法和示例）
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 09/13/2016
 ms.author: gregli
-ms.openlocfilehash: 25d9b49c7f527d7510e31dd937e1d8a580bb31cf
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 15d458142bc1077b1bf55ae6e358c826f813ecb2
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>PowerApps 中的 Abs、Exp、Ln、Power 和 Sqrt 函数
 计算绝对值、自然对数、平方根和 *e* 或任意数字的指定次方值结果。
@@ -76,7 +73,7 @@ ms.lasthandoff: 03/22/2018
 | **Sqrt(&nbsp;ValueTable&nbsp;)** |返回表中每个数字的平方根。 |![](media/function-numericals/values-sqrt.png) |
 
 ### <a name="step-by-step-example"></a>分步示例
-1. 添加**[“文本输入”](../controls/control-text-input.md)**控件，然后将其命名为“Source”。
+1. 添加**[“文本输入”](../controls/control-text-input.md)** 控件，然后将其命名为“Source”。
 2. 添加一个“标签”控件，然后将“[Text](../controls/properties-core.md)”属性设置为以下公式：
    <br>
    **Sqrt( Value( Source.Text ) )**

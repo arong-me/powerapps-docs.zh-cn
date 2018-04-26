@@ -1,34 +1,31 @@
 ---
 title: 了解行为公式 | Microsoft 文档
 description: 有关使用行为公式的参考信息
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 11/10/2015
 ms.author: gregli
-ms.openlocfilehash: 7bb0d9f3db9353511e8a5ed85f016049a96f7dae
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 6b097d02b3fe97ff0db362d399cf2b2c3f28e545
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-behavior-formulas-in-powerapps"></a>了解 PowerApps 中的行为公式
 
-大多数公式都是用来计算值的。  就像 Excel 电子表格一样，当值发生更改时，会自动执行重新计算。  例如，可能希望在“[标签](controls/control-text-box.md)”控件中用红色显示小于零的值，用黑色显示大于等于零的值。 所以，可以将这个控件的**[颜色](controls/properties-color-border.md)**属性设置为以下公式：
+大多数公式都是用来计算值的。  就像 Excel 电子表格一样，当值发生更改时，会自动执行重新计算。  例如，可能希望在“[标签](controls/control-text-box.md)”控件中用红色显示小于零的值，用黑色显示大于等于零的值。 所以，可以将这个控件的**[颜色](controls/properties-color-border.md)** 属性设置为以下公式：
 <br>**If( Value(TextBox1.Text) >= 0, Color.Black, Color.Red )**
 
-对于这一点，如果用户选择**[按钮](controls/control-button.md)**控件，会发生什么情况？  不会更改任何值，所有没有任何新值需要计算。 Excel 没有类似**[按钮](controls/control-button.md)**这样的控件。  
+对于这一点，如果用户选择**[按钮](controls/control-button.md)** 控件，会发生什么情况？  不会更改任何值，所有没有任何新值需要计算。 Excel 没有类似**[按钮](controls/control-button.md)** 这样的控件。  
 
-通过选择**[按钮](controls/control-button.md)**控件，用户会发起一系列操作或行为，从而更改应用的状态：
+通过选择**[按钮](controls/control-button.md)** 控件，用户会发起一系列操作或行为，从而更改应用的状态：
 
 * 更改显示的屏幕：**[Back](functions/function-navigate.md)** 和 **[Navigate](functions/function-navigate.md)** 函数。
 * 控制[信号](functions/signals.md)：**[Enable](functions/function-enable-disable.md)** 和 **[Disable](functions/function-enable-disable.md)** 函数。

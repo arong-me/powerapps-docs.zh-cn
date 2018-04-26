@@ -1,8 +1,6 @@
 ---
 title: 适用于 Power BI 的 PowerApps 自定义视觉对象 | Microsoft Docs
 description: 有关嵌入使用相同数据源并可像 PowerBI 中其他报表项一样进行筛选的应用的步骤和限制
-services: powerapps
-suite: powerapps
 documentationcenter: na
 author: mgblythe
 manager: kfile
@@ -10,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: tutorial
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/15/2018
 ms.author: mblythe
-ms.openlocfilehash: a1ca27ddaff4264fe961588701859fe1ad730c42
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: da3d21e3f4488f552568a95d856af175f9a042eb
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>适用于 Power BI 的 PowerApps 自定义视觉对象
 

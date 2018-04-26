@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: 307951163c4291ff29d8fe0bdec9237e0bbbe0e4
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: ccecf87da6ea93cf9764cce7fd9449e1e5c75934
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-apps-created-in-your-organization"></a>管理在组织中创建的应用
 环境管理员、Office 365 全局管理员或 Azure Active Directory 租户管理员可管理组织中创建的应用。
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/23/2018
 * PowerApps 环境管理员、Office 365 全局管理员或 Azure Active Directory 租户管理员权限。 有关详细信息，请参阅 [PowerApps 中的环境管理](environments-administration.md)。
 
 ## <a name="manage-an-app"></a>管理应用
-1. 在 [https://admin.powerapps.com]([https://admin.powerapps.com) 上登录到管理中心。
+1. 在 [https://admin.powerapps.com](https://admin.powerapps.com) 上登录到管理中心。
 2. 在导航窗格中，单击或点击“环境”，然后单击或点击包含要管理的应用的环境。
 
     如果在导航窗格中没有看到“环境”，则表示不具有 PowerApps 计划 2、Microsoft Flow 计划 2 或 PowerApps 计划 2 试用版的许可证。

@@ -1,25 +1,22 @@
 ---
 title: 添加和切换屏幕 | Microsoft 文档
 description: 在应用中添加屏幕，然后在 PowerApps 中使用前进和后退箭头切换屏幕
-services: ''
-suite: powerapps
 documentationcenter: na
-author: skjerland
-manager: anneta
+author: aftowen
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 07/10/2017
-ms.author: sharik
-ms.openlocfilehash: 64c38e561be90cbebabe17f73377e4d754d99c54
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: anneta
+ms.openlocfilehash: 19c06fa9bfc7098227e5f30a1c913522d9e6e7a3
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-a-screen-and-navigate-between-screens"></a>添加和切换屏幕
 创建包含多个屏幕的应用，然后为用户提供屏幕切换方式。
@@ -50,13 +47,13 @@ ms.lasthandoff: 03/22/2018
 
 3. 保持选择此箭头不变，依次单击或点击“操作”选项卡和“导航”。
 
-    此箭头的**[“OnSelect”](controls/properties-core.md)**属性会自动设为“Navigate”函数。  
+    此箭头的**[“OnSelect”](controls/properties-core.md)** 属性会自动设为“Navigate”函数。  
 
     ![“OnSelect”属性自动设为“Navigate”函数](./media/add-screen-context-variables/onselect-default.png)
 
     当用户单击或点击此箭头时，“Target”屏幕淡入。
 
-4. 在“Target”屏幕上，添加“后退箭头”，然后将其**[“OnSelect”](controls/properties-core.md)**属性设为以下公式：
+4. 在“Target”屏幕上，添加“后退箭头”，然后将其**[“OnSelect”](controls/properties-core.md)** 属性设为以下公式：
    <br>**Navigate(Source, ScreenTransition.Fade)**
 
 5. 打开预览模式（选择 ![](./media/add-screen-context-variables/preview.png) 或按 F5 键），然后单击或点击所添加的箭头切换屏幕。

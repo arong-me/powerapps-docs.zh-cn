@@ -1,25 +1,22 @@
 ---
 title: Sort and SortByColumns 函数 | Microsoft 文档
 description: PowerApps 中 Sort 和 SortByColumns 函数的引用信息（包括语法和示例）
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 95cb5176b72c676e10f410c4fc3e01fd99568e59
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 6ba2186e7f6618cdaa6eef8073e5f3897628ae8f
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>PowerApps 中的 Sort 和 SortByColumns 函数
 对[表](../working-with-tables.md)进行排序。
@@ -37,7 +34,7 @@ ms.lasthandoff: 03/22/2018
 
 **SortByColumns** 的参数列表提供了作为排序依据的列的名称，以及每个列的排序方向。  系统按参数顺序执行排序（先按第一列排序，然后按第二列排序，依此类推）。  将列名称指定为字符串。如果直接在参数列表中添加列名称，必须用双引号括起来。  例如，**SortByColumns( CustomerTable, "LastName" )**。
 
-可以将 **SortByColumns** 与**[下拉列表](../controls/control-drop-down.md)**或**[列表框](../controls/control-list-box.md)**控件结合使用，以便用户能够选择作为排序依据的列。
+可以将 **SortByColumns** 与**[下拉列表](../controls/control-drop-down.md)** 或**[列表框](../controls/control-list-box.md)** 控件结合使用，以便用户能够选择作为排序依据的列。
 
 除了进行升序或降序排序之外，**SortByColumns** 还可以根据单列表值进行排序。  例如，可以提供 **[ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ]** 作为排序顺序，从而根据星期几的名称对记录进行排序。  所有包含 **Monday"** 的记录会先显示，随后显示包含 **Tuesday** 的记录，依此类推。  与排序顺序表不匹配的记录被置于列表末尾显示。
 

@@ -1,8 +1,6 @@
 ---
 title: 自定义窗体 | Microsoft 文档
 description: 指定要显示哪些数据、以何种顺序显示以及在哪些控件中显示。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: AFTOwen
 manager: kfile
@@ -10,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/17/2018
 ms.author: anneta
-ms.openlocfilehash: efb5c4f256f7b8bd24eb0c1d7ae64e4389cf54c2
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 98162ce4d291b976c816326efc5d4c6d4d18c870
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customize-forms-in-powerapps"></a>自定义 PowerApps 中的窗体
 自定义“显示窗体”控件和“编辑窗体”控件，以便它们以最直观的顺序显示最重要的数据，帮助用户轻松了解和更新数据。

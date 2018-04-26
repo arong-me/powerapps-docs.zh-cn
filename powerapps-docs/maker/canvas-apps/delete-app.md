@@ -1,25 +1,22 @@
 ---
 title: 删除应用 | Microsoft 文档
 description: 如何在 PowerApps 中删除现有应用
-services: ''
-suite: powerapps
 documentationcenter: na
 author: jamesol-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: f92a95b9f794f99434b9736736857a0f979fecc0
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e0186e0f1f8b1396f2fb90cfffae8e38aacb1ac1
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="delete-an-app-from-powerapps"></a>从 PowerApps 中删除应用
 本文演示如何从 PowerApps 帐户及任何与应用共享的人的帐户中删除应用。

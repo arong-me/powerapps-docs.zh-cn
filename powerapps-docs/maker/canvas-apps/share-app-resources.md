@@ -1,25 +1,22 @@
 ---
 title: 共享应用中使用的资源 | Microsoft 文档
 description: 了解在共享应用时如何共享应用中使用的资源
-services: ''
-suite: powerapps
 documentationcenter: na
 author: archnair
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 06/28/2016
 ms.author: archanan
-ms.openlocfilehash: 02df7f1df53842706bf6a41244f470f09de20c90
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: f7943c5204dcab7c59e922bfb096f70d05b94e9b
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="share-app-resources"></a>共享应用资源
 [共享应用](share-app.md)前，先考虑应用依赖的资源类型，如以下一个或多个资源类型：
