@@ -38,17 +38,19 @@
       href: admin-manage-apps.md
     - name: 在租户或环境之间移动应用
       href: environment-and-tenant-migration.md
-    - name: 响应有关系统生成日志的 DSR 请求
-      href: powerapps-gdpr-dsr-guide-systemlogs.md
-    - name: 响应有关 PowerApps 客户数据的 DSR 请求
-      href: powerapps-gdpr-dsr-guide.md
+    - name: 响应 DSR 请求
       items:
-        - name: 响应 DSR 请求以导出数据
-          href: powerapps-gdpr-export-dsr.md
-        - name: 响应 DSR 请求以删除数据
-          href: powerapps-gdpr-delete-dsr.md
-    - name: 响应有关 CDS for Apps 客户数据的 DSR 请求
-      href: common-data-service-gdpr-dsr-guide.md
+        - name: 系统生成的日志
+          href: powerapps-gdpr-dsr-guide-systemlogs.md
+        - name: PowerApps 客户数据
+          href: powerapps-gdpr-dsr-guide.md
+          items:
+            - name: 导出数据
+              href: powerapps-gdpr-export-dsr.md
+            - name: 删除数据
+              href: powerapps-gdpr-delete-dsr.md
+        - name: CDS for Apps 客户数据
+          href: common-data-service-gdpr-dsr-guide.md
 - name: 参考
   items:
     - name: 对 PowerApps 的 PowerShell 支持（预览）

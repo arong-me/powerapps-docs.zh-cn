@@ -35,14 +35,18 @@
       items:
         - name: 自定义生成的应用
           items:
-            - name: 自定义浏览屏幕
+            - name: 1 - 库
               href: ./canvas-apps/customize-layout-sharepoint.md
-            - name: 自定义窗体
+            - name: 2 - 窗体
               href: ./canvas-apps/customize-forms-sharepoint.md
-            - name: 自定义卡片
+            - name: 3 - 卡
               href: ./canvas-apps/customize-card.md
         - name: 从头开始创建应用
-          href: ./canvas-apps/data-platform-create-app-scratch.md
+          items:
+            - name: Common Data Service for Apps
+              href: ./canvas-apps/data-platform-create-app-scratch.md
+            - name: Excel
+              href: ./canvas-apps/get-started-create-from-blank.md
         - name: 共享应用
           href: ./canvas-apps/share-app.md
         - name: 在 Power BI 中嵌入应用
@@ -95,8 +99,6 @@
       items:
         - name: 自定义 SharePoint 列表窗体
           href: ./canvas-apps/customize-list-form.md
-        - name: 从零开始生成 Excel 应用
-          href: ./canvas-apps/get-started-create-from-blank.md
         - name: 自定义应用
           items:
             - name: 添加并配置控件
@@ -131,6 +133,9 @@
               href: ./canvas-apps/global-apps.md
             - name: 创建可访问应用
               href: ./canvas-apps/accessible-apps.md
+              items:
+                - name: 颜色
+                  href: ./canvas-apps/accessible-apps-color.md
         - name: 管理应用
           items:
             - name: powerapps.com 简介
