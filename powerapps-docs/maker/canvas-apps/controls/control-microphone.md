@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 3ffede0018a371b3c3a4cf4a3a1f9fc8115140de
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 8f49b7dbe6186c9c984b27f4c5b07273e88f1963
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microphone-control-in-powerapps"></a>PowerApps 中的麦克风控件
 用户可以用来记录声音的控件。
@@ -33,6 +33,8 @@ ms.lasthandoff: 03/22/2018
 **OnStop** – 用户使用麦克风控件停止录制时应用的响应方式。
 
 ## <a name="additional-properties"></a>其他属性
+**[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。 应描述麦克风的用途。
+
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
@@ -50,6 +52,10 @@ ms.lasthandoff: 03/22/2018
 [DisabledFill](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件的背景颜色。
 
 **[Fill](properties-color-border.md)** – 控件的背景颜色。
+
+**[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
+
+**[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -73,7 +79,9 @@ ms.lasthandoff: 03/22/2018
 
 **[PressedFill](properties-color-border.md)** – 用户在点击或单击控件时，该控件的背景色。
 
-**[Reset](properties-core.md)** – 控件是否还原为其默认值。
+**[Reset](properties-core.md)** - 是否还原控件的默认值。
+
+**[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
 
 **[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
 
@@ -97,11 +105,26 @@ ms.lasthandoff: 03/22/2018
    
     想要了解有关 **[Collect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
 2. 添加“自定义库”控件，将其移至“MyMic” 下，并将“自定义库”控件的 **[Items](properties-core.md)** 属性设置为 **Mysounds**。
-3. 在“自定义库”控件的模板中，添加**[音频](control-audio-video.md)**控件，并将其“媒体”属性设置为 **ThisItem.Url**。
+3. 在“自定义库”控件的模板中，添加**[音频](control-audio-video.md)** 控件，并将其“媒体”属性设置为 **ThisItem.Url**。
 4. 按 F5，单击或点击“MyMic”开始录制，然后再次单击或点击以停止录制。
-5. 在“自定义库”控件中，单击或点击**[音频](control-audio-video.md)**控件中的播放按钮以播放录制的内容。
+5. 在“自定义库”控件中，单击或点击**[音频](control-audio-video.md)** 控件中的播放按钮以播放录制的内容。
 6. 根据需要添加多个录制内容，然后按 Esc 返回到默认工作区。
-7. （可选）在“自定义库”控件的模板中，添加**[按钮](control-button.md)**控件，将 其 **[OnSelect](properties-core.md)** 属性设置为 **Remove(MySounds, ThisItem)**，按 F5，然后单击或点击相应的“按钮”控件删除录制。
+7. （可选）在“自定义库”控件的模板中，添加**[按钮](control-button.md)** 控件，将 其 **[OnSelect](properties-core.md)** 属性设置为 **Remove(MySounds, ThisItem)**，按 F5，然后单击或点击相应的“按钮”控件删除录制。
 
 使用 **[SaveData](../functions/function-savedata-loaddata.md)** 函数在本地保存录音，或使用 **[Patch](../functions/function-patch.md)** 函数更新数据源。
 
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+适用按钮**[](control-button.md)** 的相同准则，因为“麦克风”是专用按钮。 此外，请考虑以下方面：
+
+### <a name="audio-alternatives"></a>音频替代项
+* 请考虑为有语言障碍或没有麦克风的用户添加另一种输入形式。 例如，文本输入**[](control-text-input.md)**，允许用户输入文本。
+
+### <a name="color-contrast"></a>颜色对比度
+在以下项之间必须有足够的颜色对比度：
+* Image**[](properties-visual.md)** 和按钮文本及图标（如果适用）
+
+这是除标准颜色对比度以外的要求。
+
+### <a name="screen-reader-support"></a>屏幕阅读器支持
+* “AccessibleLabel”**[](properties-accessibility.md)** 必须存在。

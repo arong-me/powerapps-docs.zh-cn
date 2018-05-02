@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 9cf051ba94e9d43b4c263d627c25affa66e6b843
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: f28247ab3fce610571e2d5c27106bcf15c00cc8b
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="radio-control-in-powerapps"></a>PowerApps 中的单选控件
 显示所有选项的列表，但用户只能一次选择一个选项。
@@ -45,8 +45,6 @@ ms.lasthandoff: 03/22/2018
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-**[FocusedBorderThickness](properties-color-border.md)** – 控件具有键盘焦点时的边框粗细。
-
 **[Color](properties-color-border.md)** – 控件中文本的颜色。
 
 [DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
@@ -58,6 +56,10 @@ ms.lasthandoff: 03/22/2018
 [DisabledFill](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件的背景颜色。
 
 **[Fill](properties-color-border.md)** – 控件的背景颜色。
+
+**[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
+
+**[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
 
 **[Font](properties-text.md)** – 文本中所显示的字体系列的名称。
 
@@ -103,7 +105,7 @@ RadioSize - 单选按钮控件中的圆圈直径。
 
 **[Strikethrough](properties-text.md)** – 通过文本显示的线是否在控件上显示。
 
-**[TabIndex](properties-accessibility.md)** - 设置为非零值时，在运行时自定义控件的选项卡顺序。
+**[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
 
 **[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
 
@@ -121,7 +123,7 @@ RadioSize - 单选按钮控件中的圆圈直径。
 [**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>示例
-1. 添加“单选”控件并命名为“Pricing”，然后将其**[“Items”](properties-core.md)**属性设为以下公式：
+1. 添加“单选”控件并命名为“Pricing”，然后将其**[“Items”](properties-core.md)** 属性设为以下公式：
    <br>**["Standard", "Premium"]**
    
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
@@ -135,3 +137,20 @@ RadioSize - 单选按钮控件中的圆圈直径。
 4. （可选）选中“单选”控件中的另一选项，以确认相应文本是否会显示。
 5. 若要返回到默认工作区，请按 Esc 键。
 
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+### <a name="color-contrast"></a>颜色对比度
+在以下项之间必须有足够的颜色对比度：
+* RadioSelectionFill 和 RadioBackgroundFill
+* RadioBackgroundFill 和 Fill**[](properties-color-border.md)**
+
+这是除标准颜色对比度以外的要求。
+
+### <a name="screen-reader-support"></a>屏幕阅读器支持
+* 每个单选选项都必须有一个值**[](properties-core.md)**。
+* 请考虑立即在“单选”控件前添加[标签](control-text-box.md)用作标题。
+
+### <a name="keyboard-support"></a>键盘支持
+* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* 焦点指示器必须清楚显示。 可以使用“FocusedBorderColor”**[](properties-color-border.md)** 和“FocusedBorderThickness**[](properties-color-border.md)**”来实现此目的。
+ 

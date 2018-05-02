@@ -1,29 +1,27 @@
 ---
-title: 列控件 | Microsoft 文档
+title: 列控件：参考 | Microsoft 文档
 description: 本主题介绍了 Microsoft PowerApps 中的“列”控件。
-services: powerapps
 documentationcenter: na
-author: jasongre
-manager: kfend
+author: fikaradz
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 06/05/2017
 ms.author: kfend
-ms.openlocfilehash: 0e9c04c4786ff4cee11d7aae75245054e93391fa
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e79314b8e615a931a3ba8116a53b216afe5d145a
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="column-control-in-powerapps"></a>PowerApps 中的“列”控件
 用于在“[数据表](control-data-table.md)”控件中显示单个字段。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 “[数据表](control-data-table.md)”控件以表格格式显示数据集，表格格式中的每一列都由“列”控件表示。 “列”控件为应用开发者提供用于自定义列外观和行为的属性。
 
 ## <a name="capabilities"></a>功能
@@ -64,3 +62,7 @@ ms.lasthandoff: 03/22/2018
    
     ![重设大小后的“列”控件](./media/control-column/post-resize-column.png)
 
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+### <a name="screen-reader-support"></a>屏幕阅读器支持
+* “DisplayName”必须存在。

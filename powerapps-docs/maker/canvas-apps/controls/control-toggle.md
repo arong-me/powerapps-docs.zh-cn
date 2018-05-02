@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: dac1f8ea99746f04d2d3305e279a4bc5faf67903
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 709da9e7b3e80e370488e9bdfb45f40d68dae856
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="toggle-control-in-powerapps"></a>PowerApps 中的切换控件
 用户可通过移动其图柄打开或关闭的控件。
@@ -33,13 +33,13 @@ ms.lasthandoff: 03/22/2018
 **[Value](properties-core.md)** - 输入控件的值。
 
 ## <a name="additional-properties"></a>其他属性
+**[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。
+
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
-
-**[FocusedBorderThickness](properties-color-border.md)** – 控件具有键盘焦点时的边框粗细。
 
 [DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
@@ -52,6 +52,12 @@ ms.lasthandoff: 03/22/2018
 **FalseText** - 开关处于关闭状态时显示的文本。
 
 **[Fill](properties-color-border.md)** – 控件的背景颜色。
+
+**[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
+
+**[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
+
+**HandleFill** – 切换句柄的填充颜色。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -75,7 +81,7 @@ ms.lasthandoff: 03/22/2018
 
 **ShowLabel** - 是否在开关控件旁边显示文本标签。
 
-**[TabIndex](properties-accessibility.md)** - 设置为非零值时，在运行时自定义控件的选项卡顺序。
+**[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
 
 **TextPosition** - 标签位于开关控件的左侧还是右侧。
 
@@ -114,3 +120,30 @@ ms.lasthandoff: 03/22/2018
 
     标签显示不同的价格，具体取决于是否已启用 **MemberDiscount**。
 4. 若要返回到默认工作区，请按 Esc 键。
+
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+### <a name="color-contrast"></a>颜色对比度
+在以下项之间必须有足够的颜色对比度：
+* HandleFill 和 FalseFill
+* HandleFill 和 FalseHoverFill
+* HandleFill 和 TrueFill
+* HandleFill 和 TrueHoverFill
+* FalseFill 和控件范围之外的颜色
+* FalseHoverFill 和控件范围之外的颜色
+* TrueFill 和控件范围之外的颜色
+* TrueHoverFill 和控件范围之外的颜色
+
+这是除标准颜色对比度以外的要求。
+
+### <a name="screen-reader-support"></a>屏幕阅读器支持
+* “AccessibleLabel”**[](properties-accessibility.md)** 必须存在。
+* “FalseText”必须存在。
+* “TrueText”必须存在。
+
+### <a name="low-vision-support"></a>弱视支持
+* 请考虑将“ShowLabel”设置为“true”，以便用户能够快速确定切换值。
+
+### <a name="keyboard-support"></a>键盘支持
+* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* 焦点指示器必须清晰可见。 可以使用“FocusedBorderColor”**[](properties-color-border.md)** 和“FocusedBorderThickness”**[](properties-color-border.md)** 来实现此目的。

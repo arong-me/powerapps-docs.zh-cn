@@ -15,17 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 3bab51ee290d779cd01789f55ee7c5908395537a
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: aec9071cf5cc7cbe451bae32dedc2ba119e21189
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="button-control-in-powerapps"></a>PowerApps 中的按钮控件
 用户单击或点击后可与应用进行交互的控件。
 
-## <a name="description"></a>说明
-将“按钮”控件的**[“OnSelect”](properties-core.md)**属性配置为，在用户单击或点击控件时运行一个或多个公式。
+## <a name="description"></a>描述
+将“按钮”控件的**[“OnSelect”](properties-core.md)** 属性配置为，在用户单击或点击控件时运行一个或多个公式。
 
 ## <a name="key-properties"></a>关键属性
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
@@ -43,8 +43,6 @@ ms.lasthandoff: 03/22/2018
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-**[FocusedBorderThickness](properties-color-border.md)** - 控件具有键盘焦点时的边框粗细。
-
 **[Color](properties-color-border.md)** – 控件中文本的颜色。
 
 [DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
@@ -54,6 +52,10 @@ ms.lasthandoff: 03/22/2018
 [DisabledColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件中的文本颜色。
 
 [DisabledFill](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件的背景颜色。
+
+**[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
+
+**[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
 
 **[Fill](properties-color-border.md)** – 控件的背景颜色。
 
@@ -67,7 +69,7 @@ ms.lasthandoff: 03/22/2018
 
 **[HoverColor](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。
 
-**[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景颜色。
+**[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景色。
 
 **[Italic](properties-text.md)** – 控件中的文本是否为斜体。
 
@@ -77,7 +79,7 @@ ms.lasthandoff: 03/22/2018
 
 **[PaddingRight](properties-size-location.md)** - 控件中的文本与该控件的右边缘之间的距离。
 
-**[PaddingTop](properties-size-location.md)** – 控件中的文本与该控件上边缘之间的距离。
+**[PaddingTop](properties-size-location.md)** – 控件中的文本与该控件的上边缘之间的距离。
 
 Pressed - 如果用户按下控件，值为“true”，否则值为“false”。
 
@@ -97,21 +99,21 @@ Pressed - 如果用户按下控件，值为“true”，否则值为“false”�
 
 **[Size](properties-text.md)** – 控件上显示的文本的字号。
 
-**[Strikethrough](properties-text.md)** – 通过文本显示的线是否在控件上显示。
+[Strikethrough](properties-text.md) – 通过文本显示的线是否在控件上显示。
 
-**[TabIndex](properties-accessibility.md)** - 设置为非零值时，在运行时自定义控件的选项卡顺序。
+**[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
 
 **[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
 
 **[Underline](properties-text.md)** – 在文本下方显示的线是否在控件上显示。
 
-**[VerticalAlign](properties-text.md)** – 控件上的文本相对于该控件垂直居中的位置。
+[VerticalAlign](properties-text.md) – 控件上的文本相对于该控件垂直居中的位置。
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
@@ -120,7 +122,7 @@ Pressed - 如果用户按下控件，值为“true”，否则值为“false”�
 
 ## <a name="examples"></a>示例
 ### <a name="add-a-basic-formula-to-a-button"></a>向按钮添加基本公式
-1. 添加**[“文本输入”](control-text-input.md)**控件，然后将其命名为“Source”。
+1. 添加**[“文本输入”](control-text-input.md)** 控件，然后将其命名为“Source”。
    
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 2. 添加“按钮”控件，将“[Text](properties-core.md)”属性设置为“Add”，并将“[OnSelect](properties-core.md)”属性设置为以下公式：<br>
@@ -130,7 +132,7 @@ Pressed - 如果用户按下控件，值为“true”，否则值为“false”�
 3. 添加“[标签](control-text-box.md)”控件，将“[Text](properties-core.md)”属性设置为“Total”，再按 F5 键。
 4. 清除“源”中的默认文本，键入数字，再单击或点击“添加”。
    
-    此时，“[标签](control-text-box.md)”控件显示所键入的数字。
+    此时，“标签”**[](control-text-box.md)** 控件显示所键入的数字。
 5. 清除“源”中的数字，键入另一个数字，再单击或点击“添加”。
    
     此时，“[标签](control-text-box.md)”控件显示键入的两个数字之和。
@@ -141,7 +143,7 @@ Pressed - 如果用户按下控件，值为“true”，否则值为“false”�
 添加用于在两次输入间隔清除“文本输入”控件的公式。
 
 1. 将“源”的“[HintText](control-text-input.md)”属性设置为“输入一个数字”。
-2. 将“添加”的“[OnSelect](properties-core.md)”属性设置为以下公式：
+2. 将“添加”的 [OnSelect](properties-core.md) 属性设置为以下公式：
    
     **UpdateContext({Total:Total + Value(Source.Text)});<br>UpdateContext({ClearInput: ""})**
    
@@ -153,7 +155,7 @@ Pressed - 如果用户按下控件，值为“true”，否则值为“false”�
 ### <a name="add-another-button-to-reset-the-total"></a>添加另一个总和重置按钮
 添加另一个按钮，以便在两次计算间隔清除总和。
 
-1. 添加另一个“按钮”控件，将“[Text](properties-core.md)”属性设置为“Clear”，并将“[OnSelect](properties-core.md)”属性设置为以下公式：
+1. 添加另一个“按钮”控件，将“Text”**[](properties-core.md)** 属性设置为“Clear”，并将“OnSelect”**[](properties-core.md)** 属性设置为以下公式：
    
     **UpdateContext({Total:0})**
 2. 按 F5，将多个数字相加，再单击或点击“清除”来重置总和。
@@ -184,3 +186,15 @@ Pressed - 如果用户按下控件，值为“true”，否则值为“false”�
 
 * 在创建的一个按钮中，将“[ColorFade](../functions/function-colors.md)”函数替换为“[ColorValue](../functions/function-colors.md)”函数，并观察效果。
 
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+### <a name="color-contrast"></a>颜色对比度
+* 标准颜色对比度要求适用。
+
+### <a name="screen-reader-support"></a>屏幕阅读器支持
+* “Text”**[](properties-core.md)** 必须存在。
+
+### <a name="keyboard-support"></a>键盘支持
+* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* 焦点指示器必须清晰可见。 可以使用“FocusedBorderColor”**[](properties-color-border.md)** 和“FocusedBorderThickness**[](properties-color-border.md)**”来实现此目的。
+ 

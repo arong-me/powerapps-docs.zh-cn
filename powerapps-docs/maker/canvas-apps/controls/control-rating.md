@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 4dd23b8c94ee4760e40b4513e7a88667f85c3a4b
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 40f826a47c7ba447cc159c0ecf9c335603484a98
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rating-control-in-powerapps"></a>PowerApps 中的评分控件
 用户可以用于指示介于 1 和你指定的最大数之间的值的控件。
@@ -33,17 +33,21 @@ ms.lasthandoff: 03/22/2018
 **Max** – 用户可对滑块或评分设置的最大值。
 
 ## <a name="additional-properties"></a>其他属性
+**[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。
+
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-**[FocusedBorderThickness](properties-color-border.md)** – 控件具有键盘焦点时的边框粗细。
-
 [DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
 **[Fill](properties-color-border.md)** – 控件的背景颜色。
+
+**[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
+
+**[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -57,9 +61,9 @@ ms.lasthandoff: 03/22/2018
 
 **[Reset](properties-core.md)** - 是否还原控件的默认值。
 
-**ShowValue** – 用户更改滑块或评分的值或将鼠标悬停在控件上时，是否显示该值。
+**ShowValue** – 当用户更改滑块或评分的值或将鼠标悬停在控件上时，是否显示该值。
 
-**[TabIndex](properties-accessibility.md)** - 设置为非零值时，在运行时自定义控件的选项卡顺序。
+**[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
 
 **[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
 
@@ -78,16 +82,35 @@ ms.lasthandoff: 03/22/2018
 1. 添加“评分”控件，并将其命名为“定量”。
    
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
-2. 添加**[“文本输入”](control-text-input.md)**控件，将其命名为“定性”，并将其移至“评分”控件下。
-3. 将**[“文本输入”](control-text-input.md)**控件的**[“Default”](properties-core.md)**属性设置为 **""**，并将其“HintText”设置为以下公式：
+2. 添加**[“文本输入”](control-text-input.md)** 控件，将其命名为“定性”，并将其移至“评分”控件下。
+3. 将**[“文本输入”](control-text-input.md)** 控件的**[“Default”](properties-core.md)** 属性设置为 **""**，并将其“HintText”设置为以下公式：
    <br>**If(Quantitative.Value > 3, "What did you especially like?", "How might we do better?")**
    
     想要了解有关 **[If](../functions/function-if.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
 4. 按 F5，然后在“评分”控件中单击或点击四颗或五颗星。
    
-    **[文本输入](control-text-input.md)**控件中的提示文本将发生变化以体现高评分。
+    **[文本输入](control-text-input.md)** 控件中的提示文本将发生变化以体现高评分。
 5. 在“定量”中单击或点击少于四颗星。
    
     **[Text input](control-text-input.md)** 控件中的提示文本将发生变化以体现低评分。
-6. 若要返回默认工作区，请按 Esc。
+6. 若要返回到默认工作区，请按 Esc 键。
 
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+### <a name="color-contrast"></a>颜色对比度
+在以下项之间必须有足够的颜色对比度：
+* RatingFill 和 Fill**[](properties-color-border.md)**
+
+这是除标准颜色对比度以外的要求。
+
+### <a name="screen-reader-support"></a>屏幕阅读器支持
+* “AccessibleLabel”**[](properties-accessibility.md)** 必须存在。
+> [!NOTE]
+> 屏幕阅读器将“评级”控件视为单选按钮。
+
+### <a name="keyboard-support"></a>键盘支持
+* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* 焦点指示器必须清晰可见。 可以使用“FocusedBorderColor”**[](properties-color-border.md)** 和“FocusedBorderThickness”**[](properties-color-border.md)** 来实现此目的。
+* 如果有太多星级，则考虑使用不同控件。 使用键盘导航可能会很繁琐，而且很难用触摸屏精确地选择。
+> [!NOTE]
+> 单选按钮的相同键盘交互可以在“评级”上使用。

@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/20/2018
+ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 0a4c35fe756e6ba9baf899a302d739467e21b591
-ms.sourcegitcommit: eac8ad7b54a0b0eba6444a38a952dbfd17bc64b5
+ms.openlocfilehash: a63504b0438f50584da6739b9f397300e36d4ce6
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-and-configure-the-expense-report-powerapps-sample"></a>安装和配置支出报表 PowerApps 示例
 
@@ -385,7 +385,10 @@ ms.lasthandoff: 04/08/2018
 
 [![支出报表安装视频](./media/expense-report-install/expense-report-demo-video.png)](https://youtu.be/h6E9cdrOvMU)
 
-
+##<a name="next-steps"></a>后续步骤
+- [自定义 SharePoint 列表窗体](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/customize-list-form)
+- [添加并配置控件](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/add-configure-controls)
+- [编辑和管理 SharePoint 列表或库的权限](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
 
 
 

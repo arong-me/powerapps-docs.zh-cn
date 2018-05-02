@@ -15,17 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: f2605680c7b6e8f7102fd3459230344863a93f55
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: cea6eca66bc5945004da85d32a57239d28e4302e
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="date-picker-control-in-powerapps"></a>PowerApps 中的日期选取器控件
 用户可单击或点击以指定日期的控件。
 
 ## <a name="description"></a>说明
-如果添加**日期选取器**控件而非**[文本输入](control-text-input.md)**控件，可帮助确保用户以正确的格式指定日期。
+如果添加**日期选取器**控件而非**[文本输入](control-text-input.md)** 控件，可帮助确保用户以正确的格式指定日期。
 
 ## <a name="key-properties"></a>关键属性
 **DefaultDate** - 日期控件的初始值（除非用户更改）。
@@ -40,13 +40,13 @@ ms.lasthandoff: 03/22/2018
 **Language** - 确定设置日期格式所使用的语言，包括月份名称。 如果未指定此属性，语言将由用户设备设置决定。
 
 ## <a name="additional-properties"></a>其他属性
+**[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。
+
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
-
-**[FocusedBorderThickness](properties-color-border.md)** – 控件具有键盘焦点时的边框粗细。
 
 **[Color](properties-color-border.md)** – 控件中文本的颜色。
 
@@ -61,6 +61,10 @@ ms.lasthandoff: 03/22/2018
 **EndYear** - 用户可将日期选取器控件的值设为的最后一个年份。
 
 **[Fill](properties-color-border.md)** – 控件的背景颜色。
+
+**[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
+
+**[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
 
 **[Font](properties-text.md)** – 文本中所显示的字体系列的名称。
 
@@ -84,7 +88,7 @@ ms.lasthandoff: 03/22/2018
 
 **StartYear** - 用户可将日期选取器控件的值设为的最早年份。
 
-**[TabIndex](properties-accessibility.md)** - 设置为非零值时，在运行时自定义控件的选项卡顺序。
+**[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
@@ -110,3 +114,15 @@ ms.lasthandoff: 03/22/2018
     此时，“[标签](control-text-box.md)”控件显示今天距离所选日期还剩多少天。
 4. 若要返回到默认工作区，请按 Esc 键。
 
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+### <a name="color-contrast"></a>颜色对比度
+* 标准颜色对比度要求适用。
+
+### <a name="screen-reader-support"></a>屏幕阅读器支持
+* “AccessibleLabel”**[](properties-accessibility.md)** 必须存在。
+
+### <a name="keyboard-support"></a>键盘支持
+* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* 焦点指示器必须清晰可见。 可以使用“FocusedBorderColor”**[](properties-color-border.md)** 和“FocusedBorderThickness”**[](properties-color-border.md)** 来实现此目的。
+ 

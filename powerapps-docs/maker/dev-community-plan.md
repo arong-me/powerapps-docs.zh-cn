@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/01/2016
 ms.author: mblythe
-ms.openlocfilehash: 3a7407f0f93ee5cd6bb749f79c258a1cf6c20b96
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 13952338015fd6ec6f951cb9447cc5203f7159e0
+ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps 社区计划：供个人使用的免费开发环境
 若要掌握技能并详细了解 PowerApps、Microsoft Flow 和 Common Data Service，PowerApps 社区计划是你的不二之选。 PowerApps 社区计划提供了供个人使用的免费开发环境，你可以在其中：
@@ -55,8 +55,8 @@ ms.lasthandoff: 03/22/2018
 | **主要功能** | |
 | 创建并运行应用 |可以。 可以创建任意数量的应用 |
 | 共享应用\* |否 |
-| 使用 Common Data Service |是 |
-| 使用 Common Data Service 进行数据建模 |是 |
+| 使用 Common Data Service |是** |
+| 使用 Common Data Service 进行数据建模 |是** |
 | 环境和用户策略的企业级管理 |是 |
 | **连接性** | |
 | 连接 Office 365、Dynamics 365 和其他连接器 |是 |
@@ -65,9 +65,9 @@ ms.lasthandoff: 03/22/2018
 | 通过本地网关访问本地数据 |是 |
 | 创建连接自己的系统的自定义连接器 |可以。 可以创建任意数量的自定义连接器 |
 | **Common Data Service** | |
-| 在 Common Data Service 上创建和运行应用 |是 |
-| 在 Common Data Service 中进行数据建模 |是 |
-| 在 Common Data Service 中创建数据库 |是 |
+| 在 Common Data Service 上创建和运行应用 |是** |
+| 在 Common Data Service 中进行数据建模 |是** |
+| 在 Common Data Service 中创建数据库 |是** |
 | **管理** | |
 | 将同事添加为环境创建者和管理员 |否 |
 | 向同事分配数据库角色 |否 |
@@ -75,6 +75,8 @@ ms.lasthandoff: 03/22/2018
 | 创建个人环境的数据策略 |是 |
 
 *无法与租户中的其他任何用户共享应用、流、连接等。 也无法在管理中心内将其他任何用户添加为环境管理员/创建者或向其分配数据库角色。
+
+**使用 Common Data Service 创建数据库目前在单独环境中不可行，但很快会再次提供此功能。 如果之前创建了数据库，则可以继续使用它，而不会有任何问题。 
 
 ## <a name="what-are-the-capacity-limits-for-the-individual-environment"></a>个人环境的容量上限是多少？
 | **容量** |  |

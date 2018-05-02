@@ -1,6 +1,6 @@
 ---
-title: 简介 | Microsoft 文档
-description: 有关如何借助 Microsoft PowerApps 创建和使用自定义商业应用的信息
+title: 画布应用有哪些？ | Microsoft Docs
+description: 如何在 PowerApps 画布中设计和生成自定义业务线应用程序
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -15,13 +15,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/14/2018
 ms.author: anneta
-ms.openlocfilehash: 2d45f6a054fb95ab3a4ebf037ac1115497724ef4
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 984c53417f8684add431dffc6d7c7d89d707eaf2
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="introduction-to-powerapps"></a>PowerApps 简介
+# <a name="what-are-canvas-apps-in-powerapps"></a>PowerApps 中的画布应用有哪些？
 欢迎使用 PowerApps！ 使用 PowerApps 这项服务，无需任何编码经验，即可生成在浏览器、手机或平板电脑上运行的商业应用。 PowerApps 将 PowerPoint 中的视觉对象拖放概念，与类似于 Excel 的逻辑表达式和数据处理表达式相结合。
 
 借助 PowerApps，可以将[丰富多样的 Microsoft 和第三方资源](connections-list.md)中的业务数据整合到一款功能强大的应用中。 还可创建用户能在 SharePoint、Power BI 和 Teams 中运行的应用。

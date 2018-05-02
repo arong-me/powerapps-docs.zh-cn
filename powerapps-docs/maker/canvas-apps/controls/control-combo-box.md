@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/13/2017
 ms.author: fikaradz
-ms.openlocfilehash: 4d298e24ea967cbf5cb47638d4296f6efbd758c7
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 5fb4ca1a8c3618a81940ef953e2e7d1c9b04dd7e
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="combo-box-control-in-powerapps"></a>PowerApps 中的组合框控件
 用户可以在其中提供的选项之间进行选择的控件。  支持搜索和多重选择。
@@ -46,6 +46,8 @@ ms.lasthandoff: 03/22/2018
 **IsSearchable** - 用户能否在选择前先搜索项。
 
 ## <a name="additional-properties"></a>其他属性
+**[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。
+
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
@@ -58,6 +60,10 @@ ms.lasthandoff: 03/22/2018
 
 [DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
+**[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
+
+**[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
+
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
 **InputTextPlaceholder** - 在用户未选中项时向最终用户显示的说明文字。
@@ -67,6 +73,8 @@ ms.lasthandoff: 03/22/2018
 **OnNavigate** - 在用户单击项时，应用如何响应。
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
+
+**[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
@@ -85,3 +93,26 @@ ms.lasthandoff: 03/22/2018
     正常运行的组合框将会在应用中显示。
 
     不知道如何[添加和配置控件](../add-configure-controls.md)？
+
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+### <a name="color-contrast"></a>颜色对比度
+在以下项之间必须有足够的颜色对比度：
+* ChevronFill 和 ChevronBackground
+* ChevronHoverFill 和 ChevronHoverBackground
+* SelectionColor 和 SelectionFill
+* SelectionFill 和 Fill**[](properties-color-border.md)**
+* SelectionTagColor 和 SelectionTagFill
+
+这是除标准颜色对比度以外的要求。
+
+### <a name="screen-reader-support"></a>屏幕阅读器支持
+* “AccessibleLabel”**[](properties-accessibility.md)** 必须存在。
+> [!NOTE]
+> 在触摸屏上，屏幕阅读器用户可以按顺序导航组合框中的内容。 组合框充当一个按钮，在选中时会显示或隐藏其内容。
+
+### <a name="keyboard-support"></a>键盘支持
+* TabIndex**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* 焦点指示器必须清楚显示。 可以使用“FocusedBorderColor”**[](properties-color-border.md)** 和“FocusedBorderThickness**[](properties-color-border.md)**”来实现此目的。
+> [!NOTE]
+> Tab 键可导航到组合框或离开组合框。 箭头键可导航组合框中的内容。 Esc 键在打开时会关闭下拉列表。

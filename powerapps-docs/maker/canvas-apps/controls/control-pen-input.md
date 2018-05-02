@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 7e5be9b68b501279329c23f9afe5d451487fa8d1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 6084572dd9a60fc4194e1eff912e22cb656f0207
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pen-input-control-in-powerapps"></a>PowerApps 中的笔输入控件
 用户可用其进行绘图、擦除和突出显示图像区域的控件。
@@ -33,6 +33,8 @@ ms.lasthandoff: 03/22/2018
 **Mode**控件所处的**绘图**或**擦除**模式。  已弃用“选择”模式。
 
 ## <a name="additional-properties"></a>其他属性
+**[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。 可以用于描述控件的用途以及输入的替代方法。
+
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
@@ -76,7 +78,7 @@ ms.lasthandoff: 03/22/2018
    
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 2. 添加[按钮](control-button.md)控件，将其移到 **MyDoodles** 下方，然后设置[按钮](control-button.md)控件的 [Text](properties-core.md) 属性，使其显示为“添加”。
-3. 将此**[按钮](control-button.md)**控件的 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
+3. 将此**[按钮](control-button.md)** 控件的 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
    **Collect(Doodles, {Sketch:MyDoodles.Image})**
 4. 添加**图像库**控件，将其移到[按钮](control-button.md)控件下方，然后缩小**图像库**控件的宽度，直至它显示三个项。
 5. 将**映像库**控件的[项](properties-core.md)属性设置为 **Doodles**，然后再按 F5。
@@ -84,9 +86,24 @@ ms.lasthandoff: 03/22/2018
    
     绘制的图像将在“图像库”控件中显示。
 7. （可选）在“笔输入”控件中，单击或点击图标，清除所绘制的图像，绘制另一个图像，再单击或点击[按钮](control-button.md)控件。
-8. 在**图像库**控件中，将**[图像](control-image.md)**控件的 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
+8. 在**图像库**控件中，将**[图像](control-image.md)** 控件的 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
    **Remove(Doodles, ThisItem)**
 9. 单击或点击“图像库”控件中的绘图，可将其删除。
 
 使用 **[SaveData](../functions/function-savedata-loaddata.md)** 函数本地保存绘图，或使用 **[Patch](../functions/function-patch.md)** 函数将其保存至数据源。
 
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+### <a name="color-contrast"></a>颜色对比度
+在以下项之间必须有足够的颜色对比度：
+* BorderColor**[](properties-color-border.md)** 和控件范围之外的颜色（如果有边框）
+* Fill**[](properties-color-border.md)** 和控件范围之外的颜色（如果没有边框）
+
+### <a name="screen-reader-support"></a>屏幕阅读器支持
+* “AccessibleLabel”**[](properties-accessibility.md)** 应存在。
+> [!IMPORTANT]
+> 屏幕阅读器用户无法访问“笔输入”。 始终提供输入的替代形式。 例如，如果需要草图，请考虑添加“添加图片”**[](control-add-picture.md)** 控件，以便用户上传图像。 可以提供这两种方法，用户可以选择他们更熟悉的一种方法。
+
+### <a name="keyboard-support"></a>键盘支持
+> [!IMPORTANT]
+> 键盘用户无法访问“笔输入”。 始终提供输入的替代形式。 例如，如果需要签名，请考虑添加“文本输入”**[](control-text-input.md)**，以便用户输入其名称。 可以提供这两种方法，用户可以选择他们更熟悉的一种方法。

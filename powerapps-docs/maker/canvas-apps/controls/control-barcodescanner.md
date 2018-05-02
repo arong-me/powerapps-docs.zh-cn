@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 264c360af0175b6a5dddd74306b32c7d1ecaef1d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 98357cb2f6d829906dfcdd4ecaa4acc3afdef26d
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="barcode-scanner-control-experimental-in-powerapps"></a>PowerApps 中的条形码扫描程序控件（实验性）
 通过在设备上使用条形码扫描程序，用户可用来拍摄照片的实验性控件。
@@ -31,6 +31,8 @@ ms.lasthandoff: 03/22/2018
 **barcode scanner** - 在具有多个条码扫描器的设备上，应用使用的条码扫描器的数字 ID。
 
 ## <a name="additional-properties"></a>其他属性
+[AccessibleLabel](properties-accessibility.md) – 屏幕阅读器标签。
+
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
@@ -51,9 +53,13 @@ ms.lasthandoff: 03/22/2018
 
 **Photo** - 用户拍摄照片时捕获的图像。
 
+**ShowLiveBarcodeDetection** – 是否显示视觉提示以指示条形码检测的状态。 黄色矩形表示正在检查的区域。 跨矩形的绿色线条表示成功的条形码标识。
+
 **Stream** - 基于 **StreamRate** 属性自动更新的图像。
 
-**StreamRate** - 在 **Stream** 属性上更新图像的频率（以毫秒为单位）。  此值的范围介于 100（1/10 秒）到 3,600,000（1 小时）之间。
+**StreamRate** - 在 **Stream** 属性上更新图像的频率（以毫秒为单位）。  此值的范围为 100（1/10 秒）到 3,600,000（1 小时）。
+
+Text – 上次由扫描仪识别的条形码值。
 
 **[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
 
@@ -75,6 +81,16 @@ ms.lasthandoff: 03/22/2018
 1. 添加**条码扫描器**控件，将其命名为 **Mybarcode scanner**
 
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
-2. 添加一个“标签”控件，然后将输出设置为条形码的值。  
+2. 添加“标签”控件，然后将输出设置为条形码的“Text”。  
 3. 扫描 BarcodeType 属性下设置的类型的条形码。
 4. 标签将显示扫描的条形码。
+
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+### <a name="video-alternatives"></a>视频替代项
+* 请考虑添加标签**[](control-text-box.md)**，并将其 Text**[](properties-core.md)** 设置为条形码扫描仪的“Text”。 由于条形码扫描仪未显示标识的条形码值，执行上述操作将使所有人都可访问扫描仪，而不仅仅是那些有视觉障碍的用户。
+
+### <a name="screen-reader-support"></a>屏幕阅读器支持
+* “AccessibleLabel”**[](properties-accessibility.md)** 必须存在。
+> [!NOTE]
+> 发现新条形码时，屏幕阅读器将公布此条码形。 不会公布值。 只要条形码在视图中，屏幕阅读器就会每隔 5 秒提醒一次，指示仍在识别相同的条形码。

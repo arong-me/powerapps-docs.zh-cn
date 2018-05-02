@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 1388eac45e5086f677cb83c8db9593fe01a9819f
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 5307370df49eeb783a401e2b7c2f0564bb27c3f4
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pie-chart-control-in-powerapps"></a>PowerApps 中的饼图控件
 该控件用于显示与其他内容相比较的相对值。
@@ -27,12 +27,14 @@ ms.lasthandoff: 03/22/2018
 ## <a name="description"></a>说明
 如果要从最左侧列中包含标签的表中显示相对数据，以及显示左起第二列中的值，请添加“饼图”控件。
 
-## <a name="key-properties"></a>关键属性
+此控件是包含三个控件的分组控件：标题标签**[](control-text-box.md)**、图表图形和图例。
+
+## <a name="chart-key-properties"></a>图表关键属性
 **[Items](properties-core.md)** - 控件中显示的数据源，如库、列表或图表。
 
 **ShowLabels** - 饼图是否显示与每个其楔形相关联的值。
 
-## <a name="additional-properties"></a>其他属性
+## <a name="additional-chart-properties"></a>其他图表属性
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
@@ -67,6 +69,8 @@ ms.lasthandoff: 03/22/2018
 
 **[Size](properties-text.md)** – 控件上显示的文本的字号。
 
+**[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
+
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
@@ -90,3 +94,25 @@ ms.lasthandoff: 03/22/2018
    
     **饼图**控件显示每个产品与其他产品之间相关的收入数据。
 
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+### <a name="color-contrast"></a>颜色对比度
+在以下项之间必须有足够的颜色对比度：
+* “ItemColorSet”中的每个项
+* “ItemColorSet”中的所有项和背景色
+* Color**[](properties-color-border.md)** 和背景色
+
+### <a name="screen-reader-support"></a>屏幕阅读器支持
+* “图表图形”前必须有一个[标签](control-text-box.md)作为标题。
+> [!NOTE]
+> “图表图形”和“图例”对屏幕阅读器用户隐藏。 作为替代方法，将向用户显示表格形式的数据。 他们还可以在用于在图表中选择数据的按钮之间循环。
+
+### <a name="low-vision-support"></a>弱视支持
+* “Legend”必须存在。
+* 请考虑将“ShowLabels”设置为“true”。 这可以帮助弱视用户快速确定每个饼图扇区所表示的内容。
+* 请考虑将“LabelPosition”设置为“LabelPosition.Outside”。 这样可以提高标签的易读性，因为颜色对比度更一致。
+
+### <a name="keyboard-support"></a>键盘支持
+* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+> [!NOTE]
+> 当键盘用户导航到图表时，可以在用于在图表中选择数据的按钮之间循环。

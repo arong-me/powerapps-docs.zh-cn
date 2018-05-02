@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/25/2017
 ms.author: sharik
-ms.openlocfilehash: 9839059cca741e47f5f519a45e7291847c1bc792
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 501dfbba3e01efe55c76d7af234e2f9064096728
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="gallery-control-in-powerapps"></a>PowerApps 中的库控件
 包含其他控件并显示一组数据的控件。
@@ -37,6 +37,8 @@ ms.lasthandoff: 03/22/2018
 Selected - 选定项。
 
 ## <a name="additional-properties"></a>其他属性
+**[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。 应描述项列表是什么。
+
 AllItems - 库中的所有项，其中包括属于库模板的附加控件值。
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
@@ -96,3 +98,20 @@ WrapCount - 每行或每列（具体取决于是水平布局还是垂直布局�
 * [获取声音](control-microphone.md#example)
 * [获取绘图](control-pen-input.md#create-a-set-of-images)
 
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+### <a name="color-contrast"></a>颜色对比度
+如果在库项中单击任何位置都是要选择它，那么在以下项之间必须有足够的颜色对比度：
+* BorderColor**[](properties-color-border.md)** 和库外的颜色（如果没有边框）
+* Fill**[](properties-color-border.md)** 和库范围之外的颜色（如果没有边框）
+
+### <a name="screen-reader-support"></a>屏幕阅读器支持
+* “AccessibleLabel”**[](properties-accessibility.md)** 必须存在。
+> [!NOTE]
+> 库中的项更改时，屏幕阅读器将发出公告。 还将提到“AccessibleLabel”。 这为公告提供上下文，甚至在同一个屏幕上有多个库的情况下更为重要。
+
+### <a name="keyboard-support"></a>键盘支持
+* 请考虑将“ShowScrollbar”设置为“true”。 在大多数触摸屏设备上，在开始滚动之前，不会显示滚动条。
+* 如果在库项中单击任何位置都是要选择它，还必须为键盘用户提供选择库项的方法。 例如，添加一个按钮**[](control-button.md)**，并将其“OnSelect”属性设置为“Select(Parent)”。
+> [!NOTE]
+> 库内的键盘导航顺序不考虑库外控件。 库内控件的 TabIndex**[](properties-accessibility.md)** 具有范围限制。 请参阅[辅助功能属性](properties-accessibility.md)了解详细信息。

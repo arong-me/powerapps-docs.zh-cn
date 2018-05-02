@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 2bc1eddc09fde255fbc1f7a7899ba2f416374e0c
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e6c883a5d17d87c58fafd4f10d1075364d616480
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="export-control-and-import-control-in-powerapps"></a>PowerApps 中的导出控件和导入控件
 该控件用于将数据导出到本地文件，然后将该数据导入到 PowerApps 中的其他应用。
@@ -58,6 +58,10 @@ ms.lasthandoff: 03/22/2018
 
 **[Fill](properties-color-border.md)** – 控件的背景颜色。
 
+[FocusedBorderColor](properties-color-border.md) – 当聚焦到控件时，控件的边框颜色。
+
+[FocusedBorderThickness](properties-color-border.md) – 当聚焦到控件时，控件的边框粗细。
+
 **[Font](properties-text.md)** – 文本中所显示的字体系列的名称。
 
 **[FontWeight](properties-text.md)** – 控件中文本的粗细：**粗体**、**半粗体**、**正常**或**细体**。
@@ -92,6 +96,8 @@ ms.lasthandoff: 03/22/2018
 
 **[Strikethrough](properties-text.md)** – 通过文本显示的线是否在控件上显示。
 
+[TabIndex](properties-accessibility.md) – 相对于其他控件的键盘导航顺序。
+
 **[Text](properties-core.md)** – 在控件上显示或用户键入到控件中的文本。
 
 **[Underline](properties-text.md)** – 在文本下方显示的线是否在控件上显示。
@@ -122,3 +128,6 @@ ms.lasthandoff: 03/22/2018
 7. 按 F5，单击或点击 **MyData**，再单击或点击导出的文件，然后单击或点击“**打开**”。
 8. 按 Esc，单击或点击“**文件**”菜单上的“**集合**”，并确认当前应用中包含你导出的数据。
 
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+适用**[按钮](control-button.md)** 的相同准则，因为“导出”和“导入”是专用按钮。

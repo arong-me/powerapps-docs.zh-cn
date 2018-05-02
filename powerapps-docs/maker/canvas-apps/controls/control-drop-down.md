@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 828292cc888d26f2060260826296960f1bd4f98f
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 9d723fb7377d6ab3e5ea2bd9d4805cff8f157243
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="drop-down-control-in-powerapps"></a>PowerApps 中的下拉列表控件
 一个列表，在用户不将其打开的情况下，该表仅显示第一项。
@@ -37,13 +37,13 @@ ms.lasthandoff: 03/22/2018
 Selected - 选定项。
 
 ## <a name="additional-properties"></a>其他属性
+**[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。
+
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
-
-**[FocusedBorderThickness](properties-color-border.md)** – 控件具有键盘焦点时的边框粗细。
 
 **ChevronBackground** - 下拉列表中向下箭头的背景色。
 
@@ -60,6 +60,10 @@ Selected - 选定项。
 [DisabledFill](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件的背景颜色。
 
 **[Fill](properties-color-border.md)** – 控件的背景颜色。
+
+**[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
+
+**[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
 
 **[Font](properties-text.md)** – 文本中所显示的字体系列的名称。
 
@@ -103,7 +107,7 @@ Selected - 选定项。
 
 **[Strikethrough](properties-text.md)** – 通过文本显示的线是否在控件上显示。
 
-**[TabIndex](properties-accessibility.md)** - 设置为非零值时，在运行时自定义控件的选项卡顺序。
+**[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
 
 **[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
 
@@ -121,12 +125,12 @@ Selected - 选定项。
 1. 添加“[按钮](control-button.md)”控件，并将其 **[Text](properties-core.md)** 属性设置为显示 **Collect**。
    
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
-2. 将此**[按钮](control-button.md)**控件的 **[OnSelect](properties-core.md)** 属性设置为以下公式：
+2. 将此**[按钮](control-button.md)** 控件的 **[OnSelect](properties-core.md)** 属性设置为以下公式：
    <br>**ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
    
     想要了解有关**[ ClearCollect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
 3. 按 F5，单击或点击“**[按钮](control-button.md)**”控件，然后按 Esc。
-4. 添加“下拉列表”控件，将其命名为“国家/地区”，并将其 **[Items](properties-core.md)**属性设置为以下公式：
+4. 添加“下拉列表”控件，将其命名为“国家/地区”，并将其 **[Items](properties-core.md)** 属性设置为以下公式：
    <br>**Distinct(CityPopulations, Country)**
 5. 在垂直方向/纵向添加“文本库”控件，并将其 **[Items](properties-core.md)** 属性设置为以下公式：
    <br>**Filter(CityPopulations, Countries.Selected.Value in Country)**
@@ -136,3 +140,20 @@ Selected - 选定项。
    
     “文本库”控件仅显示选定国家/地区中的城市。
 
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+### <a name="color-contrast"></a>颜色对比度
+在以下项之间必须有足够的颜色对比度：
+* ChevronFill 和 ChevronBackground
+* ChevronHoverFill 和 ChevronHoverBackground
+* SelectionColor 和 SelectionFill
+* SelectionFill 和 Fill**[](properties-color-border.md)**
+
+这是除标准颜色对比度以外的要求。
+
+### <a name="screen-reader-support"></a>屏幕阅读器支持
+* “AccessibleLabel”**[](properties-accessibility.md)** 必须存在。
+
+### <a name="keyboard-support"></a>键盘支持
+* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* 焦点指示器必须清晰可见。 可以使用“FocusedBorderColor”**[](properties-color-border.md)** 和“FocusedBorderThickness”**[](properties-color-border.md)** 来实现此目的。

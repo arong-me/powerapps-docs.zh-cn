@@ -13,16 +13,24 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/05/2018
+ms.date: 04/12/2018
 ms.author: sharik
-ms.openlocfilehash: 6df3a0d92f8dd8352f93bdb377ac9c4b446e1e99
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 8a241ff41abf5f3fe804330d6678b70cf0576ceb
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps 常见问题和解决方法
 ## <a name="recently-addedchanged"></a>最近添加/更改的内容
+1. **使用自定义图像作为应用图标**
+
+    在 PowerApps Studio for Windows 版本 3.18043 中，无法上传自定义图像以将其用作应用图标。 若要解决此问题，请使用 [PowerApps Studio for web](https://web.powerapps.com) 上传自定义图像。 或者，可以使用 PowerApps Studio for Windows 中的一个图标并自定义背景色。
+
+1. **跨应用复制和粘贴屏幕**
+
+    当前不支持跨应用复制和粘贴屏幕。 若要解决此问题，向目标应用添加新屏幕，从源应用屏幕中复制控件，然后将其粘贴到目标应用屏幕。
+
 1. **更改 SharePoint 表单布局**
 
     自定义某些语言的 SharePoint 列表表单时，如果尝试将布局从纵向（默认）更改为横向，应用可能会显示多个错误（控件中的黄色三角形）。 若要修复这些错误并保留横向布局，请单击“撤消”。

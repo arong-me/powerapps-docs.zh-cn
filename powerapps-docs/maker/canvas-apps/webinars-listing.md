@@ -4,7 +4,7 @@ description: 显示过去和以后的网络研讨会列表，包括时间/日期
 services: ''
 suite: powerapps
 documentationcenter: na
-author: anhthuchang
+author: audrieMSFT
 manager: anneta
 editor: ''
 tags: ''
@@ -13,52 +13,49 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 3/1/2018
-ms.author: v-malyng
-ms.openlocfilehash: 824f15ba3747ae5788aaa230787cf68993be2ee4
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.date: 4/18/2018
+ms.author: audrie
+ms.openlocfilehash: e26afdee008b54285e0c20e869f8ccabb8aae215
+ms.sourcegitcommit: e3a2819c14ad67cc4ca6640b9064550d0f553d8f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps 网络研讨会列表 #
 这些网络研讨会可以帮助你使用 Microsoft PowerApps 的功能。 请随时在本主题下的评论中提出其他主题建议。
 
 ## <a name="upcoming-webinars"></a>即将举办的网络研讨会 ##
-**连接器系列 | Project Online (PWA)**
-<br>主讲人：Audrie Gordon
-<br>3 月 12 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
+**入门 | 了解模型驱动应用模板，主讲人：Casey Burke**
+<br>主讲人：Casey Burke
+<br>4 月 19 日上午 10:00（太平洋标准时间）/下午 12:00（东部标准时间）
 
-在此连接器系列演示中，我们将介绍如何使用 Project Online（亦称为 PWA）连接器选项。 欢迎加入，并针对生成利用项目组合管理工具和 Project Online 的应用提问。
+Microsoft 项目经理 Casey Burke 将演示并分解模型驱动应用模板的体系结构。 了解如何采用这些模板，并对其进行自定义以达成你自己的业务目标。
 
-[3 月 12 日单击此处观看](https://www.youtube.com/watch?v=oncGxlmFqy8)
+[4 月 19 日单击此处观看](https://www.youtube.com/watch?v=FShakkXKiS8) 
 
+**深入研究 | 使用业务流程管理 (BPM) PowerApps，主讲人：Dawid van Heerden**
+<br>主讲人：Audrie Gordon 和 Dawid van Heerden
+<br>4 月 23 日上午 10:00（太平洋标准时间）/下午 12:00（东部标准时间）
 
-**深入研究 | 使用 PowerApps 生成服务器修补解决方案（第 2 部分），主讲人：Brian Blanchard**
-<br>作者：Brian Blanchard 和 Audrie Gordon
-<br>3 月 19 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
-
-这是 Brian Blanchard 演示的第 2 部分，介绍了他是如何为团队生成应用以管理服务器修补计划的。 他将分享 Azure 自动化设置和 Microsoft Flow 中的高级工作流的幕后详情。 荣誉属于 Brian，他利用 PowerApps 和 Flow 为他的团队节省了时间和金钱。
-
-[3 月 19 日单击此处观看](https://www.youtube.com/watch?v=oncGxlmFqy8)
-
-**深入研究 | PowerApps 点击链接分析，主讲人：Vivek Bavishi**
-<br>主讲人：Vivek Bavishi 和 Audrie Gordon
-<br>4 月 17 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
-
-Vivek Bavishi 是国际 PowerApps 冠军组成员，与 PowerApps 团队成员 Audrie Gordon 一起介绍了一种简单方法，以使用 PowerApps 和 Flow 创建自己的点击链接分析。 将报表选项扩展为包含统计数据，有助于深入了解应用使用者如何导航应用，从而使用数据来验证应用使用和设计假设！ 如果是认真的应用创建者，就一定不会想错过 Vivek 的演示吧。
-
-[4 月 17 日单击此处观看](https://www.youtube.com/watch?v=OM-rlhKJFTA)
-
-**连接器系列 | 利用 Common Data Service 的优势**
-<br>主讲人：Audrie Gordon
-<br>4 月 23 日上午 10:30（太平洋标准时间）/下午 1:30（东部标准时间）
-
-开始探索 Common Data Service（亦称为 CDS）了吗？ 了解跨商业应用使用常见数据架构的最新优势吗？ 听闻过有关此领域最近更新和精彩创意的相关评价吗？
-
-此网络研讨会将深入探讨跨所有 Microsoft 云订阅（对于 Office 365、Azure 和 Dynamics 365 应用启用）利用 Common Data Service 的优势。 欢迎加入此实时网络研讨会，大致了解 CDS 最新进展动态，以及使用此平台对应用建模的强大功能。 迫不及待地想要告诉大家一些无限可能性了！
+PowerApps 在快速创建业务应用程序方面非常出色。 本视频介绍了使用此相同平台推动多步骤业务流程的强大功能，包括各种角色、步骤和路由选项。
 
 [4 月 23 日单击此处观看](https://www.youtube.com/watch?v=JY8r46HnHoI)
+
+**深入研究 | 来自 IWMentor 的 Laura Rogers 分享有关生产应用的最佳做法**
+<br>主讲人：Audrie Gordon 和 Laura Rodgers
+<br>5 月 14 日上午 10:00（太平洋标准时间）/下午 12:00（东部标准时间）
+
+来自 IW Mentor 的 Laura Rogers 多年来一直在为企业提供生产应用培训和交付生产应用。 我们从她那里学到了很多东西，尤其是使用 SharePoint 技术的人员。 在此网络研讨会上，Laura 将分享最佳做法和经验教训，以使用使用 PowerApps 和商业应用程序平台构建生产级应用。 此外，她还将演示一款出色的用于追踪账单和测量数据的生产应用。请不要错过本次活动！ IW Mentor 网站：https://www.iwmentor.com/
+
+[4 月 14 日单击此处观看](https://www.youtube.com/watch?v=I50GtV9w7Os)
+
+**在通用审核应用内：了解 PowerApps 和 Flow 的功能，主讲人：Paul Culmsee**
+<br>主讲人：Paul Culmsee
+<br>6 月 14 日下午 6:00（太平洋标准时间）/下午 9:00（东部标准时间）
+
+PowerApps 展示中的这款热门应用为该应用每周带来 3-5个 请求。 因此它已部署到世界各地。 在本次研讨会中，我将介绍它的构思方式，如何充分利用 PowerApps 和 Flow，以及为客户端进行了哪些自定义设置。 对于那些希望通过展示在世界各地广泛使用的完整解决方案来快速入门的用户而言，这是一次很有帮助的辅助性研讨会。 
+
+[6 月 14 日单击此处观看](https://www.youtube.com/watch?v=6Wn47bDOMEE)
 
 ## <a name="past-webinars"></a>过往网络研讨会 ##
 直播结束后，可按需观看网络研讨会。 请注意，必须重新输入注册详细信息，然后才能通过电子邮件收到视频录制链接。
@@ -79,15 +76,19 @@ Vivek Bavishi 是国际 PowerApps 冠军组成员，与 PowerApps 团队成员 A
 **PowerApps 控件入门**
 <br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=lUo0DXvJENI)
 
+**入门 | 产品集成：Teams + PowerApps 提示和技巧**
+<br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=obBQk-aSElI)
+
 **Common Data Service 入门**
 <br>主讲人：Jono Luk [立即观看](https://info.microsoft.com/US-PowerBI-WBNR-FY17-04Apr-18-GettingStartedwiththeCommonDataServices312618_01Registration-ForminBody.html)
+
+**模型驱动应用入门**
+<br>主讲人：Adrian Orth [立即观看](https://www.youtube.com/watch?v=buDDSzJTgns)
+
 
 ### <a name="pro-topics"></a>专业主题 ###
 **部署 PowerApps 应用**
 <br>主讲人：James Oleinik [立即观看](https://www.youtube.com/watch?v=LF49hFB14Cs)
-
-**深入了解 PowerApps 公式**
-<br>主讲人：Greg Lindhorst [立即观看](https://www.youtube.com/watch?v=PuePMMuj5ps)
 
 **在 PowerApps 中重新生成 InfoPath Designer 表单**
 <br>主讲人：Daniel Christian [立即观看](https://www.youtube.com/watch?v=ohQcxcVZSK4)
@@ -131,17 +132,30 @@ Vivek Bavishi 是国际 PowerApps 冠军组成员，与 PowerApps 团队成员 A
 **使用 PowerApps 和 Flow 创建业务线“门户”**
 <br>主讲人：Vishwas Lele [立即观看](http://www.youtube.com/watch?v=eSMAAFHK44c)
 
-**使用连接器：使用 Planner 连接器**
-<br> 主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=NBPL9Uw7qzg)
 
-**入门 | 产品集成：Teams + PowerApps 提示和技巧**
-<br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=obBQk-aSElI)
+### <a name="deep-dives"></a>深入研究 ###
+**深入研究 | PowerApps 公式**
+<br>主讲人：Greg Lindhorst [立即观看](https://www.youtube.com/watch?v=PuePMMuj5ps)
+
+**深入研究 | 使用 PowerApps 构建服务器修补解决方案，作者：Brian Blanchard**
+<br>主讲人：Brian Blanchard 和 Audrie Gordon [立即观看](https://www.youtube.com/watch?v=QAe0oBecowU)
+
+**深入研究 | 使用 PowerApps 生成服务器修补解决方案（第 2 部分），主讲人：Brian Blanchard**
+<br>主讲人：Brian Blanchard 和 Audrie Gordon [立即观看](https://www.youtube.com/watch?v=FDU7ONCN4_U)
+
+**深入研究 | PowerApps 点击链接分析，主讲人：Vivek Bavishi**
+<br>主讲人：Vivek Bavishi 和 Audrie Gordon [立即观看](https://www.youtube.com/watch?v=OM-rlhKJFTA)
+
+
+### <a name="connector-series"></a>连接器系列 ###
+**连接器系列 | 使用连接器：使用 Planner 连接器**
+<br> 主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=NBPL9Uw7qzg)
 
 **连接器系列 | 结合使用功能强大的 Office Graph 和 PowerApps**
 <br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=AOGGyoElGaQ)
 
-**深入研究 | 使用 PowerApps 构建服务器修补解决方案，作者：Brian Blanchard**
-<br>主讲人：Brian Blanchard 和 Audrie Gordon [立即观看](https://www.youtube.com/watch?v=QAe0oBecowU)
+**连接器系列 | Project Online (PWA)**
+<br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=oncGxlmFqy8)
 
 
 ### <a name="app-designer-topics"></a>应用设计人员主题 ###

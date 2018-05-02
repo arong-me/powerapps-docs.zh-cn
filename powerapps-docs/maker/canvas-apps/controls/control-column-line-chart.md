@@ -15,24 +15,24 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 039b267394ef6be5e3038fa0b07149f69fee6a51
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 0804ea7140c4c2e6ab174a214d05be7d06b5e1a6
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>PowerApps 中的柱形图和折线图控件
 用包含 x 轴和 y 轴的图显示数据的控件。
 
 ## <a name="description"></a>说明
-默认情况下，“柱形图”或“折线图”控件包含多个组合在一起的控件。 这些控件显示标题、数据和图例。
+“柱形图”和“折线图”为分组控件。 每组包含三个控件：标题[标签](control-text-box.md)、图表图形和图例。
 
-## <a name="key-properties"></a>关键属性
+## <a name="chart-key-properties"></a>图表关键属性
 **[Items](properties-core.md)** - 控件中显示的数据源，如库、列表或图表。
 
 NumberOfSeries - 柱形图或折线图中反映了多少列的数据。
 
-## <a name="all-properties"></a>所有属性
+## <a name="additional-chart-properties"></a>其他图表属性
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
@@ -41,9 +41,9 @@ NumberOfSeries - 柱形图或折线图中反映了多少列的数据。
 
 **[Color](properties-color-border.md)** – 控件中文本的颜色。
 
-[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
-
 [DisabledBorderColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件边框的颜色。
+
+[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
 **[Font](properties-text.md)** – 文本中所显示的字体系列的名称。
 
@@ -91,6 +91,8 @@ SeriesAxisMin - 柱形图 y 轴的最小值。
 
 **[Size](properties-text.md)** – 控件上显示的文本的字号。
 
+[TabIndex](properties-accessibility.md) – 相对于其他控件的键盘导航顺序。
+
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
@@ -103,11 +105,11 @@ XLabelAngle - 柱形图或折线图的 x 轴下方的标签角度。
 
 YAxisMax - 折线图 y 轴的最大值。
 
-* “YAxisMax”属性适用于“柱形图”控件，但不适用于“折线图”控件。
+* “YAxisMax”属性适用于折线图控件，但不适用于柱形图控件。
 
 YAxisMin - 折线图 y 轴的最小值。
 
-* “YAxisMin”属性适用于“柱形图”控件，但不适用于“折线图”控件。
+* “YAxisMin” 属性适用于折线图控件，但不适用于柱形图控件。
 
 YLabelAngle - 折线图或柱形图 y 轴旁边标签的角度。
 
@@ -121,8 +123,31 @@ YLabelAngle - 折线图或柱形图 y 轴旁边标签的角度。
     不知道如何[添加和配置控件](../add-configure-controls.md)？
    
     想要了解有关 **[Collect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
-2. 按 F5 键，单击或点击**[“按钮”](control-button.md)**控件，然后按 Esc 键返回到默认工作区。
-3. 添加“柱形图”或“折线图”控件，将其**[“Items”](properties-core.md)**属性设为“Revenue”，并将其“NumberOfSeries”属性设为“3”。
+2. 按 F5 键，单击或点击**[“按钮”](control-button.md)** 控件，然后按 Esc 键返回到默认工作区。
+3. 添加“柱形图”或“折线图”控件，将其**[“Items”](properties-core.md)** 属性设为“Revenue”，并将其“NumberOfSeries”属性设为“3”。
    
     此控件将显示每个产品超过三年的收入数据。
 
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+### <a name="color-contrast"></a>颜色对比度
+在以下项之间必须有足够的颜色对比度：
+* “ItemColorSet”中的每个项
+* “ItemColorSet”中的所有项和背景色
+* “Color”**[](properties-color-border.md)** 和背景色
+
+### <a name="screen-reader-support"></a>屏幕阅读器支持
+* “图表图形”前必须有一个便签**[](control-text-box.md)** 作为标题。
+* 请考虑添加图表图形的摘要。 例如，“折线图显示本年度 3 月和 8 月之间销售额的稳定增长”。
+> [!NOTE]
+> 图表图形和图例对屏幕阅读器用户隐藏。 作为替代方法，将向用户显示表格形式的数据。 他们还可以在用于图表中选择数据的按钮之间循环。
+
+### <a name="low-vision-support"></a>弱视支持
+* 如果显示多个序列，则必须有图例。
+* 请考虑将“GridStyle”设置为“GridStyle.All”，以显示两个轴。 这可以帮助所有用户准确地确定数据的规模。
+* 对于柱形图，请考虑将“Markers”设置为“true”。 这有助于弱视用户确定柱形的值。
+
+### <a name="keyboard-support"></a>键盘支持
+* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+> [!NOTE]
+> 当键盘用户导航到图表时，可以在用于在图表中选择数据的按钮之间循环。

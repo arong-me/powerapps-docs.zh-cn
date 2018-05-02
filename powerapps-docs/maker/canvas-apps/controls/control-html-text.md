@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: bb652f3ba6decad7cb6f93007eaec6340f230ca1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 194f00a670f3c879325603f519c1c86e9ba6cf2c
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="html-text-control-in-powerapps"></a>PowerApps 中的 HTML 文本控件
 一个框，用于显示文本并将 HTML 标记转换为格式。
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/22/2018
 
 **[Font](properties-text.md)** – 文本中所显示的字体系列的名称。
 
-**HTMLText** - HTML 文本控件中显示且可能包含 HTML 标记的文本。
+**HtmlText** – HTML 文本控件中显示的文本，可能包含 HTML 标记。
 
 ## <a name="additional-properties"></a>其他属性
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
@@ -69,11 +69,11 @@ ms.lasthandoff: 03/22/2018
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
-**[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
+[Width](properties-size-location.md) – 控件左边缘和右边缘之间的距离。
 
 [X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="related-functions"></a>相关函数
 [**Find**( *FindString*, *WithinString* )](../functions/function-find.md)
@@ -85,8 +85,22 @@ ms.lasthandoff: 03/22/2018
 
 不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 
-1. 添加 **HTML 文本**控件，并将其 **HTMLText** 属性设置为下面的值：<br>
+1. 添加“HTML 文本”控件，并将其“HTMLText”属性设置为以下值：<br>
    **Source.Text**
    
-     虽然“HTML 文本”控件显示与“[标签](control-text-box.md)”控件相同的文本，但会将这些标记转换成相应的字符。
+     虽然“HTML 文本”控件显示与“标签”**[](control-text-box.md)** 控件相同的文本，但会将这些标记转换成相应的字符。
 
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+“HTML 文本”不应是交互式的。 它应仅用于文本显示。
+
+### <a name="color-contrast"></a>颜色对比度
+在以下项之间必须有足够的颜色对比度：
+* Color**[](properties-color-border.md)** 和 Fill**[](properties-color-border.md)**
+* 带自定义颜色的文本和其背景
+
+### <a name="screen-reader-support"></a>屏幕阅读器支持
+* “HtmlText”必须存在。
+
+### <a name="keyboard-support"></a>键盘支持
+* “HtmlText”不应包含交互式元素，如 `<button>`、`<a>` 或 `<input>`。 PowerApps 中的“TabIndex”**[](properties-accessibility.md)** 不考虑“HtmlText”内的元素。

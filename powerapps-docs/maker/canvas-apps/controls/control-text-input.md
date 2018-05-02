@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 4082034d843765025bb6e40cab83705582417d51
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: fca84b687f6e86905c6eeea18a7cd302f0c58b44
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="text-input-control-in-powerapps"></a>PowerApps 中的文本输入控件
 用户可在其中键入文本、数字和其他数据的框。
@@ -33,6 +33,8 @@ ms.lasthandoff: 03/22/2018
 **[Text](properties-core.md)** – 在控件上显示或用户键入到控件中的文本。
 
 ## <a name="additional-properties"></a>其他属性
+[AccessibleLabel](properties-accessibility.md) – 屏幕阅读器标签。
+
 **[Align](properties-text.md)** – 文本相对于其控件的水平居中的位置。
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
@@ -40,8 +42,6 @@ ms.lasthandoff: 03/22/2018
 **[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
-
-**[FocusedBorderThickness](properties-color-border.md)** – 控件具有键盘焦点时的边框粗细。
 
 **Clear** - 文本输入控件是否显示“X”，用户可点击或单击该符号以清除该控件的内容。
 
@@ -58,6 +58,10 @@ ms.lasthandoff: 03/22/2018
 [DisabledFill](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件的背景颜色。
 
 **[Fill](properties-color-border.md)** – 控件的背景颜色。
+
+[FocusedBorderColor](properties-color-border.md) – 当聚焦到控件时，控件的边框颜色。
+
+[FocusedBorderThickness](properties-color-border.md) – 当聚焦到控件时，控件的边框粗细。
 
 **[Font](properties-text.md)** – 文本中所显示的字体系列的名称。
 
@@ -115,7 +119,7 @@ ms.lasthandoff: 03/22/2018
 
 **[Strikethrough](properties-text.md)** – 通过文本显示的线是否在控件上显示。
 
-**[TabIndex](properties-accessibility.md)** - 设置为非零值时，在运行时自定义控件的选项卡顺序。
+[TabIndex](properties-accessibility.md) – 相对于其他控件的键盘导航顺序。
 
 **[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
 
@@ -159,3 +163,15 @@ ms.lasthandoff: 03/22/2018
 5. （可选）添加一个控件（如箭头），配置它以导航到另一个屏幕，且仅在用户键入密码后才显示。
 6. （可选）添加一个按钮，配置其 **[Text](properties-core.md)** 属性，使其显示**登录**，添加一个计时器，如果用户键入错误的密码，则禁用输入文本控件一段时间，然后单击或点击“登录”按钮。
 
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+### <a name="color-contrast"></a>颜色对比度
+* 适用标准颜色对比度要求。
+
+### <a name="screen-reader-support"></a>屏幕阅读器支持
+* “AccessibleLabel”**[](properties-accessibility.md)** 必须存在。
+
+### <a name="keyboard-support"></a>键盘支持
+* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* 焦点指示器必须清晰可见。 可以使用“FocusedBorderColor”**[](properties-color-border.md)** 和“FocusedBorderThickness”**[](properties-color-border.md)** 来实现此目的。
+ 

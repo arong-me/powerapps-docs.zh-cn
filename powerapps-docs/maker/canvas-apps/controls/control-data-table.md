@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/05/2017
 ms.author: kfend
-ms.openlocfilehash: 431fb0233fa58d59a62a9d5d2cf07bfdd23d6271
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 117d55cedb7c11bcdb6f69f8c10a8df2f2512b89
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="data-table-control-in-powerapps"></a>PowerApps 中的数据表控件
 以表格格式显示一组数据。
@@ -145,3 +145,16 @@ PowerApps 在 2017 年 5 月 5 日引入了“数据表”控件。 此部分介
    
     ![与“数据表”控件相联的“编辑表单”控件](./media/control-data-table/connected-form-data-table.png)
 
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+### <a name="color-contrast"></a>颜色对比度
+在以下项之间必须有足够的颜色对比度：
+* Color[](properties-color-border.md) 和 Fill[](properties-color-border.md)
+* HeadingColor 和 HeadingFill
+* SelectedColor 和 SelectedFill
+* HoverColor[](properties-color-border.md) 和 HoverFill[](properties-color-border.md)
+
+这是除标准颜色对比度以外的要求。
+
+### <a name="screen-reader-support"></a>屏幕阅读器支持
+* “NoDataText”必须存在。
