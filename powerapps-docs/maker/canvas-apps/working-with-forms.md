@@ -12,16 +12,16 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: c0e0595fc3e3025ca345e1415fbd3da99f090063
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: a9cd26ad41ceaa5b94678a3ef87bf0ab6dda98a1
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understand-data-forms-in-microsoft-powerapps"></a>了解 Microsoft PowerApps 中的数据窗体
 添加三种类型的控件，使用户能够浏览记录、显示有关记录的详细信息，以及编辑或创建记录：
 
-| 活动 | 控件 | 说明 |
+| 活动 | 控件 | 描述 |
 | --- | --- | --- |
 | **浏览记录** |**[库](controls/control-gallery.md)** 控件 |筛选、排序、搜索和滚动浏览数据源中的记录，以及选择特定的记录。 显示每条记录中的几个字段，以便一次性显示多条记录，即使是在小屏幕上显示。 |
 | **显示记录的详细信息** |**[显示窗体](controls/control-form-detail.md)** 控件 |显示单条记录中的多个或所有字段。 |
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="prerequisites"></a>先决条件
 
-* [注册](../signup-for-powerapps.md)、[安装](http://aka.ms/powerappsinstall) PowerApps，然后打开该程序，并提供注册所用的同一凭据进行登录。
+* [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com)。
 * 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
 
 ## <a name="explore-a-generated-app"></a>浏览生成的应用

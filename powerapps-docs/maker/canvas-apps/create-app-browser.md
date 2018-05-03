@@ -12,18 +12,18 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/08/2018
 ms.author: anneta
-ms.openlocfilehash: 4c8b100e4993921c651590c80eda4297345cdd40
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 4add1e15c1a85b27b83295422dbb6472ac02ad9f
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-or-edit-apps-in-powerapps-studio-for-web"></a>在适用于 Web 的 PowerApps Studio 中创建或编辑应用
 使用适用于 Web 的 PowerApps Studio 在 Windows 或其他平台上的浏览器中创建和编辑应用。
 
 ## <a name="prerequisites"></a>先决条件
 * [注册](../signup-for-powerapps.md) PowerApps。
-* 确保使用的是[受支持的浏览器](limits-and-config.md#supported-browsers-for-powerapps-studio-for-web)。
+* 确保使用的是[受支持的浏览器](limits-and-config.md#supported-browsers-for-powerapps-studio)。
 
 ## <a name="open-powerapps-studio-for-web"></a>打开适用于 Web 的 PowerApps Studio
 1. 登录到 [powerapps.com](http://go.microsoft.com/fwlink/p/?LinkId=708209)。

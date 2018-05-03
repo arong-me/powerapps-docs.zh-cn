@@ -15,18 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 73b8aca29af2e9ee5fa117a7e7b79a8d3dbaca9f
-ms.sourcegitcommit: a9ac8a3ed734cb5f70b61476168d1bff5de844f8
+ms.openlocfilehash: a538eb1b6046c4cfd27e969613b44574cec8ff7e
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="quickstart-run-a-model-driven-app-on-a-mobile-device"></a>快速入门：在移动设备上运行模型驱动应用
 
 创建应用并与你共享后，你可以在各种热门的移动设备上运行该应用，比如 Windows、iOS、Android 或 web 浏览器。 本快速入门介绍如何在移动设备上运行模型驱动应用。 
-
-> [!IMPORTANT]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 根据此快速入门，如果没有注册 PowerApps，请在开始之前[免费注册](https://web.powerapps.com/signup?redirect=marketing&email=)。 此外，请确保你有权访问自己创建的应用或其他人创建并与你共享的应用。
 

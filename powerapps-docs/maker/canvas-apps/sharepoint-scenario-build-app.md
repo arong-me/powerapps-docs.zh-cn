@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 6f9ef24f4ab6f0009c7020008e299f09ecb0762e
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: fca166ef388921e08bf71149a8b1274a31a7dc52
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-an-app-to-manage-projects"></a>创建用于管理项目的应用
 > [!NOTE]
@@ -28,8 +28,6 @@ ms.lasthandoff: 04/26/2018
 > 这个方案的[下载包](https://aka.ms/o4ia0f)包含此应用的最终版本 (project-details-app.msapp)。
 
 ## <a name="quick-review-of-powerapps-studio"></a>快速回顾 PowerApps Studio
-虽然在上一任务中也使用了适用于 Web 的 PowerApps Studio，但我们希望确保你在继续浏览本文前了解各个工作区。 可以继续使用适用于 Web 的 PowerApps Studio，也可以使用[适用于 Windows 的 PowerApps Studio](https://aka.ms/powerappswin)。
-
 PowerApps Studio 有三个窗格和一个功能区，可以在其中创建应用，就像在 PowerPoint 中创建幻灯片一样：
 
 1. 左侧导航栏：可以显示所有应用屏幕和控件的分层视图，也可以显示屏幕缩略图

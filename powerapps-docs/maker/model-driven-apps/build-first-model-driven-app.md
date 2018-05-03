@@ -12,17 +12,14 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 04/18/2018
 ms.author: matp
-ms.openlocfilehash: ad11ce81544095c5730e326325b4b5bf6b136e93
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 3a9696a025608de3c142277da4059e7e8c5ec5ad
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="quickstart-build-your-first-model-driven-app-from-scratch"></a>快速入门：从零开始生成首个模型驱动应用
 模型驱动应用设计是一种侧重于组件的应用开发方法。 在本快速入门中，可以通过使用在你的 [!INCLUDE [powerapps](../../includes/powerapps.md)] 环境中提供的一个标准实体来简化模型驱动应用的生成方式。 
-
-> [!IMPORTANT]
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 ## <a name="sign-in-to-powerapps"></a>登录到 PowerApps
 登录 [PowerApps](https://web.powerapps.microsoft.com/)。 如果还没有 [!INCLUDE [powerapps](../../includes/powerapps.md)] 帐户，请选择“开始免费使用”链接。 

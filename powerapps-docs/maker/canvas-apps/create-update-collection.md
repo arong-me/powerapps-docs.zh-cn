@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 11/30/2015
 ms.author: lonu
-ms.openlocfilehash: 26cf15054a1cf5d00bda0e2f265ed242cb21421c
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 01065fd1a12b3d55e8726582cead3d86a6e6a8ad
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-and-update-a-collection-in-your-app"></a>创建和更新应用中的集合
 集合用于存储可在应用中使用的数据。 集合是一组类似的项。 例如，你会创建“MyImages”集合来存储公司出售的所有产品的图像。 在 PowerApps 内，可以添加“MyImages”集合，然后创建一个应用来显示这些产品的所有图片。 再比如，可以创建“PriceList”集合，列出所有产品及其价格。
@@ -23,7 +23,7 @@ ms.lasthandoff: 04/26/2018
 可以在 PowerApps 中创建和使用集合。 现在就开始吧。
 
 ### <a name="prerequisites"></a>先决条件
-* [注册](../signup-for-powerapps.md)、[安装](http://aka.ms/powerappsinstall) PowerApps，然后打开该程序，并提供注册所用的同一凭据进行登录。
+* [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com)。
 * 在 PowerApps 中创建一个应用，或打开一个现有应用。
 * 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
 * 本文中的步骤过程使用 [PriceList.zip](http://pwrappssamples.blob.core.windows.net/samples/PriceList.zip) 文件作为示例输入数据。 此 zip 文件中包含可以转换成 Excel 的 XML 文件。 在其他情况下，PowerApps 会自动读取 .zip 文件中的文件，并成功导入这些文件。 可以下载和使用此示例数据，也可以导入你自己的数据。
