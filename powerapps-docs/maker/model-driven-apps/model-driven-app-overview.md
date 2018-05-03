@@ -12,20 +12,17 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 1b9ee344192d84933d25a3208d2feb0873a298c1
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 76571a53c95661d853b7fb326e3c1087a6f432c4
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="overview-of-building-a-model-driven-app"></a>生成模型驱动应用的概述
 
 模型驱动应用设计是一种侧重于组件的应用开发方法。 模型驱动应用设计不需要代码，无论是简单还是非常复杂的应用，都可以开发。  画布应用开发中的应用布局完全受设计器控制，但是对于模型驱动应用，大多数布局已为你确定，并主要由添加到应用的组件指定。 
 
 ![示例模型驱动应用](media/model-driven-app-overview/model-app-sample.png)
-
-> [!IMPORTANT]
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 模型驱动应用设计具有下列优势：
 - 丰富的针对组件的无代码设计环境 
@@ -58,7 +55,7 @@ ms.lasthandoff: 04/26/2018
 这些组件决定了应用基于哪些数据。
 
 
-|组件  |说明  |设计器  |
+|组件  |描述  |设计器  |
 |---------|---------|---------|
 |实体     |包含你跟踪的属性的项，例如“联系人”或“帐户”。 提供很多标准实体。 可以自定义非系统标准实体（生产实体）或从头创建自定义实体。     | [!INCLUDE [powerapps](../../includes/powerapps.md)] entity designer        |
 |字段     | 一个与实体关联的属性。 字段由数据类型定义，数据类型决定了可以输入或可以选中的数据类型。 例如文本、数字、日期和时间、货币或查找（创建与其他实体之间的关系）。 字段通常与窗体、视图以及搜索结合使用。        | [!INCLUDE [powerapps](../../includes/powerapps.md)] entity designer   |
@@ -68,7 +65,7 @@ ms.lasthandoff: 04/26/2018
 ### <a name="ui"></a>UI
 这些组件决定了用户与应用的交互方式。 
 
-|组件  |说明  |设计器  |
+|组件  |描述  |设计器  |
 |---------|---------|---------|
 |应用     | 决定应用程序的基础元素，例如应用的组件、属性、客户端类型和 URL。      | 应用设计器   |
 |站点地图     | 指定应用的导航设置        | 站点地图设计器        |
@@ -81,7 +78,7 @@ ms.lasthandoff: 04/26/2018
 确定应用的业务流程、规则和自动化。 [!INCLUDE [powerapps](../../includes/powerapps.md)] 创建者使用特定于流程类型或规则的设计器。 
 
 
-|逻辑类型  |说明  |设计器  |
+|逻辑类型  |描述  |设计器  |
 |---------|---------|---------|
 |业务流程     | 这是一种联机流程，引导用户完成标准的业务流程。 例如，如果希望每个人都以同样的方式处理客户服务请求，或者要求员工在提交订单之前获得使用发票的批准，请使用业务流程。        | 业务流程设计器        |
 |工作流     |  工作流自动执行业务流程，无需用户界面。 设计器使用工作流启动自动化操作，无需用户交互。       | 工作流设计器        |
@@ -95,7 +92,7 @@ ms.lasthandoff: 04/26/2018
 决定将在应用中提供的数据可视化和报告类型。
 
 
-|组件  |说明  |设计器  |
+|组件  |描述  |设计器  |
 |---------|---------|---------|
 |图表     | 可以在视图、窗体中显示或可以添加到仪表板的单个图形可视化。        | 图表设计器        |
 |仪表板     | 用于处理一个或多个图形可视化，提供可操作的业务数据的概览。        | 仪表板设计器        |

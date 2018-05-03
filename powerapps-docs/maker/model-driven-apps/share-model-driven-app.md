@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 43a31d0fe4f77b47425d2df4f98caf611625f696
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 4068bbc4e67adee344544c0ba69895244d3dab83
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tutorial-share-a-model-driven-app-with-powerapps"></a>教程：借助 PowerApps 共享模型驱动应用
 
@@ -26,9 +26,6 @@ ms.lasthandoff: 04/26/2018
 - 创建自定义安全角色
 - 向用户分配自定义安全角色
 - 向应用分配安全角色
-
-> [!IMPORTANT]
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 ## <a name="prerequisites"></a>先决条件
 要共享应用，必须具备 [!INCLUDE [powerapps](../../includes/powerapps.md)] 环境管理员角色或系统管理员角色。 
@@ -116,7 +113,7 @@ ms.lasthandoff: 04/26/2018
 这些预定义的安全角色可用于 [!INCLUDE [powerapps](../../includes/powerapps.md)] 环境。
 
 
-|安全角色  |*特权  |说明 |
+|安全角色  |*特权  |描述 |
 |---------|---------|---------|
 |环境创建者     |  无       | 可以创建与环境相关联的新资源，包括应用、连接、自定义 API、网关和使用 Microsoft Flow 的流。 但是，没有在环境中访问数据的任何特权。 有关详细信息，请参阅：[环境概述](https://powerapps.microsoft.com/blog/powerapps-environments/)        |
 |系统管理员     |  创建、读取、写入、删除、自定义、安全角色       | 具有自定义或管理环境的完整权限，包括创建、修改和分配安全角色。 可以查看环境中的所有数据。 有关详细信息，请参阅：[自定义所需的特权](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
