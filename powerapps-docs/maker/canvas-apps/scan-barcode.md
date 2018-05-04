@@ -1,27 +1,24 @@
 ---
 title: 扫描条形码 | Microsoft 文档
 description: 扫描各种条形码类型，如 UPC 和 Codabar
-services: ''
-suite: powerapps
 documentationcenter: na
 author: aftowen
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 10/23/2016
 ms.author: anneta
-ms.openlocfilehash: 078c53300c4e1489d179f9c91818a8e23616f3ae
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: d8f41cc03f0cfac88ef356966c7d07b6cf088cda
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="scan-a-barcode-in-microsoft-powerapps"></a>在 Microsoft PowerApps 中扫描条形码
+# <a name="scan-a-barcode-in-powerapps"></a>在 PowerApps 中扫描条形码
 通过创建应用并在具有摄像头的设备（如手机）上运行应用，可扫描多种类型的条形码。 条形码的等效数字显示在“标签”控件中，可以将此数据上载到各种[数据源](connections-list.md)中。
 
 如果不熟悉 PowerApps，请参阅[入门](getting-started.md)。
@@ -115,5 +112,5 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="next-steps"></a>后续步骤
 * [将应用连接到数据源](add-data-connection.md)并配置 **[Patch](functions/function-patch.md)** 函数，使用户可以保存结果。
-* 添加**[下拉列表](controls/control-drop-down.md)**控件并进行配置，使用户可以选择想要扫描的条形码类型。
-* 添加**[滑块](controls/control-slider.md)**控件并进行配置，使用户可调整扫描速率或**条形码**控件的高度。
+* 添加**[下拉列表](controls/control-drop-down.md)** 控件并进行配置，使用户可以选择想要扫描的条形码类型。
+* 添加**[滑块](controls/control-slider.md)** 控件并进行配置，使用户可调整扫描速率或**条形码**控件的高度。

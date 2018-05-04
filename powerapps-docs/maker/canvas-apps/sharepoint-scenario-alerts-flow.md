@@ -1,25 +1,22 @@
 ---
 title: 设置 Power BI 仪表板的数据警报 | Microsoft 文档
-description: 在此任务中，我们将在 Power BI 中添加警报，以便了解待审批项目的等待时间是否过长，并添加用于响应触发的警报的流。
-services: ''
-suite: powerapps
+description: 在此任务中，我们将在 Power BI 中添加警报，以便了解待审批项目的等待时间是否过长，以及警报发生时作出响应的流。
 documentationcenter: na
 author: mgblythe
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 91d1fc6872992823aaa3c5c7baa9f36efd2fc99f
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 663c5dfcad45e65044958c9d3b8b1aa111840a61
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-up-data-alerts-for-the-power-bi-dashboard"></a>创建 Power BI 仪表板的数据警报
 > [!NOTE]

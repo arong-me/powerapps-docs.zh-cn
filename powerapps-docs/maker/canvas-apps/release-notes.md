@@ -1,8 +1,6 @@
 ---
 title: PowerApps 中的新增功能 | Microsoft 文档
 description: 按发布日期列出的 PowerApps 更新
-services: powerapps
-suite: powerapps
 documentationcenter: na
 author: skjerland
 manager: kfile
@@ -10,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/09/2018
+ms.topic: conceptual
+ms.component: canvas
+ms.date: 04/23/2018
 ms.author: sharik
-ms.openlocfilehash: 92438c37b870ace2ed5b2ec086cf6c5fb1548fdc
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: 00b80bd5b9e0953366dd58d6e3b3266ffe7956bd
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps 的最近更新
 有关已知限制的信息，请参阅[常见问题和解决方法](common-issues-and-resolutions.md)。
@@ -33,6 +30,9 @@ ms.lasthandoff: 04/19/2018
 发现商业应用程序的最新更新和许多新增功能，这些功能便于用户在我们平台的基础之上生成用户自己的应用程序和扩展。 [下载 2018 年春季发行说明 PDF](https://aka.ms/businessappsreleasenotes)，其中涉及 Dynamics 365、PowerApps、Microsoft Flow 和 Power BI。
 
 **即将推出**：我们将会不断更新发行说明 PDF，以收录新发布的功能。同时，我们还会将它们发布在网页上。
+
+## <a name="apr-23"></a>4 月 23 日
+* 在 SharePoint 自定义列表窗体中，从 Internet Explorer 下载[附件](controls/control-attachments.md)。
 
 ## <a name="apr-9"></a>4 月 9 日
 * web 浏览器的应用中的剪切 (Ctrl+X)、复制 (Ctrl+C) 和粘贴 (Ctrl+V) 控件，包括控件的样式、公式和属性&mdash;&mdash;。

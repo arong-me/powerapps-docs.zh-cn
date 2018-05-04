@@ -1,25 +1,22 @@
 ---
 title: IsMatch 函数 | Microsoft 文档
 description: PowerApps 中 IsMatch 函数的参考信息（包括语法）。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 02/05/2017
 ms.author: gregli
-ms.openlocfilehash: b15a394db060617aeae8324094a70aa8cadf6755
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 26bbef6e61845708e20efb3bd201ae61867d1026
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ismatch-function-in-powerapps"></a>PowerApps 中的 IsMatch 函数
 测试文本字符串是否符合某种模式。
@@ -27,7 +24,7 @@ ms.lasthandoff: 03/22/2018
 ## <a name="description"></a>说明
 **IsMatch** 函数用于测试文本字符串是否与包含普通字符、预定义模式或[正则表达式](#regular-expressions)的某种模式相符。  
 
-使用 **IsMatch** 函数可验证用户在**[文本输入](../controls/control-text-input.md)**控件中输入的内容。 例如，可以在将结果保存到数据源中之前验证用户输入的电子邮件地址是否有效。 如果输入的内容与条件不符，可添加其他控件提示用户更正输入。
+使用 **IsMatch** 函数可验证用户在**[文本输入](../controls/control-text-input.md)** 控件中输入的内容。 例如，可以在将结果保存到数据源中之前验证用户输入的电子邮件地址是否有效。 如果输入的内容与条件不符，可添加其他控件提示用户更正输入。
 
 默认情况下，**IsMatch** 函数在匹配整个文本字符串时区分大小写。 你可以通过指定一个或多个 [**MatchOptions**](#match-options) 来修改这种行为。
 
@@ -73,7 +70,7 @@ ms.lasthandoff: 03/22/2018
 | **Any** |匹配任何字符。 |**.** |
 | **Comma** |匹配逗号。 |**,** |
 | **Digit** |匹配单个数字（“0”到“9”）。 |**\\d** |
-| **Email** |匹配包含“@”符号和包含点（“.”）的域名的电子邮件地址。 |**.+@.+\\.[^\\.]{2,}** |
+| **Email** |匹配包含“@”符号和包含点（“.”）的域名的电子邮件地址。 |.+@.+\\.[^\\.]{2,} |
 | **Hyphen** |匹配连字符。 |**\\-** |
 | **LeftParen** |匹配左圆括号“(”。 |**\\(** |
 | **Letter** |匹配一个字母。 |**\\p{L}** |
@@ -149,8 +146,8 @@ ms.lasthandoff: 03/22/2018
 | **IsMatch( "986", "\d+" )** |匹配大于零的整数。 |**true** |
 | **IsMatch( "1.02", "\d+(\.\d\d)?" )** |匹配正货币金额。 如果输入的内容包含小数点，则小数点后还要有 2 个数字字符。 例如，3.00 有效，但 3.1 无效。 |**true** |
 | **IsMatch( "-4.95", "(-)?\d+(\.\d\d)?" )** |匹配正或负货币金额。 如果输入的内容包含小数点，则小数点后还要有 2 个数字字符。 |**true** |
-| **IsMatch( "111-11-1111", "\d{3}-\d{2}-\d{4}" )** |匹配美国社会安全号码。  验证提供的输入字段的格式、类型和长度。 要匹配的字符串必须包含 3 个数字字符，后跟一个短划线，再跟 2 个数字字符，再跟一个短划线，最后跟 4 个数字字符。 |**true** |
-| **IsMatch( "111-111-111", "\d{3}-\d{2}-\d{4}" )** |与上例相同，但其中一个连字符的位置不对。 |**false** |
-| **IsMatch( "weakpassword", "(?!^[0-9]\*$)(?!^[a-zA-Z]\*$)([a-zA-Z0-9]{8,10})" )** |验证强密码，除包含至少一个数字和至少一个字母字符外，还必须包含 8、9 或 10 个字符。 字符串不能包含特殊字符。 |**false** |
+| IsMatch( "111-11-1111", "\d{3}-\d{2}-\d{4}" ) |匹配美国社会安全号码。  验证提供的输入字段的格式、类型和长度。 要匹配的字符串必须包含 3 个数字字符，后跟一个短划线，再跟 2 个数字字符，再跟一个短划线，最后跟 4 个数字字符。 |**true** |
+| IsMatch( "111-111-111", "\d{3}-\d{2}-\d{4}" ) |与上例相同，但其中一个连字符的位置不对。 |**false** |
+| IsMatch( "weakpassword", "(?!^[0-9]\*$)(?!^[a-zA-Z]\*$)([a-zA-Z0-9]{8,10})" ) |验证强密码，除包含至少一个数字和至少一个字母字符外，还必须包含 8、9 或 10 个字符。 字符串不能包含特殊字符。 |**false** |
 | **IsMatch( "http://microsoft.com", "(ht&#124;f)tp(s?)\:\/\/\[0-9a-zA-Z\]([-.\w]\*[0-9a-zA-Z])\*(:(0-9)\*)\*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&amp;%\$#_]\*)?" )** |验证 http、https 或 ftp URL。 |**true** |
 

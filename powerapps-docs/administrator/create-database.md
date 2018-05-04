@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 68ce23ae4b4a961a69cc60173b4f98ec18f05dd2
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: c32be4dd25da1c2267043b061102b2714a109cc5
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-a-common-data-service-database"></a>创建 Common Data Service 数据库
 可以将 Common Data Service 用作数据存储，从而创建数据库并生成应用。 可以创建你自己的自定义实体，也可以使用预定义的实体。 若要创建数据库，要么必须先创建一个环境，要么必须以“环境管理员”身份分配到现有环境。此外，还必须分配有相应的许可证。 若要了解如何购买 Common Data Service 使用套餐，请参阅[定价信息](pricing-billing-skus.md)。
@@ -52,6 +52,8 @@ ms.lasthandoff: 04/23/2018
 
     ![](./media/create-database/Create-DB-From-Entities.png)
 
+> [!NOTE]
+> 目前，不能在 Azure AD 区域外部创建数据库。 在不久的将来，可以在不同于 Azure AD 主区域的其他区域创建数据库，但现在，请确保在具有与 Azure AD 主区域相同区域的环境中创建数据库。
 
 ## <a name="security-model-for-the-databases"></a>数据库的安全模型
 创建数据库后，具有环境角色的用户继续保有相应权限。  
