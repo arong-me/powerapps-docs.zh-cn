@@ -1,25 +1,22 @@
 ---
 title: PDF 查看器控件：参考 | Microsoft 文档
 description: 有关 PDF 查看器控件的信息，包括属性和示例
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 4b71bc87dd302f83854a79a03ffb41cb98a99f5e
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: e52f89f685aeb9c06678b973e926c0fd89bdf47f
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PowerApps 中的 PDF 查看器控件（实验性）
 显示 PDF 文件内容的实验性控件。
@@ -112,4 +109,4 @@ Zoom – 相机中图像被放大的百分比或 PDF 查看器中文件的视图
 了解如何通过 [WCAG 2.0](https://www.w3.org/TR/WCAG-TECHS/pdf.html) 和 [PDF/UA](https://www.pdfa.org/pdfua-the-iso-standard-for-universal-accessibility/) 标准创建可访问的 PDF 文档。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* 如果 PDF 文档没有标题，请考虑使用标签**[](control-text-box.md)** 添加标题。 标题会立即置于“Power BI 查看器”前。
+* 如果 PDF 文档没有标题，请考虑使用**[标签](control-text-box.md)** 添加标题。 标题会立即置于“Power BI 查看器”前。
