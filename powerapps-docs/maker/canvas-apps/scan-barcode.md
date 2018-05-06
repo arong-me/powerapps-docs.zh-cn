@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/23/2016
 ms.author: anneta
-ms.openlocfilehash: d8f41cc03f0cfac88ef356966c7d07b6cf088cda
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 6960b41effb109f6f2266ba279b4d51ea51e744f
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="scan-a-barcode-in-powerapps"></a>在 PowerApps 中扫描条形码
 通过创建应用并在具有摄像头的设备（如手机）上运行应用，可扫描多种类型的条形码。 条形码的等效数字显示在“标签”控件中，可以将此数据上载到各种[数据源](connections-list.md)中。
@@ -35,8 +35,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="create-a-blank-app"></a>创建空白应用
 1. [注册 PowerApps](../signup-for-powerapps.md)，然后执行下列操作*之一*：
 
-   * 在具有摄像头的设备上的浏览器中[打开 PowerApps](https://create.powerapps.com/api/start)。
-   * 在具有摄像头的设备上从 Windows 应用商店[安装 PowerApps](http://aka.ms/powerappsinstall)。 打开 PowerApps、登录，然后单击或点击“**文件**”菜单（沿左边缘）上的“**新建**”。
+1. 在具有摄像头的设备上的浏览器中[打开 PowerApps](https://create.powerapps.com)。
 
 2. 在“从空白画布或模板开始”下方，单击或点击“空白应用”磁贴中的“手机布局”。
 
