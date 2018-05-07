@@ -228,8 +228,6 @@
           href: ./common-data-service/data-platform-create-entity.md
         - name: 通过数据创建自定义实体
           href: ./common-data-service/data-platform-cds-newentity-pq.md
-        - name: 管理字段
-          href: ./common-data-service/data-platform-manage-fields.md
         - name: 创建选项集
           href: ./common-data-service/custom-picklists.md
         - name: 创建关系
@@ -244,6 +242,18 @@
           href: ./common-data-service/create-custom-entity.md
     - name: 示例和资源
       href: ./common-data-service/samples-resources.md
+    - name: 概念
+      items:
+        - name: 实体的许可证要求
+          href: ./common-data-service/data-platform-entity-licenses.md
+    - name: 操作方法指南
+      items:
+        - name: 管理实体中的自定义字段
+          href: ./common-data-service/data-platform-manage-fields.md
+    - name: 参考
+      items:
+        - name: 要求 Dynamics 365 许可证的受限实体
+          href: ./common-data-service/data-platform-restricted-entities.md
     - name: 面向开发人员
       href: ../developer/common-data-service/TOC.yml
 - name: 常见数据模型
