@@ -1,30 +1,27 @@
 ---
 title: 饼图控件：参考 | Microsoft 文档
 description: 有关饼图控件的信息（包括属性和示例）
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 5307370df49eeb783a401e2b7c2f0564bb27c3f4
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: bda839765d797bf87590f037221b116bad781657
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pie-chart-control-in-powerapps"></a>PowerApps 中的饼图控件
 该控件用于显示与其他内容相比较的相对值。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 如果要从最左侧列中包含标签的表中显示相对数据，以及显示左起第二列中的值，请添加“饼图”控件。
 
 此控件是包含三个控件的分组控件：标题标签**[](control-text-box.md)**、图表图形和图例。
@@ -37,15 +34,15 @@ ms.lasthandoff: 04/16/2018
 ## <a name="additional-chart-properties"></a>其他图表属性
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
 **[Color](properties-color-border.md)** – 控件中文本的颜色。
 
-[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
-[DisabledBorderColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件边框的颜色。
+**[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件边框的颜色。
 
 **Explode** - 饼图中楔形间的距离。
 
@@ -75,9 +72,9 @@ ms.lasthandoff: 04/16/2018
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="related-functions"></a>相关函数
 [**Max**( *DataSource*, *ColumnName* )](../functions/function-aggregates.md)
@@ -103,8 +100,9 @@ ms.lasthandoff: 04/16/2018
 * Color**[](properties-color-border.md)** 和背景色
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* “图表图形”前必须有一个[标签](control-text-box.md)作为标题。
-> [!NOTE]
+* “图表图形”前必须有一个便签**[](control-text-box.md)** 作为标题。
+
+    > [!NOTE]
 > “图表图形”和“图例”对屏幕阅读器用户隐藏。 作为替代方法，将向用户显示表格形式的数据。 他们还可以在用于在图表中选择数据的按钮之间循环。
 
 ### <a name="low-vision-support"></a>弱视支持
@@ -113,6 +111,7 @@ ms.lasthandoff: 04/16/2018
 * 请考虑将“LabelPosition”设置为“LabelPosition.Outside”。 这样可以提高标签的易读性，因为颜色对比度更一致。
 
 ### <a name="keyboard-support"></a>键盘支持
-* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-> [!NOTE]
+* **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+
+    > [!NOTE]
 > 当键盘用户导航到图表时，可以在用于在图表中选择数据的按钮之间循环。

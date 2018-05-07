@@ -1,25 +1,22 @@
 ---
 title: Color 和 border 属性 | Microsoft 文档
 description: 有关 BorderColor、HoverBorderColor 和 PressedBorderColor 等属性的参考信息
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: e9ddbc3e413b99fd7afb8d483a161d50f9034673
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 5c30d0c96d3d6ad8eee0781a6c209419ba70c860
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="color-and-border-properties-in-powerapps"></a>PowerApps 中的颜色和边框属性
 ## <a name="overview"></a>概述

@@ -1,30 +1,27 @@
 ---
 title: 库控件：参考 | Microsoft 文档
 description: 了解库控件（包括属性和示例）
-services: ''
-suite: powerapps
 documentationcenter: na
-author: RickSaling
-manager: anneta
+author: fikaradz
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 05/25/2017
 ms.author: sharik
-ms.openlocfilehash: 501dfbba3e01efe55c76d7af234e2f9064096728
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: dde430d6174af5be75a4fc8ae13dabd6f3759899
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="gallery-control-in-powerapps"></a>PowerApps 中的库控件
 包含其他控件并显示一组数据的控件。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 “库”控件可以显示数据源中的多条记录，每条记录都能包含多种类型的数据。 例如，“库”控件可以显示多个联系人，其中每一项都用于显示联系人信息，包括每个联系人的姓名、地址和电话号码。 每个数据字段显示在“库”控件的单独控件内，可以在库模板中配置这些控件。 此模板显示为库中的第一项，如果库为水平/横向，此模板显示在“库”控件的左边缘；如果库为垂直/纵向，此模板显示在“库”控件的上边缘。 在模板中执行的任何更改都会反映在整个“库”控件中。
 
 不仅可以预定义库模板来显示图像、文本，还可以使用库来显示高度不同的项。
@@ -43,13 +40,13 @@ AllItems - 库中的所有项，其中包括属于库模板的附加控件值。
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
-**[Fill](properties-color-border.md)** – 控件的背景颜色。
+**[Fill](properties-color-border.md)** – 控件的背景色。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -77,9 +74,9 @@ Transition - 当用户将鼠标悬停在库中一项之上时的视觉效果（�
 
 WrapCount - 每行或每列（具体取决于是水平布局还是垂直布局）显示的项数。
 
-[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="related-functions"></a>相关函数
 [**Filter**( *DataSource*, *Formula* )](../functions/function-filter-lookup.md)
@@ -106,12 +103,14 @@ WrapCount - 每行或每列（具体取决于是水平布局还是垂直布局�
 * Fill**[](properties-color-border.md)** 和库范围之外的颜色（如果没有边框）
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* “AccessibleLabel”**[](properties-accessibility.md)** 必须存在。
-> [!NOTE]
+* **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
+
+    > [!NOTE]
 > 库中的项更改时，屏幕阅读器将发出公告。 还将提到“AccessibleLabel”。 这为公告提供上下文，甚至在同一个屏幕上有多个库的情况下更为重要。
 
 ### <a name="keyboard-support"></a>键盘支持
 * 请考虑将“ShowScrollbar”设置为“true”。 在大多数触摸屏设备上，在开始滚动之前，不会显示滚动条。
 * 如果在库项中单击任何位置都是要选择它，还必须为键盘用户提供选择库项的方法。 例如，添加一个按钮**[](control-button.md)**，并将其“OnSelect”属性设置为“Select(Parent)”。
-> [!NOTE]
+
+    > [!NOTE]
 > 库内的键盘导航顺序不考虑库外控件。 库内控件的 TabIndex**[](properties-accessibility.md)** 具有范围限制。 请参阅[辅助功能属性](properties-accessibility.md)了解详细信息。

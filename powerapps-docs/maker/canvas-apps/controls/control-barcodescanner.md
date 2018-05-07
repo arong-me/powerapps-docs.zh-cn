@@ -1,41 +1,38 @@
 ---
 title: 条码扫描器控件：参考 | Microsoft 文档
 description: 有关条码扫描器控件的信息（包括属性和示例）
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 98357cb2f6d829906dfcdd4ecaa4acc3afdef26d
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 8cd0c84f508c13e8064b0e5bc93b01024cf22120
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="barcode-scanner-control-experimental-in-powerapps"></a>PowerApps 中的条形码扫描程序控件（实验性）
 通过在设备上使用条形码扫描程序，用户可用来拍摄照片的实验性控件。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 如果添加此控件，用户可从应用运行的任何位置使用一张或多张照片更新数据源。
 
 ## <a name="key-properties"></a>关键属性
 **barcode scanner** - 在具有多个条码扫描器的设备上，应用使用的条码扫描器的数字 ID。
 
 ## <a name="additional-properties"></a>其他属性
-[AccessibleLabel](properties-accessibility.md) – 屏幕阅读器标签。
+**[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
@@ -43,7 +40,7 @@ ms.lasthandoff: 04/16/2018
 
 **Contrast** - 用户可区分图像中相似颜色的轻松程度。
 
-[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -61,15 +58,15 @@ ms.lasthandoff: 04/16/2018
 
 Text – 上次由扫描仪识别的条形码值。
 
-**[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
+**[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 **Zoom** - 放大来自条码扫描器的图像百分比或 PDF 查看器中文件的视图百分比。
 
@@ -91,6 +88,7 @@ Text – 上次由扫描仪识别的条形码值。
 * 请考虑添加标签**[](control-text-box.md)**，并将其 Text**[](properties-core.md)** 设置为条形码扫描仪的“Text”。 由于条形码扫描仪未显示标识的条形码值，执行上述操作将使所有人都可访问扫描仪，而不仅仅是那些有视觉障碍的用户。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* “AccessibleLabel”**[](properties-accessibility.md)** 必须存在。
-> [!NOTE]
+* **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
+
+    > [!NOTE]
 > 发现新条形码时，屏幕阅读器将公布此条码形。 不会公布值。 只要条形码在视图中，屏幕阅读器就会每隔 5 秒提醒一次，指示仍在识别相同的条形码。

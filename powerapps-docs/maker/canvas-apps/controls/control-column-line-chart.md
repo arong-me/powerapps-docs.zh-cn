@@ -1,30 +1,27 @@
 ---
 title: 柱形图和折线图控件：参考 | Microsoft 文档
 description: 了解柱形图和折线图控件（包括属性和示例）
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 0804ea7140c4c2e6ab174a214d05be7d06b5e1a6
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: e6a5df9283cc0d6f5ab30f27096ba3e7e9e5bff0
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>PowerApps 中的柱形图和折线图控件
 用包含 x 轴和 y 轴的图显示数据的控件。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 “柱形图”和“折线图”为分组控件。 每组包含三个控件：标题[标签](control-text-box.md)、图表图形和图例。
 
 ## <a name="chart-key-properties"></a>图表关键属性
@@ -35,17 +32,17 @@ NumberOfSeries - 柱形图或折线图中反映了多少列的数据。
 ## <a name="additional-chart-properties"></a>其他图表属性
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
 **[Color](properties-color-border.md)** – 控件中文本的颜色。
 
-[DisabledBorderColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件边框的颜色。
+**[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件边框的颜色。
 
-[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
-**[Font](properties-text.md)** – 文本中所显示的字体系列的名称。
+[Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
 GridStyle - 柱形图或折线图是显示 x 轴和/或 y 轴，还是两者都不显示。
 
@@ -71,13 +68,13 @@ MinimumBarWidth - 柱形图中的柱形宽度下限。
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 
-**[PaddingBottom](properties-size-location.md)** – 控件中的文本与该控件下边缘之间的距离。
+[PaddingBottom](properties-size-location.md) – 控件中的文本与该控件的下边缘之间的距离。
 
-**[PaddingLeft](properties-size-location.md)** - 控件中的文本与该控件的左边缘之间的距离。
+[PaddingLeft](properties-size-location.md) – 控件中的文本与该控件的左边缘之间的距离。
 
-**[PaddingRight](properties-size-location.md)** - 控件中的文本与该控件的右边缘之间的距离。
+[PaddingRight](properties-size-location.md) – 控件中的文本与该控件的右边缘之间的距离。
 
-**[PaddingTop](properties-size-location.md)** - 控件中的文本与该控件的上边缘之间的距离。
+[PaddingTop](properties-size-location.md) – 控件中的文本与该控件的上边缘之间的距离。
 
 **[PressedBorderColor](properties-color-border.md)** – 用户在点击或单击控件时，该控件边框的颜色。
 
@@ -91,7 +88,7 @@ SeriesAxisMin - 柱形图 y 轴的最小值。
 
 **[Size](properties-text.md)** – 控件上显示的文本的字号。
 
-[TabIndex](properties-accessibility.md) – 相对于其他控件的键盘导航顺序。
+**[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
@@ -101,7 +98,7 @@ SeriesAxisMin - 柱形图 y 轴的最小值。
 
 XLabelAngle - 柱形图或折线图的 x 轴下方的标签角度。
 
-**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 YAxisMax - 折线图 y 轴的最大值。
 
@@ -134,13 +131,14 @@ YLabelAngle - 折线图或柱形图 y 轴旁边标签的角度。
 在以下项之间必须有足够的颜色对比度：
 * “ItemColorSet”中的每个项
 * “ItemColorSet”中的所有项和背景色
-* “Color”**[](properties-color-border.md)** 和背景色
+* Color**[](properties-color-border.md)** 和背景色
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
 * “图表图形”前必须有一个便签**[](control-text-box.md)** 作为标题。
 * 请考虑添加图表图形的摘要。 例如，“折线图显示本年度 3 月和 8 月之间销售额的稳定增长”。
-> [!NOTE]
-> 图表图形和图例对屏幕阅读器用户隐藏。 作为替代方法，将向用户显示表格形式的数据。 他们还可以在用于图表中选择数据的按钮之间循环。
+
+    > [!NOTE]
+> 图表图形和图例对屏幕阅读器用户隐藏。 作为替代方法，将向用户显示表格形式的数据。 他们还可以在用于在图表中选择数据的按钮之间循环。
 
 ### <a name="low-vision-support"></a>弱视支持
 * 如果显示多个序列，则必须有图例。
@@ -148,6 +146,7 @@ YLabelAngle - 折线图或柱形图 y 轴旁边标签的角度。
 * 对于柱形图，请考虑将“Markers”设置为“true”。 这有助于弱视用户确定柱形的值。
 
 ### <a name="keyboard-support"></a>键盘支持
-* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-> [!NOTE]
+* **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+
+    > [!NOTE]
 > 当键盘用户导航到图表时，可以在用于在图表中选择数据的按钮之间循环。

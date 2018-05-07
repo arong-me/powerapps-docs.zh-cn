@@ -1,30 +1,27 @@
 ---
 title: 音频和视频控件：参考 | Microsoft 文档
 description: 有关音频和视频控件的信息（包括属性和示例）
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 7dd954a8e9d0ee9fe645dc248841a2a867d01b43
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: fa235c606082f2fd83339ba11fa81fdb2988c23a
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>PowerApps 中的音频和视频控件
 一个控件，用于播放 YouTube 上的音频文件、视频文件或视频。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 “音频”控件播放文件中的声音剪辑、“[麦克风](control-microphone.md)”控件中的录制内容或视频文件中的音轨。
 
 “视频”控件播放文件或 YouTube 或 Azure 媒体服务中的视频剪辑。  如果指定，也可以显示隐藏式字幕。
@@ -37,7 +34,7 @@ ms.lasthandoff: 04/19/2018
 **ShowControls** - 音频或视频播放器是否显示播放按钮和音量滑块等内容，以及笔控件是否显示绘图、擦除和清除等图标。
 
 ## <a name="additional-properties"></a>其他属性
-[AccessibleLabel](properties-accessibility.md) – 屏幕阅读器标签。 应为视频或音频剪辑的标题。
+**[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。 应为视频或音频剪辑的标题。
 
 **AutoPause** - 用户导航到另一屏幕时音频或视频剪辑是否自动暂停。
 
@@ -45,19 +42,19 @@ ms.lasthandoff: 04/19/2018
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
 ClosedCaptionsUrl – 仅视频控件适用。  WebVTT 格式的隐藏式字幕文件的 URL。  视频和标题的 URL都必须是 HTTPS。 托管视频和字幕文件的服务器需要启用 CORS。
 
-[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
-**[Fill](properties-color-border.md)** – 控件的背景颜色。
+**[Fill](properties-color-border.md)** – 控件的背景色。
 
-[FocusedBorderColor](properties-color-border.md) – 当聚焦到控件时，控件的边框颜色。
+**[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
 
-[FocusedBorderThickness](properties-color-border.md) – 当聚焦到控件时，控件的边框粗细。
+**[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -73,7 +70,7 @@ ClosedCaptionsUrl – 仅视频控件适用。  WebVTT 格式的隐藏式字幕�
 
 **Paused** - 如果媒体播放控件当前已暂停，则为 *True*；否则为 *false*。
 
-**[Reset](properties-core.md)** - 是否还原控件的默认值。
+[Reset](properties-core.md) – 是否还原控件的默认值。
 
 **Start** – 音频或视频剪辑是否播放。
 
@@ -81,17 +78,17 @@ ClosedCaptionsUrl – 仅视频控件适用。  WebVTT 格式的隐藏式字幕�
 
 **Time** - 媒体控件的当前位置。
 
-[TabIndex](properties-accessibility.md) – 相对于其他控件的键盘导航顺序。
+**[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
 
-**[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
+**[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="related-functions"></a>相关函数
 [**First**( *TableName* )](../functions/function-first-last.md)
@@ -141,9 +138,9 @@ ClosedCaptionsUrl – 仅视频控件适用。  WebVTT 格式的隐藏式字幕�
 如果视频内容颜色对比度有问题，则提供隐藏式字幕和/或脚本。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* “AccessibleLabel”**[](properties-accessibility.md)** 必须存在。
+* **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
 
 ### <a name="keyboard-support"></a>键盘支持
 * “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清楚显示。 可以使用“FocusedBorderColor”**[](properties-color-border.md)** 和“FocusedBorderThickness”**[](properties-color-border.md)** 来实现此目的。
+* 焦点指示器必须清晰可见。 可以使用“FocusedBorderColor”**[](properties-color-border.md)** 和“FocusedBorderThickness”**[](properties-color-border.md)** 来实现此目的。
 * “AutoStart”应为“false”，因为它可能会使键盘用户难以快速停止播放。

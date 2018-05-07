@@ -1,30 +1,27 @@
 ---
 title: 笔输入控件：参考 | Microsoft 文档
 description: 有关笔输入控件的信息（包括属性和示例）
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 6084572dd9a60fc4194e1eff912e22cb656f0207
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 84981a00a516f553d3f1b318f12a6f68064c66b2
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pen-input-control-in-powerapps"></a>PowerApps 中的笔输入控件
 用户可用其进行绘图、擦除和突出显示图像区域的控件。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 用户可以像使用白板一样来使用该控件，绘制关系图和写字都能被转换为键入的文本。
 
 ## <a name="key-properties"></a>关键属性
@@ -37,13 +34,13 @@ ms.lasthandoff: 04/16/2018
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
-**[Fill](properties-color-border.md)** – 控件的背景颜色。
+**[Fill](properties-color-border.md)** – 控件的背景色。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -55,7 +52,7 @@ ms.lasthandoff: 04/16/2018
 
 **SelectionThickness** - 笔输入控件的选择工具的粗细。
 
-**ShowControls** – 音频或视频播放器是否显示播放按钮和音量滑块等组件，笔控件是否显示绘图、擦除和清除图标等。
+ShowControls – 音频或视频播放器是否显示播放按钮和音量滑块等组件，笔控件是否显示绘图、擦除和清除图标等。
 
 **[Size](properties-text.md)** – 控件上显示的文本的字号。
 
@@ -65,9 +62,9 @@ ms.lasthandoff: 04/16/2018
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="related-functions"></a>相关函数
 [**Collect**( *CollectionName*, *DatatoCollect* )](../functions/function-clear-collect-clearcollect.md)
@@ -101,9 +98,11 @@ ms.lasthandoff: 04/16/2018
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
 * “AccessibleLabel”**[](properties-accessibility.md)** 应存在。
-> [!IMPORTANT]
+
+    > [!IMPORTANT]
 > 屏幕阅读器用户无法访问“笔输入”。 始终提供输入的替代形式。 例如，如果需要草图，请考虑添加“添加图片”**[](control-add-picture.md)** 控件，以便用户上传图像。 可以提供这两种方法，用户可以选择他们更熟悉的一种方法。
 
 ### <a name="keyboard-support"></a>键盘支持
+
 > [!IMPORTANT]
 > 键盘用户无法访问“笔输入”。 始终提供输入的替代形式。 例如，如果需要签名，请考虑添加“文本输入”**[](control-text-input.md)**，以便用户输入其名称。 可以提供这两种方法，用户可以选择他们更熟悉的一种方法。

@@ -12,11 +12,11 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 745ec8c5efecb745c5c6ce07617547cf81c091de
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 78cf8d73758e931d009080f03962c3450088a553
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="camera-control-in-powerapps"></a>PowerApps 中的照相机控件
 一个控件，用户通过此控件可使用设备上的照相机拍照。
@@ -70,8 +70,6 @@ ms.lasthandoff: 04/26/2018
 
 **[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
-Zoom – 相机中图像被放大的百分比或 PDF 查看器中文件的视图百分比。
-
 ## <a name="related-functions"></a>相关函数
 [**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
@@ -79,16 +77,16 @@ Zoom – 相机中图像被放大的百分比或 PDF 查看器中文件的视图
 ### <a name="add-photos-to-an-image-gallery-control"></a>向图像库控件添加照片
 1. 添加“照相机”控件，将其命名为 **MyCamera**，并将其 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
    **Collect(MyPix, MyCamera.Photo)**
-   
+
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
-   
+
     想要了解有关 **[Collect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
 2. 按 F5，然后单击或点击 **MyCamera** 进行拍照。
-3. 添加**[图像库](control-gallery.md)** 控件，然后重新调整其**[图像](control-image.md)** 控件、其模板以及“图像库”控件本身的大小，以适应屏幕大小。
-4. 将“图像库”控件的 **[Items](properties-core.md)** 属性设置为以下表达式：<br>**MyPix.Url**。
+3. 添加[垂直库](control-gallery.md)控件，然后重新调整其[图像](control-image.md)控件、其模板以及“图像库”控件本身的大小，以适应屏幕大小。
+4. 将“图像库”控件的 [Items](properties-core.md) 属性设置为以下内容：<br>MyPix。
 5. 将库中的“图像”控件的 **[Image](properties-visual.md)** 属性设置为以下表达式：<br>
    **ThisItem.Url**
-   
+
     拍摄的照片将在“图像库”控件中显示。
 6. 拍摄所需数量的照片，然后按 Esc 返回默认工作区。
 7. （可选）将“图像库”控件中“图像”控件的 **OnSelect** 属性设置为 **Remove(MyPix, ThisItem)**，按 F5，然后单击或点击照片将其删除。
@@ -112,4 +110,3 @@ Zoom – 相机中图像被放大的百分比或 PDF 查看器中文件的视图
 ### <a name="keyboard-support"></a>键盘支持
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
 * 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
- 

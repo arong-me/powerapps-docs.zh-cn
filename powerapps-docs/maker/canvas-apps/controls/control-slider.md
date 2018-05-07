@@ -1,30 +1,27 @@
 ---
 title: 滑块控件：参考 | Microsoft 文档
 description: 有关滑块控件的信息，包括属性和示例
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 81465979cce5adf0596cf8c95f8887e0170007a9
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 672a3d9a96545bf695128fcc823ec1d3437ae4a4
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="slider-control-in-powerapps"></a>PowerApps 中的滑块控件
 一个控件，用户可通过拖动图柄使用该控件指定值。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 用户可通过左右或上下拖动滑块图柄来指示介于指定的最小值和最大值之间的值，具体取决于所选方向。
 
 ## <a name="key-properties"></a>关键属性
@@ -37,21 +34,21 @@ ms.lasthandoff: 04/16/2018
 **[Value](properties-core.md)** – 输入控件的值。
 
 ## <a name="additional-properties"></a>其他属性
-[AccessibleLabel](properties-accessibility.md) – 屏幕阅读器标签。
+**[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
-[DisabledBorderColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件边框的颜色。
+**[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件边框的颜色。
 
-[FocusedBorderColor](properties-color-border.md) – 当聚焦到控件时，控件的边框颜色。
+**[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
 
-[FocusedBorderThickness](properties-color-border.md) – 当聚焦到控件时，控件的边框粗细。
+**[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
 
 **HandleActiveFill** - 用户更改滑块值时，该滑块图柄的颜色。
 
@@ -67,7 +64,7 @@ HandleSize – 句柄直径。
 
 **Layout** - 用户是滚动浏览库还是从上至下（**垂直**）或从左至右（**水平**）调整滑块。
 
-**[OnChange](properties-core.md)** - 用户更改控件的值（例如，通过调整滑块）时应用的响应方式。
+[OnChange](properties-core.md) – 用户更改控件的值（例如，通过调整滑块）时应用的响应方式。
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 
@@ -79,13 +76,13 @@ HandleSize – 句柄直径。
 
 **ReadOnly** - 用户是否可以更改滑块或评分控件的值。
 
-**[Reset](properties-core.md)** - 是否还原控件的默认值。
+[Reset](properties-core.md) – 是否还原控件的默认值。
 
 **ShowValue** – 当用户更改滑块或评分的值或将鼠标悬停在控件上时，是否显示该值。
 
-[TabIndex](properties-accessibility.md) – 相对于其他控件的键盘导航顺序。
+**[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
 
-**[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
+**[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
 
 **ValueFill** - 切换控件的值为 **true** 时该控件中矩形的背景色，或滑块控件中图柄左侧线条的颜色。
 
@@ -95,9 +92,9 @@ HandleSize – 句柄直径。
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="related-functions"></a>相关函数
 [**Sum**( *Value1*, *Value2* )](../functions/function-aggregates.md)
@@ -134,7 +131,7 @@ HandleSize – 句柄直径。
 * **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
 
 ### <a name="keyboard-support"></a>键盘支持
-* **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
 * 焦点指示器必须清晰可见。 可以使用[“FocusedBorderColor”](properties-color-border.md)和[“FocusedBorderThickness”](properties-color-border.md)”来实现此目的。
 * 与键盘交互时，必须显示滑块值。 这可以通过以下任一方法实现：
     * 将“ShowValue”设置为“true”。

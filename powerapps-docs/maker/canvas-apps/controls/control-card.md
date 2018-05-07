@@ -1,31 +1,28 @@
 ---
 title: 卡片控件：参考 | Microsoft 文档
 description: 有关卡片控件的信息，包括属性和示例
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 1874d03f5bf01adca9969bd74e7dbed1007d86e2
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 7d44ba120a68d08f5779b8383df5b2263f228438
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="card-control-in-powerapps"></a>PowerApps 中的卡片控件
 提供**[显示窗体](control-form-detail.md)** 或**[编辑窗体](control-form-detail.md)** 控件的单个字段的显示和编辑体验。
 
-## <a name="description"></a>说明
-[显示窗体](control-form-detail.md)和[编辑窗体](control-form-detail.md)控件充当用于显示和查看完整记录的容器。 每个容器可以容纳一组**卡片**控件，这些控件显示各个字段或提供更新这些字段的方法。 每种卡片均有一个 **DataField** 属性，此属性指定它所适用的记录字段。  
+## <a name="description"></a>描述
+**[显示窗体](control-form-detail.md)** 和**[编辑窗体](control-form-detail.md)** 控件充当用于显示和查看完整记录的容器。 每个容器可以容纳一组**卡片**控件，这些控件显示各个字段或提供更新这些字段的方法。 每种卡片均有一个 **DataField** 属性，此属性指定它所适用的记录字段。  
 
 预定义卡片针对不同的数据类型和用户体验定义。  例如，可能存在使用**[文本输入](control-text-input.md)** 控件编辑数字字段的卡片，非常适合与键盘结合使用。 而另一种卡片可能支持使用**[滑块](control-slider.md)** 控件编辑数字。 选择窗体控件后，可以在右侧窗格中基于字段轻松选择卡片。
 
@@ -37,12 +34,12 @@ ms.lasthandoff: 04/16/2018
 
 在窗体的容器内，**ThisItem** 记录可用且包含该记录的所有字段。  例如，卡片的 **[Default](properties-core.md)** 属性通常设置为 **ThisItem**。FieldName。
 
-可以使用父引用配置控件以引用卡片的属性。  例如，控件应使用 **Parent.Default** 从数据源读取字段的初始状态。 通过使用**父**引用（而不是直接访问所需信息），可更好地封装卡片，且可以将其更改为不同的字段而不会破坏内部公式。
+可以使用**父**引用配置控件以引用卡片的属性。  例如，控件应使用 **Parent.Default** 从数据源读取字段的初始状态。 通过使用**父**引用（而不是直接访问所需信息），可更好地封装卡片，且可以将其更改为不同的字段而不会破坏内部公式。
 
 有关如何自定义、解锁和创建卡片的示例，请参阅[了解数据卡](../working-with-cards.md)。
 
 ## <a name="key-properties"></a>关键属性
-DataField – 此卡片显示和编辑的记录中的字段名称。
+**DataField** - 此卡片显示和编辑的记录中的字段名称。
 
 * 指定该名称为括在双引号中的单个静态字符串（例如，“Name”），而非公式。
 * 通过将卡片的 **DataField** 属性设置为空白，取消绑定卡片。 未绑定卡片将忽略 **Valid** 和 **Update** 属性。
@@ -54,7 +51,7 @@ DataField – 此卡片显示和编辑的记录中的字段名称。
 **DisplayMode** – 值可以是 Edit、View 或 Disabled。 配置卡内控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。  
 
 * 通过配置此属性，可在编辑和查看表单中使用单个卡，该属性默认与表单行为相关联。
-* 在“视图”模式下，子控件（如[文本输入](control-text-input.md)、[下拉列表](control-drop-down.md)、[日期选取器](control-date-picker.md)）将仅显示文本值，不会呈现任何交互元素或修饰。
+* 在 View 模式时，子控件（如[文本输入](control-text-input.md)、[下拉列表](control-drop-down.md)、[日期选取器](control-date-picker.md)）将仅显示文本值，不会呈现任何交互元素或修饰。
 
 **DisplayName** - 数据源中字段的用户友好名称。
 
@@ -71,7 +68,7 @@ DataField – 此卡片显示和编辑的记录中的字段名称。
 * **[DataSourceInfo](../functions/function-datasourceinfo.md)** 函数可提供数据源中的必需元数据。
 * 卡片内的控件应使用 **Parent.Required** 来确定该卡片的字段是否必需。
 
-Update – 回写到字段的数据源的值。
+**Update** - 回写到字段的数据源的值。
 
 * 使用此属性的公式从卡片的编辑控件中请求值，以回写到数据源。 例如，将卡片的 **Update** 属性设为 **Slider.Value**，使用该卡片中的滑块的值更新数据源。
 
@@ -82,11 +79,11 @@ Update – 回写到字段的数据源的值。
 ## <a name="additional-properties"></a>其他属性
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
-[BorderThickness](properties-color-border.md) – 控件边框的粗细。
+**[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-**[Fill](properties-color-border.md)** – 控件的背景颜色。
+**[Fill](properties-color-border.md)** – 控件的背景色。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -96,7 +93,7 @@ Update – 回写到字段的数据源的值。
 
 **[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。 对于多列容器中的“[数据卡](control-card.md)”控件，此属性将确定数据卡出现在哪一列。
 
-**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。 对于多行容器中的[数据卡](control-card.md)控件，此属性将确定数据卡出现在哪一行。
+**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。 对于多行容器中的“[数据卡](control-card.md)”控件，此属性将确定数据卡出现在哪一行。
 
 ## <a name="examples"></a>示例
 有关示例，请参阅[了解数据卡](../working-with-cards.md)和[了解数据表单布局](../working-with-form-layout.md)。
