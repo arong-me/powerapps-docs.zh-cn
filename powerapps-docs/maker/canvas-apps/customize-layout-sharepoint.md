@@ -7,11 +7,11 @@ ms.topic: tutorial
 ms.component: canvas
 ms.date: 04/24/2018
 ms.author: anneta
-ms.openlocfilehash: 6206d520e8bb07c0919f482700c1af861e41109d
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 3138969cc51d0d0964692d4c53101b6a145ba1cf
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>教程：在 PowerApps 中自定义库
 本教程将介绍自定义库，及对已在 Microsoft PowerApps 中自动生成的应用进行其他更改。 即使不进行这些更改，用户也可以管理应用中的数据，但是，如果对其进行自定义来满足组织需要，则可以更加轻松使用该应用：
@@ -28,7 +28,7 @@ ms.lasthandoff: 04/26/2018
 如果没有适用于 PowerApps 的许可证，可以[免费注册](../signup-for-powerapps.md)。
 
 ## <a name="prerequisites"></a>先决条件
-可以查看本主题仅了解一般概念，如果首次[生成此应用](data-platform-create-app.md)，则按照每个步骤操作。
+从 Common Data Service (CDS) for Apps 的帐户实体[生成应用](data-platform-create-app.md)。
 
 ## <a name="open-the-generated-app"></a>打开生成的应用
 1. 登录 [PowerApps](https://web.powerapps.com)，然后选择左边缘附近的“应用”。

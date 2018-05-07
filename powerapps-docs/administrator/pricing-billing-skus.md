@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/24/2018
 ms.author: jamesol
-ms.openlocfilehash: e74f75df09c22bd37e5459ec720324faf061e2e9
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 5fb57b7e790d22a4b055b073c7d60e1d65a69b81
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="licensing-overview"></a>许可概述
 PowerApps 按用户提供许可证。 为了创建和运行应用而访问该服务的每个用户都需要有许可证。 Office 365 和 Dynamics 365 客户可立即享用这些产品随附的 PowerApps 和 Microsoft Flow 功能。 想要构建应用和流来访问 Office 365 和 Dynamics 365 外部的数据源或者需要其他功能的客户可以购买 PowerApps 和 Microsoft Flow 的独立订阅。 这几组许可证之间存在重要的功能差别。
@@ -35,7 +35,7 @@ Office 365 和 Dynamics 365 的 PowerApps 功能可让用户在这些服务的�
 |  | 包含的计划 |
 | --- | --- |
 | 哪些 Microsoft Office 365 计划包括 PowerApps？ |这些 Office 365 计划包括 PowerApps： <br><br>Office 365 商业协作版 <br>Office 365 商业高级版 <br>Office 365 教育版 <br>Office 365 教育增强版 <br>Office 365 企业版 E1 <br>Office 365 企业版 E3 <br>Office 365 企业版 E5<br><br>Office 365 企业版 E2 功能与 Office 365 企业版 E1 相同，Office 365 企业版 E4 功能与 Office 365 企业版 E3 相同。<br><br>Office 365 企业版 F1 包括适用于 Office 365 企业版 F1 的 PowerApps。 |
-| 哪些 Microsoft Dynamics 365 应用和计划包括 PowerApps？ |这些应用包括 PowerApps for Dynamics 365：<br><br>适用于销售的 Dynamics 365，企业版 <br>适用于客户服务的 Dynamics 365，企业版 <br>适用于运营的 Dynamics 365，企业版 <br>适用于现场服务的 Dynamics 365，企业版 <br>适用于项目服务自动化的 Dynamics 365，企业版 <br>适用于团队成员的 Dynamics 365，企业版 <br>适用于财务管理的 Dynamics 365，商业版 <br>适用于团队成员的 Dynamics 365，商业版 <br>适用于杰出人才的 Dynamics 365，企业版 <br>适用于零售的 Dynamics 365，企业版 <br><br>这些计划包括 PowerApps 计划 2：<br><br>Dynamics 365，企业版，计划 1<br>Dynamics 365，企业版，计划 2 <br><br>PowerApps for Dynamics 365 也包含在现有 CRM Online Enterprise、Professional、Basic 和 Essential 订阅中。 |
+| 哪些 Microsoft Dynamics 365 应用和计划包括 PowerApps？ |这些应用包括 PowerApps for Dynamics 365：<br><br>适用于团队成员的 Dynamics 365 企业版 <br>适用于财务管理的 Dynamics 365 商业版 <br>适用于团队成员的 Dynamics 365 商业版<br>Dynamics 365 for Talent <br><br>这些计划包括 PowerApps 计划 2：<br><br>Dynamics 365 客户参与计划企业版<br>Dynamics 365 计划企业版 <br>适用于销售的 Dynamics 365 企业版 <br>适用于客户服务的 Dynamics 365 企业版<br>适用于用例管理的 Dynamics 365 企业版 <br>适用于运营的 Dynamics 365 企业版 <br>适用于现场服务的 Dynamics 365 企业版 <br>适用于项目服务自动化的 Dynamics 365 企业版<br>Microsoft 关系销售解决方案 <br><br>PowerApps for Dynamics 365 也包含在 Dynamics CRM Online Enterprise、Professional、Basic 和 Essential 订阅中。 |
 
 ### <a name="powerapps-for-office-365-enterprise-f1"></a>适用于 Office 365 企业版 F1 的 PowerApps
 Office 365 企业版 F1 随附 PowerApps，用户可用来运行应用和自动执行工作流。 不过，用户无法使用此计划创建应用（因为可以使用 Office 365 E1、E3 和 E5 等计划创建应用）。 下表详细介绍了用户可以使用适用于 Office 365 企业版 F1 的 PowerApps 执行哪些操作：
