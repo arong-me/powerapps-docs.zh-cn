@@ -11,17 +11,17 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: sharik
-ms.openlocfilehash: 7ee752f5606f10f66ad7c8dc49e05233225c0a89
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 4d622eb6cdfaed91547a59be8f5a5dc6651957e5
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>在 PowerApps 中使用多媒体文件
 本主题介绍如何在应用中嵌入多媒体文件、将笔绘作品上载到数据源，然后在应用中显示该数据源中的图像。 本主题使用的数据源是 OneDrive for Business 中的一个 Excel 文件。
 
 ## <a name="prerequisites"></a>先决条件
-[注册](../signup-for-powerapps.md)并[安装](http://aka.ms/powerappsinstall) PowerApps。 打开 PowerApps 时，使用注册所用的凭据登录。
+[注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com)。
 
 ## <a name="add-media-from-a-file-or-the-cloud"></a>从文件或云添加媒体
 可以选择要添加的媒体文件类型（例如图像、视频或音频）。

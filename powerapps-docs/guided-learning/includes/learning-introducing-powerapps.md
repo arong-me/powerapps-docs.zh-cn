@@ -12,7 +12,7 @@
 PowerApps 连接你已在使用的**云服务和数据源**，以便你可以利用已掌握的技能**快速生成应用**来满足特定需求。 可以跨 Web 、平板电脑和移动设备与同事快速共享应用。 PowerApps 还与 **Microsoft Flow** 集成，以便你可以在应用内触发工作流。 PowerApps **既简单易用，又能快速响应**，可以在短短几分钟内生成应用，从而拉取 Excel 或云服务中的数据。 此外，PowerApps 还是可靠的**企业级**服务，能够满足跟踪整个企业内的资产和集成到后端系统等复杂需求。
 
 ## <a name="the-parts-of-powerapps"></a>PowerApps 组成部分
-PowerApps 包含用于创建、共享和管理应用的组件，以及用于运行这些应用的组件。 可以使用应用所需的**数据连接**在 **PowerApps Studio for web** 或 **PowerApps Studio for Windows** 中创建应用。 可以使用 web.powerapps.com 配置和管理数据连接和本地网关，并与 Common Data Service for Apps 结合使用。 创建应用后，通常会将其共享到 **Microsoft AppSource**，并在**管理中心**内管理应用。
+PowerApps 包含用于创建、共享和管理应用的组件，以及用于运行这些应用的组件。 可以使用应用所需的“数据连接”在“PowerApps Studio”中创建应用。 可以使用 web.powerapps.com 配置和管理数据连接和本地网关，并与 Common Data Service for Apps 结合使用。 创建应用后，通常会将其共享到 **Microsoft AppSource**，并在**管理中心**内管理应用。
 
 可以在浏览器中使用 **Microsoft Dynamics 365** 运行应用，也可以使用适用于 Windows、iOS 和 Android 设备的 **PowerApps Mobile** 运行应用。
 

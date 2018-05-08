@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 9f0b01c8bdb2043c1f1c219a4163f790c14b4e46
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 4ae16517332864066f5b744e85ce3fe48c97a1df
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="generate-an-app-to-handle-project-requests"></a>生成用于处理项目申请的应用
 > [!NOTE]
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/26/2018
    
     ![创建应用](./media/sharepoint-scenario-generate-app/02-01-01-create-app.png)
 
-2. 命名应用（如“项目申请应用”），再单击或点击“创建”。 应用创建完成后，将在适用于 Web 的 PowerApps Studio 中打开。
+2. 命名应用（如“项目申请应用”），再单击或点击“创建”。 应用创建完成后，将在 PowerApps Studio 中打开。
    
     ![指定应用名称](./media/sharepoint-scenario-generate-app/02-01-02-create-app-name.png)
 

@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/20/2017
 ms.author: anneta
-ms.openlocfilehash: 77e47b79ece6149f7d9068fc4092e09fbdca77d2
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 2c754fa8e479494ae1002e5339d2d8d5eeb2480f
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>了解 Microsoft PowerApps 的本地数据网关
 ## <a name="installation-and-configuration"></a>安装和配置
@@ -116,7 +116,7 @@ ms.lasthandoff: 04/26/2018
 
 下面是网关使用的完全限定域名列表。
 
-| 域名 | 出站端口 | 说明 |
+| 域名 | 出站端口 | 描述 |
 | --- | --- | --- |
 | *.analysis.windows.net |443 |HTTPS |
 | *.login.windows.net |443 |HTTPS |
@@ -138,6 +138,10 @@ ms.lasthandoff: 04/26/2018
 此帐户不是用于连接到本地数据源的帐户，也不是用于登录到云服务的工作或学校帐户。
 
 如果代理服务器由于身份验证而发生问题，可以根据[代理配置](https://docs.microsoft.com/power-bi/service-gateway-proxy#changing-the-gateway-service-account-to-a-domain-user)中所述，将 Windows 服务帐户更改为域用户帐户或托管服务帐户。
+
+## <a name="tenant-level-administration"></a>租户级别管理 
+
+目前没有一个单一的位置，可让租户管理员管理其他用户安装并配置的所有网关。  如果你是租户管理员，建议你让你组织中的用户都将你作为管理员添加到他们安装的每个网关。 这样你就可通过网关设置页或 [PowerShell 命令](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters)来管理组织中的所有网关。
 
 ## <a name="frequently-asked-questions"></a>常见问题
 #### <a name="general"></a>常规

@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/28/2016
 ms.author: litran
-ms.openlocfilehash: 288e28d50d335e75baa99f50b26975ad529cc88f
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: f29f75522eb01c61c3528e61018fb759980e79f9
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="introduction-to-powerappscom"></a>powerapps.com 简介
 PowerApps 团队将会重新引入 [powerapps.com](http://web.powerapps.com) 作为应用创建者的新门户。 我们已将页面重新设计为主站点，让创建者轻松着手创建应用，使用 Microsoft Common Data Service，以及在一个位置管理他们的应用。 本文逐步讲解以下内容：
@@ -34,7 +34,7 @@ PowerApps 团队将会重新引入 [powerapps.com](http://web.powerapps.com) 作
 
 ![标题 - 环境](./media/intro-maker-portal/environment.png)
 
-在环境下拉菜单的旁边，可以看到一个下载图标。 单击或点击此图标会显示一个对话框，其中包含用于下载 PowerApps Mobile（适用于 iOS 或 Android）或 PowerApps Studio for Windows 的链接。
+在环境下拉菜单的旁边，可以看到一个下载图标。 单击或点击此图标会显示一个对话框，其中包含用于下载 PowerApps Mobile（适用于 iOS 或 Android 设备）的链接。
 
 ![标题 - 下载](./media/intro-maker-portal/downloads2.png)
 
@@ -59,7 +59,7 @@ PowerApps 团队将会重新引入 [powerapps.com](http://web.powerapps.com) 作
 
 ![创建应用](./media/intro-maker-portal/createapp.png)
 
-单击或点击此横幅中的“开始”会显示用于通过 **PowerApps Studio for Windows** 或 **PowerApps Studio for Web** 创建应用的选项。
+单击或点击此横幅中的“开始”会显示用于通过“PowerApps Studio”创建应用的选项。
 
 ![创建应用模式](./media/intro-maker-portal/createmodal2.png)
 
@@ -90,7 +90,7 @@ PowerApps 团队将会重新引入 [powerapps.com](http://web.powerapps.com) 作
 
 在“使用 Microsoft Common Data Service”横幅的下面，可以看到一组示例应用，以及我们创建供你使用的连接的示例应用。
 
-* **示例应用** - 示例应用是针对采用手机或平板电脑布局的不同业务方案构建的。 单击某个应用可以快速查看该应用的用途说明、该应用适用的布局，以及该应用展示的功能，例如相机、GPS 或收音机。 新用户可以通过示例应用快速了解 PowerApps 的功能。可以使用模板在 PowerApps Studio for Windows 中创建相同的应用。
+* **示例应用** - 示例应用是针对采用手机或平板电脑布局的不同业务方案构建的。 单击某个应用可以快速查看该应用的用途说明、该应用适用的布局，以及该应用展示的功能，例如相机、GPS 或收音机。 新用户可以通过示例应用快速了解 PowerApps 的功能。可以使用模板在 PowerApps Studio 中创建相同的应用。
   
     ![应用示例](./media/intro-maker-portal/sampleapps2.png)
 * **连接的示例应用** - 这些应用将通过数据连接（如 Office 365、Salesforce、Trello 和 Wunderlist）连接到你的数据。 这一组应用不同于上面所述的示例应用。 单击或点击某个连接的示例应用时，实际上会预配该应用的新实例（可将它视为模板）。 系统将提示你输入凭据来连接数据。 连接的示例应用带来的便利是现成地预配了一个实例，可以在 PowerApps Studio 中打开该实例，了解相应应用的构建方式。 缺点是可能需要花费相当长的时间（最多一分钟）来创建该实例。 因此，单击或点击连接的示例应用后，请耐心等待浏览器打开。
@@ -110,7 +110,7 @@ PowerApps 团队将会重新引入 [powerapps.com](http://web.powerapps.com) 作
 
 ## <a name="whats-new"></a>新功能
 
-* 单击或点击某个应用会立即在 PowerApps Studio for Web 的新标签页中打开该应用。
+* 单击或点击某个应用会立即在 PowerApps Studio 的新标签页中打开该应用。
 * 默认情况下，“应用”页显示你有权编辑的所有应用。 若要查看“所有应用”（包括你只能使用的应用），请选择“所有应用”筛选器。
   
    ![应用筛选器](./media/intro-maker-portal/allapps_filter.png)

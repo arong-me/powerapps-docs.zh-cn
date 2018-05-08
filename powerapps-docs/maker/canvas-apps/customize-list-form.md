@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 02/05/2018
 ms.author: anneta
-ms.openlocfilehash: c5dafffba91f4e4ce8e4e27d4780e91bf5ddc415
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 34c4e4126015f9a5f53ef6f07c9c66e4a4141db0
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>使用 PowerApps 自定义 SharePoint 列表窗体
 
@@ -33,11 +33,11 @@ PowerApps 与 SharePoint 直接集成 - 无需将另一个应用下载到计算�
 > [!NOTE]
 > 如果 SharePoint 列表包含 PowerApps 不支持的数据类型，则“自定义窗体”选项将不可用，或者可能无法正常工作。
 
-在 SharePoint 列表中，单击或点击命令栏中的“PowerApps”，然后单击或点击“自定义窗体”。 此操作将使你进入浏览器中适用于 Web 的 PowerApps Studio，其中 PowerApps 会生成单屏幕窗体应用，如下例所示。
+在 SharePoint 列表中，单击或点击命令栏中的“PowerApps”，然后单击或点击“自定义窗体”。 此操作将使你进入浏览器中 PowerApps Studio，其中 PowerApps 会生成单屏幕窗体应用，如下例所示。
 
 ![单屏幕窗体应用](./media/customize-list-form/list-form-app.png)
 
-若要随时返回到 SharePoint 列表，请单击或点击适用于 Web 的 PowerApps Studio 左上角的“返回 SharePoint”。
+若要随时返回到 SharePoint 列表，请单击或点击 PowerApps Studio 左上角的“返回 SharePoint”。
 
 ## <a name="customize-the-list-form"></a>自定义列表窗体
 
@@ -88,7 +88,7 @@ PowerApps 提供了多种自定义窗体的方法。 下面是一些示例：
 
     * 使用默认的 SharePoint 窗体 - SharePoint 将对列表使用默认的 SharePoint 窗体。
 
-    * 使用在 PowerApps 中创建的自定义窗体 - SharePoint 将使用你在 PowerApps 中自定义的窗体。 （或者，你也可以在适用于 Web 的 PowerApps Studio 中的“保存”页上重新发布窗体。）
+    * 使用在 PowerApps 中创建的自定义窗体 - SharePoint 将使用你在 PowerApps 中自定义的窗体。 （或者，你也可以在 PowerApps Studio 中的“保存”页上重新发布窗体。）
 
     可以根据需要在选项之间反复切换。
 
@@ -108,7 +108,7 @@ PowerApps 提供了多种自定义窗体的方法。 下面是一些示例：
 
 问：自定义的列表窗体与我从 SharePoint 或 PowerApps 创建的独立应用有何区别？
 
-答：从 Sharepoint 创建的列表窗体应用是特殊类型的 PowerApps 应用，只能在 SharePoint 列表中使用。 这些列表窗体应用不会出现在适用于 Web 的 PowerApps Studio 或 PowerApps Mobile 的应用列表中，也无法在 SharePoint 列表之外运行它们。
+答：从 Sharepoint 创建的列表窗体应用是特殊类型的 PowerApps 应用，只能在 SharePoint 列表中使用。 这些列表窗体应用不会出现在 PowerApps Studio 或 PowerApps Mobile 的应用列表中，也无法在 SharePoint 列表之外运行它们。
 
 问：应何时创建自定义的列表窗体，以及何时创建独立应用？
 
@@ -142,12 +142,12 @@ PowerApps 提供了多种自定义窗体的方法。 下面是一些示例：
 
 1. 在 SharePoint 列表中，单击或点击命令栏中的“PowerApps”，然后单击或点击“自定义窗体”。
 
-1. 在适用于 Web 的 PowerApps Studio 中，单击或点击“文件”，然后在“保存”页上，单击或点击“查看所有版本”。 “版本”页将在新的浏览器选项卡中打开。
+1. 在 PowerApps Studio 中，单击或点击“文件”，然后在“保存”页上，单击或点击“查看所有版本”。 “版本”页将在新的浏览器选项卡中打开。
 
     > [!NOTE]
     > 如果看不到“查看所有版本”按钮，单击或点击“保存”， 应会显示此按钮。
 
-1. 无需关闭“版本”页或浏览器选项卡，返回到其他浏览器选项卡中的“保存”页，单击或点击左侧导航窗格顶部的箭头，然后单击或点击“返回 SharePoint”来解锁窗体，并退出适用于 Web 的 PowerApps Studio。
+1. 无需关闭“版本”页或浏览器选项卡，返回到其他浏览器选项卡中的“保存”页，单击或点击左侧导航窗格顶部的箭头，然后单击或点击“返回 SharePoint”来解锁窗体，并退出 PowerApps Studio。
 
 1. 返回到其他浏览器选项卡中的“版本”页，找到你想要还原的版本，然后单击“还原”。
 

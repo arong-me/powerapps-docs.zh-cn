@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/02/2015
 ms.author: lonu
-ms.openlocfilehash: 285d9c051c453f6710a1dbc94dbb47af15b6c71d
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 959431b69d4f432335997697d8f25b5b8815d63c
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>在 PowerApps 库中显示数据，并对数据进行排序和筛选
 创建一个库来显示有关多种产品的图像和文本，并对该信息进行排序和筛选。
@@ -28,7 +28,7 @@ ms.lasthandoff: 04/26/2018
 > 
 
 ### <a name="prerequisites"></a>先决条件
-* [注册](../signup-for-powerapps.md) PowerApps，并[安装](http://aka.ms/powerappsinstall) PowerApps。 打开 PowerApps 时，使用注册所用的凭据登录。
+* [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com)。
 * 通过[模板](get-started-test-drive.md)、[数据](get-started-create-from-data.md)或[从头开始](get-started-create-from-blank.md)创建平板电脑应用。
 * 了解如何[配置控件](add-configure-controls.md)。
 * 这些步骤使用 [CreateFirstApp](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) 作为示例输入数据，其中包括 .jpg 图像。 该 zip 文件包含可以转换为 Excel 的 XML 文件。 在其他情况下，PowerApps 会自动读取 .zip 文件中的文件，并成功导入这些文件。 可以下载和使用此示例数据，或导入自己的数据。

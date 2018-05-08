@@ -12,11 +12,11 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/12/2016
 ms.author: lanced
-ms.openlocfilehash: 3eb91d8903caff9af812943697cf317ee7379316
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 6e373bdf618bf9e59deef5d8bddf73c06d6f34fd
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>从 PowerApps 连接到 Power BI
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
@@ -26,7 +26,7 @@ Power BI 是一套用于分析数据和共享见解的业务分析工具。 通�
 本主题演示如何在应用中使用 Power BI 连接，并列出可用的函数。
 
 ## <a name="prerequisites"></a>先决条件
-* 访问 [powerapps.com](https://powerapps.com) 或安装 [PowerApps](http://aka.ms/powerappsinstall)
+* [注册](https://web.powerapps.com)
 * 添加 Power BI [连接](https://powerapps.microsoft.com/tutorials/add-manage-connections/)
 * 通过[模板](https://powerapps.microsoft.com/tutorials/get-started-test-drive/)、[数据](https://powerapps.microsoft.com/tutorials/get-started-create-from-data/)或[从头开始](https://powerapps.microsoft.com/tutorials/get-started-create-from-blank/)创建应用
 
@@ -56,7 +56,7 @@ Power BI 是一套用于分析数据和共享见解的业务分析工具。 通�
 ## <a name="view-the-available-functions"></a>查看可用函数
 此连接包括以下函数：
 
-| 函数名称 | 说明 |
+| 函数名称 | 描述 |
 | --- | --- |
 | GetAlerts |列出在 Power BI 服务中设置的警报 |
 | CheckAlertStatus |检查特定警报的状态 |
@@ -68,7 +68,7 @@ Power BI 是一套用于分析数据和共享见解的业务分析工具。 通�
 无。
 
 #### <a name="output-properties"></a>输出属性
-| 属性名称 | 数据类型 | 需要 | 说明 |
+| 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 值 |数组 |否 |在 Power BI 服务中设置的数据警报的数组。 每个数组中的元素将包括： <ul><li>alertTitle：警报的标题</li><li>alertId：警报的 ID</li><li>groupId：创建警报的组的 ID</li></ul> |
 
@@ -79,12 +79,12 @@ Power BI 是一套用于分析数据和共享见解的业务分析工具。 通�
 > 如果调用过于频繁，将会在每次发出警报时限制对此终结点的请求。
 
 #### <a name="input-properties"></a>输入属性
-| 属性名称 | 数据类型 | 需要 | 说明 |
+| 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | alertId |整数 |是 |由 GetAlerts 返回的警报的 ID |
 
 #### <a name="output-properties"></a>输出属性
-| 属性名称 | 数据类型 | 需要 | 说明 |
+| 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | tileValue |number |否 |触发警报时的磁贴值 |
 | tileUrl |字符串 |否 |具有警报的磁贴的 URL |

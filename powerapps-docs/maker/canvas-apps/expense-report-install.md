@@ -1,25 +1,22 @@
 ---
 title: 安装和配置支出报表 PowerApps 示例 | Microsoft Docs
 description: 安装和配置支出报表 PowerApps 示例的分步说明。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: caburk
-manager: ''
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: sample
+ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: a63504b0438f50584da6739b9f397300e36d4ce6
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: bce21a5fe07cb5bf608c36371a7cbe45e845b2ad
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-and-configure-the-expense-report-powerapps-sample"></a>安装和配置支出报表 PowerApps 示例
 
@@ -63,7 +60,7 @@ ms.lasthandoff: 04/16/2018
 
 10. 单击“创建”。
 
-### <a name="create-costcenter-column"></a>创建“成本中心”列
+### <a name="create-cost-center-column"></a>创建“成本中心”列
 
 1. 单击“支出”列表。
 2. 单击网页右上角的齿轮图标。
@@ -236,7 +233,7 @@ ms.lasthandoff: 04/16/2018
 ### <a name="create-sharepoint-connection"></a>创建 SharePoint 连接
 
 1.  单击“+ 新建连接”。
-2.  在“搜索”文本框中，输入“Outlook”。
+2.  在“搜索”文本框中，输入“SharePoint”。
 3.  从列表中选择“SharePoint”。
 4.  单击“创建”。
 5.  在弹出窗口中，选择登录所用的帐户。
@@ -262,7 +259,7 @@ ms.lasthandoff: 04/16/2018
     ![“导入设置”屏幕](./media/expense-report-install/import-settings-sharepoint.png)
 
 10. 单击“保存”。
-11. 单击“SharePoint 连接”对应的“红色图标”。
+11. 单击“已批准连接”对应的红色图标。
 12. 在连接列表中，单击带有用户名的项。
 
     ![“导入设置”屏幕](./media/expense-report-install/import-settings-approvals.png)

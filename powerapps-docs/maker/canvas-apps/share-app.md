@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 5a469c875d82670e30d0be8bef86cc476ca5ea19
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: c87f0e644668e9b9804b001560402972fd3d4531
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="share-an-app-in-powerapps"></a>在 PowerApps 中共享应用
 虽然可以使用 PowerApps 轻松生成可满足你自己的业务需求的应用，但能够与其他人共享这些应用才是它的真正魅力所在。 在本主题中，你将了解如何与指定用户或安全组共享应用，或与整个组织共享应用。
@@ -57,13 +57,13 @@ ms.lasthandoff: 04/26/2018
 ### <a name="how-do-my-users-see-the-app-i-shared"></a>用户应如何查看我所共享的应用？
 在与一个或多个用户、安全组共享应用后，他们查看该应用的方式将取决于你共享应用所用的权限。
 
-##### <a name="if-you-shared-an-app-with-user-permission"></a>如果以“用户”权限共享应用
+##### <a name="if-you-shared-an-app-with-can-use-permission"></a>如果以“可以使用”权限共享应用
 如果在应用共享屏幕中选择该复选框，则获得共享应用的人将收到一封电子邮件通知。 在电子邮件中，他们可以单击或点击链接，在 [Dynamics 365](http://home.dynamics.com) 上运行应用。 我们将在不久之后支持通用链接，这意味着如果你已安装 PowerApps Studio 或 PowerApps Mobile，该应用将在 PowerApps Studio 或 PowerApps Mobile 中打开。
 
 用户还可在 [Dynamics 365](http://home.dynamics.com) 的 AppSource 中发现应用（例如，如果你未发送电子邮件）。 [阅读更多](../../user/app-source.md)有关用户如何通过 AppSource 获取应用的内容。
 
-##### <a name="if-you-shared-an-app-with-contributor-permission"></a>如果以参与者权限共享应用
-如果在应用共享屏幕中选择该复选框，则获得共享应用的人将收到一封电子邮件通知。 在电子邮件中，他们可以通过单击或点击链接直接打开应用，然后在适用于 Web 的 PowerApps Studio 中进行编辑。 此外，还有一个链接可用于在 [Dynamics 365](http://home.dynamics.com) 上运行应用。 我们将在不久之后支持通用链接，这意味着如果你已安装 PowerApps Studio 或 PowerApps Mobile，该应用将在 PowerApps Studio 或 PowerApps Mobile 中打开。
+##### <a name="if-you-shared-an-app-with-can-edit-permission"></a>如果以“可以编辑”权限共享应用
+如果在应用共享屏幕中选择该复选框，则获得共享应用的人将收到一封电子邮件通知。 在电子邮件中，他们可以通过单击或点击链接直接打开应用，然后在 PowerApps Studio 中进行编辑。 此外，还有一个链接可用于在 [Dynamics 365](http://home.dynamics.com) 上运行应用。 我们将在不久之后支持通用链接，这意味着如果你已安装 PowerApps Studio 或 PowerApps Mobile，该应用将在 PowerApps Studio 或 PowerApps Mobile 中打开。
 
 用户还可在 [powerapps.com](http://web.powerapps.com) 中发现应用（例如，如果你未发送电子邮件）。 在该主页中，应用创建者可以浏览已创建的所有应用，或浏览以**参与者**权限共享的应用。 与之相反，在 [Dynamics 365](http://home.dynamics.com) 中，用户可以从 PowerApps 和其他商业应用快速运行应用。
 

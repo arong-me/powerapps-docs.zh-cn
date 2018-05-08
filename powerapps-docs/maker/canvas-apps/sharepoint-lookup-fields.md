@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 01/20/2017
 ms.author: sharik
-ms.openlocfilehash: 194bc4d68d4b26360074d8ed431cacaf231d0cdf
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 0a257df76980bcf1801c9ed98de87ae06c4ae624
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-link-sharepoint-lists-using-lookup-fields"></a>如何使用查阅字段链接 SharePoint 列表
 本教程演示如何使用查阅字段连接两个 SharePoint 列表。
@@ -91,7 +91,7 @@ SharePoint 提供两种查阅字段：
 ## <a name="create-an-app-from-the-assets-list"></a>根据 Assets 列表创建应用
 使用此应用向 **Assets** 列表添加数据。
 
-1. 打开 PowerApps Studio。 如果未用过 PowerApps，请使用组织电子邮件地址[免费注册](https://powerapps.microsoft.com)，然后按照说明从 Windows 应用商店下载 PowerApps Studio。
+1. [登录到 PowerApps Studio](http://web.powerapps.com)。 如果你是 PowerApps 新用户，可使用组织的电子邮件地址[免费注册](https://powerapps.microsoft.com)。
 
 2. 在“文件”菜单中（沿左边缘），单击或点击“新建”，然后单击或点击“SharePoint”。
 

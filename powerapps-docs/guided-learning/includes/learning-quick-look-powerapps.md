@@ -10,7 +10,7 @@ web.powerapps.com 的欢迎页中提供多个可在 Web 浏览器中使用的示
 ![PowerApps 地面材料示例应用](./media/learning-quick-look-powerapps/powerapps-flooring-sample.png)
 
 ## <a name="create-an-app-from-a-template"></a>从模板创建应用
-另一种入门的好办法是**生成基于模板的应用**。 一般来说，模板就是示例应用，你可以打开它们来了解各组成部分。 模板使用示例数据，有助于你大致了解可实现的功能。在 PowerApps Studio 中打开模板有助于你**了解有关生成应用的实际操作**。 请注意，目前仅支持在 PowerApps Studio for Windows 中使用模板，不支持在 PowerApps Studio for web 中使用模板。
+另一种入门的好办法是**生成基于模板的应用**。 一般来说，模板就是示例应用，你可以打开它们来了解各组成部分。 模板使用示例数据，有助于你大致了解可实现的功能。在 PowerApps Studio 中打开模板有助于你**了解有关生成应用的实际操作**。
 
 ![PowerApps 应用模板](./media/learning-quick-look-powerapps/powerapps-templates.png)
 
@@ -24,7 +24,7 @@ web.powerapps.com 的欢迎页中提供多个可在 Web 浏览器中使用的示
 ![PowerApps 共享](./media/learning-quick-look-powerapps/powerapps-sharing.png)
 
 ## <a name="create-an-app-from-a-data-source"></a>创建基于数据源的应用
-在 **PowerApps Studio for web** 或 **PowerApps Studio for Windows** 中创建应用。 可以连接数据源，并开始在视觉对象设计器中编写应用。
+在 PowerApps Studio 中创建应用。 可以连接数据源，并开始在视觉对象设计器中编写应用。
 
 ![基于数据的 PowerApps 应用](./media/learning-quick-look-powerapps/powerapps-app-from-data.png)
 

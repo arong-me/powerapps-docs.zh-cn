@@ -1,25 +1,22 @@
 ---
 title: PowerApps 社区计划：供个人使用的免费开发环境 | Microsoft Docs
 description: 注册后可掌握技能，并详细了解 PowerApps、Microsoft Flow 和 Common Data Service。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: mgblythe
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 05/01/2016
 ms.author: mblythe
-ms.openlocfilehash: 13952338015fd6ec6f951cb9447cc5203f7159e0
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: 70200430b0cee7356d70795440b908a8837ba18d
+ms.sourcegitcommit: 6a75c4c499bcdbeb9d65d3a9af47dedcf900f38d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps 社区计划：供个人使用的免费开发环境
 若要掌握技能并详细了解 PowerApps、Microsoft Flow 和 Common Data Service，PowerApps 社区计划是你的不二之选。 PowerApps 社区计划提供了供个人使用的免费开发环境，你可以在其中：
@@ -76,7 +73,7 @@ ms.lasthandoff: 04/23/2018
 
 *无法与租户中的其他任何用户共享应用、流、连接等。 也无法在管理中心内将其他任何用户添加为环境管理员/创建者或向其分配数据库角色。
 
-**使用 Common Data Service 创建数据库目前在单独环境中不可行，但很快会再次提供此功能。 如果之前创建了数据库，则可以继续使用它，而不会有任何问题。 
+\*\*使用 Common Data Service 创建数据库目前在单独环境中不可行，但很快会再次提供此功能。 如果之前创建了数据库，则可以继续使用它，而不会有任何问题。 
 
 ## <a name="what-are-the-capacity-limits-for-the-individual-environment"></a>个人环境的容量上限是多少？
 | **容量** |  |

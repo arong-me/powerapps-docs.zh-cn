@@ -9,12 +9,12 @@
 我们并不希望你花大量时间就学习了 PowerApps *概念*，我们认为学习更充实的课程对你更有帮助。
 
 ## <a name="webpowerappscom"></a>web.powerapps.com
-如果生成应用，大部分时间都是在这里执行操作。 可以查看其中提供的**示例应用和模板**，以及你创建的所有应用。 可以在 **PowerApps Studio for web** 或 **PowerApps Studio for Windows** 中创建应用，并与个人和组织共享这些应用。 可以管理数据：**连接**、**网关**和**实体**（很快就会逐一介绍）。可以查看在 **flows.microsoft.com** 中创建的全部**流**，并能将流与应用集成。
+如果生成应用，大部分时间都是在这里执行操作。 可以查看其中提供的**示例应用和模板**，以及你创建的所有应用。 可以在“PowerApps Studio”中创建应用，然后与个人和组织共享这些应用。 可以管理数据：**连接**、**网关**和**实体**（很快就会逐一介绍）。可以查看在 **flows.microsoft.com** 中创建的全部**流**，并能将流与应用集成。
 
 ![web.powerapps.com 网站](./media/learning-powerapps-parts/powerapps-web-site.png)
 
 ## <a name="powerapps-studio"></a>PowerApps Studio
-**PowerApps Studio** 可以是能在任何新式浏览器中使用的 Web 应用程序，也可以是 Windows 应用程序。 PowerApps Studio 有三个窗格和一个功能区，创建应用**类似于在 PowerPoint 中创建幻灯片组**：
+PowerApps Studio 是能在任何新式浏览器中使用的 Web 应用程序。 PowerApps Studio 有三个窗格和一个功能区，创建应用**类似于在 PowerPoint 中创建幻灯片组**：
 
 1. **左侧导航栏**：可以显示应用中每个屏幕的缩略图或每个屏幕上所有控件的分层视图
 2. **中间窗格**：显示正在处理的屏幕

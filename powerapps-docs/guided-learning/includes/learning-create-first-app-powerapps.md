@@ -1,11 +1,9 @@
 至此，已熟悉 PowerApps 的所有组成部分和应用创建选项，是时候真正开始生成应用了。 在此主题中，我们将生成基于 SharePoint Online 列表的手机应用。不过，也可以使用其他许多数据源，包括 Excel、Salesforce 等云服务和 SQL Server 等本地源。
 
 ## <a name="connect-to-a-data-source"></a>连接到数据源
-生成基于数据的应用的第一步是，选择要使用的 PowerApps Studio，然后连接数据源。 在 web.powerapps.com 上，单击或点击“**新建应用**”，然后选择是使用 PowerApps Studio for Windows，还是使用 PowerApps Studio for web。
+在 web.powerapps.com 上，单击或点击左侧边缘附近的“应用”，然后单击或点击横幅中的“创建应用”。
 
-![在 web.powerapps.com 上开始操作](./media/learning-create-first-app-powerapps/generate-choose-studio.png)
-
-在 PowerApps Studio 中，可以视需要选择是根据数据、模板还是从头开始创建。 由于我们要生成的是基于 SharePoint 列表的手机应用，因此单击或点击“**SharePoint**”下的“**手机布局**”。
+在 PowerApps 中，可通过数据、模板构建应用，或从头开始构建应用。 由于我们要生成的是基于 SharePoint 列表的手机应用，因此单击或点击“**SharePoint**”下的“**手机布局**”。
 
 ![基于 SharePoint 列表的手机应用](./media/learning-create-first-app-powerapps/generate-sharepoint-phone.png)
 

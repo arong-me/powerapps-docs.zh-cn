@@ -1,6 +1,6 @@
 ---
-title: 管理实体中的自定义字段快速入门 | Microsoft Docs
-description: 创建、读取、更新及删除实体中自定义字段的快速入门。
+title: 管理实体中的自定义字段 | Microsoft 文档
+description: 有关如何在 CDS for Apps 中创建、读取、更新及删除实体的自定义字段的演练。
 documentationcenter: na
 author: clwesene
 manager: kfile
@@ -8,24 +8,23 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: conceptual
+ms.topic: article
 ms.component: cds
-ms.date: 3/21/2018
+ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: a2dfe95cd9e858326a9f014aaac4e595fb27be48
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: ff522ee5d5614888c6cc0fcfb1e7d6658a36c6ae
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="quickstart-manage-custom-fields"></a>快速入门：管理自定义字段
+# <a name="manage-custom-fields-in-an-entity"></a>管理实体中的自定义字段
 可以在任意实体中创建和更新一个或多个自定义字段。 创建自定义字段时，可以指定一组属性，例如字段名称、其显示名称及其将包含的数据类型。 有关详细信息，请参阅[实体属性元数据](../../developer/common-data-service/entity-attribute-metadata.md)。
 
 > [!NOTE]
-> 每个实体都有 [系统字段]，如指示上次记录更新时间和更新人员的字段。 此外，[标准实体](data-platform-intro.md#system-fields)还包含标准（默认）字段。 无法修改或删除系统字段或标准字段。 如果创建自定义字段，则它应在这些内置字段上提供功能。
+> 每个实体都有系统字段，如指示上次记录更新时间和更新人员的字段。 此外，标准实体还包含标准（默认）字段。 无法修改或删除系统字段或标准字段。 如果创建自定义字段，则它应在这些内置字段上提供功能。
 
 ## <a name="create-a-field"></a>创建字段
-
 1. 在 [powerapps.com](https://web.powerapps.com) 上，展开“数据”部分，然后单击或点击左侧导航窗格中的“实体”。
 
     ![实体详细信息](./media/data-platform-cds-create-entity/entitylist.png "实体列表")
@@ -62,7 +61,6 @@ ms.lasthandoff: 04/26/2018
     该操作成功完成后，你将收到通知。 如果操作失败，错误消息会指示出现的问题以及修复方法。
 
 ## <a name="create-a-calculated-or-roll-up-field"></a>创建计算或汇总字段
-
 计算字段可以自动执行业务流程中使用的手动计算。 例如，销售人员可能想知道商机的加权收入，它是基于商机乘以概率的预计收入。 或者，他们想要当订单超过 500 美元时自动应用折扣。 计算字段可以包含由简单的数学运算或条件运算（例如大于或 if-else）以及许多其他运算产生的值。 可以使用以下数据类型创建计算字段：
 
 * 单行文本
@@ -74,7 +72,6 @@ ms.lasthandoff: 04/26/2018
 * 日期和时间
 
 有关支持的表达式类型和示例的详细信息，请参阅[定义计算字段](/dynamics365/customer-engagement/customize/define-calculated-fields)
-
 
 ## <a name="update-or-delete-a-field"></a>更新或删除字段
 1. 在 [powerapps.com](https://web.powerapps.com) 上，展开“数据”部分，单击或点击左侧导航窗格中的“实体”，然后单击或点击实体。

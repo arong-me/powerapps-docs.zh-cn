@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: 9a4daa7135f54ed3a0b3e1f206ce0d201c42da8b
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: f4b6f604ecd7557f7b7b54769d66da850e18ef4f
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>在 PowerApps 中使用折线图、饼图或条形图显示数据
 使用折线图、饼图和条形图显示数据。 使用图表时，所导入数据的结构应如下所示：
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 可以在 PowerApps 中创建并使用这些图表。 让我们开始吧。
 
 ## <a name="prerequisites"></a>先决条件
-* [注册](../signup-for-powerapps.md) PowerApps，然后[安装](http://aka.ms/powerappsinstall) PowerApps。 打开 PowerApps 时，使用注册所用的凭据登录。
+* [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com)。
 * 根据[模板](get-started-test-drive.md)、[数据](get-started-create-from-data.md)或[从头开始](get-started-create-from-blank.md)创建应用。
 * 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
 * 下载 [ChartData.zip](http://pwrappssamples.blob.core.windows.net/samples/ChartData.zip)，其中包含 XML 文件形式的示例数据。 按照本主题中的步骤将其直接导入到应用中。 也可以解压缩该 .zip 文件，在 Excel 中打开 XML 文件，然后将其保存到[云存储帐户](connections/cloud-storage-blob-connections.md)。

@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 50e897e9d75eec037039e81e6dbed524206b10d3
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 51a13472407c5483eed7cc2c202e46855905157d
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="generate-an-app-from-within-sharepoint-using-powerapps"></a>使用 PowerApps 从 SharePoint 中生成应用
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="manage-the-app"></a>管理应用
 ![命令栏](./media/generate-app-from-sharepoint-list-interface/command-bar.png)
 
-* 如果单击或点击“在 PowerApps 中编辑”，应用会在单独的浏览器选项卡中打开，你可以在 Web 版 PowerApps Studio 中更新应用。
+* 如果单击或点击“在 PowerApps 中编辑”，应用会在单独的浏览器选项卡中打开，你可以在 PowerApps Studio 中更新应用。
 
 * 如果单击或点击“将此视图公开”，组织中的其他人员就可以查看它。 默认情况下，只有你可以看到你创建的视图。 若要允许他人编辑你的应用，则需[与之共享该应用](share-app.md)，然后授予其“可编辑”权限。
 

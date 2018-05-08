@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: anneta
-ms.openlocfilehash: b15584a1b53625544711f04d074c688ce75eac9c
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 29da2a8814b0de7d34915f9992aeb963743785d2
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-images-to-excel-from-powerapps"></a>通过 PowerApps 将图像添加到 Excel 中
 自动创建应用，用户可以在其中显示、添加或删除各文件中的图像，或通过“笔”控件绘制的画图。 此应用以你创建并上载到云存储帐户中的 Excel 文件为依据。
@@ -41,7 +41,7 @@ ms.lasthandoff: 04/26/2018
 6. 在“选择表”下，依次单击或点击你创建的表和“连接”。
    
     ![选择你创建的表](./media/add-images-to-excel/select-table.png)
-7. 如果是刚刚才安装或升级 PowerApps，请使用快速导览功能，或者单击或点击“跳过”。
+7. 如果出现快速导览，可选择观看，或者选择单击或点击“跳过”。
    
     ![快速导览功能的第一屏](./media/add-images-to-excel/quick-tour.png)
 

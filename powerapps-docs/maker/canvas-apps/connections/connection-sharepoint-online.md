@@ -12,11 +12,11 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: ankitsar
-ms.openlocfilehash: fe6017ee402f0026aab3ef281a02b472b6a503ad
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 1be4a7a6f1d4080a715f88db8d48892641a19a1f
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>从 PowerApps 连接到 SharePoint
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
@@ -49,13 +49,11 @@ ms.lasthandoff: 04/26/2018
 包含可被 PowerApps 读取的空格，但空格被替换为十六进制转义代码“\_x0020\_”的列。 例如，如果 SharePoint 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
 
 ## <a name="prerequisites"></a>先决条件
-可使用以下任一步骤打开 PowerApps：
+1. [注册](../../signup-for-powerapps.md) PowerApps。
 
-* [注册](../../signup-for-powerapps.md) PowerApps、[安装适用于 Windows 的 PowerApps Studio](http://aka.ms/powerappsinstall)，然后打开该程序，并提供注册时所用的同一凭据进行登录。
+1. 使用注册所用的同一凭据[登录](http://web.powerapps.com)到 PowerApps。
 
-* 在浏览器中 [打开适用于 Web 的 PowerApps Studio](https://create.powerapps.com/api/start)。
-
-    有关适用于 Web 的 PowerApps Studio 的预览版中支持的浏览器和限制的列表，请参阅 [在浏览器中创建或编辑应用](../create-app-browser.md)。
+1. 在左侧边缘附近选择“应用”，然后在横幅中选择“创建应用”。
 
 ## <a name="create-an-app"></a>创建应用
 * 基于 SharePoint 列表中的数据[自动生成应用](../app-from-sharepoint.md)。
