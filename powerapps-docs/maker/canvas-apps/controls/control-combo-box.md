@@ -1,30 +1,27 @@
 ---
 title: 组合框控件：参考 | Microsoft 文档
 description: 了解组合框控件（包括属性和示例）
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 09/13/2017
 ms.author: fikaradz
-ms.openlocfilehash: 5fb4ca1a8c3618a81940ef953e2e7d1c9b04dd7e
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 4fde158bbca9d132801236f418c8a7652444728e
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="combo-box-control-in-powerapps"></a>PowerApps 中的组合框控件
 用户可以在其中提供的选项之间进行选择的控件。  支持搜索和多重选择。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 使用组合框控件，可以搜索要选择的项。  由于搜索是在服务器端对 SearchField 属性执行，因此性能不受非常大的数据源影响。  
 
 单选或多重选择模式是通过 SelectMultiple 属性进行配置。
@@ -50,7 +47,7 @@ ms.lasthandoff: 04/16/2018
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
@@ -58,7 +55,7 @@ ms.lasthandoff: 04/16/2018
 
 **DisplayFields** - 针对搜索返回的每个项显示的字段列表。  通过“属性选项”选项卡中的“数据”窗格进行配置最为简单。
 
-[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
 **[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
 
@@ -80,9 +77,9 @@ ms.lasthandoff: 04/16/2018
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="example"></a>示例
 1. 使用“插入”选项卡中的“控件”菜单，添加组合框控件。  
@@ -101,18 +98,20 @@ ms.lasthandoff: 04/16/2018
 * ChevronFill 和 ChevronBackground
 * ChevronHoverFill 和 ChevronHoverBackground
 * SelectionColor 和 SelectionFill
-* SelectionFill 和 Fill**[](properties-color-border.md)**
+* **SelectionFill** 和 **[Fill](properties-color-border.md)**
 * SelectionTagColor 和 SelectionTagFill
 
-这是除标准颜色对比度以外的要求。
+这是除[标准颜色对比度](../accessible-apps-color.md)以外的要求。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* “AccessibleLabel”**[](properties-accessibility.md)** 必须存在。
-> [!NOTE]
+* **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
+
+    > [!NOTE]
 > 在触摸屏上，屏幕阅读器用户可以按顺序导航组合框中的内容。 组合框充当一个按钮，在选中时会显示或隐藏其内容。
 
 ### <a name="keyboard-support"></a>键盘支持
-* TabIndex**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清楚显示。 可以使用“FocusedBorderColor”**[](properties-color-border.md)** 和“FocusedBorderThickness**[](properties-color-border.md)**”来实现此目的。
-> [!NOTE]
+* **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和“**[FocusedBorderThickness](properties-color-border.md)**”来实现此目的。
+
+    > [!NOTE]
 > Tab 键可导航到组合框或离开组合框。 箭头键可导航组合框中的内容。 Esc 键在打开时会关闭下拉列表。

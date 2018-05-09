@@ -1,6 +1,6 @@
 ---
-title: 响应 PowerApps、Microsoft Flow 和 Common Data Service 中系统生成的日志的 DSR | Microsoft 文档
-description: 响应 PowerApps、Microsoft Flow 和 Common Data Service 中系统生成的日志的 DSR
+title: 响应针对 PowerApps、Microsoft Flow 和 Common Data Service for Apps 中系统生成的日志的 DSR 请求 | Microsoft Docs
+description: 演练如何响应针对 PowerApps、Microsoft Flow 和 Common Data Service for Apps 中系统生成的日志的 DSR 请求
 services: powerapps
 suite: powerapps
 documentationcenter: na
@@ -14,16 +14,16 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/18/2018
+ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 1b85ac81969407fe4e84c41fd93debeccddb0f05
-ms.sourcegitcommit: e3a2819c14ad67cc4ca6640b9064550d0f553d8f
+ms.openlocfilehash: c3086ce05ba748b5387ec4ae5a1e794658b5677a
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="responding-to-dsr-requests-for-system-generated-logs-in-powerapps-microsoft-flow-and-common-data-service-for-apps"></a>响应 PowerApps、Microsoft Flow 和 Common Data Service for Apps 中系统生成的日志的 DSR 请求
-Microsoft 允许你访问、导出和删除系统生成的日志，根据个人数据的一般数据保护条例 (GDPR) 的广泛定义，这些日志可能被视为个人数据。 在 GDPR 下，可能被视为个人数据的系统生成日志的示例包括：
+Microsoft 允许你访问、导出和删除系统生成的日志，根据欧盟 (EU) 个人数据的一般数据保护条例 (GDPR) 的广泛定义，这些日志可能被视为个人数据。 在 GDPR 下，可能被视为个人数据的系统生成日志的示例包括：
 * 产品和服务使用情况数据，例如用户活动日志
 * 用户搜索请求和查询数据
 * 由产品和服务生成的数据作为系统功能和用户或其他系统交互的产物
@@ -31,9 +31,11 @@ Microsoft 允许你访问、导出和删除系统生成的日志，根据个人�
 请注意，不支持在系统生成的日志中限制或纠正数据。 系统生成日志中的数据构成了在 Microsoft 云内部进行的实际操作，而诊断数据&mdash;包括对此类数据的修改&mdash;将会影响操作的历史记录，并增加欺诈和安全风险。
 
 ## <a name="accessing-and-exporting-system-generated-logs"></a>访问和导出系统生成的日志
-管理员可以访问与用户使用 PowerApps、Microsoft Flow 和 CDS for Apps 服务及应用程序相关联的系统生成的日志。 若要访问和导出系统生成的日志：
+管理员可以访问与用户使用 PowerApps、Microsoft Flow 和 Common Data Service (CDS) for Apps 服务及应用程序关联的系统生成的日志。
 
-1. 转到 [Microsoft 服务信任门户](https://servicetrust.microsoft.com/)并使用 Office 365 全局管理员凭据登录。
+要访问和导出系统生成的日志，请执行以下操作：
+
+1. 转到 [Microsoft 服务信任门户](https://servicetrust.microsoft.com/)，并使用 Office 365 全局管理员凭据登录。
 
 2. 从页面顶部的“隐私”下拉列表中，选择“数据主体请求”。
 
@@ -55,7 +57,7 @@ Microsoft 允许你访问、导出和删除系统生成的日志，根据个人�
 | 系统生成日志中的数据是什么样的？ |  采用 JSON 格式的系统生成日志记录示例： <br> [{ <br>"DateTime": "2017-04- 28T12:09:29-07:00",  <br> "AppName": "SharePoint", <br> "Action": "OpenFile", "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" <br>}]
 
 > [!NOTE]
->  某些功能不允许导出或删除包含个人信息的系统生成日志，以便出于安全和审核原因维护此类信息的完整性。
+>  出于安全和审核目的，某些功能不允许导出或删除系统生成的日志，以便维护个人信息的完整性。
 >
 >
 

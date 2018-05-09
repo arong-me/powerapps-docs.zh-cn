@@ -12,11 +12,11 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: e52f89f685aeb9c06678b973e926c0fd89bdf47f
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 7f6350a70bff19df0c83d2082fe8fb463d81d772
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PowerApps 中的 PDF 查看器控件（实验性）
 显示 PDF 文件内容的实验性控件。
@@ -96,7 +96,7 @@ Zoom – 相机中图像被放大的百分比或 PDF 查看器中文件的视图
 
 ## <a name="example"></a>示例
 * 添加“PDF 查看器”控件，并将其“Document”属性设置为 PDF 文件的 URL（用双引号括住），如下例所示：<br>
-  "http://www.who.int/gho/publications/world_health_statistics/EN_WHS2015_TOC.pdf?ua=1"
+  "https://blog.mozilla.org/security/files/2015/05/HTTPS-FAQ.pdf"
 
     此控件显示 PDF 文件。
 

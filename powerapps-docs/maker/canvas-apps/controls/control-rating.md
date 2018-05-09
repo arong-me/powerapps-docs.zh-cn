@@ -1,30 +1,27 @@
 ---
 title: 评分控件 | Microsoft 文档
 description: 有关评分控件的信息（包括属性和示例）
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 40f826a47c7ba447cc159c0ecf9c335603484a98
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 1df75e5de1f0d8a2515b4dcf761593145d72f70a
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rating-control-in-powerapps"></a>PowerApps 中的评分控件
 用户可以用于指示介于 1 和你指定的最大数之间的值的控件。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 例如，用户可以在此控件中通过选择一定数量的星星来表示他们对某些内容所喜爱的程度。
 
 ## <a name="key-properties"></a>关键属性
@@ -37,13 +34,13 @@ ms.lasthandoff: 04/16/2018
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
-**[Fill](properties-color-border.md)** – 控件的背景颜色。
+**[Fill](properties-color-border.md)** – 控件的背景色。
 
 **[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
 
@@ -59,21 +56,21 @@ ms.lasthandoff: 04/16/2018
 
 **ReadOnly** – 用户是否可以更改滑块或评分控件的值。
 
-**[Reset](properties-core.md)** - 是否还原控件的默认值。
+[Reset](properties-core.md) – 是否还原控件的默认值。
 
 **ShowValue** – 当用户更改滑块或评分的值或将鼠标悬停在控件上时，是否显示该值。
 
 **[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
 
-**[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
+**[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="related-functions"></a>相关函数
 [**Average**( *Value1*, *Value2,* ... )](../functions/function-aggregates.md)
@@ -99,18 +96,20 @@ ms.lasthandoff: 04/16/2018
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：
-* RatingFill 和 Fill**[](properties-color-border.md)**
+* **RatingFill** 和 **[Fill](properties-color-border.md)**
 
-这是除标准颜色对比度以外的要求。
+这是除[标准颜色对比度](../accessible-apps-color.md)以外的要求。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* “AccessibleLabel”**[](properties-accessibility.md)** 必须存在。
-> [!NOTE]
+* **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
+
+    > [!NOTE]
 > 屏幕阅读器将“评级”控件视为单选按钮。
 
 ### <a name="keyboard-support"></a>键盘支持
-* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用“FocusedBorderColor”**[](properties-color-border.md)** 和“FocusedBorderThickness”**[](properties-color-border.md)** 来实现此目的。
+* **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
 * 如果有太多星级，则考虑使用不同控件。 使用键盘导航可能会很繁琐，而且很难用触摸屏精确地选择。
-> [!NOTE]
+
+    > [!NOTE]
 > 单选按钮的相同键盘交互可以在“评级”上使用。

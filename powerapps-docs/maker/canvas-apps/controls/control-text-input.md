@@ -1,30 +1,27 @@
 ---
 title: 文本输入控件：参考 | Microsoft 文档
 description: 有关文本输入控件的信息（包括属性和示例）
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: fca84b687f6e86905c6eeea18a7cd302f0c58b44
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 3100ebae3d3f9b7cdef839d74e9d289b4059de5d
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="text-input-control-in-powerapps"></a>PowerApps 中的文本输入控件
 用户可在其中键入文本、数字和其他数据的框。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 用户可通过将数据键入文本输入控件来进行指定。 根据配置应用的方式，该数据可能会被添加到某个数据源、用于计算临时值或以其他某种方式合并。
 
 ## <a name="key-properties"></a>关键属性
@@ -33,13 +30,13 @@ ms.lasthandoff: 04/16/2018
 **[Text](properties-core.md)** – 在控件上显示或用户键入到控件中的文本。
 
 ## <a name="additional-properties"></a>其他属性
-[AccessibleLabel](properties-accessibility.md) – 屏幕阅读器标签。
+**[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。
 
 **[Align](properties-text.md)** – 文本相对于其控件的水平居中的位置。
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
@@ -51,19 +48,19 @@ ms.lasthandoff: 04/16/2018
 
 [DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
-[DisabledBorderColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件边框的颜色。
+**[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件边框的颜色。
 
 [DisabledColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件中的文本颜色。
 
-[DisabledFill](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件的背景颜色。
+[DisabledFill](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件的背景色。
 
-**[Fill](properties-color-border.md)** – 控件的背景颜色。
+**[Fill](properties-color-border.md)** – 控件的背景色。
 
-[FocusedBorderColor](properties-color-border.md) – 当聚焦到控件时，控件的边框颜色。
+**[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
 
-[FocusedBorderThickness](properties-color-border.md) – 当聚焦到控件时，控件的边框粗细。
+**[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
 
-**[Font](properties-text.md)** – 文本中所显示的字体系列的名称。
+[Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
 **[FontWeight](properties-text.md)** – 控件中文本的粗细：**粗体**、**半粗体**、**正常**或**细体**。
 
@@ -75,9 +72,9 @@ ms.lasthandoff: 04/16/2018
 
 **[HoverBorderColor](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件边框的颜色。
 
-**[HoverColor](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。
+[HoverColor](properties-color-border.md) – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。
 
-**[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景颜色。
+**[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景色。
 
 **[Italic](properties-text.md)** – 控件中的文本是否为斜体。
 
@@ -87,17 +84,17 @@ ms.lasthandoff: 04/16/2018
 
 **Mode** - 控件处于 **SingleLine**、**MultiLine** 或 **Password** 模式。
 
-**[OnChange](properties-core.md)** - 用户更改控件的值（例如，通过调整滑块）时应用的响应方式。
+[OnChange](properties-core.md) – 用户更改控件的值（例如，通过调整滑块）时应用的响应方式。
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 
-**[PaddingBottom](properties-size-location.md)** – 控件中的文本与该控件下边缘之间的距离。
+[PaddingBottom](properties-size-location.md) – 控件中的文本与该控件的下边缘之间的距离。
 
-**[PaddingLeft](properties-size-location.md)** - 控件中的文本与该控件的左边缘之间的距离。
+[PaddingLeft](properties-size-location.md) – 控件中的文本与该控件的左边缘之间的距离。
 
-**[PaddingRight](properties-size-location.md)** - 控件中的文本与该控件的右边缘之间的距离。
+[PaddingRight](properties-size-location.md) – 控件中的文本与该控件的右边缘之间的距离。
 
-**[PaddingTop](properties-size-location.md)** - 控件中的文本与该控件的上边缘之间的距离。
+[PaddingTop](properties-size-location.md) – 控件中的文本与该控件的上边缘之间的距离。
 
 **[PressedBorderColor](properties-color-border.md)** – 用户在点击或单击控件时，该控件边框的颜色。
 
@@ -111,27 +108,27 @@ ms.lasthandoff: 04/16/2018
 
 **[RadiusTopLeft](properties-size-location.md)** – 控件左上角圆角的程度。
 
-**[RadiusTopRight](properties-size-location.md)** – 控件右上角圆角的程度。
+[RadiusTopRight](properties-size-location.md) – 控件右上角圆角的程度。
 
-**[Reset](properties-core.md)** - 是否还原控件的默认值。
+[Reset](properties-core.md) – 是否还原控件的默认值。
 
 **[Size](properties-text.md)** – 控件上显示的文本的字号。
 
-**[Strikethrough](properties-text.md)** – 通过文本显示的线是否在控件上显示。
+[Strikethrough](properties-text.md) – 通过文本显示的线是否在控件上显示。
 
-[TabIndex](properties-accessibility.md) – 相对于其他控件的键盘导航顺序。
+**[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
 
-**[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
+**[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
 
-**[Underline](properties-text.md)** – 在文本下方显示的线是否在控件上显示。
+[Underline](properties-text.md) – 在文本下方显示的线是否在控件上显示。
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="related-functions"></a>相关函数
 [**DateTimeValue**( *String* )](../functions/function-datevalue-timevalue.md)
@@ -155,7 +152,7 @@ ms.lasthandoff: 04/16/2018
 2. 添加一个标签，然后将其 **[Text](properties-core.md)** 属性设置为以下公式：<br>
    **If(inputPassword.Text = "P@ssw0rd", "Access granted", "Access denied")**
    
-    想要详细了解 **[If](../functions/function-if.md)** 函数或[其他函数](../formula-reference.md)吗？
+    想要详细了解 [If](../functions/function-if.md) 函数或[其他函数](../formula-reference.md)吗？
 3. 按 F5，然后在 **inputPassword** 中键入 **P@ssw0rd**。
    
     密码键入完毕后，标签不再显示“拒绝访问”，而会显示“已授予访问权限”。
@@ -166,12 +163,12 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 ### <a name="color-contrast"></a>颜色对比度
-* 适用标准颜色对比度要求。
+* 适用[标准颜色对比度要求](../accessible-apps-color.md)。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* “AccessibleLabel”**[](properties-accessibility.md)** 必须存在。
+* **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
 
 ### <a name="keyboard-support"></a>键盘支持
-* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用“FocusedBorderColor”**[](properties-color-border.md)** 和“FocusedBorderThickness”**[](properties-color-border.md)** 来实现此目的。
+* **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和“**[FocusedBorderThickness](properties-color-border.md)**”来实现此目的。
  

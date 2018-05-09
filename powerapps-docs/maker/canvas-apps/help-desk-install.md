@@ -1,25 +1,22 @@
 ---
 title: 安装和配置技术支持 PowerApps 示例 | Microsoft Docs
 description: 安装和配置技术支持 PowerApps 示例的分步说明。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: caburk
-manager: ''
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: sample
+ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: be5a2f1994a55abf6936ded4dfddf84d145115c5
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: e042230acec8bf70a2a99eee316d234cb5cdea15
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>安装和配置技术支持 PowerApps 示例
 
@@ -85,10 +82,10 @@ ms.lasthandoff: 04/16/2018
 7. 在“默认值”文本框中，输入“笔记本电脑/电脑设备问题”。
 8. 单击“确定”。
 
-### <a name="create--complete-column"></a>创建“完成百分比”列
+### <a name="create-percentcomplete-column"></a>创建 PercentComplete 列
 
 1. 单击“创建列”。
-2. 在“列名”文本框中，输入“完成百分比”。
+2. 在“列名”文本框中，输入“PercentComplete”。
 3. 在“此列中的信息类型为”单选按钮列表中，选择“数字 (1, 10, 100)”。
 4. 在“要求此列包含信息”单选按钮列表中，选择“否”。
 5. 单击“确定”。
@@ -251,6 +248,7 @@ ms.lasthandoff: 04/16/2018
     
     > [!TIP] 
     > 如果有多个管理员，请使用逗号分隔。示例："admin1@microsoft.com","admin2@microsoft.com"。
+    > 为了确保 AdminList 中的地址与 PowerApps 要求的格式匹配，请选择“视图”>“变量”>“全局”>“MyProfile”，并查看“电子邮件”列，检查要求的电子邮件格式。
 
 5. 单击“文件”。
 6. 单击“保存”。

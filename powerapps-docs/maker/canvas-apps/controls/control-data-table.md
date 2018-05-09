@@ -1,29 +1,27 @@
 ---
 title: 数据表控件：参考 | Microsoft 文档
 description: 介绍了数据表控件（包括属性和示例）
-services: powerapps
 documentationcenter: na
 author: jasongre
-manager: kfend
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 06/05/2017
 ms.author: kfend
-ms.openlocfilehash: 117d55cedb7c11bcdb6f69f8c10a8df2f2512b89
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: aa6e778a1c0426c696aaf48c542eccc4887c0e36
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="data-table-control-in-powerapps"></a>PowerApps 中的数据表控件
 以表格格式显示一组数据。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 “数据表”控件显示数据集，格式为控件显示的每个字段都有对应的列标题。 作为应用开发者，可以完全控制显示哪些字段和显示顺序。 与“库”控件一样，“数据表”控件包含指向选定行的“Selected”属性。 因此，可以将“数据表”控件与其他控件相关联。
 
 ## <a name="capabilities"></a>功能
@@ -154,7 +152,7 @@ PowerApps 在 2017 年 5 月 5 日引入了“数据表”控件。 此部分介
 * SelectedColor 和 SelectedFill
 * HoverColor[](properties-color-border.md) 和 HoverFill[](properties-color-border.md)
 
-这是除标准颜色对比度以外的要求。
+这是除[标准颜色对比度](../accessible-apps-color.md)以外的要求。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
 * “NoDataText”必须存在。
