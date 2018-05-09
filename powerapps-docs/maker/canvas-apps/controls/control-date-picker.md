@@ -1,30 +1,27 @@
 ---
 title: 日期选取器控件：参考 | Microsoft 文档
 description: 有关日期选取器控件的信息（包括属性和示例）
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: cea6eca66bc5945004da85d32a57239d28e4302e
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 9f2aae06422a130e2976d0276536842c6d565db5
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="date-picker-control-in-powerapps"></a>PowerApps 中的日期选取器控件
 用户可单击或点击以指定日期的控件。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 如果添加**日期选取器**控件而非**[文本输入](control-text-input.md)** 控件，可帮助确保用户以正确的格式指定日期。
 
 ## <a name="key-properties"></a>关键属性
@@ -44,7 +41,7 @@ ms.lasthandoff: 04/16/2018
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
@@ -60,13 +57,13 @@ ms.lasthandoff: 04/16/2018
 
 **EndYear** - 用户可将日期选取器控件的值设为的最后一个年份。
 
-**[Fill](properties-color-border.md)** – 控件的背景颜色。
+**[Fill](properties-color-border.md)** – 控件的背景色。
 
 **[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
 
 **[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
 
-**[Font](properties-text.md)** – 文本中所显示的字体系列的名称。
+[Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
 **[FontWeight](properties-text.md)** – 控件中文本的粗细：**粗体**、**半粗体**、**正常**或**细体**。
 
@@ -76,13 +73,13 @@ ms.lasthandoff: 04/16/2018
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 
-**[PaddingBottom](properties-size-location.md)** – 控件中的文本与该控件下边缘之间的距离。
+[PaddingBottom](properties-size-location.md) – 控件中的文本与该控件的下边缘之间的距离。
 
-**[PaddingLeft](properties-size-location.md)** - 控件中的文本与该控件的左边缘之间的距离。
+[PaddingLeft](properties-size-location.md) – 控件中的文本与该控件的左边缘之间的距离。
 
-**[PaddingRight](properties-size-location.md)** - 控件中的文本与该控件的右边缘之间的距离。
+[PaddingRight](properties-size-location.md) – 控件中的文本与该控件的右边缘之间的距离。
 
-**[PaddingTop](properties-size-location.md)** – 控件中的文本与该控件上边缘之间的距离。
+**[PaddingTop](properties-size-location.md)** – 控件中的文本与该控件的上边缘之间的距离。
 
 **[Size](properties-text.md)** – 控件上显示的文本的字号。
 
@@ -94,9 +91,9 @@ ms.lasthandoff: 04/16/2018
 
 **[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-[X](properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="related-functions"></a>相关函数
 **[Year](../functions/function-datetime-parts.md)**( *DateTimeValue* )
@@ -117,12 +114,12 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 ### <a name="color-contrast"></a>颜色对比度
-* 标准颜色对比度要求适用。
+* 适用[标准颜色对比度要求](../accessible-apps-color.md)。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* “AccessibleLabel”**[](properties-accessibility.md)** 必须存在。
+* **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
 
 ### <a name="keyboard-support"></a>键盘支持
-* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用“FocusedBorderColor”**[](properties-color-border.md)** 和“FocusedBorderThickness”**[](properties-color-border.md)** 来实现此目的。
+* **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
  

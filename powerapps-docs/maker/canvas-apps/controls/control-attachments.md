@@ -1,32 +1,29 @@
 ---
 title: 附件控件：参考 | Microsoft 文档
 description: 有关附件控件的信息（包括属性和示例）
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 09/29/2017
+ms.topic: reference
+ms.component: canvas
+ms.date: 04/23/2018
 ms.author: fikaradz
-ms.openlocfilehash: 6b46cfd778dcb29553dce252988b8b6a049ba12d
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: 24610e4d70f39f08eec1e828c1be20183d8de3af
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="attachments-control-in-powerapps"></a>PowerApps 中的附件控件
 方便用户将文件下载到设备，并在 SharePoint 列表中上传和删除文件的控件。
 
 ## <a name="limitations"></a>限制
 附件控件具有以下临时限制：
-1. Internet Explorer 中不支持附件下载。
+1. 仅支持在 SharePoint 自定义列表窗体中，从 Internet Explorer 下载附件。
 
 1. 附件上传仅适用于 SharePoint 列表数据源。  将逐步递增对其他数据源的支持，首先是对 CDS 的支持。
 
@@ -97,7 +94,7 @@ MaxAttachmentsText – 当控件中的文件数达到上限时，用于替换“
 
     与 SharePoint 列表相关联的“附件”字段将显示在窗体中。
 
-[了解如何添加和配置控件。](../add-configure-controls.md)
+[了解如何添加和配置控件]。(../add-configure-controls.md)
 
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
@@ -113,7 +110,7 @@ MaxAttachmentsText – 当控件中的文件数达到上限时，用于替换“
 * MaxAttachmentsColor 和 Fill
 * NoAttachmentsColor 和 Fill
 
-这是除标准颜色对比度以外的要求。
+这是除[标准颜色对比度](../accessible-apps-color.md)以外的要求。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
 必须存在以下属性：
@@ -123,5 +120,5 @@ MaxAttachmentsText – 当控件中的文件数达到上限时，用于替换“
 * NoAttachmentsText
 
 ### <a name="keyboard-support"></a>键盘支持
-* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用“FocusedBorderColor”**[](properties-color-border.md)** 和“FocusedBorderThickness**[](properties-color-border.md)**”来实现此目的。
+* **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
