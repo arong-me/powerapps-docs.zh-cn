@@ -85,7 +85,7 @@ Text – 上次由扫描仪识别的条形码值。
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 ### <a name="video-alternatives"></a>视频替代项
-* 请考虑添加标签**[](control-text-box.md)**，并将其 Text**[](properties-core.md)** 设置为条形码扫描仪的“Text”。 由于条形码扫描仪未显示标识的条形码值，执行上述操作将使所有人都可访问扫描仪，而不仅仅是那些有视觉障碍的用户。
+* 请考虑添加 **[标签](control-text-box.md)**，并将其 **[Text](properties-core.md)** 设置为条形码扫描仪的“Text”。 由于条形码扫描仪未显示标识的条形码值，执行上述操作将使所有人都可访问扫描仪，而不仅仅是那些有视觉障碍的用户。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
 * **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。

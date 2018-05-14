@@ -125,15 +125,15 @@ ClosedCaptionsUrl – 仅视频控件适用。  WebVTT 格式的隐藏式字幕�
   *  对于 YouTube 视频，使用 YouTube 提供的创作工具添加字幕。
   *  对于其他视频，创建 WebVTT 格式的字幕，将其上传，然后将“ClosedCaptionsUrl”设置为 url 位置。 有几个限制。 托管视频和字幕的服务器需启用 CORS，并使用 HTTPS 协议为它们提供服务。 隐藏式字幕在 Internet Explorer 上无效。
 * 考虑使用下列方法之一提供音频或视频脚本：
-  1. 将文本放入 Label **[](control-text-box.md)** 并将其置于多媒体播放器旁边。 （可选）创建按钮**[](control-button.md)** 切换文本显示。
-  2. 将文本置于不同屏幕中。 创建导航到屏幕的按钮**[](control-button.md)**，并将按钮置于多媒体播放器旁边。
-  3. 如果描述很短，可以将其放入 AccessibleLabel**[](properties-accessibility.md)**。
+  1. 将文本放入 **[Label ](control-text-box.md)** 并将其置于多媒体播放器旁边。 （可选）创建 **[按钮](control-button.md)** 切换文本显示。
+  2. 将文本置于不同屏幕中。 创建导航到屏幕的 **[按钮](control-button.md)**，并将按钮置于多媒体播放器旁边。
+  3. 如果描述很短，可以将其放入 **[AccessibleLabel](properties-accessibility.md)**。
 
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：
-* FocusedBorderColor**[](properties-color-border.md)** 和外部颜色
-* Image**[](properties-visual.md)** 和多媒体播放器控件（如果适用）
-* Fill**[](properties-color-border.md)** 和多媒体播放器控件（如果填充可见）
+* **[FocusedBorderColor](properties-color-border.md)** 和外部颜色
+* **[Image](properties-visual.md)** 和多媒体播放器控件（如果适用）
+* **[Fill](properties-color-border.md)** 和多媒体播放器控件（如果填充可见）
 
 如果视频内容颜色对比度有问题，则提供隐藏式字幕和/或脚本。
 
@@ -141,6 +141,6 @@ ClosedCaptionsUrl – 仅视频控件适用。  WebVTT 格式的隐藏式字幕�
 * **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
 
 ### <a name="keyboard-support"></a>键盘支持
-* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用“FocusedBorderColor”**[](properties-color-border.md)** 和“FocusedBorderThickness”**[](properties-color-border.md)** 来实现此目的。
+* **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
 * “AutoStart”应为“false”，因为它可能会使键盘用户难以快速停止播放。
