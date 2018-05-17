@@ -1,25 +1,18 @@
 ---
 title: 在 Web 浏览器中运行应用的快速入门 | Microsoft Docs
 description: 在本快速入门教程中，你将了解如何在 Web 浏览器中运行应用
-services: powerapps
-suite: powerapps
-documentationcenter: na
 author: SKjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
+ms.component: pa-user
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 03/07/2018
 ms.author: sharik
-ms.openlocfilehash: 265061b8432bc33a8c60b1b268b52c49af4e65b1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: c188294e8b09dbcc25152715daec8e377763af11
+ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="quickstart-run-an-app-in-a-web-browser"></a>快速入门：在 Web 浏览器中运行应用
 在创建应用或者某人与你共享应用时，可以在 Windows、iOS、Android 上或 Web 浏览器中运行此应用。 在本快速入门教程中，你将了解如何在 Web 浏览器中从 [Dynamics 365 主页](https://home.dynamics.com)运行画布或模型驱动应用。
@@ -51,7 +44,7 @@ ms.lasthandoff: 03/22/2018
 ![](./media/run-app-browser/web-login.png)
 
 ## <a name="connect-to-data"></a>连接到数据
-如果应用需要连接数据源，或必须征得同意才能使用设备功能（例如照相机或定位服务），必须先确认连接或予以同意，然后才能使用应用。 通常情况下，只会在首次连接时看到提示。
+如果应用需要连接数据源，或须具有相应权限才能使用设备功能（例如照相机或定位服务），必须先确认连接或予以同意，才能使用应用。 通常情况下，只会在首次连接时看到提示。
 
 ![连接](./media/run-app-browser/app-connection.png)
 

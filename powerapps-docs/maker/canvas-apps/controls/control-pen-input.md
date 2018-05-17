@@ -93,16 +93,16 @@ ShowControls – 音频或视频播放器是否显示播放按钮和音量滑块
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：
-* BorderColor**[](properties-color-border.md)** 和控件范围之外的颜色（如果有边框）
-* Fill**[](properties-color-border.md)** 和控件范围之外的颜色（如果没有边框）
+* **[BorderColor](properties-color-border.md)** 和控件范围之外的颜色（如果有边框）
+* **[Fill](properties-color-border.md)** 和控件范围之外的颜色（如果没有边框）
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* “AccessibleLabel”**[](properties-accessibility.md)** 应存在。
+* **[“AccessibleLabel”](properties-accessibility.md)** 应存在。
 
     > [!IMPORTANT]
-> 屏幕阅读器用户无法访问“笔输入”。 始终提供输入的替代形式。 例如，如果需要草图，请考虑添加“添加图片”**[](control-add-picture.md)** 控件，以便用户上传图像。 可以提供这两种方法，用户可以选择他们更熟悉的一种方法。
+> 屏幕阅读器用户无法访问“笔输入”。 始终提供输入的替代形式。 例如，如果需要草图，请考虑添加 **[“添加图片”](control-add-picture.md)** 控件，以便用户上传图像。 可以提供这两种方法，用户可以选择他们更熟悉的一种方法。
 
 ### <a name="keyboard-support"></a>键盘支持
 
 > [!IMPORTANT]
-> 键盘用户无法访问“笔输入”。 始终提供输入的替代形式。 例如，如果需要签名，请考虑添加“文本输入”**[](control-text-input.md)**，以便用户输入其名称。 可以提供这两种方法，用户可以选择他们更熟悉的一种方法。
+> 键盘用户无法访问“笔输入”。 始终提供输入的替代形式。 例如，如果需要签名，请考虑添加 **[“文本输入”](control-text-input.md)**，以便用户输入其名称。 可以提供这两种方法，用户可以选择他们更熟悉的一种方法。

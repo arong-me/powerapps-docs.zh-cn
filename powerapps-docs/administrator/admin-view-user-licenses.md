@@ -1,25 +1,18 @@
 ---
 title: 有关下载租户中活动用户列表的快速入门 | Microsoft Docs
 description: 本快速入门教程介绍如何下载租户中活动用户的列表
-services: powerapps
-suite: powerapps
-documentationcenter: na
 author: SKjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
+ms.component: pa-admin
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: 8d1f04f5b559e179e1549c92e75c16dac79210df
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: e36dcd767f2738feef32da0f28a56b8f3f014ecb
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="quickstart-download-a-list-of-active-users-in-your-tenant"></a>快速入门：下载租户中活动用户的列表
 若为 365 全局管理员或 Azure Active Directory 租户管理员，可以下载租户中活跃用户的列表，这样不仅能确定谁访问过 PowerApps 和/或 Microsoft Flow，还能查看分配给这些用户的许可证。

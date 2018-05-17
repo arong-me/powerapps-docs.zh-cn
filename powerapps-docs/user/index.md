@@ -1,25 +1,18 @@
 ---
-title: 查找并运行应用概述主题 | Microsoft 文档
-description: 查找并运行应用概述主题
-services: powerapps
-suite: powerapps
-documentationcenter: na
-author: skjerland
+title: 如何查找并运行应用？ | Microsoft Docs
+description: 有关如何查找和运行 PowerApps 应用的概述。
+author: SKjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-user
+ms.topic: overview
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: cc1483fbaffaac51f3c0999996cb3f91fac9e64a
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 484f6efb0c10bfa5a1d0e5ccdb0939422ddaf835
+ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="how-do-i-find-and-run-apps"></a>如何查找并运行应用？
 无论是面向在现场工作的移动工作者还是热门医院里业务繁忙的医生，应用制造商都可以创建基于任务和角色的定制画布应用来适应所需的工作方式。 画布应用制造商可自定义画布应用的几乎各个方面，并可连接多个数据源，帮助用户集中精力完成正在处理的任务。

@@ -226,16 +226,6 @@
       items:
         - name: 创建实体
           href: ./common-data-service/data-platform-create-entity.md
-        - name: 通过数据创建自定义实体
-          href: ./common-data-service/data-platform-cds-newentity-pq.md
-        - name: 创建选项集
-          href: ./common-data-service/custom-picklists.md
-        - name: 创建关系
-          href: ./common-data-service/data-platform-entity-lookup.md
-        - name: 创建业务规则
-          href: ./common-data-service/data-platform-create-business-rule.md
-        - name: 删除自定义实体
-          href: ./common-data-service/data-platform-delete-entity.md
     - name: 教程
       items:
         - name: 创建带组件的自定义实体
@@ -250,6 +240,16 @@
       items:
         - name: 管理实体中的自定义字段
           href: ./common-data-service/data-platform-manage-fields.md
+        - name: 通过数据创建自定义实体
+          href: ./common-data-service/data-platform-cds-newentity-pq.md
+        - name: 创建选项集
+          href: ./common-data-service/custom-picklists.md
+        - name: 创建实体间的关系
+          href: ./common-data-service/data-platform-entity-lookup.md
+        - name: 创建业务规则
+          href: ./common-data-service/data-platform-create-business-rule.md
+        - name: 删除自定义实体
+          href: ./common-data-service/data-platform-delete-entity.md
     - name: 参考
       items:
         - name: 要求 Dynamics 365 许可证的受限实体

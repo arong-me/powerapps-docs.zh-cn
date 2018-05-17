@@ -1,25 +1,18 @@
 ---
 title: 创建环境的快速入门 | Microsoft Docs
 description: 在本快速入门中，你将了解如何创建环境
-services: powerapps
-suite: powerapps
-documentationcenter: na
 author: skjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
+ms.component: pa-admin
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: a9138c636d70ea4701cbf685c3d7c7965c0e8469
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: 322886a485a863d5ebf505ba2d1f5763dcfea60e
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="quickstart-create-an-environment"></a>快速入门：创建环境
 环境是用来存储、管理和共享组织的业务数据、应用和流的空间。 还可以将环境用作分隔具有不同角色、安全要求或目标受众的应用的容器。 PowerApps 自动为每个租户创建一个默认环境，并由相应租户中的所有用户共享。
@@ -45,7 +38,7 @@ ms.lasthandoff: 04/23/2018
     ![文件和共享](./media/create-environment/new-environment-dialog.png)
 3. 环境创建后，会在对话框中收到一条确认消息并且会提示你创建数据库。 单击或点击“创建数据库”启用对 Common Data Service 的访问。
 
-    **注意：**此时，仅可以在 Azure Active Directory 租户主区域中创建数据库。
+    **注意：** 此时，仅可以在 Azure Active Directory 租户主区域中创建数据库。
 
     ![文件和共享](./media/create-environment/create-database-dialog.png)
 4. 为数据库中存储的数据选择货币和语言。 数据库创建后，将无法更改货币或语言。 完成后，单击或点击“创建数据库”。

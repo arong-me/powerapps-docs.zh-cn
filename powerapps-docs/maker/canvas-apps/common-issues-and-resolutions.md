@@ -1,8 +1,6 @@
 ---
 title: PowerApps 常见问题和解决方法 | Microsoft Docs
-description: 了解 PowerApps 相关问题和解决方法
-services: ''
-suite: powerapps
+description: PowerApps 中的常见问题及解决方法列表。
 documentationcenter: na
 author: skjerland
 manager: kfile
@@ -10,19 +8,25 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/12/2018
+ms.topic: conceptual
+ms.component: canvas
+ms.date: 05/03/2018
 ms.author: sharik
-ms.openlocfilehash: 8a241ff41abf5f3fe804330d6678b70cf0576ceb
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: b37672c4b78cf097eb49a05306ecf3eb8311476f
+ms.sourcegitcommit: 99d50f9a79fe4f35ba56f365de6593abd893978e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/06/2018
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps 常见问题和解决方法
+本文列出了用户在使用 PowerApps 时可能遇到的一些常见问题。 并在适用情况下提供了解决方法。
+
 ## <a name="recently-addedchanged"></a>最近添加/更改的内容
+1. **库中的组合框控件**
+
+    在图库中使用“组合框”控件时，用户滚动库时不保留其选项。 如果在不滚动的库中使用“组合框”控件，将不出现此问题。 当前未提供解决方法。
+
+
 1. **使用自定义图像作为应用图标**
 
     在 PowerApps Studio for Windows 版本 3.18043 中，无法上传自定义图像以将其用作应用图标。 若要解决此问题，请使用 [PowerApps Studio for web](https://web.powerapps.com) 上传自定义图像。 或者，可以使用 PowerApps Studio for Windows 中的一个图标并自定义背景色。

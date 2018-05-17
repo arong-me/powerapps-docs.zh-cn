@@ -24,7 +24,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="description"></a>描述
 如果要从最左侧列中包含标签的表中显示相对数据，以及显示左起第二列中的值，请添加“饼图”控件。
 
-此控件是包含三个控件的分组控件：标题标签**[](control-text-box.md)**、图表图形和图例。
+此控件是包含三个控件的分组控件：**[标题标签](control-text-box.md)**、图表图形和图例。
 
 ## <a name="chart-key-properties"></a>图表关键属性
 **[Items](properties-core.md)** - 控件中显示的数据源，如库、列表或图表。
@@ -97,10 +97,10 @@ ms.lasthandoff: 04/26/2018
 在以下项之间必须有足够的颜色对比度：
 * “ItemColorSet”中的每个项
 * “ItemColorSet”中的所有项和背景色
-* Color**[](properties-color-border.md)** 和背景色
+* **[Color](properties-color-border.md)** 和背景色
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* “图表图形”前必须有一个便签**[](control-text-box.md)** 作为标题。
+* “图表图形”前必须有一个便签作为**[标题](control-text-box.md)**。
 
     > [!NOTE]
 > “图表图形”和“图例”对屏幕阅读器用户隐藏。 作为替代方法，将向用户显示表格形式的数据。 他们还可以在用于在图表中选择数据的按钮之间循环。

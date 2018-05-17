@@ -102,7 +102,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：
-* Fill**[](properties-color-border.md)** 和任何子控件。 例如，如果卡片包含标签**[](control-text-box.md)**，而标签具有透明填充，则卡片的 Fill**[](properties-color-border.md)** 将有效地成为标签的背景色。 因此，卡片的“Fill”**[](properties-color-border.md)** 和标签的“Color”**[](properties-color-border.md)** 之间应具有足够的对比度。
+* **[Fill](properties-color-border.md)** 和任何子控件。 例如，如果卡片包含**[标签](control-text-box.md)**，而标签具有透明填充，则卡片的 **[Fill](properties-color-border.md)** 将有效地成为标签的背景色。 因此，卡片的**[“Fill”](properties-color-border.md)** 和标签的**[“Color”](properties-color-border.md)** 之间应具有足够的对比度。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
 * “DisplayName”必须存在。

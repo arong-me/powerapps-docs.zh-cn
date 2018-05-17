@@ -147,10 +147,10 @@ PowerApps 在 2017 年 5 月 5 日引入了“数据表”控件。 此部分介
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：
-* Color[](properties-color-border.md) 和 Fill[](properties-color-border.md)
+* [Color](properties-color-border.md) 和 [Fill](properties-color-border.md)
 * HeadingColor 和 HeadingFill
 * SelectedColor 和 SelectedFill
-* HoverColor[](properties-color-border.md) 和 HoverFill[](properties-color-border.md)
+* [HoverColor](properties-color-border.md) 和 [HoverFill](properties-color-border.md)
 
 这是除[标准颜色对比度](../accessible-apps-color.md)以外的要求。
 

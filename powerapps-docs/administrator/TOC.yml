@@ -53,5 +53,5 @@
           href: common-data-service-gdpr-dsr-guide.md
 - name: 参考
   items:
-    - name: 对 PowerApps 的 PowerShell 支持（预览）
+    - name: 对 PowerApps 的 PowerShell 支持（预览版）
       href: powerapps-powershell.md

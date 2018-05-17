@@ -99,8 +99,8 @@ WrapCount - 每行或每列（具体取决于是水平布局还是垂直布局�
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 ### <a name="color-contrast"></a>颜色对比度
 如果在库项中单击任何位置都是要选择它，那么在以下项之间必须有足够的颜色对比度：
-* BorderColor**[](properties-color-border.md)** 和库外的颜色（如果没有边框）
-* Fill**[](properties-color-border.md)** 和库范围之外的颜色（如果没有边框）
+* **[BorderColor](properties-color-border.md)** 和库外的颜色（如果没有边框）
+* **[Fill](properties-color-border.md)** 和库范围之外的颜色（如果没有边框）
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
 * **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
@@ -110,7 +110,7 @@ WrapCount - 每行或每列（具体取决于是水平布局还是垂直布局�
 
 ### <a name="keyboard-support"></a>键盘支持
 * 请考虑将“ShowScrollbar”设置为“true”。 在大多数触摸屏设备上，在开始滚动之前，不会显示滚动条。
-* 如果在库项中单击任何位置都是要选择它，还必须为键盘用户提供选择库项的方法。 例如，添加一个按钮**[](control-button.md)**，并将其“OnSelect”属性设置为“Select(Parent)”。
+* 如果在库项中单击任何位置都是要选择它，还必须为键盘用户提供选择库项的方法。 例如，添加一个 **[按钮](control-button.md)** ，并将其“OnSelect”属性设置为“Select(Parent)”。
 
     > [!NOTE]
-> 库内的键盘导航顺序不考虑库外控件。 库内控件的 TabIndex**[](properties-accessibility.md)** 具有范围限制。 请参阅[辅助功能属性](properties-accessibility.md)了解详细信息。
+> 库内的键盘导航顺序不考虑库外控件。 库内控件的 **[TabIndex](properties-accessibility.md)** 具有范围限制。 请参阅[辅助功能属性](properties-accessibility.md)了解详细信息。

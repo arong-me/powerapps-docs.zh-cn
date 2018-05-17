@@ -178,4 +178,4 @@ Valid – [卡片](control-card.md)或“编辑窗体”控件是否包含可以
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* 请考虑使用标签**[](control-text-box.md)** 将标题添加到窗体。
+* 请考虑使用 **[标签](control-text-box.md)** 将标题添加到窗体。

@@ -1,25 +1,18 @@
 ---
 title: 下载环境中创建的应用列表的快速入门 | Microsoft Docs
-description: 在本快速入门中，你将了解如何下载环境中创建的应用列表
-services: powerapps
-suite: powerapps
-documentationcenter: na
-author: skjerland
+description: 在本快速入门中，你将了解如何下载环境中创建的应用列表。
+author: SKjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
+ms.component: pa-admin
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: debe9dd0ab3aa948537820cccd3304a6b4225c54
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: a51e6b0cb8e9af517d55f7bad39fbe83a1a55098
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="quickstart-download-a-list-of-apps-created-in-your-environments"></a>快速入门：下载环境中创建的应用列表
 如果你是环境管理员，那么你可以查看和下载你管理的环境中创建的应用列表。 如果你是 365 全局管理员或 Azure Active Directory 租户管理员，那么你可以查看和下载组织所有环境中创建的应用列表。

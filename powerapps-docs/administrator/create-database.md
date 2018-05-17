@@ -1,27 +1,22 @@
 ---
-title: 创建 Common Data Service 数据库 | Microsoft 文档
-description: 创建 Common Data Service 数据库。
+title: 创建 Common Data Service (CDS) for Apps 数据库 | Microsoft Docs
+description: 有关如何创建 Common Data Service (CDS) for Apps 的演练。
 services: powerapps
-documentationcenter: na
 author: manasmams
-manager: kfend
-editor: ''
-tags: ''
+manager: kfile
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: c32be4dd25da1c2267043b061102b2714a109cc5
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 3343e8cd81e23d4938466d12ddca2e0a85dc12c8
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
-# <a name="create-a-common-data-service-database"></a>创建 Common Data Service 数据库
-可以将 Common Data Service 用作数据存储，从而创建数据库并生成应用。 可以创建你自己的自定义实体，也可以使用预定义的实体。 若要创建数据库，要么必须先创建一个环境，要么必须以“环境管理员”身份分配到现有环境。此外，还必须分配有相应的许可证。 若要了解如何购买 Common Data Service 使用套餐，请参阅[定价信息](pricing-billing-skus.md)。
+# <a name="create-a-common-data-service-for-apps-database"></a>创建 Common Data Service for Apps 数据库
+可以将 Common Data Service (CDS) for Apps 用作数据存储，从而创建数据库并生成应用。 可以创建你自己的自定义实体，也可以使用预定义的实体。 若要创建数据库，要么必须先创建一个环境，要么必须以“环境管理员”身份分配到现有环境。此外，还必须分配有相应的许可证。 若要了解如何购买 CDS for Apps 使用套餐，请参阅[定价信息](pricing-billing-skus.md)。
 
 创建数据库的方法有多种：
 
@@ -45,7 +40,7 @@ ms.lasthandoff: 04/26/2018
 
 
 
-## <a name="create-a-database-in-the-entities-pane-of-powerappscom"></a>在 powerapps.com 的“实体”窗格中创建数据库
+## <a name="create-a-database-in-the-entities-pane-of-powerapps"></a>在 PowerApps 的“实体”窗格中创建数据库
 1. 在 [powerapps.com](https://web.powerapps.com) 上，展开“数据”部分，然后单击或点击左侧导航窗格中的“实体”。
 
 2. 单击“创建数据库”以创建数据库。

@@ -131,10 +131,10 @@ YLabelAngle - 折线图或柱形图 y 轴旁边标签的角度。
 在以下项之间必须有足够的颜色对比度：
 * “ItemColorSet”中的每个项
 * “ItemColorSet”中的所有项和背景色
-* Color**[](properties-color-border.md)** 和背景色
+* **[Color](properties-color-border.md)** 和背景色
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* “图表图形”前必须有一个便签**[](control-text-box.md)** 作为标题。
+* “图表图形”前必须有一个**[便签](control-text-box.md)** 作为标题。
 * 请考虑添加图表图形的摘要。 例如，“折线图显示本年度 3 月和 8 月之间销售额的稳定增长”。
 
     > [!NOTE]

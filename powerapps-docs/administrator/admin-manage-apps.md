@@ -1,25 +1,18 @@
 ---
 title: 管理在组织中创建的应用 | Microsoft Docs
-description: 演练：如何管理在组织中创建的应用
-services: powerapps
-suite: powerapps
-documentationcenter: na
-author: skjerland
+description: 有关如何管理组织中创建的 PowerApps 应用的演练
+author: SKjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: ccecf87da6ea93cf9764cce7fd9449e1e5c75934
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 32ac9582ef9319d1e48c309a700707a11fc455c0
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="manage-apps-created-in-your-organization"></a>管理在组织中创建的应用
 环境管理员、Office 365 全局管理员或 Azure Active Directory 租户管理员可管理组织中创建的应用。

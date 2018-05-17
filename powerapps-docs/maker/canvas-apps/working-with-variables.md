@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: d77bc3c90b16fae60fb0daf78376beaa31d67098
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: 66b3183f6b1215fc0de2a763da2388698501a9b7
+ms.sourcegitcommit: 99d50f9a79fe4f35ba56f365de6593abd893978e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/06/2018
 ---
 # <a name="understand-variables-in-powerapps"></a>了解 PowerApps 中的变量
 如果你使用过其他编程工具（例如 Visual Basic 或 JavaScript），你可能会问：**变量在哪里？** PowerApps 稍有不同，需要不同的方法。 与其去获取变量，不妨问自己：**我会在 Excel 中做什么？**
@@ -257,5 +257,5 @@ PowerApps 中有三种类型的变量：
 12. 按 F5 键再次预览，在文本输入控件中输入数字，然后选择按钮。  选择“保存”按钮。  关闭并重新加载应用，然后选择“加载”按钮以重新加载集合。  
     
     > [!NOTE]
-    > 在 Web 浏览器中运行时，SaveData 和 LoadData 不起作用。 必须使用适用于 Windows 的 PowerApps Studio 或 PowerApps Studio。
+    > SaveData 和 LoadData 在 PowerApps Studio 中不起作用，但可在 PowerApps Mobile 中使用。
 

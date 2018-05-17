@@ -7,11 +7,11 @@ ms.topic: tutorial
 ms.component: canvas
 ms.date: 04/24/2018
 ms.author: anneta
-ms.openlocfilehash: 3138969cc51d0d0964692d4c53101b6a145ba1cf
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: 7a51e2a734426973721fbcb21305f96e6ba7b222
+ms.sourcegitcommit: 99d50f9a79fe4f35ba56f365de6593abd893978e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/06/2018
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>教程：在 PowerApps 中自定义库
 本教程将介绍自定义库，及对已在 Microsoft PowerApps 中自动生成的应用进行其他更改。 即使不进行这些更改，用户也可以管理应用中的数据，但是，如果对其进行自定义来满足组织需要，则可以更加轻松使用该应用：
@@ -33,16 +33,18 @@ ms.lasthandoff: 05/03/2018
 ## <a name="open-the-generated-app"></a>打开生成的应用
 1. 登录 [PowerApps](https://web.powerapps.com)，然后选择左边缘附近的“应用”。
 
-    ![PowerApps 主页](./media/customize-layout-sharepoint/sign-in.png)
+    [![PowerApps 主页](./media/customize-layout-sharepoint/sign-in.png)](./media/customize-layout-sharepoint/sign-in.png#lightbox)
 
 1. 找到你生成的应用，选择其省略号图标 (...)，然后选择“编辑”。
 
+    ![打开应用进行编辑](./media/customize-layout-sharepoint/open-app.png)
+
 ## <a name="change-the-layout"></a>更改布局
-1. 在浏览屏幕上，单击或点击帐户列表中除第一项之外的任何项来选择库。
+1. 在左侧导航窗格中，选择“BrowseGallery1”。
 
     选择库后，会有带句柄的选择框环绕它。
 
-    ![所选的库](./media/customize-layout-sharepoint/select-gallery.png)
+    ![选择库](media/customize-layout-sharepoint/select-gallery-1.png)
 
 1. 在右边缘附近，选择“帐户”以打开“数据”窗格。
 
@@ -56,7 +58,7 @@ ms.lasthandoff: 05/03/2018
 
     ![选择仅限标题的布局](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. 在“数据”窗格中，打开标题的选项列表。
+1. 在“数据”窗格中，打开“Title2”的选项列表。
 
     ![选择仅限标题的布局](./media/customize-layout-sharepoint/show-title-options.png)
 
@@ -66,7 +68,7 @@ ms.lasthandoff: 05/03/2018
 
     ![最终库](./media/customize-layout-sharepoint/final-gallery.png)
 
-## <a name="change-the-sort-and-search-columns"></a>更改排序和搜索列
+## <a name="change-sort-and-search-columns"></a>更改排序和搜索列
 1. 按前一部分所述选择库。
 
     ![选择库](./media/customize-layout-sharepoint/select-gallery-title.png)
@@ -88,7 +90,7 @@ ms.lasthandoff: 05/03/2018
 
     有关这些函数和其他函数的详细信息，请参阅[公式参考](formula-reference.md)。
 
-## <a name="test-sorting-and-searching"></a>测试排序和搜索
+### <a name="test-sorting-and-searching"></a>测试排序和搜索
 1. 按 F5 键（或选择右上角附近的播放按钮）打开“预览”模式。
 
     ![打开预览模式](./media/customize-layout-sharepoint/open-preview.png)
