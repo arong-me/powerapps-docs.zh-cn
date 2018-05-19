@@ -45,9 +45,9 @@ ChangePictureText – 上传图像时按钮上显示的文本。
 
 **[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件边框的颜色。
 
-[DisabledColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件中的文本颜色。
+**[DisabledColor](properties-color-border.md)** – 控件的 **[DisplayMode](properties-core.md)** 属性设置为 Disabled**Disabled** 时，该控件中的文本颜色。
 
-[DisabledFill](properties-color-border.md) – 控件的“DisplayMode”**[](properties-core.md)** 属性设置为“Disabled”时，该控件的背景色。
+**[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode”**[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
 
 **[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
@@ -140,12 +140,12 @@ ChangePictureText – 上传图像时按钮上显示的文本。
 适用[按钮](control-button.md)和[图像](control-image.md)的相同准则。 此外，请考虑以下方面：
 
 ### <a name="color-contrast"></a>颜色对比度
-* “添加媒体按钮”必须在其文本和背景之间有足够的对比度。 由于已上传的图像可能具有不同的颜色，请在“添加媒体按钮”上使用不透明的 Fill**[](properties-color-border.md)** 以确保一致对比度。
+* “添加媒体按钮”必须在其文本和背景之间有足够的对比度。 由于已上传的图像可能具有不同的颜色，请在“添加媒体按钮”上使用不透明的 **[Fill](properties-color-border.md)** 以确保一致对比度。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
 * “添加媒体按钮”必须具有“Text”和“ChangePictureText”，提示用户添加或更改图片。
 
 ### <a name="keyboard-support"></a>键盘支持
-* “添加媒体按钮”必须具有为零或更大的 TabIndex**[](properties-accessibility.md)**，以便键盘用户可以导航到它。
-* “添加媒体按钮”必须具有清晰可见的焦点指示器。 可以使用“FocusedBorderColor”**[](properties-color-border.md)** 和“FocusedBorderThickness”**[](properties-color-border.md)** 来实现此目的。
+* “添加媒体按钮”必须具有为零或更大的 **[TabIndex](properties-accessibility.md)**，以便键盘用户可以导航到它。
+* “添加媒体按钮”必须具有清晰可见的焦点指示器。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
  

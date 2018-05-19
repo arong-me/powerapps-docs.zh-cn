@@ -1,27 +1,27 @@
 ---
 title: PowerApps 常见问题和解决方法 | Microsoft Docs
 description: PowerApps 中的常见问题及解决方法列表。
-documentationcenter: na
 author: skjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
 ms.component: canvas
-ms.date: 05/03/2018
+ms.date: 05/10/2018
 ms.author: sharik
-ms.openlocfilehash: b37672c4b78cf097eb49a05306ecf3eb8311476f
-ms.sourcegitcommit: 99d50f9a79fe4f35ba56f365de6593abd893978e
+ms.openlocfilehash: 71e6d6977ff84ac8131acb9353f919c5ee80995b
+ms.sourcegitcommit: fe556abcfd6bdfeb5fdeea8f07b185b4b502d02f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps 常见问题和解决方法
-本文列出了用户在使用 PowerApps 时可能遇到的一些常见问题。 并在适用情况下提供了解决方法。
+本文列出了你在使用 PowerApps 时可能遇到的一些常见问题。 并在适用情况下提供了解决方法。
 
 ## <a name="recently-addedchanged"></a>最近添加/更改的内容
+1. **从嵌入的应用启动网站**
+
+    Internet Explorer 和 Microsoft Edge 浏览器可能会阻止启动处于受保护模式的 URL 或网站或者比加载的应用中的网站更低安全性的区域。 若要解决此问题，请为你的浏览器[更改安全和隐私设置](https://support.microsoft.com/en-us/help/17479/windows-internet-explorer-11-change-security-privacy-settings)。
+
 1. **库中的组合框控件**
 
     在图库中使用“组合框”控件时，用户滚动库时不保留其选项。 如果在不滚动的库中使用“组合框”控件，将不出现此问题。 当前未提供解决方法。
