@@ -1,6 +1,6 @@
 - name: 入门
-  href: 'get-started.yml#step-1'
+  href: get-started.yml?tutorial-step=1
 - name: 利用 SharePoint 创建应用
-  href: 'create-app-sharepoint.yml#step-1'
+  href: create-app-sharepoint.yml?tutorial-step=1
 - name: 管理应用
-  href: 'manage-apps.yml#step-1'
+  href: manage-apps.yml?tutorial-step=1
