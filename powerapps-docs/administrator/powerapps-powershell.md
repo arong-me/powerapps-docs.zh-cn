@@ -1,26 +1,18 @@
 ---
-title: PowerShell 支持 | Microsoft 文档
-description: 介绍不同的 PowerShell cmdlet，并演练如何安装和运行
-services: powerapps
-suite: powerapps
-documentationcenter: na
+title: PowerShell 支持（预览版）| Microsoft Docs
+description: 介绍不同的 PowerShell cmdlet，并演练如何安装和运行。
 author: jamesol-msft
 manager: kfile
-editor: ''
-tags: ''
-ms-topic: article
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: reference
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 69508b2127c5c919db4a334045c6eed3bb9374af
-ms.sourcegitcommit: 0a781b50a8551f2e61c22725ef1c43ba4fdf752a
+ms.openlocfilehash: 953efbabcdce55ac58376f927d5e399e69a40974
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="powershell-support-for-powerapps-preview"></a>对 PowerApps 的 PowerShell 支持（预览版）
 随着面向应用创建者和管理员的 PowerShell cmdlet 预览版的推出，可以在 [PowerApps](https://web.powerapps.com) 或 [PowerApps 管理中心](https://admin.powerapps.com)自动执行许多目前只能手动进行的监视和管理任务。

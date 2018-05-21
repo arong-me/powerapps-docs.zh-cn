@@ -1,24 +1,18 @@
 ---
 title: 响应对删除客户数据的数据主体权限 (DSR) 请求 | Microsoft Docs
-description: 演练如何响应对删除 PowerApps 客户数据的数据主体权限 (DSR) 请求
-suite: powerapps
-documentationcenter: na
+description: 演练如何响应对删除 PowerApps 客户数据的数据主体权限 (DSR) 请求。
 author: jamesol-msft
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: e4f555416aadb90d882717072f614ccb958fa733
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 724ac9217e1a336aaea8139375ff7d612eb83b53
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-delete-powerapps-customer-data"></a>响应对删除 PowerApps 客户数据的数据主体权限 (DSR) 请求
 
@@ -64,7 +58,7 @@ PowerApps 允许用户生成业务线应用程序，这些应用程序是组织�
 
 \** 在引入 CDS for Apps 后，如果数据库是在环境中创建的，那么环境权限和模型驱动应用权限就会作为记录存储在该数据库实例中。 有关如何响应 CDS for Apps 用户的 DSR 的指导，请参阅[响应针对 Common Data Service for Apps 客户数据的数据主体权限 (DSR) 请求](common-data-service-gdpr-dsr-guide.md)。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 ### <a name="for-users"></a>对于用户
 任何具有有效 PowerApps 许可证的用户都可以使用 [PowerApps](https://web.powerapps.com) 或[应用创建者的 PowerShell cmdlet](https://go.microsoft.com/fwlink/?linkid=871448) 来执行本文档所述的用户操作。

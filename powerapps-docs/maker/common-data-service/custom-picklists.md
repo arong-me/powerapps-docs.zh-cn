@@ -1,24 +1,20 @@
 ---
-title: 创建选项集的快速入门 | Microsoft Docs
-description: 在本快速入门教程中将创建选项集
-documentationcenter: na
+title: 创建选项集 | Microsoft Docs
+description: 有关如何创建选项集的分步说明。
 author: clwesene
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: conceptual
 ms.component: cds
-ms.date: 3/21/2018
+ms.topic: conceptual
+ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: e31bec33a90a962e302e2bc92c0f2a676ce1a4cc
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 188add46a8e52cfeb75ef1bb670ca3b457963024
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
-# <a name="quickstart-create-an-option-set"></a>快速入门：创建选项集
+# <a name="create-an-option-set"></a>创建选项集
 
 选项集可以将固定值的下拉列表包含到应用的用户，以确保数据一致性，有时在其他应用程序中将它称为选择列表或选择字段。 与实体相似，存在两个标准的选项集，并可以创建自定义选项集以便在应用中使用。
 

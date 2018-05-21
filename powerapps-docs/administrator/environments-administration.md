@@ -1,25 +1,18 @@
 ---
 title: 管理环境 | Microsoft 文档
-description: 管理 PowerApps 中的环境，包括创建、重命名、删除和安全性
-services: powerapps
-suite: powerapps
-documentationcenter: na
+description: 了解如何管理 PowerApps 中的环境，包括创建、重命名、删除和安全性
 author: manasmams
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: c11c1d2122cf4306aede621e3c98a95a6ec9a967
-ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
+ms.openlocfilehash: cfc120cb135c9fe6007b4dc57382a2e4ade821af
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="administer-environments-in-powerapps"></a>管理 PowerApps 中的环境
 在 [PowerApps 管理中心][1]内，管理已创建的环境及已将已添加到其环境管理员或系统管理员角色的环境。 从管理中心可执行以下管理操作：

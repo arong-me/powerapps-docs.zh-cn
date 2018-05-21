@@ -1,28 +1,21 @@
 ---
 title: 配置环境安全设置 | Microsoft Docs
 description: 本主题介绍如何配置环境安全设置。
-services: powerapps
-suite: powerapps
-documentationcenter: na
 author: manasmams
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: f90f7bcdf28388366015a5f5f981e0ab4118f162
-ms.sourcegitcommit: aebffb0bba30e786dd288fb1b79a8bcc4e0bdd9c
+ms.openlocfilehash: d9bd70acaacbbeda98c14337035a233b7c70c181
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="configure-environment-security"></a>配置环境安全设置
-Common Data Service 使用基于角色的安全模型来帮助保护对数据库的访问。 本主题介绍了如何创建保护应用所必需的安全项目。 用户角色可控制对数据的运行时访问，不同于管理环境管理员和环境创建者的环境角色。 有关环境的概述，请参阅[环境概述](environments-overview.md)。
+Common Data Service (CDS) for Apps 使用基于角色的安全模型来帮助保护对数据库的访问。 本主题介绍了如何创建保护应用所必需的安全项目。 用户角色可控制对数据的运行时访问，不同于管理环境管理员和环境创建者的环境角色。 有关环境的概述，请参阅[环境概述](environments-overview.md)。
 
 ## <a name="assign-security-roles-to-users"></a>为用户分配安全角色
 安全角色通过一组访问级别和权限控制用户对数据的访问。 特定的安全角色包括访问级别和权限的组合，这种组合限制了用户对数据的查看以及与数据的交互操作。
@@ -58,9 +51,6 @@ Common Data Service 使用基于角色的安全模型来帮助保护对数据库
 
 7. 选择“确定”更新环境角色分配。
 
-
-
-
 ## <a name="predefined-security-roles"></a>预定义的安全角色
 PowerApps 环境包括预定义的安全角色，它反映访问级别定义为匹配安全最佳做法目标的常见用户任务，该目标为提供对使用应用所需最小业务数据量的访问。
 
@@ -77,7 +67,6 @@ PowerApps 环境包括预定义的安全角色，它反映访问级别定义为�
 - 环境创建者角色不仅可以在环境中创建资源，还可以将环境中生成的应用分配给组织中的其他用户。 可以与个人用户共享应用。 有关详细信息，请参阅[在 PowerApps 中共享应用](../maker/canvas-apps/share-app.md)。
 
 - 应该向制作连接到数据库和需要创建或更新实体和安全角色的用户和环境创建者分配系统自定义角色，因为环境创建者角色没有数据库特权。
-
 
 ## <a name="create-or-configure-a-custom-security-role"></a>创建或配置自定义安全角色
 如果你的应用基于自定义实体，那么必须在用户开始工作前显式指定特权。 若要执行此操作，可以选择执行下列操作之一。

@@ -1,24 +1,20 @@
 ---
-title: 删除自定义实体并清除数据的快速入门 | Microsoft Docs
-description: 删除自定义实体并清除所有数据的快速入门
-documentationcenter: na
+title: 删除自定义实体 | Microsoft Docs
+description: 有关如何删除自定义实体并清除 PowerApp 中的所有数据的分步说明
 author: clwesene
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: conceptual
 ms.component: cds
-ms.date: 3/21/2018
+ms.topic: conceptual
+ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 971016233578c4eadf397d662a0ea74187548635
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 6ef9dc3a1c82fdee9927ffd533ed41386345eaf7
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
-# <a name="quickstart-delete-a-custom-entity"></a>快速入门：删除自定义实体
+# <a name="delete-a-custom-entity"></a>删除自定义实体
 可以删除自定义实体，但无法删除标准实体。
 
 1. 在 [powerapps.com](https://web.powerapps.com) 上，展开“数据”部分，然后单击或点击左侧导航窗格中的“实体”。
@@ -26,6 +22,7 @@ ms.lasthandoff: 04/26/2018
     ![实体详细信息](./media/data-platform-cds-create-entity/entitylist.png "实体列表")
 
 2. 在实体列表中，单击或点击要删除的实体，然后单击或点击命令栏中的“删除实体”选项。
+
 3. 在显示的对话框中，单击或点击“**删除**”来删除该实体。
 
 >[!NOTE]

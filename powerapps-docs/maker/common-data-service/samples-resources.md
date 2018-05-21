@@ -1,29 +1,25 @@
 ---
-title: Common Data Service 示例和其他资源 | Microsoft 文档
-description: 可用于创建应用的示例和其他资源。
-documentationcenter: na
+title: Common Data Service for Apps 示例和其他资源 | Microsoft Docs
+description: 可用于在 PowerApps 中创建应用的示例和其他资源。
 author: clwesene
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: conceptual
 ms.component: cds
-ms.date: 3/17/2018
+ms.topic: conceptual
+ms.date: 03/17/2018
 ms.author: clwesene
-ms.openlocfilehash: 90453f3f560d063cadc2ef331e9de62d0406e1ff
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 405cafabd57ea234d5202076060ee0987b6904db
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
-# <a name="samples-and-other-resources--for-the-common-data-service"></a>Common Data Service 示例和其他资源
+# <a name="samples-and-other-resources-for-common-data-service-for-apps"></a>Common Data Service for Apps 示例和其他资源
 ## <a name="samples"></a>示例
-有多个使用 Common Data Service 的示例。 若要查找这些示例，请在 [powerapps.com](https://web.powerapps.com) 上的导航窗格中选择“主页”。
+有多个使用 Common Data Service (CDS) for Apps 的示例。 若要查找这些示例，请转到 [powerapps.com](https://web.powerapps.com)，然后在导航窗格中选择“主页”。
 
 ## <a name="videos"></a>视频
-可以在 YouTube 上的 [MS PowerApps](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg) 和 [Microsoft Ignite](https://www.youtube.com/channel/UCrhJmfAGQ5K81XQ8_od1iTg) 频道找到更多视频。
+可以在 YouTube 上的 [MS PowerApps](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg) 和 [Microsoft Ignite](https://www.youtube.com/channel/UCrhJmfAGQ5K81XQ8_od1iTg) 频道找到相关视频。
 
 ## <a name="blog-posts"></a>博客文章
 可在 [PowerApps 博客](https://powerapps.microsoft.com/blog/)找到操作指南文章。
@@ -32,5 +28,5 @@ ms.lasthandoff: 04/26/2018
 Microsoft Ignite 会议的许多讲座都有记录，可在 [Microsoft Ignite On-Demand](https://myignite.microsoft.com/videos) （Microsoft Ignite 点播）获取。 搜索“PowerApps”和“通用数据模型”。
 
 ## <a name="overview"></a>概述
-通过 [Common Data Service 和通用数据模型概述](https://docs.microsoft.com/common-data-service/entity-reference/security-model)，深入了解 Common Data Service 和通用数据模型。
+若要了解有关 CDS for Apps 和通用数据模型的详细信息，请参阅 [Common Data Service for Apps 和通用数据模型概述](https://docs.microsoft.com/common-data-service/entity-reference/security-model)。
 

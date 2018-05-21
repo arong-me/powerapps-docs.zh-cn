@@ -1,25 +1,18 @@
 ---
-title: 应用分析 | Microsoft 文档
-description: 查看报告，了解应用的使用情况和性能。
-services: ''
-suite: powerapps
-documentationcenter: na
+title: 查看应用的分析报告 | Microsoft Docs
+description: 查看报告，了解 PowerApps 应用的使用情况和性能。
 author: jamesol-msft
-manager: anneta
-editor: ''
-tags: ''
+manager: kfile
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 08/29/2017
 ms.author: jamesol
-ms.openlocfilehash: e66978f6134919b18f4cfba913f1bb34394d8832
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: ba4b518cdc1b965a26a7e3fc3722dd23d601e693
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="view-analytics-reports-for-your-app"></a>查看应用的分析报告
 你是否构建了一个应用并将其共享到了组织？  你是否想要知道每天有多少个同事在使用它？

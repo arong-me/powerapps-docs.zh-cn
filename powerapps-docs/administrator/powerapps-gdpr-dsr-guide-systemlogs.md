@@ -1,26 +1,18 @@
 ---
-title: 响应针对 PowerApps、Microsoft Flow 和 Common Data Service for Apps 中系统生成的日志的 DSR 请求 | Microsoft Docs
-description: 演练如何响应针对 PowerApps、Microsoft Flow 和 Common Data Service for Apps 中系统生成的日志的 DSR 请求
-services: powerapps
-suite: powerapps
-documentationcenter: na
+title: 响应针对 PowerApps、Microsoft Flow 和 Common Data Service (CDS) for Apps 中系统生成的日志的 DSR 请求 | Microsoft Docs
+description: 演练如何响应针对 PowerApps、Microsoft Flow 和 Common Data Service (CDS) for Apps 中系统生成的日志的 DSR 请求
 author: jamesol-msft
 manager: kfile
-editor: ''
-tags: ''
-ms-topic: article
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: c3086ce05ba748b5387ec4ae5a1e794658b5677a
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 970cf64f9312e1d9f820671d313ee497f3e27b61
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="responding-to-dsr-requests-for-system-generated-logs-in-powerapps-microsoft-flow-and-common-data-service-for-apps"></a>响应 PowerApps、Microsoft Flow 和 Common Data Service for Apps 中系统生成的日志的 DSR 请求
 Microsoft 允许你访问、导出和删除系统生成的日志，根据欧盟 (EU) 个人数据的一般数据保护条例 (GDPR) 的广泛定义，这些日志可能被视为个人数据。 在 GDPR 下，可能被视为个人数据的系统生成日志的示例包括：

@@ -1,25 +1,18 @@
 ---
-title: 环境概述 | Microsoft 文档
-description: 环境的概念及其使用方式
-services: powerapps
-suite: powerapps
-documentationcenter: na
+title: 环境概述 | Microsoft Docs
+description: 了解 PowerApps 中的环境及其用法
 author: manasmams
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 4b71f931aa3e8263166d52b68ba375917405c2b8
-ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
+ms.openlocfilehash: 4973265baf701851ac5c2e8bca9da541b246c068
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="environments-overview"></a>环境概述
 环境是用来存储、管理和共享组织的业务数据、应用和流的空间。 还可以将环境用作分隔具有不同角色、安全要求或目标受众的应用的容器。 环境的使用方式视组织和要生成的应用而定。 例如：

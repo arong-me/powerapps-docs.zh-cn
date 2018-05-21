@@ -1,25 +1,18 @@
 ---
-title: 区域概述 | Microsoft 文档
-description: PowerApps 中的区域：应用的部署位置、可用区域、给定区域的专属功能
-services: ''
-suite: powerapps
-documentationcenter: na
-author: skjerland
-manager: anneta
-editor: ''
-tags: ''
+title: 区域概述 | Microsoft Docs
+description: 了解 PowerApps 中的区域
+author: manasmams
+manager: kfile
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: ab5443ae628a80d52d5bbcb1fa46ceed05391794
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 920cee683dfdeaf55905e7d0973c8d822900cac2
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="regions-overview-in-powerapps"></a>PowerApps 中的区域概述
 ## <a name="how-do-i-find-out-where-my-app-is-deployed"></a>如何确定我的应用的部署位置？

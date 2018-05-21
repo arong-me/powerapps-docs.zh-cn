@@ -1,25 +1,18 @@
 ---
-title: 将应用添加到 Microsoft Teams | Microsoft Docs
-description: 将应用添加到 Microsoft Teams 频道，以便应用的共享对象可以在此频道中打开该应用
-services: ''
-suite: powerapps
-documentationcenter: na
+title: 将应用添加到 Microsoft Teams 快速入门 | Microsoft Docs
+description: 在本快速入门教程中，你将了解如何将应用添加到 Microsoft Teams 频道，以便应用的共享对象可以在此频道中打开该应用。
 author: mgblythe
-manager: anneta
-editor: ''
-tags: ''
+manager: kfile
 ms.service: powerapps
-ms.devlang: na
+ms.component: pa-user
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 01/18/2018
 ms.author: mblythe
-ms.openlocfilehash: 02248cc3e98f256df36bb6a57fac6e66c684a8bf
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 9c670a61f89b8bf038bae117614895f18101fe0c
+ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="quickstart-add-an-app-to-microsoft-teams"></a>快速入门：将应用添加到 Microsoft Teams
 

@@ -1,24 +1,18 @@
 ---
 title: 导出和导入资源 | Microsoft 文档
-description: 导出和导入资源
-services: powerapps
-documentationcenter: na
+description: 了解如何导入和导出 PowerApps 中的资源
 author: nimakms
-manager: kfend
-editor: ''
-tags: ''
+manager: kfile
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 07/28/2017
-ms.author: kfend
-ms.openlocfilehash: c1788d4119d9b4efbeabe8d6fa4fa45f293c2a9d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: nimak
+ms.openlocfilehash: 752bea42eee356e04c2ab72d28a669ccd2771f70
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="export-and-import-resources"></a>导出和导入资源
 如果创建了多个环境来支持数据库和应用的开发，则必须将所做更改从一个环境移至另一个环境。 可使用“导出资源”和“导入资源”在环境之间移动资源。

@@ -1,26 +1,18 @@
 ---
 title: 响应对导出 PowerApps 客户数据的数据主体权限 (DSR) 请求 | Microsoft Docs
-description: 演练如何响应对导出 PowerApps 客户数据的数据主体权限 (DSR) 请求
-services: powerapps
-suite: powerapps
-documentationcenter: na
+description: 演练如何响应对导出 PowerApps 客户数据的数据主体权限 (DSR) 请求。
 author: jamesol-msft
 manager: kfile
-editor: ''
-tags: ''
-ms-topic: article
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 97f5a6a970e07f9908c02074ef97234b58a52894
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 1b9318bcf4624af48e6be95fd22c12c14bf75dff
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-export-powerapps-customer-data"></a>响应对导出 PowerApps 客户数据的数据主体权限 (DSR) 请求
 “数据可移植性权限”允许数据主体以电子格式（这是一种结构化的、常用的、计算机可读和可互操作的格式）请求其个人数据副本，这些数据可能会传输给另一个数据控制者：

@@ -1,26 +1,18 @@
 ---
 title: 在环境和租户之间迁移应用 | Microsoft 文档
-description: 在环境和租户之间迁移应用
-services: powerapps
-suite: powerapps
-documentationcenter: na
+description: 演练如何在环境和租户之间迁移 PowerApps 应用
 author: jamesol-msft
 manager: kfile
-editor: ''
-tags: ''
-ms-topic: article
+ms-topic: conceptual
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 03/21/2018
+ms.component: pa-admin
+ms.topic: conceptual
 ms.author: jamesol
-ms.openlocfilehash: 3a63f525a44d1b617ba872dce7936fc97b151967
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 3a064bdb3f75bf45047e3ae0ff465fde1d2b66fa
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="environment-and-tenant-app-migration-through-packaging"></a>通过打包进行环境和租户应用迁移
 了解如何通过打包将资源从一个环境迁移到另一个环境。 这些环境可以位于同一租户中，也可以跨不同的租户。
@@ -96,36 +88,36 @@ ms.lasthandoff: 03/22/2018
 
 1. 在 http://web.powerapps.com 中，选择环境中的“模型驱动(预览)”设计模式。
 
-  ![选择模型驱动设计模式](./media/environment-and-tenant-migration/select-model-driven.png)
+    ![选择模型驱动设计模式](./media/environment-and-tenant-migration/select-model-driven.png)
 
 2. 在左侧导航栏中选择“高级”启动此环境默认解决方案的解决方案资源管理器
 
-  ![选择“高级”](./media/environment-and-tenant-migration/select-advanced.png)
+    ![选择“高级”](./media/environment-and-tenant-migration/select-advanced.png)
 
 3. 选择“导出解决方案”并完成所需的步骤。  解决方案包文件将在几秒钟内开始下载。
 
-  ![选择导出](./media/environment-and-tenant-migration/select-export-solution.png)
+    ![选择导出](./media/environment-and-tenant-migration/select-export-solution.png)
 
 ## <a name="importing-cds-customization-and-model-driven-apps"></a>导入 CDS 自定义项和模型驱动应用
 遗憾的是，导入 CDS 解决方案包需要体验中的手动变通方法，我们正在积极修复此问题：
 
 1. 在 http://web.powerapps.com 中，选择环境中的“模型驱动(预览)”设计模式。
 
-  ![选择模型驱动设计模式](./media/environment-and-tenant-migration/select-model-driven.png)
+    ![选择模型驱动设计模式](./media/environment-and-tenant-migration/select-model-driven.png)
 
 2. 在左侧导航栏中选择“高级”启动此环境默认解决方案的解决方案资源管理器。
 
-  ![选择“高级”](./media/environment-and-tenant-migration/select-advanced.png)
+    ![选择“高级”](./media/environment-and-tenant-migration/select-advanced.png)
 
 3. 从浏览器复制 URL，进行以下更改，然后导航到浏览器中的新 URL：
 
-  - 当前 URL 结构：https://{orguniquename}.crm.dynamics.com/tools/solution/edit.aspx?id={solutionname}
+    * 当前 URL 结构：https://{orguniquename}.crm.dynamics.com/tools/solution/edit.aspx?id={solutionname}
 
-    ![编辑 URL](./media/environment-and-tenant-migration/edit-url.png)
+        ![编辑 URL](./media/environment-and-tenant-migration/edit-url.png)
 
-  - 新 URL 结构：https://{orguniquename}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
+    * 新 URL 结构：https://{orguniquename}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
 
-      ![选择包](./media/environment-and-tenant-migration/select-package.png)
+        ![选择包](./media/environment-and-tenant-migration/select-package.png)
 
 4. 选择想要导入的 CDS 解决方案包文件并完成向导。
 

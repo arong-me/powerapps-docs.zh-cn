@@ -1,25 +1,18 @@
 ---
 title: 为组织购买 PowerApps | Microsoft 文档
-description: 按照以下步骤操作即可注册为 PowerApps 管理员。
-services: powerapps
-suite: powerapps
-documentationcenter: na
+description: 演练如何以管理员身份注册 PowerApps。
 author: manasmams
-manager: anneta
-editor: ''
-tags: ''
+manager: kfile
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 43d39abbd78723202efd756edf6d070724e3157e
-ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
+ms.openlocfilehash: 4b26c16259a7699f1178641ead8c1b5908106468
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="purchase-powerapps-for-your-organization"></a>为组织购买 PowerApps
 本文介绍了如何以管理员身份为组织购买 PowerApps。 你可以直接通过 PowerApps 网站购买 PowerApps，也可以通过 Office 365 管理中心、Microsoft 代表或合作伙伴购买。 本文将讨论 PowerApps 计划 1 或计划 2 的可用试用选项，然后阐述如何以组织身份购买 PowerApps 计划 1 或计划 2。 有关详细信息，请参阅[组织中的 PowerApps 问答](signup-question-and-answer.md)。
@@ -55,7 +48,7 @@ ms.lasthandoff: 04/06/2018
 ### <a name="purchase-a-subscription-trial"></a>购买订阅试用版
 1. 浏览到 [Office 365 管理中心][6]。
 
-2. 左侧导航窗格中，选择**“计费”->“订阅”**。
+2. 左侧导航窗格中，选择 **“计费”->“订阅”**。
 
 3. 选择右侧的“**+ 添加订阅**”。
 
@@ -70,7 +63,7 @@ ms.lasthandoff: 04/06/2018
 ### <a name="purchase-a-subscription"></a>购买订阅
 1. 浏览到 [Office 365 管理中心][6]。
 
-2. 左侧导航窗格中，选择**“计费”->“订阅”**。
+2. 左侧导航窗格中，选择 **“计费”->“订阅”**。
 
 3. 选择右侧的“**+ 添加订阅**”。
 

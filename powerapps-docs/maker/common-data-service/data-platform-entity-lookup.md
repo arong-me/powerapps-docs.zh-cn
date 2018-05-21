@@ -1,29 +1,24 @@
 ---
-title: 快速入门：通过查找字段构建实体关系 | Microsoft Docs
-description: 快速入门：通过使用查找字段创建实体之间的关系
-documentationcenter: na
+title: 通过使用查找字段创建实体之间的关系 | Microsoft Docs
+description: 有关如何使用查找字段在 PowerApps 中创建实体之间的关系的分步说明。
 author: clwesene
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: conceptual
 ms.component: cds
-ms.date: 3/21/2018
+ms.topic: conceptual
+ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: a607058d1e26f37a4bffa054d9dc148be8b6b011
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: f1952c2349eb54f2c6348f5abc4dee9a4645348a
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
-# <a name="quickstart-create-a-relationship"></a>快速入门：创建关系
+# <a name="create-a-relationship-between-entities"></a>创建实体间的关系
 一个实体中的数据通常与另一个实体中的数据相关。 例如，可能有“教师”和“班级”实体，而“班级”实体可能与“教师”实体间存在查找关系，以显示哪位教师负责这个班级。 可以使用查找字段显示“教师”实体中的数据。 这通常称为查找字段。
 
 ## <a name="define-a-relationship"></a>定义关系
 可以创建从一个实体到另一个实体（或实体与其自身之间）的几种类型的关系。 一个实体可以与多个实体有关系，并且一个实体可以与另一个实体有多种关系。 一些常见关系类型如下：
-
 
 * **多对一** - 在这种关系中，实体 A 中的每条记录可与实体 B 中的多条记录匹配，但是实体 B 中的每条记录只能与实体 A 中的一条记录匹配。例如，一个班级对应一个教室。 这是最常见的关系类型，并在字段列表中显示为查找字段
 * **一对多** - 在这种关系中，实体 B 中的每条记录可与实体 A 中的多条记录匹配，但是实体 A 中的每条记录只能与实体 B 中的一条记录匹配。例如，一位老师负责很多班级。

@@ -1,25 +1,19 @@
 ---
-title: 响应针对 CDS for Apps 客户数据的 DSR 请求 | Microsoft Docs
-description: 演练如何响应针对 CDS for Apps 客户数据的 DSR 请求
-services: powerapps
-suite: powerapps
-documentationcenter: na
+title: 响应针对 Common Data Service (CDS) for Apps 客户数据的 DSR 请求 | Microsoft Docs
+description: 演练如何响应针对 Common Data Service (CDS) for Apps 客户数据的 DSR 请求
 author: jamesol-msft
+ms.reviewer: paulliew
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 04/23/2018
-ms.author: paulliew
-ms.openlocfilehash: 88a3d0c31a9608a901d99a8a901a209f14c13fc0
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.author: jamesol
+ms.openlocfilehash: ef5d646e30f5d09dbfe5f111a3ad018b030f79d9
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-common-data-service-for-apps-customer-data"></a>响应针对 Common Data Service for Apps 客户数据的数据主体权限 (DSR) 请求
 
@@ -77,7 +71,7 @@ CDS for Apps 和 Common Data Service (CDS) 早期版本具有与个人数据交�
 
 ## <a name="user-personal-data-in-cds-for-apps"></a>CDS for Apps 中的用户个人数据
 
-### <a name="prerequisites"></a>必备组件
+### <a name="prerequisites"></a>先决条件
 必须在 Office 365 管理中心创建用户，并为其分配相应的用户许可证和安全角色，以便他们能够访问和使用 CDS for Apps。
 
 标准用户个人数据（例如用户名、用户 ID、电话、电子邮件和地址）保存在 Office 365 管理中心，并在其中得到维护。 系统管理员只能在 Office 365 管理中心更新此个人数据，然后此数据会自动同步到所有环境中的 CDS for Apps 系统用户实体。 系统管理员还可以创建自定义属性，以便在 CDS for Apps 系统用户实体中获取其他用户个人数据，然后手动维护和管理这些属性。
@@ -227,7 +221,7 @@ CDS for Apps 和 Common Data Service (CDS) 早期版本具有与个人数据交�
 
 ## <a name="personal-data-stored-in-databases-of-cds-for-apps"></a>个人数据存储在 CDS for Apps 的数据库中
 
-### <a name="prerequisites"></a>必备组件
+### <a name="prerequisites"></a>先决条件
 可以将个人（如你自己的客户）的个人数据存储在 CDS for Apps 实体中。  
 
 CDS 系统管理员负责维护不同实体中存储的每个人的个人数据的清单，以便这些人可以找到该数据，响应任何 DSR 请求。  
@@ -299,7 +293,7 @@ CDS 系统管理员可以从存储个人数据的记录中删除个人的个人�
 
 ## <a name="personal-data-stored-in-databases-of-the-previous-version-of-cds"></a>存储在 CDS 早期版本数据库中的个人数据
 
-### <a name="prerequisites"></a>必备组件
+### <a name="prerequisites"></a>先决条件
 可以将个人（如你自己的客户）的个人数据存储在 CDS 实体中。  
 
 CDS 系统管理员负责维护不同实体中存储的每个人的个人数据的清单，以便这些人可以找到该数据，响应任何 DSR 请求。  
