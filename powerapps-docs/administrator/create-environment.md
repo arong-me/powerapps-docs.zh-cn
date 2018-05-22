@@ -8,11 +8,11 @@ ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: 322886a485a863d5ebf505ba2d1f5763dcfea60e
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: 50a3819d4a659d48e1372487c5b50dc8295ee398
+ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="quickstart-create-an-environment"></a>快速入门：创建环境
 环境是用来存储、管理和共享组织的业务数据、应用和流的空间。 还可以将环境用作分隔具有不同角色、安全要求或目标受众的应用的容器。 PowerApps 自动为每个租户创建一个默认环境，并由相应租户中的所有用户共享。
@@ -27,7 +27,7 @@ ms.lasthandoff: 05/15/2018
  * PowerApps 环境管理员、Office 365 全局管理员或 Azure Active Directory 租户管理员权限。 有关详细信息，请参阅 [PowerApps 中的环境管理](environments-administration.md)。
 
 ## <a name="sign-in-to-the-powerapps-admin-center"></a>登录到 PowerApps 管理中心
-在 [https://admin.powerapps.com]([https://admin.powerapps.com) 上登录到管理中心。
+在 [https://admin.powerapps.com](https://admin.powerapps.com) 上登录到管理中心。
 
 ## <a name="create-an-environment-and-database"></a>创建环境和数据库
 1. 在导航窗格中，单击或点击“环境”，然后单击或点击“新环境”。

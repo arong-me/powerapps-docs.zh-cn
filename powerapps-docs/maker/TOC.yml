@@ -250,6 +250,10 @@
           href: ./common-data-service/data-platform-create-business-rule.md
         - name: 删除自定义实体
           href: ./common-data-service/data-platform-delete-entity.md
+        - name: 在 Excel 中打开实体数据
+          href: ./common-data-service/data-platform-excel-addin.md
+        - name: 创建 Power BI 报表
+          href: ./common-data-service/data-platform-powerbi-connector.md
     - name: 参考
       items:
         - name: 要求 Dynamics 365 许可证的受限实体
