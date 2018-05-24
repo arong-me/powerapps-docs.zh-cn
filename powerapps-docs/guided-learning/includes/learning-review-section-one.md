@@ -7,7 +7,7 @@ PowerApps 连接你已在使用的**云服务和数据源**，以便你可以利
 最简单的 PowerApps 入门方法是运行示例和模板，生成基于你自己的数据的应用。 你已了解如何生成基于 SharePoint 列表的应用。 现在，你已打下坚实基础，可立即生成和共享应用。 
 
 ## <a name="whats-next"></a>后续部分
-祝贺你！ 你已阅读完 PowerApps 引导式课程的第一部分。 无论你最初的经验如何，我们由衷希望你现在非常明确 PowerApps 概念以及如何开始创建应用。 虽然我们在下面提供了一些实用资源和下载链接，但你仍应学习本引导式课程的更多内容。 如果已准备好，可开始学习如何[创建和自定义 SharePoint 列表的应用](https://docs.microsoft.com/powerapps/guided-learning/create-app-sharepoint#step-1)
+祝贺你！ 你已阅读完 PowerApps 引导式课程的第一部分。 无论你最初的经验如何，我们由衷希望你现在非常明确 PowerApps 概念以及如何开始创建应用。 虽然我们在下面提供了一些实用资源和下载链接，但你仍应学习本引导式课程的更多内容。 如果已准备好，可开始学习如何[创建和自定义 SharePoint 列表的应用](https://docs.microsoft.com/powerapps/guided-learning/create-app-sharepoint?tutorial-step=1)
 
 ## <a name="powerapps-resources"></a>PowerApps 资源
 * 使用 [PowerApps 文档](https://docs.microsoft.com/powerapps/)进行深入探究
