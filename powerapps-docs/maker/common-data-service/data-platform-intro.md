@@ -8,11 +8,11 @@ ms.topic: overview
 ms.component: cds
 ms.date: 05/01/2018
 ms.author: sharik
-ms.openlocfilehash: a2dea7da0cc87ad016d5eff6e04b9e03e66341db
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: fb079689ef76e4ad7815b8410ecff4a475877810
+ms.sourcegitcommit: ba587b467044161d1dbcd73625b37aa52b057270
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="what-is-common-data-service-for-apps"></a>什么是 Common Data Service for Apps？
 使用 Common Data Service (CDS) for Apps，可安全地存储和管理业务应用程序使用的数据。 CDS for Apps 中的数据存储在一组实体中。 实体是一组用于存储数据的记录，类似于表存储数据库中数据的方式。 CDS for Apps 带有一组基本的标准实体（包含典型解决方案），但用户也可创建组织特定的自定义实体，并使用 Power Query 向其填充数据。 应用创建者随后可以使用 PowerApps 通过此数据生成大量应用程序。
@@ -34,7 +34,7 @@ CDS for Apps 中的标准实体和自定义实体都可以为数据提供基于�
 
 ![显示实体列表的屏幕截图。](./media/data-platform-cds-intro/entitylist.png "实体列表")
 
-有关实体的完整列表，请参阅[实体引用](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/reference/about-entity-reference)。
+有关实体的完整列表，请参阅[实体引用](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/about-entity-reference)。
 
 可以通过创建一个或多个自定义实体来扩展标准实体的功能，存储组织专用信息。 有关详细信息，请参阅[如何创建自定义实体](create-custom-entity.md)。
 
