@@ -2,18 +2,17 @@
 title: Microsoft PowerApps 引导式学习课程
 description: 观看本系列有序课程，开启你的学习之旅，了解 Microsoft PowerApps 丰富而强大的各种功能。
 layout: LandingPage
-author: mgblythe
-manager: kfile
+author: AFTOwen
 ms.service: powerapps
 ms.component: canvas
 ms.topic: landing-page
 ms.date: 10/27/2017
-ms.author: mblythe
-ms.openlocfilehash: d79039fd70d2e214b269e0d5be97d208192a16fc
-ms.sourcegitcommit: dc689eb0bc0e60b6f8c2f78a18f7aa114bf84165
+ms.author: anneta
+ms.openlocfilehash: efec5244ee1559d4e440e96f36fa7eed31e8c1a4
+ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 05/26/2018
 ---
 <div id="main" class="v2">
     <div class="container">
