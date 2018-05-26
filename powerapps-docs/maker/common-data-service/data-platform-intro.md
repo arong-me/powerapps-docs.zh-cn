@@ -1,18 +1,18 @@
 ---
 title: 什么是 Common Data Service for Apps？ | Microsoft Docs
 description: 介绍 Common Data Service (CDS) for Apps、实体和服务器端逻辑。
-author: SKjerland
+author: Mattp123
 manager: kfile
 ms.service: powerapps
 ms.topic: overview
 ms.component: cds
 ms.date: 05/01/2018
-ms.author: sharik
-ms.openlocfilehash: fb079689ef76e4ad7815b8410ecff4a475877810
-ms.sourcegitcommit: ba587b467044161d1dbcd73625b37aa52b057270
+ms.author: matp
+ms.openlocfilehash: b26f788a782e42125d6397d38b2d946f8188e475
+ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 05/26/2018
 ---
 # <a name="what-is-common-data-service-for-apps"></a>什么是 Common Data Service for Apps？
 使用 Common Data Service (CDS) for Apps，可安全地存储和管理业务应用程序使用的数据。 CDS for Apps 中的数据存储在一组实体中。 实体是一组用于存储数据的记录，类似于表存储数据库中数据的方式。 CDS for Apps 带有一组基本的标准实体（包含典型解决方案），但用户也可创建组织特定的自定义实体，并使用 Power Query 向其填充数据。 应用创建者随后可以使用 PowerApps 通过此数据生成大量应用程序。

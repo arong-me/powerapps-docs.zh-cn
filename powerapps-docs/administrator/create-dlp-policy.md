@@ -1,18 +1,17 @@
 ---
 title: 创建数据丢失防护 (DLP) 策略的快速入门 | Microsoft Docs
 description: 在本快速入门中，你将了解如何在 PowerApps 中创建数据丢失防护 (DLP) 策略
-author: SKjerland
-manager: kfile
+author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/30/2018
-ms.author: sharik
-ms.openlocfilehash: 1a82b09c3a8b4463f6739222abb9e8ff516dcd18
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.author: jimh
+ms.openlocfilehash: da4be42ea0374d6cb50da2f9a9b17eef15d5b316
+ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/26/2018
 ---
 # <a name="quickstart-create-a-data-loss-prevention-dlp-policy"></a>快速入门：创建数据丢失防护 (DLP) 策略
 为了保护组织中的数据，PowerApps 允许创建和强制策略，该策略定义可以共享特定业务数据的客户连接器。 这些用于定义如何共享数据的策略称为数据丢失防护 (DLP) 策略。 DLP 策略确保整个组织的数据都以统一的方式管理，它们防止重要业务数据意外发布到连接器（例如社交媒体网站）。

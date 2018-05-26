@@ -1,18 +1,17 @@
 ---
 title: 创建自定义实体的快速入门 | Microsoft Docs
 description: 本快速入门介绍了如何在 PowerApps 中创建自定义实体。
-author: SKjerland
-manager: kfile
+author: Mattp123
 ms.service: powerapps
 ms.component: cds
 ms.topic: quickstart
 ms.date: 05/01/2018
-ms.author: sharik
-ms.openlocfilehash: 55ebd94fb0c895a64323e948d421c758c6af7cc8
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.author: matp
+ms.openlocfilehash: 66c96f7496266e03491e404de2bb329f82b6a2bf
+ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/26/2018
 ---
 # <a name="quickstart-create-a-custom-entity"></a>快速入门：创建自定义实体
 在 PowerApps 中，实体定义要跟踪的信息（采用记录的形式），通常包括公司名称、位置、产品、电子邮件和电话号码等属性。 然后可通过开发引用该实体的应用来演示该数据。 PowerApps 提供标准的“现成可用”实体，包含组织内的典型方案（例如跟踪约会），但有时需要创建自定义实体才能存储特定于组织的数据。

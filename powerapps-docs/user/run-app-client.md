@@ -1,18 +1,17 @@
 ---
 title: 快速入门：在移动设备上运行基于画布的应用 | Microsoft Docs
 description: 本快速入门教程介绍如何在移动设备上运行画布应用。
-author: SKjerland
-manager: kfile
+author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
 ms.date: 03/21/2018
-ms.author: sharik
-ms.openlocfilehash: e18035a999334cc9fdd5bea279e7f3ce501d5bb6
-ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
+ms.author: matp
+ms.openlocfilehash: 55fd0bb164fcbb552db68fb89d77c7a7d0807cdc
+ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 05/26/2018
 ---
 # <a name="quickstart-run-a-canvas-app-on-a-mobile-device"></a>快速入门：在移动设备上运行画布应用
 在创建应用或与某人共享应用时，可以在 Windows、iOS、Android 上或 Web 浏览器中运行此应用。 本快速入门教程介绍如何在移动设备上运行画布应用。 在移动设备上运行的应用可以利用移动设备功能，如定位服务和照相机。
