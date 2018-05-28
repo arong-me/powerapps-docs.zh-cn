@@ -12,11 +12,11 @@ ms.topic: sample
 ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: e042230acec8bf70a2a99eee316d234cb5cdea15
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 4601cabae10f3373f8d2ef18190d71af536811b5
+ms.sourcegitcommit: 8cc8d165c10644e02009011b66bc174c169c3b05
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>安装和配置技术支持 PowerApps 示例
 
@@ -24,29 +24,29 @@ ms.lasthandoff: 04/26/2018
 
 完成以下步骤的估计时间：10-15 分钟
 
-如果希望查看此流程的演示，请观看此视频。
+> [!TIP]
+> 如果希望查看此流程的演示，请观看此[视频](https://youtu.be/z4cdtD6hB_4)。
 
-[![技术支持安装视频](./media/help-desk-install/help-desk-install-video.png)](https://youtu.be/z4cdtD6hB_4 )
 
 ## <a name="help-desk-powerapps-sample-overview"></a>技术支持 PowerApps 示例概述
 技术支持提供用户友好体验，方便最终用户与支持专业人员交流。 快速找到最重要问题的答案，跟踪开放票证的进度，并查看之前的请求的详细信息。 要拥有此应用，需完成少量设置。
 
 ![技术支持 PowerApp 的打开屏幕](./media/help-desk-install/Login-screen.png)
 
-观看此视频，了解如何使用技术支持 PowerApp 示例。
-
-[![技术支持演示视频](./media/help-desk-install/help-desk-demo-video.png)](https://youtu.be/sl5fXwwnvzI)
+> [!TIP]
+> 观看此[视频](https://youtu.be/sl5fXwwnvzI)，了解如何使用技术支持 PowerApp 示例。
 
 ## <a name="prerequisites"></a>先决条件
 
 - [注册](https://web.powerapps.com/) PowerApps。
+- 必须具有有效的 SharePoint Online 许可证和创建列表的权限。
 
 ## <a name="create-the-helpdesk-sharepoint-list"></a>创建技术支持 SharePoint 列表
 
 此列表存储技术支持票证。
 
 1. 打开 Web 浏览器并导航到 https://portal.office.com。
-2. 用具有列表创建权限的帐户登录。
+2. 用具有创建 SharePoint 列表权限的帐户登录。
 3. 导航到要在其中存放技术支持列表的站点集合。
 4. 单击网页右上角的齿轮图标。
 5. 单击“添加应用”。
@@ -62,12 +62,13 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="create-description-column"></a>创建“说明”列
 
-1. 单击“创建列”。
-2. 在“列名”文本框中，输入“说明”。
-3. 在“此列中的信息类型为”单选按钮列表中，选择“多行文本”。
-4. 在“要求此列包含信息”单选按钮列表中，选择“是”。
-5. 在“指定允许的文本类型”单选按钮列表中，选择“纯文本”。
-6. 单击“确定”。
+1. 选择技术支持列表旁的省略号，单击“设置”。
+2. 单击“创建列”。
+3. 在“列名”文本框中，输入“说明”。
+4. 在“此列中的信息类型为”单选按钮列表中，选择“多行文本”。
+5. 在“要求此列包含信息”单选按钮列表中，选择“是”。
+6. 在“指定允许的文本类型”单选按钮列表中，选择“纯文本”。
+7. 单击“确定”。
 
 ### <a name="create-category-column"></a>创建“类别”列
 
@@ -137,14 +138,13 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="download-the-help-desk-powerapp"></a>下载技术支持 PowerApp
 
-1.  在 Web 浏览器中，导航到 http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip。
-2.  下载 PowerApps 包并将其保存到计算机。
+1.  [下载](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) PowerApps 包并将其保存到计算机。
 
 ## <a name="create-connections"></a>创建连接
 
 1.  在 Web 浏览器中，导航到 https://web.powerapps.com。
 2.  使用注册所用的同一凭据登录。
-3.  在左侧菜单中，选择“连接”。
+3.  在左侧菜单，依次选择“数据”和“连接”。
     
 ### <a name="create-office-365-outlook-connection"></a>创建 Office 365 Outlook 连接
 
@@ -157,7 +157,7 @@ ms.lasthandoff: 04/26/2018
 ### <a name="create-sharepoint-connection"></a>创建 SharePoint 连接
 
 1.  单击“+ 新建连接”。
-2.  在“搜索”文本框中，输入“Outlook”。
+2.  在“搜索”文本框中，输入“SharePoint”。
 3.  从列表中选择“SharePoint”。
 4.  单击“创建”。
 5.  在弹出窗口中，选择登录所用的帐户。
@@ -209,16 +209,14 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="configure-the-powerapp-to-use-the-sharepoint-list"></a>配置 PowerApp 以使用 SharePoint 列表
 
-1. 在 Web 浏览器中，单击“应用”。
-2. 单击“技术支持 PowerApp”旁的省略号。
-3. 单击“在 Web 上编辑”。
-4. 单击“允许”。
+1. 在“后续步骤”下，单击“打开应用”。
+2. 在出现权限提示时，选择“允许”。
 
 ### <a name="delete-connections"></a>删除连接
 
 1. 单击“查看”。
 2. 单击“数据源”。
-3. 在“数据”窗格，单击“技术支持”旁的省略号。
+3. 在“数据”窗格，单击“技术支持”SharePoint 连接旁的省略号。
 4. 单击“删除”。
 
 ### <a name="helpdesk-list"></a>技术支持列表
@@ -274,7 +272,7 @@ ms.lasthandoff: 04/26/2018
 
 7.  展开“切换”。
 8.  展开“未启动”用例。
-9.  展开“发送电子邮件”操作。
+9.  展开“未启动用例”操作。
 10. 将“收件人”更改为技术支持管理员的电子邮件。
 
     ![“编辑流”屏幕](./media/help-desk-install/edit-flow-condition-send-email.png) 
@@ -287,11 +285,11 @@ ms.lasthandoff: 04/26/2018
 2. 单击“技术支持 PowerApp”旁的省略号。
 3. 单击“打开”。 
 
-观看此视频，了解如何使用技术支持 PowerApp 示例。
+> [!TIP]
+> 观看此[视频](https://youtu.be/sl5fXwwnvzI)，了解如何使用技术支持 PowerApp 示例。
 
-[![技术支持演示视频](./media/help-desk-install/help-desk-demo-video.png)](https://youtu.be/sl5fXwwnvzI)
 
-##<a name="next-steps"></a>后续步骤
+## <a name="next-steps"></a>后续步骤
 - [自定义 SharePoint 列表窗体](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/customize-list-form)
 - [添加并配置控件](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/add-configure-controls)
 - [编辑和管理 SharePoint 列表或库的权限](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)

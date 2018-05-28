@@ -7,11 +7,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 4/18/2018
 ms.author: audrie
-ms.openlocfilehash: 7c171b155e077f8e765268d3cb6838e5989d8a00
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: 9100aadcbe9b2b4c431fd91da448d859f1830f48
+ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps 网络研讨会列表 #
 这些网络研讨会可以帮助你使用 Microsoft PowerApps 的功能。 请随时在本主题下的评论中提出其他主题建议。
@@ -32,16 +32,8 @@ ms.lasthandoff: 05/03/2018
 
 [5 月 1 日单击此处观看](https://www.youtube.com/watch?v=02NWfHRYkeo)
 
-**深入研究 | 来自 IWMentor 的 Laura Rogers 分享有关生产应用的最佳做法**
-<br>主讲人：Audrie Gordon 和 Laura Rodgers
-<br>5 月 14 日上午 10:00（太平洋标准时间）/下午 12:00（东部标准时间）
-
-来自 IW Mentor 的 Laura Rogers 多年来一直在为企业提供生产应用培训和交付生产应用。 我们从她那里学到了很多东西，尤其是使用 SharePoint 技术的人员。 在此网络研讨会上，Laura 将分享最佳做法和经验教训，以使用使用 PowerApps 和商业应用程序平台构建生产级应用。 此外，她还将演示一款出色的用于追踪账单和测量数据的生产应用。 请不要错过本次活动！ IW Mentor 网站：https://www.iwmentor.com/
-
-[4 月 14 日单击此处观看](https://www.youtube.com/watch?v=I50GtV9w7Os)
-
 **模型驱动应用系列第 2 部分 | 创建窗体和视图**
-<br>主讲人：Audrie Gordon 和 Clay Wesener
+<br>主讲人：Audrie Gordon 和 Anees Ansari
 <br>5 月 15 日上午 10:00（太平洋标准时间）/中午 12:00（东部标准时间）
 
 模型驱动应用为应用创建者提供了大量设计从简单到复杂的窗体方案的体验。 学习使用新的窗体设计器来生成我们在第 1 部分中启动的模型应用所需的窗体。 Anees 将详细介绍选项卡、节和字段等窗体组件。 他还将共享集成业务逻辑和筛选器的最佳做法。 
@@ -54,8 +46,8 @@ ms.lasthandoff: 05/03/2018
 [5 月 15 日单击此处观看](https://www.youtube.com/watch?v=v7VoX-V2ek4)
 
 **模型驱动应用系列第 3 部分 | 探索图表和仪表板**
-<br>主讲人：Audrie Gordon 和 Clay Wesener
-<br>*5 月 29 日上午 10:00（太平洋标准时间）/中午 12:00（东部标准时间）
+<br>主讲人：Audrie Gordon 和 Casey Burke
+<br>5 月 29 日上午 10:00（太平洋标准时间）/中午 12:00（东部标准时间）
 
 PowerApps 提供了一种用于报告的组合方法，其中包含丰富的视图和仪表板功能。 我们的模型驱动应用系列包括多种有用的图表和仪表板，可优化和更新我们一直在使用的解决方案。 
 
@@ -65,6 +57,32 @@ PowerApps 提供了一种用于报告的组合方法，其中包含丰富的视�
 <br>**第 3 部分：图表和仪表板**
 
 [5 月 29 日单击此处观看](https://www.youtube.com/watch?v=kJ5eTWh7Hyg)
+
+**连接器系列 | Microsoft StaffHub（轮班规划）应用和 PowerApps**
+<br>主讲人：Marc-André Lépine
+<br>6 月 5 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
+
+来自 PowerApps 和 Flow Azure 顾问组的 Marc André Lépine 将参与此次网络研讨会，与我们分享他如何生成出色应用以补充和扩展使用 StaffHub 连接器可实现的效果。 本周晚些时候，他将演示如何使用自定义 API 扩展连接器。  
+
+[6 月 5 日单击此处观看](https://www.youtube.com/watch?v=LAximnEnKy8)
+
+**可扩展性 | 使用 PowerApps 和 Flow 生成 JSON 驱动的解决方案**
+<br>主讲人：Marc-André Lépine
+<br>6 月 7 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
+
+Marc André Lépine 再次到来，将与我们分享一些有关可扩展性的提示。 如果没有看过他的第一个视频，可先前往此处观看：https://www.youtube.com/watch?v=LAximnEnKy8
+
+这一次，Marc 将演示如何通过自定义连接器扩展 StaffHub 连接器的功能，使其满足他自己的企业要求，从而体现 PowerApps 的无限优势。 （这一操作的简单程度实在令人惊叹，所以即使你不是专业开发人员，也推荐你观看此次网络研讨会。） 
+
+[6 月 7 日单击此处观看](https://www.youtube.com/watch?v=ykNRxKvAirg)
+
+**PowerApps 管理 | 常见问题**
+<br>主讲人：Manas Maheshwari
+<br>6 月 12 日上午 9:30（太平洋标准时间）/下午 12:30（东部标准时间）
+
+PowerApps 团队高级项目经理 Manas Maheshwari 将分享几个管理最佳做法，以及现场回答有关 PowerApps 管理、环境和数据库的问题！ 此次网络研讨会将涵盖管理 PowerApps 环境所需的一切信息。 期待与你们见面并回答你们最紧迫的管理问题。
+
+[6 月 12 日单击此处观看](https://www.youtube.com/watch?v=9Sy_vT5kIts)
 
 **在通用审核应用内：了解 PowerApps 和 Flow 的功能，主讲人：Paul Culmsee**
 <br>主讲人：Paul Culmsee
@@ -77,7 +95,10 @@ PowerApps 展示中的这款热门应用为该应用每周带来 3-5个 请求�
 ## <a name="past-webinars"></a>过往网络研讨会 ##
 直播结束后，可按需观看网络研讨会。 请注意，必须重新输入注册详细信息，然后才能通过电子邮件收到视频录制链接。
 
-### <a name="getting-started-webinar-series"></a>网络研讨会系列入门 ###
+### <a name="beginner-webinar-series"></a>初学者网络研讨会系列 ###
+**设计不容小觑的应用的 5 大技巧**
+<br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Top-5-tips-for-designing-and-building-PowerApps-that-mean/m-p/116843)
+
 **库控件入门**
 <br>主讲人：Audrie Gordon [立即注册并观看](https://info.microsoft.com/US-EAD-WBNR-FY17-02Feb-28-GettingStartedwithPowerAppsGalleries300759_01Registration-ForminBody.html)
 
@@ -85,108 +106,103 @@ PowerApps 展示中的这款热门应用为该应用每周带来 3-5个 请求�
 <br>主讲人：Audrie Gordon [立即注册并观看](https://info.microsoft.com/US-EAD-WBNR-FY17-03Mar-14-GettingStartedwithPowerAppsFormulas300770_01Registration-ForminBody.html)
 
 **PowerApps 中的表单入门**
-<br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=WnuwLkNbWk4)
-
-**设计不容小觑的应用的 5 大技巧**
-<br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=Ql-pK9ixKxw)
+<br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Getting-Started-with-PowerApp-Forms/m-p/116842)
 
 **PowerApps 控件入门**
-<br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=lUo0DXvJENI)
-
-**入门 | 产品集成：Teams + PowerApps 提示和技巧**
-<br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=obBQk-aSElI)
-
-**Common Data Service 入门**
-<br>主讲人：Jono Luk [立即观看](https://info.microsoft.com/US-PowerBI-WBNR-FY17-04Apr-18-GettingStartedwiththeCommonDataServices312618_01Registration-ForminBody.html)
-
-**模型驱动应用入门**
-<br>主讲人：Adrian Orth [立即观看](https://www.youtube.com/watch?v=buDDSzJTgns)
-
-### <a name="model-driven-apps"></a>模型驱动应用 ###
-**模型驱动应用组件 | 模型驱动应用简介**
-<br>作者：Charles Sterling 和 Adrian Orth[立即观看](https://www.youtube.com/watch?v=buDDSzJTgns)
-
-**模型驱动应用组件 | 模型驱动模板入门**
-<br>作者：Charles Sterling 和 Casey Burke [立即观看](https://www.youtube.com/watch?v=FShakkXKiS8)
-
-### <a name="pro-topics"></a>专业主题 ###
-**部署 PowerApps 应用**
-<br>主讲人：James Oleinik [立即观看](https://www.youtube.com/watch?v=LF49hFB14Cs)
-
-**在 PowerApps 中重新生成 InfoPath Designer 表单**
-<br>主讲人：Daniel Christian [立即观看](https://www.youtube.com/watch?v=ohQcxcVZSK4)
-
-**从 PowerApps 连接到本地数据**
-<br>主讲人：Archana Nair 和 Dimah Zaidalkilani [现在观看](https://www.youtube.com/watch?v=YBdO2MAulx8)
-
-**应用生命周期及 PowerApps 中的新“保存并发布”选项**
-<br>主讲人：Karthik Bharathy [立即观看](https://www.youtube.com/watch?v=Np3DXBQvq2I)
-
-**从 PowerApps 连接到 OneDrive for Business 上的 Excel 的专业提示**
-<br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=WPhux5_3Sfs)
-
-**在 PowerApps 和 Microsoft Flow 中优化连接器**
-<br>主讲人：Theresa Palmer-Boroski [立即观看](https://www.youtube.com/watch?v=6jwt4qXA2IQ)
-
-**从 InfoPath Designer 迁移到 PowerApps 的专业提示 - 第 1 部分**
-<br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=EZ09dRuiWLw)
-
-**从 InfoPath Designer 迁移到 PowerApps 的专业提示 - 第 2 部分**
-<br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=Bm2XePxLcSM)
-
-**SharePoint Online 中的列表表单简介**
-<br>主讲人：Ankit Saraf [立即观看](https://www.youtube.com/watch?v=3dCwg6wtViI)
-
-**了解 Office Graph 模板**
-<br>主讲人：Emma Cooper [立即观看](https://www.youtube.com/watch?v=SwLNN3tPVNs)
+<br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Introduction-to-PowerApps-Controls/m-p/116844)
 
 **PowerApps 社区机会和回报**
-<br> 主讲人：Audrie Gordon 和 Mackenzie Lyng [立即观看](https://www.youtube.com/watch?v=MTIkTPUgDSY)
+<br> 主讲人：Audrie Gordon 和 Mackenzie Lyng [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Community-Opportunities-and-Rewards/m-p/116856)
 
 **2017 年发布的 PowerApps 功能概述**
-<br>主讲人：Darshan Desai [立即观看](https://www.youtube.com/watch?v=XFMh8-zLkEM)
+<br>主讲人：Darshan Desai [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Overview-of-PowerApps-Feature-Releases-for-2017/m-p/116858)
 
-**PowerApps 侧重于使用 Lookup 函数**
-<br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=uTPtNaSK_gc)
+**了解 Office Graph 模板**
+<br>主讲人：Emma Cooper [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Getting-Started-New-Office-Graph-Templates-Part-1-by-Emma-Cooper/m-p/81860)
 
 **新 Office Graph 模板（第 2 部分）**
-<br>主讲人：Emma Cooper [立即观看](https://www.youtube.com/watch?v=9PopTeLdpmU)
+<br>主讲人：Emma Cooper [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Getting-Started-New-Office-Graph-Templates-Part-2-by-Emma-Cooper/m-p/116840)
+
+### <a name="intermediate-webinar-series"></a>中级网络研讨会系列 ###
+**应用生命周期及 PowerApps 中的新“保存并发布”选项**
+<br>主讲人：Karthik Bharathy [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Application-LIfecycle-with-the-new-Save-and-publish-options-in/m-p/116860)
+
+**PowerApps 侧重于使用 Lookup 函数**
+<br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Focus-on-Using-the-Lookup-Function/m-p/116866)
 
 **使用 PowerApps 和 Flow 创建业务线“门户”**
-<br>主讲人：Vishwas Lele [立即观看](http://www.youtube.com/watch?v=eSMAAFHK44c)
+<br>主讲人：Vishwas Lele [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-PowerApps-and-Flow-to-create-Line-of-Business-portals-by/m-p/116869)
 
+**来自 IWMentor 的 Laura Rogers 分享有关生产应用的最佳做法**
+<br>主讲人：Laura Rodgers [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Laura-Rogers-from-IWMentor-Shares-Best-Practices-for-Production/m-p/116871)
 
-### <a name="deep-dives"></a>深入研究 ###
-**深入研究 | PowerApps 公式**
-<br>主讲人：Greg Lindhorst [立即观看](https://www.youtube.com/watch?v=PuePMMuj5ps)
+### <a name="advanced-webinar-series"></a>高级网络研讨会系列 ###
+**PowerApps 公式**
+<br>主讲人：Greg Lindhorst [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Deep-dive-on-formulas-by-Greg-Lindhorst/m-p/116899)
 
-**深入研究 | 使用 PowerApps 构建服务器修补解决方案，作者：Brian Blanchard**
-<br>主讲人：Brian Blanchard 和 Audrie Gordon [立即观看](https://www.youtube.com/watch?v=QAe0oBecowU)
+**使用 PowerApps 生成服务器修补解决方案，主讲人：Brian Blanchard**
+<br>主讲人：Brian Blanchard 和 Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Server-Patching-Solutions-with-PowerApps-by-Brian/m-p/116901)
 
-**深入研究 | 使用 PowerApps 生成服务器修补解决方案（第 2 部分），主讲人：Brian Blanchard**
-<br>主讲人：Brian Blanchard 和 Audrie Gordon [立即观看](https://www.youtube.com/watch?v=FDU7ONCN4_U)
+**使用 PowerApps 生成服务器修补解决方案，主讲人：Brian Blanchard（第 2 部分）**
+<br>主讲人：Brian Blanchard 和 Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Server-Patching-Solutions-with-PowerApps-by-Brian/m-p/116902)
 
-**深入研究 | PowerApps 点击链接分析，主讲人：Vivek Bavishi**
-<br>主讲人：Vivek Bavishi 和 Audrie Gordon [立即观看](https://www.youtube.com/watch?v=OM-rlhKJFTA)
+**PowerApps 点击链接分析，主讲人：Vivek Bavishi**
+<br>主讲人：Vivek Bavishi 和 Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Click-Through-PowerApps-Analytics-by-Vivek-Bavishi/m-p/116906)
 
- **深入研究 | 使用业务流程管理 (BPM) PowerApps，主讲人：Dawid van Heerden**
-<br>作者：Dawid van Heerden[立即观看](https://www.youtube.com/watch?v=Jj3hPkAf5KU)
-
+ **将 PowerApps 用于业务流程管理 (BPM)，主讲人：Dawid van Heerden**
+<br>作者：Dawid van Heerden[立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-PowerApps-and-Flow-for-Business-Process-Management/m-p/116907)
 
 ### <a name="connector-series"></a>连接器系列 ###
-**连接器系列 | 使用连接器：使用 Planner 连接器**
-<br> 主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=NBPL9Uw7qzg)
+**在 PowerApps 和 Microsoft Flow 中优化连接器**
+<br>主讲人：Theresa Palmer-Boroski [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Optimizing-Connectors-in-PowerApps-and-Microsoft-Flow-by-Theresa/m-p/116874)
 
-**连接器系列 | 结合使用功能强大的 Office Graph 和 PowerApps**
-<br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=AOGGyoElGaQ)
+**Teams + PowerApps 提示和技巧**
+<br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Teams-PowerApps-Tips-and-Tricks/m-p/116846)
 
-**连接器系列 | Project Online (PWA)**
-<br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=oncGxlmFqy8)
+**从 PowerApps 连接到 OneDrive for Business 上的 Excel 的提示**
+<br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Pro-tips-for-connecting-to-Excel-from-PowerApps-by-Audrie-Gordon/m-p/116881)
 
+**从 PowerApps 连接到本地数据**
+<br>主讲人：Archana Nair 和 Dimah Zaidalkilani [现在观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-On-Premises-Data-from-PowerApps/m-p/116885)
 
-### <a name="app-designer-topics"></a>应用设计人员主题 ###
-**与一位 PowerApps 开发人员 Marie Hoeger 一起探究幕后的秘密 - 深入了解模板**
-<br>主讲人：Audrie Gordon [立即观看](https://www.youtube.com/watch?v=YF3DKZxlUdM)
+**使用连接器：使用 Planner 连接器**
+<br> 主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-the-Planner-Connector/m-p/116886)
 
+**结合使用功能强大的 Office Graph 和 PowerApps**
+<br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/The-Power-of-Office-Graph-with-PowerApps/m-p/116888)
+
+**使用连接器：Project Online (PWA)**
+<br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-Project-Online-PWA/m-p/116889)
+
+### <a name="sharepoint-series"></a>SharePoint 系列 ###
 **使用 PowerApps Studio 快速生成应用**
-<br>主讲人：Karthik Bharathy [立即观看](https://www.youtube.com/watch?v=us85WpXe4cA)
+<br>主讲人：Karthik Bharathy [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rapidly-build-applications-with-PowerApps-Studio/m-p/116849)
+
+**在 PowerApps 中重新生成 InfoPath Designer 表单**
+<br>主讲人：Daniel Christian [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rebuilding-an-InfoPath-Designer-Form/m-p/116909)
+
+**从 InfoPath Designer 过渡到 PowerApps 的提示 - 第 1 部分**
+<br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Tips-for-InfoPath-Designers-Transitioning-to-PowerApps-Part-1/m-p/116910)
+
+**从 InfoPath 过渡到 PowerApps 的提示 - 第 2 部分**
+<br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Tips-for-InfoPath-Designers-Transitioning-to-PowerApps-Part-2/m-p/116912)
+
+**SharePoint Online 中的列表表单简介**
+<br>主讲人：Ankit Saraf [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Introducing-List-Forms-in-SharePoint-Online/m-p/116916)
+
+### <a name="model-driven-series"></a>模型驱动系列 ###
+**模型驱动应用组件 | 模型驱动应用简介**
+<br>作者：Charles Sterling 和 Adrian Orth[立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Model-Driven-App-Series-Introduction-to-Model-Driven-Apps/m-p/116820)
+
+**模型驱动应用组件 | 模板入门**
+<br>作者：Charles Sterling 和 Casey Burke [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Understanding-Model-Driven-App-Templates/m-p/116833)
+
+### <a name="app-designer-series"></a>应用程序设计器系列 ###
+**针对采用率和可用性构建应用**
+<br>主讲人：Veronica Ward [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Apps-for-Adoption-and-Usability-with-Veronica-Ward/m-p/117625#M38)
+
+**在 PowerApps 中生成对话或弹出消息**
+<br>主讲人：Veronica Ward [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Dialogs-in-PowerApps-by-Veronica-Ward/m-p/117627#M39)
+
+**与一位 PowerApps 开发人员 Marie Hoeger 一起探究幕后的秘密 - 深入了解模板**
+<br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Developer-Intro-and-Discussing-Templates/m-p/116848)

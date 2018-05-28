@@ -1,25 +1,26 @@
 ---
 title: 快速入门 - 从 Common Data Service for Apps 生成应用 | Microsoft Docs
-description: 在 PowerApps 中自动生成应用，用于管理 Common Data Service for Apps 中的数据
+description: 本快速入门将在 PowerApps 中自动生成应用，用于管理 Common Data Service for Apps 中的数据
 author: AFTOwen
 ms.service: powerapps
-ms.topic: conceptual
+ms.topic: quickstart
 ms.component: canvas
-ms.date: 03/10/2018
+ms.date: 05/06/2018
 ms.author: anneta
-ms.openlocfilehash: a70145ee3db44b4ce5d58be2d7804bffb5a56369
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: a058629f08e61f7299792697234b5d346b9d0c71
+ms.sourcegitcommit: e071ef560eef01c2b250ed50cf0e82f7263d5e4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="quickstart-generate-an-app-from-common-data-service-for-apps-in-powerapps"></a>快速入门：在 PowerApps 中从 Common Data Service for Apps 生成应用
 
 在本快速入门中，使用 Microsoft PowerApps 基于 [Common Data Service (CDS) for Apps](../common-data-service/data-platform-intro.md) 中的示例帐户列表自动生成一个应用。 在此应用中，可以浏览所有帐户、显示单个帐户的详细信息以及创建、更新或删除帐户。
 
-若要按照本快速入门操作，须[切换到满足以下条件的环境](working-with-environments.md)：已在 CDS for Apps 中创建数据库、包含数据并允许更新。 如果不具备此环境但拥有管理权限，则可按此要求[创建环境](../../administrator/environments-administration.md#create-an-environment)。
+如果没有注册 PowerApps，请在开始使用之前先[免费注册](https://web.powerapps.com)。
 
-如果没有适用于 PowerApps 的许可证，可以[免费注册](../signup-for-powerapps.md)。
+## <a name="prerequisites"></a>先决条件
+若要按照本快速入门操作，须[切换到满足以下条件的环境](working-with-environments.md)：已在 CDS for Apps 中创建数据库、包含数据并允许更新。 如果不具备此环境但拥有管理权限，则可按此要求[创建环境](../../administrator/environments-administration.md#create-an-environment)。
 
 ## <a name="generate-an-app"></a>生成应用
 1. 登录到 [PowerApps](https://web.powerapps.com) ，如有必要，按本主题前文所述切换环境。
@@ -38,9 +39,9 @@ ms.lasthandoff: 04/26/2018
 
 1. 如果出现“欢迎使用 PowerApps Studio”对话框，则单击“跳过”。
 
-应用打开并显示浏览屏幕，其中显示帐户列表。 靠近屏幕顶部的标题栏显示用于刷新列表、排序列表和创建帐户的图标。 标题栏下的一个搜索框提供一个选项，通过此选项可基于键入或粘贴的文本来筛选列表。 
+应用打开并显示浏览屏幕，其中的控件中将显示帐户列表，这称为一个库。 屏幕顶部附近的标题栏中将显示用于以下用途的图标：刷新库中的数据，按字母顺序对库中的数据进行排序，以及向库中添加数据。 标题栏下的一个搜索框提供一个选项，通过此选项可基于键入或粘贴的文本来筛选库中的数据。 
 
-默认情况下，列表显示该帐户的电子邮件地址、城市和 ID。 但也可以将列表（此时称为“库”）自定义为显示其他类型的数据。
+默认情况下，该库显示一个电子邮件地址、一个城市和一个帐户名称。 如[后续步骤](data-platform-create-app.md#next-steps)中所示，可以自定义库以更改数据的显示方式，甚至可以显示其他类型的数据。
 
 ![浏览屏幕](./media/data-platform-create-app/browse-screen.png)
 

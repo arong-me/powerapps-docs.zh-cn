@@ -8,11 +8,11 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: cfc120cb135c9fe6007b4dc57382a2e4ade821af
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: 3e3cd3b7339303e23411f3ef977cc33db6e5e8e0
+ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="administer-environments-in-powerapps"></a>管理 PowerApps 中的环境
 在 [PowerApps 管理中心][1]内，管理已创建的环境及已将已添加到其环境管理员或系统管理员角色的环境。 从管理中心可执行以下管理操作：
@@ -137,9 +137,9 @@ ms.lasthandoff: 05/15/2018
 
 4. 如果环境中创建了数据库：
 
-    a. 单击链接管理 Dynamics 365 中的环境角色。
+    a. 将用户添加到环境，然后单击链接，为用户分配角色。
 
-    ![](./media/environment-admin/Security-Link-D365.png)
+    ![](./media/database-security/security-adduser.png)
 
     b. 从环境/实例的用户列表中选择用户。
 

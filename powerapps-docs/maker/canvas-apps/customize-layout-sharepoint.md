@@ -5,16 +5,26 @@ author: AFTOwen
 ms.service: powerapps
 ms.topic: tutorial
 ms.component: canvas
-ms.date: 04/24/2018
+ms.date: 05/06/2018
 ms.author: anneta
-ms.openlocfilehash: 7a51e2a734426973721fbcb21305f96e6ba7b222
-ms.sourcegitcommit: 99d50f9a79fe4f35ba56f365de6593abd893978e
+ms.openlocfilehash: 88170d5f727ff4e3cfe52ce31719bcbc79e33021
+ms.sourcegitcommit: e071ef560eef01c2b250ed50cf0e82f7263d5e4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>教程：在 PowerApps 中自定义库
-本教程将介绍自定义库，及对已在 Microsoft PowerApps 中自动生成的应用进行其他更改。 即使不进行这些更改，用户也可以管理应用中的数据，但是，如果对其进行自定义来满足组织需要，则可以更加轻松使用该应用：
+本教程将自定义一个记录列表（称为一个库），以及对已在 Microsoft PowerApps 中自动生成的应用进行其他更改。 即使不进行这些更改，用户也可以管理应用中的数据，但是，如果对其进行自定义来满足组织需要，则可以更加轻松使用该应用。
+
+例如，本教程中的库默认情况下与此图形匹配。 电子邮件地址比其他数据类型更加突出，用户可基于地址中的文本对库进行排序和筛选：
+
+![默认库](./media/customize-layout-sharepoint/gallery-before.png)
+
+但是，相较于电子邮件地址，用户可能会更加关注帐户名，因此需要重新配置库，以便基于组织的关键数据来实现突出显示、排序和筛选。 此外，需要更改默认屏幕的标题，使其与应用中的其他屏幕区分开来。
+
+![最终库](./media/customize-layout-sharepoint/gallery-after.png)
+
+还需要添加滚动条，以便没有触摸屏或鼠标滚轮的用户可以浏览整个库。
 
 > [!div class="checklist"]
 > * 更改库布局
@@ -23,9 +33,9 @@ ms.lasthandoff: 05/06/2018
 > * 更改屏幕标题
 > * 显示滚动条
 
-本教程从一个由特定数据源生成的应用开始。 但是，相同的概念适用于在 PowerApps 中从 SharePoint 列表、Excel 表或另一个数据源生成的任何应用。 
+本教程从一个由特定数据源生成的应用开始。 但是，相同的概念适用于在 PowerApps 中生成（无论从 SharePoint 列表、Excel 表还是某些其他数据源生成）的任何应用。
 
-如果没有适用于 PowerApps 的许可证，可以[免费注册](../signup-for-powerapps.md)。
+如果没有注册 PowerApps，请在开始使用之前先[免费注册](https://web.powerapps.com)。
 
 ## <a name="prerequisites"></a>先决条件
 从 Common Data Service (CDS) for Apps 的帐户实体[生成应用](data-platform-create-app.md)。
@@ -38,6 +48,8 @@ ms.lasthandoff: 05/06/2018
 1. 找到你生成的应用，选择其省略号图标 (...)，然后选择“编辑”。
 
     ![打开应用进行编辑](./media/customize-layout-sharepoint/open-app.png)
+
+1. 如果出现“欢迎使用 PowerApps Studio”对话框，则单击“跳过”。
 
 ## <a name="change-the-layout"></a>更改布局
 1. 在左侧导航窗格中，选择“BrowseGallery1”。
@@ -58,9 +70,11 @@ ms.lasthandoff: 05/06/2018
 
     ![选择仅限标题的布局](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. 在“数据”窗格中，打开“Title2”的选项列表。
+1. 在“数据”窗格中，打开标题的选项列表。
 
-    ![选择仅限标题的布局](./media/customize-layout-sharepoint/show-title-options.png)
+    此控件的名称以数字结尾，如“标题 1”，基于已执行的其他操作，该数字可能有所不同。
+
+    ![“打开标题的选项列表”标签](./media/customize-layout-sharepoint/show-title-options.png)
 
 1. 在选项列表中，选择“帐户名称(名称)”，然后关闭“数据”窗格。
 
