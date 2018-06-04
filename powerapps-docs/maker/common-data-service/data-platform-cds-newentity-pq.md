@@ -10,10 +10,11 @@ ms.component: cds
 ms.date: 03/21/2018
 ms.author: anneta
 ms.openlocfilehash: 60d1843e48a1dc1d310d877bcba67460da557993
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34168288"
 ---
 # <a name="add-data-to-an-entity-in-common-data-service-for-apps-by-using-power-query"></a>使用 Power Query 将数据添加到 Common Data Service for Apps 中的实体
 在此过程中，将在 [Common Data Service (CDS) for Apps](data-platform-intro.md) 中创建实体，并使用 Power Query 将来自 OData 源的数据填充到该实体。 可以使用相同的技术来集成来自这些联机和本地源的数据，其中包括：

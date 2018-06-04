@@ -10,10 +10,11 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
 ms.openlocfilehash: 3343e8cd81e23d4938466d12ddca2e0a85dc12c8
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34168472"
 ---
 # <a name="create-a-common-data-service-for-apps-database"></a>创建 Common Data Service for Apps 数据库
 可以将 Common Data Service (CDS) for Apps 用作数据存储，从而创建数据库并生成应用。 可以创建你自己的自定义实体，也可以使用预定义的实体。 若要创建数据库，要么必须先创建一个环境，要么必须以“环境管理员”身份分配到现有环境。此外，还必须分配有相应的许可证。 若要了解如何购买 CDS for Apps 使用套餐，请参阅[定价信息](pricing-billing-skus.md)。
