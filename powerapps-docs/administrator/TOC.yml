@@ -51,6 +51,8 @@
               href: powerapps-gdpr-delete-dsr.md
         - name: CDS for Apps 客户数据
           href: common-data-service-gdpr-dsr-guide.md
+        - name: CDS for Apps 的数据集成
+          href: data-integration-gdpr-dsr-guide.md
 - name: 参考
   items:
     - name: 对 PowerApps 的 PowerShell 支持（预览版）
