@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 11/11/2015
 ms.author: gregli
 ms.openlocfilehash: 9747bef986587da7e7a66fe6fc165b4d15e80aed
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31835062"
 ---
 # <a name="datasourceinfo-function-in-powerapps"></a>PowerApps 中的 DataSourceInfo 函数
 提供[数据源](../working-with-data-sources.md)的相关信息。
@@ -30,11 +31,11 @@ ms.lasthandoff: 04/26/2018
 
 数据源中提供的信息量可能会不同，包括不提供任何信息。  [Collections](../working-with-data-sources.md#collections) 不提供信息。 如果一条信息也不提供，则使用默认值，或返回空白。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 ### <a name="column-information"></a>列信息
 可以使用 **DataSourceInfo** 获取数据源的特定列的相关信息：  
 
-| 信息自变量 | 结果类型 | 说明 |
+| 信息自变量 | 结果类型 | 描述 |
 | --- | --- | --- |
 | **DataSourceInfo.DisplayName** |String |列的显示名称。 如果未定义显示名称，将返回列名称。 |
 | **DataSourceInfo.MaxLength** |Number |列所能容纳的最大字符数。 仅适用于包含字符串的列。 如果未设置最大值，则返回空白。 |
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/26/2018
 ### <a name="data-source-information"></a>数据源信息
 还可以使用 **DataSourceInfo** 获取整体数据源的信息：  
 
-| 信息自变量 | 结果类型 | 说明 |
+| 信息自变量 | 结果类型 | 描述 |
 | --- | --- | --- |
 | **DataSourceInfo.AllowedValues** |Boolean |可以向用户授予对此数据源的哪些类型权限？ 如果数据源未设置，则返回 *空白* 值。 |
 | **DataSourceInfo.CreatePermission** |Boolean |当前用户是否有权在此数据源中创建记录？ 如果数据源未设置，将返回 **true**。 |
@@ -79,7 +80,7 @@ ms.lasthandoff: 04/26/2018
 * 最大**数量**为 100。
 * 当前用户可读取和编辑 **IceCream** 数据源的记录，但无法创建或删除记录。
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.DisplayName,&nbsp;"Quantity"&nbsp;)** |返回 **IceCream** 数据源的“数量”列的显示名称。 |“现有数量” |
 | **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.MaxLength,&nbsp;"Flavor"&nbsp;)** |返回 **IceCream** 数据源的“风格”列的字符串的最大长度。 |30 |

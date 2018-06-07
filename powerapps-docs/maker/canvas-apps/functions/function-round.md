@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 07771027ea728d65bfb35d79fb67bdef1ac80f1a
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31825777"
 ---
 # <a name="round-rounddown-and-roundup-functions-in-powerapps"></a>PowerApps 中的 Round、RoundDown 和 RoundUp 函数
 舍入数值。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Round**、**RoundDown** 和 **RoundUp** 函数可将数值舍入到指定的小数位数：
 
 * 如果后一位数字等于或大于 5，**Round** 函数会向上舍入， 否则向下舍入。

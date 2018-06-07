@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: e57ea9208f0ea3b7dd9ada7ebd9055a99ddc141c
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31831768"
 ---
 # <a name="lower-upper-and-proper-functions-in-powerapps"></a>PowerApps 中的 Lower、Upper 和 Proper 函数
 将文本字符串中的字母转换为全部小写、全部大写或首字母大写。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Lower**、**Upper** 和 **Proper** 函数转换字符串中字母的大小写。
 
 * **Lower** 将所有大写字母转换为小写。
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/26/2018
 ### <a name="single-string"></a>单个字符串
 此部分中的示例使用“Author”文本输入控件作为[数据源](../working-with-data-sources.md)。 该控件包含字符串“E. E. CummINGS”。
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Lower(&nbsp;Author.Text&nbsp;)** |将字符串中的所有大写字母转换为小写。 |“e. e. cummings” |
 | **Upper(&nbsp;Author.Text&nbsp;)** |将字符串中的所有小写字母转换为大写。 |“E. E. CUMMINGS” |
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/26/2018
 
 每个公式返回一个单列表，表中包含转换后的字符串。
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Lower( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |将所有小写字母转换为大写。 |<style> img { max-width:none; } </style> ![](media/function-lower-upper-proper/people-table-lower.png) |
 | **Upper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |将所有小写字母转换为大写。 |![](media/function-lower-upper-proper/people-table-upper.png) |

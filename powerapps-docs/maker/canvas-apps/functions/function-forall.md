@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
 ms.openlocfilehash: 7df5e270e92930fa494ec8a30a59d46d022fd915
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838231"
 ---
 # <a name="forall-function-in-powerapps"></a>PowerApps 中的 ForAll 函数
 针对[表](../working-with-tables.md)中的所有[记录](../working-with-tables.md#records)计算值和执行操作。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **ForAll** 函数针对表中的所有记录对公式求值。  该公式可以计算值并/或执行操作，例如修改数据或使用连接。
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
@@ -64,7 +65,7 @@ PowerApps 中的许多函数可以通过使用单列表一次处理多个值。 
 
 * **ClearCollect( Squares, [ "1", "4", "9" ] )**
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **ForAll(&nbsp;Squares, Sqrt(&nbsp;Value&nbsp;)&nbsp;)**<br><br>**Sqrt(&nbsp;Squares&nbsp;)** |针对输入表中的所有记录计算 **Value** 列的平方根。  **Sqrt** 函数还可以与单列表一起使用，从而可以在不使用 **ForAll** 的情况下执行此示例。 |<style> img { max-width: none } </style> ![](media/function-forall/sqrt.png) |
 | **ForAll(&nbsp;Squares, Power(&nbsp;Value,&nbsp;3&nbsp;)&nbsp;)** |针对输入表中的所有记录计算 **Value** 列的三次幂。  **Power** 函数不支持单列表。 因此，在本例中必须使用 **ForAll**。 |<style> img { max-width: none } </style> ![](media/function-forall/power3.png) |
@@ -80,7 +81,7 @@ PowerApps 中的许多函数可以通过使用单列表一次处理多个值。 
 
 此示例还使用一个 [Microsoft Translator](../connections/connection-microsoft-translator.md) 连接。  若要将此连接添加到你的应用，请参阅有关如何[管理连接](../add-manage-connections.md)的主题。
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **ForAll( Expressions, MicrosoftTranslator.Translate( Value, "es" ) )** |针对 Expressions 表中的所有记录将 **Value** 列的内容翻译为西班牙语（缩写为“es”）。 |<style> img { max-width: none } </style> ![](media/function-forall/translate-es.png) |
 | **ForAll( Expressions, MicrosoftTranslator.Translate( Value, "fr" ) )** |针对 Expressions 表中的所有记录将 **Value** 列的内容翻译为法语（缩写为“fr”）。 |<style> img { max-width: none } </style> ![](media/function-forall/translate-fr.png) |

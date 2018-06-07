@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 02/05/2017
 ms.author: gregli
 ms.openlocfilehash: 35dec320b52dd934d616ba067932228b0e15ee3d
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838800"
 ---
 # <a name="filter-search-and-lookup-functions-in-powerapps"></a>PowerApps 中的 Filter、Search 和 LookUp 函数
 查找[表](../working-with-tables.md)中的一个或多个[记录](../working-with-tables.md#records)。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Filter** 函数查找表中满足公式的记录。  使用 **Filter** 可查找匹配一个或多个条件的一组记录并丢弃不匹配的记录。
 
 **LookUp** 函数查找表中满足公式的第一条记录。  使用 **LookUp** 可查找匹配一个或多个条件的单个记录。
@@ -65,7 +66,7 @@ ms.lasthandoff: 04/26/2018
 
 ![](media/function-filter-lookup/icecream.png)
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Filter( IceCream, OnOrder > 0 )** |返回 **OnOrder** 大于零的记录。 |<style> img { max-width: none; } </style> ![](media/function-filter-lookup/icecream-onorder.png) |
 | **Filter( IceCream, Quantity + OnOrder > 225 )** |返回 **Quantity** 和 **OnOrder** 列的总和大于 225 的记录。 |![](media/function-filter-lookup/icecream-overstock.png) |
@@ -99,7 +100,7 @@ ms.lasthandoff: 04/26/2018
 
 若要基于 **Name** 列进行筛选，需将库控件的 **Items** 属性设置为以下公式之一：
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Filter( Customers, StartsWith( Name, SearchInput.Text ) )** |筛选 **Customers** 数据源，查找搜索字符串出现在 **Name** 列开头的记录。 测试不区分大小写。 如果用户在搜索框中键入 **co**，库将显示 **Colleen Jones** 和 **Cole Miller**。 库不会显示 **Mike Collins**，因为该记录的 **Name** 列不以搜索字符串开头。 |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-startswith.png) |
 | **Filter( Customers, SearchInput.Text in Name )** |筛选 **Customers** 数据源，查找搜索字符串出现在 **Name** 列中任意位置的记录。 测试不区分大小写。 如果用户在搜索框中键入 **co**，库将显示 **Colleen Jones**、**Cole Miller** 和 **Mike Collins**，因为搜索字符串都出现在所有这些记录的 **Name** 列中的某个位置。 |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-contains.png) |
@@ -107,7 +108,7 @@ ms.lasthandoff: 04/26/2018
 
 可以扩展搜索，使其包括 **Company** 列和 **Name** 列：
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Filter( Customers, StartsWith( Name, SearchInput.Text ) &#124;&#124; StartsWith( Company, SearchInput.Text ) )** |筛选 **Customers** 数据源，查找 **Name** 列或 **Company** 列以搜索字符串（例如 **co**）开头的记录。  如果任一 **StartsWith** 函数为 *true*，则 [**&#124;&#124;** 运算符](operators.md) 为 *true*。 |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-startswith.png) |
 | **Filter( Customers, SearchInput.Text in Name &#124;&#124; SearchInput.Text in Company )** |筛选 **Customers** 数据源，查找 **Name** 列或 **Company** 列任意位置包含搜索字符串（例如 **co**）的记录。 |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-contains.png) |

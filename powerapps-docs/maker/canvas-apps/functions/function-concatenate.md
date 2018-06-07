@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 08/28/2017
 ms.author: gregli
 ms.openlocfilehash: a735cb17b0e70afcae439044491a603aa50ceae7
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31826145"
 ---
 # <a name="concat-and-concatenate-functions-in-powerapps"></a>PowerApps 中的 Concat 和 Concatenate 函数
 将[表](../working-with-tables.md)中的文本和字符串连成单个字符串。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Concat** 函数可将应用于表中所有[记录](../working-with-tables.md#records)的公式的结果串联起来，从而产生单个字符串。 使用这个函数可汇总表的字符串，就像 **[Sum](function-aggregates.md)** 函数可以汇总数字一样。
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]

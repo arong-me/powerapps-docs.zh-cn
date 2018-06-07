@@ -13,20 +13,21 @@ ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 0d725f00dc3617449eca9e16aedcf07c1414411f
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31831591"
 ---
 # <a name="calendar-and-clock-functions-in-powerapps"></a>PowerApps 中的 Calendar 和 Clock 函数
 检索有关当前区域设置的日历和时钟信息。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Calendar** 和 **Clock** 函数是一组用于检索当前区域设置相关信息的函数。
 
 使用这些函数，可以用当前用户的语言显示日期和时间。  **Calendar** 和 **Clock** 函数返回的单列表可直接与下拉列表控件和列表框控件的 **[Items](../controls/properties-core.md)** 属性结合使用。
 
-| 函数 | 说明 |
+| 函数 | 描述 |
 | --- | --- |
 | **Calendar.MonthsLong()** |包含每月完整名称的单列表，从“January”开始。 |
 | **Calendar.MonthsShort()** |包含每月缩写的单列表，从一月的缩写“Jan”开始。 |
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/26/2018
 
 在美国，如果 **[Language](function-language.md)** 返回“en-US”，**Calendar** 函数则返回以下内容：
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Calendar.MonthsLong()** |返回值包含每月的完整名称，从“January”开始。 |[ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ] |
 | **Calendar.MonthsShort()** |返回值包含每月的缩写，从“January”开始。 |[ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ] |

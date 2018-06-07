@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 11/11/2015
 ms.author: gregli
 ms.openlocfilehash: 9e68b7580092c70f7e40ddd1d0b57118f6d592d8
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31836141"
 ---
 # <a name="errors-function-in-powerapps"></a>PowerApps 中的 Errors 函数
 提供之前对[数据源](../working-with-data-sources.md)的更改的错误信息。
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/26/2018
 
 可使用 **[Validate](function-validate.md)** 和 **[DataSourceInfo](function-datasourceinfo.md)** 函数在错误出现之前避免这些错误。  请参阅[使用数据源](../working-with-data-sources.md)，了解如何处理和避免错误的更多建议。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Errors** 函数会返回一个错误的[表](../working-with-tables.md)，其中包含以下[列](../working-with-tables.md#columns)：
 
 * **记录**。  数据源中有错误的记录。  如果在记录的创建过程中发生错误，此列将为*空白*。
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/26/2018
 * **消息**。  错误的说明。  可为最终用户显示此错误字符串。  请注意，此消息可能由数据源生成，可能会很长且包含可能对用户没有任何意义的原始列名称。
 * **错误**。  可在公式中使用以帮助解决错误的错误代码：
 
-| ErrorKind | 说明 |
+| ErrorKind | 描述 |
 | --- | --- |
 | ErrorKind.Conflict |对同一个记录进行了其他更改，从而导致更改冲突。  使用 **[Refresh](function-refresh.md)** 函数重新加载记录，尝试再次进行更改。 |
 | ErrorKind.ConstraintViolation |违反了一个或多个约束。 |

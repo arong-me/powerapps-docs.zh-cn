@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 09/13/2016
 ms.author: gregli
 ms.openlocfilehash: 15d458142bc1077b1bf55ae6e358c826f813ecb2
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31829501"
 ---
 # <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>PowerApps 中的 Abs、Exp、Ln、Power 和 Sqrt 函数
 计算绝对值、自然对数、平方根和 *e* 或任意数字的指定次方值结果。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Abs** 函数返回参数的非负值。 **Abs** 返回负数的绝对值。
 
 **Exp** 函数返回 *e* 的参数次方值。  超越数 *e* 的一次方值为 2.7182818...
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="examples"></a>示例
 ### <a name="single-number"></a>单个数字
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Abs( -55 )** |返回不带负号的数字。 |55 |
 | **Exp( 2 )** |返回 *e* 的 2 次方值，或 *e* \* *e* 结果值。 |7.389056... |
@@ -65,7 +66,7 @@ ms.lasthandoff: 04/26/2018
 
 ![](media/function-numericals/values.png)
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Abs(&nbsp;ValueTable&nbsp;)** |返回表中每个数字的绝对值。 |<style> img { max-width: none } </style> ![](media/function-numericals/values-abs.png) |
 | **Exp(&nbsp;ValueTable&nbsp;)** |返回 *e* 的表中每个数字次方值。 |<style> img { max-width: none } </style> ![](media/function-numericals/values-exp.png) |

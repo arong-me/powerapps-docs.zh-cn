@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: d08cbb1ae487c7ae4423d67a499f5477a5ea263b
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31830364"
 ---
 # <a name="replace-and-substitute-functions-in-powerapps"></a>PowerApps 中的 Replace 和 Substitute 函数
 将文本字符串的一部分替换为其他字符串。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Replace** 函数按起始位置和长度标识要替换的文本。  
 
 **Substitute** 函数通过匹配字符串标识要替换的文本。  如果找到多个匹配项，可以控制要替换哪一个。

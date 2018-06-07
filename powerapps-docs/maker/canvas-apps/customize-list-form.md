@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 02/05/2018
 ms.author: anneta
 ms.openlocfilehash: 34c4e4126015f9a5f53ef6f07c9c66e4a4141db0
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32330390"
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>使用 PowerApps 自定义 SharePoint 列表窗体
 
@@ -124,7 +125,7 @@ PowerApps 提供了多种自定义窗体的方法。 下面是一些示例：
 
 问：在我的组织中，除了默认环境之外，我还能创建自定义列表窗体吗？
 
-**答：**不能。 当前只能在组织的默认 PowerApps 环境中创建自定义列表窗体；不能在另一个环境中创建自定义列表窗体，也不能将它们迁移到另一个环境。
+**答：** 不能。 当前只能在组织的默认 PowerApps 环境中创建自定义列表窗体；不能在另一个环境中创建自定义列表窗体，也不能将它们迁移到另一个环境。
 
 ### <a name="managing-your-custom-list-form"></a>管理自定义列表窗体
 
@@ -156,7 +157,7 @@ PowerApps 提供了多种自定义窗体的方法。 下面是一些示例：
 
 问：能否将我的自定义列表窗体从一个列表移动到另一个列表？
 
-**答：**不能。 当前不支持此功能。
+**答：** 不能。 当前不支持此功能。
 
 ### <a name="administering-custom-list-forms"></a>管理自定义列表表单
 
@@ -168,9 +169,9 @@ PowerApps 提供了多种自定义窗体的方法。 下面是一些示例：
 
 答：任何具有 SharePoint 权限的人员都可以管理、设计或编辑关联的列表。
 
-**问：**是否需要使用 PowerApps 许可证才能创建或使用自定义列表表单？
+**问：** 是否需要使用 PowerApps 许可证才能创建或使用自定义列表表单？
 
-**答：**若有任何[包含 PowerApps 的 Office 365 计划](../../administrator/pricing-billing-skus.md#licenses)，便可以创建或使用自定义列表表单。
+**答：** 若有任何[包含 PowerApps 的 Office 365 计划](../../administrator/pricing-billing-skus.md#licenses)，便可以创建或使用自定义列表表单。
 
 问：当来宾用户访问具有自定义窗体的列表时，会发生什么情况？
 

@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 7454eacbcfaaacc15eb617e673f48520ca33b6dc
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31825455"
 ---
 # <a name="encodeurl-and-plaintext-functions-in-powerapps"></a>PowerApps 中的 EncodeUrl 和 PlainText 函数
 编码和解码字符串。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **EncodeUrl** 函数会对 URL 字符串进行编码，将非字母数字字符替换为 % 和十六进制数字。  
 
 **PlainText** 函数会删除 HTML 和 XML 标记，将这类标记转换为相应的符号：

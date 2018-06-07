@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
 ms.openlocfilehash: 4b26c16259a7699f1178641ead8c1b5908106468
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34168495"
 ---
 # <a name="purchase-powerapps-for-your-organization"></a>为组织购买 PowerApps
 本文介绍了如何以管理员身份为组织购买 PowerApps。 你可以直接通过 PowerApps 网站购买 PowerApps，也可以通过 Office 365 管理中心、Microsoft 代表或合作伙伴购买。 本文将讨论 PowerApps 计划 1 或计划 2 的可用试用选项，然后阐述如何以组织身份购买 PowerApps 计划 1 或计划 2。 有关详细信息，请参阅[组织中的 PowerApps 问答](signup-question-and-answer.md)。

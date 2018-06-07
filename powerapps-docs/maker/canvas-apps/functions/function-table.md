@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 28d393d9be240b3e9ba57d108761c7a38f013b24
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31826858"
 ---
 # <a name="table-function-in-powerapps"></a>PowerApps 中的 Table 函数
 创建一个临时[表](../working-with-tables.md)。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Table** 函数从[记录](../working-with-tables.md#records)的参数列表创建表。
 
 该表的[列](../working-with-tables.md#columns)将是所有参数记录的所有属性的联合。 如果某个列的记录不包含值，则向该列添加空白值。

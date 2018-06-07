@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 04/06/2018
 ms.author: lanced
 ms.openlocfilehash: 44ee7b992f5817a5d6b8d791b05e1db671d3e6ba
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31826973"
 ---
 # <a name="add-a-data-connection-in-powerapps"></a>在 PowerApps 中添加数据连接
 在 PowerApps 中，向现有应用或从头开始生成的应用添加数据连接。 应用可以连接到 SharePoint、Salesforce、OneDrive 或[许多其他数据源](connections-list.md)。

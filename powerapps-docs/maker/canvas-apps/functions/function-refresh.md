@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 10/21/2015
 ms.author: gregli
 ms.openlocfilehash: 9ec2711c4a38f26fec2d44681b2606b4a8ecba29
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31825363"
 ---
 # <a name="refresh-function-in-powerapps"></a>PowerApps 中的 Refresh 函数
 刷新[数据源](../working-with-data-sources.md)的[记录](../working-with-tables.md#records)。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Refresh** 函数检索数据源的新副本。  你将看到其他用户所做的更改。
 
 **Refresh** 没有返回值，只可以在[行为公式](../working-with-formulas-in-depth.md)中使用它。

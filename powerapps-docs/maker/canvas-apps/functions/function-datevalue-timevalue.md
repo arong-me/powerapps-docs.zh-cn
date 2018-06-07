@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 396a2d5325b7b72f3637dba1edddeead49594167
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31832572"
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-powerapps"></a>PowerApps 中的 DateValue、TimeValue 和 DateTimeValue 函数
 将字符串类型的日期和/或时间转换为日期/时间值。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **DateValue** 函数可用于将日期字符串（例如“10/01/2014”）转换为日期/时间值。
 
 **TimeValue** 函数可用于将时间字符串（例如“12:15 PM”）转换为日期/时间值。

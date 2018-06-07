@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 10/21/2015
 ms.author: gregli
 ms.openlocfilehash: 1f4df70ce3274c4d83c39955df58ebc344038de3
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31832704"
 ---
 # <a name="remove-and-removeif-functions-in-powerapps"></a>PowerApps 中的 Remove 和 RemoveIf 函数
 从[数据源](../working-with-data-sources.md)删除[记录](../working-with-tables.md#records)。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 ### <a name="remove-function"></a>Remove 函数
 使用 **Remove** 函数从数据源中删除特定的一个或多个记录。  
 
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/26/2018
 
 ![](media/function-remove-removeif/icecream.png)
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Remove(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;) )** |从数据源中删除 **Chocolate** 记录。 |<style> img { max-width: none } </style> ![](media/function-remove-removeif/icecream-no-chocolate.png)<br><br>修改了 **IceCream** 数据源。 |
 | **Remove(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;) First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Strawberry"&nbsp;)&nbsp;) )** |从数据源中删除两个记录。 |![](media/function-remove-removeif/icecream-only-vanilla.png)<br><br>修改了 **IceCream** 数据源。 |

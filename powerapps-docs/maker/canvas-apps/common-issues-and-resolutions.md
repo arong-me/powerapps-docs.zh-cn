@@ -1,18 +1,18 @@
 ---
 title: PowerApps 常见问题和解决方法 | Microsoft Docs
 description: PowerApps 中的常见问题及解决方法列表。
-author: skjerland
-manager: kfile
+author: AFTOwen
 ms.service: powerapps
 ms.topic: conceptual
 ms.component: canvas
 ms.date: 05/10/2018
-ms.author: sharik
-ms.openlocfilehash: 71e6d6977ff84ac8131acb9353f919c5ee80995b
-ms.sourcegitcommit: fe556abcfd6bdfeb5fdeea8f07b185b4b502d02f
+ms.author: anneta
+ms.openlocfilehash: adbd727617d35b435592306e534a8f618046cc20
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34552866"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps 常见问题和解决方法
 本文列出了你在使用 PowerApps 时可能遇到的一些常见问题。 并在适用情况下提供了解决方法。

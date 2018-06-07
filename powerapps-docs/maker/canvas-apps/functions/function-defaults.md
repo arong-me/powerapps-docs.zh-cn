@@ -14,15 +14,16 @@ ms.component: canvas
 ms.date: 11/01/2015
 ms.author: gregli
 ms.openlocfilehash: b62b2b8575d1ff0e5a55a97db6e6650af5a593c1
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31825800"
 ---
 # <a name="defaults-function-in-powerapps"></a>PowerApps 中的 Defaults 函数
 返回[数据源](../working-with-data-sources.md)的默认值。  
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 使用 **Defaults** 函数可预填充数据输入表单，简化操作。
 
 这个函数返回包含数据源默认值的[记录](../working-with-tables.md#records)。  如果数据源中的[列](../working-with-tables.md#columns)没有默认值，则不会有这个属性。
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/26/2018
 * *DataSource* – 必需。 需要其默认值的数据源。
 
 ## <a name="examples"></a>示例
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Defaults(&nbsp;Scores&nbsp;)** |返回 **Scores** 数据源的默认值。 |**{ Score: 0 }** |
 

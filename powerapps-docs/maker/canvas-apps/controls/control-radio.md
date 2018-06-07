@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 8a95e84449828e77152206817f3d964315074b90
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31837679"
 ---
 # <a name="radio-control-in-powerapps"></a>PowerApps 中的单选控件
 显示所有选项的列表，但用户只能一次选择一个选项。
@@ -48,9 +49,9 @@ ms.lasthandoff: 04/26/2018
 
 **[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件边框的颜色。
 
-[DisabledColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件中的文本颜色。
+**[DisabledColor](properties-color-border.md)** – 控件的 **[DisplayMode](properties-core.md)** 属性设置为 Disabled**Disabled** 时，该控件中的文本颜色。
 
-[DisabledFill](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件的背景色。
+**[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode”**[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
 
 **[Fill](properties-color-border.md)** – 控件的背景色。
 
@@ -88,7 +89,7 @@ ms.lasthandoff: 04/26/2018
 
 **[PressedFill](properties-color-border.md)** – 用户在点击或单击控件时，该控件的背景色。
 
-RadioBackgroundFill – 单选按钮控件中的圆圈背景色。
+RadioBackgroundFill - 单选按钮控件中的圆圈背景色。
 
 RadioBorderColor - 单选按钮控件中每个选项的圆圈颜色。
 
@@ -138,7 +139,7 @@ RadioSize - 单选按钮控件中的圆圈直径。
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：
-* **RadioSelectionFill** 和 **RadioBackgroundFill**
+* RadioSelectionFill 和 RadioBackgroundFill
 * **RadioBackgroundFill** 和 **[Fill](properties-color-border.md)**
 
 这是除[标准颜色对比度](../accessible-apps-color.md)以外的要求。

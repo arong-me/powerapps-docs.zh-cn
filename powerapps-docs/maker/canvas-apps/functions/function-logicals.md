@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: a2e62ef2aa0a52bde33ea3e40faf96889597b09b
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31825892"
 ---
 # <a name="and-or-and-not-functions-in-powerapps"></a>PowerApps 中的 And、Or 和 Not 函数
 布尔逻辑函数，常用于操作比较结果和测试结果。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 如果 **And** 函数的所有参数均为 **true**，则此函数返回 **true**。  **&&** [运算符](operators.md)等效于 **And**。
 
 如果 **Or** 函数的任何参数为 **true**，则此函数返回 **true**。  **||** 运算符等效于 **Or**。

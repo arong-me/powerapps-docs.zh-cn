@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
 ms.openlocfilehash: 6ba2186e7f6618cdaa6eef8073e5f3897628ae8f
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838208"
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>PowerApps 中的 Sort 和 SortByColumns 函数
 对[表](../working-with-tables.md)进行排序。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Sort** 函数根据公式对表进行排序。  
 
 系统会针对表的每条[记录](../working-with-tables.md#records)计算公式，然后根据结果对表进行排序。  公式的计算结果必须是数字、字符串或布尔值；不得是表或记录。
@@ -72,7 +73,7 @@ ms.lasthandoff: 04/26/2018
 
 ![](media/function-sort/icecream.png)
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Sort( IceCream, Flavor )**<br><br>**SortByColumns( IceCream, "Flavor" )** |按 **Flavor** 列对 **IceCream** 进行排序。 由于 **Flavor** 列包含字符串，因此该表按字母顺序进行排序。 默认情况下，排序顺序为升序。 |<style> img { max-width: none; } </style> ![](media/function-sort/icecream-flavor.png) |
 | **Sort( IceCream, Quantity )**<br><br>**SortByColumns( IceCream, "Quantity" )** |按 **Quantity** 列对 **IceCream** 进行排序。  由于 **Quantity** 列包含数字，因此该表按数值大小进行排序。  默认情况下，排序顺序为升序。 |![](media/function-sort/icecream-quantity-asc.png) |

@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: b35d819730715917f3092ca803b9a38ea9173edc
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31825110"
 ---
 # <a name="enable-and-disable-functions-in-powerapps"></a>PowerApps 中的 Enable 和 Disable 函数
 打开或关闭[信号](signals.md)。
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/26/2018
 
 未使用某个信号时，这个信号就会自动关闭。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Enable** 和 **Disable** 函数分别用于打开和关闭信号。
 
 这两个函数仅对**[定位](signals.md)** 信号有效。

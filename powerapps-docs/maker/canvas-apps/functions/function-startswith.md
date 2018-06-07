@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 07/24/2017
 ms.author: gregli
 ms.openlocfilehash: c01a69f311378e8e818036c866b96a78f223baf9
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31837116"
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>PowerApps 中的 EndsWith 和 StartsWith 函数
 测试文本字符串是否以另一个文本字符串开头或结尾。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 EndsWith 函数测试某个文本字符串是否以其他文本字符串结尾。
 
 **StartsWith** 函数测试一个文本字符串是否以另一个文本字符串开头。    
@@ -42,14 +43,14 @@ EndsWith 函数测试某个文本字符串是否以其他文本字符串结尾�
 * *StartText* – 必需。  在文本开头处要搜索的文本。  如果 *StartText* 是空字符串，则 **StartsWith** 将返回 *true*。
 
 ## <a name="examples"></a>示例
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **EndsWith( "Hello World", "world" )** |测试“Hello World”是否以“world”结尾。  测试不区分大小写。 |**true** |
 | **EndsWith( "Good bye", "good" )** |测试“Good bye”是否以“good”结尾。  EndText 参数（“good”）出现在文本中，但不是结尾处。 |**false** |
 | **EndsWith( "Always say hello", "hello" )** |测试“Always say hello”是否以“hello”结尾。 |**true** |
 | **Endswith( "Bye bye", "" )** |测试“Bye bye”是否以空文本字符串结尾（Len 返回 0）。  为便于在 Filter 表达式中使用它，在本示例中将 EndsWith 定义为返回 true。 |**true** |
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **StartsWith( "Hello World", "hello" )** |测试 **"Hello World"** 是否以 **"hello"** 开头。  测试不区分大小写。 |**true** |
 | **StartsWith( "Good bye", "hello" )** |测试 **"Good bye"** 是否以 **"hello"** 开头。 |**false** |
@@ -77,7 +78,7 @@ EndsWith 函数测试某个文本字符串是否以其他文本字符串结尾�
 
 若要基于 **Name** 列进行筛选，需将库控件的 **Items** 属性设置为以下公式之一：
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Filter( Customers, StartsWith( Name, SearchInput.Text ) )** |筛选 **Customers** 数据源，查找搜索字符串出现在 **Name** 列开头的记录。 测试不区分大小写。 如果用户在搜索框中键入 **co**，库将显示 **Colleen Jones** 和 **Cole Miller**。 库不会显示 **Mike Collins**，因为该记录的 **Name** 列不以搜索字符串开头。 |<style> img { max-width: none } </style> ![](media/function-startswith/customers-name-co-startswith.png) |
 | **Filter( Customers, SearchInput.Text in Name )** |筛选 **Customers** 数据源，查找搜索字符串出现在 **Name** 列中任意位置的记录。 测试不区分大小写。 如果用户在搜索框中键入 **co**，库将显示 **Colleen Jones**、**Cole Miller** 和 **Mike Collins**，因为搜索字符串都出现在所有这些记录的 **Name** 列中的某个位置。 |<style> img { max-width: none } </style> ![](media/function-startswith/customers-name-co-contains.png) |
@@ -85,7 +86,7 @@ EndsWith 函数测试某个文本字符串是否以其他文本字符串结尾�
 
 可以扩展搜索，使其包括 **Company** 列和 **Name** 列：
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Filter( Customers, StartsWith( Name, SearchInput.Text ) &#124;&#124; StartsWith( Company, SearchInput.Text ) )** |筛选 **Customers** 数据源，查找 **Name** 列或 **Company** 列以搜索字符串（例如 **co**）开头的记录。  如果任一 **StartsWith** 函数为 *true*，则 [**&#124;&#124;** 运算符](operators.md) 为 *true*。 |<style> img { max-width: none } </style> ![](media/function-startswith/customers-all-co-startswith.png) |
 | **Filter( Customers, SearchInput.Text in Name &#124;&#124; SearchInput.Text in Company )** |筛选 **Customers** 数据源，查找 **Name** 列或 **Company** 列任意位置包含搜索字符串（例如 **co**）的记录。 |<style> img { max-width: none } </style> ![](media/function-startswith/customers-all-co-contains.png) |

@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
 ms.openlocfilehash: 4973265baf701851ac5c2e8bca9da541b246c068
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34167783"
 ---
 # <a name="environments-overview"></a>环境概述
 环境是用来存储、管理和共享组织的业务数据、应用和流的空间。 还可以将环境用作分隔具有不同角色、安全要求或目标受众的应用的容器。 环境的使用方式视组织和要生成的应用而定。 例如：
@@ -74,7 +75,7 @@ PowerApps 自动为每个租户创建一个默认环境，并由相应租户中�
 你可以创建不同的环境用于不同的用途。 试用环境用于借助 Common Data Service 体验尝试环境和数据库。 它将在某个时间段后过期。 有关详细信息，请参阅[管理 PowerApps 中的环境](environments-administration.md)。
 
 ## <a name="choosing-an-environment"></a>选择环境
-随着环境的引入，访问 [https://web.powerapps.com](https://web.powerapps.com) 时现在将获得全新的体验。站点中可见的应用、连接和其他项现在会根据当前选定的环境进行筛选。  当前环境在标头右侧边缘附近的环境选取器中指定。 若要选择其他环境，请单击或点击选取器，查看可用环境列表。 单击或点击要进入的环境。
+随着环境的引入，访问 [https://web.powerapps.com](https://web.powerapps.com) 时现在将获得全新的体验。  站点中可见的应用、连接和其他项现在会根据当前选定的环境进行筛选。  当前环境在标头右侧边缘附近的环境选取器中指定。 若要选择其他环境，请单击或点击选取器，查看可用环境列表。 单击或点击要进入的环境。
 
 当你满足下列条件之一时，选取器中会显示环境：
 

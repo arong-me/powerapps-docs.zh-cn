@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 06/29/2017
 ms.author: gregli
 ms.openlocfilehash: 3615328bf1c272425779998545b0d16ac5626297
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31832595"
 ---
 # <a name="set-function-in-powerapps"></a>PowerApps 中的 Set 函数
 设置全局变量的值。
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/26/2018
 
 PowerApps 以公式为基础，这些公式会在用户与应用交互时自动重新计算。  全局变量不具有此优势，因此，在应用的创建和理解上可能难度更大。  使用变量之前，请参阅[使用变量](../working-with-variables.md)。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 全局变量是使用 **Set** 函数隐式创建而成。  无需显式声明。  如果删除了全局变量的所有 **Set** 函数，则该全局变量将不再存在。  若要清除变量，请将其值设置为 [Blank 函数](function-isblank-isempty.md)的结果。
 
 在创作环境中，可以使用“文件”菜单下的“变量”视图查看变量的值、定义和使用情况。
@@ -54,7 +55,7 @@ PowerApps 以公式为基础，这些公式会在用户与应用交互时自动�
 * *Value* - 必需。  要分配给上下文变量的值。
 
 ## <a name="examples"></a>示例
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Set(&nbsp;Counter,&nbsp;1&nbsp;)** |创建或修改全局变量 **Counter**，将其值设置为 **1**。 |**Counter** 的值为 **1**。 可通过在公式中使用名称 **Counter** 来在任意屏幕上引用该变量。 |
 | **Set(&nbsp;Counter,&nbsp;2&nbsp;)** |将上一示例中 **Counter** 全局变量的值设置为 **2**。 |**Counter** 的值为 **2**。 |

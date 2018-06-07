@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: jamesol
 ms.openlocfilehash: 03aa8fc5254529a337f7bbdf40428ab4a1042a92
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34168104"
 ---
 # <a name="licensing-overview"></a>许可概述
 PowerApps 按用户提供许可证。 为了创建和运行应用而访问该服务的每个用户都需要有许可证。 Office 365 和 Dynamics 365 客户可立即享用这些产品随附的 PowerApps 和 Microsoft Flow 功能。 想要构建应用和流来访问 Office 365 和 Dynamics 365 外部的数据源或者需要其他功能的客户可以购买 PowerApps 和 Microsoft Flow 的独立订阅。 这几组许可证之间存在重要的功能差别。
@@ -91,7 +92,7 @@ PowerApps 许可证始终包含 Microsoft Flow 功能。  除了包含在 PowerA
 我们分析一个示例。 ABC Inc. 拥有 1,000 名员工，其中 700 名员工持有 Office 365 企业版 3 许可证。 在早些时候，超级用户创建了一个业务线应用程序用于简化客户订单的跟踪。 后来，HR 部门与 IT 部门合作推出了一个用于报告请假和缺勤的应用，该应用是基于 Common Data Service 构建的。
 
 ### <a name="order-tracking-app"></a>订单跟踪应用
-ABC Inc. 首先针对其 Office 365 许可用户开发一个应用。 该应用可将 Office 365 SharePoint 列表中存储的客户和产品配置数据与 Box.com 中存储的客户订单文档结合在一起。由于此应用只需访问 Office 365 以及某个标准连接器所涵盖的常见云服务中存储的数据，因此，他们已有的 Office 365 许可证同时涵盖了此应用的创建和使用权限。
+ABC Inc. 首先针对其 Office 365 许可用户开发一个应用。 该应用可将 Office 365 SharePoint 列表中存储的客户和产品配置数据与 Box.com 中存储的客户订单文档结合在一起。 由于此应用只需访问 Office 365 以及某个标准连接器所涵盖的常见云服务中存储的数据，因此，他们已有的 Office 365 许可证同时涵盖了此应用的创建和使用权限。
 
 **所需的许可证**：他们已有的 700 个 Office 365 企业版 3 许可证已足够。
 

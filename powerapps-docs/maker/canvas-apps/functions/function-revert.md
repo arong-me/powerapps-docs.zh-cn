@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 10/21/2015
 ms.author: gregli
 ms.openlocfilehash: 08cb0690904a4b63645828678232769b66a439a1
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31828209"
 ---
 # <a name="revert-function-in-powerapps"></a>PowerApps 中的 Revert 函数
 刷新[数据源](../working-with-data-sources.md)的[记录](../working-with-tables.md#records)并清除错误。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Revert** 函数可用于刷新整个数据源或者数据源中的单个记录。 这样你就可以看到其他用户进行的更改。
 
 对于还原的记录，**Revert** 还可以从返回了 **[Errors](function-errors.md)** 函数的[表](../working-with-tables.md)中清除所有错误。

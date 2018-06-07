@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 10/25/2015
 ms.author: gregli
 ms.openlocfilehash: f4eeabf5708fffa6881b84402280d5639d96cc0a
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838662"
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>PowerApps 中的 Color 枚举与 ColorFade、ColorValue 以及 RGBA 函数
 使用内置颜色值，定义自定义颜色以及 Alpha 值混合处理。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 通过 **Color** 枚举可轻松访问 HTML 的级联样式表 (CSS) 定义的颜色。  例如，**Color.Red** 返回纯红色。  本文末尾提供了这些颜色的列表。   
 
 **ColorValue** 函数基于 CSS 颜色字符串返回颜色。  CSS 颜色的名称（如“RosyBrown”）和十六进制值（如“#bc8f8f”）均可以使用。

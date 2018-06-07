@@ -12,10 +12,11 @@ ms.component: canvas
 ms.date: 10/23/2016
 ms.author: lonu
 ms.openlocfilehash: 1fbaf4f9d740084a1ed0d630b94d1cd41713ba03
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31825547"
 ---
 # <a name="add-a-list-box-a-drop-down-list-or-radio-buttons"></a>添加列表框、下拉列表或单选按钮
 PowerApps 提供多选和单选选项，其中包括列表框、下拉列表和单选按钮。 在本主题中，我们会添加这些控件并使用**表**公式来生成列表。 在列表中选定某项时，它会更新其他控件。

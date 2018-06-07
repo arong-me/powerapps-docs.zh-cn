@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
 ms.openlocfilehash: 7df2782bc18d1c999383226e31033035fb59cea1
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31839076"
 ---
 # <a name="size-and-location-properties-in-powerapps"></a>PowerApps 中的大小和位置属性
 ## <a name="overview"></a>概述
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/26/2018
 
 * 适用于**[添加图片](control-add-picture.md)**、**[音频](control-audio-video.md)**、**[按钮](control-button.md)**、**[照相机](control-camera.md)**、**[卡片](control-card.md)**、**[复选框](control-check-box.md)**、**[柱形图](control-column-line-chart.md)**、**[日期选取器](control-date-picker.md)**、**[显示窗体](control-form-detail.md)**、**[下拉列表](control-drop-down.md)**、**[编辑窗体](control-form-detail.md)**、**[导出](control-export-import.md)**、**[库](control-gallery.md)**、**[HTML 文本](control-html-text.md)**、**[图标](control-shapes-icons.md)**、**[图像](control-image.md)**、**[导入](control-export-import.md)**、**[标签](control-text-box.md)**、**[折线图](control-column-line-chart.md)**、**[列表框](control-list-box.md)**、**[麦克风](control-microphone.md)**、**[PDF 查看器](control-pdf-viewer.md)**、**[笔输入](control-pen-input.md)**、**[饼图](control-pie-chart.md)**、**[单选按钮](control-radio.md)**、**[评分](control-rating.md)**、**[形状](control-shapes-icons.md)**、**[滑块](control-slider.md)**、**[文本输入](control-text-input.md)**、**[计时器](control-timer.md)**、**[切换](control-toggle.md)** 和**[视频](control-audio-video.md)** 控件。
 
-**Y** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。 对于多行容器中的“[数据卡](control-card.md)”控件，此属性将确定数据卡出现在哪一行。
+**Y** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。 对于多行容器中的[数据卡](control-card.md)控件，此属性将确定数据卡出现在哪一行。
 
 * 适用于**[添加图片](control-add-picture.md)**、**[音频](control-audio-video.md)**、**[按钮](control-button.md)**、**[照相机](control-camera.md)**、**[卡片](control-card.md)**、**[复选框](control-check-box.md)**、**[柱形图](control-column-line-chart.md)**、**[日期选取器](control-date-picker.md)**、**[显示窗体](control-form-detail.md)**、**[下拉列表](control-drop-down.md)**、**[编辑窗体](control-form-detail.md)**、**[导出](control-export-import.md)**、**[库](control-gallery.md)**、**[HTML 文本](control-html-text.md)**、**[图标](control-shapes-icons.md)**、**[图像](control-image.md)**、**[导入](control-export-import.md)**、**[标签](control-text-box.md)**、**[折线图](control-column-line-chart.md)**、**[列表框](control-list-box.md)**、**[麦克风](control-microphone.md)**、**[PDF 查看器](control-pdf-viewer.md)**、**[笔输入](control-pen-input.md)**、**[饼图](control-pie-chart.md)**、**[单选按钮](control-radio.md)**、**[评分](control-rating.md)**、**[形状](control-shapes-icons.md)**、**[滑块](control-slider.md)**、**[文本输入](control-text-input.md)**、**[计时器](control-timer.md)**、**[切换](control-toggle.md)** 和**[视频](control-audio-video.md)** 控件。
 

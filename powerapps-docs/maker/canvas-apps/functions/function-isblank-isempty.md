@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 07/24/2017
 ms.author: gregli
 ms.openlocfilehash: 80d06a30dbe334f7fa9691d2a56805d53876693c
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838547"
 ---
 # <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>PowerApps 中的 Blank、Coalesce、IsBlank 和 IsEmpty 函数
 测试值是否为空白值，或测试[表](../working-with-tables.md)是否不包含任何[记录](../working-with-tables.md#records)，并能创建*空白*值。
@@ -31,7 +32,7 @@ ms.lasthandoff: 04/26/2018
 
 *Empty* 专门用于表示不包含任何记录的表。 即使表只包含[列](../working-with-tables.md#columns)名称，而不包含任何数据，它也是一个完整的表。 一个表刚开始可能是空表，但填入记录后，就不再是空表了；如果将其中的记录删除，那么它又会变成空表。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Blank** 函数返回*空白*值。 此函数可用于在支持 NULL 值的数据源中存储这些值，进而可以从字段中有效删除所有值。
 
 **IsBlank** 函数用于测试 *blank* 值。 以下情况下会出现 *blank* 值：
@@ -99,7 +100,7 @@ Coalesce 函数按顺序评估其参数并返回第一个值（不是空值）�
     此标签显示“true”，因为“Weather”字段不再包含值。
 
 ### <a name="coalesce"></a>Coalesce
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Coalesce( Blank(), 1 )** |测试从 **Blank** 函数返回的值，此函数始终返回*空白*值。 由于第一个参数为空，因此继续评估下一个参数，直至找到非空值。 |**1** |
 | **Coalesce( Blank(), Blank(), Blank(), Blank(), 2, 3 )** |Coalesce 从参数列表的开头开始并按顺序评估各个参数，直至找到非空值。  在本例中，前四个参数均返回 blank，因此继续评估第五个参数。 第五个参数为非空，因此在此处评估并停止。 将返回第五个参数的值，并且不再评估第六个参数。 |**2** |
@@ -119,7 +120,7 @@ Coalesce 函数按顺序评估其参数并返回第一个值（不是空值）�
 
 其他示例：
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **IsBlank( Blank() )** |测试从 **Blank** 函数返回的值，此函数始终返回*空白*值。 |**true** |
 | **IsBlank( "" )** |不包含任何字符的字符串。 |**true** |
@@ -153,7 +154,7 @@ Coalesce 函数按顺序评估其参数并返回第一个值（不是空值）�
 
 还可以使用 **IsEmpty** 测试一个计算的表是不是空表，请参阅以下示例：
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **IsEmpty( [&nbsp;1,&nbsp;2,&nbsp;3 ] )** |单列表包含三条记录，所以，它不是空表。 |**false** |
 | **IsEmpty( [&nbsp;] )** |单列表不包含任何记录，所以它是空表。 |**true** |

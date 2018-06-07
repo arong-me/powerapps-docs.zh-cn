@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 11/01/2015
 ms.author: gregli
 ms.openlocfilehash: 9d67db7829361565072362b6ac37125dc0dc673a
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31834095"
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>PowerApps 中的 Collect、Clear 和 ClearCollect 函数
 创建和清除[集合](../working-with-data-sources.md#collections)，以及将[记录](../working-with-tables.md#records)添加到任意[数据源](../working-with-data-sources.md)。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 ### <a name="collect"></a>Collect
 **Collect** 函数将记录添加到数据源。 可添加的项包括：
 
@@ -74,7 +75,7 @@ ms.lasthandoff: 04/26/2018
 
 ![](media/function-clear-collect-clearcollect/icecream.png)
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **ClearCollect( IceCream, {&nbsp;Flavor:&nbsp;"Strawberry",&nbsp;Quantity:&nbsp;300&nbsp;} )** |清除 **IceCream** 集合中的所有数据，然后添加包含草莓冰淇淋数量的记录。 |<style> img { max-width: none } </style> ![](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>**IceCream** 数据源也已得到修改。 |
 | **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |向 **IceCream** 集合添加两条记录，其中包括开心果味冰淇淋和橙子味冰淇淋的数量。 |![](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>**IceCream** 数据源也已得到修改。 |

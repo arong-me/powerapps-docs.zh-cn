@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 06/05/2017
 ms.author: kfend
 ms.openlocfilehash: e79314b8e615a931a3ba8116a53b216afe5d145a
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31826031"
 ---
 # <a name="column-control-in-powerapps"></a>PowerApps 中的“列”控件
 用于在“[数据表](control-data-table.md)”控件中显示单个字段。

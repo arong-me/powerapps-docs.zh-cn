@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 2e8281f401088f43aa7785ac5dcf7b2f07bb6f96
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31826192"
 ---
 # <a name="char-function-in-powerapps"></a>PowerApps 中的 Char 函数
 将字符代码转换为字符串。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Char** 函数可返回包含适用于你的平台的相应 ASCII 字符的字符串。
 
 ## <a name="syntax"></a>语法
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/26/2018
 * *CharacterCode* - 必需。 要转换的 ASCII 字符代码。
 
 ## <a name="examples"></a>示例
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Char( 65 )** |返回 ASCII 代码 65 对应的字符。 |A |
 | **Char( 105 )** |返回 ASCII 代码 105 对应的字符。 |i |

@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/16/2016
 ms.author: jamesol
 ms.openlocfilehash: e0186e0f1f8b1396f2fb90cfffae8e38aacb1ac1
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31826996"
 ---
 # <a name="delete-an-app-from-powerapps"></a>从 PowerApps 中删除应用
 本文演示如何从 PowerApps 帐户及任何与应用共享的人的帐户中删除应用。

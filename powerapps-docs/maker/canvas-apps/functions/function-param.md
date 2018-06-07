@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 146372c723df6089890100abd67d1175ba4b4a04
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31828741"
 ---
 # <a name="download-launch-and-param-functions-in-powerapps"></a>PowerApps 中的 Download、Launch 和 Param 函数
 使用参数下载或启动网页或应用。  
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Download** 函数可用于从 Web 将文件下载到本地设备。  系统会提示用户选择保存文件的位置。  **Download** 会返回文件的存储位置，并使用字符串表示。  
 
 **Launch** 函数可用于启动网页或应用。  这个函数还可以将参数传递给应用（可选）。  

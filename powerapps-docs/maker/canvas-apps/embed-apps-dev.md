@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/20/2017
 ms.author: mblythe
 ms.openlocfilehash: 0f4ea37d93b20a768fa16d1dcdb41f921336f043
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31827042"
 ---
 # <a name="integrate-powerapps-into-websites-and-other-services"></a>将 PowerApps 集成到网站和其他服务中
 如果能够直接将生成的应用集成到用户工作时使用的工具中，通常最为实用。 借助 PowerApps，可以将应用嵌入 iframe，以便于将这些应用集成到网站和其他服务中（如 Power BI 或 SharePoint）。
@@ -51,7 +52,7 @@ https://web.powerapps.com/webplayer/iframeapp?source=iframe
 * 最后，可以使用 [Param() 函数](../canvas-apps/functions/function-param.md)添加所需的任何自定义参数，并且这些值可供应用使用。 这些参数添加到 URI 的末尾，如 `[AppID]&amp;param1=value1`。 在应用的启动阶段，这些参数为只读；如果需要更改它们，必须重启应用。
 
 ### <a name="get-the-app-id"></a>获取应用 ID
-可以在 powerapps.com 上获取应用 ID。对于要嵌入的应用，请执行以下操作：
+可以在 powerapps.com 上获取应用 ID。 对于要嵌入的应用，请执行以下操作：
 
 1. 在 [powerapps.com](https://powerapps.microsoft.com) 中，依次单击或点击“应用”选项卡上的省略号（“...” ）和“详细信息”。
    

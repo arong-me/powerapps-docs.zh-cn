@@ -12,10 +12,11 @@ ms.component: canvas
 ms.date: 07/12/2017
 ms.author: sharik
 ms.openlocfilehash: 4d622eb6cdfaed91547a59be8f5a5dc6651957e5
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32330896"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>在 PowerApps 中使用多媒体文件
 本主题介绍如何在应用中嵌入多媒体文件、将笔绘作品上载到数据源，然后在应用中显示该数据源中的图像。 本主题使用的数据源是 OneDrive for Business 中的一个 Excel 文件。

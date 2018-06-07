@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 10/16/2016
 ms.author: gregli
 ms.openlocfilehash: ec12bef225c59474fbc15a3ab0556694d206edd3
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31834804"
 ---
 # <a name="language-function-in-powerapps"></a>PowerApps 中的 Language 函数
 返回当前用户的语言标记。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Language** 函数可使用语言标记的形式返回当前用户的语言、脚本或区域。
 
 使用不同区域设置的语言信息定制应用。  例如，如果你正在创建要在意大利和法国使用的应用，可以使用 **Language** 函数自动向位于这些不同位置的用户显示意大利语和法语字符串。 
@@ -29,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 ### <a name="language-tags"></a>语言标记
 “语言标记”可以是下面三种格式之一：
 
-| 返回值 | 说明 |
+| 返回值 | 描述 |
 | --- | --- |
 | **"*lg&#8209;RE*"** |*lg* 是语言 (Language) 的两字符缩写形式，*RE* 是区域 (Region) 的两字符缩写形式。  这是最常见的返回类型。  例如，对于英国 (Great Britain)，返回“en-GB”。 |
 | **"*lg*"** |*lg* 是语言的两字符缩写形式。  如果 PowerApps 获得了语言信息，但没有特定区域信息，则使用此格式。 |

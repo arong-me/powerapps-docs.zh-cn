@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 07/06/2017
 ms.author: gregli
 ms.openlocfilehash: 6a32068d0de49ea0a6cf752fde0fd486159f39e9
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31836456"
 ---
 # <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>PowerApps 中的 EditForm、NewForm、SubmitForm、ResetForm 和 ViewForm 函数
 查看、编辑或创建一个项，保存内容，以及在[编辑表单](../controls/control-form-detail.md)控件中重置控件。
@@ -24,13 +25,13 @@ ms.lasthandoff: 04/26/2018
 ## <a name="overview"></a>概述
 这些函数将更改“编辑表单”控件的状态。  表单控件可以采用以下模式之一：
 
-| 模式 | 说明 |
+| 模式 | 描述 |
 | --- | --- |
-| **FormMode.Edit** |表单使用现有记录填充，用户可以修改字段的值。  完成后，用户可以将更改保存到记录中。 |
-| **FormMode.New** |表单使用默认值填充，用户可以修改字段的值。  完成后，用户可以将记录添加到数据源。 |
+| FormMode.Edit |表单使用现有记录填充，用户可以修改字段的值。  完成后，用户可以将更改保存到记录中。 |
+| FormMode.New |表单使用默认值填充，用户可以修改字段的值。  完成后，用户可以将记录添加到数据源。 |
 | FormMode.View |表单使用现有记录填充，但用户无法修改字段的值。 |
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 这些函数通常从**[按钮](../controls/control-button.md)** 或**[图像](../controls/control-image.md)** 控件的 **[OnSelect](../controls/properties-core.md)** 公式中调用，以便用户可以保存编辑、放弃编辑或创建记录。 可通过[将控件和这些函数结合使用](../working-with-forms.md)来创建完整的解决方案。
 
 这些函数不返回任何值。
@@ -62,10 +63,10 @@ ViewForm 函数将表单控件的模式更改为 FormMode.View。 在此模式�
 ### <a name="displaymode-poperty"></a>DisplayMode 属性
 可通过 Mode 属性读取当前模式。  该模式还可以确定 DisplayMode 属性的值，数据卡和控件可在表单控件中使用该属性。  通常情况下，如操作控件的 DisplayMode 属性（引用数据卡）一样，将数据卡的 DisplayMode 属性设置为 Parent.DisplayMode（引用表单）： 
 
-| 模式 | DisplayMode | 说明 |
+| 模式 | DisplayMode | 描述 |
 | --- | --- | --- |
-| **FormMode.Edit** |DisplayMode.Edit |数据卡和控件是可编辑的，可以接受对记录的更改。 |
-| **FormMode.New** |DisplayMode.Edit |数据卡和控件是可编辑的，可以接受对新记录的更改。 |
+| FormMode.Edit |DisplayMode.Edit |数据卡和控件是可编辑的，可以接受对记录的更改。 |
+| FormMode.New |DisplayMode.Edit |数据卡和控件是可编辑的，可以接受对新记录的更改。 |
 | FormMode.View |DisplayMode.View |数据卡和控件不可出于查看目的进行编辑和优化。 |
 
 ## <a name="syntax"></a>语法

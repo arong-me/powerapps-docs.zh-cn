@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 06/05/2017
 ms.author: kfend
 ms.openlocfilehash: aa6e778a1c0426c696aaf48c542eccc4887c0e36
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31836238"
 ---
 # <a name="data-table-control-in-powerapps"></a>PowerApps 中的数据表控件
 以表格格式显示一组数据。
@@ -147,7 +148,7 @@ PowerApps 在 2017 年 5 月 5 日引入了“数据表”控件。 此部分介
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：
-* [Color](properties-color-border.md) 和 [Fill](properties-color-border.md)
+* Color[](properties-color-border.md) 和 Fill[](properties-color-border.md)
 * HeadingColor 和 HeadingFill
 * SelectedColor 和 SelectedFill
 * [HoverColor](properties-color-border.md) 和 [HoverFill](properties-color-border.md)

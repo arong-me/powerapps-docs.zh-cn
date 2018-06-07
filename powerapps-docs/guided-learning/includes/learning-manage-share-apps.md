@@ -16,7 +16,7 @@
 
 ![选择用户和组](./media/learning-manage-share-apps/select-users.png)
 
-若选择通过电子邮件通知用户，应用的每个共享对象都会收到包含 Dynamics 365 链接的电子邮件。 应用参与者收到的电子邮件中还包含 web.powerapps.com 链接。如果不单击 Dynamics 365 链接，共享对象就看不到应用。 虽然应用位于 AppSource 中，但共享对象仍必须自行将其添加到 Dynamics 365 中。
+若选择通过电子邮件通知用户，应用的每个共享对象都会收到包含 Dynamics 365 链接的电子邮件。 应用参与者收到的电子邮件中还包含 web.powerapps.com 链接。  如果不单击 Dynamics 365 链接，共享对象就看不到应用。 虽然应用位于 AppSource 中，但共享对象仍必须自行将其添加到 Dynamics 365 中。
 
 ![Dynamics 365 中的应用](./media/learning-manage-share-apps/dynamics-365.png)
 

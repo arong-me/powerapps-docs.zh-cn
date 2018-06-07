@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 11/08/2015
 ms.author: gregli
 ms.openlocfilehash: ecb8b8176dd8489866a5ca88a6b69e1520c3ad69
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31834449"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Microsoft PowerApps 中的 Back 和 Navigate 函数
 更改显示的屏幕。
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/26/2018
 
 当用户在屏幕之间导航时，[上下文变量](../working-with-variables.md#create-a-context-variable)也会保留。 你可以使用 **Navigate** 设置公式会显示的屏幕的一个或多个上下文变量，这是从屏幕外部设置上下文变量的唯一方法。 这个方法可用于将参数传递到屏幕。 如果你使用过另一款编程工具，就会发现这个方法与将参数传递给过程非常相似。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 ### <a name="back"></a>Back
 **Back** 函数用于显示最近显示的屏幕。 无需为这个函数指定任何参数。
 
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/26/2018
 
  在第二个参数中，指定旧屏幕切换为新屏幕的方式：
 
-| Transition 参数 | 说明 |
+| Transition 参数 | 描述 |
 | --- | --- |
 | **ScreenTransition.Cover** |新屏幕将滑入视图，盖住当前屏幕。 |
 | **ScreenTransition.Fade** |旧屏幕淡出以显示新屏幕。 |
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/26/2018
 * *UpdateContextRecord* - 可选。  一条记录，其中包含至少一列的名称以及每列的值。 这一条记录用于更新新屏幕的上下文变量，就像传递到 **[UpdateContext](function-updatecontext.md)** 函数一样。
 
 ## <a name="examples"></a>示例
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Navigate( Details, ScreenTransition.None )** |显示 **Details** 屏幕，没有任何过渡效果，也不会更改上下文变量的值。 |**Details** 屏幕会快速显示。 |
 | **Navigate( Details, ScreenTransition.Fade )** |用**淡入淡出**过渡效果显示 **Details** 屏幕。  不更改上下文变量的任何值。 |当前屏幕淡化消失，以显示 **Details** 屏幕。 |

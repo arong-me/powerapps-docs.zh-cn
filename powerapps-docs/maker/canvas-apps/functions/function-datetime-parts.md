@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
 ms.openlocfilehash: d927b1834993e39055b9cdc3aeb7d518a66f2cec
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838639"
 ---
 # <a name="day-month-year-hour-minute-second-and-weekday-functions-in-powerapps"></a>PowerApps 中的 Day、Month、Year、Hour、Minute、Second 和 Weekday 函数
 返回日期/时间值的各个部分。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Day** 函数可用于返回日期/时间值的日部分，范围是 1 到 31。
 
 **Month** 函数可用于返回日期/时间值的月部分，范围是 1 到 12。
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/26/2018
 
 **Weekday** 函数可用于返回日期/时间值的星期几。  默认情况下，结果范围是 1（星期日）到 7（星期六）。  可以使用 Microsoft Excel 的 Weekday 函数代码或 StartOfWeek 枚举值来指定其他范围：
 
-| Excel 代码 | StartOfWeek 枚举 | 说明 |
+| Excel 代码 | StartOfWeek 枚举 | 描述 |
 | --- | --- | --- |
 | **1**, **17** |**StartOfWeek.Sunday** |数字 1（星期日）到 7（星期六）。  默认值。 |
 | **2**, **11** |**StartOfWeek.Monday** |数字 1（星期一）到 7（星期日）。 |
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="examples"></a>示例
 对于下面的示例，当前时间是 **2015 年 4 月 9 日星期四****下午 3:59:37**。
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Year(&nbsp;Now()&nbsp;)** |返回当前时间和日期的年部分。 |2015 |
 | **Month(&nbsp;Now()&nbsp;)** |返回当前时间和日期的月部分。 |4 |

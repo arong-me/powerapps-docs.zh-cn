@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 947a6c369c41b1ff67c611fa734f927227dde991
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31826835"
 ---
 # <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>PowerApps 中的 First、FirstN、Last 和 LastN 函数
 返回表中的第一组或最后一组[记录](../working-with-tables.md#records)。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **First** 函数返回[表](../working-with-tables.md)中的第一条记录。
 
 **FirstN** 函数返回表中的第一组记录，第二个参数指定要返回的记录数。

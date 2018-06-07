@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 419c272b68c356d4f1cefd5868dd8a15ca1027de
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31832339"
 ---
 # <a name="left-mid-and-right-functions-in-powerapps"></a>PowerApps 中的 Left、Mid 和 Right 函数
 提取文本字符串的左侧、中间或右侧部分。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Left**、**Mid** 和 **Right** 函数返回字符串的一部分。
 
 * **Left** 返回字符串的起始字符。
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/26/2018
 ### <a name="single-string"></a>单个字符串
 此部分中的示例使用文本输入控件作为[数据源](../working-with-data-sources.md)。 该控件名为 **Author**，包含字符串“E. E. Cummings”。
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Left( Author.Text, 5 )** |从字符串开头处提取最多五个字符。 |“E. E.” |
 | **Mid( Author.Text, 7, 4 )** |从字符串的第七个字符开始，提取最多四个字符。 |“Cumm” |
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/26/2018
 
 ![](media/function-left-mid-right/people-table.png)
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Left( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 8 )** |提取每个字符串的前八个字符。 |<style> img { max-width: none } </style> ![](media/function-left-mid-right/people-table-left.png) |
 | **Mid( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 5, 7 )** |提取每个字符串的中间七个字符，从第五个字符开始提取。 |![](media/function-left-mid-right/people-table-mid.png) |

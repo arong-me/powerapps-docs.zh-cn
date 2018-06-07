@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 08/15/2017
 ms.author: gregli
 ms.openlocfilehash: e488383acbd163383079b5078e464cab89e677ad
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31829039"
 ---
 # <a name="average-max-min-stdevp-sum-and-varp-functions-in-powerapps"></a>PowerApps 中的 Average、Max、Min、StdevP、Sum 和 VarP 函数
 用于对一组数字进行汇总的聚合函数。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Average** 函数可用于计算其参数的平均值（或算术平均值）。
 
 **Max** 函数用于查找最大值。

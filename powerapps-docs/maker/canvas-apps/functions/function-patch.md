@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/21/2015
 ms.author: gregli
 ms.openlocfilehash: d0b2ff351f7026967359f1b4d386a71d7ed5441f
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838708"
 ---
 # <a name="patch-function-in-powerapps"></a>PowerApps 中的 Patch 函数
 在[数据源](../working-with-data-sources.md)中修改或创建一条或多条[记录](../working-with-tables.md#records)，或者合并数据源外的记录。
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/26/2018
 
 **Patch( { Name: "Contoso", Phone: “1-212-555-1234” }, { Name: "Contoso", Location: “Midtown”  } )**
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 ### <a name="modify-or-create-a-record-in-a-data-source"></a>在数据源中修改或创建记录
 要在数据源中使用这个函数，请指定数据源，然后指定一条基本记录：
 
@@ -91,7 +92,7 @@ ms.lasthandoff: 04/26/2018
 
 ![](media/function-patch/icecream.png)
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Patch(&nbsp;IceCream,<br>First( Filter( IceCream, Flavor = "Chocolate" ) ), {&nbsp;Quantity:&nbsp;400&nbsp;} )** |修改 **IceCream** 数据源中的记录：<ul><li> 要修改的记录的 **ID** 列的值为 **1**。 （这个 ID 的记录为 **Chocolate**。）</li><li>将 **Quantity** 列的值更改为 **400**。 |{&nbsp;ID:&nbsp;1, Flavor:&nbsp;"Chocolate", Quantity:&nbsp;400 }<br><br>已修改 **IceCream** 数据源中的 **Chocolate** 条目。 |
 | **Patch( IceCream, Defaults(&nbsp;IceCream ), {&nbsp;Flavor:&nbsp;“Strawberry”&nbsp;}&nbsp;)** |在 **IceCream** 数据源中创建一条记录。<ul><li>**ID** 列包含的值为 **3**，这是数据源自动生成的。</li><li>**Quantity** 列的值为 **0**，在 **IceCream** 数据源中，这是该列的默认值，由 **[Defaults](function-defaults.md)** 函数指定。<li>**Flavor** 列的值为 **Strawberry**。</li> |{ ID:&nbsp;3, Flavor:&nbsp;“Strawberry”, Quantity:&nbsp;0&nbsp;}<br><br>已在  **IceCream** 数据源中创建 **Strawberry** 条目。 |
@@ -101,7 +102,7 @@ ms.lasthandoff: 04/26/2018
 ![](media/function-patch/icecream-after.png)
 
 #### <a name="merge-records-outside-of-a-data-source"></a>合并数据源外的记录
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Patch(&nbsp;{&nbsp;Name:&nbsp;"James",&nbsp;Score:&nbsp;90&nbsp;}, {&nbsp;Name:&nbsp;"Jim",&nbsp;Passed:&nbsp;true&nbsp;} )** |合并数据源外的两条记录：<br><ul><li>两条记录的 **Name** 列中的值不相同。 结果包含离参数列表的末尾更近的记录中的值 (**Jim**)，而不是离开头更近的记录中的值 (**James**)。</li><li>第一条记录包含第二条记录中不存在的一列 (**Score**)。 结果包含这一列及其值 (**90**)。</li><li>第二条记录包含第一条记录中不存在的一列 (**Passed**)。 结果包含这一列及其值 (**true**)。 |{&nbsp;Name:&nbsp;"Jim", Score:&nbsp;90, Passed:&nbsp;true&nbsp;} |
 
