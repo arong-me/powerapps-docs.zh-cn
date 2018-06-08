@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 07/24/2017
 ms.author: gregli
 ms.openlocfilehash: 9dce0ac36cd16faaa9c8b9a0b34d15eff086ab2e
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838024"
 ---
 # <a name="operators-and-data-types-in-powerapps"></a>PowerApps 中的运算符和数据类型
 其中的某些运算符依赖于作者的语言。  有关详细信息，请参阅[全局应用](../global-apps.md)。
 
-| 符号 | 类型 | 语法 | 说明 |
+| 符号 | 类型 | 语法 | 描述 |
 | --- | --- | --- | --- |
 | **.** |属性选择器 |**Slider1.Value<br>Color.Red<br>Acceleration.X** |从[表](../working-with-tables.md)、控件、[信号](signals.md) 或枚举中提取属性。  对于向后兼容性，**!** 也可以使用。 |
 | **.**<br>[或 **,** [，具体取决于语言](../global-apps.md)] |小数分隔符 |**1.23**<br>[或 **1,23**，具体取决于语言] |整数和小数之间的分隔符。  字符取决于语言。 |

@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 09/13/2016
 ms.author: gregli
 ms.openlocfilehash: 4d255ec8015caaec1ce066e646c6506c182dc722
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31837725"
 ---
 # <a name="acos-acot-asin-atan-atan2-cos-cot-degrees-pi-radians-sin-and-tan-functions-in-powerapps"></a>PowerApps 中的 Acos、Acot、Asin、Atan、Atan2、Cos、Cot、Degrees、Pi、Radians、Sin 和 Tan 函数
 计算三角函数的值。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 ### <a name="primary-functions"></a>主要函数
 **Cos** 函数返回其参数的余弦值（用弧度表示的角度）。
 
@@ -91,7 +92,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="examples"></a>示例
 ### <a name="single-number"></a>单个数字
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Cos(&nbsp;1.047197&nbsp;)** |返回 1.047197 弧度或 60 度的余弦值。 |0.5 |
 | **Cot(&nbsp;Pi()/4&nbsp;)** |返回 0.785398... 弧度或 45 度的余切值。 |1 |
@@ -112,7 +113,7 @@ ms.lasthandoff: 04/26/2018
 
 ![](media/function-trig/values.png)
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Cos(&nbsp;ValueTable&nbsp;)** |返回表中每个数字的余弦值。 |<style> img { max-width: none } </style> ![](media/function-trig/values-cos.png) |
 | **Cot(&nbsp;ValueTable&nbsp;)** |返回表中每个数字的余切值。 |<style> img { max-width: none } </style> ![](media/function-trig/values-cot.png) |

@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 03/21/2018
 ms.author: gregli
 ms.openlocfilehash: 2bd8ba7dc9b764399165c75361215cee2edb4e7b
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31831437"
 ---
 # <a name="iferror-function-in-powerapps"></a>PowerApps 中的 IfError 函数
 检测错误并提供替代值或执行操作。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 > [!NOTE]
 > 此函数是试验性功能的一部分，并可能会发生变化。  此处描述的行为仅在开启公式级错误管理功能时可用。  默认情况下关闭此应用级别设置。  若要启用此功能，请导航到“文件”选项卡左侧菜单中的“应用设置”，然后导航到“试验性功能”。  你的反馈对我们非常重要，请通过 [PowerApps 社区论坛](https://powerusers.microsoft.com/t5/Expressions-and-Formulas/bd-p/How-To)提供反馈。
 
@@ -41,7 +42,7 @@ IfError( Value, Fallback1 [, Fallback2, ... ] )
 
 ## <a name="examples"></a>示例
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **IfError( 1, 2 )** |第一个参数不是错误。  返回该参数，且不计算后续参数。   | 1 |
 | **IfError( 1/0, 2 )** | 第一个参数返回一个错误值（由于除数为零）。  计算第二个参数，返回生成的非错误值。 | 2 | 

@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 01/30/2018
 ms.author: mblythe
 ms.openlocfilehash: 0a71bc45fbcc3c36337571b9d80ade0d2cf9cbe2
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31827542"
 ---
 # <a name="embed-the-power-bi-project-report-in-sharepoint-online"></a>将 Power BI 项目报表嵌入 SharePoint Online
 > [!NOTE]
@@ -24,7 +25,7 @@ ms.lasthandoff: 04/26/2018
 
 现在，我们将把 Power BI 报表嵌入托管我们两个列表的相同 SharePoint Online 网站。 Power BI 支持多种嵌入方法，包括可将 Web 和移动视图直接集成到 SharePoint 网页的功能。
 
-使用这种嵌入类型，Power BI 可以将报表作为 Web 部件嵌入，为用户提供适当的访问权限，并且你可以单击嵌入的报表转到 powerbi.com 上的报表。首先，我们将在 Power BI 中生成嵌入链接，然后在我们创建的网页中使用此链接。 若要详细了解如何嵌入，请参阅[使用报表 Web 部件在 SharePoint Online 中嵌入报表](https://docs.microsoft.com/power-bi/service-embed-report-spo)。
+使用这种嵌入类型，Power BI 可以将报表作为 Web 部件嵌入，为用户提供适当的访问权限，并且你可以单击嵌入的报表转到 powerbi.com 上的报表。 首先，我们将在 Power BI 中生成嵌入链接，然后在我们创建的网页中使用此链接。 若要详细了解如何嵌入，请参阅[使用报表 Web 部件在 SharePoint Online 中嵌入报表](https://docs.microsoft.com/power-bi/service-embed-report-spo)。
 
 ## <a name="step-1-generate-an-embed-link"></a>第 1 步：生成嵌入链接
 1. 登录 Power BI，再单击或点击左侧导航窗格中的报表名称。

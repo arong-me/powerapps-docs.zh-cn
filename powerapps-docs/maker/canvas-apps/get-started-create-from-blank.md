@@ -7,10 +7,11 @@ ms.component: canvas
 ms.date: 04/23/2018
 ms.author: anneta
 ms.openlocfilehash: 29f07162ec2815398cda5bcc359f7388df261bc0
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31836961"
 ---
 # <a name="create-an-excel-app-from-scratch"></a>从头开始创建 Excel 应用
 基于 Excel 数据从头开始创建你自己的应用，将其格式化为表格，然后从其他源添加数据（如果需要）。 按照本教程中的步骤进行操作，可以创建包含两个屏幕的应用。 在一个屏幕上，用户可以浏览一组记录。 在另一个屏幕上，用户可以创建记录、更新记录中的一个或多个字段，或删除整条记录。 与[自动生成应用](get-started-create-from-data.md)相比，此方法耗费的时间要多得多，但有经验的应用创作者可以使用它根据需要生成最佳应用。

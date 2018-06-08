@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 03/07/2018
 ms.author: sharik
 ms.openlocfilehash: 5bf57ec96569751b3db656abdf04cebb1e13133a
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32329838"
 ---
 # <a name="system-requirements-limits-and-configuration-values"></a>系统要求、限制和配置值
 本主题包含设备平台和 Web 浏览器要求，以及 PowerApps 的限制和配置值。

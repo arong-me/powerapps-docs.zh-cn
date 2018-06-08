@@ -1,22 +1,18 @@
 ---
 title: Microsoft Translator 连接概述 | Microsoft 文档
 description: 了解如何连接到 Microsoft Translator，逐步完成部分示例，并查看所有函数
-documentationcenter: ''
 author: lancedMicrosoft
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: lanced
-ms.openlocfilehash: 33b82bac0f4090db926c5cdb2e8e4345e7b6af70
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: c375429b7ac2341766c36ca58e1bbf3c78c9a6d1
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803388"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>从 PowerApps 连接到 Microsoft Translator
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -88,7 +84,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="view-the-available-functions"></a>查看可用函数
 此连接包括以下函数：
 
-| 函数名称 | 说明 |
+| 函数名称 | 描述 |
 | --- | --- |
 | [Languages](connection-microsoft-translator.md#languages) |检索 Microsoft Translator 支持的所有语言 |
 | [Translate](connection-microsoft-translator.md#translate) |使用 Microsoft Translator 将文本翻译为指定的语言 |
@@ -103,7 +99,7 @@ ms.lasthandoff: 04/26/2018
 无。
 
 #### <a name="output-properties"></a>输出属性
-| 属性名称 | 数据类型 | 需要 | 说明 |
+| 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 代码 |字符串 |否 | |
 | 名称 |字符串 |否 | |
@@ -112,7 +108,7 @@ ms.lasthandoff: 04/26/2018
 翻译文本：使用 Microsoft Translator 将文本翻译为指定的语言
 
 #### <a name="input-properties"></a>输入属性
-| 名称 | 数据类型 | 需要 | 说明 |
+| 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | query |字符串 |是 |要翻译的文本 |
 | languageTo |字符串 |是 |目标语言代码（例如：“fr”） |
@@ -126,12 +122,12 @@ ms.lasthandoff: 04/26/2018
 检测语言：检测给定文本的源语言
 
 #### <a name="input-properties"></a>输入属性
-| 名称 | 数据类型 | 需要 | 说明 |
+| 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | query |字符串 |是 |将要标识其语言的文本 |
 
 #### <a name="output-properties"></a>输出属性
-| 属性名称 | 数据类型 | 需要 | 说明 |
+| 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 代码 |字符串 |否 | |
 | 名称 |字符串 |否 | |
@@ -143,7 +139,7 @@ ms.lasthandoff: 04/26/2018
 无。
 
 #### <a name="output-properties"></a>输出属性
-| 属性名称 | 数据类型 | 需要 | 说明 |
+| 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 代码 |字符串 |否 | |
 | 名称 |字符串 |否 | |
@@ -152,7 +148,7 @@ ms.lasthandoff: 04/26/2018
 文本到语言：将给定文本转换为声波格式音频流的语音
 
 #### <a name="input-properties"></a>输入属性
-| 名称 | 数据类型 | 需要 | 说明 |
+| 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | query |字符串 |是 |要转换的文本 |
 | language |字符串 |是 |用于生成语音的语言代码（示例：“en-us”） |

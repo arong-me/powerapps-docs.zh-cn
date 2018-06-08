@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 11/01/2015
 ms.author: gregli
 ms.openlocfilehash: 2b3d91a6da0e17ded435aec74a88ea1bbdd4fac1
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31827726"
 ---
 # <a name="validate-function-in-powerapps"></a>PowerApps 中的 Validate 函数
 **Validate** 函数检查单个[列](../working-with-tables.md#columns)或整条[记录](../working-with-tables.md#records)的值对[数据源](../working-with-data-sources.md)是否有效。  
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 在用户提交数据更改之前，你可以针对该提交的有效性提供即时反馈，改进用户体验。
 
 对于何种要素构成记录中的有效值，数据源可以提供相关信息。 该信息可能包括许多约束，例如以下示例：
@@ -54,13 +55,13 @@ ms.lasthandoff: 04/26/2018
 就这些示例来说，**Scores** 数据源的 **Percentage** 列中的值必须为 0 到 100（含）之间。 如果数据通过验证，该函数将返回空白。 否则，该函数返回一条错误消息。
 
 ### <a name="validate-with-a-single-column"></a>验证单个列
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Validate( Scores, Percentage, 10 )** |对于 **Scores** 数据源的 **Percentage** 列，检查 **10** 是否为有效值。 |空白 |
 | **Validate( Scores, Percentage, 120 )** |对于 **Scores** 数据源的 **Percentage** 列，检查 **120** 是否为有效值。 |“值必须为 0 到 100 之间。” |
 
 ### <a name="validate-with-a-complete-record"></a>验证完整记录
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Validate( Scores, EditRecord, Gallery.Updates )** |对于 **Scores** 数据源的 **Percentage** 列，检查 **10** 是否为有效值。 |空白 |
 | **Validate( Scores, EditRecord, Gallery.Updates )** |对于 **Scores** 数据源的 **Percentage** 列，检查 **120** 是否为有效值。 |“值必须为 0 到 100 之间。” |

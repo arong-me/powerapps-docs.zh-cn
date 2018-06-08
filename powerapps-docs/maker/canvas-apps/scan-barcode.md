@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/23/2016
 ms.author: anneta
 ms.openlocfilehash: 6960b41effb109f6f2266ba279b4d51ea51e744f
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32328711"
 ---
 # <a name="scan-a-barcode-in-powerapps"></a>在 PowerApps 中扫描条形码
 通过创建应用并在具有摄像头的设备（如手机）上运行应用，可扫描多种类型的条形码。 条形码的等效数字显示在“标签”控件中，可以将此数据上载到各种[数据源](connections-list.md)中。

@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
 ms.openlocfilehash: 68f81dffa4ba861978dacb1b7ad6830b0736ed6e
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31837139"
 ---
 # <a name="global-support"></a>全球支持
 PowerApps 是全球性的产品。  可以在许多不同的区域中构建和使用许多不同语言的应用。

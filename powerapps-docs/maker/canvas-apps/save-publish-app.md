@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 09/14/2017
 ms.author: anneta
 ms.openlocfilehash: e265934336f3646f52b749ddcec5a5e734bd2c50
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31828884"
 ---
 # <a name="save-and-publish-an-app-in-powerapps"></a>在 PowerApps 中保存并发布应用
 每当保存应用更改时，都只会对你自己和有权编辑此应用的其他所有人自动发布更改。 完成更改后，必须显式发布更改，以便应用的所有共享对象都能使用。

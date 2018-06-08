@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 1d6c2485a8f54e0676cee5443085fb962f144831
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31826720"
 ---
 # <a name="date-and-time-functions-in-powerapps"></a>PowerApps 中的 Date 和 Time 函数
 将日期和时间组件转换为日期/时间值。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Date** 函数将单个年、月、日的值转换为日期/时间值。  时间部分为午夜。
 
 * 如果“年”介于 0 到 1899（含）之间，则函数将该值加上 1900，以计算年份。  **70** 成为 **1970**。

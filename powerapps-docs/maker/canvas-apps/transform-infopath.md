@@ -1,22 +1,18 @@
 ---
 title: 将 InfoPath 表单转换为 PowerApps | Microsoft Docs
 description: 要开始将 InfoPath 表单转换为 PowerApps，请参阅有关常见 InfoPath 方案以及如何在 PowerApps 中创建这些项的详细信息。
-documentationcenter: na
-author: dewcatpaint1
-manager: kfile
-editor: ''
-tags: ''
+author: richardriley99
 ms.service: powerapps
-ms.devlang: na
 ms.topic: article
 ms.component: canvas
 ms.date: 04/05/2018
-ms.author: cathed
-ms.openlocfilehash: 1d03cadfe764d25a4758f35b540c6217004b7657
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.author: rriley
+ms.openlocfilehash: 10fe4e9052b9c029046c515c229e95075988597a
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803503"
 ---
 # <a name="transform-your-infopath-forms-to-powerapps"></a>将 InfoPath 表单转换为 PowerApps
 

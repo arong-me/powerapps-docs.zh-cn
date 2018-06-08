@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 06/17/2017
 ms.author: gregli
 ms.openlocfilehash: 2b64ebdf91effe812d3fd81d0d1e0bb854147a19
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31839145"
 ---
 # <a name="understand-data-form-layout-in-microsoft-powerapps"></a>了解 Microsoft PowerApps 中的数据表单布局
 在 PowerApps 中，可以轻松创建具有吸引力且高效使用的表单。 例如，假设记录销售订单的基本表单如下：
@@ -155,7 +156,7 @@ ms.lasthandoff: 04/26/2018
 
 现在，我们将重点处理第三行地址。 与刚才的操作类似，我们将缩短这些数据卡中每个标签的文本，并将文本输入框排列到每个标签的右侧。 下面介绍如何对“州/省/自治区/直辖市”数据卡执行这些操作：
 
-| 步骤 | 说明 | 结果 |
+| 步骤 | 描述 | 结果 |
 | --- | --- | --- |
 | 1 |选中“州/省/自治区/直辖市”数据卡，以使其周围出现握柄。 |![选择卡](./media/working-with-form-layout/state-morph-2.png) |
 | 2 |选中该卡中的标签，以使其周围出现握柄。 |![选择数据卡内的控件](./media/working-with-form-layout/state-morph-3.png) |

@@ -11,10 +11,11 @@ ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
 ms.openlocfilehash: 54d53d5f3385be4b5d38a2bf220da139ba3bd3a4
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31827249"
 ---
 # <a name="generate-an-app-from-excel-in-powerapps"></a>使用 Excel 在 PowerApps 中生成应用
 在本主题中，将使用 Excel 表中的数据，在 PowerApps 中自动生成你的第一个应用。 将选择一个 Excel 文件，生成一个应用，然后运行生成的应用。 每个生成的应用都包括屏幕，用于浏览记录、显示记录的详细信息以及创建或更新记录。 通过生成应用，可以使用 Excel 数据快速利用应用，然后自定义该应用以更好地满足需要。 

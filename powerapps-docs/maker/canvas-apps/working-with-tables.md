@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
 ms.openlocfilehash: 42a7c0db6aaf46d8cdbd112cf72c6f95f58dc9ec
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31839168"
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>了解 PowerApps 中的表和记录
 可以创建一个应用，用于访问 Microsoft Excel、SharePoint、SQL Server 以及在记录和表中存储数据的其他多个源中的信息。 若要最有效地处理此类数据，请查看这些结构的基本概念。

@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: c9f28f8b38099e373397afc7835398ece5f0f208
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31827203"
 ---
 # <a name="value-function-in-powerapps"></a>PowerApps 中的 Value 函数
 将文本字符串转换为数字。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Value** 函数将包含数字字符的文本字符串转换为数字值。 需要对用户以文本形式输入的数字执行计算时，请使用此函数。
 
 不同的语言对 **,** 和 **.** 的解释 各不相同。  默认情况下，文本使用当前用户的语言进行解释。  可以通过语言标记指定要使用的语言，使用的语言标记与 **[Language](function-language.md)** 函数返回的语言标记相同。
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="examples"></a>示例
 运行这些公式的用户位于美国，且已选择英语作为其语言。  **Language** 函数返回的是“en-US”。
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Value( "123.456" )** |将使用默认语言“en-US”，该语言使用句点作为小数分隔符。 |123.456 |
 | **Value( "123.456", "es-ES" )** |“es-ES”是在西班牙使用的西班牙语的语言标记。  在西班牙，句点为千位分隔符。 |123456 |

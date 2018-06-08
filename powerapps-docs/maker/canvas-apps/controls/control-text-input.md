@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 3100ebae3d3f9b7cdef839d74e9d289b4059de5d
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838455"
 ---
 # <a name="text-input-control-in-powerapps"></a>PowerApps 中的文本输入控件
 用户可在其中键入文本、数字和其他数据的框。
@@ -50,9 +51,9 @@ ms.lasthandoff: 04/26/2018
 
 **[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件边框的颜色。
 
-[DisabledColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件中的文本颜色。
+**[DisabledColor](properties-color-border.md)** – 控件的 **[DisplayMode](properties-core.md)** 属性设置为 Disabled**Disabled** 时，该控件中的文本颜色。
 
-[DisabledFill](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件的背景色。
+**[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode”**[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
 
 **[Fill](properties-color-border.md)** – 控件的背景色。
 
@@ -170,5 +171,5 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="keyboard-support"></a>键盘支持
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和“**[FocusedBorderThickness](properties-color-border.md)**”来实现此目的。
+* 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
  

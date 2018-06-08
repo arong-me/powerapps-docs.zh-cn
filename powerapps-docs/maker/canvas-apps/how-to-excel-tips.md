@@ -1,25 +1,23 @@
 ---
 title: 在 Excel 中设置表格格式 | Microsoft Docs
 description: 要使用 Excel 数据，需要将数据格式设置为表格。 在列名中添加“图像”关键字
-services: ''
-suite: powerapps
 documentationcenter: na
 author: yifwang
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 04/03/2018
 ms.author: yifwang
-ms.openlocfilehash: 69e46e1e55b3f1dd4b1e0df20ef274a56e657809
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: fd458fe6c8962bbc4443c1de7aad0f1c4eea7fac
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31826606"
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>在 Excel 中设置表格格式和命名的相关提示
 要在 PowerApps 中使用 Excel 数据，则必须将其设置为表格格式。 通过按照本文内容操作，你将了解如何在 Excel 中设置表格格式以及命名 Excel 列的一些提示。

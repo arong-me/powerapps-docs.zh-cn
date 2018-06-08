@@ -1,22 +1,18 @@
 ---
 title: 附件控件：参考 | Microsoft 文档
 description: 有关附件控件的信息（包括属性和示例）
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 04/23/2018
 ms.author: fikaradz
-ms.openlocfilehash: 24610e4d70f39f08eec1e828c1be20183d8de3af
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 3a24f5d879674d8832b7fe5030e871e7f7ba1626
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803112"
 ---
 # <a name="attachments-control-in-powerapps"></a>PowerApps 中的附件控件
 方便用户将文件下载到设备，并在 SharePoint 列表中上传和删除文件的控件。

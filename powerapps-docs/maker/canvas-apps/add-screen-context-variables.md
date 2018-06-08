@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 07/10/2017
 ms.author: anneta
 ms.openlocfilehash: 19c06fa9bfc7098227e5f30a1c913522d9e6e7a3
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31825248"
 ---
 # <a name="add-a-screen-and-navigate-between-screens"></a>添加和切换屏幕
 创建包含多个屏幕的应用，然后为用户提供屏幕切换方式。
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/26/2018
     当用户单击或点击此箭头时，“Target”屏幕淡入。
 
 4. 在“Target”屏幕上，添加“后退箭头”，然后将其**[“OnSelect”](controls/properties-core.md)** 属性设为以下公式：
-   <br>**Navigate(Source, ScreenTransition.Fade)**
+   <br>Navigate(Source, ScreenTransition.Fade)
 
 5. 打开预览模式（选择 ![](./media/add-screen-context-variables/preview.png) 或按 F5 键），然后单击或点击所添加的箭头切换屏幕。
 

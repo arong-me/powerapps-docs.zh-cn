@@ -12,10 +12,11 @@ ms.component: canvas
 ms.date: 06/05/2017
 ms.author: sharik
 ms.openlocfilehash: 19e30477b7015061a4e4b781e1c53a55d1fda1a7
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32329608"
 ---
 # <a name="start-a-flow-in-an-app"></a>启动应用中的流
 可以使用 Microsoft Flow 来创建逻辑，以便在应用中发生某个事件时执行一个或多个任务。 例如，配置一个按钮，以便用户选择它时在 SharePoint 列表中创建一个项、发送电子邮件或会议请求、将文件添加到云，或执行所有上述操作。 可以在应用中配置任何用于启动流的控件，该控件在关闭 PowerApps 的情况下仍会继续运行。

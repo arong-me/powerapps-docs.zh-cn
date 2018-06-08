@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 06/28/2016
 ms.author: archanan
 ms.openlocfilehash: f7943c5204dcab7c59e922bfb096f70d05b94e9b
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31828993"
 ---
 # <a name="share-app-resources"></a>共享应用资源
 [共享应用](share-app.md)前，先考虑应用依赖的资源类型，如以下一个或多个资源类型：

@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 410e9be47b4356a97292eb5de17c5dc10885fae3
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31829131"
 ---
 # <a name="now-today-and-istoday-functions-in-powerapps"></a>PowerApps 中的 Now、Today 和 IsToday 函数
 返回当前日期和时间，以及测试某个日期/时间值是否为今天。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Now** 函数以日期/时间值返回当前日期和时间。
 
 **Today** 函数以日期/时间值返回当前日期。 时间部分为午夜。 **Today** 在今天午夜到明天午夜的一整天中具有相同的值。
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="examples"></a>示例
 在本部分的示例中，当前时间是 **2015 年 2 月 12 日****凌晨 3:59**，语言是 **en-us**。
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Text( Now(), "mm/dd/yyyy hh:mm:ss" )** |检索当前日期和时间，并将其显示为字符串。 |“02/12/2015 03:59:00” |
 | **Text( Today(), "mm/dd/yyyy hh:mm:ss" )** |仅检索当前日期，时间部分为午夜，并将其显示为字符串。 |“02/12/2015 00:00:00” |

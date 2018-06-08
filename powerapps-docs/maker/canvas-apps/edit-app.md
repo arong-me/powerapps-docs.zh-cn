@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 05/19/2017
 ms.author: sharik
 ms.openlocfilehash: d6c857a75a21123cdd0e826682fc595a503d67fd
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32328780"
 ---
 # <a name="edit-an-app-in-powerapps"></a>在 PowerApps 中编辑应用
 编辑自己生成、拥有或拥有“可编辑”权限的任何应用。 可在 PowerApps Studio 中编辑应用。 如果尝试编辑的应用已在别处打开以供编辑，将会看到一条消息，指明是你自己还是其他用户打开的。

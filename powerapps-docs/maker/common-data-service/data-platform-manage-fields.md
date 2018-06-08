@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
 ms.openlocfilehash: a4ec386ef6a7eee02c2ac608bb6e00ed9ee39c19
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34168127"
 ---
 # <a name="manage-custom-fields-in-an-entity"></a>管理实体中的自定义字段
 可以在任意实体中创建和更新一个或多个自定义字段。 创建自定义字段时，可以指定一组属性，例如字段名称、其显示名称及其将包含的数据类型。 有关详细信息，请参阅[实体属性元数据](../../developer/common-data-service/entity-attribute-metadata.md)。

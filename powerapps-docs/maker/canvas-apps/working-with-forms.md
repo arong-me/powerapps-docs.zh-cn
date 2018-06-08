@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 04/27/2016
 ms.author: gregli
 ms.openlocfilehash: a9cd26ad41ceaa5b94678a3ef87bf0ab6dda98a1
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32330666"
 ---
 # <a name="understand-data-forms-in-microsoft-powerapps"></a>了解 Microsoft PowerApps 中的数据窗体
 添加三种类型的控件，使用户能够浏览记录、显示有关记录的详细信息，以及编辑或创建记录：

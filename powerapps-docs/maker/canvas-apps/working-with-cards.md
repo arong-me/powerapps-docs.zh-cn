@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
 ms.openlocfilehash: 074e40dd2fc19279bef36ac91196c61b050abda3
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838070"
 ---
 # <a name="understand-data-cards"></a>了解数据卡
 **[卡](controls/control-card.md)** 控件是**[编辑表单](controls/control-form-detail.md)** 和**[显示表单](controls/control-form-detail.md)** 控件的构建基块。 表单表示整条记录，每个卡表示该记录的单个字段。
@@ -141,7 +142,7 @@ PowerApps 为字符串、数字和其他数据类型提供了一组预定义的�
 
 四个控件使得此卡可以工作：
 
-| 名称 | 类型 | 说明 |
+| 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | **TextRequiredStar** |“[标签](controls/control-text-box.md)”控件 |显示一个星号，这通常在数据输入表单上用来指示某个字段是必填的。 |
 | **TextFieldDisplayName** |“[标签](controls/control-text-box.md)”控件 |显示此字段的用户友好名称。 此名称可以不同于数据源的架构中的名称。 |
@@ -150,7 +151,7 @@ PowerApps 为字符串、数字和其他数据类型提供了一组预定义的�
 
 若要为这些控件填充数据，可以通过以下关键公式从卡的属性驱动其属性。 注意，这些公式中没有一个引用特定的字段。 相反，所有信息都来自卡。
 
-| 控件属性 | 公式 | 说明 |
+| 控件属性 | 公式 | 描述 |
 | --- | --- | --- |
 | **TextRequiredStar.Visible** |**Parent.Required** |只有当字段为必填字段时，星星才会显示。 Required 是由你或数据源的元数据驱动的一个公式。 |
 | **TextFieldDisplayName.Text** |**Parent.DisplayName** |此文本框控件显示用户友好名称，这是由你或数据源的元数据提供的，并且是在卡的 **[DisplayName](controls/control-card.md)** 属性中设置的。 |
@@ -159,7 +160,7 @@ PowerApps 为字符串、数字和其他数据类型提供了一组预定义的�
 
 为了从这些控件中提取信息并将其推送回数据源，我们提供了以下关键公式：
 
-| 控件名称 | 公式 | 说明 |
+| 控件名称 | 公式 | 描述 |
 | --- | --- | --- |
 | **DataCard.DataField** |**"ApproverEmail"** |用户可以在此卡中显示和编辑的字段的名称。 |
 | **DataCard.Update** |**InputText.Text** |在 **[SubmitForm](functions/function-form.md)** 运行时要验证并推送回数据源的值。 |

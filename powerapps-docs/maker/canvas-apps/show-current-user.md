@@ -12,10 +12,11 @@ ms.component: canvas
 ms.date: 10/16/2016
 ms.author: lonu
 ms.openlocfilehash: 11177ffa8913afe4d0245708dd8c9b2b0b50c8c2
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31826651"
 ---
 # <a name="show-information-about-a-powerapps-user"></a>显示 PowerApps 用户的相关信息
 User 函数可显示与已登录用户关联的全名、电子邮件地址和图片。 可以使用此信息来自动填充窗体。

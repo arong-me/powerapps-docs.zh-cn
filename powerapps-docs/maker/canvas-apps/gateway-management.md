@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/30/2016
 ms.author: archanan
 ms.openlocfilehash: d51d134878b04f3cb10ff876ef488f1390e4ef30
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31826789"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>在 PowerApps 中管理本地数据网关
 安装本地数据网关，以便在 PowerApps 和不在云中的数据源（如本地 SQL Server 数据库或本地 SharePoint 网站）之间快速、安全地传输数据。 查看拥有管理权限的所有网关，并管理这些网关的权限和连接。

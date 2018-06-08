@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
 ms.openlocfilehash: f1952c2349eb54f2c6348f5abc4dee9a4645348a
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34168426"
 ---
 # <a name="create-a-relationship-between-entities"></a>创建实体间的关系
 一个实体中的数据通常与另一个实体中的数据相关。 例如，可能有“教师”和“班级”实体，而“班级”实体可能与“教师”实体间存在查找关系，以显示哪位教师负责这个班级。 可以使用查找字段显示“教师”实体中的数据。 这通常称为查找字段。

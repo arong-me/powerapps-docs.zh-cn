@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 10/21/2015
 ms.author: gregli
 ms.openlocfilehash: 3046aa93941a07d44345e09b442cb57b623946c3
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31834335"
 ---
 # <a name="update-and-updateif-functions-in-powerapps"></a>PowerApps 中的 Update 和 UpdateIf 函数
 更新[数据源](../working-with-data-sources.md)中的[记录](../working-with-tables.md#records)。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 ### <a name="update-function"></a>Update 函数
 使用 **Update** 函数可替换数据源中的整个记录， 而使用 **UpdateIf** 和 **[Patch](function-patch.md)** 函数则可修改记录中的一个或多个值，对其他值不作处理。
 
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/26/2018
 
 ![](media/function-update-updateif/icecream.png)
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Update(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;), {&nbsp;ID:&nbsp;1,&nbsp;Flavor:&nbsp;"Mint&nbsp;Chocolate",&nbsp;Quantity:150&nbsp;} )** |替换数据源中的某条记录。 |<style> img { max-width: none } </style> ![](media/function-update-updateif/icecream-mint.png)<br><br>修改了 **IceCream** 数据源。 |
 | **UpdateIf(&nbsp;IceCream, Quantity > 175, {&nbsp;Quantity:&nbsp;Quantity&nbsp;+&nbsp;10&nbsp;} )** |修改其 **Quantity** 大于 **150** 的记录。  **Quantity** 字段按 10 递增，其他字段不进行修改。 |![](media/function-update-updateif/icecream-mint-plus10.png)<br><br>修改了 **IceCream** 数据源。 |

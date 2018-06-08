@@ -1,22 +1,18 @@
 ---
 title: 按钮控件：参考 | Microsoft 文档
 description: 了解按钮控件（包括属性和示例）
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 8a22e1075d15d96b7e1a6383260d5b7ccb653c3a
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: a5d818bf12bafaa5c557afae1d93b6ba0a6a7d2f
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803434"
 ---
 # <a name="button-control-in-powerapps"></a>PowerApps 中的按钮控件
 用户单击或点击后可与应用进行交互的控件。
@@ -46,9 +42,9 @@ ms.lasthandoff: 04/26/2018
 
 **[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件边框的颜色。
 
-[DisabledColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件中的文本颜色。
+**[DisabledColor](properties-color-border.md)** – 控件的 **[DisplayMode](properties-core.md)** 属性设置为 Disabled**Disabled** 时，该控件中的文本颜色。
 
-[DisabledFill](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件的背景色。
+**[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode”**[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
 
 **[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
 

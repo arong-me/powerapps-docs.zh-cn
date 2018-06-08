@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 02/05/2017
 ms.author: gregli
 ms.openlocfilehash: 26bbef6e61845708e20efb3bd201ae61867d1026
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838409"
 ---
 # <a name="ismatch-function-in-powerapps"></a>PowerApps 中的 IsMatch 函数
 测试文本字符串是否符合某种模式。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **IsMatch** 函数用于测试文本字符串是否与包含普通字符、预定义模式或[正则表达式](#regular-expressions)的某种模式相符。  
 
 使用 **IsMatch** 函数可验证用户在**[文本输入](../controls/control-text-input.md)** 控件中输入的内容。 例如，可以在将结果保存到数据源中之前验证用户输入的电子邮件地址是否有效。 如果输入的内容与条件不符，可添加其他控件提示用户更正输入。
@@ -46,7 +47,7 @@ ms.lasthandoff: 04/26/2018
 
 模式语言中有一些保留字符，这些字符有特殊的用途。 要使用这些字符，请使用 **\\**（反斜杠）作为前缀，这表示应将后面的字符当作普通字符，你也可以使用提供的预定义模式之一。 下表列出了这些特殊字符：
 
-| 特殊字符 | 说明 |
+| 特殊字符 | 描述 |
 | --- | --- |
 | **.** |圆点或句点 |
 | **?** |问号 |
@@ -65,7 +66,7 @@ ms.lasthandoff: 04/26/2018
 ### <a name="predefined-patterns"></a>预定义模式
 预定义模式提供了一种简单方法来匹配一组字符中的一个字符或一个多字符序列。 使用[字符串连接运算符 **&**](operators.md) 可将你自己的文本字符串与 **Match**  枚举中的模式进行组合：
 
-| Match 枚举 | 说明 | 正则表达式 |
+| Match 枚举 | 描述 | 正则表达式 |
 | --- | --- | --- |
 | **Any** |匹配任何字符。 |**.** |
 | **Comma** |匹配逗号。 |**,** |
@@ -103,7 +104,7 @@ ms.lasthandoff: 04/26/2018
 
 默认情况下，**IsMatch** 函数会检测整个文本字符串是否完全匹配。
 
-| MatchOptions 枚举 | 说明 | 对正则表达式的影响 |
+| MatchOptions 枚举 | 描述 | 对正则表达式的影响 |
 | --- | --- | --- |
 | **BeginsWith** |模式必须与文本的开头匹配。 |在正则表达式的开头添加 **^**。 |
 | **Complete** |默认值。  模式必须与整个文本从头到尾完全匹配。 |在正则表达式的开头添加 **^**，并且在末尾添加 **$**。 |
@@ -125,7 +126,7 @@ ms.lasthandoff: 04/26/2018
 
 用户在 **TextInput1** 中输入 **Hello world**。
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **IsMatch( TextInput1.Text, "Hello world" )** |测试用户输入的内容是否与字符串“Hello world”完全匹配。 |**true** |
 | **IsMatch( TextInput1.Text, "Good bye" )** |测试用户输入的内容是否与字符串“Good bye”完全匹配。 |**false** |
@@ -133,7 +134,7 @@ ms.lasthandoff: 04/26/2018
 | **IsMatch( TextInput1.Text, "hello", Contains & IgnoreCase )** |测试用户输入的内容是否包含单词“hello”（不区分大小写）。 |**true** |
 
 ### <a name="predefined-patterns"></a>预定义模式
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **IsMatch( "123-45-7890", Digit & Digit & Digit & Hyphen & Digit & Digit & Hyphen & Digit & Digit & Digit & Digit & Digit )** |匹配美国社会安全号码。 |**true** |
 | **IsMatch( "joan@contoso.com", Email )** |匹配电子邮件地址。 |**true** |
@@ -141,7 +142,7 @@ ms.lasthandoff: 04/26/2018
 | **IsMatch( "123", MultipleDigits & Period & OptionalDigits )** |匹配一个数字序列，后跟一个句点，后面再跟零个或多个数字。 文本中没有句点，因此该模式不匹配。 |**false** |
 
 ### <a name="regular-expressions"></a>正则表达式
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **IsMatch( "986", "\d+" )** |匹配大于零的整数。 |**true** |
 | **IsMatch( "1.02", "\d+(\.\d\d)?" )** |匹配正货币金额。 如果输入的内容包含小数点，则小数点后还要有 2 个数字字符。 例如，3.00 有效，但 3.1 无效。 |**true** |

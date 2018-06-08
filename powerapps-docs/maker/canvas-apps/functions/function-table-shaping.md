@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 4ed3bae7b4b8fc10053a1a2fec49e7116ec4d4e4
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31837294"
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>PowerApps 中的 AddColumns、DropColumns、RenameColumns 和 ShowColumns 函数
 通过添加、删除、重命名和选择[表](../working-with-tables.md)的[列](../working-with-tables.md#columns)来为表造型。
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/26/2018
 
 无法使用这些函数修改[数据源](../working-with-data-sources.md)的列。 必须在数据源中修改数据。 可以使用 **[Collect](function-clear-collect-clearcollect.md)** 函数将列添加到[集合](../working-with-data-sources.md#collections)。  有关详细信息，请参阅[使用数据源](../working-with-data-sources.md)。  
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **AddColumns** 函数将列添加到表，某个公式将定义该列中的值。 现有列保持不变。
 
 将会针对表的每条记录计算该公式。
@@ -78,7 +79,7 @@ ms.lasthandoff: 04/26/2018
 
 这些示例都不会修改 **IceCreamSales** 数据源。 每个函数将数据源的值转换为表，然后返回该值作为结果。
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **AddColumns( IceCreamSales, "Revenue", UnitPrice * QuantitySold )** |将 **Revenue** 列添加到结果。  对于每条记录，将计算 **UnitPrice * QuantitySold**，并将结果放在新列中。 |<style> img { max-width: none; } </style> ![](media/function-table-shaping/icecream-add-revenue.png) |
 | **DropColumns( IceCreamSales, "UnitPrice" )** |从结果中排除 **UnitPrice** 列。 使用此函数可排除列，使用 **ShowColumns** 可包含列。 |![](media/function-table-shaping/icecream-drop-price.png) |

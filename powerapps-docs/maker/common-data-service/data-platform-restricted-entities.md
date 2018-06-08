@@ -9,10 +9,11 @@ ms.topic: reference
 ms.date: 05/01/2018
 ms.author: clwesene
 ms.openlocfilehash: 79b6e386154b15ae6c625afbebbed18a8a86c420
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34167989"
 ---
 # <a name="restricted-entities-requiring-dynamics-365-licenses"></a>要求 Dynamics 365 许可证的受限实体
 应用创建者可使用 Common Data Service (CDS) for Apps 提供的大部分实体来为仅拥有 PowerApps 计划 1 许可证的用户创建应用和流。 但是，某些实体包含需要应用用户具有 PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证的复杂业务逻辑（有关详细信息，请参阅[实体许可证要求](data-platform-entity-licenses.md)）。 即使是较小的与 Dynamics 365 产品相关联的实体集，如果要在实体内创建、更新或删除记录，也要求画布和模型驱动应用用户具有对应 Dynamics 365 产品的许可证。 这些被称为受限实体。

@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: 03cecb64b2b43ed827b5d20bc3f8f8f64b925ba2
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31834518"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>PowerApps 中的加速度、应用、指南针、连接和位置信号
 返回关于应用环境的信息，例如用户的全球所在位置，以及所显示的是哪个屏幕。  
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/26/2018
 ### <a name="acceleration"></a>加速度
 **加速度**信号以相对于设备屏幕的三维方式返回设备的加速度。 加速度的测量单位为 g（9.81 m/s<sup>2</sup> 或 32.2 ft/s<sup>2</sup>）（地球由于重力而在其表面对物体产生的加速度）。
 
-| 信号属性 | 说明 |
+| 信号属性 | 描述 |
 | --- | --- |
 | **Acceleration.X** |右侧和左侧。  右侧为正数。 |
 | **Acceleration.Y** |前方和后方。  前方为正数。 |
@@ -36,21 +37,21 @@ ms.lasthandoff: 04/26/2018
 ### <a name="app"></a>应用
 **应用**信号返回正在运行的应用的相关信息。
 
-| 信号属性 | 说明 |
+| 信号属性 | 描述 |
 | --- | --- |
 | **App.ActiveScreen** |所显示的屏幕。 返回一个屏幕对象，可用于引用屏幕属性，或与其他屏幕进行比较，以判断显示的是哪个屏幕。  使用 **[Back](function-navigate.md)** 或 **[Navigate](function-navigate.md)** 函数可以更改显示的屏幕。 |
 
 ### <a name="compass"></a>指南针
 **指南针**信号返回屏幕顶部的指南针标题。 该标题以磁北方为基础。
 
-| 信号属性 | 说明 |
+| 信号属性 | 描述 |
 | --- | --- |
 | **Compass.Heading** |标题以度为单位。  返回一个介于 0 到 360 之间的数值，0 表示北方。 |
 
 ### <a name="connection"></a>连接
 **连接**信号返回网络连接的相关信息。 如果连接按流量计费，建议限制通过网络发送或接受数据的量。
 
-| 信号属性 | 说明 |
+| 信号属性 | 描述 |
 | --- | --- |
 | **Connection.Connected** |返回一个布尔值 **true** 或 **false**，指示设备是否已连接到网络。 |
 | **Connection.Metered** |返回一个布尔值 **true** 或 **false**，指示连接是否按流量计费。 |
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/26/2018
 
 随着位置在不断改变，位置上的依赖项将不断被重新计算，这将消耗设备电池的电量。 要维护电池寿命，可使用 **[Enable](function-enable-disable.md)** 和 **[Disable](function-enable-disable.md)** 函数打开或关闭位置更新。 如果显示的屏幕不依赖于位置信息，位置将自动关闭。
 
-| 信号属性 | 说明 |
+| 信号属性 | 描述 |
 | --- | --- |
 | **Location.Altitude** |返回一个指示海拔高度的数值（用英尺表示）。 |
 | **Location.Latitude** |返回一个介于 - 90 至 90 之间的数值，该值指示从赤道起以度数表示的纬度。 正数表示赤道以北的位置。 |
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="examples"></a>示例
 在华盛顿的西雅图塞菲科球场中，一位棒球投手从投球区向本垒的捕手投掷了一部手机。 该手机相对于地面是平行移动的，手机的屏幕顶端指向捕手，且投手在投掷过程中未使手机发生旋转。 在该位置，这部手机连接的是按流量计费的移动网络服务，没有 WiFi。 将显示 **PlayBall** 屏幕。   
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Location.Latitude** |返回当前位置的纬度。  塞菲科球场在地图上的坐标定位是 47.591 N，122.333 W。 |47.591<br><br>纬度将随球在投手和捕手之间的移动而不断更改。 |
 | **Location.Longitude** |返回当前位置的经度。 |122.333<br><br>经度将随球在投手和捕手之间的移动而不断更改。 |

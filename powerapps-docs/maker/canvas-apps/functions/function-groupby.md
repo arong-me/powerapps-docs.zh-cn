@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
 ms.openlocfilehash: b47e1b36ec86b2bf4ee2167b2599d583b97a0fbc
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31837955"
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>PowerApps 中的 GroupBy 和 Ungroup 函数
 对[表](../working-with-tables.md)[记录](../working-with-tables.md#records)进行分组和取消分组。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **GroupBy** 函数返回一个表，其中包含根据一个或多个[列](../working-with-tables.md#columns)中的值归组的记录。 同组中的记录将置于单个记录中，同时添加一个列，用于保留一个嵌套的剩余列的表。   
 
 **Ungroup** 函数逆向执行 **GroupBy** 过程。 此函数返回一个表，该表将组在一起的记录拆分成单个记录。

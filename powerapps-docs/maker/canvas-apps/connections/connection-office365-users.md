@@ -1,22 +1,18 @@
 ---
 title: Office 365 用户连接概述 | Microsoft 文档
 description: 参阅如何连接到 Office 365 用户，遍历某些示例，并查看所有函数
-documentationcenter: ''
 author: lancedMicrosoft
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 06/07/2016
 ms.author: lanced
-ms.openlocfilehash: 061d70ed1bae2971379acef4ea43ca85d805e756
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: a1e0ddd7dad50ec269a0946163cc7b822ddb0681
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803463"
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>从 PowerApps 连接到 Office 365 用户连接
 ![Office 365 用户](./media/connection-office365-users/office365icon.png)
@@ -131,7 +127,7 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 ## <a name="view-the-available-functions"></a>查看可用函数
 此连接包括以下函数：
 
-| 函数名称 | 说明 |
+| 函数名称 | 描述 |
 | --- | --- |
 | [MyProfile](connection-office365-users.md#myprofile) |检索当前用户的配置文件 |
 | [UserProfile](connection-office365-users.md#userprofile) |检索特定用户配置文件 |
@@ -146,7 +142,7 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 无。
 
 #### <a name="output-properties"></a>输出属性
-| 属性名称 | 类型 | 说明 |
+| 属性名称 | 类型 | 描述 |
 | --- | --- | --- |
 | Department |字符串 |用户的部门。 |
 | DisplayName |字符串 |用户的显示名称。 |
@@ -164,12 +160,12 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 获取用户配置文件：检索特定用户配置文件。
 
 #### <a name="input-properties"></a>输入属性
-| 名称 | 数据类型 | 需要 | 说明 |
+| 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | ID |字符串 |是 |用户主体名或电子邮件 ID |
 
 #### <a name="output-properties"></a>输出属性
-| 属性名称 | 类型 | 说明 |
+| 属性名称 | 类型 | 描述 |
 | --- | --- | --- |
 | Department |字符串 |用户的部门。 |
 | DisplayName |字符串 |用户的显示名称。 |
@@ -187,12 +183,12 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 获取经理：检索指定用户经理的用户配置文件
 
 #### <a name="input-properties"></a>输入属性
-| 名称 | 数据类型 | 需要 | 说明 |
+| 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | ID |字符串 |是 |用户主体名或电子邮件 ID |
 
 #### <a name="output-properties"></a>输出属性
-| 属性名称 | 类型 | 说明 |
+| 属性名称 | 类型 | 描述 |
 | --- | --- | --- |
 | Department |字符串 |用户的部门。 |
 | DisplayName |字符串 |用户的显示名称。 |
@@ -210,12 +206,12 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 获取直接上级：获取直接上级
 
 #### <a name="input-properties"></a>输入属性
-| 名称 | 数据类型 | 需要 | 说明 |
+| 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | ID |字符串 |是 |用户主体名或电子邮件 ID |
 
 #### <a name="output-properties"></a>输出属性
-| 属性名称 | 类型 | 说明 |
+| 属性名称 | 类型 | 描述 |
 | --- | --- | --- |
 | Department |字符串 |用户的部门。 |
 | DisplayName |字符串 |用户的显示名称。 |
@@ -233,12 +229,12 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 搜索用户：检索用户配置文件的搜索结果
 
 #### <a name="input-properties"></a>输入属性
-| 名称 | 数据类型 | 需要 | 说明 |
+| 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | searchTerm |字符串 |否 |搜索字符串。 适用于：显示名称、名字、姓氏、邮件、邮件昵称和用户主体名 |
 
 #### <a name="output-properties"></a>输出属性
-| 属性名称 | 类型 | 说明 |
+| 属性名称 | 类型 | 描述 |
 | --- | --- | --- |
 | Department |字符串 |用户的部门。 |
 | DisplayName |字符串 |用户的显示名称。 |

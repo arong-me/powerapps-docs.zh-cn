@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
 ms.openlocfilehash: 6ef9dc3a1c82fdee9927ffd533ed41386345eaf7
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34167552"
 ---
 # <a name="delete-a-custom-entity"></a>删除自定义实体
 可以删除自定义实体，但无法删除标准实体。

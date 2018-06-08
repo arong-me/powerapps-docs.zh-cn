@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
 ms.openlocfilehash: c87f0e644668e9b9804b001560402972fd3d4531
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32329125"
 ---
 # <a name="share-an-app-in-powerapps"></a>在 PowerApps 中共享应用
 虽然可以使用 PowerApps 轻松生成可满足你自己的业务需求的应用，但能够与其他人共享这些应用才是它的真正魅力所在。 在本主题中，你将了解如何与指定用户或安全组共享应用，或与整个组织共享应用。

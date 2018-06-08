@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 11/08/2015
 ms.author: gregli
 ms.openlocfilehash: a784251899e7c51ef8213b6d6f31c2830b08e2dc
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838846"
 ---
 # <a name="updatecontext-function-in-powerapps"></a>PowerApps 中的 UpdateContext 函数
 创建或更新当前屏幕的[上下文变量](../working-with-variables.md#create-a-context-variable)。
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/26/2018
 
 PowerApps 以公式为基础，这些公式会在用户与应用交互时自动重新计算。  上下文变量不具有此优势，因此在应用的创建和理解上可能难度更大。  使用上下文变量之前，请查看[使用变量](../working-with-variables.md)。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 若要创建或更新上下文变量，请向 **UpdateContext** 函数传递一条[记录](../working-with-tables.md#records)。 在每条记录中指定[列](../working-with-tables.md#columns)的名称，用于定义或匹配变量的名称以及要将该变量设为的值。
 
 * 如果指定之前已定义的变量的名称，**UpdateContext** 会将该变量的值设置为指定的值。
@@ -67,7 +68,7 @@ PowerApps 以公式为基础，这些公式会在用户与应用交互时自动�
 * *ContextVariable2*: *Value2*, ... - 可选。 要创建或更新的其他上下文变量及其值。
 
 ## <a name="examples"></a>示例
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **UpdateContext( {&nbsp;Counter:&nbsp;1&nbsp;} )** |创建或修改上下文变量 **Counter**，将其值设置为 **1**。 |**Counter** 的值为 **1**。 可通过在公式中使用名称 **Counter** 来引用该变量。 |
 | **UpdateContext( {&nbsp;Counter:&nbsp;2&nbsp;} )** |将上一示例中 **Counter** 上下文变量的值设置为 **2**。 |**Counter** 的值为 **2**。 |

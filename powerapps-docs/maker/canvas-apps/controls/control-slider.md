@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 672a3d9a96545bf695128fcc823ec1d3437ae4a4
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31837817"
 ---
 # <a name="slider-control-in-powerapps"></a>PowerApps 中的滑块控件
 一个控件，用户可通过拖动图柄使用该控件指定值。
@@ -131,8 +132,8 @@ HandleSize – 句柄直径。
 * **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
 
 ### <a name="keyboard-support"></a>键盘支持
-* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用[“FocusedBorderColor”](properties-color-border.md)和[“FocusedBorderThickness”](properties-color-border.md)”来实现此目的。
+* **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
 * 与键盘交互时，必须显示滑块值。 这可以通过以下任一方法实现：
     * 将“ShowValue”设置为“true”。
     * 在滑块旁边添加**[标签](control-text-box.md)**。 [将标签的“Text”](properties-core.md)设置为滑块的[“Value”](properties-core.md)。

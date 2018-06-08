@@ -12,10 +12,11 @@ ms.component: canvas
 ms.date: 06/02/2015
 ms.author: lonu
 ms.openlocfilehash: 959431b69d4f432335997697d8f25b5b8815d63c
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32330276"
 ---
 # <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>在 PowerApps 库中显示数据，并对数据进行排序和筛选
 创建一个库来显示有关多种产品的图像和文本，并对该信息进行排序和筛选。

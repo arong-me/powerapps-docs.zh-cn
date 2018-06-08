@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 05/01/2016
 ms.author: mblythe
 ms.openlocfilehash: 70200430b0cee7356d70795440b908a8837ba18d
-ms.sourcegitcommit: 6a75c4c499bcdbeb9d65d3a9af47dedcf900f38d
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "33078411"
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps 社区计划：供个人使用的免费开发环境
 若要掌握技能并详细了解 PowerApps、Microsoft Flow 和 Common Data Service，PowerApps 社区计划是你的不二之选。 PowerApps 社区计划提供了供个人使用的免费开发环境，你可以在其中：
@@ -91,9 +92,9 @@ ms.lasthandoff: 05/03/2018
 是否有应用要与客户共享？ [AppSource.com](https://appsource.microsoft.com) 现在支持 PowerApps 体验版解决方案，以便你可以与客户共享应用和流，为你的企业带来新的潜在客户。 有关详细信息，请参阅[让客户在 AppSource 上体验你的应用](./canvas-apps/dev-appsource-test-drive.md)。
 
 ## <a name="frequently-asked-questions"></a>常见问题
-**问：**达到环境的容量上限后，我应该怎么办？
+**问：** 达到环境的容量上限后，我应该怎么办？
 
-**答：**之所以有容量上限是因为此环境是供个人使用，而不是供团队或生产使用。 规定的容量上限为：
+**答：** 之所以有容量上限是因为此环境是供个人使用，而不是供团队或生产使用。 规定的容量上限为：
 
 | **容量** |  |
 | --- | --- |
@@ -103,30 +104,30 @@ ms.lasthandoff: 05/03/2018
 
 如果达到了一个或多个容量上限，建议购买支持生产用途的计划。 若要详细了解我们的计划及其限制，请参阅 [PowerApps 定价页](https://powerapps.microsoft.com/pricing/)。
 
-**问：**能否将在个人环境中创建的应用、流和其他资源迁移到其他环境中？
+**问：** 能否将在个人环境中创建的应用、流和其他资源迁移到其他环境中？
 
-**答：**能，应该可以将此环境中的资源导出到其他环境中。 有关详细信息，请参阅[环境和租户应用迁移](../administrator/environment-and-tenant-migration.md)。
+**答：** 能，应该可以将此环境中的资源导出到其他环境中。 有关详细信息，请参阅[环境和租户应用迁移](../administrator/environment-and-tenant-migration.md)。
 
-**问：**我的 PowerApps 社区计划订阅是否会到期？
+**问：** 我的 PowerApps 社区计划订阅是否会到期？
 
-**答：**可以永久免费使用 PowerApps 社区计划订阅。 如果仍在使用个人环境，就不会失去对此环境中任何资源或功能的访问权限。 不过，在长时间不使用后首次访问 Common Data Service 数据库时，你可能会注意到有延迟。  但此延迟并不影响 Common Data Service 中存储的数据或实体。
+**答：** 可以永久免费使用 PowerApps 社区计划订阅。 如果仍在使用个人环境，就不会失去对此环境中任何资源或功能的访问权限。 不过，在长时间不使用后首次访问 Common Data Service 数据库时，你可能会注意到有延迟。  但此延迟并不影响 Common Data Service 中存储的数据或实体。
 
-**问：**能否获取或创建多个个人环境？
+**问：** 能否获取或创建多个个人环境？
 
-**答：**不能，只能有一个个人环境，这就是 PowerApps 在你注册社区计划时为你创建的环境。
+**答：** 不能，只能有一个个人环境，这就是 PowerApps 在你注册社区计划时为你创建的环境。
 
-**问：**PowerApps 计划 2 试用版和 PowerApps 社区计划有什么区别？我应注册哪一个？
+**问：** PowerApps 计划 2 试用版和 PowerApps 社区计划有什么区别？我应注册哪一个？
 
-**答：**PowerApps 计划 2 试用版和 PowerApps 社区计划均可免费注册，不同之处在于它们的创建目的不同：
+**答：** PowerApps 计划 2 试用版和 PowerApps 社区计划均可免费注册，不同之处在于它们的创建目的不同：
 
 注册 PowerApps 计划 2 试用版，可以使用 PowerApps 计划 2 30 天。 旨在方便你试用 PowerApps、Common Data Service 和 Microsoft Flow。 试用到期后，可以购买计划。 如果你是使用 Office 365 或 Dynamics 365 的现有 PowerApps 用户，PowerApps 计划 2 就非常适合试用其提供的 PowerApps 高级功能。
 
 注册 **PowerApps 社区计划**，可以访问 PowerApps 高级功能、Common Data Service 和 Microsoft Flow，以供个人使用。 此计划主要用于学习目的或创建要作为 [AppSource 体验版应用](./canvas-apps/dev-appsource-test-drive.md)分发的业务解决方案。 此计划可永久免费使用，但仅限用于学习和掌握 PowerApps、Common Data Service 和 Microsoft Flow 相关技能。
 
-**问：**能否使用个人帐户进行注册？
+**问：** 能否使用个人帐户进行注册？
 
-**答：**不能，只能使用[工作或学校帐户](signup-for-powerapps.md#faq)进行注册。 暂不支持使用个人帐户进行注册。
+**答：** 不能，只能使用[工作或学校帐户](signup-for-powerapps.md#faq)进行注册。 暂不支持使用个人帐户进行注册。
 
-**问：**能否删除我的个人环境？
+**问：** 能否删除我的个人环境？
 
-**答：**你无法自行删除此环境。 租户管理员才有权删除此环境。
+**答：** 你无法自行删除此环境。 租户管理员才有权删除此环境。

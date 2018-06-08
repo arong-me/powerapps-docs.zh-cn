@@ -1,22 +1,18 @@
 ---
 title: SQL Server 连接概述 | Microsoft 文档
 description: 有关如何连接到 Azure SQL 或本地 SQL Server 数据库的分步说明
-documentationcenter: ''
 author: lancedMicrosoft
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2016
 ms.author: lanced
-ms.openlocfilehash: 65fa5cff5d3b9c9595cc3f9338a7e7af43256f86
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: e11521219fcd368801a6e943f45dbc713309ec36
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803411"
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>从 PowerApps 连接到 SQL Server
 ![SQL Server 图标](./media/connection-azure-sqldatabase/sqlicon.png)

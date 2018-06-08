@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 03/11/2017
 ms.author: aneesa
 ms.openlocfilehash: fd3c3c002ab877b78a2065e37c6a8f2ddcb91fb6
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838984"
 ---
 # <a name="use-the-entity-form-control"></a>使用实体窗体控件
 可以使用“实体窗体”控件以更快的速度创建应用，以添加 Common Data Service 实体的丰富窗体。
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/26/2018
 * **FormMode.Edit** – 允许用户编辑记录。
 * **FormMode.New** – 允许用户添加记录。
 
-**OnSuccess** – 在数据操作成功的情况下，应用如何响应。
+OnSuccess – 在数据操作成功的情况下，应用如何响应。
 
 **OnFailure** – 在数据操作不成功的情况下，应用如何响应。
 

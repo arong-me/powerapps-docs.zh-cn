@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 09/09/2016
 ms.author: gregli
 ms.openlocfilehash: 38aa25c46bf8b29c413ca9c3df92f9528bfa97d5
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31831112"
 ---
 # <a name="trim-and-trimends-functions-in-powerapps"></a>PowerApps 中的 Trim 和 TrimEnds 函数
 从文本字符串中删除多余空格。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Trim** 函数可删除文本字符串中的所有空格，单词之间的单个空格除外。  
 
 **TrimEnds** 函数可删除文本字符串开头和结尾的所有空格，但保留单词之间的空格。
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/26/2018
 * *SingleColumnTable* - 必需。 要从中删除空格的字符串的单列列表。
 
 ## <a name="example"></a>示例
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Trim(&nbsp;"&nbsp;&nbsp;&nbsp;Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World&nbsp;&nbsp;&nbsp;"&nbsp;)** |删除字符串开头和结尾的所有空格，并删除字符串内的多余空格。 |“Hello World” |
 | **TrimEnds(&nbsp;"&nbsp;&nbsp;&nbsp;Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World&nbsp;&nbsp;&nbsp;"&nbsp;)** |删除字符串开头和结尾的所有空格。 |“Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World” |
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/26/2018
 若要创建此集合，请将**[按钮](../controls/control-button.md)** 控件的 **OnSelect** 属性设置为以下公式，打开“预览”模式，然后单击或点击按钮：
 <br>**ClearCollect( Spaces, [ "&nbsp;&nbsp;&nbsp;Jane&nbsp;&nbsp;&nbsp;Doe&nbsp;&nbsp;&nbsp;", "&nbsp;&nbsp;&nbsp;&nbsp;Jack&nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp;Jill", "Already&nbsp;trimmed", "&nbsp;&nbsp;&nbsp;Venus,&nbsp;&nbsp;&nbsp;Earth,&nbsp;&nbsp;&nbsp;Mars&nbsp;&nbsp;", "Oil&nbsp;and&nbsp;Water&nbsp;&nbsp;&nbsp;" ] )**
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Trim(&nbsp;Spaces&nbsp;)** |修剪 **Spaces** 集合中每个字符串开头和结尾的所有空格，以及该集合中每个字符串内的多余空格。 |<style> img { max-width: none } </style> ![](media/function-trim/output-trim.png) |
 | **TrimEnds(&nbsp;Spaces&nbsp;)** |修剪 **Spaces** 集合中每个字符串开头和结尾的所有空格。 |<style> img { max-width: none } </style> ![](media/function-trim/output-trimends.png) |

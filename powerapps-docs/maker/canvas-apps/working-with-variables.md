@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 07/06/2017
 ms.author: gregli
 ms.openlocfilehash: 66b3183f6b1215fc0de2a763da2388698501a9b7
-ms.sourcegitcommit: 99d50f9a79fe4f35ba56f365de6593abd893978e
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "33673523"
 ---
 # <a name="understand-variables-in-powerapps"></a>了解 PowerApps 中的变量
 如果你使用过其他编程工具（例如 Visual Basic 或 JavaScript），你可能会问：**变量在哪里？** PowerApps 稍有不同，需要不同的方法。 与其去获取变量，不妨问自己：**我会在 Excel 中做什么？**

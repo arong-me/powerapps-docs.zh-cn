@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 04/01/2017
 ms.author: fikaradz
 ms.openlocfilehash: 466e0d9cb1acfe4cfeb72256db2deddfd3466e19
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31834181"
 ---
 # <a name="show-items-of-different-heights-in-a-powerapps-gallery"></a>显示 PowerApps 库中具有不同高度的项目
 如果数据集中的不同项目在同一字段中包含的数据量不同，则可完全显示出包含更多数据的项目，而无需在包含较少数据的项目后面添加空格。 添加或配置**可变高度**库控件，以便可以：

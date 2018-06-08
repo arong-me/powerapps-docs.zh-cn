@@ -12,10 +12,11 @@ ms.component: canvas
 ms.date: 10/16/2016
 ms.author: anneta
 ms.openlocfilehash: faa8db15596dc0da0d5b5638f5dd9c334517fc7c
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32330942"
 ---
 # <a name="show-text-and-format-dates-and-times-in-powerapps"></a>在 PowerApps 中显示文本以及设置日期和时间格式
 添加日期和时间，然后设置其格式，以便显示正确级别的详细信息，或者让其反映你的区域设置。 计算两个日期相差多少时间，或者计算一个日期，该日期比指定的日期早或晚一定的时间。 将日期转换成按年、月、日表示的不同值（或者反过来），以及将时间转换成按小时、分钟、秒表示的不同值（或者反过来）。

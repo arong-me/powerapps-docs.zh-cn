@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 03/08/2017
 ms.author: gregli
 ms.openlocfilehash: 5e9b9ec980e6dd4aeacfef42b40fe7f52c19d558
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838731"
 ---
 # <a name="understand-data-sources-in-powerapps"></a>了解 PowerApps 中的数据源
 大多数 PowerApps 应用使用所谓**数据源**的云服务中存储的外部信息。 OneDrive for Business 中存储的 Excel 文件包含的表就一个常见的例子。 应用使用**连接**访问这些数据源。

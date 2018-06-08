@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/20/2017
 ms.author: anneta
 ms.openlocfilehash: 2c754fa8e479494ae1002e5339d2d8d5eeb2480f
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32330436"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>了解 Microsoft PowerApps 的本地数据网关
 ## <a name="installation-and-configuration"></a>安装和配置
@@ -129,7 +130,7 @@ ms.lasthandoff: 05/03/2018
 
 **登录帐户**
 
-用户将使用工作或学校帐户登录。 这种帐户属于组织帐户。 如果注册了 Office 365 产品但未提供实际工作电子邮件，登录地址可能类似于 nancy@contoso.onmicrosoft.com。云服务中的帐户存储在 Azure Active Directory (AAD) 中的租户内。 大多数情况下，AAD 帐户的 UPN 与电子邮件地址匹配。
+用户将使用工作或学校帐户登录。 这种帐户属于组织帐户。 如果注册了 Office 365 产品但未提供实际工作电子邮件，登录地址可能类似于 nancy@contoso.onmicrosoft.com。 云服务中的帐户存储在 Azure Active Directory (AAD) 中的租户内。 大多数情况下，AAD 帐户的 UPN 与电子邮件地址匹配。
 
 **Windows 服务帐户**
 

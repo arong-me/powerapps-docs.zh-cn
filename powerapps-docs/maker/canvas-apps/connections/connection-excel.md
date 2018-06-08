@@ -1,22 +1,18 @@
 ---
 title: Excel 连接概述 | Microsoft 文档
 description: 通过在云存储帐户中存储工作簿，然后从应用连接到数据，以在 Excel 中显示和更新数据。
-documentationcenter: ''
 author: lancedMicrosoft
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 10/02/2016
 ms.author: lanced
-ms.openlocfilehash: e8bdc3f7bbfa7fdd55e9a5273c084d0aa870cf6d
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: feb2d17400c2f1ddc9670e3bd840322dc1edfc10
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803089"
 ---
 # <a name="connect-to-excel-from-powerapps"></a>从 PowerApps 连接到 Excel
 ![Excel](./media/connection-excel/excelicon.png)

@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/28/2016
 ms.author: litran
 ms.openlocfilehash: f29f75522eb01c61c3528e61018fb759980e79f9
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32330206"
 ---
 # <a name="introduction-to-powerappscom"></a>powerapps.com 简介
 PowerApps 团队将会重新引入 [powerapps.com](http://web.powerapps.com) 作为应用创建者的新门户。 我们已将页面重新设计为主站点，让创建者轻松着手创建应用，使用 Microsoft Common Data Service，以及在一个位置管理他们的应用。 本文逐步讲解以下内容：

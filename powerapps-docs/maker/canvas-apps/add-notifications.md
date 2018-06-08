@@ -12,13 +12,14 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 08/08/2017
 ms.author: jamesol
-ms.openlocfilehash: 0792a47db2174dc440488eb854987bca80c8b363
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 0cf09528f83b2729e50139a3b5f9b5b9c00b6119
+ms.sourcegitcommit: 045c96df42405c60c7675edbadac93455270a021
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34822549"
 ---
-# <a name="send-a-pull-notification-in-powerapps"></a>在 PowerApps 发送推送通知
+# <a name="send-a-push-notification-in-powerapps"></a>在 PowerApps 中发送推送通知
 推送通知用于移动应用中的使用者和业务情形，主要用来与应用用户进行交互，并帮助他们优先处理关键任务。 在 PowerApps 中，可以使用 PowerApps 通知连接器发送通知。 可以将原生推送通知发送到在 PowerApps 中创建的任何应用。 我们计划在今后支持更多通知类型。
 
 ![推送通知外观示例](./media/add-notifications/pic1-notification-screenshot.png)
@@ -95,12 +96,12 @@ ms.lasthandoff: 04/26/2018
 >2. 创建应用时，将计时器设置为非零值。 如果已准备好发布应用，请将值设置为 0，以立即触发计时器。
 
 ## <a name="syntax"></a>语法
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
 | SendPushNotification |向通知连接设置中指定的应用发送推送通知。 |
 
 ### <a name="parameters"></a>参数
-| 名称 | 类型 | 说明 |
+| 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | recipients |字符串数组（必需） |列出了： <ul> <li>用户或安全组的电子邮件地址</li> <li>Azure Active Directory 中用户或安全组的对象 ID</li></ul> |
 | message |字符串（必需） |推送通知的消息正文。 |

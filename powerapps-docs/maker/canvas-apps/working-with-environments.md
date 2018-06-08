@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/14/2016
 ms.author: litran
 ms.openlocfilehash: 4bf196041853e9f88c97aabcd3ff1c234b2608be
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32329470"
 ---
 # <a name="working-with-environments-and-microsoft-powerapps"></a>使用环境和 Microsoft PowerApps
 通过 PowerApps，你可以在不同的环境中工作，并在它们之间轻松切换。 有关环境的概述，请参阅 [环境概述](../../administrator/environments-overview.md)，该文章详细介绍了使用环境的原因以及如何创建和管理环境。 本文的范围将涵盖有关环境的以下主题：

@@ -13,18 +13,19 @@ ms.component: canvas
 ms.date: 11/07/2016
 ms.author: gregli
 ms.openlocfilehash: 2053f69146bcd952f61916ef9e41150791a243a5
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31828048"
 ---
 # <a name="user-function-in-powerapps"></a>PowerApps 中的 User 函数
 返回当前用户的相关信息。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **User** 函数返回当前用户的相关信息[记录](../working-with-tables.md#records)：
 
-| 属性 | 说明 |
+| 属性 | 描述 |
 | --- | --- |
 | **User().Email** |当前用户的电子邮件地址。 |
 | **User().FullName** |当前用户的全名（包括姓和名）。 |
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/26/2018
 * 电子邮件地址：**“john.doe@contoso.com”**
 * 图像：![](media/function-user/john-doe-picture.png) 
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **User()** |当前 PowerApps 用户的所有信息记录。 |{ FullName:&nbsp;"John Doe", Email:&nbsp;"john.doe@contoso.com", Image:&nbsp;"blob:1234...5678" } |
 | **User().Email** |当前 PowerApps 用户的电子邮件地址。 |"john.doe@contoso.com" |

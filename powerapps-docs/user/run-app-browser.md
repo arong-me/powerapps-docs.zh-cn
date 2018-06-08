@@ -1,18 +1,18 @@
 ---
 title: 在 Web 浏览器中运行应用的快速入门 | Microsoft Docs
 description: 在本快速入门教程中，你将了解如何在 Web 浏览器中运行应用
-author: SKjerland
-manager: kfile
+author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
 ms.date: 03/07/2018
-ms.author: sharik
-ms.openlocfilehash: c188294e8b09dbcc25152715daec8e377763af11
-ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
+ms.author: matp
+ms.openlocfilehash: ba3b52bbbe12fad8773f09f4c753e4a55d09a6f0
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34552705"
 ---
 # <a name="quickstart-run-an-app-in-a-web-browser"></a>快速入门：在 Web 浏览器中运行应用
 在创建应用或者某人与你共享应用时，可以在 Windows、iOS、Android 上或 Web 浏览器中运行此应用。 在本快速入门教程中，你将了解如何在 Web 浏览器中从 [Dynamics 365 主页](https://home.dynamics.com)运行画布或模型驱动应用。

@@ -13,15 +13,16 @@ ms.component: canvas
 ms.date: 04/24/2017
 ms.author: gregli
 ms.openlocfilehash: f4e5510224d5abc7a6d2ccaa286d08c8f170fa10
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838386"
 ---
 # <a name="if-and-switch-functions-in-powerapps"></a>PowerApps 中的 If 和 Switch 函数
 确定集中的任何条件是否为 true (If)，或确定公式的结果是否与集中的任何值一致 (Switch)，再返回结果或执行操作。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 If 函数会一直测试一个或多个条件，直到结果为 true 时为止。 如果结果为 true，将返回相应的值。 否则，将返回默认值。 无论属于上述哪种情况，返回的值可以是要显示的字符串、要求值的公式或另一种形式的结果。
 
 Switch 函数先对公式求值，再确定结果是否与指定序列中的任何值一致。 如果找到匹配值，将返回相应的值。 否则，将返回默认值。 无论属于上述哪种情况，返回的值可以是要显示的字符串、要求值的公式或另一种形式的结果。
@@ -54,7 +55,7 @@ Switch(Formula , Match1, Result1 [, Match2, Result2, ... [, DefaultResult ] ] )
 ### <a name="values-in-formulas"></a>公式中的值
 在下面这些示例中，“滑块”控件（名为“Slider1”）的值为“25”。
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **If( Slider1.Value&nbsp;=&nbsp;25, "Result1" )** |条件为 **true**，并返回相应结果。 |“Result1” |
 | **If( Slider1.Value&nbsp;=&nbsp;25, "Result1", "Result2" )** |条件为 **true**，并返回相应结果。 |“Result1” |
@@ -70,7 +71,7 @@ Switch(Formula , Match1, Result1 [, Match2, Result2, ... [, DefaultResult ] ] )
 ### <a name="branching-in-behavior-formulas"></a>在行为公式中分支
 在下面这些示例中，用户在名为“FirstName”的“[文本输入](../controls/control-text-input.md)”控件中键入的值为“John”。
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **If( !IsBlank( FirstName.Text ), Navigate(&nbsp;Screen1, ScreenTransition.None ) )** |条件为 true，因此将运行 [Navigate](function-navigate.md) 函数。 可使用 **[IsBlank](function-isblank-isempty.md)** 函数测试所需的窗体字段是否已填充。  如果 FirstName 为 [blank](function-isblank-isempty.md)，此公式不会产生任何影响。 |**true**<br><br>显示更改为 **Screen1**。 |
 | **If( IsBlank( FirstName.Text ), Navigate(&nbsp;Screen1, ScreenTransition.None ), Back() )** |没有 !  运算符，条件为 false，因此不会运行 [Navigate](function-navigate.md) 函数。 因为 [Back](function-navigate.md) 函数作为 DefaultResult 提供，所以将运行此函数。 |**true**<br><br>将重新显示之前显示的屏幕。 |

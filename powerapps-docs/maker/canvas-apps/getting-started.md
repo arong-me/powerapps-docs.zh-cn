@@ -8,10 +8,11 @@ ms.component: canvas
 ms.date: 04/26/2018
 ms.author: anneta
 ms.openlocfilehash: d520f47393c5462f36445e4c8df81617dfddafd2
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32329815"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>PowerApps 中的画布应用有哪些？
 在 Microsoft PowerApps 中通过画布设计和构建业务应用，无需以传统计算机语言（如 C#）编写代码。 通过将元素拖放到画布来设计应用，就像在 PowerPoint 中设计幻灯片一样。 创建用于指定逻辑和处理数据的 Excel 类表达式。 构建应用，这些应用可与[丰富多样的 Microsoft 和第三方源](connections-list.md)中的业务数据集成。 共享应用，以便用户可在浏览器或移动设备中运行；嵌入应用，以便用户可在 SharePoint、Power BI 或 Teams 中运行。

@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: clwesene
 ms.openlocfilehash: d8323eb103751a1be78aeea0093b9d6651ddc3e2
-ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34445836"
 ---
 # <a name="create-a-power-bi-report"></a>创建 Power BI 报表
 通过 Common Data Service for Apps，可使用 Power BI Desktop 直接连接到数据，然后创建报表并发布到 Power BI。 在 Power BI 中，可在仪表板中使用报表，与其他用户共享报表，还可在 Power BI 移动应用上跨平台访问报表。

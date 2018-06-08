@@ -1,22 +1,18 @@
 ---
 title: Dynamics 365 连接概述 | Microsoft 文档
 description: 创建管理 Dynamics 365 中的数据的应用
-documentationcenter: ''
 author: Mattp123
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: matp
-ms.openlocfilehash: ea5c5c655f4e7462178f1e79db6a3695c11d1556
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 425620f3e20af7945c0e1506cab23a90c5209973
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803043"
 ---
 # <a name="connect-to-dynamics-365-from-powerapps"></a>从 PowerApps 连接到 Dynamics 365
 通过 PowerApps，可使用很少的代码或无需代码，快速生成、自定义、共享和运行移动应用。 通过使用 Dynamics 365 连接器，只需几分钟，即可创建有用的移动应用，与组织实现共享。

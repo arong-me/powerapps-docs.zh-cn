@@ -1,22 +1,18 @@
 ---
 title: 音频和视频控件：参考 | Microsoft 文档
 description: 有关音频和视频控件的信息（包括属性和示例）
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: fa235c606082f2fd83339ba11fa81fdb2988c23a
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: aae87f408452cd83856c2e1c2e07065d4b8df49f
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803273"
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>PowerApps 中的音频和视频控件
 一个控件，用于播放 YouTube 上的音频文件、视频文件或视频。
