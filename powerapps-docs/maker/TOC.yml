@@ -250,6 +250,8 @@
           href: ./common-data-service/data-platform-create-business-rule.md
         - name: 删除自定义实体
           href: ./common-data-service/data-platform-delete-entity.md
+        - name: 从实体导入或导出数据
+          href: ./common-data-service/data-platform-import-export.md
         - name: 在 Excel 中打开实体数据
           href: ./common-data-service/data-platform-excel-addin.md
         - name: 创建 Power BI 报表

@@ -12,11 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/17/2016
 ms.author: gregli
-ms.openlocfilehash: ae72dad8143c747714e8573ecc3cc5a9644044b4
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 8d54c632780ac827704535af5d24881685a0e518
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34583592"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>PowerApps 中的控件和属性
 通过设置控件的属性之一配置该控件的外观和行为。 每种类型的控件都有一组不同的属性。 某些属性（例如 **Height** 和 **Width**）是几乎每种类型的控件共有的，但其他属性（例如 **CheckboxSize**）特定于某种类型的控件。
@@ -86,6 +87,8 @@ ms.lasthandoff: 04/26/2018
 
 **[评分](controls/control-rating.md)** – 表示一个介于 1 和指定数字之间的值。
 
+**[RTF 编辑器（实验性）](controls/control-richtexteditor.md)** - 允许应用用户对格式文本进行格式设置。
+
 **[屏幕](controls/control-screen.md)** – 显示和更新有关特定任务的数据。
 
 **[形状](controls/control-shapes-icons.md)** – 显示箭头和几何形状，例如矩形。
@@ -134,7 +137,7 @@ ms.lasthandoff: 04/26/2018
 
 **[BorderColor](controls/properties-color-border.md)** – 控件边框的颜色。  适用于许多控件。
 
-**[BorderStyle](controls/properties-color-border.md)** – 控件边框是**实线**、**虚线**、**点线**还是**无**。  适用于许多控件。
+**[BorderStyle](controls/properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。  适用于许多控件。
 
 **[BorderThickness](controls/properties-color-border.md)** – 控件边框的粗细。  适用于许多控件。
 
@@ -212,7 +215,7 @@ ms.lasthandoff: 04/26/2018
 **[Explode](controls/control-pie-chart.md)** – 饼图中楔形间的距离。  适用于**[饼图](controls/control-pie-chart.md)** 控件。
 
 ### <a name="f"></a>F
-**[Fill](controls/properties-color-border.md)** – 控件的背景颜色。  适用于许多控件。
+**[Fill](controls/properties-color-border.md)** – 控件的背景色。  适用于许多控件。
 
 **[FindNext](controls/control-pdf-viewer.md)** – 在文档中查找 **FindText** 的下一个实例。  适用于 **[PDF 查看器](controls/control-pdf-viewer.md)** 控件。
 
@@ -220,7 +223,7 @@ ms.lasthandoff: 04/26/2018
 
 **[FindText](controls/control-pdf-viewer.md)** – 要在文档中查找的搜索词。  适用于 **[PDF 查看器](controls/control-pdf-viewer.md)** 控件。
 
-**[Font](controls/properties-text.md)** – 文本中所显示的字体系列的名称。  适用于许多控件。
+[Font](controls/properties-text.md) – 文本中所显示的字体系列的名称。  适用于许多控件。
 
 **[FontWeight](controls/properties-text.md)** – 控件中文本的粗细：**粗体**、**半粗体**、**正常**或**细体**。  适用于许多控件。
 
@@ -242,12 +245,12 @@ ms.lasthandoff: 04/26/2018
 
 **[HoverColor](controls/properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。  适用于许多控件。
 
-**[HoverFill](controls/properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景颜色。  适用于许多控件。
+**[HoverFill](controls/properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景色。  适用于许多控件。
 
 **[HTMLText](controls/control-html-text.md)** – HTML 文本控件中显示的文本，可能包含 HTML 标记。  适用于 **[HTML 文本](controls/control-html-text.md)** 控件。
 
 ### <a name="i"></a>I
-**[Image](controls/properties-visual.md)** - 图像、音频或麦克风控件中显示的图像名称。  适用于**[音频](controls/control-audio-video.md)**、**[图像](controls/control-image.md)**、**[麦克风](controls/control-microphone.md)** 和**[视频](controls/control-audio-video.md)** 控件。
+[Image](controls/properties-visual.md) – 在图像、音频或麦克风控件中显示的图像名称。  适用于**[音频](controls/control-audio-video.md)**、**[图像](controls/control-image.md)**、**[麦克风](controls/control-microphone.md)** 和**[视频](controls/control-audio-video.md)** 控件。
 
 **[ImagePosition](controls/properties-visual.md)** – 屏幕或控件大小与图像大小不同时，其中图像的位置（“填充”、“适应”、“拉伸”、“平铺”或“居中”）。  适用于许多控件。
 
@@ -372,7 +375,7 @@ ms.lasthandoff: 04/26/2018
 
 **[PressedBorderColor](controls/properties-color-border.md)** – 用户在点击或单击控件时，该控件边框的颜色。  适用于许多控件。
 
-**[PressedColor](controls/properties-color-border.md)** – 用户在点击或单击控件时，该控件中的文本的颜色。  适用于许多控件。
+[PressedColor](controls/properties-color-border.md) – 用户在点击或单击控件时，该控件中的文本的颜色。  适用于许多控件。
 
 **[PressedFill](controls/properties-color-border.md)** – 用户在点击或单击控件时，该控件的背景色。  适用于许多控件。
 
@@ -405,7 +408,7 @@ ms.lasthandoff: 04/26/2018
 
 **[Required](controls/control-card.md)** – 用于编辑数据源字段的卡片是否必须包含值。  适用于**[卡片](controls/control-card.md)** 控件。
 
-**[Reset](controls/properties-core.md)** - 是否还原控件的默认值。  适用于许多控件。  另请参阅 [Reset](functions/function-reset.md) 函数。
+[Reset](controls/properties-core.md) – 是否还原控件的默认值。  适用于许多控件。  另请参阅 [Reset](functions/function-reset.md) 函数。
 
 ### <a name="s"></a>S
 **Selected** – 选定的项。  适用于**[下拉列表](controls/control-drop-down.md)** 和**[库](controls/control-gallery.md)** 控件。
@@ -448,7 +451,7 @@ ms.lasthandoff: 04/26/2018
 
 **[StreamRate](controls/control-camera.md)** – 在 **[Stream](controls/control-camera.md)** 属性上更新图像的频率（以毫秒为单位）。  此值的范围为 100（1/10 秒）到 3,600,000（1 小时）。  适用于**[相机](controls/control-camera.md)** 控件。
 
-**[Strikethrough](controls/properties-text.md)** – 通过文本显示的线是否在控件上显示。  适用于许多控件。
+[Strikethrough](controls/properties-text.md) – 通过文本显示的线是否在控件上显示。  适用于许多控件。
 
 ### <a name="t"></a>T
 **[TemplateFill](controls/control-gallery.md)** – 库的背景色。  适用于**[库](controls/control-gallery.md)** 控件。
@@ -461,14 +464,14 @@ ms.lasthandoff: 04/26/2018
 
 **[Time](controls/control-audio-video.md)** – 媒体控件的当前位置。  适用于**[音频](controls/control-audio-video.md)** 和**[视频](controls/control-audio-video.md)** 控件。
 
-**[Tooltip](controls/properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。  适用于许多控件。
+**[Tooltip](controls/properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。  适用于许多控件。
 
 **[Transition](controls/control-gallery.md)** – 用户将鼠标悬停在库中的项上时显示的视觉效果（“弹出”、“推出”或“无”）。  适用于**[库](controls/control-gallery.md)** 控件。
 
 **[Transparency](controls/control-image.md)** – 图像后的控件保持可见的程度。  适用于**[图像](controls/control-image.md)** 控件。
 
 ### <a name="u"></a>U
-**[Underline](controls/properties-text.md)** – 在文本下方显示的线是否在控件上显示。  适用于许多控件。
+[Underline](controls/properties-text.md) – 在文本下方显示的线是否在控件上显示。  适用于许多控件。
 
 **[Unsaved](controls/control-form-detail.md)** – 如果**[编辑窗体](controls/control-form-detail.md)** 控件包含尚未保存的用户更改，则此项为 True。  适用于**[编辑窗体](controls/control-form-detail.md)** 控件。
 
@@ -499,12 +502,12 @@ ms.lasthandoff: 04/26/2018
 **[WrapCount](controls/control-gallery.md)**  – 库的每个项中显示多少条记录。  适用于**[库](controls/control-gallery.md)** 控件。
 
 ### <a name="x"></a>X
-[X](controls/properties-size-location.md) - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。 适用于许多控件。 对于多列容器中的“[数据卡](controls/control-card.md)”控件，此属性将确定数据卡出现在哪一列。
+**[X](controls/properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。 适用于许多控件。 对于多列容器中的“[数据卡](controls/control-card.md)”控件，此属性将确定数据卡出现在哪一列。
 
 **[XLabelAngle](controls/control-column-line-chart.md)** – 柱形图或折线图的 X 轴下方的标签角度。  适用于**[柱形图](controls/control-column-line-chart.md)** 和**[折线图](controls/control-column-line-chart.md)** 控件。
 
 ### <a name="y"></a>Y
-**[Y](controls/properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。 适用于许多控件。 对于多行容器中的“[数据卡](controls/control-card.md)”控件，此属性将确定数据卡出现在哪一行。
+**[Y](controls/properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。 适用于许多控件。 对于多行容器中的[数据卡](controls/control-card.md)控件，此属性将确定数据卡出现在哪一行。
 
 **[YAxisMax](controls/control-column-line-chart.md)** – 折线图 Y 轴的最大值。  适用于“[折线图](controls/control-column-line-chart.md)”控件。
 

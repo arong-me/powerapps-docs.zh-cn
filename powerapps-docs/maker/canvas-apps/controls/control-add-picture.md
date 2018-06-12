@@ -1,22 +1,18 @@
 ---
 title: 添加图片控件：参考 | Microsoft 文档
 description: 有关添加图片控件的信息（包括属性和示例）
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 8882873367442238012445c901bd86b33ff6863c
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: e20d76c9e8913197d4b59380a5f91dea3851c959
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803526"
 ---
 # <a name="add-picture-control-in-powerapps"></a>PowerApps 中的添加图片控件
 拍摄照片或加载本地设备中的图像。

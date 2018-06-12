@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: bd07c6ee0a0084171c928c6908c33caae974d765
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31835131"
 ---
 # <a name="image-control-in-powerapps"></a>PowerApps 中的图像控件
 显示来自本地文件或数据源等来源的图像的控件。
@@ -141,13 +142,13 @@ Transparency – 图像后的控件仍然可见的程度。
 * 如果它不仅仅用于修饰，则考虑检查图像中的对比度问题。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* 如果图形用作按钮或者不仅仅用于修饰，[则“AccessibleLabel”](properties-accessibility.md)必须存在。
-* 如果图形纯粹用于修饰作用，**[“AccessibleLabel”](properties-accessibility.md)** 必须为空或空字符串 **""**。 这将导致屏幕阅读器忽略图形。
-* 如果图形提供冗余信息，**[“AccessibleLabel”](properties-accessibility.md)** 可以为空或空字符串 **""**。
-    * 例如，齿轮的“图像”将其**[“AccessibleLabel”](properties-accessibility.md)** 设置为**“Settings”**。 此图像不用作按钮。 它位于同样显示**“Settings”**的**[标签](control-text-box.md)** 旁边。 屏幕阅读器将图像读作**“Settings”**，并再次将标签读作**“Settings”**。 没必要对此进行详细说明。 在此情况下，该图像不需要**[“AccessibleLabel”](properties-accessibility.md)**。
+* 如果图形用作按钮或者不仅仅用于修饰，则**[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
+* 如果图形纯粹用于修饰作用，**[“AccessibleLabel”](properties-accessibility.md)** 必须为空或空字符串 ""。 这将导致屏幕阅读器忽略图形。
+* 如果图形提供冗余信息，**[“AccessibleLabel”](properties-accessibility.md)** 可以为空或空字符串 ""。
+    * 例如，齿轮的“图像”将其**[“AccessibleLabel”](properties-accessibility.md)** 设置为“Settings”。 此图像不用作按钮。 它位于同样显示“Settings”的**[标签](control-text-box.md)** 旁边。 屏幕阅读器将图像读作“Settings”，并再次将标签读作“Settings”。 没必要对此进行详细说明。 在此情况下，该图像不需要**[“AccessibleLabel”](properties-accessibility.md)**。
 
     > [!IMPORTANT]
-> 屏幕阅读器将始终读取 [TabIndex](properties-accessibility.md) 为零或更大的图像，即使**[“AccessibleLabel”](properties-accessibility.md)** 为空。 这是因为它们以按钮形式呈现。 如果没有提供**[“AccessibleLabel”](properties-accessibility.md)**，屏幕阅读器只需将图形读作“按钮”。
+> 屏幕阅读器将始终读取 **[TabIndex](properties-accessibility.md)** 为零或更大的图像，即使**[“AccessibleLabel”](properties-accessibility.md)** 为空。 这是因为它们以按钮形式呈现。 如果没有提供**[“AccessibleLabel”](properties-accessibility.md)**，屏幕阅读器只需将图形读作“按钮”。
 
 ### <a name="keyboard-support"></a>键盘支持
 * 如果图形用作按钮，**[“TabIndex”](properties-accessibility.md)** 必须为零或更大。 这允许键盘用户导航到它。

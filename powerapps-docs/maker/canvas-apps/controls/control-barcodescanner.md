@@ -1,22 +1,18 @@
 ---
 title: 条码扫描器控件：参考 | Microsoft 文档
 description: 有关条码扫描器控件的信息（包括属性和示例）
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 8cd0c84f508c13e8064b0e5bc93b01024cf22120
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 22b5cf081755f25b3aff33c36137547882fe3812
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803457"
 ---
 # <a name="barcode-scanner-control-experimental-in-powerapps"></a>PowerApps 中的条形码扫描程序控件（实验性）
 通过在设备上使用条形码扫描程序，用户可用来拍摄照片的实验性控件。
@@ -44,7 +40,7 @@ ms.lasthandoff: 04/26/2018
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
-**[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
+**[OnSelect](properties-core.md)** - 用户单击或点击某个控件时应用响应的方式。
 
 **OnStream** - 更新 **Stream** 属性时应用的响应方式。
 

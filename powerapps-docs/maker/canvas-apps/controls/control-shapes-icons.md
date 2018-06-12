@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: e2c5d384c29766d6c30db8aa85ad4d7d45b48e04
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838139"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>PowerApps 中的形状控件和图标控件
 你可以为其配置外观和行为属性的图形。
@@ -91,17 +92,17 @@ ms.lasthandoff: 04/26/2018
 * **[HoverFill](properties-color-border.md)** 和控件范围之外的颜色（如果用作按钮）
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* 如果图形用作按钮或者不仅仅用于修饰，则**[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
-* 如果图形纯粹用于修饰作用，**[“AccessibleLabel”](properties-accessibility.md)** 必须为空或空字符串 **""**。 这将导致屏幕阅读器忽略图形。
-* 如果图形提供冗余信息，**[“AccessibleLabel”](properties-accessibility.md)** 可以为空或空字符串 **""**。
-    * 例如，“设置”图标将其**[“AccessibleLabel”](properties-accessibility.md)** 设置为“Settings”。 此图标不用作按钮。 它位于同样显示**“Settings”**的**[标签](control-text-box.md)** 旁边。 屏幕阅读器将图标读作**“Setting”**，并再次将标签读作**“Setting”**。 没必要对此进行详细说明。 在此情况下，该图标不需要**[“AccessibleLabel”](properties-accessibility.md)**。
+* 如果图形用作按钮或者不仅仅用于修饰，则 **[AccessibleLabel](properties-accessibility.md)** 必须存在。
+* 如果图形纯粹用于修饰作用，**[AccessibleLabel](properties-accessibility.md)** 必须为空或空字符串 ""。 这将导致屏幕阅读器忽略图形。
+* 如果图形提供冗余信息，**[AccessibleLabel](properties-accessibility.md)** 可以为空或空字符串 ""。
+    * 例如，“设置”图标将其 **[AccessibleLabel](properties-accessibility.md)** 设置为“Settings”。 此图标不用作按钮。 它位于同样显示“Setting”的**[标签](control-text-box.md)** 旁边。 屏幕阅读器将图标读作“Setting”，并再次将标签读作“Setting”。 没必要对此进行详细说明。 在此情况下，该图标不需要 **[AccessibleLabel](properties-accessibility.md)**。
 
     > [!IMPORTANT]
-> 屏幕阅读器将始终读取**[“TabIndex”](properties-accessibility.md)** 为零或更大的图标或形状，即使**[“AccessibleLabel”](properties-accessibility.md)** 为空。 这是因为它们以按钮形式呈现。 如果没有提供**[“AccessibleLabel”](properties-accessibility.md)**，屏幕阅读器只需将图形读作“按钮”。
+> 屏幕阅读器将始终读取 **[TabIndex](properties-accessibility.md)** 为零或更大的图标或形状，即使 **[AccessibleLabel](properties-accessibility.md)** 为空。 这是因为它们以按钮形式呈现。 如果没有提供 **[AccessibleLabel](properties-accessibility.md)**，屏幕阅读器只需将图形读作“按钮”。
 
 ### <a name="keyboard-support"></a>键盘支持
-* 如果图形用作按钮，**[“TabIndex”](properties-accessibility.md)** 必须为零或更大。 这允许键盘用户导航到它。
+* 如果图形用作按钮，**[TabIndex](properties-accessibility.md)** 必须为零或更大。 这允许键盘用户导航到它。
 * 如果图形用作按钮，焦点指示器必须清楚显示。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
 
     > [!NOTE]
-> 当**[“TabIndex”](properties-accessibility.md)** 为零或更大，图标或形状将以按钮形式呈现。 可视外观没有变化，但屏幕阅读器将正确识别作为按钮的图像。 当**[“TabIndex”](properties-accessibility.md)** 小于零时，图标或形状将被标识为图像。
+> 当 **[TabIndex](properties-accessibility.md)** 为零或更大，图标或形状将以按钮形式呈现。 可视外观没有变化，但屏幕阅读器将正确识别作为按钮的图像。 当 **[TabIndex](properties-accessibility.md)** 小于零时，图标或形状将被标识为图像。

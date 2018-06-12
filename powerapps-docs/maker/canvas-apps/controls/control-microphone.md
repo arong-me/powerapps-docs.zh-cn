@@ -12,17 +12,20 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: ae6a8afa71a150ad1b15f8ef0550f3d7412ff3be
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: c79e30a404b1e653f1df6547c9fcc818efc79433
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34583500"
 ---
 # <a name="microphone-control-in-powerapps"></a>PowerApps 中的麦克风控件
-用户可以用来记录声音的控件。
+允许应用用户从其设备录音的控件。
 
 ## <a name="description"></a>描述
-如果添加此控件，用户可从应用运行的任何位置使用一个或多个声音更新数据源。
+如果运行应用的设备有麦克风，则应用用户可录音。
+
+在 Android 设备中，音频以 3gp 格式存储；在 iOS 设备中，则以 AAC 格式存储。
 
 ## <a name="key-properties"></a>关键属性
 **Mic** – 在具有多个麦克风的设备上，应用所使用的麦克风的数字 ID。
@@ -44,9 +47,9 @@ ms.lasthandoff: 04/26/2018
 
 **[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件边框的颜色。
 
-[DisabledColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件中的文本颜色。
+**[DisabledColor](properties-color-border.md)** – 控件的 **[DisplayMode](properties-core.md)** 属性设置为 Disabled**Disabled** 时，该控件中的文本颜色。
 
-[DisabledFill](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件的背景颜色。
+**[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode”**[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
 
 **[Fill](properties-color-border.md)** – 控件的背景色。
 
@@ -97,9 +100,9 @@ ms.lasthandoff: 04/26/2018
 ### <a name="add-sounds-to-a-custom-gallery-control"></a>将声音添加到自定义库控件
 1. 添加“麦克风”，将其命名为“MyMic”，并将其 **OnStop** 属性设置为以下公式：<br>
    **Collect(MySounds, MyMic.Audio)**
-   
+
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
-   
+
     想要了解有关 **[Collect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
 2. 添加“自定义库”控件，将其移至“MyMic” 下，并将“自定义库”控件的 **[Items](properties-core.md)** 属性设置为 **Mysounds**。
 3. 在“自定义库”控件的模板中，添加**[音频](control-audio-video.md)** 控件，并将其“媒体”属性设置为 **ThisItem.Url**。

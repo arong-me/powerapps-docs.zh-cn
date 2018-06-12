@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: aacd47621148c03eef88dea31763ab4af2658bfc
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31830781"
 ---
 # <a name="html-text-control-in-powerapps"></a>PowerApps 中的 HTML 文本控件
 一个框，用于显示文本并将 HTML 标记转换为格式。
@@ -85,7 +86,7 @@ ms.lasthandoff: 04/26/2018
 1. 添加“HTML 文本”控件，并将其“HTMLText”属性设置为以下值：<br>
    **Source.Text**
    
-     虽然“HTML 文本”控件显示与“标签”**[](control-text-box.md)** 控件相同的文本，但会将这些标记转换成相应的字符。
+     虽然“HTML 文本”控件显示与**[标签](control-text-box.md)** 控件相同的文本，但会将这些标记转换成相应的字符。
 
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
@@ -93,11 +94,11 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：
-* Color**[](properties-color-border.md)** 和 Fill**[](properties-color-border.md)**
+* **[Color](properties-color-border.md)** 和 **[Fill](properties-color-border.md)**
 * 带自定义颜色的文本和其背景
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
 * “HtmlText”必须存在。
 
 ### <a name="keyboard-support"></a>键盘支持
-* “HtmlText”不应包含交互式元素，如 `<button>`、`<a>` 或 `<input>`。 PowerApps 中的“TabIndex”**[](properties-accessibility.md)** 不考虑“HtmlText”内的元素。
+* “HtmlText”不应包含交互式元素，如 `<button>`、`<a>` 或 `<input>`。 PowerApps 中的 **[TabIndex](properties-accessibility.md)** 不考虑“HtmlText”内的元素。

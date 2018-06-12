@@ -6,19 +6,20 @@ manager: kfile
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 04/23/2018
+ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 953efbabcdce55ac58376f927d5e399e69a40974
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: 788f9ec1ce1ac8604606d2d2ad836a0cd12360d4
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34552981"
 ---
 # <a name="powershell-support-for-powerapps-preview"></a>对 PowerApps 的 PowerShell 支持（预览版）
 随着面向应用创建者和管理员的 PowerShell cmdlet 预览版的推出，可以在 [PowerApps](https://web.powerapps.com) 或 [PowerApps 管理中心](https://admin.powerapps.com)自动执行许多目前只能手动进行的监视和管理任务。
 
 ## <a name="installation"></a>安装
-要运行应用创建者 PowerShell cmdlet，请执行以下操作：
+若要运行应用创建者 PowerShell cmdlet，请执行以下操作：
 
 1. 下载 [PowerShell 脚本文件](https://go.microsoft.com/fwlink/?linkid=872358)。
 
@@ -39,19 +40,19 @@ ms.lasthandoff: 05/15/2018
     Import-Module .\Microsoft.PowerApps.PowerShell.psm1 -Force
     ```
 
-6. 在访问任何命令之前，需要使用以下命令提供凭据。 这些凭据的刷新间隔长达 8 小时，然后才会要求再次登录以继续使用 cmdlet。
+6.  这是现在的[已知问题](https://powerusers.microsoft.com/t5/Administering-PowerApps/Getting-errors-when-I-try-to-import-the-preview-powerapps/td-p/109036)，可能还需要使用以下命令手动解除锁定 PowerShell 文件：
+
+    ```
+    dir . | Unblock-File
+    ```
+7. 在访问任何命令之前，需要使用以下命令提供凭据。 这些凭据的刷新间隔长达 8 小时，然后才会要求再次登录以继续使用 cmdlet。
 
     ```
     Add-PowerAppsAccount
     ```
 
-7.  这是现在的[已知问题](https://powerusers.microsoft.com/t5/Administering-PowerApps/Getting-errors-when-I-try-to-import-the-preview-powerapps/td-p/109036)，可能还需要使用以下命令手动解除锁定 PowerShell 文件：
 
-    ```
-    dir . | Unblock-File
-    ```
-
-## <a name="powerapps-cmdlets-for-app-makers-preview"></a>应用程序创建者 PowerApps cmdlet（预览版）
+## <a name="powerapps-cmdlets-for-app-creators-preview"></a>应用创建者 PowerApps cmdlet（预览版）
 
 ### <a name="prerequisite"></a>先决条件
 具有有效 PowerApps 许可证的用户可以在这些 cmdlet 中执行此操作，但他们只能访问已创建或与之共享的资源（例如应用、流等）。
@@ -69,6 +70,7 @@ ms.lasthandoff: 05/15/2018
 | 读取、更新和删除连接权限 | Get-ConnectionRoleAssignment <br> Set-ConnectionRoleAssignment <br> Remove-ConnectionRoleAssignment
 | 读取和删除连接器 | Get-Connector <br> Remove-Connector
 | 读取、更新和删除自定义连接器权限 | Get-ConnectorRoleAssignment <br> Set-ConnectorRoleAssignment <br> Remove-ConnectorRoleAssignment
+
 
 > [!NOTE]
 > 使用以下命令了解语法并查看每个 cmdlet 的示例：
@@ -95,6 +97,13 @@ ms.lasthandoff: 05/15/2018
 | 读取和删除画布应用 | Get-AdminApp <br> Remove-AdminApp
 | 读取、更新和删除画布应用权限 | Get-AdminAppRoleAssignment <br> Remove-AdminAppRoleAssignment <br> Set-AdminAppRoleAssignment <br> Set-AdminAppOwner
 | 读取、更新和删除流 | Get-AdminFlow <br> Enable-AdminFlow <br> Disable-AdminFlow <br> Remove-AdminFlow  <br> Remove-AdminFlowOwnerRole
+| 读取和删除连接 | Get-AdminConnection <br> Remove-AdminConnection
+| 读取、更新和删除连接权限 | Get-AdminConnectionRoleAssignment <br> Set-AdminConnectionRoleAssignment <br> Remove-AdminConnectionRoleAssignment
+| 读取和删除自定义连接器 | Get-AdminConnector <br> Remove-AdminConnector
+| 读取、更新和删除自定义连接器权限 | Get-AdminConnectorRoleAssignment <br> Set-AdminConnectorRoleAssignment <br> Remove-AdminConnectorRoleAssignment
+| 读取用户的 PowerApps 用户设置、用户应用设置和通知 | Get-AdminPowerAppsUserDetails
+| 读取和删除用户的 Microsoft Flow 设置，这些设置对用户不可见，但支持流执行 | Get-AdminFlowUserDetails <br> Remove-AdminFlowUserDetails
+| 创建、读取、更新和删除组织的数据丢失防护策略 | Get-AdminApiPolicy <br> Add-AdminApiPolicy <br> Remove-AdminApiPolicy <br> Set-AdminApiPolicy <br> Add-ConnectorToBusinessDataGroup <br>  Remove-ConnectorFromBusinessDataGroup
 
 > [!NOTE]
 > 使用以下命令了解语法并查看每个 cmdlet 的示例：

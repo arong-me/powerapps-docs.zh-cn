@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: caa8cf8678a509e4d66442f790b8d89905d48b92
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838593"
 ---
 # <a name="label-control-in-powerapps"></a>PowerApps 中的标签控件
 一个框，显示文本、数字、日期或货币等数据。
@@ -50,9 +51,9 @@ ms.lasthandoff: 04/26/2018
 
 **[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件边框的颜色。
 
-[DisabledColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件中的文本颜色。
+**[DisabledColor](properties-color-border.md)** – 控件的 **[DisplayMode](properties-core.md)** 属性设置为 Disabled**Disabled** 时，该控件中的文本颜色。
 
-[DisabledFill](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件的背景色。
+**[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode”**[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
 
 **[Fill](properties-color-border.md)** – 控件的背景色。
 
@@ -158,13 +159,13 @@ ms.lasthandoff: 04/26/2018
 * **[“Text”](properties-core.md)** 必须存在。
 
     > [!NOTE]
-> 当**[“TabIndex”](properties-accessibility.md)** 为零或更大，屏幕阅读器会将“标签”视为按钮。
+> 当 **[TabIndex](properties-accessibility.md)** 为零或更大，屏幕阅读器会将“标签”视为按钮。
 
 ### <a name="low-vision-support"></a>弱视支持
 * 如果“标签”作为链接使用，则应采用链接的形式。
-    * 将**[“Underline”](properties-text.md)** 设置为 true
+    * 将 **[Underline](properties-text.md)** 设置为 true
     * **[“HoverColor”](properties-color-border.md)** 应不同于**[“Color”](properties-color-border.md)**
 
 ### <a name="keyboard-support"></a>键盘支持
 * 如果文本用作按钮或链接，**[“TabIndex”](properties-accessibility.md)** 必须为零或更大。 这允许键盘用户导航到它。
-* 如果文本用作按钮或链接，焦点指示器必须清楚显示。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
+* 如果文本用作按钮或链接，焦点指示器必须清楚显示。 可以使用 **[FocusedBorderColor](properties-color-border.md)** 和 **[FocusedBorderThickness](properties-color-border.md)** 来实现此目的。

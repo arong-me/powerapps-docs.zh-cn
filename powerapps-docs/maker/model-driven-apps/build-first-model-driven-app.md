@@ -12,11 +12,12 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 04/18/2018
 ms.author: matp
-ms.openlocfilehash: dfef87d9c85de3a8311081c3b99eaa9d072dc444
-ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
+ms.openlocfilehash: 3d7aa26696adb187906c9c793c546abd1b97764f
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34583477"
 ---
 # <a name="quickstart-build-your-first-model-driven-app-from-scratch"></a>快速入门：从零开始生成首个模型驱动应用
 模型驱动应用设计是一种侧重于组件的应用开发方法。 在本快速入门中，可以通过使用在你的 [!INCLUDE [powerapps](../../includes/powerapps.md)] 环境中提供的一个标准实体来简化模型驱动应用的生成方式。 
@@ -30,6 +31,9 @@ ms.lasthandoff: 05/22/2018
 2.  从左侧导航窗格，选择“模型驱动”。 
 
     ![模型驱动](media/build-first-model-driven-app/choose-design-mode.png)
+
+  > [!IMPORTANT]
+  > 如果“模型驱动”设计模式不可用，则可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。   
 
 3. 从左窗格选择“应用”，然后选择“创建应用”。
 

@@ -7,74 +7,25 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 4/18/2018
 ms.author: audrie
-ms.openlocfilehash: 9100aadcbe9b2b4c431fd91da448d859f1830f48
-ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
+ms.openlocfilehash: a5cfa772ce4f7e9f5679164b9309baa31bfc6a96
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803365"
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps 网络研讨会列表 #
 这些网络研讨会可以帮助你使用 Microsoft PowerApps 的功能。 请随时在本主题下的评论中提出其他主题建议。
 
 ## <a name="upcoming-webinars"></a>即将举办的网络研讨会 ##
-**模型驱动应用系列第 1 部分 | 管理实体和数据导入**
-<br>主讲人：Audrie Gordon 和 Clay Wesener
-<br>5 月 1 日上午 10:00（太平洋标准时间）/中午 12:00（东部标准时间）
-
-与 PowerApps 团队的 Clay Wesener 一起工作，他将指导你生成 CDS for Apps 数据库。 你可了解如何创建和导航实体以及字段。 你还可以提前开始了解现成可用的内置功能！ 
-
-这是一个 3 部分系列的第 1 部分：
-<br>**第 1 部分：实体**
-<br>第 2 部分：窗体和视图
-<br>第 3 部分：图表和仪表板
-
-这是一个了解如何重复使用标准实体和字段，以及如何快速创建自己的自定义方案的绝佳机会！
-
-[5 月 1 日单击此处观看](https://www.youtube.com/watch?v=02NWfHRYkeo)
-
-**模型驱动应用系列第 2 部分 | 创建窗体和视图**
-<br>主讲人：Audrie Gordon 和 Anees Ansari
-<br>5 月 15 日上午 10:00（太平洋标准时间）/中午 12:00（东部标准时间）
-
-模型驱动应用为应用创建者提供了大量设计从简单到复杂的窗体方案的体验。 学习使用新的窗体设计器来生成我们在第 1 部分中启动的模型应用所需的窗体。 Anees 将详细介绍选项卡、节和字段等窗体组件。 他还将共享集成业务逻辑和筛选器的最佳做法。 
-
-这是一个 3 部分系列的第 2 部分：
-<br>第 1 部分：实体
-<br>**第 2 部分：窗体和视图**
-<br>第 3 部分：图表和仪表板
-
-[5 月 15 日单击此处观看](https://www.youtube.com/watch?v=v7VoX-V2ek4)
-
-**模型驱动应用系列第 3 部分 | 探索图表和仪表板**
-<br>主讲人：Audrie Gordon 和 Casey Burke
-<br>5 月 29 日上午 10:00（太平洋标准时间）/中午 12:00（东部标准时间）
-
-PowerApps 提供了一种用于报告的组合方法，其中包含丰富的视图和仪表板功能。 我们的模型驱动应用系列包括多种有用的图表和仪表板，可优化和更新我们一直在使用的解决方案。 
-
-这是一个 3 部分系列的第 3 部分：
-<br>第 1 部分：实体
-<br>第 2 部分：窗体和视图
-<br>**第 3 部分：图表和仪表板**
-
-[5 月 29 日单击此处观看](https://www.youtube.com/watch?v=kJ5eTWh7Hyg)
 
 **连接器系列 | Microsoft StaffHub（轮班规划）应用和 PowerApps**
 <br>主讲人：Marc-André Lépine
 <br>6 月 5 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
-
+<br>
 来自 PowerApps 和 Flow Azure 顾问组的 Marc André Lépine 将参与此次网络研讨会，与我们分享他如何生成出色应用以补充和扩展使用 StaffHub 连接器可实现的效果。 本周晚些时候，他将演示如何使用自定义 API 扩展连接器。  
 
 [6 月 5 日单击此处观看](https://www.youtube.com/watch?v=LAximnEnKy8)
-
-**可扩展性 | 使用 PowerApps 和 Flow 生成 JSON 驱动的解决方案**
-<br>主讲人：Marc-André Lépine
-<br>6 月 7 日上午 10:00（太平洋标准时间）/下午 1:00（东部标准时间）
-
-Marc André Lépine 再次到来，将与我们分享一些有关可扩展性的提示。 如果没有看过他的第一个视频，可先前往此处观看：https://www.youtube.com/watch?v=LAximnEnKy8
-
-这一次，Marc 将演示如何通过自定义连接器扩展 StaffHub 连接器的功能，使其满足他自己的企业要求，从而体现 PowerApps 的无限优势。 （这一操作的简单程度实在令人惊叹，所以即使你不是专业开发人员，也推荐你观看此次网络研讨会。） 
-
-[6 月 7 日单击此处观看](https://www.youtube.com/watch?v=ykNRxKvAirg)
 
 **PowerApps 管理 | 常见问题**
 <br>主讲人：Manas Maheshwari
@@ -92,8 +43,16 @@ PowerApps 展示中的这款热门应用为该应用每周带来 3-5个 请求�
 
 [6 月 14 日单击此处观看](https://www.youtube.com/watch?v=6Wn47bDOMEE)
 
+**入门 | PowerApps 学习路径 - 如何快速获取良好的生成应用！**
+<br>主讲人：Audrie Gordon
+<br>6 月 26 日晚上 6:00（太平洋标准时间）/晚上 9:00（东部标准时间）
+
+PowerApps 团队的 Audrie Gordon 将在你的组织中共享学习和采用 PowerApps 的最佳做法和快速入门策略。 请不要错过在 YouTube 上实时播出的此特别业余讨论。 
+
+[6 月 26 日单击此处观看](https://www.youtube.com/watch?v=ykNRxKvAirg)
+
 ## <a name="past-webinars"></a>过往网络研讨会 ##
-直播结束后，可按需观看网络研讨会。 请注意，必须重新输入注册详细信息，然后才能通过电子邮件收到视频录制链接。
+直播结束后，可按需观看网络研讨会。 请注意，在某些情况下，必须重新输入注册详细信息，然后才能通过电子邮件收到视频录制链接。 
 
 ### <a name="beginner-webinar-series"></a>初学者网络研讨会系列 ###
 **设计不容小觑的应用的 5 大技巧**
@@ -196,6 +155,15 @@ PowerApps 展示中的这款热门应用为该应用每周带来 3-5个 请求�
 
 **模型驱动应用组件 | 模板入门**
 <br>作者：Charles Sterling 和 Casey Burke [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Understanding-Model-Driven-App-Templates/m-p/116833)
+
+**模型驱动应用系列第 1 部分 | 管理实体和数据导入**
+<br>主讲人：Audrie Gordon 和 Clay Wesener [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Model-Driven-App-Components-Part-1-Managing-Entities-and-Data/m-p/116837)
+
+**模型驱动应用系列第 2 部分 | 创建窗体和视图**
+<br>主讲人：Audrie Gordon 和 Anees Ansari [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Model-Driven-App-Components-Part-2-Creating-Forms-and-Views-with/m-p/116838)
+
+**模型驱动应用系列第 3 部分 | 探索图表和仪表板**
+<br>主讲人：Audrie Gordon 和 Casey Burke [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Model-Driven-App-Components-Part-3-Exploring-Charts-and/m-p/119732)
 
 ### <a name="app-designer-series"></a>应用程序设计器系列 ###
 **针对采用率和可用性构建应用**

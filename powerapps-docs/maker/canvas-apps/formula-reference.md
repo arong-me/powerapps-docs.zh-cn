@@ -10,13 +10,14 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: reference
 ms.component: canvas
-ms.date: 08/28/2017
+ms.date: 06/05/2018
 ms.author: gregli
-ms.openlocfilehash: d7dd33954d337bbfc65b486333e89c4598b11305
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: af089f81b8fd96ec022fe32495cb14f2827f28b5
+ms.sourcegitcommit: 045c96df42405c60c7675edbadac93455270a021
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34822572"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps 的公式参考
 公式组合了许多元素。  下面列出的包括：
@@ -219,6 +220,8 @@ ms.lasthandoff: 04/26/2018
 
 **[Not](functions/function-logicals.md)** – 布尔逻辑非。  如果其参数为 **false**，则返回 **true**；如果其参数为 **true**，则返回 **false**。  还可以使用 [**!** 运算符](functions/operators.md)。
 
+**[Notify](functions/function-showerror.md)** - 向用户显示横幅消息。
+
 **[Now](functions/function-now-today-istoday.md)** – 返回当前的日期/时间值。
 
 ## <a name="o"></a>O
@@ -280,8 +283,6 @@ ms.lasthandoff: 04/26/2018
 [Set](functions/function-set.md) – 设置全局变量的值。
 
 **[ShowColumns](functions/function-table-shaping.md)** – 返回仅包含所选列的表。
-
-**[ShowError](functions/function-showerror.md)**  – 向用户显示一条错误消息。
 
 **[Shuffle](functions/function-shuffle.md)** – 随机重新排列表记录的顺序。
 

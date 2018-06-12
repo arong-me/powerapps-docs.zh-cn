@@ -8,23 +8,26 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 05/21/2018
 ms.author: anneta
-ms.openlocfilehash: dc4e4f9ae1cdb8cf9edf1c7a52343f6a5db1717c
-ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
+ms.openlocfilehash: ef4360dda5d4003ff91389af78958052bbb1e052
+ms.sourcegitcommit: 68e2c696397f3002dd14e72a4c2054a603a5e2d7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851698"
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps 的最近更新
+> [!IMPORTANT]
+> **宣布发行说明**<br>
+> 想要了解 PowerApps 中即将推出和最近发布的功能？<br>
+[查看发行说明](https://docs.microsoft.com/en-us/business-applications-release-notes/april18/powerapps/overview)。 我们已捕获所有详细信息（从头到尾方方面面），你可在规划时使用。
+
 有关已知限制的信息，请参阅[常见问题和解决方法](common-issues-and-resolutions.md)。
 
 > [!NOTE]
 > 版本会在几天内推出。 新功能或更新功能可能不会立即显示。
 
-## <a name="announcing-the-business-applications-spring-18-release-notes"></a>宣布推出商业应用程序 2018 年春季发行说明
-
-发现商业应用程序的最新更新和许多新增功能，这些功能便于用户在我们平台的基础之上生成用户自己的应用程序和扩展。 [下载 2018 年春季发行说明 PDF](https://aka.ms/businessappsreleasenotes)，其中涉及 Dynamics 365、PowerApps、Microsoft Flow 和 Power BI。
-
-**即将推出**：我们将会不断更新发行说明 PDF，以收录新发布的功能。同时，我们还会将它们发布在网页上。
+## <a name="may-30"></a>5 月 30 日
+1. [RTF 编辑器控件](controls/control-richtexteditor.md)（实验性）- 允许最终用户在 WYSIWYG 编辑区域中设置文本格式。 
 
 ## <a name="may-21"></a>5 月 21 日
 1. 允许应用用户使用升级的 Common Data Service (CDS) for Apps 环境中当前提供的“从 Excel 文件获取数据”和“导出数据”功能从本地存储的 Excel 或 CSV 文件导入和导出数据。 

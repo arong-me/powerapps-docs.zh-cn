@@ -12,11 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 9f2aae06422a130e2976d0276536842c6d565db5
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: fe6fc6527348c6d38ba1d7934efb50ea071154d7
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34583546"
 ---
 # <a name="date-picker-control-in-powerapps"></a>PowerApps 中的日期选取器控件
 用户可单击或点击以指定日期的控件。
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/26/2018
 
 [DisabledBorderColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件边框的颜色。
 
-[DisabledColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件中的文本颜色。
+**[DisabledColor](properties-color-border.md)** – 控件的 **[DisplayMode](properties-core.md)** 属性设置为 Disabled**Disabled** 时，该控件中的文本颜色。
 
 [DisabledFill](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件的背景颜色。
 
@@ -68,6 +69,10 @@ ms.lasthandoff: 04/26/2018
 **[FontWeight](properties-text.md)** – 控件中文本的粗细：**粗体**、**半粗体**、**正常**或**细体**。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
+
+**IconFill** - 日期选取器图标的前景色。
+
+**IconBackground** - 日期选取器图标的背景色。
 
 **[Italic](properties-text.md)** – 控件中的文本是否为斜体。
 
@@ -100,14 +105,14 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="example"></a>示例
 1. 添加**日期选取器**控件，并将其命名为 **Deadline**。
-   
+
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 2. 添加一个“[标签](control-text-box.md)”控件，然后将“[Text](properties-core.md)”属性设置为以下公式：
    <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
-   
+
     想要了解有关 **[DateDiff](../functions/function-dateadd-datediff.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
 3. 按 F5，在 **Deadline** 中选择一个日期，然后单击或点击“确定”。
-   
+
     此时，“[标签](control-text-box.md)”控件显示今天距离所选日期还剩多少天。
 4. 若要返回到默认工作区，请按 Esc 键。
 
@@ -122,4 +127,3 @@ ms.lasthandoff: 04/26/2018
 ### <a name="keyboard-support"></a>键盘支持
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
 * 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
- 
