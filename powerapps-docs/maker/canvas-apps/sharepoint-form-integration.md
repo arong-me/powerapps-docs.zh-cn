@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 11/11/2017
 ms.author: ankitsar
-ms.openlocfilehash: 8ae6bd0e576abd3a4115e452b286607b5c695acb
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 69e3baaa769282ca8ac7372ba3360829a1624f3d
+ms.sourcegitcommit: 6bfb002180148a3f22a4d1d8d750fc442489ebe4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834827"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35291734"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>了解 SharePoint 窗体集成
 现在可以在 PowerApps 中轻松[自定义任何 SharePoint 列表窗体](customize-list-form.md)。 在本文中，我们将详细演示这些窗体的工作原理，以及如何对其作进一步的自定义。
@@ -76,7 +76,7 @@ SharePointIntegration 控件在 SharePoint 和 PowerApps 之间沟通用户操�
 ![](./media/sharepoint-form-integration/sharepointintegration-object.png)
 
 >[!NOTE]
->SharePointIntegration 控件的属性仅当窗体在 SharePoint 中运行时才可用，并且在 PowerApps studio 中自定义窗体时无法访问这些属性。
+>仅当窗体在 SharePoint 中运行时才可访问 SharePointIntegration 控件的属性，并且在 PowerApps Studio 中自定义窗体时无法访问这些属性。 这些属性可能无法在 OnStart 或 OnVisible 中使用。 
 
 SharePointIntegration 控件具有以下属性：
 
@@ -109,3 +109,5 @@ Data Source – 包含窗体将显示、编辑或创建的记录的列表。 请
 * 请务必在所有表单的 OnSuccess 公式中添加 RequestHide()。 如果忘记了此操作，SharePoint 将不知道何时隐藏窗体。
 
 * 当用户单击或点击 SharePoint 中的“取消”，你将无法控制窗体的隐藏，因此，请确保在 SharePointIntegration 控件的 OnCancel 公式中重置窗体。
+
+* SharePointIntegration 控件的属性可能无法在 OnStart 或 OnVisible 中使用，并且这些事件在加载列表后只执行一次。 可使用 OnNew、OnView 或 OnEdit 公式，在每次向用户显示窗体之前运行逻辑。 
