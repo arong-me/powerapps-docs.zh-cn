@@ -7,12 +7,12 @@ ms.component: pa-user
 ms.topic: quickstart
 ms.date: 03/07/2018
 ms.author: matp
-ms.openlocfilehash: ba3b52bbbe12fad8773f09f4c753e4a55d09a6f0
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 4aed5f0d34bf88bca706c1c6421ac3b692308ebb
+ms.sourcegitcommit: 63351b1bda5a8dd00786912f95aba9fb3ebfe75c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34552705"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36261709"
 ---
 # <a name="quickstart-run-an-app-in-a-web-browser"></a>快速入门：在 Web 浏览器中运行应用
 在创建应用或者某人与你共享应用时，可以在 Windows、iOS、Android 上或 Web 浏览器中运行此应用。 在本快速入门教程中，你将了解如何在 Web 浏览器中从 [Dynamics 365 主页](https://home.dynamics.com)运行画布或模型驱动应用。
@@ -20,7 +20,7 @@ ms.locfileid: "34552705"
 若要遵循本快速入门教程，需要包括 Dynamics 365 的 [Microsoft Office 365 订阅](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)，以及对[受支持的浏览器和操作系统](../maker/canvas-apps/limits-and-config.md)的访问权限。 此外，请确保有权访问自己生成的应用，或者是其他人生成并与你共享的应用。
 
 ## <a name="sign-in-to-dynamics-365"></a>登录到 Dynamics 365
-在 [https://home.dynamics.com]([https://home.dynamics.com) 上登录到 Dynamics 365。
+在 [https://home.dynamics.com](https://home.dynamics.com) 上登录到 Dynamics 365。
 
 ## <a name="find-an-app-on-the-home-page"></a>在主页上查找应用
 主页上可能显示多种类型的商业应用，可通过在搜索框中键入一部分名称来找到特定应用。 还可以筛选列表，仅显示由特定源创建的应用，如 PowerApps。 要执行此操作，请单击或点击“筛选器”，然后选择源。
