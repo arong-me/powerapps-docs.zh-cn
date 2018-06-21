@@ -7,12 +7,12 @@ ms.component: cds
 ms.topic: quickstart
 ms.date: 05/01/2018
 ms.author: matp
-ms.openlocfilehash: 66c96f7496266e03491e404de2bb329f82b6a2bf
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ecbdc81b2688ee9aabf5e0df6416212957ca2642
+ms.sourcegitcommit: 222df368f1f35e9357b0b1adf0e69d7206d8126e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34552912"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36298483"
 ---
 # <a name="quickstart-create-a-custom-entity"></a>快速入门：创建自定义实体
 在 PowerApps 中，实体定义要跟踪的信息（采用记录的形式），通常包括公司名称、位置、产品、电子邮件和电话号码等属性。 然后可通过开发引用该实体的应用来演示该数据。 PowerApps 提供标准的“现成可用”实体，包含组织内的典型方案（例如跟踪约会），但有时需要创建自定义实体才能存储特定于组织的数据。
@@ -25,7 +25,7 @@ ms.locfileid: "34552912"
 * Common Data Service for Apps 中的系统管理员或系统定制员安全角色。
 
 ## <a name="sign-in-to-powerapps"></a>登录到 PowerApps
-在 [https://web.powerapps.com]([https://web.powerapps.com) 上登录到 PowerApps。
+在 [https://web.powerapps.com](https://web.powerapps.com) 上登录到 PowerApps。
 
 ## <a name="create-an-entity"></a>创建实体
 1. 在导航窗格中，单击或点击“数据”将其展开，然后单击或点击“实体”。
