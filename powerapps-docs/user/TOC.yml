@@ -4,6 +4,8 @@
   href: run-app-browser.md
 - name: 在手机（画布）上
   href: run-app-client.md
+- name: 在手机（模型驱动）上
+  href: run-app-client-model-driven.md
 - name: 在 Microsoft Teams 中
   href: open-app-embedded-in-teams.md
 - name: 从 AppSource

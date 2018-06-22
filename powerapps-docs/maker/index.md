@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31829667"
 ---
 # <a name="overview-of-creating-apps-in-powerapps"></a>概述如何在 PowerApps 中创建应用
 PowerApps 是商业应用的高效开发平台，主要有三个组成部分：

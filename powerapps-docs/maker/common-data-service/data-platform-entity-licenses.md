@@ -13,6 +13,7 @@ ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/15/2018
+ms.locfileid: "34167095"
 ---
 # <a name="license-requirements-for-entities"></a>实体的许可证要求
 应用创建者可使用 Common Data Service (CDS) for Apps 中提供的大部分实体（包括自定义实体和部分常见数据模型实体），为仅有 PowerApps 计划 1 或 Microsoft Flow 计划 1 许可证的用户创建应用和流。 某些情况下，实体包含复杂的业务逻辑，或与要求应用用户具有特定许可证的 Dynamics 365 产品相关联。 有关可用计划的详细信息，请参阅 [PowerApps 定价页](https://powerapps.microsoft.com/pricing)。

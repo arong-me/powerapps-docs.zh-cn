@@ -12,6 +12,7 @@ ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/26/2018
+ms.locfileid: "34552406"
 ---
 # <a name="whats-the-role-of-a-powerapps-administrator"></a>PowerApps 管理员有何职责？
 PowerApps、Microsoft Flow 和 Common Data Service (CDS) for Apps 的管理工作都是通过 [PowerApps 管理中心](https://admin.powerapps.com)完成的。

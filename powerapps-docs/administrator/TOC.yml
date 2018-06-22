@@ -38,6 +38,8 @@
       href: admin-manage-apps.md
     - name: 在租户或环境之间移动应用
       href: environment-and-tenant-migration.md
+    - name: 导出和导入资源
+      href: export-import-packages.md
     - name: 响应 DSR 请求
       items:
         - name: 系统生成的日志

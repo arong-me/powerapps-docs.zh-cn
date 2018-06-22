@@ -11,6 +11,7 @@ ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32329907"
 ---
 # <a name="accessible-colors-in-powerapps"></a>PowerApps 中具有辅助功能的颜色
 应用中使用的颜色应方便色盲和弱视用户使用。 默认情况下，所有 PowerApps 主题可让所有用户都轻松使用。 在修改应用中使用的颜色时，请遵循以下准则以确保它们方便用户使用。

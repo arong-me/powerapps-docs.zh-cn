@@ -12,6 +12,7 @@ ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/26/2018
+ms.locfileid: "34552659"
 ---
 # <a name="how-do-i-find-and-run-apps"></a>如何查找并运行应用？
 无论是面向在现场工作的移动工作者还是热门医院里业务繁忙的医生，应用制造商都可以创建基于任务和角色的定制画布应用来适应所需的工作方式。 画布应用制造商可自定义画布应用的几乎各个方面，并可连接多个数据源，帮助用户集中精力完成正在处理的任务。
