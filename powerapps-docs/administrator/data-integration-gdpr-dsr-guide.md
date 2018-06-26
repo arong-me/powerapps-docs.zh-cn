@@ -8,10 +8,10 @@ ms.component: cds
 ms.date: 05/20/2018
 ms.author: sabinn
 ms.openlocfilehash: 01dafceacff89cb9b3a400caad5dde07a0995f1c
-ms.sourcegitcommit: e59c849a88c6fc0ed333ef4ce2d982a5b8623c97
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34754107"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-data-integration-for-common-data-service-for-apps-customer-data"></a>响应针对 Common Data Service for Apps 客户数据的数据集成的数据主体权限 (DSR) 请求

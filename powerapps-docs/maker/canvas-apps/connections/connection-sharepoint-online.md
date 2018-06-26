@@ -8,10 +8,10 @@ ms.component: canvas
 ms.date: 07/12/2017
 ms.author: ankitsar
 ms.openlocfilehash: 8a49e0e4e866e7e9eda4834904ee84c082140376
-ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34803296"
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>从 PowerApps 连接到 SharePoint

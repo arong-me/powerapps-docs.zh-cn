@@ -4,10 +4,10 @@ hide_bc: true
 title: Microsoft PowerApps 文档
 description: Microsoft PowerApps 文档
 ms.openlocfilehash: a677147e0464e22ddfa56e36c2c027e2e14e7ca7
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "30040618"
 ---
 <div id="main" class="v2">

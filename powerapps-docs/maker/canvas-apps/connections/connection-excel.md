@@ -8,10 +8,10 @@ ms.component: canvas
 ms.date: 10/02/2016
 ms.author: lanced
 ms.openlocfilehash: feb2d17400c2f1ddc9670e3bd840322dc1edfc10
-ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34803089"
 ---
 # <a name="connect-to-excel-from-powerapps"></a>从 PowerApps 连接到 Excel
