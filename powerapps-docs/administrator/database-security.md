@@ -8,12 +8,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: d9bd70acaacbbeda98c14337035a233b7c70c181
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 620152a684e5bf0399bd938172f328892b137325
+ms.sourcegitcommit: 44ecb3ace4c865bc592dfb7f0b5fffa289d3b035
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168150"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36306111"
 ---
 # <a name="configure-environment-security"></a>配置环境安全设置
 Common Data Service (CDS) for Apps 使用基于角色的安全模型来帮助保护对数据库的访问。 本主题介绍了如何创建保护应用所必需的安全项目。 用户角色可控制对数据的运行时访问，不同于管理环境管理员和环境创建者的环境角色。 有关环境的概述，请参阅[环境概述](environments-overview.md)。
@@ -60,7 +60,7 @@ PowerApps 环境包括预定义的安全角色，它反映访问级别定义为�
 |系统管理员     |  创建、读取、写入、删除、自定义、安全角色       | 具有自定义或管理环境的完整权限，包括创建、修改和分配安全角色。 可以查看环境中的所有数据。 有关详细信息，请参阅：[自定义所需的特权](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 |系统定制员     | 创建（自我）、读取（自我）、写入（自我）、删除（自我）、自定义         | 具有自定义环境的完整权限。 但是，仅可以查看他们创建的环境实体的记录。 详细信息：[自定义项所需权限](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 |环境创建者     |  无       | 可以创建与环境相关联的新资源，包括应用、连接、自定义 API、网关和使用 Microsoft Flow 的流。 但是，没有在环境中访问数据的任何特权。 有关详细信息：[环境概述](https://powerapps.microsoft.com/blog/powerapps-environments/)        |
-|Common Data Service 用户     |  读取、创建（自我）、写入（自我）、删除（自我）       | 可以在环境中运行应用，并对他们所拥有的记录执行常见任务。        |
+|Common Data Service 用户     |  读取、创建（自我）、写入（自我）、删除（自我）       | 可在环境内运行应用并执行常规任务（例如，读取所有[应用程序和 Crm 常用实体](https://github.com/Microsoft/CDM/tree/master/schemaDocuments#click-this-image-to-explore-the-cdm-entities-using-the-entity-navigator)），但会从这些实体中创建、写入和删除自拥有的记录（帐户、联系人和连接除外，在这些项中，无论所有者是谁，它都可以写入到所有记录）。          |
 |代理人     | 代表其他用户执行操作        | 允许以其他用户身份或模拟身份运行代码。  通常配合另一个安全角色使用以允许访问记录。 有关详细信息，请参阅：[模拟其他用户](https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/impersonate-another-user)        |
 
 *除非另有指定，否则特权是全局范围。
@@ -107,7 +107,6 @@ PowerApps 环境包括预定义的安全角色，它反映访问级别定义为�
 9. 选择“读取、编写、追加”特权
 
 10. 选择“保存并关闭”。
-
 
 
 <!--Reference links in article-->

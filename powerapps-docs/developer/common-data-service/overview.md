@@ -1,6 +1,6 @@
 ---
 title: Common Data Service for Apps 开发人员概述 | Microsoft Docs
-description: 了解开发人员如何使用 Common Data Service for Apps 来提升价值。
+description: 了解开发人员如何使用 Common Data Service for Apps 添加值。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -15,24 +15,25 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/19/2018
 ms.author: jdaly
-ms.openlocfilehash: 5ed61c77cc0cea3cf25e48b347f8a524cf62dfd5
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: c07a6505c0a08eca706c08cc2e4d607cd5322dfe
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36949216"
 ---
 # <a name="common-data-service-for-apps-developer-overview"></a>Common Data Service for Apps 开发人员概述
-PowerApps 为用户、企业、合作伙伴、独立软件供应商 (ISV) 和系统集成商 (SI) 提供了用于生成业务线应用的功能强大的平台。 此 PowerApps 版本中的新增功能是全新的 Common Data Service for Apps。 Common Data Service for Apps 现在包含 Dynamics 365 客户参与平台这一核心功能。
+PowerApps 为用户、企业、独立软件供应商 (ISV) 和系统集成商 (SI) 提供了一个用于生成业务线应用的强大平台。 此版本的 PowerApps 中新增了 Common Data Service 扩展（现在称为 Common Data Service for Apps），该扩展现包含 Dynamics 365 平台的核心功能，此平台支持 Dynamics 365 for Sales、Dynamics 365 for Marketing 和 Dynamics 365 for Customer Service。
 
 
 ## <a name="get-started"></a>入门
-如果已拥有 Dynamics 365 客户参与应用的相关经验，将发现可运用自身相关经验来自定义和扩展 Common Data Service for Apps。
+如果已拥有 Dynamics 365 for Sales、Dynamics 365 for Marketing 和 Dynamics 365 for Customer Service 应用的相关经验，则可运用自身相关经验来自定义和扩展 Common Data Service for Apps。
 
-如果不熟悉 Dynamics 365 客户参与应用程序，可借助以下主题获取重要相关概念的高级概述，并开始使用 Common Data Service for Apps。
+如果不熟悉 Dynamics 365 for Sales、Dynamics 365 for Marketing 和 Dynamics 365 for Customer Service 应用，可借助以下主题获取重要相关概念的高级概述，并开始使用 Common Data Service for Apps。
 
 > [!NOTE]
 > - 模型驱动应用可连接 Common Data Service for Apps。 有关开发人员如何在应用程序级别提升价值的信息，请参阅[模型驱动的应用开发人员概述](../model-driven-apps/overview.md)。 本节中的内容仅涉及开发人员可在服务级别操作的扩展。 
-> - 由于 Common Data Service for Apps 和 Dynamics 365 客户参与采用同一平台，因此可在 [Dynamics 365 客户参与开发人员指南](/dynamics365/customer-engagement/developer/developer-guide)中找到有关开发人员的完整详细信息。 这些主题提供相关概述和链接，可通过链接访问开发人员指南和其他指南，获取详细信息。
+> - 由于 Common Data Service for Apps 使用的平台与 Dynamics 365 for Sales、Dynamics 365 for Marketing 和 Dynamics 365 for Customer Service 使用的平台相同，因此可在 [Dynamics 365 Customer Engagement 开发人员指南](/dynamics365/customer-engagement/developer/developer-guide) 中找到更完整的开发人员信息。 这些主题提供相关概述和链接，可通过链接访问开发人员指南和其他指南，获取详细信息。
 
 
 ## <a name="tools-and-resources-for-developers"></a>开发人员的工具和资源
@@ -43,7 +44,7 @@ PowerApps 为用户、企业、合作伙伴、独立软件供应商 (ISV) 和系
 
 以下工具分布于 NuGet 包中。 [开发人员指南：从 NuGet 下载工具](/dynamics365/customer-engagement/developer/download-tools-nuget)主题包括一个 PowerShell 脚本，可用于下载和提取这些工具的最新版本。
 
-|工具  |说明  |
+|工具  |描述  |
 |---------|---------|
 |代码生成工具 `CrmSvcUtil.exe`|一个命令行代码生成工具，用于生成早期绑定的 .NET Framework 类，这些类表示供组织服务使用的实体数据模型。 <br />详细信息： <br />[组织服务](use-web-services.md#organization-service)<br />[Dynamics 365 客户参与开发人员指南：使用代码生成工具创建早期绑定的实体类](/dynamics365/customer-engagement/developer/org-service/create-early-bound-entity-classes-code-generation-tool)|
 |配置迁移工具 `DataMigrationUtility.exe`|用于在环境间移动配置数据。 配置数据用于定义自定义功能，通常存储在自定义实体中。 此工具不用于移动业务数据。 <br /> 详细信息：[Dynamics 365 客户参与管理员指南：使用配置迁移工具在实例和组织间移动配置数据](/dynamics365/customer-engagement/admin/manage-configuration-data)|
@@ -134,13 +135,13 @@ PowerApps 为用户、企业、合作伙伴、独立软件供应商 (ISV) 和系
 
 
 
-### <a name="community-tools-for-common-data-service-for-apps"></a>Common Data Service for Apps 的社区工具
+## <a name="community-tools-for-common-data-service-for-apps"></a>Common Data Service for Apps 的社区工具
 
 Dynamics 365 社区创建工具！ 许多最常见的工具分布于 [XrmToolBox](https://www.xrmtoolbox.com/) 中。 XrmToolBox 是连接到 Common Data Service for Apps 的 Windows 应用程序，提供用于简化自定义、配置和操作任务的工具。 它附带 30 多个插件，使管理、自定义或配置任务变得更容易、更省时。
 
 以下是通过 XrmToolBox 分发的社区工具选定列表，可将其与 Common Data Service for Apps 一起使用。
 
-|工具  |说明  |
+|工具  |描述  |
 |---------|---------|
 |[属性管理器](https://www.xrmtoolbox.com/plugins/DLaB.Xrm.AttributeManager/)|用于重命名/删除属性或更改其类型。|
 |[早期绑定的生成器](https://www.xrmtoolbox.com/plugins/DLaB.Xrm.EarlyBoundGenerator/)|生成早期绑定的实体/选项集/操作。 使用 SDK 中的 CrmSvcUtil，并显示用于创建类的命令行。|

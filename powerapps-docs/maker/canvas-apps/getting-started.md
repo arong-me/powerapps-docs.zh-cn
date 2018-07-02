@@ -7,12 +7,12 @@ ms.topic: overview
 ms.component: canvas
 ms.date: 04/26/2018
 ms.author: anneta
-ms.openlocfilehash: d520f47393c5462f36445e4c8df81617dfddafd2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 606f5aa15d057387542471f82fd071f4044cfd1e
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329815"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36311583"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>PowerApps 中的画布应用有哪些？
 在 Microsoft PowerApps 中通过画布设计和构建业务应用，无需以传统计算机语言（如 C#）编写代码。 通过将元素拖放到画布来设计应用，就像在 PowerPoint 中设计幻灯片一样。 创建用于指定逻辑和处理数据的 Excel 类表达式。 构建应用，这些应用可与[丰富多样的 Microsoft 和第三方源](connections-list.md)中的业务数据集成。 共享应用，以便用户可在浏览器或移动设备中运行；嵌入应用，以便用户可在 SharePoint、Power BI 或 Teams 中运行。
@@ -43,7 +43,7 @@ ms.locfileid: "32329815"
 ## <a name="learn-more"></a>了解更多
 * 浏览左侧导航窗格中的分步式、概念式参考主题。
 * 完成自主掌控进度的[引导式学习课程](https://docs.microsoft.com/powerapps/guided-learning/)。
-* 观看[即将举办的网络研讨会](webinars-listing.md#upcoming-webinars)，这有助于用户利用 PowerApps 的特性和功能。 也可以按需观看[过往网络研讨会](webinars-listing.md#past-webinars)。
+* 查看可根据需要访问的[网络研讨会](webinars-listing.md)，以帮助你利用 PowerApps 的特性和功能。
 
 ## <a name="share-your-experience"></a>共享你的体验
 * 在 [PowerApps 社区](https://aka.ms/powerapps-community)中阅读和发布内容，在此社区中任何 PowerApps 用户都可以发布问题，以供他人回答。 发布问题前，请先搜索此社区，看看自己的问题是否已经有人回答。

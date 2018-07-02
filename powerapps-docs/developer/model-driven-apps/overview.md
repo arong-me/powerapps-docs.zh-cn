@@ -15,15 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/17/2018
 ms.author: jdaly
-ms.openlocfilehash: 4e8a935dbef2c46478f99ecbf82a7fc837feb284
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 1799f275ea777f031e260409f62fcab0667bae59
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36949215"
 ---
 # <a name="model-driven-apps-developer-overview"></a>模型驱动应用开发人员概述
 
-PowerApps 为用户、企业、合作伙伴、独立软件供应商 (ISV) 和系统集成商 (SI) 提供了用于生成业务线应用的功能强大的平台。 此版本中 PowerApps 的新增功能是使用新的 Common Data Service for Apps 生成的模型驱动应用。 Common Data Service for Apps 现在包含 Dynamics 365 客户参与应用程序的核心功能。 借助模型驱动应用，可构建使用与这些应用程序相同的可扩展性功能的应用。
+PowerApps 为用户、企业、合作伙伴、独立软件供应商 (ISV) 和系统集成商 (SI) 提供了用于生成业务线应用的功能强大的平台。 此版本中 PowerApps 的新增功能是使用新的 Common Data Service for Apps 生成的模型驱动应用。 Common Data Service for Apps 现在包含 Dynamics 365 Customer Engagement 应用程序的核心功能。 借助模型驱动应用，可构建使用与这些应用程序相同的可扩展性功能的应用。
 
 模型驱动应用主要是针对应用开发的无代码或低代码组件。 开发人员可通过扩展应用程序提供值。 开始编写代码前，先学习如何构建模型驱动应用，以及在没有代码的情况下可应用哪些选项。 
 
@@ -37,7 +38,7 @@ PowerApps 为用户、企业、合作伙伴、独立软件供应商 (ISV) 和系
 如果你不熟悉 Dynamics 365 客户参与应用程序，本节中的主题精准地概述了帮助开发人员开始使用模型驱动应用的重要概念。 
 
 > [!NOTE]
-> 由于 Common Data Service for Apps 和 Dynamics 365 客户参与采用同一平台，因此可在 [Dynamics 365 客户参与开发人员指南](/dynamics365/customer-engagement/developer/developer-guide)中找到有关开发人员的完整详细信息。 这些主题提供相关概述和链接，可通过链接访问开发人员指南和其他指南，获取详细信息。
+> 由于 Common Data Service for Apps 使用的平台与 Dynamics 365 Customer Engagement 使用的平台相同，因此可在 [Dynamics 365 Customer Engagement 开发人员指南](/dynamics365/customer-engagement/developer/developer-guide)中找到更完整的开发人员信息。 这些主题提供相关概述和链接，可通过链接访问开发人员指南和其他指南，获取详细信息。
 
 
 ## <a name="community-tools-for-model-driven-apps"></a>用于模型驱动应用的社区工具
@@ -46,7 +47,7 @@ Dynamics 365 社区创建工具！ 许多最常见的工具通过在 [XrmToolBox
 
 以下是通过 XrmToolBox 分发的社区工具所选列表，可在使用模型驱动应用时使用它们
 
-|工具  |说明  |
+|工具  |描述  |
 |---------|---------|
 |[简易翻译程序](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/)|使用与上下文相关的信息导出和导入翻译|
 |[导出到 Excel](https://www.xrmtoolbox.com/plugins/Ryr.XrmToolBox.ExportToExcel/)|轻松将记录从所选视图/fetchxml 导出到 Excel 中。|
