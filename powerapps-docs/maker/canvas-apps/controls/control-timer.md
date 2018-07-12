@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 6d4f8f0393b7cb2d6471f159193327f07e648357
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c175b1b35d063f4e20321c494d5472afa2776990
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836898"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899562"
 ---
 # <a name="timer-control-in-powerapps"></a>PowerApps 中的计时器控件
 一个控件，可确定特定时间后应用的响应方式。
@@ -165,6 +165,6 @@ ms.locfileid: "31836898"
 * 不要对时间敏感型和重要信息使用**[“Text”](properties-core.md)**。 屏幕阅读器用户不会收到有关**[“Text”](properties-core.md)** 更改的通知。
 
     > [!NOTE]
-> 屏幕阅读器将每隔 5 秒公告一次运行时间。 但是，计时器 **[Text](properties-core.md)** 不会包含在公告中。
+  > 屏幕阅读器将每隔 5 秒公告一次运行时间。 但是，计时器 **[Text](properties-core.md)** 不会包含在公告中。
 
 * 请考虑添加 **[Label](control-text-box.md)** 以显示运行时间。 使用计时器的 **[Text](properties-core.md)** 以指示用户启动或停止计时器。

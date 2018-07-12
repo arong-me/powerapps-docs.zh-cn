@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/07/2016
 ms.author: gregli
-ms.openlocfilehash: 2053f69146bcd952f61916ef9e41150791a243a5
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9ec6730a03781bdbffc9c80d815e960de2ce6064
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31828048"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899056"
 ---
 # <a name="user-function-in-powerapps"></a>PowerApps 中的 User 函数
 返回当前用户的相关信息。
@@ -44,10 +44,10 @@ ms.locfileid: "31828048"
 * 电子邮件地址：**“john.doe@contoso.com”**
 * 图像：![](media/function-user/john-doe-picture.png) 
 
-| 公式 | 描述 | 结果 |
-| --- | --- | --- |
-| **User()** |当前 PowerApps 用户的所有信息记录。 |{ FullName:&nbsp;"John Doe", Email:&nbsp;"john.doe@contoso.com", Image:&nbsp;"blob:1234...5678" } |
-| **User().Email** |当前 PowerApps 用户的电子邮件地址。 |"john.doe@contoso.com" |
-| **User().FullName** |当前 PowerApps 用户的全名。 |"John Doe" |
-| **User().Image** |当前 PowerApps 用户的图像 URL。  将 **Image** 控件的 **Image** 属性设置为此值可以在应用中显示用户图像。 |"blob:1234...5678"<br><br>使用 **ImageControl.Image**：<br>![](media/function-user/john-doe-picture.png) |
+|       公式       |                                                                    描述                                                                    |                                                 结果                                                  |
+|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+|     **User()**      |                                             当前 PowerApps 用户的所有信息记录。                                             |    { FullName:&nbsp;"John Doe", Email:&nbsp;"john.doe@contoso.com", Image:&nbsp;"blob:1234...5678" }    |
+|  **User().Email**   |                                                 当前 PowerApps 用户的电子邮件地址。                                                  |                                         "john.doe@contoso.com"                                          |
+| **User().FullName** |                                                   当前 PowerApps 用户的全名。                                                    |                                               "John Doe"                                                |
+|  **User().Image**   | 当前 PowerApps 用户的图像 URL。  将 **Image** 控件的 **Image** 属性设置为此值可以在应用中显示用户图像。 | "blob:1234...5678"<br><br>使用 **ImageControl.Image**：<br>![](media/function-user/john-doe-picture.png) |
 
