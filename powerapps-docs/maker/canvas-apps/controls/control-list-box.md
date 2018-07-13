@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 24fc5523b2f1d3cced7cdf4af8c30c65d28757a2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: e43d786cf8eac8bb4ca6b13c953281614559c132
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837863"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899400"
 ---
 # <a name="list-box-control-in-powerapps"></a>PowerApps 中的列表框控件
 用户可以选择一个或多个项的列表。
@@ -156,7 +156,7 @@ ms.locfileid: "31837863"
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：
 * SelectionColor 和 SelectionFill
-* SelectionFill 和 **[Fill](properties-color-border.md)**
+* **SelectionFill** 和 **[Fill](properties-color-border.md)**
 * **[HoverFill](properties-color-border.md)** 和 **[Fill](properties-color-border.md)**
 * **[PressedFill](properties-color-border.md)** 和 **[Fill](properties-color-border.md)**
 
@@ -170,4 +170,4 @@ ms.locfileid: "31837863"
 * 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
 
     > [!NOTE]
-> Tab 键导航到列表框或离开列表框。 箭头键导航列表框中的内容。
+  > Tab 键导航到列表框或离开列表框。 箭头键导航列表框中的内容。

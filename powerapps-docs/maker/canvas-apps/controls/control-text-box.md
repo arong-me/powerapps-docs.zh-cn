@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: caa8cf8678a509e4d66442f790b8d89905d48b92
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: cfc47e95cff02dfcbcc2d3ff456e32a4ca2c675e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838593"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899424"
 ---
 # <a name="label-control-in-powerapps"></a>PowerApps 中的标签控件
 一个框，显示文本、数字、日期或货币等数据。
@@ -129,7 +129,7 @@ ms.locfileid: "31838593"
   **Today()**
   
     > [!NOTE]
-> 指定公式时，请勿使用引号，除非公式的参数是文本字符串。 在这种情况下，用双引号将参数（而不是公式）括住。
+  > 指定公式时，请勿使用引号，除非公式的参数是文本字符串。 在这种情况下，用双引号将参数（而不是公式）括住。
   
     想要了解有关 **[Today](../functions/function-now-today-istoday.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
 
@@ -148,7 +148,7 @@ ms.locfileid: "31838593"
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 尽管其名称如此，“标签”控件不一定要用作另一个控件的标签。 它可以用于显示文本的任何部分。
 
-可以通过指定 **[OnSelect](properties-core.md)** 行为，将“标签”作为按钮或链接使用。 以此方式使用时，要考虑与按钮相类似的辅助功能注意事项。
+可以通过指定 **[OnSelect](properties-core.md)** 行为，将 **“标签”** 作为按钮或链接使用。 以此方式使用时，要考虑与按钮相类似的辅助功能注意事项。
 
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：
@@ -159,13 +159,13 @@ ms.locfileid: "31838593"
 * **[“Text”](properties-core.md)** 必须存在。
 
     > [!NOTE]
-> 当 **[TabIndex](properties-accessibility.md)** 为零或更大，屏幕阅读器会将“标签”视为按钮。
+  > 当**[“TabIndex”](properties-accessibility.md)** 为零或更大，屏幕阅读器会将 **“标签”** 视为按钮。
 
 ### <a name="low-vision-support"></a>弱视支持
 * 如果“标签”作为链接使用，则应采用链接的形式。
-    * 将 **[Underline](properties-text.md)** 设置为 true
+    * 将**[“Underline”](properties-text.md)** 设置为 **true**
     * **[“HoverColor”](properties-color-border.md)** 应不同于**[“Color”](properties-color-border.md)**
 
 ### <a name="keyboard-support"></a>键盘支持
 * 如果文本用作按钮或链接，**[“TabIndex”](properties-accessibility.md)** 必须为零或更大。 这允许键盘用户导航到它。
-* 如果文本用作按钮或链接，焦点指示器必须清楚显示。 可以使用 **[FocusedBorderColor](properties-color-border.md)** 和 **[FocusedBorderThickness](properties-color-border.md)** 来实现此目的。
+* 如果文本用作按钮或链接，焦点指示器必须清楚显示。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness](properties-color-border.md)**”来实现此目的。

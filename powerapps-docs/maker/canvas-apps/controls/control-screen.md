@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: d03e587d86262bcecf59012e36af0c3dc27b29a3
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 165b6544808da234773c2b7a2cdd0014d6fe5c2d
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31831414"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898682"
 ---
 # <a name="screen-control-in-powerapps"></a>PowerApps 中的屏幕控件
 一个包含应用中一个或多个其他控件的 UI 元素。
@@ -83,4 +83,4 @@ OnStart – 用户打开应用时应用的行为。
 * 必须为每个“屏幕”提供有意义的名称。 可以像其他控件一样查看和编辑屏幕名称：在控件面板的树状视图中，或者在属性窗格的标头中。
 
     > [!NOTE]
-> 加载新“屏幕”时，屏幕阅读器将公布其名称。 
+  > 加载新“屏幕”时，屏幕阅读器将公布其名称。 

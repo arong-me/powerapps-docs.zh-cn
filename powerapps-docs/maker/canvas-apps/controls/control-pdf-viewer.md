@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 7f6350a70bff19df0c83d2082fe8fb463d81d772
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c47fb9a120f41166bbe23d55de6b502209a0f20d
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330827"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898463"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PowerApps 中的 PDF 查看器控件（实验性）
 显示 PDF 文件内容的实验性控件。
@@ -96,15 +96,17 @@ ShowControls – 音频或视频播放器是否显示播放按钮和音量滑块
 Zoom – 相机中图像被放大的百分比或 PDF 查看器中文件的视图百分比。
 
 ## <a name="example"></a>示例
-* 添加“PDF 查看器”控件，并将其“Document”属性设置为 PDF 文件的 URL（用双引号括住），如下例所示：<br>
+
+添加“PDF 查看器”控件，并将其“Document”属性设置为 PDF 文件的 URL（用双引号括住），如下例所示：
+
   "https://blog.mozilla.org/security/files/2015/05/HTTPS-FAQ.pdf"
 
-    此控件显示 PDF 文件。
+    The control shows the PDF file.
 
-    不知道如何[添加和配置控件](../add-configure-controls.md)？
-
+    Don't know how to [add and configure a control](../add-configure-controls.md)?
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
+
 并不支持 PDF 文档的所有辅助功能，因为“PDF 查看器”仍处于实验阶段。 因此，“ShowControls”应设置为“true”，以允许用户在外部应用程序中打开文档。
 
 了解如何通过 [WCAG 2.0](https://www.w3.org/TR/WCAG-TECHS/pdf.html) 和 [PDF/UA](https://www.pdfa.org/pdfua-the-iso-standard-for-universal-accessibility/) 标准创建可访问的 PDF 文档。

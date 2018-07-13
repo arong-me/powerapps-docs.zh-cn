@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 09/13/2017
 ms.author: fikaradz
-ms.openlocfilehash: 1a790627ad1dbd1bebecca84cb41ee29dcf148dd
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 1c8004fd615e5f706103ad4c364f7818dd1cb091
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329493"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898251"
 ---
 # <a name="combo-box-control-in-powerapps"></a>PowerApps 中的组合框控件
 用户可以在其中提供的选项之间进行选择的控件。  支持搜索和多重选择。
@@ -110,11 +110,11 @@ ms.locfileid: "32329493"
 * **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
 
     > [!NOTE]
-> 在触摸屏上，屏幕阅读器用户可以按顺序导航组合框中的内容。 组合框充当一个按钮，在选中时会显示或隐藏其内容。
+  > 在触摸屏上，屏幕阅读器用户可以按顺序导航组合框中的内容。 组合框充当一个按钮，在选中时会显示或隐藏其内容。
 
 ### <a name="keyboard-support"></a>键盘支持
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
 * 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness](properties-color-border.md)**”来实现此目的。
 
     > [!NOTE]
-> Tab 键可导航到组合框或离开组合框。 箭头键可导航组合框中的内容。 Esc 键在打开时会关闭下拉列表。
+  > Tab 键可导航到组合框或离开组合框。 箭头键可导航组合框中的内容。 Esc 键在打开时会关闭下拉列表。
