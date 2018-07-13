@@ -8,12 +8,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 000f15ea7b1fa4e11cbe49b44e57017daf973a89
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 8eb651bcd4ad9320dc8995864249f619bb76ab77
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552958"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896848"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-export-powerapps-customer-data"></a>响应对导出 PowerApps 客户数据的数据主体权限 (DSR) 请求
 “数据可移植性权限”允许数据主体以电子格式（这是一种结构化的、常用的、计算机可读和可互操作的格式）请求其个人数据副本，这些数据可能会传输给另一个数据控制者：
@@ -39,7 +39,7 @@ ms.locfileid: "34552958"
 PowerApps 用户设置、用户应用设置和通知 | | 应用创建者：可用 <br> 管理员：可用
 
 > ** 在引入 Common Data Service (CDS) for Apps 后，如果数据库是在环境中创建的，那么环境权限和模型驱动的应用权限会作为记录存储在 CDS for Apps 数据库实例中。 有关如何响应 CDS for Apps 用户的 DSR 请求的指导，请参阅[响应针对 Common Data Service for Apps 客户数据的数据主体权限 (DSR) 请求](common-data-service-gdpr-dsr-guide.md)。
-
+> 
 > ***只有当资源所有者明确授予访问权限时，管理员才能从 [PowerApps 门户](https://web.powerapps.com)访问这些资源。 如果没有对管理员授予访问权限，则其需要利用 [PowerApps 管理员 PowerShell cdmlet](https://go.microsoft.com/fwlink/?linkid=871804)。
 
 ## <a name="prerequisites"></a>先决条件

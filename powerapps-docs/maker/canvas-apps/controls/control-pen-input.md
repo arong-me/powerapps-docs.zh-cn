@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 84981a00a516f553d3f1b318f12a6f68064c66b2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 697752312810473158b4f8cdfed4ef1d7618fdb7
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31832162"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898343"
 ---
 # <a name="pen-input-control-in-powerapps"></a>PowerApps 中的笔输入控件
 用户可用其进行绘图、擦除和突出显示图像区域的控件。
@@ -101,7 +101,7 @@ ShowControls – 音频或视频播放器是否显示播放按钮和音量滑块
 * **[“AccessibleLabel”](properties-accessibility.md)** 应存在。
 
     > [!IMPORTANT]
-> 屏幕阅读器用户无法访问“笔输入”。 始终提供输入的替代形式。 例如，如果需要草图，请考虑添加 **[“添加图片”](control-add-picture.md)** 控件，以便用户上传图像。 可以提供这两种方法，用户可以选择他们更熟悉的一种方法。
+  > 屏幕阅读器用户无法访问“笔输入”。 始终提供输入的替代形式。 例如，如果需要草图，请考虑添加 **[“添加图片”](control-add-picture.md)** 控件，以便用户上传图像。 可以提供这两种方法，用户可以选择他们更熟悉的一种方法。
 
 ### <a name="keyboard-support"></a>键盘支持
 
