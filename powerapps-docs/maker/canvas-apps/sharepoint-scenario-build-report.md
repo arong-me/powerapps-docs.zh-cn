@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 01/10/2018
 ms.author: mblythe
-ms.openlocfilehash: 4863ee2c19c17eb8afcc8913dcfb5f3831af828c
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 7ab372f8e8a03da35752614905017e24672480b3
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31839099"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897699"
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>创建用于分析项目的 Power BI 报表
 > [!NOTE]
@@ -94,8 +94,8 @@ ms.locfileid: "31839099"
    
     ![删除列](./media/sharepoint-scenario-build-report/05-01-07-remove-column.png)
 3. 删除“Id”列后的两列，即“ServerRedirectedEmbedURL”和“ContentTypeId”列。 
-> [!TIP]
-> 按 Shift 键选择这两列，再单击或点击“删除列”。
+   > [!TIP]
+   > 按 Shift 键选择这两列，再单击或点击“删除列”。
 4. 删除“PMAssigned”列右侧的所有列（共 22 列）。 表应与下图一致：
    
     ![查询编辑器中的“项目详细信息”表](./media/sharepoint-scenario-build-report/05-01-08-table-details.png)

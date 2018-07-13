@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: b47e1b36ec86b2bf4ee2167b2599d583b97a0fbc
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 290f4447d7a5793677cfa426edac85963363a9d1
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837955"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896641"
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>PowerApps 中的 GroupBy 和 Ungroup 函数
 对[表](../working-with-tables.md)[记录](../working-with-tables.md#records)进行分组和取消分组。
@@ -51,7 +51,7 @@ GroupBy( Table, ColumnName1 [, ColumnName2, ... ], GroupColumnName )
 * GroupColumnName - 必需。  ColumnName 中不包含的记录数据存储的列名称。
   
     > [!NOTE]
-> 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
+  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
 
 Ungroup( Table, GroupColumnName )
 
@@ -59,7 +59,7 @@ Ungroup( Table, GroupColumnName )
 * GroupColumnName - 必需。 包含使用 **GroupBy** 函数设置的记录数据的列。
   
     > [!NOTE]
-> 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
+  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
 
 ## <a name="examples"></a>示例
 ### <a name="create-a-collection"></a>创建集合

@@ -1,23 +1,19 @@
 ---
 title: Color 枚举与 ColorFade、ColorValue 以及 RGBA 函数 | Microsoft 文档
 description: 有关 PowerApps 中的 Color 枚举与 ColorFade、ColorValue 以及 RGBA 函数的参考信息，包括语法和示例
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2015
 ms.author: gregli
-ms.openlocfilehash: f4eeabf5708fffa6881b84402280d5639d96cc0a
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 6615dfee8f7c867bb25c237633fe031d614d517d
+ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838662"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948632"
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>PowerApps 中的 Color 枚举与 ColorFade、ColorValue 以及 RGBA 函数
 使用内置颜色值，定义自定义颜色以及 Alpha 值混合处理。
@@ -51,6 +47,7 @@ ms.locfileid: "31838662"
 * *FadeAmount* - 必需。  介于 -1 和 1 之间的数字。  -1（使颜色完全变暗为黑色）、0（对颜色没有影响）和 1（使颜色完全变亮为白色）。  
 
 ## <a name="built-in-colors"></a>内置颜色
+
 | Color 枚举 | 带有十六进制代码的 ColorValue | RGBA | 颜色样本 |
 | --- | --- | --- | --- |
 | **Color.AliceBlue** |**ColorValue("#f0f8ff")** |**RGBA(240, 248, 255, 1)** |![艾丽斯蓝](./media/function-colors/color-aliceblue.png) |

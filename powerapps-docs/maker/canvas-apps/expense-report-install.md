@@ -12,12 +12,12 @@ ms.topic: sample
 ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: bce21a5fe07cb5bf608c36371a7cbe45e845b2ad
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9ce265df67dd980653766b7bf9d57376c671e18a
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330574"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899953"
 ---
 # <a name="install-and-configure-the-expense-report-powerapps-sample"></a>安装和配置支出报表 PowerApps 示例
 
@@ -241,23 +241,23 @@ ms.locfileid: "32330574"
 
 ## <a name="import-the-expense-report-powerapp"></a>导入支出报表 PowerApp
 
-1.  在 Web 浏览器中，导航到 https://web.powerapps.com。
-2.  使用注册所用的同一凭据登录。
-3.  在左侧菜单中，选择“应用”。 
-4.  单击“导入包(预览)”。
+1. 在 Web 浏览器中，导航到 https://web.powerapps.com。
+2. 使用注册所用的同一凭据登录。
+3. 在左侧菜单中，选择“应用”。 
+4. 单击“导入包(预览)”。
     
-    ![“导入包”屏幕](./media/expense-report-install/import-package.png)
+   ![“导入包”屏幕](./media/expense-report-install/import-package.png)
 
-5.  单击“上传”按钮，选择前面步骤中下载的 PowerApp 包。
-6.  对于“应用”和“流”资源类型，将“导入设置”设置为“新建”。
-7.  对于“SharePoint”和“Outlook”连接，将“导入设置”设置为“在导入期间选择”。
+5. 单击“上传”按钮，选择前面步骤中下载的 PowerApp 包。
+6. 对于“应用”和“流”资源类型，将“导入设置”设置为“新建”。
+7. 对于“SharePoint”和“Outlook”连接，将“导入设置”设置为“在导入期间选择”。
     
-    ![“导入设置”屏幕](./media/expense-report-install/import-settings.png)
+   ![“导入设置”屏幕](./media/expense-report-install/import-settings.png)
 
-8.  单击“SharePoint 连接”对应的“红色图标”。
-9.  在连接列表中，单击带有用户名的项。
+8. 单击“SharePoint 连接”对应的“红色图标”。
+9. 在连接列表中，单击带有用户名的项。
 
-    ![“导入设置”屏幕](./media/expense-report-install/import-settings-sharepoint.png)
+   ![“导入设置”屏幕](./media/expense-report-install/import-settings-sharepoint.png)
 
 10. 单击“保存”。
 11. 单击“已批准连接”对应的红色图标。
@@ -265,9 +265,9 @@ ms.locfileid: "32330574"
 
     ![“导入设置”屏幕](./media/expense-report-install/import-settings-approvals.png)
 
-13.  单击“保存”。
-14.  单击“Office 365 Outlook 连接”对应的“红色图标”。
-15.  在连接列表中，单击带有用户名的项。
+13. 单击“保存”。
+14. 单击“Office 365 Outlook 连接”对应的“红色图标”。
+15. 在连接列表中，单击带有用户名的项。
 
     ![“导入设置”屏幕](./media/expense-report-install/import-settings-office365outlook.png)
 
@@ -383,7 +383,7 @@ ms.locfileid: "32330574"
 
 [![支出报表安装视频](./media/expense-report-install/expense-report-demo-video.png)](https://youtu.be/h6E9cdrOvMU)
 
-##<a name="next-steps"></a>后续步骤
+## <a name="next-steps"></a>后续步骤
 - [自定义 SharePoint 列表窗体](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/customize-list-form)
 - [添加并配置控件](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/add-configure-controls)
 - [编辑和管理 SharePoint 列表或库的权限](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)

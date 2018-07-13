@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: d0b2ff351f7026967359f1b4d386a71d7ed5441f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 02664d3715b2e5b43a56a041e9de8b294559a862
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838708"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899148"
 ---
 # <a name="patch-function-in-powerapps"></a>PowerApps 中的 Patch 函数
 在[数据源](../working-with-data-sources.md)中修改或创建一条或多条[记录](../working-with-tables.md#records)，或者合并数据源外的记录。
@@ -102,6 +102,7 @@ ms.locfileid: "31838708"
 ![](media/function-patch/icecream-after.png)
 
 #### <a name="merge-records-outside-of-a-data-source"></a>合并数据源外的记录
+
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Patch(&nbsp;{&nbsp;Name:&nbsp;"James",&nbsp;Score:&nbsp;90&nbsp;}, {&nbsp;Name:&nbsp;"Jim",&nbsp;Passed:&nbsp;true&nbsp;} )** |合并数据源外的两条记录：<br><ul><li>两条记录的 **Name** 列中的值不相同。 结果包含离参数列表的末尾更近的记录中的值 (**Jim**)，而不是离开头更近的记录中的值 (**James**)。</li><li>第一条记录包含第二条记录中不存在的一列 (**Score**)。 结果包含这一列及其值 (**90**)。</li><li>第二条记录包含第一条记录中不存在的一列 (**Passed**)。 结果包含这一列及其值 (**true**)。 |{&nbsp;Name:&nbsp;"Jim", Score:&nbsp;90, Passed:&nbsp;true&nbsp;} |

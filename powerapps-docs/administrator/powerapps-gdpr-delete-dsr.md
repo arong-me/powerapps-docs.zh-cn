@@ -8,12 +8,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 495d9976b1daa6e7adb20d97c0840b3a1ba90c4b
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: d518cbf398d0f29b25da9dafcfa6e9026fcee88e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552682"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897170"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-delete-powerapps-customer-data"></a>响应对删除 PowerApps 客户数据的数据主体权限 (DSR) 请求
 
@@ -72,15 +72,15 @@ PowerApps 允许用户生成业务线应用程序，这些应用程序是组织�
 1. 在浏览器中打开以下 URL，确保在 URL 中替换电子邮件地址：https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1
 
 2. 如果你是“非托管租户”的成员，则将会在响应中看到 `"IsViral": true`。
-```
-{
-  ...
-  "Login": "foobar@unmanagedcontoso.com",
-  "DomainName": "unmanagedcontoso.com",
-  "IsViral": true,
-  ...
-}
-```
+   ```
+   {
+   ...
+   "Login": "foobar@unmanagedcontoso.com",
+   "DomainName": "unmanagedcontoso.com",
+   "IsViral": true,
+   ...
+   }
+   ```
 
 3. 否则，你就属于“托管的租户”。
 

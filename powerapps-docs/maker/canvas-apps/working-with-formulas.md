@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: e4c2f78fb00e726bd0b0bf3cde4fe4f42d40dddc
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ed4e83fab0cf5a08c4b274863f11070471fc44a4
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330873"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898689"
 ---
 # <a name="get-started-with-formulas"></a>公式入门
 为应用配置公式，不仅用于计算值和执行其他任务（与在 Excel 中的操作一样），还能（根据应用需求）响应用户输入。
@@ -70,7 +70,7 @@ ms.locfileid: "32330873"
     在 Excel 中，可以显示一个数字，如 **42**，方法是将其键入一个单元格或键入用于解析到该数字的公式，如 **=SUM(30,12)**。 在 PowerApps 中，可以将标签等控件的“Text”属性设置为“42”或“Sum(30,12)”，从而达到同样的效果。 无论在工作表或应用中进行了其他何种更改，单元格和标签始终都会显示此数字。
    
     > [!NOTE]
-> 在 PowerApps 中，并不在公式前使用等号或加号，这一点与在 Excel 中不同。 默认情况下，编辑栏将在该处键入的任何内容均视为一个公式。 此外，也不使用双引号 (") 将公式括起来（在之前的操作中使用它指定文本的字符串）。
+   > 在 PowerApps 中，并不在公式前使用等号或加号，这一点与在 Excel 中不同。 默认情况下，编辑栏将在该处键入的任何内容均视为一个公式。 此外，也不使用双引号 (") 将公式括起来（在之前的操作中使用它指定文本的字符串）。
 5. 在标签的“[Text](controls/properties-core.md)”属性中，将“"Hello World"”替换成“Sum(1,2,3)”。
    
     ![键入部分函数 Sum(1,2,3（不加右括号）显示错误](./media/working-with-formulas/label-sum-partial.png)
@@ -98,7 +98,7 @@ ms.locfileid: "32330873"
 1. 将标签的“[Color](controls/properties-color-border.md)”属性设置为以下公式：<br>**If( Value(TextBox1.Text) < 0, Red, Black )**
    
     > [!NOTE]
-> 在公式中，通过提供控件名称且后跟句点和属性名，指定控件的属性。 例如，通过键入 **TextBox1.Text** 指定 **TextBox1** 的 **[Text](controls/properties-core.md)** 属性。
+   > 在公式中，通过提供控件名称且后跟句点和属性名，指定控件的属性。 例如，通过键入 **TextBox1.Text** 指定 **TextBox1** 的 **[Text](controls/properties-core.md)** 属性。
    
     ![PowerApps 基于值重新计算更改标签颜色的图示](./media/working-with-formulas/recalc-color1.png)
 2. 在 **TextInput1** 和 **TextInput2** 中，指定两个数字（这两个数字在相加后的结果为负数）。

@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2016
 ms.author: lanced
-ms.openlocfilehash: e11521219fcd368801a6e943f45dbc713309ec36
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: d8d5e29fc7f1c551ac637d86886bc658e7414110
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803411"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897998"
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>从 PowerApps 连接到 SQL Server
 ![SQL Server 图标](./media/connection-azure-sqldatabase/sqlicon.png)
@@ -33,7 +33,7 @@ ms.locfileid: "34803411"
 * 对于本地数据库，标识与你共享的[数据网关](../gateway-management.md)（或创建一个数据网关）。
   
     > [!NOTE]
-> 只能在用户的[默认环境](../working-with-environments.md)中创建和使用网关和本地连接。
+  > 只能在用户的[默认环境](../working-with-environments.md)中创建和使用网关和本地连接。
 
 ## <a name="generate-an-app-automatically"></a>自动生成应用
 1. 在 PowerApps Studio 中，单击或点击“文件”菜单（沿左边缘）上的“新建”。
@@ -54,7 +54,7 @@ ms.locfileid: "34803411"
        ![连接到本地数据库](./media/connection-azure-sqldatabase/connect-onprem.png)
      
        > [!NOTE]
-> 如果没有网关，可以先[安装网关](../gateway-reference.md)，再单击或点击“刷新网关列表”。
+     > 如果没有网关，可以先[安装网关](../gateway-reference.md)，再单击或点击“刷新网关列表”。
 6. 单击或点击“连接”。
 7. 单击或点击“选择数据集”下的选项，单击或点击“选择表”下的选项，然后单击或点击“连接”。
    
@@ -77,7 +77,7 @@ ms.locfileid: "34803411"
        ![连接到 Azure 中的数据库](./media/connection-azure-sqldatabase/connect-onprem-portal.png)
      
        > [!NOTE]
-> 如果没有网关，可以先[安装网关](../gateway-reference.md)，再单击或点击顺时针图标来刷新列表。
+     > 如果没有网关，可以先[安装网关](../gateway-reference.md)，再单击或点击顺时针图标来刷新列表。
 5. 单击或点击“创建”以创建连接。
 6. 通过使用类似[从头开始创建应用](../get-started-create-from-blank.md)中介绍的技术来创建应用。
 
@@ -98,7 +98,7 @@ ms.locfileid: "34803411"
        ![连接到 Azure 中的数据库](./media/connection-azure-sqldatabase/connect-onprem-fromblank.png)
      
        > [!NOTE]
-> 如果没有网关，可以先[安装网关](../gateway-reference.md)，再单击或点击圆形图标来刷新列表。
+     > 如果没有网关，可以先[安装网关](../gateway-reference.md)，再单击或点击圆形图标来刷新列表。
 6. 单击或点击“连接”。
 7. 单击或点击“选择数据集”下的选项。
 8. 在“**选择表**”下，选中一个或多个复选框，然后单击或点击“连接”。

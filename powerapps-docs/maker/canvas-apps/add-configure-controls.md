@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 07/10/2017
 ms.author: anneta
-ms.openlocfilehash: 702be2a4f1747b6f3303d1add30d9157f5665ee7
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c3b1fb9802541159726a33cacd07c6f9743de0e2
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330460"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896687"
 ---
 # <a name="add-and-configure-a-control-in-powerapps"></a>在 PowerApps 中添加和配置控件
 将各种 UI 元素添加到应用中，然后直接在“属性”选项卡的工具栏或编辑栏中配置其各方面外观和行为。 这些 UI 元素称为“控件”，配置的各方面外观和行为称为“属性”。
@@ -68,7 +68,7 @@ ms.locfileid: "32330460"
     ![选择的标签](./media/add-configure-controls/selected-text-box.png)
 
     > [!IMPORTANT]
-> 如果先选择了一个控件，然后又选择了另一个控件或屏幕的空白区域，那么系统将不再选择第一个元素。
+   > 如果先选择了一个控件，然后又选择了另一个控件或屏幕的空白区域，那么系统将不再选择第一个元素。
 2. 向左拖动选择框右边缘上的图柄，缩窄“标签”控件。 （只有在放大时，才能看到中间的图柄。）
 
     ![重设大小的标签](./media/add-configure-controls/shorter-text-box.png)
@@ -173,7 +173,7 @@ ms.locfileid: "32330460"
     ![Today 函数](./media/add-configure-controls/today-function.png)
 
     > [!TIP]
-> 除了能够执行计算之外，还可以通过多种方式[设置日期和时间的格式](show-text-dates-times.md)。
+   > 除了能够执行计算之外，还可以通过多种方式[设置日期和时间的格式](show-text-dates-times.md)。
 
 ## <a name="configure-two-controls-to-interact-with-each-other"></a>将两个控件配置为相互交互
 在此过程中，将添加一个复选框，然后将现有标签配置为仅在复选框处于选中状态时显示。

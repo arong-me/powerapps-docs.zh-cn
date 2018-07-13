@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: 8a763565ff8b48f95f68bdfd91fc21382ad9338f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 8c96a83ae67a8a06aa96b4f4ba091e361430683d
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31827818"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896112"
 ---
 # <a name="share-excel-data-used-by-your-app"></a>共享应用中使用的 Excel 数据
 在[云帐户](connections/cloud-storage-blob-connections.md)（如 OneDrive）中可以与你的应用用户们共享 Excel 数据。
@@ -48,7 +48,7 @@ ms.locfileid: "31827818"
     ![共享命令](./media/share-app-data/onedrive-share.png)
    
     > [!NOTE]
-> 在 OneDrive for Business 中，共享文件本身，而不是包含此文件的文件夹。
+   > 在 OneDrive for Business 中，共享文件本身，而不是包含此文件的文件夹。
 3. 在对话框中，选择“电子邮件”。
    
     ![通过电子邮件共享](./media/share-app-data/onedrive-email.png)

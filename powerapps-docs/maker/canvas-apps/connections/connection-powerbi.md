@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/12/2016
 ms.author: lanced
-ms.openlocfilehash: a3a5d24efffd7cd3c9430cafd5050dc96632ee76
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 0666350b9c60fdd3a1ed9cb2a3e7fa7b46bdd683
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803158"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896871"
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>从 PowerApps 连接到 Power BI
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
@@ -30,7 +30,7 @@ Power BI 是一套用于分析数据和共享见解的业务分析工具。 通�
 ### <a name="list-the-alerts-that-youve-set-up-in-the-power-bi-service"></a>列出在 Power BI 服务中设置的警报
 1. 在“**插入**”菜单上，选择“**库**”，并添加任意“**文本库**”。
 2. 若要显示当前用户的警报，将库的 [Items](../controls/properties-core.md) 属性设置为以下公式：
-   
+
    `PowerBI.GetAlerts()`
 
 库中将会更新警报列表。 对于每条警报，都将收到警报的名称、警报的 ID 号，以及配置警报的组工作区的 ID。 通过警报 ID，可以获取有关该警报的更多信息。
@@ -64,6 +64,7 @@ Power BI 是一套用于分析数据和共享见解的业务分析工具。 通�
 无。
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 值 |数组 |否 |在 Power BI 服务中设置的数据警报的数组。 每个数组中的元素将包括： <ul><li>alertTitle：警报的标题</li><li>alertId：警报的 ID</li><li>groupId：创建警报的组的 ID</li></ul> |
@@ -75,11 +76,13 @@ Power BI 是一套用于分析数据和共享见解的业务分析工具。 通�
 > 如果调用过于频繁，将会在每次发出警报时限制对此终结点的请求。
 
 #### <a name="input-properties"></a>输入属性
+
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | alertId |整数 |是 |由 GetAlerts 返回的警报的 ID |
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | tileValue |number |否 |触发警报时的磁贴值 |

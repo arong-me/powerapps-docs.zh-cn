@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: a9cd26ad41ceaa5b94678a3ef87bf0ab6dda98a1
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: bf66c1f7596b8a3ef4c8495db3f0ac2af8165d8c
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330666"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899677"
 ---
 # <a name="understand-data-forms-in-microsoft-powerapps"></a>了解 Microsoft PowerApps 中的数据窗体
 添加三种类型的控件，使用户能够浏览记录、显示有关记录的详细信息，以及编辑或创建记录：
@@ -157,7 +157,7 @@ PowerApps 可以根据指定的数据源自动生成应用。 每个应用包含
 * 从头开始创建一个手机应用，并[将其连接到数据源](add-data-connection.md)。
   
     > [!NOTE]
-> 虽然平板电脑应用非常相似，但不妨使用不同的[屏幕布局](#screen-design)，以充分利用多余的屏幕空间。
+  > 虽然平板电脑应用非常相似，但不妨使用不同的[屏幕布局](#screen-design)，以充分利用多余的屏幕空间。
   
     本主题余下部分中的示例基于名为 **Ice Cream** 的数据源。
 

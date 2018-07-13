@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 05/01/2016
 ms.author: mblythe
-ms.openlocfilehash: 70200430b0cee7356d70795440b908a8837ba18d
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 324fa80060a7c07bd5f0708df9fdabdbe7893236
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33078411"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899470"
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps 社区计划：供个人使用的免费开发环境
 若要掌握技能并详细了解 PowerApps、Microsoft Flow 和 Common Data Service，PowerApps 社区计划是你的不二之选。 PowerApps 社区计划提供了供个人使用的免费开发环境，你可以在其中：
@@ -77,6 +77,7 @@ ms.locfileid: "33078411"
 \*\*使用 Common Data Service 创建数据库目前在单独环境中不可行，但很快会再次提供此功能。 如果之前创建了数据库，则可以继续使用它，而不会有任何问题。 
 
 ## <a name="what-are-the-capacity-limits-for-the-individual-environment"></a>个人环境的容量上限是多少？
+
 | **容量** |  |
 | --- | --- |
 | 流运行次数/月 |750 |

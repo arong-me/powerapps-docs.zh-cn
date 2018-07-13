@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 3100ebae3d3f9b7cdef839d74e9d289b4059de5d
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 7f78cc61b4e6af34af7bf6944e70e783872bc255
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838455"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897492"
 ---
 # <a name="text-input-control-in-powerapps"></a>PowerApps 中的文本输入控件
 用户可在其中键入文本、数字和其他数据的框。
@@ -149,17 +149,23 @@ ms.locfileid: "31838455"
 6. （可选）向集合添加更多名称，然后按 Esc 返回到默认工作区。
 
 ### <a name="prompt-for-a-password"></a>提示输入密码
+
 1. 添加文本输入控件，将其命名为 **inputPassword**，并将其 **Mode** 属性设置为 **Password**。
-2. 添加一个标签，然后将其 **[Text](properties-core.md)** 属性设置为以下公式：<br>
+
+1. 添加一个标签，然后将其 **[Text](properties-core.md)** 属性设置为以下公式：<br>
    **If(inputPassword.Text = "P@ssw0rd", "Access granted", "Access denied")**
-   
+
     想要详细了解 [If](../functions/function-if.md) 函数或[其他函数](../formula-reference.md)吗？
-3. 按 F5，然后在 **inputPassword** 中键入 **P@ssw0rd**。
-   
+
+1. 按 F5，然后在 **inputPassword** 中键入 **P@ssw0rd**。
+
     密码键入完毕后，标签不再显示“拒绝访问”，而会显示“已授予访问权限”。
-4. 若要返回到默认工作区，请按 Esc 键。
-5. （可选）添加一个控件（如箭头），配置它以导航到另一个屏幕，且仅在用户键入密码后才显示。
-6. （可选）添加一个按钮，配置其 **[Text](properties-core.md)** 属性，使其显示**登录**，添加一个计时器，如果用户键入错误的密码，则禁用输入文本控件一段时间，然后单击或点击“登录”按钮。
+
+1. 若要返回到默认工作区，请按 Esc 键。
+
+1. （可选）添加一个控件（如箭头），配置它以导航到另一个屏幕，且仅在用户键入密码后才显示。
+
+1. （可选）添加一个按钮，配置其 **[Text](properties-core.md)** 属性，使其显示**登录**，添加一个计时器，如果用户键入错误的密码，则禁用输入文本控件一段时间，然后单击或点击“登录”按钮。
 
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则

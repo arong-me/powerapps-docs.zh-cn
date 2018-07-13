@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 8dc68646808e40792d3e55aa9ac547aa43a78efb
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c916784df877b1228fd8d9322a80ccccdc61967f
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31827335"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897883"
 ---
 # <a name="savedata-and-loaddata-functions-in-powerapps"></a>PowerApps 中的 SaveData 和 LoadData 函数
 保存并重新加载[集合](../working-with-data-sources.md#collections)。
@@ -39,6 +39,7 @@ ms.locfileid: "31827335"
 * *IgnoreNonexistentFile* - 可选。 指明 **LoadData** 函数在找不到匹配文件时是应显示还是应忽略错误的布尔值 (**true**/**false**)。 如果指定“false”，将显示错误。 如果指定“true”，将忽略错误，这适用于脱机方案。 如果设备处于脱机状态（即，“Connection.Connected”状态为“false”），**SaveData** 可能会创建文件。
 
 ## <a name="examples"></a>示例
+
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **If(Connection.Connected, ClearCollect(LocalTweets, Twitter.SearchTweet("PowerApps", {maxResults: 100})),LoadData(LocalTweets, "Tweets", true))** |如果设备处于联机状态，将从 Twitter 服务加载“LocalTweets”集合；否则，将从本地文件缓存加载集合。 |无论设备处于联机状态还是脱机状态，内容都会呈现。 |

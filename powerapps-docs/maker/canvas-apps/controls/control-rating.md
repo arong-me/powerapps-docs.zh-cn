@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 1df75e5de1f0d8a2515b4dcf761593145d72f70a
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 2cdf88c21e9cd8dd957fa5cf704280df325e85fd
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834644"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898297"
 ---
 # <a name="rating-control-in-powerapps"></a>PowerApps 中的评分控件
 用户可以用于指示介于 1 和你指定的最大数之间的值的控件。
@@ -105,7 +105,7 @@ ms.locfileid: "31834644"
 * **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
 
     > [!NOTE]
-> 屏幕阅读器将“评级”控件视为单选按钮。
+  > 屏幕阅读器将“评级”控件视为单选按钮。
 
 ### <a name="keyboard-support"></a>键盘支持
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
@@ -113,4 +113,4 @@ ms.locfileid: "31834644"
 * 如果有太多星级，则考虑使用不同控件。 使用键盘导航可能会很繁琐，而且很难用触摸屏精确地选择。
 
     > [!NOTE]
-> 单选按钮的相同键盘交互可以在“评级”上使用。
+  > 单选按钮的相同键盘交互可以在“评级”上使用。

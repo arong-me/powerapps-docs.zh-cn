@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/06/2017
 ms.author: sharik
-ms.openlocfilehash: d24777ec34759a98421784995f5a73b0dfc1d2d2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a68986c39ffe251f55c10a26386c8430398d2718
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826240"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895813"
 ---
 # <a name="show-edit-or-add-a-record-from-a-table-in-powerapps"></a>在 PowerApps 中显示、编辑或添加表中的记录
 若要显示记录中的所有字段，请添加和配置[“显示窗体”](controls/control-form-detail.md)控件。 若要编辑记录中的任意字段（或添加记录），并将更改保存回数据源，请添加和配置[“编辑窗体”](controls/control-form-detail.md)控件。
@@ -36,7 +36,7 @@ ms.locfileid: "31826240"
     **FlooringEstimates.Name**
 
     > [!NOTE]
-> 如果不确定如何添加控件、重命名控件或设置属性，请参阅[添加和配置控件](add-configure-controls.md)。
+   > 如果不确定如何添加控件、重命名控件或设置属性，请参阅[添加和配置控件](add-configure-controls.md)。
 
     此列表显示数据源中地面材料产品的名称。
 
@@ -45,7 +45,7 @@ ms.locfileid: "31826240"
     ![添加表单](./media/add-form/add-a-form.png)
 
     > [!NOTE]
-> 虽然本主题介绍的是“编辑表单”控件，但类似做法准则也适用于“显示表单”控件。
+   > 虽然本主题介绍的是“编辑表单”控件，但类似做法准则也适用于“显示表单”控件。
 
 3. 将此窗体的“[DataSource](controls/control-form-detail.md)”属性设为“FlooringEstimates”，并将此窗体的“[Item](controls/control-form-detail.md)”属性设为以下公式：
 
@@ -56,7 +56,7 @@ ms.locfileid: "31826240"
 4. 在“数据”窗格中，单击或点击每个字段对应的复选框，以便显示相应字段。
 
     > [!NOTE]
-> 如果“数据”窗格已关闭，请打开它，具体方法为选择左侧窗格中的表单，再单击或点击右侧窗格中的“数据”。
+   > 如果“数据”窗格已关闭，请打开它，具体方法为选择左侧窗格中的表单，再单击或点击右侧窗格中的“数据”。
 
     ![显示窗体上的字段](./media/add-form/checkbox.png)
 

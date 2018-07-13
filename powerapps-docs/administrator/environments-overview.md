@@ -8,12 +8,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 4973265baf701851ac5c2e8bca9da541b246c068
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 4e12faf91b0ce19a4d2ef2ba2e4d9bbca8fb7093
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34167783"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896296"
 ---
 # <a name="environments-overview"></a>环境概述
 环境是用来存储、管理和共享组织的业务数据、应用和流的空间。 还可以将环境用作分隔具有不同角色、安全要求或目标受众的应用的容器。 环境的使用方式视组织和要生成的应用而定。 例如：
@@ -39,13 +39,13 @@ ms.locfileid: "34167783"
 
 * 环境管理员角色可以执行所有环境管理操作，包括以下操作：
 
-    * 授予或撤销用户或组的“环境管理员”或“环境创建者”角色
+  * 授予或撤销用户或组的“环境管理员”或“环境创建者”角色
 
-    * 为环境预配 Common Data Service 数据库
+  * 为环境预配 Common Data Service 数据库
 
-    * 查看和管理在环境中创建的所有资源
+  * 查看和管理在环境中创建的所有资源
 
-    * 设置数据丢失防护策略。 有关详细信息，请参阅[数据丢失防护策略](prevent-data-loss.md)。
+  * 设置数据丢失防护策略。 有关详细信息，请参阅[数据丢失防护策略](prevent-data-loss.md)。
 
     在环境中创建数据库后，可以使用系统管理员角色，而不是环境管理员角色。
 

@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: 386ecbd360dc13c21d48e0c134a87e8b7d007547
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a4bafb954b5723e813fade2ee633a51f4d8385e0
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830170"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895859"
 ---
 # <a name="change-app-name-and-icon-in-powerapps"></a>在 PowerApps 中更改应用名称和图标
 通过更改名称和磁贴自定义应用。
@@ -46,7 +46,7 @@ ms.locfileid: "31830170"
 * 单击或点击“**浏览文件**”，再单击或点击想要使用的图像，然后单击或点击“**打开**”。
 
     > [!NOTE]
-> 为获得最佳结果，请使用方形图标。
+  > 为获得最佳结果，请使用方形图标。
 
 ## <a name="next-step"></a>下一步
 在“**文件**”菜单上，单击或点击“**保存**”，以重新发布采用新设置的应用。

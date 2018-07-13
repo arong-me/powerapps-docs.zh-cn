@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: e0186e0f1f8b1396f2fb90cfffae8e38aacb1ac1
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ed454b6656971adb4c209d2dd9a59e5258ef8eac
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826996"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898136"
 ---
 # <a name="delete-an-app-from-powerapps"></a>从 PowerApps 中删除应用
 本文演示如何从 PowerApps 帐户及任何与应用共享的人的帐户中删除应用。
@@ -31,7 +31,7 @@ ms.locfileid: "31826996"
     ![](./media/delete-app/filter-list.png)
    
     > [!NOTE]
-> 如果看不到要删除的应用，请确保所处环境正确无误。
+   > 如果看不到要删除的应用，请确保所处环境正确无误。
 3. 在右边缘附近，单击或点击要删除的应用的信息图标。
    
     ![](./media/delete-app/app-options.png)
@@ -40,11 +40,11 @@ ms.locfileid: "31826996"
     ![](./media/delete-app/delete-icon.png)
    
     > [!NOTE]
-> 必须拥有对应用的参与者权限，才能删除应用。
+   > 必须拥有对应用的参与者权限，才能删除应用。
 5. 在显示的对话框中，单击或点击“从云删除”。  
    
     > [!IMPORTANT]
-> 这样操作不仅会从你的帐户中永久删除此应用，还会从与其共享此应用的所有用户帐户中删除它。
+   > 这样操作不仅会从你的帐户中永久删除此应用，还会从与其共享此应用的所有用户帐户中删除它。
    
     ![](./media/delete-app/delete-button.png)
 

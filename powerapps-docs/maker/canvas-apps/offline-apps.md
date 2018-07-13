@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: e73324d6cfce5edf7ece0350b2047dc7842373bb
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: d374ec8459f4182b11ecf91e28af24a31bb6c055
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836760"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896825"
 ---
 # <a name="develop-offline-capable-apps-with-powerapps"></a>使用 PowerApps 开发可脱机运行的应用
 作为移动应用开发者，最常遇到的情境之一是，让用户能够在联网受限或根本无法联网的情况下高效工作。 PowerApps 提供了一系列功能和行为，有助于开发可脱机运行的应用。 你可以：
@@ -41,19 +41,19 @@ PowerApps 最有趣的方面之一是，它提供一系列功能和公式，以�
 粗略来看，此应用执行以下操作：
 
 1. 当此应用启动时（以第一屏幕的“OnVisible”属性为依据）：
-   
+
    * 如果设备处于联机状态，我们会直接访问 Twitter 连接器来提取数据，然后在集合中填充这些数据。
    * 如果设备处于脱机状态，我们会使用 [LoadData](../canvas-apps/functions/function-savedata-loaddata.md) 从本地缓存文件加载数据。
    * 我们允许用户提交推文 - 在联机状态下，我们会将推文直接发布到 Twitter，并刷新本地缓存。
 2. 在联机状态下，我们每 5 分钟会执行一次以下操作：
-   
+
    * 发布我们在本地缓存中存储的所有推文。
    * 刷新本地缓存，并使用 [SaveData](../canvas-apps/functions/function-savedata-loaddata.md) 进行保存。
 
 ### <a name="step-1-create-a-new-phone-app"></a>第 1 步：新建手机应用
 1. 打开 PowerApps Studio。
 2. 依次单击或点击“新建” > “空白应用” > “手机布局”。
-   
+
     ![空白应用 -> 手机布局](./media/offline-apps/blank-app.png)
 
 ### <a name="step-2-add-a-twitter-connection"></a>第 2 步：添加 Twitter 连接
@@ -63,7 +63,7 @@ PowerApps 最有趣的方面之一是，它提供一系列功能和公式，以�
 2. 单击或点击“新建连接”，选择“Twitter”，然后单击或点击“创建”。
 
 3. 输入凭据，然后创建连接。
-   
+
     ![添加 Twitter 连接](./media/offline-apps/twitter-connection.png)
 
 ### <a name="step-3-load-tweets-into-a-localtweets-collection-on-app-startup"></a>第 3 步：在此应用启动时将推文加载到“LocalTweets”集合中
@@ -127,20 +127,20 @@ If (Connection.Connected, "Connected", "Offline")
 ### <a name="step-7-add-a-button-to-post-the-tweet"></a>第 7 步：添加用于发布推文的按钮
 1. 添加一个“按钮”控件，然后将“Text”属性设置为“Tweet”。
 2. 将“OnSelect”属性设置为以下公式：
-   
+
     ```
     If (Connection.Connected,
-   
+
         Twitter.Tweet("", {tweetText: NewTweetTextInput.Text}),
-   
+
         Collect(LocalTweetsToPost, {tweetText: NewTweetTextInput.Text});
-   
+
         SaveData(LocalTweetsToPost, "LocalTweetsToPost")
-   
+
     );
-   
+
     UpdateContext({resetNewTweet: true});
-   
+
     UpdateContext({resetNewTweet: false})
     ```  
 
@@ -159,18 +159,18 @@ If (Connection.Connected, "Connected", "Offline")
 * 将“AutoStart”属性设置为“true”。
 
 * 将“OnTimerEnd”设置为以下公式：
-  
+
     ```
     If(Connection.Connected,
-  
+
         ForAll(LocalTweetsToPost, Twitter.Tweet("", {tweetText: tweetText}));
-  
+
         Clear(LocalTweetsToPost);
-  
+
         Collect(LocalTweetsToPost, {tweetText: NewTweetTextInput.Text});
-  
+
         SaveData(LocalTweetsToPost, "LocalTweetsToPost");
-  
+
         UpdateContext({statusText: "Online data"})
     )
     ```

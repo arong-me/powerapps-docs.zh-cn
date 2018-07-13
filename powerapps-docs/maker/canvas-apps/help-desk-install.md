@@ -12,12 +12,12 @@ ms.topic: sample
 ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 4601cabae10f3373f8d2ef18190d71af536811b5
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: e7ed897af79831f9d8db7ae6da6719b3e6977807
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34470034"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896963"
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>安装和配置技术支持 PowerApps 示例
 
@@ -173,27 +173,27 @@ ms.locfileid: "34470034"
 
 ## <a name="import-the-help-desk-powerapp"></a>导入技术支持 PowerApp
 
-1.  在 Web 浏览器中，导航到 https://web.powerapps.com。
-2.  使用注册所用的同一凭据登录。
-3.  在左侧菜单中，选择“应用”。 
-4.  单击“导入包(预览)”。
+1. 在 Web 浏览器中，导航到 https://web.powerapps.com。
+2. 使用注册所用的同一凭据登录。
+3. 在左侧菜单中，选择“应用”。 
+4. 单击“导入包(预览)”。
     
-    ![“导入包”屏幕](./media/help-desk-install/import-package.png)
+   ![“导入包”屏幕](./media/help-desk-install/import-package.png)
 
-5.  单击“上传”按钮，选择前面步骤中下载的 PowerApp 包。
-6.  对于“应用”和“流”资源类型，将“导入设置”设置为“新建”。
-7.  对于“SharePoint”和“Outlook”连接，将“导入设置”设置为“在导入期间选择”。
+5. 单击“上传”按钮，选择前面步骤中下载的 PowerApp 包。
+6. 对于“应用”和“流”资源类型，将“导入设置”设置为“新建”。
+7. 对于“SharePoint”和“Outlook”连接，将“导入设置”设置为“在导入期间选择”。
     
-    ![“导入设置”屏幕](./media/help-desk-install/import-settings.png)
+   ![“导入设置”屏幕](./media/help-desk-install/import-settings.png)
 
-8.  单击“SharePoint 连接”对应的“红色图标”。
-9.  在连接列表中，单击带有用户名的项。
+8. 单击“SharePoint 连接”对应的“红色图标”。
+9. 在连接列表中，单击带有用户名的项。
 
-    ![“导入设置”屏幕](./media/help-desk-install/import-settings-sharepoint.png)
+   ![“导入设置”屏幕](./media/help-desk-install/import-settings-sharepoint.png)
 
 10. 单击“保存”。
-11.  单击“Office 365 Outlook 连接”对应的“红色图标”。
-12.  在连接列表中，单击带有用户名的项。
+11. 单击“Office 365 Outlook 连接”对应的“红色图标”。
+12. 在连接列表中，单击带有用户名的项。
 
     ![“导入设置”屏幕](./media/help-desk-install/import-settings-office365outlook.png)
 
@@ -245,9 +245,9 @@ ms.locfileid: "34470034"
 
     ![更新管理员列表](./media/help-desk-install/Change-admin.png)
     
-    > [!TIP] 
-    > 如果有多个管理员，请使用逗号分隔。示例："admin1@microsoft.com","admin2@microsoft.com"。
-    > 为了确保 AdminList 中的地址与 PowerApps 要求的格式匹配，请选择“视图”>“变量”>“全局”>“MyProfile”，并查看“电子邮件”列，检查要求的电子邮件格式。
+   > [!TIP]
+   > 如果有多个管理员，请使用逗号分隔。示例："admin1@microsoft.com","admin2@microsoft.com"。
+   > 为了确保 AdminList 中的地址与 PowerApps 要求的格式匹配，请选择“视图”>“变量”>“全局”>“MyProfile”，并查看“电子邮件”列，检查要求的电子邮件格式。
 
 5. 单击“文件”。
 6. 单击“保存”。

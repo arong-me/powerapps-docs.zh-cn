@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 11/11/2017
 ms.author: ankitsar
-ms.openlocfilehash: 69e3baaa769282ca8ac7372ba3360829a1624f3d
-ms.sourcegitcommit: 6bfb002180148a3f22a4d1d8d750fc442489ebe4
+ms.openlocfilehash: f8f21235170483c908149898f92b57cc6c2cb9aa
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35291734"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896411"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>了解 SharePoint 窗体集成
 现在可以在 PowerApps 中轻松[自定义任何 SharePoint 列表窗体](customize-list-form.md)。 在本文中，我们将详细演示这些窗体的工作原理，以及如何对其作进一步的自定义。
@@ -66,7 +66,7 @@ ms.locfileid: "35291734"
 
     * OnCancel - 重置对 SharePointForm1 的更改。 如果用户在 SharePoint 中单击或点击“取消”，SharePoint 始终都会隐藏表单。
 
-        SubmitForm(SharePointForm1)
+        **ResetForm(SharePointForm1)**
 
 这些默认值可确保表单能够在 SharePoint 中正常运行，即当用户在 SharePoint 中与表单交互时，它们会更改 PowerApps 表单模式，并确保将更改提交到 SharePoint。
 
@@ -103,8 +103,8 @@ Data Source – 包含窗体将显示、编辑或创建的记录的列表。 请
 
 * 使用 SharePointIntegration 控件的 OnSave 公式，可自定义如何响应在 SharePoint 中单击或点击“保存”的用户。 如果有多个窗体，请确保只提交当前正在使用的窗体的更改。
 
-    >[!TIP]
-     为 OnNew、OnView 和 OnEdit 公式中的变量设置不同的值。 你可以在 OnSave 公式中使用此变量，以确定正在使用的窗体。
+  > [!TIP]
+  >    为 OnNew、OnView 和 OnEdit 公式中的变量设置不同的值。 你可以在 OnSave 公式中使用此变量，以确定正在使用的窗体。
 
 * 请务必在所有表单的 OnSuccess 公式中添加 RequestHide()。 如果忘记了此操作，SharePoint 将不知道何时隐藏窗体。
 

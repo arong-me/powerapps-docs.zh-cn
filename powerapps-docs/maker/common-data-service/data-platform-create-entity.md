@@ -7,12 +7,12 @@ ms.component: cds
 ms.topic: quickstart
 ms.date: 05/01/2018
 ms.author: matp
-ms.openlocfilehash: ecbdc81b2688ee9aabf5e0df6416212957ca2642
-ms.sourcegitcommit: 222df368f1f35e9357b0b1adf0e69d7206d8126e
+ms.openlocfilehash: 45a341d28b4138ce03ce50d7325f9daa0f159d1a
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36298483"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897423"
 ---
 # <a name="quickstart-create-a-custom-entity"></a>快速入门：创建自定义实体
 在 PowerApps 中，实体定义要跟踪的信息（采用记录的形式），通常包括公司名称、位置、产品、电子邮件和电话号码等属性。 然后可通过开发引用该实体的应用来演示该数据。 PowerApps 提供标准的“现成可用”实体，包含组织内的典型方案（例如跟踪约会），但有时需要创建自定义实体才能存储特定于组织的数据。
@@ -38,10 +38,10 @@ ms.locfileid: "36298483"
 
 3. 在“新建实体”面板的“显示名称”框中，输入“产品审核”，然后可选择性地输入说明（如果其他人要使用此实体，相关说明会很有帮助）。 面板中的其他字段将会自动填充，如下所述。 完成时，请单击“下一步”。
 
-    * 复数显示名称 - 当输入显示名称时，此字段会自动填充，但可以根据需要进行更改。 复数显示名称是 Common Data Service WebAPI 中实体的名称，可用于从 PowerApps 或 Flow 中与此实体交互。
-    * 名称 - 当输入显示名称时，此字段也会自动填充。 在创建环境时设置前缀，确保所创建的实体可以在其他环境中导出和导入，而不会与其他实体名称发生冲突。 要更改此前缀，可为 Common Data Service 默认解决方案更新发布服务器上的前缀。 为了防止现有应用中断，保存实体后不得更改名称。
+   * 复数显示名称 - 当输入显示名称时，此字段会自动填充，但可以根据需要进行更改。 复数显示名称是 Common Data Service WebAPI 中实体的名称，可用于从 PowerApps 或 Flow 中与此实体交互。
+   * 名称 - 当输入显示名称时，此字段也会自动填充。 在创建环境时设置前缀，确保所创建的实体可以在其他环境中导出和导入，而不会与其他实体名称发生冲突。 要更改此前缀，可为 Common Data Service 默认解决方案更新发布服务器上的前缀。 为了防止现有应用中断，保存实体后不得更改名称。
      
-    ![新建实体](./media/data-platform-cds-create-entity/newentitypanel.png "新建实体面板")
+     ![新建实体](./media/data-platform-cds-create-entity/newentitypanel.png "新建实体面板")
 
 4. 在实体详细信息页上，单击或点击“主要名称”字段，打开“主要名称”面板，然后在“显示名称”框中，将“主要名称”替换为“产品审核”。 在“名称”框中，将“主要名称”替换为“产品审核”，然后单击或点击“完成”。
  
@@ -66,15 +66,15 @@ ms.locfileid: "36298483"
     ![新字段](./media/data-platform-cds-create-entity/newfieldpanel-2.png "新字段面板")
 
 6. 重复上一步，再添加三个具有以下配置的字段：
-    * 显示名称 = 产品评分；数据类型 = 整数；单击或点击“必填”复选框
-    * 显示名称 = 审核者姓名；数据类型 = 文本
-    * 显示名称 = 审核者评论；数据类型 = 文本
+   * 显示名称 = 产品评分；数据类型 = 整数；单击或点击“必填”复选框
+   * 显示名称 = 审核者姓名；数据类型 = 文本
+   * 显示名称 = 审核者评论；数据类型 = 文本
 
-    完成时，在实体详细信息页上应该列出五个字段。
+     完成时，在实体详细信息页上应该列出五个字段。
 
-    ![字段列表](./media/data-platform-cds-create-entity/addedfields.png "字段列表")
+     ![字段列表](./media/data-platform-cds-create-entity/addedfields.png "字段列表")
 
-    请注意，所有实体都具有只读系统字段。 默认情况下，系统字段不会显示在字段列表中，即使它们存在于实体中。 要查看所有字段，可以在命令栏上将筛选器从“默认”更改为“所有”。 要详细了解与实体相关的元数据，请参阅[实体元数据](../../developer/common-data-service/entity-metadata.md)。
+     请注意，所有实体都具有只读系统字段。 默认情况下，系统字段不会显示在字段列表中，即使它们存在于实体中。 要查看所有字段，可以在命令栏上将筛选器从“默认”更改为“所有”。 要详细了解与实体相关的元数据，请参阅[实体元数据](../../developer/common-data-service/entity-metadata.md)。
 
 7. 单击“保存实体”以保存实体并使它在应用中可用。
 

@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: aae87f408452cd83856c2e1c2e07065d4b8df49f
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 43328f363926f20d91b49ba422c3bfdae30abbf6
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803273"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898733"
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>PowerApps 中的音频和视频控件
 一个控件，用于播放 YouTube 上的音频文件、视频文件或视频。
@@ -99,7 +99,7 @@ ClosedCaptionsUrl – 仅视频控件适用。  WebVTT 格式的隐藏式字幕�
 4. 按 F5，然后通过单击或点击所添加的控件的播放按钮来播放剪辑。
 
     > [!TIP]
-> 将鼠标悬停在“视频”控件之上时，便会看到此控件的播放按钮。
+   > 将鼠标悬停在“视频”控件之上时，便会看到此控件的播放按钮。
 5. 按 Esc 返回默认工作区。
 
 ### <a name="play-a-youtube-video"></a>播放 YouTube 视频

@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/17/2017
 ms.author: gregli
-ms.openlocfilehash: 2b64ebdf91effe812d3fd81d0d1e0bb854147a19
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 45baa2450dbb081b800263a9119729e1c2846008
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31839145"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899430"
 ---
 # <a name="understand-data-form-layout-in-microsoft-powerapps"></a>了解 Microsoft PowerApps 中的数据表单布局
 在 PowerApps 中，可以轻松创建具有吸引力且高效使用的表单。 例如，假设记录销售订单的基本表单如下：
@@ -57,17 +57,17 @@ ms.locfileid: "31839145"
     该标签将显示你在库中选择的记录的销售订单号。
 3. （可选）将该标签的格式设置如下：
    
-    1. 将其 **Align** 属性设置为 **Center**。
+   1. 将其 **Align** 属性设置为 **Center**。
    
-    2. 将其 **Size** 属性设置为 **20**。
+   2. 将其 **Size** 属性设置为 **20**。
    
-    3. 将其 **Fill** 属性设置为 **Navy**。
+   3. 将其 **Fill** 属性设置为 **Navy**。
    
-    4. 将其 **Color** 属性设置为 **White**。
+   4. 将其 **Color** 属性设置为 **White**。
    
-    5. 将其 **Width** 属性设置为 **Parent.Width**。
+   5. 将其 **Width** 属性设置为 **Parent.Width**。
    
-    6. 将其 **X** 和 **Y** 属性设置为 **0**。
+   6. 将其 **X** 和 **Y** 属性设置为 **0**。
       
       ![标题栏](./media/working-with-form-layout/title-bar.png)
 

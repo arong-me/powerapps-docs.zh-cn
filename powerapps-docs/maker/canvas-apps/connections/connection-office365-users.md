@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 06/07/2016
 ms.author: lanced
-ms.openlocfilehash: a1e0ddd7dad50ec269a0946163cc7b822ddb0681
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 679d9b905aa1b7d7b1b731de400e6e133787769b
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803463"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897101"
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>从 PowerApps 连接到 Office 365 用户连接
 ![Office 365 用户](./media/connection-office365-users/office365icon.png)
@@ -27,7 +27,7 @@ ms.locfileid: "34803463"
 
 ## <a name="add-a-connection"></a>添加连接
 1. [添加数据连接](../add-data-connection.md)并选择 **Office 365 用户**：  
-   
+
     ![连接到 Office 365](./media/connection-office365-users/add-office.png)
 2. 选择“**连接**”，如果系统提示你登录，请输入你的工作帐户。
 
@@ -37,7 +37,7 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 ### <a name="show-information-about-the-current-user"></a>显示有关当前用户的信息
 1. 在“插入”菜单上，选择“标签”
 2. 在函数栏中，将其 **[Text](../controls/properties-core.md)** 属性设置为下列公式之一：
-   
+
     `Office365Users.MyProfile().Department`  
     `Office365Users.MyProfile().DisplayName`  
     `Office365Users.MyProfile().GivenName`  
@@ -54,13 +54,13 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 
 ### <a name="show-information-about-another-user"></a>显示其他用户的信息
 1. 在“**插入**”菜单上，选择“**文本**”，然后选择“**文本输入**”。 将其重命名为 **InfoAbout**：  
-   
+
     ![重命名控件](./media/connection-office365-users/renameinfoabout.png)
 2. 在 **InfoAbout** 中，键入或粘贴组织中某个用户的电子邮件地址。 例如，键入 *yourName*@*yourCompany.com*。
 3. 添加一个“标签”控件（使用“插入”菜单），然后将“[Text](../controls/properties-core.md)”属性设置为以下公式之一：
-   
+
    * 显示其他用户的信息：  
-     
+
        `Office365Users.UserProfile(InfoAbout.Text).Department`  
        `Office365Users.UserProfile(InfoAbout.Text).DisplayName`  
        `Office365Users.UserProfile(InfoAbout.Text).GivenName`  
@@ -73,7 +73,7 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
        `Office365Users.UserProfile(InfoAbout.Text).UserPrincipalName`  
        `Office365Users.UserProfile(InfoAbout.Text).AccountEnabled`  
    * 显示其他用户经理的相关信息：  
-     
+
        `Office365Users.Manager(InfoAbout.Text).Department`  
        `Office365Users.Manager(InfoAbout.Text).DisplayName`  
        `Office365Users.Manager(InfoAbout.Text).GivenName`  
@@ -100,28 +100,28 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 1. 添加“**文本输入**”控件（“**插入**”菜单 >“**文本**”），并将其重命名为 **InfoAbout**。
 2. 在 **InfoAbout** 中，输入组织中用户的电子邮件地址。 例如，输入 *yourManagersName*@*yourCompany.com*
 3. 添加**带有文本**库（“**插入**”菜单 >“**库**”），并将其 **[Items](../controls/properties-core.md)** 属性设置为下列公式：
-   
+
     `Office365Users.DirectReports(InfoAbout.Text)`
-   
+
     库将显示有关所输入用户的直接上级的信息。
-   
+
     选择库后，右侧窗格显示该库的选项。
 4. 在第二个列表中，选择 **JobTitle** 在第三个列表中，选择 **DisplayName** 库将更新，以显示这些值。  
-   
+
 > [!NOTE]
 > 第一个框实际上是图像控件。 如果没有图像，可以删除图像控件，然后在原处添加一个标签控件。 [添加和配置控件](../add-configure-controls.md)是一个好资源。
 
 ### <a name="search-for-users"></a>搜索用户
 1. 添加“**文本输入**” 控件（“**插入**”菜单 >“**文本**”），并将其重命名为 **SearchTerm**。 输入要搜索的名称。 例如，输入你的名。
 2. 添加**带有文本**库（“**插入**”菜单 >“**库**”），并将其 **[Items](../controls/properties-core.md)** 属性设置为下列公式：
-   
+
     `Office365Users.SearchUser({searchTerm: SearchTerm.Text})`
-   
+
     库显示名称中包含所输入的搜索文本的用户。
-   
+
     选择库后，右侧窗格显示该库的选项。
 3. 在第二个列表中，选择 **Mail**。 在第三个列表中，选择 **DisplayName**
-   
+
     此时，库中的第二个和第三个标签会进行更新。
 
 ## <a name="view-the-available-functions"></a>查看可用函数
@@ -142,6 +142,7 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 无。
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 类型 | 描述 |
 | --- | --- | --- |
 | Department |字符串 |用户的部门。 |
@@ -160,11 +161,13 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 获取用户配置文件：检索特定用户配置文件。
 
 #### <a name="input-properties"></a>输入属性
+
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | ID |字符串 |是 |用户主体名或电子邮件 ID |
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 类型 | 描述 |
 | --- | --- | --- |
 | Department |字符串 |用户的部门。 |
@@ -183,11 +186,13 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 获取经理：检索指定用户经理的用户配置文件
 
 #### <a name="input-properties"></a>输入属性
+
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | ID |字符串 |是 |用户主体名或电子邮件 ID |
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 类型 | 描述 |
 | --- | --- | --- |
 | Department |字符串 |用户的部门。 |
@@ -206,11 +211,13 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 获取直接上级：获取直接上级
 
 #### <a name="input-properties"></a>输入属性
+
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | ID |字符串 |是 |用户主体名或电子邮件 ID |
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 类型 | 描述 |
 | --- | --- | --- |
 | Department |字符串 |用户的部门。 |
@@ -229,11 +236,13 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 搜索用户：检索用户配置文件的搜索结果
 
 #### <a name="input-properties"></a>输入属性
+
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | searchTerm |字符串 |否 |搜索字符串。 适用于：显示名称、名字、姓氏、邮件、邮件昵称和用户主体名 |
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 类型 | 描述 |
 | --- | --- | --- |
 | Department |字符串 |用户的部门。 |

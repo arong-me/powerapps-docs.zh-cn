@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 396a2d5325b7b72f3637dba1edddeead49594167
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a0f55de520a180a646e1e73aac423abc74bfed1d
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31832572"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896227"
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-powerapps"></a>PowerApps 中的 DateValue、TimeValue 和 DateTimeValue 函数
 将字符串类型的日期和/或时间转换为日期/时间值。
@@ -61,7 +61,7 @@ ms.locfileid: "31832572"
     如果你的计算机区域设置为 **en**，这个标签就会显示 **Saturday, October 11, 2014**。
   
     > [!NOTE]
-> 可以将多个选项（LongDateTime 除外）与 DateTimeFormat 参数结合使用。 要显示这些选项的列表，请在函数框中输入该参数，然后输入一个感叹号。
+  > 可以将多个选项（LongDateTime 除外）与 DateTimeFormat 参数结合使用。 要显示这些选项的列表，请在函数框中输入该参数，然后输入一个感叹号。
 * **Text(DateValue(Startdate.Text, "fr"), DateTimeFormat.LongDate)**
   
     这个标签会显示 **Monday, November 10, 2014**。
@@ -80,7 +80,7 @@ ms.locfileid: "31832572"
     如果你的计算机的区域设置为“en”，这个标签会显示 **Saturday, October 11, 2014 1:50:24 PM**。
   
     > [!NOTE]
-> 可以将多个选项（LongDateTime 除外）与 DateTimeFormat 参数结合使用。 要显示这些选项的列表，请在函数框中输入该参数，然后输入一个感叹号。
+  > 可以将多个选项（LongDateTime 除外）与 DateTimeFormat 参数结合使用。 要显示这些选项的列表，请在函数框中输入该参数，然后输入一个感叹号。
 * **Text(DateTimeValue(Start.Text, "fr"), DateTimeFormat.LongDateTime)**
   
     这个标签会显示 **Monday, November 10, 2014 1:50:24 PM**。

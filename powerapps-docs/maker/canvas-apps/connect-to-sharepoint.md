@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 09/03/2016
 ms.author: anneta
-ms.openlocfilehash: 16c585f553373faee609683774e7938e8bd165f1
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ca359f550d81a73f448ce18d94d0d36efceb839b
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31824581"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897384"
 ---
 # <a name="create-a-connection-to-sharepoint-from-powerapps"></a>创建从 PowerApps 到 SharePoint 的连接
 创建到 SharePoint Online 或本地 SharePoint 的连接，以便自动生成应用或从零构建应用。
@@ -61,7 +61,7 @@ ms.locfileid: "31824581"
     ![选择本地 SharePoint](./media/connect-to-sharepoint/choose-onprem.png)
 
     > [!NOTE]
-> 只能在用户的[默认环境](working-with-environments.md)中创建和使用网关和本地连接。
+   > 只能在用户的[默认环境](working-with-environments.md)中创建和使用网关和本地连接。
 
 2. 指定用户名和密码。
 

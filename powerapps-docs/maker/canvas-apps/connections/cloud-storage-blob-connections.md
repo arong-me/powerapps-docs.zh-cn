@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2016
 ms.author: lanced
-ms.openlocfilehash: b0141315f041d81b929a53761952d9b5e355c82e
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 04bfdd2d59b870184e5e42ac06135d00f52dcc70
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803011"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895675"
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>从 PowerApps 连接到云存储
 PowerApps 提供多个云存储连接。 使用其中任何一种连接，都可以存储 Excel 文件，并将其中的信息用于整个应用。 这些连接包括：  
@@ -47,7 +47,7 @@ PowerApps 提供多个云存储连接。 使用其中任何一种连接，都可
     ![选择 Excel 表](./media/cloud-storage-blob-connections/selecttable.png)
    
     > [!NOTE]
-> 请注意，必须将 Excel 数据格式化为表。
+   > 请注意，必须将 Excel 数据格式化为表。
 
 ## <a name="using-the-excel-data-in-your-app"></a>在应用中使用 Excel 数据
 1. 在“插入”选项卡上，依次选择“库”和“包含文本”库控件。

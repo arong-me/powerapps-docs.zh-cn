@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/23/2016
 ms.author: anneta
-ms.openlocfilehash: 6960b41effb109f6f2266ba279b4d51ea51e744f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 3e1bc218e6be8dcbbb1a72672aedf1de5d1cd7e9
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32328711"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895928"
 ---
 # <a name="scan-a-barcode-in-powerapps"></a>在 PowerApps 中扫描条形码
 通过创建应用并在具有摄像头的设备（如手机）上运行应用，可扫描多种类型的条形码。 条形码的等效数字显示在“标签”控件中，可以将此数据上载到各种[数据源](connections-list.md)中。
@@ -36,18 +36,18 @@ ms.locfileid: "32328711"
 ## <a name="create-a-blank-app"></a>创建空白应用
 1. [注册 PowerApps](../signup-for-powerapps.md)，然后执行下列操作*之一*：
 
-1. 在具有摄像头的设备上的浏览器中[打开 PowerApps](https://create.powerapps.com)。
+2. 在具有摄像头的设备上的浏览器中[打开 PowerApps](https://create.powerapps.com)。
 
-2. 在“从空白画布或模板开始”下方，单击或点击“空白应用”磁贴中的“手机布局”。
+3. 在“从空白画布或模板开始”下方，单击或点击“空白应用”磁贴中的“手机布局”。
 
     ![从头开始创建应用](./media/scan-barcode/create-from-blank.png)
 
-3. 如果尚未使用过 PowerApps，可通过查看简介教程来熟悉此应用的关键部分（也可以单击或点击“跳过”）。
+4. 如果尚未使用过 PowerApps，可通过查看简介教程来熟悉此应用的关键部分（也可以单击或点击“跳过”）。
 
     ![打开快速教程屏幕](./media/scan-barcode/quick-tour.png)
 
     > [!NOTE]
-> 稍后可以通过单击或点击右上角附近的问号图标，然后单击或点击“**获取简介教程**”，随时获取教程。
+   > 稍后可以通过单击或点击右上角附近的问号图标，然后单击或点击“**获取简介教程**”，随时获取教程。
 
 ## <a name="add-a-barcode-control"></a>添加条形码控件
 1. 在“插入”选项卡上，单击或点击“媒体”，然后单击或点击“条形码”。
@@ -61,7 +61,7 @@ ms.locfileid: "32328711"
 3. 在“开始”选项卡上，单击或点击 **Barcode1**，然后在“重命名”下键入或粘贴 **MyScanner**。
 
     > [!TIP]
-> 添加的首个“条形码”控件默认命名为“Barcode1”。 如果将其删除并添加另一个**条形码**控件，此控件默认命名为 **Barcode2**。 通过手动重命名控件，可确保公式通过正确的名称引用该控件。
+   > 添加的首个“条形码”控件默认命名为“Barcode1”。 如果将其删除并添加另一个**条形码**控件，此控件默认命名为 **Barcode2**。 通过手动重命名控件，可确保公式通过正确的名称引用该控件。
 
     ![重命名条形码控件](./media/scan-barcode/rename-barcode.png)
 

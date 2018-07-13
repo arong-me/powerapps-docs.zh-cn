@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: bda839765d797bf87590f037221b116bad781657
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: fe61a36278ce4f5fe2fb5ff16bdc0a86dc911e5e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31833668"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899102"
 ---
 # <a name="pie-chart-control-in-powerapps"></a>PowerApps 中的饼图控件
 该控件用于显示与其他内容相比较的相对值。
@@ -104,7 +104,7 @@ ms.locfileid: "31833668"
 * “图表图形”前必须有一个便签作为**[标题](control-text-box.md)**。
 
     > [!NOTE]
-> “图表图形”和“图例”对屏幕阅读器用户隐藏。 作为替代方法，将向用户显示表格形式的数据。 他们还可以在用于在图表中选择数据的按钮之间循环。
+  > “图表图形”和“图例”对屏幕阅读器用户隐藏。 作为替代方法，将向用户显示表格形式的数据。 他们还可以在用于在图表中选择数据的按钮之间循环。
 
 ### <a name="low-vision-support"></a>弱视支持
 * “Legend”必须存在。
@@ -115,4 +115,4 @@ ms.locfileid: "31833668"
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
 
     > [!NOTE]
-> 当键盘用户导航到图表时，可以在用于在图表中选择数据的按钮之间循环。
+  > 当键盘用户导航到图表时，可以在用于在图表中选择数据的按钮之间循环。

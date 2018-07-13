@@ -13,11 +13,11 @@ ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 3df14293f478c24dbe64b84d0c2d1ea50b485fa3
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31835108"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38083048"
 ---
 # <a name="drop-down-control-in-powerapps"></a>PowerApps 中的下拉列表控件
 一个列表，在用户不将其打开的情况下，该表仅显示第一项。
@@ -145,7 +145,7 @@ Selected - 选定项。
 * ChevronFill 和 ChevronBackground
 * ChevronHoverFill 和 ChevronHoverBackground
 * SelectionColor 和 SelectionFill
-* **SelectionFill** 和 **[Fill](properties-color-border.md)**
+* SelectionFill 和 **[Fill](properties-color-border.md)**
 
 这是除[标准颜色对比度](../accessible-apps-color.md)以外的要求。
 

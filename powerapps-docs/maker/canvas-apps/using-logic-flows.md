@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/05/2017
 ms.author: sharik
-ms.openlocfilehash: 19e30477b7015061a4e4b781e1c53a55d1fda1a7
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 7079dc6194361cc700ccaad6c02ca0bcf8a9f9d6
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329608"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895905"
 ---
 # <a name="start-a-flow-in-an-app"></a>启动应用中的流
 可以使用 Microsoft Flow 来创建逻辑，以便在应用中发生某个事件时执行一个或多个任务。 例如，配置一个按钮，以便用户选择它时在 SharePoint 列表中创建一个项、发送电子邮件或会议请求、将文件添加到云，或执行所有上述操作。 可以在应用中配置任何用于启动流的控件，该控件在关闭 PowerApps 的情况下仍会继续运行。
@@ -52,7 +52,7 @@ ms.locfileid: "32329608"
    3. 在“网站地址”框中，键入或粘贴包含列表的 SharePoint Online 网站的 URL。
 
        > [!NOTE]
-> 请指定不含列表的网站 URL。
+      > 请指定不含列表的网站 URL。
 
    4. 在“列表名称”框中，选择要使用的列表。
 
@@ -86,7 +86,7 @@ ms.locfileid: "32329608"
 6. 在显示的窗格中，选择在前面的过程中创建的流。
 
     > [!NOTE]
-> 如果创建的流不可用，请确认是否已将 PowerApps 设置为在其中创建了流的环境。
+   > 如果创建的流不可用，请确认是否已将 PowerApps 设置为在其中创建了流的环境。
 
     ![从自定义窗格添加流](./media/using-logic-flows/add-flow-from-pane.png)
 

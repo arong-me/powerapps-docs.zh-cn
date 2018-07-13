@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 4/18/2018
 ms.author: audrie
-ms.openlocfilehash: c0711ed071c1635373a66f5b61259f56d468cc9a
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: bffc102ad61a05ae8f2b6a26276cbeec718483f6
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36311652"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898182"
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps 网络研讨会列表 #
 这些网络研讨会可以帮助你使用 Microsoft PowerApps 的功能。 直播结束后，可按需观看网络研讨会。 请注意，在某些情况下，必须重新输入注册详细信息，然后才能通过电子邮件收到视频录制链接。 

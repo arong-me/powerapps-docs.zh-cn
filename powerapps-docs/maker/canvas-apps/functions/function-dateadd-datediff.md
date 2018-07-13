@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 05/23/2017
 ms.author: gregli
-ms.openlocfilehash: eaf538c1189dffd8fb2169f3eda3f525bcf623de
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 26991baa1feb1ef4821beaf791454def21960d4f
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31832019"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896618"
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-powerapps"></a>PowerApps 中的 DateAdd、DateDiff 和 TimeZoneOffset 函数
 加上或发现日期/时间值的差值，并转换本地时间和 UTC。
@@ -56,6 +56,7 @@ TimeZoneOffset( [ DateTime ] )
 在下面所有示例中，假定当前日期和时间为“July 15, 2013, 1:02 PM”。
 
 ### <a name="simple-dateadd"></a>简单 DateAdd
+
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Text( DateAdd( Now(), 3 ),<br>"dd-mm-yyyy hh:mm" )** |在当前日期和时间中加上三天（默认时间单位）。 |"18-07-2013 13:02" |
@@ -64,6 +65,7 @@ TimeZoneOffset( [ DateTime ] )
 | **Text( DateAdd( Now(), &#8209;30, Minutes ),<br>"dd-mm-yyyy hh:mm" )** |从当前日期和时间中减去 30 分钟。 |"15-07-2013 12:32" |
 
 ### <a name="simple-datediff"></a>简单 DateDiff
+
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **DateDiff( Now(), DateValue("1/1/2014") )** |返回两个时间单位（默认时间单位为“天”）差值 |170 |

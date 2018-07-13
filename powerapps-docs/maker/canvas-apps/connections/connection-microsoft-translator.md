@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: lanced
-ms.openlocfilehash: c375429b7ac2341766c36ca58e1bbf3c78c9a6d1
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 7c5d4f71c44c4bf247874fbbe901731b269feabd
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803388"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898506"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>从 PowerApps 连接到 Microsoft Translator
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -28,46 +28,46 @@ ms.locfileid: "34803388"
 
 ## <a name="connect-to-microsoft-translator"></a>连接到 Microsoft Translator
 1. 打开 PowerApps，选择“新建”，然后创建一个“空白应用”。 选择手机或平板电脑布局。 平板电脑布局为你提供了多个工作区：  
-   
+
    ![打开一个空白应用](./media/connection-microsoft-translator/blank-app.png)
 2. 在右侧窗格中，单击或点击“数据”选项卡，然后单击或点击“添加数据源”。
 3. 选择“新建连接”，然后选择“Microsoft Translator”：  
-   
+
     ![连接到 Microsoft Translator](./media/connection-microsoft-translator/addconnection.png)
-   
+
     ![连接到 Microsoft Translator](./media/connection-microsoft-translator/add-translator.png)
 4. 选择“连接”。 连接显示在“数据源”下：  
-   
+
     ![连接到 Microsoft Translator](./media/connection-microsoft-translator/translatordatasource.png)
 
 ## <a name="use-the-microsoft-translator-connection-in-your-app"></a>在应用中使用 Microsoft Translator 连接
 ### <a name="translate-text"></a>翻译文本
 1. 在“**插入**”菜单上，选择“**文本**”，然后选择“**文本输入**”。 将文本输入控件重命名为“Source”：  
-   
+
     ![重命名](./media/connection-microsoft-translator/renametosource.png)
 2. 添加“下拉”列表（“插入”“菜单”>“控件”），将其重命名为“TargetLang”并移至“Source”下方。
 3. 将“TargetLang”的 **[Items](../controls/properties-core.md)** 属性设置为以下公式：  
-   
+
     `MicrosoftTranslator.Languages()`
 4. 添加一个标签，将它移到“TargetLang”下方，然后将“[Text](../controls/properties-core.md)”属性设置为以下公式：  
-   
+
     `MicrosoftTranslator.Translate(Source.Text, TargetLang.Selected.Value)`
 5. 向“Source”键入一些文本，然后在“TargetLang”中选择语言。 此时，标签显示用选定语言输入的文本：  
-   
+
     ![将文本从英语翻译为西班牙语](./media/connection-microsoft-translator/translate-text.png)
 
 ### <a name="speak-translated-text"></a>朗读已翻译的文本
 如果尚未执行，请按照上一部分中的步骤操作，翻译一些文本。 以下后续步骤使用同一控件。
 
 1. 将“TargetLang”下拉列表的 **[Items](../controls/properties-core.md)** 属性设置为以下公式：  
-   
+
     `MicrosoftTranslator.SpeechLanguages()`
 2. 将第二个标签（不是“Source”框）重命名为“Target”。
 3. 添加“音频”控件（“插入”“菜单”>“媒体”），并将其“Media”属性设置为以下公式：  
-   
+
     `MicrosoftTranslator.TextToSpeech(Target.Text, TargetLang.Selected.Value)`
 4. 按 F5，或选择“预览”按钮 (![](./media/connection-microsoft-translator/preview.png))。 向“Source”键入一些文本，在“TargetLang”中选择语言，然后选择音频控件中的播放按钮。
-   
+
     应用将播放你使用所选的语言输入的文本的音频版本。
 5. 按 Esc 返回默认工作区。
 
@@ -75,10 +75,10 @@ ms.locfileid: "34803388"
 以下步骤使用同一**源**文本输入控件和**目标**文本控件。 可以根据喜好创建新的控件，只需更新公式中的名称即可。
 
 1. 选择“目标”文本控件，并将 **[Text](../controls/properties-core.md)** 属性设置为以下公式：  
-   
+
     `MicrosoftTranslator.Detect(Source.Text).Name`
 2. 向“Source”键入一些文本。
-   
+
     此时，标签显示所键入文本的语言。 例如，如果键入“bonjour”，则标签显示“法语”；如果键入“ciao”，则标签显示“意大利语”。
 
 ## <a name="view-the-available-functions"></a>查看可用函数
@@ -99,6 +99,7 @@ ms.locfileid: "34803388"
 无。
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 代码 |字符串 |否 | |
@@ -108,6 +109,7 @@ ms.locfileid: "34803388"
 翻译文本：使用 Microsoft Translator 将文本翻译为指定的语言
 
 #### <a name="input-properties"></a>输入属性
+
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | query |字符串 |是 |要翻译的文本 |
@@ -122,11 +124,13 @@ ms.locfileid: "34803388"
 检测语言：检测给定文本的源语言
 
 #### <a name="input-properties"></a>输入属性
+
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | query |字符串 |是 |将要标识其语言的文本 |
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 代码 |字符串 |否 | |
@@ -139,6 +143,7 @@ ms.locfileid: "34803388"
 无。
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 代码 |字符串 |否 | |
@@ -148,6 +153,7 @@ ms.locfileid: "34803388"
 文本到语言：将给定文本转换为声波格式音频流的语音
 
 #### <a name="input-properties"></a>输入属性
+
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | query |字符串 |是 |要转换的文本 |

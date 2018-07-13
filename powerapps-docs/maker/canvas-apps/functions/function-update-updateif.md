@@ -13,11 +13,11 @@ ms.component: canvas
 ms.date: 10/21/2015
 ms.author: gregli
 ms.openlocfilehash: 3046aa93941a07d44345e09b442cb57b623946c3
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834335"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38078430"
 ---
 # <a name="update-and-updateif-functions-in-powerapps"></a>PowerApps 中的 Update 和 UpdateIf 函数
 更新[数据源](../working-with-data-sources.md)中的[记录](../working-with-tables.md#records)。

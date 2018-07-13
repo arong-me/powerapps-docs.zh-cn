@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 05/25/2017
 ms.author: sharik
-ms.openlocfilehash: dde430d6174af5be75a4fc8ae13dabd6f3759899
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: fcb482844e430444fd95bb2d0c85a8da23c91d84
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837248"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897722"
 ---
 # <a name="gallery-control-in-powerapps"></a>PowerApps 中的库控件
 包含其他控件并显示一组数据的控件。
@@ -107,11 +107,11 @@ WrapCount - 每行或每列（具体取决于是水平布局还是垂直布局�
 * **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
 
     > [!NOTE]
-> 库中的项更改时，屏幕阅读器将发出公告。 还将提到“AccessibleLabel”。 这为公告提供上下文，甚至在同一个屏幕上有多个库的情况下更为重要。
+  > 库中的项更改时，屏幕阅读器将发出公告。 还将提到“AccessibleLabel”。 这为公告提供上下文，甚至在同一个屏幕上有多个库的情况下更为重要。
 
 ### <a name="keyboard-support"></a>键盘支持
 * 请考虑将“ShowScrollbar”设置为“true”。 在大多数触摸屏设备上，在开始滚动之前，不会显示滚动条。
 * 如果在库项中单击任何位置都是要选择它，还必须为键盘用户提供选择库项的方法。 例如，添加一个 **[按钮](control-button.md)** ，并将其“OnSelect”属性设置为“Select(Parent)”。
 
     > [!NOTE]
-> 库内的键盘导航顺序不考虑库外控件。 库内控件的 **[TabIndex](properties-accessibility.md)** 具有范围限制。 请参阅[辅助功能属性](properties-accessibility.md)了解详细信息。
+  > 库内的键盘导航顺序不考虑库外控件。 库内控件的 **[TabIndex](properties-accessibility.md)** 具有范围限制。 请参阅[辅助功能属性](properties-accessibility.md)了解详细信息。

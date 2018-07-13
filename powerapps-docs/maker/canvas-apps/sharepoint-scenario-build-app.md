@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: fca166ef388921e08bf71149a8b1274a31a7dc52
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: fcf1bcec976e34f07745c315d75569bbc86e583f
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330620"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899516"
 ---
 # <a name="create-an-app-to-manage-projects"></a>创建用于管理项目的应用
 > [!NOTE]
@@ -155,7 +155,7 @@ PowerApps Studio 有三个窗格和一个功能区，可以在其中创建应用
      ![更新按钮文本](./media/sharepoint-scenario-build-app/04-03-08-buttons-final.png)
      
      > [!NOTE]
-> 虽然此按钮的标签为“更新详细信息”，但会先转到“ViewProjects”屏幕，以选择要更新的项目。
+     > 虽然此按钮的标签为“更新详细信息”，但会先转到“ViewProjects”屏幕，以选择要更新的项目。
 
 ### <a name="run-the-app"></a>运行应用
 虽然应用尚不能执行许多操作，但可以根据需要运行应用：

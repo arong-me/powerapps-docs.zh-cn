@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.author: jamesol
-ms.openlocfilehash: 3a064bdb3f75bf45047e3ae0ff465fde1d2b66fa
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9a846f3c47111b1b83881ed01026951469b236cc
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34167828"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898320"
 ---
 # <a name="environment-and-tenant-app-migration-through-packaging"></a>通过打包进行环境和租户应用迁移
 了解如何通过打包将资源从一个环境迁移到另一个环境。 这些环境可以位于同一租户中，也可以跨不同的租户。
@@ -112,13 +112,13 @@ ms.locfileid: "34167828"
 
 3. 从浏览器复制 URL，进行以下更改，然后导航到浏览器中的新 URL：
 
-    * 当前 URL 结构：https://{orguniquename}.crm.dynamics.com/tools/solution/edit.aspx?id={solutionname}
+   * 当前 URL 结构：https://{orguniquename}.crm.dynamics.com/tools/solution/edit.aspx?id={solutionname}
 
-        ![编辑 URL](./media/environment-and-tenant-migration/edit-url.png)
+       ![编辑 URL](./media/environment-and-tenant-migration/edit-url.png)
 
-    * 新 URL 结构：https://{orguniquename}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
+   * 新 URL 结构：https://{orguniquename}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
 
-        ![选择包](./media/environment-and-tenant-migration/select-package.png)
+       ![选择包](./media/environment-and-tenant-migration/select-package.png)
 
 4. 选择想要导入的 CDS 解决方案包文件并完成向导。
 

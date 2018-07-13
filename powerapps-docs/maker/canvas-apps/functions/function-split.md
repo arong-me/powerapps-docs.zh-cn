@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 08/28/2017
 ms.author: gregli
-ms.openlocfilehash: 3cb894d044a1e6ac02234bc1fa4c5b9239959015
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 7989a795afc0085bfa0e78d4b9d0bebeb26619c6
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830661"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899263"
 ---
 # <a name="split-function-in-powerapps"></a>PowerApps 中的 Split 函数
 将文本字符串拆分成子字符串表。
@@ -36,6 +36,7 @@ Split( Text, Separator )
 * Separator - 必需。  拆分字符串时要使用的分隔符。  可以是零个、一个或多个字符。
 
 ## <a name="examples"></a>示例
+
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Split( "Apples,&nbsp;Oranges,&nbsp;Bananas", "," )** |根据逗号分隔符拆分各种水果。  由于拆分仅以逗号（而不是后面的空格）为依据，因此 "&nbsp;Oranges" 和 "&nbsp;Bananas" 前面会有空格。 |<style> img { max-width: none; } </style> ![](media/function-split/fruit1.png) |

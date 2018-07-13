@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 08/15/2017
 ms.author: archanan
-ms.openlocfilehash: 87f1895801ec7d1121b042d6baf097b79801f019
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: f1d9b6463cc597d13fa1b9c1389fbfcc6d5b5ded
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830227"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896273"
 ---
 # <a name="delegable-data-sources"></a>可委托的数据源
 如[了解委托](delegation-overview.md)一文中所详述，委托是指 PowerApps 将数据处理这项任务委托给数据源，而不是将数据移到应用中进行本地处理。
@@ -46,6 +46,7 @@ ms.locfileid: "31830227"
 下面的数据源和可委托函数及谓词列表会定期进行更新，以反映 PowerApps 中委托支持的最新状态。
 
 ### <a name="top-level-delegable-functions"></a>顶级可委托函数
+
 | &nbsp; | Common Data Service | SharePoint | SQL Server | Dynamics 365 | Salesforce |
 | --- | --- | --- | --- | --- | --- |
 | Average |否 |否 |是 |否 |否 |
@@ -61,6 +62,7 @@ ms.locfileid: "31830227"
 <sup>1</sup>仅限字符串字段
 
 ### <a name="filter-and-lookup-delegable-predicates"></a>Filter 和 LookUp 可委托谓词
+
 | &nbsp; | Common Data Service | SharePoint | SQL Server | Dynamics 365 | Salesforce |
 | --- | --- | --- | --- | --- | --- |
 | 否 |是 |否 |是 |是 |是 |

@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/12/2018
 ms.author: anneta
-ms.openlocfilehash: 485dfcf47f76a042afab80c769f994c6cbf1ceac
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 651862e23a2c3741952106c27e3d37315175402c
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31835946"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898228"
 ---
 # <a name="sign-up-for-a-free-license-to-try-powerapps"></a>注册免费许可证试用 PowerApps
 若要在 PowerApps 中创建应用，需要几种类型的许可证之一，这些许可证提供不同的功能级别。 如果你的组织为你购买了 Office 365 或 Dynamics 365 的任何一个版本，或者你的组织为你购买了 PowerApps 计划 1 或计划 2 许可证，则你已经拥有 PowerApps 许可证。
@@ -104,11 +104,12 @@ ms.locfileid: "31835946"
 ### <a name="what-email-address-can-i-use"></a>可以使用哪些电子邮件地址？
 可以使用工作或学校地址注册试用许可证。 如果使用另一种地址，可能遇到此表中的症状之一。
 
-| 症状/错误消息 | 原因和解决办法 |
-| --- | --- |
-| **个人电子邮件地址（例如，nancy@gmail.com）** <br> <br> 在注册过程中，你会收到一条如下所示的消息： <br> <br> `You entered a personal email address: Please enter your work email address so we can securely store your company's data.` <br> <br> 或 <br> <br> `That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.` |PowerApps 不支持由使用者电子邮件服务或电信提供商提供的电子邮件地址。 <br> <br> 要完成注册，请使用工作或学校电子邮件地址重试。 |
-| **.gov 或.mil 地址** <br> <br> 在注册过程中，你会收到一条如下所示的消息： <br> <br> `PowerApps unavailable: PowerApps is not available for users with .gov or .mil email addresses at this time. Use another work email address or check back later.` <br> <br> 或 <br> <br> `We can't finish signing you up. It looks like Microsoft PowerApps isn't currently available for your work or school.` |PowerApps 目前不支持 .gov 或.mil 地址。 |
-| **电子邮件地址不是 Office 365 ID** <br> <br>  在注册过程中，你会收到一条如下所示的消息： <br> <br> `We can't find you at contoso.com.  Do you use a different ID at work or school? Try signing in with that, and if it doesn't work, contact your IT department.` |你的组织使用电子邮件地址以外的其他 ID 登录到 Office 365 和其他 Microsoft 服务。 例如，电子邮件地址可能是 Nancy.Smith@contoso.com，但 ID 是 nancys@contoso.com。 <br> <br> 要完成注册，请使用组织已分配给你的 ID 登录到 Office 365 或其他 Microsoft 服务。  如果你不知道这些信息，请与 IT 管理员联系。 |
+
+|                                                                                                                                                                                                                             症状/错误消息                                                                                                                                                                                                                             |                                                                                                                                                                                                     原因和解决办法                                                                                                                                                                                                      |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>个人电子邮件地址（例如，nancy@gmail.com）</strong> <br> <br> 在注册过程中，你会收到一条如下所示的消息： <br> <br> `You entered a personal email address: Please enter your work email address so we can securely store your company's data.` <br> <br> 或 <br> <br> `That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.` |                                                                                                        PowerApps 不支持由使用者电子邮件服务或电信提供商提供的电子邮件地址。 <br> <br> 要完成注册，请使用工作或学校电子邮件地址重试。                                                                                                        |
+|                             **.gov 或.mil 地址** <br> <br> 在注册过程中，你会收到一条如下所示的消息： <br> <br> `PowerApps unavailable: PowerApps is not available for users with .gov or .mil email addresses at this time. Use another work email address or check back later.` <br> <br> 或 <br> <br> `We can't finish signing you up. It looks like Microsoft PowerApps isn't currently available for your work or school.`                              |                                                                                                                                                                                PowerApps 目前不支持 .gov 或.mil 地址。                                                                                                                                                                                |
+|                                                                                             **电子邮件地址不是 Office 365 ID** <br> <br>  在注册过程中，你会收到一条如下所示的消息： <br> <br> `We can't find you at contoso.com.  Do you use a different ID at work or school? Try signing in with that, and if it doesn't work, contact your IT department.`                                                                                              | 你的组织使用电子邮件地址以外的其他 ID 登录到 Office 365 和其他 Microsoft 服务。 例如，电子邮件地址可能是 Nancy.Smith@contoso.com，但 ID 是 nancys@contoso.com。 <br> <br> 要完成注册，请使用组织已分配给你的 ID 登录到 Office 365 或其他 Microsoft 服务。  如果你不知道这些信息，请与 IT 管理员联系。 |
 
 ### <a name="what-happens-when-my-trial-expires"></a>试用到期后会怎样？
 30 天后，系统会提示你申请将试用期延长或者购买计划。 可以在[定价页](https://powerapps.microsoft.com/pricing/)上查看所有计划的详细信息。

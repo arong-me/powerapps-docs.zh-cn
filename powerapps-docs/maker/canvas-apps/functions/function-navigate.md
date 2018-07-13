@@ -3,7 +3,7 @@ title: Back 和 Navigate 函数 | Microsoft 文档
 description: PowerApps 中 Back 和 Navigate 函数的参考信息（包括语法和示例）
 documentationcenter: na
 author: gregli-msft
-manager: kfile
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: ecb8b8176dd8489866a5ca88a6b69e1520c3ad69
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: e00ee9b3a58bf3255b9f581f405381af05aa07f9
+ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834449"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948563"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Microsoft PowerApps 中的 Back 和 Navigate 函数
 更改显示的屏幕。
@@ -63,6 +63,7 @@ ms.locfileid: "31834449"
 * *UpdateContextRecord* - 可选。  一条记录，其中包含至少一列的名称以及每列的值。 这一条记录用于更新新屏幕的上下文变量，就像传递到 **[UpdateContext](function-updatecontext.md)** 函数一样。
 
 ## <a name="examples"></a>示例
+
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Navigate( Details, ScreenTransition.None )** |显示 **Details** 屏幕，没有任何过渡效果，也不会更改上下文变量的值。 |**Details** 屏幕会快速显示。 |

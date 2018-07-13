@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 11/30/2015
 ms.author: lonu
-ms.openlocfilehash: 01065fd1a12b3d55e8726582cead3d86a6e6a8ad
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: b3bf7c2227d3321a581eb1a568de1ce78ead92ee
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330277"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899884"
 ---
 # <a name="create-and-update-a-collection-in-your-app"></a>创建和更新应用中的集合
 集合用于存储可在应用中使用的数据。 集合是一组类似的项。 例如，你会创建“MyImages”集合来存储公司出售的所有产品的图像。 在 PowerApps 内，可以添加“MyImages”集合，然后创建一个应用来显示这些产品的所有图片。 再比如，可以创建“PriceList”集合，列出所有产品及其价格。
@@ -84,7 +84,7 @@ ms.locfileid: "32330277"
    ![][10]  
    
     > [!NOTE]
-> 可以将“文本输入”替换为“城市”或“州/省/自治区/直辖市”，如上图所示。  
+   > 可以将“文本输入”替换为“城市”或“州/省/自治区/直辖市”，如上图所示。  
 6. 选择“插入”选项卡上的“按钮”。 将其“[OnSelect](controls/properties-core.md)”属性设为以下函数：  
    ```Collect(Destinations, {Cities:City!Text, States:States!Text})```  
    
@@ -92,7 +92,7 @@ ms.locfileid: "32330277"
     ![][11]  
    
     > [!NOTE]
-> 可以使用同一函数向此集合添加其他列。 例如，可以再添加一个“Country”文本输入控件，从而添加“Countries”列：
+   > 可以使用同一函数向此集合添加其他列。 例如，可以再添加一个“Country”文本输入控件，从而添加“Countries”列：
    
     `Collect(Destinations, {Cities:City!Text, States:States!Text}, {Countries:Country!Text})`
 7. 将按钮控件重命名为“AddCityStateButton”，然后将其“[Text](controls/properties-core.md)”属性设为“Add City and State”：  
@@ -155,7 +155,7 @@ ms.locfileid: "32330277"
     ```Collect(OrderList, {Name:PriceGallery!Selected!Name, Qty:OrderQty!Value, Cost:OrderQty!Value*LookUp(PriceList, PriceGallery!Selected!Name in Name, Price)});SaveData(OrderList, "orderfile")```  
    
     > [!NOTE]
-> 稍后在此过程中选择这个按钮时，将创建并保存“OrderList”集合。 此集合中包含你在库中输入的产品名称、使用滑块选择的产品数量，以及通过将产品数量与价格相乘计算得出的总成本。
+   > 稍后在此过程中选择这个按钮时，将创建并保存“OrderList”集合。 此集合中包含你在库中输入的产品名称、使用滑块选择的产品数量，以及通过将产品数量与价格相乘计算得出的总成本。
 4. 选择“屏幕”选项卡，然后将其“[OnVisible](controls/control-screen.md)”属性设为以下表达式：  
    
     ```If(IsEmpty(PriceList), LoadData(PriceList, "pricefile"));If(IsEmpty(OrderList), LoadData(OrderList, "orderfile"))```

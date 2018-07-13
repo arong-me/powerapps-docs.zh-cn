@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: a784251899e7c51ef8213b6d6f31c2830b08e2dc
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: e7da24eec1a85a1d57ab83476734639ef0f5dd25
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838846"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898067"
 ---
 # <a name="updatecontext-function-in-powerapps"></a>PowerApps 中的 UpdateContext 函数
 创建或更新当前屏幕的[上下文变量](../working-with-variables.md#create-a-context-variable)。
@@ -68,6 +68,7 @@ PowerApps 以公式为基础，这些公式会在用户与应用交互时自动�
 * *ContextVariable2*: *Value2*, ... - 可选。 要创建或更新的其他上下文变量及其值。
 
 ## <a name="examples"></a>示例
+
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **UpdateContext( {&nbsp;Counter:&nbsp;1&nbsp;} )** |创建或修改上下文变量 **Counter**，将其值设置为 **1**。 |**Counter** 的值为 **1**。 可通过在公式中使用名称 **Counter** 来引用该变量。 |
@@ -85,10 +86,10 @@ PowerApps 以公式为基础，这些公式会在用户与应用交互时自动�
 6. 在 **Target** 屏幕上，在“插入”选项卡上选择“形状”，然后选择“返回”箭头。
 7. 将“返回”箭头的 **[OnSelect](../controls/properties-core.md)** 属性设置为此公式：<br>**Navigate(Source, ScreenTransition.Fade)**
 8. 从 **Source** 屏幕上，按 F5，然后选择表示任一语言的按钮。
-   
+
     在 **Target** 屏幕上，标签将以对应于所选按钮的语言显示。
 9. 选择“返回”箭头返回到 **Source** 屏幕，然后选择表示其他语言的按钮。
-   
+
     在 **Target** 屏幕上，标签将以对应于所选按钮的语言显示。
 10. 按 Esc 返回默认工作区。
 

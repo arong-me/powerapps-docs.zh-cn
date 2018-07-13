@@ -2,18 +2,21 @@
 title: 将应用添加到 Microsoft Teams 快速入门 | Microsoft Docs
 description: 在本快速入门教程中，你将了解如何将应用添加到 Microsoft Teams 频道，以便应用的共享对象可以在此频道中打开该应用。
 author: mgblythe
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
 ms.date: 01/18/2018
-ms.author: mblythe
-ms.openlocfilehash: 9c670a61f89b8bf038bae117614895f18101fe0c
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.author: matp
+ms.custom: ''
+ms.reviewer: ''
+ms.assetid: ''
+ms.openlocfilehash: 07543d1724ff2272dfa4e1902d2581fa5034360a
+ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34074121"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37925676"
 ---
 # <a name="quickstart-add-an-app-to-microsoft-teams"></a>快速入门：将应用添加到 Microsoft Teams
 
@@ -29,7 +32,7 @@ Microsoft Teams 是基于 Office 365 技术构建的聊天协作平台。 你可
 
 ## <a name="sign-in-to-powerapps"></a>登录到 PowerApps
 
-在 [https://web.powerapps.com]([https://web.powerapps.com) 上登录到 PowerApps。
+在 [https://web.powerapps.com](https://web.powerapps.com) 上登录到 PowerApps。
 
 ## <a name="add-an-app"></a>添加应用
 

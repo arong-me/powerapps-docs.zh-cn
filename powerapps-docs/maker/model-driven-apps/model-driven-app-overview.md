@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 76571a53c95661d853b7fb326e3c1087a6f432c4
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: eceaf1886bf77b85d6d6b3faae3f32428223cb7e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330919"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899493"
 ---
 # <a name="overview-of-building-a-model-driven-app"></a>生成模型驱动应用的概述
 
@@ -30,7 +30,7 @@ ms.locfileid: "32330919"
 - 创建复杂的响应式应用，具备在多种设备（从台式机到移动设备）上类似的 UI
 - 设计功能与 Dynamics 365 客户参与平台上的可用功能类似 
 - 可将应用作为解决方案分发
- 
+
 ## <a name="the-approach-to-model-driven-app-making"></a>创建模型驱动应用的方法
 从基本层面看，模型驱动应用的创建由三个关键方面组成。
 
@@ -54,6 +54,7 @@ ms.locfileid: "32330919"
 
 ### <a name="data"></a>数据
 这些组件决定了应用基于哪些数据。
+
 
 
 |组件  |描述  |设计器  |

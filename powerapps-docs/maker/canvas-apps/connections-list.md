@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 08/28/2017
 ms.author: lanced
-ms.openlocfilehash: dc68b0f404c2a8d636deb4e77c2ada4582ed3a37
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: baa4c71efb54cea6f04cd45b895009a3c3ce17c7
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836737"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899286"
 ---
 # <a name="overview-of-connectors-for-powerapps"></a>PowerApps 连接器概述
 数据是大多数应用（包括在 PowerApps 中生成的应用）的关键所在。 数据存储在数据源中，应用是通过创建的连接来连接数据。 连接使用特定的连接器与数据源进行通信。 PowerApps 提供连接器，适用于许多常用服务和本地数据源，包括 SharePoint、SQL Server、Office 365、Salesforce、Twitter 等。 若要开始向应用添加数据，请参阅[在 PowerApps 中添加数据连接](add-data-connection.md)。
@@ -46,7 +46,7 @@ PowerApps 提供以下两类连接器：标准连接器（如上面所列）和�
     [从头开始创建应用](get-started-create-from-blank.md)
 
     > [!NOTE]
-> 若要连接到 Excel 数据，工作簿必须托管在 OneDrive 等云存储服务中。 有关详细信息，请参阅[从 PowerApps 连接到云存储](connections/cloud-storage-blob-connections.md)。
+  > 若要连接到 Excel 数据，工作簿必须托管在 OneDrive 等云存储服务中。 有关详细信息，请参阅[从 PowerApps 连接到云存储](connections/cloud-storage-blob-connections.md)。
 
 * 另一些连接器支持连接到基于函数的数据源，如 Twitter、Facebook 和 Office 365 Outlook。 如果连接的是这些数据源，数据根据基础服务中的特定函数调用返回给 PowerApps。 例如，如果使用 Twitter 连接器，需要调用 `Twitter.MyFollowers()` 才能返回关注者名单。 仍可以在窗体或库中使用此类数据，但与表格数据相比，需要再执行一些操作。 有关详细信息，请参阅[从 PowerApps 连接到 Twitter](connections/connection-twitter.md)。
 

@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/15/2018
 ms.author: mblythe
-ms.openlocfilehash: da3d21e3f4488f552568a95d856af175f9a042eb
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9dbc59baf8970582b108ee588904437441107722
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31827088"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896365"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>适用于 Power BI 的 PowerApps 自定义视觉对象
 
@@ -29,13 +29,13 @@ ms.locfileid: "31827088"
 
 1. 从 [AppSource](https://appsource.microsoft.com/product/power-bi-visuals/WA104381378?tab=Overview) 获取自定义视觉对象或直接将其导入 Power BI 服务中。
 
-    ![Marketplace 中的自定义视觉对象](./media/powerapps-custom-visual/powerapps-store.png) 
+    ![市场中的自定义视觉对象](./media/powerapps-custom-visual/powerapps-store.png) 
 
-1. 将 PowerApps 视觉对象添加到报表，并设置与其关联的数据字段。
+2. 将 PowerApps 视觉对象添加到报表，并设置与其关联的数据字段。
 
     ![选择报表数据](./media/powerapps-custom-visual/add-visual-set-data.png)
 
-1. 可以选择现有应用，也可以创建一个。 如果选择创建应用，可以选择要在其中创建应用的环境。
+3. 可以选择现有应用，也可以创建一个。 如果选择创建应用，可以选择要在其中创建应用的环境。
 
     ![新应用或现有应用](./media/powerapps-custom-visual/create-new-or-choose-app.png)
 
@@ -45,19 +45,19 @@ ms.locfileid: "31827088"
 
     ![新建应用](./media/powerapps-custom-visual/new-app.png)
 
-1. 现在 PowerApps Studio 中，可使用步骤 2 中设置的数据字段。 `PowerBIIntegration` 对象可充当任何其他 PowerApps 只读数据源或集合。 可以使用该对象填充任何控件，或与其他数据源联接和使用其他数据源过滤。
+4. 现在 PowerApps Studio 中，可使用步骤 2 中设置的数据字段。 `PowerBIIntegration` 对象可充当任何其他 PowerApps 只读数据源或集合。 可以使用该对象填充任何控件，或与其他数据源联接和使用其他数据源过滤。
 
     ![自定义公式](./media/powerapps-custom-visual/custom-formula.png)
 
     此公式联接 Power BI 数据和客户数据源：`LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
 
- Power BI 报表和已启动的 PowerApps Studio 实例共享实时数据连接。 当二者均处于打开状态时，可筛选或更改报表中的数据，更新后的数据可在 PowerApps Studio 中的应用中立即得到反映。
+   Power BI 报表和已启动的 PowerApps Studio 实例共享实时数据连接。 当二者均处于打开状态时，可筛选或更改报表中的数据，更新后的数据可在 PowerApps Studio 中的应用中立即得到反映。
 
-1. 生成或更改应用后，在 PowerApps 中保存并发布应用，以便在 Power BI 报表中查看应用。
+5. 生成或更改应用后，在 PowerApps 中保存并发布应用，以便在 Power BI 报表中查看应用。
 
-1. 确定最终完成更改后，请确保与报表用户共享 PowerApps 应用，然后保存报表。
+6. 确定最终完成更改后，请确保与报表用户共享 PowerApps 应用，然后保存报表。
 
-1. 现已通过以上方式创建一个报表，用户可通过报表中的数据获取见解并相应采取行动。
+7. 现已通过以上方式创建一个报表，用户可通过报表中的数据获取见解并相应采取行动。
 
     ![工作报表](./media/powerapps-custom-visual/working-report.gif)
 

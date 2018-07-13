@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 09/14/2017
 ms.author: anneta
-ms.openlocfilehash: e265934336f3646f52b749ddcec5a5e734bd2c50
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 0192abca52f3ca3d28b911e24a9ca9cd07c95393
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31828884"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895836"
 ---
 # <a name="save-and-publish-an-app-in-powerapps"></a>在 PowerApps 中保存并发布应用
 每当保存应用更改时，都只会对你自己和有权编辑此应用的其他所有人自动发布更改。 完成更改后，必须显式发布更改，以便应用的所有共享对象都能使用。
@@ -47,7 +47,7 @@ PowerApps 也可以每 2 分钟定期保存一次应用。 如果已保存一次
    ![检查发布信息](./media/save-publish-app/publish-review.png)
 
    > [!NOTE]
-> 建议在自上一次发布应用后的六个月内更新和/或重新发布应用，让它与最新版 PowerApps 保持同步。 如果未在六个月内更新和/或重新发布应用，应用可能会停止运行，而不显示任何警告。
+   > 建议在自上一次发布应用后的六个月内更新和/或重新发布应用，让它与最新版 PowerApps 保持同步。 如果未在六个月内更新和/或重新发布应用，应用可能会停止运行，而不显示任何警告。
 
 ## <a name="identify-the-live-version"></a>确定实时版本
 在 [powerapps.com](https://web.powerapps.com) 中，依次单击或点击左侧边缘上“文件”菜单中的“应用”、应用详细信息图标和“版本”选项卡。

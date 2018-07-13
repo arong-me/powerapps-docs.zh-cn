@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/30/2016
 ms.author: archanan
-ms.openlocfilehash: d51d134878b04f3cb10ff876ef488f1390e4ef30
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 939758c1550f1006f00bd9a386eb4b9cbcd69af0
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826789"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899907"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>在 PowerApps 中管理本地数据网关
 安装本地数据网关，以便在 PowerApps 和不在云中的数据源（如本地 SQL Server 数据库或本地 SharePoint 网站）之间快速、安全地传输数据。 查看拥有管理权限的所有网关，并管理这些网关的权限和连接。
@@ -67,7 +67,7 @@ ms.locfileid: "31826789"
 3. 要共享连接，请单击或点击“**共享**”，然后添加或删除用户。
 
     > [!NOTE]
-> 可以仅共享某些类型的连接（如 SQL Server）。 有关详细信息，请参阅 [共享应用资源](share-app-resources.md)。
+   > 可以仅共享某些类型的连接（如 SQL Server）。 有关详细信息，请参阅 [共享应用资源](share-app-resources.md)。
 
 若要详细了解如何管理连接，请参阅[管理连接](add-manage-connections.md)。
 

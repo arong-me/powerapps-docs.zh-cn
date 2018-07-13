@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 04/23/2018
 ms.author: anneta
-ms.openlocfilehash: 29f07162ec2815398cda5bcc359f7388df261bc0
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: bf802668ff56729c1d28fc460495a680fc3c6570
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836961"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896802"
 ---
 # <a name="create-an-excel-app-from-scratch"></a>从头开始创建 Excel 应用
 基于 Excel 数据从头开始创建你自己的应用，将其格式化为表格，然后从其他源添加数据（如果需要）。 按照本教程中的步骤进行操作，可以创建包含两个屏幕的应用。 在一个屏幕上，用户可以浏览一组记录。 在另一个屏幕上，用户可以创建记录、更新记录中的一个或多个字段，或删除整条记录。 与[自动生成应用](get-started-create-from-data.md)相比，此方法耗费的时间要多得多，但有经验的应用创作者可以使用它根据需要生成最佳应用。
@@ -84,31 +84,31 @@ ms.locfileid: "31836961"
 
     ![打开“数据”窗格](./media/get-started-create-from-blank/custom-gallery-sample.png)
 
-1. 在“数据源”下，选择向下箭头以打开应用程序的数据源列表，然后选择“计划”。
+4. 在“数据源”下，选择向下箭头以打开应用程序的数据源列表，然后选择“计划”。
 
     ![选择数据源](./media/get-started-create-from-blank/select-schedule.png)
 
-1. 在“布局”下，选择向下箭头以打开布局列表，然后选择“标题、副标题和正文”。
+5. 在“布局”下，选择向下箭头以打开布局列表，然后选择“标题、副标题和正文”。
 
     ![选择布局](./media/get-started-create-from-blank/select-layout.png)
 
-1. 在“标题 2”下，将“备份”中显示的列更改为“志愿者”。
+6. 在“标题 2”下，将“备份”中显示的列更改为“志愿者”。
 
      ![更改标签中的列](./media/get-started-create-from-blank/change-title2.png)
 
-1. 选择右上角的关闭图标，关闭“数据”窗格。
+7. 选择右上角的关闭图标，关闭“数据”窗格。
 
     库会显示每个志愿者的姓名以及志愿者排班的日期和时间。
 
     ![库中未排序的“计划”数据](./media/get-started-create-from-blank/show-data-unsorted.png)
 
-4. 选择库，并确认属性列表显示 [Items](controls/properties-core.md)。
+8. 选择库，并确认属性列表显示 [Items](controls/properties-core.md)。
 
     如公式栏所示，该属性的值为“计划”。
 
     ![库中未排序的“计划”数据](./media/get-started-create-from-blank/set-property.png)
 
-1. 通过复制此公式并将其粘贴到公式栏中来更改“Items”属性的值：
+9. 通过复制此公式并将其粘贴到公式栏中来更改“Items”属性的值：
 
     SortByColumns(Search(Schedule, TextSearchBox1.Text, "Volunteer"), "Volunteer", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))
 
@@ -118,22 +118,22 @@ ms.locfileid: "31836961"
 
     用户可以根据该公式中的 SortByColumns 和 Search 函数，按志愿者姓名排序和筛选库。
 
-    - 如果用户在搜索框中键入至少一个字母，则库将仅显示“志愿者”字段中包含用户键入文本的那些记录。
-    - 如果用户选择排序按钮，库将基于“志愿者”字段，按升序或降序顺序显示记录（具体取决于用户选择按钮的次数）。
+   - 如果用户在搜索框中键入至少一个字母，则库将仅显示“志愿者”字段中包含用户键入文本的那些记录。
+   - 如果用户选择排序按钮，库将基于“志愿者”字段，按升序或降序顺序显示记录（具体取决于用户选择按钮的次数）。
 
-    有关这些函数和其他函数的详细信息，请参阅[公式参考](formula-reference.md)。
+     有关这些函数和其他函数的详细信息，请参阅[公式参考](formula-reference.md)。
 
-5. 在搜索框中键入“i”，通过单击或点击来选择排序按钮，然后再次选择它（或者额外奇数次）。
+10. 在搜索框中键入“i”，通过单击或点击来选择排序按钮，然后再次选择它（或者额外奇数次）。
 
-    库将显示以下结果。
+     库将显示以下结果。
 
-    ![对库进行排序和筛选](./media/get-started-create-from-blank/sort-filter.png)
+     ![对库进行排序和筛选](./media/get-started-create-from-blank/sort-filter.png)
 
-1. 清除搜索框中的所有文本。
+11. 清除搜索框中的所有文本。
 
-6. 在屏幕顶部，选择[标签](controls/control-text-box.md)控件，然后将“[Title]”替换为“查看记录”。
+12. 在屏幕顶部，选择[标签](controls/control-text-box.md)控件，然后将“[Title]”替换为“查看记录”。
 
-    ![更改标题栏](./media/get-started-create-from-blank/change-title-bar.png)
+     ![更改标题栏](./media/get-started-create-from-blank/change-title-bar.png)
 
 ## <a name="create-the-change-screen"></a>创建更改屏幕
 1. 在“主页”选项卡上，选择“新屏幕”旁的向下箭头，然后选择“窗体屏幕”。

@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: lanced
-ms.openlocfilehash: bfdd2bc0ed784b9f2302d01f2fc8c176a7d9c4bb
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 33bfc61200d10ca50b80e31fec2bef62044e4be7
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803549"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899631"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>从 PowerApps 连接到 Twitter
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -27,13 +27,13 @@ ms.locfileid: "34803549"
 
 ## <a name="connect-to-twitter"></a>连接到 Twitter
 1. 打开 PowerApps，选择“新建”，然后创建一个“空白应用”。 选择手机或平板电脑布局。 平板电脑布局为你提供了多个工作区：  
-   
+
    ![打开一个空白应用](./media/connection-twitter/blank-app.png)
 2. 在右侧窗格中，单击或点击“数据源”选项卡，然后单击或点击“添加数据源”。
 3. 选择“新建连接”，然后选择“Twitter”：  
-   
+
     ![连接到 Twitter](./media/connection-twitter/addconnection.png)
-   
+
     ![连接到 Twitter](./media/connection-twitter/add-twitter.png)
 4. 选择“连接”，输入 Twitter 登录凭据，然后选择“授权应用”。
 5. 选择“添加数据源”。 连接显示在“数据源”下：  
@@ -45,85 +45,85 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 ### <a name="show-a-timeline"></a>显示时间线
 1. 在“插入”菜单上，选择“库”，然后添加任意**带有文本**的库。
 2. 我们来看一些时间线：  
-   
+
    * 若要显示当前用户的时间线，将库的 **[Items](../controls/properties-core.md)** 属性设置为以下公式：
-     
+
        `Twitter.HomeTimeline().TweetText`  
        `Twitter.HomeTimeline({maxResults:3}).TweetText`  
    * 若要显示其他用户的时间线，将库的 **[Items](../controls/properties-core.md)** 属性设置为以下公式：  
-     
+
        `Twitter.UserTimeline( *TwitterHandle* ).TweetText`
-     
+
        输入用双引号括住的 Twitter 用户名或等效值。 例如，直接在公式表达式中输入 `"satyanadella"` 或 `"powerapps"`。
    * 添加一个名为“Tweep”的文本输入控件，并将其 Default 属性设置为 `Tweep.Text`。 在 Tweep 文本框中，键入 Twitter 用户名，如 `satyanadella`（不加引号和 @ 符号）。
-     
+
        在库控件中，将 Items 属性设置为以下公式：  
-     
+
        `Twitter.UserTimeline(Tweep.Text, {maxResults:5}).TweetText`
-     
+
        库控件将自动显示键入的 Twitter 用户名的推文。
-     
+
      > [!TIP]
-> 部分公式使用 maxResults 参数显示时间线中最新推文的 x 数量。
+     > 部分公式使用 maxResults 参数显示时间线中最新推文的 x 数量。
 3. 将库的 **Items** 属性设置为 `Twitter.HomeTimeline()`。
-   
+
     选择库后，右侧窗格显示该库的选项。
 4. 在第一个列表中选择“TweetText”，在第二个列表中选择“TweetedBy”，然后在第三个列表中选择“CreatedAt”。
-   
+
     库现在显示所选属性的值。
 
 ### <a name="show-followers"></a>显示关注者
 1. 通过使用**带有文本**的库，可以显示部分关注者：  
-   
+
    * 若要显示当前用户的关注者，将库的 **[Items](../controls/properties-core.md)** 属性设置为以下公式：  
-     
+
        `Twitter.MyFollowers()`  
        `Twitter.MyFollowers({maxResults:3})`
    * 若要显示其他用户的关注者，将库的 **[Items](../controls/properties-core.md)** 属性设置为以下公式：  
-     
+
        `Twitter.Followers( *TwitterHandle* )`
-     
+
        输入用双引号括住的 Twitter 用户名或等效值。 例如，直接在公式表达式中输入 `"satyanadella"` 或 `"powerapps"`。
    * 添加一个名为“Tweep”的文本输入控件，并将其 Default 属性设置为 `Tweep.Text`。 在 Tweep 文本框中，键入 Twitter 用户名，如 `satyanadella`（不加引号和 @ 符号）。
-     
+
        在库控件中，将 Items 属性设置为以下公式：  
-     
+
        `Twitter.Followers(Tweep.Text, {maxResults:5})`
-     
+
        库控件自动显示关注你所键入的 Twitter 用户名的用户。
-     
+
      > [!TIP]
-> 部分公式使用 maxResults 参数显示时间线中最新推文的 x 数量。
+     > 部分公式使用 maxResults 参数显示时间线中最新推文的 x 数量。
 2. 将库的 **Items** 属性设置为 `Twitter.MyFollowers()`。
-   
+
     选择库后，右侧窗格显示该库的选项。
 3. 在第二个列表中选择“UserName”，在第三个列表中选择“FullName”。
-   
+
     库现在显示所选属性的值。
 
 ### <a name="show-followed-users"></a>显示关注的用户
 1. 通过使用**带有文本**的库，可以显示一些关注的用户：  
-   
+
    * 若要显示当前用户关注了哪些用户，将库的 **[Items](../controls/properties-core.md)** 属性设置为以下公式：  
-     
+
        `Twitter.MyFollowing()`  
        `Twitter.MyFollowing({maxResults:3})`
    * 若要显示其他用户关注了哪些用户，将库的 **[Items](../controls/properties-core.md)** 属性设置为以下公式：
-     
+
        `Twitter.Following( *TwitterHandle* )`
-     
+
        输入用双引号括住的 Twitter 用户名或等效值。 例如，直接在公式表达式中输入 `"satyanadella"` 或 `"powerapps"`。
    * 添加一个名为“Tweep”的文本输入控件，并将其 Default 属性设置为 `Tweep.Text`。 在 Tweep 文本框中，键入 Twitter 用户名，如 `satyanadella`（不加引号和 @ 符号）。
-     
+
        在库控件中，将 Items 属性设置为以下公式：  
-     
+
        `Twitter.Following(Tweep.Text, {maxResults:5})`
-     
+
        库控件自动显示你正在关注的其他用户名。
-     
+
      选择库后，右侧窗格显示该库的选项。
 2. 在“Body1”列表中选择“Description”，在“Heading1” 列表中选择“UserName”，在“Subtitle1” 列表中选择“FullName”。
-   
+
     库现在显示所选属性的值。
 
 ### <a name="show-information-about-a-user"></a>显示有关用户的信息
@@ -144,22 +144,22 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 
 ### <a name="search-tweets"></a>搜索推文
 1. 添加**带有文本**的库，将其 **[Items](../controls/properties-core.md)** 属性设置为下列公式：  
-   
+
     `Twitter.SearchTweet( *SearchTerm* ).TweetText`
-   
+
     输入用双引号括住的 *SearchTerm* 或引用等效值。 例如，直接在公式中输入 `"PowerApps"` 或 `"microsoft"`。
-   
+
     或者，可以使用**输入文本**控件指定搜索项，如本主题中所述。
-   
+
     > [!TIP]
-> 使用 maxResults 可显示前五个结果：  
-   
+   > 使用 maxResults 可显示前五个结果：  
+
     `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5}).TweetText`
 2. 将库的 **Items** 属性设置为 `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5})`。
-   
+
     选择库后，右侧窗格显示该库的选项。
 3. 在第一个列表中选择“TweetText”，第二个列表中选择“TweetedBy”，然后在第三个列表中选择“CreatedAt”。
-   
+
     库现在显示所选属性的值。
 
 ### <a name="send-a-tweet"></a>发送推文
@@ -189,12 +189,14 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 获取用户时间线：检索指定用户发布的最新推文的集合
 
 #### <a name="input-properties"></a>输入属性
+
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | userName |字符串 |是 |Twitter 用户名 |
 | maxResults |整数 |否 |要检索的推文的最大数量，例如 {maxResults:5} |
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | TweetText |字符串 |是 | |
@@ -208,11 +210,13 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 获取主页时间线：检索我和我的关注者发布的最新推文和转发的推文
 
 #### <a name="input-properties"></a>输入属性
+
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | maxResults |整数 |否 |要检索的推文的最大数量，例如 {maxResults:5} |
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | TweetText |字符串 |是 | |
@@ -226,12 +230,14 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 搜索推文：检索与指定查询匹配的相关推文的集合
 
 #### <a name="input-properties"></a>输入属性
+
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | searchQuery |字符串 |是 |查询文本（可以使用 Twitter 支持的任何查询运算符：http://www.twitter.com/search)） |
 | maxResults |整数 |否 |要检索的推文的最大数量，例如 {maxResults:5} |
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | TweetText |字符串 |是 | |
@@ -245,12 +251,14 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 获取关注者：检索关注指定用户的用户
 
 #### <a name="input-properties"></a>输入属性
+
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | userName |字符串 |是 |用户的 Twitter 用户名 |
 | maxResults |整数 |否 |要检索的用户的最大数量，例如 {maxResults:5} |
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 全名 |字符串 |是 | |
@@ -266,11 +274,13 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 获取我的关注者：检索关注我的用户
 
 #### <a name="input-properties"></a>输入属性
+
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | maxResults |整数 |否 |要检索的用户的最大数量，例如 {maxResults:5} |
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 全名 |字符串 |是 | |
@@ -286,12 +296,14 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 获取关注的人：检索指定用户正在关注的用户
 
 #### <a name="input-properties"></a>输入属性
+
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | userName |字符串 |是 |用户的 Twitter 用户名 |
 | maxResults |整数 |否 |要检索的用户的最大数量，例如 {maxResults:5} |
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 全名 |字符串 |是 | |
@@ -307,11 +319,13 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 获取我关注的人：检索我正在关注的用户
 
 #### <a name="input-properties"></a>输入属性
+
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | maxResults |整数 |否 |要检索的用户的最大数量，例如 {maxResults:5} |
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 全名 |字符串 |是 | |
@@ -327,11 +341,13 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 获取用户：检索指定用户的详细信息（例如：用户名、说明、关注者数量等。）
 
 #### <a name="input-properties"></a>输入属性
+
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | userName |字符串 |是 |用户的 Twitter 用户名 |
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 全名 |字符串 |是 | |
@@ -347,12 +363,14 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 发布新推文：推文
 
 #### <a name="input-properties"></a>输入属性
+
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | TweetText |字符串 |否 |要发布的文本，例如 {tweetText:"hello"} |
 | body |字符串 |否 |要发布的媒体 |
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | TweetId |字符串 |是 | |
@@ -361,11 +379,13 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 显示新推文时：发布与搜索查询匹配的新推文时触发工作流
 
 #### <a name="input-properties"></a>输入属性
+
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | searchQuery |字符串 |是 |查询文本（可以使用 Twitter 支持的任何查询运算符：http://www.twitter.com/search)） |
 
 #### <a name="output-properties"></a>输出属性
+
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 值 |数组 |否 | |

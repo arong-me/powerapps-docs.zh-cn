@@ -7,17 +7,18 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/07/2018
 ms.author: sharik
-ms.openlocfilehash: ffe1a027e378da3f9c505f4980681a4b5a11dbda
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: e76710bc800782624ca1190086cc19dd47d60939
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34851744"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896089"
 ---
 # <a name="system-requirements-limits-and-configuration-values"></a>系统要求、限制和配置值
 本主题包含设备平台和 Web 浏览器要求，以及 PowerApps 的限制和配置值。
 
 ## <a name="supported-platforms-for-running-apps-using-the-powerapps-app"></a>支持使用 PowerApps 应用运行应用的平台
+
 | **所需的最低版本** | **推荐版本** |
 | --- | --- |
 | iOS 9.3 或更高版本 |iOS 10 或更高版本且 RAM 至少为 2GB |
@@ -25,6 +26,7 @@ ms.locfileid: "34851744"
 | Windows 8.1 或更高版本（仅 PC） |Windows 10 Fall Creators Update 且 RAM 至少为 8GB|
 
 ## <a name="supported-browsers-for-running-apps"></a>支持运行应用的浏览器
+
 | **浏览器** | **操作系统** |
 | --- | --- |
 | Google Chrome（最新版本）<br>（建议） |Windows 7 SP1、8.1 和 10 <br>Android 5 或更高版本 <br>iOS 8 或更高版本<br>macOS |
@@ -34,6 +36,7 @@ ms.locfileid: "34851744"
 | Apple Safari（最新版本） |iOS 8 或更高版本 <br>macOS |
 
 ## <a name="supported-browsers-for-powerapps-studio"></a>支持 PowerApps Studio 的浏览器
+
 | **浏览器** | **操作系统** |
 | --- | --- |
 | Google Chrome（最新版本）<br>（建议） |Windows 7 SP1、8.1 和 10 <br>macOS |
@@ -58,7 +61,7 @@ PowerApps 请求使用的 IP 地址取决于该应用所在[环境](../../admini
 
 举例来说，如果必须要为 Azure SQL 数据库指定 IP 地址的允许列表，则应使用以下地址。
 
->   [!IMPORTANT] 
+> [!IMPORTANT]
 >   如果具有现有配置，请尽快于 2018 年 9 月 1 日前更新这些配置，以便它们包括和匹配此 PowerApps 应用所在区域列表中的 IP 地址。
 
 | 区域 | 出站 IP |

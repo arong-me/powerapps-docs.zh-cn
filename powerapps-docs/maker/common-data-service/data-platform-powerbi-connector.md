@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: clwesene
-ms.openlocfilehash: d8323eb103751a1be78aeea0093b9d6651ddc3e2
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: bb0bec7cf459eb9084aea4db7264350b7913e578
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445836"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898728"
 ---
 # <a name="create-a-power-bi-report"></a>创建 Power BI 报表
 通过 Common Data Service for Apps，可使用 Power BI Desktop 直接连接到数据，然后创建报表并发布到 Power BI。 在 Power BI 中，可在仪表板中使用报表，与其他用户共享报表，还可在 Power BI 移动应用上跨平台访问报表。
@@ -57,11 +57,11 @@ ms.locfileid: "34445836"
 
 4. 导航器将显示可用于环境的所有实体（归入三个文件夹）。 展开“常见数据模型”文件夹。
 
-    * 常见数据模型 - 这些是常用的标准实体，可作为常见数据模型的一部分在所有环境中使用。
-    * 自定义实体 - 已在环境中创建或导入的实体。
-    * 系统 - 包含环境中的所有实体，包括常见数据模型和自定义实体。
+   * 常见数据模型 - 这些是常用的标准实体，可作为常见数据模型的一部分在所有环境中使用。
+   * 自定义实体 - 已在环境中创建或导入的实体。
+   * 系统 - 包含环境中的所有实体，包括常见数据模型和自定义实体。
 
-    ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport4.png "Power BI Desktop")
+     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport4.png "Power BI Desktop")
 
 5. 在右侧窗格，选择“帐户”实体以查看数据预览，单击“加载”。
 

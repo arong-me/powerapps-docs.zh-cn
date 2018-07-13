@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 22b5cf081755f25b3aff33c36137547882fe3812
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: b8b25f5bfa3ddbce7b1c541afb7a935a2fe4aa36
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803457"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898159"
 ---
 # <a name="barcode-scanner-control-experimental-in-powerapps"></a>PowerApps 中的条形码扫描程序控件（实验性）
 通过在设备上使用条形码扫描程序，用户可用来拍摄照片的实验性控件。
@@ -32,19 +32,9 @@ ms.locfileid: "34803457"
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-**Brightness** - 用户在图像中可能感知到的光线强度。
-
-**Contrast** - 用户可区分图像中相似颜色的轻松程度。
-
 **[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
-
-**[OnSelect](properties-core.md)** - 用户单击或点击某个控件时应用响应的方式。
-
-**OnStream** - 更新 **Stream** 属性时应用的响应方式。
-
-**Photo** - 用户拍摄照片时捕获的图像。
 
 **ShowLiveBarcodeDetection** – 是否显示视觉提示以指示条形码检测的状态。 黄色矩形表示正在检查的区域。 跨矩形的绿色线条表示成功的条形码标识。
 
@@ -63,8 +53,6 @@ Text – 上次由扫描仪识别的条形码值。
 **[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
-
-**Zoom** - 放大来自条码扫描器的图像百分比或 PDF 查看器中文件的视图百分比。
 
 ## <a name="related-functions"></a>相关函数
 [**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
@@ -87,4 +75,4 @@ Text – 上次由扫描仪识别的条形码值。
 * **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
 
     > [!NOTE]
-> 发现新条形码时，屏幕阅读器将公布此条码形。 不会公布值。 只要条形码在视图中，屏幕阅读器就会每隔 5 秒提醒一次，指示仍在识别相同的条形码。
+  > 发现新条形码时，屏幕阅读器将公布此条码形。 不会公布值。 只要条形码在视图中，屏幕阅读器就会每隔 5 秒提醒一次，指示仍在识别相同的条形码。

@@ -1,23 +1,19 @@
 ---
 title: IsMatch 函数 | Microsoft 文档
 description: PowerApps 中 IsMatch 函数的参考信息（包括语法）。
-documentationcenter: na
 author: gregli-msft
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 02/05/2017
 ms.author: gregli
-ms.openlocfilehash: 26bbef6e61845708e20efb3bd201ae61867d1026
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 908602af84c94d4a14dcd2017c2791ee5c25e6ad
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838409"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899240"
 ---
 # <a name="ismatch-function-in-powerapps"></a>PowerApps 中的 IsMatch 函数
 测试文本字符串是否符合某种模式。
@@ -134,21 +130,23 @@ ms.locfileid: "31838409"
 | **IsMatch( TextInput1.Text, "hello", Contains & IgnoreCase )** |测试用户输入的内容是否包含单词“hello”（不区分大小写）。 |**true** |
 
 ### <a name="predefined-patterns"></a>预定义模式
-| 公式 | 描述 | 结果 |
-| --- | --- | --- |
-| **IsMatch( "123-45-7890", Digit & Digit & Digit & Hyphen & Digit & Digit & Hyphen & Digit & Digit & Digit & Digit & Digit )** |匹配美国社会安全号码。 |**true** |
-| **IsMatch( "joan@contoso.com", Email )** |匹配电子邮件地址。 |**true** |
-| **IsMatch( "123.456", MultipleDigits & Period & OptionalDigits )** |匹配一个数字序列，后跟一个句点，后面再跟零个或多个数字。 |**true** |
-| **IsMatch( "123", MultipleDigits & Period & OptionalDigits )** |匹配一个数字序列，后跟一个句点，后面再跟零个或多个数字。 文本中没有句点，因此该模式不匹配。 |**false** |
+
+|                                                            公式                                                            |                                                                描述                                                                |  结果   |
+|-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| **IsMatch( "123-45-7890", Digit & Digit & Digit & Hyphen & Digit & Digit & Hyphen & Digit & Digit & Digit & Digit & Digit )** |                                              匹配美国社会安全号码。                                               | **true**  |
+|                                           **IsMatch( "joan@contoso.com", Email )**                                            |                                                         匹配电子邮件地址。                                                          | **true**  |
+|                              **IsMatch( "123.456", MultipleDigits & Period & OptionalDigits )**                               |                                   匹配一个数字序列，后跟一个句点，后面再跟零个或多个数字。                                   | **true**  |
+|                                **IsMatch( "123", MultipleDigits & Period & OptionalDigits )**                                 | 匹配一个数字序列，后跟一个句点，后面再跟零个或多个数字。 文本中没有句点，因此该模式不匹配。 | **false** |
 
 ### <a name="regular-expressions"></a>正则表达式
-| 公式 | 描述 | 结果 |
-| --- | --- | --- |
-| **IsMatch( "986", "\d+" )** |匹配大于零的整数。 |**true** |
-| **IsMatch( "1.02", "\d+(\.\d\d)?" )** |匹配正货币金额。 如果输入的内容包含小数点，则小数点后还要有 2 个数字字符。 例如，3.00 有效，但 3.1 无效。 |**true** |
-| **IsMatch( "-4.95", "(-)?\d+(\.\d\d)?" )** |匹配正或负货币金额。 如果输入的内容包含小数点，则小数点后还要有 2 个数字字符。 |**true** |
-| IsMatch( "111-11-1111", "\d{3}-\d{2}-\d{4}" ) |匹配美国社会安全号码。  验证提供的输入字段的格式、类型和长度。 要匹配的字符串必须包含 3 个数字字符，后跟一个短划线，再跟 2 个数字字符，再跟一个短划线，最后跟 4 个数字字符。 |**true** |
-| IsMatch( "111-111-111", "\d{3}-\d{2}-\d{4}" ) |与上例相同，但其中一个连字符的位置不对。 |**false** |
-| IsMatch( "weakpassword", "(?!^[0-9]\*$)(?!^[a-zA-Z]\*$)([a-zA-Z0-9]{8,10})" ) |验证强密码，除包含至少一个数字和至少一个字母字符外，还必须包含 8、9 或 10 个字符。 字符串不能包含特殊字符。 |**false** |
-| **IsMatch( "http://microsoft.com", "(ht&#124;f)tp(s?)\:\/\/\[0-9a-zA-Z\]([-.\w]\*[0-9a-zA-Z])\*(:(0-9)\*)\*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&amp;%\$#_]\*)?" )** |验证 http、https 或 ftp URL。 |**true** |
+
+|                                                                              公式                                                                              |                                                                                                                                  描述                                                                                                                                   |  结果   |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+|                                                                    **IsMatch( "986", "\d+" )**                                                                    |                                                                                                                    匹配大于零的整数。                                                                                                                     | **true**  |
+|                                                               **IsMatch( "1.02", "\d+(\.\d\d)?" )**                                                               |                                        匹配正货币金额。 如果输入的内容包含小数点，则小数点后还要有 2 个数字字符。 例如，3.00 有效，但 3.1 无效。                                         | **true**  |
+|                                                            **IsMatch( "-4.95", "(-)?\d+(\.\d\d)?" )**                                                             |                                                        匹配正或负货币金额。 如果输入的内容包含小数点，则小数点后还要有 2 个数字字符。                                                        | **true**  |
+|                                                         IsMatch( "111-11-1111", "\d{3}-\d{2}-\d{4}" )                                                         | 匹配美国社会安全号码。  验证提供的输入字段的格式、类型和长度。 要匹配的字符串必须包含 3 个数字字符，后跟一个短划线，再跟 2 个数字字符，再跟一个短划线，最后跟 4 个数字字符。 | **true**  |
+|                                                         IsMatch( "111-111-111", "\d{3}-\d{2}-\d{4}" )                                                         |                                                                                               与上例相同，但其中一个连字符的位置不对。                                                                                               | **false** |
+|                                         IsMatch( "weakpassword", "(?!^[0-9]\*$)(?!^[a-zA-Z]\*$)([a-zA-Z0-9]{8,10})" )                                         |                                        验证强密码，除包含至少一个数字和至少一个字母字符外，还必须包含 8、9 或 10 个字符。 字符串不能包含特殊字符。                                        | **false** |
+| **IsMatch( "<http://microsoft.com>", "(ht&#124;f)tp(s?)\:\/\/\[0-9a-zA-Z\]([-.\w]\*[0-9a-zA-Z])\*(:(0-9)\*)\*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&amp;%\$#_]\*)?" )** |                                                                                                                     验证 http、https 或 ftp URL。                                                                                                                      | **true**  |
 

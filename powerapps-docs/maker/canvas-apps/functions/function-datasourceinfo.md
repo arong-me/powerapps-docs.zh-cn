@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/11/2015
 ms.author: gregli
-ms.openlocfilehash: 5f156e5f7d0acb48090ac921aa92f31f3a6d20ea
-ms.sourcegitcommit: 222df368f1f35e9357b0b1adf0e69d7206d8126e
+ms.openlocfilehash: 67354776e7af05fb619033462c52665ce3aa046c
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36298460"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898619"
 ---
 # <a name="datasourceinfo-function-in-powerapps"></a>PowerApps 中的 DataSourceInfo 函数
 提供[数据源](../working-with-data-sources.md)的相关信息。
@@ -59,7 +59,7 @@ ms.locfileid: "36298460"
 * *ColumnName* – 可选。 对于列级信息，为字符串形式的列名称。 例如，“手机”列将传递为“Phone”（含双引号）。 对于数据源级别的信息，不能使用 ColumnName 自变量。
   
     > [!NOTE]
-> 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
+  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
 
 ## <a name="examples"></a>示例
 本部分中的示例使用以下名为 **IceCream** 的数据源：

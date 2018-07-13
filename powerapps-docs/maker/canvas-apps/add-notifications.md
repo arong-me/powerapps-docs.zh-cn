@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 08/08/2017
 ms.author: jamesol
-ms.openlocfilehash: 0cf09528f83b2729e50139a3b5f9b5b9c00b6119
-ms.sourcegitcommit: 045c96df42405c60c7675edbadac93455270a021
+ms.openlocfilehash: 1ab3b17d03b2fd21fceb0675ca55d33302f67d31
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34822549"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897745"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>在 PowerApps 中发送推送通知
 推送通知用于移动应用中的使用者和业务情形，主要用来与应用用户进行交互，并帮助他们优先处理关键任务。 在 PowerApps 中，可以使用 PowerApps 通知连接器发送通知。 可以将原生推送通知发送到在 PowerApps 中创建的任何应用。 我们计划在今后支持更多通知类型。
@@ -41,19 +41,19 @@ ms.locfileid: "34822549"
 > 如果通过流触发推送通知，那么目前一次只能向一个用户或安全组发送通知。
 
 1. 在 [Microsoft Flow](https://flow.microsoft.com) 中，创建一个触发器，指定何时发送推送通知。
-   
+
     例如，建议在记录被添加到 Common Data Service 中的“用例”实体时发送通知。
-   
+
     ![创建包含 Common Data Service 触发器的流的屏幕截图](./media/add-notifications/pic4-step1-flowupdated.png)
 2. 使用“PowerApps 通知”连接器创建流操作，再输入要向其发送通知的应用的应用 ID。
-   
+
     还可以重命名连接，以反映具体方案。
-   
+
     ![创建用于接收这些推送通知的 PowerApps 连接的屏幕截图](./media/add-notifications/pic5-step2-create-connection.jpg)
 3. （可选）在用户点击推送通知后应用打开时，将参数传递给应用。
-   
+
     此示例为选定联系人传递“用例 ID”和“初始所有者”字段。
-   
+
     ![将可选参数传递到推送通知的屏幕截图](./media/add-notifications/pic6-step3-configure-notif.jpg)
 
 ## <a name="send-a-notification-from-an-app"></a>通过应用发送通知
@@ -61,20 +61,20 @@ ms.locfileid: "34822549"
 
 1. 在 [PowerApps](https://web.powerapps.com/) 中，转到要向其发送推送通知的应用。
 2. 在“详细信息”选项卡上，复制此应用的“应用 ID”。
-   
+
     ![获取应用 ID](./media/add-notifications/grab-id.png)
 3. 在“连接”选项卡上，创建与 PowerApps 通知连接器的连接，并粘贴上一步中复制的应用 ID。
-   
+
     ![创建连接](./media/add-notifications/create-connection.png)
 4. 将连接添加到触发器应用。
-   
+
     此示例使用相同的应用作为触发器应用。 如果用户重新分配用例，也会触发向新的用例所有者发送推送通知。
-   
+
     ![添加连接](./media/add-notifications/add-connection.png)
 5. 通过推送通知连接，调用 SendPushNotification 方法。
-   
+
     此示例使用窗体中的 OnSuccess 属性触发此通知。
-   
+
     ![PowerApps 公式](./media/add-notifications/powerapps-function.png)
 
 ## <a name="load-a-specific-page-and-context-when-a-user-taps-the-notification"></a>在用户点击通知时加载特定页和上下文
@@ -91,16 +91,18 @@ ms.locfileid: "34822549"
 
 > [!TIP]
 > 最好在应用中为通知创建专属首页：
-
->1. 创建应用尚未打开的空页，添加“文本输入”控件，并设置 timer.Duration 值。
->2. 创建应用时，将计时器设置为非零值。 如果已准备好发布应用，请将值设置为 0，以立即触发计时器。
+> 
+> 1. 创建应用尚未打开的空页，添加“文本输入”控件，并设置 timer.Duration 值。
+> 2. 创建应用时，将计时器设置为非零值。 如果已准备好发布应用，请将值设置为 0，以立即触发计时器。
 
 ## <a name="syntax"></a>语法
+
 | 名称 | 描述 |
 | --- | --- |
 | SendPushNotification |向通知连接设置中指定的应用发送推送通知。 |
 
 ### <a name="parameters"></a>参数
+
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
 | recipients |字符串数组（必需） |列出了： <ul> <li>用户或安全组的电子邮件地址</li> <li>Azure Active Directory 中用户或安全组的对象 ID</li></ul> |

@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: tutorial
 ms.date: 05/01/2018
 ms.author: matp
-ms.openlocfilehash: c587ed6488ae498e3ec662016ee1d028023e4095
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a4430637d197530cff793a2fcde1c2485bf59a9f
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168242"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897285"
 ---
 # <a name="tutorial-create-a-custom-entity-that-has-components-in-powerapps"></a>教程：在 PowerApps 中创建带组件的自定义实体
 
@@ -38,49 +38,49 @@ ms.locfileid: "34168242"
 1. 在左侧导航窗格中，展开“数据”，选择“实体”，然后选择“新实体”。
     ![新建实体](media/create-custom-entity/create-new-entity.png)
 2. 在右侧窗格中，输入下列值，然后选择“下一步”。
-  - **显示名称**：宠物 
-  - **描述**：用于跟踪宠物服务的自定义实体
+   - **显示名称**：宠物 
+   - **描述**：用于跟踪宠物服务的自定义实体
 3. 选择“保存实体”。
 
 ## <a name="add-and-customize-fields"></a>添加和自定义字段
  
 1. 在“字段”选项卡上选择“主要名称”字段。
 2. 在右侧窗格中，对“主要名称”字段做出以下更改： 
-  - 将“显示名称”从“主要名称”更改为“宠物名称”
-  - 选中“可搜索”  
+   - 将“显示名称”从“主要名称”更改为“宠物名称”
+   - 选中“可搜索”  
   
-    ![更改主要字段](media/create-custom-entity/primary-field.png)
+     ![更改主要字段](media/create-custom-entity/primary-field.png)
 3. 选择“完成”。
 4. 在“字段”选项卡中的实体设计器工作栏上选择“添加”字段。 在“字段属性”窗格中输入或选择下列值和选项。
-  - **显示名称**。 种类
-  - **数据类型**。 选项集
-  - **选项集**。 新选项集
+   - **显示名称**。 种类
+   - **数据类型**。 选项集
+   - **选项集**。 新选项集
 5. 创建选项集
 
-  a. 选择“添加新项”。 
+   a. 选择“添加新项”。 
   
-  b. 将“新选项”替换为“狗”。 
+   b. 将“新选项”替换为“狗”。 
    
-  c. 选择“添加新项”。 
+   c. 选择“添加新项”。 
     
-  d.  将“新选项”替换为“猫”。 
+   d.  将“新选项”替换为“猫”。 
     
-  e. 选择“保存”。 
+   e. 选择“保存”。 
 
-  ![新选项集](media/create-custom-entity/optionset-add-items.png)
+   ![新选项集](media/create-custom-entity/optionset-add-items.png)
 
 6. 选中“可搜索”，然后选择“完成”。
 
 7. 在实体设计器工具栏上选择“添加字段”。 在“字段属性”窗格中输入或选择下列值，然后选择“完成”。
-  - **显示名称**。 品种
-  - **数据类型**。 *文本*
-  - **可搜索**。 是
+   - **显示名称**。 品种
+   - **数据类型**。 *文本*
+   - **可搜索**。 是
 
 8. 在实体设计器工具栏上选择“添加字段”。 
 
 9. 在“字段属性”窗格中输入或选择下列值，然后选择“完成”。 
-  - **显示名称**。 预约日期
-  - **数据类型**。 日期和时间
+   - **显示名称**。 预约日期
+   - **数据类型**。 日期和时间
 
 10. 选择“保存实体”。
 
@@ -97,10 +97,10 @@ ms.locfileid: "34168242"
 
 1. 选择“视图”选项卡，然后选择“活动宠物”视图。 如果没有显示“活动宠物”视图，可选择“删除筛选器”。
 2. 在视图设计器上选择“添加列”，选择以下列，然后选择“确定”。
-  - 帐户
-  - 预约日期 
-  - 品种 
-  - 种类
+   - 帐户
+   - 预约日期 
+   - 品种 
+   - 种类
 3. 选择“创建日期”列，选择“删除”，然后选择“确定”以确认删除此列。
 4. 若要将这些列进行排列，选择要移动的列，然后使用 <- 和 -> 箭头按钮，直到视图如下显示为止。
     ![活动宠物视图](media/create-custom-entity/active-pets-view.png)

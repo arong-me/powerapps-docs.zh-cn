@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 06/29/2017
 ms.author: gregli
-ms.openlocfilehash: 3615328bf1c272425779998545b0d16ac5626297
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 1fdf6c92fb739f1293c90322b508b46f4ec5733e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31832595"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898021"
 ---
 # <a name="set-function-in-powerapps"></a>PowerApps 中的 Set 函数
 设置全局变量的值。
@@ -55,6 +55,7 @@ PowerApps 以公式为基础，这些公式会在用户与应用交互时自动�
 * *Value* - 必需。  要分配给上下文变量的值。
 
 ## <a name="examples"></a>示例
+
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Set(&nbsp;Counter,&nbsp;1&nbsp;)** |创建或修改全局变量 **Counter**，将其值设置为 **1**。 |**Counter** 的值为 **1**。 可通过在公式中使用名称 **Counter** 来在任意屏幕上引用该变量。 |
