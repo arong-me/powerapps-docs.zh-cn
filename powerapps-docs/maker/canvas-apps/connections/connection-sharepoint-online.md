@@ -2,17 +2,19 @@
 title: SharePoint 连接概述 | Microsoft 文档
 description: 请查看可用的函数、响应和 SharePoint 示例
 author: sarafankit
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 07/12/2017
 ms.author: ankitsar
-ms.openlocfilehash: 8a49e0e4e866e7e9eda4834904ee84c082140376
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: d74fdd20db63f6d617db48e09319a84775553f9f
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803296"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017125"
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>从 PowerApps 连接到 SharePoint
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)

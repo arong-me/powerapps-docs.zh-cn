@@ -2,17 +2,19 @@
 title: Office 365 Outlook 连接概述 | Microsoft 文档
 description: 参考信息（包括有关将 Office 365 Outlook 与 PowerApps 相连的示例）
 author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 10/20/2017
 ms.author: lanced
-ms.openlocfilehash: f0e003821f17986438f07ff2f1b4a95b8ba4b454
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.reviewer: anneta
+ms.openlocfilehash: d9a8c442648fcecff9bc318f956accd9b28f7b57
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803233"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021518"
 ---
 # <a name="connect-to-office-365-outlook-from-powerapps"></a>从 PowerApps 连接到 Office 365 Outlook
 ![Office 365 Outlook](./media/connection-office365-outlook/office365icon.png)

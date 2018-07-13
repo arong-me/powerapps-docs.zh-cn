@@ -2,17 +2,19 @@
 title: Office 365 用户连接概述 | Microsoft 文档
 description: 参阅如何连接到 Office 365 用户，遍历某些示例，并查看所有函数
 author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 06/07/2016
 ms.author: lanced
-ms.openlocfilehash: 679d9b905aa1b7d7b1b731de400e6e133787769b
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 253dcd38c4e5c35aad71ac5f220350f19715dfb3
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37897101"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018160"
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>从 PowerApps 连接到 Office 365 用户连接
 ![Office 365 用户](./media/connection-office365-users/office365icon.png)

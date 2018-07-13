@@ -2,17 +2,19 @@
 title: Microsoft Translator 连接概述 | Microsoft 文档
 description: 了解如何连接到 Microsoft Translator，逐步完成部分示例，并查看所有函数
 author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 07/12/2017
 ms.author: lanced
-ms.openlocfilehash: 7c5d4f71c44c4bf247874fbbe901731b269feabd
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.reviewer: anneta
+ms.openlocfilehash: 139f6759b95d65477de63f2c2f8abb489dfa7c74
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898506"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017976"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>从 PowerApps 连接到 Microsoft Translator
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)

@@ -2,17 +2,19 @@
 title: Twitter 连接概述 | Microsoft 文档
 description: 了解如何连接到 Twitter，逐步完成部分示例，并查看所有函数
 author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 07/12/2017
 ms.author: lanced
-ms.openlocfilehash: 33bfc61200d10ca50b80e31fec2bef62044e4be7
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 3a4abb605e6518b6e4227a08e0186ea4a344df12
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899631"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022323"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>从 PowerApps 连接到 Twitter
 ![Twitter](./media/connection-twitter/twittericon.png)

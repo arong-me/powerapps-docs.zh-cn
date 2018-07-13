@@ -1,23 +1,20 @@
 ---
 title: Exit 函数 | Microsoft 文档
 description: PowerApps 中 Exit 函数的参考信息（包括语法和示例）
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 70a5f204c0e0268a3fe6b1a5d21a8a898f3e024f
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 30a09ee69cca7c6e997101a95dc34c3a1ed55310
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "31825595"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020483"
 ---
 # <a name="exit-function-in-powerapps"></a>PowerApps 中的 Exit 函数
 退出当前运行的应用。
