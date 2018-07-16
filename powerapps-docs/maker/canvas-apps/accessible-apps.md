@@ -2,20 +2,24 @@
 title: 创建提供辅助功能的应用 | Microsoft Docs
 description: 如何确保残障人士能够访问应用
 author: fikaradz
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/03/2018
 ms.author: fikaradz
-ms.openlocfilehash: 8a7139f6dbc39bc1585156802e30236aa2b68359
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 909f71a61ca3df73b41eb9e1fe0f3dc3f52d1527
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803066"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018712"
 ---
 # <a name="create-accessible-apps"></a>创建提供辅助功能的应用
 如果应用提供辅助功能，有视力障碍、听力障碍和其他障碍的用户就可以成功使用应用。  除了遵守许多政府和组织的要求外，遵守下面的指南可以让所有用户都用起来更加方便，无论他们是否有残障。
+
+使用[辅助功能检查器](accessibility-checker.md)来帮助检查应用中的潜在辅助功能问题。 
 
 ## <a name="layout-and-color"></a>布局和颜色
 符合常理的不复杂设计有助于确保所有用户都能更轻松地使用应用。  若要大量自定义应用，请遵循以下建议。  默认情况下，PowerApps 主题可方便所有用户都轻松使用。
@@ -59,4 +63,7 @@ ms.locfileid: "34803066"
 
 
 
-相关：[辅助功能属性](controls/properties-accessibility.md)
+相关：
+- [辅助功能属性](controls/properties-accessibility.md)
+- [使用辅助功能检查器](accessibility-checker.md)
+- [PowerApps 中具有辅助功能的颜色](accessible-apps-color.md)
