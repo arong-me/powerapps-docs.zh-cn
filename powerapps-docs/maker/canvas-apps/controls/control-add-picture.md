@@ -2,17 +2,19 @@
 title: 添加图片控件：参考 | Microsoft 文档
 description: 有关添加图片控件的信息（包括属性和示例）
 author: fikaradz
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: e20d76c9e8913197d4b59380a5f91dea3851c959
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.reviewer: anneta
+ms.openlocfilehash: 694222de50280325e6648362fbe9e745131b716b
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803526"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014871"
 ---
 # <a name="add-picture-control-in-powerapps"></a>PowerApps 中的添加图片控件
 拍摄照片或加载本地设备中的图像。
@@ -143,5 +145,5 @@ ChangePictureText – 上传图像时按钮上显示的文本。
 
 ### <a name="keyboard-support"></a>键盘支持
 * “添加媒体按钮”必须具有为零或更大的 **[TabIndex](properties-accessibility.md)**，以便键盘用户可以导航到它。
-* “添加媒体按钮”必须具有清晰可见的焦点指示器。 可以使用 **[FocusedBorderColor](properties-color-border.md)** 和 **[FocusedBorderThickness](properties-color-border.md)** 来实现此目的。
+* “添加媒体按钮”必须具有清晰可见的焦点指示器。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
  
