@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: c01a69f311378e8e818036c866b96a78f223baf9
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: f2c1807f221d3134bbf39c74ae2939babbdd256e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837116"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899355"
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>PowerApps 中的 EndsWith 和 StartsWith 函数
 测试文本字符串是否以另一个文本字符串开头或结尾。
@@ -29,7 +29,7 @@ EndsWith 函数测试某个文本字符串是否以其他文本字符串结尾�
 
 这两个函数的测试均不区分大小写。  两个函数的返回值均为布尔值 true 或 false。  
 
-将 EndsWith 和 StartsWith 与 **[Filter](function-filter-lookup.md)** 函数一起使用，可以在应用中搜索数据。 还可使用 **[in](operators.md#in-and-exactin-operators)** 运算符或 **[Search](function-filter-lookup.md)** 函数在文本字符串的任意位置进行查找，不局限于开头或结尾位置。  函数的选择取决于应用需求和针对特定数据源可以[委托](../delegation-overview.md)函数类型。  如果这些函数中有一个无法被委托，则会在创作时显示一个蓝点，用以提醒此限制。
+将 EndsWith 和 StartsWith 与 **[Filter](function-filter-lookup.md)** 函数一起使用，可以在应用中搜索数据。 还可使用 **[in](operators.md#in-and-exactin-operators)** 运算符或 **[Search](function-filter-lookup.md)** 函数在文本字符串的任意位置进行查找，不局限于开头或结尾位置。  函数的选择取决于应用需求和针对特定数据源可以[委托](../delegation-overview.md)函数类型。  如果这些函数中有一个无法被委托，则会在创作时显示一个委派警告，用以提醒此限制。
 
 ## <a name="syntax"></a>语法
 **EndsWith**( *Text*, *EndText* )
@@ -43,6 +43,7 @@ EndsWith 函数测试某个文本字符串是否以其他文本字符串结尾�
 * *StartText* – 必需。  在文本开头处要搜索的文本。  如果 *StartText* 是空字符串，则 **StartsWith** 将返回 *true*。
 
 ## <a name="examples"></a>示例
+
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **EndsWith( "Hello World", "world" )** |测试“Hello World”是否以“world”结尾。  测试不区分大小写。 |**true** |

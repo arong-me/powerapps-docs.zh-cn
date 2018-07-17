@@ -1,40 +1,42 @@
 ---
 title: 单选控件：参考 | Microsoft 文档
 description: 了解单选控件（包括属性和示例）
-documentationcenter: na
 author: fikaradz
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
-ms.date: 10/25/2016
+ms.date: 07/06/2018
 ms.author: fikaradz
-ms.openlocfilehash: 8a95e84449828e77152206817f3d964315074b90
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 4b24d016eb97ca5670a1705adfe063315cb7ebca
+ms.sourcegitcommit: 16a2eeaa4ad9218682143411b609cb961dbcfa91
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837679"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37886346"
 ---
 # <a name="radio-control-in-powerapps"></a>PowerApps 中的单选控件
-显示所有选项的列表，但用户只能一次选择一个选项。
+
+输入控件，显示了多个选项，用户每次可从其中选择一个。
 
 ## <a name="description"></a>描述
-用户有几十年使用经验的“单选”控件最好只与几个互斥选项一同使用。
+
+**单选按钮**控件，标准 HTML 输入控件，在只有少量互斥选项时使用效果最佳。
+
+该控件可有水平或垂直布局。
 
 ## <a name="key-properties"></a>关键属性
-**[Default](properties-core.md)** - 用户更改控件前的初始值。
+
+**[Default](properties-core.md)** - 用户更改前的控件值。
 
 **[Items](properties-core.md)** - 控件中显示的数据源，如库、列表或图表。
 
-[!INCLUDE [long-items](../../../includes/long-items.md)]
+**Layout** - 选项是垂直还是水平布局。
 
 **[Value](properties-core.md)** – 输入控件的值。
 
 ## <a name="all-properties"></a>所有属性
+
 **[Align](properties-text.md)** – 文本相对于其控件的水平居中的位置。
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
@@ -103,7 +105,7 @@ RadioSize - 单选按钮控件中的圆圈直径。
 
 [Strikethrough](properties-text.md) – 通过文本显示的线是否在控件上显示。
 
-**[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
+**[TabIndex](properties-accessibility.md)** - 相对于其他控件的键盘导航顺序。
 
 **[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
 
@@ -118,37 +120,44 @@ RadioSize - 单选按钮控件中的圆圈直径。
 **[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="related-functions"></a>相关函数
+
 [Distinct( DataSource, ColumnName )](../functions/function-distinct.md)
 
 ## <a name="example"></a>示例
-1. 添加“单选”控件并命名为“Pricing”，然后将其**[“Items”](properties-core.md)** 属性设为以下公式：
-   <br>**["Standard", "Premium"]**
-   
-    不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
-2. 添加一个“[标签](control-text-box.md)”控件，将它移到“单选按钮”控件下方，然后将“[标签](control-text-box.md)”控件的“[Text](properties-core.md)”属性设置为以下公式：
-   <br>**If("Premium" in Pricing.Selected.Value, "$200 per day", "$150 per day")**
-   
-    想要详细了解 **[If](../functions/function-if.md)** 函数或[其他函数](../formula-reference.md)吗？
-3. 按 F5 键，然后选中“单选”控件中的任一选项。
-   
-    此时，“[标签](control-text-box.md)”控件会显示所选的相应文本。
-4. （可选）选中“单选”控件中的另一选项，以确认相应文本是否会显示。
-5. 若要返回到默认工作区，请按 Esc 键。
 
+1. 添加“单选”控件并命名为“Pricing”，然后将其**[“Items”](properties-core.md)** 属性设为以下公式：
+
+    **["Standard", "Premium"]**
+
+    不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
+
+2. 添加一个“[标签](control-text-box.md)”控件，将它移到“单选按钮”控件下方，然后将“[标签](control-text-box.md)”控件的“[Text](properties-core.md)”属性设置为以下公式：
+
+    **If("Premium" in Pricing.Selected.Value, "$200 per day", "$150 per day")**
+
+    想要详细了解 [If](../functions/function-if.md) 函数或[其他函数](../formula-reference.md)吗？
+
+3. 按住 Alt 键，同时选择单选按钮控件中的任一选项。
+
+    此时，“[标签](control-text-box.md)”控件会显示所选的相应文本。
+
+4. （可选）按住 Alt 键，选择另一选项以确认相应文本是否会显示。
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
+
 ### <a name="color-contrast"></a>颜色对比度
-在以下项之间必须有足够的颜色对比度：
-* RadioSelectionFill 和 RadioBackgroundFill
+
+除[标准颜色对比度要求](../accessible-apps-color.md)外，还要确保以下内容之间有足够的颜色对比度：
+
+* **RadioSelectionFill** 和 **RadioBackgroundFill**
 * **RadioBackgroundFill** 和 **[Fill](properties-color-border.md)**
 
-这是除[标准颜色对比度](../accessible-apps-color.md)以外的要求。
-
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* 每个单选选项都必须有一**[个值](properties-core.md)**。
+
+* 确保每个选项都有**[值](properties-core.md)**。
 * 请考虑立即在“单选”控件前添加[标签](control-text-box.md)用作标题。
 
 ### <a name="keyboard-support"></a>键盘支持
-* **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
- 
+
+* 将 **[TabIndex](properties-accessibility.md)** 属性设置为零或更大，以便键盘用户可以导航到它。
+* 设置 **[FocusedBorderColor](properties-color-border.md)** 和 **[FocusedBorderThickness](properties-color-border.md)** 属性，使焦点指示器清晰可见。

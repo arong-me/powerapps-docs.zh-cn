@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: 80d06a30dbe334f7fa9691d2a56805d53876693c
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 29d0399de5404e6bd8995e3aecaedcfd7f1db6e8
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838547"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898596"
 ---
 # <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>PowerApps 中的 Blank、Coalesce、IsBlank 和 IsEmpty 函数
 测试值是否为空白值，或测试[表](../working-with-tables.md)是否不包含任何[记录](../working-with-tables.md#records)，并能创建*空白*值。
@@ -46,7 +46,7 @@ ms.locfileid: "31838547"
 * 没有编写 **[If](function-if.md)** 函数的 *else* 部分，也就是所有条件的结果都是 **false**。
 * 使用 **[Update](function-update-updateif.md)** 函数时没有指定所有列的值。 因此，不会在没有指定值的列中替换任何值。
 
-Coalesce 函数按顺序评估其参数并返回第一个值（不是空值）。  可使用此函数将空值替换为其他值，但保留非空值不变。  如果所有参数均为空，则函数返回 blank。  Coalesce 的所有参数必须是同一种类型；例如，不能将数字和文本字符串混合在一起。  Coalesce( value1, value2 ) 是 If( IsBlank( value1 ) value1, value2 ) 更为简洁的等效项，无需评估 value1 两次。  
+Coalesce 函数按顺序评估其参数并返回第一个值（不是空值）。  可使用此函数将空值替换为其他值，但保留非空值不变。  如果所有参数均为空，则函数返回 blank。  Coalesce 的所有参数必须是同一种类型；例如，不能将数字和文本字符串混合在一起。  Coalesce( value1, value2 ) 是 If( Not( IsBlank( value1 ) ), value1, value2 ) 更为简洁的等效项，无需评估 value1 两次。  
 
 **IsEmpty** 函数用于测试表是否包含记录。 这个函数跟使用 **[CountRows](function-table-counts.md)** 函数的效果相同，只不过它是检查表中的记录数是否为零。 可以结合使用 **IsEmpty** 和 **[Errors](function-errors.md)** 函数，从而检查数据源错误。
 
@@ -74,32 +74,33 @@ Coalesce 函数按顺序评估其参数并返回第一个值（不是空值）�
 
 1. 从头开始创建应用，然后添加一个“按钮”控件。
 2. 将该按钮的 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：
-   
+
     **ClearCollect( Cities, { Name: "Seattle", Weather: "Rainy" } )**
 3. 预览应用，单击或点击所添加的按钮，然后关闭预览。  
 4. 在“文件”菜单上，单击或点击“集合”。
-   
+
      此时，“Cities”集合显示，其中包含一条内容为“Seattle”和“Rainy”的记录：
-   
+
     ![显示“Seattle”对应的“Weather”字段值为“Rainy”的集合](./media/function-isblank-isempty/seattle-rainy.png)
 5. 单击或点击后退箭头，返回到默认工作区。
 6. 添加一个“标签”控件，然后将“Text”属性设置为以下公式：
-   
+
     **IsBlank( First( Cities ).Weather )**
-   
+
     此标签显示“false”，因为“Weather”字段包含值“Rainy”。
 7. 添加第二个按钮，然后将“OnSelect”属性设置为以下公式：
-   
+
     **Patch( Cities, First( Cities ), { Weather: Blank() } )**
 8. 预览应用，单击或点击所添加的按钮，然后关闭预览。  
-   
+
     “Cities”集合中第一条记录的“Weather”字段被替换成*空白*值，删除了之前使用的“Rainy”。
-   
+
     ![显示“Seattle”对应的“Weather”字段值为空白的集合](./media/function-isblank-isempty/seattle-blank.png)
-   
+
     此标签显示“true”，因为“Weather”字段不再包含值。
 
 ### <a name="coalesce"></a>Coalesce
+
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Coalesce( Blank(), 1 )** |测试从 **Blank** 函数返回的值，此函数始终返回*空白*值。 由于第一个参数为空，因此继续评估下一个参数，直至找到非空值。 |**1** |
@@ -108,12 +109,12 @@ Coalesce 函数按顺序评估其参数并返回第一个值（不是空值）�
 ### <a name="isblank"></a>IsBlank
 1. 从头开始创建应用，然后添加一个文本输入控件，并将其命名为“FirstName”。
 2. 添加一个标签，然后将其 **[Text](../controls/properties-core.md)** 属性设置为以下公式：
-   
+
     **If( IsBlank( FirstName.Text ), "First Name is a required field." )**
-   
+
     文本输入控件的“[Text](../controls/properties-core.md)”属性默认设置为“Text input”。 因为此属性包含值，所以它不是空的，标签也不会显示任何消息。
 3. 从文本输入控件中删除所有字符（包括空格）。
-   
+
     由于“[Text](../controls/properties-core.md)”属性不再包含任何字符，因此它是*空白*的，“IsBlank( FirstName.Text )”的值为“true”。 现在就会显示“必填字段”这样的消息了。
 
 若要了解如何使用其他工具执行验证，请参阅 **[Validate](function-validate.md)** 函数和[使用数据源](../working-with-data-sources.md)。  
@@ -132,24 +133,24 @@ Coalesce 函数按顺序评估其参数并返回第一个值（不是空值）�
 ### <a name="isempty"></a>IsEmpty
 1. 从头开始创建应用，然后添加一个“按钮”控件。
 2. 将该按钮的 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：
-   
+
     **Collect( IceCream, { Flavor: "Strawberry", Quantity: 300 }, { Flavor: "Chocolate", Quantity: 100 } )**
 3. 预览应用，单击或点击所添加的按钮，然后关闭预览。  
-   
+
     创建“IceCream”集合，其中包含以下数据：
-   
+
     ![](media/function-isblank-isempty/icecream-strawberry-chocolate.png)
-   
+
     其中有两条记录，所以它不是空集。 **IsEmpty( IceCream )** 返回 **false**，**CountRows( IceCream )** 返回 **2**。
 4. 添加第二个按钮，然后将“[OnSelect](../controls/properties-core.md)”属性设置为以下公式：
-   
+
     **Clear( IceCream )**
 5. 预览应用，单击或点击第二个按钮，然后关闭预览。  
-   
+
     这个集合现在变成了空集：
-   
+
     ![](media/function-isblank-isempty/icecream-clear.png)
-   
+
     **[Clear](function-clear-collect-clearcollect.md)** 函数可删除集合中的所有记录，导致集合变成空集。 **IsEmpty( IceCream )** 返回 **true**，**CountRows( IceCream )** 返回 **0**。
 
 还可以使用 **IsEmpty** 测试一个计算的表是不是空表，请参阅以下示例：

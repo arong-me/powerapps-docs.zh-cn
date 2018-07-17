@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 08/15/2017
 ms.author: gregli
-ms.openlocfilehash: e488383acbd163383079b5078e464cab89e677ad
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a8cd998744d609c253a31271aab34a30b1e998f3
+ms.sourcegitcommit: a622db0fb3d44fa5e7ebc4bfdc77cd6acb3646be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31829039"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37843218"
 ---
 # <a name="average-max-min-stdevp-sum-and-varp-functions-in-powerapps"></a>PowerApps 中的 Average、Max、Min、StdevP、Sum 和 VarP 函数
 用于对一组数字进行汇总的聚合函数。
@@ -44,7 +44,7 @@ ms.locfileid: "31829039"
 
 这些函数只能对数值进行运算。 它们会忽略其他类型的值（例如字符串或记录）。 可使用 **[Value](function-value.md)** 函数将字符串转换成数值。
 
-当与[支持这些函数的委派的数据源](../delegation-list.md)结合使用时，可以委派 Average、Max、Min 和 Sum 函数。  但是，不能为任何数据源委派 StdevP 和 VarP。  如果不支持委派，则只会检索数据的第一个部分，然后本地应用函数。  结果可能并不是事实的全部。  系统会在你创作时显示一个蓝点，提醒注意此限制，并建议尽可能改用可委托的替代项。 有关详细信息，请参阅[委托概述](../delegation-overview.md)。
+当与[支持这些函数的委派的数据源](../delegation-list.md)结合使用时，可以委派 Average、Max、Min 和 Sum 函数。  但是，不能为任何数据源委派 StdevP 和 VarP。  如果不支持委派，则只会检索数据的第一个部分，然后本地应用函数。  结果可能并不是事实的全部。  系统会在你创作时显示一个委派警告，提醒注意此限制，并建议尽可能改用可委托的替代项。 有关详细信息，请参阅[委托概述](../delegation-overview.md)。
 
 ## <a name="syntax"></a>语法
 **Average**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**Max**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**Min**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**Sum**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**StdevP**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**VarP**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )

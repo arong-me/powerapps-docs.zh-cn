@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 78615949ab5c05b4cf7da56eae23dd1a0194c7ff
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ac74f459c35e7b2ec123540a5cf55c1ad6a21c0a
+ms.sourcegitcommit: 8d9e5f44bcd5cecd24de2c99d5ba04df9ea67275
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838685"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37406014"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>PowerApps 中的编辑窗体和显示窗体控件
 在数据源中显示、编辑和创建记录。
@@ -151,9 +151,9 @@ Valid – [卡片](control-card.md)或“编辑窗体”控件是否包含可以
 
 * 此属性仅适用于“编辑窗体”控件。
 * “窗体”控件的“Valid”属性聚合该窗体中所有[卡片](control-card.md)控件的“Valid”属性。 仅当窗体中所有卡片的数据都有效时，该窗体的“Valid”属性才为“true”；其他情况下，该窗体的“Valid”属性为“false”。
-* 若只允许按钮在窗体中的数据为有效数据且尚未提交的情况下保存所做的更改，请将按钮的“Enabled”设置为以下公式：
+* 若只允许按钮在窗体中的数据为有效数据且尚未提交的情况下保存所做的更改，请将按钮的 DisplayMode 属性设置为以下公式：
   
-    SubmitButton.Enabled = IsBlank( Form.Error ) || Form.Valid
+    **SubmitButton.DisplayMode = If(IsBlank( Form.Error ) || Form.Valid, DisplayMode.Edit, DisplayMode.Disabled)**
 
 ## <a name="additional-properties"></a>其他属性
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。

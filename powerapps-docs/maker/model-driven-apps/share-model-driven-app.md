@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 4068bbc4e67adee344544c0ba69895244d3dab83
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 134ae4dfb5fe111c4c40e96efa1e79a3993c4a46
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330367"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899746"
 ---
 # <a name="tutorial-share-a-model-driven-app-with-powerapps"></a>教程：借助 PowerApps 共享模型驱动应用
 
@@ -56,7 +56,7 @@ ms.locfileid: "32330367"
 4. 从安全角色设计器中选择操作（例如读取、写入或删除）和操作对应的执行范围。 执行范围决定了用户在环境层次结构中执行特定操作的深度或高度。 在“角色名称”框中，输入“宠物美容技术员”。
 5. 选择“自定义实体”选项卡，然后找到需要的自定义实体。 本例使用名为“宠物”的自定义实体。 
 6. 在“宠物”行中，选择下列每个特权四次，直到将其对应的组织范围选为![组织全局范围](media/share-model-driven-app/organizational-scope-privilege.png)为止：读取、写入、追加
-![新建安全角色](media/share-model-driven-app/custom-security-role.png)
+   ![新建安全角色](media/share-model-driven-app/custom-security-role.png)
 7. 由于宠物美容应用还与帐户实体相关，请选择“核心记录”选项卡，然后在“帐户”行中选择“读取”四次，直到将组织范围选为![组织全局范围](media/share-model-driven-app/organizational-scope-privilege.png)为止。 
 8. 选择“保存并关闭”。 
 9. 在安全角色设计器上的“角色名称”框中，输入“宠物美容计划员”。 
@@ -68,6 +68,10 @@ ms.locfileid: "32330367"
 
 ## <a name="assign-security-roles-to-users"></a>为用户分配安全角色
 安全角色通过一组访问级别和权限控制用户对数据的访问。 特定的安全角色包括访问级别和权限的组合，这种组合限制了用户对数据的查看以及与数据的交互操作。
+
+> [!IMPORTANT]
+> 若要使用模型驱动应用，无论你向环境中的所有应用用户分配何种其他安全角色，他们都必须至少具有 Common Data Service 用户安全角色。 在大多数情况下，Common Data Service 用户安全角色提供了足够的特权，允许用户执行使用应用所需的基本任务。
+> 请注意，具有 Common Data Service 用户安全角色的用户还具有所有帐户、联系人和连接标准实体记录的读取和写入访问权限，无论这些记录的所有者是谁。 如果不希望应用用户拥有对这些记录的特权，请创建自定义安全角色。 最简单方法是复制 Common Data Service 用户安全角色并删除相应权限。 详细信息：[复制安全角色](https://docs.microsoft.com/dynamics365/customer-engagement/admin/copy-security-role)
 
 ### <a name="assign-a-security-role-to-pet-grooming-technicians"></a>为“宠物美容技术员”分配安全角色
 1. 在“共享此应用”对话框中，选择“向用户分配安全角色”下的“安全用户”。

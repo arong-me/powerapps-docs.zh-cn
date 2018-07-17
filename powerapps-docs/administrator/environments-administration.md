@@ -8,12 +8,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 3e3cd3b7339303e23411f3ef977cc33db6e5e8e0
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 7fb35c1c59062b892fdd8e3a905d3ee485f6cf61
+ms.sourcegitcommit: 26932abc6fcdc5e6723b64b506532bb182ab3f8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445674"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37026225"
 ---
 # <a name="administer-environments-in-powerapps"></a>管理 PowerApps 中的环境
 在 [PowerApps 管理中心][1]内，管理已创建的环境及已将已添加到其环境管理员或系统管理员角色的环境。 从管理中心可执行以下管理操作：
@@ -57,6 +57,10 @@ ms.locfileid: "34445674"
 如果你是 Azure AD 或 Office 365 租户的“全局管理员”角色的成员，将显示租户中用户创建的所有环境，因为你已自动成为所有这些环境的环境管理员。
 
 ## <a name="rename-your-environment"></a>重命名环境
+
+> [!IMPORTANT]
+> 按照本部分中的步骤，对不包含数据库的生产环境进行重命名。 无法重命名试用环境，必须使用 Dynamics 365 管理中心重命名任何包含数据库的生产环境。
+
 1. 打开 [PowerApps 管理中心][1]，在列表中找到要重命名的环境，然后单击或点击它。
 
     ![](./media/environment-admin/environment-list-updated3.png)
@@ -191,10 +195,6 @@ PowerApps 计划 2。  有关包含此许可证的所有计划的详细信息，
 1. **默认环境**：租户的默认环境目前不支持创建数据库。 
 
 2. **个人使用环境**：通过注册 PowerApps 社区计划获得个人使用环境。 如果尚未创建数据库，则目前无法在个人使用环境中预配数据库。 
-
-3. **环境位于 AAD 租户主区域以外的区域**：目前，仅可在 Azure Active Directory 租户主区域中创建的环境中预配数据库。 即将推出在其他区域中预配数据库这一功能。 因此，如果要在环境中创建数据库，请确保环境区域与租户默认位置所在区域相同。
-
-4. **某些区域不支持创建数据库**：某些区域尚不支持创建数据库。 例如，南美洲的国家/地区。 因此，如果租户主位置位于南美洲，则目前无法在任何环境中预配数据库。 
     
 我们正在努力为以上所有情况提供支持。
 如果收到任何其他错误消息或有更多疑问，请在[此处][5]与我们联系

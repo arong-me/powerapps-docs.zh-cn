@@ -5,19 +5,29 @@ author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 03/07/2018
+ms.date: 07/09/2018
 ms.author: matp
-ms.openlocfilehash: 4aed5f0d34bf88bca706c1c6421ac3b692308ebb
-ms.sourcegitcommit: 63351b1bda5a8dd00786912f95aba9fb3ebfe75c
+manager: kvivek
+ms.custom: ''
+ms.reviewer: ''
+ms.assetid: ''
+ms.openlocfilehash: b0b0cb39cf0a7d49ca24d31c2803ae463df2f97e
+ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36261709"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37925630"
 ---
 # <a name="quickstart-run-an-app-in-a-web-browser"></a>快速入门：在 Web 浏览器中运行应用
 在创建应用或者某人与你共享应用时，可以在 Windows、iOS、Android 上或 Web 浏览器中运行此应用。 在本快速入门教程中，你将了解如何在 Web 浏览器中从 [Dynamics 365 主页](https://home.dynamics.com)运行画布或模型驱动应用。
 
-若要遵循本快速入门教程，需要包括 Dynamics 365 的 [Microsoft Office 365 订阅](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)，以及对[受支持的浏览器和操作系统](../maker/canvas-apps/limits-and-config.md)的访问权限。 此外，请确保有权访问自己生成的应用，或者是其他人生成并与你共享的应用。
+要按本快速入门教程操作，需要以下内容：
+- PowerApps 许可证。 它随附在 PowerApps 计划（例如 [PowerApps 计划 2 试用版](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)）或包含 PowerApps 的任一 [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) 或 [Dynamics 365](https://dynamics.microsoft.com/pricing/) 计划中。 
+- 对你生成的或其他人生成并与你共享的应用的访问权限。
+- 对受支持的 Web 浏览器和操作系统的访问权限。
+   - 对于画布应用，请参阅：[系统要求、限制和配置值](../maker/canvas-apps/limits-and-config.md)
+   - 对于模型驱动应用，请参阅：[支持的 Web 浏览器和移动设备](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)
+
 
 ## <a name="sign-in-to-dynamics-365"></a>登录到 Dynamics 365
 在 [https://home.dynamics.com](https://home.dynamics.com) 上登录到 Dynamics 365。

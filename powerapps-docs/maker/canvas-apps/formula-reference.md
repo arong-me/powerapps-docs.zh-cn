@@ -1,23 +1,19 @@
 ---
 title: 函数、信号和枚举 |Microsoft 文档
 description: 有关 PowerApps 中的函数、信号和枚举的参考信息。
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 06/05/2018
 ms.author: gregli
-ms.openlocfilehash: af089f81b8fd96ec022fe32495cb14f2827f28b5
-ms.sourcegitcommit: 045c96df42405c60c7675edbadac93455270a021
+ms.openlocfilehash: b131f9da9dbf0624185fc837c5582c9ef0477089
+ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34822572"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948587"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps 的公式参考
 公式组合了许多元素。  下面列出的包括：
@@ -65,6 +61,8 @@ ms.locfileid: "34822572"
 
 **[Char](functions/function-char.md)** – 将字符代码转换为字符串。
 
+**[Choices](functions/function-choices.md)** - 返回查找列可能值的表。
+
 **[Clear](functions/function-clear-collect-clearcollect.md)** – 删除某个[集合](working-with-data-sources.md#collections)中的所有数据。
 
 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** – 删除某个集合中的所有数据，然后添加一组[记录](working-with-tables.md#records)。
@@ -86,6 +84,8 @@ ms.locfileid: "34822572"
 **[Concat](functions/function-concatenate.md)** – 连接数据源中的字符串。  
 
 **[Concatenate](functions/function-concatenate.md)** – 连接字符串。
+
+**[Concurrent](functions/function-concurrent.md)** - 并发计算多个公式。 
 
 **[Connection](functions/signals.md)** – 返回关于你的网络连接的信息。
 
@@ -280,7 +280,9 @@ ms.locfileid: "34822572"
 
 **[Second](functions/function-datetime-parts.md)** – 检索日期/时间值的秒部分。
 
-[Set](functions/function-set.md) – 设置全局变量的值。
+**[Select](functions/function-select.md)** - 在控件上模拟选择操作，导致对 **OnSelect** 公式进行求值。
+
+**[Set](functions/function-set.md)** – 设置全局变量的值。
 
 **[ShowColumns](functions/function-table-shaping.md)** – 返回仅包含所选列的表。
 

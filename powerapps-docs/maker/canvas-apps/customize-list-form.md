@@ -1,177 +1,204 @@
 ---
-title: 使用 PowerApps 自定义 SharePoint 列表窗体 | Microsoft 文档
-description: 使用 PowerApps 自定义 SharePoint 中的列表窗体。
-documentationcenter: na
-author: aftowen
-manager: kfile
-editor: ''
-tags: ''
+title: 自定义 SharePoint 列表窗体 | Microsoft Docs
+description: 使用 PowerApps 自定义窗体，供用户创建和更新 SharePoint 列表中的条目。
+author: AFTOwen
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
 ms.component: canvas
-ms.date: 02/05/2018
+ms.date: 06/11/2018
 ms.author: anneta
-ms.openlocfilehash: 34c4e4126015f9a5f53ef6f07c9c66e4a4141db0
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 1ab7b6bc5f8e2617fc3d66bcdac40b930805d14d
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330390"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37900091"
 ---
-# <a name="customize-a-sharepoint-list-form-using-powerapps"></a>使用 PowerApps 自定义 SharePoint 列表窗体
+# <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>使用 PowerApps 自定义 SharePoint 列表窗体
 
-现在可以在 PowerApps 中轻松自定义任何 SharePoint 列表窗体。 使用 InfoPath 自定义 SharePoint 列表窗体的大部分操作，现在都可以在 PowerApps 的浏览器中进行内联。 此外，PowerApps 还可以让你执行更多的操作！
+在浏览器中打开 PowerApps，可轻松自定义 SharePoint 列表窗体。 不必编写传统代码（例如 C#）或下载其他应用（例如 InfoPath）。 发布更改时，窗体嵌入到 SharePoint 列表中，供其所有用户使用。 在 PowerApps 中，还可查看分析报告、轻松创建条件格式、连接到其他数据源。
 
-PowerApps 与 SharePoint 直接集成 - 无需将另一个应用下载到计算机。 通过 PowerApps，可以创建高度自定义窗体而无需编写任何代码。 发布后，窗体将嵌入 SharePoint 列表，并且可供列表所有用户使用。
-
-而且，由于 PowerApps 无缝集成到 SharePoint 中，因此，无需从两个位置来管理窗体：权限继承自 SharePoint 并在其中托管。 最重要的是，将 PowerApps 与 SharePoint 集成后，你可以访问许多强大的功能，例如分析报告、用于条件格式化的简单点击规则，以及与其他数据源的连接。
-
-准备好开始进行自定义了吗？ 让我们开始吧！
-
-## <a name="create-a-custom-list-form-app-in-powerapps"></a>在 PowerApps 中创建自定义列表窗体应用
+若要按照本主题中的步骤操作，请创建一个简单列表，了解自定义的工作原理，然后可将相同的概念应用到你自己的列表。
 
 > [!NOTE]
-> 如果 SharePoint 列表包含 PowerApps 不支持的数据类型，则“自定义窗体”选项将不可用，或者可能无法正常工作。
+> 如果“自定义窗体”选项不可用或对你的列表无效，则它可能包含[ PowerApps 不支持](connections/connection-sharepoint-online.md#known-issues)的数据类型。 此外，不能将窗体移到其他列表或[环境](working-with-environments.md)。
 
-在 SharePoint 列表中，单击或点击命令栏中的“PowerApps”，然后单击或点击“自定义窗体”。 此操作将使你进入浏览器中 PowerApps Studio，其中 PowerApps 会生成单屏幕窗体应用，如下例所示。
+## <a name="prerequisites"></a>先决条件
 
-![单屏幕窗体应用](./media/customize-list-form/list-form-app.png)
+在 SharePoint 站点上创建包含以下列的列表：
 
-若要随时返回到 SharePoint 列表，请单击或点击 PowerApps Studio 左上角的“返回 SharePoint”。
+- **ProductName**（单行文本）
+- **Details**（是/否）
+- **Price**（货币）
+- **Availability**（不含时间的日期）
+- **Color**（选项）
 
-## <a name="customize-the-list-form"></a>自定义列表窗体
+## <a name="open-the-form-in-powerapps"></a>在 PowerApps 中打开窗体
 
-PowerApps 提供了多种自定义窗体的方法。 下面是一些示例：
+1. 打开你创建的列表，然后在命令栏中选择“新建”。
 
-* [更改大小和方向](set-aspect-ratio-portrait-landscape.md)
-* [设置文本格式](controls/properties-text.md)
-* [添加图像](add-images-pictures-audio-video.md)或[图表](use-line-pie-bar-chart.md)
-* [添加自定义数据验证](functions/function-validate.md)
-* [添加规则](working-with-rules.md)
-* [创建其他视图](https://powerapps.microsoft.com/blog/separate-custom-forms/)
+    窗体将会打开，并显示你添加的字段，以及 Title 和 Attachments。
 
-举例来说，假设需要在表单中隐藏“AccountID”字段。
+1. 在窗体顶部附近，选择“自定义”。
 
-![选择“AccountID”字段](./media/customize-list-form/select-card.png)
+    PowerApps Studio 在同一个浏览器选项卡中打开。
 
-在 PowerApps 中隐藏该字段非常简单 - 只需在窗体自定义选项中清除“AccountID”复选框。
+1. 如果打开“欢迎使用 PowerApps Studio”对话框，则选择“跳过”。
 
-![清除“AccountID”复选框](./media/customize-list-form/checkbox.png)
+## <a name="hide-extra-fields"></a>隐藏额外字段
 
-有关如何隐藏字段和更改其他窗体的分步说明，请参阅[在 PowerApps 中自定义窗体](customize-forms-sharepoint.md)。 有关资源的完整列表，请参阅 [Microsoft PowerApps 文档](https://docs.microsoft.com/powerapps/)。
+在屏幕中央，PowerApps 会显示你的窗体，但它包含你可能不想显示的字段。
 
-## <a name="save-and-publish-the-list-form-back-to-sharepoint"></a>保存并将列表窗体发布回 SharePoint
+- 在“数据”窗格中，清除这些字段的复选框。
 
-1. 完成后，单击或点击“文件”，然后单击或点击“保存”。 此操作会将你所做的更改保存到 PowerApps 窗体应用。
+  - **Title**
+  - **Modified**
+  - **Created**
+  - **Created By**
+  - **Modified By**
+  - **ID**
 
-1. 若要将窗体发布回 SharePoint 以便其他人使用，单击或点击“发布到 SharePoint”。 无需担心共享窗体 - 窗体从 SharePoint 列表继承权限。
+    这些字段会从窗体中消失，只留下你创建的字段。
 
-    ![发布到 SharePoint](./media/customize-list-form/publish-to-sharepoint.png)  
+    ![字段列表](./media/customize-list-form/field-list.png)
 
-## <a name="view-your-list-form-in-sharepoint"></a>在 SharePoint 中查看列表窗体
+## <a name="set-conditional-formatting"></a>条件格式设置
 
-1. 若要查看自定义窗体，请单击或点击“返回 SharePoint”，然后单击或点击 SharePoint 列表中的任何项。 窗体在浏览器窗口的右侧以内联方式打开。
+仅当 Details 设置为“是”时，才能将 Price、Availability 和 Colors 字段配置为显示出来。
 
-    ![在 SharePoint 中以内联方式打开窗体](./media/customize-list-form/list-form-open.png)
+1. 通过单击或点击选择 Price 卡。
 
-1. 如果要[进一步自定义窗体](sharepoint-form-integration.md)，单击或点击“自定义”，然后进行更改。 完成后，请务必保存所做的更改。
+    ![选择 Availability 卡](./media/customize-list-form/select-card.png)
 
-    ![“自定义”按钮](./media/customize-list-form/customize-button.png)
+1. 在属性列表中，选择“Visible”。
 
-    可以根据需要多次进行自定义和保存，但在单击或点击“发布到SharePoint”后，所做的更改才可以在 SharePoint 中看到。
+    ![选择 Visible 属性](./media/customize-list-form/select-property.png)
 
-## <a name="toggle-between-using-the-default-sharepoint-form-and-the-custom-form"></a>在使用默认 SharePoint 窗体和自定义窗体之间切换
+1. 在编辑栏中，键入或粘贴以下公式：
 
-1. 在 SharePoint 列表中，依次单击或点击“设置”、“列表设置”和“窗体设置”。
+    **If(DataCardValue3.Value = true, true)**
 
-1. 在“窗体设置”页上，单击或点击以下内容之一，然后单击或点击“确定”。
+    ![设置 Visible 属性的值](./media/customize-list-form/build-formula.png)
 
-    * 使用默认的 SharePoint 窗体 - SharePoint 将对列表使用默认的 SharePoint 窗体。
+1. 对 Availablity 和 Color 卡重复最后三个步骤。
 
-    * 使用在 PowerApps 中创建的自定义窗体 - SharePoint 将使用你在 PowerApps 中自定义的窗体。 （或者，你也可以在 PowerApps Studio 中的“保存”页上重新发布窗体。）
+1. 按住 Alt 键，（通过单击或点击）多次选择 Details 开关。
+
+    你配置的三个字段将在窗体中显示和消失。
+
+1. （可选）用其他多种方法自定义窗体，包括：
+
+    - 更改其大小和/或方向（例如，[加宽窗体](set-aspect-ratio-portrait-landscape.md)）。
+    - 添加一个控件，以便用户可以[上传附件](controls/properties-text.md)。
+    - 创建[查找字段](sharepoint-lookup-fields.md)。
+
+## <a name="save-publish-and-show-the-form"></a>保存、发布和显示窗体
+
+1. 打开“文件”菜单，选择“保存”，然后选择“发布到 SharePoint”两次。
+
+1. 在左上角，选择返回箭头，然后选择“返回 SharePoint”。
+
+1. 在命令栏中，选择“新建”打开自定义窗体。
+
+1. 多次选择“Details”开关，隐藏和显示最后三个字段。
+
+若要[进一步自定义窗体](sharepoint-form-integration.md)，请打开它，在窗体顶部附近选择“自定义”，然后进行、保存和发布更改。
+
+## <a name="use-the-default-form"></a>使用默认窗体
+
+1. 从 SharePoint 列表中，（通过选择右上角附近的齿轮图标）打开设置页，并选择“列表设置”。
+
+2. 在“常规设置”下，选择“窗体设置”。
+
+3. 在“窗体设置”页上，选择以下选项之一，然后选择“确定”。
+
+    - **使用默认 SharePoint 窗体** - 当用户打开你的列表并在命令栏中选择“新建”时，将显示该列表的默认窗体。
+
+    - **使用在 PowerApps 中创建的自定义窗体** - 当用户打开你的列表并在命令栏中选择“新建”时，将显示自定义窗体。 （或者，可以在 PowerApps 中再次发布窗体。）
 
     可以根据需要在选项之间反复切换。
 
     ![窗体设置选项](./media/customize-list-form/form-settings.png)
 
-## <a name="delete-the-custom-list-form"></a>删除自定义列表窗体
+## <a name="delete-the-custom-form"></a>删除自定义窗体
 
-1. 在 SharePoint 列表中，依次单击或点击“设置”、“列表设置”和“窗体设置”。
+1. 从 SharePoint 列表中，（通过选择右上角附近的齿轮图标）打开设置页，并选择“列表设置”。
 
-1. 在“窗体设置”页上，单击或点击“使用默认的 SharePoint 窗体”，然后在“使用在 PowerApps 中创建的自定义窗体”选项下，单击或点击“删除自定义窗体”。 这将删除在 PowerApps 中创建的自定义窗体，并且你的窗体将恢复到默认 SharePoint 窗体。
+1. 在“常规设置”下，选择“窗体设置”。
+
+1. 在“窗体设置”页上，选择“使用默认 SharePoint 窗体”，然后选择“删除自定义窗体”。
 
     ![删除自定义窗体](./media/customize-list-form/use-default-sharepoint.png)
 
-## <a name="top-questions-about-list-form-customization"></a>有关列表窗体自定义的常见问题
+## <a name="q--a"></a>问题解答
 
-### <a name="customizing-forms-versus-creating-apps"></a>自定义窗体和创建应用
+### <a name="forms-vs-apps"></a>窗体与应用
 
-问：自定义的列表窗体与我从 SharePoint 或 PowerApps 创建的独立应用有何区别？
+问：自定义窗体与从 SharePoint 或 PowerApps 创建的独立应用有何区别？
 
-答：从 Sharepoint 创建的列表窗体应用是特殊类型的 PowerApps 应用，只能在 SharePoint 列表中使用。 这些列表窗体应用不会出现在 PowerApps Studio 或 PowerApps Mobile 的应用列表中，也无法在 SharePoint 列表之外运行它们。
+答：如果为 SharePoint 列表自定义窗体，窗体不会在 PowerApps Studio 或 PowerApps Mobile 中显示为应用。 只能从为其创建窗体的列表打开该窗体。
 
-问：应何时创建自定义的列表窗体，以及何时创建独立应用？
+问：何时应自定义窗体以管理 SharePoint 列表中的数据，何时应创建独立应用？
 
-答：如果你希望用户使用 SharePoint 访问窗体，并且想要自定义它们创建、查看或编辑列表项的方式，我们建议在 SharePoint 中创建自定义列表窗体。 如果想要为用户创建独立于 SharePoint 网站可以单独使用的完全自定义体验，我们建议创建独立应用。
+答：如果希望用户无需离开 SharePoint 即可管理数据（例如在桌面浏览器中），请自定义表单。 如果你希望用户在 SharePoint 外部（例如在移动设备上）管理数据，请创建应用。
 
-问：我可以自定义列表窗体并为相同列表创建独立应用吗？
+问：对于同一列表，可以既自定义窗体又创建应用吗？
 
-答：可以。 独立应用和自定义列表窗体均相互独立；你可以自定义和单独管理它们。
+答：可以。
 
-问：用于自定义列表窗体的自定义功能是否与自定义独立应用的自定义功能相同？
+问：可以使用相同功能自定义窗体和创建应用吗？
 
-答：相同。 你可以像对独立应用那样[添加和配置控件](add-configure-controls.md)、[连接到可用数据源](add-data-connection.md)，或[添加你自己的数据源](../canvas-apps/register-custom-api.md)。
+答：可以。
 
-问：在我的组织中，除了默认环境之外，我还能创建自定义列表窗体吗？
+问：可以在组织中的默认环境之外自定义窗体吗？
 
-**答：** 不能。 当前只能在组织的默认 PowerApps 环境中创建自定义列表窗体；不能在另一个环境中创建自定义列表窗体，也不能将它们迁移到另一个环境。
+**答：** 不能。
 
-### <a name="managing-your-custom-list-form"></a>管理自定义列表窗体
+### <a name="manage-your-custom-form"></a>管理自定义窗体
 
-问：如何获取可与他人共享的列表窗体的直接链接？
+问：如何轻松与他人共享我的窗体？
 
-答：在 SharePoint 列表中打开窗体，然后单击或点击“复制链接”。
+答：打开窗体，选择“复制链接”，并将链接发送给你希望其使用窗体的任何人。
 
-问：能否更新列表窗体，而不让其他人看到我的更改？
+问：能否更新窗体，而不让其他人看到我的更改？
 
-答：可以。 可以根据需要多次进行更改和保存，但所做的更改对其他人不可见，直到你单击或点击[发布到SharePoint](customize-list-form.md#save-and-publish-the-list-form-back-to-sharepoint)。
+答：可以。 可以根据需要多次进行更改和保存，但所做的更改对其他人不可见，除非你两次选择“发布到 SharePoint”。
 
 问：如果我自定义列表窗体但出现一个错误，是否可以还原到以前的版本？
 
-答：可以。 如果你对窗体进行更改并保存这些更改，但随后发现出现了错误，可以使用 PowerApps 还原到窗体的以前版本：
+答：可以。
 
-1. 在 SharePoint 列表中，单击或点击命令栏中的“PowerApps”，然后单击或点击“自定义窗体”。
+1. 打开列表，在命令栏上选择“PowerApps”，然后选择“自定义窗体”。
 
-1. 在 PowerApps Studio 中，单击或点击“文件”，然后在“保存”页上，单击或点击“查看所有版本”。 “版本”页将在新的浏览器选项卡中打开。
+1. 在 PowerApps Studio 中，选择“文件”，然后选择“查看所有版本”。 “版本”页将在新的浏览器选项卡中打开。
 
     > [!NOTE]
-    > 如果看不到“查看所有版本”按钮，单击或点击“保存”， 应会显示此按钮。
+    > 如果看不到“查看所有版本”按钮，请选择“保存”。 应会显示此按钮。
 
-1. 无需关闭“版本”页或浏览器选项卡，返回到其他浏览器选项卡中的“保存”页，单击或点击左侧导航窗格顶部的箭头，然后单击或点击“返回 SharePoint”来解锁窗体，并退出 PowerApps Studio。
+1. 无需关闭“版本”页或浏览器选项卡，返回到其他浏览器选项卡中的“保存”页，单击或点击左侧导航窗格顶部的箭头，然后单击或点击“返回 SharePoint”来解锁窗体，并关闭 PowerApps Studio。
 
-1. 返回到其他浏览器选项卡中的“版本”页，找到你想要还原的版本，然后单击“还原”。
+1. 返回到其他浏览器选项卡中的“版本”页，找到你想要还原的版本，然后选择“还原”。
 
     > [!NOTE]
     > 如果收到一条错误消息，指示由于窗体被另一个用户锁定而导致还原失败，请等待用户解锁窗体，然后重试。
 
-问：能否将我的自定义列表窗体从一个列表移动到另一个列表？
+问：能否将窗体从一个列表移动到另一个列表？
 
-**答：** 不能。 当前不支持此功能。
+**答：** 不能。
 
-### <a name="administering-custom-list-forms"></a>管理自定义列表表单
+### <a name="administer-your-custom-form"></a>管理自定义窗体
 
-问：如何与其他人共享我的自定义列表窗体？
+问：如何共享窗体？
 
 答：无需共享窗体 - 窗体从 SharePoint 列表继承权限。 完成自定义后，只需[将其发布回 SharePoint](customize-list-form.md#save-and-publish-the-list-form-back-to-sharepoint)，便可供其他人使用。
 
-问：谁可以自定义列表窗体？
+问：谁可以自定义窗体？
 
 答：任何具有 SharePoint 权限的人员都可以管理、设计或编辑关联的列表。
 
 **问：** 是否需要使用 PowerApps 许可证才能创建或使用自定义列表表单？
 
-**答：** 若有任何[包含 PowerApps 的 Office 365 计划](../../administrator/pricing-billing-skus.md#licenses)，便可以创建或使用自定义列表表单。
+答：需要[包含 PowerApps 的 Office 365 计划](../../administrator/pricing-billing-skus.md#licenses)。
 
 问：当来宾用户访问具有自定义窗体的列表时，会发生什么情况？
 
@@ -181,9 +208,9 @@ PowerApps 提供了多种自定义窗体的方法。 下面是一些示例：
 
 答：如果你是 PowerApps 的租户管理员，或者对组织的默认 PowerApps 环境具有环境管理员权限，请执行以下操作：
 
-1. 转到 [PowerApps 管理中心](https://admin.powerapps.com)，从环境列表中选择组织的默认环境。
+1. 在 [PowerApps 管理中心](https://admin.powerapps.com)，从环境列表中选择组织的默认环境。
 
-1. 在默认环境页顶部，单击或点击“资源”。
+1. 在默认环境页顶部，选择“资源”。
 
 1. 从应用的列表中，查找应用类型为 SharePoint 窗体的应用 - 这些是自定义窗体。
 

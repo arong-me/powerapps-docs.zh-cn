@@ -1,23 +1,18 @@
 ---
 title: 了解表 | Microsoft 文档
 description: 有关使用表、列和记录的参考信息
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
 ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 42a7c0db6aaf46d8cdbd112cf72c6f95f58dc9ec
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 6144d66849316dc2b355b0cb9a56959e10f8a319
+ms.sourcegitcommit: 76ffec3b4d9c18a01f19c583435541ae165a8234
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31839168"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37864252"
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>了解 PowerApps 中的表和记录
 可以创建一个应用，用于访问 Microsoft Excel、SharePoint、SQL Server 以及在记录和表中存储数据的其他多个源中的信息。 若要最有效地处理此类数据，请查看这些结构的基本概念。
@@ -91,26 +86,28 @@ ms.locfileid: "31839168"
 
 让我们演练一些简单的示例。
 
-1. 添加一个“文本库”控件，并将其 **[Items](controls/properties-core.md)** 属性设置为表的名称。
-   
-    默认情况下，该库显示名为 **TextualGallerySample** 的表中的占位符文本。 库的 **[Items](controls/properties-core.md)** 属性将自动设置为该表。
-   
-    > [!NOTE]
-> 为方便演示，已重新排列并放大一些控件。
-   
+1. 创建适用于手机的空白应用，并添加含有其他控件的垂直[图库](controls/control-gallery.md)控件。
+
+    默认情况下，屏幕显示名为 CustomGallerySample 的表中的占位符文本。 屏幕**[图库](controls/control-gallery.md)** 控件的 **[Items](controls/properties-core.md)** 属性将自动设置为该表。
+
     ![](media/working-with-tables/gallery-items.png)
+
+    > [!NOTE]
+    > 为方便演示，已重新排列并放大一些控件。
+
 2. 以下示例未将 **[Items](controls/properties-core.md)** 属性设置为表的名称，而是设置为将表名称包含为参数的公式：<br>
-   **Sort(TextualGallerySample, Heading, Descending)**
-   
+    **Sort(CustomGallerySample, SampleHeading, Descending)**
+
     此公式融入了 **[Sort](functions/function-sort.md)** 函数，该函数将表的名称用作第一个参数，将该表中某个列的名称用作第二个参数。 该函数还支持可选的第三个参数，该参数规定要按降序对数据排序。
-   
+
     ![](media/working-with-tables/gallery-items-sort.png)
+
 3. 以下示例将 **[Items](controls/properties-core.md)** 属性设置为一个公式，该公式使用上一步骤中的公式作为参数并返回一个表：<br>
-   **FirstN(Sort(TextualGallerySample, Heading, Descending), 2)**
-   
+   **FirstN(Sort(CustomGallerySample, SampleHeading, Descending), 2)**
+
     此公式使用 **[FirstN](functions/function-first-last.md)** 函数显示表中特定数量的记录。 使用 **[Sort](functions/function-sort.md)** 函数作为 **[FirstN](functions/function-first-last.md)** 的第一个参数，使用一个数字（在本例中为 **2**）作为第二个参数，该数字指定要显示的记录数。
    
-    整个公式返回一个表，其中包含 **TextualGallerySample** 表的前两条记录，这些记录已按 **Heading** 列的降序排序。
+    整个公式返回一个表，其中包含 CustomGallerySample 表的前两条记录，这些记录已按 SampleHeading 列的降序排序。
    
     ![](media/working-with-tables/gallery-items-sort-firstn.png)
 
@@ -139,7 +136,7 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 * **[Update](functions/function-update-updateif.md)**、**[UpdateIf](functions/function-update-updateif.md)** – 更新与指定的一个或多个条件匹配的记录。
 * **[Remove](functions/function-remove-removeif.md)**、**[RemoveIf](functions/function-remove-removeif.md)** – 删除与指定的一个或多个条件匹配的记录。
 
-以下控件使用表类型的属性：
+这些属性将设置为表类型的值：
 
 * **Items** – 适用于库和列表框。 要在库中显示的表。
 * **SelectedItems** – 适用于列表框。 用户选择的项表。
@@ -150,24 +147,27 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 1. 添加一个按钮，然后将其 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：<br>
     Collect( SelectedRecord, Gallery1.Selected )
 
-2. 如果不选择该按钮，请单击将它选中，然后再次单击即可运行该公式。
+2. 按住 Alt 键，并选择按钮。
 
 3. 在“文件”菜单中选择“集合”。
 
-![](media/working-with-tables/selected-collection.png)
+    ![](media/working-with-tables/selected-collection.png)
 
-此公式返回的一条记录不仅包含当前在该库中选择的记录中的数据，而且还包含该库中的每个控件。 例如，记录中包含与原始表中“Body”列匹配的“Body”列，以及表示用于显示此列中数据的标签的“Body1”列。 在 **Body1** 列中选择表图标可深入到该数据。
+此公式返回的一条记录不仅包含当前在该库中选择的记录中的数据，而且还包含该库中的每个控件。 例如，记录中包含与原始表中 SampleText 列匹配的 SampleText 列，以及表示用于显示此列中数据的标签的 Subtitle1 列。 在 Subtitle1 列中选择表图标可深入到该数据。
+
+> [!NOTE]
+> 如果已添加本主题所指定以外的元素，Subtitle1 列可能名为 Subtitle2 等。
 
 选择记录后，可以使用 **.** 运算符从中提取单个字段 。
 
-1. 按 Esc 键返回到默认工作区，然后在库下面添加一个标签。
+1. 添加**[标签](controls/control-text-box.md)** 控件，并将其移动到库和按钮下。
 
-2. 将标签的“[Text](controls/properties-core.md)”属性设置为以下公式：<br>
-    Gallery.Selected.Heading
+1. 将标签的 **[Text](controls/properties-core.md)** 属性设置为以下表达式：<br>
+    **"Selected: " & Gallery1.Selected.SampleHeading**
    
     ![](media/working-with-tables/gallery-selected.png)
 
-现已获取属于记录的 **Selected** 属性，并从中提取了 **Heading** 属性。  
+采用了 **Selected** 属性（它是一个记录），并从中提取了 **SampleHeading** 属性。
 
 可以使用记录作为相关命名值的通用容器。
 
@@ -235,10 +235,10 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 ### <a name="disambiguation"></a>消除歧义
 使用记录范围添加的字段名称将替代应用中来自其他位置的同一名称。  在此情况下，仍可使用 [**@** 消除歧义](functions/operators.md)运算符访问来自记录范围外部的值：
 
-* 若要访问来自嵌套记录作用域的值，请使用 **@** 运算符，其中所操作的表名称使用模式 ***Table *[@* FieldName***]。  
-* 若要访问全局值，如数据源、集合和上下文变量，请使用模式 ***[@* ObjectName**]**（无需指派表）。
+* 若要访问来自嵌套记录作用域的值，请使用 **@** 运算符，其中所操作的表名称使用该模式：<br>_Table_**[@**_FieldName_**]**
+* 若要访问全局值，如数据源、集合和上下文变量，请使用模式 **[@**_ObjectName_**]**（无需指派表）。
 
-如果所操作的表是一个表达式，例如 **Filter( *table*, ... )**，则不能使用消除歧义运算符。  只有最里面的记录范围可以在不使用消除歧义运算符的情况下从此表表达式访问字段。
+如果所操作的表是一个表达式，例如 **Filter(** _Table_**,** ... **)**，则不能使用消除歧义运算符。  只有最里面的记录范围可以在不使用消除歧义运算符的情况下从此表表达式访问字段。
 
 例如，假设有一个集合 **X**：
 

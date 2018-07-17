@@ -7,14 +7,15 @@ ms.topic: tutorial
 ms.component: canvas
 ms.date: 05/06/2018
 ms.author: anneta
-ms.openlocfilehash: 88170d5f727ff4e3cfe52ce31719bcbc79e33021
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 80baf43cbde0811d4ab5a7f5212aff767a9f6103
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34453575"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899930"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>教程：在 PowerApps 中自定义库
+
 本教程将自定义一个记录列表（称为一个库），以及对已在 Microsoft PowerApps 中自动生成的应用进行其他更改。 即使不进行这些更改，用户也可以管理应用中的数据，但是，如果对其进行自定义来满足组织需要，则可以更加轻松使用该应用。
 
 例如，本教程中的库默认情况下与此图形匹配。 电子邮件地址比其他数据类型更加突出，用户可基于地址中的文本对库进行排序和筛选：
@@ -39,9 +40,11 @@ ms.locfileid: "34453575"
 如果没有注册 PowerApps，请在开始使用之前先[免费注册](https://web.powerapps.com)。
 
 ## <a name="prerequisites"></a>先决条件
+
 从 Common Data Service (CDS) for Apps 的帐户实体[生成应用](data-platform-create-app.md)。
 
 ## <a name="open-the-generated-app"></a>打开生成的应用
+
 1. 登录 [PowerApps](https://web.powerapps.com)，然后选择左边缘附近的“应用”。
 
     [![PowerApps 主页](./media/customize-layout-sharepoint/sign-in.png)](./media/customize-layout-sharepoint/sign-in.png#lightbox)
@@ -53,6 +56,7 @@ ms.locfileid: "34453575"
 1. 如果出现“欢迎使用 PowerApps Studio”对话框，则单击“跳过”。
 
 ## <a name="change-the-layout"></a>更改布局
+
 1. 在左侧导航窗格中，选择“BrowseGallery1”。
 
     选择库后，会有带句柄的选择框环绕它。
@@ -84,11 +88,12 @@ ms.locfileid: "34453575"
     ![最终库](./media/customize-layout-sharepoint/final-gallery.png)
 
 ## <a name="change-sort-and-search-columns"></a>更改排序和搜索列
+
 1. 按前一部分所述选择库。
 
     ![选择库](./media/customize-layout-sharepoint/select-gallery-title.png)
 
-2. 确认左上角附近的属性列表显示“Items”。
+1. 确认左上角附近的属性列表显示“Items”。
 
     ![项属性](./media/customize-layout-sharepoint/items-property.png)
 
@@ -100,12 +105,13 @@ ms.locfileid: "34453575"
 
     通过使用此公式，请确保：
 
-    - 如果用户在搜索栏中键入一个或多个字符，则库将仅显示那些包含用户所键入文本的帐户名称。
-    - 如果用户选择排序图标，库会按照帐户名称的字母顺序以升序或降序排序，具体取决于用户选择图标的次数。
+    * 如果用户在搜索栏中键入一个或多个字符，则库将仅显示那些包含用户所键入文本的帐户名称。
+    * 如果用户选择排序图标，库会按照帐户名称的字母顺序以升序或降序排序，具体取决于用户选择图标的次数。
 
-    有关这些函数和其他函数的详细信息，请参阅[公式参考](formula-reference.md)。
+     有关这些函数和其他函数的详细信息，请参阅[公式参考](formula-reference.md)。
 
 ### <a name="test-sorting-and-searching"></a>测试排序和搜索
+
 1. 按 F5 键（或选择右上角附近的播放按钮）打开“预览”模式。
 
     ![打开预览模式](./media/customize-layout-sharepoint/open-preview.png)
@@ -121,6 +127,7 @@ ms.locfileid: "34453575"
 1. 删除搜索栏的所有文本，然后按 Esc 键（或者选择右上角附近的关闭图标）即可关闭“预览”模式。
 
 ## <a name="change-the-screen-title"></a>更改屏幕标题
+
 1. 通过单击或点击来选择屏幕标题。
 
     ![选择屏幕标题](./media/customize-layout-sharepoint/select-title.png)
@@ -133,18 +140,20 @@ ms.locfileid: "34453575"
 
     ![新建屏幕标题](./media/customize-layout-sharepoint/new-screen-title.png)
 
-## <a name="show-a-scroll-bar"></a>显示滚动条
+## <a name="show-a-scrollbar"></a>显示滚动条
+
 如果用户没有触摸屏或鼠标滚轮，可将库配置为用户在其上悬停鼠标时显示滚动条。 那样，即使屏幕不能一次性全部显示，用户依然可以显示所有帐户。
 
 1. 按第一个步骤所述选择库。
 
     ![选择库](./media/customize-layout-sharepoint/select-gallery-sorted.png)
 
-1. 在“库”选项卡上，选择“显示滚动条”，并确认该属性的值已更改为“true”。 
+1. 在“库”选项卡上，选择“显示滚动条”，并确认该属性的值已更改为“true”。
 
     ![显示滚动条](./media/customize-layout-sharepoint/show-scrollbar.png)
 
 ## <a name="next-steps"></a>后续步骤
+
 本教程中已自定义库，并对默认屏幕进行了其他更改，以便在生成应用中浏览记录。 还可以自定义用于显示详细信息以及创建或更新帐户的默认屏幕。 因为浏览屏幕包含一个库，应用的其他两个屏幕将包含窗体。 例如，可以更改窗体显示的数据类型和顺序。
 
 > [!div class="nextstepaction"]
