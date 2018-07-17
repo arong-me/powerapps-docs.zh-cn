@@ -77,7 +77,7 @@
           href: ./canvas-apps/show-text-dates-times.md
         - name: 数据源
           href: ./canvas-apps/working-with-data-sources.md
-        - name: 了解 SharePoint 表单集成
+        - name: 了解 SharePoint 窗体集成
           href: ./canvas-apps/sharepoint-form-integration.md
         - name: PowerApps 自定义视觉对象
           href: ./canvas-apps/powerapps-custom-visual.md
@@ -225,9 +225,9 @@
               href: ./canvas-apps/functions/function-trig.md
             - name: Average
               href: ./canvas-apps/functions/function-aggregates.md
-            - name: 返回
+            - name: Back
               href: ./canvas-apps/functions/function-navigate.md
-            - name: 空白
+            - name: Blank
               href: ./canvas-apps/functions/function-isblank-isempty.md
             - name: 日历
               href: ./canvas-apps/functions/function-clock-calendar.md
@@ -235,7 +235,7 @@
               href: ./canvas-apps/functions/function-char.md
             - name: Choices
               href: ./canvas-apps/functions/function-choices.md
-            - name: 清除
+            - name: Clear
               href: ./canvas-apps/functions/function-clear-collect-clearcollect.md
             - name: ClearCollect
               href: ./canvas-apps/functions/function-clear-collect-clearcollect.md
@@ -257,6 +257,8 @@
               href: ./canvas-apps/functions/function-concatenate.md
             - name: Concatenate
               href: ./canvas-apps/functions/function-concatenate.md
+            - name: 并发
+              href: ./canvas-apps/functions/function-concurrent.md
             - name: 连接
               href: ./canvas-apps/functions/signals.md
             - name: 计数
