@@ -134,7 +134,9 @@
             - name: 创建可访问应用
               href: ./canvas-apps/accessible-apps.md
               items:
-                - name: 颜色
+                - name: 查找辅助功能问题
+                  href: ./canvas-apps/accessibility-checker.md
+                - name: 对辅助功能使用颜色
                   href: ./canvas-apps/accessible-apps-color.md
         - name: 管理应用
           items:

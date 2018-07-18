@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: e2c5d384c29766d6c30db8aa85ad4d7d45b48e04
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 8b6ec4ac944e8527bda508f4f005361d681be8e0
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838139"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899608"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>PowerApps 中的形状控件和图标控件
 你可以为其配置外观和行为属性的图形。
@@ -58,24 +58,29 @@ ms.locfileid: "31838139"
 **[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="related-functions"></a>相关函数
+
 [**Navigate**( *ScreenName*, *ScreenTransition* )](../functions/function-navigate.md)
 
 ## <a name="example"></a>示例
+
 1. 将默认“[屏幕](control-screen.md)”控件命名为“Target”，添加“[标签](control-text-box.md)”控件，然后将“[Text](properties-core.md)”属性设置为显示“Target”。
-   
+
     不知道如何[添加和配置控件](../add-configure-controls.md)？
+
 2. 添加**[屏幕](control-screen.md)** 控件，然后将其命名为“Source”。
-3. 在“Source”中，添加“形状”控件，并将其 **[OnSelect](properties-core.md)** 属性设置为以下公式：
-   <br>**Navigate(Target, ScreenTransition.Fade)**
+3. 在“Source”中，添加“形状”控件，并将其 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>**Navigate(Target, ScreenTransition.Fade)**
 4. 按 F5，然后单击或点击“形状”控件。
-   
+
     将会出现“Target”屏幕。
+
 5. （可选）按 Esc 返回默认工作区，向“Target”添加“形状”控件，并将“形状”控件的 **[OnSelect](properties-core.md)** 属性设置为以下公式：
    <br>Navigate(Source, ScreenTransition.Fade)
 
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
+
 ### <a name="color-contrast"></a>颜色对比度
+
 以下仅适用于用作按钮的图形，或者不只是用于修饰。
 
 对于图标：
@@ -95,14 +100,15 @@ ms.locfileid: "31838139"
 * 如果图形用作按钮或者不仅仅用于修饰，则 **[AccessibleLabel](properties-accessibility.md)** 必须存在。
 * 如果图形纯粹用于修饰作用，**[AccessibleLabel](properties-accessibility.md)** 必须为空或空字符串 ""。 这将导致屏幕阅读器忽略图形。
 * 如果图形提供冗余信息，**[AccessibleLabel](properties-accessibility.md)** 可以为空或空字符串 ""。
-    * 例如，“设置”图标将其 **[AccessibleLabel](properties-accessibility.md)** 设置为“Settings”。 此图标不用作按钮。 它位于同样显示“Setting”的**[标签](control-text-box.md)** 旁边。 屏幕阅读器将图标读作“Setting”，并再次将标签读作“Setting”。 没必要对此进行详细说明。 在此情况下，该图标不需要 **[AccessibleLabel](properties-accessibility.md)**。
+
+    例如，“设置”图标将其 **[AccessibleLabel](properties-accessibility.md)** 设置为“Settings”。 此图标不用作按钮。 它位于同样显示“Setting”的**[标签](control-text-box.md)** 旁边。 屏幕阅读器将图标读作“Setting”，并再次将标签读作“Setting”。 没必要对此进行详细说明。 在此情况下，该图标不需要 **[AccessibleLabel](properties-accessibility.md)**。
 
     > [!IMPORTANT]
-> 屏幕阅读器将始终读取 **[TabIndex](properties-accessibility.md)** 为零或更大的图标或形状，即使 **[AccessibleLabel](properties-accessibility.md)** 为空。 这是因为它们以按钮形式呈现。 如果没有提供 **[AccessibleLabel](properties-accessibility.md)**，屏幕阅读器只需将图形读作“按钮”。
+    > 屏幕阅读器将始终读取 **[TabIndex](properties-accessibility.md)** 为零或更大的图标或形状，即使 **[AccessibleLabel](properties-accessibility.md)** 为空。 这是因为它们以按钮形式呈现。 如果没有提供 **[AccessibleLabel](properties-accessibility.md)**，屏幕阅读器只需将图形读作“按钮”。
 
 ### <a name="keyboard-support"></a>键盘支持
 * 如果图形用作按钮，**[TabIndex](properties-accessibility.md)** 必须为零或更大。 这允许键盘用户导航到它。
 * 如果图形用作按钮，焦点指示器必须清楚显示。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
 
     > [!NOTE]
-> 当 **[TabIndex](properties-accessibility.md)** 为零或更大，图标或形状将以按钮形式呈现。 可视外观没有变化，但屏幕阅读器将正确识别作为按钮的图像。 当 **[TabIndex](properties-accessibility.md)** 小于零时，图标或形状将被标识为图像。
+  > 当 **[TabIndex](properties-accessibility.md)** 为零或更大，图标或形状将以按钮形式呈现。 可视外观没有变化，但屏幕阅读器将正确识别作为按钮的图像。 当 **[TabIndex](properties-accessibility.md)** 小于零时，图标或形状将被标识为图像。
