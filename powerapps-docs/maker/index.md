@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 03/18/2018
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: bed3109a067da091ca6fc242f1f63c8ff11724ab
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 3d95f017b064f61a539906268ebb73fff1e1d04f
+ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015837"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39094601"
 ---
 # <a name="overview-of-creating-apps-in-powerapps"></a>概述如何在 PowerApps 中创建应用
 PowerApps 是商业应用的高效开发平台，主要有三个组成部分：
@@ -46,7 +46,7 @@ PowerApps 是商业应用的高效开发平台，主要有三个组成部分：
 
 模型驱动应用入门很简单，你还可以从下列主题开始学习：
 
-- [创建应用](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/create-edit-app)
+- [创建应用](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-app)
 - [创建并设计窗体](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-design-forms)
 - [创建或编辑视图](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-views)
 - [创建或编辑系统图表](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-system-chart)
