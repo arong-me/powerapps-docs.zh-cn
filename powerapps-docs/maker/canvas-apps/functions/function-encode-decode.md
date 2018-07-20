@@ -1,23 +1,20 @@
 ---
 title: EncodeUrl 和 PlainText 函数 | Microsoft 文档
 description: PowerApps 中 EncodeUrl 和 PlainText 函数的参考信息（包括语法和示例）
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 7454eacbcfaaacc15eb617e673f48520ca33b6dc
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 3f7df27ed5b49d60437ba8e5a070fcb676f828e4
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31825455"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020690"
 ---
 # <a name="encodeurl-and-plaintext-functions-in-powerapps"></a>PowerApps 中的 EncodeUrl 和 PlainText 函数
 编码和解码字符串。

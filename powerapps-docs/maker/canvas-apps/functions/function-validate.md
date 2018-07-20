@@ -1,23 +1,20 @@
 ---
 title: Validate 函数 | Microsoft 文档
 description: PowerApps 中 Validate 函数的参考信息（包括语法和示例）
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/01/2015
 ms.author: gregli
-ms.openlocfilehash: d1c0a8bdcab3f8a3ba74414ab902092432a34fff
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 6a8bff341484139e6d16092fc2ea3cbacb384777
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899194"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022829"
 ---
 # <a name="validate-function-in-powerapps"></a>PowerApps 中的 Validate 函数
 **Validate** 函数检查单个[列](../working-with-tables.md#columns)或整条[记录](../working-with-tables.md#records)的值对[数据源](../working-with-data-sources.md)是否有效。  

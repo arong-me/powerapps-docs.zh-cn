@@ -1,23 +1,20 @@
 ---
 title: 饼图控件：参考 | Microsoft 文档
 description: 有关饼图控件的信息（包括属性和示例）
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: fe61a36278ce4f5fe2fb5ff16bdc0a86dc911e5e
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 32fb27a48b9f5cc2a4ff697e49ee74a51d3d626a
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899102"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017424"
 ---
 # <a name="pie-chart-control-in-powerapps"></a>PowerApps 中的饼图控件
 该控件用于显示与其他内容相比较的相对值。

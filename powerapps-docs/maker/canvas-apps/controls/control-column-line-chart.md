@@ -1,23 +1,20 @@
 ---
 title: 柱形图和折线图控件：参考 | Microsoft 文档
 description: 了解柱形图和折线图控件（包括属性和示例）
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 5397c99d02e824a86147af053e1f907f83ce3543
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.reviewer: anneta
+ms.openlocfilehash: ef7bd648b103755d724481225e726a9faab863dc
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898256"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018114"
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>PowerApps 中的柱形图和折线图控件
 用包含 x 轴和 y 轴的图显示数据的控件。

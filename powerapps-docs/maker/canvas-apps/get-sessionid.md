@@ -2,17 +2,19 @@
 title: 获取会话 ID 或应用 ID | Microsoft Docs
 description: 如何获取会话 ID 或应用 ID 以在 PowerApps 中进行故障排除
 author: AFTOwen
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 06/18/2018
-ms.author: anneta, brimcg
-ms.openlocfilehash: add591d1bf565f3ad89e0138257fdf365d6add8e
-ms.sourcegitcommit: 1126caa4c7516cd4dffcff7e0c3eca440a333a58
+ms.author: anneta
+ms.openlocfilehash: 2e9b1a38de104ce1bf5a17969ca2c79792ac6fd4
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36304675"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022254"
 ---
 # <a name="get-a-session-id-or-an-app-id"></a>获取会话 ID 或应用 ID
 如果在使用 PowerApps 中创建的应用时遇到问题，通过向 Microsoft 提供该问题的会话 ID 和/或应用 ID，可以帮助 Microsoft 更有效地解决该问题。

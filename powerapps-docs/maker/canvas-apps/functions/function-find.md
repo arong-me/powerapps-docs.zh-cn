@@ -1,23 +1,20 @@
 ---
 title: Find 函数 | Microsoft 文档
 description: PowerApps 中 Find 函数的引用信息（包括语法和示例）
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 8e95f03c934e0989269ff9ec21b432f609cb13ad
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: cd2028434fb9199595360ddafdb2e41d32e6cf3a
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826076"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39019517"
 ---
 # <a name="find-function-in-powerapps"></a>PowerApps 中的 Find 函数
 在其他字符串中查找文本字符串（如果存在）。

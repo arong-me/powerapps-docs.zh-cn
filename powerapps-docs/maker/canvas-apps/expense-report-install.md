@@ -1,23 +1,20 @@
 ---
 title: 安装和配置支出报表 PowerApps 示例 | Microsoft Docs
 description: 安装和配置支出报表 PowerApps 示例的分步说明。
-documentationcenter: na
 author: caburk
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: sample
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 9ce265df67dd980653766b7bf9d57376c671e18a
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 9ffb88629dbac2df514b1072cf21cd8aa82899d7
+ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899953"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39094647"
 ---
 # <a name="install-and-configure-the-expense-report-powerapps-sample"></a>安装和配置支出报表 PowerApps 示例
 
@@ -384,8 +381,8 @@ ms.locfileid: "37899953"
 [![支出报表安装视频](./media/expense-report-install/expense-report-demo-video.png)](https://youtu.be/h6E9cdrOvMU)
 
 ## <a name="next-steps"></a>后续步骤
-- [自定义 SharePoint 列表窗体](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/customize-list-form)
-- [添加并配置控件](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/add-configure-controls)
+- [自定义 SharePoint 列表窗体](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form)
+- [添加并配置控件](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-configure-controls)
 - [编辑和管理 SharePoint 列表或库的权限](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
 
 

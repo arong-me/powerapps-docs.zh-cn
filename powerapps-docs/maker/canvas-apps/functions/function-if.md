@@ -1,23 +1,20 @@
 ---
 title: If 和 Switch 函数 | Microsoft 文档
 description: PowerApps 中 If 和 Switch 函数的参考信息（包括语法和示例）
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/24/2017
 ms.author: gregli
-ms.openlocfilehash: f4e5510224d5abc7a6d2ccaa286d08c8f170fa10
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 5293cd448d96633e2d8d2cda9dfbd6d3c162c953
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838386"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017378"
 ---
 # <a name="if-and-switch-functions-in-powerapps"></a>PowerApps 中的 If 和 Switch 函数
 确定集中的任何条件是否为 true (If)，或确定公式的结果是否与集中的任何值一致 (Switch)，再返回结果或执行操作。

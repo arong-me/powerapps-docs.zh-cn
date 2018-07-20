@@ -1,23 +1,20 @@
 ---
 title: powerapps.com 简介 | Microsoft 文档
 description: 所有应用创作者的新家。
-documentationcenter: na
 author: linhtranms
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/28/2016
 ms.author: litran
-ms.openlocfilehash: f29f75522eb01c61c3528e61018fb759980e79f9
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 400df9944b21788e08b0a55e3e0a148f2eccb972
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330206"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017332"
 ---
 # <a name="introduction-to-powerappscom"></a>powerapps.com 简介
 PowerApps 团队将会重新引入 [powerapps.com](http://web.powerapps.com) 作为应用创建者的新门户。 我们已将页面重新设计为主站点，让创建者轻松着手创建应用，使用 Microsoft Common Data Service，以及在一个位置管理他们的应用。 本文逐步讲解以下内容：

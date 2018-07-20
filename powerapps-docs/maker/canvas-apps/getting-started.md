@@ -2,17 +2,19 @@
 title: 画布应用有哪些？ | Microsoft Docs
 description: 在 PowerApps 中设计并构建画布应用后，用户可在浏览器或其移动设备中管理业务线数据
 author: AFTOwen
+manager: kvivek
 ms.service: powerapps
 ms.topic: overview
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 04/26/2018
 ms.author: anneta
-ms.openlocfilehash: 606f5aa15d057387542471f82fd071f4044cfd1e
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 965396dbeb087e2dfb52a151825884fc5a98c6e1
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36311583"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016389"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>PowerApps 中的画布应用有哪些？
 在 Microsoft PowerApps 中通过画布设计和构建业务应用，无需以传统计算机语言（如 C#）编写代码。 通过将元素拖放到画布来设计应用，就像在 PowerPoint 中设计幻灯片一样。 创建用于指定逻辑和处理数据的 Excel 类表达式。 构建应用，这些应用可与[丰富多样的 Microsoft 和第三方源](connections-list.md)中的业务数据集成。 共享应用，以便用户可在浏览器或移动设备中运行；嵌入应用，以便用户可在 SharePoint、Power BI 或 Teams 中运行。

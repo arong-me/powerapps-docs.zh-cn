@@ -1,23 +1,20 @@
 ---
 title: 在 Power BI 报表中嵌入新应用 | Microsoft Docs
 description: 嵌入一个使用相同数据源并且可以像其他报表项一样进行筛选的应用
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 03/15/2018
 ms.author: mblythe
-ms.openlocfilehash: 33656e44f782a626eecc28787af984ace7339cd6
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 05fe624be450dfcce0d16ae2f178c86ddf361201
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830461"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018666"
 ---
 # <a name="tutorial-embed-a-new-app-in-a-power-bi-report"></a>教程：在 Power BI 报表中嵌入新应用
 
@@ -45,9 +42,9 @@ ms.locfileid: "31830461"
 
 2. 在报表顶部，单击或点击“编辑报表”。
 
-3. 在“可视化效果”窗格中，单击或点击省略号 (...) >“从 Marketplace 导入”。 
+3. 在“可视化效果”窗格中，单击或点击省略号 (...) &gt;“从市场导入”。 
 
-    ![从 Marketplace 导入](media/embed-powerapps-powerbi/import-visual.png)
+    ![从市场导入](media/embed-powerapps-powerbi/import-visual.png)
 
 4. 在“Power BI 视觉对象”屏幕上，搜索“PowerApps”，然后单击或点击“添加”。 Power BI 将自定义视觉对象图标添加到“可视化效果”窗格底部。
 

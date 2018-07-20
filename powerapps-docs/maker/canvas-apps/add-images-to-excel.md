@@ -1,22 +1,20 @@
 ---
 title: 将图像添加到 Excel | Microsoft 文档
 description: 有关将图像文件和绘笔画图添加到云存储帐户中的 Excel 文件的分步说明
-documentationcenter: ''
-author: aftowen
-manager: kfile
-editor: ''
+author: AFTOwen
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 10/25/2016
 ms.author: anneta
-ms.openlocfilehash: 29da2a8814b0de7d34915f9992aeb963743785d2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: cc3609991ffb68f6846cb73b7ccfa37227d0c8e7
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32328826"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39019473"
 ---
 # <a name="add-images-to-excel-from-powerapps"></a>通过 PowerApps 将图像添加到 Excel 中
 自动创建应用，用户可以在其中显示、添加或删除各文件中的图像，或通过“笔”控件绘制的画图。 此应用以你创建并上载到云存储帐户中的 Excel 文件为依据。

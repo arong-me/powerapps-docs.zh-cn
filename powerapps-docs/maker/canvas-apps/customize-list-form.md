@@ -2,17 +2,19 @@
 title: 自定义 SharePoint 列表窗体 | Microsoft Docs
 description: 使用 PowerApps 自定义窗体，供用户创建和更新 SharePoint 列表中的条目。
 author: AFTOwen
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 06/11/2018
 ms.author: anneta
-ms.openlocfilehash: 1ab7b6bc5f8e2617fc3d66bcdac40b930805d14d
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 3e552d9338c457ba6076e0f34c91311e54d0c18d
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37900091"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39019126"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>使用 PowerApps 自定义 SharePoint 列表窗体
 

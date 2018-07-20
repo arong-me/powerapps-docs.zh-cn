@@ -1,23 +1,20 @@
 ---
 title: 开发可脱机运行的应用 | Microsoft 文档
 description: 开发可脱机运行的应用，以便用户可以高效工作，无论是联机还是脱机。
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: d374ec8459f4182b11ecf91e28af24a31bb6c055
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: cb2ed2404f7270367b3a26bf8eccb733b09fee23
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896825"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023128"
 ---
 # <a name="develop-offline-capable-apps-with-powerapps"></a>使用 PowerApps 开发可脱机运行的应用
 作为移动应用开发者，最常遇到的情境之一是，让用户能够在联网受限或根本无法联网的情况下高效工作。 PowerApps 提供了一系列功能和行为，有助于开发可脱机运行的应用。 你可以：

@@ -1,23 +1,20 @@
 ---
 title: 卡片控件：参考 | Microsoft 文档
 description: 有关卡片控件的信息，包括属性和示例
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 7d44ba120a68d08f5779b8383df5b2263f228438
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.reviewer: anneta
+ms.openlocfilehash: 6b1b2f246f8cb598b1f20f5a1418651491f73bd5
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838568"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021909"
 ---
 # <a name="card-control-in-powerapps"></a>PowerApps 中的卡片控件
 提供**[显示窗体](control-form-detail.md)** 或**[编辑窗体](control-form-detail.md)** 控件的单个字段的显示和编辑体验。

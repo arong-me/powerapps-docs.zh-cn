@@ -1,23 +1,20 @@
 ---
 title: 显示项的列表 | Microsoft 文档
 description: 使用库显示应用中项的列表，并通过指定条件来筛选该列表。
-documentationcenter: na
 author: karthik-1
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 09/28/2017
 ms.author: sharik
-ms.openlocfilehash: 9b2c07e8599ada76aa2f2195fc1240321ed02ef9
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 4806d65416816897542973644da592f7e6b2e252
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898205"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020966"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>显示 PowerApps 中项的列表
 通过向应用添加[库](controls/control-gallery.md)控件，显示任意数据源中项的列表。 本主题使用 Excel 作为数据源。 筛选该列表，方法是：将库控件配置为仅显示那些与[文本输入](controls/control-text-input.md)控件中的筛选器条件匹配的项。

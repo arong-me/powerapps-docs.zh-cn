@@ -1,23 +1,20 @@
 ---
 title: Collect、Clear 和 ClearCollect 函数 | Microsoft 文档
 description: PowerApps 中 Collect、Clear 和 ClearCollect 函数的引用信息（包括语法和示例）
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/01/2015
 ms.author: gregli
-ms.openlocfilehash: 9d67db7829361565072362b6ac37125dc0dc673a
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 5153ac79100e3c0875abbf081e480bfc66dfdbd0
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834095"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39019824"
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>PowerApps 中的 Collect、Clear 和 ClearCollect 函数
 创建和清除[集合](../working-with-data-sources.md#collections)，以及将[记录](../working-with-tables.md#records)添加到任意[数据源](../working-with-data-sources.md)。
@@ -50,7 +47,8 @@ ms.locfileid: "31834095"
 **Clear** 没有返回值。  只能在行为公式中使用。
 
 ### <a name="clearcollect"></a>ClearCollect
-**ClearCollect** 函数删除集合中的所有记录，并向同一集合添加一组不同的记录。  **ClearCollect** 这单个函数可提供 **Clear** 和 **Collect** 的组合功能。
+**ClearCollect** 函数删除集合中的所有记录，并向同一集合添加一组不同的记录。  
+  **ClearCollect** 这单个函数可提供 **Clear** 和 **Collect** 的组合功能。
 
 **ClearCollect** 以表格形式返回修改后的集合。  **ClearCollect** 只能在行为公式中使用。
 

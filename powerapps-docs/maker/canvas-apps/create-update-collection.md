@@ -1,22 +1,20 @@
 ---
 title: 创建和更新集合 | Microsoft 文档
 description: 创建集合，并在 PowerApps 中向现有集合添加列
-documentationcenter: ''
 author: lonu
-manager: kfile
-editor: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/30/2015
 ms.author: lonu
-ms.openlocfilehash: b3bf7c2227d3321a581eb1a568de1ce78ead92ee
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 27b5a3453c2c0a89239d3e319ee6f39afd034492
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899884"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023266"
 ---
 # <a name="create-and-update-a-collection-in-your-app"></a>创建和更新应用中的集合
 集合用于存储可在应用中使用的数据。 集合是一组类似的项。 例如，你会创建“MyImages”集合来存储公司出售的所有产品的图像。 在 PowerApps 内，可以添加“MyImages”集合，然后创建一个应用来显示这些产品的所有图片。 再比如，可以创建“PriceList”集合，列出所有产品及其价格。

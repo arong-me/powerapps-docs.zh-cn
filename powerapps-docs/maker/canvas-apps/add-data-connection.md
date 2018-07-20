@@ -1,23 +1,20 @@
 ---
 title: 在应用中添加数据连接 | Microsoft 文档
 description: 在现有应用或空白应用中添加数据连接
-documentationcenter: na
 author: lancedMicrosoft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/06/2018
 ms.author: lanced
-ms.openlocfilehash: 44ee7b992f5817a5d6b8d791b05e1db671d3e6ba
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 734e36b00658455198b64317b6f068c0018755a4
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826973"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018482"
 ---
 # <a name="add-a-data-connection-in-powerapps"></a>在 PowerApps 中添加数据连接
 在 PowerApps 中，向现有应用或从头开始生成的应用添加数据连接。 应用可以连接到 SharePoint、Salesforce、OneDrive 或[许多其他数据源](connections-list.md)。

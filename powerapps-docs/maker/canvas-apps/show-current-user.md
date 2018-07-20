@@ -1,22 +1,20 @@
 ---
 title: 显示有关当前用户的详细信息 | Microsoft 文档
 description: 插入 User 函数，在 PowerApps 中显示已登录用户的姓名和电子邮件地址
-documentationcenter: ''
 author: lonu
-manager: kfile
-editor: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: 11177ffa8913afe4d0245708dd8c9b2b0b50c8c2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 90a7ca39626e8eec8151bc3d5ced25a5701a126e
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826651"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016251"
 ---
 # <a name="show-information-about-a-powerapps-user"></a>显示 PowerApps 用户的相关信息
 User 函数可显示与已登录用户关联的全名、电子邮件地址和图片。 可以使用此信息来自动填充窗体。

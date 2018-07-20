@@ -1,23 +1,20 @@
 ---
 title: 生成用于处理项目请求的应用 | Microsoft 文档
 description: 在此任务中，我们将直接通过 SharePoint 列表生成基本的三屏应用。
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 4ae16517332864066f5b744e85ce3fe48c97a1df
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 7072d78b79adff65aac33c888bf0f980f953ef84
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329769"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023933"
 ---
 # <a name="generate-an-app-to-handle-project-requests"></a>生成用于处理项目申请的应用
 > [!NOTE]

@@ -9,12 +9,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: ef5d646e30f5d09dbfe5f111a3ad018b030f79d9
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 2a393bb2ebedde2a08f1ed1534d815e64325077b
+ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168219"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39094739"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-common-data-service-for-apps-customer-data"></a>响应针对 Common Data Service for Apps 客户数据的数据主体权限 (DSR) 请求
 
@@ -102,8 +102,8 @@ CDS for Apps 和 Common Data Service (CDS) 早期版本具有与个人数据交�
 
 |资源 | 用途 | 网站访问 | 编程访问
 | --- | --- | --- | ---
-| 实体记录 | 称为系统用户实体，用于存储用户的个人数据。 | [PowerApps 管理中心](https://admin.powerapps.com) | 通过 [Web API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
-| 审核历史记录 | 允许客户标识用户在实体级别创建、访问、更改或删除的资源。 | [PowerApps 管理中心](https://admin.powerapps.com) | 通过 [Web API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
+| 实体记录 | 称为系统用户实体，用于存储用户的个人数据。 | [PowerApps 管理中心](https://admin.powerapps.com) | 通过 [Web API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
+| 审核历史记录 | 允许客户标识用户在实体级别创建、访问、更改或删除的资源。 | [PowerApps 管理中心](https://admin.powerapps.com) | 通过 [Web API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
 
 #### <a name="user"></a>用户
 用户个人数据存储在 Azure Active Directory 中，并自动同步到所有 CDS for Apps 环境。 系统管理员无法在用户处于活动状态时直接在 CDS for Apps 中更新这些个人数据 &mdash; 必须在 Office 365 管理中心进行更新。 系统管理员可以直接将个人数据（例如，自定义属性）添加到 CDS for Apps，但必须手动管理此数据。
@@ -199,7 +199,7 @@ CDS for Apps 和 Common Data Service (CDS) 早期版本具有与个人数据交�
 
 3. 转到“设置” > “安全” > “用户”，然后选择“禁用用户视图”。
 
-4. 基于用户的个人数据创建 Excel 模板文件，并下载该文件。 有关分步说明，请参阅[创建新 Excel 模板](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates#create-a-new-excel-template)。
+4. 基于用户的个人数据创建 Excel 模板文件，并下载该文件。 有关分步说明，请参阅[创建新 Excel 模板](https://docs.microsoft.com/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates#create-a-new-excel-template)。
 
 8. 打开下载的 Excel 模板文件，删除用户的个人数据，然后保存该文件。
 

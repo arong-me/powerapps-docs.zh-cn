@@ -73,6 +73,8 @@
           href: ./canvas-apps/working-with-variables.md
         - name: 公式
           href: ./canvas-apps/working-with-formulas-in-depth.md
+        - name: 试验功能和预览功能
+          href: ./canvas-apps/working-with-experimental.md
         - name: 日期和时间
           href: ./canvas-apps/show-text-dates-times.md
         - name: 数据源

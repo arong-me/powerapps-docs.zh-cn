@@ -1,23 +1,20 @@
 ---
 title: 导出控件和导入控件：参考 | Microsoft 文档
 description: 有关导出控件和导入控件的信息（包括属性和示例）
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 958589deb4fdee42cb8e6df13ff15addbc06c07e
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9eb0cf33c4bac3553592971409f7c52f199b368b
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830684"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017286"
 ---
 # <a name="export-control-and-import-control-in-powerapps"></a>PowerApps 中的导出控件和导入控件
 该控件用于将数据导出到本地文件，然后将该数据导入到 PowerApps 中的其他应用。

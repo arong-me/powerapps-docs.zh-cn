@@ -1,23 +1,20 @@
 ---
 title: 下拉列表控件：参考 | Microsoft 文档
 description: 有关下拉列表控件的信息（包括属性和示例）
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 3df14293f478c24dbe64b84d0c2d1ea50b485fa3
-ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
+ms.openlocfilehash: 9b26af9a2a1fb9b187023ec3ccc9cd86580aa4cf
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38083048"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017907"
 ---
 # <a name="drop-down-control-in-powerapps"></a>PowerApps 中的下拉列表控件
 一个列表，在用户不将其打开的情况下，该表仅显示第一项。
@@ -145,7 +142,7 @@ Selected - 选定项。
 * ChevronFill 和 ChevronBackground
 * ChevronHoverFill 和 ChevronHoverBackground
 * SelectionColor 和 SelectionFill
-* SelectionFill 和 **[Fill](properties-color-border.md)**
+* **SelectionFill** 和 **[Fill](properties-color-border.md)**
 
 这是除[标准颜色对比度](../accessible-apps-color.md)以外的要求。
 

@@ -1,23 +1,20 @@
 ---
 title: 在浏览器中创建或编辑应用 | Microsoft 文档
 description: 使用适用于 Web 的 PowerApps Studio 在浏览器中创建或编辑应用。
-documentationcenter: na
-author: aftowen
-manager: kfile
-editor: ''
-tags: ''
+author: AFTOwen
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 03/08/2018
 ms.author: anneta
-ms.openlocfilehash: 4add1e15c1a85b27b83295422dbb6472ac02ad9f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 796d23be4c8b69a6f901b4338bda0000f8afb452
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329102"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023082"
 ---
 # <a name="create-or-edit-apps-in-powerapps-studio-for-web"></a>在适用于 Web 的 PowerApps Studio 中创建或编辑应用
 使用适用于 Web 的 PowerApps Studio 在 Windows 或其他平台上的浏览器中创建和编辑应用。

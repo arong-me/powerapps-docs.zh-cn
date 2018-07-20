@@ -1,23 +1,20 @@
 ---
 title: PowerApps 社区计划：供个人使用的免费开发环境 | Microsoft Docs
 description: 注册后可掌握技能，并详细了解 PowerApps、Microsoft Flow 和 Common Data Service。
-documentationcenter: na
-author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+author: AFTOwen
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
 ms.date: 05/01/2016
-ms.author: mblythe
-ms.openlocfilehash: 324fa80060a7c07bd5f0708df9fdabdbe7893236
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.author: anneta
+ms.reviewer: ''
+ms.openlocfilehash: 533234c7a0ca3cc69e30eb077ff0bd39d1d50a11
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899470"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017079"
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps 社区计划：供个人使用的免费开发环境
 若要掌握技能并详细了解 PowerApps、Microsoft Flow 和 Common Data Service，PowerApps 社区计划是你的不二之选。 PowerApps 社区计划提供了供个人使用的免费开发环境，你可以在其中：

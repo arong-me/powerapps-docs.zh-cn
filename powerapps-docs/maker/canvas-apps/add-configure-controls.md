@@ -1,23 +1,20 @@
 ---
 title: 添加和配置控件 | Microsoft 文档
 description: 有关直接在“属性”选项卡的工具栏或编辑栏中添加和配置控件的分步说明。
-documentationcenter: na
-author: aftowen
-manager: kfile
-editor: ''
-tags: ''
+author: AFTOwen
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 07/10/2017
 ms.author: anneta
-ms.openlocfilehash: c3b1fb9802541159726a33cacd07c6f9743de0e2
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 8a2849c32eaf474d1aa5bb981a09a3594cead600
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896687"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020115"
 ---
 # <a name="add-and-configure-a-control-in-powerapps"></a>在 PowerApps 中添加和配置控件
 将各种 UI 元素添加到应用中，然后直接在“属性”选项卡的工具栏或编辑栏中配置其各方面外观和行为。 这些 UI 元素称为“控件”，配置的各方面外观和行为称为“属性”。

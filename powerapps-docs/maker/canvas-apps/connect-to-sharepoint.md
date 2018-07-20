@@ -1,23 +1,20 @@
 ---
 title: 创建从 PowerApps 到 SharePoint 的连接 | Microsoft 文档
 description: 在 powerapps.com 上，创建到 SharePoint 的连接，用于自动生成应用或从零构建应用。
-documentationcenter: na
-author: aftowen
-manager: kfile
-editor: ''
-tags: ''
+author: AFTOwen
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 09/03/2016
 ms.author: anneta
-ms.openlocfilehash: ca359f550d81a73f448ce18d94d0d36efceb839b
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 1b9ff639e053218c74515be574f92146fc8ced36
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37897384"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020506"
 ---
 # <a name="create-a-connection-to-sharepoint-from-powerapps"></a>创建从 PowerApps 到 SharePoint 的连接
 创建到 SharePoint Online 或本地 SharePoint 的连接，以便自动生成应用或从零构建应用。

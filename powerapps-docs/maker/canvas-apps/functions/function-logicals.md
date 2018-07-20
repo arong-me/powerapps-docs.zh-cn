@@ -1,23 +1,20 @@
 ---
 title: And、Or 和 Not 函数 | Microsoft 文档
 description: PowerApps 中 And、Or 和 Not 函数的参考信息，包括语法和示例
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: a2e62ef2aa0a52bde33ea3e40faf96889597b09b
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 05e77c97d74312c91f501bfa7a8baa22eff00632
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31825892"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021633"
 ---
 # <a name="and-or-and-not-functions-in-powerapps"></a>PowerApps 中的 And、Or 和 Not 函数
 布尔逻辑函数，常用于操作比较结果和测试结果。

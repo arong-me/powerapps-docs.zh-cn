@@ -1,23 +1,20 @@
 ---
 title: 数据表控件：参考 | Microsoft 文档
 description: 介绍了数据表控件（包括属性和示例）
-documentationcenter: na
 author: jasongre
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 06/05/2017
-ms.author: kfend
-ms.openlocfilehash: aa6e778a1c0426c696aaf48c542eccc4887c0e36
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.author: jasongre
+ms.openlocfilehash: c282301ffafd1214c072c5b29e87fbba1515eda2
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836238"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017539"
 ---
 # <a name="data-table-control-in-powerapps"></a>PowerApps 中的数据表控件
 以表格格式显示一组数据。

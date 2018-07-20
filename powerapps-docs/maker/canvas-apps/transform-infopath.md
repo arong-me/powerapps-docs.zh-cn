@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/05/2018
 ms.author: rriley
-ms.openlocfilehash: 74445d4a9398afe00407e7b1a1eae5b7d773dd22
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: b57d62d3e64ea08905ddcc8627cf6921d421fb18
+ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020391"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39094716"
 ---
 # <a name="transform-your-infopath-forms-to-powerapps"></a>将 InfoPath 表单转换为 PowerApps
 
@@ -134,6 +134,6 @@ PowerApps 支持从一个应用调用另一个应用。可以生成可相互调�
 
 利用上述信息，现在便可投入实际工作，并开始逐一攻克一系列 PowerApps 应用。 在继续探索的过程中，可借助以下便捷的链接。 其中包括 PowerApps 社区站点的链接。 立刻加入社区，与孤军奋战相比，社区可快速提升技能。
 
-[**公式参考**](https://docs.microsoft.com/en-us/powerapps/formula-reference) - 只需浏览某些默认函数，便能让灵感迸发。
+[**公式参考**](https://docs.microsoft.com/powerapps/formula-reference) - 只需浏览某些默认函数，便能让灵感迸发。
 
 [**PowerApps 社区**](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1) - 查看示例，与他人互动，提出和解答问题，帮助壮大 PowerApps 社区。

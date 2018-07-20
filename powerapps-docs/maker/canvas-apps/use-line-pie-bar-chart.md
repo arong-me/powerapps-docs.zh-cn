@@ -1,22 +1,20 @@
 ---
 title: 创建图表 | Microsoft 文档
 description: 将数据类别显示为折线图、饼图或条形图
-documentationcenter: ''
 author: lonu
-manager: kfile
-editor: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: f4b6f604ecd7557f7b7b54769d66da850e18ef4f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9172c897940a0b8529ff16e09cc8889dec6e3f2a
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329792"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021725"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>在 PowerApps 中使用折线图、饼图或条形图显示数据
 使用折线图、饼图和条形图显示数据。 使用图表时，所导入数据的结构应如下所示：

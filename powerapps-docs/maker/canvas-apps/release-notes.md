@@ -9,18 +9,18 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/21/2018
 ms.author: anneta
-ms.openlocfilehash: e68614f2624a0d60e09563f92bf027fdf03d77b5
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 55b60abd9dc07d5b6c1979190f20ef893265475f
+ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023887"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39094693"
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps 的最近更新
 > [!IMPORTANT]
 > **宣布发行说明**<br>
 > 想要了解 PowerApps 中即将推出和最近发布的功能？<br>
-[查看发行说明](https://docs.microsoft.com/en-us/business-applications-release-notes/april18/powerapps/overview)。 我们已捕获所有详细信息（从头到尾方方面面），你可在规划时使用。
+[查看发行说明](https://docs.microsoft.com/business-applications-release-notes/april18/powerapps/overview)。 我们已捕获所有详细信息（从头到尾方方面面），你可在规划时使用。
 
 有关已知限制的信息，请参阅[常见问题和解决方法](common-issues-and-resolutions.md)。
 

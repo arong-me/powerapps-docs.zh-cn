@@ -1,17 +1,19 @@
 ---
 title: 从头开始创建 Excel 应用 | Microsoft Docs
 author: AFTOwen
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 04/23/2018
 ms.author: anneta
-ms.openlocfilehash: bf802668ff56729c1d28fc460495a680fc3c6570
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 267480158d7e44afd06962779b98c0468436841a
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896802"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022599"
 ---
 # <a name="create-an-excel-app-from-scratch"></a>从头开始创建 Excel 应用
 基于 Excel 数据从头开始创建你自己的应用，将其格式化为表格，然后从其他源添加数据（如果需要）。 按照本教程中的步骤进行操作，可以创建包含两个屏幕的应用。 在一个屏幕上，用户可以浏览一组记录。 在另一个屏幕上，用户可以创建记录、更新记录中的一个或多个字段，或删除整条记录。 与[自动生成应用](get-started-create-from-data.md)相比，此方法耗费的时间要多得多，但有经验的应用创作者可以使用它根据需要生成最佳应用。

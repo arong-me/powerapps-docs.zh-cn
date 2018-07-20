@@ -1,23 +1,20 @@
 ---
 title: Back 和 Navigate 函数 | Microsoft 文档
 description: PowerApps 中 Back 和 Navigate 函数的参考信息（包括语法和示例）
-documentationcenter: na
 author: gregli-msft
 manager: kvivek
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: e00ee9b3a58bf3255b9f581f405381af05aa07f9
-ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
+ms.openlocfilehash: 939a9319da134a2ea4ff3ed9209f2f33baf24f64
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948563"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017516"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Microsoft PowerApps 中的 Back 和 Navigate 函数
 更改显示的屏幕。

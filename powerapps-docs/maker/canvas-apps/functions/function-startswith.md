@@ -1,23 +1,20 @@
 ---
 title: EndsWith 和 StartsWith 函数 | Microsoft 文档
 description: PowerApps 中 EndsWith 和 StartsWith 函数的参考信息（包括语法和示例）
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: f2c1807f221d3134bbf39c74ae2939babbdd256e
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: af4d32066cdb527f999b9fce2e90e424a54bacd1
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899355"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018781"
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>PowerApps 中的 EndsWith 和 StartsWith 函数
 测试文本字符串是否以另一个文本字符串开头或结尾。
