@@ -1,21 +1,20 @@
 ---
 title: 快速入门：通过 SharePoint 在 PowerApps 中生成应用 | Microsoft Docs
 description: 在 PowerApps 中自动生成管理 SharePoint 列表数据的应用
-documentationcenter: na
 author: AFTOwen
-manager: kfile
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 03/12/2018
 ms.author: anneta
-ms.openlocfilehash: 314fa5a1a49aba3bc3d7f0f59d583f81283a67a0
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: b9404b2ac7d67f9594b77ee73de55b46a94e7afa
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31824719"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016803"
 ---
 # <a name="quickstart-for-generating-an-app-in-powerapps-from-sharepoint"></a>快速入门：通过 SharePoint 在 PowerApps 中生成应用
 

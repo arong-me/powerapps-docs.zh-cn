@@ -1,23 +1,20 @@
 ---
 title: 发布 Power BI 项目报表并创建仪表板 | Microsoft 文档
 description: 在此任务中，我们将把数据集和报表发布到 Power BI 服务中，然后再根据报表创建仪表板。
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 01/30/2018
 ms.author: mblythe
-ms.openlocfilehash: cc738334cc20f2911e17404faf679c0ed6bc2832
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 988c072f6abb33e8606826fd105bc2e7f2c2c452
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830861"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018735"
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>发布 Power BI 项目报表并创建仪表板
 > [!NOTE]

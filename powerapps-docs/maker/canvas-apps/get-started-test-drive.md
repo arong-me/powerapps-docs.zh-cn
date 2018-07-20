@@ -1,23 +1,20 @@
 ---
 title: 从模板创建应用 | Microsoft 文档
 description: 基于 PowerApps 模板自动创建应用的分步说明。
-documentationcenter: na
 author: AFTOwen
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 03/19/2018
 ms.author: anneta
-ms.openlocfilehash: 29010630412de78945d9d35212210b7ce1a8407f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: fba57fb26b023dcce771951953aea2eafa6b28e9
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31827887"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016297"
 ---
 # <a name="create-an-app-from-a-powerapps-template"></a>从 PowerApps 模板创建应用
 基于特定方案的模板自动创建应用，例如跟踪预算和计划休假，然后运行应用以理解其默认行为。

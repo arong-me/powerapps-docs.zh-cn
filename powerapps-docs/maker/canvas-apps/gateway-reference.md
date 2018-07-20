@@ -1,23 +1,20 @@
 ---
 title: 了解本地数据网关 | Microsoft 文档
 description: 本地数据网关的参考信息，包括安装和故障排除
-documentationcenter: na
-author: aftowen
-manager: kfile
-editor: ''
-tags: ''
+author: AFTOwen
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
-ms.topic: conceptual
-ms.component: canvas
+ms.topic: reference
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 10/20/2017
 ms.author: anneta
-ms.openlocfilehash: 2c754fa8e479494ae1002e5339d2d8d5eeb2480f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: f39bebd27aad378a5bbf8bff592fa50ea44db679
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330436"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017746"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>了解 Microsoft PowerApps 的本地数据网关
 ## <a name="installation-and-configuration"></a>安装和配置
@@ -130,7 +127,7 @@ ms.locfileid: "32330436"
 
 **登录帐户**
 
-用户将使用工作或学校帐户登录。 这种帐户属于组织帐户。 如果注册了 Office 365 产品但未提供实际工作电子邮件，登录地址可能类似于 nancy@contoso.onmicrosoft.com。 云服务中的帐户存储在 Azure Active Directory (AAD) 中的租户内。 大多数情况下，AAD 帐户的 UPN 与电子邮件地址匹配。
+用户将使用工作或学校帐户登录。 这种帐户属于组织帐户。 如果你注册了 Office 365 产品/服务，但没有提供实际的工作电子邮件，则可能类似于 nancy@contoso.onmicrosoft.com。 云服务中的帐户存储在 Azure Active Directory (AAD) 中的租户内。 大多数情况下，AAD 帐户的 UPN 与电子邮件地址匹配。
 
 **Windows 服务帐户**
 

@@ -1,23 +1,20 @@
 ---
 title: 了解数据卡 | Microsoft 文档
 description: 使用表单卡从数据源收集和显示信息。
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 074e40dd2fc19279bef36ac91196c61b050abda3
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 81e0213caee1d4eed466edebe3d13cbfa1c3e7e2
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838070"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020759"
 ---
 # <a name="understand-data-cards"></a>了解数据卡
 **[卡](controls/control-card.md)** 控件是**[编辑表单](controls/control-form-detail.md)** 和**[显示表单](controls/control-form-detail.md)** 控件的构建基块。 表单表示整条记录，每个卡表示该记录的单个字段。

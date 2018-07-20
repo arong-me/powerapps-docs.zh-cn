@@ -1,23 +1,20 @@
 ---
 title: 从 SharePoint 中生成应用 | Microsoft 文档
 description: 无论站点是在本地还是在云中，都可以生成三屏应用来管理 SharePoint 列表中的项。
-documentationcenter: na
 author: AFTOwen
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 51a13472407c5483eed7cc2c202e46855905157d
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 46cf610351cf00d8d947c4006c31a3d5971951d0
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329401"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022442"
 ---
 # <a name="generate-an-app-from-within-sharepoint-using-powerapps"></a>使用 PowerApps 从 SharePoint 中生成应用
 

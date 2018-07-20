@@ -1,23 +1,20 @@
 ---
 title: 公式入门 | Microsoft 文档
 description: 使用公式自定义应用。
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: ed4e83fab0cf5a08c4b274863f11070471fc44a4
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: b40abdc4c8d5d8a33a9aec32a1826476500405c8
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898689"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017861"
 ---
 # <a name="get-started-with-formulas"></a>公式入门
 为应用配置公式，不仅用于计算值和执行其他任务（与在 Excel 中的操作一样），还能（根据应用需求）响应用户输入。

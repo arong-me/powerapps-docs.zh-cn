@@ -1,22 +1,20 @@
 ---
 title: 将多媒体文件嵌入应用并将其上传 | Microsoft 文档
 description: 在应用中显示多媒体文件并将其上载到数据源
-documentationcenter: ''
 author: karthik-1
-manager: kfile
-editor: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 07/12/2017
 ms.author: sharik
-ms.openlocfilehash: d193c2691f689e935a5dbb92767a16d393098770
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 8c04681f3d39a6022f8f962e7a76673fb90ad65b
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896733"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017654"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>在 PowerApps 中使用多媒体文件
 本主题介绍如何在应用中嵌入多媒体文件、将笔绘作品上载到数据源，然后在应用中显示该数据源中的图像。 本主题使用的数据源是 OneDrive for Business 中的一个 Excel 文件。

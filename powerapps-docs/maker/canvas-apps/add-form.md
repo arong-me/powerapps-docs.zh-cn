@@ -1,23 +1,20 @@
 ---
 title: 显示、编辑或添加表中的记录 | Microsoft 文档
 description: 使用窗体显示、编辑或添加数据源中表内的记录。
-documentationcenter: na
 author: karthik-1
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/06/2017
 ms.author: sharik
-ms.openlocfilehash: a68986c39ffe251f55c10a26386c8430398d2718
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: b98c5d165ba6de983a874f0a34fb92c5db8a69cd
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37895813"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018942"
 ---
 # <a name="show-edit-or-add-a-record-from-a-table-in-powerapps"></a>在 PowerApps 中显示、编辑或添加表中的记录
 若要显示记录中的所有字段，请添加和配置[“显示窗体”](controls/control-form-detail.md)控件。 若要编辑记录中的任意字段（或添加记录），并将更改保存回数据源，请添加和配置[“编辑窗体”](controls/control-form-detail.md)控件。

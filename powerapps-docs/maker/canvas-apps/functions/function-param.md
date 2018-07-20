@@ -1,23 +1,20 @@
 ---
 title: Download、Launch 和 Param 函数 | Microsoft 文档
 description: PowerApps 中 Download、Launch 和 Param 函数的参考信息（包括语法和示例）
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 146372c723df6089890100abd67d1175ba4b4a04
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: f2af4fef413aa5502c57e7158d9efdddd36757c9
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31828741"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021863"
 ---
 # <a name="download-launch-and-param-functions-in-powerapps"></a>PowerApps 中的 Download、Launch 和 Param 函数
 使用参数下载或启动网页或应用。  

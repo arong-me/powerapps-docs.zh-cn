@@ -1,23 +1,20 @@
 ---
 title: 将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 集成（简介）| Microsoft 文档
 description: 本系列教程介绍了如何使用 SharePoint 列表以及与 SharePoint Online 集成的三项关键技术（PowerApps、Microsoft Flow 和 Power BI）生成基本的项目管理应用。
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 12/19/2017
 ms.author: mblythe
-ms.openlocfilehash: 35dad5e3cbc2e78d5571cca5f9f120ca58ac3382
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: e8a7860920f25572ec899ee93d501ed553ee62f9
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31828844"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39019563"
 ---
 # <a name="integrate-powerapps-microsoft-flow-and-power-bi-with-sharepoint-online"></a>将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 集成（简介）
 是否在使用 SharePoint Online，并希望更好地自动执行和简化业务流程？ 是否使用过 PowerApps、Microsoft Flow 或 Power BI，但不确定如何将它们与 SharePoint Online 结合使用？ 你来对地方了！ 本系列教程介绍了如何使用 SharePoint 列表以及与 SharePoint Online 集成的三项关键技术（PowerApps、Microsoft Flow 和 Power BI）生成基本的项目管理应用。 这些技术相互配合，以便用户可以轻松衡量业务、针对结果采取措施并自动执行工作流。 完成本系列教程后，将生成如下精彩方案：

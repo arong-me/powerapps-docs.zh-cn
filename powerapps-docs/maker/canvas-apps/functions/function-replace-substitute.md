@@ -1,23 +1,20 @@
 ---
 title: Replace 和 Substitute 函数 | Microsoft 文档
 description: PowerApps 中 Replace 和 Substitute 函数的引用信息（包括语法）
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: d08cbb1ae487c7ae4423d67a499f5477a5ea263b
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: d368114a52f428e3bb9403b71adb6557a432e880
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830364"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014503"
 ---
 # <a name="replace-and-substitute-functions-in-powerapps"></a>PowerApps 中的 Replace 和 Substitute 函数
 将文本字符串的一部分替换为其他字符串。

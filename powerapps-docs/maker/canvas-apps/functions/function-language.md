@@ -1,23 +1,20 @@
 ---
 title: Language 函数 | Microsoft 文档
 description: PowerApps 中 Language 函数的参考信息（包括语法和示例）
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: gregli
-ms.openlocfilehash: ec12bef225c59474fbc15a3ab0556694d206edd3
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 57c7bc0f55e502fb89b71a331558199b6a9a1b52
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834804"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017631"
 ---
 # <a name="language-function-in-powerapps"></a>PowerApps 中的 Language 函数
 返回当前用户的语言标记。

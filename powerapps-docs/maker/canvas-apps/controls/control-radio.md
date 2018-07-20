@@ -2,18 +2,19 @@
 title: 单选控件：参考 | Microsoft 文档
 description: 了解单选控件（包括属性和示例）
 author: fikaradz
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 07/06/2018
 ms.author: fikaradz
-ms.openlocfilehash: 4b24d016eb97ca5670a1705adfe063315cb7ebca
-ms.sourcegitcommit: 16a2eeaa4ad9218682143411b609cb961dbcfa91
+ms.openlocfilehash: b09f2ef174ecea79c0a4297bf700ba84b96bccbe
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37886346"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016044"
 ---
 # <a name="radio-control-in-powerapps"></a>PowerApps 中的单选控件
 

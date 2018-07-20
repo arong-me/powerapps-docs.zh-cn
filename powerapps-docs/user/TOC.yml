@@ -7,7 +7,7 @@
 - name: 在手机（模型驱动）上
   href: run-app-client-model-driven.md
 - name: 在 SharePoint Online 页面上
-  href: 'https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c'
+  href: powerapps-web-part.md
 - name: 在 Microsoft Teams 中
   href: open-app-embedded-in-teams.md
 - name: 从 AppSource

@@ -1,23 +1,20 @@
 ---
 title: Char 函数 | Microsoft 文档
 description: PowerApps 中 Char 函数的参考信息（包括语法和示例）
-documentationcenter: na
-author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+dauthor: gregli-msft
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: b5d63b26498b94943f5340d9f57f3255390c7c94
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 9c701527fb02613332cfa5bc542681f8c119f3b3
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37895974"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014549"
 ---
 # <a name="char-function-in-powerapps"></a>PowerApps 中的 Char 函数
 将字符代码转换为字符串。

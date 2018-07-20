@@ -1,23 +1,20 @@
 ---
 title: 显示窗体和编辑窗体控件：参考 | Microsoft Docs
 description: 有关显示窗体和编辑窗体控件的信息（包括属性和示例）
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: ac74f459c35e7b2ec123540a5cf55c1ad6a21c0a
-ms.sourcegitcommit: 8d9e5f44bcd5cecd24de2c99d5ba04df9ea67275
+ms.openlocfilehash: 6e34b107c9ad47b5eee7711f5c2b474eb3f1a836
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37406014"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017838"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>PowerApps 中的编辑窗体和显示窗体控件
 在数据源中显示、编辑和创建记录。
