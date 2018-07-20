@@ -1,23 +1,20 @@
 ---
 title: 列表框控件：参考 | Microsoft 文档
 description: 有关列表框控件的信息（包括属性和示例）
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: e43d786cf8eac8bb4ca6b13c953281614559c132
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 30c55591e410b5526fc85b76b06002c2266e1867
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899400"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016573"
 ---
 # <a name="list-box-control-in-powerapps"></a>PowerApps 中的列表框控件
 用户可以选择一个或多个项的列表。
@@ -156,7 +153,7 @@ ms.locfileid: "37899400"
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：
 * SelectionColor 和 SelectionFill
-* **SelectionFill** 和 **[Fill](properties-color-border.md)**
+* SelectionFill 和 **[Fill](properties-color-border.md)**
 * **[HoverFill](properties-color-border.md)** 和 **[Fill](properties-color-border.md)**
 * **[PressedFill](properties-color-border.md)** 和 **[Fill](properties-color-border.md)**
 

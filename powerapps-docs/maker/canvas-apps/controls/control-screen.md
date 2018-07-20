@@ -1,23 +1,20 @@
 ---
 title: 屏幕控件：参考 | Microsoft 文档
 description: 有关屏幕控件的信息（包括属性和示例）
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 165b6544808da234773c2b7a2cdd0014d6fe5c2d
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 00c44b3f1948447b7045707d5c5f92d0d04ff4d0
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898682"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022346"
 ---
 # <a name="screen-control-in-powerapps"></a>PowerApps 中的屏幕控件
 一个包含应用中一个或多个其他控件的 UI 元素。

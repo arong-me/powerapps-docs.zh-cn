@@ -1,23 +1,20 @@
 ---
 title: PDF 查看器控件：参考 | Microsoft 文档
 description: 有关 PDF 查看器控件的信息，包括属性和示例
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: c47fb9a120f41166bbe23d55de6b502209a0f20d
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 44272022daf547de64ebd175f29630175c7e3757
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898463"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016550"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PowerApps 中的 PDF 查看器控件（实验性）
 显示 PDF 文件内容的实验性控件。
@@ -99,7 +96,7 @@ Zoom – 相机中图像被放大的百分比或 PDF 查看器中文件的视图
 
 添加“PDF 查看器”控件，并将其“Document”属性设置为 PDF 文件的 URL（用双引号括住），如下例所示：
 
-  "https://blog.mozilla.org/security/files/2015/05/HTTPS-FAQ.pdf"
+  **"https://blog.mozilla.org/security/files/2015/05/HTTPS-FAQ.pdf"**
 
     The control shows the PDF file.
 

@@ -1,23 +1,20 @@
 ---
 title: 标签控件：参考 | Microsoft 文档
 description: 介绍了标签控件，包括属性和示例
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: cfc47e95cff02dfcbcc2d3ff456e32a4ca2c675e
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 85e409c517939b786eb677a7acdbd08ed81a5944
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899424"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022484"
 ---
 # <a name="label-control-in-powerapps"></a>PowerApps 中的标签控件
 一个框，显示文本、数字、日期或货币等数据。
@@ -148,7 +145,7 @@ ms.locfileid: "37899424"
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 尽管其名称如此，“标签”控件不一定要用作另一个控件的标签。 它可以用于显示文本的任何部分。
 
-可以通过指定 **[OnSelect](properties-core.md)** 行为，将 **“标签”** 作为按钮或链接使用。 以此方式使用时，要考虑与按钮相类似的辅助功能注意事项。
+可以通过指定 **[OnSelect](properties-core.md)** 行为，将“标签”作为按钮或链接使用。 以此方式使用时，要考虑与按钮相类似的辅助功能注意事项。
 
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：
@@ -159,7 +156,7 @@ ms.locfileid: "37899424"
 * **[“Text”](properties-core.md)** 必须存在。
 
     > [!NOTE]
-  > 当**[“TabIndex”](properties-accessibility.md)** 为零或更大，屏幕阅读器会将 **“标签”** 视为按钮。
+  > 当**[“TabIndex”](properties-accessibility.md)** 为零或更大，屏幕阅读器会将“标签”视为按钮。
 
 ### <a name="low-vision-support"></a>弱视支持
 * 如果“标签”作为链接使用，则应采用链接的形式。
@@ -168,4 +165,4 @@ ms.locfileid: "37899424"
 
 ### <a name="keyboard-support"></a>键盘支持
 * 如果文本用作按钮或链接，**[“TabIndex”](properties-accessibility.md)** 必须为零或更大。 这允许键盘用户导航到它。
-* 如果文本用作按钮或链接，焦点指示器必须清楚显示。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness](properties-color-border.md)**”来实现此目的。
+* 如果文本用作按钮或链接，焦点指示器必须清楚显示。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。

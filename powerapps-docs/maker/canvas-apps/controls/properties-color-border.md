@@ -1,23 +1,20 @@
 ---
 title: Color 和 border 属性 | Microsoft 文档
 description: 有关 BorderColor、HoverBorderColor 和 PressedBorderColor 等属性的参考信息
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 5c30d0c96d3d6ad8eee0781a6c209419ba70c860
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 4cd5c4bf27675da7660bb2aa240de3c533c263a6
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838323"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39019862"
 ---
 # <a name="color-and-border-properties-in-powerapps"></a>PowerApps 中的颜色和边框属性
 ## <a name="overview"></a>概述
@@ -56,9 +53,9 @@ Fill – 控件的背景色。
 * 这些属性适用于[添加图片](control-add-picture.md)、[附件](control-attachments.md)、[音频](control-audio-video.md)、[按钮](control-button.md)、[照相机](control-camera.md)、[复选框](control-check-box.md)、[组合框](control-combo-box.md)， [日期选取器](control-date-picker.md)、[下拉列表](control-drop-down.md)、[导出](control-export-import.md)、[库](control-gallery.md)、[图标](control-shapes-icons.md)、[图像](control-image.md)、[导入](control-export-import.md)、[标签](control-text-box.md)、[列表框](control-list-box.md)、[麦克风](control-microphone.md)、[单选](control-radio.md)、[评级](control-rating.md)、[形状](control-shapes-icons.md)、[滑块](control-slider.md)、[文本输入](control-text-input.md)、[计时器](control-timer.md)、[切换](control-toggle.md)和[视频](control-audio-video.md)控件。
 
 ## <a name="disabled"></a>Disabled
-以下属性在控件被禁用时起作用。  如果 **[Disabled](properties-core.md)** 属性设置为“true”，则可以禁用控件。
+以下属性在控件被禁用时起作用。  如果 [Disabled](properties-core.md) 属性设置为“true”，则可以禁用控件。
 
-DisabledBorderColor – 控件的**[“DisplayMode”](properties-core.md)** 属性设置为“Disabled”时，该控件边框的颜色。
+**DisabledBorderColor** – 控件的**[“DisplayMode”](properties-core.md)** 属性设置为 **“Disabled”** 时，该控件边框的颜色。
 
 * 适用于[添加图片](control-add-picture.md)、[按钮](control-button.md)、[复选框](control-check-box.md)、[柱状图](control-column-line-chart.md)、[日期选取器](control-date-picker.md)、[下拉列表](control-drop-down.md)、[导出](control-export-import.md)、[HTML 文本](control-html-text.md)、[图像](control-image.md)、[导入](control-export-import.md)、[标签](control-text-box.md)、[折线图](control-column-line-chart.md)、[列表框](control-list-box.md)、[麦克风](control-microphone.md)、[PDF 查看器](control-pdf-viewer.md)、[饼图](control-pie-chart.md)、[单选](control-radio.md)、[滑块](control-slider.md)、[文本输入](control-text-input.md)、[计时器](control-timer.md)和[切换](control-toggle.md)控件。
 
