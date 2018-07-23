@@ -49,6 +49,11 @@
               href: ./canvas-apps/get-started-create-from-blank.md
         - name: 共享应用
           href: ./canvas-apps/share-app.md
+          items:
+            - name: 共享 Excel 数据
+              href: ./canvas-apps/share-app-data.md
+            - name: 共享应用资源
+              href: ./canvas-apps/share-app-resources.md
         - name: 在 Power BI 中嵌入应用
           href: ./canvas-apps/embed-powerapps-powerbi.md
     - name: 示例
