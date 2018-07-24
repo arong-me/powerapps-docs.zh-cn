@@ -2,19 +2,22 @@
 title: 具有辅助功能的颜色 | Microsoft Docs
 description: PowerApps 的颜色对比度准则
 author: tahoon
+manager: kvivek
 ms.service: powerapps
 ms.topic: article
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/23/2018
 ms.author: tahoon
-ms.openlocfilehash: 56a11edcd1c43313e9b380ca8ac1c8a68d85772d
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: 289026f18d341381d64423e76effb1abf586557c
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32329907"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014802"
 ---
 # <a name="accessible-colors-in-powerapps"></a>PowerApps 中具有辅助功能的颜色
-应用中使用的颜色应方便色盲和弱视用户使用。 默认情况下，所有 PowerApps 主题可让所有用户都轻松使用。 在修改应用中使用的颜色时，请遵循以下准则以确保它们方便用户使用。
+应用中使用的颜色应方便色盲和弱视用户使用。 默认情况下，所有 PowerApps 主题可让所有用户都轻松使用。 在修改应用中使用的颜色时，请遵循以下准则以确保它们方便用户使用。 有多种联机工具可以帮助确定颜色对比度问题。
 
 ## <a name="minimum-contrast-for-text"></a>文本最小对比度
 * 文本及其背景必须至少有 4.5:1 的对比度
@@ -58,4 +61,4 @@ ms.locfileid: "32329907"
 其他提示，如[图标](controls/control-shapes-icons.md)或[斜体](controls/properties-text.md)和[下划线](controls/properties-text.md)之类的文本样式有助于传达含义。
 
 ## <a name="next-steps"></a>后续步骤
-了解 PowerApps 控件中的[辅助功能属性](controls/properties-accessibility.md)。
+了解 PowerApps 控件中的[辅助功能属性](controls/properties-accessibility.md)并尝试[使用辅助功能检查器](accessibility-checker.md)。

@@ -1,95 +1,130 @@
 ---
 title: 共享应用 | Microsoft 文档
 description: 通过授予其他用户运行或修改应用的权限来共享应用
-documentationcenter: na
 author: AFTOwen
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
-ms.date: 03/18/2018
+ms.custom: canvas
+ms.reviewer: ''
+ms.date: 07/11/2018
 ms.author: anneta
-ms.openlocfilehash: c87f0e644668e9b9804b001560402972fd3d4531
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 197eb5223c0945a7cb80d8b187aaf44c871e798c
+ms.sourcegitcommit: 79a58f1b6880cbc512b64cde71a4d532cebe5bed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329125"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39137013"
 ---
 # <a name="share-an-app-in-powerapps"></a>在 PowerApps 中共享应用
-虽然可以使用 PowerApps 轻松生成可满足你自己的业务需求的应用，但能够与其他人共享这些应用才是它的真正魅力所在。 在本主题中，你将了解如何与指定用户或安全组共享应用，或与整个组织共享应用。
 
-## <a name="specify-an-app"></a>指定应用
-1. 登录 PowerApps，然后单击或点击左边缘附近的“应用”。
+生成满足业务需求的应用后，指定组织中哪些用户可以运行应用，哪些用户可以修改并重新共享应用。 按姓名指定每个用户或在 Azure Active Directory 中指定安全组。 如果每个人都可利用你的应用，则指定整个组织可以运行应用。
+
+> [!IMPORTANT]
+> 若要使共享应用按预期方式运行，还必须管理应用所基于的数据源或源的权限，例如 [Common Data Service for Apps](#common-data-service-for-apps) 或 [Excel](share-app-data.md)。 可能还需要共享应用依赖的[其他资源](share-app-resources.md)，例如流、网关或连接。
+
+## <a name="prerequisites"></a>先决条件
+
+共享应用前，必须将其保存至云（而非本地），然后发布应用。
+
+- 为应用提供有意义的名称和明确说明，以便人们了解应用的功能并且可在列表中轻松找到该应用。 在 PowerApps Studio 中的“文件”菜单上，选择“应用设置”，指定名称，然后键入或粘贴说明。
+
+- 无论何时进行更改，如果想要其他人看到这些更改，必须保存并重新发布应用。
+
+## <a name="share-an-app"></a>共享应用
+
+1. [登录](https://web.powerapps.com) PowerApps，然后选择左边缘附近的“应用”。
 
     ![显示应用列表](./media/share-app/file-apps.png)
 
-1. 单击或点击要共享应用的省略号 (...)，再单击或点击“共享”。
+1. 选择要共享应用的省略号 (...)，再选择“共享”。
 
     ![打开共享屏幕](./media/share-app/ellipsis-share.png)
 
-## <a name="share-an-app"></a>共享应用
-1. 指定 Azure Active Directory 中你想与之共享应用的用户或安全组，并指定是否需要向他们发送电子邮件通知。
+1. 指定要与 Azure Active Directory 中的哪些用户或安全组共享应用。
 
-    你也可以与整个组织共享应用，这样他们就可以运行此应用，但是不能修改或共享应用。
+    > [!NOTE]
+    > 无法与组织中的通讯组或组织外的任何用户或组共享应用。
 
     ![指定用户](./media/share-app/share-list.png)
 
-1. 指定权限级别，然后单击或点击“**保存**”。
+    你也可以与整个组织共享应用，这样他们就可以运行此应用，但是不能修改或共享应用。
 
-    * **可以使用**：用户或组可以运行应用，但无法共享应用。
-    * **可以编辑**：用户或组可以运行、自定义该应用，并可对其他用户共享自定义版本。
+1. （可选）若要帮助用户查找应用，选择向其发送电子邮件邀请的复选框。
+
+    邀请中包含一个链接，用户选择此链接可运行应用。
+
+    - 如果用户在台式计算机上选择该链接，应用将在 [Dynamics 365](http://home.dynamics.com) 中打开。
+    - 如果用户在移动设备上选择该链接，应用将在 PowerApps Mobile 中打开。
+
+    如果授予用户修改应用的权限，该邮件还包含一个单独的链接，通过该链接可在 PowerApps Studio 中打开应用进行编辑。
+
+    无论你是否发送邀请，用户均可以从 [Dynamics 365](http://home.dynamics.com) 上的 AppSource 中运行应用。 具有“可以编辑”权限的用户也可以在 [PowerApps](http://web.powerapps.com) 中编辑应用。
+
+1. 指定每个用户或安全组的权限，然后选择“保存”。
+
+    - 可以使用：用户可以运行应用，但无法共享应用。
+    - 可以编辑：用户可以运行、修改应用，并可与其他用户共享自定义版本。
 
         ![指定权限](./media/share-app/edit-use.png)
 
-要更改用户或组的权限，请重复此过程的步骤 1，然后在权限列表中为相应用户或组指定一个不同的选项。 要删除用户或组的所有权限，请单击或点击相应用户或组的 **x** 图标。
+    若要更改用户或安全组的权限，请选择用户或组已有权限旁边的向下箭头，然后指定其他权限。
 
-### <a name="send-email-notification"></a>发送电子邮件通知
-在共享应用时，可选择是否通过电子邮件通知用户或安全组。 如果选择此选项，将发送一封电子邮件来通知用户或安全组。 该电子邮件包含用于访问应用的链接。 如适用，系统将提示用户注册 PowerApps。
+    若要删除某个用户或组的所有权限，请选择该用户或组对应的“x”图标。
 
-基于你所分配的权限，通知会包含不同的链接：
+## <a name="security-group-considerations"></a>安全组注意事项
 
-- 如果以“可以使用”权限共享应用，则电子邮件将包含运行该应用的链接。
-- 如果以“可以编辑”权限共享应用，则电子邮件将包含运行该应用或编辑该应用的链接。
+- 如果与某个安全组共享应用，则该组的现有成员和加入该组的任何人都将具有你为该组所指定的权限。 退出该组的任何人将失去该权限，除非他们属于有访问权限的其他组或你为他们提供个人身份的权限。
+- 每个安全组成员都具有与整个组相同的应用权限。 但是，可以为该组的一个或多个成员指定更高的权限，以允许他们具有更高的访问级别。 例如，你可以给安全组 A“可以使用”的权限，但是同时可以给该组中的用户 B“可以编辑”的权限。 安全组中的每个成员都可以运行该应用，但是只有用户 B 可以编辑它。 如果你给安全组 A“可以编辑”权限并给用户 B“可以使用”权限，则该用户依然能编辑此应用。
 
-### <a name="how-do-my-users-see-the-app-i-shared"></a>用户应如何查看我所共享的应用？
-在与一个或多个用户、安全组共享应用后，他们查看该应用的方式将取决于你共享应用所用的权限。
+## <a name="manage-entity-permissions"></a>管理实体权限
 
-##### <a name="if-you-shared-an-app-with-can-use-permission"></a>如果以“可以使用”权限共享应用
-如果在应用共享屏幕中选择该复选框，则获得共享应用的人将收到一封电子邮件通知。 在电子邮件中，他们可以单击或点击链接，在 [Dynamics 365](http://home.dynamics.com) 上运行应用。 我们将在不久之后支持通用链接，这意味着如果你已安装 PowerApps Studio 或 PowerApps Mobile，该应用将在 PowerApps Studio 或 PowerApps Mobile 中打开。
+### <a name="common-data-service-for-apps"></a>Common Data Service for Apps
 
-用户还可在 [Dynamics 365](http://home.dynamics.com) 的 AppSource 中发现应用（例如，如果你未发送电子邮件）。 [阅读更多](../../user/app-source.md)有关用户如何通过 AppSource 获取应用的内容。
+如果创建基于 Common Data Service for Apps 的应用，还必须确保运行应用的用户具有应用所依赖实体的相应权限。 具体而言，这些用户必须属于可执行任务（如创建、读取、写入和/或删除相关记录）的安全角色。 如果你具有此环境中数据库的系统管理员或系统定制员权限，可创建自定义角色，然后向其添加用户。
 
-##### <a name="if-you-shared-an-app-with-can-edit-permission"></a>如果以“可以编辑”权限共享应用
-如果在应用共享屏幕中选择该复选框，则获得共享应用的人将收到一封电子邮件通知。 在电子邮件中，他们可以通过单击或点击链接直接打开应用，然后在 PowerApps Studio 中进行编辑。 此外，还有一个链接可用于在 [Dynamics 365](http://home.dynamics.com) 上运行应用。 我们将在不久之后支持通用链接，这意味着如果你已安装 PowerApps Studio 或 PowerApps Mobile，该应用将在 PowerApps Studio 或 PowerApps Mobile 中打开。
+#### <a name="create-a-security-role"></a>创建安全角色
 
-用户还可在 [powerapps.com](http://web.powerapps.com) 中发现应用（例如，如果你未发送电子邮件）。 在该主页中，应用创建者可以浏览已创建的所有应用，或浏览以**参与者**权限共享的应用。 与之相反，在 [Dynamics 365](http://home.dynamics.com) 中，用户可以从 PowerApps 和其他商业应用快速运行应用。
+1. [登录 PowerApps](https://web.powerapps.com)，并确保你与想要共享的应用位于相同环境中。
 
-## <a name="other-things-to-know"></a>其他须知要点
-* 若要共享应用，必须将其保存至云，而非本地。
-* 在共享应用之前，请考虑你要与哪个用户和安全组进行共享，以及它们各自所承担的角色：“可以编辑”还是“可以使用”。 如果与某个组共享应用，则该组的现有成员和加入该组的任何人都将具有你所指定的权限。 除非是具有访问权限的其他组的成员或者你明确指定权限的人，否则离开该组的任何人都将失去这些权限。
-* 每个组成员具有与整个组相同的应用权限。 但是，可以为该组的一个或多个成员指定更高的权限，以允许他们具有更高的访问级别。 例如，你可以给安全组 A“可以使用”的权限，但是同时可以给该组中的用户 B“可以编辑”的权限。 安全组中的每个成员都可以运行该应用，但是只有用户 B 可以编辑它。 如果你给安全组 A“可以编辑”权限并给用户 B“可以使用”权限，则该用户依然能编辑此应用。
-* 你可以与整个组织共享应用，但请考虑清楚是否人人都需要访问你的应用。
-* 请注意，你对共享应用做出的任何更改一经保存，便会与共享对象同步。 如果应用得到改进，人人都可获益。 如果应用损坏，人人都会受到影响。
-* 在共享应用前，为应用指定一个有意义的名称和提要，让其他人知道这是一个什么应用，并能在列表中快速找到它。 在 PowerApps Studio 的“文件”菜单中，单击或点击“应用设置”，然后输入提要。
+1. 选择右上角的齿轮图标，然后选择“高级自定义”。
 
-### <a name="app-sharing-and-the-resources-the-app-uses"></a>应用共享和应用所使用的资源
-大多数应用至少依赖于以下资源类型中的一个：
+    ![打开“高级自定义”窗格](media/share-app/advanced-customizations.png)
 
-* 到数据源的连接
-* 本地数据网关
-* 自定义连接器
-* Excel 工作簿或其他服务
-* 流
+1. 选择“安全角色”链接。
 
-用户和参与者需要获得对应用使用的任何数据连接和网关的访问权限。 虽然应用隐式附带某些权限，但仍必须明确授予其他权限。 有关详细信息，请参阅 [共享应用资源](share-app-resources.md)。
+    ![打开安全角色](media/share-app/security-roles.png)
 
-在共享一个使用较旧版本的 Common Data Service 的应用时，必须单独对 Common Data Service 共享运行时权限。 如果缺少执行此操作的权限，请查看环境管理。在共享一个使用最新版本的 Common Data Service 的应用时，必须创建一个自定义角色并将用户分配至该角色。 [阅读更多](../../administrator/database-security.md)有关 Common Data Service 的安全性的内容。
+1. 在“全部角色”下，选择“新建”，然后为要创建的角色键入或粘贴名称。
 
-### <a name="what-isnt-supported"></a>不支持哪些功能？
-* 可共享至安全组，但无法共享至分发组。
-* 可以与组织中的用户共享应用，但无法与其他租户中的用户共享应用。
-* 如果对某个应用具有“可以编辑”（而非“可以使用”）权限，则可以重新共享该应用。
+    ![创建安全角色](media/share-app/new-role.png)
+
+1. 选择一个或多个选项卡，查找应用使用的实体，并选择想要授予安全角色的权限。
+
+    例如，此图显示“帐户”实体中可创建、读取、写入和删除记录的安全角色，该角色在“核心记录”选项卡上显示。
+
+    ![指定权限](media/share-app/grant-access.png)
+
+1. 选择“保存并关闭”。
+
+#### <a name="assign-a-user-to-a-role"></a>将用户分配给角色
+
+1. 如上一过程所述，打开“高级自定义”窗格，然后选择“用户”链接。
+
+    ![用户链接](media/share-app/open-users.png)
+
+1. 在右上角中键入或粘贴想要分配给角色的用户的姓名，然后选择搜索图标。
+
+    ![搜索用户](media/share-app/search-users.png)
+
+1. 在搜索结果中，指向所需的结果，然后选择显示的复选框。
+
+1. 在顶部横幅中，选择“管理角色”。
+
+1. 在出现的对话框中，选择“Common Data Service 用户”对应的复选框和用户所需的应用角色，然后选择“确定”。
+
+    ![将用户分配给角色](media/share-app/assign-users.png)
+
+### <a name="common-data-service-previous-version"></a>Common Data Service（上一版本）
+
+在共享基于较旧版本的 Common Data Service 的应用时，必须单独对该服务共享运行时权限。 如果缺少执行此操作的权限，请查看环境管理。
