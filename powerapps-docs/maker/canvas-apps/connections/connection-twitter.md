@@ -235,7 +235,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
-| searchQuery |字符串 |是 |查询文本（可以使用 Twitter 支持的任何查询运算符：http://www.twitter.com/search)） |
+| searchQuery |字符串 |是 |查询文本（可以使用 Twitter 支持的任何查询运算符： http://www.twitter.com/search)） |
 | maxResults |整数 |否 |要检索的推文的最大数量，例如 {maxResults:5} |
 
 #### <a name="output-properties"></a>输出属性
@@ -384,7 +384,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
-| searchQuery |字符串 |是 |查询文本（可以使用 Twitter 支持的任何查询运算符：http://www.twitter.com/search)） |
+| searchQuery |字符串 |是 |查询文本（可以使用 Twitter 支持的任何查询运算符： http://www.twitter.com/search)） |
 
 #### <a name="output-properties"></a>输出属性
 

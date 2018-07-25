@@ -69,7 +69,7 @@ PowerApps 允许用户生成业务线应用程序，这些应用程序是组织�
 
 若要确定你是否是非托管租户的成员，请按以下步骤操作：
 
-1. 在浏览器中打开以下 URL，确保在 URL 中替换电子邮件地址：https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1
+1. 在浏览器中打开以下 URL，确保在 URL 中替换电子邮件地址： https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1
 
 2. 如果你是“非托管租户”的成员，则将会在响应中看到 `"IsViral": true`。
    ```
