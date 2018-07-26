@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 09/14/2017
 ms.author: anneta
-ms.openlocfilehash: a605467b1d7448e3f53cccd49d025cdaca3f8f25
-ms.sourcegitcommit: 0d69781f6f9362ffd4bb0b61aab14371968fbb46
+ms.openlocfilehash: faaf3ef6eefc41ad5b1d7cb2e6e34db57632cfaf
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39119442"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194797"
 ---
 # <a name="save-and-publish-an-app-in-powerapps"></a>在 PowerApps 中保存并发布应用
 每当保存应用更改时，都只会对你自己和有权编辑此应用的其他所有人自动发布更改。 完成更改后，必须显式发布更改，以便应用的所有共享对象都能使用。
@@ -47,7 +47,7 @@ PowerApps 也可以每 2 分钟定期保存一次应用。 如果已保存一次
    > 每次发布画布应用时，应用都将升级为在最新版 PowerApps 上运行，这意味着它将获得所有最新功能的好处和自上次发布后的性能升级。 如果几个月内未发布更新，现在重新发布可能会体验到即时性能提升这一好处。
 
 ## <a name="identify-the-live-version"></a>确定实时版本
-在 [powerapps.com](https://web.powerapps.com) 中，依次单击或点击左侧边缘上“文件”菜单中的“应用”、应用详细信息图标和“版本”选项卡。
+在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中，依次单击或点击左侧边缘上“文件”菜单中的“应用”、应用详细信息图标和“版本”选项卡。
 
 “实时”版本会向所有作为应用共享对象的用户发布。 任何应用的最新版本都只会向拥有编辑权限的用户发布。
 

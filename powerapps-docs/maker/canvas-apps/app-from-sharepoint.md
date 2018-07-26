@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/12/2018
 ms.author: anneta
-ms.openlocfilehash: b9404b2ac7d67f9594b77ee73de55b46a94e7afa
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: fd3e1e293b3c10b25351ba3958af46b887447e26
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016803"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195372"
 ---
 # <a name="quickstart-for-generating-an-app-in-powerapps-from-sharepoint"></a>快速入门：通过 SharePoint 在 PowerApps 中生成应用
 
@@ -27,7 +27,7 @@ ms.locfileid: "39016803"
 如果没有适用于 PowerApps 的许可证，可以[免费注册](../signup-for-powerapps.md)。
 
 ## <a name="generate-an-app"></a>生成应用
-1. 登录 [PowerApps](https://web.powerapps.com)。
+1. 登录 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
     ![PowerApps 主页](./media/app-from-sharepoint/sign-in.png)
 

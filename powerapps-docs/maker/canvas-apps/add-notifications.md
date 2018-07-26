@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 08/08/2017
 ms.author: jamesol
-ms.openlocfilehash: 45311aefca51d8d1a4fc6c8cc6dabc33872842df
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: f9b606246b0b1114aec1bec2fc2767b518215148
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020828"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195556"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>在 PowerApps 中发送推送通知
 推送通知用于移动应用中的使用者和业务情形，主要用来与应用用户进行交互，并帮助他们优先处理关键任务。 在 PowerApps 中，可以使用 PowerApps 通知连接器发送通知。 可以将原生推送通知发送到在 PowerApps 中创建的任何应用。 我们计划在今后支持更多通知类型。
@@ -56,7 +56,7 @@ ms.locfileid: "39020828"
 ## <a name="send-a-notification-from-an-app"></a>通过应用发送通知
 可以将推送通知从一个应用发送到另一个应用，也可以发送到同一个应用。
 
-1. 在 [PowerApps](https://web.powerapps.com/) 中，转到要向其发送推送通知的应用。
+1. 在 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中，转到要向其发送推送通知的应用。
 2. 在“详细信息”选项卡上，复制此应用的“应用 ID”。
 
     ![获取应用 ID](./media/add-notifications/grab-id.png)

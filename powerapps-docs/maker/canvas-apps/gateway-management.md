@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/30/2016
 ms.author: archanan
-ms.openlocfilehash: e7dc9a2386d75a6f03744286b7ed265a8d385370
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: fb561ca5458a22880d93c712aa2e2b2ada884605
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018528"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194866"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>在 PowerApps 中管理本地数据网关
 安装本地数据网关，以便在 PowerApps 和不在云中的数据源（如本地 SQL Server 数据库或本地 SharePoint 网站）之间快速、安全地传输数据。 查看拥有管理权限的所有网关，并管理这些网关的权限和连接。
@@ -35,7 +35,7 @@ ms.locfileid: "39018528"
 * 只能在用户的[默认环境](working-with-environments.md)中创建和使用网关和本地连接。
 
 ## <a name="install-a-gateway"></a>安装网关
-1. 在 [powerapps.com](https://web.powerapps.com) 的左侧导航栏中，单击或点击“**网关**”。
+1. 在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 的左侧导航栏中，单击或点击“**网关**”。
 
     ![左侧导航栏中的“网关”](./media/gateway-management/manage-gateway.png)
 
@@ -46,7 +46,7 @@ ms.locfileid: "39018528"
     若要详细了解如何安装网关，请参阅[了解本地数据网关](gateway-reference.md)。
 
 ## <a name="view-and-manage-gateway-permissions"></a>查看和管理网关权限
-1. 在 [powerapps.com](https://web.powerapps.com) 的左侧导航栏中，依次单击或点击“**网关**”和一个网关。
+1. 在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 的左侧导航栏中，依次单击或点击“**网关**”和一个网关。
 
 2. 通过单击或点击“**用户**”，指定用户或组，然后指定权限级别来将用户添加到网关：
 
@@ -57,7 +57,7 @@ ms.locfileid: "39018528"
 对于“可使用”和“可使用和共享”权限级别，请选择用户可以通过网关连接的数据源。
 
 ## <a name="view-and-manage-gateway-connections"></a>查看和管理网关连接
-1. 在 [powerapps.com](https://web.powerapps.com) 的左侧导航栏中，依次单击或点击“**网关**”和一个网关。
+1. 在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 的左侧导航栏中，依次单击或点击“**网关**”和一个网关。
 
 2. 依次单击或点击“连接”和一个连接，查看连接的详细信息、编辑设置或删除连接。
 

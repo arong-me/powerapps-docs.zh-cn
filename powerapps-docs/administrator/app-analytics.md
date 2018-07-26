@@ -8,17 +8,17 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/29/2017
 ms.author: jamesol
-ms.openlocfilehash: ba4b518cdc1b965a26a7e3fc3722dd23d601e693
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9abac88875c85551fe4d4f91413a1752e35b8320
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168196"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218846"
 ---
 # <a name="view-analytics-reports-for-your-app"></a>查看应用的分析报告
 你是否构建了一个应用并将其共享到了组织？  你是否想要知道每天有多少个同事在使用它？
 
-介绍首个 PowerApps 分析报告（目前可在 [web.powerapps.com](https://web.powerapps.com) 获取）；应用使用情况报告。
+介绍首个 PowerApps 分析报告（目前可在 [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 获取）；应用使用情况报告。
 
 可以通过应用使用情况报告跟踪过去 30 天内使用你的应用的用户数量（按日期、设备平台和位置分类）。
 
@@ -30,7 +30,7 @@ ms.locfileid: "34168196"
 ## <a name="where-do-i-find-my-apps-reports"></a>在哪里找到应用的报告？
 可以通过以下步骤查看应用的报告：
 
-1. 转到 [web.powerapps.com](https://web.powerapps.com)。
+1. 转到 [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 2. 从左侧导航栏选择“应用”
    
     ![左侧导航栏](./media/app-analytics/left-nav.png)

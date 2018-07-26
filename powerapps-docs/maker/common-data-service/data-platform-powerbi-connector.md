@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: clwesene
-ms.openlocfilehash: bb0bec7cf459eb9084aea4db7264350b7913e578
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 5fffcbcd8f58ae05f3fe5b3b4f871cf39d003321
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898728"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218179"
 ---
 # <a name="create-a-power-bi-report"></a>创建 Power BI 报表
 通过 Common Data Service for Apps，可使用 Power BI Desktop 直接连接到数据，然后创建报表并发布到 Power BI。 在 Power BI 中，可在仪表板中使用报表，与其他用户共享报表，还可在 Power BI 移动应用上跨平台访问报表。
@@ -29,7 +29,7 @@ ms.locfileid: "37898728"
 
 ## <a name="finding-your-common-data-service-for-apps-environment-url"></a>查找 Common Data Service for Apps 环境 URL
 
-1. 打开 [PowerApps](https://web.powerapps.com)，选择要连接到的环境，单击右上角的设置齿轮，然后单击“高级自定义”
+1. 打开 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择要连接到的环境，单击右上角的设置齿轮，然后单击“高级自定义”
 
     ![CDS for Apps 环境](./media/data-platform-cds-powerbi-connector/CDSEnv1.png "CDS for Apps 环境")
 

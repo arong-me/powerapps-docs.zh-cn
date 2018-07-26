@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: f1952c2349eb54f2c6348f5abc4dee9a4645348a
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 8562219c373a8880f7cc89f791b6c6373b6df0b3
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168426"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39217926"
 ---
 # <a name="create-a-relationship-between-entities"></a>创建实体间的关系
 一个实体中的数据通常与另一个实体中的数据相关。 例如，可能有“教师”和“班级”实体，而“班级”实体可能与“教师”实体间存在查找关系，以显示哪位教师负责这个班级。 可以使用查找字段显示“教师”实体中的数据。 这通常称为查找字段。
@@ -29,7 +29,7 @@ ms.locfileid: "34168426"
 
 若要向实体添加查阅关系，请在“关系”选项卡下创建关系，并指定要与之有关系的实体。
 
-1. 在 [powerapps.com](https://web.powerapps.com) 上，展开“数据”部分，然后单击或点击左侧导航窗格中的“实体”。
+1. 在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开“数据”部分，然后单击或点击左侧导航窗格中的“实体”。
 
     ![实体详细信息](./media/data-platform-cds-create-entity/entitylist.png "实体列表")
 
@@ -53,7 +53,7 @@ ms.locfileid: "34168426"
 
 若要添加一对多关系，请在“关系”选项卡下创建关系，并指定要与之建立关系的实体。
 
-1. 在 [powerapps.com](https://web.powerapps.com) 上，展开“数据”部分，然后单击或点击左侧导航窗格中的“实体”。
+1. 在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开“数据”部分，然后单击或点击左侧导航窗格中的“实体”。
 
     ![实体详细信息](./media/data-platform-cds-create-entity/entitylist.png "实体列表")
 

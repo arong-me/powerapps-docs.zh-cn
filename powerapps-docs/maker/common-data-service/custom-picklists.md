@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 188add46a8e52cfeb75ef1bb670ca3b457963024
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: b2b472ae33bd16761d25fc965f24afc6bb9b957e
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168587"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218409"
 ---
 # <a name="create-an-option-set"></a>创建选项集
 
@@ -23,7 +23,7 @@ ms.locfileid: "34168587"
 
 ## <a name="creating-an-option-set-while-adding-a-field"></a>在添加字段时创建选项集。
 
-1. 在 [powerapps.com](https://web.powerapps.com) 上，展开“数据”部分，然后单击或点击左侧导航窗格中的“实体”。
+1. 在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开“数据”部分，然后单击或点击左侧导航窗格中的“实体”。
 
     ![实体详细信息](./media/data-platform-cds-create-entity/entitylist.png "实体列表")
 
@@ -61,7 +61,7 @@ ms.locfileid: "34168587"
 
 ## <a name="creating-an-option-set-from-the-option-set-list"></a>从选项集列表创建选项集
 
-1. 在 [powerapps.com](https://web.powerapps.com) 上，展开“数据”部分，然后单击或点击左侧导航窗格中的“选项集”。
+1. 在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开“数据”部分，然后单击或点击左侧导航窗格中的“选项集”。
 
     ![选项集](./media/data-platform-cds-newoptionset/optionsetlist.png "选项集列表")
 

@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 07/12/2016
 ms.author: lanced
 ms.reviewer: anneta
-ms.openlocfilehash: 3d7813280f0d17eca327e86a827da72e33f191e3
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 8e6aa988344c1ac04c2ff11eaa9d828cc8b929bc
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021012"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195648"
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>从 PowerApps 连接到云存储
 PowerApps 提供多个云存储连接。 使用其中任何一种连接，都可以存储 Excel 文件，并将其中的信息用于整个应用。 这些连接包括：  
@@ -33,7 +33,7 @@ PowerApps 提供多个云存储连接。 使用其中任何一种连接，都可
   4. 保存所做更改。
 
 ## <a name="connect-to-the-cloud-storage-connection"></a>连接云存储连接
-1. 在 [powerapps.com](https://web.powerapps.com) 中，展开“管理”，然后选择“连接”：  
+1. 在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中，展开“管理”，然后选择“连接”：  
    
     ![选择“连接”](./media/cloud-storage-blob-connections/connections.png)
 2. 依次选择“新建连接”和云存储连接。 例如，选择“OneDrive”。

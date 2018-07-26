@@ -9,15 +9,15 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/28/2016
 ms.author: litran
-ms.openlocfilehash: 400df9944b21788e08b0a55e3e0a148f2eccb972
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 9c1b6bde62f0260dca7eba1d723049aadc3e72c9
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017332"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195326"
 ---
 # <a name="introduction-to-powerappscom"></a>powerapps.com 简介
-PowerApps 团队将会重新引入 [powerapps.com](http://web.powerapps.com) 作为应用创建者的新门户。 我们已将页面重新设计为主站点，让创建者轻松着手创建应用，使用 Microsoft Common Data Service，以及在一个位置管理他们的应用。 本文逐步讲解以下内容：
+PowerApps 团队将会重新引入 [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 作为应用创建者的新门户。 我们已将页面重新设计为主站点，让创建者轻松着手创建应用，使用 Microsoft Common Data Service，以及在一个位置管理他们的应用。 本文逐步讲解以下内容：
 
 * 标题
 * 主页
@@ -45,7 +45,7 @@ PowerApps 团队将会重新引入 [powerapps.com](http://web.powerapps.com) 作
 ![标题 - 帮助](./media/intro-maker-portal/help_items2.png)
 
 ## <a name="homepage"></a>主页
-登录 [powerapps.com](http://web.powerapps.com) 后，默认会登陆到主页。 我们已更改主页的布局，帮助你快速开始操作，不管你是要创建应用还是要探索 Common Data Service。
+登录 [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 后，默认会登陆到主页。 我们已更改主页的布局，帮助你快速开始操作，不管你是要创建应用还是要探索 Common Data Service。
 
 如果你以前已登录到 PowerApps 并且运行或创建了一些应用，主页的第一个部分将显示“最近使用的应用”列表。 应用已按照最近打开的日期排序。
 
@@ -96,7 +96,7 @@ PowerApps 团队将会重新引入 [powerapps.com](http://web.powerapps.com) 作
     ![连接的示例应用](./media/intro-maker-portal/connectedsampleapps2.png)
 
 ## <a name="new-apps-page"></a>“新建应用”页
-可以通过 [powerapps.com](http://web.powerapps.com) 上的左侧导航栏访问“应用”页。
+可以通过 [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上的左侧导航栏访问“应用”页。
 
 ![左侧导航栏](./media/intro-maker-portal/leftnav2.png)
 

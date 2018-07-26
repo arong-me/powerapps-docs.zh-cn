@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/08/2018
 ms.author: anneta
-ms.openlocfilehash: 796d23be4c8b69a6f901b4338bda0000f8afb452
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 25a06525fba038dda2deebb333f53583301540f7
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023082"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195143"
 ---
 # <a name="create-or-edit-apps-in-powerapps-studio-for-web"></a>在适用于 Web 的 PowerApps Studio 中创建或编辑应用
 使用适用于 Web 的 PowerApps Studio 在 Windows 或其他平台上的浏览器中创建和编辑应用。
@@ -34,7 +34,7 @@ ms.locfileid: "39023082"
 ## <a name="known-limitations"></a>已知的限制
 1. **创建连接。**
 
-    若要对需要服务身份验证的数据源[创建连接](add-manage-connections.md)，请使用 [powerapps.com](https://web.powerapps.com)，然后在 PowerApps Studio for web 中向应用[添加该连接](add-data-connection.md)。
+    若要对需要服务身份验证的数据源[创建连接](add-manage-connections.md)，请使用 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后在 PowerApps Studio for web 中向应用[添加该连接](add-data-connection.md)。
 2. **在本地编辑并保存应用**。
 
     为达到最佳效果，可使用 PowerApps Studio for Windows 在本地编辑并保存应用。 在浏览器中，无法保存对本地应用的更改；若要保存更改，必须保存新文件，而不是替换已打开的文件。

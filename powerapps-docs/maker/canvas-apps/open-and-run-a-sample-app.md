@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/11/2018
 ms.author: anneta
-ms.openlocfilehash: 2051fdf0d9cb1d5fb2f796b22f55e8b59c52a692
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 293c5874e47d740d645b331aade04df662500db8
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018298"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194820"
 ---
 # <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>快速入门：根据 PowerApps 的示例创建画布应用
 在本快速入门教程中，将根据示例创建一个画布应用，以便探索设计的可能性，并发现在开发自己的应用时可以应用的概念。
@@ -24,7 +24,7 @@ ms.locfileid: "39018298"
 如果没有适用于 PowerApps 的许可证，可以[免费注册](../signup-for-powerapps.md)。
 
 ## <a name="open-a-sample-app"></a>打开示例应用
-1. 登录 [PowerApps](https://web.powerapps.com)。
+1. 登录 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
     ![](./media/open-and-run-a-sample-app/sign-in.png)
 

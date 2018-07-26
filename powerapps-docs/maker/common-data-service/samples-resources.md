@@ -8,16 +8,16 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 03/17/2018
 ms.author: clwesene
-ms.openlocfilehash: 405cafabd57ea234d5202076060ee0987b6904db
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: e1f361cb2bd0f97e75422ce552ac50ae5c581626
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168449"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218547"
 ---
 # <a name="samples-and-other-resources-for-common-data-service-for-apps"></a>Common Data Service for Apps 示例和其他资源
 ## <a name="samples"></a>示例
-有多个使用 Common Data Service (CDS) for Apps 的示例。 若要查找这些示例，请转到 [powerapps.com](https://web.powerapps.com)，然后在导航窗格中选择“主页”。
+有多个使用 Common Data Service (CDS) for Apps 的示例。 若要查找这些示例，请转到 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后在导航窗格中选择“主页”。
 
 ## <a name="videos"></a>视频
 可以在 YouTube 上的 [MS PowerApps](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg) 和 [Microsoft Ignite](https://www.youtube.com/channel/UCrhJmfAGQ5K81XQ8_od1iTg) 频道找到相关视频。

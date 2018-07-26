@@ -8,12 +8,12 @@ ms.topic: overview
 ms.component: cds
 ms.date: 05/01/2018
 ms.author: matp
-ms.openlocfilehash: 586750edf476a9145e2822522cc0b4b5ad729539
-ms.sourcegitcommit: 7296649d03ebc33dc5ddb9e7c551869dc781f154
+ms.openlocfilehash: 6a8bc8f24ce0f772f5c98852838095f233c4317f
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250814"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218064"
 ---
 # <a name="what-is-common-data-service-for-apps"></a>什么是 Common Data Service for Apps？
 使用 Common Data Service (CDS) for Apps，可安全地存储和管理业务应用程序使用的数据。 CDS for Apps 中的数据存储在一组实体中。 实体是一组用于存储数据的记录，类似于表存储数据库中数据的方式。 CDS for Apps 带有一组基本的标准实体（包含典型解决方案），但用户也可创建组织特定的自定义实体，并使用 Power Query 向其填充数据。 应用创建者随后可以使用 PowerApps 通过此数据生成大量应用程序。
@@ -70,7 +70,7 @@ CDS for Apps 中的实体可利用丰富的服务器端逻辑和验证来确保�
 * 带有代码的业务逻辑支持高级的开发人员方案，以便通过代码直接扩展应用程序。 有关详细信息，请参阅[使用代码应用业务逻辑](../../developer/common-data-service/apply-business-logic-with-code.md)。
 
 ## <a name="developer-capabilities"></a>开发人员功能
-除了提供可通过 [PowerApps](https://web.powerapps.com) 门户使用的功能外，CDS for Apps 还包含一些功能，可方便开发人员以编程方式访问元数据和数据，从而创建实体和业务逻辑，以及与数据进行交互。 有关详细信息，请参阅 [Common Data Service for Apps 开发人员概述](../../developer/common-data-service/overview.md)
+除了提供可通过 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 门户使用的功能外，CDS for Apps 还包含一些功能，可方便开发人员以编程方式访问元数据和数据，从而创建实体和业务逻辑，以及与数据进行交互。 有关详细信息，请参阅 [Common Data Service for Apps 开发人员概述](../../developer/common-data-service/overview.md)
 
 ## <a name="next-steps"></a>后续步骤
 开始使用 CDS for Apps：

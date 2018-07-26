@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/06/2018
 ms.author: anneta
-ms.openlocfilehash: bb02f12bf452d1928408ea7c266469b524607b5f
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: fa5aa70beba25130144c5da9dac4fbaa383dfc67
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016780"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195602"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>教程：在 PowerApps 中自定义库
 
@@ -39,7 +39,7 @@ ms.locfileid: "39016780"
 
 本教程从一个由特定数据源生成的应用开始。 但是，相同的概念适用于在 PowerApps 中生成（无论从 SharePoint 列表、Excel 表还是某些其他数据源生成）的任何应用。
 
-如果没有注册 PowerApps，请在开始使用之前先[免费注册](https://web.powerapps.com)。
+如果没有注册 PowerApps，请在开始使用之前先[免费注册](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -47,7 +47,7 @@ ms.locfileid: "39016780"
 
 ## <a name="open-the-generated-app"></a>打开生成的应用
 
-1. 登录 [PowerApps](https://web.powerapps.com)，然后选择左边缘附近的“应用”。
+1. 登录 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后选择左边缘附近的“应用”。
 
     [![PowerApps 主页](./media/customize-layout-sharepoint/sign-in.png)](./media/customize-layout-sharepoint/sign-in.png#lightbox)
 

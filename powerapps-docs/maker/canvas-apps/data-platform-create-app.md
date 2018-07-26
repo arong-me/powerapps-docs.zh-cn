@@ -9,24 +9,24 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/06/2018
 ms.author: anneta
-ms.openlocfilehash: 50913e593cf279d0d1870cbe88fa1a3703059811
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 3481bd697e29855a075598975e26d14121a49a0a
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016008"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195349"
 ---
 # <a name="quickstart-generate-an-app-from-common-data-service-for-apps-in-powerapps"></a>快速入门：在 PowerApps 中从 Common Data Service for Apps 生成应用
 
 在本快速入门中，使用 Microsoft PowerApps 基于 [Common Data Service (CDS) for Apps](../common-data-service/data-platform-intro.md) 中的示例帐户列表自动生成一个应用。 在此应用中，可以浏览所有帐户、显示单个帐户的详细信息以及创建、更新或删除帐户。
 
-如果没有注册 PowerApps，请在开始使用之前先[免费注册](https://web.powerapps.com)。
+如果没有注册 PowerApps，请在开始使用之前先[免费注册](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 ## <a name="prerequisites"></a>先决条件
 若要按照本快速入门操作，须[切换到满足以下条件的环境](working-with-environments.md)：已在 CDS for Apps 中创建数据库、包含数据并允许更新。 如果不具备此环境但拥有管理权限，则可按此要求[创建环境](../../administrator/environments-administration.md#create-an-environment)。
 
 ## <a name="generate-an-app"></a>生成应用
-1. 登录到 [PowerApps](https://web.powerapps.com) ，如有必要，按本主题前文所述切换环境。
+1. 登录到 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ，如有必要，按本主题前文所述切换环境。
 
     ![PowerApps 主页](./media/data-platform-create-app/sign-in.png)
 

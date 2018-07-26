@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 03/12/2018
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: ddbd2f610ecba6d801efde2a00a9cb492e2382e3
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 62afc8fc0ce754ed797683a61c061db16370f904
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021541"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195188"
 ---
 # <a name="sign-up-for-a-free-license-to-try-powerapps"></a>注册免费许可证试用 PowerApps
 若要在 PowerApps 中创建应用，需要几种类型的许可证之一，这些许可证提供不同的功能级别。 如果你的组织为你购买了 Office 365 或 Dynamics 365 的任何一个版本，或者你的组织为你购买了 PowerApps 计划 1 或计划 2 许可证，则你已经拥有 PowerApps 许可证。
@@ -74,7 +74,7 @@ ms.locfileid: "39021541"
 
 在电子邮件中，选择验证电子邮件地址的链接，并（如果提示）提供详细信息。
 
-此显示此对话框时，选择“开始”，然后开始使用 [PowerApps](http://web.powerapps.com)！
+此显示此对话框时，选择“开始”，然后开始使用 [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)！
 
 ![单击“开始”](./media/signup-for-powerapps/almost-there.png)
 
@@ -118,7 +118,7 @@ ms.locfileid: "39021541"
 * 如果只能通过试用版（已在 [PowerApps 站点](http://powerapps.microsoft.com/)或[定价页](http://powerapps.microsoft.com/pricing)上进行注册）访问 PowerApps，可以申请将试用许可延期 30 天以保留对 PowerApps 的访问权限。
 
 ### <a name="when-will-my-trial-license-expire"></a>试用许可证何时到期？
-若要确定试用许可证的到期日期，请选择 [PowerApps 站点](http://web.powerapps.com)右上角附近的齿轮图标，然后选择“计划”。
+若要确定试用许可证的到期日期，请选择 [PowerApps 站点](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)右上角附近的齿轮图标，然后选择“计划”。
 
 ![](./media/signup-for-powerapps/show-duration.png)
 

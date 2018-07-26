@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/17/2018
 ms.author: anneta
-ms.openlocfilehash: 842e19360c5f1536489f978cf880d941a6dee7d6
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: aefe350c2294f9d8cbae32eee1db1f600c8a65da
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39019977"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195096"
 ---
 # <a name="customize-forms-in-powerapps"></a>自定义 PowerApps 中的窗体
 自定义“显示窗体”控件和“编辑窗体”控件，以便它们以最直观的顺序显示最重要的数据，帮助用户轻松了解和更新数据。
@@ -27,7 +27,7 @@ ms.locfileid: "39019977"
 从 Common Data Service [生成应用](data-platform-create-app.md)，然后在该应用中[自定义库](customize-layout-sharepoint.md)。
 
 ## <a name="show-and-hide-cards"></a>显示和隐藏卡
-1. 登录 [PowerApps](http://web.powerapps.com)。
+1. 登录 [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
     ![PowerApps 站点的主页](./media/customize-forms-sharepoint/sign-in.png)
 

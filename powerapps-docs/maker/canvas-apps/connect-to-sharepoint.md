@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 09/03/2016
 ms.author: anneta
-ms.openlocfilehash: 1b9ff639e053218c74515be574f92146fc8ced36
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 0e0b98277548d188071bcd29b9e3168de5818321
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020506"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195855"
 ---
 # <a name="create-a-connection-to-sharepoint-from-powerapps"></a>创建从 PowerApps 到 SharePoint 的连接
 创建到 SharePoint Online 或本地 SharePoint 的连接，以便自动生成应用或从零构建应用。
@@ -26,7 +26,7 @@ ms.locfileid: "39020506"
 ## <a name="specify-a-sharepoint-connection"></a>指定 SharePoint 连接
 1. 如果还未注册，请 [注册 PowerApps](../signup-for-powerapps.md)。
 
-2. 使用注册所用的同一凭据登录到 [powerapps.com](https://web.powerapps.com)。
+2. 使用注册所用的同一凭据登录到 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 3. 在左侧导航栏中，单击或点击“**管理**”，然后单击或点击“**连接**”。
 

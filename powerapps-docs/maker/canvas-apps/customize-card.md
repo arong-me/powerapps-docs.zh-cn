@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 56a46493ef15eff7d65d19f12affb2a58dbba0b6
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 68b02c1dd2b6c22f5b1ec049f753a175ad8c09db
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023427"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195050"
 ---
 # <a name="customize-a-card-in-powerapps"></a>在 PowerApps 中自定义卡片
 举例来说，通过更改卡控件执行基本的自定义（无需解锁卡）。 例如，通过解锁卡及添加默认情况下该卡无法使用的控件来执行高级自定义。
@@ -33,7 +33,7 @@ ms.locfileid: "39023427"
 ## <a name="customize-a-locked-card"></a>自定义锁定的卡
 在此过程中，会将[文本输入](controls/control-text-input.md)控件替换为[滑块](controls/control-slider.md)控件，而无需解锁卡。
 
-1. 登录 [PowerApps](http://web.powerapps.com)。
+1. 登录 [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
     ![PowerApps 主页](./media/customize-card/sign-in.png)
 

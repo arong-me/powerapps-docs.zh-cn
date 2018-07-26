@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 07/12/2016
 ms.author: lanced
 ms.reviewer: anneta
-ms.openlocfilehash: e1a07bc9c166ac37ad0efa7ae50dca87332cb3e2
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a3862dbd0210d2975b276d86741709b24d6d08f6
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020886"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195464"
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>从 PowerApps 连接到 SQL Server
 ![SQL Server 图标](./media/connection-azure-sqldatabase/sqlicon.png)
@@ -23,7 +23,7 @@ ms.locfileid: "39020886"
 
 ## <a name="prerequisites"></a>先决条件
 
-* [注册](../../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](http://web.powerapps.com)。
+* [注册](../../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 * 使用主键收集包含至少一个表的数据库的以下信息：
   
   * 数据库的名称
@@ -64,7 +64,7 @@ ms.locfileid: "39020886"
 8. 通过使用类似[通过 Excel 创建应用](../get-started-create-from-data.md)中介绍的技术来自定义应用，开始更改应用布局。
 
 ## <a name="build-an-app-from-scratch"></a>从头开始构建应用
-1. 使用注册 PowerApps 所用的同一帐户登录 [powerapps.com](https://web.powerapps.com)。
+1. 使用注册 PowerApps 所用的同一帐户登录 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 2. 在左侧导航栏中，单击或点击“连接”：  
    
     ![管理连接](./media/connection-azure-sqldatabase/manage-connections.png)

@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: tutorial
 ms.date: 05/01/2018
 ms.author: matp
-ms.openlocfilehash: a4430637d197530cff793a2fcde1c2485bf59a9f
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: f611ef7be4d91b76f0be24116aabc7795d332520
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37897285"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218455"
 ---
 # <a name="tutorial-create-a-custom-entity-that-has-components-in-powerapps"></a>教程：在 PowerApps 中创建带组件的自定义实体
 
@@ -31,7 +31,7 @@ ms.locfileid: "37897285"
 
 ## <a name="prerequisites"></a>先决条件
 
-登录 [PowerApps](https://powerapps.microsoft.com/)。 如果尚不拥有 [!INCLUDE [powerapps](../../includes/powerapps.md)] 帐户，请从 [powerapps.com](https://web.powerapps.com) 中选择“免费开始使用”链接。
+登录 [PowerApps](https://powerapps.microsoft.com/)。 如果尚不拥有 [!INCLUDE [powerapps](../../includes/powerapps.md)] 帐户，请从 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中选择“免费开始使用”链接。
 
 ## <a name="create-a-custom-entity"></a>创建自定义实体
 

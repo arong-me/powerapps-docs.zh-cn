@@ -8,12 +8,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 04/23/2018
 ms.author: anneta
-ms.openlocfilehash: 267480158d7e44afd06962779b98c0468436841a
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 330751210322190fddefb6c399025578bb9878b5
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022599"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195280"
 ---
 # <a name="create-an-excel-app-from-scratch"></a>从头开始创建 Excel 应用
 基于 Excel 数据从头开始创建你自己的应用，将其格式化为表格，然后从其他源添加数据（如果需要）。 按照本教程中的步骤进行操作，可以创建包含两个屏幕的应用。 在一个屏幕上，用户可以浏览一组记录。 在另一个屏幕上，用户可以创建记录、更新记录中的一个或多个字段，或删除整条记录。 与[自动生成应用](get-started-create-from-data.md)相比，此方法耗费的时间要多得多，但有经验的应用创作者可以使用它根据需要生成最佳应用。
@@ -42,7 +42,7 @@ ms.locfileid: "39022599"
 > 可以使用自己的 Excel 文件，而仅通过此教程学习基本概念。 但是，Excel 文件中的数据必须设置为表格格式。 有关详细信息，请参阅[在 Excel 中设置表格格式](how-to-excel-tips.md)。
 
 ## <a name="open-a-blank-app"></a>打开一个空白应用
-1. 登录 [PowerApps](http://web.powerapps.com)。
+1. 登录 [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
     ![PowerApps 主页](./media/get-started-create-from-blank/sign-in.png)
 

@@ -9,18 +9,18 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: cf5e8e4c7dcd2c1ae5b381b79a086471e24db787
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 3f59dac57fcdd344645f7af53c75e9fa1cb1a7a3
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020069"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195064"
 ---
 # <a name="restore-an-app-to-a-previous-version"></a>将应用还原到之前的版本
 本文介绍了如何从 PowerApps 帐户将应用还原到保存在云中的上一版本。
 
 ## <a name="restore-an-app-from-your-account"></a>从帐户中还原应用
-1. 打开 [powerapps.com](https://web.powerapps.com)，然后在左侧导航栏中单击或点击“应用”。
+1. 打开 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后在左侧导航栏中单击或点击“应用”。
 
     ![左侧导航栏](./media/restore-an-app/file-apps.png)
 

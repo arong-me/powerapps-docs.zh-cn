@@ -9,12 +9,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 2a393bb2ebedde2a08f1ed1534d815e64325077b
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.openlocfilehash: b550d5fe7e36c36177fff017adcf9d9034c93dd4
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094739"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218041"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-common-data-service-for-apps-customer-data"></a>响应针对 Common Data Service for Apps 客户数据的数据主体权限 (DSR) 请求
 
@@ -52,7 +52,7 @@ ms.locfileid: "39094739"
 
 CDS for Apps 和 Common Data Service (CDS) 早期版本具有与个人数据交互的单独过程。
 
-要确定所拥有 CDS 环境的类型，可登录到 [PowerApps](https://web.powerapps.com)，并执行以下步骤：
+要确定所拥有 CDS 环境的类型，可登录到 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，并执行以下步骤：
 
 1. 在“环境”下拉列表中，选择你的环境。
 2. 在导航窗格中，单击或点击“数据”，然后单击或点击“实体”。
@@ -308,7 +308,7 @@ CDS 系统管理员负责维护不同实体中存储的每个人的个人数据�
 
 |资源 | 用途 | 网站访问 |  编程访问
 | --- | --- | --- | ---
-|实体记录 | 在各自的业务实体中捕获业务事务。 | [PowerApps](https://web.powerapps.com) |      否
+|实体记录 | 在各自的业务实体中捕获业务事务。 | [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) |    否
 
 #### <a name="entity-records"></a>实体记录
 个人的个人数据可以存储在任何业务实体中。

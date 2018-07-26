@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/14/2016
 ms.author: litran
-ms.openlocfilehash: 04ed5dfb76cb26f629f36514a05eda9690669926
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 865e5f419d5ff318ce232fff16b9240039129a29
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020621"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194981"
 ---
 # <a name="working-with-environments-and-microsoft-powerapps"></a>使用环境和 Microsoft PowerApps
 通过 PowerApps，你可以在不同的环境中工作，并在它们之间轻松切换。 有关环境的概述，请参阅 [环境概述](../../administrator/environments-overview.md)，该文章详细介绍了使用环境的原因以及如何创建和管理环境。 本文的范围将涵盖有关环境的以下主题：
@@ -39,7 +39,7 @@ ms.locfileid: "39020621"
 
 若要在合适的环境中创建应用，请执行以下任一项：
 
-- 如果 PowerApps Studio 没有打开，先[登录](http://web.powerapps.com)，选择想要在其中创建应用的环境，然后选择靠近左侧边缘的“应用”，再选择“创建应用”。
+- 如果 PowerApps Studio 没有打开，先[登录](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择想要在其中创建应用的环境，然后选择靠近左侧边缘的“应用”，再选择“创建应用”。
 
 - 如果 PowerApps Studio 打开，则在右上角角落再次选择环境。
 
@@ -54,6 +54,6 @@ ms.locfileid: "39020621"
     ![Studio 切换环境](./media/working-with-environments/new-app.PNG)
 
 ## <a name="view-apps-in-the-right-environment"></a>在正确的环境中查看应用
-无论你使用的是 [powerapps.com](http://web.powerapps.com) 还是 PowerApps Studio，你所看到的应用、连接列表等始终根据在下拉菜单中选择的环境进行筛选。 如果未看到所查找的应用，则请始终确认是否选择了正确的环境。
+无论你使用的是 [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 还是 PowerApps Studio，你所看到的应用、连接列表等始终根据在下拉菜单中选择的环境进行筛选。 如果未看到所查找的应用，则请始终确认是否选择了正确的环境。
 
 有关环境的详细信息，请参阅 [概述](../../administrator/environments-overview.md)。

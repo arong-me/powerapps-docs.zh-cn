@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: ec6526ff4cd690d6bcf5cbf3dcc98c6ee7b8ae28
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: b2eb001ee426dc3449b440a357c67bc47b702d42
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018137"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195740"
 ---
 # <a name="understand-data-forms-in-microsoft-powerapps"></a>了解 Microsoft PowerApps 中的数据窗体
 添加三种类型的控件，使用户能够浏览记录、显示有关记录的详细信息，以及编辑或创建记录：
@@ -33,7 +33,7 @@ ms.locfileid: "39018137"
 
 ## <a name="prerequisites"></a>先决条件
 
-* [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com)。
+* [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 * 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
 
 ## <a name="explore-a-generated-app"></a>浏览生成的应用

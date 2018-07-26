@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/12/2017
 ms.author: ankitsar
-ms.openlocfilehash: d74fdd20db63f6d617db48e09319a84775553f9f
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 8019068155c88465f0f4202807fe763f2e4787b6
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017125"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195510"
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>从 PowerApps 连接到 SharePoint
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
@@ -49,7 +49,7 @@ ms.locfileid: "39017125"
 ## <a name="prerequisites"></a>先决条件
 1. [注册](../../signup-for-powerapps.md) PowerApps。
 
-1. 使用注册所用的同一凭据[登录](http://web.powerapps.com)到 PowerApps。
+1. 使用注册所用的同一凭据[登录](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 PowerApps。
 
 1. 在左侧边缘附近选择“应用”，然后在横幅中选择“创建应用”。
 

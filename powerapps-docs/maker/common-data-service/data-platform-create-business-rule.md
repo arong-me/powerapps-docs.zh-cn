@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 13e00081ce01b44feeea6fc1d6fff9556c020298
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 5cf2a312ddba83312805f6b3b517738f1bc1da78
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168265"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218018"
 ---
 # <a name="create-a-business-rule"></a>创建业务规则
 
@@ -42,7 +42,7 @@ ms.locfileid: "34168265"
 
 ## <a name="create-a-business-rule"></a>创建业务规则
   
-1. 登录 [PowerApps](https://web.powerapps.com)，然后单击或点击左边缘附近的“数据”的下箭头。
+1. 登录 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后单击或点击左边缘附近的“数据”的下箭头。
 
 2. 在显示的列表中单击或点击“实体”。
   

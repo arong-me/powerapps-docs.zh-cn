@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.component: cds
 ms.date: 03/21/2018
 ms.author: anneta
-ms.openlocfilehash: 60d1843e48a1dc1d310d877bcba67460da557993
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c5da71198f33661766d8fc214816c2e714736360
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168288"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218754"
 ---
 # <a name="add-data-to-an-entity-in-common-data-service-for-apps-by-using-power-query"></a>使用 Power Query 将数据添加到 Common Data Service for Apps 中的实体
 在此过程中，将在 [Common Data Service (CDS) for Apps](data-platform-intro.md) 中创建实体，并使用 Power Query 将来自 OData 源的数据填充到该实体。 可以使用相同的技术来集成来自这些联机和本地源的数据，其中包括：
@@ -37,7 +37,7 @@ ms.locfileid: "34168288"
 
 ## <a name="specify-the-source-data"></a>指定源数据
 
-1. 登录 [PowerApps](https://web.powerapps.com)，然后单击或点击左边缘附近的“数据”的下箭头。
+1. 登录 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后单击或点击左边缘附近的“数据”的下箭头。
 
     ![PowerApps 主页](./media/data-platform-cds-newentity-pq/sign-in.png)
 

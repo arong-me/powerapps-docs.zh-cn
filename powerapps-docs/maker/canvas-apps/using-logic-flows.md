@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/05/2017
 ms.author: sharik
-ms.openlocfilehash: c395a548d0a920a21e8d4128f75a3b01deb9de3a
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 9d681cc889a3f39fb0785ab0cba86e37ebe185b3
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39019356"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195878"
 ---
 # <a name="start-a-flow-in-an-app"></a>启动应用中的流
 可以使用 Microsoft Flow 来创建逻辑，以便在应用中发生某个事件时执行一个或多个任务。 例如，配置一个按钮，以便用户选择它时在 SharePoint 列表中创建一个项、发送电子邮件或会议请求、将文件添加到云，或执行所有上述操作。 可以在应用中配置任何用于启动流的控件，该控件在关闭 PowerApps 的情况下仍会继续运行。
@@ -25,7 +25,7 @@ ms.locfileid: "39019356"
 * 了解如何[配置控件](add-configure-controls.md)。
 
 ## <a name="create-a-flow"></a>创建流
-1. 登录 [powerapps.com](http://web.powerapps.com)，再选择左侧导航栏中的“流”。
+1. 登录 [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，再选择左侧导航栏中的“流”。
 
 2. 在“我的流”页上，选择“从空白创建”。
 

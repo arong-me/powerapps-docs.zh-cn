@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 05/01/2016
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: 533234c7a0ca3cc69e30eb077ff0bd39d1d50a11
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a187e50bd4d1819d1579c6db219588e3582f5c25
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017079"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195671"
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps 社区计划：供个人使用的免费开发环境
 若要掌握技能并详细了解 PowerApps、Microsoft Flow 和 Common Data Service，PowerApps 社区计划是你的不二之选。 PowerApps 社区计划提供了供个人使用的免费开发环境，你可以在其中：
@@ -33,7 +33,7 @@ ms.locfileid: "39017079"
 ## <a name="where-can-i-sign-up-for-the-powerapps-community-plan"></a>在哪里可以注册 PowerApps 社区计划？
 请在 [PowerApps 社区计划网站](https://powerapps.microsoft.com/communityplan)上注册。 如果你是使用 Office 365 或 Dynamics 365 的现有 PowerApps 用户，还可以[创建供个人使用的环境](https://web.powerapps.com/community/signup)。
 
-注册社区计划后，将会重定向到 [PowerApps 网站](https://web.powerapps.com)，并到达自己的个人环境。 此环境将以你的姓名命名（例如，“John Doe 的环境”）。 如果此名称已被其他环境使用，你的个人环境则会命名为“John Doe 的 (1) 环境”。  下图展示了此环境。
+注册社区计划后，将会重定向到 [PowerApps 网站](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，并到达自己的个人环境。 此环境将以你的姓名命名（例如，“John Doe 的环境”）。 如果此名称已被其他环境使用，你的个人环境则会命名为“John Doe 的 (1) 环境”。  下图展示了此环境。
 
 ![社区计划的个人环境](./media/dev-community-plan/individual-environment.png)
 

@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 8dbf6088104270d9251b70eec9adf0642de2f879
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: ad1a2de5491a1725ada2e95c3eccc6513de9e304
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445837"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218478"
 ---
 # <a name="open-entity-data-in-excel"></a>在 Excel 中打开实体数据
 通过在 Microsoft Excel 中打开实体数据，可以使用 Microsoft PowerApps Excel 外接程序快速轻松地查看和编辑数据。 PowerApps Excel 外接程序要求安装 Microsoft Excel 2016。
@@ -21,12 +21,12 @@ ms.locfileid: "34445837"
 ![Excel 外接程序](./media/data-platform-cds-excel-addin/ExcelAddin.png "PowerApps Excel 外接程序")
 
 ## <a name="open-entity-data-in-excel"></a>在 Excel 中打开实体数据
-1. 在 [powerapps.com](https://web.powerapps.com) 上，展开“数据”部分，然后单击或点击左侧导航窗格中的“实体”。 显示所有实体。
+1. 在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开“数据”部分，然后单击或点击左侧导航窗格中的“实体”。 显示所有实体。
 2. 单击你感兴趣的实体右侧的省略号 (...)。
 3. 单击“在 Excel 中打开”，打开生成的工作簿。 此工作簿具有实体的绑定信息、环境的指针和 PowerApps Excel 外接程序的指针。  
 4. 在 Excel 中，单击“启用编辑”，允许 PowerApps Excel 外接程序运行。 Excel 外接程序将在 Excel 窗口右侧的窗格中运行。
 5. 如果是首次运行 PowerApps Excel 外接程序，请单击“信任此外接程序”，允许 Excel 外接程序运行。
-6. 如果系统提示你登录，请单击“登录”， 然后使用 [powerapps.com](https://web.powerapps.com) 上所用的同一凭据进行登录。 Excel 外接程序将使用以前的登录上下文并在可以登录时自动登录。 因此，请验证 Excel 外接程序右上角的用户名称。
+6. 如果系统提示你登录，请单击“登录”， 然后使用 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上所用的同一凭据进行登录。 Excel 外接程序将使用以前的登录上下文并在可以登录时自动登录。 因此，请验证 Excel 外接程序右上角的用户名称。
 
 Excel 外接程序将自动读取所选实体的数据。 注意，在 Excel 外接程序读取实体数据之前，工作簿中没有任何数据。
 

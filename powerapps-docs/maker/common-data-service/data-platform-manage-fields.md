@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: a4ec386ef6a7eee02c2ac608bb6e00ed9ee39c19
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a9fff4cc61f6416ef8dbc3c03d96be7082fe3a51
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168127"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218731"
 ---
 # <a name="manage-custom-fields-in-an-entity"></a>管理实体中的自定义字段
 可以在任意实体中创建和更新一个或多个自定义字段。 创建自定义字段时，可以指定一组属性，例如字段名称、其显示名称及其将包含的数据类型。 有关详细信息，请参阅[实体属性元数据](../../developer/common-data-service/entity-attribute-metadata.md)。
@@ -22,7 +22,7 @@ ms.locfileid: "34168127"
 > 每个实体都有系统字段，如指示上次记录更新时间和更新人员的字段。 此外，标准实体还包含标准（默认）字段。 无法修改或删除系统字段或标准字段。 如果创建自定义字段，则它应在这些内置字段上提供功能。
 
 ## <a name="create-a-field"></a>创建字段
-1. 在 [powerapps.com](https://web.powerapps.com) 上，展开“数据”部分，然后单击或点击左侧导航窗格中的“实体”。
+1. 在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开“数据”部分，然后单击或点击左侧导航窗格中的“实体”。
 
     ![实体详细信息](./media/data-platform-cds-create-entity/entitylist.png "实体列表")
 
@@ -71,7 +71,7 @@ ms.locfileid: "34168127"
 有关支持的表达式类型和示例的详细信息，请参阅[定义计算字段](/dynamics365/customer-engagement/customize/define-calculated-fields)
 
 ## <a name="update-or-delete-a-field"></a>更新或删除字段
-1. 在 [powerapps.com](https://web.powerapps.com) 上，展开“数据”部分，单击或点击左侧导航窗格中的“实体”，然后单击或点击实体。
+1. 在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开“数据”部分，单击或点击左侧导航窗格中的“实体”，然后单击或点击实体。
 2. 在所选实体的字段列表中，单击或点击一个字段，然后按照以下步骤之一操作：
    
    * 更改字段的一个或多个属性。

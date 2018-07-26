@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/19/2018
 ms.author: anneta
-ms.openlocfilehash: fba57fb26b023dcce771951953aea2eafa6b28e9
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 3827255726be017fe594a2c54389df7c622f7307
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016297"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195234"
 ---
 # <a name="create-an-app-from-a-powerapps-template"></a>从 PowerApps 模板创建应用
 基于特定方案的模板自动创建应用，例如跟踪预算和计划休假，然后运行应用以理解其默认行为。
@@ -24,7 +24,7 @@ ms.locfileid: "39016297"
 如果没有适用于 PowerApps 的许可证，可以[免费注册](../signup-for-powerapps.md)。
 
 ## <a name="create-an-app"></a>创建应用
-1. 登录 [PowerApps](http://web.powerapps.com)。
+1. 登录 [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
     ![PowerApps 主页](./media/get-started-test-drive/sign-in.png)
 

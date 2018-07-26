@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/06/2018
 ms.author: lanced
-ms.openlocfilehash: 734e36b00658455198b64317b6f068c0018755a4
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 471f4b69b913236d99e6309c8b8bb4e12f85a7b9
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018482"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195027"
 ---
 # <a name="add-a-data-connection-in-powerapps"></a>在 PowerApps 中添加数据连接
 在 PowerApps 中，向现有应用或从头开始生成的应用添加数据连接。 应用可以连接到 SharePoint、Salesforce、OneDrive 或[许多其他数据源](connections-list.md)。
@@ -26,7 +26,7 @@ ms.locfileid: "39018482"
 * 连接 SQL Server，然后通过应用更新表。
 
 ## <a name="prerequisites"></a>先决条件
-[注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](http://web.powerapps.com)。
+[注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 ## <a name="add-a-data-source"></a>添加数据源
 1. 在“主页”选项卡上，将鼠标悬停在“从空白开始”磁贴上方，然后选择“生成此应用”。
