@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/12/2016
 ms.author: lanced
-ms.openlocfilehash: 3f90a3b7fc7914caf61cc33abcf6baec87328ece
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 619085bbc11214fbba308abc7a630a3631cb2ec1
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015607"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195144"
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>从 PowerApps 连接到 Power BI
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
@@ -24,7 +24,7 @@ Power BI 是一套用于分析数据和共享见解的业务分析工具。 通�
 本主题演示如何在应用中使用 Power BI 连接，并列出可用的函数。
 
 ## <a name="prerequisites"></a>先决条件
-* [注册](https://web.powerapps.com)
+* [注册](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 * 添加 Power BI [连接](https://powerapps.microsoft.com/tutorials/add-manage-connections/)
 * 通过[模板](https://powerapps.microsoft.com/tutorials/get-started-test-drive/)、[数据](https://powerapps.microsoft.com/tutorials/get-started-create-from-data/)或[从头开始](https://powerapps.microsoft.com/tutorials/get-started-create-from-blank/)创建应用
 

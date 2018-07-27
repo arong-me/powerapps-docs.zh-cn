@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/11/2018
 ms.author: anneta
-ms.openlocfilehash: 197eb5223c0945a7cb80d8b187aaf44c871e798c
-ms.sourcegitcommit: 79a58f1b6880cbc512b64cde71a4d532cebe5bed
+ms.openlocfilehash: 9c4bdc6e56f84b6724fcbe44cfe1f3e4c065edb3
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39137013"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195303"
 ---
 # <a name="share-an-app-in-powerapps"></a>在 PowerApps 中共享应用
 
@@ -33,7 +33,7 @@ ms.locfileid: "39137013"
 
 ## <a name="share-an-app"></a>共享应用
 
-1. [登录](https://web.powerapps.com) PowerApps，然后选择左边缘附近的“应用”。
+1. [登录](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) PowerApps，然后选择左边缘附近的“应用”。
 
     ![显示应用列表](./media/share-app/file-apps.png)
 
@@ -59,7 +59,7 @@ ms.locfileid: "39137013"
 
     如果授予用户修改应用的权限，该邮件还包含一个单独的链接，通过该链接可在 PowerApps Studio 中打开应用进行编辑。
 
-    无论你是否发送邀请，用户均可以从 [Dynamics 365](http://home.dynamics.com) 上的 AppSource 中运行应用。 具有“可以编辑”权限的用户也可以在 [PowerApps](http://web.powerapps.com) 中编辑应用。
+    无论你是否发送邀请，用户均可以从 [Dynamics 365](http://home.dynamics.com) 上的 AppSource 中运行应用。 具有“可以编辑”权限的用户也可以在 [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中编辑应用。
 
 1. 指定每个用户或安全组的权限，然后选择“保存”。
 
@@ -85,7 +85,7 @@ ms.locfileid: "39137013"
 
 #### <a name="create-a-security-role"></a>创建安全角色
 
-1. [登录 PowerApps](https://web.powerapps.com)，并确保你与想要共享的应用位于相同环境中。
+1. [登录 PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，并确保你与想要共享的应用位于相同环境中。
 
 1. 选择右上角的齿轮图标，然后选择“高级自定义”。
 
