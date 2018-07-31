@@ -662,5 +662,8 @@
           href: ./common-data-service/data-platform-restricted-entities.md
     - name: 面向开发人员
       href: ../developer/common-data-service/TOC.yml
-- name: 常见数据模型
+- name: Common Data Service
   href: ../common-data-model/overview.md
+  items:
+    - name: 如何使用 Common Data Service
+      href: ../common-data-model/use-common-data-model.md
