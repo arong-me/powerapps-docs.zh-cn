@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 9ffb88629dbac2df514b1072cf21cd8aa82899d7
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.openlocfilehash: aca695c8c2ae90e0d5d843dcb0dfb562cbef5a05
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094647"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195717"
 ---
 # <a name="install-and-configure-the-expense-report-powerapps-sample"></a>安装和配置支出报表 PowerApps 示例
 
@@ -209,7 +209,7 @@ ms.locfileid: "39094647"
 
 ## <a name="create-connections"></a>创建连接
 
-1.  在 Web 浏览器中，导航到 https://web.powerapps.com。
+1.  在 Web 浏览器中，导航到 [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 2.  使用注册所用的同一凭据登录。
 3.  在左侧菜单中，选择“连接”。
 

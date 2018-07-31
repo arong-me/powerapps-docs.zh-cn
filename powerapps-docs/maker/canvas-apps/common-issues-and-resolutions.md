@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/10/2018
 ms.author: anneta
-ms.openlocfilehash: 92153c1d7fc72f6905faf55817f7f785ffdaa1ce
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: d5603ffacc0246dcffd1c54ab63b4e404250a7d5
+ms.sourcegitcommit: fc235972d0d4661f55df7a71e2dcedafd42706b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016481"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39202289"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps 常见问题和解决方法
 本文列出了你在使用 PowerApps 时可能遇到的一些常见问题。 并在适用情况下提供了解决方法。
@@ -31,7 +31,7 @@ ms.locfileid: "39016481"
 
 1. **使用自定义图像作为应用图标**
 
-    在 PowerApps Studio for Windows 版本 3.18043 中，无法上传自定义图像以将其用作应用图标。 若要解决此问题，请使用 [PowerApps Studio for web](https://web.powerapps.com) 上传自定义图像。 或者，可以使用 PowerApps Studio for Windows 中的一个图标并自定义背景色。
+    在 PowerApps Studio for Windows 版本 3.18043 中，无法上传自定义图像以将其用作应用图标。 若要解决此问题，请使用 [PowerApps Studio for web](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上传自定义图像。 或者，可以使用 PowerApps Studio for Windows 中的一个图标并自定义背景色。
 
 1. **跨应用复制和粘贴屏幕**
 
@@ -71,11 +71,15 @@ ms.locfileid: "39016481"
 
 6. **在 Windows 8.1 上运行应用**
 
-    如果安装 [此适用于 Windows 8.1 的更新](https://technet.microsoft.com/library/security/ms16-118)，则无法运行在此操作系统上用 PowerApps Studio 打开的应用。 但是，你仍可以运行在 [powerapps.com](https://web.powerapps.com) 中打开的或使用 PowerApps Mobile 打开的应用。
+    如果安装 [此适用于 Windows 8.1 的更新](https://technet.microsoft.com/library/security/ms16-118)，则无法运行在此操作系统上用 PowerApps Studio 打开的应用。 但是，你仍可以运行在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中打开的或使用 PowerApps Mobile 打开的应用。
 
 7. **带空格的列名称**
 
     如果使用的 SharePoint 列表或 Excel 表的列名称包含空格，PowerApps 会将空格替换为“\_x0020\_”。 例如，如果 SharePoint 或 Excel 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
+
+8. <a name="out-of-memory"></a>**浏览器内存不足**
+
+    如果使用 PowerApps 时内存不足，请考虑下载 64 位版本的 Chrome、Edge 或 Internet Explorer。
 
 ## <a name="older"></a>之前的内容
 1. **更改共享应用中的流**

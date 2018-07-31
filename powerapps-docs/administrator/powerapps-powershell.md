@@ -8,22 +8,22 @@ ms.component: pa-admin
 ms.topic: reference
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 2cb1e1b83cffee2ccea0a4d4b563de44aaa3e68c
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: b6ee687fdfe6da8550d76193a7c9219aae5ae291
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896181"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218823"
 ---
 # <a name="powershell-support-for-powerapps-preview"></a>对 PowerApps 的 PowerShell 支持（预览版）
-随着面向应用创建者和管理员的 PowerShell cmdlet 预览版的推出，可以在 [PowerApps](https://web.powerapps.com) 或 [PowerApps 管理中心](https://admin.powerapps.com)自动执行许多目前只能手动进行的监视和管理任务。
+随着面向应用创建者和管理员的 PowerShell cmdlet 预览版的推出，可以在 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 或 [PowerApps 管理中心](https://admin.powerapps.com)自动执行许多目前只能手动进行的监视和管理任务。
 
 ## <a name="installation"></a>安装
 若要运行应用创建者 PowerShell cmdlet，请执行以下操作：
 
-1. 下载 [PowerShell 脚本文件](https://go.microsoft.com/fwlink/?linkid=872358)。
+1. 下载 [PowerShell 脚本文件](https://go.microsoft.com/fwlink/?linkid=2006349)。
 
-2. 将文件解压缩到文件夹。
+2. 将文件解压缩到文件夹。 
 
 3. 在此相同文件夹中，打开 PowerShell 命令窗口（以管理员身份）。
 
@@ -48,7 +48,14 @@ ms.locfileid: "37896181"
 7. 在访问任何命令之前，需要使用以下命令提供凭据。 这些凭据的刷新间隔长达 8 小时，然后才会要求再次登录以继续使用 cmdlet。
 
     ```
+    # This call will open a prompt to collect the credentials (AAD account & password) that will be used by the commands
     Add-PowerAppsAccount
+    ```
+
+    ```
+    # Here is how you can pass in credentials (avoiding opening a prompt)
+    $pass = ConvertTo-SecureString "password" -AsPlainText -Force
+    Add-PowerAppsAccount -Username foo@bar.com -Password $pass
     ```
 
 
@@ -58,27 +65,29 @@ ms.locfileid: "37896181"
 具有有效 PowerApps 许可证的用户可以在这些 cmdlet 中执行此操作，但他们只能访问已创建或与之共享的资源（例如应用、流等）。
 
 ### <a name="cmdlet-list"></a>cmdlet 列表
+> [!NOTE]
+> 我们已在最新版本中更新某些 cmdlet 函数名称，添加相应的前缀以避免冲突。 请参阅下表，了解已更改内容的概述。
 
 | 用途 | cmdlet |
 | --- | --- |
-| 读取环境 | Get-PowerAppsEnvironment <br> Get-FlowEnvironment
+| 读取环境 | Get-PowerAppEnvironment *（以前称为 Get-PowerAppsEnvironment）* <br> Get-FlowEnvironment
 | 读取、更新和删除画布应用 | Get-App <br> Remove-App <br> Publish-App <br> Set-AppDisplayName <br> Get-AppVersion <br> Restore-AppVersion
-| 读取、更新和删除画布应用权限 | Get-AppRoleAssignment <br> Set-AppRoleAssignment <br> Remove-AppRoleAssignment
+| 读取、更新和删除画布应用权限 | Get-PowerAppRoleAssignment *（以前称为 Get-AppRoleAssignment）* <br> Set-PowerAppRoleAssignment *（以前称为 Set-AppRoleAssignment）* <br> Remove-PowerAppRoleAssignment *（以前称为 Remove-AppRoleAssignment）*
 | 读取、更新和删除流 | Get-Flow <br> Get-FlowRun <br> Enable-Flow <br> Disable-Flow <br> Remove-Flow
 | 读取、更新和删除流权限 | Get-FlowOwnerRole <br> Set-FlowOwnerRole <br> Remove-FlowOwnerRole
 | 读取和响应流审批 | Get-FlowApprovalRequest <br> Get-FlowApproval <br> RespondTo-FlowApprovalRequest
-| 读取和删除连接 | Get-Connection <br> Remove-Connection
-| 读取、更新和删除连接权限 | Get-ConnectionRoleAssignment <br> Set-ConnectionRoleAssignment <br> Remove-ConnectionRoleAssignment
-| 读取和删除连接器 | Get-Connector <br> Remove-Connector
-| 读取、更新和删除自定义连接器权限 | Get-ConnectorRoleAssignment <br> Set-ConnectorRoleAssignment <br> Remove-ConnectorRoleAssignment
+| 读取和删除连接 | Get-PowerAppConnection *（以前称为 Get-Connection）* <br> Remove-PowerAppConnection *（以前称为 Remove-Connection）*
+| 读取、更新和删除连接权限 | Get-PowerAppConnectionRoleAssignment *（以前称为 Get-ConnectionRoleAssignment）* <br> Set-PowerAppConnectionRoleAssignment *（以前称为 Set-ConnectionRoleAssignment）* <br> Remove-PowerAppConnectionRoleAssignment *（以前称为 Remove-ConnectionRoleAssignment）*
+| 读取和删除连接器 | Get-PowerAppConnector *（以前称为 Get-Connector）* <br> Remove-PowerAppConnector *（以前称为 Remove-Connector）*
+| 读取、更新和删除自定义连接器权限 | Get-PowerAppConnectorRoleAssignment *（以前称为 Get-ConnectorRoleAssignment）* <br> Set-PowerAppConnectorRoleAssignment *（以前称为 Set-ConnectorRoleAssignment）* <br> Remove-PowerAppConnectorRoleAssignment *（以前称为 Remove-ConnectorRoleAssignment）*
 
 
 > [!NOTE]
 > 使用以下命令了解语法并查看每个 cmdlet 的示例：
 >```
->Get-Help Get-PowerAppsEnvironment
->Get-Help Get-PowerAppsEnvironment -Examples
->Get-Help Get-PowerAppsEnvironment -Detailed
+>Get-Help Get-PowerAppEnvironment
+>Get-Help Get-PowerAppEnvironment -Examples
+>Get-Help Get-PowerAppEnvironment -Detailed
 >```
 
 ## <a name="powerapps-cmdlets-for-administrators-preview"></a>管理员 PowerApps cmdlet（预览版）
@@ -91,22 +100,24 @@ ms.locfileid: "37896181"
 * 如果需要搜索另一个用户的资源，还将需要 [Office 365 全局管理员](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)或 [Azure Active Directory 全局管理员](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)权限。 （请注意，环境管理员仅能访问那些他们具有权限的环境和环境资源。）
 
 ### <a name="cmdlet-list"></a>cmdlet 列表
+> [!NOTE]
+> 我们已在最新版本中更新某些 cmdlet 函数名称，添加相应的前缀以避免冲突。 请参阅下表，了解已更改内容的概述。
 
 | 用途 | cmdlet
 | --- | ---
-| 读取和删除环境 | Get-AdminEnvironment <br> Remove-AdminEnvironment
-| 读取、更新和删除环境权限 <br><br> 这些 cmdlet 仅适用于没有 Common Data Service (CDS) for Apps 数据库的环境。 | Get-AdminEnvironmentRoleAssignment <br> Set-AdminEnvironmentRoleAssignment <br> Remove-AdminEnvironmentRoleAssignment
-| 读取和删除画布应用 | Get-AdminApp <br> Remove-AdminApp
-| 读取、更新和删除画布应用权限 | Get-AdminAppRoleAssignment <br> Remove-AdminAppRoleAssignment <br> Set-AdminAppRoleAssignment <br> Set-AdminAppOwner
-| 读取、更新和删除流 | Get-AdminFlow <br> Enable-AdminFlow <br> Disable-AdminFlow <br> Remove-AdminFlow
+| 读取、更新和删除环境和 Common Data Service for Apps 数据库 | 新增-AdminPowerAppEnvironment **\*新增\*** <br> Set-AdminPowerAppEnvironmentDisplayName **\*新增\*** <br> Get-AdminPowerAppEnvironment *（以前称为 Get-AdminEnvironment）* <br> Remove-AdminPowerAppEnvironment *（以前称为 Remove-AdminEnvironment）* <br> 新增-AdminPowerAppCdsDatabase **\*新增\*** <br> Get-AdminPowerAppCdsDatabaseLanguages **\*新增\*** <br> Get-AdminPowerAppCdsDatabaseCurrencies **\*新增\*** <br> Get-AdminPowerAppEnvironmentLocations **\*新增\***
+| 读取、更新和删除环境权限 <br><br> 这些 cmdlet 当前仅适用于没有 Common Data Service (CDS) for Apps 数据库的环境。 | Get-AdminPowerAppEnvironmentRoleAssignment *（以前称为 Get-AdminEnvironmentRoleAssignment）* <br> Set-AdminPowerAppEnvironmentRoleAssignment *（以前称为 Set-AdminEnvironmentRoleAssignment）* <br> Remove-AdminPowerAppEnvironmentRoleAssignment *（以前称为 Remove-AdminEnvironmentRoleAssignment）*
+| 读取、更新和删除画布应用 | Get-AdminPowerApp *（以前称为 Get-AdminApp）* <br> Remove-AdminPowerApp *（以前称为 Remove-AdminApp）* <br> Get-AdminPowerAppConnectionReferences **\*新增\*** <br> Set-AdminPowerAppAsFeatured **\*新增\*** <br> Clear-AdminPowerAppAsFeatured **\*新增\*** <br> Set-AdminPowerAppAsHero **\*新增\*** <br> Clear-AdminPowerAppAsHero **\*新增\*** <br> Set-AdminPowerAppApisToBypassConsent **\*新增\*** <br> Clear-AdminPowerAppApisToBypassConsent **\*新增\***
+| 读取、更新和删除画布应用权限 | Get-AdminPowerAppRoleAssignment *（以前称为 Get-AdminAppRoleAssignment）* <br> Remove-AdminPowerAppRoleAssignment *（以前称为 Remove-AdminAppRoleAssignment）* <br> Set-AdminPowerAppRoleAssignment *（以前称为 Set-AdminAppRoleAssignment）* <br> Set-AdminPowerAppOwner *（以前称为 Set-AdminAppOwner）*
+| 读取、更新和删除流 | Get-AdminFlow <br> Enable-AdminFlow <br> Disable-AdminFlow <br> Remove-AdminFlow <br> Remove-AdminFlowApprovals **\*新增\***
 | 读取、更新和删除流权限 | Get-AdminFlowOwnerRole <br> Set-AdminFlowOwnerRole <br> Remove-AdminFlowOwnerRole
-| 读取和删除连接 | Get-AdminConnection <br> Remove-AdminConnection
-| 读取、更新和删除连接权限 | Get-AdminConnectionRoleAssignment <br> Set-AdminConnectionRoleAssignment <br> Remove-AdminConnectionRoleAssignment
-| 读取和删除自定义连接器 | Get-AdminConnector <br> Remove-AdminConnector
-| 读取、更新和删除自定义连接器权限 | Get-AdminConnectorRoleAssignment <br> Set-AdminConnectorRoleAssignment <br> Remove-AdminConnectorRoleAssignment
+| 读取和删除连接 | Get-AdminPowerAppConnection *（以前称为 Get-AdminConnection）* <br> Remove-AdminPowerAppConnection *（以前称为 Remove-AdminConnection）*
+| 读取、更新和删除连接权限 | Get-AdminPowerAppConnectionRoleAssignment *（以前称为 Get-AdminConnectionRoleAssignment）* <br> Set-AdminPowerAppEnvironmentConnectionRoleAssignment *（以前称为 Set-AdminConnectionRoleAssignment）* <br> Remove-AdminPowerAppConnectionRoleAssignment *（以前称为 Remove-AdminConnectionRoleAssignment）*
+| 读取和删除自定义连接器 | Get-AdminPowerAppConnector *（以前称为 Get-AdminConnector）* <br> Remove-AdminPowerAppConnector *（以前称为 Remove-AdminConnector）*
+| 读取、更新和删除自定义连接器权限 | Get-AdminPowerAppConnectorRoleAssignment *（以前称为 Get-AdminConnectorRoleAssignment）*<br> Set-AdminPowerAppConnectorRoleAssignment *（以前称为 Set-AdminConnectorRoleAssignment）* <br> Remove-AdminPowerAppConnectorRoleAssignment *（以前称为 Remove-AdminConnectorRoleAssignment）*
 | 读取用户的 PowerApps 用户设置、用户应用设置和通知 | Get-AdminPowerAppsUserDetails
 | 读取和删除用户的 Microsoft Flow 设置，这些设置对用户不可见，但支持流执行 | Get-AdminFlowUserDetails <br> Remove-AdminFlowUserDetails
-| 创建、读取、更新和删除组织的数据丢失防护策略 | Get-AdminApiPolicy <br> Add-AdminApiPolicy <br> Remove-AdminApiPolicy <br> Set-AdminApiPolicy <br> Add-ConnectorToBusinessDataGroup <br>  Remove-ConnectorFromBusinessDataGroup
+| 创建、读取、更新和删除组织的数据丢失防护策略 | Get-AdminDlpPolicy *（以前称为 Get-AdminApiPolicy）* <br> Add-AdminDlpPolicy *（以前称为 Add-AdminApiPolicy）* <br> Remove-AdminDlpPolicy *（以前称为 Remove-AdminApiPolicy）* <br> Set-AdminDlpPolicy *（以前称为 Set-AdminApiPolicy）* <br> Add-ConnectorToBusinessDataGroup <br>  Remove-ConnectorFromBusinessDataGroup
 
 > [!NOTE]
 > 使用以下命令了解语法并查看每个 cmdlet 的示例：

@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 6145f321f3a9322433cdc32b779479871ab4dbf1
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.openlocfilehash: 4ee281e211891dab812c4ae447dff3d967ffeff3
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094762"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195763"
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>安装和配置技术支持 PowerApps 示例
 
@@ -36,7 +36,7 @@ ms.locfileid: "39094762"
 
 ## <a name="prerequisites"></a>先决条件
 
-- [注册](https://web.powerapps.com/) PowerApps。
+- [注册](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) PowerApps。
 - 必须具有有效的 SharePoint Online 许可证和创建列表的权限。
 
 ## <a name="create-the-helpdesk-sharepoint-list"></a>创建技术支持 SharePoint 列表
@@ -140,7 +140,7 @@ ms.locfileid: "39094762"
 
 ## <a name="create-connections"></a>创建连接
 
-1.  在 Web 浏览器中，导航到 https://web.powerapps.com。
+1.  在 Web 浏览器中，导航到 [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 2.  使用注册所用的同一凭据登录。
 3.  在左侧菜单，依次选择“数据”和“连接”。
     
