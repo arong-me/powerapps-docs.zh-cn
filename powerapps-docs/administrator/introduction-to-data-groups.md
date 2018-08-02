@@ -2,18 +2,18 @@
 title: 数据组 | Microsoft 文档
 description: 演练如何使用 PowerApps 中的数据组。
 author: manasmams
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 8899a77d73f67a1b437a60218b3536d2989d5b8c
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 6a6217c0a344d0501c8a856b0632397044ceb465
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168311"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349630"
 ---
 # <a name="data-groups"></a>数据组
 数据组是对[数据丢失防护 (DLP) 策略](prevent-data-loss.md)中的服务进行分类的一种简单方式。 两个可用的数据组为“仅限业务数据”组和“不允许业务数据”组。 组织可以自由确定要将哪些服务放置到哪个特定的数据组中。 为服务分类的一种合理方式是根据对组织造成的影响将服务放置在组中。 默认情况下，所有服务放置在“不允许业务数据”数据组中。 通过管理中心创建或修改 DLP 策略的属性时，可以管理数据组中的服务。

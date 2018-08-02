@@ -2,18 +2,18 @@
 title: 响应对删除客户数据的数据主体权限 (DSR) 请求 | Microsoft Docs
 description: 演练如何响应对删除 PowerApps 客户数据的数据主体权限 (DSR) 请求。
 author: jamesol-msft
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 501c5468291041eafd2147c102484ab81cabbe37
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+ms.openlocfilehash: 9cde5c7b2127359ab21a9e89aa83841d87cae49e
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218777"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349055"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-delete-powerapps-customer-data"></a>响应对删除 PowerApps 客户数据的数据主体权限 (DSR) 请求
 
@@ -40,7 +40,7 @@ PowerApps 允许用户生成业务线应用程序，这些应用程序是组织�
 
 对于需要手动检查的数据和资源，PowerApps 提供以下体验来重新分配（如有必要）或删除特定用户的个人数据：
 
-* 网站访问：[PowerApps 站点](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)、[PowerApps 管理中心](https://admin.powerapps.com/)和 [Office 365 服务信任门户](https://servicetrust.microsoft.com/)
+* 网站访问：[PowerApps 站点](https://web.powerapps.com)、[PowerApps 管理中心](https://admin.powerapps.com/)和 [Office 365 服务信任门户](https://servicetrust.microsoft.com/)
 
 * PowerShell 访问：用于[应用创建者](https://go.microsoft.com/fwlink/?linkid=871448)和[管理员](https://go.microsoft.com/fwlink/?linkid=871804)的 PowerApps cmdlet，以及用于[本地网关](https://go.microsoft.com/fwlink/?linkid=872238)的 cmdlet。
 
@@ -62,7 +62,7 @@ PowerApps 允许用户生成业务线应用程序，这些应用程序是组织�
 ## <a name="prerequisites"></a>先决条件
 
 ### <a name="for-users"></a>对于用户
-任何具有有效 PowerApps 许可证的用户都可以使用 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 或[应用创建者的 PowerShell cmdlet](https://go.microsoft.com/fwlink/?linkid=871448) 来执行本文档所述的用户操作。
+任何具有有效 PowerApps 许可证的用户都可以使用 [PowerApps](https://web.powerapps.com) 或[应用创建者的 PowerShell cmdlet](https://go.microsoft.com/fwlink/?linkid=871448) 来执行本文档所述的用户操作。
 
 #### <a name="unmanaged-tenant"></a>非托管租户
 如果你是[非托管租户](https://docs.microsoft.com/azure/active-directory/domains-admin-takeover)的成员（即你的 Azure AD 租户没有全局管理员），则仍将能够按照本文中所述的步骤来删除自己的个人数据。  但是，由于你的租户没有全局管理员，因此你将需要按照下面[步骤 11：从 Azure Active Directory 中删除用户](#step-11-delete-the-user-from-azure-active-directory)中所述的说明从租户中删除自己的帐户。
@@ -72,15 +72,15 @@ PowerApps 允许用户生成业务线应用程序，这些应用程序是组织�
 1. 在浏览器中打开以下 URL，确保在 URL 中替换电子邮件地址： https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1
 
 2. 如果你是“非托管租户”的成员，则将会在响应中看到 `"IsViral": true`。
-   ```
-   {
-   ...
-   "Login": "foobar@unmanagedcontoso.com",
-   "DomainName": "unmanagedcontoso.com",
-   "IsViral": true,
-   ...
-   }
-   ```
+```
+{
+  ...
+  "Login": "foobar@unmanagedcontoso.com",
+  "DomainName": "unmanagedcontoso.com",
+  "IsViral": true,
+  ...
+}
+```
 
 3. 否则，你就属于“托管的租户”。
 
@@ -210,7 +210,7 @@ Get-AdminApp -Owner $deleteDsrUserId | Set-AdminAppOwner -AppOwner $newAppOwnerU
 ```
 
 ### <a name="delete-a-users-canvas-app-using-the-powerapps-site"></a>使用 PowerApps 站点删除用户的画布应用
-用户可以从 [PowerApps 站点](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)删除应用。 有关如何删除应用的完整步骤，请参阅“删除应用”。
+用户可以从 [PowerApps 站点](https://web.powerapps.com)删除应用。 有关如何删除应用的完整步骤，请参阅“删除应用”。
 
 ### <a name="delete-a-users-canvas-app-using-the-powerapps-admin-center"></a>使用 PowerApps 管理中心删除用户的画布应用
 管理员可通过以下步骤，从 [PowerApps 管理中心](https://admin.powerapps.com/)开始删除由用户创建的应用：

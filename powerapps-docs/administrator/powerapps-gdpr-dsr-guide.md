@@ -2,18 +2,18 @@
 title: 响应针对 PowerApps 客户数据的数据主体权限 (DSR) 请求 | Microsoft Docs
 description: 演练如何响应针对 PowerApps 客户数据的数据主体权限 (DSR) 请求
 author: jamesol-msft
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 5bc3951f767677c2b8b35166d16c089259eec1ce
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+ms.openlocfilehash: ae73d5df51b2656fc4f33e7258078140a180926d
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218662"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349193"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-powerapps-customer-data"></a>响应针对 PowerApps 客户数据的数据主体权限 (DSR) 请求
 
@@ -68,7 +68,7 @@ PowerApps 通知 | PowerApps 向用户发送几种类型的通知，包括与用
 
 PowerApps 提供以下体验，以查找特定用户的个人数据：
 
-- 网站访问：[PowerApps 站点](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)、[PowerApps 管理中心](https://admin.powerapps.com/)和 [Office 365 服务信任门户](https://servicetrust.microsoft.com/)
+- 网站访问：[PowerApps 站点](https://web.powerapps.com)、[PowerApps 管理中心](https://admin.powerapps.com/)和 [Office 365 服务信任门户](https://servicetrust.microsoft.com/)
 - PowerShell 访问：PowerApps cmdlet（用于[应用创建者](https://go.microsoft.com/fwlink/?linkid=871448)和[管理员](https://go.microsoft.com/fwlink/?linkid=871804)），以及[本地网关 cmdlet](https://go.microsoft.com/fwlink/?linkid=872238)
 
 有关如何使用这些体验查找各类型资源特定用户的个人数据的详细步骤，请参阅[响应对导出 PowerApps 客户数据的数据主体权限 (DSR) 请求](powerapps-gdpr-export-dsr.md)。

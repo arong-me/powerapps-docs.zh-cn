@@ -2,23 +2,23 @@
 title: 响应对导出 PowerApps 客户数据的数据主体权限 (DSR) 请求 | Microsoft Docs
 description: 演练如何响应对导出 PowerApps 客户数据的数据主体权限 (DSR) 请求。
 author: jamesol-msft
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 417b44cd992a6ff00cb9a8d17443338825e31d9f
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+ms.openlocfilehash: cea8cf64a27e8468e9256df4e2e1239c32950df3
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218800"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349469"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-export-powerapps-customer-data"></a>响应对导出 PowerApps 客户数据的数据主体权限 (DSR) 请求
 “数据可移植性权限”允许数据主体以电子格式（这是一种结构化的、常用的、计算机可读和可互操作的格式）请求其个人数据副本，这些数据可能会传输给另一个数据控制者：
 
-* 网站访问：[PowerApps 门户](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)、[PowerApps 管理中心](https://admin.powerapps.com/)和 [Office 365 服务信任门户](https://servicetrust.microsoft.com/)
+* 网站访问：[PowerApps 门户](https://web.powerapps.com)、[PowerApps 管理中心](https://admin.powerapps.com/)和 [Office 365 服务信任门户](https://servicetrust.microsoft.com/)
 
 * PowerShell 访问：PowerApps [应用创建者 cmdlet](https://go.microsoft.com/fwlink/?linkid=871448)、[管理员 cmdlet](https://go.microsoft.com/fwlink/?linkid=871804) 和[本地网关 cmdlet](https://go.microsoft.com/fwlink/?linkid=872238)
 
@@ -39,13 +39,13 @@ ms.locfileid: "39218800"
 PowerApps 用户设置、用户应用设置和通知 | | 应用创建者：可用 <br> 管理员：可用
 
 > ** 在引入 Common Data Service (CDS) for Apps 后，如果数据库是在环境中创建的，那么环境权限和模型驱动的应用权限会作为记录存储在 CDS for Apps 数据库实例中。 有关如何响应 CDS for Apps 用户的 DSR 请求的指导，请参阅[响应针对 Common Data Service for Apps 客户数据的数据主体权限 (DSR) 请求](common-data-service-gdpr-dsr-guide.md)。
-> 
-> ***只有当资源所有者明确授予访问权限时，管理员才能从 [PowerApps 门户](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)访问这些资源。 如果没有对管理员授予访问权限，则其需要利用 [PowerApps 管理员 PowerShell cdmlet](https://go.microsoft.com/fwlink/?linkid=871804)。
+
+> ***只有当资源所有者明确授予访问权限时，管理员才能从 [PowerApps 门户](https://web.powerapps.com)访问这些资源。 如果没有对管理员授予访问权限，则其需要利用 [PowerApps 管理员 PowerShell cdmlet](https://go.microsoft.com/fwlink/?linkid=871804)。
 
 ## <a name="prerequisites"></a>先决条件
 
 ### <a name="for-users"></a>对于用户
-拥有有效 PowerApps 许可证的所有用户都可以使用 [PowerApps 门户](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)或[应用创建者 cmdlet](https://go.microsoft.com/fwlink/?linkid=871448) 来执行本文档所述的用户操作。
+拥有有效 PowerApps 许可证的所有用户都可以使用 [PowerApps 门户](https://web.powerapps.com)或[应用创建者 cmdlet](https://go.microsoft.com/fwlink/?linkid=871448) 来执行本文档所述的用户操作。
 
 ### <a name="for-admins"></a>对于管理员
 要使用 PowerApps 管理中心、Microsoft Flow 管理中心或 [PowerApps 管理员 PowerShell cmdlet](https://go.microsoft.com/fwlink/?linkid=871804) 来执行本文档所述的管理操作，将需要以下各项：
@@ -126,7 +126,7 @@ Get-AdminEnvironmentRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -
 ## <a name="step-3-export-personal-data-contained-within-canvas-apps-created-by-the-user"></a>步骤 3：导出包含在由用户创建的画布应用中的个人数据
 
 ### <a name="powerapps-portal"></a>PowerApps 门户
-用户可以从 [PowerApps 门户](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)导出应用。 有关如何导出应用的分步说明，请参阅[导出应用](environment-and-tenant-migration.md#exporting-an-app)。
+用户可以从 [PowerApps 门户](https://web.powerapps.com)导出应用。 有关如何导出应用的分步说明，请参阅[导出应用](environment-and-tenant-migration.md#exporting-an-app)。
 
 ### <a name="powerapps-admin-center"></a>PowerApps 管理中心
 管理员可以通过以下步骤，从 [PowerApps 管理中心](https://admin.powerapps.com/)开始导出由用户创建的应用：
@@ -147,7 +147,7 @@ Get-AdminEnvironmentRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -
 
     ![授予用户访问](./media/powerapps-gdpr-export-dsr/grant-access.png)
 
-5. 一旦有权访问用户的每个应用，即可从 [PowerApps 门户](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)中导出应用。 有关如何导出应用的分步说明，请参阅[导出应用](environment-and-tenant-migration.md#exporting-an-app)。
+5. 一旦有权访问用户的每个应用，即可从 [PowerApps 门户](https://web.powerapps.com)中导出应用。 有关如何导出应用的分步说明，请参阅[导出应用](environment-and-tenant-migration.md#exporting-an-app)。
 
 ### <a name="powershell-cmdlets-for-admins"></a>管理员 PowerShell cmdlet
 管理员可以使用 [PowerApps 管理员 PowerShell cdmlet](https://go.microsoft.com/fwlink/?linkid=871804) 中的 Get-AdminApp 函数导出由用户创建的应用：
@@ -274,7 +274,7 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | O
 ~~~~
  
 ## <a name="step-9-export-powerapps-notifications-user-settings-and-user-app-settings"></a>步骤 9：导出 PowerApps 通知、用户设置和用户应用设置
-PowerApps 向用户发送几种类型的通知，包括与用户共享应用以及 CDS for Apps 导出操作完成时。 用户可以在 [PowerApps 门户](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)中查看其通知历史记录。
+PowerApps 向用户发送几种类型的通知，包括与用户共享应用以及 CDS for Apps 导出操作完成时。 用户可以在 [PowerApps 门户](https://web.powerapps.com)中查看其通知历史记录。
 
 PowerApps 还存储几个不同的用户首选项和设置，用于提供 PowerApps 运行时和门户体验，包括用户上一次打开应用、固定应用的时间等。
 
@@ -298,9 +298,9 @@ Get-AdminPowerAppsUserDetails -WriteToFile -OutputFilePath "UserDetails.json" -U
 ## <a name="step-10-export-personal-data-contained-for-a-user-stored-gateway-or-in-the-users-gateway-permissions"></a>步骤 10：导出用户存储网关所包含的个人数据或用户网关权限中的个人数据
 
 ### <a name="powerapps-portal"></a>PowerApps 门户
-用户可以通过执行以下步骤从 [PowerApps 门户](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)导出存储在网关服务中的个人数据：
+用户可以通过执行以下步骤从 [PowerApps 门户](https://web.powerapps.com)导出存储在网关服务中的个人数据：
 
-1. 在 [PowerApps 门户](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)中，在租户的默认环境中选择“网关”，然后选择有权访问的每个网关的“详细信息”。
+1. 在 [PowerApps 门户](https://web.powerapps.com)中，在租户的默认环境中选择“网关”，然后选择有权访问的每个网关的“详细信息”。
 
     ![网关登陆页面](./media/powerapps-gdpr-export-dsr/gateway-select-details.png)
 

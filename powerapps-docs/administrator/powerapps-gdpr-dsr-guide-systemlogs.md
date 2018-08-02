@@ -2,18 +2,18 @@
 title: 响应针对 PowerApps、Microsoft Flow 和 Common Data Service (CDS) for Apps 中系统生成的日志的 DSR 请求 | Microsoft Docs
 description: 演练如何响应针对 PowerApps、Microsoft Flow 和 Common Data Service (CDS) for Apps 中系统生成的日志的 DSR 请求
 author: jamesol-msft
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 18bba11ce747b1e04be6013bf41419c34232865a
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 0511022621d891a6e45b27f1440e614df8b105a0
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37897239"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349124"
 ---
 # <a name="responding-to-dsr-requests-for-system-generated-logs-in-powerapps-microsoft-flow-and-common-data-service-for-apps"></a>响应 PowerApps、Microsoft Flow 和 Common Data Service for Apps 中系统生成的日志的 DSR 请求
 Microsoft 允许你访问、导出和删除系统生成的日志，根据欧盟 (EU) 个人数据的一般数据保护条例 (GDPR) 的广泛定义，这些日志可能被视为个人数据。 在 GDPR 下，可能被视为个人数据的系统生成日志的示例包括：
@@ -106,7 +106,7 @@ Microsoft 允许你访问、导出和删除系统生成的日志，根据欧盟 
 1. 在浏览器中打开以下 URL，确保在 URL 中替换电子邮件地址：[https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1)。
 
 2. 如果你是“非托管租户”的成员，则将会在响应中看到 `"IsViral": true`。
-   ```
+  ```
       {
       ...
       "Login": "foobar@unmanagedcontoso.com",
@@ -114,6 +114,6 @@ Microsoft 允许你访问、导出和删除系统生成的日志，根据欧盟 
       "IsViral": **true**,
       ...
       }
-   ```
+  ```
 
 3. 否则，你就属于托管租户。

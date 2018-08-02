@@ -6,15 +6,15 @@ ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: jimh
-ms.openlocfilehash: 8ef92fec0245bbe27529be0acb214cad7d2b928e
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.author: jimholtz
+ms.openlocfilehash: 9d900d2ebceb2ad3cca0c567b80d5d1fac4963ff
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552544"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349952"
 ---
-# <a name="manage-apps-created-in-your-organization"></a>管理在组织中创建的应用
+# <a name="manage-apps-created-in-your-organization"></a>管理在组织中创建的应用 
 环境管理员、Office 365 全局管理员或 Azure Active Directory 租户管理员可管理组织中创建的应用。
 
 管理员可以从 PowerApps 管理中心执行以下操作：

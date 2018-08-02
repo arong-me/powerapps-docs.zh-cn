@@ -2,18 +2,18 @@
 title: 管理环境 | Microsoft 文档
 description: 了解如何管理 PowerApps 中的环境，包括创建、重命名、删除和安全性
 author: manasmams
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2018
+ms.date: 07/30/2018
 ms.author: manasma
-ms.openlocfilehash: 7fb35c1c59062b892fdd8e3a905d3ee485f6cf61
-ms.sourcegitcommit: 26932abc6fcdc5e6723b64b506532bb182ab3f8d
+ms.openlocfilehash: 02b25dd627e85b638a113c1c0aceee16d7df6275
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37026225"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349078"
 ---
 # <a name="administer-environments-in-powerapps"></a>管理 PowerApps 中的环境
 在 [PowerApps 管理中心][1]内，管理已创建的环境及已将已添加到其环境管理员或系统管理员角色的环境。 从管理中心可执行以下管理操作：
@@ -25,6 +25,8 @@ ms.locfileid: "37026225"
 * 设置数据丢失防护策略。
 * 设置数据库安全策略（由数据库角色设置为开放或受限）。
 * Azure AD 租户全局管理员角色（包括 Office 365 全局管理员）的成员也可以管理自己已在租户中创建的所有环境，并在整个租户范围内设置策略。
+
+有关详细信息，请参阅[环境概述](environments-overview.md)。
 
 ## <a name="access-the-powerapps-admin-center"></a>访问 PowerApps 管理中心
 若要访问 PowerApps 管理中心，请执行以下操作：
@@ -47,7 +49,7 @@ ms.locfileid: "37026225"
 > 在 PowerApps 管理中心内所做的任何更改都会影响 [Microsoft Flow 管理中心][4]，反之亦然。
 
 ## <a name="create-an-environment"></a>创建环境
-有关如何创建环境的说明，请参阅[快速入门：创建环境](create-environment.md)。
+有关如何创建环境的说明，请参阅[创建环境](create-environment.md)。
 
 ## <a name="view-your-environments"></a>查看环境
 打开管理中心时，默认会显示“环境”选项卡，其中列出了你是其环境管理员的所有环境（如下所示）：
@@ -57,10 +59,6 @@ ms.locfileid: "37026225"
 如果你是 Azure AD 或 Office 365 租户的“全局管理员”角色的成员，将显示租户中用户创建的所有环境，因为你已自动成为所有这些环境的环境管理员。
 
 ## <a name="rename-your-environment"></a>重命名环境
-
-> [!IMPORTANT]
-> 按照本部分中的步骤，对不包含数据库的生产环境进行重命名。 无法重命名试用环境，必须使用 Dynamics 365 管理中心重命名任何包含数据库的生产环境。
-
 1. 打开 [PowerApps 管理中心][1]，在列表中找到要重命名的环境，然后单击或点击它。
 
     ![](./media/environment-admin/environment-list-updated3.png)
@@ -195,6 +193,10 @@ PowerApps 计划 2。  有关包含此许可证的所有计划的详细信息，
 1. **默认环境**：租户的默认环境目前不支持创建数据库。 
 
 2. **个人使用环境**：通过注册 PowerApps 社区计划获得个人使用环境。 如果尚未创建数据库，则目前无法在个人使用环境中预配数据库。 
+
+3. **环境位于 AAD 租户主区域以外的区域**：目前，仅可在 Azure Active Directory 租户主区域中创建的环境中预配数据库。 即将推出在其他区域中预配数据库这一功能。 因此，如果要在环境中创建数据库，请确保环境区域与租户默认位置所在区域相同。
+
+4. **某些区域不支持创建数据库**：某些区域尚不支持创建数据库。 例如，南美洲的国家/地区。 因此，如果租户主位置位于南美洲，则目前无法在任何环境中预配数据库。 
     
 我们正在努力为以上所有情况提供支持。
 如果收到任何其他错误消息或有更多疑问，请在[此处][5]与我们联系
@@ -222,4 +224,4 @@ PowerApps 计划 2。  有关包含此许可证的所有计划的详细信息，
 [2]: https://web.powerapps.com
 [3]: https://powerapps.microsoft.com/pricing/
 [4]: https://admin.flow.microsoft.com
-[5]: https://go.microsoft.com/fwlink/?linkid=871628
+[5]: https://go.microsoft.com/fwlink/p/?linkid=871628

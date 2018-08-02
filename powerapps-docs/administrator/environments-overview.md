@@ -2,18 +2,18 @@
 title: 环境概述 | Microsoft Docs
 description: 了解 PowerApps 中的环境及其用法
 author: manasmams
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: b38f0d1b029708e8130363d54ccc1354084b0ae4
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+ms.openlocfilehash: 3e954db3ed224afa100d89be6aa03d7a2139a9d7
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218156"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349929"
 ---
 # <a name="environments-overview"></a>环境概述
 环境是用来存储、管理和共享组织的业务数据、应用和流的空间。 还可以将环境用作分隔具有不同角色、安全要求或目标受众的应用的容器。 环境的使用方式视组织和要生成的应用而定。 例如：
@@ -39,13 +39,13 @@ ms.locfileid: "39218156"
 
 * 环境管理员角色可以执行所有环境管理操作，包括以下操作：
 
-  * 授予或撤销用户或组的“环境管理员”或“环境创建者”角色
+    * 授予或撤销用户或组的“环境管理员”或“环境创建者”角色
 
-  * 为环境预配 Common Data Service 数据库
+    * 为环境预配 Common Data Service 数据库
 
-  * 查看和管理在环境中创建的所有资源
+    * 查看和管理在环境中创建的所有资源
 
-  * 设置数据丢失防护策略。 有关详细信息，请参阅[数据丢失防护策略](prevent-data-loss.md)。
+    * 设置数据丢失防护策略。 有关详细信息，请参阅[数据丢失防护策略](prevent-data-loss.md)。
 
     在环境中创建数据库后，可以使用系统管理员角色，而不是环境管理员角色。
 
@@ -75,7 +75,7 @@ PowerApps 自动为每个租户创建一个默认环境，并由相应租户中�
 你可以创建不同的环境用于不同的用途。 试用环境用于借助 Common Data Service 体验尝试环境和数据库。 它将在某个时间段后过期。 有关详细信息，请参阅[管理 PowerApps 中的环境](environments-administration.md)。
 
 ## <a name="choosing-an-environment"></a>选择环境
-随着环境的引入，访问 [https://web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 时现在将获得全新的体验。  站点中可见的应用、连接和其他项现在会根据当前选定的环境进行筛选。  当前环境在标头右侧边缘附近的环境选取器中指定。 若要选择其他环境，请单击或点击选取器，查看可用环境列表。 单击或点击要进入的环境。
+随着环境的引入，访问 [https://web.powerapps.com](https://web.powerapps.com) 时现在将获得全新的体验。  站点中可见的应用、连接和其他项现在会根据当前选定的环境进行筛选。  当前环境在标头右侧边缘附近的环境选取器中指定。 若要选择其他环境，请单击或点击选取器，查看可用环境列表。 单击或点击要进入的环境。
 
 当你满足下列条件之一时，选取器中会显示环境：
 

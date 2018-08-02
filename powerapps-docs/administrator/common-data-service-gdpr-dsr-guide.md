@@ -3,18 +3,18 @@ title: 响应针对 Common Data Service (CDS) for Apps 客户数据的 DSR 请�
 description: 演练如何响应针对 Common Data Service (CDS) for Apps 客户数据的 DSR 请求
 author: jamesol-msft
 ms.reviewer: paulliew
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: b550d5fe7e36c36177fff017adcf9d9034c93dd4
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+ms.openlocfilehash: de7af5aa10f2f39057806c6ad170dc32e85c9f02
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218041"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349009"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-common-data-service-for-apps-customer-data"></a>响应针对 Common Data Service for Apps 客户数据的数据主体权限 (DSR) 请求
 
@@ -52,7 +52,7 @@ ms.locfileid: "39218041"
 
 CDS for Apps 和 Common Data Service (CDS) 早期版本具有与个人数据交互的单独过程。
 
-要确定所拥有 CDS 环境的类型，可登录到 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，并执行以下步骤：
+要确定所拥有 CDS 环境的类型，可登录到 [PowerApps](https://web.powerapps.com)，并执行以下步骤：
 
 1. 在“环境”下拉列表中，选择你的环境。
 2. 在导航窗格中，单击或点击“数据”，然后单击或点击“实体”。
@@ -102,8 +102,8 @@ CDS for Apps 和 Common Data Service (CDS) 早期版本具有与个人数据交�
 
 |资源 | 用途 | 网站访问 | 编程访问
 | --- | --- | --- | ---
-| 实体记录 | 称为系统用户实体，用于存储用户的个人数据。 | [PowerApps 管理中心](https://admin.powerapps.com) | 通过 [Web API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
-| 审核历史记录 | 允许客户标识用户在实体级别创建、访问、更改或删除的资源。 | [PowerApps 管理中心](https://admin.powerapps.com) | 通过 [Web API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
+| 实体记录 | 称为系统用户实体，用于存储用户的个人数据。 | [PowerApps 管理中心](https://admin.powerapps.com) | 通过 [Web API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
+| 审核历史记录 | 允许客户标识用户在实体级别创建、访问、更改或删除的资源。 | [PowerApps 管理中心](https://admin.powerapps.com) | 通过 [Web API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
 
 #### <a name="user"></a>用户
 用户个人数据存储在 Azure Active Directory 中，并自动同步到所有 CDS for Apps 环境。 系统管理员无法在用户处于活动状态时直接在 CDS for Apps 中更新这些个人数据 &mdash; 必须在 Office 365 管理中心进行更新。 系统管理员可以直接将个人数据（例如，自定义属性）添加到 CDS for Apps，但必须手动管理此数据。
@@ -199,7 +199,7 @@ CDS for Apps 和 Common Data Service (CDS) 早期版本具有与个人数据交�
 
 3. 转到“设置” > “安全” > “用户”，然后选择“禁用用户视图”。
 
-4. 基于用户的个人数据创建 Excel 模板文件，并下载该文件。 有关分步说明，请参阅[创建新 Excel 模板](https://docs.microsoft.com/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates#create-a-new-excel-template)。
+4. 基于用户的个人数据创建 Excel 模板文件，并下载该文件。 有关分步说明，请参阅[创建新 Excel 模板](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates#create-a-new-excel-template)。
 
 8. 打开下载的 Excel 模板文件，删除用户的个人数据，然后保存该文件。
 
@@ -308,7 +308,7 @@ CDS 系统管理员负责维护不同实体中存储的每个人的个人数据�
 
 |资源 | 用途 | 网站访问 |  编程访问
 | --- | --- | --- | ---
-|实体记录 | 在各自的业务实体中捕获业务事务。 | [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) |    否
+|实体记录 | 在各自的业务实体中捕获业务事务。 | [PowerApps](https://web.powerapps.com) |      否
 
 #### <a name="entity-records"></a>实体记录
 个人的个人数据可以存储在任何业务实体中。

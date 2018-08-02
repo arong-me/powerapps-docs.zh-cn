@@ -2,18 +2,18 @@
 title: 管理组织中的许可证 | Microsoft Docs
 description: 与 Office 365 租户中的 PowerApps 的许可证、管理和用户注册相关的问题及解答
 author: jamesol-msft
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: jamesol
-ms.openlocfilehash: 8a734ef57a3820e38d52ad2bd87a2ab8979c0348
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 1f46541fcfe485bf497a59d25432ac1dec8d7b3e
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168035"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349768"
 ---
 # <a name="manage-powerapps-licenses-in-your-organization"></a>管理组织中的 PowerApps 许可证
 本文介绍了组织中的用户如何获得使用 PowerApps 的访问权限以及可如何控制对 PowerApps 服务的访问权限。
