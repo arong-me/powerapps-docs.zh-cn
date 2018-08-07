@@ -10,10 +10,10 @@ ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 9b26af9a2a1fb9b187023ec3ccc9cd86580aa4cf
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39017907"
 ---
 # <a name="drop-down-control-in-powerapps"></a>PowerApps 中的下拉列表控件
@@ -142,7 +142,7 @@ Selected - 选定项。
 * ChevronFill 和 ChevronBackground
 * ChevronHoverFill 和 ChevronHoverBackground
 * SelectionColor 和 SelectionFill
-* **SelectionFill** 和 **[Fill](properties-color-border.md)**
+* SelectionFill 和 **[Fill](properties-color-border.md)**
 
 这是除[标准颜色对比度](../accessible-apps-color.md)以外的要求。
 

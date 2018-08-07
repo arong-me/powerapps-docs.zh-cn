@@ -10,10 +10,10 @@ ms.reviewer: anneta
 ms.date: 06/05/2017
 ms.author: jasongre
 ms.openlocfilehash: c282301ffafd1214c072c5b29e87fbba1515eda2
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39017539"
 ---
 # <a name="data-table-control-in-powerapps"></a>PowerApps 中的数据表控件
@@ -145,7 +145,7 @@ PowerApps 在 2017 年 5 月 5 日引入了“数据表”控件。 此部分介
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：
-* Color[](properties-color-border.md) 和 Fill[](properties-color-border.md)
+* [**Color**](properties-color-border.md) 和 [**Fill**](properties-color-border.md)
 * HeadingColor 和 HeadingFill
 * SelectedColor 和 SelectedFill
 * [HoverColor](properties-color-border.md) 和 [HoverFill](properties-color-border.md)
