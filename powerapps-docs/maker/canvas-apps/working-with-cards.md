@@ -1,6 +1,6 @@
 ---
 title: 了解数据卡 | Microsoft 文档
-description: 使用表单卡从数据源收集和显示信息。
+description: 在 PowerApps 中，使用窗体卡从数据源收集和显示信息。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,23 +9,25 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 81e0213caee1d4eed466edebe3d13cbfa1c3e7e2
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a229f77ea569c56e18fd955a66ce48a5e02f84a9
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020759"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470928"
 ---
-# <a name="understand-data-cards"></a>了解数据卡
-**[卡](controls/control-card.md)** 控件是**[编辑表单](controls/control-form-detail.md)** 和**[显示表单](controls/control-form-detail.md)** 控件的构建基块。 表单表示整条记录，每个卡表示该记录的单个字段。
+# <a name="understand-data-cards-in-powerapps"></a>了解 PowerApps 中的数据卡
+
+[卡](controls/control-card.md)控件是画布应用中[编辑窗体](controls/control-form-detail.md)和[显示窗体](controls/control-form-detail.md)控件的构建基块********。 表单表示整条记录，每个卡表示该记录的单个字段。
 
 在设计工作区中选择表单控件后即可在右窗格中与卡轻松地进行交互。 在该窗格中，可以选择要显示哪些字段、每个字段的显示方式，以及按何种顺序进行显示。 此示例显示了从名为“资产”的 SharePoint 列表生成的应用中的“编辑表单”控件。
 
-![](./media/working-with-cards/first-screen.png)
+![第一个屏幕](./media/working-with-cards/first-screen.png)
 
 若要开始使用卡，请参阅[添加表单](add-form.md)和[了解数据表单](working-with-forms.md)。 本主题的剩余内容将更详细地介绍卡的工作方式以及你可以如何自定义卡甚至创建自己的卡。
 
 ## <a name="predefined-cards"></a>预定义的卡
+
 PowerApps 为字符串、数字和其他数据类型提供了一组预定义的卡。 在右侧窗格中，你可以看到可用的变体，并可更改用于某个字段的卡：
 
 ![](./media/working-with-cards/selected-card.png)

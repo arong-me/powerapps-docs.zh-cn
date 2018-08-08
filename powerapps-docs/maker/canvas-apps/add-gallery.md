@@ -1,6 +1,6 @@
 ---
-title: 显示项的列表 | Microsoft 文档
-description: 使用库显示应用中项的列表，并通过指定条件来筛选该列表。
+title: 显示画布应用中项的列表 | Microsoft Docs
+description: 使用库显示画布应用中项的列表，并通过指定条件来筛选该列表。
 author: karthik-1
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 09/28/2017
 ms.author: sharik
-ms.openlocfilehash: 4806d65416816897542973644da592f7e6b2e252
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 753a4508890f5ab007bef2a1f4d81bb46043a089
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020966"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470491"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>显示 PowerApps 中项的列表
-通过向应用添加[库](controls/control-gallery.md)控件，显示任意数据源中项的列表。 本主题使用 Excel 作为数据源。 筛选该列表，方法是：将库控件配置为仅显示那些与[文本输入](controls/control-text-input.md)控件中的筛选器条件匹配的项。
+
+通过向画布应用添加[库](controls/control-gallery.md)控件，显示任意数据源中项的列表。 本主题使用 Excel 作为数据源。 筛选该列表，方法是：将库控件配置为仅显示那些与[文本输入](controls/control-text-input.md)控件中的筛选器条件匹配的项。
 
 ## <a name="prerequisites"></a>先决条件
+
 * 了解如何在 PowerApps 中[添加和配置控件](add-configure-controls.md)。
 
 * 设置示例数据：

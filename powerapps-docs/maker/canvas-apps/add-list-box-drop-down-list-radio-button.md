@@ -1,6 +1,6 @@
 ---
-title: 添加列表框、下拉列表和单选按钮 | Microsoft 文档
-description: 在 PowerApps 中创建或配置多选选项
+title: 向画布应用添加列表框、下拉列表和单选按钮 | Microsoft Docs
+description: 通过 PowerApps，在画布应用中创建或配置多选选项
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,19 +9,21 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: ecdd1cc5aa9ccbad7c2973f8ad899b213dcd96f3
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: b4988157a8f194f7b1148cff79de1b5ce44add14
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023818"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471020"
 ---
-# <a name="add-a-list-box-a-drop-down-list-or-radio-buttons"></a>添加列表框、下拉列表或单选按钮
-PowerApps 提供多选和单选选项，其中包括列表框、下拉列表和单选按钮。 在本主题中，我们会添加这些控件并使用**表**公式来生成列表。 在列表中选定某项时，它会更新其他控件。
+# <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app-in-powerapps"></a>通过 PowerApps，向画布应用添加列表框、下拉列表或单选按钮
+
+PowerApps 为画布应用提供多选和单选选项，其中包括列表框、下拉列表和单选按钮。 在本主题中，我们会添加这些控件并使用**表**公式来生成列表。 在列表中选定某项时，它会更新其他控件。
 
 [!INCLUDE [app-customization-requirements](../../includes/app-customization-requirements.md)]
 
 ## <a name="add-a-list-box"></a>添加列表框
+
 1. 在“插入”选项卡上，选择“控件”，然后选择“列表框”：  
 
     ![][2]  

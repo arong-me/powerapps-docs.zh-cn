@@ -1,6 +1,6 @@
 ---
-title: 了解数据表单布局 | Microsoft 文档
-description: 使用行和列制作外观漂亮的表单布局。
+title: 了解画布应用的数据窗体布局 | Microsoft Docs
+description: 在 PowerApps 中，使用行和列在画布应用中创建美观的窗体布局。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,29 +9,32 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/17/2017
 ms.author: gregli
-ms.openlocfilehash: 050e665a7a5c2a05ab9abfc989134028d303da4d
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 7676c2d93eb5bbf55620a4d36f1f4818d52472d0
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017723"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470606"
 ---
-# <a name="understand-data-form-layout-in-microsoft-powerapps"></a>了解 Microsoft PowerApps 中的数据表单布局
-在 PowerApps 中，可以轻松创建具有吸引力且高效使用的表单。 例如，假设记录销售订单的基本表单如下：
+# <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>了解 PowerApps 中画布应用的数据窗体布局
+
+在 PowerApps 中生成画布应用时，轻松创建美观高效的窗体 例如，假设记录销售订单的基本表单如下：
 
 ![示例销售订单](./media/working-with-form-layout/sales-order.png)
 
 本教程中，我们将逐步介绍如何创建此表单。 另外，我们还将介绍一些高级主题，如动态调整字段大小以填充可用空间。
 
 ## <a name="before-you-start"></a>开始之前
+
 如果你是初次接触 PowerApps（或者仅自动生成过应用），则在深入了解此主题前请[从头开始生成一个应用](get-started-create-from-blank.md)。 通过从头开始生成一个应用，会让你熟悉本主题中提及但未加说明的必备概念，例如添加数据源和控件。
 
 ## <a name="add-a-gallery"></a>添加库
+
 1. 从头开始创建平板电脑应用。
-   
+
     本主题中介绍的所有内容同样也适用于手机布局，不同之处在于，手机应用通常只有一个垂直列。
 2. 在 [Common Data Service](../common-data-service/data-platform-intro.md) 中添加“销售订单”实体，作为应用的数据源。
-   
+
     在本教程之外，可以使用任意数据源，包括 SharePoint 列表和 Excel 表。
 3. 添加垂直的“库”控件，并将其 **Items**属性设置为 **'Sales order'**。
    

@@ -1,6 +1,6 @@
 ---
-title: 通过 Excel 生成应用 | Microsoft Docs
-description: 使用存储在云存储帐户的 Excel 文件，通过 PowerApps 自动生成应用
+title: 通过 Excel 生成画布应用 | Microsoft Docs
+description: 使用存储在云存储帐户的 Excel 文件，通过 PowerApps 自动生成画布应用
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 2af0c39aca43d316e79b4f928e114dcfb88caf31
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: f6051ca8348e8417302f49261d7ccac56a8aa9c9
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39194843"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470077"
 ---
-# <a name="generate-an-app-from-excel-in-powerapps"></a>使用 Excel 在 PowerApps 中生成应用
-在本主题中，将使用 Excel 表中的数据，在 PowerApps 中自动生成你的第一个应用。 将选择一个 Excel 文件，生成一个应用，然后运行生成的应用。 每个生成的应用都包括屏幕，用于浏览记录、显示记录的详细信息以及创建或更新记录。 通过生成应用，可以使用 Excel 数据快速利用应用，然后自定义该应用以更好地满足需要。 
+# <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>使用 Excel 在 PowerApps 中生成画布应用
+
+在本主题中，将使用 Excel 表中的数据，在 PowerApps 中自动生成你的第一个画布应用。 将选择一个 Excel 文件，生成一个应用，然后运行生成的应用。 每个生成的应用都包括屏幕，用于浏览记录、显示记录的详细信息以及创建或更新记录。 通过生成应用，可以使用 Excel 数据快速利用应用，然后自定义该应用以更好地满足需要。 
 
 Excel 文件必须位于云存储帐户（如 OneDrive、GoogleDrive 或 Dropbox）中。 本主题使用 OneDrive for Business。
 

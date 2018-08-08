@@ -1,5 +1,5 @@
 ---
-title: 扫描条形码 | Microsoft 文档
+title: 在画布应用中扫描条形码 | Microsoft Docs
 description: 扫描各种条形码类型，如 UPC 和 Codabar
 author: AFTOwen
 manager: kvivek
@@ -9,19 +9,21 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/23/2016
 ms.author: anneta
-ms.openlocfilehash: befc72b875f7876bc0f9f907a094f0d97314c03c
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 631277dc533d9792f08bf6a94bf9c345889c6795
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023312"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470583"
 ---
 # <a name="scan-a-barcode-in-powerapps"></a>在 PowerApps 中扫描条形码
-通过创建应用并在具有摄像头的设备（如手机）上运行应用，可扫描多种类型的条形码。 条形码的等效数字显示在“标签”控件中，可以将此数据上载到各种[数据源](connections-list.md)中。
+
+通过创建画布应用并在具有摄像头的设备（如手机）上运行应用，即可扫描多种类型的条形码。 条形码的等效数字显示在“标签”控件中，可以将此数据上载到各种[数据源](connections-list.md)中。
 
 如果不熟悉 PowerApps，请参阅[入门](getting-started.md)。
 
 ## <a name="known-limitations"></a>已知的限制
+
 * 条形码应至少 1 英寸（2.5 厘米）高、1.5 英寸（4 厘米）宽。
 * 若要使用手机扫描条形码，请纵向拿着手机，慢慢将手机移动到距离条形码 7 英寸（18 厘米）到 10 英寸（25 厘米）的位置。
 * 长条形码类型（如包含 15 个或更多字符的 I2of5）可能会提供截断或其他不正确的结果，尤其是在条形码打印不清晰的情况下。

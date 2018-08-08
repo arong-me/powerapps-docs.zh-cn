@@ -1,6 +1,6 @@
 ---
-title: 从模板创建应用 | Microsoft 文档
-description: 基于 PowerApps 模板自动创建应用的分步说明。
+title: 根据模板创建画布应用 | Microsoft Docs
+description: 基于 PowerApps 模板自动创建画布应用的分步说明。
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,21 +9,23 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/19/2018
 ms.author: anneta
-ms.openlocfilehash: 3827255726be017fe594a2c54389df7c622f7307
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 8b750760ab10c33d17f0e73f8b90a59e6a7b84f7
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195234"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471227"
 ---
-# <a name="create-an-app-from-a-powerapps-template"></a>从 PowerApps 模板创建应用
-基于特定方案的模板自动创建应用，例如跟踪预算和计划休假，然后运行应用以理解其默认行为。
+# <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>根据 PowerApps 中的模板创建画布应用
+
+基于特定方案的模板自动创建画布应用，例如跟踪预算和计划休假，然后运行应用以理解其默认行为。
 
 若要从模板创建一个应用，需要云存储帐户（如 DropBox、OneDrive 或 Google Drive）来存储模板的示例数据。
 
 如果没有适用于 PowerApps 的许可证，可以[免费注册](../signup-for-powerapps.md)。
 
 ## <a name="create-an-app"></a>创建应用
+
 1. 登录 [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
     ![PowerApps 主页](./media/get-started-test-drive/sign-in.png)

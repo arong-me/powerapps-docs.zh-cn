@@ -1,6 +1,6 @@
 ---
-title: 添加滚动屏幕 | Microsoft 文档
-description: 创建用户可以滚动浏览更多类型内容的屏幕（与一次性显示全部内容的屏幕相比）。
+title: 向画布应用添加滚动屏幕 | Microsoft Docs
+description: 在 PowerApps 中，创建用户可以滚动浏览更多类型内容的屏幕（与一次性显示画布应用中全部内容的屏幕相比）。
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,24 +9,27 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: lonu
-ms.openlocfilehash: 4a8b92e012f9669f2b445ef864d3360ef42fbc01
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 742710a3814c87d9888e70cb50c635dddab904d1
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015975"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471250"
 ---
-# <a name="add-a-scrolling-screen-in-powerapps"></a>在 PowerApps 中添加滚动屏幕
-创建用户可以滚动浏览不同项的屏幕。 例如，不妨创建一个用柱形图和折线图显示数据的应用。 通过添加滚动屏幕，可以添加多个控件，以便用户可以滚动浏览这些控件。
+# <a name="add-a-scrolling-screen-to-a-canvas-app-in-powerapps"></a>在 PowerApps 中向画布应用添加滚动屏幕
+
+在画布应用中，创建用户可以滚动浏览不同项的屏幕。 例如，创建一个手机应用，在多个图表中显示数据，当用户滚动屏幕时可浏览这些数据。
 
 在一个分区中添加多个控件时，这些控件会在这一分区中保持相对位置不变，无论是手机应用，还是平板电脑应用。 请注意，屏幕尺寸和方向可能会决定各分区的排列方式。  
 
 [!INCLUDE [app-customization-requirements](../../includes/app-customization-requirements.md)]
 
 ## <a name="create-a-scrolling-screen"></a>创建滚动屏幕
+
 1. 在“开始”选项卡上，单击或点击“新屏幕””：
-   
+
     ![用于在应用中添加屏幕的选项][1]
+
 2. 在“开始”选项卡上，依次单击或点击“布局”和用于添加无限滚动画布的选项：  
    
     ![用于添加无限滚动画布的选项][2]

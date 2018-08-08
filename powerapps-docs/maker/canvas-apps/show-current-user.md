@@ -1,6 +1,6 @@
 ---
-title: 显示有关当前用户的详细信息 | Microsoft 文档
-description: 插入 User 函数，在 PowerApps 中显示已登录用户的姓名和电子邮件地址
+title: 在画布应用中显示有关当前用户的详细信息 | Microsoft Docs
+description: 在 PowerApps 的画布应用中，显示已登录用户的姓名和电子邮件地址
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: 90a7ca39626e8eec8151bc3d5ced25a5701a126e
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 53d235a54aca1523cf243a315f5309bced1f15a9
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016251"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471181"
 ---
-# <a name="show-information-about-a-powerapps-user"></a>显示 PowerApps 用户的相关信息
-User 函数可显示与已登录用户关联的全名、电子邮件地址和图片。 可以使用此信息来自动填充窗体。
+# <a name="show-information-about-a-powerapps-user-in-a-canvas-app"></a>在画布应用中，显示 PowerApps 用户的相关信息
+
+在 PowerApps 中，显示与已登录画布应用的用户关联的全名、电子邮件地址和图片。 例如，可以使用此信息来自动填充窗体。
 
 例如，可以使用此功能：
 
@@ -30,6 +31,7 @@ User 函数可显示与已登录用户关联的全名、电子邮件地址和图
 [!INCLUDE [app-customization-requirements](../../includes/app-customization-requirements.md)]
 
 ## <a name="show-user-details"></a>显示用户详细信息
+
 1. 在“插入”选项卡上，单击或点击“媒体”，然后单击或点击“图像”。
    
    ![][2]

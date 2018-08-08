@@ -1,6 +1,6 @@
 ---
-title: 了解行为公式 | Microsoft 文档
-description: 有关使用行为公式的参考信息
+title: 了解画布应用中的行为公式 | Microsoft Docs
+description: 有关使用行为公式（用于更改 PowerApps 中画布应用的状态）的参考信息
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,18 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/10/2015
 ms.author: gregli
-ms.openlocfilehash: 8ac9cfc2a949cf059d84b5338220e0366094e24b
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: e0e7aabc06014c69aae640b799463431b6800dad
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015584"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471457"
 ---
-# <a name="understand-behavior-formulas-in-powerapps"></a>了解 PowerApps 中的行为公式
+# <a name="understand-behavior-formulas-for-canvas-apps-in-powerapps"></a>了解 PowerApps 中画布应用的行为公式
 
 大多数公式都是用来计算值的。  就像 Excel 电子表格一样，当值发生更改时，会自动执行重新计算。  例如，可能希望在“[标签](controls/control-text-box.md)”控件中用红色显示小于零的值，用黑色显示大于等于零的值。 所以，可以将这个控件的**[颜色](controls/properties-color-border.md)** 属性设置为以下公式：
-<br>**If( Value(TextBox1.Text) >= 0, Color.Black, Color.Red )**
+
+**If( Value(TextBox1.Text) >= 0, Color.Black, Color.Red )**
 
 对于这一点，如果用户选择**[按钮](controls/control-button.md)** 控件，会发生什么情况？  不会更改任何值，所有没有任何新值需要计算。 Excel 没有类似**[按钮](controls/control-button.md)** 这样的控件。  
 

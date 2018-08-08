@@ -1,6 +1,6 @@
 ---
-title: 了解表 | Microsoft 文档
-description: 有关使用表、列和记录的参考信息
+title: 了解画布应用中的表 | Microsoft Docs
+description: 有关使用 PowerApps 中画布应用表、列和记录的参考信息
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 6e1a87324c0a004390ceb5d1ce4846325fe18bc7
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: e0fce2e574644f8ec8077e86dc3a5b4ee5f2cd3a
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021173"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469893"
 ---
-# <a name="understand-tables-and-records-in-powerapps"></a>了解 PowerApps 中的表和记录
-可以创建一个应用，用于访问 Microsoft Excel、SharePoint、SQL Server 以及在记录和表中存储数据的其他多个源中的信息。 若要最有效地处理此类数据，请查看这些结构的基本概念。
+# <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>了解 PowerApps 中的画布应用表和记录
+
+在 PowerApps 中，可以创建一个画布应用，用于访问 Microsoft Excel、SharePoint、SQL Server 以及在记录和表中存储数据的其他多个源中的信息。 若要最有效地处理此类数据，请查看这些结构的基本概念。
 
 * 记录包含有关个人、地点或事物的一个或多个类别的信息。 例如，记录可能包含单个客户的姓名、电子邮件地址和电话号码。 其他工具将记录称作“行”或“项”。
 * 表保存一个或多个记录，这些记录包含相同类别的信息。 例如，表可以包含 50 个客户的姓名、电子邮件地址和电话号码。

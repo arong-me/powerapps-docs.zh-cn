@@ -1,6 +1,6 @@
 ---
-title: 了解窗体 | Microsoft 文档
-description: 使用窗体从数据源收集和显示信息。
+title: 了解画布应用窗体 | Microsoft Docs
+description: 在 PowerApps 中，将窗体添加到画布应用中，以便从数据源收集和显示信息。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: b2eb001ee426dc3449b440a357c67bc47b702d42
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: c7bd68f37cc469b054a75012d4166c05375db6ff
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195740"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470238"
 ---
-# <a name="understand-data-forms-in-microsoft-powerapps"></a>了解 Microsoft PowerApps 中的数据窗体
-添加三种类型的控件，使用户能够浏览记录、显示有关记录的详细信息，以及编辑或创建记录：
+# <a name="understand-canvas-app-forms-in-microsoft-powerapps"></a>了解 Microsoft PowerApps 中的画布应用窗体
+
+向画布应用添加三种类型的控件，这样用户可以浏览记录、显示记录的详细信息，以及编辑或创建记录：
 
 | 活动 | 控件 | 描述 |
 | --- | --- | --- |

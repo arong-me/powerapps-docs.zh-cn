@@ -1,6 +1,6 @@
 ---
-title: 公式入门 | Microsoft 文档
-description: 使用公式自定义应用。
+title: 画布应用中的公式入门 | Microsoft Docs
+description: 在 PowerApps 中，使用公式自定义画布应用。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 7f9a724b61404ac0947a9c75f91396b35328086b
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 266949870403dbe0d8a90f096b811478ace90732
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195257"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470652"
 ---
-# <a name="get-started-with-formulas"></a>公式入门
-为应用配置公式，不仅用于计算值和执行其他任务（与在 Excel 中的操作一样），还能（根据应用需求）响应用户输入。
+# <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>PowerApps 中的画布应用公式入门
+
+为画布应用配置公式，不仅用于计算值和执行其他任务（与在 Excel 中的操作一样），还能（根据应用需求）响应用户输入。
 
 * 在 Excel 中生成公式，例如，填充单元格并创建表格和图表。
 * 在 PowerApps 中，生成与配置控件（而不是单元格）时类似的公式。 此外，生成专门适用于应用（而非电子表格）的公式。

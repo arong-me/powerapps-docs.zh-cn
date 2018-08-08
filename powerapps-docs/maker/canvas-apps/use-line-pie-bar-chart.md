@@ -1,6 +1,6 @@
 ---
-title: 创建图表 | Microsoft 文档
-description: 将数据类别显示为折线图、饼图或条形图
+title: 在画布应用中创建图表 | Microsoft Docs
+description: 在 PowerApps 的画布应用中，将数据类别显示为折线图、饼图或条形图
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: 5fecc52a5100f2ed0d045fd0ebdc3834f83d5b39
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 63244a05d81f807609c965892f6a84e30577b490
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195901"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471135"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>在 PowerApps 中使用折线图、饼图或条形图显示数据
-使用折线图、饼图和条形图显示数据。 使用图表时，所导入数据的结构应如下所示：
+
+使用折线图、饼图和条形图显示画布应用中的数据。 使用图表时，所导入数据的结构应基于以下条件：
 
 * 各系列应在第一行。
 * 标签应在最左边的列。
@@ -29,6 +30,7 @@ ms.locfileid: "39195901"
 可以在 PowerApps 中创建并使用这些图表。 让我们开始吧。
 
 ## <a name="prerequisites"></a>先决条件
+
 * [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 * 根据[模板](get-started-test-drive.md)、[数据](get-started-create-from-data.md)或[从头开始](get-started-create-from-blank.md)创建应用。
 * 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。

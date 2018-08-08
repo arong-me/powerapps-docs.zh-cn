@@ -1,6 +1,6 @@
 ---
-title: 了解数据源 | Microsoft 文档
-description: 有关使用 Microsoft PowerApps 中的连接和数据源的参考信息。
+title: 了解画布应用的数据源 |Microsoft Docs
+description: 有关使用画布应用连接和数据源的参考信息。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,29 +9,33 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 03/08/2017
 ms.author: gregli
-ms.openlocfilehash: d8fd771d9407d0ca2601471a06c727b16a751f2a
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a4dd3d2d21aa8e4f8501c9bc9812ba6658683f03
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020874"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470376"
 ---
-# <a name="understand-data-sources-in-powerapps"></a>了解 PowerApps 中的数据源
-大多数 PowerApps 应用使用所谓**数据源**的云服务中存储的外部信息。 OneDrive for Business 中存储的 Excel 文件包含的表就一个常见的例子。 应用使用**连接**访问这些数据源。
+# <a name="understand-data-sources-for-canvas-apps-in-powerapps"></a>了解 PowerApps 中画布应用的数据源
+
+在 PowerApps 中，大多数画布应用使用云服务中存储的外部信息（称为“数据源”）。 常见的例子是，OneDrive for Business 中存储的 Excel 文件中的表。 应用使用**连接**访问这些数据源。
 
 本文介绍不同类型的数据源，以及如何使用表数据源。
 
 我们可以轻松创建一个向数据源执行基本读取和写入的应用。 但有时，我们希望能够以更大的力度控制数据流入和流出应用的方式。  本文介绍如何使用 **[Patch](functions/function-patch.md)**、**[DataSourceInfo](functions/function-datasourceinfo.md)**、**[Validate](functions/function-validate.md)** 和 **[Errors](functions/function-errors.md)** 函数来提供更高的控制度。
 
 ## <a name="kinds-of-data-sources"></a>数据源的类型
+
 数据源可连接到云服务，或者，可以位于应用本地。
 
 ### <a name="connected-data-sources"></a>连接的数据源
-最常见的数据源是可用于检索和存储信息的表。 可以使用与数据源建立的**连接**，通过 Microsoft Excel 工作簿、SharePoint 列表、SQL 表和许多其他格式读取和写入数据，并将这些数据存储在 OneDrive for Business、DropBox、SQL Server 等云服务中。
+
+最常见的数据源是可用于检索和存储信息的表。 可以使用与数据源建立的连接，在 Microsoft Excel 工作簿、SharePoint 列表、SQL 表和其他许多格式数据源中读取和写入数据，这些数据源可以存储在 OneDrive for Business、DropBox、SQL Server 等云服务中。
 
 除表以外的其他数据源包括电子邮件、日历、Twitter 和通知，但本文并不介绍其他这些类型的数据源。
 
 ### <a name="local-data-sources"></a>本地数据源
+
 使用**[库](controls/control-gallery.md)**、**[显示窗体](controls/control-form-detail.md)** 和**[编辑窗体](controls/control-form-detail.md)** 控件可以轻松创建一个可在数据源中读取和写入数据的应用。  若要开始，请阅读[了解数据窗体](working-with-forms.md)一文。  
 
 如果想要让 PowerApps 基于数据创建应用，需使用这些控件。 在幕后，应用使用内部表来存储和处理来自数据源的数据。
@@ -39,6 +43,7 @@ ms.locfileid: "39020874"
 一种特殊的数据源是[集合](working-with-data-sources.md#collections)，它位于应用本地，而不是基于与云中服务建立的连接，因此，无法在同一用户的设备之间或者在不同的用户之间共享信息。 可在本地加载和保存集合。
 
 ### <a name="kinds-of-tables"></a>表的类型
+
 PowerApps 应用内部的表为固定值，就如同数字或字符串是值一样。 内部表不会存储在任何位置，而只存在于应用的内存中。 无法直接修改表的结构和数据。 替代做法是通过公式创建一个新表：使用该公式创建原始表的修改副本。
 
 外部表存储在数据源中，供日后检索和共享。  PowerApps 提供用于读取和写入存储数据的“连接”。  在一个连接中可以访问多个信息表。  可以选择要在应用中使用哪些表，每个表将成为独立的 *数据源* 。  

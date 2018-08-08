@@ -1,59 +1,66 @@
 ---
-title: 通用数据模型概述 | Microsoft Docs
-description: 了解通用数据模型如何连接 Common Data Service for Apps 和 Common Data Service for Analytics。
+title: 什么是通用数据模型 | Microsoft Docs
+description: 通用数据模型是 Microsoft 发布的标准化数据架构集合，它采用模块化结构，可进行扩展，旨在简化生成、使用和分析数据的过程。
 author: RobertBruckner
 ms.service: powerapps
 ms.topic: article
-ms.date: 03/14/2018
-ms.author: jdaly
-ms.openlocfilehash: 4e9b929558de0b2451bb2df4add4b300d7115848
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.date: 07/24/2018
+ms.author: robruc
+ms.openlocfilehash: 1469646301c273067ad035428f03c452ae223604
+ms.sourcegitcommit: abe4d4728db7f56088f618af5b820af78e7099c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803227"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "39331985"
 ---
-# <a name="common-data-model-overview"></a>通用数据模型概述
+# <a name="what-is-the-common-data-model"></a>什么是通用数据模型？
 
-通用数据模型 (CDM) 是标准实体的开源定义，这些实体代表跨多种企业和应用程序域的常用概念和活动。 通用数据模型提供明确定义、模块化和可扩展的业务实体（例如帐户、业务部门、用例、联系人、潜在客户、机会和产品），还提供供应商、员工和客户之间的交互和关系（例如活动和服务级别协议）。 
+如果曾遇到过数据几乎相同或应共同处理的难题（因而需要耗费大量精力来转换字段和表以处理其他数据），我们都知道常见数据元素可以省力、简化未来开发并加快分析。 通用数据模型 (CDM) 可以提供这些功能以及更多功能。
 
-Microsoft 的 [Common Data Service for Apps](../maker/common-data-service/data-platform-intro.md) 和 Common Data Service for Analytics <!-- TODO add link when available  --> 实现通用数据模型。 这些服务保存符合通用数据模型定义的数据。 打包的应用程序和分析解决方案以这些服务为基础生成，可以处理明确定义的实体形状和共享数据，而无论数据最初源于哪里或者被谁控制。 自定义业务线应用和分析解决方案可以利用相同的实体共享数据，从而支持你的特定需求和业务需求。 
+通用数据模型 (CDM) 是 Microsoft 发布的标准化数据架构集合，它采用模块化结构，可进行扩展，旨在简化生成、使用和分析数据的过程。 此预定义架构集合（由实体、属性、语义元数据和关系组成）代表常用的概念和活动（例如帐户和活动），可简化创建、聚合和数据分析。 详细信息：[GitHub 上的 CDM 存储库](https://aka.ms/cdmrepo)
 
-Microsoft 和我们的合作伙伴致力于以 Common Data Service 为基础生成应用程序，并将业务数据存储为 CDM 形式。 将数据存储为 CDM 形式时，大量且持续增长的解决方案集合高效协作，这意味着可以快速实现新的业务流程，并轻松简单地获取业务运营见解。 下图显示基于 Common Data Services 开发的应用程序如何利用通用数据模型实体。
+![常见数据模型](media/cdm-entities.png)
 
-![基于 Common Data Services 开发的应用程序如何利用通用数据模型实体](media/cdm-overview.png)
+详细信息：[CDM 海报](https://aka.ms/cdmposter)
 
-通用数据模型通过跨应用程序和部署的结构和语义一致性将数据统一为已知的形式，从而简化数据管理的挑战。 它可以帮助集成从业务流程、数字交互、产品遥测、人员交互等收集的数据并消除歧义。 
+## <a name="why-use-the-common-data-model"></a>为何使用通用数据模型？
 
-Common Data Service for Apps 中存储的数据轻松、自动与针对使用两个服务的客户的 Common Data Service for Analytics 集成。 你可以从已有的企业和交易数据开始（例如潜在客户、营销活动信息、以前的客户采购），并结合其他源的数据（例如网络日志或产品遥测），以获得统一的结果。
+CDM 将数据统一为已知窗体，将同一结构和语义应用于多个应用程序和部署，以此简化数据管理和应用程序开发。 换言之，如果数据采用了 CDM 格式，便可在许多不同的应用程序中使用这些数据，简化其他应用程序的创建或使用以利用现有数据，还可轻松为每个（或所有）应用程序生成报表。 此外，从各种系统获取数据的数据集成商可以专注于获取 CDM 格式的数据，而不是为每个应用程序生成新模型。
 
-通用数据模型还可扩展 - 你可以将字段添加到任意可自定义实体（可能是 CDM 附带的或者自己创建的）。 CDM 标准为业务实体（涵盖从销售、服务、营销、运营、财务、人才到商务的整个业务流程）以及客户、人员和产品实体（公司业务流程的核心）定义公共语言。 通用数据模型促进跨多个通道、服务实现和供应商的数据互操作性。
+假设有三个商业应用程序 - 材料应用、生产应用和销售应用。 通常会独立创建每个应用程序，采用不同结构表示某个实体（例如帐户），它们几乎相同（但实际不同）。 借助 CDM，可以采用标准化格式（使用 CDM 实体、属性和关系）生成数据，然后这三个应用都可使用相同的数据作为基础。 当然，每个应用都可以根据各自的功能添加其他数据和架构。 但是，在开发方面，应用程序和报表可以轻松快速且明确地提取公共数据元素。
 
-通用数据模型和 Common Data Service 通过以下功能提供一个丰富且高效的开发平台：
+创建第四个应用的需求是什么？ 数据已准备就绪（采用 CDM 架构），因此开发工作可以专注于业务逻辑，而不是疲于应对海量数据和繁琐转换。
 
-- **标准实体的定义** - 通用数据模型提供一种实体定义，表示跨业务和生产力应用程序最常用的实体。 通过跨整个业务流程（横向）的核心实体、其他垂直行业数据模型和跨越资源（例如调查、搜索引擎和产品遥测），继续增强公共 CDM GitHub 存储库[(https://github.com/Microsoft/CDM)](https://github.com/Microsoft/CDM)。
-- **数据集成** - 使用 Power Query 作为内置 Web 体验，从现有系统导入数据，以直观方式转换数据，并在无代码或少代码的情况下合并在线和本地资源的数据。 将无缝应用你的 Excel 和 Power BI 数据转换技能。 请参阅[使用 Power Query 将数据添加到 Common Data Service 中的实体](../maker/common-data-service/data-platform-cds-newentity-pq.md)。
-    
-    将数据导入到 Common Data Service 时，可以将其映射到标准的通用数据模型实体，也可以创建并映射到新实体。 现成可用的数据集成和映射模板可以简化到通用数据源（例如 Salesforce）的连接。 这些映射模板可完全自定义并可扩展。 以下屏幕截图显示如何导入外部数据并将其映射到 Power Query 中的标准实体。 
-    
-    ![导入外部数据并将其映射到 Power Query 中的标准实体 ](media/cdm-mapping-entities.png)<br />
+换言之，CDM 为数据提供以下优势：
 
-- **可扩展性** - 你可以扩展实体，且不会中断与其他应用共享数据。
-- **可靠性** - 由于可以依赖常用实体，因此可以生成绑定到这些实体的可重用组件。 通用数据模型支持可扩展性和保护开发投资的版本控制。
-- **跨部署的实体一致性** - 解决方案可以连接生产力平台的信息和商业应用程序的信息。 例如，可以连接日历约会或 Microsoft Outlook 任务和销售机会。 
+-   在不同应用程序和部署之间保持结构和语义一致。
 
-[Common Data Service for Apps](../maker/common-data-service/data-platform-intro.md) 实现通用数据模型，允许商业应用程序开发：
+-   对于从流程、数字交互、产品遥测、人员交互收集的数据，简化了其集成和消歧。
 
-- **利用打包的业务应用程序** - 针对营销、销售、服务、人才、财务和运营应用的 Dynamics 365 和第三方应用程序利用 Common Data Service for Apps 和/或基于其生成。
-- **按需自定义应用程序和生成本机扩展** - 定制员和开发人员分发明确定义了应用程序生命周期的应用程序解决方案。 解决方案是应用程序和扩展的分发方式。 请参阅[解决方案简介](../developer/common-data-service/introduction-solutions.md)。
-- **借助 PowerApps 生成无代码/少代码的模型驱动和 WYSIWYG 画布应用** - 使用由打包的应用程序或其他第三方应用程序创建/使用的相同共享实体并创建其他独立应用。 请参阅： 
-    - [生成模型驱动应用](../maker/model-driven-apps/model-driven-app-overview.md)
-    - [生成画布应用](../maker/canvas-apps/getting-started.md) 
-- **借助 Flow 自动化业务流程** - 使用业务流程流定义一组阶段和步骤以实现所需结果。 请参阅[创建使用 Common Data Service 的流](/flow/common-data-model-intro)
- 
-即将发布的 Common Data Service for Analytics<!-- TODO add link when available  --> 公共预览版也实现通用数据模型，支持标准形式的业务数据分析，包括：
+-   统一形状，数据集成可以将现有企业数据与其他源相结合，从全局使用数据以开发新应用程序或获取见解。
 
-- **基于标准数据实体的打包和自定义的分析解决方案** - 跟踪历史销售业绩的分析应用程序（例如 Sales Insights）提供一致的见解（无论数据最初在哪里被控制），因为数据集成体验将数据从其他源（例如 Salesforce.com）集成到通用数据模型实体形状。 这可以将分析解决方案简化为专注于明确定义的实体（例如潜在客户和机会）的数据语义。
-- **无代码/少代码 Power Query 数据集成** - 使用内置体验创建、填充、转换和丰富实体。 
-- **自带 Azure 存储** - 充分利用 Azure 数据堆栈向 Common Data Service for Analytics 提供数据。 实体以分析解决方案可识别的相同通用数据模型格式存储。
+-   能够扩展架构和 CDM 实体，以便为组织定制通用数据模型。
 
+可以使用 CDM 创建与架构匹配的新数据存储库，也可将现有数据转换为通用数据模型架构。 无论哪种方式，标准化带来的高效都可以加快并简化接下来的数据处理。
+
+## <a name="who-uses-the-common-data-model"></a>谁在使用通用数据模型？
+
+众多客户、合作伙伴及产品都在使用 CDM，采用具有语义含义的常用窗体统一数据是其共同的目标。
+
+-   **应用程序制造商/开发人员**：无论这些用户是利用基于代码的平台还是低代码/无代码平台（如 PowerApps），他们都需要为其应用程序存储和管理数据。
+
+-   **数据集成商**：这些用户负责从各种系统中提取数据，以供应用程序使用。
+
+从历史上看，生成应用程序的工作与数据集成紧密相关，但如果借助 CDM 和支持它的平台，则可以独立进行这两个工作。
+
+## <a name="common-data-model-in-action"></a>实际的通用数据模型
+
+Microsoft 及其合作伙伴将 CDM 用于自己的应用程序和产品/服务，并且正在生成基于 CDM 架构的其他服务和产品。 以下示例显示组织如何使用 CDM：
+
+-   支持 Dynamics 和 PowerApps 的 Common Data Service (CDS) for Apps 按照 CDM 定义存储数据。 实际上，包括 CDM 在内的许多原始业务实体都来自 Dynamics 产品/服务，例如 Dynamics 365 for Sales 和 Dynamics 365 for Marketing。
+
+-   医疗保健等垂直行业与 Microsoft 紧密合作，将 CDM 扩展到其特定的业务概念（例如患者和关怀计划），以便共享数据、构建服务，这样一来，合作伙伴可轻松交换数据、创建可互操作的应用和服务，以及创建易于共享的快速分析。
+
+## <a name="next-step"></a>下一步
+
+[如何使用通用数据模型](use-common-data-model.md)：详细描述 CDM，并讨论采用 CDM 格式创建新数据或将现有数据转换为 CDM 的用例。

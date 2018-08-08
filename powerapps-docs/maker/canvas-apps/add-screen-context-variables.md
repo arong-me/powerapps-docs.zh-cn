@@ -1,7 +1,7 @@
 ---
-title: 添加和切换屏幕 | Microsoft 文档
-description: 在应用中添加屏幕，然后在 PowerApps 中使用前进和后退箭头切换屏幕
-author: aftowen
+title: 在画布应用中添加屏幕并在不同屏幕间切换 | Microsoft Docs
+description: 在画布应用中添加屏幕，然后在 PowerApps 中使用前进和后退箭头切换屏幕
+author: AFTOwen
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
@@ -9,21 +9,24 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/10/2017
 ms.author: anneta
-ms.openlocfilehash: c7a100b6df278812ea93da8c4f5c503a841d4109
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 17ec7dd0723e219e1eaf9ad3b112faf049cf7d12
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022001"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469939"
 ---
-# <a name="add-a-screen-and-navigate-between-screens"></a>添加和切换屏幕
-创建包含多个屏幕的应用，然后为用户提供屏幕切换方式。
+# <a name="add-a-screen-to-a-canvas-app-and-navigate-between-screens"></a>在画布应用中添加屏幕并切换屏幕
+
+创建包含多个屏幕的画布应用，然后为用户提供屏幕切换方式。
 
 ## <a name="prerequisites"></a>先决条件
+
 * 了解如何[配置控件](add-configure-controls.md)。
 * 创建或打开应用。
 
 ## <a name="add-and-rename-a-screen"></a>添加并重命名屏幕
+
 1. 在“开始”选项卡上，单击或点击“新屏幕”。
 
     ![“开始”选项卡上的“添加屏幕”选项](./media/add-screen-context-variables/add-screen.png)

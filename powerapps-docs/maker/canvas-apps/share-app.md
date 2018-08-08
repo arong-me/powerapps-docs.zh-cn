@@ -1,6 +1,6 @@
 ---
-title: 共享应用 | Microsoft 文档
-description: 通过授予其他用户运行或修改应用的权限来共享应用
+title: 共享画布应用 | Microsoft Docs
+description: 通过授予其他用户运行或修改应用的权限来共享画布应用
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/11/2018
 ms.author: anneta
-ms.openlocfilehash: 9c4bdc6e56f84b6724fcbe44cfe1f3e4c065edb3
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: eaea8049b573b619881ae0a2b6ecb2618e4bf192
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195303"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470629"
 ---
-# <a name="share-an-app-in-powerapps"></a>在 PowerApps 中共享应用
+# <a name="share-a-canvas-app-in-powerapps"></a>在 PowerApps 中共享画布应用
 
-生成满足业务需求的应用后，指定组织中哪些用户可以运行应用，哪些用户可以修改并重新共享应用。 按姓名指定每个用户或在 Azure Active Directory 中指定安全组。 如果每个人都可利用你的应用，则指定整个组织可以运行应用。
+生成满足业务需求的画布应用后，指定组织中哪些用户可以运行应用，哪些用户可以修改并重新共享应用。 按姓名指定每个用户或在 Azure Active Directory 中指定安全组。 如果每个人都可利用你的应用，则指定整个组织可以运行应用。
 
 > [!IMPORTANT]
 > 若要使共享应用按预期方式运行，还必须管理应用所基于的数据源或源的权限，例如 [Common Data Service for Apps](#common-data-service-for-apps) 或 [Excel](share-app-data.md)。 可能还需要共享应用依赖的[其他资源](share-app-resources.md)，例如流、网关或连接。

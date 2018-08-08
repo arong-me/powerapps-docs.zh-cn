@@ -1,6 +1,6 @@
 ---
-title: 将 InfoPath 表单转换为 PowerApps | Microsoft Docs
-description: 要开始将 InfoPath 表单转换为 PowerApps，请参阅有关常见 InfoPath 方案以及如何在 PowerApps 中创建这些项的详细信息。
+title: 将 InfoPath 窗体转换为画布应用 | Microsoft Docs
+description: 借助常见方案的相关信息以及在画布应用中创建这些项的方法，开始将 InfoPath 窗体转换为 PowerApps。
 author: richardriley99
 manager: kvivek
 ms.service: powerapps
@@ -9,22 +9,22 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/05/2018
 ms.author: rriley
-ms.openlocfilehash: b57d62d3e64ea08905ddcc8627cf6921d421fb18
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.openlocfilehash: a249d0a9096117badfe3e4eb7ad9dcf6b75662a1
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094716"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470100"
 ---
-# <a name="transform-your-infopath-forms-to-powerapps"></a>将 InfoPath 表单转换为 PowerApps
+# <a name="transform-your-infopath-form-to-powerapps"></a>将 InfoPath 窗体转换为 PowerApps
 
 是否在 InfoPath 中创造了出色内容，很想了解如何在更可靠的平台上交付这些内容？
 
 ## <a name="key-advantages-of-powerapps-over-infopath"></a>PowerApps 相较于 InfoPath 的主要优点
 
-如果你和大多数 InfoPath Power 用户一样，使用独特的技能组合构建出色的表单已有一段时日。 虽然对生成的表单感到十分满意，但也发现存在一定的局限性：设计“经典”（老旧），移动设备体验不够完美，未来可用性不明确，以及如果不编写代码，连接到其他服务时总会受到重重束缚。
+如果你和大多数 InfoPath Power 用户一样，使用独特的技能组合构建出色的窗体已有一段时日。 虽然你对窗体感到十分满意，但也发现存在一定的局限性：设计传统，移动设备体验不够完美，未来可用性不明确，以及如果不编写代码，连接到其他服务时总会受到重重束缚&quot;&quot;。
 
-PowerApps 团队已了解到这些问题以及许多其他问题。 他们一直努力为用户提供更好的 PowerApps 体验。 他们的目标是使用户能够利用其业务和现有技术技能创建应用。 让用户能够使用 PowerApps 快速生成和部署适合的业务解决方案，而无需编写代码。
+PowerApps 团队已知晓这些问题及其他许多难题。 他们努力改善体验，旨在让你能够利用现有业务和技术技能创建画布应用。 借助 PowerApps，你可以快速生成和部署适合的业务解决方案，而无需编写代码。
 
 **通过 PowerApps 成就辉煌未来**  
 PowerApps 是一个服务型软件 (SaaS) 平台，用户通过该平台可以快速构建功能强大的应用并能够将这些应用部署到 Web、SharePoint、Dynamics 365、Teams、Power BI 或移动设备，这一切都无需任何额外工作。 而且由于它们部署起来非常容易（只需向他人提供已发布的应用的 URL 即可），因此更新也非常简单。

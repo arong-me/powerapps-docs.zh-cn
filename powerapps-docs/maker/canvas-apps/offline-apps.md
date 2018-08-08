@@ -1,6 +1,6 @@
 ---
-title: 开发可脱机运行的应用 | Microsoft 文档
-description: 开发可脱机运行的应用，以便用户可以高效工作，无论是联机还是脱机。
+title: 开发可脱机运行的画布应用 | Microsoft Docs
+description: 开发可脱机运行的画布应用，无论联机还是脱机，用户都能高效工作。
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,22 +9,24 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: cb2ed2404f7270367b3a26bf8eccb733b09fee23
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 9035809f989ad4b0215d4a8eba5d693d145b7f66
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023128"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39471204"
 ---
-# <a name="develop-offline-capable-apps-with-powerapps"></a>使用 PowerApps 开发可脱机运行的应用
-作为移动应用开发者，最常遇到的情境之一是，让用户能够在联网受限或根本无法联网的情况下高效工作。 PowerApps 提供了一系列功能和行为，有助于开发可脱机运行的应用。 你可以：
+# <a name="develop-offline-capable-canvas-apps-with-powerapps"></a>使用 PowerApps 开发可脱机运行的画布应用
 
-* 在脱机时启动 PowerApps 移动应用。
+作为移动应用开发者，最常遇到的情境之一是，让用户能够在联网受限或根本无法联网的情况下高效工作。 PowerApps 提供了一系列功能和行为，有助于开发可脱机运行的画布应用。 你可以：
+
+* 脱机时启动 PowerApps Mobile。
 * 在脱机时运行你开发的应用。
 * 使用 [Connection](../canvas-apps/functions/signals.md#connection) 信号对象确定应用何时处于脱机、联机或按流量计费的连接状态中。
 * 在脱机时使用[集合](../canvas-apps/create-update-collection.md)或利用 [LoadData 和 SaveData](../canvas-apps/functions/function-savedata-loaddata.md) 等函数进行基本数据存储。
 
 ## <a name="how-to-build-offline-capable-apps"></a>如何生成可脱机运行的应用
+
 在脱机情境中，首先需要考虑的是应用如何处理数据。 PowerApps 中的应用主要通过平台提供的一组[连接器](../canvas-apps/connections-list.md)（如 SharePoint、Office 365 和 Common Data Service）访问数据。 还可以生成自定义连接器，让应用能够访问任何提供 RESTful 终结点的服务。 这可以是 Web API 或 Azure Functions 等服务。 所有这些连接器都通过 Internet 使用 HTTPS。也就是说，用户必须联机，才能访问数据，并使用服务提供的其他任何功能。
 
 ![使用连接器的 PowerApps 应用](./media/offline-apps/online-app.png)

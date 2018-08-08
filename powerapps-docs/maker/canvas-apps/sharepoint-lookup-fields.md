@@ -1,6 +1,6 @@
 ---
-title: 通过查找字段创建 SharePoint 列表之间的关系 | Microsoft 文档
-description: 通过使用查阅字段创建 SharePoint 列表之间的关系。
+title: 在画布应用中通过查找字段创建 SharePoint 列表之间的关系 | Microsoft Docs
+description: 在 PowerApps 的画布应用中，使用查阅字段创建 SharePoint 列表之间的关系。
 author: skjerland
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/20/2017
 ms.author: sharik
-ms.openlocfilehash: 342fcc36fb8dba9cfaa42c94089329ad19501af8
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 9ad61bdf115a79fe8284dad520a2e9710a59648b
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39194912"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470514"
 ---
-# <a name="how-to-link-sharepoint-lists-using-lookup-fields"></a>如何使用查阅字段链接 SharePoint 列表
-本教程演示如何使用查阅字段连接两个 SharePoint 列表。
+# <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-powerapps"></a>在 PowerApps 中，如何使用查阅字段关联 SharePoint 列表
+
+本教程演示如何在画布应用中使用查阅字段连接两个 SharePoint 列表。
 
 ## <a name="overview"></a>概述
+
 SharePoint 提供两种查阅字段：
 
 * **查阅**：链接到另一个列表：例如，*Orders* 列表可能有一个查阅字段，该字段链接到 *Customer* 列表中的客户；
@@ -27,7 +29,8 @@ SharePoint 提供两种查阅字段：
 
 在本教程中，将生成一个使用这些类型的查阅字段的应用。
 
-### <a name="what-do-you-use-lookup-fields-for"></a>“查阅”字段用于哪些场合？
+### <a name="why-use-a-lookup-field"></a>为什么使用查找字段
+
 企业中的数据不仅庞大，而且复杂。 一个 SharePoint 列表中的数据通常与另一个列表中的数据相关。 “查阅”字段是将此类业务数据汇集在一起的主要方式。
 
 例如，你可能有一个包含“查阅”字段的 **Orders** 列表，该字段链接到 **Customers** 列表，以显示哪些客户已经下单。 利用 **Orders** 列表中的“查阅”字段，还可以从 **Customers** 列表中获取其他数据。 还可以使用“查阅”字段将 **Orders** 列表连接到 **Product** 列表，引入所需的已订购产品相关信息，例如产品图片、规格、制造商详细信息等等。

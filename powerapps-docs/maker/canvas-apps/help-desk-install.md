@@ -1,6 +1,6 @@
 ---
-title: 安装和配置技术支持 PowerApps 示例 | Microsoft Docs
-description: 安装和配置技术支持 PowerApps 示例的分步说明。
+title: 安装和配置画布应用的技术支持示例 | Microsoft Docs
+description: 在 PowerApps 中安装和配置画布应用的技术支持示例的分步说明。
 author: caburk
 manager: kvivek
 ms.service: powerapps
@@ -9,24 +9,24 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 4ee281e211891dab812c4ae447dff3d967ffeff3
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 3d6b418ac6738071f16ec4cf75c81c2850d67f74
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195763"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470399"
 ---
-# <a name="install-and-configure-the-help-desk-powerapps-sample"></a>安装和配置技术支持 PowerApps 示例
+# <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>在 PowerApps 中安装和配置技术支持的示例
 
-安装和配置技术支持 PowerApps 示例的分步说明。
+在 PowerApps 中安装和配置画布应用的技术支持示例的分步说明。
 
 完成以下步骤的估计时间：10-15 分钟
 
 > [!TIP]
-> 如果希望查看此流程的演示，请观看此[视频](https://youtu.be/z4cdtD6hB_4)。
+> 有关此过程的演示，请观看此[视频](https://youtu.be/z4cdtD6hB_4)。
 
+## <a name="overview-of-the-sample"></a>示例概述
 
-## <a name="help-desk-powerapps-sample-overview"></a>技术支持 PowerApps 示例概述
 技术支持提供用户友好体验，方便最终用户与支持专业人员交流。 快速找到最重要问题的答案，跟踪开放票证的进度，并查看之前的请求的详细信息。 要拥有此应用，需完成少量设置。
 
 ![技术支持 PowerApp 的打开屏幕](./media/help-desk-install/Login-screen.png)

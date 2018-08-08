@@ -1,6 +1,6 @@
 ---
-title: 了解变量 | Microsoft 文档
-description: 使用状态、上下文变量和集合时需要的参考信息
+title: 了解画布应用中的变量 | Microsoft Docs
+description: 有关在画布应用中使用状态、上下文变量和集合的参考信息
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: b5986c927b75ed7a6e38af913cbfb9877121d0a5
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: db7e770b2f2e7fa974dbf25a7a7fecf5b8229aa9
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017815"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469916"
 ---
-# <a name="understand-variables-in-powerapps"></a>了解 PowerApps 中的变量
-如果你使用过其他编程工具（例如 Visual Basic 或 JavaScript），你可能会问：**变量在哪里？** PowerApps 稍有不同，需要不同的方法。 与其去获取变量，不妨问自己：**我会在 Excel 中做什么？**
+# <a name="understand-canvas-app-variables-in-powerapps"></a>了解 PowerApps 中的画布应用变量
+
+如果你使用过其他编程工具（例如 Visual Basic 或 JavaScript），你可能会问：**变量在哪里？** PowerApps 稍有不同，需要不同的方法。 与其在生成画布应用时使用变量，不如问自己：我会在 Excel 中执行哪些操作？
 
 在其他工具中，你可能会显式执行某个计算，然后将结果存储在变量中。 但是，PowerApps 和 Excel 都会在输入数据更改时自动重新计算公式，因此你通常不需要创建和更新变量。 尽可能使用这种方法，你就可以更轻松地创建、了解和维护应用。
 
@@ -26,6 +27,7 @@ ms.locfileid: "39017815"
 一般情况下，应避免使用变量。 但有时候，只有使用变量才能获得所需的体验。
 
 ## <a name="translate-excel-into-powerapps"></a>将 Excel 转换成 PowerApps
+
 ### <a name="excel"></a>Excel
 让我们回顾一下 Excel 的工作原理。 单元格可以包含值（例如数字或字符串），也可以包含公式（基于其他单元格的值）。 用户向单元格输入其他值以后，Excel 会自动根据新的值重新计算任何公式。 不需编程即可启用此行为。
 

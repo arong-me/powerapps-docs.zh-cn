@@ -1,6 +1,6 @@
 ---
 title: 适用于 Power BI 的 PowerApps 自定义视觉对象 | Microsoft Docs
-description: 有关嵌入使用相同数据源并可像 PowerBI 中其他报表项一样进行筛选的应用的步骤和限制
+description: 有关嵌入使用相同数据源并可像 PowerBI 中其他报表项一样进行筛选的画布应用的步骤和限制
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/15/2018
 ms.author: mblythe
-ms.openlocfilehash: 8e50763f11d04db4e9c8e0a6a6ae8ff316bc185a
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 0da480a482415ad174f10204f14f31adbd3607f2
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015883"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469985"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>适用于 Power BI 的 PowerApps 自定义视觉对象
 
-借助 Power BI 可获取数据见解，更好地制定决策，同时每个人都可以借助 PowerApps 生成并使用可连接到业务数据的应用。 使用 PowerApps 自定义视觉对象，可以将上下文感知的数据传递到 PowerApps 应用，当对报表进行更改时，这些数据会相应实时更新。 现在，应用用户可直接通过 Power BI 报表和仪表板获取业务见解并相应采取行动。
+借助 Power BI 可获取数据见解，更好地制定决策，同时每个人都可以借助 PowerApps 生成并使用可连接到业务数据的应用。 使用 PowerApps 自定义视觉对象，可以将上下文感知的数据传递到画布应用，当对报表进行更改时，这些数据会相应实时更新。 现在，应用用户可直接通过 Power BI 报表和仪表板获取业务见解并相应采取行动。
 
 ## <a name="using-the-powerapps-custom-visual"></a>使用 PowerApps 自定义视觉对象
 

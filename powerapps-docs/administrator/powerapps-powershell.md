@@ -2,28 +2,28 @@
 title: PowerShell 支持（预览版）| Microsoft Docs
 description: 介绍不同的 PowerShell cmdlet，并演练如何安装和运行。
 author: jamesol-msft
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 05/23/2018
+ms.date: 07/31/2018
 ms.author: jamesol
-ms.openlocfilehash: b6ee687fdfe6da8550d76193a7c9219aae5ae291
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+ms.openlocfilehash: e45b23d4efc474bcd48069b9823d1ef80cf5ea4a
+ms.sourcegitcommit: a0a8782d3c8d24cecf0796d405a61f745f0ffd91
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218823"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39367606"
 ---
 # <a name="powershell-support-for-powerapps-preview"></a>对 PowerApps 的 PowerShell 支持（预览版）
-随着面向应用创建者和管理员的 PowerShell cmdlet 预览版的推出，可以在 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 或 [PowerApps 管理中心](https://admin.powerapps.com)自动执行许多目前只能手动进行的监视和管理任务。
+随着面向应用创建者和管理员的 PowerShell cmdlet 预览版的推出，可以在 [PowerApps](https://web.powerapps.com) 或 [PowerApps 管理中心](https://admin.powerapps.com)自动执行许多目前只能手动进行的监视和管理任务。
 
 ## <a name="installation"></a>安装
 若要运行应用创建者 PowerShell cmdlet，请执行以下操作：
 
 1. 下载 [PowerShell 脚本文件](https://go.microsoft.com/fwlink/?linkid=2006349)。
 
-2. 将文件解压缩到文件夹。 
+2. 将文件解压缩到文件夹。
 
 3. 在此相同文件夹中，打开 PowerShell 命令窗口（以管理员身份）。
 
@@ -71,7 +71,7 @@ ms.locfileid: "39218823"
 | 用途 | cmdlet |
 | --- | --- |
 | 读取环境 | Get-PowerAppEnvironment *（以前称为 Get-PowerAppsEnvironment）* <br> Get-FlowEnvironment
-| 读取、更新和删除画布应用 | Get-App <br> Remove-App <br> Publish-App <br> Set-AppDisplayName <br> Get-AppVersion <br> Restore-AppVersion
+| 读取、更新和删除画布应用 | Get-PowerApp（以前称为 Get-App） <br> Remove-PowerApp（以前称为 Remove-App） <br> Publish-PowerApp（以前称为 Publish-App） <br> Set-AppDisplayName（以前称为 Set-PowerAppDisplayName）<br> Get-PowerAppVersion（以前称为 Get-AppVersion） <br> Restore-PowerAppVersion（以前称为 Restore-AppVersion）
 | 读取、更新和删除画布应用权限 | Get-PowerAppRoleAssignment *（以前称为 Get-AppRoleAssignment）* <br> Set-PowerAppRoleAssignment *（以前称为 Set-AppRoleAssignment）* <br> Remove-PowerAppRoleAssignment *（以前称为 Remove-AppRoleAssignment）*
 | 读取、更新和删除流 | Get-Flow <br> Get-FlowRun <br> Enable-Flow <br> Disable-Flow <br> Remove-Flow
 | 读取、更新和删除流权限 | Get-FlowOwnerRole <br> Set-FlowOwnerRole <br> Remove-FlowOwnerRole
@@ -122,9 +122,9 @@ ms.locfileid: "39218823"
 > [!NOTE]
 > 使用以下命令了解语法并查看每个 cmdlet 的示例：
 >```
->Get-Help Get-AdminEnvironment
->Get-Help Get-AdminEnvironment -Examples
->Get-Help Get-AdminEnvironment -Detailed
+>Get-Help Get-AdminPowerAppEnvironment
+>Get-Help Get-AdminPowerAppEnvironment -Examples
+>Get-Help Get-AdminPowerAppEnvironment -Detailed
 >```
 
 ## <a name="questions"></a>有疑问？

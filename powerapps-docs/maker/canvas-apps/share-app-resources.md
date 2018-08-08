@@ -1,6 +1,6 @@
 ---
-title: 共享应用中使用的资源 | Microsoft 文档
-description: 了解在共享应用时如何共享应用中使用的资源
+title: 共享画布应用中使用的资源 | Microsoft Docs
+description: 了解如何共享画布应用在 PowerApps 中使用的资源
 author: archnair
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/28/2016
 ms.author: archanan
-ms.openlocfilehash: 09d4f26139ae33195c666a2eb71d70e02b035f69
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 881a0eb85d252131d6249c171c95c0711e4887d4
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39194868"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471388"
 ---
-# <a name="share-app-resources"></a>共享应用资源
-[共享应用](share-app.md)前，先考虑应用依赖的资源类型，如以下一个或多个资源类型：
+# <a name="share-canvas-app-resources-in-powerapps"></a>共享 PowerApps 中的画布应用资源
+
+[共享画布应用](share-app.md)前，先考虑应用依赖的资源类型，例如以下一个或多个资源类型：
 
 * 到数据源的连接
 * 本地数据网关
@@ -30,6 +31,7 @@ ms.locfileid: "39194868"
 还可以与整个组织共享连接、自定义连接器和本地数据网关。
 
 ## <a name="connections"></a>连接
+
 某些类型的连接（如 SQL Server）会自动共享，而其他类型的连接则需用户自行创建到应用中的数据源或源的连接。
 
 在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，可以确定某个连接是否会自动共享，并可更新共享权限。 在左侧导航栏中，依次单击或点击“**管理**”、“**连接**”，然后单击或点击一个连接。 如果出现“**共享**”选项卡，则连接将自动共享。

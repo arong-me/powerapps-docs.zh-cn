@@ -1,6 +1,6 @@
 ---
-title: 将多媒体文件嵌入应用并将其上传 | Microsoft 文档
-description: 在应用中显示多媒体文件并将其上载到数据源
+title: 将多媒体文件嵌入画布应用并将其上传 | Microsoft Docs
+description: 在画布应用中显示多媒体文件并将其上传到数据源
 author: karthik-1
 manager: kvivek
 ms.service: powerapps
@@ -9,20 +9,23 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/12/2017
 ms.author: sharik
-ms.openlocfilehash: 5c6c7b2973f85c1ebc3040e41d83653250599717
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 1b0c830dd5d0fb625bc8ac407bda47023036ed7f
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195004"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470169"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>在 PowerApps 中使用多媒体文件
-本主题介绍如何在应用中嵌入多媒体文件、将笔绘作品上载到数据源，然后在应用中显示该数据源中的图像。 本主题使用的数据源是 OneDrive for Business 中的一个 Excel 文件。
+
+本主题介绍如何在画布应用中嵌入多媒体文件、将笔绘作品上载到数据源，然后在画布应用中显示该数据源中的图像。 本主题使用的数据源是 OneDrive for Business 中的一个 Excel 文件。
 
 ## <a name="prerequisites"></a>先决条件
+
 [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 ## <a name="add-media-from-a-file-or-the-cloud"></a>从文件或云添加媒体
+
 可以选择要添加的媒体文件类型（例如图像、视频或音频）。
 
 1. 在“内容”选项卡中选择“媒体”。

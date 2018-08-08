@@ -1,6 +1,6 @@
 ---
-title: 让客户在 AppSource 上体验你的应用 | Microsoft 文档
-description: 使用 AppSource 与客户共享应用，为你的企业带来新的潜在客户。
+title: 让客户在 AppSource 上体验画布应用 | Microsoft Docs
+description: 使用 AppSource 与客户共享画布应用，为你的企业带来新的潜在客户。
 author: linhtranms
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 05/08/2017
 ms.author: litran
-ms.openlocfilehash: fb51ab2c671d695350e452dc6fb29efa583adfea
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 6499c0c2a7eb87ff56ec9e248f4a16e8b6c647f9
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023680"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470537"
 ---
-# <a name="let-customers-test-drive-your-apps-on-appsource"></a>让客户在 AppSource 上体验你的应用
-是否热衷于在 PowerApps 中生成应用？ 是否有应用要与客户共享？ [AppSource.com](https://appsource.microsoft.com) 现在支持 PowerApps 体验版解决方案，以便你可以与客户共享应用，为你的企业带来新的潜在客户。
+# <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>让客户在 AppSource 上体验画布应用
+
+是否热衷于在 PowerApps 中生成画布应用？ 是否想要与客户共享画布应用？ [AppSource.com](https://appsource.microsoft.com) 支持 PowerApps 体验版解决方案，该解决方案可让你与客户共享应用，为你的企业带来新的潜在客户。
 
 ## <a name="what-is-a-test-drive-solution"></a>什么是体验版解决方案？
+
 借助体验版解决方案，客户无需注册 PowerApps 计划或安装任何应用，即可试用实际应用。 客户只需使用 Azure Active Directory (AAD) 帐户登录 AppSource.com，即可在 Web 浏览器中运行应用。 如果没有体验版解决方案，客户就只能阅读应用相关信息或观看应用介绍视频。 借助体验版解决方案，客户可以更好地了解你的解决方案以及你的应用有哪些功能。 同时，还能获得应用的实际使用体验。 客户无法了解应用的内在工作原理，因此你的知识产权是受到保护的。 我们会收集并共享启动体验版应用的用户的潜在客户信息，从而帮助你拓展业务。
 
 下面的示例展示了 AppSource.com 上的[应用列表](https://go.microsoft.com/fwlink/?linkid=848867)：

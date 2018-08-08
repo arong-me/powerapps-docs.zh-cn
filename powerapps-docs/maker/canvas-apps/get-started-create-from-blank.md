@@ -1,5 +1,6 @@
 ---
-title: 从头开始创建 Excel 应用 | Microsoft Docs
+title: 基于 Excel 数据从头开始创建画布应用 | Microsoft Docs
+description: 在本教程中，将创建两屏画布应用，以便用户可以在 Excel 文件中创建、编辑和删除记录。
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -8,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 04/23/2018
 ms.author: anneta
-ms.openlocfilehash: 330751210322190fddefb6c399025578bb9878b5
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: dafd6e4aafdc8f4709d25b9de8e6b997665c3d4a
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195280"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469835"
 ---
-# <a name="create-an-excel-app-from-scratch"></a>从头开始创建 Excel 应用
-基于 Excel 数据从头开始创建你自己的应用，将其格式化为表格，然后从其他源添加数据（如果需要）。 按照本教程中的步骤进行操作，可以创建包含两个屏幕的应用。 在一个屏幕上，用户可以浏览一组记录。 在另一个屏幕上，用户可以创建记录、更新记录中的一个或多个字段，或删除整条记录。 与[自动生成应用](get-started-create-from-data.md)相比，此方法耗费的时间要多得多，但有经验的应用创作者可以使用它根据需要生成最佳应用。
+# <a name="create-an-canvas-app-from-scratch-based-on-excel-data"></a>基于 Excel 数据从头开始创建画布应用
+
+基于 Exceld 数据从头开始创建你自己的画布应用，将其格式化为表格，然后从其他源添加数据（如果需要）。 按照本教程中的步骤进行操作，可以创建包含两个屏幕的应用。 在一个屏幕上，用户可以浏览一组记录。 在另一个屏幕上，用户可以创建记录、更新记录中的一个或多个字段，或删除整条记录。 与[自动生成应用](get-started-create-from-data.md)相比，此方法耗费的时间要多得多，但有经验的应用创作者可以使用它根据需要生成最佳应用。
 
 ## <a name="prerequisites"></a>先决条件
+
 要完全按照本教程中的步骤执行，请首先使用此示例数据创建 Excel 文件。
 
 1. 复制此数据，并将其粘贴到 Excel 文件中。

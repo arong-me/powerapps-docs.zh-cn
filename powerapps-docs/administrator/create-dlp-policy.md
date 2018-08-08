@@ -1,26 +1,26 @@
 ---
-title: 创建数据丢失防护 (DLP) 策略的快速入门 | Microsoft Docs
+title: 创建数据丢失防护 (DLP) 策略 | Microsoft Docs
 description: 在本快速入门中，你将了解如何在 PowerApps 中创建数据丢失防护 (DLP) 策略
 author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/30/2018
-ms.author: jimh
-ms.openlocfilehash: da4be42ea0374d6cb50da2f9a9b17eef15d5b316
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.author: jimholtz
+ms.openlocfilehash: 49898aed97e2361704c88bcc1cd098a8fc0f101e
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552360"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349446"
 ---
-# <a name="quickstart-create-a-data-loss-prevention-dlp-policy"></a>快速入门：创建数据丢失防护 (DLP) 策略
+# <a name="create-a-data-loss-prevention-dlp-policy"></a>创建数据丢失防护 (DLP) 策略
 为了保护组织中的数据，PowerApps 允许创建和强制策略，该策略定义可以共享特定业务数据的客户连接器。 这些用于定义如何共享数据的策略称为数据丢失防护 (DLP) 策略。 DLP 策略确保整个组织的数据都以统一的方式管理，它们防止重要业务数据意外发布到连接器（例如社交媒体网站）。
 
-在本快速入门中，你将了解如何为单个环境创建 DLP 策略，该策略防止 Common Data Service 和 SharePoint 数据库中存储的数据发布到 Twitter。
+在本主题中，你将了解如何为单个环境创建 DLP 策略，该策略防止 Common Data Service 和 SharePoint 数据库中存储的数据发布到 Twitter。
 
 ## <a name="prerequisites"></a>先决条件
-若要跟随本快速入门教程操作，则需要以下项之一：
+要执行相关步骤，需要以下某项：
 * Azure Active Directory 租户管理员权限
 * Office 365 全局管理员权限
 * PowerApps 环境管理员权限以及 PowerApps 计划 2、Microsoft Flow 计划 2 或 [PowerApps 计划 2 试用版](https://web.powerapps.com/signup?redirect=marketing&email=)许可证
@@ -41,7 +41,7 @@ ms.locfileid: "34552360"
 
     ![](./media/create-dlp-policy/select-environment.png)
 
-    如果你是租户管理员，则可创建应用于一个或多个环境或租户内所有环境（包括使用试用许可证创建的环境）的 DLP 策略。 对于此快速入门教程，请单击或点击“仅应用于选定环境”，从下拉列表中选择一个环境，然后单击或点击“继续”。
+    如果你是租户管理员，则可创建应用于一个或多个环境或租户内所有环境（包括使用试用许可证创建的环境）的 DLP 策略。 对于本主题，请单击或点击“仅应用于选定环境”，从下拉列表中选择一个环境，然后单击或点击“继续”。
 
     ![](./media/create-dlp-policy/select-environment-tenant.png)
 
@@ -64,7 +64,7 @@ Contoso 安全数据访问策略创建并显示在数据丢失防护策略列表
 这是一种管理员与组织共享 DLP 策略列表使得用户在创建应用前注意策略的好方法。
 
 ## <a name="next-steps"></a>后续步骤
-在本快速入门中，你学习了如何为单个环境创建 DLP 策略防止重要业务熟悉意外发布到 Twitter 等连接器。 若要了解有关 DLP 策略的详细信息，请查看有关如何管理它们的文章。
+在本主题中，你了解了如何为单个环境创建 DLP 策略防止重要业务熟悉意外发布到 Twitter 等连接器。 若要了解有关 DLP 策略的详细信息，请查看有关如何管理它们的文章。
 
 > [!div class="nextstepaction"]
 > [管理数据丢失防护 (DLP) 策略](prevent-data-loss.md)

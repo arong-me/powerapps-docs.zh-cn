@@ -1,6 +1,6 @@
 ---
-title: 使用 Common Data Service for Apps 从头创建应用 | Microsoft Docs
-description: 创建用于添加、更新和删除记录的应用。
+title: 使用 Common Data Service for Apps 从头创建画布应用 | Microsoft Docs
+description: 在 PowerApps 中，创建一个画布应用，以在 Common Data Service for Apps 中添加、更新和删除记录。
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: b7506ff3380855c6e3c51b22918366dde9c8549c
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: df2ed422cdfbaf8689dae7c8f3e6b54eba093b74
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195119"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471342"
 ---
-# <a name="create-an-app-from-scratch-using-common-data-service-for-apps"></a>使用 Common Data Service for Apps 从头创建应用
+# <a name="create-a-canvas-app-from-scratch-using-common-data-service-for-apps"></a>使用 Common Data Service for Apps 从头创建画布应用
 
-生成一个应用，以使用（内置的）标准实体和/或（组织创建的）自定义实体来管理 Common Data Service for Apps 中存储的数据。
+生成一个画布应用，以使用（内置的）标准实体和/或（组织创建的）自定义实体来管理 Common Data Service for Apps 中存储的数据。
 
 使用 Common Data Service 生成应用时，无需从 PowerApps 建立连接，而处理 SharePoint、Dynamics 365 或 Salesforce 等数据源时则需要这样做。 只需指定要显示、管理或在应用中用于这两种活动的实体即可。
 

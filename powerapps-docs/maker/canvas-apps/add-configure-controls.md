@@ -1,6 +1,6 @@
 ---
-title: 添加和配置控件 | Microsoft 文档
-description: 有关直接在“属性”选项卡的工具栏或编辑栏中添加和配置控件的分步说明。
+title: 添加和配置画布应用控件 | Microsoft Docs
+description: 有关直接在“属性”选项卡的工具栏或编辑栏中添加和配置画布应用控件的分步说明。
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/10/2017
 ms.author: anneta
-ms.openlocfilehash: 24f0479db0707e667263f5b160d6785560fe604b
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: dca3ec23b436f96013e9f5102c8b63c6c7d44935
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195579"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470353"
 ---
-# <a name="add-and-configure-a-control-in-powerapps"></a>在 PowerApps 中添加和配置控件
-将各种 UI 元素添加到应用中，然后直接在“属性”选项卡的工具栏或编辑栏中配置其各方面外观和行为。 这些 UI 元素称为“控件”，配置的各方面外观和行为称为“属性”。
+# <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>在 PowerApps 中添加和配置画布应用控件
+
+将各种 UI 元素添加到画布应用中，然后直接在“属性”选项卡的工具栏或编辑栏中配置其各方面外观和行为。 这些 UI 元素称为“控件”，配置的各方面外观和行为称为“属性”。
 
 ## <a name="prerequisites"></a>先决条件
+
 1. [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 2. 在 PowerApps Studio 中，单击或点击左边缘附近的“文件”菜单上的“新建”。

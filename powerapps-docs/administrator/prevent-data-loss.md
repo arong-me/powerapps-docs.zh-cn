@@ -2,25 +2,25 @@
 title: 管理数据丢失防护 (DLP) 策略 | Microsoft Docs
 description: 管理 PowerApps 数据丢失防护策略的演示。
 author: manasmams
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 158abc3969090e081df41b6b52036d71b6949150
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 81117e352f3ad5131572cff2a61117042f47df38
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445697"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349400"
 ---
 # <a name="manage-data-loss-prevention-dlp-policies"></a>管理数据丢失防护 (DLP) 策略
 组织的数据是取得成功的关键所在。 其数据需要随时可用于决策，但必须受到保护，避免与无权访问这些数据的受众共享。 为了保护此数据，PowerApps 允许创建和强制执行数据丢失防护 (DLP) 策略，该策略定义可以共享特定业务数据的客户连接器。 例如，使用 PowerApps 的组织可能不希望其存储在 SharePoint 中的业务数据自动发布到其 Twitter 源。
 
 若要创建、编辑或删除 DLP 策略，必须有“环境管理员”或“Azure Active Directory 租户管理员”权限。 有关详细信息，请参阅 [PowerApps 中的环境管理](environments-administration.md)。
 
-有关如何创建 DLP 策略的说明，请参阅[快速入门：创建数据丢失防护 (DLP) 策略](create-dlp-policy.md)。
+有关如何创建 DLP 策略的说明，请参阅[创建数据丢失防护 (DLP) 策略](create-dlp-policy.md)。
 
 ## <a name="find-a-dlp-policy"></a>查找 DLP 策略
 1. 在 [https://admin.powerapps.com]([https://admin.powerapps.com) 上登录到管理中心。

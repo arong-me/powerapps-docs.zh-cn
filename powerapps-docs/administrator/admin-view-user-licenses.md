@@ -1,25 +1,25 @@
 ---
-title: 有关下载租户中活动用户列表的快速入门 | Microsoft Docs
+title: 下载租户中活动用户的列表 | Microsoft Docs
 description: 本快速入门教程介绍如何下载租户中活动用户的列表
 author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
-ms.author: jimh
-ms.openlocfilehash: 1488b0231009ef3dd3b0b93e21a14a61f3d1c3cd
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.author: jimholtz
+ms.openlocfilehash: e2c00f4ab10b2dc6cecc63d9539ffcf86a5bfcb8
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552475"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39348848"
 ---
-# <a name="quickstart-download-a-list-of-active-users-in-your-tenant"></a>快速入门：下载租户中活动用户的列表
+# <a name="download-a-list-of-active-users-in-your-tenant"></a>下载租户中活动用户的列表
 若为 365 全局管理员或 Azure Active Directory 租户管理员，可以下载租户中活跃用户的列表，这样不仅能确定谁访问过 PowerApps 和/或 Microsoft Flow，还能查看分配给这些用户的许可证。
 
-本快速入门教程介绍如何将活动用户列表下载到 .csv 文件，然后在 Excel 中查看该列表。
+在本主题中，你将了解如何将活动用户列表下载到 .csv 文件，然后在 Excel 中查看该列表。
 
-要按照此本快速入门教程操作，需具有 Office 365 全局管理员或 Azure Active Directory 租户管理员权限。
+要执行文中操作，需具有 Office 365 全局管理员或 Azure Active Directory 租户管理员权限。
 
 ## <a name="sign-in-to-the-powerapps-admin-center"></a>登录到 PowerApps 管理中心
 在 [https://admin.powerapps.com]([https://admin.powerapps.com) 上登录到管理中心。
@@ -45,7 +45,7 @@ ms.locfileid: "34552475"
 若要添加用户许可证，请打开 [Office 365 管理中心](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)。
 
 ## <a name="next-steps"></a>后续步骤
-在本快速入门教程中，将学习如何下载并查看租户中的活动用户列表。 要了解如何下载并查看环境中创建的应用的列表，请继续学习下一个快速入门教程。
+在本主题中，你了解了如何下载并查看租户中的活动用户列表。 要了解如何下载并查看环境中创建的应用的列表，请继续了解下一个主题。
 
 > [!div class="nextstepaction"]
 > [下载在环境中创建的应用的列表](admin-view-apps.md)

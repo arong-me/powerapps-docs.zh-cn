@@ -1,6 +1,6 @@
 ---
-title: 在 Power BI 报表中嵌入新应用 | Microsoft Docs
-description: 嵌入一个使用相同数据源并且可以像其他报表项一样进行筛选的应用
+title: 在 Power BI 报表中嵌入新的画布应用 | Microsoft Docs
+description: 嵌入一个使用相同数据源并且可以像其他报表项一样进行筛选的新画布应用
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/15/2018
 ms.author: mblythe
-ms.openlocfilehash: 05fe624be450dfcce0d16ae2f178c86ddf361201
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a5239a5d7ca1600b281558461f2a08969cabb633
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018666"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470951"
 ---
-# <a name="tutorial-embed-a-new-app-in-a-power-bi-report"></a>教程：在 Power BI 报表中嵌入新应用
+# <a name="embed-a-new-canvas-app-in-a-power-bi-report"></a>在 Power BI 报表中嵌入新的画布应用
 
-使用 Power BI 时可扩展其功能，方法是向报表添加“自定义视觉对象”。 本教程使用 PowerApps 自定义视觉对象，创建可嵌入到示例报表中的新应用。 此应用可与报表中的其他项进行交互。
+使用 Power BI 时可扩展其功能，方法是向报表添加“自定义视觉对象”。 本教程使用 PowerApps 自定义视觉对象，创建可嵌入到示例报表中的画布应用。 此应用可与报表中的其他项进行交互。
 
 如果没有 PowerApps 订阅，请在开始之前先创建一个[免费帐户](../signup-for-powerapps.md)。
 

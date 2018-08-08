@@ -1,6 +1,6 @@
 ---
-title: 安装和配置支出报表 PowerApps 示例 | Microsoft Docs
-description: 安装和配置支出报表 PowerApps 示例的分步说明。
+title: 安装和配置画布应用的零用金报销单示例 | Microsoft Docs
+description: 在 PowerApps 中安装和配置画布应用的零用金报销单示例的分步说明。
 author: caburk
 manager: kvivek
 ms.service: powerapps
@@ -9,24 +9,25 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: aca695c8c2ae90e0d5d843dcb0dfb562cbef5a05
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: f0fc0d9407511730145002bf109957b0878398bc
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195717"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470031"
 ---
-# <a name="install-and-configure-the-expense-report-powerapps-sample"></a>安装和配置支出报表 PowerApps 示例
+# <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>在 PowerApps 中安装和配置画布应用的零用金报销单示例
 
-安装和配置支出报表 PowerApps 示例的分步说明。
+安装和配置零用金报销单示例的分步说明。
 
 完成以下步骤的估计时间：10-15 分钟
 
-如果希望查看此流程的演示，请观看此视频。
+有关此过程的演示，请观看此视频。
 
-[![支出报表安装视频](./media/expense-report-install/expense-report-install-video.png)](https://youtu.be/DOR28V5kCkw)
+[![零用金报销单安装视频](./media/expense-report-install/expense-report-install-video.png)](https://youtu.be/DOR28V5kCkw)
 
-## <a name="expense-report-powerapps-sample-overview"></a>支出报表 PowerApps 示例概述
+## <a name="overview-of-the-sample"></a>示例概述
+
 跟踪费用报销单从提交到审批的整个过程。 将行项统计为应计个人支出，并在准备就绪后提交审批。 要拥有此应用，需完成少量设置。
 
 ![支出报表 PowerApp 的打开屏幕](./media/expense-report-install/expense-report-powerapp.png)

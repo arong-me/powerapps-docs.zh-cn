@@ -1,6 +1,6 @@
 ---
-title: 快速入门：通过 SharePoint 在 PowerApps 中生成应用 | Microsoft Docs
-description: 在 PowerApps 中自动生成管理 SharePoint 列表数据的应用
+title: 通过 SharePoint 在 PowerApps 中生成画布应用 | Microsoft Docs
+description: 在 PowerApps 中自动生成可管理 SharePoint 列表数据的画布应用
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/12/2018
 ms.author: anneta
-ms.openlocfilehash: fd3e1e293b3c10b25351ba3958af46b887447e26
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: cb68c454053a36f49b72afa1718ca0d67ad364af
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195372"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469870"
 ---
-# <a name="quickstart-for-generating-an-app-in-powerapps-from-sharepoint"></a>快速入门：通过 SharePoint 在 PowerApps 中生成应用
+# <a name="generate-a-canvas-app-in-powerapps-from-sharepoint-data"></a>通过 SharePoint 数据在 PowerApps 中生成画布应用
 
-本快速入门教程介绍如何基于 SharePoint 中创建的列表使用 PowerApps 自动生成第一个应用。 在此应用中，可以浏览列表中的所有项、显示单个项的详细信息以及创建、更新或删除项。
+本主题介绍如何基于 SharePoint 中创建的列表使用 PowerApps 自动生成第一个画布应用。 在此应用中，可以浏览列表中的所有项、显示单个项的详细信息以及创建、更新或删除项。
 
 如果在 SharePoint 中拥有任何列表，可通过本快速入门教程了解相关概念和技术。 若要精确按照本快速入门教程操作，需要在 SharePoint Online 网站中创建一个名为“SimpleApp”的列表，其中包含名为“标题”的列。 在该列表中，创建“香草”、“巧克力”和“草莓”的条目。
 

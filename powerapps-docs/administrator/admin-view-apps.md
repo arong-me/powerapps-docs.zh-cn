@@ -1,26 +1,26 @@
 ---
-title: 下载环境中创建的应用列表的快速入门 | Microsoft Docs
+title: 下载环境中创建的应用列表 | Microsoft Docs
 description: 在本快速入门中，你将了解如何下载环境中创建的应用列表。
 author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
-ms.author: jimh
-ms.openlocfilehash: d9c379ca95bb299c56639bb01803f45c1744d8f2
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.author: jimholtz
+ms.openlocfilehash: f5bf3cd5e4fb6be96b8b1853390df1ee8f9bd027
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552590"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349814"
 ---
-# <a name="quickstart-download-a-list-of-apps-created-in-your-environments"></a>快速入门：下载环境中创建的应用列表
+# <a name="download-a-list-of-apps-created-in-your-environments"></a>下载在环境中创建的应用的列表
 如果你是环境管理员，那么你可以查看和下载你管理的环境中创建的应用列表。 如果你是 365 全局管理员或 Azure Active Directory 租户管理员，那么你可以查看和下载组织所有环境中创建的应用列表。
 
-在本快速入门中，你将了解如何将单个环境中创建的应用列表下载到 .csv 文件，接着如何在 Excel 中查看该列表。
+在本主题中，你将了解如何将单个环境中创建的应用列表下载到 .csv 文件，以及如何在 Excel 中查看该列表。
 
 ## <a name="prerequisites"></a>先决条件
- 若要按照本快速入门教程，则需要以下项目：
+ 要执行相关步骤，需要以下各项：
  * PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证。 此外，也可以注册 [PowerApps 计划 2 免费试用版](https://web.powerapps.com/signup?redirect=marketing&email=)。
  * PowerApps 环境管理员、Office 365 全局管理员或 Azure Active Directory 租户管理员权限。 有关详细信息，请参阅 [PowerApps 中的环境管理](environments-administration.md)。
 
@@ -43,7 +43,7 @@ ms.locfileid: "34552590"
 ![文件和共享](./media/admin-view-apps/excel-view.png)
 
 ## <a name="next-steps"></a>后续步骤
-在本快速入门中，你了解了如何下载和查看组织环境中创建的应用列表。 接下来，了解如何管理组织中创建的应用。
+在本主题中，你了解了如何下载和查看组织环境中创建的应用列表。 接下来，了解如何管理组织中创建的应用。
 
 > [!div class="nextstepaction"]
 > [管理组织中创建的应用](admin-manage-apps.md)

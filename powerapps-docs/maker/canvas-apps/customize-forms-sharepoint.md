@@ -1,6 +1,6 @@
 ---
-title: 自定义窗体 | Microsoft 文档
-description: 指定要显示哪些数据、以何种顺序显示以及在哪些控件中显示。
+title: 自定义画布应用中的窗体 | Microsoft Docs
+description: 在 PowerApps 中，指定画布应用窗体中要显示哪些数据、以何种顺序显示以及在哪些控件中显示。
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,24 +9,27 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/17/2018
 ms.author: anneta
-ms.openlocfilehash: aefe350c2294f9d8cbae32eee1db1f600c8a65da
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 14ea731907624f882ae117a09c7f799a25389fe6
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195096"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471434"
 ---
-# <a name="customize-forms-in-powerapps"></a>自定义 PowerApps 中的窗体
-自定义“显示窗体”控件和“编辑窗体”控件，以便它们以最直观的顺序显示最重要的数据，帮助用户轻松了解和更新数据。
+# <a name="customize-a-canvas-app-form-in-powerapps"></a>自定义 PowerApps 中的画布应用窗体
+
+在画布应用中，自定义“显示窗体”控件和“编辑窗体”控件，以便它们以最直观的顺序显示最重要的数据，帮助用户轻松了解和更新数据。
 
 每个窗体包含一个或多个卡，其中每个卡均可显示数据源中特定列的数据。 按照本主题中的步骤操作，可以指定在窗体中显示的卡并在窗体中上下移动卡。
 
 如果不熟悉 PowerApps，请参阅 [PowerApps 简介](getting-started.md)。
 
 ## <a name="prerequisites"></a>先决条件
+
 从 Common Data Service [生成应用](data-platform-create-app.md)，然后在该应用中[自定义库](customize-layout-sharepoint.md)。
 
 ## <a name="show-and-hide-cards"></a>显示和隐藏卡
+
 1. 登录 [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
     ![PowerApps 站点的主页](./media/customize-forms-sharepoint/sign-in.png)

@@ -1,6 +1,6 @@
 ---
-title: 显示文本或设置日期或时间格式 | Microsoft 文档
-description: 使用 PowerApps 添加日期和时间以及设置其格式
+title: 在画布应用中显示文本、日期和时间 | Microsoft Docs
+description: 在 PowerApps 的画布应用中显示文本、日期和时间
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,15 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/16/2016
 ms.author: anneta
-ms.openlocfilehash: d6f88534b4839381037243400ef69f292df8fb97
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 8f4bf8908b8e83fe5976a52356db163cbb3a9813
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195694"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470675"
 ---
-# <a name="show-text-and-format-dates-and-times-in-powerapps"></a>在 PowerApps 中显示文本以及设置日期和时间格式
-添加日期和时间，然后设置其格式，以便显示正确级别的详细信息，或者让其反映你的区域设置。 计算两个日期相差多少时间，或者计算一个日期，该日期比指定的日期早或晚一定的时间。 将日期转换成按年、月、日表示的不同值（或者反过来），以及将时间转换成按小时、分钟、秒表示的不同值（或者反过来）。
+# <a name="show-text-dates-and-times-in-powerapps"></a>在 PowerApps 中显示文本、日期和时间
+在 PowerApps 中向画布应用添加日期和时间，然后设置其格式，以显示正确级别的详细信息，或者让其反映你的区域设置。 计算两个日期相差多少时间，或者计算一个日期，该日期比指定的日期早或晚一定的时间。 将日期转换成按年、月、日表示的不同值（或者反过来），以及将时间转换成按小时、分钟、秒表示的不同值（或者反过来）。
 
 例如，添加用户提供的有关股票交易或客户会议的数据、添加外部源提供的数据，或者添加在 PowerApps 中创建的另一应用提供的数据。 如果该数据包含的时间为毫秒级，则为了简单起见，可将其舍入为最接近的分钟。 计算还有多少天会发生重大事件。 如果需要每隔五天安排一次客户会议，可自动计算相关日期。 如果“1985 年 5 月 10 日”是按年、月、日存储在不同的字段中，可将其合并为一个值。 也可反过来将每个日期拆分成不同的值（如果应用是对其分别进行管理的）。
 

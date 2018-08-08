@@ -1,6 +1,6 @@
 ---
-title: 在应用中添加数据连接 | Microsoft 文档
-description: 在现有应用或空白应用中添加数据连接
+title: 在画布应用中添加数据连接 | Microsoft Docs
+description: 在现有画布应用或空白应用中添加数据连接
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/06/2018
 ms.author: lanced
-ms.openlocfilehash: 471f4b69b913236d99e6309c8b8bb4e12f85a7b9
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: bf53c71a5dfbbfecbf6a094f26c9866e7f94f84d
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195027"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471043"
 ---
-# <a name="add-a-data-connection-in-powerapps"></a>在 PowerApps 中添加数据连接
-在 PowerApps 中，向现有应用或从头开始生成的应用添加数据连接。 应用可以连接到 SharePoint、Salesforce、OneDrive 或[许多其他数据源](connections-list.md)。
+# <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>在 PowerApps 中向画布应用添加数据连接
+
+在 PowerApps 中，向现有画布应用或从头开始生成的应用添加数据连接。 应用可以连接到 SharePoint、Salesforce、OneDrive 或[许多其他数据源](connections-list.md)。
 
 阅读完本文的[后续步骤](#next-steps)是，在应用中显示和管理相应数据源中的数据，如下面这些示例所述：
 
@@ -26,6 +27,7 @@ ms.locfileid: "39195027"
 * 连接 SQL Server，然后通过应用更新表。
 
 ## <a name="prerequisites"></a>先决条件
+
 [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 ## <a name="add-a-data-source"></a>添加数据源

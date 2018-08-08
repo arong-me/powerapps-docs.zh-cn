@@ -1,6 +1,6 @@
 ---
-title: 从 SharePoint 中生成应用 | Microsoft 文档
-description: 无论站点是在本地还是在云中，都可以生成三屏应用来管理 SharePoint 列表中的项。
+title: 从 SharePoint 列表中生成画布应用 | Microsoft Docs
+description: 无论站点是在本地还是在云中，都可以生成三屏画布应用来管理 SharePoint 列表中的项。
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 46cf610351cf00d8d947c4006c31a3d5971951d0
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 9230c96c1b1c5e07ea5129f73a8edd95772aad84
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022442"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471411"
 ---
-# <a name="generate-an-app-from-within-sharepoint-using-powerapps"></a>使用 PowerApps 从 SharePoint 中生成应用
+# <a name="generate-a-canvas-app-from-within-sharepoint-by-using-powerapps"></a>使用 PowerApps 从 SharePoint 中生成画布应用
 
-在 PowerApps 中自动生成应用，以便用户管理自定义 SharePoint Online 列表中的项。 应用将有三个屏幕，用户可以在其中执行以下操作：
+在 PowerApps 中自动生成画布应用，以便用户管理自定义 SharePoint Online 列表中的项。 应用将有三个屏幕，用户可以在其中执行以下操作：
 
 * 浏览列表中的所有记录 (**BrowseScreen1**)
 * 查看特定记录的所有字段 (**DetailsScreen1**)
