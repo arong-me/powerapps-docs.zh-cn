@@ -10,10 +10,10 @@ ms.reviewer: anneta
 ms.date: 09/13/2017
 ms.author: fikaradz
 ms.openlocfilehash: 30e2b07a95c326b897e5b3386d888f3537db85fd
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39015653"
 ---
 # <a name="combo-box-control-in-powerapps"></a>PowerApps 中的组合框控件
@@ -98,7 +98,7 @@ ms.locfileid: "39015653"
 * ChevronFill 和 ChevronBackground
 * ChevronHoverFill 和 ChevronHoverBackground
 * SelectionColor 和 SelectionFill
-* **SelectionFill** 和 **[Fill](properties-color-border.md)**
+* SelectionFill 和 **[Fill](properties-color-border.md)**
 * SelectionTagColor 和 SelectionTagFill
 
 这是除[标准颜色对比度](../accessible-apps-color.md)以外的要求。
@@ -111,7 +111,7 @@ ms.locfileid: "39015653"
 
 ### <a name="keyboard-support"></a>键盘支持
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
+* 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness](properties-color-border.md)**”来实现此目的。
 
     > [!NOTE]
   > Tab 键可导航到组合框或离开组合框。 箭头键可导航组合框中的内容。 Esc 键在打开时会关闭下拉列表。
