@@ -129,7 +129,7 @@ ms.locfileid: "39022691"
 1. 添加一个计时器，并将其命名为 **FadeIn**。
 
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
-2. 将计时器的 **“Duration”** 属性设置为 **“5000”**，将其 **“Repeat”** 属性设置为 **“true”**，并将其**[“Text”](properties-core.md)** 属性设置为“切换动画”。
+2. 将计时器的 **“Duration”** 属性设置为 **“5000”**，将其 **“Repeat”** 属性设置为 **“true”**，并将其 **[“Text”](properties-core.md)** 属性设置为“切换动画”。
 3. （可选）通过以下方法可使计时器更易于读取：将其 **[Height](properties-size-location.md)** 属性设置为 **160**，**[Width](properties-size-location.md)** 属性设置为 **600**，并将其 **[Size](properties-text.md)** 属性设置为 **60**。
 4. 添加一个标签，然后将“[Text](properties-core.md)”属性设置为显示“Welcome!” 并将其 **[Color](properties-color-border.md)** 属性设置为以下公式：
    <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
