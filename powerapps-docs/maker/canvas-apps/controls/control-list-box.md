@@ -127,7 +127,7 @@ ms.locfileid: "39016573"
    
     ![列表框中的地板类别](./media/control-list-box/category-listbox.png)
 2. 添加三个**[下拉](control-drop-down.md)** 控件，将它们移动到“CategoryList”下，并分别命名为“CarpetList”、“HardwoodList”和“TileList”。
-3. 将每个**[下拉](control-drop-down.md)** 控件的  **[Items](properties-core.md)** 属性设置为以下值之一：
+3. 将每个**[下拉](control-drop-down.md)** 控件的 **[Items](properties-core.md)** 属性设置为以下值之一：
    
    * CarpetList：**["Caserta Stone Beige","Ageless Beauty Clay", "Lush II Tundra"]**
    * HardwoodList：**["Golden Teak","Natural Hickory", "Victoria Mahogany"]**
