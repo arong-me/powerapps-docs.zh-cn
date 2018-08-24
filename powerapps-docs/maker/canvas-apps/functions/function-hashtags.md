@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: c2b4cff0cc9d579cd76dad97a3ab1b160f4089ea
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+ms.openlocfilehash: 66fad5a1afd9086bf07da88a93ac68b756dfb3d6
+ms.sourcegitcommit: 521a7b8e6ae72a211045b54d153a8a8c8f59172e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39022047"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40021309"
 ---
 # <a name="hashtags-function-in-powerapps"></a>PowerApps 中的 HashTags 函数
 从文本字符串中提取井号标签 (#strings)。
@@ -36,9 +36,9 @@ ms.locfileid: "39022047"
 
 ## <a name="examples"></a>示例
 ### <a name="step-by-step"></a>分步操作
-1. 添加“[文本输入](../controls/control-text-input.md)”控件，将它命名为“Tweet”，然后在其中键入下面这句话：
+1. 添加“[文本输入](../controls/control-text-input.md)”控件，将它命名为 **“Tweet”**，然后在其中键入下面这句话：
    
-    **This #app is #AMAZING and can #coUnt123 or #123abc but not #1-23 or #$\*(#@")**
+    **This #app is #AMAZING and can #coUnt123 or #123abc but not #1-23 or #$\*(#\@")**
 2. 添加垂直自定义库，并将其 **[Items](../controls/properties-core.md)** 属性设置为此函数：
    
     **HashTags(Tweet.Text)**

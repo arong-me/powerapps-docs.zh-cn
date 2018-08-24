@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: 9035809f989ad4b0215d4a8eba5d693d145b7f66
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+ms.openlocfilehash: 9f02b752444153681e30b39c3fa9d8a8b9e0cd6d
+ms.sourcegitcommit: 521a7b8e6ae72a211045b54d153a8a8c8f59172e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39471204"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40021378"
 ---
 # <a name="develop-offline-capable-canvas-apps-with-powerapps"></a>使用 PowerApps 开发可脱机运行的画布应用
 
@@ -39,7 +39,7 @@ PowerApps 最有趣的方面之一是，它提供一系列功能和公式，以�
 
 粗略来看，此应用执行以下操作：
 
-1. 当此应用启动时（以第一屏幕的“OnVisible”属性为依据）：
+1. 当此应用启动时（以第一屏幕的 **“OnVisible”** 属性为依据）：
 
    * 如果设备处于联机状态，我们会直接访问 Twitter 连接器来提取数据，然后在集合中填充这些数据。
    * 如果设备处于脱机状态，我们会使用 [LoadData](../canvas-apps/functions/function-savedata-loaddata.md) 从本地缓存文件加载数据。
@@ -59,14 +59,14 @@ PowerApps 最有趣的方面之一是，它提供一系列功能和公式，以�
 
 1. 依次单击或点击“内容” > “数据源”，然后选择“数据源”面板上的“添加数据源”。
 
-2. 单击或点击“新建连接”，选择“Twitter”，然后单击或点击“创建”。
+2. 单击或点击“新建连接”，选择 **“Twitter”**，然后单击或点击“创建”。
 
 3. 输入凭据，然后创建连接。
 
     ![添加 Twitter 连接](./media/offline-apps/twitter-connection.png)
 
 ### <a name="step-3-load-tweets-into-a-localtweets-collection-on-app-startup"></a>第 3 步：在此应用启动时将推文加载到“LocalTweets”集合中
-选择此应用中“Screen1”的“OnVisible”属性，然后复制以下公式：
+选择此应用中 **“Screen1”** 的 **“OnVisible”** 属性，然后复制以下公式：
 
 ```
 If(Connection.Connected,
@@ -92,24 +92,24 @@ SaveData(LocalTweets, "Tweets")
 
 此公式会检查设备是否处于联机状态：
 
-* 如果设备处于联机状态，则会将最多 100 篇搜索词为“PowerApps”的推文加载到“LocalTweets”集合中。
+* 如果设备处于联机状态，则会将最多 100 篇搜索词为“PowerApps”的推文加载到 **“LocalTweets”** 集合中。
 * 如果设备处于脱机状态，则会从“Tweets”文件（若有）加载本地缓存。
 
 ### <a name="step-4-add-a-gallery-and-bind-it-to-the-localtweets-collection"></a>第 4 步：添加并将库绑定到“LocalTweets”集合
 
 1. 插入一个高度可调的新库：依次单击或点击“插入” > “库” > “高度可调的空白库”。
 
-2. 将“Items”属性设置为“LocalTweets”。
+2. 将 **“Items”** 属性设置为 **“LocalTweets”**。
 
-3. 添加四个“标签”控件来显示每篇推文的数据，然后将“Text”属性设置为：
+3. 添加四个“标签”控件来显示每篇推文的数据，然后将 **“Text”** 属性设置为：
    * **ThisItem.TweetText**
-   * **ThisItem.UserDetails.FullName & " @" & ThisItem.UserDetails.UserName**
+   * **ThisItem.UserDetails.FullName & " \@" & ThisItem.UserDetails.UserName**
    * **"RT: " & ThisItem.RetweetCount**
    * **Text(DateTimeValue(ThisItem.CreatedAtIso), DateTimeFormat.ShortDateTime)**
-4. 添加一个“图像”控件，然后将“Image”属性设置为“ThisItem.UserDetails.ProfileImageUrl”。
+4. 添加一个“图像”控件，然后将 **“Image”** 属性设置为 **“ThisItem.UserDetails.ProfileImageUrl”**。
 
 ### <a name="step-5-add-a-connection-status-label"></a>第 5 步：添加连接状态标签
-插入一个新“标签”控件，然后将“Text”属性设置为以下公式：
+插入一个新“标签”控件，然后将 **“Text”** 属性设置为以下公式：
 
 ```
 If (Connection.Connected, "Connected", "Offline")
@@ -121,11 +121,11 @@ If (Connection.Connected, "Connected", "Offline")
 
 1. 插入一个名为“NewTweetTextInput”的新“文本输入”控件。
 
-2. 将文本输入控件的“Reset”属性设置为“resetNewTweet”。
+2. 将文本输入控件的 **“Reset”** 属性设置为 **“resetNewTweet”**。
 
 ### <a name="step-7-add-a-button-to-post-the-tweet"></a>第 7 步：添加用于发布推文的按钮
-1. 添加一个“按钮”控件，然后将“Text”属性设置为“Tweet”。
-2. 将“OnSelect”属性设置为以下公式：
+1. 添加一个“按钮”控件，然后将 **“Text”** 属性设置为“Tweet”。
+2. 将 **“OnSelect”** 属性设置为以下公式：
 
     ```
     If (Connection.Connected,
@@ -146,18 +146,18 @@ If (Connection.Connected, "Connected", "Offline")
 此公式会检查设备是否处于联机状态：
 
 * 如果设备处于联机状态，则会立即发布推文。
-* 如果设备处于脱机状态，则会将推文捕获到“LocalTweetsToPost”集合中，并将其保存到此应用中。
+* 如果设备处于脱机状态，则会将推文捕获到 **“LocalTweetsToPost”** 集合中，并将其保存到此应用中。
 
 然后，此公式会重置文本框中的文本。
 
 ### <a name="step-8-add-a-timer-to-check-for-tweets-every-five-minutes"></a>第 8 步：添加每五分钟检查一次推文的计时器
 添加一个新“计时器”控件：
 
-* 将“Duration”属性设置为“300000”。
+* 将 **“Duration”** 属性设置为“300000”。
 
-* 将“AutoStart”属性设置为“true”。
+* 将 **“AutoStart”** 属性设置为“true”。
 
-* 将“OnTimerEnd”设置为以下公式：
+* 将 **“OnTimerEnd”** 设置为以下公式：
 
     ```
     If(Connection.Connected,
@@ -174,7 +174,7 @@ If (Connection.Connected, "Connected", "Offline")
     )
     ```
 
-此公式检查设备是否处于联机状态。 如果处于联机状态，此应用会发布“LocalTweetsToPost”集合中的所有推文。 然后，它会清除集合。
+此公式检查设备是否处于联机状态。 如果处于联机状态，此应用会发布 **“LocalTweetsToPost”** 集合中的所有推文。 然后，它会清除集合。
 
 至此，此应用已经创建完，让我们先来预览一下，然后再进行测试。 左侧的此应用处于联机状态；右侧的此应用处于脱机状态，有一篇待重新联机时发布的推文。
 
@@ -191,7 +191,7 @@ If (Connection.Connected, "Connected", "Offline")
 6. 运行 PowerApps。 现在可以脱机运行 Twitter 应用，并能访问以前联机时在此设备上运行过的其他任何应用（即，PowerApps 会隐藏尚未下载到设备中的所有应用）。
 7. 再次运行此应用。
 8. 你会发现，此应用可以正确反映连接状态，状态显示为“脱机”。
-9. 撰写新推文。 它会存储在“LocalTweetsToPost”本地集合中。
+9. 撰写新推文。 它会存储在 **“LocalTweetsToPost”** 本地集合中。
 10. 退出飞行模式。 当计时器触发后，此应用发布这篇推文。
 
 我们希望这篇文章能够帮助你了解 PowerApps 提供的用于生成脱机应用的功能。 和以往一样，请在我们的[论坛](https://powerusers.microsoft.com/t5/PowerApps-Forum/bd-p/PowerAppsForum1)中提供反馈，并在 [PowerApps 社区博客](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/bg-p/PowerAppsBlog)中分享你的脱机应用示例。
