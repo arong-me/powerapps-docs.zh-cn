@@ -72,7 +72,7 @@ ms.locfileid: "39470353"
 
     ![重设大小的标签](./media/add-configure-controls/shorter-text-box.png)
 
-     也可以通过修改此控件的**[“Height”](controls/properties-size-location.md)** 和/或**[“Width”](controls/properties-size-location.md)** 属性来重设控件大小，本主题稍后将会对此进行介绍。
+     也可以通过修改此控件的 **[“Height”](controls/properties-size-location.md)** 和/或 **[“Width”](controls/properties-size-location.md)** 属性来重设控件大小，本主题稍后将会对此进行介绍。
 
 3. 拖动选择框本身（或修改“[X](controls/properties-size-location.md)”和/或“[Y](controls/properties-size-location.md)”属性，本主题稍后将会对此进行介绍），移动“标签”控件。
 
@@ -80,7 +80,7 @@ ms.locfileid: "39470353"
 
     ![内含自定义文本的标签](./media/add-configure-controls/change-text-directly.png)
 
-     也可以通过设置此控件的**[“Text”](controls/properties-core.md)** 属性来修改该文本，本主题稍后将会对此进行介绍。
+     也可以通过设置此控件的 **[“Text”](controls/properties-core.md)** 属性来修改该文本，本主题稍后将会对此进行介绍。
 
 ## <a name="configure-a-control-from-the-toolbar"></a>在工具栏中配置控件
 与直接配置控件相比，在工具栏中配置控件可以指定更多不同类型的选项。
@@ -153,9 +153,9 @@ ms.locfileid: "39470353"
 
 本主题前面所做的全部更改均更新了你配置的控件的[属性](reference-properties.md)值。
 
-* 重设此控件的大小时，更改了它的**[“Width”](controls/properties-size-location.md)** 属性。
-* 移动此控件时，更改了它的**[“X”](controls/properties-size-location.md)** 和**[“Y”](controls/properties-size-location.md)** 属性。
-* 更改此控件显示的文本时，更改了它的**[“Text”](controls/properties-core.md)** 属性。
+* 重设此控件的大小时，更改了它的 **[“Width”](controls/properties-size-location.md)** 属性。
+* 移动此控件时，更改了它的 **[“X”](controls/properties-size-location.md)** 和 **[“Y”](controls/properties-size-location.md)** 属性。
+* 更改此控件显示的文本时，更改了它的 **[“Text”](controls/properties-core.md)** 属性。
 
 除了在“属性”选项卡中或在工具栏中直接配置控件外，也可以通过在属性列表中选择一个属性，然后在编辑栏中指定一个值来更新该属性的值。 使用这种方法，可以按字母顺序搜索属性，并能指定更多类型的值。
 

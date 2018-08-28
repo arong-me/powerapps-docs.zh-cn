@@ -48,7 +48,7 @@ ms.locfileid: "39469939"
 
 3. 保持选择此箭头不变，依次单击或点击“操作”选项卡和“导航”。
 
-    此箭头的**[“OnSelect”](controls/properties-core.md)** 属性会自动设为“Navigate”函数。  
+    此箭头的 **[“OnSelect”](controls/properties-core.md)** 属性会自动设为 **“Navigate”** 函数。  
 
     ![“OnSelect”属性自动设为“Navigate”函数](./media/add-screen-context-variables/onselect-default.png)
 
