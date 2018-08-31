@@ -9,32 +9,32 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: f0fc0d9407511730145002bf109957b0878398bc
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 5c2d9e2b815d1ff2c3dc80bc6c37f1c2e78364ac
+ms.sourcegitcommit: b35470285b96750d660335284d830b4d0028befb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39470031"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "42859495"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>在 PowerApps 中安装和配置画布应用的零用金报销单示例
 
-安装和配置零用金报销单示例的分步说明。
+安装和配置零用金报销单示例的分步说明。 还可以单击[此处](https://aka.ms/previewmyexpenses)预览示例应用。
 
 完成以下步骤的估计时间：10-15 分钟
 
-有关此过程的演示，请观看此视频。
-
-[![零用金报销单安装视频](./media/expense-report-install/expense-report-install-video.png)](https://youtu.be/DOR28V5kCkw)
-
-## <a name="overview-of-the-sample"></a>示例概述
+> [!TIP]
+> 请观看[这段视频](https://youtu.be/kJXZPILfbwU)，了解如何使用零用金报销单示例应用。 
 
 跟踪费用报销单从提交到审批的整个过程。 将行项统计为应计个人支出，并在准备就绪后提交审批。 要拥有此应用，需完成少量设置。
 
 ![支出报表 PowerApp 的打开屏幕](./media/expense-report-install/expense-report-powerapp.png)
 
-观看此视频，了解如何使用支出报表 PowerApp 示例。
-
-[![支出报表安装视频](./media/expense-report-install/expense-report-demo-video.png)](https://youtu.be/h6E9cdrOvMU)
+> [!TIP]
+> 请观看[这段](https://youtu.be/h6E9cdrOvMU)视频，了解如何使用零用金报销单 PowerApps 示例应用。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -377,9 +377,6 @@ ms.locfileid: "39470031"
 2. 单击“支出报表 PowerApp”旁的省略号。
 3. 单击“打开”。
 
-观看此视频，了解如何使用支出报表 PowerApp 示例。
-
-[![支出报表安装视频](./media/expense-report-install/expense-report-demo-video.png)](https://youtu.be/h6E9cdrOvMU)
 
 ## <a name="next-steps"></a>后续步骤
 - [自定义 SharePoint 列表窗体](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form)
