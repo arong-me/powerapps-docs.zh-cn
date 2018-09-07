@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 49088dbcdf2757e14659ee5109cbc86ba68b3bb4
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 1e54072771bf92dc6237620cfbd260cd4af55e22
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39014963"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42853502"
 ---
 # <a name="value-function-in-powerapps"></a>PowerApps 中的 Value 函数
 将文本字符串转换为数字。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 **Value** 函数将包含数字字符的文本字符串转换为数字值。 需要对用户以文本形式输入的数字执行计算时，请使用此函数。
 
 不同的语言对 **,** 和 **.** 的解释 各不相同。  默认情况下，文本使用当前用户的语言进行解释。  可以通过语言标记指定要使用的语言，使用的语言标记与 **[Language](function-language.md)** 函数返回的语言标记相同。

@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 09/13/2017
 ms.author: fikaradz
-ms.openlocfilehash: 30e2b07a95c326b897e5b3386d888f3537db85fd
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 278560c1ececafd6d4c57945d6058879cf55170f
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39015653"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42858304"
 ---
 # <a name="combo-box-control-in-powerapps"></a>PowerApps 中的组合框控件
 用户可以在其中提供的选项之间进行选择的控件。  支持搜索和多重选择。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 使用组合框控件，可以搜索要选择的项。  由于搜索是在服务器端对 SearchField 属性执行，因此性能不受非常大的数据源影响。  
 
 单选或多重选择模式是通过 SelectMultiple 属性进行配置。

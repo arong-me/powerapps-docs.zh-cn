@@ -8,12 +8,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: jamesol
-ms.openlocfilehash: 475b1f9b1aace4dc9632379e8a4e3522a90f42b2
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 4eb1cdb3fb54780c693bb764bdf6d9de1e7088b5
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349032"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864370"
 ---
 # <a name="licensing-overview"></a>许可概述
 PowerApps 按用户提供许可证。 为了创建和运行应用而访问该服务的每个用户都需要有许可证。 Office 365 和 Dynamics 365 客户可立即享用这些产品随附的 PowerApps 和 Microsoft Flow 功能。 想要构建应用和流来访问 Office 365 和 Dynamics 365 外部的数据源或者需要其他功能的客户可以购买 PowerApps 和 Microsoft Flow 的独立订阅。 这几组许可证之间存在重要的功能差别。

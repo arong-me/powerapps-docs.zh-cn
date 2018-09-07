@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: d34761b836f25fcb88d2f77d778501eafd78d511
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: ddb15340c9532e82d95f1bea70959dc59cdc7283
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017769"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42853810"
 ---
 # <a name="date-picker-control-in-powerapps"></a>PowerApps 中的日期选取器控件
 用户可单击或点击以指定日期的控件。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 如果添加**日期选取器**控件而非**[文本输入](control-text-input.md)** 控件，可帮助确保用户以正确的格式指定日期。
 
 ## <a name="key-properties"></a>关键属性

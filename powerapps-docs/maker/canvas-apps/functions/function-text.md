@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: caad92cb7807685d1e3f7b01e95acdbb1bfaefa7
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: dab6004afe7350b2375ade21871efe9144b6325b
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018057"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42849284"
 ---
 # <a name="text-function-in-powerapps"></a>PowerApps 中的 Text 函数
 设置数字或日期/时间值的格式，使其作为文本字符串显示。

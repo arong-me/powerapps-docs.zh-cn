@@ -9,12 +9,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 940789049a345c9f03bc008dc87b60e84b61af70
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 9b62d72cf04b56c945d0c85038e2264e9685828b
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39348802"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42837576"
 ---
 # <a name="create-a-common-data-service-for-apps-database"></a>创建 Common Data Service for Apps 数据库
 可以将 Common Data Service (CDS) for Apps 用作数据存储，从而创建数据库并生成应用。 可以创建你自己的自定义实体，也可以使用预定义的实体。 若要创建数据库，要么必须先创建一个环境，要么必须以“环境管理员”身份分配到现有环境。此外，还必须分配有相应的许可证。 若要了解如何购买 CDS for Apps 使用套餐，请参阅[定价信息](pricing-billing-skus.md)。
@@ -42,7 +48,7 @@ ms.locfileid: "39348802"
 
 
 ## <a name="create-a-database-in-the-entities-pane-of-powerapps"></a>在 PowerApps 的“实体”窗格中创建数据库
-1. 在 [powerapps.com](https://web.powerapps.com) 上，展开“数据”部分，然后单击或点击左侧导航窗格中的“实体”。
+1. 在 [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开“数据”部分，然后单击或点击左侧导航窗格中的“实体”。
 
 2. 单击“创建数据库”以创建数据库。
 

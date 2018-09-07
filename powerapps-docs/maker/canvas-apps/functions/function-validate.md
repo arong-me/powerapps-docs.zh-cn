@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/01/2015
 ms.author: gregli
-ms.openlocfilehash: 6a8bff341484139e6d16092fc2ea3cbacb384777
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: bec00071d1b354872bf3b140e5c879fe8857ffec
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022829"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42865661"
 ---
 # <a name="validate-function-in-powerapps"></a>PowerApps 中的 Validate 函数
 **Validate** 函数检查单个[列](../working-with-tables.md#columns)或整条[记录](../working-with-tables.md#records)的值对[数据源](../working-with-data-sources.md)是否有效。  
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 在用户提交数据更改之前，你可以针对该提交的有效性提供即时反馈，改进用户体验。
 
 对于何种要素构成记录中的有效值，数据源可以提供相关信息。 该信息可能包括许多约束，例如以下示例：

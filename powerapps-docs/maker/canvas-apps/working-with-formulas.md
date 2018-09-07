@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 266949870403dbe0d8a90f096b811478ace90732
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 78dd0f5af1051abcb7aa5fa067c72732874d7b32
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39470652"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42865454"
 ---
 # <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>PowerApps 中的画布应用公式入门
 
@@ -29,7 +33,7 @@ ms.locfileid: "39470652"
 
 本主题仅提供使用公式的概述。 浏览 [公式引用](formula-reference.md) 了解详细信息以及可以使用的函数、运算符和其他构建基块的完整列表。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 * [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 * 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。

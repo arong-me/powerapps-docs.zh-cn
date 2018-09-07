@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/24/2017
 ms.author: gregli
-ms.openlocfilehash: 5293cd448d96633e2d8d2cda9dfbd6d3c162c953
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 40ac3089d3563d220ddac29197b0902f4de88a25
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017378"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42836318"
 ---
 # <a name="if-and-switch-functions-in-powerapps"></a>PowerApps 中的 If 和 Switch 函数
 确定集中的任何条件是否为 true (If)，或确定公式的结果是否与集中的任何值一致 (Switch)，再返回结果或执行操作。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 If 函数会一直测试一个或多个条件，直到结果为 true 时为止。 如果结果为 true，将返回相应的值。 否则，将返回默认值。 无论属于上述哪种情况，返回的值可以是要显示的字符串、要求值的公式或另一种形式的结果。
 
 Switch 函数先对公式求值，再确定结果是否与指定序列中的任何值一致。 如果找到匹配值，将返回相应的值。 否则，将返回默认值。 无论属于上述哪种情况，返回的值可以是要显示的字符串、要求值的公式或另一种形式的结果。

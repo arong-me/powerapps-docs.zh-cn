@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 39307e9c7b3de7bfae151709827c409fcc7087ad
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 3fd93ce6cf9703e9e9fbf69c5826213d9aa78e02
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39014227"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42863559"
 ---
 # <a name="shuffle-function-in-powerapps"></a>PowerApps 中的 Shuffle 函数
 随机重新排列[表](../working-with-tables.md)[记录](../working-with-tables.md#records)的顺序。

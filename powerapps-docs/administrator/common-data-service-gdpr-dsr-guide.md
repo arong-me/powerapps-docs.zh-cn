@@ -9,12 +9,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: de7af5aa10f2f39057806c6ad170dc32e85c9f02
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: df7ea7bd8a32354191d12d63881988dfd1c8e49e
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349009"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42843742"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-common-data-service-for-apps-customer-data"></a>响应针对 Common Data Service for Apps 客户数据的数据主体权限 (DSR) 请求
 
@@ -52,7 +58,7 @@ ms.locfileid: "39349009"
 
 CDS for Apps 和 Common Data Service (CDS) 早期版本具有与个人数据交互的单独过程。
 
-要确定所拥有 CDS 环境的类型，可登录到 [PowerApps](https://web.powerapps.com)，并执行以下步骤：
+要确定所拥有 CDS 环境的类型，可登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，并执行以下步骤：
 
 1. 在“环境”下拉列表中，选择你的环境。
 2. 在导航窗格中，单击或点击“数据”，然后单击或点击“实体”。
@@ -308,12 +314,12 @@ CDS 系统管理员负责维护不同实体中存储的每个人的个人数据�
 
 |资源 | 用途 | 网站访问 |  编程访问
 | --- | --- | --- | ---
-|实体记录 | 在各自的业务实体中捕获业务事务。 | [PowerApps](https://web.powerapps.com) |      否
+|实体记录 | 在各自的业务实体中捕获业务事务。 | [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) |   否
 
 #### <a name="entity-records"></a>实体记录
 个人的个人数据可以存储在任何业务实体中。
 
-此版本 CDS 包含它自己的数据库架构和基础结构。 它具有自己的实体，而你可在 [PowerApps](http://web.powerapps.com/) 中管理这些实体。
+此版本 CDS 包含它自己的数据库架构和基础结构。 它具有自己的实体，而你可在 [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中管理这些实体。
 
 要查看实体列表，请执行以下操作：
 
@@ -348,7 +354,7 @@ CDS 系统管理员负责维护不同实体中存储的每个人的个人数据�
 
 CDS 系统管理员负责标识包含个人的个人数据的所有实体，并针对每个实体重复以下步骤。
 
-从 [PowerApps](http://web.powerapps.com/) 中执行以下操作：
+从 [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中执行以下操作：
 
 1. 在导航窗格中，单击或点击“数据”，然后单击或点击“实体”。
 
@@ -379,7 +385,7 @@ CDS 系统管理员负责标识包含个人的个人数据的所有实体，并�
 ### <a name="export"></a>导出
 可以将每个实体中的个人数据导出到 Excel 电子表格并进行查看。
 
-从 [PowerApps](http://web.powerapps.com/) 中执行以下操作：
+从 [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中执行以下操作：
 
 1. 在导航窗格中，单击或点击“数据”，然后单击或点击“实体”。
 
@@ -404,7 +410,7 @@ CDS 系统管理员负责标识包含个人的个人数据的所有实体，并�
 
 CDS 系统管理员负责标识包含个人的个人数据的所有实体，并针对每个实体重复以下步骤。
 
-从 [PowerApps](http://web.powerapps.com/) 中执行以下操作：
+从 [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中执行以下操作：
 
 1. 在导航窗格中，单击或点击“数据”，然后单击或点击“实体”。
 

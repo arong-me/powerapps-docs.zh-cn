@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 239fc1638e3424fe30058ed31b18aed94e16d73c
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: ab824432833614ba5b2002375a79e7899a8d7277
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015262"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42857894"
 ---
 # <a name="day-month-year-hour-minute-second-and-weekday-functions-in-powerapps"></a>PowerApps 中的 Day、Month、Year、Hour、Minute、Second 和 Weekday 函数
 返回日期/时间值的各个部分。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 **Day** 函数可用于返回日期/时间值的日部分，范围是 1 到 31。
 
 **Month** 函数可用于返回日期/时间值的月部分，范围是 1 到 12。
@@ -34,7 +38,7 @@ ms.locfileid: "39015262"
 
 **Weekday** 函数可用于返回日期/时间值的星期几。  默认情况下，结果范围是 1（星期日）到 7（星期六）。  可以使用 Microsoft Excel 的 Weekday 函数代码或 StartOfWeek 枚举值来指定其他范围：
 
-| Excel 代码 | StartOfWeek 枚举 | 描述 |
+| Excel 代码 | StartOfWeek 枚举 | 说明 |
 | --- | --- | --- |
 | **1**, **17** |**StartOfWeek.Sunday** |数字 1（星期日）到 7（星期六）。  默认值。 |
 | **2**, **11** |**StartOfWeek.Monday** |数字 1（星期一）到 7（星期日）。 |

@@ -9,18 +9,22 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/06/2018
 ms.author: fikaradz
-ms.openlocfilehash: b09f2ef174ecea79c0a4297bf700ba84b96bccbe
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 447cda7a1d8d4f27c8be2b943abd2b5d6b431d49
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39016044"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42853673"
 ---
 # <a name="radio-control-in-powerapps"></a>PowerApps 中的单选控件
 
 输入控件，显示了多个选项，用户每次可从其中选择一个。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 **单选按钮**控件，标准 HTML 输入控件，在只有少量互斥选项时使用效果最佳。
 

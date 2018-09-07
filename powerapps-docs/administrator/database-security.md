@@ -8,12 +8,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: af7c4bd051d7fd822b74b43bec6e8110df24a450
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 71358a1c476655ab4e80d94f9e6846b9a35684f4
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349492"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42857627"
 ---
 # <a name="configure-environment-security"></a>配置环境安全设置
 Common Data Service (CDS) for Apps 使用基于角色的安全模型来帮助保护对数据库的访问。 本主题介绍了如何创建保护应用所必需的安全项目。 用户角色可控制对数据的运行时访问，不同于管理环境管理员和环境创建者的环境角色。 有关环境的概述，请参阅[环境概述](environments-overview.md)。
@@ -55,7 +61,7 @@ Common Data Service (CDS) for Apps 使用基于角色的安全模型来帮助保
 ## <a name="predefined-security-roles"></a>预定义的安全角色
 PowerApps 环境包括预定义的安全角色，它反映访问级别定义为匹配安全最佳做法目标的常见用户任务，该目标为提供对使用应用所需最小业务数据量的访问。
 
-|安全角色  |*数据库权限  |描述 |
+|安全角色  |*数据库权限  |说明 |
 |---------|---------|---------|
 |系统管理员     |  创建、读取、写入、删除、自定义、安全角色       | 具有自定义或管理环境的完整权限，包括创建、修改和分配安全角色。 可以查看环境中的所有数据。 有关详细信息，请参阅：[自定义所需的特权](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 |系统定制员     | 创建（自我）、读取（自我）、写入（自我）、删除（自我）、自定义         | 具有自定义环境的完整权限。 但是，仅可以查看他们创建的环境实体的记录。 详细信息：[自定义项所需权限](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |

@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 4d91e646bbe50870e9d7570451b489fb0e118042
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 55df8d30509720478c1594406865986ddc9a95c4
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017792"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42865799"
 ---
 # <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>PowerApps 中的 EditForm、NewForm、SubmitForm、ResetForm 和 ViewForm 函数
 查看、编辑或创建一个项，保存内容，以及在[编辑表单](../controls/control-form-detail.md)控件中重置控件。
@@ -28,7 +32,7 @@ ms.locfileid: "39017792"
 | FormMode.New |表单使用默认值填充，用户可以修改字段的值。  完成后，用户可以将记录添加到数据源。 |
 | FormMode.View |表单使用现有记录填充，但用户无法修改字段的值。 |
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 这些函数通常从**[按钮](../controls/control-button.md)** 或**[图像](../controls/control-image.md)** 控件的 **[OnSelect](../controls/properties-core.md)** 公式中调用，以便用户可以保存编辑、放弃编辑或创建记录。 可通过[将控件和这些函数结合使用](../working-with-forms.md)来创建完整的解决方案。
 
 这些函数不返回任何值。

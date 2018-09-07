@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: 0128c0b31e2941b59167a0515b993e9a5517d040
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 6f89887d05f4b4885e66335457357a089ceaf90f
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023059"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42865500"
 ---
 # <a name="updatecontext-function-in-powerapps"></a>PowerApps 中的 UpdateContext 函数
 创建或更新当前屏幕的[上下文变量](../working-with-variables.md#create-a-context-variable)。
@@ -26,7 +30,7 @@ ms.locfileid: "39023059"
 
 PowerApps 以公式为基础，这些公式会在用户与应用交互时自动重新计算。  上下文变量不具有此优势，因此在应用的创建和理解上可能难度更大。  使用上下文变量之前，请查看[使用变量](../working-with-variables.md)。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 若要创建或更新上下文变量，请向 **UpdateContext** 函数传递一条[记录](../working-with-tables.md#records)。 在每条记录中指定[列](../working-with-tables.md#columns)的名称，用于定义或匹配变量的名称以及要将该变量设为的值。
 
 * 如果指定之前已定义的变量的名称，**UpdateContext** 会将该变量的值设置为指定的值。

@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 440d7bc8a737fdc53a5c76ec80db7fcf0d515f7e
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 869c0fcff6e519281e527c832305d74f2e7fd78f
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020092"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864090"
 ---
 # <a name="date-and-time-functions-in-powerapps"></a>PowerApps 中的 Date 和 Time 函数
 将日期和时间组件转换为日期/时间值。

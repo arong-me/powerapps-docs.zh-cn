@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.reviewer: anneta
-ms.openlocfilehash: 5f36c6e07f1f1c507f5734e51c23ba6af83eca4b
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 3504c80cbf2414959cadc218339d959d168d15ba
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39017194"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42858650"
 ---
 # <a name="check-box-control-in-powerapps"></a>PowerApps 中的复选框控件
 用户可选择或清除以将其值设置为 **true** 或 **false** 的控件。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 用户可以使用此熟悉的控件指定布尔值，这个控件在 GUI 中已经使用了数十年。
 
 ## <a name="key-properties"></a>关键属性

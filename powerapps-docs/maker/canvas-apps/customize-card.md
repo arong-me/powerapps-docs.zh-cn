@@ -9,19 +9,23 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 68b02c1dd2b6c22f5b1ec049f753a175ad8c09db
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 31c0810b9da5a52bcd5cc3b28b6def858541e15b
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195050"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42841777"
 ---
 # <a name="customize-a-card-in-powerapps"></a>在 PowerApps 中自定义卡片
 举例来说，通过更改卡控件执行基本的自定义（无需解锁卡）。 例如，通过解锁卡及添加默认情况下该卡无法使用的控件来执行高级自定义。
 
 有关概述，请参阅 [了解数据卡](working-with-cards.md)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 * 了解如何 [添加和配置控件](add-configure-controls.md)。
 * 可查看本主题，了解一些基本概念，也可按照下列主题中所述的流程分步完成操作：

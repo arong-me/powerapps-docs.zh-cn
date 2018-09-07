@@ -8,12 +8,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 6a6217c0a344d0501c8a856b0632397044ceb465
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: e2424207cdc70f2f8135fa6ef5559cec2fc637d9
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349630"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42833989"
 ---
 # <a name="data-groups"></a>数据组
 数据组是对[数据丢失防护 (DLP) 策略](prevent-data-loss.md)中的服务进行分类的一种简单方式。 两个可用的数据组为“仅限业务数据”组和“不允许业务数据”组。 组织可以自由确定要将哪些服务放置到哪个特定的数据组中。 为服务分类的一种合理方式是根据对组织造成的影响将服务放置在组中。 默认情况下，所有服务放置在“不允许业务数据”数据组中。 通过管理中心创建或修改 DLP 策略的属性时，可以管理数据组中的服务。

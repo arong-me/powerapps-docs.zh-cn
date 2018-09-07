@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/11/2015
 ms.author: gregli
-ms.openlocfilehash: 8799c492d3676de99217fabc5b99493a7c905393
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 886479b4cd2f7e04e9949c99ba05e6219e92b2b3
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39019218"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42859977"
 ---
 # <a name="errors-function-in-powerapps"></a>PowerApps 中的 Errors 函数
 提供之前对[数据源](../working-with-data-sources.md)的更改的错误信息。

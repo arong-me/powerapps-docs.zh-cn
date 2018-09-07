@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: 53ee881a81045f6c63c68d363b3a19d712bea9f7
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 41f20ff11a3c4b58b09e5b78f53f01ad97ddfa7d
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39017884"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42852879"
 ---
 # <a name="operators-and-data-types-in-powerapps"></a>PowerApps 中的运算符和数据类型
 其中的某些运算符依赖于作者的语言。  有关详细信息，请参阅[全局应用](../global-apps.md)。

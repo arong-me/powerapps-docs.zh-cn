@@ -7,12 +7,18 @@ ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
 ms.author: jimholtz
-ms.openlocfilehash: f5bf3cd5e4fb6be96b8b1853390df1ee8f9bd027
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 8a94439a1f3de2d269600ed1894c8c3bf991d030
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349814"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42845306"
 ---
 # <a name="download-a-list-of-apps-created-in-your-environments"></a>下载在环境中创建的应用的列表
 如果你是环境管理员，那么你可以查看和下载你管理的环境中创建的应用列表。 如果你是 365 全局管理员或 Azure Active Directory 租户管理员，那么你可以查看和下载组织所有环境中创建的应用列表。

@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 00c44b3f1948447b7045707d5c5f92d0d04ff4d0
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 15264a783922891a84e805cea211f2945bca3f3e
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022346"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42863888"
 ---
 # <a name="screen-control-in-powerapps"></a>PowerApps 中的屏幕控件
 一个包含应用中一个或多个其他控件的 UI 元素。

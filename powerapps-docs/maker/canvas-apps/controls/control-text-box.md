@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 85e409c517939b786eb677a7acdbd08ed81a5944
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: a0ffeded77bf08958aaa22c21d33f7063009b4bd
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39022484"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42868395"
 ---
 # <a name="label-control-in-powerapps"></a>PowerApps 中的标签控件
 一个框，显示文本、数字、日期或货币等数据。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 标签按键入时原封不动地显示指定为文本字符串的数据，或显示指定为公式（计算结果为文本字符串）的数据。 标签通常作为标识另一控件（如评分或音频控件）的标签出现在其他任何控件（如标识屏幕的横幅）之外，或出现在库中以显示项的特定类型信息。
 
 ## <a name="key-properties"></a>关键属性

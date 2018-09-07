@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.reviewer: anneta
-ms.openlocfilehash: a25776238d58f2410d8cf85dc70796156f54870f
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: bffbc86dda86c0b179634d2f59e0fb4f5d063ecd
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39021932"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42842615"
 ---
 # <a name="camera-control-in-powerapps"></a>PowerApps 中的照相机控件
 一个控件，用户通过此控件可使用设备上的照相机拍照。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 如果添加此控件，用户可从应用运行的任何位置使用一张或多张照片更新数据源。
 
 ## <a name="key-properties"></a>关键属性

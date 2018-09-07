@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 94354c2e96a61f3f64362ced99d0bc27e1463c2f
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: ec8f14e06852bac7e09527e49bfc363723c9ea1c
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015055"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42833242"
 ---
 # <a name="table-function-in-powerapps"></a>PowerApps 中的 Table 函数
 创建一个临时[表](../working-with-tables.md)。

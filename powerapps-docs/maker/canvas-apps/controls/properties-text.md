@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 27307d9e8c6a1e4e1eefb7dfbd61d65704f7f03d
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 2b88e765fcc56a2d76ede30a44fcfbaae70aaea3
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022967"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42861780"
 ---
 # <a name="text-properties-in-powerapps"></a>PowerApps 中的文本属性
 配置控件上显示的文本、工具提示中显示的文本以及当用户键入数据时作为提示显示的文本，并指定其他文本相关特征。

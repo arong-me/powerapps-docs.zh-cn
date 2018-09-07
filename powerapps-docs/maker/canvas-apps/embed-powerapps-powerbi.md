@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/15/2018
 ms.author: mblythe
-ms.openlocfilehash: a5239a5d7ca1600b281558461f2a08969cabb633
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 046bd1c56a7c27068c4d52cbc0bd28b1bb800ede
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39470951"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42853650"
 ---
 # <a name="embed-a-new-canvas-app-in-a-power-bi-report"></a>在 Power BI 报表中嵌入新的画布应用
 
@@ -28,7 +32,7 @@ ms.locfileid: "39470951"
 > * 创建可使用报表数据的新应用
 > * 在报表中查看应用
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 * [Google Chrome](https://www.google.com/chrome/browser/) 或 [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) 浏览器
 * 安装了[机会分析示例](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample)的 [Power BI 订阅](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi)

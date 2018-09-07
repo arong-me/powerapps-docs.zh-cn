@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 30c55591e410b5526fc85b76b06002c2266e1867
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: a2cb87cf68457771605e78970b8d7a923af61fce
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016573"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42835163"
 ---
 # <a name="list-box-control-in-powerapps"></a>PowerApps 中的列表框控件
 用户可以选择一个或多个项的列表。
@@ -27,7 +31,7 @@ ms.locfileid: "39016573"
 
 **[Items](properties-core.md)** - 控件中显示的数据源，如库、列表或图表。
 
-[!INCLUDE [long-items](../../../includes/long-items.md)]
+在添加库、列表或图表时，属性列表会默认显示“Items”，以便你轻松指定新控件应显示的数据。 例如，可以将库的“Items”属性设置为 Salesforce 中的“Account”表，在 Excel 中创建并上载到云的名为“Inventory”的表，或者名为“ConferenceSpeakers”的 SharePoint 列表。
 
 ## <a name="additional-properties"></a>其他属性
 **[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。

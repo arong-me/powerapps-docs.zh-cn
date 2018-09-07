@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 3117620c9d7dda5c93101ba700e8313bda5d0312
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 64641b0cc0822a955de2b1c9e53692dac9dfcf31
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39019632"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42865477"
 ---
 # <a name="patch-function-in-powerapps"></a>PowerApps 中的 Patch 函数
 在[数据源](../working-with-data-sources.md)中修改或创建一条或多条[记录](../working-with-tables.md#records)，或者合并数据源外的记录。
@@ -36,7 +40,7 @@ ms.locfileid: "39019632"
 
 **Patch( { Name: "Contoso", Phone: “1-212-555-1234” }, { Name: "Contoso", Location: “Midtown”  } )**
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 ### <a name="modify-or-create-a-record-in-a-data-source"></a>在数据源中修改或创建记录
 要在数据源中使用这个函数，请指定数据源，然后指定一条基本记录：
 

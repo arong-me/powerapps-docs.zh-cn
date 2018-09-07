@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: d07bd95d403fa92a8fb9c3faca9f64e8666a393f
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 965c779a752d0bfd864a06d5fa886b0187839123
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39015469"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42836884"
 ---
 # <a name="html-text-control-in-powerapps"></a>PowerApps 中的 HTML 文本控件
 一个框，用于显示文本并将 HTML 标记转换为格式。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 **HTML 文本**控件不仅显示纯文本和数字，还会转换 HTML 标记，例如非换行空格。
 
 ## <a name="key-properties"></a>关键属性

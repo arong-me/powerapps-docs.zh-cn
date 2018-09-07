@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 98a8e22e4101c1c151fa197e967d21942041bef4
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 16065dc29d74655cbede25cea20148b343b790e6
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015147"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42853998"
 ---
 # <a name="core-properties-in-powerapps"></a>PowerApps 中的核心属性
 配置用户是否能看到控件并与之交互。
@@ -62,5 +66,5 @@ ms.locfileid: "39015147"
 
 **Visible**：控件显示还是隐藏。
 
-* 适用于**[添加图片](control-add-picture.md)**、**[音频](control-audio-video.md)**、**[按钮](control-button.md)**、**[照相机](control-camera.md)**、**[卡片](control-card.md)**、**[复选框](control-check-box.md)**、**[柱形图](control-column-line-chart.md)**、**[日期选取器](control-date-picker.md)**、**[显示窗体](control-form-detail.md)**、**[下拉列表](control-drop-down.md)**、**[编辑窗体](control-form-detail.md)**、**[导出](control-export-import.md)**、**[库](control-gallery.md)**、**[HTML 文本](control-html-text.md)**、**[图标](control-shapes-icons.md)**、**[图像](control-image.md)**、**[导入](control-export-import.md)**、**[标签](control-text-box.md)**、**[折线图](control-column-line-chart.md)**、**[列表框](control-list-box.md)**、**[麦克风](control-microphone.md)**、**[PDF 查看器](control-pdf-viewer.md)**、**[笔输入](control-pen-input.md)**、**[饼图](control-pie-chart.md)**、**[单选按钮](control-radio.md)**、**[评分](control-rating.md)**、**[形状](control-shapes-icons.md)**、**[滑块](control-slider.md)**、**[文本输入](control-text-input.md)**、**[计时器](control-timer.md)**、**[切换](control-toggle.md)** 和**[视频](control-audio-video.md)** 控件。
+* 适用于 **[添加图片](control-add-picture.md)** 、**[音频](control-audio-video.md)**、**[按钮](control-button.md)**、**[照相机](control-camera.md)**、**[卡片](control-card.md)**、**[复选框](control-check-box.md)**、**[柱形图](control-column-line-chart.md)**、**[日期选取器](control-date-picker.md)**、**[显示窗体](control-form-detail.md)**、**[下拉列表](control-drop-down.md)**、**[编辑窗体](control-form-detail.md)**、**[导出](control-export-import.md)**、**[库](control-gallery.md)**、**[HTML 文本](control-html-text.md)**、**[图标](control-shapes-icons.md)**、**[图像](control-image.md)**、**[导入](control-export-import.md)**、**[标签](control-text-box.md)**、**[折线图](control-column-line-chart.md)**、**[列表框](control-list-box.md)**、**[麦克风](control-microphone.md)**、**[PDF 查看器](control-pdf-viewer.md)**、**[笔输入](control-pen-input.md)**、**[饼图](control-pie-chart.md)**、**[单选按钮](control-radio.md)**、**[评分](control-rating.md)**、**[形状](control-shapes-icons.md)**、**[滑块](control-slider.md)**、**[文本输入](control-text-input.md)**、**[计时器](control-timer.md)**、 **[切换](control-toggle.md)** 和 **[视频](control-audio-video.md)** 控件。
 

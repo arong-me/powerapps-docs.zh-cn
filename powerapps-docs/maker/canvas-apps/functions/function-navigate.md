@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: 939a9319da134a2ea4ff3ed9209f2f33baf24f64
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: bf656c33bcfdc0114c1ff44936dd38fc7145158e
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017516"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42857076"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Microsoft PowerApps 中的 Back 和 Navigate 函数
 更改显示的屏幕。
@@ -26,7 +30,7 @@ ms.locfileid: "39017516"
 
 当用户在屏幕之间导航时，[上下文变量](../working-with-variables.md#create-a-context-variable)也会保留。 你可以使用 **Navigate** 设置公式会显示的屏幕的一个或多个上下文变量，这是从屏幕外部设置上下文变量的唯一方法。 这个方法可用于将参数传递到屏幕。 如果你使用过另一款编程工具，就会发现这个方法与将参数传递给过程非常相似。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 ### <a name="back"></a>Back
 **Back** 函数用于显示最近显示的屏幕。 无需为这个函数指定任何参数。
 
@@ -35,7 +39,7 @@ ms.locfileid: "39017516"
 
  在第二个参数中，指定旧屏幕切换为新屏幕的方式：
 
-| Transition 参数 | 描述 |
+| Transition 参数 | 说明 |
 | --- | --- |
 | **ScreenTransition.Cover** |新屏幕将滑入视图，盖住当前屏幕。 |
 | **ScreenTransition.Fade** |旧屏幕淡出以显示新屏幕。 |

@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: f2af4fef413aa5502c57e7158d9efdddd36757c9
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 6c465a8cd23511c0cffbbfab9b70dd436be06d37
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021863"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42860008"
 ---
 # <a name="download-launch-and-param-functions-in-powerapps"></a>PowerApps 中的 Download、Launch 和 Param 函数
 使用参数下载或启动网页或应用。  

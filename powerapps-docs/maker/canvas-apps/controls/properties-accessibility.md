@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 01/26/2017
 ms.author: fikaradz
-ms.openlocfilehash: 59cc231dfc461a2301de90a7a995ec2ec82790cb
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 4d75fcd4c0605e295c1e61c5232ba747203d1647
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022921"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42854138"
 ---
 # <a name="accessibility-properties-in-powerapps"></a>PowerApps 中的辅助功能属性
 配置有助于残障用户以其他合适方式与控件进行交互的属性。

@@ -8,12 +8,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/28/2017
 ms.author: nimak
-ms.openlocfilehash: db5861b9f598045436ad0bf796f04ed1df4b8903
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 1edaacc3a013646d8da0a286e28723926817ee71
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349745"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42843357"
 ---
 # <a name="export-and-import-resources"></a>导出和导入资源
 如果创建了多个环境来支持数据库和应用的开发，则必须将所做更改从一个环境移至另一个环境。 可使用“导出资源”和“导入资源”在环境之间移动资源。
