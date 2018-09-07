@@ -11,12 +11,17 @@ manager: kvivek
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: 83670a844c62a6daea489d5484641e9c457653f8
-ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8396d62e0f427d005f6b9e486820316be869ed15
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37925653"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42826720"
 ---
 # <a name="how-do-i-find-and-run-apps"></a>如何查找并运行应用？
 无论是面向在现场工作的移动工作者还是热门医院里业务繁忙的医生，应用制造商都可以创建基于任务和角色的定制画布应用来适应所需的工作方式。 画布应用制造商可自定义画布应用的几乎各个方面，并可连接多个数据源，帮助用户集中精力完成正在处理的任务。
