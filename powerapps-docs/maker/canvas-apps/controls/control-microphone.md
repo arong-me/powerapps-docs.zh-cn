@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: e0c0c67ab4681eac8c63ceb860a760053547bf24
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: b668e8ae118bea5f288e1b3806854e4621295984
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015032"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42852127"
 ---
 # <a name="microphone-control-in-powerapps"></a>PowerApps 中的麦克风控件
 允许应用用户从其设备录音的控件。
@@ -112,7 +116,7 @@ ms.locfileid: "39015032"
 
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
-适用**[按钮](control-button.md)** 的相同准则，因为“麦克风”是专用按钮。 此外，请考虑以下方面：
+适用**[按钮](control-button.md)** 的相同准则，因为 **“麦克风”** 是专用按钮。 此外，请考虑以下方面：
 
 ### <a name="audio-alternatives"></a>音频替代项
 * 请考虑为有语言障碍或没有麦克风的用户添加另一种输入形式。 例如，**[文本输入](control-text-input.md)**，允许用户输入文本。
