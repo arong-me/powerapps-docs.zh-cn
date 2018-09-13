@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 09/11/2018
 ms.author: jamesol
 search.audienceType:
 - admin
@@ -14,12 +14,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 4eb1cdb3fb54780c693bb764bdf6d9de1e7088b5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 301592978d483d1b6ff5930a01f6c6c0119c779e
+ms.sourcegitcommit: 87122dba00b4177ef736d87ecdde79581649ba42
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864370"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44499536"
 ---
 # <a name="licensing-overview"></a>许可概述
 PowerApps 按用户提供许可证。 为了创建和运行应用而访问该服务的每个用户都需要有许可证。 Office 365 和 Dynamics 365 客户可立即享用这些产品随附的 PowerApps 和 Microsoft Flow 功能。 想要构建应用和流来访问 Office 365 和 Dynamics 365 外部的数据源或者需要其他功能的客户可以购买 PowerApps 和 Microsoft Flow 的独立订阅。 这几组许可证之间存在重要的功能差别。
@@ -92,7 +92,7 @@ PowerApps 不提供免费帐户，但用户可对 PowerApps 计划 2 免费试�
 PowerApps 许可证始终包含 Microsoft Flow 功能。  除了包含在 PowerApps 许可证中以外，Microsoft Flow 还作为独立服务提供。 有关每个 PowerApps 许可证包含的具体 Microsoft Flow 功能的详细信息，请参阅 [PowerApps 定价页][2]。
 
 ## <a name="resource-capacity-is-included-with-each-license"></a>每个许可证包含资源容量
-上述按用户提供的许可证随附了执行应用或流时使用的资源容量。 这些资源包括数据存储、文件存储和流运行。 按用户提供的许可证包含的容量在租户级别入池。当租户的容量耗尽时，客户可以通过附加的许可证购买更多容量。 Common Data Service 的最大容量是：为每个数据库提供 10 GB，为每个环境的文件存储提供 5 TB。 如果你购买了更多的容量并且可用容量（许可证随附的容量加上通过附加许可证购买的容量）超过了最大容量，可将总容量用于多个环境。 有关每个 PowerApps 许可证随附的容量，请参阅 [PowerApps 定价页][2]。
+上述按用户提供的许可证随附了执行应用或流时使用的资源容量。 这些资源包括数据存储、文件存储和流运行。 按用户提供的许可证包含的容量在租户级别入池。当租户的容量耗尽时，客户可以通过附加的许可证购买更多容量。 如果你购买了更多的容量并且可用容量（许可证随附的容量加上通过附加许可证购买的容量）超过了最大容量，可将总容量用于多个环境。 有关每个 PowerApps 许可证随附的容量，请参阅 [PowerApps 定价页][2]。
 
 ## <a name="powerapps-licensing-examples"></a>PowerApps 许可示例
 我们分析一个示例。 ABC Inc. 拥有 1,000 名员工，其中 700 名员工持有 Office 365 企业版 3 许可证。 在早些时候，超级用户创建了一个业务线应用程序用于简化客户订单的跟踪。 后来，HR 部门与 IT 部门合作推出了一个用于报告请假和缺勤的应用，该应用是基于 Common Data Service 构建的。
