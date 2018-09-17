@@ -76,7 +76,7 @@ ms.locfileid: "42827238"
 | **Sqrt(&nbsp;ValueTable&nbsp;)** |返回表中每个数字的平方根。 |![](media/function-numericals/values-sqrt.png) |
 
 ### <a name="step-by-step-example"></a>分步示例
-1. 添加**[“文本输入”](../controls/control-text-input.md)** 控件，然后将其命名为“Source”。
+1. 添加 **[“文本输入”](../controls/control-text-input.md)** 控件，然后将其命名为“Source”。
 2. 添加一个“标签”控件，然后将“[Text](../controls/properties-core.md)”属性设置为以下公式：
    <br>
    **Sqrt( Value( Source.Text ) )**
