@@ -24,7 +24,7 @@ ms.locfileid: "42855418"
 用户单击或点击后可与应用进行交互的控件。
 
 ## <a name="description"></a>说明
-将“按钮”控件的**[“OnSelect”](properties-core.md)** 属性配置为，在用户单击或点击控件时运行一个或多个公式。
+将“按钮”控件的 **[“OnSelect”](properties-core.md)** 属性配置为，在用户单击或点击控件时运行一个或多个公式。
 
 ## <a name="key-properties"></a>关键属性
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
@@ -121,7 +121,7 @@ Pressed - 如果用户按下控件，值为“true”，否则值为“false”�
 
 ## <a name="examples"></a>示例
 ### <a name="add-a-basic-formula-to-a-button"></a>向按钮添加基本公式
-1. 添加**[“文本输入”](control-text-input.md)** 控件，然后将其命名为“Source”。
+1. 添加 **[“文本输入”](control-text-input.md)** 控件，然后将其命名为“Source”。
    
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 2. 添加“按钮”控件，将“[Text](properties-core.md)”属性设置为“Add”，并将“[OnSelect](properties-core.md)”属性设置为以下公式：<br>
@@ -195,5 +195,5 @@ Pressed - 如果用户按下控件，值为“true”，否则值为“false”�
 
 ### <a name="keyboard-support"></a>键盘支持
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
+* 焦点指示器必须清晰可见。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
  

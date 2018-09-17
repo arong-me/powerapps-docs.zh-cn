@@ -149,5 +149,5 @@ ChangePictureText – 上传图像时按钮上显示的文本。
 
 ### <a name="keyboard-support"></a>键盘支持
 * “添加媒体按钮”必须具有为零或更大的 **[TabIndex](properties-accessibility.md)**，以便键盘用户可以导航到它。
-* “添加媒体按钮”必须具有清晰可见的焦点指示器。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
+* “添加媒体按钮”必须具有清晰可见的焦点指示器。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
  
