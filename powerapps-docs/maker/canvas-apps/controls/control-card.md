@@ -21,12 +21,12 @@ ms.lasthandoff: 08/24/2018
 ms.locfileid: "42849836"
 ---
 # <a name="card-control-in-powerapps"></a>PowerApps 中的卡片控件
-提供**[显示窗体](control-form-detail.md)** 或**[编辑窗体](control-form-detail.md)** 控件的单个字段的显示和编辑体验。
+提供 **[显示窗体](control-form-detail.md)** 或 **[编辑窗体](control-form-detail.md)** 控件的单个字段的显示和编辑体验。
 
 ## <a name="description"></a>描述
-**[显示窗体](control-form-detail.md)** 和**[编辑窗体](control-form-detail.md)** 控件充当用于显示和查看完整记录的容器。 每个容器可以容纳一组**卡片**控件，这些控件显示各个字段或提供更新这些字段的方法。 每种卡片均有一个 **DataField** 属性，此属性指定它所适用的记录字段。  
+**[显示窗体](control-form-detail.md)** 和 **[编辑窗体](control-form-detail.md)** 控件充当用于显示和查看完整记录的容器。 每个容器可以容纳一组 **卡片** 控件，这些控件显示各个字段或提供更新这些字段的方法。 每种卡片均有一个 **DataField** 属性，此属性指定它所适用的记录字段。  
 
-预定义卡片针对不同的数据类型和用户体验定义。  例如，可能存在使用**[文本输入](control-text-input.md)** 控件编辑数字字段的卡片，非常适合与键盘结合使用。 而另一种卡片可能支持使用**[滑块](control-slider.md)** 控件编辑数字。 选择窗体控件后，可以在右侧窗格中基于字段轻松选择卡片。
+预定义卡片针对不同的数据类型和用户体验定义。  例如，可能存在使用 **[文本输入](control-text-input.md)** 控件编辑数字字段的卡片，非常适合与键盘结合使用。 而另一种卡片可能支持使用 **[滑块](control-slider.md)** 控件编辑数字。 选择窗体控件后，可以在右侧窗格中基于字段轻松选择卡片。
 
 卡片本身包含控件。 卡片的控件构成了显示和编辑单个字段的体验。 例如，数字卡片可能包含显示字段的显示名称的“[标签](control-text-box.md)”控件，以及提供字段值编辑器的“[文本输入](control-text-input.md)”控件。 卡片可能还包含显示所有验证错误的“[标签](control-text-box.md)”控件，以及使用常见星号指明字段为必填字段的“[标签](control-text-box.md)”控件。
 
@@ -89,7 +89,7 @@ ms.locfileid: "42849836"
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
-**Valid** - **卡片**或**[编辑窗体](control-form-detail.md)** 控件是否包含准备好提交到数据源的有效项。
+**Valid** - **卡片** 或 **[编辑窗体](control-form-detail.md)** 控件是否包含准备好提交到数据源的有效项。
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
@@ -104,7 +104,7 @@ ms.locfileid: "42849836"
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：
-* **[Fill](properties-color-border.md)** 和任何子控件。 例如，如果卡片包含**[标签](control-text-box.md)**，而标签具有透明填充，则卡片的 **[Fill](properties-color-border.md)** 将有效地成为标签的背景色。 因此，卡片的**[“Fill”](properties-color-border.md)** 和标签的**[“Color”](properties-color-border.md)** 之间应具有足够的对比度。
+* **[Fill](properties-color-border.md)** 和任何子控件。 例如，如果卡片包含 **[标签](control-text-box.md)** ，而标签具有透明填充，则卡片的 **[Fill](properties-color-border.md)** 将有效地成为标签的背景色。 因此，卡片的 **[“Fill”](properties-color-border.md)** 和标签的 **[“Color”](properties-color-border.md)** 之间应具有足够的对比度。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
 * “DisplayName”必须存在。

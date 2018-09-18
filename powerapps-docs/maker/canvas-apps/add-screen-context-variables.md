@@ -58,7 +58,7 @@ ms.locfileid: "42858898"
 
     当用户单击或点击此箭头时，“Target”屏幕淡入。
 
-4. 在“Target” 屏幕上，添加“后退箭头” ，然后将其**[“OnSelect”](controls/properties-core.md)** 属性设为以下公式：
+4. 在“Target” 屏幕上，添加“后退箭头” ，然后将其 **[“OnSelect”](controls/properties-core.md)** 属性设为以下公式：
    <br>Navigate(Source, ScreenTransition.Fade)
 
 5. 打开预览模式（选择 ![](./media/add-screen-context-variables/preview.png) 或按 F5 键），然后单击或点击所添加的箭头切换屏幕。
