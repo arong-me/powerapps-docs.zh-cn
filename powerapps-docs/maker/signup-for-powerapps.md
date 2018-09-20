@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 03/12/2018
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: 62afc8fc0ce754ed797683a61c061db16370f904
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+ms.openlocfilehash: cfe9dd8d7a1a1342e7db4fb2786f68942bec7784
+ms.sourcegitcommit: 967812754d8e5b1ff72baa35ffbe548f3b9b0085
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39195188"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726897"
 ---
 # <a name="sign-up-for-a-free-license-to-try-powerapps"></a>注册免费许可证试用 PowerApps
 若要在 PowerApps 中创建应用，需要几种类型的许可证之一，这些许可证提供不同的功能级别。 如果你的组织为你购买了 Office 365 或 Dynamics 365 的任何一个版本，或者你的组织为你购买了 PowerApps 计划 1 或计划 2 许可证，则你已经拥有 PowerApps 许可证。
@@ -93,7 +93,7 @@ ms.locfileid: "39195188"
     在[连接器完整列表](./canvas-apps/connections-list.md)中，高级连接器与徽章一起显示：
 
     ![](./media/signup-for-powerapps/premium-badge.png)
-* **访问 PowerApps 管理中心**，你可以在其中管理环境、数据库、用户权限和数据策略。 [了解详细信息](../administrator/introduction-to-the-admin-center.md)
+* **访问 PowerApps 管理中心**，你可以在其中管理环境、数据库、用户权限和数据策略。 [了解详细信息](../administrator/admin-guide.md)
 * **在模型驱动模式下创建应用**，将组件添加到应用，让 PowerApps 创建其布局和其他界面元素。 
 
 有关试用许可证中的功能和容量的详细信息，请参阅[定价页](https://powerapps.microsoft.com/pricing/)。
