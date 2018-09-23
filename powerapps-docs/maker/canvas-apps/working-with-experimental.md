@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/16/2018
 ms.author: gregli
-ms.openlocfilehash: d976a81603d48d72ecb2dc7c279b59d0e70800eb
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 741cec402c6a5b5ea30700badd265f5e950203e9
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094787"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42858466"
 ---
 # <a name="understand-experimental-and-preview-features-in-powerapps"></a>了解 PowerApps 中的实验性和预览功能
 
@@ -51,9 +55,9 @@ ms.locfileid: "39094787"
 ## <a name="documentation"></a>文档
 
 哪里可以找到有关这些功能的信息？  我们将“预览”功能视为已完成功能，你可以像了解任何其他产品功能一样对其进行了解： 
-- [PowerApps 文档](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/getting-started)。 我们将提供有关新功能的基础知识：好处、入门方法和参考信息。
+- [PowerApps 文档](https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started)。 我们将提供有关新功能的基础知识：好处、入门方法和参考信息。
 - [PowerApps 社区论坛](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)。  其他用户将与你一起探索新功能。 学习他们的经验，并分享你的经验。
-- [PowerApps 博客](https://powerapps.microsoft.com/en-us/blog/)。  博客文章经常（但不是总是）会介绍一些新功能。
+- [PowerApps 博客](https://powerapps.microsoft.com/blog/)。  博客文章经常（但不是总是）会介绍一些新功能。
 
 实验性功能不同。  它们是正在开发的功能，我们不将其视为已完成功能。 “应用设置”窗格（见下文）中的简短说明可能是它们唯一的信息。 实验性功能通常不会显示在文档中。 社区论坛可能是相关信息的最佳来源。  在某些情况下，早期的博客文章会对此类功能进行介绍。  如果未找到足够的信息，可在论坛中提问或等待功能进入预览阶段。
 

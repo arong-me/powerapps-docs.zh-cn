@@ -15,18 +15,25 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/19/2018
 ms.author: jdaly
-ms.openlocfilehash: c07a6505c0a08eca706c08cc2e4d607cd5322dfe
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3b0e2d70a9295bdf1a8a6d6a71cb6075677bb991
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36949216"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42844045"
 ---
 # <a name="common-data-service-for-apps-developer-overview"></a>Common Data Service for Apps 开发人员概述
+
 PowerApps 为用户、企业、独立软件供应商 (ISV) 和系统集成商 (SI) 提供了一个用于生成业务线应用的强大平台。 此版本的 PowerApps 中新增了 Common Data Service 扩展（现在称为 Common Data Service for Apps），该扩展现包含 Dynamics 365 平台的核心功能，此平台支持 Dynamics 365 for Sales、Dynamics 365 for Marketing 和 Dynamics 365 for Customer Service。
 
 
 ## <a name="get-started"></a>入门
+
 如果已拥有 Dynamics 365 for Sales、Dynamics 365 for Marketing 和 Dynamics 365 for Customer Service 应用的相关经验，则可运用自身相关经验来自定义和扩展 Common Data Service for Apps。
 
 如果不熟悉 Dynamics 365 for Sales、Dynamics 365 for Marketing 和 Dynamics 365 for Customer Service 应用，可借助以下主题获取重要相关概念的高级概述，并开始使用 Common Data Service for Apps。
@@ -52,7 +59,7 @@ PowerApps 为用户、企业、独立软件供应商 (ISV) 和系统集成商 (S
 |插件注册工具 `PluginRegistration.exe`|用于将 .NET 程序集插件类订阅到服务器事件的工具。 <br />详细信息： <br />[创建插件](apply-business-logic-with-code.md#create-a-plug-in)<br />[Dynamics 365 客户参与开发人员指南：演练：使用插件注册工具注册插件](/dynamics365/customer-engagement/developer/walkthrough-register-plugin-using-plugin-registration-tool)|
 |SolutionPackager 工具 `SolutionPackager.exe`|一种工具，可将 Common Data Service for Apps 压缩解决方案文件逆向分解为多个 XML 文件和其他文件，以便源代码管理系统可以轻松管理这些文件。<br /> 详细信息： <br />[解决方案的团队开发](introduction-solutions.md#team-development-of-solutions)<br />[Dynamics 365 客户参与开发人员指南：使用 SolutionPackager 工具压缩和提取解决方案文件](/dynamics365/customer-engagement/developer/compress-extract-solution-file-solutionpackager)|
 
-### <a name="net-sdk-assemblies"></a>.NET SDK 程序集 
+### <a name="net-sdk-assemblies"></a>.NET SDK 程序集
 
 以下是 .NET 开发人员可使用的程序集。 可在相应的 NuGet 包中下载最新版本。
 

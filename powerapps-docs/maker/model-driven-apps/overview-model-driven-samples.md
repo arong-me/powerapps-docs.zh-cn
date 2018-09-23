@@ -3,19 +3,19 @@ title: 模型驱动示例应用
 description: 了解如何获取、自定义并删除模型驱动示例应用。
 documentationcenter: na
 author: caburk
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
 ms.date: 03/08/2018
 ms.author: caburk
-ms.openlocfilehash: 36e5efec10a3f849b6366368eed7b3b9e7af3f8c
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 0b34a32281fb4f64bc918de81b3920edf5a7000b
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898366"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39664418"
 ---
 # <a name="model-driven-sample-apps"></a>模型驱动示例应用
 
@@ -70,7 +70,7 @@ ms.locfileid: "37898366"
 
     ![删除解决方案](media/overview-model-driven-samples/delete-solution.png)
 
-或者通过单击创建者门户中的“高级”导航到解决方案列表，然后删除 URL 中 .Dynamics.com/ 后的所有内容
+或者通过单击创建者门户中的“高级”导航到解决方案列表，然后删除 URL 中 .Dynamics.com/ 后的所有内容**
 
 > [!IMPORTANT]
 > 除非了解所造成的影响，否则不要删除其他系统解决方案。
