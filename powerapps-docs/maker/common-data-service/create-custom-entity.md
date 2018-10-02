@@ -1,131 +1,140 @@
 ---
-title: 教程：借助 PowerApps 创建带组件的自定义实体 | Microsoft Docs
-description: 本教程提供分步说明，介绍如何创建并配置实体以将其与 PowerApps 应用结合使用。
+title: 使用 PowerApps 创建包含组件的自定义实体的教程 | Microsoft Docs
+description: 包含创建和配置实体以使用 PowerApps 应用程序的分步说明的教程。
 author: Mattp123
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: tutorial
-ms.date: 05/01/2018
+ms.date: 06/22/2018
 ms.author: matp
-ms.openlocfilehash: f611ef7be4d91b76f0be24116aabc7795d332520
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218455"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="tutorial-create-a-custom-entity-that-has-components-in-powerapps"></a>教程：在 PowerApps 中创建带组件的自定义实体
 
-可借助 [!INCLUDE [powerapps](../../includes/powerapps.md)]，基于组织的行业、命名法和独特的业务流程量身定制应用。 [!INCLUDE [powerapps](../../includes/powerapps.md)] 应用开发包括添加“现成的”标准实体或创建自定义实体。 实体定义要跟踪的信息（采用记录的形式），通常包括公司名称、位置、产品、电子邮件和电话号码等属性。 
+# <a name="tutorial-create-a-custom-entity-that-has-components-in-powerapps"></a>教程：在 PowerApps 中创建包含组件的自定义实体
 
-本教程创建一个实体并添加或自定义关键组件，例如字段、关系、视图和窗体。 了解如何：
+使用 PowerApps，您可以定制您的应用程序使之适合您组织的行业、命名法和特定业务过程。 PowerApps 应用程序开发包括添加现成的标准实体或创建自定义实体。 实体定义您要以记录形式跟踪的信息，通常包括公司名称、地点、产品、电子邮件和电话等属性。 
 
-- 创建自定义实体
-- 将自定义字段添加到实体
+在本教程中，您创建实体，然后添加或自定义关键组件（如字段、关系、视图和窗体）。 您了解如何：
+
+- 创建自定义实体。
+- 向您的实体添加自定义字段
 - 添加实体关系
 - 自定义视图 
 - 自定义窗体
 
-本教程以 Contoso 公司为例，该公司是为狗和猫提供美容护理服务的宠物美容护理公司。 Contoso 需要一款供员工使用、用于客户和宠物跟踪且能够在多种设备上使用的应用。
+本教程将以公司 Contoso 为例，这是一家打理狗和猫造型的宠物美容公司。 Contoso 需要一个可由员工跨各种设备使用的客户和宠物跟踪应用程序。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件 
 
-登录 [PowerApps](https://powerapps.microsoft.com/)。 如果尚不拥有 [!INCLUDE [powerapps](../../includes/powerapps.md)] 帐户，请从 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中选择“免费开始使用”链接。
+登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 如果还没有 PowerApps 帐户，请从 [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 选择**免费开始**链接。
 
-## <a name="create-a-custom-entity"></a>创建自定义实体
+## <a name="create-a-custom-entity"></a>创建自定义实体。
 
-1. 在左侧导航窗格中，展开“数据”，选择“实体”，然后选择“新实体”。
-    ![新建实体](media/create-custom-entity/create-new-entity.png)
-2. 在右侧窗格中，输入下列值，然后选择“下一步”。
-   - **显示名称**：宠物 
-   - **描述**：用于跟踪宠物服务的自定义实体
-3. 选择“保存实体”。
+1. 在左侧导航窗格上，展开**数据**，选择**实体**，然后选择**新建实体**。
+    > [!div class="mx-imgBorder"] 
+    > ![新建实体](media/create-custom-entity/create-new-entity.png)
+2. 在右侧窗格中，输入以下值，然后选择**下一步**。
+  - **显示名称**：*宠物* 
+  - **描述**：*跟踪宠物服务的自定义实体*
+3. 选择**保存实体**。
 
 ## <a name="add-and-customize-fields"></a>添加和自定义字段
  
-1. 在“字段”选项卡上选择“主要名称”字段。
-2. 在右侧窗格中，对“主要名称”字段做出以下更改： 
-   - 将“显示名称”从“主要名称”更改为“宠物名称”
-   - 选中“可搜索”  
+1. 在实体列表中，选择在前面部分创建的**宠物**实体。
+2. 在**字段**选项卡上，选择**宠物**字段。
+3. 在右侧窗格中，对**显示名称**字段进行以下更改： 
+  - 将**显示名称**从**宠物**更改为*宠物名称*
+  - 选择**可搜索**  
   
-     ![更改主要字段](media/create-custom-entity/primary-field.png)
-3. 选择“完成”。
-4. 在“字段”选项卡中的实体设计器工作栏上选择“添加”字段。 在“字段属性”窗格中输入或选择下列值和选项。
-   - **显示名称**。 种类
-   - **数据类型**。 选项集
-   - **选项集**。 新选项集
+    > [!div class="mx-imgBorder"] 
+    > ![更改主要字段](media/create-custom-entity/primary-field.png)
+3. 选择**无**。
+4. 在实体设计器工具栏的**字段**选项卡上，选择**添加字段**。 在**字段属性**窗格上，输入或选择下列值和选项。
+  - **显示名称**。 *种类*
+  - **数据类型**。 *选项集*
+  - **选项集**。 *新建选项集*
 5. 创建选项集
 
-   a. 选择“添加新项”。 
+  a. 选择**添加新项**。 
   
-   b. 将“新选项”替换为“狗”。 
+  b. 使用*狗*替换**新选项**。 
    
-   c. 选择“添加新项”。 
+  c. 选择**添加新项**。 
     
-   d.  将“新选项”替换为“猫”。 
+  d.  使用*猫*替换**新选项**。 
     
-   e. 选择“保存”。 
+  e. 选择**保存**。 
 
-   ![新选项集](media/create-custom-entity/optionset-add-items.png)
+  > [!div class="mx-imgBorder"] 
+  > ![新建选项集](media/create-custom-entity/optionset-add-items.png)
 
-6. 选中“可搜索”，然后选择“完成”。
+6. 选择**可搜索**，然后选择**完成**。
 
-7. 在实体设计器工具栏上选择“添加字段”。 在“字段属性”窗格中输入或选择下列值，然后选择“完成”。
-   - **显示名称**。 品种
-   - **数据类型**。 *文本*
-   - **可搜索**。 是
+7. 在实体设计器工具栏上，选择**添加字段**。 在**字段属性**窗格上，输入或选择下列值，然后选择**完成**。
+  - **显示名称**。 *品种*
+  - **数据类型**。 *文本*
+  - **可搜索**。 *是*
 
-8. 在实体设计器工具栏上选择“添加字段”。 
+8. 在实体设计器工具栏上，选择**添加字段**。 
 
-9. 在“字段属性”窗格中输入或选择下列值，然后选择“完成”。 
-   - **显示名称**。 预约日期
-   - **数据类型**。 日期和时间
+9. 在**字段属性**窗格上，输入或选择下列值，然后选择**完成**。 
+  - **显示名称**。 *预约日期*
+  - **数据类型**。 *日期和时间*
 
-10. 选择“保存实体”。
+10. 选择**保存实体**。
 
 ## <a name="add-a-relationship"></a>添加关系
 
-1. 选择“关系”选项卡，然后在实体设计器工具栏上选择“添加关系”，再选择“多对一”。 
-2. 在右窗格中的“相关”列表，选择“帐户”。
-3. 选择“完成”。
-4. 选择“保存实体”。
+1. 选择**关系**选项卡，在实体设计器工具栏上，选择**添加关系**，然后选择**多对一**。 
+2. 在右侧窗格中，在**相关**列表中选择**客户**。
+3. 选择**无**。
+4. 选择**保存实体**。
 
-请注意，在添加多对一关系时，会自动在“字段”选项卡上的字段列表中添加一个数据类型为“查找”的“帐户”字段。![帐户查找字段](media/create-custom-entity/account-lookup-field.png)
+  请注意，在添加多对一关系时，数据类型为**查找**的**客户**字段将被自动添加到**字段**选项卡上的字段列表中。
+  > [!div class="mx-imgBorder"]
+  > ![客户查找字段](media/create-custom-entity/account-lookup-field.png)
 
 ## <a name="customize-a-view"></a>自定义视图
 
-1. 选择“视图”选项卡，然后选择“活动宠物”视图。 如果没有显示“活动宠物”视图，可选择“删除筛选器”。
-2. 在视图设计器上选择“添加列”，选择以下列，然后选择“确定”。
-   - 帐户
-   - 预约日期 
-   - 品种 
-   - 种类
-3. 选择“创建日期”列，选择“删除”，然后选择“确定”以确认删除此列。
-4. 若要将这些列进行排列，选择要移动的列，然后使用 <- 和 -> 箭头按钮，直到视图如下显示为止。
-    ![活动宠物视图](media/create-custom-entity/active-pets-view.png)
-5. 在视图设计器工具栏上选择“保存并关闭”。  
+1. 选择**视图**选项卡，然后选择**有效宠物**视图。 如果看不到**活动宠物**视图，选择**移除筛选器**。
+2. 在视图设计器中选择**添加列**，选择以下列，然后选择**确定**。
+  - 客户
+  - 预约日期 
+  - 品种 
+  - 种类
+3. 选择**创建日期**列，选择**删除**，然后选择**确定**确认列删除。
+4. 若要安排列，选择要移动的列，然后使用 <- 和 -> 箭头按钮，直到您的视图如下所示。
+    > [!div class="mx-imgBorder"] 
+    > ![有效宠物视图](media/create-custom-entity/active-pets-view.png)
+5. 在视图设计器工具栏中，选择**保存并关闭**。  
 
-## <a name="model-driven-apps-only-customize-the-main-form"></a>仅限模型驱动应用：自定义主窗体
+## <a name="model-driven-apps-only-customize-the-main-form"></a>模型驱动应用程序仅：自定义主窗体
 
-如果只想在画布应用中使用“宠物”实体，请跳过此步骤。 
+如果您要在画布应用程序中使用“宠物”实体，请跳过此步骤。 
 
-1. 在 [!INCLUDE [powerapps](../../includes/powerapps.md)] 左侧导航窗格中，选择“模型驱动”。
-2. 在左侧导航窗格中，展开“数据”，选择“实体”，然后选择“宠物”。
-3. 选择“窗体”选项卡，然后选择“主要”窗体类型旁边的“信息”以打开窗体编辑器。
-    ![编辑主窗体](media/create-custom-entity/main-form-edit.png)
-4. 在窗体编辑器上，将字段资源管理器窗格上的“种类”、“品种”、“预约日期”和“帐户”字段拖放至窗体画布的“常规”部分，使窗体显示如下。
-    ![为主窗体选择字段](media/create-custom-entity/main-form-edit2.png) 
-5. 选择“保存”。
-6. 选择“发布”。
-7. 选择“保存并关闭”以关闭窗体设计器。
+1. 在 PowerApps 的左侧导航窗格中，选择**模型驱动**。
+2. 在左侧导航窗格上，展开**数据**，选择**实体**，然后选择**宠物**。
+3. 选择**窗体**选项卡，然后选择**主**窗体类型旁边的**信息**以打开窗体编辑器。
+    > [!div class="mx-imgBorder"] 
+    > ![编辑主窗体](media/create-custom-entity/main-form-edit.png)
+4. 在窗体编辑器中，将位于“字段资源管理器”窗格上的**种类**、**品种**、**预约日期**和**客户**字段拖放到窗体画布的“常规”部分，直到窗体如下所示。
+    > [!div class="mx-imgBorder"] 
+    > ![选择主窗体的字段](media/create-custom-entity/main-form-edit2.png) 
+5. 选择**保存**。
+6. 选择**发布**。
+7. 选择**保存并关闭**以关闭窗体设计器。
 
-## <a name="add-the-custom-entity-to-an-app"></a>将自定义实体添加到应用
+## <a name="add-the-custom-entity-to-an-app"></a>将自定义实体添加到应用程序
 
-现在实体已可用于构建画布应用或模型驱动应用了。 
+现在，您的实体已经可以用于构建画布或模型驱动应用程序了。 
 
 ## <a name="next-steps"></a>后续步骤
 
-本教程介绍了如何创建可用于构建有用应用的实体。 
-- 若要了解创建模型驱动的应用的方式，请参阅[生成首个模型驱动应用](../model-driven-apps/build-first-model-driven-app.md)。
-- 若要了解如何创建画布应用，请参阅[从头开始创建应用](../canvas-apps/get-started-create-from-blank.md)。
+在本教程中，您了解了如何创建可用于创建有用应用程序的实体。 
+- 若要了解如何创建模型驱动应用程序，请参阅[构建您的第一个模型驱动应用程序](../model-driven-apps/build-first-model-driven-app.md)。
+- 若要了解如何创建画布应用程序，请参阅[从头创建应用程序](../canvas-apps/get-started-create-from-blank.md)。

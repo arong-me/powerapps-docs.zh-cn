@@ -1,6 +1,6 @@
 ---
-title: 需要 PowerApps 计划 2 许可证的复杂实体 |Microsoft Docs
-description: Common Data Service (CDS) for Apps 中复杂实体的列表，这些实体需要 PowerApps 计划 2 许可证。
+title: 需要 PowerApps 计划 2 许可证的复杂实体 | Microsoft Docs
+description: 需要 PowerApps 计划 2 许可证的面向应用程序的 Common Data Service (CDS) 中的复杂实体列表。
 author: clwesene
 manager: kvivek
 ms.service: powerapps
@@ -8,31 +8,31 @@ ms.component: cds
 ms.topic: reference
 ms.date: 07/17/2018
 ms.author: clwesene
-ms.openlocfilehash: 76c101f35e236ac6bf037d2b5b748ca1b943d61d
-ms.sourcegitcommit: efea7ed5ad8e80c87ba423fb094fa94b4e864d75
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39266246"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="complex-entities-and-licensing"></a>复杂实体和许可
-包含以下复杂服务器端逻辑的实体需要使用这些实体应用或流用户具有 PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证：
 
-* 代码插件。详细信息：[插件开发](https://docs.microsoft.com/dynamics365/customer-engagement/developer/plugin-development))
-* 实时工作流。 详细信息：[工作流进程](https://docs.microsoft.com/dynamics365/customer-engagement/customize/workflow-processes))
+# <a name="complex-entities-and-licensing"></a>复杂实体和许可
+包含以下复杂服务器端逻辑的实体需要使用这些实体的应用程序或流用户具有 PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证：
+
+* 代码插件。详细信息：[插件开发](https://docs.microsoft.com/dynamics365/customer-engagement/developer/plugin-development)）
+* 实时工作流。 详细信息：[工作流过程](https://docs.microsoft.com/dynamics365/customer-engagement/customize/workflow-processes)）
 
     > [!IMPORTANT]
-    >  只有那些转换为实时工作流的工作流才可视为实时的和同步的。 后台运行的工作流仍可与合适的 PowerApps 计划配合使用，并且不需要额外许可证。
+    >  只转换为实时工作流的工作流被视为实时和同步。 在后台运行的工作流仍可以用于相应的 PowerApps 计划且不需要额外许可证。
 
-若要了解是否向实体添加复杂业务逻辑，请检查环境中配置的插件程序集和工作流的列表。
+若要了解您是否已向实体添加了复杂的业务逻辑，请查看在您的环境中配置的插件程序集和工作流的列表。
 
-## <a name="complex-entities-installed-with-dynamics-365"></a>与 Dynamics 365 一起安装的复杂实体
-下表列出的实体包含复杂服务器端逻辑，作为 Dynamics 365 应用程序安装的一部分现成可用。 此列表旨在作为指南。 根据环境中安装了哪些 Dynamics 365 应用程序和版本，复杂实体的列表可能会有所不同。
+## <a name="complex-entities-installed-with-dynamics-365"></a>随 Dynamics 365 安装的复杂实体
+下表列出了包含在 Dynamics 365 应用程序安装中现成提供的复杂服务器端逻辑的实体。 此列表用作指南。 根据在您的环境中安装的 Dynamics 365 应用程序和版本，复杂实体的列表可能不同。
 
 > [!NOTE]
->  如果使用 Common Data Service 且未安装 Dynamics 365 应用程序或第三方解决方案，则你的环境中不会有包含复杂服务器端逻辑的实体。
+>  如果您使用的是 Common Data Service 且未安装 Dynamics 365 应用程序或第三方解决方案，您的环境将没有包含复杂服务器端逻辑的实体。
 
-* 帐户
+* 客户
 * 协议
 * 协议预订日期
 * 协议预订事件
@@ -44,17 +44,16 @@ ms.locfileid: "39266246"
 * 协议发票产品
 * 协议发票设置
 * 协议子状态
-* 可预订资源
-* 可预订资源预订
-* 可预订资源预订标头
-* 可预订资源类别
-* 可预订资源类别分配
-* 可预订资源特征
+* 可预订的资源
+* 可预订资源的预订
+* 可预订资源的预订标题
+* 可预订资源的类别
+* 可预订资源的类别 Assn
+* 可预订资源的特征
 * 可预订资源组
 * 预订警报
 * 预订警报状态
 * 预订状态
-* 用例
 * 特征
 * 资格要求（已弃用）
 * 竞争对手
@@ -63,9 +62,9 @@ ms.locfileid: "39266246"
 * 委派
 * 费用
 * 字段计算
-* 字段服务价格列表项
-* 筛选
-* 关注
+* Field Service 价目表项
+* Filter
+* 追随
 * 事件类型
 * 事件类型产品
 * 事件类型服务
@@ -78,33 +77,33 @@ ms.locfileid: "39266246"
 * 发票
 * 发票频率
 * 发票行
-* 发票行详细信息
-* 日志
-* 日志行
-* 潜在客户
-* 说明
+* 发票明细详细信息
+* 日记
+* 日记帐行
+* 潜在顾客
+* 注释
 * OData v4 数据源
 * 商机
-* 商机行
-* 商机行详细信息
+* 商机明细
+* 商机明细详细信息
 * 订单
 * 订单发票产品
 * 订单发票设置
-* 订单行
+* 订单明细
 * 付款
 * 付款详细信息
-* 发布配置
-* 发布规则配置
+* 公告配置
+* 公告规则配置
 * 邮政编码
-* 价格列表
-* 价格列表项
+* 价目表
+* 价目表项
 * 产品
 * 项目
 * 项目审批
-* 项目合同行详细信息
-* 项目合同行里程碑
-* 项目合同行资源类别
-* 项目合同行事务类别
+* 项目合同子项详细信息
+* 项目合同子项里程碑
+* 项目合同子项资源类别
+* 项目合同子项交易类别
 * 项目参数
 * 项目阶段
 * 项目任务状态用户
@@ -116,29 +115,29 @@ ms.locfileid: "39266246"
 * 采购订单收据产品
 * 采购订单子状态
 * 队列项
-* 报价
-* 报价预订事件
-* 报价预订产品
-* 报价预订服务
-* 报价预订服务任务
-* 报价预订设置
-* 报价发票产品
-* 报价发票设置
-* 报价行
-* 报价行详细信息
-* 报价行里程碑
-* 报价行资源类别
-* 报价行事务类别
-* 报价项目价格列表
+* 报价单
+* 报价单预订事件
+* 报价单预订产品
+* 报价单预订服务
+* 报价单预订服务任务
+* 报价单预订设置
+* 报价单发票产品
+* 报价单发票设置
+* 报价单明细
+* 报价单行明细
+* 报价单明细里程碑
+* 报价单明细资源类别
+* 报价单明细交易类别
+* 报价单项目价目表
 * 评分模型
 * 评分值
-* 需求特征
-* 需求资源类别
-* 需求资源首选项
-* 需求状态
+* 要求特征
+* 要求资源类别
+* 要求资源首选项
+* 要求状态
 * 资源请求
-* 资源需求
-* 资源需求详细信息
+* 资源要求
+* 资源要求详细信息
 * RMA
 * RMA 产品
 * RMA 收据
@@ -149,16 +148,16 @@ ms.locfileid: "39266246"
 * RTV
 * RTV 产品
 * RTV 子状态
-* 税务代码
-* 税务代码详细信息
+* 税码
+* 税码详细信息
 * 时间条目
 * 时间组
 * 时间组详细信息
-* 休假请求
-* 事务类别价格
+* 休息时间请求
+* 交易类别价格
 * 用户
-* 查看
-* 墙面景观
+* 视图
+* 留言板视图
 * 仓库
 * 工作订单
 * 工作订单事件

@@ -1,6 +1,6 @@
 ---
-title: 实体的许可证要求| Microsoft Docs
-description: 介绍 Common Data Service (CDS) for Apps 中实体的许可证要求。
+title: 实体的许可证要求 | Microsoft Docs
+description: 阐述面向应用程序的 Common Data Service (CDS) 内实体的许可证要求。
 author: clwesene
 manager: kfile
 ms.service: powerapps
@@ -8,91 +8,91 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 05/01/2018
 ms.author: clwesene
-ms.openlocfilehash: 4350f7141adf0fbce3e74271d6aff48c18c857e2
-ms.sourcegitcommit: 2bcc36916f0c591466eb3e007c2d30b99f2315c6
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40009250"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
+
 # <a name="license-requirements-for-entities"></a>实体的许可证要求
-应用创建者可使用 Common Data Service (CDS) for Apps 中提供的大部分实体（包括自定义实体和部分常见数据模型实体），为有 PowerApps 计划 1 或 Microsoft Flow 计划 1 许可证的用户创建应用和流。 某些情况下，实体包含复杂的业务逻辑，或与要求应用用户具有特定许可证的 Dynamics 365 应用程序相关联。 
+应用程序制造者可以使用面向应用程序的 Common Data Service (CDS) 内提供的多数实体（包括自定义实体或属于通用数据模型一部分的实体）来为有 PowerApps 计划 1 或 Microsoft Flow 计划 1 许可证的用户创建应用程序和流。 在有些情况下，实体包含复杂的业务逻辑或绑定到需要应用程序用户具有特定许可证的 Dynamics 365 应用程序。 
 
 
-|实体    |描述    |要求    |
+|实体    |说明    |要求    |
 |---------|---------|---------|
-|具有复杂业务逻辑的实体   | 这些是使用复杂服务器端业务逻辑的实体。 例如，使用实时工作流或代码插件的任何实体。       |  [PowerApps 计划 2](https://powerapps.microsoft.com/pricing/) 或 [Flow 计划 2](https://flow.microsoft.com/pricing/)        |
-|受限的实体  |  这些实体不是 Common Data Service for Apps 的标配，但包含在 Dynamics 365 客户参与应用程序或第三方解决方案中。 例如，知识库文章、目标和授权的实体。     |  [Dynamics 365 计划](https://dynamics.microsoft.com/pricing/)      | 
+|具有复杂业务逻辑的实体   | 这些是使用复杂的服务器端业务逻辑的实体。 例如，使用实时工作流或代码插件的任何实体。       |  [PowerApps 计划 2](https://powerapps.microsoft.com/pricing/) 或者 [Flow 计划 2](https://flow.microsoft.com/pricing/)        |
+|受限实体  |  这些不是面向应用程序的 Common Data Service 的标准实体，但包括在 Dynamics 365 customer engagement 应用程序或第三方解决方案中。 例如，知识文章、目标和权利实体。     |  [Dynamics 365 计划](https://dynamics.microsoft.com/pricing/)      | 
 
 
 > [!NOTE]
-> 使用这些实体的应用和流需要应用和流用户（而不是应用和流的创建者或开发人员）拥有正确的许可证。
+> 使用这些实体的应用程序和流需要应用程序和流用户获得适当许可-不是应用程序或流的制造者或开发人员。
 
 ## <a name="entities-with-complex-business-logic"></a>具有复杂业务逻辑的实体
-包含以下复杂服务器端逻辑的实体需要使用这些实体应用或流用户具有 PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证：
+包含以下复杂服务器端逻辑的实体需要使用这些实体的应用程序或流用户具有 PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证：
 
 * 代码插件（有关详细信息，请参阅[插件开发](https://docs.microsoft.com/dynamics365/customer-engagement/developer/plugin-development)）
-* 实时工作流（有关详细信息，请参阅[工作流流程](https://docs.microsoft.com/dynamics365/customer-engagement/customize/workflow-processes)）
+* 实时工作流（有关详细信息，请参阅[工作流过程](https://docs.microsoft.com/dynamics365/customer-engagement/customize/workflow-processes)）
 
     > [!NOTE]
-    >  只有那些转换为实时工作流的工作流才可视为实时的和同步的。 后台运行的工作流仍可与合适的 PowerApps 计划配合使用，并且不需要额外许可证。
+    >  只转换为实时工作流的工作流被视为实时和同步。 在后台运行的工作流仍可以用于相应的 PowerApps 计划且不需要额外许可证。
 
-若要了解是否向实体添加复杂业务逻辑，请检查环境中配置的插件程序集和工作流的列表。 有关安装 Dynamics 365 应用程序后可能包含服务器端逻辑的实体的列表，请参阅[需要 PowerApps 计划 2 许可证的复杂实体](data-platform-complex-entities.md)  
+若要了解您是否已向实体添加了复杂的业务逻辑，请查看在您的环境中配置的插件程序集和工作流的列表。 有关在安装 Dynamics 365 应用程序之后可能包含服务器端逻辑的实体列表，请参阅[需要 PowerApps 计划 2 许可证的复杂实体](data-platform-complex-entities.md)  
 
-### <a name="impacting-license-requirements-when-adding-complex-business-logic"></a>添加复杂业务逻辑时影响许可证要求
-应用创建者可将代码插件和实时工作流添加到 CDS for Apps 的实体中，但执行此操作可能会更改已部署应用的用户的许可证要求。 应用创建者在向实体添加复杂业务逻辑时应谨慎认真，首先检查使用该实体的具体应用以及这些应用的用户是否具有正确的许可证。
+### <a name="impacting-license-requirements-when-adding-complex-business-logic"></a>当添加复杂的业务逻辑时影响许可证要求
+应用程序制造者可以向面向应用程序的 CDS 内的实体添加代码插件和实时工作流，但这样做可能会更改已经部署的应用程序的用户的许可证要求。 应用程序制造者在向实体添加复杂的业务逻辑时应当谨慎，应先检查哪些应用程序使用该实体，以及这些应用程序的用户是否具有适当的许可证。
 
-## <a name="restricted-entities"></a>受限的实体
-与 Dynamics 365 应用程序功能关联的某些实体要求应用用户在创建、更新或删除实体内记录时需要具有该应用程序相应的许可证。 有关受限实体的完整列表，请参阅[要求 Dynamics 365 许可证的受限实体](data-platform-restricted-entities.md)。
+## <a name="restricted-entities"></a>受限实体
+绑定到 Dynamics 365 应用程序的功能的某些实体需要应用程序用户有该应用程序的相应许可证（如果他们希望创建、更新或删除实体内的记录）。 有关受限实体的完整列表，请参阅[需要 Dynamics 365 许可证的受限实体](data-platform-restricted-entities.md)。
 
 ## <a name="licensing-examples"></a>许可示例
-Barb 和 Isaac 正在使用 CDS for Apps 在 PowerApps 中创建应用，用于存储数据。
+Barb 和 Isaac 在使用面向应用程序的 CDS 存储数据的 PowerApps 中创建应用程序。
 
-Barb 正在创建两个画布应用：
+Barb 创建两个画布应用程序：
 
-* 应用 1 &ndash; 使用联系人实体以及存储相关信息的自定义实体
-* 应用 2 &ndash; 使用联系人实体以及属于受限实体的事件实体
+* 应用程序 1 &ndash; 使用联系人实体以及存储相关信息的自定义实体。
+* 应用程序 2 &ndash; 使用联系人实体以及事件实体，其是受限实体
 
-Isaac 正在创建两个模型驱动应用：
+Isaac 创建两个模型驱动应用程序：
 
-* 应用 3 &ndash; 使用联系人实体以及存储相关信息的自定义实体
-* 应用 4 &ndash; 使用联系人实体以及属于受限实体的事件实体
-
-Barb 和 Isaac 需要以下许可证：
-* Barb 需要 PowerApps 计划 1 许可证才能使用 CDS for Apps 创建画布应用。 如果她需要创建数据库或创建自定义实体，则应具有 PowerApps 计划 2 许可证。
-
-* Isaac 需要 PowerApps 计划 2 许可证来构建模型驱动应用。
-
-应用用户需要以下许可证：
-* 应用 1 用户仅需要 PowerApps 计划 1 或计划 2 许可证，因为该应用不包含任何具有复杂业务逻辑的实体或受限实体。
-
-* 应用 2 用户需要 Dynamics 365 for Customer Service 企业版许可证（或 Dynamics 365 或 Dynamics 365 Customer Engagement 计划），因为该应用包含受限实体。
-
-* 应用 3 用户需要 PowerApps 计划 2 许可证，因为这是模型驱动应用。
-
-* 应用 4 用户需要 Dynamics 365 for Customer Service 企业版许可证（或 Dynamics 365 或 Dynamics 365 Customer Engagement 计划），因为该应用包含受限实体。
-
-    Dynamics 365 for Customer Service 计划包括 PowerApps 计划 2 许可证，允许用户运行模型驱动应用。
-
-现在，我们一起看看 Isaac 向 Barb 和 Isaac 在其应用中使用的自定义实体添加实时工作流之后会发生什么。
+* 应用程序 3 &ndash; 使用联系人实体以及存储相关信息的自定义实体。
+* 应用程序 4 &ndash; 使用联系人实体以及事件实体，其是受限实体
 
 Barb 和 Isaac 需要以下许可证：
-* Barb 仍然需要 PowerApps 计划 1 许可证才能使用 CDS for Apps 创建画布应用。
+* Barb 需要 PowerApps 计划 1 许可证来使用面向应用程序的 CDS 创建画布应用程序。 如果她需要创建数据库或创建自定义实体，她将需要 PowerApps 计划 2 许可证。
 
-* Isaac 仍然需要 PowerApps 计划 2 许可证来构建模型驱动应用。
+* Isaac 需要 PowerApps 计划 2 许可证来生成模型驱动应用程序。
 
-应用用户需要以下许可证：
-* 应用 1 用户现在需要 PowerApps 计划 2 许可证，因为该应用包含具有实时工作流的实体。
+应用程序用户需要以下许可证：
+* 应用程序 1 的用户只需要 PowerApps 计划 1 或计划 2 许可证，因为该应用程序不包含具有复杂业务逻辑的任何实体或受限实体。
 
-* 应用 2 用户仍然需要 Dynamics 365 for Customer Service 企业版许可证（或 Dynamics 365 或 Dynamics 365 Customer Engagement 计划），因为该应用包含受限实体。 
+* 应用程序 2 的用户需要 Dynamics 365 for Customer Service Enterprise edition 许可证（或 Dynamics 365 或 Dynamics 365 Customer Engagement 计划），因为该应用程序包含受限实体。
 
-* 应用 3 用户仍然需要 PowerApps 计划 2 许可证，因为这是模型驱动应用。
+* 应用程序 3 的用户需要 PowerApps 计划 2 许可证，因为它是模型驱动应用程序。
 
-* 应用 4 用户仍然需要 Dynamics 365 for Customer Service 企业版许可证（或 Dynamics 365 或 Dynamics 365 Customer Engagement 计划），因为该应用包含受限实体。
+* 应用程序 4 的用户需要 Dynamics 365 for Customer Service Enterprise edition 许可证（或 Dynamics 365 或 Dynamics 365 Customer Engagement 计划），因为该应用程序包含受限实体。
 
-    Dynamics 365 for Customer Service 计划包括 PowerApps 计划 2 许可证，允许用户运行模型驱动应用。
+    Dynamics 365 for Customer Service 计划包含 PowerApps 计划 2 许可证，让用户可以运行模型驱动应用程序。
 
-唯一受此更改影响的应用是应用 1，它之前需要 PowerApps 计划 1 许可证，但现在需要 PowerApps 计划 2 许可证，因为它包含具有复杂业务逻辑的实体。 
+现在，让我们看看当 Isaac 向 Barb 和 Isaac 都在其应用程序中使用的自定义实体添加实时工作流时会发生什么。
+
+Barb 和 Isaac 需要以下许可证：
+* Barb 仍需要 PowerApps 计划 1 许可证来使用面向应用程序的 CDS 创建画布应用程序。
+
+* Isaac 仍需要 PowerApps 计划 2 许可证来生成模型驱动应用程序。
+
+应用程序用户需要以下许可证：
+* 应用程序 1 的用户现在需要 PowerApps 计划 2 许可证，因为该应用程序包含具有实时工作流的实体。
+
+* 应用程序 2 的用户仍需要 Dynamics 365 for Customer Service Enterprise edition 许可证（或 Dynamics 365 或 Dynamics 365 Customer Engagement 计划），因为该应用程序包含受限实体。 
+
+* 应用程序 3 的用户仍需要 PowerApps 计划 2 许可证，因为它是模型驱动应用程序。
+
+* 应用程序 4 的用户仍需要 Dynamics 365 for Customer Service Enterprise edition 许可证（或 Dynamics 365 或 Dynamics 365 Customer Engagement 计划），因为该应用程序包含受限实体。
+
+    Dynamics 365 for Customer Service 计划包含 PowerApps 计划 2 许可证，让用户可以运行模型驱动应用程序。
+
+受此更改影响的唯一应用程序是应用程序 1，其之前需要 PowerApps 计划 1 许可证，但现在需要 PowerApps 计划 2 许可证，因为它包含具有复杂业务逻辑的实体。 
 
 ## <a name="more-about-licensing"></a>有关许可的更多信息
 有关 PowerApps 和 Dynamics 365 许可证的详细信息，请参阅[许可概述](../../administrator/pricing-billing-skus.md)。
