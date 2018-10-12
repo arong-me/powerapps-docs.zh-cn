@@ -9,53 +9,54 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 3ccbd8de-8d6f-4058-87f7-15463667cfc6
 caps.latest.revision: 41
 ms.author: matp
 manager: kvivek
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+ms.openlocfilehash: 797d6855bea421abd90752dd9ae0ad73a9d92f38
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39668809"
 ---
 # <a name="edit-system-entity-messages"></a>编辑系统实体消息
 
-有些系统实体的默认显示名称会用在面向应用程序的 Common Data Service 中的用户界面文本和错误消息中。 如果更改显示名称，则还应更新使用默认显示名称的所有消息。 例如，如果将显示名称从*客户*更改为*公司*，则仍可能看到使用旧名称的错误消息。  
+某些系统实体的默认显示名称用于 Common Data Service for Apps 中的界面文本和错误消息。 如果更改显示名称，也应该更新使用默认显示名称的所有消息。 例如，如果将显示名称从“帐户”更改为“公司”，仍然可能会看到使用旧名称的错误消息。  
 
-无法使用 PowerApps 门户编辑系统消息，必须使用解决方案资源管理器。
+不能使用 PowerApps 门户编辑系统消息，必须使用解决方案资源管理器。
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 
-在解决方案资源管理器中的实体下，如果看到**消息**节点，就可以编辑包含对原实体显示名称的引用的特定文本。 
+在解决方案资源管理器中的实体下方，如果看到“消息”节点，则可以编辑包含引用原始实体显示名称的某些文本。 
 
 ![实体消息](../model-driven-apps/media/entity-messages.png)
 
-编辑此文本很简单。 双击消息可看到一个包含三个字段的窗体：  
+编辑此文本非常简单。 双击消息以查看包含三个字段的窗体：  
   
-|字段|说明|  
+|字段|描述|  
 |-----------|-----------------|  
-|**默认的显示字符串**|显示原始文本。|  
+|**默认显示字符串**|显示原始文本。|  
 |**自定义显示字符串**|编辑此文本以更改显示字符串。|  
-|**注释**|可选。 包括有关更改内容及更改原因的注释。|  
+|**注释**|可选。 包括有关更改内容和原因的注释。|  
   
-有些消息文本中可以会有占位符。 这些占位符是在任何一侧有括号的数字。 例如：`{0}`。 这些占位符可用于在消息中插入文本。 如果编辑消息，请确保保留这些占位符。 
+某些消息文本中可能包含占位符。 这些占位符是两侧带括号的数字。 例如：`{0}`。 这些占位符允许在消息中插入文本。 如果要编辑消息，请确保保留这些占位符。 
 
-选择![保存](media/save-entity-icon-solution-explorer.png)以保存您所做的更改。 选择**保存并关闭**以在保存后关闭窗体。
+选择![保存](media/save-entity-icon-solution-explorer.png)以保存更改。 保存时，请选择“保存并关闭”以关闭窗体。
 
 > [!NOTE]
-> 虽然显示的用于编辑系统实体消息的 UI 包括很多对实体名称的引用，但不包括所有引用。 有关更全面的方式，请参阅[使用基本语言更新可本地化文本](../model-driven-apps/translate-localizable-text.md#updating-localizable-text-in-the-base-language)
+> 虽然为编辑系统实体消息而公开的 UI 包括许多对实体名称的引用，但是它并不包括所有内容。 有关更全面的方法，请参阅[更新采用基本语言的可本地化文本](../model-driven-apps/translate-localizable-text.md#updating-localizable-text-in-the-base-language)
 
 ## <a name="programmatically-update-entity-display-strings"></a>以编程方式更新实体显示字符串
 
-对于查找在代码中使用这些字符串的方法的开发人员，这些显示字符串存储在 [DisplayString](../../developer/common-data-service/reference/entities/displaystring.md) 实体中。 
+对于寻求在代码中使用这些字符串的方法的开发人员，显示字符串存储在 [DisplayString](../../developer/common-data-service/reference/entities/displaystring.md) 实体中。 
 
-`DisplayString` 实体不包含默认显示字符串。 对于这个包含文本的实体，它的两个属性是 [CustomDisplayString](../../developer/common-data-service/reference/entities/displaystring.md#BKMK_CustomDisplayString) 和 [PublishedDisplayString](../../developer/common-data-service/reference/entities/displaystring.md#BKMK_PublishedDisplayString)。 除非显示字符串是自定义的并且已经发布，否则这些属性值在默认情况下为空值。 `PublishedDisplayString` 值是只读的，反映当前发布的 `CustomDisplayString`。
+`DisplayString` 实体不包含默认显示字符串。 此包含文本的实体的两个属性是 [CustomDisplayString](../../developer/common-data-service/reference/entities/displaystring.md#BKMK_CustomDisplayString) 和 [PublishedDisplayString](../../developer/common-data-service/reference/entities/displaystring.md#BKMK_PublishedDisplayString)。 默认情况下，除非已自定义和发布了显示字符串，否则这些属性值为 Null。 `PublishedDisplayString` 值为只读，反映出当前发布的 `CustomDisplayString`。
  
 ## <a name="see-also"></a>另请参阅
 [编辑实体](edit-entities.md)<br />
-[翻译模型驱动应用程序的可本地化文本](../model-driven-apps/translate-localizable-text.md)
+[为模型驱动应用翻译可本地化文本](../model-driven-apps/translate-localizable-text.md)
