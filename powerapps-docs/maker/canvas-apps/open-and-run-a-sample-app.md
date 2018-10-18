@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5d4e88ca0a1e683d2f72e02625e6228d1063352f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 09d2bc10d465510887b546df8341c8798df136c1
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831798"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49316806"
 ---
 # <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>快速入门：根据 PowerApps 的示例创建画布应用
 在本快速入门教程中，将根据示例创建一个画布应用，以便探索设计的可能性，并发现在开发自己的应用时可以应用的概念。
@@ -30,11 +30,9 @@ ms.locfileid: "42831798"
 ## <a name="open-a-sample-app"></a>打开示例应用
 1. 登录 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
-    ![](./media/open-and-run-a-sample-app/sign-in.png)
-
 1. 在示例应用列表中，将鼠标悬停在示例应用（如成本估算器）上。
 
-    ![](./media/open-and-run-a-sample-app/sample-tile.png)
+    ![](./media/open-and-run-a-sample-app/cost-estimator.png)
 
 1. 单击或点击手机图标以创建适用于移动设备的应用版本（或保留选定的平板电脑图标），然后单击或点击“生成此应用”。
 
