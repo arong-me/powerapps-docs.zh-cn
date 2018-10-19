@@ -854,8 +854,6 @@
           href: ./common-data-service/set-managed-properties-relationships.md
         - name: 可视化分层数据
           href: ./common-data-service/visualize-hierarchical-data.md
-        - name: 查询和按层次结构可视化相关数据
-          href: ./common-data-service/query-visualize-hierarchical-data.md
         - name: 定义和按层次结构查询相关数据
           href: ./common-data-service/define-query-hierarchical-data.md
         - name: 配置连接角色
@@ -868,8 +866,6 @@
               href: ./common-data-service/create-edit-nn-relationships-solution-explorer.md
             - name: 如何设置关系的托管属性
               href: ./common-data-service/set-managed-properties-relationships.md
-            - name: 如何可视化分层数据
-              href: ./common-data-service/visualize-hierarchical-data.md
             - name: 如何查询和按层次结构可视化相关数据
               href: ./common-data-service/query-visualize-hierarchical-data.md
             - name: 如何定义和按层次结构查询相关数据
@@ -917,8 +913,6 @@
     - name: 使用解决方案
       href: ./common-data-service/solutions-overview.md
       items:
-        - name: 解决方案概述
-          href: ./common-data-service/solutions-overview.md
         - name: 使用解决方案资源管理器
           href: ./common-data-service/use-solution-explorer.md
         - name: 使用 Common Data Services 默认解决方案
@@ -969,6 +963,8 @@
   items:
     - name: 系统要求、限制和配置
       href: ./canvas-apps/limits-and-config.md
+    - name: 区域应用程序的性能提示
+      href: ./canvas-apps/performance-tips.md
     - name: 常见问题和解决方法
       href: ./canvas-apps/common-issues-and-resolutions.md
     - name: 获取会话或应用程序 ID

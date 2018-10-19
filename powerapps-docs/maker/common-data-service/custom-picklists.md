@@ -33,7 +33,8 @@ search.app:
 
 4. 在新字段面板中，为您的字段输入**显示名称**，**名称**将自动填充并用作字段的唯一名称。 **显示名称**在将此字段呈现给您的用户时使用，**名称**在生成应用程序时使用，使用表达式和公式形式。
 
-    ![新建字段](./media/data-platform-cds-create-entity/newfieldpanel.png "新建字段面板")
+    > [!div class="mx-imgBorder"] 
+    > ![新建字段](./media/data-platform-cds-create-entity/newfieldpanel.png "新建字段面板")
 
 5. 单击**数据类型**下拉列表并选择**选项集**或**多选选项集**。
 
@@ -46,34 +47,40 @@ search.app:
 
 7. 新面板将打开以创建选项集，**显示名称**和**名称**将默认为字段的名称，但如果需要可以更改。 单击**添加新项目**开始创建选项列表。 重复此步骤，直到您的所有项目全部创建。
 
-    ![新建选项集](./media/data-platform-cds-newoptionset/field-optionsetpanel.png "新建选项集")
+    > [!div class="mx-imgBorder"] 
+    > ![新建选项集](./media/data-platform-cds-newoptionset/field-optionsetpanel.png "新建选项集")
 
 8. 一旦您输入了项目，单击**保存**创建您的选项集。
 
-    ![新建选项集](./media/data-platform-cds-newoptionset/field-optionsetpanel-values.png "新建选项集")
+    > [!div class="mx-imgBorder"] 
+    > ![新建选项集](./media/data-platform-cds-newoptionset/field-optionsetpanel-values.png "新建选项集")
 
 9. 单击**完成**关闭字段面板，然后**保存实体**将实体保存到 Common Data Service。
 
     > [!NOTE]
     > 您可以选择其中一个项目作为此字段的**默认值**，它将在用户在实体中创建新记录时默认选项。
 
-    ![新建字段](./media/data-platform-cds-newoptionset/fieldpanel-2.png "新建字段面板")
+    > [!div class="mx-imgBorder"] 
+    > ![新建字段](./media/data-platform-cds-newoptionset/fieldpanel-2.png "新建字段面板")
 
 ## <a name="creating-an-option-set-from-the-option-set-list"></a>从选项集列表创建选项集
 
 1. 在 [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**选项集**。
 
-    ![选项集](./media/data-platform-cds-newoptionset/optionsetlist.png "选项集列表")
+    > [!div class="mx-imgBorder"] 
+    > ![选项集](./media/data-platform-cds-newoptionset/optionsetlist.png "选项集列表")
 
 2. 单击**新建选项集**
 
 3. 新面板将打开以创建选项集，输入**显示名称**和**名称**。 单击**添加新项目**开始创建选项列表。 重复此步骤，直到您的所有项目全部创建。
 
-    ![选项集创建](./media/data-platform-cds-newoptionset/optionset-create.png "选项集创建")
+    > [!div class="mx-imgBorder"] 
+    > ![选项集创建](./media/data-platform-cds-newoptionset/optionset-create.png "选项集创建")
 
 4. 一旦您输入了项目，单击**保存**创建您的选项集。
 
-    ![新建选项集](./media/data-platform-cds-newoptionset/optionset-create-values.png "新建选项集")
+    > [!div class="mx-imgBorder"] 
+    > ![新建选项集](./media/data-platform-cds-newoptionset/optionset-create-values.png "新建选项集")
 
 5. 现在您可以通过在实体上创建新字段来使用此选项集。
 

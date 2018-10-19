@@ -38,7 +38,8 @@ search.app:
 
 3. 复制新选项卡中该 URL 的根，这是您的环境的唯一 URL。 URL 格式将为 **https://yourenvironmentid.crm.dynamics.com/**，请确保不要复制 URL 的其余部分。 请将信息保留在方便的位置，以便您可以在创建 PowerBI 报表时使用它。
 
-    ![面向应用程序的 CDS 环境](./media/data-platform-cds-powerbi-connector/CDSEnv3.png "面向应用程序的 CDS 环境")
+    > [!div class="mx-imgBorder"] 
+    > ![面向应用程序的 CDS 环境](./media/data-platform-cds-powerbi-connector/CDSEnv3.png "面向应用程序的 CDS 环境")
 
 ## <a name="connecting-to-common-data-service-for-apps-from-power-bi-desktop"></a>从 Power BI Desktop 连接到面向应用程序的 Common Data Service
 

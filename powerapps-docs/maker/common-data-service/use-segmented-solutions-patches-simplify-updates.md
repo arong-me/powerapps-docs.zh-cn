@@ -72,8 +72,9 @@ search.app:
  以下各图提供了通过从 `Account`、`Case` 和 `Contact` 实体选择实体资产创建细分的解决方案的示例。  
   
  通过选择**实体**组件开始。  
-  
- ![添加现有资源。](media/solution-segmentation-add-existing-resources-admin.png "添加现有资源。")  
+
+ > [!div class="mx-imgBorder"] 
+ > ![添加现有资源。](media/solution-segmentation-add-existing-resources-admin.png "添加现有资源。")  
   
  然后，选择解决方案组件。  
   
@@ -97,7 +98,8 @@ search.app:
   
  结果，所创建的细分的解决方案包含三个实体：`Account`、`Case` 和 `Contact`。 每个实体仅包含所选择的资产。  
   
- ![带实体的解决方案。](media/solution-segmentation-solution-entities-admin.png "带实体的解决方案。")  
+ > [!div class="mx-imgBorder"] 
+ > ![带实体的解决方案。](media/solution-segmentation-solution-entities-admin.png "带实体的解决方案。")  
   
 ## <a name="create-a-solution-patch"></a>创建解决方案修补程序  
  修补程序包含对父解决方案的更改，例如添加或编辑组件和资产。 不必包括父解决方案的组件，除非您计划对其进行编辑。  
@@ -114,7 +116,8 @@ search.app:
   
  下图提供为现有解决方案创建修补程序的示例。 通过选择**克隆修补程序**开始（在压缩视图中，**克隆修补程序**图标显示为两个小的正方形，如下所示）。  
   
- ![克隆修补程序图标。](media/solution-segmentation-click-patch-icon-admin.png "克隆修补程序图标。")  
+ > [!div class="mx-imgBorder"] 
+ > ![克隆修补程序图标。](media/solution-segmentation-click-patch-icon-admin.png "克隆修补程序图标。")  
   
  在**克隆至修补程序**对话框中，您会看到，修补程序的版本号基于父解决方案的版本号，但内部版本号递增 1。 每个后续的修补程序都有比之前的修补程序更高的内部版本号或修订号。  
   
@@ -122,7 +125,8 @@ search.app:
   
  以下屏幕截图显示基本解决方案 **SegmentedSolutionExample** 版本 **1.0.1.0** 和修补程序 **SegmentedSolutionExample_Patch** 版本 **1.0.2.0**。  
   
- ![带解决方案和修补程序的网格。](media/solution-segmentation-solution-patch-grid-admin.png "带解决方案和修补程序的网格。")  
+ > [!div class="mx-imgBorder"] 
+ > ![带解决方案和修补程序的网格。](media/solution-segmentation-solution-patch-grid-admin.png "带解决方案和修补程序的网格。")  
   
  在修补程序中，我们添加了一个名为 `Book` 的新自定义实体，并在修补程序包含了 `Book` 实体的所有资产。  
   
@@ -143,7 +147,8 @@ search.app:
   
  克隆后，新解决方案版本包含三个原始实体（`Account`、`Case` 和 `Contact`），以及在修补程序中添加的名为 `Book` 的自定义实体。 每个实体仅包含在示例中添加的资产。  
   
- ![带汇总修补程序的克隆解决方案。](media/solution-segmentation-solution-rolled-up-patch-admin.png "带汇总修补程序的克隆解决方案。")  
+ > [!div class="mx-imgBorder"] 
+ > ![带汇总修补程序的克隆解决方案。](media/solution-segmentation-solution-rolled-up-patch-admin.png "带汇总修补程序的克隆解决方案。")  
   
 ## <a name="next-steps"></a>后续步骤  
  [解决方案概述](solutions-overview.md) [创建修补程序简化解决方案更新]

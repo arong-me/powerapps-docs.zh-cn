@@ -1,31 +1,30 @@
 ---
-title: 在 PowerApps 中定义模型驱动应用的数据 | Microsoft Docs
-description: 了解如何定义模型驱动应用的数据
-Keywords: data, entity, fields, relationship, attributes, model-driven app
+title: 在 PowerApps 中定义模型驱动应用程序的数据 | MicrosoftDocs
+description: 了解如何定义模型驱动应用程序的数据
+Keywords: 'data, entity, fields, relationship, attributes, model-driven app'
 author: Mattp123
 applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
+  - Dynamics 365 (online)
+  - Dynamics 365 Version 9.x
+  - powerapps
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018
 ms.service: crm-online
 ms.topic: article
-ms.openlocfilehash: 4052eb56ffe422556e7d1827898dd8212470ebdc
-ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39669329"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="define-data-for-your-model-driven-app"></a>定义模型驱动应用的数据
+# <a name="define-data-for-your-model-driven-app"></a>定义模型驱动应用程序的数据
 
-模型驱动应用的数据是在 [Common Data Service (CDS) for Apps](../common-data-service/data-platform-intro.md) 中定义的。 
+模型驱动应用程序的数据在[面向应用程序的 Common Data Service (CDS)](../common-data-service/data-platform-intro.md) 中定义。 
 
-使用以下组件定义应用数据：实体、字段和关系。
+使用以下组件定义应用程序数据：*实体*、*字段*和*关系*。
 
-要详细了解如何在 CDS for Apps 中使用这些组件来定义模型驱动应用的数据，请参阅 CDS for Apps 部分中的以下主题：
+有关在面向应用程序的 CDS 中使用这些组件定义模型驱动应用程序的数据的详细信息，请参阅“面向应用程序的 CDS”部分下的以下主题：
 
 |组件 |主题|
 |-----|----|
@@ -35,4 +34,4 @@ ms.locfileid: "39669329"
 
 ## <a name="next-step"></a>下一步
 
-[使用应用程序设计器来生成应用](design-custom-business-apps-using-app-designer.md)
+[使用应用程序设计器生成应用程序](design-custom-business-apps-using-app-designer.md)

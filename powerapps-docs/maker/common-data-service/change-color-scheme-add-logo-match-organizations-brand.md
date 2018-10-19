@@ -82,18 +82,21 @@ search.app:
 5. 选择 **CRM 默认主题**。 
 
 以下屏幕截图显示默认主题设置的一部分。  
-  
-![默认主题](media/default-theme.png) 
+
+> [!div class="mx-imgBorder"] 
+> ![默认主题](media/default-theme.png) 
   
  我们克隆了默认主题并更改了颜色。 以下屏幕截图显示了导航和突出显示颜色。 您还可以为产品选择新的徽标。  
   
  以下屏幕截图显示新导航颜色。  
-  
- ![淡绿色主题颜色](media/theme-gentle-green.png "淡绿色主题颜色")  
+ 
+ > [!div class="mx-imgBorder"] 
+ > ![淡绿色主题颜色](media/theme-gentle-green.png "淡绿色主题颜色")  
   
  以下屏幕截图显示具有突出显示颜色的客户实体网格。  
-  
- ![淡绿色主题客户网格](media/themes-gentle-green-account-grid.png "淡绿色主题客户网格")  
+ 
+ > [!div class="mx-imgBorder"] 
+ > ![淡绿色主题客户网格](media/themes-gentle-green-account-grid.png "淡绿色主题客户网格")  
   
 <a name="Publish"></a>   
 ## <a name="preview-and-publish-a-theme"></a>预览并发布主题  

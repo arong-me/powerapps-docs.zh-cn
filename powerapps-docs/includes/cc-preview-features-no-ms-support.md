@@ -1,0 +1,1 @@
+Microsoft 不支持此预览功能。 Microsoft Dynamics 365 技术支持将不能帮助您解决问题。 预览版功能不适合生产使用且受单独的[补充使用条款](http://go.microsoft.com/fwlink/p/?LinkId=511446)的约束。

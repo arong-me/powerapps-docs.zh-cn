@@ -35,13 +35,15 @@ search.app:
     > [!NOTE]
     > **显示名称**字段可以随时更新以在您的应用程序中有不同显示，**名称**字段无法在保存实体后更改，因为这可能导致现有应用程序中断。
 
-    ![新建字段](./media/data-platform-cds-create-entity/newfieldpanel.png "新建字段面板")
+    > [!div class="mx-imgBorder"] 
+    > ![新建字段](./media/data-platform-cds-create-entity/newfieldpanel.png "新建字段面板")
 
 5. 选择您的字段的**数据类型**，这将控制信息的存储方式以及它如何在应用程序中呈现。 例如，文本的存储与十进制数或 URL 不同。 有关可用的数据类型的详细信息，请参阅[实体属性元数据](../../developer/common-data-service/entity-attribute-metadata.md)。
 
     如果看到提示，请为您指定的数据类型指定其他信息。 根据数据类型，将呈现不同字段。 如果创建类型为“选项集”或“多选选项集”的字段，您可以选择**新建选项集**在创建字段时创建新选项集。 有关详细信息，请参阅[创建选项集](custom-picklists.md)
 
-    ![新建字段](./media/data-platform-cds-create-entity/newfieldpanel-2.png "新建字段面板")
+    > [!div class="mx-imgBorder"] 
+    > ![新建字段](./media/data-platform-cds-create-entity/newfieldpanel-2.png "新建字段面板")
 
 
 7. 在**必填**下，如果您想要建议此字段在您的应用程序中为必填字段，则选择此复选框。 这不通过所有 Common Data Service 连接提供硬实施。 如果您需要确认字段已填充，则创建[业务规则](data-platform-create-business-rule.md)

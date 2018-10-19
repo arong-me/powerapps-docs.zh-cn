@@ -18,8 +18,8 @@ search.app:
 # <a name="complex-entities-and-licensing"></a>复杂实体和许可
 包含以下复杂服务器端逻辑的实体需要使用这些实体的应用程序或流用户具有 PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证：
 
-* 代码插件。详细信息：[插件开发](https://docs.microsoft.com/dynamics365/customer-engagement/developer/plugin-development)）
-* 实时工作流。 详细信息：[工作流过程](https://docs.microsoft.com/dynamics365/customer-engagement/customize/workflow-processes)）
+* 代码插件。详细信息：[插件开发](https://docs.microsoft.com/dynamics365/customer-engagement/developer/plugin-development)
+* 实时工作流。 详细信息：[工作流过程](https://docs.microsoft.com/dynamics365/customer-engagement/customize/workflow-processes)
 
     > [!IMPORTANT]
     >  只转换为实时工作流的工作流被视为实时和同步。 在后台运行的工作流仍可以用于相应的 PowerApps 计划且不需要额外许可证。

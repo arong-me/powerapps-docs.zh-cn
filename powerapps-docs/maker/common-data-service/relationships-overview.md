@@ -9,27 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
+  - Dynamics 365 (online)
+  - Dynamics 365 Version 9.x
+  - powerapps
 author: Mattp123
-ms.assetid: ''
+ms.assetid: null
 caps.latest.revision: 0
 ms.author: matp
 manager: kvivek
-ms.openlocfilehash: 1c45941a7b00e9393aab429d2573b2e48964a4de
-ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39669109"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
+
 # <a name="entity-relationships-overview"></a>实体关系概述
 
-实体关系定义了将实体记录与其他实体或同一实体中的记录关联起来的方式。 有两种类型的实体关系。
-- **一对多关系**。 在一对多实体关系中，可将多个引用（相关）实体记录与一个被引用（主要）实体记录关联。 某些情况下，被引用实体记录称为“父级”，而引用实体的记录则称为“子级”。  “多对一”关系就是从子级的角度看待“一对多”关系。
-- **多对多关系**。 在多对多实体关系中，可将多个实体记录与多个其他实体记录关联。 通过多对多关系关联的记录可视为对等记录，且这种关系是相互的。 
+实体关系定义实体记录与其他实体记录或同一实体记录关联的方式。 有两种类型的实体关系。
+- **一对多关系**。 在一对多的实体关系中，多个引用（相关的）实体记录都与单个被引用（相关的）实体记录相关。 被引用的实体记录有时指的是“父”，而引用实体记录指的是“子”。  多对一关系是一对多关系的所属角度。
+- **多对多关系**。 在一个多对多实体关系中，许多实体记录与其他实体记录相关。 可以将使用多对多关系关联的记录视为对等的，并且关系是相互的。 
 
 ## <a name="see-also"></a>另请参阅
-[创建实体间的关系](data-platform-entity-lookup.md) <br/>
-[使用 PowerApps 门户在 Common Data Service for Apps 中创建多对多实体关系](create-edit-nn-relationships-portal.md)
+[创建实体之间的关系](data-platform-entity-lookup.md) <br/>
+[使用 PowerApps 门户在面向应用程序的 Common Data Service 中创建多对多实体关系](create-edit-nn-relationships-portal.md)
