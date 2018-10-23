@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b668e8ae118bea5f288e1b3806854e4621295984
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 302c2fad419146f03fe47e25b8a7563564ee7e2d
+ms.sourcegitcommit: 5a1864d1531b55b332749437674fd1378e1f55ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42852127"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307806"
 ---
 # <a name="microphone-control-in-powerapps"></a>PowerApps 中的麦克风控件
 允许应用用户从其设备录音的控件。
@@ -26,7 +26,7 @@ ms.locfileid: "42852127"
 ## <a name="description"></a>描述
 如果运行应用的设备有麦克风，则应用用户可录音。
 
-在 Android 设备中，音频以 3gp 格式存储；在 iOS 设备中，则以 AAC 格式存储。
+音频在 Android 中以 3gp 格式存储，在 iOS 中以 AAC 格式存储，而在 Web 浏览器中存储为 OGG 格式。
 
 ## <a name="key-properties"></a>关键属性
 **Mic** – 在具有多个麦克风的设备上，应用所使用的麦克风的数字 ID。
@@ -116,10 +116,10 @@ ms.locfileid: "42852127"
 
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
-适用**[按钮](control-button.md)** 的相同准则，因为 **“麦克风”** 是专用按钮。 此外，请考虑以下方面：
+适用按钮**[](control-button.md)** 的相同准则，因为“麦克风”是专用按钮。 此外，请考虑以下方面：
 
 ### <a name="audio-alternatives"></a>音频替代项
-* 请考虑为有语言障碍或没有麦克风的用户添加另一种输入形式。 例如，**[文本输入](control-text-input.md)**，允许用户输入文本。
+* 请考虑为有语言障碍或没有麦克风的用户添加另一种输入形式。 例如，文本输入**[](control-text-input.md)**，允许用户输入文本。
 
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：

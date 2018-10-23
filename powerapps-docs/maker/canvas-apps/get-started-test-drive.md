@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 738ec650827cf24e793c0bfda1a71f962cdc2d15
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: ea5912a043dc00fa197a2070c11610c358c3201d
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42859893"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49316714"
 ---
 # <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>根据 PowerApps 中的模板创建画布应用
 
@@ -32,9 +32,7 @@ ms.locfileid: "42859893"
 
 1. 登录 [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
-    ![PowerApps 主页](./media/get-started-test-drive/sign-in.png)
-
-1. 在“生成类似应用”下，悬停在“从数据开始”上，然后单击或点击“生成此应用”。
+1. 在“生成自己的应用”下，将鼠标悬停在“从数据开始”上，然后单击或点击“生成此应用”。
 
     ![生成此应用磁贴](./media/get-started-test-drive/make-this-app.png)
 

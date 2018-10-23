@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bf19983217afad23b75a0f0dbd1e307e6539d3f5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: c8b24c9064e5012ff1ddb15d13dc338ed9565bef
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42825939"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49316760"
 ---
 # <a name="generate-a-canvas-app-from-common-data-service-for-apps-in-powerapps"></a>在 PowerApps 中从 Common Data Service for Apps 生成画布应用
 
@@ -34,11 +34,9 @@ ms.locfileid: "42825939"
 
 1. 登录到 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ，如有必要，按本主题前文所述切换环境。
 
-    ![PowerApps 主页](./media/data-platform-create-app/sign-in.png)
+1. 在“生成自己的应用”下，将鼠标悬停在“从数据开始”上，然后选择“生成此应用”。
 
-1. 在“生成类似应用”下，悬停在“从数据开始”上，然后选择“生成此应用”。
-
-    ![用于创建应用的选项](./media/data-platform-create-app/make-this-app.png)
+    ![用于创建应用的选项](./media/data-platform-create-app/start-from-data.png)
 
 1. 在“Common Data Service”磁贴中，选择“手机布局”。
 

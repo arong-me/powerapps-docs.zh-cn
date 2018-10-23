@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b90024e3864420c541b0e0e1ef0ad1d86b900aa0
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 45b5d85998825cdafc2bbea7badaa5d7cde2f092
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42852267"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49317036"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service-for-apps"></a>使用 Common Data Service for Apps 从头创建画布应用
 
@@ -35,11 +35,9 @@ ms.locfileid: "42852267"
 
 1. 登录 [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
-    ![PowerApps 主页](./media/data-platform-create-app-scratch/sign-in.png)
+1. 在“生成自己的应用”下，将鼠标悬停在画布应用的“从空白开始”磁贴上，单击或点击手机图标，然后单击或点击“生成此应用”。
 
-1. 在“生成类似应用”下，悬停在“从空白开始”磁贴上，单击或点击手机图标，然后单击或点击“生成此应用”。
-
-    ![空白应用磁贴](./media/data-platform-create-app-scratch/blank-app.png)
+    ![空白应用磁贴](./media/data-platform-create-app-scratch/start-from-blank.png)
 
     可从头开始设计一个在手机或其他设备（如平板电脑）上使用的应用；本主题将重点介绍如何设计在手机上使用的应用。
 

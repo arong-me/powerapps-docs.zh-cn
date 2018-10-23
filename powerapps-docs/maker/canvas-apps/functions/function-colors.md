@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8dc77c7410632b2ff0f50b132112240fd5e56258
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 883ea1a63952a01cf1f131b0ccae6629a0324b2c
+ms.sourcegitcommit: 4c7b63c43c1f3515a6dfeff5806692b0eba55071
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42853281"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49401334"
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>PowerApps 中的 Color 枚举与 ColorFade、ColorValue 以及 RGBA 函数
 使用内置颜色值，定义自定义颜色以及 Alpha 值混合处理。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 通过 **Color** 枚举可轻松访问 HTML 的级联样式表 (CSS) 定义的颜色。  例如，**Color.Red** 返回纯红色。  本文末尾提供了这些颜色的列表。   
 
 **ColorValue** 函数基于 CSS 颜色字符串返回颜色。  CSS 颜色的名称（如“RosyBrown”）和十六进制值（如“#bc8f8f”）均可以使用。
@@ -56,7 +56,7 @@ ms.locfileid: "42853281"
 | Color 枚举 | 带有十六进制代码的 ColorValue | RGBA | 颜色样本 |
 | --- | --- | --- | --- |
 | **Color.AliceBlue** |**ColorValue("#f0f8ff")** |**RGBA(240, 248, 255, 1)** |![艾丽斯蓝](./media/function-colors/color-aliceblue.png) |
-| **Color.AntiqueWhite** |**ColorValue("#faebd7")** |**RGBA(7, "250, 235,215, 1)** |![古董白](./media/function-colors/color-antiquewhite.png) |
+| **Color.AntiqueWhite** |**ColorValue("#faebd7")** |**RGBA(250, 235, 215, 1)** |![古董白](./media/function-colors/color-antiquewhite.png) |
 | **Color.Aqua** |**ColorValue("#00ffff")** |**RGBA(0, 255, 255, 1)** |![浅绿色](./media/function-colors/color-aqua.png) |
 | **Color.Aquamarine** |**ColorValue("#7fffd4")** |**RGBA(127, 255, 212, 1)** |![水绿色](./media/function-colors/color-aquamarine.png) |
 | **Color.Azure** |**ColorValue("#f0ffff")** |**RGBA(240, 255, 255, 1)** |![天蓝色](./media/function-colors/color-azure.png) |

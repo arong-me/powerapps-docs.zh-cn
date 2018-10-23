@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bec00071d1b354872bf3b140e5c879fe8857ffec
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: d92236d630005b4608719efaadef4537984bc3d6
+ms.sourcegitcommit: 5a1864d1531b55b332749437674fd1378e1f55ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865661"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307829"
 ---
 # <a name="validate-function-in-powerapps"></a>PowerApps 中的 Validate 函数
 **Validate** 函数检查单个[列](../working-with-tables.md#columns)或整条[记录](../working-with-tables.md#records)的值对[数据源](../working-with-data-sources.md)是否有效。  
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 在用户提交数据更改之前，你可以针对该提交的有效性提供即时反馈，改进用户体验。
 
 对于何种要素构成记录中的有效值，数据源可以提供相关信息。 该信息可能包括许多约束，例如以下示例：
@@ -66,6 +66,6 @@ ms.locfileid: "42865661"
 
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
-| **Validate( Scores, EditRecord, Gallery.Updates )** |对于 **Scores** 数据源的 **Percentage** 列，检查 **10** 是否为有效值。 |空白 |
-| **Validate( Scores, EditRecord, Gallery.Updates )** |对于 **Scores** 数据源的 **Percentage** 列，检查 **120** 是否为有效值。 |“值必须为 0 到 100 之间。” |
+| **Validate( Scores, EditRecord, Gallery.Updates )** |检查所有列中的值对 Scores 数据源而言是否均有效。 在本例中，Percentage 列中的值是 10。 |空白 |
+| **Validate( Scores, EditRecord, Gallery.Updates )** | 检查所有列中的值对 Scores 数据源而言是否均有效。 在本例中，Percentage 列中的值是 120。 |“值必须为 0 到 100 之间。” |
 

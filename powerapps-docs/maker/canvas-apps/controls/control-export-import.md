@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1dde9367fe06b1bd2242fe0ac755f5eeedb71bba
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: b78f88941fce85b9e63427635cb946f944aa120a
+ms.sourcegitcommit: e2a9d1a6090cdd8aa78515b49f38ed2365217ea6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42851831"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49384262"
 ---
 # <a name="export-control-and-import-control-in-powerapps"></a>PowerApps 中的导出控件和导入控件
 该控件用于将数据导出到本地文件，然后将该数据导入到 PowerApps 中的其他应用。
@@ -28,6 +28,9 @@ ms.locfileid: "42851831"
 
 ## <a name="warning"></a>警告
 在应用中启用此功能可能会使该应用遭受安全漏洞和数据泄漏的威胁。  建议让用户仅导入已认可和受信任的文件，并仅导出不属于机密或敏感内容的数据。
+
+## <a name="limitations"></a>限制
+Web 浏览器中不支持导出功能。
 
 ## <a name="key-properties"></a>关键属性
 **Data** – 想要导出到本地文件的集合的名称。

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 93d29f0a49a70077f975bed659203b4fb7d66489
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: a9f85907da60e836c1a1115f31c6faf9ea05da9b
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833456"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49317059"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>PowerApps 中的画布应用有哪些？
 在 Microsoft PowerApps 中通过画布设计和构建业务应用，无需以传统计算机语言（如 C#）编写代码。 通过将元素拖放到画布来设计应用，就像在 PowerPoint 中设计幻灯片一样。 创建用于指定逻辑和处理数据的 Excel 类表达式。 构建应用，这些应用可与[丰富多样的 Microsoft 和第三方源](connections-list.md)中的业务数据集成。 共享应用，以便用户可在浏览器或移动设备中运行；嵌入应用，以便用户可在 SharePoint、Power BI 或 Teams 中运行。
@@ -33,9 +33,9 @@ ms.locfileid: "42833456"
 - [SharePoint](app-from-sharepoint.md)
 - [Excel](get-started-create-from-data.md)
 
-在 PowerApps 站点中，选择“从数据开始”，或选择示例应用，如“服务台”或“预算跟踪器”。
+[登录](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) PowerApps，然后选择“从数据开始”或示例应用，例如“服务台”或“预算跟踪器”。
 
-![PowerApps 站点](./media/getting-started/sample-apps.png)
+![PowerApps 站点](./media/getting-started/create-page-samples.png)
 
 自动生成应用后，基于用户工作流，自定义应用默认外观和行为。 例如，更改显示的数据类型、数据的排序方式甚至是用户指定数字的方法（直接键入数字或者调整滑块）。 添加并自定义[屏幕](add-screen-context-variables.md)、[库](customize-layout-sharepoint.md)、[格式](customize-forms-sharepoint.md)和其他控件。
 

@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 965c779a752d0bfd864a06d5fa886b0187839123
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: d41ef04d3cd070373f6772bdfced029a7d09e244
+ms.sourcegitcommit: ebd39753e2a0b60c1d8c016e38c00dd1accf5d0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836884"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49307852"
 ---
 # <a name="html-text-control-in-powerapps"></a>PowerApps 中的 HTML 文本控件
 一个框，用于显示文本并将 HTML 标记转换为格式。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **HTML 文本**控件不仅显示纯文本和数字，还会转换 HTML 标记，例如非换行空格。
 
 ## <a name="key-properties"></a>关键属性
@@ -80,7 +80,7 @@ ms.locfileid: "42836884"
 ## <a name="example"></a>示例
 1. 添加一个“[标签](control-text-box.md)”控件，将它命名为“Source”，然后将“[Text](properties-core.md)”属性设置为下面的字符串：
 
-\<p> We have done an unusually \&nbsp; \&quot; deep \&quot; globalization and localization. \<p>
+"\<p>We've\&nbsp;done an unusually \&quot;deep\&quot; globalization and localization.\<p>"
 
 不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 

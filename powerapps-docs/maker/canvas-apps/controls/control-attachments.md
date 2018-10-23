@@ -13,30 +13,26 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ad52396eda0c8db46dd38cb7176524df5feb7416
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: da9c8f85844e37d6af8e1063b36496c820fbfa07
+ms.sourcegitcommit: e2a9d1a6090cdd8aa78515b49f38ed2365217ea6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834649"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49384239"
 ---
 # <a name="attachments-control-in-powerapps"></a>PowerApps 中的附件控件
-方便用户将文件下载到设备，并在 SharePoint 列表中上传和删除文件的控件。
+一个控件，它让用户能够将文件下载到其设备上，还可从 SharePoint 列表或 Common Data Service for Apps 实体中上传和删除文件。
 
 ## <a name="limitations"></a>限制
-附件控件具有以下临时限制：
-1. 仅支持在 SharePoint 自定义列表窗体中，从 Internet Explorer 下载附件。
+附件控件具有以下限制：
+1. 支持附件与 SharePoint 列表和 CDS for Apps 实体一起使用。
 
-1. 附件上传仅适用于 SharePoint 列表数据源。  将逐步递增对其他数据源的支持，首先是对 CDS 的支持。
-
-1. 上传和删除功能仅在表单内部有效。  在编辑模式下，如果不在表单内部，附件控件会处于禁用状态。   请注意，最终用户必须保存表单，才能将文件添加和删除操作保存到后端。
+1. 上传和删除功能仅在表单内部有效。  在编辑模式下，如果不在表单内部，附件控件会处于禁用状态。 请注意，最终用户必须保存表单，才能将文件添加和删除操作保存到后端。
 
 1. 最大只能上传 10 MB 文件。  
 
-1. 目前，iOS 设备只能将从文档和云存储帐户上传文件。 若要附加照片/视频，请在你的 iOS 设备上使用 Web 浏览器运行应用程序。
-
 ## <a name="description"></a>描述
-使用“附件”控件，可以打开在数据源中存储的文件，并能在 SharePoint 列表中添加和删除文件。
+使用“附件”控件，可从 SharePoint 列表和 CDS for Apps 实体打开、添加和删除文件。
 
 ## <a name="key-properties"></a>关键属性
 [Items](properties-core.md) – 描述可下载文件的源。
@@ -86,7 +82,7 @@ MaxAttachmentsText – 当控件中的文件数达到上限时，用于替换“
 
 
 ## <a name="example"></a>示例
-1. 使用 SharePoint 列表作为数据源从数据中创建一个应用。  或者，在你的应用中添加一个窗体，并设置 SharePoint 列表作为其数据源。
+1. 使用 SharePoint 列表作为数据源从数据中创建一个应用。 或者，在应用中添加一个窗体，并设置 SharePoint 列表作为其数据源。
 
 2. 在左侧树视图中选择“窗体”控件。
 
