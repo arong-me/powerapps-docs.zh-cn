@@ -9,14 +9,15 @@ ms.custom: canvas
 ms.date: 03/18/2018
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: 3d95f017b064f61a539906268ebb73fff1e1d04f
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.openlocfilehash: bcba4a6142299d253c484c0af46afad091735e80
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094601"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49636360"
 ---
 # <a name="overview-of-creating-apps-in-powerapps"></a>概述如何在 PowerApps 中创建应用
+
 PowerApps 是商业应用的高效开发平台，主要有三个组成部分：
 
 - [画布应用](canvas-apps/getting-started.md)：画布应用从用户体验入手，借助空白画布的功能设计出高度定制的界面，并将其连接到你选择的 200 个数据源。 你可以生成适用于 Web、移动设备和平板电脑应用程序的画布应用。
@@ -26,6 +27,7 @@ PowerApps 是商业应用的高效开发平台，主要有三个组成部分：
 你可以简单轻松地尝试生成自己的第一个应用。 我们提供 30 天免费试用计划以及免费社区计划；了解你最适合哪一种并开始使用吧。
 
 ## <a name="canvas-apps"></a>画布应用
+
 画布应用为你提供用户体验和界面方面的灵活性，你可以根据自己的需求进行设计。 发挥你的创造力和商业意识，设计应用理想的外观和感觉。
 
 可以开始通过数据所在的 Microsoft 工具生成应用，例如：
@@ -42,6 +44,7 @@ PowerApps 是商业应用的高效开发平台，主要有三个组成部分：
 - [通过 AppSource](../user/app-source.md)
 
 ## <a name="model-driven-apps"></a>模型驱动应用
+
 创建模型驱动应用时，可以借助 Common Data Service 的所有功能快速配置窗体、业务规则和流程。 通过 PowerApps 站点创建模型驱动应用。
 
 模型驱动应用入门很简单，你还可以从下列主题开始学习：
@@ -55,16 +58,28 @@ PowerApps 是商业应用的高效开发平台，主要有三个组成部分：
 - [添加业务逻辑](https://docs.microsoft.com/dynamics365/customer-engagement/customize/guide-staff-through-common-tasks-processes)
 
 ## <a name="common-data-service-for-apps"></a>Common Data Service for Apps
+
 可以使用 Common Data Service 在一组标准实体和自定义实体中安全地存储和管理数据，还可以在需要时将字段添加到这些实体。
 
 Common Data Service 入门很简单。 例如，你可以从下面几项开始了解：
+
 - [创建自定义实体](common-data-service/data-platform-create-entity.md)
 - [管理字段](common-data-service/data-platform-manage-fields.md)
 - [创建自定义选项集](common-data-service/custom-picklists.md)
 - [创建业务规则](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-business-rules-recommendations-apply-logic-form)
 
+## <a name="canvas-and-model-driven-artifacts"></a>画布和模型驱动项目
+
+虽然我们合并了画布和模型驱动应用的体验，但这些项目将与画布应用或模型驱动应用相关。
+
+| 项目            | 应用类型     |
+|---------------------|--------------|
+| “实体”>“视图”      | 模型驱动 |
+| “实体”>“窗体”      | 模型驱动 |
+| “实体”>“仪表板” | 模型驱动 |
+| 连接         | 画布       |
+| 网关            | 画布       |
+| 自定义连接器   | 画布       |
+| “应用”>“导入”       | 画布       |
+
 你可以在生成应用后与团队成员[共享应用](canvas-apps/share-app.md)。
-
-
-
-
