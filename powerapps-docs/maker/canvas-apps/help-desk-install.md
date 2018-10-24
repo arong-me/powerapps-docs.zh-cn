@@ -47,7 +47,7 @@ ms.locfileid: "42834615"
 
 此列表存储技术支持票证。
 
-1. 打开 Web 浏览器并导航到 https://portal.office.com。
+1. 打开 Web 浏览器并导航到 https://portal.office.com 。
 2. 用具有创建 SharePoint 列表权限的帐户登录。
 3. 导航到要在其中存放技术支持列表的站点集合。
 4. 单击网页右上角的齿轮图标。
@@ -174,7 +174,7 @@ ms.locfileid: "42834615"
 
 ## <a name="import-the-help-desk-powerapp"></a>导入技术支持 PowerApp
 
-1. 在 Web 浏览器中，导航到 https://web.powerapps.com。
+1. 在 Web 浏览器中，导航到 https://web.powerapps.com 。
 2. 使用注册所用的同一凭据登录。
 3. 在左侧菜单中，选择“应用”。 
 4. 单击“导入包(预览)”。
