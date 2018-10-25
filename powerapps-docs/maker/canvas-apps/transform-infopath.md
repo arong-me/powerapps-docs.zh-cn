@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3e17015c05d23f4bd9f8a0906e7b1d9d00e2c38f
-ms.sourcegitcommit: 6e2fa2665ded6ac6fd271e1a12f4e3227ebc8865
+ms.openlocfilehash: c2d72368b36f2de854a0aa575f9ef44f2f966ace
+ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48246042"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49806216"
 ---
 # <a name="transform-your-infopath-form-to-powerapps"></a>将 InfoPath 窗体转换为 PowerApps
 
@@ -76,7 +76,7 @@ PowerApps 的另一个重要功能是，能够轻松从同一表单连接到其�
 
 PowerApps 将生成一个可自定义的应用。
 
-对于第一个应用，请从仅包含几个不同类型字段的简单自定义列表入手。 这样既可以获得完善的基础认知，又不会觉得难以应付。 不用担心；你很快就能成为能够创建和处理复杂应用的专业人士。 如需获取有关第一个应用的演练帮助，请查看此[文档](generate-app-from-sharepoint-list-interface.md)或此社区[视频](https://youtu.be/BnYe_7fpZRM)。 下面的示例将演示常见的 InfoPath 任务以及如何在 PowerApps 中完成这些任务。 所有示例均基于简单的 SharePoint 列表应用生成。
+对于第一个应用，请从仅包含几个不同类型字段的简单自定义列表入手。 这样既可以获得完善的基础认知，又不会觉得难以应付。 不用担心；你很快就能成为能够创建和处理复杂应用的专业人士。 如需获取有关第一个应用的演练帮助，请查看此[文档](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)或此社区[视频](https://youtu.be/BnYe_7fpZRM)。 下面的示例将演示常见的 InfoPath 任务以及如何在 PowerApps 中完成这些任务。 所有示例均基于简单的 SharePoint 列表应用生成。
 
 ## <a name="how-do-you-do-that-with-powerapps"></a>如何使用 PowerApps 完成任务？
 

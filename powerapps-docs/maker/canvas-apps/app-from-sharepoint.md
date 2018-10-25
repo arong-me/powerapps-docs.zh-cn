@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3a229715d1041ca7d695c5c45f72631f2b4c67e9
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 15aa49787d6b2c3d3981e374aeb43c54a2d7a7ec
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42861537"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49317082"
 ---
 # <a name="generate-a-canvas-app-in-powerapps-from-a-sharepoint-list"></a>通过 SharePoint 列表在 PowerApps 中生成画布应用
 
@@ -44,9 +44,9 @@ ms.locfileid: "42861537"
 
 1. 登录 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
-1. 在“生成类似应用”下，悬停在“从数据开始”上，然后选择“生成此应用”。
+1. 在“生成自己的应用”下，将鼠标悬停在“从数据开始”上，然后选择“生成此应用”。
 
-    ![用于创建应用的选项](./media/app-from-sharepoint/make-this-app.png)
+    ![用于创建应用的选项](./media/app-from-sharepoint/start-from-data.png)
 
 1. 在 SharePoint 磁贴上选择“手机布局”。
 

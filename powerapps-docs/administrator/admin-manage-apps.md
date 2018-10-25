@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2018
+ms.date: 10/24/2018
 ms.author: jimholtz
 search.audienceType:
 - admin
@@ -13,12 +13,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: ac0ae8032ea64734030bf95ff9b473553e462b3b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: f4dd7ddb4eaaef56b5720287842a2b84cd10d345
+ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835140"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991806"
 ---
 # <a name="manage-apps-created-in-your-organization"></a>管理在组织中创建的应用 
 环境管理员、Office 365 全局管理员或 Azure Active Directory 租户管理员可管理组织中创建的应用。
@@ -49,7 +49,6 @@ ms.locfileid: "42835140"
 4. 执行以下任何操作：
 
     * 若要删除应用，单击或点击回收站图标。
-    * 更改应用的所有者。
     * 查看数据连接、流和其他与应用关联的详细信息。
     * 若要查看或修改与之共享应用的用户，单击或点击“共享”。
 
