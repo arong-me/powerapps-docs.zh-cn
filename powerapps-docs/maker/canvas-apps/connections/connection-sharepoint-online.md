@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/12/2017
 ms.author: ankitsar
-ms.openlocfilehash: 8019068155c88465f0f4202807fe763f2e4787b6
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 0a13d2602f06f436d4b805669b004f1ee63daeb9
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195510"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42836726"
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>从 PowerApps 连接到 SharePoint
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
@@ -44,9 +48,9 @@ ms.locfileid: "39195510"
 | 托管元数据 |是（只读） | |
 | 评分 |否 | |
 
-包含可被 PowerApps 读取的空格，但空格被替换为十六进制转义代码“\_x0020\_”的列。 例如，如果 SharePoint 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
+PowerApps 可以读取包含空格，但空格被替换为十六进制转义代码“\_x0020\_”的列。 例如，如果 SharePoint 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 1. [注册](../../signup-for-powerapps.md) PowerApps。
 
 1. 使用注册所用的同一凭据[登录](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 PowerApps。
@@ -103,7 +107,7 @@ ms.locfileid: "39195510"
 
     ![选择 SharePoint 中的表格](./media/connection-sharepoint-online/select-sp-tables.png)
 
-    默认情况下，并非所有类型的列表都会显示。 如果要使用的列表名称未显示，请滚动到底部，再在“输入自定义列表名称”框中键入列表名称。
+    默认情况下，并非所有类型的列表都会显示。 PowerApps 支持自定义列表，而不是基于模板的列表。  如果要使用的列表名称未显示，请滚动到底部，再在“输入自定义列表名称”框中键入列表名称。
 
     ![SharePoint 中的自定义列表](./media/connection-sharepoint-online/custom-list.png)
 

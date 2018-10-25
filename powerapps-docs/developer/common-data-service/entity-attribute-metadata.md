@@ -1,6 +1,6 @@
 ---
 title: 特性元数据 | Microsoft Docs
-description: 了解如何在 Common Data Service for Apps 中使用特性元数据。
+description: 了解 Common Data Service for Apps 中使用的特性元数据。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -15,11 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/12/2018
 ms.author: jdaly
-ms.openlocfilehash: efe04d9bd9c761f432d16d4c9304c52e55503aeb
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: f6fcf3ba1e8e9773df65ac566a9d5c798f4d13a9
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42859152"
 ---
 # <a name="attribute-metadata"></a>特性元数据
 
@@ -32,7 +38,7 @@ ms.lasthandoff: 03/22/2018
 与实体一样，每个特性在创建后具有唯一的名称。 此名称以多种方式表示：
 
 
-|名称 |说明  |
+|名称 |描述  |
 |---------|---------|
 |`SchemaName`|通常情况下，是逻辑名称的帕斯卡拼写版本。 例如，`AccountNumber`|
 |`LogicalName`|全部小写的名称。 例如，`accountnumber`|
@@ -43,7 +49,7 @@ ms.lasthandoff: 03/22/2018
 
 每个特性还具有两个属性，可显示已经过本地化的值。 这些值用于引用应用中的特性。
 
-|名称 |说明  |
+|名称 |描述  |
 |---------|---------|
 |`DisplayName`|通常与架构名称相同，但可以包含空格。 也即，帐号|
 |`Description`|描述特性或为用户提供指导的短句。 例如，输入账户的 ID 号或代码，用于快速搜索和识别系统视图中的帐户。<br />在模型驱动的应用中，当用户将鼠标悬停在窗体中此特性的字段上时，将显示此信息。|
@@ -65,12 +71,12 @@ ms.lasthandoff: 03/22/2018
 - 那些可创建为自定义特性的特性类型包括 UI 中显示的相应标签。
 
 
-|类别|AttributeTypeDisplayName/<br />AttributeMetadata 类型|可创建/<br />标签|说明  |
+|类别|AttributeTypeDisplayName/<br />AttributeMetadata 类型|可创建/<br />标签|描述  |
 |---------|---------|---------|---------|
 |类别|`BooleanType`<br />[BooleanAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.booleanattributemetadata)|是<br />**两个选项**|包含两个选项中的选定选项值，这两个选项通常指示 true 或 false 值。<br />详细信息：[选项集](#option-sets)|
 |类别|`EntityNameType`<br />[EntityNameAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.entitynameattributemetadata)|否|包含与系统中的实体相对应的选项值。 仅供内部使用。|
 |类别|`MultiSelectPicklistType`<br />[MultiSelectPicklistAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.multiselectpicklistattributemetadata)|是<br />**多选选项集**|包含可选多个选项的多选选项值。<br />详细信息： <br />[选项集](#option-sets)<br />[Dynamics 365 客户参与开发人员指南：多选列表特性](/dynamics365/customer-engagement/developer/multi-select-picklist)|
-|类别|`PicklistType`<br />[PicklistAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.picklistattributemetadata)|是<br />**选项集**|包含可选择一个选项的选定选项值。<br />详细信息：[选项集](#option-sets)|
+|类别|`PicklistType`<br />[PicklistAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.picklistattributemetadata)|是<br />选项集|包含可选择一个选项的选定选项值。<br />详细信息：[选项集](#option-sets)|
 |类别|`StateType`<br />[StateAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.stateattributemetadata)|否|包含描述实体记录状态的选项值。<br />详细信息：[选项集](#option-sets)|
 |类别|`StatusType`<br />[StatusAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.statusattributemetadata)|否|包含描述实体记录状态原因的选项值。<br />详细信息：[选项集](#option-sets)|
 |集合|`CalendarRulesType`|否|包含 `CalendarRules` 实体记录的集合。<br />无使用此类型的特性。 生成代理时，代码生成工具将创建元数据中不存在的两个模拟特性。 这些特性表示与实体记录具有一对多关系的日历规则记录的视图。|
@@ -96,7 +102,7 @@ ms.lasthandoff: 03/22/2018
 
 每个特性都包含布尔属性，这些属性描述特性可参与的操作类型以及在窗体中的存在形式。
 
-|属性|说明|
+|属性|描述|
 |--|--|
 |`IsRequiredForForm`|特性是否必须作为窗体中的字段包含在内。|
 |`IsValidForCreate`|是否可在创建操作中设置特性值。|
@@ -114,14 +120,14 @@ ms.lasthandoff: 03/22/2018
 
 此属性可设置以下值：
 
-|名称|值|UI 标签|说明|
+|名称|值|UI 标签|描述|
 |--|--|--|--|
 |`None`|0|**可选**|未指定要求。|
 |`SystemRequired`|1|**系统必需**|该特性必须具有值。|
 |`ApplicationRequired`|2|**业务必需**|业务要求该属性须具有值。|
 |`Recommended`|3|**业务建议**|建议特性具有值。|
 
-Common Data Service 仅对系统创建的特性强制执行 `SystemRequired` 选项。 无法将自定义特性设置为使用 `SystemRequired` 选项。 
+Common Data Service for Apps 仅对系统创建的特性强制执行 `SystemRequired` 选项。 无法将自定义特性设置为使用 `SystemRequired` 选项。 
 
 模型驱动的应用强制执行 `ApplicationRequired` 选项，并为 `Recommended` 选项使用另一种表示形式。 自定义客户端的创建者可使用此信息来要求类似的验证或表示形式选项。
 
@@ -147,7 +153,7 @@ Common Data Service 仅对系统创建的特性强制执行 `SystemRequired` 选
 
 结合使用 `Format` 属性和整数特性来显示此类型的备选用户体验。
 
-|选项|说明|
+|选项|描述|
 |--|--|
 |`None`|显示文本框以编辑数值|
 |`Duration`|显示包含时间间隔的下拉列表。 用户可从列表中选择一个值或键入一个表示分钟数的整数值。|
@@ -158,7 +164,7 @@ Common Data Service 仅对系统创建的特性强制执行 `SystemRequired` 选
 
 结合使用 `FormatName` 属性和字符串特性来设置 [StringFormatName 类](/dotnet/api/microsoft.xrm.sdk.metadata.stringformatname)中的值，用于控制字符串特性的格式设置方式。
 
-|名称|说明|
+|名称|描述|
 |--|--|
 |`Email`|该窗体字段将文本值作为电子邮件地址进行验证并在该字段中创建一个 mailto 链接。|
 |`PhoneNumber`|该窗体字段包含一个链接，用于使用 Skype 发起电话呼叫。|
@@ -182,7 +188,7 @@ Common Data Service 仅对系统创建的特性强制执行 `SystemRequired` 选
 
 使用 `Format` 属性控制模型驱动的应用中值的显示方式，而不考虑 `DateTimeBehavior`。
 
-|选项|说明|
+|选项|描述|
 |--|--|
 |DateAndTime|显示完整的日期和时间|
 |DateOnly|仅显示日期。|
@@ -206,7 +212,8 @@ Common Data Service 仅对系统创建的特性强制执行 `SystemRequired` 选
 每个具有选项的特性继承自 [EnumAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.enumattributemetadata)，并包含[选项集属性](/dotnet/api/microsoft.xrm.sdk.metadata.enumattributemetadata.optionset)。 该属性包含 [OptionSetMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.optionsetmetadata)，其中包含[选项属性](/dotnet/api/microsoft.xrm.sdk.metadata.optionsetmetadata.options)中的选项。 
 
 借助组织服务，可使用以下消息来检索有关选项集的信息：
-|请求类|说明|
+
+|请求类|描述|
 |--|--|
 |[RetrieveAllOptionSetsRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrievealloptionsetsrequest) |检索有关所有全局选项集的数据|
 |[RetrieveAttributeRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrieveattributerequest) |检索包含任何本地选项集的特性的相关数据|

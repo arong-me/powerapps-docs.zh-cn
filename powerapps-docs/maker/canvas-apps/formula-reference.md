@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/05/2018
 ms.author: gregli
-ms.openlocfilehash: b36510dc7c7dce9a0f49e4c3ab5e2e12cd15fa62
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 752bb630c1ecd1e86f37a1a063bcc5ee192431f0
+ms.sourcegitcommit: 3aeb9381fbeb66cf08355d9a3d0f00ce2737e256
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39018022"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43163628"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps 的公式参考
 公式组合了许多元素。  下面列出的包括：
@@ -157,6 +161,8 @@ ms.locfileid: "39018022"
 
 ## <a name="g"></a>G
 **[GroupBy](functions/function-groupby.md)** – 返回将记录分组在一起的表。
+
+**[GUID](functions/function-guid.md)** – 将 GUID 字符串转换为 GUID 值或创建新的 GUID 值。
 
 ## <a name="h"></a>H
 **[HashTags](functions/function-hashtags.md)** – 从字符串中提取井号标签 (#strings)。

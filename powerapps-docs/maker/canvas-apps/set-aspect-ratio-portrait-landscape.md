@@ -1,6 +1,6 @@
 ---
-title: 更改屏幕的大小和方向 | Microsoft 文档
-description: 更改设置（例如屏幕大小和方向）的分步说明
+title: 更改画布应用的屏幕大小和方向 | Microsoft Docs
+description: 有关在 PowerApps 中更改画布应用的屏幕大小和方向等设置的分步说明
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: 0f68fa188dd58b276dce4009cdb37fed33d81d69
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: ab41707c06faa11dd2e1d519b72fb35ff6b9914a
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015906"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42835574"
 ---
-# <a name="change-screen-size-and-orientation-in-powerapps"></a>在 PowerApps 中更改屏幕的大小和方向
-通过更改应用屏幕大小和方向来自定义应用。
+# <a name="change-screen-size-and-orientation-of-a-canvas-app-in-powerapps"></a>在 PowerApps 中更改画布应用的屏幕大小和方向
+通过更改画布应用的屏幕大小和方向来自定义画布应用。
 
 ## <a name="prerequisites"></a>先决条件
 1. 创建应用或打开应用进行编辑。

@@ -6,17 +6,23 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 07/31/2018
+ms.date: 08/23/2018
 ms.author: jamesol
-ms.openlocfilehash: e45b23d4efc474bcd48069b9823d1ef80cf5ea4a
-ms.sourcegitcommit: a0a8782d3c8d24cecf0796d405a61f745f0ffd91
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 0d5d2cee770e03c4e587db0bff624f34395ed92c
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39367606"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864419"
 ---
 # <a name="powershell-support-for-powerapps-preview"></a>对 PowerApps 的 PowerShell 支持（预览版）
-随着面向应用创建者和管理员的 PowerShell cmdlet 预览版的推出，可以在 [PowerApps](https://web.powerapps.com) 或 [PowerApps 管理中心](https://admin.powerapps.com)自动执行许多目前只能手动进行的监视和管理任务。
+随着面向应用创建者和管理员的 PowerShell cmdlet 预览版的推出，可以在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 或 [PowerApps 管理中心](https://admin.powerapps.com)自动执行许多目前只能手动进行的监视和管理任务。
 
 ## <a name="installation"></a>安装
 若要运行应用创建者 PowerShell cmdlet，请执行以下操作：
@@ -126,6 +132,15 @@ ms.locfileid: "39367606"
 >Get-Help Get-AdminPowerAppEnvironment -Examples
 >Get-Help Get-AdminPowerAppEnvironment -Detailed
 >```
+
+## <a name="version-history"></a>版本历史记录
+| 版本 | Date | 更新 |
+| --- | --- | --- |
+| 1.0 | 2018 年 4 月 23 日 | <ol> <li> 最初发布的应用创建者 PowerApps cmdlet（预览版）包含面向环境、应用、流、流审批、连接和自定义连接器的管理 cmdlet </li> <li> 最初发布的管理员 PowerApps cmdlet（预览版）包含面向环境、应用和流的管理 cmdlet </li></ol>|
+| 2.0 | 2018 年 5 月 24 日 | <ol> <li> 面向应用创建者和管理员的 cmdlet 的次要 Bug 修复 </li> <li> 添加了以下新的管理 cmdlet： <br> Get-AdminConnection <br> Remove-AdminConnection <br> Get-AdminConnectionRoleAssignment <br> Set-AdminConnectionRoleAssignment <br>Remove-AdminConnectionRoleAssignment <br>Get-AdminConnector  <br>Remove-AdminConnector <br>Set-AdminConnectorRoleAssignment  <br>Get-AdminConnectorRoleAssignment  <br>Remove-AdminConnectorRoleAssignment <br>Get-AdminPowerAppsUserDetails <br>Get-AdminFlowUserDetails <br>Remove-AdminFlowUserDetails <br>Get-AdminApiPolicy  <br>Add-AdminApiPolicy <br>Remove-AdminApiPolicy <br>Set-AdminApiPolicy <br>Add-ConnectorToBusinessDataGroup  <br>Remove-ConnectorFromBusinessDataGroup </li> </ol>
+| 3.0 | 2018 年 7 月 30 日 | <ol> <li> 添加了相关功能以将凭据传递给 PowerAppsAccount（用于启用定期脚本） </li> <li>  面向应用创建者和管理员的 cmdlet 的次要 Bug 修复 </li> <li> 向应用创建者的每个 cmdlet 中添加了“PowerApp”或“Flow”前缀 </li> <li>  向管理员的每个 cmdlet 中添加了“AdminPowerApp”或“AdminFlow”前缀 </li> <li> 添加了以下新的管理 cmdlet： <br> New-AdminPowerAppEnvironment <br> Set-AdminPowerAppEnvironmentDisplayName <br> New-AdminPowerAppCdsDatabase <br> Get-AdminPowerAppCdsDatabaseLanguages <br> Get-AdminPowerAppCdsDatabaseCurrencies <br> Get-AdminPowerAppEnvironmentLocations <br> Get-AdminPowerAppConnectionReferences <br> Set-AdminPowerAppAsFeatured <br> Clear-AdminPowerAppAsFeatured <br> Set-AdminPowerAppAsHero <br> Clear-AdminPowerAppAsHero <br> Set-AdminPowerAppApisToBypassConsent <br> Clear-AdminPowerAppApisToBypassConsent <br> Remove-AdminFlowApprovals </li></ol>
+| 4.0 | 2018 年 8 月 15 日 | 向 New-AdminPowerAppCdsDatabase 中添加了一个可选参数，以在默认情况下使函数同步（即，它不会返回，直到数据库已成功预配）
+| 5.0 | 2018 年 8 月 24 日 | 修复了一个问题，即流管理员 cdmlet 未返回数据以根据安全设置进行使用
 
 ## <a name="questions"></a>有疑问？
 

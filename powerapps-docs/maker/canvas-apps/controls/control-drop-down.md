@@ -9,27 +9,31 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 9b26af9a2a1fb9b187023ec3ccc9cd86580aa4cf
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f5e4e0ad13280783b7b6cd00121b4dc05cca6df8
+ms.sourcegitcommit: e4fe4b27651b62edb67e5995fc5955577d8ac5b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39017907"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075371"
 ---
 # <a name="drop-down-control-in-powerapps"></a>PowerApps 中的下拉列表控件
 一个列表，在用户不将其打开的情况下，该表仅显示第一项。
 
 ## <a name="description"></a>描述
-“下拉列表”控件可以节省屏幕的实际空间，尤其是在列表包含大量选项时。 此控件仅占用一行空间，除非用户选择箭头符号来显示更多选项。
+“下拉列表”控件可以节省屏幕的实际空间，尤其是在列表包含大量选项时。 此控件仅占用一行空间，除非用户选择箭头符号来显示更多选项。  该控件最多显示 500 项。
 
 ## <a name="key-properties"></a>关键属性
-**[Default](properties-core.md)** - 用户更改控件前的初始值。
+[Default](properties-core.md) – 用户指定不同值之前控件的初始值。
 
-**[Items](properties-core.md)** - 控件中显示的数据源，如库、列表或图表。
+[Items](properties-core.md) – 包含控件中显示的项的数据源。 如果源具有多列，请将控件的 Value 属性设置为要显示的数据列。
+  
+Value - 要在控件中显示的数据列（例如，如果数据源具有多列）。
 
-[!INCLUDE [long-items](../../../includes/long-items.md)]
-
-Selected - 选定项。
+**Selected** – 选定的项。
 
 ## <a name="additional-properties"></a>其他属性
 **[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。
@@ -117,24 +121,33 @@ Selected - 选定项。
 **[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="example"></a>示例
-1. 添加“[按钮](control-button.md)”控件，并将其 **[Text](properties-core.md)** 属性设置为显示 **Collect**。
-   
-    不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
-2. 将此**[按钮](control-button.md)** 控件的 **[OnSelect](properties-core.md)** 属性设置为以下公式：
-   <br>**ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
-   
-    想要了解有关**[ ClearCollect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
-3. 按 F5，单击或点击“**[按钮](control-button.md)**”控件，然后按 Esc。
-4. 添加“下拉列表”控件，将其命名为“国家/地区”，并将其 **[Items](properties-core.md)** 属性设置为以下公式：
-   <br>**Distinct(CityPopulations, Country)**
-5. 在垂直方向/纵向添加“文本库”控件，并将其 **[Items](properties-core.md)** 属性设置为以下公式：
-   <br>**Filter(CityPopulations, Countries.Selected.Value in Country)**
-6. 在“文本库”控件的第一项中，将顶部的“[标签](control-text-box.md)”控件的“[Text](properties-core.md)”属性设置为“ThisItem.City”，然后删除底部的“[标签](control-text-box.md)”控件。
-7. 将“文本库”控件的 **[TemplateSize](control-gallery.md)** 属性设置为 **80**。
-8. 按 F5，单击或点击“国家/地区”列表中的箭头符号，然后选择该列表中的一个选项。
-   
-    “文本库”控件仅显示选定国家/地区中的城市。
 
+### <a name="simple-list"></a>简单列表
+
+1. 添加“下拉列表”控件，然后将其 [Items](properties-core.md) 属性设置为该表达式：
+
+    ```["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]```
+
+    不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
+
+1. 在按 Alt 键的同时选择控件的向下箭头，以便显示列表中的项目。
+
+### <a name="list-from-a-data-source"></a>来自数据源的列表
+此过程中的原则适用于[提供表的任何数据源](../connections-list.md#tables)，但为了准确地执行这些步骤，你必须打开一个环境，为其创建了 Common Data Service for Apps 数据库并添加了示例数据。
+
+1. [打开空白应用](../data-platform-create-app-scratch.md#open-a-blank-app)，然后[指定 Accounts 实体](../data-platform-create-app-scratch.md#specify-an-entity)。
+
+1. 添加“下拉列表”控件，然后将其 [Items](properties-core.md) 属性设置为以下公式：
+
+    ```Distinct(Accounts, address1_city)```
+
+    此公式显示 Accounts 实体中的所有城市。 如果多个记录具有相同的城市，则 [Distinct](../functions/function-distinct.md) 功能会在你的下拉控件中隐藏重复项。
+
+1. （可选）将你的“下拉列表”控件重命名为 Cities，添加垂直“库”控件，并将库的 [Items](properties-core.md) 属性设置为这个公式：
+
+    ```Filter(Accounts, address1_city = Cities.Selected.Value)```
+
+    此 [Filter](../functions/function-filter-lookup.md) 功能仅显示 Accounts 实体中的城市与“城市”控件中所选值匹配的记录。
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 ### <a name="color-contrast"></a>颜色对比度
@@ -151,4 +164,4 @@ Selected - 选定项。
 
 ### <a name="keyboard-support"></a>键盘支持
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
+* 焦点指示器必须清晰可见。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。

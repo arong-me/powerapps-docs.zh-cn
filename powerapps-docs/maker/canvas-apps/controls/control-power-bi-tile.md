@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ab5542adb68bbd07e2725197230000bdd02b320f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: ba7d48104d9fdf85573029cc510af2c29d3f6ca0
+ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833752"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45640345"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>PowerApps 中的 Power BI 磁贴控件
 
@@ -61,6 +61,8 @@ ms.locfileid: "42833752"
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。 默认情况下，将打开与磁贴关联的 Power BI 报表。
+
+TileUrl – 从 Power BI 服务请求磁贴所使用的 URL。 可以通过向 URL 追加参数将单个参数传递到 Power BI 磁贴中（例如：… & "&$filter=Town/Province eq '" & ListBox1.Selected.Abbr & "'"）。 在参数中只能使用等于运算符。
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 

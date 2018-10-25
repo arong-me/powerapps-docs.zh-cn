@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fc2940f726c23c79bcf894bb61c3e6b884ca7112
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 218fb97f6cd523275c0ba296ea120d487cf67e4c
+ms.sourcegitcommit: c26976af24a3e510e4eced78cf5c48cc2f71cae2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865768"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48025662"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>使用 PowerApps 自定义 SharePoint 列表窗体
 
@@ -29,9 +29,9 @@ ms.locfileid: "42865768"
 > [!NOTE]
 > 如果“自定义窗体”选项不可用或对你的列表无效，则它可能包含[ PowerApps 不支持](connections/connection-sharepoint-online.md#known-issues)的数据类型。 此外，不能将窗体移到其他列表或[环境](working-with-environments.md)。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
-在 SharePoint 站点上创建包含以下列的列表：
+在 SharePoint 站点上创建列表，然后添加以下列：
 
 - **ProductName**（单行文本）
 - **Details**（是/否）
@@ -53,18 +53,11 @@ ms.locfileid: "42865768"
 
 ## <a name="hide-extra-fields"></a>隐藏额外字段
 
-在屏幕中央，PowerApps 会显示你的窗体，但它包含你可能不想显示的字段。
+在屏幕中央，PowerApps 会显示你的窗体，但它包含你不需要的字段。
 
-- 在“数据”窗格中，清除这些字段的复选框。
+- 在“数据”窗格中，清除“标题”和“附件”字段的复选框。
 
-  - **Title**
-  - **Modified**
-  - **Created**
-  - **Created By**
-  - **Modified By**
-  - **ID**
-
-    这些字段会从窗体中消失，只留下你创建的字段。
+    这些字段会从窗体中消失，只留下你添加的字段。
 
     ![字段列表](./media/customize-list-form/field-list.png)
 
@@ -109,6 +102,8 @@ ms.locfileid: "42865768"
 1. 多次选择“Details”开关，隐藏和显示最后三个字段。
 
 若要[进一步自定义窗体](sharepoint-form-integration.md)，请打开它，在窗体顶部附近选择“自定义”，然后进行、保存和发布更改。
+
+如果使用此窗体创建一项或多项，“标题”字段将为空。 你可以通过修改默认视图隐藏此字段。
 
 ## <a name="use-the-default-form"></a>使用默认窗体
 

@@ -5,14 +5,20 @@ author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 03/21/2018
+ms.date: 08/29/2018
 ms.author: jimholtz
-ms.openlocfilehash: eefcd30e4f5e6ec7441147c157cbb46864ebf718
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 9d7a2093c938658d6717157fc6bd683aa3a55bb6
+ms.sourcegitcommit: b8eee36e680036accb0e7d9fc7a434906af1c4d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349239"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43297465"
 ---
 # <a name="create-an-environment"></a>创建环境
 环境是用来存储、管理和共享组织的业务数据、应用和流的空间。 还可以将环境用作分隔具有不同角色、安全要求或目标受众的应用的容器。 PowerApps 自动为每个租户创建一个默认环境，并由相应租户中的所有用户共享。
@@ -21,7 +27,7 @@ ms.locfileid: "39349239"
 
 在本主题中，你将了解如何创建环境以及该环境的一个数据库。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
  要执行本主题中的步骤，需要以下各项：
  * PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证。 此外，也可以注册 [PowerApps 计划 2 免费试用版](https://web.powerapps.com/signup?redirect=marketing&email=)。
  * PowerApps 环境管理员、Office 365 全局管理员或 Azure Active Directory 租户管理员权限。 有关详细信息，请参阅 [PowerApps 中的环境管理](environments-administration.md)。
@@ -36,6 +42,8 @@ ms.locfileid: "39349239"
 2. 在“新环境”对话框中，为环境输入一个名称，然后从下拉列表中选择一个区域和环境类型。 区域默认为 Azure Active Directory 租户主区域，但可以从下拉列表中选择任何区域。 环境创建后，将无法更改区域。 完成后，单击或点击“创建环境”。
 
     ![文件和共享](./media/create-environment/new-environment-dialog.png)
+
+    选择“预览版(美国)”以抢先体验即将发布的 PowerApps 功能。 了解有关 [PowerApps 预览版程序](preview-environments.md)的详细信息。
 3. 环境创建后，会在对话框中收到一条确认消息并且会提示你创建数据库。 单击或点击“创建数据库”启用对 Common Data Service 的访问。
 
     **注意：** 此时，仅可以在 Azure Active Directory 租户主区域中创建数据库。

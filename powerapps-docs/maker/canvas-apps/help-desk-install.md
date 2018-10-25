@@ -47,7 +47,7 @@ ms.locfileid: "42834615"
 
 此列表存储技术支持票证。
 
-1. 打开 Web 浏览器并导航到 https://portal.office.com 。
+1. 打开 Web 浏览器并导航到 [https://portal.office.com](https://portal.office.com) 。
 2. 用具有创建 SharePoint 列表权限的帐户登录。
 3. 导航到要在其中存放技术支持列表的站点集合。
 4. 单击网页右上角的齿轮图标。

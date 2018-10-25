@@ -1,6 +1,6 @@
 ---
 title: 在 PowerApps 中使用认知服务 | Microsoft 文档
-description: 生成使用 Microsoft 认知服务文本分析 API 分析文本的基本应用。
+description: 生成使用 Microsoft 认知服务文本分析 API 分析文本的基本画布应用。
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 12/08/2017
 ms.author: anneta
-ms.openlocfilehash: 6175633b2fbec4e9949882c587916adb349290d4
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: df823f68842ad3c7a7497e6dce9cc3540520527e
+ms.sourcegitcommit: 3dc330d635aaf5bc689efa6bd39826d6e396c832
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195441"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48875867"
 ---
 # <a name="use-cognitive-services-in-powerapps"></a>在 PowerApps 中使用认知服务
-本文介绍如何生成使用 [Microsoft 认知服务文本分析 API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) 分析文本的基本应用。 我们将介绍如何设置文本分析 API，以及如何使用[文本分析连接器](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/)连接到它。 随后将介绍如何创建调用此 API 的应用。
+本文介绍如何生成使用 [Microsoft 认知服务文本分析 API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) 分析文本的基本画布应用。 我们将介绍如何设置文本分析 API，以及如何使用[文本分析连接器](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/)连接到它。 随后将介绍如何创建调用此 API 的画布应用。
 
 > [!NOTE]
 > 如果是刚开始接触在 PowerApps 中生成应用，建议先阅读[从头开始创建应用](get-started-create-from-blank.md)，再深入研究本文。
@@ -84,7 +88,7 @@ Microsoft 认知服务是一组可使应用程序更加智能、富有吸引力�
     ![文本分析连接器](./media/cognitive-services-api/create-connection-ta.png)
 
 ### <a name="add-controls-to-the-app"></a>向应用添加控件
-创建此应用的下一步是添加所有控件。 通常在生成应用时，我会在此过程中向控件添加公式，但是在本示例中，我们将首先以控件为主，在下一节中再添加一些公式。 下图演示了带有所有控件的应用。
+创建此应用的下一步是添加所有控件。 通常在生成应用时，我们会在此过程中向控件添加公式，但是在本示例中，我们将首先以控件为主，在下一节中再添加一些公式。 下图演示了带有所有控件的应用。
 
 ![完成的应用](./media/cognitive-services-api/finished-app-no-data.png)
 

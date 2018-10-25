@@ -1,6 +1,6 @@
 ---
-title: 连接器概述 | Microsoft 文档
-description: 可用于构建应用的所有可用连接概述
+title: 用于画布应用的连接器概述 | Microsoft Docs
+description: 可用于构建画布应用的所有可用连接概述
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,55 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 08/28/2017
 ms.author: lanced
-ms.openlocfilehash: 15da6ed2ce6b44c17645ac11d1b049b95e157703
-ms.sourcegitcommit: 47be38a23c96ba7478fd777065f5db41181af40b
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 20a725ff417ad1a36b83b6a24ca1aaecc667da14
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39164739"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834553"
 ---
-# <a name="overview-of-connectors-for-powerapps"></a>PowerApps 连接器概述
-数据是大多数应用（包括在 PowerApps 中生成的应用）的关键所在。 数据存储在数据源中，应用是通过创建的连接来连接数据。 连接使用特定的连接器与数据源进行通信。 PowerApps 提供连接器，适用于许多常用服务和本地数据源，包括 SharePoint、SQL Server、Office 365、Salesforce、Twitter 等。 若要开始向应用添加数据，请参阅[在 PowerApps 中添加数据连接](add-data-connection.md)。
+# <a name="overview-of-canvas-app-connectors-for-powerapps"></a>PowerApps 画布应用连接器概述
+数据是大多数应用（包括在 PowerApps 中生成的应用）的关键所在。 数据存储在数据源中，应用是通过创建的连接来连接数据。 连接使用特定的连接器与数据源进行通信。 PowerApps 提供连接器，适用于许多常用服务和本地数据源，包括 SharePoint、SQL Server、Office 365、Salesforce 和 Twitter。 若要开始向画布应用添加数据，请参阅[在 PowerApps 中添加数据连接](add-data-connection.md)。
+
+连接器可能会提供数据或操作的表。 某些连接器仅提供表，某些连接器仅提供操作，而某些连接器会提供两者。 此外，你的连接器可能是标准连接器或自定义连接器。
+
+## <a name="tables"></a>表
+
+如果你的连接器提供表，则添加数据源，然后选择要管理的数据源中的表。 PowerApps 会将表数据检索到应用中并为你更新数据源中的数据。 例如，可以添加一个包含名为 Lessons 的表的数据源，然后在编辑栏中将控件的 Items 属性（如库或表单）设置为以下值：
+
+ ![纯数据源 Items 属性](./media/connections-list/ItemPropertyPlain.png)
+
+通过自定义用于显示数据的控件的 Items 属性，你可以指定应用检索的数据。 继续前面的示例，通过将该名称用作 Search 和 SortByColumn 函数的参数，你可以对 Lessons 表中的数据进行排序或筛选。 在此图中，Items 属性所设置的公式指定基于 **TextSearchBox1** 中的文本对数据进行排序和筛选。 
+
+ ![扩展数据源 Items 属性](./media/connections-list/ItemPropertyExpanded.png)
+
+有关如何使用表自定义公式的详细信息，请参阅以下主题：
+
+  [了解 PowerApps 中的数据源](working-with-data-sources.md)<br> 
+  [通过 Excel 数据生成应用](get-started-create-from-data.md)<br> 
+  [从头开始创建应用](get-started-create-from-blank.md)<br>
+  [了解 PowerApp 中的表格和记录](working-with-tables.md)
+
+  > [!NOTE]
+  > 若要连接到 Excel 工作簿数据，工作簿必须托管在 OneDrive 等云存储服务中。 有关详细信息，请参阅[从 PowerApps 连接到云存储](connections/cloud-storage-blob-connections.md)。
+
+## <a name="actions"></a>操作
+
+如果你的连接器提供操作，则必须与前面一样仍选择数据源。 而不是选择表作为下一步，但是，通过编辑将显示数据的控件的 Items 属性，可以手动将控件连接到操作。 Items 属性所设置的公式指定用于检索数据的操作。 例如，如果连接到 Yammer，然后将 Items 属性设置为数据源的名称，则应用不会检索任何数据。 若要用数据填充控件，请指定 **GetMessagesInGroup(5033622).messages** 等操作。
+
+![操作数据源 Items 属性](./media/connections-list/ItemPropertyAction.png)
+
+如果需要处理操作连接器的自定义数据更新，请生成包含 Patch 函数的公式。 在公式中，标识操作以及将绑定到操作的字段。  
+
+有关如何为自定义更新自定义公式的详细信息，请参阅以下主题：
+
+[Patch](functions/function-patch.md)<br>[Collect](functions/function-clear-collect-clearcollect.md)<br>[Update](functions/function-update-updateif.md)
+
+## <a name="popular-connectors"></a>常用连接器
 
 单击下表中列出的链接，可详细了解最常用的连接器。 若要获取连接器的完整列表，请参阅[所有的连接器](#all-connectors)。
 
@@ -29,26 +69,10 @@ ms.locfileid: "39164739"
 | ![Dynamics 365](./media/connections-list/dynamics-365.png) |[**Dynamics 365**](connections/connection-dynamics-crmonline.md) |&nbsp; |![OneDrive](./media/connections-list/onedrive.png) |[**OneDrive**](connections/cloud-storage-blob-connections.md) |
 | ![Office 365 用户](./media/connections-list/office365.png) |[**Office 365 用户**](connections/connection-office365-users.md) |&nbsp; |![Dropbox](./media/connections-list/dropbox.png) |[**Dropbox**](connections/cloud-storage-blob-connections.md) |
 
-## <a name="types-of-connectors"></a>连接器类型
-PowerApps 提供以下两类连接器：标准连接器（如上面所列）和自定义连接器。 若要使用标准连接器连接到 PowerApps 支持的数据源，请使用标准连接器。 如果需要连接到另一个源（如已生成的服务），请参阅[注册和使用自定义连接器](../canvas-apps/register-custom-api.md)。
+## <a name="standard-and-custom-connectors"></a>标准和自定义连接器
+PowerApps 为多个常用数据源（如上面列出的数据源）提供标准连接器。 如果 PowerApps 的标准连接器适用于要使用的数据源的类型，则应使用该连接器。 如果要连接到其他类型的数据源（如已构建的服务），请参阅[注册和使用自定义连接器](../canvas-apps/register-custom-api.md)。
 
-标准连接器的行为各异，具体取决于连接到的数据源类型，以及数据源如何返回数据：
+## <a name="all-standard-connectors"></a>所有标准连接器
+请参阅 [Microsoft 连接器参考](https://docs.microsoft.com/connectors/)，查看所有标准连接器的列表。 高级连接器需要具备 PowerApps 计划 1 或计划 2。 有关详细信息，请参阅 [PowerApps 计划](https://powerapps.microsoft.com/pricing/)。
 
-* 一些连接器支持连接到表格数据源，如 SharePoint、SQL Server 和 Excel。 如果连接的是这些数据源，数据以表的形式返回给 PowerApps。 PowerApps 使用自己的函数（如 [Patch()](functions/function-patch.md)、[Collect()](functions/function-clear-collect-clearcollect.md)、[Update()](functions/function-update-updateif.md) 等）与数据进行交互。 还可以在窗体和库中轻松使用表格数据，这样表中的字段就会显示为库或窗体中的字段。 有关详细信息，请参阅以下文章：
-
-    [了解 PowerApps 中的数据源](working-with-data-sources.md)
-
-    [通过 Excel 数据生成应用](get-started-create-from-data.md)
-
-    [从头开始创建应用](get-started-create-from-blank.md)
-
-    > [!NOTE]
-  > 若要连接到 Excel 数据，工作簿必须托管在 OneDrive 等云存储服务中。 有关详细信息，请参阅[从 PowerApps 连接到云存储](connections/cloud-storage-blob-connections.md)。
-
-* 另一些连接器支持连接到基于函数的数据源，如 Twitter、Facebook 和 Office 365 Outlook。 如果连接的是这些数据源，数据根据基础服务中的特定函数调用返回给 PowerApps。 例如，如果使用 Twitter 连接器，需要调用 `Twitter.MyFollowers()` 才能返回关注者名单。 仍可以在窗体或库中使用此类数据，但与表格数据相比，需要再执行一些操作。 有关详细信息，请参阅[从 PowerApps 连接到 Twitter](connections/connection-twitter.md)。
-
-## <a name="all-connectors"></a>所有的连接器
-请参阅 [Microsoft 连接器参考](https://docs.microsoft.com/connectors/)，查看连接器的完整列表。 高级连接器需要具备 PowerApps 计划 1 或计划 2。 有关详细信息，请参阅 [PowerApps 计划](https://powerapps.microsoft.com/pricing/)。
-
-
-若对特定连接器有疑问，请访问 [PowerApps 论坛](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)。 若对新连接器有意见或有改进建议，请访问 [PowerApps 观点](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas)。
+你可以在 [PowerApps 论坛](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)中提出有关具体连接器的问题，也可以建议添加连接器或在 [PowerApps 建议](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas)中做出其他改进。

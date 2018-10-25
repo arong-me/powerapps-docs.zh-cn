@@ -1,6 +1,6 @@
 ---
-title: 快速入门：在移动设备上运行基于画布的应用 | Microsoft Docs
-description: 本快速入门教程介绍如何在移动设备上运行画布应用。
+title: 在移动设备上运行基于画布的应用 | Microsoft Docs
+description: 了解如何在移动设备上运行画布应用。
 author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
@@ -10,17 +10,22 @@ ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: a80042065a830bb9d34007131cccbd995279e3dd
-ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: ace1a40e8d7900d93e2ff902705f6f50e1d7a193
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37925699"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42851875"
 ---
-# <a name="quickstart-run-a-canvas-app-on-a-mobile-device"></a>快速入门：在移动设备上运行画布应用
-在创建应用或与某人共享应用时，可以在 Windows、iOS、Android 上或 Web 浏览器中运行此应用。 本快速入门教程介绍如何在移动设备上运行画布应用。 在移动设备上运行的应用可以利用移动设备功能，如定位服务和照相机。
+# <a name="run-a-canvas-app-on-a-mobile-device"></a>在移动设备上运行画布应用
+在创建应用或与某人共享应用时，可以在 Windows、iOS、Android 上或 Web 浏览器中运行此应用。 本主题介绍如何在移动设备上运行画布应用。 在移动设备上运行的应用可以利用移动设备功能，如定位服务和照相机。
 
-若要按照此快速入门教程操作，请在开始之前先[免费注册](https://web.powerapps.com/signup?redirect=marketing&email=) PowerApps（如果还没有注册），然后从 [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) 或 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) 将 PowerApps 下载到运行有[支持的操作系统](../maker/canvas-apps/limits-and-config.md)的 iPhone、iPad 或 Android 设备上。 此外请确保有权访问自己创建的应用或其他人创建并与你共享的应用。
+若要按照此步骤操作，请在开始之前先[免费注册](https://web.powerapps.com/signup?redirect=marketing&email=) PowerApps（如果还没有注册），然后从 [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) 或 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) 将 PowerApps 下载到运行有[支持的操作系统](../maker/canvas-apps/limits-and-config.md)的 iPhone、iPad 或 Android 设备上。 此外请确保有权访问自己创建的应用或其他人创建并与你共享的应用。
 
 ## <a name="open-powerapps-and-sign-in"></a>打开 PowerApps 并登录
 在移动设备上打开 PowerApps 并用 Azure Active Directory 凭据登录。
@@ -77,7 +82,7 @@ ms.locfileid: "37925699"
 若要关闭应用，用手指从应用的左边缘扫至右边缘。 在 Android 设备上，还可以按“后退”按钮，再确认要退出应用。
 
 ## <a name="next-steps"></a>后续步骤
-你在本快速入门教程中了解了如何在移动设备上运行画布应用。 还可以在移动设备上运行模型驱动应用。
+本主题介绍如何在移动设备上运行画布应用。 还可以在移动设备上运行模型驱动应用。
 
 > [!div class="nextstepaction"]
 > [在移动设备上运行模型驱动应用](run-app-client-model-driven.md)

@@ -1,6 +1,6 @@
 ---
-title: 系统要求、限制和配置值 | Microsoft Docs
-description: PowerApps 的系统要求、限制和配置值
+title: 画布应用的系统要求、限制和配置值 | Microsoft Docs
+description: PowerApps 中内置的画布应用的系统要求、限制和配置值
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/07/2018
 ms.author: anneta
-ms.openlocfilehash: 3c334baf876c64085621520daef9a0f153d54107
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 5ba279e361dfe450de1187cf6aca87bc026178ba
+ms.sourcegitcommit: 60006ce9cb21c59e588c00f2ba5c41ffebbbba09
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39476866"
+ms.lasthandoff: 09/30/2018
+ms.locfileid: "47456289"
 ---
-# <a name="system-requirements-limits-and-configuration-values"></a>系统要求、限制和配置值
+# <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>画布应用的系统要求、限制和配置值
 本主题包含设备平台和 Web 浏览器要求，以及 PowerApps 的限制和配置值。
 
-## <a name="supported-platforms-for-running-apps-using-the-powerapps-app"></a>支持使用 PowerApps 应用运行应用的平台
+## <a name="supported-platforms-for-running-canvas-apps-using-the-powerapps-app"></a>支持使用 PowerApps 应用运行画布应用的平台
 
 | **所需的最低版本** | **推荐版本** |
 | --- | --- |
@@ -27,7 +31,7 @@ ms.locfileid: "39476866"
 | Android 5 或更高版本 |Android 7 或更高版本且 RAM 至少为 4GB |
 | Windows 8.1 或更高版本（仅 PC） |Windows 10 Fall Creators Update 且 RAM 至少为 8GB|
 
-## <a name="supported-browsers-for-running-apps"></a>支持运行应用的浏览器
+## <a name="supported-browsers-for-running-canvas-apps"></a>支持运行画布应用的浏览器
 
 | **浏览器** | **操作系统** |
 | --- | --- |
@@ -64,7 +68,7 @@ PowerApps 请求使用的 IP 地址取决于该应用所在[环境](../../admini
 举例来说，如果必须要为 Azure SQL 数据库指定 IP 地址的允许列表，则应使用以下地址。
 
 > [!IMPORTANT]
->   如果具有现有配置，请尽快于 2018 年 9 月 1 日前更新这些配置，以便它们包括和匹配此 PowerApps 应用所在区域列表中的 IP 地址。
+>   如果具有现有配置，请尽快于 2018 年 9 月 30 日前更新这些配置，以便它们包括和匹配此 PowerApps 应用所在区域列表中的 IP 地址。
 
 | 区域 | 出站 IP |
 | --- | --- |
@@ -95,3 +99,6 @@ PowerApps 请求使用的 IP 地址取决于该应用所在[环境](../../admini
 | *.azureedge.net |https |WebAuth |
 | *.blob.core.windows.net |https |Blob 存储 |
 | vortex.data.microsoft.com |https |遥测 |
+
+> [!NOTE]
+> 如果你使用的是 VPN，则必须将其配置为从 PowerApps Mobile 的隧道中排除 localhost。

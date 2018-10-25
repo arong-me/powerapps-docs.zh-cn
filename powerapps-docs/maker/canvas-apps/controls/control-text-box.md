@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a0ffeded77bf08958aaa22c21d33f7063009b4bd
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: d8cb7bdfa995d2289f881b6d21074efd6cf11ac4
+ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42868395"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45640391"
 ---
 # <a name="label-control-in-powerapps"></a>PowerApps 中的标签控件
 一个框，显示文本、数字、日期或货币等数据。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 标签按键入时原封不动地显示指定为文本字符串的数据，或显示指定为公式（计算结果为文本字符串）的数据。 标签通常作为标识另一控件（如评分或音频控件）的标签出现在其他任何控件（如标识屏幕的横幅）之外，或出现在库中以显示项的特定类型信息。
 
 ## <a name="key-properties"></a>关键属性
@@ -74,7 +74,9 @@ ms.locfileid: "42868395"
 
 **[Italic](properties-text.md)** – 控件中的文本是否为斜体。
 
-**[LineHeight](properties-text.md)** - 诸如文本行之间或列表中各项之间的距离。
+**[LineHeight](properties-text.md)** – 诸如文本行之间或列表中各项之间的距离。
+
+Live – 屏幕阅读器如何宣布标签文本更改。  值可以为 Off、Assertive 和 Polite。 此属性可用于以易于访问的方式宣布应用 UI 中的动态更改。
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 

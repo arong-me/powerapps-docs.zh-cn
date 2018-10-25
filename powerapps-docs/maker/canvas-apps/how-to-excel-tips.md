@@ -1,6 +1,6 @@
 ---
 title: 在 Excel 中设置表格格式 | Microsoft Docs
-description: 要使用 Excel 数据，需要将数据格式设置为表格。 在列名中添加“图像”关键字
+description: 若要在 PowerApps 中使用 Excel 数据，必须将数据设置为表格格式。 在列名中添加“图像”关键字
 author: yifwang
 manager: kvivek
 ms.service: powerapps
@@ -9,31 +9,35 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/03/2018
 ms.author: yifwang
-ms.openlocfilehash: ddc6b9715a3282dbfcce9ae5f63be50ea1406e69
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: ea4bda4857c89a9e28359f63811e70744f111499
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023657"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42830948"
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>在 Excel 中设置表格格式和命名的相关提示
-要在 PowerApps 中使用 Excel 数据，则必须将其设置为表格格式。 通过按照本文内容操作，你将了解如何在 Excel 中设置表格格式以及命名 Excel 列的一些提示。
+在 PowerApps 中，仅当将 Excel 数据设置为表格格式时，才能基于该数据创建画布应用。 通过按照本文内容操作，你将了解如何在 Excel 中设置表格格式以及命名 Excel 列的一些提示。
 
 ## <a name="how-to-format-a-table-in-excel"></a>如何在 Excel 中设置表格格式
-通过单击 Excel“开始”选项卡中的“套用表格格式”，可将数据转换为表格。
+通过选择 Excel“开始”选项卡中的“套用表格格式”，可将数据转换为表格。
 
 ![Excel 表格格式设置](./media/how-to-excel-tips/format-table.png)
 
-设置表格格式的另一种方法是，通过“插入”选项卡创建表格。
+也可以通过选择“插入”选项卡上的“表格”来创建表格。
 
 ![Excel 插入表格](./media/how-to-excel-tips/insert-table.png)
 
-为了轻松查找表格，请转到“表格工具”下的“设计”，对表格进行重命名。 通过此操作可为表格提供有意义的名称，对于一个 Excel 文件中有多个表格的情况尤其有用。
+为了轻松查找表格，请转到“表格工具”下的“设计”，对表格进行重命名。 通过此操作可为表格提供有意义的名称，对于同一 Excel 文件中包含多个表格的情况尤其有用。
 
 ![Excel 表格重命名](./media/how-to-excel-tips/rename-table.png)
 
 ## <a name="naming-tips-in-excel"></a>Excel 中的命名提示
-在 Excel 表格中，尝试在图像列中添加关键字“图像”。 通过此操作，当在具有图像控件的库中使用此表格时，图像列会与图像控件绑定。
+如果表格中的列包含图像，请在该列的名称中包括“image”。 此关键字会将该列绑定到库中的图像控件。
 
 ![将 Excel 表格与图像相互连接](./media/how-to-excel-tips/connect-gallery.png)
 

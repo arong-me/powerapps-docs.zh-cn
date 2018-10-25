@@ -6,14 +6,20 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2018
+ms.date: 08/29/2018
 ms.author: manasma
-ms.openlocfilehash: 3e954db3ed224afa100d89be6aa03d7a2139a9d7
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: e160098075b78a0a4de98da9c9915d0bef26d183
+ms.sourcegitcommit: b8eee36e680036accb0e7d9fc7a434906af1c4d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349929"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43297319"
 ---
 # <a name="environments-overview"></a>环境概述
 环境是用来存储、管理和共享组织的业务数据、应用和流的空间。 还可以将环境用作分隔具有不同角色、安全要求或目标受众的应用的容器。 环境的使用方式视组织和要生成的应用而定。 例如：
@@ -22,6 +28,7 @@ ms.locfileid: "39349929"
 * 可以创建不同的环境，对测试版和生产版应用进行分组。
 * 可以创建不同的环境，对应于公司中的特定团队或部门，每个环境包含各个受众的相关数据和应用。
 * 还可以创建不同的环境，对应于公司的其他全球分支机构。  
+* 通过联接 [PowerApps 预览版程序](preview-environments.md)抢先体验即将发布的 PowerApps 功能。
 
 ## <a name="environment-scope"></a>环境范围
 每个环境都是在 Azure AD 租户下创建的，只有相应租户中的用户才能访问环境中的资源。 环境还会与地理位置（如美国）绑定。 在环境中创建应用后，此应用只会路由到位于该地理位置的数据中心。 在此环境中创建的所有项（包括连接、网关、使用 Microsoft Flow 的流等）也会与此环境的地理位置绑定。
@@ -75,7 +82,7 @@ PowerApps 自动为每个租户创建一个默认环境，并由相应租户中�
 你可以创建不同的环境用于不同的用途。 试用环境用于借助 Common Data Service 体验尝试环境和数据库。 它将在某个时间段后过期。 有关详细信息，请参阅[管理 PowerApps 中的环境](environments-administration.md)。
 
 ## <a name="choosing-an-environment"></a>选择环境
-随着环境的引入，访问 [https://web.powerapps.com](https://web.powerapps.com) 时现在将获得全新的体验。  站点中可见的应用、连接和其他项现在会根据当前选定的环境进行筛选。  当前环境在标头右侧边缘附近的环境选取器中指定。 若要选择其他环境，请单击或点击选取器，查看可用环境列表。 单击或点击要进入的环境。
+随着环境的引入，访问 [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 时现在将获得全新的体验。  站点中可见的应用、连接和其他项现在会根据当前选定的环境进行筛选。  当前环境在标头右侧边缘附近的环境选取器中指定。 若要选择其他环境，请单击或点击选取器，查看可用环境列表。 单击或点击要进入的环境。
 
 当你满足下列条件之一时，选取器中会显示环境：
 

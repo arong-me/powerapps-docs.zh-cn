@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: 9f02b752444153681e30b39c3fa9d8a8b9e0cd6d
-ms.sourcegitcommit: 521a7b8e6ae72a211045b54d153a8a8c8f59172e
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: a255489f243ca8586f349e617e5af2023e88732b
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40021378"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864393"
 ---
 # <a name="develop-offline-capable-canvas-apps-with-powerapps"></a>使用 PowerApps 开发可脱机运行的画布应用
 
@@ -24,6 +28,11 @@ ms.locfileid: "40021378"
 * 在脱机时运行你开发的应用。
 * 使用 [Connection](../canvas-apps/functions/signals.md#connection) 信号对象确定应用何时处于脱机、联机或按流量计费的连接状态中。
 * 在脱机时使用[集合](../canvas-apps/create-update-collection.md)或利用 [LoadData 和 SaveData](../canvas-apps/functions/function-savedata-loaddata.md) 等函数进行基本数据存储。
+
+> [!NOTE]
+> 此功能区域仍处于开发阶段，现在并未针对每个方案进行优化。 对于通常不超过 2 MB 的相对较小的数据量（例如，某表格中包含几十条文本记录），用于将数据保存到本地设备的 SaveData() 和用于从该设备加载数据的 LoadData() 函数适用于当前实现。 这适用于某些基本“脱机”方案，而且能够通过本地缓存数据来提高画布应用的启动性能。 但是，使用此功能保存大量数据（例如，保存包含数千行内容的表格或缓存大型图像或视频）可能会导致当前实现出现错误或意外行为，应当加以避免。 此外，当设备从脱机返回到连接状态时，此功能不会自动解决合并冲突 – 有关保存哪些数据以及如何处理重新连接上的配置取决于编写表达式时的创建者。
+>
+> 我们正在努力扩展脱机应用的功能，以提高稳定性和大小限制，（将来）针对要保存哪些数据以及如何处理冲突自动做出决策。 请继续关注此处以及 [PowerApps 博客](https://powerapps.microsoft.com/blog/)，以便及时了解更新。
 
 ## <a name="how-to-build-offline-capable-apps"></a>如何生成可脱机运行的应用
 

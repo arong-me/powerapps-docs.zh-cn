@@ -1,20 +1,24 @@
 ---
 title: 适用于 Power BI 的 PowerApps 自定义视觉对象 | Microsoft Docs
 description: 有关嵌入使用相同数据源并可像 PowerBI 中其他报表项一样进行筛选的画布应用的步骤和限制
-author: mgblythe
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/15/2018
-ms.author: mblythe
-ms.openlocfilehash: 0da480a482415ad174f10204f14f31adbd3607f2
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+ms.author: chmoncay
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f4654c12c860496cd0e2b44bbd33c956b7385460
+ms.sourcegitcommit: 0269766ee598f75a4d2459824128f031f68ca042
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469985"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860601"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>适用于 Power BI 的 PowerApps 自定义视觉对象
 
@@ -32,7 +36,9 @@ ms.locfileid: "39469985"
 
     ![选择报表数据](./media/powerapps-custom-visual/add-visual-set-data.png)
 
-3. 可以选择现有应用，也可以创建一个。 如果选择创建应用，可以选择要在其中创建应用的环境。
+    你可以选择现有应用或创建一个应用，但必须将报表发布到 Power BI 服务并在 Microsoft Edge 或 Google Chrome 中打开。
+
+3.  如果选择创建应用，可以选择要在其中创建应用的环境。
 
     ![新应用或现有应用](./media/powerapps-custom-visual/create-new-or-choose-app.png)
 
@@ -66,12 +72,12 @@ ms.locfileid: "39469985"
 
 PowerApps 自定义视觉对象在预览版中可用，但具有以下限制：
 
-- 在 Power BI Desktop、Internet Explorer 或 Mozilla Firefox 中使用 PowerApps 自定义视觉对象时无法创建或修改应用。 建议首先将报表发布到 Power BI 服务。 然后使用 Microsoft Edge 或 Google Chrome 创建新的应用并对应用进行更改。
+- 在 Power BI Desktop、Internet Explorer 或 Mozilla Firefox 中使用 PowerApps 自定义视觉对象时无法创建或修改应用。 建议首先将报表发布到 Power BI 服务。 然后使用 Microsoft Edge 或 Google Chrome 创建和更新应用。
 - 如果更改与视觉对象关联的数据字段，必须通过选择省略号 (...)，然后选择“编辑”，从 Power BI 服务内部编辑应用。 否则所做的更改不会传播到 PowerApps，且应用不会正常运行。
 - PowerApps 自定义视觉对象无法触发对 Power BI 报表或 Power BI 数据源的刷新。 如果将数据从应用写回与报表相同的数据源，则不会立即反映出所做的更改。 更改会在下一个计划的刷新后得到反映。
 - PowerApps 自定义视觉对象无法筛选数据或将任何数据发送回报表。
-- 需要单独从报表共享 PowerApps 应用。 了解如何[在 PowerApps 中共享应用](share-app.md)。
-- 适用于 Power BI 的移动应用不支持 PowerApps 自定义视觉对象。
+- 你需要单独从报表共享 PowerApps 应用。 了解如何[在 PowerApps 中共享应用](share-app.md)。
+- Power BI 报表服务器和适用于 Power BI 的移动应用不支持 PowerApps 自定义视觉对象。
 
 ## <a name="next-steps"></a>后续步骤
 

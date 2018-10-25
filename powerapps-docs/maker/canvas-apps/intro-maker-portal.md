@@ -1,132 +1,133 @@
 ---
-title: powerapps.com 简介 | Microsoft 文档
+title: 首次登录 | Microsoft Docs
 description: 所有应用创作者的新家。
-author: linhtranms
+author: AFTOwen
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
-ms.date: 10/28/2016
-ms.author: litran
-ms.openlocfilehash: 9c1b6bde62f0260dca7eba1d723049aadc3e72c9
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.reviewer: ''
+ms.date: 08/06/2018
+ms.author: anneta
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 3ecf468f8c1b15d20b144aa127fe31c13dba484e
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195326"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42849740"
 ---
-# <a name="introduction-to-powerappscom"></a>powerapps.com 简介
-PowerApps 团队将会重新引入 [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 作为应用创建者的新门户。 我们已将页面重新设计为主站点，让创建者轻松着手创建应用，使用 Microsoft Common Data Service，以及在一个位置管理他们的应用。 本文逐步讲解以下内容：
+# <a name="sign-in-to-powerapps-for-the-first-time"></a>首次登录到 PowerApps
 
-* 标题
-* 主页
-* “应用”页
+登录到 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 后，站点会为你提供各种选项，用于创建自己的应用、打开你或他人创建的应用和执行相关任务。 这些任务涵盖了从最简单的任务（如标识一个或多个提供访问权限的许可证）到更高级的功能（如创建与特定数据源的自定义连接）。
 
-## <a name="header"></a>标题
-注册后首次登录到 powerapps.com 时，可以看到该站点的新标题。 标题左边缘的附近是 Office 堆积圆点图标。 可通过此图标快速访问其他所有 Office 产品，例如 PowerPoint、OneNote 和 Word，以及 Microsoft Flow 和 Dynamics 365。
+你可以在以下三个常规区域中选择选项：
 
-![标题 - 堆积圆点图标](./media/intro-maker-portal/waffle.png)
+- 页面顶部的标题
 
-在标题右边缘的附近，首先看到的是环境下拉菜单，可在其中快速切换环境。 默认情况下，可能已选中“默认环境”。 [详细了解环境](../../administrator/environments-overview.md)。
+    ![标题](media/intro-maker-portal/header.png)
 
-![标题 - 环境](./media/intro-maker-portal/environment.png)
+- 页面左边缘的导航栏
 
-在环境下拉菜单的旁边，可以看到一个下载图标。 单击或点击此图标会显示一个对话框，其中包含用于下载 PowerApps Mobile（适用于 iOS 或 Android 设备）的链接。
+    ![导航栏](media/intro-maker-portal/nav-bar.png)
 
-![标题 - 下载](./media/intro-maker-portal/downloads2.png)
+- 页面中间突出显示的大图标
 
-在下载图标的旁边，可以看到一个齿轮图标（设置）。 单击或点击此图标会显示连接、网关和管理中心的链接。
+    ![主页的中心区域](media/intro-maker-portal/center-area.png)
 
-![标题 - 设置](./media/intro-maker-portal/settings_items2.png)
+为了获得最佳结果，请先确保将主页设置为正确的环境。
 
-在设置的旁边，可以看到一个问号图标（帮助）。 单击或点击此图标会显示引导式学习、文档、支持、社区、博客以及法律和隐私声明的链接。
+## <a name="choose-an-environment"></a>选择环境
 
-![标题 - 帮助](./media/intro-maker-portal/help_items2.png)
+无论在 Common Data Service for Apps 中创建的是应用、流、数据连接还是实体，PowerApps 中所执行的大部分操作都包含在特定的环境中。 环境会创建不同类型工作之间的边界；例如，组织可能有单独的环境用于不同的部门。 许多组织会使用环境将仍处于开发中的应用与已准备好广泛使用的应用进行分隔。 你可能有权限访问多个环境或只能访问一个环境。如果你具有相应权限，则可能能够创建自己的环境。
 
-## <a name="homepage"></a>主页
-登录 [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 后，默认会登陆到主页。 我们已更改主页的布局，帮助你快速开始操作，不管你是要创建应用还是要探索 Common Data Service。
+若要验证你所在的环境，请查找标题右侧附近的环境切换器。
 
-如果你以前已登录到 PowerApps 并且运行或创建了一些应用，主页的第一个部分将显示“最近使用的应用”列表。 应用已按照最近打开的日期排序。
+![环境切换器](media/intro-maker-portal/environment-switcher.png)
 
-![最近使用的应用](./media/intro-maker-portal/recentapps2.png)
+如果在一个环境中创建某个应用，则无法在另一个环境中查看该应用。 此外，想要运行应用的人员必须有权限访问在其中创建该应用的环境。
 
-在右上角的附近有一个标有“应用”的箭头，单击该箭头会直接链接到“应用”页，方便你查看所有应用。
+> [!IMPORTANT]
+> 请先确保你位于正确的环境中，然后再创建应用、流或类似组件。 你无法轻松地将组件从一个环境移至另一个环境。
 
-如果你以前从未登录、创建应用或运行应用，则看到的不是“最近使用的应用”部分， 而是横幅“创建应用”。
+有关详细信息，请参阅[环境概述](../../administrator/environments-overview.md)。
 
-![创建应用](./media/intro-maker-portal/createapp.png)
+## <a name="choose-an-app-type"></a>选择应用类型
 
-单击或点击此横幅中的“开始”会显示用于通过“PowerApps Studio”创建应用的选项。
+在 PowerApps 中，可以创建和运行以下类型的应用：
 
-![创建应用模式](./media/intro-maker-portal/createmodal2.png)
+- 画布应用支持设计自定义 UI 并连接到来自各种源的数据。
+- 模型驱动应用具有标准的 UI 并仅连接到 Common Data Service (CDS) for Apps 中的数据。 但是，你可以较轻松地创建其他元素，如视图、仪表板以及不同类型的业务逻辑。
 
-在“开始”的旁边，可以看到教程视频的链接，其中演示了如何基于数据快速创建应用（在 SharePoint 或 PowerApps 中），然后共享该应用。 单击“了解详情”箭头链接可转到有关如何基于现有数据创建应用的主题。
+默认情况下，“主页”页面显示用于创建和运行画布应用的选项。 若要改为显示模型驱动的选项，请选择具有 CDS for Apps 数据库的环境，然后打开左下角的菜单。
 
-“创建应用”横幅的下面是“使用 Microsoft Common Data Service”横幅。
+![在画布应用和模型驱动应用之间切换](media/intro-maker-portal/mode-switcher.png)
 
-![Microsoft Common Data Service](./media/intro-maker-portal/cds2.png)
+## <a name="play-or-edit-an-app"></a>播放或编辑应用
 
-“Common Data Service”下面根据你的许可证或权限显示不同的按钮。
+如果你已创建应用（或其他人已创建一个应用并与你共享该应用），则可以在“应用”页面中播放或编辑该应用。
 
-* 如果显示“开始试用”按钮，则表示你没有 PowerApps P2 许可证，而 Common Data Service 需要该许可证。 单击或点击此按钮会打开一个页面，可在其中注册此许可证的 90 天免费试用版。 [详细了解 PowerApps 许可证](../signup-for-powerapps.md)。
-* 如果显示“开始”按钮，则表示你所在的环境没有 Common Data Service 数据库，或者你无权访问该数据库。 单击或点击此按钮可立即创建环境和数据库，以便可以开始将 Common Data Service 用于你的应用。 [详细了解如何创建环境](../../administrator/environments-administration.md)。
-  
-    ![创建环境和数据库](./media/intro-maker-portal/createenvanddb2.png)
-  
-    如果你不想要创建环境，始终可以切换到有权访问的环境。
-* 如果显示“创建数据库”按钮，则表示你所在的环境没有 Common Data Service 数据库，但你有权创建一个数据库。
-  
-    ![创建数据库](./media/intro-maker-portal/cds-createdb2.png)
-  
-    单击或点击此按钮将为此环境预配数据库。
-  
-    ![创建数据库](./media/intro-maker-portal/cds_createdb22.png)
-* 如果显示“浏览实体”按钮，则表示你所在的环境中已预配了一个 Common Data Service 数据库，并且你有权访问该数据库。 单击或点击该按钮会打开“实体”页。
-  
-    ![创建数据库](./media/intro-maker-portal/cds_browseentities2.png)
+- 你可以基于最近是否打开过画布应用等条件进行筛选来查找该应用。
 
-在“使用 Microsoft Common Data Service”横幅的下面，可以看到一组示例应用，以及我们创建供你使用的连接的示例应用。
+    ![画布应用的列表](media/intro-maker-portal/org-apps.png)
 
-* **示例应用** - 示例应用是针对采用手机或平板电脑布局的不同业务方案构建的。 单击某个应用可以快速查看该应用的用途说明、该应用适用的布局，以及该应用展示的功能，例如相机、GPS 或收音机。 新用户可以通过示例应用快速了解 PowerApps 的功能。可以使用模板在 PowerApps Studio 中创建相同的应用。
-  
-    ![应用示例](./media/intro-maker-portal/sampleapps2.png)
-* **连接的示例应用** - 这些应用将通过数据连接（如 Office 365、Salesforce、Trello 和 Wunderlist）连接到你的数据。 这一组应用不同于上面所述的示例应用。 单击或点击某个连接的示例应用时，实际上会预配该应用的新实例（可将它视为模板）。 系统将提示你输入凭据来连接数据。 连接的示例应用带来的便利是现成地预配了一个实例，可以在 PowerApps Studio 中打开该实例，了解相应应用的构建方式。 缺点是可能需要花费相当长的时间（最多一分钟）来创建该实例。 因此，单击或点击连接的示例应用后，请耐心等待浏览器打开。
-  
-    ![连接的示例应用](./media/intro-maker-portal/connectedsampleapps2.png)
+    此外，还可以在右上角附近显示的搜索框中键入一个或多个字符来搜索应用。 找到所需的应用后，选择省略号图标，以显示用于播放或编辑该应用的选项。
 
-## <a name="new-apps-page"></a>“新建应用”页
-可以通过 [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上的左侧导航栏访问“应用”页。
+    ![省略号菜单](media/intro-maker-portal/ellipsis-menu.png)
 
-![左侧导航栏](./media/intro-maker-portal/leftnav2.png)
+- 无法筛选模型驱动应用的列表，但可以在右上角附近显示的搜索框中键入一个或多个字符来搜索应用。 找到所需的应用后，选择省略号图标，以显示用于播放或编辑该应用的选项。
 
-以前，“应用”页允许在磁贴视图与列表视图之间切换。 但在 2016 年 10 月 26 日后，它仅支持列表视图。
+    ![带有省略号的模型驱动应用列表菜单打开](media/intro-maker-portal/model-driven-list.png)
 
-![应用列表视图](./media/intro-maker-portal/listview2.png)
+## <a name="create-an-app"></a>创建应用
 
-请注意，列表视图仅显示选定环境中的应用。 若要查看某个不同环境中的应用，请使用标题中的环境切换器切换到该环境。 [详细了解如何切换环境](working-with-environments.md)。
+在“主页”页面中，可以采用多种方式创建应用：
 
-## <a name="whats-new"></a>新功能
+- [自动从一组数据生成画布应用](data-platform-create-app.md)
+- [自定义画布应用的预建示例](open-and-run-a-sample-app.md)
+- [从空白屏幕生成画布应用](data-platform-create-app-scratch.md)
+- [创建自己的模型驱动应用](../model-driven-apps/overview-model-driven-samples.md)
+- [自定义模型驱动应用的预建示例](../model-driven-apps/build-first-model-driven-app.md)
 
-* 单击或点击某个应用会立即在 PowerApps Studio 的新标签页中打开该应用。
-* 默认情况下，“应用”页显示你有权编辑的所有应用。 若要查看“所有应用”（包括你只能使用的应用），请选择“所有应用”筛选器。
-  
-   ![应用筛选器](./media/intro-maker-portal/allapps_filter.png)
+## <a name="learn-more"></a>了解更多
 
-该页面还包含：
+你可以采用以下两种方式找到有关画布应用或模型驱动应用的详细信息：
 
-* **我可以使用的应用**：列出与你共享的、提供“用户”权限的所有应用（只能运行这些应用）。 请注意，也可以在 [Dynamics 365](http://home.dynamics.com) 中获取这些应用。
-* **我拥有的应用**：列出你创作的所有应用。
-* **我参与的应用**：列出与你共享的、提供“参与者”权限的所有应用。
-* **示例应用**：列出所有示例应用（未连接的示例应用）。
+- 在左侧导航栏中，选择“了解”。
+- 在标题中，选择问号图标。
 
-如果单击或点击信息圆圈，将打开应用详细信息页。
+    ![带有省略号的模型驱动应用列表菜单打开](media/intro-maker-portal/help-icon.png)
 
-![应用详细信息](./media/intro-maker-portal/ibubble.png)
+以下两个选项均可显示指向此文档集的链接：PowerApps 社区（可以在其中与其他组织中的用户共享信息）和 PowerApps 博客（在其中公布最新功能）。
 
-如果单击应用旁边的省略号，将显示“播放”、“编辑”、“共享”和“详细信息”等选项。
+## <a name="other-common-tasks"></a>其他常见任务
 
-![应用的选项](./media/intro-maker-portal/ellipsis.png)
+通过在标题和左侧导航栏中选择选项，可以执行除创建和打开应用以外的操作。
 
-这就是 powerapps.com 上专门为应用创作者设计的主要新功能。 希望这些功能为你带来帮助。 请留言告诉我们你喜欢哪些功能，以及希望增加哪些功能。 我们很乐意倾听你的反馈！
+### <a name="from-the-header"></a>在标题中
 
+- 选择向下箭头以下载可在其中运行应用的移动客户端和其他客户端。
+
+    有关详细信息，请参阅[查找和运行应用](../../user/index.md)。
+
+- 选择齿轮图标以执行以下任务：连接到数据源、标识一个或多个 PowerApps 许可证，以及打开可在其中执行管理任务的页面。
+
+    有关详细信息，请参阅以下主题：
+
+  - [画布应用连接器的概述](connections-list.md)
+  - [生成并认证画布应用的自定义连接器](register-custom-api.md)
+  - [管理本地数据网关](gateway-management.md)
+  - [管理 PowerApps](../../administrator/index.md)
+  - [许可概述](../../administrator/pricing-billing-skus.md)
+  - [生成模型驱动应用的概述](../model-driven-apps/model-driven-app-overview.md)
+
+### <a name="from-the-left-navigation-bar"></a>在左侧导航栏中
+
+通过执行这些任务来扩展应用的功能：
+
+- 管理 [Common Data Service for Apps](../common-data-service/data-platform-intro.md) 中的实体、选项集和数据集成。
+- 在 [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) 中配置业务逻辑。
+- 创建、打包和维护[解决方案](../../developer/common-data-service/introduction-solutions.md)。

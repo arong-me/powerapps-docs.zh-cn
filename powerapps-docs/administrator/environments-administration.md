@@ -6,14 +6,20 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/30/2018
+ms.date: 08/15/2018
 ms.author: manasma
-ms.openlocfilehash: 02b25dd627e85b638a113c1c0aceee16d7df6275
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 976ecbd9eeaff0ee5a274b943d4d35c21568201d
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349078"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864259"
 ---
 # <a name="administer-environments-in-powerapps"></a>管理 PowerApps 中的环境
 在 [PowerApps 管理中心][1]内，管理已创建的环境及已将已添加到其环境管理员或系统管理员角色的环境。 从管理中心可执行以下管理操作：
@@ -178,7 +184,7 @@ ms.locfileid: "39349078"
 PowerApps 计划 2。  有关包含此许可证的所有计划的详细信息，请参阅 [PowerApps 定价页][3]。
 
 ### <a name="while-trying-to-create-a-new-environment-i-am-getting-an-error-how-should-i-resolve-it"></a>尝试创建新环境时发生错误。 应如何解决？
-如果收到以下错误消息：“计划不支持所选环境类型或已达该类型的环境限制。” ，表示可能存在以下两种情况之一
+如果收到以下错误消息：“计划不支持所选环境类型或已达该类型的环境限制。”，这意味着存在以下两种情况之一：
 
 1. 已经用完用于创建特定类型环境的配额。 假设在创建试用环境时收到此错误消息。 这说明预配了两个试用环境。 可在 [PowerApps 管理中心][1]查看所有环境。
 如果需要，可删除该特定类型的现有环境并创建新环境。 但是，请确保不会丢失希望保留的数据、应用、流和其他资源。
@@ -190,14 +196,8 @@ PowerApps 计划 2。  有关包含此许可证的所有计划的详细信息，
 ### <a name="while-trying-to-create-a-database-in-an-environment-i-am-getting-an-error-how-should-i-resolve-it"></a>尝试在环境中创建数据库时发生错误。 应如何解决？
 在以下情况下，可能会在创建数据库时出现错误：
 
-1. **默认环境**：租户的默认环境目前不支持创建数据库。 
-
-2. **个人使用环境**：通过注册 PowerApps 社区计划获得个人使用环境。 如果尚未创建数据库，则目前无法在个人使用环境中预配数据库。 
-
-3. **环境位于 AAD 租户主区域以外的区域**：目前，仅可在 Azure Active Directory 租户主区域中创建的环境中预配数据库。 即将推出在其他区域中预配数据库这一功能。 因此，如果要在环境中创建数据库，请确保环境区域与租户默认位置所在区域相同。
-
-4. **某些区域不支持创建数据库**：某些区域尚不支持创建数据库。 例如，南美洲的国家/地区。 因此，如果租户主位置位于南美洲，则目前无法在任何环境中预配数据库。 
-    
+**默认环境**：租户的默认环境目前不支持创建数据库。 
+  
 我们正在努力为以上所有情况提供支持。
 如果收到任何其他错误消息或有更多疑问，请在[此处][5]与我们联系
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9497d257372181323a920bd2c1098601021e4f79
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 934ab9bddfb429ae3ed96706420af002a87697fb
+ms.sourcegitcommit: 87122dba00b4177ef736d87ecdde79581649ba42
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863658"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44499513"
 ---
 # <a name="timer-control-in-powerapps"></a>PowerApps 中的计时器控件
 一个控件，可确定特定时间后应用的响应方式。
@@ -38,9 +38,9 @@ ms.locfileid: "42863658"
 ## <a name="additional-properties"></a>其他属性
 **[Align](properties-text.md)** – 文本相对于其控件的水平居中的位置。
 
-**AutoPause** - 用户导航到另一屏幕时音频或视频剪辑是否自动暂停。
+**AutoPause** – 用户导航到其他屏幕时计时器控件是否自动暂停。
 
-**AutoStart** - 用户导航到包含音频或视频控件的屏幕时，该控件是否自动开始播放剪辑。
+**AutoStart** – 用户导航到包含计时器控件的屏幕时，该控件是否自动开始播放。
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
@@ -92,7 +92,7 @@ ms.locfileid: "42863658"
 
 **[Size](properties-text.md)** – 控件上显示的文本的字号。
 
-**Start** - 是否播放音频或视频剪辑。
+**Start** – 是否启动计时器。
 
 [Strikethrough](properties-text.md) – 通过文本显示的线是否在控件上显示。
 

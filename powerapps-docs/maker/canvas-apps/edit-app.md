@@ -1,6 +1,6 @@
 ---
-title: 编辑应用 | Microsoft 文档
-description: 有关编辑应用和会话锁定方案的分步说明。
+title: 编辑画布应用 | Microsoft Docs
+description: 有关在 PowerApps 中编辑画布应用和会话锁定方案的分步说明。
 author: karthik-1
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 05/19/2017
 ms.author: sharik
-ms.openlocfilehash: b5678437ea1e604ce2932307d897f280f4633fc0
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 97dc8b245da9dc48a67f22243f11cf26b7bd6d8e
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39194916"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42835066"
 ---
-# <a name="edit-an-app-in-powerapps"></a>在 PowerApps 中编辑应用
-编辑自己生成、拥有或拥有“可编辑”权限的任何应用。 可在 PowerApps Studio 中编辑应用。 如果尝试编辑的应用已在别处打开以供编辑，将会看到一条消息，指明是你自己还是其他用户打开的。
+# <a name="edit-a-canvas-app-in-powerapps"></a>在 PowerApps 中编辑画布应用
+编辑自己生成、拥有或拥有“可编辑”权限的任何画布应用。 可在 PowerApps Studio 中编辑应用。 如果尝试编辑的应用已在别处打开以供编辑，将会看到一条消息，指明是你自己还是其他用户打开的。
 
 ## <a name="verify-your-permissions"></a>验证权限
 1. 登录 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，再单击或点击左侧边缘“文件”菜单中的“应用”。

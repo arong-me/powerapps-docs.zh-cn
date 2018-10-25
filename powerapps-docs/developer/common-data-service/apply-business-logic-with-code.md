@@ -15,11 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/26/2018
 ms.author: jdaly
-ms.openlocfilehash: 12925c57103b1ecc00dc19205af5f32d165bdc63
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9abcbf25d2376e28f83988ceb3797d3891ca53bc
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42843328"
 ---
 # <a name="apply-business-logic-with-code"></a>使用代码应用业务逻辑
 
@@ -35,7 +41,7 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="create-a-plug-in"></a>创建插件
 
-可将插件的 .NET 程序集写到数据事务流以在服务器上应用业务逻辑。 通过 Common Data Service for Apps 平台，有一个可以将特定事件注册为执行程序集类中定义的代码的框架。 该类继承一个公开[执行方法](/dotnet/api/microsoft.xrm.sdk.iplugin.execute)的特定接口。 注册的事件发生时，类上的 `Execute` 方法会被调用并且传递有关事件的上下文数据。
+可将插件的 .NET 程序集写到数据事务流以在服务器上应用业务逻辑。 通过 Common Data Service for Apps，有一个可以将特定事件注册为执行程序集类中定义的代码的框架。 该类继承一个公开[执行方法](/dotnet/api/microsoft.xrm.sdk.iplugin.execute)的特定接口。 注册的事件发生时，类上的 `Execute` 方法会被调用并且传递有关事件的上下文数据。
 
 将使用“插件注册工具”注册程序集。
 
@@ -49,7 +55,7 @@ ms.lasthandoff: 03/22/2018
 
 将插件注册为事件同步运行时，选择代码应运行的时间。 有三个阶段：
 
-|事件  |说明  |
+|事件  |描述  |
 |---------|---------|
 |预验证|发生在数据库事务开始前。 此处是应用业务逻辑确定是否应在事务开始前取消操作的好位置，避免回滚事务的性能损失。|
 |预操作|发生在数据库事务开始后。 在此阶段取消操作必须回滚事务|

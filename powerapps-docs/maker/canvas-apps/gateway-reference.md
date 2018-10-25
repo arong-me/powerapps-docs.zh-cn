@@ -1,6 +1,6 @@
 ---
-title: 了解本地数据网关 | Microsoft 文档
-description: 本地数据网关的参考信息，包括安装和故障排除
+title: 了解画布应用的本地数据网关 | Microsoft Docs
+description: 有关本地数据网关的参考信息，包括 PowerApps 中的安装以及故障排除
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,14 +9,18 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/20/2017
 ms.author: anneta
-ms.openlocfilehash: f39bebd27aad378a5bbf8bff592fa50ea44db679
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 5dcc07f3ba9b9b4baca39cf2090a2c57cb7e67b7
+ms.sourcegitcommit: 967812754d8e5b1ff72baa35ffbe548f3b9b0085
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017746"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726920"
 ---
-# <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>了解 Microsoft PowerApps 的本地数据网关
+# <a name="understand-on-premises-data-gateways-for-canvas-apps"></a>了解画布应用的本地数据网关
 ## <a name="installation-and-configuration"></a>安装和配置
 **先决条件**
 
@@ -26,7 +30,6 @@ ms.locfileid: "39017746"
 * Windows 7 或 Windows Server 2008 R2（或更高版本）64 位版本
 
 建议：
-
 * 8 核 CPU
 * 8 GB 内存
 * Windows 2012 R2（或更高版本）64 位版本
@@ -50,7 +53,7 @@ ms.locfileid: "39017746"
 
 4. 在“用户帐户控制”对话框中，单击或点击“是”继续安装。
 
-5. 在向导的下一个屏幕上，单击或点击“登录”。
+5. 在向导的下一个屏幕上，单击或点击“登录”，然后提供用于登录到 PowerApps 的相同凭据。
 
     ![登录](./media/gateway-reference/sign-in.png)
 
@@ -190,7 +193,7 @@ ms.locfileid: "39017746"
 
 #### <a name="high-availabilitydisaster-recovery"></a>高可用性/灾难恢复
 **问题：** 是否有使用网关实现高可用性方案的计划？  
-**回答：** 我们正在规划这些方案，但目前没有时间表。
+答案：通过加入到同一群集的 2 个或多个网关实现高可用性。  高可用性网关群集要求对本地数据网关应用 2017 年 11 月更新或更高版本。  请参阅[博客文章公告](https://powerapps.microsoft.com/en-us/blog/gateway-high-availability-for-powerapps-and-flow)了解更多详细信息。
 
 **问题：** 有哪些选项可用于灾难恢复？  
 **回答：** 可以使用恢复密钥还原或移动网关。 安装网关时，请指定恢复密钥。

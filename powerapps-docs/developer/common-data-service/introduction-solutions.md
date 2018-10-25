@@ -15,21 +15,27 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/19/2018
 ms.author: jdaly
-ms.openlocfilehash: b9e06888a23426a44eeaf4354bf456dd8b15cfad
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: bcf89d9c52e1e277f65f7f02013885f30862aa56
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864970"
 ---
 # <a name="introduction-to-solutions"></a>解决方案简介
 
-解决方案是定制员和开发人员如何创作、打包和维护扩展 Common Data Service 的软件单元。 定制者和开发人员分发解决方案，以便组织可使用 Common Data Service for Apps 安装和卸载由解决方案定义的业务功能。
+解决方案是定制者和开发人员如何创作、打包和维护扩展 Common Data Service for Apps 的软件单元。 例如，Dynamics 365 for Sales、Marketing、Customer Service 应用都是由解决方案组成的。 定制者和开发人员分发解决方案，以便组织可使用 Common Data Service for Apps 安装和卸载由解决方案定义的业务功能。
 
-对 Common Data Service for Apps 制定的每个自定义项都是解决方案的一部分。 会跟踪所应用的每项更改，并且可计算任何依赖关系。 导出托管解决方案时，该托管解决方案会将已对该解决方案应用的所有更改包含到文件中，方便你将其导入到不同的 Common Data Service for Apps 环境中。
+对 Common Data Service for Apps 或先前安装的解决方案进行的每个自定义项都是解决方案的一部分。 会跟踪所应用的每项更改，并且可计算任何依赖关系。 导出托管解决方案时，该托管解决方案会将已对该解决方案应用的所有更改包含到文件中，方便你将其导入到不同的 Common Data Service for Apps 环境中。
 
 如果要在不同的 Common Data Service for Apps 环境间传输自定义项或扩展，或分发使用 AppSource 的解决方案，则必须了解解决方案框架。
 
-## <a name="unmanaged-and-managed-solutions"></a>非托管和托管解决方案
+## <a name="managed-and-unmanaged-solutions"></a>托管和非托管解决方案
 
 有两种类型的解决方案：托管和非托管。
 
@@ -39,8 +45,8 @@ ms.lasthandoff: 03/22/2018
 - 用户可将非托管自定义项添加到托管解决方案的组件中。 执行此操作时，将在非托管自定义项和托管解决方案间创建依赖关系。 存在依赖关系时，只有删除该依赖关系才能卸载托管解决方案。
 - 删除（卸载）托管解决方案时，将删除其中包含的所有自定义项和扩展。
 
- > [!IMPORTANT]
- > 卸载托管解决方案时，以下数据将丢失：存储在托管解决方案自定义实体中的数据，以及存储其他实体上托管解决方案自定义特性中的数据（其他实体并非托管解决方案的一部分）。
+  > [!IMPORTANT]
+  > 卸载托管解决方案时，以下数据将丢失：存储在托管解决方案自定义实体中的数据，以及存储其他实体上托管解决方案自定义特性中的数据（其他实体并非托管解决方案的一部分）。
 
 非托管解决方案仍在开发中，或者尚不能分发。 
 - 当解决方案处于非托管状态时，可继续向其添加和删除组件。 
@@ -48,10 +54,11 @@ ms.lasthandoff: 03/22/2018
 - 删除非托管解决方案时，将仅删除其中包含的任何自定义项的解决方案容器。 所有非托管自定义项仍然有效，并属于默认解决方案。 
 - 完成非托管解决方案并且想分发它时，请将其导出为托管解决方案。
 
- > [!NOTE]
- > 无法将托管解决方案导入包含原始非托管解决方案的相同环境中。 要测试托管解决方案，需要一个单独的环境将其导入。
+  > [!NOTE]
+  > 无法将托管解决方案导入包含原始非托管解决方案的相同环境中。 要测试托管解决方案，需要一个单独的环境将其导入。
 
 ## <a name="solution-publishers"></a>解决方案发布商
+
 每个解决方案均链接到解决方案发布商。 解决方案发布商提供有关如何联系发布商以及自定义前缀值的信息。 默认值为 `new`。
 
 将任何架构更改作为解决方案的一部分包含在内时，会在架构项的名称前加上解决方案发布商自定义前缀。 任何自定义操作也会将此值附加到架构项名称的前面。 这非常有用，因为它可以轻松识别哪个解决方案添加了架构项或自定义操作。 解决方案中的所有架构项和自定义操作无需使用相同的自定义前缀，但强烈建议使用此前缀。
@@ -67,12 +74,12 @@ ms.lasthandoff: 03/22/2018
 
 要创建解决方案发布商和解决方案，需要导航到 Dynamics 365 自定义区域。
 
-访问 [powerapps.com](https://web.powerapps.com)
+访问 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 
 1. 选择左上角的 Waffle 图标
 2. 在弹出窗口中，选择“所有应用”。
 3. 查找“Dynamics 365 - 自定义应用”。
- 你可能希望单击省略号 (...) 并选择“固定此应用”，以便下次导航时更加容易。
+ 你需要单击省略号 (...) 并选择“固定此应用”，以方便下次导航。
 4. 单击“Dynamics 365 - 自定义应用”应用以选择。
 5. 导航到“设置” > “自定义” > “自定义项”。
 
@@ -116,7 +123,7 @@ ms.lasthandoff: 03/22/2018
 
 在此示例中，托管解决方案替代或追加系统解决方案中定义的默认行为。 任何非托管自定义项可替代或追加在应用程序中可见的自定义项。
 
-详细信息：[Dynamics 365 客户参与开发人员指南：解决方案简介 > 非托管和托管解决方案](/dynamics365/customer-engagement/developer/introduction-solutions#unmanaged-and-managed-solutions)
+详细信息：[Dynamics 365 客户参与开发人员指南：解决方案简介 > 非托管和托管解决方案](/dynamics365/customer-engagement/developer/introduction-solutions#managed-and-unmanaged-solutions)
 
 ## <a name="managed-properties"></a>托管​​属性
 

@@ -1,6 +1,6 @@
 ---
-title: 在 Web 浏览器中运行应用的快速入门 | Microsoft Docs
-description: 在本快速入门教程中，你将了解如何在 Web 浏览器中运行应用
+title: 在 Web 浏览器中运行应用 | Microsoft Docs
+description: 本主题介绍如何在 Web 浏览器中运行应用
 author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
@@ -11,15 +11,20 @@ manager: kvivek
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: b0b0cb39cf0a7d49ca24d31c2803ae463df2f97e
-ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: f72d4b5192bd30da676e65e232bc2a3090cb77bb
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37925630"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42832416"
 ---
-# <a name="quickstart-run-an-app-in-a-web-browser"></a>快速入门：在 Web 浏览器中运行应用
-在创建应用或者某人与你共享应用时，可以在 Windows、iOS、Android 上或 Web 浏览器中运行此应用。 在本快速入门教程中，你将了解如何在 Web 浏览器中从 [Dynamics 365 主页](https://home.dynamics.com)运行画布或模型驱动应用。
+# <a name="run-an-app-in-a-web-browser"></a>在 Web 浏览器中运行应用
+在创建应用或与某人共享应用时，可以在 Windows、iOS、Android 上或 Web 浏览器中运行此应用。 本主题介绍如何在 Web 浏览器中从 [Dynamics 365 主页](https://home.dynamics.com)运行画布或模型驱动应用。
 
 要按本快速入门教程操作，需要以下内容：
 - PowerApps 许可证。 它随附在 PowerApps 计划（例如 [PowerApps 计划 2 试用版](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)）或包含 PowerApps 的任一 [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) 或 [Dynamics 365](https://dynamics.microsoft.com/pricing/) 计划中。 
@@ -62,7 +67,7 @@ ms.locfileid: "37925630"
 若要关闭应用，请退出 Dynamics 365 主页，或打开其他应用。
 
 ## <a name="next-steps"></a>后续步骤
-在本快速入门教程中，你了解了如何在 Web 浏览器中运行画布或模型驱动应用。 若要了解如何在移动设备上运行画布应用，请继续查看下一个快速入门教程。
+本主题介绍如何在 Web 浏览器中运行画布或模型驱动应用。 若要了解如何在移动设备上运行画布应用，请继续查看下一个主题。
 
 > [!div class="nextstepaction"]
 > [在移动设备上运行画布应用](run-app-client.md)

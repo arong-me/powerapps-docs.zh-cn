@@ -15,17 +15,23 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/12/2018
 ms.author: jdaly
-ms.openlocfilehash: da8899151fdb40713d19ca1cb82444a486526549
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: ea59e1eea1c0a85c2de1f2d654c10ed687ffe858
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42863508"
 ---
 # <a name="entity-relationship-metadata"></a>实体关系元数据
 
 查看解决方案资源管理器或 `EntityMetadata` 中三个关系集合时，可能会认为有三种类型的实体关系。 实际上，只有两种，如下表所示。
 
-|关系类型|说明|
+|关系类型|描述|
 |--|--|
 |一对多<br />[OneToManyRelationshipMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.onetomanyrelationshipmetadata)|“主要实体”的实体记录可以与多个其他“相关实体”记录相关联的一种实体关系，因为相关实体上的查找字段。<br />查看主要实体记录时，可以看到与之关联的相关实体记录列表。|
 |多对多<br />[ManyToManyRelationshipMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.manytomanyrelationshipmetadata)|依赖于特殊“关系实体”（有时称为“相交”实体）的实体关系，所以一个实体的多个记录可以与另一个实体的多个记录相关。<br />查看“多对多”关系中任意实体的记录时，可以看到与之相关的另一个实体的任意记录列表。|

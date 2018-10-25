@@ -9,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/30/2015
 ms.author: lonu
-ms.openlocfilehash: 98407181bc654874d749bb57da22c9fde1259fb6
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: c1043d32fc4ab4213d2ac2e690ef69e13fec8ed3
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195487"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42831640"
 ---
 # <a name="create-and-update-a-collection-in-your-app"></a>创建和更新应用中的集合
 集合用于存储可在应用中使用的数据。 集合是一组类似的项。 例如，你会创建“MyImages”集合来存储公司出售的所有产品的图像。 在 PowerApps 内，可以添加“MyImages”集合，然后创建一个应用来显示这些产品的所有图片。 再比如，可以创建“PriceList”集合，列出所有产品及其价格。
-
-可以在 PowerApps 中创建和使用集合。 现在就开始吧。
 
 ### <a name="prerequisites"></a>先决条件
 * [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
@@ -28,23 +30,30 @@ ms.locfileid: "39195487"
 * 本文中的步骤过程使用 [PriceList.zip](http://pwrappssamples.blob.core.windows.net/samples/PriceList.zip) 文件作为示例输入数据。 此 zip 文件中包含可以转换成 Excel 的 XML 文件。 在其他情况下，PowerApps 会自动读取 .zip 文件中的文件，并成功导入这些文件。 可以下载和使用此示例数据，也可以导入你自己的数据。
 
 ## <a name="create-a-single-column-collection"></a>创建单列集合
-下面的步骤展示了如何使用 Collect 函数在应用内创建集合，以及如何向集合添加项。
+使用 Collect 函数创建集合并向其添加项。
 
-1. 打开应用。
-2. 在“插入”选项卡上，依次选择“文本”和“文本输入”：  
-   ![][1]  
-3. 选择左上角的“Text1”，然后将此控件重命名为“Destination”：  
-   ![][2]  
-4. 选择“插入”选项卡上的“按钮”，向设计器添加按钮控件。 下拉列表中列出了“[OnSelect](controls/properties-core.md)”属性。 将此属性设为以下函数：  
+1. 在应用中，选择“插入”选项卡，然后依次选择“文本”和“文本输入”：
+
+   ![][1]
+
+1. 选择左上角的“Text1”，然后将此控件重命名为“Destination”：
+
+   ![][2]
+
+1. 选择“插入”选项卡上的“按钮”，向设计器添加按钮控件。 下拉列表中列出了“[OnSelect](controls/properties-core.md)”属性。 将此属性设为以下函数：  
    
     ```Collect(Destinations, Destination!Text)```
    
-    具体设置应如下所示：  
-    ![][3]  
-5. 选择按钮文本，然后输入“添加”：  
-   ![][5]  
-6. 选择“添加”按钮，然后将其移到文本控件下方。 可以将它移到任何位置：  
-   ![][6]  
+    具体设置应如下所示：
+
+    ![][3]
+
+5. 选择按钮文本，然后输入“添加”：
+
+   ![][5]
+
+1. 选择“添加”按钮，然后将其移到文本控件下方。 可以将它移到任何位置：  
+   ![][6]
 
 在上面的步骤过程中，你使用 Collect 函数创建了“Destinations”集合。 此外，还添加了按钮控件，当用户选择此按钮时，可以向集合添加新项。 现在，预览一下所创建的内容：
 

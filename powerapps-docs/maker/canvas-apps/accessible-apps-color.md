@@ -1,6 +1,6 @@
 ---
-title: 具有辅助功能的颜色 | Microsoft Docs
-description: PowerApps 的颜色对比度准则
+title: 画布应用中具有辅助功能的颜色 | Microsoft Docs
+description: PowerApps 画布应用的颜色对比度准则
 author: tahoon
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/23/2018
 ms.author: tahoon
-ms.openlocfilehash: 289026f18d341381d64423e76effb1abf586557c
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 96a04cdda99f379c799ccd68e2442572ac929d39
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39014802"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42862901"
 ---
-# <a name="accessible-colors-in-powerapps"></a>PowerApps 中具有辅助功能的颜色
-应用中使用的颜色应方便色盲和弱视用户使用。 默认情况下，所有 PowerApps 主题可让所有用户都轻松使用。 在修改应用中使用的颜色时，请遵循以下准则以确保它们方便用户使用。 有多种联机工具可以帮助确定颜色对比度问题。
+# <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>PowerApps 画布应用中具有辅助功能的颜色
+画布应用中使用的颜色应方便色盲和弱视用户使用。 默认情况下，所有 PowerApps 主题可让所有用户都轻松使用。 在修改应用中使用的颜色时，请遵循以下准则以确保它们方便用户使用。 有多种联机工具可以帮助确定颜色对比度问题。
 
 ## <a name="minimum-contrast-for-text"></a>文本最小对比度
 * 文本及其背景必须至少有 4.5:1 的对比度
@@ -25,7 +29,7 @@ ms.locfileid: "39014802"
 * 已禁用的文本没有对比度要求
 
 实际上，所有交互式控件之间都必须有足够的颜色对比度：
-* [Color](controls/properties-color-border.md) 和 [Fill](controls/properties-color-border.md)
+* **[Color](controls/properties-color-border.md)** 和 **[Fill](controls/properties-color-border.md)**
 * [PressedColor](controls/properties-color-border.md) 和 [PressedFill](controls/properties-color-border.md)
 * [HoverColor](controls/properties-color-border.md) 和 [HoverFill](controls/properties-color-border.md)
 

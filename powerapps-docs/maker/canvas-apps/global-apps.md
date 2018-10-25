@@ -1,6 +1,6 @@
 ---
-title: 全球支持 | Microsoft 文档
-description: 构建全球范围内使用的应用。
+title: 为画布应用构建全球支持 | Microsoft Docs
+description: 使用 PowerApps 构建全球范围内使用的应用。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: dbca12ff3acc4327f88269a2333fe066c7f2fbec
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 7ccd505d53377617bd13cda775cce489c554bc64
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39019793"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42862567"
 ---
-# <a name="global-support"></a>全球支持
-PowerApps 是全球性的产品。  可以在许多不同的区域中构建和使用许多不同语言的应用。
+# <a name="build-global-support-into-canvas-apps"></a>为画布应用构建全球支持
+PowerApps 是全球性的产品。 你可以在许多不同的语言和区域中构建和使用画布应用。
 
 生成和运行应用时，PowerApps 显示的文本已翻译成各种不同的语言。  你将看到以本地语言显示的菜单项、对话框、功能区选项卡和其他文本。  键入和显示日期与数字时也会针对你的特定语言和区域而调整。  例如，全球的一些区域使用“.”作为小数分隔符，而其他区域使用“,”。  
 

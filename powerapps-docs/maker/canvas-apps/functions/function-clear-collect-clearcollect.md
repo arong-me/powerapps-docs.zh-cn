@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 73279ba8fc0b640c24deb179a3737874bc0a55bf
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 8a7c52962c23df5f2efcf76c04aeba528e94217c
+ms.sourcegitcommit: 464ee88a958dda11c5de5603c608deab6c9cdcab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835745"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48578733"
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>PowerApps 中的 Collect、Clear 和 ClearCollect 函数
 创建和清除[集合](../working-with-data-sources.md#collections)，以及将[记录](../working-with-tables.md#records)添加到任意[数据源](../working-with-data-sources.md)。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 ### <a name="collect"></a>Collect
 **Collect** 函数将记录添加到数据源。 可添加的项包括：
 
@@ -82,10 +82,27 @@ ms.locfileid: "42835745"
 | **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |向 **IceCream** 集合添加两条记录，其中包括开心果味冰淇淋和橙子味冰淇淋的数量。 |![](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>**IceCream** 数据源也已得到修改。 |
 | **Clear( IceCream )** |删除 **IceCream** 集合中的所有记录。 |![](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>**IceCream** 数据源也已得到修改。 |
 
-### <a name="step-by-step"></a>分步操作
+### <a name="collect-a-static-list"></a>收集静态列表
+
 1. 添加一个按钮，并将其 **[OnSelect](../controls/properties-core.md)** 属性设置为以下函数：<br>**Collect(Products, &quot;Europa&quot;, &quot;Ganymede&quot;, &quot;Callisto&quot;)**
    
-    此函数创建名为 **Products** 的集合，其中包含对应每一个（共三个）产品名的行。
-2. 按 F5，单击按钮，然后按 Esc 键返回设计工作区。
-3. （可选）若要显示所创建集合的预览，请单击“内容”选项卡上的“集合”。
+    此函数创建名为 Products 的集合，其中包含对应每一个（共三个）产品名的行。
+    
+1. 按住 Alt 键，并选择按钮。
 
+1. （可选）要预览你创建的集合，请在“文件”菜单上选择“集合”。
+
+### <a name="put-a-sharepoint-list-into-a-collection"></a>将 SharePoint 列表放入集合
+
+1. [创建到 SharePoint 列表的连接](../connect-to-sharepoint.md). 
+
+1. 添加一个按钮，并将其 **[OnSelect](../controls/properties-core.md)** 属性设置为此函数，将 ListName 替换为 SharePoint 列表的名称：<br>
+Collect(MySPCollection, ListName)
+
+    此函数创建一个名为 MySPCollection 的集合，其中包含与 SharePoint 列表相同的数据。
+    
+1. 按住 Alt 键，并选择按钮。
+
+1. （可选）要预览你创建的集合，请在“文件”菜单上选择“集合”。
+
+有关如何在库中显示 SharePoint 列表中的数据（如日期、选项和人员）的信息，请参阅[在库中显示数据](../connections/connection-sharepoint-online.md#show-data-in-a-gallery)。 有关如何在窗体中显示数据的信息（包括下拉列表、日期选取器和人员选取器），请参阅[编辑窗体和显示窗体控件](../controls/control-form-detail.md)。

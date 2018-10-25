@@ -9,18 +9,22 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 6c362c39aa99490c8c2043b36a05e107b94e0a26
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: df3c186bb41621e7ec6087a9da55fc037e286b1a
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39014940"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42850181"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>对完成的 SharePoint Online 集成方案进行端到端演练
 > [!NOTE]
 > 本文属于介绍如何将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
-本系列教程涉及大量基础知识，包括生成应用和流、创建并将报表嵌入 SharePoint 中。 我们由衷希望你已学到很多知识，并且充分了解如何集成这些技术，以便可以根据自己的需求将应用、流和报表集成到 SharePoint 中。 最后，我们希望对此方案进行端到端演练，以展示各方面的工作是如何完美配合的。
+本系列教程涉及大量基础知识，包括生成画布应用和流、创建报表并将其嵌入 SharePoint 中等。 我们由衷希望你已学到很多知识，并且充分了解如何综合运用这些技术，以便可以根据自己的需求将画布应用、流和报表集成到 SharePoint 中。 最后，我们希望对此方案进行端到端演练，以展示各方面的工作是如何完美配合的。
 
 ## <a name="step-1-add-a-project-to-the-project-requests-list"></a>第 1 步：向“项目申请”列表添加项目
 1. 在“项目申请”列表中，依次单击或点击“所有项”和“项目申请应用”。

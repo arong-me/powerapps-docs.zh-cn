@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/11/2018
 ms.author: anneta
-ms.openlocfilehash: eaea8049b573b619881ae0a2b6ecb2618e4bf192
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 926d2b4b0d24f07a9a4cd42216e7d737db57308c
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39470629"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42853833"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>在 PowerApps 中共享画布应用
 
@@ -23,7 +27,7 @@ ms.locfileid: "39470629"
 > [!IMPORTANT]
 > 若要使共享应用按预期方式运行，还必须管理应用所基于的数据源或源的权限，例如 [Common Data Service for Apps](#common-data-service-for-apps) 或 [Excel](share-app-data.md)。 可能还需要共享应用依赖的[其他资源](share-app-resources.md)，例如流、网关或连接。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 共享应用前，必须将其保存至云（而非本地），然后发布应用。
 
@@ -81,7 +85,11 @@ ms.locfileid: "39470629"
 
 ### <a name="common-data-service-for-apps"></a>Common Data Service for Apps
 
-如果创建基于 Common Data Service for Apps 的应用，还必须确保运行应用的用户具有应用所依赖实体的相应权限。 具体而言，这些用户必须属于可执行任务（如创建、读取、写入和/或删除相关记录）的安全角色。 如果你具有此环境中数据库的系统管理员或系统定制员权限，可创建自定义角色，然后向其添加用户。
+如果创建基于 Common Data Service (CDS) for Apps 的应用，还必须确保运行应用的用户具有应用所依赖实体的相应权限。 具体而言，这些用户必须属于可执行任务（如创建、读取、写入和/或删除相关记录）的安全角色。 在很多情况下，你希望创建具有用户使用应用所需的确切权限的一个或多个自定义安全角色。 然后可以将一个或多个角色分配给相应的用户。 
+
+#### <a name="prerequisite"></a>先决条件
+
+若要执行以下两个过程，必须拥有对 CDS for Apps 数据库的“系统管理员”权限。
 
 #### <a name="create-a-security-role"></a>创建安全角色
 

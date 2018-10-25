@@ -1,6 +1,6 @@
 ---
-title: 创建用于管理项目的应用 | Microsoft Docs
-description: 在此任务中，我们将从头开始生成应用。 使用此应用，用户可以分配项目经理并更新项目详细信息。
+title: 创建用于管理项目的画布应用 | Microsoft Docs
+description: 在此任务中，我们将从头开始构建画布应用。 使用此应用，用户可以分配项目经理并更新项目详细信息。
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,18 +9,22 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: b4daabf019236a4245db324121a6745290c8b3ab
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 6b55fe94e7d781147e3e3511769c4d72ca3d90de
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021610"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42842362"
 ---
-# <a name="create-an-app-to-manage-projects"></a>创建用于管理项目的应用
+# <a name="create-a-canvas-app-to-manage-projects"></a>创建用于管理项目的画布应用
 > [!NOTE]
 > 本文属于介绍如何将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
-在此任务中，我们将从头开始生成应用。 使用此应用，用户可以分配项目经理并更新项目详细信息。 将看到第一个应用中的一些相同控件和公式，但这次更多的是自己生成应用。 虽然此过程更加复杂，但将能学到更多知识，所以我们认为这样的取舍很公平。
+在此任务中，我们将从头开始构建画布应用。 使用此应用，用户可以分配项目经理并更新项目详细信息。 将看到第一个应用中的一些相同控件和公式，但这次更多的是自己生成应用。 虽然此过程更加复杂，但将能学到更多知识，所以我们认为这样的取舍很公平。
 
 > [!TIP]
 > 这个方案的[下载包](https://aka.ms/o4ia0f)包含此应用的最终版本 (project-details-app.msapp)。

@@ -15,15 +15,21 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/19/2018
 ms.author: jdaly
-ms.openlocfilehash: eb908978eee8d6473a46ca3894cee55ce4b036df
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 60fafa90df656bb6d135a8cf7e2c2f3b4f8457da
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42840737"
 ---
 # <a name="entity-metadata"></a>实体元数据
 
-每个实体都提供了存储结构化数据的功能。 对于开发人员，实体对应于在 Common Data Service 中处理数据时使用的类。
+每个实体都提供了存储结构化数据的功能。 对于开发人员，实体对应于在 Common Data Service for Apps 中处理数据时使用的类。
 
 ## <a name="entity-names"></a>实体名称
 每个实体在创建时都有定义的唯一名称。 此名称以多种方式表示：
@@ -170,7 +176,7 @@ ms.lasthandoff: 03/22/2018
 **示例**：`PhoneCall` 实体的 `StateCode` 和 `StatusCode` 选项
 
 
-|Column1  |Column2  |
+|`StateCode`|`StatusCode`|
 |---------|---------|
 |0 : Open|1: Open|
 |1 : Completed|2: Made <br />4: Received|

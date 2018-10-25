@@ -1,6 +1,6 @@
 ---
-title: 可委托的数据源 | Microsoft 文档
-description: 列出了所有受支持的可委托数据源
+title: 画布应用中的可委派数据源 |Microsoft Docs
+description: 列出了画布应用中所有受支持的可委派数据源
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 08/15/2017
 ms.author: lanced
-ms.openlocfilehash: e8863d8e260ecaafd407e93d710917848ce184ad
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 98931d4692a61839e0530682bd2d40258c07b7df
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018597"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42825754"
 ---
-# <a name="delegable-data-sources"></a>可委托的数据源
-如[了解委托](delegation-overview.md)一文中所详述，委托是指 PowerApps 将数据处理这项任务委托给数据源，而不是将数据移到应用中进行本地处理。
+# <a name="delegable-data-sources-in-canvas-apps"></a>画布应用中的可委派数据源
+如[了解委派](delegation-overview.md)一文中所详述，委派是指 PowerApps 将数据处理这项任务委派给数据源，而不是将数据移到画布应用中进行本地处理。
 
 仅表数据源支持委托。 下面列出了表数据源及其是否支持委托，下一部分将对此进行详细介绍。
 

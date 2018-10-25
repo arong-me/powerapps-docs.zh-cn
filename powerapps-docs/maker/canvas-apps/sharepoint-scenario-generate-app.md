@@ -1,6 +1,6 @@
 ---
-title: 生成用于处理项目请求的应用 | Microsoft 文档
-description: 在此任务中，我们将直接通过 SharePoint 列表生成基本的三屏应用。
+title: 生成用于处理项目请求的画布应用 | Microsoft Docs
+description: 在此任务中，我们将直接通过 SharePoint 列表生成具有三个屏幕的基本画布应用。
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,14 +9,18 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 7072d78b79adff65aac33c888bf0f980f953ef84
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 4466d8f42a0ba9c9a162353bc214abf6d9d9ef83
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023933"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834250"
 ---
-# <a name="generate-an-app-to-handle-project-requests"></a>生成用于处理项目申请的应用
+# <a name="generate-a-canvas-app-to-handle-project-requests"></a>生成用于处理项目请求的画布应用
 > [!NOTE]
 > 本文属于介绍如何将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 

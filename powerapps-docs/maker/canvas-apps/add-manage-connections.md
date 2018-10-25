@@ -1,6 +1,6 @@
 ---
-title: 在云服务中添加和管理到数据源的连接 | Microsoft 文档
-description: 添加、删除和更新到 SharePoint、SQL Server、OneDrive for Business、Salesforce 和 Office 365 等数据源的连接
+title: 添加和管理来自画布应用的连接 | Microsoft Docs
+description: 添加、删除和更新从画布应用到 SharePoint、SQL Server 和 OneDrive for Business 等数据源的连接
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 03/09/2017
 ms.author: lanced
-ms.openlocfilehash: c114b803539c2d64695a0bd8c9d976d2604569eb
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: d2a7da93835e5fbe588a8683bbdb0393d5b76ee5
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195211"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834034"
 ---
-# <a name="manage-your-connections-in-powerapps"></a>管理 PowerApps 中的连接
-在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中，创建从 PowerApps 到一个或多个数据源的连接、删除连接或更新其凭据。
+# <a name="manage-canvas-app-connections-in-powerapps"></a>管理 PowerApps 中的画布应用连接
+在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中，创建到一个或多个数据源的连接、删除连接或更新其凭据。
 
-应用的数据连接可以连接到 SharePoint、SQL Server、Office 365、OneDrive for Business、Salesforce、Excel 以及许多其他[数据源](connections-list.md)。
+画布应用的数据连接可以连接到 SharePoint、SQL Server、Office 365、OneDrive for Business、Salesforce、Excel 以及许多其他[数据源](connections-list.md)。
 
 阅读本文后的下一步是在应用中显示和管理来自数据源的数据，如以下示例所示：
 

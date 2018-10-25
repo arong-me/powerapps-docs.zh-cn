@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 37e5a701bb21d6454699b449f34629746d1547d1
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: bad3dcf3b0268a8bb08036fec709281b2cbba253
+ms.sourcegitcommit: e4fe4b27651b62edb67e5995fc5955577d8ac5b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42860148"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075348"
 ---
 # <a name="pen-input-control-in-powerapps"></a>PowerApps 中的笔输入控件
 用户可用其进行绘图、擦除和突出显示图像区域的控件。
@@ -27,6 +27,8 @@ ms.locfileid: "42860148"
 用户可以像使用白板一样来使用该控件，绘制关系图和写字都能被转换为键入的文本。
 
 ## <a name="key-properties"></a>关键属性
+图像 – 输出属性，表示由最终用户绘制的图像。
+
 **[Color](properties-color-border.md)** – 输入笔划的颜色。
 
 **Mode**控件所处的**绘图**或**擦除**模式。  已弃用“选择”模式。
@@ -46,7 +48,7 @@ ms.locfileid: "42860148"
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
-**Input** - 输入。
+输入 – 已弃用。 输入是否支持鼠标、触笔或触控输入。  默认值 (7) 支持上述所有三项。
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 

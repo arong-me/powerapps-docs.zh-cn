@@ -1,1 +1,1 @@
-启用解决方案即表示您同意与外部系统共享数据。 从外部系统导入到 Microsoft Dynamics 365（在线）的数据将受 [Microsoft 隐私和 Cookie](http://go.microsoft.com/fwlink/p/?LinkID=521839) 的约束。
+启用解决方案即表示你同意与外部系统共享数据。 从外部系统导入 Microsoft Dynamics 365（联机）的数据受到 [Microsoft 隐私和 Cookie](http://go.microsoft.com/fwlink/p/?LinkID=521839) 的约束。

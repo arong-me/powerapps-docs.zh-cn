@@ -1,6 +1,6 @@
 ---
-title: 保存并发布应用 | Microsoft 文档
-description: 面向应用开发者的应用保存和发布分步说明
+title: 保存并发布画布应用 | Microsoft Docs
+description: 保存和发布面向应用开发者的画布应用的分步说明
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 09/14/2017
 ms.author: anneta
-ms.openlocfilehash: faaf3ef6eefc41ad5b1d7cb2e6e34db57632cfaf
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f52338d4eed8942259e7ae15a8df3b05c45a703d
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39194797"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42837003"
 ---
-# <a name="save-and-publish-an-app-in-powerapps"></a>在 PowerApps 中保存并发布应用
-每当保存应用更改时，都只会对你自己和有权编辑此应用的其他所有人自动发布更改。 完成更改后，必须显式发布更改，以便应用的所有共享对象都能使用。
+# <a name="save-and-publish-a-canvas-app-in-powerapps"></a>在 PowerApps 中保存并发布画布应用
+每当保存画布应用的更改时，都将只对你自己和有权限编辑此应用的其他所有人自动发布更改。 完成更改后，必须显式发布更改，以便应用的所有共享对象都能使用。
 
 若要了解如何共享应用，请参阅[共享应用](share-app.md)。
 

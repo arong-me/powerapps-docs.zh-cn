@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2018
+ms.date: 10/10/2018
 ms.author: manasma
 search.audienceType:
 - admin
@@ -14,12 +14,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 71358a1c476655ab4e80d94f9e6846b9a35684f4
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 3c8bdcb855b1e15cbebeb2a51fedf8aea7684286
+ms.sourcegitcommit: c4369e5f31bb08716f1af1416f3f7510a4b926d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42857627"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072510"
 ---
 # <a name="configure-environment-security"></a>配置环境安全设置
 Common Data Service (CDS) for Apps 使用基于角色的安全模型来帮助保护对数据库的访问。 本主题介绍了如何创建保护应用所必需的安全项目。 用户角色可控制对数据的运行时访问，不同于管理环境管理员和环境创建者的环境角色。 有关环境的概述，请参阅[环境概述](environments-overview.md)。
@@ -61,24 +61,25 @@ Common Data Service (CDS) for Apps 使用基于角色的安全模型来帮助保
 ## <a name="predefined-security-roles"></a>预定义的安全角色
 PowerApps 环境包括预定义的安全角色，它反映访问级别定义为匹配安全最佳做法目标的常见用户任务，该目标为提供对使用应用所需最小业务数据量的访问。
 
-|安全角色  |*数据库权限  |说明 |
+|安全角色  |*数据库权限  |描述 |
 |---------|---------|---------|
 |系统管理员     |  创建、读取、写入、删除、自定义、安全角色       | 具有自定义或管理环境的完整权限，包括创建、修改和分配安全角色。 可以查看环境中的所有数据。 有关详细信息，请参阅：[自定义所需的特权](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 |系统定制员     | 创建（自我）、读取（自我）、写入（自我）、删除（自我）、自定义         | 具有自定义环境的完整权限。 但是，仅可以查看他们创建的环境实体的记录。 详细信息：[自定义项所需权限](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 |环境创建者     |  无       | 可以创建与环境相关联的新资源，包括应用、连接、自定义 API、网关和使用 Microsoft Flow 的流。 但是，没有在环境中访问数据的任何特权。 有关详细信息：[环境概述](https://powerapps.microsoft.com/blog/powerapps-environments/)        |
-|Common Data Service 用户     |  读取、创建（自我）、写入（自我）、删除（自我）       | 可以在环境中运行应用，并对他们所拥有的记录执行常见任务。        |
+|Common Data Service 用户     |  读取（自我）、创建（自我）、写入（自我）、删除（自我）       | 可以在环境中运行应用，并对他们所拥有的记录执行常见任务。        |
 |代理人     | 代表其他用户执行操作        | 允许以其他用户身份或模拟身份运行代码。  通常配合另一个安全角色使用以允许访问记录。 有关详细信息，请参阅：[模拟其他用户](https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/impersonate-another-user)        |
 
 *除非另有指定，否则特权是全局范围。
 
 - 环境创建者角色不仅可以在环境中创建资源，还可以将环境中生成的应用分配给组织中的其他用户。 可以与个人用户共享应用。 有关详细信息，请参阅[在 PowerApps 中共享应用](../maker/canvas-apps/share-app.md)。
 
-- 应该向制作连接到数据库和需要创建或更新实体和安全角色的用户和环境创建者分配系统自定义角色，因为环境创建者角色没有数据库特权。
+- 应该向制作连接到数据库的应用和需要创建或更新实体和安全角色的用户和环境创建者分配系统定制员角色，因为环境创建者角色没有数据库特权。
 
 ## <a name="create-or-configure-a-custom-security-role"></a>创建或配置自定义安全角色
-如果你的应用基于自定义实体，那么必须在用户开始工作前显式指定特权。 若要执行此操作，可以选择执行下列操作之一。
-- 展开现有预定义安全角色，确保其包括对基于自定义实体的记录的特权。
-- 创建自定义安全角色，以便管理应用用户的特权。
+如果你的应用使用自定义实体，则必须先在安全角色中显式授予应用权限，然后才能使用该应用。  可以在现有安全角色中添加这些权限，也可以创建自定义安全角色。 为了使用新的安全角色，需要一组最低权限 - 请参阅[运行应用的最低权限](#minimum-privileges-to-run-app)。
+
+> [!TIP]
+> 如果要创建具有运行应用所需的最低权限的自定义安全角色，请查看以下部分：[运行应用的最低权限](#minimum-privileges-to-run-app)。
 
 环境可能维护由多个应用使用的记录，你可能需要多个安全角色访问具有不同特权的数据。 例如
 - 某些用户（类型 A）可能仅需要读取、更新和附加其他记录，因此它们的安全角色会有读取、编写和附加特权。
@@ -114,7 +115,17 @@ PowerApps 环境包括预定义的安全角色，它反映访问级别定义为�
 
 10. 选择“保存并关闭”。
 
+## <a name="minimum-privileges-to-run-app"></a>运行应用的最低权限
+创建自定义安全角色时，需要在安全角色中包含一组最低权限，以便用户运行应用。 我们创建了一个可以导入的解决方案，该解决方案提供了具有所需最低权限的安全角色。  
 
+首先从下载中心下载解决方案：[CDS for Apps 最低权限安全角色](http://download.microsoft.com/download/6/5/5/6552A30E-05F4-45F0-AEE3-9BB01E13118A/MinprivilegeSecRole_1_0_0_0.zip)。
+
+然后，按照说明导入解决方案：[导入、更新和导出解决方案](../maker/common-data-service/import-update-export-solutions.md)。
+
+导入解决方案时，它会创建 min prv apps use 角色，你可以复制该角色（请参阅：[按复制角色创建安全角色](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/create-edit-security-role#create-a-security-role-by-copy-role)）。 复制角色完成后，请导航到每个选项卡（核心记录、业务管理、自定义等）并设置适当的权限。 
+
+> [!IMPORTANT]
+> 你应该先在开发环境中试用该解决方案，然后导入生产环境。 
 
 <!--Reference links in article-->
 [1]: https://admin.powerapps.com

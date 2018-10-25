@@ -1,6 +1,6 @@
 ---
-title: 创建从 PowerApps 到 SharePoint 的连接 | Microsoft 文档
-description: 在 powerapps.com 上，创建到 SharePoint 的连接，用于自动生成应用或从零构建应用。
+title: 创建从画布应用到 SharePoint 的连接 | Microsoft Docs
+description: 在 PowerApps 中，创建到 SharePoint 的连接，用于自动生成画布应用或从头开始构建应用。
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,22 +9,26 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 09/03/2016
 ms.author: anneta
-ms.openlocfilehash: 0e0b98277548d188071bcd29b9e3168de5818321
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 170115f07da57878c553a1776fc26a9cd27a8258
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195855"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42844146"
 ---
 # <a name="create-a-connection-to-sharepoint-from-powerapps"></a>创建从 PowerApps 到 SharePoint 的连接
-创建到 SharePoint Online 或本地 SharePoint 的连接，以便自动生成应用或从零构建应用。
+创建到 SharePoint Online 或本地 SharePoint 的连接，以便自动生成画布应用或从头开始构建应用。
 
 如果不熟悉 PowerApps，请参阅 [PowerApps 简介](getting-started.md)。
 
-截至本文，PowerApps 支持自定义列表，但不支持自定义库。 此外，还可以在某些类型的列（例如**选项**和**图片**）中显示数据，但无法更新该数据。 有关详细信息，请参阅 [已知问题](connections/connection-sharepoint-online.md#known-issues)。
+截至本文，PowerApps 支持自定义列表，但不支持自定义库。 此外，还可以在某些类型的列（例如**选项**和**图片**）中显示数据，但无法更新该数据。 有关详细信息，请参阅[已知问题](connections/connection-sharepoint-online.md#known-issues)。
 
 ## <a name="specify-a-sharepoint-connection"></a>指定 SharePoint 连接
-1. 如果还未注册，请 [注册 PowerApps](../signup-for-powerapps.md)。
+1. 如果还未注册，请[注册 PowerApps](../signup-for-powerapps.md)。
 
 2. 使用注册所用的同一凭据登录到 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 19199ade5c7f89f9d3d113b41ac9651a9b007ef6
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 38745810321807e69d5eba8e1f2c281dafa73ae5
+ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42847887"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45640437"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>了解 PowerApps 中的画布应用表和记录
 
@@ -40,7 +40,7 @@ ms.locfileid: "42847887"
 ### <a name="records"></a>记录
 每条记录包含个人、地点或事物的至少一个类别的信息。 上面的示例针对每种产品（“巧克力”、“面包”和“水”）显示一条记录，针对每个类别的信息（“价格”、“现有数量”和“订购量”）显示一列。
 
-在公式中，可以使用大括号在表的上下文外部引用记录本身。 例如，此记录 **{ Name: "Strawberries", Price: 7.99 }** 不与表关联。
+在公式中，可以使用大括号在表的上下文外部引用记录本身。 例如，此记录 **{ Name: "Strawberries", Price: 7.99 }** 不与表关联。 请注意，如该示例中的“名称”和“价格”等字段名称未括在双引号中。
 
 ### <a name="fields"></a>字段
 字段是记录中的单个信息片段。 可在特定记录的列中将此类字段可视化为值。

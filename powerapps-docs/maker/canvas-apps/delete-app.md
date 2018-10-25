@@ -1,6 +1,6 @@
 ---
-title: 删除应用 | Microsoft 文档
-description: 如何在 PowerApps 中删除现有应用
+title: 删除画布应用 | Microsoft Docs
+description: 如何在 PowerApps 中删除现有的画布应用
 author: jamesol-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: c8d5d5f5fbb9453ad9afeffda8383be0dae4eebc
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 5fd2551ff0fac40acf54c77d6750ab983ee5819e
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39194915"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834747"
 ---
-# <a name="delete-an-app-from-powerapps"></a>从 PowerApps 中删除应用
-本文演示如何从 PowerApps 帐户及任何与应用共享的人的帐户中删除应用。
+# <a name="delete-a-canvas-app-from-powerapps"></a>从 PowerApps 中删除画布应用
+本文演示如何从 PowerApps 帐户及任何与应用共享的人的帐户中删除画布应用。
 
 ## <a name="delete-an-app-from-your-account"></a>从帐户中删除应用
 1. 打开 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后在左侧导航栏中单击或点击“应用”。

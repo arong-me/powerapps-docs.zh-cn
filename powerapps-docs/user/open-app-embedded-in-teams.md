@@ -1,6 +1,6 @@
 ---
-title: 将应用添加到 Microsoft Teams 快速入门 | Microsoft Docs
-description: 在本快速入门教程中，你将了解如何将应用添加到 Microsoft Teams 频道，以便应用的共享对象可以在此频道中打开该应用。
+title: 将应用添加到 Microsoft Teams | Microsoft Docs
+description: 了解如何将应用添加到 Microsoft Teams 频道，以便你与之共享应用的用户可以在此频道中打开该应用。
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -11,16 +11,21 @@ ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: a5adb035fdde271ffe07cb6d0a46f332ae55c43f
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0e98f22c3dc0f66893e0cc027488ced5d1dd3535
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218363"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42850452"
 ---
-# <a name="quickstart-add-an-app-to-microsoft-teams"></a>快速入门：将应用添加到 Microsoft Teams
+# <a name="add-an-app-to-microsoft-teams"></a>将应用添加到 Microsoft Teams
 
-Microsoft Teams 是基于 Office 365 技术构建的聊天协作平台。 你可以通过将 PowerApps 画布应用添加到 Teams 中的频道来自定义 Teams 体验。 在本快速入门教程中，你将了解如何将产品展示示例应用添加到 Teams 频道，然后从该频道打开应用。 
+Microsoft Teams 是基于 Office 365 技术构建的聊天协作平台。 你可以通过将 PowerApps 画布应用添加到 Teams 中的频道来自定义 Teams 体验。 本主题介绍如何将产品展示示例应用添加到 Teams 频道，然后从该频道打开应用。 
 
 ![嵌入 Microsoft Teams 的应用](./media/open-app-embedded-in-teams/embedded-app.png)
 
@@ -28,7 +33,7 @@ Microsoft Teams 是基于 Office 365 技术构建的聊天协作平台。 你可
 
 ## <a name="prerequisites"></a>先决条件
 
-若要遵循本快速入门教程，需要 [Office 365 订阅](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)和 [Teams 中的频道](https://www.youtube.com/watch?v=he2f1quaR7M)。
+若要按照此步骤操作，需要 [Office 365 订阅](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)和 [Teams 中的频道](https://www.youtube.com/watch?v=he2f1quaR7M)。
 
 ## <a name="sign-in-to-powerapps"></a>登录到 PowerApps
 
@@ -87,7 +92,7 @@ Microsoft Teams 是基于 Office 365 技术构建的聊天协作平台。 你可
 
 ## <a name="next-steps"></a>后续步骤
 
-在本快速入门教程中，你将产品展示示例应用添加到了 Teams 频道，然后从该频道打开了应用。 若要了解有关 PowerApps 的详细信息，请继续查看 PowerApps 教程。
+在本主题中，你将产品展示示例应用添加到了 Teams 频道，然后从该频道打开了应用。 若要了解有关 PowerApps 的详细信息，请继续查看 PowerApps 教程。
 
 > [!div class="nextstepaction"]
 > [PowerApps 教程](../maker/canvas-apps/get-started-create-from-blank.md)
