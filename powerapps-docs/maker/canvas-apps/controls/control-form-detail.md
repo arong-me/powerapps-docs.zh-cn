@@ -1,24 +1,24 @@
 ---
 title: 显示窗体和编辑窗体控件：参考 | Microsoft Docs
 description: 有关显示窗体和编辑窗体控件的信息（包括属性和示例）
-author: gregli-msft
+author: aneesmsft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/06/2017
-ms.author: gregli
+ms.author: aneesa
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 992529f50ba14f3578c4f6ffe0ba7ba27d2d3661
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 91f84ebbec83c5734e910680f4ab3a79077164df
+ms.sourcegitcommit: ce621966a34061dda2f75232403847e21816ffa9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42838123"
+ms.lasthandoff: 09/30/2018
+ms.locfileid: "47459446"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>PowerApps 中的编辑窗体和显示窗体控件
 在数据源中显示、编辑和创建记录。
@@ -32,6 +32,12 @@ ms.locfileid: "42838123"
 
 ### <a name="record-selection"></a>选择记录
 不管哪一类型的窗体，均可将其“DataSource”属性设置为一个记录表，并可将窗体的“Item”属性设置为显示该表中的特定记录。 例如，可将窗体的“Item”属性设置为[库](control-gallery.md)控件的“SelectedItem”属性。 当用户选择库中的某个记录时，同样的记录就会显示在窗体中，只不过该窗体可以显示更多字段。 如果用户返回到库，然后选择另一记录，则库的“SelectedItem”属性会更改。 该更改会更新窗体的“Item”属性，然后窗体就会显示新选择的记录。
+
+此外，你还可以使用下拉控件设置窗体的“Item”属性，如[显示、编辑或添加记录](../add-form.md)中所述，或者添加 Lookup 或 First 等函数。 例如，你可以将“Item”属性设置为这些公式中的任何一个，以在 Common Data Service for Apps 的“Accounts”实体中显示 Fabrikam 条目：
+
+```First(Accounts)```
+
+```Lookup(Accounts, "Fabrikam" in name)```
 
 每个窗体控件包含一个或多个[卡片](control-card.md)控件。 设置卡片的 [DataField](control-card.md) 属性即可[指定该卡显示的字段以及其他详细信息](../add-form.md)。
 
