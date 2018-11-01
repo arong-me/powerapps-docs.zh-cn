@@ -1,5 +1,5 @@
 ---
-title: 将 PowerApps 集成到网站和其他服务中 | Microsoft 文档
+title: 将画布应用集成到网站和其他服务中 | Microsoft Docs
 description: 在网站和其他服务中嵌入画布应用。
 author: mgblythe
 manager: kvivek
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9cd4008bcb93e05d696fec082e400ee9661785b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 254d127237cff58728f208d62c30bf7aeb456a80
+ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835386"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991829"
 ---
-# <a name="integrate-powerapps-into-websites-and-other-services"></a>将 PowerApps 集成到网站和其他服务中
+# <a name="integrate-canvas-apps-into-websites-and-other-services"></a>将画布应用集成到网站和其他服务中
 如果能够直接将生成的应用集成到用户工作时使用的工具中，通常最为实用。 借助 PowerApps，可以将画布应用嵌入 iframe，以便于将这些应用集成到网站和其他服务中（如 Power BI 或 SharePoint）。
 
 本主题先会介绍如何设置应用嵌入参数；然后，我们将会把资产订购应用嵌入网站。
@@ -32,7 +32,7 @@ ms.locfileid: "42835386"
 * 只有同一租户中的 PowerApps 用户，才能访问嵌入应用。
 * 若要使用 Internet Explorer 11 访问 PowerApps，必须禁用兼容性视图。
 
-还可以将 PowerApps 集成到 SharePoint Online 中（不使用 iframe）。 有关详细信息，请参阅[使用 PowerApps 从 SharePoint 中生成应用](../canvas-apps/generate-app-from-sharepoint-list-interface.md)。
+还可以将 PowerApps 集成到 SharePoint Online 中（不使用 iframe）。 有关详细信息，请参阅[使用 PowerApps 从 SharePoint 中生成应用](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)。
 
 ## <a name="set-uri-parameters-for-your-app"></a>设置应用 URI 参数
 若有要嵌入的应用，第一步是设置统一资源标识符 (URI) 参数，以便 iframe 知道在何处查找应用。 URI 的格式如下：

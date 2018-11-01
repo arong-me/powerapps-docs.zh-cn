@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3ecf468f8c1b15d20b144aa127fe31c13dba484e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 02aaaf7fd149ca0d9f3e1325b98e5287c90bebec
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42849740"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49316990"
 ---
 # <a name="sign-in-to-powerapps-for-the-first-time"></a>首次登录到 PowerApps
 
@@ -62,25 +62,17 @@ ms.locfileid: "42849740"
 - 画布应用支持设计自定义 UI 并连接到来自各种源的数据。
 - 模型驱动应用具有标准的 UI 并仅连接到 Common Data Service (CDS) for Apps 中的数据。 但是，你可以较轻松地创建其他元素，如视图、仪表板以及不同类型的业务逻辑。
 
-默认情况下，“主页”页面显示用于创建和运行画布应用的选项。 若要改为显示模型驱动的选项，请选择具有 CDS for Apps 数据库的环境，然后打开左下角的菜单。
-
-![在画布应用和模型驱动应用之间切换](media/intro-maker-portal/mode-switcher.png)
+如果选择包含 CDS for Apps 数据库的环境，可以在相同的“主页”中生成画布或模型驱动应用。
 
 ## <a name="play-or-edit-an-app"></a>播放或编辑应用
 
-如果你已创建应用（或其他人已创建一个应用并与你共享该应用），则可以在“应用”页面中播放或编辑该应用。
+如果已创建应用（或其他人已创建并与你共享应用），可以在“主页”或“应用”页中播放或编辑应用。
 
-- 你可以基于最近是否打开过画布应用等条件进行筛选来查找该应用。
+在“应用”页上，可以按最近是否打开过应用等条件筛选应用列表。
 
-    ![画布应用的列表](media/intro-maker-portal/org-apps.png)
+![应用列表](./media/intro-maker-portal/find-apps.png)
 
-    此外，还可以在右上角附近显示的搜索框中键入一个或多个字符来搜索应用。 找到所需的应用后，选择省略号图标，以显示用于播放或编辑该应用的选项。
-
-    ![省略号菜单](media/intro-maker-portal/ellipsis-menu.png)
-
-- 无法筛选模型驱动应用的列表，但可以在右上角附近显示的搜索框中键入一个或多个字符来搜索应用。 找到所需的应用后，选择省略号图标，以显示用于播放或编辑该应用的选项。
-
-    ![带有省略号的模型驱动应用列表菜单打开](media/intro-maker-portal/model-driven-list.png)
+此外，还可以在右上角附近的搜索栏中键入一个或多个字符，从而搜索应用。 找到所需应用后，选择横幅图标，以播放或编辑应用。
 
 ## <a name="create-an-app"></a>创建应用
 

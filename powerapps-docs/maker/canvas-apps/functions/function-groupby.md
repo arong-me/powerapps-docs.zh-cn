@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e0bdab9bcd45f456c00f933dfa7f1a8936e3fa85
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 0ac3f0549e89153d9362d6a8a040833608d4e287
+ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865404"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49806193"
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>PowerApps 中的 GroupBy 和 Ungroup 函数
 对[表](../working-with-tables.md)[记录](../working-with-tables.md#records)进行分组和取消分组。
@@ -68,7 +68,7 @@ Ungroup( Table, GroupColumnName )
 2. 将“初始”按钮的 **[OnSelect](../controls/properties-core.md)** 属性设置为下面的公式：
    
     **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
-3. 按 F5，选择“初始”按钮，然后按 Esc。
+3. 按住 Alt 键的同时，选择“原始”按钮。
    
     刚创建了名为 **CityPopulations** 的[集合](../working-with-data-sources.md#collections)，该集合包含此数据：
    
@@ -82,7 +82,7 @@ Ungroup( Table, GroupColumnName )
 2. 将此按钮的 **[OnSelect](../controls/properties-core.md)** 属性设为下面的公式：
    
     **ClearCollect( CitiesByCountry, GroupBy( CityPopulations, "Country", "Cities" ) )**
-3. 按 F5，选择“分组”按钮，然后按 Esc。
+3. 按住 Alt 键的同时，选择“分组”按钮。
    
     刚创建了一个名为 **CitiesByCountry** 的集合，其中上一个集合的记录按“国家/地区”列进了分组。
    
@@ -99,7 +99,7 @@ Ungroup( Table, GroupColumnName )
 2. 将此按钮的 **[OnSelect](../controls/properties-core.md)** 属性设为下面的公式：
    
     **ClearCollect( CitiesByCountryFiltered, Filter( CitiesByCountry, "e" in Country ) )**
-3. 按 F5，选择添加的按钮，然后按 Esc。
+3. 按住 Alt 键的同时，选择已添加的按钮。
    
     刚创建了第三个集合，名为 **CitiesByCountryFiltered**，其中仅含名称带“e”的国家/地区（即没有西班牙和意大利）。
    
@@ -126,8 +126,12 @@ Ungroup( Table, GroupColumnName )
     ![](media/function-groupby/cities-sum.png)
    
     **[AddColumns](function-table-shaping.md)** 以基本 **CitiesByCountry** 集合开始，并添加新的列“城市人口总和”。  此列的值将根据公式 **Sum( Cities, Population )** 逐行进行计算。  **AddColumns** 为每行提供**城市**列的值，而 **[Sum](function-aggregates.md)** 将此子表的每行的**人口**进行加总。
-3. 现在，已得到所需的总和，可以使用 **[DropColumns](function-table-shaping.md)** 删除子表。  修改 **[OnSelect](../controls/properties-core.md)** 属性以使用下面的公式：
-   
+
+    现在，已得到所需的总和，可以使用 **[DropColumns](function-table-shaping.md)** 删除子表。
+  
+3. 添加另一个按钮，并设置它的“[Text](../controls/properties-core.md)”属性，以让按钮显示“仅总和”。
+4. 将“仅总和”按钮的“[OnSelect](../controls/properties-core.md)”属性设置为以下公式：
+
     **ClearCollect( CityPopulationsSumOnly, DropColumns( CityPopulationsSum, "Cities" ) )**
    
     这将导致：

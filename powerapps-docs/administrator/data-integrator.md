@@ -5,7 +5,7 @@ author: sabinn-msft
 ms.service: powerapps
 ms.topic: how-to
 ms.component: cds
-ms.date: 09/19/2018
+ms.date: 10/15/2018
 ms.author: sabinn
 search.audienceType:
 - admin
@@ -13,12 +13,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: b8cebc6f9db8a1a7c1a060aad461f4f32fcee05b
-ms.sourcegitcommit: 2bcf40aeaa35420dc43f5803f4e57ff0f6afb57b
+ms.openlocfilehash: dfbc420dfb4945cdda635e3cbaadb1acb446753b
+ms.sourcegitcommit: ebd39753e2a0b60c1d8c016e38c00dd1accf5d0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46468971"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328685"
 ---
 # <a name="integrate-data-into-common-data-service-for-apps"></a>将数据集成到 Common Data Service for Apps
 
@@ -88,6 +88,9 @@ ms.locfileid: "46468971"
 
     > [!div class="mx-imgBorder"] 
     > ![连接列表](media/data-integrator/CreateConnection1780.png "连接列表")
+
+> [!NOTE]
+> 请确保为每个连接指定的帐户有权访问相应应用的实体。 此外，每个连接的帐户可位于不同租户中。 
 
 ### <a name="how-to-create-a-connection-set"></a>如何创建连接集
 
@@ -169,8 +172,6 @@ ms.locfileid: "46468971"
 
 ### <a name="execution-history"></a>执行历史记录
 
-<!--note from editor: Do you think most people reading this will know what "upsert" means?-->
-
 执行历史记录显示具有项目名称的所有项目执行的历史记录、执行项目的时间戳、执行的状态以及 Upsert 和/或错误的数量。
 
 -   项目执行历史记录的示例。
@@ -228,6 +229,12 @@ ms.locfileid: "46468971"
 
 > [!div class="mx-imgBorder"] 
 > ![电子邮件通知](media/data-integrator/EmailNotification780.png "电子邮件通知")
+
+> [!NOTE]
+> - 目前支持在任何给定时间为每个付费租户安排 50 个集成项目。 不过，可创建更多项目，并以交互方式运行它们。
+对于试用租户，还需要遵循一项额外限制，即已安排项目只能运行前 50 次。
+> - 虽然支持安排项目每分钟运行一次，但请注意，这可能会给应用造成很大压力，进而影响整体性能。 强烈建议用户在真实负载条件下测试项目执行情况，同时优化性能并减少刷新频率。
+在生产环境中，建议每个租户每分钟运行的项目数不超过 5 个。
 
 ## <a name="customizing-projects-templates-and-mappings"></a>自定义项目、模板和映射 
 

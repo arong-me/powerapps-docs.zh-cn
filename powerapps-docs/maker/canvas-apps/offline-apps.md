@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a255489f243ca8586f349e617e5af2023e88732b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: f081369d75ec6f8fc29e6177b8173734d2462e03
+ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864393"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991760"
 ---
-# <a name="develop-offline-capable-canvas-apps-with-powerapps"></a>使用 PowerApps 开发可脱机运行的画布应用
+# <a name="develop-offline-capable-canvas-apps"></a>开发可脱机运行的画布应用
 
 作为移动应用开发者，最常遇到的情境之一是，让用户能够在联网受限或根本无法联网的情况下高效工作。 PowerApps 提供了一系列功能和行为，有助于开发可脱机运行的画布应用。 你可以：
 

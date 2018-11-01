@@ -1,53 +1,52 @@
 ---
-title: 向画布应用添加列表框、下拉列表和单选按钮 | Microsoft Docs
+title: 向画布应用添加列表框、下拉列表或单选按钮 | Microsoft Docs
 description: 通过 PowerApps，在画布应用中创建或配置多选选项
-author: lonu
+author: fikaradz
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 10/23/2016
-ms.author: lonu
+ms.date: 10/24/2018
+ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 71beefdb0c937d69e621d6b02fa000b96c5a3e73
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 293c850c5af980a480a56cb9fb3b8c7866950580
+ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42861496"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991737"
 ---
-# <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app-in-powerapps"></a>通过 PowerApps，向画布应用添加列表框、下拉列表或单选按钮
+# <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app"></a>向画布应用添加列表框、下拉列表或单选按钮
 
-PowerApps 为画布应用提供多选和单选选项，其中包括列表框、下拉列表和单选按钮。 在本主题中，我们会添加这些控件并使用**表**公式来生成列表。 在列表中选定某项时，它会更新其他控件。
+在画布应用中显示一列数据（例如，包含多列的表中的数据），便于用户选择列表中的一项或多项。
+
+- 添加便于用户选择多个选项的列表框。
+- 添加占用较少屏幕空间的下拉列表。
+- 添加一组可实现特定设计效果的单选按钮。
+
+虽然本主题以列表框和单选按钮为重点，但相同的原则也适用于下拉列表。
 
 [!INCLUDE [app-customization-requirements](../../includes/app-customization-requirements.md)]
 
-## <a name="add-a-list-box"></a>添加列表框
+## <a name="create-a-simple-list"></a>创建简单列表
 
-1. 在“插入”选项卡上，选择“控件”，然后选择“列表框”：  
+1. 添加“列表框”控件，将它命名为“MyListBox”，并将它的“Items”属性设置为以下表达式：
 
-    ![][2]  
-
-2. 将“列表框”控件重命名为“MyListBox”：  
-
-    ![][3]
-
-3. 将其 **[Items](controls/properties-core.md)** 属性设置为下面的表达式：  
-   ```["circle","triangle","rectangle"]```  <br/>
+    ```["circle","triangle","rectangle"]```  <br/>
 
     设计器的外观与下图类似：
 
     ![][4]
 
-4. 在“插入”选项卡上，选择“图标”，选择圆形，然后将其移到“列表框”控件下面：
+4. 在“插入”选项卡上，依次选择“图标”和圆形，再将圆形移到“MyListBox”下面：
 
     ![][5]  
 
-5. 添加三角形和矩形，然后将这些形状在“列表框”控件下面排成一行：
+5. 添加三角形和矩形，再将这些形状在“MyListBox”下面排成一行：
 
     ![][6]  
 
@@ -59,12 +58,14 @@ PowerApps 为画布应用提供多选和单选选项，其中包括列表框、�
    | 三角形 |```If("triangle" in MyListBox.SelectedItems.Value, true)``` |
    | 矩形 |```If("rectangle" in MyListBox.SelectedItems.Value, true)``` |
 
-7. 预览所创建的内容 ![][1]。 在“列表框”控件中选择不同的形状。 仅显示所选的形状。 按 Esc 或选择“X”返回到屏幕。
+7. 按住 Alt 键的同时，选择“MyListBox”中的一个或多个形状。
 
-在这些步骤中使用了表达式在“列表框”控件中创建项列表。 根据在“列表框”控件中所做的选择，将显示不同的形状。 可以将此应用于业务中的其他元素。 例如，可以使用“列表框”控件来显示产品图像、产品说明等等。
+    仅显示所选的形状。
+
+上述步骤使用了表达式来创建项列表。 可以将此应用于业务中的其他元素。 例如，可使用“下拉列表”控件来显示产品图像、产品说明等。
 
 ## <a name="add-radio-buttons"></a>添加单选按钮
-1. 在“主页”选项卡上，选择“新屏幕”。
+1. 在“主页”选项卡上，依次选择“新建屏幕”和“空白”。
 
 2. 在“插入”选项卡上，选择“控件”，然后选择“单选按钮”。
 
@@ -80,7 +81,7 @@ PowerApps 为画布应用提供多选和单选选项，其中包括列表框、�
 4. 在“插入”选项卡上，选择“图标”，然后选择圆形。
 
 5. 将圆形的 **[Fill](controls/properties-color-border.md)** 属性设置为下面的函数：  
-   ```If(Choices.Selected.Value = "red", RGBA(192, 0, 0, 1), Choices.Selected.Value = "green", RGBA(0, 176, 80, 1), Choices.Selected.Value = "blue", RGBA(0, 32, 96, 1))```  
+   ```If(Choices.Selected.Value = "red", Red, Choices.Selected.Value = "green", Green, Choices.Selected.Value = "blue", Blue)```  
 
     在此公式中，圆形根据所选单选按钮更改其颜色。
 
@@ -88,20 +89,7 @@ PowerApps 为画布应用提供多选和单选选项，其中包括列表框、�
 
     ![][14]  
 
-7. 预览所创建的内容：![][1]。 选中不同的单选按钮以更改圆形的颜色。 按 Esc 或选择“X”返回到屏幕。
-
-## <a name="add-a-drop-down-list"></a>添加下拉列表
-1. 添加屏幕，然后添加“下拉列表”控件。
-
-    ![][15]  
-
-2. 将该控件重命名为“DDChoices”，并将其 **[Items](controls/properties-core.md)** 属性设置为此公式：<br>
-   **["red","green","blue"]**
-
-3. 添加一个圆形，将其移到“下拉列表”控件下面，然后将圆形的 **[Fill](controls/properties-color-border.md)** 属性设置为此公式：  
-   ```If(DDChoices.Selected.Value = "red", RGBA(192, 0, 0, 1), DDChoices.Selected.Value = "green", RGBA(0, 176, 80, 1), DDChoices.Selected.Value = "blue", RGBA(0, 32, 96, 1))```
-
-4. 预览所创建的内容：![][1]。 选择不同选项以更改圆形的颜色。
+7. 按住 Alt 键的同时，选中不同单选按钮，以更改圆形的颜色。
 
 [1]: ./media/add-list-box-drop-down-list-radio-button/preview.png
 [2]: ./media/add-list-box-drop-down-list-radio-button/listbox.png
