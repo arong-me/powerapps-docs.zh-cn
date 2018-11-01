@@ -1,80 +1,80 @@
 ---
-title: 使用应用程序设计器验证并发布模型驱动应用 | Microsoft Docs
-description: 了解如何验证并发布模型驱动应用
+title: 使用应用程序设计器验证和发布模型驱动应用 | MicrosoftDocs
+description: 了解如何验证和发布模型驱动应用
 keywords: ''
 ms.date: 06/08/2018
 ms.service: crm-online
-ms.custom: ''
+ms.custom: null
 ms.topic: article
 applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
+  - Dynamics 365 (online)
+  - Dynamics 365 Version 9.x
+  - powerapps
 author: Mattp123
 ms.assetid: 5a9ec120-9ddc-4d92-b48c-0fee8c57d3c3
 ms.author: matp
 manager: kvivek
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.reviewer: null
+ms.suite: null
+ms.tgt_pltfrm: null
 caps.latest.revision: 10
 topic-status: Drafting
-ms.openlocfilehash: e3802ef423e7012974c24311c36b78cd56f8ed06
-ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39668542"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="validate-and-publish-a-model-driven-app-using-the-app-designer"></a>使用应用程序设计器验证和发布模型驱动应用
 
-验证应用，以检查是否存在应用工作所必需的但尚未添加到应用的资产依赖项。 验证成功后即可发布应用。 
+# <a name="validate-and-publish-a-model-driven-app-using-the-app-designer"></a>使用应用程序设计器验证和发布模型驱动应用程序
+
+可验证应用以检查应用要工作所需，但尚未为其添加的资产依赖项。 在成功验证后，发布应用程序。 
   
-例如，你将客户服务绩效仪表板添加到了应用，它要使用类似于案例组合（按优先级）或案例解决趋势（以天计）的图表，而你尚未添加它们。 验证此应用时，就会收到所有缺失的必需资产列表。  
+例如，您已向应用添加了“Customer Service 绩效”仪表板，该仪表板使用“案例组合(按类型)”或“案例解决趋势(以天计)”之类您尚未添加的图表。 验证此应用时，将生成所有必需但缺少的资产的列表。  
   
-验证应用时，应用程序设计器画布会显示所缺失的资产的详细信息。  
+验证应用时，应用设计器区域显示有关缺少的资产的详细信息。  
   
-1.  在应用程序设计器中，选择“验证”。  
+1.  在应用程序设计器中，选择**验证**。  
   
-     随即将出现一个通知栏，并显示应用中是否存在任何错误或警告。 例如，当实体没有窗体或视图，或应用不包含任何组件时，通知栏会显示警告。 如果未为应用配置站点地图，则可能会出现错误。 你可以在不处理警告的情况下发布应用，但错误必须予以修复才能发布应用。  
+     随即出现通知栏，为您显示应用是否有任何错误或警告。 实体无窗体或视图，或应用中不包含任何组件之类情况下，通知栏显示警告。 如果没有为应用配置站点地图，可能显示错误。 可以在不解决警告的情况下发布应用，但是必须修复错误才能发布。  
   
-     ![显示应用中的警告的通知栏](media/app-designer-warning-notification.png "显示应用中的警告的通知栏")  
+     ![应用程序中显示警告的导航栏](media/app-designer-warning-notification.png "应用程序中显示警告的导航栏")  
   
-     此外，应用程序设计器还会在缺失必需资产的各个项目或资产磁贴上显示警告符号，并附带依赖项的数目。  
+     应用设计器还显示一个警告符号，该警告符号带有缺少必需资产的每个项目或资产磁贴的依赖项数量。  
   
-     ![应用程序设计器磁贴上的缺失组件警告](media/warning--button-on-app-designer-tile.png "应用程序设计器磁贴上的缺失组件警告")  
+     ![应用程序设计器磁贴中的“缺少组件”警告](media/warning--button-on-app-designer-tile.png "应用程序设计器磁贴中的“缺少组件”警告")  
   
-2.  若要添加必需的资产，请在画布右侧选择“必需”选项卡。 当应用中至少缺失一个必需资产时，就可以看到“必需”选项卡。  
+2.  若要添加必需资产，请选择区域右侧的**必需**选项卡。 应用中缺少至少一个必需资产时，显示**必需**选项卡。  
   
-     此选项卡会显示一个必需组件列表。  
+     此选项卡显示所需组件的列表。  
   
-     ![显示应用中缺失组件列表的“必需”选项卡](media/app-designer-required-components-tab.png "显示应用中缺失组件列表的“必需”选项卡")  
+     ![显示应用程序中缺少的组件的列表的必填选项卡](media/app-designer-required-components-tab.png "显示应用程序中缺少的组件的列表的必填选项卡")  
   
-3.  选择要添加的资产，然后选择“添加依赖项”。 添加必需资产时，添加资产的相应磁贴上的计数会减少。  
+3.  选择想要添加的资产，然后选择**添加依赖项**。 添加必需资产时，已向其添加了资产的磁贴中的计数将减少。  
   
     > [!NOTE]
-    >  若某个通用资产是不同应用组件所必需的（例如窗体是仪表板和实体所必需的），而你仅从仪表板依赖项树中添加了该资产一次，则只有仪表板磁贴上的依赖项计数会减少，实体磁贴上的计数则不会减少。 但会同时为这两个磁贴解析此依赖项。  
+    >  如果多个应用组件有一个共同需要的资产，如仪表板和实体需要一个窗体，并且您仅从“仪表板依赖项”树添加了一次该资产，则依赖项计数仅在“仪表板”磁贴中减少，不在“实体”磁贴中减少。 但是，将为两者解决依赖项。  
     >   
-    >  选择“获取最新依赖项”![应用程序设计器中的“获取最新依赖项”按钮](media/app-designer-get-latest-dependencies.png "应用程序设计器中的“获取最新依赖项”按钮")，或再次选择“验证”来获取最新的依赖项集。 只有在保存应用后才会看到这些按钮。  
+    >  选择**获取最新依赖项** ![应用程序设计器中的“获取最新依赖项”按钮](media/app-designer-get-latest-dependencies.png "应用程序设计器中的“获取最新依赖项”按钮") 或再次选择 **验证**以获取最新依赖项。 只有在保存应用后才看到这些按钮。  
   
-     若不想添加建议的必需组件，则选择“隐藏依赖项”。 在应用程序设计器中打开应用并选择“验证”或“获取最新依赖项”![应用程序设计器中的“获取最新依赖项”按钮](media/app-designer-get-latest-dependencies.png "应用程序设计器中的“获取最新依赖项”按钮")时，将再次显示所有未解决的警告。  
+     如果不希望添加建议的必需组件，请选择**隐藏依赖项**。 在应用程序设计器中打开应用程序并选择**验证**或**获取最新依赖项** ![应用程序设计器中的“获取最新依赖项”按钮](media/app-designer-get-latest-dependencies.png "应用程序设计器中的“获取最新依赖项”按钮") 时，将再次显示未解决的警告。  
   
     > [!NOTE]
-    >  若现在隐藏依赖项，后面想要导出此应用时，所有的这些依赖项会再次出现。  
+    >  如果您现在隐藏依赖项，但是以后希望导出此应用，将再次显示所有这些依赖项。  
   
-## <a name="publish-an-app-using-the-app-designer"></a>使用应用程序设计器发布应用
+## <a name="publish-an-app-using-the-app-designer"></a>使用应用程序设计器发布应用程序
 
-发布应用，以便用户可以使用它。  
+发布应用以将其提供给用户。  
   
- 添加组件、验证并保存应用后，在命令栏上选择“发布”。 也可以从[我的应用](advanced-navigation.md#my-apps)页上相应的应用磁贴处发布应用。 在“正在编辑的应用”视图中想要发布的应用磁贴的右下角，选择“更多选项”按钮（“...”），然后选择“发布”。  
+ 添加组件，验证并保存应用之后，请在命令栏中选择**发布**。 也可以从[我的应用程序](advanced-navigation.md#my-apps)页面中的应用磁贴发布应用程序。 在**正在编辑的应用**视图中要发布的应用磁贴右下角，选择**更多选项**按钮 (**...**)，然后选择**发布**。  
   
- 应用状态会更改为“已发布”。 你可以在应用程序设计器的右上角看到此更改。 应用将从“正在编辑的应用”视图转到“已发布的应用”视图，并且应用磁贴上会显示发布日期。  
+ 应用状态变为“已发布”。 可以在应用设计器右上角看到此状态。 应用从**正在编辑的应用**视图变为**已发布的应用**视图，并在应用磁贴中显示发布日期。  
   
 > [!NOTE]
-> - 若应用验证出现错误，则可在通知栏上看到此错误。 直至解决此错误才可发布此应用。  
-> - 保存应用后才能将其发布。  
+> - 如果您的应用存在验证错误，则会在通知栏中显示该错误。 只有在解决错误后，才能发布应用。  
+> - 只有在保存应用后才能发布。  
 
 ## <a name="next-steps"></a>后续步骤  
-[借助 PowerApps 共享模型驱动应用](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app) <br/>
- [在移动设备上运行模型驱动应用](https://docs.microsoft.com/powerapps/user/run-app-client-model-driven)   
+[使用 PowerApps 共享模型驱动应用程序](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app) <br/>
+ [在移动设备上运行模型驱动应用程序](https://docs.microsoft.com/powerapps/user/run-app-client-model-driven)   
  

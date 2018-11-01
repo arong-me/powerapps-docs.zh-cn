@@ -1,981 +1,975 @@
-items:
-- name: 查找并运行应用
+- name: 查找并运行应用程序
   href: ../user/index.md
   items:
-  - name: 在浏览器中
-    href: ../user/run-app-browser.md
-  - name: 在手机（画布）上
-    href: ../user/run-app-client.md
-  - name: 在手机（模型驱动）上
-    href: ../user/run-app-client-model-driven.md
-  - name: 在 SharePoint Online 页面上
-    href: ../user/powerapps-web-part.md
-  - name: 在 Microsoft Teams 中
-    href: ../user/open-app-embedded-in-teams.md
-  - name: 从 AppSource
-    href: ../user/app-source.md
-- name: 创建应用
+    - name: 在浏览器中
+      href: ../user/run-app-browser.md
+    - name: 在手机上（区域）
+      href: ../user/run-app-client.md
+    - name: 在手机上（模型驱动的）
+      href: ../user/run-app-client-model-driven.md
+    - name: 在 SharePoint Online 页面上
+      href: ../user/powerapps-web-part.md
+    - name: 在 Microsoft Teams 中
+      href: ../user/open-app-embedded-in-teams.md
+    - name: 从 AppSource
+      href: ../user/app-source.md
+- name: 创建应用程序
   href: index.md
   items:
-  - name: 免费试用 PowerApps
-    items:
-    - name: 30 天试用版
-      href: signup-for-powerapps.md
-    - name: PowerApps 社区计划
-      href: dev-community-plan.md
-  - name: 登录到 PowerApps
-    href: ./canvas-apps/intro-maker-portal.md
-  - name: 新功能
-    href: ./canvas-apps/release-notes.md
-- name: 画布应用
+    - name: 免费试用 PowerApps
+      items:
+        - name: 30 天试用版
+          href: signup-for-powerapps.md
+        - name: PowerApps 社区计划
+          href: dev-community-plan.md
+    - name: 登录到 PowerApps
+      href: ./canvas-apps/intro-maker-portal.md
+      items: null
+    - name: 新增功能
+      href: ./canvas-apps/release-notes.md
+- name: 区域应用程序
   href: ./canvas-apps/getting-started.md
   items:
-  - name: 探索示例应用
-    href: ./canvas-apps/open-and-run-a-sample-app.md
-    items:
-    - name: 零用金报销单应用
-      href: ./canvas-apps/expense-report-install.md
-    - name: 技术支持应用
-      href: ./canvas-apps/help-desk-install.md
-    - name: 会议捕获应用
-      href: ./canvas-apps/sample-meeting-capture.md
-  - name: 创建第一个应用
-    items:
-    - name: 1 - 从数据生成应用
+    - name: 浏览示例应用程序
+      href: ./canvas-apps/open-and-run-a-sample-app.md
       items:
-      - name: 从 Common Data Service for Apps
-        href: ./canvas-apps/data-platform-create-app.md
-      - name: 从 SharePoint
-        href: ./canvas-apps/app-from-sharepoint.md
-      - name: 从 Excel
-        href: ./canvas-apps/get-started-create-from-data.md
-    - name: 2 - 进行基本的自定义
+        - name: 支出报表应用程序
+          href: ./canvas-apps/expense-report-install.md
+        - name: 帮助中心应用程序
+          href: ./canvas-apps/help-desk-install.md
+        - name: 会议捕获应用程序
+          href: ./canvas-apps/sample-meeting-capture.md
+    - name: 创建第一个应用程序
       items:
-      - name: 1 - 库
-        href: ./canvas-apps/customize-layout-sharepoint.md
-      - name: 2 - 窗体
-        href: ./canvas-apps/customize-forms-sharepoint.md
-      - name: 3 - 卡
-        href: ./canvas-apps/customize-card.md
-    - name: 3 - 自行创建应用
+        - name: 1 - 从数据生成应用程序
+          items:
+            - name: 从面向应用程序的 Common Data Service
+              href: ./canvas-apps/data-platform-create-app.md
+            - name: 从 SharePoint
+              href: ./canvas-apps/app-from-sharepoint.md
+            - name: 从 Excel
+              href: ./canvas-apps/get-started-create-from-data.md
+        - name: 2 - 创建基本自定义项
+          items:
+            - name: 1 - 库
+              href: ./canvas-apps/customize-layout-sharepoint.md
+            - name: 2 - 窗体
+              href: ./canvas-apps/customize-forms-sharepoint.md
+            - name: 3 - 卡
+              href: ./canvas-apps/customize-card.md
+        - name: 3 - 自行创建应用程序
+          items:
+            - name: 从面向应用程序的 Common Data Service
+              href: ./canvas-apps/data-platform-create-app-scratch.md
+            - name: 从 Excel
+              href: ./canvas-apps/get-started-create-from-blank.md
+        - name: 从模板创建应用程序
+          href: ./canvas-apps/get-started-test-drive.md
+    - name: 设计和构建应用程序
       items:
-      - name: 从 Common Data Service for Apps
-        href: ./canvas-apps/data-platform-create-app-scratch.md
-      - name: 从 Excel
-        href: ./canvas-apps/get-started-create-from-blank.md
-    - name: 从模板创建应用
-      href: ./canvas-apps/get-started-test-drive.md
-  - name: 设计和生成应用
-    items:
-    - name: 连接到数据
-      href: ./canvas-apps/connections-list.md
+        - name: 连接到数据
+          href: ./canvas-apps/connections-list.md
+          items:
+            - name: 添加连接
+              href: ./canvas-apps/add-data-connection.md
+            - name: 管理连接
+              href: ./canvas-apps/add-manage-connections.md
+            - name: 连接到 SharePoint
+              href: ./canvas-apps/connect-to-sharepoint.md
+            - name: 准备 Excel 数据
+              href: ./canvas-apps/how-to-excel-tips.md
+            - name: 委派
+              href: ./canvas-apps/delegation-overview.md
+            - name: 可委派的数据源
+              href: ./canvas-apps/delegation-list.md
+            - name: 管理网关
+              href: ./canvas-apps/gateway-management.md
+            - name: 了解网关
+              href: ./canvas-apps/gateway-reference.md
+            - name: 了解数据源
+              href: ./canvas-apps/working-with-data-sources.md
+            - name: 了解表和记录
+              href: ./canvas-apps/working-with-tables.md
+        - name: 设计界面
+          href: ./canvas-apps/add-configure-controls.md
+          items:
+            - name: 添加屏幕
+              href: ./canvas-apps/add-screen-context-variables.md
+            - name: 显示项目表
+              href: ./canvas-apps/add-gallery.md
+            - name: 显示高度不同的项目
+              href: ./canvas-apps/gallery-dynamic-sizing.md
+            - name: 添加窗体
+              href: ./canvas-apps/add-form.md
+              items:
+                - name: 了解窗体
+                  href: ./canvas-apps/working-with-forms.md
+                - name: 了解窗体布局
+                  href: ./canvas-apps/working-with-form-layout.md
+                - name: 了解卡
+                  href: ./canvas-apps/working-with-cards.md
+            - name: 添加列表
+              href: ./canvas-apps/add-list-box-drop-down-list-radio-button.md
+            - name: 添加图表
+              href: ./canvas-apps/use-line-pie-bar-chart.md
+            - name: 添加多媒体
+              href: ./canvas-apps/add-images-pictures-audio-video.md
+            - name: 扫描条码
+              href: ./canvas-apps/scan-barcode.md
+            - name: 添加滚动屏幕
+              href: ./canvas-apps/add-scrolling-screen.md
+            - name: 添加 Power BI 数据
+              href: ./canvas-apps/powerapps-custom-visual.md
+            - name: 控件引用
+              href: ./canvas-apps/reference-properties.md
+              items:
+                - name: 添加图片
+                  href: ./canvas-apps/controls/control-add-picture.md
+                - name: 附件
+                  href: ./canvas-apps/controls/control-attachments.md
+                - name: 音频
+                  href: ./canvas-apps/controls/control-audio-video.md
+                - name: 条码扫描仪（试验性的）
+                  href: ./canvas-apps/controls/control-barcodescanner.md
+                - name: 按钮
+                  href: ./canvas-apps/controls/control-button.md
+                - name: 相机
+                  href: ./canvas-apps/controls/control-camera.md
+                - name: 卡
+                  href: ./canvas-apps/controls/control-card.md
+                - name: 复选框
+                  href: ./canvas-apps/controls/control-check-box.md
+                - name: 柱形图
+                  href: ./canvas-apps/controls/control-column-line-chart.md
+                - name: 列
+                  href: ./canvas-apps/controls/control-column.md
+                - name: 组合框
+                  href: ./canvas-apps/controls/control-combo-box.md
+                - name: 数据表
+                  href: ./canvas-apps/controls/control-data-table.md
+                - name: 日期选取器
+                  href: ./canvas-apps/controls/control-date-picker.md
+                - name: 显示窗体
+                  href: ./canvas-apps/controls/control-form-detail.md
+                - name: 下拉
+                  href: ./canvas-apps/controls/control-drop-down.md
+                - name: 编辑窗体
+                  href: ./canvas-apps/controls/control-form-detail.md
+                - name: 导出
+                  href: ./canvas-apps/controls/control-export-import.md
+                - name: 库
+                  href: ./canvas-apps/controls/control-gallery.md
+                - name: HTML 文本
+                  href: ./canvas-apps/controls/control-html-text.md
+                - name: 图标
+                  href: ./canvas-apps/controls/control-shapes-icons.md
+                - name: 图像
+                  href: ./canvas-apps/controls/control-image.md
+                - name: 导入
+                  href: ./canvas-apps/controls/control-export-import.md
+                - name: 折线图
+                  href: ./canvas-apps/controls/control-column-line-chart.md
+                - name: 列表框
+                  href: ./canvas-apps/controls/control-list-box.md
+                - name: 麦克风
+                  href: ./canvas-apps/controls/control-microphone.md
+                - name: PDF 查看器（试验性的）
+                  href: ./canvas-apps/controls/control-pdf-viewer.md
+                - name: 笔输入
+                  href: ./canvas-apps/controls/control-pen-input.md
+                - name: 饼图
+                  href: ./canvas-apps/controls/control-pie-chart.md
+                - name: Power BI 磁贴
+                  href: ./canvas-apps/controls/control-power-bi-tile.md
+                - name: 单选
+                  href: ./canvas-apps/controls/control-radio.md
+                - name: 评级
+                  href: ./canvas-apps/controls/control-rating.md
+                - name: 富文本编辑器（试验性的）
+                  href: ./canvas-apps/controls/control-richtexteditor.md
+                - name: 屏幕
+                  href: ./canvas-apps/controls/control-screen.md
+                - name: 形状
+                  href: ./canvas-apps/controls/control-shapes-icons.md
+                - name: 滑块
+                  href: ./canvas-apps/controls/control-slider.md
+                - name: 标签
+                  href: ./canvas-apps/controls/control-text-box.md
+                - name: 文本输入
+                  href: ./canvas-apps/controls/control-text-input.md
+                - name: 计时器
+                  href: ./canvas-apps/controls/control-timer.md
+                - name: 切换
+                  href: ./canvas-apps/controls/control-toggle.md
+                - name: 视频
+                  href: ./canvas-apps/controls/control-audio-video.md
+        - name: 配置应用程序功能
+          href: ./canvas-apps/working-with-formulas.md
+          items:
+            - name: 了解变量
+              href: ./canvas-apps/working-with-variables.md
+            - name: 了解行为公式
+              href: ./canvas-apps/working-with-formulas-in-depth.md
+            - name: 显示日期和时间
+              href: ./canvas-apps/show-text-dates-times.md
+            - name: 创建集合
+              href: ./canvas-apps/create-update-collection.md
+            - name: 显示当前用户
+              href: ./canvas-apps/show-current-user.md
+            - name: 使用查找连接列表
+              href: ./canvas-apps/sharepoint-lookup-fields.md
+            - name: 添加流
+              href: ./canvas-apps/using-logic-flows.md
+            - name: 公式引用
+              href: ./canvas-apps/formula-reference.md
+              items:
+                - name: Abs
+                  href: ./canvas-apps/functions/function-numericals.md
+                - name: Acceleration
+                  href: ./canvas-apps/functions/signals.md
+                - name: Acos
+                  href: ./canvas-apps/functions/function-trig.md
+                - name: Acot
+                  href: ./canvas-apps/functions/function-trig.md
+                - name: AddColumns
+                  href: ./canvas-apps/functions/function-table-shaping.md
+                - name: And
+                  href: ./canvas-apps/functions/function-logicals.md
+                - name: App
+                  href: ./canvas-apps/functions/signals.md
+                - name: Asin
+                  href: ./canvas-apps/functions/function-trig.md
+                - name: Atan
+                  href: ./canvas-apps/functions/function-trig.md
+                - name: Atan2
+                  href: ./canvas-apps/functions/function-trig.md
+                - name: Average
+                  href: ./canvas-apps/functions/function-aggregates.md
+                - name: Back
+                  href: ./canvas-apps/functions/function-navigate.md
+                - name: Blank
+                  href: ./canvas-apps/functions/function-isblank-isempty.md
+                - name: Calendar
+                  href: ./canvas-apps/functions/function-clock-calendar.md
+                - name: Char
+                  href: ./canvas-apps/functions/function-char.md
+                - name: Choices
+                  href: ./canvas-apps/functions/function-choices.md
+                - name: Clear
+                  href: ./canvas-apps/functions/function-clear-collect-clearcollect.md
+                - name: ClearCollect
+                  href: ./canvas-apps/functions/function-clear-collect-clearcollect.md
+                - name: Clock
+                  href: ./canvas-apps/functions/function-clock-calendar.md
+                - name: Coalesce
+                  href: ./canvas-apps/functions/function-isblank-isempty.md
+                - name: Collect
+                  href: ./canvas-apps/functions/function-clear-collect-clearcollect.md
+                - name: Color
+                  href: ./canvas-apps/functions/function-colors.md
+                - name: ColorFade
+                  href: ./canvas-apps/functions/function-colors.md
+                - name: ColorValue
+                  href: ./canvas-apps/functions/function-colors.md
+                - name: Compass
+                  href: ./canvas-apps/functions/signals.md
+                - name: Concat
+                  href: ./canvas-apps/functions/function-concatenate.md
+                - name: Concatenate
+                  href: ./canvas-apps/functions/function-concatenate.md
+                - name: Concurrent
+                  href: ./canvas-apps/functions/function-concurrent.md
+                - name: Connection
+                  href: ./canvas-apps/functions/signals.md
+                - name: Count
+                  href: ./canvas-apps/functions/function-table-counts.md
+                - name: Cos
+                  href: ./canvas-apps/functions/function-trig.md
+                - name: Cot
+                  href: ./canvas-apps/functions/function-trig.md
+                - name: CountA
+                  href: ./canvas-apps/functions/function-table-counts.md
+                - name: CountIf
+                  href: ./canvas-apps/functions/function-table-counts.md
+                - name: CountRows
+                  href: ./canvas-apps/functions/function-table-counts.md
+                - name: DataSourceInfo
+                  href: ./canvas-apps/functions/function-datasourceinfo.md
+                - name: Date
+                  href: ./canvas-apps/functions/function-date-time.md
+                - name: DateAdd
+                  href: ./canvas-apps/functions/function-dateadd-datediff.md
+                - name: DateDiff
+                  href: ./canvas-apps/functions/function-dateadd-datediff.md
+                - name: DateTimeValue
+                  href: ./canvas-apps/functions/function-datevalue-timevalue.md
+                - name: DateValue
+                  href: ./canvas-apps/functions/function-datevalue-timevalue.md
+                - name: Day
+                  href: ./canvas-apps/functions/function-datetime-parts.md
+                - name: Defaults
+                  href: ./canvas-apps/functions/function-defaults.md
+                - name: Degrees
+                  href: ./canvas-apps/functions/function-trig.md
+                - name: Disable
+                  href: ./canvas-apps/functions/function-enable-disable.md
+                - name: Distinct
+                  href: ./canvas-apps/functions/function-distinct.md
+                - name: Download
+                  href: ./canvas-apps/functions/function-param.md
+                - name: DropColumns
+                  href: ./canvas-apps/functions/function-table-shaping.md
+                - name: EditForm
+                  href: ./canvas-apps/functions/function-form.md
+                - name: Enable
+                  href: ./canvas-apps/functions/function-enable-disable.md
+                - name: EndsWith
+                  href: ./canvas-apps/functions/function-startswith.md
+                - name: Errors
+                  href: ./canvas-apps/functions/function-errors.md
+                - name: EncodeUrl
+                  href: ./canvas-apps/functions/function-encode-decode.md
+                - name: Exit
+                  href: ./canvas-apps/functions/function-exit.md
+                - name: Exp
+                  href: ./canvas-apps/functions/function-numericals.md
+                - name: Filter
+                  href: ./canvas-apps/functions/function-filter-lookup.md
+                - name: Find
+                  href: ./canvas-apps/functions/function-find.md
+                - name: First
+                  href: ./canvas-apps/functions/function-first-last.md
+                - name: FirstN
+                  href: ./canvas-apps/functions/function-first-last.md
+                - name: ForAll
+                  href: ./canvas-apps/functions/function-forall.md
+                - name: GroupBy
+                  href: ./canvas-apps/functions/function-groupby.md
+                - name: GUID
+                  href: ./canvas-apps/functions/function-guid.md
+                - name: HashTags
+                  href: ./canvas-apps/functions/function-hashtags.md
+                - name: Hour
+                  href: ./canvas-apps/functions/function-datetime-parts.md
+                - name: If
+                  href: ./canvas-apps/functions/function-if.md
+                - name: IfError
+                  href: ./canvas-apps/functions/function-iferror.md
+                - name: IsBlank
+                  href: ./canvas-apps/functions/function-isblank-isempty.md
+                - name: IsEmpty
+                  href: ./canvas-apps/functions/function-isblank-isempty.md
+                - name: IsMatch
+                  href: ./canvas-apps/functions/function-ismatch.md
+                - name: IsNumeric
+                  href: ./canvas-apps/functions/function-isnumeric.md
+                - name: IsToday
+                  href: ./canvas-apps/functions/function-now-today-istoday.md
+                - name: Language
+                  href: ./canvas-apps/functions/function-language.md
+                - name: Last
+                  href: ./canvas-apps/functions/function-first-last.md
+                - name: LastN
+                  href: ./canvas-apps/functions/function-first-last.md
+                - name: Launch
+                  href: ./canvas-apps/functions/function-param.md
+                - name: Left
+                  href: ./canvas-apps/functions/function-left-mid-right.md
+                - name: Len
+                  href: ./canvas-apps/functions/function-len.md
+                - name: Ln
+                  href: ./canvas-apps/functions/function-numericals.md
+                - name: LoadData
+                  href: ./canvas-apps/functions/function-savedata-loaddata.md
+                - name: Location
+                  href: ./canvas-apps/functions/signals.md
+                - name: LookUp
+                  href: ./canvas-apps/functions/function-filter-lookup.md
+                - name: Lower
+                  href: ./canvas-apps/functions/function-lower-upper-proper.md
+                - name: Max
+                  href: ./canvas-apps/functions/function-aggregates.md
+                - name: Mid
+                  href: ./canvas-apps/functions/function-left-mid-right.md
+                - name: Min
+                  href: ./canvas-apps/functions/function-aggregates.md
+                - name: Minute
+                  href: ./canvas-apps/functions/function-datetime-parts.md
+                - name: Mod
+                  href: ./canvas-apps/functions/function-mod.md
+                - name: Month
+                  href: ./canvas-apps/functions/function-datetime-parts.md
+                - name: Navigate
+                  href: ./canvas-apps/functions/function-navigate.md
+                - name: NewForm
+                  href: ./canvas-apps/functions/function-form.md
+                - name: Not
+                  href: ./canvas-apps/functions/function-logicals.md
+                - name: Notify
+                  href: ./canvas-apps/functions/function-showerror.md
+                - name: Now
+                  href: ./canvas-apps/functions/function-now-today-istoday.md
+                - name: 运算符
+                  href: ./canvas-apps/functions/operators.md
+                - name: Or
+                  href: ./canvas-apps/functions/function-logicals.md
+                - name: Param
+                  href: ./canvas-apps/functions/function-param.md
+                - name: Patch
+                  href: ./canvas-apps/functions/function-patch.md
+                - name: Pi
+                  href: ./canvas-apps/functions/function-trig.md
+                - name: PlainText
+                  href: ./canvas-apps/functions/function-encode-decode.md
+                - name: Power
+                  href: ./canvas-apps/functions/function-numericals.md
+                - name: Proper
+                  href: ./canvas-apps/functions/function-lower-upper-proper.md
+                - name: Radians
+                  href: ./canvas-apps/functions/function-trig.md
+                - name: Rand
+                  href: ./canvas-apps/functions/function-rand.md
+                - name: Refresh
+                  href: ./canvas-apps/functions/function-refresh.md
+                - name: Remove
+                  href: ./canvas-apps/functions/function-remove-removeif.md
+                - name: RemoveIf
+                  href: ./canvas-apps/functions/function-remove-removeif.md
+                - name: RenameColumns
+                  href: ./canvas-apps/functions/function-table-shaping.md
+                - name: Replace
+                  href: ./canvas-apps/functions/function-replace-substitute.md
+                - name: Reset
+                  href: ./canvas-apps/functions/function-reset.md
+                - name: ResetForm
+                  href: ./canvas-apps/functions/function-form.md
+                - name: Revert
+                  href: ./canvas-apps/functions/function-revert.md
+                - name: RGBA
+                  href: ./canvas-apps/functions/function-colors.md
+                - name: Right
+                  href: ./canvas-apps/functions/function-left-mid-right.md
+                - name: Round
+                  href: ./canvas-apps/functions/function-round.md
+                - name: RoundDown
+                  href: ./canvas-apps/functions/function-round.md
+                - name: RoundUp
+                  href: ./canvas-apps/functions/function-round.md
+                - name: SaveData
+                  href: ./canvas-apps/functions/function-savedata-loaddata.md
+                - name: Search
+                  href: ./canvas-apps/functions/function-filter-lookup.md
+                - name: Second
+                  href: ./canvas-apps/functions/function-datetime-parts.md
+                - name: Select
+                  href: ./canvas-apps/functions/function-select.md
+                - name: Set
+                  href: ./canvas-apps/functions/function-set.md
+                - name: ShowColumns
+                  href: ./canvas-apps/functions/function-table-shaping.md
+                - name: Shuffle
+                  href: ./canvas-apps/functions/function-shuffle.md
+                - name: Sin
+                  href: ./canvas-apps/functions/function-trig.md
+                - name: Sort
+                  href: ./canvas-apps/functions/function-sort.md
+                - name: SortByColumns
+                  href: ./canvas-apps/functions/function-sort.md
+                - name: Split
+                  href: ./canvas-apps/functions/function-split.md
+                - name: Sqrt
+                  href: ./canvas-apps/functions/function-numericals.md
+                - name: StartsWith
+                  href: ./canvas-apps/functions/function-startswith.md
+                - name: StdevP
+                  href: ./canvas-apps/functions/function-aggregates.md
+                - name: Substitute
+                  href: ./canvas-apps/functions/function-replace-substitute.md
+                - name: SubmitForm
+                  href: ./canvas-apps/functions/function-form.md
+                - name: Sum
+                  href: ./canvas-apps/functions/function-aggregates.md
+                - name: Switch
+                  href: ./canvas-apps/functions/function-if.md
+                - name: Table
+                  href: ./canvas-apps/functions/function-table.md
+                - name: Tan
+                  href: ./canvas-apps/functions/function-trig.md
+                - name: Text
+                  href: ./canvas-apps/functions/function-text.md
+                - name: Time
+                  href: ./canvas-apps/functions/function-date-time.md
+                - name: TimeValue
+                  href: ./canvas-apps/functions/function-datevalue-timevalue.md
+                - name: TimeZoneOffset
+                  href: ./canvas-apps/functions/function-dateadd-datediff.md
+                - name: Today
+                  href: ./canvas-apps/functions/function-now-today-istoday.md
+                - name: Trim
+                  href: ./canvas-apps/functions/function-trim.md
+                - name: TrimEnds
+                  href: ./canvas-apps/functions/function-trim.md
+                - name: Ungroup
+                  href: ./canvas-apps/functions/function-groupby.md
+                - name: Update
+                  href: ./canvas-apps/functions/function-update-updateif.md
+                - name: UpdateContext
+                  href: ./canvas-apps/functions/function-updatecontext.md
+                - name: UpdateIf
+                  href: ./canvas-apps/functions/function-update-updateif.md
+                - name: Upper
+                  href: ./canvas-apps/functions/function-lower-upper-proper.md
+                - name: User
+                  href: ./canvas-apps/functions/function-user.md
+                - name: Validate
+                  href: ./canvas-apps/functions/function-validate.md
+                - name: Value
+                  href: ./canvas-apps/functions/function-value.md
+                - name: VarP
+                  href: ./canvas-apps/functions/function-aggregates.md
+                - name: ViewForm
+                  href: ./canvas-apps/functions/function-form.md
+                - name: Weekday
+                  href: ./canvas-apps/functions/function-datetime-parts.md
+                - name: Year
+                  href: ./canvas-apps/functions/function-datetime-parts.md
+        - name: 构建全局应用程序
+          href: ./canvas-apps/global-apps.md
+        - name: 使应用程序可访问
+          href: ./canvas-apps/accessible-apps.md
+          items:
+            - name: 查找辅助功能问题
+              href: ./canvas-apps/accessibility-checker.md
+            - name: 对辅助功能使用颜色
+              href: ./canvas-apps/accessible-apps-color.md
+        - name: 试验和预览功能
+          href: ./canvas-apps/working-with-experimental.md
+    - name: 保存并发布应用程序
+      href: ./canvas-apps/save-publish-app.md
+    - name: 共享应用程序
+      href: ./canvas-apps/share-app.md
       items:
-      - name: 添加连接
-        href: ./canvas-apps/add-data-connection.md
-      - name: 管理连接
-        href: ./canvas-apps/add-manage-connections.md
-      - name: 连接到 SharePoint
-        href: ./canvas-apps/connect-to-sharepoint.md
-      - name: 准备 Excel 数据
-        href: ./canvas-apps/how-to-excel-tips.md
-      - name: 委派
-        href: ./canvas-apps/delegation-overview.md
-      - name: 可委托的数据源
-        href: ./canvas-apps/delegation-list.md
-      - name: 管理网关
-        href: ./canvas-apps/gateway-management.md
-      - name: 了解网关
-        href: ./canvas-apps/gateway-reference.md
-      - name: 了解数据源
-        href: ./canvas-apps/working-with-data-sources.md
-      - name: 了解表和记录
-        href: ./canvas-apps/working-with-tables.md
-    - name: 设计界面
-      href: ./canvas-apps/add-configure-controls.md
+        - name: 共享 Excel 数据
+          href: ./canvas-apps/share-app-data.md
+        - name: 共享应用程序资源
+          href: ./canvas-apps/share-app-resources.md
+        - name: 在 Power BI 中嵌入应用程序
+          href: ./canvas-apps/embed-powerapps-powerbi.md
+    - name: 管理应用程序
       items:
-      - name: 添加屏幕
-        href: ./canvas-apps/add-screen-context-variables.md
-      - name: 显示包含项的表
-        href: ./canvas-apps/add-gallery.md
-      - name: 显示具有不同高度的项目
-        href: ./canvas-apps/gallery-dynamic-sizing.md
-      - name: 添加表单
-        href: ./canvas-apps/add-form.md
-        items:
-        - name: 了解窗体
-          href: ./canvas-apps/working-with-forms.md
-        - name: 了解窗体布局
-          href: ./canvas-apps/working-with-form-layout.md
-        - name: 了解卡片
-          href: ./canvas-apps/working-with-cards.md
-      - name: 添加列表
-        href: ./canvas-apps/add-list-box-drop-down-list-radio-button.md
-      - name: 添加图表
-        href: ./canvas-apps/use-line-pie-bar-chart.md
-      - name: 添加多媒体
-        href: ./canvas-apps/add-images-pictures-audio-video.md
-      - name: 扫描条码
-        href: ./canvas-apps/scan-barcode.md
-      - name: 添加滚动屏幕
-        href: ./canvas-apps/add-scrolling-screen.md
-      - name: 添加 Power BI 数据
-        href: ./canvas-apps/powerapps-custom-visual.md
-      - name: 控件引用
-        href: ./canvas-apps/reference-properties.md
-        items:
-        - name: 添加图片
-          href: ./canvas-apps/controls/control-add-picture.md
-        - name: 附件
-          href: ./canvas-apps/controls/control-attachments.md
-        - name: 音频
-          href: ./canvas-apps/controls/control-audio-video.md
-        - name: 条形码扫描程序(实验)
-          href: ./canvas-apps/controls/control-barcodescanner.md
-        - name: 按钮
-          href: ./canvas-apps/controls/control-button.md
-        - name: 相机
-          href: ./canvas-apps/controls/control-camera.md
-        - name: 卡片
-          href: ./canvas-apps/controls/control-card.md
-        - name: 复选框
-          href: ./canvas-apps/controls/control-check-box.md
-        - name: 柱形图
-          href: ./canvas-apps/controls/control-column-line-chart.md
-        - name: 列
-          href: ./canvas-apps/controls/control-column.md
-        - name: 组合框
-          href: ./canvas-apps/controls/control-combo-box.md
-        - name: 数据表
-          href: ./canvas-apps/controls/control-data-table.md
-        - name: 日期选取器
-          href: ./canvas-apps/controls/control-date-picker.md
-        - name: “显示”窗体
-          href: ./canvas-apps/controls/control-form-detail.md
-        - name: 下拉列表
-          href: ./canvas-apps/controls/control-drop-down.md
-        - name: 编辑表单
-          href: ./canvas-apps/controls/control-form-detail.md
-        - name: 导出
-          href: ./canvas-apps/controls/control-export-import.md
-        - name: 库
-          href: ./canvas-apps/controls/control-gallery.md
-        - name: HTML 文本
-          href: ./canvas-apps/controls/control-html-text.md
-        - name: 图标
-          href: ./canvas-apps/controls/control-shapes-icons.md
-        - name: 图像
-          href: ./canvas-apps/controls/control-image.md
-        - name: 导入
-          href: ./canvas-apps/controls/control-export-import.md
-        - name: 折线图
-          href: ./canvas-apps/controls/control-column-line-chart.md
-        - name: 列表框
-          href: ./canvas-apps/controls/control-list-box.md
-        - name: 麦克风
-          href: ./canvas-apps/controls/control-microphone.md
-        - name: PDF 查看器(实验)
-          href: ./canvas-apps/controls/control-pdf-viewer.md
-        - name: 笔输入
-          href: ./canvas-apps/controls/control-pen-input.md
-        - name: 饼图
-          href: ./canvas-apps/controls/control-pie-chart.md
-        - name: Power BI 磁贴
-          href: ./canvas-apps/controls/control-power-bi-tile.md
-        - name: 单选
-          href: ./canvas-apps/controls/control-radio.md
-        - name: 评分
-          href: ./canvas-apps/controls/control-rating.md
-        - name: RTF 编辑器(实验)
-          href: ./canvas-apps/controls/control-richtexteditor.md
-        - name: 屏幕
-          href: ./canvas-apps/controls/control-screen.md
-        - name: 形状
-          href: ./canvas-apps/controls/control-shapes-icons.md
-        - name: 滑块
-          href: ./canvas-apps/controls/control-slider.md
-        - name: 标签
-          href: ./canvas-apps/controls/control-text-box.md
-        - name: 文本输入
-          href: ./canvas-apps/controls/control-text-input.md
-        - name: 计时器
-          href: ./canvas-apps/controls/control-timer.md
-        - name: 切换
-          href: ./canvas-apps/controls/control-toggle.md
-        - name: 视频
-          href: ./canvas-apps/controls/control-audio-video.md
-    - name: 配置应用功能
-      href: ./canvas-apps/working-with-formulas.md
+        - name: 编辑应用程序
+          href: ./canvas-apps/edit-app.md
+        - name: 删除应用程序
+          href: ./canvas-apps/delete-app.md
+        - name: 还原早期版本
+          href: ./canvas-apps/restore-an-app.md
+        - name: 更改应用程序名称和磁贴
+          href: ./canvas-apps/set-name-tile.md
+        - name: 更改屏幕尺寸和方向
+          href: ./canvas-apps/set-aspect-ratio-portrait-landscape.md
+    - name: 自定义 SharePoint 列表表单
+      href: ./canvas-apps/customize-list-form.md
       items:
-      - name: 了解变量
-        href: ./canvas-apps/working-with-variables.md
-      - name: 了解行为公式
-        href: ./canvas-apps/working-with-formulas-in-depth.md
-      - name: 显示日期和时间
-        href: ./canvas-apps/show-text-dates-times.md
-      - name: 创建集合
-        href: ./canvas-apps/create-update-collection.md
-      - name: 显示当前用户
-        href: ./canvas-apps/show-current-user.md
-      - name: 使用查找功能连接列表
-        href: ./canvas-apps/sharepoint-lookup-fields.md
-      - name: 添加流
-        href: ./canvas-apps/using-logic-flows.md
-      - name: 公式参考
-        href: ./canvas-apps/formula-reference.md
-        items:
-        - name: Abs
-          href: ./canvas-apps/functions/function-numericals.md
-        - name: 加速度
-          href: ./canvas-apps/functions/signals.md
-        - name: Acos
-          href: ./canvas-apps/functions/function-trig.md
-        - name: Acot
-          href: ./canvas-apps/functions/function-trig.md
-        - name: AddColumns
-          href: ./canvas-apps/functions/function-table-shaping.md
-        - name: And
-          href: ./canvas-apps/functions/function-logicals.md
-        - name: 应用
-          href: ./canvas-apps/functions/signals.md
-        - name: Asin
-          href: ./canvas-apps/functions/function-trig.md
-        - name: Atan
-          href: ./canvas-apps/functions/function-trig.md
-        - name: Atan2
-          href: ./canvas-apps/functions/function-trig.md
-        - name: Average
-          href: ./canvas-apps/functions/function-aggregates.md
-        - name: Back
-          href: ./canvas-apps/functions/function-navigate.md
-        - name: Blank
-          href: ./canvas-apps/functions/function-isblank-isempty.md
-        - name: 日历
-          href: ./canvas-apps/functions/function-clock-calendar.md
-        - name: Char
-          href: ./canvas-apps/functions/function-char.md
-        - name: Choices
-          href: ./canvas-apps/functions/function-choices.md
-        - name: Clear
-          href: ./canvas-apps/functions/function-clear-collect-clearcollect.md
-        - name: ClearCollect
-          href: ./canvas-apps/functions/function-clear-collect-clearcollect.md
-        - name: 时钟
-          href: ./canvas-apps/functions/function-clock-calendar.md
-        - name: Coalesce
-          href: ./canvas-apps/functions/function-isblank-isempty.md
-        - name: Collect
-          href: ./canvas-apps/functions/function-clear-collect-clearcollect.md
-        - name: 颜色
-          href: ./canvas-apps/functions/function-colors.md
-        - name: ColorFade
-          href: ./canvas-apps/functions/function-colors.md
-        - name: ColorValue
-          href: ./canvas-apps/functions/function-colors.md
-        - name: 指南针
-          href: ./canvas-apps/functions/signals.md
-        - name: Concat
-          href: ./canvas-apps/functions/function-concatenate.md
-        - name: Concatenate
-          href: ./canvas-apps/functions/function-concatenate.md
-        - name: 并发
-          href: ./canvas-apps/functions/function-concurrent.md
-        - name: 连接
-          href: ./canvas-apps/functions/signals.md
-        - name: 计数
-          href: ./canvas-apps/functions/function-table-counts.md
-        - name: Cos
-          href: ./canvas-apps/functions/function-trig.md
-        - name: Cot
-          href: ./canvas-apps/functions/function-trig.md
-        - name: CountA
-          href: ./canvas-apps/functions/function-table-counts.md
-        - name: CountIf
-          href: ./canvas-apps/functions/function-table-counts.md
-        - name: CountRows
-          href: ./canvas-apps/functions/function-table-counts.md
-        - name: DataSourceInfo
-          href: ./canvas-apps/functions/function-datasourceinfo.md
-        - name: Date
-          href: ./canvas-apps/functions/function-date-time.md
-        - name: DateAdd
-          href: ./canvas-apps/functions/function-dateadd-datediff.md
-        - name: DateDiff
-          href: ./canvas-apps/functions/function-dateadd-datediff.md
-        - name: DateTimeValue
-          href: ./canvas-apps/functions/function-datevalue-timevalue.md
-        - name: DateValue
-          href: ./canvas-apps/functions/function-datevalue-timevalue.md
-        - name: 天
-          href: ./canvas-apps/functions/function-datetime-parts.md
-        - name: 默认值
-          href: ./canvas-apps/functions/function-defaults.md
-        - name: 度数
-          href: ./canvas-apps/functions/function-trig.md
-        - name: 禁用
-          href: ./canvas-apps/functions/function-enable-disable.md
-        - name: 非重复值
-          href: ./canvas-apps/functions/function-distinct.md
-        - name: 下载
-          href: ./canvas-apps/functions/function-param.md
-        - name: DropColumns
-          href: ./canvas-apps/functions/function-table-shaping.md
-        - name: EditForm
-          href: ./canvas-apps/functions/function-form.md
-        - name: 启用
-          href: ./canvas-apps/functions/function-enable-disable.md
-        - name: EndsWith
-          href: ./canvas-apps/functions/function-startswith.md
-        - name: 错误
-          href: ./canvas-apps/functions/function-errors.md
-        - name: EncodeUrl
-          href: ./canvas-apps/functions/function-encode-decode.md
-        - name: 退出
-          href: ./canvas-apps/functions/function-exit.md
-        - name: Exp
-          href: ./canvas-apps/functions/function-numericals.md
-        - name: 筛选
-          href: ./canvas-apps/functions/function-filter-lookup.md
-        - name: 查找
-          href: ./canvas-apps/functions/function-find.md
-        - name: 第一个
-          href: ./canvas-apps/functions/function-first-last.md
-        - name: FirstN
-          href: ./canvas-apps/functions/function-first-last.md
-        - name: ForAll
-          href: ./canvas-apps/functions/function-forall.md
-        - name: GroupBy
-          href: ./canvas-apps/functions/function-groupby.md
-        - name: GUID
-          href: ./canvas-apps/functions/function-guid.md
-        - name: HashTags
-          href: ./canvas-apps/functions/function-hashtags.md
-        - name: 小时
-          href: ./canvas-apps/functions/function-datetime-parts.md
-        - name: If
-          href: ./canvas-apps/functions/function-if.md
-        - name: IfError
-          href: ./canvas-apps/functions/function-iferror.md
-        - name: IsBlank
-          href: ./canvas-apps/functions/function-isblank-isempty.md
-        - name: IsEmpty
-          href: ./canvas-apps/functions/function-isblank-isempty.md
-        - name: IsMatch
-          href: ./canvas-apps/functions/function-ismatch.md
-        - name: IsNumeric
-          href: ./canvas-apps/functions/function-isnumeric.md
-        - name: IsToday
-          href: ./canvas-apps/functions/function-now-today-istoday.md
-        - name: 语言
-          href: ./canvas-apps/functions/function-language.md
-        - name: Last
-          href: ./canvas-apps/functions/function-first-last.md
-        - name: LastN
-          href: ./canvas-apps/functions/function-first-last.md
-        - name: 启动
-          href: ./canvas-apps/functions/function-param.md
-        - name: 左
-          href: ./canvas-apps/functions/function-left-mid-right.md
-        - name: Len
-          href: ./canvas-apps/functions/function-len.md
-        - name: Ln
-          href: ./canvas-apps/functions/function-numericals.md
-        - name: LoadData
-          href: ./canvas-apps/functions/function-savedata-loaddata.md
-        - name: 位置
-          href: ./canvas-apps/functions/signals.md
-        - name: LookUp
-          href: ./canvas-apps/functions/function-filter-lookup.md
-        - name: Lower
-          href: ./canvas-apps/functions/function-lower-upper-proper.md
-        - name: 最多
-          href: ./canvas-apps/functions/function-aggregates.md
-        - name: Mid
-          href: ./canvas-apps/functions/function-left-mid-right.md
-        - name: Min
-          href: ./canvas-apps/functions/function-aggregates.md
-        - name: 分钟
-          href: ./canvas-apps/functions/function-datetime-parts.md
-        - name: Mod
-          href: ./canvas-apps/functions/function-mod.md
-        - name: 月
-          href: ./canvas-apps/functions/function-datetime-parts.md
-        - name: Navigate
-          href: ./canvas-apps/functions/function-navigate.md
-        - name: NewForm
-          href: ./canvas-apps/functions/function-form.md
-        - name: 否
-          href: ./canvas-apps/functions/function-logicals.md
-        - name: 通知
-          href: ./canvas-apps/functions/function-showerror.md
-        - name: 现在
-          href: ./canvas-apps/functions/function-now-today-istoday.md
-        - name: 运算符
-          href: ./canvas-apps/functions/operators.md
-        - name: 或
-          href: ./canvas-apps/functions/function-logicals.md
-        - name: Param
-          href: ./canvas-apps/functions/function-param.md
-        - name: Patch
-          href: ./canvas-apps/functions/function-patch.md
-        - name: Pi
-          href: ./canvas-apps/functions/function-trig.md
-        - name: PlainText
-          href: ./canvas-apps/functions/function-encode-decode.md
-        - name: Power
-          href: ./canvas-apps/functions/function-numericals.md
-        - name: Proper
-          href: ./canvas-apps/functions/function-lower-upper-proper.md
-        - name: Radians
-          href: ./canvas-apps/functions/function-trig.md
-        - name: Rand
-          href: ./canvas-apps/functions/function-rand.md
-        - name: 刷新
-          href: ./canvas-apps/functions/function-refresh.md
-        - name: Remove
-          href: ./canvas-apps/functions/function-remove-removeif.md
-        - name: RemoveIf
-          href: ./canvas-apps/functions/function-remove-removeif.md
-        - name: RenameColumns
-          href: ./canvas-apps/functions/function-table-shaping.md
-        - name: Replace
-          href: ./canvas-apps/functions/function-replace-substitute.md
-        - name: Reset
-          href: ./canvas-apps/functions/function-reset.md
-        - name: ResetForm
-          href: ./canvas-apps/functions/function-form.md
-        - name: Revert
-          href: ./canvas-apps/functions/function-revert.md
-        - name: RGBA
-          href: ./canvas-apps/functions/function-colors.md
-        - name: Right
-          href: ./canvas-apps/functions/function-left-mid-right.md
-        - name: Round
-          href: ./canvas-apps/functions/function-round.md
-        - name: RoundDown
-          href: ./canvas-apps/functions/function-round.md
-        - name: Round
-          href: ./canvas-apps/functions/function-round.md
-        - name: SaveData
-          href: ./canvas-apps/functions/function-savedata-loaddata.md
-        - name: 搜索
-          href: ./canvas-apps/functions/function-filter-lookup.md
-        - name: Second
-          href: ./canvas-apps/functions/function-datetime-parts.md
-        - name: Select
-          href: ./canvas-apps/functions/function-select.md
-        - name: Set
-          href: ./canvas-apps/functions/function-set.md
-        - name: ShowColumns
-          href: ./canvas-apps/functions/function-table-shaping.md
-        - name: Shuffle
-          href: ./canvas-apps/functions/function-shuffle.md
-        - name: Sin
-          href: ./canvas-apps/functions/function-trig.md
-        - name: 排序
-          href: ./canvas-apps/functions/function-sort.md
-        - name: SortByColumns
-          href: ./canvas-apps/functions/function-sort.md
-        - name: Split
-          href: ./canvas-apps/functions/function-split.md
-        - name: Sqrt
-          href: ./canvas-apps/functions/function-numericals.md
-        - name: StartsWith
-          href: ./canvas-apps/functions/function-startswith.md
-        - name: StdevP
-          href: ./canvas-apps/functions/function-aggregates.md
-        - name: Substitute
-          href: ./canvas-apps/functions/function-replace-substitute.md
-        - name: SubmitForm
-          href: ./canvas-apps/functions/function-form.md
-        - name: Sum
-          href: ./canvas-apps/functions/function-aggregates.md
-        - name: Switch
-          href: ./canvas-apps/functions/function-if.md
-        - name: 表
-          href: ./canvas-apps/functions/function-table.md
-        - name: Tan
-          href: ./canvas-apps/functions/function-trig.md
-        - name: 文本
-          href: ./canvas-apps/functions/function-text.md
-        - name: 时间
-          href: ./canvas-apps/functions/function-date-time.md
-        - name: TimeValue
-          href: ./canvas-apps/functions/function-datevalue-timevalue.md
-        - name: TimeZoneOffset
-          href: ./canvas-apps/functions/function-dateadd-datediff.md
-        - name: Today
-          href: ./canvas-apps/functions/function-now-today-istoday.md
-        - name: Trim
-          href: ./canvas-apps/functions/function-trim.md
-        - name: TrimEnds
-          href: ./canvas-apps/functions/function-trim.md
-        - name: Ungroup
-          href: ./canvas-apps/functions/function-groupby.md
-        - name: 更新
-          href: ./canvas-apps/functions/function-update-updateif.md
-        - name: UpdateContext
-          href: ./canvas-apps/functions/function-updatecontext.md
-        - name: UpdateIf
-          href: ./canvas-apps/functions/function-update-updateif.md
-        - name: Upper
-          href: ./canvas-apps/functions/function-lower-upper-proper.md
-        - name: 用户
-          href: ./canvas-apps/functions/function-user.md
-        - name: 验证
-          href: ./canvas-apps/functions/function-validate.md
-        - name: 值
-          href: ./canvas-apps/functions/function-value.md
-        - name: VarP
-          href: ./canvas-apps/functions/function-aggregates.md
-        - name: ViewForm
-          href: ./canvas-apps/functions/function-form.md
-        - name: 工作日
-          href: ./canvas-apps/functions/function-datetime-parts.md
-        - name: 年
-          href: ./canvas-apps/functions/function-datetime-parts.md
-    - name: 构建全局应用
-      href: ./canvas-apps/global-apps.md
-    - name: 使应用可访问
-      href: ./canvas-apps/accessible-apps.md
+        - name: 了解 SharePoint 表单集成
+          href: ./canvas-apps/sharepoint-form-integration.md
+    - name: 与其他技术集成
       items:
-      - name: 查找辅助功能问题
-        href: ./canvas-apps/accessibility-checker.md
-      - name: 对辅助功能使用颜色
-        href: ./canvas-apps/accessible-apps-color.md
-    - name: 试验功能和预览功能
-      href: ./canvas-apps/working-with-experimental.md
-  - name: 保存并发布应用
-    href: ./canvas-apps/save-publish-app.md
-  - name: 共享应用
-    href: ./canvas-apps/share-app.md
-    items:
-    - name: 共享 Excel 数据
-      href: ./canvas-apps/share-app-data.md
-    - name: 共享应用资源
-      href: ./canvas-apps/share-app-resources.md
-    - name: 在 Power BI 中嵌入应用
-      href: ./canvas-apps/embed-powerapps-powerbi.md
-  - name: 管理应用
-    items:
-    - name: 编辑应用
-      href: ./canvas-apps/edit-app.md
-    - name: 删除应用
-      href: ./canvas-apps/delete-app.md
-    - name: 还原到之前的版本
-      href: ./canvas-apps/restore-an-app.md
-    - name: 更改应用名称和磁贴
-      href: ./canvas-apps/set-name-tile.md
-    - name: 更改屏幕的大小和方向
-      href: ./canvas-apps/set-aspect-ratio-portrait-landscape.md
-  - name: 自定义 SharePoint 列表窗体
-    href: ./canvas-apps/customize-list-form.md
-    items:
-    - name: 了解 SharePoint 窗体集成
-      href: ./canvas-apps/sharepoint-form-integration.md
-  - name: 与其他技术集成
-    items:
-    - name: SharePoint Online
+        - name: SharePoint Online
+          items:
+            - name: SharePoint Online 集成概述
+              href: ./canvas-apps/sharepoint-scenario-intro.md
+            - name: 设置 SharePoint Online 列表
+              href: ./canvas-apps/sharepoint-scenario-setup.md
+            - name: 生成应用程序
+              href: ./canvas-apps/sharepoint-scenario-generate-app.md
+            - name: 为审批创建流
+              href: ./canvas-apps/sharepoint-scenario-approval-flow.md
+            - name: 从头开始创建应用程序
+              href: ./canvas-apps/sharepoint-scenario-build-app.md
+            - name: 创建 Power BI 报表
+              href: ./canvas-apps/sharepoint-scenario-build-report.md
+            - name: 发布 Power BI 报表
+              href: ./canvas-apps/sharepoint-scenario-publish-report.md
+            - name: 嵌入 Power BI 报表
+              href: ./canvas-apps/sharepoint-scenario-embed-report.md
+            - name: 为警报创建流
+              href: ./canvas-apps/sharepoint-scenario-alerts-flow.md
+            - name: 演练完整方案
+              href: ./canvas-apps/sharepoint-scenario-summary.md
+        - name: 认知服务
+          href: ./canvas-apps/cognitive-services-api.md
+        - name: 将 InfoPath 表单转换为 PowerApps
+          href: ./canvas-apps/transform-infopath.md
+    - name: 面向开发人员
+      href: ./canvas-apps/dev-enterprise-intro.md
       items:
-      - name: SharePoint Online 集成概述
-        href: ./canvas-apps/sharepoint-scenario-intro.md
-      - name: 设置 SharePoint Online 列表
-        href: ./canvas-apps/sharepoint-scenario-setup.md
-      - name: 生成应用
-        href: ./canvas-apps/sharepoint-scenario-generate-app.md
-      - name: 创建审批流
-        href: ./canvas-apps/sharepoint-scenario-approval-flow.md
-      - name: 从头开始创建应用
-        href: ./canvas-apps/sharepoint-scenario-build-app.md
-      - name: 创建 Power BI 报表
-        href: ./canvas-apps/sharepoint-scenario-build-report.md
-      - name: 发布 Power BI 报表
-        href: ./canvas-apps/sharepoint-scenario-publish-report.md
-      - name: 嵌入 Power BI 报表
-        href: ./canvas-apps/sharepoint-scenario-embed-report.md
-      - name: 创建警报流
-        href: ./canvas-apps/sharepoint-scenario-alerts-flow.md
-      - name: 浏览已完成方案
-        href: ./canvas-apps/sharepoint-scenario-summary.md
-    - name: 认知服务
-      href: ./canvas-apps/cognitive-services-api.md
-    - name: 将 InfoPath 表单转换为 PowerApps
-      href: ./canvas-apps/transform-infopath.md
-  - name: 面向开发人员
-    href: ./canvas-apps/dev-enterprise-intro.md
-    items:
-    - name: 生成并认证自定义连接器
-      href: ./canvas-apps/register-custom-api.md
-    - name: 集成网站和其他技术
-      href: ./canvas-apps/embed-apps-dev.md
-    - name: 开发可脱机使用的应用
-      href: ./canvas-apps/offline-apps.md
-    - name: 让客户体验你的应用
-      href: ./canvas-apps/dev-appsource-test-drive.md
-- name: 模型驱动应用
+        - name: 构建并验证自定义连接器
+          href: ./canvas-apps/register-custom-api.md
+        - name: 与网站和其他技术集成
+          href: ./canvas-apps/embed-apps-dev.md
+        - name: 开发可脱机的应用程序
+          href: ./canvas-apps/offline-apps.md
+        - name: 允许客户测试运行应用程序
+          href: ./canvas-apps/dev-appsource-test-drive.md
+- name: 模型驱动的应用程序
   href: ./model-driven-apps/model-driven-app-overview.md
   items:
-  - name: 探索示例应用
-    href: ./model-driven-apps/overview-model-driven-samples.md
-  - name: 创建第一个应用
-    href: ./model-driven-apps/build-first-model-driven-app.md
-  - name: 设计和生成应用
-    items:
-    - name: 了解模型驱动应用的组件
-      href: ./model-driven-apps/model-driven-app-components.md
-    - name: 定义应用的数据
-      href: ./model-driven-apps/define-data-model-driven-app.md
+    - name: 浏览示例应用程序
+      href: ./model-driven-apps/overview-model-driven-samples.md
+    - name: 创建第一个应用程序
+      href: ./model-driven-apps/build-first-model-driven-app.md
+    - name: 设计和构建应用程序
       items:
-      - name: 通用字段属性
-        href: ./model-driven-apps/common-field-properties-legacy.md
-      - name: 特殊字段属性概述
-        href: ./model-driven-apps/special-field-properties-legacy.md
-      - name: 翻译可本地化文本
-        href: ./model-driven-apps/translate-localizable-text.md
-    - name: 设计界面
+        - name: 了解模型驱动的应用程序组件
+          href: ./model-driven-apps/model-driven-app-components.md
+        - name: 定义应用程序的数据
+          href: ./model-driven-apps/define-data-model-driven-app.md
+          items:
+            - name: 常见字段属性
+              href: ./model-driven-apps/common-field-properties-legacy.md
+            - name: 特殊字段属性概述
+              href: ./model-driven-apps/special-field-properties-legacy.md
+            - name: 翻译可本地化的文本
+              href: ./model-driven-apps/translate-localizable-text.md
+        - name: 设计界面
+          items:
+            - name: 使用应用程序设计器构建应用程序
+              href: ./model-driven-apps/design-custom-business-apps-using-app-designer.md
+              items:
+                - name: 创建应用程序
+                  href: ./model-driven-apps/create-edit-app.md
+                - name: 为应用程序创建站点地图
+                  href: ./model-driven-apps/create-site-map-app.md
+                - name: 添加或编辑应用程序组件
+                  href: ./model-driven-apps/add-edit-app-components.md
+            - name: 使用窗体
+              href: ./model-driven-apps/create-design-forms.md
+              items:
+                - name: 窗体类型
+                  href: ./model-driven-apps/types-forms.md
+                  items:
+                    - name: 创建或编辑主窗体
+                      href: ./model-driven-apps/create-edit-main-forms.md
+                    - name: 创建或编辑快速创建窗体
+                      href: ./model-driven-apps/create-edit-quick-create-forms.md
+                    - name: 创建快速视图窗体
+                      href: ./model-driven-apps/create-edit-quick-view-forms.md
+                - name: 表单编辑器概述
+                  href: ./model-driven-apps/form-editor-user-interface-legacy.md
+                  items:
+                    - name: 窗体属性概述
+                      href: ./model-driven-apps/form-properties-legacy.md
+                    - name: 子网格属性概述
+                      href: ./model-driven-apps/sub-grid-properties-legacy.md
+                    - name: 选项卡属性概述
+                      href: ./model-driven-apps/tab-properties-legacy.md
+                - name: 主窗体的设计注意事项
+                  href: ./model-driven-apps/design-considerations-main-forms.md
+                - name: 主窗体的显示方式
+                  href: ./model-driven-apps/main-form-presentations.md
+                - name: 控制对窗体的访问
+                  href: ./model-driven-apps/control-access-forms.md
+                - name: 向窗体中添加字段
+                  href: ./model-driven-apps/add-field-form.md
+                - name: 显示或隐藏窗体元素
+                  href: ./model-driven-apps/visibility-options-legacy.md
+                - name: 更改窗体内的导航
+                  href: ./model-driven-apps/use-the-form-editor-legacy.md
+                  items:
+                    - name: 为相关实体添加窗体导航
+                      href: ./model-driven-apps/add-edit-form-navigation-related-entities.md
+                - name: 操作方法指南：窗体
+                  items:
+                    - name: 如何使用主窗体及其组件
+                      href: ./model-driven-apps/use-main-form-and-components.md
+                    - name: 如何打开表单编辑器
+                      href: ./model-driven-apps/open-form-editor.md
+                    - name: 如何向窗体添加 iFrame
+                      href: ./model-driven-apps/iframe-properties-legacy.md
+                    - name: 如何优化窗体性能
+                      href: ./model-driven-apps/optimize-form-performance.md
+                    - name: 如何在窗体中使用部分
+                      href: ./model-driven-apps/section-properties-legacy.md
+                    - name: 如何在窗体中配置 Bing 映射
+                      href: ./model-driven-apps/configure-bing-maps-legacy.md
+                    - name: 如何指定窗体顺序
+                      href: ./model-driven-apps/assign-form-order.md
+                    - name: 如何在窗体中配置事件处理程序
+                      href: ./model-driven-apps/configure-event-handlers-legacy.md
+                    - name: 如何在窗体中禁用自动保存
+                      href: ./model-driven-apps/manage-auto-save.md
+            - name: 使用视图
+              href: ./model-driven-apps/create-edit-views.md
+              items:
+                - name: 创建或编辑视图
+                  href: ./model-driven-apps/create-and-edit-views.md
+                - name: 访问视图定义
+                  href: ./model-driven-apps/accessing-view-definitions.md
+                - name: 创建和编辑视图
+                  href: ./model-driven-apps/create-edit-views-app-designer.md
+                - name: 选择和配置视图中的列
+                  href: ./model-driven-apps/choose-and-configure-columns.md
+                - name: 操作方法指南：视图
+                  items:
+                    - name: 如何使网格可编辑
+                      href: ./model-driven-apps/make-grids-lists-editable-custom-control.md
+                    - name: 如何为视图中的记录排序
+                      href: ./model-driven-apps/configure-sorting.md
+                    - name: 如何编辑筛选条件和排序顺序
+                      href: ./model-driven-apps/edit-filter-criteria.md
+                    - name: 如何设置视图的托管属性
+                      href: ./model-driven-apps/managed-properties-views.md
+                    - name: 如何指定默认视图
+                      href: ./model-driven-apps/specify-default-views.md
+                - name: 如何删除或停用视图
+                  href: ./model-driven-apps/remove-views.md
+        - name: 在应用程序中应用业务逻辑
+          href: ./model-driven-apps/guide-staff-through-common-tasks-processes.md
+          items:
+            - name: 创建窗体的业务规则
+              href: ./model-driven-apps/create-business-rules-recommendations-apply-logic-form.md
+        - name: 在应用程序中应用数据可视化
+          items:
+            - name: 创建系统图表
+              href: ./model-driven-apps/create-edit-system-chart.md
+            - name: 创建或编辑仪表板
+              href: ./model-driven-apps/create-edit-dashboards.md
+            - name: 配置交互式体验仪表板
+              href: ./model-driven-apps/configure-interactive-experience-dashboards.md
+            - name: 设置图表或列表的属性
+              href: ./model-driven-apps/set-properties-chart-list-included-dashboard.md
+            - name: 将系统控件用于数据可视化
+              items:
+                - name: 设置注释控件
+                  href: ./model-driven-apps/notes-control-legacy.md
+                - name: 快速视图控件属性
+                  href: ./model-driven-apps/quick-view-control-properties-legacy.md
+                - name: Dynamics 365 for phones 和 Dynamics 365 for tablets 的其他控件
+                  href: ./model-driven-apps/additional-controls-for-dynamics-365-for-phones-and-tablets.md
+                - name: 计时器控件概述
+                  href: ./model-driven-apps/timer-control-legacy.md
+            - name: 将自定义控件用于数据可视化
+              href: ./model-driven-apps/use-custom-controls-data-visualizations.md
+    - name: 验证并发布应用程序
+      href: ./model-driven-apps/validate-app.md
+    - name: 共享应用程序
+      href: ./model-driven-apps/share-model-driven-app.md
+    - name: 管理应用程序
       items:
-      - name: 使用应用程序设计器来生成应用
-        href: ./model-driven-apps/design-custom-business-apps-using-app-designer.md
-        items:
-        - name: 创建应用
-          href: ./model-driven-apps/create-edit-app.md
-        - name: 为应用创建站点地图
-          href: ./model-driven-apps/create-site-map-app.md
-        - name: 添加或编辑应用组件
-          href: ./model-driven-apps/add-edit-app-components.md
-      - name: 使用窗体
-        href: ./model-driven-apps/create-design-forms.md
-        items:
-        - name: 窗体类型
-          href: ./model-driven-apps/types-forms.md
-          items:
-          - name: 创建或编辑主窗体
-            href: ./model-driven-apps/create-edit-main-forms.md
-          - name: 创建或编辑快速创建窗体
-            href: ./model-driven-apps/create-edit-quick-create-forms.md
-          - name: 创建快速视图窗体
-            href: ./model-driven-apps/create-edit-quick-view-forms.md
-        - name: 窗体编辑器概述
-          href: ./model-driven-apps/form-editor-user-interface-legacy.md
-          items:
-          - name: 窗体属性概述
-            href: ./model-driven-apps/form-properties-legacy.md
-          - name: 子网格属性概述
-            href: ./model-driven-apps/sub-grid-properties-legacy.md
-          - name: 选项卡属性概述
-            href: ./model-driven-apps/tab-properties-legacy.md
-        - name: 主窗体的设计注意事项
-          href: ./model-driven-apps/design-considerations-main-forms.md
-        - name: 主窗体的显示方式
-          href: ./model-driven-apps/main-form-presentations.md
-        - name: 控制对窗体的访问
-          href: ./model-driven-apps/control-access-forms.md
-        - name: 向窗体添加字段
-          href: ./model-driven-apps/add-field-form.md
-        - name: 显示或隐藏窗体元素
-          href: ./model-driven-apps/visibility-options-legacy.md
-        - name: 更改窗体中的导航
-          href: ./model-driven-apps/use-the-form-editor-legacy.md
-          items:
-          - name: 添加相关实体的窗体导航
-            href: ./model-driven-apps/add-edit-form-navigation-related-entities.md
-        - name: 操作指南：窗体
-          items:
-          - name: 如何使用主窗体及其组件
-            href: ./model-driven-apps/use-main-form-and-components.md
-          - name: 如何打开窗体编辑器
-            href: ./model-driven-apps/open-form-editor.md
-          - name: 如何将 Iframe 添加到窗体
-            href: ./model-driven-apps/iframe-properties-legacy.md
-          - name: 如何优化窗体的性能
-            href: ./model-driven-apps/optimize-form-performance.md
-          - name: 如何处理与窗体中的各部分
-            href: ./model-driven-apps/section-properties-legacy.md
-          - name: 如何在窗体中配置必应地图
-            href: ./model-driven-apps/configure-bing-maps-legacy.md
-          - name: 如何分配窗体顺序
-            href: ./model-driven-apps/assign-form-order.md
-          - name: 如何在窗体中配置事件处理程序
-            href: ./model-driven-apps/configure-event-handlers-legacy.md
-          - name: 如何在窗体中禁用自动保存
-            href: ./model-driven-apps/manage-auto-save.md
-      - name: 处理视图
-        href: ./model-driven-apps/create-edit-views.md
-        items:
-        - name: 创建或编辑视图
-          href: ./model-driven-apps/create-and-edit-views.md
-        - name: 访问视图定义
-          href: ./model-driven-apps/accessing-view-definitions.md
-        - name: 创建和编辑视图
-          href: ./model-driven-apps/create-edit-views-app-designer.md
-        - name: 选择并配置视图中的列
-          href: ./model-driven-apps/choose-and-configure-columns.md
-        - name: 操作指南：视图
-          items:
-          - name: 如何使网格可编辑
-            href: ./model-driven-apps/make-grids-lists-editable-custom-control.md
-          - name: 如何对视图中的记录进行排序
-            href: ./model-driven-apps/configure-sorting.md
-          - name: 如何编辑筛选器条件和排序顺序
-            href: ./model-driven-apps/edit-filter-criteria.md
-          - name: 如何设置视图的托管属性
-            href: ./model-driven-apps/managed-properties-views.md
-          - name: 如何指定默认视图
-            href: ./model-driven-apps/specify-default-views.md
-        - name: 如何删除或停用视图
-          href: ./model-driven-apps/remove-views.md
-    - name: 在应用中应用业务逻辑
-      href: ./model-driven-apps/guide-staff-through-common-tasks-processes.md
+        - name: 管理应用程序属性
+          href: ./model-driven-apps/manage-app-properties.md
+        - name: 指定统一接口应用程序的属性
+          href: ./model-driven-apps/specify-properties-for-unified-interface-apps.md
+        - name: 删除应用程序
+          href: ./model-driven-apps/delete-model-driven-app.md
+    - name: 高级应用程序制作和自定义
+      href: ./model-driven-apps/advanced-navigation.md
       items:
-      - name: 为窗体创建业务规则
-        href: ./model-driven-apps/create-business-rules-recommendations-apply-logic-form.md
-    - name: 在应用中应用数据可视化效果
-      items:
-      - name: 创建系统图表
-        href: ./model-driven-apps/create-edit-system-chart.md
-      - name: 创建或编辑仪表板
-        href: ./model-driven-apps/create-edit-dashboards.md
-      - name: 配置交互式体验仪表板
-        href: ./model-driven-apps/configure-interactive-experience-dashboards.md
-      - name: 设置图表或列表的属性
-        href: ./model-driven-apps/set-properties-chart-list-included-dashboard.md
-      - name: 使用系统控件进行数据可视化
-        items:
-        - name: 设置“注释”控件
-          href: ./model-driven-apps/notes-control-legacy.md
-        - name: 快速视图控件属性
-          href: ./model-driven-apps/quick-view-control-properties-legacy.md
-        - name: 适用于手机和平板电脑的 Dynamics 365 的附加控件
-          href: ./model-driven-apps/additional-controls-for-dynamics-365-for-phones-and-tablets.md
-        - name: 计时器控件概述
-          href: ./model-driven-apps/timer-control-legacy.md
-      - name: 使用自定义控件进行数据可视化
-        href: ./model-driven-apps/use-custom-controls-data-visualizations.md
-  - name: 验证并发布应用
-    href: ./model-driven-apps/validate-app.md
-  - name: 共享应用
-    href: ./model-driven-apps/share-model-driven-app.md
-  - name: 管理应用
-    items:
-    - name: 管理应用属性
-      href: ./model-driven-apps/manage-app-properties.md
-    - name: 为统一接口应用指定属性
-      href: ./model-driven-apps/specify-properties-for-unified-interface-apps.md
-    - name: 删除应用
-      href: ./model-driven-apps/delete-model-driven-app.md
-  - name: 高级应用的创建和自定义
-    href: ./model-driven-apps/advanced-navigation.md
-    items:
-    - name: 自定义权限
-      href: ./model-driven-apps/privileges-required-customization.md
-    - name: 创建或编辑 Web 资源
-      href: ./model-driven-apps/create-edit-web-resources.md
-    - name: Web 资源属性
-      href: ./model-driven-apps/web-resource-properties-legacy.md
-    - name: 更改自定义实体图标
-      href: ./model-driven-apps/change-custom-entity-icons.md
-    - name: 使用解决方案分发应用
-      href: ./model-driven-apps/distribute-model-driven-app.md
-  - name: PowerApps 应用设计器中的辅助功能
-    href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
-  - name: 面向开发人员
-    href: ../developer/model-driven-apps/TOC.yml
-- name: Common Data Service for Apps
+        - name: 自定义的权限
+          href: ./model-driven-apps/privileges-required-customization.md
+        - name: 创建或编辑 Web 资源
+          href: ./model-driven-apps/create-edit-web-resources.md
+        - name: Web 资源属性
+          href: ./model-driven-apps/web-resource-properties-legacy.md
+        - name: 更改自定义实体图标
+          href: ./model-driven-apps/change-custom-entity-icons.md
+        - name: 使用解决方案分发应用程序
+          href: ./model-driven-apps/distribute-model-driven-app.md
+    - name: PowerApps 应用程序设计器中的辅助功能
+      href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
+    - name: 面向开发人员
+      href: ../developer/model-driven-apps/TOC.yml
+- name: 面向应用程序的 Common Data Service
   href: ./common-data-service/data-platform-intro.md
   items:
-  - name: 使用实体
-    href: ./common-data-service/entity-overview.md
-    items:
-    - name: 创建实体
-      href: ./common-data-service/data-platform-create-entity.md
-    - name: 创建带组件的自定义实体
-      href: ./common-data-service/create-custom-entity.md
-    - name: 使用 Power Query 将数据添加到实体
-      href: ./common-data-service/data-platform-cds-newentity-pq.md
-    - name: 实体和元数据
-      href: ./common-data-service/create-edit-metadata.md
-    - name: 实体类型
-      href: ./common-data-service/types-of-entities.md
-    - name: 创建和编辑实体
-      href: ./common-data-service/create-edit-entities.md
-    - name: 编辑实体
-      href: ./common-data-service/edit-entities.md
-    - name: 创建和编辑虚拟实体
-      href: ./common-data-service/create-edit-virtual-entities.md
-    - name: 虚拟实体 OData v4 数据提供程序
-      href: ./common-data-service/virtual-entity-odata-provider-requirements.md
-    - name: 使用 PowerApps 门户定义替换键
-      href: ./common-data-service/define-alternate-keys-portal.md
-    - name: 使用解决方案资源管理器定义替换键
-      href: ./common-data-service/define-alternate-keys-solution-explorer.md
-    - name: 操作指南：实体
+    - name: 使用实体
+      href: ./common-data-service/entity-overview.md
       items:
-      - name: 如何使用 PowerApps 门户创建实体
-        href: ./common-data-service/create-edit-entities-portal.md
-      - name: 如何使用解决方案资源管理器创建实体
-        href: ./common-data-service/create-edit-entities-solution-explorer.md
-      - name: 如何导入或导出数据
-        href: ./common-data-service/data-platform-import-export.md
-      - name: 如何在 Excel 中打开实体数据
-        href: ./common-data-service/data-platform-excel-addin.md
-      - name: 如何定义替换键
-        href: ./common-data-service/define-alternate-keys-reference-records.md
-      - name: 如何定义状态描述转换
-        href: ./common-data-service/define-status-reason-transitions.md
-      - name: 如何删除自定义实体
-        href: ./common-data-service/data-platform-delete-entity.md
-      - name: 如何显示自定义图标
-        href: ./common-data-service/display-custom-icons-instead.md
-      - name: 如何编辑系统实体消息
-        href: ./common-data-service/edit-system-entity-messages.md
-      - name: 如何配置实体进行反馈/评级
-        href: ./common-data-service/configure-entity-feedback.md
-      - name: Azure Cosmos DB SQL API 数据提供程序
-        href: ./common-data-service/virtual-entity-documentdb-provider-requirements.md
-      - name: 如何使用虚拟实体
-        href: ./common-data-service/virtual-entity-walkthrough-using-odata-provider.md
-  - name: 处理实体关系
-    href: ./common-data-service/relationships-overview.md
-    items:
-    - name: 实体关系概述
-      href: ./common-data-service/create-edit-entity-relationships.md
-    - name: 创建一对多实体关系概述
-      href: ./common-data-service/create-edit-1n-relationships.md
-    - name: 创建多对多实体关系概述
-      href: ./common-data-service/create-edit-nn-relationships.md
-    - name: 创建实体关系
-      href: ./common-data-service/data-platform-entity-lookup.md
-    - name: 创建一对多实体关系
-      href: ./common-data-service/create-edit-1n-relationships-portal.md
-    - name: 使用解决方案浏览器创建一对多实体关系
-      href: ./common-data-service/create-edit-1n-relationships-solution-explorer.md
-    - name: 使用 PowerApps 门户创建多对多实体关系
-      href: ./common-data-service/create-edit-nn-relationships-portal.md
-    - name: 设置实体关系的托管属性
-      href: ./common-data-service/set-managed-properties-relationships.md
-    - name: 可视化分层数据
-      href: ./common-data-service/visualize-hierarchical-data.md
-    - name: 定义和查询按层次结构相关的数据
-      href: ./common-data-service/define-query-hierarchical-data.md
-    - name: 配置连接角色
-      href: ./common-data-service/configure-connection-roles.md
-    - name: 操作指南：关系
+        - name: 创建实体
+          href: ./common-data-service/data-platform-create-entity.md
+        - name: 创建具有组件的自定义实体
+          href: ./common-data-service/create-custom-entity.md
+        - name: 使用 Power Query 将数据添加到实体
+          href: ./common-data-service/data-platform-cds-newentity-pq.md
+        - name: 实体和元数据
+          href: ./common-data-service/create-edit-metadata.md
+        - name: 实体类型
+          href: ./common-data-service/types-of-entities.md
+        - name: 创建和编辑实体
+          href: ./common-data-service/create-edit-entities.md
+        - name: 编辑实体
+          href: ./common-data-service/edit-entities.md
+        - name: 创建和编辑虚拟实体
+          href: ./common-data-service/create-edit-virtual-entities.md
+        - name: 虚拟实体 OData v4 数据提供程序
+          href: ./common-data-service/virtual-entity-odata-provider-requirements.md
+        - name: 使用 PowerApps 门户定义备用键
+          href: ./common-data-service/define-alternate-keys-portal.md
+        - name: 使用解决方案资源管理器定义备用键
+          href: ./common-data-service/define-alternate-keys-solution-explorer.md
+        - name: 操作方法指南：实体
+          items:
+            - name: 如何使用 PowerApps 门户创建实体
+              href: ./common-data-service/create-edit-entities-portal.md
+            - name: 如何使用解决方案资源管理器创建实体
+              href: ./common-data-service/create-edit-entities-solution-explorer.md
+            - name: 如何导入或导出数据
+              href: ./common-data-service/data-platform-import-export.md
+            - name: 如何在 Excel 中打开实体数据
+              href: ./common-data-service/data-platform-excel-addin.md
+            - name: 如何定义备用键
+              href: ./common-data-service/define-alternate-keys-reference-records.md
+            - name: 如何定义状态描述转换
+              href: ./common-data-service/define-status-reason-transitions.md
+            - name: 如何删除自定义实体
+              href: ./common-data-service/data-platform-delete-entity.md
+            - name: 如何显示自定义图标
+              href: ./common-data-service/display-custom-icons-instead.md
+            - name: 如何编辑系统实体消息
+              href: ./common-data-service/edit-system-entity-messages.md
+            - name: 如何为反馈/评级配置实体
+              href: ./common-data-service/configure-entity-feedback.md
+            - name: Azure Cosmos DB SQL API 数据提供程序
+              href: ./common-data-service/virtual-entity-documentdb-provider-requirements.md
+            - name: 如何使用虚拟实体
+              href: ./common-data-service/virtual-entity-walkthrough-using-odata-provider.md
+    - name: 使用实体关系
+      href: ./common-data-service/relationships-overview.md
       items:
-      - name: 如何使用 PowerApps 门户创建多对多关系
-        href: ./common-data-service/create-edit-nn-relationships-portal.md
-      - name: 如何使用 PowerApps 解决方案浏览器创建多对多关系
-        href: ./common-data-service/create-edit-nn-relationships-solution-explorer.md
-      - name: 如何设置关系的托管属性
-        href: ./common-data-service/set-managed-properties-relationships.md
-      - name: 如何查询和可视化分层相关数据
-        href: ./common-data-service/query-visualize-hierarchical-data.md
-      - name: 如何定义和查询按层次结构相关的数据
-        href: ./common-data-service/define-query-hierarchical-data.md
-      - name: 如何配置连接角色
-        href: ./common-data-service/configure-connection-roles.md
-  - name: 使用字段
-    href: ./common-data-service/fields-overview.md
-    items:
-    - name: 字段类型
-      href: ./common-data-service/types-of-fields.md
-    - name: 全局选项集概述
-      href: ./common-data-service/create-edit-global-option-sets.md
-    - name: 设置字段的托管属性
-      href: ./common-data-service/set-managed-properties-for-field.md
-    - name: “日期和时间”字段的行为和格式
-      href: ./common-data-service/behavior-format-date-time-field.md
-    - name: 操作指南：字段
+        - name: 实体关系概述
+          href: ./common-data-service/create-edit-entity-relationships.md
+        - name: 创建一对多实体关系概述
+          href: ./common-data-service/create-edit-1n-relationships.md
+        - name: 创建多对多实体关系概述
+          href: ./common-data-service/create-edit-nn-relationships.md
+        - name: 创建实体关系
+          href: ./common-data-service/data-platform-entity-lookup.md
+        - name: 创建一对多实体关系
+          href: ./common-data-service/create-edit-1n-relationships-portal.md
+        - name: 使用解决方案资源管理器创建一对多实体关系
+          href: ./common-data-service/create-edit-1n-relationships-solution-explorer.md
+        - name: 使用 PowerApps 门户创建多对多实体关系
+          href: ./common-data-service/create-edit-nn-relationships-portal.md
+        - name: 设置实体关系的托管属性
+          href: ./common-data-service/set-managed-properties-relationships.md
+        - name: 可视化分层数据
+          href: ./common-data-service/visualize-hierarchical-data.md
+        - name: 定义和按层次结构查询相关数据
+          href: ./common-data-service/define-query-hierarchical-data.md
+        - name: 配置连接角色
+          href: ./common-data-service/configure-connection-roles.md
+        - name: 操作方法指南：关系
+          items:
+            - name: 如何使用 PowerApps 门户创建多对多关系
+              href: ./common-data-service/create-edit-nn-relationships-portal.md
+            - name: 如何使用 PowerApps 解决方案资源管理器创建多对多关系
+              href: ./common-data-service/create-edit-nn-relationships-solution-explorer.md
+            - name: 如何设置关系的托管属性
+              href: ./common-data-service/set-managed-properties-relationships.md
+            - name: 如何查询和按层次结构可视化相关数据
+              href: ./common-data-service/query-visualize-hierarchical-data.md
+            - name: 如何定义和按层次结构查询相关数据
+              href: ./common-data-service/define-query-hierarchical-data.md
+            - name: 如何配置连接角色
+              href: ./common-data-service/configure-connection-roles.md
+    - name: 使用字段
+      href: ./common-data-service/fields-overview.md
       items:
-      - name: 如何创建字段
-        href: ./common-data-service/create-edit-fields.md
-      - name: 如何管理字段
-        href: ./common-data-service/data-platform-manage-fields.md
-      - name: 如何使用 PowerApps 门户创建字段
-        href: ./common-data-service/create-edit-field-portal.md
-      - name: 如何使用 PowerApps 解决方案浏览器创建字段
-        href: ./common-data-service/create-edit-field-solution-explorer.md
-      - name: 如何使用 PowerApps 门户创建选项集
-        href: ./common-data-service/custom-picklists.md
-      - name: 如何使用解决方案资源管理器创建全局选项集
-        href: ./common-data-service/create-edit-global-option-sets-solution-explorer.md
-      - name: 如何定义计算字段
-        href: ./common-data-service/define-calculated-fields.md
-      - name: 如何定义汇总字段
-        href: ./common-data-service/define-rollup-fields.md
-      - name: 如何映射实体字段
-        href: ./common-data-service/map-entity-fields.md
-      - name: 如何删除字段
-        href: ./common-data-service/delete-fields.md
-  - name: 应用业务逻辑
-    href: ./common-data-service/cds-processes.md
-    items:
-    - name: 为实体创建业务规则
-      href: ./common-data-service/data-platform-create-business-rule.md
-  - name: 使用解决方案
-    href: ./common-data-service/solutions-overview.md
-    items:
-    - name: 使用解决方案资源管理器
-      href: ./common-data-service/use-solution-explorer.md
-    - name: 使用 Common Data Service 默认解决方案
-      href: ./common-data-service/use-solutions-for-your-customizations.md
-    - name: 导入、更新和导出解决方案
-      href: ./common-data-service/import-update-export-solutions.md
-    - name: 导航到特定解决方案
-      href: ./common-data-service/navigate-specific-solution.md
-    - name: 使用分段解决方案
-      href: ./common-data-service/use-segmented-solutions-patches-simplify-updates.md
-    - name: 更改解决方案发布者前缀
-      href: ./common-data-service/change-solution-publisher-prefix.md
-    - name: 设置元数据中的托管​​属性
-      href: ./common-data-service/set-managed-properties-metadata.md
-    - name: 发布更改
-      href: ./common-data-service/publish-changes-for-use-customer-service-hub.md
-  - name: 实体的许可证要求
-    href: ./common-data-service/data-platform-entity-licenses.md
-    items:
-    - name: 复杂实体和许可
-      href: ./common-data-service/data-platform-complex-entities.md
-    - name: 要求 Dynamics 365 许可证的受限实体
-      href: ./common-data-service/data-platform-restricted-entities.md
-  - name: 创建 Power BI 报表
-    href: ./common-data-service/data-platform-powerbi-connector.md
-  - name: 创建主题
-    href: ./common-data-service/change-color-scheme-add-logo-match-organizations-brand.md
-  - name: 翻译自定义的实体和字段文本
-    href: ./common-data-service/export-customized-entity-field-text-translation.md
-  - name: 将已翻译的实体和字段文本导入应用
-    href: ./common-data-service/import-translated-entity-field-text.md
-  - name: 面向开发人员
-    href: ../developer/common-data-service/TOC.yml
-- name: 常见数据模型
+        - name: 字段类型
+          href: ./common-data-service/types-of-fields.md
+        - name: 全局选项集概述
+          href: ./common-data-service/create-edit-global-option-sets.md
+        - name: 设置字段的托管属性
+          href: ./common-data-service/set-managed-properties-for-field.md
+        - name: “日期和时间”字段的行为和格式
+          href: ./common-data-service/behavior-format-date-time-field.md
+        - name: 操作方法指南：字段
+          items:
+            - name: 如何创建字段
+              href: ./common-data-service/create-edit-fields.md
+            - name: 如何管理字段
+              href: ./common-data-service/data-platform-manage-fields.md
+            - name: 如何使用 PowerApps 门户创建字段
+              href: ./common-data-service/create-edit-field-portal.md
+            - name: 如何使用 PowerApps 解决方案资源管理器创建字段
+              href: ./common-data-service/create-edit-field-solution-explorer.md
+            - name: 如何使用 PowerApps 门户创建选项集
+              href: ./common-data-service/custom-picklists.md
+            - name: 如何使用解决方案资源管理器创建全局选项集
+              href: ./common-data-service/create-edit-global-option-sets-solution-explorer.md
+            - name: 如何定义计算字段
+              href: ./common-data-service/define-calculated-fields.md
+            - name: 如何定义汇总字段
+              href: ./common-data-service/define-rollup-fields.md
+            - name: 如何映射实体字段
+              href: ./common-data-service/map-entity-fields.md
+            - name: 如何删除字段
+              href: ./common-data-service/delete-fields.md
+    - name: 应用业务逻辑
+      href: ./common-data-service/cds-processes.md
+      items:
+        - name: 创建实体的业务规则
+          href: ./common-data-service/data-platform-create-business-rule.md
+    - name: 使用解决方案
+      href: ./common-data-service/solutions-overview.md
+      items:
+        - name: 使用解决方案资源管理器
+          href: ./common-data-service/use-solution-explorer.md
+        - name: 使用 Common Data Services 默认解决方案
+          href: ./common-data-service/use-solutions-for-your-customizations.md
+        - name: 导入、更新和导出解决方案
+          href: ./common-data-service/import-update-export-solutions.md
+        - name: 导航到特定解决方案
+          href: ./common-data-service/navigate-specific-solution.md
+        - name: 使用细分解决方案
+          href: ./common-data-service/use-segmented-solutions-patches-simplify-updates.md
+        - name: 更改解决方案发布商前缀
+          href: ./common-data-service/change-solution-publisher-prefix.md
+        - name: 设置元数据中的托管属性
+          href: ./common-data-service/set-managed-properties-metadata.md
+        - name: 发布更改
+          href: ./common-data-service/publish-changes-for-use-customer-service-hub.md
+    - name: 实体的许可证要求
+      href: ./common-data-service/data-platform-entity-licenses.md
+      items:
+        - name: 复杂的实体和许可
+          href: ./common-data-service/data-platform-complex-entities.md
+        - name: 需要 Dynamics 365 许可证的受限实体
+          href: ./common-data-service/data-platform-restricted-entities.md
+    - name: 创建 Power BI 报表
+      href: ./common-data-service/data-platform-powerbi-connector.md
+    - name: 创建主题
+      href: ./common-data-service/change-color-scheme-add-logo-match-organizations-brand.md
+    - name: 翻译自定义实体和字段文本
+      href: ./common-data-service/export-customized-entity-field-text-translation.md
+    - name: 将经过翻译的实体和字段文本导入应用程序
+      href: ./common-data-service/import-translated-entity-field-text.md
+    - name: 面向开发人员
+      href: ../developer/common-data-service/TOC.yml
+- name: 通用数据模型
   href: ../common-data-model/overview.md
   items:
-  - name: 如何使用 Common Data Service
-    href: ../common-data-model/use-common-data-model.md
-- name: 相互学习
+    - name: 如何使用通用数据模型
+      href: ../common-data-model/use-common-data-model.md
+- name: 向其他人学习
   items:
-  - name: 网络研讨会
-    href: ./canvas-apps/webinars-listing.md
-  - name: 博客
-    href: https://powerapps.microsoft.com/blog/
-  - name: 论坛
-    href: https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1
-- name: 故障排除
+    - name: 网络研讨会
+      href: ./canvas-apps/webinars-listing.md
+    - name: 博客
+      href: 'https://powerapps.microsoft.com/blog/'
+    - name: 论坛
+      href: 'https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1'
+- name: 疑难解答
   items:
-  - name: 系统要求、限制和配置
-    href: ./canvas-apps/limits-and-config.md
-  - name: 画布应用的性能提示
-    href: ./canvas-apps/performance-tips.md
-  - name: 常见问题和解决方法
-    href: ./canvas-apps/common-issues-and-resolutions.md
-  - name: 获取会话或应用 ID
-    href: ./canvas-apps/get-sessionid.md
-  - name: Power Query 疑难解答
-    href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
-  - name: 支持
-    href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 3fbbedc26086c39f8e42bf14bea969ac9e81614c
-ms.sourcegitcommit: 2bcf40aeaa35420dc43f5803f4e57ff0f6afb57b
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "49454071"
+    - name: 系统要求、限制和配置
+      href: ./canvas-apps/limits-and-config.md
+    - name: 区域应用程序的性能提示
+      href: ./canvas-apps/performance-tips.md
+    - name: 常见问题和解决方法
+      href: ./canvas-apps/common-issues-and-resolutions.md
+    - name: 获取会话或应用程序 ID
+      href: ./canvas-apps/get-sessionid.md
+    - name: Power Query 疑难解答
+      href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
+    - name: 支持
+      href: 'https://powerapps.microsoft.com/support/'
