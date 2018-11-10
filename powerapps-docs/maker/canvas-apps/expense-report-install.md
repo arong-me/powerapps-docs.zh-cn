@@ -44,7 +44,7 @@ ms.locfileid: "44124466"
 
 此列表存储支出报表。
 
-1. 打开 Web 浏览器并导航到 https://portal.office.com。
+1. 打开 Web 浏览器并导航到 [https://portal.office.com](https://portal.office.com)。
 2. 用具有列表创建权限的帐户登录。
 3. 导航到支出列表要驻留的站点集合。
 4. 单击网页右上角的齿轮图标。
@@ -239,7 +239,7 @@ ms.locfileid: "44124466"
 
 ## <a name="import-the-expense-report-powerapp"></a>导入支出报表 PowerApp
 
-1. 在 Web 浏览器中，导航到 https://web.powerapps.com。
+1. 在 Web 浏览器中，导航到 [https://web.powerapps.com](https://web.powerapps.com)。
 2. 使用注册所用的同一凭据登录。
 3. 在左侧菜单中，选择“应用”。 
 4. 单击“导入包(预览)”。

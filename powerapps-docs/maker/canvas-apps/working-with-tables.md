@@ -95,7 +95,7 @@ ms.locfileid: "45640437"
 
 1. 创建适用于手机的空白应用，并添加含有其他控件的垂直[图库](controls/control-gallery.md)控件。
 
-    默认情况下，屏幕显示名为 CustomGallerySample 的表中的占位符文本。 屏幕**[图库](controls/control-gallery.md)** 控件的 **[Items](controls/properties-core.md)** 属性将自动设置为该表。
+    默认情况下，屏幕显示名为 CustomGallerySample 的表中的占位符文本。 屏幕 **[图库](controls/control-gallery.md)** 控件的 **[Items](controls/properties-core.md)** 属性将自动设置为该表。
 
     ![](media/working-with-tables/gallery-items.png)
 
@@ -167,7 +167,7 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 
 选择记录后，可以使用 **.** 运算符从中提取单个字段 。
 
-1. 添加**[标签](controls/control-text-box.md)** 控件，并将其移动到库和按钮下。
+1. 添加 **[标签](controls/control-text-box.md)** 控件，并将其移动到库和按钮下。
 
 1. 将标签的 **[Text](controls/properties-core.md)** 属性设置为以下表达式：<br>
     **"Selected: " & Gallery1.Selected.SampleHeading**
@@ -179,7 +179,7 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 可以使用记录作为相关命名值的通用容器。
 
 * 如果围绕 **[UpdateContext](functions/function-updatecontext.md)** 和 **[Navigate](functions/function-navigate.md)** 函数构建公式，请使用记录来收集想要更新的[上下文变量](working-with-variables.md#create-a-context-variable)。
-* 在**[编辑窗体](controls/control-form-detail.md)** 控件中使用 **[Updates](controls/control-form-detail.md)** 属性可收集用户在窗体中所做的更改。
+* 在 **[编辑窗体](controls/control-form-detail.md)** 控件中使用 **[Updates](controls/control-form-detail.md)** 属性可收集用户在窗体中所做的更改。
 * 使用 **[Patch](functions/function-patch.md)** 函数不仅可以更新数据源，而且还能合并记录。
 
 在这些情况下，记录永远不能是表的一部分。
