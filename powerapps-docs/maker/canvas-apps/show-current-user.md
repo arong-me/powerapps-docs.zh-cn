@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ef38ef00ed72eb59b459d3e9b71a6efbb6568d6b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.sourcegitcommit: c1f58a16f8dcd309a1d5fc4658ca16d82c615994
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
+ms.lasthandoff: 11/22/2018
 ms.locfileid: "42833964"
 ---
 # <a name="show-information-about-a-powerapps-user-in-a-canvas-app"></a>在画布应用中，显示 PowerApps 用户的相关信息
