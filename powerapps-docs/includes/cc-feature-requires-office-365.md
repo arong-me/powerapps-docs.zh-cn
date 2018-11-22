@@ -1,0 +1,1 @@
+该功能要求您具有 Office 365 订阅或订阅一项联机服务（例如 SharePoint Online 或 Exchange Online）。 有关详细信息，请参阅[什么是 Office 365？它与 Dynamics 365（联机）有什么关系？](https://docs.microsoft.com/dynamics365/customer-engagement/admin/what-office-365-how-does-relate)

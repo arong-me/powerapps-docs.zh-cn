@@ -1,0 +1,1 @@
+此解决方案中的功能要求安装 Microsoft Dynamics CRM Online 2016 Update 1。

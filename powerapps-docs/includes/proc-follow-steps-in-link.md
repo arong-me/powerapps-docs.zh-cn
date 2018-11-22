@@ -1,0 +1,1 @@
+请按照[查看用户配置文件](https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile)中的步骤操作。

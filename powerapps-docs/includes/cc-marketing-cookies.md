@@ -1,0 +1,7 @@
+> [!IMPORTANT]
+> 很多国家/地区（包括欧盟）需要您在用户计算机上设置 Cookie 前取得对方同意。 您的组织有责任了解并遵守所在业务市场中的所有相关法律和法规（包括同意设置 Cookie）。 您可以在 [ec.europa.eu/ipg/basics/legal/cookies/](http://ec.europa.eu/ipg/basics/legal/cookies/) 阅读有关欧盟法规的更多信息。 [!INCLUDE[pn-marketing-business-app-module-name](../includes/pn-marketing-business-app-module-name.md)] 使用 Cookie 的方式如下:
+> - Dynamics 365 for Marketing 创建和托管的市场营销页面使用 Cookie 来支持已知联系人的预填充功能，并在任何联系人打开市场营销页面时进行记录。 Dynamics 365 市场营销页面和页面模板没有 Cookie 同意功能，因此，您必须自行添加。 其中一种方法是使用页面设计器的 HTML 编辑器将 JavaScript 添加到页面的 <head> 部分。 您可以开发自己的 JavaScript 或使用一种已提供的免费或授权的解决方案。 您还可以使用市场营销页面的内置隐私声明来宣布您使用 Cookie；但是，这可能无法满足所有管辖区的要求，因为这不会阻止服务器设置 Cookie &mdash; 这只会通知访问者正在使用 Cookie（有关此功能的详细信息，请参阅[配置市场营销页面](../marketing/marketing-settings.md#config-mkt-pages)）。 [!INCLUDE[proc-more-information](../includes/proc-more-information.md)][创建和部署市场营销页面](../marketing/create-deploy-marketing-pages.md)
+> - _网站_功能使用 Cookie 来记录对您放置跟踪脚本的任何网页的访问。 Cookie 与市场营销页面功能结合使用，通过将访问者 ID 与登陆页面的提交信息加以匹配来识别联系人。 如果您的网站已在使用 Cookie 且具有同意功能，那么它很可能包含 Dynamics 365 for Marketing 网站脚本。 但是，如果您的网站没有内置 Cookie 同意功能，则必须在向针对相关国家/地区居民进行推广的网页添加网站脚本之前添加此功能。 [!INCLUDE[proc-more-information](../includes/proc-more-information.md)] [在您的 Internet 市场营销计划中注册联系人的参与信息](../marketing/register-engagement.md)
+> - 活动门户使用会话 Cookie 来支持联系人登录和注册参加活动。 [!INCLUDE[proc-more-information](../includes/proc-more-information.md)][设置活动门户](../marketing/set-up-event-portal.md)
+> 
+> [!INCLUDE[proc-more-information](../includes/proc-more-information.md)] [Dynamics 365 for Marketing 如何使用 Cookie](../marketing/cookies.md)

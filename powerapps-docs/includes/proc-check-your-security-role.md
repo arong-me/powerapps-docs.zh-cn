@@ -1,0 +1,1 @@
+请按照[查看用户配置文件](../basics/view-your-user-profile.md)中的步骤操作。

@@ -1,0 +1,1 @@
+确保您具有 Microsoft Dynamics 365 中的系统管理员安全角色或等效权限。

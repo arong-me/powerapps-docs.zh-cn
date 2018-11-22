@@ -1,0 +1,3 @@
+启用 Social Engagement 以连接至 [Azure 事件中心](https://azure.microsoft.com/documentation/articles/event-hubs-overview/)，即表示您允许社交数据通过自动化规则流入事件中心。 Azure 事件中心会在[预先配置的时间范围](https://azure.microsoft.com/documentation/articles/event-hubs-availability-and-support-faq/)内存储从 Social Engagement 流入的社交数据，任何可以侦听事件中心的应用程序均可访问、存储和/或处理这些数据。  
+  
+ 请注意，从 Social Engagement 发出的社交数据包含有关社交帖子的信息（作者和内容），以及语言、位置、情绪、标签等各种信息。有关发送至事件中心的社交帖子内容的完整信息，请参阅 [JSON 架构定义](http://go.microsoft.com/fwlink/p/?LinkId=786643)。

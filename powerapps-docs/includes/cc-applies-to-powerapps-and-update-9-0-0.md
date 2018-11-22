@@ -1,0 +1,1 @@
+适用于 PowerApps 和 Dynamics 365（联机版），版本 9.x

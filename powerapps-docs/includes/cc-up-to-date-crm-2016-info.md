@@ -1,0 +1,1 @@
+有关 Dynamics 365 的最新兼容性信息，请参阅 [Microsoft Dynamics CRM 2016 的兼容性](https://support.microsoft.com/en-us/kb/3124955)。

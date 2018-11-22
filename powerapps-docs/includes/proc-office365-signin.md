@@ -1,0 +1,1 @@
+浏览找到 [Office 365 管理中心](https://portal.office.com) 并使用 Office 365 全局管理员凭据登录。

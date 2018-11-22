@@ -1,0 +1,1 @@
+在 [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 中，以前的 Dynamics CRM 功能现在属于智能业务应用程序套件。 组成该套件的客户关系管理 (CRM) 部分的应用程序称为“Customer Engagement”，它包含 Sales、Customer Service、Field Service、Project Service Automation 及其相关服务。

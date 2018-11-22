@@ -1,0 +1,1 @@
+如果您指定了 Microsoft 合作伙伴（例如，您在收到合作伙伴的请求或报价后试用或购买 Microsoft Social Engagement，或者您指定合作伙伴协助您使用或管理 Social Engagement），Microsoft 将按照您的指示向该合作伙伴提供您的信息。

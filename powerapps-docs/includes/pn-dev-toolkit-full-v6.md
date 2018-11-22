@@ -1,0 +1,1 @@
+适用于 Microsoft Dynamics CRM 2013 和 Microsoft Dynamics CRM Online 的开发者工具包

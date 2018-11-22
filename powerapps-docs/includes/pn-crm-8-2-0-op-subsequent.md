@@ -1,0 +1,1 @@
+2016 年 12 月 Service Pack for Dynamics 365（本地）

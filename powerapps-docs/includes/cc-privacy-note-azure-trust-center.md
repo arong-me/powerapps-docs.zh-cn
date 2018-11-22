@@ -1,0 +1,1 @@
+**注意：** 有关其他 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 服务/产品的更多信息，请访问 [Microsoft Azure 信任中心](https://azure.microsoft.com/support/trust-center/)。

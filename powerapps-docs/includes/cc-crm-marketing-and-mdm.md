@@ -1,0 +1,1 @@
+此主题适用于 Microsoft Dynamics 365 中的市场营销工作区域。 Dynamics 365 Marketing 工作区域为您的销售人员提供了开展销售驱动型市场营销活动的方法。 如果您将 Microsoft Dynamics Marketing 与 Dynamics 365 搭配使用，则可能需要适用于该产品的类似主题。 Dynamics Marketing 提供一整套的功能、自动化和洞见分析，适用于多级和多渠道市场活动。

@@ -1,0 +1,1 @@
+适用于 Microsoft Dynamics 365 的 2016 年 12 月 Service Pack（本地）

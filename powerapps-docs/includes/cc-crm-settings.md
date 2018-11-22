@@ -1,0 +1,1 @@
+在导航栏上，选择 **Microsoft Dynamics CRM** > **设置**。

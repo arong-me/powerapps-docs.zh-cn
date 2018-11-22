@@ -1,0 +1,1 @@
+CRM Online 2016 更新 1 和 CRM 2016 Service Pack 1（本地）中引入了此功能。

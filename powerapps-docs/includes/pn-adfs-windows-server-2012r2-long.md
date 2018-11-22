@@ -1,0 +1,1 @@
+Windows Server 2012 R2 中的 Active Directory 联合身份验证服务 (AD FS)

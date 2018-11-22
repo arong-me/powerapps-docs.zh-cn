@@ -1,0 +1,2 @@
+Microsoft Social Engagement 使用会话 Cookie 允许用户在各页面之间移动，而无需重新登录每个页面。 如果用户给出指示，我们可以使用 Cookie 来存储凭据，以简化今后会话的身份验证。   
+ 会话 Cookie 是 Microsoft Social Engagement 运行的必要条件；用户无法拒绝这些 Cookie。 不过，注册 Cookie 仅在用户提出请求后才会存储。

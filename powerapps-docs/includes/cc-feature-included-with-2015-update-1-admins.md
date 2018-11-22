@@ -1,0 +1,1 @@
+Dynamics CRM Online 2015 更新 1 和 CRM 2016（本地）引入了此功能。

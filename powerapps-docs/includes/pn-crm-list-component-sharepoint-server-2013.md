@@ -1,0 +1,1 @@
+用于 Microsoft SharePoint Server 2013 的 Microsoft Dynamics CRM 列表组件

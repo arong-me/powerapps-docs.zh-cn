@@ -1,0 +1,1 @@
+Windows 版 Skype

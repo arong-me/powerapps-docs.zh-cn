@@ -1,0 +1,1 @@
+要启用 Engagement 和 Analytics 方案，在某些情况下，Microsoft Social Engagement 需要连接至第三方服务 Twitter 和 Facebook，以便检索社交内容。 在建立上述连接时，这些服务可能会共享某些数据，例如 IP 地址。

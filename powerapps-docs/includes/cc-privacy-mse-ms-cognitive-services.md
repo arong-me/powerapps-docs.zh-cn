@@ -1,0 +1,1 @@
+[!INCLUDE[](pn-social-engagement-long.md)] 会使用 Microsoft 认知服务检测 [!INCLUDE[](tn-twitter.md)] 和 [!INCLUDE[](tn-facebook.md)] 页面中的私人消息内容的语言。 若要检测语言，只需将私人消息的标题和内容发送到 Microsoft 认知服务。 Microsoft 认知服务不会存储私人消息的标题和内容。 查看 [Microsoft 认知服务隐私声明](https://go.microsoft.com/fwlink/p/?linkid=867081)。​

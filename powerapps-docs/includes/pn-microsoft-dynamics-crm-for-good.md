@@ -1,0 +1,1 @@
+适用于 Good 的 Dynamics 365

@@ -1,0 +1,1 @@
+如果用户本地登录到装有 Microsoft Dynamics 365 for Outlook 的设备上，他们可能会访问在本地存储的 Dynamics 365 数据。 运行 Dynamics 365 for Outlook 的设备无法共享使用。
