@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3128d284d5b03da9a7c8b5798365b60f7092988b
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
+ms.openlocfilehash: 8c398bb7a916c98aa769e39477fe889a74fce32c
+ms.sourcegitcommit: c1f58a16f8dcd309a1d5fc4658ca16d82c615994
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49316898"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "51333987"
 ---
 # <a name="create-an-canvas-app-from-scratch-based-on-excel-data"></a>基于 Excel 数据从头开始创建画布应用
 
@@ -242,6 +242,8 @@ ms.locfileid: "49316898"
 1. 按 Esc（或选择右上角的关闭图标）关闭“预览”模式。
 
 ## <a name="next-steps"></a>后续步骤
-* 按 Ctrl-S 在云中保存应用，以便从其他设备运行该应用。
-* [共享应用](share-app.md)，便于其他人运行该应用。
-* 详细了解[函数](working-with-formulas.md)（如 Patch），可以用于管理数据，而无需创建标准窗体。
+
+- 按 Ctrl-S 在云中保存应用，以便从其他设备运行该应用。
+- [共享应用](share-app.md)，便于其他人运行该应用。
+- 详细了解[函数](working-with-formulas.md)（如 Patch），可以用于管理数据，而无需创建标准窗体。
+- [将此应用链接到解决方案](add-app-solution.md)以便能够将其部署到其他环境或在 AppSource 上发布此应用等等。

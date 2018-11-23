@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 45b5d85998825cdafc2bbea7badaa5d7cde2f092
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
+ms.openlocfilehash: 710df8899fa11e46a83e4ba670c4081b04fa7bde
+ms.sourcegitcommit: c1f58a16f8dcd309a1d5fc4658ca16d82c615994
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49317036"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "51333943"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service-for-apps"></a>使用 Common Data Service for Apps 从头创建画布应用
 
@@ -160,4 +160,5 @@ ms.locfileid: "49317036"
 
 ## <a name="next-steps"></a>后续步骤
 
-[打开一个或多个示例应用](open-and-run-a-sample-app.md)，并浏览可以创建的不同应用类型。
+- [将此应用链接到解决方案](add-app-solution.md)以便能够将其部署到其他环境或在 AppSource 上发布此应用等等。
+- [打开一个或多个示例应用](open-and-run-a-sample-app.md)，并浏览可以创建的不同应用类型。
