@@ -358,7 +358,7 @@ ms.locfileid: "43163628"
 
 **[VarP](functions/function-aggregates.md)** – 返回其参数的方差。  
 
-[ResetForm](functions/function-form.md) – 重置用于查看现有项的表单控件。
+**[ViewForm](functions/function-form.md)** – 重置用于查看现有项的表单控件。
 
 ## <a name="w"></a>W
 **[Weekday](functions/function-datetime-parts.md)** – 检索日期/时间值的星期几部分。
