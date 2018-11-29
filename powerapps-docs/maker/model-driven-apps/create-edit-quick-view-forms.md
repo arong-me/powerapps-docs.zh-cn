@@ -38,9 +38,8 @@ search.app:
 ## <a name="create-a-quick-view-form"></a>创建快速视图窗体  
  使用窗体编辑器创建快速查看窗体，方式与创建其他窗体的方式类似。 快速查看窗体为只读。 用其创建只读窗体。  
   
-1. 在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的右下方）。  
+1. 登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
-    ![模型驱动设计模式](media/model-driven-switch.png)
 
     > [!IMPORTANT]
     > “如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。     
@@ -75,7 +74,7 @@ search.app:
 ## <a name="add-a-quick-view-control-to-a-main-form"></a>向主窗体添加快速视图控件  
  只能将快速视图窗体添加存在查找字段的主窗体中，查找的目标是快速视图窗体的实体。  
   
-1.  在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的右下方）。  
+1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
     > [!IMPORTANT]
     > “如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。     

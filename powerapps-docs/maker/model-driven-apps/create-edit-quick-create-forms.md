@@ -2,7 +2,7 @@
 title: 在 PowerApps 中创建或编辑模型驱动应用程序的快速创建窗体 | MicrosoftDocs
 description: 了解如何创建或编辑快速创建窗体
 ms.custom: ''
-ms.date: 05/23/2018
+ms.date: 10/15/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -53,9 +53,8 @@ search.app:
   
 ### <a name="how-to-create-a-quick-create-form"></a>如何创建快速创建窗体  
   
-1.  在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的右下方）。  
+1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
-     ![模型驱动设计模式](media/model-driven-switch.png)
 
 > [!IMPORTANT]
 > “如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。     
@@ -92,7 +91,7 @@ search.app:
   
 ### <a name="to-edit-a-quick-create-form"></a>编辑快速创建窗体  
   
-1.  在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的右下方）。  
+1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 > [!IMPORTANT]
 > “如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。    

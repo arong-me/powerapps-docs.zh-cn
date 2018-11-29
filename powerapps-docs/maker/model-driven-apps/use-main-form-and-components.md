@@ -37,9 +37,7 @@ search.app:
 
 ### <a name="access-the-form-editor-through-app-designer-in-powerapps"></a>在 PowerApps 中通过应用程序设计器访问窗体编辑器
 
-1.  在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的右下方）。  
-
-    ![模型驱动设计模式](media/model-driven-switch.png)
+1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 2.  在左侧导航窗格上选择**应用程序**，选择所需的应用程序，然后在工具栏上选择**编辑**。  
 
@@ -60,9 +58,7 @@ search.app:
 
 ### <a name="access-the-form-editor-through-the-default-solution"></a>通过默认解决方案访问窗体编辑器
 
-1.  在 [PowerApps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的右下方）。  
-
-     ![模型驱动设计模式](media/model-driven-switch.png)
+1.  登录到 [PowerApps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 2.  展开**数据**，选择**实体**，选择所需实体，然后选择**窗体**选项卡。  
 

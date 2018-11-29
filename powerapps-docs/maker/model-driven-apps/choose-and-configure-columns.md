@@ -48,9 +48,7 @@ search.app:
 
 ### <a name="open-the-view-editor"></a>打开视图编辑器
 
-1.  在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的右下方）。  
-
-    ![模型驱动设计模式](../model-driven-apps/media/model-driven-switch.png)
+1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 2.  展开**数据**，选择**实体**，选择所需实体，然后选择**视图**选项卡。 
 

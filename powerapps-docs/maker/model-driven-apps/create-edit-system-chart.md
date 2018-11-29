@@ -27,9 +27,7 @@ search.app:
 
 在本主题，您可以了解如何创建系统图表。 系统图表是组织负责的图表，这让它们可供具有运行应用程序的数据的读取访问权限的任何人使用。 系统图表不能分配或与特定应用程序用户共享。  
   
-1. 在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的右下方）。  
-
-     ![模型驱动设计模式](media/model-driven-switch.png)
+1. 登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
     > [!IMPORTANT]
     > “如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。     

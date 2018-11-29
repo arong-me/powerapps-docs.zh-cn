@@ -27,9 +27,8 @@ search.app:
 > ![客户窗体上的联系人快速视图窗体](media/quick-view-form-contact.png "客户窗体上的联系人快速视图窗体")  
 
 您可以从 PowerApps 站点访问**快速视图控件属性**。 
-1.  在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的右下方）。  
+1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
-     ![模型驱动设计模式](media/model-driven-switch.png)
 
 2.  展开**数据**，选择**实体**，选择所需实体，然后选择**窗体**选项卡。 
 

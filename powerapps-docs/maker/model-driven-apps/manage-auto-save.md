@@ -57,9 +57,7 @@ search.app:
 > [!NOTE]
 >  窗体的自动保存将被禁用，但用户每次选择右下角的 ![“自动保存”按钮](media/auto-save-icon.png "“自动保存”按钮") 按钮时，仍将保存数据。 如果用户尝试离开或者关闭数据被更改了的窗体时，则会弹出是否需要保存更改的提示，以阻止用户离开或者关闭该窗体。  
   
-1.  在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的右下方）。  
-
-    ![模型驱动设计模式](../model-driven-apps/media/model-driven-switch.png)
+1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 2.  展开**数据**，选择**实体**，选择所需实体，然后选择**窗体**选项卡。  
   

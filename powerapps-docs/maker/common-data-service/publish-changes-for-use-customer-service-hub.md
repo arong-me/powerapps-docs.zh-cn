@@ -2,7 +2,7 @@
 title: 在 PowerApps 中发布更改 | MicrosoftDocs
 description: 了解如何发布对应用所做的更改
 ms.custom: ''
-ms.date: 06/20/2018
+ms.date: 10/29/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -30,7 +30,13 @@ search.app:
  
 ## <a name="publish-your-customizations"></a>发布自定义项
 
-- 在[解决方案资源管理器](../model-driven-apps/advanced-navigation.md#solution-explorer)中，选择**发布所有自定义项**。  
+1.  在左侧导航中选择**解决方案**。
+
+2.  选择要发布以打开的解决方案。
+
+3.  在命令列表中，选择**发布所有自定义项**。  
+
+![发布所有自定义项](media/publish-all-customizations.PNG "发布所有自定义项")  
   
 > [!IMPORTANT]
 >  准备自定义项可能需要花费一些时间。 如果看到一条消息说明浏览器页面不响应，请等待页面响应，请勿将其关闭。  

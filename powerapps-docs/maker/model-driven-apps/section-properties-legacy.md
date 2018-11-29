@@ -28,9 +28,7 @@ search.app:
  标题和脚注类似于分区，但不能删除。 如果标题和脚注中没有内容，则不会显示。 
 
 您可以从 PowerApps 站点访问**分区属性**。 
-1.  在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的右下方）。  
-
-     ![模型驱动设计模式](media/model-driven-switch.png)
+1. 登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 2.  展开**数据**，选择**实体**，选择所需实体，然后选择**窗体**选项卡。 
 

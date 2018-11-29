@@ -2,7 +2,7 @@
 title: 在 PowerApps 中使用应用程序设计器创建或编辑模型驱动应用 | MicrosoftDocs
 description: 了解如何使用应用程序设计器创建或编辑应用
 keywords: ''
-ms.date: 05/23/2018
+ms.date: 10/15/2018
 ms.service: crm-online
 ms.custom: null
 ms.topic: article
@@ -36,16 +36,16 @@ search.app:
 - 系统管理员或系统定制员安全角色： 详细信息：[关于预定义的安全角色](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app#about-predefined-security-roles)
  
 <a name="createApp"></a>   
-## <a name="create-an-app"></a>创建应用  
+## <a name="create-an-app"></a>创建应用程序  
 
-1.  在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的右下方）。  
+1.  在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **主页**页面中，为模型驱动的应用程序选择**从空白开始**选项。  
 
-    ![模型驱动设计模式](media/model-driven-switch.png)
+    ![模型驱动的从空白开始](media/start-from-blank-model-driven.png)
 
     > [!IMPORTANT]
     > “如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。 
 
-2. 选择**应用程序**，然后选择**创建应用程序**。
+2. 选择**创建此应用程序**。
 
 3. 在**创建新应用**页中，输入以下详细信息： 
 
@@ -94,14 +94,14 @@ search.app:
     将创建新应用，并且该新应用显示“草稿”状态。 您将看到新应用的应用设计器区域。 从此处，可以添加组件（如实体、视图和仪表板）来让您的应用程序更有用。 详细信息：[添加或编辑应用程序组件](add-edit-app-components.md)  
    
 <a name="editApp"></a>   
-## <a name="edit-an-app"></a>编辑应用  
+## <a name="edit-an-app"></a>编辑应用程序  
   
-1.  在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的右下方）。  
+1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 > [!IMPORTANT]
 > “如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。 
 
-2. 在左侧导航窗格上选择**应用程序**，选择一个应用程序，然后在工具栏上选择**编辑**。   
+2. 在左侧导航窗格上选择**应用程序**，选择模型驱动的应用程序，然后在工具栏上选择**编辑**。   
 
 3. 在应用程序设计器中根据需要向应用程序添加组件或编辑组件。 详细信息：[添加或编辑应用程序组件](add-edit-app-components.md)  
  

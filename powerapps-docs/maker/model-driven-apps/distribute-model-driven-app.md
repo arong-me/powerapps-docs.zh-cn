@@ -33,9 +33,7 @@ search.app:
 ## <a name="add-an-app-to-a-solution"></a>向解决方案中添加应用程序
 为了分发应用程序，您创建解决方案，以可以打包应用程序以供导出。
 
-1. 在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的右下方）。  
-
-    ![模型驱动设计模式](media/model-driven-switch.png)
+1. 登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 2. 选择**解决方案**，然后选择**新建解决方案**。
 3. 在**新建解决方案**页上填写字段，然后选择**保存**。 详细信息：[创建解决方案](../common-data-service/create-solution.md)
@@ -63,9 +61,7 @@ search.app:
 ## <a name="import-a-solution"></a>导入解决方案  
 收到包含要导入的应用的解决方案 zip 文件时，请打开解决方案组件页，然后导入解决方案。 成功导入解决方案后，应用程序将在您的环境中可用。
 
-1. 在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的右下方）。  
-
-    ![模型驱动设计模式](media/model-driven-switch.png)
+1. 登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 2. 选择**解决方案**，然后在工具栏上选择**导入**。
 3. 浏览到要导入的文件，然后选择**下一步**。

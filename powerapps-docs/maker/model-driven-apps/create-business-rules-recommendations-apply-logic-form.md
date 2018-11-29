@@ -26,7 +26,10 @@ search.app:
 ---
 # <a name="tutorial-create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>教程：创建业务规则和建议以在模型驱动应用程序窗体中应用逻辑
 
-本教程向您介绍无需编写 JavaScript 代码或创建插件，如何创建业务规则和建议以应用窗体逻辑。业务规则可以提供一个简单的界面来实施和维护快速更改和常用的规则。 它们可以应用于“主”和“快速创建”窗体，可以在 PowerApps 应用程序、Dynamics 365 customer engagement Web 应用程序、Dynamics 365 for tablets 和 Dynamics 365 for Outlook（联机或脱机模式）中工作。  
+本教程向您介绍无需编写 JavaScript 代码或创建插件，如何创建业务规则和建议以在模型驱动的应用程序中应用窗体逻辑。业务规则可以提供一个简单的界面来实施和维护快速更改和常用的规则。 它们可以应用于“主”和“快速创建”窗体，可以在模型驱动的应用程序、Dynamics 365 customer engagement Web 应用程序、Dynamics 365 for tablets 和 Dynamics 365 for Outlook（联机或脱机模式）中工作。
+
+> [!NOTE]
+> 若要为实体定义业务规则，以使其适用于所有窗体和服务器，请参阅[为实体创建业务规则](/powerapps/maker/common-data-service/data-platform-create-business-rule)。
   
  通过组合条件和操作，可以使用业务规则执行下面的任何操作：  
   

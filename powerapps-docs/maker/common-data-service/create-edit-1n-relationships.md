@@ -43,7 +43,7 @@ search.app:
 > - 为相关实体创建新查找字段。 <br />详细信息：[创建和编辑字段](create-edit-fields.md)
 > - 导入包含实体关系定义的解决方案。 <br />详细信息：[导入、更新和导出解决方案](import-update-export-solutions.md)
 > - 使用 Power Query 创建新实体并使用数据填充它们。 <br />详细信息：[使用 Power Query 将数据添加到面向应用程序的 Common Data Service 中的实体](data-platform-cds-newentity-pq.md)。
-> - 开发人员可以使用 [Web 服务](../../developer/common-data-service/use-web-services.md#metadata-services)编写程序来创建和更新实体关系。 <br />详细信息：[自定义实体关系元数据](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)。
+> - 开发人员可以使用[元数据服务](../../developer/common-data-service/metadata-services.md)编写程序来创建和更新实体关系。 <br />详细信息：[自定义实体关系元数据](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)。
 
 本主题中的信息将帮助您选择可以使用的设计器。 
 

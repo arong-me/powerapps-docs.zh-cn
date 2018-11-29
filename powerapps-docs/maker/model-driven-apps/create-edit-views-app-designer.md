@@ -45,9 +45,8 @@ search.app:
 
 ## <a name="create-a-public-view-in-powerapps"></a>在 PowerApps 中创建公共视图
 作为应用制造者，您可使用 PowerApps 创建和编辑公共视图。
-1. 在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的右下方）。  
+1. 登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
-     ![模型驱动设计模式](media/model-driven-switch.png)
 
     > [!IMPORTANT]
     > “如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。   

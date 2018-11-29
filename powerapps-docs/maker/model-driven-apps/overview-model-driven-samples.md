@@ -38,11 +38,14 @@ search.app:
 
 ## <a name="customize-a-sample-app"></a>自定义示例应用程序
 
-1. 登录到 [powerapps.com](https://powerapps.com) 并选择**模型驱动**设计模式。 
+1. 登录到 [powerapps.com](https://powerapps.com)  
 
-    ![选择设计模式](media/overview-model-driven-samples/choose-design-mode.png)
+    
 
-2. 在主页中，将鼠标悬停在示例应用程序上并单击**自定义**。
+2. 在**创建**页中，将鼠标悬停在示例应用程序上并单击**制作此应用**。
+
+![示例模型应用](media/overview-model-driven-samples/model-driven-create-page-sample.png)
+
 3. 应用程序设计器将打开，其中提供用于自定义应用程序的多个选项。 
 4. 要查看其他自定义选项，从门户的左侧导航单击**高级**。
 

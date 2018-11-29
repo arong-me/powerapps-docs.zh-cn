@@ -42,9 +42,9 @@ search.app:
 ## <a name="use-a-custom-control-to-add-visualizations-to-a-field"></a>使用自定义控件为字段添加可视化效果  
  执行此过程中的步骤将把“商机”实体中的**预算金额**字段的默认标签和文本框字段更改为滑块自定义控件。 可使用类似步骤将现有字段替换为自定义控件或为自定义字段配置自定义控件。  
   
-1.  在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的右下方）。  
+1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
-     ![模型驱动设计模式](media/model-driven-switch.png)
+     
 
 2.  展开**数据**，选择**实体**，选择所需实体，然后选择**窗体**选项卡。  
   

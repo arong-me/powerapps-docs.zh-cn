@@ -49,7 +49,7 @@ search.app:
 有关访问和范围权限的详细信息，请参阅[安全角色](https://docs.microsoft.com/dynamics365/customer-engagement/admin/security-roles-privileges#security-roles)。
 
 ## <a name="create-a-custom-security-role"></a>创建自定义安全角色
-1. 在 [!INCLUDE [powerapps](../../includes/powerapps.md)] 站点，选择**模型驱动** > **应用程序** > **…**> **共享链接**。
+1. 在 [!INCLUDE [powerapps](../../includes/powerapps.md)] 站点，选择**应用** > **…**> **共享链接**。
 2. 在**共享此应用程序**对话框中，在**创建安全角色**下选择**安全设置**。
 3. 在**设置**页上，选择**新建**。  
 

@@ -2,7 +2,7 @@
 title: 使用 PowerApps 添加或编辑模型驱动的应用程序组件的教程 | MicrosoftDocs
 description: 使用 PowerApps 应用程序设计器添加或编辑组件
 keywords: ''
-ms.date: 03/30/2018
+ms.date: 10/15/2018
 ms.service: crm-online
 ms.custom: null
 ms.topic: article
@@ -53,7 +53,7 @@ search.app:
 ## <a name="open-an-app"></a>打开应用
 1. 登录到 [PowerApps](https://web.powerapps.com/)。 
 
-2. 选择**模型驱动** > **应用程序**，然后选择现有应用程序或选择**创建应用程序**。 有关如何创建应用程序的信息，请参阅[使用应用设计器创建或编辑模型驱动的应用程序](create-edit-app.md#create-an-app)。
+2. 选择模型驱动的现有应用程序，或选择**从空白开始**。 有关如何创建应用程序的信息，请参阅[使用应用设计器创建或编辑模型驱动的应用程序](create-edit-app.md#create-an-app)。
 
 ## <a name="add-an-artifact-entity-dashboard-or-business-process-flow"></a>添加项目（实体、仪表板或业务流程）  
  向应用添加仪表板或业务流程时，将自动向应用添加仪表板或业务流程所用实体。 在添加某个实体时，其资产的磁贴会自动添加。 将项目添加到设计器区域有以下两种方法：使用命令栏中的**添加**按钮 ![设计器中的“添加”按钮](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "设计器中的“添加”按钮")，或使用**组件**选项卡中的磁贴。  

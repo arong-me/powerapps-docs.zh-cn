@@ -40,6 +40,9 @@ search.app:
 
     * **复数显示名称** - 此字段在您输入显示名称时自动填充，如果需要，您也可以更改它。 复数显示名称是 Common Data Service WebAPI 中实体的名称，在从 PowerApps 或 Flow 与此实体交互时使用。
     * **名称** - 此字段在您输入显示名称时也会自动填充。 当创建环境时会设置前缀，并确保您创建的实体可以在其他环境中导出和导入，且不会与其他实体名称冲突。 您可以通过更新 Common Data Service 默认解决方案的发布商的前缀来更改此前缀。 为了防止现有应用程序中断，在保存实体后您无法更改名称。
+
+       > [!NOTE]
+       > 若要让实体名称支持 [Dynamics 365 for Customer Service 嵌入式知识搜索](/dynamics365/customer-engagement/customer-service/set-up-knowledge-management-embedded-knowledge-search)，含发布者前缀的实体名称最大长度不能超过 24 个字符。
      
     ![新建实体](./media/data-platform-cds-create-entity/newentitypanel.png "新建实体面板")
 

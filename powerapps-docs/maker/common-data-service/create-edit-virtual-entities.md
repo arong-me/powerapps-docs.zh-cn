@@ -33,7 +33,7 @@ search.app:
   
 面向应用程序的 CDS 中包含 OData 数据提供程序，可用于连接 OData v4 Web 服务来访问外部数据。 
   
-开发人员也可以构建自己的数据提供程序。 数据提供程序作为解决方案安装在环境中。 详细信息：[开发人员文档：虚拟实体入门](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve)
+开发人员也可以构建自己的数据提供程序。 数据提供程序作为解决方案安装在环境中。 详细信息：[开发人员文档：虚拟实体入门](../../developer/common-data-service/virtual-entities/get-started-ve.md)
   
  ![虚拟实体图](media/virtual-entity-diagram.png "虚拟实体图")  
   

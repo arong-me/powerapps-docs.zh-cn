@@ -157,17 +157,15 @@ search.app:
   
 ### <a name="configure-a-multi-stream-interactive-dashboard-using-the-4-column-layout"></a>使用 4 列布局来配置多流交互式仪表板  
  
-1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
+  
+2.  选择**数据** > **实体** > 选择所需实体。 
 
-2.  选择**模型驱动**（左下方）。  
+3.  选择**仪表板**选项卡，然后在工具栏上选择**添加仪表板**。  
   
-3.  选择**数据** > **实体** > 选择所需实体。 
-
-4.  选择**仪表板**选项卡，然后在工具栏上选择**添加仪表板**。  
+4.  选择布局，2、3 或 4 列宽。  
   
-5.  选择布局，2、3 或 4 列宽。  
-  
-6.  仪表板窗体打开后，在窗体的顶部填写筛选信息，如下所示。  
+5.  仪表板窗体打开后，在窗体的顶部填写筛选信息，如下所示。  
  
  > [!div class="mx-imgBorder"] 
  > ![添加可视筛选器](../model-driven-apps/media/interactive-dashboards-add-visual-filters.png "添加可视筛选器")  
@@ -220,7 +218,7 @@ search.app:
   
 1. 登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。   
   
-2. 选择**模型驱动**（左下方）、**数据** > **实体** > 选择所需实体。 选择**仪表板**选项卡。  
+2. 选择**数据** > **实体** > 选择所需实体。 选择**仪表板**选项卡。  
   
      -或-  
    
@@ -241,15 +239,13 @@ search.app:
   
 1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
-2.  选择**模型驱动**（左下方）。  
-  
-3.  选择**数据** > **实体** > 选择所需实体。 
+2.  选择**数据** > **实体** > 选择所需实体。 
 
-4.  选择**仪表板**选项卡，然后在工具栏上选择**添加仪表板**。  
+3.  选择**仪表板**选项卡，然后在工具栏上选择**添加仪表板**。  
   
-5.  选择布局，2、3 或 4 列宽。    
+4.  选择布局，2、3 或 4 列宽。    
   
-6.  当仪表板窗体打开时，**筛选器实体**将预设为您为其创建仪表板的实体。 **实体视图**下拉列表包含该实体的可用视图。 选择视图并在页面上填写剩下的必需信息。  
+5.  当仪表板窗体打开时，**筛选器实体**将预设为您为其创建仪表板的实体。 **实体视图**下拉列表包含该实体的可用视图。 选择视图并在页面上填写剩下的必需信息。  
   
  剩下的设置与上一部分中所述的主页多流仪表板设置十分相似。  
   

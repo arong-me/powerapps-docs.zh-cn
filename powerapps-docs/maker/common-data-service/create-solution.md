@@ -2,7 +2,7 @@
 title: 创建解决方案 | MicrosoftDocs
 description: 了解如何创建解决方案
 ms.custom: ''
-ms.date: 06/18/2018
+ms.date: 10/30/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -29,9 +29,9 @@ search.app:
   
  有关解决方案概念的详细信息，请参阅[使用解决方案](solutions-overview.md)。  
   
-1.  导航到**[设置](../model-driven-apps/advanced-navigation.md#settings)** > **解决方案**。 
+1.  登录 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后从左侧导航中选择**解决方案**。 
   
-2.  选择**新建**并完成解决方案所需要的字段。  
+2.  选择**新建解决方案**，然后填写解决方案的必填字段。
   
     |字段|说明|  
     |-----------|-----------------|  
@@ -61,3 +61,6 @@ search.app:
 
 > [!IMPORTANT]
 >  如果您计划在解决方案中包括约会，强烈建议您不要在单独的解决方案中分别只包括约会和定期约会。 如果安装然后卸载具有不同约会类型的单独解决方案，则会遇到 SQL Server 错误，并且必须重新创建约会。 
+
+## <a name="see-also"></a>另请参阅
+ [使用解决方案](use-solution-explorer.md)

@@ -43,7 +43,7 @@ search.app:
 > [!NOTE]
 > 您还可以使用以下方法在您的环境中创建新的多对多 (N:N) 实体关系：
 > - 导入包含关系定义的解决方案。 详细信息：[导入、更新和导出解决方案](import-update-export-solutions.md)
-> - 开发人员可以使用[元数据服务](../../developer/common-data-service/use-web-services.md#metadata-services)编写程序来创建和更新实体关系。 详细信息：[开发人员文档：自定义实体关系元数据](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)
+> - 开发人员可以使用[元数据服务](../../developer/common-data-service/metadata-services.md)编写程序来创建和更新实体关系。 详细信息：[开发人员文档：自定义实体关系元数据](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)
 
 本主题中的信息将帮助您选择可以使用的设计器。 
 

@@ -10,7 +10,7 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 04/18/2018
+ms.date: 10/15/2018
 ms.author: matp
 search.audienceType:
   - maker
@@ -31,16 +31,14 @@ search.app:
 ## <a name="create-your-model-driven-app"></a>创建您的模型驱动应用程序
 
 1.  选择所需环境，或转到 [PowerApps 管理中心](https://admin.powerapps.com/)创建一个新环境。
-2.  在左侧导航窗格中，选择**模型驱动**。 
-
-    ![模型驱动](media/build-first-model-driven-app/choose-design-mode.png)
 
   > [!IMPORTANT]
   > 如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。   
 
-3. 在左窗格中，选择**应用程序**，然后选择**创建应用程序**。
+2. 在**主页**页面中，为模型驱动的应用程序选择**从空白开始**选项。
+![从-blank_model 开始](media/build-first-model-driven-app/start-from-blank-model-driven.png)
 
-4.  在**创建新应用程序**页面，输入以下详细信息，然后选择**完成**： 
+3.  在**创建新应用程序**页面，输入以下详细信息，然后选择**完成**： 
   - **名称**：输入应用程序的名称，如 *Myfirstapp*。 
   - **描述**：键入应用程序是什么或做什么的简短描述，如*这是我的第一个应用程序*。
 有关其他应用程序属性的信息，请参阅[创建应用程序](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-app#create-an-app)。

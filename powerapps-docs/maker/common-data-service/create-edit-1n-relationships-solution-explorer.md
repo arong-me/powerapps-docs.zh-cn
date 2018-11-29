@@ -2,7 +2,7 @@
 title: '使用解决方案资源管理器创建和编辑 1:N（一对多）或 N:1（多对一）实体关系 | MicrosoftDocs'
 description: 了解如何使用 PowerApps 解决方案资源管理器创建一对多或多对一实体关系
 ms.custom: ''
-ms.date: 05/27/2018
+ms.date: 10/28/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''

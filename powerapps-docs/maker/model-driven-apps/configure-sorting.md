@@ -26,9 +26,8 @@ search.app:
 
  当您创建或编辑视图时，可以将排序顺序配置为升序或降序。   
   
-1.  在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的右下方）。  
+1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
-    ![模型驱动设计模式](media/model-driven-switch.png)
 
 2.  展开**数据**，选择**实体**，然后选择所需实体，如**客户**。   
 3.  选择**视图**选项卡，如果显示，选择**移除筛选器**，然后打开所需视图，如**可用客户**。
