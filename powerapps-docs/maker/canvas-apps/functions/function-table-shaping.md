@@ -1,6 +1,6 @@
 ---
 title: AddColumns、DropColumns、RenameColumns 和 ShowColumns 函数 | Microsoft 文档
-description: 有关 PowerApps 中 AddColumns、DropColumns、 RenameColumns 和 ShowColumns 函数的参考信息，包括语法和示例
+description: 有关 PowerApps 中 AddColumns、DropColumns、RenameColumns 和 ShowColumns 函数的参考信息，包括语法和示例
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps

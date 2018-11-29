@@ -64,7 +64,7 @@ ms.locfileid: "42859977"
 **Errors**( *DataSource* [, *Record* ] )
 
 * *DataSource* - 必需。 要为其返回错误的数据源。
-* *记录* - 可选。  要为其返回错误的特定记录。 如果未指定此参数，函数将返回整个数据源的错误。
+* *Record* - 可选。  要为其返回错误的特定记录。 如果未指定此参数，函数将返回整个数据源的错误。
 
 ## <a name="examples"></a>示例
 ### <a name="step-by-step"></a>分步操作

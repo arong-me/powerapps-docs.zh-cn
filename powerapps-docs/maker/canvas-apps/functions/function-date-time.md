@@ -37,17 +37,17 @@ ms.locfileid: "42864090"
 有关详细信息，请参阅[处理日期和时间](../show-text-dates-times.md)。
 
 ## <a name="syntax"></a>语法
-**日期**（年、月、日）
+**Date**( *Year*, *Month*, *Day* )
 
-* 年 - 必需。  大于 1899 的数值将被解释为绝对值（1980 被解释为 1980）；介于 0 到 1899 之间的数值将被解释为相对于 1900。 （例如，80 将被解释为 1980。）
-* 月 - 必需。  该数值介于 1 到 12 之间。
-* 日 - 必需。 该数值介于 1 到 31 之间。
+* *Year* - 必需。  大于 1899 的数值将被解释为绝对值（1980 被解释为 1980）；介于 0 到 1899 之间的数值将被解释为相对于 1900。 （例如，80 将被解释为 1980。）
+* *Month* - 必需。  该数值介于 1 到 12 之间。
+* *Day* - 必需。 该数值介于 1 到 31 之间。
 
-**时间**（小时、分钟、秒）
+**Time**( *Hour*, *Minute*, *Second* )
 
-* 小时 - 必需。  该数值介于 0（上午 12:00）到 23（下午 11:00）之间。
-* 分钟 - 必需。 该数值介于 0 到 59 之间。
-* 秒 - 必需。 该数值介于 0 到 59 之间。
+* *Hour* - 必需。  该数值介于 0（上午 12:00）到 23（下午 11:00）之间。
+* *Minute* - 必需。 该数值介于 0 到 59 之间。
+* *Second* - 必需。 该数值介于 0 到 59 之间。
 
 ## <a name="examples"></a>示例
 ### <a name="date"></a>Date
@@ -55,7 +55,7 @@ ms.locfileid: "42864090"
 
 **Date(Value(HireYear.Text), Value(HireMonth.Text), Value(HireDay.Text))**
 
-### <a name="time"></a>时间
+### <a name="time"></a>Time
 如果用户在“BirthHour”文本输入控件中键入“14”，在“BirthMinute”文本输入控件中键入“50”，在“BirthSecond”文本输入控件中键入“24”，那么此函数会返回“02:50:24 p”。
 
 **Text(Time(Value(BirthHour.Text), Value(BirthMinute.Text), Value(BirthSecond.Text)), "hh:mm:ss a/p")**

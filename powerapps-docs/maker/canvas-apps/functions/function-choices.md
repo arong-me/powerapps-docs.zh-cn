@@ -90,7 +90,7 @@ Choices 不要求列名称为字符串且括在双引号中，这一点与 [**Sh
 
      ![包含窗体控件的画布屏幕。 选择了 Primary Contact 卡片中的组合框控件，显示了包含公式 Choices( Accounts.'Primary Contact' ) 的 Items 属性](media/function-choices/accounts-primary-contact.png)
 
-9. 在“开始”选项卡上，选择“新建屏幕”，然后选择“空白”。
+9. 在“开始”选项卡上，选择“新建屏幕”，然后选择“Blank”。
 
 10. 在“插入”选项卡上，选择“数据表”。
 
