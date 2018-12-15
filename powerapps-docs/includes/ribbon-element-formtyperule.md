@@ -1,1 +1,1 @@
-指定用于检测 Microsoft Dynamics 365 窗体类型的规则。
+指定检测 Microsoft Dynamics 365 窗体类型的规则。

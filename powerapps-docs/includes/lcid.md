@@ -1,1 +1,1 @@
-可在[区域设置 ID (LCID) 图表](http://go.microsoft.com/fwlink/?LinkId=122128)中找到有效区域设置 ID 值。
+可在[区域设置 ID (LCID) 图表](http://go.microsoft.com/fwlink/?LinkId=122128)中找到有效的区域设置 ID 值。

@@ -1,1 +1,1 @@
-检测 Microsoft Dynamics 365 for Microsoft Office Outlook 版本。
+检测 Microsoft Dynamics 365 for Microsoft Office Outlook 的版本。

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 20a725ff417ad1a36b83b6a24ca1aaecc667da14
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: f7a053aff947ffd543381956cf725a7e656d8a65
+ms.sourcegitcommit: ebe0a9c41b693a2134e9198ffc7e7a8eabee4330
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834553"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "51276363"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>PowerApps 画布应用连接器概述
 数据是大多数应用（包括在 PowerApps 中生成的应用）的关键所在。 数据存储在数据源中，应用是通过创建的连接来连接数据。 连接使用特定的连接器与数据源进行通信。 PowerApps 提供连接器，适用于许多常用服务和本地数据源，包括 SharePoint、SQL Server、Office 365、Salesforce 和 Twitter。 若要开始向画布应用添加数据，请参阅[在 PowerApps 中添加数据连接](add-data-connection.md)。
@@ -59,7 +59,7 @@ ms.locfileid: "42834553"
 
 ## <a name="popular-connectors"></a>常用连接器
 
-单击下表中列出的链接，可详细了解最常用的连接器。 若要获取连接器的完整列表，请参阅[所有的连接器](#all-connectors)。
+单击下表中列出的链接，可详细了解最常用的连接器。 若要获取连接器的完整列表，请参阅[所有的连接器](#all-standard-connectors)。
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 | --- | --- | --- | --- | --- |

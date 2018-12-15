@@ -14,12 +14,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 2d36fcc9b09f157da4da6b6293c34fad4320acbb
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: a3ea651fd507bb257a3b778be4421454197733b9
+ms.sourcegitcommit: eec10beaee913e01fe488c839661b20bbb1e1cfc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42832762"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329266"
 ---
 # <a name="regions-overview-in-powerapps"></a>PowerApps 中的区域概述
 ## <a name="how-do-i-find-out-where-my-app-is-deployed"></a>如何确定我的应用的部署位置？
@@ -47,9 +47,6 @@ ms.locfileid: "42832762"
 可以在各个区域内创建环境，然后将其绑定到相应的地理位置。 在环境中创建应用后，此应用就会部署到此地理位置的数据中心内。 这适用于在此环境中创建的任何项，包括 Common Data Service 中的数据库、应用、连接、网关和自定义连接器。
 
 为获得最理想的效果，如果用户位于欧洲，请在欧洲区域创建并使用此环境。 如果用户位于美国，请在美国创建并使用此环境。
-
-> [!NOTE]
-> 目前，仅可以在生产或试用环境中创建数据库，这与 Azure AD 或 Office 365 租户的主区域在同一区域中。 我们正在开发在除租户主区域之外的不同区域中创建环境数据库的方法。 同样，当前无法在默认环境和个人环境（使用 PowerApps 社区计划创建）中创建数据库。
 
 > [!NOTE]
 > 本地数据网关不适用于印度区域或自定义环境。 必须在默认环境中创建网关。
