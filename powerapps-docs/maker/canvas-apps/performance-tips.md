@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0fa6a8f741ed0e771eeefbbee82a23e876363e55
-ms.sourcegitcommit: 469be99b762cd62289a98f058c498ac25ff8801b
+ms.openlocfilehash: 9d86bcaf02050da1b3cd0364e28bc4ec05a6407d
+ms.sourcegitcommit: 6e579014ebb1f801985b8b4b68b7b768a09559c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44327698"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247577"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>在 PowerApps 中优化画布应用性能
 Microsoft 正致力于完善在 PowerApps 平台上运行的所有应用的性能。 但你可以按照本主题中的最佳做法提高你所创建的应用的性能。
@@ -58,9 +58,9 @@ Microsoft 正致力于完善在 PowerApps 平台上运行的所有应用的性�
 在 Concurrent 函数中，你可以用双引号将同一公式引住，以减少该操作所需的总时间：
 
     Concurrent( 
-        ClearCollect( Product, '[SalesLT].[Product]' );
-        ClearCollect( Customer, '[SalesLT].[Customer]' );
-        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' );
+        ClearCollect( Product, '[SalesLT].[Product]' ),
+        ClearCollect( Customer, '[SalesLT].[Customer]' ),
+        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),
         ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' ))
         
 进行以下更改后，应用会并行提取表： 

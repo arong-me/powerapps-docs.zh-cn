@@ -1,1 +1,1 @@
-Microsoft 云
+Microsoft Cloud

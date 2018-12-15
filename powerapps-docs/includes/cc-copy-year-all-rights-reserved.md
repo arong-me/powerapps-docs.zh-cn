@@ -1,1 +1,1 @@
-© 2017 Microsoft。 保留所有权利。
+© 2017 Microsoft. 保留所有权利。
