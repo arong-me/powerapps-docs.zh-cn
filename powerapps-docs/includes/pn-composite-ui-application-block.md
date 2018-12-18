@@ -1,1 +1,1 @@
-Composite UI Application Block
+复合 UI 应用程序块

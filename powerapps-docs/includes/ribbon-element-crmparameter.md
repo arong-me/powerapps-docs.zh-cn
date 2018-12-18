@@ -1,1 +1,1 @@
-表示从 Microsoft Dynamics 365 应用程序检索的且可作为参数传递的数据。
+表示是从 Microsoft Dynamics 365 应用程序中检索的数据，该数据可作为参数传递。

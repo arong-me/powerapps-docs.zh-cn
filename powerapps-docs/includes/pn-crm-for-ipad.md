@@ -1,1 +1,1 @@
-Dynamics 365 for iPad
+适用于 iPad 的 Dynamics 365

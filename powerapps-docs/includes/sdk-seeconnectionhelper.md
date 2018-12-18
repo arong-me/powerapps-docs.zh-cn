@@ -1,1 +1,1 @@
-有关运行此处所提供示例代码的要求的详细信息，请参阅[使用示例和帮助程序代码](../developer/org-service/use-sample-helper-code.md)。
+有关此处所述示例代码运行要求的详细信息，请参阅[使用示例和帮助程序代码](../developer/org-service/use-sample-helper-code.md)。

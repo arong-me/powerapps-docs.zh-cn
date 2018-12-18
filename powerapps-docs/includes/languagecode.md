@@ -1,1 +1,1 @@
-语言代码是四位数或五位数区域设置 ID。 有效区域设置 ID 值可以在[区域设置 ID (LCID) 图表](http://go.microsoft.com/fwlink/?LinkId=122128)中找到。
+四位数或五位数区域设置 ID 的语言代码。 可在[区域设置 ID (LCID) 图表](http://go.microsoft.com/fwlink/?LinkId=122128)中找到有效区域设置 ID 值。

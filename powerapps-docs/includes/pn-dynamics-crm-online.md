@@ -1,1 +1,1 @@
-Dynamics 365(在线)
+Dynamics 365 (online)

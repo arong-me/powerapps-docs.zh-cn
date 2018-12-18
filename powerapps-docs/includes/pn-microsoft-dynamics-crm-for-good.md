@@ -1,1 +1,1 @@
-Dynamics 365 for Good
+适用于 Good 的 Dynamics 365

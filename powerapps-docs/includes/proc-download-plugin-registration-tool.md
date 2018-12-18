@@ -1,1 +1,1 @@
-若要获取插件注册工具，请参阅[从 NuGet 下载工具](../developer/common-data-service/download-tools-nuget.md)。
+要获取插件注册工具，请参阅[从 NuGet 下载工具](../developer/common-data-service/download-tools-nuget.md)。
