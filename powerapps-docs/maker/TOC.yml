@@ -1,4 +1,11 @@
 items:
+- name: 开始使用：什么是 PowerApps？
+  href: ../powerapps-overview.md
+  items:
+  - name: 注册 30 天试用版
+    href: signup-for-powerapps.md
+  - name: 注册社区计划
+    href: dev-community-plan.md
 - name: 查找并运行应用
   href: ../user/index.md
   items:
@@ -8,21 +15,71 @@ items:
     href: ../user/run-app-client.md
   - name: 在手机（模型驱动）上
     href: ../user/run-app-client-model-driven.md
-  - name: 在 SharePoint Online 页面上
+  - name: 在 SharePoint Online 页上（画布）
     href: ../user/powerapps-web-part.md
-  - name: 在 Microsoft Teams 中
+  - name: 在 Microsoft Teams 中（画布）
     href: ../user/open-app-embedded-in-teams.md
   - name: 从 AppSource
     href: ../user/app-source.md
+  - name: 使用模型驱动应用
+    href: ../user/use-model-driven-apps.md
+    items:
+    - name: 统一接口
+      href: ../user/unified-interface.md
+    - name: 导航和基础知识
+      href: ../user/navigation.md
+      items:
+      - name: 查看配置文件
+        href: ../user/view-your-user-profile.md
+      - name: 设置个人选项
+        href: ../user/set-personal-options.md
+      - name: 使用屏幕阅读器
+        href: ../user/screen-reader.md
+      - name: 键盘快捷方式
+        href: ../user/keyboard-shortcuts.md
+    - name: 处理记录
+      items:
+      - name: 创建记录
+        href: ../user/create-a-record.md
+      - name: 将活动添加到日程表
+        href: ../user/add-activities.md
+      - name: 分配或共享记录
+        href: ../user/assign-or-share-records.md
+      - name: 使用访问团队共享记录
+        href: ../user/Access-team.md
+      - name: 停用帐户或联系人
+        href: ../user/deactivate-activate-account-contact.md
+      - name: 使用仪表板和图表跟踪进度
+        href: ../user/track-your-progress-with-dashboard-and-charts.md
+    - name: 搜索记录
+      items:
+      - name: 搜索记录
+        href: ../user/search-records.md
+      - name: 使用高级查找
+        href: ../user/create-edit-or-save-advanced-find-search.md
+    - name: 导入和导出数据
+      items:
+      - name: 导入数据
+        href: ../user/import-data.md
+      - name: 将数据导出到 Excel Online
+        href: ../user/export-to-excel-online.md
+      - name: 将数据导出到 Excel
+        href: ../user/export-data-excel.md
+      - name: 导出到动态工作表
+        href: ../user/export-excel-dynamic-worksheet.md
+      - name: 导出到静态工作表
+        href: ../user/export-excel-static-worksheet.md
+      - name: 导出到 Excel 数据透视表
+        href: ../user/export-excel-pivottable.md
+    - name: 自动执行流程
+      items:
+      - name: 处理业务流程
+        href: ../user/work-with-business-processes.md
+      - name: 使用流
+        href: ../user/use-flows.md
 - name: 创建应用
   href: index.md
   items:
-  - name: 免费试用 PowerApps
-    items:
-    - name: 30 天试用版
-      href: signup-for-powerapps.md
-    - name: PowerApps 社区计划
-      href: dev-community-plan.md
   - name: 登录到 PowerApps
     href: ./canvas-apps/intro-maker-portal.md
   - name: 新功能
@@ -30,6 +87,8 @@ items:
 - name: 画布应用
   href: ./canvas-apps/getting-started.md
   items:
+  - name: 系统要求、限制和配置
+    href: ./canvas-apps/limits-and-config.md
   - name: 探索示例应用
     href: ./canvas-apps/open-and-run-a-sample-app.md
     items:
@@ -95,6 +154,27 @@ items:
       items:
       - name: 添加屏幕
         href: ./canvas-apps/add-screen-context-variables.md
+        items:
+        - name: 配置 Office 365 屏幕
+          items:
+          - name: “日历”屏幕概述
+            href: ./canvas-apps/screen-templates/calendar-screen-overview.md
+          - name: “日历”屏幕参考
+            href: ./canvas-apps/screen-templates/calendar-screen-reference.md
+          - name: “电子邮件”屏幕概述
+            href: ./canvas-apps/screen-templates/email-screen-overview.md
+          - name: “电子邮件”屏幕参考
+            href: ./canvas-apps/screen-templates/email-screen-reference.md
+          - name: “会议”屏幕概述
+            href: ./canvas-apps/screen-templates/meeting-screen-overview.md
+          - name: “会议”屏幕参考
+            href: ./canvas-apps/screen-templates/meeting-screen-reference.md
+          - name: “联系人”屏幕概述
+            href: ./canvas-apps/screen-templates/people-screen-overview.md
+          - name: “联系人”屏幕参考
+            href: ./canvas-apps/screen-templates/people-screen-reference.md
+        - name: 添加滚动屏幕
+          href: ./canvas-apps/add-scrolling-screen.md
       - name: 显示包含项的表
         href: ./canvas-apps/add-gallery.md
       - name: 显示具有不同高度的项目
@@ -116,8 +196,6 @@ items:
         href: ./canvas-apps/add-images-pictures-audio-video.md
       - name: 扫描条码
         href: ./canvas-apps/scan-barcode.md
-      - name: 添加滚动屏幕
-        href: ./canvas-apps/add-scrolling-screen.md
       - name: 添加 Power BI 数据
         href: ./canvas-apps/powerapps-custom-visual.md
       - name: 控件引用
@@ -533,6 +611,8 @@ items:
           href: ./canvas-apps/functions/function-datetime-parts.md
         - name: Year
           href: ./canvas-apps/functions/function-datetime-parts.md
+    - name: 在解决方案中创建应用
+      href: ./canvas-apps/add-app-solution.md
     - name: 构建全局应用
       href: ./canvas-apps/global-apps.md
     - name: 使应用可访问
@@ -542,6 +622,10 @@ items:
         href: ./canvas-apps/accessibility-checker.md
       - name: 对辅助功能使用颜色
         href: ./canvas-apps/accessible-apps-color.md
+      - name: 对辅助技术显示或隐藏内容
+        href: ./canvas-apps/accessible-apps-content-visibility.md
+      - name: 使用活动区域发布动态更改
+        href: ./canvas-apps/accessible-apps-live-regions.md
     - name: 试验功能和预览功能
       href: ./canvas-apps/working-with-experimental.md
   - name: 保存并发布应用
@@ -645,6 +729,11 @@ items:
       - name: 使用窗体
         href: ./model-driven-apps/create-design-forms.md
         items:
+        - name: 使用新窗体设计器
+          href: ./model-driven-apps/form-designer-overview.md
+          items:
+          - name: 创建或编辑窗体
+            href: ./model-driven-apps/create-and-edit-forms.md
         - name: 窗体类型
           href: ./model-driven-apps/types-forms.md
           items:
@@ -698,6 +787,13 @@ items:
             href: ./model-driven-apps/configure-event-handlers-legacy.md
           - name: 如何在窗体中禁用自动保存
             href: ./model-driven-apps/manage-auto-save.md
+      - name: 在窗体上嵌入画布应用
+        href: ./model-driven-apps/embed-canvas-app-in-form.md
+        items:
+        - name: 将当前记录传递到嵌入的画布应用
+          href: ./model-driven-apps/pass-current-embedded-canvas-app.md
+        - name: 将相关记录传递到嵌入的画布应用
+          href: ./model-driven-apps/pass-related-embedded-canvas-app.md
       - name: 处理视图
         href: ./model-driven-apps/create-edit-views.md
         items:
@@ -750,6 +846,8 @@ items:
           href: ./model-driven-apps/timer-control-legacy.md
       - name: 使用自定义控件进行数据可视化
         href: ./model-driven-apps/use-custom-controls-data-visualizations.md
+    - name: 使用主题应用组织品牌
+      href: ./model-driven-apps/create-themes-organization-branding.md
   - name: 验证并发布应用
     href: ./model-driven-apps/validate-app.md
   - name: 共享应用
@@ -778,7 +876,7 @@ items:
   - name: PowerApps 应用设计器中的辅助功能
     href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
   - name: 面向开发人员
-    href: ../developer/model-driven-apps/TOC.yml
+    href: ../developer/model-driven-apps/overview.md
 - name: Common Data Service for Apps
   href: ./common-data-service/data-platform-intro.md
   items:
@@ -913,7 +1011,7 @@ items:
   - name: 使用解决方案
     href: ./common-data-service/solutions-overview.md
     items:
-    - name: 使用解决方案资源管理器
+    - name: 使用解决方案
       href: ./common-data-service/use-solution-explorer.md
     - name: 使用 Common Data Service 默认解决方案
       href: ./common-data-service/use-solutions-for-your-customizations.md
@@ -921,6 +1019,10 @@ items:
       href: ./common-data-service/import-update-export-solutions.md
     - name: 导航到特定解决方案
       href: ./common-data-service/navigate-specific-solution.md
+    - name: 创建解决方案
+      href: ./common-data-service/create-solution.md
+    - name: 使用解决方案检查器
+      href: ./common-data-service/use-powerapps-checker.md
     - name: 使用分段解决方案
       href: ./common-data-service/use-segmented-solutions-patches-simplify-updates.md
     - name: 更改解决方案发布者前缀
@@ -938,19 +1040,12 @@ items:
       href: ./common-data-service/data-platform-restricted-entities.md
   - name: 创建 Power BI 报表
     href: ./common-data-service/data-platform-powerbi-connector.md
-  - name: 创建主题
-    href: ./common-data-service/change-color-scheme-add-logo-match-organizations-brand.md
   - name: 翻译自定义的实体和字段文本
     href: ./common-data-service/export-customized-entity-field-text-translation.md
   - name: 将已翻译的实体和字段文本导入应用
     href: ./common-data-service/import-translated-entity-field-text.md
   - name: 面向开发人员
-    href: ../developer/common-data-service/TOC.yml
-- name: 常见数据模型
-  href: ../common-data-model/overview.md
-  items:
-  - name: 如何使用 Common Data Service
-    href: ../common-data-model/use-common-data-model.md
+    href: ../developer/common-data-service/overview.md
 - name: 相互学习
   items:
   - name: 网络研讨会
@@ -961,8 +1056,6 @@ items:
     href: https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1
 - name: 故障排除
   items:
-  - name: 系统要求、限制和配置
-    href: ./canvas-apps/limits-and-config.md
   - name: 画布应用的性能提示
     href: ./canvas-apps/performance-tips.md
   - name: 常见问题和解决方法
@@ -973,9 +1066,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: 支持
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 3fbbedc26086c39f8e42bf14bea969ac9e81614c
-ms.sourcegitcommit: 2bcf40aeaa35420dc43f5803f4e57ff0f6afb57b
+ms.openlocfilehash: 57d63b8a8530fdf225f17fddfa5cb8c00cbb0ef9
+ms.sourcegitcommit: e0845b95cc969cff13d469e26ce30b62c56dc59a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "49454071"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53587754"
