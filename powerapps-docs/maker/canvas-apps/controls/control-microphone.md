@@ -106,11 +106,11 @@ ms.locfileid: "49307806"
 
     想要了解有关 **[Collect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
 2. 添加“自定义库”控件，将其移至“MyMic” 下，并将“自定义库”控件的 **[Items](properties-core.md)** 属性设置为 **Mysounds**。
-3. 在“自定义库”控件的模板中，添加**[音频](control-audio-video.md)** 控件，并将其“媒体”属性设置为 **ThisItem.Url**。
+3. 在“自定义库”控件的模板中，添加 **[音频](control-audio-video.md)** 控件，并将其“媒体”属性设置为 **ThisItem.Url** 。
 4. 按 F5，单击或点击“MyMic”开始录制，然后再次单击或点击以停止录制。
 5. 在“自定义库”控件中，单击或点击**[音频](control-audio-video.md)** 控件中的播放按钮以播放录制的内容。
 6. 根据需要添加多个录制内容，然后按 Esc 返回到默认工作区。
-7. （可选）在“自定义库”控件的模板中，添加**[按钮](control-button.md)** 控件，将 其 **[OnSelect](properties-core.md)** 属性设置为 **Remove(MySounds, ThisItem)**，按 F5，然后单击或点击相应的“按钮”控件删除录制。
+7. （可选）在“自定义库”控件的模板中，添加 **[按钮](control-button.md)** 控件，将 其 **[OnSelect](properties-core.md)** 属性设置为 **Remove(MySounds, ThisItem)** ，按 F5，然后单击或点击相应的“按钮”控件删除录制。
 
 使用 **[SaveData](../functions/function-savedata-loaddata.md)** 函数在本地保存录音，或使用 **[Patch](../functions/function-patch.md)** 函数更新数据源。
 
