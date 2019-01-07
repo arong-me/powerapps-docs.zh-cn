@@ -45,7 +45,7 @@ ms.locfileid: "42834034"
 
 除表以外，还有其他数据源类型，例如电子邮件、日历、Twitter 和（即将推出的）通知。
 
-使用**[库](controls/control-gallery.md)**、**[显示窗体](controls/control-form-detail.md)** 和**[编辑窗体](controls/control-form-detail.md)** 控件，可以轻松创建一个在数据源中读取和写入数据的应用。 若要开始操作，请阅读[了解数据窗体](working-with-forms.md)一文。
+使用 **[库](controls/control-gallery.md)** 、 **[显示窗体](controls/control-form-detail.md)** 和 **[编辑窗体](controls/control-form-detail.md)** 控件，可以轻松创建一个在数据源中读取和写入数据的应用。 若要开始操作，请阅读[了解数据窗体](working-with-forms.md)一文。
 
 除了在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中创建和管理连接外，还可以在执行以下任务时创建连接：
 

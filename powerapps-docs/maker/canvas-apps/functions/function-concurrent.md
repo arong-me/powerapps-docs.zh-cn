@@ -53,7 +53,7 @@ Concurrent 函数同时计算多个公式。 通常情况下，多个公式由 [
 
     ![连接到 Azure 中的 Adventure Works 数据库](media/function-concurrent/connect-database.png)
 
-2. 添加**[按钮](../controls/control-button.md)** 控件，并将其 OnSelect 属性设置为以下公式：
+2. 添加 **[按钮](../controls/control-button.md)** 控件，并将其 OnSelect 属性设置为以下公式：
 
     **ClearCollect( Product, '[SalesLT].[Product]' );<br> ClearCollect( Customer, '[SalesLT].[Customer]' );<br> ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' );<br> ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )**
 
@@ -71,7 +71,7 @@ Concurrent 函数同时计算多个公式。 通常情况下，多个公式由 [
 
     PowerApps 会缓存数据，因此再次选择该按钮不一定会产生四个新请求。 每次要测试性能时，都要关闭并重新打开应用。 如果打开了网络限制，最好将其关闭，直到准备好进行另一个测试。
 
-1. 添加第二个**[按钮](../controls/control-button.md)** 控件，并将其 OnSelect 属性设置为以下公式：
+1. 添加第二个 **[按钮](../controls/control-button.md)** 控件，并将其 OnSelect 属性设置为以下公式：
 
     **Concurrent(<br> &nbsp;&nbsp;&nbsp;&nbsp;ClearCollect( Product, '[SalesLT].[Product]' ),<br> &nbsp;&nbsp;&nbsp;&nbsp;ClearCollect( Customer, '[SalesLT].[Customer]' ),<br> &nbsp;&nbsp;&nbsp;&nbsp;ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),<br> &nbsp;&nbsp;&nbsp;&nbsp;ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )<br> )**
 

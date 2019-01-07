@@ -79,7 +79,7 @@ ShowControls – 音频或视频播放器是否显示播放按钮和音量滑块
    
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 2. 添加[按钮](control-button.md)控件，将其移到 **MyDoodles** 下方，然后设置[按钮](control-button.md)控件的 [Text](properties-core.md) 属性，使其显示为“添加”。
-3. 将此**[按钮](control-button.md)** 控件的 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
+3. 将此 **[按钮](control-button.md)** 控件的 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
    **Collect(Doodles, {Sketch:MyDoodles.Image})**
 4. 添加**图像库**控件，将其移到[按钮](control-button.md)控件下方，然后缩小**图像库**控件的宽度，直至它显示三个项。
 5. 将**映像库**控件的[项](properties-core.md)属性设置为 **Doodles**，然后再按 F5。
@@ -87,7 +87,7 @@ ShowControls – 音频或视频播放器是否显示播放按钮和音量滑块
    
     绘制的图像将在“图像库”控件中显示。
 7. （可选）在“笔输入”控件中，单击或点击图标，清除所绘制的图像，绘制另一个图像，再单击或点击[按钮](control-button.md)控件。
-8. 在**图像库**控件中，将**[图像](control-image.md)** 控件的 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
+8. 在 **图像库** 控件中，将 **[图像](control-image.md)** 控件的 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
    **Remove(Doodles, ThisItem)**
 9. 单击或点击“图像库”控件中的绘图，可将其删除。
 
