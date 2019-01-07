@@ -120,7 +120,7 @@ Web 浏览器中不支持导出功能。
    
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
    
-    想要了解有关**[ ClearCollect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
+    想要了解有关 **[ ClearCollect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
 2. 按 F5，单击或点击“**[按钮](control-button.md)**”控件，然后按 Esc。
 3. 添加“**导出**”控件，并将其 **Data** 属性设置为“**产品**”。
 4. 按 F5，单击或点击“**导出**”控件，然后指定要将数据导出的文件名称。
@@ -132,4 +132,4 @@ Web 浏览器中不支持导出功能。
 
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
-适用**[按钮](control-button.md)** 的相同准则，因为“导出”和“导入”是专用按钮。
+适用 **[按钮](control-button.md)** 的相同准则，因为“导出”和“导入”是专用按钮。

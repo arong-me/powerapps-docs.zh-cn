@@ -87,7 +87,7 @@ ms.locfileid: "49307852"
 1. 添加“HTML 文本”控件，并将其“HTMLText”属性设置为以下值：<br>
    **Source.Text**
    
-     虽然“HTML 文本”控件显示与**[标签](control-text-box.md)** 控件相同的文本，但会将这些标记转换成相应的字符。
+     虽然“HTML 文本”控件显示与 **[标签](control-text-box.md)** 控件相同的文本，但会将这些标记转换成相应的字符。
 
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
