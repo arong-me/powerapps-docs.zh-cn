@@ -97,8 +97,8 @@ search.app:
 
 3.  选择数据包类型**非托管**或**托管**。 这将开始导出，并且可能需要几分钟才会完成。 完成后，Web 浏览器指定的下载文件夹中将包含导出 .zip 文件。
 
-> [!div class="mx-imgBorder"]  
-> ![导出解决方案](media/solution-export.PNG "导出解决方案") 
+    > [!div class="mx-imgBorder"]  
+    > ![导出解决方案](media/solution-export.png "导出解决方案") 
 
 ### <a name="export-from-the-classic-experience"></a>从经典体验导出
 
