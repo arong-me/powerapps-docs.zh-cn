@@ -465,6 +465,10 @@ items:
           href: ./canvas-apps/functions/function-filter-lookup.md
         - name: Lower
           href: ./canvas-apps/functions/function-lower-upper-proper.md
+        - name: Match
+          href: ./canvas-apps/functions/function-ismatch.md
+        - name: MatchAll
+          href: ./canvas-apps/functions/function-ismatch.md
         - name: Max
           href: ./canvas-apps/functions/function-aggregates.md
         - name: Mid
@@ -1072,9 +1076,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: 支持
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: fdf353f31bfdd4e49c069f827c509fbd0603deab
-ms.sourcegitcommit: 8b7ef26f5ae782c73f0ae986e5575c39eaeb90ce
+ms.openlocfilehash: c5a381d191e530f50fb85d79cfcb954e1f3a714c
+ms.sourcegitcommit: f5013108140276b3d66a9dce13a061df89609d26
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54202656"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54890133"
