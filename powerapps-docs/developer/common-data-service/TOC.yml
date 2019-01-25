@@ -1,28 +1,401 @@
 items:
-- name: 概述
+- name: Common Data Service for Apps
+  href: ../../maker/common-data-service/data-platform-intro.md
+- name: 开发人员概述
   href: overview.md
-- name: 解决方案简介
-  href: introduction-solutions.md
-- name: 受支持的应用构建实践
-  href: customization-support.md
-- name: Common Data Service for Apps 数据实体
-  href: entities.md
+- name: 入门
+  href: get-started-CDS-developers.md
   items:
-  - name: 实体元数据
-    href: entity-metadata.md
-  - name: 属性元数据
-    href: entity-attribute-metadata.md
-  - name: 实体关系元数据
-    href: entity-relationship-metadata.md
-  - name: 实体参考
-    href: reference/entities/toc.yml
+  - name: 支持的自定义项
+    href: supported-customizations.md
+- name: 使用代码处理数据
+  href: work-with-data-cds.md
+  items:
+  - name: 使用 Web API
+    href: webapi/index.md
+  - name: 使用组织服务
+    href: org-service/index.md
+  - name: 添加和删除示例数据
+    href: sample-data.md
+  - name: 使用 FetchXML 查询数据
+    href: use-fetchxml-construct-query.md
+    items:
+    - name: 使用 FetchXML 聚合
+      href: use-fetchxml-aggregation.md
+    - name: FetchXML 中的会计日期和 older than 日期时间查询运算符
+      href: use-fetchxml-fiscal-date-older-datetime-query-operators.md
+    - name: 在 FetchXML 中使用左外连接查询记录“not in”
+      href: use-fetchxml-left-outer-join-query-records-not-in.md
+  - name: 保存的查询
+    href: saved-queries.md
+  - name: 查询分层数据
+    href: query-hierarchical-data.md
+  - name: 审核数据更改情况
+    href: auditing-overview.md
+    items:
+    - name: 配置实体和特性进行审核
+      href: configure-entities-attributes-auditing.md
+    - name: 检索已审核的数据更改历史记录并进行删除
+      href: retrieve-and-delete-the-history-of-audited-data-changes.md
+    - name: 审核用户访问情况
+      href: audit-user-access.md
+    - name: 创建自动编号特性
+      href: create-auto-number-attributes.md
+  - name: 检测重复数据
+    href: detect-duplicate-data-with-code.md
+    items:
+    - name: 启用和禁用重复检测
+      href: enable-disable-duplicate-detection.md
+    - name: 运行重复检测
+      href: run-duplicate-detection.md
+    - name: 重复检测消息
+      href: duplicate-detection-messages.md
+    - name: 重复规则实体
+      href: duplicaterule-entities.md
+  - name: 批量删除数据
+    href: delete-data-bulk.md
+  - name: 使用乐观并发来减少潜在的数据丢失
+    href: optimistic-concurrency.md
+  - name: 模拟其他用户
+    href: impersonate-another-user.md
+  - name: 最佳实践
+    href: best-practices/work-with-data/index.md
 - name: 使用代码应用业务逻辑
   href: apply-business-logic-with-code.md
-- name: 使用 Common Data Service for Apps Web 服务
-  href: use-web-services.md
-ms.openlocfilehash: eaae08e6521e3324d58234e0e6af91e331e804b8
-ms.sourcegitcommit: d927af337a829a329a4e971f886849dcea82deac
+  items:
+  - name: 事件框架
+    href: event-framework.md
+    items:
+    - name: 专用更新操作的行为
+      href: special-update-operation-behavior.md
+  - name: 异步服务
+    href: asynchronous-service.md
+  - name: 插件
+    href: plug-ins.md
+    items:
+    - name: 编写插件
+      href: write-plug-in.md
+    - name: 注册插件
+      href: register-plug-in.md
+    - name: 调试插件
+      href: debug-plug-in.md
+    - name: 教程
+      items:
+      - name: 编写和注册插件
+        href: tutorial-write-plug-in.md
+      - name: 调试插件
+        href: tutorial-debug-plug-in.md
+      - name: 更新插件
+        href: tutorial-update-plug-in.md
+  - name: 工作流扩展
+    href: workflow/workflow-extensions.md
+  - name: 可缩放的自定义设计
+    href: scalable-customization-design/overview.md
+  - name: 最佳实践
+    href: best-practices/business-logic/index.md
+- name: 使用代码集成数据
+  items:
+  - name: 导入数据
+    href: import-data.md
+    items:
+    - name: 准备源文件进行导入
+      href: prepare-source-files-import.md
+    - name: 创建数据映射进行导入
+      href: create-data-maps-for-import.md
+    - name: 添加转换映射进行导入
+      href: add-transformation-mappings-import.md
+    - name: 配置数据导入
+      href: configure-data-import.md
+    - name: 运行数据导入
+      href: run-data-import.md
+    - name: 数据导入实体
+      href: data-import-entities.md
+  - name: 数据导出服务
+    href: data-export-service.md
+  - name: 同步密钥
+    href: data-synchronization.md
+    items:
+    - name: 使用备用键来创建记录
+      href: use-alternate-key-create-record.md
+    - name: 通过更改跟踪与外部系统同步数据
+      href: use-change-tracking-synchronize-data-external-systems.md
+    - name: 使用 Upsert 来插入或更新记录
+      href: use-upsert-insert-update-record.md
+  - name: 服务器端同步
+    href: server-side-synchronization-entities.md
+    items:
+    - name: 配置 Exchange 文件夹级跟踪规则
+      href: configure-exchange-folder-level-tracking-rules.md
+  - name: 虚拟实体
+    href: virtual-entities/
+  - name: Azure 集成
+    href: azure-integration.md
+    items:
+    - name: 在 Azure 解决方案中处理数据
+      href: work-data-azure-solution.md
+    - name: 在 Azure 事件中心解决方案中处理事件数据
+      href: work-event-data-azure-event-hub-solution.md
+    - name: 配置与面向应用程序的 Common Data Service 的 Azure 集成
+      href: configure-azure-integration.md
+    - name: 编写自定义 Azure 感知插件
+      href: write-custom-azure-aware-plugin.md
+    - name: 为 Azure 解决方案编写侦听器应用程序
+      href: write-listener-application-azure-solution.md
+    - name: 教程：配置 Azure (SAS) 来与“客户互动管理”集成
+      href: walkthrough-configure-azure-sas-integration.md
+    - name: 教程：使用插件注册工具来注册 Azure 感知插件
+      href: walkthrough-register-azure-aware-plug-in-using-plug-in-registration-tool.md
+    - name: 教程：更新从解决方案中导入的服务终结点
+      href: walkthrough-update-service-endpoint-imported-solution.md
+  - name: 使用 Webhook
+    href: use-webhooks.md
+    items:
+    - name: 使用 Webhook 为服务器事件创建外部处理程序
+      href: use-webhooks.md
+    - name: 注册 Webhook
+      href: register-web-hook.md
+    - name: 测试 Webhook 注册
+      href: test-webhook-registration.md
+- name: 使用面向应用程序的 CDS 实体
+  href: entities.md
+  items:
+  - name: 客户实体
+    href: customer-entities-account-contact.md
+  - name: Activity 实体
+    href: activity-entities.md
+    items:
+    - name: 自定义活动
+      href: custom-activities.md
+    - name: 电子邮件活动实体
+      href: email-activity-entities.md
+    - name: 任务、传真、电话呼叫和信件活动实体
+      href: task-fax-phone-call-letter-activity-entities.md
+    - name: ActivityParty 实体
+      href: activityparty-entity.md
+    - name: ActivityPointer（活动）实体
+      href: activitypointer-activity-entity.md
+    - name: 定期约会
+      items:
+      - name: 定期约会部分扩展模型
+        href: recurring-appointment-partial-expansion-model.md
+      - name: 创建定期约会系列、实例或例外
+        href: create-recurring-appointment-series-instance-exception.md
+      - name: 更新定期约会
+        href: update-recurring-appointment.md
+      - name: 链接定期约会主实例和约会实体的自定义特性
+        href: link-custom-attributes-recurring-master-appointment-entities.md
+  - name: 注释（备注）实体
+    href: annotation-note-entity.md
+  - name: 日历实体
+    href: calendar-entities.md
+    items:
+    - name: 日历类型
+      href: types-calendars.md
+  - name: 对实体排队
+    href: queue-entities.md
+  - name: 主题实体
+    href: subject-entity.md
+  - name: 应用 Azure 服务级别协议 (SLA)
+    href: apply-slas-entities.md
+  - name: 交易货币（货币）实体
+    href: transaction-currency-currency-entity.md
+  - name: 类别实体
+    href: use-category-entity.md
+  - name: 反馈实体
+    href: use-feedback-entity-manage-feedback-ratings-records.md
+  - name: 安全性实体
+    href: security-model.md
+    items:
+    - name: 用户和团队实体
+      href: user-team-entities.md
+      items:
+      - name: 为用户指定时区设置
+        href: specify-time-zone-settings-user.md
+      - name: 时区实体
+        href: time-zone-entities.md
+      - name: BusinessUnit 实体
+        href: businessunit-entity.md
+      - name: 字段安全性实体
+        href: field-security-entities.md
+      - name: 使用“访问”团队和“所有者”团队来协作和共享信息
+        href: use-access-teams-owner-teams-collaborate-share-information.md
+  - name: 模板实体
+    href: upload-manage-document-templates.md
+- name: 使用代码处理元数据
+  href: metadata-services.md
+  items:
+  - name: 浏览环境元数据
+    href: browse-your-metadata.md
+  - name: 实体元数据
+    href: entity-metadata.md
+    items:
+    - name: 自定义实体元数据
+      href: customize-entity-metadata.md
+    - name: 为实体定义备用键
+      href: define-alternate-keys-entity.md
+  - name: 特性元数据
+    href: entity-attribute-metadata.md
+    items:
+    - name: 实体特性元数据消息
+      href: entity-attribute-metadata-messages.md
+    - name: “日期和时间”特性的行为和格式
+      href: behavior-format-date-time-attribute.md
+    - name: 已计算和汇总的特性
+      href: calculated-rollup-attributes.md
+    - name: 多选列表特性
+      href: multi-select-picklist.md
+    - name: 图像特性
+      href: image-attributes.md
+    - name: 定义自定义状态模型转换
+      href: define-custom-state-model-transitions.md
+  - name: 实体关系元数据
+    href: entity-relationship-metadata.md
+    items:
+    - name: 实体关系资格
+      href: entity-relationship-eligibility.md
+    - name: 实体关系元数据消息
+      href: entity-relationship-metadata-messages.md
+    - name: 实体关系级联行为
+      href: configure-entity-relationship-cascading-behavior.md
+  - name: 自定义实体和特性映射
+    href: customize-entity-attribute-mappings.md
+  - name: 通过连接将记录相互链接
+    href: connection-entities.md
+    items:
+    - name: 通过连接角色描述实体之间的关系
+      href: describe-relationship-entities-connection-roles.md
+  - name: 自定义标签来支持多种语言
+    href: customize-labels-support-multiple-languages.md
+  - name: 最佳实践
+    href: best-practices/work-with-metadata/index.md
+- name: 使用解决方案来打包和分发扩展
+  items:
+  - name: 解决方案简介
+    href: introduction-solutions.md
+    items:
+    - name: 解决方案组件的依赖项跟踪
+      href: dependency-tracking-solution-components.md
+    - name: 维护托管解决方案
+      href: maintain-managed-solutions.md
+    - name: 整理解决方案
+      href: organize-solutions.md
+    - name: 组织团队来开发解决方案
+      href: organize-team-develop-solutions.md
+    - name: 使用托管​​属性
+      href: use-managed-properties.md
+    - name: 了解如何合并托管解决方案
+      href: understand-managed-solutions-merged.md
+    - name: 创建支持多种语言的解决方案
+      href: create-solutions-support-multiple-languages.md
+    - name: 如何管理解决方案
+      items:
+      - name: 创建、导出或导入非托管的解决方案
+        href: create-export-import-unmanaged-solution.md
+      - name: 卸载或删除解决方案
+        href: uninstall-delete-solution.md
+      - name: 使用解决方案
+        href: work-solutions.md
+      - name: 创建、安装和更新托管的解决方案
+        href: create-install-update-managed-solution.md
+      - name: 创建修补程序来简化解决方案更新
+        href: create-patches-simplify-solution-updates.md
+      - name: 何时编辑自定义文件
+        href: when-edit-customization-file.md
+  - name: SolutionPackager 工具
+    href: compress-extract-solution-file-solutionpackager.md
+    items:
+    - name: 使用解决方案实现源代码管理
+      href: use-source-control-solution-files.md
+  - name: Package Deployer 工具
+    href: package-deployer/create-packages-package-deployer.md
+  - name: 在 AppSource 上发布应用
+    href: publish-app-appsource.md
+    items:
+    - name: 步骤 1:在 AppSource 中填写应用条件窗体
+      href: fill-app-submission-form-appsource.md
+    - name: 步骤 2：注册 Microsoft 合作伙伴网络帐户
+      href: register-microsoft-partner-network.md
+    - name: 步骤 3：为应用创建托管解决方案
+      href: create-solution-app-appsource.md
+    - name: 步骤 4：为应用创建 AppSource 包
+      href: create-package-app-appsource.md
+    - name: 步骤 5：在 Azure 存储上存储 AppSource 包并使用 SAS 密钥生成 URL
+      href: store-appsource-package-azure-storage.md
+    - name: 后续步骤：在云合作伙伴门户上提交应用
+      href: next-steps-submit-app-cloud-partner-portal.md
+- name: 创建客户端应用程序
+  href: connect-cds.md
+  items:
+  - name: 身份验证
+    href: authentication.md
+    items:
+    - name: .NET Framework 应用程序
+      href: authenticate-dot-net-framework.md
+    - name: 使用 OAuth
+      href: authenticate-oauth.md
+  - name: 教程：向 Azure Active Directory 注册应用
+    href: walkthrough-register-app-azure-active-directory.md
+  - name: 通过服务器到服务器 (S2S) 身份验证构建 Web 应用程序
+    href: build-web-applications-server-server-s2s-authentication.md
+    items:
+    - name: 使用多租户服务器到服务器身份验证
+      href: use-multi-tenant-server-server-authentication.md
+    - name: 使用单租户服务器到服务器身份验证
+      href: use-single-tenant-server-server-authentication.md
+  - name: 结合使用 OAuth 和跨域资源共享来连接单页应用程序
+    href: oauth-cross-origin-resource-sharing-connect-single-page-application.md
+  - name: 教程：使用 adal.js 注册和配置 SPA 应用程序
+    href: walkthrough-registering-configuring-simplespa-application-adal-js.md
+  - name: 使用 XRM 工具构建 Windows 客户端应用
+    href: xrm-tooling/
+  - name: 发现用户组织
+    href: discovery-service.md
+- name: 最佳实践
+  href: best-practices/index.md
+- name: 示例
+  items:
+  - name: Web API
+    href: webapi/samples/toc.yml
+  - name: 组织服务
+    href: org-service/samples/toc.yml
+- name: 资源
+  items:
+  - name: “开发人员资源”页面
+    href: developer-resources-page.md
+  - name: 开发人员工具
+    href: developer-tools.md
+    items:
+    - name: 从 NuGet 下载工具
+      href: download-tools-nuget.md
+  - name: 社区工具
+    href: community-tools.md
+  - name: 测试工具
+    href: testing-tools-server.md
+- name: 参考
+  items:
+  - name: 实体参考
+    href: reference/entities/toc.yml
+  - name: Web API 参考
+    href: /dynamics365/customer-engagement/web-api/about
+  - name: 组织服务
+    href: /dotnet/api/?view=dynamics-general-ce-9
+  - name: XRM 工具
+    href: /dotnet/api/?view=dynamics-xrmtooling-ce-9
+  - name: 虚拟实体
+    href: /dotnet/api/?view=dynamics-virtualentity-ce-9
+  - name: 工作流
+    href: /dotnet/api/?view=dynamics-workflow-ce-9
+  - name: Package Deployer
+    href: /dotnet/api/?view=dynamics-deployer-ce-9
+  - name: 自定义解决方案文件架构
+    href: customization-solutions-file-schema.md
+  - name: 解决方案组件文件参考 (SolutionPackager)
+    href: solution-component-file-reference-solutionpackager.md
+  - name: FetchXML 架构
+    href: fetchxml-schema.md
+ms.openlocfilehash: 4d22298f104f83f0482503c7ddea55b7cdd8a6cf
+ms.sourcegitcommit: 72c97378e96fb54e5d92ec087a59dd0fb1444f99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42826405"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54334100"

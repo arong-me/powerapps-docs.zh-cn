@@ -6,6 +6,8 @@ items:
     href: signup-for-powerapps.md
   - name: 注册社区计划
     href: dev-community-plan.md
+  - name: 新功能
+    href: ../whats-new.md
 - name: 查找并运行应用
   href: ../user/index.md
   items:
@@ -82,8 +84,6 @@ items:
   items:
   - name: 登录到 PowerApps
     href: ./canvas-apps/intro-maker-portal.md
-  - name: 新功能
-    href: ./canvas-apps/release-notes.md
 - name: 画布应用
   href: ./canvas-apps/getting-started.md
   items:
@@ -695,6 +695,8 @@ items:
       href: ./canvas-apps/offline-apps.md
     - name: 让客户体验你的应用
       href: ./canvas-apps/dev-appsource-test-drive.md
+    - name: 创建组件
+      href: ./canvas-apps/create-component.md
 - name: 模型驱动应用
   href: ./model-driven-apps/model-driven-app-overview.md
   items:
@@ -794,6 +796,10 @@ items:
           href: ./model-driven-apps/pass-current-embedded-canvas-app.md
         - name: 将相关记录传递到嵌入的画布应用
           href: ./model-driven-apps/pass-related-embedded-canvas-app.md
+        - name: 共享内嵌画布应用
+          href: ./model-driven-apps/share-embedded-canvas-app.md
+        - name: 内嵌画布应用指南
+          href: ./model-driven-apps/embedded-canvas-app-guidelines.md
       - name: 处理视图
         href: ./model-driven-apps/create-edit-views.md
         items:
@@ -1066,9 +1072,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: 支持
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 57d63b8a8530fdf225f17fddfa5cb8c00cbb0ef9
-ms.sourcegitcommit: e0845b95cc969cff13d469e26ce30b62c56dc59a
+ms.openlocfilehash: fdf353f31bfdd4e49c069f827c509fbd0603deab
+ms.sourcegitcommit: 8b7ef26f5ae782c73f0ae986e5575c39eaeb90ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53587754"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54202656"
