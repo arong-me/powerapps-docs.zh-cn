@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: 0ab787c8b98d7c0fdc596f21028fad59a2552f8b
-ms.sourcegitcommit: e3330801e700110048c31d251b9789a1c0f98a4a
+ms.openlocfilehash: da5273e385da3f616404a531f91a96393ed63bc2
+ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54363976"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290894"
 ---
 <div id="main"
    class="v2">
@@ -296,6 +296,7 @@ ms.locfileid: "54363976"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/fields-overview">字段</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/cds-processes">应用业务逻辑</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/solutions-overview">解决方案</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/en-us/download/details.aspx?id=57777">白皮书：使用解决方案实现 ALM</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-powerbi-connector">基于面向应用程序的 CDS 的数据构建 Power BI 报表</a></p>
                                  </div>
                               </div>
@@ -581,6 +582,7 @@ ms.locfileid: "54363976"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/compress-extract-solution-file-solutionpackager">SolutionPackager 工具</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">Package Deployer 工具</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">在 AppSource 上发布应用</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/en-us/download/details.aspx?id=57777">白皮书：使用解决方案实现 ALM</a></p>
                                  </div>
                               </div>
                            </div>
