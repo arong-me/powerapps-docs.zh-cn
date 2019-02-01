@@ -16,12 +16,12 @@ search.audienceType:
 - developer
 search.app:
 - PowerApps
-ms.openlocfilehash: 6cb500e681be7a3be6a1ac0e0dc54caa2981893c
-ms.sourcegitcommit: 5198d7d99f157cd42830f833712175a2228aae5e
+ms.openlocfilehash: 088804f429e23a8824c3c132c3011308935a5b66
+ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54069364"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290825"
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps 的最近更新
 
@@ -38,7 +38,9 @@ ms.locfileid: "54069364"
 
 ## <a name="release-notes"></a>发行说明
 
-有关可用于规划的未来几个月内发布的新功能的信息，请参阅 [2018 年 10 月发行说明](https://docs.microsoft.com/business-applications-release-notes/October18/powerapps/planned-features)。
+有关可用于规划的未来几个月内发布的新功能的信息，请参阅：
+- [2018 年 10 月发行说明](https://docs.microsoft.com/business-applications-release-notes/October18/powerapps/planned-features)
+- [2019 年 4 月发行说明](https://docs.microsoft.com/business-applications-release-notes/April19/microsoft-powerapps/planned-features)
 
 ## <a name="known-limitations"></a>已知的限制
 
