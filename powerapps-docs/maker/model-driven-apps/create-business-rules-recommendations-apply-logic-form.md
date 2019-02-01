@@ -1,7 +1,7 @@
 ---
 title: 创建模型驱动应用程序的业务规则和建议 | MicrosoftDocs
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 12/06/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -128,7 +128,22 @@ search.app:
 <a name="BKMK_LocalizingErrorMessages"></a>   
 ## <a name="localize-error-messages-used-in-business-rules"></a>本地化业务规则中使用的错误消息  
  如果为组织配置了多种语言，则需要将设置的错误消息本地化。 每次设置消息时，系统会生成一个标签。 如果您导出组织中的翻译，就可以添加消息的本地化版本，然后将这些标签重新导入到系统中，从而使使用非基本语言的用户可以查看经过翻译的消息。  
-  
+
+## <a name="is-your-business-rule-not-firing-for-a-form"></a>您的业务规则是否不响应窗体？
+由于窗体中不包含业务规则内应用的字段，所以可能不执行业务规则。 
+1.  打开解决方案资源管理器。 展开所需实体，然后选择**窗体**。 
+2.  打开所需窗体，然后在窗体设计器功能区上选择**业务规则**。 
+3.  在窗体设计器中，打开业务规则。 
+4.  在业务规则设计器中，选择每个条件和操作以验证每个条件和操作中引用的所有字段。 
+
+     > [!div class="mx-imgBorder"] 
+     > ![](media/business-rule-field.png "实体中存在业务规则内引用的字段")
+
+ 5. 验证窗体中是否也包含业务规则内引用的每个字段。 如果不包含，则将缺少的字段添加到窗体。
+
+     > [!div class="mx-imgBorder"] 
+     > ![](media/account-name-on-form.png "窗体中的客户名称字段")
+
 ## <a name="next-steps"></a>后续步骤  
  [通过流程创建自定义业务逻辑](guide-staff-through-common-tasks-processes.md)   
  [创建业务流程](/flow/create-business-process-flow)   

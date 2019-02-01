@@ -1,7 +1,7 @@
 ---
 title: 创建和设计模型驱动应用程序窗体 | MicrosoftDocs
 ms.custom: ''
-ms.date: 06/26/2018
+ms.date: 12/06/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -51,6 +51,39 @@ PowerApps 提供了许多窗体设计选项。 借助统一接口，更新了大
 |已保存的视图|服务|服务活动|SharePoint 网站|场所|  
 |区域|单位|计价单位组|||  
   
+## <a name="form-display-faq"></a>窗体显示常见问题
+
+### <a name="why-is-my-form-not-visible-in-the-form-selector-drop-down-in-my-app"></a>我的应用中窗体选择器下拉列表内为什么不显示我的窗体？
+不显示窗体的原因可能是因为尚未将其添加到应用中。
+1. 在应用程序设计器中打开该窗体。
+2. 在**实体视图**区域中选择实体旁边的**窗体**。
+3. 在**组件**选项卡上演着应用中是否包含主窗体。 验证是否已选中了要显示的窗体。 如果未选中，请选中，保存，然后发布应用。
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/forms-included-in-app.png "应用中随附窗体")
+   
+### <a name="why-isnt-my-form-displayed-as-the-default-form-in-the-app"></a>为什么我的窗体在应用中不显示为默认窗体？
+可通过配置窗体顺序或在用户将默认窗体设置为个性化设置时间窗体设置为默认窗体。
+1. 打开解决方案资源管理器。 展开包含要排序的窗体的实体，然后选择**窗体**。
+2. 在工具栏上，选择**窗体顺序** > **主窗体集**。 
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/form-order-toolbar.png "窗体顺序工具栏命令")
+   
+3. 将显示窗体顺序。 选择窗体并使用向上箭头和向下箭头在窗体顺序内移动窗体。 列表顶部的窗体为默认窗体。 
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/form-order-dialog.png "“窗体顺序”对话框")
+   
+4. 选择**确定**保存窗体顺序更改。
+5. 在窗体设计器工具栏上，选择**发布**以便在应用中应用窗体顺序。
+ 
+#### <a name="form-order-user-personalization-setting"></a>窗体顺序用户个性化设置
+请注意，如果应用用户在应用的窗体选择器下拉列表中更改窗体的选择，该窗体将变为用户的默认窗体。 此项个性化设置将覆盖在应用中为实体指定的默认窗体。
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/change-form-user-setting.png "用于更改默认窗体的用户设置")
+   
 ### <a name="related-topics"></a>相关主题  
     
 [指定窗体顺序](assign-form-order.md) <br />

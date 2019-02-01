@@ -2,7 +2,7 @@
 title: 在 PowerApps 选择和配置模型驱动应用程序视图中的列 | MicrosoftDocs
 description: 了解如何选择和配置您的应用的视图
 keywords: ''
-ms.date: 06/11/2018
+ms.date: 11/27/2018
 ms.service: crm-online
 ms.custom: null
 ms.topic: article
@@ -26,11 +26,11 @@ search.app:
   - D365CE
 ---
 
-# <a name="tutorial-choose-and-configure-columns-in-model-driven-app-views"></a>教程：选择和配置模型驱动应用程序视图中的列
+# <a name="choose-and-configure-columns-in-model-driven-app-views"></a>选择和配置模型驱动应用程序视图中的列
 
 <a name="BKMK_ChooseAndConfigureColumns"></a>   
 
- 与筛选条件一样，在 PowerApps 视图中可见的列对于视图提供的值非常重要。 在本教程中，您通过执行以下任务创建或编辑视图：  
+ 与筛选条件一样，在 PowerApps 视图中可见的列对于视图提供的值非常重要。 在本主题中，您通过执行以下任务创建或编辑视图：  
 
 -   [打开视图编辑器](choose-and-configure-columns.md#open-the-view-editor)  
    
@@ -41,10 +41,14 @@ search.app:
 -   [更改列宽度](choose-and-configure-columns.md#BKMK_ChangeColumnWidth)  
   
 -   [移动列](choose-and-configure-columns.md#BKMK_MoveAColumns)  
-  
--   [对列启用或禁用状态显示](choose-and-configure-columns.md#BKMK_EnableOrDisablePresence)  
-  
--   [添加查找列](choose-and-configure-columns.md#BKMK_AddFindColumns)  
+    
+  > [!IMPORTANT]
+  > 最新视图设计器版本现在正处于预览阶段。 尚不支持某些功能，如启用或禁用列显示和添加查找列。 若要完成这些任务，请[在经典视图设计器中打开视图](/dynamics365/customer-engagement/customize/create-and-edit-views#open-the-classic-view-designer)。
+  >  -   [对列启用或禁用状态显示](/dynamics365/customer-engagement/customize/choose-and-configure-columns#BKMK_EnableOrDisablePresence)  
+  >
+  >  -   [添加查找列](choose-and-configure-columns.md#BKMK_AddFindColumns)  
+
+
 
 ### <a name="open-the-view-editor"></a>打开视图编辑器
 
@@ -61,27 +65,20 @@ search.app:
 ### <a name="add-columns"></a>添加列  
  您可以从当前实体或与当前实体具有 1:N 实体关系的任意相关实体中包含列。  
   
- 例如，您可能希望在列中显示用户负责实体的负责人。 您可以选择当前实体的 **负责人** 字段以显示负责人的名称。 这将显示为链接来为身为负责人的人员打开 **用户** 记录。 在这种情况下，也可以选择[启用或禁用列的状态](choose-and-configure-columns.md#BKMK_EnableOrDisablePresence)。  
+ 例如，您可能希望在列中显示用户负责实体的负责人。 您可以选择当前实体的 **负责人** 字段以显示负责人的名称。 这将显示为链接来为身为负责人的人员打开 **用户** 记录。  
   
  如果要查看记录的负责人电话号码，那么您必须选择从 **记录类型** 下拉菜单中选择 **负责用户（用户）**，然后选择 **主要电话** 字段。  
   
 #### <a name="add-columns-to-views"></a>将列添加到视图  
   
-1.  当创建和编辑视图时，选择**添加列**。 
+1.  编辑和创建视图时，请确保**字段**面板已打开。 如果未打开，请选择工具栏上的**添加字段**。 
 
     > [!div class="mx-imgBorder"] 
-    > ![视图编辑器添加列](media/view-editor.png)
+    > ![视图编辑器添加列](media/fields-drawer-view-designer.png)
 
-    此时会显示**添加列**对话框。
+2.  选择要添加到视图设计器的字段。 这将把字段作为列添加到视图右侧。
 
-    > [!div class="mx-imgBorder"] 
-    > ![添加列](media/add-columns.png)
-  
-2.  如果要包含来自相关实体的字段，请选择**记录类型**。  
-  
-3.  您可以选择多个字段，即使是从相关实体中选择。  
-  
-4.  在选择所需的字段时，请选择**确定**以关闭**添加列**对话框。  
+3.  选择**相关**选项卡可查看相关实体及其相应字段。
   
  因为您添加列，所以将增加视图的宽度。 如果视图宽度超过页面中显示它时可用的空间，水平滚动条将允许用户滚动和查看隐藏列。  
   
@@ -94,68 +91,26 @@ search.app:
 <a name="BKMK_RemoveColumns"></a>   
 ### <a name="remove-columns"></a>删除列  
   
-1.  创建和编辑视图时，选择要移除的列。  
+1.  选择要移除的列的标题。  
   
-2.  在**常规任务**区域中，选择**移除**。  
-  
-3.  在确认消息中，选择**确定**。  
+2.  在下拉列表中，选择**移除**。  
   
 <a name="BKMK_ChangeColumnWidth"></a>   
 ### <a name="change-column-width"></a>更改列宽度  
   
-1.  创建和编辑视图时，选择要更改的列。  
+1.  将鼠标光标悬停在视图中列之间的区域上方。  
   
-2.  在**常规任务**区域中，选择**更改属性**。  
+2.  将显示一条线，而鼠标光标则变为双向箭头。  
   
-3.  在**更改列属性**对话框中，选择一个选项以设置列宽，然后选择**确定**。  
+3.  将列拖到适当宽度。  
   
 <a name="BKMK_MoveAColumns"></a>   
 ### <a name="move-a-column"></a>移动列  
   
-1.  创建和编辑视图时，选择要移动的列。  
+单击列标题并拖到正确位置。
   
-2.  在**常规任务**区域中，使用箭头向左或向右移动该列。  
+> [!TIP]
+>   也可以选择要移动的列的标题，然后从下拉列表选择**右移**或**左移**。  
   
-<a name="BKMK_EnableOrDisablePresence"></a>   
-### <a name="enable-or-disable-presence-for-a-column"></a>对列启用或禁用状态显示  
- 满足以下条件时，用户可以在列表中看到 Skype for Business 联机状态控件，该控件显示用户是否有空，并允许用户通过即时消息与其交互：  
-  
--   用户使用 Edge 或 Internet Explorer。  
-  
--   用户已安装 Skype for Business。  
-  
--   用户在 Internet Explorer 中启用 Microsoft ActiveX。  
-  
--   您的组织在系统设置中已启用系统的状态。  
-  
- 状态控制和启用设置仅可用于针对启用电子邮件的实体（用户、联系人、商机、潜在顾客或自定义实体）显示主字段的列。  
-  
-#### <a name="enable-or-disable-skype-for-business-presence-for-a-column"></a>对列启用或禁用 Skype for Business 状态  
-  
-1.  创建和编辑视图时，选择要更改的列。  
-  
-2.  在**常规任务**区域中，选择**更改属性**。  
-  
-3.  在**更改列属性**对话框中，选择或删除**启用此列的状态显示**，然后选择**确定**。  
-  
-<a name="BKMK_AddFindColumns"></a>   
-### <a name="add-find-columns"></a>添加查找列  
- 查找列是应用程序用户在搜索的列，当用户使用列表中显示的**搜索记录** 文本框或者在应用程序中任何时间能够对实体的记录进行搜索，例如，用户搜索查找字段的某个记录。  
-  
-1.  打开**快速查找**视图。 有关快速查找视图的信息，请参阅[视图类型](create-edit-views.md#types-of-views)。  
-  
-2.  选择**添加查找列**以打开对话框。  
-  
-3.  选择包含要搜索的字段。  
-  
-4.  选择**确定**以关闭**添加查找列**对话框。  
-
-## <a name="community-tools"></a>社区工具
-
-**View Layout Replicator** 和**视图设计器**是 XrmToolbox 社区提供并为 Dynamics 365 customer engagement 开发的工具。 请参阅[开发人员工具](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools)主题以获取社区开发的工具。
-
-> [!NOTE]
-> 这些社区工具不是 Microsoft Dynamics 的产品，因此不能将支持延伸到这些社区工具。 如果有与该工具相关的疑问，请联系发布者。 详细信息：[XrmToolBox](https://www.xrmtoolbox.com)。 
-
 ## <a name="next-steps"></a>后续步骤
 [创建或编辑视图](create-edit-views.md)

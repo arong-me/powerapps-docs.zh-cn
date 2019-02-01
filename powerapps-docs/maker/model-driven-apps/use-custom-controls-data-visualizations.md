@@ -23,9 +23,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="tutorial-use-custom-controls-for-model-driven-app-data-visualizations"></a>教程：使用自定义控件实现模型驱动应用程序的数据可视化
+# <a name="use-custom-controls-for-model-driven-app-data-visualizations"></a>使用自定义控件实现模型驱动应用程序的数据可视化
 
-在本教程中，您将了解如何配置字段的自定义控件。 
+在本主题中，您将了解如何配置字段的自定义控件。 
 
 自定义控件让您可以将应用程序用户界面组件（如传统上包含文本的字段或视图）转换为可视化项。 自定义控件可以在字段、窗体、仪表板、视图和网格上配置。 例如，滑块控件可以在数字字段上配置。
 

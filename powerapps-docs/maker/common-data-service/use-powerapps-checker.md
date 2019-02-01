@@ -17,36 +17,41 @@ search.app:
 
 # <a name="use-solution-checker-to-validate-your-model-driven-apps-in-powerapps"></a>在 PowerApps 中使用解决方案检查器验证模型驱动的应用
 
-为了履行复杂的业务要求，模型驱动的应用开发者通常最终会推出极为高端的解决方案，用于自定义和扩展面向应用的 Common Data Service (CDS) 平台。 高级实施伴随着风险上升，并带来性能、稳定性和可靠性问题，从而影响最终用户的体验。 确定这些问题和了解其解决方法可能非常复杂，并且很费时间。 通过解决方案检查器，您可以使用一组最佳实践规则对解决方案执行各种静态分析检查，并快速确定这些问题模式。 检查完成后，将收到详细报告，其中列出了确定的问题，受影响的组件和代码，以及介绍各问题解决方法的文档的链接。
+为了履行复杂的业务要求，模型驱动的应用开发者通常最终会推出极为高端的解决方案，用于自定义和扩展面向应用的 Common Data Service (CDS) 平台。 高级实施伴随着风险上升，并带来性能、稳定性和可靠性问题，从而影响用户的体验。 确定这些问题和了解其解决方法可能非常复杂，并且很费时间。 通过解决方案检查器，您可以使用一组最佳实践规则对解决方案执行各种静态分析检查，并快速确定这些问题模式。 检查完成后，将收到详细报告，其中列出了确定的问题，受影响的组件和代码，以及介绍各问题解决方法的文档的链接。
 
-解决方案检查器分析以下解决方案组件。 
+解决方案检查器分析以下解决方案组件： 
 - 面向应用程序的 CDS 插件
 - 面向应用程序的 CDS 自定义工作流活动 
 - 面向应用程序的 CDS Web 资源（HTML 和 JavaScript）
 - 面向应用程序的 CDS 配置，如 SDK 消息步骤 
 
-解决方案检查器支持可从环境中导出的非托管解决方案。 解决方案检查器不支持以下解决方案。 
+解决方案检查器支持可从环境中导出的非托管解决方案。 解决方案检查器*不*支持以下解决方案： 
+
+
+<!--from editor: Should it be Common Data Service (singular) below, rather than Services? -->
+
 - 系统默认解决方案（默认解决方案和 Common Data Services 默认解决方案）。
 - 包含使用 ECMAScript 6 (2015) 或更高版本的 JavaScript 的解决方案。 如果检测到使用这些版本之一的 JavaScript，将报告 Web 资源发生了 JS001 语法问题。
 
-> [!NOTE]
-> 此功能目前处于预览阶段，只有北美地区才可以使用。 
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
-
 
 ## <a name="enable-the-solution-checker"></a>启用解决方案检查器
-安装 PowerApps 检查器解决方案之后，PowerApps 的“解决方案”区域中将提供解决方案检查器。 请注意，在 Microsoft AppSource 中浏览或搜索找不到此功能。 必须按照以下步骤安装。  
+安装 PowerApps 检查器解决方案之后，PowerApps 的“解决方案”区域中将提供解决方案检查器。 请注意，在 Microsoft AppSource 中浏览或搜索找不到此功能。 若要安装，请执行以下步骤：  
 
 1. 登录 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后选择要启用解决方案检查器的 Common Data Service 环境。 
 2. 在左侧导航窗格中，选择**解决方案**。
-3. 在工具栏上，选择**解决方案检查器**，然后选择 **安装** – 这将打开 Microsoft AppSource 页面。 如果浏览器阻止页面打开，必须允许弹出窗口。 
+3. 在工具栏上，选择**解决方案检查器**，然后选择 **安装** – 这将打开 Microsoft AppSource 页面。 如果浏览器阻止页面打开，需要允许弹出窗口。 
 
-   ![安装解决方案检查器](media/solution-checker-install.png)
+   > [!div class="mx-imgBorder"]
+   > ![安装解决方案检查器](media/solution-checker-install.png "安装解决方案检查器")
 
 4. 在 AppSource 页面中选择**免费试用**。 
-5. 如果您同意，请接受条款和条件，然后选择环境以安装 PowerApps 检查器解决方案。 
-6.  安装完毕后，在 PowerApps 站点上刷新**解决方案**列表以验证解决方案检查器是否可用。  
-7. 若要检查解决方案，请[运行解决方案检查器](#run-the-solution-checker)。
+
+
+<!--from editor: Should it be "solution checker" rather than "checker solution" in the following step?
+
+5. If you agree, accept the terms and conditions and select the environment to install the PowerApps checker solution. 
+6. When the installation is complete, refresh the **Solution** list on the PowerApps site to verify that the solution checker is available.  
+7. To check a solution, [Run the solution checker](#run-the-solution-checker).
 
 
 <!-- ### Components created with the PowerApps checker
@@ -66,20 +71,22 @@ When you install the PowerApps checker these solution specific components are cr
 2. 在左侧窗格中选择**解决方案**。 
 3. 在要分析的非托管解决方案旁边，选择 **...**，指向**解决方案检查器**，然后选择**运行**。 
 
-   ![运行解决方案检查器命令](media/solution-checker-run.png)
+   > [!div class="mx-imgBorder"]
+   > ![运行解决方案检查器命令](media/solution-checker-run.png "运行解决方案检查器命令")
 
 4.  **解决方案**页面右上角的状态窗格显示**正在运行解决方案检查器**。 
 
-    ![解决方案检查器状态](media/solution-checker-status.png)
+    > [!div class="mx-imgBorder"]
+    > ![解决方案检查器状态](media/solution-checker-status.png "解决方案检查器状态")
    
-     请注意以下事项：
-       - 解决方案检查器可能需要几分钟才能完成分析。 
+    请注意以下事项：
+    - 解决方案检查器可能需要几分钟才能完成分析。 
     
-       - 此时**解决方案**列表的 **解决方案检查**列中的状态为**正在运行...**。 
+    - 此时**解决方案**列表的 **解决方案检查**列中的状态为**正在运行...**。 
     
-       - 检查完成后，您将收到电子邮件通知，PowerApps 站点的**通知**区域中也会显示通知。  
+    - 检查完成后，您将收到电子邮件通知，PowerApps 站点的**通知**区域中也会显示通知。  
 
-5.  检查完成后[查看报告](#reviewing-the-solution-checker-report)。
+5.  检查完成后[查看报告](#review-the-solution-checker-report)。
 
 ## <a name="cancel-a-check"></a>取消检查
 
@@ -96,9 +103,9 @@ When you install the PowerApps checker these solution specific components are cr
 |正在运行     | 正在分析解决方案。       |
 |无法完成     |  已请求分析解决方案，但是未成功完成。       |
 |截止*日期和时间*的结果   | 解决方案分析完成，可下载结果。      |
-| 无法完成。 截止*日期和时间*的结果     | 最近的分析请求未成功完成。 可以下载最近的成功结果。         |
-|由 Microsoft 检查     | 这是 Microsoft 管理的解决方案。 不允许对这些解决方案进行解决方案分析。         |
-|由发布方检查     |  这是第三方管理的解决方案。 现在不能对这些解决方案进行解决方案分析。        |
+|无法完成。 截止*日期和时间*的结果     | 最近的分析请求未成功完成。 可以下载最近的成功结果。         |
+|由 Microsoft 检查     | 这是 Microsoft 托管解决方案。 不允许对这些解决方案进行解决方案分析。         |
+|由发布方检查     | 这是第三方管理的解决方案。 现在不能对这些解决方案进行解决方案分析。        |
 
 
 ## <a name="review-the-solution-checker-report"></a>查看解决方案检查器报告
@@ -113,9 +120,9 @@ When you install the PowerApps checker these solution specific components are cr
 |报告字段 |说明  |适用于组件   |
 |---------|---------|---------|
 |问题     |   解决方案中确定的问题的标题。      | 所有        |
-|类别     | 确定的问题的分类，如**性能**、**使用情况**或**支持能力**。      |  所有       |
+|类别     | 确定的问题的分类，如**性能**、**使用情况**或**支持能力**。      |  所有     |
 |严重性     | 表示确定的问题的潜在影响。 可用影响类型为**高**、**中**、**低**、**参考**。         |  所有       |
-|指导     |  详细说明问题、影响和建议解决方法的文章的链接。 操作。       |  所有       |
+|指导     |  详细说明问题、影响和建议操作的文章的链接。       |  所有       |
 |组件     |  确定有问题的解决方案组件。        |   所有      |
 |Location     |  确定发生了问题的组件的位置和/或源文件，如程序集或 JavaScript 文件名。        |  所有       |
 |行号     |  问题在受影响 Web 资源组件中的行号参考。       |  Web 资源       |
@@ -126,9 +133,7 @@ When you install the PowerApps checker these solution specific components are cr
 |注释     | 包含高级别解决方法步骤的问题相关详细信息。         |  所有       |
 
 
-
 ## <a name="best-practice-rules-used-by-solution-checker"></a>解决方案检查器使用的最佳实践规则
-
 
 |解决方案组件  |规则名称  |规则说明  |
 |---------|---------|---------|
@@ -162,5 +167,4 @@ When you install the PowerApps checker these solution specific components are cr
 
 
 ## <a name="see-also"></a>另请参阅
-[了解 PowerApps 中的实验性功能和预览功能](../canvas-apps/working-with-experimental.md) <br/>
 [有关构建 PowerApps 解决方案的指南和最佳实践](https://docs.microsoft.com/dynamics365/customer-engagement/guidance/)
