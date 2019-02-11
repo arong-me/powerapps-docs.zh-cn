@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/03/2018
+ms.date: 02/01/2019
 ms.author: manasma
 search.audienceType:
 - admin
@@ -15,12 +15,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: c7de26bff38ee0425e8bb3f9bc0da72317f0a6cf
-ms.sourcegitcommit: 6e2fa2665ded6ac6fd271e1a12f4e3227ebc8865
+ms.openlocfilehash: f7b5fb27e5b135239e1fe2306f7c431d6d1e6aae
+ms.sourcegitcommit: 676cfa415f67e2e8fcfcf30fab83fc118a6f3210
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48246111"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55558740"
 ---
 # <a name="create-a-common-data-service-for-apps-database"></a>创建 Common Data Service for Apps 数据库
 可以将 Common Data Service (CDS) for Apps 用作数据存储，从而创建数据库并生成应用。 可以创建你自己的自定义实体，也可以使用预定义的实体。 若要创建数据库，要么必须先创建一个环境，要么必须以“环境管理员”身份分配到现有环境。此外，还必须分配有相应的许可证。 若要了解如何购买 CDS for Apps 使用套餐，请参阅[定价信息](pricing-billing-skus.md)。
@@ -45,17 +45,12 @@ ms.locfileid: "48246111"
     
     ![](./media/create-database/DB-Choose-options.png)
 
-
-
 ## <a name="create-a-database-in-the-entities-pane-of-powerapps"></a>在 PowerApps 的“实体”窗格中创建数据库
 1. 在 [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开“数据”部分，然后单击或点击左侧导航窗格中的“实体”。
 
 2. 单击“创建数据库”以创建数据库。
 
     ![](./media/create-database/Create-DB-From-Entities.png)
-
-> [!NOTE]
-> 目前，不能在 Azure AD 区域外部创建数据库。 在不久的将来，可以在不同于 Azure AD 主区域的其他区域创建数据库，但现在，请确保在具有与 Azure AD 主区域相同区域的环境中创建数据库。
 
 ## <a name="security-model-for-the-databases"></a>数据库的安全模型
 创建数据库后，具有环境角色的用户继续保有相应权限。  

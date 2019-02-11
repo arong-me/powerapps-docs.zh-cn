@@ -5,7 +5,7 @@ author: sabinn-msft
 ms.service: powerapps
 ms.topic: how-to
 ms.component: cds
-ms.date: 10/15/2018
+ms.date: 1/31/2019
 ms.author: sabinn
 search.audienceType:
 - admin
@@ -13,12 +13,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: dfbc420dfb4945cdda635e3cbaadb1acb446753b
-ms.sourcegitcommit: ebd39753e2a0b60c1d8c016e38c00dd1accf5d0c
+ms.openlocfilehash: 8723021a59ca1ecbbdff41ddfa793684fe1ee970
+ms.sourcegitcommit: 47a4218445e5715bc1f7bf7bd8735b2a42c33935
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328685"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55514021"
 ---
 # <a name="integrate-data-into-common-data-service-for-apps"></a>将数据集成到 Common Data Service for Apps
 
@@ -31,6 +31,9 @@ ms.locfileid: "49328685"
 > [!div class="mx-imgBorder"]
 > ![数据源到目标](media/data-integrator/DataIntegratorP2P-new.PNG "数据源到目标")
 
+> [!TIP]
+> 查看博客：[Data Integrator Updates – New features with an intuitive user interface providing a fluent experience](https://powerapps.microsoft.com/blog/data-integrator-updates-new-features-with-an-intuitive-user-interface-providing-a-fluent-experience/)（数据集成器更新 – 新增功能以及提供流畅体验的直观用户界面）。
+
 ## <a name="how-can-you-use-the-data-integrator-for-your-business"></a>如何将数据集成器用于你的业务？
 
 数据集成器（面向管理员）还支持基于过程的集成方案，如“从目标客户到现金”提供 Dynamics 365 for Finance and Operations 和 Dynamics 365 for Sales 之间的直接同步。 提供“数据集成”功能的“从目标客户到现金”模板启用 Finance and Operations 和 Sales 之间的帐户、联系人、产品、销售报价、销售订单和销售发票的数据流。 当数据在 Finance and Operations 和 Sales 之间流动时，你可以在 Sales 中执行销售和市场营销活动，并可以使用 Finance and Operations 中的库存管理处理订单履行。 
@@ -40,7 +43,7 @@ ms.locfileid: "49328685"
 
 “从目标客户到现金”集成可让销售人员凭借 Dynamics 365 for Sales 的优势处理并监视其销售过程，同时使用 Finance and Operations 中的丰富功能完成履行和开票的各个方面。 借助 Microsoft Dynamics 365“从目标客户到现金”集成，可以获得两个系统结合起来的能力。 
 
-请观看视频：[“从目标客户到现金”集成](https://www.youtube.com/watch?v=AVV9x5x-XCg)
+请观看视频：[Prospect to cash integration](https://www.youtube.com/watch?v=AVV9x5x-XCg)（“从目标客户到现金”集成）
 
 有关“从目标客户到现金”集成的详细信息，请参阅有关[从目标客户到现金解决方案](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash)的文档。
 
@@ -73,7 +76,7 @@ ms.locfileid: "49328685"
 
 **创建连接**
 
-1. 转到 [PowerApps 管理中心](https://admin.powerapps.com)。
+1. 转到 [PowerApps](https://web.powerapps.com)。
 
 2. 在“数据”下，选择“连接”，然后选择“新建连接”。
 
@@ -130,6 +133,8 @@ ms.locfileid: "49328685"
 ### <a name="how-to-create-a-data-integration-project"></a>如何创建数据集成项目
 
 项目启用系统之间的数据流。 项目包含一个或多个实体的映射。 映射指示哪些字段映射到哪些其他字段。
+
+<a name="CreateProject">
 
 **创建数据集成项目**
 
@@ -197,6 +202,10 @@ ms.locfileid: "49328685"
 
     在任何一种情况下，还可以选择手动“重新运行执行”。
 
+> [!NOTE]
+> 每当手动或依据计划执行项目时，都会生成一个详细的日志，显示项目名称、上次更新时间戳以及状态。 可在每个项目的执行历史记录下查看该日志。 项目执行历史记录保留 45 天才会自动清除。
+
+
 ### <a name="how-to-set-up-a-schedule-based-refresh"></a>如何设置基于计划的刷新
 
 我们目前支持两种类型的执行/写入：
@@ -235,6 +244,7 @@ ms.locfileid: "49328685"
 对于试用租户，还需要遵循一项额外限制，即已安排项目只能运行前 50 次。
 > - 虽然支持安排项目每分钟运行一次，但请注意，这可能会给应用造成很大压力，进而影响整体性能。 强烈建议用户在真实负载条件下测试项目执行情况，同时优化性能并减少刷新频率。
 在生产环境中，建议每个租户每分钟运行的项目数不超过 5 个。
+> - 每当手动或依据计划执行项目时，都会生成一个详细的日志，显示项目名称、上次更新时间戳以及状态。 可在每个项目的执行历史记录下查看该日志。 项目执行历史记录保留 45 天才会自动清除。
 
 ## <a name="customizing-projects-templates-and-mappings"></a>自定义项目、模板和映射 
 
@@ -266,9 +276,9 @@ ms.locfileid: "49328685"
 
 4. 自定义字段映射后，选择“保存”。
 
-### <a name="how-to-customize-or-create-your-own-template"></a>如何自定义或创建你自己的模板 
+### <a name="how-to-create-your-own-template"></a>如何创建自己的模板 
 
-**创建你自己的模板**
+**通过修改现有模板创建自己的模板**
 
 1. 转到 [PowerApps 管理中心](https://admin.powerapps.com)。
 
@@ -318,6 +328,51 @@ ms.locfileid: "49328685"
 
     > [!div class="mx-imgBorder"] 
     > ![自定义模板另存为模板](media/data-integrator/CustomizeTemplateSaveAsTemplate175.png "自定义模板另存为模板")
+
+**从空白模板创建自己的模板**
+
+1. 转到 [PowerApps 管理中心](https://admin.powerapps.com)。
+2. 创建数据集成项目。 在左侧导航窗格中选择“数据集成”选项卡。
+3. 选择“新建项目”并为项目提供一个名称。 例如，“Demo_CreateYourOwnTemplate 项目”。
+4. 在“选择模板”列表页上，选取一个通用的空白模板。 
+   此示例中，请选择“Sales to Fin and Ops”模板，因为我们是要将数据 Dynamics 365 for Finance and Operations 移动到 Dynamics 365 for Sales。
+    
+    > [!div class="mx-imgBorder"] 
+    > ![](media/create-data-integration-project.png "创建数据集成项目")
+
+4. 请按照<a href="#CreateProject">此处</a>的第 6 步到第 9 步完成数据集成项目的创建。 选择“保存”。
+
+5. 由于是空白模板，我们将看到空白的“任务”页，没有任何任务。 选择“添加任务”从下拉列表中选取一个实体并添加新任务。
+   在本例中，为便于演示，我们为Dynamics 365 for Finance and Operations 和 Dynamics 365 for Sales 选取“活动”实体，创建“Activities Sales to Fin and Ops”任务。 选择“创建”。
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/activities-sales-fin-opps-task.png "ActivitiesSales to Fin and Ops 任务")
+
+6. 可以看到添加了新任务“Activities Sales to Fin and Ops”。 选择**保存**以保存更改。
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/new-task-added.png "已添加新任务")
+
+7. 项目已创建。 从“项目”列表页中选择“另存为模板”。
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/save-as-template.png "另存为模板")
+
+8. 提供名称和说明，然后选择“保存”。 此外，选择“与组织中的每个人共享”共享此模板。
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/save-describe-share.png "将项目另存为模板")
+
+“模板”列表页上将列出新创建的模板。
+
+> [!div class="mx-imgBorder"] 
+> ![](media/newly-created-template.png "新创建的模板")
+
+此外，创建新的集成项目后，选择“选择模板”会在“选择模板”列表中看到新创建的模板。
+
+> [!div class="mx-imgBorder"] 
+> ![](media/new-data-integration-project.png "新建数据集成项目")
+
 
 ## <a name="advanced-data-transformation-and-filtering"></a>高级数据转换和筛选 
 

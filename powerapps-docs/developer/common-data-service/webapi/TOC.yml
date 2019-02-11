@@ -1,0 +1,94 @@
+items:
+- name: 使用代码处理数据
+  href: ../work-with-data-cds.md
+- name: 使用 Web API
+  href: overview.md
+- name: 入门
+  items:
+  - name: (C#)
+    href: get-started-dynamics-365-web-api-csharp.md
+    items:
+    - name: 快速入门：Web API 示例 (C#)
+      href: quick-start-console-app-csharp.md
+    - name: 增强型快速入门 (C#)
+      href: enhanced-quick-start.md
+- name: 客户端 JavaScript
+  href: get-started-web-api-client-side-javascript.md
+- name: 身份验证
+  href: authenticate-web-api.md
+- name: 类型和操作
+  href: web-api-types-operations.md
+- name: 执行操作
+  href: perform-operations-web-api.md
+  items:
+  - name: 编写 HTTP 请求并处理错误
+    href: compose-http-requests-handle-errors.md
+  - name: 查询数据
+    href: query-data-web-api.md
+  - name: 检索并执行预定义的查询
+    href: retrieve-and-execute-predefined-queries.md
+  - name: 创建实体
+    href: create-entity-web-api.md
+  - name: 检索实体
+    href: retrieve-entity-using-web-api.md
+  - name: 更新并删除实体
+    href: update-delete-entities-using-web-api.md
+  - name: 关联和取消关联实体
+    href: associate-disassociate-entities-using-web-api.md
+  - name: 使用函数
+    href: use-web-api-functions.md
+  - name: 使用操作
+    href: use-web-api-actions.md
+  - name: 执行批处理操作
+    href: execute-batch-operations-using-web-api.md
+  - name: 模拟其他用户
+    href: impersonate-another-user-web-api.md
+  - name: 执行条件操作
+    href: perform-conditional-operations-using-web-api.md
+  - name: 检测重复数据
+    href: manage-duplicate-detection-create-update.md
+- name: 版本差异
+  href: web-api-versions.md
+- name: 使用元数据
+  href: use-web-api-metadata.md
+  items:
+  - name: 查询元数据
+    href: query-metadata-web-api.md
+  - name: 按名称或 MetadataId 检索元数据
+    href: retrieve-metadata-name-metadataid.md
+  - name: 创建和更新实体定义
+    href: create-update-entity-definitions-using-web-api.md
+  - name: 创建和更新实体关系
+    href: create-update-entity-relationships-using-web-api.md
+  - name: 使用选项集
+    href: create-update-optionsets.md
+- name: 发现组织的 URL
+  href: discover-url-organization-web-api.md
+  items:
+  - name: 全局发现服务示例 (C#)
+    href: samples/global-discovery-service-csharp.md
+- name: 导入数据
+  href: ../import-data.md
+- name: 示例数据
+  href: ../sample-data.md
+- name: 示例
+  items:
+  - name: 数据操作示例模板
+    href: web-api-samples.md
+    items:
+    - name: 基本操作
+      href: web-api-basic-operations-sample.md
+    - name: 查询数据
+      href: web-api-query-data-sample.md
+    - name: 条件操作
+      href: web-api-conditional-operations-sample.md
+    - name: 函数和操作
+      href: web-api-functions-actions-sample.md
+    - name: 示例
+      href: samples/toc.yml
+ms.openlocfilehash: 237ead719746e18fcea31901a43385806b099f58
+ms.sourcegitcommit: fe47ad47873a37fbe17b30d39fb2ca6035b7d152
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854547"

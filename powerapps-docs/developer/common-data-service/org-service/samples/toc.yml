@@ -1,0 +1,207 @@
+items:
+- name: 活动
+  items:
+  - name: 将传真转换为任务
+    href: convert-fax-task.md
+  - name: 使用模板创建电子邮件
+    href: create-email-template.md
+  - name: 创建、检索、更新和删除电子邮件附件
+    href: create-retrieve-update-delete-email-attachment.md
+  - name: 提升电子邮件
+    href: promote-email-message.md
+  - name: 检索电子邮件附件的电子邮件模板
+    href: retrieve-email-attachments-email-template.md
+  - name: 使用模板发送电子邮件
+    href: send-email-template.md
+  - name: 发送电子邮件
+    href: send-email.md
+  - name: 发送批量电子邮件并监视结果
+    href: send-bulk-email-monitor-results.md
+  - name: 处理活动方记录
+    href: work-activity-party-records.md
+- name: 约会
+  items:
+  - name: 预约
+    href: book-appointment.md
+  - name: 将约会转换为定期约会
+    href: convert-appointment-recurring-appointment.md
+  - name: 创建、检索、更新和删除定期约会
+    href: create-retrieve-update-delete-recurring-appointment.md
+  - name: 结束定期约会系列
+    href: end-recurring-appointment-series.md
+  - name: 链接系列和实例之间的自定义属性
+    href: link-custom-attributes-between-series-instances.md
+  - name: 查询用户的工作时间
+    href: query-working-hours-user.md
+  - name: 查询多个用户的工作时间
+    href: query-working-hours-multiple-users.md
+  - name: 重新安排和取消定期约会
+    href: reschedule-cancel-recurring-appointment.md
+  - name: 验证约会
+    href: validate-appointment.md
+- name: 审核
+  items:
+  - name: 审核实体数据更改
+    href: audit-entity-data-changes.md
+  - name: 审核用户访问情况
+    href: audit-user-access.md
+- name: Azure 集成
+  items:
+  - name: Azure 可识别的自定义插件
+    href: azure-aware-custom-plugin.md
+  - name: Azure 可识别的自定义工作流活动
+    href: azure-aware-custom-workflow-activity.md
+  - name: 单向侦听器
+    href: one-way-listener.md
+  - name: 持久队列侦听器
+    href: persistent-queue-listener.md
+  - name: REST 侦听器
+    href: rest-listener.md
+  - name: 双向侦听器
+    href: two-way-listener.md
+- name: 批量删除
+  items:
+  - name: 批量删除导出的记录
+    href: bulk-delete-exported-records.md
+  - name: 批量删除与常见条件匹配的记录
+    href: bulk-delete-records-match-common-criteria.md
+- name: 更改跟踪
+  items:
+  - name: 使用更改跟踪与外部系统同步数据
+    href: synchronize-data-external-systems-using-change-tracking.md
+- name: 连接
+  items:
+  - name: 创建连接
+    href: create-connection-early-bound.md
+  - name: 创建连接角色
+    href: create-connection-role-early-bound.md
+  - name: 创建反向连接角色
+    href: create-reciprocal-connection-role-early-bound.md
+  - name: 按记录查询连接
+    href: query-connections-record-early-bound.md
+  - name: 按实体类型代码查询连接角色
+    href: query-connection-roles-entity-type-code-early-bound.md
+  - name: 按相对角色查询连接
+    href: query-connections-reciprocal-roles-early-bound.md
+- name: 货币
+  items:
+  - name: 检索货币汇率
+    href: retrieve-currency-exchange-rate.md
+- name: 自定义项和元数据
+  items:
+  - name: 创建自定义活动
+    href: create-custom-activity.md
+  - name: 将实体元数据转储到文件
+    href: dump-entity-metadata-file.md
+  - name: 检索有效状态转换
+    href: retrieve-valid-status-transitions.md
+- name: 重复检测
+  items:
+  - name: 检测多个重复记录
+    href: detect-multiple-duplicate-records.md
+  - name: 启用重复检测并检索重复项
+    href: enable-duplicate-detection-and-retrieve-duplicates.md
+  - name: 在创建和更新记录时使用重复检测
+    href: use-duplicate-detection-when-creating-and-updating-records.md
+- name: 实体记录
+  items:
+  - name: 早期绑定的实体操作
+    href: early-bound-entity-operations.md
+  - name: 后期绑定的实体操作
+    href: late-bound-entity-operations.md
+  - name: 在更新和删除操作中使用乐观并发
+    href: use-optimistic-concurrency-update-delete-operations.md
+  - name: 使用访问团队共享记录
+    href: share-record-using-access-team.md
+  - name: 使用 GrantAccess、ModifyAccess 和 revokeaccess 消息共享记录
+    href: share-records-using-grantaccess-modifyaccess-revokeaccess-messages.md
+  - name: 上传、检索和下载附件
+    href: upload-retrieve-download-attachment.md
+  - name: 使用 Upsert 插入或更新记录
+    href: insert-update-record-upsert.md
+- name: 字段级别安全性
+  items:
+  - name: 检索字段权限
+    href: retrieve-field-permissions.md
+  - name: 检索字段共享记录
+    href: retrieve-field-sharing-records.md
+  - name: 启用实体的字段安全性
+    href: enable-field-security-entity.md
+- name: 目标管理
+  items:
+  - name: 根据目标收入汇总自定义期间的目标数据
+    href: rollup-goal-data-custom-period-target-revenue.md
+  - name: 根据扩展目标计数汇总会计期间的目标数据
+    href: rollup-goal-data-fiscal-period-stretch-target-count.md
+  - name: 使用汇总查询跟踪目标
+    href: use-rollup-queries-track-goals.md
+  - name: 替代目标总计数并关闭目标
+    href: override-goal-total-count-close-goal.md
+- name: 导入数据
+  items:
+  - name: 导出和导入数据映射
+    href: export-import-data-map.md
+  - name: 使用复杂数据映射导入数据
+    href: import-data-complex-data-map.md
+- name: 插件
+  items:
+  - name: 从插件访问 Web
+    href: web-access-plugin.md
+  - name: 创建基本插件
+    href: basic-followup-plugin.md
+- name: 队列
+  items:
+  - name: 将记录添加到队列
+    href: add-record-queue-early-bound.md
+  - name: 向队列添加安全主体（用户或团队）
+    href: add-security-principal-user-team-queue-early-bound.md
+  - name: 清除队列历史记录
+    href: clean-up-history-queue-early-bound.md
+  - name: 发布队列项到队列
+    href: release-queue-item-queue-early-bound.md
+  - name: 指定要处理的队列项
+    href: specify-queue-item-work-early-bound.md
+- name: SharePoint
+  items:
+  - name: 检索位置记录的绝对 URL 和网站集 URL
+    href: retrieve-absolute-url-and-site-collection-url-of-a-location-record.md
+- name: 特殊操作
+  items:
+  - name: 执行多个请求
+    href: execute-multiple-requests.md
+- name: 解决方案
+  items:
+  - name: 使用解决方案
+    href: work-solutions.md
+  - name: 删除解决方案依赖关系
+    href: detect-solution-dependencies.md
+- name: 时区
+  items:
+  - name: 检索时区信息
+    href: retrieve-time-zone-information.md
+- name: 查询数据
+  items:
+  - name: 在分页 Cookie 中使用 QueryExpressio
+    href: use-queryexpression-with-a-paging-cookie.md
+  - name: 使用 QueryExpression 类检索多个
+    href: retrieve-multiple-queryexpression-class.md
+  - name: 使用 QueryByAttribute 类检索多个
+    href: retrieve-multiple-querybyattribute-class.md
+  - name: 在 Fetch 和 QueryExpression 之间转换查询
+    href: convert-queries-fetch-queryexpression.md
+  - name: 从交叉表中检索记录
+    href: retrieve-records-intersect-table.md
+  - name: 验证和执行保存的查询
+    href: validate-execute-saved-query.md
+  - name: 在 FetchXML 中使用聚合
+    href: use-aggregation-fetchxml.md
+  - name: 在分页 Cookie 中使用 FetchXML
+    href: use-fetchxml-paging-cookie.md
+- name: 访问发现服务
+  href: access-discovery-service.md
+ms.openlocfilehash: d1820c44cca47682ebfcf25d1fde37fa13bee634
+ms.sourcegitcommit: 9192f6aff2782f980a34a60df9aca420f1ba29ce
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55958068"

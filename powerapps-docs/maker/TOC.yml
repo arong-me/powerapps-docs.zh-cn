@@ -197,8 +197,6 @@ items:
         href: ./canvas-apps/use-line-pie-bar-chart.md
       - name: 添加多媒体
         href: ./canvas-apps/add-images-pictures-audio-video.md
-      - name: 扫描条码
-        href: ./canvas-apps/scan-barcode.md
       - name: 添加 Power BI 数据
         href: ./canvas-apps/powerapps-custom-visual.md
       - name: 控件引用
@@ -212,6 +210,8 @@ items:
           href: ./canvas-apps/controls/control-audio-video.md
         - name: 条形码扫描程序(实验)
           href: ./canvas-apps/controls/control-barcodescanner.md
+        - name: 条形码扫描程序
+          href: ./canvas-apps/controls/control-new-barcode-scanner.md
         - name: 按钮
           href: ./canvas-apps/controls/control-button.md
         - name: 相机
@@ -516,6 +516,8 @@ items:
           href: ./canvas-apps/functions/function-rand.md
         - name: Refresh
           href: ./canvas-apps/functions/function-refresh.md
+        - name: 相关
+          href: ./canvas-apps/functions/function-relate-unrelate.md
         - name: Remove
           href: ./canvas-apps/functions/function-remove-removeif.md
         - name: RemoveIf
@@ -596,6 +598,8 @@ items:
           href: ./canvas-apps/functions/function-trim.md
         - name: Ungroup
           href: ./canvas-apps/functions/function-groupby.md
+        - name: 不相关
+          href: ./canvas-apps/functions/function-relate-unrelate.md
         - name: Update
           href: ./canvas-apps/functions/function-update-updateif.md
         - name: UpdateContext
@@ -1079,9 +1083,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: 支持
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 741d8bc461c59a452b48e3fbee40f93a2e3409d6
-ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
+ms.openlocfilehash: 8a2fd682287dbbffebbb73785388cf5003fde10e
+ms.sourcegitcommit: eef2d6d9a9c7f5c8a44b9734817f59dc0eac3ecf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55290917"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887484"
