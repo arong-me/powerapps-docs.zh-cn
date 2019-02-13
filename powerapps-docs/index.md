@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: da5273e385da3f616404a531f91a96393ed63bc2
-ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
+ms.openlocfilehash: c99bf76db08bff81e47cfcf76c1fd3fb49c095e5
+ms.sourcegitcommit: 452d4ead948591d16aff144006ad84c957eba837
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55290894"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56091237"
 ---
 <div id="main"
    class="v2">
@@ -328,9 +328,9 @@ ms.locfileid: "55290894"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">环境与安全性</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/administrator/environments-administration">管理员环境</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/administrator/database-security">配置环境安全性</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/administrator/admin-view-apps">查看环境中的应用</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/environments-administration">管理员环境</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/database-security">配置环境安全性</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-view-apps">查看环境中的应用</a></p>
                                  </div>
                               </div>
                            </div>
@@ -348,8 +348,8 @@ ms.locfileid: "55290894"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">数据集成与 DSR</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/administrator/data-integrator">将数据集成到面向应用程序的 CDS</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/administrator/powerapps-gdpr-dsr-guide">响应数据使用者权限 (DSR) 请求</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/data-integrator">将数据集成到面向应用程序的 CDS</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/powerapps-gdpr-dsr-guide">响应数据使用者权限 (DSR) 请求</a></p>
                                  </div>
                               </div>
                            </div>
@@ -367,7 +367,7 @@ ms.locfileid: "55290894"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">许可与购买</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/administrator/pricing-billing-skus">许可概述</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/pricing-billing-skus">许可概述</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-entity-licenses">实体的许可证要求</a></p>
 <!--                                   <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/administrator/powerapps-for-us-govt">PowerApps for US Government</a></p> -->
                                  </div>
@@ -387,10 +387,10 @@ ms.locfileid: "55290894"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Power 平台管理中心</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/power-platform/admin/admin-guide">管理 Power 平台</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/power-platform/admin/get-help-support">获取帮助和支持</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/power-platform/admin/analytics-common-data-service">面向应用程序的 CDS 分析</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/power-platform/admin/manage-environments">管理环境</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-guide">管理 Power 平台</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">获取帮助和支持</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">选择采用 2019 年 4 月的更新</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/manage-environments">管理环境</a></p>
                                  </div>
                               </div>
                            </div>
