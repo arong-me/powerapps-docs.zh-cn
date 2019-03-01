@@ -1,5 +1,13 @@
-# Sample Content Repo
-This repository is has some basic content that follows the requirements of  the Documentation Publishing Service (DPS) that is used for managing the azure.microsoft.com documentation. You can find a sample article within the /articles directory of this repository and a sample include in the /include firectory. 
+# <a name="microsoft-powerapps-documentation"></a>Microsoft PowerApps 文档
 
-For more information about DPS please contact the [ACOM Web Team](mailto:winaz_webteam@microsoft.com).
+这是 PowerApps 的技术产品文档的 GitHub 存储库。 本文档已发布到 [https://docs.microsoft.com/powerapps](https://docs.microsoft.com/powerapps)。
 
+## <a name="how-to-contribute"></a>如何投稿
+
+感谢你有兴趣向 Microsoft 产品和服务的技术内容主页 [Docs.microsoft.com](https://docs.microsoft.com/) 投稿。
+
+要了解如何投稿此存储库中的内容，请开始阅读 [Docs 投稿者指南](https://docs.microsoft.com/contribute)。 如果你是 Microsoft 员工，请访问本指南的[内部版本](https://aka.ms/docsguidescontribute)。
+
+## <a name="code-of-conduct"></a>行为准则
+
+此项目已采用 [Microsoft 开源代码行为准则](https://opensource.microsoft.com/codeofconduct/)。 有关详细信息，请参阅[行为准则常见问题解答](https://opensource.microsoft.com/codeofconduct/faq/)或如有任何其他问题或者意见，请联系 [opencode@microsoft.com](mailto:opencode@microsoft.com)。
