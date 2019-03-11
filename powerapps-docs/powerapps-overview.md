@@ -6,15 +6,15 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/21/2018
+ms.date: 02/28/2019
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: 4000a9c60410a8ea2e4f1205d8ca815d67976d23
-ms.sourcegitcommit: 4a27a2fa3d06296c88cd85c638dc075f7ed6f1f9
+ms.openlocfilehash: 3a314ee6fabc5d3891a19610bfc4cf8aebdd6dcf
+ms.sourcegitcommit: edd4b1029b7085bb3849d87b0c94e0d8cb5758aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54099638"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57251538"
 ---
 # <a name="what-is-powerapps"></a>什么是 PowerApps？
 
@@ -26,7 +26,7 @@ PowerApps 还提供了一个可扩展的平台，允许专业开发人员以编�
 
 ## <a name="powerapps-for-app-makerscreators"></a>面向应用创建者的 PowerApps
 
-使用 PowerApps，可以创建两种类型的应用：“画布”和“模型驱动”。 详细信息：[概述如何在 PowerApps 中创建应用](maker/index.md)。
+使用 PowerApps 可以创建两种类型的应用：画布型和模型驱动型。 详细信息：[概述如何在 PowerApps 中创建应用](maker/index.md)。
 
 若要创建应用，请从 [web.powerapps.com](https://web.powerapps.com) 开始。
 
@@ -42,9 +42,11 @@ PowerApps 还提供了一个可扩展的平台，允许专业开发人员以编�
 
 PowerApps 管理员可以：
 
-- 使用“PowerApps 管理中心”([admin.powerapps.com](https://admin.powerapps.com)) 创建和管理环境、用户、角色和数据丢失防护策略。 详细信息：[管理 PowerApps](administrator/admin-guide.md)
+- 使用“PowerApps 管理中心”([admin.powerapps.com](https://admin.powerapps.com)) 创建和管理环境、用户、角色和数据丢失防护策略。 
 
-- 使用“Power 平台管理中心”([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)) 管理环境、获取针对 Dynamics 365 for Customer Engagement 应用、PowerApps 和 Microsoft Flow 的实时、自助推荐和支持，以及查看面向应用程序的 CDS 分析。 详细信息：[管理 Power 平台](https://docs.microsoft.com/power-platform/admin/admin-guide)
+- 使用“Power 平台管理中心”([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)) 管理环境、获取针对 Dynamics 365 for Customer Engagement 应用、PowerApps 和 Microsoft Flow 的实时、自助推荐和支持，以及查看面向应用程序的 CDS 分析。 
+
+详细信息：[管理 PowerApps](/power-platform/admin/admin-guide)
 
 ## <a name="powerapps-for-developers"></a>面向开发人员的 PowerApps
 
