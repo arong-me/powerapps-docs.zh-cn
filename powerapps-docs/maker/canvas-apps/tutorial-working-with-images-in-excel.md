@@ -1,24 +1,24 @@
 ---
 title: 在 Excel 文件中保存图像 | Microsoft 文档
 description: 如何在云存储帐户中将图像保存到 Excel 表格
-author: AFTOwen
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/15/2016
-ms.author: anneta
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 48b8da1fbe328eb8834a58b7c052e8d4bd6a8151
-ms.sourcegitcommit: c1f58a16f8dcd309a1d5fc4658ca16d82c615994
+ms.openlocfilehash: f201d1fbad574174e4427698ae28439f26419514
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "42852358"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072712"
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>如何在 Excel 文件中保存图像，并将其添加到你的应用
 
