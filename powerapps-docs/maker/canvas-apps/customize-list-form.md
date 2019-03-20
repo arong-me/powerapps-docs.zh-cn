@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 12d13ecfb8c60a1c1ccb23496dd9dc7f8cf42814
-ms.sourcegitcommit: a1568c9a09d83efe50c032b73eaa18c7db723e86
-ms.translationtype: HT
+ms.openlocfilehash: ca97583948a289240bfb051fa8cac36a39e2ffee
+ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57804438"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58198627"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>使用 PowerApps 自定义 SharePoint 列表窗体
 
@@ -98,7 +98,7 @@ SharePoint 站点上创建列表，并将这些列添加到该列表：
 1. 自定义窗体有许多种情况下，如这些主题描述：
 
     - 更改其大小和/或方向（例如，[加宽窗体](set-aspect-ratio-portrait-landscape.md)）。
-    - 添加一个控件，以便用户可以[上传附件](controls/properties-text.md)。
+    - [自定义一个或多个卡](working-with-cards.md)（例如，更改卡的显示文本或输入控件）。
     - 创建[查找字段](sharepoint-lookup-fields.md)。
 
     详细信息：[了解 SharePoint 窗体集成](sharepoint-form-integration.md)

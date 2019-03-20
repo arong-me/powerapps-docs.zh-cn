@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 15aa49787d6b2c3d3981e374aeb43c54a2d7a7ec
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
-ms.translationtype: HT
+ms.openlocfilehash: 042819241a40b9ad01f95085faf23b6393f62559
+ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49317082"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58198581"
 ---
 # <a name="generate-a-canvas-app-in-powerapps-from-a-sharepoint-list"></a>通过 SharePoint 列表在 PowerApps 中生成画布应用
 
-本主题介绍如何基于 SharePoint 列表中的项目使用 PowerApps 自动生成画布应用。 可以从 PowerApps 或 SharePoint Online 中生成该应用。 如果通过数据网关[连接到站点](connect-to-sharepoint.md)，则可以在 PowerApps 中通过本地 SharePoint 站点上的列表生成应用。
+本主题介绍如何基于 SharePoint 列表中的项目使用 PowerApps 自动生成画布应用。 可以从 PowerApps 或 SharePoint Online 中生成该应用。 如果通过数据网关[连接到站点](connections/connection-sharepoint-online.md#create-a-connection)，则可以在 PowerApps 中通过本地 SharePoint 站点上的列表生成应用。
 
 生成的应用将包含以下三个屏幕：
 

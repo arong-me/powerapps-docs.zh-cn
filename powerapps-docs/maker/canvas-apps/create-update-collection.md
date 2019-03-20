@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: aca1b78262ac359689d66f687f902103740fa3a6
-ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
-ms.translationtype: HT
+ms.openlocfilehash: 04ef7924ce3f6945a666fe06bdc6091159bc44c4
+ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "57800298"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58198535"
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>创建和更新集合中的画布应用
 
@@ -116,7 +116,7 @@ ms.locfileid: "57800298"
 
 ## <a name="put-a-sharepoint-list-into-a-collection"></a>将 SharePoint 列表放入集合
 
-1. [创建到 SharePoint 列表的连接](connect-to-sharepoint.md).
+1. [创建到 SharePoint 列表的连接](connections/connection-sharepoint-online.md#create-a-connection).
 
 1. 添加一个按钮，并将其 **[OnSelect](controls/properties-core.md)** 属性设置为此函数，将 ListName 替换为 SharePoint 列表的名称：<br>
 
@@ -128,7 +128,7 @@ ms.locfileid: "57800298"
 
 1. （可选）若要预览你所创建的集合，请选择**集合**上**文件**菜单。
 
-有关如何在库中显示数据 （如日期、 选择和人员） 在 SharePoint 列表中的信息：[在库中显示数据](connections/connection-sharepoint-online.md#show-data-in-a-gallery)。 有关如何在 （具有下拉列表、 日期选取器和人员选取器） 的窗体中显示数据的信息：[编辑窗体和显示窗体控件](controls/control-form-detail.md)。
+有关如何在库中显示数据 （如日期、 选择和人员） 在 SharePoint 列表中的信息：[显示库中的列表列](connections/connection-sharepoint-online.md#show-list-columns-in-a-gallery)。 有关如何在 （具有下拉列表、 日期选取器和人员选取器） 的窗体中显示数据的信息：[编辑窗体和显示窗体控件](controls/control-form-detail.md)。
 
 ## <a name="next-steps"></a>后续步骤
 
