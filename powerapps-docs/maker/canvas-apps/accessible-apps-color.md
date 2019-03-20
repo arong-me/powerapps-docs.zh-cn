@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 96a04cdda99f379c799ccd68e2442572ac929d39
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 586c82804380846ef400f020c4ce55c07262730f
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42862901"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802023"
 ---
 # <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>PowerApps 画布应用中具有辅助功能的颜色
 画布应用中使用的颜色应方便色盲和弱视用户使用。 默认情况下，所有 PowerApps 主题可让所有用户都轻松使用。 在修改应用中使用的颜色时，请遵循以下准则以确保它们方便用户使用。 有多种联机工具可以帮助确定颜色对比度问题。
@@ -36,7 +36,7 @@ ms.locfileid: "42862901"
 ## <a name="minimum-contrast-for-non-text"></a>非文本最小对比度
 
 > [!NOTE]
-> 在 [WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) 标准下，对比度要求仅适用于文本。 如需更出色的辅助功能，请考虑即将推出的面向图标按钮等基本用户界面组件的 [WCAG 2.1 对比度准则](https://www.w3.org/TR/WCAG21/#non-text-contrast)。 建议对这些组件使用最小对比度 3:1。 本部分所述的指导原则可供选择，符合 WCAG 2.0 标准。
+> 在 [WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) 标准下，对比度要求仅适用于文本。 如需更出色的辅助功能，请考虑即将推出的面向图标按钮等基本用户界面组件的 [WCAG 2.1 对比度准则](https://www.w3.org/TR/WCAG21/#non-text-contrast)。 建议对这些组件使用最小对比度 3:1。 在本部分中所述的准则**可选**符合 WCAG 2.0。
 
 ### <a name="user-interface-components"></a>用户界面组件
 所有交互式控件之间都必须有足够的颜色对比度：
@@ -55,7 +55,7 @@ ms.locfileid: "42862901"
 * [HoverFill](controls/properties-color-border.md) 和控件范围之外的颜色
 
 ### <a name="graphical-objects"></a>图形对象
-如果图像传达重要信息，请考虑检查其对比度问题。 这适用于可在其中显示图像的控件：[音频](controls/control-audio-video.md)、[图像](controls/control-image.md)、[麦克风](controls/control-microphone.md)和[视频](controls/control-audio-video.md)。
+如果图像传达重要信息，请考虑检查其对比度问题。 这适用于在其中可以显示图像的控件：**[音频](controls/control-audio-video.md)**， **[图像](controls/control-image.md)**， **[麦克风](controls/control-microphone.md)**，和**[视频](controls/control-audio-video.md)**.
 
 有关视频内容，请考虑检查其对比度问题。 或者另外提供[隐藏式字幕](controls/control-audio-video.md)来描述视频。
 

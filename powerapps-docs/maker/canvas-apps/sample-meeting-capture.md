@@ -1,24 +1,24 @@
 ---
 title: 会议捕获示例模板 | Microsoft Docs
 description: 通过设置和概述了解 PowerApps 中的会议捕获示例模板，并深入了解如何构建此应用。
-author: caburk
+author: mr-dang-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/03/2018
-ms.author: caburk
+ms.author: brdang
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7a83ce913fbc688640eb2da2de6d9d5d66c7cde7
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: dfa2531baa95405d6ceb5adbda2aa5b839d27904
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42848348"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802414"
 ---
 # <a name="set-up-and-learn-about-the-meeting-capture-sample-template-in-powerapps"></a>设置并了解 PowerApps 中的会议捕获示例模板
 
@@ -48,15 +48,15 @@ ms.locfileid: "42848348"
 
 会议捕获连接到 Office 365 中的这些服务。
 
-- [Office 365 用户](https://docs.microsoft.com/en-us/connectors/office365users/)
-- [Office 365 Outlook](https://docs.microsoft.com/en-us/connectors/office365/)
-- [Planner](https://docs.microsoft.com/en-us/connectors/planner/)
-- [OneNote（企业版）](https://docs.microsoft.com/en-us/connectors/onenote/)
-- [内容转换](https://docs.microsoft.com/en-us/connectors/conversionservice/)
+- [Office 365 用户](https://docs.microsoft.com/connectors/office365users/)
+- [Office 365 Outlook](https://docs.microsoft.com/connectors/office365/)
+- [Planner](https://docs.microsoft.com/connectors/planner/)
+- [OneNote（企业版）](https://docs.microsoft.com/connectors/onenote/)
+- [内容转换](https://docs.microsoft.com/connectors/conversionservice/)
 
 我们希望你乐于了解会议捕获，我们期待听到你是如何为组织扩展它的！
 
 ## <a name="next-steps"></a>后续步骤
-- [公式参考](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference)
-- [控件参考](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/reference-properties)
+- [公式参考](https://docs.microsoft.com/powerapps/maker/canvas-apps/formula-reference)
+- [控件参考](https://docs.microsoft.com/powerapps/maker/canvas-apps/reference-properties)
  

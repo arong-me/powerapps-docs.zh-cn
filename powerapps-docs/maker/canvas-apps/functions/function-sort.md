@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d3a83f5ae96b8d9146163ed7d5ff4c4529f8d562
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: c405af25d0e3228939b908c081ea8b08ce674ea6
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42830762"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802322"
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>PowerApps 中的 Sort 和 SortByColumns 函数
 对[表](../working-with-tables.md)进行排序。
@@ -30,7 +30,7 @@ ms.locfileid: "42830762"
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
-若要先按一列进行排序，然后再按另一列进行排序，请在 **Sort** 公式中嵌入另一个此公式。 例如，可以使用以下公式先按 **LastName** 列对 **Contacts** 表进行排序，然后再按 **FirstName** 列进行排序：**Sort( Sort( Contacts, LastName ), FirstName )**
+若要先按一列进行排序，然后再按另一列进行排序，请在 **Sort** 公式中嵌入另一个此公式。 例如，使用以下公式进行排序**联系人**表中第一次**LastName**列，然后按**FirstName**列：**Sort( Sort( Contacts, LastName ), FirstName )**
 
 还可以使用 **SortByColumns** 函数根据一列或多列对表进行排序。
 
@@ -86,7 +86,7 @@ ms.locfileid: "42830762"
 ### <a name="step-by-step"></a>分步操作
 若要自行运行这些示例，请将 **IceCream** 数据源创建为[集合](../working-with-data-sources.md#collections)：
 
-1. 添加一个按钮，然后将其 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：<br>**ClearCollect( IceCream, { Flavor: "Chocolate", Quantity: 100, OnOrder: 150 }, { Flavor:  "Vanilla", Quantity: 200, OnOrder: 20 }, { Flavor: "Strawberry", Quantity: 300, OnOrder: 0 }, { Flavor: "Mint Chocolate", Quantity: 60, OnOrder: 100 }, { Flavor: "Pistachio", Quantity: 200, OnOrder: 10 } )**
+1. 添加一个按钮，然后将其 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：<br>**ClearCollect (IceCream，{风格："巧克力"，Quantity:100，OnOrder:150}，{风格："普通"，Quantity:200，OnOrder:20}，{风格："草莓"，Quantity:300，OnOrder:0}，{风格："Mint Chocolate"，Quantity:60，OnOrder:100}，{风格："Pistachio"，Quantity:200，OnOrder:10 } )**
 2. 预览应用，选择按钮，然后按 Esc 返回到默认工作区。
 3. 选择“**文件**”菜单上的“**集合**”，调出刚刚创建的集合，然后按 Esc 返回到默认工作区。
 
@@ -103,7 +103,7 @@ ms.locfileid: "42830762"
 1. 添加另一个按钮，然后将其 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：<br>
    **ClearCollect( SortByQuantity, SortByColumns( IceCream, "Quantity", Ascending, "Flavor", Descending ) )**
    
-     上一公式创建第三个集合（名为 **SortByQuantity**），其中包含与 **Ice Cream** 相同的数据。 不过，新集合包含的是按 **Quantity** 列进行数值大小升序排序，然后按 **Flavor** 列进行降序排序的数据。
+     上一公式创建第三个集合（名为 **SortByQuantity**），其中包含与 **Ice Cream** 相同的数据。 但是，新集合包含按排序的数据**Quantity**列按升序排列，然后按**风格**降序排序的列。
 2. 按 F5，选择两个新按钮，然后按 Esc。
 3. 选择“**文件**”菜单上的“**集合**”，调出所有三个集合，然后按 Esc 返回到默认工作区。
 4. 重复最后三步，不同之处在于更改要创建的集合的名称，然后将 **SortByColumns** 公式替换为本部分前面示例表中的另一 **SortByColumns** 公式。

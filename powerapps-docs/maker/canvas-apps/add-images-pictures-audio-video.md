@@ -1,30 +1,30 @@
 ---
 title: 将多媒体文件嵌入画布应用并将其上传 | Microsoft Docs
 description: 在画布应用中显示多媒体文件并将其上传到数据源
-author: karthik-1
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/12/2017
-ms.author: sharik
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 99bdf6f3a71fe9a7f5003449017c70c1f5a73d09
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: d5d8b8ebaa2a1d044a09a402a87998980e34f461
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42857696"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799102"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>在 PowerApps 中使用多媒体文件
 
 本主题介绍如何在画布应用中嵌入多媒体文件、将笔绘作品上载到数据源，然后在画布应用中显示该数据源中的图像。 本主题使用的数据源是 OneDrive for Business 中的一个 Excel 文件。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 

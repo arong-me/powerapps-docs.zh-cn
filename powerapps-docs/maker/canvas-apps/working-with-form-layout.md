@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 43d623daecb609fbe3d4e593a7e15f95051871e9
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: b6bff4d0f9586f94e4d0da133197fcb7f78c765d
+ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836409"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "57800252"
 ---
 # <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>了解 PowerApps 中画布应用的数据窗体布局
 
@@ -32,20 +32,20 @@ ms.locfileid: "42836409"
 
 如果你是初次接触 PowerApps（或者仅自动生成过应用），则在深入了解此主题前请[从头开始生成一个应用](get-started-create-from-blank.md)。 通过从头开始生成一个应用，会让你熟悉本主题中提及但未加说明的必备概念，例如添加数据源和控件。
 
+本主题编写好像有一个数据源名为**销售订单**并包含在上图中的字段。 如果你拥有 PowerApps 计划 2 许可证或[试用版许可证](../signup-for-powerapps.md)和系统管理员或系统定制员权限，则可以[创建实体](../common-data-service/data-platform-create-entity.md)在 Common Data Service (CDS) 的应用，然后添加类似的字段。 
+
 ## <a name="add-a-gallery"></a>添加库
 
-1. 从头开始创建平板电脑应用。
+1. 从零开始，创建平板电脑应用并添加您的数据源。
 
     本主题中介绍的所有内容同样也适用于手机布局，不同之处在于，手机应用通常只有一个垂直列。
-2. 在 [Common Data Service](../common-data-service/data-platform-intro.md) 中添加“销售订单”实体，作为应用的数据源。
-
-    在本教程之外，可以使用任意数据源，包括 SharePoint 列表和 Excel 表。
-3. 添加垂直的“库”控件，并将其 **Items**属性设置为 **'Sales order'**。
+    
+2. 添加垂直的“库”控件，并将其 **Items**属性设置为 **'Sales order'**。
    
     （可选）若要与本教程中的示例一致，请将库的“布局”设置为仅显示“标题和副标题”。
    
     ![销售订单列表](./media/working-with-form-layout/gallery-layout.png)
-4. 在库中，单击或点击 **SO004**。
+3. 在库中，单击或点击 **SO004**。
    
     ![销售订单列表](./media/working-with-form-layout/sales-order-gallery-screen.png)
    
@@ -201,11 +201,11 @@ ms.locfileid: "42836409"
 ## <a name="set-width-and-height"></a>设置宽度和高度
 与 PowerApps 中的所有内容一样，表单布局受数据卡控件属性约束。 如前面所述，可以通过将控件拖到不同的位置或拖动握柄来调整控件的大小，从而更改这些属性的值。 不过，有时也会需要更精准地了解并控制这些属性，尤其是在使用公式生成动态表单时。
 
-### <a name="basic-layout-x-y-and-width"></a>基本布局：X、Y 和 Width
+### <a name="basic-layout-x-y-and-width"></a>基本布局：X、 Y 和 Width
 **X** 和 **Y** 属性控制卡的位置。 处理原始画布上的控件时，这些属性生成的是绝对位置。 在表单中，这些属性的含义就不同了：
 
-* **X**：行内顺序。
-* **Y**：行号。
+* **X**:中某行进行排序。
+* **Y**:行号。
 
 与画布上的控件类似，“Width”属性指定的是数据卡的最小宽度（很快将会对下限进行详细介绍）。
 

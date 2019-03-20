@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2ab480b0bb2aa61c65e33f67cca5a3b0974ca2c8
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 23a61dd1300fab71bed4d8c72b861c3c38a1cdea
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834517"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802069"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>从 PowerApps 连接到 Twitter
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -114,7 +114,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 
        `Twitter.MyFollowing()`  
        `Twitter.MyFollowing({maxResults:3})`
-   * 若要显示其他用户关注了哪些用户，将库的 **[Items](../controls/properties-core.md)** 属性设置为以下公式：
+   * 若要显示另一个用户关注了哪些用户，请设置**[项](../controls/properties-core.md)** 属性的库为以下公式：
 
        `Twitter.Following( *TwitterHandle* )`
 
@@ -196,7 +196,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 
 #### <a name="input-properties"></a>输入属性
 
-| 名称 | 数据类型 | 需要 | 描述 |
+| 名称 | 数据类型 | 需要 | 说明 |
 | --- | --- | --- | --- |
 | userName |字符串 |是 |Twitter 用户名 |
 | maxResults |整数 |否 |要检索的推文的最大数量，例如 {maxResults:5} |
@@ -217,13 +217,13 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 
 #### <a name="input-properties"></a>输入属性
 
-| 名称 | 数据类型 | 需要 | 描述 |
+| 名称 | 数据类型 | 需要 | 说明 |
 | --- | --- | --- | --- |
 | maxResults |整数 |否 |要检索的推文的最大数量，例如 {maxResults:5} |
 
 #### <a name="output-properties"></a>输出属性
 
-| 属性名称 | 数据类型 | 需要 | 描述 |
+| 属性名称 | 数据类型 | 需要 | 说明 |
 | --- | --- | --- | --- |
 | TweetText |字符串 |是 | |
 | TweetId |字符串 |否 | |
@@ -265,10 +265,10 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 
 #### <a name="output-properties"></a>输出属性
 
-| 属性名称 | 数据类型 | 需要 | 描述 |
+| 属性名称 | 数据类型 | 需要 | 说明 |
 | --- | --- | --- | --- |
 | 全名 |字符串 |是 | |
-| 位置 |字符串 |是 | |
+| Location |字符串 |是 | |
 | ID |整数 |否 | |
 | UserName |字符串 |是 | |
 | FollowersCount |整数 |否 | |
@@ -290,7 +290,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 全名 |字符串 |是 | |
-| 位置 |字符串 |是 | |
+| Location |字符串 |是 | |
 | ID |整数 |否 | |
 | UserName |字符串 |是 | |
 | FollowersCount |整数 |否 | |
@@ -299,21 +299,21 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 | FriendsCount |整数 |否 | |
 
 ### <a name="following"></a>关注
-获取关注的人：检索指定用户正在关注的用户
+获得以下：检索指定用户正在关注的用户
 
 #### <a name="input-properties"></a>输入属性
 
-| 名称 | 数据类型 | 需要 | 描述 |
+| 名称 | 数据类型 | 需要 | 说明 |
 | --- | --- | --- | --- |
 | userName |字符串 |是 |用户的 Twitter 用户名 |
 | maxResults |整数 |否 |要检索的用户的最大数量，例如 {maxResults:5} |
 
 #### <a name="output-properties"></a>输出属性
 
-| 属性名称 | 数据类型 | 需要 | 描述 |
+| 属性名称 | 数据类型 | 需要 | 说明 |
 | --- | --- | --- | --- |
 | 全名 |字符串 |是 | |
-| 位置 |字符串 |是 | |
+| Location |字符串 |是 | |
 | ID |整数 |否 | |
 | UserName |字符串 |是 | |
 | FollowersCount |整数 |否 | |
@@ -322,11 +322,11 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 | FriendsCount |整数 |否 | |
 
 ### <a name="myfollowing"></a>MyFollowing
-获取我关注的人：检索我正在关注的用户
+获取我的关注：检索我正在关注的用户
 
 #### <a name="input-properties"></a>输入属性
 
-| 名称 | 数据类型 | 需要 | 描述 |
+| 名称 | 数据类型 | 需要 | 说明 |
 | --- | --- | --- | --- |
 | maxResults |整数 |否 |要检索的用户的最大数量，例如 {maxResults:5} |
 
@@ -335,7 +335,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 全名 |字符串 |是 | |
-| 位置 |字符串 |是 | |
+| Location |字符串 |是 | |
 | ID |整数 |否 | |
 | UserName |字符串 |是 | |
 | FollowersCount |整数 |否 | |
@@ -343,7 +343,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 | StatusesCount |整数 |否 | |
 | FriendsCount |整数 |否 | |
 
-### <a name="user"></a>用户
+### <a name="user"></a>User
 获取用户：检索指定用户的详细信息（例如：用户名、说明、关注者数量等。）
 
 #### <a name="input-properties"></a>输入属性
@@ -357,7 +357,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 | 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 全名 |字符串 |是 | |
-| 位置 |字符串 |是 | |
+| Location |字符串 |是 | |
 | ID |整数 |否 | |
 | UserName |字符串 |是 | |
 | FollowersCount |整数 |否 | |
@@ -370,7 +370,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 
 #### <a name="input-properties"></a>输入属性
 
-| 名称 | 数据类型 | 需要 | 描述 |
+| 名称 | 数据类型 | 需要 | 说明 |
 | --- | --- | --- | --- |
 | TweetText |字符串 |否 |要发布的文本，例如 {tweetText:"hello"} |
 | body |字符串 |否 |要发布的媒体 |
@@ -382,7 +382,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 | TweetId |字符串 |是 | |
 
 ### <a name="onnewtweet"></a>OnNewTweet
-显示新推文时：发布与搜索查询匹配的新推文时触发工作流
+当新推文出现时：发布与搜索查询匹配的新推文时触发工作流
 
 #### <a name="input-properties"></a>输入属性
 
@@ -392,7 +392,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 
 #### <a name="output-properties"></a>输出属性
 
-| 属性名称 | 数据类型 | 需要 | 描述 |
+| 属性名称 | 数据类型 | 需要 | 说明 |
 | --- | --- | --- | --- |
 | 值 |数组 |否 | |
 

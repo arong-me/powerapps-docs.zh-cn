@@ -1,24 +1,24 @@
 ---
 title: 将 InfoPath 窗体转换为画布应用 | Microsoft Docs
 description: 借助常见方案的相关信息以及在画布应用中创建这些项的方法，开始将 InfoPath 窗体转换为 PowerApps。
-author: richardriley99
+author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/05/2018
-ms.author: rriley
+ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c2d72368b36f2de854a0aa575f9ef44f2f966ace
-ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
-ms.translationtype: HT
+ms.openlocfilehash: 0ceffa705262e879ee09df2494f71f59bcc2d1b5
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49806216"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802368"
 ---
 # <a name="transform-your-infopath-form-to-powerapps"></a>将 InfoPath 窗体转换为 PowerApps
 
@@ -50,7 +50,7 @@ PowerApps 是一款很棒的工具，可通过两种方式提供更好的 ShareP
 
 如果想要自定义用户添加、查看或编辑其日常工作中所用列表中各项的方式，建议使用“自定义 SharePoint 表单”功能。 单击“自定义表单”会创建一个单屏&quot;表单应用&quot;，该应用将基于上下文更改模式（新建/编辑/查看）。 由 SharePoint 管理这些应用；其权限与列表编辑/查看权限相同。
 
-**通过 SharePoint 创建 PowerApps 画布应用**支持应用在移动设备上自行运行。 此外，还可以将应用嵌入 SharePoint 页中。 单击这个功能将创建一个三屏应用（浏览列表、查看详细信息和创建/更新项）。 这些应用的权限/共享模型不依赖于 SharePoint，而是通过 PowerApps 进行管理。
+**通过 SharePoint 创建 PowerApps 画布应用**支持应用在移动设备上自行运行。 此外可以在 SharePoint 页面嵌入应用。 单击这个功能将创建一个三屏应用（浏览列表、查看详细信息和创建/更新项）。 这些应用的权限/共享模型不依赖于 SharePoint，而是通过 PowerApps 进行管理。
 
 至此，已介绍两种选项的区别，下面的部分将概述二者的使用方法。
 
@@ -62,7 +62,7 @@ PowerApps 团队和 SharePoint 团队协作创造了 SharePoint 自定义使用�
 
 ![SharePoint 集成](./media/transform-infopath/sharepoint-integration.png)
 
-PowerApps 的另一个重要功能是，能够轻松从同一表单连接到其他 SharePoint 站点集合或其他环境。 比如，是否希望一个表单能够同时在 SharePoint Online 和 SharePoint 本地环境中显示和更新数据？ 没问题。 如果安装[本地数据网关](gateway-management.md)，几分钟后便可正常运行，然后实现 PowerApps、Power BI、Microsoft Flow 和 Azure 逻辑应用与本地数据之间的连接。 不需要更改防火墙规则。 你可以通过将此应用与 Microsoft Flow 连接做进一步的设置。
+PowerApps 的另一个重要功能是，能够轻松从同一表单连接到其他 SharePoint 站点集合或其他环境。 比如，是否希望一个表单能够同时在 SharePoint Online 和 SharePoint 本地环境中显示和更新数据？ 没关系。 如果安装[本地数据网关](gateway-management.md)，几分钟后便可正常运行，然后实现 PowerApps、Power BI、Microsoft Flow 和 Azure 逻辑应用与本地数据之间的连接。 不需要更改防火墙规则。 你可以通过将此应用与 Microsoft Flow 连接做进一步的设置。
 
 ## <a name="a-standalone-sharepoint-app"></a>独立 SharePoint 应用
 
@@ -99,23 +99,23 @@ PowerApps 将生成一个可自定义的应用。
 
 若要隐藏卡而不是使其只读，请在 DisplayMode 正上方的 Visible 属性中插入相似函数。
 
-另外，你还可以显示批准按钮，只要用户的电子邮件地址与审批者的电子邮件地址相匹配即可。 （提示：使用 User().Email 访问当前用户的电子邮件地址。）因此，你可以将审批者的电子邮件地址存储在 YourDataCard 中，然后将按钮的 Visible 属性设置为此公式：
+另外，你还可以显示批准按钮，只要用户的电子邮件地址与审批者的电子邮件地址相匹配即可。 (提示：使用**User()。通过电子邮件发送**访问当前用户的电子邮件地址。)因此，你可以将审批者的电子邮件地址存储在 YourDataCard 中，然后将按钮的 Visible 属性设置为此公式：
 
-```If(YourDataCard.Text = User().Email, true, false)```
+```If( YourDataCard.Text = User().Email, true, false )```
 
 **条件格式设置**  
 按照上述隐藏字段的相似方式，还可以向用户提供可视反馈。 当输入的值不在可接受范围内时，可能需要用红色突出显示文本；或者，在用户上传文件后，需要更改上传按钮的文本和颜色。 你可以在 Color 或 Visible 等属性中使用一个函数，如 If 来完成这两个操作。
 
 例如，当用户在输入框中输入格式不正确的电子邮件时，可以配合使用 If 函数和 [IsMatch](functions/function-ismatch.md) 函数将电子邮件字段的文本颜色改为红色。 通过将 TextInput1（用户在此处键入电子邮件地址）的 Color 值设置为下面这个公式来执行此操作：
 
-```If(IsMatch(TextInput1.Text, Email), Black, Red)```
+```If( IsMatch(TextInput1.Text, Email), Black, Red )```
 
 IsMatch 支持大量预定义模式（如电子邮件）或创建自己的模式。 有关条件格式设置的详细信息，请查看此[社区视频](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Conditional-Formatting-and-Popups/m-p/84962)。
 
 **实现基于角色的安全性**  
 第一个要考虑的函数是 [DataSourceInfo](functions/function-datasourceinfo.md)。 从数据源返回的信息将各不相同，但是通常可以使用此公式确认用户是否有权限编辑数据（将 YourDataSource 替换为你的数据源名称）：
 
-```DataSourceInfo(YourDataSource, DataSourceInfo.EditPermission)```
+```DataSourceInfo( YourDataSource, DataSourceInfo.EditPermission )```
 
 这样，只要用户有权限编辑，你就能显示表单或按钮。 查看 [DataSourceInfo](functions/function-datasourceinfo.md) 文档，了解你可以在此函数中进行查询的完整信息列表。
 
@@ -138,7 +138,7 @@ IsMatch 支持大量预定义模式（如电子邮件）或创建自己的模式
 
 - 全局变量往往是用户首先想到的变量。 使用 [Set](functions/function-set.md) 函数指定全局变量的值，并使此值可在整个应用中使用：
 
-    ```Set(YourVariable, YourValue)```
+    ```Set( YourVariable, YourValue )```
 
     然后可在整个应用中通过名称引用 YourVariable。
 
@@ -157,13 +157,13 @@ IsMatch 支持大量预定义模式（如电子邮件）或创建自己的模式
 
 在此示例中，可以添加一个名为“ddSelectType”的下拉列表，并将其“Items”属性设置为此公式：
 
-```Distinct(Impacts, Title)```
+```Distinct( Impacts, Title )```
 
 下拉列表中将仅显示成本、程序影响和计划。 然后可以添加第二个下拉列表并将其“Items”属性设置为此公式：
 
-```Filter(Impacts,ddSelectType.Selected.Value in SCategory)```
+```Filter( Impacts, ddSelectType.Selected.Value in SCategory )```
 
-这样便创建了级联下拉列表。 有关详细信息，请查看 PowerApps 团队的博客文章 [SharePoint：4 步轻松创建级联下拉列表！](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) 或此[社区视频](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813)。 别担心，不使用 SharePoint 也同样可以轻松完成此操作。
+这样便创建了级联下拉列表。 有关详细信息，请查看 PowerApps 团队的此文章[SharePoint:级联下拉列表中 4 个简单步骤 ！](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) 或此[社区视频](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813)。 别担心，不使用 SharePoint 也同样可以轻松完成此操作。
 
 **不要生成一个超级应用**  
 PowerApps 支持从另一个应用调用应用。 你可以生成一组能够相互调用甚至传递数据的应用，从而简化开发工作，而无需使用“泡泡糖”式的方法粘接出一个大型 InfoPath 表单。

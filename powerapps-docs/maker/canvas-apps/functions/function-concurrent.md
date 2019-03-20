@@ -13,24 +13,24 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a0fdddcf906a04914ea9ba9a8572798ea5d55378
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: b3f95b5c8ddbca1925f89797e52b1b227c4b10e8
+ms.sourcegitcommit: ead27300a1b7371136edee1842829ed87ca77a72
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834810"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57892244"
 ---
 # <a name="concurrent-function-in-powerapps"></a>PowerApps 中的 Concurrent 函数
 并发计算多个公式。
 
 ## <a name="description"></a>描述
-Concurrent 函数同时计算多个公式。 通常情况下，多个公式由 [**;**](operators.md)（或 [**;;**](operators.md)）运算符串联计算，此运算符按顺序计算每个公式。 当应用并发执行操作时，用户等待较短时间即可获得相同结果。
+Concurrent 函数同时计算多个公式。 通常情况下，多个公式的计算通过链接在一起使用它们[ **;**](operators.md)运算符计算每个按顺序的顺序。 当应用并发执行操作时，用户等待较短时间即可获得相同结果。
 
 在应用的 [**OnStart**](../controls/control-screen.md) 属性中，使用 **Concurrent** 在应用程序加载数据时提高性能。 如果必须等到前一个调用完成才能启动数据调用，则应用必须等待所有请求时间之和。 如果数据调用都同时启动，应用只需等待最长请求的时间。 Web 浏览器通常通过同时执行数据操作提高性能。
 
-不能预测 Concurrent 函数中的公式开始和结束求值的顺序。 Concurrent 函数中的公式不应包含对同一 Concurrent 函数中其他公式的依赖项，如果尝试这么做，PowerApps 会显示错误。 在其中，可以安全接受对 Concurrent 函数之外公式的依赖项，因为它们会在 Concurrent 函数开始之前完成。 Concurrent 函数后的公式可以安全接受对其中公式的依赖项：它们都会在 Concurrent 函数完成并转到链中下一个公式（如果使用 ; 或 ; 运算符）前完成。 如果要调用有副作用的函数或服务方法，请注意细微的顺序依赖关系。
+不能预测 Concurrent 函数中的公式开始和结束求值的顺序。 Concurrent 函数中的公式不应包含对同一 Concurrent 函数中其他公式的依赖项，如果尝试这么做，PowerApps 会显示错误。 在其中，可以安全接受对 Concurrent 函数之外公式的依赖项，因为它们会在 Concurrent 函数开始之前完成。 公式后的**并发**函数可以安全地执行依赖项中的公式： 它们将全部完成之前**并发**函数完成并转到链中的下一步公式 (如果你使用 **;** 运算符)。 如果要调用有副作用的函数或服务方法，请注意细微的顺序依赖关系。
 
-可在 Concurrent 的参数内使用 ;（或 ;;）操作符串联公式。 例如 Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) ) 将同时计算 Set( a, 1 ); Set( b, a+1 ) 和 Set( x, 2 ); Set( y, x+2 ) 在本例中，公式内的依赖项可正常运行：a 将在 b 前设置，x 将在 y 前设置。
+可以链接在一起使用的公式 **;** 运算符的参数内**并发**。 例如 Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) ) 将同时计算 Set( a, 1 ); Set( b, a+1 ) 和 Set( x, 2 ); Set( y, x+2 ) 在本例中，公式内的依赖项可正常运行：a 将在 b 前设置，x 将在 y 前设置。
 
 根据应用运行于的设备或浏览器，实际可能只有少量的公式会同时求值。 Concurrent 使用提供的功能，并在所有公式计算完成后完成。
 
@@ -55,7 +55,12 @@ Concurrent 函数同时计算多个公式。 通常情况下，多个公式由 [
 
 2. 添加 **[按钮](../controls/control-button.md)** 控件，并将其 OnSelect 属性设置为以下公式：
 
-    **ClearCollect( Product, '[SalesLT].[Product]' );<br> ClearCollect( Customer, '[SalesLT].[Customer]' );<br> ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' );<br> ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )**
+    ```powerapps-dot
+    ClearCollect( Product, '[SalesLT].[Product]' );
+    ClearCollect( Customer, '[SalesLT].[Customer]' );
+    ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ); 
+    ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
+    ```
 
 3. 在 [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) 或 [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) 中，打开开发人员工具，以便在应用运行时监视网络流量。
 
@@ -73,7 +78,14 @@ Concurrent 函数同时计算多个公式。 通常情况下，多个公式由 [
 
 1. 添加第二个 **[按钮](../controls/control-button.md)** 控件，并将其 OnSelect 属性设置为以下公式：
 
-    **Concurrent(<br> &nbsp;&nbsp;&nbsp;&nbsp;ClearCollect( Product, '[SalesLT].[Product]' ),<br> &nbsp;&nbsp;&nbsp;&nbsp;ClearCollect( Customer, '[SalesLT].[Customer]' ),<br> &nbsp;&nbsp;&nbsp;&nbsp;ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),<br> &nbsp;&nbsp;&nbsp;&nbsp;ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )<br> )**
+    ```powerapps-dot
+    Concurrent( 
+        ClearCollect( Product, '[SalesLT].[Product]' ), 
+        ClearCollect( Customer, '[SalesLT].[Customer]' ),
+        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),
+        ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
+    )
+    ```
 
     请注意，对第一个按钮添加了相同 ClearCollect 调用，但这一次，它们封装在 Concurrent 函数中，由逗号分隔。
 
@@ -99,7 +111,23 @@ Concurrent 函数同时计算多个公式。 通常情况下，多个公式由 [
 
 3. 添加按钮控件，并将其 OnSelect 属性设置为以下公式：
 
-    **Set( StartTime, Value(Now()) );<br> Concurrent(<br> &nbsp;&nbsp;&nbsp;&nbsp;Set(FRTrans, MicrosoftTranslator.Translate(TextInput1.Text,"fr")); Set(FRTransTime, Value(Now()) ),<br> &nbsp;&nbsp;&nbsp;&nbsp;Set(DETrans, MicrosoftTranslator.Translate(TextInput1.Text,"de")); Set(DETransTime, Value(Now()) )<br> ); <br> Collect( <br> &nbsp;&nbsp;&nbsp;&nbsp;Results, <br> &nbsp;&nbsp;&nbsp;&nbsp;{<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Input: TextInput1.Text, <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;French: FRTrans, FrenchTime: FRTransTime-StartTime,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;German: DETrans, GermanTime: DETransTime-StartTime,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FrenchFaster: FRTransTime < DETransTime <br> &nbsp;&nbsp;&nbsp;&nbsp;}<br> )**
+    ```powerapps-dot
+    Set( StartTime, Value( Now() ) );
+    Concurrent(
+        Set( FRTrans, MicrosoftTranslator.Translate( TextInput1.Text, "fr" ) ); 
+            Set( FRTransTime, Value( Now() ) ),
+        Set( DETrans, MicrosoftTranslator.Translate( TextInput1.Text, "de" ) ); 
+            Set( DETransTime, Value( Now() ) )
+    );
+    Collect( Results,
+        { 
+            Input: TextInput1.Text,
+            French: FRTrans, FrenchTime: FRTransTime - StartTime, 
+            German: DETrans, GermanTime: DETransTime - StartTime, 
+            FrenchFaster: FRTransTime < DETransTime
+        }
+    )
+    ```
 
 4. 添加[**数据表**](../controls/control-data-table.md)控件，然后将其 Items 属性设置为 Results。
 

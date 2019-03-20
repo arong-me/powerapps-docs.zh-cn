@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b3d80c2bafb36bf4437a9c37541f5bb56945f3b4
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 1bf9f3cf075441dd3264b5a2f6533671d2e08654
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42851313"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802299"
 ---
 # <a name="iferror-function-in-powerapps"></a>PowerApps 中的 IfError 函数
 检测错误并提供替代值或执行操作。
@@ -39,7 +39,7 @@ IfError 函数测试其每个参数以寻找错误值，并在找到首个非错
 IfError( Value, Fallback1 [, Fallback2, ... ] )
 
 * *Value* - 必需。 测试错误值的公式。 
-* *Fallback(s)* - 必需。 如果先前的参数返回错误，要求值的公式和要返回的值。  计算回退参数直到找到非错误值。
+* *Fallback(s)* - 必需。 如果先前的参数返回错误，要求值的公式和要返回的值。  *回退*直到找到非错误值的顺序计算自变量。
 
 ## <a name="examples"></a>示例
 

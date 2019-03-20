@@ -1,24 +1,24 @@
 ---
 title: 在库中显示数据，并对数据进行排序和筛选 | Microsoft 文档
 description: 使用库显示图像和文本。 在 PowerApps 中对图像进行排序和筛选。
-author: lonu
+author: adrianorth
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/02/2015
-ms.author: lonu
+ms.author: aorth
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e782b7082e8dbf0d4efee2060131aa620e7a4af1
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: a557c73863dc25acb69627b51613e6e25f229bdb
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42844449"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799769"
 ---
 # <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>在 PowerApps 库中显示数据，并对数据进行排序和筛选
 创建一个库来显示有关多种产品的图像和文本，并对该信息进行排序和筛选。
@@ -43,7 +43,7 @@ ms.locfileid: "42844449"
       
       ![][1]  
    2. 将导入控件的“[OnSelect](controls/properties-core.md)”属性设置为以下公式：  
-      **Collect(Inventory, Import1!Data)**
+      **Collect(Inventory, Import1.Data)**
       
       ![][12]  
    3. 选择“导入数据”按钮，打开 Windows 资源管理器。 选择 *CreateFirstApp.zip*，然后选择“打开”。
@@ -79,14 +79,14 @@ ms.locfileid: "42844449"
    > 
    > 
 8. 将标签的 **[Text](controls/properties-core.md)** 属性设置为以下表达式：  
-    **ThisItem!UnitsInStock** <br/>
+    **ThisItem.UnitsInStock** <br/>
    
     执行此操作时，标签将显示每个产品的库存数量：
 
 ![][8]  
 
 > [!NOTE]
-> 默认情况下，顶部标签的 **[Text](controls/properties-core.md)** 属性设置为 ```ThisItem!ProductName```。 可将其更改为集合中任何其他项。 例如，如果集合具有 *ProductDescription* 或 *Price* 字段，可将该标签设置为 ```ThisItem!ProductDescription``` 或 ```ThisItem!Price```。
+> 默认情况下，顶部标签的 **[Text](controls/properties-core.md)** 属性设置为 ```ThisItem.ProductName```。 可将其更改为集合中任何其他项。 例如，如果集合具有 *ProductDescription* 或 *Price* 字段，可将该标签设置为 ```ThisItem.ProductDescription``` 或 ```ThisItem.Price```。
 > 
 > 
 
@@ -102,7 +102,7 @@ ms.locfileid: "42844449"
    ![][10]  
 6. 在“形状”选项卡上，选择“可见”，然后在编辑栏中输入以下公式：  
    
-    **If(ThisItem!IsSelected, true)**
+    **If(ThisItem.IsSelected, true)**
    
     蓝色矩形环绕库中的当前所选项。 选择一些库项，确认矩形出现在所选的每个项的周围。 请记住，也可以打开**预览**![][2]，查看并测试所创建的内容。
 
@@ -137,7 +137,7 @@ ms.locfileid: "42844449"
    2. 在“内容”选项卡上，选择“最大”，然后输入以下表达式：  
       ```Max(Inventory, UnitsInStock)```
 3. 选择库中*除*第一项以外的任何项。 将库的 **[Items](controls/properties-core.md)** 属性设置为以下表达式：  
-   ```Filter(Inventory, UnitsInStock<=StockFilter!Value)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value)```
 4. 在**预览**中，将滑块调整到库中介于最大和最小数量之间的值。 调整滑块时，库只会显示小于所选值的产品：  
    ![][13]  
 
@@ -146,7 +146,7 @@ ms.locfileid: "42844449"
 1. 返回设计器。
 2. 在“插入”选项卡上，选择“文本”，选择“输入文本”，并将新控件重命名为 **NameFilter**。 将文本控件移动到滑块下方。
 3. 将库的 **[Items](controls/properties-core.md)** 属性设置为以下表达式：  
-   ```Filter(Inventory, UnitsInStock<=StockFilter!Value && NameFilter!Text in ProductName)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value && NameFilter.Text in ProductName)```
 4. 在“预览”中，将滑块滑到“30”，然后在文本输入控件中键入字母“g”。 库只会显示库存数量少于 30 且名称包含字母“g”的产品：  
    ![][14]  
 

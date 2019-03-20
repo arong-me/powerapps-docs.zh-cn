@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6625df3f822462c86de1f720b7a310f5e516a6ca
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 25cae936ace1dcd3108f11271e3fe38cb41ae2e7
+ms.sourcegitcommit: 55c6af2f767e90c999eea4d29589c1fe19dfc4db
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42849862"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443726"
 ---
 # <a name="calendar-and-clock-functions-in-powerapps"></a>PowerApps 中的 Calendar 和 Clock 函数
 检索有关当前区域设置的日历和时钟信息。
@@ -66,11 +66,11 @@ ms.locfileid: "42849862"
 
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
-| **Calendar.MonthsLong()** |返回值包含每月的完整名称，从“January”开始。 |[ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ] |
-| **Calendar.MonthsShort()** |返回值包含每月的缩写，从“January”开始。 |[ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ] |
-| **Calendar.WeekdaysLong()** |返回值包含每个工作日的完整名称，从“星期日”开始。 |[ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ] |
-| **Calendar.WeekdaysShort()** |返回值包含每个工作日的缩写，从“周日”开始。 |[ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ] |
-| **Clock.AmPm()** |此语言采用 12 小时制。  返回值包含 AM 和 PM 标志的大写版本。 |[ "AM", "PM" ] |
-| **Clock.AmPmShort()** |此语言采用 12 小时制。  返回值包含 AM 和 PM 标志的短大写版本。 |[ "A", "P" ] |
+| **Calendar.MonthsLong()** |返回值包含每个月，从"January"开始的完整名称。 |[ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ] |
+| **Calendar.MonthsShort()** |返回值包含每个月，从"January"开始的缩写的名称。 |[ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ] |
+| **Calendar.WeekdaysLong()** |返回值包含每一天，从"星期日"开始的完整名称。 |[ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ] |
+| **Calendar.WeekdaysShort()** |返回值包含每一天，从"星期日"开始的缩写的名称。 |[ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ] |
+| **Clock.AmPm()** |此语言采用 12 小时制。 返回值包含 AM 和 PM 标志的大写版本。 |[ "AM", "PM" ] |
+| **Clock.AmPmShort()** |此语言采用 12 小时制。 返回值包含 AM 和 PM 标志的短大写版本。 |[ "A", "P" ] |
 | **Clock.IsClock24()** |此语言采用 12 小时制。 |**false** |
 

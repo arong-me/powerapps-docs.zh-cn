@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9d86bcaf02050da1b3cd0364e28bc4ec05a6407d
-ms.sourcegitcommit: 6e579014ebb1f801985b8b4b68b7b768a09559c7
-ms.translationtype: HT
+ms.openlocfilehash: a04320d2d8bb2d8ad3ebf30d3ecbd0dfe7f9b0bd
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247577"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57801954"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>在 PowerApps 中优化画布应用性能
 Microsoft 正致力于完善在 PowerApps 平台上运行的所有应用的性能。 但你可以按照本主题中的最佳做法提高你所创建的应用的性能。
@@ -101,3 +101,15 @@ Microsoft 正致力于完善在 PowerApps 平台上运行的所有应用的性�
 
 ## <a name="republish-apps-regularly"></a>定期重新发布应用
 [重新发布应用](https://powerapps.microsoft.com/blog/republish-your-apps-to-get-performance-improvements-and-additional-features/)（博客文章），以从 PowerApps 平台中获取性能改进和其他功能。
+
+## <a name="avoid-repeating-the-same-formula-in-multiple-places"></a>避免重复多个位置中的相同公式
+如果多个属性运行同一个公式 （尤其是如果它是复杂），请考虑将其设置一次，然后引用后续条件中的第一个属性的输出。 例如，未设置**DisplayMode**为相同的复杂公式 A、 B、 C、 D 和 E 控件的属性。 与此相反，设置 A 的**DisplayMode**属性设为复杂的公式中，设置 B 的**DisplayMode**属性设置为 A 的结果**DisplayMode**属性等的 C、 D 和 e。
+
+## <a name="enable-delayoutput-on-all-text-input-controls"></a>所有文本输入控件上启用 DelayOutput
+如果你有多个公式或引用的值的规则**文本输入**控件，将设置**DelayedOutput**为 true 的控件的属性。 **文本**只有在输入中快速连续的击键记录有时间后将更新该控件的属性。 公式或规则不会运行多次，以及如何改善应用性能。
+
+## <a name="avoid-using-formupdates-in-rules-and-formulas"></a>避免在规则和公式中使用 Form.Updates
+如果使用引用规则或公式中的用户输入值**Form.Updates**变量时，它循环访问窗体的所有数据卡，并创建一条记录每次。 若要使应用能够更高效，引用直接从数据卡或控件值的值。
+
+## <a name="next-steps"></a>后续步骤
+审阅[编码标准](https://aka.ms/powerappscanvasguidelines)最大化应用程序性能和使应用程序更易于维护。

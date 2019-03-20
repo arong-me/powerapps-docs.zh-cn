@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b51b7cde36a70001ff8545c497da7c4b4d5d1fa3
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 9e31ae7600663daa694b46376008161502c9c428
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833902"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803403"
 ---
 # <a name="understand-data-sources-for-canvas-apps-in-powerapps"></a>了解 PowerApps 中画布应用的数据源
 
@@ -40,7 +40,7 @@ ms.locfileid: "42833902"
 
 ### <a name="local-data-sources"></a>本地数据源
 
-使用**[库](controls/control-gallery.md)**、**[显示窗体](controls/control-form-detail.md)** 和**[编辑窗体](controls/control-form-detail.md)** 控件可以轻松创建一个可在数据源中读取和写入数据的应用。  若要开始，请阅读[了解数据窗体](working-with-forms.md)一文。  
+使用**[库](controls/control-gallery.md)**、**[显示窗体](controls/control-form-detail.md)** 和**[编辑窗体](controls/control-form-detail.md)** 控件可以轻松创建一个可在数据源中读取和写入数据的应用。  若要开始操作，请阅读[了解数据窗体](working-with-forms.md)一文。  
 
 如果想要让 PowerApps 基于数据创建应用，需使用这些控件。 在幕后，应用使用内部表来存储和处理来自数据源的数据。
 
@@ -80,13 +80,13 @@ PowerApps 应用内部的表为固定值，就如同数字或字符串是值一�
 * 信息通过存储服务（在本例中为 Office 365 站点的 SharePoint 列表）存储和共享。
 * 可以通过连接来向应用提供此信息。  该连接负责对访问信息的用户进行身份验证。
 * 启动应用或者调用 **[Refresh](functions/function-refresh.md)** 函数时，信息将从连接抽取到应用中的数据源供本地使用。
-* 可以使用公式读取信息，并在用户可见的控件中公开这些信息。 通过在屏幕上使用库并将 **[Items](controls/properties-core.md)** 属性连接到数据源来显示该数据源的记录：**Gallery.Items = DataSource**。  使用控件的 **[Default](controls/properties-core.md)** 属性将库中的控件连接到该库。  
+* 可以使用公式读取信息，并在用户可见的控件中公开这些信息。 可以通过在屏幕和绑定上使用库中显示数据源的记录**[项](controls/properties-core.md)** 到数据源的属性：**Gallery.Items = DataSource**。  使用控件的 **[Default](controls/properties-core.md)** 属性将库中的控件连接到该库。  
 * 数据源也是一个表。  因此，在使用整个数据源之前，可以使用 **[Filter](functions/function-filter-lookup.md)**、**[Sort](functions/function-sort.md)**、**[AddColumns](functions/function-table-shaping.md)** 和其他函数来对它进行优化和补充。  还可以使用 **[Lookup](functions/function-filter-lookup.md)**、**[First](functions/function-first-last.md)**、**[Last](functions/function-first-last.md)** 和其他函数来处理单条记录。
 
 ### <a name="modify-a-record"></a>修改记录
-前一部分已介绍如何读取数据源。  请注意，上图中的箭头是单向的。  对数据源所做的更改不是通过用于检索数据的同一个公式推回的，  而是使用新的公式。  通常，用于编辑记录与浏览记录的屏幕是不同的，尤其是在移动设备上。
+在上一部分中，您将看到如何读取数据源。  请注意，上图中的箭头是单向的。  对数据源所做的更改不是通过用于检索数据的同一个公式推回的，  而是使用新的公式。  通常，用于编辑记录与浏览记录的屏幕是不同的，尤其是在移动设备上。
 
-请注意，若要修改某个数据源的某个现有记录，该记录最初必须来自该数据源。  记录可能已遍历某个库、某个[上下文变量](working-with-variables.md#create-a-context-variable)和任意数量的公式，但其来源应可追溯到该数据源。  这一点非常重要，因为其他信息会连同唯一标识它们的记录一起遍历，确保修改正确的记录。    
+请注意，若要修改某个数据源的某个现有记录，该记录最初必须来自该数据源。  记录可能已遍历某个库、某个[上下文变量](working-with-variables.md#use-a-context-variable)和任意数量的公式，但其来源应可追溯到该数据源。  这一点非常重要，因为其他信息会连同唯一标识它们的记录一起遍历，确保修改正确的记录。    
 
 ![](media/working-with-data-sources/writing-to-a-datasource.png) 上图显示了更新数据源时的信息流：
 
@@ -101,8 +101,8 @@ PowerApps 应用内部的表为固定值，就如同数字或字符串是值一�
 ### <a name="validation"></a>验证
 在对记录进行更改之前，应用应该尽力确保该项更改被接受。  原因有两点：
 
-* *可立即向用户反馈* 。  解决问题的最佳时机就是在发生问题的那一刻，用户还没有忘记前因时。  例如，当用户每次触屏或击键时，出现一段红色文本来提醒用户输入有问题。
-* *降低网络流量和用户延迟* 。  在应用中检测到的问题越多，就意味着可用于通过网络检测和解决问题的对话更少。  每次对话都需要占用一定的时间，而用户必须等待这段时间才能继续操作。
+*  *可立即向用户反馈* 。  解决问题的最佳时机就是在发生问题的那一刻，用户还没有忘记前因时。  例如，当用户每次触屏或击键时，出现一段红色文本来提醒用户输入有问题。
+*  *降低网络流量和用户延迟* 。  在应用中检测到的问题越多，就意味着可用于通过网络检测和解决问题的对话更少。  每次对话都需要占用一定的时间，而用户必须等待这段时间才能继续操作。
 
 PowerApps 提供两个验证工具：
 

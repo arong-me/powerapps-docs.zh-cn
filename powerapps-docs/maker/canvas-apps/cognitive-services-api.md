@@ -1,33 +1,33 @@
 ---
 title: 在 PowerApps 中使用认知服务 | Microsoft 文档
-description: 生成使用 Microsoft 认知服务文本分析 API 分析文本的基本画布应用。
-author: AFTOwen
+description: 构建使用 Azure 认知服务文本分析 API 分析文本的基本画布应用。
+author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 12/08/2017
-ms.author: anneta
+ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: df823f68842ad3c7a7497e6dce9cc3540520527e
-ms.sourcegitcommit: 3dc330d635aaf5bc689efa6bd39826d6e396c832
-ms.translationtype: HT
+ms.openlocfilehash: 07548ff8fb14626543472b72ea52b80c858eeb0e
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48875867"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803656"
 ---
 # <a name="use-cognitive-services-in-powerapps"></a>在 PowerApps 中使用认知服务
-本文介绍如何生成使用 [Microsoft 认知服务文本分析 API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) 分析文本的基本画布应用。 我们将介绍如何设置文本分析 API，以及如何使用[文本分析连接器](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/)连接到它。 随后将介绍如何创建调用此 API 的画布应用。
+本文介绍如何生成使用的基本画布应用[Azure 认知服务文本分析 API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview)分析文本。 我们将介绍如何设置文本分析 API，以及如何使用[文本分析连接器](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/)连接到它。 随后将介绍如何创建调用此 API 的画布应用。
 
 > [!NOTE]
 > 如果是刚开始接触在 PowerApps 中生成应用，建议先阅读[从头开始创建应用](get-started-create-from-blank.md)，再深入研究本文。
 
-## <a name="introduction-to-microsoft-cognitive-services"></a>Microsoft 认知服务简介
-Microsoft 认知服务是一组可使应用程序更加智能、富有吸引力和易被发现的 API、SDK 和服务。 借助这些服务，你可以轻松地将智能功能添加到应用程序，这些功能包括表情和视频检测；面部、语音和视觉识别；以及语音和语言理解等。
+## <a name="introduction-to-azure-cognitive-services"></a>Azure 认知服务简介
+Azure 认知服务是一组 Api、 Sdk 和服务可使您的应用程序更加智能、 富有吸引力和可发现性。 借助这些服务，你可以轻松地将智能功能添加到应用程序，这些功能包括表情和视频检测；面部、语音和视觉识别；以及语音和语言理解等。
 
 本文重点介绍如何通过文本分析 API 添加“语言理解”功能。 通过此 API 可以检测文本中的感情、关键词语、主题和语言。 我们先体验一下此 API 的演示，然后再注册预览版。
 
@@ -47,11 +47,7 @@ Microsoft 认知服务是一组可使应用程序更加智能、富有吸引力�
 
 1. 如果还没有 Azure 订阅，可以[注册免费订阅](https://azure.microsoft.com/free/)。
 
-2. 登录你的 Azure 帐户。
-
-3. 转到 Azure 门户中的[“创建认知服务”边栏选项卡](https://go.microsoft.com/fwlink/?LinkId=761108)。
-
-4. 输入文本分析 API 的相关信息，如下图所示。 选择“F0”（免费）定价层。
+2. 在中[本页](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesTextAnalytics)，按照下图显示了输入文本分析 api，信息。 选择“F0”（免费）定价层。
    
     ![创建文本分析 API](./media/cognitive-services-api/azure-create.png)
 
@@ -125,29 +121,44 @@ Microsoft 认知服务是一组可使应用程序更加智能、富有吸引力�
 
 1. 此应用根据在应用中选中的复选框进行特定 API 调用。 单击或点击“分析文本”时，应用会执行 1 个、2 个或 3 个 API 调用。
 
-2. 应用在以下三个不同的[集合](working-with-variables.md#create-a-collection)中存储 API 返回的数据：languageCollect、sentimentCollect 和 phrasesCollect。
+2. 应用在以下三个不同的[集合](working-with-variables.md#use-a-collection)中存储 API 返回的数据：languageCollect、sentimentCollect 和 phrasesCollect。
 
 3. 应用根据三个集合中的内容，更新两个标签的 Text 属性和库的 Items 属性。
 
 在这种背景下，接下来将添加按钮的 OnSelect 属性的公式。 这里将会发生奇迹。
 
-```
-If(chkLanguage.Value=true,
-
-        ClearCollect(languageCollect, TextAnalytics.DetectLanguage({numberOfLanguagesToDetect:1, text:tiTextToAnalyze.Text}).detectedLanguages.name)
-
+```powerapps-dot
+If( chkLanguage.Value = true,
+    ClearCollect( languageCollect, 
+        TextAnalytics.DetectLanguage(
+            {
+                numberOfLanguagesToDetect: 1, 
+                text: tiTextToAnalyze.Text
+            }
+        ).detectedLanguages.name
+    )
 );
 
-If(chkPhrases.Value=true,
-
-        ClearCollect(phrasesCollect, TextAnalytics.KeyPhrases({language:"en", text:tiTextToAnalyze.Text}).keyPhrases)
-
+If( chkPhrases.Value = true,
+    ClearCollect( phrasesCollect, 
+        TextAnalytics.KeyPhrases(
+            {
+                language: "en", 
+                text: tiTextToAnalyze.Text
+            }
+        ).keyPhrases
+    )
 );
 
-If(chkSentiment.Value=true,
-
-        ClearCollect(sentimentCollect, TextAnalytics.DetectSentiment({language:"en", text:tiTextToAnalyze.Text}).score)
-
+If( chkSentiment.Value = true,
+    ClearCollect( sentimentCollect, 
+        TextAnalytics.DetectSentiment(
+            {
+                language: "en", 
+                text: tiTextToAnalyze.Text
+            }
+        ).score
+    )
 )
 ```
 
@@ -161,7 +172,7 @@ If(chkSentiment.Value=true,
 
   * 在 DetectLanguage() 中，将 numberOfLanguagesToDetect 硬编码为 1。不过，也可以根据应用中的某逻辑传递此参数。
 
-  * 在 KeyPhrases() 和 DetectSentiment() 中，将 language 硬编码为“en”。不过，也可以根据应用中的某逻辑传递此参数。 例如，可以先检测语言，再根据 DetectLanguage() 返回的内容设置此参数。
+  * 在中**keyphrases （)** 并**detectsentiment （)**，**语言**是硬编码为"en"，但您可以传递此参数基于应用程序中的一些逻辑。 例如，可以先检测语言，再根据 DetectLanguage() 返回的内容设置此参数。
 
 * 针对执行的各个调用，将结果添加到相应的集合：
 

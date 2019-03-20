@@ -1,24 +1,24 @@
 ---
 title: 发布 Power BI 项目报表并创建仪表板 | Microsoft 文档
 description: 在此任务中，我们将把数据集和报表发布到 Power BI 服务中，然后再根据报表创建仪表板。
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/30/2018
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5a39ec04015fe360bc550d9ea4f708d887ba34c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 43e95b88cdf305e7c4b768def83a6b41fa0fcae7
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833865"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799355"
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>发布 Power BI 项目报表并创建仪表板
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "42833865"
 
 在此任务中，我们将把数据集和报表发布到 Power BI 服务中，然后再根据报表创建仪表板。 在许多情况下，报表包含大量可视化效果，但只有一小部分用于仪表板。 在此示例中，我们将向仪表板添加全部四个可视化效果。
 
-## <a name="step-1-publish-the-dataset-and-report"></a>第 1 步：发布数据集和报表
+## <a name="step-1-publish-the-dataset-and-report"></a>步骤 1:发布数据集和报表
 1. 在 Power BI Desktop 中的“开始”选项卡上，单击或点击“发布”。
    
     ![发布数据集和报表](./media/sharepoint-scenario-publish-report/06-01-01-publish.png)
@@ -48,7 +48,7 @@ ms.locfileid: "42833865"
    
     可以发现，在我们发布报表后，Power BI Desktop 上传了数据集 (d) 和报表 (c)。 将在 Power BI 服务（而不是 Power BI Desktop）中创建仪表板，此工作区中还没有任何仪表板 (b)。 我们快速创建一个仪表板。
 
-## <a name="step-2-configure-credentials-for-refresh"></a>第 2 步：配置凭据以进行刷新
+## <a name="step-2-configure-credentials-for-refresh"></a>步骤 2:配置刷新的凭据
 1. 在 Power BI 服务中，依次单击或点击右上角的 ![齿轮图标](./media/sharepoint-scenario-publish-report/icon-gear.png) 和“设置”。
 2. 依次单击或点击“数据集”和“project-analysis”。
    
@@ -67,7 +67,7 @@ ms.locfileid: "42833865"
    
     ![数据源已更新](./media/sharepoint-scenario-publish-report/06-01-11-updated.png)
 
-## <a name="step-3-create-a-dashboard"></a>第 3 步：创建仪表板
+## <a name="step-3-create-a-dashboard"></a>步骤 3:创建仪表板
 
 1. 若要返回到报表，请在“报表”下，单击或点击“项目分析”。
 

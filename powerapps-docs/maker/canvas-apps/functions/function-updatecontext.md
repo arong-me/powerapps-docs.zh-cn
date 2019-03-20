@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6f89887d05f4b4885e66335457357a089ceaf90f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 20e06f7c03d0aca18b8351e546ccee3fff528f56
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865500"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803564"
 ---
 # <a name="updatecontext-function-in-powerapps"></a>PowerApps 中的 UpdateContext 函数
-创建或更新当前屏幕的[上下文变量](../working-with-variables.md#create-a-context-variable)。
+创建或更新当前屏幕的[上下文变量](../working-with-variables.md#use-a-context-variable)。
 
 ## <a name="overview"></a>概述
 使用 **UpdateContext** 函数创建上下文变量，该变量暂时保留一条信息，比如用户已选择某按钮的次数或数据运算的结果。
@@ -62,11 +62,11 @@ PowerApps 以公式为基础，这些公式会在用户与应用交互时自动�
 
 * *UpdateRecord* - 必需。 一条记录，其中包含至少一列的名称以及该列的值。 将为每列和指定的值创建或更新上下文变量。
 
-**UpdateContext**( { *ContextVariable1*: *Value1* [, *ContextVariable2*: *Value2* [, ... ] ] } )
+**UpdateContext**( { *ContextVariable1*:*Value1* [， *ContextVariable2*:*Value2* [，...]]})
 
 * *ContextVariable1* - 必需。  要创建或更新的上下文变量的名称。
 * *Value1* - 必需。  要分配给上下文变量的值。
-* *ContextVariable2*: *Value2*, ... - 可选。 要创建或更新的其他上下文变量及其值。
+* *ContextVariable2*:*Value2*，...-可选。 要创建或更新的其他上下文变量及其值。
 
 ## <a name="examples"></a>示例
 
@@ -76,7 +76,7 @@ PowerApps 以公式为基础，这些公式会在用户与应用交互时自动�
 | **UpdateContext( {&nbsp;Counter:&nbsp;2&nbsp;} )** |将上一示例中 **Counter** 上下文变量的值设置为 **2**。 |**Counter** 的值为 **2**。 |
 | **UpdateContext( {&nbsp;Name:&nbsp;"Lily",&nbsp;Score:&nbsp;10&nbsp;} )** |创建或修改上下文变量 **Name** 和 **Score**，分别将它们的值设置为 **Lily** 和 **10**。 |**Name** 的值为 **Lily**，**Score** 的值为 **10**。 |
 | **UpdateContext( {&nbsp;Person:&nbsp;{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;} )** |创建或修改上下文变量 **Person**，将其值设置为一条记录。 该记录包含名为“姓名”和“地址”的两列。 “姓名”列为 **Milton**，“地址”列的值为 **1 Main St**。 |**Person** 的值为记录 **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}**。<br><br>使用名称 **Person** 整体引用此记录，或使用 **Person.Name** 或 **Person.Address** 引用此记录的单个列。 |
-| **UpdateContext( {&nbsp;Person: Patch(&nbsp;Person,&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;) }&nbsp;)** |搭配使用 **[Patch](function-patch.md)** 函数更新 **Person** 上下文变量，将“地址”列的值设置为 **2 Main St**。 |**Person** 现在的值为记录 **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}**。 |
+| **UpdateContext ({&nbsp;人员：Patch(&nbsp;Person,&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;) }&nbsp;)** |搭配使用 **[Patch](function-patch.md)** 函数更新 **Person** 上下文变量，将“地址”列的值设置为 **2 Main St**。 |**Person** 现在的值为记录 **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}**。 |
 
 ### <a name="step-by-step-example"></a>分步示例
 1. 将默认屏幕命名为 **Source**，添加另一个屏幕，将其命名为 **Target**。

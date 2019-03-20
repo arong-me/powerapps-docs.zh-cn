@@ -1,36 +1,40 @@
 ---
 title: 查找属性 | Microsoft 文档
 description: 按控件、按类别或按字母顺序查找属性。
-author: gregli-msft
+author: fikaradz
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 03/17/2016
-ms.author: gregli
+ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6c69d32f21bb5d1222122c4ec129d765b390d98f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 968722e672c6f169c4a9e2e87be959aa48e23c86
+ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863116"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "58073662"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>PowerApps 中的控件和属性
+
 通过设置控件的属性之一配置该控件的外观和行为。 每种类型的控件都有一组不同的属性。 某些属性（例如 **Height** 和 **Width**）是几乎每种类型的控件共有的，但其他属性（例如 **CheckboxSize**）特定于某种类型的控件。
 
 ## <a name="controls"></a>控件
+
 **[添加图片](controls/control-add-picture.md)** – 从本地设备加载要上载到数据源的图像。
 
 **[附件](controls/control-attachments.md)** - 下载文件，以及将文件从本地设备上传到数据源。
 
 **[音频](controls/control-audio-video.md)** – 播放音频剪辑，或视频剪辑的音频部分。
 
-**[条形码扫描程序（实验性）](controls/control-barcodescanner.md)**- 使用带摄像头的设备扫描条形码。
+**[（实验性） 的条码扫描器](controls/control-barcodescanner.md)** – 扫描 （旧版/已过时） 的 web 浏览器中的代码。
+
+**[条码扫描器](controls/control-new-barcode-scanner.md)** – 扫描条形码、 QR 码和 Android 或 iOS 设备上的数据矩阵代码。
 
 **[按钮](controls/control-button.md)** – 通过单击或点击来与应用交互。
 
@@ -56,7 +60,7 @@ ms.locfileid: "42863116"
 
 **[编辑窗体](controls/control-form-detail.md)** – 使用窗体编辑和创建数据源中的记录。
 
-**[实体窗体](entity-form-control.md)** – 实验性功能：添加动态窗体，用户可从中通过 Common Data Service 查看、导航和编辑关系数据。
+**[实体窗体](entity-form-control.md)** -实验性功能：添加动态窗体中的用户可以查看、 导航和编辑 Common Data Service 中的关系数据。
 
 **[导出](controls/control-export-import.md)** – 导出数据以便在 PowerApps 中的其他位置使用。
 
@@ -88,7 +92,7 @@ ms.locfileid: "42863116"
 
 **[评分](controls/control-rating.md)** – 表示一个介于 1 和指定数字之间的值。
 
-**[RTF 编辑器（实验性）](controls/control-richtexteditor.md)** - 允许应用用户对格式文本进行格式设置。
+**[富文本编辑器](controls/control-richtexteditor.md)** – 允许丰富文本格式设置由应用用户。
 
 **[屏幕](controls/control-screen.md)** – 显示和更新有关特定任务的数据。
 
@@ -106,7 +110,10 @@ ms.locfileid: "42863116"
 
 **[视频](controls/control-audio-video.md)** – 播放本地文件、数据源或 YouTube 中的视频剪辑。
 
+**[（实验性） 的 web 条码扫描器](controls/control-barcodescanner.md)** – 旧条形码扫描程序，这已过时，但可能适用于扫描的 web 浏览器中的代码。
+
 ## <a name="common-properties-by-category"></a>按类别列出的常见属性
+
 **[颜色和边框](controls/properties-color-border.md)** – 配置当用户与其交互时可发生变化的控件的颜色和边框。
 
 **[核心](controls/properties-core.md)** – 配置用户是否可看到某个控件并与之交互。
@@ -118,7 +125,9 @@ ms.locfileid: "42863116"
 **[文本](controls/properties-text.md)** – 配置文本在控件中的显示方式，例如字体特征、对齐方式、行高。  
 
 ## <a name="all-properties"></a>所有属性
+
 ### <a name="a"></a>A
+
 **[ActualZoom](controls/control-pdf-viewer.md)** – 控件的实际缩放量，可能与 **Zoom** 属性请求的缩放量不同。  适用于 **[PDF 查看器](controls/control-pdf-viewer.md)** 控件。
 
 **[Align](controls/properties-text.md)** – 文本相对于其控件的水平居中的位置。  适用于许多控件。
@@ -134,6 +143,7 @@ ms.locfileid: "42863116"
 **AutoStart** – 用户导航到包含音频或视频控件的屏幕时，该控件是否自动开始播放剪辑。  适用于**[音频](controls/control-audio-video.md)**、**[计时器](controls/control-timer.md)** 和**[视频](controls/control-audio-video.md)** 控件。
 
 ### <a name="b"></a>B
+
 **[BackgroundImage](controls/properties-visual.md)** – 显示在屏幕背景中的图像文件的名称。  适用于**[屏幕](controls/control-screen.md)** 控件。
 
 **[BorderColor](controls/properties-color-border.md)** – 控件边框的颜色。  适用于许多控件。
@@ -145,6 +155,7 @@ ms.locfileid: "42863116"
 **[Brightness](controls/control-camera.md)** – 用户在图像中可能感知到的光线强度。  适用于**[相机](controls/control-camera.md)** 控件。
 
 ### <a name="c"></a>C
+
 **[CalculateOriginalDimensions](controls/control-image.md)** – 启用 **[OriginalHeight](controls/control-image.md)** 和 **[OriginalWidth](controls/control-image.md)** 属性。  适用于**[图像](controls/control-image.md)** 控件。
 
 **[Camera](controls/control-camera.md)** – 在具有多个相机的设备上，应用使用的相机的数字 ID。  适用于**[相机](controls/control-camera.md)** 控件。
@@ -172,6 +183,7 @@ ms.locfileid: "42863116"
 **[CurrentPage](controls/control-pdf-viewer.md)** – 实际显示的 PDF 文件中的页码。  适用于 **[PDF 查看器](controls/control-pdf-viewer.md)** 控件。
 
 ### <a name="d"></a>D
+
 **[Data](controls/control-export-import.md)** – 想要导出到本地文件的集合的名称。  适用于**[导出](controls/control-export-import.md)** 控件。
 
 **[DataField](controls/control-card.md)** – 此卡片显示和编辑的记录中字段的名称。  适用于**[卡片](controls/control-card.md)** 控件。
@@ -203,6 +215,7 @@ ms.locfileid: "42863116"
 **[Duration](controls/control-timer.md)** – 计时器运行的时长。  适用于**[计时器](controls/control-timer.md)** 控件。
 
 ### <a name="e"></a>E
+
 **[EndYear](controls/control-date-picker.md)** – 用户可将日期选取器控件的值设为的最后一个年份。  适用于**[日期选取器](controls/control-date-picker.md)** 控件。
 
 **Error** – 此属性的含义取决于控件：
@@ -216,6 +229,7 @@ ms.locfileid: "42863116"
 **[Explode](controls/control-pie-chart.md)** – 饼图中楔形间的距离。  适用于**[饼图](controls/control-pie-chart.md)** 控件。
 
 ### <a name="f"></a>F
+
 **[Fill](controls/properties-color-border.md)** – 控件的背景色。  适用于许多控件。
 
 **[FindNext](controls/control-pdf-viewer.md)** – 在文档中查找 **FindText** 的下一个实例。  适用于 **[PDF 查看器](controls/control-pdf-viewer.md)** 控件。
@@ -226,12 +240,14 @@ ms.locfileid: "42863116"
 
 [Font](controls/properties-text.md) – 文本中所显示的字体系列的名称。  适用于许多控件。
 
-**[FontWeight](controls/properties-text.md)** – 控件中文本的粗细：**粗体**、**半粗体**、**正常**或**细体**。  适用于许多控件。
+**[FontWeight](controls/properties-text.md)**  – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。  适用于许多控件。
 
 ### <a name="g"></a>G
+
 **[GridStyle](controls/control-column-line-chart.md)** – 柱形图或折线图显示其 x 轴、y 轴或两者皆不显示。  适用于**[柱形图](controls/control-column-line-chart.md)** 和**[折线图](controls/control-column-line-chart.md)** 控件。
 
 ### <a name="h"></a>H
+
 **[HandleActiveFill](controls/control-slider.md)** – 用户更改滑块值时，该滑块控点的颜色。  适用于**[滑块](controls/control-slider.md)** 控件。
 
 **[HandleFill](controls/control-slider.md)** – 切换控件或滑块控件中的控点（用于更改位置的元素）颜色。  适用于**[滑块](controls/control-slider.md)** 控件。
@@ -251,6 +267,7 @@ ms.locfileid: "42863116"
 **[HTMLText](controls/control-html-text.md)** – HTML 文本控件中显示的文本，可能包含 HTML 标记。  适用于 **[HTML 文本](controls/control-html-text.md)** 控件。
 
 ### <a name="i"></a>I
+
 [Image](controls/properties-visual.md) – 在图像、音频或麦克风控件中显示的图像名称。  适用于**[音频](controls/control-audio-video.md)**、**[图像](controls/control-image.md)**、**[麦克风](controls/control-microphone.md)** 和**[视频](controls/control-audio-video.md)** 控件。
 
 **[ImagePosition](controls/properties-visual.md)** – 屏幕或控件大小与图像大小不同时，其中图像的位置（“填充”、“适应”、“拉伸”、“平铺”或“居中”）。  适用于许多控件。
@@ -274,6 +291,7 @@ ms.locfileid: "42863116"
 **[ItemsGap](controls/control-column-line-chart.md)** – 柱形图中各列之间的距离。  适用于**[柱形图](controls/control-column-line-chart.md)** 控件。
 
 ### <a name="l"></a>L
+
 **[LabelPosition](controls/control-pie-chart.md)** – 饼图中标签相对于楔形的位置。  适用于**[饼图](controls/control-pie-chart.md)** 控件。
 
 **[LastSubmit](controls/control-form-detail.md)** – 上一次成功提交的记录，包括服务器生成的任何字段。  适用于**[编辑窗体](controls/control-form-detail.md)** 控件。
@@ -285,6 +303,7 @@ ms.locfileid: "42863116"
 **[Loop](controls/control-audio-video.md)** – 音频或视频剪辑是否在播放完成后自动重新开始。  适用于**[音频](controls/control-audio-video.md)** 和**[视频](controls/control-audio-video.md)** 控件。
 
 ### <a name="m"></a>M
+
 **[Markers](controls/control-column-line-chart.md)** – 柱形图或折线图是否显示每个数据点的值。  适用于**[柱形图](controls/control-column-line-chart.md)** 和**[折线图](controls/control-column-line-chart.md)** 控件。
 
 **[MarkerSuffix](controls/control-column-line-chart.md)** – 在柱形图中每个值后显示的文本，其中 **[Markers](controls/control-column-line-chart.md)** 属性设置为 **true**。  适用于**[柱状图](controls/control-column-line-chart.md)** 控件。
@@ -308,11 +327,13 @@ ms.locfileid: "42863116"
 * **[文本输入](controls/control-text-input.md)** 控件 – 控件处于“单行”、“多行”或“密码”模式。
 
 ### <a name="n"></a>N
+
 **[NavigationStep](controls/control-gallery.md)** – 如果库的 **[ShowNavigation](controls/control-gallery.md)** 属性设置为 **true** 且用户选择该库任意一端的导航箭头，则该库滚动的距离是多少。  适用于**[库](controls/control-gallery.md)** 控件。
 
 **[NumberOfSeries](controls/control-column-line-chart.md)** – 在柱形图或折线图中显示的列数。  适用于**[柱形图](controls/control-column-line-chart.md)** 和**[折线图](controls/control-column-line-chart.md)** 控件。
 
 ### <a name="o"></a>O
+
 **[OnChange](controls/properties-core.md)** - 应用在用户更改控件值（例如，通过调整滑块）时的行为。  适用于许多控件。
 
 **OnCheck** - 应用在复选框或切换按钮的值更改为“true”时的行为。  适用于**[复选框](controls/control-check-box.md)** 和**[切换](controls/control-toggle.md)** 控件。
@@ -354,6 +375,7 @@ ms.locfileid: "42863116"
 **[Overflow](controls/control-text-box.md)** - 标签是否会在“[Wrap](controls/control-text-box.md)”属性设置为“true”且“[Text](controls/properties-core.md)”属性值包含的字符数超过控件一次可显示的字符数时显示滚动条。  适用于**[标签](controls/control-text-box.md)** 控件。
 
 ### <a name="p"></a>P
+
 **[Padding](controls/properties-size-location.md)** – 导入或导出按钮上的文本和该按钮边缘之间的距离。  适用于**[添加图片](controls/control-add-picture.md)**、**[导出](controls/control-export-import.md)** 和**[导入](controls/control-export-import.md)** 控件。
 
 **[PaddingBottom](controls/properties-size-location.md)** – 控件中的文本与该控件下边缘之间的距离。  适用于许多控件。
@@ -381,6 +403,7 @@ ms.locfileid: "42863116"
 **[PressedFill](controls/properties-color-border.md)** – 用户在点击或单击控件时，该控件的背景色。  适用于许多控件。
 
 ### <a name="r"></a>R
+
 **[RadioBackgroundFill](controls/control-radio.md)** – 单选按钮控件中的圆圈背景色。  适用于**[单选按钮](controls/control-radio.md)** 控件。
 
 **[RadioBorderColor](controls/control-radio.md)** – 单选按钮控件中每个选项的圆圈颜色。  适用于**[单选按钮](controls/control-radio.md)** 控件。
@@ -412,6 +435,7 @@ ms.locfileid: "42863116"
 [Reset](controls/properties-core.md) – 是否还原控件的默认值。  适用于许多控件。  另请参阅 [Reset](functions/function-reset.md) 函数。
 
 ### <a name="s"></a>S
+
 **Selected** – 选定的项。  适用于**[下拉列表](controls/control-drop-down.md)** 和**[库](controls/control-gallery.md)** 控件。
 
 **[SelectedDate](controls/control-date-picker.md)** – 日期控件中当前选定的日期。  适用于**[日期选取器](controls/control-date-picker.md)** 控件。
@@ -455,6 +479,7 @@ ms.locfileid: "42863116"
 [Strikethrough](controls/properties-text.md) – 通过文本显示的线是否在控件上显示。  适用于许多控件。
 
 ### <a name="t"></a>T
+
 **[TemplateFill](controls/control-gallery.md)** – 库的背景色。  适用于**[库](controls/control-gallery.md)** 控件。
 
 **[TemplatePadding](controls/control-gallery.md)** – 库中项之间的距离。  适用于**[库](controls/control-gallery.md)** 控件。
@@ -472,6 +497,7 @@ ms.locfileid: "42863116"
 **[Transparency](controls/control-image.md)** – 图像后的控件保持可见的程度。  适用于**[图像](controls/control-image.md)** 控件。
 
 ### <a name="u"></a>U
+
 [Underline](controls/properties-text.md) – 在文本下方显示的线是否在控件上显示。  适用于许多控件。
 
 **[Unsaved](controls/control-form-detail.md)** – 如果**[编辑窗体](controls/control-form-detail.md)** 控件包含尚未保存的用户更改，则此项为 True。  适用于**[编辑窗体](controls/control-form-detail.md)** 控件。
@@ -481,6 +507,7 @@ ms.locfileid: "42863116"
 **[Updates](controls/control-form-detail.md)** – 在窗体控件中加载的记录的值，用于写回到数据源。  适用于**[编辑窗体](controls/control-form-detail.md)** 控件。
 
 ### <a name="v"></a>V
+
 **Valid** – **[卡片](controls/control-card.md)** 或**[编辑窗体](controls/control-form-detail.md)** 控件是否包含可提交到数据源的有效记录。  适用于**[卡片](controls/control-card.md)** 和**[编辑窗体](controls/control-form-detail.md)** 控件。
 
 **[Value](controls/properties-core.md)** – 输入控件的值。  适用于**[复选框](controls/control-check-box.md)**、**[单选按钮](controls/control-radio.md)**、**[滑块](controls/control-slider.md)** 和**[切换](controls/control-toggle.md)** 控件。
@@ -494,6 +521,7 @@ ms.locfileid: "42863116"
 **[Visible](controls/properties-core.md)** – 控件显示还是隐藏。  适用于许多控件。
 
 ### <a name="w"></a>W
+
 **[Width](controls/properties-size-location.md)** – 控件左边缘和右边缘之间的距离。  适用于许多控件。
 
 **[WidthFit](controls/properties-size-location.md)** - 控件是否会自动水平变宽，以填充容器控件（如“[编辑表单](controls/control-form-detail.md)”控件）的所有空白空间。 如果多张数据卡将此属性设置为“true”，那么空白空间会被这些数据卡均分。 有关详细信息，请参阅[了解数据表单布局](working-with-form-layout.md)。
@@ -503,11 +531,13 @@ ms.locfileid: "42863116"
 **[WrapCount](controls/control-gallery.md)**  – 库的每个项中显示多少条记录。  适用于**[库](controls/control-gallery.md)** 控件。
 
 ### <a name="x"></a>X
+
 **[X](controls/properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。 适用于许多控件。 对于多列容器中的“[数据卡](controls/control-card.md)”控件，此属性将确定数据卡出现在哪一列。
 
 **[XLabelAngle](controls/control-column-line-chart.md)** – 柱形图或折线图的 X 轴下方的标签角度。  适用于**[柱形图](controls/control-column-line-chart.md)** 和**[折线图](controls/control-column-line-chart.md)** 控件。
 
 ### <a name="y"></a>Y
+
 **[Y](controls/properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。 适用于许多控件。 对于多行容器中的[数据卡](controls/control-card.md)控件，此属性将确定数据卡出现在哪一行。
 
 **[YAxisMax](controls/control-column-line-chart.md)** – 折线图 Y 轴的最大值。  适用于“[折线图](controls/control-column-line-chart.md)”控件。
@@ -517,4 +547,5 @@ ms.locfileid: "42863116"
 **[YLabelAngle](controls/control-column-line-chart.md)** – 折线图或柱形图 Y 轴旁边的标签角度。  适用于**[柱形图](controls/control-column-line-chart.md)** 和**[折线图](controls/control-column-line-chart.md)** 控件。
 
 ### <a name="z"></a>Z
+
 **Zoom** – 相机中图像被放大的百分比或 PDF 查看器中文件的视图百分比。  适用于**[相机](controls/control-camera.md)** 和 **[PDF 查看器](controls/control-pdf-viewer.md)** 控件。

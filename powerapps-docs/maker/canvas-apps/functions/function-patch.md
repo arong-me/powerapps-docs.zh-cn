@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 64641b0cc0822a955de2b1c9e53692dac9dfcf31
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 3adb036a1619263d2b8cef1f649c2d2f97925ceb
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865477"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803127"
 ---
 # <a name="patch-function-in-powerapps"></a>PowerApps 中的 Patch 函数
 在[数据源](../working-with-data-sources.md)中修改或创建一条或多条[记录](../working-with-tables.md#records)，或者合并数据源外的记录。
@@ -30,21 +30,21 @@ ms.locfileid: "42865477"
 ## <a name="overview"></a>概述
 使用 **Patch** 函数可修改数据源的一条或多条记录。  可以在不影响其他属性的情况下修改特定[字段](../working-with-tables.md#elements-of-a-table)的值。 例如，以下公式更改名为 Contoso 的客户的电话号码：
 
-**Patch( Customers, First( Filter( Customers, Name = "Contoso" ) ), { Phone: “1-212-555-1234” } )**
+`Patch( Customers, First( Filter( Customers, Name = "Contoso" ) ), { Phone: “1-212-555-1234” } )`
 
 结合使用 **Patch** 和 **[Defaults](function-defaults.md)** 函数可创建记录。 可以利用此行为生成[一个屏幕](../working-with-data-sources.md)，以供创建和编辑记录。 例如，以下公式为名为 Contoso 的客户创建记录：
 
-**Patch( Customers, Defaults( Customer ), { Name: “Contoso” } )**
+`Patch( Customers, Defaults( Customer ), { Name: “Contoso” } )`
 
 即使不需要使用数据源，也可以使用 **Patch** 来合并两条或多条记录。 例如，以下公式将两个记录合并成一个同时识别 Contoso 的电话号码和位置的记录：
 
-**Patch( { Name: "Contoso", Phone: “1-212-555-1234” }, { Name: "Contoso", Location: “Midtown”  } )**
+`Patch( { Name: "Contoso", Phone: “1-212-555-1234” }, { Name: "Contoso", Location: “Midtown”  } )`
 
 ## <a name="description"></a>说明
 ### <a name="modify-or-create-a-record-in-a-data-source"></a>在数据源中修改或创建记录
 要在数据源中使用这个函数，请指定数据源，然后指定一条基本记录：
 
-* 要修改记录，基本记录必须来自数据源。  基本记录可能来自一个库的**[项](../controls/properties-core.md)** 属性（在[上下文变量](../working-with-variables.md#create-a-context-variable)中），也可能来自其他途径。 不管怎样，最终必须能够追溯到基本记录来自数据源。  这一点非常重要，因为记录中包含一些额外的信息，可以帮助你重新找到记录，以便进行修改。  
+* 要修改记录，基本记录必须来自数据源。  基本记录可能来自一个库的**[项](../controls/properties-core.md)** 属性（在[上下文变量](../working-with-variables.md#use-a-context-variable)中），也可能来自其他途径。 不管怎样，最终必须能够追溯到基本记录来自数据源。  这一点非常重要，因为记录中包含一些额外的信息，可以帮助你重新找到记录，以便进行修改。  
 * 要创建记录，请使用 **[Defaults](function-defaults.md)** 函数创建一条包含默认值的基本记录。  
 
 然后指定一条或多条更改记录，每条记录都包含用于替代基本记录中属性值的新属性值。 更改记录按照参数列表从头到尾的顺序进行处理，并且使用后者的属性值替换前者的属性值。
@@ -76,7 +76,7 @@ ms.locfileid: "42865477"
 * *ChangeRecord(s)* – 必需。  一条或多条记录，其中包含要在 *BaseRecord* 中修改的属性。  更改记录按照参数列表从头到尾的顺序进行处理，并且使用后者的属性值替换前者的属性值。
 
 #### <a name="modify-or-create-a-set-of-records-in-a-data-source"></a>在数据源中修改或创建一组记录
-**Patch**( *DataSource*, *BaseRecordsTable*, *ChageRecordTable1*, [, *ChangeRecordTable2*, … ] )
+**Patch**( *DataSource*, *BaseRecordsTable*, *ChangeRecordTable1* [, *ChangeRecordTable2*, … ] )
 
 * *DataSource* – 必需。 包含要修改的记录或用于包含要创建的记录的数据源。
 * *BaseRecordTable* – 必需。 要修改或创建的记录的表。  如果记录来自数据源，则会找到记录并进行修改。 如果使用 **[Defaults](function-defaults.md)** 函数的结果，则会创建记录。

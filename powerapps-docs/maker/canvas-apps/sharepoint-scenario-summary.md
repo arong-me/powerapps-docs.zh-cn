@@ -1,24 +1,24 @@
 ---
 title: SharePoint Online 集成方案的端到端演练 | Microsoft 文档
 description: 对我们在本系列教程中生成的方案进行端到端演练。
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: df3c186bb41621e7ec6087a9da55fc037e286b1a
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 64a26fbd0e36937427bc679869d5bc942f254130
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850181"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799631"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>对完成的 SharePoint Online 集成方案进行端到端演练
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "42850181"
 
 本系列教程涉及大量基础知识，包括生成画布应用和流、创建报表并将其嵌入 SharePoint 中等。 我们由衷希望你已学到很多知识，并且充分了解如何综合运用这些技术，以便可以根据自己的需求将画布应用、流和报表集成到 SharePoint 中。 最后，我们希望对此方案进行端到端演练，以展示各方面的工作是如何完美配合的。
 
-## <a name="step-1-add-a-project-to-the-project-requests-list"></a>第 1 步：向“项目申请”列表添加项目
+## <a name="step-1-add-a-project-to-the-project-requests-list"></a>步骤 1:将项目添加到项目的请求列表
 1. 在“项目申请”列表中，依次单击或点击“所有项”和“项目申请应用”。
    
     ![“项目申请应用”视图](./media/sharepoint-scenario-summary/09-00-01-view-app.png)
@@ -59,7 +59,7 @@ ms.locfileid: "42850181"
    
     ![包含新条目的 SharePoint 列表](./media/sharepoint-scenario-summary/09-01-02-list-new.png)
 
-## <a name="step-2-approve-the-project"></a>第 2 步：审批项目
+## <a name="step-2-approve-the-project"></a>步骤 2:批准项目
 1. 在第 1 步中添加项后，流应该会运行，并发出审批邮件。 检查审批者的电子邮件帐户的收件箱。
    
     ![“审批申请”电子邮件](./media/sharepoint-scenario-summary/09-02-01-allan-email.png)
@@ -73,7 +73,7 @@ ms.locfileid: "42850181"
    
     ![条目已更新的 SharePoint 列表](./media/sharepoint-scenario-summary/09-02-03-yes.png)
 
-## <a name="step-3-assign-a-manager-to-the-project"></a>第 3 步：向项目分配经理
+## <a name="step-3-assign-a-manager-to-the-project"></a>步骤 3:向项目分配经理
 1. 首先，我们将查看 SharePoint 中的“项目详细信息”列表。 新项目的“PMAssigned”列的值为“Unassigned”。
    
     ![未分配的 SharePoint 列表项](./media/sharepoint-scenario-summary/09-03-01-unassigned.png)
@@ -93,7 +93,7 @@ ms.locfileid: "42850181"
    
     ![已分配的 SharePoint 列表项](./media/sharepoint-scenario-summary/09-03-05-assigned.png)
 
-## <a name="step-4-add-time-estimates-for-the-project"></a>第 4 步：添加项目估计时间
+## <a name="step-4-add-time-estimates-for-the-project"></a>步骤 4：添加项目估计时间
 1. 单击或点击 ![“返回”图标](./media/sharepoint-scenario-summary/icon-back.png)，返回到第一屏，再单击或点击“更新详细信息”。
    
     ![更新项目详细信息](./media/sharepoint-scenario-summary/09-04-00-intro-screen.png)
@@ -119,7 +119,7 @@ ms.locfileid: "42850181"
    
    ![SharePoint 列表中更新的详细信息](./media/sharepoint-scenario-summary/09-04-04-updated-list.png)
 
-## <a name="step-5-review-report-data-for-existing-projects"></a>第 5 步：查看现有项目的报表数据
+## <a name="step-5-review-report-data-for-existing-projects"></a>步骤 5：查看报表数据的现有项目
 1. 在 SharePoint Online 中，依次单击或点击“网站内容”和“网页”。
 2. 打开我们之前创建的“项目分析”页。
    
@@ -138,7 +138,7 @@ ms.locfileid: "42850181"
    
     正如我们在创建此可视化效果时所指出的一样，分配给 Irvin Sayers 的项目会延期启动，其中两个项目的延期启动时间跨度要比其他项目长得多。
 
-## <a name="step-6-respond-to-pending-project-delays"></a>第 6 步：响应待审批项目延迟
+## <a name="step-6-respond-to-pending-project-delays"></a>步骤 6:响应待审批项目延迟
 1. 在 Power BI 服务中，依次单击或点击“project-analysis”数据集和“立即刷新”。 刷新操作会触发我们为待审批项目创建的警报。
    
     ![立即刷新数据集](./media/sharepoint-scenario-summary/09-06-01-refresh.png)

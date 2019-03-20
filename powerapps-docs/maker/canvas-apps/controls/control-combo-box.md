@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 278560c1ececafd6d4c57945d6058879cf55170f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: ad3b8efc2306540862d0470223cee4f46fb5703c
+ms.sourcegitcommit: 50404720bed371bbc93feb08d296c954ef8038e1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42858304"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54031345"
 ---
 # <a name="combo-box-control-in-powerapps"></a>PowerApps 中的组合框控件
 用户可以在其中提供的选项之间进行选择的控件。  支持搜索和多重选择。
@@ -36,7 +36,7 @@ ms.locfileid: "42858304"
 ## <a name="key-properties"></a>关键属性
 **[Items](properties-core.md)** - 提供待选选项的数据源。
 
-**DefaultItems** - 用户与控件交互前的初始选定项。
+**DefaultSelectedItems** – 的初始选定项之前在用户与控件交互。
 
 **SelectedItems** - 用户交互后的选定项列表。
 
@@ -54,8 +54,6 @@ ms.locfileid: "42858304"
 **[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
-
-**[Default](properties-core.md)** - 单选模式下用户更改选项前的初始选定项。
 
 **DisplayFields** - 针对搜索返回的每个项显示的字段列表。  通过“属性选项”选项卡中的“数据”窗格进行配置最为简单。
 

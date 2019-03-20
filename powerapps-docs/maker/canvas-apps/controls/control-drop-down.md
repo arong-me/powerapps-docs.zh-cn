@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5e4e0ad13280783b7b6cd00121b4dc05cca6df8
-ms.sourcegitcommit: e4fe4b27651b62edb67e5995fc5955577d8ac5b8
-ms.translationtype: HT
+ms.openlocfilehash: 09e139353e500ad27650628a844bc01264eab3d0
+ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075371"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54308377"
 ---
 # <a name="drop-down-control-in-powerapps"></a>PowerApps 中的下拉列表控件
 一个列表，在用户不将其打开的情况下，该表仅显示第一项。
@@ -66,7 +66,7 @@ Value - 要在控件中显示的数据列（例如，如果数据源具有多列
 
 [Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md)** – 控件中文本的粗细：**粗体**、**半粗体**、**正常**或**细体**。
+**[FontWeight](properties-text.md)**  – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -126,7 +126,7 @@ Value - 要在控件中显示的数据列（例如，如果数据源具有多列
 
 1. 添加“下拉列表”控件，然后将其 [Items](properties-core.md) 属性设置为该表达式：
 
-    ```["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]```
+    `["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]`
 
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 
@@ -139,13 +139,13 @@ Value - 要在控件中显示的数据列（例如，如果数据源具有多列
 
 1. 添加“下拉列表”控件，然后将其 [Items](properties-core.md) 属性设置为以下公式：
 
-    ```Distinct(Accounts, address1_city)```
+    `Distinct(Accounts, address1_city)`
 
     此公式显示 Accounts 实体中的所有城市。 如果多个记录具有相同的城市，则 [Distinct](../functions/function-distinct.md) 功能会在你的下拉控件中隐藏重复项。
 
 1. （可选）将你的“下拉列表”控件重命名为 Cities，添加垂直“库”控件，并将库的 [Items](properties-core.md) 属性设置为这个公式：
 
-    ```Filter(Accounts, address1_city = Cities.Selected.Value)```
+    `Filter(Accounts, address1_city = Cities.Selected.Value)`
 
     此 [Filter](../functions/function-filter-lookup.md) 功能仅显示 Accounts 实体中的城市与“城市”控件中所选值匹配的记录。
 

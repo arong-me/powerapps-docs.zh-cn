@@ -1,24 +1,24 @@
 ---
 title: SharePoint 连接概述 | Microsoft 文档
 description: 请查看可用的函数、响应和 SharePoint 示例
-author: sarafankit
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/12/2017
-ms.author: ankitsar
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0a13d2602f06f436d4b805669b004f1ee63daeb9
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: c7f973b9a62e50ea646999d6d10b185fb02306dd
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836726"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57798918"
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>从 PowerApps 连接到 SharePoint
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
@@ -50,7 +50,7 @@ ms.locfileid: "42836726"
 
 PowerApps 可以读取包含空格，但空格被替换为十六进制转义代码“\_x0020\_”的列。 例如，如果 SharePoint 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 1. [注册](../../signup-for-powerapps.md) PowerApps。
 
 1. 使用注册所用的同一凭据[登录](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 PowerApps。
@@ -62,7 +62,7 @@ PowerApps 可以读取包含空格，但空格被替换为十六进制转义代�
 
     默认情况下，应用包含三个屏幕，分别用于浏览记录、显示有关记录的详细信息以及创建或更新记录。 生成应用后，建议自定义[浏览屏幕](../customize-layout-sharepoint.md)和[详细信息和编辑屏幕](../customize-forms-sharepoint.md)以满足所需。
 
-    **注意**：如果 SharePoint 列表包含“选择”、“查阅”或“用户或用户组”列，请参阅本主题稍后将介绍的[在库中显示数据](connection-sharepoint-online.md#show-data-in-a-gallery)。
+    **注意：** 如果 SharePoint 列表包含**选**，**查找**，或**个人或组**列中，请参阅[显示库中的数据](connection-sharepoint-online.md#show-data-in-a-gallery)本主题中更高版本。
 
 * 通过后列操作生成自己的应用：[连接到 SharePoint](../connect-to-sharepoint.md)，查看[从头开始创建应用](../get-started-create-from-blank.md)中的步骤，然后将其应用于 SharePoint 而非 Excel。
 
@@ -91,7 +91,7 @@ PowerApps 可以读取包含空格，但空格被替换为十六进制转义代�
 
        ![指定凭据](./media/connection-sharepoint-online/specify-creds.png)
 
-       **注意**：如果未安装本地数据网关，请先[安装一个](../gateway-reference.md)，再单击或点击图标来刷新网关列表。
+       **注意：** 如果未安装本地数据网关，则请 [安装](../gateway-reference.md)，然后单击或点击图标来刷新网关列表。
 
        在“选择网关”下，单击或点击要使用的网关。
 
@@ -128,7 +128,7 @@ PowerApps 可以读取包含空格，但空格被替换为十六进制转义代�
 
     还可以显示关于用户的其他信息，如电子邮件地址或职务等。 若要显示完整的选项列表，请指定 **ThisItem.[ColumnName].** （含结尾句点）。
 
-    **注意**：对于“CreatedBy”列，请指定 ThisItem.Author.DisplayName，以显示创建列表项的用户的显示名称。 对于“修改者”列，请指定 **ThisItem.Editor.DisplayName** 以显示更改列表中的项的用户的显示名称。
+    **注意：** 有关**CreatedBy**列中，指定**ThisItem.Author.DisplayName**若要显示在列表中创建项的用户的显示名称。 对于“修改者”列，请指定 **ThisItem.Editor.DisplayName** 以显示更改列表中的项的用户的显示名称。
 
 * 对于“托管元数据”列，请指定 **ThisItem.[ColumnName].Label** 以显示该列中的数据。
 

@@ -1,24 +1,24 @@
 ---
 title: 设置 Power BI 仪表板的数据警报 | Microsoft 文档
 description: 在此任务中，我们将在 Power BI 中添加警报，以便了解待审批项目的等待时间是否过长，以及警报发生时作出响应的流。
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6426dedc9ce9d1a4648f9c880a53337767ec53d3
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 89c22bec8972c0d58c559a09d4e9f0a8a8e3b7f5
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836386"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799079"
 ---
 # <a name="set-up-data-alerts-for-the-power-bi-dashboard"></a>创建 Power BI 仪表板的数据警报
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "42836386"
 
 在此任务中，我们将在 Power BI 中添加警报，以便了解待审批项目的等待时间是否过长，并添加用于响应触发的警报的流。 有关警报的详细信息，请参阅 [Power BI 服务中的数据警报](https://docs.microsoft.com/power-bi/service-set-data-alerts)。
 
-## <a name="step-1-create-an-alert"></a>第 1 步：创建警报
+## <a name="step-1-create-an-alert"></a>步骤 1:创建警报
 1. 在 Power BI 服务中，打开在上一任务中创建的仪表板。
 2. 在显示一个数字的数据卡上，单击或点击省略号 (...)。
    
@@ -45,7 +45,7 @@ ms.locfileid: "42836386"
 
 警报触发后，Power BI 会向警报创建者发送电子邮件，下一步将介绍如何使用 Microsoft Flow 发送其他邮件。
 
-## <a name="step-2-create-a-flow-that-responds-to-the-alert"></a>第 2 步：创建用于响应警报的流
+## <a name="step-2-create-a-flow-that-responds-to-the-alert"></a>步骤 2:创建一个流，用于响应警报
 1. 登录 flow.microsoft.com，依次单击或点击“服务”和“Power BI”。
    
     ![Microsoft Flow 中的 Power BI](./media/sharepoint-scenario-alerts-flow/07-01-05-power-bi.png)

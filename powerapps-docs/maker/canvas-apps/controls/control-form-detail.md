@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 91f84ebbec83c5734e910680f4ab3a79077164df
-ms.sourcegitcommit: ce621966a34061dda2f75232403847e21816ffa9
-ms.translationtype: HT
+ms.openlocfilehash: 194da16a1025daa84c658ae8884734a08780c6c1
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2018
-ms.locfileid: "47459446"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802046"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>PowerApps 中的编辑窗体和显示窗体控件
 在数据源中显示、编辑和创建记录。
@@ -122,8 +122,8 @@ Mode – 控件的模式为“编辑”或“新建”。
 | 模式 | 描述 |
 | --- | --- |
 | FormMode.Edit |用户可以通过窗体编辑记录。 窗体卡片中的值是预先填充的现有记录，允许用户更改。 如果 [SubmitForm](../functions/function-form.md) 函数成功运行，则会修改现有记录。 |
-| FormMode.New |用户可以通过窗体创建记录。 窗体的控件中的值是预先填充的数据源记录默认值。 如果 [SubmitForm](../functions/function-form.md) 函数成功运行，则会创建记录。 |
-| FormMode.View |用户可以通过窗体查看记录。 窗体的控件中的值是预先填充的数据源记录默认值。 |
+| FormMode.New |用户可以通过窗体创建记录。 在窗体的控件中的值会预先填充的数据源的记录的默认值。 如果 [SubmitForm](../functions/function-form.md) 函数成功运行，则会创建记录。 |
+| FormMode.View |用户可以通过窗体查看记录。 在窗体的控件中的值会预先填充的数据源的记录的默认值。 |
 
 如果出现下述任何更改，则窗体会从“新建”模式切换为“编辑”模式：
 
@@ -152,7 +152,7 @@ Updates – 在窗体控件中加载的记录的值，用于写回到数据源�
 
 * 此属性仅适用于“编辑窗体”控件。
 * 使用此属性从控件中的卡片提取字段值。  然后即可通过调用 [Patch](../functions/function-patch.md) 函数或通过某个连接所公开的其他方法，使用这些值来手动更新数据源。  如果使用的是 [SubmitForm](../functions/function-form.md) 函数，则不需使用此属性。
-* 此属性返回值记录。  例如，如果窗体控件包含“Name”字段和“Quantity”字段的卡片控件，则这些卡片的 [Update](control-card.md) 属性的值会分别返回“Widget”和 10，然后窗体控件的“Updates”属性会返回“{ Name: "Widget", Quantity: 10 }”。
+* 此属性返回值记录。  例如，如果窗体控件包含有关卡片控件**名称**并**Quantity**字段和的值**[更新](control-card.md)** 这些卡的属性会返回"小组件"和 10，则**更新**窗体控件的属性将返回 **{名称："小组件"，Quantity:10 }**.
 
 Valid – [卡片](control-card.md)或“编辑窗体”控件是否包含可以提交到数据源的有效条目。
 

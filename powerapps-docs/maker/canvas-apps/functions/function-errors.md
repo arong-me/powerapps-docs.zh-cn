@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 886479b4cd2f7e04e9949c99ba05e6219e92b2b3
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 1cc589d1bff73777e0c20ed933a563e42b934f35
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42859977"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803587"
 ---
 # <a name="errors-function-in-powerapps"></a>PowerApps 中的 Errors 函数
 提供之前对[数据源](../working-with-data-sources.md)的更改的错误信息。
@@ -72,15 +72,15 @@ ms.locfileid: "42859977"
 
 ![](media/function-errors/icecream.png)
 
-通过该应用，用户将 Chocolate 记录加载到一个数据输入窗体中，然后将 **Quantity** 更改为 90。  要使用的记录置于[上下文变量](../working-with-variables.md#create-a-context-variable) **EditRecord** 中：
+通过该应用，用户将 Chocolate 记录加载到一个数据输入窗体中，然后将 **Quantity** 更改为 90。  要使用的记录置于[上下文变量](../working-with-variables.md#use-a-context-variable) **EditRecord** 中：
 
-* **UpdateContext( { EditRecord: First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
+* **UpdateContext( { EditRecord:First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
 
 若要在数据源中进行此更改，请使用 **[Patch](function-patch.md)** 函数：
 
 * **Patch( IceCream, EditRecord, Gallery.Updates )**
 
-其中 **Gallery.Updates** 计算结果为 **{ Quantity: 90 }**，因为只修改了 **Quantity** 属性。
+其中**Gallery.Updates**的计算结果为 **{数量：90}**，因为仅**Quantity**修改属性。
 
 但就在调用 **[Patch](function-patch.md)** 函数之前，其他人将 Chocolate 的 **Quantity** 修改为 80。  PowerApps 将检测到此情况，且不允许发生更改冲突。  可使用以下公式检查是否存在这种情况：
 
@@ -90,7 +90,7 @@ ms.locfileid: "42859977"
 
 | 记录 | 列 | 消息 | 错误 |
 | --- | --- | --- | --- |
-| { Flavor: "Chocolate", Quantity: 100 } |空白 |“另一个用户已修改你正尝试修改的记录。 请重新加载该记录，然后重试。” |ErrorKind.Conflict |
+| {风格："巧克力"，Quantity:100 } |空白 |“另一个用户已修改你正尝试修改的记录。 请重新加载该记录，然后重试。” |ErrorKind.Conflict |
 
 可在窗体上放置标签，向用户显示此错误。
 

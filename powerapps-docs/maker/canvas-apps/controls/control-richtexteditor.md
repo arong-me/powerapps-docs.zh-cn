@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e469cc3769c8deeb5046dc79f34b9ae42788b2d2
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 99c07c0561b4942e6cbbd49fa5c498d90b502d7e
+ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865165"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "58073274"
 ---
-# <a name="rich-text-editor-control-experimental-in-powerapps"></a>PowerApps 中的 RTF 编辑器控件（实验性）
-允许最终用户在 WYSIWYG 编辑区域中设置文本格式的实验性控件。  输出格式为 HTML。
+# <a name="rich-text-editor-control-in-powerapps"></a>在 PowerApps 中的多格式文本编辑器控件
+允许最终用户设置 WYSIWYG 编辑区域内的文本的格式。  输出格式为 HTML。
 
 ## <a name="description"></a>描述
 “RTF 编辑器”控件为应用用户提供用于设置文本格式的 WYSIWYG 编辑区域。  控件的输入和输出格式为 HTML。
@@ -40,20 +40,10 @@ ms.locfileid: "42865165"
 
 若要使用窗体中的控件，选择“编辑多行文本”卡，并通过插入 RTE 控件自定义此卡。
 
-## <a name="limitations"></a>限制
-由于以下临时限制，控件的当前版本为实验性版本：
-- 控件具有用于设置文本格式的有限功能。  
-
-- 此控件主要用于大屏幕上的浏览器中。  在手机上使用此控件的体验可能不佳。
-
-- 使用 Windows Studio 或 Microsoft Edge 浏览器时，创作体验中的已知问题。  当前建议在 Chrome 中使用 Web studio。
-
-
 ## <a name="key-properties"></a>关键属性
 **[默认](properties-core.md)** - 编辑器中显示的初始文本值的输入属性。
 
 **HtmlText** - 所生成 HTML 格式格式文本的输出属性。
-
 
 
 ## <a name="additional-properties"></a>其他属性

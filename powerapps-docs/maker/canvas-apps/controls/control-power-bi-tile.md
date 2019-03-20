@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ba7d48104d9fdf85573029cc510af2c29d3f6ca0
-ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
-ms.translationtype: HT
+ms.openlocfilehash: 82a7089ec14753a70d52d09024d1df527dbeb866
+ms.sourcegitcommit: a06e3137e3cb36414f0d61825bbc687487ea6f8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45640345"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57804254"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>PowerApps 中的 Power BI 磁贴控件
 
@@ -37,6 +37,20 @@ ms.locfileid: "45640345"
 ## <a name="performance"></a>性能
 
 建议不要在应用内同时加载三个以上的 Power BI 磁贴。 可通过设置 LoadPowerBIContent 属性，控制磁贴加载和卸载。
+
+## <a name="pass-a-parameter"></a>传递参数
+
+通过将应用程序中传递单个参数，可以筛选在 Power BI 磁贴中显示的结果。 但是，支持仅字符串值和等于运算符，并且该筛选器可能无法工作，如果表名或列名包含空格。
+
+若要传递单个筛选器值，请修改的值**TileURL**属性，使用以下语法：
+
+```"https://app.powerbi.com/embed?dashboardId=<DashboardID>&tileId=<TileID>&config=<SomeHash>" ```
+
+为该值，将追加此语法：
+
+```&$filter=<TableName>/<ColumnName> eq "<Value>" ```
+
+参数将筛选器中的报表数据集值磁贴的来源位置。
 
 ## <a name="key-properties"></a>关键属性
 

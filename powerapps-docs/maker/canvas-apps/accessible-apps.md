@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 119b7e6ff590f63ad938016c5f0127f5d6521d65
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: b6e2fc48d931ccf702dd2711bdc00a484dc51018
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834373"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57801931"
 ---
 # <a name="create-accessible-canvas-apps-in-powerapps"></a>在 PowerApps 中创建提供辅助功能的画布应用
 如果画布应用提供辅助功能，那么有视障、听障和其他障碍的用户就能够成功地使用应用。  除了遵守许多政府和组织的要求外，遵守下面的指南可以让所有用户都用起来更加方便，无论他们是否有残障。
@@ -38,16 +38,16 @@ ms.locfileid: "42834373"
 测试应用的辅助功能时，请确保应用只能与键盘结合使用，且辅助功能模式同时适用于 iOS 和 Android，以及在启用屏幕阅读器后能够成功导航。
 
 对于键盘导航（启用或未启用屏幕阅读器），请确保在使用 TAB 键时按一定逻辑顺序导航到输入字段，具体是通过设置每个控件的 [TabIndex](controls/properties-accessibility.md) 属性：
-- 标签、图像、图标、形状控件 - 如果它们表示交互元素（即按钮），将 TabIndex 设置为 0；如果它们是装饰性元素或文本，将 TabIndex 设置为 -1。
+- 标签、 图像、 图标、 形状控件-如果它们表示交互元素 （即按钮） 将 TabIndex 设置为 0;如果它们是装饰性元素或文本，将 TabIndex 设置为-1。
 - 避免将选项卡索引值设置为大于零。
 
 ## <a name="screen-reader-support"></a>屏幕阅读器支持
 若要结合使用 PowerApps 和屏幕阅读器，支持的软件组合如下：
 
-- **Windows**：Edge/讲述人
-- **macOS**：Safari/VoiceOver
-- **Android**：PowerApps 应用/Talkback
-- **iOS**：PowerApps 应用/VoiceOver
+- **Windows**:Microsoft Edge / Narrator
+- **macOS**:Safari / VoiceOver
+- **Android**:PowerApps 应用 / Talkback
+- **iOS**:PowerApps 应用 / VoiceOver
 
 为了确保令人满意的屏幕阅读器使用体验，建议执行以下操作：
 
@@ -58,7 +58,7 @@ ms.locfileid: "42834373"
 
 
 ## <a name="multimedia"></a>多媒体
-请确保所有视频都有字幕，且全部录音的解说词都可供用户查看。  视频控件支持 WebVTT 格式的隐藏式字幕（通过 ClosedCaptionsUrl 属性实现）。
+请确保所有视频都有字幕，且全部录音的解说词都可供用户查看。  **视频**控件支持通过 WebVTT 格式的隐藏字幕**ClosedCaptionsUrl**属性。
 
 请注意，启用屏幕阅读器后，计时器读出的不是按钮文本，而是所耗时长。  无法禁用读出功能，即使计时器隐藏且不透明度低，也不例外。
 

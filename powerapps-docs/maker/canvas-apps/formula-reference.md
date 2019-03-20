@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 06/05/2018
+ms.date: 11/14/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 752bb630c1ecd1e86f37a1a063bcc5ee192431f0
-ms.sourcegitcommit: 3aeb9381fbeb66cf08355d9a3d0f00ce2737e256
-ms.translationtype: HT
+ms.openlocfilehash: 9796cf6c668818110cd6910311ab5b5f61a745df
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43163628"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803771"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps 的公式参考
 公式组合了许多元素。  下面列出的包括：
@@ -208,6 +208,10 @@ ms.locfileid: "43163628"
 **[Lower](functions/function-lower-upper-proper.md)** – 将文本字符串中的字母转换为全部小写。
 
 ## <a name="m"></a>M
+**[匹配](functions/function-ismatch.md)** – 中提取子字符串的模式。  可以使用正则表达式。
+
+**[MatchAll](functions/function-ismatch.md)**  – 提取基于模式的多个子字符串。  可以使用正则表达式。
+
 **[Max](functions/function-aggregates.md)** – 某个表表达式或一组参数的最大值。
 
 **[Mid](functions/function-left-mid-right.md)** – 返回字符串的中间部分。
@@ -255,6 +259,8 @@ ms.locfileid: "43163628"
 **[Rand](functions/function-rand.md)** – 返回一个伪随机数。
 
 **[Refresh](functions/function-refresh.md)** – 刷新数据源的记录。
+
+**[与相关](functions/function-relate-unrelate.md)** – 与通过一个对多或多对多关系的两个实体的记录。
 
 **[Remove](functions/function-remove-removeif.md)** – 从数据源中删除一条或多条特定记录。
 
@@ -322,7 +328,7 @@ ms.locfileid: "43163628"
 
 **[Tan](functions/function-trig.md)** - 返回以弧度为单位指定的角度的正切值。
 
-**[Text](functions/function-text.md)** – 将数字设置为字符串格式进行显示。
+**[文本](functions/function-text.md)** – 将转换的任何值，并设置数字或日期/时间值的文本字符串的格式。
 
 **[ThisItem](functions/operators.md#thisitem-operator)** – 当在库或表单中时，返回容器中当前项的数据。
 
@@ -341,9 +347,11 @@ ms.locfileid: "43163628"
 ## <a name="u"></a>U
 **[Ungroup](functions/function-groupby.md)** – 删除某个分组。
 
+**[取消关联时要](functions/function-relate-unrelate.md)** – Unrelates 从一个对多或多对多关系的两个实体的记录。
+
 **[Update](functions/function-update-updateif.md)** – 替换数据源中的某条记录。
 
-[UpdateContext](functions/function-updatecontext.md) – 设置当前屏幕的一个或多个[上下文变量](working-with-variables.md#create-a-context-variable)的值。
+[UpdateContext](functions/function-updatecontext.md) – 设置当前屏幕的一个或多个[上下文变量](working-with-variables.md#use-a-context-variable)的值。
 
 **[UpdateIf](functions/function-update-updateif.md)** – 基于某个条件修改数据源中的一组记录。
 

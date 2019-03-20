@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 056c5e1142b3a34776e72f788f5b2cef9e3b2a27
-ms.sourcegitcommit: 3dc330d635aaf5bc689efa6bd39826d6e396c832
-ms.translationtype: HT
+ms.openlocfilehash: 7b0701c9fcf7033ab8d57bb039972ce63c8faf29
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48875890"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802391"
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>PowerApps 中的 AddColumns、DropColumns、RenameColumns 和 ShowColumns 函数
 通过添加、删除、重命名和选择[表](../working-with-tables.md)的[列](../working-with-tables.md#columns)来为表造型。
@@ -30,9 +30,12 @@ ms.locfileid: "48875890"
 * 将计算结果列（例如，显示“数量”乘以“单价”后的结果的“总价”列）添加到某个表。
 * 使用更有意义的名称将列重命名，以便向用户显示或者在公式中使用。
 
-表是 PowerApps 中的一个值，与字符串或数字类似。  可将表指定为公式中的参数，函数可以返回表作为结果。 本主题中介绍的函数不会修改表。 这些函数将表用作参数，并转换一个应用了转换的新表。  请参阅[使用表](../working-with-tables.md)，了解更多详情。  
+表是 PowerApps 中的一个值，与字符串或数字类似。  可将表指定为公式中的参数，函数可以返回表作为结果。
 
-无法使用这些函数修改[数据源](../working-with-data-sources.md)的列。 必须在数据源中修改数据。 可以使用 **[Collect](function-clear-collect-clearcollect.md)** 函数将列添加到[集合](../working-with-data-sources.md#collections)。  有关详细信息，请参阅[使用数据源](../working-with-data-sources.md)。  
+> [!NOTE]
+> 本主题介绍的函数不会修改原始表。 相反，此表作为参数，然后返回一个新的表应用了转换。 请参阅[使用表](../working-with-tables.md)，了解更多详情。  
+
+无法使用这些函数修改[数据源](../working-with-data-sources.md)的列。 必须在数据源中修改数据。 可以使用 **[Collect](function-clear-collect-clearcollect.md)** 函数将列添加到[集合](../working-with-data-sources.md#collections)。 有关详细信息，请参阅[使用数据源](../working-with-data-sources.md)。  
 
 ## <a name="description"></a>描述
 **AddColumns** 函数将列添加到表，某个公式将定义该列中的值。 现有列保持不变。
@@ -62,7 +65,7 @@ ms.locfileid: "48875890"
 * *Table* - 必需。  要运算的表。
 * *ColumnName(s)* - 必需。 要删除的列的名称。 必须为此参数指定字符串（例如 **"Name"**，包括双引号）。
 
-**RenameColumns**( *Table*, *OldColumneName1*, *NewColumnName1* [, *OldColumnName2*, *NewColumnName2*, ... ] )
+**RenameColumns**( *Table*, *OldColumnName1*, *NewColumnName1* [, *OldColumnName2*, *NewColumnName2*, ... ] )
 
 * *Table* - 必需。  要运算的表。
 * *OldColumnName* - 必需。 要从原始表重命名的列的名称。 此元素首先出现在参数对中（或者如果公式包含多个对，则首先出现在每个参数对中）。 此名称必须是字符串（例如 "Name"，包括双引号）。
@@ -85,7 +88,7 @@ ms.locfileid: "48875890"
 | **AddColumns( IceCreamSales, "Revenue", UnitPrice * QuantitySold )** |将 **Revenue** 列添加到结果。  对于每条记录，将计算 **UnitPrice * QuantitySold**，并将结果放在新列中。 |<style> img { max-width: none; } </style> ![](media/function-table-shaping/icecream-add-revenue.png) |
 | **DropColumns( IceCreamSales, "UnitPrice" )** |从结果中排除 **UnitPrice** 列。 使用此函数可排除列，使用 **ShowColumns** 可包含列。 |![](media/function-table-shaping/icecream-drop-price.png) |
 | **ShowColumns( IceCreamSales, "Flavor" )** |仅在结果中包含 **Flavor** 列。 使用此函数可包含列，使用 **DropColumns** 可排除列。 |![](media/function-table-shaping/icecream-select-flavor.png) |
-| **RenameColumns( IceCreamSales, "UnitPrice", "Price")** |在结果中将 **UnitPrice** 列重命名。 |![](media/function-table-shaping/icecream-rename-price.png) |
+| **RenameColumns( IceCreamSales, "UnitPrice", "Price")** |重命名**UnitPrice**结果列。 |![](media/function-table-shaping/icecream-rename-price.png) |
 | **RenameColumns( IceCreamSales, "UnitPrice", "Price", "QuantitySold", "Number")** |重命名结果中的 UnitPrice 和 QuantitySold 列。 |![](media/function-table-shaping/icecream-rename-price-quant.png) |
 | **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, "Revenue",<br>UnitPrice * QuantitySold ),<br>"UnitPrice", "Price" ),<br>"Quantity" )** |从公式内部开始，按顺序执行以下表转换： <ol><li>根据针对每条记录计算 **UnitPrice * Quantity** 后的结果添加 **Revenue** 列。<li>将 **UnitPrice** 重命名为 **Price**。<li>排除 **Quantity** 列。</ol>  请注意，顺序很重要。 例如，不能在重命名 **UnitPrice** 后计算该列。 |![](media/function-table-shaping/icecream-all-transforms.png) |
 

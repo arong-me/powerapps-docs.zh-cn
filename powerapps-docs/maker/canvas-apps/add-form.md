@@ -1,30 +1,30 @@
 ---
 title: 在画布应用中显示、编辑或添加表记录 | Microsoft Docs
 description: 使用画布应用窗体显示、编辑或添加数据源中的表记录。
-author: karthik-1
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/06/2017
-ms.author: sharik
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 853f54448b3cf29ebd108299ca69cc96ce51be19
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 4a434cd7a8d7eb029200c51fc5c8755946c13f3b
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42854804"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57798895"
 ---
 # <a name="show-edit-or-add-a-record-from-a-table-in-powerapps"></a>在 PowerApps 中显示、编辑或添加表中的记录
 
 若要显示记录中的所有字段，请在画布应用中添加和配置[显示窗体](controls/control-form-detail.md)控件。 若要编辑记录中的任意字段（或添加记录），并将更改保存回数据源，请在画布应用中添加和配置[编辑窗体](controls/control-form-detail.md)控件。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 * 了解如何在 PowerApps 中[添加和配置控件](add-configure-controls.md)。
 * 下载[此 Excel 文件](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx)，其中包含本教程的示例数据。

@@ -1,24 +1,24 @@
 ---
 title: 将画布应用集成到网站和其他服务中 | Microsoft Docs
 description: 在网站和其他服务中嵌入画布应用。
-author: mgblythe
+author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/20/2017
-ms.author: mblythe
+ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 254d127237cff58728f208d62c30bf7aeb456a80
-ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
-ms.translationtype: HT
+ms.openlocfilehash: a6b23b97195f000e6e17bb6fd6f0e9f3a2da4f09
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991829"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799033"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>将画布应用集成到网站和其他服务中
 如果能够直接将生成的应用集成到用户工作时使用的工具中，通常最为实用。 借助 PowerApps，可以将画布应用嵌入 iframe，以便于将这些应用集成到网站和其他服务中（如 Power BI 或 SharePoint）。

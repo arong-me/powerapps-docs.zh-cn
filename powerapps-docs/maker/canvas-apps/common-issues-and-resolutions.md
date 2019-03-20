@@ -7,24 +7,36 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 08/02/2018
+ms.date: 11/09/2018
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5701f85d28d987229aa56756b5c1817892bd5c0
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 3c3b559be5f27c6ead9a4ea2f02027637c8aea8e
+ms.sourcegitcommit: 67f9974ee2fa06773c729876ba7ef95145c63a07
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42855093"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54253068"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps 常见问题和解决方法
 
 本文列出了你在使用 PowerApps 时可能遇到的一些常见问题。 并在适用情况下提供了解决方法。
 
 ## <a name="added-after-february-2018"></a>2018 年 2 月之后新增的内容
+
+1. **在 Android 移动设备上的照相机问题**(2019 年 1 月 1 日)
+
+    如果照相机控制停止 Android 设备上工作，重新发布应用，并重新打开它在设备上。 照相机控件已更新中响应 Android 操作系统中的更改并重新发布时，您的应用程序将受益于更新。
+
+1. **在可变高度库中滚动**(2018 11 月 27 日)
+
+    如果当您用手指滚动浏览时遇到一个限制，它提升到，开始再次向下滚动。
+
+1. **绘制使用鼠标或触摸屏输入不在 PowerApps 的 Windows 平滑**（sep.24, 2018)
+
+    笔控件仅有部分支持用于绘制使用鼠标或触摸输入在 Windows 应用程序。 笔画可能是间歇性的。 平滑绘制使用笔或在浏览器中运行应用程序。
 
 1. PowerApps Mobile 中的多个媒体控件（2018 年 8 月 2 日）
 
@@ -39,7 +51,7 @@ ms.locfileid: "42855093"
 
 1. <a name="out-of-memory"></a>浏览器内存不足（2018 年 7 月 23 日）
 
-    如果使用 PowerApps 时内存不足，请考虑下载 64 位版本的 Chrome、Edge 或 Internet Explorer。
+    如果在运行使用 PowerApps 时内存不足，请考虑下载 64 位版本的 Chrome、 Microsoft Edge 或 Internet 资源管理器。
 
 1. 从嵌入的应用启动网站（2018 年 5 月 10 日）
 

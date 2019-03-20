@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 38745810321807e69d5eba8e1f2c281dafa73ae5
-ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
-ms.translationtype: HT
+ms.openlocfilehash: 5883ae65beb698a8c7681d9eac6ba0f7439ca19e
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45640437"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803725"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>了解 PowerApps 中的画布应用表和记录
 
@@ -40,7 +40,7 @@ ms.locfileid: "45640437"
 ### <a name="records"></a>记录
 每条记录包含个人、地点或事物的至少一个类别的信息。 上面的示例针对每种产品（“巧克力”、“面包”和“水”）显示一条记录，针对每个类别的信息（“价格”、“现有数量”和“订购量”）显示一列。
 
-在公式中，可以使用大括号在表的上下文外部引用记录本身。 例如，此记录 **{ Name: "Strawberries", Price: 7.99 }** 不与表关联。 请注意，如该示例中的“名称”和“价格”等字段名称未括在双引号中。
+在公式中，可以使用大括号在表的上下文外部引用记录本身。 例如，此记录 **{名称："Strawberries"，价格：7.99}** 未与表相关联。 请注意，如该示例中的“名称”和“价格”等字段名称未括在双引号中。
 
 ### <a name="fields"></a>字段
 字段是记录中的单个信息片段。 可在特定记录的列中将此类字段可视化为值。
@@ -73,11 +73,11 @@ ms.locfileid: "45640437"
 
 在下面的示例中，可以通过将 **[Table](functions/function-table.md)** 函数与在大括号中表示的一组记录结合使用，在公式中表示表：
 
-**Table( { Value: "Strawberry" }, { Value: "Vanilla" } )**
+`Table( { Value: "Strawberry" }, { Value: "Vanilla" } )`
 
 还可以使用方括号定义单列表。  上述公式的同等编写方式为：
 
-**[ "Strawberry", "Vanilla" ]**
+`[ "Strawberry", "Vanilla" ]`
 
 ## <a name="table-formulas"></a>表公式
 在 Excel 和 PowerApps 中，可以使用公式以类似的方式来处理数字和文本字符串：
@@ -102,15 +102,17 @@ ms.locfileid: "45640437"
     > [!NOTE]
     > 为方便演示，已重新排列并放大一些控件。
 
-2. 以下示例未将 **[Items](controls/properties-core.md)** 属性设置为表的名称，而是设置为将表名称包含为参数的公式：<br>
-    **Sort(CustomGallerySample, SampleHeading, Descending)**
+2. 以下示例未将 **[Items](controls/properties-core.md)** 属性设置为表的名称，而是设置为将表名称包含为参数的公式：
+
+    `Sort(CustomGallerySample, SampleHeading, Descending)`
 
     此公式融入了 **[Sort](functions/function-sort.md)** 函数，该函数将表的名称用作第一个参数，将该表中某个列的名称用作第二个参数。 该函数还支持可选的第三个参数，该参数规定要按降序对数据排序。
 
     ![](media/working-with-tables/gallery-items-sort.png)
 
-3. 以下示例将 **[Items](controls/properties-core.md)** 属性设置为一个公式，该公式使用上一步骤中的公式作为参数并返回一个表：<br>
-   **FirstN(Sort(CustomGallerySample, SampleHeading, Descending), 2)**
+3. 以下示例将 **[Items](controls/properties-core.md)** 属性设置为一个公式，该公式使用上一步骤中的公式作为参数并返回一个表：
+
+    `FirstN(Sort(CustomGallerySample, SampleHeading, Descending), 2)`
 
     此公式使用 **[FirstN](functions/function-first-last.md)** 函数显示表中特定数量的记录。 使用 **[Sort](functions/function-sort.md)** 函数作为 **[FirstN](functions/function-first-last.md)** 的第一个参数，使用一个数字（在本例中为 **2**）作为第二个参数，该数字指定要显示的记录数。
    
@@ -178,7 +180,7 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 
 可以使用记录作为相关命名值的通用容器。
 
-* 如果围绕 **[UpdateContext](functions/function-updatecontext.md)** 和 **[Navigate](functions/function-navigate.md)** 函数构建公式，请使用记录来收集想要更新的[上下文变量](working-with-variables.md#create-a-context-variable)。
+* 如果围绕 **[UpdateContext](functions/function-updatecontext.md)** 和 **[Navigate](functions/function-navigate.md)** 函数构建公式，请使用记录来收集想要更新的[上下文变量](working-with-variables.md#use-a-context-variable)。
 * 在 **[编辑窗体](controls/control-form-detail.md)** 控件中使用 **[Updates](controls/control-form-detail.md)** 属性可收集用户在窗体中所做的更改。
 * 使用 **[Patch](functions/function-patch.md)** 函数不仅可以更新数据源，而且还能合并记录。
 
@@ -217,7 +219,7 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 
 若要确定其中任何产品的请求数是否大于可供数，可使用以下公式：
 
-**Filter( Products, 'Quantity Requested' > 'Quantity Available' )**
+`Filter( Products, 'Quantity Requested' > 'Quantity Available' )`
 
 **Filter** 的第一个参数是要处理的记录表，第二个参数是公式。  **Filter** 将创建一个记录范围用于计算此公式（其中提供了每个记录的字段，在本例中为 **Product**、**Quantity Requested** 和 **Quantity Available**）。  比较结果确定是否应在函数的结果中包含每条记录：
 
@@ -225,7 +227,12 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 
 作为此示例的延伸，我们可以计算要订购的每种产品的数量：
 
-**AddColumns( Filter( Products, 'Quantity Requested' > 'Quantity Available' ), "Quantity To Order", 'Quantity Requested' - 'Quantity Available' )**
+```powerapps-dot
+AddColumns( 
+    Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+    "Quantity To Order", 'Quantity Requested' - 'Quantity Available'
+)
+```
 
 此处，我们将在结果中添加一个计算列。  **AddColumns** 具有自身的记录范围，它使用该范围来计算请求数量与可供数量之差。
 
@@ -233,7 +240,16 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 
 最后，我们可以缩减结果表，以便只显示所需的列：
 
-**ShowColumns( AddColumns( Filter( Products, 'Quantity Requested' > 'Quantity Available' ), "Quantity To Order", 'Quantity Requested' - 'Quantity Available' ), "Product", "Quantity To Order" )**
+```powerapps-dot
+ShowColumns( 
+    AddColumns( 
+        Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+        "Quantity To Order", 'Quantity Requested' - 'Quantity Available'
+    ), 
+    "Product", 
+    "Quantity To Order"
+)
+```
 
 ![](media/working-with-tables/toorderonly.png)
 
@@ -259,11 +275,20 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 
 可以使用 **ClearCollect( Y, ["A", "B"] )** 创建此集合。
 
-此外，使用公式 **UpdateContext( {Value: "!"} )** 定义名为 **Value** 的上下文变量
+此外，定义一个名为的上下文变量**值**通过此公式：**UpdateContext( {Value: "!"} )**
 
 我们将这些公式组合在一起。  在此上下文中，以下公式：
 
-* **Ungroup( ForAll( X, ForAll( Y, Y[@Value] & Text( X[@Value] ) & [@Value] ) ), "Value" )**
+```powerapps-dot
+Ungroup( 
+    ForAll( X, 
+        ForAll( Y, 
+            Y[@Value] & Text( X[@Value] ) & [@Value] 
+        ) 
+    ), 
+    "Value" 
+)
+```
 
 生成此表：
 
@@ -275,7 +300,16 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 
 由于 **Y** 是最里面的记录范围，因此访问此表的字段不需要消除歧义，可以使用以下公式实现相同的结果：
 
-* **Ungroup( ForAll( X, ForAll( Y, Value & Text( X[@Value] ) & [@Value] ) ), "Value" )**
+```powerapps-dot
+Ungroup( 
+    ForAll( X, 
+        ForAll( Y, 
+            Value & Text( X[@Value] ) & [@Value] 
+        ) 
+    ), 
+    "Value" 
+)
+```
 
 所有 **ForAll** 记录范围将替代全局范围。  在不使用消除歧义运算符的情况下，不可以按名称使用定义的 **Value** 上下文变量。   若要访问此值，必须使用 **[@Value]**。
 
@@ -285,15 +319,15 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 ### <a name="records"></a>记录
 可以使用包含命名字段值的大括号来表示记录。  例如，可以使用以下公式来表示本主题开头所示的表中的第一条记录：
 
-**{ Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 }**
+`{ Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 }`
 
 还可以在其他公式中嵌入公式，如下面的示例所示：
 
-**{ Name: First(Products).Name, Price: First(Products).Price * 1.095 }**
+`{ Name: First(Products).Name, Price: First(Products).Price * 1.095 }`
 
 可以通过嵌套大括号来嵌套记录，如以下示例所示：
 
-**{ 'Quantity': { 'OnHand': ThisItem.QuantOnHand, 'OnOrder': ThisItem.QuantOnOrder } }**
+`{ 'Quantity': { 'OnHand': ThisItem.QuantOnHand, 'OnOrder': ThisItem.QuantOnOrder } }`
 
 将包含特殊字符（例如空格或冒号）的每个列名称括在单引号中。  若要在列名称中使用单引号，请双击该名称。
 
@@ -302,16 +336,29 @@ PowerApps 中的许多函数将表的名称用作参数，创建包含相同数�
 ### <a name="tables"></a>表
 可以使用 **[Table](functions/function-table.md)** 函数和一组记录创建表。 可以使用以下公式来表示本主题开头所示的表：
 
-**Table( { Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 },<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ Name: "Bread", Price: 4.95, 'Quantity on Hand': 34, 'Quantity on Order': 0 },<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ Name: "Water", Price: 4.95, 'Quantity on Hand': 10, 'Quantity on Order': 0 } )**
+```powerapps-dot
+Table( 
+    { Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 },
+    { Name: "Bread", Price: 4.95, 'Quantity on Hand': 34, 'Quantity on Order': 0 },
+    { Name: "Water", Price: 4.95, 'Quantity on Hand': 10, 'Quantity on Order': 0 } 
+)
+```
 
 还可以嵌套表：
 
-**Table( { Name: "Chocolate",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Quantity History': Table( { Quarter: "Q1", OnHand: 10, OnOrder: 10 },<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ Quarter: "Q2", OnHand: 18, OnOrder: 0 } ) } )**
+```powerapps-dot
+Table( 
+    { Name: "Chocolate", 
+      'Quantity History': Table( { Quarter: "Q1", OnHand: 10, OnOrder: 10 },
+                                 { Quarter: "Q2", OnHand: 18, OnOrder: 0 } ) 
+    }
+)
+```
 
 ### <a name="value-tables"></a>值表
 可以通过在方括号中指定值来创建单列表。 生成的表包含名为 **Value** 的单个列。
 
-例如，**[ 1, 2, 3, 4 ]** 等效于 **Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )** 并返回以下表：
+例如，`[ 1, 2, 3, 4 ]`等效于`Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )`并返回以下表：
 
 ![](media/working-with-tables/inline-table.png)
 

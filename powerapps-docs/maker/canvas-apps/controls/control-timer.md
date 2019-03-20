@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 934ab9bddfb429ae3ed96706420af002a87697fb
-ms.sourcegitcommit: 87122dba00b4177ef736d87ecdde79581649ba42
-ms.translationtype: HT
+ms.openlocfilehash: 32b8ee57869ea733050c3f23f9c9e81f60e3d78d
+ms.sourcegitcommit: 66fd1129ad25b72556f11a08350ba95f2ba060dd
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44499513"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57804369"
 ---
 # <a name="timer-control-in-powerapps"></a>PowerApps 中的计时器控件
 一个控件，可确定特定时间后应用的响应方式。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 例如，计时器可确定控件显示的时长，或在经过特定时间后更改控件的其他属性。
 
 请注意，必须先预览应用，然后计时器才能在设计器中运行。  这样一来，用户可以在设计器中配置计时器，不受任何时间限制。
@@ -66,7 +66,7 @@ ms.locfileid: "44499513"
 
 [Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md)** – 控件中文本的粗细：**粗体**、**半粗体**、**正常**或**细体**。
+**[FontWeight](properties-text.md)**  – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -169,3 +169,6 @@ ms.locfileid: "44499513"
   > 屏幕阅读器将每隔 5 秒公告一次运行时间。 但是，计时器 **[Text](properties-core.md)** 不会包含在公告中。
 
 * 请考虑添加 **[Label](control-text-box.md)** 以显示运行时间。 使用计时器的 **[Text](properties-core.md)** 以指示用户启动或停止计时器。
+
+### <a name="support-in-powerapps-studio"></a>PowerApps Studio 中的支持
+生成应用时，计时器会禁用以阻止事件触发。 如果打开预览，也可以保存应用并在 PowerApps Mobile 或 web player 中对其进行测试，可以在 PowerApps Studio 中测试的计时器。

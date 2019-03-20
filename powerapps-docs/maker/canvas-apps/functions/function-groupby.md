@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0ac3f0549e89153d9362d6a8a040833608d4e287
-ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
-ms.translationtype: HT
+ms.openlocfilehash: 5752781cf99a538d76e9dd9197aa4f8b8abce53e
+ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49806193"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54308561"
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>PowerApps 中的 GroupBy 和 Ungroup 函数
 对[表](../working-with-tables.md)[记录](../working-with-tables.md#records)进行分组和取消分组。
@@ -66,8 +66,21 @@ Ungroup( Table, GroupColumnName )
 ### <a name="create-a-collection"></a>创建集合
 1. 添加一个按钮，然后设置其 **[Text](../controls/properties-core.md)** 属性，以使该按钮显示**初始**。
 2. 将“初始”按钮的 **[OnSelect](../controls/properties-core.md)** 属性设置为下面的公式：
-   
-    **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
+
+```powerapps-dot   
+ClearCollect( CityPopulations, 
+    { City: "London",    Country: "United Kingdom", Population: 8615000}, 
+    { City: "Berlin",    Country: "Germany",        Population: 3562000}, 
+    { City: "Madrid",    Country: "Spain",          Population: 3165000}, 
+    { City: "Rome",      Country: "Italy",          Population: 2874000}, 
+    { City: "Paris",     Country: "France",         Population: 2273000}, 
+    { City: "Hamburg",   Country: "Germany",        Population: 1760000}, 
+    { City: "Barcelona", Country: "Spain",          Population: 1602000}, 
+    { City: "Munich",    Country: "Germany",        Population: 1494000}, 
+    { City: "Milan",     Country: "Italy",          Population: 1344000}
+)
+```
+
 3. 按住 Alt 键的同时，选择“原始”按钮。
    
     刚创建了名为 **CityPopulations** 的[集合](../working-with-data-sources.md#collections)，该集合包含此数据：

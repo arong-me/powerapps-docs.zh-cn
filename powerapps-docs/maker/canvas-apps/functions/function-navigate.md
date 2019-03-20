@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bf656c33bcfdc0114c1ff44936dd38fc7145158e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: f0bd11881dc0999cada58f65d7ed8d7f9df68c5a
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42857076"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803610"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Microsoft PowerApps 中的 Back 和 Navigate 函数
 更改显示的屏幕。
@@ -28,7 +28,7 @@ ms.locfileid: "42857076"
 
 **Back** 和 **Navigate** 只能更改当前显示的屏幕。 当前未显示的屏幕仍然在后台运行。 你可以构建公式来引用另一个屏幕上控件的属性。 例如，用户可以更改某一个屏幕上滑块的值，导航到在公式中使用这个值的另一个屏幕，看看对新屏幕的显示有何影响。  然后，用户可以导航回原来的屏幕，并且会发现滑块保留了自己的值。
 
-当用户在屏幕之间导航时，[上下文变量](../working-with-variables.md#create-a-context-variable)也会保留。 你可以使用 **Navigate** 设置公式会显示的屏幕的一个或多个上下文变量，这是从屏幕外部设置上下文变量的唯一方法。 这个方法可用于将参数传递到屏幕。 如果你使用过另一款编程工具，就会发现这个方法与将参数传递给过程非常相似。
+当用户在屏幕之间导航时，[上下文变量](../working-with-variables.md#use-a-context-variable)也会保留。 你可以使用 **Navigate** 设置公式会显示的屏幕的一个或多个上下文变量，这是从屏幕外部设置上下文变量的唯一方法。 这个方法可用于将参数传递到屏幕。 如果你使用过另一款编程工具，就会发现这个方法与将参数传递给过程非常相似。
 
 ## <a name="description"></a>说明
 ### <a name="back"></a>Back

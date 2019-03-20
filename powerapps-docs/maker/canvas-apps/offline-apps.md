@@ -1,24 +1,24 @@
 ---
 title: 开发可脱机运行的画布应用 | Microsoft Docs
 description: 开发可脱机运行的画布应用，无论联机还是脱机，用户都能高效工作。
-author: mgblythe
+author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 05/09/2017
-ms.author: mblythe
+ms.date: 01/31/2019
+ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f081369d75ec6f8fc29e6177b8173734d2462e03
-ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
-ms.translationtype: HT
+ms.openlocfilehash: f9922c64769aeacd9b9b65cc3039b091ac7fe353
+ms.sourcegitcommit: bdee274ce4ae622f7af5f208041902e66e03d1b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991760"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "57800367"
 ---
 # <a name="develop-offline-capable-canvas-apps"></a>开发可脱机运行的画布应用
 
@@ -29,10 +29,15 @@ ms.locfileid: "49991760"
 * 使用 [Connection](../canvas-apps/functions/signals.md#connection) 信号对象确定应用何时处于脱机、联机或按流量计费的连接状态中。
 * 在脱机时使用[集合](../canvas-apps/create-update-collection.md)或利用 [LoadData 和 SaveData](../canvas-apps/functions/function-savedata-loaddata.md) 等函数进行基本数据存储。
 
-> [!NOTE]
-> 此功能区域仍处于开发阶段，现在并未针对每个方案进行优化。 对于通常不超过 2 MB 的相对较小的数据量（例如，某表格中包含几十条文本记录），用于将数据保存到本地设备的 SaveData() 和用于从该设备加载数据的 LoadData() 函数适用于当前实现。 这适用于某些基本“脱机”方案，而且能够通过本地缓存数据来提高画布应用的启动性能。 但是，使用此功能保存大量数据（例如，保存包含数千行内容的表格或缓存大型图像或视频）可能会导致当前实现出现错误或意外行为，应当加以避免。 此外，当设备从脱机返回到连接状态时，此功能不会自动解决合并冲突 – 有关保存哪些数据以及如何处理重新连接上的配置取决于编写表达式时的创建者。
->
-> 我们正在努力扩展脱机应用的功能，以提高稳定性和大小限制，（将来）针对要保存哪些数据以及如何处理冲突自动做出决策。 请继续关注此处以及 [PowerApps 博客](https://powerapps.microsoft.com/blog/)，以便及时了解更新。
+## <a name="limitations"></a>限制
+
+**LoadData**并**SaveData**组合起来形成一个简单的机制来存储在本地设备上的少量数据。 通过使用这些函数，可以将简单的离线功能添加到您的应用程序。  
+
+这些函数都受可用的应用的内存量，因为它们在内存中集合上运行。 具体取决于设备、 操作系统、 使用 PowerApps Mobile，内存和应用程序在屏幕和控件方面的复杂性而异的可用内存。 如果存储超过几兆字节的数据，请测试预期的情况下，根据您希望其运行的设备上使用对应用程序。 您通常应该会有 30 和 70 兆字节的可用内存。  
+
+函数也不会自动解决合并冲突时设备将恢复连接从脱机 – 保存哪些数据以及如何处理重新连接上的配置在编写表达式时负责创建者。
+
+我们正在努力扩展脱机方案的功能。 请继续关注此处以及 [PowerApps 博客](https://powerapps.microsoft.com/blog/)，以便及时了解更新。
 
 ## <a name="how-to-build-offline-capable-apps"></a>如何生成可脱机运行的应用
 
@@ -58,13 +63,13 @@ PowerApps 最有趣的方面之一是，它提供一系列功能和公式，以�
    * 发布我们在本地缓存中存储的所有推文。
    * 刷新本地缓存，并使用 [SaveData](../canvas-apps/functions/function-savedata-loaddata.md) 进行保存。
 
-### <a name="step-1-create-a-new-phone-app"></a>第 1 步：新建手机应用
+### <a name="step-1-create-a-new-phone-app"></a>步骤 1:创建新的电话应用程序
 1. 打开 PowerApps Studio。
 2. 依次单击或点击“新建” > “空白应用” > “手机布局”。
 
     ![空白应用 -> 手机布局](./media/offline-apps/blank-app.png)
 
-### <a name="step-2-add-a-twitter-connection"></a>第 2 步：添加 Twitter 连接
+### <a name="step-2-add-a-twitter-connection"></a>步骤 2:添加 Twitter 连接
 
 1. 依次单击或点击“内容” > “数据源”，然后选择“数据源”面板上的“添加数据源”。
 
@@ -74,27 +79,18 @@ PowerApps 最有趣的方面之一是，它提供一系列功能和公式，以�
 
     ![添加 Twitter 连接](./media/offline-apps/twitter-connection.png)
 
-### <a name="step-3-load-tweets-into-a-localtweets-collection-on-app-startup"></a>第 3 步：在此应用启动时将推文加载到“LocalTweets”集合中
+### <a name="step-3-load-tweets-into-a-localtweets-collection-on-app-startup"></a>步骤 3:推文加载到应用程序启动 localtweets 集合
 选择此应用中 **“Screen1”** 的 **“OnVisible”** 属性，然后复制以下公式：
 
-```
-If(Connection.Connected,
-
-    ClearCollect(LocalTweets, Twitter.SearchTweet("PowerApps", {maxResults: 100}));
-
-    UpdateContext({statusText: "Online data"})
-
-    ,
-
+```powerapps-dot
+If( Connection.Connected,
+    ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 100} ) );
+        UpdateContext( {statusText: "Online data"} ),
     LoadData(LocalTweets, "Tweets", true);
-
-    UpdateContext({statusText: "Local data"})
-
+        UpdateContext( {statusText: "Local data"} )
 );
-
-LoadData(LocalTweetsToPost, "LocalTweets", true);
-
-SaveData(LocalTweets, "Tweets")
+LoadData( LocalTweetsToPost, "LocalTweets", true );
+SaveData( LocalTweets, "Tweets" )
 ```
 
 ![用于加载推文的公式](./media/offline-apps/load-tweets.png)
@@ -104,9 +100,9 @@ SaveData(LocalTweets, "Tweets")
 * 如果设备处于联机状态，则会将最多 100 篇搜索词为“PowerApps”的推文加载到 **“LocalTweets”** 集合中。
 * 如果设备处于脱机状态，则会从“Tweets”文件（若有）加载本地缓存。
 
-### <a name="step-4-add-a-gallery-and-bind-it-to-the-localtweets-collection"></a>第 4 步：添加并将库绑定到“LocalTweets”集合
+### <a name="step-4-add-a-gallery-and-bind-it-to-the-localtweets-collection"></a>步骤 4：添加一个库，然后将其绑定到 localtweets 集合
 
-1. 插入一个高度可调的新库：依次单击或点击“插入” > “库” > “高度可调的空白库”。
+1. 插入新的可变高度库：**插入** > **库** > **高度可调的空白**。
 
 2. 将 **“Items”** 属性设置为 **“LocalTweets”**。
 
@@ -117,39 +113,31 @@ SaveData(LocalTweets, "Tweets")
    * **Text(DateTimeValue(ThisItem.CreatedAtIso), DateTimeFormat.ShortDateTime)**
 4. 添加一个“图像”控件，然后将 **“Image”** 属性设置为 **“ThisItem.UserDetails.ProfileImageUrl”**。
 
-### <a name="step-5-add-a-connection-status-label"></a>第 5 步：添加连接状态标签
+### <a name="step-5-add-a-connection-status-label"></a>步骤 5：添加连接状态标签
 插入一个新“标签”控件，然后将 **“Text”** 属性设置为以下公式：
 
-```
-If (Connection.Connected, "Connected", "Offline")
-```
+```If( Connection.Connected, "Connected", "Offline" )```
 
 此公式检查设备是否处于联机状态。 如果处于联机状态，标签文本显示“已连接”；否则，显示“脱机”。
 
-### <a name="step-6-add-a-text-input-to-compose-new-tweets"></a>第 6 步：添加用于撰写新推文的文本输入控件
+### <a name="step-6-add-a-text-input-to-compose-new-tweets"></a>步骤 6:添加文本输入以便撰写新推文
 
 1. 插入一个名为“NewTweetTextInput”的新“文本输入”控件。
 
 2. 将文本输入控件的 **“Reset”** 属性设置为 **“resetNewTweet”**。
 
-### <a name="step-7-add-a-button-to-post-the-tweet"></a>第 7 步：添加用于发布推文的按钮
+### <a name="step-7-add-a-button-to-post-the-tweet"></a>步骤 7:添加一个按钮即可发布推文
 1. 添加一个“按钮”控件，然后将 **“Text”** 属性设置为“Tweet”。
 2. 将 **“OnSelect”** 属性设置为以下公式：
 
-    ```
-    If (Connection.Connected,
-
-        Twitter.Tweet("", {tweetText: NewTweetTextInput.Text}),
-
-        Collect(LocalTweetsToPost, {tweetText: NewTweetTextInput.Text});
-
-        SaveData(LocalTweetsToPost, "LocalTweetsToPost")
-
+    ```powerapps-dot
+    If( Connection.Connected,
+        Twitter.Tweet( "", {tweetText: NewTweetTextInput.Text} ),
+        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
+            SaveData( LocalTweetsToPost, "LocalTweetsToPost" )
     );
-
-    UpdateContext({resetNewTweet: true});
-
-    UpdateContext({resetNewTweet: false})
+    UpdateContext( {resetNewTweet: true} );
+    UpdateContext( {resetNewTweet: false} )
     ```  
 
 此公式会检查设备是否处于联机状态：
@@ -159,7 +147,7 @@ If (Connection.Connected, "Connected", "Offline")
 
 然后，此公式会重置文本框中的文本。
 
-### <a name="step-8-add-a-timer-to-check-for-tweets-every-five-minutes"></a>第 8 步：添加每五分钟检查一次推文的计时器
+### <a name="step-8-add-a-timer-to-check-for-tweets-every-five-minutes"></a>步骤 8:添加一个计时器，以每隔五分钟检查推文
 添加一个新“计时器”控件：
 
 * 将 **“Duration”** 属性设置为“300000”。
@@ -168,18 +156,13 @@ If (Connection.Connected, "Connected", "Offline")
 
 * 将 **“OnTimerEnd”** 设置为以下公式：
 
-    ```
-    If(Connection.Connected,
-
-        ForAll(LocalTweetsToPost, Twitter.Tweet("", {tweetText: tweetText}));
-
-        Clear(LocalTweetsToPost);
-
-        Collect(LocalTweetsToPost, {tweetText: NewTweetTextInput.Text});
-
-        SaveData(LocalTweetsToPost, "LocalTweetsToPost");
-
-        UpdateContext({statusText: "Online data"})
+    ```powerapps-dot
+    If( Connection.Connected,
+        ForAll( LocalTweetsToPost, Twitter.Tweet( "", {tweetText: tweetText} ) );
+        Clear( LocalTweetsToPost);
+        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
+        SaveData( LocalTweetsToPost, "LocalTweetsToPost" );
+        UpdateContext( {statusText: "Online data"} )
     )
     ```
 

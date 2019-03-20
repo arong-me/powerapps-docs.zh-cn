@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 96b8b8276b385a49bd29be150b9a41ba08ba67ba
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 3292d03a55fe6296b8efdf2377efde5f2b4ad36e
+ms.sourcegitcommit: 676cfa415f67e2e8fcfcf30fab83fc118a6f3210
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42862809"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "57800482"
 ---
 # <a name="set-function-in-powerapps"></a>PowerApps 中的 Set 函数
 设置全局变量的值。
@@ -26,14 +26,14 @@ ms.locfileid: "42862809"
 ## <a name="overview"></a>概述
 使用 **Set** 函数设置全局变量的值，该变量暂时保留一条信息，如用户已选择某按钮的次数或数据运算的结果。  
 
-全局变量可用于应用的所有屏幕。  它们是最简单的变量类型，并且可满足多数场景的需求。  另外，还有上下文变量，它们的作用域仅限于单个屏幕和允许对表进行行级别修改的集合。  有关这些其他选项的详细信息，请参阅[使用变量](../working-with-variables.md)。
+全局变量可用于应用的所有屏幕。 它们是最简单的变量类型，并且可满足多数场景的需求。 另外，还有上下文变量，它们的作用域仅限于单个屏幕和允许对表进行行级别修改的集合。 有关这些其他选项的详细信息，请查看[了解变量](../working-with-variables.md)。
 
-PowerApps 以公式为基础，这些公式会在用户与应用交互时自动重新计算。  全局变量不具有此优势，因此，在应用的创建和理解上可能难度更大。  使用变量之前，请参阅[使用变量](../working-with-variables.md)。
+PowerApps 以公式为基础，这些公式会在用户与应用交互时自动重新计算。 发生更改时，将自动更新任何公式依赖变量。 但是，该变量不会自动更新中使用公式的值**设置**函数更改。 这要求应用创建者，若要手动更新该变量，可以是容易出错且其他人了解更难。 使用变量之前，请查看[了解变量](../working-with-variables.md)。
 
-## <a name="description"></a>描述
-全局变量是使用 **Set** 函数隐式创建而成。  无需显式声明。  如果删除了全局变量的所有 **Set** 函数，则该全局变量将不再存在。  若要清除变量，请将其值设置为 [Blank 函数](function-isblank-isempty.md)的结果。
+## <a name="description"></a>说明
+全局变量是使用 **Set** 函数隐式创建而成。 没有显式声明是必需的。 如果删除所有**设置**的全局变量的函数，该全局变量将不再存在。 若要清除变量，请将其值设置到的结果[**空白**函数](function-isblank-isempty.md)。
 
-在创作环境中，可以使用“文件”菜单下的“变量”视图查看变量的值、定义和使用情况。
+您可以看到变量的值、 定义和使用与在变量视图**文件**在 PowerApps Studio 中的菜单。
 
 如本主题后面的示例所示，全局变量可保留多种信息，包括：
 

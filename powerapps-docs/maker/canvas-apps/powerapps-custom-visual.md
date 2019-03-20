@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f4654c12c860496cd0e2b44bbd33c956b7385460
-ms.sourcegitcommit: 0269766ee598f75a4d2459824128f031f68ca042
-ms.translationtype: HT
+ms.openlocfilehash: dde096adbd82c04f7a2f17cd2af156b2e334c990
+ms.sourcegitcommit: 66fd1129ad25b72556f11a08350ba95f2ba060dd
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860601"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57804346"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>适用于 Power BI 的 PowerApps 自定义视觉对象
 
@@ -77,9 +77,9 @@ PowerApps 自定义视觉对象在预览版中可用，但具有以下限制：
 - PowerApps 自定义视觉对象无法触发对 Power BI 报表或 Power BI 数据源的刷新。 如果将数据从应用写回与报表相同的数据源，则不会立即反映出所做的更改。 更改会在下一个计划的刷新后得到反映。
 - PowerApps 自定义视觉对象无法筛选数据或将任何数据发送回报表。
 - 你需要单独从报表共享 PowerApps 应用。 了解如何[在 PowerApps 中共享应用](share-app.md)。
-- Power BI 报表服务器和适用于 Power BI 的移动应用不支持 PowerApps 自定义视觉对象。
+- 这些技术不支持 PowerApps 自定义视觉对象：Power BI 报表服务器，Power BI 和 Internet Explorer 的移动应用。
 
 ## <a name="next-steps"></a>后续步骤
 
 * 演练简单的[分步教程](embed-powerapps-powerbi.md)。
-* 查看我们的[视频](https://aka.ms/powerappscustomvisualvideo)。
+* 请查看我们[视频](https://aka.ms/powerappscustomvisualvideo)。

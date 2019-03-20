@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 55df8d30509720478c1594406865986ddc9a95c4
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 930439325b60b60fefed18b66c22d9d4f97f55b7
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865799"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802092"
 ---
 # <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>PowerApps 中的 EditForm、NewForm、SubmitForm、ResetForm 和 ViewForm 函数
 查看、编辑或创建一个项，保存内容，以及在[编辑表单](../controls/control-form-detail.md)控件中重置控件。
@@ -59,10 +59,10 @@ ms.locfileid: "42865799"
 **ResetForm** 函数将窗体的内容重置为其初始值，即用户进行任何更改之前的值。 如果窗体处于 **FormMode.New** 模式下，则窗体将重置为 **FormMode.Edit** 模式。 还将运行窗体控件的 **[OnReset](../controls/control-form-detail.md)** 行为。  还可以使用 [Reset](function-reset.md) 函数重置各个控件，但仅可以从表单内进行重置。
 
 ### <a name="viewform"></a>ViewForm
-ViewForm 函数将表单控件的模式更改为 FormMode.View。 在此模式下，将使用窗体控件的 **[Item](../controls/control-form-detail.md)** 属性的内容来填充窗体。  在此模式下，SubmitForm 和 RestForm 函数不起作用。
+ViewForm 函数将表单控件的模式更改为 FormMode.View。 在此模式下，将使用窗体控件的 **[Item](../controls/control-form-detail.md)** 属性的内容来填充窗体。  **SubmitForm**并**ResetForm**函数具有在此模式下时不起作用。
 
-### <a name="displaymode-poperty"></a>DisplayMode 属性
-可通过 Mode 属性读取当前模式。  该模式还可以确定 DisplayMode 属性的值，数据卡和控件可在表单控件中使用该属性。  通常情况下，如操作控件的 DisplayMode 属性（引用数据卡）一样，将数据卡的 DisplayMode 属性设置为 Parent.DisplayMode（引用表单）： 
+### <a name="displaymode-property"></a>DisplayMode 属性
+可通过 Mode 属性读取当前模式。  该模式还可以确定 DisplayMode 属性的值，数据卡和控件可在表单控件中使用该属性。  通常情况下，数据卡的**DisplayMode**属性将设置为**Parent.DisplayMode** （引用表单） 也将控件的**DisplayMode** （引用属性数据卡）： 
 
 | 模式 | DisplayMode | 描述 |
 | --- | --- | --- |

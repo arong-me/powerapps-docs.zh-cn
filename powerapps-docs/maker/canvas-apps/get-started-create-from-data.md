@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/18/2018
+ms.date: 01/14/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3d29387c907808f90225f1ff67257d289de2b0a9
-ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
-ms.translationtype: HT
+ms.openlocfilehash: 7ab85f09ebf88c30b35c963242895cd74ca6a966
+ms.sourcegitcommit: b987589e946cacc86b806a0bd49b9b544ea489dd
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49806124"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297587"
 ---
 # <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>使用 Excel 在 PowerApps 中生成画布应用
 
@@ -67,17 +67,49 @@ Excel 文件必须位于云存储帐户（如 OneDrive、GoogleDrive 或 Dropbox
 
 1. 通过键入或粘贴搜索框中的一个或多个字符来筛选列表。
 
-1. 单击或点击加号图标以添加记录，添加所需的任何数据，然后单击或点击选中标记图标以保存更改。
+    例如，键入或粘贴**蜜标**以显示仅记录为其字符串出现在产品的名称、 类别或概述。
 
-1. 单击或点击添加的记录的下一步箭头，单击或点击铅笔图标以编辑记录，更新一个或多个字段，然后单击或点击选中标记图标以保存更改。
+    ![筛选器示例](./media/get-started-create-from-data/filter-example.png)
 
-1. 单击或点击添加的记录的下一步箭头，单击或点击铅笔图标以编辑记录，更新一个或多个字段，然后单击或点击取消图标以放弃更改。
+1. 添加一条记录：
 
-1. 单击或点击添加的记录的下一步箭头，然后单击或点击垃圾桶图标以删除该记录。
+    1. 选择加号图标。
+
+        ![加号图标](./media/get-started-create-from-data/plus-icon.png)
+
+    1. 添加所需的任何数据，然后选择复选标记图标以保存所做的更改。
+
+        ![保存图标](./media/get-started-create-from-data/save-icon.png)
+
+1. 编辑记录：
+
+    1. 选择你想要编辑的记录的箭头。
+
+        ![“下一步”箭头](./media/get-started-create-from-data/next-arrow.png)
+
+    1. 选择铅笔图标。
+
+        ![铅笔图标](./media/get-started-create-from-data/pencil-icon.png)
+
+    1. 更新一个或多个字段，然后选择复选标记图标以保存所做的更改。
+
+        ![保存图标](./media/get-started-create-from-data/save-icon.png)
+
+        或者，选择取消图标以放弃所做的更改。
+
+1. 删除一条记录：
+
+    1. 选择你想要删除的记录的下一步箭头。
+
+        ![“下一步”箭头](./media/get-started-create-from-data/next-arrow.png)
+
+    1. 选择垃圾桶图标。
+
+        ![“垃圾桶”图标](./media/get-started-create-from-data/trash-icon.png)
 
 ## <a name="next-steps"></a>后续步骤
 
-自定义默认浏览屏幕以更好地满足需求。 例如，可以按产品名称（而不是类别）对列表进行排序和筛选。
+自定义默认浏览屏幕以更好地满足需求。 例如，可以进行排序和筛选列表依据仅产品名称、 不是类别或概述。
 
 > [!div class="nextstepaction"]
 > [自定义默认浏览屏幕](customize-layout-sharepoint.md)。

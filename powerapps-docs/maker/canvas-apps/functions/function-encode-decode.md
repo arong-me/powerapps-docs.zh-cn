@@ -13,25 +13,25 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 30d3378f46e587e45314c30be1fce3c36b2bb120
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 9956332c35b4df2773b2634cb7f66d2ea96469e4
+ms.sourcegitcommit: 1b8578e38a09220ac66c5123644714139fc3c9e5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42832988"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "57800436"
 ---
 # <a name="encodeurl-and-plaintext-functions-in-powerapps"></a>PowerApps 中的 EncodeUrl 和 PlainText 函数
 编码和解码字符串。
 
 ## <a name="description"></a>描述
-**EncodeUrl** 函数会对 URL 字符串进行编码，将非字母数字字符替换为 % 和十六进制数字。  
+**EncodeUrl**函数对某些非字母数字字符替换为 %和十六进制数的 URL 字符串进行编码。  
 
-**PlainText** 函数会删除 HTML 和 XML 标记，将这类标记转换为相应的符号：
+**纯文本**函数会删除 HTML 和 XML 标记，将转换为相应的符号某些标记：
 
 * **&amp;nbsp;**
 * **&amp;quot;**
 
-这些函数的返回值是已编码或已解码的字符串。   
+这些函数的返回值是已编码或已解码的字符串。 此函数不会删除所有 HTML 和 XML 标记。 
 
 ## <a name="syntax"></a>语法
 **EncodeUrl**( *String* )

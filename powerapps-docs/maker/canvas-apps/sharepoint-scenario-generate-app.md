@@ -1,24 +1,24 @@
 ---
 title: 生成用于处理项目请求的画布应用 | Microsoft Docs
 description: 在此任务中，我们将直接通过 SharePoint 列表生成具有三个屏幕的基本画布应用。
-author: mgblythe
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
-ms.author: mblythe
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4466d8f42a0ba9c9a162353bc214abf6d9d9ef83
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: c9c7e58c8127b1c2784e0b1d79e78a1cb9478054
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834250"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799309"
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>生成用于处理项目请求的画布应用
 > [!NOTE]
@@ -29,7 +29,7 @@ ms.locfileid: "42834250"
 > [!TIP]
 > 这个方案的[下载包](https://aka.ms/o4ia0f)包含此应用的最终版本 (project-requests-app.msapp)。
 
-## <a name="step-1-generate-an-app-from-a-sharepoint-list"></a>第 1 步：生成以 SharePoint 列表为依据的应用
+## <a name="step-1-generate-an-app-from-a-sharepoint-list"></a>步骤 1:生成基于 SharePoint 列表的应用
 
 1. 在已创建的“项目申请”列表中，依次单击或点击“PowerApps”和“创建应用”。
    
@@ -39,7 +39,7 @@ ms.locfileid: "42834250"
    
     ![指定应用名称](./media/sharepoint-scenario-generate-app/02-01-02-create-app-name.png)
 
-## <a name="step-2-review-the-app-in-powerapps-studio"></a>第 2 步：在 PowerApps Studio 中查看应用
+## <a name="step-2-review-the-app-in-powerapps-studio"></a>步骤 2:查看 PowerApps Studio 中的应用程序
 
 1. 在 PowerApps Studio 中，左侧导航栏默认显示应用中屏幕和控件的分层视图。
    
@@ -59,7 +59,7 @@ ms.locfileid: "42834250"
       
       ![含缩略图视图的 PowerApps Studio](./media/sharepoint-scenario-generate-app/02-02-03-studio-screens-thumbnails.png)
 
-## <a name="step-3-customize-the-apps-browse-screen"></a>第 3 步：自定义应用的浏览屏幕
+## <a name="step-3-customize-the-apps-browse-screen"></a>步骤 3:自定义应用的浏览屏幕
 
 1. 单击或点击应用的浏览屏幕。
    
@@ -93,7 +93,7 @@ ms.locfileid: "42834250"
 
 6. 依次单击或点击“文件”和“保存”。 单击或点击 ![“返回到应用”图标](./media/sharepoint-scenario-generate-app/icon-back-to-app.png)，返回到应用。
 
-## <a name="step-4-review-the-apps-details-screen-and-edit-screen"></a>第 4 步：查看应用的详细信息屏幕和编辑屏幕
+## <a name="step-4-review-the-apps-details-screen-and-edit-screen"></a>步骤 4：查看应用程序的详细信息屏幕和编辑屏幕
 1. 单击或点击应用的详细信息屏幕。
    
     此屏幕的布局不同，包含用于显示库中选定项的详细信息的显示表单。 它包含用于编辑和删除项的控件，以及用于返回到浏览屏幕的控件。
@@ -106,7 +106,7 @@ ms.locfileid: "42834250"
 
     ![编辑表单](./media/sharepoint-scenario-generate-app/02-04-03-edit.png)
 
-## <a name="step-5-run-the-app-from-the-list"></a>第 5 步：通过列表运行应用
+## <a name="step-5-run-the-app-from-the-list"></a>步骤 5：从列表中运行应用
 
 1. 在“项目申请”列表中，依次单击或点击“所有项”和“项目申请应用”。
    

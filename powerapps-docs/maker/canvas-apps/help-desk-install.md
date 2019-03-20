@@ -1,37 +1,37 @@
 ---
 title: 安装和配置画布应用的技术支持示例 | Microsoft Docs
 description: 在 PowerApps 中安装和配置画布应用的技术支持示例的分步说明。
-author: caburk
+author: mr-dang-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
-ms.author: caburk
+ms.author: brdang
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3945bc2e164d9fa88ee122910d3e15371b9e239e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 1be6055a2b8f42d8d4194653417313b29ab5610d
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834615"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799838"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>在 PowerApps 中安装和配置技术支持的示例
 
 在 PowerApps 中安装和配置画布应用的技术支持示例的分步说明。
 
-完成以下步骤的估计时间：10-15 分钟
+上述步骤预计完成时间：**10-15 分钟**
 
 > [!TIP]
 > 有关此过程的演示，请观看此[视频](https://youtu.be/z4cdtD6hB_4)。
 
 ## <a name="overview-of-the-sample"></a>示例概述
 
-技术支持提供用户友好体验，方便最终用户与支持专业人员交流。 快速找到最重要问题的答案，跟踪开放票证的进度，并查看之前的请求的详细信息。 要拥有此应用，需完成少量设置。
+技术支持提供的用户友好的体验，可将最终用户连接与支持专业人员。 快速查找最重要问题的答案，跟踪开放票证的进度，并查看以前的请求的详细信息。 要拥有此应用，需完成少量设置。
 
 ![技术支持 PowerApp 的打开屏幕](./media/help-desk-install/Login-screen.png)
 
@@ -100,7 +100,7 @@ ms.locfileid: "42834615"
 3. 在“此列中的信息类型为”单选按钮列表中，选择“选项”。
 4. 在“在单独行上输入每个选项”文本框中，输入以下值，每个值单独占一行： 
     - 高
-    - 中型
+    - 中等
     - 低
 5. 在“强制使用唯一值”单选按钮列表中，选择“否”。
 6. 在“选项显示方式”单选按钮列表中，选择“下拉菜单”。

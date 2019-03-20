@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f7aed7812890482bb781e2d5ff7eac8c996b8837
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: d48559ee3a54cbb723621a0e36f09cb4a1d0fe3b
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850408"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803426"
 ---
 # <a name="understand-behavior-formulas-for-canvas-apps-in-powerapps"></a>了解 PowerApps 中画布应用的行为公式
 
@@ -30,18 +30,18 @@ ms.locfileid: "42850408"
 
 通过选择**[按钮](controls/control-button.md)** 控件，用户会发起一系列操作或行为，从而更改应用的状态：
 
-* 更改显示的屏幕：**[Back](functions/function-navigate.md)** 和 **[Navigate](functions/function-navigate.md)** 函数。
-* 控制[信号](functions/signals.md)：**[Enable](functions/function-enable-disable.md)** 和 **[Disable](functions/function-enable-disable.md)** 函数。
-* 刷新、更新或删除[数据源](working-with-data-sources.md)中的项目：**[Refresh](functions/function-refresh.md)**、**[Update](functions/function-update-updateif.md)**、**[UpdateIf](functions/function-update-updateif.md)**、**[Patch](functions/function-patch.md)**、**[Remove](functions/function-remove-removeif.md)**、**[RemoveIf](functions/function-remove-removeif.md)** 函数。
-* 更新[上下文变量](working-with-variables.md#create-a-context-variable)：**[UpdateContext](functions/function-updatecontext.md)** 函数。
-* 创建、更新或删除[集合](working-with-data-sources.md#collections)中的项：**[Collect](functions/function-clear-collect-clearcollect.md)**、**[Clear](functions/function-clear-collect-clearcollect.md)**、**[ClearCollect](functions/function-clear-collect-clearcollect.md)** 函数。
+* 更改显示的屏幕：**[回到](functions/function-navigate.md)** 并**[Navigate](functions/function-navigate.md)** 函数。
+* 控件[信号](functions/signals.md):**[启用](functions/function-enable-disable.md)** 并**[禁用](functions/function-enable-disable.md)** 函数。
+* 刷新、 更新或删除中的项[数据源](working-with-data-sources.md):**[刷新](functions/function-refresh.md)**， **[更新](functions/function-update-updateif.md)**，  **[UpdateIf](functions/function-update-updateif.md)**，  **[的修补程序](functions/function-patch.md)**， **[删除](functions/function-remove-removeif.md)**， **[RemoveIf](functions/function-remove-removeif.md)** 函数。
+* 更新[上下文变量](working-with-variables.md#use-a-context-variable):**[UpdateContext](functions/function-updatecontext.md)** 函数。
+* 创建、 更新或删除中的项[集合](working-with-data-sources.md#collections):**[收集](functions/function-clear-collect-clearcollect.md)**， **[清除](functions/function-clear-collect-clearcollect.md)**， **[ClearCollect](functions/function-clear-collect-clearcollect.md)** 函数。
 
 由于这些函数可更改应用的状态，因此无法自动重新计算。 你可以在 **[OnSelect](controls/properties-core.md)**、**[OnVisible](controls/control-screen.md)**、**[OnHidden](controls/control-screen.md)** 和其他 **On...** 属性的公式（称为行为公式）中使用这些函数。
 
 ### <a name="more-than-one-action"></a>多个操作
 使用分号可创建要执行的操作列表。 例如，你可能希望更新上下文变量，然后返回到上一个屏幕：
 
-* **UpdateContext( { x: 1 } ); Back()**
+* **UpdateContext( { x:1 } ); Back()**
 
 操作按照它们在公式中出现的顺序执行。  当前函数完成执行后，才会开始执行下一个函数。 如果发生错误，则可能无法继续执行后续函数。
 

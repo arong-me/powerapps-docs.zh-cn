@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 688b1e87e5bc1d2ee3429711b9995f3b4ef61e1c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: f538d785b9655b94a44a79c3299e979bbfe88883
+ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42857099"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54308768"
 ---
 # <a name="forall-function-in-powerapps"></a>PowerApps 中的 ForAll 函数
 针对[表](../working-with-tables.md)中的所有[记录](../working-with-tables.md#records)计算值和执行操作。
@@ -64,7 +64,7 @@ PowerApps 中的许多函数可以通过使用单列表一次处理多个值。 
 
 若要将此数据源创建为集合，请将某个**按钮**控件的 **OnSelect** 属性设置为以下公式，打开“预览”模式，然后单击或点击按该钮：
 
-* **ClearCollect( Squares, [ "1", "4", "9" ] )**
+`ClearCollect( Squares, [ "1", "4", "9" ] )`
 
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
@@ -78,7 +78,7 @@ PowerApps 中的许多函数可以通过使用单列表一次处理多个值。 
 
 若要将此数据源创建为集合，请将某个**按钮**控件的 **OnSelect** 属性设置为以下公式，打开“预览”模式，然后单击或点击按该钮：
 
-* **ClearCollect( Expressions, [ "Hello", "Good morning", "Thank you", "Goodbye" ] )**
+`ClearCollect( Expressions, [ "Hello", "Good morning", "Thank you", "Goodbye" ] )`
 
 此示例还使用一个 [Microsoft Translator](../connections/connection-microsoft-translator.md) 连接。  若要将此连接添加到你的应用，请参阅有关如何[管理连接](../add-manage-connections.md)的主题。
 
@@ -104,7 +104,16 @@ PowerApps 中的许多函数可以通过使用单列表一次处理多个值。 
 
 若要将此数据源创建为集合，请将某个**按钮**控件的 **OnSelect** 属性设置为以下公式，打开“预览”模式，然后单击或点击按该钮：
 
-* **ClearCollect( Products, Table( { Product: "Widget", 'Quantity Requested': 6, 'Quantity Available': 3 }, { Product: "Gadget", 'Quantity Requested': 10, 'Quantity Available': 20 }, { Product: "Gizmo", 'Quantity Requested': 4, 'Quantity Available': 11 }, { Product: "Apparatus", 'Quantity Requested': 7, 'Quantity Available': 6 } ) )**
+```powerapps-dot
+ClearCollect( Products, 
+    Table( 
+        { Product: "Widget",    'Quantity Requested': 6,  'Quantity Available': 3 }, 
+        { Product: "Gadget",    'Quantity Requested': 10, 'Quantity Available': 20 },
+        { Product: "Gizmo",     'Quantity Requested': 4,  'Quantity Available': 11 },
+        { Product: "Apparatus", 'Quantity Requested': 7,  'Quantity Available': 6 } 
+    )
+)
+```
 
 我们的目标是使用一个派生表，使其中仅包含所请求数量大于可用数量并且我们需要订购的商品：
 
@@ -115,7 +124,17 @@ PowerApps 中的许多函数可以通过使用单列表一次处理多个值。 
 #### <a name="table-shaping-on-demand"></a>按需进行表整形
 不要创建该副本！  我们可以在有需要的任何位置使用以下公式：
 
-* **ShowColumns( AddColumns( Filter( Products, 'Quantity Requested' > 'Quantity Available' ), "Quantity To Order", 'Quantity Requested' - 'Quantity Available' ), "Product", "Quantity To Order" )**
+```powerapps-dot
+// Table shaping on demand, no need for a copy of the result
+ShowColumns( 
+    AddColumns( 
+        Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+        "Quantity To Order", 'Quantity Requested' - 'Quantity Available' 
+    ), 
+    "Product", 
+    "Quantity To Order"
+)
+```
 
 **Filter** 和 **AddColumns** 函数分别会创建一个[记录范围](../working-with-tables.md#record-scope)来使用每条记录的 **'Quantity Requested'** 和 **'Quantity Available'** 字段执行比较和减法操作。
 
@@ -126,7 +145,16 @@ PowerApps 中的许多函数可以通过使用单列表一次处理多个值。 
 #### <a name="forall-on-demand"></a>按需 ForAll
 另一种方法是使用 **ForAll** 函数来替换表整形函数：
 
-* **ForAll( Products, If( 'Quantity Requested' > 'Quantity Available', { Product: Product, 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' } ) )**
+```powerapps-dot
+ForAll( Products, 
+    If( 'Quantity Requested' > 'Quantity Available', 
+        { 
+            Product: Product, 
+            'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
+        } 
+    ) 
+)
+```
 
 对某些人来说，此公式可能更容易阅读和编写。
 
@@ -137,15 +165,50 @@ PowerApps 中的许多函数可以通过使用单列表一次处理多个值。 
 
 我们使用与前面的两个示例相同的表整形，但是将结果捕获到一个集合中：
 
-* **ClearCollect( NewOrder, ShowColumns( AddColumns( Filter( Products, 'Quantity Requested' > 'Quantity Available' ), "Quantity To Order", 'Quantity Requested' - 'Quantity Available' ), "Product", "Quantity To Order" ) )**
-* **ClearCollect( NewOrder, ForAll( Products, If( 'Quantity Requested' > 'Quantity Available', { Product: Product, 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' } ) ) )**
+```powerapps-dot
+ClearCollect( NewOrder, 
+    ShowColumns( 
+        AddColumns( 
+            Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+            "Quantity To Order", 'Quantity Requested' - 'Quantity Available' 
+        ), 
+        "Product", 
+        "Quantity To Order"
+    )
+)
+```
+
+```powerapps-dot
+ClearCollect( NewOrder, 
+    ForAll( Products, 
+        If( 'Quantity Requested' > 'Quantity Available', 
+            { 
+                Product: Product, 
+                'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
+            } 
+        } 
+    )
+)
+```
 
 **ClearCollect** 和 **Collect** 无法委派。  因此，可以通过此方式移动的数据量是有限的。
 
 #### <a name="collect-within-forall"></a>ForAll 内的 Collect
 最后，我们可以直接在 **ForAll** 内执行 **Collect**：
 
-* **Clear( ProductsToOrder ); ForAll( Products, If( 'Quantity Requested' > 'Quantity Available', Collect( NewOrder, { Product: Product, 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' } ) ) )**
+```powerapps-dot
+Clear( ProductsToOrder ); 
+ForAll( Products, 
+    If( 'Quantity Requested' > 'Quantity Available', 
+        Collect( NewOrder,  
+            { 
+                Product: Product, 
+                'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
+            } 
+        )
+    )
+)
+```
 
 同样，**ForAll** 函数此时无法委派。  如果我们的 **Products** 表很大，则**ForAll** 将仅查找第一组记录，我们可能会错过一些需要订购的产品。  但是，对于我们知道一直会比较小的表，此方法很合适。
 

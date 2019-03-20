@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b191e41db1b8d49d61b48a8a24dbf22101c18a68
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: a66cf920f37870d13db187fe02a873bac7a44aa6
+ms.sourcegitcommit: eecbafdee9ef3d0a71dfeba934581f00965064cf
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42844175"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "57801862"
 ---
 # <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>PowerApps 中的 First、FirstN、Last 和 LastN 函数
 返回表中的第一组或最后一组[记录](../working-with-tables.md#records)。
