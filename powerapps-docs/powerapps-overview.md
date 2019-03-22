@@ -1,20 +1,20 @@
 ---
-title: 什么是 PowerApps| Microsoft Docs
-description: 提供有关 PowerApps 的概述，并讨论最终用户、应用创建者、管理员和专业开发人员如何使用 PowerApps。
+title: 什么是 PowerApps？ | Microsoft Docs
+description: 概述了 PowerApps，并探讨了最终用户、应用创建者、管理员和专业开发人员如何使用 PowerApps。
 author: KumarVivek
 manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 02/28/2019
+ms.date: 03/18/2019
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: 3a314ee6fabc5d3891a19610bfc4cf8aebdd6dcf
-ms.sourcegitcommit: edd4b1029b7085bb3849d87b0c94e0d8cb5758aa
+ms.openlocfilehash: ec03fdfd4837bb54fb150562ade38db758887f88
+ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57251538"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58162254"
 ---
 # <a name="what-is-powerapps"></a>什么是 PowerApps？
 
@@ -23,6 +23,8 @@ PowerApps 是一系列应用、服务、连接器和数据平台，可提供快�
 使用 PowerApps 生成的应用提供丰富的业务逻辑和工作流功能，这些功能可将手动业务流程转换为数字化、自动化流程。 此外，使用 PowerApps 生成的应用具有响应式设计，可以在浏览器或移动设备（手机或平板电脑）上无缝运行。 PowerApps 使用户能够在不编写代码的情况下生成功能丰富的自定义业务应用，从而使自定义业务应用生成体验变得民主化。
 
 PowerApps 还提供了一个可扩展的平台，允许专业开发人员以编程方式与数据和元数据进行交互、应用业务逻辑、创建自定义连接器以及与外部数据集成。
+
+有关详细信息，请观看 YouTube 上的 [PowerApps 通道](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg)。
 
 ## <a name="powerapps-for-app-makerscreators"></a>面向应用创建者的 PowerApps
 
