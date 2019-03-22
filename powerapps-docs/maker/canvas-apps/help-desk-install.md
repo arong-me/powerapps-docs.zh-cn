@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1be6055a2b8f42d8d4194653417313b29ab5610d
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.openlocfilehash: 2c367aa57294e52fc22f538f88b361c90c3afb99
+ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799838"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330231"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>在 PowerApps 中安装和配置技术支持的示例
 
@@ -47,7 +47,7 @@ ms.locfileid: "57799838"
 
 此列表存储技术支持票证。
 
-1. 打开 Web 浏览器并导航到 [https://portal.office.com](https://portal.office.com) 。
+1. 打开 Web 浏览器并导航到 [https://portal.office.com](https://admin.microsoft.com) 。
 2. 用具有创建 SharePoint 列表权限的帐户登录。
 3. 导航到要在其中存放技术支持列表的站点集合。
 4. 单击网页右上角的齿轮图标。

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: aa46510cdd46cf8d9fb64694e7b6306b255b1157
-ms.sourcegitcommit: fa0ad3f81efd41671dd8e118ce936acb274cfd7c
+ms.openlocfilehash: 9b213484bf1412d808c3fa9599debd5c9e546a4e
+ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54079601"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330116"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>PowerApps 中的画布应用有哪些？
 在 Microsoft PowerApps 中通过画布设计和构建业务应用，无需以传统计算机语言（如 C#）编写代码。 通过将元素拖放到画布来设计应用，就像在 PowerPoint 中设计幻灯片一样。 创建用于指定逻辑和处理数据的 Excel 类表达式。 构建应用，这些应用可与[丰富多样的 Microsoft 和第三方源](connections-list.md)中的业务数据集成。 共享应用，以便用户可在浏览器或移动设备中运行；嵌入应用，以便用户可在 SharePoint、Power BI 或 Teams 中运行。
@@ -54,7 +54,7 @@ ms.locfileid: "54079601"
 ## <a name="share-your-experience"></a>共享你的体验
 * 在 [PowerApps 社区](https://aka.ms/powerapps-community)中阅读和发布内容，在此社区中任何 PowerApps 用户都可以发布问题，以供他人回答。 发布问题前，请先搜索此社区，看看自己的问题是否已经有人回答。
 * 可在 [PowerApps Ideas](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas) 上向我们反馈该如何改进 PowerApps，将想法告诉我们。
-* 创建[支持票证](https://powerapps.microsoft.com/support/pro/)，以获取技术帮助。 如果是组织的 PowerApps 管理员，也可以在 [PowerApps 管理中心](https://portal.office.com/Support/Support.aspx)中打开支持票证。
+* 创建[支持票证](https://powerapps.microsoft.com/support/pro/)，以获取技术帮助。 如果是组织的 PowerApps 管理员，也可以在 [PowerApps 管理中心](https://admin.microsoft.com/Support/Support.aspx)中打开支持票证。
 
 ## <a name="next-steps"></a>后续步骤
 - [注册免费许可证。](../signup-for-powerapps.md)
