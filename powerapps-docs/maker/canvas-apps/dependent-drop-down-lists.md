@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: db511edd7e64f4d8ccd27cb59cae9a2c369e1a90
-ms.sourcegitcommit: a06e3137e3cb36414f0d61825bbc687487ea6f8c
+ms.openlocfilehash: e00c81f25de9a764e8f6d963ff94f3c0ffe052a2
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57804231"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357244"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>创建依赖下拉列表中的画布应用
 
@@ -206,6 +206,6 @@ ms.locfileid: "57804231"
 
 ## <a name="known-limitations"></a>已知的限制
 
-此配置是可在上找到**下拉列表**控件，以及**组合框**并**列表框**允许一次一个的所选内容的控件。 不能使用**依赖**任何这些控件允许选择多个配置。 此方法不建议使用的选项集共同 Data Service for Apps。
+此配置是可在上找到**下拉列表**控件，以及**组合框**并**列表框**允许一次一个的所选内容的控件。 不能使用**依赖**任何这些控件允许选择多个配置。 此方法不建议使用的选项集通用数据服务。
 
 **依赖**配置不支持静态数据或集合。 若要配置这些源依赖下拉列表，请编辑直接在公式栏中的表达式。 此外，PowerApps 不支持使用而无需任何匹配的表的数据，在 SharePoint 中的两个选择字段并不能定义**匹配字段**此 UI 中。

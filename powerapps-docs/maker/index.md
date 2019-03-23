@@ -8,14 +8,9 @@ ms.topic: conceptual
 ms.custom: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.reviewer: ''
-ms.openlocfilehash: c3e40df2d2ecc13e2c466aa91178ccb5d23548fe
-ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49806079"
+ms.reviewer: null
 ---
+
 # <a name="overview-of-creating-apps-in-powerapps"></a>概述如何在 PowerApps 中创建应用
 
 PowerApps 是商业应用的高效开发平台，主要有三个组成部分：
@@ -57,7 +52,7 @@ PowerApps 是商业应用的高效开发平台，主要有三个组成部分：
 - [添加安全性](https://docs.microsoft.com/dynamics365/customer-engagement/customize/manage-access-apps-security-roles)
 - [添加业务逻辑](https://docs.microsoft.com/dynamics365/customer-engagement/customize/guide-staff-through-common-tasks-processes)
 
-## <a name="common-data-service-for-apps"></a>Common Data Service for Apps
+## <a name="common-data-service"></a>Common Data Service
 
 可以使用 Common Data Service 在一组标准实体和自定义实体中安全地存储和管理数据，还可以在需要时将字段添加到这些实体。
 

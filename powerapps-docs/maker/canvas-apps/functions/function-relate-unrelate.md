@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c50b2452829f0878c40ccf5f2e47010596bc0b7b
-ms.sourcegitcommit: eef2d6d9a9c7f5c8a44b9734817f59dc0eac3ecf
+ms.openlocfilehash: 4b2c6b9518e987ef17f2ff2b50987568c8a0b69f
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "57801586"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356761"
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>关联和取消关联时要在 PowerApps 中的函数
 
@@ -26,7 +26,7 @@ ms.locfileid: "57801586"
 
 ## <a name="description"></a>描述
 
-**Relate**函数链接通过一个对多或多对多关系在 Common Data Service (CDS) 的应用的两条记录。 **Unrelate**函数可回退该过程并删除该链接。
+**Relate**函数链接通过 Common Data Service 中的一个多或多对多关系的两条记录。 **Unrelate**函数可回退该过程并删除该链接。
 
 对于一个对多关系，多个实体具有外键字段指向一条记录的一个实体。 **与相关**设置为指向特定记录的一个实体，此字段时**Unrelate**将此字段设置为*空白*。 如果该字段已设置何时**Relate**是调用，现有的链接是丢失以支持新的链接。 此外可以通过设置此字段[**修补**](function-patch.md)函数或**[编辑窗体](../controls/control-form-detail.md)** 控制; 您无需使用**建立关系**函数。
 

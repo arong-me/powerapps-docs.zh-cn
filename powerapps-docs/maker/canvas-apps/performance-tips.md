@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a04320d2d8bb2d8ad3ebf30d3ecbd0dfe7f9b0bd
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.openlocfilehash: 6406afad9079895a0da38c7f1f6e3961f2e37fa1
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57801954"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357842"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>在 PowerApps 中优化画布应用性能
 Microsoft 正致力于完善在 PowerApps 平台上运行的所有应用的性能。 但你可以按照本主题中的最佳做法提高你所创建的应用的性能。
@@ -32,7 +32,7 @@ Microsoft 正致力于完善在 PowerApps 平台上运行的所有应用的性�
 ## <a name="limit-data-connections"></a>限制数据连接 
 不要从同一应用连接到 30 个以上的数据源。 应用会提示新用户登录到每个连接器，因此，每个附加连接器会增加启动应用所需的时间。 运行应用且应用请求来自该源的数据时，每个连接器都会需要 CPU 资源、内存和网络带宽。 
 
-在运行应用的同时打开 [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) 或 [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) 中的开发人员工具可以快速度量应用的性能。 如果应用频繁请求来自 30 个以上的数据源（如 Common Data Service for Apps、Azure SQL、SharePoint 和 Excel on OneDrive）的数据，则应用很有可能需要超过 15 秒钟才能返回数据。  
+在运行应用的同时打开 [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) 或 [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) 中的开发人员工具可以快速度量应用的性能。 您的应用程序很有可能要花费的时间超过 15 秒，如果它经常请求从 30 多个数据源，如 Common Data Service、 Azure SQL、 SharePoint 和 OneDrive 上的 Excel 的数据返回数据。  
 
 ## <a name="limit-the-number-of-controls"></a>限制控件数 
 不要向同一应用添加 500 个以上的控件。 PowerApps 会生成 HTML DOM 以呈现每个控件。 添加的控件越多，PowerApps 所需的生成时间就越多。 

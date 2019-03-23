@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 09d2bc10d465510887b546df8341c8798df136c1
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
-ms.translationtype: HT
+ms.openlocfilehash: 1adf38b59b01bb08bc89c6101a96247b8bce8092
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49316806"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357451"
 ---
-# <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>快速入门：根据 PowerApps 的示例创建画布应用
+# <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>快速入门：从 PowerApps 中的示例创建画布应用
 在本快速入门教程中，将根据示例创建一个画布应用，以便探索设计的可能性，并发现在开发自己的应用时可以应用的概念。
 
 每个示例均展示了一个实际场景，但使用的是虚构数据。 若要存储此数据，需要一个云存储帐户，如 Dropbox、GoogleDrive 或 OneDrive。
@@ -64,7 +64,7 @@ ms.locfileid: "49316806"
 1. 在左边缘附近单击或点击“保存”。 
 
 ## <a name="next-steps"></a>后续步骤
-在本快速入门中，你基于一个示例创建了自己的应用，该示例使用你的云帐户中存储的虚构数据。 若要获得创建应用的更多帮助，还可以根据其他源（如 Common Data Service for Apps、SharePoint 或 Excel）中的数据自动生成应用。
+在本快速入门中，你基于一个示例创建了自己的应用，该示例使用你的云帐户中存储的虚构数据。 学习如何创建应用的更多帮助，还会自动可以生成基于 Common Data Service、 SharePoint 或 Excel 等其他源中数据的应用。
 
 > [!div class="nextstepaction"]
 > [生成应用](data-platform-create-app.md)

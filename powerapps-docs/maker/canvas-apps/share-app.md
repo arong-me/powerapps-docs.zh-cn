@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 57a63ddf829e2a6c1062cad34e0f3c608d69afad
-ms.sourcegitcommit: a06e3137e3cb36414f0d61825bbc687487ea6f8c
+ms.openlocfilehash: 34cf740bb029440480618a180ac45bc094c061d5
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57804208"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357267"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>在 PowerApps 中共享画布应用
 
 生成满足业务需求的画布应用后，指定组织中哪些用户可以运行应用，哪些用户可以修改并重新共享应用。 按姓名指定每个用户或在 Azure Active Directory 中指定安全组。 如果每个人都可利用你的应用，则指定整个组织可以运行应用。
 
 > [!IMPORTANT]
-> 若要使共享应用按预期方式运行，还必须管理应用所基于的数据源或源的权限，例如 [Common Data Service for Apps](#common-data-service-for-apps) 或 [Excel](share-app-data.md)。 可能还需要共享应用依赖的[其他资源](share-app-resources.md)，例如流、网关或连接。
+> 若要正常使用共享应用，还必须管理权限的数据源或源应用程序所基于的如[Common Data Service](#common-data-service)或[Excel](share-app-data.md)。 可能还需要共享应用依赖的[其他资源](share-app-resources.md)，例如流、网关或连接。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -68,7 +68,7 @@ ms.locfileid: "57804208"
 
 1. 如果您的应用程序连接到为其用户需要访问权限的数据时，指定它们。
 
-    例如，您的应用程序可能会连接到 CDS for Apps 数据库中的实体。 当您共享此类应用时，共享面板会提示您管理的该实体的安全。
+    例如，您的应用程序可能会连接到 Common Data Service 数据库中的实体。 当您共享此类应用时，共享面板会提示您管理的该实体的安全。
 
     ![设置权限](./media/share-app/set-permissions.png)
 
@@ -99,16 +99,16 @@ ms.locfileid: "57804208"
 
 ## <a name="manage-entity-permissions"></a>管理实体权限
 
-### <a name="common-data-service-for-apps"></a>Common Data Service for Apps
+### <a name="common-data-service"></a>Common Data Service
 
-如果创建基于 CDS for Apps 上的应用，还必须确保与你共享应用程序的用户具有适当的权限或多个应用程序所依赖的实体。 具体而言，这些用户必须属于可执行任务，例如创建、 读取、 写入和删除相关记录的安全角色。 在许多情况下，你将想要使用的用户运行应用所需的确切权限创建一个或多个自定义安全角色。 然后可以根据每个用户分配角色。
+如果创建基于 Common Data Service 的应用，还必须确保与你共享应用程序的用户具有适当的权限或多个应用程序所依赖的实体。 具体而言，这些用户必须属于可执行任务，例如创建、 读取、 写入和删除相关记录的安全角色。 在许多情况下，你将想要使用的用户运行应用所需的确切权限创建一个或多个自定义安全角色。 然后可以根据每个用户分配角色。
 
 > [!NOTE]
 > 在撰写本文时，可以将安全角色分配给单个用户而非安全组中。
 
 #### <a name="prerequisite"></a>先决条件
 
-若要执行以下两个过程，必须拥有对 CDS for Apps 数据库的“系统管理员”权限。
+若要执行以下两个过程，必须拥有**系统管理员**Common Data Service 数据库的权限。
 
 #### <a name="create-a-security-role"></a>创建安全角色
 

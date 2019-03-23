@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b6bff4d0f9586f94e4d0da133197fcb7f78c765d
-ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
+ms.openlocfilehash: a8abc0a641f13cc05e723b96d48dd2d877f0b70f
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "57800252"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356899"
 ---
 # <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>了解 PowerApps 中画布应用的数据窗体布局
 
@@ -32,7 +32,7 @@ ms.locfileid: "57800252"
 
 如果你是初次接触 PowerApps（或者仅自动生成过应用），则在深入了解此主题前请[从头开始生成一个应用](get-started-create-from-blank.md)。 通过从头开始生成一个应用，会让你熟悉本主题中提及但未加说明的必备概念，例如添加数据源和控件。
 
-本主题编写好像有一个数据源名为**销售订单**并包含在上图中的字段。 如果你拥有 PowerApps 计划 2 许可证或[试用版许可证](../signup-for-powerapps.md)和系统管理员或系统定制员权限，则可以[创建实体](../common-data-service/data-platform-create-entity.md)在 Common Data Service (CDS) 的应用，然后添加类似的字段。 
+本主题编写好像有一个数据源名为**销售订单**并包含在上图中的字段。 如果你拥有 PowerApps 计划 2 许可证或[试用版许可证](../signup-for-powerapps.md)和系统管理员或系统定制员权限，则可以[创建实体](../common-data-service/data-platform-create-entity.md)Common Data Service 中，然后添加类似的字段。 
 
 ## <a name="add-a-gallery"></a>添加库
 
@@ -160,7 +160,7 @@ ms.locfileid: "57800252"
 
 现在，我们将重点处理第三行地址。 与刚才的操作类似，我们将缩短这些数据卡中每个标签的文本，并将文本输入框排列到每个标签的右侧。 下面介绍如何对“州/省/自治区/直辖市”数据卡执行这些操作：
 
-| 步骤 | 说明 | 结果 |
+| 步骤 | 描述 | 结果 |
 | --- | --- | --- |
 | 1 |选中“州/省/自治区/直辖市”数据卡，以使其周围出现握柄。 |![选择卡](./media/working-with-form-layout/state-morph-2.png) |
 | 2 |选中该卡中的标签，以使其周围出现握柄。 |![选择数据卡内的控件](./media/working-with-form-layout/state-morph-3.png) |

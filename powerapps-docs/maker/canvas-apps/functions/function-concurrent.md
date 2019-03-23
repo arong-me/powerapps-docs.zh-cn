@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b3f95b5c8ddbca1925f89797e52b1b227c4b10e8
-ms.sourcegitcommit: ead27300a1b7371136edee1842829ed87ca77a72
+ms.openlocfilehash: e9c63d1814b72cae0c675be6b33773799cfb3b8f
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57892244"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357083"
 ---
 # <a name="concurrent-function-in-powerapps"></a>PowerApps 中的 Concurrent 函数
 并发计算多个公式。
@@ -47,7 +47,7 @@ Concurrent 函数同时计算多个公式。 通常情况下，多个公式的�
 
 #### <a name="loading-data-faster"></a>更快地加载数据
 
-1. 创建应用，并从 Common Data Service for Apps、SQL Server 或 SharePoint 添加四个数据源。 
+1. 创建应用，并从 Common Data Service、 SQL Server 或 SharePoint 中添加四个数据源。 
 
     此示例使用来自 [SQL Azure 上的示例 Adventure Works 数据库](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal)的四个表。 创建数据库后，请使用完全限定的服务器名称（例如 srvname.database.windows.net）从 PowerApps 连接到它：
 

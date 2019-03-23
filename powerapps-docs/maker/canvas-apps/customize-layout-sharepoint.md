@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6e77ddfcc572a776e80ab90d3907aaa7b67f01ea
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 2864ab5614bb3af415e24e23df3c52f6e668ab24
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864763"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357129"
 ---
-# <a name="tutorial-customize-a-gallery-in-powerapps"></a>教程：在 PowerApps 中自定义库
+# <a name="tutorial-customize-a-gallery-in-powerapps"></a>教程：自定义 PowerApps 中库
 
 本教程将自定义一个记录列表（称为一个库），以及对已在 Microsoft PowerApps 中自动生成的应用进行其他更改。 即使不进行这些更改，用户也可以管理应用中的数据，但是，如果对其进行自定义来满足组织需要，则可以更加轻松使用该应用。
 
@@ -47,7 +47,7 @@ ms.locfileid: "42864763"
 
 ## <a name="prerequisites"></a>先决条件
 
-从 Common Data Service (CDS) for Apps 的帐户实体[生成应用](data-platform-create-app.md)。
+[生成应用](data-platform-create-app.md)从**帐户**Common Data Service 实体。
 
 ## <a name="open-the-generated-app"></a>打开生成的应用
 

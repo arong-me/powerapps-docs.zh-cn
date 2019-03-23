@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3da9d769ab36df23c6c54510937adea2ce38863f
-ms.sourcegitcommit: b8b2a2c3cf3300fa52bdf71bfef6a2892e36cffc
+ms.openlocfilehash: 9415ab67b93ef64f5caa025af5ac685ca2363305
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57802621"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357060"
 ---
 # <a name="guid-function-in-powerapps"></a>PowerApps 中的 GUID 函数
 将 GUID（[全局唯一标识符](https://en.wikipedia.org/wiki/Universally_unique_identifier)）字符串转换为 GUID 值或创建新的 GUID 值。
 
 ## <a name="description"></a>说明
-使用 GUID 函数将包含 GUID 的十六进制表示形式的字符串转换为可以传递到数据库的 GUID 值。 GUID 值被数据库系统（如 Common Data Service for Apps 和 SQL Server）用作密钥。
+使用 GUID 函数将包含 GUID 的十六进制表示形式的字符串转换为可以传递到数据库的 GUID 值。 如 Common Data Service 和 SQL Server 数据库系统将 GUID 值用作键。
 
 传递的字符串可以包含大写或小写字母，但必须是采用以下任意格式的 32 位十六进制数字：
 

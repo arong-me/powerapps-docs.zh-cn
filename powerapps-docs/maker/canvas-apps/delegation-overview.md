@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 813dddc205eb5abb870d333635723fcd5e2f2738
-ms.sourcegitcommit: 6d1ec3d5afa0466d1a5ce4434e588686a195d0fa
+ms.openlocfilehash: e709c600e02d0acf26883da76ead163c62411802
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "57802529"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357612"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>了解画布应用中的委派
 PowerApps 包括一组功能强大的筛选、 排序和整理的画布应用中的数据的表的函数：**[筛选器](functions/function-filter-lookup.md)**， **[排序](functions/function-sort.md)**，以及**[AddColumns](functions/function-table-shaping.md)** 函数等等。 可以使用这些函数，让用户重点访问其所需的信息。 对于具有数据库背景的用户来说，使用这些函数相当于编写数据库查询。
@@ -37,7 +37,7 @@ PowerApps 包括一组功能强大的筛选、 排序和整理的画布应用中
 ## <a name="delegable-data-sources"></a>可委托的数据源
 对于某些表格数据源支持委派。 如果数据源支持委派，其[连接器文档](https://docs.microsoft.com/connectors/)概述了该功能的支持。 例如，这些表格数据源是最常用的并支持委托：
 
-- [Common Data Service (CDS) for 应用](https://docs.microsoft.com/connectors/commondataservice/) 
+- [Common Data Service](https://docs.microsoft.com/connectors/commondataservice/) 
 - [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/) 
 - [SQL Server](https://docs.microsoft.com/connectors/sql/) 
 
@@ -131,7 +131,7 @@ PowerApps 包括一组功能强大的筛选、 排序和整理的画布应用中
 委派警告仅显示在针对可委派数据源进行运算的公式上。 如果没有看到警告，但你认为公式未进行适当的委派，请对照本主题前面部分的[可委派数据源](delegation-overview.md#delegable-data-sources)列表检查数据源的类型。
 
 ## <a name="examples"></a>示例
-对于此示例，将基于名为 **[dbo].[Fruit]** 的 SQL Server 表自动生成一个三屏应用。 有关如何生成应用的信息，可对 SQL Server 应用 [Common Data Service for Apps 相关主题](data-platform-create-app.md)中介绍的准则。
+对于此示例，将基于名为 **[dbo].[Fruit]** 的 SQL Server 表自动生成一个三屏应用。 有关如何生成应用程序，可以应用中的类似做法准则也[有关 Common Data Service 的主题](data-platform-create-app.md)到 SQL Server。
 
 ![三屏幕应用](./media/delegation-overview/products-afd.png)
 

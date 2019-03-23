@@ -13,23 +13,23 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9b213484bf1412d808c3fa9599debd5c9e546a4e
-ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
+ms.openlocfilehash: 6968e15bbfdb16d3f5443c51065765069ae8867b
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330116"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357175"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>PowerApps 中的画布应用有哪些？
 在 Microsoft PowerApps 中通过画布设计和构建业务应用，无需以传统计算机语言（如 C#）编写代码。 通过将元素拖放到画布来设计应用，就像在 PowerPoint 中设计幻灯片一样。 创建用于指定逻辑和处理数据的 Excel 类表达式。 构建应用，这些应用可与[丰富多样的 Microsoft 和第三方源](connections-list.md)中的业务数据集成。 共享应用，以便用户可在浏览器或移动设备中运行；嵌入应用，以便用户可在 SharePoint、Power BI 或 Teams 中运行。
 
-如果不需要自定义设计，并且数据位于 Common Data Service (CDS) for Apps 中，则可从业务数据和流程自动生成模型驱动的应用。 此类型的应用可生成格式、视图和其他组件模型，并且默认 UI 将自动调整以适应手机、笔记本电脑和其他设备。 有关此类型应用的详细信息，请参阅[创建模型驱动的应用概述](../model-driven-apps/model-driven-app-overview.md)。
+如果您不需要自定义设计，并且你的数据位于 Common Data Service，您可以从业务数据和流程自动生成的模型驱动应用。 此类型的应用可生成格式、视图和其他组件模型，并且默认 UI 将自动调整以适应手机、笔记本电脑和其他设备。 有关此类型应用的详细信息，请参阅[创建模型驱动的应用概述](../model-driven-apps/model-driven-app-overview.md)。
 
 ## <a name="build-an-app"></a>生成的应用程序
 若要开始，请通过以下某个源或者其他源来自动生成应用：
 - [示例应用](open-and-run-a-sample-app.md)
 - [模板](get-started-test-drive.md)
-- [CDS for Apps](data-platform-create-app.md)
+- [Common Data Service](data-platform-create-app.md)
 - [SharePoint](app-from-sharepoint.md)
 - [Excel](get-started-create-from-data.md)
 
@@ -39,7 +39,7 @@ ms.locfileid: "58330116"
 
 自动生成应用后，基于用户工作流，自定义应用默认外观和行为。 例如，更改显示的数据类型、数据的排序方式甚至是用户指定数字的方法（直接键入数字或者调整滑块）。 添加并自定义[屏幕](add-screen-context-variables.md)、[库](customize-layout-sharepoint.md)、[格式](customize-forms-sharepoint.md)和其他控件。
 
-自动生成一个或两个应用并积累一定自定义经验后，就可以基于 [CDS for Apps](data-platform-create-app-scratch.md)[Excel](get-started-create-from-blank.md) 或其他数据源，从头开始创建应用了。 从头开始创建应用，不仅可以灵活地处理应用设计、流程和控件，还可以纳入各种数据源。
+已自动生成应用或两个并积累一定自定义经验后，从头开始创建应用程序基于[Common Data Service](data-platform-create-app-scratch.md)， [Excel](get-started-create-from-blank.md)，或另一个数据源。 从头开始创建应用，不仅可以灵活地处理应用设计、流程和控件，还可以纳入各种数据源。
 
 ## <a name="share-and-run-an-app"></a>共享和运行应用
 完成应用并将它保存到云中后，便可以[与组织中的其他人共享它](share-app.md)。 指定哪些用户或组可以运行应用，以及他们是否还能自定义应用并与组织中的其他人共享应用。

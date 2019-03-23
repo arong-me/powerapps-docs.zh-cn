@@ -1,6 +1,6 @@
 ---
-title: 从 Common Data Service for Apps 生成画布应用 | Microsoft Docs
-description: 在 PowerApps 中自动生成画布应用，用于管理 Common Data Service for Apps 中的数据
+title: 生成基于 Common Data Service 的画布应用 |Microsoft Docs
+description: 在 PowerApps 中，可以自动生成画布应用来管理 Common Data Service 中的数据
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -13,22 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1393d6dcdd9b88f4bca9e536a776b8601ae4c1c1
-ms.sourcegitcommit: 452d4ead948591d16aff144006ad84c957eba837
+ms.openlocfilehash: 38e2798ae60206ff0584254916e4f750096155e4
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "57801770"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356853"
 ---
-# <a name="generate-a-canvas-app-from-common-data-service-for-apps-in-powerapps"></a>在 PowerApps 中从 Common Data Service for Apps 生成画布应用
+# <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>从 PowerApps 中的 Common Data Service 生成画布应用
 
-在 PowerApps 中，基于 [Common Data Service (CDS) for Apps](../common-data-service/data-platform-intro.md) 中的示例帐户列表自动生成画布应用。 在此应用中，可以浏览所有帐户、显示单个帐户的详细信息以及创建、更新或删除帐户。
+在 PowerApps 中，自动生成画布应用中的示例帐户列表基于[Common Data Service](../common-data-service/data-platform-intro.md)。 在此应用中，可以浏览所有帐户、显示单个帐户的详细信息以及创建、更新或删除帐户。
 
 如果没有注册 PowerApps，请在开始使用之前先[免费注册](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 ## <a name="prerequisites"></a>先决条件
 
-若要遵循本快速入门中，您必须分配给[环境创建者](https://docs.microsoft.com/power-platform/admin/database-security.md#predefined-security-roles)安全角色，并且你必须[切换到环境](working-with-environments.md)的 CDS for Apps 中的数据库创建后，在包含数据，并允许更新。 如果不具备此环境但拥有管理权限，则可按此要求[创建环境](https://docs.microsoft.com/power-platform/admin/environments-administration.md#create-an-environment)。
+若要遵循本快速入门中，您必须分配给[环境创建者](https://docs.microsoft.com/power-platform/admin/database-security.md#predefined-security-roles)安全角色，并且你必须[切换到环境](working-with-environments.md)的 Common Data Service 中已创建了一个数据库，在包含数据，并允许更新。 如果不具备此环境但拥有管理权限，则可按此要求[创建环境](https://docs.microsoft.com/power-platform/admin/environments-administration.md#create-an-environment)。
 
 ## <a name="generate-an-app"></a>生成应用
 
@@ -64,7 +64,7 @@ ms.locfileid: "57801770"
 1. 在左边缘附近，选择“保存”，然后在左下角，选择“保存”。
 
 ## <a name="next-steps"></a>后续步骤
-本快速入门创建了一个应用，可管理 CDS for Apps 中帐户的相关示例数据。 下一步将自定义库和默认浏览屏幕的其他元素，以更好地满足需求。
+在本快速入门，创建了一个应用来管理 Common Data Service 中的帐户的相关示例数据。 下一步将自定义库和默认浏览屏幕的其他元素，以更好地满足需求。
 
 > [!div class="nextstepaction"]
 > [自定义库](customize-layout-sharepoint.md)。

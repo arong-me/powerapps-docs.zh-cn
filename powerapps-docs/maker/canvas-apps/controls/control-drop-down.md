@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 09e139353e500ad27650628a844bc01264eab3d0
-ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.openlocfilehash: 2283f77f7e1c09ceade63f96003fefabc5e92539
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54308377"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357635"
 ---
 # <a name="drop-down-control-in-powerapps"></a>PowerApps 中的下拉列表控件
 一个列表，在用户不将其打开的情况下，该表仅显示第一项。
@@ -133,7 +133,7 @@ Value - 要在控件中显示的数据列（例如，如果数据源具有多列
 1. 在按 Alt 键的同时选择控件的向下箭头，以便显示列表中的项目。
 
 ### <a name="list-from-a-data-source"></a>来自数据源的列表
-此过程中的原则适用于[提供表的任何数据源](../connections-list.md#tables)，但为了准确地执行这些步骤，你必须打开一个环境，为其创建了 Common Data Service for Apps 数据库并添加了示例数据。
+在此过程中的原则应用于任何[提供表的数据源](../connections-list.md#tables)但若要完全遵循以下步骤，必须打开 Common Data Service 数据库已创建和示例数据添加为其环境。
 
 1. [打开空白应用](../data-platform-create-app-scratch.md#open-a-blank-app)，然后[指定 Accounts 实体](../data-platform-create-app-scratch.md#specify-an-entity)。
 

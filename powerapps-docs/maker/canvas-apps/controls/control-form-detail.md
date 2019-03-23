@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 194da16a1025daa84c658ae8884734a08780c6c1
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.openlocfilehash: 4d7b21286f793aefdcc66a3dcbb027ab8f9ac4e7
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57802046"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356830"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>PowerApps 中的编辑窗体和显示窗体控件
 在数据源中显示、编辑和创建记录。
@@ -33,7 +33,7 @@ ms.locfileid: "57802046"
 ### <a name="record-selection"></a>选择记录
 不管哪一类型的窗体，均可将其“DataSource”属性设置为一个记录表，并可将窗体的“Item”属性设置为显示该表中的特定记录。 例如，可将窗体的“Item”属性设置为[库](control-gallery.md)控件的“SelectedItem”属性。 当用户选择库中的某个记录时，同样的记录就会显示在窗体中，只不过该窗体可以显示更多字段。 如果用户返回到库，然后选择另一记录，则库的“SelectedItem”属性会更改。 该更改会更新窗体的“Item”属性，然后窗体就会显示新选择的记录。
 
-此外，你还可以使用下拉控件设置窗体的“Item”属性，如[显示、编辑或添加记录](../add-form.md)中所述，或者添加 Lookup 或 First 等函数。 例如，你可以将“Item”属性设置为这些公式中的任何一个，以在 Common Data Service for Apps 的“Accounts”实体中显示 Fabrikam 条目：
+此外，你还可以使用下拉控件设置窗体的“Item”属性，如[显示、编辑或添加记录](../add-form.md)中所述，或者添加 Lookup 或 First 等函数。 例如，可以设置**项**属性设置为以下公式显示中的 Fabrikam 条目之一**帐户**Common Data Service 中的实体：
 
 ```First(Accounts)```
 

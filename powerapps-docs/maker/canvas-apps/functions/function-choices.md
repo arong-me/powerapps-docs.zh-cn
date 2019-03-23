@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 531a614493ef739acd7be71f396dfc2f7e1ada1c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 77268aa63ed49d10f825850909d31ec4feace063
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42832787"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357589"
 ---
 # <a name="choices-function-in-powerapps"></a>PowerApps 中的 Choices 函数
 返回查找列可能值的表。
@@ -38,7 +38,7 @@ Choices 不要求列名称为字符串且括在双引号中，这一点与 [**Sh
 
 列引用必须直接连接到数据源。 例如，如果数据源是 Accounts 而查找是 SLA，则列引用是 Accounts.SLA。 引用不能通过函数、变量或控件传递。 深化此示例，如果 Accounts 馈送给 Gallery 控件，则使用公式 Gallery.Selected.SLA 引用所选帐户的 SLA。 但是，此引用通过了一个控件，因此它不能传递给 Columns 函数，即仍必须使用 Accounts.SLA。
 
-目前，只能将查找列用于 SharePoint 和 Common Data Service for Apps。
+在此期间，可以只使用 SharePoint 和 Common Data Service 中使用查找列。
 
 ## <a name="syntax"></a>语法
 **Choices**( *column-reference* )
@@ -49,11 +49,11 @@ Choices 不要求列名称为字符串且括在双引号中，这一点与 [**Sh
 
 #### <a name="choices-for-a-lookup"></a>查找的选项
 
-1. 在 Common Data Service for Apps 中[创建数据库](../../../administrator/create-database.md)，并选中“包括示例应用和数据”框。
+1. [创建数据库](../../../administrator/create-database.md)通用数据服务，然后选择**包括示例应用和数据**框。
 
     将会创建多个实体，例如 Accounts。
 
-    注意：实体名称在 web.powerapps.com 上为单数形式，在 PowerApps Studio 中为复数形式。
+    **注意**：在 web.powerapps.com 上单数和复数在 PowerApps Studio 中，实体名称。
 
     ![来自 Commmon Data Service for Apps 中 Account 实体的字段的部分列表，突出显示了“Primary Contact”是查找字段](media/function-choices/entity-account.png)
 
