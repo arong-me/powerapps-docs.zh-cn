@@ -1,6 +1,6 @@
 ---
-title: 开发人员：面向应用程序的 Common Data Service 的插件和工作流开发最佳做法及指南 | Microsoft Docs
-description: PowerApps 中针对面向应用程序的 Common Data Service 的开发人员的插件和工作流开发最佳做法及指南。
+title: 开发人员：在 Common Data Service 中进行插件和工作流开发的最佳做法和指南 | Microsoft Docs
+description: 面向 PowerApps 中 Common Data Service 开发人员的插件和工作流开发最佳做法和指南。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,20 +16,14 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: 87e7337a4bf62a10647edfd9b6c17bce0a0903bf
-ms.sourcegitcommit: 72c97378e96fb54e5d92ec087a59dd0fb1444f99
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54334008"
+  - PowerApps
+  - D365CE
 ---
-# <a name="best-practices-and-guidance-regarding-plug-in-and-workflow-development-for-the-common-data-service-for-apps"></a>面向应用程序的 Common Data Service 的插件和工作流开发最佳做法及指南
+# <a name="best-practices-and-guidance-regarding-plug-in-and-workflow-development-for-the-common-data-service"></a>在 Common Data Service 中进行插件和工作流开发的最佳做法和指南
 
-下表中包含面向应用程序的 Common Data Service 中插件和工作流开发的所有指南及最佳做法。
+下表包含所有关于在 Common Data Service 中进行插件和工作流开发的指南和最佳做法。
 
 |最佳做法  |描述  |
 |---------|---------|

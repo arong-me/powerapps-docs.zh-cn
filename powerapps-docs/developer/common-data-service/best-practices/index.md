@@ -1,6 +1,6 @@
 ---
-title: 开发人员：面向应用程序的 Common Data Service 的最佳做法及指南 | Microsoft Docs
-description: PowerApps 中针对面向应用程序的 Common Data Service 的开发人员最佳做法及指南。
+title: 开发人员：Common Data Service 最佳做法和指南 | Microsoft Docs
+description: 面向 PowerApps 中 Common Data Service 开发人员的最佳做法和指南。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,20 +16,15 @@ ms.workload: na
 ms.date: 01/07/2019
 ms.author: jowells
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: bf449f801e4e7617e7fe91d0884b3443559e71c6
-ms.sourcegitcommit: 11486fb4c16095e3fef785126003cac3e3e06c0d
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54271315"
+  - PowerApps
+  - D365CE
 ---
-# <a name="best-practices-and-guidance-for-the-common-data-service-for-apps"></a>面向应用程序的 Common Data Service 的最佳做法及指南
 
-面向应用程序的 Common Data Service (CDS) 是一种可扩展的框架，可让开发人员构建可高度定制和自定义的体验。 在自定义、扩展面向应用程序的 Common Data Service (CDS) 或与之集成时，开发人员应了解既有指南和最佳做法。 
+# <a name="best-practices-and-guidance-for-the-common-data-service"></a>Common Data Service 最佳做法和指南
+
+Common Data Service 是一种可扩展框架，可便于开发人员生成可高度自定义的量身定制体验。 在自定义、扩展 Common Data Service 或与之集成时，开发人员应注意遵循已制定的指南和最佳做法。 
 
 在本部分中，你将学习到我们已确定的问题及其影响，并了解其解决指南。 我们将介绍为何应按特定方式实时操作的原因，同时避免未来的潜在问题。 这可提升你的环境的可用性、可支持性和性能。 本指南文档对开发人员和管理指南中的既有信息进行强化补充。
 
@@ -37,8 +32,8 @@ ms.locfileid: "54271315"
 本文档针对以下自定义类型：
 
 - 自定义工作流活动和插件
-- 使用 CDS 数据
-- 可扩展面向应用程序的 Common Data Service 的集成
+- 处理 Common Data Service 数据
+- 可扩展 Common Data Service 的集成
 
 # <a name="sections"></a>章节
 每篇指南文档包含下面的全部或部分章节：

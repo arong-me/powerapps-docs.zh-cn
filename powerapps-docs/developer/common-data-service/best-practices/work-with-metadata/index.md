@@ -1,6 +1,6 @@
 ---
-title: 开发人员：在处理面向应用程序的 Common Data Service 元数据时的最佳做法和指南 | Microsoft Docs
-description: 在 PowerApps 中针对面向应用程序的 Common Data Service 的开发人员处理元数据时的最佳做法和指南。
+title: 开发人员：Common Data Service 元数据处理最佳做法和指南 | Microsoft Docs
+description: 面向 PowerApps 中 Common Data Service 开发人员的元数据处理最佳做法和指南。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,20 +16,15 @@ ms.workload: na
 ms.date: 12/12/2018
 ms.author: jowells
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: 938d3ea2337137b1c78a1f4849191a261ac7a30a
-ms.sourcegitcommit: 11486fb4c16095e3fef785126003cac3e3e06c0d
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54271316"
+  - PowerApps
+  - D365CE
 ---
-# <a name="best-practices-and-guidance-while-working-with-metadata-for-the-common-data-service-for-apps"></a>在处理面向应用程序的 Common Data Service 元数据时的最佳做法和指南
 
-下表中包含在面向应用程序的 Common Data Service 中处理元数据和与之交互时的所有相关指南和最佳做法。
+# <a name="best-practices-and-guidance-while-working-with-metadata-for-the-common-data-service"></a>Common Data Service 元数据处理最佳做法和指南
+
+下表包含所有关于在 Common Data Service 中处理和集成元数据的指南和最佳做法。
 
 
 |最佳做法  |描述  |
