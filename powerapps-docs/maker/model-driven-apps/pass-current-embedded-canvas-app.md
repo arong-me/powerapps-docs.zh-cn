@@ -79,7 +79,7 @@ search.app:
 本主题说明了如何开始在模型驱动窗体中嵌入区域应用。 您可以进一步自定义嵌入的区域应用以连接和引入来自各种数据源的数据。 使用筛选、搜索和查找功能以及从主机模型驱动窗体传入的上下文来筛选或查找那些数据源中的特定记录。 使用 WYSIWYG 区域应用编辑器轻松设计界面以满足您的要求。
 
 ## <a name="see-also"></a>另请参阅
-[在模型驱动的窗体中嵌入区域应用](embed-canvas-app-in-form.md) <br />
+[在模型驱动的窗体上嵌入区域应用](embed-canvas-app-in-form.md) <br />
 [将一列相关记录作为数据上下文传递到嵌入式区域应用](pass-related-embedded-canvas-app.md) <br />
 [共享嵌入式区域应用](share-embedded-canvas-app.md) <br />
 [嵌入式区域应用使用指南](embedded-canvas-app-guidelines.md)

@@ -1,7 +1,7 @@
 ---
 title: 在模型驱动的窗体上嵌入区域应用 | MicrosoftDocs
 ms.custom: ''
-ms.date: 12/10/2018
+ms.date: 12/17/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -30,24 +30,28 @@ search.app:
 
 > [!NOTE]
 > 此功能现在还在预览中。 <br />
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
+> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)] <br /><br />
 
 通过嵌入式区域应用，制作者可以在模型驱动的窗体上利用区域应用。 可使用嵌入式区域应用在窗体上轻松创建丰富的视觉区域，以及在来自 Common Data Service 的数据旁边显示各种来源的数据。
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/embed-canvas-app-in-form.png "模型驱动的应用窗体中的嵌入式区域应用")
+   > ![模型驱动的应用窗体中的嵌入式区域应用](media/embed-canvas-app-in-form.png "模型驱动的应用窗体中的嵌入式区域应用")
 
 区域应用嵌入模型驱动的窗体中的方式与添加其他自定义控件的方式相同。 嵌入式区域应用中包含丰富的数据集成功能，可以将上下文数据从主机模型驱动的窗体导入到嵌入式区域应用。
 
 在模型驱动的窗体中嵌入区域应用的步骤基于希望主机模型驱动的窗体向嵌入式区域应用提供的数据上下文。
--   将当前记录作为数据上下文传递。 详细信息：[使用嵌入式区域应用将当前记录作为数据上下文传递](pass-current-embedded-canvas-app.md)
--   将一列与当前记录有关的记录作为数据上下文传递。 详细信息：[使用嵌入式区域应用将相关记录列表作为数据上下文传递](pass-related-embedded-canvas-app.md) 
+-   将当前记录作为数据上下文传递。 详细信息：[将当前记录作为数据上下文传递到嵌入式区域应用](pass-current-embedded-canvas-app.md)
+-   将一列与当前记录有关的记录作为数据上下文传递。 详细信息：[将相关记录列表作为数据上下文传递到嵌入式区域应用](pass-related-embedded-canvas-app.md) 
 
-<!-- After you have added an embedded canvas app to your model-driven form, learn how to share your embedded canvas app with other users (LINK TO ARTICLE #4).  -->
+将嵌入式区域应用添加到模型驱动的窗体之后，了解如何与其他用户共享嵌入式区域应用。 详细信息：[共享嵌入式区域应用](share-embedded-canvas-app.md)。
 
-<!-- For things to keep in mind when working with embedded canvas apps and to help troubleshoot any issues you might encounter, see (LINK TO ARTICLE #5). -->
+有关使用嵌入式区域应用的指南和有助于诊断可能遇到的任何问题的提示，请参阅：[嵌入式区域应用使用指南](embedded-canvas-app-guidelines.md)。
 
 ## <a name="see-also"></a>另请参阅
 [PowerApps 中的区域应用是什么？](../canvas-apps/getting-started.md) <br />
 [在 PowerApps 中添加和配置区域应用控件](../canvas-apps/add-configure-controls.md) <br />
-[适用于 PowerApps 的区域应用连接器概述](../canvas-apps/connections-list.md) 
+[适用于 PowerApps 的区域应用连接器概述](../canvas-apps/connections-list.md) <br />
+[将当前记录作为数据上下文传递到嵌入式区域应用](pass-current-embedded-canvas-app.md) <br />
+[将一列相关记录作为数据上下文传递到嵌入式区域应用](pass-related-embedded-canvas-app.md) <br />
+[共享嵌入式区域应用](share-embedded-canvas-app.md) <br />
+[嵌入式区域应用使用指南](embedded-canvas-app-guidelines.md)

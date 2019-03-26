@@ -92,7 +92,7 @@ search.app:
 |CC_Timeline_URL|映射为显示每个时间表项 URL 的 URL 字段。|  
 |CC_Timeline_URL_Desc|URL 字段的说明。|  
 |CC_Timeline_ThumbnailURL|映射对每个项目显示的图像/图标的缩略图的字段。|  
-|CC_Timeline_ThumnailURL_Desc|`ThumbnailURL` 字段的说明。|  
+|CC_Timeline_ThumbnailURL_Desc|`ThumbnailURL` 字段的说明。|  
 |CC_Timeline_Filter|映射时间表筛选器的字段。|  
 |CC_Timeline_Filter_Desc|筛选器的说明。|  
 |CC_Timeline_Footer|显示为时间表页脚的 Web 资源。|  

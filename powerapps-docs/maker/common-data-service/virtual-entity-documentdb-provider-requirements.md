@@ -2,7 +2,7 @@
 title: 预览功能：通过面向应用程序的 Common Data Service 使用 Azure Cosmos DB for SQL API 数据提供程序 | MicrosoftDocs
 description: 了解如何配置 Azure Cosmos DB for SQL API 数据提供程序以与虚拟实体结合使用。
 keywords: SQL API
-ms.date: 06/27/2018
+ms.date: 02/15/2019
 ms.service: crm-online
 ms.custom: null
 ms.topic: article
@@ -94,7 +94,7 @@ SQL 查询筛选支持以下运算符。
     |字段|说明|
     |--|--|
     |**名称**|键入用于描述数据源的名称。|
-    |**集合名称**|包含您要在虚拟实体中显示的数据的 Azure Cosmos DB 数据库集合的 ID。  |
+    |**集合名称**|包含您要在虚拟实体中显示的集合的 Azure Cosmos DB *数据库*的名称。  |
     |**授权密钥**|Azure Cosmos DB 帐户的主要密钥或辅助密钥。 您可以从您的 Azure Cosmos DB 帐户下**密钥**设置下的 Azure 管理门户找到密钥。|
     |**Uri**|Azure Cosmos DB 集合所在的资源组的 URI。 URI 的格式类似于 `https://contoso/documents.azure.com:443`。 您可以从您的 Azure Cosmos DB 帐户下**密钥**设置下的 Azure 管理门户找到 URI。 |
     |**超时(以秒为单位)**|输入数据请求超时前等待 Azure Cosmos DB 服务响应的秒数。例如，输入 30 将最多等待 30 秒才超时。 默认超时为 120 秒。|

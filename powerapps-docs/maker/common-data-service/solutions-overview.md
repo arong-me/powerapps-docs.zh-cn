@@ -2,9 +2,9 @@
 title: 在 PowerApps 中处理解决方案 | MicrosoftDocs
 description: 了解如何分发解决方案
 ms.custom: ''
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,18 +23,17 @@ search.app:
   - PowerApps
   - D365CE
 ---
-
-<a name="BKMK_Solutions"></a>   
+   
 # <a name="solutions-overview"></a>解决方案概述  
 
   在 PowerApps 中，解决方案被用来将应用和组件从一个环境传输到另一个环境，或将一组自定义项应用到现有应用。 解决方案可以包含一个或多个应用以及其他组件，如实体、选项集等。您可以从 [AppSource](https://appsource.microsoft.com/) 或从独立软件供应商 (ISV) 获取解决方案。
   
-详细信息：[白皮书：解决方案生成器的模式和原理](http://go.microsoft.com/fwlink/p/?LinkID=533946)  
+详细信息：[白皮书：解决方案生命周期管理](https://www.microsoft.com/en-us/download/details.aspx?id=57777)  
   
 > [!NOTE]
 >  如果您是创建要分发的应用的 ISV，则需要使用解决方案。 有关使用解决方案的详细信息，请参阅[使用解决方案打包和分发扩展](https://msdn.microsoft.com/library/gg334530.aspx)。  
   
- 如果您创建 PowerApps 应用程序只是供组织使用或用于自定义 Dynamics 365，以下是您需要了解的解决方案知识：  
+ 如果您创建 PowerApps 应用是供组织使用或用于自定义 Dynamics 365 for Customer Engagement 应用，以下是您需要了解的解决方案知识：  
   
 -   创建解决方案是可选的。 您可以在 PowerApps 环境中直接生成或自定义应用程序，而无需创建解决方案。  
   

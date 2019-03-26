@@ -1,12 +1,12 @@
 ---
-title: 使用 PowerApps 创建包含组件的自定义实体的教程 | Microsoft Docs
-description: 包含创建和配置实体以使用 PowerApps 应用程序的分步说明的教程。
+title: 使用 PowerApps 创建包含组件的自定义实体 | Microsoft Docs
+description: 包含创建和配置实体以使用 PowerApps 应用的分步说明的主题。
 author: Mattp123
 manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: tutorial
-ms.date: 06/22/2018
+ms.date: 01/23/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -15,11 +15,11 @@ search.app:
   - D365CE
 ---
 
-# <a name="tutorial-create-a-custom-entity-that-has-components-in-powerapps"></a>教程：在 PowerApps 中创建包含组件的自定义实体
+# <a name="create-a-custom-entity-that-has-components-in-powerapps"></a>在 PowerApps 中创建包含组件的自定义实体
 
-使用 PowerApps，您可以定制您的应用程序使之适合您组织的行业、命名法和特定业务过程。 PowerApps 应用程序开发包括添加现成的标准实体或创建自定义实体。 实体定义您要以记录形式跟踪的信息，通常包括公司名称、地点、产品、电子邮件和电话等属性。 
+使用 PowerApps，您可以定制您的应用程序使之适合您组织的行业、命名法和特定业务过程。 PowerApps 应用开发包括添加“现成”的标准实体或创建自定义实体。 实体定义您要以记录形式跟踪的信息，通常包括公司名称、地点、产品、电子邮件和电话等属性。 
 
-在本教程中，您创建实体，然后添加或自定义关键组件（如字段、关系、视图和窗体）。 您了解如何：
+在本主题中，您创建实体，然后添加或自定义关键组件（如字段、关系、视图和窗体）。 您了解如何：
 
 - 创建自定义实体。
 - 向您的实体添加自定义字段
@@ -27,7 +27,7 @@ search.app:
 - 自定义视图 
 - 自定义窗体
 
-本教程将以公司 Contoso 为例，这是一家打理狗和猫造型的宠物美容公司。 Contoso 需要一个可由员工跨各种设备使用的客户和宠物跟踪应用程序。
+本主题将以公司 Contoso 为例，这是一家打理狗和猫造型的宠物美容公司。 Contoso 需要一个可由员工跨各种设备使用的客户和宠物跟踪应用程序。
 
 ## <a name="prerequisites"></a>必备条件 
 
@@ -117,17 +117,16 @@ search.app:
 
 如果您要在画布应用程序中使用“宠物”实体，请跳过此步骤。 
 
-1. 在 PowerApps 的左侧导航窗格中，选择**模型驱动**。
-2. 在左侧导航窗格上，展开**数据**，选择**实体**，然后选择**宠物**。
-3. 选择**窗体**选项卡，然后选择**主**窗体类型旁边的**信息**以打开窗体编辑器。
+1. 在左侧导航窗格上，展开**数据**，选择**实体**，然后选择**宠物**。
+2. 选择**窗体**选项卡，然后选择**主**窗体类型旁边的**信息**以打开窗体编辑器。
     > [!div class="mx-imgBorder"] 
     > ![编辑主窗体](media/create-custom-entity/main-form-edit.png)
-4. 在窗体编辑器中，将位于“字段资源管理器”窗格上的**种类**、**品种**、**预约日期**和**客户**字段拖放到窗体画布的“常规”部分，直到窗体如下所示。
+3. 在窗体编辑器中，将位于“字段资源管理器”窗格上的**种类**、**品种**、**预约日期**和**客户**字段拖放到窗体画布的“常规”部分，直到窗体如下所示。
     > [!div class="mx-imgBorder"] 
     > ![选择主窗体的字段](media/create-custom-entity/main-form-edit2.png) 
-5. 选择**保存**。
-6. 选择**发布**。
-7. 选择**保存并关闭**以关闭窗体设计器。
+4. 选择**保存**。
+5. 选择**发布**。
+6. 选择**保存并关闭**以关闭窗体设计器。
 
 ## <a name="add-the-custom-entity-to-an-app"></a>将自定义实体添加到应用程序
 
@@ -135,6 +134,6 @@ search.app:
 
 ## <a name="next-steps"></a>后续步骤
 
-在本教程中，您了解了如何创建可用于创建有用应用程序的实体。 
+在本主题中，您了解了如何创建可用于创建有用应用的实体。 
 - 若要了解如何创建模型驱动应用程序，请参阅[构建您的第一个模型驱动应用程序](../model-driven-apps/build-first-model-driven-app.md)。
 - 若要了解如何创建画布应用程序，请参阅[从头创建应用程序](../canvas-apps/get-started-create-from-blank.md)。

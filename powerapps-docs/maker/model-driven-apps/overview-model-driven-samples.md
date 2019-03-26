@@ -2,14 +2,14 @@
 title: 模型驱动示例应用程序
 description: 了解如何获取、自定义和删除模型驱动示例应用程序。
 documentationcenter: na
-author: caburk
+author: mr-dang-msft
 manager: kvivek
 ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
 ms.date: 03/08/2018
-ms.author: caburk
+ms.author: brdang
 search.audienceType:
   - maker
 search.app:

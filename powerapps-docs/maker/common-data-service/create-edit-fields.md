@@ -1,7 +1,7 @@
 ---
 title: 如何创建和编辑面向应用程序的 Common Data Service 的字段 | MicrosoftDocs
 ms.custom: ''
-ms.date: 05/18/2018
+ms.date: 02/08/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -14,7 +14,7 @@ applies_to:
 ms.assetid: d88677fa-2caf-47b0-aec6-10a25a7ec9c3
 caps.latest.revision: 55
 ms.author: matp
-manager: brycho
+manager: kvivek
 search.audienceType:
   - maker
 search.app:
@@ -43,18 +43,27 @@ search.app:
 
 本主题中的信息将帮助您选择可以使用的设计器。 
 
-您应使用 PowerApps 门户来创建和编辑面向应用程序的 Common Data Service 的字段，除非您需要满足下列任意一项要求：
+您应使用 PowerApps 门户来创建和编辑面向应用的 Common Data Service 的字段，除非您需要满足下列任意一项要求：
 
-- 创建客户查找字段
-- 在 CDS 默认解决方案以外的解决方案中创建字段
-- 定义状态描述转换
-- 一次编辑多个字段
-- 启用审核
-- 启用字段级安全性
-- 选择字段是否显示在交互式体验的全局筛选器中
-- 选择字段是否可在交互式体验仪表板中排序
-- 将字段需求级别设置为“业务建议”
-- 设置字段的托管属性
+- 创建客户查找字段。 
+   - 详细信息：[不同的查找类型](types-of-fields.md#different-types-of-lookups)
+- 在 CDS 默认解决方案以外的解决方案中创建字段。 
+   - 详细信息：[解决方案概述](solutions-overview.md)
+- 定义状态描述转换。 
+   - 详细信息：[为案例或自定义实体定义状态描述转换](define-status-reason-transitions.md)
+- 一次编辑多个字段。
+- 启用审核。 
+   - 详细信息：[审核概述](../../developer/common-data-service/auditing-overview.md)
+- 启用字段级安全性。 
+   - 详细信息：[字段安全性实体](../../developer/common-data-service/field-security-entities.md)
+- 选择字段是否显示在交互式体验的全局筛选器中。 
+   - 详细信息：[配置模型驱动应用交互式体验仪表板](../model-driven-apps/configure-interactive-experience-dashboards.md)
+- 选择字段是否可在交互式体验仪表板中排序。 
+   - 详细信息：[配置模型驱动应用交互式体验仪表板](../model-driven-apps/configure-interactive-experience-dashboards.md)
+- 将字段需求级别设置为“业务建议”。 
+   - 详细信息：[创建业务规则和建议以在模型驱动应用程序窗体中应用逻辑](../model-driven-apps/create-business-rules-recommendations-apply-logic-form.md)
+- 设置字段的托管属性。 
+   - 详细信息：[设置字段的托管属性](set-managed-properties-for-field.md)
 
 > [!NOTE]
 > 您可以在 PowerApps 门户或解决方案资源管理器中通过在实体上创建一对多关系来创建“查找”字段。 但是仅解决方案资源管理器在创建字段时提供创建此关系的选项。

@@ -1,13 +1,13 @@
 ---
 title: 创建 PowerBI 报表 | Microsoft Docs
 description: 使用面向应用程序的 Common Data Service 连接器从 PowerBI Desktop 连接到您的数据。
-author: clwesene
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -85,7 +85,7 @@ search.app:
 * ApprovalStatus - 这将显示您的选项集中每个项目的唯一整数值，这在应用筛选器以使它们在您未来对显示名称进行更改时不会受影响时提供帮助。
 * ApprovalStatus_display - 这将显示项目的友好显示名称，最常用于在表或图表中呈现选项时。
 
-    |ApproalStatus|ApprovalStatus_Display|
+    |ApprovalStatus|ApprovalStatus_Display|
     |---------|---------|
     1|已提交
     2|审核中

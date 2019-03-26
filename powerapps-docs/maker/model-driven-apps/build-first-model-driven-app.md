@@ -10,7 +10,7 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 10/15/2018
+ms.date: 02/05/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -35,15 +35,18 @@ search.app:
   > [!IMPORTANT]
   > 如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。   
 
-2. 在**主页**页面中，为模型驱动的应用程序选择**从空白开始**选项。
-![从-blank_model 开始](media/build-first-model-driven-app/start-from-blank-model-driven.png)
+2. 在**主页**页面，选择**从头开始制作模型驱动应用**。
+<!-- ![Start-from-blank_model](media/build-first-model-driven-app/start-from-blank-model-driven.png) -->
 
 3.  在**创建新应用程序**页面，输入以下详细信息，然后选择**完成**： 
-  - **名称**：输入应用程序的名称，如 *Myfirstapp*。 
+  - **名称**：输入应用的名称，如 *My first app*。 
+  - **唯一名称**：默认情况下，唯一名称使用您在**名称**框中指定的名称，无空格，前面加发布商前缀和下划线 (_)。 例如，*crecf_Myfirstapp*。 详细信息：[更改解决方案发布商前缀](../common-data-service/change-solution-publisher-prefix.md)
   - **描述**：键入应用程序是什么或做什么的简短描述，如*这是我的第一个应用程序*。
-有关其他应用程序属性的信息，请参阅[创建应用程序](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-app#create-an-app)。
- 
-    ![Create-new-app](media/build-first-model-driven-app/create-new-app.png)
+有关其他应用程序属性的信息，请参阅[创建应用程序](create-edit-app.md#create-an-app)。
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/create-new-app.png "创新一个新应用") 
+
 
 ## <a name="add-components-to-your-app"></a>将组件添加到应用程序
 从应用程序设计器，将组件添加到您的应用程序。

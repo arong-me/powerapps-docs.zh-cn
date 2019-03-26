@@ -1,13 +1,13 @@
 ---
 title: 使用查找字段创建实体之间的关系 | Microsoft Docs
 description: 如何使用查找字段在 PowerApps 中创建实体之间的关系的分步说明。
-author: clwesene
-manager: kfile
+author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
-ms.date: 03/21/2018
-ms.author: clwesene
+ms.date: 02/21/2019
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -86,6 +86,9 @@ search.app:
 
 ## <a name="use-a-lookup-field-in-an-app"></a>在应用程序中使用查找字段
 如果从包含查找字段的实体[自动创建应用程序](../canvas-apps/data-platform-create-app.md)，它将显示为包含来自实体的**主要名称**字段的数据的**下拉**控件。
+
+## <a name="add-1n-and-nn-relationships-for-canvas-apps"></a>为区域应用添加 1:N 和 N:N 关系
+在面向应用的 Common Data Service (CDS) 中使用**关联**功能通过一对多或多对多关系链接两个记录。 详细信息：[PowerApps 中的关联和取消关联功能](../canvas-apps/functions/function-relate-unrelate.md)
 
 ## <a name="next-steps"></a>后续步骤
 * [使用 Common Data Service 数据库生成应用程序](../canvas-apps/data-platform-create-app.md)

@@ -1,7 +1,7 @@
 ---
 title: 更改颜色方案或添加徽标以匹配您组织的品牌 | MicrosoftDocs
 ms.custom: ''
-ms.date: 06/18/2018
+ms.date: 02/19/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -50,7 +50,7 @@ search.app:
   
 -   鼠标悬停链接的效果  
   
--   处理控件颜色  
+-   旧版主题色（流程控件的主背景）  
   
 -   默认实体颜色  
   

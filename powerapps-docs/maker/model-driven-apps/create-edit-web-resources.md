@@ -135,5 +135,5 @@ Web 资源的应用程序中提供的文本编辑器只能用于简单的文本�
 
 [Web 资源属性](web-resource-properties-legacy.md) <br /> 
 [创建和设计窗体](create-design-forms.md) <br />
-[了解模型驱动应用程序组件](model-driven-app-components.md) <br /> 
-[开发人员：Customer Engagement 的 Web 资源](/dynamics365/customer-engagement/developer/web-resources)
+[了解模型驱动的应用程序组件](model-driven-app-components.md) <br /> 
+[开发人员文档：Customer Engagement 的 Web 资源](/dynamics365/customer-engagement/developer/web-resources)

@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中定义模型驱动应用程序的数据 | MicrosoftDocs
+title: 在 PowerApps 中定义模型驱动应用的数据 | MicrosoftDocs
 description: 了解如何定义模型驱动应用程序的数据
 Keywords: 'data, entity, fields, relationship, attributes, model-driven app'
 author: Mattp123

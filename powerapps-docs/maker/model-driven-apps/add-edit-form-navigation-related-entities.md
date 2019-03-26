@@ -1,6 +1,6 @@
 ---
 title: 在 PowerApps 中为相关实体添加模型驱动的应用程序窗体导航 | MicrosoftDocs
-descriptoin: Learn how to add form navigation for related entities
+description: 了解如何为相关实体添加窗体导航
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''

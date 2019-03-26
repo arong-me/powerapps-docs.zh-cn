@@ -2,7 +2,7 @@
 title: 在 PowerApps 中创建或编辑模型驱动应用程序的快速创建窗体 | MicrosoftDocs
 description: 了解如何创建或编辑快速创建窗体
 ms.custom: ''
-ms.date: 10/15/2018
+ms.date: 01/25/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -49,7 +49,8 @@ search.app:
  虽然您可以定义多个快速创建窗体，但每个人都可以使用的快速创建窗体只有一个。 每个人都将使用的窗体是使用窗体顺序设置的。 不能向快速创建窗体分派安全角色，它们不提供用户切换窗体的功能。  
   
 > [!NOTE]
->  实体必须为要显示的快速创建窗体启用**允许快速创建**选项。 
+>  - 实体必须为要显示的快速创建窗体启用**允许快速创建**选项。 
+>  - 某些字段（如 CREATEDON 字段）不能添加到快速创建窗体。  
   
 ### <a name="how-to-create-a-quick-create-form"></a>如何创建快速创建窗体  
   
