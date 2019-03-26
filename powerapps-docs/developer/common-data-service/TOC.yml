@@ -1,10 +1,10 @@
 items:
-- name: Common Data Service for Apps
+- name: Common Data Service
   href: ../../maker/common-data-service/data-platform-intro.md
 - name: 开发人员概述
   href: overview.md
 - name: 入门
-  href: get-started-CDS-developers.md
+  href: get-started-cds-developers.md
   items:
   - name: 支持的自定义项
     href: supported-customizations.md
@@ -174,7 +174,7 @@ items:
       href: register-web-hook.md
     - name: 测试 Webhook 注册
       href: test-webhook-registration.md
-- name: 使用面向应用程序的 CDS 实体
+- name: 使用 Common Data Service 实体
   href: entities.md
   items:
   - name: 客户实体
@@ -415,9 +415,9 @@ items:
     href: solution-component-file-reference-solutionpackager.md
   - name: FetchXML 架构
     href: fetchxml-schema.md
-ms.openlocfilehash: 036e92f1578877cc9b7bdc90742cc5436bf5897e
-ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
+ms.openlocfilehash: 3a162e476d0d3c9c4935d185b9e3942c86960edd
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330185"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357037"
