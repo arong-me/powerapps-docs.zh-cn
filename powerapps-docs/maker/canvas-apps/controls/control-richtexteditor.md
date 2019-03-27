@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 99c07c0561b4942e6cbbd49fa5c498d90b502d7e
-ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
+ms.openlocfilehash: 3174d959a2360b36e82cd7070c4401251ca9fe18
+ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "58073274"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58491575"
 ---
 # <a name="rich-text-editor-control-in-powerapps"></a>在 PowerApps 中的多格式文本编辑器控件
 允许最终用户设置 WYSIWYG 编辑区域内的文本的格式。  输出格式为 HTML。
@@ -62,3 +62,14 @@ ms.locfileid: "58073274"
 [X](properties-size-location.md) – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 [Y](properties-size-location.md) – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+### <a name="screen-reader-support"></a>屏幕阅读器支持
+* **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
+
+### <a name="keyboard-support"></a>键盘支持
+* **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+
+> [!TIP]
+> 使用**Alt + 0**焦点位于编辑器若要了解有关其他键盘快捷方式。

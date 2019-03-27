@@ -13,20 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 32b8ee57869ea733050c3f23f9c9e81f60e3d78d
-ms.sourcegitcommit: 66fd1129ad25b72556f11a08350ba95f2ba060dd
+ms.openlocfilehash: 5d20e2324f2efb4f866ed4fc183f289733c10a41
+ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57804369"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58491656"
 ---
 # <a name="timer-control-in-powerapps"></a>PowerApps 中的计时器控件
 一个控件，可确定特定时间后应用的响应方式。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 例如，计时器可确定控件显示的时长，或在经过特定时间后更改控件的其他属性。
 
-请注意，必须先预览应用，然后计时器才能在设计器中运行。  这样一来，用户可以在设计器中配置计时器，不受任何时间限制。
+> [!NOTE]
+> 在 PowerApps Studio 计时器只在预览模式下运行。
+
 
 ## <a name="key-properties"></a>关键属性
 **Duration** – 计时器运行的时长（毫秒计）。  不存在最大值。
@@ -142,33 +144,31 @@ ms.locfileid: "57804369"
 
 5. 选择计时器按钮以启动或停止动画。 标签中的文本渐变为白色，恢复最大亮度，并重复此过程。
 
-
 ## <a name="accessibility-guidelines"></a>辅助功能准则
-**[适用按钮](control-button.md)** 的相同准则，因为“计时器”是专用按钮。
+相同准则**[按钮](control-button.md)** 控制将应用于**计时器**控制如果用户可以与其进行交互。
 
-> [!IMPORTANT]
-> 在没有直接用户干预的情况下控制计时器不支持辅助功能。 例如，可以通过在计时器上方放置其他控件或将其**[“Visible”](properties-core.md)** 属性设置为“false”从视觉上隐藏计时器。 显示屏幕时计时器会自动启动，并在一段时间后自动执行一些操作。 目前，没有任何通用的方法可以使该情况支持辅助功能。
+### <a name="background-timers"></a>后台计时器
+后台计时器自动运行并处于隐藏状态。 使用它们支持角色中的已用时间都太感兴趣的用户。 例如，可以刷新每隔一分钟的数据，或仅对一定的时间显示一条通知消息。
 
-其他辅助功能准则如下所示。
+后台计时器应具有其**[Visible](properties-core.md)** 属性设置为 false，以便它们隐藏的所有用户。
 
-### <a name="timing"></a>执行时间
-如果计时器启动或停止自动，考虑用户是否有足够的时间来阅读和使用内容。 键盘和屏幕阅读器用户可能需要更多的时间来响应定时事件。
+### <a name="timing-considerations"></a>计时注意事项
+如果**计时器**运行自动，考虑用户是否具有足够的时间来阅读和使用内容。 键盘和屏幕阅读器用户可能需要更多时间来响应定时事件。
 
-这些任何一项策略均足以：
-* 允许用户取消定时事件
-* 允许用户在开始之前调整时间限制
-* 在时间限制到期前 20 秒发出警告，并提供一种轻松扩展限制的方法
+任何这些策略均足以：
+* 允许用户取消定时的事件。
+* 允许用户在开始之前调整时间限制。
+* 时间限制到期前的 20 秒，则发出警告，并提供轻松扩展限制。
 
 某些情况不受这些要求的限制。 请参阅[有关时间限制的 WCAG 2.0 准则](https://www.w3.org/TR/WCAG20/#time-limits)了解详细信息。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* **[“Text”](properties-core.md)** 必须存在。
-* 不要对时间敏感型和重要信息使用**[“Text”](properties-core.md)**。 屏幕阅读器用户不会收到有关**[“Text”](properties-core.md)** 更改的通知。
+* 如果计时器触发更改当前屏幕上的，使用[活动区域](../accessible-apps-live-regions.md)通知屏幕阅读器用户更改的内容。
 
     > [!NOTE]
-  > 屏幕阅读器将每隔 5 秒公告一次运行时间。 但是，计时器 **[Text](properties-core.md)** 不会包含在公告中。
+    > 如果计时器处于可见且正在运行，屏幕阅读器将公布经过的时间每隔 5 秒。
 
-* 请考虑添加 **[Label](control-text-box.md)** 以显示运行时间。 使用计时器的 **[Text](properties-core.md)** 以指示用户启动或停止计时器。
-
-### <a name="support-in-powerapps-studio"></a>PowerApps Studio 中的支持
-生成应用时，计时器会禁用以阻止事件触发。 如果打开预览，也可以保存应用并在 PowerApps Mobile 或 web player 中对其进行测试，可以在 PowerApps Studio 中测试的计时器。
+* 不要使用**[文本](properties-core.md)** 时间敏感型和重要信息的控件属性。 屏幕读取器不会公布变为**[文本](properties-core.md)**。
+* 有关交互式计时器：
+    * **[“Text”](properties-core.md)** 必须存在。
+    * 请考虑添加**[标签](control-text-box.md)** 控件以显示所经过的时间。 使用计时器**[文本](properties-core.md)** 属性以指示用户启动或停止计时器。

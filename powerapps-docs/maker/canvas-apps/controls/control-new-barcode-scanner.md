@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 961f8908014ef9cd85eadacb97a7c1dfc7e52b25
-ms.sourcegitcommit: eef2d6d9a9c7f5c8a44b9734817f59dc0eac3ecf
+ms.openlocfilehash: 1e41ec8d228e62c22354d77777a8390bfd442f8c
+ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "57800988"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58491551"
 ---
 # <a name="barcode-scanner-control-for-canvas-apps"></a>画布应用的条码扫描器控件
 
 扫描条形码、 QR 码和 Android 或 iOS 设备上的数据矩阵代码。 不支持在 web 浏览器中。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 在 Android 或 iOS 设备上的本机扫描仪，控件将打开。 扫描程序会自动检测条形码、 QR 代码或当视图中的数据矩阵代码。 该控件不支持扫描 web 浏览器中。
 
@@ -72,3 +72,11 @@ ms.locfileid: "57800988"
 **[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
 **[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+
+## <a name="accessibility-guidelines"></a>辅助功能准则
+相同准则**[按钮](control-button.md)** 控制将应用于**条码扫描器**控制，因为它是用于启动扫描的按钮。
+
+### <a name="visual-alternatives"></a>视频替代
+* 条形码扫描程序是不会显示扫描结果的按钮。 请考虑将显示扫描结果与**[标签](control-text-box.md)** 控件。 设置的标签**[文本](properties-core.md)** 属性设置为条形码扫描仪**值**属性。 设置的标签**[Live](properties-accessibility.md)** 属性设置为**礼貌**，以便更改的通知屏幕阅读器用户。 此更改使扫描生成的值可供所有人，而不考虑视觉功能。
+
+* Visual 和汽车残障人士可能倾向于不指向条形码的照相机。 请考虑添加另一种形式的输入，如**[文本输入](control-text-input.md)** 控件，用户输入的条形码。
