@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2864ab5614bb3af415e24e23df3c52f6e668ab24
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: 4ca9ed14f96dbad52fe6f7b0318f520dbdd33d10
+ms.sourcegitcommit: fc604f3e7f0399bdabee86ce94f67de49531a444
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357129"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58545075"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>教程：自定义 PowerApps 中库
 
@@ -53,8 +53,6 @@ ms.locfileid: "58357129"
 
 1. 登录 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后选择左边缘附近的“应用”。
 
-    [![PowerApps 主页](./media/customize-layout-sharepoint/sign-in.png)](./media/customize-layout-sharepoint/sign-in.png#lightbox)
-
 1. 找到你生成的应用，选择其省略号图标 (...)，然后选择“编辑”。
 
     ![打开应用进行编辑](./media/customize-layout-sharepoint/open-app.png)
@@ -69,25 +67,15 @@ ms.locfileid: "58357129"
 
     ![选择库](media/customize-layout-sharepoint/select-gallery-1.png)
 
-1. 在右边缘附近，选择“帐户”以打开“数据”窗格。
-
-    ![打开“数据”窗格](./media/customize-layout-sharepoint/open-data-pane.png)
-
-1. 在“数据”窗格中，打开“布局”下的选项列表。
-
-    ![显示布局选项](./media/customize-layout-sharepoint/show-layouts.png)
-
-1. 在选项列表中，选择仅显示一个标题的选项。
+1. 上**属性**选项卡的右侧窗格中，打开下的选项列表**布局**，然后选择仅显示一个标题的选项。
 
     ![选择仅限标题的布局](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. 在“数据”窗格中，打开标题的选项列表。
+1. 下一步**字段**，选择**编辑**，然后选择标题框中的向下箭头。
 
     此控件的名称以数字结尾，如“标题 1”，基于已执行的其他操作，该数字可能有所不同。
 
-    ![“打开标题的选项列表”标签](./media/customize-layout-sharepoint/show-title-options.png)
-
-1. 在选项列表中，选择“帐户名称(名称)”，然后关闭“数据”窗格。
+1. 在选项列表中，选择**帐户名**，然后关闭**数据**窗格。
 
     库显示每个帐户的名称。
 
@@ -154,9 +142,7 @@ ms.locfileid: "58357129"
 
     ![选择库](./media/customize-layout-sharepoint/select-gallery-sorted.png)
 
-1. 在“库”选项卡上，选择“显示滚动条”，并确认该属性的值已更改为“true”。
-
-    ![显示滚动条](./media/customize-layout-sharepoint/show-scrollbar.png)
+1. 设置库的**显示滚动条**属性设置为**true**。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -7,22 +7,22 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 04/23/2018
+ms.date: 03/26/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8c398bb7a916c98aa769e39477fe889a74fce32c
-ms.sourcegitcommit: c1f58a16f8dcd309a1d5fc4658ca16d82c615994
+ms.openlocfilehash: ee9ea62280b06b75bf71885c532659f0381e6d9a
+ms.sourcegitcommit: 926f42cd61ac3751540d42e74e4408bc82afc444
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2018
-ms.locfileid: "51333987"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58504034"
 ---
-# <a name="create-an-canvas-app-from-scratch-based-on-excel-data"></a>基于 Excel 数据从头开始创建画布应用
+# <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>基于 Excel 数据从头开始创建画布应用
 
-基于 Exceld 数据从头开始创建你自己的画布应用，将其格式化为表格，然后从其他源添加数据（如果需要）。 按照本教程中的步骤进行操作，可以创建包含两个屏幕的应用。 在一个屏幕上，用户可以浏览一组记录。 在另一个屏幕上，用户可以创建记录、更新记录中的一个或多个字段，或删除整条记录。 与[自动生成应用](get-started-create-from-data.md)相比，此方法耗费的时间要多得多，但有经验的应用创作者可以使用它根据需要生成最佳应用。
+基于 Exceld 数据从头开始创建你自己的画布应用，将其格式化为表格，然后从其他源添加数据（如果需要）。 按照本教程中的步骤进行操作，可以创建包含两个屏幕的应用。 在一个屏幕上，用户可以浏览一组记录。 在另一个屏幕上，用户可以创建记录、更新记录中的一个或多个字段，或删除整条记录。 与[自动生成应用](get-started-create-from-data.md)相比，此方法耗费的时间要多得多，但经验丰富的应用创作者可以使用它根据需要生成最佳应用。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -34,10 +34,10 @@ ms.locfileid: "51333987"
     | --- | --- | --- | --- |
     | 星期六 |上午 10:00-中午 |Vasquez |Kumashiro |
     | 星期六 |中午-下午 2:00 |Ice |Singhal |
-    | 星期六 |下午 2:00-4:00 |Myk |Mueller |
+    | 星期六 |下午 2:00 - 4:00 |Myk |Mueller |
     | 星期日 |上午 10:00-中午 |Li |Adams |
-    | 星期日 |上午 10:00-中午 |Singh |Morgan |
-    | 星期日 |上午 10:00-中午 |Batye |Nguyen |
+    | 星期日 | 中午-下午 2:00 |Singh |Morgan |
+    | 星期日 | 下午 2:00 - 4:00 |Batye |Nguyen |
 
 2. 将该数据格式化为名为 **Schedule** 的表，以便 PowerApps 能够分析信息。
 
@@ -49,19 +49,27 @@ ms.locfileid: "51333987"
 > 可以使用自己的 Excel 文件，而仅通过此教程学习基本概念。 但是，Excel 文件中的数据必须设置为表格格式。 有关详细信息，请参阅[在 Excel 中设置表格格式](how-to-excel-tips.md)。
 
 ## <a name="open-a-blank-app"></a>打开一个空白应用
+
 1. 登录 [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+
+1. 在“生成自己的应用”下，选择“从空白开始创建画布应用”。
+
+    > [!div class="mx-imgBorder"]
+    >![创建空白画布应用](./media/get-started-create-from-blank/blank-app.png)
+
+1. 为应用指定名称，选择“手机”，然后选择“创建”。
 
     可以从头开始为手机或其他设备（如平板电脑）设计应用。 本主题重点介绍设计适用于手机的应用。
 
-1. 在“生成自己的应用”下，将鼠标悬停在画布应用的“从空白开始”磁贴上，选择电话图标，再选择“生成此应用”。
-
-    ![空白应用磁贴](./media/get-started-create-from-blank/start-from-blank.png)
+    > [!div class="mx-imgBorder"]
+    >![指定应用的名称和格式](./media/get-started-create-from-blank/excel-demo.png)
 
     PowerApps Studio 创建适用于手机的空白应用。
 
 1. 如果打开“欢迎使用 PowerApps Studio”对话框，则选择“跳过”。
 
 ## <a name="connect-to-data"></a>连接到数据
+
 1. 在屏幕中间，选择“连接到数据”。
 
 1. 在“数据”窗格中，选择云存储帐户的连接（如果显示）。 否则，请按照下列步骤添加连接：
@@ -73,97 +81,93 @@ ms.locfileid: "51333987"
 
 1. 在“选择表”下，勾选“计划”复选框，然后选择“连接”。
 
+1. 在“数据”窗格的右上角，单击关闭图标 (X) 将其关闭。
+
 ## <a name="create-the-view-screen"></a>创建视图屏幕
 
-1. 在“主页”选项卡上，选择“新屏幕”旁的向下箭头打开屏幕类型列表，然后选择“列表屏幕”。
-
-    ![添加列表屏幕](./media/get-started-create-from-blank/add-list-screen.png)
+1. 在“主页”选项卡上，选择“新屏幕”旁的向下箭头打开屏幕类型列表，然后选择“列表”。
 
     包含多个默认控件（如搜索框和“[库](controls/control-gallery.md)”控件）的屏幕已添加。 库覆盖搜索框下的整个屏幕。
 
-2. 通过单击或点击其中心附近来选择库。
+1. 在新屏幕顶部，选择[标签](controls/control-text-box.md)控件，然后将“[Title]”替换为“查看记录”。
+
+     ![更改标题栏](./media/get-started-create-from-blank/change-title-bar.png)
+
+1. 在左侧导航栏中，选择“BrowseGallery1”。
 
     带句柄的选择框会环绕该库。
 
     ![添加列表屏幕](./media/get-started-create-from-blank/select-gallery.png)
 
-3. 在右侧窗格中，选择“CustomGallerySample”以打开“数据”窗格。
+1. 在右侧窗格的“属性”选项卡上，选择“布局”菜单的向下箭头。
 
-    ![打开“数据”窗格](./media/get-started-create-from-blank/custom-gallery-sample.png)
+    ![打开“布局”菜单](./media/get-started-create-from-blank/select-layout.png)
 
-4. 在“数据源”下，选择向下箭头以打开应用程序的数据源列表，然后选择“计划”。
+1. 选择“标题、副标题和正文”。
 
-    ![选择数据源](./media/get-started-create-from-blank/select-schedule.png)
+1. 在编辑栏中，将“自定义库示例”替换为“计划”，并将“示例文本”的两个实例替换为“志愿者”。
 
-5. 在“布局”下，选择向下箭头以打开布局列表，然后选择“标题、副标题和正文”。
+1. 在编辑栏的右侧，选择向下箭头，然后选择“设置文本格式”。
 
-    ![选择布局](./media/get-started-create-from-blank/select-layout.png)
+    该公式与此示例匹配：
 
-6. 在“标题 2”下，将“备份”中显示的列更改为“志愿者”。
+    ```powerapps-dot
+    SortByColumns(
+        Search(
+            Schedule,
+            TextSearchBox1.Text,
+            "Volunteer"
+        ),
+        "Volunteer",
+        If(
+            SortDescending1,
+            SortOrder.Descending,
+            SortOrder.Ascending
+        )
+    )
+    ```
 
-     ![更改标签中的列](./media/get-started-create-from-blank/change-title2.png)
+1. 在右侧窗格的“属性”选项卡上，选择“字段”标签旁边的“编辑”。
 
-7. 选择右上角的关闭图标，关闭“数据”窗格。
+1. 在“Title2”框中，选择“志愿者”。
 
-    库会显示每个志愿者的姓名以及志愿者排班的日期和时间。
+1. 在“数据”窗格的右上角，单击关闭图标 (X) 将其关闭。
 
-    ![库中未排序的“计划”数据](./media/get-started-create-from-blank/show-data-unsorted.png)
+用户可以根据该公式中的 SortByColumns 和 Search 函数，按志愿者姓名排序和筛选库。
 
-8. 选择库，并确认属性列表显示 [Items](controls/properties-core.md)。
+- 如果用户在搜索框中键入至少一个字母，则库将仅显示“志愿者”字段中包含用户键入文本的那些记录。
+- 如果用户选择排序按钮（位于标题栏的刷新按钮和加号按钮之间），库将基于“志愿者”字段，按升序或降序顺序显示记录（具体取决于用户选择按钮的次数）。
 
-    如公式栏所示，该属性的值为“计划”。
-
-    ![库中未排序的“计划”数据](./media/get-started-create-from-blank/set-property.png)
-
-9. 通过复制此公式并将其粘贴到公式栏中来更改“Items”属性的值：
-
-    SortByColumns(Search(Schedule, TextSearchBox1.Text, "Volunteer"), "Volunteer", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))
-
-    库会按志愿者姓名的字母顺序显示数据。
-
-    ![库中已排序的“计划”数据](./media/get-started-create-from-blank/show-data-sorted.png)
-
-    用户可以根据该公式中的 SortByColumns 和 Search 函数，按志愿者姓名排序和筛选库。
-
-   - 如果用户在搜索框中键入至少一个字母，则库将仅显示“志愿者”字段中包含用户键入文本的那些记录。
-   - 如果用户选择排序按钮，库将基于“志愿者”字段，按升序或降序顺序显示记录（具体取决于用户选择按钮的次数）。
-
-     有关这些函数和其他函数的详细信息，请参阅[公式参考](formula-reference.md)。
-
-10. 在搜索框中键入“i”，通过单击或点击来选择排序按钮，然后再次选择它（或者额外奇数次）。
-
-     库将显示以下结果。
-
-     ![对库进行排序和筛选](./media/get-started-create-from-blank/sort-filter.png)
-
-11. 清除搜索框中的所有文本。
-
-12. 在屏幕顶部，选择[标签](controls/control-text-box.md)控件，然后将“[Title]”替换为“查看记录”。
-
-     ![更改标题栏](./media/get-started-create-from-blank/change-title-bar.png)
+有关这些函数和其他函数的详细信息，请参阅[公式参考](formula-reference.md)。
 
 ## <a name="create-the-change-screen"></a>创建更改屏幕
-1. 在“主页”选项卡上，选择“新屏幕”旁的向下箭头，然后选择“窗体屏幕”。
 
-     ![添加窗体屏幕](./media/get-started-create-from-blank/add-form-screen.png)
+1. 在“主页”选项卡上，选择“新屏幕”旁的向下箭头，然后选择“窗体”。
 
-1. 在刚添加的屏幕中，选择“连接到数据”以打开“数据”窗格，然后将数据源设置为“计划”。
+1. 在左侧导航栏中，选择“EditForm1”。
 
-1. 在“字段”下，选中所有复选框以在窗体中显示所有字段。
+1. 在右侧窗格的“属性”选项卡上，选择“数据源”旁边的向下箭头，然后选择列表中显示的“计划”。
 
-     ![显示字段](./media/get-started-create-from-blank/show-fields.png)
+1. 在刚才指定的数据源下，选择“编辑字段”。
 
-1. 向上拖动“志愿者”字段，以便它显示在字段列表顶部。
+1. 在“字段”窗格中，选择“添加字段”，选中每个字段的复选框，然后选择“添加”。
+
+1. 选择要折叠的每个字段的名称旁的箭头，然后将“志愿者”字段向上拖动到字段列表的顶端。
 
      ![将字段重新排序](./media/get-started-create-from-blank/reorder-fields.png)
 
-1. 选择窗体，通过在公式栏中键入或粘贴将其“Item”属性设置为此表达式：<br>**BrowseGallery1.Selected**
+1. 在“字段”窗格的右上角，单击关闭图标 (X) 将其关闭。
+
+1. 通过在编辑栏中键入或粘贴该表达式，将窗体的“Item”属性设置为此表达式：
+
+    `BrowseGallery1.Selected`
 
 1. 在屏幕顶部，选择[标签](controls/control-text-box.md)控件，然后将“[Title]”替换为“更改记录”。
 
     ![更改标题栏](./media/get-started-create-from-blank/change-title-bar2.png)
 
 ## <a name="delete-and-rename-screens"></a>删除并重命名屏幕
+
 1. 在左侧导航栏中，选择“屏幕 1”的省略号 (...)，然后选择“删除”。
 
     ![删除屏幕](./media/get-started-create-from-blank/delete-screen.png)
@@ -173,11 +177,14 @@ ms.locfileid: "51333987"
 1. 选择“屏幕 3”的省略号 (...)，选择“重命名”，然后键入或粘贴“ChangeScreen”。
 
 ## <a name="configure-icons-on-the-view-screen"></a>在视图屏幕上配置图标
+
 1. 在“ViewScreen”顶部附近，选择圆形箭头图标。
 
     ![添加记录](./media/get-started-create-from-blank/refresh-icon.png)
 
-1. 将此图标的“OnSelect”属性设置为此公式：<br>Refresh(Schedule)
+1. 将此图标的“OnSelect”属性设置为此公式：
+
+    `Refresh(Schedule)`
 
     当用户选择此图标，来自“计划”的数据会从 Excel 文件进行刷新。
 
@@ -187,7 +194,9 @@ ms.locfileid: "51333987"
 
     ![添加记录](./media/get-started-create-from-blank/add-record.png)
 
-1. 将此图标的“OnSelect”属性设置为此公式：<br>NewForm(EditForm1);Navigate(ChangeScreen,ScreenTransition.None)
+1. 将此图标的“OnSelect”属性设置为此公式：
+
+    `NewForm(EditForm1);Navigate(ChangeScreen,ScreenTransition.None)`
 
     用户选择图标时，将显示“ChangeScreen”且每个字段均为空，这样用户可以更轻松地创建记录。
 
@@ -195,16 +204,21 @@ ms.locfileid: "51333987"
 
     ![选择箭头](./media/get-started-create-from-blank/select-arrow.png)
 
-1. 将该箭头的 OnSelect 属性设置为此公式：<br>EditForm(EditForm1); Navigate(ChangeScreen, ScreenTransition.None)
+1. 将该箭头的 OnSelect 属性设置为此公式：
+
+    `EditForm(EditForm1); Navigate(ChangeScreen, ScreenTransition.None)`
 
     当用户选择此图标时，将显示“ChangeScreen”，其中每个字段显示所选记录的数据，以便用户可以更轻松地编辑或删除记录。
 
 ## <a name="configure-icons-on-the-change-screen"></a>在更改屏幕上配置图标
-1. 在“ChangeScreen”上，选择左上角的“x”图标。
+
+1. 在“ChangeScreen”上，选择左上角的“X”图标。
 
     ![“取消”图标](./media/get-started-create-from-blank/cancel-icon.png)
 
-1. 将此图标的“OnSelect”属性设置为此公式：<br>ResetForm(EditForm1);Navigate(ViewScreen, ScreenTransition.None)
+1. 将此图标的“OnSelect”属性设置为此公式：
+
+    `ResetForm(EditForm1);Navigate(ViewScreen, ScreenTransition.None)`
 
     当用户选择此图标时，将放弃用户在此屏幕中所做的任何更改，并会打开视图屏幕。
 
@@ -212,7 +226,9 @@ ms.locfileid: "51333987"
 
     ![“选中标记”图标](./media/get-started-create-from-blank/checkmark-icon.png)
 
-1. 将该复选标记的“OnSelect”属性设置为此公式：<br>SubmitForm(EditForm1); Navigate(ViewScreen, ScreenTransition.None)
+1. 将该复选标记的“OnSelect”属性设置为此公式：
+
+    `SubmitForm(EditForm1); Navigate(ViewScreen, ScreenTransition.None)`
 
     当用户选择此图标时，将保存用户在此屏幕中所做的任何更改，并会打开视图屏幕。
 
@@ -222,14 +238,27 @@ ms.locfileid: "51333987"
 
     ![“垃圾桶”图标](./media/get-started-create-from-blank/trash-icon.png)
 
-1. 将此垃圾桶图标的“OnSelect”属性设置为此公式：<br>Remove(Schedule, BrowseGallery1.Selected); Navigate(ViewScreen, ScreenTransition.None)
+1. 将此垃圾桶图标的“Visible”属性设置为此公式：
+
+    `EditForm1.Mode = FormMode.Edit`
+
+    此图标仅在窗体处于编辑模式，而不在新建模式下时才显示。
+
+1. 将此垃圾桶图标的“OnSelect”属性设置为此公式：
+
+    `Remove(Schedule, BrowseGallery1.Selected); Navigate(ViewScreen, ScreenTransition.None)`
 
     当用户选择此图标，会从数据源删除所选记录，且视图屏幕将打开。
 
 ## <a name="test-the-app"></a>测试应用程序
+
 1. 选择“ViewScreen”，然后按 F5（或选择右上角附近的“预览”图标）打开“预览”。
 
     ![打开预览模式](./media/get-started-create-from-blank/open-preview.png)
+
+1. 在搜索框中键入或粘贴一个或多个字母，依据志愿者的姓名筛选列表。
+
+1. 选择排序图标一次或多次，依据志愿者的姓名按升序或降序显示数据。
 
 1. 添加记录。
 
