@@ -1,0 +1,37 @@
+items:
+- name: 使用 XRM 工具生成 Windows 客户端应用程序
+  href: build-windows-client-applications-xrm-tools.md
+  items:
+  - name: 使用 CrmServiceClient 构造函数进行连接
+    href: use-crmserviceclient-constructors-connect.md
+  - name: 使用 XRM 工具中的连接字符串进行连接
+    href: use-connection-strings-xrm-tooling-connect.md
+  - name: 使用 XRM 工具的 PowerShell cmdlets 进行连接
+    href: use-powershell-cmdlets-xrm-tooling-connect.md
+  - name: 使用 XRM 工具执行操作
+    href: use-xrm-tooling-execute-actions.md
+    items:
+    - name: 使用 XRM 工具创建数据
+      href: use-xrm-tooling-create-data.md
+    - name: 使用 XRM 工具检索数据
+      href: use-xrm-tooling-retrieve-data.md
+    - name: 使用 XRM 工具更新数据
+      href: use-xrm-tooling-update-data.md
+    - name: 使用 XRM 工具删除数据
+      href: use-xrm-tooling-delete-data.md
+    - name: 将消息与 ExecuteCrmOrganizationRequest 方法一起使用
+      href: use-messages-executecrmorganizationrequest-method.md
+  - name: 在客户端应用程序中使用 XRM 工具常用登录控件
+    href: use-xrm-tooling-common-login-control-client-applications.md
+  - name: 为 XRM 工具配置跟踪
+    href: configure-tracing-xrm-tooling.md
+  - name: 简化连接快速入门
+    href: sample-simplified-connection-quick-start.md
+  - name: 示例：XRM 工具 API 快速入门
+    href: sample-quick-start-xrm-tooling-api.md
+ms.openlocfilehash: 6ffd323731891e38feb1b728f7e6f43120d5cc37
+ms.sourcegitcommit: 499fdc1a7c78d7d10e372a8caf26dfafc3492b6c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58542777"

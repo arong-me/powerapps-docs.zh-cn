@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 03/18/2019
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: ec03fdfd4837bb54fb150562ade38db758887f88
-ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
+ms.openlocfilehash: 4e24047d44beb19e55dadb8d653604e47460a5d2
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58162254"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357566"
 ---
 # <a name="what-is-powerapps"></a>什么是 PowerApps？
 
@@ -46,7 +46,7 @@ PowerApps 管理员可以：
 
 - 使用“PowerApps 管理中心”([admin.powerapps.com](https://admin.powerapps.com)) 创建和管理环境、用户、角色和数据丢失防护策略。 
 
-- 使用“Power 平台管理中心”([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)) 管理环境、获取针对 Dynamics 365 for Customer Engagement 应用、PowerApps 和 Microsoft Flow 的实时、自助推荐和支持，以及查看面向应用程序的 CDS 分析。 
+- 使用“Power 平台管理中心”([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)) 管理环境、获取针对 Dynamics 365 for Customer Engagement 应用、PowerApps 和 Microsoft Flow 的实时、自助推荐和支持，以及查看 Common Data Service 分析。 
 
 详细信息：[管理 PowerApps](/power-platform/admin/admin-guide)
 
@@ -56,7 +56,7 @@ PowerApps 管理员可以：
 
 ## <a name="powerapps-and-dynamics-365"></a>PowerApps 和 Dynamics 365
 
-Dynamics 365 应用程序（如 Dynamics 365 for Sales、Dynamics 365 for Service、Dynamics 365 for Marketing）还使用 PowerApps 用于存储和保护数据的基础数据平台（面向应用程序的 CDS）。 这使你可针对 Dynamics 365 中已使用的核心商业数据直接使用 PowerApps 和 Common Data Service for Apps 构建应用，而无需集成。 详细信息：[Dynamics 365 和面向应用程序的 Common Data Service](maker/common-data-service/data-platform-intro.md#dynamics-365-and-the-common-data-service-for-apps)
+Dynamics 365 应用程序（如 Dynamics 365 for Sales、Dynamics 365 for Service、Dynamics 365 for Marketing）还使用 PowerApps 用于存储和保护数据的基础数据平台 (Common Data Service)。 这样以来，可以针对 Dynamics 365 中已使用的核心业务数据直接使用 PowerApps 和 Common Data Service 生成应用，而无需集成。 详细信息：[Dynamics 365 和 Common Data Service](maker/common-data-service/data-platform-intro.md#dynamics-365-and-the-common-data-service)
 
 ## <a name="try-powerapps-for-free"></a>免费试用 PowerApps
 

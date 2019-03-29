@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2c367aa57294e52fc22f538f88b361c90c3afb99
-ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
+ms.openlocfilehash: 9981a549aaf0ce88f6e66dd4df2c7897901d219b
+ms.sourcegitcommit: 5c098a62f66a2f33418967fdce9363bd529e0fc1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330231"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58581084"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>在 PowerApps 中安装和配置技术支持的示例
 
@@ -138,7 +138,7 @@ ms.locfileid: "58330231"
 2. 在“要求此列包含信息”单选按钮列表中，选择“否”。
 3. 单击“确定”。
 
-## <a name="download-the-help-desk-powerapp"></a>下载技术支持 PowerApp
+## <a name="download-the-app"></a>下载应用
 
 1.  [下载](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) PowerApps 包并将其保存到计算机。
 
@@ -172,9 +172,9 @@ ms.locfileid: "58330231"
 4.  单击“创建”。
 5.  在弹出窗口中，选择登录所用的帐户。
 
-## <a name="import-the-help-desk-powerapp"></a>导入技术支持 PowerApp
+## <a name="import-the-app"></a>导入应用
 
-1. 在 Web 浏览器中，导航到 https://web.powerapps.com 。
+1. 在 Web 浏览器中，导航到 [https://web.powerapps.com](https://web.powerapps.com)。
 2. 使用注册所用的同一凭据登录。
 3. 在左侧菜单中，选择“应用”。 
 4. 单击“导入包(预览)”。
@@ -209,33 +209,27 @@ ms.locfileid: "58330231"
 
     ![“导入设置”屏幕](./media/help-desk-install/import-done.png)
 
-## <a name="configure-the-powerapp-to-use-the-sharepoint-list"></a>配置 PowerApp 以使用 SharePoint 列表
+## <a name="configure-the-app-to-use-the-sharepoint-list"></a>将应用配置为使用 SharePoint 列表
 
 1. 在“后续步骤”下，单击“打开应用”。
 2. 在出现权限提示时，选择“允许”。
 
 ### <a name="delete-connections"></a>删除连接
 
-1. 单击“查看”。
-2. 单击“数据源”。
-3. 在“数据”窗格，单击“技术支持”SharePoint 连接旁的省略号。
-4. 单击“删除”。
+1. 上**视图**选项卡上，选择**数据源**。
+1. 在**数据**窗格中，选择省略号 （...） 下一步**支持人员**，然后选择**删除**。
 
 ### <a name="helpdesk-list"></a>技术支持列表
 
-1. 单击“查看”。
-2. 单击“数据源”。
-3. 在“数据”窗格中，单击“+ 添加数据源”。
-4. 选择“SharePoint”。
-5. 单击“创建”。
-6. 在“最近使用的站点”列表中，选择在其中创建技术支持列表的 SharePoint 站点。
+1. 上**视图**选项卡上，选择**数据源**。
+1. 在中**数据**窗格中，选择**添加数据源** > **新连接** > **SharePoint**  > **创建**。
+1. 在“最近使用的站点”列表中，选择在其中创建技术支持列表的 SharePoint 站点。
 
     > [!TIP] 
-    > 如果列表中未显示此站点，请在文本框中输入该 SharePoint 站点的 URL，然后单击“前往”。
+    > 如果站点未显示在列表中，键入或粘贴到 SharePoint 站点的 URL 的文本框中，并选择**转**。
 
-7. 在列表顶部的“搜索”框中，输入“技术支持”。
-8. 选中“技术支持”列表旁的复选框。
-9. 单击“连接”。
+1. 在中**搜索**框顶部的列表中，键入或粘贴**支持人员**。
+1. 选中的复选框旁边**支持人员**，然后选择**Connect**。
 
 ### <a name="update-admin-list"></a>更新管理员列表
 
@@ -247,20 +241,17 @@ ms.locfileid: "58330231"
     ![更新管理员列表](./media/help-desk-install/Change-admin.png)
     
    > [!TIP]
-   > 如果有多个管理员，请使用逗号分隔。示例："admin1@microsoft.com","admin2@microsoft.com"。
+   > 如果有多个管理员，使用逗号来分隔管理员列表。 示例："admin1@microsoft.com","admin2@microsoft.com"。
    > 为了确保 AdminList 中的地址与 PowerApps 要求的格式匹配，请选择“视图”>“变量”>“全局”>“MyProfile”，并查看“电子邮件”列，检查要求的电子邮件格式。
 
-5. 单击“文件”。
-6. 单击“保存”。
-7. 单击“发布”。
-8. 单击“发布此版本”。
+1. 选择**文件** > **保存** > **发布** > **发布此版本**。
 
 ## <a name="modify-the-flow"></a>修改流
 
 1.  在左侧菜单中，单击“流”。
 2.  如果提示登录，请使用注册所用的同一凭据登录。
 3.  从顶部菜单选择“我的流”。
-4.  单击“技术支持流”旁的铅笔图标。 
+4.  下一步**技术支持**流，单击铅笔图标。 
  
     ![“编辑流”屏幕](./media/help-desk-install/edit-flow.png)
 
@@ -281,18 +272,16 @@ ms.locfileid: "58330231"
 
 11. 单击“更新流”。
 
-## <a name="play-the-powerapp"></a>播放 PowerApp
+## <a name="play-the-app"></a>播放应用
 
 1. 在 Web 浏览器中，单击“应用”。
-2. 单击“技术支持 PowerApp”旁的省略号。
+2. 单击技术支持应用程序旁边的省略号 （...）。
 3. 单击“打开”。 
 
 > [!TIP]
 > 观看此[视频](https://youtu.be/sl5fXwwnvzI)，了解如何使用技术支持 PowerApp 示例。
 
-
 ## <a name="next-steps"></a>后续步骤
 - [自定义 SharePoint 列表窗体](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form)
 - [添加并配置控件](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-configure-controls)
-- [编辑和管理 SharePoint 列表或库的权限](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
- 
+- [编辑和管理 SharePoint 列表或库的权限](https://support.office.com/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)

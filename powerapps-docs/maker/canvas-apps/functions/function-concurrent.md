@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e9c63d1814b72cae0c675be6b33773799cfb3b8f
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: ce8128f3a5eddf3a67fe2082844bf996c25adc05
+ms.sourcegitcommit: 2180982e57f0d161610be584fdae9424fe7e06b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357083"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58616676"
 ---
 # <a name="concurrent-function-in-powerapps"></a>PowerApps 中的 Concurrent 函数
 并发计算多个公式。
@@ -131,7 +131,7 @@ Concurrent 函数同时计算多个公式。 通常情况下，多个公式的�
 
 4. 添加[**数据表**](../controls/control-data-table.md)控件，然后将其 Items 属性设置为 Results。
 
-1. 在右窗格的“属性”选项卡上，选择“结果”以打开“数据”窗格。
+1. 上**属性**的右窗格中，选择的选项卡**编辑字段**以打开**字段**窗格。
 
 1. 在字段列表中，选中每个字段的复选框，以在数据表中显示它们。
 

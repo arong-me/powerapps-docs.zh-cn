@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 77268aa63ed49d10f825850909d31ec4feace063
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: 5c6876ac22f50be293781a7a6be58657f856baec
+ms.sourcegitcommit: 9444e6404770788b99cfcdb13b41ca6187d25149
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357589"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58623386"
 ---
 # <a name="choices-function-in-powerapps"></a>PowerApps 中的 Choices 函数
 返回查找列可能值的表。
@@ -83,10 +83,10 @@ Choices 不要求列名称为字符串且括在双引号中，这一点与 [**Sh
 
 8. 在“Primary Contact”的卡片中，选择“组合框”控件。
 
-    该控件的 Items 属性设置为两个公式之一，具体取决于高级设置中“使用列显示名称”复选框的状态。
+    **项**该控件的属性设置为一个公式，用于标识列按其显示名称，如下所示的第一个示例中或其逻辑名称，如第二个示例所示：
 
-   - 如果选中了该复选框，则该属性设置为以下公式：<br>**Choices( Accounts.'Primary Contact' )**
-   - 如果取消选中了该复选框，则该属性设置为以下公式：<br>**Choices( Accounts.primarycontactid )**
+   - **Choices( Accounts.'Primary Contact' )**
+   - **Choices( Accounts.primarycontactid )**
 
      ![包含窗体控件的画布屏幕。 选择了 Primary Contact 卡片中的组合框控件，显示了包含公式 Choices( Accounts.'Primary Contact' ) 的 Items 属性](media/function-choices/accounts-primary-contact.png)
 
@@ -94,10 +94,9 @@ Choices 不要求列名称为字符串且括在双引号中，这一点与 [**Sh
 
 10. 在“插入”选项卡上，选择“数据表”。
 
-11. 将数据表控件的 Items 属性设置为以下公式之一：
+11. 设置**项**的属性**数据表**控制为以下公式：
 
-     - 如果选中了高级设置中的“使用列显示名称”复选框，请使用以下公式：<br>**Choices( Accounts.'Primary Contact' )**
-     - 否则，请使用以下公式：<br>**Choices( Accounts.primarycontactid )**
+     **Choices( Accounts.'Primary Contact' )**
 
 12. 打开“数据”窗格，然后选择 firstname、lastname 或要显示的任何其他字段的复选框。
 
