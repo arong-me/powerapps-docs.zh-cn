@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5c6876ac22f50be293781a7a6be58657f856baec
-ms.sourcegitcommit: 9444e6404770788b99cfcdb13b41ca6187d25149
+ms.openlocfilehash: ed555f5de4abc1e29b7d2a637413c440bd882f13
+ms.sourcegitcommit: 6b116a4079eb56ebd598d317a12df8856ff3e52a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58623386"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58671946"
 ---
 # <a name="choices-function-in-powerapps"></a>PowerApps 中的 Choices 函数
 返回查找列可能值的表。
@@ -63,41 +63,43 @@ Choices 不要求列名称为字符串且括在双引号中，这一点与 [**Sh
 
     对于每个帐户，不是指定了联系人作为主要联系人，就是主要联系人为*空白*。
 
-2. 从 **Accounts** 实体[生成应用](../data-platform-create-app.md)。
+1. 从 **Accounts** 实体[生成应用](../data-platform-create-app.md)。
 
-3. 在左边缘附近的屏幕和控件列表中，向下滚动到显示出 EditScreen1，并选择其下方的 EditForm1。
+1. 在左边缘附近的屏幕和控件列表中，向下滚动到显示出 EditScreen1，并选择其下方的 EditForm1。
 
     ![在左侧导航栏中，选择 EditScreen1 上的 EditForm1](media/function-choices/select-editform.png)
 
-4. 在右窗格的“属性”选项卡上，选择“Accounts”。
+1. 上**属性**的右窗格中，选择的选项卡**编辑字段**。
 
-    ![选择“Accounts”以打开“数据”窗格。](media/function-choices/open-data-pane.png)
+    ![打开数据窗格](media/function-choices/open-data-pane.png)
 
-5. 在“数据”窗格中，向下滚动到字段列表。
+1. 在中**字段**窗格中，选择**添加字段**。
+
+1. 搜索**主要联系人**字段中，选中其复选框，然后再选择**添加**。
 
     ![选择“Accounts”以打开“数据”窗格。](media/function-choices/field-list.png)
 
-6. 找到“Primary Contact”复选框，如果已取消选中，则选中它。
+    **主要联系人**字段显示在窗体的底部。 如果该字段将显示错误，请选择**数据源**上**视图**选项卡上，选择省略号 （...）**帐户**数据源，然后选择**刷新**.
 
-7. （可选）将“Primary Contact”字段从字段列表底部拖动到顶部。
+1. （可选）将“Primary Contact”字段从字段列表底部拖动到顶部。
 
-8. 在“Primary Contact”的卡片中，选择“组合框”控件。
+1. 在“Primary Contact”的卡片中，选择“组合框”控件。
 
     **项**该控件的属性设置为一个公式，用于标识列按其显示名称，如下所示的第一个示例中或其逻辑名称，如第二个示例所示：
 
    - **Choices( Accounts.'Primary Contact' )**
    - **Choices( Accounts.primarycontactid )**
 
-     ![包含窗体控件的画布屏幕。 选择了 Primary Contact 卡片中的组合框控件，显示了包含公式 Choices( Accounts.'Primary Contact' ) 的 Items 属性](media/function-choices/accounts-primary-contact.png)
+     ![包含窗体控件的画布屏幕。 选择框控件中的主要联系人卡后，在组合框和项属性的公式的选择 （帐户。 主要联系人） 显示](media/function-choices/accounts-primary-contact.png)
 
-9. 在“开始”选项卡上，选择“新建屏幕”，然后选择“Blank”。
+1. 在“开始”选项卡上，选择“新建屏幕”，然后选择“Blank”。
 
-10. 在“插入”选项卡上，选择“数据表”。
+1. 在“插入”选项卡上，选择“数据表”。
 
-11. 设置**项**的属性**数据表**控制为以下公式：
+1. 设置**项**的属性**数据表**控制为以下公式：
 
      **Choices( Accounts.'Primary Contact' )**
 
-12. 打开“数据”窗格，然后选择 firstname、lastname 或要显示的任何其他字段的复选框。
+1. 中间**数据表**控件中，选择的链接，启动**选择的字段...**，然后选择你想要显示的字段对应的复选框 (例如， **firstname**并**lastname**)。
 
      ![包含数据表控件的画布屏幕。 Items 属性设置为公式 Choices( Accounts.'Primary Contact' )，表显示 Contacts 实体中第一组记录的 firstname 和 lastname 列](media/function-choices/full-accounts-pc.png)
