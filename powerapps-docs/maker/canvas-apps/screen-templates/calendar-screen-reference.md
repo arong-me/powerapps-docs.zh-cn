@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: abf88db2bfb97a6541ee638ba8be5af27c20bc5f
-ms.sourcegitcommit: 5e15a1033a68289781f8092fb65c57432501f911
+ms.openlocfilehash: e3d5f40a604d2cbfa074ed5973d599c40a6c5c05
+ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459565"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58765574"
 ---
 # <a name="reference-information-about-the-calendar-screen-template-for-canvas-apps"></a>有关画布应用的日历屏幕模板的参考信息
 
@@ -191,7 +191,7 @@ ms.locfileid: "54459565"
     ```
 
     > [!NOTE]
-    > 定义 **\_firstDayOfMonth**，  **\_firstDayInView**，以及 **\_lastDayOfMonth**几乎相同在中[日历下拉](#calendar-dropdown)本主题的部分。
+    > 定义 **\_firstDayOfMonth**，  **\_firstDayInView**，以及 **\_lastDayOfMonth**几乎相同在中[日历下拉](#calendar-drop-down)本主题的部分。
 
     前面的代码的前三个行，其运行时用户选择的下个月 v 形图标，设置显示正确的日历视图所需的变量。 仅当用户以前未选择在所选日历这个月，将运行的剩余代码。
 

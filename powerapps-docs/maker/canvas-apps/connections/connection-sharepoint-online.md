@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0fbc97e6c2663210bea79cc7236ce784110a4950
-ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.openlocfilehash: 86c23a2da0dca20bb6f755a9cb548c092180ef16
+ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58198604"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58765493"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>画布应用从连接到 SharePoint
 
@@ -34,7 +34,7 @@ ms.locfileid: "58198604"
 如果你想要管理自定义列表中的数据，PowerApps 可以[自动为你生成三屏应用](../app-from-sharepoint.md)。 用户可以浏览的第一个屏幕上的列表、 在第二个屏幕中，显示的项的详细信息和创建或更新第三个屏幕中的项。
 
 > [!NOTE]
-> 如果 SharePoint 列表包含**选**，**查找**，或**个人或组**列中，请参阅[显示库中的数据](connection-sharepoint-online.md#show-data-in-a-gallery)本主题中更高版本。
+> 如果 SharePoint 列表包含**选**，**查找**，或**个人或组**列中，请参阅[显示库中的数据](connection-sharepoint-online.md#show-list-columns-in-a-gallery)本主题中更高版本。
 
 ## <a name="create-a-connection"></a>创建连接
 

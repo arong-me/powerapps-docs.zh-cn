@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ca97583948a289240bfb051fa8cac36a39e2ffee
-ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.openlocfilehash: 711d8029f0f8353efcdff5bea8cbb1402884502f
+ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58198627"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58765470"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>使用 PowerApps 自定义 SharePoint 列表窗体
 
@@ -189,7 +189,7 @@ SharePoint 站点上创建列表，并将这些列添加到该列表：
 
 **问：** 如何共享我的窗体？
 
-**答：** 无需共享窗体-窗体从 SharePoint 列表继承权限。 完成自定义后，只需[将其发布回 SharePoint](customize-list-form.md#save-and-publish-the-list-form-back-to-sharepoint)，便可供其他人使用。
+**答：** 无需共享窗体-窗体从 SharePoint 列表继承权限。 完成自定义后，只需[将其发布回 SharePoint](customize-list-form.md#save-and-publish-the-form)，便可供其他人使用。
 
 **问：** 谁可以自定义窗体？
 
