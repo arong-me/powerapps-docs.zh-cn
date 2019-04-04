@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 12/12/2018
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 759bed0c21bfc2035e3855f6d02b991b753dbf4b
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357773"
 ---
-
 # <a name="best-practices-and-guidance-around-working-with-data-for-the-common-data-service"></a>Common Data Service 数据处理最佳做法和指南
 
 下表包含所有关于使用代码将数据集成到 Common Data Service 的最佳做法和指南。
