@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b7d29d883a14e34dd89d766a6aeffb17275bde6b
-ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.openlocfilehash: 1b598cc863ec01bcb2a66a9510cb48ec5203e679
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57803449"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042609"
 ---
 # <a name="char-function-in-powerapps"></a>PowerApps 中的 Char 函数
 
@@ -60,7 +60,7 @@ ms.locfileid: "57803449"
     - **TemplateSize**:30
     - **TemplatePadding**:0
 
-    值**项**属性将提供的值列的列数为 16 相乘**项**从第一个库 (0-7 ThisItem.Value) 的属性。 该公式从第二个库中然后将结果添加到一个行号 (0 至 15 中记录作用域[ **ForAll** ](function-forall.md)函数提供了)。
+    值**项**属性将提供的值列的列数为 16 相乘**项**从第一个库的属性 (0-7 `ThisItem.Value`)。 该公式从第二个库中然后将结果添加到一个行号 (0 至 15 中记录作用域[ **ForAll** ](function-forall.md)函数提供了)。
 
 1. 在第二个 （垂直） 库中，添加**标签**控件，并设置这些属性：
 

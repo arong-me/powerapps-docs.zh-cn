@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8a46cb15be6a93988b89d8f85658ae7c9d5a900e
-ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
+ms.openlocfilehash: 776a542d8e790cc9ae3591b6cda9f08d0d347ef7
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58173122"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042769"
 ---
 # <a name="create-responsive-layouts-in-canvas-apps"></a>画布应用中创建响应式布局
 
@@ -26,11 +26,11 @@ ms.locfileid: "58173122"
 
 做出此决定后，你可以进行少量的更多选择，如果选择**文件** > **应用设置** > **屏幕大小和方向**。 可以选择纵向或横向方向和屏幕的大小 （仅适用于平板电脑）。 此外可以锁定或解锁纵横比和 （或不） 支持设备旋转。
 
-这些选择基础作为设计屏幕布局所做的每种其他选择。 如果您的应用程序运行在不同大小的设备上或在 web 上，在整个布局缩放以适合运行该应用的屏幕。 如果在一个大型的浏览器窗口中运行专为手机设计的应用，例如，应用可进行缩放以补偿，并查找其空间过大。 应用程序不能通过显示更多控件或更多的内容来充分利用其他像素。
+这些选择基础作为设计屏幕布局所做的每种其他选择。 如果您的应用程序运行在不同大小的设备上或在 web 上找到，整个布局可以进行扩展以适合运行该应用屏幕的大小。 如果在一个大型的浏览器窗口中运行专为手机设计的应用，例如，应用可进行缩放以补偿，并查找其空间过大。 应用程序不能通过显示更多控件或更多的内容来充分利用其他像素。
 
-如果您创建响应式布局，控件可以响应不同的设备或窗口大小，使不同的外形规格上感到很亲切更多的体验。 若要实现响应式布局，调整一些设置，并在整个应用中编写表达式。 
+如果您创建响应式布局，控件可以响应不同的设备或窗口大小，使各种体验感觉更自然。 若要实现响应式布局，调整一些设置，并在整个应用中编写表达式。 
 
-## <a name="disable-scale-to-fit"></a>禁用调整为适合页面
+## <a name="disable-scale-to-fit"></a>禁用缩放以适合
 
 你可以配置每个屏幕，以便其布局可适应应用程序正在其中运行的实际空间。
 
@@ -44,7 +44,7 @@ ms.locfileid: "58173122"
 
 若要使应用程序的布局响应中的屏幕尺寸的更改，你将编写使用的公式**宽度**并**高度**屏蔽的属性。 若要显示这些属性，在 PowerApps Studio 中打开应用，然后选择屏幕。 在显示这些属性的默认公式**高级**的右侧窗格的选项卡。
 
-**Width** = `Max(App.Width, App.DesignWidth)`
+**宽度** = `Max(App.Width, App.DesignWidth)`
 
 **Height** = `Max(App.Height, App.DesignHeight)`
 
@@ -69,14 +69,14 @@ ms.locfileid: "58173122"
 |--------|---------------|
 | **X**      | 0             |
 | **Y**      | 0             |
-| **Width**  | `Parent.Width`  |
+| **宽度**  | `Parent.Width`  |
 | **Height** | `Parent.Height` |
 
-这些公式使用父运算符。 对于直接在屏幕上放置控件，父引用到屏幕。 这些属性值，该控件显示在屏幕 （0，0） 的左上角与具有相同**宽度**并**高度**作为屏幕。
+这些公式使用**父**运算符。 直接在屏幕上放置的控件**父**指的是屏幕。 这些属性值，该控件显示在屏幕 （0，0） 的左上角与具有相同**宽度**并**高度**作为屏幕。
 
-稍后在本主题中，会将这些原则 （和父运算符） 将在其他容器内的控件放置应用如库、 组控件和组件。
+稍后在本主题中，您将应用这些原则 (和**父**运算符) 若要如库放置在其他容器内的控件，组控件和组件。
 
-作为替代方法，该控件可以填充仅在屏幕的上半。 若要创建这种效果，请更改**高度**公式**Parent.Height** / 2，并将保持不变的其他公式。
+作为替代方法，该控件可以填充仅在屏幕的上半。 若要创建这种效果，请设置**高度**属性设置为**Parent.Height** / 2，并将保持不变的其他公式。
 
 如果你想要在同一个屏幕的下半部分填充底部的第二个控件，您可能需要至少两种其他方法构造其公式。 为简单起见，可以采用此方法：
 
@@ -84,27 +84,30 @@ ms.locfileid: "58173122"
 |-|----------|-------------------|
 | **Upper** | **X**        | 0                 |
 | **Upper** | **Y**        | 0                 |
-| **Upper** | **Width**    | `Parent.Width`      |
+| **Upper** | **宽度**    | `Parent.Width`      |
 | **Upper** | **Height**   | `Parent.Height / 2` |
-| **较低** | **X**        | 0                 |
-| **较低** | **Y**        | `Parent.Height / 2` |
-| **较低** | **Width**    | `Parent.Width`      |
-| **较低** | **Height**   | `Parent.Height / 2` |
+| **Lower** | **X**        | 0                 |
+| **Lower** | **Y**        | `Parent.Height / 2` |
+| **Lower** | **宽度**    | `Parent.Width`      |
+| **Lower** | **Height**   | `Parent.Height / 2` |
 
 ![上限，并降低控件](media/create-responsive-layout/dynamic-layout.png)
 
-此配置会达到所需的效果，但您需要编辑每个公式，如果您改变了主意有关控件的相对大小。 例如，可能会决定顶部的控件应使用底部控件填充较低的三分之二占用仅顶部有三分之一的屏幕。 若要创建该效果，您需要更新**高度**的属性**上部**控件和**Y**并**高度**的属性**较低**控件。 相反，应考虑编写的公式**较低**的控制**上部**控件 （和本身），如本例所示：
+此配置会达到所需的效果，但您需要编辑每个公式，如果您改变了主意有关控件的相对大小。 例如，可能会决定顶部的控件应使用底部控件填充较低的三分之二占用仅顶部有三分之一的屏幕。 
+
+若要创建该效果，您需要更新**高度**的属性**上部**控件和**Y**并**高度**的属性**较低**控件。 相反，应考虑编写的公式**较低**的控制**上部**控件 （和本身），如本例所示：
+
 
 | 控件 | 属性 | 公式           |
 |-|----------|-------------------|
 | **Upper** | **X**        | 0                 |
 | **Upper** | **Y**        | 0                 |
-| **Upper** | **Width**    | `Parent.Width`      |
+| **Upper** | **宽度**    | `Parent.Width`      |
 | **Upper** | **Height**   | `Parent.Height / 2` |
-| **较低** | **X**        | 0                       |
-| **较低** | **Y**        | `Upper.Y + Upper.Height`  |
-| **较低** | **Width**    | `Parent.Width`            |
-| **较低** | **Height**   | `Parent.Height - Lower.Y` |
+| **Lower** | **X**        | 0                       |
+| **Lower** | **Y**        | `Upper.Y + Upper.Height`  |
+| **Lower** | **宽度**    | `Parent.Width`            |
+| **Lower** | **Height**   | `Parent.Height - Lower.Y` |
 
 ![上部和较低的控件相对大小调整](media/create-responsive-layout/dynamic-layout2.png)
 
@@ -115,7 +118,7 @@ ms.locfileid: "58173122"
 | C 及其父级之间的关系 | 属性 | 公式 | 图 |
 |--|--|--|--|
 | **C**填充的边距宽度的父代、 *N* | **X**| *N* | ![C 的父级的填充宽度的示例](media/create-responsive-layout/c1.png) |
-|  | **Width** | `Parent.Width - (N * 2)` |  |
+|  | **宽度** | `Parent.Width - (N * 2)` |  |
 | **C**边距为填充的父代、 高度*N* | **Y** | *N* | ![C 的父填充高度的示例](media/create-responsive-layout/c2.png) |
 |  | **Height** | `Parent.Height - (N * 2)` |  |
 | **C**与父代、 右边缘与距对齐*N* | **X** | `Parent.Width - (C.Width + N)` | ![C 与父项的边缘对齐的示例](media/create-responsive-layout/c3.png) |
@@ -126,7 +129,7 @@ ms.locfileid: "58173122"
 | C 和 D 之间的关系 | 属性 | 公式 | 图 |
 |--|--|--|--|
 | **C**与水平对齐**D**和宽度相同**D** | **X** | `D.X` | ![模式的示例](media/create-responsive-layout/d1.png) |
-|  | **Width**    | `D.Width` |  |
+|  | **宽度**    | `D.Width` |  |
 | **C**与垂直对齐**D**和相同的高度**D**  | **Y** | `D.Y` | ![模式的示例](media/create-responsive-layout/d2.png) |
 |  | **Height** | `D.Height` |  |
 | 边缘**C**的右边缘对齐**D** | **X** | `D.X + D.Width - C.Width` | ![模式的示例](media/create-responsive-layout/d3.png) |
@@ -136,7 +139,7 @@ ms.locfileid: "58173122"
 | **C**定位到右侧**D**与 N 的间隔 | **X** | `D.X + D.Width - N` | ![模式的示例](media/create-responsive-layout/d7.png) |
 | **C**之下**D**的间隙较*N*             | **Y** | `D.Y + D.Height + N` | ![模式的示例](media/create-responsive-layout/d8.png) |
 | **C**填充之间的空间**D**和右边缘的父级 | **X** | `D.X + D.Width` | ![模式的示例](media/create-responsive-layout/d9.png) |
-|  | **Width** | `Parent.Width - C.X` |  |
+|  | **宽度** | `Parent.Width - C.X` |  |
 | **C**填充之间的空间**D**边距和下边缘的父级 | Y | `D.Y + D.Height` | ![模式的示例](media/create-responsive-layout/d10.png) |
 
 ## <a name="hierarchical-layout"></a>层次结构布局
@@ -145,7 +148,7 @@ ms.locfileid: "58173122"
 
 ### <a name="galleries"></a>库
 
-如果应用程序中使用库，你将需要库的模板中的控件进行布局。 可以通过编写使用库模板将引用的父运算符的公式来放置这些控件。 在公式中的库模板中的控件上，使用 Parent.TemplateHeight 和 Parent.TemplateWidth 属性。 使用这些而不是 Parent.Width 和 Parent.Height，库的总体大小，请参阅。
+如果应用程序中使用库，你将需要库的模板中的控件进行布局。 您可以使用的编写公式来定位这些控件**父**运算符，将引用的库模板。 在库模板中的控件上的公式，使用**Parent.TemplateHeight**并**Parent.TemplateWidth**属性，不使用**Parent.Width**和**Parent.Height**，表示库的总体大小。
 
 ![显示模板宽度和高度的垂直库](media/create-responsive-layout/gallery-vertical.png)
 
@@ -163,7 +166,7 @@ ms.locfileid: "58173122"
 |--|--|--|--|--|
 | **X** | 0  | 0 | `Parent.Width - Close.Width` | `Menu.X + Menu.Width` |
 | **Y** | 0 | 0 | 0 | 0 |
-| **Width**  | `Parent.Width` | `Parent.Height` | `Parent.Height` | `Close.X - Title.X` |
+| **宽度**  | `Parent.Width` | `Parent.Height` | `Parent.Height` | `Close.X - Title.X` |
 | **Height** | 64 | `Parent.Height` | `Parent.Height` | `Parent.Height` |
 
 有关**标头**控件，`Parent`指的是屏幕。 对于其他操作系统，`Parent`是指**标头**控件。
@@ -172,7 +175,7 @@ ms.locfileid: "58173122"
 
 ### <a name="components"></a>组件
 
-如果使用另一个实验性功能，名为组件，可以构造构建基块，并重复使用它们在整个应用。 如同**组**控件，组件内放置的控件应使其位置和大小的公式，基于`Parent.Width`和`Parent.Height`，表示组件的大小。 详细信息：[创建组件](create-component.md)
+如果使用另一个实验性功能，名为组件，可以构造构建基块，并重复使用它们在整个应用。 如同**组**控件，组件内放置的控件应使其位置和大小的公式，基于`Parent.Width`和`Parent.Height`，表示组件的大小。 详细信息：[创建组件](create-component.md)。
 
 ## <a name="adapting-layout-for-device-size-and-orientation"></a>调整设备的大小和方向的布局
 
@@ -189,7 +192,7 @@ ms.locfileid: "58173122"
 
 以适应屏幕**宽度**并**高度**属性设备方向，您可以使用以下公式：
 
-**Width** = `Max(App.Width, If(App.Width < App.Height, App.DesignWidth, App.DesignHeight))`
+**宽度** = `Max(App.Width, If(App.Width < App.Height, App.DesignWidth, App.DesignHeight))`
 
 **Height** = `Max(App.Height, If(App.Width < App.Height, App.DesignHeight, App.DesignWidth))`
 
@@ -204,12 +207,12 @@ ms.locfileid: "58173122"
 |--|----------|---|
 | **Upper** | **X** | 0 |
 | **Upper** | **Y** | 0 |
-| **Upper** | **Width** | `If(Parent.Width < Parent.Height, Parent.Width, Parent.Width / 2)` |
+| **Upper** | **宽度** | `If(Parent.Width < Parent.Height, Parent.Width, Parent.Width / 2)` |
 | **Upper** | **Height**   | `If(Parent.Width < Parent.Height, Parent.Height / 2, Parent.Height)` |
-| **较低** | X | `If(Parent.Width < Parent.Height, 0, Upper.X + Upper.Width)`  |
-| **较低** | Y | `If(Parent.Width < Parent.Height, Upper.Y + Upper.Height, 0)` |
-| **较低** | **Width** | `Parent.Width - Lower.X` |
-| **较低** | **Height** | `Parent.Height - Lower.Y` |
+| **Lower** | X | `If(Parent.Width < Parent.Height, 0, Upper.X + Upper.Width)`  |
+| **Lower** | Y | `If(Parent.Width < Parent.Height, Upper.Y + Upper.Height, 0)` |
+| **Lower** | **宽度** | `Parent.Width - Lower.X` |
+| **Lower** | **Height** | `Parent.Height - Lower.Y` |
 
 ![若要调整方向为纵向的表达式](media/create-responsive-layout/portrait.png)
 
