@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e709c600e02d0acf26883da76ead163c62411802
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: 61a7e67b7914e5f844397389833f830244d5af28
+ms.sourcegitcommit: 2dce3fe99828b0ffa23885bc7e11f1a1f871af07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357612"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59098037"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>了解画布应用中的委派
 PowerApps 包括一组功能强大的筛选、 排序和整理的画布应用中的数据的表的函数：**[筛选器](functions/function-filter-lookup.md)**， **[排序](functions/function-sort.md)**，以及**[AddColumns](functions/function-table-shaping.md)** 函数等等。 可以使用这些函数，让用户重点访问其所需的信息。 对于具有数据库背景的用户来说，使用这些函数相当于编写数据库查询。
@@ -29,7 +29,7 @@ PowerApps 包括一组功能强大的筛选、 排序和整理的画布应用中
 
 但这会很复杂，这也是写作本文的原因，因为并非所有能够在 PowerApps 公式中表示的内容都可以委派给所有数据源。 PowerApps 语言与 Excel 的公式语言类似，旨在让用户能够完整且即时地访问内存中的整个工作簿，并且提供各种数字和文本操作函数。 因此，PowerApps 语言要比大多数数据源能够支持的语言（包括强大的数据库引擎，例如 SQL Server）丰富得多。
 
-**处理大型数据集需要使用数据源和能够委派的公式。** 若要让应用始终运行良好，同时要确保用户能够访问所需的全部信息，这是唯一的方式。 请注意，标识不可能委派的位置的委派警告。 如果处理的是小型数据集（不到 500 条记录），则可使用任何数据源和公式，因为当不能委派公式时，应用可以在本地处理数据。 
+**使用大型数据集需要使用数据源和可以委派的公式。** 若要让应用始终运行良好，同时要确保用户能够访问所需的全部信息，这是唯一的方式。 请注意，标识不可能委派的位置的委派警告。 如果处理的是小型数据集（不到 500 条记录），则可使用任何数据源和公式，因为当不能委派公式时，应用可以在本地处理数据。 
 
 > [!NOTE]
 > 以前，委派警告在 PowerApps 中标记为“蓝点”建议，但此后，委派建议已经重新分类为警告。 如果数据源中的数据超过 500 条记录，则不能委派函数，PowerApps 可能不能检索所有数据，应用可能会得到错误的结果。 委派警告可帮助管理应用，使其得到正确的结果。
@@ -59,10 +59,10 @@ PowerApps 包括一组功能强大的筛选、 排序和整理的画布应用中
 * **[+](functions/operators.md)**、**[-](functions/operators.md)**
 * **[TrimEnds](functions/function-trim.md)**
 * **[IsBlank](functions/function-isblank-isempty.md)**
-* **[StartsWith](functions/function-startswith.md)**
+* **[StartsWith](functions/function-startswith.md)**，  **[EndsWith](functions/function-startswith.md)**
 * 所有记录中均相同的常量值，如控件属性和[全局变量和上下文变量](working-with-variables.md)。
 
-还可使用公式中对所有记录的求值结果都是一个常量值的某些部分。 例如，Left( Language(), 2 ) 不依赖于记录的任何列，因此所有记录都会返回同一值。 它实际上是一个常量。 使用上下文变量、集合和信号可能不会获得常量，因此会妨碍 Filter 和 LookUp 委派。  
+还可使用公式中对所有记录的求值结果都是一个常量值的某些部分。 例如，**左侧 (Language()，2)**，**日期 (2019，3，31)**，并**today （)** 不依赖于记录的任何列，因此，返回所有记录的相同值。 这些值可以发送到数据源为常量，不会阻止委派。 
 
 以上列表不包括这些值得注意的项：
 
@@ -72,7 +72,7 @@ PowerApps 包括一组功能强大的筛选、 排序和整理的画布应用中
 * **[ExactIn](functions/operators.md)**
 * 字符串操作函数：**[较低](functions/function-lower-upper-proper.md)**， **[上部](functions/function-lower-upper-proper.md)**， **[左侧](functions/function-left-mid-right.md)**， **[中旬](functions/function-left-mid-right.md)** ，  **[Len](functions/function-left-mid-right.md)**，...
 * 信号：**[位置](functions/signals.md)**， **[加速](functions/signals.md)**， **[指南针](functions/signals.md)**，...
-* 可变函数：**[现在](functions/function-now-today-istoday.md)**， **[今天](functions/function-now-today-istoday.md)**，  **[Rand](functions/function-rand.md)**，...
+* 可变函数：**[Rand](functions/function-rand.md)**，...
 * [集合](working-with-variables.md)
 
 ### <a name="sorting-functions"></a>排序函数
@@ -87,24 +87,32 @@ PowerApps 包括一组功能强大的筛选、 排序和整理的画布应用中
 
 无法委派 [StdevP](functions/function-aggregates.md) 和 [VarP](functions/function-aggregates.md) 等其他聚合函数。
 
+### <a name="table-shaping-functions"></a>表整形函数
+
+**[AddColumns](functions/function-table-shaping.md)**，  **[DropColumns](functions/function-table-shaping.md)**，  **[RenameColumns](functions/function-table-shaping.md)**，和**[ShowColumns](functions/function-table-shaping.md)** 部分支持委派。  可以委派其参数中的公式。  但是，这些函数的输出会受非委派记录限制。
+
+如本示例所示创建者通常使用**AddColumns**并**查找**从一个表的信息合并到另一个，通常称为在数据库中的联接：
+
+```powerapps-dot
+AddColumns( Products, 
+    "Supplier Name", 
+    LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name 
+)
+```
+
+即使**产品**并**供应商**可能是可委派数据源并**查找**是可委派的函数的输出**AddColumns**函数不是可委派。 整个公式的结果仅限于第一部分**产品**数据源。 由于 LookUp 函数及其数据源可以委派，因此可能会在数据源的任何位置找到 Suppliers 的匹配项，即使该数据源很大。 
+
+如果您使用**AddColumns**以此方式**查找**必须为每个这些中的第一个记录进行单独调用数据源**产品**，这将导致大量的网络chatter。 如果**供应商**足够小，并且不会更改通常情况下，您可以调用**收集**函数，在[ **OnStart** ](functions/signals.md)缓存的数据在启动时在应用中的源。 作为替代方法，可以重构您的应用程序，以便仅当用户请求它们拉入相关的记录。  
+ 
 ## <a name="non-delegable-functions"></a>非可委派函数
 所有其他函数都不支持委派，包括以下重要函数：
 
-* 表整理：**[AddColumns](functions/function-table-shaping.md)**，  **[DropColumns](functions/function-table-shaping.md)**，  **[ShowColumns](functions/function-table-shaping.md)**，...
 * **[First](functions/function-first-last.md)**、**[FirstN](functions/function-first-last.md)**、**[Last](functions/function-first-last.md)**、**[LastN](functions/function-first-last.md)**
 * **[Choices](functions/function-choices.md)**
 * **[Concat](functions/function-concatenate.md)**
 * **[Collect](functions/function-clear-collect-clearcollect.md)**、**[ClearCollect](functions/function-clear-collect-clearcollect.md)**
 * **[CountIf](functions/function-table-counts.md)**、**[RemoveIf](functions/function-remove-removeif.md)**、**[UpdateIf](functions/function-update-updateif.md)**
 * **[GroupBy](functions/function-groupby.md)**、**[Ungroup](functions/function-groupby.md)**
-
-常见模式是使用 **AddColumns** 和 **LookUp** 将一个表中的信息合并到另一个表中，用数据库术语来说，通常就是指“联接”。  例如：
-
-**AddColumns( Products, "Supplier Name", LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name )**
-
-即使 Products 和 Suppliers 是可委派的数据源且 LookUp 是可委派的函数，AddColumns 函数也不可委派。  整个公式的结果将仅限于 **Products** 数据源的第一部分。  
-
-由于 LookUp 函数及其数据源可以委派，因此可能会在数据源的任何位置找到 Suppliers 的匹配项，即使该数据源很大。 可能的缺点在于，对于 Products 中第一部分的每个记录，LookUp 都会向数据源发出单独的调用，导致网络上出现大量的零碎信息。 如果 Suppliers 够小且不会经常改变，则可在应用启动时通过调用 Collect 将数据源缓存在应用中（在打开的屏幕上使用 [**OnVisible**](controls/control-screen.md)），然后改为对其执行 LookUp。  
 
 ## <a name="non-delegable-limits"></a>不可委派限制
 将在本地处理不可委派的公式。 这样就可以使用整套 PowerApps 公式语言。 但是也有代价：所有数据都必须先转到设备上，这可能需要通过网络检索大量的数据。 这可能需要一段时间，让人以为应用很慢或者可能已崩溃。

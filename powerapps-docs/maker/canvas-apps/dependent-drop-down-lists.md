@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 02/28/2019
+ms.date: 04/04/2019
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e00c81f25de9a764e8f6d963ff94f3c0ffe052a2
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: dc1b3b87e2c1fdcd4ab7eb6634db7f9e7c049ec2
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357244"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042746"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>创建依赖下拉列表中的画布应用
 
@@ -28,7 +28,7 @@ ms.locfileid: "58357244"
 
 本主题中的方案中，将存储到员工提交问题**事件**通过窗体的列表。 员工指定不只在应用商店的位置事件发生，但也该位置内的部门。 并非所有位置都的同一个部门，因此**位置**列表可确保员工不能指定的位置不都具有该部门的部门。
 
-本主题使用 SharePoint 列表作为数据源，但所有表格数据源的工作方式相同。
+本主题使用 Microsoft SharePoint 列表作为数据源，但所有表格数据源的工作方式相同。
 
 ## <a name="create-data-sources"></a>创建数据源
 
@@ -49,7 +49,7 @@ ms.locfileid: "58357244"
 | Pembroke       | 生成          |
 | Pembroke       | 花卉           |
 
-**事件**列表显示联系人信息以及有关每个事件的信息。 创建日期列作为**日期**列中，但创建的其他列**单行文本**列，以便简化配置并避免[委派](./delegation-overview.md)中的警告PowerApps。
+**事件**列表显示联系人信息以及有关每个事件的信息。 创建日期列作为**日期**列中，但创建的其他列**单行文本**列，以便简化配置并避免[委派](./delegation-overview.md)中的警告Microsoft PowerApps。
 
 | 第一个名称 | 最后一个名称 | 电话号码     | Location | Department | 描述       | Date      |
 |------------|-----------|------------------|----------------|------------|-------------------------|-----------|
@@ -86,7 +86,7 @@ ms.locfileid: "58357244"
 
 ## <a name="replace-the-controls"></a>替换的控件
 
-1. 在中**字段**窗格中，选择向下箭头旁边**位置**。
+1. 在中**字段**窗格中，选择箭头旁边**位置**。
 
     如果已关闭**字段**窗格中，您可以再次打开它通过选择**SharePointForm1**在左侧的导航栏中，然后选择**编辑字段**上**属性**的右侧窗格的选项卡。
 
@@ -108,7 +108,7 @@ ms.locfileid: "58357244"
 1. 选择该列表中，该复选框，然后选择**Connect**。
 
     > [!div class="mx-imgBorder"]
-    > ![数据窗格](./media/dependent-drop-down-lists/select-list.png)
+    > ![“数据”窗格](./media/dependent-drop-down-lists/select-list.png)
 
     连接显示的列表**事件**列表中，基于窗体和**位置**列表中，它将识别位置和窗体中的部门。
 
@@ -144,7 +144,7 @@ ms.locfileid: "58357244"
 
 ## <a name="configure-the-departments"></a>配置部门
 
-1. 选择**ddDepartment** ，然后在**属性**选项卡的右侧窗格中，选择**取决于。**
+1. 选择**ddDepartment**，然后在**属性**选项卡的右侧窗格中，选择**取决于。**
 
 1. 下**控件的父级**，，请确保**ddLocation**出现在上面的列表和**结果**将出现在较低的列表。
 
@@ -202,7 +202,7 @@ ms.locfileid: "58357244"
     > ![更改组合框](./media/dependent-drop-down-lists/combo-box-display-field.png)
 
 **我子下拉列表包含重复的项。**
-此症状可能是由于使用**查找**在 SharePoint 中的列或**选择**PowerApps 中的函数。 若要移除重复项，包装**Distinct**正确返回数据的函数。 详细信息：[Distinct 函数](functions/function-distinct.md)
+此症状可能是由于使用**查找**在 SharePoint 中的列或**选择**PowerApps 中的函数。 若要移除重复项，包装**Distinct**正确返回数据的函数。 详细信息：[Distinct 函数](functions/function-distinct.md)。
 
 ## <a name="known-limitations"></a>已知的限制
 

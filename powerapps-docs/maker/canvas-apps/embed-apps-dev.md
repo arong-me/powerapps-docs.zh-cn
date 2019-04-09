@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a6b23b97195f000e6e17bb6fd6f0e9f3a2da4f09
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.openlocfilehash: e4d3d2e769951ed75ddeeb57f7fe4c0b350d02e7
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799033"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042677"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>将画布应用集成到网站和其他服务中
-如果能够直接将生成的应用集成到用户工作时使用的工具中，通常最为实用。 借助 PowerApps，可以将画布应用嵌入 iframe，以便于将这些应用集成到网站和其他服务中（如 Power BI 或 SharePoint）。
+所构建的应用通常是最有用可用时所在的人员完成其工作的位置。 通过在 iframe 中嵌入的画布应用，可以将这些应用集成到网站和 Power BI 或 SharePoint 等其他服务。
 
 本主题先会介绍如何设置应用嵌入参数；然后，我们将会把资产订购应用嵌入网站。
 
@@ -29,10 +29,10 @@ ms.locfileid: "57799033"
 
 请记住以下限制：
 
-* 只有同一租户中的 PowerApps 用户，才能访问嵌入应用。
-* 若要使用 Internet Explorer 11 访问 PowerApps，必须禁用兼容性视图。
+- 只有同一租户中的 PowerApps 用户，才能访问嵌入应用。
+- 若要使用 Internet Explorer 11 访问 PowerApps，必须禁用兼容性视图。
 
-还可以将 PowerApps 集成到 SharePoint Online 中（不使用 iframe）。 有关详细信息，请参阅[使用 PowerApps 从 SharePoint 中生成应用](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)。
+您可以不使用 iframe 将画布应用集成到 SharePoint Online。 详细信息：[使用 PowerApps web 部件](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c)。
 
 ## <a name="set-uri-parameters-for-your-app"></a>设置应用 URI 参数
 若有要嵌入的应用，第一步是设置统一资源标识符 (URI) 参数，以便 iframe 知道在何处查找应用。 URI 的格式如下：
@@ -58,10 +58,10 @@ https://web.powerapps.com/webplayer/iframeapp?source=iframe
 1. 在 [powerapps.com](https://powerapps.microsoft.com) 中，依次单击或点击“应用”选项卡上的省略号（“...” ）和“详细信息”。
    
     ![转到应用详细信息](./media/embed-apps-dev/details.png)
-2. 复制“应用 ID”。
+1. 复制“应用 ID”。
    
     ![从“详细信息”中复制应用 ID](./media/embed-apps-dev/app-id.png)
-3. 替换 URI 中的 `[AppID]` 值。 对于资产订购应用，URI 如下所示：
+1. 替换 URI 中的 `[AppID]` 值。 对于资产订购应用，URI 如下所示：
    
     ```
     https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Microsoft.PowerApps/apps/76897698-91a8-b2de-756e-fe2774f114f2
@@ -85,8 +85,7 @@ https://web.powerapps.com/webplayer/iframeapp?source=iframe
 
 对应用用户进行身份验证时，请注意以下几点：
 
-* 如果网站使用 Azure Active Directory (AAD) 身份验证，用户无需额外登录。
-* 如果网站使用其他任何登录机制或网站未经身份验证，用户将会在 iframe 上看到登录提示。 登录后，用户便可以运行应用，但前提是应用的作者已与其共享应用。
+- 如果网站使用 Azure Active Directory (AAD) 身份验证，用户无需额外登录。
+- 如果网站使用其他任何登录机制或网站未经身份验证，用户将会在 iframe 上看到登录提示。 登录后，用户便可以运行应用，但前提是应用的作者已与其共享应用。
 
 如你所见，嵌入应用不仅操作简单，而且还能提供非常强大的功能。 通过嵌入应用，可以将应用直接集成到你和客户工作时使用的工具（网站、Power BI 仪表板、SharePoint 页面等）。
-

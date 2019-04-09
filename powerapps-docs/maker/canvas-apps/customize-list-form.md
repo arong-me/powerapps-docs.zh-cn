@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 12/17/2018
+ms.date: 04/04/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 711d8029f0f8353efcdff5bea8cbb1402884502f
-ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
+ms.openlocfilehash: d33f541ea698b02a662edb652f809095f47acc6e
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58765470"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042723"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>使用 PowerApps 自定义 SharePoint 列表窗体
 
@@ -95,13 +95,13 @@ SharePoint 站点上创建列表，并将这些列添加到该列表：
 
 1. 打开列表中，选择**新建**在命令栏中，并选择**自定义**窗体顶部附近。
 
-1. 自定义窗体有许多种情况下，如这些主题描述：
+1. 自定义窗体中有许多种情况下，如这些主题描述：
 
     - 更改其大小和/或方向（例如，[加宽窗体](set-aspect-ratio-portrait-landscape.md)）。
     - [自定义一个或多个卡](working-with-cards.md)（例如，更改卡的显示文本或输入控件）。
     - 创建[查找字段](sharepoint-lookup-fields.md)。
 
-    详细信息：[了解 SharePoint 窗体集成](sharepoint-form-integration.md)
+    详细信息：[了解 SharePoint 窗体集成](sharepoint-form-integration.md)。
 
 ## <a name="use-the-default-form"></a>使用默认窗体
 
@@ -157,7 +157,7 @@ SharePoint 站点上创建列表，并将这些列添加到该列表：
 
 **问：** 如何可以轻松地共享我的窗体与其他人？
 
-**答：** 打开窗体中，选择**将链接复制**，并将链接发送给任何人想要使用窗体。
+**答：** 打开窗体中，选择**将链接复制**，然后将该链接发送到的任何用户想要使用窗体。
 
 **问：** 是否可以更新我的窗体而无需进行其他人可以看到我的更改？
 
@@ -179,7 +179,7 @@ SharePoint 站点上创建列表，并将这些列添加到该列表：
 1. 返回到其他浏览器选项卡中的“版本”页，找到你想要还原的版本，然后选择“还原”。
 
     > [!NOTE]
-    > 如果收到一条错误消息，指示由于窗体被另一个用户锁定而导致还原失败，请等待用户解锁窗体，然后重试。
+    > 如果收到错误消息，指出还原失败，因为窗体被另一个用户锁定，等待用户解锁窗体，，然后重试。
 
 **问：** 能否将我的窗体从一个列表到另一个？
 
@@ -211,6 +211,6 @@ SharePoint 站点上创建列表，并将这些列添加到该列表：
 
 1. 在默认环境页顶部，选择“资源”。
 
-1. 从应用的列表中，查找应用类型为 SharePoint 窗体的应用 - 这些是自定义窗体。
+1. 从应用列表中，查找与应用程序**SharePoint 窗体**应用类型 — 这些是自定义窗体。
 
     ![自定义窗体列表](./media/customize-list-form/all-customized-forms.png)

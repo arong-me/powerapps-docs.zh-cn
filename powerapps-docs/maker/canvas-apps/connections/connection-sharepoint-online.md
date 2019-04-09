@@ -1,30 +1,32 @@
 ---
 title: SharePoint 连接概述 | Microsoft 文档
-description: 请查看可用的函数、响应和 SharePoint 示例
+description: 对于 SharePoint，请参阅可用的函数、 响应和示例。
 author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 07/12/2017
+ms.date: 04/03/2019
 ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 86c23a2da0dca20bb6f755a9cb548c092180ef16
-ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
+ms.openlocfilehash: 65ce3b7736b55f3734d6da7d945965ed791a3ce4
+ms.sourcegitcommit: 4fe0a71efd54c1f4d22a279aa74c6bde3d908b9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58765493"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59007880"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>画布应用从连接到 SharePoint
 
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
 
 连接到 SharePoint 站点，若要从自定义列表自动生成应用或将数据添加到现有应用程序或生成从零开始的应用程序之前创建的连接。
+
+具体取决于你的数据所在的位置，可以采取下列一个或这两种方法：
 
 - 在 SharePoint Online 站点或在本地站点中显示自定义列表中的数据。
 - 显示图像和播放视频或音频文件 (仅限 SharePoint Online) 库中。
@@ -96,7 +98,7 @@ ms.locfileid: "58765493"
     > [!div class="mx-imgBorder"]
     > ![在选择列表中，选择所需的一个或多个列表或文档的复选框，然后选择连接](./media/connection-sharepoint-online/select-sp-tables.png)
 
-    默认情况下，并非所有类型的列表都会显示。 PowerApps 支持自定义列表，而不是基于模板的列表。  如果要使用的列表名称未显示，请滚动到底部，再在“输入自定义列表名称”框中键入列表名称。
+    默认情况下，并非所有类型的列表都会显示。 PowerApps 支持自定义列表，而不是基于模板的列表。 如果你想要使用的列表的名称未显示，滚动到底部，然后在包含框中键入列表的名称**输入自定义表名称**。
 
     > [!div class="mx-imgBorder"]
     > ![包含输入自定义列表名称框中键入列表的名称。](./media/connection-sharepoint-online/custom-list.png)
@@ -111,20 +113,20 @@ ms.locfileid: "58765493"
 
 如果您自定义列表包含以下任何类型的列，显示在该数据**库**控件中的使用编辑栏设置**文本**属性的一个或多个**标签**在库中的控件：
 
-- 对于“选择”或“查找”列，请指定 **ThisItem.[ColumnName].Value** 以显示该列中的数据。
+- 有关**选**或**查找**列中，指定**ThisItem。**_ColumnName_**。值**以显示该列中的数据。
 
     例如，如果具有名为 **Location** 的“选择”列，请指定 **ThisItem.Location.Value**，如果有名为 **PostalCode** 的“查找”列，请指定 **ThisItem.PostalCode.Value**。
 
-- 对于“用户或用户组”列，请指定 **ThisItem.[ColumnName].DisplayName** 以显示该用户或用户组的显示名称。
+- 有关**用户组**列中，指定**ThisItem。**_ColumnName_**。DisplayName**以显示用户或组的显示名称。
 
     例如，指定 **ThisItem.Manager.DisplayName** 以显示名为 **Manager** 的“用户或用户组”列中的显示名称。
 
-    还可以显示关于用户的其他信息，如电子邮件地址或职务等。 若要显示完整的选项列表，请指定 **ThisItem.[ColumnName].** （含结尾句点）。
+    还可以显示关于用户的其他信息，如电子邮件地址或职务等。 若要显示的选项的完整列表，请指定**ThisItem。**_ColumnName_**。** （包括尾随的句点）。
 
     > [!NOTE]
     > 有关**CreatedBy**列中，指定**ThisItem.Author.DisplayName**若要显示在列表中创建项的用户的显示名称。 对于“修改者”列，请指定 **ThisItem.Editor.DisplayName** 以显示更改列表中的项的用户的显示名称。
 
-- 对于“托管元数据”列，请指定 **ThisItem.[ColumnName].Label** 以显示该列中的数据。
+- 有关**托管元数据**列中，指定**ThisItem。**_ColumnName_**。标签**以显示该列中的数据。
 
     例如，如果具有名为 **Languages** 的“托管元数据”列，请指定 **ThisItem.Languages.Label**。
 

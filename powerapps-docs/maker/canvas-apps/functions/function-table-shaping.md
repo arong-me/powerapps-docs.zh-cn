@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 08/24/2018
+ms.date: 04/04/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7b0701c9fcf7033ab8d57bb039972ce63c8faf29
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.openlocfilehash: fc682694bb22ecc63ecc762a735df07950ce29d3
+ms.sourcegitcommit: 2dce3fe99828b0ffa23885bc7e11f1a1f871af07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57802391"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59096158"
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>PowerApps 中的 AddColumns、DropColumns、RenameColumns 和 ShowColumns 函数
 通过添加、删除、重命名和选择[表](../working-with-tables.md)的[列](../working-with-tables.md#columns)来为表造型。
@@ -49,9 +49,20 @@ ms.locfileid: "57802391"
 
 **ShowColumns** 函数包含某个表的列并删除其他所有列。 可以使用 **ShowColumns** 从多列表创建单列表。  **ShowColumns** 包含列，**DropColumns** 排除列。  
 
-对于所有这些函数，结果是已应用转换的新表。  不会修改原始表。
+对于所有这些函数，结果是已应用转换的新表。 不会修改原始表。 不能修改现有表的公式。 SharePoint、 Common Data Service、 SQL Server 和其他数据源修改的列的列表、 实体和表，这通常称为架构提供工具。 本主题中的函数仅转换输入的表，而无需修改原始，到输出表中供将来使用。
 
-[!INCLUDE [delegation-no](../../../includes/delegation-no.md)]
+这些函数的参数支持委派。 例如，**筛选器**函数作为自变量用于拉入所有列表，将相关的记录搜索即使 **[dbo]。 [AllListings]** 数据源包含 100 万行：
+
+```powerapps-dot
+AddColumns( RealEstateAgents, 
+    "Listings",  
+    Filter(  '[dbo].[AllListings]', ListingAgentName = AgentName ) 
+)
+```
+
+但是，这些函数的输出都将遵守[非委派记录限制](../delegation-overview.md#non-delegable-limits)。  仅是 500 个记录返回在此示例中，即使**RealEstateAgents**数据源具有 501 或多个记录。
+
+如果使用**AddColumns**以此方式**筛选器**必须为每个这些中的第一个记录进行单独调用数据源**RealEstateAgents**，这将导致大量的网络 chatter。 如果 **[dbo]。 [AllListings]** 够小且不会更改通常情况下，您可以调用**收集**函数，在[ **OnStart** ](signals.md#app)来缓存应用程序中的数据源启动时间。 作为替代方法，可以重构您的应用程序，以便仅当用户请求它们拉入相关的记录。  
 
 ## <a name="syntax"></a>语法
 **AddColumns**( *Table*, *ColumnName1*, *Formula1* [, *ColumnName2*, *Formula2*, ... ] )
@@ -90,14 +101,41 @@ ms.locfileid: "57802391"
 | **ShowColumns( IceCreamSales, "Flavor" )** |仅在结果中包含 **Flavor** 列。 使用此函数可包含列，使用 **DropColumns** 可排除列。 |![](media/function-table-shaping/icecream-select-flavor.png) |
 | **RenameColumns( IceCreamSales, "UnitPrice", "Price")** |重命名**UnitPrice**结果列。 |![](media/function-table-shaping/icecream-rename-price.png) |
 | **RenameColumns( IceCreamSales, "UnitPrice", "Price", "QuantitySold", "Number")** |重命名结果中的 UnitPrice 和 QuantitySold 列。 |![](media/function-table-shaping/icecream-rename-price-quant.png) |
-| **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, "Revenue",<br>UnitPrice * QuantitySold ),<br>"UnitPrice", "Price" ),<br>"Quantity" )** |从公式内部开始，按顺序执行以下表转换： <ol><li>根据针对每条记录计算 **UnitPrice * Quantity** 后的结果添加 **Revenue** 列。<li>将 **UnitPrice** 重命名为 **Price**。<li>排除 **Quantity** 列。</ol>  请注意，顺序很重要。 例如，不能在重命名 **UnitPrice** 后计算该列。 |![](media/function-table-shaping/icecream-all-transforms.png) |
+| **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, "Revenue",<br>UnitPrice * QuantitySold)，<br>"UnitPrice", "Price" ),<br>"Quantity" )** |从公式内部开始，按顺序执行以下表转换： <ol><li>根据针对每条记录计算 **UnitPrice * Quantity** 后的结果添加 **Revenue** 列。<li>将 **UnitPrice** 重命名为 **Price**。<li>排除 **Quantity** 列。</ol>  请注意，顺序很重要。 例如，不能在重命名 **UnitPrice** 后计算该列。 |![](media/function-table-shaping/icecream-all-transforms.png) |
 
 ### <a name="step-by-step"></a>分步操作
-1. 导入或创建一个名为 **Inventory** 的集合，作为[在库中显示图像和文本](../show-images-text-gallery-sort-filter.md)中所述的第一个子过程。
-2. 添加一个按钮，然后将其 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：
-   
-    **ClearCollect(Inventory2, RenameColumns(Inventory, "ProductName", "JacketID"))**
-3. 按 F5，选择刚刚创建的按钮，然后按 Esc 返回设计工作区。
-4. 在“文件”菜单中选择“集合”。
-5. 确认已创建名为 **Inventory2** 的集合。 新集合包含的信息与 **Inventory**  相同，不过，**Inventory** 中名为 **ProductName** 的列在 **Inventory2** 中名为 **JacketID**。
 
+让我们尝试从本主题中前面的示例。  
+
+1. 通过添加创建集合**[按钮](../controls/control-button.md)** 控件并设置其**OnSelect**属性设为此公式：
+
+    ```powerapps-dot
+    ClearCollect( IceCreamSales, 
+        Table(
+            { Flavor: "Strawberry", UnitPrice: 1.99, QuantitySold: 20 }, 
+            { Flavor: "Chocolate", UnitPrice: 2.99, QuantitySold: 45 },
+            { Flavor: "Vanilla", UnitPrice: 1.50, QuantitySold: 35 }
+        )
+    )
+    ```
+
+1. 通过在按住 Alt 键的同时选择的按钮运行该公式。
+
+1. 添加另一个**按钮**控件，将其**OnSelect**属性设为此公式，然后运行它：
+
+    ```powerapps-dot
+    ClearCollect( FirstExample, 
+        AddColumns( IceCreamSales, "Revenue", UnitPrice * QuantitySold )
+    ) 
+    ```
+1. 上**文件**菜单中，选择**集合**，然后选择**IceCreamSales**以显示该集合。
+ 
+    如图所示，第二个公式不修改此集合。 **AddColumns**使用函数**IceCreamSales**作为只读的参数; 该函数未修改该参数所引用的表。
+    
+    ![显示冰激销售额集合中不包含收入列的三条记录的集合查看器](media/function-table-shaping/ice-cream-sales-collection.png)
+
+1. 选择**FirstExample**。
+
+    如图所示，第二个公式将返回具有添加的列的新表。 **ClearCollect**函数捕获中的新表**FirstExample**集合，将一些内容添加到原始表，因为它不修改源流动函数：
+
+    ![显示包含新的收入列的第一个示例集合的三条记录的集合查看器](media/function-table-shaping/first-example-collection.png)
