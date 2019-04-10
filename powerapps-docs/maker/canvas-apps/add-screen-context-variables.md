@@ -45,7 +45,7 @@ ms.locfileid: "57800712"
 ![重新排列屏幕](./media/add-screen-context-variables/reorder-screen.png)
 
 > [!NOTE]
-> 打开应用时，屏幕顶部的控件的层次结构列表通常会显示第一个。 但您可以通过设置指定不同的屏幕**[OnStart](controls/control-screen.md)** 属性设置为公式，其中包括**[Navigate](functions/function-navigate.md)** 函数。
+> 打开应用时，屏幕顶部的控件的层次结构列表通常会显示第一个。 但您可以通过设置指定不同的屏幕 **[OnStart](controls/control-screen.md)** 属性设置为公式，其中包括 **[Navigate](functions/function-navigate.md)** 函数。
 
 ## <a name="add-navigation"></a>添加导航
 
