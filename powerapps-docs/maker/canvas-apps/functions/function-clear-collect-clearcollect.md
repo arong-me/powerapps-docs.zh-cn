@@ -30,7 +30,7 @@ ms.locfileid: "54418269"
 
 **Collect** 函数将记录添加到数据源。 可添加的项包括：
 
-- 单个值：值将放入**[值](function-value.md)** 新记录的字段。  所有其他属性保留为[空白](function-isblank-isempty.md)。
+- 单个值：值将放入 **[值](function-value.md)** 新记录的字段。  所有其他属性保留为[空白](function-isblank-isempty.md)。
 - 一条记录：每个命名的属性都置于新记录的相应属性中。  所有其他属性保留为空白。
 - 一个[表](../working-with-tables.md):表的每条记录被添加为数据源，如上文所述的单独的记录。 表不是以嵌套表形式添加到记录。 为实现此目的，需首先将表包装在记录中。
 

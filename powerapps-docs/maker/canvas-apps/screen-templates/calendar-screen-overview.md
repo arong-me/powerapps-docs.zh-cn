@@ -77,7 +77,7 @@ ms.locfileid: "54459496"
 
 如果您已经知道应查看你的用户的日历，可以通过指定该日历，然后发布该应用程序来简化屏幕。 可以将其删除，此更改将不再需要的日历，下拉列表。
 
-1. 设置**[OnStart](../controls/control-screen.md)** 属性的默认屏幕中为此公式应用：
+1. 设置 **[OnStart](../controls/control-screen.md)** 属性的默认屏幕中为此公式应用：
 
     ```powerapps-dot
     Set( _userDomain, Right( User().Email, Len( User().Email ) - Find( "@", User().Email ) ) );
