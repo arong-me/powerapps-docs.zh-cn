@@ -55,7 +55,7 @@ ms.locfileid: "57802023"
 * [HoverFill](controls/properties-color-border.md) 和控件范围之外的颜色
 
 ### <a name="graphical-objects"></a>图形对象
-如果图像传达重要信息，请考虑检查其对比度问题。 这适用于在其中可以显示图像的控件：**[音频](controls/control-audio-video.md)**， **[图像](controls/control-image.md)**， **[麦克风](controls/control-microphone.md)**，和**[视频](controls/control-audio-video.md)**.
+如果图像传达重要信息，请考虑检查其对比度问题。 这适用于在其中可以显示图像的控件： **[音频](controls/control-audio-video.md)**， **[图像](controls/control-image.md)**， **[麦克风](controls/control-microphone.md)**，和 **[视频](controls/control-audio-video.md)**.
 
 有关视频内容，请考虑检查其对比度问题。 或者另外提供[隐藏式字幕](controls/control-audio-video.md)来描述视频。
 
