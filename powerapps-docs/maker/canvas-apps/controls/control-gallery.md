@@ -13,22 +13,29 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 710bc4a11e4de9921e0efa077cb0e18f58f09cb5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: ba5df28f03ec5e7c9a3d8146aecb0427d8145b13
+ms.sourcegitcommit: dc578df718420c7f19e4583d9e7002e69495e268
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831495"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59425302"
 ---
-# <a name="gallery-control-in-powerapps"></a>PowerApps 中的库控件
+# <a name="gallery-control-in-canvas-apps"></a>库控件中的画布应用
+
 包含其他控件并显示一组数据的控件。
 
 ## <a name="description"></a>描述
+
 “库”控件可以显示数据源中的多条记录，每条记录都能包含多种类型的数据。 例如，“库”控件可以显示多个联系人，其中每一项都用于显示联系人信息，包括每个联系人的姓名、地址和电话号码。 每个数据字段显示在“库”控件的单独控件内，可以在库模板中配置这些控件。 此模板显示为库中的第一项，如果库为水平/横向，此模板显示在“库”控件的左边缘；如果库为垂直/纵向，此模板显示在“库”控件的上边缘。 在模板中执行的任何更改都会反映在整个“库”控件中。
 
-不仅可以预定义库模板来显示图像、文本，还可以使用库来显示高度不同的项。
+显示图像和文本在库中的都可用，以及一个高度可变的项的库的预定义的模板。
+
+## <a name="limitations"></a>限制
+
+如果用户滚动**可变高度**库控件之前加载的所有项，它当前处于视图可能会被推下并向外视图的数据加载完成后的项。 若要避免此问题，请使用标准**库**而不是控制**可变高度**变体。
 
 ## <a name="key-properties"></a>关键属性
+
 [Default](properties-core.md) - 应用启动时，要在库中选择的数据源项或记录。
 
 **[Items](properties-core.md)** – 控件中显示的数据源，如库、列表或图表。
@@ -36,7 +43,8 @@ ms.locfileid: "42831495"
 Selected - 选定项。
 
 ## <a name="additional-properties"></a>其他属性
-**[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。 应描述项列表是什么。
+
+**[AccessibleLabel](properties-accessibility.md)**  – 屏幕阅读器标签的库 （不包含的项）。 应描述项列表是什么。
 
 AllItems - 库中的所有项，其中包括属于库模板的附加控件值。
 
@@ -52,9 +60,11 @@ AllItems - 库中的所有项，其中包括属于库模板的附加控件值。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
-Layout - 用户在滚动浏览库时是从上向下（**垂直**）还是从左向右（**水平**）滚动滑块。
+**ItemAccessibleLabel** – 屏幕阅读器每个库项的标签。 应描述每个项是什么。
 
 NavigationStep - 当库的“ShowNavigation”属性设为“true”，且用户选择库任意一端的导航箭头时，库的滚动距离。
+
+**可选择**-是否可以选择库项。 如果设置为 **，则返回 true**，屏幕阅读器确定库作为可选择列表中，并通过单击或点击它选择一个项。 如果设置为**false**，屏幕阅读器标识库作为常规列表，并单击或点击某个项不会选中它。
 
 ShowNavigation - 是否在库的每一端显示一个箭头，以便用户可以通过单击或点击箭头滚动浏览库中的项。
 
@@ -81,36 +91,52 @@ WrapCount - 每行或每列（具体取决于是水平布局还是垂直布局�
 **[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="related-functions"></a>相关函数
+
 [**Filter**( *DataSource*, *Formula* )](../functions/function-filter-lookup.md)
 
 ## <a name="examples"></a>示例
+
 ### <a name="show-and-filter-data"></a>显示和筛选数据
+
 * [显示文本](control-text-box.md#show-data-in-a-gallery)
 * [显示图像](control-image.md#show-a-set-of-images-from-a-data-source)
 * [通过选择列表选项筛选数据](control-drop-down.md#example)
 * [通过调整滑块筛选数据](control-slider.md#example)
 
 ### <a name="get-data-from-the-user"></a>从用户获取数据
+
 * [获取文本](control-text-input.md#collect-data)
-* [获取图像](control-add-picture.md#add-images-to-an-image-gallery-control)
+* [获取映像](control-add-picture.md#add-images-to-an-image-gallery-control)
 * [获取照片](control-camera.md#example)
 * [获取声音](control-microphone.md#example)
 * [获取绘图](control-pen-input.md#create-a-set-of-images)
 
-
 ## <a name="accessibility-guidelines"></a>辅助功能准则
+
 ### <a name="color-contrast"></a>颜色对比度
+
 如果在库项中单击任何位置都是要选择它，那么在以下项之间必须有足够的颜色对比度：
+
 * **[BorderColor](properties-color-border.md)** 和库外的颜色（如果没有边框）
 * **[Fill](properties-color-border.md)** 和库范围之外的颜色（如果没有边框）
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
+
 * **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
 
     > [!NOTE]
-  > 库中的项更改时，屏幕阅读器将发出公告。 还将提到“AccessibleLabel”。 这为公告提供上下文，甚至在同一个屏幕上有多个库的情况下更为重要。
+    > 库中的项更改时，屏幕阅读器将公布。 还将提到“AccessibleLabel”。 这为公告提供上下文，甚至在同一个屏幕上有多个库的情况下更为重要。
+
+* 当库项包含多个控件时，可以使用**ItemAccessibleLabel**汇总的库项的内容。
+
+* 设置的值**可选**到**true**如果你希望用户选择库项。 否则，将该值设置为**false**。
+
+* 当库项包含多个控件时，可以使用**ItemAccessibleLabel**要汇总的库项的内容。
+
+* **可选择**设置应正确，具体取决于用户是否要选择库项。
 
 ### <a name="keyboard-support"></a>键盘支持
+
 * 请考虑将“ShowScrollbar”设置为“true”。 在大多数触摸屏设备上，在开始滚动之前，不会显示滚动条。
 * 如果在库项中单击任何位置都是要选择它，还必须为键盘用户提供选择库项的方法。 例如，添加一个 **[按钮](control-button.md)** ，并将其“OnSelect”属性设置为“Select(Parent)”。
 
