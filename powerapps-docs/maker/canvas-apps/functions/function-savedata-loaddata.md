@@ -28,13 +28,13 @@ ms.locfileid: "57800344"
 
 **LoadData** 函数使用此前通过 **SaveData** 保存的名称重新加载集合。 不能使用此函数加载另一个源的集合。  
 
-使用这些函数通过缓存中的数据来提高应用程序启动性能**[App.OnStart](../controls/control-screen.md#additional-properties)** 公式上首次运行并将其重新加载在后续运行的本地缓存。 也可以使用这些函数将添加[简单的离线功能](../offline-apps.md)到您的应用程序。
+使用这些函数通过缓存中的数据来提高应用程序启动性能 **[App.OnStart](../controls/control-screen.md#additional-properties)** 公式上首次运行并将其重新加载在后续运行的本地缓存。 也可以使用这些函数将添加[简单的离线功能](../offline-apps.md)到您的应用程序。
 
 创作 PowerApps Studio 中的应用程序或 web 播放机中运行应用程序时，不能使用在浏览器中，这些函数。 若要测试您的应用程序，它在 PowerApps Mobile 中上运行的 iPhone 或 Android 设备。
 
 这些函数都受可用的应用的内存量，因为它们在内存中集合上运行。 具体取决于设备和操作系统，使用 PowerApps 播放器，内存和应用程序在屏幕和控件方面的复杂性而异的可用内存。 如果存储超过几兆字节的数据，请测试预期方案要运行的应用在其上的设备上使用对应用程序。 您通常应该会有 30 和 70 兆字节的可用内存。  
 
-**LoadData** 不创建集合；此函数仅填充现有集合。 必须先通过 **[Collect](function-clear-collect-clearcollect.md)** 使用正确的[列](../working-with-tables.md#columns)创建集合。 加载的数据将追加到集合;使用**[清除](function-clear-collect-clearcollect.md)** 首先函数，如果你想要开始使用一个空集合。
+**LoadData** 不创建集合；此函数仅填充现有集合。 必须先通过 **[Collect](function-clear-collect-clearcollect.md)** 使用正确的[列](../working-with-tables.md#columns)创建集合。 加载的数据将追加到集合;使用 **[清除](function-clear-collect-clearcollect.md)** 首先函数，如果你想要开始使用一个空集合。
 
 存储经过加密，位于本地设备上的专用位置，与其他用户和其他应用隔离。
 
