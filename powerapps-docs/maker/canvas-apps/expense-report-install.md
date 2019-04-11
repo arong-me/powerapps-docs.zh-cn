@@ -44,7 +44,7 @@ ms.locfileid: "58581061"
 
 此列表存储支出报表。
 
-1. 打开 Web 浏览器并导航到 https://admin.microsoft.com。
+1. 打开 Web 浏览器并导航到 https://admin.microsoft.com 。
 2. 用具有列表创建权限的帐户登录。
 3. 导航到支出列表要驻留的站点集合。
 4. 单击网页右上角的齿轮图标。
