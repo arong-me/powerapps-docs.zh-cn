@@ -70,14 +70,14 @@ ms.locfileid: "57892290"
     库仅显示 Europa，因为只有它的名称中包含你所指定的字母。
 
 ## <a name="thisitem-operator"></a>ThisItem 运算符
-通过将数据绑定到表或集合，可以在**[库](../controls/control-gallery.md)**、**[编辑窗体](../controls/control-form-detail.md)** 或**[显示窗体](../controls/control-form-detail.md)** 控件中显示数据。  这些控件是其他卡和控件的容器。  容器内的每个卡或控件均能通过 **[ThisItem](operators.md#thisitem-operator)** 运算符访问绑定的数据。   
+通过将数据绑定到表或集合，可以在 **[库](../controls/control-gallery.md)**、 **[编辑窗体](../controls/control-form-detail.md)** 或 **[显示窗体](../controls/control-form-detail.md)** 控件中显示数据。  这些控件是其他卡和控件的容器。  容器内的每个卡或控件均能通过 **[ThisItem](operators.md#thisitem-operator)** 运算符访问绑定的数据。   
 
 使用 **[ThisItem](operators.md#thisitem-operator)** 运算符指定外部控件内的每个卡或控件的数据的[列](../working-with-tables.md#columns)。 例如，[在库中显示图像和文本](../show-images-text-gallery-sort-filter.md)的产品库中的运算符指定图像控件显示产品设计、上部标签显示产品名称，而下部标签显示库存单位数。
 
 对于嵌套库，**[ThisItem](operators.md#thisitem-operator)** 指的是最里面的库的项。 假定内部和外部库的行字段不冲突，还可以直接使用未限定的字段（列）名称。 此方法启用内部库中的规则，以引用外部库的项。
 
 ## <a name="parent-operator"></a>Parent 运算符
-某些控件托管其他控件。 例如，**[屏幕](../controls/control-screen.md)**、**[库](../controls/control-gallery.md)**、**[卡](../controls/control-card.md)**、**[编辑窗体](../controls/control-form-detail.md)** 和**[显示窗体](../controls/control-form-detail.md)** 控件都是控件的容器。 我们将托管控件称为控件内部的“父级”。
+某些控件托管其他控件。 例如， **[屏幕](../controls/control-screen.md)**、 **[库](../controls/control-gallery.md)**、 **[卡](../controls/control-card.md)**、 **[编辑窗体](../controls/control-form-detail.md)** 和 **[显示窗体](../controls/control-form-detail.md)** 控件都是控件的容器。 我们将托管控件称为控件内部的“父级”。
 
 PowerApps 中的任何控件都可由应用内任何位置的名称引用。 **Screen1** 可能是应用中屏幕的名称。 若要检索此屏幕的背景色，可以使用 **Screen1.Fill**。
 

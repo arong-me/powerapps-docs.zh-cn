@@ -320,7 +320,7 @@ ms.locfileid: "58765574"
     )
     ```
 
-   **MyCalendarEvents**集合包含之间的所有事件 **\_minDate**并 **\_maxDate**。 为了显示仅选定的日期的事件，筛选器应用上**MyCalendarEvents**来显示事件具有开始日期等于**\ _dateSelected**。 项然后按其开始日期，以将其放在连续顺序排序。
+   **MyCalendarEvents**集合包含之间的所有事件 **\_minDate**并 **\_maxDate**。 为了显示仅选定的日期的事件，筛选器应用上 **MyCalendarEvents**来显示事件具有开始日期等于 **\  _dateSelected**。 项然后按其开始日期，以将其放在连续顺序排序。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -30,7 +30,7 @@ ms.locfileid: "57802000"
 
 ## <a name="key-properties"></a>关键属性
 
-**[AutoHeight](properties-core.md)**  -设置为 true，则标签会自动增长的高度，以显示所有文本。 设置为“false”将文本截断至分配的高度。
+**[AutoHeight](properties-core.md)** -设置为 true，则标签会自动增长的高度，以显示所有文本。 设置为“false”将文本截断至分配的高度。
 
 **[Color](properties-color-border.md)** – 控件中文本的颜色。
 
@@ -181,15 +181,15 @@ ms.locfileid: "57802000"
 * **[Live](properties-accessibility.md)** 应设置为**礼貌**或**Assertive**屏幕读取器应宣布更改的值**文本**属性。
 
   > [!NOTE]
-  > 当**[“TabIndex”](properties-accessibility.md)** 为零或更大，屏幕阅读器会将“标签”视为按钮。
+  > 当 **[“TabIndex”](properties-accessibility.md)** 为零或更大，屏幕阅读器会将“标签”视为按钮。
 
 ### <a name="low-vision-support"></a>弱视支持
 
 * 如果“标签”作为链接使用，则应采用链接的形式。
-  * 将**[“Underline”](properties-text.md)** 设置为 **true**
-  * **[“HoverColor”](properties-color-border.md)** 应不同于**[“Color”](properties-color-border.md)**
+  * 将 **[“Underline”](properties-text.md)** 设置为 **true**
+  * **[“HoverColor”](properties-color-border.md)** 应不同于 **[“Color”](properties-color-border.md)**
 
 ### <a name="keyboard-support"></a>键盘支持
 
 * 如果文本用作按钮或链接，**[“TabIndex”](properties-accessibility.md)** 必须为零或更大。 这允许键盘用户导航到它。
-* 如果文本用作按钮或链接，焦点指示器必须清楚显示。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness](properties-color-border.md)**”来实现此目的。
+* 如果文本用作按钮或链接，焦点指示器必须清楚显示。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness](properties-color-border.md)**”来实现此目的。

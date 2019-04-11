@@ -88,7 +88,7 @@ ms.locfileid: "57803380"
 
 ![Excel 重新计算两个数字之和的动画](./media/working-with-formulas/excel-recalc.gif)
 
-在 PowerApps 中，可以通过向屏幕添加控件并设置其属性来获得类似结果。 此示例演示一个名为的标签控件**Label1**并将两个**[文本输入](controls/control-text-input.md)** 控件，分别命名为**TextInput1**和**TextInput2**。
+在 PowerApps 中，可以通过向屏幕添加控件并设置其属性来获得类似结果。 此示例演示一个名为的标签控件 **Label1**并将两个 **[文本输入](controls/control-text-input.md)** 控件，分别命名为 **TextInput1**和 **TextInput2**。
 
 ![PowerApps 重新计算两个数字之和的图示](./media/working-with-formulas/recalc1.png)
 
@@ -98,7 +98,7 @@ ms.locfileid: "57803380"
 
 ![PowerApps 重新计算两个数字之和的动画](./media/working-with-formulas/recalc2.gif)
 
-在 Excel 中，可用于条件格式设置的公式，例如，将负值显示为红色。 在 PowerApps 中，使用公式不仅可以确定控件的主值，还可以确定属性（例如格式设置）。 在下一步的示例中，公式**[颜色](controls/properties-color-border.md)** 标签的属性自动以红色显示负值。 **[If](functions/function-if.md)** 函数看起来应该与 Excel 中的很相似：
+在 Excel 中，可用于条件格式设置的公式，例如，将负值显示为红色。 在 PowerApps 中，使用公式不仅可以确定控件的主值，还可以确定属性（例如格式设置）。 在下一步的示例中，公式 **[颜色](controls/properties-color-border.md)** 标签的属性自动以红色显示负值。 **[If](functions/function-if.md)** 函数看起来应该与 Excel 中的很相似：
 
 `If( Value(Label1.Text) < 0, Red, Black )`
 

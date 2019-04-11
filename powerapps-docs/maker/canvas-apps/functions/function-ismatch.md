@@ -26,7 +26,7 @@ ms.locfileid: "57798366"
 ## <a name="description"></a>说明
 **IsMatch** 函数用于测试文本字符串是否与包含普通字符、预定义模式或[正则表达式](#regular-expressions)的某种模式相符。  **匹配**并**MatchAll**函数返回什么匹配的包括子匹配项。  
 
-使用 **IsMatch** 函数可验证用户在**[文本输入](../controls/control-text-input.md)** 控件中输入的内容。 例如，可以在将结果保存到数据源中之前验证用户输入的电子邮件地址是否有效。 如果输入的内容与条件不符，可添加其他控件提示用户更正输入。
+使用 **IsMatch** 函数可验证用户在 **[文本输入](../controls/control-text-input.md)** 控件中输入的内容。 例如，可以在将结果保存到数据源中之前验证用户输入的电子邮件地址是否有效。 如果输入的内容与条件不符，可添加其他控件提示用户更正输入。
 
 使用**匹配**提取第一个文本字符串与模式匹配和**MatchAll**提取所有匹配的文本字符串。 此外可以提取个子匹配来解析复杂的字符串。   
 
@@ -45,7 +45,7 @@ ms.locfileid: "57798366"
 
 如果文本字符串与模式相符，则 **IsMatch** 函数返回 *true*；否则，返回 *false*。 **匹配**将返回*空白*如果未找到匹配的可以测试[ **IsBlank** ](function-isblank-isempty.md)函数。 **MatchAll**返回一个空表，如果未找到匹配的可以测试[ **IsEmpty** ](function-isblank-isempty.md)函数。
 
-如果您使用的**MatchAll**要拆分的文本字符串，请考虑使用**[拆分](function-split.md)** 函数，这是更易于使用且更快。
+如果您使用的 **MatchAll**要拆分的文本字符串，请考虑使用 **[拆分](function-split.md)** 函数，这是更易于使用且更快。
 
 ## <a name="patterns"></a>模式
 使用这些函数的关键在于描述要匹配的模式。 你可以组合使用以下文本字符串来描述模式：
@@ -61,7 +61,7 @@ ms.locfileid: "57798366"
 
 例如，当与一起使用时**IsMatch**函数，字符串"Hello"与模式匹配 **"Hello"** 完全。 不多不少，正好相符。 字符串“hello!” 不会与模式匹配由于感叹号上结束，因为这种情况是错误的字母"h"。 （有关修改这种行为的方法，请参阅 [MatchOptions](#match-options)。）
 
-模式语言中有一些保留字符，这些字符有特殊的用途。 若要使用这些字符，添加前缀与字符**\\** （反斜杠） 以指示应按字面意思采取字符或更高版本中本主题所述使用预定义的模式之一。 下表列出了这些特殊字符：
+模式语言中有一些保留字符，这些字符有特殊的用途。 若要使用这些字符，添加前缀与字符 **\\** （反斜杠） 以指示应按字面意思采取字符或更高版本中本主题所述使用预定义的模式之一。 下表列出了这些特殊字符：
 
 | 特殊字符 | 描述 |
 | --- | --- |
@@ -124,7 +124,7 @@ ms.locfileid: "57798366"
 | MatchOptions 枚举 | 说明 | 对正则表达式的影响 |
 | --- | --- | --- |
 | **BeginsWith** |模式必须与文本的开头匹配。 |在正则表达式的开头添加 **^**。 |
-| **Complete** |默认**IsMatch**。 模式必须与匹配文本，从开始到结束的整个的字符串。 |将添加**^** 到起始位置和一个**$** 到正则表达式的末尾。 |
+| **Complete** |默认**IsMatch**。 模式必须与匹配文本，从开始到结束的整个的字符串。 |将添加 **^** 到起始位置和一个 **$** 到正则表达式的末尾。 |
 | **Contains** |默认**匹配**并**MatchAll**。 模式必须出现在文本中，但不必与开头或结尾匹配。 |不修改正则表达式。 |
 | **EndsWith** |模式必须与匹配的文本字符串的末尾。 |在正则表达式的末尾添加 **$**。 |
 | **IgnoreCase** |将大写和小写字母视为相同。 默认情况下，匹配时区分大小写。 |不修改正则表达式。 此选项相当的正则表达式的标准"i"修饰符。  |
@@ -191,10 +191,10 @@ ms.locfileid: "57798366"
 |--------|------------|-----------|
 | `Match( "Bob Jones <bob.jones@contoso.com>", "<(?<email>" & Match.Email & ")>"` | 提取的联系人信息的电子邮件部分。  | {<br>email:&nbsp;"bob.jones@contoso.com",<br>FullMatch:&nbsp;"&lt;bob.jones@contoso.com>",<br>SubMatches:&nbsp;[&nbsp;"bob.jones@contoso.com"&nbsp;],<br>StartMatch:11<br>}  
 | `Match( "Bob Jones <InvalidEmailAddress>", "<(?<email>" & Match.Email & ")>"` | 提取的联系人信息的电子邮件部分。 找到不合法的地址 (没有不 @ 符号)，因此该函数将返回*空白*。 | 空白 |  
-| `Match( Language(), "(<language>\w{2})(?:-(?<script>\w{4}))?(?:-(?<region>\w{2}))?" )` | 提取语言的语言、 脚本和区域部分标记**[语言](function-language.md)** 函数返回。 这些结果反映美国;请参阅[**语言**函数文档](function-language.md)有关更多示例。  **(？:** 运算符而无需创建另一个子匹配项进行分组的字符。 | {<br>语言:"en"，<br>脚本：*空白*， <br>区域："我们"<br>FullMatch: "en-US", <br>SubMatches: [ "en", "", "US" ], <br>StartMatch:1<br>} 
+| `Match( Language(), "(<language>\w{2})(?:-(?<script>\w{4}))?(?:-(?<region>\w{2}))?" )` | 提取语言的语言、 脚本和区域部分标记 **[语言](function-language.md)** 函数返回。 这些结果反映美国;请参阅[**语言**函数文档](function-language.md)有关更多示例。  **(？:** 运算符而无需创建另一个子匹配项进行分组的字符。 | {<br>语言:"en"，<br>脚本：*空白*， <br>区域："我们"<br>FullMatch: "en-US", <br>SubMatches: [ "en", "", "US" ], <br>StartMatch:1<br>} 
 | `Match( "PT2H1M39S", "PT(?:(<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" )` | 从 ISO 8601 持续时间值中提取小时、 分钟和秒。 提取的编号仍采用文本字符串;使用[**值**](function-value.md)函数将其转换为数字之前对其执行数学运算。  | {<br> 小时数："2",<br>分钟数："1",<br>（秒):"39",<br>FullMatch:"PT2H1M39S",<br>SubMatches:&nbsp;[&nbsp;"2",&nbsp;"1",&nbsp;"39"&nbsp;],<br>StartMatch:1<br>} |
 
-让我们来钻取到最后一个示例。 如果你想要将此字符串转换为日期/时间值使用**[时间](function-date-time.md)** 函数，您必须将传递在命名子匹配项中单独。 若要执行此操作，可以使用**[ForAll](function-forall.md)** 函数在第一个操作录制**MatchAll**返回：
+让我们来钻取到最后一个示例。 如果你想要将此字符串转换为日期/时间值使用 **[时间](function-date-time.md)** 函数，您必须将传递在命名子匹配项中单独。 若要执行此操作，可以使用 **[ForAll](function-forall.md)** 函数在第一个操作录制 **MatchAll**返回：
 
 ``` powerapps-dot
 First( 
@@ -221,7 +221,7 @@ Set( pangram, "The quick brown fox jumps over the lazy dog." )
 
 若要查看的结果**MatchAll**库中：
 
-1. 在空屏幕中，插入一个空白垂直**[库](../controls/control-gallery.md)** 控件。
+1. 在空屏幕中，插入一个空白垂直 **[库](../controls/control-gallery.md)** 控件。
 
 2. 设置库的**项**属性设置为**MatchAll （pangram，"\w+"）** 或**MatchAll (pangram，MultipleLetters)**。
 
@@ -229,7 +229,7 @@ Set( pangram, "The quick brown fox jumps over the lazy dog." )
 
 3. 选择"添加项从插入选项卡"要选择的库模板的库控件的中间。 
 
-5. 添加**[标签](../controls/control-text-box.md)** 到库模板的控件。  
+5. 添加 **[标签](../controls/control-text-box.md)** 到库模板的控件。  
 
 4. 设置的标签**文本**属性设置为**ThisItem.FullMatch**。  
  

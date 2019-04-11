@@ -102,4 +102,4 @@ TileUrl – 从 Power BI 服务请求磁贴所使用的 URL。 可以通过向 U
 
 Power BI 磁贴只是 Power BI 内容的容器。 了解如何使用这些 [Power BI 辅助功能提示](https://docs.microsoft.com/power-bi/desktop-accessibility)创建可访问的内容。
 
-如果 Power BI 内容没有标题，请考虑使用**[标签](control-text-box.md)** 控件添加标题，以便为屏幕阅读器提供支持。 可将标签直接置于 Power BI 磁贴前。
+如果 Power BI 内容没有标题，请考虑使用 **[标签](control-text-box.md)** 控件添加标题，以便为屏幕阅读器提供支持。 可将标签直接置于 Power BI 磁贴前。

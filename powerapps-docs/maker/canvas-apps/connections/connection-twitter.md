@@ -114,7 +114,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 
        `Twitter.MyFollowing()`  
        `Twitter.MyFollowing({maxResults:3})`
-   * 若要显示另一个用户关注了哪些用户，请设置**[项](../controls/properties-core.md)** 属性的库为以下公式：
+   * 若要显示另一个用户关注了哪些用户，请设置 **[项](../controls/properties-core.md)** 属性的库为以下公式：
 
        `Twitter.Following( *TwitterHandle* )`
 

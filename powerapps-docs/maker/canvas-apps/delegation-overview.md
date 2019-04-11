@@ -21,7 +21,7 @@ ms.lasthandoff: 04/08/2019
 ms.locfileid: "59098037"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>了解画布应用中的委派
-PowerApps 包括一组功能强大的筛选、 排序和整理的画布应用中的数据的表的函数：**[筛选器](functions/function-filter-lookup.md)**， **[排序](functions/function-sort.md)**，以及**[AddColumns](functions/function-table-shaping.md)** 函数等等。 可以使用这些函数，让用户重点访问其所需的信息。 对于具有数据库背景的用户来说，使用这些函数相当于编写数据库查询。
+PowerApps 包括一组功能强大的筛选、 排序和整理的画布应用中的数据的表的函数：**[筛选器](functions/function-filter-lookup.md)**， **[排序](functions/function-sort.md)**，以及 **[AddColumns](functions/function-table-shaping.md)** 函数等等。 可以使用这些函数，让用户重点访问其所需的信息。 对于具有数据库背景的用户来说，使用这些函数相当于编写数据库查询。
 
 若要生成有效的应用，关键是尽量减少必须转到设备的数据量。 也许在成千上万条记录中，只需要少量记录；也许单个聚合值就可以代表数千条记录。 也许只有第一组记录可以检索，而其余记录是用户在需要更多记录的情况下通过笔势输入的。 进行重点访问可以大幅缩减应用所需的处理能力、内存和网络带宽，提高用户的响应速度，即使使用的是通过移动电话网络连接的手机。 
 
@@ -89,7 +89,7 @@ PowerApps 包括一组功能强大的筛选、 排序和整理的画布应用中
 
 ### <a name="table-shaping-functions"></a>表整形函数
 
-**[AddColumns](functions/function-table-shaping.md)**，  **[DropColumns](functions/function-table-shaping.md)**，  **[RenameColumns](functions/function-table-shaping.md)**，和**[ShowColumns](functions/function-table-shaping.md)** 部分支持委派。  可以委派其参数中的公式。  但是，这些函数的输出会受非委派记录限制。
+**[AddColumns](functions/function-table-shaping.md)**， **[DropColumns](functions/function-table-shaping.md)**， **[RenameColumns](functions/function-table-shaping.md)**，和 **[ShowColumns](functions/function-table-shaping.md)** 部分支持委派。  可以委派其参数中的公式。  但是，这些函数的输出会受非委派记录限制。
 
 如本示例所示创建者通常使用**AddColumns**并**查找**从一个表的信息合并到另一个，通常称为在数据库中的联接：
 
