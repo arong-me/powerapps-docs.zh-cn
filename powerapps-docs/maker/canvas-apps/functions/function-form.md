@@ -33,7 +33,7 @@ ms.locfileid: "57802092"
 | FormMode.View |表单使用现有记录填充，但用户无法修改字段的值。 |
 
 ## <a name="description"></a>说明
-这些函数通常从**[按钮](../controls/control-button.md)** 或**[图像](../controls/control-image.md)** 控件的 **[OnSelect](../controls/properties-core.md)** 公式中调用，以便用户可以保存编辑、放弃编辑或创建记录。 可通过[将控件和这些函数结合使用](../working-with-forms.md)来创建完整的解决方案。
+这些函数通常从 **[按钮](../controls/control-button.md)** 或 **[图像](../controls/control-image.md)** 控件的 **[OnSelect](../controls/properties-core.md)** 公式中调用，以便用户可以保存编辑、放弃编辑或创建记录。 可通过[将控件和这些函数结合使用](../working-with-forms.md)来创建完整的解决方案。
 
 这些函数不返回任何值。
 
@@ -42,7 +42,7 @@ ms.locfileid: "57802092"
 
 提交任何更改之前，针对被标记为必需或其值有一个或多个约束的字段，此函数会检查验证问题。 此行为与 **[Validate](function-validate.md)** 函数类似。
 
-**SubmitForm** 还会检查窗体的 **[Valid](../controls/control-form-detail.md)** 属性，这包括窗体控件所包含的**[卡片](../controls/control-card.md)** 控件的所有 **[Valid](../controls/control-card.md)** 属性。 如果出现问题，数据将不会提交，并且窗体控件的 **[Error](../controls/control-form-detail.md)** 和 **[ErrorKind](../controls/control-form-detail.md)** 属性会进行相应的设置。
+**SubmitForm** 还会检查窗体的 **[Valid](../controls/control-form-detail.md)** 属性，这包括窗体控件所包含的 **[卡片](../controls/control-card.md)** 控件的所有 **[Valid](../controls/control-card.md)** 属性。 如果出现问题，数据将不会提交，并且窗体控件的 **[Error](../controls/control-form-detail.md)** 和 **[ErrorKind](../controls/control-form-detail.md)** 属性会进行相应的设置。
 
 如果通过验证，**SubmitForm** 会将更改提交到数据源。
 
