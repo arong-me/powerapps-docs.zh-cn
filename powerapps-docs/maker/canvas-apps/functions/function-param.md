@@ -1,6 +1,6 @@
 ---
 title: Download、Launch 和 Param 函数 | Microsoft 文档
-description: PowerApps 中 Download、Launch 和 Param 函数的参考信息（包括语法和示例）
+description: 参考信息，包括语法和示例，画布应用中的 Download、 Launch 和 Param 函数
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,22 +13,24 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6c465a8cd23511c0cffbbfab9b70dd436be06d37
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 4a53d8c20bd4b7784cb94daa574682c041f104ea
+ms.sourcegitcommit: b316e0eee9946ef09e0512577ce2d11cd27aa864
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42860008"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59508300"
 ---
-# <a name="download-launch-and-param-functions-in-powerapps"></a>PowerApps 中的 Download、Launch 和 Param 函数
+# <a name="download-launch-and-param-functions-in-canvas-apps"></a>画布应用中的 download、 Launch 和 Param 函数
 使用参数下载或启动网页或应用。  
 
 ## <a name="description"></a>描述
-**Download** 函数可用于从 Web 将文件下载到本地设备。  系统会提示用户选择保存文件的位置。  **Download** 会返回文件的存储位置，并使用字符串表示。  
+**Download** 函数可用于从 Web 将文件下载到本地设备。 系统会提示用户选择保存文件的位置。  **Download** 会返回文件的存储位置，并使用字符串表示。  
 
-**Launch** 函数可用于启动网页或应用。  这个函数还可以将参数传递给应用（可选）。  
+**Launch** 函数可用于启动网页或应用。  这个函数还可以将参数传递给应用（可选）。
 
-当应用启动时，**Param** 函数可用于检索传递给应用的参数。  如果没有传递指定的参数，**Param** 会返回 *blank*。
+在 Internet Explorer 和 Microsoft Edge**启动**函数将打开网站或应用程序仅在其安全设置是相同或更高版本的应用，其中包含该函数。 如果，例如，添加**启动**函数将在中运行的应用**受信任的站点**安全区域，请确保网站或你想要打开的函数的应用程序中**受信任站点**或**本地 intranet**区域 (不在**受限站点**)。 详细信息：[更改 Internet Explorer 11 的安全和隐私设置](https://support.microsoft.com/en-us/help/17479/windows-internet-explorer-11-change-security-privacy-settings)。  
+
+当应用启动时，**Param** 函数可用于检索传递给应用的参数。 如果没有传递指定的参数，**Param** 会返回 *blank*。
 
 ## <a name="syntax"></a>语法
 **Download**( *Address* )
