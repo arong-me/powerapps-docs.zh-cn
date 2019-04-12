@@ -1,7 +1,7 @@
 ---
 title: PowerApps 中模型驱动应用程序窗体的选项卡属性 | MicrosoftDocs
 description: 了解主窗体的选项卡属性
-Keywords: Tab properties; Dynamics 365; Main forms
+Keywords: 选项卡属性; Dynamics 365; 主窗体
 author: matp
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: Mattp123
 manager: kvivek
 ms.date: 06/07/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 ms.assetid: e0790865-c5a4-4e86-bce2-584af2b8ed93
 search.audienceType:

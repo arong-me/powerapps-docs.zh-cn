@@ -1,7 +1,7 @@
 ---
 title: 了解 PowerApps 中的模型驱动应用程序组件 | MicrosoftDocs
 description: 了解模型驱动应用程序的不同组件，如数据、UI、逻辑和可视化。
-Keywords: 'fields, attributes, model-driven app'
+Keywords: '字段, 属性, 模型驱动的应用程序'
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 search.audienceType:
   - maker

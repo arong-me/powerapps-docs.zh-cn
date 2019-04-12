@@ -1,13 +1,13 @@
 ---
-title: 在面向应用程序的 Common Data Service 中创建业务规则 | Microsoft Docs
-description: 如何在面向应用程序的 Common Data Service 中创建业务规则的分步说明。
-author: clwesene
+title: 在 Common Data Service 中创建业务规则 | Microsoft Docs
+description: 如何在 Common Data Service 中创建业务规则的分步说明。
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:

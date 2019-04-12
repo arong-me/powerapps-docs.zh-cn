@@ -1,10 +1,10 @@
 ---
-title: 使用面向应用程序的 Common Data Service 定义和查询分层数据 | MicrosoftDocs
+title: 使用 Common Data Service 定义和查询分层数据 | MicrosoftDocs
 description: 了解如何定义和按层次结构查询相关数据
 ms.custom: ''
 ms.date: 06/02/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -35,7 +35,7 @@ search.app:
 
 ## <a name="define-hierarchical-data"></a>定义分层数据
 
-使用面向应用程序的 Common Data Service，分层数据结构支持相关记录的*自我参照*的一对多 (1:N) 关系。 
+使用 Common Data Service，分层数据结构支持相关记录的*自我参照*的一对多 (1:N) 关系。 
 
 > [!NOTE]
 > *自我参照*意味着实体与其自身相关。 例如，客户实体具有将其与其他客户实体记录关联的查找字段。

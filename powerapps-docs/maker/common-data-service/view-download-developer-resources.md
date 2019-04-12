@@ -3,7 +3,7 @@ title: 查看或下载开发人员资源 | MicrosoftDocs
 description: 查找开发人员资源和服务终结点 URL
 keywords: ''
 ms.date: 06/06/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -54,9 +54,9 @@ search.app:
 <!-- TODO update 512122 to go to https://docs.microsoft.com/dynamics365/customer-engagement/developer/download-tools-nuget -->
 
 
-## <a name="connect-your-apps-to-this-instance-of-common-data-service-for-apps"></a>将您的应用程序连接到面向应用程序的 Common Data Service 的这个实例。
+## <a name="connect-your-apps-to-this-instance-of-common-data-service"></a>将您的应用程序连接到 Common Data Service 的这个实例
 
-本部分提供连接到面向应用程序的 Common Data Service 实例所需的信息。
+本部分提供连接到 Common Data Service 实例所需的信息。
 
 ### <a name="instance-web-api"></a>实例 Web API
 
@@ -75,9 +75,9 @@ search.app:
 当您对实例使用 Azure 扩展时需要此信息。
 详细信息：[开发人员文档：Dynamics 365 Customer Engagement 的 Azure 扩展](/dynamics365/customer-engagement/developer/azure-extensions)
 
-## <a name="connect-your-apps-to-the-common-data-service-for-apps-discovery-service"></a>将您的应用程序连接到面向应用程序的 Common Data Service 的发现服务
+## <a name="connect-your-apps-to-the-common-data-service-discovery-service"></a>将您的应用程序连接到 Common Data Service 的发现服务
 
-由于用户可能有多个面向应用程序的 CDS 环境的访问权限，发现服务允许检索用户可以根据其用户凭据访问的可用环境。
+由于用户可能有多个 Common Data Service 环境的访问权限，发现服务允许检索用户可以根据其用户凭据访问的可用环境。
 
 ### <a name="discovery-web-api"></a>发现 Web API
 

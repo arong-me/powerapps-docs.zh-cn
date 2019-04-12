@@ -3,7 +3,7 @@ title: 实体类型 | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,7 +24,7 @@ search.app:
 ---
 # <a name="types-of-entities"></a>实体类型
 
-在面向应用程序的 Common Data Service 中创建或编辑实体之前，应了解存在不同的实体类型。 创建了自定义实体后，就不能更改这些类型。 两种主要的划分基于实体所有权以及实体是否为活动实体。  
+在 Common Data Service 中创建或编辑实体之前，应了解存在不同的实体类型。 创建了自定义实体后，就不能更改这些类型。 两种主要的划分基于实体所有权以及实体是否为活动实体。  
   
 <a name="BKMK_EntityOwnership"></a>
 
@@ -51,7 +51,7 @@ search.app:
   
 活动实体可以由用户或团队负责，但不能由组织负责。  
   
-下表列出了可在默认的面向应用程序的 CDS 环境中使用的活动实体。
+下表列出了可在默认的 Common Data Service 环境中使用的活动实体。
   
 |姓名|说明|在活动菜单中显示|参考|
 |----------|-----------------|----------------|---------------|  

@@ -1,9 +1,9 @@
 ---
-title: 通过面向应用程序的 Common Data Service 使用虚拟实体 OData v4 数据提供程序 | MicrosoftDocs
+title: 通过 Common Data Service 使用虚拟实体 OData v4 数据提供程序 | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/04/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -28,16 +28,16 @@ search.app:
 
 ## <a name="odata-v4-data-provider-best-practices"></a>OData v4 数据提供程序最佳实践
 
-- 面向应用程序的 Common Data Service 要求所有实体都有一个 ID 属性，该 ID 称为唯一标识符，而值必须为 guid。  只能将 ID 字段映射到数据类型为 `Edm.Guid` 的外部字段。  不能将 `Edm.Int32` 数据类型映射到面向应用程序的 CDS 中的“唯一标识符”数据类型字段。
--  必须设置具有可空属性的 OData 实体，以便匹配虚拟实体中映射的字段。 例如，Nullable=False 的 OData 实体属性必须将面向应用程序的 CDS **字段要求**属性中映射的字段设置为**业务必需的**。 
+- Common Data Service 要求所有实体都有一个 ID 属性，该 ID 称为唯一标识符，而值必须为 guid。  只能将 ID 字段映射到数据类型为 `Edm.Guid` 的外部字段。  不能将 `Edm.Int32` 数据类型映射到 Common Data Service 中的“唯一标识符”数据类型字段。
+-  必须设置具有可空属性的 OData 实体，以便匹配虚拟实体中映射的字段。 例如，Nullable=False 的 OData 实体属性必须将 Common Data Service **字段要求**属性中映射的字段设置为**业务必需的**。 
 - 要检索多个查询，如在将数据加载到网格中时，请通过使用选择参数和筛选器查询参数控制外部数据源返回的数据集的大小。
 - 如果尚未启用插件跟踪，系统管理员应启用。 启用后，将把来自 OData 终结点的所有错误捕获到插件跟踪日志中。 详细信息：[管理员指南：“系统设置”对话框 -“自定义”选项卡](/dynamics365/customer-engagement/admin/system-settings-dialog-box-customization-tab) 
 
 ## <a name="data-type-mapping"></a>数据类型映射
 
-下表列出了 OData 实体数据模型 (EDM) 数据类型与面向应用程序的 CDS 数据类型之间的映射。 
+下表列出了 OData 实体数据模型 (EDM) 数据类型与 Common Data Service 数据类型之间的映射。 
 
-|OData 数据类型|面向应用程序的 CDS 的数据类型  |
+|OData 数据类型|Common Data Service 数据类型  |
 |---------|---------|
 |`Edm.Boolean`|两个选项|
 |`Edm.DateTime`|日期和时间|
@@ -69,7 +69,7 @@ search.app:
 1. 在操作工具栏上单击**新建**。  
 1. 在**选择数据提供程序**对话框中，从以下数据源中进行选择，然后单击**确定**。  
   
-    - **OData v4 数据提供程序**。 面向应用程序的 CDS 中包含 Odata v4 数据提供程序，可用于连接到支持 OData v4 开放标准的数据源。  
+    - **OData v4 数据提供程序**。 Common Data Service 包含 Odata v4 数据提供程序，可用于连接到支持 OData v4 开放标准的数据源。  
     - *自定义数据提供程序*。 如果已导入数据提供程序插件，将在此处显示该数据提供程序。 详细信息：[开发人员文档：虚拟实体入门](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve)  
     
 1. 在**新数据源**属性页面中，填写以下字段，然后保存记录。  

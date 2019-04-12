@@ -3,7 +3,7 @@ title: 配置连接角色 | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,7 +21,7 @@ search.app:
 ---
 # <a name="configure-connection-roles"></a>配置连接角色
 
-使用面向应用程序的 Common Data Service，您可以定义实体记录之间的**连接**，而无需创建实体关系。 在模型驱动应用程序中，用户可以在记录之间建立命名的链接，从而建立不创建实际实体关系的不太正式的关系。 部分示例包括*朋友*、*兄弟姊妹*、*配偶*、*与会者*和*利益干系人*。 有些连接还可以是相互的，如*孩子*和*父亲*、*丈夫*和*妻子*或*医生*和*患者*。
+使用 Common Data Service，您可以定义实体记录之间的**连接**，而无需创建实体关系。 在模型驱动应用程序中，用户可以在记录之间建立命名的链接，从而建立不创建实际实体关系的不太正式的关系。 部分示例包括*朋友*、*兄弟姊妹*、*配偶*、*与会者*和*利益干系人*。 有些连接还可以是相互的，如*孩子*和*父亲*、*丈夫*和*妻子*或*医生*和*患者*。
 
 当用户在两个记录之间设置连接时，还可以添加描述和其他信息，如关系的开始日期和结束日期。 详细信息：[创建连接以定义和查看记录之间的关系](/dynamics365/customer-engagement/basics/create-connections-view-relationships-between-records)
 
@@ -29,7 +29,7 @@ search.app:
 
 ## <a name="view-connection-roles"></a>查看连接角色
 
-面向应用程序的 CDS 中已存在一些已经配置的标准连接角色。 若要查看它们，您需要转到设置区域。 
+Common Data Service 中已存在一些已经配置的标准连接角色。 若要查看它们，您需要转到设置区域。 
 
 ### <a name="navigate-to-the-settings-area"></a>导航到设置区域
 
@@ -91,7 +91,7 @@ search.app:
 - 销售团队
 - 服务
 
-您可以通过编辑**类别**全局选项集添加新类别或修改现有类别。 详细信息：[为面向应用程序的 Common Data Service 创建和编辑全局选项集（选择列表）](create-edit-global-option-sets.md)
+您可以通过编辑**类别**全局选项集添加新类别或修改现有类别。 详细信息：[为 Common Data Service 创建和编辑全局选项集（选择列表）](create-edit-global-option-sets.md)
 
 ### <a name="select-record-types"></a>选择记录类型
 
@@ -125,7 +125,7 @@ search.app:
 ### <a name="see-also"></a>另请参阅
 <!-- This is in the basics guide. It needs to be migrated -->
 [创建连接以定义和查看记录之间的关系](/dynamics365/customer-engagement/basics/create-connections-view-relationships-between-records)<br />
-[为面向应用程序的 Common Data Service 创建和编辑全局选项集（选择列表）](create-edit-global-option-sets.md)<br />
+[为 Common Data Service 创建和编辑全局选项集（选择列表）](create-edit-global-option-sets.md)<br />
 [创建和编辑实体之间的关系](create-edit-entity-relationships.md)
 
 

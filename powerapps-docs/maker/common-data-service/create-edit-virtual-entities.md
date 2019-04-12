@@ -1,10 +1,10 @@
 ---
-title: 使用面向应用程序的 Common Data Service 创建和编辑虚拟实体 | MicrosoftDocs
+title: 使用 Common Data Service 创建和编辑虚拟实体 | MicrosoftDocs
 description: 了解如何创建虚拟实体
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -25,13 +25,13 @@ search.app:
 ---
 # <a name="create-and-edit-virtual-entities-that-contain-data-from-an-external-data-source"></a>创建和编辑包含来自外部数据源的数据的虚拟实体
 
-虚拟实体是面向应用程序的 Common Data Service 中的自定义实体，这种实体有字段包含来自外部数据源的数据。 虚拟实体在您的应用程序中作为定期实体记录显示给用户，但包含源自外部数据库（如 Azure SQL 数据库）的数据。 所有客户端（包括使用面向应用程序的 CDS Web 服务开发的自定义客户端）中均提供基于虚拟实体的记录。  
+虚拟实体是 Common Data Service 中的自定义实体，这种实体有字段包含来自外部数据源的数据。 虚拟实体在您的应用程序中作为定期实体记录显示给用户，但包含源自外部数据库（如 Azure SQL 数据库）的数据。 所有客户端（包括使用 Common Data Service Web 服务开发的自定义客户端）中均提供基于虚拟实体的记录。  
   
 以前，要集成分散的数据源，需要创建连接器来移动数据，或开发自定义插件（客户端或服务器端）。 但是，通过虚拟实体可以在运行时直接连接外部数据源，这样无需复制数据即可在环境中使用外部数据源。  
 
-虚拟实体包含三个主要组成部分：*数据提供程序*、*数据源*记录和*虚拟实体*。 数据提供程序由插件和数据源实体组成。 数据源是面向应用程序的 CDS 中的实体记录，其中包含表示连接参数的架构的元数据。 每个虚拟实体都引用实体定义中的一个数据源。  
+虚拟实体包含三个主要组成部分：*数据提供程序*、*数据源*记录和*虚拟实体*。 数据提供程序由插件和数据源实体组成。 数据源是 Common Data Service 中的实体记录，其中包含表示连接参数的架构的元数据。 每个虚拟实体都引用实体定义中的一个数据源。  
   
-面向应用程序的 CDS 中包含 OData 数据提供程序，可用于连接 OData v4 Web 服务来访问外部数据。 
+Common Data Service 中包含 OData 数据提供程序，可用于连接 OData v4 Web 服务来访问外部数据。 
   
 开发人员也可以构建自己的数据提供程序。 数据提供程序作为解决方案安装在环境中。 详细信息：[开发人员文档：虚拟实体入门](../../developer/common-data-service/virtual-entities/get-started-ve.md)
   
@@ -41,7 +41,7 @@ search.app:
   
 ## <a name="virtual-entity-benefits"></a>虚拟实体的优点  
   
-- 开发人员可以实施插件以使用面向应用程序的 CDS Web 服务和插件注册工具读取外部数据。  
+- 开发人员可以实施插件以使用 Common Data Service Web 服务和插件注册工具读取外部数据。  
 - 系统定制员可使用 PowerApps 解决方案资源管理器配置数据源记录和创建虚拟实体，用于在不编写任何代码的情况下访问外部数据。  
 - 最终用户使用虚拟实体创建的记录来查看字段、网格、搜索结果以及基于 Fetch XML 的报告和仪表板中的数据。  
   
@@ -58,7 +58,7 @@ search.app:
     |数据提供程序|说明|
     |--|--|
     |*自定义数据提供程序*|如果已导入数据提供程序插件，将在此处显示该数据提供程序。 详细信息[开发人员文档：虚拟实体入门](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve)|
-    |**OData v4 数据提供程序**|面向应用程序的 CDS 中包含可与 OData v4 Web 服务配合使用的 OData 数据提供程序。 详细信息 [OData v4 数据提供程序配置，要求和最佳实践](virtual-entity-odata-provider-requirements.md)|
+    |**OData v4 数据提供程序**|Common Data Service 中包含可与 OData v4 Web 服务配合使用的 OData 数据提供程序。 详细信息 [OData v4 数据提供程序配置，要求和最佳实践](virtual-entity-odata-provider-requirements.md)|
 
   
 ### <a name="add-a-secured-field-to-a-data-source"></a>向数据源添加安全字段
@@ -75,7 +75,7 @@ search.app:
   
 ## <a name="create-a-virtual-entity"></a>创建虚拟实体
   
-除了此处介绍的一些额外的属性，虚拟实体的创建方法和面向应用程序的 CDS 中的其他任何实体很像。 虚拟实体必须使用解决方案资源管理器创建。
+除了此处介绍的一些额外的属性，虚拟实体的创建方法和 Common Data Service 中的其他任何实体很像。 虚拟实体必须使用解决方案资源管理器创建。
 
 > [!NOTE]
 >  尽管可以通过选择**无**作为数据源来创建虚拟实体，但是为了获取数据，虚拟实体需要数据源。 详细信息[添加用于虚拟实体的数据源](#AddDataSource)
@@ -140,10 +140,10 @@ search.app:
 - 不能在汇总字段或计算字段中使用虚拟实体字段。
 - 虚拟实体不能为实体的活动类型。  
 - 不能为虚拟实体启用许多可影响实体表行的功能。  例如，队列、知识管理、SLA、重复项检测、更改跟踪、Mobile offline 功能、现场安全、相关性搜索、Dynamics 365 Web 门户解决方案的门户，以及虚拟实体之间的 N:N 关系。  
-- 虚拟实体归组织所有，不支持行级别的面向应用的 Common Data Service 安全概念。 建议为外部数据源实施您自己的安全模型。  
-- 建议在高级查找中使用虚拟实体时，针对单个数据源。 例如，不支持创建最终在适用于应用的 Commond Data Service 本机数据与虚拟实体外部数据之间创建联接的高级查找。  
+- 虚拟实体归组织所有，不支持行级别的 Common Data Service 安全概念。 建议为外部数据源实施您自己的安全模型。  
+- 建议在高级查找中使用虚拟实体时，针对单个数据源。 例如，不支持创建最终在 Common Data Service 本机数据与虚拟实体外部数据之间创建联接的高级查找。  
 - 更新时验证的字段元数据属性不应用于虚拟实体。 例如，可将虚拟实体字段中的整数字段设置为最小值为零。 但是，因为该值来自外部数据源，所以从虚拟实体检索时，查询将返回小于零的值。  查询中不表示最小值属性。  您仍需将该值筛选为大于 0（如果需要这样）。
-- 虚拟实体不支持更改跟踪，因此不能使用面向应用程序的 CDS 功能（如数据导出服务）同步。
+- 虚拟实体不支持更改跟踪，因此不能使用 Common Data Service 功能（如数据导出服务）同步。
   
 ### <a name="see-also"></a>另请参阅  
 

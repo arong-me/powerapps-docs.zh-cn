@@ -1,7 +1,7 @@
 ---
 title: PowerApps 中模型驱动应用程序主窗体的 Web 资源属性 | MicrosoftDocs
 description: 了解主窗体的 Web 资源属性
-Keywords: Main form; Web resource properties; Dynamics 365
+Keywords: 主窗体; Web 资源属性; Dynamics 365
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 ms.assetid: 82cd41ea-95b0-4606-9e7d-43eb5ce9ecd6
 search.audienceType:

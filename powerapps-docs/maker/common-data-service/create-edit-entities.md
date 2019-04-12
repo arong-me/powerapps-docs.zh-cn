@@ -1,10 +1,10 @@
 ---
-title: 在面向应用程序的 Common Data Service 中创建和编辑实体 | MicrosoftDocs
+title: 在 Common Data Service 中创建和编辑实体 | MicrosoftDocs
 description: 了解如何创建和编辑实体
 ms.custom: ''
 ms.date: 05/11/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,7 +22,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-entities-in-common-data-service-for-apps"></a>在面向应用程序的 Common Data Service 中创建和编辑实体
+# <a name="create-and-edit-entities-in-common-data-service"></a>在 Common Data Service 中创建和编辑实体
 
 在创建自定义实体之前，应评估使用现有实体是否满足您的要求。 详细信息：[新建元数据或使用现有元数据？](create-edit-metadata.md#create-new-metadata-or-use-existing-metadata)
 

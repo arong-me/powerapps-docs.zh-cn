@@ -1,10 +1,10 @@
 ---
 title: 使用解决方案资源管理器定义备用键 | MicrosoftDocs
-description: 了解如何使用解决方案资源管理器在面向应用程序的 Common Data Service 中定义可用于引用记录的备用键
+description: 了解如何使用解决方案资源管理器在 Common Data Service 中定义可用于引用记录的备用键
 ms.custom: ''
 ms.date: 05/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="define-alternate-keys-using-solution-explorer"></a>使用解决方案资源管理器定义备用键
 
-解决方案资源管理器为查看和创建面向应用程序的 Common Data Service 的备用键提供一种方法。
+解决方案资源管理器为查看和创建 Common Data Service 的备用键提供一种方法。
 
 [PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 <br />详细信息： 
 - [定义引用记录的备用键](define-alternate-keys-reference-records.md)<br />

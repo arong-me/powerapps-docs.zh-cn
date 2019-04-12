@@ -3,7 +3,7 @@ title: 更改颜色方案或添加徽标以匹配您组织的品牌 | MicrosoftD
 ms.custom: ''
 ms.date: 02/19/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -116,7 +116,7 @@ search.app:
 ### <a name="theme-contrast"></a>主题对比度  
  建议使用以下方法提供对比色：  
   
--   请仔细选择对比色。 面向应用程序的 Common Data Service 的现成默认主题拥有正确的对比度可以确保最佳使用。 为您的新主题使用类似的比率。  
+-   请仔细选择对比色。 Common Data Service 的现成默认主题拥有正确的对比度可以确保最佳使用。 为您的新主题使用类似的比率。  
   
 -   对于高对比度模式，请使用默认的颜色设置。  
   

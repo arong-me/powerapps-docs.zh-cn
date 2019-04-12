@@ -41,7 +41,7 @@ search.app:
 若要对您的业务数据建模，您确定应用程序需要的数据，以及该数据如何与其他数据相关。 模型驱动设计使用元数据驱动的体系结构，以便设计人员可以在不编写代码的情况下自定义应用程序。 元数据是指“关于数据的数据”，它定义数据系统中存储的数据的结构。 [教程：在 PowerApps 中创建包含组件的自定义实体](../common-data-service/create-custom-entity.md)
 
 ### <a name="defining-business-processes"></a>定义业务流程
-定义和强制实施一致的业务流程是模型驱动应用程序设计的一个重要方面。 一致的流程可以帮助确保应用程序用户可以关注其工作，而不是记住执行一套手动步骤。 流程可以简单也可以复杂，经常随时间变化。 若要创建一个流程，从 PowerApps.com 模型驱动区域，选择![设置](media/powerapps-gear.png) > **高级自定义** > **打开解决方案资源管理器**。 接下来，在解决方案资源管理器中的左侧导航窗格上，选择**流程**，然后选择**新建**。 详细信息：[业务流程概述](/flow/business-process-flows-overview)和[使用面向应用程序的 Common Data Service 应用业务逻辑](../common-data-service/cds-processes.md)。 
+定义和强制实施一致的业务流程是模型驱动应用程序设计的一个重要方面。 一致的流程可以帮助确保应用程序用户可以关注其工作，而不是记住执行一套手动步骤。 流程可以简单也可以复杂，经常随时间变化。 若要创建一个流程，从 PowerApps.com 模型驱动区域，选择![设置](media/powerapps-gear.png) > **高级自定义** > **打开解决方案资源管理器**。 接下来，在解决方案资源管理器中的左侧导航窗格上，选择**流程**，然后选择**新建**。 详细信息：[业务流程概述](/flow/business-process-flows-overview)和[使用 Common Data Service 应用业务逻辑](../common-data-service/cds-processes.md)。 
 
 ### <a name="composing-the-model-driven-app"></a>编写模型驱动应用程序
 在对数据建模并定义流程后，通过使用应用程序设计器选择并配置所需组件来构建应用程序。

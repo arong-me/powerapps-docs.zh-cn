@@ -1,14 +1,14 @@
 ---
-title: 使用 Power Query 将数据添加到面向应用程序的 Common Data Service 中的实体 | Microsoft Docs
-description: 如何使用 Power Query 在面向应用程序的 Common Data Service (CDS) 中从其他数据源将数据添加到新的或现有实体的分步说明。
-author: AFTOwen
+title: 使用 Power Query 将数据添加到 Common Data Service 中的实体 | Microsoft Docs
+description: 如何使用 Power Query 在 Common Data Service 中从其他数据源将数据添加到新的或现有实体的分步说明。
+author: mllopis
 manager: kfile
 ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: cds
 ms.date: 03/21/2018
-ms.author: anneta
+ms.author: millopis
 search.audienceType:
   - maker
 search.app:
@@ -16,8 +16,8 @@ search.app:
   - D365CE
 ---
 
-# <a name="add-data-to-an-entity-in-common-data-service-for-apps-by-using-power-query"></a>使用 Power Query 将数据添加到面向应用程序的 Common Data Service 中的实体
-在本过程中，您将在[面向应用程序的 Common Data Service (CDS)](data-platform-intro.md) 中创建实体，并使用 Power Query 用来自 OData 源的数据填充该实体。 您可以使用相同的技巧集成这些联机和本地源的数据，其中包括：
+# <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>使用 Power Query 将数据添加到 Common Data Service 中的实体
+在本过程中，您将在 [Common Data Service](data-platform-intro.md) 中创建实体，并使用 Power Query 用来自 OData 源的数据填充该实体。 您可以使用相同的技巧集成这些联机和本地源的数据，其中包括：
 
 * SQL Server
 * 销售团队

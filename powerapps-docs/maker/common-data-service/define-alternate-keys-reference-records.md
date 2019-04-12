@@ -1,10 +1,10 @@
 ---
-title: 通过面向应用程序的 Common Data Service 定义引用记录的备用键 | MicrosoftDocs
-description: 了解如何在面向应用程序的 Common Data Service 中定义可用于引用记录的备用键
+title: 通过 Common Data Service 定义引用记录的备用键 | MicrosoftDocs
+description: 了解如何在 Common Data Service 中定义可用于引用记录的备用键
 ms.custom: ''
 ms.date: 06/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -25,7 +25,7 @@ search.app:
 ---
 # <a name="define-alternate-keys-to-reference-records"></a>定义引用记录的备用键
 
-*备用键*提供准确有效的方式将数据与外部系统集成。 当外部系统不存储在面向应用程序的 Common Data Service 中唯一标识记录的全局唯一标识符 (GUID) ID 时这非常重要。 
+*备用键*提供准确有效的方式将数据与外部系统集成。 当外部系统不存储在 Common Data Service 中唯一标识记录的全局唯一标识符 (GUID) ID 时这非常重要。 
 
 数据集成系统将使用备用键来使用表示唯一组合的一个或多个实体字段值唯一标识记录。 每个备用键都有一个唯一名称。 
 
@@ -61,7 +61,7 @@ search.app:
 
 除非您需要满足下列要求中的任何一个，否则您应该使用 [PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)创建备用键。
 
-- 在面向应用程序的 Common Data Service 默认解决方案以外的解决方案中创建备用键
+- 在 Common Data Service 默认解决方案以外的解决方案中创建备用键
 - 您希望轻松跟踪所创建的跟踪支持索引创建进度的系统作业
 
 

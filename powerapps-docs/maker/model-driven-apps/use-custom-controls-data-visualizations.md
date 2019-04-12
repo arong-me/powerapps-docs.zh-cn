@@ -4,7 +4,7 @@ description: 了解如何使用字段的自定义控件
 ms.custom: ''
 ms.date: 06/07/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

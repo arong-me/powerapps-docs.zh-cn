@@ -4,7 +4,7 @@ description: 了解如何为相关实体添加窗体导航
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -83,4 +83,4 @@ search.app:
 > 安装解决方案或发布自定义项会干扰常规的系统操作。 我们建议您以对用户造成的干扰最少为宗旨，合理安排解决方案导入时间。
   
 ## <a name="next-steps"></a>后续步骤  
- [创建和编辑面向应用程序的 Common Data Service 的实体关系](../common-data-service/create-edit-entity-relationships.md)
+ [创建和编辑 Common Data Service 的实体关系](../common-data-service/create-edit-entity-relationships.md)

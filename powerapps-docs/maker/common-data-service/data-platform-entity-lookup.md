@@ -88,7 +88,7 @@ search.app:
 如果从包含查找字段的实体[自动创建应用程序](../canvas-apps/data-platform-create-app.md)，它将显示为包含来自实体的**主要名称**字段的数据的**下拉**控件。
 
 ## <a name="add-1n-and-nn-relationships-for-canvas-apps"></a>为区域应用添加 1:N 和 N:N 关系
-在面向应用的 Common Data Service (CDS) 中使用**关联**功能通过一对多或多对多关系链接两个记录。 详细信息：[PowerApps 中的关联和取消关联功能](../canvas-apps/functions/function-relate-unrelate.md)
+在 Common Data Service 中使用**关联**功能通过一对多或多对多关系链接两个记录。 详细信息：[PowerApps 中的关联和取消关联功能](../canvas-apps/functions/function-relate-unrelate.md)
 
 ## <a name="next-steps"></a>后续步骤
 * [使用 Common Data Service 数据库生成应用程序](../canvas-apps/data-platform-create-app.md)

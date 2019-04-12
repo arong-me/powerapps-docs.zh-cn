@@ -1,6 +1,6 @@
 ---
-title: 从面向应用程序的 Common Data Service 导入或导出数据
-description: 使用“从 Excel 获取数据”和“导出数据”功能在面向应用程序的 Common Data Service 中的实体中批量导入和导出 Excel 或 CSV 文件的数据
+title: 从 Common Data Service 导入或导出数据
+description: 使用“从 Excel 获取数据”和“导出数据”功能在 Common Data Service 中的实体中批量导入和导出 Excel 或 CSV 文件的数据
 author: sabinn-msft
 ms.service: powerapps
 ms.topic: conceptual
@@ -13,9 +13,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="import-or-export-data-from-common-data-service-for-apps"></a>从面向应用程序的 Common Data Service 导入或导出数据
+# <a name="import-or-export-data-from-common-data-service"></a>从 Common Data Service 导入或导出数据
 
-若要批量导入和导出 Microsoft Excel 或 CSV 文件的数据，对更新的面向应用程序的 Common Data Service 环境使用“从 Excel 文件获取数据”和“导出数据”功能。
+若要批量导入和导出 Microsoft Excel 或 CSV 文件的数据，对更新的 Common Data Service 环境使用“从 Excel 文件获取数据”和“导出数据”功能。
 
 有两种方式可以将文件导入 Excel 或 CSV 文件的实体。
 
@@ -66,7 +66,7 @@ search.app:
 
 ## <a name="option-2-import-by-bringing-your-own-source-file"></a>选项 2：通过提供您自己的源文件导入
 
-如果您是一个高级用户并且了解面向应用程序的 Common Data Service 实体的指定实体的必填字段，请定义您自己的 Excel 或 CSV 源文件。 请按照**导入文件**中的步骤操作。
+如果您是一个高级用户并且了解 Common Data Service 实体的指定实体的必填字段，请定义您自己的 Excel 或 CSV 源文件。 请按照**导入文件**中的步骤操作。
 
 ## <a name="navigate-mapping-errors"></a>导航映射错误
 
@@ -92,7 +92,7 @@ search.app:
 
 ## <a name="ensure-uniqueness-when-you-import-data-into-an-entity-from-excel-or-csv"></a>确保从 Excel 或 CSV 将数据导入实体时的唯一性
 
-面向应用程序的 Common Data Service 实体使用主键唯一标识 Common Data Service 实体表中的记录。 Common Data Service 实体的主键是一个全局唯一标识符 (GUID)。 这将建立记录标识的的默认基础。 数据操作（如将数据导入到 Common Data Service 实体）显示默认主键。
+Common Data Service 实体使用主键唯一标识 Common Data Service 实体表中的记录。 Common Data Service 实体的主键是一个全局唯一标识符 (GUID)。 这将建立记录标识的的默认基础。 数据操作（如将数据导入到 Common Data Service 实体）显示默认主键。
 
 示例：  
 **客户**实体的主键是 **accountid**。

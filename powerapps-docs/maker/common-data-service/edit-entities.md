@@ -4,7 +4,7 @@ description: 了解各种可以编辑实体的方法
 ms.custom: ''
 ms.date: 05/15/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -39,7 +39,7 @@ search.app:
 
 在 PowerApps 门户和解决方案资源管理器中可执行以下操作：
 
-- **编辑实体字段**。 详细信息：[创建和编辑面向应用程序的 Common Data Service 的字段](create-edit-fields.md)
+- **编辑实体字段**。 详细信息：[创建和编辑 Common Data Service 的字段](create-edit-fields.md)
   
 - **编辑实体关系**。 详细信息：[创建和编辑实体之间的关系](create-edit-entity-relationships.md)
 

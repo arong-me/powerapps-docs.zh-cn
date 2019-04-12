@@ -1,13 +1,13 @@
 ---
 title: 管理实体中的自定义字段 | Microsoft Docs
-description: 如何在面向应用程序的 Common Data Service (CDS) 中创建、读取、更新和删除实体内的自定义字段的演练。
-author: clwesene
+description: 如何在 Common Data Service 中创建、读取、更新和删除实体内的自定义字段的演练。
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:

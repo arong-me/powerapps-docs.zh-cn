@@ -1,9 +1,9 @@
 ---
-title: 面向应用程序的 Common Data Service 的实体关系概述 | MicrosoftDocs
+title: Common Data Service 的实体关系概述 | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/26/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

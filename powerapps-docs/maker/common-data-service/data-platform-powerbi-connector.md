@@ -1,6 +1,6 @@
 ---
 title: 创建 PowerBI 报表 | Microsoft Docs
-description: 使用面向应用程序的 Common Data Service 连接器从 PowerBI Desktop 连接到您的数据。
+description: 使用 Common Data Service 连接器从 PowerBI Desktop 连接到您的数据。
 author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
@@ -15,43 +15,43 @@ search.app:
   - D365CE
 ---
 # <a name="create-a-power-bi-report"></a>创建 Power BI 报表
-面向应用程序的 Common Data Service 允许您使用 Power BI Desktop 直接连接到您的数据以创建报表并将其发布到 Power BI。 从 Power BI，报表可在仪表板中使用，与其他用户共享并可跨 Power BI 移动应用程序上的平台访问。
+Common Data Service 允许您使用 Power BI Desktop 直接连接到您的数据以创建报表并将其发布到 Power BI。 从 Power BI，报表可在仪表板中使用，与其他用户共享并可跨 Power BI 移动应用程序上的平台访问。
 
 ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/PBIDesktop.png "Power BI Desktop")
 
 ## <a name="prerequisites"></a>必备条件 
 
-若要通过面向应用程序的 Common Data Service 使用 Power BI，您需要执行以下操作：
+若要通过 Common Data Service 使用 Power BI，您需要执行以下操作：
 
 * 下载并安装 Power BI Desktop，这是在本地计算机上运行的免费应用程序。 您可以在[此处](https://powerbi.microsoft.com/desktop/)下载 Power BI Desktop。
-* 具有制造者门户访问权限和实体内的数据读取访问权限的面向应用程序的 Common Data Service 环境。
+* 具有制造者门户访问权限和实体内的数据读取访问权限的 Common Data Service 环境。
 
-## <a name="finding-your-common-data-service-for-apps-environment-url"></a>查找您的面向应用程序的 Common Data Service 环境 URL。
+## <a name="finding-your-common-data-service-environment-url"></a>查找您的 Common Data Service 环境 URL
 
 1. 打开 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 并选择要连接到的环境，然后单击右上角的**设置齿轮**，然后单击**高级自定义**
 
-    ![面向应用程序的 CDS 环境](./media/data-platform-cds-powerbi-connector/CDSEnv1.png "面向应用程序的 CDS 环境")
+    ![Common Data Service 环境](./media/data-platform-cds-powerbi-connector/CDSEnv1.png "Common Data Service 环境")
 
 2. 单击“开发人员资源”部分下**资源**，其将打开一个新选项卡。
 
-    ![面向应用程序的 CDS 环境](./media/data-platform-cds-powerbi-connector/CDSEnv2.png "面向应用程序的 CDS 环境")
+    ![Common Data Service 环境](./media/data-platform-cds-powerbi-connector/CDSEnv2.png "Common Data Service 环境")
 
 3. 复制新选项卡中该 URL 的根，这是您的环境的唯一 URL。 URL 格式将为 **https://yourenvironmentid.crm.dynamics.com/**，请确保不要复制 URL 的其余部分。 请将信息保留在方便的位置，以便您可以在创建 PowerBI 报表时使用它。
 
     > [!div class="mx-imgBorder"] 
-    > ![面向应用程序的 CDS 环境](./media/data-platform-cds-powerbi-connector/CDSEnv3.png "面向应用程序的 CDS 环境")
+    > ![Common Data Service 环境](./media/data-platform-cds-powerbi-connector/CDSEnv3.png "Common Data Service 环境")
 
-## <a name="connecting-to-common-data-service-for-apps-from-power-bi-desktop"></a>从 Power BI Desktop 连接到面向应用程序的 Common Data Service
+## <a name="connecting-to-common-data-service-from-power-bi-desktop"></a>从 Power BI Desktop 连接到 Common Data Service
 
 1. 启动 **Power BI Desktop**，如果是您首次启动，可能会使用欢迎屏幕提示您或将您直接带入一个空白区域 - 不论是哪种情况，均单击**获取数据**并选择**更多**打开可用于 Power BI Desktop 的数据源的完整列表。
 
     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport1.png "Power BI Desktop")
 
-2. 从连接器列表单击 **Online Services** 和**面向应用程序的 Common Data Service (Beta)**。 单击**连接**。
+2. 从连接器列表单击 **Online Services** 和 **Common Data Service (Beta)**。 单击**连接**。
 
     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport2.png "Power BI Desktop")
 
-3. 将您的**面向应用的 Common Data Service 环境 URL** 复制到**服务器 URL** 字段中，然后单击**确定**。 如果是您首次使用，将提示您使用用于连接到 PowerApps 和面向应用程序的 Common Data Service 的相同凭据登录。
+3. 将您的 **Common Data Service 环境 URL** 复制到**服务器 URL** 字段中，然后单击**确定**。 如果是您首次使用，将提示您使用用于连接到 PowerApps 和 Common Data Service 的相同凭据登录。
 
     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport3.png "Power BI Desktop")
 
@@ -94,7 +94,7 @@ search.app:
 
 ## <a name="navigating-relationships"></a>导航关系
 
-面向应用程序的 Common Data Service 中的关系需要您使用 GUID 字段在 PowerBI desktop 内在两个实体之间创建关系，这是系统生成的唯一标识符，确保关系为其他字段可能不明确或重复的创建记录创建。 可以在[此处](https://docs.microsoft.com/power-bi/desktop-create-and-manage-relationships)了解 Power BI desktop 中管理关系的详细信息。
+Common Data Service 中的关系需要您使用 GUID 字段在 PowerBI desktop 内在两个实体之间创建关系，这是系统生成的唯一标识符，确保关系为其他字段可能不明确或重复的创建记录创建。 可以在[此处](https://docs.microsoft.com/power-bi/desktop-create-and-manage-relationships)了解 Power BI desktop 中管理关系的详细信息。
 
 虽然有些关系可能自动创建，您仍然可以查看并确保在创建报表时建立正确的关系：
 

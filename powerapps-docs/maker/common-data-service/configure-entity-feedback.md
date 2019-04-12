@@ -4,7 +4,7 @@ description: 了解如何启用实体的反馈
 ms.custom: ''
 ms.date: 05/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -42,7 +42,8 @@ search.app:
 
 默认情况下，用户必须转到要向其添加反馈的记录的关联记录列表。 为了方便用户添加反馈，您可能希望向要为其启用反馈的实体的窗体添加反馈子网格。  
 
-<!-- This is the closest I could find to a topic about adding an subgrid to a form. -->详细信息：[子网格属性概述](../model-driven-apps/sub-grid-properties-legacy.md)
+<!-- This is the closest I could find to a topic about adding an subgrid to a form. -->
+详细信息：[子网格属性概述](../model-driven-apps/sub-grid-properties-legacy.md)
 
 ## <a name="add-a-rollup-field--to-the-entity-form-to-show-the-ratings"></a>向实体窗体添加一个汇总字段以显示评级  
 

@@ -4,7 +4,7 @@ description: 了解如何定义状态描述转换
 ms.custom: ''
 ms.date: 05/25/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -29,7 +29,7 @@ search.app:
 您可以为事件（**案例**）实体或自定义实体指定状态描述转换。
 
 > [!NOTE]
-> 虽然事件（案例）实体不包含在默认的“面向应用程序的 Common Data Service”环境中，它由 [Dynamics 365 for Customer Service](https://dynamics.microsoft.com/customer-service/) 使用，并在[通用数据模型](https://github.com/Microsoft/CDM/blob/master/schemaDocuments/core/applicationCommon/foundationCommon/crmCommon/service/Incident.cdm.json)内定义
+> 虽然事件（案例）实体不包含在默认的 Common Data Service 环境中，它由 [Dynamics 365 for Customer Service](https://dynamics.microsoft.com/customer-service/) 使用，并在[通用数据模型](https://github.com/Microsoft/CDM/blob/master/schemaDocuments/core/applicationCommon/foundationCommon/crmCommon/service/Incident.cdm.json)内定义
   
 状态描述转换是一个可选的附加筛选级别，定义了每个状态描述可以更改的状态描述值。 当有大量有效的状态描述值组合时，定义一个有效的选项受限列表可以方便用户为记录选择正确的下一个状态描述。  
   
@@ -60,7 +60,7 @@ search.app:
 您可以修改案例实体和自定义实体的状态描述字段选项，从而定义用户可以选择的其他状态描述。 唯一的限制是有效状态的每个状态描述选项必须允许至少一个路径到无效状态。 否则，可能会产生无法解析或删除的案例。  
 
 > [!NOTE]
-> 编辑状态描述转换需要使用解决方案资源管理器。 有关如何编辑字段的信息，请参阅[使用 PowerApps 解决方案资源管理器创建和编辑面向应用程序的 Common Data Service 的字段](create-edit-field-solution-explorer.md)。
+> 编辑状态描述转换需要使用解决方案资源管理器。 有关如何编辑字段的信息，请参阅[使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)。
   
  在您编辑状态描述字段时，菜单中显示**编辑状态描述转换**按钮。 
 
@@ -81,7 +81,7 @@ search.app:
   
 ### <a name="see-also"></a>另请参阅  
 
-[使用 PowerApps 解决方案资源管理器创建和编辑面向应用程序的 Common Data Service 的字段](create-edit-field-solution-explorer.md)<br />
+[使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)<br />
 [实体元数据 > 实体状态](/powerapps/developer/common-data-service/entity-metadata#entity-states)<br />
 [定义自定义状态模型转换](/dynamics365/customer-engagement/developer/define-custom-state-model-transitions)
 

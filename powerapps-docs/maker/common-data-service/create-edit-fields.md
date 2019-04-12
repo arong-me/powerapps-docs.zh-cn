@@ -1,9 +1,9 @@
 ---
-title: 如何创建和编辑面向应用程序的 Common Data Service 的字段 | MicrosoftDocs
+title: 如何创建和编辑 Common Data Service 的字段 | MicrosoftDocs
 ms.custom: ''
 ms.date: 02/08/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="how-to-create-and-edit-fields"></a>如何创建和编辑字段
 
-在面向应用程序的 Common Data Service 中，字段定义可用于存储实体中数据的个别数据项。 开发人员有时也将字段称为*属性*。 
+在 Common Data Service 中，字段定义可用于存储实体中数据的个别数据项。 开发人员有时也将字段称为*属性*。 
   
 在创建自定义字段之前，应评估使用现有字段是否满足您的要求。 详细信息：[新建元数据或使用现有元数据？](create-edit-metadata.md#create-new-metadata-or-use-existing-metadata)
 
@@ -31,8 +31,8 @@ search.app:
 
 |设计器| 说明|
 |--|--|
-|[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[使用 PowerApps 门户创建和编辑面向应用程序的 Common Data Service 的字段](create-edit-field-portal.md)|
-|解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。<br />详细信息：[使用 PowerApps 解决方案资源管理器创建和编辑面向应用程序的 Common Data Service 的字段](create-edit-field-solution-explorer.md) |
+|[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[使用 PowerApps 门户创建和编辑 Common Data Service 的字段](create-edit-field-portal.md)|
+|解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。<br />详细信息：[使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md) |
 
 > [!NOTE]
 > 您还可以使用以下方法在您的环境中创建字段：
@@ -43,11 +43,11 @@ search.app:
 
 本主题中的信息将帮助您选择可以使用的设计器。 
 
-您应使用 PowerApps 门户来创建和编辑面向应用的 Common Data Service 的字段，除非您需要满足下列任意一项要求：
+您应使用 PowerApps 门户来创建和编辑 Common Data Service 的字段，除非您需要满足下列任意一项要求：
 
 - 创建客户查找字段。 
    - 详细信息：[不同的查找类型](types-of-fields.md#different-types-of-lookups)
-- 在 CDS 默认解决方案以外的解决方案中创建字段。 
+- 在除 Common Data Service 默认解决方案以外的解决方案中创建字段。 
    - 详细信息：[解决方案概述](solutions-overview.md)
 - 定义状态描述转换。 
    - 详细信息：[为案例或自定义实体定义状态描述转换](define-status-reason-transitions.md)
@@ -70,14 +70,14 @@ search.app:
 
 ## <a name="community-tools"></a>社区工具
 
-**[Attribute Manager](https://www.xrmtoolbox.com/plugins/DLaB.Xrm.AttributeManager/)** 是一款 XrmToolbox 社区为面向应用程序的 CDS 开发的工具。 请参阅[开发人员工具](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools)主题以获取更多社区开发的工具。
+**[Attribute Manager](https://www.xrmtoolbox.com/plugins/DLaB.Xrm.AttributeManager/)** 是一款 XrmToolbox 社区为 Common Data Service 开发的工具。 请参阅[开发人员工具](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools)主题以获取更多社区开发的工具。
 
 > [!NOTE]
 > 这些社区工具不是 Microsoft 的产品，因此不能将支持延伸到这些社区工具。 如果有与该工具相关的疑问，请联系发布者。 详细信息：[XrmToolBox](https://www.xrmtoolbox.com)。
 
 ### <a name="see-also"></a>另请参阅  
-[使用 PowerApps 门户创建和编辑面向应用程序的 Common Data Service 的字段](create-edit-field-portal.md)<br />
-[使用 PowerApps 解决方案资源管理器创建和编辑面向应用程序的 Common Data Service 的字段](create-edit-field-solution-explorer.md)<br />
+[使用 PowerApps 门户创建和编辑 Common Data Service 的字段](create-edit-field-portal.md)<br />
+[使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)<br />
 [字段类型和字段数据类型](types-of-fields.md)<br />
 [开发人员文档：使用属性元数据](/dynamics365/customer-engagement/developer/org-service/work-attribute-metadata)
  

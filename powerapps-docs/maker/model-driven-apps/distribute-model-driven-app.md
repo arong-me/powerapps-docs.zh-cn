@@ -3,7 +3,7 @@ title: 使用解决方案分发模型驱动应用程序 | MicrosoftDocs
 description: 了解如何使用解决方案分发模型驱动应用程序
 keywords: ''
 ms.date: 08/06/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:

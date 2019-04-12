@@ -1,6 +1,6 @@
 ---
 title: Power Query 疑难解答 | Microsoft Docs
-description: 通过使用 Power Query 在面向应用程序的 Common Data Service 中创建自定义实体来解决问题。
+description: 通过使用 Power Query 在 Common Data Service 中创建自定义实体来解决问题。
 author: mllopis
 manager: kfile
 ms.service: powerapps
@@ -20,7 +20,7 @@ search.app:
 
 >“您的 Azure Active Directory 管理员设置了阻止您使用此功能的策略。 请与您的管理员联系，他可以代表您授予此功能的权限。”
 
-如果 Power Query 无法访问 PowerApps 或面向应用程序的 Common Data Service 中组织的数据时，将显示此错误。 此情况会在两组情形下出现：
+如果 Power Query 无法访问 PowerApps 或 Common Data Service 中组织的数据时，将显示此错误。 此情况会在两组情形下出现：
 
 * Azure Active Directory (Azure AD) 租户管理员已经禁用了用户同意应用程序代表他们访问公司数据的功能。
 * 使用非托管 Active Directory 租户。 非托管租户是一个目录，没有为完成自助注册服务创建的全局管理员。 要修复此情形，用户必须首先转换为托管租户，然后按照解决这个问题的两个解决方案之一操作。 解决方案在下一部分介绍。

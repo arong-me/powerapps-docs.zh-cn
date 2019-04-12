@@ -1,5 +1,5 @@
 ---
-title: 实体关系行为（面向应用程序的 Common Data Service）| Microsoft Docs
+title: 实体关系行为 (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 08/01/2018

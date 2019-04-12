@@ -4,7 +4,7 @@ description: 了解如何使用解决方案资源管理器创建实体
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 
 # <a name="create-and-edit-entities-using-solution-explorer"></a>使用解决方案资源管理器创建和编辑实体
 
-您可以使用 PowerApps 门户在大多数常见情况下轻松创建实体，不过不是所有功能都在这里实现。 在需要满足[在面向应用程序的 Common Data Service 中创建和编辑实体](create-edit-entities.md)中所述的要求时，可以通过使用解决方案资源管理器创建或编辑实体来实现。
+您可以使用 PowerApps 门户在大多数常见情况下轻松创建实体，不过不是所有功能都在这里实现。 在需要满足[在 Common Data Service 中创建和编辑实体](create-edit-entities.md)中所述的要求时，可以通过使用解决方案资源管理器创建或编辑实体来实现。
 
 ## <a name="open-solution-explorer"></a>打开解决方案资源管理器
 
@@ -106,7 +106,7 @@ Both should point to this include
 [!INCLUDE [cc_entity-changeable-options-table](../../includes/cc_entity-changeable-options-table.md)]
 
 您还可以进行以下更改：
-- [创建和编辑面向应用程序的 Common Data Service 的字段](create-edit-fields.md)
+- [创建和编辑 Common Data Service 的字段](create-edit-fields.md)
 - [创建和编辑实体之间的关系](create-edit-entity-relationships.md)
 - [创建和设计窗体](../model-driven-apps/create-design-forms.md)
 - [创建业务流程以标准化流程](/flow/create-business-process-flow)
@@ -197,6 +197,6 @@ Both should point to this include
 详细信息：[创建和编辑包含来自外部数据源的数据的虚拟实体](create-edit-virtual-entities.md)
 
 ### <a name="see-also"></a>另请参阅
-[在面向应用程序的 Common Data Service 中创建和编辑实体](create-edit-entities.md)<br />
+[在 Common Data Service 中创建和编辑实体](create-edit-entities.md)<br />
 [教程：在 PowerApps 中创建包含组件的自定义实体](/powerapps/maker/common-data-service/create-custom-entity)<br />
 [创建解决方案](create-solution.md)

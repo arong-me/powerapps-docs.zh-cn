@@ -4,7 +4,7 @@ description: 了解如何查询和可视化相关的分层数据
 ms.custom: ''
 ms.date: 06/20/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -37,7 +37,7 @@ search.app:
   
 <a name="BKMK_Querydata"></a>   
 ## <a name="query-hierarchical-data"></a>查询分层数据  
- 使用面向应用程序的 Common Data Service，分层数据结构支持相关记录的自我参照的一对多 (1:N) 关系。 以前，要想查看分层数据，必须对相关记录进行迭代查询。 现在，只需一个步骤就可以按层次结构查询相关数据。 您将可以使用**Under**和**Not Under**逻辑查询记录。 **Under**和**Not Under**分层操作符在“高级查找”和工作流编辑中显示。 有关如何使用这些运算符的详细信息，请参阅[配置工作流步骤](/flow/configure-workflow-steps)。 有关高级查找的更多信息，请查看[创建、编辑或保存高级查找搜索](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)  
+ 使用 Common Data Service，分层数据结构支持相关记录的自我参照的一对多 (1:N) 关系。 以前，要想查看分层数据，必须对相关记录进行迭代查询。 现在，只需一个步骤就可以按层次结构查询相关数据。 您将可以使用**Under**和**Not Under**逻辑查询记录。 **Under**和**Not Under**分层操作符在“高级查找”和工作流编辑中显示。 有关如何使用这些运算符的详细信息，请参阅[配置工作流步骤](/flow/configure-workflow-steps)。 有关高级查找的更多信息，请查看[创建、编辑或保存高级查找搜索](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)  
   
  以下示例说明查询层次结构的不同方案：  
   

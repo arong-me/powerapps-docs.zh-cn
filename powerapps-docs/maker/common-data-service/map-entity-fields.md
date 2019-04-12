@@ -4,7 +4,7 @@ description: 了解如何映射实体字段
 ms.custom: ''
 ms.date: 05/29/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -98,7 +98,7 @@ search.app:
 - 如果字段是选项集，则每个选项的整数值应完全相同。  
   
 > [!NOTE]
->  如果需要映射选项集字段，建议您将两个字段都配置为使用相同的全局选项集。 否则，可能难以手动让两个单独的选项集保持同步。 如果每个选项的整数值未正确映射，则可能是数据中出现了问题。 详细信息：[为面向应用程序的 Common Data Service 创建和编辑全局选项集（选择列表）](create-edit-global-option-sets.md)  
+>  如果需要映射选项集字段，建议您将两个字段都配置为使用相同的全局选项集。 否则，可能难以手动让两个单独的选项集保持同步。 如果每个选项的整数值未正确映射，则可能是数据中出现了问题。 详细信息：[为 Common Data Service 创建和编辑全局选项集（选择列表）](create-edit-global-option-sets.md)  
   
 ## <a name="automatically-generate-field-mappings"></a>自动生成字段映射  
 

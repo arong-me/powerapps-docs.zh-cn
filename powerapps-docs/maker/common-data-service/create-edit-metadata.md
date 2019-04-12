@@ -1,10 +1,10 @@
 ---
-title: 面向应用程序的 Common Data Service 中的实体和元数据 | MicrosoftDocs
-description: 了解面向应用程序的 Common Data Service 中的实体和元数据
+title: Common Data Service 中的实体和元数据 | MicrosoftDocs
+description: 了解 Common Data Service 中的实体和元数据
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,15 +24,15 @@ search.app:
   - D365CE
 ---
 
-# <a name="entities-and-metadata-in-common-data-service-for-apps"></a>面向应用程序的 Common Data Service 中的实体和元数据
+# <a name="entities-and-metadata-in-common-data-service"></a>Common Data Service 中的实体和元数据
 
-面向应用程序的 Common Data Service 的设计是让您可以快速轻松地为您的应用程序创建数据模型。 通常，您应该不必担心本主题将介绍的元数据的一些详细信息。 但是，如果要深入了解使用面向应用程序的 CDS 的应用程序如何工作，或您在评估可能性，了解面向应用程序的 CDS 使用的元数据可能为您提供见解。
+Common Data Service 的设计是让您可以快速轻松地为您的应用程序创建数据模型。 通常，您应该不必担心本主题将介绍的元数据的一些详细信息。 但是，如果要深入了解使用 Common Data Service 的应用程序如何工作，或您在评估可能性，了解 Common Data Service 使用的元数据可能为您提供见解。
 
-“*元数据*”指的是有关数据的数据。 面向应用程序的 CDS 为您提供了一个灵活的平台，因为它在编辑环境要使用的数据定义上相对容易。 在面向应用程序的 CDS 中，元数据是一个实体的集合。 实体描述存储在数据库中的数据种类。  每个实体对应于一个数据库表，实体中的每个字段（也称为属性）代表该表中的一列。 实体元数据可以控制您能创建的记录种类以及可以对记录执行的操作种类。 在使用自定义工具创建或编辑实体、字段和实体关系时，您在编辑此元数据。 
+“*元数据*”指的是有关数据的数据。 Common Data Service 为您提供了一个灵活的平台，因为它在编辑环境要使用的数据定义上相对容易。 在 Common Data Service 中，元数据是实体的集合。 实体描述存储在数据库中的数据种类。  每个实体对应于一个数据库表，实体中的每个字段（也称为属性）代表该表中的一列。 实体元数据可以控制您能创建的记录种类以及可以对记录执行的操作种类。 在使用自定义工具创建或编辑实体、字段和实体关系时，您在编辑此元数据。 
   
 用户用于与环境中的数据交互的不同客户端会依赖实体元数据，并随元数据的自定义进行调整。 但是，这些客户端要依赖其他数据来控制要显示的可视元素、要应用的自定义逻辑以及安全性应用方式。 此系统数据也存储在实体中，但实体本身不可用于自定义。
 
-您可以查看[实体引用](/powerapps/developer/common-data-service/reference/about-entity-reference)，了解默认包括在面向应用程序的 CDS 中的标准实体、属性和实体关系。
+您可以查看[实体引用](/powerapps/developer/common-data-service/reference/about-entity-reference)，了解默认包括在 Common Data Service 中的标准实体、属性和实体关系。
 
 > [!TIP]
 > 可用于编辑元数据的设计器无法显示在元数据中找到的所有详细信息。 您可以安装名为**元数据浏览器**的模型驱动应用程序，这让您可以查看在系统中找到的所有实体和元数据属性。 详细信息：[浏览您的环境的元数据](https://docs.microsoft.com/dynamics365/customer-engagement/developer/browse-your-metadata)。
@@ -41,7 +41,7 @@ search.app:
 
 ## <a name="create-new-metadata-or-use-existing-metadata"></a>新建元数据或使用现有元数据？
 
-面积应用程序的 CDS 附带了一些支持核心业务应用程序功能的标准实体。 例如，有关客户或潜在客户的数据可使用客户或联系人实体存储。  
+Common Data Service 附带了一些支持核心业务应用程序功能的标准实体。 例如，有关客户或潜在客户的数据可使用客户或联系人实体存储。  
   
 每个实体还包含一些字段，这些字段代表系统可能需要为相应实体存储的通用数据。  
   

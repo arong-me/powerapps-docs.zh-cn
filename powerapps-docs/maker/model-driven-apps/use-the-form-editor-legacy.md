@@ -4,7 +4,7 @@ description: 了解如何更改窗体内的导航
 ms.custom: ''
 ms.date: 06/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -29,7 +29,7 @@ search.app:
   
  可以在窗体编辑器中覆盖配置为要显示的任何实体关系。 您还可以放入导航链接，以便通过窗体导航显示 Web 资源或其他网站。  
   
- 有关分步说明，请参阅[创建和编辑面向应用程序的 Common Data Service 的实体关系](../common-data-service/create-edit-entity-relationships.md)  
+ 有关分步说明，请参阅[创建和编辑 Common Data Service 的实体关系](../common-data-service/create-edit-entity-relationships.md)  
   
  若要编辑导航，必须先在窗体设计器的**主页**选项卡上的**选择** 组中选择**导航**。  
  

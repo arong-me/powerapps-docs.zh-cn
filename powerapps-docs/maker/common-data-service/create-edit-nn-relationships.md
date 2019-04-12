@@ -1,10 +1,10 @@
 ---
-title: 在面向应用程序的 Common Data Service 中创建多对多实体关系概述 | MicrosoftDocs
+title: 在 Common Data Service 中创建多对多实体关系概述 | MicrosoftDocs
 description: 了解如何创建多或多实体关系
 ms.custom: ''
 ms.date: 05/29/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -37,8 +37,8 @@ search.app:
 
 |设计器| 说明|
 |--|--|
-|[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[使用 PowerApps 门户在面向应用程序的 Common Data Service 中创建多对多实体关系](create-edit-nn-relationships-portal.md)|
-|解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。<br />详细信息：[使用解决方案资源管理器在面向应用程序的 Common Data Service 中创建 N:N（多对多）实体关系](create-edit-nn-relationships-solution-explorer.md) |
+|[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[使用 PowerApps 门户在 Common Data Service 中创建多对多实体关系](create-edit-nn-relationships-portal.md)|
+|解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。<br />详细信息：[使用解决方案资源管理器在 Common Data Service 中创建 N:N（多对多）实体关系](create-edit-nn-relationships-solution-explorer.md) |
 
 > [!NOTE]
 > 您还可以使用以下方法在您的环境中创建新的多对多 (N:N) 实体关系：
@@ -55,7 +55,7 @@ search.app:
 ## <a name="see-also"></a>另请参阅
 
 [创建和编辑实体之间的关系](create-edit-entity-relationships.md)<br />
-[使用 PowerApps 门户在面向应用程序的 Common Data Service 中创建多对多实体关系](create-edit-nn-relationships-portal.md)<br />
-[使用解决方案资源管理器在面向应用程序的 Common Data Service 中创建 N:N（多对多）实体关系](create-edit-nn-relationships-solution-explorer.md)<br />
+[使用 PowerApps 门户在 Common Data Service 中创建多对多实体关系](create-edit-nn-relationships-portal.md)<br />
+[使用解决方案资源管理器在 Common Data Service 中创建 N:N（多对多）实体关系](create-edit-nn-relationships-solution-explorer.md)<br />
 [开发人员文档：自定义实体关系元数据](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)<br />
 [开发人员文档：实体关系资格](https://docs.microsoft.com/dynamics365/customer-engagement/developer/entity-relationship-eligibility)

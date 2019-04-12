@@ -22,7 +22,7 @@ search.app:
 ## <a name="prerequisites"></a>必备条件 
 若要按照此过程操作，需要以下项目：
 * PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证。 或者，可以注册[免费的 PowerApps 计划 2 试用版](https://web.powerapps.com/signup?redirect=marketing&email=)。
-* 面向应用的 Common Data Service 内的系统管理员或系统定制员安全角色。
+* Common Data Service 内的系统管理员或系统定制员安全角色。
 
 ## <a name="sign-in-to-powerapps"></a>登录到 PowerApps
 在 [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 登录到 PowerApps

@@ -1,9 +1,9 @@
 ---
-title: 使用 PowerApps 解决方案资源管理器创建和编辑面向应用程序的 Common Data Service 的字段 | MicrosoftDocs
+title: 使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段 | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -19,13 +19,13 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-fields-for-common-data-service-for-apps-using-powerapps-solution-explorer"></a>使用 PowerApps 解决方案资源管理器创建和编辑面向应用程序的 Common Data Service 的字段
+# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-solution-explorer"></a>使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段
 
-解决方案资源管理器为创建和编辑面向应用程序的 Common Data Service 的字段提供一种方法。
+解决方案资源管理器为创建和编辑 Common Data Service 的字段提供一种方法。
 
 [PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 <br />详细信息： 
-- [创建和编辑面向应用程序的 Common Data Service 的字段](create-edit-fields.md)
-- [使用 PowerApps 门户创建和编辑面向应用程序的 Common Data Service 的字段](create-edit-field-portal.md)
+- [创建和编辑 Common Data Service 的字段](create-edit-fields.md)
+- [使用 PowerApps 门户创建和编辑 Common Data Service 的字段](create-edit-field-portal.md)
   
 ## <a name="open-solution-explorer"></a>打开解决方案资源管理器
 
@@ -142,7 +142,7 @@ search.app:
 
 ![配置全局选项集](media/global-option-set-solution-explorer.png)
 
-您还可以单独配置全局选项集。 详细信息：[为面向应用程序的 Common Data Service 创建和编辑全局选项集（选择列表）](create-edit-global-option-sets.md)
+您还可以单独配置全局选项集。 详细信息：[为 Common Data Service 创建和编辑全局选项集（选择列表）](create-edit-global-option-sets.md)
 
 > [!NOTE]
 > 如果您将每个选项集定义为全局选项集，您的全局选项集列表将增大并可能很难管理。 如果您知道这组选项只会在一个位置使用，请使用本地选项集。
@@ -260,8 +260,8 @@ search.app:
 
 
 ### <a name="see-also"></a>另请参阅  
-[创建和编辑面向应用程序的 Common Data Service 的字段](create-edit-fields.md)<br />
-[使用 PowerApps 门户创建和编辑面向应用程序的 Common Data Service 的字段](create-edit-field-portal.md)<br />
+[创建和编辑 Common Data Service 的字段](create-edit-fields.md)<br />
+[使用 PowerApps 门户创建和编辑 Common Data Service 的字段](create-edit-field-portal.md)<br />
 [字段类型和字段数据类型](types-of-fields.md)<br />
 [定义计算字段以自动化手动计算](define-calculated-fields.md)<br />
 [定义用于聚合值的汇总字段](define-rollup-fields.md)<br />

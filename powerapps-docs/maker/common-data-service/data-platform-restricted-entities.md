@@ -1,13 +1,13 @@
 ---
 title: 需要 Dynamics 365 许可证的受限实体 | Microsoft Docs
-description: 需要 Dynamics 365 许可证的面向应用程序的 Common Data Service (CDS) 中的受限实体列表。
-author: clwesene
+description: 需要 Dynamics 365 许可证的 Common Data Service 中的受限实体列表。
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
 ms.date: 05/01/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -16,7 +16,7 @@ search.app:
 ---
 
 # <a name="restricted-entities-requiring-dynamics-365-licenses"></a>需要 Dynamics 365 许可证的受限实体
-应用程序制造者可以使用面向应用程序的 Common Data Service (CDS) 内提供的大多数实体来为只有 PowerApps 计划 1 许可证的用户创建应用程序和流。 不过，有些实体包含需要应用程序用户有 PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证的复杂业务逻辑（有关详细信息，请参阅[实体的许可证要求](data-platform-entity-licenses.md)）。 如果需要创建、更新或删除实体内的记录，即使更小的绑定到 Dynamics 365 产品的一组实体也需要画布和模型驱动应用程序用户具有相应 Dynamics 365 产品的许可证。 这些实体称为*受限*实体。
+应用程序制造者可以使用 Common Data Service 内提供的大多数实体来为只有 PowerApps 计划 1 许可证的用户创建应用程序和流。 不过，有些实体包含需要应用程序用户有 PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证的复杂业务逻辑（有关详细信息，请参阅[实体的许可证要求](data-platform-entity-licenses.md)）。 如果需要创建、更新或删除实体内的记录，即使更小的绑定到 Dynamics 365 产品的一组实体也需要画布和模型驱动应用程序用户具有相应 Dynamics 365 产品的许可证。 这些实体称为*受限*实体。
 
 实体可能由于下列原因被限制，需要有 Dynamics 365 许可证：
 

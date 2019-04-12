@@ -4,7 +4,7 @@ definition: Learn how to change the icon for a custom entity
 ms.custom: ''
 ms.date: 05/17/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -63,7 +63,7 @@ search.app:
   
 ## <a name="community-tools"></a>社区工具
 
-**[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)** 是 XrmToolbox 社区为 Dynamics 365 Customer Engagement 开发的工具。 请参阅[面向应用程序的 Common Data Service 的开发工具](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools)主题了解社区开发的工具。
+**[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)** 是 XrmToolbox 社区为 Dynamics 365 Customer Engagement 开发的工具。 请参阅 [Common Data Service 的开发工具](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools)主题了解社区开发的工具。
 
 > [!NOTE]
 > 这些社区工具不是 Microsoft 的产品，因此不能将支持延伸到这些社区工具。 如果有与该工具相关的疑问，请联系发布者。 详细信息：[XrmToolBox](https://www.xrmtoolbox.com)。

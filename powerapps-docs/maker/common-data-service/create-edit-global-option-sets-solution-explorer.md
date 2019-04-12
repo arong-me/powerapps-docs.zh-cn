@@ -1,9 +1,9 @@
 ---
-title: 使用解决方案资源管理器创建和编辑面向应用程序的 Common Data Service 的全局选项集 | MicrosoftDocs
+title: 使用解决方案资源管理器创建和编辑 Common Data Service 的全局选项集 | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/26/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -19,12 +19,12 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-global-option-sets-for-common-data-service-for-apps-using-solution-explorer"></a>使用解决方案资源管理器创建和编辑面向应用程序的 Common Data Service 的全局选项集
+# <a name="create-and-edit-global-option-sets-for-common-data-service-using-solution-explorer"></a>使用解决方案资源管理器创建和编辑 Common Data Service 的全局选项集
 
-解决方案资源管理器提供一种使用面向应用程序的 Common Data Service 为面向应用程序的 Common Data Service 创建和编辑全局选项集的方法。
+解决方案资源管理器为创建和编辑 Common Data Service 的全局选项集提供一种方法。
 
 [PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 <br />详细信息： 
-- [为面向应用程序的 Common Data Service 创建和编辑全局选项集](create-edit-global-option-sets.md)
+- [为 Common Data Service 创建和编辑全局选项集](create-edit-global-option-sets.md)
 - [创建选项集](custom-picklists.md)
 
 ## <a name="open-solution-explorer"></a>打开解决方案资源管理器
@@ -40,7 +40,7 @@ search.app:
 ![查看全局选项集](media/view-global-option-sets-solution-explorer.png)
 
 > [!NOTE]
-> 有些系统全局选项集不可自定义。 这些选项可能随更新或新版本更改，因此，除非您确定您的要求符合面向应用程序的 CDS 使用这些值的方式。
+> 有些系统全局选项集不可自定义。 这些选项可能随更新或新版本更改，因此，除非您确定您的要求符合 Common Data Service 使用这些值的方式。
 
 ## <a name="create-a-global-option-set"></a>创建全局选项集
 
@@ -81,7 +81,7 @@ search.app:
   
 ### <a name="see-also"></a>另请参阅
  
-[为面向应用程序的 Common Data Service 创建和编辑全局选项集](create-edit-global-option-sets.md)<br />
+[为 Common Data Service 创建和编辑全局选项集](create-edit-global-option-sets.md)<br />
 [创建选项集](custom-picklists.md)<br />
 [创建和编辑字段](create-edit-fields.md)<br />
 [开发人员文档：自定义全局选项集](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)

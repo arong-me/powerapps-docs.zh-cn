@@ -1,9 +1,9 @@
 ---
 title: 创建模型驱动应用程序的业务规则和建议 | MicrosoftDocs
 ms.custom: ''
-ms.date: 12/06/2018
+ms.date: 03/15/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -24,9 +24,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="tutorial-create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>教程：创建业务规则和建议以在模型驱动应用程序窗体中应用逻辑
+# <a name="create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>创建业务规则和建议以在模型驱动应用程序窗体中应用逻辑
 
-本教程向您介绍无需编写 JavaScript 代码或创建插件，如何创建业务规则和建议以在模型驱动的应用程序中应用窗体逻辑。业务规则可以提供一个简单的界面来实施和维护快速更改和常用的规则。 它们可以应用于“主”和“快速创建”窗体，可以在模型驱动的应用程序、Dynamics 365 customer engagement Web 应用程序、Dynamics 365 for tablets 和 Dynamics 365 for Outlook（联机或脱机模式）中工作。
+本主题向您介绍无需编写 JavaScript 代码或创建插件，如何创建业务规则和建议以在模型驱动的应用程序中应用窗体逻辑。业务规则可以提供一个简单的界面来实施和维护快速更改和常用的规则。 它们可以应用于“主”和“快速创建”窗体，可以在模型驱动的应用程序、Dynamics 365 customer engagement Web 应用程序、Dynamics 365 for tablets 和 Dynamics 365 for Outlook（联机或脱机模式）中工作。
 
 > [!NOTE]
 > 若要为实体定义业务规则，以使其适用于所有窗体和服务器，请参阅[为实体创建业务规则](/powerapps/maker/common-data-service/data-platform-create-business-rule)。
@@ -129,7 +129,13 @@ search.app:
 ## <a name="localize-error-messages-used-in-business-rules"></a>本地化业务规则中使用的错误消息  
  如果为组织配置了多种语言，则需要将设置的错误消息本地化。 每次设置消息时，系统会生成一个标签。 如果您导出组织中的翻译，就可以添加消息的本地化版本，然后将这些标签重新导入到系统中，从而使使用非基本语言的用户可以查看经过翻译的消息。  
 
-## <a name="is-your-business-rule-not-firing-for-a-form"></a>您的业务规则是否不响应窗体？
+## <a name="common-issues"></a>常见问题
+本部分介绍了在使用业务规则时可能出现的常见问题。 
+
+### <a name="full-name-field-not-supported-with-unified-interface-apps"></a>统一接口应用程序不支持“全名”字段
+使用**全名** (fullname) 字段的操作或条件在基于统一接口的应用程序中不受支持。  或者，可以使用具有**名** (firstname) 和**姓** (lastname) 字段的操作或条件。 
+
+### <a name="is-your-business-rule-not-firing-for-a-form"></a>您的业务规则是否不响应窗体？
 由于窗体中不包含业务规则内应用的字段，所以可能不执行业务规则。 
 1.  打开解决方案资源管理器。 展开所需实体，然后选择**窗体**。 
 2.  打开所需窗体，然后在窗体设计器功能区上选择**业务规则**。 

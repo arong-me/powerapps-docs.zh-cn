@@ -4,7 +4,7 @@ description: 了解如何使用 PowerApps 解决方案资源管理器创建一�
 ms.custom: ''
 ms.date: 10/28/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,7 +24,7 @@ search.app:
 
 # <a name="create-and-edit-1n-one-to-many-or-n1-many-to-one-entity-relationships-using-solution-explorer"></a>使用解决方案资源管理器创建和编辑 1:N（一对多）或 N:1（多对一）实体关系 
 
-解决方案资源管理器提供了一个为面向应用程序的 Common Data Service 创建和编辑 1:N（一对多）或 N:1（多对一）实体关系的方法。
+解决方案资源管理器提供了一个为 Common Data Service 创建和编辑 1:N（一对多）或 N:1（多对一）实体关系的方法。
 
 [PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 详细信息： 
 - [创建 1:N（一对多）或 N:1（多对一）关系](create-edit-1n-relationships.md)

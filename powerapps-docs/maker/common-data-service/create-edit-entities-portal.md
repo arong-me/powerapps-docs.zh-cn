@@ -4,7 +4,7 @@ description: 了解如何使用 PowerApps 门户创建和编辑实体
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -25,10 +25,10 @@ search.app:
 
 # <a name="create-and-edit-entities-using-powerapps-portal"></a>使用 PowerApps 门户创建和编辑实体
 
-[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供为面向应用程序的 Common Data Service 创建和编辑实体的简单方法。
+[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供为 Common Data Service 创建和编辑实体的简单方法。
 
 此门户支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 详细信息： 
-- [在面向应用程序的 Common Data Service 中创建和编辑实体](create-edit-entities.md)
+- [在 Common Data Service 中创建和编辑实体](create-edit-entities.md)
 - [使用解决方案资源管理器创建和编辑实体](create-edit-entities-solution-explorer.md)
 
 ## <a name="view-entities"></a>视图实体
@@ -62,7 +62,7 @@ search.app:
 |--|--|
 |**显示名称**|这是将在应用中显示的实体的单数名称。 以后可以更改此信息。|
 |**复数显示名称**|这是将在应用中显示的实体的复数名称。 以后可以更改此信息。|
-|**名称**|此字段是根据您输入的**显示名称**预填充的。 其中包括 CDS 解决方案发布商的自定义前缀。 保存实体后，就不能进行更改。|
+|**名称**|此字段是根据您输入的**显示名称**预填充的。 它包含 Common Data Service 解决方案发布商的自定义前缀。 保存实体后，就不能进行更改。|
 |**说明**|提供实体用途的有意义的描述。|
 
 选择**下一步**以继续，这将关闭**新实体**面板并显示字段列表。
@@ -144,7 +144,7 @@ search.app:
 
 ### <a name="see-also"></a>另请参阅
 
-[在面向应用程序的 Common Data Service 中创建和编辑实体](create-edit-entities.md)<br />
+[在 Common Data Service 中创建和编辑实体](create-edit-entities.md)<br />
 [使用解决方案资源管理器创建和编辑实体](create-edit-entities-solution-explorer.md)
 
 

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: article
-ms.date: 12/04/2018
+ms.date: 03/20/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -17,22 +17,18 @@ search.app:
 
 # <a name="use-solution-checker-to-validate-your-model-driven-apps-in-powerapps"></a>在 PowerApps 中使用解决方案检查器验证模型驱动的应用
 
-为了履行复杂的业务要求，模型驱动的应用开发者通常最终会推出极为高端的解决方案，用于自定义和扩展面向应用的 Common Data Service (CDS) 平台。 高级实施伴随着风险上升，并带来性能、稳定性和可靠性问题，从而影响用户的体验。 确定这些问题和了解其解决方法可能非常复杂，并且很费时间。 通过解决方案检查器，您可以使用一组最佳实践规则对解决方案执行各种静态分析检查，并快速确定这些问题模式。 检查完成后，将收到详细报告，其中列出了确定的问题，受影响的组件和代码，以及介绍各问题解决方法的文档的链接。
+为了履行复杂的业务要求，模型驱动的应用开发者通常最终会推出极为高端的解决方案，用于自定义和扩展 Common Data Service 平台。 高级实施伴随着风险上升，并带来性能、稳定性和可靠性问题，从而影响用户的体验。 确定这些问题和了解其解决方法可能非常复杂，并且很费时间。 通过解决方案检查器，您可以使用一组最佳实践规则对解决方案执行各种静态分析检查，并快速确定这些问题模式。 检查完成后，将收到详细报告，其中列出了确定的问题，受影响的组件和代码，以及介绍各问题解决方法的文档的链接。
 
 解决方案检查器分析以下解决方案组件： 
-- 面向应用程序的 CDS 插件
-- 面向应用程序的 CDS 自定义工作流活动 
-- 面向应用程序的 CDS Web 资源（HTML 和 JavaScript）
-- 面向应用程序的 CDS 配置，如 SDK 消息步骤 
+- Common Data Service 插件
+- Common Data Service 自定义工作流活动 
+- Common Data Service Web 资源（HTML 和 JavaScript）
+- Common Data Service 配置，如 SDK 消息步骤 
 
-解决方案检查器支持可从环境中导出的非托管解决方案。 解决方案检查器*不*支持以下解决方案： 
+解决方案检查器支持可从环境中导出的非托管解决方案。 
 
-
-<!--from editor: Should it be Common Data Service (singular) below, rather than Services? -->
-
-- 系统默认解决方案（默认解决方案和 Common Data Services 默认解决方案）。
-- 包含使用 ECMAScript 6 (2015) 或更高版本的 JavaScript 的解决方案。 如果检测到使用这些版本之一的 JavaScript，将报告 Web 资源发生了 JS001 语法问题。
-
+> [!NOTE]
+> 解决方案检查器不使用 ECMAScript 6 (2015) 或更高版本处理包含 JavaScript 的解决方案。 如果检测到使用这些版本之一的 JavaScript，将报告 Web 资源发生了 JS001 语法问题。
 
 ## <a name="enable-the-solution-checker"></a>启用解决方案检查器
 安装 PowerApps 检查器解决方案之后，PowerApps 的“解决方案”区域中将提供解决方案检查器。 请注意，在 Microsoft AppSource 中浏览或搜索找不到此功能。 若要安装，请执行以下步骤：  
@@ -62,7 +58,7 @@ When you install the PowerApps checker these solution specific components are cr
    - Analysis Result
 - System job: A system job is created so admins can remove solution analysis data from the environment. The job contains a configuration value, currently set to remove the solution analysis data after 60 days, which an administrator can override. 
 - Security Roles: Two security roles, **Export Customizations**, and **Solution Checker** are created. These roles are required to export the solution for analysis, and storing the analysis results to the entities in your environment.
-- User principle: The **PowerApps Advisor** user is created that allows the checker to authenticate with your CDS for Apps environment and assign the two security roles, Export Customizations and Solution Checker. The PowerApps Advisor is an application user and does not consume a license.  -->
+- User principle: The **PowerApps Advisor** user is created that allows the checker to authenticate with your Common Data Service environment and assign the two security roles, Export Customizations and Solution Checker. The PowerApps Advisor is an application user and does not consume a license.  -->
 
 ## <a name="run-the-solution-checker"></a>运行解决方案检查器
 在环境中安装 PowerApps 检查器之后，如果在 PowerApps 的**解决方案**区域中选择非托管解决方案，将提供**解决方案检查器**菜单项。 
@@ -157,7 +153,7 @@ When you install the PowerApps checker these solution specific components are cr
 |Web 资源  | [web-avoid-crm2011-service-soap](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-soap&client=PAChecker&source=featuredocs)  | 请勿以 Microsoft Dynamics CRM 2011 SOAP 服务为目标。   |
 |Web 资源  | [web-avoid-browser-specific-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-browser-specific-api&client=PAChecker&source=featuredocs) | 请勿使用 Internet Explorer 旧 API 或浏览器插件。   |
 |Web 资源  | [web-avoid-2011-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-2011-api&client=PAChecker&source=featuredocs)  | 请勿使用已弃用的 Microsoft Dynamics CRM 2011 对象模型。  |
-|Web 资源  | [web-use-relative-uri](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-relative-uri&client=PAChecker&source=featuredocs)   | 请勿使用面向应用程序的绝对 CDS 端点 URL。    |
+|Web 资源  | [web-use-relative-uri](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-relative-uri&client=PAChecker&source=featuredocs)   | 不要使用绝对 Common Data Service 终结点 URL。    |
 |Web 资源  | [web-use-client-context](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-client-context&client=PAChecker&source=featuredocs)  | 使用客户端上下文。   |
 |Web 资源  | [web-use-dialog-api-param](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-dialog-api-param&client=PAChecker&source=featuredocs)   | 使用对话框 API 参数。   |
 |Web 资源  | [web-use-org-setting](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-org-setting&client=PAChecker&source=featuredocs)   | 使用组织设置。   |
@@ -167,6 +163,6 @@ When you install the PowerApps checker these solution specific components are cr
 
 
 ## <a name="see-also"></a>另请参阅
-[面向应用的 Common Data Service 的最佳实践和指南](../../developer/common-data-service/best-practices/index.md)<br />
+[Common Data Service 的最佳实践和指南](../../developer/common-data-service/best-practices/index.md)<br />
 [模型驱动应用的最佳实践和指南](../../developer/model-driven-apps/best-practices/index.md)<br />
 [解决方案检查器的常见问题和解决](common-issues-resolutions-solution-checker.md)<br />

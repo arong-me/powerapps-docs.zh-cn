@@ -4,7 +4,7 @@ description: 可用于与适用于手机和平板电脑的 Dynamics 365 结合�
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

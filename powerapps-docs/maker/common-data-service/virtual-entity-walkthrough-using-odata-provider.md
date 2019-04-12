@@ -1,10 +1,10 @@
 ---
-title: 在面向应用程序的 Common Data Service 中使用 OData 数据提供程序的虚拟实体演练 | MicrosoftDocs
+title: 在 Common Data Service 中使用 OData 数据提供程序的虚拟实体演练 | MicrosoftDocs
 description: 了解如何在虚拟实体中使用 OData v4 数据提供程序
 ms.custom: ''
 ms.date: 06/04/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

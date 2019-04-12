@@ -1,13 +1,13 @@
 ---
 title: 需要 PowerApps 计划 2 许可证的复杂实体 | Microsoft Docs
-description: 需要 PowerApps 计划 2 许可证的面向应用程序的 Common Data Service (CDS) 中的复杂实体列表。
-author: clwesene
+description: 需要 PowerApps 计划 2 许可证的 Common Data Service 中的复杂实体列表。
+author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
 ms.date: 07/17/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -15,7 +15,7 @@ search.app:
   - D365CE
 ---
 
-# <a name="complex-entities-and-licensing"></a>复杂实体和许可
+# <a name="complex-entities-and-licensing"></a>复杂的实体和许可
 包含以下复杂服务器端逻辑的实体需要使用这些实体的应用程序或流用户具有 PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证：
 
 * 代码插件。详细信息：[插件开发](https://docs.microsoft.com/dynamics365/customer-engagement/developer/plugin-development)

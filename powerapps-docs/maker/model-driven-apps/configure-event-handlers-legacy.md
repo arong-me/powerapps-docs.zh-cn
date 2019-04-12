@@ -1,7 +1,7 @@
 ---
 title: 在 PowerApps 中配置模型驱动应用程序主窗体的事件处理程序 | MicrosoftDocs
 description: 了解如何在 Dynamics 365 for Customer Engagement 中配置事件处理程序
-Keywords: Main form; Configure event handlers; Dynamics 365
+Keywords: 主窗体; 配置事件处理程序; Dynamics 365
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 ms.assetid: dc0ebb3f-0c00-413a-968f-9cfd107055c0
 search.audienceType:

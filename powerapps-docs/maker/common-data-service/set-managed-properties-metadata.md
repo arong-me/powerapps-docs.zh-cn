@@ -1,10 +1,10 @@
 ---
-title: 在面向应用程序的 Common Data Service 元数据中设置托管属性 | MicrosoftDocs
+title: 在 Common Data Service 元数据中设置托管属性 | MicrosoftDocs
 description: 了解如何在解决方案中为元数据项目设置托管属性。
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="set-managed-properties-in-common-data-service-for-apps-metadata"></a>在面向应用程序的 Common Data Service 元数据中设置托管属性 
+# <a name="set-managed-properties-in-common-data-service-metadata"></a>在 Common Data Service 元数据中设置托管属性 
 
 托管属性仅适用于以下情况：元数据包括在某个托管解决方案中，并将该解决方案导入到另一个环境。 利用这些设置，解决方案制造者可以对其允许安装托管解决方案的用户拥有的自定义级别有一定的控制。 
 
@@ -58,7 +58,7 @@ search.app:
 
 ## <a name="field-managed-properties"></a>字段托管属性
 
-有关如何编辑字段的信息，请参阅[使用 PowerApps 解决方案资源管理器创建和编辑面向应用程序的 Common Data Service 的字段](create-edit-field-solution-explorer.md)。
+有关如何编辑字段的信息，请参阅[使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)。
 
 在[查看字段](create-edit-field-solution-explorer.md#view-fields)时，从非托管解决方案中选择自定义字段，然后在菜单栏上选择**其他操作** >  **托管属性**。
 
@@ -94,6 +94,6 @@ search.app:
 
 [托管属性](solutions-overview.md#managed-properties)<br />
 [使用解决方案资源管理器创建和编辑实体](create-edit-entities-solution-explorer.md)<br />
-[使用 PowerApps 解决方案资源管理器创建和编辑面向应用程序的 Common Data Service 的字段](create-edit-field-solution-explorer.md)<br />
+[使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)<br />
 [使用解决方案资源管理器创建和编辑 1:N（一对多）或 N:1（多对一）实体关系](create-edit-1n-relationships-solution-explorer.md)<br />
-[使用解决方案资源管理器在面向应用程序的 Common Data Service 中创建 N:N（多对多）实体关系](create-edit-nn-relationships-solution-explorer.md)
+[使用解决方案资源管理器在 Common Data Service 中创建 N:N（多对多）实体关系](create-edit-nn-relationships-solution-explorer.md)

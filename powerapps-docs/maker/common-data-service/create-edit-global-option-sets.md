@@ -1,9 +1,9 @@
 ---
-title: 为面向应用程序的 Common Data Service 创建和编辑全局选项集（选择列表）概述 | MicrosoftDocs
+title: 为 Common Data Service 创建和编辑全局选项集（选择列表）概述 | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/26/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -37,7 +37,7 @@ search.app:
 |设计器| 说明|
 |--|--|
 |[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[创建选项集](custom-picklists.md) |
-|解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。 <br />详细信息：[使用解决方案资源管理器为面向应用程序的 Common Data Service 创建和编辑全局选项集](create-edit-global-option-sets-solution-explorer.md) |
+|解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。 <br />详细信息：[使用解决方案资源管理器为 Common Data Service 创建和编辑全局选项集](create-edit-global-option-sets-solution-explorer.md) |
 
 > [!NOTE]
 > 您还可以使用以下方法在您的环境中创建全局选项集：
@@ -50,7 +50,7 @@ search.app:
 
 - 向选项分配颜色
 - 更改选项的顺序
-- 在除 CDS 默认解决方案以外的解决方案中创建全局选项集
+- 在除 Common Data Service 默认解决方案以外的解决方案中创建全局选项集
 - 设置托管属性
 - 设置用于虚拟实体的属性
 - 查看依赖项
@@ -58,7 +58,7 @@ search.app:
 ## <a name="see-also"></a>另请参阅
 
 [创建选项集](custom-picklists.md)<br />
-[使用解决方案资源管理器创建和编辑面向应用程序的 Common Data Service 的全局选项集](create-edit-global-option-sets-solution-explorer.md)<br />
+[使用解决方案资源管理器创建和编辑 Common Data Service 的全局选项集](create-edit-global-option-sets-solution-explorer.md)<br />
 [开发人员文档：自定义全局选项集](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)
   
 

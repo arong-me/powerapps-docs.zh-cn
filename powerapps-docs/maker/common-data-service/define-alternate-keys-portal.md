@@ -4,7 +4,7 @@ description: 了解如何使用 PowerApps 门户定义备用键
 ms.custom: ''
 ms.date: 05/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="define-alternate-keys-using-powerapps-portal"></a>使用 PowerApps 门户定义备用键
 
-[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供通过面向应用程序的 Common Data Service 查看和创建实体备用键的简单方法。
+[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供通过 Common Data Service 查看和创建实体备用键的简单方法。
 
 此门户支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 <br />详细信息： 
 - [定义引用记录的备用键](define-alternate-keys-reference-records.md)

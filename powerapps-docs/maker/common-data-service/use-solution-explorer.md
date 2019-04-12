@@ -4,7 +4,7 @@ description: 了解如何使用解决方案创建或自定义应用
 ms.custom: ''
 ms.date: 10/29/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -101,8 +101,8 @@ search.app:
 - 如果区域应用在托管解决方案中打包，它仍可以在目标环境中编辑。
 - 依赖项对区域应用不可用。
 - 删除托管解决方案不会回滚到其他区域应用版本。 
--   区域应用访问（CRUD 和安全性）在 PowerApps 中完全托管，而不是在 Common Data Service for Apps (CDS) 数据库中。
--   调用区域应用的 CDS API 被阻止，不返回任何信息。 
+-   区域应用访问（CRUD 和安全性）在 PowerApps 中完全托管，而不是在 Common Data Service (Common Data Service) 数据库中。
+-   调用区域应用的 Common Data Service API 被阻止，不返回任何信息。 
 -   在解决方案中创建的区域应用不能作为共同负责人共享到 AAD 安全组。
 -   区域应用不显示在经典解决方案资源管理器中。
 -   解决方案不能识别现有区域应用。 

@@ -1,9 +1,9 @@
 ---
-title: 预览功能：通过面向应用程序的 Common Data Service 使用 Azure Cosmos DB for SQL API 数据提供程序 | MicrosoftDocs
+title: 预览功能：通过 Common Data Service 使用 Azure Cosmos DB for SQL API 数据提供程序 | MicrosoftDocs
 description: 了解如何配置 Azure Cosmos DB for SQL API 数据提供程序以与虚拟实体结合使用。
 keywords: SQL API
 ms.date: 02/15/2019
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -52,9 +52,9 @@ Azure Cosmos DB 是 Microsoft 全球分发的用于任务关键型应用程序�
 
 ![SQL API 文档的示例 JSON。](media/documentdbexample.png)
 
-此表指示使用面向应用程序的 Common Data Service 的*订单*集合中 SQL API 文档的数据类型映射。
+此表指示使用 Common Data Service 的*订单*集合中 SQL API 文档的数据类型映射。
 
-|SQL API 数据|面向应用程序的 CDS|
+|SQL API 数据|Common Data Service|
 |--|--|
 |`id`|主键|
 |`name`|单行文本|
@@ -67,7 +67,7 @@ Azure Cosmos DB 是 Microsoft 全球分发的用于任务关键型应用程序�
 
 > [!NOTE]
 > - 带下划线 (_) 前缀的属性由 SQL API 生成。
-> - 在 SQL API 文档中配置为可选并在面向应用程序的 CDS 中作为**必需业务**映射的属性会导致运行时错误。
+> - 在 SQL API 文档中配置为可选并在 Common Data Service 中作为**必需业务**映射的属性会导致运行时错误。
 > - ID 属性值必须是 guid。
 > - 有关使用 SQL API 中的日期的更多信息，请参阅[使用 Azure Cosmos DB 中的日期](https://azure.microsoft.com/blog/working-with-dates-in-azure-documentdb-4/)。
 
@@ -78,7 +78,7 @@ SQL 查询筛选支持以下运算符。
 - 比较运算符：`<`、`>`、`<=`、`>=`、`!=`
 - 逻辑运算符：`and`、`or` 
 - 设置运算符：`in`、`not in`
-- 字符串运算符：`like`、`contains`、b`egins with`、`ends with`
+- 字符串运算符：`like`、`contains`、`begins with`、`ends with`
 
 > [!NOTE]
 > 使用 like 运算符将转换为等效的 `contains`/`begins with`/`ends with` 运算符。 SQL API 不支持模式参数，如主题 [Like (Transact-SQL)](/sql/t-sql/language-elements/like-transact-sql) 中所述。 Azure Cosmos DB for SQL API 数据提供程序可以将单个特殊案例 `Like('[aA]%')` 转换为 `BeginsWith('a')` 或 `BeginsWith('A')`。 请注意，SQL API 中的字符串比较区分大小写。

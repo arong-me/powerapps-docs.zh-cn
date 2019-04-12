@@ -1,9 +1,9 @@
 ---
-title: 面向应用程序的 Common Data Service 中的字段数据类型 | MicrosoftDocs
+title: Common Data Service 中的字段数据类型 | MicrosoftDocs
 description: 了解可用于您的应用的不同字段数据类型
 keywords: ''
 ms.date: 06/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -58,8 +58,8 @@ search.app:
 |**整数**|**整数**<br />*无*格式|`IntegerType`|
 
 要查看您可以添加或编辑的每个类型的更多描述，请参阅相应设计器的主题：
- - [使用 PowerApps 门户创建和编辑面向应用程序的 Common Data Service 的字段：字段数据类型](create-edit-field-portal.md#field-data-types)
- - [使用 PowerApps 解决方案资源管理器创建和编辑面向应用程序的 Common Data Service 的字段：字段数据类型](create-edit-field-solution-explorer.md#field-data-types)
+ - [使用 PowerApps 门户创建和编辑 Common Data Service 的字段：字段数据类型](create-edit-field-portal.md#field-data-types)
+ - [使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段：字段数据类型](create-edit-field-solution-explorer.md#field-data-types)
 
 有关如何在 API 中定义字段数据类型的详细信息，请参阅[属性元数据](/powerapps/developer/common-data-service/entity-attribute-metadata)
 

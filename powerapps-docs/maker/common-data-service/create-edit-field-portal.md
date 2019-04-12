@@ -1,9 +1,9 @@
 ---
-title: 使用 PowerApps 门户创建和编辑面向应用程序的 Common Data Service 的字段 | MicrosoftDocs
+title: 使用 PowerApps 门户创建和编辑 Common Data Service 的字段 | MicrosoftDocs
 ms.custom: ''
-ms.date: 05/18/2018
+ms.date: 02/28/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -12,20 +12,20 @@ applies_to:
   - Dynamics 365 Version 9.x
   - PowerApps
 ms.author: matp
-manager: brycho
+manager: kvivek
 search.audienceType:
   - maker
 search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-fields-for-common-data-service-for-apps-using-powerapps-portal"></a>使用 PowerApps 门户创建和编辑面向应用程序的 Common Data Service 的字段
+# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-portal"></a>使用 PowerApps 门户创建和编辑 Common Data Service 的字段
 
-[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供通过面向应用程序的 Common Data Service 创建和编辑实体字段的简单方法。
+[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供通过 Common Data Service 创建和编辑实体字段的简单方法。
 
 此门户支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 <br />详细信息： 
-- [创建和编辑面向应用程序的 Common Data Service 的字段](create-edit-fields.md)
-- [使用 PowerApps 解决方案资源管理器创建和编辑面向应用程序的 Common Data Service 的字段](create-edit-field-solution-explorer.md)
+- [创建和编辑 Common Data Service 的字段](create-edit-fields.md)
+- [使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)
 
 ## <a name="view-fields"></a>视图字段
 
@@ -52,8 +52,8 @@ search.app:
  |属性|说明|
  |--|--|
  |**显示名称**|用户界面中要为字段显示的文本。|
- |**名称**|在整个环境中的唯一名称。 名称将根据您输入的显示名称为您生成，不过您可以在保存之前进行编辑。 在创建字段后，不能更改名称，因为它将在您的应用程序或代码中引用。 名称会将 **CDS 默认发布商**的自定义项前缀附加到字段的前面。|
- |**数据类型**|控制值如何在某些应用程序中存储以及如何确定格式。 一旦保存字段，您无法更改数据类型，因为这可能影响实体中的数据。|
+ |**名称**|在整个环境中的唯一名称。 名称将根据您输入的显示名称为您生成，不过您可以在保存之前进行编辑。 在创建字段后，不能更改名称，因为它将在您的应用程序或代码中引用。 名称会将 **Common Data Service 默认发布商**的自定义项前缀附加到字段的前面。|
+ |**数据类型**|控制值如何在某些应用程序中存储以及如何确定格式。 一旦保存字段，将无法更改数据类型，除非将文本字段转换为自动编号字段。|
 
 您可以根据所选择的**数据类型**设置其他选项。
 
@@ -75,6 +75,7 @@ search.app:
 |**URL**|作为 URL 验证并作为链接呈现以打开 URL 的文本值。|
 |**股票代号**|将显示一个将打开以显示股票代号的报价单的股票代号的文本值。 |
 |**电话**|作为电话号码验证并作为链接呈现以使用 Skype 进行电话联络的文本值。 |
+|**自动编号**|服务器在创建记录时即自动生成的可自定义的数字和字母组合。 详细信息：[自动编号字段](autonumber-fields.md) |
 
 #### <a name="max-length"></a>最大长度
 
@@ -170,7 +171,7 @@ search.app:
 
 ## <a name="number-field-options"></a>数值字段选项
 
-每个数字字段类型都有最小和最大绝对值。 您可以在这些绝对值中设置合适的**最大值**和**最小值**。 执行此操作使用面向应用程序的 CDS 验证要存储在字段中的数据的值。
+每个数字字段类型都有最小和最大绝对值。 您可以在这些绝对值中设置合适的**最大值**和**最小值**。 执行此操作使用 Common Data Service 验证要存储在字段中的数据的值。
 
 对于**浮点数**和**十进制数**数据类型，您可以指定多个**小数位数**。
 
@@ -224,8 +225,8 @@ search.app:
 
 
 ### <a name="see-also"></a>另请参阅  
-[创建和编辑面向应用程序的 Common Data Service 的字段](create-edit-fields.md)<br />
-[使用 PowerApps 解决方案资源管理器创建和编辑面向应用程序的 Common Data Service 的字段](create-edit-field-solution-explorer.md)<br />
+[创建和编辑 Common Data Service 的字段](create-edit-fields.md)<br />
+[使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)<br />
 [字段类型和字段数据类型](types-of-fields.md)<br />
 [定义计算字段以自动化手动计算](define-calculated-fields.md)<br />
 [定义用于聚合值的汇总字段](define-rollup-fields.md)<br />

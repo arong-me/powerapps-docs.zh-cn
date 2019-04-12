@@ -4,7 +4,7 @@ description: 了解如何编辑系统实体消息
 ms.custom: ''
 ms.date: 05/15/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -25,7 +25,7 @@ search.app:
 ---
 # <a name="edit-system-entity-messages"></a>编辑系统实体消息
 
-有些系统实体的默认显示名称会用在面向应用程序的 Common Data Service 中的用户界面文本和错误消息中。 如果更改显示名称，则还应更新使用默认显示名称的所有消息。 例如，如果将显示名称从*客户*更改为*公司*，则仍可能看到使用旧名称的错误消息。  
+有些系统实体的默认显示名称会用在 Common Data Service 中的用户界面文本和错误消息中。 如果更改显示名称，则还应更新使用默认显示名称的所有消息。 例如，如果将显示名称从*客户*更改为*公司*，则仍可能看到使用旧名称的错误消息。  
 
 无法使用 PowerApps 门户编辑系统消息，必须使用解决方案资源管理器。
 

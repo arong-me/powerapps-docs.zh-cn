@@ -1,13 +1,13 @@
 ---
 title: 在 Excel 中打开实体数据 | Microsoft Docs
 description: 在 Excel 中打开实体数据以进行交互式查看和编辑。
-author: clwesene
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -78,6 +78,6 @@ Excel 加载项自动读取所选实体的数据。 请注意，在 Excel 加载
 ## <a name="next-steps"></a>后续步骤
 * [管理实体中的字段](data-platform-manage-fields.md)
 * [定义实体之间的关系](data-platform-entity-lookup.md)
-* [使用面积应用程序的 Common Data Service 生成应用程序](../canvas-apps/data-platform-create-app.md)
-* [使用面向应用程序的 Common Data Service 从头创建应用程序](../canvas-apps/data-platform-create-app-scratch.md)
+* [使用 Common Data Service 生成应用程序](../canvas-apps/data-platform-create-app.md)
+* [使用 Common Data Service 从头创建应用程序](../canvas-apps/data-platform-create-app-scratch.md)
 

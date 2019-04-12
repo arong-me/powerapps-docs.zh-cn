@@ -4,7 +4,7 @@ description: 了解如何导入已翻译的实体和字段文本
 ms.custom: ''
 ms.date: 06/19/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
