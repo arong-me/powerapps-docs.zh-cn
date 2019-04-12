@@ -28,11 +28,11 @@ ms.locfileid: "58356761"
 
 **Relate**函数链接通过 Common Data Service 中的一个多或多对多关系的两条记录。 **Unrelate**函数可回退该过程并删除该链接。
 
-对于一个对多关系，多个实体具有外键字段指向一条记录的一个实体。 **与相关**设置为指向特定记录的一个实体，此字段时**Unrelate**将此字段设置为*空白*。 如果该字段已设置何时**Relate**是调用，现有的链接是丢失以支持新的链接。 此外可以通过设置此字段[**修补**](function-patch.md)函数或**[编辑窗体](../controls/control-form-detail.md)** 控制; 您无需使用**建立关系**函数。
+对于一个对多关系，多个实体具有外键字段指向一条记录的一个实体。 **与相关**设置为指向特定记录的一个实体，此字段时**Unrelate**将此字段设置为*空白*。 如果该字段已设置何时**Relate**是调用，现有的链接是丢失以支持新的链接。 此外可以通过设置此字段 [**修补**](function-patch.md)函数或 **[编辑窗体](../controls/control-form-detail.md)** 控制; 您无需使用 **建立关系**函数。
 
 对于多对多关系，请将这些记录链接的系统维护的隐藏的联接表。 不能直接调用访问此联接表它可以仅通过一个多投影读取数据并通过设置**Relate**并**Unrelate**函数。 都不相关的实体具有外键。
 
-在第一个参数中指定的实体的数据将刷新以反映此更改，但不会在第二个参数中指定的实体的数据。 数据必须进行手动刷新**[刷新](function-refresh.md)** 函数来显示操作的结果。
+在第一个参数中指定的实体的数据将刷新以反映此更改，但不会在第二个参数中指定的实体的数据。 数据必须进行手动刷新 **[刷新](function-refresh.md)** 函数来显示操作的结果。
 
 这些函数永远不会创建或删除一条记录。 它们仅相关或取消键已存在的两条记录。
 
@@ -108,7 +108,7 @@ ms.locfileid: "58356761"
 
      ![将产品实体添加为数据源](media/function-relate-unrelate/products-connect.png)
 
-1. 上**插入**选项卡上，添加空白垂直**[库](../controls/control-gallery.md)** 控件。
+1. 上 **插入**选项卡上，添加空白垂直 **[库](../controls/control-gallery.md)** 控件。
 
 1. 请确保您刚添加的控件名为**Gallery1**，然后移动并调整其大小以填充屏幕的左侧。
 
@@ -136,7 +136,7 @@ ms.locfileid: "58356761"
 
     ![配置 Gallery2 布局](media/function-relate-unrelate/reservations-gallery-right.png)
 
-1. 在中**Gallery2**，添加**[组合框](../controls/control-combo-box.md)** 控件，请确保它名为**ComboBox1**，然后移动并调整其大小以避免阻止中的其他控件**Gallery2**。
+1. 在中 **Gallery2**，添加 **[组合框](../controls/control-combo-box.md)** 控件，请确保它名为 **ComboBox1**，然后移动并调整其大小以避免阻止中的其他控件 **Gallery2**。
 
 1. 上**属性**选项卡上，设置**ComboBox1**的**项**属性设置为**产品**。
 
