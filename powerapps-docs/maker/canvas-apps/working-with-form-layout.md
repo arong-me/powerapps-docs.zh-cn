@@ -55,8 +55,8 @@ ms.locfileid: "58356899"
 1. 添加一个放置窗体的空白屏幕。
    
     在本教程之外，可以将“库”和“**[编辑表单](controls/control-form-detail.md)**”控件放置在同一个屏幕上，但将其放在单独屏幕上时可使用的空间会更多。
-2. 在新屏幕的顶部，添加一个**[标签控件](controls/control-text-box.md)**，将其 **Text** 属性设置为此表达式：
-   <br>**"Sales Order " & Gallery1.Selected.SalesOrderId**
+2. 在新屏幕的顶部，添加一个 **[标签控件](controls/control-text-box.md)**，将其 **Text** 属性设置为此表达式：
+   <br> **"Sales Order " & Gallery1.Selected.SalesOrderId**
    
     该标签将显示你在库中选择的记录的销售订单号。
 3. （可选）将该标签的格式设置如下：
