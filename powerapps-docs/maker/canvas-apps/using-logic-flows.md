@@ -80,11 +80,11 @@ ms.locfileid: "57802575"
 
 1. 将鼠标悬停**从空白画布应用**磁贴，并选择**将此应用程序**。
 
-1. 添加**[文本输入](controls/control-text-input.md)** 控件，将其命名为 **RecordTitle**。
+1. 添加 **[文本输入](controls/control-text-input.md)** 控件，将其命名为 **RecordTitle**。
 
-1. 添加**[按钮](controls/control-button.md)** 控件，将其移至 **RecordTitle** 下。
+1. 添加 **[按钮](controls/control-button.md)** 控件，将其移至 **RecordTitle** 下。
 
-1. 选择**[按钮](controls/control-button.md)** 控件后，在“操作”选项卡上选择“流”。
+1. 选择 **[按钮](controls/control-button.md)** 控件后，在“操作”选项卡上选择“流”。
 
     ![“操作”选项卡上的“流”选项](./media/using-logic-flows/action-tab.png)
 
@@ -102,6 +102,6 @@ ms.locfileid: "57802575"
 ## <a name="test-the-flow"></a>测试流
 1. 双击**文本输入**控制，并键入或粘贴到其中的一些文本。
 
-1. 按住 Alt 键，同时选择**[按钮](controls/control-button.md)** 控件。
+1. 按住 Alt 键，同时选择 **[按钮](controls/control-button.md)** 控件。
 
     在您使用文本指定其标题为指定列表中将创建一个 SharePoint 项。 如果列表在流运行时处于打开状态，可能需要刷新浏览器窗口，才能显示这些更改。

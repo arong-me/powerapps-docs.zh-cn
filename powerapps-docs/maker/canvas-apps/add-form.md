@@ -22,7 +22,7 @@ ms.locfileid: "58581015"
 ---
 # <a name="show-edit-or-add-a-record-in-a-canvas-app"></a>显示、 编辑或在画布应用中添加一条记录
 
-在画布应用中，添加和配置**[显示](controls/control-form-detail.md)** 要记录中显示所有字段，您还可以添加和配置窗体控件**[编辑](controls/control-form-detail.md)** 若要编辑记录中的任何字段、 添加记录，并将所做的更改保存回数据源的窗体控件。
+在画布应用中，添加和配置 **[显示](controls/control-form-detail.md)** 要记录中显示所有字段，您还可以添加和配置窗体控件 **[编辑](controls/control-form-detail.md)** 若要编辑记录中的任何字段、 添加记录，并将所做的更改保存回数据源的窗体控件。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -36,7 +36,7 @@ ms.locfileid: "58581015"
 - 如果您打开一个现有的应用程序、[添加一个屏幕](add-screen-context-variables.md)到它。
 
 ## <a name="add-a-form-and-show-data"></a>添加窗体并显示数据
-1. 在空白屏幕，添加**[下拉列表](controls/control-drop-down.md)** 控制，并将其命名**ChooseProduct**。
+1. 在空白屏幕，添加 **[下拉列表](controls/control-drop-down.md)** 控制，并将其命名**ChooseProduct**。
 
     > [!NOTE]
    > 如果不确定如何添加控件、重命名控件或设置属性，请参阅[添加和配置控件](add-configure-controls.md)。
@@ -54,7 +54,7 @@ ms.locfileid: "58581015"
     > [!NOTE]
    > 本主题介绍**编辑**窗体控件，但类似做法准则也适用于**显示**的窗体控件。
 
-1. 设置窗体的**[数据源](controls/control-form-detail.md)** 属性设置为**FlooringEstimates**并将其**[项](controls/control-form-detail.md)** 属性此公式：
+1. 设置窗体的 **[数据源](controls/control-form-detail.md)** 属性设置为**FlooringEstimates**并将其 **[项](controls/control-form-detail.md)** 属性此公式：
 
     `First(Filter(FlooringEstimates, Name=ChooseProduct.Selected.Value))`
 

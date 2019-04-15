@@ -63,7 +63,7 @@ OnStart – 用户打开应用时应用的行为。
 
 1. 将默认“屏幕”控件命名为“Source”，添加另一个“屏幕”控件，将其命名为“Target”。
 
-1. 在中**源**，添加**[形状](control-shapes-icons.md)** 控件 （例如箭头），并设置其**[OnSelect](properties-core.md)** 属性此公式：
+1. 在中**源**，添加 **[形状](control-shapes-icons.md)** 控件 （例如箭头），并设置其 **[OnSelect](properties-core.md)** 属性此公式：
 
     `Navigate(Target, ScreenTransition.Fade)`
 
@@ -77,13 +77,13 @@ OnStart – 用户打开应用时应用的行为。
 
     `If("Red" in ScreenFills.Selected.Value, RGBA(255, 0, 0, 1), RGBA(54, 176, 75, 1))`
 
-1. 选择**源**屏幕上，然后在按住 Alt 键，同时选择中的任一选项**[单选](control-radio.md)** 控件，并选择 **[形状](control-shapes-icons.md)** 控件。
+1. 选择**源**屏幕上，然后在按住 Alt 键，同时选择中的任一选项 **[单选](control-radio.md)** 控件，并选择 **[形状](control-shapes-icons.md)** 控件。
 
     **目标**将出现在所选的颜色。
 
-1. 在中**目标**，选择**[形状](control-shapes-icons.md)** 控件以返回**源**。
+1. 在中**目标**，选择 **[形状](control-shapes-icons.md)** 控件以返回**源**。
 
-1. （可选）选择中的其他选项**[单选](control-radio.md)** 控制，并选择**[形状](control-shapes-icons.md)** 控件以确认**目标**将出现在另一种颜色。
+1. （可选）选择中的其他选项 **[单选](control-radio.md)** 控制，并选择 **[形状](control-shapes-icons.md)** 控件以确认**目标**将出现在另一种颜色。
 
 1. （可选）将鼠标悬停上对屏幕进行重新排序**目标**中左侧的导航栏中，选择显示的省略号，然后选中**向上移动**。
 
@@ -100,7 +100,7 @@ OnStart – 用户打开应用时应用的行为。
 
 例如，如果“屏幕”包含 **[标签](control-text-box.md)**，而标签具有透明填充，则屏幕的 **[Fill](properties-color-border.md)** 将有效地成为标签的背景色。
 
-除了文本，请考虑检查与基本图形对象之间的颜色对比度，如**[“评级”](control-rating.md)** 控件中的星级图像。
+除了文本，请考虑检查与基本图形对象之间的颜色对比度，如 **[“评级”](control-rating.md)** 控件中的星级图像。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
 

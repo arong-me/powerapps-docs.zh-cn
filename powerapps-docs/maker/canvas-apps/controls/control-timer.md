@@ -145,12 +145,12 @@ ms.locfileid: "58491656"
 5. 选择计时器按钮以启动或停止动画。 标签中的文本渐变为白色，恢复最大亮度，并重复此过程。
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
-相同准则**[按钮](control-button.md)** 控制将应用于**计时器**控制如果用户可以与其进行交互。
+相同准则 **[按钮](control-button.md)** 控制将应用于**计时器**控制如果用户可以与其进行交互。
 
 ### <a name="background-timers"></a>后台计时器
 后台计时器自动运行并处于隐藏状态。 使用它们支持角色中的已用时间都太感兴趣的用户。 例如，可以刷新每隔一分钟的数据，或仅对一定的时间显示一条通知消息。
 
-后台计时器应具有其**[Visible](properties-core.md)** 属性设置为 false，以便它们隐藏的所有用户。
+后台计时器应具有其 **[Visible](properties-core.md)** 属性设置为 false，以便它们隐藏的所有用户。
 
 ### <a name="timing-considerations"></a>计时注意事项
 如果**计时器**运行自动，考虑用户是否具有足够的时间来阅读和使用内容。 键盘和屏幕阅读器用户可能需要更多时间来响应定时事件。
@@ -168,7 +168,7 @@ ms.locfileid: "58491656"
     > [!NOTE]
     > 如果计时器处于可见且正在运行，屏幕阅读器将公布经过的时间每隔 5 秒。
 
-* 不要使用**[文本](properties-core.md)** 时间敏感型和重要信息的控件属性。 屏幕读取器不会公布变为**[文本](properties-core.md)**。
+* 不要使用 **[文本](properties-core.md)** 时间敏感型和重要信息的控件属性。 屏幕读取器不会公布变为 **[文本](properties-core.md)** 。
 * 有关交互式计时器：
     * **[“Text”](properties-core.md)** 必须存在。
-    * 请考虑添加**[标签](control-text-box.md)** 控件以显示所经过的时间。 使用计时器**[文本](properties-core.md)** 属性以指示用户启动或停止计时器。
+    * 请考虑添加 **[标签](control-text-box.md)** 控件以显示所经过的时间。 使用计时器 **[文本](properties-core.md)** 属性以指示用户启动或停止计时器。

@@ -40,7 +40,7 @@ ms.locfileid: "57803403"
 
 ### <a name="local-data-sources"></a>本地数据源
 
-使用**[库](controls/control-gallery.md)**、**[显示窗体](controls/control-form-detail.md)** 和**[编辑窗体](controls/control-form-detail.md)** 控件可以轻松创建一个可在数据源中读取和写入数据的应用。  若要开始操作，请阅读[了解数据窗体](working-with-forms.md)一文。  
+使用 **[库](controls/control-gallery.md)** 、 **[显示窗体](controls/control-form-detail.md)** 和 **[编辑窗体](controls/control-form-detail.md)** 控件可以轻松创建一个可在数据源中读取和写入数据的应用。  若要开始操作，请阅读[了解数据窗体](working-with-forms.md)一文。  
 
 如果想要让 PowerApps 基于数据创建应用，需使用这些控件。 在幕后，应用使用内部表来存储和处理来自数据源的数据。
 
@@ -80,7 +80,7 @@ PowerApps 应用内部的表为固定值，就如同数字或字符串是值一�
 * 信息通过存储服务（在本例中为 Office 365 站点的 SharePoint 列表）存储和共享。
 * 可以通过连接来向应用提供此信息。  该连接负责对访问信息的用户进行身份验证。
 * 启动应用或者调用 **[Refresh](functions/function-refresh.md)** 函数时，信息将从连接抽取到应用中的数据源供本地使用。
-* 可以使用公式读取信息，并在用户可见的控件中公开这些信息。 可以通过在屏幕和绑定上使用库中显示数据源的记录**[项](controls/properties-core.md)** 到数据源的属性：**Gallery.Items = DataSource**。  使用控件的 **[Default](controls/properties-core.md)** 属性将库中的控件连接到该库。  
+* 可以使用公式读取信息，并在用户可见的控件中公开这些信息。 可以通过在屏幕和绑定上使用库中显示数据源的记录 **[项](controls/properties-core.md)** 到数据源的属性：**Gallery.Items = DataSource**。  使用控件的 **[Default](controls/properties-core.md)** 属性将库中的控件连接到该库。  
 * 数据源也是一个表。  因此，在使用整个数据源之前，可以使用 **[Filter](functions/function-filter-lookup.md)**、**[Sort](functions/function-sort.md)**、**[AddColumns](functions/function-table-shaping.md)** 和其他函数来对它进行优化和补充。  还可以使用 **[Lookup](functions/function-filter-lookup.md)**、**[First](functions/function-first-last.md)**、**[Last](functions/function-first-last.md)** 和其他函数来处理单条记录。
 
 ### <a name="modify-a-record"></a>修改记录
@@ -101,8 +101,8 @@ PowerApps 应用内部的表为固定值，就如同数字或字符串是值一�
 ### <a name="validation"></a>验证
 在对记录进行更改之前，应用应该尽力确保该项更改被接受。  原因有两点：
 
-*  *可立即向用户反馈* 。  解决问题的最佳时机就是在发生问题的那一刻，用户还没有忘记前因时。  例如，当用户每次触屏或击键时，出现一段红色文本来提醒用户输入有问题。
-*  *降低网络流量和用户延迟* 。  在应用中检测到的问题越多，就意味着可用于通过网络检测和解决问题的对话更少。  每次对话都需要占用一定的时间，而用户必须等待这段时间才能继续操作。
+* *可立即向用户反馈* 。  解决问题的最佳时机就是在发生问题的那一刻，用户还没有忘记前因时。  例如，当用户每次触屏或击键时，出现一段红色文本来提醒用户输入有问题。
+* *降低网络流量和用户延迟* 。  在应用中检测到的问题越多，就意味着可用于通过网络检测和解决问题的对话更少。  每次对话都需要占用一定的时间，而用户必须等待这段时间才能继续操作。
 
 PowerApps 提供两个验证工具：
 
@@ -134,7 +134,7 @@ PowerApps 提供两个验证工具：
 * 随时可以使用 **[Collect](functions/function-clear-collect-clearcollect.md)** 函数修改集合的列。
 * 集合允许重复记录。  一个集合中可以存在同一记录的多个副本。  除非提供了 **All** 参数，否则 **[Remove](functions/function-remove-removeif.md)** 等函数将针对它们找到的第一个匹配项运行。
 * 可以使用 **[SaveData](functions/function-savedata-loaddata.md)** 和 **[LoadData](functions/function-savedata-loaddata.md)** 函数来保存和重新加载集合的副本。  信息存储在其他用户、应用或设备无法访问的专用位置。
-* 可以使用**[导出](controls/control-export-import.md)** 和**[导入](controls/control-export-import.md)** 控件将集合的副本保存和重新加载到用户可交互的文件中。  
+* 可以使用 **[导出](controls/control-export-import.md)** 和 **[导入](controls/control-export-import.md)** 控件将集合的副本保存和重新加载到用户可交互的文件中。  
 
 有关使用集合作为数据源的详细信息，请参阅[创建和更新集合](create-update-collection.md)。
 

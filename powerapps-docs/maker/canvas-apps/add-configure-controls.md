@@ -88,7 +88,7 @@ ms.locfileid: "57799447"
 ![移动控件](./media/add-configure-controls/resize-control.png)
 
 > [!NOTE]
-> 如本主题稍后所述，还可以移动并调整控件的大小由修改的任意组合其 **[X](controls/properties-size-location.md)**，  **[Y](controls/properties-size-location.md)**， **[高度](controls/properties-size-location.md)**，并**[宽度](controls/properties-size-location.md)** 在编辑栏中的属性。
+> 如本主题稍后所述，还可以移动并调整控件的大小由修改的任意组合其 **[X](controls/properties-size-location.md)**，  **[Y](controls/properties-size-location.md)**， **[高度](controls/properties-size-location.md)**，并 **[宽度](controls/properties-size-location.md)** 在编辑栏中的属性。
 
 ## <a name="change-the-text-of-a-label-or-a-button"></a>更改标签或按钮的文本
 
@@ -97,7 +97,7 @@ ms.locfileid: "57799447"
 ![更改文本](./media/add-configure-controls/change-text.png)
 
 > [!NOTE]
-> 如本主题稍后所述，还可以通过修改来更改此文本及其**[文本](controls/properties-core.md)** 在编辑栏中的属性。
+> 如本主题稍后所述，还可以通过修改来更改此文本及其 **[文本](controls/properties-core.md)** 在编辑栏中的属性。
 
 ## <a name="configure-a-control-from-the-toolbar"></a>在工具栏中配置控件
 
