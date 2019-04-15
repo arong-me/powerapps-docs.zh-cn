@@ -28,7 +28,7 @@ Split 函数将文本字符串拆分成子字符串表。  Split 可用于拆分
 
 分隔符字符串用于拆分文本字符串。  分隔符可以是零个、一个或多个字符，整体可以在文本字符串中找到匹配项。  使用零长度或空白字符串会逐个拆分各个字符。  匹配的分隔符不会在结果中返回。  如果找不到匹配的分隔符，整个文本字符串会作为一个结果返回。
 
-使用 [Concat](function-concatenate.md) 函数可重新组合字符串（不带分隔符）。 使用**[MatchAll](function-ismatch.md)** 函数使用的正则表达式的 （在某些情况下） 可用于将一个字符串拆分提取的文本字符串部分。 
+使用 [Concat](function-concatenate.md) 函数可重新组合字符串（不带分隔符）。 使用 **[MatchAll](function-ismatch.md)** 函数使用的正则表达式的 （在某些情况下） 可用于将一个字符串拆分提取的文本字符串部分。 
 
 ## <a name="syntax"></a>语法
 Split( Text, Separator )

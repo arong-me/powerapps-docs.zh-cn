@@ -24,7 +24,7 @@ ms.locfileid: "58491633"
 用户可单击或点击以指定日期的控件。
 
 ## <a name="description"></a>描述
-如果添加**日期选取器**控件而非**[文本输入](control-text-input.md)** 控件，可帮助确保用户以正确的格式指定日期。
+如果添加 **日期选取器** 控件而非 **[文本输入](control-text-input.md)** 控件，可帮助确保用户以正确的格式指定日期。
 
 ## <a name="key-properties"></a>关键属性
 **DefaultDate** - 日期控件的初始值（除非用户更改）。

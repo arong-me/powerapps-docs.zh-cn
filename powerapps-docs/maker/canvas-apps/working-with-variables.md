@@ -46,7 +46,7 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 
 在 PowerApps 中创建的应用的行为与 Excel 很类似。 可以将控件添加到屏幕的任意位置，并根据其在公式中的用途为其命名，不需更新单元格。
 
-例如，可以通过添加复制的应用程序中的 Excel 行为**[标签](controls/control-text-box.md)** 控件，名为**Label1**，并将两个**[文本输入](controls/control-text-input.md)** 控件，分别命名为**TextInput1**并**TextInput2**。 如果你随后将设置**[文本](controls/properties-core.md)** 属性**Label1**到**TextInput1 + TextInput2**，它将始终显示中的任何数字的总和**TextInput1**并**TextInput2**自动。
+例如，可以通过添加复制的应用程序中的 Excel 行为 **[标签](controls/control-text-box.md)** 控件，名为**Label1**，并将两个 **[文本输入](controls/control-text-input.md)** 控件，分别命名为**TextInput1**并**TextInput2**。 如果你随后将设置 **[文本](controls/properties-core.md)** 属性**Label1**到**TextInput1 + TextInput2**，它将始终显示中的任何数字的总和**TextInput1**并**TextInput2**自动。
 
 ![计算在 PowerApps 中的两个数字的总和](media/working-with-variables/recalc1.png)
 
@@ -73,7 +73,7 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 
 * 如果你知道 Excel，你就知道 PowerApps。 二者的模型和公式语言是相同的。
 * 如果你使用过其他编程工具，可以试想一下，完成这些示例需要多少代码。  在 Visual Basic 中，需要为每个文本输入控件上发生的更改事件编写事件处理程序。  在每个这样的处理程序中，用于执行计算的代码很冗长，并且可能会出现不同步的情况，或者需要你编写通用子例程。  而在 PowerApps 中，这一切只需一个单行公式即可完成。
-* 若要了解在何处**Label1**的文本来自，您就知道从中查找： 中的公式**[文本](controls/properties-core.md)** 属性。  其他方式不会影响该控件的文本。  在传统编程工具中，可以从程序的任何位置通过任何事件处理程序或子例程更改该标签的值。  这就难以跟踪变量的更改时间和位置。
+* 若要了解在何处**Label1**的文本来自，您就知道从中查找： 中的公式 **[文本](controls/properties-core.md)** 属性。  其他方式不会影响该控件的文本。  在传统编程工具中，可以从程序的任何位置通过任何事件处理程序或子例程更改该标签的值。  这就难以跟踪变量的更改时间和位置。
 * 如果用户更改了滑块控件，然后又改变了主意，则可将滑块改回其原始值。  这样一来，就好像没有做过任何更改一样：应用所显示的控件值与以前显示的一样。  不需进行分支试验并询问假设性的问题，就像在 Excel 中一样。  
 
 如果可以使用公式达到某种效果，则通常会选择使用公式。 让 PowerApps 中的公式引擎为你服务。  
@@ -118,9 +118,9 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 
     **Set( RunningTotal, RunningTotal + TextInput1 )**
 
-    此公式只存在建立**RunningTotal**与全局变量包含许多由于**+** 运算符。 可以引用**RunningTotal**应用中的任意位置。 用户打开此应用程序，每当**RunningTotal**初始值*空白*。
+    此公式只存在建立**RunningTotal**与全局变量包含许多由于 **+** 运算符。 可以引用**RunningTotal**应用中的任意位置。 用户打开此应用程序，每当**RunningTotal**初始值*空白*。
 
-    用户选择的第一次**外**按钮并**[设置](functions/function-set.md)** 运行时， **RunningTotal**设置为值**RunningTotal + TextInput1**。
+    用户选择的第一次**外**按钮并 **[设置](functions/function-set.md)** 运行时， **RunningTotal**设置为值**RunningTotal + TextInput1**。
 
     ![添加按钮的 OnSelect 属性设置为设置函数](media/working-with-variables/global-variable-1.png)
 
@@ -194,9 +194,9 @@ PowerApps 提供三种类型的变量：
 
 上下文变量的工作原理：
 
-* 隐式地建立并通过设置上下文变量**[UpdateContext](functions/function-updatecontext.md)** 或**[Navigate](functions/function-navigate.md)** 函数。 应用程序启动时，是所有上下文变量的初始值*空白*。
+* 隐式地建立并通过设置上下文变量 **[UpdateContext](functions/function-updatecontext.md)** 或 **[Navigate](functions/function-navigate.md)** 函数。 应用程序启动时，是所有上下文变量的初始值*空白*。
 * 使用记录更新上下文变量。 在其他编程工具中，通常使用“=”来赋值，例如“x = 1”。 对于上下文变量，请使用 **{x:1}** 相反。 当使用上下文变量时，使用记录语法不直接其名称。
-* 当你使用时，还可以设置上下文变量**[Navigate](functions/function-navigate.md)** 函数来显示的屏幕。 如果您将屏幕视为一种类型的过程或子例程，此方法类似于其他编程工具中的参数传递。
+* 当你使用时，还可以设置上下文变量 **[Navigate](functions/function-navigate.md)** 函数来显示的屏幕。 如果您将屏幕视为一种类型的过程或子例程，此方法类似于其他编程工具中的参数传递。
 * 上下文变量的作用范围仅限于单个屏幕的上下文（**[Navigate](functions/function-navigate.md)** 除外），这也是其得名的原因。 不能超出相应的上下文使用或设置上下文变量。
 * 上下文变量可以存储包括字符串、数字、记录和[表](working-with-tables.md)在内的任何值。
 
@@ -210,9 +210,9 @@ PowerApps 提供三种类型的变量：
 
     **UpdateContext( { RunningTotal:RunningTotal + TextInput1 } )**
 
-    此公式只存在建立**RunningTotal**作为包含许多由于一个上下文变量**+** 运算符。 可以引用**RunningTotal**此屏幕中的任意位置。 用户打开此应用程序，每当**RunningTotal**初始值*空白*。
+    此公式只存在建立**RunningTotal**作为包含许多由于一个上下文变量 **+** 运算符。 可以引用**RunningTotal**此屏幕中的任意位置。 用户打开此应用程序，每当**RunningTotal**初始值*空白*。
 
-    用户选择的第一次**外**按钮并**[UpdateContext](functions/function-updatecontext.md)** 运行时， **RunningTotal**设置为值**RunningTotal + TextInput1**。
+    用户选择的第一次**外**按钮并 **[UpdateContext](functions/function-updatecontext.md)** 运行时， **RunningTotal**设置为值**RunningTotal + TextInput1**。
 
     ![添加按钮的 OnSelect 属性](media/working-with-variables/context-variable-1.png)
 
@@ -264,7 +264,7 @@ PowerApps 提供三种类型的变量：
 
 让我们使用集合重新创建加法机：
 
-1. 添加一个**[文本输入](controls/control-text-input.md)** 控件，将其命名为 **TextInput1**，同时添加两个按钮，分别命名为 **Button1** 和 **Button2**。
+1. 添加一个 **[文本输入](controls/control-text-input.md)** 控件，将其命名为 **TextInput1**，同时添加两个按钮，分别命名为 **Button1** 和 **Button2**。
 
 2. 将 **Button1** 的 **[Text](controls/properties-core.md)** 属性设置为“加”，将 **Button2** 的“Text”属性设置为“清除”。
 
@@ -278,7 +278,7 @@ PowerApps 提供三种类型的变量：
 
     ![添加按钮的 OnSelect 属性](media/working-with-variables/papertape-1.png)
 
-4. 若要在用户选择时清除纸带**清除**按钮，设置其**[OnSelect](controls/properties-core.md)** 属性设为此公式：
+4. 若要在用户选择时清除纸带**清除**按钮，设置其 **[OnSelect](controls/properties-core.md)** 属性设为此公式：
 
     Clear( PaperTape )
 

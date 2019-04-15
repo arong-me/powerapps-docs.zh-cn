@@ -36,7 +36,7 @@ ms.locfileid: "57802322"
 
 **SortByColumns** 的参数列表提供了作为排序依据的列的名称，以及每个列的排序方向。  系统按参数顺序执行排序（先按第一列排序，然后按第二列排序，依此类推）。  将列名称指定为字符串。如果直接在参数列表中添加列名称，必须用双引号括起来。  例如，**SortByColumns( CustomerTable, "LastName" )**。
 
-可以将 **SortByColumns** 与**[下拉列表](../controls/control-drop-down.md)** 或**[列表框](../controls/control-list-box.md)** 控件结合使用，以便用户能够选择作为排序依据的列。
+可以将 **SortByColumns**与 **[下拉列表](../controls/control-drop-down.md)** 或 **[列表框](../controls/control-list-box.md)** 控件结合使用，以便用户能够选择作为排序依据的列。
 
 除了进行升序或降序排序之外，**SortByColumns** 还可以根据单列表值进行排序。  例如，可以提供 **[ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ]** 作为排序顺序，从而根据星期几的名称对记录进行排序。  所有包含 **Monday"** 的记录会先显示，随后显示包含 **Tuesday** 的记录，依此类推。  与排序顺序表不匹配的记录被置于列表末尾显示。
 

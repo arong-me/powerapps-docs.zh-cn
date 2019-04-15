@@ -37,7 +37,7 @@ ms.locfileid: "58870899"
 
 ## <a name="customize-a-locked-card"></a>自定义锁定的卡
 
-在此过程中，会将为**[文本输入](controls/control-text-input.md)** 与控制 **[滑块] (控件/控件-slider.md**控件，而无需解锁卡。
+在此过程中，会将为 **[文本输入](controls/control-text-input.md)** 与控制 **[滑块] (控件/控件-slider.md**控件，而无需解锁卡。
 
 1. 在生成并自定义的应用，选择**EditForm1**左侧导航栏中，然后选择**编辑字段**上**属性**的右侧窗格的选项卡。
 
