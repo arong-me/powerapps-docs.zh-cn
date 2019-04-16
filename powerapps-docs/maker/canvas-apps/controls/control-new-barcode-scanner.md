@@ -74,9 +74,9 @@ ms.locfileid: "58491551"
 **[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
-相同准则**[按钮](control-button.md)** 控制将应用于**条码扫描器**控制，因为它是用于启动扫描的按钮。
+相同准则 **[按钮](control-button.md)** 控制将应用于**条码扫描器**控制，因为它是用于启动扫描的按钮。
 
 ### <a name="visual-alternatives"></a>视频替代
-* 条形码扫描程序是不会显示扫描结果的按钮。 请考虑将显示扫描结果与**[标签](control-text-box.md)** 控件。 设置的标签**[文本](properties-core.md)** 属性设置为条形码扫描仪**值**属性。 设置的标签**[Live](properties-accessibility.md)** 属性设置为**礼貌**，以便更改的通知屏幕阅读器用户。 此更改使扫描生成的值可供所有人，而不考虑视觉功能。
+* 条形码扫描程序是不会显示扫描结果的按钮。 请考虑将显示扫描结果与 **[标签](control-text-box.md)** 控件。 设置的标签 **[文本](properties-core.md)** 属性设置为条形码扫描仪**值**属性。 设置的标签 **[Live](properties-accessibility.md)** 属性设置为**礼貌**，以便更改的通知屏幕阅读器用户。 此更改使扫描生成的值可供所有人，而不考虑视觉功能。
 
-* Visual 和汽车残障人士可能倾向于不指向条形码的照相机。 请考虑添加另一种形式的输入，如**[文本输入](control-text-input.md)** 控件，用户输入的条形码。
+* Visual 和汽车残障人士可能倾向于不指向条形码的照相机。 请考虑添加另一种形式的输入，如 **[文本输入](control-text-input.md)** 控件，用户输入的条形码。
