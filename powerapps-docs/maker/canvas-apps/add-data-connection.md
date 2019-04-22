@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 28357a6187831e05fe27075b8b22514950215ab4
-ms.sourcegitcommit: fc604f3e7f0399bdabee86ce94f67de49531a444
+ms.openlocfilehash: 43832847f447a9af8a05d149b0d6f3b564b770e1
+ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58545052"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59993794"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>在 PowerApps 中向画布应用添加数据连接
 
@@ -58,7 +58,7 @@ ms.locfileid: "58545052"
 
     ![添加连接](./media/add-data-connection/add-connection.png)
 
-1. 在搜索栏中，键入或粘贴所需的连接的第几个字母，然后选择然后连接时出现。
+1. 在搜索栏中，键入或粘贴所需的连接的第几个字母，然后它出现时选择的连接。
 
     ![搜索连接](./media/add-data-connection/search-connections.png)
 
@@ -67,7 +67,7 @@ ms.locfileid: "58545052"
     某些连接器（如 Office 365 Outlook）不需要执行额外步骤即可立即从中显示数据。 其他连接器将提示你提供凭据，指定一组特定的数据或执行其他步骤。 例如，[SharePoint](connections/connection-sharepoint-online.md) 和 [SQL Server](connections/connection-azure-sqldatabase.md) 需要在使用之前提供其他信息。
 
 ## <a name="identify-or-change-a-data-source"></a>标识或更改数据源
-如果正在更新应用，则可能需要确定或更改库、窗体或其他控件中显示的数据源。 例如，可能需要在更新应用时确定他人创建的或你在很久以前创建的数据源。
+如果正在更新应用，则可能需要确定或更改库、窗体或其他控件中显示的数据源。 例如，您可能需要以标识为你更新应用程序其他人创建或很久以前创建的数据源。
 
 1. 选择的控件，例如库，你想要确定或更改数据源。
 

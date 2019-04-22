@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d20c19e44f3fb247314613cdfe23e1d1e5820cba
-ms.sourcegitcommit: 0aa8344e6ff1096b67fbac6b986515ec2540e5fd
+ms.openlocfilehash: 88e0a74d2c25d1d2f5f571f4d1850417d1aab9ca
+ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59541806"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59993817"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>PowerApps 中的形状控件和图标控件
 你可以为其配置外观和行为属性的图形。
@@ -26,10 +26,18 @@ ms.locfileid: "59541806"
 ## <a name="description"></a>描述
 这些控件包括箭头、几何形状、操作图标和符号，你可以为其配置诸如 fill、size 和 location 之类的属性。 此外可以配置其**[OnSelect](properties-core.md)** 属性，以便应用的响应如果用户选择控件。
 
-## <a name="key-properties"></a>关键属性
+## <a name="key-properties-icons-and-shapes"></a>键属性 （图标和形状）
 **[Fill](properties-color-border.md)** – 控件的背景色。
 
 **[OnSelect](properties-core.md)**  – 当用户选择控件时，应用的响应方式。
+
+## <a name="key-properties-icons-only"></a>键属性 （仅图标）
+
+**图标**-显示的图标类型 (例如， **ArrowDown**或**ShoppingCart**)。 
+
+**旋转**-的角度旋转图标。 
+
+**颜色**-按名称或 RGBA 值图标的颜色。
 
 ## <a name="additional-properties"></a>其他属性
 **[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。
