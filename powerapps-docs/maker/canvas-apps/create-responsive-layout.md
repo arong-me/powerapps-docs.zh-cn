@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 776a542d8e790cc9ae3591b6cda9f08d0d347ef7
-ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
+ms.openlocfilehash: cad1d7f138a8f831631d9a57b55c54b30d537b9c
+ms.sourcegitcommit: 39c9b4cbc26617e302d46085d81c6d397e01fbf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59042769"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671598"
 ---
 # <a name="create-responsive-layouts-in-canvas-apps"></a>画布应用中创建响应式布局
 
@@ -44,7 +44,7 @@ ms.locfileid: "59042769"
 
 若要使应用程序的布局响应中的屏幕尺寸的更改，你将编写使用的公式**宽度**并**高度**屏蔽的属性。 若要显示这些属性，在 PowerApps Studio 中打开应用，然后选择屏幕。 在显示这些属性的默认公式**高级**的右侧窗格的选项卡。
 
-**宽度** = `Max(App.Width, App.DesignWidth)`
+**Width** = `Max(App.Width, App.DesignWidth)`
 
 **Height** = `Max(App.Height, App.DesignHeight)`
 
@@ -67,9 +67,9 @@ ms.locfileid: "59042769"
 
 | 属性      | Value            |
 |--------|---------------|
-| **X**      | 0             |
-| **Y**      | 0             |
-| **宽度**  | `Parent.Width`  |
+| **X**      | `0`             |
+| **Y**      | `0`             |
+| **Width**  | `Parent.Width`  |
 | **Height** | `Parent.Height` |
 
 这些公式使用**父**运算符。 直接在屏幕上放置的控件**父**指的是屏幕。 这些属性值，该控件显示在屏幕 （0，0） 的左上角与具有相同**宽度**并**高度**作为屏幕。
@@ -82,14 +82,14 @@ ms.locfileid: "59042769"
 
 | 控件 | 属性 | 公式           |
 |-|----------|-------------------|
-| **Upper** | **X**        | 0                 |
-| **Upper** | **Y**        | 0                 |
-| **Upper** | **宽度**    | `Parent.Width`      |
+| **Upper** | **X**        | `0`                 |
+| **Upper** | **Y**        | `0`                 |
+| **Upper** | **Width**    | `Parent.Width`      |
 | **Upper** | **Height**   | `Parent.Height / 2` |
-| **Lower** | **X**        | 0                 |
-| **Lower** | **Y**        | `Parent.Height / 2` |
-| **Lower** | **宽度**    | `Parent.Width`      |
-| **Lower** | **Height**   | `Parent.Height / 2` |
+| **较低** | **X**        | `0`                 |
+| **较低** | **Y**        | `Parent.Height / 2` |
+| **较低** | **Width**    | `Parent.Width`      |
+| **较低** | **Height**   | `Parent.Height / 2` |
 
 ![上限，并降低控件](media/create-responsive-layout/dynamic-layout.png)
 
@@ -100,14 +100,14 @@ ms.locfileid: "59042769"
 
 | 控件 | 属性 | 公式           |
 |-|----------|-------------------|
-| **Upper** | **X**        | 0                 |
-| **Upper** | **Y**        | 0                 |
-| **Upper** | **宽度**    | `Parent.Width`      |
+| **Upper** | **X**        | `0`                 |
+| **Upper** | **Y**        | `0`                 |
+| **Upper** | **Width**    | `Parent.Width`      |
 | **Upper** | **Height**   | `Parent.Height / 2` |
-| **Lower** | **X**        | 0                       |
-| **Lower** | **Y**        | `Upper.Y + Upper.Height`  |
-| **Lower** | **宽度**    | `Parent.Width`            |
-| **Lower** | **Height**   | `Parent.Height - Lower.Y` |
+| **较低** | **X**        | `0`                       |
+| **较低** | **Y**        | `Upper.Y + Upper.Height`  |
+| **较低** | **Width**    | `Parent.Width`            |
+| **较低** | **Height**   | `Parent.Height - Lower.Y` |
 
 ![上部和较低的控件相对大小调整](media/create-responsive-layout/dynamic-layout2.png)
 
@@ -117,9 +117,9 @@ ms.locfileid: "59042769"
 
 | C 及其父级之间的关系 | 属性 | 公式 | 图 |
 |--|--|--|--|
-| **C**填充的边距宽度的父代、 *N* | **X**| *N* | ![C 的父级的填充宽度的示例](media/create-responsive-layout/c1.png) |
-|  | **宽度** | `Parent.Width - (N * 2)` |  |
-| **C**边距为填充的父代、 高度*N* | **Y** | *N* | ![C 的父填充高度的示例](media/create-responsive-layout/c2.png) |
+| **C**填充的边距宽度的父代、 *N* | **X**| `N` | ![C 的父级的填充宽度的示例](media/create-responsive-layout/c1.png) |
+|  | **Width** | `Parent.Width - (N * 2)` |  |
+| **C**边距为填充的父代、 高度*N* | **Y** | `N` | ![C 的父填充高度的示例](media/create-responsive-layout/c2.png) |
 |  | **Height** | `Parent.Height - (N * 2)` |  |
 | **C**与父代、 右边缘与距对齐*N* | **X** | `Parent.Width - (C.Width + N)` | ![C 与父项的边缘对齐的示例](media/create-responsive-layout/c3.png) |
 | **C**与父代、 下边缘与距对齐*N* | **Y** | `Parent.Height - (C.Height + N)` | ![C 与父项的边缘对齐的示例](media/create-responsive-layout/c4.png) |
@@ -129,7 +129,7 @@ ms.locfileid: "59042769"
 | C 和 D 之间的关系 | 属性 | 公式 | 图 |
 |--|--|--|--|
 | **C**与水平对齐**D**和宽度相同**D** | **X** | `D.X` | ![模式的示例](media/create-responsive-layout/d1.png) |
-|  | **宽度**    | `D.Width` |  |
+|  | **Width**    | `D.Width` |  |
 | **C**与垂直对齐**D**和相同的高度**D**  | **Y** | `D.Y` | ![模式的示例](media/create-responsive-layout/d2.png) |
 |  | **Height** | `D.Height` |  |
 | 边缘**C**的右边缘对齐**D** | **X** | `D.X + D.Width - C.Width` | ![模式的示例](media/create-responsive-layout/d3.png) |
@@ -139,7 +139,7 @@ ms.locfileid: "59042769"
 | **C**定位到右侧**D**与 N 的间隔 | **X** | `D.X + D.Width - N` | ![模式的示例](media/create-responsive-layout/d7.png) |
 | **C**之下**D**的间隙较*N*             | **Y** | `D.Y + D.Height + N` | ![模式的示例](media/create-responsive-layout/d8.png) |
 | **C**填充之间的空间**D**和右边缘的父级 | **X** | `D.X + D.Width` | ![模式的示例](media/create-responsive-layout/d9.png) |
-|  | **宽度** | `Parent.Width - C.X` |  |
+|  | **Width** | `Parent.Width - C.X` |  |
 | **C**填充之间的空间**D**边距和下边缘的父级 | Y | `D.Y + D.Height` | ![模式的示例](media/create-responsive-layout/d10.png) |
 
 ## <a name="hierarchical-layout"></a>层次结构布局
@@ -164,10 +164,10 @@ ms.locfileid: "59042769"
 
 | 属性 | 标题 | 菜单 | 关闭 | 标题 |
 |--|--|--|--|--|
-| **X** | 0  | 0 | `Parent.Width - Close.Width` | `Menu.X + Menu.Width` |
-| **Y** | 0 | 0 | 0 | 0 |
-| **宽度**  | `Parent.Width` | `Parent.Height` | `Parent.Height` | `Close.X - Title.X` |
-| **Height** | 64 | `Parent.Height` | `Parent.Height` | `Parent.Height` |
+| **X** | `0`  | `0` | `Parent.Width - Close.Width` | `Menu.X + Menu.Width` |
+| **Y** | `0` | `0` | `0` | `0` |
+| **Width**  | `Parent.Width` | `Parent.Height` | `Parent.Height` | `Close.X - Title.X` |
+| **Height** | `64` | `Parent.Height` | `Parent.Height` | `Parent.Height` |
 
 有关**标头**控件，`Parent`指的是屏幕。 对于其他操作系统，`Parent`是指**标头**控件。
 
@@ -192,7 +192,7 @@ ms.locfileid: "59042769"
 
 以适应屏幕**宽度**并**高度**属性设备方向，您可以使用以下公式：
 
-**宽度** = `Max(App.Width, If(App.Width < App.Height, App.DesignWidth, App.DesignHeight))`
+**Width** = `Max(App.Width, If(App.Width < App.Height, App.DesignWidth, App.DesignHeight))`
 
 **Height** = `Max(App.Height, If(App.Width < App.Height, App.DesignHeight, App.DesignWidth))`
 
@@ -200,25 +200,67 @@ ms.locfileid: "59042769"
 
 调整屏幕的后**宽度**并**高度**公式，您可能还想要重新排列屏幕以更好地利用可用空间中的控件。 例如，如果两个控件都只占据屏幕的一半，可能纵向中垂直堆叠，但在布局中并排排列。
 
+您可以使用屏幕**方向**属性来确定在屏幕的方向是垂直还是水平。
+
 > [!NOTE]
 > 在横向方向**上部**并**较低**控件显示为左侧和右侧的控件。
 
 | 控件 | 属性 | 公式 |
 |--|----------|---|
-| **Upper** | **X** | 0 |
-| **Upper** | **Y** | 0 |
-| **Upper** | **宽度** | `If(Parent.Width < Parent.Height, Parent.Width, Parent.Width / 2)` |
-| **Upper** | **Height**   | `If(Parent.Width < Parent.Height, Parent.Height / 2, Parent.Height)` |
-| **Lower** | X | `If(Parent.Width < Parent.Height, 0, Upper.X + Upper.Width)`  |
-| **Lower** | Y | `If(Parent.Width < Parent.Height, Upper.Y + Upper.Height, 0)` |
-| **Lower** | **宽度** | `Parent.Width - Lower.X` |
-| **Lower** | **Height** | `Parent.Height - Lower.Y` |
+| **Upper** | **X** | `0` |
+| **Upper** | **Y** | `0` |
+| **Upper** | **Width** | `If(Parent.Orientation = Layout.Vertical, Parent.Height, Parent.Width, Parent.Width / 2)` |
+| **Upper** | **Height**   | `If(Parent.Orientation = Layout.Vertical, Parent.Height / 2, Parent.Height)` |
+| **较低** | X | `If(Parent.Orientation = Layout.Vertical, 0, Upper.X + Upper.Width)`  |
+| **较低** | Y | `If(Parent.Orientation = Layout.Vertical, Upper.Y + Upper.Height, 0)` |
+| **较低** | **Width** | `Parent.Width - Lower.X` |
+| **较低** | **Height** | `Parent.Height - Lower.Y` |
 
 ![若要调整方向为纵向的表达式](media/create-responsive-layout/portrait.png)
 
 ![若要调整横向方向的表达式](media/create-responsive-layout/landscape.png)
 
-### <a name="known-limitations"></a>已知的限制
+### <a name="screen-sizes-and-breakpoints"></a>屏幕大小和断点
+
+您可以调整您的布局基于设备的大小。 在屏幕**大小**属性将分为两类的当前设备大小。 大小是一个正整数;屏幕大小类型提供了有助于提高可读性的已命名的常数。 此表列出的常量：
+
+| 常量              | Value | 典型的设备类型 （使用默认应用设置） |
+|-----------------------|-------|--------------------------------------------------|
+| ScreenSize.Small      | 1     | 电话                                            |
+| ScreenSize.Medium     | 2     | 垂直持有的平板电脑                          |
+| ScreenSize.Large      | 3     | 水平持有的平板电脑                        |
+| ScreenSize.ExtraLarge | 4     | 台式计算机                                 |
+
+使用这些大小决定应用的布局。 例如，如果你想控制大小电话的设备上可见但否则为隐藏，您可以设置控件的**Visible**属性设为此公式：
+
+`Parent.Size >= ScreenSize.Medium`
+
+此公式的计算结果为 **，则返回 true**大小为中等或较大时， **false**否则为。
+
+如果你想控制以占据屏幕宽度基于屏幕大小的不同部分，设置控件的**宽度**属性设为此公式：
+
+```
+Parent.Width *  
+    Switch(Parent.Size,  
+        ScreenSize.Small, 0.5,  
+        ScreenSize.Medium, 0.3,  
+        0.25)
+```
+此公式在小屏幕上，在中等屏幕上的屏幕宽度的三个的十分之几和每个季度的所有其他屏幕上的屏幕宽度上将控件的宽度设置为屏幕宽度的一半。
+
+## <a name="custom-breakpoints"></a>自定义断点
+
+在屏幕**大小**属性通过比较屏幕的计算**宽度**属性设置为应用程序的中值**SizeBreakpoints**属性。 此属性是数值，表明分隔命名的屏幕大小的宽度断点的单列的表：
+
+在创建平板电脑或 web 应用中的默认值在应用中**SizeBreakpoints**属性是 **[600、 900，1200年]**。 在创建手机应用中，当值 **[1200年、 1800年、 2400年]**。 （针对手机应用程序的值将增加一倍因为此类应用程序使用双有效地在其他应用中使用的坐标的坐标。）
+
+![App.SizeBreakpoints 属性的默认值](media/create-responsive-layout/default-breakpoints.png)
+
+可以通过更改应用程序的中值来自定义应用程序的断点**SizeBreakpoints**属性。 选择**应用程序**在树视图中，选择**SizeBreakpoints**属性中列出，然后单击编辑栏中的值。 您可以创建很多断点如你的应用需求，但仅大小的 1 到 4 对应于已命名的屏幕大小。 可以在公式中，指 ExtraLarge 超出由其数字值的大小 （5、 6 和等）。
+
+此外可以指定更少的断点。 例如，您的应用程序可能需要仅三个大小 （两个断点），因此可能的屏幕大小是小型、 中型和大型。
+
+## <a name="known-limitations"></a>已知的限制
 
 创作画布不响应的大小调整公式创建。 若要测试响应行为，保存并发布你的应用，然后在设备上或在各种大小和方向的浏览器窗口中打开它。
 

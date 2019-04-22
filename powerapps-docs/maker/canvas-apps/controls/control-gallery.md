@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ba5df28f03ec5e7c9a3d8146aecb0427d8145b13
-ms.sourcegitcommit: dc578df718420c7f19e4583d9e7002e69495e268
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59425302"
 ---
 # <a name="gallery-control-in-canvas-apps"></a>库控件中的画布应用
@@ -106,7 +106,7 @@ WrapCount - 每行或每列（具体取决于是水平布局还是垂直布局�
 ### <a name="get-data-from-the-user"></a>从用户获取数据
 
 * [获取文本](control-text-input.md#collect-data)
-* [获取映像](control-add-picture.md#add-images-to-an-image-gallery-control)
+* [获取图像](control-add-picture.md#add-images-to-an-image-gallery-control)
 * [获取照片](control-camera.md#example)
 * [获取声音](control-microphone.md#example)
 * [获取绘图](control-pen-input.md#create-a-set-of-images)

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 38e2798ae60206ff0584254916e4f750096155e4
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: 7e06c24d4d83b0e176782b705d6a77e956b6043b
+ms.sourcegitcommit: 39c9b4cbc26617e302d46085d81c6d397e01fbf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356853"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671460"
 ---
 # <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>从 PowerApps 中的 Common Data Service 生成画布应用
 
@@ -28,7 +28,7 @@ ms.locfileid: "58356853"
 
 ## <a name="prerequisites"></a>先决条件
 
-若要遵循本快速入门中，您必须分配给[环境创建者](https://docs.microsoft.com/power-platform/admin/database-security.md#predefined-security-roles)安全角色，并且你必须[切换到环境](working-with-environments.md)的 Common Data Service 中已创建了一个数据库，在包含数据，并允许更新。 如果不具备此环境但拥有管理权限，则可按此要求[创建环境](https://docs.microsoft.com/power-platform/admin/environments-administration.md#create-an-environment)。
+若要遵循本快速入门中，您必须分配给[环境创建者](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles)安全角色，并且你必须[切换到环境](working-with-environments.md)的 Common Data Service 中已创建了一个数据库，在包含数据，并允许更新。 如果不具备此环境但拥有管理权限，则可按此要求[创建环境](https://docs.microsoft.com/power-platform/admin/environments-administration#create-an-environment)。
 
 ## <a name="generate-an-app"></a>生成应用
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d13f4a0669ae9f0d7ef9a5f4ef7115e006256bd9
-ms.sourcegitcommit: d1d39d6b72516d62514af4ff90f04c35fbdd8638
+ms.openlocfilehash: 18bd89549aa330b5da333dccfd723887db38a36e
+ms.sourcegitcommit: 39c9b4cbc26617e302d46085d81c6d397e01fbf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59480230"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671552"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>PowerApps 中的 Acceleration、App、Compass、Connection 和 Location 信号
 返回关于应用环境的信息，例如用户的全球所在位置，以及所显示的是哪个屏幕。  
@@ -48,12 +48,13 @@ ms.locfileid: "59480230"
 | **App.Height** | 返回在其中运行应用程序窗口的高度。 设置时，可以在公式中使用此属性**高度**屏幕来构建响应性应用的属性。 |
 | **App.DesignWidth** | 返回在 PowerApps Studio 中的应用程序的宽度。 设置时，可以在公式中使用此属性**宽度**屏幕以确保响应性应用中的最小宽度的属性。  |
 | **App.DesignHeight** | 返回在 PowerApps Studio 中的应用程序的高度。 设置时，可以在公式中使用此属性**高度**屏幕以确保最小高度以响应性应用的属性。  |
+| **App.SizeBreakpoints** | 分隔屏幕大小的数字的单列的表范围[ **Screen.Size** ](../controls/control-screen.md)属性返回。 此表中的值可能更改自定义的应用程序的所有屏幕使用的断点。
 
 **应用程序**对象还具有[行为公式](../working-with-formulas-in-depth.md)，可以设置。
 
 | 属性  | 描述 |
 | --- | --- |
-| **OnStart** | 应用用户启动它时的行为。 此属性通常用于检索并缓存数据到集合 **[收集](function-clear-collect-clearcollect.md)** 函数，设置变量 **[设置](function-set.md)** 函数，并导航到包含初始屏幕 **[Navigate](function-navigate.md)** 函数。 第一屏出现之前，会计算此公式。 加载没有屏幕，因此不能设置与上下文变量**[UpdateContext](function-updatecontext.md)** 函数。 但是，可以传递与上下文变量**Navigate**函数。 |
+| **App.OnStart** | 应用用户启动它时的行为。 创建者通常使用此属性来检索并缓存数据到集合**[收集](function-clear-collect-clearcollect.md)** 函数，设置变量**[设置](function-set.md)** 函数，并导航到包含初始屏幕**[Navigate](function-navigate.md)** 函数。 第一屏出现之前，会计算此公式。 加载没有屏幕，因此不能设置与上下文变量**[UpdateContext](function-updatecontext.md)** 函数。 但是，可以传递与上下文变量**Navigate**函数。 |
 
 **应用**对象显示在左侧的导航窗格中控件的层次结构列表的顶部，你可以选择类似于在屏幕上控件的此对象。 选择的对象后，你可以查看和编辑其属性之一，如果您在公式栏的左侧的下拉列表中选择该属性。  
 
@@ -96,14 +97,14 @@ ms.locfileid: "59480230"
 | --- | --- | --- |
 | **Location.Latitude** |返回当前位置的纬度。 字段位于地图上的坐标 N，122.333 w。 |47.591<br><br>纬度将随球在投手和捕手之间的移动而不断更改。 |
 | **Location.Longitude** |返回当前位置的经度。 |122.333<br><br>经度将随球在投手和捕手之间的移动而不断更改。 |
-| **Location** |返回当前位置的经度和纬度作为记录。 |{&nbsp;纬度：&nbsp;47.591，经度：&nbsp;122.333&nbsp;} |
+| **位置** |返回当前位置的经度和纬度作为记录。 |{&nbsp;纬度：&nbsp;47.591，经度：&nbsp;122.333&nbsp;} |
 | **Compass.Heading** |返回屏幕顶部的指南针标题。 在此字段中，本垒大致西南部从才投手区。 |230.25 |
 | **Acceleration.X** |返回并排设备的加速度。 由于投手直接向前相对屏幕的顶端投掷手机，因此设备不会并排加速。 |0 |
 | **Acceleration.Y** |返回设备从前到后的加速度。 在投掷设备之初，投手为设备提供了一个较大的加速度，在半秒中内达到从 0 增至 90 英里/小时（132 英尺/秒）。 设备在空中运动时，忽略空气阻力，设备不会进一步加速。 捕手接住设备时，设备将减速至停止。 |8.2，投手投掷设备时。<br><br>0，设备在空中时。<br><br>-8.2，捕手接住设备时。 |
 | **Acceleration.Z** |返回设备从上到下的加速度。 设备在空中运动时会受重力影响。 |0，投手投掷设备前。<br><br>1，设备在空中运动时。<br><br>0，捕手接住设备后。 |
 | **Acceleration** |将加速度作为记录返回。 |{X:0，Y:264，Z:0} 作为投手投掷设备。 |
-| **Connection.Connected** |返回一个布尔值，它指示设备是否已连接到网络 |**True** |
-| **Connection.Metered** |返回一个布尔值，它指示连接是否按流量计费 |**True** |
-| **App.ActiveScreen = PlayBall** |返回一个布尔值，它指示是否显示了 **PlayBall**。 |**True** |
+| **Connection.Connected** |返回一个布尔值，它指示设备是否已连接到网络 |**true** |
+| **Connection.Metered** |返回一个布尔值，它指示连接是否按流量计费 |**true** |
+| **App.ActiveScreen = PlayBall** |返回一个布尔值，它指示是否显示了 **PlayBall**。 |**true** |
 | **App.ActiveScreen.Fill** |返回所显示的屏幕的背景色。 |**Color.Green** |
 

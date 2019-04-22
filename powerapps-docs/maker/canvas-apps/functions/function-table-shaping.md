@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: fc682694bb22ecc63ecc762a735df07950ce29d3
-ms.sourcegitcommit: 2dce3fe99828b0ffa23885bc7e11f1a1f871af07
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59096158"
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>PowerApps 中的 AddColumns、DropColumns、RenameColumns 和 ShowColumns 函数
@@ -101,7 +101,7 @@ AddColumns( RealEstateAgents,
 | **ShowColumns( IceCreamSales, "Flavor" )** |仅在结果中包含 **Flavor** 列。 使用此函数可包含列，使用 **DropColumns** 可排除列。 |![](media/function-table-shaping/icecream-select-flavor.png) |
 | **RenameColumns( IceCreamSales, "UnitPrice", "Price")** |重命名**UnitPrice**结果列。 |![](media/function-table-shaping/icecream-rename-price.png) |
 | **RenameColumns( IceCreamSales, "UnitPrice", "Price", "QuantitySold", "Number")** |重命名结果中的 UnitPrice 和 QuantitySold 列。 |![](media/function-table-shaping/icecream-rename-price-quant.png) |
-| **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, "Revenue",<br>UnitPrice * QuantitySold)，<br>"UnitPrice", "Price" ),<br>"Quantity" )** |从公式内部开始，按顺序执行以下表转换： <ol><li>根据针对每条记录计算 **UnitPrice * Quantity** 后的结果添加 **Revenue** 列。<li>将 **UnitPrice** 重命名为 **Price**。<li>排除 **Quantity** 列。</ol>  请注意，顺序很重要。 例如，不能在重命名 **UnitPrice** 后计算该列。 |![](media/function-table-shaping/icecream-all-transforms.png) |
+| **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, "Revenue",<br>UnitPrice * QuantitySold ),<br>"UnitPrice", "Price" ),<br>"Quantity" )** |从公式内部开始，按顺序执行以下表转换： <ol><li>根据针对每条记录计算 **UnitPrice * Quantity** 后的结果添加 **Revenue** 列。<li>将 **UnitPrice** 重命名为 **Price**。<li>排除 **Quantity** 列。</ol>  请注意，顺序很重要。 例如，不能在重命名 **UnitPrice** 后计算该列。 |![](media/function-table-shaping/icecream-all-transforms.png) |
 
 ### <a name="step-by-step"></a>分步操作
 

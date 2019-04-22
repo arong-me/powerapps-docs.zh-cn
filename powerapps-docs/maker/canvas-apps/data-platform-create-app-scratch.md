@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 428ca1fd96df4ed8a9c3fd7c14a1ad3e07356c70
-ms.sourcegitcommit: d1d39d6b72516d62514af4ff90f04c35fbdd8638
+ms.openlocfilehash: 1fc257bb8ef99353b78e7a87234397b4ced3bc4a
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59480207"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59686215"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>使用 Common Data Service 从头开始创建画布应用
 
@@ -30,7 +30,7 @@ ms.locfileid: "59480207"
 
 - 在从头开始创建应用之前，请通过[生成应用](data-platform-create-app.md)并自定义应用的[库](customize-layout-sharepoint.md)、[窗体](customize-forms-sharepoint.md)和[卡](customize-card.md)来熟悉 PowerApps 基础知识。
 - [切换到一个环境](working-with-environments.md)，该环境中已创建带有示例数据的数据库。 如果有合适的许可证，则可以[创建环境](../../administrator/create-environment.md)以满足此需要。
-- 若要创建应用，须具有[环境创建者](https://docs.microsoft.com/power-platform/admin/database-security.md#predefined-security-roles)安全角色。
+- 若要创建应用，须具有[环境创建者](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles)安全角色。
 
 ## <a name="open-a-blank-app"></a>打开一个空白应用
 

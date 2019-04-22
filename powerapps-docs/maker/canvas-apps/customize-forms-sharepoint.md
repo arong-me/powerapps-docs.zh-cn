@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1a6465a00f135489d594bad75b8a25942e05dd25
-ms.sourcegitcommit: f4b71ea0996603b3358377a0da21b9e4428a287c
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58870922"
 ---
 # <a name="customize-a-canvas-app-form-in-powerapps"></a>自定义 PowerApps 中的画布应用窗体
@@ -49,12 +49,12 @@ ms.locfileid: "58870922"
 1. 隐藏字段，如**描述**，通过将鼠标悬停其上，选择省略号 （...），然后选择**删除**。
 
     > [!div class="mx-imgBorder"]
-    > ![字段列表](./media/customize-forms-sharepoint/hide-fields.png)
+    > ![字段的列表](./media/customize-forms-sharepoint/hide-fields.png)
 
 1. 通过选择显示字段**添加字段**、 键入或粘贴搜索框中，选择该字段的复选框，然后选中字段的名称的第几个字母**添加**。
 
     > [!div class="mx-imgBorder"]
-    > ![字段列表](./media/customize-forms-sharepoint/show-field.png)
+    > ![字段的列表](./media/customize-forms-sharepoint/show-field.png)
 
 ## <a name="reorder-the-cards"></a>对卡重新排序
 
@@ -63,7 +63,7 @@ ms.locfileid: "58870922"
     中的卡片**DetailForm1**反映更改。
 
     > [!div class="mx-imgBorder"]
-    > ![重新排序后的卡](./media/customize-forms-sharepoint/reordered-card.png)
+    > ![重新排序的卡](./media/customize-forms-sharepoint/reordered-card.png)
 
 1. （可选）为此序列重新排列其他卡：
 
@@ -102,7 +102,7 @@ ms.locfileid: "58870922"
 1. 选择箭头，显示刚刚创建的项的详细信息中的项的相关**DetailScreen1**。
 
     > [!div class="mx-imgBorder"]
-    > ![右箭头](./media/customize-forms-sharepoint/right-arrow.png)
+    > ![向右箭头](./media/customize-forms-sharepoint/right-arrow.png)
 
 1. 在右上角中，选择要更新中的记录的编辑图标**EditScreen1**。
 

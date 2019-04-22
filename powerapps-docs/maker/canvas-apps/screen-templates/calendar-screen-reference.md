@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e3d5f40a604d2cbfa074ed5973d599c40a6c5c05
-ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58765574"
 ---
 # <a name="reference-information-about-the-calendar-screen-template-for-canvas-apps"></a>有关画布应用的日历屏幕模板的参考信息

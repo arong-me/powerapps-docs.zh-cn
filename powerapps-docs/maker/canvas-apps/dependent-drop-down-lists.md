@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: dc1b3b87e2c1fdcd4ab7eb6634db7f9e7c049ec2
-ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59042746"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>创建依赖下拉列表中的画布应用
@@ -108,7 +108,7 @@ ms.locfileid: "59042746"
 1. 选择该列表中，该复选框，然后选择**Connect**。
 
     > [!div class="mx-imgBorder"]
-    > ![“数据”窗格](./media/dependent-drop-down-lists/select-list.png)
+    > ![数据窗格](./media/dependent-drop-down-lists/select-list.png)
 
     连接显示的列表**事件**列表中，基于窗体和**位置**列表中，它将识别位置和窗体中的部门。
 
