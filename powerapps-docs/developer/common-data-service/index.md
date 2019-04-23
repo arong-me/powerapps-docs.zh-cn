@@ -1,10 +1,10 @@
 ---
-redirect_url: /powerapps/developer/common-data-service/overview
+redirect_url: /powerapps/maker/common-data-service/data-platform-intro
 ms.openlocfilehash: 71756615df89898985bc78240a71d10c54b1af00
-ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58491495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61527552"
 ---
 仅重定向文件 - 不包括任何内容

@@ -1,56 +1,49 @@
-items:
 - name: Docs
   href: /
   topicHref: /
   items:
-  - name: PowerApp
-    tocHref: /powerapps/
-    topicHref: /powerapps/
-    items:
-    - name: 创建应用
-      tocHref: /powerapps/maker/common-data-service/
-      topicHref: /powerapps/maker/index
-    - name: 创建应用
-      tocHref: /powerapps/maker/model-driven-apps/
-      topicHref: /powerapps/maker/index
-    - name: 创建应用
-      tocHref: /powerapps/maker/canvas-apps/
-      topicHref: /powerapps/maker/index
-    - name: 创建应用
-      tocHref: /powerapps/developer/common-data-service/
-      topicHref: /powerapps/maker/index
+    - name: PowerApp
+      tocHref: /powerapps/
+      topicHref: /powerapps/
       items:
-      - name: Common Data Service
-        tocHref: /powerapps/developer/common-data-service/
-        topicHref: /powerapps/maker/common-data-service/index
-        items:
-        - name: 开发人员
+        - name: 创建应用
+          tocHref: /powerapps/maker/common-data-service/
+          topicHref: /powerapps/maker/index
+        - name: 创建应用
+          tocHref: /powerapps/maker/model-driven-apps/
+          topicHref: /powerapps/maker/index
+        - name: 创建应用
+          tocHref: /powerapps/maker/canvas-apps/
+          topicHref: /powerapps/maker/index
+        - name: 创建应用
           tocHref: /powerapps/developer/common-data-service/
-          topicHref: /powerapps/developer/common-data-service/index
+          topicHref: /powerapps/maker/index
           items:
-          - name: 组织服务
-            tocHref: /powerapps/developer/common-data-service/org-service/
-            topicHref: /powerapps/developer/common-data-service/org-service/index
-          - name: Web API
-            tocHref: /powerapps/developer/common-data-service/webapi/
-            topicHref: /powerapps/developer/common-data-service/webapi/index
-    - name: 创建应用
-      tocHref: /powerapps/developer/model-driven-apps/
-      topicHref: /powerapps/maker/index
-      items:
-      - name: 模型驱动应用
-        tocHref: /powerapps/developer/model-driven-apps/
-        topicHref: /powerapps/maker/model-driven-apps/index
-        items:
-        - name: 开发人员
+            - name: Common Data Service
+              tocHref: /powerapps/developer/common-data-service/
+              topicHref: /powerapps/maker/common-data-service/index
+              items:
+                - name: 开发人员
+                  tocHref: /powerapps/developer/common-data-service/
+                  topicHref: /powerapps/developer/common-data-service/index
+                  items:
+                    - name: 组织服务
+                      tocHref: /powerapps/developer/common-data-service/org-service/
+                      topicHref: /powerapps/developer/common-data-service/org-service/index
+                    - name: Web API
+                      tocHref: /powerapps/developer/common-data-service/webapi/
+                      topicHref: /powerapps/developer/common-data-service/webapi/index
+        - name: 创建应用
           tocHref: /powerapps/developer/model-driven-apps/
-          topicHref: /powerapps/developer/model-driven-apps/index
-    - name: 引导学习
-      tocHref: /powerapps/guided-learning/
-      topicHref: /powerapps/guided-learning/index
-ms.openlocfilehash: 13649d50911714707ef7d3b1122e0e2013dda27f
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357727"
+          topicHref: /powerapps/maker/index
+          items:
+            - name: 模型驱动应用
+              tocHref: /powerapps/developer/model-driven-apps/
+              topicHref: /powerapps/maker/model-driven-apps/index
+              items:
+                - name: 开发人员
+                  tocHref: /powerapps/developer/model-driven-apps/
+                  topicHref: /powerapps/developer/model-driven-apps/index
+        - name: 引导学习
+          tocHref: /powerapps/guided-learning/
+          topicHref: /powerapps/guided-learning/index

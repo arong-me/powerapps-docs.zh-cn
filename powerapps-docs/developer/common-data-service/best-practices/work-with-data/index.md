@@ -21,17 +21,17 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 759bed0c21bfc2035e3855f6d02b991b753dbf4b
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61528334"
 ---
 # <a name="best-practices-and-guidance-around-working-with-data-for-the-common-data-service"></a>Common Data Service 数据处理最佳做法和指南
 
 下表包含所有关于使用代码将数据集成到 Common Data Service 的最佳做法和指南。
 
-|最佳做法  |说明  |
+|最佳做法  |描述  |
 |---------|---------|
 |[API 限制 (Common Data Service)](../../api-limits.md)     |了解 API 请求的相关限制。         |
 
