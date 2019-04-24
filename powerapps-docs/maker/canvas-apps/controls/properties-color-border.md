@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: be961fe0a716351f59cb70b3a31116fd06039256
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61560383"
 ---
 # <a name="color-and-border-properties-in-powerapps"></a>PowerApps 中的颜色和边框属性
 ## <a name="overview"></a>概述
@@ -59,7 +59,7 @@ Fill – 控件的背景色。
 ## <a name="disabled"></a>Disabled
 以下属性在控件被禁用时起作用。  如果 [Disabled](properties-core.md) 属性设置为“true”，则可以禁用控件。
 
-**DisabledBorderColor** – 控件的**[“DisplayMode”](properties-core.md)** 属性设置为 **“Disabled”** 时，该控件边框的颜色。
+DisabledBorderColor – 控件的“DisplayMode”**[](properties-core.md)** 属性设置为“Disabled”时，该控件边框的颜色。
 
 * 适用于[添加图片](control-add-picture.md)、[按钮](control-button.md)、[复选框](control-check-box.md)、[柱状图](control-column-line-chart.md)、[日期选取器](control-date-picker.md)、[下拉列表](control-drop-down.md)、[导出](control-export-import.md)、[HTML 文本](control-html-text.md)、[图像](control-image.md)、[导入](control-export-import.md)、[标签](control-text-box.md)、[折线图](control-column-line-chart.md)、[列表框](control-list-box.md)、[麦克风](control-microphone.md)、[PDF 查看器](control-pdf-viewer.md)、[饼图](control-pie-chart.md)、[单选](control-radio.md)、[滑块](control-slider.md)、[文本输入](control-text-input.md)、[计时器](control-timer.md)和[切换](control-toggle.md)控件。
 
