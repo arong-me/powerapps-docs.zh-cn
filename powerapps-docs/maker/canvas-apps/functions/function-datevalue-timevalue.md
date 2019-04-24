@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c1f11be30f56859ede0950feebc27dd1be39d011
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61551183"
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-powerapps"></a>PowerApps 中的 DateValue、TimeValue 和 DateTimeValue 函数
 将字符串类型的日期和/或时间转换为日期/时间值。

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 6089063e2478c95bb5bfbc5926608d85552cea40
-ms.sourcegitcommit: fc604f3e7f0399bdabee86ce94f67de49531a444
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58545098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61561480"
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>创建和更新集合中的画布应用
 

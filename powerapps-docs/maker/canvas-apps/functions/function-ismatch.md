@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 7141d3b9a2ba6bf18bffe1756d0d7de048606cad
-ms.sourcegitcommit: f5013108140276b3d66a9dce13a061df89609d26
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "57798366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61562978"
 ---
 # <a name="ismatch-match-and-matchall-functions-in-powerapps"></a>PowerApps 中 IsMatch、 Match 和 MatchAll 函数
 测试文本字符串的模式匹配或提取部分。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **IsMatch** 函数用于测试文本字符串是否与包含普通字符、预定义模式或[正则表达式](#regular-expressions)的某种模式相符。  **匹配**并**MatchAll**函数返回什么匹配的包括子匹配项。  
 
 使用 **IsMatch** 函数可验证用户在 **[文本输入](../controls/control-text-input.md)** 控件中输入的内容。 例如，可以在将结果保存到数据源中之前验证用户输入的电子邮件地址是否有效。 如果输入的内容与条件不符，可添加其他控件提示用户更正输入。
@@ -121,7 +121,7 @@ ms.locfileid: "57798366"
 ## <a name="match-options"></a>匹配选项
 可以通过指定一个或多个选项，你可以通过使用字符串串联运算符将结合修改这些函数的行为 (**&amp;**)。  
 
-| MatchOptions 枚举 | 说明 | 对正则表达式的影响 |
+| MatchOptions 枚举 | 描述 | 对正则表达式的影响 |
 | --- | --- | --- |
 | **BeginsWith** |模式必须与文本的开头匹配。 |在正则表达式的开头添加 **^**。 |
 | **Complete** |默认**IsMatch**。 模式必须与匹配文本，从开始到结束的整个的字符串。 |将添加 **^** 到起始位置和一个 **$** 到正则表达式的末尾。 |

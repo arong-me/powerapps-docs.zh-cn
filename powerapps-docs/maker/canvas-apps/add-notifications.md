@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: f5ee975343afc16faaca52194b16cedff57e7e9f
-ms.sourcegitcommit: fe47ad47873a37fbe17b30d39fb2ca6035b7d152
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "57800850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61559915"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>在 PowerApps 中发送推送通知
 推送通知用于移动应用中的使用者和业务情形，主要用来与应用用户进行交互，并帮助他们优先处理关键任务。 在 PowerApps 中，可以使用 PowerApps 通知连接器发送通知。 可以将原生推送通知发送到在 PowerApps 中创建的任何应用。 我们计划在今后支持更多通知类型。
@@ -98,7 +98,7 @@ ms.locfileid: "57800850"
 
 ## <a name="syntax"></a>语法
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
 | SendPushNotification |向通知连接设置中指定的应用发送推送通知。 |
 

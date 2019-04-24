@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 65a828d33add99bbee086f24c3a4892abfaae048
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42853220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61536801"
 ---
 # <a name="share-excel-data-used-by-your-app"></a>共享应用中使用的 Excel 数据
 在[云帐户](connections/cloud-storage-blob-connections.md)（如 OneDrive）中可以与你的应用用户们共享 Excel 数据。

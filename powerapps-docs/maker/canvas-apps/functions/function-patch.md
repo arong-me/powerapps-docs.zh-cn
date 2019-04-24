@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 3adb036a1619263d2b8cef1f649c2d2f97925ceb
-ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57803127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61543873"
 ---
 # <a name="patch-function-in-powerapps"></a>PowerApps 中的 Patch 函数
 在[数据源](../working-with-data-sources.md)中修改或创建一条或多条[记录](../working-with-tables.md#records)，或者合并数据源外的记录。
@@ -40,7 +40,7 @@ ms.locfileid: "57803127"
 
 `Patch( { Name: "Contoso", Phone: “1-212-555-1234” }, { Name: "Contoso", Location: “Midtown”  } )`
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 ### <a name="modify-or-create-a-record-in-a-data-source"></a>在数据源中修改或创建记录
 要在数据源中使用这个函数，请指定数据源，然后指定一条基本记录：
 

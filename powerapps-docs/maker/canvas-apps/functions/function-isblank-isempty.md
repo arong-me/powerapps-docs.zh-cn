@@ -15,11 +15,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e31d3689c7b61c408be90c31f1e212e4fdd9a91c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42848974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61563776"
 ---
 # <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>PowerApps 中的 Blank、Coalesce、IsBlank 和 IsEmpty 函数
 测试值是否为空白值，或测试[表](../working-with-tables.md)是否不包含任何[记录](../working-with-tables.md#records)，并能创建*空白*值。
@@ -77,7 +77,7 @@ Coalesce 函数按顺序评估其参数并返回第一个值（不是空值）�
 1. 从头开始创建应用，然后添加一个“按钮”控件。
 2. 将该按钮的 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：
 
-    **ClearCollect( Cities, { Name: "Seattle", Weather: "Rainy" } )**
+    **ClearCollect (城市，{名称："Seattle"，天气："Rainy" } )**
 3. 预览应用，单击或点击所添加的按钮，然后关闭预览。  
 4. 在“文件”菜单上，单击或点击“集合”。
 
@@ -92,7 +92,7 @@ Coalesce 函数按顺序评估其参数并返回第一个值（不是空值）�
     此标签显示“false”，因为“Weather”字段包含值“Rainy”。
 7. 添加第二个按钮，然后将“OnSelect”属性设置为以下公式：
 
-    **Patch( Cities, First( Cities ), { Weather: Blank() } )**
+    **修补程序 (城市，第一个 （城市） {天气：Blank() } )**
 8. 预览应用，单击或点击所添加的按钮，然后关闭预览。  
 
     “Cities”集合中第一条记录的“Weather”字段被替换成*空白*值，删除了之前使用的“Rainy”。
@@ -136,7 +136,7 @@ Coalesce 函数按顺序评估其参数并返回第一个值（不是空值）�
 1. 从头开始创建应用，然后添加一个“按钮”控件。
 2. 将该按钮的 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：
 
-    **Collect( IceCream, { Flavor: "Strawberry", Quantity: 300 }, { Flavor: "Chocolate", Quantity: 100 } )**
+    **Collect( IceCream, { Flavor:"草莓"，Quantity:300}，{风格："巧克力"，Quantity:100 } )**
 3. 预览应用，单击或点击所添加的按钮，然后关闭预览。  
 
     创建“IceCream”集合，其中包含以下数据：

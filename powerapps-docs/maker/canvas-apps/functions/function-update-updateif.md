@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d74f05c87cd5b9a3e7aed7891c6d2aaa54adfd1a
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61548508"
 ---
 # <a name="update-and-updateif-functions-in-powerapps"></a>PowerApps 中的 Update 和 UpdateIf 函数
 更新[数据源](../working-with-data-sources.md)中的[记录](../working-with-tables.md#records)。

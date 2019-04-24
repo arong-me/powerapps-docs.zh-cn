@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4d7b21286f793aefdcc66a3dcbb027ab8f9ac4e7
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544285"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>PowerApps 中的编辑窗体和显示窗体控件
 在数据源中显示、编辑和创建记录。

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 198275ef72129b17cbf73a5f4eb47fd342de3b24
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42830727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61548745"
 ---
 # <a name="slider-control-in-powerapps"></a>PowerApps 中的滑块控件
 一个控件，用户可通过拖动图柄使用该控件指定值。
@@ -107,7 +107,7 @@ HandleSize – 句柄直径。
    
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
    
-    想要了解有关**[ ClearCollect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
+    想要了解有关 **[ ClearCollect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
 2. 按 F5，选择该按钮，然后按 Esc。
 3. 添加一个滑块，将其移动到按钮下方，然后将滑块命名为 **MinPopulation**。
 4. 将滑块的 **Max** 属性设置为 **5000000**，**Min** 属性设置为 **1000000**。

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 83021ff0d18eb5d7322ef40eaa2bc0839b56f452
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61551160"
 ---
 # <a name="defaults-function-in-powerapps"></a>PowerApps 中的 Defaults 函数
 返回[数据源](../working-with-data-sources.md)的默认值。  
@@ -41,5 +41,5 @@ ms.locfileid: "42834982"
 
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
-| **Defaults(&nbsp;Scores&nbsp;)** |返回 **Scores** 数据源的默认值。 |**{ Score: 0 }** |
+| **Defaults(&nbsp;Scores&nbsp;)** |返回 **Scores** 数据源的默认值。 |**{分数：0 }** |
 

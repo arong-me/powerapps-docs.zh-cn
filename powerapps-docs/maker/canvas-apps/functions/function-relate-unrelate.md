@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4b2c6b9518e987ef17f2ff2b50987568c8a0b69f
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61526873"
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>关联和取消关联时要在 PowerApps 中的函数
 
@@ -100,7 +100,7 @@ ms.locfileid: "58356761"
 
 1. 创建[从空白的平板电脑应用](../data-platform-create-app-scratch.md)。
 
-1. 上**视图**选项卡上，选择**数据源**。
+1. 在“视图”选项卡上，选择“数据源”。
 
 1. 在中**数据**窗格中，选择**添加数据源** > **Common Data Service** > **产品** > **连接**。  
 
@@ -170,7 +170,7 @@ ms.locfileid: "58356761"
 
 此时，可以将一条记录的关系移到另一个，但不能完全删除关系。 可以使用**Unrelate**函数保留记录断开与任何产品。
 
-1. 上**视图**选项卡上，选择**数据源**。
+1. 在“视图”选项卡上，选择“数据源”。
 
 1. 在中**数据**窗格中，选择**添加数据源** > **Common Data Service** > **保留** > **连接**。
 
@@ -271,7 +271,7 @@ ms.locfileid: "58356761"
 
     ![配置取消按钮图标](media/function-relate-unrelate/contacts-unrelate.png)
 
-1. 上**视图**选项卡上，选择**数据源**。
+1. 在“视图”选项卡上，选择“数据源”。
 
 1. 在中**数据**窗格中，选择**添加数据源** > **Common Data Service** > **联系人** > **连接**。
 

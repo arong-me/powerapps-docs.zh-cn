@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 7ac87e794341fe79a6e4f949893b64462c384f83
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42843788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544628"
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>PowerApps 中的音频和视频控件
 一个控件，用于播放 YouTube 上的音频文件、视频文件或视频。

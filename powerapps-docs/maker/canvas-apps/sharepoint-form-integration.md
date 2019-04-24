@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 919efacd1a1dc5c931d71e07024aa7c8a30168bf
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61538857"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>了解 SharePoint 窗体集成
 现在可以在 PowerApps 中轻松[自定义任何 SharePoint 列表窗体](customize-list-form.md)。 在本文中，我们将详细演示这些窗体的工作原理，以及如何对其作进一步的自定义。

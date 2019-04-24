@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a2cb87cf68457771605e78970b8d7a923af61fce
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544366"
 ---
 # <a name="list-box-control-in-powerapps"></a>PowerApps 中的列表框控件
 用户可以选择一个或多个项的列表。
@@ -60,7 +60,7 @@ ms.locfileid: "42835163"
 
 [Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md)** – 控件中文本的粗细：**粗体**、**半粗体**、**正常**或**细体**。
+**[FontWeight](properties-text.md)**  – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -140,9 +140,9 @@ ms.locfileid: "42835163"
      ![下拉列表中的地板名称](./media/control-list-box/flooring-names.png)
 4. 将每个**[下拉](control-drop-down.md)** 控件的 **[Visible](properties-core.md)** 属性设置为以下值之一：
    
-   * CarpetList：**If("Carpet" in CategoryList.SelectedItems.Value, true)**
-   * HardwoodList：**If("Hardwood" in CategoryList.SelectedItems.Value, true)**
-   * TileList：**If("Tile" in CategoryList.SelectedItems.Value, true)**
+   * CarpetList:**If("Carpet" in CategoryList.SelectedItems.Value, true)**
+   * HardwoodList:**If("Hardwood" in CategoryList.SelectedItems.Value, true)**
+   * TileList:**If("Tile" in CategoryList.SelectedItems.Value, true)**
      
      想要详细了解 [If](../functions/function-if.md) 函数或[其他函数](../formula-reference.md)吗？
 5. 按 F5，然后在“CategoryList”中选择一个或多个项。

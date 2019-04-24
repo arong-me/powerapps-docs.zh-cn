@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 8f77fe1194ace2f8cb5abeb3f9657cc76aab263a
-ms.sourcegitcommit: 5e15a1033a68289781f8092fb65c57432501f911
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61538664"
 ---
 # <a name="reference-information-about-the-email-screen-template-for-canvas-apps"></a>有关画布应用的电子邮件屏幕模板的参考信息
 

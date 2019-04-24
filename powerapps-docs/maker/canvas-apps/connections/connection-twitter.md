@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 23a61dd1300fab71bed4d8c72b861c3c38a1cdea
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57802069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61557408"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>从 PowerApps 连接到 Twitter
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -196,7 +196,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 
 #### <a name="input-properties"></a>输入属性
 
-| 名称 | 数据类型 | 需要 | 说明 |
+| 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | userName |字符串 |是 |Twitter 用户名 |
 | maxResults |整数 |否 |要检索的推文的最大数量，例如 {maxResults:5} |
@@ -217,13 +217,13 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 
 #### <a name="input-properties"></a>输入属性
 
-| 名称 | 数据类型 | 需要 | 说明 |
+| 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | maxResults |整数 |否 |要检索的推文的最大数量，例如 {maxResults:5} |
 
 #### <a name="output-properties"></a>输出属性
 
-| 属性名称 | 数据类型 | 需要 | 说明 |
+| 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | TweetText |字符串 |是 | |
 | TweetId |字符串 |否 | |
@@ -265,7 +265,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 
 #### <a name="output-properties"></a>输出属性
 
-| 属性名称 | 数据类型 | 需要 | 说明 |
+| 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 全名 |字符串 |是 | |
 | Location |字符串 |是 | |
@@ -303,14 +303,14 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 
 #### <a name="input-properties"></a>输入属性
 
-| 名称 | 数据类型 | 需要 | 说明 |
+| 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | userName |字符串 |是 |用户的 Twitter 用户名 |
 | maxResults |整数 |否 |要检索的用户的最大数量，例如 {maxResults:5} |
 
 #### <a name="output-properties"></a>输出属性
 
-| 属性名称 | 数据类型 | 需要 | 说明 |
+| 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 全名 |字符串 |是 | |
 | Location |字符串 |是 | |
@@ -326,7 +326,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 
 #### <a name="input-properties"></a>输入属性
 
-| 名称 | 数据类型 | 需要 | 说明 |
+| 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | maxResults |整数 |否 |要检索的用户的最大数量，例如 {maxResults:5} |
 
@@ -370,7 +370,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 
 #### <a name="input-properties"></a>输入属性
 
-| 名称 | 数据类型 | 需要 | 说明 |
+| 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | TweetText |字符串 |否 |要发布的文本，例如 {tweetText:"hello"} |
 | body |字符串 |否 |要发布的媒体 |
@@ -392,7 +392,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 
 #### <a name="output-properties"></a>输出属性
 
-| 属性名称 | 数据类型 | 需要 | 说明 |
+| 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 值 |数组 |否 | |
 

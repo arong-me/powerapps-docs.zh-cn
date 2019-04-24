@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 3a3d272737783abeaf2fe33557457486dae31e45
-ms.sourcegitcommit: a4719a7d719116aeda26baa44159b2271a9a79c8
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2019
-ms.locfileid: "57800551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61519193"
 ---
 # <a name="text-function-in-powerapps"></a>PowerApps 中的 Text 函数
 将转换的任何值，并设置数字或日期/时间值的文本字符串的格式。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Text** 函数根据下面的一种参数类型设置数字或日期/时间值的格式：
 
 * 预定义的日期/时间格式，可使用 **DateTimeFormat** 枚举指定。 对于日期和时间，这种方法是首选，因为它自动调整为每个用户的语言和区域。

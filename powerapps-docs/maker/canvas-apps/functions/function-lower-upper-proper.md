@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 72e1bd234a9cbccc24cf35723ee10bacd175b278
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61563710"
 ---
 # <a name="lower-upper-and-proper-functions-in-powerapps"></a>PowerApps 中的 Lower、Upper 和 Proper 函数
 将文本字符串中的字母转换为全部小写、全部大写或首字母大写。

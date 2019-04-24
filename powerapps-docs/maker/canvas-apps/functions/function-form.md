@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 930439325b60b60fefed18b66c22d9d4f97f55b7
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57802092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61550976"
 ---
 # <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>PowerApps 中的 EditForm、NewForm、SubmitForm、ResetForm 和 ViewForm 函数
 查看、编辑或创建一个项，保存内容，以及在[编辑表单](../controls/control-form-detail.md)控件中重置控件。

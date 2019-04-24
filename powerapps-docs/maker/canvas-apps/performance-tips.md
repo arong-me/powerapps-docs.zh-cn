@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 6406afad9079895a0da38c7f1f6e3961f2e37fa1
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61536339"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>在 PowerApps 中优化画布应用性能
 Microsoft 正致力于完善在 PowerApps 平台上运行的所有应用的性能。 但你可以按照本主题中的最佳做法提高你所创建的应用的性能。

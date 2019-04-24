@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: abb64d57e53f292dc42cb44ef2b1c9f35bbad944
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61563941"
 ---
 # <a name="rand-function-in-powerapps"></a>PowerApps 中的 Rand 函数
 返回一个伪随机数。

@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 3504c80cbf2414959cadc218339d959d168d15ba
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42858650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61559440"
 ---
 # <a name="check-box-control-in-powerapps"></a>PowerApps 中的复选框控件
 用户可选择或清除以将其值设置为 **true** 或 **false** 的控件。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 用户可以使用此熟悉的控件指定布尔值，这个控件在 GUI 中已经使用了数十年。
 
 ## <a name="key-properties"></a>关键属性
@@ -66,7 +66,7 @@ ms.locfileid: "42858650"
 
 [Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md)** – 控件中文本的粗细：**粗体**、**半粗体**、**正常**或**细体**。
+**[FontWeight](properties-text.md)**  – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 

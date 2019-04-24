@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 6f46dcdf300c91be9fbc2f39e6b2a5418a4b82de
-ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57803748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61558700"
 ---
 # <a name="understand-canvas-app-variables-in-powerapps"></a>了解 PowerApps 中的画布应用变量
 
@@ -82,7 +82,7 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 
 让我们将简单的加法器更改一下，使之操作起来就像一台老式的带汇总功能的加法机。 如果选择“加”按钮，则会将一个数字加到汇总中。 如果选择“清除”按钮，则会将汇总重置为零。
 
-| 显示 | 说明 |
+| 显示 | 描述 |
 |----|----|
 | <style> i m g {最大宽度： none} </style> ![应用的文本输入控件、 标签和两个按钮](media/working-with-variables/button-changes-state-1.png) | 当应用启动时的正在运行的总为 0。<br><br>红点表示在文本输入框中，用户在此处输入的用户的手指**77**。 |
 | ![文本输入的控件包含 77，并按下添加按钮](media/working-with-variables/button-changes-state-2.png) | 用户选择**添加**按钮。 |

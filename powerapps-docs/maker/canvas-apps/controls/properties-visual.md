@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: dad00e28dfc61c92c03aaf917c154e67291af073
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42843615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61560203"
 ---
 # <a name="image-properties-in-powerapps"></a>PowerApps 中的图像属性
 在应用中配置图形元素，包括图像、照片和笔控件的元素。

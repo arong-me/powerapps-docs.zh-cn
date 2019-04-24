@@ -1,6 +1,6 @@
 ---
-title: Accessibility 属性 | Microsoft 文档
-description: 有关 TabIndex、Tooltip 等属性的参考信息
+title: 辅助功能属性的画布应用 |Microsoft Docs
+description: 有关 TabIndex 和工具提示等属性的参考信息
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,28 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4d75fcd4c0605e295c1e61c5232ba747203d1647
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 5fa8b6fecdf690114cbf6a0945f2dfec66b067c3
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42854138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61560406"
 ---
-# <a name="accessibility-properties-in-powerapps"></a>PowerApps 中的辅助功能属性
+# <a name="accessibility-properties-for-canvas-apps"></a>画布应用的辅助功能属性
+
 配置有助于残障用户以其他合适方式与控件进行交互的属性。
 
-### <a name="properties"></a>属性
+## <a name="properties"></a>属性
+
 **AccessibleLabel** – 屏幕阅读器标签。 如果“图像”、“图标”和“形状”控件采用空值，将导致这些控件对屏幕阅读器不可见，并被视为修饰。
+
+**Live** – 屏幕阅读器应宣布内容的更改方式。 仅适用于**[标签](control-text-box.md)** 控件。
+
+* 如果设置为**关闭**，屏幕读取器不会公布的更改。
+* 如果设置为**礼貌**，屏幕读取器完成之前宣布推出时屏幕读取器已谈到出现的任何更改。
+* 如果设置为**Assertive**，屏幕阅读器会中断本身地宣布已谈到屏幕读取器时出现的任何更改。
+
+了解如何[宣布活动区域的动态更改](../accessible-apps-live-regions.md)。
 
 **TabIndex** – 相对于其他控件的键盘导航顺序。
 

@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ad3b8efc2306540862d0470223cee4f46fb5703c
-ms.sourcegitcommit: 50404720bed371bbc93feb08d296c954ef8038e1
+ms.openlocfilehash: e6d1b1083fcc7e865fa7c9cfe3f8966e20ed86a5
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54031345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61552034"
 ---
 # <a name="combo-box-control-in-powerapps"></a>PowerApps 中的组合框控件
 用户可以在其中提供的选项之间进行选择的控件。  支持搜索和多重选择。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 使用组合框控件，可以搜索要选择的项。  由于搜索是在服务器端对 SearchField 属性执行，因此性能不受非常大的数据源影响。  
 
 单选或多重选择模式是通过 SelectMultiple 属性进行配置。
@@ -84,15 +84,21 @@ ms.locfileid: "54031345"
 **[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="example"></a>示例
-1. 使用“插入”选项卡中的“控件”菜单，添加组合框控件。  
-2. 在“属性选项”选项卡中，单击“数据”。  
-3. 在下面选择数据源、布局和相关属性。
-4. 在“高级”选项卡中设置 SelectMultiple 属性。
+1. 上**插入**选项卡上，打开**控件**菜单，并选择**组合框**。  
 
-    正常运行的组合框将会在应用中显示。
+1. 上**属性**选项卡的右侧窗格中，打开**选择数据源**列表 (下一步**项**)，然后添加或选择数据源。
 
-    不知道如何[添加和配置控件](../add-configure-controls.md)？
+1. 在同一选项卡上，选择**编辑**(下一步**字段**)。
 
+1. 在中**数据**窗格中，打开**主要文本**列表，并选择你想要在中显示的列**组合框**控件。
+
+1. 在按住 Alt 键，选择向下箭头以打开**组合框**控件。
+
+    此控件显示在你指定数据源中的列中的数据。
+    
+1. （可选）若要显示的第一个记录，默认情况下，设置**DefaultSelectedItems**属性设置为此表达式中，替换*数据源*与数据源的名称：
+
+    `First(DataSource)`
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 ### <a name="color-contrast"></a>颜色对比度

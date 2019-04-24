@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 3fd93ce6cf9703e9e9fbf69c5826213d9aa78e02
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61519170"
 ---
 # <a name="shuffle-function-in-powerapps"></a>PowerApps 中的 Shuffle 函数
 随机重新排列[表](../working-with-tables.md)[记录](../working-with-tables.md#records)的顺序。

@@ -14,17 +14,17 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 447cda7a1d8d4f27c8be2b943abd2b5d6b431d49
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42853673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61548768"
 ---
 # <a name="radio-control-in-powerapps"></a>PowerApps 中的单选控件
 
 输入控件，显示了多个选项，用户每次可从其中选择一个。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 **单选按钮**控件，标准 HTML 输入控件，在只有少量互斥选项时使用效果最佳。
 
@@ -68,7 +68,7 @@ ms.locfileid: "42853673"
 
 [Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md)** – 控件中文本的粗细：**粗体**、**半粗体**、**正常**或**细体**。
+**[FontWeight](properties-text.md)**  – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 

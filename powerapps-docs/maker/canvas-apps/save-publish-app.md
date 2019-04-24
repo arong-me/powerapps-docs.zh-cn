@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f52338d4eed8942259e7ae15a8df3b05c45a703d
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: c255daf93cdb4807572f1a663c7bb87be0bb39e1
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42837003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61536593"
 ---
 # <a name="save-and-publish-a-canvas-app-in-powerapps"></a>在 PowerApps 中保存并发布画布应用
 每当保存画布应用的更改时，都将只对你自己和有权限编辑此应用的其他所有人自动发布更改。 完成更改后，必须显式发布更改，以便应用的所有共享对象都能使用。
@@ -60,5 +60,6 @@ PowerApps 也可以每 2 分钟定期保存一次应用。 如果已保存一次
 若要发布最新版本，请依次单击或点击“发布此版本”和“发布”对话框中的“发布此版本”。
 
 ## <a name="next-steps"></a>后续步骤
+* 查找并运行中的应用[浏览器](../../user/run-app-browser.md)或在[phone](../../user/run-app-client.md)。
 * 在 powerapps.com 中[重命名应用](set-name-tile.md)。
 * [还原应用](restore-an-app.md)（如果有多版应用的话）。

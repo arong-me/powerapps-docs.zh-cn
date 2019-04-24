@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 525c55a68478c4b51181fa72525eed802b0f10aa
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61551321"
 ---
 # <a name="concat-and-concatenate-functions-in-powerapps"></a>PowerApps 中的 Concat 和 Concatenate 函数
 将[表](../working-with-tables.md)中的文本和字符串连成单个字符串。

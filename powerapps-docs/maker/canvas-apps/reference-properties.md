@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 968722e672c6f169c4a9e2e87be959aa48e23c86
-ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
+ms.openlocfilehash: 97f9324230e1d935cb056eada294e11d8bfb4d73
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "58073662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61535819"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>PowerApps 中的控件和属性
 
@@ -31,8 +31,6 @@ ms.locfileid: "58073662"
 **[附件](controls/control-attachments.md)** - 下载文件，以及将文件从本地设备上传到数据源。
 
 **[音频](controls/control-audio-video.md)** – 播放音频剪辑，或视频剪辑的音频部分。
-
-**[（实验性） 的条码扫描器](controls/control-barcodescanner.md)** – 扫描 （旧版/已过时） 的 web 浏览器中的代码。
 
 **[条码扫描器](controls/control-new-barcode-scanner.md)** – 扫描条形码、 QR 码和 Android 或 iOS 设备上的数据矩阵代码。
 

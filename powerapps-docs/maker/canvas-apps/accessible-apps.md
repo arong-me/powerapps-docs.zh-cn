@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b6e2fc48d931ccf702dd2711bdc00a484dc51018
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57801931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61549918"
 ---
 # <a name="create-accessible-canvas-apps-in-powerapps"></a>在 PowerApps 中创建提供辅助功能的画布应用
 如果画布应用提供辅助功能，那么有视障、听障和其他障碍的用户就能够成功地使用应用。  除了遵守许多政府和组织的要求外，遵守下面的指南可以让所有用户都用起来更加方便，无论他们是否有残障。

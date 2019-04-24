@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 9981a549aaf0ce88f6e66dd4df2c7897901d219b
-ms.sourcegitcommit: 5c098a62f66a2f33418967fdce9363bd529e0fc1
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58581084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61554166"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>在 PowerApps 中安装和配置技术支持的示例
 
@@ -216,17 +216,17 @@ ms.locfileid: "58581084"
 
 ### <a name="delete-connections"></a>删除连接
 
-1. 上**视图**选项卡上，选择**数据源**。
+1. 在“视图”选项卡上，选择“数据源”。
 1. 在**数据**窗格中，选择省略号 （...） 下一步**支持人员**，然后选择**删除**。
 
 ### <a name="helpdesk-list"></a>技术支持列表
 
-1. 上**视图**选项卡上，选择**数据源**。
-1. 在中**数据**窗格中，选择**添加数据源** > **新连接** > **SharePoint**  > **创建**。
+1. 在“视图”选项卡上，选择“数据源”。
+1. 在“数据”窗格中，选择“添加数据源” > “新建连接” > “SharePoint” > “创建”。
 1. 在“最近使用的站点”列表中，选择在其中创建技术支持列表的 SharePoint 站点。
 
     > [!TIP] 
-    > 如果站点未显示在列表中，键入或粘贴到 SharePoint 站点的 URL 的文本框中，并选择**转**。
+    > 如果列表中未出现该站点，在文本框中键入或粘贴 SharePoint 站点的 URL，然后选择“转到”。
 
 1. 在中**搜索**框顶部的列表中，键入或粘贴**支持人员**。
 1. 选中的复选框旁边**支持人员**，然后选择**Connect**。
@@ -244,7 +244,7 @@ ms.locfileid: "58581084"
    > 如果有多个管理员，使用逗号来分隔管理员列表。 示例："admin1@microsoft.com","admin2@microsoft.com"。
    > 为了确保 AdminList 中的地址与 PowerApps 要求的格式匹配，请选择“视图”>“变量”>“全局”>“MyProfile”，并查看“电子邮件”列，检查要求的电子邮件格式。
 
-1. 选择**文件** > **保存** > **发布** > **发布此版本**。
+1. 选择“文件” > “保存” > “发布” > “发布此版本”。
 
 ## <a name="modify-the-flow"></a>修改流
 

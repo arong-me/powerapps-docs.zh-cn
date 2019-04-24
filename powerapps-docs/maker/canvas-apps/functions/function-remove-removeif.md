@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a6887694f2cc64cd44dcdc74e7769ce874872f70
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61520729"
 ---
 # <a name="remove-and-removeif-functions-in-powerapps"></a>PowerApps 中的 Remove 和 RemoveIf 函数
 从[数据源](../working-with-data-sources.md)删除[记录](../working-with-tables.md#records)。

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 40ac3089d3563d220ddac29197b0902f4de88a25
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61562890"
 ---
 # <a name="if-and-switch-functions-in-powerapps"></a>PowerApps 中的 If 和 Switch 函数
 确定集中的任何条件是否为 true (If)，或确定公式的结果是否与集中的任何值一致 (Switch)，再返回结果或执行操作。

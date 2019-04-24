@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 85806799a5f5ea91a4671a27e71cf95daabcd01a
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61553533"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>在 PowerApps 中管理本地数据网关
 安装本地数据网关，以便在 PowerApps 中构建的画布应用和不在云中的数据源（如本地 SQL Server 数据库或本地 SharePoint 网站）之间快速、安全地传输数据。 查看拥有管理权限的所有网关，并管理这些网关的权限和连接。
@@ -54,9 +54,9 @@ ms.locfileid: "42863840"
 
 2. 通过单击或点击“**用户**”，指定用户或组，然后指定权限级别来将用户添加到网关：
 
-   * **可使用**：用户可以在网关上创建用于应用和流的连接，但不能共享网关。 对运行应用但不共享应用的用户使用此权限。
-   * **可使用和共享**：用户可以在网关上创建用于应用和流的连接，并可在共享应用时自动共享网关。 对需要与其他用户或组织共享应用的用户使用此权限。
-   * **管理员**：管理员可以完全控制网关，包括添加用户、设置权限、创建与所有可用数据源的连接和删除网关。
+   * **可以使用**:可用于应用和流，在网关上创建连接，但不能共享网关的用户。 对运行应用但不共享应用的用户使用此权限。
+   * **可使用和共享**:可用于应用和流，在网关上创建连接和共享应用时自动共享网关的用户。 对需要与其他用户或组织共享应用的用户使用此权限。
+   * **管理员**:具有完全控制权限的网关，包括添加用户、 设置权限、 创建连接到所有可用数据源，以及删除网关的管理员。
 
 对于“可使用”和“可使用和共享”权限级别，请选择用户可以通过网关连接的数据源。
 

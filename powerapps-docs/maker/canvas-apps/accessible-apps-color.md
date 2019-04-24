@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 586c82804380846ef400f020c4ce55c07262730f
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57802023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61549964"
 ---
 # <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>PowerApps 画布应用中具有辅助功能的颜色
 画布应用中使用的颜色应方便色盲和弱视用户使用。 默认情况下，所有 PowerApps 主题可让所有用户都轻松使用。 在修改应用中使用的颜色时，请遵循以下准则以确保它们方便用户使用。 有多种联机工具可以帮助确定颜色对比度问题。

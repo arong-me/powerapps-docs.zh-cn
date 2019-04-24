@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: dcb6a9c69e602b739d58afde2242d18b60e6f477
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61540365"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>创建画布应用从解决方案中
 

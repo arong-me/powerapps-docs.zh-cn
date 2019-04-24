@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ec8f14e06852bac7e09527e49bfc363723c9ea1c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61543455"
 ---
 # <a name="table-function-in-powerapps"></a>PowerApps 中的 Table 函数
 创建一个临时[表](../working-with-tables.md)。

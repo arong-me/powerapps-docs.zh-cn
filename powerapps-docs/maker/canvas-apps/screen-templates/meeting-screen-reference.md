@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a7559f84b43d3c0372dea71d49c35461ba9d4e57
-ms.sourcegitcommit: 5e15a1033a68289781f8092fb65c57432501f911
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61539378"
 ---
 # <a name="reference-information-about-the-meeting-screen-template-for-canvas-apps"></a>有关画布应用的会议屏幕模板的参考信息
 

@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: f431373b2c36a84b54a3241ad2d49af019c37419
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42858418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61557938"
 ---
 # <a name="connect-to-an-oracle-database-from-powerapps"></a>从 PowerApps 连接到 Oracle 数据库
 创建连接并在 PowerApps 中生成应用后将列出表，并在 Oracle 数据库中创建、读取、更新和删除表行。 Oracle 数据库连接支持完全委派筛选、排序和其他功能，但触发器或存储过程除外。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 * Oracle 9 及更高版本
 * Oracle 客户端软件 8.1.7 及更高版本
 * 安装本地数据网关
@@ -63,16 +63,16 @@ ms.locfileid: "42858418"
    ![新建网关](./media/connection-oracledb/choose-gateway.png)
 7. 单击或点击“创建”以创建连接。
    
-   ![新](./media/connection-oracledb/create-button.png)
+   ![新建](./media/connection-oracledb/create-button.png)
 8. 单击或点击“默认”数据集。
    
    ![新建](./media/connection-oracledb/choose-dataset.png)
 9. 在表列表中，单击或点击要使用的表。
    
-   ![新](./media/connection-oracledb/choose-table.png)
+   ![新建](./media/connection-oracledb/choose-table.png)
 10. 单击“连接”创建应用。
     
-    ![新](./media/connection-oracledb/connect-button.png)
+    ![新建](./media/connection-oracledb/connect-button.png)
 
 PowerApps 将创建包含三个屏幕的应用，该应用将显示所选表中的数据：
 
@@ -80,7 +80,7 @@ PowerApps 将创建包含三个屏幕的应用，该应用将显示所选表中�
 * **DetailScreen1**，提供单个条目的详细信息。
 * **EditScreen1**，用户可以在此处更新条目或创建条目。
 
-![新](./media/connection-oracledb/afd-app.png)
+![新建](./media/connection-oracledb/afd-app.png)
 
 ## <a name="next-steps"></a>后续步骤
 * 要保存刚才生成的应用，请按 Ctrl-S。

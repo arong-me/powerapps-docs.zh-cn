@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1979ad63ce9cd5fbe3f3a9a3fa5a56df5e80966e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42830862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61526047"
 ---
 # <a name="rating-control-in-powerapps"></a>PowerApps 中的评分控件
 用户可以用于指示介于 1 和你指定的最大数之间的值的控件。

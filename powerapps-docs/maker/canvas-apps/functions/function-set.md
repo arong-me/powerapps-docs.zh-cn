@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 3292d03a55fe6296b8efdf2377efde5f2b4ad36e
-ms.sourcegitcommit: 676cfa415f67e2e8fcfcf30fab83fc118a6f3210
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "57800482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61551534"
 ---
 # <a name="set-function-in-powerapps"></a>PowerApps 中的 Set 函数
 设置全局变量的值。
@@ -30,7 +30,7 @@ ms.locfileid: "57800482"
 
 PowerApps 以公式为基础，这些公式会在用户与应用交互时自动重新计算。 发生更改时，将自动更新任何公式依赖变量。 但是，该变量不会自动更新中使用公式的值**设置**函数更改。 这要求应用创建者，若要手动更新该变量，可以是容易出错且其他人了解更难。 使用变量之前，请查看[了解变量](../working-with-variables.md)。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 全局变量是使用 **Set** 函数隐式创建而成。 没有显式声明是必需的。 如果删除所有**设置**的全局变量的函数，该全局变量将不再存在。 若要清除变量，请将其值设置到的结果[**空白**函数](function-isblank-isempty.md)。
 
 您可以看到变量的值、 定义和使用与在变量视图**文件**在 PowerApps Studio 中的菜单。

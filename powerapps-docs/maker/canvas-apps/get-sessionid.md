@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 67cfe4ac6c53797e6a18a68d3fbcf29b088f3da8
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42848646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61553958"
 ---
 # <a name="get-a-session-id-or-a-canvas-app-id"></a>获取会话 ID 或画布应用 ID
 如果你在使用 PowerApps 中创建的画布应用时遇到问题，通过向 Microsoft 提供该问题的会话 ID 和/或应用 ID，可以帮助他们更有效地解决该问题。

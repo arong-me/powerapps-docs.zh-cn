@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ab824432833614ba5b2002375a79e7899a8d7277
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42857894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61551252"
 ---
 # <a name="day-month-year-hour-minute-second-and-weekday-functions-in-powerapps"></a>PowerApps 中的 Day、Month、Year、Hour、Minute、Second 和 Weekday 函数
 返回日期/时间值的各个部分。

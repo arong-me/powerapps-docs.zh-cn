@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b388b5252e467aee598848a8ce24f2feed94df9e
-ms.sourcegitcommit: ead27300a1b7371136edee1842829ed87ca77a72
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57892290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61553851"
 ---
 # <a name="operators-and-data-types-in-powerapps"></a>PowerApps 中的运算符和数据类型
 其中的某些运算符依赖于作者的语言。  有关详细信息，请参阅[全局应用](../global-apps.md)。

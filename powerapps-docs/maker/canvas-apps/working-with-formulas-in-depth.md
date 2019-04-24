@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d48559ee3a54cbb723621a0e36f09cb4a1d0fe3b
-ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57803426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61556749"
 ---
 # <a name="understand-behavior-formulas-for-canvas-apps-in-powerapps"></a>了解 PowerApps 中画布应用的行为公式
 
@@ -30,7 +30,7 @@ ms.locfileid: "57803426"
 
 通过选择 **[按钮](controls/control-button.md)** 控件，用户会发起一系列操作或行为，从而更改应用的状态：
 
-* 更改显示的屏幕： **[回到](functions/function-navigate.md)** 并 **[Navigate](functions/function-navigate.md)** 函数。
+* 更改显示的屏幕：**[回到](functions/function-navigate.md)** 并 **[Navigate](functions/function-navigate.md)** 函数。
 * 控件[信号](functions/signals.md):**[启用](functions/function-enable-disable.md)** 并 **[禁用](functions/function-enable-disable.md)** 函数。
 * 刷新、 更新或删除中的项[数据源](working-with-data-sources.md):**[刷新](functions/function-refresh.md)**， **[更新](functions/function-update-updateif.md)**，  **[UpdateIf](functions/function-update-updateif.md)**，  **[的修补程序](functions/function-patch.md)**， **[删除](functions/function-remove-removeif.md)**， **[RemoveIf](functions/function-remove-removeif.md)** 函数。
 * 更新[上下文变量](working-with-variables.md#use-a-context-variable):**[UpdateContext](functions/function-updatecontext.md)** 函数。

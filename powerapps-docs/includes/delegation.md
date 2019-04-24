@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 7b0f9ce710887c870d22a6362f9cd28245d72519
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62087620"
+---
 ## <a name="delegation"></a>委派
 条件允许时，PowerApps 将把筛选和排序操作委派给数据源，并按需对结果进行分页。 例如，当启动显示“[库](../maker/canvas-apps/controls/control-gallery.md)”控件（已填充数据）的应用时，最初仅会将第一组记录转入设备。 用户滚动鼠标时，将从数据源中引入其他数据。 进而将加快应用启动和访问超大数据集的速度。
 

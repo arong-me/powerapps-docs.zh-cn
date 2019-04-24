@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 18bd89549aa330b5da333dccfd723887db38a36e
-ms.sourcegitcommit: 39c9b4cbc26617e302d46085d81c6d397e01fbf7
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59671552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61553899"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>PowerApps 中的 Acceleration、App、Compass、Connection 和 Location 信号
 返回关于应用环境的信息，例如用户的全球所在位置，以及所显示的是哪个屏幕。  

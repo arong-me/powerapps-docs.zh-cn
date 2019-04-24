@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 869c0fcff6e519281e527c832305d74f2e7fd78f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61551229"
 ---
 # <a name="date-and-time-functions-in-powerapps"></a>PowerApps 中的 Date 和 Time 函数
 将日期和时间组件转换为日期/时间值。

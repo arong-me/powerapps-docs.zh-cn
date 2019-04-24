@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 03a6f9939f5de5e4eb3f4abd941a725ce24b46fb
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57798826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61550117"
 ---
 # <a name="edit-a-canvas-app-in-powerapps"></a>在 PowerApps 中编辑画布应用
 编辑自己生成、拥有或拥有“可编辑”权限的任何画布应用。 可在 PowerApps Studio 中编辑应用。 如果尝试编辑的应用已在别处打开以供编辑，将会看到一条消息，指明是你自己还是其他用户打开的。

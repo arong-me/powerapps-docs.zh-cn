@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 9c290d28db7ae35d33f4ceb2cd56c3a3ad79b01c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42832827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61559371"
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>PowerApps 中的柱形图和折线图控件
 用包含 x 轴和 y 轴的图显示数据的控件。

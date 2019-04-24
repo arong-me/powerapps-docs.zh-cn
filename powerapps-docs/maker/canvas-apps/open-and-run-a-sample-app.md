@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1adf38b59b01bb08bc89c6101a96247b8bce8092
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61540250"
 ---
 # <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>快速入门：从 PowerApps 中的示例创建画布应用
 在本快速入门教程中，将根据示例创建一个画布应用，以便探索设计的可能性，并发现在开发自己的应用时可以应用的概念。

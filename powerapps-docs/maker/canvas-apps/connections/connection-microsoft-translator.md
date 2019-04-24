@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 405dcf432526206aa3a5f341a38e2ae5547cea1f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42858276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61545540"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>从 PowerApps 连接到 Microsoft Translator
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -90,7 +90,7 @@ ms.locfileid: "42858276"
 ## <a name="view-the-available-functions"></a>查看可用函数
 此连接包括以下函数：
 
-| 函数名称 | 说明 |
+| 函数名称 | 描述 |
 | --- | --- |
 | [Languages](connection-microsoft-translator.md#languages) |检索 Microsoft Translator 支持的所有语言 |
 | [Translate](connection-microsoft-translator.md#translate) |使用 Microsoft Translator 将文本翻译为指定的语言 |
@@ -106,7 +106,7 @@ ms.locfileid: "42858276"
 
 #### <a name="output-properties"></a>输出属性
 
-| 属性名称 | 数据类型 | 需要 | 说明 |
+| 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 代码 |字符串 |否 | |
 | 名称 |字符串 |否 | |
@@ -116,7 +116,7 @@ ms.locfileid: "42858276"
 
 #### <a name="input-properties"></a>输入属性
 
-| 名称 | 数据类型 | 需要 | 说明 |
+| 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | query |字符串 |是 |要翻译的文本 |
 | languageTo |字符串 |是 |目标语言代码（例如：“fr”） |
@@ -131,13 +131,13 @@ ms.locfileid: "42858276"
 
 #### <a name="input-properties"></a>输入属性
 
-| 名称 | 数据类型 | 需要 | 说明 |
+| 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | query |字符串 |是 |将要标识其语言的文本 |
 
 #### <a name="output-properties"></a>输出属性
 
-| 属性名称 | 数据类型 | 需要 | 说明 |
+| 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 代码 |字符串 |否 | |
 | 名称 |字符串 |否 | |
@@ -150,17 +150,17 @@ ms.locfileid: "42858276"
 
 #### <a name="output-properties"></a>输出属性
 
-| 属性名称 | 数据类型 | 需要 | 说明 |
+| 属性名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | 代码 |字符串 |否 | |
 | 名称 |字符串 |否 | |
 
 ### <a name="texttospeech"></a>TextToSpeech
-文本到语言：将给定文本转换为声波格式音频流的语音
+文本到语音转换：将给定文本转换为声波格式音频流的语音
 
 #### <a name="input-properties"></a>输入属性
 
-| 名称 | 数据类型 | 需要 | 说明 |
+| 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
 | query |字符串 |是 |要转换的文本 |
 | language |字符串 |是 |用于生成语音的语言代码（示例：“en-us”） |

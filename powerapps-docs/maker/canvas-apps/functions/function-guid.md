@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 9415ab67b93ef64f5caa025af5ac685ca2363305
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61562987"
 ---
 # <a name="guid-function-in-powerapps"></a>PowerApps 中的 GUID 函数
 将 GUID（[全局唯一标识符](https://en.wikipedia.org/wiki/Universally_unique_identifier)）字符串转换为 GUID 值或创建新的 GUID 值。

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d5765c1e425a3196b5e560bb621f391d36f6580c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42841584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544605"
 ---
 # <a name="image-control-in-powerapps"></a>PowerApps 中的图像控件
 显示来自本地文件或数据源等来源的图像的控件。

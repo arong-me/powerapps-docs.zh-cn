@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c4e02adfdd5c1c4e49bb1a605ccfff463369f750
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: cc7eefbe2989ed1aa0e893c2d826215aec48003b
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61556948"
 ---
 # <a name="working-with-environments-and-microsoft-powerapps"></a>使用环境和 Microsoft PowerApps
 通过 PowerApps，你可以在不同的环境中工作，并在它们之间轻松切换。 有关环境的概述，请参阅 [环境概述](../../administrator/environments-overview.md)，该文章详细介绍了使用环境的原因以及如何创建和管理环境。 本文的范围将涵盖有关环境的以下主题：

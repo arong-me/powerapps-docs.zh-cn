@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: cc4338e37b7ecde2e2e2e9ad5c5ac6e96d116b58
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42849836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61559465"
 ---
 # <a name="card-control-in-powerapps"></a>PowerApps 中的卡片控件
 提供 **[显示窗体](control-form-detail.md)** 或 **[编辑窗体](control-form-detail.md)** 控件的单个字段的显示和编辑体验。

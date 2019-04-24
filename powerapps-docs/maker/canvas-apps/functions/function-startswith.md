@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e202ce052bf12f5f67715deb2e86b385c2e515a7
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61546921"
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>PowerApps 中的 EndsWith 和 StartsWith 函数
 测试文本字符串是否以另一个文本字符串开头或结尾。
@@ -68,7 +68,7 @@ EndsWith 函数测试某个文本字符串是否以其他文本字符串结尾�
 
 若要将此数据源创建为集合，请创建一个**[按钮](../controls/control-button.md)** 控件，并将其 **OnSelect** 属性设置为以下公式：
 
-**ClearCollect( Customers, Table( { Name: "Fred Garcia", Company: "Northwind Traders" }, { Name: "Cole Miller", Company: "Contoso" }, { Name: "Glenda Johnson", Company: "Contoso" }, { Name: "Mike Collins", Company: "Adventure Works" }, { Name: "Colleen Jones", Company: "Adventure Works" } ) )**
+**ClearCollect (客户、 表 ({名称："Fred Garcia"，公司："Northwind Traders"}，{名称："Cole Miller"，公司："Contoso"}，{名称："Glenda johnson 的演示"，公司："Contoso"}，{名称："Mike Collins"，公司："Adventure Works"}，{名称："Colleen Jones"，公司："Adventure Works"}))**
 
 如此示例中所示，可在屏幕底部的[**库控件**](../controls/control-gallery.md)中显示记录列表。 在靠近屏幕顶部的位置，可添加名为 **SearchInput** 的[**文本输入**](../controls/control-text-input.md)控件，以便用户能够指定对哪些记录感兴趣。
 

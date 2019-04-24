@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ee8573cb9ae4df5ac42deefad4ac67aede3a3502
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61547544"
 ---
 # <a name="use-the-entity-form-control"></a>使用实体窗体控件
 可以使用“实体窗体”控件以更快的速度创建应用，以添加 Common Data Service 实体的丰富窗体。
 
-有关“实体窗体”控件的简介，请参阅此博客文章：[New entity form control (experimental feature) for Common Data Service](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/)（Common Data Service 的新实体窗体控件（实验性功能））。
+以大致**实体窗体**控件，请参阅此博客文章：[Common Data Service 的新实体窗体控件 （实验性功能）](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/)。
 
 > [!IMPORTANT]
 > 请注意“实体表单”控件是实验性控件（如博客文章所述），并在生产应用中谨慎使用“实体表单”控件（至少目前如此）。
@@ -45,15 +45,15 @@ ms.locfileid: "42836268"
 **Item** – 指定数据源中应该由“实体窗体”控件显示的记录。 仅当 **Pattern** 设置为 **FormPattern.Details** 时，才可使用此属性。
 
 **Selected** – 获取当前选择的记录。  
-示例：如果“实体窗体”控件显示销售订单记录的列表，**Selected** 属性将提供当前选择的记录。 还可以访问记录中的字段。 （例如，将所选记录的 **Account** 字段值指定为 **Selected.Account**。）
+示例：如果**实体窗体**控件显示销售订单记录的列表**选定**属性将为您提供当前选择的记录。 还可以访问记录中的字段。 （例如，将所选记录的 **Account** 字段值指定为 **Selected.Account**。）
 
 **SelectableFields** – 指定哪些字段应显示为链接。 使用以下语法设置此属性的值：  
 **{Field1Name : true, Field2Name : true}**  
-示例：如果希望 **SalesOrderId** 和 **Account** 字段在窗体中显示为链接，请将该窗体的 **SelectableFields** 属性设置为以下值：  
+示例：如果你想**SalesOrderId**并**帐户**字段显示为链接在表单中，设置**SelectableFields**该窗体为此值的属性：  
 **{SalesOrderId : true, Account : true}**
 
 **SelectedField** – 确定已单击或点击哪些字段。 此属性仅适用于指定为 **SelectableFields** 的字段。  
-示例：如果将 **SelectableFields** 属性设置为 **{SalesOrderId : true, Account : true}**，而用户单击或点击了 **Account** 字段，则 **SelectedField.Account** 将设置为 true。
+示例：如果您设置**SelectableFields**属性设置为 **{SalesOrderId: true，Account: true}** 和用户单击或点击**帐户**字段中， **SelectedField.Account**设置为 true。
 
 **OnFieldSelect** – 用户单击或点击字段时应用如何响应。 此属性仅适用于指定为 **SelectableFields** 的字段。
 
@@ -190,7 +190,7 @@ OnSuccess – 在数据操作成功的情况下，应用如何响应。
 
 当我们使用窗体自定义窗格使 **SalesOrderId** 字段导航到 **SalesOrderDetailsScreen** 时，已自动进行这种设置。 因此，**SalesOrderId** 字段中的值显示为链接。
 
-**SalesOrderListForm** 的 **OnFieldSelect** 属性设置为 [**If**](functions/function-if.md) 函数，该函数确定用户是否单击或点击了“销售订单 ID”字段：**SalesOrderListForm.SelectedField.SalesOrderId = true**。  
+**OnFieldSelect**的属性**SalesOrderListForm**设置为[**如果**](functions/function-if.md)函数，用于确定用户是否单击或点击**销售订单 ID**字段：**SalesOrderListForm.SelectedField.SalesOrderId = true**。  
 
 如果该函数求值为 true，则 **SalesOrderDetailsScreen** 将会打开并包含前面使用的名为 **NavigationContext** 的上下文变量。  
 

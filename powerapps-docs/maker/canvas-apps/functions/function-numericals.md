@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 95406bff477a4d84a6125225ffc1e158ffb8c19a
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42827238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544000"
 ---
 # <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>PowerApps 中的 Abs、Exp、Ln、Power 和 Sqrt 函数
 计算绝对值、自然对数、平方根和 *e* 或任意数字的指定次方值结果。

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 3174d959a2360b36e82cd7070c4401251ca9fe18
-ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58491575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61526254"
 ---
 # <a name="rich-text-editor-control-in-powerapps"></a>在 PowerApps 中的多格式文本编辑器控件
 允许最终用户设置 WYSIWYG 编辑区域内的文本的格式。  输出格式为 HTML。

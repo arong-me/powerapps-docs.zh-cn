@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ddd11ddd40792ef1042536041554737ddb16547b
-ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59993909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61562216"
 ---
 # <a name="create-responsive-layouts-in-canvas-apps"></a>画布应用中创建响应式布局
 

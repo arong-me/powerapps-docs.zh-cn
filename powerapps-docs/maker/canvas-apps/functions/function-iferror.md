@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1bf9f3cf075441dd3264b5a2f6533671d2e08654
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57802299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61562798"
 ---
 # <a name="iferror-function-in-powerapps"></a>PowerApps 中的 IfError 函数
 检测错误并提供替代值或执行操作。

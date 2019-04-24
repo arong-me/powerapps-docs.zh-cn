@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 798a355e1c8728b41f3e92f183d4a4e2831b7cc2
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61530247"
 ---
 # <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>在 PowerApps 中添加和配置画布应用控件
 

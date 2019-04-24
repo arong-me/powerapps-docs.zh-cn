@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1cc2b7c1752abe4f12e76c30f59978fc753f4ac5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544651"
 ---
 # <a name="add-picture-control-in-powerapps"></a>PowerApps 中的添加图片控件
 拍摄照片或加载本地设备中的图像。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 借助此控件，用户可以拍摄照片或者上传自己设备中的图像文件，并使用此内容更新数据源。 在移动设备上，用户将看到设备的选择对话框，以供在拍摄照片或选择已有照片之间进行选择。
 
 此控件是包含两个控件的分组控件：“图像”和“添加媒体按钮”。 如果不上传任何图像，“图像”控件将显示已上传的图像或占位符。 “添加媒体按钮”提示要上传的图像。
@@ -63,7 +63,7 @@ ChangePictureText – 上传图像时按钮上显示的文本。
 
 [Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md)** – 控件中文本的粗细：**粗体**、**半粗体**、**正常**或**细体**。
+**[FontWeight](properties-text.md)**  – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 

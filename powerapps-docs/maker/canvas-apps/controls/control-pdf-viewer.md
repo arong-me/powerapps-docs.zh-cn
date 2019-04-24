@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8d3add2ccb460e11211baa993c61902856c8f083
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 66813cf8c31fad82eeb25fd515acad4a5ea1f756
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61548791"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PowerApps 中的 PDF 查看器控件（实验性）
 显示 PDF 文件内容的实验性控件。
@@ -27,10 +27,17 @@ ms.locfileid: "42833712"
 通过添加此类型的控件并将其“Document”属性设置为要显示的文件的 URL（用双引号括住），来显示 PDF 文件中的文本、图形和其他内容。
 
 ## <a name="limitations"></a>限制
-请注意，由于 PowerApps 的安全体系结构，PDF 查看器仅支持 HTTPS 链接，而不支持 HTTP。  
-如果 PDF 文档所在的服务器具有限制 CORS 的设置，则无法在应用程序中进行查看。  托管 PDF 文档的服务器必须允许来自 powerapps.com 的跨源请求 (CORS)，才能解决此问题。
+1. PowerApps 的安全体系结构需要 PDF 查看器仅支持 HTTPS 链接，不是 HTTP。  
 
-如果文档无法在 PowerApps 中打开，则在外部浏览器中打开文档的选项会显示给最终用户。  所有外部文档的控件菜单中也有此选项。
+2. **文档**属性必须直接链接到 PDF 文件。 服务器将重定向或文档的 HTML 视图不受支持。
+
+3. 承载文档的服务器必须不要求身份验证。
+
+4. 您不能在应用中查看 PDF 文档，如果文档驻留在具有限制性的跨域资源共享 (CORS) 设置的服务器上。 若要解决此问题，托管 PDF 文档的服务器必须允许来自 powerapps.com 的跨域请求。
+
+应用用户可以解决这些限制通过打开 PDF 文档在外部浏览器中，当系统提示时，如果该控件不能打开的文档。 所有外部文档的控件菜单中也有此选项。
+
+应用创建者可以通过为应用程序中的媒体资源包括 PDF 文档来解决这些限制。 这样一来，PDF 查看器控件可始终显示文档。
 
 ## <a name="key-properties"></a>关键属性
 Document – 用双引号括住的 PDF 文件的 URL。

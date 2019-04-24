@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a1a9a02917ed5202e24ce0228b8b581e2f45b8b9
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61520565"
 ---
 # <a name="revert-function-in-powerapps"></a>PowerApps 中的 Revert 函数
 刷新[数据源](../working-with-data-sources.md)的[记录](../working-with-tables.md#records)并清除错误。
@@ -46,13 +46,13 @@ ms.locfileid: "42831552"
 另一个设备上的用户将 **Strawberry** 记录的 **Quantity** 属性改成了 **400**。  几乎在同一时间，你将同一条记录的同一个属性改成了 **500**，但不知道他人也进行了更改。
 
 随后你使用 **[Patch](function-patch.md)** 函数更新记录：<br>
-**Patch( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ), { Quantity: 500 } )**
+**Patch( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ), { Quantity:500 } )**
 
 当你检查 **[Errors](function-errors.md)** 表时，发现了如下错误：
 
 | 记录 | [列](../working-with-tables.md#columns) | 消息 | 错误 |
 | --- | --- | --- | --- |
-| **{ ID: 1, Flavor: "Strawberry", Quantity: 300 }** |*blank* |**“另一个用户修改了你尝试修改的记录。请还原记录，然后重试。”** |**ErrorKind.Conflict** |
+| **{ID:1，风格："草莓"，Quantity:300 }** |空白 |**“另一个用户修改了你尝试修改的记录。请还原记录，然后重试。”** |**ErrorKind.Conflict** |
 
 根据 **Error** 列中的内容，你可以看到一个“重新加载”按钮，其 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：<br>
 **Revert( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ) )**

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5dcc07f3ba9b9b4baca39cf2090a2c57cb7e67b7
-ms.sourcegitcommit: 967812754d8e5b1ff72baa35ffbe548f3b9b0085
-ms.translationtype: HT
+ms.openlocfilehash: 831e63920db07414db7b40fe69be82989add89eb
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61554418"
 ---
 # <a name="understand-on-premises-data-gateways-for-canvas-apps"></a>了解画布应用的本地数据网关
 ## <a name="installation-and-configuration"></a>安装和配置
@@ -106,7 +106,7 @@ ms.locfileid: "45726920"
 
 **配置端口**
 
-网关与 Azure 服务总线建立出站连接。 它在出站端口上通信：TCP 443（默认值）、5671、5672、9350 到 9354。 网关不需要入站端口。
+网关与 Azure 服务总线建立出站连接。 它在出站端口上通信：TCP 443 （默认）、 5671、 5672、 9350 到 9354。 网关不需要入站端口。
 
 了解有关[混合解决方案](https://azure.microsoft.com/documentation/articles/service-bus-fundamentals-hybrid-solutions/)的详细信息。
 
@@ -125,7 +125,7 @@ ms.locfileid: "45726920"
 | *.servicebus.windows.net |443、9350-9354 |基于 TCP 的服务总线中继上的侦听器（需要使用 443 获取访问控制令牌） |
 | *.frontend.clouddatahub.net |443 |HTTPS |
 | *.core.windows.net |443 |HTTPS |
-| login.microsoftonline.com |443 |HTTPS |
+| *login.microsoftonline.com |443 |HTTPS |
 | *.msftncsi.com |443 |在 Power BI 服务无法访问网关时用于测试 Internet 连接。 |
 
 **登录帐户**
@@ -146,8 +146,8 @@ ms.locfileid: "45726920"
 
 ## <a name="frequently-asked-questions"></a>常见问题
 #### <a name="general"></a>常规
-**问题：** 网关支持哪些数据源？  
-**回答：** 在撰写本文时支持：
+**问：** 网关支持哪些数据源？  
+**答案：** 截至本文撰写之时：
 
 * SQL Server
 * SharePoint
@@ -156,57 +156,57 @@ ms.locfileid: "45726920"
 * Filesystem
 * DB2
 
-**问题：** 云中的数据源（如 SQL Azure）是否需要网关？  
-**回答：** 否。 网关只连接到本地数据源。
+**问：** 是否在云中，例如 SQL Azure 中的数据源需要一个网关？  
+**答案：** 不。 网关只连接到本地数据源。
 
-**问题：** Windows 服务的实际名称是什么？  
-**回答：** 在“服务”中，网关名为“Power BI Enterprise Gateway Service”。
+**问：** 什么是 Windows 服务的实际名称？  
+**答案：** 在服务中，网关被称为**Power BI Enterprise Gateway Service**。
 
-**问题：** 是否存在从云到网关的入站连接？  
-**回答：** 否。 网关使用与 Azure 服务总线之间的出站连接。
+**问：** 是否有任何入站的连接到网关从云中？  
+**答案：** 不。 网关使用与 Azure 服务总线之间的出站连接。
 
-**问题：** 如果阻止出站连接，会发生什么情况？ 需要打开什么？  
-**回答：** 请参阅上面的网关使用端口和主机列表。
+**问：** 如果我阻止出站连接？ 需要打开什么？  
+**答案：** 请参阅端口和主机网关使用上面的列表。
 
-**问题：** 网关是否必须安装在与数据源相同的计算机上？  
-**回答：** 否。 网关使用提供的连接信息连接到数据源。 从这种意义上讲，可将网关视为客户端应用程序。 网关只需能够连接到提供的服务器名称即可。
+**问：** 网关是否需要安装在与数据源相同的计算机上？  
+**答案：** 不。 网关使用提供的连接信息连接到数据源。 从这种意义上讲，可将网关视为客户端应用程序。 网关只需能够连接到提供的服务器名称即可。
 
-**问题：** 从网关运行对数据源的查询时的延迟是多少？ 最佳体系结构是什么？  
-**回答：** 若要减少网络延迟，请在网关安装在尽可能接近数据源的位置处。 如果可以在实际数据源上安装网关，这种距离可最大程度降低造成的延迟。 还需考虑数据中心。 例如，如果服务使用美国西部的数据中心，而你在 Azure VM 中托管了 SQL Server，则 Azure VM 也应该位于美国西部。 这种距离可最大程度降低延迟并避免 Azure VM 产生传出费用。
+**问：** 从网关运行对数据源的查询的延迟是什么？ 最佳体系结构是什么？  
+**答案：** 若要减少网络延迟，安装尽可能靠近数据源的位置作为网关。 如果可以在实际数据源上安装网关，这种距离可最大程度降低造成的延迟。 还需考虑数据中心。 例如，如果服务使用美国西部的数据中心，而你在 Azure VM 中托管了 SQL Server，则 Azure VM 也应该位于美国西部。 这种距离可最大程度降低延迟并避免 Azure VM 产生传出费用。
 
-**问题：** 在网络带宽方面是否有要求？  
-**回答：** 建议为网络连接配置较高的吞吐量。 每个环境是不同的，所发送的数据量会影响效果。 使用 ExpressRoute 可以帮助保证本地与 Azure 数据中心之间的吞吐量级别。
+**问：** 是否有任何要求的网络带宽？  
+**答案：** 建议以较高的吞吐量为网络连接。 每个环境是不同的，所发送的数据量会影响效果。 使用 ExpressRoute 可以帮助保证本地与 Azure 数据中心之间的吞吐量级别。
 
 可以借助第三方工具 [Azure Speed Test 应用](http://azurespeedtest.azurewebsites.net/)来测量吞吐量。
 
-**问题：** 是否可以使用 Azure Active Directory 帐户运行网关 Windows 服务？  
-**回答：** 否。 该 Windows 服务必须具有有效的 Windows 帐户。 默认情况下，服务使用服务 SID *NT SERVICE\PBIEgwService* 来运行。
+**问：** 可以使用 Azure Active Directory 帐户运行网关 Windows 服务？  
+**答案：** 不。 该 Windows 服务必须具有有效的 Windows 帐户。 默认情况下，服务使用服务 SID *NT SERVICE\PBIEgwService* 来运行。
 
-**问题：** 如何将结果发回到云中？  
-**回答：** 可通过 Azure 服务总线发送结果。 有关详细信息，请参阅[工作原理](gateway-reference.md#how-the-gateway-works)。
+**问：** 如何将结果发送回云？  
+**答案：** 这是通过 Azure 服务总线的方式。 有关详细信息，请参阅[工作原理](gateway-reference.md#how-the-gateway-works)。
 
-**问题：** 我的凭据存储在何处？  
-**回答：** 为数据源输入的凭据将会加密，并存储在网关云服务中。 凭据在本地网关中解密。
+**问：** 我的凭据存储在何处？  
+**答案：** 加密网关云服务中存储为数据源输入的凭据。 凭据在本地网关中解密。
 
-**问题：** 是否可将网关放置在外围网络（也称为 DMZ、外围安全区域和外围子网）中？  
-**回答：** 网关需要与数据源建立连接。 如果数据源不在外围网络中，网关可能无法与它建立连接。 例如，运行 SQL Server 的计算机可能不在外围网络中，因此你无法从外围网络连接到该计算机。 如果将网关放置在外围网络中，网关将无法访问运行 SQL Server 的计算机。
+**问：** 可以将网关放在外围网络 （也称为 DMZ、 外围安全区域和外围子网）？  
+**答案：** 网关需要连接到数据源。 如果数据源不在外围网络中，网关可能无法与它建立连接。 例如，运行 SQL Server 的计算机可能不在外围网络中，因此你无法从外围网络连接到该计算机。 如果将网关放置在外围网络中，网关将无法访问运行 SQL Server 的计算机。
 
 #### <a name="high-availabilitydisaster-recovery"></a>高可用性/灾难恢复
-**问题：** 是否有使用网关实现高可用性方案的计划？  
-答案：通过加入到同一群集的 2 个或多个网关实现高可用性。  高可用性网关群集要求对本地数据网关应用 2017 年 11 月更新或更高版本。  请参阅[博客文章公告](https://powerapps.microsoft.com/en-us/blog/gateway-high-availability-for-powerapps-and-flow)了解更多详细信息。
+**问：** 是否有使用网关实现高可用性方案的计划？  
+**答案：** 通过加入到同一个群集的 2 个或多个网关启用高可用性。  高可用性网关群集要求对本地数据网关应用 2017 年 11 月更新或更高版本。  请参阅[博客文章公告](https://powerapps.microsoft.com/en-us/blog/gateway-high-availability-for-powerapps-and-flow)了解更多详细信息。
 
-**问题：** 有哪些选项可用于灾难恢复？  
-**回答：** 可以使用恢复密钥还原或移动网关。 安装网关时，请指定恢复密钥。
+**问：** 可用于灾难恢复哪些选项？  
+**答案：** 可以使用恢复密钥还原或移动网关。 安装网关时，请指定恢复密钥。
 
-**问题：** 恢复密钥的优点是什么？  
-**回答：** 使用恢复密钥可在发生灾难后迁移或恢复网关设置。
+**问：** 恢复密钥的好处是什么？  
+**答案：** 它提供了一种方法来迁移或在发生灾难后恢复网关设置。
 
 #### <a name="troubleshooting"></a>故障排除
-**问题：** 网关日志在何处？  
-**回答：** 请参阅本主题稍后的[工具](gateway-reference.md#tools)。
+**问：** 网关日志在哪里？  
+**答案：** 请参阅[工具](gateway-reference.md#tools)本主题中更高版本。
 
-**问题：** 如何查看正在发送到本地数据源的查询？  
-**回答：** 可以启用查询跟踪，包括要发送的查询。 请记得在完成故障排除后将查询跟踪改回原始值。 一直保持启用查询跟踪会创建大量的日志。
+**问：** 如何查看查询正在发送到的本地数据源？  
+**答案：** 您可以启用查询跟踪，将包含要发送的查询。 请记得在完成故障排除后将查询跟踪改回原始值。 一直保持启用查询跟踪会创建大量的日志。
 
 你也可以查看数据源用来跟踪查询的工具。 例如，可以使用 SQL Server 的扩展事件或 SQL 事件探查器以及 Analysis Services。
 
@@ -231,7 +231,7 @@ ms.locfileid: "45726920"
 #### <a name="update-to-the-latest-version"></a>更新到最新版本
 如果网关版本过时，可能会出现很多问题。  良好的常规做法是确保使用最新版本。  如果有一个月或更长时间未更新网关，可能要考虑安装最新版本的网关，并确定是否可以重现问题。
 
-#### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>错误: 无法将用户添加到组。  (-2147463168   PBIEgwService   Performance Log Users   )
+#### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>错误：无法将用户添加到组。  (-2147463168   PBIEgwService   Performance Log Users   )
 如果尝试在不受支持的域控制器上安装网关，可能会收到此错误。 需将网关部署在不是域控制器的计算机上。
 
 ## <a name="tools"></a>工具

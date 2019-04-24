@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 507bac0b57cdc1e348bd384d5544d7b664a3e0f5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42851255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61557315"
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>从 PowerApps 连接到 Office 365 用户连接
 ![Office 365 用户](./media/connection-office365-users/office365icon.png)
@@ -142,7 +142,7 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 | [SearchUser](connection-office365-users.md#searchuser) |检索用户配置文件的搜索结果 |
 
 ### <a name="myprofile"></a>MyProfile
-获取我的配置文件：检索当前用户的配置文件。
+获取我的个人资料：检索当前用户的配置文件。
 
 #### <a name="input-properties"></a>输入属性
 无。
@@ -189,7 +189,7 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 | AccountEnabled |布尔值 |帐户启用标志。 |
 
 ### <a name="manager"></a>Manager
-获取经理：检索指定用户经理的用户配置文件
+获取管理器：检索指定用户经理的用户配置文件
 
 #### <a name="input-properties"></a>输入属性
 
@@ -214,7 +214,7 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 | AccountEnabled |布尔值 |帐户启用标志。 |
 
 ### <a name="directreports"></a>DirectReports
-获取直接上级：获取直接上级
+获取直接下属：获取直接下属
 
 #### <a name="input-properties"></a>输入属性
 

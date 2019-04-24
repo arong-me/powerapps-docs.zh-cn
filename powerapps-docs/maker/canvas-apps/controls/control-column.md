@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e1c8ba704a01c989da990fd1b2b17f7b5def5541
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61564665"
 ---
 # <a name="column-control-in-powerapps"></a>PowerApps 中的“列”控件
 用于在“[数据表](control-data-table.md)”控件中显示单个字段。
