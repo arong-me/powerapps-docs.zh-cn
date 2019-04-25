@@ -1,0 +1,11 @@
+- name: 扩展 Outlook 客户端
+  href: extend-dynamics-365-outlook.md
+  items:
+    - name: 脱机和 Outlook 筛选器和模板
+      href: offline-outlook-filters-templates.md
+    - name: 示例：创建和检索 Outlook 筛选器
+      href: sample-create-retrieve-outlook-filters.md
+    - name: 示例：使用 Dynamics 365 for Outlook 方法
+      href: sample-outlook-methods.md
+    - name: 脱机使用 web 服务
+      href: offline-use-services.md

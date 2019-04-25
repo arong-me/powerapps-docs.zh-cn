@@ -1,0 +1,14 @@
+- name: 使用代码应用业务逻辑
+  href: ../apply-business-logic-with-code.md
+- name: 工作流扩展
+  href: workflow-extensions.md
+- name: 调试工作流活动
+  href: debug-workflow-activites.md
+- name: 教程：创建工作流扩展
+  href: tutorial-create-workflow-extension.md
+- name: 示例：创建自定义工作流活动
+  href: sample-create-custom-workflow-activity.md
+- name: 示例：使用自定义工作流活动更新下一个生日
+  href: sample-update-next-birthday-using-custom-workflow-activity.md
+- name: 示例：计算自定义工作流活动的信用分数
+  href: sample-calculate-credit-score-custom-workflow-activity.md
