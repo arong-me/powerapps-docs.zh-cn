@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c57375906ba900a3112b9d7999d3941f14e9af58
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
-ms.translationtype: MT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63321261"
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>创建用于分析项目的 Power BI 报表
 > [!NOTE]
@@ -198,17 +198,12 @@ ms.locfileid: "57799930"
     ![新建列](./media/sharepoint-scenario-build-report/05-02-00-modeling-column.png)
 2. 在编辑栏中键入下面的公式：
    
-    ```
+    ```dax
     ApprovedStartDiff = CALCULATE(SUM(Dates[IsWeekday]),
-   
        DATESBETWEEN(Dates[Date],
-   
           'Project Details'[ApprovedDate],
-   
           'Project Details'[ProjectedStartDate]
-   
       )
-   
     )
     ```
    
@@ -223,17 +218,12 @@ ms.locfileid: "57799930"
     ![新建列](./media/sharepoint-scenario-build-report/05-02-00-modeling-column.png)
 2. 在编辑栏中键入下面的公式：
    
-    ```
+    ```dax
     RequestDateAge = CALCULATE(SUM(Dates[IsWeekday]),
-   
        DATESBETWEEN(Dates[Date],
-   
           'Project Requests'[RequestDate],
-   
           NOW()
-   
        )
-   
     )
     ```
    
@@ -248,13 +238,10 @@ ms.locfileid: "57799930"
     ![新建度量值](./media/sharepoint-scenario-build-report/05-02-00-modeling-measure.png)
 2. 在编辑栏中键入下面的公式：
    
-    ```
+    ```dax
     VarProjectedActual = DIVIDE(
-   
         SUM('Project Details'[ActualDays]) - SUM('Project Details'[ProjectedDays]),
-   
         SUM('Project Details'[ProjectedDays])
-   
     )
     ```
    
@@ -269,13 +256,10 @@ ms.locfileid: "57799930"
     ![新建度量值](./media/sharepoint-scenario-build-report/05-02-00-modeling-measure.png)
 2. 在编辑栏中键入下面的公式：
    
-    ```
+    ```dax
     MaxDaysPending = MAXX(
-   
         FILTER('Project Requests', 'Project Requests'[Approved]="Pending"),
-   
         'Project Requests'[RequestDateAge]
-   
     )
     ```
    

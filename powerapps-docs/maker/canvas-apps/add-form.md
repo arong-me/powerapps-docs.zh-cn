@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e94aa48ed3fba1b4591e196e3b81d3fb0f76666f
-ms.sourcegitcommit: 5c098a62f66a2f33418967fdce9363bd529e0fc1
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58581015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63321452"
 ---
 # <a name="show-edit-or-add-a-record-in-a-canvas-app"></a>显示、 编辑或在画布应用中添加一条记录
 

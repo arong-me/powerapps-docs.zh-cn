@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/08/2015
+ms.date: 04/23/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f0bd11881dc0999cada58f65d7ed8d7f9df68c5a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.openlocfilehash: 0033d0a2d7473e6aaeac1e8533f62873e0d2f49a
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/23/2019
-ms.locfileid: "61562775"
+ms.locfileid: "63322004"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Microsoft PowerApps 中的 Back 和 Navigate 函数
 更改显示的屏幕。
@@ -39,12 +39,14 @@ ms.locfileid: "61562775"
 
  在第二个参数中，指定旧屏幕切换为新屏幕的方式：
 
-| Transition 参数 | 说明 |
-| --- | --- |
-| **ScreenTransition.Cover** |新屏幕将滑入视图，盖住当前屏幕。 |
-| **ScreenTransition.Fade** |旧屏幕淡出以显示新屏幕。 |
-| **ScreenTransition.None** |新屏幕快速替换旧屏幕。 |
-| **ScreenTransition.UnCover** |旧屏幕滑出视图，以显示新屏幕。 |
+| Transition 参数 | 描述 | 演示 |
+| --- | --- | --- |
+| **ScreenTransition.Cover** |新屏幕滑入视图中，右到左移动，以覆盖当前屏幕。 | ![屏幕转换封面动画](media/function-navigate/cover.gif) |
+| **ScreenTransition.CoverRight** |视图中，移动到新的屏幕幻灯片从左到右，以覆盖当前屏幕。 | ![屏幕转换封面右动画](media/function-navigate/coverright.gif) |
+| **ScreenTransition.Fade** |当前以显示新屏幕的屏幕淡化。 | ![屏幕转换淡入淡出动画](media/function-navigate/fade.gif) |
+| **ScreenTransition.None** （默认值） |新屏幕快速替换当前屏幕。 | ![屏幕过渡无动画](media/function-navigate/none.gif) |
+| **ScreenTransition.UnCover** | 当前屏幕滑出视图中，右到左移动，以发现新屏幕。 | ![屏幕转换发现动画](media/function-navigate/uncover.gif) |
+| **ScreenTransition.UnCoverRight** | 从视图中，移动的当前屏幕幻灯片从左到右，以发现新屏幕。 | ![屏幕转换发现正确的动画](media/function-navigate/uncoverright.gif) |
 
 可以使用 **Navigate** 创建或更新的新屏幕的上下文变量。 第三个参数是可选的，它可用于传递一条[记录](../working-with-tables.md#records)，其中包含上下文变量名称（以[列](../working-with-tables.md#columns)名称的形式）和上下文变量的新值。  这条记录就是用于 **[UpdateContext](function-updatecontext.md)** 函数的记录。
 
@@ -57,17 +59,17 @@ ms.locfileid: "61562775"
 ## <a name="syntax"></a>语法
 **Back**()
 
-**Navigate**( *Screen*, *Transition* [, *UpdateContextRecord* ] )
+**Navigate**( *Screen* [, *Transition* [, *UpdateContextRecord* ] ] )
 
 * *Screen* - 必需。 要显示的屏幕。
-* *Transition* - 必需。  切换屏幕时要使用的视觉过渡效果。 请参阅本主题前文中所述此参数的有效值列表。
+* *转换*-可选。  切换屏幕时要使用的视觉过渡效果。 请参阅本主题前文中所述此参数的有效值列表。 默认值是**None**。
 * *UpdateContextRecord* - 可选。  一条记录，其中包含至少一列的名称以及每列的值。 这一条记录用于更新新屏幕的上下文变量，就像传递到 **[UpdateContext](function-updatecontext.md)** 函数一样。
 
 ## <a name="examples"></a>示例
 
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
-| **Navigate( Details, ScreenTransition.None )** |显示 **Details** 屏幕，没有任何过渡效果，也不会更改上下文变量的值。 |**Details** 屏幕会快速显示。 |
+| **导航 （详细信息）** |显示 **Details** 屏幕，没有任何过渡效果，也不会更改上下文变量的值。 |**Details** 屏幕会快速显示。 |
 | **Navigate( Details, ScreenTransition.Fade )** |用**淡入淡出**过渡效果显示 **Details** 屏幕。  不更改上下文变量的任何值。 |当前屏幕淡化消失，以显示 **Details** 屏幕。 |
 | **Navigate( Details, ScreenTransition.Fade, {&nbsp;ID:&nbsp;12&nbsp;} )** |使用**淡入淡出**过渡效果显示 **Details** 屏幕，并且将 **ID** 上下文变量的值更新为 **12**。 |当前屏幕淡化消失，以显示 **Details** 屏幕，并且将这个屏幕的上下文变量 **ID** 设置为 **12**。 |
 | **Navigate( Details, ScreenTransition.Fade, {&nbsp;ID:&nbsp;12&nbsp;,&nbsp;Shade:&nbsp;Color.Red&nbsp;} )** |用**淡入淡出**过渡效果显示 **Details** 屏幕。 将 **ID** 上下文变量的值更新为 **12**，并且将 **Shade** 上下文变量的值更新为 **Color.Red**。 |当前屏幕淡化消失，以显示 **Details** 屏幕。 将 **Details** 屏幕的上下文变量 **ID** 设置为 **12**，并且将上下文变量 **Shade** 设置为 **Color.Red**。 如果将 **Details** 屏幕上某一控件的 **Fill** 属性设置为 **Shade**，则该控件会显示为红色。 |
@@ -77,7 +79,7 @@ ms.locfileid: "61562775"
 2. 添加一个屏幕并将其命名为 **AddlScreen**。
 3. 为 **AddlScreen** 添加一个标签，并设置标签的 **[Text](../controls/properties-core.md)** 属性，使其显示 **Addl**。
 4. 在 **AddlScreen** 上添加一个按钮，将其 **[OnSelect](../controls/properties-core.md)** 属性设置为以下函数：<br>**Navigate(DefaultScreen, ScreenTransition.Fade)**
-5. 从 **AddlScreen** 中，按 F5，然后选中这个按钮。<br>随即会显示 **DefaultScreen**。
+5. 从 **AddlScreen** 中，按 F5，然后选中这个按钮。<br>**DefaultScreen**贯穿淡入淡出转换。
 
-[再举一例](../add-screen-context-variables.md)
+[其他示例](../add-screen-context-variables.md)
 

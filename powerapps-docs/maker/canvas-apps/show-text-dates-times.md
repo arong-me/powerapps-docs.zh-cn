@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 54712803d0cc119aa385162088df468e339a7298
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42848517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63318332"
 ---
 # <a name="show-text-dates-and-times-in-powerapps"></a>在 PowerApps 中显示文本、日期和时间
 在 PowerApps 中向画布应用添加日期和时间，然后设置其格式，以显示正确级别的详细信息，或者让其反映你的区域设置。 计算两个日期相差多少时间，或者计算一个日期，该日期比指定的日期早或晚一定的时间。 将日期转换成按年、月、日表示的不同值（或者反过来），以及将时间转换成按小时、分钟、秒表示的不同值（或者反过来）。

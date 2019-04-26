@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 883ea1a63952a01cf1f131b0ccae6629a0324b2c
-ms.sourcegitcommit: 4c7b63c43c1f3515a6dfeff5806692b0eba55071
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49401334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63321509"
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>PowerApps 中的 Color 枚举与 ColorFade、ColorValue 以及 RGBA 函数
 使用内置颜色值，定义自定义颜色以及 Alpha 值混合处理。

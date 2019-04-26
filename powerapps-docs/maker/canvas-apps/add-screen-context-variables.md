@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b6f83d21b2964dac7c4925d45efdf11a3a1e6b02
-ms.sourcegitcommit: 7f67cd28c781a48f6a211ed82c2c861ae3acf1a5
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "57800712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63321354"
 ---
 # <a name="add-a-screen-to-a-canvas-app-and-navigate-between-screens"></a>在画布应用中添加屏幕并切换屏幕
 

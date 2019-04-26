@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c11800767225f66520e1a5c368de5102219505d2
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42845329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63321620"
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps 网络研讨会列表 #
 这些网络研讨会可以帮助你使用 Microsoft PowerApps 的功能。 直播结束后，可按需观看网络研讨会。 请注意，在某些情况下，必须重新输入注册详细信息，然后才能通过电子邮件收到视频录制链接。 
@@ -70,7 +70,7 @@ ms.locfileid: "42845329"
 **PowerApps 管理 | 常见问题**
 <br>主讲人：Manas Maheshwari [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Administration-FAQ/m-p/127369#M44)
 
-**在通用审核应用内：了解 PowerApps 和 Flow 的功能，主讲人：Paul Culmsee**
+**在通用审核应用程序：哪些 PowerApps 和 Flow 都能通过人： Paul Culmsee，请参阅**
 <br>主讲人：Paul Culmsee [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Inside-the-Universal-Audit-App-See-what-PowerApps-and-Flow-are/m-p/127370#M45)
 
 ## <a name="advanced-webinar-series"></a>高级网络研讨会系列 ##
@@ -150,5 +150,5 @@ ms.locfileid: "42845329"
 **在 PowerApps 中生成对话或弹出消息**
 <br>主讲人：Veronica Ward [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Dialogs-in-PowerApps-by-Veronica-Ward/m-p/117627#M39)
 
-**与一位 PowerApps 开发人员 Marie Hoeger 一起探究幕后的秘密 - 深入了解模板**
+**探究幕后 PowerApps 开发者-深入了解模板之一：Marie Hoeger**
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Developer-Intro-and-Discussing-Templates/m-p/116848)

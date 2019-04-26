@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d92236d630005b4608719efaadef4537984bc3d6
-ms.sourcegitcommit: 5a1864d1531b55b332749437674fd1378e1f55ca
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63317689"
 ---
 # <a name="validate-function-in-powerapps"></a>PowerApps 中的 Validate 函数
 **Validate** 函数检查单个[列](../working-with-tables.md#columns)或整条[记录](../working-with-tables.md#records)的值对[数据源](../working-with-data-sources.md)是否有效。  

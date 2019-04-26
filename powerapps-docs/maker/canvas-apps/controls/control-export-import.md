@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b78f88941fce85b9e63427635cb946f944aa120a
-ms.sourcegitcommit: e2a9d1a6090cdd8aa78515b49f38ed2365217ea6
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49384262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63319951"
 ---
 # <a name="export-control-and-import-control-in-powerapps"></a>PowerApps 中的导出控件和导入控件
 该控件用于将数据导出到本地文件，然后将该数据导入到 PowerApps 中的其他应用。
@@ -66,7 +66,7 @@ Web 浏览器中不支持导出功能。
 
 [Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md)** – 控件中文本的粗细：**粗体**、**半粗体**、**正常**或**细体**。
+**[FontWeight](properties-text.md)**  – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 

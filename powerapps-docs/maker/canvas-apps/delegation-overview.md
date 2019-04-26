@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 61a7e67b7914e5f844397389833f830244d5af28
-ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59098037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63318102"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>了解画布应用中的委派
 PowerApps 包括一组功能强大的筛选、 排序和整理的画布应用中的数据的表的函数：**[筛选器](functions/function-filter-lookup.md)**， **[排序](functions/function-sort.md)**，以及 **[AddColumns](functions/function-table-shaping.md)** 函数等等。 可以使用这些函数，让用户重点访问其所需的信息。 对于具有数据库背景的用户来说，使用这些函数相当于编写数据库查询。

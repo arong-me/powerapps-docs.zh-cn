@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b70026e84eb7dfee67583abe26665bf78a566b76
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63321052"
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-powerapps"></a>PowerApps 中的 DateAdd、DateDiff 和 TimeZoneOffset 函数
 加上或发现日期/时间值的差值，并转换本地时间和 UTC。
@@ -41,13 +41,13 @@ TimeZoneOffset 函数返回用户本地时间和 UTC（协调世界时）的时�
 
 * *DateTime* - 必需。 要进行运算的日期/时间值。
 * *Addition* - 必需。 要在 DateTime 中加上的数值，以时间单位为单位。
-* *单位* - 可选。 要加上的数值的时间单位类型：毫秒、秒、分钟、小时、天、月、季度或年。  如果未指定则使用**天**。
+* *单位* - 可选。 类型*单位*添加：**毫秒**，**秒**，**分钟**，**小时**，**天**，**几个月**， **季度**，或**年**。  如果未指定则使用**天**。
 
 **DateDiff**( *StartDateTime*, *EndDateTime* [, *Units* ] )
 
 * *StartDateTime* - 必需。 开始日期/时间值。
 * *EndDateTime* - 必需。 结束日期/时间值。
-* *单位* - 可选。 要加上的数值的时间单位类型：毫秒、秒、分钟、小时、天、月、季度或年。  如果未指定则使用**天**。
+* *单位* - 可选。 类型*单位*添加：**毫秒**，**秒**，**分钟**，**小时**，**天**，**几个月**， **季度**，或**年**。  如果未指定则使用**天**。
 
 TimeZoneOffset( [ DateTime ] )
 

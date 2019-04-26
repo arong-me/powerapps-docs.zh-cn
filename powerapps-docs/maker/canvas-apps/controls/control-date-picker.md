@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 90f18c4b490564bc098046831ea932db13fce05d
-ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58491633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63321719"
 ---
 # <a name="date-picker-control-in-powerapps"></a>PowerApps 中的日期选取器控件
 用户可单击或点击以指定日期的控件。
@@ -127,7 +127,7 @@ ms.locfileid: "58491633"
 
 ### <a name="keyboard-support"></a>键盘支持
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
+* 焦点指示器必须清晰可见。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness](properties-color-border.md)**”来实现此目的。
 
 > [!TIP]
 > 打开日历时，按**向上翻页**和**向下翻页**几个月之间导航并**Shift + Page up**并**Shift + Page down**到年之间导航。

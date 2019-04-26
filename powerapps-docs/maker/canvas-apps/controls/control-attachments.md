@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 31b166dbe0257127d02f410182aaebb70e641da6
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63320872"
 ---
 # <a name="attachments-control-in-powerapps"></a>PowerApps 中的附件控件
 允许用户将文件下载到其设备，以及上传和从 SharePoint 列表或 Common Data Service 实体中删除文件的控件。

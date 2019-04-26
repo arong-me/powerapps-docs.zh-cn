@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c37aa315981c51a446254473686c44501e72a96f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63320998"
 ---
 # <a name="filter-search-and-lookup-functions-in-powerapps"></a>PowerApps 中的 Filter、Search 和 LookUp 函数
 查找[表](../working-with-tables.md)中的一个或多个[记录](../working-with-tables.md#records)。
@@ -78,7 +78,7 @@ ms.locfileid: "42831467"
 | **LookUp( IceCream, Flavor = "Chocolate", Quantity )** |搜索 **Flavor** 等于“Chocolate”的记录，其中有一个此类记录。  对于找到的第一个记录，将返回该记录的 **Quantity**。 |100 |
 | **LookUp( IceCream, Quantity > 150, Quantity + OnOrder )** |搜索 **Quantity** 大于 100 的记录，其中有多个此类记录。  对于找到的第一个 **Flavor** 为“Vanilla”的记录，将返回 **Quantity** 和 **OnOrder** 列的总和。 |250 |
 | **LookUp( IceCream, Flavor = "Pistachio", OnOrder )** |搜索 **Flavor** 等于“Pistachio”的记录，其中不存在此类记录。  由于未找到匹配项，**Lookup** 将返回空白。 |空白 |
-| **LookUp( IceCream, Flavor = "Vanilla" )** |搜索 **Flavor** 等于“Vanilla”的记录，其中有一个此类记录。  由于未提供归约公式，因此将返回完整记录。 |{ Flavor: "Vanilla", Quantity: 200, OnOrder: 75 } |
+| **LookUp( IceCream, Flavor = "Vanilla" )** |搜索 **Flavor** 等于“Vanilla”的记录，其中有一个此类记录。  由于未提供归约公式，因此将返回完整记录。 |{风格："普通"，Quantity:200，OnOrder:75 } |
 
 ### <a name="search-user-experience"></a>搜索用户体验
 在许多应用中，你可在搜索框中键入一个或多个字符来对较大数据集中的记录列表进行筛选。 键入时，列表中仅显示与搜索条件匹配的记录。
@@ -87,9 +87,9 @@ ms.locfileid: "42831467"
 
 ![](media/function-filter-lookup/customers.png)
 
-若要将此数据源创建为集合，请创建一个 **[按钮](../controls/control-button.md)** 控件，并将其 **OnSelect** 属性设置为以下公式：
+若要将此数据源创建为集合，请创建一个**[按钮](../controls/control-button.md)** 控件，并将其 **OnSelect** 属性设置为以下公式：
 
-**ClearCollect( Customers, Table( { Name: "Fred Garcia", Company: "Northwind Traders" }, { Name: "Cole Miller", Company: "Contoso" }, { Name: "Glenda Johnson", Company: "Contoso" }, { Name: "Mike Collins", Company: "Adventure Works" }, { Name: "Colleen Jones", Company: "Adventure Works" } ) )**
+**ClearCollect (客户、 表 ({名称："Fred Garcia"，公司："Northwind Traders"}，{名称："Cole Miller"，公司："Contoso"}，{名称："Glenda johnson 的演示"，公司："Contoso"}，{名称："Mike Collins"，公司："Adventure Works"}，{名称："Colleen Jones"，公司："Adventure Works"}))**
 
 如此示例中所示，可在屏幕底部的[**库控件**](../controls/control-gallery.md)中显示记录列表。 在靠近屏幕顶部的位置，可添加名为 **SearchInput** 的[**文本输入**](../controls/control-text-input.md)控件，以便用户能够指定对哪些记录感兴趣。
 

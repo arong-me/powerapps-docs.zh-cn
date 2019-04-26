@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 661f6710c8cec55868ccc9d67d0f83dd230f89c1
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42851728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63318253"
 ---
 # <a name="understand-canvas-app-forms-in-microsoft-powerapps"></a>了解 Microsoft PowerApps 中的画布应用窗体
 
@@ -334,18 +334,22 @@ PowerApps 可以根据指定的数据源自动生成应用。 每个应用包含
 
 ![在浏览屏幕中排序和搜索控件](./media/working-with-forms/afd-browse-search-sort.png)
 
-当用户选择排序按钮时，库的排序顺序将会反转。 若要创建此行为，可使用*上下文变量*跟踪库的排序方向。 当用户选择该按钮时，变量将会更新，方向将会反转。 排序按钮的 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：**UpdateContext( {SortDescending1: !SortDescending1} )**
+当用户选择排序按钮时，库的排序顺序将会反转。 若要创建此行为，可使用*上下文变量*跟踪库的排序方向。 当用户选择该按钮时，变量将会更新，方向将会反转。 **[OnSelect](controls/properties-core.md)** 排序按钮的属性设置为以下公式：**UpdateContext( {SortDescending1: !SortDescending1} )**
 
 **[UpdateContext](functions/function-updatecontext.md)** 函数创建 **SortDescending1** 上下文变量（如果不存在）。 该函数将读取该变量的值并使用 **!** 运算符将它设置为逻辑求反 。 *true* 值将变成 *false*。 *false* 值将变成 *true*。
 
 **[库](controls/control-gallery.md)** 控件的 **[Items](controls/properties-core.md)** 属性公式使用此上下文变量以及 **TextSearchBox1** 控件中的文本：
 
-    Gallery1.Items = Sort( If( IsBlank(TextSearchBox1.Text),
-                               Assets,
-                               Filter( Assets,
-                                       TextSearchBox1.Text in Text(ApproverEmail) ) ),
-                            ApproverEmail,
-                            If(SortDescending1, Descending, Ascending) )
+```powerapps-dot
+Sort( 
+    If( IsBlank(TextSearchBox1.Text),
+        Assets,
+        Filter( Assets, TextSearchBox1.Text in Text(ApproverEmail) ) 
+    ),
+    ApproverEmail,
+    If(SortDescending1, Descending, Ascending) 
+)
+```
 
 让我们剖析整个公式：
 

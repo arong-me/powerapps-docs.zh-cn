@@ -14,17 +14,17 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d4cde32e52240e04a3499444d2c1325d0105a945
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42855418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63320589"
 ---
 # <a name="button-control-in-powerapps"></a>PowerApps 中的按钮控件
 用户单击或点击后可与应用进行交互的控件。
 
-## <a name="description"></a>说明
-将“按钮”控件的 **[“OnSelect”](properties-core.md)** 属性配置为，在用户单击或点击控件时运行一个或多个公式。
+## <a name="description"></a>描述
+将“按钮”控件的**[“OnSelect”](properties-core.md)** 属性配置为，在用户单击或点击控件时运行一个或多个公式。
 
 ## <a name="key-properties"></a>关键属性
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
@@ -60,7 +60,7 @@ ms.locfileid: "42855418"
 
 [Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md)** – 控件中文本的粗细：**粗体**、**半粗体**、**正常**或**细体**。
+**[FontWeight](properties-text.md)**  – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 

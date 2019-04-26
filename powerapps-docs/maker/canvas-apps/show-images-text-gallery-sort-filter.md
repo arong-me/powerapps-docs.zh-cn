@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a557c73863dc25acb69627b51613e6e25f229bdb
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63318364"
 ---
 # <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>在 PowerApps 库中显示数据，并对数据进行排序和筛选
 创建一个库来显示有关多种产品的图像和文本，并对该信息进行排序和筛选。
