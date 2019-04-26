@@ -1,21 +1,14 @@
-items:
 - name: 模型驱动应用的最佳做法和指南
   href: index.md
   items:
-  - name: 通过客户端脚本编写来应用业务逻辑
-    href: business-logic/index.md
-    items:
-    - name: 避免使用 window.top
-      href: business-logic/avoid-window-top.md
-    - name: 建议在以编程方式打开实体窗体或视图时禁用 NavBar
-      href: business-logic/consider-disabling-navbar-programmatically-opening-entity-forms-views.md
-    - name: 与 HTTP 和 HTTPS 资源异步交互
-      href: business-logic/interact-http-https-resources-asynchronously.md
-    - name: 删除已停用或已禁用的自定义项
-      href: business-logic/remove-deactivated-disabled-configurations.md
-ms.openlocfilehash: 0602b8fc8f4783d44ddbd7eeb05c24fc3ec1eec6
-ms.sourcegitcommit: 44ca0a386fce0c4a18310b515a4880065942dd05
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537864"
+    - name: 通过客户端脚本编写来应用业务逻辑
+      href: business-logic/index.md
+      items:
+        - name: 避免使用 window.top
+          href: business-logic/avoid-window-top.md
+        - name: 建议在以编程方式打开实体窗体或视图时禁用 NavBar
+          href: business-logic/consider-disabling-navbar-programmatically-opening-entity-forms-views.md
+        - name: 与 HTTP 和 HTTPS 资源异步交互
+          href: business-logic/interact-http-https-resources-asynchronously.md
+        - name: 删除已停用或已禁用的自定义项
+          href: business-logic/remove-deactivated-disabled-configurations.md
