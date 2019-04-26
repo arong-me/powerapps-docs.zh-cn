@@ -1,6 +1,6 @@
 ---
-title: 条码扫描器控件：参考 | Microsoft 文档
-description: 有关条码扫描器控件的信息（包括属性和示例）
+title: Web 条码扫描器控件： 引用 |Microsoft Docs
+description: 包括属性和示例，条码扫描器控件有关的信息
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -13,23 +13,27 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 853558273521491467fa7474688ce9c984ac5db6
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 787fa34bdfcabf6103fefd82f66e976b680544e2
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42862459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544582"
 ---
-# <a name="barcode-scanner-control-experimental-in-powerapps"></a>PowerApps 中的条形码扫描程序控件（实验性）
-通过在设备上使用条形码扫描程序，用户可用来拍摄照片的实验性控件。
+# <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>（实验） 在 PowerApps 中的 web 条码扫描器控件
+
+旧条形码扫描控件，这已过时，但可能适用于扫描的 web 浏览器中的代码。
 
 ## <a name="description"></a>描述
-如果添加此控件，用户可从应用运行的任何位置使用一张或多张照片更新数据源。
+
+此控件显示相机源应用程序中，以便用户可以扫描条形码，在所有设备上。 该控件是由于性能不佳和移动版已过时**[条码扫描器](control-new-barcode-scanner.md)** 控件所替换此控件。
 
 ## <a name="key-properties"></a>关键属性
+
 **barcode scanner** - 在具有多个条码扫描器的设备上，应用使用的条码扫描器的数字 ID。
 
 ## <a name="additional-properties"></a>其他属性
+
 **[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
@@ -61,24 +65,32 @@ Text – 上次由扫描仪识别的条形码值。
 **[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="related-functions"></a>相关函数
+
 [**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>示例
+
 ### <a name="add-photos-to-an-image-gallery-control"></a>向图像库控件添加照片
+
 1. 添加**条码扫描器**控件，将其命名为 **Mybarcode scanner**
 
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
-2. 添加“标签”控件，然后将输出设置为条形码的“Text”。  
-3. 扫描 BarcodeType 属性下设置的类型的条形码。
-4. 标签将显示扫描的条形码。
 
+1. 添加**标签**控件，并将其输出设置为条形码扫描仪**文本**属性。
+
+1. 扫描设置下的类型的条形码**BarcodeType**属性。
+
+    标签将显示扫描的条形码。
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
+
 ### <a name="video-alternatives"></a>视频替代项
+
 * 请考虑添加 **[标签](control-text-box.md)**，并将其 **[Text](properties-core.md)** 设置为条形码扫描仪的“Text”。 由于条形码扫描仪未显示标识的条形码值，执行上述操作将使所有人都可访问扫描仪，而不仅仅是那些有视觉障碍的用户。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
+
 * **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
 
     > [!NOTE]
-  > 发现新条形码时，屏幕阅读器将公布此条码形。 不会公布值。 只要条形码在视图中，屏幕阅读器就会每隔 5 秒提醒一次，指示仍在识别相同的条形码。
+  > 已发现新条形码时，屏幕阅读器将公布。 不会公布值。 只要条形码在视图中，屏幕阅读器就会每隔 5 秒提醒一次，指示仍在识别相同的条形码。
