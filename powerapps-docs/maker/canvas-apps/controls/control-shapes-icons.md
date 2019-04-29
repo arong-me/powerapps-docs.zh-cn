@@ -24,7 +24,7 @@ ms.locfileid: "63318439"
 你可以为其配置外观和行为属性的图形。
 
 ## <a name="description"></a>描述
-这些控件包括箭头、几何形状、操作图标和符号，你可以为其配置诸如 fill、size 和 location 之类的属性。 此外可以配置其**[OnSelect](properties-core.md)** 属性，以便应用的响应如果用户选择控件。
+这些控件包括箭头、几何形状、操作图标和符号，你可以为其配置诸如 fill、size 和 location 之类的属性。 此外可以配置其 **[OnSelect](properties-core.md)** 属性，以便应用的响应如果用户选择控件。
 
 ## <a name="key-properties-icons-and-shapes"></a>键属性 （图标和形状）
 **[Fill](properties-color-border.md)** – 控件的背景色。
@@ -76,7 +76,7 @@ ms.locfileid: "63318439"
 
     不知道如何[添加和配置控件](../add-configure-controls.md)？
 
-1. 添加**[屏幕](control-screen.md)** 控件，然后将其命名为“Source”。
+1. 添加 **[屏幕](control-screen.md)** 控件，然后将其命名为“Source”。
 
 1. 在“Source”中，添加“形状”控件，并将其 **[OnSelect](properties-core.md)** 属性设置为以下公式：
 
@@ -114,7 +114,7 @@ ms.locfileid: "63318439"
 
 - **[AccessibleLabel](properties-accessibility.md)** 必须为空或空字符串 **""** 如果图形提供冗余信息或纯粹用于修饰。 此值将导致屏幕阅读器忽略图形。
 
-例如，你可能会设置**[accessiblelabel](properties-accessibility.md)** 属性**设置**图标**设置**。 此图标不用作按钮。 它是旁边**[标签](control-text-box.md)** 同样显示**设置**。 屏幕阅读器将图标和标签与读取**设置**，这是不必要地详细。 在这种情况下，该图标不需要 **[accessiblelabel](properties-accessibility.md)**。
+例如，你可能会设置 **[accessiblelabel](properties-accessibility.md)** 属性**设置**图标**设置**。 此图标不用作按钮。 它是旁边 **[标签](control-text-box.md)** 同样显示**设置**。 屏幕阅读器将图标和标签与读取**设置**，这是不必要地详细。 在这种情况下，该图标不需要 **[accessiblelabel](properties-accessibility.md)**。
 
 > [!IMPORTANT]
 > 屏幕阅读器将读取读取图标或形状**按钮**如果其**[accessiblelabel](properties-accessibility.md)** 设置为空字符串并将其**[TabIndex](properties-accessibility.md)** 设置为零或更高版本。 此类图标或形状以按钮形式呈现。 
@@ -122,7 +122,7 @@ ms.locfileid: "63318439"
 ### <a name="keyboard-support"></a>键盘支持
 - **[TabIndex](properties-accessibility.md)** 必须为零或更高，如果图形用作按钮。 如果设置此值为图标或形状，键盘用户可以导航到它。
 
-- 焦点指示器必须清楚地显示如果图形用作按钮。 使用**[FocusedBorderColor](properties-color-border.md)** 并**[FocusedBorderThickness](properties-color-border.md)** 来实现此目标。
+- 焦点指示器必须清楚地显示如果图形用作按钮。 使用 **[FocusedBorderColor](properties-color-border.md)** 并 **[FocusedBorderThickness](properties-color-border.md)** 来实现此目标。
 
     > [!NOTE]
-    > 当**[“TabIndex”](properties-accessibility.md)** 为零或更大，图标或形状将以按钮形式呈现。 不会更改其外观，但屏幕阅读器将正确识别作为按钮的图像。 当 **[TabIndex](properties-accessibility.md)** 小于零时，图标或形状将被标识为图像。
+    > 当 **[“TabIndex”](properties-accessibility.md)** 为零或更大，图标或形状将以按钮形式呈现。 不会更改其外观，但屏幕阅读器将正确识别作为按钮的图像。 当 **[TabIndex](properties-accessibility.md)** 小于零时，图标或形状将被标识为图像。
