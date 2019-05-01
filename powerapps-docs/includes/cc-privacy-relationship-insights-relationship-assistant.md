@@ -1,11 +1,19 @@
-通过启用关系助手功能，包括发件人名称、电子邮件地址以及电子邮件正文摘要在内的受限交换数据将被检索（但不会存储在 [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]），以便显示与您的电子邮件相关的见解。 此外，还可通过发送请求至 MSN 财经和必应等外部组件（这些组件不被视作 [!INCLUDE[pn_ms_dyn_365](pn-ms-dyn-365.md)] Core Services），将关系助手功能配置为检索新闻、财务和航班信息方面的相关信息。 管理员可以导航到**设置** > **智能配置**，单击**关系助手**选项卡，然后做出相应的选择，​从而启用和禁用“关系助手”功能。  
+---
+ms.openlocfilehash: 40dcde544894751da2696defc76819892659cb25
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61567598"
+---
+通过启用关系助手功能，可出于显示电子邮件的相关见解的目的来检索有限的交换数据（但不会存储在 [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 中），包括发件人的姓名和电子邮件地址以及电子邮件正文的摘录。 此外，可以配置关系助手功能，使其通过向 MSN Money 和 Bing（不被视为 [!INCLUDE[pn_ms_dyn_365](pn-ms-dyn-365.md)] 核心服务）等外部组件发送请求来检索有关新闻、财务和航班的信息。 通过导航至“设置” > “智能配置”，单击“关系助手”选项卡，然后进行相应选择，管理员可以启用和禁用关系助手功能。  
   
- 以下章节中详细介绍了关系助手功能涉及的外部组件。  
+ 以下各节详细介绍了与关系助手功能相关的外部组件。  
   
  **[!INCLUDE[pn_bing](pn-bing.md)]**  
   
- 关系助手使用 [!INCLUDE[pn_bing](pn-bing.md)]，根据来自用户的 [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 数据的帐户名称，搜索相关的新闻以便向用户显示。  
+ 关系助手通过使用用户的 [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 数据中的帐户名，可使用 [!INCLUDE[pn_bing](pn-bing.md)] 搜索要向该用户显示的相关新闻。  
   
  **[!INCLUDE[pn_ms_MSN_Money](pn-ms-msn-money.md)]**  
   
- 关系助手使用 [!INCLUDE[pn_ms_MSN_Money](pn-ms-msn-money.md)]，根据来自用户的 [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 数据的帐户股票代号，向用户显示相关的股票信息。
+ 关系助手通过使用用户的 [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 数据中的帐户股票代号，可使用 [!INCLUDE[pn_ms_MSN_Money](pn-ms-msn-money.md)] 向该用户显示相关股票信息。

@@ -1,24 +1,32 @@
-帮助改进 [!INCLUDE[pn_unified_service_desk](pn-unified-service-desk.md)]功能将发送 [!INCLUDE[pn_unified_service_desk](pn-unified-service-desk.md)] 使用信息，例如操作系统详细信息、浏览器详细信息、[!INCLUDE[pn_unified_service_desk](../includes/pn-unified-service-desk.md)] 应用程序特定的信息以及在其中安装客户端的计算机上的 [!INCLUDE[pn_unified_service_desk](pn-unified-service-desk.md)] 版本。 [!INCLUDE[pn_unified_service_desk](pn-unified-service-desk.md)] 通过与组织见解的安全连接将信息发送到 [!INCLUDE[cc_Microsoft](cc-microsoft.md)]，并将信息存储在 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 表存储中。
+---
+ms.openlocfilehash: 943aa1eb128341b960270d21a53cec47003bcec4
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61567595"
+---
+“帮助改进 [!INCLUDE[pn_unified_service_desk](pn-unified-service-desk.md)]”功能从安装客户端的计算机上发送 [!INCLUDE[pn_unified_service_desk](pn-unified-service-desk.md)] 使用情况信息，如操作系统详细信息、浏览器详细信息、特定于 [!INCLUDE[pn_unified_service_desk](../includes/pn-unified-service-desk.md)] 应用程序的信息和 [!INCLUDE[pn_unified_service_desk](pn-unified-service-desk.md)] 版本。 [!INCLUDE[pn_unified_service_desk](pn-unified-service-desk.md)] 通过与“组织见解”的安全连接将信息发送到 [!INCLUDE[cc_Microsoft](cc-microsoft.md)]，并存储在 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 表存储中。
   
 > [!NOTE]
->  [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)] 组织的系统管理员可以通过组织见解快速了解组织的使用方式概况。 系统管理员可以查看最活跃的用户、发起的 SDK 请求数量以及 SDK 用户查看的次数。
+>  组织见解为 [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)] 组织的系统管理员提供了组织使用方式的快速概述。 系统管理员可以查看大多数活跃用户、启动的 SDK 请求数和 SDK 用户正在查看的数量。
   
- 下面提供了“帮助改进 Unified Service Desk”功能涉及的 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 组件和服务的列表。  
+ 下面提供了与“帮助改进 Unified Service Desk”功能相关的 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 组件和服务列表。  
   
 > [!NOTE]
->  有关其他 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 服务/产品的更多信息，请访问 [Microsoft Azure 信任中心](https://azure.microsoft.com/en-us/support/trust-center/)。  
+>  有关其他 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 服务/产品的详细信息，请参阅 [Microsoft Azure 信任中心](https://azure.microsoft.com/en-us/support/trust-center/)。  
   
- [云服务](https://azure.microsoft.com/en-us/services/cloud-services/) OrgInsights Data REST API（Web 角色）  
+ [云服务](https://azure.microsoft.com/en-us/services/cloud-services/) OrgInsights 数据 REST API（Web 角色）  
   
- 此 Web 角色接受要在组织见解中显示数据的图表请求。 该 API 读取从 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 表汇总的数据并返回这些数据。  
+ 此 web 角色可接受来自显示组织见解中数据的图表的请求。 API 从 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 表中读取聚合数据并将其返回。  
   
  [Azure Blob 存储](https://azure.microsoft.com/en-us/services/storage/blobs/)  
   
- [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)] 组织的原始遥测数据通过监视代理（运行在每个 Scale Group 计算机上）收集并以 Bond 格式（二进制格式）上传到 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob 存储中。  
+ 监视代理（在每个规模组计算机上运行）会收集 [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)] 组织的原始遥测数据，并以 Bond 格式（二进制格式）上传到 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob 存储中。  
   
  [Azure 表存储](https://azure.microsoft.com/en-us/services/storage/tables/)  
   
- [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob 存储中的原始遥测数据由云服务读取，并汇总和存储在 Azure 表存储中。  
+ [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob 存储中的原始遥测数据聚合并存储在 Azure 表存储中，由云服务读取。  
   
  [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory/)  
   
@@ -26,4 +34,4 @@
   
  [Azure 服务总线](https://azure.microsoft.com/en-us/services/service-bus/)  
   
- 无论监视代理何时将数据上传到 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob 存储中，它都会创建消息并将消息加入队列。 这些消息由 CMA 管道选择并与所上传的数据汇总。
+ 每当监视代理将数据上传到 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob 存储时，监视代理均会创建消息并对其进行排队。 CMA 管道会获取这些消息来聚合上传的数据。
