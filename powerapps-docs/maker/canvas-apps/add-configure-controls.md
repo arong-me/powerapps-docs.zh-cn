@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 798a355e1c8728b41f3e92f183d4a4e2831b7cc2
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 3311433b3950bcf48dc6c7b7969da501e542952c
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61530247"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64670857"
 ---
 # <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>在 PowerApps 中添加和配置画布应用控件
 
@@ -51,7 +51,7 @@ ms.locfileid: "61530247"
 
 ![在列表中的屏幕 2](./media/add-configure-controls/add-label.png)
 
-在屏幕中，具有六个句柄的框默认情况下会环绕标签。 该类型的框会环绕任何控件处于选中状态。 如果单击或点击它 （以外中标签） 来选择屏幕，框将从标签消失。 若要选择的标签同样，可以单击或点击它，或单击或点击**Label2**中控件的层次结构列表。
+在屏幕中，具有六个句柄的框默认情况下会环绕标签。 该类型的框会环绕任何控件处于选中状态。 如果单击或点击它 （以外中标签） 来选择屏幕，框将从标签消失。 若要选择的标签同样，可以单击或点击它，或单击或点击其控件的层次结构列表中的名称。
 
 > [!IMPORTANT]
 > 始终必须选择一个控件，然后才能配置它。

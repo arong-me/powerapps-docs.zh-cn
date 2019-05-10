@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 661f6710c8cec55868ccc9d67d0f83dd230f89c1
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: 4df4a9c6ddd411ea5766f13bb11ede57264e3062
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63318253"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64670742"
 ---
 # <a name="understand-canvas-app-forms-in-microsoft-powerapps"></a>了解 Microsoft PowerApps 中的画布应用窗体
 

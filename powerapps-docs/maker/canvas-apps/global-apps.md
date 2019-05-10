@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4aae487a0b2efe50e3ac6bd42c90d26de23fed60
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ee2e2b854b56dadfd63b35a984e92db2ca515093
+ms.sourcegitcommit: 8bad6bff1b3397b21654df4a9357dd0180fbcfe6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553729"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65046045"
 ---
 # <a name="build-global-support-into-canvas-apps"></a>为画布应用构建全球支持
 PowerApps 是全球性的产品。 你可以在许多不同的语言和区域中构建和使用画布应用。
@@ -70,7 +70,7 @@ PowerApps 是全球性的产品。 你可以在许多不同的语言和区域中
 | **.** （圆点或句点） |**.** （圆点或句点） |**,**（逗号） |**;**（分号） |
 | **,**（逗号） |**,**（逗号） |**;**（分号） |**;;**（双分号） |
 
-PowerApps 列表分隔符的更改将与 Excel 列表分隔符的更改保持一致。  它影响以下项：
+PowerApps 列表分隔符中的更改是与 Excel 列表分隔符会发生什么情况保持一致。  它影响以下项：
 
 * 函数调用中的参数。
 * [记录](working-with-tables.md#elements-of-a-table)中的字段。

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ddd11ddd40792ef1042536041554737ddb16547b
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: af07bcb7b343a14f6342c53ed2e083e214a12368
+ms.sourcegitcommit: b27a5206f8c7b4b4c1bcca814a1f7c32724c1fcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61562216"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65206384"
 ---
 # <a name="create-responsive-layouts-in-canvas-apps"></a>画布应用中创建响应式布局
 
@@ -136,7 +136,7 @@ ms.locfileid: "61562216"
 | 底端对齐边缘**C**的下边缘对齐**D** | **Y** | `D.Y + D.Height - C.Height` | ![模式的示例](media/create-responsive-layout/d4.png) |
 | **C**相对于水平居中**D** | **X** | `D.X + (D.Width - C.Width) / 2`  | ![模式的示例](media/create-responsive-layout/d5.png) |
 | **C**相对于垂直居中**D** | **Y** | `D.Y + (D.Height - C.Height) /2` | ![模式的示例](media/create-responsive-layout/d6.png) |
-| **C**定位到右侧**D**与 N 的间隔 | **X** | `D.X + D.Width - N` | ![模式的示例](media/create-responsive-layout/d7.png) |
+| **C**定位到右侧**D**与 N 的间隔 | **X** | `D.X + D.Width + N` | ![模式的示例](media/create-responsive-layout/d7.png) |
 | **C**之下**D**的间隙较*N*             | **Y** | `D.Y + D.Height + N` | ![模式的示例](media/create-responsive-layout/d8.png) |
 | **C**填充之间的空间**D**和右边缘的父级 | **X** | `D.X + D.Width` | ![模式的示例](media/create-responsive-layout/d9.png) |
 |  | **Width** | `Parent.Width - C.X` |  |
@@ -239,7 +239,7 @@ ms.locfileid: "61562216"
 
 如果你想控制以占据屏幕宽度基于屏幕大小的不同部分，设置控件的**宽度**属性设为此公式：
 
-```
+```powerapps-dot
 Parent.Width *  
     Switch(Parent.Size,  
         ScreenSize.Small, 0.5,  

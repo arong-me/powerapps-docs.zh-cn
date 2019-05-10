@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5125299c969db635a9e260ea7bac28f6a6e02bc0
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 503ffa049ecd737cfd9e948c3e2af25c8cdd831d
+ms.sourcegitcommit: dbd922de8f2e97a478df64e7e9ba33b48574af5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61540971"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65088120"
 ---
 # <a name="create-a-canvas-app-to-manage-projects"></a>创建用于管理项目的画布应用
 > [!NOTE]
@@ -87,7 +87,7 @@ PowerApps Studio 有三个窗格和一个功能区，可以在其中创建应用
 ![所有应用屏幕](./media/sharepoint-scenario-build-app/04-01-05-all-screens.png)
 
 ## <a name="step-2-connect-to-a-sharepoint-list"></a>步骤 2:连接到 SharePoint 列表
-在这一步中，我们将连接“项目详细信息”SharePoint 列表。 虽然我们在此应用中只使用一个列表，但可以很容易地连接两个列表（若要扩展应用的话）。
+在此步骤中，我们将连接到**项目详细信息**SharePoint 列表。 虽然我们在此应用中只使用一个列表，但可以很容易地连接两个列表（若要扩展应用的话）。
 
 1. 在左侧导航栏中，单击或点击“SelectTask”屏幕。
 2. 在右侧窗格中，单击或点击“添加数据源”。

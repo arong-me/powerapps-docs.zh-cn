@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d33f541ea698b02a662edb652f809095f47acc6e
-ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
+ms.openlocfilehash: 66fe60c0d74c86705615522621d8f277fcc343ae
+ms.sourcegitcommit: dbd922de8f2e97a478df64e7e9ba33b48574af5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59042723"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65088174"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>使用 PowerApps 自定义 SharePoint 列表窗体
 
@@ -71,7 +71,7 @@ SharePoint 站点上创建列表，并将这些列添加到该列表：
 
 1. 在左侧的导航栏中，展开**Details_DataCard1**，并记下在最后阶段显示数字**DataCardValue**。
 
-1. 设置**可见性**的属性**颜色**，**可用性**，以及**价格**卡为此公式 (替换，如有必要，与上一步中记下数字）：
+1. 设置**Visible**的属性**颜色**，**可用性**，以及**价格**为以下公式 （替换，如有必要，数字卡片与上一步中记下的一个）：
 
     **If(DataCardValue2.Value = true, true)**
 
@@ -197,7 +197,7 @@ SharePoint 站点上创建列表，并将这些列添加到该列表：
 
 **问：** 是否需要 PowerApps 许可证才能创建或使用自定义列表窗体？
 
-**答：** 所需[包含 PowerApps 的 Office 365 计划](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus.md#licenses)。
+**答：** 所需[包含 PowerApps 的 Office 365 计划](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus#licenses)。
 
 **问：** 当来宾用户访问具有自定义窗体的列表时，会发生什么情况？
 

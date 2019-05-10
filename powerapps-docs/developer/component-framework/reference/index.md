@@ -8,23 +8,18 @@ ms.assetid: ''
 author: nkrb
 ms.author: nabuthuk
 manager: Jdaly
-ms.openlocfilehash: 8351f48019635dd0a6ec9921d8888d8ca4b77f80
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 4e84956807b91e535e709aa2e0739fdf121bc2f7
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63394374"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "64524298"
 ---
 # <a name="powerapps-component-framework-api-reference"></a>PowerApps 组件框架 API 参考
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
-本部分包含使用 PowerApps 组件框架创建自定义控件的参考文档。
-
-> [!IMPORTANT]
-> - PowerApps 组件框架为预览功能。
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
+此部分包含有关使用 PowerApps 组件框架创建自定义组件的参考文档。
 
 |名称|描述|
 |----|-----------|
