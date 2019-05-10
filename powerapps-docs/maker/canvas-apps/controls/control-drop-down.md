@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2283f77f7e1c09ceade63f96003fefabc5e92539
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 02e8477873adad476c65e513a470e027aee5cd5c
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544260"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517382"
 ---
 # <a name="drop-down-control-in-powerapps"></a>PowerApps 中的下拉列表控件
 一个列表，在用户不将其打开的情况下，该表仅显示第一项。
@@ -33,7 +33,9 @@ ms.locfileid: "61544260"
   
 Value - 要在控件中显示的数据列（例如，如果数据源具有多列）。
 
-**Selected** – 选定的项。
+**所选**– 表示选定的项的数据记录。
+
+**AllowEmptySelection** – 是否此控件显示的空选择，是否尚未选择任何项。 应用用户还可通过选择空白项清除其选项。
 
 ## <a name="additional-properties"></a>其他属性
 **[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。
@@ -97,6 +99,8 @@ Value - 要在控件中显示的数据列（例如，如果数据源具有多列
 **[PressedFill](properties-color-border.md)** – 用户在点击或单击控件时，该控件的背景色。
 
 [Reset](properties-core.md) – 是否还原控件的默认值。
+
+**（已弃用） SelectedText** – 字符串值，该值表示所选的项。
 
 [SelectionColor](properties-color-border.md) – 所选项目或列表中项目的文本颜色，或笔控件中选择工具的颜色。
 

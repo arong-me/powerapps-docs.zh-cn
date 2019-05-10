@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0c972120a70df8471f27a2b6e4e99f7a66182e04
-ms.sourcegitcommit: 065b3b210273e5fe9025d41d27a08a62dfa16d03
-ms.translationtype: HT
+ms.openlocfilehash: 21e1042dc525e666fcab40610c290793abe37395
+ms.sourcegitcommit: 91f084def8d7c2b78eeef20fa3959d1d34b8da66
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64904063"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65516803"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>画布应用的系统要求、限制和配置值
 本主题包含设备平台和 Web 浏览器要求，以及 PowerApps 的限制和配置值。
@@ -93,12 +93,13 @@ PowerApps 请求使用的 IP 地址取决于该应用所在[环境](../../admini
 | management.azure.com |https |RP |
 | msmanaged-na.azure-apim.net |https |连接器运行时/API |
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
-| graph.microsoft.com<br>graph.windows.net |https |Azure Graph - 用于获取用户信息（例如个人资料照片） |
+| graph.microsoft.com<br>graph.windows.net |https |Azure Graph-用于获取用户信息 （例如，个人资料照片） |
 | gallery.azure.com |https |示例和模板应用 |
 | \*.azure-apim.net |https |API 中心 - 每个区域设置的不同子域 |
-| \*.powerapps.com |https |WebAuth + 门户 |
-| \*.azureedge.net |https |WebAuth |
-| \*.blob.core.windows.net |https |Blob 存储 |
+| \*.powerapps.com |https | create.powerapps.com + web.powerapps.com |
+| \*.azureedge.net |https | create.powerapps.com |
+| \*.blob.core.windows.net |https | Blob 存储 |
+| \*.flow.microsoft.com | https | create.powerapps.com + web.powerapps.com |
 | vortex.data.microsoft.com |https |遥测 |
 
 > [!NOTE]

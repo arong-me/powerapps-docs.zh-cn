@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a2cb87cf68457771605e78970b8d7a923af61fce
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: a7128ace53cc1e0754eb7247282b2ecae7642672
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544366"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517404"
 ---
 # <a name="list-box-control-in-powerapps"></a>PowerApps 中的列表框控件
 用户可以选择一个或多个项的列表。
@@ -30,6 +30,8 @@ ms.locfileid: "61544366"
 **[Default](properties-core.md)** - 用户更改控件前的初始值。
 
 **[Items](properties-core.md)** - 控件中显示的数据源，如库、列表或图表。
+
+**所选**– 表示选定的项的数据记录。
 
 在添加库、列表或图表时，属性列表会默认显示“Items”，以便你轻松指定新控件应显示的数据。 例如，可以将库的“Items”属性设置为 Salesforce 中的“Account”表，在 Excel 中创建并上载到云的名为“Inventory”的表，或者名为“ConferenceSpeakers”的 SharePoint 列表。
 
@@ -95,6 +97,8 @@ ms.locfileid: "61544366"
 **[PressedFill](properties-color-border.md)** – 用户在点击或单击控件时，该控件的背景色。
 
 [Reset](properties-core.md) – 是否还原控件的默认值。
+
+**（已弃用） SelectedText** – 字符串值，该值表示所选的项。
 
 [SelectionColor](properties-color-border.md) – 所选项目或列表中项目的文本颜色，或笔控件中选择工具的颜色。
 

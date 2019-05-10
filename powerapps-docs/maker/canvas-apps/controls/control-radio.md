@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 447cda7a1d8d4f27c8be2b943abd2b5d6b431d49
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 2b1527f8a7bf157c88b85ae9721626b6fc14f5a9
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548768"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517377"
 ---
 # <a name="radio-control-in-powerapps"></a>PowerApps 中的单选控件
 
@@ -39,6 +39,8 @@ ms.locfileid: "61548768"
 **Layout** - 选项是垂直还是水平布局。
 
 **[Value](properties-core.md)** – 输入控件的值。
+
+**所选**– 表示选定的项的数据记录。
 
 ## <a name="all-properties"></a>所有属性
 
@@ -104,7 +106,9 @@ RadioSelectionFill - 单选按钮控件中选定选项的圆圈内显示的颜�
 
 RadioSize - 单选按钮控件中的圆圈直径。
 
-**[Reset](properties-core.md)** - 是否还原控件的默认值。
+[Reset](properties-core.md) – 是否还原控件的默认值。
+
+**（已弃用） SelectedText** – 字符串值，该值表示所选的项。
 
 **[Size](properties-text.md)** – 控件上显示的文本的字号。
 

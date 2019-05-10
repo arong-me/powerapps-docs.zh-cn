@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 90f18c4b490564bc098046831ea932db13fce05d
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: eb8835a2e5c66bb975bc384d9ca782cd3a0f7d85
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321719"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517443"
 ---
 # <a name="date-picker-control-in-powerapps"></a>PowerApps 中的日期选取器控件
 用户可单击或点击以指定日期的控件。
@@ -36,7 +36,7 @@ ms.locfileid: "63321719"
 * 如果用户单击或点击 2017 年的最后一天，“Format”属性设置为“ShortDate”，且“Language”属性设置为“en-us”，那么此控件显示“12/31/2017”。
 * 如果用户单击或点击 2017 年的最后一天，“Format”属性设置为“LongDate”，且“Language”属性设置为“fr-fr”，那么此控件显示“dimanche 31 decembre 2017”。
 
-**Language** - 确定设置日期格式所使用的语言，包括月份名称。 如果未指定此属性，语言将由用户设备设置决定。
+**语言**– 确定用于设置格式的日期，包括月份名称的语言。 如果未指定此属性，语言将由用户设备设置决定。 支持的值包括"EN-我们"和"FR"。
 
 ## <a name="additional-properties"></a>其他属性
 **[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。
@@ -74,6 +74,8 @@ ms.locfileid: "63321719"
 **IconFill** - 日期选取器图标的前景色。
 
 **IconBackground** - 日期选取器图标的背景色。
+
+**InputTextPlaceholder** – 如果未输入日期显示的说明文本。
 
 **[Italic](properties-text.md)** – 控件中的文本是否为斜体。
 

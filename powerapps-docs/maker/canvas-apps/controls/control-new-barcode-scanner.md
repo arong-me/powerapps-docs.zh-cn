@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1e41ec8d228e62c22354d77777a8390bfd442f8c
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 9a4b2c941b5e28c462b85d3c6d54404746e22d04
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543940"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517342"
 ---
 # <a name="barcode-scanner-control-for-canvas-apps"></a>画布应用的条码扫描器控件
 
@@ -60,6 +60,8 @@ ms.locfileid: "61543940"
 **FlashlightEnabled** -是否打开扫描程序时自动启用手电筒。
 
 **[高度](properties-size-location.md)** – 激活扫描程序按钮的高度。
+
+**PreferFrontCamera** -是否前置照相机，如果可用，请使用进行扫描。
 
 **[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
 
