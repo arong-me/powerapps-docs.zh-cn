@@ -1,24 +1,24 @@
 ---
 title: 安装和配置画布应用的技术支持示例 | Microsoft Docs
 description: 在 PowerApps 中安装和配置画布应用的技术支持示例的分步说明。
-author: mr-dang-msft
+author: yijw2017
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
-ms.author: brdang
+ms.author: yijw
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9981a549aaf0ce88f6e66dd4df2c7897901d219b
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 9d1b7eaecc7bd519e9423e6e64387cb6cad76c7f
+ms.sourcegitcommit: 9ec2853aec74e92ccd1e4a7ca54707cdf8b8cdd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61554166"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65535261"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>在 PowerApps 中安装和配置技术支持的示例
 

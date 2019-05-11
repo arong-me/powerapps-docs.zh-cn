@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3a3d272737783abeaf2fe33557457486dae31e45
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 452b5f11ede81c0e19a84026803ea60d7fd3f934
+ms.sourcegitcommit: 26704369b17d2358a77cd4841bd70bbcca3384f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61519193"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65521075"
 ---
 # <a name="text-function-in-powerapps"></a>PowerApps 中的 Text 函数
 将转换的任何值，并设置数字或日期/时间值的文本字符串的格式。
@@ -176,6 +176,7 @@ ms.locfileid: "61519193"
 | **Text( Now(), DateTimeFormat.LongTime24 )** |设置为长时间字符串格式，使用 24 小时制。 |"14:37:47" |
 | **Text( Now(), DateTimeFormat.ShortDate )** |设置为短日期字符串格式，采用当前用户的语言和区域设置。 |"11/23/2015" |
 | **Text( Now(), "d-mmm-yy" )** |使用占位符的格式： <ul><li>**d** 表示相应月份中的多少号，一位数或两位数<li>**-** 是复制到结果中的文本字符<li>**mmm** 表示三个字母的月份缩写<li>**-** 是另一个复制到结果中的文本字符<li>**yy** 表示两位数的年份缩写</ul> |"23-Nov-15" |
+| **Text(1448318857000, "mmm. dd, yyyy (hh:mm:ss AM/PM)")** | 如果源值乘以 1,000 以用户可读格式显示 Unix 日期时间值。 | "11 月 23日，2015 (02:47:37 PM)" |
 
 ### <a name="global-apps"></a>全局应用
 

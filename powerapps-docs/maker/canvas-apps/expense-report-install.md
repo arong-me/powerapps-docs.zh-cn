@@ -1,24 +1,24 @@
 ---
 title: 安装和配置画布应用的零用金报销单示例 | Microsoft Docs
 description: 在 PowerApps 中安装和配置画布应用的零用金报销单示例的分步说明。
-author: mr-dang-msft
+author: yijw2017
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
-ms.author: brdang
+ms.author: yijw
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4640c1f3fcab1382ec70573cea2ac259cf8b2a30
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.openlocfilehash: 4f3ad6f91a7870a84cf5aa74cb49d2f5705f2a31
+ms.sourcegitcommit: 9ec2853aec74e92ccd1e4a7ca54707cdf8b8cdd3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560813"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65535279"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>在 PowerApps 中安装和配置画布应用的零用金报销单示例
 
@@ -29,7 +29,7 @@ ms.locfileid: "61560813"
 > [!TIP]
 > 请观看[这段视频](https://youtu.be/kJXZPILfbwU)，了解如何使用零用金报销单示例应用。 
 
-跟踪费用报销单从提交到审批的整个过程。 将行项统计为应计个人支出，并在准备就绪后提交审批。 要拥有此应用，需完成少量设置。
+跟踪从提交到审批费用报表。 根据个人支出，并提交以供审批准备就绪时，行项进行计数。 要拥有此应用，需完成少量设置。
 
 ![支出报表 PowerApp 的打开屏幕](./media/expense-report-install/expense-report-powerapp.png)
 
@@ -89,8 +89,8 @@ ms.locfileid: "61560813"
 5. 在“列名”文本框中，输入“状态”。
 6. 在“此列中的信息类型为”单选按钮列表中，选择“选项”。
 7. 在“在单独行上输入每个选项”文本框中，输入以下值，每个值单独占一行： 
-    - 开放
-    - Pending
+    - 打开
+    - 挂起
     - Approved
 8. 在“默认值”文本框中，输入“打开”。
 9. 单击“确定”。

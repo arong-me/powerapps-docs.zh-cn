@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a46635276f6598cf0591dc21ae5aeb855b6667c1
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 60340c3833f61be4acf4780a90d18e483c1dc010
+ms.sourcegitcommit: 26704369b17d2358a77cd4841bd70bbcca3384f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560452"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65521039"
 ---
 # <a name="text-input-control-in-powerapps"></a>PowerApps 中的文本输入控件
 用户可在其中键入文本、数字和其他数据的框。
@@ -123,6 +123,8 @@ ms.locfileid: "61560452"
 **[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
 
 [Underline](properties-text.md) – 在文本下方显示的线是否在控件上显示。
+
+**VirtualKeyboardMode** – 虚拟键盘、 文本或数字，应用用户的触摸屏上显示的类型。 **格式**属性确定的默认值。 设备支持而异。 运行 iOS 的设备必须至少具有版本 12.2。 建议的版本的 Android 是 9.0，和的数字键盘的功能在不同的 Android 设备。 Windows 10 不支持此属性。  
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 

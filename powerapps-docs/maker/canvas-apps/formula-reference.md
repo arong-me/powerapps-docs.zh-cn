@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9796cf6c668818110cd6910311ab5b5f61a745df
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c801a67cc7944d32a6a0a93e8b8566618b66da98
+ms.sourcegitcommit: f6c9e525130a03b8c76f0a4b4e90419604c5823c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61559578"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525631"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps 的公式参考
 公式组合了许多元素。  下面列出的包括：
@@ -49,6 +49,8 @@ ms.locfileid: "61559578"
 **[App](functions/signals.md)** – 返回有关当前正在运行的应用的信息，例如当前显示了哪个屏幕。
 
 **[Asin](functions/function-trig.md)** – 以弧度为单位返回某个数字的反正弦值。
+
+**[AsType](functions/function-astype-istype.md)**  – 视为特定实体类型的记录引用。
 
 **[Atan](functions/function-trig.md)** – 以弧度为单位返回某个数字的反正切值。
 
@@ -183,6 +185,8 @@ ms.locfileid: "61559578"
 **[IsNumeric](functions/function-isnumeric.md)** – 检查是否为数字值。
 
 **[IsToday](functions/function-now-today-istoday.md)** – 检查某个日期/时间值是否为今天的某个时间。
+
+**[IsType](functions/function-astype-istype.md)**  – 检查记录引用是否引用特定实体类型。  
 
 ## <a name="l"></a>L
 **[Language](functions/function-language.md)** – 返回当前用户的语言标记。
