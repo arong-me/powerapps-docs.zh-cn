@@ -1,5 +1,5 @@
 ---
-title: 使用示例应用（快速入门）| Microsoft Docs
+title: 使用示例应用 | Microsoft 文档
 description: 分步介绍如何基于 PowerApps 的示例创建画布应用
 author: AFTOwen
 manager: kvivek
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1adf38b59b01bb08bc89c6101a96247b8bce8092
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 1cac73bad25bf1179f88030ee1f02589189610e0
+ms.sourcegitcommit: 4201d95421a74da19c585239b34d7d8620c74113
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61540250"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65546857"
 ---
-# <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>快速入门：从 PowerApps 中的示例创建画布应用
+# <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>从 PowerApps 中的示例创建画布应用
 在本快速入门教程中，将根据示例创建一个画布应用，以便探索设计的可能性，并发现在开发自己的应用时可以应用的概念。
 
 每个示例均展示了一个实际场景，但使用的是虚构数据。 若要存储此数据，需要一个云存储帐户，如 Dropbox、GoogleDrive 或 OneDrive。
