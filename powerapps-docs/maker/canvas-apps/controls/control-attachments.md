@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 31b166dbe0257127d02f410182aaebb70e641da6
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 9d24094bfbc596c232e7455ef3d8b8dcdfc5be5c
+ms.sourcegitcommit: 9b2648a9066fe5d3b27b3d893daacba9b18eb75e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63320872"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65609361"
 ---
 # <a name="attachments-control-in-powerapps"></a>PowerApps 中的附件控件
 允许用户将文件下载到其设备，以及上传和从 SharePoint 列表或 Common Data Service 实体中删除文件的控件。
@@ -27,9 +27,9 @@ ms.locfileid: "63320872"
 附件控件具有以下限制：
 1. 使用 SharePoint 列表和 Common Data Service 实体支持附件。
 
-1. 上传和删除功能仅在表单内部有效。  在编辑模式下，如果不在表单内部，附件控件会处于禁用状态。 请注意，最终用户必须保存表单，才能将文件添加和删除操作保存到后端。
+1. 上传和删除功能仅在表单内部可正常工作。 附件控件显示为禁用状态时在编辑模式，而不是在窗体。 若要保存文件添加和删除操作，应用程序用户必须保存表单。 鉴于此限制，附件控件不是可从**插入**选项卡但显示在窗体时在 SharePoint 或 Common Data Service 的窗体中启用附件窗体字段。
 
-1. 最大只能上传 10 MB 文件。  
+1. 可以上传文件，前提是它们是 10 MB 或更小。  
 
 ## <a name="description"></a>描述
 **附件**控制可以打开、 添加和从 SharePoint 列表或 Common Data Service 实体中删除文件。
