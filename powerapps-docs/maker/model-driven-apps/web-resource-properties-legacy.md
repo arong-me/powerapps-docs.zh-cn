@@ -9,7 +9,7 @@ applies_to:
   - powerapps
 ms.author: matp
 manager: kvivek
-ms.date: 06/27/2018
+ms.date: 04/03/2019
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 82cd41ea-95b0-4606-9e7d-43eb5ce9ecd6
@@ -36,6 +36,8 @@ search.app:
 
 ![添加 Web 资源对话框](media/add-web-resource-dialog.png)
 
+> [!IMPORTANT]
+> 您必须为要在窗体上显示并对用户可见的 Web 资源选择**默认情况下可见**选项。
 
 ## <a name="web-resource-properties"></a>Web 资源属性
 

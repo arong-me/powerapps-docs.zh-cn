@@ -37,7 +37,7 @@ search.app:
   
 <a name="BKMK_Querydata"></a>   
 ## <a name="query-hierarchical-data"></a>查询分层数据  
- 使用 Common Data Service，分层数据结构支持相关记录的自我参照的一对多 (1:N) 关系。 以前，要想查看分层数据，必须对相关记录进行迭代查询。 现在，只需一个步骤就可以按层次结构查询相关数据。 您将可以使用**Under**和**Not Under**逻辑查询记录。 **Under**和**Not Under**分层操作符在“高级查找”和工作流编辑中显示。 有关如何使用这些运算符的详细信息，请参阅[配置工作流步骤](/flow/configure-workflow-steps)。 有关高级查找的更多信息，请查看[创建、编辑或保存高级查找搜索](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)  
+ 使用 Common Data Service，分层数据结构支持相关记录的自引用关系。 以前，要想查看分层数据，必须对相关记录进行迭代查询。 现在，只需一个步骤就可以按层次结构查询相关数据。 您将可以使用**Under**和**Not Under**逻辑查询记录。 **Under**和**Not Under**分层操作符在“高级查找”和工作流编辑中显示。 有关如何使用这些运算符的详细信息，请参阅[配置工作流步骤](/flow/configure-workflow-steps)。 有关高级查找的更多信息，请查看[创建、编辑或保存高级查找搜索](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)  
   
  以下示例说明查询层次结构的不同方案：  
   
@@ -53,17 +53,22 @@ search.app:
   
  ![查询客户的相关商机](media/query-account-related-opportunities.png "查询客户的相关商机")  
   
- 若要按层次结构查询数据，您必须将实体的一对多 (1:N) 自我参照关系设置为分层。 要打开层次结构：  
+ 若要按层次结构查询数据，您必须将实体的一对多或多对一自引用关系设置为分层。 要打开层次结构：  
   
-1.  打开[解决方案资源管理器](../model-driven-apps/advanced-navigation.md#solution-explorer)。 
-  
-2.  选择所需实体，选择 **1:N 关系**，然后选择 (1:N) 关系。 
 
-3.  在**关系定义**中，将**分层**设置为**是**。  
+1. 在 [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**实体**。
+
+2. 单击或点按现有实体或[创建新实体](data-platform-create-entity.md)
+
+3. 单击**关系**。
+
+4.  选择自引用关系。
+
+5.  在关系详细信息面板中，检查**层次结构**。  
   
 > [!NOTE]
-> - 一些现成的 (1:N) 关系是不能自定义的。 这使您无法将这些关系设置为分层形式。  
-> - 您可以为系统自引用关系指定一个分层关系。 这包括系统类型的 1:N 自引用关系，例如“contact_master_contact”关系。  
+> - 一些现成的关系是不能自定义的。 这使您无法将这些关系设置为分层形式。  
+> - 您可以为系统自引用关系指定一个分层关系。 这包括系统类型的自引用关系，例如“contact_master_contact”关系。  
   
 <a name="BKMK_Visualizedata"></a>   
 ## <a name="visualize-hierarchical-data"></a>可视化分层数据  
@@ -85,18 +90,19 @@ search.app:
   
  创建可视化项时切记：  
   
--   每个实体中，只能将一个 (1:N) 自引用关系设置为层次结构形式。 在此关系中，主要实体和相关实体必须类型相同，比如 account_parent_account 或 new_new_widget_new_widget。  
+-   每个实体中，只能将一个 (1:N) 自引用关系设置为层次结构形式。 在此关系中，主要实体和相关实体必须类型相同，比如 account_parent_account 或 Widget_new_Widget_new_Widget。  
   
 -   当前，层次结构或可视化项只基于一个实体。 您可以描述客户层次结构以多层次显示客户，但是您不能在相同层次结构可视化中显示客户和联系人。  
   
 -   磁贴中可显示至多 4 个字段数量。 如果您向用于磁贴视图的快速窗体添加更多字段，则只能显示前四个字段。  
   
 ### <a name="visualization-example"></a>可视化示例  
- 请看为自定义实体创建可视化的示例。 我们创建了名为 new_Widget 的自定义实体，创建了一个 (1:N) 自引用关系 **new_new_widget_new_widget** 并将其标记为层次结构，如此处所示。  
-  
- ![小组件关系定义](media/widget-relationship-definition.png "小组件关系定义")  
-  
- 下一步，在**层次结构设置**网格视图中，我们选择了**new_new_widget_new_widget**层次关系。 在表单中，我们填充了所需字段。 如果您尚未将 (1:N) 关系标记为分层，表单的链接可返回到关系定义表单，您就可以将该关系标记为分层的了。  
+ 请看为自定义实体创建可视化的示例。 我们创建了名为 new_Widget 的自定义实体，创建了自引用关系，并将其标记为分层，如此处所示。  
+ 
+> [!div class="mx-imgBorder"] 
+> ![小组件关系定义](media/widget-relationship-definition.png "小组件关系定义")  
+   
+ 下一步，在**层次结构设置**网格视图中，我们选择了 **Widget_new_Widget_new_Widget** 层次关系。 在表单中，我们填充了所需字段。 如果您尚未将关系标记为分层，窗体的链接可跳转到经典实体编辑器，在这里，您还可以将该关系标记为分层。  
   
  对于**快速窗体视图**，我们创建名为**Widget 层次结构磁贴窗体**的快速窗体。 在此窗体中，我们在每个磁贴中添加了四个显示字段。  
   

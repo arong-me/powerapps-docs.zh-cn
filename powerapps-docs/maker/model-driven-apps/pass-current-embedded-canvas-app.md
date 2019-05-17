@@ -3,7 +3,7 @@ title: 使用嵌入式区域应用作为数据上下文传递当前记录 | Micr
 ms.custom: ''
 ms.date: 12/17/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -81,5 +81,6 @@ search.app:
 ## <a name="see-also"></a>另请参阅
 [在模型驱动的窗体上嵌入区域应用](embed-canvas-app-in-form.md) <br />
 [将一列相关记录作为数据上下文传递到嵌入式区域应用](pass-related-embedded-canvas-app.md) <br />
+[从嵌入的区域应用内在主机窗体上执行预定义操作](embedded-canvas-app-actions.md) <br />
 [共享嵌入式区域应用](share-embedded-canvas-app.md) <br />
 [嵌入式区域应用使用指南](embedded-canvas-app-guidelines.md)

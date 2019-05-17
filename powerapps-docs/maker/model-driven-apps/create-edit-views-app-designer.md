@@ -3,7 +3,7 @@ title: 通过 PowerApps 创建和编辑模型驱动应用程序的公共视图�
 description: 立即了解如何使用应用程序设计器创建或编辑视图
 keywords: ''
 ms.date: 11/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -57,7 +57,7 @@ search.app:
 
 4. 在**创建视图**对话框中，输入名称和描述（可选），然后选择**创建**。 
     
-5. 在视图设计器中，选择加号按钮添加您要在视图中显示的其他列。 详细信息：[向视图中添加列](#add-a-column-to-your-view)
+5. 在视图设计器中，选择加号按钮添加您要在视图中显示的其他列。 详细信息：[在应用程序设计器中向视图添加列](#add-a-column-to-your-view-in-app-designer) 
 
    ![添加列](../common-data-service/media/add-column-to-view.png)
 

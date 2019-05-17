@@ -75,16 +75,13 @@ search.app:
 > [!div class="mx-imgBorder"]  
 > ![向解决方案添加现有组件](media/solution-add-existing-component.PNG "向解决方案添加现有组件")  
   
- 对于托管解决方案，将不会有可用的命令，您将看到一条消息，如下所示。 您将需要查找名为**默认解决方案**的解决方案中的组件，并尝试在其中组件，或将其添加到已经创建的其他非托管解决方案。 组件可能不可自定义。 详细信息：[托管属性](solutions-overview.md#managed-properties)
+ 对于托管解决方案，仅某些命令可用，您将看到一条消息，如下所示。 您将需要查找名为**默认解决方案**的解决方案中的组件，并尝试在其中组件，或将其添加到已经创建的其他非托管解决方案。 组件可能不可自定义。 详细信息：[托管属性](solutions-overview.md#managed-properties)
 
 > [!div class="mx-imgBorder"]  
 > ![托管解决方案](media/managed-solution.PNG "托管解决方案")  
 
  您需要执行的许多自定义将涉及到实体。 您可以使用**实体**筛选器以显示可进行某种程度的自定义的当前解决方案中的所有实体的列表。 在钻取实体后，您可以查看组成实体的组件，如以下屏幕截图中的客户实体所示。 
- 
-> [!NOTE]
->  目前，在向解决方案添加现有实体时，系统会将属于实体一部分的所有组件自动添加到您的解决方案中。 如果这不是您希望的，可使用命令**切换到经典**来导航到经典体验，然后只添加所需的那些组件。 <!-- We will soon improve this experience from PowerApps and allow you to select only the specific component(s) under entity that you want to add into a solution. -->
-  
+   
 > [!div class="mx-imgBorder"]  
 > ![显示已展开的客户实体的演示解决方案](media/solution-entity-account.png "显示已展开的客户实体的演示解决方案")  
 
@@ -94,18 +91,18 @@ search.app:
 
 ## <a name="known-limitations"></a>了解限制
 
-- 删除或移除托管解决方案不会在 PowerApps 中删除区域应用。
 - 解决方案中不提供自定义连接器。
 - 区域应用必须在导入解决方案以更新连接后打开。
-- 在添加现有 SDK 程序集后，它不会显示在解决方案中。 
 - 如果区域应用在托管解决方案中打包，它仍可以在目标环境中编辑。
 - 依赖项对区域应用不可用。
 - 删除托管解决方案不会回滚到其他区域应用版本。 
 -   区域应用访问（CRUD 和安全性）在 PowerApps 中完全托管，而不是在 Common Data Service (Common Data Service) 数据库中。
 -   调用区域应用的 Common Data Service API 被阻止，不返回任何信息。 
--   在解决方案中创建的区域应用不能作为共同负责人共享到 AAD 安全组。
+-   在解决方案中创建的区域应用和流不能作为共同负责人共享到 AAD 安全组。
 -   区域应用不显示在经典解决方案资源管理器中。
--   解决方案不能识别现有区域应用。 
+- 按钮触发的流在解决方案中不可用。
+- 区域应用触发的流在解决方案中不可用。
+- 从 Microsoft 365 应用程序（如 SharePoint 和 Excel）触发的流在解决方案中不可用。
 
  有关自定义解决方案中的单个组件的详细信息，请参阅以下主题：  
   

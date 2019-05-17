@@ -3,7 +3,7 @@ title: 在 PowerApps 选择和配置模型驱动应用程序视图中的列 | Mi
 description: 了解如何选择和配置您的应用的视图
 keywords: ''
 ms.date: 11/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -46,7 +46,7 @@ search.app:
   > 最新视图设计器版本现在正处于预览阶段。 尚不支持某些功能，如启用或禁用列显示和添加查找列。 若要完成这些任务，请[在经典视图设计器中打开视图](/dynamics365/customer-engagement/customize/create-and-edit-views#open-the-classic-view-designer)。
   >  -   [对列启用或禁用状态显示](/dynamics365/customer-engagement/customize/choose-and-configure-columns#BKMK_EnableOrDisablePresence)  
   >
-  >  -   [添加查找列](choose-and-configure-columns.md#BKMK_AddFindColumns)  
+  >  -   [添加查找列](/dynamics365/customer-engagement/customize/choose-and-configure-columns#BKMK_AddFindColumns) 
 
 
 
@@ -111,6 +111,8 @@ search.app:
   
 > [!TIP]
 >   也可以选择要移动的列的标题，然后从下拉列表选择**右移**或**左移**。  
+
+
   
 ## <a name="next-steps"></a>后续步骤
 [创建或编辑视图](create-edit-views.md)

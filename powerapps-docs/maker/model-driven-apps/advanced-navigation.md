@@ -6,9 +6,9 @@ author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.custom: ''
-ms.date: 10/30/2018
+ms.date: 04/11/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -39,9 +39,9 @@ search.app:
 
 1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
 2.  在左侧导航窗格中，选择**解决方案**。  
-3.  选择工具栏中的**切换到经典**可打开解决方案资源管理器。 
-
+3.  选择工具栏中的**切换到经典**可打开**所有解决方案**视图。 
     请注意，在列表中选择解决方案时，**切换到经典**命令不可用。
+4.  在可用解决方案列表中，在**显示名称**列中选择所需的解决方案来打开解决方案资源管理器。
 
 ## <a name="apps"></a>应用
 “应用程序”区域中将解除您在您的环境中有权使用的所有模型驱动和画布应用程序。 除了启动应用程序之外，从“应用”区域，您还可以将安全角色分派到应用程序中。 

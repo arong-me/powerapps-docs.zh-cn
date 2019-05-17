@@ -4,7 +4,7 @@ description: 在本主题中，您将了解如何访问实体视图
 ms.custom: ''
 ms.date: 11/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -31,7 +31,7 @@ search.app:
 ## <a name="open-a-view-for-editing-in-the-latest-view-designer"></a>在最新视图设计器中打开视图进行编辑
 
 > [!IMPORTANT]
-> 最新视图设计器版本现在正处于预览阶段。 尚未支持某些功能，如高级筛选、自定义控件和列属性。 若要完成这些任务，请[在经典视图设计器中打开视图](#open-a-view-in-solution-explorer)。
+> 最新视图设计器版本现在正处于预览阶段。 尚未支持某些功能，如高级筛选、自定义控件和列属性。 要完成这些任务，[打开在解决方案资源管理器中进行编辑的视图](#open-a-view-for-editing-in-solution-explorer)。
 
 1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 

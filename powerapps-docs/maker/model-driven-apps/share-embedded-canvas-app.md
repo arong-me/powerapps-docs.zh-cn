@@ -3,7 +3,7 @@ title: 共享嵌入式区域应用 | MicrosoftDocs
 ms.custom: ''
 ms.date: 01/07/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -42,4 +42,5 @@ search.app:
 [在模型驱动的窗体中嵌入区域应用](embed-canvas-app-in-form.md) <br />
 [将当前记录作为数据上下文传递到嵌入式区域应用](pass-current-embedded-canvas-app.md) <br />
 [将一列相关记录作为数据上下文传递到嵌入式区域应用](pass-related-embedded-canvas-app.md) <br />
+[从嵌入的区域应用内在主机窗体上执行预定义操作](embedded-canvas-app-actions.md) <br />
 [嵌入式区域应用使用指南](embedded-canvas-app-guidelines.md)

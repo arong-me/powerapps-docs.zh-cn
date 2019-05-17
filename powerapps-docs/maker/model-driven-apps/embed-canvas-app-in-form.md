@@ -3,7 +3,7 @@ title: 在模型驱动的窗体上嵌入区域应用 | MicrosoftDocs
 ms.custom: ''
 ms.date: 12/17/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -53,5 +53,6 @@ search.app:
 [适用于 PowerApps 的区域应用连接器概述](../canvas-apps/connections-list.md) <br />
 [将当前记录作为数据上下文传递到嵌入式区域应用](pass-current-embedded-canvas-app.md) <br />
 [将一列相关记录作为数据上下文传递到嵌入式区域应用](pass-related-embedded-canvas-app.md) <br />
+[从嵌入的区域应用内在主机窗体上执行预定义操作](embedded-canvas-app-actions.md) <br />
 [共享嵌入式区域应用](share-embedded-canvas-app.md) <br />
 [嵌入式区域应用使用指南](embedded-canvas-app-guidelines.md)

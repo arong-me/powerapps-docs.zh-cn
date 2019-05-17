@@ -100,6 +100,10 @@ search.app:
 
 解决方案检查器当前不支持 ECMAScript 6 (2015) 或更高版本。 当解决方案检查器使用 ECMAScript 6 或更高版本分析 JavaScript 时，将报告 Web 资源的 web-supported-syntax 问题。  
 
+## <a name="multiple-violations-reported-for-plug-ins-and-workflow-activities-based-on-call-scope"></a>基于调用范围报告的插件和工作流活动的多个冲突
+
+对于问题仅与调用上下文相关的插件和工作流活动规则，解决方案检查器工具将在 IPlugin 接口实现时开始分析，并遍历调用图表来检测该实现范围内的问题。  有时，许多调用路径可能到达检测到问题的相同位置。  由于此问题与调用范围相关，工具可能基于该范围报告来提供更好的影响图片，而不是基于不同位置。 因此，多个问题可能引用应该修复的一个位置。
+
 ## <a name="see-also"></a>另请参阅
 [Common Data Service 的最佳实践和指南](../../developer/common-data-service/best-practices/index.md)<br />
 [模型驱动应用的最佳实践和指南](../../developer/model-driven-apps/best-practices/index.md)<br />
