@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 21e1042dc525e666fcab40610c290793abe37395
-ms.sourcegitcommit: 91f084def8d7c2b78eeef20fa3959d1d34b8da66
+ms.openlocfilehash: d85c93b74e840d9711da0827de9114b9cef9ceab
+ms.sourcegitcommit: 810e9cf313f4690f8dbdfbe179f9ce7227437176
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65516803"
+ms.lasthandoff: 05/19/2019
+ms.locfileid: "65884078"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>画布应用的系统要求、限制和配置值
 本主题包含设备平台和 Web 浏览器要求，以及 PowerApps 的限制和配置值。
@@ -96,10 +96,10 @@ PowerApps 请求使用的 IP 地址取决于该应用所在[环境](../../admini
 | graph.microsoft.com<br>graph.windows.net |https |Azure Graph-用于获取用户信息 （例如，个人资料照片） |
 | gallery.azure.com |https |示例和模板应用 |
 | \*.azure-apim.net |https |API 中心 - 每个区域设置的不同子域 |
-| \*.powerapps.com |https | create.powerapps.com + web.powerapps.com |
-| \*.azureedge.net |https | create.powerapps.com |
+| \*.powerapps.com |https | create.powerapps.com、 make.powerapps.com、 content.powerapps.com 和 web.powerapps.com |
+| \*.azureedge.net |https | create.powerapps.com、 make.powerapps.com、 content.powerapps.com 和 web.powerapps.com |
 | \*.blob.core.windows.net |https | Blob 存储 |
-| \*.flow.microsoft.com | https | create.powerapps.com + web.powerapps.com |
+| \*.flow.microsoft.com | https | create.powerapps.com、 make.powerapps.com、 content.powerapps.com 和 web.powerapps.com |
 | vortex.data.microsoft.com |https |遥测 |
 
 > [!NOTE]
