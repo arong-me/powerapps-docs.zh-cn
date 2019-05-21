@@ -54,7 +54,7 @@ ms.locfileid: "61553899"
 
 | 属性  | 描述 |
 | --- | --- |
-| **App.OnStart** | 应用用户启动它时的行为。 创建者通常使用此属性来检索并缓存数据到集合 **[收集](function-clear-collect-clearcollect.md)** 函数，设置变量 **[设置](function-set.md)** 函数，并导航到包含初始屏幕 **[Navigate](function-navigate.md)** 函数。 第一屏出现之前，会计算此公式。 加载没有屏幕，因此不能设置与上下文变量**[UpdateContext](function-updatecontext.md)** 函数。 但是，可以传递与上下文变量**Navigate**函数。 |
+| **App.OnStart** | 应用用户启动它时的行为。 创建者通常使用此属性来检索并缓存数据到集合 **[收集](function-clear-collect-clearcollect.md)** 函数，设置变量 **[设置](function-set.md)** 函数，并导航到包含初始屏幕 **[Navigate](function-navigate.md)** 函数。 第一屏出现之前，会计算此公式。 加载没有屏幕，因此不能设置与上下文变量 **[UpdateContext](function-updatecontext.md)** 函数。 但是，可以传递与上下文变量**Navigate**函数。 |
 
 **应用**对象显示在左侧的导航窗格中控件的层次结构列表的顶部，你可以选择类似于在屏幕上控件的此对象。 选择的对象后，你可以查看和编辑其属性之一，如果您在公式栏的左侧的下拉列表中选择该属性。  
 
