@@ -13,21 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 43832847f447a9af8a05d149b0d6f3b564b770e1
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 15f3f38dd4812ffcbebeeaab4d301f715c97e1d1
+ms.sourcegitcommit: be110258910aa097b0065da1ee4ea1c40b7e1334
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61530062"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65922531"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>在 PowerApps 中向画布应用添加数据连接
 
-在 PowerApps 中，向现有画布应用或从头开始生成的应用添加数据连接。 应用可以连接到 SharePoint、Salesforce、OneDrive 或[许多其他数据源](connections-list.md)。
+在 PowerApps 中，向现有画布应用或从头开始生成的应用添加数据连接。 您的应用程序可以连接到 SharePoint、 Common Data Service、 Salesforce、 OneDrive 或[许多其他数据源](connections-list.md)。
 
 阅读完本文的[后续步骤](#next-steps)是，在应用中显示和管理相应数据源中的数据，如下面这些示例所述：
 
 * 连接到 OneDrive，并在应用中管理 Excel 工作簿中的数据。
 * 连接到 Twilio，并从应用发送短信。
+* 连接到 Common Data Service，并更新您的应用程序中的实体。
 * 连接 SQL Server，然后通过应用更新表。
 
 ## <a name="prerequisites"></a>先决条件
@@ -64,7 +65,7 @@ ms.locfileid: "61530062"
 
 1. 选择“创建”，创建连接并将其添加到应用中。
 
-    某些连接器（如 Office 365 Outlook）不需要执行额外步骤即可立即从中显示数据。 其他连接器将提示你提供凭据，指定一组特定的数据或执行其他步骤。 例如，[SharePoint](connections/connection-sharepoint-online.md) 和 [SQL Server](connections/connection-azure-sqldatabase.md) 需要在使用之前提供其他信息。
+    某些连接器（如 Office 365 Outlook）不需要执行额外步骤即可立即从中显示数据。 其他连接器将提示你提供凭据，指定一组特定的数据或执行其他步骤。 例如，[SharePoint](connections/connection-sharepoint-online.md) 和 [SQL Server](connections/connection-azure-sqldatabase.md) 需要在使用之前提供其他信息。 与[Common Data Service](connections/connection-common-data-service.md)之前选择一个实体,，可以更改环境。
 
 ## <a name="identify-or-change-a-data-source"></a>标识或更改数据源
 如果正在更新应用，则可能需要确定或更改库、窗体或其他控件中显示的数据源。 例如，您可能需要以标识为你更新应用程序其他人创建或很久以前创建的数据源。
@@ -83,5 +84,5 @@ ms.locfileid: "61530062"
 
 ## <a name="next-steps"></a>后续步骤
 
-* 若要显示和更新数据源（如 Excel、SharePoint Online 或 SQL Server）中的数据，请先[添加库](add-gallery.md)，然后[添加窗体](add-form.md)。
+* 若要显示和更新 Excel、 SharePoint、 Common Data Service 或 SQL Server 等源中的数据[添加一个库](add-gallery.md)，并[添加一个窗体](add-form.md)。
 * 对于其他源中的数据，请使用连接器特定的函数，例如，适用于 [Office 365 Outlook](connections/connection-office365-outlook.md)、[Twitter](connections/connection-twitter.md) 和 [Microsoft Translator](connections/connection-microsoft-translator.md) 的函数。
