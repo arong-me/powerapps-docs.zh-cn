@@ -117,7 +117,7 @@ ms.locfileid: "63318439"
 例如，你可能会设置 **[accessiblelabel](properties-accessibility.md)** 属性**设置**图标**设置**。 此图标不用作按钮。 它是旁边 **[标签](control-text-box.md)** 同样显示**设置**。 屏幕阅读器将图标和标签与读取**设置**，这是不必要地详细。 在这种情况下，该图标不需要 **[accessiblelabel](properties-accessibility.md)**。
 
 > [!IMPORTANT]
-> 屏幕阅读器将读取读取图标或形状**按钮**如果其**[accessiblelabel](properties-accessibility.md)** 设置为空字符串并将其**[TabIndex](properties-accessibility.md)** 设置为零或更高版本。 此类图标或形状以按钮形式呈现。 
+> 屏幕阅读器将读取读取图标或形状**按钮**如果其 **[accessiblelabel](properties-accessibility.md)** 设置为空字符串并将其 **[TabIndex](properties-accessibility.md)** 设置为零或更高版本。 此类图标或形状以按钮形式呈现。 
 
 ### <a name="keyboard-support"></a>键盘支持
 - **[TabIndex](properties-accessibility.md)** 必须为零或更高，如果图形用作按钮。 如果设置此值为图标或形状，键盘用户可以导航到它。

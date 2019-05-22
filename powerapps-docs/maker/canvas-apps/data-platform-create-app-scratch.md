@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/18/2018
+ms.date: 09/21/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1fc257bb8ef99353b78e7a87234397b4ced3bc4a
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: 23c5ead5e8dde0b781c0c83b366baea0a199a56e
+ms.sourcegitcommit: 0272fc5beac5bace5781b1de986a0e2703dd5ddc
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63319617"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65974263"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>使用 Common Data Service 从头开始创建画布应用
 
@@ -92,7 +92,7 @@ ms.locfileid: "63319617"
 
     ![设置窗体的“数据源”和“项”属性](./media/data-platform-create-app-scratch/form-datasource.png)
 
-1. 在右侧窗格的“属性”选项卡上，选择“编辑字段”以打开“字段”窗格。
+1. 上**属性**选项卡的右侧窗格中，选择**编辑字段**以打开**字段**窗格。
 
 1. 选择“添加字段”，然后选择这些字段对应的复选框：
 
@@ -102,6 +102,9 @@ ms.locfileid: "63319617"
     - **地址 1：邮政编码**
     - **员工人数**
     - **年收入**
+
+    > [!NOTE]
+    > 此方案中，外部可以通过选择创建自定义字段**新字段**，提供所需的信息，然后选中**完成**。 详细信息：[创建字段](../common-data-service/create-edit-field-portal.md#create-a-field)。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "选择和添加字段")
 
 1. 选择“添加”。
 
