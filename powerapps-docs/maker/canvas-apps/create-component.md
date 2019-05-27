@@ -10,12 +10,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cc556eaac82f910fa7044def9969c2fb8ca04c4b
-ms.sourcegitcommit: a99f9458a50f6fa64706200bec97273aac20036d
-ms.translationtype: HT
+ms.openlocfilehash: 0a20218d3670775f67b26c907ce5a3a54fa0af7b
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66034862"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66216666"
 ---
 # <a name="create-a-component-for-canvas-apps"></a>创建画布应用的组件
 
@@ -184,7 +184,6 @@ ms.locfileid: "66034862"
 ## <a name="known-limitations"></a>已知的限制
 
 - 在撰写本文时，数据源不会保存与组件，因此禁用窗体和数据的表。
-- 如果在组件中创建一个变量，该变量仅限于该组件，并且不会显示与应用程序变量。
 - PowerApps 不支持组件中的集合。
 - 无法将组件插入库、 窗体或数据卡。
 - 组件的主实例是本地 master 和应用程序以作为作用域。 如果更改了主实例，仅在应用内组件的副本将反映此更改。 在其他应用中的副本将保持相同，除非再次导入组件库。 这些应用程序中的所有主机实例将自动检测和更新。
