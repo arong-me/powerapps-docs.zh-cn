@@ -10,12 +10,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 369304ded3fdc9fcd69459da9875e6080d5d860c
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: MT
+ms.openlocfilehash: cc556eaac82f910fa7044def9969c2fb8ca04c4b
+ms.sourcegitcommit: a99f9458a50f6fa64706200bec97273aac20036d
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61561871"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66034862"
 ---
 # <a name="create-a-component-for-canvas-apps"></a>创建画布应用的组件
 
@@ -50,9 +50,12 @@ ms.locfileid: "61561871"
 
 ## <a name="import-and-export"></a>导入和导出
 
-如果将导出一个组件，可创建可以导入到不同的应用的本地文件。 如果应用包含同一组件的修改的版本，系统会提示来确定是否要替换为修改后的版本或取消导入。 撰写本文时，不能将组件保存到云或在环境中共享它们。
+若要从一个应用程序的一个或多个组件导入另一个，请选择**导入组件**在下拉列表中的组件。 对话框中列出的所有应用都包含有权编辑的组件。 选择一个应用程序、，然后选择**导入**来导入所有在该应用中的组件的最新的已发布的版本。 导入至少一个组件后，可以编辑您的副本并删除任何不需要。
 
-![导入和导出](./media/create-component/import.png)
+> [!div class="mx-imgBorder"]
+> ![导入组件对话框](./media/create-component/import-components.png)
+
+如果将导出一个组件，可创建可以导入到不同的应用的本地文件。 如果应用包含同一组件的修改的版本，系统会提示来确定是否要替换为修改后的版本或取消导入。 
 
 ## <a name="custom-properties"></a>自定义属性
 
@@ -180,7 +183,7 @@ ms.locfileid: "61561871"
 
 ## <a name="known-limitations"></a>已知的限制
 
-- 在撰写本文时，数据源不会保存与组件，因此禁用窗体和数据的表。 
+- 在撰写本文时，数据源不会保存与组件，因此禁用窗体和数据的表。
 - 如果在组件中创建一个变量，该变量仅限于该组件，并且不会显示与应用程序变量。
 - PowerApps 不支持组件中的集合。
 - 无法将组件插入库、 窗体或数据卡。

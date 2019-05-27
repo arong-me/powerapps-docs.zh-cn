@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 03/18/2019
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: 4e24047d44beb19e55dadb8d653604e47460a5d2
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
-ms.translationtype: HT
+ms.openlocfilehash: eb90f35286098f27454e6cad883b0113a211af78
+ms.sourcegitcommit: 9b2648a9066fe5d3b27b3d893daacba9b18eb75e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357566"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65609401"
 ---
 # <a name="what-is-powerapps"></a>什么是 PowerApps？
 
-PowerApps 是一系列应用、服务、连接器和数据平台，可提供快速的应用程序开发环境，以根据业务需求生成自定义应用程序。 使用 PowerApps，可以快速生成自定义业务应用，这些应用连接到存储在任一底层数据平台（面向应用程序的 Common Data Service）或各种联机和本地数据源（SharePoint、Excel、Office 365、Dynamics 365、SQL Server 等）中的业务数据。 
+PowerApps 是一系列应用、服务、连接器和数据平台，可提供快速的应用程序开发环境，以根据业务需求生成自定义应用程序。 使用 PowerApps，可以快速生成自定义业务应用，这些应用连接到存储在任一底层数据平台（面向应用程序的 [Common Data Service](/powerapps/maker/common-data-service/data-platform-intro)）或各种联机和本地数据源（SharePoint、Excel、Office 365、Dynamics 365、SQL Server 等）中的业务数据。 
 
 使用 PowerApps 生成的应用提供丰富的业务逻辑和工作流功能，这些功能可将手动业务流程转换为数字化、自动化流程。 此外，使用 PowerApps 生成的应用具有响应式设计，可以在浏览器或移动设备（手机或平板电脑）上无缝运行。 PowerApps 使用户能够在不编写代码的情况下生成功能丰富的自定义业务应用，从而使自定义业务应用生成体验变得民主化。
 

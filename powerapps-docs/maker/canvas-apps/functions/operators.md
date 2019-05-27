@@ -13,20 +13,21 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d8436656150d3abf36c8c4a26efc46e940e35f06
-ms.sourcegitcommit: 6b75019dccc5296a313f9ff0eb397003f13ce737
+ms.openlocfilehash: 284e9dfca0dff9a3bb92c2f5b073cfbe962ce5e9
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65940486"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66216000"
 ---
 # <a name="operators-in-powerapps"></a>在 PowerApps 中的运算符
+
 其中的某些运算符依赖于作者的语言。  有关详细信息，请参阅[全局应用](../global-apps.md)。
 
 
 |                               符号                                |                        类型                         |                                                                                    语法                                                                                    |                                                                                                                           描述                                                                                                                            |
 |---------------------------------------------------------------------|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                **.**                                |                  属性选择器                  |                                                               **Slider1.Value<br>Color.Red<br>Acceleration.X**                                                               |                                               从[表](../working-with-tables.md)、控件、[信号](signals.md) 或枚举中提取属性。  对于向后兼容性，**!** 也可以使用。                                                |
+|                                **.**                                |                  属性选择器                  |                                                               **Slider1.Value<br>Color.Red<br>Acceleration.X**                                                               |                                               从[表](../working-with-tables.md)、控件、[信号](signals.md) 或枚举中提取属性。  对于向后兼容性， **!** 也可以使用。                                                |
 | **.**<br>[[language dependent](../global-apps.md)]  |                  小数分隔符                  |                                                             **1.23**                                                           |                                                                              整数和小数之间的分隔符。 字符取决于语言。                                                                              |
 |                               **( )**                               |                     括号                     |                                                               **Filter(T, A &lt; 10)**<br><br>**(1 + 2) \* 3**                                                               |                                                                                           强制执行优先顺序和较大表达式中的组子表达式                                                                                           |
 |                                **+**                                |                算数运算符                 |                                                                                  **1 + 2**                                                                                   |                                                                                                                             加法                                                                                                                             |
@@ -51,7 +52,7 @@ ms.locfileid: "65940486"
 |                               **in**                                |                       &nbsp;                        |                                                      **&quot;The&quot; in &quot;The keyboard and the monitor...&quot;**                                                      |                                                                                                                子字符串测试（不区分大小写）                                                                                                                 |
 |                                **@**                                | [消除歧义运算符](#disambiguation-operator) |                                                                           **MyTable[@fieldname]**                                                                            |                                                                                                                       字段消除歧义                                                                                                                       |
 |                                **@**                                |                       &nbsp;                        |                                                                              **[@MyVariable]**                                                                               |                                                                                                                      全局消除歧义                                                                                                                       |
-| **,**<br>[[language dependent](../global-apps.md)]  |                   列表分隔符                    | **If( X < 10, "Low", "Good" )**<br>**{X:12，Y:32 }**<br>**[ 1, 2, 3 ]** | 分隔： <ul><li>函数调用中的参数</li><li>[记录](../working-with-tables.md#elements-of-a-table)中的字段</li><li>[值表](../working-with-tables.md#inline-syntax)中的记录</li></ul>。  此字符取决于的语言。 |
+| **,**<br>[[language dependent](../global-apps.md)]  |                   列表分隔符                    | **If( X < 10, "Low", "Good" )**<br>**{X:12，Y:32 }**<br>**[ 1, 2, 3 ]** | 分隔： <ul><li>函数调用中的参数</li><li>[记录](../working-with-tables.md#elements-of-a-table)中的字段</li><li>在中记录[表](../working-with-tables.md#inline-value-tables)</li></ul> 此字符取决于的语言。 |
 | **;**<br>[[language dependent](../global-apps.md)] |                  公式链接                   |                                     **Collect(T, A); Navigate(S1, &quot;&quot;)**                                     |                                                                          在行为属性中分隔函数的调用。 链接运算符取决于的语言。                                                                          |
 |                             **Parent**                              |         [Parent 运算符](#parent-operator)         |                                                                               **Parent.Fill**                                                                                |                                                                                                           控件容器属性的访问权限                                                                                                            |
 |                            **ThisItem**                             |       [ThisItem 运算符](#thisitem-operator)       |                                                                            **ThisItem.FirstName**                                                                            |                                                                                                          库或窗体控件字段的访问权限                                                                                                           |
@@ -86,8 +87,8 @@ PowerApps 中的任何控件都可由应用内任何位置的名称引用。 **S
 ## <a name="disambiguation-operator"></a>消除歧义运算符
 某些函数创建[记录作用域](../working-with-tables.md#record-scope)，从而在处理每个记录时访问表的字段，例如 **Filter**、**AddColumns** 和 **Sum**。  使用记录作用域添加的字段名称将替代应用中来自其他位置的同一名称。  在此情况下，仍可以使用 **@** 消除歧义运算符访问来自记录作用域外部的值：
 
-* 若要访问来自嵌套记录作用域的值，请使用 **@** 运算符，其中所操作的表名称使用该模式：<br>_Table_**[@**_FieldName_**]**
-* 若要访问全局值，如数据源、集合和上下文变量，请使用模式 **[@**_ObjectName_**]**（无需指派表）。
+* 若要访问来自嵌套记录作用域的值，请使用 **@** 运算符，其中所操作的表名称使用该模式：<br>_Table_ **[@** _FieldName_ **]**
+* 若要访问全局值，如数据源、集合和上下文变量，请使用模式 **[@** _ObjectName_ **]** （无需指派表）。
 
 有关详细信息和示例，请参阅[记录作用域](../working-with-tables.md#record-scope)。
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d85c93b74e840d9711da0827de9114b9cef9ceab
-ms.sourcegitcommit: 810e9cf313f4690f8dbdfbe179f9ce7227437176
+ms.openlocfilehash: c304a313032e00af81181ca71b39e7aa7de9fc8f
+ms.sourcegitcommit: c0edddb287b3d3db56f60bdb46fe971e26e85e9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2019
-ms.locfileid: "65884078"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "66224632"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>画布应用的系统要求、限制和配置值
 本主题包含设备平台和 Web 浏览器要求，以及 PowerApps 的限制和配置值。
@@ -84,7 +84,6 @@ PowerApps 请求使用的 IP 地址取决于该应用所在[环境](../../admini
 | 美国 | 13.89.171.80 - 13.89.171.95, 52.173.245.164, 40.71.11.80 - 40.71.11.95, 40.71.249.205, 40.70.146.208 - 40.70.146.223, 52.232.188.154, 52.162.107.160 - 52.162.107.175, 52.162.242.161, 40.112.243.160 - 40.112.243.175, 104.42.122.49 |
 | 美国（提前访问）  | 13.71.195.32 - 13.71.195.47, 52.161.102.22, 13.66.140.128 - 13.66.140.143, 52.183.78.157 |
 
-
 ## <a name="required-services"></a>所需的服务
 此列表标识了 PowerApps Studio 所谈及的所有服务及其用途。 你的网络**不应**阻止这些服务。
 
@@ -104,3 +103,7 @@ PowerApps 请求使用的 IP 地址取决于该应用所在[环境](../../admini
 
 > [!NOTE]
 > 如果你使用的是 VPN，则必须将其配置为从 PowerApps Mobile 的隧道中排除 localhost。
+
+## <a name="size-limits"></a>大小限制
+
+您可以找到有关大小限制在文本、 超链接、 图像和媒体中的信息[数据类型](functions/data-types.md#text-hyperlink-image-and-media)。

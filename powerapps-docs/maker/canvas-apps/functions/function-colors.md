@@ -13,26 +13,29 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 883ea1a63952a01cf1f131b0ccae6629a0324b2c
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 882fa81d61c57c29af94b44bebad97fce4e95631
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321509"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66219665"
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>PowerApps 中的 Color 枚举与 ColorFade、ColorValue 以及 RGBA 函数
+
 使用内置颜色值，定义自定义颜色以及 Alpha 值混合处理。
 
 ## <a name="description"></a>描述
-通过 **Color** 枚举可轻松访问 HTML 的级联样式表 (CSS) 定义的颜色。  例如，**Color.Red** 返回纯红色。  本文末尾提供了这些颜色的列表。   
+
+通过 **Color** 枚举可轻松访问 HTML 的级联样式表 (CSS) 定义的颜色。 例如，**Color.Red** 返回纯红色。  本文末尾提供了这些颜色的列表。
 
 **ColorValue** 函数基于 CSS 颜色字符串返回颜色。  CSS 颜色的名称（如“RosyBrown”）和十六进制值（如“#bc8f8f”）均可以使用。
 
-**RGBA** 函数基于红色、绿色和蓝色颜色组件返回颜色。  它还包括一个 Alpha 组件，该组件用于混合在彼此之上层叠的对象的颜色。  Alpha 可从 0 或 0%（完全透明且不可见）到 1 或 100%（完全不透明，完全遮蔽了下面的图层）变化。
+**RGBA** 函数基于红色、绿色和蓝色颜色组件返回颜色。 它还包括一个 Alpha 组件，该组件用于混合在彼此之上层叠的对象的颜色。  Alpha 可从 0 或 0%（完全透明且不可见）到 1 或 100%（完全不透明，完全遮蔽了下面的图层）变化。
 
-**ColorFade** 函数返回更亮或更深的颜色版本。  淡化量可从 -1（使颜色完全变暗为黑色）到 0（对颜色没有影响）到 1（使颜色完全变亮为白色）变化。  
+**ColorFade** 函数返回更亮或更深的颜色版本。 淡入淡出量而异，从-1 或-100%（这完全变暗为黑色） 为 0 （这对颜色没有任何影响） 为 1 或 100%（这使完全变亮为白色的颜色）。
 
 ## <a name="syntax"></a>语法
+
 **Color**.*ColorName*
 
 * *ColorName* - 必需。  级联样式表 (CSS) 颜色名称。  请参阅下面可能的枚举值的列表。
@@ -44,14 +47,14 @@ ms.locfileid: "63321509"
 **RGBA**(*Red*, *Green*, *Blue*, *Alpha*)
 
 * *Red*、*Green*、*Blue* - 必需。  颜色组件值，范围从 0（无饱和度）到 255（完全饱和度）。
-* *Alpha* - 必需。  Alpha 组件，范围从 0（完全透明）到 1（完全不透明）。  还可以使用百分比（0% 到 100%）。
+* *Alpha* - 必需。  Alpha 组件，范围从 0（完全透明）到 1（完全不透明）。 还可以使用百分比（0% 到 100%）。
 
 **ColorFade**(*Color*, *FadeAmount*)
 
 * *Color* - 必需。  颜色值（如 **Color.Red**），或者 **ColorValue** 或 **RGBA** 的输出。
-* *FadeAmount* - 必需。  介于 -1 和 1 之间的数字。  -1（使颜色完全变暗为黑色）、0（对颜色没有影响）和 1（使颜色完全变亮为白色）。  
+* *FadeAmount* - 必需。  介于 -1 和 1 之间的数字。  -1（使颜色完全变暗为黑色）、0（对颜色没有影响）和 1（使颜色完全变亮为白色）。 此外可以使用-100 的百分比为 100%%
 
-## <a name="built-in-colors"></a>内置颜色
+## <a name="built-in-colors"></a>内置的颜色
 
 | Color 枚举 | 带有十六进制代码的 ColorValue | RGBA | 颜色样本 |
 | --- | --- | --- | --- |

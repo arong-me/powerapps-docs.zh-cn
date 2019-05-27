@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: db0e42a45af217e9e5703242c2a5a867a52b687b
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: MT
+ms.openlocfilehash: 0337c7f79a81d7368128b6ef11d4d108345d3923
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63317826"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66216241"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>了解 PowerApps 中的数据卡
 
@@ -97,9 +97,6 @@ PowerApps 为字符串、数字和其他数据类型提供了一组预定义的�
 
 在编辑栏中，将此控件的 **Image** 属性设置为 *TextBox*.**Text**，其中 *TextBox* 是保存 URL 的“文本输入”控件的名称：
 
-> [!TIP]
-> 按 Alt 键可以显示每个控件的名称。
-
 ![](./media/working-with-cards/show-image.png)
 
 现在，我们可以看到图像并编辑其 URL 了。 注意，我们也可以使用 **Parent.Default** 作为 **Image** 属性，但当用户更改 URL 时它不会更新。
@@ -139,7 +136,7 @@ PowerApps 为字符串、数字和其他数据类型提供了一组预定义的�
 
 ![](./media/working-with-cards/dissect-card1.png)
 
-按下 Alt 键来显示构成此卡的控件的名称：
+在此图中，标记数据卡内的控件：
 
 ![](./media/working-with-cards/dissect-card2.png)
 

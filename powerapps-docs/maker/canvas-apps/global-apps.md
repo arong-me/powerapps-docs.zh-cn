@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ee2e2b854b56dadfd63b35a984e92db2ca515093
-ms.sourcegitcommit: 8bad6bff1b3397b21654df4a9357dd0180fbcfe6
+ms.openlocfilehash: 9ca80511875ff8534e5b07c3a7844485ff70a4a5
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65046045"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66216155"
 ---
 # <a name="build-global-support-into-canvas-apps"></a>为画布应用构建全球支持
 PowerApps 是全球性的产品。 你可以在许多不同的语言和区域中构建和使用画布应用。
@@ -67,14 +67,14 @@ PowerApps 是全球性的产品。 你可以在许多不同的语言和区域中
 
 | 作者的语言小数分隔符 | PowerApps 小数分隔符 | PowerApps 列表分隔符 | PowerApps 链接运算符 |
 | --- | --- | --- | --- |
-| **.** （圆点或句点） |**.** （圆点或句点） |**,**（逗号） |**;**（分号） |
-| **,**（逗号） |**,**（逗号） |**;**（分号） |**;;**（双分号） |
+| **.** （圆点或句点） |**.** （圆点或句点） |**,** （逗号） |**;** （分号） |
+| **,** （逗号） |**,** （逗号） |**;** （分号） |**;;** （双分号） |
 
 PowerApps 列表分隔符中的更改是与 Excel 列表分隔符会发生什么情况保持一致。  它影响以下项：
 
 * 函数调用中的参数。
 * [记录](working-with-tables.md#elements-of-a-table)中的字段。
-* [值表](working-with-tables.md#inline-syntax)中的记录。
+* 在中记录[表](working-with-tables.md#inline-value-tables)。
 
 例如，考虑下面的公式语言和使用圆点或句点作为小数分隔符，如日本或英国区域以表示：
 
@@ -113,7 +113,7 @@ PowerApps 列表分隔符中的更改是与 Excel 列表分隔符会发生什么
 
 **Text** 需要通过格式字符串来知道你希望如何设置数字或日期的格式。  此格式字符串可以采用以下两种形式之一：
 
-* **全球知晓的枚举。**  例如，**Text(Now(), DateTimeFormat.LongDate)**。  此公式将使用语言相应的格式设置当前日期的格式。  这是用于指定格式字符串的首选方法。
+* **全球知晓的枚举。**  例如，**Text(Now(), DateTimeFormat.LongDate)** 。  此公式将使用语言相应的格式设置当前日期的格式。  这是用于指定格式字符串的首选方法。
 * **自定义格式字符串。**  例如，**Text( Now(), "[$-en-US]dddd, mmmm dd, yyyy" )** 在以语言“en-US”使用时将显示与枚举相同的文本。  自定义格式字符串的优点是，你可以确切地指定所需的格式。
 
 自定义格式字符串前面的 "[$-en-US]" 告知 **Text** 用哪种语言解释该自定义格式字符串。  这会被插入并默认为你的创作语言。  通常不需要更改它。  在使用不同语言的作者编辑同一应用时，它将十分有用。

@@ -116,7 +116,7 @@ ms.locfileid: "61543939"
 
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
-适用按钮**[](control-button.md)** 的相同准则，因为“麦克风”是专用按钮。 此外，请考虑以下方面：
+适用 **[按钮](control-button.md)** 的相同准则，因为“麦克风”是专用按钮。 此外，请考虑以下方面：
 
 ### <a name="audio-alternatives"></a>音频替代项
 * 请考虑为有语言障碍或没有麦克风的用户添加另一种输入形式。 例如，**[文本输入](control-text-input.md)**，允许用户输入文本。

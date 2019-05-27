@@ -65,7 +65,7 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 很多情况下都可以使用公式：
 
 * 启用设备的 GPS 后，地图控件就可以使用公式通过 **Location.Latitude** 和 **Location.Longitude** 来显示当前位置。  移动时，地图会自动跟踪你的位置。
-* 其他用户可能会更新[数据源](working-with-data-sources.md)。  例如，团队中的其他人可能会更新 SharePoint 列表中的项。  刷新数据源时，相关公式会根据更新的数据自动重新计算。 就此示例来说，你可以进一步将库的 **[Items](controls/properties-core.md)** 属性设置为公式 **Filter( SharePointList )**，以便自动显示新筛选的[记录](working-with-tables.md#records)集。
+* 其他用户可能会更新[数据源](working-with-data-sources.md)。  例如，团队中的其他人可能会更新 SharePoint 列表中的项。  刷新数据源时，相关公式会根据更新的数据自动重新计算。 就此示例来说，你可以进一步将库的 **[Items](controls/properties-core.md)** 属性设置为公式 **Filter( SharePointList )** ，以便自动显示新筛选的[记录](working-with-tables.md#records)集。
 
 ### <a name="benefits"></a>权益
 
@@ -162,9 +162,9 @@ PowerApps 提供三种类型的变量：
 
 中出现时，将隐式创建的所有变量**设置**， **UpdateContext**， **Navigate**，**收集**，或**ClearCollect**函数。 若要声明一个变量，其类型，您只需包含它在任何这些函数中任意位置应用程序中。 这些函数均不创建变量;它们仅使用值填充变量。 您永远不会声明变量显式可能在另一种编程工具中以及所有键入是隐式从使用情况。
 
-例如，你可能具有的按钮控件**OnSelect**公式等于**集 (X，1)**。 此公式建立**X**为具有数字的类型的变量。 可以使用**X** as 编号和该变量的公式中的值为*空白*打开应用之后，但之前选择的按钮。 时选择的按钮，需授予**X**的值**1**。
+例如，你可能具有的按钮控件**OnSelect**公式等于**集 (X，1)** 。 此公式建立**X**为具有数字的类型的变量。 可以使用**X** as 编号和该变量的公式中的值为*空白*打开应用之后，但之前选择的按钮。 时选择的按钮，需授予**X**的值**1**。
 
-如果你添加另一个按钮，然后设置其**OnSelect**属性设置为**集 (X，"Hello")**，将发生错误，因为类型 （文本字符串） 的类型不匹配在以前**设置**（数字）。 所有隐式定义的变量必须达成类型。 同样，所有发生此情况由于你提到**X**在公式中，不是因为有实际运行任何这些公式。
+如果你添加另一个按钮，然后设置其**OnSelect**属性设置为**集 (X，"Hello")** ，将发生错误，因为类型 （文本字符串） 的类型不匹配在以前**设置**（数字）。 所有隐式定义的变量必须达成类型。 同样，所有发生此情况由于你提到**X**在公式中，不是因为有实际运行任何这些公式。
 
 通过删除所有删除变量**设置**， **UpdateContext**， **Navigate**，**收集**，或**ClearCollect**隐式建立该变量的函数。 而无需这些函数，该变量不存在。 此外必须删除对该变量的任何引用，因为它们会导致错误。
 
@@ -186,7 +186,7 @@ PowerApps 提供三种类型的变量：
 
 `Pi() * Power( Radius, 2 )`
 
-如果提供的上下文变量的全局变量或集合的名称相同，上下文变量优先。 但是，可以仍引用全局变量或集合如果您使用[消除歧义运算符](functions/operators.md#disambiguation-operator) **@[Radius]**。
+如果提供的上下文变量的全局变量或集合的名称相同，上下文变量优先。 但是，可以仍引用全局变量或集合如果您使用[消除歧义运算符](functions/operators.md#disambiguation-operator) **@[Radius]** 。
 
 ## <a name="use-a-context-variable"></a>使用上下文变量
 
@@ -220,7 +220,7 @@ PowerApps 提供三种类型的变量：
 
     **UpdateContext( { RunningTotal:0 } )**
 
-    同样， **[UpdateContext](functions/function-updatecontext.md)** 与公式一起使用**UpdateContext ({RunningTotal:0 } )**.
+    同样， **[UpdateContext](functions/function-updatecontext.md)** 与公式一起使用**UpdateContext ({RunningTotal:0 } )** .
 
     ![清除按钮的 OnSelect 属性](media/working-with-variables/context-variable-2.png)
 

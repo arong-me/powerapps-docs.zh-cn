@@ -1,24 +1,24 @@
 ---
 title: 在 PowerApps 中使用认知服务 | Microsoft 文档
 description: 构建使用 Azure 认知服务文本分析 API 分析文本的基本画布应用。
-author: gregli-msft
+author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 12/08/2017
-ms.author: gregli
+ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 07548ff8fb14626543472b72ea52b80c858eeb0e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ee3f7684ed1636cf2445945d1d01507733c18625
+ms.sourcegitcommit: dd74c98f48587730466e6669fc94da250d5c631e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61556122"
+ms.lasthandoff: 05/26/2019
+ms.locfileid: "66224932"
 ---
 # <a name="use-cognitive-services-in-powerapps"></a>在 PowerApps 中使用认知服务
 本文介绍如何生成使用的基本画布应用[Azure 认知服务文本分析 API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview)分析文本。 我们将介绍如何设置文本分析 API，以及如何使用[文本分析连接器](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/)连接到它。 随后将介绍如何创建调用此 API 的画布应用。
@@ -172,7 +172,7 @@ If( chkSentiment.Value = true,
 
   * 在 DetectLanguage() 中，将 numberOfLanguagesToDetect 硬编码为 1。不过，也可以根据应用中的某逻辑传递此参数。
 
-  * 在中**keyphrases （)** 并**detectsentiment （)**，**语言**是硬编码为"en"，但您可以传递此参数基于应用程序中的一些逻辑。 例如，可以先检测语言，再根据 DetectLanguage() 返回的内容设置此参数。
+  * 在中**keyphrases （)** 并**detectsentiment （)** ，**语言**是硬编码为"en"，但您可以传递此参数基于应用程序中的一些逻辑。 例如，可以先检测语言，再根据 DetectLanguage() 返回的内容设置此参数。
 
 * 针对执行的各个调用，将结果添加到相应的集合：
 

@@ -38,7 +38,7 @@ ms.locfileid: "61535819"
 
 **[相机](controls/control-camera.md)** – 在应用或数据源中拍摄和保存照片。
 
-**[卡片](controls/control-card.md)** – 显示和编辑**[编辑窗体](controls/control-form-detail.md)** 或**[显示窗体](controls/control-form-detail.md)** 控件中某条记录的单个字段。
+**[卡片](controls/control-card.md)** – 显示和编辑 **[编辑窗体](controls/control-form-detail.md)** 或 **[显示窗体](controls/control-form-detail.md)** 控件中某条记录的单个字段。
 
 **[复选框](controls/control-check-box.md)** – 选中或清除某个选项以指定 **true** 或 **false**。
 
@@ -130,19 +130,19 @@ ms.locfileid: "61535819"
 
 **[Align](controls/properties-text.md)** – 文本相对于其控件的水平居中的位置。  适用于许多控件。
 
-**[AllItems](controls/control-gallery.md)** – 库中的所有项，包括属于库模板的其他控件值。  适用于**[库](controls/control-gallery.md)** 控件。
+**[AllItems](controls/control-gallery.md)** – 库中的所有项，包括属于库模板的其他控件值。  适用于 **[库](controls/control-gallery.md)** 控件。
 
-**AutoDisableOnSelect** – 在执行 OnSelect 行为时自动禁用控件。  适用于**[按钮](controls/control-button.md)** 和**[图像](controls/control-image.md)** 控件。
+**AutoDisableOnSelect** – 在执行 OnSelect 行为时自动禁用控件。  适用于 **[按钮](controls/control-button.md)** 和 **[图像](controls/control-image.md)** 控件。
 
-**[AutoHeight](controls/properties-size-location.md)** - 标签是否会在“[Text](controls/properties-core.md)”属性包含超过控件可显示的字符数时自动变高。 适用于**[标签](controls/control-text-box.md)** 控件。
+**[AutoHeight](controls/properties-size-location.md)** - 标签是否会在“[Text](controls/properties-core.md)”属性包含超过控件可显示的字符数时自动变高。 适用于 **[标签](controls/control-text-box.md)** 控件。
 
-**AutoPause** - 用户导航到另一屏幕时音频或视频剪辑是否自动暂停。  适用于**[音频](controls/control-audio-video.md)**、**[计时器](controls/control-timer.md)** 和**[视频](controls/control-audio-video.md)** 控件。
+**AutoPause** - 用户导航到另一屏幕时音频或视频剪辑是否自动暂停。  适用于 **[音频](controls/control-audio-video.md)**、 **[计时器](controls/control-timer.md)** 和 **[视频](controls/control-audio-video.md)** 控件。
 
-**AutoStart** – 用户导航到包含音频或视频控件的屏幕时，该控件是否自动开始播放剪辑。  适用于**[音频](controls/control-audio-video.md)**、**[计时器](controls/control-timer.md)** 和**[视频](controls/control-audio-video.md)** 控件。
+**AutoStart** – 用户导航到包含音频或视频控件的屏幕时，该控件是否自动开始播放剪辑。  适用于 **[音频](controls/control-audio-video.md)**、 **[计时器](controls/control-timer.md)** 和 **[视频](controls/control-audio-video.md)** 控件。
 
 ### <a name="b"></a>B
 
-**[BackgroundImage](controls/properties-visual.md)** – 显示在屏幕背景中的图像文件的名称。  适用于**[屏幕](controls/control-screen.md)** 控件。
+**[BackgroundImage](controls/properties-visual.md)** – 显示在屏幕背景中的图像文件的名称。  适用于 **[屏幕](controls/control-screen.md)** 控件。
 
 **[BorderColor](controls/properties-color-border.md)** – 控件边框的颜色。  适用于许多控件。
 
@@ -150,31 +150,31 @@ ms.locfileid: "61535819"
 
 **[BorderThickness](controls/properties-color-border.md)** – 控件边框的粗细。  适用于许多控件。
 
-**[Brightness](controls/control-camera.md)** – 用户在图像中可能感知到的光线强度。  适用于**[相机](controls/control-camera.md)** 控件。
+**[Brightness](controls/control-camera.md)** – 用户在图像中可能感知到的光线强度。  适用于 **[相机](controls/control-camera.md)** 控件。
 
 ### <a name="c"></a>C
 
-**[CalculateOriginalDimensions](controls/control-image.md)** – 启用 **[OriginalHeight](controls/control-image.md)** 和 **[OriginalWidth](controls/control-image.md)** 属性。  适用于**[图像](controls/control-image.md)** 控件。
+**[CalculateOriginalDimensions](controls/control-image.md)** – 启用 **[OriginalHeight](controls/control-image.md)** 和 **[OriginalWidth](controls/control-image.md)** 属性。  适用于 **[图像](controls/control-image.md)** 控件。
 
-**[Camera](controls/control-camera.md)** – 在具有多个相机的设备上，应用使用的相机的数字 ID。  适用于**[相机](controls/control-camera.md)** 控件。
+**[Camera](controls/control-camera.md)** – 在具有多个相机的设备上，应用使用的相机的数字 ID。  适用于 **[相机](controls/control-camera.md)** 控件。
 
-**[CheckboxBackgroundFill](controls/control-check-box.md)** – 复选框控件中围绕选中标记的框的背景色。  适用于**[复选框](controls/control-check-box.md)** 控件。
+**[CheckboxBackgroundFill](controls/control-check-box.md)** – 复选框控件中围绕选中标记的框的背景色。  适用于 **[复选框](controls/control-check-box.md)** 控件。
 
-**[CheckboxBorderColor](controls/control-check-box.md)** – 复选框控件中围绕选中标记的边框颜色。  适用于**[复选框](controls/control-check-box.md)** 控件。
+**[CheckboxBorderColor](controls/control-check-box.md)** – 复选框控件中围绕选中标记的边框颜色。  适用于 **[复选框](controls/control-check-box.md)** 控件。
 
-**[CheckboxSize](controls/control-check-box.md)** – 复选框控件中围绕选中标记的框的宽度和高度。  适用于**[复选框](controls/control-check-box.md)** 控件。
+**[CheckboxSize](controls/control-check-box.md)** – 复选框控件中围绕选中标记的框的宽度和高度。  适用于 **[复选框](controls/control-check-box.md)** 控件。
 
-**[CheckmarkFill](controls/control-check-box.md)** – 复选框控件中选中标记的颜色。  适用于**[复选框](controls/control-check-box.md)** 控件。
+**[CheckmarkFill](controls/control-check-box.md)** – 复选框控件中选中标记的颜色。  适用于 **[复选框](controls/control-check-box.md)** 控件。
 
 **[ChevronBackground](controls/control-drop-down.md)** – 下拉列表中的向下箭头的背景色。  适用于**[下拉列表](controls/control-drop-down.md)** 控件。
 
 **[ChevronFill](controls/control-drop-down.md)** – 下拉列表中的向下箭头的颜色。  适用于**[下拉列表](controls/control-drop-down.md)** 控件。
 
-**[Clear](controls/control-text-input.md)** – 文本输入控件是否显示“X”，用户可点击或单击该符号以清除该控件的内容。  适用于**[文本输入](controls/control-text-input.md)** 控件。
+**[Clear](controls/control-text-input.md)** – 文本输入控件是否显示“X”，用户可点击或单击该符号以清除该控件的内容。  适用于 **[文本输入](controls/control-text-input.md)** 控件。
 
 **[Color](controls/properties-color-border.md)** – 控件中文本的颜色。  适用于许多控件。
 
-**[Contrast](controls/control-camera.md)** – 用户可区分图像中相似颜色的轻松程度。  适用于**[相机](controls/control-camera.md)** 控件。
+**[Contrast](controls/control-camera.md)** – 用户可区分图像中相似颜色的轻松程度。  适用于 **[相机](controls/control-camera.md)** 控件。
 
 **[CurrentFindText](controls/control-pdf-viewer.md)** – 当前正在使用的搜索词。  适用于 **[PDF 查看器](controls/control-pdf-viewer.md)** 控件。
 
@@ -186,7 +186,7 @@ ms.locfileid: "61535819"
 
 **[DataField](controls/control-card.md)** – 此卡片显示和编辑的记录中字段的名称。  适用于**[卡片](controls/control-card.md)** 控件。
 
-**[DataSource](controls/control-form-detail.md)** – 数据源，其中包含允许用户显示、编辑或创建的记录。  适用于**[显示窗体](controls/control-form-detail.md)** 和**[编辑窗体](controls/control-form-detail.md)** 控件。
+**[DataSource](controls/control-form-detail.md)** – 数据源，其中包含允许用户显示、编辑或创建的记录。  适用于 **[显示窗体](controls/control-form-detail.md)** 和 **[编辑窗体](controls/control-form-detail.md)** 控件。
 
 **[Default](controls/properties-core.md)** - 用户更改控件前的初始值。  适用于许多控件。
 
@@ -194,7 +194,7 @@ ms.locfileid: "61535819"
 
 [DefaultMode](controls/control-form-detail.md) – 表单控件的初始模式，可以是“Edit”、“New”或“View”。  适用于**[编辑表单](controls/control-form-detail.md)** 控件。
 
-**[Direction](controls/control-gallery.md)** – 库中的第一个横向项是否显示在左边缘或右边缘的附近。  适用于**[库](controls/control-gallery.md)** 控件。
+**[Direction](controls/control-gallery.md)** – 库中的第一个横向项是否显示在左边缘或右边缘的附近。  适用于 **[库](controls/control-gallery.md)** 控件。
 
 **[Disabled](controls/properties-core.md)** – 用户是否可以与控件交互。  适用于许多控件。
 
@@ -222,7 +222,7 @@ ms.locfileid: "61535819"
 * **[卡片](controls/control-card.md)** 控件 – 验证失败时，针对该字段显示的用户友好错误消息。
 * **[编辑窗体](controls/control-form-detail.md)** 控件 – 在 **[SubmitForm](functions/function-form.md)** 函数失败时为此窗体显示的用户友好型错误消息。
 
-**[ErrorKind](controls/control-form-detail.md)** – 如果 **SubmitForm** 运行时发生错误，则此项为所发生错误的类型。  适用于**[显示窗体](controls/control-form-detail.md)** 和**[编辑窗体](controls/control-form-detail.md)** 控件。
+**[ErrorKind](controls/control-form-detail.md)** – 如果 **SubmitForm** 运行时发生错误，则此项为所发生错误的类型。  适用于 **[显示窗体](controls/control-form-detail.md)** 和 **[编辑窗体](controls/control-form-detail.md)** 控件。
 
 **[Explode](controls/control-pie-chart.md)** – 饼图中楔形间的距离。  适用于**[饼图](controls/control-pie-chart.md)** 控件。
 
@@ -254,7 +254,7 @@ ms.locfileid: "61535819"
 
 **[Height](controls/properties-size-location.md)** – 控件上边缘和下边缘之间的距离。  适用于许多控件。
 
-**[HintText](controls/control-text-input.md)** - 文本输入控件为空时其中显示的浅灰色文本。  适用于**[文本输入](controls/control-text-input.md)** 控件。
+**[HintText](controls/control-text-input.md)** - 文本输入控件为空时其中显示的浅灰色文本。  适用于 **[文本输入](controls/control-text-input.md)** 控件。
 
 **[HoverBorderColor](controls/properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件边框的颜色。  适用于许多控件。
 
@@ -266,7 +266,7 @@ ms.locfileid: "61535819"
 
 ### <a name="i"></a>I
 
-[Image](controls/properties-visual.md) – 在图像、音频或麦克风控件中显示的图像名称。  适用于**[音频](controls/control-audio-video.md)**、**[图像](controls/control-image.md)**、**[麦克风](controls/control-microphone.md)** 和**[视频](controls/control-audio-video.md)** 控件。
+[Image](controls/properties-visual.md) – 在图像、音频或麦克风控件中显示的图像名称。  适用于 **[音频](controls/control-audio-video.md)**、 **[图像](controls/control-image.md)**、**[麦克风](controls/control-microphone.md)** 和 **[视频](controls/control-audio-video.md)** 控件。
 
 **[ImagePosition](controls/properties-visual.md)** – 屏幕或控件大小与图像大小不同时，其中图像的位置（“填充”、“适应”、“拉伸”、“平铺”或“居中”）。  适用于许多控件。
 
@@ -274,7 +274,7 @@ ms.locfileid: "61535819"
 
 **[Italic](controls/properties-text.md)** – 控件中的文本是否为斜体。  适用于许多控件。
 
-**[Item](controls/control-form-detail.md)** – **DataSource** 中允许用户显示或编辑的记录。  适用于**[显示窗体](controls/control-form-detail.md)** 和**[编辑窗体](controls/control-form-detail.md)** 控件。
+**[Item](controls/control-form-detail.md)** – **DataSource** 中允许用户显示或编辑的记录。  适用于 **[显示窗体](controls/control-form-detail.md)** 和 **[编辑窗体](controls/control-form-detail.md)** 控件。
 
 **[ItemBorderColor](controls/control-pie-chart.md)** – 饼图中每个楔形周围边框的颜色。  适用于**[饼图](controls/control-pie-chart.md)** 控件。
 
@@ -292,13 +292,13 @@ ms.locfileid: "61535819"
 
 **[LabelPosition](controls/control-pie-chart.md)** – 饼图中标签相对于楔形的位置。  适用于**[饼图](controls/control-pie-chart.md)** 控件。
 
-**[LastSubmit](controls/control-form-detail.md)** – 上一次成功提交的记录，包括服务器生成的任何字段。  适用于**[编辑窗体](controls/control-form-detail.md)** 控件。
+**[LastSubmit](controls/control-form-detail.md)** – 上一次成功提交的记录，包括服务器生成的任何字段。  适用于 **[编辑窗体](controls/control-form-detail.md)** 控件。
 
 **Layout** – 用户是滚动浏览库还是从上到下（**垂直**）或从左到右（**水平**）调整滑块。  适用于**[库](controls/control-gallery.md)** 和**[滑块](controls/control-slider.md)** 控件。
 
-**[LineHeight](controls/properties-text.md)** – 诸如文本行之间或列表中各项之间的距离。  适用于**[列表框](controls/control-list-box.md)**、**[单选按钮](controls/control-radio.md)**、**[标签](controls/control-text-box.md)** 和**[文本输入](controls/control-text-input.md)** 控件。
+**[LineHeight](controls/properties-text.md)** – 诸如文本行之间或列表中各项之间的距离。  适用于 **[列表框](controls/control-list-box.md)**、 **[单选按钮](controls/control-radio.md)**、**[标签](controls/control-text-box.md)** 和 **[文本输入](controls/control-text-input.md)** 控件。
 
-**[Loop](controls/control-audio-video.md)** – 音频或视频剪辑是否在播放完成后自动重新开始。  适用于**[音频](controls/control-audio-video.md)** 和**[视频](controls/control-audio-video.md)** 控件。
+**[Loop](controls/control-audio-video.md)** – 音频或视频剪辑是否在播放完成后自动重新开始。  适用于 **[音频](controls/control-audio-video.md)** 和 **[视频](controls/control-audio-video.md)** 控件。
 
 ### <a name="m"></a>M
 
@@ -308,7 +308,7 @@ ms.locfileid: "61535819"
 
 **Max** – 用户可对滑块或评分设置的最大值。  适用于**[评分](controls/control-rating.md)** 和**[滑块](controls/control-slider.md)** 控件。
 
-**[MaxLength](controls/control-text-input.md)** – 用户可键入文本输入控件中的字符数。  适用于**[文本输入](controls/control-text-input.md)** 控件。
+**[MaxLength](controls/control-text-input.md)** – 用户可键入文本输入控件中的字符数。  适用于 **[文本输入](controls/control-text-input.md)** 控件。
 
 **Media** – 音频或视频控件播放的剪辑的标识符。  适用于**[添加图片](controls/control-add-picture.md)**、**[音频](controls/control-audio-video.md)** 和**[视频](controls/control-audio-video.md)** 控件。
 
@@ -326,7 +326,7 @@ ms.locfileid: "61535819"
 
 ### <a name="n"></a>N
 
-**[NavigationStep](controls/control-gallery.md)** – 如果库的 **[ShowNavigation](controls/control-gallery.md)** 属性设置为 **true** 且用户选择该库任意一端的导航箭头，则该库滚动的距离是多少。  适用于**[库](controls/control-gallery.md)** 控件。
+**[NavigationStep](controls/control-gallery.md)** – 如果库的 **[ShowNavigation](controls/control-gallery.md)** 属性设置为 **true** 且用户选择该库任意一端的导航箭头，则该库滚动的距离是多少。  适用于 **[库](controls/control-gallery.md)** 控件。
 
 **[NumberOfSeries](controls/control-column-line-chart.md)** – 在柱形图或折线图中显示的列数。  适用于**[柱形图](controls/control-column-line-chart.md)** 和**[折线图](controls/control-column-line-chart.md)** 控件。
 
@@ -334,43 +334,43 @@ ms.locfileid: "61535819"
 
 **[OnChange](controls/properties-core.md)** - 应用在用户更改控件值（例如，通过调整滑块）时的行为。  适用于许多控件。
 
-**OnCheck** - 应用在复选框或切换按钮的值更改为“true”时的行为。  适用于**[复选框](controls/control-check-box.md)** 和**[切换](controls/control-toggle.md)** 控件。
+**OnCheck** - 应用在复选框或切换按钮的值更改为“true”时的行为。  适用于 **[复选框](controls/control-check-box.md)** 和 **[切换](controls/control-toggle.md)** 控件。
 
-**[OnEnd](controls/control-audio-video.md)** - 应用在音频或视频剪辑播放完毕后的行为。  适用于**[音频](controls/control-audio-video.md)** 和**[视频](controls/control-audio-video.md)** 控件。
+**[OnEnd](controls/control-audio-video.md)** - 应用在音频或视频剪辑播放完毕后的行为。  适用于 **[音频](controls/control-audio-video.md)** 和 **[视频](controls/control-audio-video.md)** 控件。
 
-**[OnFailure](controls/control-form-detail.md)** - 应用在数据操作不成功时的行为。  适用于**[编辑窗体](controls/control-form-detail.md)** 控件。
+**[OnFailure](controls/control-form-detail.md)** - 应用在数据操作不成功时的行为。  适用于 **[编辑窗体](controls/control-form-detail.md)** 控件。
 
-**[OnHidden](controls/control-screen.md)** - 应用在用户离开屏幕时的行为。  适用于**[屏幕](controls/control-screen.md)** 控件。
+**[OnHidden](controls/control-screen.md)** - 应用在用户离开屏幕时的行为。  适用于 **[屏幕](controls/control-screen.md)** 控件。
 
-**[OnPause](controls/control-audio-video.md)** - 应用在用户暂停音频或视频控件正在播放的剪辑时的行为。  适用于**[音频](controls/control-audio-video.md)** 和**[视频](controls/control-audio-video.md)** 控件。
+**[OnPause](controls/control-audio-video.md)** - 应用在用户暂停音频或视频控件正在播放的剪辑时的行为。  适用于 **[音频](controls/control-audio-video.md)** 和 **[视频](controls/control-audio-video.md)** 控件。
 
-**[OnReset](controls/control-form-detail.md)** - 应用在“[编辑表单](controls/control-form-detail.md)”控件重置时的行为。  适用于**[编辑窗体](controls/control-form-detail.md)** 控件。
+**[OnReset](controls/control-form-detail.md)** - 应用在“[编辑表单](controls/control-form-detail.md)”控件重置时的行为。  适用于 **[编辑窗体](controls/control-form-detail.md)** 控件。
 
 **[OnSelect](controls/properties-core.md)** - 应用在用户点击或单击控件时的行为。  适用于许多控件。
 
-**OnStart** - 应用在用户打开应用或开始使用“麦克风”控件录制音频时的行为。 适用于“[音频](controls/control-audio-video.md)”、“[麦克风](controls/control-microphone.md)”、“[屏幕](controls/control-screen.md)”和“[视频](controls/control-audio-video.md)”控件。
+**OnStart** - 应用在用户打开应用或开始使用“麦克风”控件录制音频时的行为。 适用于 **[音频](controls/control-audio-video.md)**、 **[麦克风](controls/control-microphone.md)**、 **[屏幕](controls/control-screen.md)** 和 **[视频](controls/control-audio-video.md)** 控件。
 
 **[OnStateChange](controls/control-pdf-viewer.md)** - 应用在控件状态发生更改时的行为。 适用于 **[PDF 查看器](controls/control-pdf-viewer.md)** 控件。
 
 **[OnStop](controls/control-microphone.md)** - 应用在用户停止使用“麦克风”控件录制音频时的行为。 适用于**[麦克风](controls/control-microphone.md)** 控件。
 
-**[OnStream](controls/control-camera.md)** - 应用在“[Stream](controls/control-camera.md)”属性更新时的行为。  适用于**[相机](controls/control-camera.md)** 控件。
+**[OnStream](controls/control-camera.md)** - 应用在“[Stream](controls/control-camera.md)”属性更新时的行为。  适用于 **[相机](controls/control-camera.md)** 控件。
 
-**[OnSuccess](controls/control-form-detail.md)** - 应用在数据操作成功时的行为。  适用于**[编辑窗体](controls/control-form-detail.md)** 控件。
+**[OnSuccess](controls/control-form-detail.md)** - 应用在数据操作成功时的行为。  适用于 **[编辑窗体](controls/control-form-detail.md)** 控件。
 
 **[OnTimerEnd](controls/control-timer.md)** - 应用在计时器运行完毕时的行为。  适用于**[计时器](controls/control-timer.md)** 控件。
 
 **[OnTimerStart](controls/control-timer.md)** - 应用在计时器开始运行时的行为。  适用于**[计时器](controls/control-timer.md)** 控件。
 
-**OnUncheck** - 应用在复选框或切换按钮的值更改为“false”时的行为。  适用于**[复选框](controls/control-check-box.md)** 和**[切换](controls/control-toggle.md)** 控件。
+**OnUncheck** - 应用在复选框或切换按钮的值更改为“false”时的行为。  适用于 **[复选框](controls/control-check-box.md)** 和 **[切换](controls/control-toggle.md)** 控件。
 
-**[OnVisible](controls/control-screen.md)** - 应用在用户转到屏幕时的行为。  适用于**[屏幕](controls/control-screen.md)** 控件。
+**[OnVisible](controls/control-screen.md)** - 应用在用户转到屏幕时的行为。  适用于 **[屏幕](controls/control-screen.md)** 控件。
 
-**[OriginalHeight](controls/control-image.md)** – 使用 **[CalculateOriginalDimensions](controls/control-image.md)** 属性启用的图像的原始高度。  适用于**[图像](controls/control-image.md)** 控件。
+**[OriginalHeight](controls/control-image.md)** – 使用 **[CalculateOriginalDimensions](controls/control-image.md)** 属性启用的图像的原始高度。  适用于 **[图像](controls/control-image.md)** 控件。
 
-**[OriginalWidth](controls/control-image.md)** – 使用 **[CalculateOriginalDimensions](controls/control-image.md)** 属性启用的图像的原始宽度。  适用于**[图像](controls/control-image.md)** 控件。
+**[OriginalWidth](controls/control-image.md)** – 使用 **[CalculateOriginalDimensions](controls/control-image.md)** 属性启用的图像的原始宽度。  适用于 **[图像](controls/control-image.md)** 控件。
 
-**[Overflow](controls/control-text-box.md)** - 标签是否会在“[Wrap](controls/control-text-box.md)”属性设置为“true”且“[Text](controls/properties-core.md)”属性值包含的字符数超过控件一次可显示的字符数时显示滚动条。  适用于**[标签](controls/control-text-box.md)** 控件。
+**[Overflow](controls/control-text-box.md)** - 标签是否会在“[Wrap](controls/control-text-box.md)”属性设置为“true”且“[Text](controls/properties-core.md)”属性值包含的字符数超过控件一次可显示的字符数时显示滚动条。  适用于 **[标签](controls/control-text-box.md)** 控件。
 
 ### <a name="p"></a>P
 
@@ -388,11 +388,11 @@ ms.locfileid: "61535819"
 
 **[PageCount](controls/control-pdf-viewer.md)** – 文档中的页数。  适用于 **[PDF 查看器](controls/control-pdf-viewer.md)** 控件。
 
-**[Paused](controls/control-audio-video.md)** – 如果媒体播放控件当前已暂停，则为 *true*，否则为 *false*。  适用于**[音频](controls/control-audio-video.md)** 和**[视频](controls/control-audio-video.md)** 控件。
+**[Paused](controls/control-audio-video.md)** – 如果媒体播放控件当前已暂停，则为 *true*，否则为 *false*。  适用于 **[音频](controls/control-audio-video.md)** 和 **[视频](controls/control-audio-video.md)** 控件。
 
-**[Photo](controls/control-camera.md)** – 用户拍摄照片时捕获的图像。  适用于**[相机](controls/control-camera.md)** 控件。
+**[Photo](controls/control-camera.md)** – 用户拍摄照片时捕获的图像。  适用于 **[相机](controls/control-camera.md)** 控件。
 
-**[Pressed](controls/control-button.md)** – 按下控件时为 *true*，否则为 *false*。  适用于**[按钮](controls/control-button.md)** 控件。
+**[Pressed](controls/control-button.md)** – 按下控件时为 *true*，否则为 *false*。  适用于 **[按钮](controls/control-button.md)** 控件。
 
 **[PressedBorderColor](controls/properties-color-border.md)** – 用户在点击或单击控件时，该控件边框的颜色。  适用于许多控件。
 
@@ -402,13 +402,13 @@ ms.locfileid: "61535819"
 
 ### <a name="r"></a>R
 
-**[RadioBackgroundFill](controls/control-radio.md)** – 单选按钮控件中的圆圈背景色。  适用于**[单选按钮](controls/control-radio.md)** 控件。
+**[RadioBackgroundFill](controls/control-radio.md)** – 单选按钮控件中的圆圈背景色。  适用于 **[单选按钮](controls/control-radio.md)** 控件。
 
-**[RadioBorderColor](controls/control-radio.md)** – 单选按钮控件中每个选项的圆圈颜色。  适用于**[单选按钮](controls/control-radio.md)** 控件。
+**[RadioBorderColor](controls/control-radio.md)** – 单选按钮控件中每个选项的圆圈颜色。  适用于 **[单选按钮](controls/control-radio.md)** 控件。
 
-**[RadioSelectionFill](controls/control-radio.md)** – 单选按钮控件中选定选项圆圈内显示的颜色。  适用于**[单选按钮](controls/control-radio.md)** 控件。
+**[RadioSelectionFill](controls/control-radio.md)** – 单选按钮控件中选定选项圆圈内显示的颜色。  适用于 **[单选按钮](controls/control-radio.md)** 控件。
 
-**[RadioSize](controls/control-radio.md)** – 单选按钮控件中的圆圈直径。  适用于**[单选按钮](controls/control-radio.md)** 控件。
+**[RadioSize](controls/control-radio.md)** – 单选按钮控件中的圆圈直径。  适用于 **[单选按钮](controls/control-radio.md)** 控件。
 
 **[RadiusBottomLeft](controls/properties-size-location.md)** – 控件左下角圆角的程度。  适用于许多控件。
 
@@ -434,7 +434,7 @@ ms.locfileid: "61535819"
 
 ### <a name="s"></a>S
 
-**Selected** – 选定的项。  适用于**[下拉列表](controls/control-drop-down.md)** 和**[库](controls/control-gallery.md)** 控件。
+**Selected** – 选定的项。  适用于 **[下拉列表](controls/control-drop-down.md)** 和 **[库](controls/control-gallery.md)** 控件。
 
 **[SelectedDate](controls/control-date-picker.md)** – 日期控件中当前选定的日期。  适用于**[日期选取器](controls/control-date-picker.md)** 控件。
 
@@ -454,61 +454,61 @@ ms.locfileid: "61535819"
 
 **[ShowLabels](controls/control-pie-chart.md)** – 饼图是否显示与每个其楔形相关联的值。  适用于**[饼图](controls/control-pie-chart.md)** 控件。
 
-**[ShowNavigation](controls/control-gallery.md)** – 是否在库的每一端都显示有一个箭头，使用户能够通过单击或点击一个箭头滚动浏览库中的项。  适用于**[库](controls/control-gallery.md)** 控件。
+**[ShowNavigation](controls/control-gallery.md)** – 是否在库的每一端都显示有一个箭头，使用户能够通过单击或点击一个箭头滚动浏览库中的项。  适用于 **[库](controls/control-gallery.md)** 控件。
 
-**[ShowScrollbar](controls/control-gallery.md)** – 当用户将鼠标悬停在库上时，是否显示滚动条。  适用于**[库](controls/control-gallery.md)** 控件。
+**[ShowScrollbar](controls/control-gallery.md)** – 当用户将鼠标悬停在库上时，是否显示滚动条。  适用于 **[库](controls/control-gallery.md)** 控件。
 
 **ShowValue** – 当用户更改滑块或评分的值或将鼠标悬停在控件上时，是否显示该值。  适用于**[评分](controls/control-rating.md)** 和**[滑块](controls/control-slider.md)** 控件。
 
 **[Size](controls/properties-text.md)** – 控件上显示的文本的字号。  适用于许多控件。
 
-**[Snap](controls/control-gallery.md)** – 当用户滚动库时，是否自动对齐以便出现完整的下一项。  适用于**[库](controls/control-gallery.md)** 控件。
+**[Snap](controls/control-gallery.md)** – 当用户滚动库时，是否自动对齐以便出现完整的下一项。  适用于 **[库](controls/control-gallery.md)** 控件。
 
-**Start** – 音频或视频剪辑是否播放。  适用于**[音频](controls/control-audio-video.md)**、**[计时器](controls/control-timer.md)** 和**[视频](controls/control-audio-video.md)** 控件。
+**Start** – 音频或视频剪辑是否播放。  适用于 **[音频](controls/control-audio-video.md)**、 **[计时器](controls/control-timer.md)** 和 **[视频](controls/control-audio-video.md)** 控件。
 
-**[StartTime](controls/control-audio-video.md)** – 音频或视频剪辑开始播放之后的时间。  适用于**[音频](controls/control-audio-video.md)** 和**[视频](controls/control-audio-video.md)** 控件。
+**[StartTime](controls/control-audio-video.md)** – 音频或视频剪辑开始播放之后的时间。  适用于 **[音频](controls/control-audio-video.md)** 和 **[视频](controls/control-audio-video.md)** 控件。
 
 **[StartYear](controls/control-date-picker.md)** – 用户可将日期选取器控件的值设置成的最早年份。  适用于**[日期选取器](controls/control-date-picker.md)** 控件。
 
-**[Stream](controls/control-camera.md)** – 基于 **[StreamRate](controls/control-camera.md)** 属性自动更新的图像。  适用于**[相机](controls/control-camera.md)** 控件。
+**[Stream](controls/control-camera.md)** – 基于 **[StreamRate](controls/control-camera.md)** 属性自动更新的图像。  适用于 **[相机](controls/control-camera.md)** 控件。
 
-**[StreamRate](controls/control-camera.md)** – 在 **[Stream](controls/control-camera.md)** 属性上更新图像的频率（以毫秒为单位）。  此值的范围为 100（1/10 秒）到 3,600,000（1 小时）。  适用于**[相机](controls/control-camera.md)** 控件。
+**[StreamRate](controls/control-camera.md)** – 在 **[Stream](controls/control-camera.md)** 属性上更新图像的频率（以毫秒为单位）。  此值的范围为 100（1/10 秒）到 3,600,000（1 小时）。  适用于 **[相机](controls/control-camera.md)** 控件。
 
 [Strikethrough](controls/properties-text.md) – 通过文本显示的线是否在控件上显示。  适用于许多控件。
 
 ### <a name="t"></a>T
 
-**[TemplateFill](controls/control-gallery.md)** – 库的背景色。  适用于**[库](controls/control-gallery.md)** 控件。
+**[TemplateFill](controls/control-gallery.md)** – 库的背景色。  适用于 **[库](controls/control-gallery.md)** 控件。
 
-**[TemplatePadding](controls/control-gallery.md)** – 库中项之间的距离。  适用于**[库](controls/control-gallery.md)** 控件。
+**[TemplatePadding](controls/control-gallery.md)** – 库中项之间的距离。  适用于 **[库](controls/control-gallery.md)** 控件。
 
-**[TemplateSize](controls/control-gallery.md)** – 垂直/纵向的库模板高度或水平/横向的库模板宽度。  适用于**[库](controls/control-gallery.md)** 控件。
+**[TemplateSize](controls/control-gallery.md)** – 垂直/纵向的库模板高度或水平/横向的库模板宽度。  适用于 **[库](controls/control-gallery.md)** 控件。
 
 **[Text](controls/properties-core.md)** – 在控件上显示或用户键入到控件中的文本。  适用于许多控件。
 
-**[Time](controls/control-audio-video.md)** – 媒体控件的当前位置。  适用于**[音频](controls/control-audio-video.md)** 和**[视频](controls/control-audio-video.md)** 控件。
+**[Time](controls/control-audio-video.md)** – 媒体控件的当前位置。  适用于 **[音频](controls/control-audio-video.md)** 和 **[视频](controls/control-audio-video.md)** 控件。
 
 **[Tooltip](controls/properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。  适用于许多控件。
 
-**[Transition](controls/control-gallery.md)** – 用户将鼠标悬停在库中的项上时显示的视觉效果（“弹出”、“推出”或“无”）。  适用于**[库](controls/control-gallery.md)** 控件。
+**[Transition](controls/control-gallery.md)** – 用户将鼠标悬停在库中的项上时显示的视觉效果（“弹出”、“推出”或“无”）。  适用于 **[库](controls/control-gallery.md)** 控件。
 
-**[Transparency](controls/control-image.md)** – 图像后的控件保持可见的程度。  适用于**[图像](controls/control-image.md)** 控件。
+**[Transparency](controls/control-image.md)** – 图像后的控件保持可见的程度。  适用于 **[图像](controls/control-image.md)** 控件。
 
 ### <a name="u"></a>U
 
 [Underline](controls/properties-text.md) – 在文本下方显示的线是否在控件上显示。  适用于许多控件。
 
-**[Unsaved](controls/control-form-detail.md)** – 如果**[编辑窗体](controls/control-form-detail.md)** 控件包含尚未保存的用户更改，则此项为 True。  适用于**[编辑窗体](controls/control-form-detail.md)** 控件。
+**[Unsaved](controls/control-form-detail.md)** – 如果 **[编辑窗体](controls/control-form-detail.md)** 控件包含尚未保存的用户更改，则此项为 True。  适用于 **[编辑窗体](controls/control-form-detail.md)** 控件。
 
 **[Update](controls/control-card.md)** – 写回到字段数据源的值。  适用于**[卡片](controls/control-card.md)** 控件。
 
-**[Updates](controls/control-form-detail.md)** – 在窗体控件中加载的记录的值，用于写回到数据源。  适用于**[编辑窗体](controls/control-form-detail.md)** 控件。
+**[Updates](controls/control-form-detail.md)** – 在窗体控件中加载的记录的值，用于写回到数据源。  适用于 **[编辑窗体](controls/control-form-detail.md)** 控件。
 
 ### <a name="v"></a>V
 
-**Valid** – **[卡片](controls/control-card.md)** 或**[编辑窗体](controls/control-form-detail.md)** 控件是否包含可提交到数据源的有效记录。  适用于**[卡片](controls/control-card.md)** 和**[编辑窗体](controls/control-form-detail.md)** 控件。
+**Valid** – **[卡片](controls/control-card.md)** 或 **[编辑窗体](controls/control-form-detail.md)** 控件是否包含可提交到数据源的有效记录。  适用于 **[卡片](controls/control-card.md)** 和 **[编辑窗体](controls/control-form-detail.md)** 控件。
 
-**[Value](controls/properties-core.md)** – 输入控件的值。  适用于**[复选框](controls/control-check-box.md)**、**[单选按钮](controls/control-radio.md)**、**[滑块](controls/control-slider.md)** 和**[切换](controls/control-toggle.md)** 控件。
+**[Value](controls/properties-core.md)** – 输入控件的值。  适用于 **[复选框](controls/control-check-box.md)**、 **[单选按钮](controls/control-radio.md)**、 **[滑块](controls/control-slider.md)** 和 **[切换](controls/control-toggle.md)** 控件。
 
 **ValueFill** – 切换控件的值为 **true** 时该控件中矩形的背景色，或滑块控件中控点左侧线条的颜色。  适用于**[滑块](controls/control-slider.md)** 和**[切换](controls/control-toggle.md)** 控件。
 
@@ -524,9 +524,9 @@ ms.locfileid: "61535819"
 
 **[WidthFit](controls/properties-size-location.md)** - 控件是否会自动水平变宽，以填充容器控件（如“[编辑表单](controls/control-form-detail.md)”控件）的所有空白空间。 如果多张数据卡将此属性设置为“true”，那么空白空间会被这些数据卡均分。 有关详细信息，请参阅[了解数据表单布局](working-with-form-layout.md)。
 
-**[Wrap](controls/control-text-box.md)** - 太长而无法容纳在标签中的文本是否换到下一行。  适用于**[标签](controls/control-text-box.md)** 控件。
+**[Wrap](controls/control-text-box.md)** - 太长而无法容纳在标签中的文本是否换到下一行。  适用于 **[标签](controls/control-text-box.md)** 控件。
 
-**[WrapCount](controls/control-gallery.md)**  – 库的每个项中显示多少条记录。  适用于**[库](controls/control-gallery.md)** 控件。
+**[WrapCount](controls/control-gallery.md)**  – 库的每个项中显示多少条记录。  适用于 **[库](controls/control-gallery.md)** 控件。
 
 ### <a name="x"></a>X
 
@@ -546,4 +546,4 @@ ms.locfileid: "61535819"
 
 ### <a name="z"></a>Z
 
-**Zoom** – 相机中图像被放大的百分比或 PDF 查看器中文件的视图百分比。  适用于**[相机](controls/control-camera.md)** 和 **[PDF 查看器](controls/control-pdf-viewer.md)** 控件。
+**Zoom** – 相机中图像被放大的百分比或 PDF 查看器中文件的视图百分比。  适用于 **[相机](controls/control-camera.md)** 和 **[PDF 查看器](controls/control-pdf-viewer.md)** 控件。

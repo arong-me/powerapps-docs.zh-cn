@@ -1,24 +1,24 @@
 ---
 title: 将 InfoPath 窗体转换为画布应用 | Microsoft Docs
 description: 借助常见方案的相关信息以及在画布应用中创建这些项的方法，开始将 InfoPath 窗体转换为 PowerApps。
-author: gregli-msft
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/05/2018
-ms.author: gregli
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0ceffa705262e879ee09df2494f71f59bcc2d1b5
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 52f97ce8360981b060500ce62da44a58002f4afa
+ms.sourcegitcommit: dd74c98f48587730466e6669fc94da250d5c631e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63318410"
+ms.lasthandoff: 05/26/2019
+ms.locfileid: "66224883"
 ---
 # <a name="transform-your-infopath-form-to-powerapps"></a>将 InfoPath 窗体转换为 PowerApps
 
