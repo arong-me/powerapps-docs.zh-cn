@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0337c7f79a81d7368128b6ef11d4d108345d3923
-ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
-ms.translationtype: HT
+ms.openlocfilehash: d2b4229cc39a84bcffa624be8352762bcdc7a47b
+ms.sourcegitcommit: 21163a6d77b784f4864fce4695776c9b4652cb29
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66216241"
+ms.lasthandoff: 05/26/2019
+ms.locfileid: "66225176"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>了解 PowerApps 中的数据卡
 
@@ -157,6 +157,9 @@ PowerApps 为字符串、数字和其他数据类型提供了一组预定义的�
 | **TextFieldDisplayName.Text** |**Parent.DisplayName** |此文本框控件显示用户友好名称，这是由你或数据源的元数据提供的，并且是在卡的 **[DisplayName](controls/control-card.md)** 属性中设置的。 |
 | **InputText.Default** |**Parent.Default** |此文本输入控件最初显示来自数据源的由卡的默认值提供的字段值。 |
 | **TextErrorMessage.Text** |**Parent.Error** |如果发生验证问题，则卡的 **Error** 属性会提供一条合适的错误消息。 |
+
+> [!NOTE]
+> **Parent.Error**属性是只可输出的属性，不能使用公式设置。 因此，此属性不会显示在左上角附近中或在属性列表**属性**或**高级**选项卡附近的右边缘。 如果您要编写一个可以引用属性的公式，公式栏建议此属性。
 
 为了从这些控件中提取信息并将其推送回数据源，我们提供了以下关键公式：
 
