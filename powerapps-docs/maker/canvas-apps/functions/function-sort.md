@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c405af25d0e3228939b908c081ea8b08ce674ea6
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.sourcegitcommit: d87b2068a63e416e2814791328a3a47bbcb5bb48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 05/28/2019
 ms.locfileid: "61519464"
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>PowerApps 中的 Sort 和 SortByColumns 函数
@@ -34,7 +34,7 @@ ms.locfileid: "61519464"
 
 还可以使用 **SortByColumns** 函数根据一列或多列对表进行排序。
 
-**SortByColumns** 的参数列表提供了作为排序依据的列的名称，以及每个列的排序方向。  系统按参数顺序执行排序（先按第一列排序，然后按第二列排序，依此类推）。  将列名称指定为字符串。如果直接在参数列表中添加列名称，必须用双引号括起来。  例如，**SortByColumns( CustomerTable, "LastName" )**。
+**SortByColumns** 的参数列表提供了作为排序依据的列的名称，以及每个列的排序方向。  系统按参数顺序执行排序（先按第一列排序，然后按第二列排序，依此类推）。  将列名称指定为字符串。如果直接在参数列表中添加列名称，必须用双引号括起来。  例如，**SortByColumns( CustomerTable, "LastName" )** 。
 
 可以将 **SortByColumns**与 **[下拉列表](../controls/control-drop-down.md)** 或 **[列表框](../controls/control-list-box.md)** 控件结合使用，以便用户能够选择作为排序依据的列。
 
@@ -58,7 +58,7 @@ ms.locfileid: "61519464"
 * *SortOrder(s)* - 可选。  **SortOrder.Ascending** 或 **SortOrder.Descending**。  **SortOrder.Ascending** 是默认值。  如果提供了多个 *ColumnNames* ，则最后一列必须包括 *SortOrder* 。
   
     > [!NOTE]
-  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
+  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”  。 例如，将“Column Name”  指定为“Column_x0020_Name”  。
 
 **SortByColumns**( *Table*, *ColumnName*, *SortOrderTable* )
 
@@ -67,7 +67,7 @@ ms.locfileid: "61519464"
 * *SortOrderTable* - 必需。  作为排序依据的单列表值。
   
     > [!NOTE]
-  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
+  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”  。 例如，将“Column Name”  指定为“Column_x0020_Name”  。
 
 ## <a name="examples"></a>示例
 在下面的示例中，我们将使用 **IceCream** [数据源](../working-with-data-sources.md)，其中包含下表中的数据：

@@ -50,13 +50,13 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 
 ![计算在 PowerApps 中的两个数字的总和](media/working-with-variables/recalc1.png)
 
-请注意， **Label1**选择控件后，显示其**[文本](controls/properties-core.md)** 公式在屏幕顶部的公式栏中。 在这里，我们可以找到公式 **TextInput1 + TextInput2**。 该公式在这些控件之间创建了一个依赖关系，就像在 Excel 工作簿中的单元格之间创建依赖关系一样。  让我们更改的值**TextInput1**:
+请注意， **Label1**选择控件后，显示其 **[文本](controls/properties-core.md)** 公式在屏幕顶部的公式栏中。 在这里，我们可以找到公式 **TextInput1 + TextInput2**。 该公式在这些控件之间创建了一个依赖关系，就像在 Excel 工作簿中的单元格之间创建依赖关系一样。  让我们更改的值**TextInput1**:
 
 ![计算在 PowerApps 中的两个数字之和的动画](media/working-with-variables/recalc2.gif)
 
 有关公式**Label1**已自动重新计算，显示新值。
 
-在 PowerApps 中，使用公式不仅可以确定控件的主值，还可以确定属性（例如格式设置）。 在下一示例中，标签的“[Color](controls/properties-color-border.md)”属性的公式会自动将负值显示为红色。 **[If](functions/function-if.md)** 函数看起来应该与 Excel 中的很相似：
+在 PowerApps 中，使用公式不仅可以确定控件的主值，还可以确定属性（例如格式设置）。 在下一示例中，标签的“[Color](controls/properties-color-border.md)”  属性的公式会自动将负值显示为红色。 **[If](functions/function-if.md)** 函数看起来应该与 Excel 中的很相似：
 
 `If( Value(Label1.Text) < 0, Red, Black )`
 
@@ -80,7 +80,7 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 
 ## <a name="know-when-to-use-variables"></a>了解何时使用变量
 
-让我们将简单的加法器更改一下，使之操作起来就像一台老式的带汇总功能的加法机。 如果选择“加”按钮，则会将一个数字加到汇总中。 如果选择“清除”按钮，则会将汇总重置为零。
+让我们将简单的加法器更改一下，使之操作起来就像一台老式的带汇总功能的加法机。 如果选择“加”  按钮，则会将一个数字加到汇总中。 如果选择“清除”  按钮，则会将汇总重置为零。
 
 | 显示 | 描述 |
 |----|----|
@@ -90,31 +90,31 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 | ![总和为 154 之前清除它。](media/working-with-variables/button-changes-state-4.png) | 77 再次添加到正在运行的总数，从而导致 154。<br><br>用户选择**清除**按钮。 |
 | ![总被清除。](media/working-with-variables/button-changes-state-5.png) | 汇总重置为 0。 |
 
-我们的加法机使用了某个 Excel 中不存在的东西：按钮。 在该应用中，不能仅使用公式来计算汇总，因为其值取决于用户采取的一系列操作。 必须手动记录和更新汇总。 大多数编程工具将该信息存储在“变量”中。
+我们的加法机使用了某个 Excel 中不存在的东西：按钮。 在该应用中，不能仅使用公式来计算汇总，因为其值取决于用户采取的一系列操作。 必须手动记录和更新汇总。 大多数编程工具将该信息存储在“变量”中。 
 
 有时候，需要使用变量才能让应用的表现符合预期。  但该方法需注意以下事项：
 
 * 必须手动更新汇总。 自动重新计算在此方面不会为你代劳。
-* 不能再根据其他控件的值计算汇总。 汇总结果取决于用户选择“加”按钮的次数，以及每次操作时文本输入控件中的具体值。 在执行加法计算时，到底是用户输入了 77 并选择“加”两次，还是用户指定了 24 和 130？ 你只知道总和为 154，但无法分辨上述两种过程。
-* 可以通过不同的方式来改变总和。 在此示例中，“加”按钮和“清除”按钮都可以更新总和。 如果应用表现异常，则到底是哪个按钮引发的问题？
+* 不能再根据其他控件的值计算汇总。 汇总结果取决于用户选择“加”按钮的次数，以及每次操作时文本输入控件中的具体值。  在执行加法计算时，到底是用户输入了 77 并选择“加”两次，还是用户指定了 24 和 130？  你只知道总和为 154，但无法分辨上述两种过程。
+* 可以通过不同的方式来改变总和。 在此示例中，“加”按钮和“清除”按钮都可以更新总和。   如果应用表现异常，则到底是哪个按钮引发的问题？
 
 ## <a name="use-a-global-variable"></a>使用全局变量
 
-创建加法机需要一个变量来存储汇总。 可用于 PowerApps 的最简单变量是全局变量。  
+创建加法机需要一个变量来存储汇总。 可用于 PowerApps 的最简单变量是全局变量  。  
 
 全局变量的工作方式：
 
-* 使用 [Set](functions/function-set.md) 函数设置全局变量的值。  Set( MyVar, 1 ) 可将全局变量 MyVar 的值设置为 1。
-* 可以通过引用 Set 函数使用的名称来使用全局变量。  在这种情况下， MyVar 将返回 1。
+* 使用 [Set](functions/function-set.md)  函数设置全局变量的值。  Set( MyVar, 1 )  可将全局变量 MyVar  的值设置为 1  。
+* 可以通过引用 Set  函数使用的名称来使用全局变量。  在这种情况下， MyVar  将返回 1  。
 * 全局变量可以存储包括字符串、数字、记录和[表](working-with-tables.md)在内的任何值。
 
 让我们使用全局变量重新生成加法机：
 
 1. 添加一个文本输入控件，将其命名为 **TextInput1**，同时添加两个按钮，分别命名为 **Button1** 和 **Button2**。
 
-2. 将 **Button1** 的 **[Text](controls/properties-core.md)** 属性设置为“加”，将 **Button2** 的“Text”属性设置为“清除”。
+2. 将 **Button1** 的 **[Text](controls/properties-core.md)** 属性设置为“加”  ，将 **Button2** 的“Text”  属性设置为“清除”。 
 
-3. 若要在用户选择“加”按钮时更新汇总，请将 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
+3. 若要在用户选择“加”按钮时更新汇总，  请将 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
 
     **Set( RunningTotal, RunningTotal + TextInput1 )**
 
@@ -124,19 +124,19 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 
     ![添加按钮的 OnSelect 属性设置为设置函数](media/working-with-variables/global-variable-1.png)
 
-4. 若要在用户选择“清除”按钮时将汇总设置为 **0**，请将 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
+4. 若要在用户选择“清除”按钮时将汇总设置为 **0**，  请将 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
 
-    Set( RunningTotal, 0 )
+    Set( RunningTotal, 0 ) 
 
     ![清除按钮的 OnSelect 属性设置为设置函数](media/working-with-variables/global-variable-2.png)
 
-5. 添加一个“[标签](controls/control-text-box.md)”控件，然后将“[Text](controls/properties-core.md)”属性设置为“RunningTotal”。
+5. 添加一个“[标签](controls/control-text-box.md)”  控件，然后将“[Text](controls/properties-core.md)”  属性设置为“RunningTotal”  。
 
     此公式将自动重新计算，为用户显示的 **RunningTotal** 值随用户选择的按钮而变化。
 
     ![标签的 text 属性设置为变量的名称](media/working-with-variables/global-variable-3.png)
 
-6. 预览该应用，我们创建的加法机完全符合上述说明。 在文本框中输入数字，然后按几次“添加”按钮。 准备就绪时，使用 Esc 键返回到创作体验。
+6. 预览该应用，我们创建的加法机完全符合上述说明。 在文本框中输入数字，然后按几次“添加”  按钮。 准备就绪时，使用 Esc 键返回到创作体验。
 
     ![文本输入控件包含一个值和标签包含正在运行总计](media/working-with-variables/global-variable-4.png)
 
@@ -154,9 +154,9 @@ PowerApps 提供三种类型的变量：
 
 | 变量类型 | 范围 | 描述 | 建立函数 |
 | --- | --- | --- | --- |
-| 全局变量 |App |用法最为简单。 包含可从应用程序的任何位置进行引用的数字、文本字符串、布尔值、记录、表等。 |[Set](functions/function-set.md) |
-| 上下文变量 |屏幕 |非常适合将值传递到屏幕，与其他语言中的过程的参数非常类似。 只有一个屏幕中，可以引用。 |[UpdateContext](functions/function-updatecontext.md)<br>[Navigate](functions/function-navigate.md) |
-| 集合 |App |包含可以引用从任意位置的应用中的表。 允许修改表的内容，而不是作为一个整体进行设置。 可以保存到本地设备，以供将来使用。 |[Collect](functions/function-clear-collect-clearcollect.md)<br>[ClearCollect](functions/function-clear-collect-clearcollect.md) |
+| 全局变量 |App |用法最为简单。 包含可从应用程序的任何位置进行引用的数字、文本字符串、布尔值、记录、表等。 |[Set](functions/function-set.md)  |
+| 上下文变量 |屏幕 |非常适合将值传递到屏幕，与其他语言中的过程的参数非常类似。 只有一个屏幕中，可以引用。 |[UpdateContext](functions/function-updatecontext.md) <br>[Navigate](functions/function-navigate.md)  |
+| 集合 |App |包含可以引用从任意位置的应用中的表。 允许修改表的内容，而不是作为一个整体进行设置。 可以保存到本地设备，以供将来使用。 |[Collect](functions/function-clear-collect-clearcollect.md) <br>[ClearCollect](functions/function-clear-collect-clearcollect.md)  |
 
 ## <a name="create-and-remove-variables"></a>创建和删除变量
 
@@ -197,16 +197,16 @@ PowerApps 提供三种类型的变量：
 * 隐式地建立并通过设置上下文变量 **[UpdateContext](functions/function-updatecontext.md)** 或 **[Navigate](functions/function-navigate.md)** 函数。 应用程序启动时，是所有上下文变量的初始值*空白*。
 * 使用记录更新上下文变量。 在其他编程工具中，通常使用“=”来赋值，例如“x = 1”。 对于上下文变量，请使用 **{x:1}** 相反。 当使用上下文变量时，使用记录语法不直接其名称。
 * 当你使用时，还可以设置上下文变量 **[Navigate](functions/function-navigate.md)** 函数来显示的屏幕。 如果您将屏幕视为一种类型的过程或子例程，此方法类似于其他编程工具中的参数传递。
-* 上下文变量的作用范围仅限于单个屏幕的上下文（**[Navigate](functions/function-navigate.md)** 除外），这也是其得名的原因。 不能超出相应的上下文使用或设置上下文变量。
+* 上下文变量的作用范围仅限于单个屏幕的上下文（ **[Navigate](functions/function-navigate.md)** 除外），这也是其得名的原因。 不能超出相应的上下文使用或设置上下文变量。
 * 上下文变量可以存储包括字符串、数字、记录和[表](working-with-tables.md)在内的任何值。
 
 让我们使用一个上下文变量重新生成加法机：
 
 1. 添加一个文本输入控件，将其命名为 **TextInput1**，同时添加两个按钮，分别命名为 **Button1** 和 **Button2**。
 
-2. 将 **Button1** 的 **[Text](controls/properties-core.md)** 属性设置为“加”，将 **Button2** 的“Text”属性设置为“清除”。
+2. 将 **Button1** 的 **[Text](controls/properties-core.md)** 属性设置为“加”  ，将 **Button2** 的“Text”  属性设置为“清除”。 
 
-3. 若要在用户选择“加”按钮时更新汇总，请将 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
+3. 若要在用户选择“加”按钮时更新汇总，  请将 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
 
     **UpdateContext( { RunningTotal:RunningTotal + TextInput1 } )**
 
@@ -216,7 +216,7 @@ PowerApps 提供三种类型的变量：
 
     ![添加按钮的 OnSelect 属性](media/working-with-variables/context-variable-1.png)
 
-4. 若要在用户选择“清除”按钮时将汇总设置为 **0**，请将 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
+4. 若要在用户选择“清除”按钮时将汇总设置为 **0**，  请将 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
 
     **UpdateContext( { RunningTotal:0 } )**
 
@@ -224,19 +224,19 @@ PowerApps 提供三种类型的变量：
 
     ![清除按钮的 OnSelect 属性](media/working-with-variables/context-variable-2.png)
 
-5. 添加一个“[标签](controls/control-text-box.md)”控件，然后将“[Text](controls/properties-core.md)”属性设置为“RunningTotal”。
+5. 添加一个“[标签](controls/control-text-box.md)”  控件，然后将“[Text](controls/properties-core.md)”  属性设置为“RunningTotal”  。
 
     此公式将自动重新计算，为用户显示的 **RunningTotal** 值随用户选择的按钮而变化。
 
     ![标签的 text 属性](media/working-with-variables/context-variable-3.png)
 
-6. 预览该应用，我们创建的加法机完全符合上述说明。 在文本框中输入数字，然后按几次“添加”按钮。 准备就绪时，使用 Esc 键返回到创作体验。
+6. 预览该应用，我们创建的加法机完全符合上述说明。 在文本框中输入数字，然后按几次“添加”  按钮。 准备就绪时，使用 Esc 键返回到创作体验。
 
     ![文本输入控件将显示一个值，并标签显示运行总数](media/working-with-variables/context-variable-4.png)
 
 7. 导航到屏幕时，可以设置上下文变量的值。 这对于将“上下文”或“参数”从一个屏幕传递到另一个屏幕很有用。 若要演示此技术，插入一个屏幕、 插入按钮，并设置其**OnSelect**属性设为此公式：
 
-    Navigate( Screen1, None, { RunningTotal: -1000 } )
+    Navigate( Screen1, None, { RunningTotal: -1000 } ) 
 
     ![按钮的 OnSelect 属性](media/working-with-variables/context-variable-5.png)
 
@@ -259,18 +259,18 @@ PowerApps 提供三种类型的变量：
 集合工作原理：
 
 * 通过 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** 函数创建和设置集合。  可以改用 **[Collect](functions/function-clear-collect-clearcollect.md)** 函数，但该函数实际上需要另一个变量，而不能替换旧的变量。  
-* 集合是一种类型的数据源，因此也是表。 若要访问集合中的单个值，请使用 **[First](functions/function-first-last.md)** 函数，并从生成的记录中提取一个字段。 如果使用了单个值和 **[ClearCollect](functions/function-clear-collect-clearcollect.md)**，则该字段为“Value”字段，如以下示例所示：<br>
+* 集合是一种类型的数据源，因此也是表。 若要访问集合中的单个值，请使用 **[First](functions/function-first-last.md)** 函数，并从生成的记录中提取一个字段。 如果使用了单个值和 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** ，则该字段为“Value”字段，如以下示例所示： <br>
 **First(** *VariableName* **).Value**
 
 让我们使用集合重新创建加法机：
 
 1. 添加一个 **[文本输入](controls/control-text-input.md)** 控件，将其命名为 **TextInput1**，同时添加两个按钮，分别命名为 **Button1** 和 **Button2**。
 
-2. 将 **Button1** 的 **[Text](controls/properties-core.md)** 属性设置为“加”，将 **Button2** 的“Text”属性设置为“清除”。
+2. 将 **Button1** 的 **[Text](controls/properties-core.md)** 属性设置为“加”  ，将 **Button2** 的“Text”  属性设置为“清除”。 
 
-3. 若要在用户选择“加”按钮时更新汇总，请将 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
+3. 若要在用户选择“加”按钮时更新汇总，  请将 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
 
-    Collect( PaperTape, TextInput1.Text )
+    Collect( PaperTape, TextInput1.Text ) 
 
     此公式只存在建立**PaperTape**作为包含文本字符串的单列的表的集合。 可以引用**PaperTape**此应用中的任意位置。 每当用户打开此应用，请**PaperTape**是一个空表。
 
@@ -280,13 +280,13 @@ PowerApps 提供三种类型的变量：
 
 4. 若要在用户选择时清除纸带**清除**按钮，设置其 **[OnSelect](controls/properties-core.md)** 属性设为此公式：
 
-    Clear( PaperTape )
+    Clear( PaperTape ) 
 
     ![清除按钮的 OnSelect 属性](media/working-with-variables/papertape-2.png)
 
-5. 若要显示汇总，请添加一个标签，然后将“[Text](controls/properties-core.md)”属性设置为以下公式：
+5. 若要显示汇总，请添加一个标签，然后将“[Text](controls/properties-core.md)”  属性设置为以下公式：
 
-    Sum( PaperTape, Value )
+    Sum( PaperTape, Value ) 
 
     ![标签的 text 属性](media/working-with-variables/papertape-3.png)
 
@@ -296,21 +296,21 @@ PowerApps 提供三种类型的变量：
 
 7. 若要返回到默认工作区，请按 Esc 键。
 
-8. 要显示纸带，请插入“数据表”控件，并将其 [Items](controls/properties-core.md) 属性设置为此公式：
+8. 要显示纸带，请插入“数据表”  控件，并将其 [Items](controls/properties-core.md)  属性设置为此公式：
 
-    PaperTape
+    PaperTape 
 
     在右侧窗格中，选择**值**列以显示它。
 
     ![显示了添加到集合的值的数据表](media/working-with-variables/papertape-4.png)
 
-9. 若要查看集合中的值，请在“文件”菜单上选择“集合”。
+9. 若要查看集合中的值，请在“文件”菜单上选择“集合”。  
 
     ![PaperTape 集合的预览](media/working-with-variables/papertape-file.png)
 
 10. 要存储和检索您的集合，添加两个附加按钮控件，并将其**文本**属性设置为**负载**并**保存**。 设置**OnSelect**的属性**负载**按钮为以下公式：
 
-     Clear( PaperTape ); LoadData( PaperTape, "StoredPaperTape", true )
+     Clear( PaperTape ); LoadData( PaperTape, "StoredPaperTape", true ) 
 
      您需要先清除集合，因为**LoadData**会将存储的值追加到集合的末尾。
 
@@ -318,11 +318,11 @@ PowerApps 提供三种类型的变量：
 
 11. 设置**OnSelect**的属性**保存**按钮为以下公式：
 
-     SaveData( PaperTape, "StoredPaperTape" )
+     SaveData( PaperTape, "StoredPaperTape" ) 
 
      ![保存按钮的 OnSelect * 属性](media/working-with-variables/papertape-6.png)
 
-12. 按 F5 键再次预览，在文本输入控件中输入数字，然后选择按钮。 选择“保存”按钮。 关闭并重新加载应用程序中，并选择**负载**按钮以重新加载集合。
+12. 按 F5 键再次预览，在文本输入控件中输入数字，然后选择按钮。 选择“保存”  按钮。 关闭并重新加载应用程序中，并选择**负载**按钮以重新加载集合。
 
 > [!NOTE]
 > **SaveData**并**LoadData** PowerApps Mobile，但不是 PowerApps Studio 或 powerapps web player 中的函数。

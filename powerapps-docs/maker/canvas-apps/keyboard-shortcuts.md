@@ -13,14 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 19c5382baba643e673edb7e77e0398616e880980
-ms.sourcegitcommit: 2b1ed0db9312152f330bd8a8ea663f01b40e7c23
+ms.openlocfilehash: 8c88417763b4eee125ce511fafcac61da018d2ec
+ms.sourcegitcommit: d87b2068a63e416e2814791328a3a47bbcb5bb48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66185634"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66249805"
 ---
 # <a name="keyboard-shortcuts-for-canvas-apps"></a>画布应用的键盘快捷方式
+
+> [!NOTE]
+> 快捷方式可能因语言而异。
 
 ## <a name="file"></a>文件
 
@@ -56,6 +59,7 @@ ms.locfileid: "66185634"
 | Ctrl + = 或 Ctrl + Shift + = | 放大。 |
 | Ctrl +-或 Ctrl + Shift +- | 缩小。 |
 | Ctrl+0 | 调整到页面的画布的大小。 |
+| Shift+Enter | 在公式中进行换行。 |
 
 ## <a name="preview"></a>预览
 
