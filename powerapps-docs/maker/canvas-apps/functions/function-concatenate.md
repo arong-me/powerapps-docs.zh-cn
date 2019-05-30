@@ -26,7 +26,7 @@ ms.locfileid: "66216031"
 
 ## <a name="description"></a>描述
 
-**Concatenate** 函数可将混合的单独字符串和单列表中的字符串连接起来。 当使用单个字符串中使用此函数时，它相当于使用**&** [运算符](operators.md)。
+**Concatenate** 函数可将混合的单独字符串和单列表中的字符串连接起来。 当使用单个字符串中使用此函数时，它相当于使用 **&** [运算符](operators.md)。
 
 **Concat** 函数可将应用于表中所有[记录](../working-with-tables.md#records)的公式的结果串联起来，从而产生单个字符串。 使用这个函数可汇总表的字符串，就像 **[Sum](function-aggregates.md)** 函数可以汇总数字一样。
 
@@ -75,9 +75,9 @@ Set( Products,
 | 公式 | 描述 | 结果 |
 |---------|-------------|--------|
 | **Concatenate(&nbsp;LastName,&nbsp;",&nbsp;",&nbsp;FirstName&nbsp;)** | 连接中的值**LastName**，该字符串 **"，"** （一个逗号后跟一个空格），和中的值**FirstName**。 | "Doe&nbsp;Jane" |
-| **LastName&nbsp;&&nbsp;",&nbsp;"&nbsp;&&nbsp;FirstName** | 除使用前一示例相同**&** 运算符而不是函数。 | "Doe&nbsp;Jane" |
+| **LastName&nbsp;&&nbsp;",&nbsp;"&nbsp;&&nbsp;FirstName** | 除使用前一示例相同 **&** 运算符而不是函数。 | "Doe&nbsp;Jane" |
 | **Concatenate(&nbsp;FirstName,&nbsp;"&nbsp;",&nbsp;LastName&nbsp;)** | 连接中的值**FirstName**，该字符串 **""** （单个空格） 和中的值**LastName**。 | "Jane&nbsp;Doe" |
-| **FirstName&nbsp;&&nbsp;"&nbsp;"&nbsp;&&nbsp;LastName** | 与上面的示例中，同一个使用**&** 运算符而不是函数。 | "Jane&nbsp;Doe" |
+| **FirstName&nbsp;&&nbsp;"&nbsp;"&nbsp;&&nbsp;LastName** | 与上面的示例中，同一个使用 **&** 运算符而不是函数。 | "Jane&nbsp;Doe" |
 
 ### <a name="concatenate-with-a-single-column-table"></a>含有单列的表连接
 

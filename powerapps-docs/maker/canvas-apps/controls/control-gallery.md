@@ -44,7 +44,7 @@ Selected - 选定项。
 
 ## <a name="additional-properties"></a>其他属性
 
-**[AccessibleLabel](properties-accessibility.md)**  – 屏幕阅读器标签的库 （不包含的项）。 应描述项列表是什么。
+**[AccessibleLabel](properties-accessibility.md) ** – 屏幕阅读器标签的库 （不包含的项）。 应描述项列表是什么。
 
 AllItems - 库中的所有项，其中包括属于库模板的附加控件值。
 

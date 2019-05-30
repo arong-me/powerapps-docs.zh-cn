@@ -67,7 +67,7 @@ ms.locfileid: "65517443"
 
 [Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md)**  – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。
+**[FontWeight](properties-text.md) ** – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
