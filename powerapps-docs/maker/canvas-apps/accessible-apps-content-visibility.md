@@ -24,24 +24,24 @@ ms.locfileid: "61550079"
 
 ## <a name="hide-content-from-all-users"></a>隐藏所有用户内容
 
-* 设置**[Visible](controls/properties-core.md)** 为 false。
+* 设置 **[Visible](controls/properties-core.md)** 为 false。
 
 ## <a name="hide-content-from-sighted-users-and-show-it-to-screen-reader-users"></a>隐藏视力正常用户中的内容并显示到屏幕阅读器用户
 
 使用这些方法之一：
 
-* 设置**[大小](controls/properties-text.md)** 为 0。
-* 设置**[宽度](controls/properties-size-location.md)** 并**[高度](controls/properties-size-location.md)** 为 1。
-* 设置 **[X](controls/properties-size-location.md)**，  **[Y](controls/properties-size-location.md)**，或这两个属性，该控件为屏幕外。
-* 设置**[颜色](controls/properties-color-border.md)** 和相关属性为透明。
-* 定位矩形**[形状](controls/control-shapes-icons.md)** 上面的内容，并设置**[填充](controls/properties-color-border.md)** 为屏幕的背景色相同的颜色。
+* 设置 **[大小](controls/properties-text.md)** 为 0。
+* 设置 **[宽度](controls/properties-size-location.md)** 并 **[高度](controls/properties-size-location.md)** 为 1。
+* 设置 **[X](controls/properties-size-location.md)** ，  **[Y](controls/properties-size-location.md)** ，或这两个属性，该控件为屏幕外。
+* 设置 **[颜色](controls/properties-color-border.md)** 和相关属性为透明。
+* 定位矩形 **[形状](controls/control-shapes-icons.md)** 上面的内容，并设置 **[填充](controls/properties-color-border.md)** 为屏幕的背景色相同的颜色。
 
 > [!NOTE]
-> 用户仍可以使用键盘来访问交互式控制，例如**[按钮](controls/control-button.md)**，即使使用一种技术在上一列表中隐藏它。 设置**[TabIndex](controls/properties-accessibility.md)** 为-1，如果你想要防止用户通过按 Tab 键访问控件。
+> 用户仍可以使用键盘来访问交互式控制，例如 **[按钮](controls/control-button.md)** ，即使使用一种技术在上一列表中隐藏它。 设置 **[TabIndex](controls/properties-accessibility.md)** 为-1，如果你想要防止用户通过按 Tab 键访问控件。
 
 ## <a name="hide-content-from-screen-reader-users-and-show-it-to-sighted-users"></a>隐藏屏幕阅读器用户中的内容并显示为视力正常用户
 
-* 有关**[映像](controls/control-image.md)**， **[图标](controls/control-shapes-icons.md)**，并**[形状](controls/control-shapes-icons.md)** 控件，设置**[Accessiblelabel](controls/properties-accessibility.md)** 为空字符串""。
+* 有关 **[映像](controls/control-image.md)** ， **[图标](controls/control-shapes-icons.md)** ，并 **[形状](controls/control-shapes-icons.md)** 控件，设置 **[Accessiblelabel](controls/properties-accessibility.md)** 为空字符串""。
 
 ## <a name="next-steps"></a>后续步骤
 

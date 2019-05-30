@@ -64,7 +64,7 @@ ms.locfileid: "65521039"
 
 [Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md)**  – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。
+**[FontWeight](properties-text.md) ** – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。
 
 **Format** – 用户输入是仅在数量上进行限制，还是限制所有文本。
 
