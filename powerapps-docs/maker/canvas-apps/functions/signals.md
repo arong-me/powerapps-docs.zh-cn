@@ -7,30 +7,35 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/07/2015
+ms.date: 05/29/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 18bd89549aa330b5da333dccfd723887db38a36e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d375adeb8a20dfe2d9629a9c34944a8dcd80a8e7
+ms.sourcegitcommit: 562c7ed5fbb116be1cbb0f45e3f6e75e3e4cf011
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553899"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451461"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>PowerApps 中的 Acceleration、App、Compass、Connection 和 Location 信号
-返回关于应用环境的信息，例如用户的全球所在位置，以及所显示的是哪个屏幕。  
+
+返回关于应用环境的信息，例如用户的全球所在位置，以及所显示的是哪个屏幕。
 
 ## <a name="description-and-syntax"></a>说明和语法
-所有信号都将返回信息的[记录](../working-with-tables.md#records)。 可以使用此信息并将其存储为记录，也可提取单个属性，其方式是使用“.” [运算符](operators.md)。
+
+信号是可以在任何时候，独立于可能如何与应用交互用户更改的值。 在这些值更改时重新计算公式会自动根据信号。
+
+信号通常返回[记录](../working-with-tables.md#records)的信息。 可以使用此信息并将其存储为记录，也可提取单个属性，其方式是使用“.”  [运算符](operators.md)。
 
 > [!NOTE]
 > **加速**并**指南针**函数返回准确的值在 iOS 或 Android，如本机播放器，但在你创建或修改应用程序，在浏览器中的，这些函数将返回零值。
 
 ### <a name="acceleration"></a>Acceleration
-**Acceleration** 信号以相对于设备屏幕的三维方式返回设备的加速度。 Acceleration 的测量单位为 g（9.81 m/s<sup>2</sup> 或 32.2 ft/s<sup>2</sup>）（地球由于重力而在其表面对物体产生的加速度）。
+
+**Acceleration** 信号以相对于设备屏幕的三维方式返回设备的加速度。 Acceleration 的测量单位为 g  （9.81 m/s<sup>2</sup> 或 32.2 ft/s<sup>2</sup>）（地球由于重力而在其表面对物体产生的加速度）。
 
 | 属性 | 描述 |
 | --- | --- |
@@ -39,28 +44,14 @@ ms.locfileid: "61553899"
 | **Acceleration.Z** |上方和下方。  上方为正数。 |
 
 ### <a name="app"></a>App
-**App** 信号返回正在运行的应用的相关信息。
+
+在其他属性之间**应用**对象包括信号，指示在显示的屏幕。
 
 | 属性 | 描述 |
 | --- | --- |
-| **App.ActiveScreen** | 所显示的屏幕。 返回一个屏幕对象，可用于引用屏幕属性，或与其他屏幕进行比较，以判断显示的是哪个屏幕。 若要更改所显示的屏幕，请使用 **[回](function-navigate.md)** 或 **[Navigate](function-navigate.md)** 函数。 |
-| **App.Width** | 返回在其中运行应用程序窗口的宽度。 设置时，可以在公式中使用此属性**宽度**屏幕来构建响应性应用的属性。  |
-| **App.Height** | 返回在其中运行应用程序窗口的高度。 设置时，可以在公式中使用此属性**高度**屏幕来构建响应性应用的属性。 |
-| **App.DesignWidth** | 返回在 PowerApps Studio 中的应用程序的宽度。 设置时，可以在公式中使用此属性**宽度**屏幕以确保响应性应用中的最小宽度的属性。  |
-| **App.DesignHeight** | 返回在 PowerApps Studio 中的应用程序的高度。 设置时，可以在公式中使用此属性**高度**屏幕以确保最小高度以响应性应用的属性。  |
-| **App.SizeBreakpoints** | 分隔屏幕大小的数字的单列的表范围[ **Screen.Size** ](../controls/control-screen.md)属性返回。 此表中的值可能更改自定义的应用程序的所有屏幕使用的断点。
+| **App.ActiveScreen** |显示的屏幕。 返回一个屏幕对象，可用于引用屏幕属性或比较到另一个屏幕来确定显示哪个屏幕。 可以使用 **[回](function-navigate.md)** 或 **[Navigate](function-navigate.md)** 函数来更改显示的屏幕。 |
 
-**应用程序**对象还具有[行为公式](../working-with-formulas-in-depth.md)，可以设置。
-
-| 属性  | 描述 |
-| --- | --- |
-| **App.OnStart** | 应用用户启动它时的行为。 创建者通常使用此属性来检索并缓存数据到集合 **[收集](function-clear-collect-clearcollect.md)** 函数，设置变量 **[设置](function-set.md)** 函数，并导航到包含初始屏幕 **[Navigate](function-navigate.md)** 函数。 第一屏出现之前，会计算此公式。 加载没有屏幕，因此不能设置与上下文变量 **[UpdateContext](function-updatecontext.md)** 函数。 但是，可以传递与上下文变量**Navigate**函数。 |
-
-**应用**对象显示在左侧的导航窗格中控件的层次结构列表的顶部，你可以选择类似于在屏幕上控件的此对象。 选择的对象后，你可以查看和编辑其属性之一，如果您在公式栏的左侧的下拉列表中选择该属性。  
-
-更改后**OnStart**属性，可以测试它悬停**应用**对象在左侧的导航窗格中，选择显示的省略号 （...），然后选中**运行OnStart**。 当首次加载应用，与现有集合和变量已设置。 使用 **[ClearCollect](function-clear-collect-clearcollect.md)** 函数而不是**收集**函数开始空集合。
-
- ![与运行 OnStart 应用项上下文菜单](media/appobject-runonstart.png)
+详细信息：[**应用程序**对象](object-app.md)文档。
 
 ### <a name="compass"></a>Compass
 **Compass** 信号返回屏幕顶部的指南针标题。 该标题以磁北方为基础。

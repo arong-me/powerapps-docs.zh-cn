@@ -13,20 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 85ab89641fd29fa91e8c5b5d7b3d36e9cddedaf2
-ms.sourcegitcommit: 6b75019dccc5296a313f9ff0eb397003f13ce737
+ms.openlocfilehash: ec035ca959f29832e2ba0bbb2250a24c11f1692e
+ms.sourcegitcommit: 562c7ed5fbb116be1cbb0f45e3f6e75e3e4cf011
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65940505"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451403"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps 的公式参考
 公式组合了许多元素。  下面列出的包括：
 
 * **函数**，它接受参数、执行操作并返回值。 例如，**Sqrt(25)** 返回 **5**。 函数模仿了 Microsoft Excel 函数。  某些函数具有副作用，例如 **SubmitForm**，该函数仅在诸如 **Button.OnSelect** 的[行为公式](working-with-formulas-in-depth.md)中适用。
-* **信号**，它返回关于环境的信息。 例如，**[Location](functions/signals.md)** 返回设备的当前 GPS 坐标。 信号不接受参数，也没有副作用。
-* **枚举**，它返回预定义的常量值。 例如，**[Color](functions/function-colors.md)** 是一个具有预定义值 **Color.Red**、**Color.Blue** 等等的枚举。  此处包括了通用枚举；函数特定的枚举随函数进行了介绍。
-* **已命名运算符**，例如 **[ThisItem](functions/operators.md#thisitem-operator)** 和 **[Parent](functions/operators.md#parent-operator)**，用于从容器内访问信息。
+* **信号**，它返回关于环境的信息。 例如， **[Location](functions/signals.md)** 返回设备的当前 GPS 坐标。 信号不接受参数，也没有副作用。
+* **枚举**，它返回预定义的常量值。 例如， **[Color](functions/function-colors.md)** 是一个具有预定义值 **Color.Red**、**Color.Blue** 等等的枚举。  此处包括了通用枚举；函数特定的枚举随函数进行了介绍。
+* **已命名运算符**，例如 **[ThisItem](functions/operators.md#thisitem-operator)** 和 **[Parent](functions/operators.md#parent-operator)** ，用于从容器内访问信息。
 
 其他元素包括：
 
@@ -43,11 +43,11 @@ ms.locfileid: "65940505"
 
 **[Acot](functions/function-trig.md)** – 以弧度为单位返回某个数字的反余切值。
 
-**[AddColumns](functions/function-table-shaping.md)** – 返回添加了[列](working-with-tables.md#columns)的表。 
+**[AddColumns](functions/function-table-shaping.md)** – 返回添加了[列](working-with-tables.md#columns)的表。
 
-**[And](functions/function-logicals.md)** – 布尔逻辑与。  如果所有参数都为 **true**，则返回 **true**。  还可以使用 [**&&** 运算符](functions/operators.md)。
+**[And](functions/function-logicals.md)** – 布尔逻辑与。  如果所有参数都为 **true**，则返回 **true**。  还可以使用 [ **&&** 运算符](functions/operators.md)。
 
-**[App](functions/signals.md)** – 返回有关当前正在运行的应用的信息，例如当前显示了哪个屏幕。
+**[应用程序](functions/object-app.md)** – 提供有关当前正在运行的应用程序和控制应用程序的行为的信息。
 
 **[Asin](functions/function-trig.md)** – 以弧度为单位返回某个数字的反正弦值。
 
@@ -77,7 +77,7 @@ ms.locfileid: "65940505"
 
 **[Clock](functions/function-clock-calendar.md)** – 检索有关当前区域设置的时钟信息。
 
-**[Coalesce](functions/function-isblank-isempty.md)** – 替换空值并保留非空值不变。
+**[Coalesce](functions/function-isblank-isempty.md)** – 替换空  值并保留非空  值不变。
 
 **[Collect](functions/function-clear-collect-clearcollect.md)** – 创建一个集合或者向数据源添加数据。
 
@@ -128,7 +128,7 @@ ms.locfileid: "65940505"
 
 **[Degrees](functions/function-trig.md)** - 将弧度转换为度。
 
-**[Disable](functions/function-enable-disable.md)** – 禁用某个信号，例如用于读取 GPS 的 **[Location](functions/signals.md)**。
+**[Disable](functions/function-enable-disable.md)** – 禁用某个信号，例如用于读取 GPS 的 **[Location](functions/signals.md)** 。
 
 **[Distinct](functions/function-distinct.md)** – 对表的记录数进行汇总并删除重复项。  
 
@@ -139,7 +139,7 @@ ms.locfileid: "65940505"
 ## <a name="e"></a>E
 **[EditForm](functions/function-form.md)** – 重置用于编辑某个项的表单控件。
 
-**[Enable](functions/function-enable-disable.md)** – 启用某个信号，例如用于读取 GPS 的 **[Location](functions/signals.md)**。
+**[Enable](functions/function-enable-disable.md)** – 启用某个信号，例如用于读取 GPS 的 **[Location](functions/signals.md)** 。
 
 **[EndsWith](functions/function-startswith.md)** – 检查某个文本字符串是否以另一个文本字符串结尾。
 
@@ -234,14 +234,14 @@ ms.locfileid: "65940505"
 
 **[NewForm](functions/function-form.md)** – 重置用于创建某个项的表单控件。
 
-**[Not](functions/function-logicals.md)** – 布尔逻辑非。  如果其参数为 **false**，则返回 **true**；如果其参数为 **true**，则返回 **false**。  还可以使用 [**!** 运算符](functions/operators.md)。
+**[Not](functions/function-logicals.md)** – 布尔逻辑非。  如果其参数为 **false**，则返回 **true**；如果其参数为 **true**，则返回 **false**。  还可以使用 [ **!** 运算符](functions/operators.md)。
 
 **[Notify](functions/function-showerror.md)** - 向用户显示横幅消息。
 
 **[Now](functions/function-now-today-istoday.md)** – 返回当前的日期/时间值。
 
 ## <a name="o"></a>O
-**[Or](functions/function-logicals.md)** – 布尔逻辑或。  如果其任一参数为 **true**，则返回 **true**。  还可以使用 [**||** 运算符](functions/operators.md)。
+**[Or](functions/function-logicals.md)** – 布尔逻辑或。  如果其任一参数为 **true**，则返回 **true**。  还可以使用 [ **||** 运算符](functions/operators.md)。
 
 ## <a name="p"></a>P
 **[Param](functions/function-param.md)** – 用于访问当用户打开应用时传递给它的参数。
@@ -254,7 +254,7 @@ ms.locfileid: "65940505"
 
 **[PlainText](functions/function-encode-decode.md)** – 从字符串中删除 HTML 和 XML 标记。
 
-**[Power](functions/function-numericals.md)** – 返回某个数字的乘幂。  还可以使用 [**^** 运算符](functions/operators.md)。
+**[Power](functions/function-numericals.md)** – 返回某个数字的乘幂。  还可以使用 [ **^** 运算符](functions/operators.md)。
 
 **[Proper](functions/function-lower-upper-proper.md)** – 将字符串中每个单词的首字母转换为大写，将其余字母转换为小写。
 
@@ -275,7 +275,7 @@ ms.locfileid: "65940505"
 
 **[Replace](functions/function-replace-substitute.md)** – 从字符串的起始位置开始，将一个字符串的一部分替换为另一个字符串。
 
-[Reset](functions/function-reset.md) - 将输入控件重置为默认值，放弃任何用户更改。
+[Reset](functions/function-reset.md)  - 将输入控件重置为默认值，放弃任何用户更改。
 
 **[ResetForm](functions/function-form.md)** – 重置用于编辑某个现有项的表单控件。
 
@@ -356,7 +356,7 @@ ms.locfileid: "65940505"
 
 **[Update](functions/function-update-updateif.md)** – 替换数据源中的某条记录。
 
-[UpdateContext](functions/function-updatecontext.md) – 设置当前屏幕的一个或多个[上下文变量](working-with-variables.md#use-a-context-variable)的值。
+[UpdateContext](functions/function-updatecontext.md)  – 设置当前屏幕的一个或多个[上下文变量](working-with-variables.md#use-a-context-variable)的值。
 
 **[UpdateIf](functions/function-update-updateif.md)** – 基于某个条件修改数据源中的一组记录。
 
