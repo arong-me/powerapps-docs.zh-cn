@@ -31,10 +31,10 @@ ms.locfileid: "63321841"
 字符串格式的说明：
 
 * 字符串可能以当前语言所对应的货币符号为前缀。  系统会忽略该货币符号，  但不忽略其他语言的货币符号。
-* 字符串可能在末尾包含百分号 (**%**)，表示这是百分比。  该数字在返回前将被除以 100。  不能混用百分比和货币符号。
+* 字符串可能在末尾包含百分号 ( **%** )，表示这是百分比。  该数字在返回前将被除以 100。  不能混用百分比和货币符号。
 * 字符串可能采用科学记数法，将 12 x 10<sup>3</sup> 表示为“12e3”。
 
-如果数字格式不正确，**Value** 将返回空白。
+如果数字格式不正确，**Value** 将返回空白  。
 
 若要转换日期和时间值，请使用 [**DateValue**](function-datevalue-timevalue.md)、[**TimeValue**](function-datevalue-timevalue.md) 或 [**DateTimeValue**](function-datevalue-timevalue.md) 函数。
 

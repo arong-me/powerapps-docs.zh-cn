@@ -38,7 +38,7 @@ ms.locfileid: "65521039"
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”  、“虚线”  、“点线”  还是“无”  。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
@@ -48,13 +48,13 @@ ms.locfileid: "65521039"
 
 **DelayOutput** - 如果设置为 true，用户输入会延迟半秒后注册。  可帮助延迟成本高昂的操作，直到用户完成输入文本（例如，输入用在其他公式中时有益于筛选）。
 
-[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+[DisplayMode](properties-core.md)  – 此控件是允许用户输入 (Edit  )、仅显示数据 (View  )，还是已禁用 (Disabled  )。
 
-**[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件边框的颜色。
+**[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md)  属性设置为“Disabled”  时，该控件边框的颜色。
 
 **[DisabledColor](properties-color-border.md)** – 控件的 **[DisplayMode](properties-core.md)** 属性设置为 Disabled**Disabled** 时，该控件中的文本颜色。
 
-**[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode”**[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
+**[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode” **[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
 
 **[Fill](properties-color-border.md)** – 控件的背景色。
 
@@ -62,9 +62,9 @@ ms.locfileid: "65521039"
 
 **[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
 
-[Font](properties-text.md) – 文本中所显示的字体系列的名称。
+[Font](properties-text.md)  – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md) ** – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。
+**[FontWeight](properties-text.md)**  – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。
 
 **Format** – 用户输入是仅在数量上进行限制，还是限制所有文本。
 
@@ -74,7 +74,7 @@ ms.locfileid: "65521039"
 
 **[HoverBorderColor](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件边框的颜色。
 
-[HoverColor](properties-color-border.md) – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。
+[HoverColor](properties-color-border.md)  – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。
 
 **[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景色。
 
@@ -86,17 +86,17 @@ ms.locfileid: "65521039"
 
 **Mode** - 控件处于 **SingleLine**、**MultiLine** 或 **Password** 模式。
 
-[OnChange](properties-core.md) – 用户更改控件的值（例如，通过调整滑块）时应用的响应方式。
+[OnChange](properties-core.md)  – 用户更改控件的值（例如，通过调整滑块）时应用的响应方式。
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 
-[PaddingBottom](properties-size-location.md) – 控件中的文本与该控件的下边缘之间的距离。
+[PaddingBottom](properties-size-location.md)  – 控件中的文本与该控件的下边缘之间的距离。
 
-[PaddingLeft](properties-size-location.md) – 控件中的文本与该控件的左边缘之间的距离。
+[PaddingLeft](properties-size-location.md)  – 控件中的文本与该控件的左边缘之间的距离。
 
-[PaddingRight](properties-size-location.md) – 控件中的文本与该控件的右边缘之间的距离。
+[PaddingRight](properties-size-location.md)  – 控件中的文本与该控件的右边缘之间的距离。
 
-[PaddingTop](properties-size-location.md) – 控件中的文本与该控件的上边缘之间的距离。
+[PaddingTop](properties-size-location.md)  – 控件中的文本与该控件的上边缘之间的距离。
 
 **[PressedBorderColor](properties-color-border.md)** – 用户在点击或单击控件时，该控件边框的颜色。
 
@@ -110,19 +110,19 @@ ms.locfileid: "65521039"
 
 **[RadiusTopLeft](properties-size-location.md)** – 控件左上角圆角的程度。
 
-[RadiusTopRight](properties-size-location.md) – 控件右上角圆角的程度。
+[RadiusTopRight](properties-size-location.md)  – 控件右上角圆角的程度。
 
-[Reset](properties-core.md) – 是否还原控件的默认值。
+[Reset](properties-core.md)  – 是否还原控件的默认值。
 
 **[Size](properties-text.md)** – 控件上显示的文本的字号。
 
-[Strikethrough](properties-text.md) – 通过文本显示的线是否在控件上显示。
+[Strikethrough](properties-text.md)  – 通过文本显示的线是否在控件上显示。
 
 **[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
 
 **[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
 
-[Underline](properties-text.md) – 在文本下方显示的线是否在控件上显示。
+[Underline](properties-text.md)  – 在文本下方显示的线是否在控件上显示。
 
 **VirtualKeyboardMode** – 虚拟键盘、 文本或数字，应用用户的触摸屏上显示的类型。 **格式**属性确定的默认值。 设备支持而异。 运行 iOS 的设备必须至少具有版本 12.2。 建议的版本的 Android 是 9.0，和的数字键盘的功能在不同的 Android 设备。 Windows 10 不支持此属性。  
 
@@ -147,8 +147,8 @@ ms.locfileid: "65521039"
    
     想要了解有关 **[Collect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
 3. 以纵向/垂直方向添加文本库，将其 **[Items](properties-core.md)** 属性设置为 **Names**，并将 **Subtitle1** 的 **[Text](properties-core.md)** 属性设置为 **ThisItem.FirstName**。
-4. （可选）在模板库中，删除底部的“Body1”标签，然后将库的“[TemplateSize](control-gallery.md)”属性设置为“80”。
-5. 按 F5，将一个文本字符串键入 **inputFirst** 和 **inputLast**，然后单击或点击“添加”按钮。
+4. （可选）在模板库中，删除底部的“Body1”  标签，然后将库的“[TemplateSize](control-gallery.md)”  属性设置为“80”  。
+5. 按 F5，将一个文本字符串键入 **inputFirst** 和 **inputLast**，然后单击或点击“添加”  按钮。
 6. （可选）向集合添加更多名称，然后按 Esc 返回到默认工作区。
 
 ### <a name="prompt-for-a-password"></a>提示输入密码
@@ -158,17 +158,17 @@ ms.locfileid: "65521039"
 1. 添加一个标签，然后将其 **[Text](properties-core.md)** 属性设置为以下公式：<br>
    **If(inputPassword.Text = "P@ssw0rd", "Access granted", "Access denied")**
 
-    想要详细了解 [If](../functions/function-if.md) 函数或[其他函数](../formula-reference.md)吗？
+    想要详细了解 [If](../functions/function-if.md)  函数或[其他函数](../formula-reference.md)吗？
 
-1. 按 F5，然后在 **inputPassword** 中键入 **P@ssw0rd**。
+1. 按 F5，然后在 **inputPassword** 中键入 **P@ssw0rd** 。
 
-    密码键入完毕后，标签不再显示“拒绝访问”，而会显示“已授予访问权限”。
+    密码键入完毕后，标签不再显示“拒绝访问”  ，而会显示“已授予访问权限”  。
 
 1. 若要返回到默认工作区，请按 Esc 键。
 
 1. （可选）添加一个控件（如箭头），配置它以导航到另一个屏幕，且仅在用户键入密码后才显示。
 
-1. （可选）添加一个按钮，配置其 **[Text](properties-core.md)** 属性，使其显示**登录**，添加一个计时器，如果用户键入错误的密码，则禁用输入文本控件一段时间，然后单击或点击“登录”按钮。
+1. （可选）添加一个按钮，配置其 **[Text](properties-core.md)** 属性，使其显示**登录**，添加一个计时器，如果用户键入错误的密码，则禁用输入文本控件一段时间，然后单击或点击“登录”  按钮。
 
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则

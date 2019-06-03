@@ -38,19 +38,19 @@ ms.locfileid: "61543939"
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”  、“虚线”  、“点线”  还是“无”  。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
 **[Color](properties-color-border.md)** – 控件中文本的颜色。
 
-**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit  )、仅显示数据 (View  )，还是已禁用 (Disabled  )。
 
-**[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件边框的颜色。
+**[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md)  属性设置为“Disabled”  时，该控件边框的颜色。
 
 **[DisabledColor](properties-color-border.md)** – 控件的 **[DisplayMode](properties-core.md)** 属性设置为 Disabled**Disabled** 时，该控件中的文本颜色。
 
-**[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode”**[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
+**[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode” **[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
 
 **[Fill](properties-color-border.md)** – 控件的背景色。
 
@@ -62,13 +62,13 @@ ms.locfileid: "61543939"
 
 **[HoverBorderColor](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件边框的颜色。
 
-[HoverColor](properties-color-border.md) – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。
+[HoverColor](properties-color-border.md)  – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。
 
 **[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景颜色。
 
-[Image](properties-visual.md) – 在图像、音频或麦克风控件中显示的图像名称。
+[Image](properties-visual.md)  – 在图像、音频或麦克风控件中显示的图像名称。
 
-**[ImagePosition](properties-visual.md)** – 屏幕或控件大小与图像大小不同时，其中图像的位置（“填充”、“适应”、“拉伸”、“平铺”或“居中”）。
+**[ImagePosition](properties-visual.md)** – 屏幕或控件大小与图像大小不同时，其中图像的位置（“填充”  、“适应”  、“拉伸”  、“平铺”  或“居中”  ）。
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 
@@ -80,7 +80,7 @@ ms.locfileid: "61543939"
 
 **[PressedFill](properties-color-border.md)** – 用户在点击或单击控件时，该控件的背景色。
 
-[Reset](properties-core.md) – 是否还原控件的默认值。
+[Reset](properties-core.md)  – 是否还原控件的默认值。
 
 **[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
 
@@ -99,27 +99,27 @@ ms.locfileid: "61543939"
 
 ## <a name="example"></a>示例
 ### <a name="add-sounds-to-a-custom-gallery-control"></a>将声音添加到自定义库控件
-1. 添加“麦克风”，将其命名为“MyMic”，并将其 **OnStop** 属性设置为以下公式：<br>
+1. 添加“麦克风”  ，将其命名为“MyMic”  ，并将其 **OnStop** 属性设置为以下公式：<br>
    **Collect(MySounds, MyMic.Audio)**
 
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 
     想要了解有关 **[Collect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
-2. 添加“自定义库”控件，将其移至“MyMic” 下，并将“自定义库”控件的 **[Items](properties-core.md)** 属性设置为 **Mysounds**。
-3. 在“自定义库”控件的模板中，添加 **[音频](control-audio-video.md)** 控件，并将其“媒体”属性设置为 **ThisItem.Url** 。
-4. 按 F5，单击或点击“MyMic”开始录制，然后再次单击或点击以停止录制。
-5. 在“自定义库”控件中，单击或点击**[音频](control-audio-video.md)** 控件中的播放按钮以播放录制的内容。
+2. 添加“自定义库”  控件，将其移至“MyMic”  下，并将“自定义库”  控件的 **[Items](properties-core.md)** 属性设置为 **Mysounds**。
+3. 在“自定义库”  控件的模板中，添加 **[音频](control-audio-video.md)** 控件，并将其“媒体”  属性设置为 **ThisItem.Url** 。
+4. 按 F5，单击或点击“MyMic”  开始录制，然后再次单击或点击以停止录制。
+5. 在“自定义库”  控件中，单击或点击 **[音频](control-audio-video.md)** 控件中的播放按钮以播放录制的内容。
 6. 根据需要添加多个录制内容，然后按 Esc 返回到默认工作区。
-7. （可选）在“自定义库”控件的模板中，添加 **[按钮](control-button.md)** 控件，将 其 **[OnSelect](properties-core.md)** 属性设置为 **Remove(MySounds, ThisItem)** ，按 F5，然后单击或点击相应的“按钮”控件删除录制。
+7. （可选）在“自定义库”  控件的模板中，添加 **[按钮](control-button.md)** 控件，将 其 **[OnSelect](properties-core.md)** 属性设置为 **Remove(MySounds, ThisItem)** ，按 F5，然后单击或点击相应的“按钮”  控件删除录制。
 
 使用 **[SaveData](../functions/function-savedata-loaddata.md)** 函数在本地保存录音，或使用 **[Patch](../functions/function-patch.md)** 函数更新数据源。
 
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
-适用 **[按钮](control-button.md)** 的相同准则，因为“麦克风”是专用按钮。 此外，请考虑以下方面：
+适用 **[按钮](control-button.md)** 的相同准则，因为“麦克风”  是专用按钮。 此外，请考虑以下方面：
 
 ### <a name="audio-alternatives"></a>音频替代项
-* 请考虑为有语言障碍或没有麦克风的用户添加另一种输入形式。 例如，**[文本输入](control-text-input.md)**，允许用户输入文本。
+* 请考虑为有语言障碍或没有麦克风的用户添加另一种输入形式。 例如， **[文本输入](control-text-input.md)** ，允许用户输入文本。
 
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：

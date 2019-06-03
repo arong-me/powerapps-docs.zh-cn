@@ -40,13 +40,13 @@ ms.locfileid: "61548745"
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”  、“虚线”  、“点线”  还是“无”  。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit  )、仅显示数据 (View  )，还是已禁用 (Disabled  )。
 
-**[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件边框的颜色。
+**[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md)  属性设置为“Disabled”  时，该控件边框的颜色。
 
 **[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
 
@@ -58,7 +58,7 @@ ms.locfileid: "61548745"
 
 **HandleHoverFill** - 用户将鼠标指针停留在滑块上时，该滑块中的图柄颜色。
 
-HandleSize – 句柄直径。
+HandleSize  – 句柄直径。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -66,7 +66,7 @@ HandleSize – 句柄直径。
 
 **Layout** - 用户是滚动浏览库还是从上至下（**垂直**）或从左至右（**水平**）调整滑块。
 
-[OnChange](properties-core.md) – 用户更改控件的值（例如，通过调整滑块）时应用的响应方式。
+[OnChange](properties-core.md)  – 用户更改控件的值（例如，通过调整滑块）时应用的响应方式。
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 
@@ -78,7 +78,7 @@ HandleSize – 句柄直径。
 
 **ReadOnly** - 用户是否可以更改滑块或评分控件的值。
 
-[Reset](properties-core.md) – 是否还原控件的默认值。
+[Reset](properties-core.md)  – 是否还原控件的默认值。
 
 **ShowValue** – 当用户更改滑块或评分的值或将鼠标悬停在控件上时，是否显示该值。
 
@@ -113,7 +113,7 @@ HandleSize – 句柄直径。
 4. 将滑块的 **Max** 属性设置为 **5000000**，**Min** 属性设置为 **1000000**。
 5. 在垂直方向/纵向添加一个文本库，将其移动到滑块下方，然后将该库的 **[Items](properties-core.md)** 属性设置为以下公式：<br>
    **Filter(CityPopulations, Population > MinPopulation)**
-6. 在库的第一个项中，将顶部标签的“[Text](properties-core.md)”属性设置为“ThisItem.City”，然后将底部标签的“[Text](properties-core.md)”属性设置为以下公式：<br> **Text(ThisItem.Population, "##,###")**
+6. 在库的第一个项中，将顶部标签的“[Text](properties-core.md)”  属性设置为“ThisItem.City”  ，然后将底部标签的“[Text](properties-core.md)”  属性设置为以下公式：<br> **Text(ThisItem.Population, "##,###")**
 7. 按 F5，然后调整 **MinPopulation** 以仅显示人口数大于所指定值的城市。
 8. 若要返回到默认工作区，请按 Esc 键。
 
@@ -121,20 +121,20 @@ HandleSize – 句柄直径。
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：
-* ValueFill 和 RailFill
-* ValueHoverFill 和 RailHoverFill
-* [FocusedBorderColor](properties-color-border.md) 和控件之外的颜色
-* ValueFill 和背景色
-* RailFill 和背景色
-* ValueHoverFill 和背景色
-* RailHoverFill 和背景色
+* ValueFill  和 RailFill 
+* ValueHoverFill  和 RailHoverFill 
+* [FocusedBorderColor](properties-color-border.md)  和控件之外的颜色
+* ValueFill  和背景色
+* RailFill  和背景色
+* ValueHoverFill  和背景色
+* RailHoverFill  和背景色
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
 * **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
 
 ### <a name="keyboard-support"></a>键盘支持
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
+* 焦点指示器必须清晰可见。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
 * 与键盘交互时，必须显示滑块值。 这可以通过以下任一方法实现：
-    * 将“ShowValue”设置为“true”。
-    * 在滑块旁边添加**[标签](control-text-box.md)**。 [将标签的“Text”](properties-core.md)设置为滑块的[“Value”](properties-core.md)。
+    * 将“ShowValue”  设置为“true”  。
+    * 在滑块旁边添加 **[标签](control-text-box.md)** 。 [将标签的“Text”](properties-core.md)设置为滑块的[“Value”](properties-core.md)。  

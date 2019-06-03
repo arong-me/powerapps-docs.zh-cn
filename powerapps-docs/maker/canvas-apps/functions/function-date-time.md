@@ -32,7 +32,7 @@ ms.locfileid: "61551229"
 
 **Time** 函数将单个小时、分钟和秒的值转换为日期/时间值。  其结果不与日期相关联。
 
-有关如何将字符串转换为值的信息，请参阅 **[DateValue](function-datevalue-timevalue.md)**、**[TimeValue](function-datevalue-timevalue.md)** 和 **[DateTimeValue](function-datevalue-timevalue.md)** 函数。  
+有关如何将字符串转换为值的信息，请参阅 **[DateValue](function-datevalue-timevalue.md)** 、 **[TimeValue](function-datevalue-timevalue.md)** 和 **[DateTimeValue](function-datevalue-timevalue.md)** 函数。  
 
 有关详细信息，请参阅[处理日期和时间](../show-text-dates-times.md)。
 
@@ -51,12 +51,12 @@ ms.locfileid: "61551229"
 
 ## <a name="examples"></a>示例
 ### <a name="date"></a>Date
-如果用户在“HireYear”文本输入控件中键入“1979”，在“HireMonth”文本输入控件中键入“3”，在“HireDay”文本输入控件中键入“17”，那么此函数会返回“3/17/1979”：
+如果用户在“HireYear”  文本输入控件中键入“1979”  ，在“HireMonth”  文本输入控件中键入“3”  ，在“HireDay”  文本输入控件中键入“17”  ，那么此函数会返回“3/17/1979”  ：
 
 **Date(Value(HireYear.Text), Value(HireMonth.Text), Value(HireDay.Text))**
 
 ### <a name="time"></a>Time
-如果用户在“BirthHour”文本输入控件中键入“14”，在“BirthMinute”文本输入控件中键入“50”，在“BirthSecond”文本输入控件中键入“24”，那么此函数会返回“02:50:24 p”。
+如果用户在“BirthHour”  文本输入控件中键入“14”  ，在“BirthMinute”  文本输入控件中键入“50”  ，在“BirthSecond”  文本输入控件中键入“24”  ，那么此函数会返回“02:50:24 p”  。
 
 **Text(Time(Value(BirthHour.Text), Value(BirthMinute.Text), Value(BirthSecond.Text)), "hh:mm:ss a/p")**
 

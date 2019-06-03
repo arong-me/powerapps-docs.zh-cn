@@ -29,7 +29,7 @@ ms.locfileid: "63318439"
 ## <a name="key-properties-icons-and-shapes"></a>键属性 （图标和形状）
 **[Fill](properties-color-border.md)** – 控件的背景色。
 
-**[OnSelect](properties-core.md) ** – 当用户选择控件时，应用的响应方式。
+**[OnSelect](properties-core.md)**  – 当用户选择控件时，应用的响应方式。
 
 ## <a name="key-properties-icons-only"></a>键属性 （仅图标）
 
@@ -42,7 +42,7 @@ ms.locfileid: "63318439"
 ## <a name="additional-properties"></a>其他属性
 **[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。
 
-**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit  )、仅显示数据 (View  )，还是已禁用 (Disabled  )。
 
 **[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
 
@@ -52,9 +52,9 @@ ms.locfileid: "63318439"
 
 **[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景色。
 
-**[PressedBorderColor](properties-color-border.md) ** – 当用户选择该控件时控件的边框的颜色。
+**[PressedBorderColor](properties-color-border.md)**  – 当用户选择该控件时控件的边框的颜色。
 
-**[PressedFill](properties-color-border.md) ** – 当用户选择该控件的控件的背景色。
+**[PressedFill](properties-color-border.md)**  – 当用户选择该控件的控件的背景色。
 
 **[TabIndex](properties-accessibility.md)** - 相对于其他控件的键盘导航顺序。
 
@@ -72,21 +72,21 @@ ms.locfileid: "63318439"
 
 ## <a name="example"></a>示例
 
-1. 将默认“[屏幕](control-screen.md)”控件命名为“Target”，添加“[标签](control-text-box.md)”控件，然后将“[Text](properties-core.md)”属性设置为显示“Target”。
+1. 将默认“[屏幕](control-screen.md)”  控件命名为“Target”  ，添加“[标签](control-text-box.md)”  控件，然后将“[Text](properties-core.md)”  属性设置为显示“Target”  。
 
     不知道如何[添加和配置控件](../add-configure-controls.md)？
 
-1. 添加 **[屏幕](control-screen.md)** 控件，然后将其命名为“Source”。
+1. 添加 **[屏幕](control-screen.md)** 控件，然后将其命名为“Source”  。
 
-1. 在“Source”中，添加“形状”控件，并将其 **[OnSelect](properties-core.md)** 属性设置为以下公式：
+1. 在“Source”  中，添加“形状”  控件，并将其 **[OnSelect](properties-core.md)** 属性设置为以下公式：
 
   `Navigate(Target, ScreenTransition.Fade)`
   
 1. 按 F5，然后依次**形状**控件。
 
-    将会出现“Target”屏幕。
+    将会出现“Target”  屏幕。
 
-1. （可选）按 Esc 返回默认工作区，向“Target”添加“形状”控件，并将“形状”控件的 **[OnSelect](properties-core.md)** 属性设置为以下公式：
+1. （可选）按 Esc 返回默认工作区，向“Target”  添加“形状”  控件，并将“形状”  控件的 **[OnSelect](properties-core.md)** 属性设置为以下公式：
 
   `Navigate(Source, ScreenTransition.Fade)`
 
@@ -110,11 +110,11 @@ ms.locfileid: "63318439"
 - **[HoverFill](properties-color-border.md)** 和控件范围之外的颜色（如果用作按钮）
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-- **[AccessibleLabel](properties-accessibility.md) **如果图形用作按钮或者不仅仅用于修饰必须设置为非空字符串。
+- **[AccessibleLabel](properties-accessibility.md)** 如果图形用作按钮或者不仅仅用于修饰必须设置为非空字符串。
 
-- **[AccessibleLabel](properties-accessibility.md) **必须为空或空字符串 **""** 如果图形提供冗余信息或纯粹用于修饰。 此值将导致屏幕阅读器忽略图形。
+- **[AccessibleLabel](properties-accessibility.md)** 必须为空或空字符串 **""** 如果图形提供冗余信息或纯粹用于修饰。 此值将导致屏幕阅读器忽略图形。
 
-例如，你可能会设置 **[accessiblelabel](properties-accessibility.md)** 属性**设置**图标**设置**。 此图标不用作按钮。 它是旁边 **[标签](control-text-box.md)** 同样显示**设置**。 屏幕阅读器将图标和标签与读取**设置**，这是不必要地详细。 在这种情况下，该图标不需要 **[accessiblelabel](properties-accessibility.md)**。
+例如，你可能会设置 **[accessiblelabel](properties-accessibility.md)** 属性**设置**图标**设置**。 此图标不用作按钮。 它是旁边 **[标签](control-text-box.md)** 同样显示**设置**。 屏幕阅读器将图标和标签与读取**设置**，这是不必要地详细。 在这种情况下，该图标不需要 **[accessiblelabel](properties-accessibility.md)** 。
 
 > [!IMPORTANT]
 > 屏幕阅读器将读取读取图标或形状**按钮**如果其 **[accessiblelabel](properties-accessibility.md)** 设置为空字符串并将其 **[TabIndex](properties-accessibility.md)** 设置为零或更高版本。 此类图标或形状以按钮形式呈现。 
