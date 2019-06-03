@@ -36,11 +36,11 @@ ms.locfileid: "61526047"
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”  、“虚线”  、“点线”  还是“无”  。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit  )、仅显示数据 (View  )，还是已禁用 (Disabled  )。
 
 **[Fill](properties-color-border.md)** – 控件的背景色。
 
@@ -58,7 +58,7 @@ ms.locfileid: "61526047"
 
 **ReadOnly** – 用户是否可以更改滑块或评分控件的值。
 
-[Reset](properties-core.md) – 是否还原控件的默认值。
+[Reset](properties-core.md)  – 是否还原控件的默认值。
 
 **ShowValue** – 当用户更改滑块或评分的值或将鼠标悬停在控件上时，是否显示该值。
 
@@ -78,18 +78,18 @@ ms.locfileid: "61526047"
 [**Average**( *Value1*, *Value2,* ... )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>示例
-1. 添加“评分”控件，并将其命名为“定量”。
+1. 添加“评分”  控件，并将其命名为“定量”  。
    
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
-2. 添加**[“文本输入”](control-text-input.md)** 控件，将其命名为“定性”，并将其移至“评分”控件下。
-3. 将**[“文本输入”](control-text-input.md)** 控件的**[“Default”](properties-core.md)** 属性设置为 **""**，并将其“HintText”设置为以下公式：
+2. 添加 **[“文本输入”](control-text-input.md)** 控件，将其命名为“定性”  ，并将其移至“评分”  控件下。
+3. 将 **[“文本输入”](control-text-input.md)** 控件的 **[“Default”](properties-core.md)** 属性设置为 **""** ，并将其“HintText”  设置为以下公式：
    <br>**If(Quantitative.Value > 3, "What did you especially like?", "How might we do better?")**
    
     想要了解有关 **[If](../functions/function-if.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
-4. 按 F5，然后在“评分”控件中单击或点击四颗或五颗星。
+4. 按 F5，然后在“评分”  控件中单击或点击四颗或五颗星。
    
     **[文本输入](control-text-input.md)** 控件中的提示文本将发生变化以体现高评分。
-5. 在“定量”中单击或点击少于四颗星。
+5. 在“定量”  中单击或点击少于四颗星。
    
     **[Text input](control-text-input.md)** 控件中的提示文本将发生变化以体现低评分。
 6. 若要返回到默认工作区，请按 Esc 键。
@@ -106,12 +106,12 @@ ms.locfileid: "61526047"
 * **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
 
     > [!NOTE]
-  > 屏幕阅读器将“评级”控件视为单选按钮。
+  > 屏幕阅读器将“评级”  控件视为单选按钮。
 
 ### <a name="keyboard-support"></a>键盘支持
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
+* 焦点指示器必须清晰可见。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
 * 如果有太多星级，则考虑使用不同控件。 使用键盘导航可能会很繁琐，而且很难用触摸屏精确地选择。
 
     > [!NOTE]
-  > 单选按钮的相同键盘交互可以在“评级”上使用。
+  > 单选按钮的相同键盘交互可以在“评级”  上使用。

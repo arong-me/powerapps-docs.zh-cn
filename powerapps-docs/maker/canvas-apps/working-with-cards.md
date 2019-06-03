@@ -22,9 +22,9 @@ ms.locfileid: "66225176"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>了解 PowerApps 中的数据卡
 
-[卡](controls/control-card.md)控件是画布应用中[编辑窗体](controls/control-form-detail.md)和[显示窗体](controls/control-form-detail.md)控件的构建基块********。 表单表示整条记录，每个卡表示该记录的单个字段。
+[卡](controls/control-card.md)控件是画布应用中[编辑窗体](controls/control-form-detail.md)和[显示窗体](controls/control-form-detail.md)控件的构建基块 ****** **  。 表单表示整条记录，每个卡表示该记录的单个字段。
 
-在设计工作区中选择表单控件后即可在右窗格中与卡轻松地进行交互。 在该窗格中，可以选择要显示哪些字段、每个字段的显示方式，以及按何种顺序进行显示。 此示例显示了从名为“资产”的 SharePoint 列表生成的应用中的“编辑表单”控件。
+在设计工作区中选择表单控件后即可在右窗格中与卡轻松地进行交互。 在该窗格中，可以选择要显示哪些字段、每个字段的显示方式，以及按何种顺序进行显示。 此示例显示了从名为“资产”  的 SharePoint 列表生成的应用中的“编辑表单”  控件。
 
 ![第一个屏幕](./media/working-with-cards/first-screen.png)
 
@@ -45,14 +45,14 @@ PowerApps 为字符串、数字和其他数据类型提供了一组预定义的�
 ![](./media/working-with-cards/add-security-code.png)
 
 ## <a name="customize-a-card"></a>自定义卡片
-卡还包含其他控件。 在“编辑表单”控件中，用户在你从“插入”选项卡添加的标准**[文本输入](controls/control-text-input.md)** 控件中输入数据。  
+卡还包含其他控件。 在“编辑表单”  控件中，用户在你从“插入”  选项卡添加的标准 **[文本输入](controls/control-text-input.md)** 控件中输入数据。  
 
 下面，让我们举例说明如何通过操作其中的控件来更改卡的外观。
 
 1. 首先，让我们返回到最近为 **SecurityCode** 字段插入的卡。 通过单击或点击一次来选择此卡：
    
     ![](./media/working-with-cards/select-security-code.png)
-2. 选择该卡内的**[文本输入](controls/control-text-input.md)** 控件（通过单击或点击输入控件本身）。
+2. 选择该卡内的 **[文本输入](controls/control-text-input.md)** 控件（通过单击或点击输入控件本身）。
    
     ![](./media/working-with-cards/select-text-input.png)
 3. 通过拖动选择框在卡内移动此控件，通过沿选择框的边缘拖动手柄来调整控件大小：
@@ -62,13 +62,13 @@ PowerApps 为字符串、数字和其他数据类型提供了一组预定义的�
 你可以调整卡中控件的大小、移动控件或者对其进行其他修改，但在不先解锁控件的情况下无法将其删除。
 
 ## <a name="unlock-a-card"></a>解锁卡
-除了可以包含控件之外，卡本身也是控件，与任何其他控件一样，它们也具有属性和公式。 当你选择在表单上显示某个字段时，右侧的窗格会自动为你创建卡并生成所需的公式。  可以在右窗格的“高级”选项卡中看到这些公式：
+除了可以包含控件之外，卡本身也是控件，与任何其他控件一样，它们也具有属性和公式。 当你选择在表单上显示某个字段时，右侧的窗格会自动为你创建卡并生成所需的公式。  可以在右窗格的“高级”  选项卡中看到这些公式：
 
 ![](./media/working-with-cards/advanced-locked.png)
 
-我们会立即看到卡的最重要属性之一：**[DataField](controls/control-card.md)** 属性。 此属性指示用户在此卡中可以看到和编辑数据源的哪个字段。  
+我们会立即看到卡的最重要属性之一： **[DataField](controls/control-card.md)** 属性。 此属性指示用户在此卡中可以看到和编辑数据源的哪个字段。  
 
-在“高级”选项卡上，顶部的横幅指示此卡的属性处于锁定状态。 在 **[DataField](controls/control-card.md)**、**[DisplayName](controls/control-card.md)** 和 **[Required](controls/control-card.md)** 属性旁边还会显示一个锁图标。 右侧窗格创建了这些公式，锁可以防止意外更改这些属性。
+在“高级”  选项卡上，顶部的横幅指示此卡的属性处于锁定状态。 在 **[DataField](controls/control-card.md)** 、 **[DisplayName](controls/control-card.md)** 和 **[Required](controls/control-card.md)** 属性旁边还会显示一个锁图标。 右侧窗格创建了这些公式，锁可以防止意外更改这些属性。
 
 ![](./media/working-with-cards/lock-icons.png)
 
@@ -76,7 +76,7 @@ PowerApps 为字符串、数字和其他数据类型提供了一组预定义的�
 
 ![](./media/working-with-cards/unlocked-card.png)
 
-让我们来修改 **[DisplayName](controls/control-card.md)**，在 **Asset** 和 **ID** 之间放置一个空格。 通过执行此更改，我们更改了为我们生成的内容。  在右侧窗格中，此卡有一个不同的标签：
+让我们来修改 **[DisplayName](controls/control-card.md)** ，在 **Asset** 和 **ID** 之间放置一个空格。 通过执行此更改，我们更改了为我们生成的内容。  在右侧窗格中，此卡有一个不同的标签：
 
 ![](./media/working-with-cards/change-display-name.png)
 
@@ -85,23 +85,23 @@ PowerApps 为字符串、数字和其他数据类型提供了一组预定义的�
 > [!IMPORTANT]
 > 无法重新锁定已解锁的卡片。 要想将卡恢复为锁定状态，需要先将其删除，然后在右侧窗格中将其重新插入。
 
-可以使用很多方法来更改已解锁卡的外观和行为，例如添加和删除其中的控件。 例如，可以从“插入”选项卡上的“图标”菜单中添加星形。
+可以使用很多方法来更改已解锁卡的外观和行为，例如添加和删除其中的控件。 例如，可以从“插入”  选项卡上的“图标”  菜单中添加星形。
 
 ![](./media/working-with-cards/add-star.png)
 
 此星形现在已成为卡的一部分，并且将随它一起移动，例如当你在表单内重新排列卡时。
 
-再如，将 **ImageURL** 卡解锁，然后从“插入”选项卡将“图像”控件添加到其中：
+再如，将 **ImageURL** 卡解锁，然后从“插入”  选项卡将“图像”  控件添加到其中：
 
 ![](./media/working-with-cards/add-image.png)
 
-在编辑栏中，将此控件的 **Image** 属性设置为 *TextBox*.**Text**，其中 *TextBox* 是保存 URL 的“文本输入”控件的名称：
+在编辑栏中，将此控件的 **Image** 属性设置为 *TextBox*.**Text**，其中 *TextBox* 是保存 URL 的“文本输入”  控件的名称：
 
 ![](./media/working-with-cards/show-image.png)
 
 现在，我们可以看到图像并编辑其 URL 了。 注意，我们也可以使用 **Parent.Default** 作为 **Image** 属性，但当用户更改 URL 时它不会更新。
 
-我们可以在此应用的第二个屏幕上执行同样的操作，其中，我们将使用“显示表单”控件来显示记录的详细信息。 此时，我们不妨隐藏标签（将标签（而不是卡）的 **Visible** 属性设置为 **false**），因为用户不会在此屏幕上编辑 URL：
+我们可以在此应用的第二个屏幕上执行同样的操作，其中，我们将使用“显示表单”  控件来显示记录的详细信息。 此时，我们不妨隐藏标签（将标签（而不是卡）的 **Visible** 属性设置为 **false**），因为用户不会在此屏幕上编辑 URL：
 
 ![](./media/working-with-cards/show-image-display.png)
 
@@ -123,7 +123,7 @@ PowerApps 为字符串、数字和其他数据类型提供了一组预定义的�
 默认情况下，**DefaultValue** 和 **[Required](controls/control-card.md)** 属性是基于 **[DataField](controls/control-card.md)** 属性从数据源的元数据获取的。 你可以使用自己的逻辑替代这些公式，通过使用 **[DataSourceInfo](functions/function-datasourceinfo.md)** 函数集成数据源的元数据。
 
 ### <a name="information-flowing-out"></a>流出的信息
-在用户使用卡中的控件修改记录后，**[SubmitForm](functions/function-form.md)** 函数会将这些更改保存到数据源。 当该函数运行时，表单控件将读取每个卡的 **[DataField](controls/control-card.md)** 属性的值来了解要更改哪个字段。  
+在用户使用卡中的控件修改记录后， **[SubmitForm](functions/function-form.md)** 函数会将这些更改保存到数据源。 当该函数运行时，表单控件将读取每个卡的 **[DataField](controls/control-card.md)** 属性的值来了解要更改哪个字段。  
 
 表单控件还会读取每个卡的 **[Update](controls/control-card.md)** 属性的值。 此值将存储在此字段的数据源中。 这是要应用另一个转换的地方，也许要反转在卡的 **[Default](controls/properties-core.md)** 公式中应用的转换。
 
@@ -144,10 +144,10 @@ PowerApps 为字符串、数字和其他数据类型提供了一组预定义的�
 
 | 名称 | 类型 | 描述 |
 | --- | --- | --- |
-| **TextRequiredStar** |“[标签](controls/control-text-box.md)”控件 |显示一个星号，这通常在数据输入表单上用来指示某个字段是必填的。 |
-| **TextFieldDisplayName** |“[标签](controls/control-text-box.md)”控件 |显示此字段的用户友好名称。 此名称可以不同于数据源的架构中的名称。 |
+| **TextRequiredStar** |“[标签](controls/control-text-box.md)”  控件 |显示一个星号，这通常在数据输入表单上用来指示某个字段是必填的。 |
+| **TextFieldDisplayName** |“[标签](controls/control-text-box.md)”  控件 |显示此字段的用户友好名称。 此名称可以不同于数据源的架构中的名称。 |
 | **InputText** |**输入文本**控件 |显示字段的初始值并允许用户更改该值。 |
-| **TextErrorMessage** |“[标签](controls/control-text-box.md)”控件 |如果验证时出现问题，则向用户显示一条用户友好错误消息。 如果字段为必填字段，还可以确保字段具有值。 |
+| **TextErrorMessage** |“[标签](controls/control-text-box.md)”  控件 |如果验证时出现问题，则向用户显示一条用户友好错误消息。 如果字段为必填字段，还可以确保字段具有值。 |
 
 若要为这些控件填充数据，可以通过以下关键公式从卡的属性驱动其属性。 注意，这些公式中没有一个引用特定的字段。 相反，所有信息都来自卡。
 

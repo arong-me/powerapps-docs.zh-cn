@@ -52,7 +52,7 @@ ms.locfileid: "61548414"
 
 ![](media/function-trim/input-strings.png)
 
-若要创建此集合，请将**[按钮](../controls/control-button.md)** 控件的 **OnSelect** 属性设置为以下公式，打开“预览”模式，然后单击或点击按钮：
+若要创建此集合，请将 **[按钮](../controls/control-button.md)** 控件的 **OnSelect** 属性设置为以下公式，打开“预览”模式，然后单击或点击按钮：
 <br>**ClearCollect( Spaces, [ "&nbsp;&nbsp;&nbsp;Jane&nbsp;&nbsp;&nbsp;Doe&nbsp;&nbsp;&nbsp;", "&nbsp;&nbsp;&nbsp;&nbsp;Jack&nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp;Jill", "Already&nbsp;trimmed", "&nbsp;&nbsp;&nbsp;Venus,&nbsp;&nbsp;&nbsp;Earth,&nbsp;&nbsp;&nbsp;Mars&nbsp;&nbsp;", "Oil&nbsp;and&nbsp;Water&nbsp;&nbsp;&nbsp;" ] )**
 
 | 公式 | 描述 | 结果 |
@@ -61,5 +61,5 @@ ms.locfileid: "61548414"
 | **TrimEnds(&nbsp;Spaces&nbsp;)** |修剪 **Spaces** 集合中每个字符串开头和结尾的所有空格。 |<style> img { max-width: none } </style> ![](media/function-trim/output-trimends.png) |
 
 > [!NOTE]
-> 如果通过单击或点击“文件”菜单上的“集合”来显示集合，则不会出现多余空格。 若要验证字符串长度，请使用 **[Len](function-len.md)** 函数。
+> 如果通过单击或点击“文件”  菜单上的“集合”  来显示集合，则不会出现多余空格。 若要验证字符串长度，请使用 **[Len](function-len.md)** 函数。
 

@@ -26,7 +26,7 @@ ms.locfileid: "61544582"
 
 ## <a name="description"></a>描述
 
-此控件显示相机源应用程序中，以便用户可以扫描条形码，在所有设备上。 该控件是由于性能不佳和移动版已过时**[条码扫描器](control-new-barcode-scanner.md)** 控件所替换此控件。
+此控件显示相机源应用程序中，以便用户可以扫描条形码，在所有设备上。 该控件是由于性能不佳和移动版已过时 **[条码扫描器](control-new-barcode-scanner.md)** 控件所替换此控件。
 
 ## <a name="key-properties"></a>关键属性
 
@@ -38,11 +38,11 @@ ms.locfileid: "61544582"
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”  、“虚线”  、“点线”  还是“无”  。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit  )、仅显示数据 (View  )，还是已禁用 (Disabled  )。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -52,7 +52,7 @@ ms.locfileid: "61544582"
 
 **StreamRate** - 在 **Stream** 属性上更新图像的频率（以毫秒为单位）。  此值的范围为 100（1/10 秒）到 3,600,000（1 小时）。
 
-Text – 上次由扫描仪识别的条形码值。
+Text  – 上次由扫描仪识别的条形码值。
 
 **[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
 
@@ -86,7 +86,7 @@ Text – 上次由扫描仪识别的条形码值。
 
 ### <a name="video-alternatives"></a>视频替代项
 
-* 请考虑添加 **[标签](control-text-box.md)**，并将其 **[Text](properties-core.md)** 设置为条形码扫描仪的“Text”。 由于条形码扫描仪未显示标识的条形码值，执行上述操作将使所有人都可访问扫描仪，而不仅仅是那些有视觉障碍的用户。
+* 请考虑添加 **[标签](control-text-box.md)** ，并将其 **[Text](properties-core.md)** 设置为条形码扫描仪的“Text”  。 由于条形码扫描仪未显示标识的条形码值，执行上述操作将使所有人都可访问扫描仪，而不仅仅是那些有视觉障碍的用户。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
 

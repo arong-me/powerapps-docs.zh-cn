@@ -23,10 +23,10 @@ ms.locfileid: "61554648"
 # <a name="show-items-of-different-heights-in-a-powerapps-gallery"></a>显示 PowerApps 库中具有不同高度的项目
 如果数据集中的不同项目在同一字段中包含的数据量不同，则可完全显示出包含更多数据的项目，而无需在包含较少数据的项目后面添加空格。 添加或配置**可变高度**库控件，以便可以：
 
-* 将“标签”控件配置为根据内容量进行缩放。
+* 将“标签”  控件配置为根据内容量进行缩放。
 * 放置每个控件，以便自动在其上方的控件下出现。
 
-在本教程中，将在“可变高度”库控件中显示地板产品的相关数据。 无论概述是包含 5 行文本还是 2 行文本，每个产品的图像均以 5 个像素的大小在概述下方显示。
+在本教程中，将在“可变高度”  库控件中显示地板产品的相关数据。 无论概述是包含 5 行文本还是 2 行文本，每个产品的图像均以 5 个像素的大小在概述下方显示。
 
 ![最终应用](./media/gallery-dynamic-sizing/dynamic-app.png)
 
@@ -41,9 +41,9 @@ ms.locfileid: "61554648"
 
 2. 将 Excel 文件上传到云存储帐户（如 OneDrive、Dropbox 或 Google Drive）中。
 
-3. 在 PowerApps Studio 中，单击或点击“文件”菜单上的“新建”。
+3. 在 PowerApps Studio 中，单击或点击“文件”  菜单上的“新建”  。
 
-4. 在“空白应用”磁贴上，单击或点击“手机布局”。
+4. 在“空白应用”  磁贴上，单击或点击“手机布局”  。
 
     ![“文件”菜单上的“新建”选项](./media/gallery-dynamic-sizing/blank-app.png)
 
@@ -52,7 +52,7 @@ ms.locfileid: "61554648"
     有关详细信息，请参阅[添加连接](add-data-connection.md)。
 
 ## <a name="add-data-to-a-gallery"></a>向库添加数据
-1. 在“插入”选项卡上，依次单击或点击“库”和“高度可调”。
+1. 在“插入”  选项卡上，依次单击或点击“库”  和“高度可调”  。
 
     ![添加库](./media/gallery-dynamic-sizing/add-flexible.png)
 2. 调整库的大小，以占据整个屏幕。
@@ -64,19 +64,19 @@ ms.locfileid: "61554648"
 
     ![铅笔图标](./media/gallery-dynamic-sizing/edit-template.png)
 
-2. 选择库模板后，向其中添加“[标签](controls/control-text-box.md)”控件。
+2. 选择库模板后，向其中添加“[标签](controls/control-text-box.md)”  控件。
 
-3. 将“标签”控件的“Text”属性设置为以下表达式：<br>
+3. 将“标签”  控件的“Text”  属性设置为以下表达式：<br>
    **ThisItem.Name**
 
     ![添加标签](./media/gallery-dynamic-sizing/add-text-box.png)
 
 ## <a name="show-the-product-overviews"></a>显示产品概述
-1. 选择库模板后，添加另一个“标签”控件，然后将它移到第一个“标签”控件下方。  
+1. 选择库模板后，添加另一个“标签”  控件，然后将它移到第一个“标签”  控件下方。  
 
-2. 将第二个“标签”控件的“Text”属性设置为以下表达式：<br> **ThisItem.Overview**
+2. 将第二个“标签”  控件的“Text”  属性设置为以下表达式：<br> **ThisItem.Overview**
 
-3. 选择第二个“标签”控件后，单击或点击“内容”选项卡上的名称标记图标，然后将控件重命名为“OverviewText”。
+3. 选择第二个“标签”  控件后，单击或点击“内容”  选项卡上的名称标记图标，然后将控件重命名为“OverviewText”  。
 
     ![重命名标签](./media/gallery-dynamic-sizing/rename-text-box.png)
 
@@ -91,12 +91,12 @@ ms.locfileid: "61554648"
 
     生成应用时可以更加轻松地向模板添加控件，此更改不会影响应用运行时的外观。
 
-2. 选择库模板后，添加**[图像](controls/control-image.md)** 控件，并将其移到 **OverviewText** 框的下方。
+2. 选择库模板后，添加 **[图像](controls/control-image.md)** 控件，并将其移到 **OverviewText** 框的下方。
 
-3. 确保将“图像”控件的 **Image** 属性设置为以下表达式：<br>
-    ThisItem.Image
+3. 确保将“图像”  控件的 **Image** 属性设置为以下表达式：<br>
+    ThisItem.Image 
 
-4. 根据 **OverviewText** 框的位置和大小将“图像”控件的 **[Y](controls/properties-core.md)** 属性设置为以下表达式：
+4. 根据 **OverviewText** 框的位置和大小将“图像”  控件的 **[Y](controls/properties-core.md)** 属性设置为以下表达式：
    <br>**OverviewText.Y + OverviewText.Height + 5**
 
     ![最终应用](./media/gallery-dynamic-sizing/final-app.png)

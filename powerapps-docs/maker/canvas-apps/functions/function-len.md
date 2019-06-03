@@ -39,7 +39,7 @@ ms.locfileid: "66216026"
 
 ## <a name="examples"></a>示例
 ### <a name="single-string"></a>单个字符串
-对于本部分中的示例，[数据源](../working-with-data-sources.md)是名为“Author”的文本输入控件，其中包含字符串“E. E. Cummings”。
+对于本部分中的示例，[数据源](../working-with-data-sources.md)是名为“Author”  的文本输入控件，其中包含字符串“E. E. Cummings”。
 
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |

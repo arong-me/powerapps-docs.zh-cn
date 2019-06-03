@@ -40,13 +40,13 @@ ms.locfileid: "61562867"
 
 ## <a name="examples"></a>示例
 ### <a name="step-by-step"></a>分步操作
-1. 添加“[文本输入](../controls/control-text-input.md)”控件，将它命名为 **“Tweet”**，然后在其中键入下面这句话：
+1. 添加“[文本输入](../controls/control-text-input.md)”  控件，将它命名为 **“Tweet”** ，然后在其中键入下面这句话：
    
     **This #app is #AMAZING and can #coUnt123 or #123abc but not #1-23 or #$\*(#\@")**
 2. 添加垂直自定义库，并将其 **[Items](../controls/properties-core.md)** 属性设置为此函数：
    
     **HashTags(Tweet.Text)**
-3. 将“[标签](../controls/control-text-box.md)”控件添加到库模板中。
+3. 将“[标签](../controls/control-text-box.md)”  控件添加到库模板中。
    
     库将显示以下井号标签：
    

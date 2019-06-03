@@ -24,9 +24,9 @@ ms.locfileid: "61548078"
 该控件用于显示与其他内容相比较的相对值。
 
 ## <a name="description"></a>描述
-如果要从最左侧列中包含标签的表中显示相对数据，以及显示左起第二列中的值，请添加“饼图”控件。
+如果要从最左侧列中包含标签的表中显示相对数据，以及显示左起第二列中的值，请添加“饼图”  控件。
 
-此控件是包含三个控件的分组控件：**[标题标签](control-text-box.md)**、图表图形和图例。
+此控件是包含三个控件的分组控件： **[标题标签](control-text-box.md)** 、图表图形和图例  。
 
 ## <a name="chart-key-properties"></a>图表关键属性
 **[Items](properties-core.md)** - 控件中显示的数据源，如库、列表或图表。
@@ -36,15 +36,15 @@ ms.locfileid: "61548078"
 ## <a name="additional-chart-properties"></a>其他图表属性
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”  、“虚线”  、“点线”  还是“无”  。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
 **[Color](properties-color-border.md)** – 控件中文本的颜色。
 
-**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit  )、仅显示数据 (View  )，还是已禁用 (Disabled  )。
 
-**[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件边框的颜色。
+**[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md)  属性设置为“Disabled”  时，该控件边框的颜色。
 
 **Explode** - 饼图中楔形间的距离。
 
@@ -82,14 +82,14 @@ ms.locfileid: "61548078"
 [**Max**( *DataSource*, *ColumnName* )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>示例
-1. 添加“**[按钮](control-button.md)**”控件，并将其 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
+1. 添加“ **[按钮](control-button.md)** ”控件，并将其 **[OnSelect](properties-core.md)** 属性设置为以下公式：<br>
    **Collect(Revenue2015, {Product:"Europa", Revenue:27000}, {Product:"Ganymede", Revenue:26300}, {Product:"Callisto", Revenue:29200})**
    
     不知道如何[添加和配置控件](../add-configure-controls.md)？
    
     想要了解有关 **[Collect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
-2. 按 F5，单击或点击“[按钮](control-button.md)”控件，然后按 Esc 返回到默认工作区。
-3. 添加**饼图**控件，然后将其 [Items](properties-core.md) 属性设置为 **Revenue2015**。
+2. 按 F5，单击或点击“[按钮](control-button.md)”  控件，然后按 Esc 返回到默认工作区。
+3. 添加**饼图**控件，然后将其 [Items](properties-core.md)  属性设置为 **Revenue2015**。
    
     **饼图**控件显示每个产品与其他产品之间相关的收入数据。
 
@@ -97,20 +97,20 @@ ms.locfileid: "61548078"
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：
-* “ItemColorSet”中的每个项
-* “ItemColorSet”中的所有项和背景色
+* “ItemColorSet”  中的每个项
+* “ItemColorSet”  中的所有项和背景色
 * **[Color](properties-color-border.md)** 和背景色
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* “图表图形”前必须有一个便签作为**[标题](control-text-box.md)**。
+* “图表图形”前必须有一个便签作为 **[标题](control-text-box.md)** 。
 
     > [!NOTE]
-  > “图表图形”和“图例”对屏幕阅读器用户隐藏。 作为替代方法，将向用户显示表格形式的数据。 他们还可以在用于在图表中选择数据的按钮之间循环。
+  > “图表图形”和“图例”  对屏幕阅读器用户隐藏。 作为替代方法，将向用户显示表格形式的数据。 他们还可以在用于在图表中选择数据的按钮之间循环。
 
 ### <a name="low-vision-support"></a>弱视支持
-* “Legend”必须存在。
-* 请考虑将“ShowLabels”设置为“true”。 这可以帮助弱视用户快速确定每个饼图扇区所表示的内容。
-* 请考虑将“LabelPosition”设置为“LabelPosition.Outside”。 这样可以提高标签的易读性，因为颜色对比度更一致。
+* “Legend”  必须存在。
+* 请考虑将“ShowLabels”  设置为“true”  。 这可以帮助弱视用户快速确定每个饼图扇区所表示的内容。
+* 请考虑将“LabelPosition”  设置为“LabelPosition.Outside”  。 这样可以提高标签的易读性，因为颜色对比度更一致。
 
 ### <a name="keyboard-support"></a>键盘支持
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。

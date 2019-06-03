@@ -31,7 +31,7 @@ ms.locfileid: "61551068"
 ## <a name="description"></a>说明
 **Enable** 和 **Disable** 函数分别用于打开和关闭信号。
 
-这两个函数仅对**[定位](signals.md)** 信号有效。
+这两个函数仅对 **[定位](signals.md)** 信号有效。
 
 这两个函数没有返回值。 它们只能在[行为公式](../working-with-formulas-in-depth.md)中使用。
 
