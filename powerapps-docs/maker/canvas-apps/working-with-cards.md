@@ -22,7 +22,7 @@ ms.locfileid: "66225176"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>了解 PowerApps 中的数据卡
 
-[卡](controls/control-card.md)控件是画布应用中[编辑窗体](controls/control-form-detail.md)和[显示窗体](controls/control-form-detail.md)控件的构建基块 ****** **  。 表单表示整条记录，每个卡表示该记录的单个字段。
+**[卡](controls/control-card.md)** 控件是画布应用中 **[编辑窗体](controls/control-form-detail.md)** 和 **[显示窗体](controls/control-form-detail.md)** 控件的构建基块。 表单表示整条记录，每个卡表示该记录的单个字段。
 
 在设计工作区中选择表单控件后即可在右窗格中与卡轻松地进行交互。 在该窗格中，可以选择要显示哪些字段、每个字段的显示方式，以及按何种顺序进行显示。 此示例显示了从名为“资产”  的 SharePoint 列表生成的应用中的“编辑表单”  控件。
 

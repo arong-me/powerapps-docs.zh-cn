@@ -42,7 +42,7 @@ ms.locfileid: "61544538"
 当前 PowerApps 用户的信息如下：
 
 * 全名： **"John Doe"**
-* 电子邮件地址： **“john.doe@contoso.com”**
+* 电子邮件地址： **"john.doe@contoso.com"**
 * 图像：![](media/function-user/john-doe-picture.png) 
 
 |       公式       |                                                                    描述                                                                    |                                                 结果                                                  |
