@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ec035ca959f29832e2ba0bbb2250a24c11f1692e
-ms.sourcegitcommit: 562c7ed5fbb116be1cbb0f45e3f6e75e3e4cf011
+ms.openlocfilehash: f7cf23c03f68efc5e5b553a05d7f546373b636c9
+ms.sourcegitcommit: 2084789802fc5134dbeb888e759cced46019a017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66451403"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66736221"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps 的公式参考
 公式组合了许多元素。  下面列出的包括：
@@ -187,7 +187,10 @@ ms.locfileid: "66451403"
 
 **[IsToday](functions/function-now-today-istoday.md)** – 检查某个日期/时间值是否为今天的某个时间。
 
-**[IsType](functions/function-astype-istype.md)**  – 检查记录引用是否引用特定实体类型。  
+**[IsType](functions/function-astype-istype.md)**  – 检查记录引用是否引用特定实体类型。
+
+## <a name="j"></a>J
+**[JSON](functions/function-json.md)**  -生成表、 一个记录或值的 JSON 文本字符串。
 
 ## <a name="l"></a>L
 **[Language](functions/function-language.md)** – 返回当前用户的语言标记。

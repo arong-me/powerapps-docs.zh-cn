@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f9acc04a9159349075647ca4e318f15939a230f7
-ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.openlocfilehash: 13001b3116c0d11224ea8b29a0bea6d1f8efcd4d
+ms.sourcegitcommit: 2084789802fc5134dbeb888e759cced46019a017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66216634"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66736229"
 ---
 # <a name="data-types-in-canvas-apps"></a>画布应用中的数据类型
 
@@ -29,13 +29,13 @@ ms.locfileid: "66216634"
 | 数据类型 | 描述 | 示例 |
 |-----------|-------------|---------|
 | **Boolean** | 一个 *，则返回 true*或*false*值。  可以直接在使用**如果**，**筛选器**和其他功能而无需进行比较。  | *true* |
-| **Hyperlink** | 一个文本字符串，包含超链接。 | **"http://powerapps.microsoft.com"** |
+|  颜色 | 一种颜色规范，包括 alpha 通道。 | **Color.Red**<br>**ColorValue ("#102030")**<br>**RGBA( 255, 128, 0, 0.5 )** |
 | **货币** | 一个货币值，该值存储在一个浮点数。 货币值将与货币格式设置选项的 number 值相同。  | **123**<br>**4.56** |
-| **图像** | 一个[通用资源标识符 (URI)](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) .jpeg、.png、.svg、.gif 和其他常见 web 映像中的图像的文本字符串格式。 | **MyImage**添加为应用程序资源<br>**"https://northwindtraders.com/logo.jpg"**<br>**"appres://blobmanager/7b12ffa2..."** |
-| 颜色 | 一种颜色规范，包括 alpha 通道。 | **Color.Red**<br>**ColorValue ("#102030")**<br>**RGBA( 255, 128, 0, 0.5 )** |
 | **日期** | 而无需对应用的用户的时区中的某个时间日期。 | **Date( 2019, 5, 16 )** |
 | **DateTime** | 与应用程序的用户的时区中的某个时间日期。 | **DateTimeValue （"16，2019 年 5 1:23:09 PM"）** |
 | **GUID** | 一个[全局唯一标识符](https://en.wikipedia.org/wiki/Universally_unique_identifier)。 | **GUID()**<br>**GUID( "123e4567-e89b-12d3-a456-426655440000" )** |
+| **Hyperlink** | 一个文本字符串，包含超链接。 | **"http://powerapps.microsoft.com"** |
+| **图像** | 一个[通用资源标识符 (URI)](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) .jpeg、.png、.svg、.gif 或其他常见 web 图像格式中的图像的文本字符串。 | **MyImage**添加为应用程序资源<br>**"https://northwindtraders.com/logo.jpg"**<br>**"appres://blobmanager/7b12ffa2..."** |
 | **媒体** | URI 文本字符串与视频或音频录制。 | **MyVideo**添加为应用程序资源<br>**"https://northwindtraders.com/intro.mp4"**<br>**"appres://blobmanager/3ba411c..."** |
 | **数量** | 一个浮点数。 | **123**<br>**-4.567**<br>**8.903e121** |
 | **选项集** | 一组选项，由数字之间进行选择。 此数据类型与数字值进行组合的可本地化的文本标签。 在应用中，将显示该标签和存储和用于比较数字值。 | **ThisItem.OrderStatus** |
