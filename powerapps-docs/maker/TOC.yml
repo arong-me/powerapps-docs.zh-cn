@@ -82,18 +82,23 @@
             - name: 使用流
               href: ../user/use-flows.md
 - name: 创建应用
-  href: index.md
   items:
+    - name: 概述
+      href: index.md
     - name: 登录到 PowerApps
       href: ./canvas-apps/intro-maker-portal.md
 - name: 画布应用
-  href: ./canvas-apps/getting-started.md
   items:
+    - name: 画布应用有哪些？
+      href: ./canvas-apps/getting-started.md
     - name: 系统要求、限制和配置
       href: ./canvas-apps/limits-and-config.md
+    - name: 键盘快捷方式
+      href: ./canvas-apps/keyboard-shortcuts.md
     - name: 探索示例应用
-      href: ./canvas-apps/open-and-run-a-sample-app.md
       items:
+        - name: 通过示例创建画布应用
+          href: ./canvas-apps/open-and-run-a-sample-app.md
         - name: 零用金报销单应用
           href: ./canvas-apps/expense-report-install.md
         - name: 技术支持应用
@@ -129,8 +134,9 @@
     - name: 设计和生成应用
       items:
         - name: 连接到数据
-          href: ./canvas-apps/connections-list.md
           items:
+            - name: 连接列表
+              href: ./canvas-apps/connections-list.md
             - name: 常用连接器
               items:
                 - name: Common Data Service
@@ -165,12 +171,18 @@
               href: ./canvas-apps/working-with-data-sources.md
             - name: 了解表和记录
               href: ./canvas-apps/working-with-tables.md
+            - name: 了解记录引用
+              href: ./canvas-apps/working-with-references.md
         - name: 设计界面
-          href: ./canvas-apps/add-configure-controls.md
           items:
-            - name: 添加屏幕
-              href: ./canvas-apps/add-screen-context-variables.md
+            - name: 添加和配置控件
+              href: ./canvas-apps/add-configure-controls.md
+            - name: 添加和配置屏幕
               items:
+                - name: 添加屏幕
+                  href: ./canvas-apps/add-screen-context-variables.md
+                - name: 添加滚动屏幕
+                  href: ./canvas-apps/add-scrolling-screen.md
                 - name: 配置 Office 365 屏幕
                   items:
                     - name: “日历”屏幕概述
@@ -189,16 +201,16 @@
                       href: ./canvas-apps/screen-templates/people-screen-overview.md
                     - name: “联系人”屏幕参考
                       href: ./canvas-apps/screen-templates/people-screen-reference.md
-                - name: 添加滚动屏幕
-                  href: ./canvas-apps/add-scrolling-screen.md
             - name: 显示包含项的表
-              href: ./canvas-apps/add-gallery.md
               items:
-                - name: 显示具有不同高度的项目
+                - name: 添加库
+                  href: ./canvas-apps/add-gallery.md
+                - name: 添加一个高度可变的库
                   href: ./canvas-apps/gallery-dynamic-sizing.md
-            - name: 添加表单
-              href: ./canvas-apps/add-form.md
+            - name: 添加并配置窗体
               items:
+                - name: 添加表单
+                  href: ./canvas-apps/add-form.md
                 - name: 了解窗体
                   href: ./canvas-apps/working-with-forms.md
                 - name: 了解窗体布局
@@ -206,8 +218,9 @@
                 - name: 了解卡片
                   href: ./canvas-apps/working-with-cards.md
             - name: 添加列表
-              href: ./canvas-apps/add-list-box-drop-down-list-radio-button.md
               items:
+                - name: 添加列表框、下拉列表或单选按钮
+                  href: ./canvas-apps/add-list-box-drop-down-list-radio-button.md
                 - name: 创建从属下拉列表
                   href: ./canvas-apps/dependent-drop-down-lists.md
             - name: 添加图表
@@ -217,8 +230,9 @@
             - name: 添加 Power BI 数据
               href: ./canvas-apps/powerapps-custom-visual.md
             - name: 控件引用
-              href: ./canvas-apps/reference-properties.md
               items:
+                - name: 包含控件和属性的列表
+                  href: ./canvas-apps/reference-properties.md
                 - name: 添加图片
                   href: ./canvas-apps/controls/control-add-picture.md
                 - name: 附件
@@ -302,8 +316,9 @@
                 - name: Web 条形码扫描程序（实验性）
                   href: ./canvas-apps/controls/control-barcodescanner.md
         - name: 配置应用功能
-          href: ./canvas-apps/working-with-formulas.md
           items:
+            - name: 公式入门
+              href: ./canvas-apps/working-with-formulas.md
             - name: 了解变量
               href: ./canvas-apps/working-with-variables.md
             - name: 了解行为公式
@@ -319,8 +334,9 @@
             - name: 添加流
               href: ./canvas-apps/using-logic-flows.md
             - name: 公式参考
-              href: ./canvas-apps/formula-reference.md
               items:
+                - name: 概述
+                  href: ./canvas-apps/formula-reference.md
                 - name: Abs
                   href: ./canvas-apps/functions/function-numericals.md
                 - name: Acceleration
@@ -334,9 +350,11 @@
                 - name: And
                   href: ./canvas-apps/functions/function-logicals.md
                 - name: App
-                  href: ./canvas-apps/functions/signals.md
+                  href: ./canvas-apps/functions/object-app.md
                 - name: Asin
                   href: ./canvas-apps/functions/function-trig.md
+                - name: AsType
+                  href: ./canvas-apps/functions/function-astype-istype.md
                 - name: Atan
                   href: ./canvas-apps/functions/function-trig.md
                 - name: Atan2
@@ -391,6 +409,8 @@
                   href: ./canvas-apps/functions/function-table-counts.md
                 - name: CountRows
                   href: ./canvas-apps/functions/function-table-counts.md
+                - name: 数据类型
+                  href: ./canvas-apps/functions/data-types.md
                 - name: DataSourceInfo
                   href: ./canvas-apps/functions/function-datasourceinfo.md
                 - name: Date
@@ -463,6 +483,10 @@
                   href: ./canvas-apps/functions/function-isnumeric.md
                 - name: IsToday
                   href: ./canvas-apps/functions/function-now-today-istoday.md
+                - name: IsType
+                  href: ./canvas-apps/functions/function-astype-istype.md
+                - name: JSON
+                  href: ./canvas-apps/functions/function-json.md
                 - name: Language
                   href: ./canvas-apps/functions/function-language.md
                 - name: Last
@@ -641,11 +665,24 @@
                   href: ./canvas-apps/functions/function-datetime-parts.md
         - name: 在解决方案中创建应用
           href: ./canvas-apps/add-app-solution.md
+        - name: 使用关系数据创建应用
+          items:
+            - name: 安装数据
+              href: ./canvas-apps/northwind-install.md
+            - name: 画布应用的概述
+              href: ./canvas-apps/northwind-orders-canvas-overview.md
+            - name: 1 - 创建顺序库
+              href: ./canvas-apps/northwind-orders-canvas-part1.md
+            - name: 2 - 创建摘要表单
+              href: ./canvas-apps/northwind-orders-canvas-part2.md
+            - name: 3 - 创建详细信息库
+              href: ./canvas-apps/northwind-orders-canvas-part3.md
         - name: 构建全局应用
           href: ./canvas-apps/global-apps.md
         - name: 使应用可访问
-          href: ./canvas-apps/accessible-apps.md
           items:
+            - name: 创建可访问应用
+              href: ./canvas-apps/accessible-apps.md
             - name: 查找辅助功能问题
               href: ./canvas-apps/accessibility-checker.md
             - name: 对辅助功能使用颜色
@@ -655,18 +692,21 @@
             - name: 使用活动区域发布动态更改
               href: ./canvas-apps/accessible-apps-live-regions.md
         - name: 试验功能和预览功能
-          href: ./canvas-apps/working-with-experimental.md
+          href: ./canvas-apps/working-with-experimental-preview.md
     - name: 保存并发布应用
       href: ./canvas-apps/save-publish-app.md
-    - name: 共享应用
-      href: ./canvas-apps/share-app.md
+    - name: 共享应用及其依赖项
       items:
+        - name: 共享应用
+          href: ./canvas-apps/share-app.md
         - name: 共享 Excel 数据
           href: ./canvas-apps/share-app-data.md
         - name: 共享应用资源
           href: ./canvas-apps/share-app-resources.md
         - name: 在 Power BI 中嵌入应用
           href: ./canvas-apps/embed-powerapps-powerbi.md
+        - name: 嵌入 Teams 应用
+          href: ./canvas-apps/embed-teams-app.md
     - name: 管理应用
       items:
         - name: 编辑应用
@@ -677,21 +717,23 @@
           href: ./canvas-apps/restore-an-app.md
         - name: 更改应用名称和磁贴
           href: ./canvas-apps/set-name-tile.md
-        - name: 更改屏幕的大小和方向
-          href: ./canvas-apps/set-aspect-ratio-portrait-landscape.md
+        - name: 管理屏幕
           items:
+            - name: 更改屏幕的大小和方向
+              href: ./canvas-apps/set-aspect-ratio-portrait-landscape.md
             - name: 创建响应式布局
               href: ./canvas-apps/create-responsive-layout.md
     - name: 自定义 SharePoint 列表窗体
-      href: ./canvas-apps/customize-list-form.md
       items:
+        - name: 进行基本更改
+          href: ./canvas-apps/customize-list-form.md
         - name: 了解 SharePoint 窗体集成
           href: ./canvas-apps/sharepoint-form-integration.md
     - name: 与其他技术集成
       items:
         - name: SharePoint Online
           items:
-            - name: SharePoint Online 集成概述
+            - name: 概述
               href: ./canvas-apps/sharepoint-scenario-intro.md
             - name: 设置 SharePoint Online 列表
               href: ./canvas-apps/sharepoint-scenario-setup.md
@@ -716,8 +758,9 @@
         - name: 将 InfoPath 表单转换为 PowerApps
           href: ./canvas-apps/transform-infopath.md
     - name: 面向开发人员
-      href: ./canvas-apps/dev-enterprise-intro.md
       items:
+        - name: 适用于企业开发人员、合作伙伴和 ISV 的画布应用
+          href: ./canvas-apps/dev-enterprise-intro.md
         - name: 生成并认证自定义连接器
           href: ./canvas-apps/register-custom-api.md
         - name: 集成网站和其他技术
@@ -727,7 +770,13 @@
         - name: 让客户体验你的应用
           href: ./canvas-apps/dev-appsource-test-drive.md
         - name: 创建组件
-          href: ./canvas-apps/create-component.md
+          items:
+            - name: 概述
+              href: ./canvas-apps/create-component.md
+            - name: 行为公式
+              href: ./canvas-apps/component-behavior.md
+        - name: 在应用程序中嵌入画布应用
+          href: ./canvas-apps/embedding-sdk.md
 - name: 模型驱动应用
   href: ./model-driven-apps/model-driven-app-overview.md
   items:
@@ -767,8 +816,16 @@
                   items:
                     - name: 创建或编辑窗体
                       href: ./model-driven-apps/create-and-edit-forms.md
+                    - name: 添加、移动或删除字段
+                      href: ./model-driven-apps/add-move-or-delete-fields-on-form.md
+                    - name: 添加、移动或删除分区
+                      href: ./model-driven-apps/add-move-or-delete-sections-on-form.md
+                    - name: 添加、移动或删除选项卡
+                      href: ./model-driven-apps/add-move-or-delete-tabs-on-form.md
                     - name: 窗体设计器中的属性
                       href: ./model-driven-apps/form-designer-properties.md
+                    - name: 使用树视图
+                      href: ./model-driven-apps/using-tree-view-on-form.md
                 - name: 窗体类型
                   href: ./model-driven-apps/types-forms.md
                   items:
@@ -891,6 +948,8 @@
                   href: ./model-driven-apps/timer-control-legacy.md
             - name: 使用自定义控件进行数据可视化
               href: ./model-driven-apps/use-custom-controls-data-visualizations.md
+        - name: 使用 Excel 和 Word 模板
+          href: ./model-driven-apps/templates-overview.md
         - name: 使用主题应用组织品牌
           href: ./model-driven-apps/create-themes-organization-branding.md
     - name: 验证并发布应用
@@ -918,6 +977,8 @@
           href: ./model-driven-apps/change-custom-entity-icons.md
         - name: 使用解决方案分发应用
           href: ./model-driven-apps/distribute-model-driven-app.md
+        - name: 创建引导式帮助
+          href: ./model-driven-apps/create-guided-help-learning-path.md
     - name: PowerApps 应用设计器中的辅助功能
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: 面向开发人员
@@ -1070,6 +1131,8 @@
           href: ./common-data-service/create-solution.md
         - name: 查看解决方案层
           href: ./common-data-service/solution-layers.md
+        - name: 查看解决方案历史记录
+          href: ./common-data-service/solution-history.md
         - name: 使用解决方案检查器
           href: ./common-data-service/use-powerapps-checker.md
         - name: 使用分段解决方案
@@ -1095,6 +1158,10 @@
       href: ./common-data-service/import-translated-entity-field-text.md
     - name: 面向开发人员
       href: ../developer/common-data-service/overview.md
+- name: AI 生成器
+  items:
+    - name: 使用 PowerApps 中的 AI 生成器
+      href: ../use-ai-builder.md
 - name: 相互学习
   items:
     - name: 网络研讨会
