@@ -2,15 +2,29 @@
   items:
     - name: 概述
       href: overview.md
-    - name: 什么是自定义组件
+    - name: 什么是自定义组件？
       href: custom-controls-overview.md
-    - name: 使用 Microsoft PowerApps CLI 创建、调试和部署自定义组件
-      href: create-custom-controls-using-pcf.md
-    - name: 在 TypeScript 中实现自定义组件
-      href: implementing-controls-using-typescript.md
-    - name: 将现有 PowerApps 组件框架组件更新为新的工具格式
-      href: updating-existing-controls.md
-    - name: PowerApps 组件框架的限制
+    - name: 获取工具
+      href: get-powerapps-cli.md
+    - name: 教程
+      items:
+        - name: 实现示例组件
+          href: implementing-controls-using-typescript.md
+    - name: 操作说明
+      items:
+        - name: 创建和生成自定义组件
+          href: create-custom-controls-using-pcf.md
+        - name: 调试自定义组件
+          href: debugging-custom-controls.md
+        - name: 打包自定义组件
+          href: import-custom-controls.md
+        - name: 将组件添加到实体或字段
+          href: add-custom-controls-to-a-field-or-entity.md
+        - name: 更新现有的自定义组件
+          href: updating-existing-controls.md
+        - name: 在 AppSource 上发布自定义组件
+          href: publish-components-app-source.md
+    - name: 限制
       href: limitations.md
     - name: 常见问题
       href: faq.md
