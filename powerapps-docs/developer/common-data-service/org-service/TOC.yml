@@ -70,16 +70,16 @@
   items:
     - name: 使用 LINQ 生成查询（.NET 语言集成查询）
       href: build-queries-with-linq-net-language-integrated-query.md
-    - name: LINQ 查询示例
-      href: linq-query-examples.md
+    - name: 使用 LINQ 来构造查询
+      href: use-linq-construct-query.md
+    - name: 通过 LINQ 查询使用后期绑定的实体类
+      href: use-late-bound-entity-class-linq-query.md
     - name: 使用 LINQ 对使用实体属性的结果排序
       href: order-results-entity-attributes-linq.md
     - name: 使用 LINQ 对大型结果集分页
       href: page-large-result-sets-linq.md
-    - name: 通过 LINQ 查询使用后期绑定的实体类
-      href: use-late-bound-entity-class-linq-query.md
-    - name: 使用 LINQ 来构造查询
-      href: use-linq-construct-query.md
+    - name: LINQ 查询示例
+      href: linq-query-examples.md
 - name: 检测重复数据
   href: detect-duplicate-data.md
 - name: 生成用于早期绑定编程的类
