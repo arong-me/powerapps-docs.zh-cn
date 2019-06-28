@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 13001b3116c0d11224ea8b29a0bea6d1f8efcd4d
-ms.sourcegitcommit: 2084789802fc5134dbeb888e759cced46019a017
+ms.openlocfilehash: 85567e120754d4f82e13bd7d7dac9fa0f7c80cbd
+ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66736229"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67456770"
 ---
 # <a name="data-types-in-canvas-apps"></a>画布应用中的数据类型
 
@@ -171,7 +171,7 @@ SQL Server 具有[ **Datetime**， **Datetime2**，和其他日期/时间数据�
 
 画布应用使用中的包含的时区信息**Datetimeoffset**字段时将值转换为应用程序的内部 UTC 表示形式。 应用程序始终使用 UTC 与时区 （零个时区偏移量） 时写入的数据。
 
-画布应用读取和写入的值[**时间**](https://docs.microsoft.com/en-us/sql/t-sql/data-types/time-transact-sql)中的文本字符串作为 SQL Server 中的数据类型[ISO 8601 持续时间格式](https://en.wikipedia.org/wiki/ISO_8601#Durations)。 例如，您必须分析此字符串格式，并使用[**时间**](function-date-time.md)函数将转换的文本字符串 **"PT2H1M39S"** 到**时间**值：
+画布应用读取和写入的值[**时间**](https://docs.microsoft.com/sql/t-sql/data-types/time-transact-sql)中的文本字符串作为 SQL Server 中的数据类型[ISO 8601 持续时间格式](https://en.wikipedia.org/wiki/ISO_8601#Durations)。 例如，您必须分析此字符串格式，并使用[**时间**](function-date-time.md)函数将转换的文本字符串 **"PT2H1M39S"** 到**时间**值：
 
 ```powerapps-dot
 First(

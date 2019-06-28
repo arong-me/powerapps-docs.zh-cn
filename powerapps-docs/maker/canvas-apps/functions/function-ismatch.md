@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7141d3b9a2ba6bf18bffe1756d0d7de048606cad
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 2cfa2a93e7bb33dc2c1b26c266b1ecf6680938c4
+ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61562978"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67457050"
 ---
 # <a name="ismatch-match-and-matchall-functions-in-powerapps"></a>PowerApps 中 IsMatch、 Match 和 MatchAll 函数
 测试文本字符串的模式匹配或提取部分。
@@ -34,10 +34,10 @@ ms.locfileid: "61562978"
 
 | 列 | 类型 | 描述 |
 |----|----|----|
-| *名为 sub&#8209;匹配或子&#8209;匹配* | Text | 每个命名的子匹配项将具有其各自的列。 通过创建命名的子匹配项 **(？&lt;*名称*&gt;**...**)** 正则表达式中。 如果命名的子匹配项具有作为一个预定义的列 （见下文） 相同的名称，子匹配项优先，并生成一个警告。 若要避免此警告，重命名子匹配项。 |
+| *名为 sub&#8209;匹配或子&#8209;匹配* | Text | 每个命名的子匹配项将具有其各自的列。 通过创建命名的子匹配项 **(？&lt;*名称*&gt;** ... **)** 正则表达式中。 如果命名的子匹配项具有作为一个预定义的列 （见下文） 相同的名称，子匹配项优先，并生成一个警告。 若要避免此警告，重命名子匹配项。 |
 | **FullMatch** | Text | 所有匹配的文本字符串。 |
 | **StartMatch** | Number | 在输入的文本字符串中匹配项的起始位置。 第一个字符的字符串则返回 1。 | 
-| **SubMatches** | 文本的单列的表 (列**值**) | 命名和未命名的子匹配正则表达式中出现的顺序的表。 通常情况下，更轻松地使用和鼓励命名的子匹配项。 使用[ **ForAll** ](function-forall.md)函数或[**最后一个**](function-first-last.md)( [ **FirstN**](function-first-last.md)(**...** )) 函数来处理各个子匹配。 如果正则表达式中不定义了任何子匹配项，此表将存在但为空。 |
+| **SubMatches** | 文本的单列的表 (列**值**) | 命名和未命名的子匹配正则表达式中出现的顺序的表。 通常情况下，更轻松地使用和鼓励命名的子匹配项。 使用[ **ForAll** ](function-forall.md)函数或[**最后一个**](function-first-last.md)( [ **FirstN**](function-first-last.md)( **...** )) 函数来处理各个子匹配。 如果正则表达式中不定义了任何子匹配项，此表将存在但为空。 |
 
 这些函数支持[ **MatchOptions**](#match-options)。 默认情况下： 
 - 这些函数执行区分大小写的匹配项。 使用**IgnoreCase**执行不区分大小写的匹配项。    
@@ -50,11 +50,11 @@ ms.locfileid: "61562978"
 ## <a name="patterns"></a>模式
 使用这些函数的关键在于描述要匹配的模式。 你可以组合使用以下文本字符串来描述模式：
 
-* 普通字符，如 **"abc"** 或 **"123"**。
+* 普通字符，如 **"abc"** 或 **"123"** 。
 * 预定义模式，如 **Letter**、**MultipleDigits** 或 **Email**。 （**Match** 枚举定义了这些模式。）
-* 正则表达式代码，如 **"\d+\s+\d+"** 或 **"[a-z] +"**。
+* 正则表达式代码，如 **"\d+\s+\d+"** 或 **"[a-z] +"** 。
 
-通过结合这些元素[字符串串联运算符**&** ](operators.md)。 例如，**"abc" & Digit & "\s+"** 是一个有效的模式，它表示首先要与字符“a”、“b”和“c”匹配，后面跟一个从 0 到 9 的数字，后面再跟至少一个空格字符。
+通过结合这些元素[字符串串联运算符 **&** ](operators.md)。 例如， **"abc" & Digit & "\s+"** 是一个有效的模式，它表示首先要与字符“a”、“b”和“c”匹配，后面跟一个从 0 到 9 的数字，后面再跟至少一个空格字符。
 
 ### <a name="ordinary-characters"></a>普通字符
 最简单的模式是一系列要完全匹配的普通字符。
@@ -80,7 +80,7 @@ ms.locfileid: "61562978"
 例如，可以 使用在问号前加一个反斜杠的模式 **"Hello\\?"** 来匹配“Hello?”。
 
 ### <a name="predefined-patterns"></a>预定义模式
-预定义的模式提供简单的方法来匹配是一组字符的一个或多个字符的序列。 使用[字符串串联运算符**&** ](operators.md)中的成员的合并你自己的文本字符串**匹配**枚举：
+预定义的模式提供简单的方法来匹配是一组字符的一个或多个字符的序列。 使用[字符串串联运算符 **&** ](operators.md)中的成员的合并你自己的文本字符串**匹配**枚举：
 
 | Match 枚举 | 描述 | 正则表达式 |
 | --- | --- | --- |
@@ -111,7 +111,7 @@ ms.locfileid: "61562978"
 
 正则表达式的功能非常强大，许多编程语言中都有提供，并且用途广泛。 它们通常还可以如下所示的标点符号的随机序列。 本文不会介绍正则表达式的所有方面，但包含大量信息，教程，并在 web 上提供了工具。  
 
-正则表达式有不同的方言，PowerApps 使用 JavaScript 方言的变体。 请参阅[正则表达式语法](http://msdn.microsoft.com/library/1400241x.aspx)有关语法的介绍。 支持 （有时称为已命名的捕获组） 的命名子匹配项：
+正则表达式有不同的方言，PowerApps 使用 JavaScript 方言的变体。 请参阅[正则表达式语法](https://msdn.microsoft.com/library/1400241x.aspx)有关语法的介绍。 支持 （有时称为已命名的捕获组） 的命名子匹配项：
 
 - 名为子匹配项： **(？&lt;*名称*&gt; ...)**
 - 名为反向引用：  **\\k&lt;*名称*&gt;**
@@ -119,14 +119,14 @@ ms.locfileid: "61562978"
 在中**匹配**枚举本主题前面的表作为其相应的正则表达式在同一行中显示的每个枚举。
 
 ## <a name="match-options"></a>匹配选项
-可以通过指定一个或多个选项，你可以通过使用字符串串联运算符将结合修改这些函数的行为 (**&amp;**)。  
+可以通过指定一个或多个选项，你可以通过使用字符串串联运算符将结合修改这些函数的行为 ( **&amp;** )。  
 
 | MatchOptions 枚举 | 描述 | 对正则表达式的影响 |
 | --- | --- | --- |
-| **BeginsWith** |模式必须与文本的开头匹配。 |在正则表达式的开头添加 **^**。 |
+| **BeginsWith** |模式必须与文本的开头匹配。 |在正则表达式的开头添加 **^** 。 |
 | **Complete** |默认**IsMatch**。 模式必须与匹配文本，从开始到结束的整个的字符串。 |将添加 **^** 到起始位置和一个 **$** 到正则表达式的末尾。 |
 | **Contains** |默认**匹配**并**MatchAll**。 模式必须出现在文本中，但不必与开头或结尾匹配。 |不修改正则表达式。 |
-| **EndsWith** |模式必须与匹配的文本字符串的末尾。 |在正则表达式的末尾添加 **$**。 |
+| **EndsWith** |模式必须与匹配的文本字符串的末尾。 |在正则表达式的末尾添加 **$** 。 |
 | **IgnoreCase** |将大写和小写字母视为相同。 默认情况下，匹配时区分大小写。 |不修改正则表达式。 此选项相当的正则表达式的标准"i"修饰符。  |
 | **Multiline** |匹配多行。 |不修改正则表达式。 此选项相当的正则表达式的标准"m"修饰符。 |
 
@@ -153,7 +153,7 @@ ms.locfileid: "61562978"
 
 ## <a name="ismatch-examples"></a>IsMatch 示例
 ### <a name="ordinary-characters"></a>普通字符
-假设应用包含一个名为 **TextInput1** 的“文本输入”控件。 用户在这个控件中输入的值存储在数据库中。   
+假设应用包含一个名为 **TextInput1** 的“文本输入”控件。  用户在这个控件中输入的值存储在数据库中。   
 
 用户在 **TextInput1** 中输入 **Hello world**。
 
@@ -190,7 +190,7 @@ ms.locfileid: "61562978"
 | 公式 | 描述 | 结果 |
 |--------|------------|-----------|
 | `Match( "Bob Jones <bob.jones@contoso.com>", "<(?<email>" & Match.Email & ")>"` | 提取的联系人信息的电子邮件部分。  | {<br>email:&nbsp;"bob.jones@contoso.com",<br>FullMatch:&nbsp;"&lt;bob.jones@contoso.com>",<br>SubMatches:&nbsp;[&nbsp;"bob.jones@contoso.com"&nbsp;],<br>StartMatch:11<br>}  
-| `Match( "Bob Jones <InvalidEmailAddress>", "<(?<email>" & Match.Email & ")>"` | 提取的联系人信息的电子邮件部分。 找到不合法的地址 (没有不 @ 符号)，因此该函数将返回*空白*。 | 空白 |  
+| `Match( "Bob Jones <InvalidEmailAddress>", "<(?<email>" & Match.Email & ")>"` | 提取的联系人信息的电子邮件部分。 找到不合法的地址 (没有不 @ 符号)，因此该函数将返回*空白*。 | 空白  |  
 | `Match( Language(), "(<language>\w{2})(?:-(?<script>\w{4}))?(?:-(?<region>\w{2}))?" )` | 提取语言的语言、 脚本和区域部分标记 **[语言](function-language.md)** 函数返回。 这些结果反映美国;请参阅[**语言**函数文档](function-language.md)有关更多示例。  **(？:** 运算符而无需创建另一个子匹配项进行分组的字符。 | {<br>语言:"en"，<br>脚本：*空白*， <br>区域："我们"<br>FullMatch: "en-US", <br>SubMatches: [ "en", "", "US" ], <br>StartMatch:1<br>} 
 | `Match( "PT2H1M39S", "PT(?:(<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" )` | 从 ISO 8601 持续时间值中提取小时、 分钟和秒。 提取的编号仍采用文本字符串;使用[**值**](function-value.md)函数将其转换为数字之前对其执行数学运算。  | {<br> 小时数："2",<br>分钟数："1",<br>（秒):"39",<br>FullMatch:"PT2H1M39S",<br>SubMatches:&nbsp;[&nbsp;"2",&nbsp;"1",&nbsp;"39"&nbsp;],<br>StartMatch:1<br>} |
 
@@ -223,7 +223,7 @@ Set( pangram, "The quick brown fox jumps over the lazy dog." )
 
 1. 在空屏幕中，插入一个空白垂直 **[库](../controls/control-gallery.md)** 控件。
 
-2. 设置库的**项**属性设置为**MatchAll （pangram，"\w+"）** 或**MatchAll (pangram，MultipleLetters)**。
+2. 设置库的**项**属性设置为**MatchAll （pangram，"\w+"）** 或**MatchAll (pangram，MultipleLetters)** 。
 
     ![](media/function-ismatch/pangram-gallery1.png)
 
