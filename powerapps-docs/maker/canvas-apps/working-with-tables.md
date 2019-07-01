@@ -32,15 +32,15 @@ ms.locfileid: "66216190"
 可以构建采用表名称作为参数的各种公式，就像 Excel 中的公式采用一个或多个单元格引用作为参数。 PowerApps 中的某些公式返回一个反映所指定的其他参数的表。 例如，可以创建以下公式：
 
 * 通过将某个表指定为 **[Patch](functions/function-patch.md)** 函数的多个参数之一，来更新该表中的记录
-* 通过将某个表指定为 **[AddColumns](functions/function-table-shaping.md)**、**[DropColumns](functions/function-table-shaping.md)** 或 **[RenameColumns](functions/function-table-shaping.md)** 函数的参数，在该表中添加、删除和重命名列。 其中的任何函数都不会修改原始表。 函数根据指定的其他参数返回另一个表。
+* 通过将某个表指定为 **[AddColumns](functions/function-table-shaping.md)** 、 **[DropColumns](functions/function-table-shaping.md)** 或 **[RenameColumns](functions/function-table-shaping.md)** 函数的参数，在该表中添加、删除和重命名列。 其中的任何函数都不会修改原始表。 函数根据指定的其他参数返回另一个表。
 
 ## <a name="elements-of-a-table"></a>表中的元素
 ![](media/working-with-tables/elements-of-a-table.png)
 
 ### <a name="records"></a>记录
-每条记录包含个人、地点或事物的至少一个类别的信息。 上面的示例针对每种产品（“巧克力”、“面包”和“水”）显示一条记录，针对每个类别的信息（“价格”、“现有数量”和“订购量”）显示一列。
+每条记录包含个人、地点或事物的至少一个类别的信息。 上面的示例针对每种产品（“巧克力”、“面包”和“水”）显示一条记录，针对每个类别的信息（“价格”、“现有数量”和“订购量”）显示一列。      
 
-在公式中，可以使用大括号在表的上下文外部引用记录本身。 例如，此记录 **{名称："Strawberries"，价格：7.99}** 未与表相关联。 请注意，如该示例中的“名称”和“价格”等字段名称未括在双引号中。
+在公式中，可以使用大括号在表的上下文外部引用记录本身。 例如，此记录 **{名称："Strawberries"，价格：7.99}** 未与表相关联。 请注意，如该示例中的“名称”  和“价格”  等字段名称未括在双引号中。
 
 ### <a name="fields"></a>字段
 字段是记录中的单个信息片段。 可在特定记录的列中将此类字段可视化为值。
@@ -64,7 +64,7 @@ ms.locfileid: "66216190"
 在其他工具中，列可能称为“字段”。
 
 > [!NOTE]
-> 对于列名称带空格的 SharePoint 和 Excel 数据源，PowerApps 会将空格替换为“\_x0020\_”。 例如，如果 SharePoint 或 Excel 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
+> 对于列名称带空格的 SharePoint 和 Excel 数据源，PowerApps 会将空格替换为“\_x0020\_”  。 例如，如果 SharePoint 或 Excel 中的“Column Name”  在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”  。
 
 ### <a name="table"></a>表
 表由一条或多条记录组成，每条记录包含多个字段，字段包含记录中的一致名称。
@@ -83,19 +83,19 @@ ms.locfileid: "66216190"
 在 Excel 和 PowerApps 中，可以使用公式以类似的方式来处理数字和文本字符串：
 
 * 在 Excel 的单元格 **A1** 中键入一个值（例如 **42**），然后在另一个单元格中键入公式（例如 **A1 + 2**）即可显示值 **44**。
-* 在 PowerApps 中，将“Slider1”的“[Default](controls/properties-core.md)”属性设置为“42”，将标签的“[Text](controls/properties-core.md)”属性设置为“Slider1.Value + 2”，即可显示值“44”。
+* 在 PowerApps 中，将“Slider1”  的“[Default](controls/properties-core.md)”  属性设置为“42”  ，将标签的“[Text](controls/properties-core.md)”  属性设置为“Slider1.Value + 2”  ，即可显示值“44”  。
 
 在这两种情况下，如果更改参数的值（例如，更改单元格 **A1** 中的数字或 **Slider1** 的值），计算出的值将自动更改。
 
 同样，可以使用公式来访问和处理表与记录中的数据。 在某些公式中可以使用表的名称作为参数，例如，**Min(Catalog, Price)** 显示 **Catalog** 表的 **Price** 列中的最小值。 其他公式提供整个表作为返回值，例如，**RenameColumns(Catalog, "Price", "Cost")** 返回 **Catalog** 表中的所有记录，但会将 **Price** 列的名称更改为 **Cost**。
 
-与使用数字时一样，涉及到表和记录的公式会在基础表或记录更改时自动重新计算。 如果 **Catalog** 表中产品的成本低于前一个最小值，**[Min](functions/function-aggregates.md)** 公式的返回值将自动更改以匹配该成本。
+与使用数字时一样，涉及到表和记录的公式会在基础表或记录更改时自动重新计算。 如果 **Catalog** 表中产品的成本低于前一个最小值， **[Min](functions/function-aggregates.md)** 公式的返回值将自动更改以匹配该成本。
 
 让我们演练一些简单的示例。
 
-1. 创建适用于手机的空白应用，并添加含有其他控件的垂直[图库](controls/control-gallery.md)控件。
+1. 创建适用于手机的空白应用，并添加含有其他控件的垂直[图库](controls/control-gallery.md)  控件。
 
-    默认情况下，屏幕显示名为 CustomGallerySample 的表中的占位符文本。 屏幕 **[图库](controls/control-gallery.md)** 控件的 **[Items](controls/properties-core.md)** 属性将自动设置为该表。
+    默认情况下，屏幕显示名为 CustomGallerySample  的表中的占位符文本。 屏幕 **[图库](controls/control-gallery.md)** 控件的 **[Items](controls/properties-core.md)** 属性将自动设置为该表。
 
     ![](media/working-with-tables/gallery-items.png)
 
@@ -116,7 +116,7 @@ ms.locfileid: "66216190"
 
     此公式使用 **[FirstN](functions/function-first-last.md)** 函数显示表中特定数量的记录。 使用 **[Sort](functions/function-sort.md)** 函数作为 **[FirstN](functions/function-first-last.md)** 的第一个参数，使用一个数字（在本例中为 **2**）作为第二个参数，该数字指定要显示的记录数。
 
-    整个公式返回一个表，其中包含 CustomGallerySample 表的前两条记录，这些记录已按 SampleHeading 列的降序排序。
+    整个公式返回一个表，其中包含 CustomGallerySample 表的前两条记录，这些记录已按 SampleHeading 列的降序排序。  
 
     ![](media/working-with-tables/gallery-items-sort-firstn.png)
 
@@ -126,13 +126,13 @@ ms.locfileid: "66216190"
 
 PowerApps 提供了一组相同的方式在表运行的函数。 这些函数采用表，如输入和筛选器，排序、 转换、 减少，和汇总数据的整个表。 事实上，**较低**和许多通常采用单个值的其他函数也可以采用单列的表作为输入。
 
-* **[Sort](functions/function-sort.md)**、**[Filter](functions/function-filter-lookup.md)** – 排序和筛选记录。
-* **[FirstN](functions/function-first-last.md)**、**[LastN](functions/function-first-last.md)** – 返回表的前 N 条或最后 N 条记录。
-* **[Abs](functions/function-numericals.md)**、**[Sqrt](functions/function-numericals.md)**、**[Round](functions/function-round.md)**、**[RoundUp](functions/function-round.md)**、**[RoundDown](functions/function-round.md)** – 针对单列表的每条记录执行的算术运算，生成单列结果表。
-* **[Left](functions/function-left-mid-right.md)**、**[Mid](functions/function-left-mid-right.md)**、**[Right](functions/function-left-mid-right.md)**、**[Replace](functions/function-replace-substitute.md)**、**[Substitute](functions/function-replace-substitute.md)**、**[Trim](functions/function-trim.md)**、**[Lower](functions/function-lower-upper-proper.md)**、**[Upper](functions/function-lower-upper-proper.md)**、**[Proper](functions/function-lower-upper-proper.md)** – 针对单列表的每条记录执行的字符串操作，生成单列字符串表。
+* **[Sort](functions/function-sort.md)** 、 **[Filter](functions/function-filter-lookup.md)** – 排序和筛选记录。
+* **[FirstN](functions/function-first-last.md)** 、 **[LastN](functions/function-first-last.md)** – 返回表的前 N 条或最后 N 条记录。
+* **[Abs](functions/function-numericals.md)** 、 **[Sqrt](functions/function-numericals.md)** 、 **[Round](functions/function-round.md)** 、 **[RoundUp](functions/function-round.md)** 、 **[RoundDown](functions/function-round.md)** – 针对单列表的每条记录执行的算术运算，生成单列结果表。
+* **[Left](functions/function-left-mid-right.md)** 、 **[Mid](functions/function-left-mid-right.md)** 、 **[Right](functions/function-left-mid-right.md)** 、 **[Replace](functions/function-replace-substitute.md)** 、 **[Substitute](functions/function-replace-substitute.md)** 、 **[Trim](functions/function-trim.md)** 、 **[Lower](functions/function-lower-upper-proper.md)** 、 **[Upper](functions/function-lower-upper-proper.md)** 、 **[Proper](functions/function-lower-upper-proper.md)** – 针对单列表的每条记录执行的字符串操作，生成单列字符串表。
 * **[Len](functions/function-len.md)** – 针对字符串列返回包含每个字符串的长度的单列表。
 * **[Concatenate](functions/function-concatenate.md)** – 串联多个字符串列，生成单列字符串表。
-* **[AddColumns](functions/function-table-shaping.md)**、**[DropColumns](functions/function-table-shaping.md)**、**[RenameColumns](functions/function-table-shaping.md)**、**[ShowColumns](functions/function-table-shaping.md)** – 表的列操作，生成包含不同列的新表。
+* **[AddColumns](functions/function-table-shaping.md)** 、 **[DropColumns](functions/function-table-shaping.md)** 、 **[RenameColumns](functions/function-table-shaping.md)** 、 **[ShowColumns](functions/function-table-shaping.md)** – 表的列操作，生成包含不同列的新表。
 * **[Distinct](functions/function-distinct.md)** – 删除重复的记录。
 * **[Shuffle](functions/function-shuffle.md)** – 按随机顺序排列记录。
 * **[HashTags](functions/function-hashtags.md)** – 搜索字符串中的哈希标记。
@@ -140,7 +140,7 @@ PowerApps 提供了一组相同的方式在表运行的函数。 这些函数采
 
 许多这些函数将单列的表作为其输入。 如果整个表只有一个列，可以按名称进行指定。 如果表具有多个列，您可以通过使用指定这些列之一*Table.Column*语法。 例如， **Products.Name**返回的单列的表的唯一**名称**中的值**产品**表。
 
-不过你想通过使用可以全面重新表 **[AddColumns](functions/function-table-shaping.md)**，  **[RenameColumns](functions/function-table-shaping.md)**，  **[ShowColumns](functions/function-table-shaping.md)**，或**[DropColumns](functions/function-table-shaping.md)** 函数。 同样，这些函数将更改仅其输出，不是其源。
+不过你想通过使用可以全面重新表 **[AddColumns](functions/function-table-shaping.md)** ，  **[RenameColumns](functions/function-table-shaping.md)** ，  **[ShowColumns](functions/function-table-shaping.md)** ，或 **[DropColumns](functions/function-table-shaping.md)** 函数。 同样，这些函数将更改仅其输出，不是其源。
 
 控件的属性还可以将表：
 
@@ -151,28 +151,28 @@ PowerApps 提供了一组相同的方式在表运行的函数。 这些函数采
 
 其他功能专门用于修改数据，具有负面影响。 因为这些函数不是纯，必须谨慎，生成和它们不能参与自动重新计算的应用中的值。 您可以使用这些函数只能在[行为公式](working-with-formulas-in-depth.md)。
 
-* **[收集](functions/function-clear-collect-clearcollect.md)**， **[清除](functions/function-clear-collect-clearcollect.md)**， **[ClearCollect](functions/function-clear-collect-clearcollect.md)** -创建集合、 清除它们，并将添加到数据它们。
+* **[收集](functions/function-clear-collect-clearcollect.md)** ， **[清除](functions/function-clear-collect-clearcollect.md)** ， **[ClearCollect](functions/function-clear-collect-clearcollect.md)** -创建集合、 清除它们，并将添加到数据它们。
 * **[修补程序](functions/function-patch.md)** -修改记录中的一个或多个字段。
-* **[Update](functions/function-update-updateif.md)**、**[UpdateIf](functions/function-update-updateif.md)** – 更新与指定的一个或多个条件匹配的记录。
-* **[Remove](functions/function-remove-removeif.md)**、**[RemoveIf](functions/function-remove-removeif.md)** – 删除与指定的一个或多个条件匹配的记录。
+* **[Update](functions/function-update-updateif.md)** 、 **[UpdateIf](functions/function-update-updateif.md)** – 更新与指定的一个或多个条件匹配的记录。
+* **[Remove](functions/function-remove-removeif.md)** 、 **[RemoveIf](functions/function-remove-removeif.md)** – 删除与指定的一个或多个条件匹配的记录。
 
 ## <a name="record-formulas"></a>记录公式
 
 还可以构建一个公式来计算单个记录的数据，采用单个记录作为参数，并提供单个记录作为返回值。 返回到上面的库示例，我们使用 **Gallery1.Selected** 属性来显示用户在该库中选择的任何记录中的信息。
 
-1. 添加[**按钮**](controls/control-button.md)，并设置其**[OnSelect](controls/properties-core.md)** 属性设为此公式：<br>
-    Collect( SelectedRecord, Gallery1.Selected )
+1. 添加[ **按钮** ](controls/control-button.md)，并设置其 **[OnSelect](controls/properties-core.md)** 属性设为此公式：<br>
+    Collect( SelectedRecord, Gallery1.Selected ) 
 
 2. 按住 Alt 键，并选择按钮。
 
-3. 在“文件”菜单中选择“集合”。
+3. 在“文件”菜单中选择“集合”。  
 
     ![](media/working-with-tables/selected-collection.png)
 
-此公式返回的一条记录不仅包含当前在该库中选择的记录中的数据，而且还包含该库中的每个控件。 例如，记录中包含与原始表中 SampleText 列匹配的 SampleText 列，以及表示用于显示此列中数据的标签的 Subtitle1 列。 在 Subtitle1 列中选择表图标可深入到该数据。
+此公式返回的一条记录不仅包含当前在该库中选择的记录中的数据，而且还包含该库中的每个控件。 例如，记录中包含与原始表中 SampleText  列匹配的 SampleText  列，以及表示用于显示此列中数据的标签的 Subtitle1  列。 在 Subtitle1  列中选择表图标可深入到该数据。
 
 > [!NOTE]
-> 如果已添加本主题所指定以外的元素，Subtitle1 列可能名为 Subtitle2 等。
+> 如果已添加本主题所指定以外的元素，Subtitle1 列可能名为 Subtitle2 等。  
 
 选择记录后，可以使用 **.** 运算符从中提取单个字段 。
 
@@ -196,7 +196,7 @@ PowerApps 提供了一组相同的方式在表运行的函数。 这些函数采
 ## <a name="record-functions-and-control-properties"></a>记录函数和控件属性
 返回记录的函数：
 
-* **[FirstN](functions/function-first-last.md)**、**[LastN](functions/function-first-last.md)** – 返回表的最前面或最后面的一条或多条记录。
+* **[FirstN](functions/function-first-last.md)** 、 **[LastN](functions/function-first-last.md)** – 返回表的最前面或最后面的一条或多条记录。
 * **[Lookup](functions/function-filter-lookup.md)** – 返回表中与一个或多个条件匹配的第一条记录。
 * **[Patch](functions/function-patch.md)** – 更新数据源或合并记录。
 * **[Defaults](functions/function-defaults.md)** – 返回数据源的默认值。
