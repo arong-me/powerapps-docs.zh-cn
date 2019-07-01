@@ -81,6 +81,8 @@
               href: ../user/work-with-business-processes.md
             - name: 使用流
               href: ../user/use-flows.md
+    - name: 使用 Dynamics 365 App for Outlook
+      href: ../user/use-outlook-app.md
 - name: 创建应用
   items:
     - name: 概述
@@ -981,6 +983,8 @@
           href: ./model-driven-apps/create-guided-help-learning-path.md
     - name: PowerApps 应用设计器中的辅助功能
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
+    - name: 自定义 Dynamics 365 App for Outlook
+      href: ./model-driven-apps/app-for-outlook-customize.md
     - name: 面向开发人员
       href: ../developer/model-driven-apps/overview.md
 - name: Common Data Service
@@ -1156,6 +1160,8 @@
       href: ./common-data-service/export-customized-entity-field-text-translation.md
     - name: 将已翻译的实体和字段文本导入应用
       href: ./common-data-service/import-translated-entity-field-text.md
+    - name: Common Data Service 安全性
+      href: /power-platform/admin/wp-security
     - name: 面向开发人员
       href: ../developer/common-data-service/overview.md
 - name: AI 生成器

@@ -79,7 +79,7 @@
           href: write-plug-in.md
         - name: 处理异常
           href: handle-exceptions.md
-        - name: 取消扮演用户
+        - name: 模拟用户
           href: impersonate-a-user.md
         - name: 注册插件
           href: register-plug-in.md
@@ -328,6 +328,20 @@
           href: use-source-control-solution-files.md
     - name: Package Deployer 工具
       href: package-deployer/create-packages-package-deployer.md
+    - name: 验证解决方案和包的质量
+      items:
+        - name: 使用 PowerApps 检查器 Web API
+          href: checker/webapi/overview.md
+        - name: 调用分析
+          href: checker/webapi/analyze.md
+        - name: 检查分析状态
+          href: checker/webapi/check-status.md
+        - name: 检索规则列表
+          href: checker/webapi/retrieve-rules.md
+        - name: 检索规则集列表
+          href: checker/webapi/retrieve-rulesets.md
+        - name: 上传文件以供分析
+          href: checker/webapi/upload-file.md
     - name: 在 AppSource 上发布应用
       href: publish-app-appsource.md
       items:

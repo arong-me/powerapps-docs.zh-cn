@@ -52,6 +52,8 @@
           href: sample-controls/map-control.md
         - name: 导航 API 组件
           href: sample-controls/navigation-api-control.md
+        - name: React Facepile 组件
+          href: sample-controls/react-facepile-control.md
         - name: 表组件
           href: sample-controls/table-control.md
         - name: 网格型组件
