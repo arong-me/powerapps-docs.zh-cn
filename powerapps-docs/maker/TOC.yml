@@ -75,6 +75,18 @@
               href: ../user/export-excel-static-worksheet.md
             - name: 导出到 Excel 数据透视表
               href: ../user/export-excel-pivottable.md
+        - name: 报表
+          items:
+            - name: 处理报表
+              href: ../user/work-with-reports.md
+            - name: 通过报表向导创建报表
+              href: ../user/create-report-with-wizard.md
+            - name: 添加现有报表
+              href: ../user/add-existing-report.md
+            - name: 编辑报表的默认筛选器
+              href: ../user/edit-report-filter.md
+            - name: 报表疑难解答
+              href: ../user/troubleshoot-reports.md
         - name: 自动执行流程
           items:
             - name: 处理业务流程
@@ -883,19 +895,25 @@
                       href: ./model-driven-apps/configure-event-handlers-legacy.md
                     - name: 如何在窗体中禁用自动保存
                       href: ./model-driven-apps/manage-auto-save.md
-            - name: 在窗体上嵌入画布应用
+            - name: 在模型驱动的窗体上嵌入画布应用
               href: ./model-driven-apps/embed-canvas-app-in-form.md
               items:
-                - name: 将当前记录传递到嵌入的画布应用
-                  href: ./model-driven-apps/pass-current-embedded-canvas-app.md
-                - name: 将相关记录传递到嵌入的画布应用
-                  href: ./model-driven-apps/pass-related-embedded-canvas-app.md
+                - name: 添加内嵌画布应用
+                  href: ./model-driven-apps/embedded-canvas-app-add-classic-designer.md
+                - name: 编辑内嵌画布应用
+                  href: ./model-driven-apps/embedded-canvas-app-edit-classic-designer.md
+                - name: 自定义屏幕大小和方向
+                  href: ./model-driven-apps/embedded-canvas-app-customize-screen.md
                 - name: 在主机窗体上执行预定义操作
                   href: ./model-driven-apps/embedded-canvas-app-actions.md
+                - name: ModelDrivenFormIntegration 控件
+                  href: ./model-driven-apps/embedded-canvas-app-properties-actions.md
                 - name: 共享内嵌画布应用
                   href: ./model-driven-apps/share-embedded-canvas-app.md
                 - name: 内嵌画布应用指南
                   href: ./model-driven-apps/embedded-canvas-app-guidelines.md
+                - name: 从公共预览版迁移嵌入的画布
+                  href: ./model-driven-apps/embedded-canvas-app-migrate-from-preview.md
             - name: 在窗体上嵌入 Power BI 报表
               href: ./model-driven-apps/embed-powerbi-report-in-system-form.md
             - name: 处理视图
@@ -954,6 +972,8 @@
           href: ./model-driven-apps/templates-overview.md
         - name: 使用主题应用组织品牌
           href: ./model-driven-apps/create-themes-organization-branding.md
+        - name: 将报告添加到应用
+          href: ./model-driven-apps/add-reporting-to-app.md
     - name: 验证并发布应用
       href: ./model-driven-apps/validate-app.md
     - name: 共享应用
