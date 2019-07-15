@@ -321,6 +321,14 @@
               href: create-patches-simplify-solution-updates.md
             - name: 何时编辑自定义文件
               href: when-edit-customization-file.md
+    - name: 用于 Azure DevOps 的生成工具
+      items:
+        - name: 概述
+          href: build-tools-overview.md
+        - name: 任务
+          href: build-tools-tasks.md
+        - name: 教程和 FAQ
+          href: build-tools-tutorial-faq.md
     - name: SolutionPackager 工具
       href: compress-extract-solution-file-solutionpackager.md
       items:
@@ -361,6 +369,16 @@
           href: appendix-app-design-best-practices-checklist.md
         - name: 附录：应用认证清单
           href: appendix-app-certification-checklist.md
+    - name: ISV 应用管理和监视
+      items:
+        - name: ISV Studio 简介
+          href: isv-app-management.md
+        - name: 主页
+          href: isv-app-management-homepage.md
+        - name: “应用”页
+          href: isv-app-management-apppage.md
+        - name: “租户”页
+          href: isv-app-management-tenantpage.md
 - name: 创建客户端应用程序
   href: connect-cds.md
   items:
