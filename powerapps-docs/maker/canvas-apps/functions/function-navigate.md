@@ -98,7 +98,7 @@ ms.locfileid: "65828174"
 
 1. 设置**填充**的属性**Screen2**的值`Gray`。
 
-1. 上**Screen2**，添加一个按钮，并设置其**[OnSelect](../controls/properties-core.md)** 属性设为此公式：
+1. 上**Screen2**，添加一个按钮，并设置其 **[OnSelect](../controls/properties-core.md)** 属性设为此公式：
 
     ```powerapps-dot
     Navigate( Screen1, ScreenTransition.Cover )
