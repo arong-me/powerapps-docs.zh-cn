@@ -46,8 +46,6 @@
               href: use-left-outer-join-queryexpression-query-records-not-in.md
             - name: 使用 QueryByAttribute 类
               href: use-querybyattribute-class.md
-            - name: 使用 FetchXML 对大型结果集分页
-              href: page-large-result-sets-with-fetchxml.md
     - name: 创建实体
       href: entity-operations-create.md
     - name: 检索实体
