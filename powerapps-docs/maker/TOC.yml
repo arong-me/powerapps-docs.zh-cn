@@ -1007,6 +1007,62 @@
       href: ./model-driven-apps/app-for-outlook-customize.md
     - name: 面向开发人员
       href: ../developer/model-driven-apps/overview.md
+- name: 门户（预览版）
+  items:
+    - name: 什么是 PowerApps 门户？
+      href: ./portals/overview.md
+    - name: 设计和构建门户
+      items:
+        - name: 门户模板
+          href: ./portals/portal-templates.md
+        - name: 创建门户
+          href: ./portals/create-portal.md
+        - name: 创建 Dynamics 365 门户
+          href: ./portals/create-dynamics-portal.md
+        - name: 门户设计器剖析
+          href: ./portals/portal-designer-anatomy.md
+        - name: 门户设计器支持的 Web 浏览器
+          href: ./portals/supported-browser.md
+        - name: 创建和管理网页
+          href: ./portals/create-manage-webpages.md
+        - name: 编纂网页
+          href: ./portals/compose-page.md
+        - name: 使用模板
+          href: ./portals/work-with-templates.md
+    - name: 管理现有门户
+      href: ./portals/manage-existing-portals.md
+    - name: 配置站点设置
+      href: ./portals/configure-site-settings.md
+    - name: 高级门户管理
+      items:
+        - name: 概述
+          href: ./portals/admin/admin-overview.md
+        - name: 门户详细信息
+          href: ./portals/admin/portal-details.md
+        - name: 下载门户公钥
+          href: ./portals/admin/get-public-key.md
+        - name: 查看门户错误信息日志
+          href: ./portals/admin/view-portal-error-log.md
+        - name: 重置门户
+          href: ./portals/admin/reset-portal.md
+        - name: 更改门户基本 URL
+          href: ./portals/admin/change-base-url.md
+        - name: 启用维护模式
+          href: ./portals/admin/enable-maintenance-mode.md
+        - name: 设置 Power BI 集成
+          href: ./portals/admin/set-up-power-bi-integration.md
+        - name: 运行门户检查器
+          href: ./portals/admin/portal-checker.md
+        - name: 续订门户身份验证密钥
+          href: ./portals/admin/manage-auth-key.md
+        - name: 设置 IP 地址限制
+          href: ./portals/admin/ip-address-restrict.md
+        - name: PowerApps 门户域的更新
+          href: ./portals/admin/update-portal-domain.md
+    - name: 已知问题
+      href: ./portals/known-issues.md
+    - name: PowerApps 门户常见问题解答
+      href: ./portals/faq.md
 - name: Common Data Service
   href: ./common-data-service/data-platform-intro.md
   items:

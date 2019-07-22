@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: b4832962165c9d275cbee9aa76ad1dc21e3d1d67
-ms.sourcegitcommit: ec05425ad7baf4102da95a071c11b5bb4381ed53
+ms.openlocfilehash: 62e6db1361664f8ccce38080e07908237aac5f50
+ms.sourcegitcommit: 9cce0d57113705254c109e6c38fc57a8bd4ef6cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68229653"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313294"
 ---
 <div id="main"
    class="v2">
@@ -25,7 +25,7 @@ ms.locfileid: "68229653"
             <a href="#home"></a>
             <ul id="home">
                <li>
-                  <a href="#getstarted"><strong>入门</strong></a>
+                  <a href="#getstarted"><strong>开始使用</strong></a>
                   <ul id="getstarted"
                      class="cardsC">
                      <br/>                            
@@ -215,7 +215,7 @@ ms.locfileid: "68229653"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>应用开发者无需编写代码即可快速创建自定义业务应用，从而管理其组织的任务关键型数据。 你可在 PowerApps 中创建两种类型的应用：<strong>画布应用</strong>和<strong>模型驱动应用</strong>。 Common Data Service 是可便于安全存储和管理业务应用所用数据的数据平台。 详细信息：<a href="/powerapps/maker">创建应用</a>。</p>
+                           <p>应用开发者无需编写代码即可快速创建自定义业务应用，从而管理其组织的任务关键型数据。 你可在 PowerApps 中创建三种类型的应用：<strong>画布应用</strong>、<strong>模型驱动应用</strong>和<strong>门户</strong>。 Common Data Service 是可便于安全存储和管理业务应用所用数据的数据平台。 详细信息：<a href="/powerapps/maker">创建应用</a>。</p>
                            <hr/>
                            <br/>
                         </div>
@@ -273,6 +273,28 @@ ms.locfileid: "68229653"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/create-themes-organization-branding">对品牌使用主题</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/share-model-driven-app">共享应用</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/distribute-model-driven-app">分发应用</a></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="cardSize">
+                           <div class="cardPadding">
+                              <div class="card">
+                                 <div class="cardImageOuter">
+                                    <div class="cardImage">
+                                       <img alt="Customize icon" src="media/index/i_portals.svg">
+                                    </div>
+                                 </div>
+                                 <div class="cardText">
+                                    <h3 style="font-size: 1.15rem">门户</h3>
+                                    <hr/>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">什么是 PowerApps 门户？</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">创建门户</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/manage-existing-portals">管理现有门户</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/admin/admin-overview">门户管理</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/faq">PowerApps 门户常见问题解答</a></p>
                                  </div>
                               </div>
                            </div>

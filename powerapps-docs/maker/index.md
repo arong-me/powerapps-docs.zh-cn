@@ -6,22 +6,23 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.date: 03/18/2018
+ms.date: 07/18/2018
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: 6a8432e93f854b1c0794512da42ef25c9aa02adc
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: cfc849574153ea4ab983112528a91974d80dea7f
+ms.sourcegitcommit: 1c0b01ab9c76ac353854f7b61d5a9ef13e8b093f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61528587"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68308729"
 ---
 # <a name="overview-of-creating-apps-in-powerapps"></a>概述如何在 PowerApps 中创建应用
 
-PowerApps 是商业应用的高效开发平台，主要有三个组成部分：
+PowerApps 是商业应用的高效开发平台，主要有四个组成部分：
 
 - [画布应用](canvas-apps/getting-started.md)：画布应用从用户体验入手，借助空白画布的功能设计出高度定制的界面，并将其连接到你选择的 200 个数据源。 你可以生成适用于 Web、移动设备和平板电脑应用程序的画布应用。
 - [模型驱动应用](model-driven-apps/model-driven-app-overview.md)：模型驱动应用从数据模型入手，通过你的核心业务数据和流程在 Common Data Service 中的形态生成数据模型，对窗体、视图和其他组件建模。 模型驱动应用自动生成在各种设备中反应敏捷的好用 UI。
+- [门户](portals/overview.md) 开始创建面向外部的网站，使组织外部的用户能够使用多种标识登录、在 Common Data Service 中创建和查看数据，甚或匿名浏览内容。
 - [Common Data Service](common-data-service/data-platform-intro.md)：Common Data Service 是 PowerApps 附带的数据平台，让你可以存储业务数据并对其进行建模。 这是生成 Dynamics 365 应用程序的平台，如果你是 Dynamics 客户，那么你的数据就已经在 Common Data Service 中了。
 
 你可以简单轻松地尝试生成自己的第一个应用。 我们提供 30 天免费试用计划以及免费社区计划；了解你最适合哪一种并开始使用吧。
