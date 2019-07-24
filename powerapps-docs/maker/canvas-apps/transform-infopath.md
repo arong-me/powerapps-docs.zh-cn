@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 52f97ce8360981b060500ce62da44a58002f4afa
-ms.sourcegitcommit: dd74c98f48587730466e6669fc94da250d5c631e
+ms.openlocfilehash: 4e0609ce53f88f5945409e688cfc65df39bd6b96
+ms.sourcegitcommit: 8f27a61ce2ec32b8d911845dd00708e3c87b86bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2019
-ms.locfileid: "66224883"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68428721"
 ---
 # <a name="transform-your-infopath-form-to-powerapps"></a>将 InfoPath 窗体转换为 PowerApps
 
@@ -50,7 +50,7 @@ PowerApps 是一款很棒的工具，可通过两种方式提供更好的 ShareP
 
 如果想要自定义用户添加、查看或编辑其日常工作中所用列表中各项的方式，建议使用“自定义 SharePoint 表单”功能。 单击“自定义表单”会创建一个单屏&quot;表单应用&quot;，该应用将基于上下文更改模式（新建/编辑/查看）。 由 SharePoint 管理这些应用；其权限与列表编辑/查看权限相同。
 
-**通过 SharePoint 创建 PowerApps 画布应用**支持应用在移动设备上自行运行。 此外可以在 SharePoint 页面嵌入应用。 单击这个功能将创建一个三屏应用（浏览列表、查看详细信息和创建/更新项）。 这些应用的权限/共享模型不依赖于 SharePoint，而是通过 PowerApps 进行管理。
+**通过 SharePoint 创建 PowerApps 画布应用**支持应用在移动设备上自行运行。 你还可以在 SharePoint 页中嵌入应用程序。 单击这个功能将创建一个三屏应用（浏览列表、查看详细信息和创建/更新项）。 这些应用的权限/共享模型不依赖于 SharePoint，而是通过 PowerApps 进行管理。
 
 至此，已介绍两种选项的区别，下面的部分将概述二者的使用方法。
 
@@ -87,7 +87,7 @@ PowerApps 将生成一个可自定义的应用。
 
 ![隐藏显示锁定数据卡](./media/transform-infopath/hide-show-lock.png)
 
-在右侧窗格中，滚动到 DefaultMode 属性，以便可以对其进行编辑。
+在右侧窗格中, 滚动到 " **DisplayMode** " 属性以便对其进行编辑。
 
 ![If Else 语句表达式](./media/transform-infopath/if-else-statement.png)
 
@@ -99,7 +99,7 @@ PowerApps 将生成一个可自定义的应用。
 
 若要隐藏卡而不是使其只读，请在 DisplayMode 正上方的 Visible 属性中插入相似函数。
 
-另外，你还可以显示批准按钮，只要用户的电子邮件地址与审批者的电子邮件地址相匹配即可。 (提示：使用**User()。通过电子邮件发送**访问当前用户的电子邮件地址。)因此，你可以将审批者的电子邮件地址存储在 YourDataCard 中，然后将按钮的 Visible 属性设置为此公式：
+另外，你还可以显示批准按钮，只要用户的电子邮件地址与审批者的电子邮件地址相匹配即可。 提示使用**用户 ()。通过电子邮件**访问当前用户的电子邮件地址。)因此，你可以将审批者的电子邮件地址存储在 YourDataCard 中，然后将按钮的 Visible 属性设置为此公式：
 
 ```If( YourDataCard.Text = User().Email, true, false )```
 
@@ -163,7 +163,7 @@ IsMatch 支持大量预定义模式（如电子邮件）或创建自己的模式
 
 ```Filter( Impacts, ddSelectType.Selected.Value in SCategory )```
 
-这样便创建了级联下拉列表。 有关详细信息，请查看 PowerApps 团队的此文章[SharePoint:级联下拉列表中 4 个简单步骤 ！](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) 或此[社区视频](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813)。 别担心，不使用 SharePoint 也同样可以轻松完成此操作。
+这样便创建了级联下拉列表。 有关详细信息, 请查看 PowerApps 团队[SharePoint 中的此文章:4个简单步骤中的级联下拉菜单!](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) 或此[社区视频](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813)。 别担心，不使用 SharePoint 也同样可以轻松完成此操作。
 
 **不要生成一个超级应用**  
 PowerApps 支持从另一个应用调用应用。 你可以生成一组能够相互调用甚至传递数据的应用，从而简化开发工作，而无需使用“泡泡糖”式的方法粘接出一个大型 InfoPath 表单。
