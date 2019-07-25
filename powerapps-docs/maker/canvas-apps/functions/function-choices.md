@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed555f5de4abc1e29b7d2a637413c440bd882f13
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c9d3e9c6c408d70e22d566855e5899a0f5b0fae7
+ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61546668"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68473976"
 ---
 # <a name="choices-function-in-powerapps"></a>PowerApps 中的 Choices 函数
 返回查找列可能值的表。
@@ -38,7 +38,7 @@ Choices 不要求列名称为字符串且括在双引号中，这一点与 [**Sh
 
 列引用必须直接连接到数据源。 例如，如果数据源是 Accounts 而查找是 SLA，则列引用是 Accounts.SLA。 引用不能通过函数、变量或控件传递。 深化此示例，如果 Accounts 馈送给 Gallery 控件，则使用公式 Gallery.Selected.SLA 引用所选帐户的 SLA。 但是，此引用通过了一个控件，因此它不能传递给 Columns 函数，即仍必须使用 Accounts.SLA。
 
-在此期间，可以只使用 SharePoint 和 Common Data Service 中使用查找列。
+此时, 只能将查找列与 SharePoint 和 Common Data Service 一起使用。
 
 ## <a name="syntax"></a>语法
 **Choices**( *column-reference* )
@@ -49,17 +49,17 @@ Choices 不要求列名称为字符串且括在双引号中，这一点与 [**Sh
 
 #### <a name="choices-for-a-lookup"></a>查找的选项
 
-1. [创建数据库](../../../administrator/create-database.md)通用数据服务，然后选择**包括示例应用和数据**框。
+1. 在 Common Data Service 中[创建一个数据库](../../../administrator/create-database.md), 然后选择 "**包括示例应用和数据**" 框。
 
     将会创建多个实体，例如 Accounts。
 
-    **注意**：在 web.powerapps.com 上单数和复数在 PowerApps Studio 中，实体名称。
+    **注意**：实体名称在 web.powerapps.com 上是单数的, PowerApps Studio 中的复数。
 
-    ![来自 Commmon Data Service for Apps 中 Account 实体的字段的部分列表，突出显示了“Primary Contact”是查找字段](media/function-choices/entity-account.png)
+    ![Common Data Service for Apps 中的 Account 实体的部分字段列表, 突出显示 "主要联系人" 是查找字段](media/function-choices/entity-account.png)
 
     Accounts 实体具有 Primary Contact 列，这是对 Contacts 实体的查找。  
 
-    ![来自 Commmon Data Service 中 Contact 实体的字段的部分列表](media/function-choices/entity-contact.png)
+    !["联系人" 实体中的字段的部分列表 Common Data Service](media/function-choices/entity-contact.png)
 
     对于每个帐户，不是指定了联系人作为主要联系人，就是主要联系人为*空白*。
 
@@ -69,37 +69,37 @@ Choices 不要求列名称为字符串且括在双引号中，这一点与 [**Sh
 
     ![在左侧导航栏中，选择 EditScreen1 上的 EditForm1](media/function-choices/select-editform.png)
 
-1. 上**属性**的右窗格中，选择的选项卡**编辑字段**。
+1. 在右窗格的 "**属性**" 选项卡上, 选择 "**编辑字段**"。
 
-    ![打开数据窗格](media/function-choices/open-data-pane.png)
+    ![打开 "数据" 窗格](media/function-choices/open-data-pane.png)
 
-1. 在中**字段**窗格中，选择**添加字段**。
+1. 在 "**字段**" 窗格中, 选择 "**添加字段**"。
 
-1. 搜索**主要联系人**字段中，选中其复选框，然后再选择**添加**。
+1. 搜索 "**主要联系人**" 字段, 选中其复选框, 然后选择 "**添加**"。
 
     ![选择“Accounts”以打开“数据”窗格。](media/function-choices/field-list.png)
 
-    **主要联系人**字段显示在窗体的底部。 如果该字段将显示错误，请选择**数据源**上**视图**选项卡上，选择省略号 （...）**帐户**数据源，然后选择**刷新**.
+    **主要联系人**字段显示在窗体的底部。 如果该字段显示错误, 请在 "**视图**" 选项卡上选择 "**数据源**", 选择 "**帐户**" 数据源的省略号 (...), 然后选择 "**刷新**"。
 
 1. （可选）将“Primary Contact”字段从字段列表底部拖动到顶部。
 
 1. 在“Primary Contact”的卡片中，选择“组合框”控件。
 
-    **项**该控件的属性设置为一个公式，用于标识列按其显示名称，如下所示的第一个示例中或其逻辑名称，如第二个示例所示：
+    该控件的**Items**属性设置为一个公式, 该公式按其显示名称 (如第一个示例所示) 或其逻辑名称标识列, 如第二个示例所示:
 
    - **Choices( Accounts.'Primary Contact' )**
    - **Choices( Accounts.primarycontactid )**
 
-     ![包含窗体控件的画布屏幕。 选择框控件中的主要联系人卡后，在组合框和项属性的公式的选择 （帐户。 主要联系人） 显示](media/function-choices/accounts-primary-contact.png)
+     ![包含窗体控件的画布屏幕。 主联系人卡片内的组合框控件处于选中状态, 并且具有公式选择 ("主要联系人") 的 "Items" 属性随即出现](media/function-choices/accounts-primary-contact.png)
 
 1. 在“开始”选项卡上，选择“新建屏幕”，然后选择“Blank”。
 
 1. 在“插入”选项卡上，选择“数据表”。
 
-1. 设置**项**的属性**数据表**控制为以下公式：
+1. 将 "数据表 **" 控件的** **Items**属性设置为以下公式:
 
      **Choices( Accounts.'Primary Contact' )**
 
-1. 中间**数据表**控件中，选择的链接，启动**选择的字段...**，然后选择你想要显示的字段对应的复选框 (例如， **firstname**并**lastname**)。
+1. 在 "**数据表**" 控件的中间, 选择开始**选择 "字段 ...** " 的链接, 然后选中要显示的一个或多个字段的复选框 (例如, **firstname**和**lastname**)。
 
      ![包含数据表控件的画布屏幕。 Items 属性设置为公式 Choices( Accounts.'Primary Contact' )，表显示 Contacts 实体中第一组记录的 firstname 和 lastname 列](media/function-choices/full-accounts-pc.png)

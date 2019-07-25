@@ -1,6 +1,6 @@
 ---
-title: 创建画布应用中的详细信息库 |Microsoft Docs
-description: 创建用于管理数据的 Northwind Traders 的画布应用中的详细信息库
+title: 在画布应用中创建详细信息库 |Microsoft Docs
+description: 在画布应用中创建详细信息库以管理 Northwind 商贸的数据
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9549b8f389cf696cf3fc8e4659da6b418383ac6e
-ms.sourcegitcommit: e85072f7a80da308c4caabe20adbf2509588ca57
+ms.openlocfilehash: 36fc8c552dea9331ff5ffbaa2dca3bdac5508306
+ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66760950"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68474632"
 ---
-# <a name="create-a-detail-gallery-in-a-canvas-app"></a>创建画布应用中的详细信息库
+# <a name="create-a-detail-gallery-in-a-canvas-app"></a>在画布应用中创建详细信息库
 
-按照分步说明来创建用于管理在 Northwind Trader 数据库中的虚拟数据的画布应用中的详细信息库。 本主题是介绍如何在 Common Data Service 中的关系数据上构建企业应用程序的一系列的一部分。 为了获得最佳结果，将介绍此序列中的以下主题：
+按照分步说明在画布应用中创建详细信息库, 以便在 Northwind 商贸数据库中管理虚拟数据。 本主题是一系列文章的一部分, 说明如何在 Common Data Service 中构建业务应用程序的关系数据。 为了获得最佳结果, 请在此序列中浏览这些主题:
 
-1. [创建顺序库](northwind-orders-canvas-part1.md)。
-1. [创建摘要的窗体](northwind-orders-canvas-part2.md)。
+1. [创建订单库](northwind-orders-canvas-part1.md)。
+1. [创建摘要窗体](northwind-orders-canvas-part2.md)。
 1. 创建详细信息库 (**本主题**)。
 
 > [!div class="mx-imgBorder"]
@@ -33,296 +33,296 @@ ms.locfileid: "66760950"
 
 ## <a name="prerequisites"></a>先决条件
 
-在开始本主题之前，必须安装数据库，如本主题中前面所述。 您必须再创建顺序库和摘要的窗体或打开**Northwind 订单 （画布）-第 3 部分开始**已包含库和该窗体的应用程序。
+在开始本主题之前, 必须按照本主题前面所述安装数据库。 然后, 您必须创建订单库和摘要窗体, 或者打开**Northwind Orders (Canvas)-Begin 第3部分**, 该应用程序已经包含该库和该窗体。
 
 ## <a name="create-another-title-bar"></a>创建另一个标题栏
 
-1. 在屏幕的顶部，选择[**标签**](controls/control-text-box.md)作为标题栏控件通过按 Ctrl + C 复制它，然后将其粘贴通过按 Ctrl:
+1. 在屏幕顶部, 选择充当标题栏的 "[**标签**](controls/control-text-box.md)" 控件, 按 Ctrl + C 进行复制, 然后按 Ctrl + V 粘贴:
 
     > [!div class="mx-imgBorder"]
-    > ![复制并粘贴标题栏](media/northwind-orders-canvas-part3/details-01.png)
+    > ![复制和粘贴标题栏](media/northwind-orders-canvas-part3/details-01.png)
 
-1. 调整大小和移动副本，以使其只需在汇总窗体下显示。
+1. 调整大小并移动复制, 使其显示在摘要窗体下。
 
-1. 从这些方式中的任一副本中删除文本：
+1. 采用以下任一方式从副本中删除文本:
 
-    - 双击以选择它的文本，然后按 Delete。
-    - 设置的标签**文本**属性设置为空字符串 ( **""** )。
+    - 双击文本将其选中, 然后按 Delete。
+    - 将标签的 " **Text** " 属性设置为空字符串 ( **""** )。
 
     > [!div class="mx-imgBorder"]
-    > ![删除标题栏复制中的文本](media/northwind-orders-canvas-part3/details-02.png)
+    > ![从标题栏副本中删除文本](media/northwind-orders-canvas-part3/details-02.png)
 
 ## <a name="add-a-gallery"></a>添加库
 
-1. 插入[**库**](controls/control-gallery.md)与控制**垂直空白库**布局：
+1. 插入具有**空白垂直**布局的[**库**](controls/control-gallery.md)控件:
 
     > [!div class="mx-imgBorder"]
     > ![添加空白垂直库](media/northwind-orders-canvas-part3/details-03.png)
 
-    新的库，它将在显示订单详细信息，将显示在左上角中：
+    将显示订单详细信息的新库显示在左上角:
 
     > [!div class="mx-imgBorder"]
     > ![订单详细信息库的默认位置](media/northwind-orders-canvas-part3/details-04.png)
 
-1. 关闭**数据**窗格中，然后调整大小并移动到右下角，新的标题栏下方的库详细信息：
+1. 关闭 "**数据**" 窗格, 然后将详细信息库调整到新标题栏下面的右下角:
 
     > [!div class="mx-imgBorder"]
-    > ![最终的订单详细信息库位置](media/northwind-orders-canvas-part3/details-05.png)
+    > ![订单详细信息库的最终位置](media/northwind-orders-canvas-part3/details-05.png)
 
-1. 设置**项**属性的详细信息库为以下公式：
+1. 将详细信息库的**Items**属性设置为以下公式:
 
     ```powerapps-dot
     Gallery1.Selected.'Order Details'
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![设置项属性的详细信息库](media/northwind-orders-canvas-part3/details-06.png)
+    > ![设置详细信息库的 Items 属性](media/northwind-orders-canvas-part3/details-06.png)
 
-    如果出现一个错误，请确认订单库名为**Gallery1** (在**树视图**窗格的左边缘附近)。 如果库具有不同的名称，其重命名**Gallery1**。
+    如果出现错误, 请确认订单库的名称为 " **gallery1.selected** " (位于左边缘附近的 "**树视图**" 窗格中)。 如果该库具有不同的名称, 请将其重命名为**gallery1.selected**。
 
-    只需链接两个库。 所选内容时用户选择顺序库中的订单，标识中的记录**订单**实体。 如果订单包含一个或多个行项中的记录**订单**实体链接到中的一个或多个记录**订单详细信息**实体，并且这些记录中的数据显示在详细信息库。 此行为将反映已为你之间创建一个对多关系**订单**并**订单详细信息**实体。 指定的公式"指导"该关系使用点表示法：
+    你刚刚链接了两个库。 当用户在订单库中选择一个订单时, 该选择标识 "**订单**" 实体中的一条记录。 如果该订单包含一个或多个行项, 则 "**订单**" 实体中的记录会链接到 "**订单详细信息**" 实体中的一个或多个记录, 详细信息库中将显示这些记录的数据。 此行为反映了在 "**订单**" 和 "**订单详细信息**" 实体之间为您创建的一对多关系。 您通过使用点表示法指定了关系的公式:
 
     > [!div class="mx-imgBorder"]
-    > ![Orders 实体和订单详细信息实体之间的一个对多关系](media/northwind-orders-canvas-part3/schema-orders-rel.png)
+    > !["订单" 实体与 "订单详细信息" 实体之间的一对多关系](media/northwind-orders-canvas-part3/schema-orders-rel.png)
 
 ## <a name="show-product-names"></a>显示产品名称
 
-1. 在详细信息库中，选择**从插入选项卡添加项**选择库模板：
+1. 在详细信息库中,**从 "插入" 选项卡**中选择 "添加项" 以选择库模板:
 
     > [!div class="mx-imgBorder"]
-    > ![选择库详细信息的模板](media/northwind-orders-canvas-part3/details-07.png)
+    > ![选择详细信息库的模板](media/northwind-orders-canvas-part3/details-07.png)
 
-    确保已选择库模板而不是库本身。 边界框应略有内部库的边界和可能短于库的高度。 此模板中插入控件，因为它们会重复库中每一项。
+    请确保已选择库模板而不是库本身。 边界框应略微位于库的边界内, 可能会短于库的高度。 将控件插入到此模板中时, 将对库中的每个项重复这些控件。
 
-1. 上**插入**选项卡上，插入到库详细信息的标签。
+1. 在 "**插入**" 选项卡上的 "详细信息库" 中插入一个标签。
 
-    标签应出现在库;如果没有，重试，但请务必选择库模板，然后插入标签。
+    此标签应显示在库中;如果不是, 请重试, 但请确保在插入标签之前选择库的模板。
 
     > [!div class="mx-imgBorder"]
-    > ![将标签添加到库详细信息](media/northwind-orders-canvas-part3/details-08.png)
+    > ![向详细信息库添加标签](media/northwind-orders-canvas-part3/details-08.png)
 
-1. 设置新标签**文本**属性设为此公式：
+1. 将新标签的 " **Text** " 属性设置为以下公式:
 
     ```powerapps-dot
     ThisItem.Product.'Product Name'
     ```
 
-    如果没有文本显示，请选择箭头**顺序 0901年**顺序库底部附近。
+    如果未显示任何文本, 请选择订单库底部附近**订单 0901**的箭头。
 
-1. 设标签的大小，以便将显示完整的文本：
-
-    > [!div class="mx-imgBorder"]
-    > ![在订单详细信息中显示产品名称](media/northwind-orders-canvas-part3/details-09.png)
-
-    此表达式中的记录将指导**订单详细信息**实体。 该记录会保留在**ThisItem**转移到**订购产品**通过多对一关系的实体：
+1. 调整标签的大小, 以显示完整的文本:
 
     > [!div class="mx-imgBorder"]
-    > ![订单详细信息实体和顺序 Product 实体的多对一关系](media/northwind-orders-canvas-part3/schema-orderdetails-rel.png)
+    > ![按订单详细信息显示产品名称](media/northwind-orders-canvas-part3/details-09.png)
 
-    **产品名称**提取字段 （和即将使用其他字段）：
+    此表达式将从 "**订单详细信息**" 实体中的记录进行审核。 记录通过多对一关系保存到**订单产品**实体的**ThisItem**中:
 
     > [!div class="mx-imgBorder"]
-    > ![订购产品实体中的字段](media/northwind-orders-canvas-part3/schema-products-fields.png)
+    > ![订单详细信息实体与订单产品实体之间的多对一关系](media/northwind-orders-canvas-part3/schema-orderdetails-rel.png)
 
-## <a name="show-product-images"></a>显示产品图像
+    提取 "**产品名称**" 字段 (以及要使用的其他字段):
 
-1. 上**插入**选项卡上，插入[**图像**](controls/control-image.md)到详细信息库控件：
+    > [!div class="mx-imgBorder"]
+    > ![订单产品实体中的字段](media/northwind-orders-canvas-part3/schema-products-fields.png)
+
+## <a name="show-product-images"></a>显示产品映像
+
+1. 在 "**插入**" 选项卡上的 "详细信息库" 中插入[**图像**](controls/control-image.md)控件:
 
     > [!div class="mx-imgBorder"]
     > ![插入图像控件](media/northwind-orders-canvas-part3/details-10.png)
 
-1. 调整大小和移动图像和标签以并排放置。
+1. 调整图像和标签的大小并将其并排移动。
 
     > [!TIP]
-    > 进行精细控制的大小和控件的位置，开始调整大小或将其移动而无需按 Alt 键，然后继续或按住 Alt 键，同时移动控件或调整：
+    > 若要对控件的大小和位置进行精细的控制, 请在按住 Alt 键的同时, 开始调整大小或移动控件, 然后在按住 Alt 键的同时继续调整控件大小或移动控件:
 
     > [!div class="mx-imgBorder"]
     > ![移动图像控件](media/northwind-orders-canvas-part3/details-11.png)
 
-1. 设置图像的**图像**属性设为此公式：
+1. 将图像的**image**属性设置为以下公式:
 
     ```powerapps-dot
     ThisItem.Product.Picture
     ```
 
-    同样，该表达式引用一个与此相关联的产品的订单详细信息和提取**图片**要显示字段。
+    同样, 该表达式引用与此订单详细信息关联的产品并提取要显示的**图片**字段。
 
     > [!div class="mx-imgBorder"]
-    > ![显示产品图像](media/northwind-orders-canvas-part3/details-12.png)
+    > ![显示产品映像](media/northwind-orders-canvas-part3/details-12.png)
 
-1. 减少的库的模板，因此该超过一个高度**Order Detail**记录出现一次：
+1. 减小库模板的高度, 以便一次显示多个**订单详细信息**记录:
 
     > [!div class="mx-imgBorder"]
     > ![缩短库的模板](media/northwind-orders-canvas-part3/details-13.png)
 
 ## <a name="show-product-quantity-and-cost"></a>显示产品数量和成本
 
-1. 上**插入**选项卡上，插入另一个标签到详细信息库，然后重设大小并移动新标签，右侧的产品信息。
+1. 在 "**插入**" 选项卡上, 将另一个标签插入到详细信息库中, 然后重设大小并将新标签移动到产品信息的右侧。
 
-1. 设置新标签**文本**属性设置为此表达式：
+1. 将新标签的 " **Text** " 属性设置为以下表达式:
 
     ```powerapps-dot
     ThisItem.Quantity
     ```
 
-    此公式中提取信息直接从**订单详细信息**实体 （所需的任何关系）。
+    此公式直接从 "**订单详细信息**" 实体拉取信息 (无需任何关系)。
 
     > [!div class="mx-imgBorder"]
     > ![显示产品数量](media/northwind-orders-canvas-part3/details-13b.png) 
 
-1. 上**主页**选项卡上，更改到此控件的对齐方式**右**:
+1. 在 "**主页**" 选项卡上, 将此控件的对齐方式更改为**右**对齐:
 
     > [!div class="mx-imgBorder"]
     > ![更改对齐方式](media/northwind-orders-canvas-part3/details-14.png)
 
-1. 上**插入**选项卡上，插入另一个标签到详细信息库，然后重设大小并将标签移动到数量标签的右侧。
+1. 在 "**插入**" 选项卡上的 "详细信息库" 中插入另一个标签, 然后调整大小并将标签移动到 "数量" 标签的右侧。
 
-1. 设置新标签**文本**属性设为此公式：
+1. 将新标签的 " **Text** " 属性设置为以下公式:
 
     ```powerapps-dot
     Text( ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
     ```
 
-    如果不包含语言标记 ( **[$-EN-US]** )，它将根据你的语言和区域添加。 如果使用不同的语言标记，你需要删除 **$** 紧靠右方括号 ( **]** )，然后在该位置添加货币符号。
+    如果不包含语言标记 ( **[$-en-us]** ), 则将根据语言和区域为你添加。 如果使用其他语言标记, 则需要删除右方括号 ( **]** ) **$** 后面的, 然后在该位置添加您自己的货币符号。
 
     > [!div class="mx-imgBorder"]
-    > ![显示单位价格](media/northwind-orders-canvas-part3/details-15.png)
+    > ![显示单价](media/northwind-orders-canvas-part3/details-15.png)
 
-1. 上**主页**选项卡上，更改到此控件的对齐方式**右**:
+1. 在 "**主页**" 选项卡上, 将此控件的对齐方式更改为**右**对齐:
 
     > [!div class="mx-imgBorder"]
     > ![更改对齐方式](media/northwind-orders-canvas-part3/details-16.png)
 
-1. 上**插入**选项卡上，将另一个标签控件插入到详细信息库，然后重设大小并移动的单位价格右侧新标签。
+1. 在 "**插入**" 选项卡上, 将另一个 "标签" 控件插入到详细信息库中, 然后重设大小并将新标签移动到单位价格的右侧。
 
-1. 设置新标签**文本**属性设为此公式：
+1. 将新标签的 " **Text** " 属性设置为以下公式:
 
     ```powerapps-dot
     Text( ThisItem.Quantity * ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
     ```
 
-    同样，如果不包含语言标记 ( **[$-EN-US]** )，它将根据你的语言和区域添加。 如果标记不同，您将想要使用你自己的货币符号而不是 **$** 紧靠右方括号 ( **]** )。
+    同样, 如果不包含语言标记 ( **[$-en-us]** ), 则将根据语言和区域为你添加。 如果标记不同, 则需要使用自己的货币符号, 而不 **$** 是右方括号 ( **]** ) 之后的。
 
     > [!div class="mx-imgBorder"]
-    > ![显示扩展的价格](media/northwind-orders-canvas-part3/details-17.png)
+    > ![显示扩展价格](media/northwind-orders-canvas-part3/details-17.png)
 
-1. 上**主页**选项卡上，更改到此控件的对齐方式**右**:
+1. 在 "**主页**" 选项卡上, 将此控件的对齐方式更改为**右**对齐:
 
     > [!div class="mx-imgBorder"]
     > ![更改对齐方式](media/northwind-orders-canvas-part3/details-18.png)
 
-    现在，已完成将控件添加到库详细信息。
+    现在, 已完成将控件添加到详细信息库。
 
-1. 在中**树视图**窗格中，选择**Screen1**以确保详细信息库不再处于选中状态。
+1. 在 "**树视图**" 窗格中, 选择 " **Screen1** " 以确保不再选中 "详细信息库"。
 
-## <a name="add-text-to-the-new-title-bar"></a>将文本添加到新的标题栏
+## <a name="add-text-to-the-new-title-bar"></a>向新标题栏添加文本
 
-1. 上**插入**选项卡上，插入到屏幕的另一个标签：
+1. 在 "**插入**" 选项卡上, 在屏幕上插入另一个标签:
 
     > [!div class="mx-imgBorder"]
     > ![插入标签](media/northwind-orders-canvas-part3/details-19.png)
 
-1. 重设大小和中的第二个的标题栏，移动上面的产品照片的新标签，然后在将文本的颜色更改为白色**主页**选项卡。
+1. 调整新标签的大小并将其移到第二个标题栏中的产品图片上方, 然后在 "**主页**" 选项卡上将文本颜色更改为白色。
 
-1. 双击该标签的文本，然后键入**产品**:
+1. 双击标签的文本, 然后键入**Product**:
 
     > [!div class="mx-imgBorder"]
     > ![将标签文本更改为产品](media/northwind-orders-canvas-part3/details-20.png)
 
-1. 复制和粘贴产品标签，然后重设大小和移动 quantity 列的上方的副本。
+1. 复制并粘贴产品标签, 然后在 "数量" 列的上方调整大小并移动副本。
 
-1. 双击新标签的文本，然后键入**数量**:
-
-    > [!div class="mx-imgBorder"]
-    > ![更改为 Quantity 的标签文本](media/northwind-orders-canvas-part3/details-21.png)
-
-1. 复制和粘贴 quantity 标签，然后重设大小和移动复制单元价格列的上方。
-
-1. 双击新标签的文本，然后键入**单价**:
+1. 双击新标签的文本, 然后键入 "**数量**":
 
     > [!div class="mx-imgBorder"]
-    > ![将标签文本更改为单位价格](media/northwind-orders-canvas-part3/details-22.png)
+    > ![将标签文本更改为数量](media/northwind-orders-canvas-part3/details-21.png)
 
-1. 复制和粘贴的单位价格标签，然后重设大小和移动扩展价格列的上方的副本。
+1. 复制并粘贴 "数量" 标签, 然后调整其大小, 并将该副本移到 "单价" 列之上。
 
-1. 双击新标签的文本，然后键入**扩展**:
+1. 双击新标签的文本, 然后键入**Unit Price**:
+
+    > [!div class="mx-imgBorder"]
+    > ![将标签文本更改为单价](media/northwind-orders-canvas-part3/details-22.png)
+
+1. 复制并粘贴单位价格标签, 然后调整其大小, 并将其移动到扩展价格列以上。
+
+1. 双击新标签的文本, 然后键入 "**扩展**":
 
     > [!div class="mx-imgBorder"]
     > ![将标签文本更改为扩展](media/northwind-orders-canvas-part3/details-23.png)
 
 ## <a name="display-order-totals"></a>显示订单总计
 
-1. 减少详细信息库以便为在屏幕底部的订单总额腾出的高度：
+1. 减小详细信息库的高度, 以便为屏幕底部的订单总数腾出空间:
 
     > [!div class="mx-imgBorder"]
-    > ![缩短订单详细信息库](media/northwind-orders-canvas-part3/sum-01.png)
+    > ![缩短订单-详细信息库](media/northwind-orders-canvas-part3/sum-01.png)
 
-1. 复制并粘贴屏幕中间，标题栏，然后将副本移动到屏幕的底部：
-
-    > [!div class="mx-imgBorder"]
-    > ![复制标题栏中，并将副本移到下边缘](media/northwind-orders-canvas-part3/sum-02.png)
-
-1. 复制并粘贴从中间的标题栏中，产品标签，然后将副本移动到底部的标题栏的左侧**数量**列。
-
-1. 双击新标签的文本，然后键入以下文本：<br>**订单总计：**
+1. 将标题栏复制并粘贴到屏幕中间, 然后将其复制到屏幕底部:
 
     > [!div class="mx-imgBorder"]
-    > ![添加订单合计的标签](media/northwind-orders-canvas-part3/sum-03.png)
+    > ![复制标题栏, 并将复制到下边缘](media/northwind-orders-canvas-part3/sum-02.png)
 
-1. 复制并粘贴订单合计标签，然后重设大小然后将副本移到订单合计标签的右侧。
+1. 复制并粘贴中间标题栏中的 "产品" 标签, 然后将该副本移到 "**数量**" 列左侧的底部标题栏中。
 
-1. 设置新标签**文本**属性设为此公式：
+1. 双击新标签的文本, 然后键入以下文本:<br>**订单总计:**
+
+    > [!div class="mx-imgBorder"]
+    > ![为订单总计添加标签](media/northwind-orders-canvas-part3/sum-03.png)
+
+1. 复制并粘贴 "订单总计" 标签, 然后重设大小, 并将副本移动到 "订单总计" 标签的右边。
+
+1. 将新标签的 " **Text** " 属性设置为以下公式:
 
     ```powerapps-dot
     Sum( Gallery1.Selected.'Order Details', Quantity )
     ```
 
-    此公式显示委派警告，但您可以忽略它，因为没有单个订单将包含超过 500 个产品。
+    此公式显示委托警告, 但您可以忽略该警告, 因为没有单个订单包含的产品超过500。
 
-1. 上**主页**选项卡上，将新标签的文本对齐方式设置为**右**:
+1. 在 "**主页**" 选项卡上, 将新标签的文本对齐方式设置为 "**右**":
 
     > [!div class="mx-imgBorder"]
     > ![更改对齐方式](media/northwind-orders-canvas-part3/sum-04.png)
 
-1. 复制和粘贴此标签控件，然后重设大小和移动下的副本**扩展**列。
+1. 复制并粘贴此 "标签" 控件, 然后在 "**扩展**" 列下调整或移动该副本。
 
-1. 设置的副本**文本**属性设为此公式：
+1. 将复制的 " **Text** " 属性设置为以下公式:
 
     ```powerapps-dot
     Text( Sum( Gallery1.Selected.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
     ```
 
-    此公式显示委派警告，但您可以忽略它，因为没有单个订单将包含超过 500 个产品。
+    此公式显示委托警告, 但您可以忽略该警告, 因为没有单个订单包含的产品超过500。
 
     > [!div class="mx-imgBorder"]
-    > ![显示订单的总成本](media/northwind-orders-canvas-part3/sum-05.png)
+    > ![显示订单总成本](media/northwind-orders-canvas-part3/sum-05.png)
 
-## <a name="add-space-for-new-details"></a>添加新的详细信息的空间
+## <a name="add-space-for-new-details"></a>为新详细信息添加空间
 
-在任何库中，您可以显示的数据但不能更新或添加记录。 在详细信息库下，你将添加用户可在其中配置中的记录的区域**订单详细信息**实体和插入到订单记录。
+在任何库中, 你都可以显示数据, 但无法对其进行更新或添加记录。 在详细信息库下, 您将添加一个区域, 用户可在其中配置 "**订单详细信息**" 实体中的记录, 并将该记录插入到订单中。
 
-1. 减少详细信息库足够，以便为在库下的单个项编辑空间腾出的高度。
+1. 减小详细信息库的高度, 以便为该库下的单项编辑空间腾出空间。
 
-    在此空间，你将添加控件，以便用户可以添加订单详细信息：
-
-    > [!div class="mx-imgBorder"]
-    > ![缩短详细库](media/northwind-orders-canvas-part3/add-details-01.png)
-
-1. 上**插入**选项卡上，插入一个标签，然后重设大小并将其移到详细信息库下。
+    在此空间中, 你将添加控件, 以便用户可以添加订单详细信息:
 
     > [!div class="mx-imgBorder"]
-    > ![插入一个标签](media/northwind-orders-canvas-part3/add-details-02.png)
+    > ![缩短详细信息库](media/northwind-orders-canvas-part3/add-details-01.png)
 
-1. 双击新标签的文本，然后按 Delete。
+1. 在 "**插入**" 选项卡上, 插入一个标签, 然后调整其大小, 然后将其移到详细信息库下。
 
-1. 上**主页**选项卡上，设置新标签**填充**颜色**LightBlue**:
+    > [!div class="mx-imgBorder"]
+    > ![插入标签](media/northwind-orders-canvas-part3/add-details-02.png)
+
+1. 双击新标签的文本, 然后按 "删除"。
+
+1. 在 "**主页**" 选项卡上, 将新标签的**填充**颜色设置为**LightBlue**:
 
     > [!div class="mx-imgBorder"]
     > ![将标签的填充更改为浅蓝色](media/northwind-orders-canvas-part3/add-details-03.png)
 
 ## <a name="add-the-order-details-data-source"></a>添加订单详细信息数据源
 
-1. 上**视图**选项卡上，选择**数据源**，然后选择**添加数据源**中**数据**窗格：
+1. 在 "**视图**" 选项卡上, 选择 "**数据源**", 然后在 "**数据**" 窗格中选择 "**添加数据源**":
 
     > [!div class="mx-imgBorder"]
     > ![添加数据源](media/northwind-orders-canvas-part3/add-details-04.png)
@@ -332,91 +332,91 @@ ms.locfileid: "66760950"
     > [!div class="mx-imgBorder"]
     > ![选择 Common Data Service](media/northwind-orders-canvas-part3/add-details-05.png)
 
-1. 在顶部**数据**窗格中，键入**顺序**在搜索框中，选择**订单详细信息**复选框，然后再选择**Connect**在窗格的底部：
+1. 在 "**数据**" 窗格顶部的 "搜索" 框中键入 "**顺序**", 选中 "**订单详细信息**" 复选框, 然后在窗格底部选择 "**连接**":
 
     > [!div class="mx-imgBorder"]
-    > ![指定顺序的详细信息实体](media/northwind-orders-canvas-part3/add-details-06.png)
+    > ![指定订单详细信息实体](media/northwind-orders-canvas-part3/add-details-06.png)
 
-    您刚才已添加到应用的另一个数据源：
+    你刚向应用添加了另一个数据源:
 
     > [!div class="mx-imgBorder"]
-    > ![数据源的列表](media/northwind-orders-canvas-part3/add-details-07.png)
+    > ![数据源列表](media/northwind-orders-canvas-part3/add-details-07.png)
 
-    您必须添加此数据源，因为尽管应用程序可以读取通过一个对多关系，但应用无法尚未写回更改。 应用程序必须进行直接与相关实体的更改。
+    您必须添加此数据源, 因为虽然应用程序可以通过一对多关系读取, 但是应用程序无法写回更改。 应用必须直接与相关实体进行更改。
 
-1. 关闭**数据**窗格。
+1. 关闭 "**数据**" 窗格。
 
 ## <a name="select-a-product"></a>选择产品
 
-1. 上**插入**选项卡上，选择**控件** > **组合框**:
+1. 在 "**插入**" 选项卡上, 选择 "**控件** > "**组合框**:
 
     > [!div class="mx-imgBorder"]
     > ![插入组合框](media/northwind-orders-canvas-part3/add-details-08.png)
 
-    [**组合框**](controls/control-combo-box.md)控件显示在左上角。
+    [**组合框**](controls/control-combo-box.md)控件将显示在左上角。
 
-1. 设置组合框**项**属性设为此公式：
+1. 将组合框的**Items**属性设置为以下公式:
 
     ```powerapps-dot
     Choices( 'Order Details'.Product )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![设置组合框的项属性](media/northwind-orders-canvas-part3/add-details-09.png)
+    > ![设置组合框的 Items 属性](media/northwind-orders-canvas-part3/add-details-09.png)
 
-    [**选择**](functions/function-choices.md)函数返回的所有可能值的表**产品**字段中**订单详细信息**实体。 因此，此字段才在多对一关系中，查找**选项**返回中的所有记录**订购产品**实体。
+    [**选项**](functions/function-choices.md)函数将为 "**订单详细信息**" 实体中的 "**产品**" 字段返回一个表。 此字段是多对一关系中的一个查找, 因此可**选择**返回**Order Products**实体中的所有记录。
 
     > [!NOTE]
-    > 此外可以使用**选择**选项集以返回所有选项的表。 步骤没有提过这种方法，但已添加显示组合框时，会使用它**订单状态**在汇总窗体中。
+    > 您还可以将**选项与选项**集结合使用, 以返回所有选项的表。 这些步骤未提到此方法, 但您在将显示**订单状态**的组合框添加到摘要窗体中时已使用了该方法。
 
-1. 在中**数据**窗格中，打开**主要文本**列表，并选择**nwind_productname**。 
+1. 在 "**数据**" 窗格中, 打开 "**主文本**" 列表, 然后选择 " **nwind_productname**"。 
 
-1. 打开**SearchField**列表，并选择**nwind_productname**。
+1. 打开 " **SearchField** " 列表, 然后选择 " **nwind_productname**"。
 
-    您指定的逻辑名称，因为**数据**窗格尚不支持显示名称在此情况下：
-
-    > [!div class="mx-imgBorder"]
-    > ![设置组合框的主要文本](media/northwind-orders-canvas-part3/add-details-10.png)
-
-1. 关闭**数据**窗格。
-
-1. 在中**属性**右边缘附近选项卡，向下滚动，将关闭**允许多个所选内容**，并确保**允许搜索**处于开启状态：
+    指定逻辑名称, 因为在此示例中,**数据**窗格不支持显示名称:
 
     > [!div class="mx-imgBorder"]
-    > ![禁用多个所选内容并启用搜索](media/northwind-orders-canvas-part3/add-details-12.png)
+    > ![设置组合框的主文本](media/northwind-orders-canvas-part3/add-details-10.png)
 
-1. 调整大小并将组合框移到浅蓝色区域，在详细信息库中的产品名称列下，只需：
+1. 关闭 "**数据**" 窗格。
+
+1. 在右侧边缘附近的 "**属性**" 选项卡中, 向下滚动并关闭 "**允许多项选择**", 并确保已启用 "**允许搜索**":
 
     > [!div class="mx-imgBorder"]
-    > ![将组合框](media/northwind-orders-canvas-part3/add-details-13.png)
+    > ![禁用多重选择并启用搜索](media/northwind-orders-canvas-part3/add-details-12.png)
 
-    在此组合框中，用户将指定的记录中**产品**实体**订单详细信息**该应用会创建的记录。
+1. 调整组合框的大小并将其移动到浅蓝色区域, 只需在详细信息库中的产品名称列下面:
 
-1. 在按住 Alt 键，选择组合框的向下箭头。
+    > [!div class="mx-imgBorder"]
+    > ![移动组合框](media/northwind-orders-canvas-part3/add-details-13.png)
+
+    在此组合框中, 用户将为应用将创建的**订单详细信息**记录指定**Product**实体中的记录。
+
+1. 按住 Alt 键的同时, 选择组合框的向下箭头。
 
     > [!TIP]
-    > 通过按住 Alt 键，您可以与控件进行交互在 PowerApps Studio 中而无需打开预览模式。
+    > 按下 Alt 键, 无需打开预览模式, 即可与 PowerApps Studio 中的控件交互。
 
-1. 在显示的产品列表中，选择一个产品：
+1. 在显示的产品列表中, 选择一个产品:
 
     > [!div class="mx-imgBorder"]
     > ![在组合框中选择一个产品](media/northwind-orders-canvas-part3/add-details-14.png)
 
-## <a name="add-a-product-image"></a>添加产品图像
+## <a name="add-a-product-image"></a>添加产品映像
 
-1. 上**插入**选项卡上，选择**媒体** > **映像**:
+1. 在 "**插入**" 选项卡上, 选择 "**媒体** > **图像**":
 
     > [!div class="mx-imgBorder"]
     > ![插入图像控件](media/northwind-orders-canvas-part3/add-details-15.png)
 
-    [**映像**](controls/control-image.md)控件将显示在左上角中：
+    [**图像**](controls/control-image.md)控件将出现在左上角:
 
     > [!div class="mx-imgBorder"]
     > ![图像控件的默认位置](media/northwind-orders-canvas-part3/add-details-16.png)
 
-1. 调整大小并将映像移动到其他产品的图像下和组合框旁的浅蓝色区域。
+1. 调整图像的大小并将其移到 "其他产品" 图像下和组合框旁边的浅蓝色区域。
 
-1. 设置**图像**的映像的属性：
+1. 将图像的**image**属性设置为:
 
     ```powerapps-dot
     ComboBox1.Selected.Picture
@@ -425,47 +425,47 @@ ms.locfileid: "66760950"
     > [!div class="mx-imgBorder"]
     > ![设置图像的 Image 属性](media/northwind-orders-canvas-part3/add-details-17.png)
 
-    使用相同的方法作为您用来在汇总窗体中显示雇员照片。 **Selected**组合框的属性将返回用户选择，包括任何产品的整个记录**图片**字段。
+    你使用的是在摘要窗体中用来显示雇员照片的相同技巧。 组合框的**Selected**属性返回用户选择的任何产品的整个记录, 包括**图片**字段。
 
-## <a name="add-a-quantity-box"></a>添加一个数量框
+## <a name="add-a-quantity-box"></a>添加数量框
 
-1. 上**插入**选项卡上，选择**文本** > **文本输入**:
+1. 在 "**插入**" 选项卡上, 选择 "**文本** > "**输入**:
 
     > [!div class="mx-imgBorder"]
     > ![添加文本输入框](media/northwind-orders-canvas-part3/add-details-18.png)
 
-    [**文本输入**](controls/control-text-input.md)控件将显示在左上角中：
+    [**文本输入**](controls/control-text-input.md)控件显示在左上角:
 
     > [!div class="mx-imgBorder"]
     > ![文本输入框的默认位置](media/northwind-orders-canvas-part3/add-details-19.png)
 
-1. 调整大小并将文本输入框移到下详细信息库中的 quantity 列的组合框的右侧：
+1. 在 "详细信息库" 中的 "数量" 列下调整组合框右侧的文本输入框并将其移动:
 
     > [!div class="mx-imgBorder"]
-    > ![调整大小和移动文本输入框](media/northwind-orders-canvas-part3/add-details-20.png)
+    > ![调整文本大小并移动文本输入框](media/northwind-orders-canvas-part3/add-details-20.png)
 
-    通过使用此文本输入框，用户将指定**Quantity**字段**订单详细信息**记录。
+    使用此文本输入框, 用户将指定**订单详细信息**记录的**数量**字段。
 
-1. 设置**默认**到此控件的属性 **""** :
+1. 将此控件的**默认**属性设置为 **""** :
 
     > [!div class="mx-imgBorder"]
-    > ![设置 * * 默认 * * 属性的文本输入框](media/northwind-orders-canvas-part3/add-details-21.png)
+    > ![设置文本输入框的 * * 默认值 * * 属性](media/northwind-orders-canvas-part3/add-details-21.png)
 
-1. 上**主页**选项卡上，设置到此控件的文本对齐方式**右**:
+1. 在 "**主页**" 选项卡上, 将此控件的文本对齐方式设置为 "**右**":
 
     > [!div class="mx-imgBorder"]
     > ![更改对齐方式](media/northwind-orders-canvas-part3/add-details-22.png)
 
-## <a name="show-the-unit-and-extended-prices"></a>显示的单元和扩展的价格
+## <a name="show-the-unit-and-extended-prices"></a>显示单位和扩展价格
 
-1. 上**插入**选项卡上，插入**标签**控件。
+1. 在 "**插入**" 选项卡上, 插入 "**标签**" 控件。
 
-    标签出现在屏幕的左上角中：
+    标签显示在屏幕的左上角:
 
     > [!div class="mx-imgBorder"]
-    > ![插入一个标签](media/northwind-orders-canvas-part3/add-details-23.png)
+    > ![插入标签](media/northwind-orders-canvas-part3/add-details-23.png)
 
-1. 重设大小和移动该标签，右侧的文本输入控件，以及设置的标签**文本**属性设为此公式：
+1. 调整大小并将标签移动到文本输入控件的右侧, 然后将标签的 " **text** " 属性设置为以下公式:
 
     ```powerapps-dot
     Text( ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
@@ -474,19 +474,19 @@ ms.locfileid: "66760950"
     > [!div class="mx-imgBorder"]
     > ![设置标签的 Text 属性](media/northwind-orders-canvas-part3/add-details-24.png)
 
-    此控件显示**标价**从**订购产品**实体。 此值将确定**单价**字段中**订单详细信息**记录。
+    此控件显示 "**订单产品**" 实体的**定价**。 此值将确定**订单详细信息**记录中的 "**单价**" 字段。
 
     > [!NOTE]
-    > 对于此方案，此值为只读的但其他情况下可能要求应用用户对其进行修改。 在这种情况下，使用**文本输入**控件，并设置其**默认**属性设置为**标价**。
+    > 对于此方案, 此值是只读的, 但其他方案可能会调用应用程序用户来修改它。 在这种情况下, 请使用**文本输入**控件, 并将其**默认**属性设置为**标价。**
 
-1. 上**主页**选项卡上，设置为列表价格标签的文本对齐方式**右**:
+1. 在 "**主页**" 选项卡上, 将列表价格标签的文本对齐方式设置为 "**右**":
 
     > [!div class="mx-imgBorder"]
     > ![更改对齐方式](media/northwind-orders-canvas-part3/add-details-25.png)
 
-1. 复制并粘贴列表价格标签，然后重设大小然后将副本移到列表价格标签的右侧。
+1. 复制并粘贴标价标签, 然后调整其大小, 并将该副本移到标价标签的右边。
 
-1. 设置新标签**文本**属性设为此公式：
+1. 将新标签的 " **Text** " 属性设置为以下公式:
 
     ```powerapps-dot
     Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
@@ -495,28 +495,28 @@ ms.locfileid: "66760950"
     > [!div class="mx-imgBorder"]
     > ![设置新标签的 Text 属性](media/northwind-orders-canvas-part3/add-details-27.png)
 
-    此控件显示的扩展的价格基于指定的应用程序用户的数量和应用程序用户所选的产品标价。 它是应用用户仅用于提供信息。
+    此控件基于应用用户指定的数量以及应用用户选择的产品的定价显示扩展价格。 它纯粹是应用程序用户的信息。
 
-1. 双击数量，该文本输入控件，然后键入一个数字。
+1. 双击 "数量" 的文本输入控件, 然后键入一个数字。
 
-    **扩展**价格标签重新计算，以显示新值：
+    **扩展**价格标签将重新计算以显示新值:
 
     > [!div class="mx-imgBorder"]
-    > ![指定数量，并显示扩展的价格](media/northwind-orders-canvas-part3/add-details-28.png)
+    > ![指定数量并显示扩展价格](media/northwind-orders-canvas-part3/add-details-28.png)
 
-## <a name="add-an-add-icon"></a>添加一个添加图标
+## <a name="add-an-add-icon"></a>添加添加图标
 
-1. 上**插入**选项卡上，选择**图标** > **添加**:
+1. 在 "**插入**" 选项卡上, 选择 "**图标** > " "**添加**":
 
     > [!div class="mx-imgBorder"]
     > ![插入添加图标](media/northwind-orders-canvas-part3/add-details-29.png)
 
-    图标将显示在屏幕的左上角。
+    该图标将显示在屏幕的左上角。
 
     > [!div class="mx-imgBorder"]
-    > ![添加图标的默认位置](media/northwind-orders-canvas-part3/add-details-30.png)
+    > !["添加" 图标的默认位置](media/northwind-orders-canvas-part3/add-details-30.png)
 
-1. 重设大小和移动到的右边缘的浅蓝色区域中，此图标，然后设置图标**OnSelect**属性设为此公式：
+1. 调整此图标的大小并将其移动到浅蓝色区域的右边缘, 然后将图标的**OnSelect**属性设置为以下公式:
 
     ```powerapps-dot
     Patch( 'Order Details',
@@ -536,51 +536,51 @@ ms.locfileid: "66760950"
     > [!div class="mx-imgBorder"]
     > ![设置图标的 OnSelect 属性](media/northwind-orders-canvas-part3/add-details-31.png)
 
-    一般情况下， [**修补**](functions/function-patch.md)函数更新，并创建记录，并在此公式中的特定参数确定将使该函数的具体更改。
+    通常, [**Patch**](functions/function-patch.md)函数会更新并创建记录, 而此公式中的特定参数会确定函数将进行的确切更改。
 
-    - 第一个参数指定的数据源 (在这种情况下，**订单详细信息**实体) 中或创建记录的更新函数将。
-    - 第二个参数指定该函数将创建具有默认值的记录**订单详细信息**实体除非第三个参数中指定。
-    - 第三个参数指定新的记录中的四个列将包含来自用户的值。
+    - 第一个参数指定数据源 (在本例中为 "**订单详细信息**" 实体), 函数将在该数据源中更新或创建记录。
+    - 第二个参数指定该函数将使用 "**订单详细信息**" 实体的默认值创建一个记录, 除非在第三个参数中另行指定。
+    - 第三个参数指定新记录中的四列将包含用户的值。
 
-      - **顺序**列将包含用户所选订单库中的订单数。
-      - **产品**列将包含产品中的显示产品组合框中选定的用户的名称。
-      - **数量**列将包含用户指定的文本输入框中的值。
-      - **单价**列将包含在用户选择了为此订单详细信息的产品标价。
+      - **Order**列将包含用户在顺序库中选择的订单数。
+      - **Product**列将包含用户在显示产品的组合框中选择的产品的名称。
+      - "**数量**" 列将包含用户在文本输入框中指定的值。
+      - "**单价**" 列将包含用户为此订单详细信息选择的产品的定价。
 
     > [!NOTE]
-    > 你可以构建使用任何列中的数据的公式 (在**订购产品**实体) 的任何产品应用用户显示产品的组合框中选择。 当用户选择中的记录**订购产品**实体，不仅产品的名称在该组合框中会显示，但该产品的单价中还将显示一个标签。 画布应用中的每个查找值引用整条记录，而不仅仅是主键。
+    > 对于应用用户在显示产品的组合框中选择的任何产品, 你可以使用 "**订单产品**" 实体中的任何列生成使用数据的公式。 当用户在 "**订单**" 实体中选择一条记录时, 不仅会在该组合框中显示产品的名称, 还会在标签中显示产品的单位价格。 画布应用中的每个查找值都引用整条记录, 而不只引用主键。
 
-    **刷新**函数确保**订单**实体反映您刚才已添加到的记录**Order Details**实体。 **重置**函数清除产品、 数量和单价的数据，以便用户可以更轻松地创建的相同顺序的另一个订单详细信息。
+    **Refresh**函数可确保 "**订单**" 实体反映刚添加到 "**订单详细信息**" 实体中的记录。 **Reset**函数将清除产品、数量和单价数据, 以便用户可以更轻松地为同一订单创建另一个订单详细信息。
 
-1. 按 F5，然后依次**添加**图标。
+1. 按 F5, 然后选择 "**添加**" 图标。
 
-    顺序反映了你指定的信息：
+    顺序反映了您指定的信息:
 
     > [!div class="mx-imgBorder"]
-    > ![动画的添加订单详细信息](media/northwind-orders-canvas-part3/add-details.gif)
+    > ![添加订单详细信息的动画](media/northwind-orders-canvas-part3/add-details.gif)
 
-1. （可选）将另一个项添加到订单。
+1. 可有可无将另一项添加到订单中。
 
 1. 按 Esc 关闭预览模式。
 
 ## <a name="remove-an-order-detail"></a>删除订单详细信息
 
-1. 在屏幕的中心，选择详细信息库的模板：
+1. 在屏幕的中心, 选择详细信息库的模板:
 
     > [!div class="mx-imgBorder"]
     > ![选择库模板](media/northwind-orders-canvas-part3/remove-details-01.png)
 
-1. 上**插入**选项卡上，选择**图标** > **回收站**:
+1. 在 "**插入**" 选项卡上, 选择 "**图标** > **垃圾桶**":
 
     > [!div class="mx-imgBorder"]
     > ![插入垃圾桶图标](media/northwind-orders-canvas-part3/remove-details-02.png)
 
-    垃圾桶图标显示在左上角的库模板的。
+    "垃圾桶" 图标将显示在库模板的左上角。
 
     > [!div class="mx-imgBorder"]
     > ![图标的默认位置](media/northwind-orders-canvas-part3/remove-details-03.png)
 
-1. 重设大小和移动详细库模板后，右侧的垃圾桶图标，以及设置的图标**OnSelect**属性设为此公式：
+1. 调整大小并将垃圾桶图标移到详细信息库模板的右侧, 并将图标的**OnSelect**属性设置为以下公式:
 
     ```powerapps-dot
     Remove( 'Order Details', ThisItem ); Refresh( Orders )
@@ -589,26 +589,26 @@ ms.locfileid: "66760950"
     > [!div class="mx-imgBorder"]
     > ![设置图标的 OnSelect 属性](media/northwind-orders-canvas-part3/remove-details-04.png)
 
-    在撰写本文时，不能删除一条记录直接从一种关系，因此[**删除**](functions/function-remove-removeif.md)函数直接从相关实体中删除一条记录。 **ThisItem**指定要删除的记录从垃圾桶图标的显示位置的详细信息库中的同一记录。
+    在撰写本文时, 您不能直接从关系中删除记录, 因此[**remove**](functions/function-remove-removeif.md)函数会直接从相关实体中删除记录。 **ThisItem**指定要删除的记录, 该记录来自 "详细信息库" 中显示的相同记录。
 
-    同样，该操作使用缓存的数据，因此**刷新**函数将通知**订单**该应用具有更改其相关实体之一中的实体。
+    该操作再次使用缓存的数据, 因此**Refresh**函数通知**Orders**实体应用已更改其相关实体之一。
 
-1. 按 F5 打开预览模式，然后选择每个旁边的垃圾桶图标**订单详细信息**记录你想要删除的顺序。
+1. 按 F5 打开预览模式, 然后选择要从订单中删除的每个 "**订单详细信息**" 记录旁边的 "垃圾桶" 图标。
 
-1. 尝试添加和删除各种订单从您的订单的详细信息：
+1. 尝试添加和删除订单的各种订单详细信息:
 
     > [!div class="mx-imgBorder"]
     > ![添加和删除订单详细信息的动画](media/northwind-orders-canvas-part3/remove-details.gif)
 
-## <a name="in-conclusion"></a>总结
+## <a name="in-conclusion"></a>结束
 
-概括来说，您添加了另一个库，以显示订单详细信息和控件添加和删除应用程序中的订单详细信息。 使用这些元素：
+总之, 你添加了另一个库来显示订单详细信息, 以及在应用程序中添加和删除订单详细信息的控件。 你使用了以下元素:
 
-- 第二个库控件中，链接到订单库通过对多关系：**Gallery2.Items** = `Gallery1.Selected.'Order Details'`
-- 从多对一的关系**订单详细信息**实体与**订购产品**实体：`ThisItem.Product.'Product Name'`和 `ThisItem.Product.Picture`
-- **选择**函数以获取产品列表： `Choices( 'Order Details'.Product' )`
-- **Selected**组合框以完成对一多属性相关的记录：`ComboBox1.Selected.Picture`和 `ComboBox1.Selected.'List Price'`
-- **修补程序**函数来创建**订单详细信息**记录： `Patch( 'Order Details', Defaults( 'Order Details' ), ... )`
-- **删除**函数来删除**订单详细信息**记录： `Remove( 'Order Details', ThisItem )`
+- 第二个库控件, 通过一对多关系链接到订单库:**Gallery2** = `Gallery1.Selected.'Order Details'`
+- 从**订单详细信息**实体到**订单产品**实体的多对一关系: `ThisItem.Product.'Product Name'`和`ThisItem.Product.Picture`
+- 用于获取产品列表的**选项**函数:`Choices( 'Order Details'.Product' )`
+- 组合框的**所选**属性为完整的多对一相关记录: `ComboBox1.Selected.Picture`和`ComboBox1.Selected.'List Price'`
+- 用于创建**订单详细信息**记录的**修补**函数:`Patch( 'Order Details', Defaults( 'Order Details' ), ... )`
+- 删除**订单详细信息**记录的**Remove**函数:`Remove( 'Order Details', ThisItem )`
 
-这一系列的主题已被使用 Common Data Service 关系的快速演练和选项设置中的画布应用出于教育目的。 在发布任何应用到生产环境之前，应考虑字段验证、 错误处理和许多其他因素。
+这一系列主题已是在画布应用中使用 Common Data Service 关系和选项集以便于教育目的的快速演练。 在将任何应用程序发布到生产环境之前, 应考虑字段验证、错误处理以及许多其他因素。

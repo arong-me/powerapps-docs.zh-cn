@@ -13,51 +13,51 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e202ce052bf12f5f67715deb2e86b385c2e515a7
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5d7443358216106776fae0d5daedb69b8091a00c
+ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61546921"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68473977"
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>PowerApps 中的 EndsWith 和 StartsWith 函数
 测试文本字符串是否以另一个文本字符串开头或结尾。
 
 ## <a name="description"></a>说明
-EndsWith  函数测试某个文本字符串是否以其他文本字符串结尾。
+EndsWith 函数测试某个文本字符串是否以其他文本字符串结尾。
 
 **StartsWith** 函数测试一个文本字符串是否以另一个文本字符串开头。    
 
-这两个函数的测试均不区分大小写。  两个函数的返回值均为布尔值 true  或 false  。  
+这两个函数的测试均不区分大小写。  两个函数的返回值均为布尔值 true 或 false。  
 
-将 EndsWith  和 StartsWith  与 **[Filter](function-filter-lookup.md)** 函数一起使用，可以在应用中搜索数据。 还可使用 **[in](operators.md#in-and-exactin-operators)** 运算符或 **[Search](function-filter-lookup.md)** 函数在文本字符串的任意位置进行查找，不局限于开头或结尾位置。  函数的选择取决于应用需求和针对特定数据源可以[委托](../delegation-overview.md)函数类型。  如果这些函数中有一个无法被委托，则会在创作时显示一个委派警告，用以提醒此限制。
+将 EndsWith 和 StartsWith 与 **[Filter](function-filter-lookup.md)** 函数一起使用，可以在应用中搜索数据。 还可使用 **[in](operators.md#in-and-exactin-operators)** 运算符或 **[Search](function-filter-lookup.md)** 函数在文本字符串的任意位置进行查找，不局限于开头或结尾位置。  函数的选择取决于应用需求和针对特定数据源可以[委托](../delegation-overview.md)函数类型。  如果这些函数中有一个无法被委托，则会在创作时显示一个委派警告，用以提醒此限制。
 
 ## <a name="syntax"></a>语法
 **EndsWith**( *Text*, *EndText* )
 
 * *Text* – 必需。  要测试的文本。
-* *EndText* – 必需。  在文本  结尾处要搜索的文本。  如果 EndText  是空字符串，则 EndsWith  返回 true  。
+* *EndText* – 必需。  在文本结尾处要搜索的文本。  如果 EndText 是空字符串，则 EndsWith 返回 true。
 
 **StartsWith**( *Text*, *StartText* )
 
 * *Text* – 必需。  要测试的文本。
-* *StartText* – 必需。  在文本  开头处要搜索的文本。  如果 *StartText* 是空字符串，则 **StartsWith** 将返回 *true*。
+* *StartText* – 必需。  在文本开头处要搜索的文本。  如果 *StartText* 是空字符串，则 **StartsWith** 将返回 *true*。
 
 ## <a name="examples"></a>示例
 
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
-| **EndsWith( "Hello World", "world" )** |测试“Hello World”  是否以“world”  结尾。  测试不区分大小写。 |**true** |
-| **EndsWith( "Good bye", "good" )** |测试“Good bye”  是否以“good”  结尾。  EndText  参数（“good”  ）出现在文本中，但不是结尾处。 |**false** |
-| **EndsWith( "Always say hello", "hello" )** |测试“Always say hello”  是否以“hello”  结尾。 |**true** |
-| **Endswith( "Bye bye", "" )** |测试“Bye bye”  是否以空文本字符串结尾（Len  返回 0）。  为便于在 Filter  表达式中使用它，在本示例中将 EndsWith  定义为返回 true  。 |**true** |
+| **EndsWith( "Hello World", "world" )** |测试“Hello World”是否以“world”结尾。  测试不区分大小写。 |**true** |
+| **EndsWith( "Good bye", "good" )** |测试“Good bye”是否以“good”结尾。  EndText 参数（“good”）出现在文本中，但不是结尾处。 |**false** |
+| **EndsWith( "Always say hello", "hello" )** |测试“Always say hello”是否以“hello”结尾。 |**true** |
+| **EndsWith ("再见", "")** |测试“Bye bye”是否以空文本字符串结尾（Len 返回 0）。  为便于在 Filter 表达式中使用它，在本示例中将 EndsWith 定义为返回 true。 |**true** |
 
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **StartsWith( "Hello World", "hello" )** |测试 **"Hello World"** 是否以 **"hello"** 开头。  测试不区分大小写。 |**true** |
 | **StartsWith( "Good bye", "hello" )** |测试 **"Good bye"** 是否以 **"hello"** 开头。 |**false** |
 | **StartsWith( "Always say hello", "hello" )** |测试 **"Always say hello"** 是否以 **"hello"** 开头。  尽管 **"hello"** 出现在文本中，但它不会显示在文本开头。 |**false** |
-| **StartsWith( "Bye bye", "" )** |测试“Bye bye”  是否以空文本字符串开头（Len  返回 0）。  为便于在 Filter  表达式中使用它，在本示例中将 StartsWith  定义为返回 true  。 |**true** |
+| **StartsWith( "Bye bye", "" )** |测试“Bye bye”是否以空文本字符串开头（Len 返回 0）。  为便于在 Filter 表达式中使用它，在本示例中将 StartsWith 定义为返回 true。 |**true** |
 
 ### <a name="search-user-experience"></a>搜索用户体验
 在许多应用中，你可在搜索框中键入一个或多个字符来对较大数据集中的记录列表进行筛选。 键入时，列表中仅显示与搜索条件匹配的记录。
@@ -68,7 +68,7 @@ EndsWith  函数测试某个文本字符串是否以其他文本字符串结尾�
 
 若要将此数据源创建为集合，请创建一个 **[按钮](../controls/control-button.md)** 控件，并将其 **OnSelect** 属性设置为以下公式：
 
-**ClearCollect (客户、 表 ({名称："Fred Garcia"，公司："Northwind Traders"}，{名称："Cole Miller"，公司："Contoso"}，{名称："Glenda johnson 的演示"，公司："Contoso"}，{名称："Mike Collins"，公司："Adventure Works"}，{名称："Colleen Jones"，公司："Adventure Works"}))**
+**ClearCollect (Customers, Table ({Name:"Fred Garcia", Company:"Northwind 商贸"}, {Name:"Cole 莎莎", Company:"Contoso"}, {Name:"Glenda Johnson", Company:"Contoso"}, {Name:"Mike Collins", Company:"艾德作品"}, {Name:"Colleen, 公司:"艾德作品"})**
 
 如此示例中所示，可在屏幕底部的[**库控件**](../controls/control-gallery.md)中显示记录列表。 在靠近屏幕顶部的位置，可添加名为 **SearchInput** 的[**文本输入**](../controls/control-text-input.md)控件，以便用户能够指定对哪些记录感兴趣。
 

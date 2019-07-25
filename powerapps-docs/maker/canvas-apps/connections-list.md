@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 29de71e413a83a1c0939796f7b65bd42d4aca3c4
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 05d02dca1afe6eba0864e7a1da6281998f62b398
+ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61556512"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68474006"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>PowerApps 画布应用连接器概述
 数据是大多数应用（包括在 PowerApps 中生成的应用）的关键所在。 数据存储在数据源中，应用是通过创建的连接来连接数据。 连接使用特定的连接器与数据源进行通信。 PowerApps 提供连接器，适用于许多常用服务和本地数据源，包括 SharePoint、SQL Server、Office 365、Salesforce 和 Twitter。 若要开始向画布应用添加数据，请参阅[在 PowerApps 中添加数据连接](add-data-connection.md)。
@@ -31,11 +31,11 @@ ms.locfileid: "61556512"
 
  ![纯数据源 Items 属性](./media/connections-list/ItemPropertyPlain.png)
 
-通过自定义用于显示数据的控件的 Items 属性，你可以指定应用检索的数据。 继续前面的示例，通过将该名称用作 Search 和 SortByColumn 函数的参数，你可以对 Lessons 表中的数据进行排序或筛选。 在此图中，Items 属性所设置的公式指定基于 **TextSearchBox1** 中的文本对数据进行排序和筛选。 
+你可以通过自定义显示数据的控件的**Items**属性来指定你的应用程序检索的数据。 继续前面的示例，通过将该名称用作 Search 和 SortByColumn 函数的参数，你可以对 Lessons 表中的数据进行排序或筛选。 在此图中，Items 属性所设置的公式指定基于 **TextSearchBox1** 中的文本对数据进行排序和筛选。 
 
  ![扩展数据源 Items 属性](./media/connections-list/ItemPropertyExpanded.png)
 
-有关如何自定义具有表公式的详细信息，请参阅以下主题：
+有关如何用表自定义公式的详细信息, 请参阅以下主题:
 
   [了解 PowerApps 中的数据源](working-with-data-sources.md)<br> 
   [通过 Excel 数据生成应用](get-started-create-from-data.md)<br> 
@@ -45,7 +45,7 @@ ms.locfileid: "61556512"
   > [!NOTE]
   > 若要连接到 Excel 工作簿数据，工作簿必须托管在 OneDrive 等云存储服务中。 有关详细信息，请参阅[从 PowerApps 连接到云存储](connections/cloud-storage-blob-connections.md)。
 
-## <a name="actions"></a>操作
+## <a name="actions"></a>执行
 
 如果你的连接器提供操作，则必须与前面一样仍选择数据源。 而不是选择表作为下一步，但是，通过编辑将显示数据的控件的 Items 属性，可以手动将控件连接到操作。 Items 属性所设置的公式指定用于检索数据的操作。 例如，如果连接到 Yammer，然后将 Items 属性设置为数据源的名称，则应用不会检索任何数据。 若要用数据填充控件，请指定 **GetMessagesInGroup(5033622).messages** 等操作。
 
@@ -53,12 +53,12 @@ ms.locfileid: "61556512"
 
 如果需要处理操作连接器的自定义数据更新，请生成包含 Patch 函数的公式。 在公式中，标识操作以及将绑定到操作的字段。  
 
-有关如何自定义的自定义更新公式的详细信息，请参阅以下主题：
+有关如何为自定义更新自定义公式的详细信息, 请参阅以下主题:
 
 [Patch](functions/function-patch.md)<br>[Collect](functions/function-clear-collect-clearcollect.md)<br>[Update](functions/function-update-updateif.md)
 
 > [!NOTE]
->  **PowerApps 不使用动态架构**。 短语动态架构引用相同的操作可能返回不同的列与另一个表的可能性。 可能导致不同的表中的列的情况包括操作输入的参数、 用户或角色正在执行操作，并在其中用户正在使用，其他项中的组。 例如，如果使用不同的输入运行 SQL Server 存储过程可能会返回不同的列。 对于动态架构后操作，连接器文档显示**此操作的输出是动态的。** 作为返回值。 与此相反，Microsoft Flow 适用于动态架构，并为你的方案可能会提供解决。
+>  **PowerApps 不能与动态架构**一起使用。 短语动态架构指的是相同操作可能返回具有不同列的其他表。 可能导致表中的列不同的情况包括操作输入参数、执行该操作的用户或角色、用户在其中工作的组以及其他人。 例如, 如果以不同的输入运行, SQL Server 存储过程可能会返回不同的列。 对于动态架构的操作, 连接器文档显示**此操作的输出是动态的。** 作为返回值。 与此相反, Microsoft Flow 适用于动态架构, 并可能为方案提供一种解决方法。
 
 ## <a name="popular-connectors"></a>常用连接器
 
