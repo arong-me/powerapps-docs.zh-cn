@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 80997689e9d4ebca8eb4809cc3e94dab549482b5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61567601"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67224733"
 ---
 通过启用文本分析功能，可在 [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 中启用依存功能，这些功能利用 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 认知服务文本分析 API 来提供高级见解。 这些依存功能分别是：  
   

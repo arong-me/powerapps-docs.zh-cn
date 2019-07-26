@@ -5,7 +5,7 @@ author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 07/09/2018
+ms.date: 11/16/2018
 ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ace1a40e8d7900d93e2ff902705f6f50e1d7a193
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 9f951167f56ffd3d211182a89a21d54916ee6b6e
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42851875"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "61531764"
 ---
 # <a name="run-a-canvas-app-on-a-mobile-device"></a>在移动设备上运行画布应用
 在创建应用或与某人共享应用时，可以在 Windows、iOS、Android 上或 Web 浏览器中运行此应用。 本主题介绍如何在移动设备上运行画布应用。 在移动设备上运行的应用可以利用移动设备功能，如定位服务和照相机。
@@ -41,13 +41,13 @@ ms.locfileid: "42851875"
 
 以下为可用筛选器：
 
-* **全部应用**：显示有权访问的所有应用，包括自己创建的应用和其他人与自己共享的应用。
+* **所有应用**:显示您有权访问的所有应用程序, 包括您创建的应用程序和其他与你共享的应用程序。
 
-* **我的应用**：显示至少运行了一次的应用。
+* **我的应用**:显示至少运行一次的应用。
 
-* **示例应用**：显示 Microsoft 提供的示例应用，这些示例应用通过虚构数据展示真实的应用场景，可帮助发掘潜在的设计创意。
+* **示例应用**:显示 Microsoft 提供的示例应用, 其中展示了真实的应用程序方案和虚构的数据, 以帮助您探索设计的可能性。
 
-* **收藏夹**：通过点击应用磁贴上的省略号 (...) 然后点击“收藏夹”，显示已标记的应用。 若要从此列表中删除应用，点击应用磁贴上的省略号 (...)，然后点击“取消收藏”。
+* **收藏夹**:通过点击 "应用" 磁贴上的省略号 (...), 然后点击 "**收藏夹**", 显示已标记的应用。 若要从此列表中删除应用，点击应用磁贴上的省略号 (...)，然后点击“取消收藏”。
 
     ![标记为收藏项](./media/run-app-client/favorite.png)
 
@@ -71,7 +71,7 @@ ms.locfileid: "42851875"
 ## <a name="give-consent"></a>同意
 如果应用需要连接数据源，或须具有相应权限才能使用设备功能（例如照相机或定位服务），必须先确认连接或予以同意，才能使用应用。 通常情况下，只会在首次连接时看到提示。
 
-![连接](./media/run-app-client/app-connection.png)
+![Connection](./media/run-app-client/app-connection.png)
 
 ## <a name="pin-an-app-to-the-home-screen"></a>将应用固定到主屏幕
 可将应用固定到设备的主屏幕来实现快速访问。 点击应用磁贴上的省略号 (...)，点击“固定到主页”，然后按照显示的说明操作。

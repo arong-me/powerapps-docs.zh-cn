@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: fe2aa8cc0002bdd2531b1e2014a2fb19cd122e4d
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61567280"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67225307"
 ---
 用户在移动设备上安装和使用 [!INCLUDE[pn_fieldservice_mobile_app_long](pn-fieldservice-mobile-app-long.md)] 移动应用，即表示用户同意将用户组织的分配的 ID 和分配的最终用户 ID 以及设备 ID 传输给 Microsoft 和 Resco.net, Inc.，用于提供服务和验证该软件已获得适当许可。  
 &nbsp;<br />

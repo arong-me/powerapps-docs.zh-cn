@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 747ea34b784b852261debe91f587d64ee3277804
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61567275"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67212513"
 ---
 通过安装并启用 [!INCLUDE[pn_gamification](pn-gamification.md)] 解决方案，启用用户的帐户标识符（例如姓、名和电子邮件地址）将存储在 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 中以便进行 [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] 服务授权（该服务托管于 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 中）。 这适用于由管理员在 [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] 服务中启用的所有用户。 [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] 解决方案会将由管理员配置的关键绩效指标 (KPI) 数据发送到 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 服务，这些数据存储在 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 结构化存储以及 blob 存储中。  每个用户的头像、自定义奖励和公司徽标都存储在 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 中，但这些信息不会返回到 [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)]。  
   

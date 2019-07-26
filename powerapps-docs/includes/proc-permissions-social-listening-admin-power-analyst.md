@@ -1,1 +1,9 @@
-需要具有 Social Engagement Administrator 或 Power Analyst 身份才能执行此任务。
+---
+ms.openlocfilehash: 59a8b340575de82542c5d5d00e8512f8748c1f47
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67229334"
+---
+若要执行此任务，需要成为 Social Engagement 管理员或功能分析员。
