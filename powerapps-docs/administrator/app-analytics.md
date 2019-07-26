@@ -15,11 +15,11 @@ search.app:
 - PowerApps
 - Powerplatform
 ms.openlocfilehash: 0f376d8e6b86a7abf65e744275fc4e90beabde43
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850021"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "61526421"
 ---
 # <a name="view-analytics-reports-for-your-app"></a>查看应用的分析报告
 你是否构建了一个应用并将其共享到了组织？  你是否想要知道每天有多少个同事在使用它？
@@ -53,7 +53,7 @@ ms.locfileid: "42850021"
     ![下载图表数据](./media/app-analytics/analytics-download.png)
 
 ## <a name="are-there-going-to-be-any-other-reports"></a>以后是否会提供其他报告？
-可以！ 实际上，我们正在计划开发关于应用性能和错误报告方面的类似报告。
+是的！ 实际上，我们正在计划开发关于应用性能和错误报告方面的类似报告。
 
 如果你想要提供具体反馈、提出具体问题或请求，我们期待能够在 [PowerApps Ideas 论坛](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas)上看到这些内容。
 

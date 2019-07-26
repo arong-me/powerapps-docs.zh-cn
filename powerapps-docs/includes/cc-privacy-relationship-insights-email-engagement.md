@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 252f09737dbf55309a64ef5d02d479fde0e61c0e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61567596"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67224863"
 ---
 “电子邮件参与度”是一项嵌入式智能功能。启用该项功能后，如果从 [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 发送了标有“跟踪”设置的电子邮件，则系统将收集收件人与该电子邮件交互的相关信息，并将该信息存储在 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 中，用于计算收件人活动 KPI 以及与“所跟踪”的电子邮件的交互情况。  
   

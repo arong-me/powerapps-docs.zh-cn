@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 80f59be59cfcbd12c6a75748f4110a87dfb385e9
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61567594"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67212103"
 ---
 启用资源计划优化，包括计划配置信息和工作订单详细信息（与位置相关的地址信息，如帐户地址和资源地址）在内的信息将从 [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 发送到 [!INCLUDE[pn_bing_maps](pn-bing-maps.md)] 以允许执行以下操作：  
   
