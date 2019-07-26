@@ -1,5 +1,13 @@
-如果您使用 Microsoft Dynamics 365（联机），则在将数据导出到一个*静态*工作表时，将在计算机上创建并存储正在导出的数据的本地副本。 通过使用安全连接可将数据从 Dynamics 365（联机）传输到计算机上，而且此本地副本和 Dynamics 365（联机）之间不保持连接。  
+---
+ms.openlocfilehash: fbe01554dfbbf77ae7e284b1eeb49ec7c4f6c688
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67212715"
+---
+如果使用 Microsoft Dynamics 365（联机），那么将数据导出至静态工作表时将创建该导出数据的本地副本，并在计算机中存储该副本。 数据通过安全连接从 Dynamics 365（联机）传输到计算机，且不会在本地副本和 Dynamics 365（联机）之间保持连接。  
   
- 当导出到*动态*工作表或数据透视表时，将保持 Excel 工作表和 Dynamics 365（联机）之间的链接。 每次刷新动态工作表或数据透视表时，都将使用您的凭据向 Dynamics 365（联机）验证您的身份。 您将能查看您有权查看的数据。  
+ 若导出至动态工作表或数据透视表，则会在 Excel 工作表和 Dynamics 365（联机）之间保持链接。 每次动态工作表或数据透视表刷新后，都需使用自己的凭据向 Dynamics 365（联机）进行身份验证。 可以查看自己有权查看的数据。  
   
- 管理员可以通过使用安全角色来确定是否允许组织用户将数据导出到 Excel。
+ 管理员使用安全角色确定是否允许组织的用户将数据导出至 Excel。

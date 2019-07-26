@@ -17,17 +17,17 @@ search.app:
 - D365CE
 - D365CE
 ms.openlocfilehash: 37e9602d48bbfbb802afefa0f6d47fad241dc6f5
-ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58491518"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "63321644"
 ---
 # <a name="import-data"></a>导入数据
 
 无论你的数据是存储在电子表格、手机还是电子邮件程序中，都可以使用下面的方法将数据导入应用。 例如，你可能希望将你的客户联系人列表从 Excel 电子表格导入应用，以便在一个位置即可跟踪所有客户信息。
   
-## <a name="step-1-get-your-import-file-ready"></a>步骤 1:准备好导入文件  
+## <a name="step-1-get-your-import-file-ready"></a>步骤 1：准备好导入文件  
 首先，将数据导出到 Excel 文件。 支持以下文件格式：
  - Excel 工作簿 (.xlsx)
  - 逗号分隔值 (.csv)
@@ -66,7 +66,7 @@ ms.locfileid: "58491518"
     |公司所在国家/地区|  
     |电子邮件地址|  
   
-3.  保存文件。  
+3.  保存该文件。  
   
 ### <a name="export-data-from-your-phone"></a>从手机中导出数据  
 

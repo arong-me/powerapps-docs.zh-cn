@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: e9b0446c2fb09cad33f5a3ae4bb69103f7d07d70
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61567797"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67212651"
 ---
 通过使用数据导出服务，当从 [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)] 内激活数据导出配置文件时，添加到此配置文件的实体数据将发送到 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]。 初始同步包括所有与添加到导出配置文件的实体关联的数据，但此后同步仅包括会不断发送到数据导出服务的新更改。 发送到数据导出服务的数据将临时存储在 [!INCLUDE[pn_azure_service_bus](pn_azure_service_bus.md)] 和 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 存储中，并在 [!INCLUDE[pn_azure_service_fabric](pn_azure_service_fabric.md)] 中被处理，最后会同步（插入、更新或删除）到 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 订阅中指定的目标数据库。 数据同步后，将从 [!INCLUDE[pn_azure_service_bus](pn_azure_service_bus.md)] 和 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 存储中删除此数据。 如果在数据同步期间出现故障，与实体类型、记录 ID 和同步时间戳相对应程度最低的数据将存储在 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 存储中，以允许下载未更新的记录列表。  
   

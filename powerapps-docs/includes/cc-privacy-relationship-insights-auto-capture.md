@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 167d4e0362f7d3f1716bee5b7f2f0aa4068bfaee
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61567602"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67212178"
 ---
 通过启用自动捕获功能，[!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 会检索 [!INCLUDE[pn_Exchange](pn-exchange.md)] 数据，但不会存储数据，以向登录用户显示电子邮件活动。 用户可以明确“跟踪”这些电子邮件，以将 [!INCLUDE[pn_Exchange](pn-exchange.md)] 电子邮件复制到 [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 中作为电子邮件活动，以便按照 [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 权限的配置与相应用户进行共享。  
   

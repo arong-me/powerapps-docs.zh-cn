@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 07/09/2018
+ms.date: 11/16/2018
 ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 316df7e4876a74ee779e85e54291579dcc9f7cb1
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: e48b568bae581f080949d5b9ca913f7c01223ee4
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42830704"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "61546403"
 ---
 # <a name="run-a-model-driven-app-on-a-mobile-device"></a>在移动设备上运行模型驱动应用
 
@@ -45,7 +45,6 @@ ms.locfileid: "42830704"
 
 
 ## <a name="next-steps"></a>后续步骤
-本主题介绍如何在移动设备上运行模型驱动应用。 还可以在移动设备上运行画布应用。
-
-> [!div class="nextstepaction"]
-> [在移动设备上运行画布应用](run-app-client.md)
+本主题介绍如何在移动设备上运行模型驱动应用。 有关以下内容的信息:
+- 使用模型驱动的应用, 请参阅[使用模型驱动的应用](use-model-driven-apps.md)
+- 在移动设备上运行画布应用, 请参阅[在移动设备上运行画布应用](run-app-client.md)

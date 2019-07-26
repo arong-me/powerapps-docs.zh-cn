@@ -15,11 +15,11 @@ search.app:
 - PowerApps
 - Powerplatform
 ms.openlocfilehash: 1edaacc3a013646d8da0a286e28723926817ee71
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42843357"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "61528610"
 ---
 # <a name="export-and-import-resources"></a>导出和导入资源
 如果创建了多个环境来支持数据库和应用的开发，则必须将所做更改从一个环境移至另一个环境。 可使用“导出资源”和“导入资源”在环境之间移动资源。

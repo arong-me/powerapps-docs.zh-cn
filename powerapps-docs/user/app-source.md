@@ -17,11 +17,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: a5b55a2948ad176d9c30a11d8c6b6adf209e07f3
-ms.sourcegitcommit: a9f6bd07f414f43c50e0c05e5c7a4f1500c2d2fb
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2018
-ms.locfileid: "51941745"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "61544895"
 ---
 # <a name="discover-apps-via-appsource"></a>通过 AppSource 发现应用
 使用 PowerApps 生成和发布的应用是在 Dynamics 365 中在线发现并使用。 它显示你的所有应用，不管是你专门选择使用的（即通过从共享电子邮件启动或从 AppSource 打开）应用还是管理员为你提供的应用都会显示。 其中包括来自 PowerApps 的所有应用，以及 Microsoft 提供的 Dynamics 365 应用程序。 可以搜索应用、按环境进行筛选，并将最常用的应用固定在页面顶部。

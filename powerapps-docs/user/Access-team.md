@@ -16,11 +16,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 7dd418db04f72310210925345611bc1a0b2a6f17
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56444400"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "63318517"
 ---
 # <a name="share-records-using-access-team"></a>使用访问团队共享记录
 
