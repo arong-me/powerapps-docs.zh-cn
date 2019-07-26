@@ -1001,6 +1001,16 @@
           href: ./model-driven-apps/distribute-model-driven-app.md
         - name: 创建引导式帮助
           href: ./model-driven-apps/create-guided-help-learning-path.md
+    - name: 转换 Web 客户端应用程序
+      items:
+        - name: 转换快速入门
+          href: ./model-driven-apps/transition-web-app.md
+        - name: 使用现有环境转换快速入门
+          href: ./model-driven-apps/transition-web-app-existing.md
+        - name: 统一接口 Playbook
+          href: ./model-driven-apps/unified-interface-playbook.md
+        - name: 接近统一接口转换
+          href: ./model-driven-apps/approaching-unified-interface.md
     - name: PowerApps 应用设计器中的辅助功能
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: 自定义 Dynamics 365 App for Outlook
