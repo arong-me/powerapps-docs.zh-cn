@@ -5,7 +5,7 @@ author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 07/09/2018
+ms.date: 11/16/2018
 ms.author: matp
 manager: kvivek
 ms.custom: ''
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f72d4b5192bd30da676e65e232bc2a3090cb77bb
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 31bef01ef46fd0fe2ed7bae30e63d53c169812db
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42832416"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "63321569"
 ---
 # <a name="run-an-app-in-a-web-browser"></a>在 Web 浏览器中运行应用
 在创建应用或与某人共享应用时，可以在 Windows、iOS、Android 上或 Web 浏览器中运行此应用。 本主题介绍如何在 Web 浏览器中从 [Dynamics 365 主页](https://home.dynamics.com)运行画布或模型驱动应用。
@@ -30,8 +30,8 @@ ms.locfileid: "42832416"
 - PowerApps 许可证。 它随附在 PowerApps 计划（例如 [PowerApps 计划 2 试用版](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)）或包含 PowerApps 的任一 [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) 或 [Dynamics 365](https://dynamics.microsoft.com/pricing/) 计划中。 
 - 对你生成的或其他人生成并与你共享的应用的访问权限。
 - 对受支持的 Web 浏览器和操作系统的访问权限。
-   - 对于画布应用，请参阅：[系统要求、限制和配置值](../maker/canvas-apps/limits-and-config.md)
-   - 对于模型驱动应用，请参阅：[支持的 Web 浏览器和移动设备](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)
+   - 对于画布应用, 请参阅:[系统要求、限制和配置值](../maker/canvas-apps/limits-and-config.md)
+   - 对于模型驱动的应用, 请参阅:[支持的 web 浏览器和移动设备](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)
 
 
 ## <a name="sign-in-to-dynamics-365"></a>登录到 Dynamics 365
@@ -61,13 +61,14 @@ ms.locfileid: "42832416"
 ## <a name="connect-to-data"></a>连接到数据
 如果应用需要连接数据源，或须具有相应权限才能使用设备功能（例如照相机或定位服务），必须先确认连接或予以同意，才能使用应用。 通常情况下，只会在首次连接时看到提示。
 
-![连接](./media/run-app-browser/app-connection.png)
+![Connection](./media/run-app-browser/app-connection.png)
 
 ## <a name="close-an-app"></a>关闭应用
 若要关闭应用，请退出 Dynamics 365 主页，或打开其他应用。
 
 ## <a name="next-steps"></a>后续步骤
-本主题介绍如何在 Web 浏览器中运行画布或模型驱动应用。 若要了解如何在移动设备上运行画布应用，请继续查看下一个主题。
+本主题介绍如何在 Web 浏览器中运行画布或模型驱动应用。 了解如何执行以下操作:
+- 在移动设备上运行画布应用, 请参阅[在移动设备上运行画布应用](run-app-client.md)
+- 在移动设备上运行模型驱动的应用, 请参阅[在移动设备上运行模型驱动的应用](run-app-client-model-driven.md)
+- 使用模型驱动的应用, 请参阅[使用模型驱动的应用](use-model-driven-apps.md)
 
-> [!div class="nextstepaction"]
-> [在移动设备上运行画布应用](run-app-client.md)
