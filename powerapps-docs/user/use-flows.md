@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3041b6cb230aec72a5c3609ef1ea63443bd4a2cc
-ms.sourcegitcommit: a99f9458a50f6fa64706200bec97273aac20036d
+ms.openlocfilehash: 0ecf255ab6e710bf65bd60e39b6dc9b8023876f6
+ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66034820"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67457188"
 ---
 # <a name="use-microsoft-flow-to-automate-processes"></a>使用 Microsoft Flow 自动执行流程
 
@@ -34,7 +34,7 @@ ms.locfileid: "66034820"
 > [!NOTE]
 > 若要从应用中管理和运行 Microsoft Flow，必须在“系统设置”中为组织启用 Microsoft Flow。 详细信息：[组织中的流](https://docs.microsoft.com/flow/organization-q-and-a) 
   
-1. 在命令栏中，选择**流**。  
+1. 在命令栏上, 选择 "**流**"。  
   
    > [!div class="mx-imgBorder"]
    > ![Microsoft Flow 菜单](media/flow.png "Microsoft Flow 菜单") 
@@ -47,7 +47,7 @@ ms.locfileid: "66034820"
   
    -   选择“登录到流”可以连接到 Microsoft Flow，并显示可运行的流。 只有在当前未登录到 Microsoft Flow 的情况下才会显示此选项。   
 
-    若要了解如何创建流，请参阅[开始使用 Microsoft Flow ](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow)  
+    若要了解如何创建流，请参阅[开始使用 Microsoft Flow ](https://docs.microsoft.com/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow)  
     
  
     
