@@ -822,6 +822,8 @@
                   href: ./model-driven-apps/create-site-map-app.md
                 - name: 添加或编辑应用组件
                   href: ./model-driven-apps/add-edit-app-components.md
+                - name: 添加团队条目，作为一个查找选项
+                  href: ./model-driven-apps/team-entity-lookup.md
             - name: 使用窗体
               href: ./model-driven-apps/create-design-forms.md
               items:
