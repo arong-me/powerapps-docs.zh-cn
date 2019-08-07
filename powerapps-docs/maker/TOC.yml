@@ -51,6 +51,8 @@
               href: ../user/assign-or-share-records.md
             - name: 使用访问团队共享记录
               href: ../user/Access-team.md
+            - name: 添加连接角色
+              href: ../user/add-connection-role.md
             - name: 停用帐户或联系人
               href: ../user/deactivate-activate-account-contact.md
             - name: 使用仪表板和图表跟踪进度
@@ -1242,6 +1244,8 @@
           href: ./common-data-service/data-platform-complex-entities.md
         - name: 要求 Dynamics 365 许可证的受限实体
           href: ./common-data-service/data-platform-restricted-entities.md
+    - name: SharePoint、OneNote 和 OneDrive 集成
+      href: ./common-data-service/sharepoint-onedrive-onenote-intro.md
     - name: 创建 Power BI 报表
       href: ./common-data-service/data-platform-powerbi-connector.md
     - name: 翻译自定义的实体和字段文本
