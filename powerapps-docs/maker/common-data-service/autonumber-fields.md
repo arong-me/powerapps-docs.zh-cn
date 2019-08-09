@@ -49,7 +49,7 @@ search.app:
 ### <a name="custom"></a>自定义
 
 对于具有特定使用案例的更高级的制造商，我们提供了可完全自定义所需的自动编号字段格式的选项。 格式可能包括字符串常量、自动递增数字、确定格式的日期格或随机的字母数字序列。
-有关如何定义自定义格式的详细信息，请参阅 [AutoNumberFormat 选项](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/create-auto-number-attributes#autonumberformat-options)。
+有关如何定义自定义格式的详细信息，请参阅 [AutoNumberFormat 选项](https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-auto-number-attributes#autonumberformat-options)。
 
 ## <a name="seed-values"></a>种子值
 
@@ -57,9 +57,7 @@ search.app:
 
 
 > [!IMPORTANT]
-> 目前仅在创建新的自动编号字段时支持指定自定义种子。 
->
-> 设置种子仅更改当前环境中指定属性的当前数字值。 不表示属性的常见起始值。 在导入不同环境时，种子值不包含在解决方案中。 
+> 设置种子仅更改当前环境中指定属性的当前数字值。 在导入不同环境时，种子值不包含在解决方案中。 
 
 ## <a name="create-an-autonumber-field"></a>创建自动编号字段
   

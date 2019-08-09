@@ -2,8 +2,8 @@
 title: 在 PowerApps 中指定模型驱动统一接口应用程序的属性 | MicrosoftDocs
 description: 了解如何配置您的应用的网格控件
 keywords: ''
-ms.date: 06/06/2018
-ms.service: crm-online
+ms.date: 06/03/2019
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -74,7 +74,8 @@ search.app:
 
     ![编辑重排行为](media/UnifiedInterface_ReadOnlyGrid_EditReflow.png "编辑重排行为")
 
-    b. 从**绑定到静态选项**下拉列表选择网格流类型。
+    b. 从**绑定到静态选项**下拉列表选择网格流类型。 
+
     |流类型|说明|
     |--------------|--------------------|
     |**回流**|允许网格在显示空间不足时视情况显示为列表模式。|

@@ -2,7 +2,7 @@
 title: 在 PowerApps 中控制对模型驱动应用程序窗体的访问 | MicrosoftDocs
 description: 了解如何控制对主窗体的访问
 ms.custom: ''
-ms.date: 03/07/2019
+ms.date: 06/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -71,11 +71,15 @@ search.app:
   
 <a name="BKMK_UseFormScripting"></a>   
 ## <a name="use-form-scripting"></a>使用窗体脚本  
+客户端 API 窗体上下文 (formContext) 提供对窗体或窗体上的项目的引用，如快速视图控件或可编辑网格中的行，当前代码根据此引用执行。 详细信息：[客户端 API 窗体上下文](/dynamics365/customer-engagement/developer/clientapi/clientapi-form-context)
 
- 最后，在 Web 应用程序中，开发人员可以（但不建议）在窗体 Onload 事件中使用脚本，以使用 [Xrm.Page.ui.fo rmSelector.items 集合](http://go.microsoft.com/fwlink/p/?LinkID=513300)来查询可用窗体，以及使用导航方法将用户引导到特定窗体。 请记住，[导航方法](http://go.microsoft.com/fwlink/p/?LinkID=513301)将导致窗体重新加载（并且会再次发生 Onload 事件）。 您在事件处理程序中的逻辑应在您使用导航方法之前始终检查某种条件，以避免形成无限循环或不必要地将用户选项限制为在窗体之间导航。  
+> [!IMPORTANT]
+> 在 Dynamics 365 for Customer Engagement 应用版本 9.0 中，Xrm.Page 对象[已弃用](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated)，您应该使用在执行上下文对象中传递的 [getFormContext](/dynamics365/customer-engagement/developer/clientapi/reference/executioncontext/getformcontext) 方法返回对相应的窗体或窗体上的项目的引用。
+<!-- 
+ Finally, in the web application it is possible, but not recommended, for a developer to use scripts in the form Onload event to use the [Xrm.Page.ui.formSelector.items collection](http://go.microsoft.com/fwlink/p/?LinkID=513300) to query available forms and use the navigate method to direct users to a specific form. Remember that the [navigate method](http://go.microsoft.com/fwlink/p/?LinkID=513301) will cause the form to load again (and the Onload event to occur again). Your logic in the event handler should always check some condition before you use the navigate method to avoid an endless loop or unnecessarily restrict users options to navigate between forms.  
   
- 此方法不适用于 Dynamics 365 for tablets，因为多个窗体不可用于选择。  
+ This approach will not work for Dynamics 365 for tablets because multiple forms are not available for selection.  -->
 
-### <a name="next-steps"></a>后续步骤  
+### <a name="see-also"></a>另请参阅  
 
 [将安全角色分派给窗体](https://docs.microsoft.com/dynamics365/customer-engagement/admin/assign-security-roles-form)

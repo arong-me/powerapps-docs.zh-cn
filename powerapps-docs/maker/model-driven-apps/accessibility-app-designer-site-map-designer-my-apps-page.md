@@ -1,11 +1,11 @@
 ---
 title: 了解 PowerApps 的应用程序设计器、站点地图设计器和“我的应用程序”页面中的辅助功能 | MicrosoftDocs
-description: 了解 PowerApps 的应用程序设计器、站点地图设计器和“我的应用程序”页面中的辅助功能
+description: 了解 PowerApps 中具有应用程序设计器、站点地图设计器和“我的应用程序”页面的模型驱动应用程序中的辅助功能
 keywords: 应用程序设计器；站点地图设计器；我的应用程序；Dynamics 365
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.date: 06/18/2018
+ms.date: 05/20/2019
 ms.topic: article
 applies_to:
   - Dynamics 365 (online)
@@ -22,7 +22,8 @@ search.app:
 # <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>PowerApps 应用程序设计器、站点地图和“我的应用”页面中的辅助功能
 
 Microsoft 致力于使每个人都能轻松使用其产品和服务。 详细信息：[Microsoft 的辅助功能](http://www.microsoft.com/enable/default.aspx)  
-  
+ 
+本主题介绍模型驱动应用提供的辅助功能。  
   
 ## <a name="keyboard-shortcuts"></a>键盘快捷方式  
 PowerApps 提供键盘快捷方式以解决灵活性有限或行动不便人士所面临的问题。  
@@ -105,4 +106,4 @@ PowerApps 提供键盘快捷方式以解决灵活性有限或行动不便人士�
 
 ## <a name="see-also"></a>另请参阅
 
-[在 Dynamics 365 Customer Engagement 应用程序中使用键盘快捷方式](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/keyboard-shortcuts)
+[在 Dynamics 365 Customer Engagement 应用程序中使用键盘快捷方式](https://docs.microsoft.com/dynamics365/customer-engagement/basics/keyboard-shortcuts)

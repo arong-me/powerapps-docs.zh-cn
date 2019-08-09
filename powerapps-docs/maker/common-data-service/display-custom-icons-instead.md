@@ -4,7 +4,7 @@ description: 了解如何在视图中显示自定义图标图形
 ms.custom: ''
 ms.date: 02/14/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -104,7 +104,7 @@ search.app:
 > [!IMPORTANT]
 > 此示例需要商机实体，其在 Dynamics 365 for Customer Engagement 应用中提供。
   
-```  
+```javascript
 function displayIconTooltip(rowData, userLCID) {      
     var str = JSON.parse(rowData);  
     var coldata = str.opportunityratingcode_Value;  

@@ -26,7 +26,7 @@ search.app:
 ---
 # <a name="create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>创建业务规则和建议以在模型驱动应用程序窗体中应用逻辑
 
-本主题向您介绍无需编写 JavaScript 代码或创建插件，如何创建业务规则和建议以在模型驱动的应用程序中应用窗体逻辑。业务规则可以提供一个简单的界面来实施和维护快速更改和常用的规则。 它们可以应用于“主”和“快速创建”窗体，可以在模型驱动的应用程序、Dynamics 365 customer engagement Web 应用程序、Dynamics 365 for tablets 和 Dynamics 365 for Outlook（联机或脱机模式）中工作。
+本主题向您介绍无需编写 JavaScript 代码或创建插件，如何创建业务规则和建议以在模型驱动的应用程序中应用窗体逻辑。业务规则可以提供一个简单的界面来实施和维护快速更改和常用的规则。 它们可以应用于“主”窗体和“快速创建”窗体，并可以在模型驱动应用、Dynamics 365 customer engagement Web 应用、Dynamics 365 for tablets 和 Dynamics 365 for Outlook（在线或脱机模式）中工作。
 
 > [!NOTE]
 > 若要为实体定义业务规则，以使其适用于所有窗体和服务器，请参阅[为实体创建业务规则](/powerapps/maker/common-data-service/data-platform-create-business-rule)。
@@ -150,7 +150,14 @@ search.app:
      > [!div class="mx-imgBorder"] 
      > ![](media/account-name-on-form.png "窗体中的客户名称字段")
 
-## <a name="next-steps"></a>后续步骤  
+## <a name="frequently-asked-questions-faq"></a>常见问题 (FAQ)
+*业务规则能否解锁只读窗体上的字段？*
+- 可以，业务规则可以解锁只读窗体上的字段，并可以编辑只读窗体上的操作。
+
+*如何排查不工作的业务规则的问题？* 
+- 请参阅本主题中的[您的业务规则是否不响应窗体？](#is-your-business-rule-not-firing-for-a-form)。
+
+## <a name="see-also"></a>另请参阅  
  [通过流程创建自定义业务逻辑](guide-staff-through-common-tasks-processes.md)   
  [创建业务流程](/flow/create-business-process-flow)   
 

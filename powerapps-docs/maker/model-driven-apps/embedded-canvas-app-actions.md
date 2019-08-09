@@ -1,7 +1,7 @@
 ---
-title: 从嵌入的区域应用内在主机窗体上执行操作 | MicrosoftDocs
+title: 从嵌入的区域应用内在主机模型驱动窗体上执行操作 | MicrosoftDocs
 ms.custom: ''
-ms.date: 03/29/2019
+ms.date: 06/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -23,17 +23,13 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="perform-predefined-actions-on-the-host-form-from-within-an-embedded-canvas-app"></a>从嵌入的区域应用内在主机窗体上执行预定义操作
-嵌入的区域应用提供在主机窗体上执行预定义操作的功能。 这些操作让开发者可以导航、刷新、保存主机窗体。 使用这些操作，嵌入的区域应用可以充当更重要的窗体和模型驱动应用的组成部分。  
+# <a name="perform-predefined-actions-on-the-host-model-driven-form-from-within-an-embedded-canvas-app"></a>从嵌入的区域应用内在主机模型驱动窗体上执行预定义的操作
+嵌入的区域应用提供在主机模型驱动窗体上执行预定义操作的功能。 这些操作让开发者可以导航、刷新、保存主机模型驱动窗体。 使用这些操作，嵌入的区域应用可以充当更重要的模型驱动窗体和模型驱动应用的组成部分。  
 
-> [!NOTE]
-> 此功能现在还在预览中。 <br />
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)] 
-
-**ModelDrivenFormIntegration** 对象现在包括以下新方法以允许开发者在主机窗体上执行操作。  
+**ModelDrivenFormIntegration** 对象现在包括以下新方法以允许开发者在主机模型驱动窗体上执行操作。  
   
 ### <a name="navigatetomainformentityname-mainformname-recordid"></a>NavigateToMainForm(entityName, mainFormName, recordId)
-在主机窗体上导航到主窗体并显示指定记录。  
+在主机模型驱动窗体上导航到主窗体并显示指定记录。  
 * **entityName** - 指定主窗体的父实体的必需字符串参数。  
 * **formName** - 指定要导航到的主窗体名称的必需字符串参数。  
 * **recordId** - 必需的字符串参数，指定要在主窗体中显示的记录的 ID。  
@@ -48,7 +44,7 @@ search.app:
   
   
 ### <a name="navigatetoviewentityname-viewname"></a>NavigateToView(entityName, viewName)
-在主机窗体中导航到视图。  
+在主机模型驱动窗体中导航到视图。  
 * **entityName** - 指定视图的父实体的必需字符串参数。  
 * **viewName** - 指定要导航到的主窗体名称的必需字符串参数。  
  
@@ -72,8 +68,8 @@ search.app:
   
   
 ### <a name="refreshformshowprompt"></a>RefreshForm(showPrompt)  
-刷新主机窗体上的数据。  
-* **showPrompt** - 必需的布尔参数，指示是否应在保存主机窗体上的任何未保存数据前向用户显示确认提示。 值应为“true”或“false”。
+刷新主机模型驱动窗体上的数据。  
+* **showPrompt** - 必需的布尔参数，指示是否应在保存主机模型驱动窗体上的任何未保存数据前向用户显示确认提示。 值应为“true”或“false”。
  
 调用 RefreshForm 方法可能显示以下错误消息。
   
@@ -83,7 +79,7 @@ search.app:
   
   
 ### <a name="saveform"></a>SaveForm()  
-保存主机窗体上的数据。  
+保存主机模型驱动窗体上的数据。  
 
 
 > [!NOTE]
@@ -91,7 +87,10 @@ search.app:
 
 ## <a name="see-also"></a>另请参阅
 [在模型驱动的窗体上嵌入区域应用](embed-canvas-app-in-form.md) <br />
-[将当前记录作为数据上下文传递到嵌入式区域应用](pass-current-embedded-canvas-app.md) <br />
-[将一列相关记录作为数据上下文传递到嵌入式区域应用](pass-related-embedded-canvas-app.md) <br />
+[在模型驱动窗体上添加嵌入式区域应用](embedded-canvas-app-add-classic-designer.md) <br />
+[编辑在模型驱动窗体上嵌入的区域应用](embedded-canvas-app-edit-classic-designer.md) <br />
+[自定义在模型驱动窗体上嵌入的区域应用的屏幕尺寸和方向](embedded-canvas-app-customize-screen.md) <br />
+[ModelDrivenFormIntegration 控件的属性和操作](embedded-canvas-app-properties-actions.md) <br />
 [共享嵌入式区域应用](share-embedded-canvas-app.md) <br />
-[嵌入式区域应用使用指南](embedded-canvas-app-guidelines.md)
+[嵌入式区域应用使用指南](embedded-canvas-app-guidelines.md) <br />
+[迁移使用最新的公共预览版本创建的模型驱动窗体上的嵌入式区域应用](embedded-canvas-app-migrate-from-preview.md) <br />

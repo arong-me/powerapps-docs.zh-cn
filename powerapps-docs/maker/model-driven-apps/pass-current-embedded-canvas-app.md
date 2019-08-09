@@ -1,7 +1,7 @@
 ---
 title: 使用嵌入式区域应用作为数据上下文传递当前记录 | MicrosoftDocs
 ms.custom: ''
-ms.date: 12/17/2018
+ms.date: 06/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -24,11 +24,11 @@ search.app:
 ---
 
 # <a name="pass-the-current-record-as-data-context-to-an-embedded-canvas-app"></a>将当前记录作为数据上下文传递到嵌入式区域应用
-本主题介绍如何添加嵌入式区域应用并将当前（主窗体）记录作为数据上下文传递到该嵌入式区域应用。
+> [!IMPORTANT]
+> 在模型驱动窗体中嵌入的区域应用现在已退出预览，已公开发布。 下面列出的步骤已过时，仅适用于在模型驱动窗体上嵌入的区域应用的公共预览版本。
+> 有关最新版本的步骤的更新列表，请参阅：[在模型驱动窗体上添加嵌入式区域应用](embedded-canvas-app-add-classic-designer.md)
 
-> [!NOTE]
-> 此功能现在还在预览中。 <br />
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)] 
+本主题介绍如何添加嵌入式区域应用并将当前（主窗体）记录作为数据上下文传递到该嵌入式区域应用。
 
 假设您要在帐户主窗体上添加嵌入式区域应用并将当前帐户记录传递到该嵌入式区域应用。 为此，请按照以下步骤操作： 
 
@@ -80,7 +80,11 @@ search.app:
 
 ## <a name="see-also"></a>另请参阅
 [在模型驱动的窗体上嵌入区域应用](embed-canvas-app-in-form.md) <br />
-[将一列相关记录作为数据上下文传递到嵌入式区域应用](pass-related-embedded-canvas-app.md) <br />
+[在模型驱动窗体上添加嵌入式区域应用](embedded-canvas-app-add-classic-designer.md) <br />
+[编辑在模型驱动窗体上嵌入的区域应用](embedded-canvas-app-edit-classic-designer.md) <br />
+[自定义在模型驱动窗体上嵌入的区域应用的屏幕尺寸和方向](embedded-canvas-app-customize-screen.md) <br />
 [从嵌入的区域应用内在主机窗体上执行预定义操作](embedded-canvas-app-actions.md) <br />
+[ModelDrivenFormIntegration 控件的属性和操作](embedded-canvas-app-properties-actions.md) <br />
 [共享嵌入式区域应用](share-embedded-canvas-app.md) <br />
-[嵌入式区域应用使用指南](embedded-canvas-app-guidelines.md)
+[嵌入式区域应用使用指南](embedded-canvas-app-guidelines.md) <br />
+[迁移使用最新的公共预览版本创建的模型驱动窗体上的嵌入式区域应用](embedded-canvas-app-migrate-from-preview.md) <br />

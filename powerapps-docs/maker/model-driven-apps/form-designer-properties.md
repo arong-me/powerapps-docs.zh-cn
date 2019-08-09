@@ -82,4 +82,4 @@ search.app:
 
 ## <a name="see-also"></a>另请参阅
 [模型驱动的窗体设计器概述](form-designer-overview.md) <br />
-[使用窗体设计器创建和编辑窗体](create-and-edit-forms.md)
+[使用窗体设计器创建或编辑窗体](create-and-edit-forms.md)

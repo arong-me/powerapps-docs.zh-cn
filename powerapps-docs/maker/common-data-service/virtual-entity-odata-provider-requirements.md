@@ -52,9 +52,9 @@ search.app:
 
 ### <a name="odata-edm-data-types-that-are-not-supported-for-mapping-with-virtual-entities"></a>不支持与虚拟实体映射的 OData EDM 数据类型 
 
-- `Edm.Binary `
+- `Edm.Binary`
 - `Edm.Time` 
-- `Edm.Float `
+- `Edm.Float`
 - `Edm.Single` 
 - `Edm.Int16` 
 - `Edm.Byte` 
@@ -69,7 +69,7 @@ search.app:
 1. 在操作工具栏上单击**新建**。  
 1. 在**选择数据提供程序**对话框中，从以下数据源中进行选择，然后单击**确定**。  
   
-    - **OData v4 数据提供程序**。 Common Data Service 包含 Odata v4 数据提供程序，可用于连接到支持 OData v4 开放标准的数据源。  
+    - **OData v4 数据提供程序**。 Common Data Service 中包含 Odata v4 数据提供程序，可用于连接到支持 OData v4 开放标准的数据源。  
     - *自定义数据提供程序*。 如果已导入数据提供程序插件，将在此处显示该数据提供程序。 详细信息：[开发人员文档：虚拟实体入门](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve)  
     
 1. 在**新数据源**属性页面中，填写以下字段，然后保存记录。  

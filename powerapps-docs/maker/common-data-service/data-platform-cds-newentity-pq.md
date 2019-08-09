@@ -87,3 +87,6 @@ search.app:
 我们对此功感到很兴奋，热切盼望能听到您的反馈。 请[向我们发送有关此功能的建议和反馈](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)！
 
 如果出现[有关权限的错误消息](data-platform-cds-newentity-troubleshooting-mashup.md)，请联系您的管理员。
+
+> [!WARNING]
+> 使用此功能可以加载的每个运行和每个项目有 500,000 行限制。

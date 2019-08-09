@@ -2,7 +2,7 @@
 title: 使用模型驱动应用程序可视化分层数据 | MicrosoftDocs
 description: 了解如何查询和可视化相关的分层数据
 ms.custom: ''
-ms.date: 09/19/2018
+ms.date: 05/28/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: article
-ms.date: 03/20/2019
+ms.date: 06/25/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -28,14 +28,15 @@ search.app:
 解决方案检查器支持可从环境中导出的非托管解决方案。 
 
 > [!NOTE]
-> 解决方案检查器不使用 ECMAScript 6 (2015) 或更高版本处理包含 JavaScript 的解决方案。 如果检测到使用这些版本之一的 JavaScript，将报告 Web 资源发生了 JS001 语法问题。
+> - 本主题介绍如何从 PowerApps 开发者门户运行解决方案检查器。 另外还提供 PowerShell 模块，您可以使用它来直接与服务交互。 Microsoft.PowerApps.Checker.PowerShell 模块可用于对支持的本地和在线环境版本的托管和非托管解决方案进行分析，或自动化服务并将服务集成到您的版本和发布管道中。 详细信息：[Microsoft.PowerApps.Checker.PowerShell 概述]( /powershell/powerapps/overview?view=pa-ps-latest#get-started-using-the-microsoftpowerappscheckerpowershell-module) 
+> - 解决方案检查器不使用 ECMAScript 6 (2015) 或更高版本处理包含 JavaScript 的解决方案。 如果检测到使用这些版本之一的 JavaScript，将报告 Web 资源发生了 JS001 语法问题。
 
 ## <a name="enable-the-solution-checker"></a>启用解决方案检查器
 安装 PowerApps 检查器解决方案之后，PowerApps 的“解决方案”区域中将提供解决方案检查器。 请注意，在 Microsoft AppSource 中浏览或搜索找不到此功能。 若要安装，请执行以下步骤：  
 
 1. 登录 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后选择要启用解决方案检查器的 Common Data Service 环境。 
 2. 在左侧导航窗格中，选择**解决方案**。
-3. 在工具栏上，选择**解决方案检查器**，然后选择 **安装** – 这将打开 Microsoft AppSource 页面。 如果浏览器阻止页面打开，需要允许弹出窗口。 
+3. 在工具栏上，选择**解决方案检查器**，然后选择**安装** – 这将打开 Microsoft AppSource 页面。 如果浏览器阻止页面打开，需要允许弹出窗口。 
 
    > [!div class="mx-imgBorder"]
    > ![安装解决方案检查器](media/solution-checker-install.png "安装解决方案检查器")
@@ -141,10 +142,13 @@ When you install the PowerApps checker these solution specific components are cr
 |插件或工作流活动   | [meta-avoid-reg-no-attribute](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-reg-no-attribute&client=PAChecker&source=featuredocs)  | 包括使用 Dynamics 365 for Customer Engagement 插件注册过滤属性。    |
 |插件或工作流活动   | [meta-avoid-reg-retrieve](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-reg-retrieve&client=PAChecker&source=featuredocs)  | 使用为 Retrieve 和 RetrieveMultiple 消息注册的 Dynamics 365 for Customer Engagement 插件时，请务必小心谨慎。    |
 |插件或工作流活动   | [meta-remove-inactive](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-inactive&client=PAChecker&source=featuredocs)    | 删除 Dynamics 365 for Customer Engagement 中的已停用配置。    |
-|插件或工作流活动   | [避免使用 window.top](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-window-top&client=PAChecker&source=featuredocs)   | 避免使用 window.top。    |
 |插件或工作流活动   | [il-meta-avoid-crm2011-depr-message](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-crm2011-depr-message&client=PAChecker&source=featuredocs)  | 请勿使用 Microsoft Dynamics CRM 2011 弃用的消息。     |
 |插件或工作流活动   | [meta-avoid-crm4-event](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-crm4-event&client=PAChecker&source=featuredocs) | 请勿使用 Microsoft Dynamics CRM 4.0 插件注册插件。    |
-|插件或工作流活动   | [il-avoid-specialized-update-ops](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-specialized-update-ops&client=PAChecker&source=featuredocs)  | 请勿在 Dynamics 365 for Customer Engagement 中使用特制更新操作请求。        |
+|插件或工作流活动   | [il-avoid-specialized-update-ops](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-specialized-update-ops&client=PAChecker&source=featuredocs)  | 请勿在 Dynamics 365 for Customer Engagement 中使用特制更新操作请求。    | 
+| 插件或工作流活动 |  [il-use-autonumber-feature](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-use-autonumber-feature&client=PAChecker)  |使用自动编号功能，而不是自定义的自动编号解决方案。 | 
+| 插件或工作流活动  | [il-avoid-parallel-plugin](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-parallel-plugin&client=PAChecker)  | 应避免在插件中使用并行模式。  |
+| 插件或工作流活动  | [il-avoid-lock-plugin](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-lock-plugin&client=PAChecker)  | 避免在插件中锁定静态成员。  |
+| 插件或工作流活动  | [meta-avoid-retrievemultiple-annotation](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-retrievemultiple-annotation&client=PAChecker)  | 避免在批注 RetrieveMultiple 上注册插件。  |
 |Web 资源  | [web-use-async](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-async&client=PAChecker&source=featuredocs)  |  与 HTTP 和 HTTPS 资源异步交互。   |
 |Web 资源  | [meta-remove-invalid-form-handler](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-invalid-form-handler&client=PAChecker&source=featuredocs)  | 更正或删除无效的 Dynamics 365 for Customer Engagement 窗体事件注册。   |
 |Web 资源  | [meta-remove-orphaned-form-element](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-orphaned-form-element&client=PAChecker&source=featuredocs)  | 更正或删除孤立的 Dynamics 365 for Customer Engagement 窗体事件注册。   |
@@ -153,16 +157,24 @@ When you install the PowerApps checker these solution specific components are cr
 |Web 资源  | [web-avoid-crm2011-service-soap](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-soap&client=PAChecker&source=featuredocs)  | 请勿以 Microsoft Dynamics CRM 2011 SOAP 服务为目标。   |
 |Web 资源  | [web-avoid-browser-specific-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-browser-specific-api&client=PAChecker&source=featuredocs) | 请勿使用 Internet Explorer 旧 API 或浏览器插件。   |
 |Web 资源  | [web-avoid-2011-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-2011-api&client=PAChecker&source=featuredocs)  | 请勿使用已弃用的 Microsoft Dynamics CRM 2011 对象模型。  |
-|Web 资源  | [web-use-relative-uri](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-relative-uri&client=PAChecker&source=featuredocs)   | 不要使用绝对 Common Data Service 终结点 URL。    |
+|Web 资源  | [web-use-relative-uri](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-relative-uri&client=PAChecker&source=featuredocs)   | 请勿使用绝对 Common Data Service 端点 URL。    |
 |Web 资源  | [web-use-client-context](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-client-context&client=PAChecker&source=featuredocs)  | 使用客户端上下文。   |
 |Web 资源  | [web-use-dialog-api-param](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-dialog-api-param&client=PAChecker&source=featuredocs)   | 使用对话框 API 参数。   |
 |Web 资源  | [web-use-org-setting](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-org-setting&client=PAChecker&source=featuredocs)   | 使用组织设置。   |
 |Web 资源  | [web-use-grid-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-grid-api&client=PAChecker&source=featuredocs)   | 使用网格 API。    |
 |Web 资源  | [web-avoid-isActivityType](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-isActivityType&client=PAChecker&source=featuredocs)   | 将 Xrm.Utility.isActivityType 方法替换为新的 Xrm.Utility.getEntityMetadata，并且在功能区规则中不使用。    |
 |Web 资源  | [meta-avoid-silverlight](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-silverlight&client=PAChecker&source=featuredocs)   | 已弃用 Silverlight Web 资源。   |
+| Web 资源  | [web-remove-debug-script](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-remove-debug-script&client=PAChecker)  | 避免在非开发环境中包含调试脚本。  | 
+| Web 资源  | [web-use-strict-mode](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-mode&client=PAChecker)  | 如果可能，使用严格模式。  | 
+| Web 资源  | [web-use-strict-equality-operators](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-equality-operators&client=PAChecker)  | 使用绝对相同的运算符。  | 
+| Web 资源  | [web-avoid-eval](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-eval&client=PAChecker)  | 请勿使用“eval”函数或其等效项。  | 
+
+## <a name="limitations"></a>限制
+
+解决方案检查器目前不能自动化。 必须从 https://web.powerapps.com 运行它。 详细信息：[运行解决方案检查器](#run-the-solution-checker)
 
 
-## <a name="see-also"></a>另请参阅
+### <a name="see-also"></a>另请参阅
 [Common Data Service 的最佳实践和指南](../../developer/common-data-service/best-practices/index.md)<br />
 [模型驱动应用的最佳实践和指南](../../developer/model-driven-apps/best-practices/index.md)<br />
 [解决方案检查器的常见问题和解决](common-issues-resolutions-solution-checker.md)<br />

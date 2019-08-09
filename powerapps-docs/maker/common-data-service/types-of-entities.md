@@ -56,10 +56,10 @@ search.app:
 |姓名|说明|在活动菜单中显示|参考|
 |----------|-----------------|----------------|---------------|  
 |**约会**|表示具有开始/结束时间和持续时间的时间间隔的承诺。|是|[约会](/powerapps/developer/common-data-service/reference/entities/appointment)|
-|**Email**|使用电子邮件协议传递的活动。|是|[电子邮件](/powerapps/developer/common-data-service/reference/entities/email)|
+|**Email**|使用电子邮件协议传递的活动。|是|[Email](/powerapps/developer/common-data-service/reference/entities/email)|
 |**传真**|跟踪传真的呼叫结果和页数并可以选择存储文档的电子副本的活动。|是|[传真](/powerapps/developer/common-data-service/reference/entities/fax)|
 |**信件**|跟踪信件传递的活动。 此活动可包含信件的电子副本。|是|[信件](/powerapps/developer/common-data-service/reference/entities/letter)|
-|**电话联络**|用于跟踪电话联络的活动。|是|[PhoneCall ](/powerapps/developer/common-data-service/reference/entities/phonecall)|
+|**电话联络**|用于跟踪电话联络的活动。|是|[PhoneCall](/powerapps/developer/common-data-service/reference/entities/phonecall)|
 |**定期约会**|定期约会系列的主约会。|是|[定期约会主体](/powerapps/developer/common-data-service/reference/entities/recurringappointmentmaster)|
 |**任务**|表示需要完成的工作的通用活动。|是|[任务](/powerapps/developer/common-data-service/reference/entities/task)|
   

@@ -2,7 +2,7 @@
 title: 在 PowerApps 中使用解决方案 | MicrosoftDocs
 description: 了解如何使用解决方案创建或自定义应用
 ms.custom: ''
-ms.date: 10/29/2018
+ms.date: 06/17/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -12,10 +12,10 @@ applies_to:
   - Dynamics 365 (online)
   - Dynamics 365 Version 9.x
   - powerapps
-author: Mattp123
+author: caburk
 ms.assetid: 72bacfbb-96a3-4daa-88ff-11bdaaac9a3d
 caps.latest.revision: 57
-ms.author: matp
+ms.author: caburk
 manager: kvivek
 search.audienceType:
   - maker
@@ -93,7 +93,7 @@ search.app:
 
 - 解决方案中不提供自定义连接器。
 - 区域应用必须在导入解决方案以更新连接后打开。
-- 如果区域应用在托管解决方案中打包，它仍可以在目标环境中编辑。
+- 如果区域应用在托管解决方案中打包，它仍可以在目标环境中编辑，但不能重新发布。
 - 依赖项对区域应用不可用。
 - 删除托管解决方案不会回滚到其他区域应用版本。 
 -   区域应用访问（CRUD 和安全性）在 PowerApps 中完全托管，而不是在 Common Data Service (Common Data Service) 数据库中。
@@ -103,6 +103,7 @@ search.app:
 - 按钮触发的流在解决方案中不可用。
 - 区域应用触发的流在解决方案中不可用。
 - 从 Microsoft 365 应用程序（如 SharePoint 和 Excel）触发的流在解决方案中不可用。
+- 解决方案中的流不支持委派身份验证。 例如，流访问权限不会基于具有对流从其创建的 SharePoint 列表的访问权限而自动授予。
 
  有关自定义解决方案中的单个组件的详细信息，请参阅以下主题：  
   

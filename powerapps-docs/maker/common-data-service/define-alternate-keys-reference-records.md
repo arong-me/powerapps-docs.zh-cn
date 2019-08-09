@@ -1,8 +1,8 @@
 ---
-title: 通过 Common Data Service 定义引用记录的备用键 | MicrosoftDocs
+title: 使用 Common Data Service 定义引用记录的备用键 | MicrosoftDocs
 description: 了解如何在 Common Data Service 中定义可用于引用记录的备用键
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 06/04/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -75,6 +75,9 @@ search.app:
  - 十进制
  - 整数
  - 单行文本（字符串）
+ - 日期和时间
+ - 查找
+ - 选项集
 
 ### <a name="number-of-keys"></a>键数
 

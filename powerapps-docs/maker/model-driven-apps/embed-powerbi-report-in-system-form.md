@@ -26,12 +26,12 @@ search.app:
 ---
 
 # <a name="embed-a-power-bi-report-in-a-model-driven-system-form"></a>在模型驱动系统窗体中嵌入 Power BI 报表
-您可以使用 PowerApps 模型驱动应用程序中的 Power BI 报表将丰富的报表和分析带入您的系统窗体，让用户完成更多任务。 这可以解锁跨系统聚合数据的能力，并将其自定义到单个记录的上下文。
+您可以使用 PowerApps 模型驱动应用中的 Power BI 报表将丰富的报表和分析带入您的系统窗体，让用户完成更多任务。 这可以解锁跨系统聚合数据的能力，并将其自定义到单个记录的上下文。
  
 ## <a name="prerequisites"></a>必备条件 
-嵌入 Power BI 内容是一个可选功能，默认情况下所有环境均禁用。 在嵌入 Power BI 内容之前，必须将其启用。 详细信息：[在组织中启用 Power BI 可视化效果化](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/use-power-bi?#enable--visualizations-in-the-organization)。
+嵌入 Power BI 内容是一个可选功能，默认情况下所有环境均禁用。 在嵌入 Power BI 内容之前，必须将其启用。 详细信息：[在组织中启用 Power BI 可视化效果化](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi?#enable--visualizations-in-the-organization)。
 
-此功能需要导出解决方案、进行修改以添加 XML 片段，然后重新导入到环境。 请务必仅通过托管解决方案在您的目标环境中导入所做的更改。 请参阅[导入、更新和导出解决方案](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/import-update-export-solutions)获取为现有托管解决方案安装更新的指导。
+此功能需要导出解决方案、进行修改以添加 XML 片段，然后重新导入到环境。 请务必仅通过托管解决方案在您的目标环境中导入所做的更改。 请参阅[导入、更新和导出解决方案](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions)获取为现有托管解决方案安装更新的指导。
 
 ## <a name="embed-without-contextual-filtering"></a>不使用上下文筛选嵌入
 您通过嵌入 Power BI 报表和磁贴即可使用它们，并获取完全相同的报表。 这不会将它们置于当前模型驱动窗体的上下文中，因此，您将在实体的所有记录中获取相同报表或磁贴。 例如，下列报表一次可以显示所有客户的地理位置，对于显示摘要信息很有用。
@@ -90,7 +90,7 @@ search.app:
         <PowerBIGroupId>00000000-0000-0000-0000-000000000000</PowerBIGroupId>
         <PowerBIReportId>544c4162-6773-4944-900c-abfd075f6081</PowerBIReportId>
         <TileUrl>https://xyz.powerbi.com/reportEmbed?reportId=544c4162-6773-4944-900c-abfd075f6081</TileUrl>
-        <PowerBIFilter>{"Filter": "[{\"$schema\":\"basic\",\"target\":{\"table\":\"My Active Accounts\",\"column\":\"Account Name\"},\"operator\":\"In\",\"values\":[$a],\"filterType\":1}]", "Alias": {"$a": "name"</PowerBIFilter>
+        <PowerBIFilter>{"Filter": "[{\"$schema\":\"basic\",\"target\":{\"table\":\"My Active Accounts\",\"column\":\"Account Name\"},\"operator\":\"In\",\"values\":[$a],\"filterType\":1}]", "Alias": {"$a": "name"}}</PowerBIFilter>
     </parameters>
 </control>
 ```
@@ -140,14 +140,14 @@ search.app:
    > [!div class="mx-imgBorder"] 
    > ![](media/embed-powerbi/embed-powerbi-report-in-system-form-auth-3.png "Embed-powerbi-report-in-system-form-auth-3")
 
-5. 显示在 PowerApps 内的报表数据的视图与 Power BI 中的相同，PowerApps 安全角色和权限不会影响显示的数据。 因此，数据基本上与 Power BI 数据集创建者看到的相同。 若要应用类似于 PowerApps 安全角色和团队的数据访问限制，请使用[使用 Power BI 的行级安全性 (RLS)](https://docs.microsoft.com/en-us/power-bi/service-admin-rls)。
+5. 显示在 PowerApps 内的报表数据的视图与 Power BI 中的相同，PowerApps 安全角色和权限不会影响显示的数据。 因此，数据基本上与 Power BI 数据集创建者看到的相同。 若要应用类似于 PowerApps 安全角色和团队的数据访问限制，请使用[使用 Power BI 的行级安全性 (RLS)](https://docs.microsoft.com/power-bi/service-admin-rls)。
 6. 如果窗体在导入解决方案并发布自定义项之后未显示 Power BI 报表，请在模型驱动窗体编辑器中打开它并保存，以便窗体 JSON 重新生成。
 
 
 ### <a name="see-also"></a>另请参阅
 
-[在PowerApps 模型驱动的个人仪表板中嵌入 Power BI 仪表板](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
+[在PowerApps 模型驱动的个人仪表板中嵌入 Power BI 仪表板](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
 
-[将 Power BI 与 Dynamics 365 for Customer Engagement 结合使用](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/use-power-bi)
+[将 Power BI 与 Dynamics 365 for Customer Engagement 结合使用](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi)
 
 [导入、更新和导出解决方案](../common-data-service/import-update-export-solutions.md)

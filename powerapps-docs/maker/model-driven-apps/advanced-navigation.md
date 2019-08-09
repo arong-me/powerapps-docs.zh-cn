@@ -6,7 +6,7 @@ author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.custom: ''
-ms.date: 04/11/2019
+ms.date: 05/14/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -64,12 +64,12 @@ search.app:
 首先，查看您需要的设置是否在![设置图标](media/powerapps-gear.png)  > **高级自定义**菜单中。
 
 若要查找**高级自定义**中没有的设置：  
-1.  从 Dynamics 365 Administration Center 访问您的环境。 对于位于北美的环境，请转到 [https://port.crm.dynamics.com/G/instances/InstancePicker.aspx](https://port.crm.dynamics.com/G/instances/InstancePicker.aspx)。 对于其他位置，请参阅“直接登录到 Dynamics 365 Administration Center”。
-2.  选择所需的环境，然后选择**打开**。
+1.  从 PowerApps 模型驱动应用，选择应用工具栏中的**设置** ![设置](../model-driven-apps/media/powerapps-gear.png)，然后选择**高级设置**。 
+2.  选择**设置**，然后选择所需设置区域。
 
     > [!div class="mx-imgBorder"] 
-    > ![打开环境](media/open-environment.png)
+    > ![设置区域](media/settings-areas.png) 
 
 ## <a name="see-also"></a>另请参阅
-[使用应用程序设计器创建或编辑模型驱动的应用程序](create-edit-app.md)
-[在适用于 Web 的 PowerApps Studio 中创建或编辑应用程序](../canvas-apps/create-app-browser.md)
+[使用应用程序设计器创建或编辑模型驱动应用](create-edit-app.md)
+[在适用于 Web 的 PowerApps Studio 中创建或编辑应用](../canvas-apps/create-app-browser.md)

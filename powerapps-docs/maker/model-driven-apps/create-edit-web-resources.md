@@ -4,7 +4,7 @@ description: 了解如何创建或编辑 Web 资源
 ms.custom: ''
 ms.date: 06/02/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -38,7 +38,7 @@ Web 资源是存储在系统中的虚拟文件。 每个 Web 资源都有一个�
   
 例如，如果创建了一个 HTML 页并将其作为一个 Web 资源命名为“new_myWebResource.htm”，就可以使用如下 URL 在浏览器中打开该页：  
  
-`<base URL>/WebResources/new_myWebResource.htm   `
+`<base URL>/WebResources/new_myWebResource.htm`
   
 其中*\<基本 URL>* 是您用于查看以 `dynamics.com` 结尾的应用程序的 URL 的一部分。 由于 Web 资源是系统中的数据，所以只有您组织中的许可用户可以这样访问它们。 通常，Web 资源包含在窗体之中，而不能直接被引用。 最常见用法是对窗体脚本提供 JavaScript 库。  
     
