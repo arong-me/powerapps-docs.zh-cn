@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 3/13/2019
+ms.date: 8/01/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,24 +15,26 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d2f2ccd462627fbcf6ab628217e5d53a57127cae
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: e21c9763e42dd45c7bed4691dfc27899263bef00
+ms.sourcegitcommit: 4e4f7945c3f24faf9bb8a856a5f3892cbfd113be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61545033"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783573"
 ---
 # <a name="create-a-new-record"></a>创建新记录
 
 
-使用“新建记录”命令或“快速创建”，可以轻松快速地将几乎任何类型的信息输入系统。 该命令在导航栏中，因此无论何时需要将新信息输入系统，都可以随时使用。 使用此选项时，只需填写几个字段。 你可以在稍后有更多时间或信息时，填写更多详细信息。  
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+使用“新建记录”命令或“快速创建”，可以轻松快速地将几乎任何类型的信息输入系统。 该命令在导航栏中，因此无论何时需要将新信息输入系统，都可以随时使用。 您还可以保存一条记录, 并直接通过 "**快速创建**" 窗体创建一个记录。
 
 > [!NOTE]
 > “快速创建”选项仅适用于管理员启用的记录。
     
 1. 在导航栏上，选择加号 ![创建记录按钮](media/create-record-button.png "Create record button")，然后选择所需项。  
   
-2.  填写字段，然后选择“保存并关闭”。  
+2.  填写字段，然后选择“保存并关闭”。 或者, 若要保存和创建其他记录, 请选择向下箭头, 然后选择 "**保存" & 新建**"。
 
   ![保存记录](media/quick_create.png "Save a record")
   

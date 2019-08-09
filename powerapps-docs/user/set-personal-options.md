@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 08/01/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,15 +15,17 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e3894efdf379c5568ae6f95baa87e9ec77dae5d8
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 11d9318ac06e264b6b917c81358d060d97864eb8
+ms.sourcegitcommit: 4e4f7945c3f24faf9bb8a856a5f3892cbfd113be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61564370"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783563"
 ---
 # <a name="set-personal-options"></a>设置个人选项
 
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 更改应用中的显示设置, 以适合您的喜好。 例如, 你可以选择想要在登录到应用后立即看到的页面。 你还可以个性化多种其他选项, 如语言、货币和时区。  
     
@@ -111,6 +113,7 @@ ms.locfileid: "61564370"
 |                                                                                           配置文件夹跟踪规则                                                                                           |                                                                                                                                        设置文件夹以自动跟踪传入电子邮件。                                                                                                                                          |
 |                                                           **在 Dynamics 365 中自动创建记录**                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |                                                                                                       创建                                                                                                        |                                                                                                                                                                                 选择此选项以允许 Dynamics 365 自动从所跟踪电子邮件中的信息创建潜在顾客或联系人。                                                                                                                                                                                  |
+|                                                                                                  在时间线上显示电子邮件                                                                                                 |                                                                                                                                                                                                                                                    选择此项可在会话线索中列出电子邮件, 在对话中查看电子邮件时, 多个电子邮件应用程序的工作方式。                                                                                                                                                                                                                                                    |
 |                                                                                                  查看邮箱                                                                                                  |                                                                                                                                                                                                                                                    选择此链接可查看你的邮箱详细信息。                                                                                                                                                                                                                                                    |
   
 ## <a name="privacy-tab-options"></a>隐私选项卡选项  
