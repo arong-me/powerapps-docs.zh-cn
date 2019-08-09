@@ -842,6 +842,8 @@
                       href: ./model-driven-apps/add-move-or-delete-tabs-on-form.md
                     - name: 窗体设计器中的属性
                       href: ./model-driven-apps/form-designer-properties.md
+                    - name: 配置标头属性
+                      href: ./model-driven-apps/form-designer-header-properties.md
                     - name: 使用树视图
                       href: ./model-driven-apps/using-tree-view-on-form.md
                 - name: 窗体类型
