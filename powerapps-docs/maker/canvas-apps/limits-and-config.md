@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c304a313032e00af81181ca71b39e7aa7de9fc8f
-ms.sourcegitcommit: c0edddb287b3d3db56f60bdb46fe971e26e85e9d
+ms.openlocfilehash: 03c520d1cdf8655e93b1f5b74d687cd0abfa533f
+ms.sourcegitcommit: 94ec67b283b9b03aa24cdc0ab43dd448b11b0547
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "66224632"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69529798"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>画布应用的系统要求、限制和配置值
 本主题包含设备平台和 Web 浏览器要求，以及 PowerApps 的限制和配置值。
@@ -70,7 +70,7 @@ PowerApps 请求使用的 IP 地址取决于该应用所在[环境](../../admini
 > [!IMPORTANT]
 >   如果具有现有配置，请尽快于 2018 年 9 月 30 日前更新这些配置，以便它们包括和匹配此 PowerApps 应用所在区域列表中的 IP 地址。
 
-| 区域 | 出站 IP |
+| 地区 | 出站 IP |
 | --- | --- |
 | 亚洲 | 13.75.36.64 - 13.75.36.79, 13.67.8.240 - 13.67.8.255, 52.175.23.169, 52.187.68.19 |
 | 澳大利亚  | 13.70.72.192 - 13.70.72.207, 13.72.243.10, 13.77.50.240 - 13.77.50.255, 13.70.136.174 |
@@ -92,18 +92,19 @@ PowerApps 请求使用的 IP 地址取决于该应用所在[环境](../../admini
 | management.azure.com |https |RP |
 | msmanaged-na.azure-apim.net |https |连接器运行时/API |
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
-| graph.microsoft.com<br>graph.windows.net |https |Azure Graph-用于获取用户信息 （例如，个人资料照片） |
+| graph.microsoft.com<br>graph.windows.net |https |Azure Graph-用于获取用户信息 (例如, 个人资料照片) |
 | gallery.azure.com |https |示例和模板应用 |
-| \*.azure-apim.net |https |API 中心 - 每个区域设置的不同子域 |
-| \*.powerapps.com |https | create.powerapps.com、 make.powerapps.com、 content.powerapps.com 和 web.powerapps.com |
-| \*.azureedge.net |https | create.powerapps.com、 make.powerapps.com、 content.powerapps.com 和 web.powerapps.com |
-| \*.blob.core.windows.net |https | Blob 存储 |
-| \*.flow.microsoft.com | https | create.powerapps.com、 make.powerapps.com、 content.powerapps.com 和 web.powerapps.com |
+| \*。 azure-apim.net |https |API 中心 - 每个区域设置的不同子域 |
+| \*。 powerapps.com |https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 web.powerapps.com |
+| \*。 azureedge.net |https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 web.powerapps.com |
+| \*。 blob.core.windows.net |https | Blob 存储 |
+| \*。 flow.microsoft.com | https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 web.powerapps.com |
 | vortex.data.microsoft.com |https |遥测 |
+| 主机 | https | PowerApps Mobile
 
 > [!NOTE]
 > 如果你使用的是 VPN，则必须将其配置为从 PowerApps Mobile 的隧道中排除 localhost。
 
 ## <a name="size-limits"></a>大小限制
 
-您可以找到有关大小限制在文本、 超链接、 图像和媒体中的信息[数据类型](functions/data-types.md#text-hyperlink-image-and-media)。
+可以在[数据类型](functions/data-types.md#text-hyperlink-image-and-media)中找到有关文本、超链接、图像和媒体的大小限制的信息。

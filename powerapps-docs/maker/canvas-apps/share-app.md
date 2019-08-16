@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ecb3e7aa6db1100f33a3c80a0518166b035d2b32
-ms.sourcegitcommit: 988aa08353864f8177725262468c07abe75549f5
+ms.openlocfilehash: bfe5b35ebfddfe17cbf3898cc6f68f1a91d0b5e0
+ms.sourcegitcommit: 94ec67b283b9b03aa24cdc0ab43dd448b11b0547
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68961506"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530240"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>在 PowerApps 中共享画布应用
 
@@ -139,7 +139,7 @@ PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享�
 1. 在 Azure Active Directory (Azure AD) 中, 为租户启用 B2B 外部协作。 详细信息：[启用 B2B 外部协作并管理谁可以邀请来宾](/azure/active-directory/b2b/delegate-invitations)
     - 默认情况下启用 B2B 外部协作。 但是, 租户管理员可以更改这些设置。有关 Azure AD B2B 的详细信息, 请参阅[什么是来宾用户在 AZURE AD B2B 中的访问权限？](/azure/active-directory/b2b/what-is-b2b)  
 2. 对可将来宾用户添加到 Azure AD 租户的帐户的访问权限。 具有来宾邀请者角色的管理员和用户可以将来宾添加到租户。   
-3. 必须将 PowerApps 许可证分配给与共享的应用相关联的租户中的来宾用户。 在正式发布 canvas 应用来宾访问之前, 在其家庭租户中拥有 PowerApps 许可证的来宾不需要在租户中向其分配许可证。
+3. 必须将 PowerApps 许可证分配给与共享的应用相关联的租户中的来宾用户。 虽然目前尚不能, 但在开始使用画布应用来宾访问之前, 在其家庭租户中拥有 PowerApps 许可证的来宾不需要在租户中向其分配许可证。
 
 ### <a name="steps-to-grant-guest-access"></a>授权来宾访问的步骤
 1. 选择 "**新来宾用户**", 在 Azure AD 中添加来宾用户。 详细信息：[快速入门：在 Azure AD](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)中添加新的来宾用户。
