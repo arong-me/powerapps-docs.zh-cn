@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 8/14/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 931efa2fcb2f30dcba7b1eef0118e734399e503e
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: f40a153ef20df0bccbdee915efe9af6aa88cb754
+ms.sourcegitcommit: f2ca557e43ab38c169eb3b754ac02c9321f9285f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61563025"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69030547"
 ---
 #  <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>针对模型驱动应用的统一界面增强了用户体验 
 
@@ -53,5 +53,9 @@ ms.locfileid: "61563025"
 ## <a name="business-process"></a>业务流程 
 业务流程已通过扩展机制进行了改进。 您可以将业务流程阶段固定在屏幕上, 以帮助您集中精力处理业务流程中的任务。 这在进程的阶段执行复杂步骤时特别有用。 有关详细信息, 请参阅[处理业务流程](work-with-business-processes.md)。
 
-## <a name="accessibility"></a>辅助功能
+## <a name="accessibility"></a>可访问性
 改进的辅助功能体验使你可以使用屏幕阅读器将屏幕信息转换为声音, 并打印到盲文阅读器, 以便更多人可以使用该应用。 有关详细信息, 请参阅[使用屏幕阅读器](screen-reader.md)。
+
+##  <a name="unified-interface-community"></a>统一接口社区
+
+转到[统一的界面社区网站](https://community.dynamics.com/365/unified-interface/), 以帮助你规划和执行到统一界面的平稳过渡, 并与专家和同行沟通博客、网络研讨会、视频、事件等。
