@@ -7,24 +7,24 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 04/26/2016
+ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f538d785b9655b94a44a79c3299e979bbfe88883
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: eae185fc52f368fa09ddbfe221553ddf6cc3a16d
+ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63320979"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550356"
 ---
 # <a name="forall-function-in-powerapps"></a>PowerApps 中的 ForAll 函数
 针对[表](../working-with-tables.md)中的所有[记录](../working-with-tables.md#records)计算值和执行操作。
 
 ## <a name="description"></a>说明
-**ForAll** 函数针对表中的所有记录对公式求值。  该公式可以计算值并/或执行操作，例如修改数据或使用连接。
+**ForAll** 函数针对表中的所有记录对公式求值。  该公式可以计算值并/或执行操作，例如修改数据或使用连接。  使用[ **With**函数](function-with.md)可计算单个记录的公式。
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
@@ -36,9 +36,9 @@ ms.locfileid: "63320979"
 如果公式的结果是*空*值，则结果表中将没有与该该输入记录对应的记录。  在这种情况下，结果表中的记录数将少于源表中的记录数。
 
 ### <a name="taking-action"></a>执行操作
-公式可以包含用于执行操作的函数，例如使用 **[Patch](function-patch.md)** 和 **[Collect](function-clear-collect-clearcollect.md)** 函数修改数据源的记录。  公式还可以调用针对连接的方法。  可以通过使用 [**;** 运算符](operators.md)对每条记录执行多个操作。 无法修改作为 **ForAll** 函数的使用者的表。
+公式可以包含用于执行操作的函数，例如使用 **[Patch](function-patch.md)** 和 **[Collect](function-clear-collect-clearcollect.md)** 函数修改数据源的记录。  公式还可以调用针对连接的方法。  可以通过使用 [ **;** 运算符](operators.md)对每条记录执行多个操作。 无法修改作为 **ForAll** 函数的使用者的表。
 
-在编写公式时，请记住，可以按任何顺序处理记录，并且有可能可以并行处理。  可以在表的最后一条记录后处理第一条记录。  请小心避免使用排序依赖关系。  因此，你不能在 **ForAll** 函数内使用使用 **[UpdateContext](function-updatecontext.md)**、**[Clear](function-clear-collect-clearcollect.md)** 和 **[ClearCollect](function-clear-collect-clearcollect.md)** 函数，因为它们很容易用来存放易受此效果影响的变量。  你可以使用 **[Collect](function-clear-collect-clearcollect.md)**，但添加记录的顺序是不确定的。
+在编写公式时，请记住，可以按任何顺序处理记录，并且有可能可以并行处理。  可以在表的最后一条记录后处理第一条记录。  请小心避免使用排序依赖关系。  因此，你不能在 **ForAll** 函数内使用使用 **[UpdateContext](function-updatecontext.md)** 、 **[Clear](function-clear-collect-clearcollect.md)** 和 **[ClearCollect](function-clear-collect-clearcollect.md)** 函数，因为它们很容易用来存放易受此效果影响的变量。  你可以使用 **[Collect](function-clear-collect-clearcollect.md)** ，但添加记录的顺序是不确定的。
 
 多个可修改数据源的函数（包括 **Collect**、**Remove** 和 **Update**）会将更改后的数据源作为其返回值来返回。  如果针对 **ForAll** 表的每条记录进行返回，则这些返回值可能很大并占用大量资源。  你还可能会发现这些返回值不是你想要的，因为 **ForAll** 可以并行操作并且可能会将这些函数的副作用与获取其结果分离开来。  幸运的是，如果来自 **ForAll** 的返回值实际上未使用（对于数据修改函数这是常见情况），则不会创建返回值，因此不需要考虑资源或排序。  但是，如果你使用 **ForAll** 的结果并且使用了返回数据源的函数之一，请仔细考虑如何安排结果的结构并首先针对小型数据集进行测试。  
 

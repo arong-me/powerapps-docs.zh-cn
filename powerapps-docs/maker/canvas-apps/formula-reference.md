@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/14/2018
+ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f7cf23c03f68efc5e5b553a05d7f546373b636c9
-ms.sourcegitcommit: 2084789802fc5134dbeb888e759cced46019a017
+ms.openlocfilehash: f934730ec6ca432f1da4106c535cf5967f883070
+ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66736221"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550343"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps 的公式参考
 公式组合了许多元素。  下面列出的包括：
@@ -47,11 +47,11 @@ ms.locfileid: "66736221"
 
 **[And](functions/function-logicals.md)** – 布尔逻辑与。  如果所有参数都为 **true**，则返回 **true**。  还可以使用 [ **&&** 运算符](functions/operators.md)。
 
-**[应用程序](functions/object-app.md)** – 提供有关当前正在运行的应用程序和控制应用程序的行为的信息。
+**[应用](functions/object-app.md)** –提供当前正在运行的应用的相关信息, 并控制应用的行为。
 
 **[Asin](functions/function-trig.md)** – 以弧度为单位返回某个数字的反正弦值。
 
-**[AsType](functions/function-astype-istype.md)**  – 视为特定实体类型的记录引用。
+**[AsType](functions/function-astype-istype.md)** –将记录引用视为特定实体类型。
 
 **[Atan](functions/function-trig.md)** – 以弧度为单位返回某个数字的反正切值。
 
@@ -77,7 +77,7 @@ ms.locfileid: "66736221"
 
 **[Clock](functions/function-clock-calendar.md)** – 检索有关当前区域设置的时钟信息。
 
-**[Coalesce](functions/function-isblank-isempty.md)** – 替换空  值并保留非空  值不变。
+**[Coalesce](functions/function-isblank-isempty.md)** – 替换空值并保留非空值不变。
 
 **[Collect](functions/function-clear-collect-clearcollect.md)** – 创建一个集合或者向数据源添加数据。
 
@@ -187,10 +187,10 @@ ms.locfileid: "66736221"
 
 **[IsToday](functions/function-now-today-istoday.md)** – 检查某个日期/时间值是否为今天的某个时间。
 
-**[IsType](functions/function-astype-istype.md)**  – 检查记录引用是否引用特定实体类型。
+**[IsType](functions/function-astype-istype.md)** –检查记录引用是否引用特定的实体类型。
 
 ## <a name="j"></a>J
-**[JSON](functions/function-json.md)**  -生成表、 一个记录或值的 JSON 文本字符串。
+**[JSON](functions/function-json.md)** -为表、记录或值生成 JSON 文本字符串。
 
 ## <a name="l"></a>L
 **[Language](functions/function-language.md)** – 返回当前用户的语言标记。
@@ -216,9 +216,9 @@ ms.locfileid: "66736221"
 **[Lower](functions/function-lower-upper-proper.md)** – 将文本字符串中的字母转换为全部小写。
 
 ## <a name="m"></a>M
-**[匹配](functions/function-ismatch.md)** – 中提取子字符串的模式。  可以使用正则表达式。
+**[Match](functions/function-ismatch.md)** –根据模式提取子字符串。  可以使用正则表达式。
 
-**[MatchAll](functions/function-ismatch.md)**  – 提取基于模式的多个子字符串。  可以使用正则表达式。
+**[MatchAll](functions/function-ismatch.md)** –根据模式提取多个子字符串。  可以使用正则表达式。
 
 **[Max](functions/function-aggregates.md)** – 某个表表达式或一组参数的最大值。
 
@@ -268,7 +268,7 @@ ms.locfileid: "66736221"
 
 **[Refresh](functions/function-refresh.md)** – 刷新数据源的记录。
 
-**[与相关](functions/function-relate-unrelate.md)** – 与通过一个对多或多对多关系的两个实体的记录。
+**[关联](functions/function-relate-unrelate.md)** –通过一对多或多对多关系来关联两个实体的记录。
 
 **[Remove](functions/function-remove-removeif.md)** – 从数据源中删除一条或多条特定记录。
 
@@ -278,7 +278,7 @@ ms.locfileid: "66736221"
 
 **[Replace](functions/function-replace-substitute.md)** – 从字符串的起始位置开始，将一个字符串的一部分替换为另一个字符串。
 
-[Reset](functions/function-reset.md)  - 将输入控件重置为默认值，放弃任何用户更改。
+[Reset](functions/function-reset.md) - 将输入控件重置为默认值，放弃任何用户更改。
 
 **[ResetForm](functions/function-form.md)** – 重置用于编辑某个现有项的表单控件。
 
@@ -336,7 +336,7 @@ ms.locfileid: "66736221"
 
 **[Tan](functions/function-trig.md)** - 返回以弧度为单位指定的角度的正切值。
 
-**[文本](functions/function-text.md)** – 将转换的任何值，并设置数字或日期/时间值的文本字符串的格式。
+**[Text](functions/function-text.md)** –转换任何值, 并将数字或日期/时间值的格式设置为文本字符串。
 
 **[ThisItem](functions/operators.md#thisitem-operator)** – 当在库或表单中时，返回容器中当前项的数据。
 
@@ -355,11 +355,11 @@ ms.locfileid: "66736221"
 ## <a name="u"></a>U
 **[Ungroup](functions/function-groupby.md)** – 删除某个分组。
 
-**[取消关联时要](functions/function-relate-unrelate.md)** – Unrelates 从一个对多或多对多关系的两个实体的记录。
+**[取消与](functions/function-relate-unrelate.md)** – Unrelates 一对多或多对多关系中的两个实体的记录。
 
 **[Update](functions/function-update-updateif.md)** – 替换数据源中的某条记录。
 
-[UpdateContext](functions/function-updatecontext.md)  – 设置当前屏幕的一个或多个[上下文变量](working-with-variables.md#use-a-context-variable)的值。
+[UpdateContext](functions/function-updatecontext.md) – 设置当前屏幕的一个或多个[上下文变量](working-with-variables.md#use-a-context-variable)的值。
 
 **[UpdateIf](functions/function-update-updateif.md)** – 基于某个条件修改数据源中的一组记录。
 
@@ -378,6 +378,8 @@ ms.locfileid: "66736221"
 
 ## <a name="w"></a>W
 **[Weekday](functions/function-datetime-parts.md)** – 检索日期/时间值的星期几部分。
+
+**[With](functions/function-with.md)** –计算值并对单个记录执行操作, 包括命名值的内联记录。
 
 ## <a name="y"></a>Y
 **[Year](functions/function-datetime-parts.md)** – 检索日期/时间值的年份部分。  

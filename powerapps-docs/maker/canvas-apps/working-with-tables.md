@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 264bce9c986544f8294d4a0346be2e7694d606d8
-ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.openlocfilehash: b35f8efdc090cc899476a65d73fd8cb3a4200faf
+ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66216190"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550396"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>了解 PowerApps 中的画布应用表和记录
 
@@ -38,9 +38,9 @@ ms.locfileid: "66216190"
 ![](media/working-with-tables/elements-of-a-table.png)
 
 ### <a name="records"></a>记录
-每条记录包含个人、地点或事物的至少一个类别的信息。 上面的示例针对每种产品（“巧克力”、“面包”和“水”）显示一条记录，针对每个类别的信息（“价格”、“现有数量”和“订购量”）显示一列。      
+每条记录包含个人、地点或事物的至少一个类别的信息。 上面的示例针对每种产品（“巧克力”、“面包”和“水”）显示一条记录，针对每个类别的信息（“价格”、“现有数量”和“订购量”）显示一列。
 
-在公式中，可以使用大括号在表的上下文外部引用记录本身。 例如，此记录 **{名称："Strawberries"，价格：7.99}** 未与表相关联。 请注意，如该示例中的“名称”  和“价格”  等字段名称未括在双引号中。
+在公式中，可以使用大括号在表的上下文外部引用记录本身。 例如, 以下记录 **{Name:"Strawberries", 价格:7.99}** 与表没有关联。 请注意，如该示例中的“名称”和“价格”等字段名称未括在双引号中。
 
 ### <a name="fields"></a>字段
 字段是记录中的单个信息片段。 可在特定记录的列中将此类字段可视化为值。
@@ -64,7 +64,7 @@ ms.locfileid: "66216190"
 在其他工具中，列可能称为“字段”。
 
 > [!NOTE]
-> 对于列名称带空格的 SharePoint 和 Excel 数据源，PowerApps 会将空格替换为“\_x0020\_”  。 例如，如果 SharePoint 或 Excel 中的“Column Name”  在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”  。
+> 对于列名称带空格的 SharePoint 和 Excel 数据源，PowerApps 会将空格替换为“\_x0020\_”。 例如，如果 SharePoint 或 Excel 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
 
 ### <a name="table"></a>表
 表由一条或多条记录组成，每条记录包含多个字段，字段包含记录中的一致名称。
@@ -83,7 +83,7 @@ ms.locfileid: "66216190"
 在 Excel 和 PowerApps 中，可以使用公式以类似的方式来处理数字和文本字符串：
 
 * 在 Excel 的单元格 **A1** 中键入一个值（例如 **42**），然后在另一个单元格中键入公式（例如 **A1 + 2**）即可显示值 **44**。
-* 在 PowerApps 中，将“Slider1”  的“[Default](controls/properties-core.md)”  属性设置为“42”  ，将标签的“[Text](controls/properties-core.md)”  属性设置为“Slider1.Value + 2”  ，即可显示值“44”  。
+* 在 PowerApps 中，将“Slider1”的“[Default](controls/properties-core.md)”属性设置为“42”，将标签的“[Text](controls/properties-core.md)”属性设置为“Slider1.Value + 2”，即可显示值“44”。
 
 在这两种情况下，如果更改参数的值（例如，更改单元格 **A1** 中的数字或 **Slider1** 的值），计算出的值将自动更改。
 
@@ -93,9 +93,9 @@ ms.locfileid: "66216190"
 
 让我们演练一些简单的示例。
 
-1. 创建适用于手机的空白应用，并添加含有其他控件的垂直[图库](controls/control-gallery.md)  控件。
+1. 创建适用于手机的空白应用，并添加含有其他控件的垂直[图库](controls/control-gallery.md)控件。
 
-    默认情况下，屏幕显示名为 CustomGallerySample  的表中的占位符文本。 屏幕 **[图库](controls/control-gallery.md)** 控件的 **[Items](controls/properties-core.md)** 属性将自动设置为该表。
+    默认情况下，屏幕显示名为 CustomGallerySample 的表中的占位符文本。 屏幕 **[图库](controls/control-gallery.md)** 控件的 **[Items](controls/properties-core.md)** 属性将自动设置为该表。
 
     ![](media/working-with-tables/gallery-items.png)
 
@@ -116,15 +116,15 @@ ms.locfileid: "66216190"
 
     此公式使用 **[FirstN](functions/function-first-last.md)** 函数显示表中特定数量的记录。 使用 **[Sort](functions/function-sort.md)** 函数作为 **[FirstN](functions/function-first-last.md)** 的第一个参数，使用一个数字（在本例中为 **2**）作为第二个参数，该数字指定要显示的记录数。
 
-    整个公式返回一个表，其中包含 CustomGallerySample 表的前两条记录，这些记录已按 SampleHeading 列的降序排序。  
+    整个公式返回一个表，其中包含 CustomGallerySample 表的前两条记录，这些记录已按 SampleHeading 列的降序排序。
 
     ![](media/working-with-tables/gallery-items-sort-firstn.png)
 
 ## <a name="table-functions-and-control-properties"></a>表函数和控件属性
 
-请考虑**较低**函数。 如果将变量**欢迎**包含文本字符串 **"Hello，World"** ，该公式**降低 （欢迎）** 返回 **"你好，world"** 。  此函数以任何方式，不会更改该变量中的值。 **较低**是纯函数，它便只处理输入并生成输出。 这是所有;它没有任何副作用。 在 Excel 中的所有函数和 PowerApps 中的大多数函数是纯函数，允许在工作簿或应用程序以自动重新计算。
+请考虑**Lower**函数。 如果 "**欢迎使用**变量" 包含文本**字符串 "hello, world"** , 则公式**Lower (欢迎)** 返回 **"hello, world"** 。  此函数不以任何方式更改该变量中的值。 **Lower**是纯函数, 因为它只处理输入并生成输出。 就是这样:它没有任何副作用。 Excel 中的所有函数和 PowerApps 中的大部分函数都是纯函数, 这允许自动重新计算工作簿或应用。
 
-PowerApps 提供了一组相同的方式在表运行的函数。 这些函数采用表，如输入和筛选器，排序、 转换、 减少，和汇总数据的整个表。 事实上，**较低**和许多通常采用单个值的其他函数也可以采用单列的表作为输入。
+PowerApps 提供了一组函数, 这些函数以相同的方式对表进行操作。 这些函数采用表作为输入并对整个表进行筛选、排序、转换、缩小和汇总。 事实上, 通常采用单个值的**更低**和许多其他函数也可以采用单列表作为输入表。
 
 * **[Sort](functions/function-sort.md)** 、 **[Filter](functions/function-filter-lookup.md)** – 排序和筛选记录。
 * **[FirstN](functions/function-first-last.md)** 、 **[LastN](functions/function-first-last.md)** – 返回表的前 N 条或最后 N 条记录。
@@ -138,21 +138,21 @@ PowerApps 提供了一组相同的方式在表运行的函数。 这些函数采
 * **[HashTags](functions/function-hashtags.md)** – 搜索字符串中的哈希标记。
 * **[Errors](functions/function-errors.md)** – 提供处理数据源时出现的错误信息。
 
-许多这些函数将单列的表作为其输入。 如果整个表只有一个列，可以按名称进行指定。 如果表具有多个列，您可以通过使用指定这些列之一*Table.Column*语法。 例如， **Products.Name**返回的单列的表的唯一**名称**中的值**产品**表。
+其中的许多函数都采用单列表作为其输入表。 如果整个表只有一个列, 则可以按名称指定它。 如果表有多个列, 则可以通过使用*表列*语法指定这些列中的一个。 例如, **Products.Name**从**Products**表中返回唯一**名称**值的单列表。
 
-不过你想通过使用可以全面重新表 **[AddColumns](functions/function-table-shaping.md)** ，  **[RenameColumns](functions/function-table-shaping.md)** ，  **[ShowColumns](functions/function-table-shaping.md)** ，或 **[DropColumns](functions/function-table-shaping.md)** 函数。 同样，这些函数将更改仅其输出，不是其源。
+不过你想通过使用可以全面重新表 **[AddColumns](functions/function-table-shaping.md)** ，  **[RenameColumns](functions/function-table-shaping.md)** ，  **[ShowColumns](functions/function-table-shaping.md)** ，或 **[DropColumns](functions/function-table-shaping.md)** 函数。 同样, 这些函数仅更改其输出, 而不会更改其源。
 
-控件的属性还可以将表：
+控件的属性也可以是表:
 
-* **项**-适用于库、 列表框和组合框。 此属性定义的库或列表显示的表。
-* **SelectedItems** -适用于列表框和组合框。 此属性定义的用户如果选定的项表**SelectMultiple**已启用。
+* **Items** -适用于库、列表框和组合框。 此属性定义库或列表所显示的表。
+* **SelectedItems** -适用于列表框和组合框。 此属性定义了在启用**SelectMultiple**的情况下用户已选择的项的表。
 
 ## <a name="behavioral-formulas"></a>行为公式
 
-其他功能专门用于修改数据，具有负面影响。 因为这些函数不是纯，必须谨慎，生成和它们不能参与自动重新计算的应用中的值。 您可以使用这些函数只能在[行为公式](working-with-formulas-in-depth.md)。
+其他功能专门用于修改数据和产生副作用。 由于这些函数不是纯函数, 因此您必须仔细生成它们, 并且它们不能参与自动重新计算应用程序中的值。 只能在[行为公式](working-with-formulas-in-depth.md)中使用这些函数。
 
-* **[收集](functions/function-clear-collect-clearcollect.md)** ， **[清除](functions/function-clear-collect-clearcollect.md)** ， **[ClearCollect](functions/function-clear-collect-clearcollect.md)** -创建集合、 清除它们，并将添加到数据它们。
-* **[修补程序](functions/function-patch.md)** -修改记录中的一个或多个字段。
+* **[Collect](functions/function-clear-collect-clearcollect.md)** 、 **[Clear](functions/function-clear-collect-clearcollect.md)** 、 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** -创建集合、清除集合并向其中添加数据。
+* **[Patch](functions/function-patch.md)** -修改记录中的一个或多个字段。
 * **[Update](functions/function-update-updateif.md)** 、 **[UpdateIf](functions/function-update-updateif.md)** – 更新与指定的一个或多个条件匹配的记录。
 * **[Remove](functions/function-remove-removeif.md)** 、 **[RemoveIf](functions/function-remove-removeif.md)** – 删除与指定的一个或多个条件匹配的记录。
 
@@ -161,18 +161,18 @@ PowerApps 提供了一组相同的方式在表运行的函数。 这些函数采
 还可以构建一个公式来计算单个记录的数据，采用单个记录作为参数，并提供单个记录作为返回值。 返回到上面的库示例，我们使用 **Gallery1.Selected** 属性来显示用户在该库中选择的任何记录中的信息。
 
 1. 添加[ **按钮** ](controls/control-button.md)，并设置其 **[OnSelect](controls/properties-core.md)** 属性设为此公式：<br>
-    Collect( SelectedRecord, Gallery1.Selected ) 
+    Collect( SelectedRecord, Gallery1.Selected )
 
 2. 按住 Alt 键，并选择按钮。
 
-3. 在“文件”菜单中选择“集合”。  
+3. 在“文件”菜单中选择“集合”。
 
     ![](media/working-with-tables/selected-collection.png)
 
-此公式返回的一条记录不仅包含当前在该库中选择的记录中的数据，而且还包含该库中的每个控件。 例如，记录中包含与原始表中 SampleText  列匹配的 SampleText  列，以及表示用于显示此列中数据的标签的 Subtitle1  列。 在 Subtitle1  列中选择表图标可深入到该数据。
+此公式返回的一条记录不仅包含当前在该库中选择的记录中的数据，而且还包含该库中的每个控件。 例如，记录中包含与原始表中 SampleText 列匹配的 SampleText列，以及表示用于显示此列中数据的标签的 Subtitle1列。 在 Subtitle1 列中选择表图标可深入到该数据。
 
 > [!NOTE]
-> 如果已添加本主题所指定以外的元素，Subtitle1 列可能名为 Subtitle2 等。  
+> 如果已添加本主题所指定以外的元素，Subtitle1 列可能名为 Subtitle2 等。
 
 选择记录后，可以使用 **.** 运算符从中提取单个字段 。
 
@@ -211,13 +211,14 @@ PowerApps 提供了一组相同的方式在表运行的函数。 这些函数采
 
 某些函数可针对表的所有记录单独计算一个公式。 可通过多种方式使用该公式的结果：
 
-* **Filter**、**Lookup** – 公式确定是否应将该记录包含在输出中。
-* **Sort** – 公式提供作为记录排序依据的值。
-* **Concat** – 公式确定要串联在起来的字符串。
-* **ForAll** – 公式可返回任何值，这可能会产生副作用。
-* **Distinct** – 公式返回一个值，用于识别重复的记录。
 * **AddColumns** – 公式提供所添加字段的值。
 * **Average**、**Max**、**Min**、**Sum**、**StdevP**、**VarP** – 公式提供要聚合的值。
+* **Filter**、**Lookup** – 公式确定是否应将该记录包含在输出中。
+* **Concat** – 公式确定要串联在起来的字符串。
+* **Distinct** – 公式返回一个值，用于识别重复的记录。
+* **ForAll** -公式可以返回任何值, 可能会产生副作用。
+* **Sort** – 公式提供作为记录排序依据的值。
+* **With**公式可以返回任何值, 可能会产生副作用。
 
 在这些公式中，可以引用所要处理的记录的字段。 其中的每个函数创建一个“记录范围”，将在该范围中计算公式，记录的字段可用作顶级标识符。 也可以引用整个应用中的控件属性和其他值。
 
@@ -225,7 +226,7 @@ PowerApps 提供了一组相同的方式在表运行的函数。 这些函数采
 
 ![](media/working-with-tables/requested.png)
 
-若要在应用中创建此示例表，插入一个按钮，将其**OnSelect**到此公式，然后选择按钮 （单击它时按住 Alt 键在 PowerApps Studio 中） 的属性：
+若要在应用程序中创建此示例表, 请插入一个按钮, 将其 " **OnSelect** " 属性设置为此公式, 然后选择该按钮 (在按住 Alt 键的同时按住 PowerApps Studio):
 
 ```powerapps-dot
 Set( Products,
@@ -238,7 +239,7 @@ Set( Products,
 )
 ```
 
-若要确定是否任何这些产品的任何请求数大于可用：
+若要确定是否有任何这些产品的请求数超过可用的数量, 请执行以下操作:
 
 `Filter( Products, 'Quantity Requested' > 'Quantity Available' )`
 
@@ -259,7 +260,7 @@ AddColumns(
 
 ![](media/working-with-tables/toorder.png)
 
-最后，我们可以缩减结果表，只是我们想要的列：
+最后, 我们可以将结果表缩小到所需的列:
 
 ```powerapps-dot
 ShowColumns(
@@ -297,7 +298,7 @@ ShowColumns(
 
 可以使用 **ClearCollect( Y, ["A", "B"] )** 创建此集合。
 
-此外，定义一个名为的上下文变量**值**通过此公式：**UpdateContext( {Value: "!"} )**
+此外, 使用以下公式定义名为**Value**的上下文变量:**UpdateContext ({Value: "!"})**
 
 我们将这些公式组合在一起。 在此上下文中，以下公式：
 
@@ -333,23 +334,23 @@ Ungroup(
 )
 ```
 
-所有 **ForAll** 记录范围将替代全局范围。 **值**我们定义的上下文变量不是可以按名称而无需消除歧义运算符。 若要访问此值，请使用 **[@Value]** 。
+所有 **ForAll** 记录范围将替代全局范围。 未使用歧义运算符运算符定义的**值**上下文变量不能按名称提供。 若要访问此值, 请使用 **[@Value]** 。
 
-**取消分组**平展结果，因为嵌套**ForAll**函数导致嵌套的结果表。
+由于嵌套的**ForAll**函数产生嵌套的结果表, 因此**取消组合**会导致结果。
 
 ## <a name="single-column-tables"></a>单列表
 
-若要在表中的单个列上执行，使用**ShowColumns**函数如本例所示：
+若要对表中的单个列执行操作, 请使用**ShowColumns**函数, 如以下示例中所示:
 
 ```powerapps-dot
 ShowColumns( Products, "Product" )
 ```
 
-此公式将生成此单列的表：
+此公式生成此单列表:
 
 ![](media/working-with-tables/single-column.png)
 
-对于较短的替代方法，指定*Table.Column*，这只是提取的单*列*从*表*。 例如，此公式将生成与使用相同的结果**ShowColumns**。
+对于较短的替代方法, 请指定*表列*, 这将从*表*中提取只是*列*的单列表。 例如, 此公式生成的结果与使用**ShowColumns**完全相同。
 
 ```powerapps-dot
 Products.Product
@@ -398,7 +399,7 @@ Table(
 ## <a name="inline-value-tables"></a>内联值表
 可以通过在方括号中指定值来创建单列表。 生成的表包含名为 **Value** 的单个列。
 
-例如，`[ 1, 2, 3, 4 ]`等效于`Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )`并返回以下表：
+例如, `[ 1, 2, 3, 4 ]`等效于`Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )`并返回此表:
 
 ![](media/working-with-tables/inline-table.png)
 
