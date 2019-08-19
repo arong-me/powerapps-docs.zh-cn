@@ -677,6 +677,8 @@
                   href: ./canvas-apps/functions/function-form.md
                 - name: Weekday
                   href: ./canvas-apps/functions/function-datetime-parts.md
+                - name: 有
+                  href: ./canvas-apps/functions/function-with.md
                 - name: Year
                   href: ./canvas-apps/functions/function-datetime-parts.md
         - name: 在解决方案中创建应用
