@@ -1,42 +1,44 @@
 ---
 title: PowerApps 常见问题和解决方法 | Microsoft Docs
 description: PowerApps 中的常见问题及解决方法列表。
-author: AFTOwen
+author: KumarVivek
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 11/09/2018
-ms.author: anneta
+ms.date: 08/21/2019
+ms.author: kvivek
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3c3b559be5f27c6ead9a4ea2f02027637c8aea8e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ef5da72c39d06d021765500fb5d1e55299dfb1cc
+ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551620"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69896234"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps 常见问题和解决方法
 
 本文列出了你在使用 PowerApps 时可能遇到的一些常见问题。 并在适用情况下提供了解决方法。
 
-## <a name="added-after-february-2018"></a>2018 年 2 月之后新增的内容
+1. **使用验证器时在某些 Android 移动设备上登录问题**(2019 年8月21日)
 
-1. **在 Android 移动设备上的照相机问题**(2019 年 1 月 1 日)
+    在某些设备和方案中, 你可能会在使用验证器时遇到登录失败。 这是因为 OEM 限制了此功能。 有关错误和可能的缓解措施的详细信息, 请参阅[此处](https://github.com/AzureAD/azure-activedirectory-library-for-android/wiki/ADALError:-BROKER_AUTHENTICATOR_NOT_RESPONDING)。    
 
-    如果照相机控制停止 Android 设备上工作，重新发布应用，并重新打开它在设备上。 照相机控件已更新中响应 Android 操作系统中的更改并重新发布时，您的应用程序将受益于更新。
+1. **Android 移动设备上的照相机问题**(1 月1日, 2019)
 
-1. **在可变高度库中滚动**(2018 11 月 27 日)
+    如果相机控件停止在 Android 设备上工作, 请重新发布应用程序, 并将其重新打开到设备上。 照相机控件已更新以响应 Android 操作系统中的更改, 你的应用程序将在重新发布时从更新中获益。
 
-    如果当您用手指滚动浏览时遇到一个限制，它提升到，开始再次向下滚动。
+1. **在灵活高度的库中滚动**(11 月27日, 2018)
 
-1. **绘制使用鼠标或触摸屏输入不在 PowerApps 的 Windows 平滑**（sep.24, 2018)
+    如果使用手指滚动时遇到限制, 请将其抬起, 并再次开始滚动。
 
-    笔控件仅有部分支持用于绘制使用鼠标或触摸输入在 Windows 应用程序。 笔画可能是间歇性的。 平滑绘制使用笔或在浏览器中运行应用程序。
+1. **在 PowerApps For Windows 中, 用鼠标或触摸输入进行绘制不平滑**月.24, 2018)
+
+    钢笔控件仅对在 Windows 应用中使用鼠标或触摸输入进行绘制的部分支持。 笔划可能是间歇性的。 对于平滑绘图, 请在浏览器中使用笔或运行应用程序。
 
 1. PowerApps Mobile 中的多个媒体控件（2018 年 8 月 2 日）
 
@@ -51,7 +53,7 @@ ms.locfileid: "61551620"
 
 1. <a name="out-of-memory"></a>浏览器内存不足（2018 年 7 月 23 日）
 
-    如果在运行使用 PowerApps 时内存不足，请考虑下载 64 位版本的 Chrome、 Microsoft Edge 或 Internet 资源管理器。
+    如果使用 PowerApps 时内存不足, 请考虑下载64位版本的 Chrome、Microsoft Edge 或 Internet Explorer。
 
 1. 从嵌入的应用启动网站（2018 年 5 月 10 日）
 
@@ -72,8 +74,6 @@ ms.locfileid: "61551620"
 1. 更改 SharePoint 窗体布局（2018 年 3 月 7 日）
 
     自定义某些语言的 SharePoint 列表表单时，如果尝试将布局从纵向（默认）更改为横向，应用可能会显示多个错误（控件中的黄色三角形）。 若要修复这些错误并保留横向布局，请单击“撤消”。
-
-## <a name="added-in-or-before-february-2018"></a>2018 年 2 月或之前新增的内容
 
 1. **“数据表”控件**
 
