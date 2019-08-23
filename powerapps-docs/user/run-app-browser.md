@@ -5,7 +5,7 @@ author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 11/16/2018
+ms.date: 8/21/2019
 ms.author: matp
 manager: kvivek
 ms.custom: ''
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 31bef01ef46fd0fe2ed7bae30e63d53c169812db
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 00b7d5dc7960429f7cc13215cd118e26e206d7d4
+ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "63321569"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69896209"
 ---
 # <a name="run-an-app-in-a-web-browser"></a>在 Web 浏览器中运行应用
 在创建应用或与某人共享应用时，可以在 Windows、iOS、Android 上或 Web 浏览器中运行此应用。 本主题介绍如何在 Web 浏览器中从 [Dynamics 365 主页](https://home.dynamics.com)运行画布或模型驱动应用。
@@ -38,23 +38,15 @@ ms.locfileid: "63321569"
 在 [https://home.dynamics.com](https://home.dynamics.com) 上登录到 Dynamics 365。
 
 ## <a name="find-an-app-on-the-home-page"></a>在主页上查找应用
-主页上可能显示多种类型的商业应用，可通过在搜索框中键入一部分名称来找到特定应用。 还可以筛选列表，仅显示由特定源创建的应用，如 PowerApps。 要执行此操作，请单击或点击“筛选器”，然后选择源。
+主页上可能显示多种类型的商业应用，可通过在搜索框中键入一部分名称来找到特定应用。 还可以筛选列表，仅显示由特定源创建的应用，如 PowerApps。 为此, 请选择 "**筛选**", 然后选择 "源"。
 
-如果最近安装了应用，该应用可能不会立即显示在应用列表中。 单击或点击“同步”以显示所有应用。 此过程可能需要一分钟。
+如果最近安装了应用，该应用可能不会立即显示在应用列表中。 选择 "**同步**" 以显示所有应用。 此过程可能需要一分钟。
 
 ![](./media/run-app-browser/dynamics-365-home.png)
 
-## <a name="run-an-app-from-the-task-pane"></a>从任务窗格运行应用
-找到应用后，可将其固定到任务窗格，便于访问。 若要固定应用，请在应用磁贴上单击或点击省略号 (...)，然后单击或点击“固定此应用”。
-
-![](./media/run-app-browser/homepage-pin.png)
-
-若要从任务窗格运行固定的应用，在左上角中单击或点击“Dynamics 365”，在“我的应用”下找到该应用，然后单击或点击它。
-
-![](./media/run-app-browser/taskpane.png)
 
 ## <a name="run-an-app-from-a-url"></a>从 URL 中运行应用
-可以在浏览器中将应用的 URL 保存为书签，并通过选择书签来运行它，也可以通过电子邮件将 URL 作为链接发送。 如果其他人创建了一个应用并在电子邮件中与你共享，你可以通过单击或点击电子邮件中的链接来运行该应用。 使用 URL 运行应用时，系统可能提示使用 Azure Active Directory 凭据登录。
+可以在浏览器中将应用的 URL 保存为书签，并通过选择书签来运行它，也可以通过电子邮件将 URL 作为链接发送。 如果其他人创建了一个应用并将其与你的电子邮件共享, 则可以通过选择电子邮件中的链接来运行该应用。 使用 URL 运行应用时，系统可能提示使用 Azure Active Directory 凭据登录。
 
 ![](./media/run-app-browser/web-login.png)
 
