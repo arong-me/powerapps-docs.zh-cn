@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ee9ea62280b06b75bf71885c532659f0381e6d9a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c66277cbd0d0ded3bfe0bee942e9160a650d2a98
+ms.sourcegitcommit: 6dea3559e012e56fde09b95ea8a2af2a81b89a91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61555179"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000102"
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>基于 Excel 数据从头开始创建画布应用
 
@@ -30,7 +30,7 @@ ms.locfileid: "61555179"
 
 1. 复制此数据，并将其粘贴到 Excel 文件中。
 
-    | StartDay | StartTime | 志愿者 | 备份 |
+    | StartDay | StartTime | 志愿者 | Backup |
     | --- | --- | --- | --- |
     | 星期六 |上午 10:00-中午 |Vasquez |Kumashiro |
     | 星期六 |中午-下午 2:00 |Ice |Singhal |
@@ -43,7 +43,7 @@ ms.locfileid: "61555179"
 
     有关详细信息，请参阅[在 Excel 中设置表格格式](how-to-excel-tips.md)。
 
-3. 将文件以“eventsignup.xls”名称保存并关闭，然后将其上传到[云存储帐户](connections/cloud-storage-blob-connections.md)，例如 OneDrive。
+3. 将该文件保存在名称**eventsignup**下, 将其关闭, 然后将其上传到[云存储帐户](connections/cloud-storage-blob-connections.md), 例如 OneDrive。
 
 > [!IMPORTANT]
 > 可以使用自己的 Excel 文件，而仅通过此教程学习基本概念。 但是，Excel 文件中的数据必须设置为表格格式。 有关详细信息，请参阅[在 Excel 中设置表格格式](how-to-excel-tips.md)。
@@ -129,7 +129,7 @@ ms.locfileid: "61555179"
 
 1. 在右侧窗格的“属性”选项卡上，选择“字段”标签旁边的“编辑”。
 
-1. 在“Title2”框中，选择“志愿者”。
+1. 在**Title2**框中, 选择 "**志愿**者", 在 " **Subtitle2** " 框中选择 " **StartDay**", 然后在 " **Body1** " 框中选择 " **StartTime**"。
 
 1. 在“数据”窗格的右上角，单击关闭图标 (X) 将其关闭。
 

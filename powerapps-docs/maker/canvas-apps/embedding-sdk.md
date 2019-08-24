@@ -1,39 +1,39 @@
 ---
-title: 预览：在您的应用程序中嵌入的画布应用 |Microsoft Docs
-description: 在 PowerApps 中使用新的嵌入 SDK 在应用程序中嵌入的画布应用
+title: 预览版：在应用程序中嵌入画布应用 |Microsoft Docs
+description: 在 PowerApps 中使用新的嵌入 SDK 在应用程序中嵌入画布应用
 author: nkrb
 manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
 ms.author: nabuthuk
-ms.date: 05/07/2019
+ms.date: 08/23/2019
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9887cc64dd8187bd6f7f32756bc89fec4e6c8d44
-ms.sourcegitcommit: bfa128b2c35dfc11817690c3f556acae6e4bfb2f
+ms.openlocfilehash: 74bd5102703809883732fd498a587a31d669f4b2
+ms.sourcegitcommit: 6dea3559e012e56fde09b95ea8a2af2a81b89a91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65237148"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000069"
 ---
-# <a name="preview-embed-canvas-apps-in-your-applications"></a>预览：在您的应用程序中嵌入的画布应用
+# <a name="preview-embed-canvas-apps-in-your-applications"></a>预览版：在应用程序中嵌入画布应用
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-PowerApps 是高工作效率，一个低代码开发平台，使应用创建者并使任何人能够构建丰富的体验。 通过在你的应用程序中嵌入的画布应用，你可以快速轻松地将转换你的客户为应用创建者。 新的应用创建者可以扩展从创建到添加功能丰富屏幕和之间的所有内容的简单自定义窗体应用程序。 它们可以连接到的数据、 创建业务逻辑和安排工作流中的所有应用程序中。 通过启用你的客户充当应用创建者，你的应用程序和服务最后可以跨越的最后一步并完全适合你的客户的工作流，使其更有价值且不可或缺。
+PowerApps 具有高效率, 是一种低代码开发平台, 可让应用程序开发人员并使任何人都能够生成丰富的体验。 通过在应用程序中嵌入 canvas 应用, 可以快速轻松地将客户转换为应用制造商。 新的应用程序制造商可以扩展您的应用程序, 使其创建简单的自定义窗体, 以添加功能丰富的屏幕以及两者之间的一切 他们可以从应用程序中连接到数据、创建业务逻辑和协调工作流。 通过使您的客户能够充当应用程序制定者, 您的应用程序和服务最终可以跨越最后一英里的时间, 并将其完美地放入客户的工作流, 使其更加宝贵和不必要。
 
-新的画布应用嵌入的 SDK，可以嵌入画布应用程序中的应用。
+新的画布应用嵌入 SDK 使你能够在应用程序中嵌入画布应用。 
 
 > [!IMPORTANT]
 > - 这是一项预览功能。
 > - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)] 
 
-## <a name="using-the-canvas-apps-embedding-sdk-and-documentation"></a>使用嵌入的 SDK 和文档的画布应用
+## <a name="using-the-canvas-apps-embedding-sdk-and-documentation"></a>使用画布应用嵌入 SDK 和文档
 
-新的画布应用嵌入的 SDK 是一项预览功能，要求你以内部人员身份注册可以使用它。 若要注册该功能，并查看该文档：
+若要了解如何下载和使用画布应用嵌入 SDK, 请在[此处](https://download.microsoft.com/download/e/6/0/e605470b-c6f4-461c-92e7-936091bf7e3c/CanvasApps-Embedding-SDK-PublicPreview.pdf)下载文档。
 
-1. 加入作为内部人员，请访问<https://experience.dynamics.com/insider>。
-2. 搜索程序：**PowerApps 嵌入 SDK 预览版**。
+
+

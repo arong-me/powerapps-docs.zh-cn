@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f934730ec6ca432f1da4106c535cf5967f883070
-ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
+ms.openlocfilehash: e0f40e6c04b776d2e8efb41353e0da8ced6fc7c5
+ms.sourcegitcommit: 07a0fcda31557ddbafba0ca0362765229ee2fdad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550343"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70008978"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps 的公式参考
 公式组合了许多元素。  下面列出的包括：
@@ -304,6 +304,8 @@ ms.locfileid: "69550343"
 **[Select](functions/function-select.md)** - 在控件上模拟选择操作，导致对 **OnSelect** 公式进行求值。
 
 **[Set](functions/function-set.md)** – 设置全局变量的值。
+
+**[SetFocus](functions/function-setfocus.md)** –将输入焦点移到特定控件。
 
 **[ShowColumns](functions/function-table-shaping.md)** – 返回仅包含所选列的表。
 
