@@ -5,7 +5,7 @@ author: mduelae
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: overview
-ms.date: 11/16/2018
+ms.date: 8/21/2019
 ms.author: mkaur
 manager: kvivek
 ms.custom: ''
@@ -16,18 +16,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 66e021aefe3703acbb467ca244f64f33de572dc9
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 79b6088a9b75a7ac4b41263a73d8ead58520f4dd
+ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543340"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69896161"
 ---
 # <a name="how-do-i-find-and-run-apps"></a>如何查找并运行应用？
 
 无需手动处理任务来完成工作。 借助 PowerApps，可以创建和使用画布应用或模型驱动应用来快速完成工作。 创建应用后，可以与组织共享应用。 
 
-[画布应用](/powerapps/maker/canvas-apps/getting-started)为用户提供了许多对应用用户体验的控制。 应用创建者可以使用模板创建画布应用]，也可以以自己喜欢的方式配置应用。 顾名思义，画布应用是一种空白画布，你可以创建应用来满足组织中用户的需求。
+[画布应用](/powerapps/maker/canvas-apps/getting-started)为用户提供了许多对应用用户体验的控制。 应用开发者可使用模板来创建画布应用，也可按喜欢的任意方式配置该应用。 顾名思义，画布应用是一种空白画布，你可以创建应用来满足组织中用户的需求。
 
 由于画布应用本质上可以是任何应用，因此没有许多关于如何在创建后使用画布应用的帮助文档。 如需有关使用画布应用的帮助，请联系你的应用创建者或 PowerApps 管理员。
 
