@@ -6,26 +6,26 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4dff9fa391fcecd19b3cc3195d8353e342ef46b8
-ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
+ms.openlocfilehash: c8d793fcfd2992a781f92d529002e22a34a9df5a
+ms.sourcegitcommit: 742a5a21e73a811e9cea353d8275f09c22366afc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69559252"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70130341"
 ---
 # <a name="with-function-in-powerapps"></a>PowerApps 中的 With 函数
 计算值并对单个[记录](../working-with-tables.md#records)执行操作, 包括命名值的内联记录。
 
 ## <a name="description"></a>描述
 
-**With**函数为单个记录计算公式。  该公式可以计算值并/或执行操作，例如修改数据或使用连接。  使用[ **ForAll**函数](function-with.md)可以计算记录表中所有记录的公式。
+**With**函数为单个记录计算公式。  该公式可以计算值并/或执行操作，例如修改数据或使用连接。  使用[ **ForAll**函数](function-forall.md)可以计算记录表中所有记录的公式。
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
@@ -57,7 +57,7 @@ With( { radius: 10,
 
 ### <a name="nested-with"></a>嵌套方式
 
-![](media/function-with/interest-calculator.gif)
+![使用 With function 的兴趣计算器](media/function-with/interest-calculator.gif)
 
 ```powerapps-dot
 With( { AnnualRate: RateSlider/8/100,        // slider moves in 1/8th increments and convert to decimal
@@ -74,7 +74,7 @@ With( { AnnualRate: RateSlider/8/100,        // slider moves in 1/8th increments
 
 此示例**使用**函数嵌套, 为[每月抵押付款](https://en.wikipedia.org/wiki/Mortgage_calculator#Monthly_payment_formula)创建两层计算。  只要没有冲突,**具有**命名值的所有外部都将在内的内部使用。
 
-由于滑块控件只能以1为增量移动, 因此, 滑块会被分割或相乘以有效地创建自定义增量。  对于利率, **RateSlider**的**Max**属性设置为**48**, 除以8表示1/8 百分比点增量, 除以100表示从百分比到小数点的转换, 涵盖范围 0.125% 到 6%。  对于贷款量, **AmountSlider**的**Max**属性设置为**60** , 乘以 10000, 涵盖范围10000到600000。
+由于滑块控件只能以1为增量移动, 因此, 滑块会被分割或相乘以有效地创建自定义增量。  对于利率, **RateSlider**将其**最大**属性设置为**48**, 将1/8 百分比点增量除以8除以 8, 并除以100从百分比转换为十进制, 涵盖范围 0.125% 到 6%。  对于贷款量, **AmountSlider**的**Max**属性设置为**60** , 乘以 10000, 涵盖范围10000到600000。
 
 当滑块移动并显示新的贷款付款时, 将自动重新计算**With** 。  不使用任何变量, 并且无需使用滑块控件的**OnChange**属性。
 
@@ -85,7 +85,7 @@ With( { AnnualRate: RateSlider/8/100,        // slider moves in 1/8th increments
 3. 将 "**标签**" 控件添加到滑块控件的右侧。  将其**Text**属性设置为公式**RateSlider/8 & "&nbsp;%"** 。
 3. 添加另一个**滑块**控件, 并将其命名为**AmountSlider**。  将它的**Max**属性设置为60。
 3. 将 "**标签**" 控件添加到此滑块控件的左侧。  将其**Text**属性设置为 **"贷款量:"** 。 
-3. 将 "**标签**" 控件添加到此滑块控件的右侧。  将其**Text**属性设置为公式**AmountSlider/8 * 10000**
+3. 将 "**标签**" 控件添加到此滑块控件的右侧。  将其**Text**属性设置为公式**AmountSlider/8 * 10000**。
 4. 添加另一个**滑块**控件, 并将其命名为**YearsSlider**。  将它的**Max**属性设置为40。
 3. 将 "**标签**" 控件添加到此滑块控件的左侧。  将其**Text**属性设置为 **"年数:"** 。 
 3. 将 "**标签**" 控件添加到此滑块控件的右侧。  将其**Text**属性设置为公式**YearsSlider**。
