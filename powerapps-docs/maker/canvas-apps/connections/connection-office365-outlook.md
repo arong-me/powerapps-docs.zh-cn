@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4f22f55b3c64d38cc274b0b69d8e7799c1a24f60
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5ea7c9fc331d96b50d8623f4ca632859e09be7ab
+ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61545264"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70213662"
 ---
 # <a name="connect-to-office-365-outlook-from-powerapps"></a>从 PowerApps 连接到 Office 365 Outlook
 ![Office 365 Outlook](./media/connection-office365-outlook/office365icon.png)
@@ -48,8 +48,11 @@ Office 365 Outlook 连接已创建，并已添加到应用中。 现在可供使
    
     `Office365.GetEmails({fetchOnlyUnread:false})`
    
+    更改设置后, 将 "**布局**" 更改为 **"标题、副标题和正文**"。
+    
     系统会自动使用一些电子邮件填充库控件。
-3. 在库中，将第一个标签的“Text”属性设置为“`ThisItem.From`”。 将第二个标签设置为“`ThisItem.Subject`”。 将第三个标签设置为“`ThisItem.Body`”。 还可以重设标签大小。
+    
+3. 在库中，将第一个标签的“Text”属性设置为“`ThisItem.From`”。 将第二个标签设置为“`ThisItem.Subject`”。 将第三个标签设置为“`ThisItem.BodyPreview`”。 还可以重设标签大小。
    
     系统会自动使用新属性填充库控件。
 4. 此函数有几个可选参数。 将库的“Items”属性设置为以下公式之一：
