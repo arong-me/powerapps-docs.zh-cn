@@ -840,14 +840,20 @@
                       href: ./model-driven-apps/create-and-edit-forms.md
                     - name: 添加、移动或删除字段
                       href: ./model-driven-apps/add-move-or-delete-fields-on-form.md
+                    - name: 添加、移动或删除组件
+                      href: ./model-driven-apps/add-move-configure-or-delete-components-on-form.md
                     - name: 添加、移动或删除分区
                       href: ./model-driven-apps/add-move-or-delete-sections-on-form.md
                     - name: 添加、移动或删除选项卡
                       href: ./model-driven-apps/add-move-or-delete-tabs-on-form.md
-                    - name: 窗体设计器中的属性
-                      href: ./model-driven-apps/form-designer-properties.md
                     - name: 配置标头属性
                       href: ./model-driven-apps/form-designer-header-properties.md
+                    - name: 添加和配置子网格组件
+                      href: ./model-driven-apps/form-designer-add-configure-subgrid.md
+                    - name: 添加和配置快速视图组件
+                      href: ./model-driven-apps/form-designer-add-configure-quickview.md
+                    - name: 配置查找组件
+                      href: ./model-driven-apps/form-designer-add-configure-lookup.md
                     - name: 使用树视图
                       href: ./model-driven-apps/using-tree-view-on-form.md
                 - name: 窗体类型
@@ -1069,8 +1075,12 @@
           href: ./portals/admin/change-base-url.md
         - name: 启用维护模式
           href: ./portals/admin/enable-maintenance-mode.md
-        - name: 设置 Power BI 集成
-          href: ./portals/admin/set-up-power-bi-integration.md
+        - name: Power BI 集成
+          items:
+            - name: 设置 Power BI 集成
+              href: ./portals/admin/set-up-power-bi-integration.md
+            - name: 将 Power BI 报表或仪表板添加到门户中的网页
+              href: ./portals/admin/add-powerbi-report.md
         - name: 运行门户检查器
           href: ./portals/admin/portal-checker.md
         - name: 续订门户身份验证密钥
@@ -1079,6 +1089,56 @@
           href: ./portals/admin/ip-address-restrict.md
         - name: PowerApps 门户域的更新
           href: ./portals/admin/update-portal-domain.md
+        - name: 清除服务器端缓存
+          href: ./portals/admin/clear-server-side-cache.md
+        - name: 迁移 Dynamics 365 门户配置
+          href: ./portals/admin/migrate-portal-configuration.md
+    - name: 高级门户自定义
+      items:
+        - name: 使用 Liquid 模板
+          items:
+            - name: 概述
+              href: ./portals/liquid/liquid-overview.md
+            - name: 使用 Web 模板存储内容
+              href: ./portals/liquid/store-content-web-templates.md
+            - name: 了解 Liquid 运算符
+              href: ./portals/liquid/liquid-operators.md
+            - name: 可用 Liquid 类型
+              href: ./portals/liquid/liquid-types.md
+            - name: 可用 Liquid 条件运算符
+              href: ./portals/liquid/liquid-conditional-operators.md
+            - name: 可用 Liquid 对象
+              href: ./portals/liquid/liquid-objects.md
+            - name: 可用 Liquid 标记
+              items:
+                - name: 可用 Liquid 标记
+                  href: ./portals/liquid/liquid-tags.md
+                - name: 控制流标记
+                  href: ./portals/liquid/control-flow-tags.md
+                - name: 迭代标记
+                  href: ./portals/liquid/iteration-tags.md
+                - name: 变量标记
+                  href: ./portals/liquid/variable-tags.md
+                - name: 模板标记
+                  href: ./portals/liquid/template-tags.md
+                - name: PowerApps Common Data Service 实体标记
+                  href: ./portals/liquid/portals-entity-tags.md
+            - name: 可用 Liquid 筛选器
+              href: ./portals/liquid/liquid-filters.md
+            - name: 创建高级模板
+              items:
+                - name: 创建自定义页面模板
+                  href: ./portals/liquid/create-custom-template.md
+                - name: 使用混合导航来呈现页面层次结构
+                  href: ./portals/liquid/hybrid-navigation-render-page-hierachy.md
+                - name: 呈现页面的实体列表
+                  href: ./portals/liquid/render-entity-list-current-page.md
+                - name: 使用自定义页面模板呈现 RSS 源
+                  href: ./portals/liquid/render-rss-custom-page-template.md
+                - name: 呈现网站标题和主导航栏
+                  href: ./portals/liquid/render-site-header-primary-navigation.md
+        - name: OAuth 2.0 隐式授权流
+          href: ./portals/oauth-implicit-grant-flow.md
     - name: 已知问题
       href: ./portals/known-issues.md
     - name: PowerApps 门户常见问题解答
