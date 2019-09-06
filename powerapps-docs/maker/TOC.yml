@@ -911,6 +911,8 @@
                       href: ./model-driven-apps/configure-event-handlers-legacy.md
                     - name: 如何在窗体中禁用自动保存
                       href: ./model-driven-apps/manage-auto-save.md
+                    - name: 如何添加 SharePoint 文档的选项卡
+                      href: ./model-driven-apps/add-documents-tab-entity-main-form.md
             - name: 在模型驱动的窗体上嵌入画布应用
               href: ./model-driven-apps/embed-canvas-app-in-form.md
               items:

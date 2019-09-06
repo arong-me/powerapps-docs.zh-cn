@@ -9,12 +9,15 @@ ms.custom: ''
 ms.date: 07/15/2019
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: c1d1f9b15c276b6092fca4a1d741812fda99628f
-ms.sourcegitcommit: 1c0b01ab9c76ac353854f7b61d5a9ef13e8b093f
+searchScope:
+- GetStarted
+- PowerApps
+ms.openlocfilehash: 86a92e1e1723eba0f4d8f1b747a30df93314ca65
+ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68308533"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70213829"
 ---
 # <a name="what-is-powerapps"></a>什么是 PowerApps？
 
@@ -28,7 +31,7 @@ PowerApps 还提供了一个可扩展的平台，允许专业开发人员以编�
 
 ## <a name="powerapps-for-app-makerscreators"></a>面向应用创建者的 PowerApps
 
-使用 PowerApps, 你可以创建三种类型的应用:**画布**、**模型驱动**和**门户**。 详细信息：[概述如何在 PowerApps 中创建应用](maker/index.md)。
+使用 PowerApps，你可以创建三种类型的应用：**画布**、**模型驱动**和**门户**。 详细信息：[概述如何在 PowerApps 中创建应用](maker/index.md)。
 
 若要创建应用，请从 [web.powerapps.com](https://web.powerapps.com) 开始。
 
