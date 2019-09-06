@@ -3,7 +3,7 @@ title: 使用 PowerApps 禁用模型驱动应用程序中的自动保存 | Micro
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

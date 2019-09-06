@@ -33,14 +33,7 @@ search.app:
 > [!NOTE]
 >  如果您是创建要分发的应用的 ISV，则需要使用解决方案。 有关使用解决方案的详细信息，请参阅[开发人员指南：解决方案简介](/powerapps/developer/common-data-service/introduction-solutions)。  
   
- 如果您创建 PowerApps 应用是供组织使用或用于自定义 Dynamics 365 for Customer Engagement 应用，以下是您需要了解的解决方案知识：  
-  
--   创建解决方案是可选的。 您可以在 PowerApps 环境中直接生成或自定义应用程序，而无需创建解决方案。  
-  
--   当您不创建任何解决方案直接自定义 PowerApps 环境时，将使用一个名为 **Common Data Service 默认解决方案**的特殊解决方案。 此解决方案包含您在 PowerApps 环境中建立的所有自定义项。  
-  
--   还有另外一个名为**默认解决方案**的特殊解决方案。 此解决方案包含系统中的所有组件，不论是您还是其他人创建的。 您可以导出**默认解决方案**来创建您在组织中定义的自定义项的备份。 这是在最坏的情况下备份所作更改的好做法。  
-  
+
 <a name="BKMK_SolutionComponents"></a>   
 ### <a name="components"></a>组件  
  组件代表您有可能自定义的某些事项。 可以包括在解决方案中的任何项目是组件。 以下是您可以在解决方案中查看的组件的列表：  

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: article
-ms.date: 06/25/2019
+ms.date: 07/09/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -32,7 +32,7 @@ search.app:
 > - 解决方案检查器不使用 ECMAScript 6 (2015) 或更高版本处理包含 JavaScript 的解决方案。 如果检测到使用这些版本之一的 JavaScript，将报告 Web 资源发生了 JS001 语法问题。
 
 ## <a name="enable-the-solution-checker"></a>启用解决方案检查器
-安装 PowerApps 检查器解决方案之后，PowerApps 的“解决方案”区域中将提供解决方案检查器。 请注意，在 Microsoft AppSource 中浏览或搜索找不到此功能。 若要安装，请执行以下步骤：  
+默认情况下，所有 Common Data Service 环境中均已启用解决方案检查器。 在 PowerApps 的**解决方案**区域中选择非托管解决方案时，**解决方案检查器**菜单项可用。 如果**解决方案检查器**菜单中的**运行**选项不可用时，可以通过安装 PowerApps 检查器解决方案启用。 若要安装，请执行以下步骤：   
 
 1. 登录 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后选择要启用解决方案检查器的 Common Data Service 环境。 
 2. 在左侧导航窗格中，选择**解决方案**。
@@ -43,12 +43,9 @@ search.app:
 
 4. 在 AppSource 页面中选择**免费试用**。 
 
-
-<!--from editor: Should it be "solution checker" rather than "checker solution" in the following step?
-
-5. If you agree, accept the terms and conditions and select the environment to install the PowerApps checker solution. 
-6. When the installation is complete, refresh the **Solution** list on the PowerApps site to verify that the solution checker is available.  
-7. To check a solution, [Run the solution checker](#run-the-solution-checker).
+5. 如果您同意，请接受条款和条件，然后选择环境以安装 PowerApps 检查器解决方案。 
+6. 安装完毕后，在 PowerApps 站点上刷新**解决方案**列表以验证解决方案检查器是否可用。  
+7. 若要检查解决方案，请[运行解决方案检查器](#run-the-solution-checker)。
 
 
 <!-- ### Components created with the PowerApps checker
@@ -106,10 +103,19 @@ When you install the PowerApps checker these solution specific components are cr
 
 
 ## <a name="review-the-solution-checker-report"></a>查看解决方案检查器报告
-解决方案检查完成后，可从 Web 浏览器下载分析报告。 报告的格式为 [!INCLUDE [pn-excel-short](../../includes/pn-excel-short.md)]，其中包含若干可视化效果和列，可帮助您确定解决方案中检测到的每个问题的影响、类型和位置。 还提供了有关如何解决问题的详细指示信息的链接。 
+完成解决方案检查之后，可以在门户中查看分析报告，也可以从 Web 浏览器下载该报告。 门户中有用于筛选，按**问题**、**位置**或**严重性**为结果分组，以及查看解决方案中检测到的问题的详细信息的选项。 
 
 1. 在左侧窗格中选择**解决方案**。
-2. 在要下载解决方案检查器报告的非托管解决方案旁边，选择 **...**，指向**解决方案检查器**，然后选择**下载最近的报告**。  
+2. 在要查看解决方案检查器报告的非托管解决方案旁边，选择 **...**，指向**解决方案检查器**，然后选择**查看报告**。  
+3. 选择问题以查看详细信息和有关如何解决的说明。
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/solution-checker-viewresults.png "解决方案检查器查看结果")
+
+也可以下载解决方案检查结果。 将把解决方案检查器 zip 文件下载到您的 Web 浏览器指定的文件夹。下载报告为 [!INCLUDE [pn-excel-short](../../includes/pn-excel-short.md)] 格式，其中包含多个可视化项和列，用于帮助您识别解决方案中检测到的每个问题的影响、类型和位置。 还提供了有关如何解决问题的详细指示信息的链接。 
+
+1. 在左侧窗格中选择**解决方案**。
+2. 在要下载解决方案检查器报告的非托管解决方案旁边，选择 **...**，指向**解决方案检查器**，然后选择**下载报告**。  
 3. 将把解决方案检查器 zip 文件下载到 Web 浏览器指定的文件夹。
 
 下面是报告中每列的摘要。
@@ -168,10 +174,6 @@ When you install the PowerApps checker these solution specific components are cr
 | Web 资源  | [web-use-strict-mode](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-mode&client=PAChecker)  | 如果可能，使用严格模式。  | 
 | Web 资源  | [web-use-strict-equality-operators](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-equality-operators&client=PAChecker)  | 使用绝对相同的运算符。  | 
 | Web 资源  | [web-avoid-eval](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-eval&client=PAChecker)  | 请勿使用“eval”函数或其等效项。  | 
-
-## <a name="limitations"></a>限制
-
-解决方案检查器目前不能自动化。 必须从 https://web.powerapps.com 运行它。 详细信息：[运行解决方案检查器](#run-the-solution-checker)
 
 
 ### <a name="see-also"></a>另请参阅

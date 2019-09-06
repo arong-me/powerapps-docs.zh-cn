@@ -78,7 +78,7 @@ search.app:
     - **Uri**。 如果在使用 OData 数据提供程序，请输入 OData Web 服务的 uri。 例如，如果在使用 OData 提供程序连接到 Azure 中托管的 Web 服务，URI 可能类似 *`http://contosodataservice.azurewebsites.net/odata/`*。  
     - **超时(以秒为单位)**。 输入数据请求超时前等待 Web 服务响应的秒数。例如，输入 30 将最多等待 30 秒才超时。  
     - **分页模式**。 选择使用客户端还是服务器端分页控制查询结果的分页方式。 默认值为客户端分页。 如果使用服务器端分页，服务器通过使用 $skiptoken 参数（将把该参数添加到查询字符串）控制结果的分页方式。 详细信息：[跳过标记系统查询选项 ($skiptoken)](https://msdn.microsoft.com/library/dd942121.aspx)  
-        -  **返回内联计数**。 返回结果集中的总数记录。 此设置用于在将数据返回到网格时启用下一页功能。 如果 OData 终结点不支持 OData $inclinecount 参数，请使用值 false。 默认值为 false。
+        -  **返回内联计数**。 返回结果集中的总数记录。 此设置用于在将数据返回到网格时启用下一页功能。 如果 OData 终结点不支持 OData $inlinecount 参数，请使用值 false。 默认值为 false。
     - **请求参数**。 可以选择自定义用于连接到 OData Web 服务的标头或查询字符串参数，如外部服务的身份验证参数。 单击**查询字符串**可在标头和查询字符串参数与值之间切换。 最多可以添加 10 个标头或查询字符串。 
         > [!div class="mx-imgBorder"] 
         > ![虚拟实体数据源记录](media/virtual-entity-data-source.png) 

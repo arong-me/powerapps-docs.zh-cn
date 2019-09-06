@@ -57,5 +57,6 @@ search.app:
 [使用窗体设计器添加、移动或删除分区](add-move-or-delete-sections-on-form.md)  
 [使用窗体设计器添加、移动或删除选项卡](add-move-or-delete-tabs-on-form.md)  
 [窗体设计器中的可用属性](form-designer-properties.md)  
+[在窗体设计器中配置页眉属性](form-designer-header-properties.md)  
 [在窗体设计器中使用树视图](using-tree-view-on-form.md)  
 [创建和编辑字段](../common-data-service/create-edit-field-portal.md)

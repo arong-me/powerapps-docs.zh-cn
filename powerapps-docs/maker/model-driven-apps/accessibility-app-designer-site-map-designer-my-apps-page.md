@@ -23,7 +23,7 @@ search.app:
 
 Microsoft 致力于使每个人都能轻松使用其产品和服务。 详细信息：[Microsoft 的辅助功能](http://www.microsoft.com/enable/default.aspx)  
  
-本主题介绍模型驱动应用提供的辅助功能。  
+本主题介绍模型驱动应用程序提供的辅助功能。  
   
 ## <a name="keyboard-shortcuts"></a>键盘快捷方式  
 PowerApps 提供键盘快捷方式以解决灵活性有限或行动不便人士所面临的问题。  

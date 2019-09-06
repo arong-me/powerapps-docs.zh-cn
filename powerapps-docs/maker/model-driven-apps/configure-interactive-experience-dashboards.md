@@ -76,7 +76,7 @@ search.app:
  > ![单流仪表板布局。](media/interactive-dashboards-single-stream-layout.png "单流仪表板布局。")  
   
 <a name="BKMK_Enable"></a>   
-## <a name="configure-fiter-fields-and-security-roles-for-the-interactive-dashboards"></a>为交互式仪表板配置筛选器、字段和安全角色  
+## <a name="configure-filter-fields-and-security-roles-for-the-interactive-dashboards"></a>为交互式仪表板配置筛选器、字段和安全角色  
  在配置交互式仪表板时，您的第一个任务是启用筛选器字段和安全角色，以便可以为它们配置交互式仪表板。 请注意，默认为所有实体和自定义实体启用交互式仪表板。 
   
 ### <a name="configure-filter-fields"></a>配置筛选器字段  

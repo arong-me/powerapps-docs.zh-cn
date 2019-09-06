@@ -81,5 +81,11 @@ search.app:
 
 
 ## <a name="see-also"></a>另请参阅
-[模型驱动的窗体设计器概述](form-designer-overview.md) <br />
-[使用窗体设计器创建或编辑窗体](create-and-edit-forms.md)
+[模型驱动的窗体设计器概述](form-designer-overview.md)  
+[使用窗体设计器创建或编辑窗体](create-and-edit-forms.md)  
+[使用窗体设计器添加、移动或删除字段](add-move-or-delete-fields-on-form.md)  
+[使用窗体设计器添加、移动或删除分区](add-move-or-delete-sections-on-form.md)  
+[使用窗体设计器添加、移动或删除选项卡](add-move-or-delete-tabs-on-form.md)  
+[在窗体设计器中配置页眉属性](form-designer-header-properties.md)  
+[在窗体设计器中使用树视图](using-tree-view-on-form.md)  
+[创建和编辑字段](../common-data-service/create-edit-field-portal.md)

@@ -33,7 +33,7 @@ search.app:
 
 ![错误消息栏](media/solution-checker-missing-roles-error.png)
 
-在后台处理分析期间发生的失败将以**无法完成**状态失败，并在 PowerApps 门户返回错误消息，同时向请求者发送电子邮件通知。 
+在后台处理分析期间发生的失败将以 **“无法完成”** 状态失败，并在 PowerApps 门户返回错误消息，同时向请求者发送电子邮件通知。 
 
 ![错误状态](media/solution-checker-exception-status.png)
 
@@ -92,7 +92,7 @@ search.app:
 
 ## <a name="solution-checker-fails-due-to-missing-security-roles"></a>解决方案检查器由于缺少安全角色失败
 
-解决方案检查器的应用程序用户需要两个分派的安全角色来提供与 Common Data Service 组织进行通信所需的必要权限。 如果这些角色的哪一个未分派给用户**PowerApps 检查器**，尝试运行分析、下载结果和运行取消将失败。 这最经常在客户已部署了可移除意外用户的安全角色的自动化时发生。 以下安全角色包含最低必需权限：
+解决方案检查器的应用程序用户需要两个分派的安全角色来提供与 Common Data Service 组织进行通信所需的必要权限。 如果这些角色的哪一个未分派给用户 **“PowerApps 检查器”**，尝试运行分析、下载结果和运行取消将失败。 这最经常在客户已部署了可移除意外用户的安全角色的自动化时发生。 以下安全角色包含最低必需权限：
 
 - 导出自定义项
 - 解决方案检查器
@@ -102,27 +102,27 @@ search.app:
 向 PowerApps 检查器用户分派缺少的安全角色：
 
 1. 打开您的 Common Data Service 组织并导航到**设置** > **安全性** > **用户**。
-2. 从用户列表中选择**PowerApps 检查器**用户。
+2. 从用户列表中选择 **“PowerApps 检查器”** 用户。
 3. 在命令栏中选择**管理角色**。
-4. 选中**导出自定义项**和**解决方案检查器**角色复选框，然后选择**确定**。<br/>
+4. 选中 **“导出自定义项”** 和 **“解决方案检查器”** 角色复选框，然后选择**确定**。<br/>
 ![所需安全角色](media/solution-checker-required-roles.png)
 
 5. 再次运行解决方案检查器。
 
 ## <a name="solution-checker-fails-due-to-restricted-access-mode"></a>解决方案检查器由于受限访问模式失败
 
-解决方案检查器的应用程序用户需要**非交互**或**读写**访问模式来与 Common Data Service 组织通信。 如果访问模式已更改为其他值，如**管理**，则尝试运行分析、下载结果和运行取消将失败。
+解决方案检查器的应用程序用户需要 **“非交互”** 或 **“读写”** 访问模式来与 Common Data Service 组织通信。 如果访问模式已更改为其他值，如 **“管理”**，则尝试运行分析、下载结果和运行取消将失败。
 
-若要解决此问题，必须更新具有“非交互”访问模式的**PowerApps 检查器**应用程序用户。
+若要解决此问题，必须更新具有“非交互”访问模式的 **“PowerApps 检查器”** 应用程序用户。
 
 ### <a name="how-to-update-user-access-mode"></a>如何更新用户访问模式
 
 更新 PowerApps 检查器用户的访问模式：
 
 1. 打开您的 Common Data Service 组织并导航到**设置** > **安全性** > **用户**。
-2. 从用户列表中选择**PowerApps 检查器**用户，然后双击打开用户窗体。
-3. 滚动到窗体的**管理** > **客户端访问许可证 (CAL) 信息**部分。
-4. 在**访问模式**下拉列表控件中选择**非交互**。<br/>
+2. 从用户列表中选择 **“PowerApps 检查器”** 用户，然后双击打开用户窗体。
+3. 滚动到窗体的 **“管理”** > **“客户端访问许可证 (CAL) 信息”** 部分。
+4. 在**访问模式**下拉列表控件中选择 **“非交互”**。<br/>
 ![访问模式](media/solution-checker-access-mode.png)
 
 5. 保存并关闭用户窗体。
@@ -140,15 +140,15 @@ search.app:
 
 1. 在 [Azure Active Directory (AAD) 门户](https://aad.portal.azure.com/)中访问您的租户。
 2. 导航至**企业应用程序**。
-3. 选择**所有应用程序**，然后搜索**PowerApps-Advisor**。<br/>
+3. 选择**所有应用程序**，然后搜索 **“PowerApps-Advisor”**。<br/>
 ![搜索 PowerApps-Advisor 应用](media/solution-checker-search-advisor-app.png)
 
-4. 选择**PowerApps-Advisor**查看应用详细信息。
+4. 选择 **“PowerApps-Advisor”** 查看应用详细信息。
 5. 选择**属性**。
-6. 检查**已为用户登录启用**的状态。 如果为**否**，则应用程序被禁用。<br/>
+6. 检查**已为用户登录启用**的状态。 如果为 **“否”**，则应用程序被禁用。<br/>
 ![禁用的企业应用](media/solution-checker-disabled-app.png)
 
-7. 选择单选按钮控件将值切换到**是**。 这将启用应用程序。<br/>
+7. 选择单选按钮控件将值切换到 **“是”**。 这将启用应用程序。<br/>
 ![启用 PowerApps-Advisor 应用](media/solution-checker-enable-app.png)
 
 8. 选择**保存**。 应用程序现在已启用。 您可能需要等待几分钟让更改传播。
