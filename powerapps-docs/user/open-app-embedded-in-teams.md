@@ -1,13 +1,13 @@
 ---
 title: 将应用添加到 Microsoft Teams | Microsoft Docs
 description: 了解如何将应用添加到 Microsoft Teams 频道，以便你与之共享应用的用户可以在此频道中打开该应用。
-author: mgblythe
+author: mduelae
 manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
 ms.date: 11/16/2018
-ms.author: matp
+ms.author: mduelae
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 34fc4f9603ebfcb9944b871f211a6b1541235ed5
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: dc13524f4f567365cdcb6bf9898b62fcb6eac4c4
+ms.sourcegitcommit: 7a96b693e320d0fced7a82987c012b80002cfd84
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "63321665"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70848228"
 ---
 # <a name="add-an-app-to-microsoft-teams"></a>将应用添加到 Microsoft Teams
 
@@ -84,7 +84,7 @@ Microsoft Teams 是基于 Office 365 技术构建的聊天协作平台。 你可
 
 * 应用必须通过安全 (https) 连接加载图像和 .pdf 文件等内容。
 * 并不是所有传感器（如“Acceleration”、“Compass”和“Location”）都受支持。
-* 仅支持这些音频格式:AAC、H264、OGG Vorbis 和 WAV。
+* 仅支持这些音频格式：AAC、H264、OGG Vorbis 和 WAV。
 
 ## <a name="clean-up-resources"></a>清理资源
 
