@@ -1155,8 +1155,6 @@
           href: ./common-data-service/data-platform-create-entity.md
         - name: 创建带组件的自定义实体
           href: ./common-data-service/create-custom-entity.md
-        - name: 使用 Power Query 将数据添加到实体
-          href: ./common-data-service/data-platform-cds-newentity-pq.md
         - name: 实体和元数据
           href: ./common-data-service/create-edit-metadata.md
         - name: 实体类型
@@ -1305,6 +1303,17 @@
           href: ./common-data-service/set-managed-properties-metadata.md
         - name: 发布更改
           href: ./common-data-service/publish-changes-for-use-customer-service-hub.md
+    - name: 使用数据流
+      href: ./common-data-service/self-service-data-prep-with-dataflows.md
+      items:
+        - name: 创建和使用数据流
+          href: ./common-data-service/create-and-use-dataflows.md
+        - name: 使用 Power Query 将数据添加到实体
+          href: ./common-data-service/data-platform-cds-newentity-pq.md
+        - name: 连接 Azure Data Lake 进行数据流存储
+          href: ./common-data-service/connect-azure-data-lake-storage-for-dataflow.md
+        - name: 使用本地数据网关
+          href: ./common-data-service/using-dataflows-with-on-premises-data.md
     - name: 实体的许可证要求
       href: ./common-data-service/data-platform-entity-licenses.md
       items:
