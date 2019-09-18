@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/01/2015
+ms.date: 09/14/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 86d36af00d3c5aa825b01ed873150f94738a952c
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 2db3d31936329444746620e91e3414be914087d2
+ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61546506"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71038196"
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>PowerApps 中的 Collect、Clear 和 ClearCollect 函数
 
@@ -31,8 +31,8 @@ ms.locfileid: "61546506"
 **Collect** 函数将记录添加到数据源。 可添加的项包括：
 
 - 单个值：值将放入 **[值](function-value.md)** 新记录的字段。  所有其他属性保留为[空白](function-isblank-isempty.md)。
-- 一条记录：每个命名的属性都置于新记录的相应属性中。  所有其他属性保留为空白。
-- 一个[表](../working-with-tables.md):表的每条记录被添加为数据源，如上文所述的单独的记录。 表不是以嵌套表形式添加到记录。 为实现此目的，需首先将表包装在记录中。
+- A 记录：每个命名属性都放置在新记录的相应属性中。  所有其他属性保留为空白。
+- [表](../working-with-tables.md)：表中的每条记录都作为数据源的单独记录添加，如上所述。 表不是以嵌套表形式添加到记录。 为实现此目的，需首先将表包装在记录中。
 
 当用于集合时，将根据需要创建额外的[列](../working-with-tables.md#columns)。 该数据源将固定其他数据源的列，且无法添加新列。  
 
@@ -48,7 +48,7 @@ ms.locfileid: "61546506"
 
 **Clear** 函数删除集合的所有记录。  集合的列将保留。
 
-请注意，**Clear** 仅对集合执行运算，而不包括其他数据源。  鉴于此，可以使用 **[RemoveIf](function-remove-removeif.md)( *DataSource*, true )**。  此函数将删除数据源存储中的所有记录并影响其他用户，请谨慎使用。
+请注意，**Clear** 仅对集合执行运算，而不包括其他数据源。  鉴于此，可以使用 **[RemoveIf](function-remove-removeif.md)( *DataSource*, true )** 。  此函数将删除数据源存储中的所有记录并影响其他用户，请谨慎使用。
 
 可使用 **[Remove](function-remove-removeif.md)** 函数选择性地删除记录。
 
@@ -86,8 +86,19 @@ ms.locfileid: "61546506"
 
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
-| **ClearCollect( IceCream, {&nbsp;Flavor:&nbsp;"Strawberry",&nbsp;Quantity:&nbsp;300&nbsp;} )** |清除 **IceCream** 集合中的所有数据，然后添加包含草莓冰淇淋数量的记录。 |<style> i m g {最大宽度： none} </style> ![具有一条记录的表](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>**IceCream** 数据源也已得到修改。 |
-| **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |向 **IceCream** 集合添加两条记录，其中包括开心果味冰淇淋和橙子味冰淇淋的数量。 |![具有两个记录的表](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>**IceCream** 数据源也已得到修改。 |
-| **Clear( IceCream )** |删除 **IceCream** 集合中的所有记录。 |![空表](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>**IceCream** 数据源也已得到修改。 |
+| **ClearCollect( IceCream, {&nbsp;Flavor:&nbsp;"Strawberry",&nbsp;Quantity:&nbsp;300&nbsp;} )** |清除 **IceCream** 集合中的所有数据，然后添加包含草莓冰淇淋数量的记录。 |<style>img {最大宽度：无}</style>![包含一条记录的表](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>还修改了**IceCream**集合。 |
+| **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |将两个记录添加到**IceCream**集合，该集合包含数量为 pistachio 和橙色的冰淇淋。 |![具有两条记录的表](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>还修改了**IceCream**集合。 |
+| **Clear( IceCream )** |删除 **IceCream** 集合中的所有记录。 |![空表](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>还修改了**IceCream**集合。 |
 
 有关如何创建集合的分步示例，请参阅[创建和更新集合](../create-update-collection.md)。
+
+### <a name="records-and-tables"></a>记录和表
+
+这些示例将检查如何处理要**收集**和**ClearCollect**的记录和表参数。
+
+| 公式 | 描述 | 结果 |
+| --- | --- | --- |
+| **ClearCollect （IceCream，{&nbsp;口味：&nbsp;"巧克力"，&nbsp;数量：&nbsp;100&nbsp;}，{&nbsp;口味：&nbsp;"Vanilla"，&nbsp;数量：&nbsp;200&nbsp;}  )** | 清除所有数据，然后将两个记录添加到**IceCream**集合，其中包括数量为巧克力和 vanilla 冰淇淋。  要添加的记录作为函数的各个参数提供。| ![添加到集合的巧克力和 Vanilla 记录](media/function-clear-collect-clearcollect/icecream.png) <br><br>还修改了**IceCream**集合。 |
+| **ClearCollect （IceCream，Table （{&nbsp;口味：&nbsp;"巧克力"，&nbsp;数量：&nbsp;100&nbsp;}，{&nbsp;口味：&nbsp;"Vanilla"，&nbsp;数量：&nbsp;200&nbsp;}））** | 与前面的示例相同，不同之处在于，记录合并在一个表中，并通过单个自变量传入。 在将记录添加到**IceCream**集合之前，将按记录提取表的内容。 | ![添加到集合的巧克力和 Vanilla 记录](media/function-clear-collect-clearcollect/icecream.png)<br><br>还修改了**IceCream**集合。 |
+| **ClearCollect （IceCream，<br>{&nbsp;MyFavorites：表（{&nbsp;口味：&nbsp;"Chocoalte"，&nbsp;数量：&nbsp;100&nbsp;}，{&nbsp;口味：&nbsp;"Vanilla"，&nbsp;数量：&nbsp;200&nbsp;} ) } )** | 与前面的示例相同，只是表包装在记录中。  不提取表的记录，而是将整个表作为记录的子表添加。 | ![添加到集合的巧克力和 Vanilla 记录](media/function-clear-collect-clearcollect/icecream-myfavorites.png)<br><br>还修改了**IceCream**集合。 |
+

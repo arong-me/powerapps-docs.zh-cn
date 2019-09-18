@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 10/25/2016
+ms.date: 09/14/2019
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6fedff6d6ffc34fe390ec6978672d699480a7cb9
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: dceb9eee8eb5a0ed11a4b44fb2df6d63ba5e9cae
+ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548722"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71038238"
 ---
 # <a name="screen-control-in-powerapps"></a>PowerApps 中的屏幕控件
 
@@ -26,7 +26,7 @@ ms.locfileid: "61548722"
 
 ## <a name="description"></a>描述
 
-大多数应用都有多个“屏幕”控件，其中包含[标签](control-text-box.md)控件、[按钮](control-button.md)控件和其他显示数据和支持导航的控件。 有关如何添加一个屏幕、 重新排列屏幕，并配置导航的信息，请查看[添加一个屏幕](../add-screen-context-variables.md)。
+大多数应用都有多个“屏幕”控件，其中包含[标签](control-text-box.md)控件、[按钮](control-button.md)控件和其他显示数据和支持导航的控件。 有关如何添加屏幕、对屏幕重新排序和配置导航的信息，请查看[添加屏幕](../add-screen-context-variables.md)。
 
 ## <a name="key-properties"></a>关键属性
 
@@ -36,7 +36,7 @@ ms.locfileid: "61548722"
 
 ## <a name="additional-properties"></a>其他属性
 
-**高度**-屏幕的高度。 如果应用程序可以响应 ([**缩放以适合**](../set-aspect-ratio-portrait-landscape.md#change-screen-size-and-orientation)是**关闭**) 和其运行应用的设备是短于此属性，屏幕可垂直滚动。
+**Height** -屏幕的高度。 如果应用有响应（"[**缩放到合适**](../set-aspect-ratio-portrait-landscape.md#change-screen-size-and-orientation)" 处于**关闭状态**），并且运行该应用的设备小于此属性，则屏幕可以垂直滚动。
 
 **[ImagePosition](properties-visual.md)** – 屏幕或控件大小与图像大小不同时，其中图像的位置（“填充”、“适应”、“拉伸”、“平铺”或“居中”）。
 
@@ -44,20 +44,13 @@ ms.locfileid: "61548722"
 
 OnHidden – 应用在用户离开屏幕时的行为。
 
-OnStart – 用户打开应用时应用的行为。
+OnVisible – 应用在用户转到屏幕时的行为。  使用此属性设置变量并预先加载屏幕使用的数据。  在应用程序启动时，使用[**app.config**](../functions/object-app.md#onstart-property)属性进行设置。
 
-- 此属性设置为的公式在应用第一屏出现之前运行。 调用 [**Navigate**](../functions/function-navigate.md) 函数可以更改应用启动时显示的第一屏。
-- 无法使用 [UpdateContext](../functions/function-updatecontext.md) 函数设置[上下文变量](../working-with-variables.md)，因为尚未显示任何屏幕。 不过，可以在 Navigate 函数中传递上下文变量，并使用 [Collect](../functions/function-clear-collect-clearcollect.md) 函数创建和填充[集合](../working-with-variables.md)。
-- 更新应用后，此属性设置为的公式在 PowerApps Studio 中加载应用时运行。 必须保存、关闭和重新加载应用，才能查看更改此属性产生的影响。
-- OnStart 属性实际上是应用（而非屏幕）的属性。 为了方便编辑，请在应用的第一屏上将它作为属性进行查看和修改。 如果删除第一屏或重新排列屏幕，可能会难以查找此属性。 在这种情况下，保存、关闭并重新加载应用，此属性便会作为第一屏的属性重新出现。
+**方向**-屏幕的方向。 如果其**宽度**大于其**高度**，则方向将是**Layout。水平**;否则，它将为**垂直布局**。
 
-OnVisible – 应用在用户转到屏幕时的行为。
+**大小**-用于对屏幕大小进行分类的正整数。 通过将屏幕的**Width**属性与[**SizeBreakpoints**](../functions/signals.md)属性中的值进行比较来确定分类。 **ScreenSize**类型由四个值（**小**、**中**、**大**和**超大型**）组成，它们对应于整数1到4。
 
-**方向**-屏幕的方向。 如果其**宽度**大于其**高度**，方向将是**Layout.Horizontal**; 否则为它将是**Layout.Vertical**.
-
-**大小**-一个正整数，用于将分类屏幕的大小。 通过比较屏幕的确定分类**宽度**属性中的值[ **App.SizeBreakpoints** ](../functions/signals.md)属性。 **屏幕大小**类型包含以下四个值 (**小型**，**中等**，**大**，并**ExtraLarge**) 对应于整数 1 到 4。
-
-**宽度**-屏幕的宽度。 如果应用程序可以响应 ([**缩放以适合**](../set-aspect-ratio-portrait-landscape.md#change-screen-size-and-orientation)是**关闭**) 和其运行应用的设备是窄于此属性，可水平滚动屏幕。
+**Width** -屏幕的宽度。 如果应用有响应（"[**缩放到合适**](../set-aspect-ratio-portrait-landscape.md#change-screen-size-and-orientation)" 处于**关闭状态**），并且运行该应用的设备比此属性窄，则屏幕可以水平滚动。
 
 ## <a name="related-functions"></a>相关函数
 
@@ -89,15 +82,15 @@ OnVisible – 应用在用户转到屏幕时的行为。
 
 1. 选择**源**屏幕上，然后在按住 Alt 键，同时选择中的任一选项 **[单选](control-radio.md)** 控件，并选择 **[形状](control-shapes-icons.md)** 控件。
 
-    **目标**将出现在所选的颜色。
+    **目标**显示为您选择的颜色。
 
 1. 在中**目标**，选择 **[形状](control-shapes-icons.md)** 控件以返回**源**。
 
 1. （可选）选择中的其他选项 **[单选](control-radio.md)** 控制，并选择 **[形状](control-shapes-icons.md)** 控件以确认**目标**将出现在另一种颜色。
 
-1. （可选）将鼠标悬停上对屏幕进行重新排序**目标**中左侧的导航栏中，选择显示的省略号，然后选中**向上移动**。
+1. 可有可无通过将鼠标悬停在左侧导航栏中的 "**目标**" 上方，选择显示的省略号，然后选择 "**上移**"，对屏幕重新排序。
 
-    **目标**首先出现在用户打开应用时。
+    当用户打开应用时，将首先出现**目标**。
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 
@@ -108,7 +101,7 @@ OnVisible – 应用在用户转到屏幕时的行为。
 - **[Fill](properties-color-border.md)** 和文本
 - **[BackgroundImage](properties-visual.md)** 和文本（如果适用）
 
-例如，如果“屏幕”包含 **[标签](control-text-box.md)**，而标签具有透明填充，则屏幕的 **[Fill](properties-color-border.md)** 将有效地成为标签的背景色。
+例如，如果“屏幕”包含 **[标签](control-text-box.md)** ，而标签具有透明填充，则屏幕的 **[Fill](properties-color-border.md)** 将有效地成为标签的背景色。
 
 除了文本，请考虑检查与基本图形对象之间的颜色对比度，如 **[“评级”](control-rating.md)** 控件中的星级图像。
 

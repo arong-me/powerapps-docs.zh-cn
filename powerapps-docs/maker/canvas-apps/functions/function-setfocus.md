@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fce0148e77432aa136a6279eb7fb69c0ca3b0846
-ms.sourcegitcommit: de77b6d5f77e84961fff9a399622ba8eeb48d4c3
+ms.openlocfilehash: cdf34c3c4909697b70a105e5145620ab5bd31ea9
+ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70037088"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71038158"
 ---
 # <a name="setfocus-function-in-powerapps"></a>PowerApps 中的 SetFocus 函数
 将输入焦点移到特定控件。 
@@ -33,7 +33,7 @@ ms.locfileid: "70037088"
 
 具有焦点的控件可能会根据[**FocusedBorderColor**](../controls/properties-color-border.md)和[**FocusedBorderThickness**](../controls/properties-color-border.md)属性在视觉上有所不同。
 
-## <a name="limitatoins"></a>Limitatoins
+## <a name="limitations"></a>限制
 
 **SetFocus**只能与一起使用：
 - [**Button**](../controls/control-button.md)控件
