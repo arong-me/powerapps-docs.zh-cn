@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d2a7da93835e5fbe588a8683bbdb0393d5b76ee5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d230d38c8393540bc78fd003ecb167f1f3978b97
+ms.sourcegitcommit: fe18d82dbbd3972c472fd69f7feb3a35c3a31153
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61564240"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150242"
 ---
 # <a name="manage-canvas-app-connections-in-powerapps"></a>管理 PowerApps 中的画布应用连接
 在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中，创建到一个或多个数据源的连接、删除连接或更新其凭据。
@@ -43,7 +43,7 @@ ms.locfileid: "61564240"
 
 最常见的数据源类型是表，它可用于检索和存储信息。 可以利用到数据源的连接，采用 Microsoft Excel 工作簿、SharePoint 列表、SQL 表和许多其他格式来读取和写入数据，并将这些数据存储在 OneDrive for Business、DropBox、SQL Server 等云服务中。
 
-除表以外，还有其他数据源类型，例如电子邮件、日历、Twitter 和（即将推出的）通知。
+其他类型的数据源不是表，如电子邮件、日历、twitter 和通知。
 
 使用 **[库](controls/control-gallery.md)** 、 **[显示窗体](controls/control-form-detail.md)** 和 **[编辑窗体](controls/control-form-detail.md)** 控件，可以轻松创建一个在数据源中读取和写入数据的应用。 若要开始操作，请阅读[了解数据窗体](working-with-forms.md)一文。
 
@@ -86,4 +86,5 @@ ms.locfileid: "61564240"
 
 * 若要更新连接凭据，请单击或点击钥匙图标，然后为该连接提供凭据。
 * 若要删除连接，单击或点击回收站图标。
+* 单击或点击信息图标以查看连接详细信息。
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 507bac0b57cdc1e348bd384d5544d7b664a3e0f5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c9f7f0184f70643417154f229c1e957ea6218b34
+ms.sourcegitcommit: fe18d82dbbd3972c472fd69f7feb3a35c3a31153
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61557315"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150264"
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>从 PowerApps 连接到 Office 365 用户连接
 ![Office 365 用户](./media/connection-office365-users/office365icon.png)
@@ -44,17 +44,24 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 1. 在“插入”菜单上，选择“标签”
 2. 在函数栏中，将其 **[Text](../controls/properties-core.md)** 属性设置为下列公式之一：
 
-    `Office365Users.MyProfile().Department`  
-    `Office365Users.MyProfile().DisplayName`  
-    `Office365Users.MyProfile().GivenName`  
-    `Office365Users.MyProfile().Id`  
-    `Office365Users.MyProfile().JobTitle`  
-    `Office365Users.MyProfile().Mail`  
-    `Office365Users.MyProfile().MailNickname`  
-    `Office365Users.MyProfile().Surname`  
-    `Office365Users.MyProfile().TelephoneNumber`  
-    `Office365Users.MyProfile().UserPrincipalName`  
-    `Office365Users.MyProfile().AccountEnabled`  
+   `Office365Users.MyProfile().City`  
+   `Office365Users.MyProfile().CompanyName`  
+   `Office365Users.MyProfile().Country`  
+   `Office365Users.MyProfile().Department`  
+   `Office365Users.MyProfile().DisplayName`  
+   `Office365Users.MyProfile().GivenName`  
+   `Office365Users.MyProfile().Id`  
+   `Office365Users.MyProfile().JobTitle`  
+   `Office365Users.MyProfile().Mail`  
+   `Office365Users.MyProfile().MailNickname`  
+   `Office365Users.MyProfile().mobilePhone`  
+   `Office365Users.MyProfile().OfficeLocation`  
+   `Office365Users.MyProfile().PostalCode`  
+   `Office365Users.MyProfile().Surname`  
+   `Office365Users.MyProfile().TelephoneNumber`  
+   `Office365Users.MyProfile().UserPrincipalName`  
+   `Office365Users.MyProfile().AccountEnabled`  
+   `Office365Users.MyProfile().BusinessPhones`
 
 此时，标签显示所输入的有关当前用户的信息。
 
@@ -67,30 +74,45 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 
    * 显示其他用户的信息：  
 
-       `Office365Users.UserProfile(InfoAbout.Text).Department`  
-       `Office365Users.UserProfile(InfoAbout.Text).DisplayName`  
-       `Office365Users.UserProfile(InfoAbout.Text).GivenName`  
-       `Office365Users.UserProfile(InfoAbout.Text).Id`  
-       `Office365Users.UserProfile(InfoAbout.Text).JobTitle`  
-       `Office365Users.UserProfile(InfoAbout.Text).Mail`  
-       `Office365Users.UserProfile(InfoAbout.Text).MailNickname`  
-       `Office365Users.UserProfile(InfoAbout.Text).Surname`  
-       `Office365Users.UserProfile(InfoAbout.Text).TelephoneNumber`  
-       `Office365Users.UserProfile(InfoAbout.Text).UserPrincipalName`  
-       `Office365Users.UserProfile(InfoAbout.Text).AccountEnabled`  
+     `Office365Users.UserProfile(InfoAbout.Text).City`  
+     `Office365Users.UserProfile(InfoAbout.Text).CompanyName`  
+     `Office365Users.UserProfile(InfoAbout.Text).Country`  
+     `Office365Users.UserProfile(InfoAbout.Text).Department`  
+     `Office365Users.UserProfile(InfoAbout.Text).DisplayName`  
+     `Office365Users.UserProfile(InfoAbout.Text).GivenName`  
+     `Office365Users.UserProfile(InfoAbout.Text).Id`  
+     `Office365Users.UserProfile(InfoAbout.Text).JobTitle`  
+     `Office365Users.UserProfile(InfoAbout.Text).Mail`  
+     `Office365Users.UserProfile(InfoAbout.Text).MailNickname`  
+     `Office365Users.UserProfile(InfoAbout.Text).mobilePhone`  
+     `Office365Users.UserProfile(InfoAbout.Text).OfficeLocation`  
+     `Office365Users.UserProfile(InfoAbout.Text).PostalCode`  
+     `Office365Users.UserProfile(InfoAbout.Text).Surname`  
+     `Office365Users.UserProfile(InfoAbout.Text).TelephoneNumber`  
+     `Office365Users.UserProfile(InfoAbout.Text).UserPrincipalName`  
+     `Office365Users.UserProfile(InfoAbout.Text).AccountEnabled`  
+     `Office365Users.UserProfile(InfoAbout.Text).BusinessPhones`
+
    * 显示其他用户经理的相关信息：  
 
-       `Office365Users.Manager(InfoAbout.Text).Department`  
-       `Office365Users.Manager(InfoAbout.Text).DisplayName`  
-       `Office365Users.Manager(InfoAbout.Text).GivenName`  
-       `Office365Users.Manager(InfoAbout.Text).Id`  
-       `Office365Users.Manager(InfoAbout.Text).JobTitle`  
-       `Office365Users.Manager(InfoAbout.Text).Mail`  
-       `Office365Users.Manager(InfoAbout.Text).MailNickname`  
-       `Office365Users.Manager(InfoAbout.Text).Surname`  
-       `Office365Users.Manager(InfoAbout.Text).TelephoneNumber`  
-       `Office365Users.Manager(InfoAbout.Text).UserPrincipalName`  
-       `Office365Users.Manager(InfoAbout.Text).AccountEnabled`  
+     `Office365Users.Manager(InfoAbout.Text).City`  
+     `Office365Users.Manager(InfoAbout.Text).CompanyName`  
+     `Office365Users.Manager(InfoAbout.Text).Country`  
+     `Office365Users.Manager(InfoAbout.Text).Department`  
+     `Office365Users.Manager(InfoAbout.Text).DisplayName`  
+     `Office365Users.Manager(InfoAbout.Text).GivenName`  
+     `Office365Users.Manager(InfoAbout.Text).Id`  
+     `Office365Users.Manager(InfoAbout.Text).JobTitle`  
+     `Office365Users.Manager(InfoAbout.Text).Mail`  
+     `Office365Users.Manager(InfoAbout.Text).MailNickname`  
+     `Office365Users.Manager(InfoAbout.Text).mobilePhone`  
+     `Office365Users.Manager(InfoAbout.Text).OfficeLocation`  
+     `Office365Users.Manager(InfoAbout.Text).PostalCode`  
+     `Office365Users.Manager(InfoAbout.Text).Surname`  
+     `Office365Users.Manager(InfoAbout.Text).TelephoneNumber`  
+     `Office365Users.Manager(InfoAbout.Text).UserPrincipalName`  
+     `Office365Users.Manager(InfoAbout.Text).AccountEnabled`  
+     `Office365Users.Manager(InfoAbout.Text).BusinessPhones`
 
 此时，标签显示所输入的有关指定用户或其经理的信息。
 
@@ -135,11 +157,11 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 
 | 函数名称 | 描述 |
 | --- | --- |
-| [MyProfile](connection-office365-users.md#myprofile) |检索当前用户的配置文件 |
-| [UserProfile](connection-office365-users.md#userprofile) |检索特定用户配置文件 |
-| [Manager](connection-office365-users.md#manager) |检索指定用户经理的用户配置文件 |
-| [DirectReports](connection-office365-users.md#directreports) |返回指定用户的直接上级 |
-| [SearchUser](connection-office365-users.md#searchuser) |检索用户配置文件的搜索结果 |
+| [DirectReports](connection-office365-users.md#directreports) |返回指定用户的直接下属。 |
+| [Manager](connection-office365-users.md#manager) |检索指定用户的经理的用户配置文件。 |
+| [MyProfile](connection-office365-users.md#myprofile) |检索当前用户的配置文件。 |
+| [SearchUser](connection-office365-users.md#searchuser) |检索用户配置文件的搜索结果。 |
+| [UserProfile](connection-office365-users.md#userprofile) |检索特定用户配置文件。 |
 
 ### <a name="myprofile"></a>MyProfile
 获取我的个人资料：检索当前用户的配置文件。
@@ -151,17 +173,24 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 
 | 属性名称 | 类型 | 描述 |
 | --- | --- | --- |
+| 梵蒂冈 | 字符串 |用户的市/县。 |
+| 公司 | 字符串 |用户的公司。 |
+| 该国 | 字符串 |用户所在的国家/地区。 |
 | Department |字符串 |用户的部门。 |
 | DisplayName |字符串 |用户的显示名称。 |
 | GivenName |字符串 |用户的名字。 |
-| ID |字符串 |用户 ID |
+| ID |字符串 |用户 id。 |
 | JobTitle |字符串 |用户的职务。 |
 | 邮件 |字符串 |用户的电子邮件 ID。 |
 | MailNickname |字符串 |用户的昵称。 |
+| mobilePhone | 字符串 |用户的移动电话。 |
+| OfficeLocation | 字符串 |用户的办公地点。|
+| postalCode | 字符串 |用户的邮政编码。|
 | Surname |字符串 |用户的姓氏。 |
 | TelephoneNumber |字符串 |用户的电话号码。 |
 | UserPrincipalName |字符串 |用户的主体名。 |
 | AccountEnabled |布尔值 |帐户启用标志。 |
+| BusinessPhones | 字符串 |用户的公司电话号码。|
 
 ### <a name="userprofile"></a>UserProfile
 获取用户配置文件：检索特定用户配置文件。
@@ -170,16 +199,19 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
-| ID |字符串 |是 |用户主体名或电子邮件 ID |
+| ID |字符串 |是 |用户主体名称或电子邮件 id。 |
 
 #### <a name="output-properties"></a>输出属性
 
 | 属性名称 | 类型 | 描述 |
 | --- | --- | --- |
+| 梵蒂冈 | 字符串 |用户的市/县。 |
+| 公司 | 字符串 |用户的公司。 |
+| 该国 | 字符串 |用户所在的国家/地区。 |
 | Department |字符串 |用户的部门。 |
 | DisplayName |字符串 |用户的显示名称。 |
 | GivenName |字符串 |用户的名字。 |
-| ID |字符串 |用户 ID |
+| ID |字符串 |用户 id。 |
 | JobTitle |字符串 |用户的职务。 |
 | 邮件 |字符串 |用户的电子邮件 ID。 |
 | MailNickname |字符串 |用户的昵称。 |
@@ -187,81 +219,103 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 | TelephoneNumber |字符串 |用户的电话号码。 |
 | UserPrincipalName |字符串 |用户的主体名。 |
 | AccountEnabled |布尔值 |帐户启用标志。 |
+| BusinessPhones | 字符串 |用户的公司电话号码。|
 
 ### <a name="manager"></a>Manager
-获取管理器：检索指定用户经理的用户配置文件
+获取管理器：检索指定用户的经理的用户配置文件。
 
 #### <a name="input-properties"></a>输入属性
 
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
-| ID |字符串 |是 |用户主体名或电子邮件 ID |
+| ID |字符串 |是 |用户主体名称或电子邮件 id。 |
 
 #### <a name="output-properties"></a>输出属性
 
 | 属性名称 | 类型 | 描述 |
 | --- | --- | --- |
+| 梵蒂冈 | 字符串 |用户的市/县。 |
+| 公司 | 字符串 |用户的公司。 |
+| 该国 | 字符串 |用户所在的国家/地区。 |
 | Department |字符串 |用户的部门。 |
 | DisplayName |字符串 |用户的显示名称。 |
 | GivenName |字符串 |用户的名字。 |
-| ID |字符串 |用户 ID |
+| ID |字符串 |用户 id。 |
 | JobTitle |字符串 |用户的职务。 |
 | 邮件 |字符串 |用户的电子邮件 ID。 |
 | MailNickname |字符串 |用户的昵称。 |
+| mobilePhone | 字符串 |用户的移动电话。 |
+| OfficeLocation | 字符串 |用户的办公地点。|
+| postalCode | 字符串 |用户的邮政编码。|
 | Surname |字符串 |用户的姓氏。 |
 | TelephoneNumber |字符串 |用户的电话号码。 |
 | UserPrincipalName |字符串 |用户的主体名。 |
 | AccountEnabled |布尔值 |帐户启用标志。 |
+| BusinessPhones | 字符串 |用户的公司电话号码。|
 
 ### <a name="directreports"></a>DirectReports
-获取直接下属：获取直接下属
+获取直接下属：获取直接下属。
 
 #### <a name="input-properties"></a>输入属性
 
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
-| ID |字符串 |是 |用户主体名或电子邮件 ID |
+| ID |字符串 |是 |用户主体名称或电子邮件 id。 |
 
 #### <a name="output-properties"></a>输出属性
 
 | 属性名称 | 类型 | 描述 |
 | --- | --- | --- |
+| 梵蒂冈 | 字符串 |用户的市/县。 |
+| 公司 | 字符串 |用户的公司。 |
+| 该国 | 字符串 |用户所在的国家/地区。 |
 | Department |字符串 |用户的部门。 |
 | DisplayName |字符串 |用户的显示名称。 |
 | GivenName |字符串 |用户的名字。 |
-| ID |字符串 |用户 ID |
+| ID |字符串 |用户 id。 |
 | JobTitle |字符串 |用户的职务。 |
 | 邮件 |字符串 |用户的电子邮件 ID。 |
 | MailNickname |字符串 |用户的昵称。 |
+| mobilePhone | 字符串 |用户的移动电话。 |
+| OfficeLocation | 字符串 |用户的办公地点。|
+| postalCode | 字符串 |用户的邮政编码。|
 | Surname |字符串 |用户的姓氏。 |
 | TelephoneNumber |字符串 |用户的电话号码。 |
 | UserPrincipalName |字符串 |用户的主体名。 |
 | AccountEnabled |布尔值 |帐户启用标志。 |
+| BusinessPhones | 字符串 |用户的公司电话号码。|
 
 ### <a name="searchuser"></a>SearchUser
-搜索用户：检索用户配置文件的搜索结果
+搜索用户：检索用户配置文件的搜索结果。
 
 #### <a name="input-properties"></a>输入属性
 
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
-| searchTerm |字符串 |否 |搜索字符串。 适用于：显示名称、名字、姓氏、邮件、邮件昵称和用户主体名 |
+| searchTerm |字符串 |否 |搜索字符串。 适用于：显示名称、名字、姓氏、邮件、邮件昵称和用户主体名称。 |
 
 #### <a name="output-properties"></a>输出属性
 
 | 属性名称 | 类型 | 描述 |
 | --- | --- | --- |
+| 梵蒂冈 | 字符串 |用户的市/县。 |
+| 公司 | 字符串 |用户的公司。 |
+| 该国 | 字符串 |用户所在的国家/地区。 |
 | Department |字符串 |用户的部门。 |
 | DisplayName |字符串 |用户的显示名称。 |
 | GivenName |字符串 |用户的名字。 |
-| ID |字符串 |用户 ID |
+| ID |字符串 |用户 id。 |
 | JobTitle |字符串 |用户的职务。 |
 | 邮件 |字符串 |用户的电子邮件 ID。 |
 | MailNickname |字符串 |用户的昵称。 |
+| mobilePhone | 字符串 |用户的移动电话。 |
+| OfficeLocation | 字符串 |用户的办公地点。|
+| postalCode | 字符串 |用户的邮政编码。|
 | Surname |字符串 |用户的姓氏。 |
 | TelephoneNumber |字符串 |用户的电话号码。 |
 | UserPrincipalName |字符串 |用户的主体名。 |
 | AccountEnabled |布尔值 |帐户启用标志。 |
+| BusinessPhones | 字符串 |用户的公司电话号码。|
 
 ## <a name="helpful-links"></a>有用链接
 * 查看所有[可用连接](../connections-list.md)。
