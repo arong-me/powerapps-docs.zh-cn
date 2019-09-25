@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 08/30/2019
+ms.date: 09/23/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 562811ebce59660d6033585868afd42da46442d5
-ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
+ms.openlocfilehash: ea94b076126aca3bc3dd687a853393e20901eeb8
+ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70213922"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256135"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>适用于 Power BI 的 PowerApps 自定义视觉对象
 
@@ -70,23 +70,24 @@ ms.locfileid: "70213922"
 
 ## <a name="limitations-of-the-powerapps-custom-visual"></a>PowerApps 自定义视觉对象的限制
 
-PowerApps 自定义视觉对象有以下限制:
+PowerApps 自定义视觉对象有以下限制：
 
 - 如果更改与视觉对象关联的数据字段，必须通过选择省略号 (...)，然后选择“编辑”，从 Power BI 服务内部编辑应用。 否则所做的更改不会传播到 PowerApps，且应用不会正常运行。
-- PowerApps 自定义视觉对象无法触发刷新 Power BI 报表和 Power BI Power BI Desktop 内的数据源。 如果将应用程序中的数据写回与报表相同的数据源, 则所做的更改将不会立即反映在 Power BI Desktop 中。 更改会在下一个计划的刷新后得到反映。
+- PowerApps 自定义视觉对象无法触发刷新 Power BI 报表和 Power BI Power BI Desktop 内的数据源。 如果将应用程序中的数据写回与报表相同的数据源，则所做的更改将不会立即反映在 Power BI Desktop 中。 更改会在下一个计划的刷新后得到反映。
 - PowerApps 自定义视觉对象无法筛选数据或将任何数据发送回报表。
 - 你需要单独从报表共享 PowerApps 应用。 了解如何[在 PowerApps 中共享应用](share-app.md)。
 - Power BI 报表服务器和 Power BI 的移动应用不支持 PowerApps 自定义视觉对象。
-- 如果使用 PowerBIIntegration () 函数, 则必须使用支持[directquery](https://docs.microsoft.com/en-us/power-bi/desktop-directquery-data-sources)的源, 并且必须使用 DirectQuery 方法创建数据连接。
+- 如果使用 PowerBIIntegration （）函数，则必须使用支持[directquery](https://docs.microsoft.com/en-us/power-bi/desktop-directquery-data-sources)的源，并且必须使用 DirectQuery 方法创建数据连接。
+- Power BI Desktop 中的 PowerApps 提供了在创建应用但在编辑时不 PowerApps Studio 的数据。 使用 Power BI Web 在编辑应用时预览数据。
 
 > [!NOTE]
-> 建议先将报表发布到 Power BI 服务, 然后创建或修改应用。
+> 建议先将报表发布到 Power BI 服务，然后创建或修改应用。
 
 ## <a name="browser-support"></a>浏览器支持
 
-下表列出了可用于查看、创建和修改 PowerApps 自定义视觉对象操作的浏览器可支持性。 支持的浏览器和操作由复选标记 ( &check; ) 标识。
+下表列出了可用于查看、创建和修改 PowerApps 自定义视觉对象操作的浏览器可支持性。 支持的浏览器和操作由复选标记（ &check; ）标识。
 
-|浏览者|视图|创建|Modify
+|浏览器|显示|创建|Modify
 |-|-|-|-
 |Microsoft Edge|&check;|&check;|&check;
 |Internet Explorer 11|&check;
@@ -94,6 +95,18 @@ PowerApps 自定义视觉对象有以下限制:
 |免费|&check;
 |Mozilla Firefox
 |所有其他浏览器
+
+## <a name="accessibility-support"></a>辅助功能支持
+
+若要使用键盘导航 PowerApps 视觉对象，请执行以下步骤：
+
+1. 在所需 PowerApps 视觉对象的 Power BI 报表上选择焦点。
+2. 使用键盘上的**Tab**键，直到突出显示视觉对象。
+3. 使用键盘上的**Ctrl + 右键**进入视觉对象。
+3. 使用键盘上的**Tab**键，直到选择了视觉对象的所需组件。
+
+有关详细信息，请参阅：[Power BI 辅助功能文档]( https://docs.microsoft.com/en-us/power-bi/desktop-accessibility)
+
 
 ## <a name="next-steps"></a>后续步骤
 

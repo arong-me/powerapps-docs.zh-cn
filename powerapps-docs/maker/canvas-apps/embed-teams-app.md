@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ba08437dc144fc81aa9748163b1005222735cb69
-ms.sourcegitcommit: 86ed3ad487f31721155758aa9d87134bb10f8437
+ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "70842238"
 ---
 # <a name="embed-a-powerapps-app-in-teams"></a>在团队中嵌入 PowerApps 应用 
@@ -95,21 +95,21 @@ ms.locfileid: "70842238"
    |字段  |描述  |
    |---------|---------|
    |**应用名称** |    |
-   |短名称     | 必需。 应用程序的简短显示名称。 超过30个字符。        |
+   |短名称     | 必填。 应用程序的简短显示名称。 超过30个字符。        |
    |长名称     | 应用的全名，如果完整应用名称超过30个字符，则使用此名称。       | 
    |**标识**     |         |
-   |应用 ID     | 必需。 此应用程序的唯一 Microsoft 生成的标识符。        |
-   |包名称     | 必需。 此应用的唯一标识符。 建议使用反向域表示法;例如，.com.<AppName>.       |
-   |Version     | 必需。 特定应用的版本。 如果在清单中更新某些内容，则版本也必须递增。     |
+   |应用 ID     | 必填。 此应用程序的唯一 Microsoft 生成的标识符。        |
+   |包名称     | 必填。 此应用的唯一标识符。 建议使用反向域表示法;例如，.com。<AppName>.       |
+   |版本     | 必填。 特定应用的版本。 如果在清单中更新某些内容，则版本也必须递增。     |
    |**说明**    |     |
-   | 简短说明    | 必需。 应用体验的简短说明，在空间有限时使用。 80字符限制。   |
-   | 详细说明    | 必需。 应用的完整说明。     |
+   | 简短说明    | 必填。 应用体验的简短说明，在空间有限时使用。 80字符限制。   |
+   | 详细说明    | 必填。 应用的完整说明。     |
    | **开发人员信息**    |     |
-   | 名称    | 必需。 公司或开发人员的显示名称。     |
-   | 网站    | 必需。 指向应用程序的网站的 https://URL 通过 powerapps.com。 当某个用户安装你的应用时，将显示 "关于你的应用" 页面。 它应链接到 powerapps.com 上的应用程序的 web 版本。   |
+   | 名称    | 必填。 公司或开发人员的显示名称。     |
+   | 网站    | 必填。 指向应用程序的网站的 https://URL 通过 powerapps.com。 当某个用户安装你的应用时，将显示 "关于你的应用" 页面。 它应链接到 powerapps.com 上的应用程序的 web 版本。   |
    | **应用 Url**    | 这些链接将显示在 "**关于**" 页和 "网站 URL" 中。     |
-   | 隐私声明    | 必需。 开发人员的隐私策略的 https://URL。 [示例](https://go.microsoft.com/fwlink/p/?LinkID=698505)。   |
-   | 使用条款    | 必需。 开发人员使用条款的 https://URL。  [示例](https://go.microsoft.com/fwlink/p/?LinkID=698507)。  |
+   | 隐私声明    | 必填。 开发人员的隐私策略的 https://URL。 [示例](https://go.microsoft.com/fwlink/p/?LinkID=698505)。   |
+   | 使用条款    | 必填。 开发人员使用条款的 https://URL。  [示例](https://go.microsoft.com/fwlink/p/?LinkID=698507)。  |
    | **品牌**    |     |
    | 完整颜色    | 完整颜色 192x192 PNG 图标的相对文件路径。    |
    | 透明边框    |透明 32x32 PNG 轮廓图标的相对文件路径。     |
@@ -157,7 +157,7 @@ ms.locfileid: "70842238"
     > [!div class="mx-imgBorder"] 
     > ![选择设置](./media/embed-teams-app/app-now-available.png "选择设置")
 
-12. 选择**保存**。
+12. 选择“保存”。
 
 ## <a name="add-the-app-as-a-tab"></a>将该应用添加为选项卡
 
