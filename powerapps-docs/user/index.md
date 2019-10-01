@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 79b6088a9b75a7ac4b41263a73d8ead58520f4dd
-ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
+ms.openlocfilehash: ab91653f26bc9ca177cc5841e7dbc158b13d7696
+ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69896161"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71705286"
 ---
 # <a name="how-do-i-find-and-run-apps"></a>如何查找并运行应用？
 
@@ -31,7 +31,7 @@ ms.locfileid: "69896161"
 
 由于画布应用本质上可以是任何应用，因此没有许多关于如何在创建后使用画布应用的帮助文档。 如需有关使用画布应用的帮助，请联系你的应用创建者或 PowerApps 管理员。
 
-[模型驱动型应用](/powerapps/maker/model-driven-apps/model-driven-app-overview)使用[统一接口](unified-interface.md)，它提供一种响应性和可访问的设计。 可以在 web 浏览器或常用的移动设备上运行应用。 该应用具有多个组件，包括仪表板、窗体、视图、图表和业务流程，这些组件使该应用易于使用。 模型驱动型应用在 Microsoft Dynamics 365 Customer Engagement 框架上生成和建模，因此用户体验类似于 Dynamics 365 Customer Engagement [应用](/dynamics365/customer-engagement/basics/business-apps-dynamics-365)。
+[模型驱动型应用](/powerapps/maker/model-driven-apps/model-driven-app-overview)使用[统一接口](unified-interface.md)，它提供一种响应性和可访问的设计。 可以在 web 浏览器或常用的移动设备上运行应用。 该应用具有多个组件，包括仪表板、窗体、视图、图表和业务流程，这些组件使该应用易于使用。
 
 本部分提供有关如何从多个位置查找和运行画布应用和模型驱动型应用的信息。 它还提供有关如何在模型驱动型应用中导航和工作的信息：[使用模型驱动型应用](use-model-driven-apps.md)。
 
