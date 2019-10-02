@@ -1,7 +1,7 @@
 ---
 title: 让客户在 AppSource 上体验画布应用 | Microsoft Docs
 description: 使用 AppSource 与客户共享画布应用，为你的企业带来新的潜在客户。
-author: linhtranms
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 590dc1707d080c1790c00f236df820559fe8f5a9
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 1e9ac3428a9621da360fd1cc5f1c376d52352d1b
+ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61550371"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71705336"
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>让客户在 AppSource 上体验画布应用
 
@@ -41,8 +41,8 @@ ms.locfileid: "61550371"
 
 PowerApps 为生成包含嵌入数据的应用提供本机支持，因此只需提供应用要使用的示例数据即可。 应在 Excel 文件中以一个或多个表的形式捕获此类数据。 然后，在 PowerApps 中，将 Excel 表中的数据拉取到应用中，并在应用中直接使用此类数据，而不用借助外部连接。 下面的三步流程展示了如何拉取数据并在应用中使用此类数据。
 
-### <a name="step-1-import-data-into-the-app"></a>步骤 1:数据导入到应用程序
-假定您有两个表的 Excel 文件：**Siteinspector**并**SitePhotos**。
+### <a name="step-1-import-data-into-the-app"></a>步骤 1:将数据导入到应用中
+假设您有一个包含两个表的 Excel 文件：**SiteInspector**和**SitePhotos**。
 
 ![要导入的 Excel 表](./media/dev-appsource-test-drive/excel-file.png)
 
@@ -72,7 +72,7 @@ ClearCollect( SitePhotosCollect, SitePhotos )
 
 现在，如果要访问“Title”字段，请在公式中使用“SiteInspectorCollect.Title”。
 
-### <a name="step-3-add-update-and-delete-data-in-your-app"></a>步骤 3:添加、 更新和删除应用程序中的数据
+### <a name="step-3-add-update-and-delete-data-in-your-app"></a>步骤 3:在应用中添加、更新和删除数据
 至此，你已了解如何直接和通过集合读取数据；现在，我们将介绍如何在集合中添加、更新和删除数据：
 
 **若要在集合中添加行**，请使用 [Collect( DataSource, Item, ... )](../canvas-apps/functions/function-clear-collect-clearcollect.md)：

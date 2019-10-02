@@ -992,6 +992,15 @@
           href: ./model-driven-apps/create-themes-organization-branding.md
         - name: 将报告添加到应用
           href: ./model-driven-apps/add-reporting-to-app.md
+          items:
+            - name: 报表注意事项
+              href: ./model-driven-apps/reporting-considerations.md
+            - name: RDL 沙盒
+              href: ./model-driven-apps/rdl-sandboxing.md
+            - name: 使用 Power BI
+              href: ./model-driven-apps/use-power-bi.md
+            - name: 自定义 Power BI 内容包
+              href: ./model-driven-apps/customize-power-bi-content-packs.md
     - name: 验证并发布应用
       href: ./model-driven-apps/validate-app.md
     - name: 共享应用

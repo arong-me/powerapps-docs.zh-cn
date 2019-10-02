@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: 62e6db1361664f8ccce38080e07908237aac5f50
-ms.sourcegitcommit: 9cce0d57113705254c109e6c38fc57a8bd4ef6cf
+ms.openlocfilehash: c91add6569b3a74f26c48a70852df54d0d357657
+ms.sourcegitcommit: 5b623b64fba72dda893c97f497666d0adc39e0c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68313294"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71709219"
 ---
 <div id="main"
    class="v2">
@@ -25,7 +25,7 @@ ms.locfileid: "68313294"
             <a href="#home"></a>
             <ul id="home">
                <li>
-                  <a href="#getstarted"><strong>开始使用</strong></a>
+                  <a href="#getstarted"><strong>入门</strong></a>
                   <ul id="getstarted"
                      class="cardsC">
                      <br/>                            
@@ -353,7 +353,7 @@ ms.locfileid: "68313294"
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-guide">管理 Power 平台</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">获取帮助和支持</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">选择采用 2019 年 4 月的更新</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">选择加入 2019 版 Wave 2</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">管理设置</a></p>
                                  </div>
                               </div>

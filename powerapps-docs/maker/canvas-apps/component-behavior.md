@@ -4,18 +4,19 @@ description: 触发应用程序，以便在基于组件的操作发生时执行�
 author: yifwang
 ms.service: powerapps
 ms.topic: article
-ms.date: 05/24/2019
+ms.date: 9/30/2019
 ms.author: yifwang
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c8ec4edd835f12fb6fccf04ba0fb27f1e755cac0
-ms.sourcegitcommit: ea3ab5926541c60a9e7c17f52f937c9812d48c71
+ms.openlocfilehash: baf7e74581819b3ea21542f30f96a0a6f517c0d5
+ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70310059"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71705046"
 ---
 # <a name="behavior-formulas-for-components"></a>组件的行为公式
 
@@ -26,12 +27,36 @@ ms.locfileid: "70310059"
 
 ## <a name="onreset"></a>OnReset
 
-选择某个组件后，在 "属性" 下拉列表中选择 " **OnReset** " （位于公式栏右侧），然后输入一个或多个公式。
+选择了组件主机后，在 "属性" 下拉列表中选择 " **OnReset** "，然后输入一个或多个公式。
 
 > [!div class="mx-imgBorder"]
-> ![OnReset 示例](./media/component-behavior/example-onreset.png)
+> ![OnReset 示例 @ no__t-1
 
-若要测试**OnReset**，请配置控件以重置组件。 例如，将按钮的 " **OnSelect** " 属性设置为此公式：**重置**（*ComponentName*）
+若要测试**OnReset**，请配置控件以重置组件。 例如，将按钮的 " **OnSelect** " 属性设置为此公式：**Reset**（*ComponentName*）。
+
+### <a name="example---reset-timer"></a>示例-重置计时器
 
 > [!div class="mx-imgBorder"]
-> ![重置按钮](./media/component-behavior/reset-button.png)
+> ![OnReset 示例 @ no__t-1
+
+在此时间选择器组件中，两个变量用于显示时间 _selectedHour 和 _selectedMinute。 当选取器重置时，这些变量应重置为默认值，如12：10.  组件的 OnReset 属性具有以下公式：**Set （_selectedHour，12）;Set （_selectedMinute，12）**
+
+若要触发重置，请跳到屏幕并插入组件的实例。 添加一个按钮，并将该按钮的 OnSelect 配置为调用**Reset （TimerComponent_instance）** 来触发 OnReset。
+
+> [!div class="mx-imgBorder"]
+> ![Reset button @ no__t-1
+
+## <a name="update-onreset-using-custom-property"></a>使用自定义属性更新 OnReset
+
+除了从组件外部重置组件实例以外，还可以通过另一种方法来触发 OnReset。 "**当值更改时引发 OnReset**" 是创建自定义输入属性时的选项，它允许此属性的值更改触发组件的 OnReset。 此方法设计为易于设置和重置默认值。 
+
+> ![OnReset 示例](./media/component-behavior/property-trigger.png)
+
+### <a name="example"></a>示例
+
+> [!div class="mx-imgBorder"]
+> ![OnReset 示例 @ no__t-1
+
+这是查看订单号和更新数字的示例。 使用数值上移和下移组件可以增加或减少订单数。 选择左侧的库时，将重置 "数字上移" 和 "下移" 组件的默认数量，以显示所选工具的订单号。 "**当值更改时引发 OnReset**" 可在输入更改时重置默认值。 
+
+为此，请选中默认输入属性的 "**当值发生更改时引发 OnReset**"。 将该组件的**OnReset**设置为**set （_numericValue，"向上数值增大"。DefaultValue）** 。 _numericValue 是用于存储当前订单值的值的变量。 并将 "文本输入" 控件的**默认值**设置为**If （IsBlank （_numericValue），"向上数字上移"。DefaultValue、_numericValue）** 。 
