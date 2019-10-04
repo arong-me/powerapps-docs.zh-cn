@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 9/23/2019
+ms.date: 10/03/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a45b19ef45c729d02d1fff418ca4a9103fe5725a
-ms.sourcegitcommit: 770906d6a559316b93873ee9b1dbceabcc54fc4e
+ms.openlocfilehash: a4d81b9adff165267fe3e3d4d08384133aeae032
+ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71208200"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71924459"
 ---
 # <a name="create-a-new-record"></a>创建新记录
 
@@ -60,4 +60,5 @@ ms.locfileid: "71208200"
     > [!div class="mx-imgBorder"] 
     > ![新建按钮](media/newrecord3.png "新建按钮")
 
-    
+    > [!NOTE]
+    > 如果有未保存的更改，并尝试尝试其他记录或窗体，则会弹出一个**未保存的更改**对话框。 如果选择 "**保存并继续**"，则它将尝试保存你的信息并打开你想要转到的页面。 如果选择 "保存并继续"，而在字段中出现错误，则对话框将关闭，并且你将在页面上保留以修复错误，然后才能离开。

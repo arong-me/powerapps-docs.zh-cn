@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 8/02/2019
+ms.date: 10/03/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,16 +15,15 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8f061078b4401ee1ea2db9a2e7e6a4443bd053b6
-ms.sourcegitcommit: 4e4f7945c3f24faf9bb8a856a5f3892cbfd113be
+ms.openlocfilehash: 9ba051395e99dc6f2079d033c10a727a2e95da67
+ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783659"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71924570"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>将约会、电子邮件、电话呼叫、备注或任务活动添加到时间线 
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 在“时间线”留言板中添加“活动”以跟踪与客户或联系人的所有通信。 例如，可以进行备注、添加文章、添加任务、发送电子邮件、添加电话呼叫详细信息或设置约会。 系统将自动对每个活动添加时间戳并显示创建者。 你和团队中的其他人可以滚动浏览这些活动，以便在与客户协作时查看历史记录。 
 
@@ -101,7 +100,7 @@ ms.locfileid: "68783659"
 
 
     > [!NOTE]
-    > 若要列出会话视图中的电子邮件, 请单击 "**设置** > " "**个性化设置** > " "**电子邮件**" 选项卡, 然后选择 **"在时间线上显示电子邮件**" 有关个人设置的详细信息, 请参阅[设置个人选项](set-personal-options.md)。
+    > 若要列出会话视图中的电子邮件，请在 "**设置**"  > **个性化设置**" > **电子邮件**" 选项卡，然后选择 **"显示电子邮件作为在时间线上的会话"** 。 有关个人设置的详细信息，请参阅[设置个人选项](https://docs.microsoft.com/en-us/powerapps/user/set-personal-options#email-tab-options)。 启用后，可以打开任何具有时间线的窗体，电子邮件将按最新的最新电子邮件分组到会话线程中。
 
    > [!div class="mx-imgBorder"]
    > ![设置个人选项](media/emailsettings1.png "设置个人选项")
@@ -174,7 +173,7 @@ ms.locfileid: "68783659"
 
 使用筛选器窗格按记录类型或活动类型和日期快速筛选时间线留言板中的活动、备注或文章。 可以同时选择多个筛选器和筛选器选项。 可以筛选和查看活动截止日期、修改日期或活动状态。
 
-- 在**时间线**背景中, 选择 "**打开筛选器窗格**漏斗图标"。
+- 在**时间线**背景中，选择 "**打开筛选器窗格**漏斗图标"。
 
 > [!div class="mx-imgBorder"]
 > ![时间线中的“筛选器”窗格](media/filterpane.png "时间线中的“筛选器”窗格")

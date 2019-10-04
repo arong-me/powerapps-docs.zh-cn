@@ -15,24 +15,22 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: be255d4208b2926867ef0e4dec291d3435f64443
-ms.sourcegitcommit: 770906d6a559316b93873ee9b1dbceabcc54fc4e
+ms.openlocfilehash: 76241ae2e26752a98e32e7ad72c54780da3934ae
+ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71208181"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71705307"
 ---
-#  <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>针对模型驱动应用的统一界面增强了用户体验 
+# <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>针对模型驱动应用的统一界面增强了用户体验 
 
 模型驱动应用的统一界面提供跨设备的一致且可访问的用户体验，无论是在台式机、便携式计算机、平板电脑还是手机上都是如此。 应用通过 reflowing 屏幕上的组件进行缩放。 响应式设计根据屏幕大小适应您的环境，因此您拥有的可用空间越多，显示的信息就越多。
 
 > [!div class="mx-imgBorder"]
 > ![统一界面适应屏幕](media/Reflow.png "统一界面适应屏幕")
 
-
-
 > [!NOTE]
-> 旧的 web 客户端将被弃用，并且客户必须在10月 1 2020 日之前过渡到统一的界面。 有关详细信息，请参阅[公告要移动到统一界面的时间线](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/)。 若要了解有关如何转换的详细信息，请参阅[转换的快速入门](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app)。
+> 旧的 web 客户端将被弃用，并且客户必须在10月 1 2020 日之前过渡到统一的界面。 有关详细信息，请参阅 [Blog：宣布时间线移动到统一的接口 @ no__t-0。 若要了解有关如何转换的详细信息，请参阅[转换的快速入门](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app)。
 
 ## <a name="navigation"></a>导航
 
@@ -61,6 +59,11 @@ ms.locfileid: "71208181"
 ## <a name="accessibility"></a>辅助功能
 改进的辅助功能体验使你可以使用屏幕阅读器将屏幕信息转换为声音，并打印到盲文阅读器，以便更多人可以使用该应用。 有关详细信息，请参阅[使用屏幕阅读器](screen-reader.md)。
 
-##  <a name="unified-interface-community"></a>统一接口社区
+## <a name="create-a-unified-interface-app"></a>创建统一的接口应用
+如果你有在统一界面上创建自己的体验的要求，则可以使用应用设计器创建模型驱动的应用。 请参阅[构建模型驱动应用的概述](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview)。
+
+![创建新的统一界面应用](media/uci-model-driven-app.png "创建新的统一界面应用")
+
+## <a name="unified-interface-community"></a>统一接口社区
 
 转到[统一的界面社区网站](https://community.dynamics.com/365/unified-interface/)，以帮助你规划和执行到统一界面的平稳过渡，并与专家和同行沟通博客、网络研讨会、视频、事件等。

@@ -5,7 +5,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 10/03/2019
 ms.author: mkaur
 ms.reviewer: ''
 ms.assetid: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e563c1b17e7ef7628efcf51be2a312d3083bf187
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: a46698ddf454c9d0f563575a3553e874f3a7b109
+ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61530774"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71924533"
 ---
 #  <a name="basic-navigation-in-a-model-driven-app"></a>模型驱动应用中的基本导航 
 
@@ -77,7 +77,7 @@ ms.locfileid: "61530774"
 
 窗体上显示的通知类型有三种：信息、警告和错误。 通知始终在窗体的上层，在标头的正上方。
 
-版本 9.1.9.3010 中的通知如下所述。
+当你选择错误通知时，它会将你转到出现错误的窗体上的字段。
 
 ![通知的示例](media/notifications.png "Example of notifications")
 
@@ -88,6 +88,10 @@ ms.locfileid: "61530774"
 如果有多个通知，你将看到通知的数量。 选择 v 形图标可查看每条消息。
 
 ![多个通知的示例](media/multiple_notification.png "Example of multiple notifications")
+
+## <a name="grids"></a>置
+
+已改进统一界面中的网格，增加了可在屏幕上显示的数据量。 网格还改进了筛选选项，其中包括记住最后一个筛选器和排序顺序。 有关改进的详细列表，请参阅此博客文章[统一界面网格中的增强功能](https://powerapps.microsoft.com/en-us/blog/enhanced-functionality-in-unified-interface-grids)。
 
 
 
