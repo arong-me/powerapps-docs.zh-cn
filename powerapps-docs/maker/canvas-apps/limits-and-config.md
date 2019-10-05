@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: ''
-ms.date: 03/07/2018
+ms.reviewer: tapanm
+ms.date: 10/04/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 03c520d1cdf8655e93b1f5b74d687cd0abfa533f
-ms.sourcegitcommit: 94ec67b283b9b03aa24cdc0ab43dd448b11b0547
+ms.openlocfilehash: 45790b7a3e6166366a751c812a5d470d5615c3a2
+ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69529798"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71969265"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>画布应用的系统要求、限制和配置值
 本主题包含设备平台和 Web 浏览器要求，以及 PowerApps 的限制和配置值。
@@ -70,7 +70,7 @@ PowerApps 请求使用的 IP 地址取决于该应用所在[环境](../../admini
 > [!IMPORTANT]
 >   如果具有现有配置，请尽快于 2018 年 9 月 30 日前更新这些配置，以便它们包括和匹配此 PowerApps 应用所在区域列表中的 IP 地址。
 
-| 地区 | 出站 IP |
+| 区域 | 出站 IP |
 | --- | --- |
 | 亚洲 | 13.75.36.64 - 13.75.36.79, 13.67.8.240 - 13.67.8.255, 52.175.23.169, 52.187.68.19 |
 | 澳大利亚  | 13.70.72.192 - 13.70.72.207, 13.72.243.10, 13.77.50.240 - 13.77.50.255, 13.70.136.174 |
@@ -92,13 +92,13 @@ PowerApps 请求使用的 IP 地址取决于该应用所在[环境](../../admini
 | management.azure.com |https |RP |
 | msmanaged-na.azure-apim.net |https |连接器运行时/API |
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
-| graph.microsoft.com<br>graph.windows.net |https |Azure Graph-用于获取用户信息 (例如, 个人资料照片) |
+| graph.microsoft.com<br>graph.windows.net |https |Azure Graph-用于获取用户信息（例如，个人资料照片） |
 | gallery.azure.com |https |示例和模板应用 |
-| \*。 azure-apim.net |https |API 中心 - 每个区域设置的不同子域 |
-| \*。 powerapps.com |https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 web.powerapps.com |
-| \*。 azureedge.net |https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 web.powerapps.com |
-| \*。 blob.core.windows.net |https | Blob 存储 |
-| \*。 flow.microsoft.com | https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 web.powerapps.com |
+| \*.azure-apim.net |https |API 中心 - 每个区域设置的不同子域 |
+| \*.powerapps.com |https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 web.powerapps.com |
+| \*.azureedge.net |https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 web.powerapps.com |
+| \*.blob.core.windows.net |https | Blob 存储 |
+| \*.flow.microsoft.com | https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 web.powerapps.com |
 | vortex.data.microsoft.com |https |遥测 |
 | 主机 | https | PowerApps Mobile
 
@@ -108,3 +108,28 @@ PowerApps 请求使用的 IP 地址取决于该应用所在[环境](../../admini
 ## <a name="size-limits"></a>大小限制
 
 可以在[数据类型](functions/data-types.md#text-hyperlink-image-and-media)中找到有关文本、超链接、图像和媒体的大小限制的信息。
+
+## <a name="powerapps-per-app-plan"></a>PowerApps 每个应用计划
+
+每个应用计划的 PowerApps 允许各个用户在单个门户上运行2个应用程序，用于基于 PowerApps 的全部功能的特定业务方案。 此计划为用户提供了一种简单的方法，使用户可以在更广泛的采用范围之前开始使用平台。
+
+在管理员将 PowerApps 每个应用计划分配给环境之后，默认情况下，当与用户共享应用时，它们将分配给用户。
+
+按照以下步骤，在与用户共享应用时，关闭对用户的每个应用计划的分配：
+
+- 选择**应用**。
+- 选择 "**设置**"。
+- 更改**每个应用的自动分配**的**传递分配**下的切换。
+
+"**每个应用的自动分配" 传递**切换显示在 "所有应用" 设置中。
+
+> [!NOTE]
+> 禁用按应用计划目前仅适用于画布应用。  模型驱动应用和门户将在将来具有此功能。
+
+### <a name="app-settings"></a>应用设置
+
+![画布应用设置](./media/limits-and-config/app_settings.png "画布应用设置")
+
+### <a name="pass-assignment"></a>传递分配
+
+![画布应用设置传递分配](./media/limits-and-config/app_settings_pass_assignment.png "画布应用设置传递分配")
