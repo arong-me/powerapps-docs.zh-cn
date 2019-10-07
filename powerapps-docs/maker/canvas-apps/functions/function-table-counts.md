@@ -1,24 +1,24 @@
 ---
 title: Count、CountA、CountIf 和 CountRows 函数 | Microsoft 文档
-description: PowerApps 中的 Count、CountA、CountIf 和 CountRows 函数的参考信息 (包括语法和示例)
+description: PowerApps 中的 Count、CountA、CountIf 和 CountRows 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8a904db98226152a5e485184e82461634902d6b9
-ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
+ms.openlocfilehash: 70950a52050226a25270be7531f4589671f0d46f
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68473922"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983897"
 ---
 # <a name="count-counta-countif-and-countrows-functions-in-powerapps"></a>PowerApps 中的 Count、CountA、CountIf 和 CountRows 函数
 对[表](../working-with-tables.md)中所有[记录](../working-with-tables.md#records)计数，或对所有满足条件的记录计数。

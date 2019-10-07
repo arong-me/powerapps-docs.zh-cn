@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/17/2017
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a8abc0a641f13cc05e723b96d48dd2d877f0b70f
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 2ef11e767fcf92259839c4bebe282757b0004f21
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63318279"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71989142"
 ---
 # <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>了解 PowerApps 中画布应用的数据窗体布局
 
@@ -32,15 +32,15 @@ ms.locfileid: "63318279"
 
 如果你是初次接触 PowerApps（或者仅自动生成过应用），则在深入了解此主题前请[从头开始生成一个应用](get-started-create-from-blank.md)。 通过从头开始生成一个应用，会让你熟悉本主题中提及但未加说明的必备概念，例如添加数据源和控件。
 
-本主题编写好像有一个数据源名为**销售订单**并包含在上图中的字段。 如果你拥有 PowerApps 计划 2 许可证或[试用版许可证](../signup-for-powerapps.md)和系统管理员或系统定制员权限，则可以[创建实体](../common-data-service/data-platform-create-entity.md)Common Data Service 中，然后添加类似的字段。 
+本主题的编写方式为：你有一个名为 "**销售订单**" 的数据源，并且该数据源包含上图中的字段。 如果你拥有 PowerApps 计划2许可证或[试用版许可证](../signup-for-powerapps.md)以及系统管理员或系统管理员权限，则可以在 Common Data Service 中[创建一个实体](../common-data-service/data-platform-create-entity.md)并添加类似字段。 
 
 ## <a name="add-a-gallery"></a>添加库
 
-1. 从零开始，创建平板电脑应用并添加您的数据源。
+1. 从头开始创建平板电脑应用并添加数据源。
 
     本主题中介绍的所有内容同样也适用于手机布局，不同之处在于，手机应用通常只有一个垂直列。
     
-2. 添加垂直的“库”控件，并将其 **Items**属性设置为 **'Sales order'**。
+2. 添加垂直的“库”控件，并将其 **Items**属性设置为 **'Sales order'** 。
    
     （可选）若要与本教程中的示例一致，请将库的“布局”设置为仅显示“标题和副标题”。
    
@@ -54,8 +54,8 @@ ms.locfileid: "63318279"
 ## <a name="add-a-title-bar"></a>添加标题栏
 1. 添加一个放置窗体的空白屏幕。
    
-    在本教程之外，可以将“库”和“**[编辑表单](controls/control-form-detail.md)**”控件放置在同一个屏幕上，但将其放在单独屏幕上时可使用的空间会更多。
-2. 在新屏幕的顶部，添加一个 **[标签控件](controls/control-text-box.md)** ，将其 **Text** 属性设置为此表达式： 
+    在本教程之外，可以将“库”和“ **[编辑表单](controls/control-form-detail.md)** ”控件放置在同一个屏幕上，但将其放在单独屏幕上时可使用的空间会更多。
+2. 在新屏幕的顶部，添加一个 **[标签控件](controls/control-text-box.md)** ，将其 **Text** 属性设置为此表达式：
    <br>**"Sales Order " & Gallery1.Selected.SalesOrderId**
    
     该标签将显示你在库中选择的记录的销售订单号。
@@ -201,11 +201,11 @@ ms.locfileid: "63318279"
 ## <a name="set-width-and-height"></a>设置宽度和高度
 与 PowerApps 中的所有内容一样，表单布局受数据卡控件属性约束。 如前面所述，可以通过将控件拖到不同的位置或拖动握柄来调整控件的大小，从而更改这些属性的值。 不过，有时也会需要更精准地了解并控制这些属性，尤其是在使用公式生成动态表单时。
 
-### <a name="basic-layout-x-y-and-width"></a>基本布局：X、 Y 和 Width
+### <a name="basic-layout-x-y-and-width"></a>基本布局：X、Y 和宽度
 **X** 和 **Y** 属性控制卡的位置。 处理原始画布上的控件时，这些属性生成的是绝对位置。 在表单中，这些属性的含义就不同了：
 
-* **X**:中某行进行排序。
-* **Y**:行号。
+* **X**：行中的顺序。
+* **Y**：行号。
 
 与画布上的控件类似，“Width”属性指定的是数据卡的最小宽度（很快将会对下限进行详细介绍）。
 
@@ -224,7 +224,7 @@ ms.locfileid: "63318279"
 
 可以使用此行为创建完全动态的布局，即数据卡根据 Z 顺序进行排列，尽可能填充所在行，然后再移到下一行。 若要达到此效果，请为所有数据卡设置相同的 **Y** 值，再使用 **X** 表示数据卡的顺序。
 
-### <a name="filling-spaces-widthfit"></a>填充空间：WidthFit
+### <a name="filling-spaces-widthfit"></a>填充空格：WidthFit
 上一示例中的溢出导致第一行中第二张“订单状态”数据卡后面有空间。 为了填充此空间，我们可以手动调整两张剩余数据卡的 **Width** 属性，但此方法会很麻烦。
 
 作为备选方法，可以使用“WidthFit”属性。 如果某行中的一张或多张数据卡将此属性设置为 **true**，则此行上的任何剩余空间都会被数据卡均分。 正因为此行为，我们在前面提到，数据卡的 **Width** 属性为*最小宽度*，而实际显示的宽度可能会更大。 此属性不会使卡片缩，只会使其扩大。

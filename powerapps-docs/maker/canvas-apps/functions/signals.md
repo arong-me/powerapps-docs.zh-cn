@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/29/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d375adeb8a20dfe2d9629a9c34944a8dcd80a8e7
-ms.sourcegitcommit: 562c7ed5fbb116be1cbb0f45e3f6e75e3e4cf011
+ms.openlocfilehash: a06217470482eccdf368279eaabcd297bbf73ce5
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66451461"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983361"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>PowerApps 中的 Acceleration、App、Compass、Connection 和 Location 信号
 
@@ -26,16 +26,16 @@ ms.locfileid: "66451461"
 
 ## <a name="description-and-syntax"></a>说明和语法
 
-信号是可以在任何时候，独立于可能如何与应用交互用户更改的值。 在这些值更改时重新计算公式会自动根据信号。
+信号是可随时更改的值，与用户可能与应用交互的方式无关。 基于信号的公式将在这些值更改时自动重新计算。
 
-信号通常返回[记录](../working-with-tables.md#records)的信息。 可以使用此信息并将其存储为记录，也可提取单个属性，其方式是使用“.”  [运算符](operators.md)。
+信号通常返回信息的[记录](../working-with-tables.md#records)。 可以使用此信息并将其存储为记录，也可提取单个属性，其方式是使用“.” [运算符](operators.md)。
 
 > [!NOTE]
-> **加速**并**指南针**函数返回准确的值在 iOS 或 Android，如本机播放器，但在你创建或修改应用程序，在浏览器中的，这些函数将返回零值。
+> **加速**和**罗盘**函数在本机播放机（如 iOS 或 Android）中返回准确的值，但在浏览器中创建或修改应用时，这些函数将返回零值。
 
 ### <a name="acceleration"></a>Acceleration
 
-**Acceleration** 信号以相对于设备屏幕的三维方式返回设备的加速度。 Acceleration 的测量单位为 g  （9.81 m/s<sup>2</sup> 或 32.2 ft/s<sup>2</sup>）（地球由于重力而在其表面对物体产生的加速度）。
+**Acceleration** 信号以相对于设备屏幕的三维方式返回设备的加速度。 Acceleration 的测量单位为 g（9.81 m/s<sup>2</sup> 或 32.2 ft/s<sup>2</sup>）（地球由于重力而在其表面对物体产生的加速度）。
 
 | 属性 | 描述 |
 | --- | --- |
@@ -45,13 +45,13 @@ ms.locfileid: "66451461"
 
 ### <a name="app"></a>App
 
-在其他属性之间**应用**对象包括信号，指示在显示的屏幕。
+除了其他属性，**应用程序**对象还包含指示所显示屏幕的信号。
 
 | 属性 | 描述 |
 | --- | --- |
-| **App.ActiveScreen** |显示的屏幕。 返回一个屏幕对象，可用于引用屏幕属性或比较到另一个屏幕来确定显示哪个屏幕。 可以使用 **[回](function-navigate.md)** 或 **[Navigate](function-navigate.md)** 函数来更改显示的屏幕。 |
+| **App.ActiveScreen** |显示的屏幕。 返回一个屏幕对象，您可以使用该对象引用屏幕的属性，或与另一个屏幕进行比较以确定要显示的屏幕。 您可以使用 " **[后退](function-navigate.md)** " 或 " **[导航](function-navigate.md)** " 功能更改显示的屏幕。 |
 
-详细信息：[**应用程序**对象](object-app.md)文档。
+详细信息：[**应用**对象](object-app.md)文档。
 
 ### <a name="compass"></a>Compass
 **Compass** 信号返回屏幕顶部的指南针标题。 该标题以磁北方为基础。
@@ -82,18 +82,18 @@ ms.locfileid: "66451461"
 | **Location.Longitude** |返回一个介于 0 至 180 之间的数值，该值指示从英国格林威治以西起用度数表示的经度。 |
 
 ## <a name="examples"></a>示例
-在棒球字段中，投手投掷手机从投球区向本垒的捕手。 该手机相对于地面是平行移动的，手机的屏幕顶端指向捕手，且投手在投掷过程中未使手机发生旋转。 在该位置，这部手机连接的是按流量计费的移动网络服务，没有 WiFi。 将显示 **PlayBall** 屏幕。   
+在棒球域中，罐状指针从罐间球场到 home 盘子上的收集者。 该手机相对于地面是平行移动的，手机的屏幕顶端指向捕手，且投手在投掷过程中未使手机发生旋转。 在该位置，这部手机连接的是按流量计费的移动网络服务，没有 WiFi。 将显示 **PlayBall** 屏幕。   
 
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
-| **Location.Latitude** |返回当前位置的纬度。 字段位于地图上的坐标 N，122.333 w。 |47.591<br><br>纬度将随球在投手和捕手之间的移动而不断更改。 |
+| **Location.Latitude** |返回当前位置的纬度。 此字段位于地图坐标 47.591 N，122.333 W。 |47.591<br><br>纬度将随球在投手和捕手之间的移动而不断更改。 |
 | **Location.Longitude** |返回当前位置的经度。 |122.333<br><br>经度将随球在投手和捕手之间的移动而不断更改。 |
 | **位置** |返回当前位置的经度和纬度作为记录。 |{&nbsp;纬度：&nbsp;47.591，经度：&nbsp;122.333&nbsp;} |
-| **Compass.Heading** |返回屏幕顶部的指南针标题。 在此字段中，本垒大致西南部从才投手区。 |230.25 |
+| **Compass.Heading** |返回屏幕顶部的指南针标题。 在此字段中，主盘子大致来自罐杯杯的球场。 |230.25 |
 | **Acceleration.X** |返回并排设备的加速度。 由于投手直接向前相对屏幕的顶端投掷手机，因此设备不会并排加速。 |0 |
 | **Acceleration.Y** |返回设备从前到后的加速度。 在投掷设备之初，投手为设备提供了一个较大的加速度，在半秒中内达到从 0 增至 90 英里/小时（132 英尺/秒）。 设备在空中运动时，忽略空气阻力，设备不会进一步加速。 捕手接住设备时，设备将减速至停止。 |8.2，投手投掷设备时。<br><br>0，设备在空中时。<br><br>-8.2，捕手接住设备时。 |
 | **Acceleration.Z** |返回设备从上到下的加速度。 设备在空中运动时会受重力影响。 |0，投手投掷设备前。<br><br>1，设备在空中运动时。<br><br>0，捕手接住设备后。 |
-| **Acceleration** |将加速度作为记录返回。 |{X:0，Y:264，Z:0} 作为投手投掷设备。 |
+| **Acceleration** |将加速度作为记录返回。 |X-BLADE0，Y：264，Z：0}，则会引发设备。 |
 | **Connection.Connected** |返回一个布尔值，它指示设备是否已连接到网络 |**true** |
 | **Connection.Metered** |返回一个布尔值，它指示连接是否按流量计费 |**true** |
 | **App.ActiveScreen = PlayBall** |返回一个布尔值，它指示是否显示了 **PlayBall**。 |**true** |

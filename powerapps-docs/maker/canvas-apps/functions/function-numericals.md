@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/13/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 95406bff477a4d84a6125225ffc1e158ffb8c19a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 6e559f482c8ad151eb04057f3178b141150acc7d
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544000"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984429"
 ---
 # <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>PowerApps 中的 Abs、Exp、Ln、Power 和 Sqrt 函数
 计算绝对值、自然对数、平方根和 *e* 或任意数字的指定次方值结果。
@@ -30,7 +30,7 @@ ms.locfileid: "61544000"
 
 **Ln** 函数返回参数的自然对数（以 *e* 为底）。
 
-**Power** 函数返回数字的次方值。  相当于使用 [**^** 运算符](operators.md)。
+**Power** 函数返回数字的次方值。  相当于使用 [ **^** 运算符](operators.md)。
 
 **Sqrt** 函数返回参数的平方根。
 

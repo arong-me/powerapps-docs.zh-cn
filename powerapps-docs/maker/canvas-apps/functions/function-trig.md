@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/13/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6eab89f436bc00ae0c447494607b5c1bb0cec875
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: b29bce3f1237c6e98376989981f68e207439dc89
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61519838"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984103"
 ---
 # <a name="acos-acot-asin-atan-atan2-cos-cot-degrees-pi-radians-sin-and-tan-functions-in-powerapps"></a>PowerApps 中的 Acos、Acot、Asin、Atan、Atan2、Cos、Cot、Degrees、Pi、Radians、Sin 和 Tan 函数
 计算三角函数的值。
@@ -42,7 +42,7 @@ Asin 函数返回其参数的反正弦值。 反正弦值是以正弦值作为�
 
 Atan 函数返回其参数的反正切值。 反正切值是以正切值作为参数的角度。 返回的角度以弧度表示，范围在 -&pi;/2 至 &pi;/2 之间。
 
-Atan2 函数返回以指定 x 和 y 坐标作为参数的反正切值。 这个反正切值是指从 x 轴到包含原点 (0, 0) 和坐标为 (x, y) 的点的直线的角度。 角度以弧度表示，范围在 -&pi; 和 &pi; 之间，不包括 -&pi;。  结果为正表示从 *x* 轴开始的逆时针角度；结果为负表示顺时针角度。  **Atan2(&nbsp;*a*,&nbsp;*b*&nbsp;)** 等于 **Atan(&nbsp;*b*/*a*&nbsp;)**，不过 **Atan2** 函数的 ***a*** 可以等于 0（零）。
+Atan2 函数返回以指定 x 和 y 坐标作为参数的反正切值。 这个反正切值是指从 x 轴到包含原点 (0, 0) 和坐标为 (x, y) 的点的直线的角度。 角度以弧度表示，范围在 -&pi; 和 &pi; 之间，不包括 -&pi;。  结果为正表示从 *x* 轴开始的逆时针角度；结果为负表示顺时针角度。  **Atan2(&nbsp;*a*,&nbsp;*b*&nbsp;)** 等于 **Atan(&nbsp;*b*/*a*&nbsp;)** ，不过 **Atan2** 函数的 ***a*** 可以等于 0（零）。
 
 ### <a name="helper-functions"></a>Helper 函数
 **Degrees** 函数可将弧度转换为角度。  弧度 &pi; 等于 180 度。

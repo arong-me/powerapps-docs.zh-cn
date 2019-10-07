@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 07/06/2017
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9c032c237018fbd564dd1143f20951dfb42d9795
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 4ab24458c1ce98c6b499bf2ba05d682568938079
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61520458"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984042"
 ---
 # <a name="reset-function-in-powerapps"></a>PowerApps 中的 Reset 函数
 将控件重置为默认值，放弃任何用户更改。  
@@ -40,10 +40,10 @@ ms.locfileid: "61520458"
 * *Control* – 必需。 要重置的控件。
 
 ## <a name="example"></a>示例
-1. 在屏幕上插入“文本输入”控件。  默认情况下，其名称为 **TextInput1**，且其 **Default** 属性将设置为 **"Text input"**。
+1. 在屏幕上插入“文本输入”控件。  默认情况下，其名称为 **TextInput1**，且其 **Default** 属性将设置为 **"Text input"** 。
 2. 在文本框中键入新值。  
 3. 在屏幕上插入“按钮”控件。
-4. 将该按钮的 **OnSelect** 属性设置为 **Reset( TextInput1 )**。
+4. 将该按钮的 **OnSelect** 属性设置为 **Reset( TextInput1 )** 。
 5. 选择此按钮。  即使选择在控件的末尾进行创作，也可以执行此操作。
 6. 文本框的内容将返回到 **Default** 属性的值。
 

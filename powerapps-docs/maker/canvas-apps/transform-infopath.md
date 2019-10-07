@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/05/2018
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4e0609ce53f88f5945409e688cfc65df39bd6b96
-ms.sourcegitcommit: 8f27a61ce2ec32b8d911845dd00708e3c87b86bb
+ms.openlocfilehash: a5b9ddb2006a53796f782db3c620fa592f2a5aed
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68428721"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994887"
 ---
 # <a name="transform-your-infopath-form-to-powerapps"></a>将 InfoPath 窗体转换为 PowerApps
 
@@ -87,7 +87,7 @@ PowerApps 将生成一个可自定义的应用。
 
 ![隐藏显示锁定数据卡](./media/transform-infopath/hide-show-lock.png)
 
-在右侧窗格中, 滚动到 " **DisplayMode** " 属性以便对其进行编辑。
+在右侧窗格中，滚动到 " **DisplayMode** " 属性以便对其进行编辑。
 
 ![If Else 语句表达式](./media/transform-infopath/if-else-statement.png)
 
@@ -97,9 +97,9 @@ PowerApps 将生成一个可自定义的应用。
 
 此公式表示，如果当前项的“颜色”字段是“蓝色”，“动物”字段将是只读的。 否则，该字段是可编辑的。
 
-若要隐藏卡而不是使其只读，请在 DisplayMode 正上方的 Visible 属性中插入相似函数。
+若要隐藏卡而不是使其只读，请在 DisplayMode 正上方的 Visible属性中插入相似函数。
 
-另外，你还可以显示批准按钮，只要用户的电子邮件地址与审批者的电子邮件地址相匹配即可。 提示使用**用户 ()。通过电子邮件**访问当前用户的电子邮件地址。)因此，你可以将审批者的电子邮件地址存储在 YourDataCard 中，然后将按钮的 Visible 属性设置为此公式：
+另外，你还可以显示批准按钮，只要用户的电子邮件地址与审批者的电子邮件地址相匹配即可。 提示使用**用户（）。通过电子邮件**访问当前用户的电子邮件地址。）因此，你可以将审批者的电子邮件地址存储在 YourDataCard 中，然后将按钮的 Visible 属性设置为此公式：
 
 ```If( YourDataCard.Text = User().Email, true, false )```
 
@@ -110,7 +110,7 @@ PowerApps 将生成一个可自定义的应用。
 
 ```If( IsMatch(TextInput1.Text, Email), Black, Red )```
 
-IsMatch 支持大量预定义模式（如电子邮件）或创建自己的模式。 有关条件格式设置的详细信息，请查看此[社区视频](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Conditional-Formatting-and-Popups/m-p/84962)。
+IsMatch支持大量预定义模式（如电子邮件）或创建自己的模式。 有关条件格式设置的详细信息，请查看此[社区视频](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Conditional-Formatting-and-Popups/m-p/84962)。
 
 **实现基于角色的安全性**  
 第一个要考虑的函数是 [DataSourceInfo](functions/function-datasourceinfo.md)。 从数据源返回的信息将各不相同，但是通常可以使用此公式确认用户是否有权限编辑数据（将 YourDataSource 替换为你的数据源名称）：
@@ -163,7 +163,7 @@ IsMatch 支持大量预定义模式（如电子邮件）或创建自己的模式
 
 ```Filter( Impacts, ddSelectType.Selected.Value in SCategory )```
 
-这样便创建了级联下拉列表。 有关详细信息, 请查看 PowerApps 团队[SharePoint 中的此文章:4个简单步骤中的级联下拉菜单!](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) 或此[社区视频](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813)。 别担心，不使用 SharePoint 也同样可以轻松完成此操作。
+这样便创建了级联下拉列表。 有关详细信息，请查看 PowerApps 团队 [SharePoint：4个简单步骤中的级联下拉菜单！ ](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) 或此[社区视频](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813)。 别担心，不使用 SharePoint 也同样可以轻松完成此操作。
 
 **不要生成一个超级应用**  
 PowerApps 支持从另一个应用调用应用。 你可以生成一组能够相互调用甚至传递数据的应用，从而简化开发工作，而无需使用“泡泡糖”式的方法粘接出一个大型 InfoPath 表单。

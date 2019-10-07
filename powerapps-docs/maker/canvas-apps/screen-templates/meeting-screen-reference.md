@@ -1,75 +1,75 @@
 ---
-title: 画布应用的会议屏幕模板引用 |Microsoft Docs
-description: 了解 PowerApps 中的画布应用的会议屏幕模板工作原理详细的信息
+title: 画布应用的会议屏幕模板参考 |Microsoft Docs
+description: 了解有关 canvas 应用的会议屏幕模板在 PowerApps 中的工作原理的详细信息
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 01/03/2019
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a7559f84b43d3c0372dea71d49c35461ba9d4e57
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c62c3de56534201a81e9f4d453796ebd9b3a0366
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61539378"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71989578"
 ---
-# <a name="reference-information-about-the-meeting-screen-template-for-canvas-apps"></a>有关画布应用的会议屏幕模板的参考信息
+# <a name="reference-information-about-the-meeting-screen-template-for-canvas-apps"></a>有关 canvas 应用的会议屏幕模板的参考信息
 
-对于在 PowerApps 中的画布应用，了解会议屏幕模板中的每个重要控件如何影响屏幕的整体默认功能。 此深入探讨了行为公式以及其他属性，用于确定控件如何响应用户输入的值。 此屏幕的默认功能的综合讨论，请参阅[会议屏幕概述](meeting-screen-overview.md)。
+对于 PowerApps 中的画布应用，请了解会议屏蔽模板中的每个重要控件如何为屏幕的整体默认功能提供。 这一深入探讨介绍了如何通过其他属性来确定控件如何响应用户输入。 有关此屏幕默认功能的详细讨论，请参阅[会议屏幕概述](meeting-screen-overview.md)。
 
-本主题重点介绍一些重要的控件，并介绍的各种属性的表达式或公式 (如**项**并**OnSelect**) 这些控件的设置：
+本主题重点介绍一些重要的控件，并说明这些控件的各种属性（例如**Items**和**OnSelect**）的设置表达式或公式：
 
-* [邀请选项卡 (LblInviteTab)](#invite-tab)
-* [计划选项卡 (LblScheduleTab)](#schedule-tab)
+* [邀请选项卡（LblInviteTab）](#invite-tab)
+* ["计划" 选项卡（LblScheduleTab）](#schedule-tab)
 * [文本搜索框](#text-search-box)
-* [添加图标 (AddIcon)](#add-icon)
-* [用户浏览库](#people-browse-gallery)（+ 子控件）
-* [会议的人员库](#meeting-people-gallery)（+ 子控件）
-* [会议日期选取器 (MeetingDateSelect)](#meeting-date-picker)
-* [会议持续时间下拉列表 (MeetingDurationSelect)](#meeting-duration-drop-down)
+* [添加图标（AddIcon）](#add-icon)
+* [人员浏览库](#people-browse-gallery)（+ 子控件）
+* [会议人员库](#meeting-people-gallery)（+ 子控件）
+* [会议日期选取器（MeetingDateSelect）](#meeting-date-picker)
+* ["会议持续时间" 下拉（MeetingDurationSelect）](#meeting-duration-drop-down)
 * [查找会议时间库](#find-meeting-times-gallery)（+ 子控件）
-* [聊天室浏览库](#room-browse-gallery)（+ 子控件）
-* [后 v 形图标 (RoomsBackNav)](#back-chevron) （可能不会显示如果租户没有聊天室列表）
+* [会议室浏览库](#room-browse-gallery)（+ 子控件）
+* [Back v 形（RoomsBackNav）](#back-chevron) （如果租户不包含会议室列表，可能不可见）
 * [发送图标](#send-icon)
 
 ## <a name="prerequisite"></a>先决条件
 
-如何添加和配置屏幕和其他控件为您熟悉[在 PowerApps 中创建应用](../data-platform-create-app-scratch.md)。
+熟悉如何[在 PowerApps 中创建应用](../data-platform-create-app-scratch.md)时添加和配置屏幕和其他控件。
 
 ## <a name="invite-tab"></a>邀请选项卡
 
    ![LblInviteTab 控件](media/meeting-screen/meeting-invite-text.png)
 
-* 属性：颜色<br>
+* 知识产权颜色<br>
     值： `If( _showDetails, LblRecipientCount.Color, RectQuickActionBar.Fill )`
 
-    **_showDetails**是用于确定变量是否**LblInviteTab**控件或**LblScheduleTab**控件处于选中状态。 如果的值 **_showDetails**是**true**， **LblScheduleTab**处于选中状态，如果值为**false**， **LblInviteTab**处于选中状态。 这意味着，如果的值 **_showDetails**是**true** (此选项卡*不*选)，选项卡颜色匹配的**LblRecipientCount**. 否则，它还与填充值相匹配**RectQuickActionBar**。
+    **_showDetails**是一个变量，用来确定**LblInviteTab**控件或**LblScheduleTab**控件是否处于选中状态。 如果 **_showDetails**的值为**true**，则选择**LblScheduleTab** ;如果该值为**false**，则选择**LblInviteTab** 。 这意味着，如果 **_showDetails**的值为**true** （*未*选中此选项卡），则选项卡颜色将与**LblRecipientCount**的颜色匹配。 否则，它将匹配**RectQuickActionBar**的填充值。
 
-* 属性：**OnSelect**<br> 
+* 知识产权**OnSelect**<br> 
     值： `Set( _showDetails, false )`
 
-    集 **_showDetails**变量**false**，这意味着邀请选项卡的内容是可见的和的内容**计划**隐藏选项卡。
+    将 **_showDetails**变量设置为**false**，这意味着 "邀请" 选项卡的内容可见，并隐藏 "**计划**" 选项卡的内容。
 
 ## <a name="schedule-tab"></a>计划选项卡
 
    ![LblInviteTab 控件](media/meeting-screen/meeting-schedule-text.png)
 
-* 属性：颜色<br>
+* 知识产权颜色<br>
     值： `If( !_showDetails, LblRecipientCount.Color, RectQuickActionBar.Fill )`
 
-    **_showDetails**是用于确定变量是否**LblInviteTab**控件或**LblScheduleTab**控件处于选中状态。 如果为 true， **LblScheduleTab**处于选中状态，如果为 false， **LblInviteTab**是。 这意味着，如果 **_showDetails**为 true (此选项卡*是*选)，选项卡颜色匹配的填充值**RectQuickActionBar**。 否则，它匹配的颜色值**LblRecipientCount**。
+    **_showDetails**是一个变量，用来确定**LblInviteTab**控件或**LblScheduleTab**控件是否处于选中状态。 如果为 true，则选择**LblScheduleTab** ;如果为 false，则**LblInviteTab**为。 这意味着，如果 **_showDetails**为 true （选中此选项卡），则*选项卡颜色*将与**RectQuickActionBar**的填充值匹配。 否则，它与**LblRecipientCount**的颜色值匹配。
 
-* 属性：**OnSelect**<br>
+* 知识产权**OnSelect**<br>
     值： `Set( _showDetails, true )`
 
-    集 **_showDetails**变量**true**，这意味着计划选项卡的内容是可见的并且邀请选项卡的内容隐藏状态。
+    将 **_showDetails**变量设置为**true**，这意味着 "计划" 选项卡的内容可见，"邀请" 选项卡的内容处于隐藏状态。
 
 ## <a name="text-search-box"></a>文本搜索框
 
@@ -77,20 +77,20 @@ ms.locfileid: "61539378"
 
 <!--Include description of text search box control?-->
 
-在屏幕中的多个其他控件具有此依赖关系：
+屏幕中的其他几个控件依赖于这一控件：
 
-* 如果用户开始输入任何文本**PeopleBrowseGallery**将变得可见。
-* 如果用户键入一个有效的电子邮件地址， **AddIcon**将变得可见。
-* 如果用户选择内的某个人**PeopleBrowseGallery**搜索内容会重置。
+* 如果用户开始键入任何文本，则**PeopleBrowseGallery**变得可见。
+* 如果用户键入有效的电子邮件地址，则**AddIcon**会变得可见。
+* 当用户在**PeopleBrowseGallery**中选择人员时，将重置搜索内容。
 
 ## <a name="add-icon"></a>“添加”图标
 
    ![AddIcon 控件](media/email-screen/email-add-icon.png)
 
-此控件允许用户添加到正在撰写会议的与会者列表其组织内不存在的人员。
+此控件允许用户将其组织内不存在的人员添加到要撰写的会议的与会者列表。
 
-* 属性：**Visible**<br>
-    值：三个逻辑会检查所有必须计算结果为 **，则返回 true**控件可见：
+* 知识产权**亮起**<br>
+    负值要使控件可见，三个逻辑检查都必须计算结果为**true** ：
 
     ```powerapps-dot
     !IsBlank( TextSearchBox.Text ) &&
@@ -98,14 +98,14 @@ ms.locfileid: "61539378"
         Not( Trim( TextSearchBox.Text ) in MyPeople.UserPrincipalName )
     ```
 
-  行的行，此代码块指出**AddIcon**控件是否可见仅当：
+  逐行，此代码块指出**AddIcon**控件仅在以下情况下才可见：
 
   * **TextSearchBox**包含文本。
-  * 中的文本**TextSearchBox**是有效的电子邮件地址。
-  * 中的文本**TextSearchBox**中不存在**MyPeople**集合。
+  * **TextSearchBox**中的文本是有效的电子邮件地址。
+  * **TextSearchBox**中的文本在**MyPeople**集合中尚不存在。
 
-* 属性：**OnSelect**<br> 
-    值：一个**收集**语句将用户添加到非指定与会者列表中，另一个用来刷新可用的会议时间和几个变量切换：
+* 知识产权**OnSelect**<br> 
+    负值将用户添加到与会者列表中的一个**收集**语句，另一个语句用于刷新可用的会议时间和多个可变切换：
 
     ```powerapps-dot
     Collect( MyPeople,
@@ -145,56 +145,56 @@ ms.locfileid: "61539378"
     Set( _showMeetingTimes, true )
     ```
 
-  选择此控件将添加有效的电子邮件地址 (仅在有效的电子邮件地址中键入时可见**TextSearchBox**) 到**MyPeople**集合 （此集合是与会者列表），然后刷新与新的用户条目的可会面时间。
+  如果选择此控件，则会将有效的电子邮件地址（仅当将有效电子邮件地址键入到**TextSearchBox**中时可见）添加到**MyPeople**集合（此集合是与会者列表），然后使用新的用户条目。
 
   在较低的级别，此代码块：
-  1. 收集到的电子邮件地址**MyPeople**集合，收集到的电子邮件地址**DisplayName**， **UserPrincipalName**，和**邮件**字段。
-  1. 将重置的内容**TextSearchBox**控件。
-  1. 集 **_showMeetingTimes**变量**false**。 此变量控制的可见性**FindMeetingTimesGallery**，它显示打开以满足所选的与会者的时间。
-  1. 集 **_loadMeetingTimes**到上下文变量**true**。 此变量设置切换加载类的状态控件的可见性的加载状态 **_LblTimesEmptyState**以指示用户正在加载其数据。
-  1. 集 **_selectedMeetingTime**到**blank （)**。 **_selectedMeetingTime**是从所选的记录**FindMeetingTimesGallery**控件。 它此处留空，因为另一个非指定与会者添加可能意味着，以前的定义 **_selectedMeetingTime**是无法用于该非指定与会者。
-  1. 集 **_selectedRoom**到**blank （)**。 **_selectedRoom**就是所选的空间中**RoomBrowseGallery**。 空间可用性确定的值从 **_selectedMeetingTime**。 用此值留空， **_selectedRoom**值不再有效，因此它必须留空。
-  1. 集 **_roomListSelected**到**false**。 这行可能不是适用于每个人。 在 Office 中您可以在聊天室按分组不同"会议室列表"。 如果有房间列表，此屏幕中占了，这样，您首先选择房间列表选择从该列表中的房间之前。 值 **_roomListSelected**确定是否 （在仅房间列表与租户） 的用户将查看聊天室房间列表或组的空间列表中。 设置为**false**来强制用户重新选择新的房间列表。
-  1. 使用[Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times)操作来确定并收集与会者的可会面时间。 此操作将传递：
-      * **UserPrincipalName**的每个所选用户*RequiredAttendees*参数。
-      * **MeetingDurationSelect**。到 Selected.Minutes *MeetingDuration*参数。
-      * MeetingDateSelect.SelectedDate + 8 小时数加到*启动*参数。 因为默认情况下，完整日期/时间的日历控件是在选定日期的凌晨 12:00，添加八个小时。 你可能想要在正常工作时间内检索可用性。 正常工作的开始时间是上午 8:00。
-      * **MeetingDateSelect**。SelectedDate + 17 小时数加到*最终*参数。 由于添加 17 小时上午 12:00 + 17 = 下午 5:00。 正常的工作结束时间是下午 5:00。
-      * *15*成*MaxCandidates*参数。 这意味着该操作将返回只返回前 15 可用的所选日期时间。 这是有意义，因为在 8 小时工作日中有仅十六个 30 分钟区块和 30 分钟会议是一个可在此屏幕中设置的最小。
-      * *1*成*MinimumAttendeePercentage*参数。 从根本上讲，除非没有其他与会者都不可用，会议时间检索。
-      * **false**成*IsOrganizerOptional*参数。 应用程序用户不是此会议与会者。
-      * "工作"到*ActivityDomain*参数。 这意味着检索到的时间是只有那些正常工作时间内时间。
-  1. **ClearCollect**函数还将添加两个列："StartTime"和"EndTime"。 这简化了返回的数据。 
-  包含可用的开始和结束时间的字段是**MeetingTimeSlot**字段。 此字段是记录包含开始和结束的记录，本身包含**DateTime**并**时区**其各自的建议的值。 而不尝试检索的记录这种嵌套时，将添加到的"StartTime"和"结束时间"列**MeetingTimes**集合将那些**开始 > DateTime**和**结束 >DateTime**值到集合中的图面。
-  1. 这些函数具有全部完成后， **_loadingMeetingTimes**变量设置为**false**，删除加载状态，并且 **_showMeetingTimes**设置为 **，则返回 true**，显示**FindMeetingTimesGallery**。
+  1. 将电子邮件地址收集到**MyPeople**集合，将电子邮件地址收集到**DisplayName**、 **UserPrincipalName**和**Mail**字段。
+  1. 重置**TextSearchBox**控件的内容。
+  1. 将 **_showMeetingTimes**变量设置为**false**。 此变量控制**FindMeetingTimesGallery**的可见性，这将显示所选与会者要满足的打开时间。
+  1. 将 **_loadMeetingTimes**上下文变量设置为**true**。 此变量设置加载状态，该状态将切换加载状态控件（如 **_LblTimesEmptyState** ）的可见性，以指示用户正在加载其数据。
+  1. 将 **_selectedMeetingTime**设置为**空白（）** 。 **_selectedMeetingTime**是**FindMeetingTimesGallery**控件中的选定记录。 这会在此处遮蔽，因为添加其他与会者可能意味着 **_selectedMeetingTime**的前一定义不能用于该与会者。
+  1. 将 **_selectedRoom**设置为**空白（）** 。 **_selectedRoom**是来自**RoomBrowseGallery**的选定房间记录。 房间可用性由 **_selectedMeetingTime**的值确定。 如果该值被遮蔽， **_selectedRoom**值将不再有效，因此必须将其遮蔽。
+  1. 将 **_roomListSelected**设置为**false**。 该行可能不适用于所有人。 在 Office 中，可以按不同的 "房间列表" 对房间进行分组。 如果你有房间列表，此屏幕会对此进行设置，使你可以在从该列表中选择一个房间之前先选择一个房间列表。 **_RoomListSelected**的值决定了某个用户（在仅包含会议室列表的租户中）是否将查看房间列表或会议室列表中的会议室。 此参数设置为**false**以强制用户重新选择新的聊天室列表。
+  1. 使用[Office365. FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times)操作来确定和收集与会者的可用会议时间。 此操作通过：
+      * 每个所选用户在*RequiredAttendees*参数中的**UserPrincipalName** 。
+      * **MeetingDurationSelect**。在*MeetingDuration*参数中选择了分钟。
+      * 在*Start*参数中 MeetingDateSelect + 8 小时。 添加了8小时，因为默认情况下，日历控件的完整日期/时间为所选日期的 12:00 AM。 可能需要在正常工作时间内检索可用性。 正常工作开始时间为 8:00 AM。
+      * **MeetingDateSelect**。*结束*参数 SelectedDate + 17 小时。 添加17小时，因为 12:00 AM + 17 = 5:00 PM。 正常工作结束时间为 5:00 PM。
+      * *15*到*MaxCandidates*参数。 这意味着操作仅返回选定日期前15个可用的时间。 这种做法很有意义，因为在8小时的工作日内只有 16 30 分钟的区块，而30分钟的会议是此屏幕中的最小值。
+      * *1* *MinimumAttendeePercentage*参数。 实质上，除非没有可用的与会者，否则将检索会议时间。
+      * *IsOrganizerOptional*参数的**值为 false** 。 应用用户不是此会议的可选与会者。
+      * "工作" 到*ActivityDomain*参数。 这意味着检索到的时间只是在正常工作时间段内的时间。
+  1. **ClearCollect**函数还添加了两个列："StartTime" 和 "EndTime"。 这简化了返回的数据。 
+  包含可用开始和结束时间的字段为**MeetingTimeSlot**字段。 此字段是包含开始和结束记录的记录，这些记录本身包含其各自建议的**日期时间**和**时区**值。 将 "StartTime" 和 "EndTime" 列添加到**MeetingTimes**集合，而不是尝试检索记录的这一嵌套，这会使这些**开始 > 日期时间**和**结束时间 > 日期时间**值添加到集合的图面上。
+  1. 完成这些函数后， **_loadingMeetingTimes**变量将设置为**false**，删除加载状态，并将 **_showMeetingTimes**设置为**true**，并显示**FindMeetingTimesGallery**。
 
-## <a name="people-browse-gallery"></a>用户浏览库
+## <a name="people-browse-gallery"></a>人员浏览库
 
    ![PeopleBrowseGallery 控件](media/meeting-screen/meeting-browse-gall.png)
 
-* 属性：**项**<br>
-    值： 
+* 知识产权**项**<br>
+    负值 
     ```powerapps-dot
     If( !IsBlank( Trim( TextSearchBox.Text ) ), 
         'Office365Users'.SearchUser( { searchTerm: Trim(TextSearchBox.Text), top: 15 } )
     )
     ```
 
-此库的项填充从搜索结果的[Office365.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser)操作。 该操作采用文本`Trim(**TextSearchBox**)`作为搜索字词，并返回前 15 个结果基于该搜索。
+此库中的项由[Office365. SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser)操作的搜索结果填充。 操作采用 `Trim(**TextSearchBox**)` 作为其搜索词的文本，并基于该搜索返回前15个结果。
   
-**TextSearchBox**包装在**剪裁**函数，因为空间上的用户搜索无效。 `Office365Users.SearchUser`操作包装在`If(!IsBlank(Trim(TextSearchBox.Text)) ... )`函数，因为用户具有搜索之前检索搜索结果则性能会浪费。
+由于在空格上搜索的用户无效， **TextSearchBox**已包装在**Trim**函数中。 @No__t-0 操作包装在 @no__t 1 函数中，因为在用户搜索之前检索搜索结果是一项性能浪费。
 
 ### <a name="people-browse-gallery-title"></a>用户浏览库标题
 
    ![PeopleBrowseGallery 标题控件](media/meeting-screen/meeting-browse-gall-title.png)
 
-* 属性：**文本**<br>
+* 知识产权**文本**<br>
     值： `ThisItem.DisplayName`
 
-    显示从其 Office 365 配置文件的用户的显示名称。
+    显示用户在其 Office 365 配置文件中的显示名称。
 
-* 属性：**OnSelect**<br>
-    值：一个**收集**语句将用户添加到非指定与会者列表中，另一个用来刷新可用的会议时间和几个变量切换：
+* 知识产权**OnSelect**<br>
+    负值将用户添加到与会者列表中的一个**收集**语句，另一个语句用于刷新可用的会议时间和多个可变切换：
 
     ```powerapps-dot
     Concurrent(
@@ -233,25 +233,25 @@ ms.locfileid: "61539378"
     )
     ```
 
-    在高级别中，选择此控件将添加到 person **MyPeople**集合 （非指定与会者列表的应用程序的存储，） 和刷新的可会面时间基于添加新用户。
+    从较高层次来看，选择此控件即可将人员添加到**MyPeople**集合（"与会者列表" 的应用存储），并基于新用户添加刷新可用的会议时间。
 
-    选择此控件是非常类似于选择**AddIcon**控制; 的唯一区别在于`Set(_selectedUser, ThisItem)`语句和操作的执行顺序。 在这种情况下，这一讨论将无法做到。 有关更完整说明，通读[AddIcon 控件](#add-icon)部分。
+    选择此控件非常类似于选择**AddIcon**控件;唯一的区别在于 `Set(_selectedUser, ThisItem)` 语句和操作的执行顺序。 同样，这一讨论并不深入。 有关更完整的说明，请阅读[AddIcon 控件](#add-icon)部分。
 
-    选择此控件重置**TextSearchBox**。 然后，如果所选内容不在**MyPeople**集合，该控件：
-    1. 集 **_loadMeetingTimes**状态变为**true**并 **_showMeetingTimes**状态变为**false**，空白 **_selectedMeetingTime**并 **_selectedRoom**变量和刷新**MeetingTimes**集合的新增功能与**MyPeople**集合。 
-    1. 设置 **_loadMeetingTimes**状态变为**false**，并设置 **_showMeetingTimes**到**true**。 如果所选内容已处于**MyPeople**集合，它将重置的内容**TextSearchBox**。
+    选择此控件将重置**TextSearchBox**。 然后，如果所选内容不在**MyPeople**集合中，则控件：
+    1. 将 **_loadMeetingTimes**状态设置为**True** ，将 **_showMeetingTimes**状态设置为**false**，将 **_selectedMeetingTime**和 **_selectedRoom**变量设为空白，并刷新**MeetingTimes**集合，其中新添加到**MyPeople**集合。 
+    1. 将 **_loadMeetingTimes**状态设置为**false**，并将 **_showMeetingTimes**设置为**true**。 如果选定内容已在**MyPeople**集合中，则它仅重置**TextSearchBox**的内容。
 
-## <a name="meeting-people-gallery"></a>会议的人员库
+## <a name="meeting-people-gallery"></a>会议人员库
 
    ![MeetingPeopleGallery 控件](media/meeting-screen/meeting-people-gall.png)
 
-* 属性：**项**<br>
+* 知识产权**项**<br>
     值： `MyPeople`
 
-    **MyPeople**集合是初始化或通过选择添加到用户的集合**PeopleBrowseGallery 标题**控件。
+    **MyPeople**集合是通过选择 " **PeopleBrowseGallery" 标题**控件进行初始化或添加的人员的集合。
 
-* 属性：**Height**<br>
-    值：若要允许库增长到 350 的最大高度的逻辑：
+* 知识产权**高**<br>
+    负值允许库增长到最大高度为350的逻辑：
 
     ```powerapps-dot
     Min( 
@@ -261,29 +261,29 @@ ms.locfileid: "61539378"
     ```
 
   
-   此库的高度调整为在库中，为 350 的最大高度的项的数目。 该公式将作为单个行的高度 76 **MeetingPeopleGallery**，然后将其乘以的行数。 **WrapCount**属性设置为 2，因此，则返回 true 的行数是`RoundUp(CountRows(MeetingPeopleGallery.AllItems) / 2, 0)`。
+   此库的高度将调整为库中的项目数，最大高度为350。 公式采用76作为**MeetingPeopleGallery**的单个行的高度，然后将其与行数相乘。 **WrapCount**属性设置为2，因此真实行数 @no__t 为-1。
 
-* 属性：**ShowScrollbar**<br>
+* 知识产权**ShowScrollbar**<br>
     值： `MeetingPeopleGallery.Height >= 350`
 
-    当 (350) 达到库的最大高度，则会显示滚动条。
+    当达到库的最大高度（350）时，滚动条可见。
 
-### <a name="meeting-people-gallery-title"></a>会议的人员库标题
+### <a name="meeting-people-gallery-title"></a>会议人员画廊标题
 
    ![MeetingPeopleGallery 标题控件](media/meeting-screen/meeting-people-gall-title.png)
 
-* 属性：**OnSelect**<br>
+* 知识产权**OnSelect**<br>
     
     值： `Set(_selectedUser, ThisItem)`
     
-    集 **_selectedUser**变量中的选定项**MeetingPeopleGallery**。
+    将 **_selectedUser**变量设置为在**MeetingPeopleGallery**中选定的项。
 
-### <a name="meeting-people-gallery-iconremove"></a>会议的人员库 iconRemove
+### <a name="meeting-people-gallery-iconremove"></a>会议人员库 iconRemove
 
    ![MeetingPeopleGallery iconRemove 控件](media/meeting-screen/meeting-people-gall-delete.png)
 
-* 属性：**OnSelect**<br>
-    值：一个**删除**语句以从非指定与会者列表中，删除用户**收集**语句以刷新可用的会议时间和几个变量切换：
+* 知识产权**OnSelect**<br>
+    负值用于从与会者列表中删除用户的**remove**语句、用于刷新可用会议时间的**收集**语句和几个可变切换：
 
     ```powerapps-dot
     Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) );
@@ -317,31 +317,31 @@ ms.locfileid: "61539378"
     Set( _showMeetingTimes, true )
     ```
 
-  在高级别中，选择此控件从非指定与会者列表中删除该人员并刷新基于此人删除的可会面时间。
+  从较高层次来看，选择此控件将从与会者列表中删除该用户，并根据删除此人的情况刷新可用会议时间。
 
-  在前面的代码中的第一行后, 选择此控件是选择几乎完全相同**AddIcon**控件。 在这种情况下，这一讨论将不可做到。 有关更完整说明，通读[AddIcon 控制部分](#add-icon)。
+  在上述代码的第一行之后，选择该控件与选择**AddIcon**控件几乎完全相同。 因此，此讨论并不深入。 有关更完整的说明，请阅读[AddIcon 控件部分](#add-icon)。
 
-  在第一行代码，所选的项已从**MyPeople**集合。 然后代码：
-  1. 重置**TextSearchBox**，然后从选择中删除**MyPeople**集合。 
-  1. 集 **_loadMeetingTimes**状态变为**true**并 **_showMeetingTimes**状态变为**false**，空白 **_selectedMeetingTime**并 **_selectedRoom**变量和刷新**MeetingTimes**集合的新增功能与**MyPeople**集合。 
-  1. 设置 **_loadMeetingTimes**状态变为**false**，并设置 **_showMeetingTimes**到**true**。
+  在代码的第一行中，从**MyPeople**集合中删除所选的项。 然后，该代码：
+  1. 重置**TextSearchBox**，并从**MyPeople**集合中删除所选内容。 
+  1. 将 **_loadMeetingTimes**状态设置为**True** ，将 **_showMeetingTimes**状态设置为**false**，将 **_selectedMeetingTime**和 **_selectedRoom**变量设为空白，并刷新**MeetingTimes**集合，其中新添加到**MyPeople**集合。 
+  1. 将 **_loadMeetingTimes**状态设置为**false**，并将 **_showMeetingTimes**设置为**true**。
 
 ## <a name="meeting-date-picker"></a>会议日期选取器
 
    ![MeetingDateSelect 控件](media/meeting-screen/meeting-datepicker.png)
 
-* 属性：**DisplayMode**<br>
+* 知识产权**DisplayMode**<br>
     值： `If( IsEmpty(MyPeople), DisplayMode.Disabled, DisplayMode.Edit )`
 
-    不能选会议的日期，直到至少一个非指定与会者已添加到**MyPeople**集合。
+    在至少有一个与会者添加到**MyPeople**集合之前，不能选择会议日期。
 
-* 属性：**OnChange**<br>
+* 知识产权**OnChange**<br>
     值： `Select( MeetingDateSelect )`
 
-    更改所选的日期中的代码将触发**OnSelect**要运行此控件的属性。
+    更改所选日期会触发此控件的**OnSelect**属性中的代码运行。
 
-* 属性：**OnSelect**<br>
-    值：一个**收集**语句以刷新可用的会议时间和几个变量切换：
+* 知识产权**OnSelect**<br>
+    负值用于刷新可用会议时间和多个可变切换的**收集**语句：
   
     ```powerapps-dot
     Concurrent(
@@ -374,48 +374,48 @@ ms.locfileid: "61539378"
     Set( _showMeetingTimes, true )
     ```
 
-  在高级别中，选择此控件刷新的可会面时间。 它非常有用，因为如果用户更改日期，需要更新以反映对这一天的与会者的可用性的可会面时间。
+  在高级别中，选择此控件可刷新可用的会议时间。 它非常有用，因为如果用户更改日期，则可用的会议时间需要更新，以反映该日期的与会者可用性。
 
-  除了初始**收集**语句，这等同于**OnSelect**的功能**AddIcon**控件。 在这种情况下，这一讨论将不可做到。 有关更完整说明，通读[AddIcon 控件](#add-icon)部分。
+  除了初始**收集**语句以外，这与**AddIcon**控件的**OnSelect**功能相同。 因此，此讨论并不深入。 有关更完整的说明，请阅读[AddIcon 控件](#add-icon)部分。
 
-  选择此控件重置**TextSearchBox**。 然后它： 
-  1. 集 **_loadMeetingTimes**状态变为**true**并 **_showMeetingTimes**状态变为**false**，空白 **_selectedMeetingTime**并 **_selectedRoom**变量和刷新**MeetingTimes**使用新的日期选择的集合。 
-  1. 设置 **_loadMeetingTimes**状态变为**false**，并设置 **_showMeetingTimes**到**true**。
+  选择此控件将重置**TextSearchBox**。 然后： 
+  1. 将 **_loadMeetingTimes**状态设置为**True** ，将 **_showMeetingTimes**状态设置为**false**，将 **_selectedMeetingTime**和 **_selectedRoom**变量设为空白，并刷新**MeetingTimes**带有新日期选择的集合。 
+  1. 将 **_loadMeetingTimes**状态设置为**false**，并将 **_showMeetingTimes**设置为**true**。
 
-## <a name="meeting-duration-drop-down"></a>会议持续时间下拉列表
+## <a name="meeting-duration-drop-down"></a>"会议持续时间" 下拉
 
    ![MeetingDateSelect 控件](media/meeting-screen/meeting-timepicker.png)
 
-* 属性：**DisplayMode**<br>
+* 知识产权**DisplayMode**<br>
     值： `If( IsEmpty(MyPeople), DisplayMode.Disabled, DisplayMode.Edit )`
 
-    不能选会议的持续时间，直到至少一个非指定与会者已添加到**MyPeople**集合。
+    在至少有一个与会者添加到**MyPeople**集合之前，无法选择会议的持续时间。
 
-* 属性：**OnChange**<br>
+* 知识产权**OnChange**<br>
     值： `Select(MeetingDateSelect1)`
 
-    更改所选时段内将触发中的代码**OnSelect**的属性**MeetingDateSelect**控件运行。
+    更改所选持续时间会触发**MeetingDateSelect**控件的**OnSelect**属性中的代码运行。
 
 ## <a name="find-meeting-times-gallery"></a>查找会议时间库
 
    ![FindMeetingTimesGallery 控件](media/meeting-screen/meeting-time-gall.png)
 
-* 属性：**项**<br>
+* 知识产权**项**<br>
     值： `MeetingTimes`
 
-    从潜在的会议时间的集合中检索[Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times)操作。
+    [Office365. FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times)操作检索到的潜在会议时间的集合。
 
-* 属性：**Visible**<br>
+* 知识产权**亮起**<br>
     值： `_showMeetingTimes && _showDetails && !IsEmpty( MyPeople )`
 
-    库是可见才 **_showMeetingTimes**设置为**true**，用户所选**LblScheduleTab**控件，并且至少一个非指定与会者添加到会议。
+    仅当 **_showMeetingTimes**设置为**true**，用户已选择了**LblScheduleTab**控件，且至少有一个与会者添加到会议时，库才可见。
 
 ### <a name="find-meeting-times-gallery-title"></a>查找会议时间库标题
 
    ![FindMeetingTimesGallery 标题控件](media/meeting-screen/meeting-time-gall-title.png)
 
-* 属性：**文本**<br>
-    值：若要显示在用户的本地时间的开始时间的转换：
+* 知识产权**文本**<br>
+    负值要在用户的本地时间内显示的开始时间的转换：
 
     ```powerapps-dot
     Text(
@@ -428,11 +428,11 @@ ms.locfileid: "61539378"
     )
     ```
 
-  检索到的值的**StartTime**采用 UTC 格式。 向[从 UTC 转换为本地时间](../functions/function-dateadd-datediff.md#converting-from-utc)，则**DateAdd**应用函数。
-  [文本函数](../functions/function-text.md#datetime)将日期/时间作为其第一个参数，并基于其第二个参数的格式。 传递给它的本地时间转换**ThisItem.StartTime**，并将其作为显示**DateTimeFormat.ShortTime**。
+  **StartTime**的检索值采用 UTC 格式。 若要[将 UTC 转换为本地时间](../functions/function-dateadd-datediff.md#converting-from-utc)，请应用**DateAdd**函数。
+  [Text 函数](../functions/function-text.md#datetime)使用日期/时间作为其第一个参数，并根据其第二个参数对其进行格式设置。 向其传递**ThisItem**的本地时间转换，并将其显示为**DateTimeFormat. ShortTime**。
 
-* 属性：**OnSelect**<br>
-    值：多个**收集**语句，以收集会议房间和其建议的可用性，以及多个变量切换：
+* 知识产权**OnSelect**<br>
+    负值若干**收集**语句收集会议室及其建议的可用性，以及多个可变切换：
 
     ```powerapps-dot
     Set( _selectedMeetingTime, ThisItem );
@@ -479,28 +479,28 @@ ms.locfileid: "61539378"
     UpdateContext( {_loadingRooms: false} )
     ```
 
-  在高级别中，此代码块不具有权限的用户收集可用聊天室房间列表中，根据会议的所选日期/时间。 否则，它就只检索聊天室列表。
+  从较高层次来看，此代码块会根据所选的会议日期/时间为没有会议室列表的用户收集可用房间。 否则，它只检索会议室列表。
 
   在较低的级别，此代码块：
-  1. 集 **_selectedMeetingTime**到选定的项。 这用于查找哪些聊天室可在该时间段。
-  1. 设置在加载状态变量 **_loadingRooms**到**true**，开启加载状态。
-  1. 如果**RoomsLists**集合为空，它检索用户的租户的房间列表并将它们存储在**RoomsLists**集合。
-  1. 如果用户没有房间列表或一个房间列表：
-      1. **NoRoomLists**变量设置为**true**，并使用此变量来确定在显示的项**RoomBrowseGallery**控件。
-      1. `Office365.GetRooms()`操作用于检索在其租户中的前 100 个教室。 它们存储在**AllRooms**集合。
-      1. **_AllRoomsConcat**变量设置为以分号分隔的聊天室中的第一个 20 电子邮件地址字符串**AllRooms**集合。 这是因为[Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times)限制为 20 个人员对象在单个操作中的可用时间，搜索。
-      1. **RoomTimeSuggestions**集合使用[Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times)若要检索的前 20 个房间可用性**AllRooms**基于的集合从时间值 **_selectedMeetingTime**变量。 请注意，`& "Z"`用于正确进行格式化**DateTime**值。
-      1. **AvailableRooms**创建集合。 这是只需**RoomTimeSuggestions**集合包含两个其他列添加到其中的非指定与会者可用性："地址"和"Name"。 "地址"是此聊天室的电子邮件地址和"Name"是聊天室的名称。
-      1. 然后，将**AvailableRoomsOptimal**创建集合。 而这仅仅是**AvailableRooms**与"可用性"和"与会者"列的集合中删除。 执行此操作的架构匹配**AvailableRoomsOptimal**并**AllRooms**。 这允许您使用这两个集合中的**项**的属性**RoomBrowseGallery**。
+  1. 将 **_selectedMeetingTime**设置为所选的项。 这用于查找在该时间段内可用的会议室。
+  1. 将加载状态变量 **_loadingRooms**设置为**true**，并将加载状态设置为 on。
+  1. 如果**RoomsLists**集合为空，它将检索用户的 tenant's 会议室列表，并将其存储在**RoomsLists**集合中。
+  1. 如果用户没有会议室列表或一个房间列表：
+      1. **NoRoomLists**变量设置为**true**，此变量用于确定**RoomBrowseGallery**控件中显示的项。
+      1. @No__t-0 操作用于检索租户中的前100个聊天室。 它们存储在**AllRooms**集合中。
+      1. **_AllRoomsConcat**变量设置为**AllRooms**集合中房间的前20个电子邮件地址的以分号分隔的字符串。 这是因为， [Office365](https://docs.microsoft.com/connectors/office365/#find-meeting-times)被限制为在单个操作中搜索20个 person 对象的可用时间。
+      1. **RoomTimeSuggestions**集合使用[Office365](https://docs.microsoft.com/connectors/office365/#find-meeting-times)从**AllRooms**变量中的时间值检索 **_selectedMeetingTime**集合中前20个房间的可用性。 请注意，`& "Z"` 用于正确设置**日期时间**值的格式。
+      1. 创建**AvailableRooms**集合。 这只是与会者可用性的**RoomTimeSuggestions**集合，另外还添加了两个列："Address" 和 "Name"。 "Address" 是房间的电子邮件地址，"Name" 是房间的名称。
+      1. 然后，创建**AvailableRoomsOptimal**集合。 这只是删除了 "可用性" 和 "与会者" 列的**AvailableRooms**集合。 这样做与**AvailableRoomsOptimal**和**AllRooms**的架构匹配。 这使您可以在**RoomBrowseGallery**的**Items**属性中使用这两个集合。
       1. **_roomListSelected**设置为**false**。
-  1. 加载状态 **_loadingRooms**，设置为**false**完成其他所有内容后执行。
+  1. 完成执行所有其他操作后，加载状态 **_loadingRooms**将设置为**false** 。
 
-## <a name="room-browse-gallery"></a>聊天室浏览库
+## <a name="room-browse-gallery"></a>会议室浏览库
 
    ![RoomBrowseGallery 控件](media/meeting-screen/meeting-rooms-gall.png)
 
-* 属性：**项**<br>
-    值：以逻辑方式将设置为两个完全相同的架构，具体取决于用户选择文件室中还是在其租户中具有房间列表的内部集合：
+* 知识产权**项**<br>
+    负值逻辑上设置为相同架构的两个内部集合，具体取决于用户是否已选择会议室列表或其租户中包含会议室列表：
 
     ```powerapps-dot
     Search(
@@ -511,19 +511,19 @@ ms.locfileid: "61539378"
     )
     ```
 
-  此库显示**AvailableRoomsOptimal**集合如果 **_roomListSelected**或 **_noRoomLists**是**true**。 否则，将显示**RoomsLists**集合。 这可以因为这些集合的架构相同。
+  如果 **_roomListSelected**或 **_noRoomLists**为**true**，则此库将显示**AvailableRoomsOptimal**集合。 否则，它将显示**RoomsLists**集合。 这可以实现，因为这些集合的架构是相同的。
 
-* 属性：**Visible**<br>
+* 知识产权**亮起**<br>
     值： ```_showDetails && !IsBlank( _selectedMeetingTime ) && !_loadingRooms```
 
-    库是仅在前面的三个语句的计算结果为时可见 **，则返回 true**。
+    只有这三个前述语句的计算结果为**true**时，库才可见。
 
 ### <a name="roombrowsegallery-title"></a>RoomBrowseGallery 标题
 
    ![RoomBrowseGallery 标题控件](media/meeting-screen/meeting-rooms-gall-title.png)
 
-* 属性：**OnSelect**<br>
-    值：一组逻辑上绑定**收集**并**设置**语句，它们可能会或可能不会触发，具体取决于用户是否查看房间列表或聊天室：
+* 知识产权**OnSelect**<br>
+    负值一组逻辑绑定的**收集**和**set**语句，根据用户是查看房间列表还是会议室，它们可能会或不会触发：
 
     ```powerapps-dot
     UpdateContext( { _loadingRooms: true } );
@@ -568,39 +568,39 @@ ms.locfileid: "61539378"
     UpdateContext( {_loadingRooms: false} )
     ```
 
-  选择此控件，可能发生的操作取决于是否用户一组房间列表或聊天室一组当前正在查看。 如果是前者，然后选择此控件检索聊天室从所选的空间列表的所选时间上可用的。 如果是后者，选择此控件设置 **_selectedRoom**变量到选定的项。 前面的语句是非常类似于**选择**语句[ **FindMeetingTimesGallery 标题**](#find-meeting-times-gallery)。
+  选择此控件时所发生的操作取决于用户当前是在查看一组房间列表还是一组聊天室。 如果它是前一种类型，则选择此控件可从 "所选聊天室" 列表中检索所选时间可用的会议室。 如果是后者，则选择此控件会将 **_selectedRoom**变量设置为所选的项。 前面的语句与[**FindMeetingTimesGallery 标题**](#find-meeting-times-gallery)的**Select**语句非常类似。
 
-  在较低的级别，前面的代码块：
-  1. 通过设置开启聊天室的加载状态 **_loadingRooms**到**true**。
-  1. 检查列表，以查看是否房间列表已被选中，并且租户有空间。 如果是这样：
-      1. 设置 **_roomListSelected**到**true**并设置 **_selectedRoomList**到选定的项。
-      1. **_AllRoomsConcat**变量设置为以分号分隔的聊天室中的第一个 20 电子邮件地址字符串**AllRooms**集合。 这是因为[Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times)操作仅限于在单个操作中的 20 个人员对象的可用时间，搜索。
-      1. **RoomTimeSuggestions**集合使用[Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times)操作以检索前 20 个工作室中的可用性**AllRooms**集合中，基于时间的值从 **_selectedMeetingTime**变量。 请注意，`& "Z"`用于正确进行格式化**DateTime**值。
-      1. **AvailableRooms**创建集合。 这是只需**RoomTimeSuggestions**集合包含两个其他列添加到其中的非指定与会者可用性："地址"和"Name"。 "地址"是此聊天室的电子邮件地址和"Name"是聊天室的名称。
-      1. 然后，将**AvailableRoomsOptimal**创建集合。 而这仅仅是**AvailableRooms**与"可用性"和"与会者"列的集合中删除。 执行此操作的架构匹配**AvailableRoomsOptimal**并**AllRooms**。 这允许您使用这两个集合中的**项**的属性**RoomBrowseGallery**。
+  在较低的级别上，上一个代码块：
+  1. 通过将 **_loadingRooms**设置为**true**，打开房间的加载状态。
+  1. 检查是否已选择会议室列表，以及租户是否有房间列表。 如果是这样：
+      1. 将 **_roomListSelected**设置为**true** ，并将 **_selectedRoomList**设置为所选的项。
+      1. **_AllRoomsConcat**变量设置为**AllRooms**集合中房间的前20个电子邮件地址的以分号分隔的字符串。 这是因为， [Office365 FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times)操作仅限于在单个操作中搜索20个 person 对象的可用时间。
+      1. **RoomTimeSuggestions**集合使用[Office365 FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times)操作，根据**AllRooms**中的时间值检索 **_selectedMeetingTime**集合中前20个房间的可用性各种. 请注意，`& "Z"` 用于正确设置**日期时间**值的格式。
+      1. 创建**AvailableRooms**集合。 这只是与会者可用性的**RoomTimeSuggestions**集合，另外还添加了两个列："Address" 和 "Name"。 "Address" 是房间的电子邮件地址，"Name" 是房间的名称。
+      1. 然后，创建**AvailableRoomsOptimal**集合。 这只是删除了 "可用性" 和 "与会者" 列的**AvailableRooms**集合。 这样做与**AvailableRoomsOptimal**和**AllRooms**的架构匹配。 这允许在**RoomBrowseGallery**的**Items**属性中使用这两个集合。
       1. **_roomListSelected**设置为**false**。
-  1. 加载状态 **_loadingRooms**，设置为**false**完成其他所有内容后执行。
+  1. 完成执行所有其他操作后，加载状态 **_loadingRooms**将设置为**false** 。
 
-## <a name="back-chevron"></a>后 v 形展开按钮
+## <a name="back-chevron"></a>后退 v 形
 
    ![RoomsBackNav 控件](media/meeting-screen/meeting-back.png)
 
-* 属性：**Visible**<br>
+* 知识产权**亮起**<br>
     值： `_roomListSelected && _showDetails`
 
-    此控件是否可见的仅当选择这两个房间列表和**计划**选择选项卡。
+    仅当选择了房间列表并且选择了 "**计划**" 选项卡时，此控件才可见。
 
-* 属性：**OnSelect**<br>
+* 知识产权**OnSelect**<br>
     值： `Set( _roomListSelected, false )`
 
-    当 **_roomListSelected**设置为**false**，它会更改**RoomBrowseGallery**控件来显示项从**RoomsLists**集合。
+    当 **_roomListSelected**设置为**false**时，它会将**RoomBrowseGallery**控件更改为显示**RoomsLists**集合中的项。
 
 ## <a name="send-icon"></a>发送图标
 
    ![IconSendItem 控件](media/meeting-screen/meeting-send-icon.png)
 
-* 属性：**DisplayMode**<br>
-    值：若要强制用户在之前的图标将变为可编辑输入某些会议详细信息的逻辑。
+* 知识产权**DisplayMode**<br>
+    负值强制用户在图标变为可编辑状态之前输入某些会议详细信息的逻辑。
     
     ```powerapps-dot
     If( Len( Trim( TextMeetingSubject1.Text ) ) > 0
@@ -608,11 +608,11 @@ ms.locfileid: "61539378"
         DisplayMode.Edit, DisplayMode.Disabled
     )
     ```
-  图标才可选择填写会议主题，则至少一个会议，与会者，已选择的会议时间。 否则，它处于禁用状态。
+  此图标仅在以下情况下是可选的：会议主题已填写，至少有一个与会者参加会议，并已选择了会议时间。 否则，它会被禁用。
 
-* 属性：**OnSelect**<br>
+* 知识产权**OnSelect**<br>
 
-    值：若要向所选与会者发送会议邀请并清除所有输入的字段的代码：
+    负值用于将会议邀请发送到所选与会者并清除所有输入字段的代码：
 
     ```powerapps-dot
     Set( _myCalendarName, LookUp( 'Office365'.CalendarGetTables().value, DisplayName = "Calendar" ).Name );
@@ -644,15 +644,15 @@ ms.locfileid: "61539378"
     ```
   
   在较低的级别，此代码块：
-  1. 集 **_myCalendarName**到中的日历[Office365.CalendarGetTables()](https://docs.microsoft.com/connectors/office365/#get-calendars)操作**DisplayName**的"日历"。
-  1. 计划与输入的所有会议中的值的各种选择整个屏幕使用内容中进行用户[Office365.V2CalendarPostItem](https://docs.microsoft.com/connectors/office365/#create-event--v2-)操作。
-  1. 重置所有输入的字段和变量在创建会议时使用。
+  1. 使用**DisplayName** "calendar" 将 **_MyCalendarName**设置为[Office365 （）](https://docs.microsoft.com/connectors/office365/#get-calendars)操作中的日历。
+  1. 使用[Office365. V2CalendarPostItem](https://docs.microsoft.com/connectors/office365/#create-event--v2-)操作，从用户使用的各种选择中的所有输入值计划会议。
+  1. 重置在创建会议时使用的所有输入字段和变量。
 
 > [!NOTE]
-> 根据你所在的地区，所需的日历可能不具有的显示名称为"日历"。 转到 Outlook，若要查看你的日历的标题是什么，并在应用中进行相应更改。
+> 根据你所在的区域，所需日历的显示名称可能不是 "Calendar"。 转到 Outlook 查看日历的标题，并在应用中进行适当的更改。
 
 ## <a name="next-steps"></a>后续步骤
 
 * [了解有关此屏幕的详细信息](./meeting-screen-overview.md)
-* [了解有关 PowerApps 中的 Office 365 Outlook 连接器的详细信息](../connections/connection-office365-outlook.md)
-* [了解有关 PowerApps 中的 Office 365 用户连接器的详细信息](../connections/connection-office365-users.md)
+* [详细了解 PowerApps 中的 Office 365 Outlook connector](../connections/connection-office365-outlook.md)
+* [详细了解 PowerApps 中的 Office 365 用户连接器](../connections/connection-office365-users.md)

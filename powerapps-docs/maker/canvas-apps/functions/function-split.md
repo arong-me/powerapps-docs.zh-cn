@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta anneta
+ms.reviewer: tapanm tapanm
 ms.date: 09/14/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fd331d5dd8503b072785573dc9400b8e2b581cb3
-ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
+ms.openlocfilehash: 72f92477cc8c942ee0274267c5bcb13094681873
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71038226"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984144"
 ---
 # <a name="split-function-in-powerapps"></a>PowerApps 中的 Split 函数
 将文本字符串拆分成子字符串表。

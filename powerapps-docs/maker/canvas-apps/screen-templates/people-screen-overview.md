@@ -1,98 +1,98 @@
 ---
-title: 人们屏幕模板 |Microsoft Docs
-description: 了解画布应用的人屏幕模板的工作原理以及如何扩展用例的屏幕
+title: 用户-屏幕模板 |Microsoft Docs
+description: 了解 canvas 应用的人员屏幕模板的工作原理，以及如何为自己的用例扩展屏幕
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 12/30/2018
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 85da6f5414cc25d1145f0fa8910e8c78bfb74533
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: da7f7c037010df0da30e0363f988ac616f9fb6cc
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61536086"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71995663"
 ---
-# <a name="overview-of-the-people-screen-template-for-canvas-apps"></a>画布应用的人屏幕模板的概述
+# <a name="overview-of-the-people-screen-template-for-canvas-apps"></a>用于画布应用的人员屏幕模板概述
 
-在画布应用中，添加可让用户搜索其组织内部人员的人屏幕。 用户可以搜索、 选择，并将用户添加到集合。 您可以更改哪些类型的数据显示在搜索结果库中，使用你的用户选择发送一封电子邮件，并进行其他自定义。
+在画布应用中，添加允许用户在其组织内搜索人员的人员屏幕。 用户可以搜索、选择并向集合添加人员。 您可以更改搜索结果库中显示的数据类型、使用用户选择发送电子邮件以及进行其他自定义。
 
-您还可以添加其他基于模板的屏幕，如显示不同的数据从 Office 365[电子邮件](email-screen-overview.md)，用户的[日历](calendar-screen-overview.md)，并[可用性](meeting-screen-overview.md)人的用户可能会想要邀请参加会议。
+你还可以添加其他基于模板的屏幕，这些屏幕显示 Office 365 的不同数据，如[电子邮件](email-screen-overview.md)、用户的[日历](calendar-screen-overview.md)，以及用户可能想要邀请参加会议的人员的[可用性](meeting-screen-overview.md)。
 
-本概述介绍了：
+本概述介绍了以下内容：
 > [!div class="checklist"]
-> * 如何使用默认用户屏幕。
+> * 如何使用默认人屏幕。
 > * 如何修改屏幕。
-> * 如何将屏幕集成到应用。
+> * 如何将屏幕集成到应用中。
 
-此屏幕的默认功能的更深入了解，请参阅[人屏幕引用](people-screen-reference.md)。
+若要深入了解此屏幕的默认功能，请参阅[用户界面参考](people-screen-reference.md)。
 
 ## <a name="prerequisite"></a>先决条件
 
-如何添加和配置屏幕和其他控件为您熟悉[在 PowerApps 中创建应用](../data-platform-create-app-scratch.md)。
+熟悉如何[在 PowerApps 中创建应用](../data-platform-create-app-scratch.md)时添加和配置屏幕和其他控件。
 
 ## <a name="default-functionality"></a>默认功能
 
-若要从模板中添加一个人的屏幕：
+从模板添加人员屏幕：
 
-1. [登录](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 PowerApps，然后创建应用或在 PowerApps Studio 中打开现有应用程序。
+1. [登录](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 PowerApps，然后在 PowerApps Studio 中创建应用或打开现有应用。
 
-    本主题显示手机应用，但概念同样适用于平板电脑应用。
+    本主题演示了一个手机应用，但相同的概念也适用于平板电脑应用。
 
-1. 上**主页**选项卡的功能区中，选择**新屏幕** > **人**。
+1. 在功能区的 "**主页**" 选项卡上，选择 "**新建" 屏幕**@no__t "**用户**"。
 
-    默认情况下，查找类似于以下屏幕：
+    默认情况下，屏幕的外观如下所示：
 
-    ![初始用户屏幕上的状态](media/people-screen/people-screen-empty.png)
+    ![初始人员屏幕状态](media/people-screen/people-screen-empty.png)
 
-1. 若要开始搜索的用户，选择顶部的文本输入的框并开始键入对同事的名称。 在输入文本框下方显示搜索结果：
+1. 若要开始搜索用户，请选择顶部的文本输入框，然后键入同事的名称。 搜索结果显示在文本输入框下方：
 
-    ![人们屏幕搜索状态](media/people-screen/people-browse-gall-full.png)
+    ![人员屏幕搜索状态](media/people-screen/people-browse-gall-full.png)
 
-1. 从搜索结果中选择个人，当它们添加到**MyPeople**集合。 搜索栏输入值重置，则显示所选的人的集合：
+1. 从搜索结果中选择个人时，它们将被添加到**MyPeople**集合。 将重置搜索栏输入值，显示所选人员的集合：
 
-    ![人们屏幕集合结果](media/people-screen/people-people-gall-full.png)
+    ![人员屏幕收集结果](media/people-screen/people-people-gall-full.png)
 
 ## <a name="modify-the-screen"></a>修改屏幕
 
-可以修改的默认功能，通过此屏幕的[显示不同的数据的人员](people-screen-overview.md#show-different-data-for-people)。
+您可以通过[显示用户的不同数据](people-screen-overview.md#show-different-data-for-people)来修改此屏幕的默认功能。
 
-如果你想要修改的屏幕进一步，使用[人屏幕引用](./people-screen-reference.md)作为指南。
+如果你想要进一步修改屏幕，请使用[人脉参考](./people-screen-reference.md)作为指导。
 
-### <a name="show-different-data-for-people"></a>显示不同的数据的人员
+### <a name="show-different-data-for-people"></a>显示人员的不同数据
 
-使用此屏幕[Office365Users.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser)搜索你组织中的用户的操作它还提供其他字段中将显示每个事件超过**UserBrowseGallery**控件。 添加或更改库中的字段是一个简单的过程：
+此屏幕使用[Office365Users. SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser)操作在你的组织中搜索用户。它为每个事件提供了**UserBrowseGallery**控件中显示的其他字段。 添加或更改库中的字段是一个简单的过程：
 
-1. 在中**UserBrowseGallery**，选择一个标签来修改 （或添加一个并使其选择用）。
+1. 在**UserBrowseGallery**中，选择要修改的标签（或添加一个标签，并将其保留为选中状态）。
 
-1. 使用其**文本**属性处于选中状态，在公式栏中，使用的内容替换为 `ThisItem.`
+1. 选中其**Text**属性后，在编辑栏中，将内容替换 `ThisItem.`
 
-    IntelliSense 显示可以选择的字段的列表。
+    IntelliSense 显示您可以选择的字段列表。
 
 1. 选择所需的字段。
 
-    **文本**属性应更新到`ThisItem.{FieldSelection}`。
+    **Text**属性应更新为 `ThisItem.{FieldSelection}`。
 
-## <a name="integrate-the-screen-into-an-app"></a>集成到应用的屏幕
+## <a name="integrate-the-screen-into-an-app"></a>将屏幕集成到应用中
 
-人们屏幕是一功能强大的控件在自己的权限，但它通常作为更大、 更灵活的应用的一部分执行最佳。 可以将此屏幕集成到大型应用中通过多种方式，包括[使用缓存的人员列表](people-screen-overview.md#use-your-cached-list-of-people)。
+人员屏幕是一种功能强大的控件绑定，但它通常作为更大、更通用的应用程序的一部分执行。 可以通过多种方式将此屏幕集成到较大的应用程序中，包括[使用缓存的人员列表](people-screen-overview.md#use-your-cached-list-of-people)。
 
 ### <a name="use-your-cached-list-of-people"></a>使用缓存的人员列表
 
-人们屏幕缓存中的人选择**MyPeople**集合。 应为用户查找调用您的业务方案，你将需要知道如何使用此集合。 在这里，您将演练如何连接到一个尚不完善的电子邮件的屏幕的此屏幕中向用户发送电子邮件**MyPeople**集合。 你还将深入了解到如何[电子邮件屏幕](./email-screen-overview.md)工作原理。
+人员屏幕缓存用户在**MyPeople**集合中的选择。 如果你的业务方案调用人员查找，你将需要了解如何使用此集合。 在这里，你将演练如何将此屏幕连接到基本的电子邮件屏幕，并向**MyPeople**集合中的用户发送电子邮件。 你还将深入了解[电子邮件屏幕](./email-screen-overview.md)的工作方式。
 
-1. 将 Office 365 Outlook 数据源添加到您的应用程序，通过选择**视图**选项卡上，选择**数据源** > **添加数据源**，然后查找 Office365 outlook 连接器。 可能需要选择**新的连接**找到它。
-1. 插入后人屏幕，插入一个新的空白屏幕。 在该屏幕中，添加一个后退箭头图标、 两个文本输入框中和一个发送图标。
-1. 重命名屏幕**EmailScreen**的后退箭头图标**BackIcon**，一个文本输入框**SubjectLine**，则其他到**MessageBody**，并为发送图标**SendIcon**。
-1. 设置**OnSelect**的属性**BackIcon**到`Back()`。
-1. 设置**OnSelect**的属性**SendIcon**为以下公式：
+1. 通过选择 "**视图**" 选项卡，选择 "**数据源**"，选择 "数据 @no__t 源"，然后查找 Office 365**outlook Connector，** 将 office 365 outlook 数据源添加到应用中。 可能需要选择 "**新建连接**" 才能找到它。
+1. 插入人脉屏幕后，插入新的空白屏幕。 在该屏幕中，添加一个后退箭头图标、两个文本输入框和一个发送图标。
+1. 将屏幕重命名为 " **EmailScreen**"，将 "向后箭头" 图标更改为 " **SubjectLine**"，将 " **BackIcon**" 的一个文本输入框重命名为 " **MessageBody**"，将 "发送" 图标更改为**SendIcon**
+1. 将**BackIcon**的**OnSelect**属性设置为 `Back()`。
+1. 将**SendIcon**的**OnSelect**属性设置为以下公式：
 
     ```powerapps-dot
     Office365.SendEmail( 
@@ -102,16 +102,16 @@ ms.locfileid: "61536086"
     )
     ```
     
-    在这里，使用 Outlook 连接器发送一封电子邮件。 将其传递`Concat(MyPeople, UserPrincipalName & ";")`的收件人列表。 此公式将串联中的电子邮件地址的所有**MyPeople**用分号分隔的方式为一个字符串集合。 这是与写出的您喜爱的电子邮件的客户端的"收件人"行中的以分号分隔的电子邮件地址字符串没有什么不同。
-    * 您传递`SubjectLine.Text`作为该消息，主题和`MessageBody.Text`作为消息的正文。
-1. 在用户屏幕上，在右上角中，插入**邮件**图标。
-   将图标颜色更改为任何适合你。
-1. 设置**OnSelect**的属性**SendIcon**到`Navigate( EmailScreen, None )`。
+    此时，你将使用 Outlook connector 发送电子邮件。 将其作为收件人列表传递 `Concat(MyPeople, UserPrincipalName & ";")`。 此公式将**MyPeople**集合中的所有电子邮件地址连接到单个字符串，并用分号分隔它们。 这与在你喜爱的电子邮件客户端的 "发件人" 行中用分号分隔的电子邮件地址不相同。
+    * 你要传递 `SubjectLine.Text` 作为消息的主题，`MessageBody.Text` 作为消息正文。
+1. 在 "人脉" 屏幕的右上角，插入 "**邮件**" 图标。
+   将图标颜色更改为你适合的任何颜色。
+1. 将**SendIcon**的**OnSelect**属性设置为 `Navigate( EmailScreen, None )`。
 
-    现可在其中可以选择用户、 撰写电子邮件到它们，然后将其发送的两个屏应用。 尽情地测试一下，但务必谨慎，因为应用程序发送电子邮件发送给每个人都您将添加到**MyPeople**集合。
+    现在，你有了一个两个屏幕的应用，你可以在其中选择用户、撰写电子邮件消息，然后发送电子邮件。 请随意测试，但请务必小心，因为应用会向添加到**MyPeople**集合中的每个人发送电子邮件。
 
 ## <a name="next-steps"></a>后续步骤
 
 * [查看此屏幕的参考文档](./people-screen-reference.md)。
-* [了解有关 Office 365 Outlook 连接器的详细信息](../connections/connection-office365-outlook.md)。
-* [了解有关 Office 365 用户连接器的详细](../connections/connection-office365-users.md)。
+* [了解有关 Office 365 Outlook connector 的详细信息](../connections/connection-office365-outlook.md)。
+* [了解有关 Office 365 用户连接器的详细信息](../connections/connection-office365-users.md)。

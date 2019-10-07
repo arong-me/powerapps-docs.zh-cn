@@ -1,116 +1,116 @@
 ---
-title: 应用程序对象 |Microsoft Docs
-description: 参考信息，包括语法和示例，在 PowerApps 中的应用程序对象
+title: 应用对象 |Microsoft Docs
+description: PowerApps 中 App 对象的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/29/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 232accd1050fb84816e86ea95069b8c8778f6586
-ms.sourcegitcommit: 562c7ed5fbb116be1cbb0f45e3f6e75e3e4cf011
+ms.openlocfilehash: b0ab20ce5e0700337bb059644c458a2665d20f1e
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66451601"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983499"
 ---
-# <a name="app-object-in-powerapps"></a>在 PowerApps 中的应用程序对象
+# <a name="app-object-in-powerapps"></a>PowerApps 中的应用对象
 
-提供有关当前正在运行的应用程序和好地控制应用的行为的信息。
+提供有关当前正在运行的应用程序的信息，并控制应用程序的行为。
 
 ## <a name="description"></a>描述
 
-与控件相似**应用**对象提供的属性，用于标识显示的屏幕并提示用户以保存更改，以便它们不丢失。 每个应用程序具有**应用**对象。
+与控件一样，**应用程序**对象提供的属性用于标识显示的屏幕，并提示用户保存更改，使其不会丢失。 每个应用程序都有一个**应用程序**对象。
 
-您可以编写的某些属性的公式**应用**对象。 在顶部**树视图**窗格中，选择**应用**对象作为您将任何其他控件或屏幕上。 查看和编辑通过公式栏的左侧的下拉列表中选择一个对象的属性。
+您可以为**应用**对象的某些属性编写公式。 在 "**树视图**" 窗格的顶部，选择 "**应用**" 对象，就像选择任何其他控件或屏幕一样。 通过在编辑栏左侧的下拉列表中选择某个对象的属性来查看和编辑该对象的属性。
 
 > [!div class="mx-imgBorder"]
-> ![树视图窗格中的应用程序对象](media/object-app/appobject.png)
+> 树视图窗格中的0The 应用对象 @ no__t-1 @no__t
 
-## <a name="activescreen-property"></a>ActiveScreen 属性
+## <a name="activescreen-property"></a>App.activescreen 属性
 
-**ActiveScreen**属性标识显示的屏幕。
+**App.activescreen**属性标识所显示的屏幕。
 
-此属性返回一个屏幕对象，可用于引用屏幕属性或比较到另一个屏幕来确定显示哪个屏幕。 此外可以使用表达式**App.ActiveScreen.Name**检索显示在屏幕的名称。
+此属性返回一个屏幕对象，您可以使用该屏幕对象引用屏幕的属性，或与另一个屏幕进行比较以确定显示的屏幕。 还可以使用表达式**App.ActiveScreen.Name**来检索显示的屏幕的名称。
 
-使用 **[回](function-navigate.md)** 或 **[Navigate](function-navigate.md)** 函数来更改显示的屏幕。
+使用 " **[后退](function-navigate.md)** " 或 " **[导航](function-navigate.md)** " 功能可更改显示的屏幕。
 
 ## <a name="onstart-property"></a>OnStart 属性
 
-**OnStart**用户启动应用时运行的属性。 应用创建者通常使用此属性来执行这些任务：
+当用户启动应用程序时，将运行**OnStart**属性。 应用程序制造商通常使用此属性来执行以下任务：
 
-- 检索并缓存到集合的数据，通过使用 **[收集](function-clear-collect-clearcollect.md)** 函数。
-- 使用设置全局变量 **[设置](function-set.md)** 函数。
-- 导航到使用的初始屏幕 **[Navigate](function-navigate.md)** 函数。
+- 使用 **[Collect](function-clear-collect-clearcollect.md)** 函数检索数据并将其缓存到集合中。
+- 使用 **[set](function-set.md)** 函数设置全局变量。
+- 使用 **[导航](function-navigate.md)** 函数导航到初始屏幕。
 
-第一屏出现之前，会计算此公式。 加载没有屏幕，因此不能设置与上下文变量 **[UpdateContext](function-updatecontext.md)** 函数。 但是，可以传递与上下文变量**Navigate**函数。
+在第一个屏幕出现之前计算此公式。 未加载屏幕，因此无法通过 **[UpdateContext](function-updatecontext.md)** 函数设置上下文变量。 但是，可以通过**导航**函数传递上下文变量。
 
-更改后**OnStart**属性，对其进行测试悬停**应用**对象中**树视图**窗格中，选择显示的省略号 （...），然后选中**运行 OnStart**。 当首次加载应用，与现有集合和变量已设置。 开始使用空集合，请使用 **[ClearCollect](function-clear-collect-clearcollect.md)** 函数而不是**收集**函数。
+更改**OnStart**属性后，通过将鼠标指针悬停在 "**树视图**" 窗格中的**应用**对象上进行测试，选择显示的省略号（...），然后选择 "**运行 OnStart**"。 与第一次加载应用时不同，现有集合和变量将被设置。 若要从空集合开始，请使用 **[ClearCollect](function-clear-collect-clearcollect.md)** 函数而不是**Collect**函数。
 
 > [!div class="mx-imgBorder"]
-> ![运行 OnStart 应用项快捷菜单](media/object-app/appobject-runonstart.png)
+> 0App-用于运行 OnStart @ no__t 的项目快捷菜单-1 @no__t
 
 ## <a name="confirmexit-properties"></a>ConfirmExit 属性
 
-没有人会愿意放弃未保存的更改。 使用**ConfirmExit**并**ConfirmExitMessage**来警告用户他们关闭应用之前的属性。
+无人想要丢失未保存的更改。 使用**ConfirmExit**和**ConfirmExitMessage**属性在用户关闭应用之前向用户发出警告。
 
 > [!NOTE]
-> **ConfirmExit**不起作用的应用中的嵌入在中，例如，Power BI 和 SharePoint。
+> **ConfirmExit**不适用于嵌入的应用，例如 Power BI 和 SharePoint。
 
 > [!NOTE]
-> 目前，这些属性可以引用仅在第一个屏幕上的控件如果**延迟加载**预览功能启用 （这是默认情况下，为新应用程序）。 如果进行了引用，PowerApps Studio 不会显示一个错误，但生成的已发布的应用不会在 PowerApps Mobile 或浏览器中打开。 我们正在努力取消此限制。 在此期间，你可以关闭**延迟负载**中**文件** > **应用程序设置** > **高级设置**(下**预览功能**)。
+> 目前，如果启用**延迟加载**预览功能（对于新应用，默认情况下），则这些属性只能引用第一个屏幕上的控件。 如果进行了引用，PowerApps Studio 不会显示错误，但生成的已发布应用不会在 PowerApps Mobile 或浏览器中打开。 我们正在积极努力提升此限制。 同时，你可以在**文件** > **应用设置**中关闭**延迟负载** > **高级设置**（在**预览功能**下）。
 
 ### <a name="confirmexit"></a>ConfirmExit
 
-**ConfirmExit**是一个布尔值属性的当*true*，打开一个确认对话框之前在关闭应用程序。 默认情况下，此属性是*false*，并且会显示任何对话框。
+**ConfirmExit**是一个布尔值属性，当*设置为 true*时，在应用程序关闭之前将打开一个确认对话框。 默认情况下，此属性为*false*，并且不显示任何对话框。
 
-使用此属性以显示确认对话框中，是否用户已进行了更改，但不是会保存它们。 使用公式，可以检查变量并控制属性 (例如， **Unsaved**的属性[**编辑窗体**](../controls/control-form-detail.md)控件)。
+如果用户已进行了更改但未保存，则使用此属性显示确认对话框。 使用可检查变量和控件属性（例如，[**编辑窗体**](../controls/control-form-detail.md)控件的**未保存**属性）的公式。
 
-确认对话框中将出现在任何情况下，数据可能丢失，如以下示例所示：
+在任何可能丢失数据的情况下，都会出现确认对话框，如以下示例中所示：
 
-- 运行[**退出**](function-exit.md)函数。
-- 如果在浏览器中运行应用：
-  - 关闭浏览器或在其中运行应用的浏览器选项卡。
-  - 选择浏览器的后退按钮。
-- 如果在 PowerApps Mobile （iOS 或 Android） 中运行应用：
-  - 运行[**启动**](function-param.md)函数。<br>**启动**函数不会触发在浏览器对话框中，因为另一个选项卡将打开，以便数据不会丢失。
-  - 轻扫以切换到在 PowerApps Mobile 中不同的应用。
-  - 选择 Android 设备上的后退按钮。
+- 运行[**Exit**](function-exit.md)函数。
+- 如果应用在浏览器中运行：
+  - 关闭浏览器或运行应用程序的浏览器选项卡。
+  - 选择浏览器的 "后退" 按钮。
+- 如果应用在 PowerApps Mobile （iOS 或 Android）中运行：
+  - 运行[**启动**](function-param.md)函数。<br>**启动**函数不会在浏览器中触发对话框，因为其他选项卡会打开，使数据不会丢失。
+  - 轻扫，切换到 PowerApps Mobile 中的其他应用。
+  - 选择 Android 设备上的 "后退" 按钮。
 
-确认对话框中的确切外观可能不同跨设备和版本的 PowerApps。
+确认对话框的确切外观可能因 PowerApps 的各种设备和版本而异。
 
-确认对话框中没有出现在 PowerApps Studio。
+确认对话框不会显示在 PowerApps Studio 中。
 
 ### <a name="confirmexitmessage"></a>ConfirmExitMessage
 
-默认情况下，确认对话框中显示一条常规消息，如 **"您可能有未保存的更改。"** 在用户的语言。
+默认情况下，确认对话框会显示一般消息，如 **"您可能有未保存的更改。"** 以用户的语言。
 
-使用**ConfirmExitMessage**可提供在确认对话框中的自定义信息。 如果此属性为*空白*，则使用默认值。 根据需要使其容纳在确认对话框，因此，请将消息到几行最多情况下，自定义消息将被截断。
+使用**ConfirmExitMessage**可在确认对话框中提供自定义消息。 如果此属性为*空白*，则使用默认值。 自定义消息根据需要在确认对话框内被截断，因此，最多可将消息保存到几行。
 
-在浏览器中，确认对话框中可能从浏览器显示使用一条常规消息。
+在浏览器中，"确认" 对话框可能会显示来自浏览器的一般消息。
 
 ### <a name="example"></a>示例
 
-1. 创建的应用程序包含两个窗体控件**AccountForm**并**ContactForm**。
+1. 创建包含两个窗体控件**AccountForm**和**ContactForm**的应用。
 
-1. 设置**应用程序**对象的**ConfirmExit**属性设置为此表达式：
+1. 将**App**对象的**ConfirmExit**属性设置为以下表达式：
 
     ```powerapps-dot
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
-    如果用户更改任一格式的数据，然后尝试关闭应用程序而不保存这些更改，将出现此对话框。
+    如果用户更改任一格式的数据，然后尝试关闭应用而不保存这些更改，则会显示此对话框。
 
     > [!div class="mx-imgBorder"]
-    > ![泛型的确认对话框](media/object-app/confirm-native.png)
+    > ![Generic 确认对话框 @ no__t-1
 
-1. 设置**应用程序**对象的**ConfirmExitMessage**属性设为此公式：
+1. 将**App**对象的**ConfirmExitMessage**属性设置为以下公式：
 
     ```powerapps-dot
     If( AccountsForm.Unsaved,
@@ -119,7 +119,7 @@ ms.locfileid: "66451601"
     )
     ```
 
-    如果用户更改帐户窗体中的数据，然后尝试关闭应用程序而不保存这些更改，将出现此对话框。
+    如果用户在帐户窗体中更改了数据，然后尝试关闭应用而不保存这些更改，则会显示此对话框。
 
     > [!div class="mx-imgBorder"]
-    > ![特定于窗体的确认对话框](media/object-app/confirm-native-custom.png)
+    > @no__t 0Form-特定于 "确认" 对话框 @ no__t-1

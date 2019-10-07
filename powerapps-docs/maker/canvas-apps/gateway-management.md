@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/30/2016
 ms.author: archanan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 85806799a5f5ea91a4671a27e71cf95daabcd01a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 0f9b9c3104d407baa3cece76159d65c5be61ab79
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553533"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983414"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>在 PowerApps 中管理本地数据网关
 安装本地数据网关，以便在 PowerApps 中构建的画布应用和不在云中的数据源（如本地 SQL Server 数据库或本地 SharePoint 网站）之间快速、安全地传输数据。 查看拥有管理权限的所有网关，并管理这些网关的权限和连接。
@@ -54,9 +54,9 @@ ms.locfileid: "61553533"
 
 2. 通过单击或点击“**用户**”，指定用户或组，然后指定权限级别来将用户添加到网关：
 
-   * **可以使用**:可用于应用和流，在网关上创建连接，但不能共享网关的用户。 对运行应用但不共享应用的用户使用此权限。
-   * **可使用和共享**:可用于应用和流，在网关上创建连接和共享应用时自动共享网关的用户。 对需要与其他用户或组织共享应用的用户使用此权限。
-   * **管理员**:具有完全控制权限的网关，包括添加用户、 设置权限、 创建连接到所有可用数据源，以及删除网关的管理员。
+   * **可使用**：可以在网关上创建用于应用和流的连接，但不能共享网关的用户。 对运行应用但不共享应用的用户使用此权限。
+   * **可以使用 + 共享**：用户可以在网关上创建用于应用和流的连接，并在共享应用时自动共享网关。 对需要与其他用户或组织共享应用的用户使用此权限。
+   * **管理员**：对网关具有完全控制权限的管理员，包括添加用户、设置权限、创建到所有可用数据源的连接以及删除网关。
 
 对于“可使用”和“可使用和共享”权限级别，请选择用户可以通过网关连接的数据源。
 

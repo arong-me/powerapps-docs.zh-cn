@@ -1,24 +1,24 @@
 ---
 title: 首次登录 | Microsoft Docs
 description: 所有应用创作者的新家。
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 08/06/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 735894f8e28d25777aa7f66146f5782da2ab2f3e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: dd50652f0021079b4b9d4d23568ba148a8ce6a5b
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553383"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71989980"
 ---
 # <a name="sign-in-to-powerapps-for-the-first-time"></a>首次登录到 PowerApps
 
@@ -42,7 +42,7 @@ ms.locfileid: "61553383"
 
 ## <a name="choose-an-environment"></a>选择环境
 
-无论你要将应用、 流、 数据连接或一个实体创建通用数据服务，在 PowerApps 中执行的操作的很多都包含在特定环境。 环境会创建不同类型工作之间的边界；例如，组织可能有单独的环境用于不同的部门。 许多组织会使用环境将仍处于开发中的应用与已准备好广泛使用的应用进行分隔。 你可能有权限访问多个环境或只能访问一个环境。如果你具有相应权限，则可能能够创建自己的环境。
+无论是在 Common Data Service 中创建应用、流、数据连接还是实体，在 PowerApps 中所做的大部分操作都包含在特定环境中。 环境会创建不同类型工作之间的边界；例如，组织可能有单独的环境用于不同的部门。 许多组织会使用环境将仍处于开发中的应用与已准备好广泛使用的应用进行分隔。 你可能有权限访问多个环境或只能访问一个环境。如果你具有相应权限，则可能能够创建自己的环境。
 
 若要验证你所在的环境，请查找标题右侧附近的环境切换器。
 
@@ -60,9 +60,9 @@ ms.locfileid: "61553383"
 在 PowerApps 中，可以创建和运行以下类型的应用：
 
 - 画布应用支持设计自定义 UI 并连接到来自各种源的数据。
-- **模型驱动应用**具有标准用户界面并连接到仅在 Common Data Service 中的数据。 但是，你可以较轻松地创建其他元素，如视图、仪表板以及不同类型的业务逻辑。
+- **模型驱动应用**具有标准 UI，并且仅在 Common Data Service 中连接到数据。 但是，你可以较轻松地创建其他元素，如视图、仪表板以及不同类型的业务逻辑。
 
-如果选择具有 Common Data Service 数据库的环境，可以生成画布或模型驱动应用来自同一**主页**页。
+如果选择的环境具有 Common Data Service 数据库，则可以从同一**主页**构建画布或模型驱动的应用。
 
 ## <a name="play-or-edit-an-app"></a>播放或编辑应用
 
@@ -120,6 +120,6 @@ ms.locfileid: "61553383"
 
 通过执行这些任务来扩展应用的功能：
 
-- 管理实体、 选项集和中的数据集成[Common Data Service](../common-data-service/data-platform-intro.md)。
+- 管理[Common Data Service](../common-data-service/data-platform-intro.md)中的实体、选项集和数据集成。
 - 在 [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) 中配置业务逻辑。
 - 创建、打包和维护[解决方案](../../developer/common-data-service/introduction-solutions.md)。

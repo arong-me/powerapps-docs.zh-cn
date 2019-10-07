@@ -1,24 +1,24 @@
 ---
 title: 保存并发布画布应用 | Microsoft Docs
 description: 保存和发布面向应用开发者的画布应用的分步说明
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 09/14/2017
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c255daf93cdb4807572f1a663c7bb87be0bb39e1
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 19d793b879d42e9446cc8ad366bc08879162185d
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61536593"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71995764"
 ---
 # <a name="save-and-publish-a-canvas-app-in-powerapps"></a>在 PowerApps 中保存并发布画布应用
 每当保存画布应用的更改时，都将只对你自己和有权限编辑此应用的其他所有人自动发布更改。 完成更改后，必须显式发布更改，以便应用的所有共享对象都能使用。
@@ -60,6 +60,6 @@ PowerApps 也可以每 2 分钟定期保存一次应用。 如果已保存一次
 若要发布最新版本，请依次单击或点击“发布此版本”和“发布”对话框中的“发布此版本”。
 
 ## <a name="next-steps"></a>后续步骤
-* 查找并运行中的应用[浏览器](../../user/run-app-browser.md)或在[phone](../../user/run-app-client.md)。
+* 在[浏览器](../../user/run-app-browser.md)或[手机](../../user/run-app-client.md)上查找并运行应用。
 * 在 powerapps.com 中[重命名应用](set-name-tile.md)。
 * [还原应用](restore-an-app.md)（如果有多版应用的话）。

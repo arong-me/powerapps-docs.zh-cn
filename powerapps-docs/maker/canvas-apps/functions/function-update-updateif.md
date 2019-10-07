@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/21/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d74f05c87cd5b9a3e7aed7891c6d2aaa54adfd1a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 8dd673c343b484e6c24e218818cdfbba654dcbb7
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548508"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983673"
 ---
 # <a name="update-and-updateif-functions-in-powerapps"></a>PowerApps 中的 Update 和 UpdateIf 函数
 更新[数据源](../working-with-data-sources.md)中的[记录](../working-with-tables.md#records)。

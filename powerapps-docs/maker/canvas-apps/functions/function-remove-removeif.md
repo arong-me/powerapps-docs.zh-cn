@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/21/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a6887694f2cc64cd44dcdc74e7769ce874872f70
-ms.sourcegitcommit: d87b2068a63e416e2814791328a3a47bbcb5bb48
+ms.openlocfilehash: 57432024254598ff8216d6fefafa5354844bb7a4
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "61520729"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984304"
 ---
 # <a name="remove-and-removeif-functions-in-powerapps"></a>PowerApps 中的 Remove 和 RemoveIf 函数
 从[数据源](../working-with-data-sources.md)删除[记录](../working-with-tables.md#records)。
@@ -55,7 +55,7 @@ ms.locfileid: "61520729"
 **RemoveIf**( *DataSource*, *Condition* [, ... ] )
 
 * *DataSource* – 必需。 数据源，其中包含要删除的一个或多个记录。
-* *Condition(s)* - 必需。 一个公式，对于要删除的一个或多个记录，该公式的求值结果为 **true**。  可以在公式中使用 *DataSource* 中的列名。  如果指定多个 Conditions  ，则所有 Conditions 的求值结果都必须为 **true**，然后才能删除一个或多个记录。
+* *Condition(s)* - 必需。 一个公式，对于要删除的一个或多个记录，该公式的求值结果为 **true**。  可以在公式中使用 *DataSource* 中的列名。  如果指定多个 Conditions，则所有 Conditions 的求值结果都必须为 **true**，然后才能删除一个或多个记录。
 
 ## <a name="examples"></a>示例
 在以下示例中，你将删除某个数据源中的一个或多个记录。该数据源名为 **IceCream** 且以下表中的数据开头：

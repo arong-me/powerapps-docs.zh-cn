@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/03/2018
 ms.author: yifwang
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ea4bda4857c89a9e28359f63811e70744f111499
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 164de5c1b2534901563ab888cfd83641dbe5a9c5
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553222"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71990034"
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>在 Excel 中设置表格格式和命名的相关提示
 在 PowerApps 中，仅当将 Excel 数据设置为表格格式时，才能基于该数据创建画布应用。 通过按照本文内容操作，你将了解如何在 Excel 中设置表格格式以及命名 Excel 列的一些提示。

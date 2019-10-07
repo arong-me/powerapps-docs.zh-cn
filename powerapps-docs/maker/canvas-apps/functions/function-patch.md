@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/21/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3adb036a1619263d2b8cef1f649c2d2f97925ceb
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 711a15a93d1e3ed9839f5d51c0bfa32e00563852
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543873"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984324"
 ---
 # <a name="patch-function-in-powerapps"></a>PowerApps 中的 Patch 函数
 在[数据源](../working-with-data-sources.md)中修改或创建一条或多条[记录](../working-with-tables.md#records)，或者合并数据源外的记录。
@@ -44,7 +44,7 @@ ms.locfileid: "61543873"
 ### <a name="modify-or-create-a-record-in-a-data-source"></a>在数据源中修改或创建记录
 要在数据源中使用这个函数，请指定数据源，然后指定一条基本记录：
 
-* 要修改记录，基本记录必须来自数据源。  基本记录可能来自一个库的 **[项](../controls/properties-core.md)** 属性（在 [上下文变量](../working-with-variables.md#use-a-context-variable)中），也可能来自其他途径。 不管怎样，最终必须能够追溯到基本记录来自数据源。  这一点非常重要，因为记录中包含一些额外的信息，可以帮助你重新找到记录，以便进行修改。  
+* 要修改记录，基本记录必须来自数据源。  基本记录可能来自一个库的 **[项](../controls/properties-core.md)** 属性（在[上下文变量](../working-with-variables.md#use-a-context-variable)中），也可能来自其他途径。 不管怎样，最终必须能够追溯到基本记录来自数据源。  这一点非常重要，因为记录中包含一些额外的信息，可以帮助你重新找到记录，以便进行修改。  
 * 要创建记录，请使用 **[Defaults](function-defaults.md)** 函数创建一条包含默认值的基本记录。  
 
 然后指定一条或多条更改记录，每条记录都包含用于替代基本记录中属性值的新属性值。 更改记录按照参数列表从头到尾的顺序进行处理，并且使用后者的属性值替换前者的属性值。
@@ -76,7 +76,7 @@ ms.locfileid: "61543873"
 * *ChangeRecord(s)* – 必需。  一条或多条记录，其中包含要在 *BaseRecord* 中修改的属性。  更改记录按照参数列表从头到尾的顺序进行处理，并且使用后者的属性值替换前者的属性值。
 
 #### <a name="modify-or-create-a-set-of-records-in-a-data-source"></a>在数据源中修改或创建一组记录
-**Patch**( *DataSource*, *BaseRecordsTable*, *ChangeRecordTable1* [, *ChangeRecordTable2*, … ] )
+**Patch**（ *DataSource*， *BaseRecordsTable*， *ChangeRecordTable1* [， *ChangeRecordTable2*，。 ] )
 
 * *DataSource* – 必需。 包含要修改的记录或用于包含要创建的记录的数据源。
 * *BaseRecordTable* – 必需。 要修改或创建的记录的表。  如果记录来自数据源，则会找到记录并进行修改。 如果使用 **[Defaults](function-defaults.md)** 函数的结果，则会创建记录。

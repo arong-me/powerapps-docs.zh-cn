@@ -1,24 +1,24 @@
 ---
 title: 使用示例应用 | Microsoft 文档
 description: 分步介绍如何基于 PowerApps 的示例创建画布应用
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/11/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1cac73bad25bf1179f88030ee1f02589189610e0
-ms.sourcegitcommit: 4201d95421a74da19c585239b34d7d8620c74113
+ms.openlocfilehash: f03240e2fb2e850df0f1b18fb126833fb5759326
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65546857"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71989710"
 ---
 # <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>从 PowerApps 中的示例创建画布应用
 在本快速入门教程中，将根据示例创建一个画布应用，以便探索设计的可能性，并发现在开发自己的应用时可以应用的概念。
@@ -64,7 +64,7 @@ ms.locfileid: "65546857"
 1. 在左边缘附近单击或点击“保存”。 
 
 ## <a name="next-steps"></a>后续步骤
-在本快速入门中，你基于一个示例创建了自己的应用，该示例使用你的云帐户中存储的虚构数据。 学习如何创建应用的更多帮助，还会自动可以生成基于 Common Data Service、 SharePoint 或 Excel 等其他源中数据的应用。
+在本快速入门中，你基于一个示例创建了自己的应用，该示例使用你的云帐户中存储的虚构数据。 若要深入了解如何创建应用，还可以基于其他源（例如 Common Data Service、SharePoint 或 Excel）中的数据自动生成应用。
 
 > [!div class="nextstepaction"]
 > [生成应用](data-platform-create-app.md)

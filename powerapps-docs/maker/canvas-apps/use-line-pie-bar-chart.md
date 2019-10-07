@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/23/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0b710346c5e264fc13ee3cacb00073a32a4de0f0
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 9204c26cc54f4230496943d48934af75d21c5319
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63318317"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994954"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>在 PowerApps 中使用折线图、饼图或条形图显示数据
 

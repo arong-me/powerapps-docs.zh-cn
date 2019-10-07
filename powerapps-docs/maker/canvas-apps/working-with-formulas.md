@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 03/01/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a76b039ace1b323f7e1160e919722cc83bc6d091
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 7865b2123f0d179d5d132cca838684f0c83cfd31
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61558191"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994796"
 ---
 # <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>PowerApps 中的画布应用公式入门
 
@@ -51,8 +51,8 @@ ms.locfileid: "61558191"
 
     此栏包括两个部分：
 
-   * *属性列表*:每个控件和屏幕均有[的属性集](reference-properties.md)。  使用此列表选择特定属性。  
-   * *公式*:要为此属性计算的公式的组成[值、 运算符和函数](formula-reference.md)。
+   * *属性列表*：每个控件和屏幕都有一[组属性](reference-properties.md)。  使用此列表选择特定属性。  
+   * *公式*：要为此属性计算的公式，由[值、运算符和函数](formula-reference.md)组成。
 
      在编辑栏中，可以查看并编辑所选控件的属性或屏幕的属性（若未选择任何控件）。  可以在“**内容**”选项卡上查看所选控件的名称：
 
@@ -63,14 +63,14 @@ ms.locfileid: "61558191"
 
     ![添加了 TextBox 控件](./media/working-with-formulas/add-a-label.png)
 
-    添加标签时，属性列表会自动显示用于控制控件显示内容的“[Text](controls/properties-core.md)”属性。 默认情况下，该属性的值是 **"Text"**。  
-4. 将 **[Text](controls/properties-core.md)** 属性的值设置为 **"Hello World"**，方法是将双引号括住的字符串键入编辑栏：
+    添加标签时，属性列表会自动显示用于控制控件显示内容的“[Text](controls/properties-core.md)”属性。 默认情况下，该属性的值是 **"Text"** 。  
+4. 将 **[Text](controls/properties-core.md)** 属性的值设置为 **"Hello World"** ，方法是将双引号括住的字符串键入编辑栏：
 
     ![使用标签 "Hello World"](./media/working-with-formulas/label-hello-world.png)
 
     在键入过程中，标签会反映此新值。  键入时，屏幕可能会显示黄色感叹号图标。 这些图标表示存在错误，但在输入有效值后，这些图标将消失。 例如，如果字符串首尾没有双引号，则无效。
 
-    在 Excel 中，可以显示一个数字，如 **42**，方法是将其键入一个单元格或键入用于解析到该数字的公式，如 **=SUM(30,12)**。 在 PowerApps 中，可以将标签等控件的“Text”属性设置为“42”或“Sum(30,12)”，从而达到同样的效果。 无论在工作表或应用中进行了其他何种更改，单元格和标签始终都会显示此数字。
+    在 Excel 中，可以显示一个数字，如 **42**，方法是将其键入一个单元格或键入用于解析到该数字的公式，如 **=SUM(30,12)** 。 在 PowerApps 中，可以将标签等控件的“Text”属性设置为“42”或“Sum(30,12)”，从而达到同样的效果。 无论在工作表或应用中进行了其他何种更改，单元格和标签始终都会显示此数字。
 
     > [!NOTE]
    > 在 PowerApps 中，并不在公式前使用等号或加号，这一点与在 Excel 中不同。 默认情况下，编辑栏将在该处键入的任何内容均视为一个公式。 此外，也不使用双引号 (") 将公式括起来（在之前的操作中使用它指定文本的字符串）。
@@ -84,25 +84,25 @@ ms.locfileid: "61558191"
 
 ## <a name="change-a-value-based-on-input"></a>基于输入更改值
 
-在 Excel 中，键入 **= A1 + A2**的单元格中显示的任何值的单元格的总和**A1**并**A2**包含。 如果任一值或全部值发生更改，则包含公式的单元格将自动显示更新结果。
+在 Excel 中，在单元格中键入 **= A1 + A2** ，以显示单元格**A1**和**A2**中包含的所有值的总和。 如果任一值或全部值发生更改，则包含公式的单元格将自动显示更新结果。
 
-![Excel 重新计算两个数字之和的动画](./media/working-with-formulas/excel-recalc.gif)
+![Excel 动画重新计算两个数字之和](./media/working-with-formulas/excel-recalc.gif)
 
-在 PowerApps 中，可以通过向屏幕添加控件并设置其属性来获得类似结果。 此示例演示一个名为的标签控件 **Label1**并将两个 **[文本输入](controls/control-text-input.md)** 控件，分别命名为 **TextInput1**和 **TextInput2**。
+在 PowerApps 中，可以通过将控件添加到屏幕并设置其属性来获得类似的结果。 此示例演示一个名为**Label1**的标签控件和两个名为**TextInput1**和**TextInput2**的 **[文本输入](controls/control-text-input.md)** 控件。
 
-![PowerApps 重新计算两个数字之和的图示](./media/working-with-formulas/recalc1.png)
+![PowerApps 的插图重新计算两个数字之和](./media/working-with-formulas/recalc1.png)
 
 无论在文本输入控件中键入什么数字，标签始终都会显示这些数字的总和，因为它的“[Text](controls/properties-core.md)”属性设置为以下公式：
 
 `TextInput1 + TextInput2`
 
-![PowerApps 重新计算两个数字之和的动画](./media/working-with-formulas/recalc2.gif)
+![PowerApps 动画重新计算两个数字之和](./media/working-with-formulas/recalc2.gif)
 
-在 Excel 中，可用于条件格式设置的公式，例如，将负值显示为红色。 在 PowerApps 中，使用公式不仅可以确定控件的主值，还可以确定属性（例如格式设置）。 在下一步的示例中，公式 **[颜色](controls/properties-color-border.md)** 标签的属性自动以红色显示负值。 **[If](functions/function-if.md)** 函数看起来应该与 Excel 中的很相似：
+在 Excel 中，可以使用条件格式公式来显示红色中的负值。 在 PowerApps 中，使用公式不仅可以确定控件的主值，还可以确定属性（例如格式设置）。 在下一个示例中，标签的 **[Color](controls/properties-color-border.md)** 属性的公式自动以红色显示负值。 **[If](functions/function-if.md)** 函数看起来应该与 Excel 中的很相似：
 
 `If( Value(Label1.Text) < 0, Red, Black )`
 
-![条件格式设置的动画](media/working-with-variables/recalc-color.gif)
+![条件格式设置动画](media/working-with-variables/recalc-color.gif)
 
 ## <a name="change-a-color-based-on-user-input"></a>基于用户输入更改颜色
 
@@ -121,7 +121,7 @@ ms.locfileid: "61558191"
     ![更改每个滑块的最大值](./media/working-with-formulas/three-sliders-max.png)
 4. 通过从任何控件外单击选择屏幕，然后将屏幕的 **[Fill](controls/properties-color-border.md)** 属性设置为以下公式：<br>**RGBA( Slider1.Value, Slider2.Value, Slider3.Value, 1 )**
 
-    如上所述，可以使用   运算符访问控件属性 。  **Slider1.Value** 表示滑块的 **[Value](controls/properties-core.md)** 属性，该属性反映了用户在 **Min** 和 **Max** 值间放置滑块的位置。 键入此公式时，其包含的每个控件均在屏幕和编辑栏间使用颜色编码：
+    如上所述，可以使用 运算符访问控件属性 。  **Slider1.Value** 表示滑块的 **[Value](controls/properties-core.md)** 属性，该属性反映了用户在 **Min** 和 **Max** 值间放置滑块的位置。 键入此公式时，其包含的每个控件均在屏幕和编辑栏间使用颜色编码：
 
     ![更改屏幕的背景填充颜色的公式，但尚未完成](./media/working-with-formulas/three-sliders-partial-rgba.png)
 
@@ -138,7 +138,7 @@ ms.locfileid: "61558191"
 
 使用公式不仅可以执行计算和更改外观，还可以执行操作。 例如，可以将某个按钮的 **[OnSelect](controls/properties-core.md)** 属性设置为包含 **[Navigate](functions/function-navigate.md)** 函数的公式。 当用户选择该按钮时，将显示在该公式中指定的屏幕。
 
-可以仅在行为公式中使用某些函数，例如 **[Navigate](functions/function-navigate.md)** 和 **[Collect](functions/function-clear-collect-clearcollect.md)**。  如果只能在此上下文中使用某个函数，则公式引用将进行调用。  
+可以仅在行为公式中使用某些函数，例如 **[Navigate](functions/function-navigate.md)** 和 **[Collect](functions/function-clear-collect-clearcollect.md)** 。  如果只能在此上下文中使用某个函数，则公式引用将进行调用。  
 
 如果使用分号 (;) 分隔函数，则可以在一个行为公式中执行多个操作。 例如，你可能想要更新上下文变量、将数据推送到数据源，并最终导航到其他屏幕。
 

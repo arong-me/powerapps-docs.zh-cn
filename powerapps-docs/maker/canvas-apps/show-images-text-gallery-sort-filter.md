@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/02/2015
 ms.author: aorth
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a557c73863dc25acb69627b51613e6e25f229bdb
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 3a25654f0304fce9978ae1f7b1410cfb557ef32c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63318364"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71995279"
 ---
 # <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>在 PowerApps 库中显示数据，并对数据进行排序和筛选
 创建一个库来显示有关多种产品的图像和文本，并对该信息进行排序和筛选。
@@ -43,7 +43,7 @@ ms.locfileid: "63318364"
       
       ![][1]  
    2. 将导入控件的“[OnSelect](controls/properties-core.md)”属性设置为以下公式：  
-      **Collect(Inventory, Import1.Data)**
+      **Collect （清单，Import1）**
       
       ![][12]  
    3. 选择“导入数据”按钮，打开 Windows 资源管理器。 选择 *CreateFirstApp.zip*，然后选择“打开”。
@@ -79,7 +79,7 @@ ms.locfileid: "63318364"
    > 
    > 
 8. 将标签的 **[Text](controls/properties-core.md)** 属性设置为以下表达式：  
-    **ThisItem.UnitsInStock** <br/>
+    **ThisItem** <br/>
    
     执行此操作时，标签将显示每个产品的库存数量：
 
@@ -102,7 +102,7 @@ ms.locfileid: "63318364"
    ![][10]  
 6. 在“形状”选项卡上，选择“可见”，然后在编辑栏中输入以下公式：  
    
-    **If(ThisItem.IsSelected, true)**
+    **If （ThisItem. IsSelected，true）**
    
     蓝色矩形环绕库中的当前所选项。 选择一些库项，确认矩形出现在所选的每个项的周围。 请记住，也可以打开**预览**![][2]，查看并测试所创建的内容。
 

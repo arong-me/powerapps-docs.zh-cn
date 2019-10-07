@@ -1,24 +1,24 @@
 ---
 title: 基于 Excel 数据从头开始创建画布应用 | Microsoft Docs
 description: 在本教程中，将创建两屏画布应用，以便用户可以在 Excel 文件中创建、编辑和删除记录。
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/26/2019
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c66277cbd0d0ded3bfe0bee942e9160a650d2a98
-ms.sourcegitcommit: 6dea3559e012e56fde09b95ea8a2af2a81b89a91
+ms.openlocfilehash: d0a7a164210fcfd9593455f825092417bd31a692
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000102"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983661"
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>基于 Excel 数据从头开始创建画布应用
 
@@ -43,7 +43,7 @@ ms.locfileid: "70000102"
 
     有关详细信息，请参阅[在 Excel 中设置表格格式](how-to-excel-tips.md)。
 
-3. 将该文件保存在名称**eventsignup**下, 将其关闭, 然后将其上传到[云存储帐户](connections/cloud-storage-blob-connections.md), 例如 OneDrive。
+3. 将该文件保存在名称**eventsignup**下，将其关闭，然后将其上传到[云存储帐户](connections/cloud-storage-blob-connections.md)，例如 OneDrive。
 
 > [!IMPORTANT]
 > 可以使用自己的 Excel 文件，而仅通过此教程学习基本概念。 但是，Excel 文件中的数据必须设置为表格格式。 有关详细信息，请参阅[在 Excel 中设置表格格式](how-to-excel-tips.md)。
@@ -129,7 +129,7 @@ ms.locfileid: "70000102"
 
 1. 在右侧窗格的“属性”选项卡上，选择“字段”标签旁边的“编辑”。
 
-1. 在**Title2**框中, 选择 "**志愿**者", 在 " **Subtitle2** " 框中选择 " **StartDay**", 然后在 " **Body1** " 框中选择 " **StartTime**"。
+1. 在**Title2**框中，选择 "**志愿**者"，在 " **Subtitle2** " 框中选择 " **StartDay**"，然后在 " **Body1** " 框中选择 " **StartTime**"。
 
 1. 在“数据”窗格的右上角，单击关闭图标 (X) 将其关闭。
 

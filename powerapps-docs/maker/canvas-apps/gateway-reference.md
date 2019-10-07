@@ -1,24 +1,24 @@
 ---
 title: 了解画布应用的本地数据网关 | Microsoft Docs
 description: 有关本地数据网关的参考信息，包括 PowerApps 中的安装以及故障排除
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/20/2017
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 095496aba49f722d439960a25242153b9daea382
-ms.sourcegitcommit: ea3ab5926541c60a9e7c17f52f937c9812d48c71
+ms.openlocfilehash: 4ac1df1d6a2901345436b899e3c7088f746eb2aa
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70310030"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983334"
 ---
 # <a name="understand-on-premises-data-gateways-for-canvas-apps"></a>了解画布应用的本地数据网关
 ## <a name="installation-and-configuration"></a>安装和配置
@@ -91,14 +91,16 @@ ms.locfileid: "70310030"
 
 结果应类似于以下示例。 如果 **TcpTestSucceeded** 不为 **True**，可能是防火墙阻止了连接。
 
-    ComputerName           : watchdog.servicebus.windows.net
-    RemoteAddress          : 70.37.104.240
-    RemotePort             : 5672
-    InterfaceAlias         : vEthernet (Broadcom NetXtreme Gigabit Ethernet - Virtual Switch)
-    SourceAddress          : 10.120.60.105
-    PingSucceeded          : False
-    PingReplyDetails (RTT) : 0 ms
-    TcpTestSucceeded       : True
+```
+ComputerName           : watchdog.servicebus.windows.net
+RemoteAddress          : 70.37.104.240
+RemotePort             : 5672
+InterfaceAlias         : vEthernet (Broadcom NetXtreme Gigabit Ethernet - Virtual Switch)
+SourceAddress          : 10.120.60.105
+PingSucceeded          : False
+PingReplyDetails (RTT) : 0 ms
+TcpTestSucceeded       : True
+```
 
 如需详尽信息，请将 **ComputerName** 和 **Port** 值替换为本主题稍后**配置端口**部分中列出的值。
 
@@ -201,7 +203,7 @@ ms.locfileid: "70310030"
 **问**恢复密钥的好处是什么？  
 **答案**它提供一种在发生灾难后迁移或恢复网关设置的方法。
 
-#### <a name="troubleshooting"></a>疑难解答
+#### <a name="troubleshooting"></a>故障排除
 **问**网关日志位于何处？  
 **答案**请参阅本主题后面的[工具](gateway-reference.md#tools)。
 
@@ -231,7 +233,7 @@ ms.locfileid: "70310030"
 #### <a name="update-to-the-latest-version"></a>更新到最新版本
 如果网关版本过时，可能会出现很多问题。  良好的常规做法是确保使用最新版本。  如果有一个月或更长时间未更新网关，可能要考虑安装最新版本的网关，并确定是否可以重现问题。
 
-#### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>错误：无法将用户添加到组。  (-2147463168   PBIEgwService   Performance Log Users   )
+#### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>条无法将用户添加到组。  (-2147463168   PBIEgwService   Performance Log Users   )
 如果尝试在不受支持的域控制器上安装网关，可能会收到此错误。 需将网关部署在不是域控制器的计算机上。
 
 ## <a name="tools"></a>工具

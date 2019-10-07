@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/16/2018
 ms.author: audrie
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c11800767225f66520e1a5c368de5102219505d2
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 040ba26d486cb16830bfd895f1c09a4e273cfa07
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321620"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994776"
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps 网络研讨会列表 #
 这些网络研讨会可以帮助你使用 Microsoft PowerApps 的功能。 直播结束后，可按需观看网络研讨会。 请注意，在某些情况下，必须重新输入注册详细信息，然后才能通过电子邮件收到视频录制链接。 
@@ -70,7 +70,7 @@ ms.locfileid: "63321620"
 **PowerApps 管理 | 常见问题**
 <br>主讲人：Manas Maheshwari [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Administration-FAQ/m-p/127369#M44)
 
-**在通用审核应用程序：哪些 PowerApps 和 Flow 都能通过人： Paul Culmsee，请参阅**
+@no__t 通用审核应用程序0Inside：Paul Culmsee @ no__t，查看 PowerApps 和 Flow 有哪些功能？
 <br>主讲人：Paul Culmsee [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Inside-the-Universal-Audit-App-See-what-PowerApps-and-Flow-are/m-p/127370#M45)
 
 ## <a name="advanced-webinar-series"></a>高级网络研讨会系列 ##
@@ -102,13 +102,13 @@ ms.locfileid: "63321620"
 **从 PowerApps 连接到本地数据**
 <br>主讲人：Archana Nair 和 Dimah Zaidalkilani [现在观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-On-Premises-Data-from-PowerApps/m-p/116885)
 
-**使用连接器：使用 Planner 连接器**
+与连接器 **Working：使用 Planner 连接器 @ no__t-0
 <br> 主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-the-Planner-Connector/m-p/116886)
 
 **结合使用功能强大的 Office Graph 和 PowerApps**
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/The-Power-of-Office-Graph-with-PowerApps/m-p/116888)
 
-**使用连接器：Project Online (PWA)**
+与连接器 **Working：项目 Online （PWA）**
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-Project-Online-PWA/m-p/116889)
 
 ## <a name="sharepoint-series"></a>SharePoint 系列 ##
@@ -150,5 +150,5 @@ ms.locfileid: "63321620"
 **在 PowerApps 中生成对话或弹出消息**
 <br>主讲人：Veronica Ward [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Dialogs-in-PowerApps-by-Veronica-Ward/m-p/117627#M39)
 
-**探究幕后 PowerApps 开发者-深入了解模板之一：Marie Hoeger**
+与 PowerApps 开发人员之一0Look 在窗帘后面 @no__t：更深入地了解模板：Marie Hoeger @ no__t-0
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Developer-Intro-and-Discussing-Templates/m-p/116848)
