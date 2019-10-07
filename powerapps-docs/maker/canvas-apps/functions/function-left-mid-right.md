@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ca4fbaf18d7fa993a28f5cbb70f317b4ef5d42fd
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 81220ab8df16dcea74dbdc9db48e692e379e1b4d
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61563522"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992612"
 ---
 # <a name="left-mid-and-right-functions-in-powerapps"></a>PowerApps 中的 Left、Mid 和 Right 函数
 提取文本字符串的左侧、中间或右侧部分。
@@ -39,13 +39,13 @@ ms.locfileid: "61563522"
 
 * *String* - 必需。 到要从中提取结果的字符串。
 * *StartingPosition* - 必需（仅限 **Mid**  起始位置。  字符串的第一个字符是位置 1。
-* *NumberOfCharacters* -必需 (**左**并**右**仅)。  要返回的字符数。  如果为，省略**Mid**函数，该函数返回的部分从起始位置到字符串的末尾。
+* *NumberOfCharacters* -必需（仅**向左**和**向右**）。  要返回的字符数。  如果**Mid**函数省略此函数，则该函数将返回从起始位置到字符串末尾的部分。
 
 **Left**( *SingleColumnTable*, *NumberOfCharacters* )<br>**Mid**( *SingleColumnTable*, *StartingPosition*, *NumberOfCharacters* )<br>**Right**( *SingleColumnTable*, *NumberOfCharacters* )
 
 * *SingleColumnTable* - 必需。 要从中提取结果的字符串的单列表。
 * *StartingPosition* - 必需（仅限 **Mid**  起始位置。  字符串的第一个字符是位置 1。
-* *NumberOfCharacters* -必需 (**左**并**右**仅)。  要返回的字符数。  如果为，省略**Mid**函数，该函数返回的部分从起始位置到字符串的末尾。
+* *NumberOfCharacters* -必需（仅**向左**和**向右**）。  要返回的字符数。  如果**Mid**函数省略此函数，则该函数将返回从起始位置到字符串末尾的部分。
 
 ## <a name="examples"></a>示例
 ### <a name="single-string"></a>单个字符串
@@ -55,7 +55,7 @@ ms.locfileid: "61563522"
 | --- | --- | --- |
 | **Left( Author.Text, 5 )** |从字符串开头处提取最多五个字符。 |“E. E.” |
 | **Mid( Author.Text, 7, 4 )** |从字符串的第七个字符开始，提取最多四个字符。 |“Cumm” |
-| **Mid( Author.Text, 7 )** |提取所有字符，第七个字符，从字符串开头。 |"Cummings" |
+| **Mid （Author，7）** |从字符串中提取所有字符，从第七个字符开始。 |"Cummings" |
 | **Right( Author.Text, 5 )** |从字符串的末尾处提取最多五个字符。 |“mings” |
 
 ### <a name="single-column-table"></a>单列表

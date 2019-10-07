@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/26/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5752781cf99a538d76e9dd9197aa4f8b8abce53e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 6354862823122d332c7e70fba08829d3fc8147eb
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61563173"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985040"
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>PowerApps 中的 GroupBy 和 Ungroup 函数
 对[表](../working-with-tables.md)[记录](../working-with-tables.md#records)进行分组和取消分组。
@@ -37,7 +37,7 @@ ms.locfileid: "61563173"
 还可以根据分组来聚合结果：
 
 * 使用 **GroupBy** 函数。
-* 将 **[AddColumns](function-table-shaping.md)** 函数与 **[Sum](function-aggregates.md)** 、**[Average](function-aggregates.md)** 和其他聚合函数配合使用以添加一个新列，即组表的聚合。
+* 将 **[AddColumns](function-table-shaping.md)** 函数与 **[Sum](function-aggregates.md)** 、 **[Average](function-aggregates.md)** 和其他聚合函数配合使用以添加一个新列，即组表的聚合。
 * 使用 **[DropColumns](function-table-shaping.md)** 函数删除组表。
 
 **Ungroup** 会尝试保留馈送至 **GroupBy** 的记录的初始顺序。  这并不总是可行（例如，当初始表包含 *空白* 记录时）。
@@ -91,7 +91,7 @@ ClearCollect( CityPopulations,
     ![](media/function-groupby/citypopulations-collection.png)
 
 ### <a name="group-records"></a>分组记录
-1. 添加另一个按钮，然后将其 **[Text](../controls/properties-core.md)** 属性设置为 **"Group"**。
+1. 添加另一个按钮，然后将其 **[Text](../controls/properties-core.md)** 属性设置为 **"Group"** 。
 2. 将此按钮的 **[OnSelect](../controls/properties-core.md)** 属性设为下面的公式：
    
     **ClearCollect( CitiesByCountry, GroupBy( CityPopulations, "Country", "Cities" ) )**

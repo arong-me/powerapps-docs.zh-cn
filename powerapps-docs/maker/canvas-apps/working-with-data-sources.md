@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 03/08/2017
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9e31ae7600663daa694b46376008161502c9c428
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: b4dde9c7b24352c1fefc62ff9ec73ba5ec82ee25
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61556868"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71988129"
 ---
 # <a name="understand-data-sources-for-canvas-apps-in-powerapps"></a>了解 PowerApps 中画布应用的数据源
 
@@ -26,7 +26,7 @@ ms.locfileid: "61556868"
 
 本文介绍不同类型的数据源，以及如何使用表数据源。
 
-我们可以轻松创建一个向数据源执行基本读取和写入的应用。 但有时，我们希望能够以更大的力度控制数据流入和流出应用的方式。  本文介绍如何使用 **[Patch](functions/function-patch.md)**、**[DataSourceInfo](functions/function-datasourceinfo.md)**、**[Validate](functions/function-validate.md)** 和 **[Errors](functions/function-errors.md)** 函数来提供更高的控制度。
+我们可以轻松创建一个向数据源执行基本读取和写入的应用。 但有时，我们希望能够以更大的力度控制数据流入和流出应用的方式。  本文介绍如何使用 **[Patch](functions/function-patch.md)** 、 **[DataSourceInfo](functions/function-datasourceinfo.md)** 、 **[Validate](functions/function-validate.md)** 和 **[Errors](functions/function-errors.md)** 函数来提供更高的控制度。
 
 ## <a name="kinds-of-data-sources"></a>数据源的类型
 
@@ -64,10 +64,10 @@ PowerApps 应用内部的表为固定值，就如同数字或字符串是值一�
 * 加载应用时，将自动从服务中加载数据源。  可以 **[Refresh](functions/function-refresh.md)** 函数强制刷新数据。
 * 用户运行某个应用时，可以创建、修改和删除记录，然后将这些更改推回到服务中的基础表。
   * 可以使用 **[Patch](functions/function-patch.md)** 和 **[Collect](functions/function-clear-collect-clearcollect.md)** 函数创建记录。  
-  * 可以使用 **[Patch](functions/function-patch.md)**、**[Update](functions/function-update-updateif.md)** 和 **[UpdateIf](functions/function-update-updateif.md)** 函数修改记录。
+  * 可以使用 **[Patch](functions/function-patch.md)** 、 **[Update](functions/function-update-updateif.md)** 和 **[UpdateIf](functions/function-update-updateif.md)** 函数修改记录。
   * 可以使用 **[Remove](functions/function-remove-removeif.md)** 和 **[RemoveIf](functions/function-remove-removeif.md)** 函数删除记录。
   * 可通过 **[Errors](functions/function-errors.md)** 函数显示使用数据源时出现的错误。
-* **[DataSourceInfo](functions/function-datasourceinfo.md)**、**[Defaults](functions/function-defaults.md)** 和 **[Validate](functions/function-validate.md)** 函数提供有关数据源的、可用于优化用户体验的信息。
+* **[DataSourceInfo](functions/function-datasourceinfo.md)** 、 **[Defaults](functions/function-defaults.md)** 和 **[Validate](functions/function-validate.md)** 函数提供有关数据源的、可用于优化用户体验的信息。
 
 ### <a name="creating-data-sources"></a>创建数据源
 无法使用 PowerApps 创建连接的数据源或修改此类数据源的结构；数据源必须已在服务的某个位置存在。 例如，若要在 OneDrive 上存储的 Excel 工作簿中创建表，首先应使用 OneDrive 上的 Excel Online 创建一个工作簿。 接下来，可通过应用与该工作簿建立连接。  
@@ -80,11 +80,11 @@ PowerApps 应用内部的表为固定值，就如同数字或字符串是值一�
 * 信息通过存储服务（在本例中为 Office 365 站点的 SharePoint 列表）存储和共享。
 * 可以通过连接来向应用提供此信息。  该连接负责对访问信息的用户进行身份验证。
 * 启动应用或者调用 **[Refresh](functions/function-refresh.md)** 函数时，信息将从连接抽取到应用中的数据源供本地使用。
-* 可以使用公式读取信息，并在用户可见的控件中公开这些信息。 可以通过在屏幕和绑定上使用库中显示数据源的记录 **[项](controls/properties-core.md)** 到数据源的属性：**Gallery.Items = DataSource**。  使用控件的 **[Default](controls/properties-core.md)** 属性将库中的控件连接到该库。  
-* 数据源也是一个表。  因此，在使用整个数据源之前，可以使用 **[Filter](functions/function-filter-lookup.md)**、**[Sort](functions/function-sort.md)**、**[AddColumns](functions/function-table-shaping.md)** 和其他函数来对它进行优化和补充。  还可以使用 **[Lookup](functions/function-filter-lookup.md)**、**[First](functions/function-first-last.md)**、**[Last](functions/function-first-last.md)** 和其他函数来处理单条记录。
+* 可以使用公式读取信息，并在用户可见的控件中公开这些信息。 您可以使用屏幕上的库来显示数据源的记录，并将 **[Items](controls/properties-core.md)** 属性连结到数据源：**库。 Items = DataSource**。  使用控件的 **[Default](controls/properties-core.md)** 属性将库中的控件连接到该库。  
+* 数据源也是一个表。  因此，在使用整个数据源之前，可以使用 **[Filter](functions/function-filter-lookup.md)** 、 **[Sort](functions/function-sort.md)** 、 **[AddColumns](functions/function-table-shaping.md)** 和其他函数来对它进行优化和补充。  还可以使用 **[Lookup](functions/function-filter-lookup.md)** 、 **[First](functions/function-first-last.md)** 、 **[Last](functions/function-first-last.md)** 和其他函数来处理单条记录。
 
 ### <a name="modify-a-record"></a>修改记录
-在上一部分中，您将看到如何读取数据源。  请注意，上图中的箭头是单向的。  对数据源所做的更改不是通过用于检索数据的同一个公式推回的，  而是使用新的公式。  通常，用于编辑记录与浏览记录的屏幕是不同的，尤其是在移动设备上。
+在上一部分中，你已了解如何读取数据源。  请注意，上图中的箭头是单向的。  对数据源所做的更改不是通过用于检索数据的同一个公式推回的，  而是使用新的公式。  通常，用于编辑记录与浏览记录的屏幕是不同的，尤其是在移动设备上。
 
 请注意，若要修改某个数据源的某个现有记录，该记录最初必须来自该数据源。  记录可能已遍历某个库、某个[上下文变量](working-with-variables.md#use-a-context-variable)和任意数量的公式，但其来源应可追溯到该数据源。  这一点非常重要，因为其他信息会连同唯一标识它们的记录一起遍历，确保修改正确的记录。    
 
@@ -116,7 +116,7 @@ PowerApps 提供两个验证工具：
 
 如果数据源出错，应用会自动记录错误信息，并通过 **[Errors](functions/function-errors.md)** 函数显示这些信息。  错误与出现问题的记录相关联。  如果该问题可由用户解决（例如验证问题），则用户可以重新提交记录，这样即可清除错误。
 
-如果使用 **[Patch](functions/function-patch.md)** 或 **[Collect](functions/function-clear-collect-clearcollect.md)** 创建记录时出错，则没有任何错误与任何记录相关联。  在此情况下，**[Patch](functions/function-patch.md)** 将返回 *blank* ，可将此值用作  **[Errors](functions/function-errors.md)** 的记录参数。  使用以下操作可清除创建错误。
+如果使用 **[Patch](functions/function-patch.md)** 或 **[Collect](functions/function-clear-collect-clearcollect.md)** 创建记录时出错，则没有任何错误与任何记录相关联。  在此情况下， **[Patch](functions/function-patch.md)** 将返回 *blank* ，可将此值用作  **[Errors](functions/function-errors.md)** 的记录参数。  使用以下操作可清除创建错误。
 
 **[Errors](functions/function-errors.md)** 函数返回错误信息表。  如果错误归因于特定的列，则此信息可能包括列信息。  可以在编辑屏幕上与列所在位置靠近的标签控件中使用列级错误消息。  如果错误表中的 **列** 为 *空白* ，则可以在靠近整个记录的“保存”按钮的位置使用记录级错误消息。  
 

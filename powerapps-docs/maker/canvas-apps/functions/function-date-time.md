@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 869c0fcff6e519281e527c832305d74f2e7fd78f
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: efd6e2cdea45f511a545ccfe2f38309bdf622110
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551229"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985220"
 ---
 # <a name="date-and-time-functions-in-powerapps"></a>PowerApps 中的 Date 和 Time 函数
 将日期和时间组件转换为日期/时间值。
@@ -51,12 +51,12 @@ ms.locfileid: "61551229"
 
 ## <a name="examples"></a>示例
 ### <a name="date"></a>Date
-如果用户在“HireYear”  文本输入控件中键入“1979”  ，在“HireMonth”  文本输入控件中键入“3”  ，在“HireDay”  文本输入控件中键入“17”  ，那么此函数会返回“3/17/1979”  ：
+如果用户在“HireYear”文本输入控件中键入“1979”，在“HireMonth”文本输入控件中键入“3”，在“HireDay”文本输入控件中键入“17”，那么此函数会返回“3/17/1979”：
 
 **Date(Value(HireYear.Text), Value(HireMonth.Text), Value(HireDay.Text))**
 
 ### <a name="time"></a>Time
-如果用户在“BirthHour”  文本输入控件中键入“14”  ，在“BirthMinute”  文本输入控件中键入“50”  ，在“BirthSecond”  文本输入控件中键入“24”  ，那么此函数会返回“02:50:24 p”  。
+如果用户在“BirthHour”文本输入控件中键入“14”，在“BirthMinute”文本输入控件中键入“50”，在“BirthSecond”文本输入控件中键入“24”，那么此函数会返回“02:50:24 p”。
 
 **Text(Time(Value(BirthHour.Text), Value(BirthMinute.Text), Value(BirthSecond.Text)), "hh:mm:ss a/p")**
 

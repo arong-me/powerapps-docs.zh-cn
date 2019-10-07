@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/16/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 45ffd324ff5409a49f1ec8c4c8ea3529c1cf5c5f
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 307950cf7e0aa67d7bf31daf29b3f8a3bb11d465
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61563001"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984581"
 ---
 # <a name="language-function-in-powerapps"></a>PowerApps 中的 Language 函数
 返回当前用户的语言标记。
@@ -39,7 +39,7 @@ ms.locfileid: "61563001"
 
 PowerApps 使用 [IETF BCP-47 语言标记](https://tools.ietf.org/html/bcp47)格式。  
 
-要查看支持的语言标记列表，请在公式栏或高级视图中输入 **Value( "1", )**，然后滚动查看建议作为第二个参数的值的区域设置列表。  
+要查看支持的语言标记列表，请在公式栏或高级视图中输入 **Value( "1", )** ，然后滚动查看建议作为第二个参数的值的区域设置列表。  
 
 **[Text](function-text.md)** 和 **[Value](function-value.md)** 函数也使用语言标记。  这些函数可基于全球化考虑来回转换文本字符串。  将语言标记传递给这些函数时，如果区域没有区别，则只需使用标记的语言部分。
 

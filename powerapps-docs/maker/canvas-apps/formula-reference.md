@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e0f40e6c04b776d2e8efb41353e0da8ced6fc7c5
-ms.sourcegitcommit: 07a0fcda31557ddbafba0ca0362765229ee2fdad
+ms.openlocfilehash: 8ba2d504cc731725d154d8141854373fbf67dc2a
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70008978"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992924"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps 的公式参考
 公式组合了许多元素。  下面列出的包括：
@@ -47,7 +47,7 @@ ms.locfileid: "70008978"
 
 **[And](functions/function-logicals.md)** – 布尔逻辑与。  如果所有参数都为 **true**，则返回 **true**。  还可以使用 [ **&&** 运算符](functions/operators.md)。
 
-**[应用](functions/object-app.md)** –提供当前正在运行的应用的相关信息, 并控制应用的行为。
+**[应用](functions/object-app.md)** –提供当前正在运行的应用的相关信息，并控制应用的行为。
 
 **[Asin](functions/function-trig.md)** – 以弧度为单位返回某个数字的反正弦值。
 
@@ -338,7 +338,7 @@ ms.locfileid: "70008978"
 
 **[Tan](functions/function-trig.md)** - 返回以弧度为单位指定的角度的正切值。
 
-**[Text](functions/function-text.md)** –转换任何值, 并将数字或日期/时间值的格式设置为文本字符串。
+**[Text](functions/function-text.md)** –转换任何值，并将数字或日期/时间值的格式设置为文本字符串。
 
 **[ThisItem](functions/operators.md#thisitem-operator)** – 当在库或表单中时，返回容器中当前项的数据。
 
@@ -381,7 +381,7 @@ ms.locfileid: "70008978"
 ## <a name="w"></a>W
 **[Weekday](functions/function-datetime-parts.md)** – 检索日期/时间值的星期几部分。
 
-**[With](functions/function-with.md)** –计算值并对单个记录执行操作, 包括命名值的内联记录。
+**[With](functions/function-with.md)** –计算值并对单个记录执行操作，包括命名值的内联记录。
 
 ## <a name="y"></a>Y
 **[Year](functions/function-datetime-parts.md)** – 检索日期/时间值的年份部分。  

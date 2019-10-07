@@ -6,38 +6,38 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 54ab2ba2186f68fcb68b9aa59729933af5d04652
-ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
+ms.openlocfilehash: 46f1974b5ff32cf21d1e9f24c15362c24b44fbe3
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68473914"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986337"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>PowerApps 中的形状控件和图标控件
 你可以为其配置外观和行为属性的图形。
 
 ## <a name="description"></a>描述
-这些控件包括箭头、几何形状、操作图标和符号，你可以为其配置诸如 fill、size 和 location 之类的属性。 此外可以配置其 **[OnSelect](properties-core.md)** 属性，以便应用的响应如果用户选择控件。
+这些控件包括箭头、几何形状、操作图标和符号，你可以为其配置诸如 fill、size 和 location 之类的属性。 还可以配置其 **[OnSelect](properties-core.md)** 属性，以便在用户选择控件时应用程序做出响应。
 
-## <a name="key-properties-icons-and-shapes"></a>键属性 (图标和形状)
+## <a name="key-properties-icons-and-shapes"></a>键属性（图标和形状）
 **[Fill](properties-color-border.md)** – 控件的背景色。
 
 **[OnSelect](properties-core.md)** -用户选择控件时应用的响应方式。
 
-## <a name="key-properties-icons-only"></a>键属性 (仅图标)
+## <a name="key-properties-icons-only"></a>键属性（仅图标）
 
-**Icon** -要显示的图标类型 (例如, **ArrowDown**或**ShoppingCart**)。 
+**Icon** -要显示的图标类型（例如， **ArrowDown**或**ShoppingCart**）。 
 
 **旋转**-要将图标旋转的度数。 
 
-**Color** : 按名称或 RGBA 值的图标的颜色。
+**Color** ：按名称或 RGBA 值的图标的颜色。
 
 ## <a name="additional-properties"></a>其他属性
 **[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。
@@ -52,9 +52,9 @@ ms.locfileid: "68473914"
 
 **[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景色。
 
-**[PressedBorderColor](properties-color-border.md)** –用户选择控件时, 该控件边框的颜色。
+**[PressedBorderColor](properties-color-border.md)** –用户选择控件时，该控件边框的颜色。
 
-**[PressedFill](properties-color-border.md)** -当用户选择控件时, 该控件的背景色。
+**[PressedFill](properties-color-border.md)** -当用户选择控件时，该控件的背景色。
 
 **[TabIndex](properties-accessibility.md)** - 相对于其他控件的键盘导航顺序。
 
@@ -82,7 +82,7 @@ ms.locfileid: "68473914"
 
   `Navigate(Target, ScreenTransition.Fade)`
   
-1. 按 F5, 然后选择**形状**控件。
+1. 按 F5，然后选择**形状**控件。
 
     将会出现“Target”屏幕。
 
@@ -110,19 +110,19 @@ ms.locfileid: "68473914"
 - **[HoverFill](properties-color-border.md)** 和控件范围之外的颜色（如果用作按钮）
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-- 如果图形用作按钮, 则必须将 **["accessiblelabel"](properties-accessibility.md)** 设置为非空字符串, 否则不能仅将其用于修饰。
+- 如果图形用作按钮，则必须将 **["accessiblelabel"](properties-accessibility.md)** 设置为非空字符串，否则不能仅将其用于修饰。
 
-- 如果图形提供冗余信息或纯粹用于修饰, 则 **["accessiblelabel"](properties-accessibility.md)** 必须为空或空字符串 **""** 。 此值会使屏幕阅读器忽略图形。
+- 如果图形提供冗余信息或纯粹用于修饰，则 **["accessiblelabel"](properties-accessibility.md)** 必须为空或空字符串 **""** 。 此值会使屏幕阅读器忽略图形。
 
-例如，你可能会设置 **[accessiblelabel](properties-accessibility.md)** 属性**设置**图标**设置**。 此图标不用作按钮。 它是旁边 **[标签](control-text-box.md)** 同样显示**设置**。 屏幕阅读器将图标和标签作为 "**设置**" 进行读取, 这是不必要的。 在这种情况下，该图标不需要 **[accessiblelabel](properties-accessibility.md)** 。
+例如，可以将 "**设置**" 图标的 " **[" accessiblelabel "](properties-accessibility.md)** " 属性设置为 "**设置**"。 此图标不用作按钮。 它位于同样显示 "**设置**" 的 **[标签](control-text-box.md)** 旁边。 屏幕阅读器将图标和标签作为 "**设置**" 进行读取，这是不必要的。 在这种情况下，图标不需要 **["accessiblelabel"](properties-accessibility.md)** 。
 
 > [!IMPORTANT]
-> 如果将图标或形状的 **["accessiblelabel"](properties-accessibility.md)** 设置为空字符串, 并且其 **[TabIndex](properties-accessibility.md)** 设置为零或更大, 屏幕阅读器会将其作为**按钮**读取。 此类图标或形状以按钮形式呈现。 
+> 如果将图标或形状的 **["accessiblelabel"](properties-accessibility.md)** 设置为空字符串，并且其 **[TabIndex](properties-accessibility.md)** 设置为零或更大，屏幕阅读器会将其作为**按钮**读取。 此类图标或形状以按钮形式呈现。 
 
 ### <a name="keyboard-support"></a>键盘支持
-- **[TabIndex](properties-accessibility.md)** 必须为零或更高，如果图形用作按钮。 如果为图标或形状设置此值, 则键盘用户可以导航到它。
+- 如果图形用作按钮，则 **[TabIndex](properties-accessibility.md)** 必须为零或更大。 如果为图标或形状设置此值，则键盘用户可以导航到它。
 
-- 如果图形用作按钮, 则焦点指示器必须清晰可见。 使用 **[FocusedBorderColor](properties-color-border.md)** 并 **[FocusedBorderThickness](properties-color-border.md)** 来实现此目标。
+- 如果图形用作按钮，则焦点指示器必须清晰可见。 使用 **[FocusedBorderColor](properties-color-border.md)** 和 **[FocusedBorderThickness](properties-color-border.md)** 实现此结果。
 
     > [!NOTE]
-    > 当 **[“TabIndex”](properties-accessibility.md)** 为零或更大，图标或形状将以按钮形式呈现。 其外观不会改变, 但屏幕阅读器会将图像正确地标识为按钮。 当 **[TabIndex](properties-accessibility.md)** 小于零时，图标或形状将被标识为图像。
+    > 当 **[“TabIndex”](properties-accessibility.md)** 为零或更大，图标或形状将以按钮形式呈现。 其外观不会改变，但屏幕阅读器会将图像正确地标识为按钮。 当 **[TabIndex](properties-accessibility.md)** 小于零时，图标或形状将被标识为图像。

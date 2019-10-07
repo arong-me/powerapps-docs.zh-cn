@@ -1,6 +1,6 @@
 ---
-title: Web 条码扫描器控件： 引用 |Microsoft Docs
-description: 包括属性和示例，条码扫描器控件有关的信息
+title: Web 条码-扫描器控件：参考 |Microsoft Docs
+description: 有关条形码扫描器控件的信息（包括属性和示例）
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -8,25 +8,25 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 787fa34bdfcabf6103fefd82f66e976b680544e2
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d1162c0c9954e67196eb4d3e42b2c91bdc3bf804
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544582"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986996"
 ---
-# <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>（实验） 在 PowerApps 中的 web 条码扫描器控件
+# <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>PowerApps 中的 Web 条码-扫描器控件（实验性）
 
-旧条形码扫描控件，这已过时，但可能适用于扫描的 web 浏览器中的代码。
+旧的条形码扫描控件（已过时但对于在 web 浏览器中扫描代码可能很有用）。
 
 ## <a name="description"></a>描述
 
-此控件显示相机源应用程序中，以便用户可以扫描条形码，在所有设备上。 该控件是由于性能不佳和移动版已过时 **[条码扫描器](control-new-barcode-scanner.md)** 控件所替换此控件。
+控件在应用中显示照相机源，以便用户可以在所有设备上扫描条形码。 由于性能不佳，控件已过时，移动 **[条形码扫描器](control-new-barcode-scanner.md)** 控件将替换此控件。
 
 ## <a name="key-properties"></a>关键属性
 
@@ -38,11 +38,11 @@ ms.locfileid: "61544582"
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”  、“虚线”  、“点线”  还是“无”  。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit  )、仅显示数据 (View  )，还是已禁用 (Disabled  )。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -52,7 +52,7 @@ ms.locfileid: "61544582"
 
 **StreamRate** - 在 **Stream** 属性上更新图像的频率（以毫秒为单位）。  此值的范围为 100（1/10 秒）到 3,600,000（1 小时）。
 
-Text  – 上次由扫描仪识别的条形码值。
+Text – 上次由扫描仪识别的条形码值。
 
 **[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
 
@@ -76,21 +76,21 @@ Text  – 上次由扫描仪识别的条形码值。
 
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 
-1. 添加**标签**控件，并将其输出设置为条形码扫描仪**文本**属性。
+1. 添加 "**标签**" 控件，并将其输出设置为条形码扫描器的 "**文本**" 属性。
 
-1. 扫描设置下的类型的条形码**BarcodeType**属性。
+1. 扫描**BarcodeType**属性下设置的类型的条形码。
 
-    标签将显示扫描的条形码。
+    标签显示扫描的条形码。
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 
 ### <a name="video-alternatives"></a>视频替代项
 
-* 请考虑添加 **[标签](control-text-box.md)** ，并将其 **[Text](properties-core.md)** 设置为条形码扫描仪的“Text”  。 由于条形码扫描仪未显示标识的条形码值，执行上述操作将使所有人都可访问扫描仪，而不仅仅是那些有视觉障碍的用户。
+* 请考虑添加 **[标签](control-text-box.md)** ，并将其 **[Text](properties-core.md)** 设置为条形码扫描仪的“Text”。 由于条形码扫描仪未显示标识的条形码值，执行上述操作将使所有人都可访问扫描仪，而不仅仅是那些有视觉障碍的用户。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
 
 * **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
 
     > [!NOTE]
-  > 已发现新条形码时，屏幕阅读器将公布。 不会公布值。 只要条形码在视图中，屏幕阅读器就会每隔 5 秒提醒一次，指示仍在识别相同的条形码。
+  > 找到新条形码时，屏幕阅读器会公布。 不会发布该值。 只要条形码处于视图中，屏幕阅读器就会每隔5秒提醒用户，仍将同时标识同一条形码。

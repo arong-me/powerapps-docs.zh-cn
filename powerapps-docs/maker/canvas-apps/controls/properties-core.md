@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 16065dc29d74655cbede25cea20148b343b790e6
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 0539eec636307a958658023376e1f8caf2e6c7eb
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560337"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993235"
 ---
 # <a name="core-properties-in-powerapps"></a>PowerApps 中的核心属性
 配置用户是否能看到控件并与之交互。
@@ -32,7 +32,7 @@ ms.locfileid: "61560337"
 
 * 适用于 **[文本输入](control-text-input.md)** 、 **[卡片](control-card.md)**
 
-**DisplayMode** – 值可以是 Edit、View  或 Disabled  。 配置控件是允许用户输入 (Edit  )、仅显示数据 (View  )，还是已禁用 (Disabled  )。  在 View  模式时，输入控件（如[文本输入](control-text-input.md)  、[下拉列表](control-drop-down.md)  、[日期选取器](control-date-picker.md)  ）将仅显示文本值，不会呈现任何交互元素或修饰。  这使它们适合以表单形式或可读输出形式进行显示。
+**DisplayMode** – 值可以是 Edit、View 或 Disabled。 配置控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。  在 View 模式时，输入控件（如[文本输入](control-text-input.md)、[下拉列表](control-drop-down.md)、[日期选取器](control-date-picker.md)）将仅显示文本值，不会呈现任何交互元素或修饰。  这使它们适合以表单形式或可读输出形式进行显示。
 
 * 适用于 **[添加图片](control-add-picture.md)** 、 **[音频](control-audio-video.md)** 、 **[按钮](control-button.md)** 、 **[照相机](control-camera.md)** 、 **[复选框](control-check-box.md)** 、 **[柱形图](control-column-line-chart.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[下拉列表](control-drop-down.md)** 、 **[导出](control-export-import.md)** 、 **[库](control-gallery.md)** 、 **[HTML 文本](control-html-text.md)** 、 **[图标](control-shapes-icons.md)** 、 **[图像](control-image.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[折线图](control-column-line-chart.md)** 、 **[列表框](control-list-box.md)** 、 **[麦克风](control-microphone.md)** 、 **[PDF 查看器](control-pdf-viewer.md)** 、 **[笔输入](control-pen-input.md)** 、 **[饼图](control-pie-chart.md)** 、 **[单选按钮](control-radio.md)** 、 **[评分](control-rating.md)** 、 **[形状](control-shapes-icons.md)** 、 **[滑块](control-slider.md)** 、 **[文本输入](control-text-input.md)** 、 **[计时器](control-timer.md)** 、 **[切换](control-toggle.md)** 和 **[视频](control-audio-video.md)** 控件。
 
@@ -48,7 +48,7 @@ ms.locfileid: "61560337"
 
 * 适用于 **[添加图片](control-add-picture.md)** 、 **[按钮](control-button.md)** 、 **[照相机](control-camera.md)** 、 **[复选框](control-check-box.md)** 、 **[柱形图](control-column-line-chart.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[下拉列表](control-drop-down.md)** 、 **[导出](control-export-import.md)** 、 **[HTML 文本](control-html-text.md)** 、 **[图标](control-shapes-icons.md)** 、 **[图像](control-image.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[折线图](control-column-line-chart.md)** 、 **[列表框](control-list-box.md)** 、 **[麦克风](control-microphone.md)** 、 **[PDF 查看器](control-pdf-viewer.md)** 、 **[笔输入](control-pen-input.md)** 、 **[饼图](control-pie-chart.md)** 、 **[单选按钮](control-radio.md)** 、 **[评分](control-rating.md)** 、 **[形状](control-shapes-icons.md)** 、 **[滑块](control-slider.md)** 、 **[文本输入](control-text-input.md)** 、 **[计时器](control-timer.md)** 和 **[切换](control-toggle.md)** 控件。
 
-**Reset** - 控件是否还原为其默认值。  另请参阅 [Reset](../functions/function-reset.md)  函数。
+**Reset** - 控件是否还原为其默认值。  另请参阅 [Reset](../functions/function-reset.md) 函数。
 
 * 适用于 **[音频](control-audio-video.md)** 、 **[复选框](control-check-box.md)** 、 **[下拉列表](control-drop-down.md)** 、 **[列表框](control-list-box.md)** 、 **[麦克风](control-microphone.md)** 、 **[单选按钮](control-radio.md)** 、 **[评级](control-rating.md)** 、 **[滑块](control-slider.md)** 、 **[文本输入](control-text-input.md)** 、 **[计时器](control-timer.md)** 、 **[切换](control-toggle.md)** 和 **[视频](control-audio-video.md)** 控件。
 

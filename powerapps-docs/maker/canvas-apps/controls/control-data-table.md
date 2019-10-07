@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/05/2017
 ms.author: jasongre
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fb7c2ac88c24197d014ebdc1b2b6a50e4802e0bf
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: f29b3a782ce62c475c80804225787a0a42e85a2c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63319377"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993813"
 ---
 # <a name="data-table-control-in-powerapps"></a>PowerApps 中的数据表控件
 以表格格式显示一组数据。
@@ -59,7 +59,7 @@ PowerApps 在 2017 年 5 月 5 日引入了“数据表”控件。 此部分介
 
 ## <a name="other-properties"></a>其他属性
 * [**BorderColor**](properties-color-border.md) -“数据表”控件边框颜色。
-* [**BorderStyle**](properties-color-border.md) -“数据表”控件边框样式。 选项包括 Solid、Dashed、Dotted 和 None。
+* [**BorderStyle**](properties-color-border.md) -“数据表”控件边框样式。 选项包括 Solid、Dashed、Dotted和 None。
 * [**BorderThickness**](properties-color-border.md) -“数据表”控件边框粗细。
 * [**Color**](properties-color-border.md) - 所有数据行的默认文本颜色。
 * [**Fill**](properties-color-border.md) - 所有数据行的默认背景色。

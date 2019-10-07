@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/21/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a1a9a02917ed5202e24ce0228b8b581e2f45b8b9
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: dbf1c623b18bc244e62fd962625f1d7cde35f1e4
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61520565"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992450"
 ---
 # <a name="revert-function-in-powerapps"></a>PowerApps 中的 Revert 函数
 刷新[数据源](../working-with-data-sources.md)的[记录](../working-with-tables.md#records)并清除错误。
@@ -46,18 +46,18 @@ ms.locfileid: "61520565"
 另一个设备上的用户将 **Strawberry** 记录的 **Quantity** 属性改成了 **400**。  几乎在同一时间，你将同一条记录的同一个属性改成了 **500**，但不知道他人也进行了更改。
 
 随后你使用 **[Patch](function-patch.md)** 函数更新记录：<br>
-**Patch( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ), { Quantity:500 } )**
+@no__t 0Patch （IceCream，First （Filter （IceCream，口味 = "草莓"）），{Quantity：500}） **
 
 当你检查 **[Errors](function-errors.md)** 表时，发现了如下错误：
 
 | 记录 | [列](../working-with-tables.md#columns) | 消息 | 错误 |
 | --- | --- | --- | --- |
-| **{ID:1，风格："草莓"，Quantity:300 }** |空白 |**“另一个用户修改了你尝试修改的记录。请还原记录，然后重试。”** |**ErrorKind.Conflict** |
+| **{ID：1，口味："草莓"，数量：300}** |空白 |**“另一个用户修改了你尝试修改的记录。请还原记录，然后重试。”** |**ErrorKind.Conflict** |
 
 根据 **Error** 列中的内容，你可以看到一个“重新加载”按钮，其 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：<br>
 **Revert( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ) )**
 
-选择“重新加载”按钮后，**[Errors](function-errors.md)** 表变为[空白](function-isblank-isempty.md)，并且 **Strawberry** 的新值已加载：
+选择“重新加载”按钮后， **[Errors](function-errors.md)** 表变为[空白](function-isblank-isempty.md)，并且 **Strawberry** 的新值已加载：
 
 ![](media/function-revert/icecream-after.png)
 

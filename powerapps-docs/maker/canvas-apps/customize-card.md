@@ -1,26 +1,26 @@
 ---
-title: 自定义画布应用中的卡 |Microsoft Docs
-description: 显示详细信息上的卡片中的默认控件更改或编辑窗体中的画布应用
-author: AFTOwen
+title: 自定义画布应用中的卡片 |Microsoft Docs
+description: 在画布应用中更改在卡片上显示的默认控件详细信息或编辑窗体
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/18/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ddc1c677ed95caf10d8cd6e0e7e12e6aaf88a0f5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5bcf1515f72bdce0872f91c64b5ac4fe5028ee2c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61559731"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985924"
 ---
-# <a name="customize-a-card-in-a-canvas-app"></a>自定义卡在画布应用
+# <a name="customize-a-card-in-a-canvas-app"></a>自定义画布应用中的卡片
 
 举例来说，通过更改卡控件执行基本的自定义（无需解锁卡）。 例如，通过解锁卡及添加默认情况下该卡无法使用的控件来执行高级自定义。
 
@@ -29,7 +29,7 @@ ms.locfileid: "61559731"
 ## <a name="prerequisites"></a>先决条件
 
 - 了解如何 [添加和配置控件](add-configure-controls.md)。
-- 你可以查看此主题的基本概念，或如果你先完成这些主题中的过程，可以按照其步骤：
+- 您可以仅查看本主题中的常规概念，也可以在您首先完成这些主题中的过程后逐步执行以下操作：
 
     1. [生成应用](data-platform-create-app.md)。
     1. [自定义库](customize-layout-sharepoint.md)。
@@ -37,45 +37,45 @@ ms.locfileid: "61559731"
 
 ## <a name="customize-a-locked-card"></a>自定义锁定的卡
 
-在此过程中，会将为 **[文本输入](controls/control-text-input.md)** 与控制 **[滑块] (控件/控件-slider.md**控件，而无需解锁卡。
+在此过程中，您将使用 **[滑块] （控件/控制滑块**控件）替换 **[文本输入](controls/control-text-input.md)** 控件，而无需解锁卡。
 
-1. 在生成并自定义的应用，选择**EditForm1**左侧导航栏中，然后选择**编辑字段**上**属性**的右侧窗格的选项卡。
+1. 在生成并自定义的应用程序中，在左侧导航栏中选择 " **EditForm1** "，然后选择右侧窗格的 "**属性**" 选项卡上的 "**编辑字段**"。
 
-1. 在字段列表中，选择向下的箭头**雇员数目**，然后打开列表下的**控件类型**。
+1. 在字段列表中，选择 "**雇员数**" 的下箭头，然后打开 "**控件类型**" 下的列表。
 
     > [!div class="mx-imgBorder"]
-    > ![数量卡片的选项的下拉列表](./media/customize-card/card-selector.png)
+    > 用于数字卡片 @ no__t 的选项的 @no__t 0Drop 列表
 
-1. 选择**编辑滑块**。
+1. 选择 "**编辑滑块**"。
 
     屏幕将体现所做的更改。
 
     > [!div class="mx-imgBorder"]
-    > ![使用滑块控件的 EditForm1](./media/customize-card/add-slider.png)
+    > ![EditForm1 与 slider control @ no__t-1
 
 ## <a name="unlock-and-customize-a-card"></a>解锁和自定义卡
 
-在此过程中，将解锁卡，更新**最大**的属性**滑块**刚添加的控件。
+在此过程中，将解锁卡，并更新刚添加的**滑块**控件的**Max**属性。
 
-1. 在中**EditForm1**，选择**滑块**控制**雇员数目**卡。
-
-    > [!div class="mx-imgBorder"]
-    > ![选择滑块](./media/customize-card/select-slider.png)
-
-1. 上**高级**选项卡的右侧窗格中，选择锁定图标以解锁卡。
+1. 在**EditForm1**中，选择 "**员工**" 卡的 "**滑块**" 控件。
 
     > [!div class="mx-imgBorder"]
-    > ![解锁卡](./media/customize-card/lock-icon.png)
+    > ![Select 滑块 @ no__t-1
 
-1. 设置**最大**的属性**滑块**控件为 10,000。
-
-    > [!div class="mx-imgBorder"]
-    > ![高级选项卡上的最大属性](./media/customize-card/max-property.png)
-
-    **滑块**控件显示更精确的值。
+1. 在右侧窗格的 "**高级**" 选项卡上，选择锁定图标来解锁卡。
 
     > [!div class="mx-imgBorder"]
-    > ![滑块范围：0-10,000](./media/customize-card/final-slider.png)
+    > @no__t 0Unlock 卡片式 @ no__t-1
+
+1. 将**滑块**控件的**Max**属性设置为10000。
+
+    > [!div class="mx-imgBorder"]
+    > "高级" 选项卡上的 "0Max" 属性 @ no__t-1 @no__t
+
+    **滑块**控件显示的值越精确。
+
+    > [!div class="mx-imgBorder"]
+    > ![Slider 范围：0-10000 @ no__t-0
 
 ## <a name="next-steps"></a>后续步骤
 

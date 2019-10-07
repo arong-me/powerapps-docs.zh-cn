@@ -1,26 +1,26 @@
 ---
 title: 教程 - 在生成应用中自定义库 | Microsoft Docs
 description: 本教程将介绍自定义显示在库中的数据，以及在 PowerApps 中自动生成的应用的其他元素。
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: tutorial
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/06/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4ca9ed14f96dbad52fe6f7b0318f520dbdd33d10
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d12f667c1ff1fbf8424840b887e0f9394197ee2c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61561113"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986053"
 ---
-# <a name="tutorial-customize-a-gallery-in-powerapps"></a>教程：自定义 PowerApps 中库
+# <a name="tutorial-customize-a-gallery-in-powerapps"></a>指导在 PowerApps 中自定义库
 
 本教程将自定义一个记录列表（称为一个库），以及对已在 Microsoft PowerApps 中自动生成的应用进行其他更改。 即使不进行这些更改，用户也可以管理应用中的数据，但是，如果对其进行自定义来满足组织需要，则可以更加轻松使用该应用。
 
@@ -47,7 +47,7 @@ ms.locfileid: "61561113"
 
 ## <a name="prerequisites"></a>先决条件
 
-[生成应用](data-platform-create-app.md)从**帐户**Common Data Service 实体。
+从 Common Data Service 的 "**帐户**" 实体[生成应用](data-platform-create-app.md)。
 
 ## <a name="open-the-generated-app"></a>打开生成的应用
 
@@ -67,15 +67,15 @@ ms.locfileid: "61561113"
 
     ![选择库](media/customize-layout-sharepoint/select-gallery-1.png)
 
-1. 上**属性**选项卡的右侧窗格中，打开下的选项列表**布局**，然后选择仅显示一个标题的选项。
+1. 在右侧窗格的 "**属性**" 选项卡上，打开 "**布局**" 下的选项列表，然后选择只显示标题的选项。
 
     ![选择仅限标题的布局](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. 下一步**字段**，选择**编辑**，然后选择标题框中的向下箭头。
+1. 在 "**字段**" 旁，选择 "**编辑**"，然后选择 "标题" 框的向下箭头。
 
     此控件的名称以数字结尾，如“标题 1”，基于已执行的其他操作，该数字可能有所不同。
 
-1. 在选项列表中，选择**帐户名**，然后关闭**数据**窗格。
+1. 在选项列表中，选择 "**帐户名称**"，然后关闭 "**数据**" 窗格。
 
     库显示每个帐户的名称。
 
@@ -142,7 +142,7 @@ ms.locfileid: "61561113"
 
     ![选择库](./media/customize-layout-sharepoint/select-gallery-sorted.png)
 
-1. 设置库的**显示滚动条**属性设置为**true**。
+1. 将库的 "**显示滚动条**" 属性设置为 " **true**"。
 
 ## <a name="next-steps"></a>后续步骤
 

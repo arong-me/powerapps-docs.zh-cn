@@ -8,17 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bffbc86dda86c0b179634d2f59e0fb4f5d063ecd
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 88b6b9faf8c4d7c14a09bfc89791a050e3c07ca2
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321335"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986854"
 ---
 # <a name="camera-control-in-powerapps"></a>PowerApps 中的照相机控件
 一个控件，用户通过此控件可使用设备上的照相机拍照。
@@ -91,7 +91,7 @@ ms.locfileid: "63321335"
 
     拍摄的照片将在“图像库”控件中显示。
 6. 拍摄所需数量的照片，然后按 Esc 返回默认工作区。
-7. （可选）将“图像库”控件中“图像”控件的 **OnSelect** 属性设置为 **Remove(MyPix, ThisItem)**，按 F5，然后单击或点击照片将其删除。
+7. （可选）将“图像库”控件中“图像”控件的 **OnSelect** 属性设置为 **Remove(MyPix, ThisItem)** ，按 F5，然后单击或点击照片将其删除。
 
 使用 **[SaveData](../functions/function-savedata-loaddata.md)** 函数本地保存照片或使用 **[Patch](../functions/function-patch.md)** 函数更新数据源。
 
@@ -100,7 +100,7 @@ ms.locfileid: "63321335"
 除了显示相机源，整个相机控件还充当拍照按钮。 因此，要考虑与按钮相类似的辅助功能注意事项。
 
 ### <a name="video-alternatives"></a>视频替代项
-* 请考虑为有视觉障碍的用户添加另一种输入形式。 例如，**[添加图片](control-add-picture.md)**，允许用户从自己的设备上传图像。
+* 请考虑为有视觉障碍的用户添加另一种输入形式。 例如， **[添加图片](control-add-picture.md)** ，允许用户从自己的设备上传图像。
 
 ### <a name="color-contrast"></a>颜色对比度
 在以下项之间必须有足够的颜色对比度：

@@ -6,36 +6,36 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/14/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9415ab67b93ef64f5caa025af5ac685ca2363305
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ea2668ca295d807bbc19f71c9aa9f477c3b96041
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61562987"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992681"
 ---
 # <a name="guid-function-in-powerapps"></a>PowerApps 中的 GUID 函数
 将 GUID（[全局唯一标识符](https://en.wikipedia.org/wiki/Universally_unique_identifier)）字符串转换为 GUID 值或创建新的 GUID 值。
 
 ## <a name="description"></a>说明
-使用 GUID 函数将包含 GUID 的十六进制表示形式的字符串转换为可以传递到数据库的 GUID 值。 如 Common Data Service 和 SQL Server 数据库系统将 GUID 值用作键。
+使用 GUID 函数将包含 GUID 的十六进制表示形式的字符串转换为可以传递到数据库的 GUID 值。 GUID 值用作数据库系统（如 Common Data Service 和 SQL Server）的键。
 
 传递的字符串可以包含大写或小写字母，但必须是采用以下任意格式的 32 位十六进制数字：
 
-- **"123e4567-e89b-12d3-a456-426655440000"**（标准位置中带有连字符）
-- **"123e4567e89b12d3a456426655440000"**（不带连字符）
+- **"123e4567-e89b-12d3-a456-426655440000"** （标准位置中带有连字符）
+- **"123e4567e89b12d3a456426655440000"** （不带连字符）
 
 如果未指定参数，此函数将创建新的 GUID。
 
 若要将 GUID 值转换为字符串，只需将其用于字符串上下文。 GUID 值将转换为包含连字符和小写字母的十六进制表示形式字符串。 
 
-此函数时生成一个新的 GUID，使用伪随机数字来创建版本 4 [IETF RFC 4122](https://www.ietf.org/rfc/rfc4122.txt) GUID。 当转换为 GUID 字符串，此函数支持任何 GUID 版本通过接受 32 个十六进制数字的任何字符串。
+生成新的 GUID 时，此函数使用伪随机数字创建版本 4 [IETF RFC 4122](https://www.ietf.org/rfc/rfc4122.txt) GUID。 将字符串转换为 GUID 时，此函数通过接受任何32十六进制数字字符串来支持任何 GUID 版本。
 
 ## <a name="volatile-functions"></a>易失函数
 GUID 是不带参数时使用的易失函数。 每次计算该函数时会返回不同的值。  
@@ -69,7 +69,7 @@ GUID 是不带参数时使用的易失函数。 每次计算该函数时会返�
 
 在上下文中使用该值，以将新数据库记录的“状态”字段设置为完整的值：
 
-* **Patch( Products, Default( Products ), { Status:GUID( "F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4" ) } )**
+* @no__t 0Patch （产品、默认值（产品）、{Status：GUID （"F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4"）}） **
 
 你可能不希望向用户显示 GUID，但 GUID 有助于调试你的应用。 若要在前一个示例中创建的记录中显示“状态”字段的值，请将“标签”控件的“文本”属性设置为以下公式：
 

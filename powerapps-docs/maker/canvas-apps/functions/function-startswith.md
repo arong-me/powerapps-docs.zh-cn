@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 07/24/2017
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5d7443358216106776fae0d5daedb69b8091a00c
-ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
+ms.openlocfilehash: 510e52e5f1711362116809d0870daafb32c9f266
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68473977"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992182"
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>PowerApps 中的 EndsWith 和 StartsWith 函数
 测试文本字符串是否以另一个文本字符串开头或结尾。
@@ -50,7 +50,7 @@ EndsWith 函数测试某个文本字符串是否以其他文本字符串结尾�
 | **EndsWith( "Hello World", "world" )** |测试“Hello World”是否以“world”结尾。  测试不区分大小写。 |**true** |
 | **EndsWith( "Good bye", "good" )** |测试“Good bye”是否以“good”结尾。  EndText 参数（“good”）出现在文本中，但不是结尾处。 |**false** |
 | **EndsWith( "Always say hello", "hello" )** |测试“Always say hello”是否以“hello”结尾。 |**true** |
-| **EndsWith ("再见", "")** |测试“Bye bye”是否以空文本字符串结尾（Len 返回 0）。  为便于在 Filter 表达式中使用它，在本示例中将 EndsWith 定义为返回 true。 |**true** |
+| **EndsWith （"再见"，""）** |测试“Bye bye”是否以空文本字符串结尾（Len 返回 0）。  为便于在 Filter 表达式中使用它，在本示例中将 EndsWith 定义为返回 true。 |**true** |
 
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
@@ -68,7 +68,7 @@ EndsWith 函数测试某个文本字符串是否以其他文本字符串结尾�
 
 若要将此数据源创建为集合，请创建一个 **[按钮](../controls/control-button.md)** 控件，并将其 **OnSelect** 属性设置为以下公式：
 
-**ClearCollect (Customers, Table ({Name:"Fred Garcia", Company:"Northwind 商贸"}, {Name:"Cole 莎莎", Company:"Contoso"}, {Name:"Glenda Johnson", Company:"Contoso"}, {Name:"Mike Collins", Company:"艾德作品"}, {Name:"Colleen, 公司:"艾德作品"})**
+@no__t 0ClearCollect （Customers，Table （{Name："Fred Garcia"，Company："Northwind 商贸"}，{Name："Cole 莎莎"，Company："Contoso"}，{Name："Glenda Johnson"，Company："Contoso"}，{Name："Mike Collins"，Company："艾德作品"}，{Name："Colleen，公司："艾德作品"}）） **
 
 如此示例中所示，可在屏幕底部的[**库控件**](../controls/control-gallery.md)中显示记录列表。 在靠近屏幕顶部的位置，可添加名为 **SearchInput** 的[**文本输入**](../controls/control-text-input.md)控件，以便用户能够指定对哪些记录感兴趣。
 

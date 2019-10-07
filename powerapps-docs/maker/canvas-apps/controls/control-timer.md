@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5d20e2324f2efb4f866ed4fc183f289733c10a41
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 00863f00768a0c4eec95ecec778c2da219fd08d3
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560458"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986186"
 ---
 # <a name="timer-control-in-powerapps"></a>PowerApps 中的计时器控件
 一个控件，可确定特定时间后应用的响应方式。
@@ -27,7 +27,7 @@ ms.locfileid: "61560458"
 例如，计时器可确定控件显示的时长，或在经过特定时间后更改控件的其他属性。
 
 > [!NOTE]
-> 在 PowerApps Studio 计时器只在预览模式下运行。
+> 在 PowerApps Studio 中，计时器仅在预览模式下运行。
 
 
 ## <a name="key-properties"></a>关键属性
@@ -58,7 +58,7 @@ ms.locfileid: "61560458"
 
 **[DisabledColor](properties-color-border.md)** – 控件的 **[DisplayMode](properties-core.md)** 属性设置为 Disabled**Disabled** 时，该控件中的文本颜色。
 
-**[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode”**[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
+**[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode” **[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
 
 **[Fill](properties-color-border.md)** – 控件的背景色。
 
@@ -68,7 +68,7 @@ ms.locfileid: "61560458"
 
 [Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md) ** – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。
+**[FontWeight](properties-text.md)** -控件中的文本权重：**粗体**、 **Semibold**、 **Normal**或**浅**。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -123,7 +123,7 @@ ms.locfileid: "61560458"
 
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 2. 将计时器的 **Duration** 属性设置为 **10000**，其 **Repeat** 和 **Autostart** 属性设置为 **true**。
-3. （可选）通过以下方法可使计时器更易于读取：将其 **[Height](properties-size-location.md)** 属性设置为 **160**，**[Width](properties-size-location.md)** 属性设置为 **600**，并将其 **[Size](properties-text.md)** 属性设置为 **60**。
+3. （可选）通过以下方法可使计时器更易于读取：将其 **[Height](properties-size-location.md)** 属性设置为 **160**， **[Width](properties-size-location.md)** 属性设置为 **600**，并将其 **[Size](properties-text.md)** 属性设置为 **60**。
 4. 添加一个标签，然后将其 **[Text](properties-core.md)** 属性设置为以下公式：
    <br>**"Number of seconds remaining: " & RoundUp(10-Countdown.Value/1000, 0)**
 
@@ -135,8 +135,8 @@ ms.locfileid: "61560458"
 1. 添加一个计时器，并将其命名为 **FadeIn**。
 
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
-2. 将计时器的 **“Duration”** 属性设置为 **“5000”**，将其 **“Repeat”** 属性设置为 **“true”**，并将其 **[“Text”](properties-core.md)** 属性设置为“切换动画”。
-3. （可选）通过以下方法可使计时器更易于读取：将其 **[Height](properties-size-location.md)** 属性设置为 **160**，**[Width](properties-size-location.md)** 属性设置为 **600**，并将其 **[Size](properties-text.md)** 属性设置为 **60**。
+2. 将计时器的 **“Duration”** 属性设置为 **“5000”** ，将其 **“Repeat”** 属性设置为 **“true”** ，并将其 **[“Text”](properties-core.md)** 属性设置为“切换动画”。
+3. （可选）通过以下方法可使计时器更易于读取：将其 **[Height](properties-size-location.md)** 属性设置为 **160**， **[Width](properties-size-location.md)** 属性设置为 **600**，并将其 **[Size](properties-text.md)** 属性设置为 **60**。
 4. 添加一个标签，然后将“[Text](properties-core.md)”属性设置为显示“Welcome!” 并将其 **[Color](properties-color-border.md)** 属性设置为以下公式：
    <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
 
@@ -145,30 +145,30 @@ ms.locfileid: "61560458"
 5. 选择计时器按钮以启动或停止动画。 标签中的文本渐变为白色，恢复最大亮度，并重复此过程。
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
-相同准则 **[按钮](control-button.md)** 控制将应用于**计时器**控制如果用户可以与其进行交互。
+如果用户可以与 " **Timer** " 控件交互，则该 **[按钮](control-button.md)** 控件的准则同样适用于该控件。
 
-### <a name="background-timers"></a>后台计时器
-后台计时器自动运行并处于隐藏状态。 使用它们支持角色中的已用时间都太感兴趣的用户。 例如，可以刷新每隔一分钟的数据，或仅对一定的时间显示一条通知消息。
+### <a name="background-timers"></a>背景计时器
+后台计时器会自动运行并处于隐藏状态。 在支持角色中使用这些资源，该角色中的时间对用户不感兴趣。 例如，你可以每分钟刷新一次数据，或仅在特定的一段时间内显示一条通知消息。
 
-后台计时器应具有其 **[Visible](properties-core.md)** 属性设置为 false，以便它们隐藏的所有用户。
+背景计时器应将 **[Visible](properties-core.md)** 属性设置为 false，以便对所有用户隐藏它们。
 
 ### <a name="timing-considerations"></a>计时注意事项
-如果**计时器**运行自动，考虑用户是否具有足够的时间来阅读和使用内容。 键盘和屏幕阅读器用户可能需要更多时间来响应定时事件。
+如果**计时器**自动运行，请考虑用户是否有足够的时间来读取和使用内容。 键盘和屏幕阅读器用户可能需要更多的时间来响应定时事件。
 
-任何这些策略均足以：
-* 允许用户取消定时的事件。
+这些策略中的任何一种都足以：
+* 允许用户取消定时事件。
 * 允许用户在开始之前调整时间限制。
-* 时间限制到期前的 20 秒，则发出警告，并提供轻松扩展限制。
+* 在时间限制到期之前警告20秒，并提供一种简单的方法来扩展限制。
 
 某些情况不受这些要求的限制。 请参阅[有关时间限制的 WCAG 2.0 准则](https://www.w3.org/TR/WCAG20/#time-limits)了解详细信息。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* 如果计时器触发更改当前屏幕上的，使用[活动区域](../accessible-apps-live-regions.md)通知屏幕阅读器用户更改的内容。
+* 如果计时器在当前屏幕上触发更改，请使用[实时区域](../accessible-apps-live-regions.md)告诉屏幕阅读器用户发生了哪些更改。
 
     > [!NOTE]
-    > 如果计时器处于可见且正在运行，屏幕阅读器将公布经过的时间每隔 5 秒。
+    > 如果计时器可见并正在运行，屏幕阅读器将每五秒公布经过的时间。
 
-* 不要使用 **[文本](properties-core.md)** 时间敏感型和重要信息的控件属性。 屏幕读取器不会公布变为 **[文本](properties-core.md)** 。
-* 有关交互式计时器：
+* 不要使用控件的 " **[Text](properties-core.md)** " 属性来区分时间信息和重要信息。 屏幕阅读器不会公告对 **[文本](properties-core.md)** 所做的更改。
+* 对于交互式计时器：
     * **[“Text”](properties-core.md)** 必须存在。
-    * 请考虑添加 **[标签](control-text-box.md)** 控件以显示所经过的时间。 使用计时器 **[文本](properties-core.md)** 属性以指示用户启动或停止计时器。
+    * 请考虑添加 " **[标签](control-text-box.md)** " 控件以显示运行时间。 使用计时器的 **[Text](properties-core.md)** 属性指示用户启动或停止计时器。

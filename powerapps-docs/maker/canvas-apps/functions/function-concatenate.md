@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/23/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 889f612f3da208d4edfccc43a579ced07933b40d
-ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.openlocfilehash: 0a56230539990ce51cc9270f71d8c2b7c9a1db73
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66216031"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992886"
 ---
 # <a name="concat-and-concatenate-functions-in-powerapps"></a>PowerApps 中的 Concat 和 Concatenate 函数
 
@@ -26,13 +26,13 @@ ms.locfileid: "66216031"
 
 ## <a name="description"></a>描述
 
-**Concatenate** 函数可将混合的单独字符串和单列表中的字符串连接起来。 当使用单个字符串中使用此函数时，它相当于使用 **&** [运算符](operators.md)。
+**Concatenate** 函数可将混合的单独字符串和单列表中的字符串连接起来。 将此函数与单个字符串一起使用时，它等效于使用 **&** [运算符](operators.md)。
 
 **Concat** 函数可将应用于表中所有[记录](../working-with-tables.md#records)的公式的结果串联起来，从而产生单个字符串。 使用这个函数可汇总表的字符串，就像 **[Sum](function-aggregates.md)** 函数可以汇总数字一样。
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
-使用[**拆分**](function-split.md)或[ **MatchAll** ](function-ismatch.md)函数将字符串拆分成子字符串表。
+使用[**split**](function-split.md)或[**MatchAll**](function-ismatch.md)函数将字符串拆分为子字符串的表。
 
 ## <a name="syntax"></a>语法
 
@@ -47,13 +47,13 @@ ms.locfileid: "66216031"
 
 ## <a name="examples"></a>示例
 
-在本部分中的示例使用这些全局变量：
+本节中的示例使用以下全局变量：
 
 - **FirstName** = "Jane"
 - **LastName** = "Doe"
-- **产品** = ![具有两个列和四行的表](media/function-concatenate/products.png)
+- **Products** =  @ No__t-2Table，含两列和四行 @ no__t-3
 
-若要在应用中创建这些全局变量，插入[**按钮**](../controls/control-button.md)控件，并设置其**OnSelect**属性设为此公式：
+若要在应用中创建这些全局变量，请插入[**按钮**](../controls/control-button.md)控件，并将其**OnSelect**属性设置为以下公式：
 
 ```powerapps-dot
 Set( FirstName, "Jane" ); Set( LastName, "Doe" );
@@ -66,56 +66,56 @@ Set( Products,
 )
 ```
 
-选择按钮 （通过单击时按住 Alt 键）。
+选择按钮（在按住 Alt 键的同时单击该按钮）。
 
-### <a name="concatenate-function-and-the--operator"></a>Concatenate 函数和 & 运算符
+### <a name="concatenate-function-and-the--operator"></a>连接函数和 & 运算符
 
-对于这些示例中，设置**文本**的属性[**标签**](../controls/control-text-box.md)控件的公式从下一个表的第一列。
-
-| 公式 | 描述 | 结果 |
-|---------|-------------|--------|
-| **Concatenate(&nbsp;LastName,&nbsp;",&nbsp;",&nbsp;FirstName&nbsp;)** | 连接中的值**LastName**，该字符串 **"，"** （一个逗号后跟一个空格），和中的值**FirstName**。 | "Doe&nbsp;Jane" |
-| **LastName&nbsp;&&nbsp;",&nbsp;"&nbsp;&&nbsp;FirstName** | 除使用前一示例相同 **&** 运算符而不是函数。 | "Doe&nbsp;Jane" |
-| **Concatenate(&nbsp;FirstName,&nbsp;"&nbsp;",&nbsp;LastName&nbsp;)** | 连接中的值**FirstName**，该字符串 **""** （单个空格） 和中的值**LastName**。 | "Jane&nbsp;Doe" |
-| **FirstName&nbsp;&&nbsp;"&nbsp;"&nbsp;&&nbsp;LastName** | 与上面的示例中，同一个使用 **&** 运算符而不是函数。 | "Jane&nbsp;Doe" |
-
-### <a name="concatenate-with-a-single-column-table"></a>含有单列的表连接
-
-对于此示例中，添加空白垂直[**库**](../controls/control-gallery.md)控件，将其**项**属性设为公式中下一个表，然后将标签添加库模板中。
+对于这些示例，请将 "[**标签**](../controls/control-text-box.md)" 控件的 " **Text** " 属性设置为下表的第一列中的公式。
 
 | 公式 | 描述 | 结果 |
 |---------|-------------|--------|
-| **Concatenate( "Name:&nbsp;",&nbsp;Products.Name, ",&nbsp;Type:&nbsp;",&nbsp;Products.Type )** | 中每个记录**产品**表中，将连接字符串 **"名称:"** ，产品，该字符串的名称 **"，类型:"** 和产品的类型。  | ![产品表](media/function-concatenate/single-column.png) |
+| **串联（&nbsp;LastName，&nbsp; "，&nbsp;"，&nbsp;FirstName @ no__t）** | 连接**LastName**中的值、字符串 **"，"** （逗号后跟一个空格）和**FirstName**中的值。 | "Doe，&nbsp;Jane" |
+| **LastName @ no__t-1 @ no__t-2 @ no__t "，&nbsp;" &nbsp; @ no__t-6 @ no__t-7FirstName** | 与前面的示例相同，但使用 **&** 运算符而不是函数。 | "Doe，&nbsp;Jane" |
+| **串联（&nbsp;FirstName，&nbsp; "&nbsp;"，&nbsp;LastName @ no__t）** | 连接**FirstName**中的值、字符串 **""** （单个空格）和**LastName**中的值。 | "Jane @ no__t-0Doe" |
+| **FirstName @ no__t-1 @ no__t-2 @ no__t "&nbsp;" &nbsp; @ no__t-6 @ no__t-7LastName** | 与上面的示例相同，使用 **&** 运算符而不是函数。 | "Jane @ no__t-0Doe" |
+
+### <a name="concatenate-with-a-single-column-table"></a>与单列表连接
+
+在此示例中，添加一个空白的垂直[**库**](../controls/control-gallery.md)控件，将其**Items**属性设置为下一个表中的公式，然后在库模板中添加标签。
+
+| 公式 | 描述 | 结果 |
+|---------|-------------|--------|
+| **连接（"名称： &nbsp;"，&nbsp;Products.Name，"，&nbsp;Type： &nbsp;"，&nbsp;Products）** | 对于**Products**表中的每个记录，连接字符串 **"name："** 、产品的名称、字符串 **"，type："** 和产品的类型。  | ![产品表](media/function-concatenate/single-column.png) |
 
 ### <a name="concat-function"></a>Concat 函数
 
-对于这些示例中，设置**文本**从下一个表的第一列的公式标签的属性。
+对于这些示例，请将标签的 " **Text** " 属性设置为下表的第一列中的公式。
 
 | 公式 | 描述 | 结果 |
 |---------|-------------|--------|
-| **Concat( Products, Name & ", " )** | 计算表达式的值**名称 &"、"** 针对每条记录**产品**，并将结果连在一起的单个文本字符串。  | "小提琴，&nbsp;Cello，&nbsp;喇叭示意发出通知，&nbsp;" |
-| **Concat( Filter(&nbsp;Products,&nbsp;Type&nbsp;=&nbsp;"String"&nbsp;), Name & ", " )** | 评估公式**名称 &"、"** 针对每条记录**产品**满足筛选器**类型 ="String"** ，并将结果连接成单个文本字符串。   | "小提琴，&nbsp;Cello，&nbsp;" |
+| **Concat （Products，Name & "，"）** | 计算每个**产品**记录的表达式**名称 & "，"** ，并将结果连接成单个文本字符串。  | "Violin，&nbsp;Cello，&nbsp;Trumpet，&nbsp;" |
+| **Concat （Filter （&nbsp;Products、&nbsp;Type @ no__t @ no__t-4 @ no__t-5 "String" &nbsp;）、Name & "，"）** | 为满足筛选器**类型 = "String"** 的**产品**的每个记录计算公式**名称 & "，"** ，并将结果连接到一个文本字符串。   | "Violin，&nbsp;Cello，&nbsp;" |
 
 ### <a name="trimming-the-end"></a>剪裁结束
 
-最后两个示例包括一个额外"，"结果的末尾。 该函数将追加一个逗号和空格**名称**中包括的最后一个记录的表的每个记录的值。
+最后两个示例在结果末尾添加一个额外的 "，"。 函数在表中的每个记录的**名称**值后面追加一个逗号和一个空格，包括最后一条记录。
 
-在某些情况下，这些额外的字符没有影响。 例如，只留下在标签中显示结果时，不会显示分隔符。 如果你想要删除这些额外的字符，使用[**左**](function-left-mid-right.md)或[**匹配**](function-ismatch.md)函数。
+在某些情况下，这些额外字符并不重要。 例如，如果在标签中显示结果，则不会显示单空格分隔符。 如果要删除这些额外字符，请使用[**Left**](function-left-mid-right.md)或[**Match**](function-ismatch.md)函数。
 
-对于这些示例中，设置**文本**从下一个表的第一列的公式标签的属性。
-
-| 公式 | 描述 | 结果 |
-|---------|-------------|--------|
-| **Left( Concat(&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;), Len(&nbsp;Concat(&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;)&nbsp;)&nbsp;-&nbsp;2 )** | 返回的结果**Concat**但中移除窗体中的多余的分隔符的最后两个字符。 | "小提琴，&nbsp;Cello，&nbsp;喇叭示意发出通知" |
-| **Match( Concat(&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;), "^(?&lt;trim&gt;.*),&nbsp;$" ).trim** | 返回的字符**Concat**从开头到末尾 （$） 的文本字符串 (^)，但不包括不需要的逗号和末尾的空格。 | "小提琴，&nbsp;Cello，&nbsp;喇叭示意发出通知" |
-
-### <a name="split-and-matchall"></a>拆分和 MatchAll
-
-如果您使用了**Concat**分隔符，使用中，您可以撤消该操作通过组合**拆分**并**MatchAll**函数。
-
-这些示例中，添加一个空白、 垂直库，在搜索框中设置其**项**属性设为公式中下一个表，然后将标签添加库模板中。
+对于这些示例，请将标签的 " **Text** " 属性设置为下表的第一列中的公式。
 
 | 公式 | 描述 | 结果 |
 |---------|-------------|--------|
-| **Split( Concat(&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;), ", " )** | 使用分隔符拆分的文本字符串 **"，"** 。 字符串结尾于逗号和空格，因此结果中的最后一行是空字符串。  | ![Table](media/function-concatenate/split.png) |
-| **MatchAll( Concat(&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;), "[^\s,]+" ).FullMatch** | 将拆分基于不是空格或逗号分隔的字符的文本字符串。 此公式中删除多余的逗号和空格的字符串的末尾。 | ![Table](media/function-concatenate/matchall.png)
+| **Left （Concat （&nbsp;Products，&nbsp;Name @ no__t-3 @ no__t-4 @ no__t-5 "，&nbsp;" &nbsp;），Len （&nbsp;Concat （&nbsp;Products，0Name @ no__t-11 @ no__t-12 @ no__t-13 "，4" 5） 7 @ no__t-18 @ no__t-192）** | 返回**Concat**的结果，但会删除最后两个字符，这些字符构成无关分隔符。 | "Violin，&nbsp;Cello，&nbsp;Trumpet" |
+| **Match （Concat （&nbsp;Products，&nbsp;Name @ no__t @ no__t-4 @ no__t-5 "，&nbsp;" &nbsp;），"^ （？ &lt;trim @ no__t-9. *），@no__t-$10"）。修剪** | 返回从文本字符串（^）的开头到末尾（$）的**Concat**的字符，但不包括不需要的逗号和空格。 | "Violin，&nbsp;Cello，&nbsp;Trumpet" |
+
+### <a name="split-and-matchall"></a>Split 和 MatchAll
+
+如果通过分隔符使用了**Concat** ，则可以通过组合**Split**和**MatchAll**函数来撤消操作。
+
+对于这些示例，请在下表中添加一个空白的垂直库，将其**Items**属性设置为一个公式，然后在库模板中添加一个标签。
+
+| 公式 | 描述 | 结果 |
+|---------|-------------|--------|
+| **Split （Concat （&nbsp;Products，&nbsp;Name @ no__t @ no__t-4 @ no__t-5 "，&nbsp;" &nbsp;），"，"）** | 拆分文本字符串，分隔符为 **"，"** 。 字符串以逗号和空格结尾，因此结果中的最后一行是空字符串。  | ![Table](media/function-concatenate/split.png) |
+| **MatchAll （Concat （&nbsp;Products，&nbsp;Name @ no__t-3 @ no__t-4 @ no__t-5 "，&nbsp;" &nbsp;），"[^ \s，] +"）。FullMatch** | 根据不为空格或逗号的字符拆分文本字符串。 此公式将删除字符串末尾的额外逗号和空格。 | ![Table](media/function-concatenate/matchall.png)

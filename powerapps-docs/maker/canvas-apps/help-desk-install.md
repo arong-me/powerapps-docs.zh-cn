@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/08/2018
 ms.author: yijw
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9d1b7eaecc7bd519e9423e6e64387cb6cad76c7f
-ms.sourcegitcommit: 9ec2853aec74e92ccd1e4a7ca54707cdf8b8cdd3
+ms.openlocfilehash: 5f8744d7cc6b6048debc18775e7bf3ad7cbbff22
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65535261"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71990218"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>在 PowerApps 中安装和配置技术支持的示例
 
@@ -31,7 +31,7 @@ ms.locfileid: "65535261"
 
 ## <a name="overview-of-the-sample"></a>示例概述
 
-技术支持提供的用户友好的体验，可将最终用户连接与支持专业人员。 快速查找最重要问题的答案，跟踪开放票证的进度，并查看以前的请求的详细信息。 要拥有此应用，需完成少量设置。
+技术支持提供了一个用户友好的体验，可让最终用户与支持专业人员联系。 快速找到最重要问题的答案、跟踪公开票证的进度，并查看以前请求的详细信息。 要拥有此应用，需完成少量设置。
 
 ![技术支持 PowerApp 的打开屏幕](./media/help-desk-install/Login-screen.png)
 
@@ -47,7 +47,7 @@ ms.locfileid: "65535261"
 
 此列表存储技术支持票证。
 
-1. 打开 Web 浏览器并导航到 [https://portal.office.com](https://admin.microsoft.com) 。
+1. 打开 Web 浏览器并导航到 [https://portal.office.com](https://admin.microsoft.com ) 。
 2. 用具有创建 SharePoint 列表权限的帐户登录。
 3. 导航到要在其中存放技术支持列表的站点集合。
 4. 单击网页右上角的齿轮图标。
@@ -100,7 +100,7 @@ ms.locfileid: "65535261"
 3. 在“此列中的信息类型为”单选按钮列表中，选择“选项”。
 4. 在“在单独行上输入每个选项”文本框中，输入以下值，每个值单独占一行： 
     - 高
-    - 中等
+    - MEDIUM
     - 低
 5. 在“强制使用唯一值”单选按钮列表中，选择“否”。
 6. 在“选项显示方式”单选按钮列表中，选择“下拉菜单”。
@@ -138,7 +138,7 @@ ms.locfileid: "65535261"
 2. 在“要求此列包含信息”单选按钮列表中，选择“否”。
 3. 单击“确定”。
 
-## <a name="download-the-app"></a>下载应用
+## <a name="download-the-app"></a>下载应用程序
 
 1.  [下载](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) PowerApps 包并将其保存到计算机。
 
@@ -174,7 +174,7 @@ ms.locfileid: "65535261"
 
 ## <a name="import-the-app"></a>导入应用
 
-1. 在 Web 浏览器中，导航到 [https://web.powerapps.com](https://web.powerapps.com)。
+1. 在 Web 浏览器中，导航到 [https://web.powerapps.com](https://web.powerapps.com )。
 2. 使用注册所用的同一凭据登录。
 3. 在左侧菜单中，选择“应用”。 
 4. 单击“导入包(预览)”。
@@ -217,7 +217,7 @@ ms.locfileid: "65535261"
 ### <a name="delete-connections"></a>删除连接
 
 1. 在“视图”选项卡上，选择“数据源”。
-1. 在**数据**窗格中，选择省略号 （...） 下一步**支持人员**，然后选择**删除**。
+1. 在 "**数据**" 窗格中，选择 "**支持人员**" 旁边的省略号（...），然后选择 "**删除**"。
 
 ### <a name="helpdesk-list"></a>技术支持列表
 
@@ -228,8 +228,8 @@ ms.locfileid: "65535261"
     > [!TIP] 
     > 如果列表中未出现该站点，在文本框中键入或粘贴 SharePoint 站点的 URL，然后选择“转到”。
 
-1. 在中**搜索**框顶部的列表中，键入或粘贴**支持人员**。
-1. 选中的复选框旁边**支持人员**，然后选择**Connect**。
+1. 在列表顶部的 "**搜索**" 框中，键入或粘贴 "**支持人员**"。
+1. 选择 "**支持人员**" 旁边的复选框，然后选择 "**连接**"。
 
 ### <a name="update-admin-list"></a>更新管理员列表
 
@@ -241,7 +241,7 @@ ms.locfileid: "65535261"
     ![更新管理员列表](./media/help-desk-install/Change-admin.png)
     
    > [!TIP]
-   > 如果有多个管理员，使用逗号来分隔管理员列表。 示例："admin1@microsoft.com","admin2@microsoft.com"。
+   > 如果有多个管理员，请使用逗号分隔管理员列表。 示例："admin1@microsoft.com","admin2@microsoft.com"。
    > 为了确保 AdminList 中的地址与 PowerApps 要求的格式匹配，请选择“视图”>“变量”>“全局”>“MyProfile”，并查看“电子邮件”列，检查要求的电子邮件格式。
 
 1. 选择“文件” > “保存” > “发布” > “发布此版本”。
@@ -251,7 +251,7 @@ ms.locfileid: "65535261"
 1.  在左侧菜单中，单击“流”。
 2.  如果提示登录，请使用注册所用的同一凭据登录。
 3.  从顶部菜单选择“我的流”。
-4.  下一步**技术支持**流，单击铅笔图标。 
+4.  单击 " **HelpDeskFlow** Flow" 旁边的铅笔图标。 
  
     ![“编辑流”屏幕](./media/help-desk-install/edit-flow.png)
 
@@ -275,7 +275,7 @@ ms.locfileid: "65535261"
 ## <a name="play-the-app"></a>播放应用
 
 1. 在 Web 浏览器中，单击“应用”。
-2. 单击技术支持应用程序旁边的省略号 （...）。
+2. 单击 "技术支持" 应用旁边的省略号（...）。
 3. 单击“打开”。 
 
 > [!TIP]

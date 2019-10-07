@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c1f11be30f56859ede0950feebc27dd1be39d011
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 3914c55bf3be5d172bc80832e437c3e3775a1859
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551183"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985085"
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-powerapps"></a>PowerApps 中的 DateValue、TimeValue 和 DateTimeValue 函数
 将字符串类型的日期和/或时间转换为日期/时间值。
@@ -55,14 +55,14 @@ ms.locfileid: "61551183"
 
 ## <a name="examples"></a>示例
 ### <a name="datevalue"></a>DateValue
-如果在“Startdate”  文本输入控件中键入了“10/11/2014”  ，然后将标签的“[Text](../controls/properties-core.md)”  属性设置为以下函数：
+如果在“Startdate”文本输入控件中键入了“10/11/2014”，然后将标签的“[Text](../controls/properties-core.md)”属性设置为以下函数：
 
 * **Text(DateValue(Startdate.Text), DateTimeFormat.LongDate)**
   
     如果你的计算机区域设置为 **en**，这个标签就会显示 **Saturday, October 11, 2014**。
   
     > [!NOTE]
-  > 可以将多个选项（LongDateTime  除外）与 DateTimeFormat  参数结合使用。 要显示这些选项的列表，请在函数框中输入该参数，然后输入一个感叹号。
+  > 可以将多个选项（LongDateTime 除外）与 DateTimeFormat 参数结合使用。 要显示这些选项的列表，请在函数框中输入该参数，然后输入一个感叹号。
 * **Text(DateValue(Startdate.Text, "fr"), DateTimeFormat.LongDate)**
   
     这个标签会显示 **Monday, November 10, 2014**。
@@ -74,14 +74,14 @@ ms.locfileid: "61551183"
     如果你的计算机的语言设置为 **en**，这个标签会显示 **9**，表示 10 月 11 日到 10 月 20 日之间间隔的天数。 **[DateDiff](function-dateadd-datediff.md)** 函数还可以显示月份、季度或年份之间的差值。
 
 ### <a name="datetimevalue"></a>DateTimeValue
-如果在“Start”  文本输入控件中键入了“10/11/2014 1:50:24.765 PM”  ，然后将标签的“[Text](../controls/properties-core.md)”  属性设置为以下函数：
+如果在“Start”文本输入控件中键入了“10/11/2014 1:50:24.765 PM”，然后将标签的“[Text](../controls/properties-core.md)”属性设置为以下函数：
 
 * **Text(DateTimeValue(Start.Text), DateTimeFormat.LongDateTime)**
   
     如果你的计算机的区域设置为“en”，这个标签会显示 **Saturday, October 11, 2014 1:50:24 PM**。
   
     > [!NOTE]
-  > 可以将多个选项（LongDateTime  除外）与 DateTimeFormat  参数结合使用。 要显示这些选项的列表，请在函数框中输入该参数，然后输入一个感叹号。
+  > 可以将多个选项（LongDateTime 除外）与 DateTimeFormat 参数结合使用。 要显示这些选项的列表，请在函数框中输入该参数，然后输入一个感叹号。
 * **Text(DateTimeValue(Start.Text, "fr"), DateTimeFormat.LongDateTime)**
   
     这个标签会显示 **Monday, November 10, 2014 1:50:24 PM**。
@@ -92,7 +92,7 @@ ms.locfileid: "61551183"
     还有一种方法是指定 **hh:mm:ss.f** 或 **hh:mm:ss.ff** 以将时间取整为秒的最接近 10 倍或 100 倍值。
 
 ### <a name="timevalue"></a>TimeValue
-将文本输入控件命名为“FinishedAt”  ，然后将标签的“[Text](../controls/properties-core.md)”  属性设置为以下函数：
+将文本输入控件命名为“FinishedAt”，然后将标签的“[Text](../controls/properties-core.md)”属性设置为以下函数：
 
 **If(TimeValue(FinishedAt.Text)<TimeValue("5:00:00.000 PM"), "You made it!", "Too late!")**
 

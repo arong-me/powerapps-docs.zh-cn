@@ -6,21 +6,21 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 07/24/2017
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 284e9dfca0dff9a3bb92c2f5b073cfbe962ce5e9
-ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.openlocfilehash: e96c7bda3740143339130d3e56a04703aae5fc7c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66216000"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71990234"
 ---
-# <a name="operators-in-powerapps"></a>在 PowerApps 中的运算符
+# <a name="operators-in-powerapps"></a>PowerApps 中的运算符
 
 其中的某些运算符依赖于作者的语言。  有关详细信息，请参阅[全局应用](../global-apps.md)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "66216000"
 |                               符号                                |                        类型                         |                                                                                    语法                                                                                    |                                                                                                                           描述                                                                                                                            |
 |---------------------------------------------------------------------|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                **.**                                |                  属性选择器                  |                                                               **Slider1.Value<br>Color.Red<br>Acceleration.X**                                                               |                                               从[表](../working-with-tables.md)、控件、[信号](signals.md) 或枚举中提取属性。  对于向后兼容性， **!** 也可以使用。                                                |
-| **.**<br>[[language dependent](../global-apps.md)]  |                  小数分隔符                  |                                                             **1.23**                                                           |                                                                              整数和小数之间的分隔符。 字符取决于语言。                                                                              |
+| **.**<br>[[依赖语言](../global-apps.md)]  |                  小数分隔符                  |                                                             **1.23**                                                           |                                                                              整数和小数之间的分隔符。 字符取决于语言。                                                                              |
 |                               **( )**                               |                     括号                     |                                                               **Filter(T, A &lt; 10)**<br><br>**(1 + 2) \* 3**                                                               |                                                                                           强制执行优先顺序和较大表达式中的组子表达式                                                                                           |
 |                                **+**                                |                算数运算符                 |                                                                                  **1 + 2**                                                                                   |                                                                                                                             加法                                                                                                                             |
 |                                **-**                                |                       &nbsp;                        |                                                                                  **2 - 1**                                                                                   |                                                                                                                       减法和减号                                                                                                                       |
@@ -52,8 +52,8 @@ ms.locfileid: "66216000"
 |                               **in**                                |                       &nbsp;                        |                                                      **&quot;The&quot; in &quot;The keyboard and the monitor...&quot;**                                                      |                                                                                                                子字符串测试（不区分大小写）                                                                                                                 |
 |                                **@**                                | [消除歧义运算符](#disambiguation-operator) |                                                                           **MyTable[@fieldname]**                                                                            |                                                                                                                       字段消除歧义                                                                                                                       |
 |                                **@**                                |                       &nbsp;                        |                                                                              **[@MyVariable]**                                                                               |                                                                                                                      全局消除歧义                                                                                                                       |
-| **,**<br>[[language dependent](../global-apps.md)]  |                   列表分隔符                    | **If( X < 10, "Low", "Good" )**<br>**{X:12，Y:32 }**<br>**[ 1, 2, 3 ]** | 分隔： <ul><li>函数调用中的参数</li><li>[记录](../working-with-tables.md#elements-of-a-table)中的字段</li><li>在中记录[表](../working-with-tables.md#inline-value-tables)</li></ul> 此字符取决于的语言。 |
-| **;**<br>[[language dependent](../global-apps.md)] |                  公式链接                   |                                     **Collect(T, A); Navigate(S1, &quot;&quot;)**                                     |                                                                          在行为属性中分隔函数的调用。 链接运算符取决于的语言。                                                                          |
+| **,**<br>[[依赖语言](../global-apps.md)]  |                   列表分隔符                    | **If( X < 10, "Low", "Good" )**<br>**{X：12，Y：32}**<br>**[ 1, 2, 3 ]** | 分隔： <ul><li>函数调用中的参数</li><li>[记录](../working-with-tables.md#elements-of-a-table)中的字段</li><li>[表](../working-with-tables.md#inline-value-tables)中的记录</li></ul> 此字符取决于语言。 |
+| **;**<br>[[依赖语言](../global-apps.md)] |                  公式链接                   |                                     **Collect(T, A); Navigate(S1, &quot;&quot;)**                                     |                                                                          在行为属性中分隔函数的调用。 链接运算符依赖于语言。                                                                          |
 |                             **Parent**                              |         [Parent 运算符](#parent-operator)         |                                                                               **Parent.Fill**                                                                                |                                                                                                           控件容器属性的访问权限                                                                                                            |
 |                            **ThisItem**                             |       [ThisItem 运算符](#thisitem-operator)       |                                                                            **ThisItem.FirstName**                                                                            |                                                                                                          库或窗体控件字段的访问权限                                                                                                           |
 
@@ -71,18 +71,18 @@ ms.locfileid: "66216000"
     库仅显示 Europa，因为只有它的名称中包含你所指定的字母。
 
 ## <a name="thisitem-operator"></a>ThisItem 运算符
-通过将数据绑定到表或集合，可以在 **[库](../controls/control-gallery.md)**、 **[编辑窗体](../controls/control-form-detail.md)** 或 **[显示窗体](../controls/control-form-detail.md)** 控件中显示数据。  这些控件是其他卡和控件的容器。  容器内的每个卡或控件均能通过 **[ThisItem](operators.md#thisitem-operator)** 运算符访问绑定的数据。   
+通过将数据绑定到表或集合，可以在 **[库](../controls/control-gallery.md)** 、 **[编辑窗体](../controls/control-form-detail.md)** 或 **[显示窗体](../controls/control-form-detail.md)** 控件中显示数据。  这些控件是其他卡和控件的容器。  容器内的每个卡或控件均能通过 **[ThisItem](operators.md#thisitem-operator)** 运算符访问绑定的数据。   
 
 使用 **[ThisItem](operators.md#thisitem-operator)** 运算符指定外部控件内的每个卡或控件的数据的[列](../working-with-tables.md#columns)。 例如，[在库中显示图像和文本](../show-images-text-gallery-sort-filter.md)的产品库中的运算符指定图像控件显示产品设计、上部标签显示产品名称，而下部标签显示库存单位数。
 
-对于嵌套库，**[ThisItem](operators.md#thisitem-operator)** 指的是最里面的库的项。 假定内部和外部库的行字段不冲突，还可以直接使用未限定的字段（列）名称。 此方法启用内部库中的规则，以引用外部库的项。
+对于嵌套库， **[ThisItem](operators.md#thisitem-operator)** 指的是最里面的库的项。 假定内部和外部库的行字段不冲突，还可以直接使用未限定的字段（列）名称。 此方法启用内部库中的规则，以引用外部库的项。
 
 ## <a name="parent-operator"></a>Parent 运算符
-某些控件托管其他控件。 例如， **[屏幕](../controls/control-screen.md)**、 **[库](../controls/control-gallery.md)**、 **[卡](../controls/control-card.md)**、 **[编辑窗体](../controls/control-form-detail.md)** 和 **[显示窗体](../controls/control-form-detail.md)** 控件都是控件的容器。 我们将托管控件称为控件内部的“父级”。
+某些控件托管其他控件。 例如， **[屏幕](../controls/control-screen.md)** 、 **[库](../controls/control-gallery.md)** 、 **[卡](../controls/control-card.md)** 、 **[编辑窗体](../controls/control-form-detail.md)** 和 **[显示窗体](../controls/control-form-detail.md)** 控件都是控件的容器。 我们将托管控件称为控件内部的“父级”。
 
 PowerApps 中的任何控件都可由应用内任何位置的名称引用。 **Screen1** 可能是应用中屏幕的名称。 若要检索此屏幕的背景色，可以使用 **Screen1.Fill**。
 
-此屏幕上的控件具有其他选项。 它们可以使用相对引用：**Parent.Fill**。 **[Parent](operators.md#parent-operator)** 运算符指的是托管此控件，并使其所有属性可用的控件。 **[Parent](operators.md#parent-operator)** 非常有用，因为它不依赖于控件的名称。 可以复制并粘贴容器控件，无需调整容器内的任何引用。 在读取公式时，此运算符还使子控件和父控件之间的关系更为明确。
+此屏幕上的控件具有其他选项。 它们可以使用相对引用：**Parent。填充**。 **[Parent](operators.md#parent-operator)** 运算符指的是托管此控件，并使其所有属性可用的控件。 **[Parent](operators.md#parent-operator)** 非常有用，因为它不依赖于控件的名称。 可以复制并粘贴容器控件，无需调整容器内的任何引用。 在读取公式时，此运算符还使子控件和父控件之间的关系更为明确。
 
 ## <a name="disambiguation-operator"></a>消除歧义运算符
 某些函数创建[记录作用域](../working-with-tables.md#record-scope)，从而在处理每个记录时访问表的字段，例如 **Filter**、**AddColumns** 和 **Sum**。  使用记录作用域添加的字段名称将替代应用中来自其他位置的同一名称。  在此情况下，仍可以使用 **@** 消除歧义运算符访问来自记录作用域外部的值：

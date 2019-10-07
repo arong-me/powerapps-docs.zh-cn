@@ -6,29 +6,29 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/06/2018
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 15f3f38dd4812ffcbebeeaab4d301f715c97e1d1
-ms.sourcegitcommit: be110258910aa097b0065da1ee4ea1c40b7e1334
+ms.openlocfilehash: 2ce09240aa30c1f98926fb109a57f63c230e8d4b
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65922531"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987635"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>在 PowerApps 中向画布应用添加数据连接
 
-在 PowerApps 中，向现有画布应用或从头开始生成的应用添加数据连接。 您的应用程序可以连接到 SharePoint、 Common Data Service、 Salesforce、 OneDrive 或[许多其他数据源](connections-list.md)。
+在 PowerApps 中，向现有画布应用或从头开始生成的应用添加数据连接。 您的应用程序可以连接到 SharePoint、Common Data Service、Salesforce、OneDrive 或[许多其他数据源](connections-list.md)。
 
 阅读完本文的[后续步骤](#next-steps)是，在应用中显示和管理相应数据源中的数据，如下面这些示例所述：
 
 * 连接到 OneDrive，并在应用中管理 Excel 工作簿中的数据。
 * 连接到 Twilio，并从应用发送短信。
-* 连接到 Common Data Service，并更新您的应用程序中的实体。
+* 连接到 Common Data Service，并更新应用程序中的实体。
 * 连接 SQL Server，然后通过应用更新表。
 
 ## <a name="prerequisites"></a>先决条件
@@ -37,52 +37,52 @@ ms.locfileid: "65922531"
 
 ## <a name="open-a-blank-app"></a>打开一个空白应用
 
-1. 上**主页**选项卡上，选择**从空白画布应用**。
+1. 在 "**主**文件夹" 选项卡上，**从空白选择画布应用**。
 
-1. 指定您的应用程序的名称，然后选择**创建**。
+1. 指定应用的名称，然后选择 "**创建**"。
 
 1. 如果出现“欢迎使用 PowerApps Studio”对话框，则单击“跳过”。
 
 ## <a name="add-data-source"></a>添加数据源
 
-1. 在中心窗格中，选择**连接到数据**以打开**数据**窗格。
+1. 在中心窗格中，选择 "**连接到数据**" 以打开 "**数据**" 窗格。
 
-    如果这是对现有应用程序和屏幕已包含一个控件，请选择**视图** > **数据源**打开同一窗格。
+    如果这是现有应用，并且该屏幕已包含控件，请选择 "**查看** > **数据源**" 以打开相同窗格。
 
-1. 选择**添加数据源**。
+1. 选择 "**添加数据源**"。
 
-1. 如果连接列表中包含所需的那个，选择它以将其添加到应用程序。 否则，请跳到下一步。
+1. 如果连接列表包含所需的连接列表，请选择它以将其添加到应用中。 否则，请跳到下一步。
 
     ![选择现有连接](./media/add-data-connection/choose-existing-connection.png)
 
-1. 选择**新的连接**以显示连接的列表。
+1. 选择 "**新建连接**" 以显示连接列表。
 
     ![添加连接](./media/add-data-connection/add-connection.png)
 
-1. 在搜索栏中，键入或粘贴所需的连接的第几个字母，然后它出现时选择的连接。
+1. 在搜索栏中，键入或粘贴所需的连接的前几个字母，然后在出现连接时选择连接。
 
     ![搜索连接](./media/add-data-connection/search-connections.png)
 
 1. 选择“创建”，创建连接并将其添加到应用中。
 
-    某些连接器（如 Office 365 Outlook）不需要执行额外步骤即可立即从中显示数据。 其他连接器将提示你提供凭据，指定一组特定的数据或执行其他步骤。 例如，[SharePoint](connections/connection-sharepoint-online.md) 和 [SQL Server](connections/connection-azure-sqldatabase.md) 需要在使用之前提供其他信息。 与[Common Data Service](connections/connection-common-data-service.md)之前选择一个实体,，可以更改环境。
+    某些连接器（如 Office 365 Outlook）不需要执行额外步骤即可立即从中显示数据。 其他连接器将提示你提供凭据，指定一组特定的数据或执行其他步骤。 例如，[SharePoint](connections/connection-sharepoint-online.md) 和 [SQL Server](connections/connection-azure-sqldatabase.md) 需要在使用之前提供其他信息。 使用[Common Data Service](connections/connection-common-data-service.md)，可以在选择实体之前更改环境。
 
 ## <a name="identify-or-change-a-data-source"></a>标识或更改数据源
-如果正在更新应用，则可能需要确定或更改库、窗体或其他控件中显示的数据源。 例如，您可能需要以标识为你更新应用程序其他人创建或很久以前创建的数据源。
+如果正在更新应用，则可能需要确定或更改库、窗体或其他控件中显示的数据源。 例如，你可能需要在更新其他人创建的应用或在以前创建的应用时标识数据源。
 
-1. 选择的控件，例如库，你想要确定或更改数据源。
+1. 选择要为其标识或更改数据源的控件，如库。
 
     数据源的名称在右侧窗格的“属性”选项卡上显示。
 
-    ![标识某个连接](./media/add-data-connection/identify-connection.png)
+    ![标识连接](./media/add-data-connection/identify-connection.png)
 
-1. 若要显示有关数据源的详细信息或对其进行更改，选择其名称旁边的向下箭头。
+1. 若要显示有关数据源或更改数据源的详细信息，请选择其名称旁边的向下箭头。
 
-    将显示有关当前的数据源的详细信息，并可以选择或创建另一个源。
+    此时会显示有关当前数据源的详细信息，您可以选择或创建另一个源。
 
     ![更改连接](./media/add-data-connection/change-connection.png)
 
 ## <a name="next-steps"></a>后续步骤
 
-* 若要显示和更新 Excel、 SharePoint、 Common Data Service 或 SQL Server 等源中的数据[添加一个库](add-gallery.md)，并[添加一个窗体](add-form.md)。
+* 若要显示和更新源（如 Excel、SharePoint、Common Data Service 或 SQL Server）中的数据，请[添加一个库](add-gallery.md)并[添加一个窗体](add-form.md)。
 * 对于其他源中的数据，请使用连接器特定的函数，例如，适用于 [Office 365 Outlook](connections/connection-office365-outlook.md)、[Twitter](connections/connection-twitter.md) 和 [Microsoft Translator](connections/connection-microsoft-translator.md) 的函数。

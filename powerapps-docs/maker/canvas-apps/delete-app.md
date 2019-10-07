@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/16/2016
 ms.author: litran
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c683ed3f67e05d08038815b518de8e6ccf85bc71
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.openlocfilehash: afc0e231fbc645b0fd1c597ae2776b7b90d28c1b
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71705360"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993118"
 ---
 # <a name="delete-a-canvas-app-from-powerapps"></a>从 PowerApps 中删除画布应用
 本文演示如何从 PowerApps 帐户及任何与应用共享的人的帐户中删除画布应用。

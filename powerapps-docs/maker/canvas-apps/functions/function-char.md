@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 03/01/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1b598cc863ec01bcb2a66a9510cb48ec5203e679
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 099afb1e89d1551c6c6b969c3ae3688a3cdec777
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61559638"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992943"
 ---
 # <a name="char-function-in-powerapps"></a>PowerApps 中的 Char 函数
 
@@ -26,7 +26,7 @@ ms.locfileid: "61559638"
 
 ## <a name="description"></a>描述
 
-**Char**函数会将数字转换为具有相应的 ASCII 字符的字符串。
+**Char**函数使用对应的 ASCII 字符将数字转换为字符串。
 
 ## <a name="syntax"></a>语法
 
@@ -38,51 +38,51 @@ ms.locfileid: "61559638"
 
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
-| **Char( 65 )** |返回 ASCII 代码 65 对应的字符。 |"A" |
-| **Char( 105 )** |返回 ASCII 代码 105 对应的字符。 |"i" |
+| **Char( 65 )** |返回 ASCII 代码 65 对应的字符。 |的 |
+| **Char( 105 )** |返回 ASCII 代码 105 对应的字符。 |看到 |
 | **Char( 35 )** |返回 ASCII 代码 35 对应的字符。 |"#" |
 
 ### <a name="display-a-character-map"></a>显示字符映射表
 
-1. 在平板电脑应用中的空屏幕上，添加[**库**](../controls/control-gallery.md)与控制**空白水平**布局，然后设置这些属性：
+1. 在 tablet 应用中的空屏幕上，添加一个具有**空白水平**布局的[**库**](../controls/control-gallery.md)控件，然后设置以下属性：
 
-    - **项**: `[0,1,2,3,4,5,6,7]`
-    - **宽度**:800
-    - **高度**:500
-    - **TemplateSize**:100
-    - **TemplatePadding**:0
+    - **项**： `[0,1,2,3,4,5,6,7]`
+    - **宽度**：800
+    - **高度**：500
+    - **TemplateSize**：100
+    - **TemplatePadding**：0
 
-1. 在该库中，添加**库**控件替换**空白垂直**布局，然后设置这些属性：
+1. 在该库中，添加一个具有**空白垂直**布局的**库**控件，然后设置以下属性：
 
-    - **项**: `ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 )`
-    - **宽度**:100
-    - **高度**:500
-    - **TemplateSize**:30
-    - **TemplatePadding**:0
+    - **项**： `ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 )`
+    - **宽度**：100
+    - **高度**：500
+    - **TemplateSize**：30
+    - **TemplatePadding**：0
 
-    值**项**属性将提供的值列的列数为 16 相乘**项**从第一个库的属性 (0-7 `ThisItem.Value`)。 该公式从第二个库中然后将结果添加到一个行号 (0 至 15 中记录作用域[ **ForAll** ](function-forall.md)函数提供了)。
+    **Items**属性的值与第一个库中**Items**属性的 value 列所提供的列号（`ThisItem.Value` 中的0-7）相乘。 然后，该公式将结果添加到第二个库中的行号之一（0-15 在[**ForAll**](function-forall.md)函数提供的记录范围内）。
 
-1. 在第二个 （垂直） 库中，添加**标签**控件，并设置这些属性：
+1. 在第二个（垂直）库中，添加 "**标签**" 控件，并设置以下属性：
 
-    - **文本**: `ThisItem.Value`
-    - **宽度**:50
+    - **文本**： `ThisItem.Value`
+    - **宽度**：50
 
-1. 在第二个 （垂直） 库中，添加另一个**标签**控件，并设置这些属性：
+1. 在第二个（垂直）库中，添加另一个 "**标签**" 控件，并设置以下属性：
 
-    - **文本**: `Char( ThisItem.Value )`
-    - **宽度**:50
-    - **X**:50
+    - **文本**： `Char( ThisItem.Value )`
+    - **宽度**：50
+    - **X**：50
 
-你已创建的前 128 个 ASCII 字符的图表。 显示为不能打印的小正方形的字符。
+您已经创建了一个图表，其中的前128个 ASCII 字符。 不能打印以小正方形显示的字符。
 
-![第一次 128 个 ASCII 字符](media/function-char/chart-lower.png)
+![前128个 ASCII 字符](media/function-char/chart-lower.png)
 
-若要显示扩展的 ASCII 字符，将**项**的第二个库为此公式，将 128 添加到每个字符值的属性：
+若要显示扩展的 ASCII 字符，请将第二个库的**Items**属性设置为此公式，这会将128添加到每个字符值：
 
 `ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 + 128)`
 
 ![扩展的 ASCII 字符](media/function-char/chart-higher.png)
 
-若要在不同的字体显示字符，请设置**字体**属性的值，如到第二个标签**跳舞脚本**。
+若要以不同的字体显示字符，请将第二个标签的 "**字体**" 属性设置为 **"跳舞 Script"** 之类的值。
 
 ![跳舞脚本](media/function-char/chart-higher-dancing-script.png)

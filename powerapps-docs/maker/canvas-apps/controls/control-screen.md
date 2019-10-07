@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/14/2019
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dceb9eee8eb5a0ed11a4b44fb2df6d63ba5e9cae
-ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
+ms.openlocfilehash: 1b9f819ab7e047b68e60b9c78e6f7f000502abb8
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71038238"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993316"
 ---
 # <a name="screen-control-in-powerapps"></a>PowerApps 中的屏幕控件
 
@@ -66,7 +66,7 @@ OnVisible – 应用在用户转到屏幕时的行为。  使用此属性设置�
 
 1. 将默认“屏幕”控件命名为“Source”，添加另一个“屏幕”控件，将其命名为“Target”。
 
-1. 在中**源**，添加 **[形状](control-shapes-icons.md)** 控件 （例如箭头），并设置其 **[OnSelect](properties-core.md)** 属性此公式：
+1. 在 "**源**" 中，添加 **[形状](control-shapes-icons.md)** 控件（例如箭头），并将其 **[OnSelect](properties-core.md)** 属性设置为以下公式：
 
     `Navigate(Target, ScreenTransition.Fade)`
 
@@ -80,13 +80,13 @@ OnVisible – 应用在用户转到屏幕时的行为。  使用此属性设置�
 
     `If("Red" in ScreenFills.Selected.Value, RGBA(255, 0, 0, 1), RGBA(54, 176, 75, 1))`
 
-1. 选择**源**屏幕上，然后在按住 Alt 键，同时选择中的任一选项 **[单选](control-radio.md)** 控件，并选择 **[形状](control-shapes-icons.md)** 控件。
+1. 选择**源**屏幕，然后在按住 Alt 键的同时选择 **[单选](control-radio.md)** 控件中的任一选项，然后选择 **[形状](control-shapes-icons.md)** 控件。
 
     **目标**显示为您选择的颜色。
 
-1. 在中**目标**，选择 **[形状](control-shapes-icons.md)** 控件以返回**源**。
+1. 在 "**目标**" 中，选择要返回到**源**的 **[形状](control-shapes-icons.md)** 控件。
 
-1. （可选）选择中的其他选项 **[单选](control-radio.md)** 控制，并选择 **[形状](control-shapes-icons.md)** 控件以确认**目标**将出现在另一种颜色。
+1. 可有可无选择 " **[收音机](control-radio.md)** " 控件中的 "其他" 选项，然后选择 **[形状](control-shapes-icons.md)** 控件以确认**目标**以其他颜色显示。
 
 1. 可有可无通过将鼠标悬停在左侧导航栏中的 "**目标**" 上方，选择显示的省略号，然后选择 "**上移**"，对屏幕重新排序。
 

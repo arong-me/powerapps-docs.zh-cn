@@ -6,21 +6,21 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d909b41dd61fca079fc409b51373af0789a3db84
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: f62aa84867a3aa4eae582b3fde320e84becdeeff
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548699"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986300"
 ---
-# <a name="label-control-in-canvas-apps"></a>中的标签控件画布应用
+# <a name="label-control-in-canvas-apps"></a>画布应用中的标签控件
 
 一个框，显示文本、数字、日期或货币等数据。
 
@@ -30,7 +30,7 @@ ms.locfileid: "61548699"
 
 ## <a name="key-properties"></a>关键属性
 
-**[AutoHeight](properties-core.md)** -设置为 true，则标签会自动增长的高度，以显示所有文本。 设置为“false”将文本截断至分配的高度。
+**[AutoHeight](properties-core.md)** -设置为 true 以允许标签自动增长其高度以显示所有文本。 设置为“false”将文本截断至分配的高度。
 
 **[Color](properties-color-border.md)** – 控件中文本的颜色。
 
@@ -58,7 +58,7 @@ ms.locfileid: "61548699"
 
 **[DisabledColor](properties-color-border.md)** – 控件的 **[DisplayMode](properties-core.md)** 属性设置为 Disabled**Disabled** 时，该控件中的文本颜色。
 
-**[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode”**[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
+**[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode” **[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
 
 **[Fill](properties-color-border.md)** – 控件的背景色。
 
@@ -66,7 +66,7 @@ ms.locfileid: "61548699"
 
 **[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
 
-**[FontWeight](properties-text.md)**  – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。
+**[FontWeight](properties-text.md)** -控件中的文本权重：**粗体**、 **Semibold**、 **Normal**或**浅**。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -80,11 +80,11 @@ ms.locfileid: "61548699"
 
 **[LineHeight](properties-text.md)** – 诸如文本行之间或列表中各项之间的距离。
 
-**[Live](properties-accessibility.md)**  – 屏幕阅读器公布更改的标签的值的方式**文本**属性。
+**[Live](properties-accessibility.md)** –屏幕阅读器如何公布对标签的 " **Text** " 属性值的更改。
 
-* 如果设置为**关闭**，屏幕读取器不会公布的更改。
-* 如果设置为**礼貌**，屏幕读取器完成之前宣布推出时屏幕读取器已谈到出现的任何更改。
-* 如果设置为**Assertive**，屏幕阅读器会中断本身地宣布已谈到屏幕读取器时出现的任何更改。
+* 当设置为**Off**时，屏幕阅读器不会公告更改。
+* 当设置为 "**礼貌**" 时，屏幕阅读器会在通知屏幕阅读器说话时出现的任何更改前完成。
+* 设置为 "**主动**" 时，屏幕阅读器会自行中断，以通知屏幕阅读器说话时所发生的任何更改。
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 
@@ -104,7 +104,7 @@ ms.locfileid: "61548699"
 
 **[PressedFill](properties-color-border.md)** – 用户在点击或单击控件时，该控件的背景色。
 
-**角色**的标签文本，如标题 1 的语义角色。 不会更改标签的样式，但可使输出在语义上是正确的解释由屏幕读取器。
+**Role** -标签文本的语义角色，如 "标题 1"。 不会更改标签的样式，但会使输出在语义上正确，以便由屏幕阅读器进行解释。
 
 **[Size](properties-text.md)** – 控件上显示的文本的字号。
 
@@ -178,7 +178,7 @@ ms.locfileid: "61548699"
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
 
 * **[“Text”](properties-core.md)** 必须存在。
-* **[Live](properties-accessibility.md)** 应设置为**礼貌**或**Assertive**屏幕读取器应宣布更改的值**文本**属性。
+* 如果屏幕阅读器应公告对**Text**属性的值所做的更改，则 **[Live](properties-accessibility.md)** 应设置为**礼貌**或**主动**。
 
   > [!NOTE]
   > 当 **[“TabIndex”](properties-accessibility.md)** 为零或更大，屏幕阅读器会将“标签”视为按钮。
@@ -191,5 +191,5 @@ ms.locfileid: "61548699"
 
 ### <a name="keyboard-support"></a>键盘支持
 
-* 如果文本用作按钮或链接，**[“TabIndex”](properties-accessibility.md)** 必须为零或更大。 这允许键盘用户导航到它。
-* 如果文本用作按钮或链接，焦点指示器必须清楚显示。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness](properties-color-border.md)**”来实现此目的。
+* 如果文本用作按钮或链接， **[“TabIndex”](properties-accessibility.md)** 必须为零或更大。 这允许键盘用户导航到它。
+* 如果文本用作按钮或链接，焦点指示器必须清楚显示。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness](properties-color-border.md)** ”来实现此目的。

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 72e1bd234a9cbccc24cf35723ee10bacd175b278
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 413f07bcca9d238ab1a6f6b020f1d1436f2ca737
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61563710"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984560"
 ---
 # <a name="lower-upper-and-proper-functions-in-powerapps"></a>PowerApps 中的 Lower、Upper 和 Proper 函数
 将文本字符串中的字母转换为全部小写、全部大写或首字母大写。
@@ -45,7 +45,7 @@ ms.locfileid: "61563710"
 
 ## <a name="examples"></a>示例
 ### <a name="single-string"></a>单个字符串
-此部分中的示例使用“Author”  文本输入控件作为[数据源](../working-with-data-sources.md)。 该控件包含字符串“E. E. CummINGS”。
+此部分中的示例使用“Author”文本输入控件作为[数据源](../working-with-data-sources.md)。 该控件包含字符串“E. E. CummINGS”。
 
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
@@ -67,7 +67,7 @@ ms.locfileid: "61563710"
 | **Proper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |将所有单词的小写首字母转换为大写，并将所有其他大写字母转换为小写。 |![](media/function-lower-upper-proper/people-table-proper.png) |
 
 ### <a name="step-by-step-example"></a>分步示例
-1. 添加 **[“文本输入”](../controls/control-text-input.md)** 控件，然后将其命名为“Source”  。
+1. 添加 **[“文本输入”](../controls/control-text-input.md)** 控件，然后将其命名为“Source”。
 2. 添加一个标签，然后将其 **[Text](../controls/properties-core.md)** 属性设置为以下函数：<br>**Proper(Source.Text)**
 3. 按 F5，然后将 **WE ARE THE BEST!** 键入 **Source** 框中。<br>标签会显示 **We Are The Best!**
 

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/23/2017
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e2c90566f235093f25e3a8c35bc1700f2a61b348
-ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
+ms.openlocfilehash: 8108dbc1c78ba57e989f7bebeb8bd0f42f696360
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71037968"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985124"
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-powerapps"></a>PowerApps 中的 DateAdd、DateDiff 和 TimeZoneOffset 函数
 加上或发现日期/时间值的差值，并转换本地时间和 UTC。
@@ -89,7 +89,7 @@ TimeZoneOffset( [ DateTime ] )
 
 例如，假设将 UTC 日期和时间“July 15, 2013, 8:02 PM”存储到名为“StartTime”的变量中。 若要调整用户时区时间，请使用：
 
-* **DateAdd （starttime， &minus;TimeZoneOffset （starttime），分钟）**
+* **DateAdd （StartTime，&minus;TimeZoneOffset （StartTime），分钟）**
 
 请注意，TimeZoneOffset 之前是负号，以减去（而不是加上）时间差。
 

@@ -1,24 +1,24 @@
 ---
 title: 通过 Excel 生成画布应用 | Microsoft Docs
 description: 使用存储在云存储帐户的 Excel 文件，通过 PowerApps 自动生成画布应用
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/14/2019
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7ab85f09ebf88c30b35c963242895cd74ca6a966
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 576e61e6e4ea1aad317fdec8f49f76bfcd1e0b6a
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61554902"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71990271"
 ---
 # <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>使用 Excel 在 PowerApps 中生成画布应用
 
@@ -67,11 +67,11 @@ Excel 文件必须位于云存储帐户（如 OneDrive、GoogleDrive 或 Dropbox
 
 1. 通过键入或粘贴搜索框中的一个或多个字符来筛选列表。
 
-    例如，键入或粘贴**蜜标**以显示仅记录为其字符串出现在产品的名称、 类别或概述。
+    例如，键入或粘贴**蜜标**以显示该字符串出现在产品名称、类别或概述中的唯一记录。
 
     ![筛选器示例](./media/get-started-create-from-data/filter-example.png)
 
-1. 添加一条记录：
+1. 添加记录：
 
     1. 选择加号图标。
 
@@ -83,7 +83,7 @@ Excel 文件必须位于云存储帐户（如 OneDrive、GoogleDrive 或 Dropbox
 
 1. 编辑记录：
 
-    1. 选择你想要编辑的记录的箭头。
+    1. 选择要编辑的记录的箭头。
 
         ![“下一步”箭头](./media/get-started-create-from-data/next-arrow.png)
 
@@ -95,11 +95,11 @@ Excel 文件必须位于云存储帐户（如 OneDrive、GoogleDrive 或 Dropbox
 
         ![保存图标](./media/get-started-create-from-data/save-icon.png)
 
-        或者，选择取消图标以放弃所做的更改。
+        作为替代方法，请选择 "取消" 图标以放弃更改。
 
-1. 删除一条记录：
+1. 删除记录：
 
-    1. 选择你想要删除的记录的下一步箭头。
+    1. 选择要删除的记录的 "下一步" 箭头。
 
         ![“下一步”箭头](./media/get-started-create-from-data/next-arrow.png)
 
@@ -109,7 +109,7 @@ Excel 文件必须位于云存储帐户（如 OneDrive、GoogleDrive 或 Dropbox
 
 ## <a name="next-steps"></a>后续步骤
 
-自定义默认浏览屏幕以更好地满足需求。 例如，可以进行排序和筛选列表依据仅产品名称、 不是类别或概述。
+自定义默认浏览屏幕以更好地满足需求。 例如，你可以按产品名称（而不是类别或概述）对列表进行排序和筛选。
 
 > [!div class="nextstepaction"]
 > [自定义默认浏览屏幕](customize-layout-sharepoint.md)。

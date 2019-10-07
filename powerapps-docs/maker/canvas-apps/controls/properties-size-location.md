@@ -6,30 +6,30 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 040e9e540591e9a8c593dd273bedeabcffb23c90
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 25a2987113f64b34cea9bdc515c8a835e472ed3d
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560355"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985943"
 ---
 # <a name="size-and-location-properties-in-powerapps"></a>PowerApps 中的大小和位置属性
 ## <a name="overview"></a>概述
 配置控件（或控件元素）的大小及其在所在屏幕中的位置。
 
 ## <a name="position"></a>位置
-**X**控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。 对于多列容器中的“[数据卡](control-card.md)”  控件，此属性将确定数据卡出现在哪一列。
+**X**控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。 对于多列容器中的“[数据卡](control-card.md)”控件，此属性将确定数据卡出现在哪一列。
 
 * 适用于 **[添加图片](control-add-picture.md)** 、 **[音频](control-audio-video.md)** 、 **[按钮](control-button.md)** 、 **[照相机](control-camera.md)** 、 **[卡片](control-card.md)** 、 **[复选框](control-check-box.md)** 、 **[柱形图](control-column-line-chart.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[显示窗体](control-form-detail.md)** 、 **[下拉列表](control-drop-down.md)** 、 **[编辑窗体](control-form-detail.md)** 、 **[导出](control-export-import.md)** 、 **[库](control-gallery.md)** 、 **[HTML 文本](control-html-text.md)** 、 **[图标](control-shapes-icons.md)** 、 **[图像](control-image.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[折线图](control-column-line-chart.md)** 、 **[列表框](control-list-box.md)** 、 **[麦克风](control-microphone.md)** 、 **[PDF 查看器](control-pdf-viewer.md)** 、 **[笔输入](control-pen-input.md)** 、 **[饼图](control-pie-chart.md)** 、 **[单选按钮](control-radio.md)** 、 **[评分](control-rating.md)** 、 **[形状](control-shapes-icons.md)** 、 **[滑块](control-slider.md)** 、 **[文本输入](control-text-input.md)** 、 **[计时器](control-timer.md)** 、 **[切换](control-toggle.md)** 和 **[视频](control-audio-video.md)** 控件。
 
-**Y** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。 对于多行容器中的[数据卡](control-card.md)  控件，此属性将确定数据卡出现在哪一行。
+**Y** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。 对于多行容器中的[数据卡](control-card.md)控件，此属性将确定数据卡出现在哪一行。
 
 * 适用于 **[添加图片](control-add-picture.md)** 、 **[音频](control-audio-video.md)** 、 **[按钮](control-button.md)** 、 **[照相机](control-camera.md)** 、 **[卡片](control-card.md)** 、 **[复选框](control-check-box.md)** 、 **[柱形图](control-column-line-chart.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[显示窗体](control-form-detail.md)** 、 **[下拉列表](control-drop-down.md)** 、 **[编辑窗体](control-form-detail.md)** 、 **[导出](control-export-import.md)** 、 **[库](control-gallery.md)** 、 **[HTML 文本](control-html-text.md)** 、 **[图标](control-shapes-icons.md)** 、 **[图像](control-image.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[折线图](control-column-line-chart.md)** 、 **[列表框](control-list-box.md)** 、 **[麦克风](control-microphone.md)** 、 **[PDF 查看器](control-pdf-viewer.md)** 、 **[笔输入](control-pen-input.md)** 、 **[饼图](control-pie-chart.md)** 、 **[单选按钮](control-radio.md)** 、 **[评分](control-rating.md)** 、 **[形状](control-shapes-icons.md)** 、 **[滑块](control-slider.md)** 、 **[文本输入](control-text-input.md)** 、 **[计时器](control-timer.md)** 、 **[切换](control-toggle.md)** 和 **[视频](control-audio-video.md)** 控件。
 
@@ -38,7 +38,7 @@ ms.locfileid: "61560355"
 
 * 适用于 **[添加图片](control-add-picture.md)** 、 **[音频](control-audio-video.md)** 、 **[按钮](control-button.md)** 、 **[照相机](control-camera.md)** 、 **[卡片](control-card.md)** 、 **[复选框](control-check-box.md)** 、 **[柱形图](control-column-line-chart.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[显示窗体](control-form-detail.md)** 、 **[下拉列表](control-drop-down.md)** 、 **[编辑窗体](control-form-detail.md)** 、 **[导出](control-export-import.md)** 、 **[库](control-gallery.md)** 、 **[HTML 文本](control-html-text.md)** 、 **[图标](control-shapes-icons.md)** 、 **[图像](control-image.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[折线图](control-column-line-chart.md)** 、 **[列表框](control-list-box.md)** 、 **[麦克风](control-microphone.md)** 、 **[PDF 查看器](control-pdf-viewer.md)** 、 **[笔输入](control-pen-input.md)** 、 **[饼图](control-pie-chart.md)** 、 **[单选按钮](control-radio.md)** 、 **[评分](control-rating.md)** 、 **[形状](control-shapes-icons.md)** 、 **[滑块](control-slider.md)** 、 **[文本输入](control-text-input.md)** 、 **[计时器](control-timer.md)** 、 **[切换](control-toggle.md)** 和 **[视频](control-audio-video.md)** 控件。
 
-**AutoHeight** - 标签是否会在“[Text](properties-core.md)”  属性包含超过控件可显示的字符数时自动变高。  
+**AutoHeight** - 标签是否会在“[Text](properties-core.md)”属性包含超过控件可显示的字符数时自动变高。  
 
 * 适用于 **[标签](control-text-box.md)**
 
@@ -46,9 +46,9 @@ ms.locfileid: "61560355"
 
 * 适用于 **[添加图片](control-add-picture.md)** 、 **[音频](control-audio-video.md)** 、 **[按钮](control-button.md)** 、 **[照相机](control-camera.md)** 、 **[卡片](control-card.md)** 、 **[复选框](control-check-box.md)** 、 **[柱形图](control-column-line-chart.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[显示窗体](control-form-detail.md)** 、 **[下拉列表](control-drop-down.md)** 、 **[编辑窗体](control-form-detail.md)** 、 **[导出](control-export-import.md)** 、 **[库](control-gallery.md)** 、 **[HTML 文本](control-html-text.md)** 、 **[图标](control-shapes-icons.md)** 、 **[图像](control-image.md)** 、 **[标签](control-text-box.md)** 、 **[导入](control-export-import.md)** 、 **[折线图](control-column-line-chart.md)** 、 **[列表框](control-list-box.md)** 、 **[麦克风](control-microphone.md)** 、 **[PDF 查看器](control-pdf-viewer.md)** 、 **[笔输入](control-pen-input.md)** 、 **[饼图](control-pie-chart.md)** 、 **[单选按钮](control-radio.md)** 、 **[评分](control-rating.md)** 、 **[形状](control-shapes-icons.md)** 、 **[滑块](control-slider.md)** 、 **[文本输入](control-text-input.md)** 、 **[计时器](control-timer.md)** 、 **[切换](control-toggle.md)** 和 **[视频](control-audio-video.md)** 控件。
 
-**WidthFit** - 控件是否会自动水平变宽，以填充容器控件（如“[编辑表单](control-form-detail.md)”  控件）的所有空白空间。 如果多张数据卡将此属性设置为“true”  ，那么空白空间会被这些数据卡均分。 有关详细信息，请参阅[了解数据表单布局](../working-with-form-layout.md)。
+**WidthFit** - 控件是否会自动水平变宽，以填充容器控件（如“[编辑表单](control-form-detail.md)”控件）的所有空白空间。 如果多张数据卡将此属性设置为“true”，那么空白空间会被这些数据卡均分。 有关详细信息，请参阅[了解数据表单布局](../working-with-form-layout.md)。
 
-* 适用于[数据卡](control-card.md) 
+* 适用于[数据卡](control-card.md)
 
 ## <a name="padding"></a>填充
 **Padding** - 导入或导出按钮上的文本和该按钮边缘之间的距离。

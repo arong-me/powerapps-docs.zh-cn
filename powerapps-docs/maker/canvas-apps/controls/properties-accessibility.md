@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 01/26/2017
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e1baf96ab96dc6fe783fccdf243c0ae4ba6d0c1d
-ms.sourcegitcommit: b4df7d781cda50dfe2f6609f1cc4d2b531428b3c
+ms.openlocfilehash: 2c11e05c93d5a505408948178bf3efbd31f2dbf7
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70161252"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986170"
 ---
 # <a name="accessibility-properties-for-canvas-apps"></a>画布应用的辅助功能属性
 
@@ -50,7 +50,7 @@ ms.locfileid: "70161252"
 | TabIndex 值 | 行为 | 默认值 |
 |----------------|----------|-------------|
 | 0 | 控件参与键盘导航。 | [**按钮**](control-button.md)、[**文本输入**](control-text-input.md)、[**组合框**](control-combo-box.md)以及其他通常交互控件。 |
-| &minus;2 | 控件不参与键盘导航。 | [**标签**](control-text-box.md)、[**图像**](control-image.md)、[**图标**](control-shapes-icons.md)和其他通常是非交互式控件。 |
+| &minus;1 | 控件不参与键盘导航。 | [**标签**](control-text-box.md)、[**图像**](control-image.md)、[**图标**](control-shapes-icons.md)和其他通常是非交互式控件。 |
 
 通常，导航顺序从左到右、从上到下、以 "Z" 模式进行。 顺序基于控件的**X**和**Y**属性值。 如果控件在屏幕上动态移动（例如，通过基于计时器或其他控件的**X**或**Y**计算公式），则导航顺序也会动态更改。
 

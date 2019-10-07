@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d99cf1129ae23eda97b79457cb2b93db6a74a5ea
-ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.openlocfilehash: 967d83286cd179177cfbb5558f1fc3484a332875
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66216026"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984609"
 ---
 # <a name="len-function-in-powerapps"></a>PowerApps 中的 Len 函数
 返回文本字符串的长度。
@@ -26,7 +26,7 @@ ms.locfileid: "66216026"
 ## <a name="description"></a>说明
 如果将单个字符串指定为参数，则返回值是数字形式的长度。  如果指定一个包含字符串的单列[表](../working-with-tables.md)，则返回值是一个单列表，其中包含每个字符串的长度。 如果你有多列表，可以将其调整为单列表，如[使用表](../working-with-tables.md)中所述。
 
-如果指定[空白](function-isblank-isempty.md)字符串， **Len**返回 0。
+如果指定[空白](function-isblank-isempty.md)字符串，则**Len**返回0。
 
 ## <a name="syntax"></a>语法
 **Len**( *String* )
@@ -39,7 +39,7 @@ ms.locfileid: "66216026"
 
 ## <a name="examples"></a>示例
 ### <a name="single-string"></a>单个字符串
-对于本部分中的示例，[数据源](../working-with-data-sources.md)是名为“Author”  的文本输入控件，其中包含字符串“E. E. Cummings”。
+对于本部分中的示例，[数据源](../working-with-data-sources.md)是名为“Author”的文本输入控件，其中包含字符串“E. E. Cummings”。
 
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |

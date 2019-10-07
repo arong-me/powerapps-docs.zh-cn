@@ -1,24 +1,24 @@
 ---
 title: 在解决方案中创建画布应用 |Microsoft Docs
 description: 在 PowerApps 中，在解决方案中创建一个画布应用，以便将应用部署到另一个环境
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/23/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3703fc5e36b38c7894300bc2074453716ddd9946
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.openlocfilehash: c908e3d25530b52b103ef58989545e46b931e791
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71705093"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987705"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>从解决方案中创建画布应用
 

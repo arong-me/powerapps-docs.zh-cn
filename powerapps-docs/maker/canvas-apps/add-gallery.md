@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/28/2017
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f45948bc16f036669a09ed2c566c60440d24a797
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 3df6227ed33c5154e1e5dd700e6a87c3e8305f01
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61527958"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987565"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>显示 PowerApps 中项的列表
 
@@ -33,7 +33,7 @@ ms.locfileid: "61527958"
 
     2. 将 Excel 文件上传到[云存储帐户](connections/cloud-storage-blob-connections.md)（如 OneDrive for Business）中。
 
-- 打开一个空白应用程序：
+- 打开空白应用：
     1. [登录 PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
     1. 在“生成自己的应用”下，选择“从空白开始创建画布应用”。
@@ -46,21 +46,21 @@ ms.locfileid: "61527958"
 
 ## <a name="add-a-gallery-to-a-blank-screen"></a>将库添加到空白屏幕
 
-1. 上**插入**选项卡上，选择**库**，然后选择**垂直**。
+1. 在 "**插入**" 选项卡上，选择 "**库**"，然后选择 "**垂直**"。
 
     ![添加垂直库](./media/add-gallery/gallery-dropdown.png)
 
-1. 上**属性**选项卡的右侧窗格中，打开**项**列表，并选择**地面材料估算**。
+1. 在右侧窗格的 "**属性**" 选项卡上，打开 "**项**" 列表，然后选择 "**地板估计**"。
 
-    ![地面材料估算](./media/add-gallery/select-layout.png)
+    ![地板估计](./media/add-gallery/select-layout.png)
 
-1. （可选）在中**布局**列表中，选择一个不同的选项。
+1. 可有可无在 "**布局**" 列表中，选择一个不同的选项。
 
-## <a name="add-a-gallery-in-a-screen"></a>在屏幕中添加一个库
+## <a name="add-a-gallery-in-a-screen"></a>在屏幕中添加库
 
-1. 上**主页**选项卡上，选择**新屏幕** > **列表屏幕**。
+1. 在 "**主页**" 选项卡上，选择 "**新建屏幕** > **列表屏幕**"。
 
-    包含一个屏幕**库**控件和其他控件，如搜索栏中，将出现。
+    此时会显示一个包含**库**控件和其他控件（如搜索栏）的屏幕。
 
 1. 将库的 **Items** 属性设置为 `FlooringEstimates`。
 
@@ -69,9 +69,9 @@ ms.locfileid: "61527958"
     ![显示数据](./media/add-gallery/show-data-default.png)
 
 ## <a name="add-a-control-to-the-gallery-control"></a>将控件添加到库控件
-在执行任何其他自定义之前，确保的布局你**库**控件最匹配所需。 在这里，您可以进一步修改**库**模板，用于确定如何中的所有数据**库**显示控件。
+在进行任何其他自定义之前，请确保**库**控件的布局与你需要的内容最匹配。 然后，你可以进一步修改**库**模板，该模板确定**库**控件中的所有数据的显示方式。
 
-1. 通过单击或点击底部附近选择的模板**库**控件，然后选择其左上角的铅笔图标。
+1. 单击或点击**库**控件底部附近，然后选择左上角的铅笔图标，从而选择模板。
 
     ![编辑库模板](./media/add-gallery/edit-item.png)
 
@@ -79,7 +79,7 @@ ms.locfileid: "61527958"
 
     ![添加标签](./media/add-gallery/add-text-box.png)
 
-3. 选择库，然后选择**编辑**旁边**字段**上**属性**的右侧窗格的选项卡。
+3. 选择库，然后在右侧窗格的 "**属性**" 选项卡上选择 "**字段**" 旁边的 "**编辑**"。
 
 4. 选择在此过程前面部分添加的标签，然后打开“数据”窗格中突出显示的列表。
 
@@ -91,8 +91,8 @@ ms.locfileid: "61527958"
 
     ![最终库](./media/add-gallery/final-gallery.png)
 
-## <a name="filter-and-sort-a-gallery"></a>筛选器和排序库
-库控件的[“Items”](controls/properties-core.md) 属性决定了其所显示的项。 在此过程中，你将配置该属性，以便它还确定基于筛选条件，按什么顺序显示的记录。
+## <a name="filter-and-sort-a-gallery"></a>对库进行筛选和排序
+库控件的[“Items”](controls/properties-core.md) 属性决定了其所显示的项。 在此过程中，您将配置该属性，以便它还根据筛选条件和顺序确定显示的记录。
 
 ![搜索框和排序图标](./media/add-gallery/text-search-box.png)
 
@@ -119,21 +119,21 @@ ms.locfileid: "61527958"
 
     若要详细了解此公式中的函数，请参阅[公式参考](formula-reference.md)。
 
-1. 双击搜索框，然后在其中键入部分或全部产品名称。
+1. 双击搜索框，然后在其中键入产品名称的一部分或全部。
 
-    仅满足筛选条件的这些项显示。
+    仅显示符合筛选条件的项。
 
-1. 在按住 Alt 键，选择排序图标一次多多次切换排序顺序。
+1. 按 Alt 键的同时选择排序图标一次或多次，以切换排序顺序。
 
-    记录升序和降序基于产品名称的字母顺序之间切换。
+    记录根据产品名称在升序和降序字母顺序之间切换。
 
 ## <a name="highlight-the-selected-item"></a>突出显示选定项
-设置**库**控件的**TemplateFill**属性的公式类似于此示例中，但您可以指定不同的颜色，如果你想：
+将**库**控件的 " **TemplateFill** " 属性设置为与此示例类似的公式，但如果需要，可以指定不同的颜色：
 
 If(ThisItem.IsSelected, LightCyan, White)
 
 ## <a name="change-the-default-selection"></a>更改默认选择
-将库控件的“Default”属性设置为要默认选择的记录。 例如，可以指定中的第五个项**FlooringEstimates**数据源：
+将库控件的“Default”属性设置为要默认选择的记录。 例如，可以在**FlooringEstimates**数据源中指定第五项：
 
 Last(FirstN(FlooringEstimates, 5))
 

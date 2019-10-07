@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/28/2017
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 05d02dca1afe6eba0864e7a1da6281998f62b398
-ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
+ms.openlocfilehash: 099d59b222cf40f95214056eca8e96cfce9cc053
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68474006"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987381"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>PowerApps 画布应用连接器概述
 数据是大多数应用（包括在 PowerApps 中生成的应用）的关键所在。 数据存储在数据源中，应用是通过创建的连接来连接数据。 连接使用特定的连接器与数据源进行通信。 PowerApps 提供连接器，适用于许多常用服务和本地数据源，包括 SharePoint、SQL Server、Office 365、Salesforce 和 Twitter。 若要开始向画布应用添加数据，请参阅[在 PowerApps 中添加数据连接](add-data-connection.md)。
@@ -35,7 +35,7 @@ ms.locfileid: "68474006"
 
  ![扩展数据源 Items 属性](./media/connections-list/ItemPropertyExpanded.png)
 
-有关如何用表自定义公式的详细信息, 请参阅以下主题:
+有关如何用表自定义公式的详细信息，请参阅以下主题：
 
   [了解 PowerApps 中的数据源](working-with-data-sources.md)<br> 
   [通过 Excel 数据生成应用](get-started-create-from-data.md)<br> 
@@ -47,18 +47,18 @@ ms.locfileid: "68474006"
 
 ## <a name="actions"></a>执行
 
-如果你的连接器提供操作，则必须与前面一样仍选择数据源。 而不是选择表作为下一步，但是，通过编辑将显示数据的控件的 Items 属性，可以手动将控件连接到操作。 Items 属性所设置的公式指定用于检索数据的操作。 例如，如果连接到 Yammer，然后将 Items 属性设置为数据源的名称，则应用不会检索任何数据。 若要用数据填充控件，请指定 **GetMessagesInGroup(5033622).messages** 等操作。
+如果你的连接器提供操作，则必须与前面一样仍选择数据源。 而不是选择表作为下一步，但是，通过编辑将显示数据的控件的Items 属性，可以手动将控件连接到操作。 Items 属性所设置的公式指定用于检索数据的操作。 例如，如果连接到 Yammer，然后将 Items 属性设置为数据源的名称，则应用不会检索任何数据。 若要用数据填充控件，请指定 **GetMessagesInGroup(5033622).messages** 等操作。
 
 ![操作数据源 Items 属性](./media/connections-list/ItemPropertyAction.png)
 
 如果需要处理操作连接器的自定义数据更新，请生成包含 Patch 函数的公式。 在公式中，标识操作以及将绑定到操作的字段。  
 
-有关如何为自定义更新自定义公式的详细信息, 请参阅以下主题:
+有关如何为自定义更新自定义公式的详细信息，请参阅以下主题：
 
 [Patch](functions/function-patch.md)<br>[Collect](functions/function-clear-collect-clearcollect.md)<br>[Update](functions/function-update-updateif.md)
 
 > [!NOTE]
->  **PowerApps 不能与动态架构**一起使用。 短语动态架构指的是相同操作可能返回具有不同列的其他表。 可能导致表中的列不同的情况包括操作输入参数、执行该操作的用户或角色、用户在其中工作的组以及其他人。 例如, 如果以不同的输入运行, SQL Server 存储过程可能会返回不同的列。 对于动态架构的操作, 连接器文档显示**此操作的输出是动态的。** 作为返回值。 与此相反, Microsoft Flow 适用于动态架构, 并可能为方案提供一种解决方法。
+>  **PowerApps 不能与动态架构**一起使用。 短语动态架构指的是相同操作可能返回具有不同列的其他表。 可能导致表中的列不同的情况包括操作输入参数、执行该操作的用户或角色、用户在其中工作的组以及其他人。 例如，如果以不同的输入运行，SQL Server 存储过程可能会返回不同的列。 对于动态架构的操作，连接器文档显示**此操作的输出是动态的。** 作为返回值。 与此相反，Microsoft Flow 适用于动态架构，并可能为方案提供一种解决方法。
 
 ## <a name="popular-connectors"></a>常用连接器
 

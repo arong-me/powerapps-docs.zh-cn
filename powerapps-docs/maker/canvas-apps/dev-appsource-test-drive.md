@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/08/2017
 ms.author: litran
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1e9ac3428a9621da360fd1cc5f1c376d52352d1b
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.openlocfilehash: 570d9430d7dbcc5e8d41b7128060677fe1ff45a1
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71705336"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993064"
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>让客户在 AppSource 上体验画布应用
 
@@ -41,7 +41,7 @@ ms.locfileid: "71705336"
 
 PowerApps 为生成包含嵌入数据的应用提供本机支持，因此只需提供应用要使用的示例数据即可。 应在 Excel 文件中以一个或多个表的形式捕获此类数据。 然后，在 PowerApps 中，将 Excel 表中的数据拉取到应用中，并在应用中直接使用此类数据，而不用借助外部连接。 下面的三步流程展示了如何拉取数据并在应用中使用此类数据。
 
-### <a name="step-1-import-data-into-the-app"></a>步骤 1:将数据导入到应用中
+### <a name="step-1-import-data-into-the-app"></a>步骤1：将数据导入到应用中
 假设您有一个包含两个表的 Excel 文件：**SiteInspector**和**SitePhotos**。
 
 ![要导入的 Excel 表](./media/dev-appsource-test-drive/excel-file.png)
@@ -54,7 +54,7 @@ PowerApps 为生成包含嵌入数据的应用提供本机支持，因此只需�
 
 ![作为已导入的数据源的 Excel 表](./media/dev-appsource-test-drive/data-sources.png)
 
-### <a name="step-2-handling-read-only-and-read-write-scenarios"></a>步骤 2:处理只读和读写方案
+### <a name="step-2-handling-read-only-and-read-write-scenarios"></a>步骤2：处理只读和读写方案
 由于导入的是*静态*数据，因此数据为只读。 如果应用是只读的（即只向用户显示数据），请直接在应用中引用这两个表。 例如，如果要访问“SiteInspector”中“Title”字段，请在公式中使用“SiteInspector.Title”。
 
 如果应用可读写，请先将每个表中的数据拉取到*集合*（即 PowerApps 中的表格数据结构）中。 然后，使用集合，而不是表。 若要将“SiteInspector”和“SitePhotos”表中的数据拉取到“SiteInspectorCollect”和“SitePhotosCollect”集合中，请编写以下公式：
@@ -72,7 +72,7 @@ ClearCollect( SitePhotosCollect, SitePhotos )
 
 现在，如果要访问“Title”字段，请在公式中使用“SiteInspectorCollect.Title”。
 
-### <a name="step-3-add-update-and-delete-data-in-your-app"></a>步骤 3:在应用中添加、更新和删除数据
+### <a name="step-3-add-update-and-delete-data-in-your-app"></a>步骤3：在应用中添加、更新和删除数据
 至此，你已了解如何直接和通过集合读取数据；现在，我们将介绍如何在集合中添加、更新和删除数据：
 
 **若要在集合中添加行**，请使用 [Collect( DataSource, Item, ... )](../canvas-apps/functions/function-clear-collect-clearcollect.md)：

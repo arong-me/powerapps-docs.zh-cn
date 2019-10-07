@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/13/2017
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e6d1b1083fcc7e865fa7c9cfe3f8966e20ed86a5
-ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
+ms.openlocfilehash: dbbff1f85ccc104a1a0f88c6b9670c45c0528592
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64670893"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993473"
 ---
 # <a name="combo-box-control-in-powerapps"></a>PowerApps 中的组合框控件
 用户可以在其中提供的选项之间进行选择的控件。  支持搜索和多重选择。
@@ -36,7 +36,7 @@ ms.locfileid: "64670893"
 ## <a name="key-properties"></a>关键属性
 **[Items](properties-core.md)** - 提供待选选项的数据源。
 
-**DefaultSelectedItems** – 的初始选定项之前在用户与控件交互。
+**DefaultSelectedItems** –用户与控件交互之前的初始选定项。
 
 **SelectedItems** - 用户交互后的选定项列表。
 
@@ -84,19 +84,19 @@ ms.locfileid: "64670893"
 **[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="example"></a>示例
-1. 上**插入**选项卡上，打开**控件**菜单，并选择**组合框**。  
+1. 在 "**插入**" 选项卡上，打开 "**控件**" 菜单，然后选择 "**组合框**"。  
 
-1. 上**属性**选项卡的右侧窗格中，打开**选择数据源**列表 (下一步**项**)，然后添加或选择数据源。
+1. 在右侧窗格的 "**属性**" 选项卡上，打开 "**选择数据源**" 列表（在 "**项**" 旁），然后添加或选择数据源。
 
-1. 在同一选项卡上，选择**编辑**(下一步**字段**)。
+1. 在同一选项卡上，选择 "**编辑**" （"**字段**" 旁边）。
 
-1. 在中**数据**窗格中，打开**主要文本**列表，并选择你想要在中显示的列**组合框**控件。
+1. 在 "**数据**" 窗格中，打开 "**主文本**" 列表，然后选择要在**组合框**控件中显示的列。
 
-1. 在按住 Alt 键，选择向下箭头以打开**组合框**控件。
+1. 按住 Alt 键的同时，选择向下箭头以打开**组合框**控件。
 
-    此控件显示在你指定数据源中的列中的数据。
+    控件显示您在指定的数据源中指定的列中的数据。
     
-1. （可选）若要显示的第一个记录，默认情况下，设置**DefaultSelectedItems**属性设置为此表达式中，替换*数据源*与数据源的名称：
+1. 可有可无若要在默认情况下显示第一条记录，请将**DefaultSelectedItems**属性设置为此表达式，并将*DataSource*替换为数据源的名称：
 
     `First(DataSource)`
 
@@ -119,7 +119,7 @@ ms.locfileid: "64670893"
 
 ### <a name="keyboard-support"></a>键盘支持
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness](properties-color-border.md)**”来实现此目的。
+* 焦点指示器必须清晰可见。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness](properties-color-border.md)** ”来实现此目的。
 
     > [!NOTE]
   > Tab 键可导航到组合框或离开组合框。 箭头键可导航组合框中的内容。 Esc 键在打开时会关闭下拉列表。

@@ -6,25 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ea41924c213adc6a2e0e72b906076a2d8e6783ff
-ms.sourcegitcommit: 488609d517816f296f8090a1cb643297fe3e8e85
+ms.openlocfilehash: eae69ba2337c6b220b4c83a4900846bad6589615
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237955"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986772"
 ---
 # <a name="date-picker-control-in-powerapps"></a>PowerApps 中的日期选取器控件
 用户可单击或点击以指定日期的控件。
 
 ## <a name="description"></a>描述
-如果添加 **日期选取器** 控件而非 **[文本输入](control-text-input.md)** 控件，可帮助确保用户以正确的格式指定日期。
+如果添加**日期选取器**控件而非 **[文本输入](control-text-input.md)** 控件，可帮助确保用户以正确的格式指定日期。
 
 ## <a name="key-properties"></a>关键属性
 **DefaultDate** - 日期控件的初始值（除非用户更改）。
@@ -81,13 +81,13 @@ ms.locfileid: "70237955"
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 
-**[PaddingBottom](properties-size-location.md)** – 控件中的文本与该控件下边缘之间的距离。
+[PaddingBottom](properties-size-location.md) – 控件中的文本与该控件的下边缘之间的距离。
 
 [PaddingLeft](properties-size-location.md) – 控件中的文本与该控件的左边缘之间的距离。
 
 [PaddingRight](properties-size-location.md) – 控件中的文本与该控件的右边缘之间的距离。
 
-**[PaddingTop](properties-size-location.md)** – 控件中的文本与该控件上边缘之间的距离。
+**[PaddingTop](properties-size-location.md)** – 控件中的文本与该控件的上边缘之间的距离。
 
 **[Size](properties-text.md)** – 控件上显示的文本的字号。
 
@@ -129,7 +129,7 @@ ms.locfileid: "70237955"
 
 ### <a name="keyboard-support"></a>键盘支持
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness](properties-color-border.md)** ”来实现此目的。
+* 焦点指示器必须清晰可见。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
 
 > [!TIP]
 > 当日历打开时，按**page up**和**page down**可在月之间导航，并按**shift + page Up** ，按**shift + page down**可在年份之间导航。

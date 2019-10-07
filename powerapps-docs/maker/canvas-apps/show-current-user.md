@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/16/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 12a6cd6f3df6c83f39b08608e1057f5e31e7d46e
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: afd5dffc75dea4186058ba96adbaf0dbde8dc3d8
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63319195"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71988423"
 ---
 # <a name="show-information-about-a-powerapps-user-in-a-canvas-app"></a>在画布应用中，显示 PowerApps 用户的相关信息
 

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 16226203262d5ecacc8fc49a88c9934dd0f673e6
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d29fa336ae96a164a6f189010c66deff970ba5a7
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61562867"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984893"
 ---
 # <a name="hashtags-function-in-powerapps"></a>PowerApps 中的 HashTags 函数
 从文本字符串中提取井号标签 (#strings)。
@@ -40,13 +40,13 @@ ms.locfileid: "61562867"
 
 ## <a name="examples"></a>示例
 ### <a name="step-by-step"></a>分步操作
-1. 添加“[文本输入](../controls/control-text-input.md)”  控件，将它命名为 **“Tweet”** ，然后在其中键入下面这句话：
+1. 添加“[文本输入](../controls/control-text-input.md)”控件，将它命名为 **“Tweet”** ，然后在其中键入下面这句话：
    
     **This #app is #AMAZING and can #coUnt123 or #123abc but not #1-23 or #$\*(#\@")**
 2. 添加垂直自定义库，并将其 **[Items](../controls/properties-core.md)** 属性设置为此函数：
    
     **HashTags(Tweet.Text)**
-3. 将“[标签](../controls/control-text-box.md)”  控件添加到库模板中。
+3. 将“[标签](../controls/control-text-box.md)”控件添加到库模板中。
    
     库将显示以下井号标签：
    

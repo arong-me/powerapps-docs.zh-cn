@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eae185fc52f368fa09ddbfe221553ddf6cc3a16d
-ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
+ms.openlocfilehash: 73f197c7d4038748649261f4686cb07b456595e0
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550356"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985213"
 ---
 # <a name="forall-function-in-powerapps"></a>PowerApps 中的 ForAll 函数
 针对[表](../working-with-tables.md)中的所有[记录](../working-with-tables.md#records)计算值和执行操作。

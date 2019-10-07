@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2b88e765fcc56a2d76ede30a44fcfbaae70aaea3
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5839de0a35adeee8106d583638edb50c5d53ab21
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61559877"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993156"
 ---
 # <a name="text-properties-in-powerapps"></a>PowerApps 中的文本属性
 配置控件上显示的文本、工具提示中显示的文本以及当用户键入数据时作为提示显示的文本，并指定其他文本相关特征。
@@ -28,7 +28,7 @@ ms.locfileid: "61559877"
 
 * 适用于 **[添加图片](control-add-picture.md)** 、 **[按钮](control-button.md)** 、 **[复选框](control-check-box.md)** 、 **[柱形图](control-column-line-chart.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[下拉列表](control-drop-down.md)** 、 **[导出](control-export-import.md)** 、 **[HTML 文本](control-html-text.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[折线图](control-column-line-chart.md)** 、 **[列表框](control-list-box.md)** 、 **[饼图](control-pie-chart.md)** 、 **[单选按钮](control-radio.md)** 、 **[文本输入](control-text-input.md)** 和 **[计时器](control-timer.md)** 控件。
 
-**FontWeight** – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。
+**FontWeight** -控件中的文本权重：**粗体**、 **Semibold**、 **Normal**或**浅**。
 
 * 适用于 **[添加图片](control-add-picture.md)** 、 **[按钮](control-button.md)** 、 **[复选框](control-check-box.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[下拉列表](control-drop-down.md)** 、 **[导出](control-export-import.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[列表框](control-list-box.md)** 、 **[单选按钮](control-radio.md)** 、 **[文本输入](control-text-input.md)** 和 **[计时器](control-timer.md)** 控件。
 

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 02e8477873adad476c65e513a470e027aee5cd5c
-ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
+ms.openlocfilehash: 4a838100398196c63ef948f8f2e94d098c03a373
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65517382"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993445"
 ---
 # <a name="drop-down-control-in-powerapps"></a>PowerApps 中的下拉列表控件
 一个列表，在用户不将其打开的情况下，该表仅显示第一项。
@@ -29,13 +29,13 @@ ms.locfileid: "65517382"
 ## <a name="key-properties"></a>关键属性
 [Default](properties-core.md) – 用户指定不同值之前控件的初始值。
 
-[Items](properties-core.md) – 包含控件中显示的项的数据源。 如果源具有多列，请将控件的 Value 属性设置为要显示的数据列。
+[Items](properties-core.md) – 包含控件中显示的项的数据源。 如果源具有多列，请将控件的 Value属性设置为要显示的数据列。
   
 Value - 要在控件中显示的数据列（例如，如果数据源具有多列）。
 
-**所选**– 表示选定的项的数据记录。
+**Selected** –表示选定项的数据记录。
 
-**AllowEmptySelection** – 是否此控件显示的空选择，是否尚未选择任何项。 应用用户还可通过选择空白项清除其选项。
+**AllowEmptySelection** –如果未选择任何项，控件是否显示空选择。 应用用户还可以通过选择空白项来清除其选择。
 
 ## <a name="additional-properties"></a>其他属性
 **[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。
@@ -58,7 +58,7 @@ Value - 要在控件中显示的数据列（例如，如果数据源具有多列
 
 **[DisabledColor](properties-color-border.md)** – 控件的 **[DisplayMode](properties-core.md)** 属性设置为 Disabled**Disabled** 时，该控件中的文本颜色。
 
-**[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode”**[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
+**[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode” **[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
 
 **[Fill](properties-color-border.md)** – 控件的背景色。
 
@@ -68,7 +68,7 @@ Value - 要在控件中显示的数据列（例如，如果数据源具有多列
 
 [Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md)**  – 控件中文本的粗细：**加粗**，**半粗体**，**正常**，或**较浅**。
+**[FontWeight](properties-text.md)** -控件中的文本权重：**粗体**、 **Semibold**、 **Normal**或**浅**。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -100,7 +100,7 @@ Value - 要在控件中显示的数据列（例如，如果数据源具有多列
 
 [Reset](properties-core.md) – 是否还原控件的默认值。
 
-**（已弃用） SelectedText** – 字符串值，该值表示所选的项。
+**SelectedText （已弃用）** –表示选定项的字符串值。
 
 [SelectionColor](properties-color-border.md) – 所选项目或列表中项目的文本颜色，或笔控件中选择工具的颜色。
 
@@ -128,7 +128,7 @@ Value - 要在控件中显示的数据列（例如，如果数据源具有多列
 
 ### <a name="simple-list"></a>简单列表
 
-1. 添加“下拉列表”控件，然后将其 [Items](properties-core.md) 属性设置为该表达式：
+1. 添加“下拉列表”控件，然后将其[Items](properties-core.md) 属性设置为该表达式：
 
     `["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]`
 
@@ -137,21 +137,21 @@ Value - 要在控件中显示的数据列（例如，如果数据源具有多列
 1. 在按 Alt 键的同时选择控件的向下箭头，以便显示列表中的项目。
 
 ### <a name="list-from-a-data-source"></a>来自数据源的列表
-在此过程中的原则应用于任何[提供表的数据源](../connections-list.md#tables)但若要完全遵循以下步骤，必须打开 Common Data Service 数据库已创建和示例数据添加为其环境。
+此过程中的原则适用于任何[提供表的数据源](../connections-list.md#tables)，但若要完全遵循这些步骤，您必须打开为其创建 Common Data Service 数据库和添加示例数据的环境。
 
-1. [打开空白应用](../data-platform-create-app-scratch.md#open-a-blank-app)，然后[指定 Accounts 实体](../data-platform-create-app-scratch.md#specify-an-entity)。
+1. [打开空白应用](../data-platform-create-app-scratch.md#open-a-blank-app)，然后[指定 Accounts实体](../data-platform-create-app-scratch.md#specify-an-entity)。
 
-1. 添加“下拉列表”控件，然后将其 [Items](properties-core.md) 属性设置为以下公式：
+1. 添加“下拉列表”控件，然后将其[Items](properties-core.md) 属性设置为以下公式：
 
     `Distinct(Accounts, address1_city)`
 
-    此公式显示 Accounts 实体中的所有城市。 如果多个记录具有相同的城市，则 [Distinct](../functions/function-distinct.md) 功能会在你的下拉控件中隐藏重复项。
+    此公式显示 Accounts 实体中的所有城市。 如果多个记录具有相同的城市，则[Distinct](../functions/function-distinct.md) 功能会在你的下拉控件中隐藏重复项。
 
-1. （可选）将你的“下拉列表”控件重命名为 Cities，添加垂直“库”控件，并将库的 [Items](properties-core.md) 属性设置为这个公式：
+1. （可选）将你的“下拉列表”控件重命名为 Cities，添加垂直“库”控件，并将库的[Items](properties-core.md) 属性设置为这个公式：
 
     `Filter(Accounts, address1_city = Cities.Selected.Value)`
 
-    此 [Filter](../functions/function-filter-lookup.md) 功能仅显示 Accounts 实体中的城市与“城市”控件中所选值匹配的记录。
+    此[Filter](../functions/function-filter-lookup.md) 功能仅显示 Accounts 实体中的城市与“城市”控件中所选值匹配的记录。
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 ### <a name="color-contrast"></a>颜色对比度

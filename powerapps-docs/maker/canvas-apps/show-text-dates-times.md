@@ -1,24 +1,24 @@
 ---
 title: 在画布应用中显示文本、日期和时间 | Microsoft Docs
 description: 在 PowerApps 的画布应用中显示文本、日期和时间
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/16/2016
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 54712803d0cc119aa385162088df468e339a7298
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 2e0f365a5b41655188a3adfe02b721e6a5ef9bcd
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63318332"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71988867"
 ---
 # <a name="show-text-dates-and-times-in-powerapps"></a>在 PowerApps 中显示文本、日期和时间
 在 PowerApps 中向画布应用添加日期和时间，然后设置其格式，以显示正确级别的详细信息，或者让其反映你的区域设置。 计算两个日期相差多少时间，或者计算一个日期，该日期比指定的日期早或晚一定的时间。 将日期转换成按年、月、日表示的不同值（或者反过来），以及将时间转换成按小时、分钟、秒表示的不同值（或者反过来）。
@@ -32,14 +32,14 @@ ms.locfileid: "63318332"
 * 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
 
 ## <a name="show-text-in-a-label-control"></a>在“标签”控件中显示文本
-在“[标签](controls/control-text-box.md)”  控件中显示文本，方法是设置“[Text](controls/properties-core.md)”  属性值。 设置此属性时，既可直接在控件中键入，也可在公式栏中键入表达式。
+在“[标签](controls/control-text-box.md)”控件中显示文本，方法是设置“[Text](controls/properties-core.md)”属性值。 设置此属性时，既可直接在控件中键入，也可在公式栏中键入表达式。
 
 * 如果直接在控件中键入，则完全按输入显示。
 * 如果在公式栏中键入表达式，则控件会显示表达式的结果。
 
 下面是一些示例。
 
-1. 添加一个名为“ShowText”  的“[标签](controls/control-text-box.md)”  控件，然后将“[Text](controls/properties-core.md)”  属性设置为以下公式：
+1. 添加一个名为“ShowText”的“[标签](controls/control-text-box.md)”控件，然后将“[Text](controls/properties-core.md)”属性设置为以下公式：
    <br>**Now()**
    
     如果计算机的区域设置设置为“en-us”，则当前日期和时间按以下格式显示： <br>*mm/dd/yyyy hh:mm AM/PM*
@@ -81,7 +81,7 @@ ms.locfileid: "63318332"
 
 1. 添加名为 **ArrivalDateTime** 的 **[文本输入](controls/control-text-input.md)** 控件，然后按以下格式键入日期和时间：
    <br>**5/10/85 6:15 AM**
-2. 添加一个名为“ShowDate”  的“[标签](controls/control-text-box.md)”  控件，然后将“[Text](controls/properties-core.md)”  属性设置为以下公式：
+2. 添加一个名为“ShowDate”的“[标签](controls/control-text-box.md)”控件，然后将“[Text](controls/properties-core.md)”属性设置为以下公式：
    <br>**DateTimeValue(ArrivalDateTime.Text)**
    
     ![将日期/时间从文本转换为值](./media/show-text-dates-times/date-value.png)
@@ -127,7 +127,7 @@ ms.locfileid: "63318332"
 
 1. 添加名为 **ArrivalDate** 的 **[文本输入](controls/control-text-input.md)** 控件，然后在其中键入日期（例如 **5/10/85**）。
 
-2. 添加一个名为“FormatDate”  的“[标签](controls/control-text-box.md)”  控件，然后将“[Text](controls/properties-core.md)”  属性设置为以下公式：
+2. 添加一个名为“FormatDate”的“[标签](controls/control-text-box.md)”控件，然后将“[Text](controls/properties-core.md)”属性设置为以下公式：
    <br>**DateValue(ArrivalDate.Text)**
    
     **FormatDate** 显示你所键入的日期，只是年份显示为四位数。
@@ -148,7 +148,7 @@ ms.locfileid: "63318332"
 
 1. 添加名为 **ArrivalTime** 的 **[文本输入](controls/control-text-input.md)** 控件，然后在其中键入 **6:15 AM**。
 
-2. 添加一个名为“ShowTime”  的“[标签](controls/control-text-box.md)”  控件。
+2. 添加一个名为“ShowTime”的“[标签](controls/control-text-box.md)”控件。
 
 3. 若要使用多个内置格式之一，请将 **ShowTime** 的 **[Text](controls/properties-core.md)** 属性设置为以下公式：
    <br>**Text(DateTimeValue(ArrivalTime.Text), DateTimeFormat.LongTime)**
@@ -170,7 +170,7 @@ ms.locfileid: "63318332"
 
 2. 将 **4/1/2015** 键入到 **Start** 中，将 **1/1/2016** 键入到 **End** 中。
 
-3. 添加一个名为“DateDiff”  的“[标签](controls/control-text-box.md)”  控件，然后将“[Text](controls/properties-core.md)”  属性设置为以下公式：
+3. 添加一个名为“DateDiff”的“[标签](controls/control-text-box.md)”控件，然后将“[Text](controls/properties-core.md)”属性设置为以下公式：
    <br>**DateDiff(DateValue(Start.Text), DateValue(End.Text))**
    
     ![比较两个日期](./media/show-text-dates-times/date-diff.png)
@@ -184,7 +184,7 @@ ms.locfileid: "63318332"
 
 1. 添加名为 **Start** 的 **[文本输入](controls/control-text-input.md)** 控件，然后在其中键入 **5/10/1985**。
 
-2. 添加一个名为“DateAdd”  的“[标签](controls/control-text-box.md)”  控件，然后将“[Text](controls/properties-core.md)”  属性设置为以下公式：
+2. 添加一个名为“DateAdd”的“[标签](controls/control-text-box.md)”控件，然后将“[Text](controls/properties-core.md)”属性设置为以下公式：
    <br>**DateAdd(DateValue(Start.Text), 3)**
    
     ![加三天](./media/show-text-dates-times/date-add.png)
@@ -216,10 +216,10 @@ ms.locfileid: "63318332"
 4. 将 **Day** 的 **[Items](controls/properties-core.md)** 属性设置为以下公式：
    <br>**Table({Day:"1"}, {Day:"2"}, {Day:"3"}, {Day:"4"}, {Day:"5"}, {Day:"6"}, {Day:"7"}, {Day:"8"}, {Day:"9"}, {Day:"10"}, {Day:"11"}, {Day:"12"}, {Day:"13"}, {Day:"14"}, {Day:"15"}, {Day:"16"}, {Day:"17"}, {Day:"18"}, {Day:"19"}, {Day:"20"}, {Day:"21"}, {Day:"22"}, {Day:"23"}, {Day:"24"}, {Day:"25"}, {Day:"26"}, {Day:"27"}, {Day:"28"}, {Day:"29"}, {Day:"30"}, {Day:"31"})**
 
-5. 添加一个“[标签](controls/control-text-box.md)”  控件，然后将“[Text](controls/properties-core.md)”  属性设置为以下公式：
+5. 添加一个“[标签](controls/control-text-box.md)”控件，然后将“[Text](controls/properties-core.md)”属性设置为以下公式：
    <br>**Text(Date(Value(Year.Selected.Value), Value(Month.Selected.Value), Value(Day.Selected.Value)), DateTimeFormat.LongDate)**
    
-    默认情况下将列出 **Wednesday, January 1, 2014**。 在“[下拉列表](controls/control-drop-down.md)”  控件中选择不同的值，以更改“[标签](controls/control-text-box.md)”  控件中的日期。
+    默认情况下将列出 **Wednesday, January 1, 2014**。 在“[下拉列表](controls/control-drop-down.md)”控件中选择不同的值，以更改“[标签](controls/control-text-box.md)”控件中的日期。
 
 可能需要对不正常的数据进行转换。 如果添加了 **[文本输入](controls/control-text-input.md)** 控件而不是 **[下拉](controls/control-drop-down.md)** 控件，则用户可能会输入不正确的日期，例如 May 45。 **[Date](functions/function-date-time.md)** 函数按以下方式处理异常数据：
 
@@ -241,12 +241,12 @@ ms.locfileid: "63318332"
 3. 将 **Minute** 的 **[Items](controls/properties-core.md)** 属性设置为以下公式：
    <br>**Table({Minute:"0"}, {Minute:"15"}, {Minute:"30"}, {Minute:"45"})**
 
-4. 添加一个“[标签](controls/control-text-box.md)”  控件，然后将“[Text](controls/properties-core.md)”  属性设置为以下公式：  
+4. 添加一个“[标签](controls/control-text-box.md)”控件，然后将“[Text](controls/properties-core.md)”属性设置为以下公式：  
    <br>**Text(Time(Value(Hour.Selected.Value), Value(Minute.Selected.Value), 0), DateTimeFormat.ShortTime)**
 
 5. 在 **Hour** 中选择 **15**，在 **Minute** 中选择 **45**。
    
-    此时，“[标签](controls/control-text-box.md)”  控件显示“3:45 PM”  。
+    此时，“[标签](controls/control-text-box.md)”控件显示“3:45 PM”。
    
-    可以向 **Hour** 和 **Minute** 添加条目，以便用户能够在更大范围内选择小时数，以更精确的方式选择分钟数。 也可添加第三个 **[下拉](controls/control-drop-down.md)** 控件，允许用户指定秒。 如果添加第三个列表，请将“[标签](controls/control-text-box.md)”  控件的“[Text](controls/properties-core.md)”  属性设置为以下表达式：<br>**Text(Time(Value(Hour.Selected.Value), Value(Minute.Selected.Value), Value(Second.Selected.Value)), DateTimeFormat.LongTime)**
+    可以向 **Hour** 和 **Minute** 添加条目，以便用户能够在更大范围内选择小时数，以更精确的方式选择分钟数。 也可添加第三个 **[下拉](controls/control-drop-down.md)** 控件，允许用户指定秒。 如果添加第三个列表，请将“[标签](controls/control-text-box.md)”控件的“[Text](controls/properties-core.md)”属性设置为以下表达式：<br>**Text(Time(Value(Hour.Selected.Value), Value(Minute.Selected.Value), Value(Second.Selected.Value)), DateTimeFormat.LongTime)**
 

@@ -1,52 +1,52 @@
 ---
-title: 中的 AsType 和 IsType 函数画布应用 |Microsoft Docs
-description: 参考信息，包括语法和示例，AsType 和 IsType 函数的画布应用
+title: 画布应用中的 AsType 和 IsType 函数 |Microsoft Docs
+description: 画布应用中 AsType 和 IsType 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/17/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 999653159f838e840f7f569aa9953633a6a70065
-ms.sourcegitcommit: 93096dfa1aadba77159db1e5922f3d5528eecb7a
+ms.openlocfilehash: 0ecb30a5a452a6ee092ccf9bc9d47f6182ef60ab
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65986329"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993002"
 ---
-# <a name="astype-and-istype-functions-in-canvas-apps"></a>中的 AsType 和 IsType 函数画布应用
+# <a name="astype-and-istype-functions-in-canvas-apps"></a>画布应用中的 AsType 和 IsType 函数
 
-检查特定实体类型的记录引用 (**IsType**)，并将该引用视为特定类型 (**AsType**)。
+检查特定实体类型（**IsType**）的记录引用，并将该引用视为特定类型（**AsType**）。
 
 ## <a name="description"></a>描述
 
-读取[了解记录引用和多态查找](../working-with-references.md)有关的更广泛的介绍和详细信息。
+阅读[了解记录引用和多态查找](../working-with-references.md)，了解更多详细信息和更多详细信息。
 
-查找字段通常是指特定实体中的记录。 由于实体类型是制定完善，您可以使用简单的点表示法访问查找的字段。 例如，**第一个 （帐户）。主要联系人。完整的名称**从引导**帐户**到实体**主要联系人**记录中**联系人**实体和提取**完整名称**字段。
+查找字段通常指特定实体中的记录。 由于实体类型已建立良好的关系，因此可以使用简单的点表示法访问查找字段。 例如，**第一个（帐户）。主要联系人 ".""全名"** 从 "**帐户**" 实体遍历到 "**联系人**" 实体中的**主要联系人**记录，并提取 "**全名**" 字段。
 
-Common Data Service 还支持多态查找字段，可以引用的记录从一组实体，如以下示例所示。
+Common Data Service 还支持多态查找字段，它们可以引用一组实体中的记录，如这些示例中所示。
 
-| 查找字段 | 可以参考 |
+| 查找字段 | 可以引用 |
 |--------------|--------------|
 | **Owner** | **用户**或**团队** |
 | **客户** | **帐户**或**联系人** |
-| **有关** | **帐户**，**联系人**，**知识库文章**，等等。 |
+| **联系** | **帐户**、**联系人**、**知识库文章**等。 |
 
 <!--note from editor: Change "Knowledge Articles" to "Knowledge Base articles" if that is what is being referenced.   -->
 
-在画布应用的公式，可以使用记录引用以使用多态查找。 记录引用可引用不同的实体，因为你不知道编写公式时，可以使用哪些字段。 *。字段*表示法不可用。 这些公式必须适应应用程序遇到运行时的记录。
+在 "画布-应用公式" 中，您可以使用记录引用来处理多态查找。 由于记录引用可以引用不同的实体，因此，在编写公式时，您不知道哪些字段将可用。 *。字段*表示法不可用。 这些公式必须适应应用在运行时遇到的记录。
 
-**IsType**函数测试是否记录引用所引用的特定实体类型。 该函数返回布尔值 TRUE 或 FALSE。
+**IsType**函数测试记录引用是否引用特定的实体类型。 该函数返回布尔值 TRUE 或 FALSE。
 
-**AsType**函数将记录参考特定实体类型，有时称为视为*强制转换*。 您可以使用结果，就好像该实体的记录并再次使用 *。字段*表示法访问的所有该记录的字段。 如果特定类型的引用不，发生错误。
+**AsType**函数将记录引用视为特定实体类型，有时称为 "*强制转换*"。 您可以使用结果，就像它是实体的记录一样，并再次使用 *。* 用于访问该记录的所有字段的字段表示法。 如果引用不是特定类型，则会发生错误。
 
-同时使用这些函数来首次测试一条记录的实体类型，然后将其视为该类型的记录，以便这些字段均可用：
+将这些函数一起使用可以先测试记录的实体类型，然后将其视为该类型的记录，以便字段可用：
 
 ```powerapps-dot
 If( IsType( First( Accounts ).Owner, Users ),
@@ -55,19 +55,19 @@ If( IsType( First( Accounts ).Owner, Users ),
 )
 ```
 
-仅当要访问的记录引用的字段时，才需要这些函数。 例如，可以使用中的记录引用[**筛选器**](function-filter-lookup.md)有效，无需**IsType**或者**AsType**:
+只有在访问记录引用的字段时，才需要这些函数。 例如，可以在[**筛选器**](function-filter-lookup.md)函数中使用不带**IsType**或**AsType**的记录引用：
 
 ```powerapps-dot
 Filter( Accounts, Owner = First( Users ) )
 ```
 
-同样，可以使用具有记录引用[**修补**](function-patch.md)函数：
+同样，你可以将记录引用与[**Patch**](function-patch.md)函数结合使用：
 
 ```powerapps-dot
 Patch( Accounts, First( Accounts ), { Owner: First( Teams ) } )
 ```  
 
-如果在记录上下文中，使用如内[**库**](../controls/control-gallery.md)或[**编辑窗体**](../controls/control-form-detail.md)控件，您可能需要使用[全局消除歧义运算符](operators.md#disambiguation-operator)要引用的实体类型。 例如，此公式将是一个库，其中显示的联系人列表的有效位置**公司名称**是**客户**查找：
+如果用于记录上下文（如[**库**](../controls/control-gallery.md)中或[**编辑窗体**](../controls/control-form-detail.md)控件中），则可能需要使用[全局歧义消除运算符](operators.md#disambiguation-operator)来引用实体类型。 例如，对于显示其**公司名称**为**客户**查找的联系人列表的库，此公式会有效：
 
 ```powerapps-dot
 If( IsType( ThisItem.'Company Name', [@Accounts] ),
@@ -76,61 +76,61 @@ If( IsType( ThisItem.'Company Name', [@Accounts] ),
 )
 ```
 
-对于这两个函数指定通过名称连接到该实体的数据源的类型。 若要运行该公式，您必须将数据源添加到适用于你想要测试或强制转换任何类型的应用。 例如，您必须添加**用户**作为数据源，如果你想要使用的实体**IsType**并**AsType**与**所有者**查找和记录从该实体。 可以添加你实际使用应用程序; 中的数据源不需要添加一个查找可以引用的所有实体。
+对于这两个函数，通过连接到实体的数据源的名称指定类型。 若要运行公式，还必须将数据源添加到应用中要测试或强制转换的任何类型。 例如，如果要将**IsType**和**AsType**与该实体的**所有者**查找和记录一起使用，则必须将**用户**实体添加为数据源。 只能添加实际在应用中使用的数据源;不需要添加查找可以引用的所有实体。
 
-如果记录引用*空白*， **IsType**将返回 FALSE，并**AsType**返回*空白*。 所有字段*空白*将记录*空白*。
+如果记录引用为*空*， **ISTYPE**将返回 FALSE，并且**AsType**将返回*空白*。 *空*记录的所有字段都将为*空*。
 
 ## <a name="syntax"></a>语法
 
-**AsType**( *RecordReference*, *EntityType* )
+**AsType**（ *RecordReference*， *EntityType* ）
 
-- *RecordReference* -必需。 记录引用，通常可以引用在任意多个实体记录的查找字段。
-- *EntityType* -必需。 若要测试特定实体。
+- *RecordReference* -必需。 记录引用，通常是可以引用任意多个实体中的记录的查找字段。
+- *EntityType* -必需。 要测试的特定实体。
 
-**IsType**( *RecordReference*, *EntityType* )
+**IsType**（ *RecordReference*， *EntityType* ）
 
-- *RecordReference* -必需。 记录引用，通常可以引用在任意多个实体记录的查找字段。
-- *EntityType* -必需。 记录应被强制转换到的特定实体。
+- *RecordReference* -必需。 记录引用，通常是可以引用任意多个实体中的记录的查找字段。
+- *EntityType* -必需。 记录应强制转换为的特定实体。
 
 ## <a name="example"></a>示例
 
-[了解记录引用和多态查找](../working-with-references.md)包含大量示例。
+[了解记录引用和多态查找](../working-with-references.md)包含广泛的示例。
 
-1. 创建适用于平板电脑的空白画布应用。
+1. 为平板电脑创建空白画布应用。
 
-1. 上**视图**选项卡上，选择**数据源**，然后添加**联系人**并**帐户**作为数据源的实体。
+1. 在 "**视图**" 选项卡上，选择 "**数据源**"，然后添加 "**联系人**" 和 "**帐户**" 实体作为数据源。
     > [!div class="mx-imgBorder"]
-    > ![使用两个数据源的空白应用程序： 客户和联系人](media/function-astype-istype/contacts-add-datasources.png)
+    > 具有两个数据源的 @no__t 0Blank 应用： accounts 和 contacts @ no__t-1
 
-1. 插入**库**控件替换**垂直空白库**方向。
-
-    > [!div class="mx-imgBorder"]
-    > ![插入具有空白垂直布局的库控件](media/function-astype-istype/contacts-customer-gallery.png)
-
-1. 上**属性**屏幕的右侧附近选项卡上，设置库的**项**属性设置为**联系人**。
+1. 插入具有**空白垂直**方向的**库**控件。
 
     > [!div class="mx-imgBorder"]
-    > ![在属性窗格中将项目设为联系人](media/function-astype-istype/contacts-customer-datasource.png)
+    > @no__t 0Insert 使用空白垂直布局 @ no__t 的库控件
 
-1. 将库的布局设置为**标题和副标题**。
-
-    > [!div class="mx-imgBorder"]
-    > ![从属性窗格打开布局选取器](media/function-astype-istype/contacts-customer-layout.png)
+1. 在屏幕右侧附近的 "**属性**" 选项卡上，将库的**Items**属性设置为 "**联系人**"。
 
     > [!div class="mx-imgBorder"]
-    > ![设置为标题和副标题的布局](media/function-astype-istype/contacts-customer-flyout.png)
+    > 在 "属性" 窗格中将项目 @no__t 0Set
 
-1. 在中**数据**窗格中，打开**Title1**列表，并选择**全名**。
+1. 将库的布局设置为 "**标题" 和 "副标题**"。
 
     > [!div class="mx-imgBorder"]
-    > ![设置标题的值](media/function-astype-istype/contacts-customer-title.png)
+    > 从 "属性" 窗格中 @no__t 0Open 布局选取器 @ no__t-1
+
+    > [!div class="mx-imgBorder"]
+    > @no__t 0Set 到标题和副标题 @ no__t 的布局
+
+1. 在 "**数据**" 窗格中，打开 " **Title1** " 列表，然后选择 "**全名**"。
+
+    > [!div class="mx-imgBorder"]
+    > @no__t 0Set title value @ no__t-1
 
 1. 选择**Subtitle1**标签控件。
 
     > [!div class="mx-imgBorder"]
-    > ![设置副标题值](media/function-astype-istype/contacts-customer-subtitle.png)
+    > ![Set 副标题值 @ no__t-1
 
-1. 设置**文本**的属性**Subtitle1**为以下公式：
+1. 将**Subtitle1**的**Text**属性设置为以下公式：
 
     ```powerapps-dot
     If( IsBlank( ThisItem.'Company Name' ), "--",
@@ -141,11 +141,11 @@ If( IsType( ThisItem.'Company Name', [@Accounts] ),
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![屏幕现在是完整显示帐户和联系人混杂在库中](media/function-astype-istype/contacts-customer-complete.png)
+    > ![Screen 现已完成，显示 no__t 库中的帐户和联系人-1
 
-    在库中的副标题显示了这些值：
-    - "-"如果**的公司名称**是*空白*。
-    - "帐户:"，然后**帐户名**字段从**帐户**实体如果**公司名称**字段引用的帐户。
-    - "请联系:"，然后**全名**字段从**联系人**实体如果**公司名称**字段指联系人。
+    库中的副标题显示以下值：
+    - 如果 **"公司名称"** 为*空*，则为 "--"。
+    - "帐户："，然后是 **"帐户" 实体中**的 "**帐户名称**" 字段（如果 "**公司名称**" 字段引用了帐户）。
+    - 如果 "**公司名称**" 字段引用某一联系人，则 "联系：" 和 "**联系人**" 实体中的 "**全名**" 字段。
 
-    您的结果可能不同于本主题中，因为它使用修改显示的结果的其他类型的示例数据。
+    您的结果可能与本主题中的结果不同，因为它使用修改后的示例数据显示其他类型的结果。

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 07/06/2017
 ms.author: aneesa
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4d7b21286f793aefdcc66a3dcbb027ab8f9ac4e7
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 0b25a22e732c96bf35f8951602e706f71b1733a7
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544285"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986730"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>PowerApps 中的编辑窗体和显示窗体控件
 在数据源中显示、编辑和创建记录。
@@ -33,7 +33,7 @@ ms.locfileid: "61544285"
 ### <a name="record-selection"></a>选择记录
 不管哪一类型的窗体，均可将其“DataSource”属性设置为一个记录表，并可将窗体的“Item”属性设置为显示该表中的特定记录。 例如，可将窗体的“Item”属性设置为[库](control-gallery.md)控件的“SelectedItem”属性。 当用户选择库中的某个记录时，同样的记录就会显示在窗体中，只不过该窗体可以显示更多字段。 如果用户返回到库，然后选择另一记录，则库的“SelectedItem”属性会更改。 该更改会更新窗体的“Item”属性，然后窗体就会显示新选择的记录。
 
-此外，你还可以使用下拉控件设置窗体的“Item”属性，如[显示、编辑或添加记录](../add-form.md)中所述，或者添加 Lookup 或 First 等函数。 例如，可以设置**项**属性设置为以下公式显示中的 Fabrikam 条目之一**帐户**Common Data Service 中的实体：
+此外，你还可以使用下拉控件设置窗体的“Item”属性，如[显示、编辑或添加记录](../add-form.md)中所述，或者添加 Lookup 或 First 等函数。 例如，可以将**Item**属性设置为这些公式中的任意一个，以在 Common Data Service 的 "**帐户**" 实体中显示 Fabrikam 条目：
 
 ```First(Accounts)```
 
@@ -122,8 +122,8 @@ Mode – 控件的模式为“编辑”或“新建”。
 | 模式 | 描述 |
 | --- | --- |
 | FormMode.Edit |用户可以通过窗体编辑记录。 窗体卡片中的值是预先填充的现有记录，允许用户更改。 如果 [SubmitForm](../functions/function-form.md) 函数成功运行，则会修改现有记录。 |
-| FormMode.New |用户可以通过窗体创建记录。 在窗体的控件中的值会预先填充的数据源的记录的默认值。 如果 [SubmitForm](../functions/function-form.md) 函数成功运行，则会创建记录。 |
-| FormMode.View |用户可以通过窗体查看记录。 在窗体的控件中的值会预先填充的数据源的记录的默认值。 |
+| FormMode.New |用户可以通过窗体创建记录。 将使用数据源记录的默认值预填充窗体控件中的值。 如果 **[SubmitForm](../functions/function-form.md)** 函数成功运行，则会创建一条记录。 |
+| FormMode.View |用户可以通过窗体查看记录。 将使用数据源记录的默认值预填充窗体控件中的值。 |
 
 如果出现下述任何更改，则窗体会从“新建”模式切换为“编辑”模式：
 
@@ -152,7 +152,7 @@ Updates – 在窗体控件中加载的记录的值，用于写回到数据源�
 
 * 此属性仅适用于“编辑窗体”控件。
 * 使用此属性从控件中的卡片提取字段值。  然后即可通过调用 [Patch](../functions/function-patch.md) 函数或通过某个连接所公开的其他方法，使用这些值来手动更新数据源。  如果使用的是 [SubmitForm](../functions/function-form.md) 函数，则不需使用此属性。
-* 此属性返回值记录。  例如，如果窗体控件包含有关卡片控件 **名称**并 **Quantity**字段和的值 **[更新](control-card.md)** 这些卡的属性会返回"小组件"和 10，则 **更新**窗体控件的属性将返回 **{名称："小组件"，Quantity:10 }**.
+* 此属性返回值记录。  例如，如果窗体控件包含用于**名称**和**数量**字段的卡片控件，并且这些卡片的 **[更新](control-card.md)** 属性的值分别返回 "小组件" 和10，则窗体控件的 "**更新**" 属性将返回 @no__t 5 {Name："小组件"，数量：10} **。
 
 Valid – [卡片](control-card.md)或“编辑窗体”控件是否包含可以提交到数据源的有效条目。
 

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/11/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1cc589d1bff73777e0c20ed933a563e42b934f35
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 114474696f85980da315b6dd225250dc1b197805
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551116"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992800"
 ---
 # <a name="errors-function-in-powerapps"></a>PowerApps 中的 Errors 函数
 提供之前对[数据源](../working-with-data-sources.md)的更改的错误信息。
@@ -56,7 +56,7 @@ ms.locfileid: "61551116"
 
 通过向函数提供 *Record* 参数，可针对整个数据源，也可仅针对选定的行返回错误。  
 
-如果无法创建记录，**[Patch](function-patch.md)** 或其他数据函数可能会返回*空白*值。 可以将 *blank* 传递到 **Errors**，它将在这类情况下返回相应的错误信息。  随后对同一数据源使用数据函数将清除此错误信息。
+如果无法创建记录， **[Patch](function-patch.md)** 或其他数据函数可能会返回*空白*值。 可以将 *blank* 传递到 **Errors**，它将在这类情况下返回相应的错误信息。  随后对同一数据源使用数据函数将清除此错误信息。
 
 如果没有错误，**Errors** 返回的表将为[空](function-isblank-isempty.md)，且可使用 **[IsEmpty](function-isblank-isempty.md)** 函数进行测试。
 
@@ -74,13 +74,13 @@ ms.locfileid: "61551116"
 
 通过该应用，用户将 Chocolate 记录加载到一个数据输入窗体中，然后将 **Quantity** 更改为 90。  要使用的记录置于[上下文变量](../working-with-variables.md#use-a-context-variable) **EditRecord** 中：
 
-* **UpdateContext( { EditRecord:First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
+* @no__t 0UpdateContext （{EditRecord：First （Filter （IceCream，口味 = "巧克力"））） **
 
 若要在数据源中进行此更改，请使用 **[Patch](function-patch.md)** 函数：
 
 * **Patch( IceCream, EditRecord, Gallery.Updates )**
 
-其中**Gallery.Updates**的计算结果为 **{数量：90}**，因为仅**Quantity**修改属性。
+其中，**库**的计算结果为 **{数量：90}** ，因为仅修改了 "**数量**" 属性。
 
 但就在调用 **[Patch](function-patch.md)** 函数之前，其他人将 Chocolate 的 **Quantity** 修改为 80。  PowerApps 将检测到此情况，且不允许发生更改冲突。  可使用以下公式检查是否存在这种情况：
 
@@ -90,7 +90,7 @@ ms.locfileid: "61551116"
 
 | 记录 | 列 | 消息 | 错误 |
 | --- | --- | --- | --- |
-| {风格："巧克力"，Quantity:100 } |空白 |“另一个用户已修改你正尝试修改的记录。 请重新加载该记录，然后重试。” |ErrorKind.Conflict |
+| 风格"巧克力"，数量：100} |空白 |“另一个用户已修改你正尝试修改的记录。 请重新加载该记录，然后重试。” |ErrorKind.Conflict |
 
 可在窗体上放置标签，向用户显示此错误。
 

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/05/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3ceb6e0bcac83bbd79d78dac859a7ddb7acf42a8
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5e18b64910bbc7efca8c460100163e1a0716a089
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61519695"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992151"
 ---
 # <a name="notify-function-in-powerapps"></a>PowerApps 中的 Notify 函数
 向用户显示横幅消息。
@@ -45,7 +45,7 @@ PowerApps 还可以使用与 Notify 完全不同的机制发送推送通知。  
 
 Notify 始终返回“true”。
 
-注意：此函数以前名为**ShowError**时它可能仅显示错误消息。
+纪录如果此函数只能显示错误消息，则该函数以前名为**ShowError** 。
 
 ## <a name="syntax"></a>语法
 **Notify**( *Message*, [ *NotificationType* ] )

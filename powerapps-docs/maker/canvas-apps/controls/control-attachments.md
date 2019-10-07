@@ -8,31 +8,31 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 04/23/2018
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9d24094bfbc596c232e7455ef3d8b8dcdfc5be5c
-ms.sourcegitcommit: 9b2648a9066fe5d3b27b3d893daacba9b18eb75e
+ms.openlocfilehash: bc46f2a01e76741ccb046f382b0dd2829d23b368
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65609361"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987030"
 ---
 # <a name="attachments-control-in-powerapps"></a>PowerApps 中的附件控件
-允许用户将文件下载到其设备，以及上传和从 SharePoint 列表或 Common Data Service 实体中删除文件的控件。
+允许用户将文件下载到其设备，以及上传和删除 SharePoint 列表或 Common Data Service 实体中的文件的控件。
 
 ## <a name="limitations"></a>限制
 附件控件具有以下限制：
-1. 使用 SharePoint 列表和 Common Data Service 实体支持附件。
+1. SharePoint 列表和 Common Data Service 实体支持附件。
 
-1. 上传和删除功能仅在表单内部可正常工作。 附件控件显示为禁用状态时在编辑模式，而不是在窗体。 若要保存文件添加和删除操作，应用程序用户必须保存表单。 鉴于此限制，附件控件不是可从**插入**选项卡但显示在窗体时在 SharePoint 或 Common Data Service 的窗体中启用附件窗体字段。
+1. 上载和删除功能只能在窗体中使用。 在编辑模式下而不是在窗体中时，附件控件将显示为禁用状态。 若要保存文件添加和删除，应用程序用户必须保存窗体。 由于存在此限制，因此无法从 "**插入**" 选项卡访问 "附件" 控件，但当在 SharePoint 或 Common Data Service 窗体中启用了附件窗体字段时，该控件将显示在窗体中。
 
-1. 可以上传文件，前提是它们是 10 MB 或更小。  
+1. 仅当文件为 10 MB 或更小时，才能上载文件。  
 
 ## <a name="description"></a>描述
-**附件**控制可以打开、 添加和从 SharePoint 列表或 Common Data Service 实体中删除文件。
+使用 "**附件**" 控件，可以打开、添加和删除 SharePoint 列表或 Common Data Service 实体中的文件。
 
 ## <a name="key-properties"></a>关键属性
 [Items](properties-core.md) – 描述可下载文件的源。

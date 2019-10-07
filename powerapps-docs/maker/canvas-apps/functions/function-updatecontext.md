@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/08/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 20e06f7c03d0aca18b8351e546ccee3fff528f56
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 7750ad239df87e99d2321be20293b64153110fc1
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61537618"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71991828"
 ---
 # <a name="updatecontext-function-in-powerapps"></a>PowerApps 中的 UpdateContext 函数
 创建或更新当前屏幕的[上下文变量](../working-with-variables.md#use-a-context-variable)。
@@ -37,7 +37,7 @@ PowerApps 以公式为基础，这些公式会在用户与应用交互时自动�
 * 如果指定尚不存在的变量的名称，**UpdateContext** 会以该名称创建一个变量并将该变量的值设置为指定的值。
 * 如果之前已定义某变量，但未在这一特定 **UpdateContext** 公式中指定它，其值保持不变。
 
-使用 UpdateContext 或 [Navigate 函数](function-navigate.md)隐式创建上下文变量。  无需显式声明。  如果删除所有 UpdateContext 和 Navigate 到上下文变量的引用，则该上下文变量将不复存在。  若要清除变量，请将其值设置为 [Blank 函数](function-isblank-isempty.md)的结果。
+使用 UpdateContext或 [Navigate 函数](function-navigate.md)隐式创建上下文变量。  无需显式声明。  如果删除所有 UpdateContext和 Navigate到上下文变量的引用，则该上下文变量将不复存在。  若要清除变量，请将其值设置为 [Blank 函数](function-isblank-isempty.md)的结果。
 
 在创作环境中，可以使用“文件”菜单下的“变量”视图查看变量的值、定义和使用情况。
 
@@ -62,11 +62,11 @@ PowerApps 以公式为基础，这些公式会在用户与应用交互时自动�
 
 * *UpdateRecord* - 必需。 一条记录，其中包含至少一列的名称以及该列的值。 将为每列和指定的值创建或更新上下文变量。
 
-**UpdateContext**( { *ContextVariable1*:*Value1* [， *ContextVariable2*:*Value2* [，...]]})
+**UpdateContext**（{ *ContextVariable1*：*Value1* [， *ContextVariable2*：*Value2* [，...]] } )
 
 * *ContextVariable1* - 必需。  要创建或更新的上下文变量的名称。
 * *Value1* - 必需。  要分配给上下文变量的值。
-* *ContextVariable2*:*Value2*，...-可选。 要创建或更新的其他上下文变量及其值。
+* *ContextVariable2*：*Value2*，...-可选。 要创建或更新的其他上下文变量及其值。
 
 ## <a name="examples"></a>示例
 
@@ -75,8 +75,8 @@ PowerApps 以公式为基础，这些公式会在用户与应用交互时自动�
 | **UpdateContext( {&nbsp;Counter:&nbsp;1&nbsp;} )** |创建或修改上下文变量 **Counter**，将其值设置为 **1**。 |**Counter** 的值为 **1**。 可通过在公式中使用名称 **Counter** 来引用该变量。 |
 | **UpdateContext( {&nbsp;Counter:&nbsp;2&nbsp;} )** |将上一示例中 **Counter** 上下文变量的值设置为 **2**。 |**Counter** 的值为 **2**。 |
 | **UpdateContext( {&nbsp;Name:&nbsp;"Lily",&nbsp;Score:&nbsp;10&nbsp;} )** |创建或修改上下文变量 **Name** 和 **Score**，分别将它们的值设置为 **Lily** 和 **10**。 |**Name** 的值为 **Lily**，**Score** 的值为 **10**。 |
-| **UpdateContext( {&nbsp;Person:&nbsp;{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;} )** |创建或修改上下文变量 **Person**，将其值设置为一条记录。 该记录包含名为“姓名”和“地址”的两列。 “姓名”列为 **Milton**，“地址”列的值为 **1 Main St**。 |**Person** 的值为记录 **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}**。<br><br>使用名称 **Person** 整体引用此记录，或使用 **Person.Name** 或 **Person.Address** 引用此记录的单个列。 |
-| **UpdateContext ({&nbsp;人员：Patch(&nbsp;Person,&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;) }&nbsp;)** |搭配使用 **[Patch](function-patch.md)** 函数更新 **Person** 上下文变量，将“地址”列的值设置为 **2 Main St**。 |**Person** 现在的值为记录 **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}**。 |
+| **UpdateContext( {&nbsp;Person:&nbsp;{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;} )** |创建或修改上下文变量 **Person**，将其值设置为一条记录。 该记录包含名为“姓名”和“地址”的两列。 “姓名”列为 **Milton**，“地址”列的值为 **1 Main St**。 |**Person** 的值为记录 **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** 。<br><br>使用名称 **Person** 整体引用此记录，或使用 **Person.Name** 或 **Person.Address** 引用此记录的单个列。 |
+| @no__t 0UpdateContext （{&nbsp;Person：Patch （@no__t 0Person，&nbsp; {Address： &nbsp; "2 @ no__t-3Main @ no__t-4St" &nbsp;} &nbsp;）} &nbsp;） |搭配使用 **[Patch](function-patch.md)** 函数更新 **Person** 上下文变量，将“地址”列的值设置为 **2 Main St**。 |**Person** 现在的值为记录 **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** 。 |
 
 ### <a name="step-by-step-example"></a>分步示例
 1. 将默认屏幕命名为 **Source**，添加另一个屏幕，将其命名为 **Target**。

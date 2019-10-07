@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/23/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b35f8efdc090cc899476a65d73fd8cb3a4200faf
-ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
+ms.openlocfilehash: 50b5af342769b2153edbf91a7b5b28e3600f81b8
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550396"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71988242"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>了解 PowerApps 中的画布应用表和记录
 
@@ -40,7 +40,7 @@ ms.locfileid: "69550396"
 ### <a name="records"></a>记录
 每条记录包含个人、地点或事物的至少一个类别的信息。 上面的示例针对每种产品（“巧克力”、“面包”和“水”）显示一条记录，针对每个类别的信息（“价格”、“现有数量”和“订购量”）显示一列。
 
-在公式中，可以使用大括号在表的上下文外部引用记录本身。 例如, 以下记录 **{Name:"Strawberries", 价格:7.99}** 与表没有关联。 请注意，如该示例中的“名称”和“价格”等字段名称未括在双引号中。
+在公式中，可以使用大括号在表的上下文外部引用记录本身。 例如，此记录 **{Name："Strawberries"，价格：7.99}** 不与表相关联。 请注意，如该示例中的“名称”和“价格”等字段名称未括在双引号中。
 
 ### <a name="fields"></a>字段
 字段是记录中的单个信息片段。 可在特定记录的列中将此类字段可视化为值。
@@ -122,9 +122,9 @@ ms.locfileid: "69550396"
 
 ## <a name="table-functions-and-control-properties"></a>表函数和控件属性
 
-请考虑**Lower**函数。 如果 "**欢迎使用**变量" 包含文本**字符串 "hello, world"** , 则公式**Lower (欢迎)** 返回 **"hello, world"** 。  此函数不以任何方式更改该变量中的值。 **Lower**是纯函数, 因为它只处理输入并生成输出。 就是这样:它没有任何副作用。 Excel 中的所有函数和 PowerApps 中的大部分函数都是纯函数, 这允许自动重新计算工作簿或应用。
+请考虑**Lower**函数。 如果 "**欢迎使用**变量" 包含文本**字符串 "hello，world"** ，则公式**Lower （欢迎）** 返回 **"hello，world"** 。  此函数不以任何方式更改该变量中的值。 **Lower**是纯函数，因为它只处理输入并生成输出。 就是这样：它没有任何副作用。 Excel 中的所有函数和 PowerApps 中的大部分函数都是纯函数，这允许自动重新计算工作簿或应用。
 
-PowerApps 提供了一组函数, 这些函数以相同的方式对表进行操作。 这些函数采用表作为输入并对整个表进行筛选、排序、转换、缩小和汇总。 事实上, 通常采用单个值的**更低**和许多其他函数也可以采用单列表作为输入表。
+PowerApps 提供了一组函数，这些函数以相同的方式对表进行操作。 这些函数采用表作为输入并对整个表进行筛选、排序、转换、缩小和汇总。 事实上，通常采用单个值的**更低**和许多其他函数也可以采用单列表作为输入表。
 
 * **[Sort](functions/function-sort.md)** 、 **[Filter](functions/function-filter-lookup.md)** – 排序和筛选记录。
 * **[FirstN](functions/function-first-last.md)** 、 **[LastN](functions/function-first-last.md)** – 返回表的前 N 条或最后 N 条记录。
@@ -138,18 +138,18 @@ PowerApps 提供了一组函数, 这些函数以相同的方式对表进行操�
 * **[HashTags](functions/function-hashtags.md)** – 搜索字符串中的哈希标记。
 * **[Errors](functions/function-errors.md)** – 提供处理数据源时出现的错误信息。
 
-其中的许多函数都采用单列表作为其输入表。 如果整个表只有一个列, 则可以按名称指定它。 如果表有多个列, 则可以通过使用*表列*语法指定这些列中的一个。 例如, **Products.Name**从**Products**表中返回唯一**名称**值的单列表。
+其中的许多函数都采用单列表作为其输入表。 如果整个表只有一个列，则可以按名称指定它。 如果表有多个列，则可以通过使用*表列*语法指定这些列中的一个。 例如， **Products.Name**从**Products**表中返回唯一**名称**值的单列表。
 
-不过你想通过使用可以全面重新表 **[AddColumns](functions/function-table-shaping.md)** ，  **[RenameColumns](functions/function-table-shaping.md)** ，  **[ShowColumns](functions/function-table-shaping.md)** ，或 **[DropColumns](functions/function-table-shaping.md)** 函数。 同样, 这些函数仅更改其输出, 而不会更改其源。
+您可以通过使用 **[AddColumns](functions/function-table-shaping.md)** 、 **[RenameColumns](functions/function-table-shaping.md)** 、 **[ShowColumns](functions/function-table-shaping.md)** 或 **[DropColumns](functions/function-table-shaping.md)** 函数来完全改变表的形状。 同样，这些函数仅更改其输出，而不会更改其源。
 
-控件的属性也可以是表:
+控件的属性也可以是表：
 
 * **Items** -适用于库、列表框和组合框。 此属性定义库或列表所显示的表。
 * **SelectedItems** -适用于列表框和组合框。 此属性定义了在启用**SelectMultiple**的情况下用户已选择的项的表。
 
 ## <a name="behavioral-formulas"></a>行为公式
 
-其他功能专门用于修改数据和产生副作用。 由于这些函数不是纯函数, 因此您必须仔细生成它们, 并且它们不能参与自动重新计算应用程序中的值。 只能在[行为公式](working-with-formulas-in-depth.md)中使用这些函数。
+其他功能专门用于修改数据和产生副作用。 由于这些函数不是纯函数，因此您必须仔细生成它们，并且它们不能参与自动重新计算应用程序中的值。 只能在[行为公式](working-with-formulas-in-depth.md)中使用这些函数。
 
 * **[Collect](functions/function-clear-collect-clearcollect.md)** 、 **[Clear](functions/function-clear-collect-clearcollect.md)** 、 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** -创建集合、清除集合并向其中添加数据。
 * **[Patch](functions/function-patch.md)** -修改记录中的一个或多个字段。
@@ -160,7 +160,7 @@ PowerApps 提供了一组函数, 这些函数以相同的方式对表进行操�
 
 还可以构建一个公式来计算单个记录的数据，采用单个记录作为参数，并提供单个记录作为返回值。 返回到上面的库示例，我们使用 **Gallery1.Selected** 属性来显示用户在该库中选择的任何记录中的信息。
 
-1. 添加[ **按钮** ](controls/control-button.md)，并设置其 **[OnSelect](controls/properties-core.md)** 属性设为此公式：<br>
+1. 添加一个[**按钮**](controls/control-button.md)，并将其 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：<br>
     Collect( SelectedRecord, Gallery1.Selected )
 
 2. 按住 Alt 键，并选择按钮。
@@ -216,9 +216,9 @@ PowerApps 提供了一组函数, 这些函数以相同的方式对表进行操�
 * **Filter**、**Lookup** – 公式确定是否应将该记录包含在输出中。
 * **Concat** – 公式确定要串联在起来的字符串。
 * **Distinct** – 公式返回一个值，用于识别重复的记录。
-* **ForAll** -公式可以返回任何值, 可能会产生副作用。
+* **ForAll** -公式可以返回任何值，可能会产生副作用。
 * **Sort** – 公式提供作为记录排序依据的值。
-* **With**公式可以返回任何值, 可能会产生副作用。
+* **With**公式可以返回任何值，可能会产生副作用。
 
 在这些公式中，可以引用所要处理的记录的字段。 其中的每个函数创建一个“记录范围”，将在该范围中计算公式，记录的字段可用作顶级标识符。 也可以引用整个应用中的控件属性和其他值。
 
@@ -226,7 +226,7 @@ PowerApps 提供了一组函数, 这些函数以相同的方式对表进行操�
 
 ![](media/working-with-tables/requested.png)
 
-若要在应用程序中创建此示例表, 请插入一个按钮, 将其 " **OnSelect** " 属性设置为此公式, 然后选择该按钮 (在按住 Alt 键的同时按住 PowerApps Studio):
+若要在应用程序中创建此示例表，请插入一个按钮，将其 " **OnSelect** " 属性设置为此公式，然后选择该按钮（在按住 Alt 键的同时按住 PowerApps Studio）：
 
 ```powerapps-dot
 Set( Products,
@@ -239,7 +239,7 @@ Set( Products,
 )
 ```
 
-若要确定是否有任何这些产品的请求数超过可用的数量, 请执行以下操作:
+若要确定是否有任何这些产品的请求数超过可用的数量，请执行以下操作：
 
 `Filter( Products, 'Quantity Requested' > 'Quantity Available' )`
 
@@ -260,7 +260,7 @@ AddColumns(
 
 ![](media/working-with-tables/toorder.png)
 
-最后, 我们可以将结果表缩小到所需的列:
+最后，我们可以将结果表缩小到所需的列：
 
 ```powerapps-dot
 ShowColumns(
@@ -298,7 +298,7 @@ ShowColumns(
 
 可以使用 **ClearCollect( Y, ["A", "B"] )** 创建此集合。
 
-此外, 使用以下公式定义名为**Value**的上下文变量:**UpdateContext ({Value: "!"})**
+此外，使用以下公式定义名为**Value**的上下文变量：**UpdateContext （{Value： "！"}）**
 
 我们将这些公式组合在一起。 在此上下文中，以下公式：
 
@@ -334,23 +334,23 @@ Ungroup(
 )
 ```
 
-所有 **ForAll** 记录范围将替代全局范围。 未使用歧义运算符运算符定义的**值**上下文变量不能按名称提供。 若要访问此值, 请使用 **[@Value]** 。
+所有 **ForAll** 记录范围将替代全局范围。 未使用歧义运算符运算符定义的**值**上下文变量不能按名称提供。 若要访问此值，请使用 **[@Value]** 。
 
-由于嵌套的**ForAll**函数产生嵌套的结果表, 因此**取消组合**会导致结果。
+由于嵌套的**ForAll**函数产生嵌套的结果表，因此**取消组合**会导致结果。
 
 ## <a name="single-column-tables"></a>单列表
 
-若要对表中的单个列执行操作, 请使用**ShowColumns**函数, 如以下示例中所示:
+若要对表中的单个列执行操作，请使用**ShowColumns**函数，如以下示例中所示：
 
 ```powerapps-dot
 ShowColumns( Products, "Product" )
 ```
 
-此公式生成此单列表:
+此公式生成此单列表：
 
 ![](media/working-with-tables/single-column.png)
 
-对于较短的替代方法, 请指定*表列*, 这将从*表*中提取只是*列*的单列表。 例如, 此公式生成的结果与使用**ShowColumns**完全相同。
+对于较短的替代方法，请指定*表列*，这将从*表*中提取只是*列*的单列表。 例如，此公式生成的结果与使用**ShowColumns**完全相同。
 
 ```powerapps-dot
 Products.Product
@@ -399,7 +399,7 @@ Table(
 ## <a name="inline-value-tables"></a>内联值表
 可以通过在方括号中指定值来创建单列表。 生成的表包含名为 **Value** 的单个列。
 
-例如, `[ 1, 2, 3, 4 ]`等效于`Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )`并返回此表:
+例如，`[ 1, 2, 3, 4 ]` 等效于 `Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )` 并返回此表：
 
 ![](media/working-with-tables/inline-table.png)
 

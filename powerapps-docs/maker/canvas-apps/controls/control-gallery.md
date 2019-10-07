@@ -6,21 +6,21 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/25/2017
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ba5df28f03ec5e7c9a3d8146aecb0427d8145b13
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 964f57c427b8e9e2e2f7a50e3d6e149ddea8e8b0
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544237"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986665"
 ---
-# <a name="gallery-control-in-canvas-apps"></a>库控件中的画布应用
+# <a name="gallery-control-in-canvas-apps"></a>画布应用中的库控件
 
 包含其他控件并显示一组数据的控件。
 
@@ -28,11 +28,11 @@ ms.locfileid: "61544237"
 
 “库”控件可以显示数据源中的多条记录，每条记录都能包含多种类型的数据。 例如，“库”控件可以显示多个联系人，其中每一项都用于显示联系人信息，包括每个联系人的姓名、地址和电话号码。 每个数据字段显示在“库”控件的单独控件内，可以在库模板中配置这些控件。 此模板显示为库中的第一项，如果库为水平/横向，此模板显示在“库”控件的左边缘；如果库为垂直/纵向，此模板显示在“库”控件的上边缘。 在模板中执行的任何更改都会反映在整个“库”控件中。
 
-显示图像和文本在库中的都可用，以及一个高度可变的项的库的预定义的模板。
+提供了用于在库中显示图像和文本的预定义模板，以及可变高度项的库。
 
 ## <a name="limitations"></a>限制
 
-如果用户滚动**可变高度**库控件之前加载的所有项，它当前处于视图可能会被推下并向外视图的数据加载完成后的项。 若要避免此问题，请使用标准**库**而不是控制**可变高度**变体。
+如果用户在加载所有项之前滚动 "**灵活的高度**库" 控件，则在数据加载完成后，可能会向下或向外推送当前正在查看的项。 若要避免此问题，请使用标准**库**控件，而不是**灵活的高度**变体。
 
 ## <a name="key-properties"></a>关键属性
 
@@ -44,7 +44,7 @@ Selected - 选定项。
 
 ## <a name="additional-properties"></a>其他属性
 
-**[AccessibleLabel](properties-accessibility.md) ** – 屏幕阅读器标签的库 （不包含的项）。 应描述项列表是什么。
+**["Accessiblelabel"](properties-accessibility.md)** –屏幕阅读器的库（不是其包含的项）的标签。 应描述项列表是什么。
 
 AllItems - 库中的所有项，其中包括属于库模板的附加控件值。
 
@@ -60,11 +60,11 @@ AllItems - 库中的所有项，其中包括属于库模板的附加控件值。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
-**ItemAccessibleLabel** – 屏幕阅读器每个库项的标签。 应描述每个项是什么。
+**ItemAccessibleLabel** –屏幕阅读器的每个库项的标签。 应说明每个项的内容。
 
 NavigationStep - 当库的“ShowNavigation”属性设为“true”，且用户选择库任意一端的导航箭头时，库的滚动距离。
 
-**可选择**-是否可以选择库项。 如果设置为 **，则返回 true**，屏幕阅读器确定库作为可选择列表中，并通过单击或点击它选择一个项。 如果设置为**false**，屏幕阅读器标识库作为常规列表，并单击或点击某个项不会选中它。
+**可选**–是否可以选择库项。 当设置为**true**时，屏幕阅读器会将库标识为可选列表，并通过单击或点击该项来选择项。 当设置为**false**时，屏幕读取器将库标识为常规列表，单击或点击项并不选中。
 
 ShowNavigation - 是否在库的每一端显示一个箭头，以便用户可以通过单击或点击箭头滚动浏览库中的项。
 
@@ -125,15 +125,15 @@ WrapCount - 每行或每列（具体取决于是水平布局还是垂直布局�
 * **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
 
     > [!NOTE]
-    > 库中的项更改时，屏幕阅读器将公布。 还将提到“AccessibleLabel”。 这为公告提供上下文，甚至在同一个屏幕上有多个库的情况下更为重要。
+    > 屏幕阅读器将在库中的项目更改时公布。 还将提到“AccessibleLabel”。 这为公告提供上下文，甚至在同一个屏幕上有多个库的情况下更为重要。
 
-* 当库项包含多个控件时，可以使用**ItemAccessibleLabel**汇总的库项的内容。
+* 如果库项包含多个控件，请使用**ItemAccessibleLabel**汇总库项的内容。
 
-* 设置的值**可选**到**true**如果你希望用户选择库项。 否则，将该值设置为**false**。
+* 如果希望用户选择库**项，请**将值设置为**true** 。 否则，将该值设置为**false**。
 
-* 当库项包含多个控件时，可以使用**ItemAccessibleLabel**要汇总的库项的内容。
+* 如果库项包含多个控件，请使用**ItemAccessibleLabel**提供库项的内容的摘要。
 
-* **可选择**设置应正确，具体取决于用户是否要选择库项。
+* **应根据**用户是否打算选择库项，相应地设置可选择。
 
 ### <a name="keyboard-support"></a>键盘支持
 

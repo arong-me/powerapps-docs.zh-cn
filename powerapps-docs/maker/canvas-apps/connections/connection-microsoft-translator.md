@@ -8,17 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 07/12/2017
 ms.author: lanced
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 405dcf432526206aa3a5f341a38e2ae5547cea1f
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 4eab4585a2abd8633704c76b57cde52702982e97
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61545540"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994029"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>从 PowerApps 连接到 Microsoft Translator
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -156,7 +156,7 @@ ms.locfileid: "61545540"
 | 名称 |字符串 |否 | |
 
 ### <a name="texttospeech"></a>TextToSpeech
-文本到语音转换：将给定文本转换为声波格式音频流的语音
+文本到语音：将给定文本转换为声波格式音频流的语音
 
 #### <a name="input-properties"></a>输入属性
 

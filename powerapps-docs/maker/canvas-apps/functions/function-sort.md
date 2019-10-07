@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/26/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c405af25d0e3228939b908c081ea8b08ce674ea6
-ms.sourcegitcommit: d87b2068a63e416e2814791328a3a47bbcb5bb48
+ms.openlocfilehash: aa51c97eff57b9659e5fd246af8016898eeeb9df
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "61519464"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992247"
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>PowerApps 中的 Sort 和 SortByColumns 函数
 对[表](../working-with-tables.md)进行排序。
@@ -30,13 +30,13 @@ ms.locfileid: "61519464"
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
-若要先按一列进行排序，然后再按另一列进行排序，请在 **Sort** 公式中嵌入另一个此公式。 例如，使用以下公式进行排序**联系人**表中第一次**LastName**列，然后按**FirstName**列：**Sort( Sort( Contacts, LastName ), FirstName )**
+若要先按一列进行排序，然后再按另一列进行排序，请在 **Sort** 公式中嵌入另一个此公式。 例如，您可以使用此公式先按**LastName**列再按**FirstName**列排序**Contacts**表：**排序（"联系人"、"LastName"）、FirstName**
 
 还可以使用 **SortByColumns** 函数根据一列或多列对表进行排序。
 
 **SortByColumns** 的参数列表提供了作为排序依据的列的名称，以及每个列的排序方向。  系统按参数顺序执行排序（先按第一列排序，然后按第二列排序，依此类推）。  将列名称指定为字符串。如果直接在参数列表中添加列名称，必须用双引号括起来。  例如，**SortByColumns( CustomerTable, "LastName" )** 。
 
-可以将 **SortByColumns**与 **[下拉列表](../controls/control-drop-down.md)** 或 **[列表框](../controls/control-list-box.md)** 控件结合使用，以便用户能够选择作为排序依据的列。
+可以将 **SortByColumns** 与 **[下拉列表](../controls/control-drop-down.md)** 或 **[列表框](../controls/control-list-box.md)** 控件结合使用，以便用户能够选择作为排序依据的列。
 
 除了进行升序或降序排序之外，**SortByColumns** 还可以根据单列表值进行排序。  例如，可以提供 **[ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ]** 作为排序顺序，从而根据星期几的名称对记录进行排序。  所有包含 **Monday"** 的记录会先显示，随后显示包含 **Tuesday** 的记录，依此类推。  与排序顺序表不匹配的记录被置于列表末尾显示。
 
@@ -58,7 +58,7 @@ ms.locfileid: "61519464"
 * *SortOrder(s)* - 可选。  **SortOrder.Ascending** 或 **SortOrder.Descending**。  **SortOrder.Ascending** 是默认值。  如果提供了多个 *ColumnNames* ，则最后一列必须包括 *SortOrder* 。
   
     > [!NOTE]
-  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”  。 例如，将“Column Name”  指定为“Column_x0020_Name”  。
+  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
 
 **SortByColumns**( *Table*, *ColumnName*, *SortOrderTable* )
 
@@ -67,7 +67,7 @@ ms.locfileid: "61519464"
 * *SortOrderTable* - 必需。  作为排序依据的单列表值。
   
     > [!NOTE]
-  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”  。 例如，将“Column Name”  指定为“Column_x0020_Name”  。
+  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
 
 ## <a name="examples"></a>示例
 在下面的示例中，我们将使用 **IceCream** [数据源](../working-with-data-sources.md)，其中包含下表中的数据：
@@ -86,7 +86,7 @@ ms.locfileid: "61519464"
 ### <a name="step-by-step"></a>分步操作
 若要自行运行这些示例，请将 **IceCream** 数据源创建为[集合](../working-with-data-sources.md#collections)：
 
-1. 添加一个按钮，然后将其 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：<br>**ClearCollect (IceCream，{风格："巧克力"，Quantity:100，OnOrder:150}，{风格："普通"，Quantity:200，OnOrder:20}，{风格："草莓"，Quantity:300，OnOrder:0}，{风格："Mint Chocolate"，Quantity:60，OnOrder:100}，{风格："Pistachio"，Quantity:200，OnOrder:10 } )**
+1. 添加一个按钮，然后将其 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：<br>@no__t 0ClearCollect （IceCream，{口味："巧克力"，数量：100，OnOrder：150}，{口味："Vanilla"，数量：200，OnOrder：20}，{口味："草莓"，数量：300，OnOrder：0}，{口味："Mint 巧克力"，数量：60，OnOrder：100}，{口味："Pistachio"，数量：200，OnOrder：10}） **
 2. 预览应用，选择按钮，然后按 Esc 返回到默认工作区。
 3. 选择“**文件**”菜单上的“**集合**”，调出刚刚创建的集合，然后按 Esc 返回到默认工作区。
 
@@ -103,7 +103,7 @@ ms.locfileid: "61519464"
 1. 添加另一个按钮，然后将其 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：<br>
    **ClearCollect( SortByQuantity, SortByColumns( IceCream, "Quantity", Ascending, "Flavor", Descending ) )**
    
-     上一公式创建第三个集合（名为 **SortByQuantity**），其中包含与 **Ice Cream** 相同的数据。 但是，新集合包含按排序的数据**Quantity**列按升序排列，然后按**风格**降序排序的列。
+     上一公式创建第三个集合（名为 **SortByQuantity**），其中包含与 **Ice Cream** 相同的数据。 但是，新集合包含按**数量**列按数值升序排序的数据，然后按按降序排列的**口味**列排序。
 2. 按 F5，选择两个新按钮，然后按 Esc。
 3. 选择“**文件**”菜单上的“**集合**”，调出所有三个集合，然后按 Esc 返回到默认工作区。
 4. 重复最后三步，不同之处在于更改要创建的集合的名称，然后将 **SortByColumns** 公式替换为本部分前面示例表中的另一 **SortByColumns** 公式。

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/09/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5997df0d6e2a6a2d6732d10cefa146f4ba6e33dc
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 79f035271b2a98faf6ddb7bba716c7107e311183
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548414"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71991916"
 ---
 # <a name="trim-and-trimends-functions-in-powerapps"></a>PowerApps 中的 Trim 和 TrimEnds 函数
 从文本字符串中删除多余空格。
@@ -61,5 +61,5 @@ ms.locfileid: "61548414"
 | **TrimEnds(&nbsp;Spaces&nbsp;)** |修剪 **Spaces** 集合中每个字符串开头和结尾的所有空格。 |<style> img { max-width: none } </style> ![](media/function-trim/output-trimends.png) |
 
 > [!NOTE]
-> 如果通过单击或点击“文件”  菜单上的“集合”  来显示集合，则不会出现多余空格。 若要验证字符串长度，请使用 **[Len](function-len.md)** 函数。
+> 如果通过单击或点击“文件”菜单上的“集合”来显示集合，则不会出现多余空格。 若要验证字符串长度，请使用 **[Len](function-len.md)** 函数。
 

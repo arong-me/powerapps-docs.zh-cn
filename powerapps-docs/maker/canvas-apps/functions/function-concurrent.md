@@ -6,31 +6,31 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/26/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ce8128f3a5eddf3a67fe2082844bf996c25adc05
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 7ab695d461cb980556a3027297c3e7f5ac5bde61
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551360"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985522"
 ---
 # <a name="concurrent-function-in-powerapps"></a>PowerApps 中的 Concurrent 函数
 并发计算多个公式。
 
 ## <a name="description"></a>描述
-Concurrent 函数同时计算多个公式。 通常情况下，多个公式的计算通过链接在一起使用它们[ **;**](operators.md)运算符计算每个按顺序的顺序。 当应用并发执行操作时，用户等待较短时间即可获得相同结果。
+Concurrent 函数同时计算多个公式。 通常情况下，通过将多个公式与[ **;** ](operators.md)运算符链接在一起，后者按顺序对每个公式进行顺序计算。 当应用并发执行操作时，用户等待较短时间即可获得相同结果。
 
 在应用的 [**OnStart**](../controls/control-screen.md) 属性中，使用 **Concurrent** 在应用程序加载数据时提高性能。 如果必须等到前一个调用完成才能启动数据调用，则应用必须等待所有请求时间之和。 如果数据调用都同时启动，应用只需等待最长请求的时间。 Web 浏览器通常通过同时执行数据操作提高性能。
 
-不能预测 Concurrent 函数中的公式开始和结束求值的顺序。 Concurrent 函数中的公式不应包含对同一 Concurrent 函数中其他公式的依赖项，如果尝试这么做，PowerApps 会显示错误。 在其中，可以安全接受对 Concurrent 函数之外公式的依赖项，因为它们会在 Concurrent 函数开始之前完成。 公式后的**并发**函数可以安全地执行依赖项中的公式： 它们将全部完成之前**并发**函数完成并转到链中的下一步公式 (如果你使用 **;** 运算符)。 如果要调用有副作用的函数或服务方法，请注意细微的顺序依赖关系。
+不能预测 Concurrent 函数中的公式开始和结束求值的顺序。 Concurrent 函数中的公式不应包含对同一 Concurrent 函数中其他公式的依赖项，如果尝试这么做，PowerApps 会显示错误。 在其中，可以安全接受对 Concurrent 函数之外公式的依赖项，因为它们会在 Concurrent 函数开始之前完成。 **并发**函数后的公式可以安全地对内的公式进行依赖关系：它们将在**并发**函数完成之前全部完成，并移到链中的下一个公式（如果使用的是 **;** 运算符）。 如果要调用有副作用的函数或服务方法，请注意细微的顺序依赖关系。
 
-可以链接在一起使用的公式 **;** 运算符的参数内**并发**。 例如 Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) ) 将同时计算 Set( a, 1 ); Set( b, a+1 ) 和 Set( x, 2 ); Set( y, x+2 ) 在本例中，公式内的依赖项可正常运行：a 将在 b 前设置，x 将在 y 前设置。
+可以将公式与参数中的 **;** 运算符组合在一起以进行**并发**。 例如 Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) ) 将同时计算 Set( a, 1 ); Set( b, a+1 ) 和 Set( x, 2 ); Set( y, x+2 ) 在本例中，公式内的依赖项可正常运行：a 将在 b 前设置，x 将在 y 前设置。
 
 根据应用运行于的设备或浏览器，实际可能只有少量的公式会同时求值。 Concurrent 使用提供的功能，并在所有公式计算完成后完成。
 
@@ -47,7 +47,7 @@ Concurrent 函数同时计算多个公式。 通常情况下，多个公式的�
 
 #### <a name="loading-data-faster"></a>更快地加载数据
 
-1. 创建应用，并从 Common Data Service、 SQL Server 或 SharePoint 中添加四个数据源。 
+1. 创建应用，然后从 Common Data Service、SQL Server 或 SharePoint 添加四个数据源。 
 
     此示例使用来自 [SQL Azure 上的示例 Adventure Works 数据库](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal)的四个表。 创建数据库后，请使用完全限定的服务器名称（例如 srvname.database.windows.net）从 PowerApps 连接到它：
 
@@ -131,7 +131,7 @@ Concurrent 函数同时计算多个公式。 通常情况下，多个公式的�
 
 4. 添加[**数据表**](../controls/control-data-table.md)控件，然后将其 Items 属性设置为 Results。
 
-1. 上**属性**的右窗格中，选择的选项卡**编辑字段**以打开**字段**窗格。
+1. 在右窗格的 "**属性**" 选项卡上，选择 "**编辑字段**"，打开 "**字段**" 窗格。
 
 1. 在字段列表中，选中每个字段的复选框，以在数据表中显示它们。
 

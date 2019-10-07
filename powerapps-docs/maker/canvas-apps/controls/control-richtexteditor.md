@@ -6,22 +6,22 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/24/2018
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3174d959a2360b36e82cd7070c4401251ca9fe18
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c6b94f636ebf6d373c3fc2117b589116b5a4a2fd
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61526254"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986346"
 ---
-# <a name="rich-text-editor-control-in-powerapps"></a>在 PowerApps 中的多格式文本编辑器控件
-允许最终用户设置 WYSIWYG 编辑区域内的文本的格式。  输出格式为 HTML。
+# <a name="rich-text-editor-control-in-powerapps"></a>PowerApps 中的富文本编辑器控件
+允许最终用户设置所见即所得编辑区域内的文本格式。  输出格式为 HTML。
 
 ## <a name="description"></a>描述
 “RTF 编辑器”控件为应用用户提供用于设置文本格式的 WYSIWYG 编辑区域。  控件的输入和输出格式为 HTML。
@@ -72,4 +72,4 @@ ms.locfileid: "61526254"
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
 
 > [!TIP]
-> 使用**Alt + 0**焦点位于编辑器若要了解有关其他键盘快捷方式。
+> 使用**Alt + 0**时，编辑器的重点是了解其他键盘快捷方式。

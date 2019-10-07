@@ -6,22 +6,22 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 07/05/2018
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 61a7e67b7914e5f844397389833f830244d5af28
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: b03f60173ea09160677bd02adf8a91aae02c272d
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63318102"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985667"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>了解画布应用中的委派
-PowerApps 包括一组功能强大的筛选、 排序和整理的画布应用中的数据的表的函数：**[筛选器](functions/function-filter-lookup.md)**， **[排序](functions/function-sort.md)**，以及 **[AddColumns](functions/function-table-shaping.md)** 函数等等。 可以使用这些函数，让用户重点访问其所需的信息。 对于具有数据库背景的用户来说，使用这些函数相当于编写数据库查询。
+PowerApps 包含一组功能强大的函数，用于在画布应用中筛选、排序和成形数据表： **[筛选](functions/function-filter-lookup.md)** 、 **[排序](functions/function-sort.md)** 和 **[AddColumns](functions/function-table-shaping.md)** 函数，只需对其进行命名。 可以使用这些函数，让用户重点访问其所需的信息。 对于具有数据库背景的用户来说，使用这些函数相当于编写数据库查询。
 
 若要生成有效的应用，关键是尽量减少必须转到设备的数据量。 也许在成千上万条记录中，只需要少量记录；也许单个聚合值就可以代表数千条记录。 也许只有第一组记录可以检索，而其余记录是用户在需要更多记录的情况下通过笔势输入的。 进行重点访问可以大幅缩减应用所需的处理能力、内存和网络带宽，提高用户的响应速度，即使使用的是通过移动电话网络连接的手机。 
 
@@ -35,13 +35,13 @@ PowerApps 包括一组功能强大的筛选、 排序和整理的画布应用中
 > 以前，委派警告在 PowerApps 中标记为“蓝点”建议，但此后，委派建议已经重新分类为警告。 如果数据源中的数据超过 500 条记录，则不能委派函数，PowerApps 可能不能检索所有数据，应用可能会得到错误的结果。 委派警告可帮助管理应用，使其得到正确的结果。
 
 ## <a name="delegable-data-sources"></a>可委托的数据源
-对于某些表格数据源支持委派。 如果数据源支持委派，其[连接器文档](https://docs.microsoft.com/connectors/)概述了该功能的支持。 例如，这些表格数据源是最常用的并支持委托：
+仅某些表格数据源支持委托。 如果数据源支持委托，其[连接器文档](https://docs.microsoft.com/connectors/)将概述该支持。 例如，这些表格数据源是最常用的，它们支持委托：
 
 - [Common Data Service](https://docs.microsoft.com/connectors/commondataservice/) 
 - [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/) 
 - [SQL Server](https://docs.microsoft.com/connectors/sql/) 
 
-导入 Excel 工作簿 (使用**将静态数据添加到你的应用**数据源)，集合和上下文变量中存储的表不需要委派。 所有此类数据都已在内存中，可以应用完整的 PowerApps 语言。
+导入的 Excel 工作簿（使用 "**将静态数据添加到应用**数据源"）、集合和存储在上下文变量中的表不需要委托。 所有此类数据都已在内存中，可以应用完整的 PowerApps 语言。
 
 ## <a name="delegable-functions"></a>委派函数
 下一步是仅使用那些可以委派的公式。 下面提供的是可以委派的公式元素。 但是，数据源各不相同，并非所有数据源都支持所有这些元素。 请在具体公式中查看委派警告。
@@ -49,30 +49,30 @@ PowerApps 包括一组功能强大的筛选、 排序和整理的画布应用中
 这些列表会随时间而变化。 我们将努力为更多具有委派功能的函数和运算符提供支持。
 
 ### <a name="filter-functions"></a>Filter 函数
-**[Filter](functions/function-filter-lookup.md)**、**[Search](functions/function-filter-lookup.md)** 和 **[LookUp](functions/function-filter-lookup.md)** 可以委派。  
+**[Filter](functions/function-filter-lookup.md)** 、 **[Search](functions/function-filter-lookup.md)** 和 **[LookUp](functions/function-filter-lookup.md)** 可以委派。  
 
 在 Filter 和 LookUp 函数中，可以对表的列使用以下项来选择相应的记录：
 
-* **[And](functions/function-logicals.md)**（包括 **[&&](functions/operators.md)**）、**[Or](functions/function-logicals.md)**（包括 **[||](functions/operators.md)**）、**[Not](functions/function-logicals.md)**（包括 **[!](functions/operators.md)**）
+* **[And](functions/function-logicals.md)** （包括 **[&&](functions/operators.md)** ）、 **[Or](functions/function-logicals.md)** （包括 **[||](functions/operators.md)** ）、 **[Not](functions/function-logicals.md)** （包括 **[!](functions/operators.md)** ）
 * **[In](functions/operators.md)**
-* **[=](functions/operators.md)**、**[<>](functions/operators.md)**、**[>=](functions/operators.md)**、**[<=](functions/operators.md)**、**[>](functions/operators.md)**、**[<](functions/operators.md)**
-* **[+](functions/operators.md)**、**[-](functions/operators.md)**
+* **[=](functions/operators.md)** 、 **[<>](functions/operators.md)** 、 **[>=](functions/operators.md)** 、 **[<=](functions/operators.md)** 、 **[>](functions/operators.md)** 、 **[<](functions/operators.md)**
+* **[+](functions/operators.md)** 、 **[-](functions/operators.md)**
 * **[TrimEnds](functions/function-trim.md)**
 * **[IsBlank](functions/function-isblank-isempty.md)**
-* **[StartsWith](functions/function-startswith.md)**，  **[EndsWith](functions/function-startswith.md)**
+* **[StartsWith](functions/function-startswith.md)** 、  **[EndsWith](functions/function-startswith.md)**
 * 所有记录中均相同的常量值，如控件属性和[全局变量和上下文变量](working-with-variables.md)。
 
-还可使用公式中对所有记录的求值结果都是一个常量值的某些部分。 例如，**左侧 (Language()，2)**，**日期 (2019，3，31)**，并**today （)** 不依赖于记录的任何列，因此，返回所有记录的相同值。 这些值可以发送到数据源为常量，不会阻止委派。 
+还可使用公式中对所有记录的求值结果都是一个常量值的某些部分。 例如， **Left （Language （），2）** ， **Date （2019，3，31）** ，并且**Today （）** 不依赖于记录的任何列，因此，为所有记录返回相同的值。 这些值可以作为常量发送到数据源，而不会阻止委托。 
 
 以上列表不包括这些值得注意的项：
 
 * **[If](functions/function-if.md)**
-* **[*](functions/operators.md)**、**[/](functions/operators.md)**、**[Mod](functions/function-mod.md)**
-* **[Concatenate](functions/function-concatenate.md)**（包括 **[&](functions/operators.md)**）
+* **[*](functions/operators.md)** 、 **[/](functions/operators.md)** 、 **[Mod](functions/function-mod.md)**
+* **[Concatenate](functions/function-concatenate.md)** （包括 **[&](functions/operators.md)** ）
 * **[ExactIn](functions/operators.md)**
-* 字符串操作函数：**[较低](functions/function-lower-upper-proper.md)**， **[上部](functions/function-lower-upper-proper.md)**， **[左侧](functions/function-left-mid-right.md)**， **[中旬](functions/function-left-mid-right.md)** ，  **[Len](functions/function-left-mid-right.md)**，...
-* 信号：**[位置](functions/signals.md)**， **[加速](functions/signals.md)**， **[指南针](functions/signals.md)**，...
-* 可变函数：**[Rand](functions/function-rand.md)**，...
+* 字符串操作函数： **[Lower](functions/function-lower-upper-proper.md)** 、 **[Upper](functions/function-lower-upper-proper.md)** 、 **[Left](functions/function-left-mid-right.md)** 、 **[Mid](functions/function-left-mid-right.md)** 、 **[Len](functions/function-left-mid-right.md)** 。
+* 引发 **[位置](functions/signals.md)** ， **[加速](functions/signals.md)** ， **[罗盘](functions/signals.md)** ，。
+* Volatiles: **[Rand](functions/function-rand.md)** ，。
 * [集合](working-with-variables.md)
 
 ### <a name="sorting-functions"></a>排序函数
@@ -87,11 +87,11 @@ PowerApps 包括一组功能强大的筛选、 排序和整理的画布应用中
 
 无法委派 [StdevP](functions/function-aggregates.md) 和 [VarP](functions/function-aggregates.md) 等其他聚合函数。
 
-### <a name="table-shaping-functions"></a>表整形函数
+### <a name="table-shaping-functions"></a>表定形函数
 
-**[AddColumns](functions/function-table-shaping.md)**， **[DropColumns](functions/function-table-shaping.md)**， **[RenameColumns](functions/function-table-shaping.md)**，和 **[ShowColumns](functions/function-table-shaping.md)** 部分支持委派。  可以委派其参数中的公式。  但是，这些函数的输出会受非委派记录限制。
+**[AddColumns](functions/function-table-shaping.md)** 、 **[DropColumns](functions/function-table-shaping.md)** 、 **[RenameColumns](functions/function-table-shaping.md)** 和 **[ShowColumns](functions/function-table-shaping.md)** 部分支持委托。  可以委托参数中的公式。  但是，这些函数的输出受非委托记录限制的限制。
 
-如本示例所示创建者通常使用**AddColumns**并**查找**从一个表的信息合并到另一个，通常称为在数据库中的联接：
+如本示例中所示，通常使用**AddColumns**和**LookUp**将一个表中的信息合并到另一个表（通常称为数据库行话中的联接）：
 
 ```powerapps-dot
 AddColumns( Products, 
@@ -100,24 +100,24 @@ AddColumns( Products,
 )
 ```
 
-即使**产品**并**供应商**可能是可委派数据源并**查找**是可委派的函数的输出**AddColumns**函数不是可委派。 整个公式的结果仅限于第一部分**产品**数据源。 由于 LookUp 函数及其数据源可以委派，因此可能会在数据源的任何位置找到 Suppliers 的匹配项，即使该数据源很大。 
+即使**产品**和**供应商**可能可委派数据源并且**查找**是可委派函数， **AddColumns**函数的输出也不会可委派。 整个公式的结果限制为 "**产品**" 数据源的第一个部分。 由于 LookUp 函数及其数据源可以委派，因此可能会在数据源的任何位置找到 Suppliers 的匹配项，即使该数据源很大。 
 
-如果您使用**AddColumns**以此方式**查找**必须为每个这些中的第一个记录进行单独调用数据源**产品**，这将导致大量的网络chatter。 如果**供应商**足够小，并且不会更改通常情况下，您可以调用**收集**函数，在[ **OnStart** ](functions/signals.md)缓存的数据在启动时在应用中的源。 作为替代方法，可以重构您的应用程序，以便仅当用户请求它们拉入相关的记录。  
+如果以这种方式使用**AddColumns** ，**则必须对** **产品**中的第一条记录进行单独的数据源调用，这会导致大量网络 chatter。 如果**供应商**足够小并且不经常更改，你可以在[**OnStart**](functions/signals.md)中调用**Collect**函数，以便在应用启动时在应用中缓存数据源。 作为替代方法，你可以重新构建你的应用程序，以便仅在用户请求时才请求相关记录。  
  
 ## <a name="non-delegable-functions"></a>非可委派函数
 所有其他函数都不支持委派，包括以下重要函数：
 
-* **[First](functions/function-first-last.md)**、**[FirstN](functions/function-first-last.md)**、**[Last](functions/function-first-last.md)**、**[LastN](functions/function-first-last.md)**
+* **[First](functions/function-first-last.md)** 、 **[FirstN](functions/function-first-last.md)** 、 **[Last](functions/function-first-last.md)** 、 **[LastN](functions/function-first-last.md)**
 * **[Choices](functions/function-choices.md)**
 * **[Concat](functions/function-concatenate.md)**
-* **[Collect](functions/function-clear-collect-clearcollect.md)**、**[ClearCollect](functions/function-clear-collect-clearcollect.md)**
-* **[CountIf](functions/function-table-counts.md)**、**[RemoveIf](functions/function-remove-removeif.md)**、**[UpdateIf](functions/function-update-updateif.md)**
-* **[GroupBy](functions/function-groupby.md)**、**[Ungroup](functions/function-groupby.md)**
+* **[Collect](functions/function-clear-collect-clearcollect.md)** 、 **[ClearCollect](functions/function-clear-collect-clearcollect.md)**
+* **[CountIf](functions/function-table-counts.md)** 、 **[RemoveIf](functions/function-remove-removeif.md)** 、 **[UpdateIf](functions/function-update-updateif.md)**
+* **[GroupBy](functions/function-groupby.md)** 、 **[Ungroup](functions/function-groupby.md)**
 
 ## <a name="non-delegable-limits"></a>不可委派限制
 将在本地处理不可委派的公式。 这样就可以使用整套 PowerApps 公式语言。 但是也有代价：所有数据都必须先转到设备上，这可能需要通过网络检索大量的数据。 这可能需要一段时间，让人以为应用很慢或者可能已崩溃。
 
-若要避免此问题，PowerApps 对实施限制，可以在本地处理的数据量：默认情况下的 500 条记录。  我们选择此数字是为了让你仍然能够对小型数据集进行完整的访问，同时让你虽然只能看到部分结果，也能练习对大型数据集的使用。
+为避免出现这种情况，PowerApps 对可在本地处理的数据量施加限制：默认情况下，500记录。  我们选择此数字是为了让你仍然能够对小型数据集进行完整的访问，同时让你虽然只能看到部分结果，也能练习对大型数据集的使用。
 
 显然，使用此工具时必须小心，因为这可能会让用户感到困惑。 例如，假设有一个 Filter 函数，其选择公式不能委派，需要对有一百万条记录的数据源应用该函数。 由于本地进行筛选，因此仅扫描了前 500 条记录。 如果所需记录是第 501 或第 500,001 个记录，则 Filter 不会考虑或返回该记录。
 
@@ -127,7 +127,7 @@ AddColumns( Products,
 500 是默认的记录数，但可为整个应用更改此数字：
 
 1. 在“文件”选项卡上，选择“应用设置”。
-2. 在“实验性功能”下，将“非可委派查询的数据行限制”设置从 1 更改为 2000。
+2. 在 "**高级设置**" 下，将 "**非可委派查询的数据行限制**" 设置从1更改为2000。
 
 在某些情况下，你会发现 2,000（或者 1,000 或 1,500）即可满足方案的需求。 可以谨慎增大此数字以适应你的方案。 增大此数字，应用的性能可能会降低，特别是对于具有大量列的宽表。 尽管如此，仍是委派越多越好。
 
@@ -139,7 +139,7 @@ AddColumns( Products,
 委派警告仅显示在针对可委派数据源进行运算的公式上。 如果没有看到警告，但你认为公式未进行适当的委派，请对照本主题前面部分的[可委派数据源](delegation-overview.md#delegable-data-sources)列表检查数据源的类型。
 
 ## <a name="examples"></a>示例
-对于此示例，将基于名为 **[dbo].[Fruit]** 的 SQL Server 表自动生成一个三屏应用。 有关如何生成应用程序，可以应用中的类似做法准则也[有关 Common Data Service 的主题](data-platform-create-app.md)到 SQL Server。
+对于此示例，将基于名为 **[dbo].[Fruit]** 的 SQL Server 表自动生成一个三屏应用。 有关如何生成应用程序的信息，您可以在与 Common Data Service SQL Server 相关的[主题](data-platform-create-app.md)中应用类似的原则。
 
 ![三屏幕应用](./media/delegation-overview/products-afd.png)
 

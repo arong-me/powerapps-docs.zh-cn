@@ -1,24 +1,24 @@
 ---
 title: 获取会话 ID 或画布应用 ID | Microsoft Docs
 description: 如何获取会话 ID 或画布应用 ID 以在 PowerApps 中进行故障排除
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/18/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 67cfe4ac6c53797e6a18a68d3fbcf29b088f3da8
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 11f749f241f978ebd94e460833e98cca894fe7fa
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553958"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71990204"
 ---
 # <a name="get-a-session-id-or-a-canvas-app-id"></a>获取会话 ID 或画布应用 ID
 如果你在使用 PowerApps 中创建的画布应用时遇到问题，通过向 Microsoft 提供该问题的会话 ID 和/或应用 ID，可以帮助他们更有效地解决该问题。

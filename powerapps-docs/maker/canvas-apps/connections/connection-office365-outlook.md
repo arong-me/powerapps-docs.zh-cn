@@ -8,17 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/20/2017
 ms.author: lanced
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5ea7c9fc331d96b50d8623f4ca632859e09be7ab
-ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
+ms.openlocfilehash: ba568cb34c12f8b63e8c59f5cb73aa1ed6cb9f02
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70213662"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993942"
 ---
 # <a name="connect-to-office-365-outlook-from-powerapps"></a>从 PowerApps 连接到 Office 365 Outlook
 ![Office 365 Outlook](./media/connection-office365-outlook/office365icon.png)
@@ -48,7 +48,7 @@ Office 365 Outlook 连接已创建，并已添加到应用中。 现在可供使
    
     `Office365.GetEmails({fetchOnlyUnread:false})`
    
-    更改设置后, 将 "**布局**" 更改为 **"标题、副标题和正文**"。
+    更改设置后，将 "**布局**" 更改为 **"标题、副标题和正文**"。
     
     系统会自动使用一些电子邮件填充库控件。
     

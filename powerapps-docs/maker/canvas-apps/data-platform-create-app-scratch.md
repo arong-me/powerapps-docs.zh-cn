@@ -1,24 +1,24 @@
 ---
 title: 使用 Common Data Service 从头开始创建画布应用 | Microsoft Docs
 description: 在 PowerApps 中，创建在 Common Data Service 中添加、更新和删除记录的画布应用。
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/21/2019
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 482a5a91c241aa9fd8c85dfb970cf692cd2ab1a3
-ms.sourcegitcommit: 38270060d2d0b784fe065164e6112c011b26e17c
+ms.openlocfilehash: c058e5f5710c090c39c2971974d57aacd40923a8
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68830455"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986001"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>使用 Common Data Service 从头开始创建画布应用
 
@@ -92,7 +92,7 @@ ms.locfileid: "68830455"
 
     ![设置窗体的“数据源”和“项”属性](./media/data-platform-create-app-scratch/form-datasource.png)
 
-1. 在右侧窗格的 "**属性**" 选项卡上, 选择 "**编辑字段**", 打开 "**字段**" 窗格。
+1. 在右侧窗格的 "**属性**" 选项卡上，选择 "**编辑字段**"，打开 "**字段**" 窗格。
 
 1. 选择“添加字段”，然后选择这些字段对应的复选框：
 
@@ -104,7 +104,7 @@ ms.locfileid: "68830455"
     - **年收入**
 
     > [!NOTE]
-    > 在这种情况下, 您可以通过选择 "**新建字段**" 创建自定义字段, 提供所需的信息, 然后选择 "**完成**"。 详细信息：[创建字段](../common-data-service/create-edit-field-portal.md#create-a-field)。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "选择并添加字段")
+    > 在这种情况下，您可以通过选择 "**新建字段**" 创建自定义字段，提供所需的信息，然后选择 "**完成**"。 详细信息：[创建字段](../common-data-service/create-edit-field-portal.md#create-a-field)。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "选择并添加字段")
 
 1. 选择“添加”。
 
