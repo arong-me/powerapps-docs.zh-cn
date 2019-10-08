@@ -47,6 +47,10 @@
               items:
                 - name: 活动 FAQ
                   href: ../user/faq-for-timeline-and-activity.md
+            - name: 对记录使用查阅字段
+              href: ../user/lookup-field.md
+            - name: 查看配置文件卡
+              href: ../user/profile-cards.md
             - name: 分配或共享记录
               href: ../user/assign-or-share-records.md
             - name: 使用访问团队共享记录
@@ -59,6 +63,8 @@
               href: ../user/track-your-progress-with-dashboard-and-charts.md
         - name: 搜索记录
           items:
+            - name: 比较搜索和查找选项
+              href: ../user/search-and-find.md
             - name: 搜索记录
               href: ../user/search-records.md
             - name: 使用高级查找
