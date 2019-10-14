@@ -1050,7 +1050,7 @@
       href: ./model-driven-apps/app-for-outlook-customize.md
     - name: 面向开发人员
       href: ../developer/model-driven-apps/overview.md
-- name: 门户（预览版）
+- name: 门户
   items:
     - name: 什么是 PowerApps 门户？
       href: ./portals/overview.md
@@ -1058,9 +1058,9 @@
       items:
         - name: 门户模板
           href: ./portals/portal-templates.md
-        - name: 创建门户
+        - name: 创建初级门户
           href: ./portals/create-portal.md
-        - name: 创建 Dynamics 365 门户
+        - name: 创建使用 Dynamics 365 环境的门户
           href: ./portals/create-dynamics-portal.md
         - name: 门户设计器剖析
           href: ./portals/portal-designer-anatomy.md
@@ -1072,10 +1072,10 @@
           href: ./portals/compose-page.md
         - name: 使用模板
           href: ./portals/work-with-templates.md
+        - name: 编辑 CSS
+          href: ./portals/edit-css.md
     - name: 管理现有门户
       href: ./portals/manage-existing-portals.md
-    - name: 配置站点设置
-      href: ./portals/configure-site-settings.md
     - name: 高级门户管理
       items:
         - name: 概述
@@ -1108,8 +1108,16 @@
           href: ./portals/admin/update-portal-domain.md
         - name: 清除服务器端缓存
           href: ./portals/admin/clear-server-side-cache.md
-        - name: 迁移 Dynamics 365 门户配置
+        - name: 迁移门户配置
           href: ./portals/admin/migrate-portal-configuration.md
+        - name: 关于门户生命周期
+          href: ./portals/admin/portal-lifecycle.md
+    - name: 高级门户配置
+      items:
+        - name: 概述
+          href: ./portals/configure/configure-portal.md
+        - name: 配置站点设置
+          href: ./portals/configure/configure-site-settings.md
     - name: 高级门户自定义
       items:
         - name: 使用 Liquid 模板
@@ -1156,6 +1164,18 @@
                   href: ./portals/liquid/render-site-header-primary-navigation.md
         - name: OAuth 2.0 隐式授权流
           href: ./portals/oauth-implicit-grant-flow.md
+    - name: 门户中的文档存储
+      items:
+        - name: 配置说明
+          href: ./portals/configure-notes.md
+        - name: Azure 存储
+          items:
+            - name: 启用 Azure 存储
+              href: ./portals/enable-azure-storage.md
+            - name: 将 Azure 存储 Web 资源添加到表单
+              href: ./portals/add-web-resource.md
+        - name: 管理 SharePoint 文档
+          href: ./portals/manage-sharepoint-documents.md
     - name: 已知问题
       href: ./portals/known-issues.md
     - name: PowerApps 门户常见问题解答
