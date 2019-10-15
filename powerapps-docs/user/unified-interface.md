@@ -30,7 +30,7 @@ ms.locfileid: "71705307"
 > ![统一界面适应屏幕](media/Reflow.png "统一界面适应屏幕")
 
 > [!NOTE]
-> 旧的 web 客户端将被弃用，并且客户必须在10月 1 2020 日之前过渡到统一的界面。 有关详细信息，请参阅 [Blog：宣布时间线移动到统一的接口 @ no__t-0。 若要了解有关如何转换的详细信息，请参阅[转换的快速入门](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app)。
+> 旧的 web 客户端将被弃用，并且客户必须在10月 1 2020 日之前过渡到统一的界面。 有关详细信息，请参阅 [Blog：宣布时间线移动到统一的接口](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/)。 若要了解有关如何转换的详细信息，请参阅[转换的快速入门](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app)。
 
 ## <a name="navigation"></a>导航
 

@@ -54,7 +54,7 @@ IfError(
 
 ## <a name="syntax"></a>语法
 
-**IfError**（ *Value1*， *Fallback1* [， *Value2*， *Fallback2*，.。。[， *DefaultResult* ]])
+**IfError**（ *Value1*， *Fallback1* [， *Value2*， *Fallback2*，...[， *DefaultResult* ]])
 
 * *Value （s）* -必需。 测试错误值的公式。
 * *Fallback(s)* - 必需。 如果匹配的*值*参数返回错误，则为要计算的公式和要返回的值。
