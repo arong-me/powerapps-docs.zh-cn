@@ -52,7 +52,7 @@ ms.locfileid: "71995601"
 1. 按名称或别名指定 Azure Active Directory 要与之共享应用的用户或安全组。
 
     - 若要允许整个组织运行应用（但不修改或共享），请在 "共享" 面板中键入**Everyone** 。
-    - 如果项由分号分隔，则可以使用别名列表、友好名称或这些项的组合（例如， **Jane Doe &lt; @ no__t-2 >** ）来共享应用。 如果有多个用户具有相同名称但具有不同的别名，则会将找到的第一个人员添加到列表。 如果名称或别名已经有权限或无法解析，则会出现工具提示。 
+    - 如果项由分号分隔，则可以使用别名列表、友好名称或这些项的组合（例如， **Jane Doe &lt; @ no__t-2 >**）来共享应用。 如果有多个用户具有相同名称但具有不同的别名，则会将找到的第一个人员添加到列表。 如果名称或别名已经有权限或无法解析，则会出现工具提示。 
 
     ![指定用户和共同所有者](./media/share-app/share-everyone.png)
 
@@ -144,7 +144,7 @@ PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享�
     - 来宾用户的主租户。
 
 ### <a name="steps-to-grant-guest-access"></a>授权来宾访问的步骤
-1. 选择 "**新来宾用户**"，在 Azure AD 中添加来宾用户。 详细信息：[快速入门：在 Azure AD @ no__t 中添加新的来宾用户。
+1. 选择 "**新来宾用户**"，在 Azure AD 中添加来宾用户。 详细信息：[快速入门：在 Azure AD 中添加新的来宾用户](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)。
     > [!div class="mx-imgBorder"] 
     > ![在 Azure AD 中添加来宾 Azure AD](media/share-app/guest_access_doc_1.png "添加来宾")
 2. 如果来宾用户在其主租户中没有许可证，则为来宾用户分配许可证。
@@ -190,7 +190,7 @@ PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享�
 > [!div class="mx-imgBorder"]  
 > ![在 sharepoint 中将画布应用嵌入到]来宾的 sharepoint 中(media/share-app/guest_access_doc_5.PNG "嵌入画布应用")
 
-通过 iFrame HTML 标记在 SharePoint 中嵌入画布应用时，请使用完整 web URL 引用应用。 若要查找 URL，请参阅 http://make.powerapps.com ，选择应用，选择 "**详细信息**" 选项卡，URL 将显示在 " **Web 链接**" 下。
+通过 iFrame HTML 标记在 SharePoint 中嵌入画布应用时，请使用完整 web URL 引用应用。 若要查找 URL，请参阅 http://make.powerapps.com，选择应用，选择 "**详细信息**" 选项卡，URL 将显示在 " **Web 链接**" 下。
 
 > [!div class="mx-imgBorder"]  
 > ![画布应用详细信息](media/share-app/guest_access_doc_6.PNG "画布应用详细信息")
