@@ -12,12 +12,12 @@ ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: 86a92e1e1723eba0f4d8f1b747a30df93314ca65
-ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
-ms.translationtype: MT
+ms.openlocfilehash: 34b2d24771feb246d234c0ce3bd1fc655e571296
+ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70213829"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71705278"
 ---
 # <a name="what-is-powerapps"></a>什么是 PowerApps？
 
@@ -49,7 +49,7 @@ PowerApps 管理员可以：
 
 - 使用“PowerApps 管理中心”([admin.powerapps.com](https://admin.powerapps.com)) 创建和管理环境、用户、角色和数据丢失防护策略。 
 
-- 使用“Power 平台管理中心”([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)) 管理环境、获取针对 Dynamics 365 for Customer Engagement 应用、PowerApps 和 Microsoft Flow 的实时、自助推荐和支持，以及查看 Common Data Service 分析。 
+- **Power Platform 管理中心**（[admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)）可管理环境、获取对 PowerApps 和 Microsoft Flow 的实时、自助建议和支持以及查看 Common Data Service 分析。 
 
 详细信息：[管理 PowerApps](/power-platform/admin/admin-guide)
 
