@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/04/2019
+ms.date: 10/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 45790b7a3e6166366a751c812a5d470d5615c3a2
-ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
+ms.openlocfilehash: 0ce5218143a8283690cdaf7c1d9be2b1da3d629e
+ms.sourcegitcommit: 60a7dc7855d482b63719d121dbe5353e304d67f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71969265"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72393149"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>画布应用的系统要求、限制和配置值
 本主题包含设备平台和 Web 浏览器要求，以及 PowerApps 的限制和配置值。
@@ -30,6 +30,9 @@ ms.locfileid: "71969265"
 | iOS 9.3 或更高版本 |iOS 10 或更高版本且 RAM 至少为 2GB |
 | Android 5 或更高版本 |Android 7 或更高版本且 RAM 至少为 4GB |
 | Windows 8.1 或更高版本（仅 PC） |Windows 10 Fall Creators Update 且 RAM 至少为 8GB|
+
+> [!NOTE]
+> 目前，我们不支持 PowerApps 应用的 Windows 平台上的新功能。 改进的 Common Data Service 选项和来宾访问等功能在此平台上不可用。 建议在 Windows 上使用 web 播放器来利用完整的功能集。 针对 Windows 平台的 PowerApps 应用的更新将在将来公布。
 
 ## <a name="supported-browsers-for-running-canvas-apps"></a>支持运行画布应用的浏览器
 
@@ -94,11 +97,11 @@ PowerApps 请求使用的 IP 地址取决于该应用所在[环境](../../admini
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
 | graph.microsoft.com<br>graph.windows.net |https |Azure Graph-用于获取用户信息（例如，个人资料照片） |
 | gallery.azure.com |https |示例和模板应用 |
-| \*.azure-apim.net |https |API 中心 - 每个区域设置的不同子域 |
-| \*.powerapps.com |https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 web.powerapps.com |
-| \*.azureedge.net |https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 web.powerapps.com |
-| \*.blob.core.windows.net |https | Blob 存储 |
-| \*.flow.microsoft.com | https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 web.powerapps.com |
+| \*. azure-apim.net |https |API 中心 - 每个区域设置的不同子域 |
+| \*. powerapps.com |https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 web.powerapps.com |
+| \*. azureedge.net |https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 web.powerapps.com |
+| \*. blob.core.windows.net |https | Blob 存储 |
+| \*. flow.microsoft.com | https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 web.powerapps.com |
 | vortex.data.microsoft.com |https |遥测 |
 | 主机 | https | PowerApps Mobile
 
@@ -111,7 +114,7 @@ PowerApps 请求使用的 IP 地址取决于该应用所在[环境](../../admini
 
 ## <a name="powerapps-per-app-plan"></a>PowerApps 每个应用计划
 
-每个应用计划的 PowerApps 允许各个用户在单个门户上运行2个应用程序，用于基于 PowerApps 的全部功能的特定业务方案。 此计划为用户提供了一种简单的方法，使用户可以在更广泛的采用范围之前开始使用平台。
+每个应用计划的 PowerApps 允许单个用户在单个门户上运行2个应用程序，用于基于 PowerApps 的全部功能的特定业务方案。 此计划为用户提供了一种简单的方法，使用户可以在更广泛的采用范围之前开始使用平台。
 
 在管理员将 PowerApps 每个应用计划分配给环境之后，默认情况下，当与用户共享应用时，它们将分配给用户。
 
