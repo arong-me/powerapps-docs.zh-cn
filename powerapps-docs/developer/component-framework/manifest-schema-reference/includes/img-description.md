@@ -4,7 +4,7 @@ description: ''
 keywords: ''
 ms.author: nabuthuk
 manager: kvivek
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,11 +13,11 @@ applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
 ms.assetid: 8adf55e2-504b-4313-a292-eb186b7cc850
-ms.openlocfilehash: c160d536c4ac38d331f2a0ceee2b94167190c540
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: 100e7a874c4d248f86c96c5396afe5f91cf3323c
+ms.sourcegitcommit: 63ea15e2f861d43333aacda19230cd8922d7bdfd
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63394006"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "72338680"
 ---
-`img` Web 资源让你可以添加自定义组件的图像。
+@No__t_0 webresource 使你可以为代码组件添加映像。
