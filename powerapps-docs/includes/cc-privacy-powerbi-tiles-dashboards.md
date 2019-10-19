@@ -1,12 +1,12 @@
 ---
-ms.openlocfilehash: 41ec7aed42a950e5adf0b87783fc568dbe9d02af
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.openlocfilehash: 162e914a6753e9fd95a8ec57857c280469308a68
+ms.sourcegitcommit: 9576b34403634a8e960eb5f8e320a14c4a03746c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61568055"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72517327"
 ---
-通过启用 Power BI 磁贴和仪表板的嵌入功能，当用户嵌入 Power BI 磁贴或仪表板时，该用户 [!INCLUDE[pn_azure_active_directory](pn-azure-active-directory.md)] [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 授权令牌将用于通过隐式授权向 Power BI 服务进行身份验证，从而向最终用户提供无缝的“单一登录”体验。  
+通过启用嵌入 Power BI 磁贴和仪表板，当用户嵌入 Power BI 磁贴或仪表板时，将使用该用户的 Common Data Service 的 [!INCLUDE[pn_azure_active_directory](pn-azure-active-directory.md)] 授权令牌通过隐式授权向 Power BI 服务进行身份验证，从而提供无缝的 "针对最终用户的单一登录体验。  
   
  管理员可随时禁用 Power BI 磁贴和仪表板的嵌入功能，以停止使用 [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 授权令牌向 Power BI 服务进行身份验证。 将停止向最终用户显示当前所有的磁贴和仪表板。  
   

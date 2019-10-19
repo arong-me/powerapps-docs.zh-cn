@@ -1,4 +1,5 @@
 ---
+redirect_url: https://docs.microsoft.com/power-platform/admin/powerapps-gdpr-export-dsr
 title: 导出和导入资源 | Microsoft 文档
 description: 了解如何导入和导出 PowerApps 中的资源
 author: nimakms
@@ -14,12 +15,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 1edaacc3a013646d8da0a286e28723926817ee71
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: ce01bf68e892b60fa1401ee9366d9d1d0acaecaf
+ms.sourcegitcommit: 6984ce43cc5653ccb957219d2a687907ebb5520c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61528610"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72560945"
 ---
 # <a name="export-and-import-resources"></a>导出和导入资源
 如果创建了多个环境来支持数据库和应用的开发，则必须将所做更改从一个环境移至另一个环境。 可使用“导出资源”和“导入资源”在环境之间移动资源。

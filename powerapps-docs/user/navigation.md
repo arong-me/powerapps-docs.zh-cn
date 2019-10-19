@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a46698ddf454c9d0f563575a3553e874f3a7b109
-ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
+ms.openlocfilehash: a53aaf84530935e525f1177d85f74e125711fc40
+ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71924533"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71969190"
 ---
 #  <a name="basic-navigation-in-a-model-driven-app"></a>模型驱动应用中的基本导航 
 
@@ -75,7 +75,7 @@ ms.locfileid: "71924533"
 
 ## <a name="notifications"></a>通知 
 
-窗体上显示的通知类型有三种：信息、警告和错误。 通知始终在窗体的上层，在标头的正上方。
+有三种类型的通知显示在窗体上：信息性、警告和错误。 通知始终在窗体的上层，在标头的正上方。
 
 当你选择错误通知时，它会将你转到出现错误的窗体上的字段。
 
@@ -91,7 +91,36 @@ ms.locfileid: "71924533"
 
 ## <a name="grids"></a>置
 
-已改进统一界面中的网格，增加了可在屏幕上显示的数据量。 网格还改进了筛选选项，其中包括记住最后一个筛选器和排序顺序。 有关改进的详细列表，请参阅此博客文章[统一界面网格中的增强功能](https://powerapps.microsoft.com/en-us/blog/enhanced-functionality-in-unified-interface-grids)。
+已改进统一界面中的网格，增加了可在屏幕上显示的数据量。 网格还改进了筛选选项，其中包括记住最后一个筛选器和排序顺序。 
 
+当网格区检索数据时，您将看到一个加载指示器，告诉您系统正在检索数据。
+
+当您离开或后退时，主网格页会记住筛选器、排序和页面状态。 这包括 "快速查找"、"列筛选"、"页码" 等。 页面外的导航将打开并带有初始状态。
+
+
+   > [!div class="mx-imgBorder"]
+   > ![网格记住状态](media/grid-remember-state-on-back-navigate.gif "网格记住状态")
+
+
+跳转栏使用第一个已排序的字段。 如果未进行排序更改，跳转条将使用主字段。 
+
+   > [!div class="mx-imgBorder"]
+   > ![网格记住状态](media/jumpbar-filter-on-sorted-column.gif "网格记住状态")
+   
+
+您可以筛选 "**活动类型**" 字段并选择多个筛选类型。 此外，还可以筛选 "所有者"、"状态" 和 "原因" 等相关实体字段。
+
+   > [!div class="mx-imgBorder"]
+   > ![网格筛选](media/grid-activity-type-column-filter.gif "网格筛选")
+   
+选择层次结构图标后，它将导航到层次结构窗体。
+
+   > [!div class="mx-imgBorder"]
+   > ![层次结构图标](media/grid-row-hierarchy-icon.png "层次结构图标")
+   
+您还可以在新的选项卡或窗口中打开主字段和查找字段。
+
+   > [!div class="mx-imgBorder"]
+   > ![在新窗口中打开](media/newtab.png "[在新窗口中打开")
 
 
