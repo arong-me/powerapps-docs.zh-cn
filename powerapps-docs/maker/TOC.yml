@@ -61,6 +61,8 @@
               href: ../user/deactivate-activate-account-contact.md
             - name: 使用仪表板和图表跟踪进度
               href: ../user/track-your-progress-with-dashboard-and-charts.md
+            - name: 添加 Power BI 仪表板
+              href: ../user/add-powerbi-dashboards.md
         - name: 搜索记录
           items:
             - name: 比较搜索和查找选项
