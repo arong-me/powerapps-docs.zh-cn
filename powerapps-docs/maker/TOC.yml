@@ -1094,6 +1094,10 @@
           href: ./portals/admin/change-base-url.md
         - name: 启用维护模式
           href: ./portals/admin/enable-maintenance-mode.md
+        - name: 添加自定义域名
+          href: ./portals/admin/add-custom-domain.md
+        - name: 导入元数据转换
+          href: ./portals/admin/import-metadata-translation.md
         - name: Power BI 集成
           items:
             - name: 设置 Power BI 集成
@@ -1120,6 +1124,24 @@
           href: ./portals/configure/configure-portal.md
         - name: 配置站点设置
           href: ./portals/configure/configure-site-settings.md
+        - name: 门户身份验证
+          items:
+            - name: 配置门户身份验证
+              href: ./portals/configure/configure-portal-authentication.md
+            - name: 设置身份验证标识
+              href: ./portals/configure/set-authentication-identity.md
+            - name: 门户的 Azure AD B2C 提供程序设置
+              href: ./portals/configure/azure-ad-b2c.md
+            - name: 配置 OAuth2 提供程序设置
+              href: ./portals/configure/configure-oauth2-settings.md
+            - name: 配置 OpenID 提供程序设置
+              href: ./portals/configure/configure-openid-settings.md
+            - name: 配置 WS 联合身份验证提供程序设置
+              href: ./portals/configure/configure-ws-federation-settings.md
+            - name: 配置 SAML 2.0 提供程序设置
+              href: ./portals/configure/configure-saml2-settings.md
+            - name: 将标识提供者迁移到 Azure AD B2C
+              href: ./portals/configure/migrate-identity-providers.md
     - name: 高级门户自定义
       items:
         - name: 使用 Liquid 模板
