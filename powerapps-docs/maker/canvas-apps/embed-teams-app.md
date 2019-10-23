@@ -14,15 +14,15 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ba08437dc144fc81aa9748163b1005222735cb69
-ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
+ms.sourcegitcommit: a560630f5ee83629a7236ae774fc0c8195b95efa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "70842238"
 ---
 # <a name="embed-a-powerapps-app-in-teams"></a>在团队中嵌入 PowerApps 应用 
 
-你可以共享已创建的 PowerApps，只需要将其直接嵌入 Microsoft 团队即可。 完成后，用户可以选择 **+** 将你的应用添加到你所在团队中的**任意团队通道**或会话。 应用在**你的团队的选项卡**下显示为磁贴。 
+你可以共享已创建的 PowerApps，只需要将其直接嵌入 Microsoft 团队即可。 完成后，用户可以选择 **+** 将你的应用添加到你所在团队中的**任意团队频道**或会话。 应用在**你的团队的选项卡**下显示为磁贴。 
 
 管理员可以上传应用程序，使其显示在 "**所有选项卡" 部分**下的租户中的**所有**团队。 请参阅[在 Microsoft 团队中共享应用](https://docs.microsoft.com/en-us/power-platform/admin/embed-app-teams)。
 
@@ -58,7 +58,7 @@ ms.locfileid: "70842238"
 
 如果已安装 App Studio，则可以跳过这些步骤。 
 
-1. 在 "团队" 中，选择 "团队" 菜单左下角的 "**应用**" （![应用图标](./media/embed-teams-app/apps-icon.png "应用图标")）。
+1. 在 "团队" 的 "团队" 菜单左下方，选择 "**应用**"。![](./media/embed-teams-app/apps-icon.png "应用图标")
 
 2. 在搜索框中搜索 "App Studio"，然后选择它。
 
@@ -99,7 +99,7 @@ ms.locfileid: "70842238"
    |长名称     | 应用的全名，如果完整应用名称超过30个字符，则使用此名称。       | 
    |**标识**     |         |
    |应用 ID     | 必填。 此应用程序的唯一 Microsoft 生成的标识符。        |
-   |包名称     | 必填。 此应用的唯一标识符。 建议使用反向域表示法;例如，.com。<AppName>.       |
+   |包名称     | 必填。 此应用的唯一标识符。 建议使用反向域表示法;例如，.com.<AppName>。       |
    |版本     | 必填。 特定应用的版本。 如果在清单中更新某些内容，则版本也必须递增。     |
    |**说明**    |     |
    | 简短说明    | 必填。 应用体验的简短说明，在空间有限时使用。 80字符限制。   |
@@ -129,9 +129,9 @@ ms.locfileid: "70842238"
    > [!div class="mx-imgBorder"] 
    > ![团队选项卡添加](./media/embed-teams-app/team-tab-add.png "团队选项卡添加")
 
-7. 使用以下格式在 "配置 URL" 输入字段中添加应用的配置 URL：`https://apps.powerapps.com/teams/settings/<PowerApp ID>`
+7. 使用以下格式在 "配置 URL" 输入字段中添加应用的配置 URL： `https://apps.powerapps.com/teams/settings/<PowerApp ID>`
 
-   将`<PowerApp ID>`替换为前面记录的应用 ID GUID。
+   将 `<PowerApp ID>` 替换为前面记录的应用 ID GUID。
 
    选择要在其中显示应用的[范围](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview#tab-scope)。 确保已选中 "**可以更新配置**"，然后选择 "**保存**"。
 
@@ -161,7 +161,7 @@ ms.locfileid: "70842238"
 
 ## <a name="add-the-app-as-a-tab"></a>将该应用添加为选项卡
 
-若要将应用作为选项卡添加到任何通道或会话， **+** 请选择 ""，然后在**你的团队的 "选项卡**" 下选择你的应用。 
+若要将应用作为选项卡添加到任何通道或会话，请选择 " **+** "，然后在**你的团队的 "选项卡**" 下选择你的应用。 
 
 > [!div class="mx-imgBorder"] 
 > ![添加应用作为选项卡](./media/embed-teams-app/add-app-as-tab.png "添加应用作为选项卡")
@@ -173,4 +173,4 @@ ms.locfileid: "70842238"
 
 ### <a name="see-also"></a>另请参阅
 [欢迎使用 Microsoft 团队](https://docs.microsoft.com/MicrosoftTeams/teams-overview)<br />
-[对于管理员：在 Microsoft 团队中嵌入应用](https://docs.microsoft.com/power-platform/admin/share-app-teams)
+[For 管理员：在 Microsoft 团队中嵌入应用 ](https://docs.microsoft.com/power-platform/admin/share-app-teams)
