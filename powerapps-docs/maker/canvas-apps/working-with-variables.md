@@ -14,15 +14,15 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 036de37aa2593254d6ae665f8546fe4038dd922d
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71994827"
 ---
 # <a name="understand-canvas-app-variables-in-powerapps"></a>了解 PowerApps 中的画布应用变量
 
-如果使用了其他编程工具，如 Visual Basic 或 JavaScript，则可能会询问：**变量在何处？** PowerApps 稍有不同，需要不同的方法。 构建画布应用程序时，请询问自己：**我将在 Excel 中执行哪些操作？**
+如果你使用过其他编程工具（例如 Visual Basic 或 JavaScript），你可能会问：**变量在哪里？** PowerApps 稍有不同，需要不同的方法。 与其在生成画布应用时使用变量，不如问自己：我会在 Excel 中执行哪些操作？
 
 在其他工具中，你可能会显式执行某个计算，然后将结果存储在变量中。 但是，PowerApps 和 Excel 都会在输入数据更改时自动重新计算公式，因此你通常不需要创建和更新变量。 尽可能使用这种方法，你就可以更轻松地创建、了解和维护应用。
 
@@ -84,7 +84,7 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 
 | 显示 | 描述 |
 |----|----|
-| <style>img {max-width： none}</style> @no__t-带有文本输入控件、标签和两个按钮 @ no__t-2 的1App | 当应用程序启动时，运行总计为0。<br><br>红点在文本输入框中表示用户的手指，其中用户输入**77**。 |
+| 带有文本输入控件、标签和两个按钮的<style>img {max width： none}</style> ![App ](media/working-with-variables/button-changes-state-1.png) | 当应用程序启动时，运行总计为0。<br><br>红点在文本输入框中表示用户的手指，其中用户输入**77**。 |
 | ![文本输入控件包含77，正在按 "添加" 按钮](media/working-with-variables/button-changes-state-2.png) | 用户选择 "**添加**" 按钮。 |
 | ![总数为77，正在向其中添加另一个77](media/working-with-variables/button-changes-state-3.png) | 将77添加到运行总计。<br><br>用户再次选择 "**添加**" 按钮。 |
 | ![在清除之前，总计为154。](media/working-with-variables/button-changes-state-4.png) | 77再次添加到运行总计，结果为154。<br><br>用户选择 "**清除**" 按钮。 |
@@ -118,7 +118,7 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 
     **Set （RunningTotal，RunningTotal + TextInput1）**
 
-    此公式的现有存在将**RunningTotal**作为一个包含数字的全局变量，因为 **@no__t**运算符。 可以在应用中的任何位置引用**RunningTotal** 。 每当用户打开此应用时， **RunningTotal**的初始值为*空白*。
+    此公式的现有存在将**RunningTotal**作为全局变量建立，因为它是 **+** 运算符。 可以在应用中的任何位置引用**RunningTotal** 。 每当用户打开此应用时， **RunningTotal**的初始值为*空白*。
 
     用户首次选择 "**添加**" 按钮并 **[设置](functions/function-set.md)** "运行" 时， **RunningTotal**设置为值**RunningTotal + TextInput1**。
 
@@ -195,7 +195,7 @@ PowerApps 具有三种类型的变量：
 上下文变量的工作原理：
 
 * 使用 **[UpdateContext](functions/function-updatecontext.md)** 或 **[定位](functions/function-navigate.md)** 函数隐式创建和设置上下文变量。 当应用启动时，所有上下文变量的初始值均为*空白*。
-* 您可以用记录更新上下文变量。 在其他编程工具中，通常使用“=”来赋值，例如“x = 1”。 对于上下文变量，请使用 **{x：1}** 。 使用上下文变量时，请在不使用 record 语法的情况下直接使用其名称。
+* 您可以用记录更新上下文变量。 在其他编程工具中，通常使用“=”来赋值，例如“x = 1”。 上下文变量则使用 **{ x: 1 }** 这样的形式。 使用上下文变量时，请在不使用 record 语法的情况下直接使用其名称。
 * 您还可以在使用 " **[定位](functions/function-navigate.md)** 函数" 显示屏幕时设置上下文变量。 如果您将屏幕视为一种过程或子例程，此方法类似于在其他编程工具中传递参数。
 * 上下文变量的作用范围仅限于单个屏幕的上下文（ **[Navigate](functions/function-navigate.md)** 除外），这也是其得名的原因。 不能超出相应的上下文使用或设置上下文变量。
 * 上下文变量可以存储包括字符串、数字、记录和[表](working-with-tables.md)在内的任何值。
@@ -208,9 +208,9 @@ PowerApps 具有三种类型的变量：
 
 3. 若要在用户选择“加”按钮时更新汇总，请将 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
 
-    @no__t 0UpdateContext （{RunningTotal：RunningTotal + TextInput1}） **
+    **UpdateContext （{RunningTotal： RunningTotal + TextInput1}）**
 
-    此公式的现有存在将**RunningTotal**作为上下文变量建立，因为有一个数字，因为 **@no__t**运算符。 可以在此屏幕的任何位置引用**RunningTotal** 。 每当用户打开此应用时， **RunningTotal**的初始值为*空白*。
+    此公式的现有存在将**RunningTotal**作为上下文变量建立，因为存在 **+** 运算符。 可以在此屏幕的任何位置引用**RunningTotal** 。 每当用户打开此应用时， **RunningTotal**的初始值为*空白*。
 
     用户首次选择 "**添加**" 按钮和 " **[UpdateContext](functions/function-updatecontext.md)** " 时， **RunningTotal**将设置为值 " **RunningTotal + TextInput1**"。
 
@@ -218,9 +218,9 @@ PowerApps 具有三种类型的变量：
 
 4. 若要在用户选择“清除”按钮时将汇总设置为 **0**，请将 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
 
-    @no__t 0UpdateContext （{RunningTotal：0}） **
+    UpdateContext( { RunningTotal: 0 } )
 
-    同样， **[UpdateContext](functions/function-updatecontext.md)** 与公式一起使用 **UpdateContext （{RunningTotal：0}）** 。
+    同样， **[UpdateContext](functions/function-updatecontext.md)** 与公式 **UpdateContext( { RunningTotal: 0 } )** 一起使用。
 
     !["清除" 按钮的 OnSelect 属性](media/working-with-variables/context-variable-2.png)
 

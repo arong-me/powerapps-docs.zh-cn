@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 0a56230539990ce51cc9270f71d8c2b7c9a1db73
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71992886"
 ---
 # <a name="concat-and-concatenate-functions-in-powerapps"></a>PowerApps 中的 Concat 和 Concatenate 函数
@@ -51,7 +51,7 @@ ms.locfileid: "71992886"
 
 - **FirstName** = "Jane"
 - **LastName** = "Doe"
-- **Products** =  @ No__t-2Table，含两列和四行 @ no__t-3
+- 具有两列和四行的**产品** =  ![Table ](media/function-concatenate/products.png)
 
 若要在应用中创建这些全局变量，请插入[**按钮**](../controls/control-button.md)控件，并将其**OnSelect**属性设置为以下公式：
 
@@ -74,10 +74,10 @@ Set( Products,
 
 | 公式 | 描述 | 结果 |
 |---------|-------------|--------|
-| **串联（&nbsp;LastName，&nbsp; "，&nbsp;"，&nbsp;FirstName @ no__t）** | 连接**LastName**中的值、字符串 **"，"** （逗号后跟一个空格）和**FirstName**中的值。 | "Doe，&nbsp;Jane" |
-| **LastName @ no__t-1 @ no__t-2 @ no__t "，&nbsp;" &nbsp; @ no__t-6 @ no__t-7FirstName** | 与前面的示例相同，但使用 **&** 运算符而不是函数。 | "Doe，&nbsp;Jane" |
-| **串联（&nbsp;FirstName，&nbsp; "&nbsp;"，&nbsp;LastName @ no__t）** | 连接**FirstName**中的值、字符串 **""** （单个空格）和**LastName**中的值。 | "Jane @ no__t-0Doe" |
-| **FirstName @ no__t-1 @ no__t-2 @ no__t "&nbsp;" &nbsp; @ no__t-6 @ no__t-7LastName** | 与上面的示例相同，使用 **&** 运算符而不是函数。 | "Jane @ no__t-0Doe" |
+| **连接（&nbsp;LastName，&nbsp; "，&nbsp;"，&nbsp;FirstName &nbsp;）** | 连接**LastName**中的值、字符串 **"，"** （逗号后跟一个空格）和**FirstName**中的值。 | "Doe，&nbsp;Jane" |
+| **LastName &nbsp; & &nbsp; "、&nbsp;" &nbsp; & &nbsp;FirstName** | 与前面的示例相同，但使用 **&** 运算符而不是函数。 | "Doe，&nbsp;Jane" |
+| **连接（&nbsp;FirstName，&nbsp; "&nbsp;"，&nbsp;LastName &nbsp;）** | 连接**FirstName**中的值、字符串 **""** （单个空格）和**LastName**中的值。 | "Jane &nbsp;Doe" |
+| **FirstName &nbsp; & &nbsp; "&nbsp;" &nbsp; & &nbsp;LastName** | 与上面的示例相同，使用 **&** 运算符而不是函数。 | "Jane &nbsp;Doe" |
 
 ### <a name="concatenate-with-a-single-column-table"></a>与单列表连接
 
@@ -85,7 +85,7 @@ Set( Products,
 
 | 公式 | 描述 | 结果 |
 |---------|-------------|--------|
-| **连接（"名称： &nbsp;"，&nbsp;Products.Name，"，&nbsp;Type： &nbsp;"，&nbsp;Products）** | 对于**Products**表中的每个记录，连接字符串 **"name："** 、产品的名称、字符串 **"，type："** 和产品的类型。  | ![产品表](media/function-concatenate/single-column.png) |
+| **连接（"名称： &nbsp;"，&nbsp;Products，"，&nbsp;Type： &nbsp;"，&nbsp;Products 类型）** | 对于**Products**表中的每个记录，连接字符串 **"name："** 、产品的名称、字符串 **"，type："** 和产品的类型。  | ![产品表](media/function-concatenate/single-column.png) |
 
 ### <a name="concat-function"></a>Concat 函数
 
@@ -94,7 +94,7 @@ Set( Products,
 | 公式 | 描述 | 结果 |
 |---------|-------------|--------|
 | **Concat （Products，Name & "，"）** | 计算每个**产品**记录的表达式**名称 & "，"** ，并将结果连接成单个文本字符串。  | "Violin，&nbsp;Cello，&nbsp;Trumpet，&nbsp;" |
-| **Concat （Filter （&nbsp;Products、&nbsp;Type @ no__t @ no__t-4 @ no__t-5 "String" &nbsp;）、Name & "，"）** | 为满足筛选器**类型 = "String"** 的**产品**的每个记录计算公式**名称 & "，"** ，并将结果连接到一个文本字符串。   | "Violin，&nbsp;Cello，&nbsp;" |
+| **Concat （Filter （&nbsp;Products，&nbsp;Type &nbsp; = &nbsp; "String" &nbsp;），Name & "，"）** | 为满足筛选器**类型 = "String"** 的**产品**的每个记录计算公式**名称 & "，"** ，并将结果连接到一个文本字符串。   | "Violin，&nbsp;Cello，&nbsp;" |
 
 ### <a name="trimming-the-end"></a>剪裁结束
 
@@ -106,8 +106,8 @@ Set( Products,
 
 | 公式 | 描述 | 结果 |
 |---------|-------------|--------|
-| **Left （Concat （&nbsp;Products，&nbsp;Name @ no__t-3 @ no__t-4 @ no__t-5 "，&nbsp;" &nbsp;），Len （&nbsp;Concat （&nbsp;Products，0Name @ no__t-11 @ no__t-12 @ no__t-13 "，4" 5） 7 @ no__t-18 @ no__t-192）** | 返回**Concat**的结果，但会删除最后两个字符，这些字符构成无关分隔符。 | "Violin，&nbsp;Cello，&nbsp;Trumpet" |
-| **Match （Concat （&nbsp;Products，&nbsp;Name @ no__t @ no__t-4 @ no__t-5 "，&nbsp;" &nbsp;），"^ （？ &lt;trim @ no__t-9. *），@no__t-$10"）。修剪** | 返回从文本字符串（^）的开头到末尾（$）的**Concat**的字符，但不包括不需要的逗号和空格。 | "Violin，&nbsp;Cello，&nbsp;Trumpet" |
+| **Left （Concat （&nbsp;Products，&nbsp;Name &nbsp; & &nbsp; "，&nbsp;" &nbsp;），Len （&nbsp;Concat （&nbsp;Products，0Name 1 2 3 "，4" 5） 6） 7 8 92）** | 返回**Concat**的结果，但会删除最后两个字符，这些字符构成无关分隔符。 | "Violin，&nbsp;Cello，&nbsp;Trumpet" |
+| **Match （Concat （&nbsp;Products，&nbsp;Name &nbsp; & &nbsp; "，&nbsp;" &nbsp;），"^ （？&lt;trim &gt;. *），0 $ "）** | 返回从文本字符串（^）的开头到末尾（$）的**Concat**的字符，但不包括不需要的逗号和空格。 | "Violin，&nbsp;Cello，&nbsp;Trumpet" |
 
 ### <a name="split-and-matchall"></a>Split 和 MatchAll
 
@@ -117,5 +117,5 @@ Set( Products,
 
 | 公式 | 描述 | 结果 |
 |---------|-------------|--------|
-| **Split （Concat （&nbsp;Products，&nbsp;Name @ no__t @ no__t-4 @ no__t-5 "，&nbsp;" &nbsp;），"，"）** | 拆分文本字符串，分隔符为 **"，"** 。 字符串以逗号和空格结尾，因此结果中的最后一行是空字符串。  | ![Table](media/function-concatenate/split.png) |
-| **MatchAll （Concat （&nbsp;Products，&nbsp;Name @ no__t-3 @ no__t-4 @ no__t-5 "，&nbsp;" &nbsp;），"[^ \s，] +"）。FullMatch** | 根据不为空格或逗号的字符拆分文本字符串。 此公式将删除字符串末尾的额外逗号和空格。 | ![Table](media/function-concatenate/matchall.png)
+| **Split （Concat （&nbsp;Products，&nbsp;Name &nbsp; & &nbsp; "，&nbsp;" &nbsp;），"，"）** | 拆分文本字符串，分隔符为 **"，"** 。 字符串以逗号和空格结尾，因此结果中的最后一行是空字符串。  | ![Table](media/function-concatenate/split.png) |
+| **MatchAll （Concat （&nbsp;Products，&nbsp;Name &nbsp; & &nbsp; "，&nbsp;" &nbsp;），"[^ \s，] +"）。FullMatch** | 根据不为空格或逗号的字符拆分文本字符串。 此公式将删除字符串末尾的额外逗号和空格。 | ![Table](media/function-concatenate/matchall.png)

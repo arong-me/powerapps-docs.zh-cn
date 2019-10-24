@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 7d9ae4df7a4ad11a49b2a25ae78330d0cd807c9b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71985250"
 ---
 # <a name="distinct-function-in-powerapps"></a>PowerApps 中的 Distinct 函数
@@ -56,7 +56,7 @@ ms.locfileid: "71985250"
     公式为 evaluatd，并通过在公式栏中选择**CityPopulations**来创建**CityPopulations**集合：
 
     > [!div class="mx-imgBorder"]
-    > 在 result view @ no__t-1 中显示的0CityPopulations 集合 @no__t
+    > 结果视图中显示 ![CityPopulations 集合 ](media/function-distinct/citypopulations-create.png)
 
 1. 插入 "[**数据表" 控件，** ](../controls/control-data-table.md)并将其**Items**属性设置为以下公式：
 
@@ -67,12 +67,12 @@ ms.locfileid: "71985250"
     您可以通过选择整个公式来查看公式栏中此公式的结果：
 
     > [!div class="mx-imgBorder"]
-    > ![Output from result view @ no__t-1 中显示的不同函数
+    > ![Output 结果视图中显示的不同函数 ](media/function-distinct/citypopulations-distinct.png)
 
 1. 使用数据表的 "属性" 窗格中的 "**编辑字段**" 链接来添加**结果**列：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 数据表 @ no__t 中显示的不同函数的0Output
+    > ![Output 数据表中显示的不同函数 ](media/function-distinct/citypopulations-datatable.png)
 
 1. 插入 "[**标签**](../controls/control-text-box.md)" 控件，并将 " **Text** " 属性设置为公式：
 
@@ -83,6 +83,6 @@ ms.locfileid: "71985250"
     此公式将**不同**于[**排序**](function-sort.md)函数的结果排序，从得到的表中获取第一条记录和[**第一个**](function-first-last.md)函数，并提取**结果**字段以仅获取国家/地区名称。
 
     > [!div class="mx-imgBorder"]
-    > 从使用0Output 的不同函数显示第一个国家/地区按名称 @ no__t-1 @no__t
+    > ![Output 不同函数显示第一个国家/地区名称 ](media/function-distinct/citypopulations-first.png)
 
      

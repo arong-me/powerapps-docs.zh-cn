@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d7783113c7102d9c8b292d0ee84d4329709eeaa7
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71705244"
 ---
 # <a name="working-with-environments-and-microsoft-powerapps"></a>使用环境和 Microsoft PowerApps
@@ -31,12 +31,12 @@ ms.locfileid: "71705244"
 当你注册并首次登录到 PowerApps 时，它将在默认环境中打开，你可以在页面的右上角标识该环境。
 
 > [!div class="mx-imgBorder"]
-> @no__t 0Default 环境 @ no__t-1
+> ![Default 环境 ](./media/working-with-environments/env-dropdown.png)
 
 组织中的所有人都可以访问默认环境。 你可以在此环境中创建应用，并与其他用户共享你的应用。 你还可以访问其他环境，无论你是[创建](../../administrator/environments-administration.md)还是其他环境。 您可以通过在右上角打开环境列表，然后选择其他环境来切换环境。 此示例演示如何从**Microsoft**切换到**MyOwnEnv**。
 
 > [!div class="mx-imgBorder"]
-> @no__t 0Switch 环境 @ no__t-1
+> ![Switch 环境 ](./media/working-with-environments/switch-environment.png)
 
 切换环境后，新环境会显示在该环境中有权访问的所有应用。
 

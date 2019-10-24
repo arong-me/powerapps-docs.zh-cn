@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b0ab20ce5e0700337bb059644c458a2665d20f1e
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71983499"
 ---
 # <a name="app-object-in-powerapps"></a>PowerApps 中的应用对象
@@ -31,7 +31,7 @@ ms.locfileid: "71983499"
 您可以为**应用**对象的某些属性编写公式。 在 "**树视图**" 窗格的顶部，选择 "**应用**" 对象，就像选择任何其他控件或屏幕一样。 通过在编辑栏左侧的下拉列表中选择某个对象的属性来查看和编辑该对象的属性。
 
 > [!div class="mx-imgBorder"]
-> 树视图窗格中的0The 应用对象 @ no__t-1 @no__t
+> "树视图" 窗格中的 ![The 应用对象 ](media/object-app/appobject.png)
 
 ## <a name="activescreen-property"></a>App.activescreen 属性
 
@@ -54,7 +54,7 @@ ms.locfileid: "71983499"
 更改**OnStart**属性后，通过将鼠标指针悬停在 "**树视图**" 窗格中的**应用**对象上进行测试，选择显示的省略号（...），然后选择 "**运行 OnStart**"。 与第一次加载应用时不同，现有集合和变量将被设置。 若要从空集合开始，请使用 **[ClearCollect](function-clear-collect-clearcollect.md)** 函数而不是**Collect**函数。
 
 > [!div class="mx-imgBorder"]
-> 0App-用于运行 OnStart @ no__t 的项目快捷菜单-1 @no__t
+> 用于运行 OnStart 的 ![App 项快捷菜单 ](media/object-app/appobject-runonstart.png)
 
 ## <a name="confirmexit-properties"></a>ConfirmExit 属性
 
@@ -64,7 +64,7 @@ ms.locfileid: "71983499"
 > **ConfirmExit**不适用于嵌入的应用，例如 Power BI 和 SharePoint。
 
 > [!NOTE]
-> 目前，如果启用**延迟加载**预览功能（对于新应用，默认情况下），则这些属性只能引用第一个屏幕上的控件。 如果进行了引用，PowerApps Studio 不会显示错误，但生成的已发布应用不会在 PowerApps Mobile 或浏览器中打开。 我们正在积极努力提升此限制。 同时，你可以在**文件** > **应用设置**中关闭**延迟负载** > **高级设置**（在**预览功能**下）。
+> 目前，如果启用**延迟加载**预览功能（对于新应用，默认情况下），则这些属性只能引用第一个屏幕上的控件。 如果进行了引用，PowerApps Studio 不会显示错误，但生成的已发布应用不会在 PowerApps Mobile 或浏览器中打开。 我们正在积极努力提升此限制。 同时，可以在 "高级设置"  >  "**高级设置** **" 下，** 关闭 "**文件** > **应用设置**" 中的**延迟加载**。
 
 ### <a name="confirmexit"></a>ConfirmExit
 
@@ -108,7 +108,7 @@ ms.locfileid: "71983499"
     如果用户更改任一格式的数据，然后尝试关闭应用而不保存这些更改，则会显示此对话框。
 
     > [!div class="mx-imgBorder"]
-    > ![Generic 确认对话框 @ no__t-1
+    > ![Generic 确认 "对话框 ](media/object-app/confirm-native.png)
 
 1. 将**App**对象的**ConfirmExitMessage**属性设置为以下公式：
 
@@ -122,4 +122,4 @@ ms.locfileid: "71983499"
     如果用户在帐户窗体中更改了数据，然后尝试关闭应用而不保存这些更改，则会显示此对话框。
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Form-特定于 "确认" 对话框 @ no__t-1
+    > ![Form 特定的确认对话框 ](media/object-app/confirm-native-custom.png)
