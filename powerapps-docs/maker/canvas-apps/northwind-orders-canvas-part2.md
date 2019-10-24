@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d151249caebdb2a6f142943074a409bc626ff662
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71995857"
 ---
 # <a name="create-a-summary-form-in-a-canvas-app"></a>在画布应用中创建摘要窗体
@@ -29,9 +29,9 @@ ms.locfileid: "71995857"
 3. [创建详细信息库](northwind-orders-canvas-part3.md)。
 
 > [!div class="mx-imgBorder"]
-> 0Definition-屏幕区域 @ no__t-1 的 @no__t
+> 屏幕区域 ![Definition ](media/northwind-orders-canvas-part1/orders-parts.png)
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 1. [安装 Northwind 商贸数据库和应用](northwind-install.md)。
 1. 查看 Northwind 商贸的[画布应用的概述](northwind-orders-canvas-overview.md)。
@@ -44,26 +44,26 @@ ms.locfileid: "71995857"
 1. 在 "**树视图**" 窗格中，选择 " **Screen1** "，以确保不会意外地将控件添加到订单库：
 
     > [!div class="mx-imgBorder"]
-    > "树视图" 窗格中的 @no__t 0Select Screen1 @ no__t-1
+    > ![Select 树视图窗格中的 Screen1 ](media/northwind-orders-canvas-part2/titlebar-01.png)
 
 1. 在 "**插入**" 选项卡上，选择 "**标签**" 以插入[**标签**](controls/control-text-box.md)控件：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 标签 @ no__t-1
+    > ![Insert 标签 ](media/northwind-orders-canvas-part2/titlebar-02.png)
 
     新标签只应在库上出现一次。 如果它出现在库的每个项中，则删除该标签的第一个实例，确保选中该屏幕（如前一步骤所述），然后再次插入标签。
 
 1. 移动新标签并调整其大小，使其位于屏幕顶部：
 
     > [!div class="mx-imgBorder"]
-    > ![Move 并调整标签 @ no__t-1 的大小
+    > ![Move 并调整标签的大小 ](media/northwind-orders-canvas-part2/titlebar-03.png)
 
 1. 双击标签文本，然后键入**Northwind Orders**。
 
     作为替代方法，请修改公式栏中的**Text**属性以获得相同的结果：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Change 标题栏 @ no__t 中的文本
+    > ![Change 标题栏中的文本 ](media/northwind-orders-canvas-part2/titlebar-04.png)
 
 1. 在 "**主页**" 选项卡上，设置标签的格式：
     - 将字体大小增加为24磅。
@@ -73,7 +73,7 @@ ms.locfileid: "71995857"
     - 将深蓝填充添加到背景。
 
     > [!div class="mx-imgBorder"]
-    > "主页" 选项卡上的 @no__t 0Formatting 选项 @ no__t-1
+    > ![Formatting "主页" 选项卡上的选项 ](media/northwind-orders-canvas-part2/titlebar-05.png)
 
 ## <a name="add-an-edit-form-control"></a>添加编辑窗体控件
 
@@ -82,17 +82,17 @@ ms.locfileid: "71995857"
 1. 在 "**插入**" 选项卡上，插入 "[**编辑窗体**](controls/control-form-detail.md)" 控件：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Add 编辑窗体控件 @ no__t-1
+    > ![Add 编辑窗体控件 ](media/northwind-orders-canvas-part2/form-01.png)
 
     默认情况下，窗体显示在左上角，其他控件可能会导致难以查找：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Edit 窗体控件在默认位置 @ no__t-1
+    > 默认位置 ![Edit 窗体控件 ](media/northwind-orders-canvas-part2/form-02.png)
 
 1. 移动窗体并调整其大小以覆盖标题栏下面屏幕的右上角：
 
     > [!div class="mx-imgBorder"]
-    > ![Move 并调整编辑窗体 @ no__t 的大小
+    > ![Move 和调整 "编辑窗体" 控件的大小 ](media/northwind-orders-canvas-part2/form-03.png)
 
 1. 在编辑栏中，将窗体的**DataSource**属性设置为以下值：
 
@@ -101,7 +101,7 @@ ms.locfileid: "71995857"
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Set 的 "编辑窗体" 控件的 DataSource 属性 @ no__t-1
+    > ![Set "编辑窗体" 控件的 DataSource 属性 ](media/northwind-orders-canvas-part2/form-04.png)
 
     您可以在右侧边缘附近的 "**属性**" 选项卡中设置相同的属性，但该方法会将您不需要的字段添加到窗体中。 如果使用公式栏，则窗体将保留为空。
 
@@ -110,12 +110,12 @@ ms.locfileid: "71995857"
 1. 在右侧边缘附近的 "**属性**" 选项卡中，选择 "**编辑字段**"，打开 "**字段**" 窗格：
 
     > [!div class="mx-imgBorder"]
-    > @no__t "字段" 窗格中的 0Open @ no__t-1
+    > ![Open "字段" 窗格 ](media/northwind-orders-canvas-part2/form-05.png)
 
 1. 在 "**字段**" 窗格中，选择 "**添加字段**"，然后选中 "**客户**" 和 "**员工**" 字段的复选框。
 
     > [!div class="mx-imgBorder"]
-    > @no__t 将 Customer 和 Employee 字段0Add 到编辑窗体控件 @ no__t-1
+    > ![Add "客户" 和 "员工" 字段到 "编辑窗体" 控件 ](media/northwind-orders-canvas-part2/form-06.png)
 
 1. 向下滚动，直到显示这些字段，然后选中其复选框：
 
@@ -126,14 +126,14 @@ ms.locfileid: "71995857"
     - **支付日期**
 
     > [!div class="mx-imgBorder"]
-    > ![Add 将5个以上的字段拖到 "编辑窗体" 控件 @ no__t-1
+    > 为 "编辑窗体" 控件 ![Add 五个以上的字段 ](media/northwind-orders-canvas-part2/form-07.png)
 
 1. 在 "**字段**" 窗格的底部，选择 "**添加**"，然后关闭 "**字段**" 窗格。
 
     该窗体显示七个字段：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Edit 窗体控件显示七个字段 @ no__t-1
+    > ![Edit 窗体控件显示七个字段 ](media/northwind-orders-canvas-part2/form-08.png)
 
     > [!NOTE]
     > 如果任何字段显示红色错误图标，则表示从源中提取数据时可能出现问题。 若要解决此错误，请刷新数据：
@@ -149,7 +149,7 @@ ms.locfileid: "71995857"
     此步骤可在排列字段时增加灵活性：
 
     > [!div class="mx-imgBorder"]
-    > ![Change then "编辑窗体" 控件中的列数 @ no__t-1
+    > 然后 ![Change "编辑窗体" 控件中的列数 ](media/northwind-orders-canvas-part2/form-08b.png)
 
     许多 UI 设计依赖于12个列的布局，因为它们可以平均容纳1、2、3、4、6和12个控件的行。 在本主题中，您将创建包含1个、2个或4个控件的行。
 
@@ -157,15 +157,15 @@ ms.locfileid: "71995857"
 
     - 第一行：**订单号**、**订单状态**、**订单日期**和**支付日期**
     - 第二行：**客户**和**员工**
-    - 第三行：**备注**
+    - 第三行：**说明**
 
     > [!NOTE]
     > 你可能会发现，在排列**便笺**、**客户**和**员工**数据卡之前，可以更轻松地对其进行放宽。
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Move 和调整字段大小 @ no__t-1
+    > ![Move 和调整字段大小 ](media/northwind-orders-canvas-part2/form-rearrange.gif)
 
-    有关如何排列窗体中的字段的详细信息：[了解画布应用的数据格式布局](working-with-form-layout.md)。
+    有关如何排列窗体中的字段的详细信息：[了解画布应用的数据窗体布局](working-with-form-layout.md)。
 
 ## <a name="hide-time-controls"></a>隐藏时间控件
 
@@ -178,36 +178,36 @@ ms.locfileid: "71995857"
 1. 按住 Shift 键的同时，在 "**订单日期**" 数据卡中选择 "小时"、"分钟" 和 "冒号分隔符" 控件。
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Select 按顺序日期卡 @ no__t 中的时间控制
+    > ![Select "订单日期" 卡中的时间控制 ](media/northwind-orders-canvas-part2/form-09.png)
 
 1. 将控件的**Visible**属性设置为**false**。
 
     所有选定控件都将从窗体中消失：
 
     > [!div class="mx-imgBorder"]
-    > ![Set Visible 属性设置为 false。 ](media/northwind-orders-canvas-part2/form-10.png)
+    > ![Set Visible 属性设置为 false。](media/northwind-orders-canvas-part2/form-10.png)
 
 1. 调整 "[**日期选取器**](controls/control-date-picker.md)" 控件的大小以显示完整的日期：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Resize 日期选取器控件 @ no__t-1
+    > ![Resize "日期选取器" 控件 ](media/northwind-orders-canvas-part2/form-11.png)
 
     接下来，对 "**付费日期**" 字段重复执行最后几个步骤。
 
 1. 在 "**树视图**" 窗格中，选择 "**付费日期**" 数据卡中的时间控件：
 
     > [!div class="mx-imgBorder"]
-    > ![Select time control in 付费 Date 刷卡器 @ no__t-1
+    > 付费日期卡 ![Select 时间控制 ](media/northwind-orders-canvas-part2/form-12.png)
 
 1. 将所选控件的**Visible**属性设置为**false**：
 
     > [!div class="mx-imgBorder"]
-    > ![Set Visible 属性设置为 false。 ](media/northwind-orders-canvas-part2/form-13.png)
+    > ![Set Visible 属性设置为 false。](media/northwind-orders-canvas-part2/form-13.png)
 
 1. 在 "**付费卡日期**" 中调整日期选取器的大小：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Resize 日期选取器控件 @ no__t-1
+    > ![Resize "日期选取器" 控件 ](media/northwind-orders-canvas-part2/form-14.png)
 
 ## <a name="connect-the-order-gallery"></a>连接订单库
 
@@ -220,12 +220,12 @@ ms.locfileid: "71995857"
     ```
 
     > [!div class="mx-imgBorder"]
-    > 格式为 @ no__t-1 的0Set 项属性 @no__t
+    > 窗体的 ![Set 项属性 ](media/northwind-orders-canvas-part2/form-15.png)
 
     此窗体显示应用用户在列表中选择的任意订单的摘要。
 
     > [!div class="mx-imgBorder"]
-    > ![Select 列表中的订单以 @ no__t 格式显示其概述
+    > ![Select 列表中的订单，以便在表单中显示其概述 ](media/northwind-orders-canvas-part2/form-select.gif)
 
 ## <a name="replace-a-data-card"></a>更换数据卡
 
@@ -234,29 +234,29 @@ ms.locfileid: "71995857"
 1. 选择窗体，在右边缘附近的 "**属性**" 选项卡中选择 "**编辑字段**"，然后选择 "**订单号**" 字段：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Select 订单号字段 @ no__t-1
+    > ![Select 订单号字段 ](media/northwind-orders-canvas-part2/alt-01.png)
 
 1. 打开 "**控件类型**" 列表：
 
     > [!div class="mx-imgBorder"]
-    > ![Open * * 控件类型 * * list @ no__t-1
+    > ![Open * * 控件类型 * * 列表 ](media/northwind-orders-canvas-part2/alt-02.png)
 
 1. 选择 "**查看文本**" 数据卡：
 
     > [!div class="mx-imgBorder"]
-    > ![Select * * 查看文本 * * data 卡片 @ no__t-1
+    > ![Select * * 查看文本 * * 数据卡 ](media/northwind-orders-canvas-part2/alt-02b.png)
 
 1. 关闭 "**字段**" 窗格。
 
     用户不能再更改订单号：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Order number 为只读 @ no__t-1
+    > ![Order 号为只读 ](media/northwind-orders-canvas-part2/alt-03.png)
 
 1. 在 "**主页**" 选项卡上，将订单号的字号更改为20磅，以便更易于查找字段：
 
     > [!div class="mx-imgBorder"]
-    > ![Change 订单号的字号 @ no__t-1
+    > ![Change 订单号的字号 ](media/northwind-orders-canvas-part2/alt-04.png)
 
 ## <a name="use-a-many-to-one-relationship"></a>使用多对一关系
 
@@ -265,32 +265,32 @@ ms.locfileid: "71995857"
 1. 选择**员工**数据卡：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Select 员工数据卡 @ no__t-1
+    > ![Select 员工数据卡 ](media/northwind-orders-canvas-part2/employee-01.png)
 
 1. 在右侧边缘附近的 "**高级**" 选项卡中，对数据卡进行解锁，以便编辑以前为只读公式：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Unlock 员工数据卡 @ no__t-1
+    > ![Unlock 员工数据卡 ](media/northwind-orders-canvas-part2/employee-02.png)
 
 1. 在数据卡中，缩小组合框的宽度以为员工图片腾出空间：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Resize 组合框控件 @ no__t-1
+    > ![Resize 组合框控件 ](media/northwind-orders-canvas-part2/employee-03b.png)
 
-1. 在 "**插入**" 选项卡上，选择 " **Media**@no__t 2"**映像**：
+1. 在 "**插入**" 选项卡上，选择 " **Media**  > "**图像**：
 
     > [!div class="mx-imgBorder"]
-    > ![Insert a image @ no__t-1
+    > ![Insert 图像 ](media/northwind-orders-canvas-part2/employee-04.png)
 
     此时会在数据卡中显示图像，这会扩展以容纳该图像：
 
     > [!div class="mx-imgBorder"]
-    > ![Employee 数据卡与 Image control @ no__t-1
+    > ![Employee 包含图像控制的数据卡 ](media/northwind-orders-canvas-part2/employee-05.png)
 
 1. 调整图像大小，并将其移动到组合框的右侧：
 
     > [!div class="mx-imgBorder"]
-    > ![Move 并调整图像控件的大小 @ no__t-1
+    > ![Move 图像控件并调整其大小 ](media/northwind-orders-canvas-part2/employee-06.png)
 
 1. 将图像的**image**属性设置为此公式，如有必要，将 DataCardValue 的末尾替换为数字：
 
@@ -299,31 +299,31 @@ ms.locfileid: "71995857"
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set 映像文件的 Image 属性，no__t-1
+    > ![Set 图像的 Image 属性 ](media/northwind-orders-canvas-part2/employee-07.png)
 
     此时将显示所选员工的照片。
 
 1. 按住 Alt 键的同时，在组合框中选择不同的员工，确认图片也发生了变化。
 
     > [!div class="mx-imgBorder"]
-    > ![Select 员工以显示该员工的照片： @ no__t-1
+    > ![Select 员工显示该员工的照片 ](media/northwind-orders-canvas-part2/employee-select.gif)
 
 ## <a name="add-a-save-icon"></a>添加保存图标
 
-1. 在 "**树视图**" 窗格中，选择 " **Screen1**"，然后选择 "**插入** > "**图标** > **检查**：
+1. 在 "**树视图**" 窗格中，选择 " **Screen1**"，然后选择 "**插入** > **图标** > **检查**：
 
     > [!div class="mx-imgBorder"]
-    > ![Insert 复选标记图标 @ no__t-1
+    > ![Insert 勾号图标 ](media/northwind-orders-canvas-part2/save-01.png)
 
     默认情况下，默认情况下，此[**复选**](controls/control-shapes-icons.md)框显示在左上角，其他控件可能会使该图标难以查找：
 
     > [!div class="mx-imgBorder"]
-    > ![Icon 在默认位置 @ no__t-1
+    > ![Icon 在默认位置 ](media/northwind-orders-canvas-part2/save-02.png)
 
 1. 在 "**主页**" 选项卡上，将图标的 "**颜色**" 属性更改为白色，并调整图标大小，并将其移动到标题栏的右边缘附近：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Configure 的 "保存" 图标的颜色、大小和位置 @ no__t-1
+    > ![Configure "保存" 图标的颜色、大小和位置 ](media/northwind-orders-canvas-part2/save-03.png)
 
 1. 在 "**树视图**" 窗格中，确认窗体的名称为 " **Form1**"，然后将图标的 " **OnSelect** " 属性设置为以下公式：
 
@@ -332,7 +332,7 @@ ms.locfileid: "71995857"
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Set 的 "保存" 图标的 OnSelect 属性 @ no__t-1
+    > ![Set "保存" 图标的 OnSelect 属性 ](media/northwind-orders-canvas-part2/save-04.png)
 
     当用户选择此图标时， [**SubmitForm**](functions/function-form.md)函数将收集窗体中的任何更改后的值，并将其提交到数据源。 提交数据时，屏幕3月的第3点点之间的点号，并且在该过程完成后，订单库会反映这些更改。
 
@@ -343,7 +343,7 @@ ms.locfileid: "71995857"
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Set 图标的 DisplayMode 属性 @ no__t-1
+    > ![Set 图标的 DisplayMode 属性 ](media/northwind-orders-canvas-part2/save-05.png)
 
     如果窗体中的所有更改都已保存，则图标将被禁用并显示在**DisabledColor**中，接下来将设置。
 
@@ -354,29 +354,29 @@ ms.locfileid: "71995857"
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Set 图标的 DisabledColor 属性 @ no__t-1
+    > ![Set 图标的 DisabledColor 属性 ](media/northwind-orders-canvas-part2/save-06.png)
 
     用户可以通过选中复选图标来保存对订单所做的更改，然后在用户进行其他更改之前禁用并灰显。
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0saving 更改 @ no__t-1
+    > ![saving 更改 ](media/northwind-orders-canvas-part2/save-submit.gif)
 
 ## <a name="add-a-cancel-icon"></a>添加 "取消" 图标
 
-1. 在 "**插入**" 选项卡上，选择 "**图标**@no__t**取消**：
+1. 在 "**插入**" 选项卡上，选择 " > **取消**"**图标**：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Add cancel icon @ no__t-1
+    > ![Add 取消 "图标 ](media/northwind-orders-canvas-part2/save-07.png)
 
     默认情况下，该图标显示在左上角，其他控件可能会使该图标难以查找：
 
     > [!div class="mx-imgBorder"]
-    > ![Cancel 图标在默认位置 @ no__t-1
+    > ![Cancel 图标位于默认位置 ](media/northwind-orders-canvas-part2/save-08.png)
 
 1. 在 "**主页**" 选项卡上，将图标的 "**颜色**" 属性更改为白色，调整图标的大小，然后将其移到复选图标的左侧：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Change "取消" 图标的颜色、大小和位置 @ no__t-1
+    > ![Change "取消" 图标的颜色、大小和位置 ](media/northwind-orders-canvas-part2/save-09.png)
 
 1. 将 "取消" 图标的 " **OnSelect** " 属性设置为以下公式：
 
@@ -385,7 +385,7 @@ ms.locfileid: "71995857"
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t "取消" 图标的 OnSelect 属性 @ no__t-1
+    > ![Set "取消" 图标的 OnSelect 属性 ](media/northwind-orders-canvas-part2/save-10.png)
 
     [**ResetForm**](functions/function-form.md)函数将放弃窗体中的所有更改，这会将其返回到其原始状态。
 
@@ -396,7 +396,7 @@ ms.locfileid: "71995857"
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t "取消" 图标的 DisplayMode 属性 @ no__t-1
+    > ![Set "取消" 图标的 DisplayMode 属性 ](media/northwind-orders-canvas-part2/save-11.png)
 
     此公式略有不同于选中图标的公式。 如果所有更改均已保存或窗体处于**新**模式，则 "取消" 图标处于禁用状态，你将在下一步启用此功能。 在这种情况下， **ResetForm**将放弃新记录。
 
@@ -407,29 +407,29 @@ ms.locfileid: "71995857"
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t "取消" 图标的 DisabledColor 属性 @ no__t-1
+    > ![Set "取消" 图标的 DisabledColor 属性 ](media/northwind-orders-canvas-part2/save-12.png)
 
     用户可以取消对订单所做的更改，如果已保存所有更改，则 "检查" 和 "取消" 图标将处于禁用状态并灰显：
 
     > [!div class="mx-imgBorder"]
-    > ![Saving 并取消更改 @ no__t-1
+    > ![Saving 和取消更改 ](media/northwind-orders-canvas-part2/save-cancel.gif)
 
 ## <a name="add-an-add-icon"></a>添加添加图标
 
-1. 在 "**插入**" 选项卡上，选择 "**图标** > "**添加**"。
+1. 在 "**插入**" 选项卡上，选择  > **添加**的**图标**。
 
     > [!div class="mx-imgBorder"]
-    > @no__t 添加图标 @ no__t-1
+    > ![Insert 添加图标 ](media/northwind-orders-canvas-part2/save-13.png)
 
     默认情况下，"**添加**" 图标默认显示在左上角，其他控件可能会导致难以查找：
 
     > [!div class="mx-imgBorder"]
-    > @no__t-Add icon @ no__t 的位置0Default
+    > "添加" 图标 ![Default 位置 ](media/northwind-orders-canvas-part2/save-14.png)
 
 1. 在 "**主页**" 选项卡上，将 "添加" 图标的 "**颜色**" 属性设置为白色，调整图标大小，并将其移到 "取消" 图标的左侧：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Change "添加" 图标的颜色、大小和位置 @ no__t-1
+    > ![Change "添加" 图标的 "颜色"、"大小" 和 "位置" ](media/northwind-orders-canvas-part2/save-15.png)
 
 1. 将 "添加" 图标的 " **OnSelect** " 属性设置为以下公式：
 
@@ -438,7 +438,7 @@ ms.locfileid: "71995857"
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Set 添加图标的 OnSelect 属性 @ no__t-1
+    > ![Set "添加" 图标的 OnSelect 属性 ](media/northwind-orders-canvas-part2/save-15b.png)
 
     [**NewForm**](functions/function-form.md)函数在窗体中显示空白记录。  
 
@@ -449,7 +449,7 @@ ms.locfileid: "71995857"
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Set 添加图标的 DisplayMode 属性 @ no__t-1
+    > ![Set "添加" 图标的 DisplayMode 属性 ](media/northwind-orders-canvas-part2/save-16.png)
 
     此公式在以下条件下禁用添加图标：
 
@@ -463,32 +463,32 @@ ms.locfileid: "71995857"
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Set 添加图标的 DisabledColor 属性 @ no__t-1
+    > ![Set "添加" 图标的 DisabledColor 属性 ](media/northwind-orders-canvas-part2/save-17.png)
 
     如果用户未进行任何更改，则可以创建订单，或者保存或取消其所做的任何更改。 （如果用户选择此图标，则他们不能再次选择此图标，直到他们做出一项或多项更改，然后保存或取消这些更改）：
 
     > [!div class="mx-imgBorder"]
-    > ![Create a order @ no__t-1
+    > ![Create 订单 ](media/northwind-orders-canvas-part2/save-new.gif)
 
 > [!NOTE]
 > 如果你创建并保存了订单，则可能需要在订单库中向下滚动以显示你的新订单。 由于尚未添加任何订单详细信息，因此不会产生总价格。
 
 ## <a name="add-a-trash-icon"></a>添加垃圾桶图标
 
-1. 在 "**插入**" 选项卡上，选择**图标** > **垃圾桶**。
+1. 在 "**插入**" 选项卡上，选择 " > **垃圾桶**"**图标**。
 
     > [!div class="mx-imgBorder"]
-    > @no__t 垃圾桶图标 @ no__t-1
+    > ![Insert 垃圾桶图标 ](media/northwind-orders-canvas-part2/save-18.png)
 
     默认情况下，"**垃圾桶**" 图标默认显示在左上角，其他控件可能会导致难以查找：
 
     > [!div class="mx-imgBorder"]
-    > 0Default 图标 @ no__t 的位置 @no__t
+    > 垃圾桶图标 ![Default 位置 ](media/northwind-orders-canvas-part2/save-19.png)
 
 1. 在 "**主页**" 选项卡上，将 "垃圾桶" 图标的 "**颜色**" 属性更改为白色，调整图标大小，并将其移到 "添加" 图标的左侧：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Change 图标 @ no__t 的颜色、大小和位置
+    > ![Change 垃圾桶图标的颜色、大小和位置 ](media/northwind-orders-canvas-part2/save-20.png)
 
 1. 将垃圾桶图标的**OnSelect**属性设置为以下公式：
 
@@ -497,7 +497,7 @@ ms.locfileid: "71995857"
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t "垃圾桶" 图标的 OnSelect 属性 @ no__t-1
+    > ![Set 垃圾桶图标的 OnSelect 属性 ](media/northwind-orders-canvas-part2/save-21.png)
 
     [**Remove**](functions/function-remove-removeif.md)函数从数据源中删除记录。 在此公式中，函数将删除订单库中选择的记录。 垃圾桶图标显示在摘要窗体（而不是订单库）附近，因为该窗体显示了有关记录的更多详细信息，因此用户可以更轻松地标识公式将删除的记录。
 
@@ -508,7 +508,7 @@ ms.locfileid: "71995857"
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t "垃圾桶" 图标的 DisplayMode 属性 @ no__t-1
+    > ![Set 垃圾桶图标的 DisplayMode 属性 ](media/northwind-orders-canvas-part2/save-22.png)
 
     如果用户正在创建记录，则此公式禁用垃圾桶图标。 在用户保存记录之前， **Remove**函数没有要删除的记录。
 
@@ -519,21 +519,21 @@ ms.locfileid: "71995857"
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t "垃圾桶" 图标的 DisabledColor 属性 @ no__t-1
+    > ![Set 垃圾桶图标的 DisabledColor 属性 ](media/northwind-orders-canvas-part2/save-23.png)
 
     用户可以删除订单。
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Deleting orders @ no__t-1
+    > ![Deleting 订单 ](media/northwind-orders-canvas-part2/save-delete.gif)
 
 ## <a name="summary"></a>摘要
 
 概括而言，你添加了一个窗体，用户可以在其中显示和编辑每个订单的摘要，并使用以下元素：
 
-- 显示 "**订单**" 实体中的数据的窗体：Node.js **=** `Orders`
-- 窗体和订单库之间的连接：**Form1 项 =** `Gallery1.Selected`
+- 显示 "**订单**" 实体中的数据的窗体： node.js **=** `Orders`
+- 窗体和订单库之间的连接： **Form1. Item =** `Gallery1.Selected`
 - **订单号**字段的替代控件：**查看文本**
-- 用于在**员工**数据卡中显示员工照片的多对一关系： `DataCardValue1.Selected.Picture`
+- 多对一关系，用于在**员工**数据卡中显示员工的照片： `DataCardValue1.Selected.Picture`
 - 用于保存对订单的更改的图标： `SubmitForm( Form1 )`
 - 用于取消对订单的更改的图标： `ResetForm( Form1 )`
 - 用于创建订单的图标： `NewForm( Form1 )`

@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: cb8c77b60caa1f1ddf07e12f50e3cd52df764627
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71995601"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>在 PowerApps 中共享画布应用
@@ -27,7 +27,7 @@ ms.locfileid: "71995601"
 > [!IMPORTANT]
 > 要使共享应用按预期运行，还必须管理应用所基于的数据源或源的权限，如[Common Data Service](#common-data-service)或[Excel](share-app-data.md)。 可能还需要共享应用依赖的[其他资源](share-app-resources.md)，例如流、网关或连接。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 共享应用前，必须将其保存至云（而非本地），然后发布应用。
 
@@ -52,7 +52,7 @@ ms.locfileid: "71995601"
 1. 按名称或别名指定 Azure Active Directory 要与之共享应用的用户或安全组。
 
     - 若要允许整个组织运行应用（但不修改或共享），请在 "共享" 面板中键入**Everyone** 。
-    - 如果项由分号分隔，则可以使用别名列表、友好名称或这些项的组合（例如， **Jane Doe &lt; @ no__t-2 >**）来共享应用。 如果有多个用户具有相同名称但具有不同的别名，则会将找到的第一个人员添加到列表。 如果名称或别名已经有权限或无法解析，则会出现工具提示。 
+    - 如果项由分号分隔，则可以使用别名列表、友好名称或这些项的组合（例如， **Jane Doe &lt; jane.doe@contoso.com** ）来共享应用。 如果有多个用户具有相同名称但具有不同的别名，则会将找到的第一个人员添加到列表。 如果名称或别名已经有权限或无法解析，则会出现工具提示。 
 
     ![指定用户和共同所有者](./media/share-app/share-everyone.png)
 
@@ -71,7 +71,7 @@ ms.locfileid: "71995601"
     例如，你的应用可能会连接到 Common Data Service 数据库中的实体。 共享此类应用程序时，"共享" 面板会提示您管理该实体的安全性。
 
     > [!div class="mx-imgBorder"]
-    > ![Assign 安全角色 @ no__t-1
+    > ![Assign 安全角色 ](media/share-app/cds-assign-security-role.png)
 
     有关为实体管理安全的详细信息，请参阅本主题后面的[管理实体权限](share-app.md#manage-entity-permissions)。
 
@@ -135,9 +135,9 @@ PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享�
 > [!NOTE]
 > 只能为与他们共享的应用分配**用户**角色，而不能为其分配**共同所有者**角色。
 
-### <a name="prerequisites"></a>先决条件
-- 在 Azure Active Directory （Azure AD）中，为租户启用 B2B 外部协作。 详细信息：[启用 B2B 外部协作并管理谁可以邀请来宾](/azure/active-directory/b2b/delegate-invitations)
-    - 默认情况下启用 B2B 外部协作。 但是，租户管理员可以更改这些设置。有关 Azure AD B2B 的详细信息，请参阅[什么是来宾用户在 AZURE AD B2B 中的访问权限？](/azure/active-directory/b2b/what-is-b2b)  
+### <a name="prerequisites"></a>必备组件
+- 在 Azure Active Directory （Azure AD）中，为租户启用 B2B 外部协作。 详细信息：[启用 B2B 外部协作并管理可以邀请来宾的人员](/azure/active-directory/b2b/delegate-invitations)
+    - 默认情况下启用 B2B 外部协作。 但是，租户管理员可以更改这些设置。 有关 Azure AD B2B 的详细信息，请参阅[什么是来宾用户在 AZURE AD B2B 中的访问权限？](/azure/active-directory/b2b/what-is-b2b)  
 - 对可将来宾用户添加到 Azure AD 租户的帐户的访问权限。 具有来宾邀请者角色的管理员和用户可以将来宾添加到租户。   
 - 来宾用户必须通过以下租户之一分配 PowerApps 许可证：
     - 托管要共享的应用的租户。
@@ -146,7 +146,7 @@ PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享�
 ### <a name="steps-to-grant-guest-access"></a>授权来宾访问的步骤
 1. 选择 "**新来宾用户**"，在 Azure AD 中添加来宾用户。 详细信息：[快速入门：在 Azure AD 中添加新的来宾用户](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)。
     > [!div class="mx-imgBorder"] 
-    > ![在 Azure AD 中添加来宾 Azure AD](media/share-app/guest_access_doc_1.png "添加来宾")
+    > ![在 Azure AD 中添加来宾](media/share-app/guest_access_doc_1.png "在 Azure AD 中添加来宾")
 2. 如果来宾用户在其主租户中没有许可证，则为来宾用户分配许可证。
    - 若要从 admin.microsoft.com 分配来宾用户，请参阅向[一个用户分配许可证](/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
    - 若要从 portal.azure.com 分配来宾用户，请参阅[分配或删除许可证](/azure/active-directory/fundamentals/license-users-groups)。
@@ -157,9 +157,9 @@ PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享�
 3. 共享画布应用。 
     1. 登录到 https://make.powerapps.com  
     2. 单击 "**应用**"，选择一个画布应用，然后在命令栏上选择 "**共享**"。 
-    3. 输入 Azure AD 租户的来宾用户的电子邮件地址。 详细信息：[什么是来宾用户在 Azure AD B2B 中的访问权限？](/azure/active-directory/b2b/what-is-b2b)
+    3. 输入 Azure AD 租户的来宾用户的电子邮件地址。 详细信息：[什么是来宾用户在 AZURE AD B2B 中的访问权限？](/azure/active-directory/b2b/what-is-b2b)
           > [!div class="mx-imgBorder"] 
-          > 与![来宾共享来宾](media/share-app/guest_access_doc_2.png "共享")
+          > ![与来宾共享](media/share-app/guest_access_doc_2.png "与来宾共享")
  
 共享应用以进行来宾访问后，来宾可以通过在共享过程中发送给他们的电子邮件发现和访问与他们共享的应用。
 
@@ -169,9 +169,9 @@ PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享�
 ### <a name="frequently-asked-questions"></a>常见问题
 
 #### <a name="whats-the-difference-between-canvas-app-guest-access-and-powerapps-portals"></a>Canvas 应用来宾访问和 PowerApps 门户之间的区别是什么？ 
-画布应用支持构建一个应用，用于对业务流程进行数字化处理，而无需以传统编程语言（例如C#）编写代码。 对于画布应用的来宾访问，使由不同组织参与共同业务流程的人员团队能够访问与各种 Microsoft 和第三方源集成的相同应用资源。 详细信息：[用于 PowerApps 的画布-应用连接器概述](/powerapps/maker/canvas-apps/connections-list)。
+画布应用支持构建一个应用，用于对业务流程进行数字化处理，而无需以传统编程语言（例如C#）编写代码。 对于画布应用的来宾访问，使由不同组织参与共同业务流程的人员团队能够访问与各种 Microsoft 和第三方源集成的相同应用资源。 详细信息： [canvas 的应用连接器概述](/powerapps/maker/canvas-apps/connections-list)。
 
-[PowerApps 门户](/powerapps/maker/portals/overview) provide 生成低代码的响应式网站，使外部用户能够与 Common Data Service 中存储的数据进行交互。 它允许组织创建可通过匿名方式或通过其所选的登录提供者（如 LinkedIn、Microsoft 帐户或其他商业登录提供商）与组织外部的用户共享的网站。 
+[PowerApps 门户](/powerapps/maker/portals/overview) provide 能够构建低代码的响应式网站，使外部用户能够与 Common Data Service 中存储的数据进行交互。 它允许组织创建可通过匿名方式或通过其所选的登录提供者（如 LinkedIn、Microsoft 帐户或其他商业登录提供商）与组织外部的用户共享的网站。 
 
 下表概述了 PowerApps 门户和画布应用之间的一些核心功能差异。  
 
@@ -188,9 +188,9 @@ PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享�
 可以。 但是，访问画布独立应用需要 PowerApps 许可证，包括嵌入的应用。 通过 Microsoft PowerApps 嵌入控件在 SharePoint 中嵌入画布应用时，请输入应用 id。为此，请在 "**应用程序 web 链接" 或 "ID** " 框中输入应用 ID。 
 
 > [!div class="mx-imgBorder"]  
-> ![在 sharepoint 中将画布应用嵌入到]来宾的 sharepoint 中(media/share-app/guest_access_doc_5.PNG "嵌入画布应用")
+> ![在 SharePoint 中为来宾嵌入画布应用](media/share-app/guest_access_doc_5.PNG "在 SharePoint 中为来宾嵌入画布应用")
 
-通过 iFrame HTML 标记在 SharePoint 中嵌入画布应用时，请使用完整 web URL 引用应用。 若要查找 URL，请参阅 http://make.powerapps.com，选择应用，选择 "**详细信息**" 选项卡，URL 将显示在 " **Web 链接**" 下。
+通过 iFrame HTML 标记在 SharePoint 中嵌入画布应用时，请使用完整 web URL 引用应用。 若要查找 URL，请参阅 "http://make.powerapps.com"，选择应用，选择 "**详细信息**" 选项卡，URL 将显示在 " **Web 链接**" 下。
 
 > [!div class="mx-imgBorder"]  
 > ![画布应用详细信息](media/share-app/guest_access_doc_6.PNG "画布应用详细信息")

@@ -12,10 +12,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: baf7e74581819b3ea21542f30f96a0a6f517c0d5
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71705046"
 ---
 # <a name="behavior-formulas-for-components"></a>组件的行为公式
@@ -30,21 +30,21 @@ ms.locfileid: "71705046"
 选择了组件主机后，在 "属性" 下拉列表中选择 " **OnReset** "，然后输入一个或多个公式。
 
 > [!div class="mx-imgBorder"]
-> ![OnReset 示例 @ no__t-1
+> ![OnReset 示例 ](./media/component-behavior/example-onreset.png)
 
-若要测试**OnReset**，请配置控件以重置组件。 例如，将按钮的 " **OnSelect** " 属性设置为此公式：**Reset**（*ComponentName*）。
+若要测试**OnReset**，请配置控件以重置组件。 例如，将按钮的**OnSelect**属性设置为以下公式： **Reset**（*ComponentName*）。
 
 ### <a name="example---reset-timer"></a>示例-重置计时器
 
 > [!div class="mx-imgBorder"]
-> ![OnReset 示例 @ no__t-1
+> ![OnReset 示例 ](./media/component-behavior/Resettimer.gif)
 
-在此时间选择器组件中，两个变量用于显示时间 _selectedHour 和 _selectedMinute。 当选取器重置时，这些变量应重置为默认值，如12：10.  组件的 OnReset 属性具有以下公式：**Set （_selectedHour，12）;Set （_selectedMinute，12）**
+在此时间选择器组件中，两个变量用于显示时间 _selectedHour 和 _selectedMinute。 当选取器重置时，这些变量应重置为默认值，例如 12:12。  组件的 OnReset 属性具有以下公式： **Set （_selectedHour，12）;Set （_selectedMinute，12）**
 
 若要触发重置，请跳到屏幕并插入组件的实例。 添加一个按钮，并将该按钮的 OnSelect 配置为调用**Reset （TimerComponent_instance）** 来触发 OnReset。
 
 > [!div class="mx-imgBorder"]
-> ![Reset button @ no__t-1
+> ![Reset 按钮 ](./media/component-behavior/reset-button.png)
 
 ## <a name="update-onreset-using-custom-property"></a>使用自定义属性更新 OnReset
 
@@ -55,7 +55,7 @@ ms.locfileid: "71705046"
 ### <a name="example"></a>示例
 
 > [!div class="mx-imgBorder"]
-> ![OnReset 示例 @ no__t-1
+> ![OnReset 示例 ](./media/component-behavior/updateordernumber2.gif)
 
 这是查看订单号和更新数字的示例。 使用数值上移和下移组件可以增加或减少订单数。 选择左侧的库时，将重置 "数字上移" 和 "下移" 组件的默认数量，以显示所选工具的订单号。 "**当值更改时引发 OnReset**" 可在输入更改时重置默认值。 
 

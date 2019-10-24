@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ae82166b9cc21de1e25f99f7606ce7b95b2152b9
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71993967"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>从画布应用连接到 SharePoint
@@ -40,34 +40,34 @@ ms.locfileid: "71993967"
 
 ## <a name="create-a-connection"></a>创建连接
 
-1. [登录到 PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，在左侧导航栏中选择 "**数据**@no__t 2**连接**"，然后选择左上角附近的 "**新建连接**"。
+1. [登录到 PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，在左侧导航栏中选择 "**数据** > **连接**"，然后选择左上角附近的 "**新建连接**"。
 
     > [!div class="mx-imgBorder"]
-    > @no__t "> 左侧导航栏中的" 连接 "，然后选择左上角附近的" 新建连接 "。 ](./media/connection-sharepoint-online/new-connection.png)
+    > ![Select 左侧导航栏中的 "数据 > 连接"，然后选择左上角附近的 "新建连接"。](./media/connection-sharepoint-online/new-connection.png)
 
 1. 在右上角附近的 "搜索" 框中，键入或粘贴 " **sharepoint**"，然后选择 " **sharepoint**"。
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0In 在右上角附近的 "搜索" 框中，键入或粘贴 "SharePoint"，然后选择 "SharePoint"。 ](./media/connection-sharepoint-online/select-sharepoint.png)
+    > ![In 右上角附近的 "搜索" 框中，键入或粘贴 "SharePoint"，然后选择 "SharePoint"。](./media/connection-sharepoint-online/select-sharepoint.png)
 
 1. 执行下列一组步骤：
 
     - 若要连接到 SharePoint Online，请选择 "**直接连接（云服务）** "，选择 "**创建**"，然后提供凭据（如果提示）。
 
         > [!div class="mx-imgBorder"]
-        > @no__t 0To 连接到 SharePoint Online，请选择 "直接连接（云服务） ](./media/connection-sharepoint-online/select-online.png)"
+        > ![To 连接到 SharePoint Online，请选择 "直接连接（云服务）" ](./media/connection-sharepoint-online/select-online.png)
 
         创建连接后，可以将数据添加到现有应用或从头开始构建应用。
 
     - 若要连接到本地站点，请选择 "**使用本地数据网关连接**"。
 
         > [!div class="mx-imgBorder"]
-        > @no__t 0To 连接到本地站点，请选择 "使用本地数据网关连接"，](./media/connection-sharepoint-online/select-onprem.png)
+        > ![To 连接到本地站点，请选择 "使用本地数据网关连接"） ](./media/connection-sharepoint-online/select-onprem.png)
 
         指定 **Windows** 作为身份验证类型，然后指定凭据。 （如果凭据包括域名，则将其指定为 域\别名。）
 
         > [!div class="mx-imgBorder"]
-        > ![Specify 凭据 @ no__t-1
+        > ![Specify 凭据 ](./media/connection-sharepoint-online/specify-creds.png)
 
         在 "**选择网关**" 下，选择要使用的网关，然后选择 "**创建**"。
 
@@ -75,7 +75,7 @@ ms.locfileid: "71993967"
         > 如果未安装本地数据网关，请[安装一个](../gateway-reference.md)网关，然后选择该图标来刷新网关列表。
 
         > [!div class="mx-imgBorder"]
-        > ![Choose gateway @ no__t-1
+        > ![Choose 网关 ](./media/connection-sharepoint-online/choose-gateway.png)
 
         创建连接后，可以将数据添加到现有应用或从头开始构建应用。
 
@@ -84,24 +84,24 @@ ms.locfileid: "71993967"
 1. 在 PowerApps Studio 中，打开要更新的应用程序，选择 "**视图**" 选项卡，然后选择 "**数据源**"。
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0On "视图" 选项卡，然后选择 "数据源 @ no__t-1"
+    > ![On "视图" 选项卡，然后选择 "数据源" ](./media/connection-sharepoint-online/view-data-sources.png)
 
-1. 在 "**数据**" 窗格中，选择 "**添加数据源** > **SharePoint**"。
+1. 在 "**数据**" 窗格中，选择 " > **SharePoint** **添加数据源**"。
 
 1. 在 "**连接到 SharePoint 站点**" 下，选择 "最近使用的**站点**" 列表中的条目（或键入或粘贴要使用的站点的 URL），然后选择 "**连接**"。
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Select site @ no__t-1
+    > ![Select 站点 ](./media/connection-sharepoint-online/select-sp-site.png)
 
 1. 在 "**选择列表**" 下，选中要使用的**文档**或一个或多个列表的复选框，然后选择 "**连接**"：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Under 选择列表，请选中文档或要使用的一个或多个列表的复选框，然后选择 "连接 @ no__t-1"。
+    > ![Under 选择列表，请选中文档或要使用的一个或多个列表的复选框，然后选择 "连接" ](./media/connection-sharepoint-online/select-sp-tables.png)
 
     默认情况下，并非所有类型的列表都会显示。 PowerApps 支持自定义列表，而不是基于模板的列表。 如果要使用的列表名称未显示，请滚动到底部，然后在 "**输入自定义表名称**" 框中键入列表的名称。
 
     > [!div class="mx-imgBorder"]
-    > ![Type 包含 "输入自定义列表名称" 的框中列表的名称。 ](./media/connection-sharepoint-online/custom-list.png)
+    > ![Type 包含 "输入自定义列表名称" 的框中列表的名称。](./media/connection-sharepoint-online/custom-list.png)
 
     数据源已添加到应用中。
 
@@ -145,7 +145,7 @@ ms.locfileid: "71993967"
     库中的图像的文件名显示为**ImageList**。
 
     > [!div class="mx-imgBorder"]
-    > 0List-no__t-1 @no__t
+    > 图像 ![List ](./media/connection-sharepoint-online/dropdown-items.png)
 
 1. 添加**图像**控件，并将其 " **image** " 属性设置为以下表达式：
 
@@ -156,7 +156,7 @@ ms.locfileid: "71993967"
     此时将显示您指定的图像。
 
     > [!div class="mx-imgBorder"]
-    > ![Sample image @ no__t-1
+    > ![Sample 图像 ](./media/connection-sharepoint-online/golden-honey.png)
 
 您可以[下载示例应用程序，该应用程序](https://pwrappssamples.blob.core.windows.net/samples/spdoclib_blogapp.msapp)演示了更复杂的方法来显示 SharePoint 库中的数据。
 
@@ -174,19 +174,19 @@ ms.locfileid: "71993967"
 找到所需的文件后，选择该文件以将其显示在右侧的 "**视频**"、"**图像**" 或 "**音频**" 控件中。
 
 > [!div class="mx-imgBorder"]
-> ![Sample image @ no__t-1
+> ![Sample 图像 ](./media/connection-sharepoint-online/library-app.png)
 
 ## <a name="known-issues"></a>已知问题
 
 ### <a name="lists"></a>表
 
-PowerApps 可以读取包含空格的列名，但空格将替换为十六进制转义代码 **"\_x0020 @ no__t-2"** 。 例如，如果 SharePoint 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
+PowerApps 可以读取包含空格的列名，但空格将替换为十六进制转义代码 **"\_x0020 \_"** 。 例如，如果 SharePoint 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
 
 并非所有类型的列都受支持，并且并非所有类型的列都支持所有类型的卡。
 
 | 列类型 | 支持 | 默认卡 |
 | --- | --- | --- |
-| 单行文本 |是 |视图文本 |
+| 单行文本 |是 |查看文本 |
 | 多行文本 |是 |查看文本 |
 | 选择 |是 |视图查找<br>编辑查找<br>查看多选<br>编辑多选 |
 | Number |是 |视图百分比<br>视图分级<br>查看文本 |

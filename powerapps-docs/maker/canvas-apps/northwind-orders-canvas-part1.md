@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ac6586067105d5f6cd1ce2aab5568450804fe4c6
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71991366"
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>在画布应用中创建订单库
@@ -29,9 +29,9 @@ ms.locfileid: "71991366"
 1. [创建详细信息库](northwind-orders-canvas-part3.md)。
 
 > [!div class="mx-imgBorder"]
-> 0Definition-屏幕区域 @ no__t-1 的 @no__t
+> 屏幕区域 ![Definition ](media/northwind-orders-canvas-part1/orders-parts.png)
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 - [安装 Northwind 商贸数据库和应用](northwind-install.md)。
 - 通读 Northwind 商贸的[画布应用概述](northwind-orders-canvas-overview.md)。
@@ -41,17 +41,17 @@ ms.locfileid: "71991366"
 1. [登录到 PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后创建一个空的平板电脑应用。
 
     > [!div class="mx-imgBorder"]
-    > 从空白磁贴0Canvas 应用-no__t-1 @no__t
+    > 从空白磁贴 ![Canvas 应用 ](media/northwind-orders-canvas-part1/start-01.png)
 
 1. 任意命名你的应用，然后选择 "**创建**"。
 
     > [!div class="mx-imgBorder"]
-    > 从空白对话框 @no__t 0Canvas 应用 @ no__t-1
+    > 从空白对话框 ![Canvas 应用 ](media/northwind-orders-canvas-part1/start-02.png)
 
     PowerApps Studio 随即打开，以便你可以向应用程序中添加数据源和控件：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0PowerApps Studio @ no__t-1
+    > ![PowerApps Studio ](media/northwind-orders-canvas-part1/start-03.png)
 
 1. 启用[实验性功能](working-with-experimental.md)，以便直接从公式栏中显示公式的结果。
 
@@ -59,7 +59,7 @@ ms.locfileid: "71991366"
     1. 滚动到功能列表的底部，然后打开 "**启用公式栏结果" 视图**：
 
         > [!div class="mx-imgBorder"]
-        > 0List-实验功能的 no__t-1 @no__t
+        > 实验功能 ![List ](media/northwind-orders-canvas-part1/start-04.png)
 
 1. 在左上角，选择 "返回" 箭头返回到空白画布。
 
@@ -68,29 +68,29 @@ ms.locfileid: "71991366"
 1. 在 "**视图**" 选项卡上，选择 "**数据源**"，然后在 "**数据**" 窗格中选择 "**添加数据源**"：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Select 视图、数据源、添加数据源 @ no__t-1
+    > ![Select 视图、数据源、添加数据源 ](media/northwind-orders-canvas-part1/datasource-01.png)
 
 1. 选择**Common Data Service**。
 
     如果**Common Data Service**未出现在连接列表中，请选择 "**新建连接**"，然后添加它。
 
     > [!div class="mx-imgBorder"]
-    > ![List of no__t-1
+    > 连接 ![List ](media/northwind-orders-canvas-part1/datasource-02.png)
 
 1. 在 "**选择实体**" 下，键入 "**订单**"，选择 "**订单**" 复选框，然后选择 "**连接**"：
 
     > [!div class="mx-imgBorder"]
-    > ![List of no__t-1
+    > 实体 ![List ](media/northwind-orders-canvas-part1/datasource-03.png)
 
     已将**Orders**数据源添加到应用：
 
     > [!div class="mx-imgBorder"]
-    > ![Data pane @ no__t-1
+    > ![Data 窗格 ](media/northwind-orders-canvas-part1/datasource-04.png)
 
     **Orders**实体包含各种类型的多个字段：
 
     > [!div class="mx-imgBorder"]
-    > 订单实体 @ no__t 中字段的 @no__t 0List
+    > "订单" 实体中的字段 ![List ](media/northwind-orders-canvas-part1/datasource-05.png)
 
     每个字段都有一个**显示名称**和一个**名称**，该名称有时称为逻辑名称。 这两个名称引用相同的内容。 通常情况下，在生成应用时将使用显示名称，但某些情况下需要的**名称**越多，如过程中所述。
 
@@ -101,7 +101,7 @@ ms.locfileid: "71991366"
 1. 在 "**插入**" 选项卡上，选择 "**库** > **空白垂直**" 以添加[**库**](controls/control-gallery.md)控件，该控件将显示订单。
 
     > [!div class="mx-imgBorder"]
-    > ![Insert、库、空白垂直 @ no__t-1
+    > ![Insert、库、空白垂直 ](media/northwind-orders-canvas-part1/orders-01.png)
 
 1. 在编辑栏中，将库的**Items**属性设置为以下公式：
 
@@ -112,17 +112,17 @@ ms.locfileid: "71991366"
     Sort 函数对该列表[**进行排序**](functions/function-sort.md)，以便先显示最新的订单（具有最高的订单号）。
 
     > [!div class="mx-imgBorder"]
-    > 0Set 库 @ no__t 的项目属性-1 @no__t
+    > 库的 ![Set Items 属性 ](media/northwind-orders-canvas-part1/orders-02.png)
 
 1. 在右侧边缘附近的 "**属性**" 选项卡中，打开 "**布局**" 列表：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0List 的布局选项 @ no__t-1
+    > 布局选项 ![List ](media/northwind-orders-canvas-part1/orders-03.png)
 
 1. 在选项列表中，选择 "**标题和副标题**"：
 
     > [!div class="mx-imgBorder"]
-    > ![Select a layout @ no__t-1
+    > ![Select 布局 ](media/northwind-orders-canvas-part1/orders-04.png)
 
     将两个[**标签**](controls/control-text-box.md)控件添加到库的模板中。 默认情况下，这些控件显示 " **Orders** " 实体的两个列，接下来将更改这些列。 将为实体中的每个记录垂直复制库的模板。
 
@@ -137,14 +137,14 @@ ms.locfileid: "71991366"
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Set 标题标签的 Text 属性 @ no__t-1
+    > ![Set 标题标签的 Text 属性 ](media/northwind-orders-canvas-part1/orders-06.png)
 
     订单号将显示在每个库项的顶部。 在库模板中， **ThisItem**向**Order**实体中的所有字段授予访问权限。
 
 1. 在 "**数据**" 窗格中，选择 " **Subtitle1** " （或选择库模板中的下部标签）：
 
     > [!div class="mx-imgBorder"]
-    > ![Select 副标题标签 @ no__t-1
+    > ![Select 副标题标签 ](media/northwind-orders-canvas-part1/orders-07.png)
 
 1. 在编辑栏中，将标签的 " **Text** " 属性设置为以下表达式：
 
@@ -153,7 +153,7 @@ ms.locfileid: "71991366"
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Set 副标题标签的 Text 属性 @ no__t-1
+    > ![Set 副标题标签的 Text 属性 ](media/northwind-orders-canvas-part1/orders-08.png)
 
     输入此公式后，可能会有一段时间显示红色波浪错误。 如果您在公式栏之外选择了任何内容，然后将光标返回到公式栏中，则会清除该错误。 如果错误仍然存在或未显示值，请选择 "**视图**" 选项卡，选择 "**数据源**"，然后通过选择 "数据源名称" 右侧的省略号（...）来刷新 "**订单**" 实体。
 
@@ -162,7 +162,7 @@ ms.locfileid: "71991366"
     您可以显示 "**订单**" 实体与 "**客户**" 实体之间的所有关系：
 
     > [!div class="mx-imgBorder"]
-    > 0List 的关系 @ no__t-1 @no__t
+    > 关系的 ![List ](media/northwind-orders-canvas-part1/orders-09.png)
 
 1. 通过选择右上角的 "关闭" 图标（x）来关闭 "**数据**" 窗格。
 
@@ -173,22 +173,22 @@ ms.locfileid: "71991366"
 1. 在库的模板中，缩小第一个标签的宽度， **Title1**：
 
     > [!div class="mx-imgBorder"]
-    > 库的模板 @ no__t 中的 0Title1-1 @no__t
+    > 库模板中的 ![Title1 ](media/northwind-orders-canvas-part1/status-01.png)
 
 1. 对第二个标签**Subtitle1**重复上述步骤：
 
     > [!div class="mx-imgBorder"]
-    > 库的模板 @ no__t 中的 0Subtitle1-1 @no__t
+    > 库模板中的 ![Subtitle1 ](media/northwind-orders-canvas-part1/status-02.png)
 
 1. 在选定库模板（或模板中的控件）的情况下，选择 "**插入**" 选项卡上的 "**标签**"：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 标签 @ no__t-1
+    > ![Add 标签 ](media/northwind-orders-canvas-part1/status-03.png)
 
 1. 将新标签移动到 " **Title1** " 标签的右侧：
 
     > [!div class="mx-imgBorder"]
-    > ![Move 并调整标签 @ no__t-1 的大小
+    > ![Move 标签并调整其大小 ](media/northwind-orders-canvas-part1/status-04.png)
 
 1. 将新标签的 " **Text** " 属性设置为此表达式：
 
@@ -197,12 +197,12 @@ ms.locfileid: "71991366"
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Set 文本属性 @ no__t-1
+    > ![Set Text 属性 ](media/northwind-orders-canvas-part1/status-05.png)
 
     在 "**订单**" 实体中，"**订单状态**" 字段保留 "**订单状态**" 选项集的值。 选项集类似于其他编程工具中的枚举。 每组选项都是在数据库中定义的，因此用户只能指定集中的那些选项。 "**订单状态**" 选项集也是全局的，而不是本地的，因此可以在其他实体中使用它：
 
     > [!div class="mx-imgBorder"]
-    > ![Orders Status 选项 set @ no__t-1
+    > ![Orders 状态选项集 ](media/northwind-orders-canvas-part1/status-06.png)
 
     如果在标签中显示某个集合中的每个选项，则会显示该名称。 可以对这些名称进行本地化，应用可识别相同的选项，无论是英语用户选择**Apple**、法语用户还是选择**Pomme**，还是西班牙语用户选择**Manzana**。 因此，不能创建依赖于某个选项的硬编码字符串的公式，如本主题后面所示。
 
@@ -211,7 +211,7 @@ ms.locfileid: "71991366"
 1. 在 "**主页**" 选项卡上，将状态标签的字体大小增加到20个点，然后右对齐文本：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Change 字号和对齐方式 @ no__t-1
+    > ![Change 字号和对齐 ](media/northwind-orders-canvas-part1/status-07.png)
 
 1. 在编辑栏中，将状态标签的 "**颜色**" 属性设置为以下公式：
 
@@ -225,7 +225,7 @@ ms.locfileid: "71991366"
     ```
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Set 状态标签 @ no__t 的 Color 属性
+    > ![Set 状态标签的 "颜色" 属性 ](media/northwind-orders-canvas-part1/status-08.png)
 
     PowerApps 禁止您创建一个公式，该公式依赖于集中每个选项的硬编码字符串，因为如果选项名称已本地化，则这些公式可能会产生不适当的结果。 相反， **Switch**函数基于用户的设置来确定标签中显示的任何字符串的颜色。
 
@@ -236,17 +236,17 @@ ms.locfileid: "71991366"
 1. 选择库中的第一项，即库的模板：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 库模板 @ no__t-1
+    > ![Select 库模板 ](media/northwind-orders-canvas-part1/aggregate-01.png)
 
 1. 在 "**插入**" 选项卡上，选择 "**标签**" 添加另一个标签：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 标签 @ no__t-1
+    > ![Add 标签 ](media/northwind-orders-canvas-part1/aggregate-02.png)
 
 1. 移动新标签，使其显示在 "状态" 标签下：
 
     > [!div class="mx-imgBorder"]
-    > ![Resize 并移动新标签 @ no__t-1
+    > ![Resize 并将新标签移动 ](media/northwind-orders-canvas-part1/aggregate-03.png)
 
 1. 在编辑栏中，将 "新建标签" 的 "**文本**" 属性设置为以下公式：
 
@@ -255,25 +255,25 @@ ms.locfileid: "71991366"
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Formula 用于计算订单的总成本 @ no__t-1
+    > 用于计算订单总成本的 ![Formula ](media/northwind-orders-canvas-part1/aggregate-04.png)
 
     在此公式中， [**Sum**](functions/function-aggregates.md)函数通过一对多关系在**订单详细信息**实体中添加与**订单**实体中每条记录关联的记录。 这些行项构成每个订单，您将使用同一一对多关系来显示和编辑屏幕右下方区域中的行项。
 
     此公式显示蓝色下划线和[委托警告](delegation-overview.md)，因为 Common Data Service 不支持对复杂聚合函数（例如，乘法）的委托。 您可以忽略此信息，因为此示例中的任何订单都不包含500行以上的项。 如果需要其他应用，可以在**应用设置**中增加该限制。
 
-    此公式中的[**文本**](functions/function-text.md)函数添加货币符号，并使用千位分隔符和小数分隔符设置结果格式。 根据编写，该公式包括美国英语的语言标记英语（ **[$-en-us]** ）和美元符号（ **@no__t**）。 如果删除 language 标记，则会将其替换为基于您的语言设置的一个标记，标签将显示该标记的相应格式。 如果保留美元符号，则标签将根据用户的设置显示相应的货币符号。 但是，您可以通过将美元符号替换为您喜欢的符号来强制显示不同的符号。
+    此公式中的[**文本**](functions/function-text.md)函数添加货币符号，并使用千位分隔符和小数分隔符设置结果格式。 根据编写，该公式包括美国英语的语言标记（ **[$-en-us]** ）和一个美元符号（ **$** ）。 如果删除 language 标记，则会将其替换为基于您的语言设置的一个标记，标签将显示该标记的相应格式。 如果保留美元符号，则标签将根据用户的设置显示相应的货币符号。 但是，您可以通过将美元符号替换为您喜欢的符号来强制显示不同的符号。
 
 1. 在 "**主页**" 选项卡上，将最新标签的字体大小更改为20磅，并将其文本右对齐：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Change 标签的字号和对齐方式 @ no__t-1
+    > ![Change 标签的字号和对齐方式 ](media/northwind-orders-canvas-part1/aggregate-05.png)
 
 1. 将库移动到屏幕的左边缘，并缩小库的宽度以关闭一些空间。
 
 1. 增加库的高度，使其与屏幕几乎一样高，但将标题栏的顶部留下一点空间，并将其添加到下一主题开头：
 
     > [!div class="mx-imgBorder"]
-    > ![Move 并调整库 @ no__t 的大小
+    > ![Move 库并调整其大小 ](media/northwind-orders-canvas-part1/aggregate-06.png)
 
 ## <a name="summary"></a>摘要
 
@@ -281,7 +281,7 @@ ms.locfileid: "71991366"
 
 - 用于显示订单号的表达式： `"Orders " & ThisItem.OrderNumber`
 - 多对一关系中的字段： `ThisItem.Customer.Company`
-- 显示某个集合中的选项名称的标签： `ThisItem.'Order Status'`
+- 显示某一集中选项的名称的标签： `ThisItem.'Order Status'`
 - 根据标签中显示的选项更改格式的标签： `Switch( ThisItem.'Order Status', 'Orders Status'.Closed, Green, ...`
 - 对一对多关系的复杂聚合函数： `Sum( ThisItem.'Order Details', Quantity * 'Unit Price' )`
 
