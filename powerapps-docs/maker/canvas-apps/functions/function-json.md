@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ba852093da05c3fa69cc47b219a0bef65908c170
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71992621"
 ---
 # <a name="json-function-in-powerapps"></a>PowerApps 中的 JSON 函数
@@ -38,13 +38,13 @@ ms.locfileid: "71992621"
 | **日期** | 包含 ISO 8601 **yyyy-mm-dd**格式的日期的字符串。 | `"2019-03-31"` |
 | **型** | 包含 ISO 8601 日期/时间的字符串。 日期/时间值采用 UTC 格式，因为结束的 "Z" 指示。  | `"2019-03-31T22:32:06.822Z"`  |
 | **GUID.EMPTY** | 包含 GUID 值的字符串。 字母小写。 | `"751b58ac-380e-4a04-a925-9f375995cc40"`
-| **图像、媒体** | 如果指定了**IncludeBinaryData** ，则媒体文件将以字符串的形式进行编码。 使用 http：或 https 的 Web 引用：未修改 URL 方案。 对内存中二进制数据的引用将用["data：*mimetype*; base64,..."](https://en.wikipedia.org/wiki/Data_URI_scheme)格式进行编码。 内存中数据包括用户使用[**照相机**](../controls/control-camera.md)控件捕获的图像，以及 appres：和 blob 的任何其他引用：URL 方案。| `"data:image/jpeg;base64,/9j/4AA..."` |
+| **图像、媒体** | 如果指定了**IncludeBinaryData** ，则媒体文件将以字符串的形式进行编码。 不会修改使用 http：或 https： URL 方案的 Web 引用。 对内存中二进制数据的引用将用["data：*mimetype*; base64,..."](https://en.wikipedia.org/wiki/Data_URI_scheme)格式进行编码。 内存中数据包括用户使用[**照相机**](../controls/control-camera.md)控件捕获的图像，以及使用 appres：和 BLOB： URL 方案的任何其他引用。| `"data:image/jpeg;base64,/9j/4AA..."` |
 | **多种** | 对用户语言使用适当的小数点分隔符的数字。 如果需要，使用科学记数法。 | `1.345` |
-| **选项 @ no__t-1set** | 选项集的数值，而不是用于显示的标签。 使用数值是因为它是独立于语言的。  | `1001` |
+| **选项 &nbsp;set** | 选项集的数值，而不是用于显示的标签。 使用数值是因为它是独立于语言的。  | `1001` |
 | **阶段** | 包含 ISO 8601 *hh： mm： ss*格式的字符串。  | `"23:12:49.000"` |
 | **记录** | 以逗号分隔的列表，介于 **{** 和 **}** 之间，字段及其值之间。 此表示法类似于画布应用中的记录，但名称始终在双引号之间。 此格式不支持基于多对一关系的记录。  | `{ "First Name": "Fred", "Age": 21 }` |
 | **数据表** | 记录的以逗号分隔的列表，介于 **[** 和 **]** 之间。 此格式不支持基于一对多关系的表。  | `[ { "First Name": "Fred", "Age": 21 }, { "First Name": "Jean", "Age": 20 } ]` |
-| **两个 @ no__t-1option** | 这两个选项的布尔值（ *true*或*false*），而不是用于显示的标签。 使用布尔值，因为它是独立于语言的。 | `false` |
+| **两 &nbsp;option** | 这两个选项的布尔值（ *true*或*false*），而不是用于显示的标签。 使用布尔值，因为它是独立于语言的。 | `false` |
 | **超链接、文本** | 双引号。 函数使用反斜杠转义嵌入的双引号，将换行符替换为 "\n"，并进行其他标准 JavaScript 替换。 | `"This is a string."` |
 
 指定可选的*格式*参数以控制结果的可读性，以及如何处理不受支持的和二进制数据类型。 默认情况下，输出尽可能简洁，无需空格或换行符，不允许使用不受支持的数据类型和二进制数据。 如果指定 **&** 运算符，则可以组合多种格式。
@@ -93,12 +93,12 @@ ms.locfileid: "71992621"
     **CitiesByCountry**集合是使用此数据结构创建的，通过在 "**文件**" 菜单上选择 "**集合**"，然后选择集合的名称，可以显示该集合。
 
     > [!div class="mx-imgBorder"]
-    > ![CitiesByCountry collection @ no__t-1
+    > ![CitiesByCountry 集合 ](media/function-json/cities-grouped.png)
 
-    你还可以通过以下方式显示此集合：选择 "**文件** > **应用设置**"  >  "**高级 @no__t 设置**"。**启用公式栏结果视图**，在编辑栏中选择集合名称，然后选择公式栏下的集合名称旁的向下箭头。
+    你还可以通过以下方式显示此集合：选择 "**文件**" **"**  >  ** >   > "** "" "" "" "" "公式栏下的集合名称旁的向下箭头。
 
     > [!div class="mx-imgBorder"]
-    > 在公式栏的结果视图中 ![Collection @ no__t-1
+    > 在编辑栏的结果视图中 ![Collection ](media/function-json/cities-grouped-resultview.png)
 
 1. 插入另一个按钮，并将其**OnSelect**属性设置为以下公式：
 

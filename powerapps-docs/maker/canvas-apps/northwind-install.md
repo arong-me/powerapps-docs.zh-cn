@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 3a2c3b468c7ccc09c49221c65113e66b562f5ed1
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71990863"
 ---
 # <a name="install-northwind-traders-database-and-apps"></a>安装 Northwind 商贸数据库和应用
@@ -26,7 +26,7 @@ ms.locfileid: "71990863"
 
 Northwind 商贸是一家虚构的组织，负责管理企业的订单、产品、客户、供应商和其他许多方面。 此示例与第一个版本的 Microsoft Access 一起显示，仍可用作访问模板。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 - 支持 Common Data Service 的 PowerApps 许可证。 你可以[使用免费试用版许可证](../signup-for-powerapps.md)30 天。
 - 具有 Common Data Service 数据库的环境。 如果你具有相应的权限，则可以[创建此类环境](https://docs.microsoft.com/power-platform/admin/create-environment)。
@@ -45,12 +45,12 @@ Northwind 商贸是一家虚构的组织，负责管理企业的订单、产品�
 1. 在左侧导航窗格中，选择 "**解决方案**"，然后在屏幕顶部附近的工具栏中选择 "**导入**"：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Solutions 视图和导入-解决方案入口点 @ no__t-1
+    > ![Solutions 视图和导入-解决方案入口点 ](media/northwind-install/solution-import.png)
 
 1. 在 "**选择解决方案包**" 页中，选择 "**浏览**"。
 
     > [!div class="mx-imgBorder"]
-    > 选择0Select 之前的解决方案包页面 @ no__t-1 @no__t
+    > 选择包之前 ![Select 解决方案包页 ](media/northwind-install/select-solution2.png)
 
 1. 找到下载的文件，然后选择 "**打开**"。
 
@@ -59,27 +59,27 @@ Northwind 商贸是一家虚构的组织，负责管理企业的订单、产品�
 1. 如果有正确的文件（版本号可能不同），请选择 "**下一步**"：
 
     > [!div class="mx-imgBorder"]
-    > 选择包后，@no__t 0Select 解决方案包页面 @ no__t-1
+    > 选择包后 ![Select 解决方案包页 ](media/northwind-install/confirm-solution2.png)
 
 1. 如果解决方案的名称正确，请在 "**解决方案信息**" 页中选择 "**下一步**"。
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Solution 信息页面 @ no__t-1
+    > ![Solution 信息 "页 ](media/northwind-install/confirm-publisher.png)
 
 1. 在 "**导入选项**" 页上，选择 "**导入**" 以确认 SDK 消息处理，示例要求：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Import 选项 page @ no__t-1
+    > ![Import 选项 "页面 ](media/northwind-install/confirm-sdk.png)
 
     在接下来的几分钟内安装解决方案时，将显示另一页，并显示进度：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0progress bar @ no__t-1
+    > ![progress bar ](media/northwind-install/solution-progress.png)
 
     安装完成后，原始页面将显示结果：
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Importing 解决方案页 @ no__t-1
+    > ![Importing 解决方案 "页面 ](media/northwind-install/solution-success.png)
 
 1. 选择“关闭”。
 
@@ -90,17 +90,17 @@ Northwind 商贸是一家虚构的组织，负责管理企业的订单、产品�
     如果在安装解决方案后未立即出现 Northwind 应用，请等待几分钟：
 
     > [!div class="mx-imgBorder"]
-    > 在应用列表中0Northwind 数据库的 no__t-1 @no__t
+    > 应用列表中的 ![Northwind 数据库 ](media/northwind-install/sample-data-app.png)
 
 1. 当应用请求与 Common Data Service 交互的权限时，请选择 "**允许**"：
 
     > [!div class="mx-imgBorder"]
-    > Common Data Service @ no__t 的 @no__t 0Consent 对话框-1
+    > Common Data Service 的 ![Consent 对话框 ](media/northwind-install/sample-data-permission.png)
 
 1. 在应用程序加载并显示示例实体不包含任何记录后，请选择 "**加载数据**" 以填充实体：
 
     > [!div class="mx-imgBorder"]
-    > 示例中的 @no__t 0Load 数据按钮数据管理器 @ no__t-1
+    > 示例数据管理器中的 ![Load 数据按钮 ](media/northwind-install/sample-data-load.png)
 
     当应用程序加载数据时，将在应用程序的顶部的第3号点和记录数增加。
 
@@ -109,12 +109,12 @@ Northwind 商贸是一家虚构的组织，负责管理企业的订单、产品�
     您可以通过选择 "**取消**" 随时取消该过程，并且可以通过选择 "**删除数据**" 随时删除数据：
 
     > [!div class="mx-imgBorder"]
-    > 加载数据时数据管理器 @no__t 0Sample-1
+    > 加载数据时数据管理器 ![Sample ](media/northwind-install/sample-data-progress.png)
 
     数据完成加载后，最后一行（**多对多关系**）将显示**完成**，并再次启用 "**加载数据**" 和 "**删除数据**" 按钮：
 
     > [!div class="mx-imgBorder"]
-    > 加载数据后，@no__t 0Sample 数据管理器 @ no__t-1
+    > 加载数据后 ![Sample 数据管理器 ](media/northwind-install/sample-data-complete.png)
 
 ## <a name="sample-apps"></a>应用示例
 
@@ -127,27 +127,27 @@ Northwind 解决方案包含以下用于与此数据交互的应用：
 
 ### <a name="canvas"></a>画布
 
-此单屏幕应用提供**Orders**实体的简单的主-详细视图，您可以在其中查看和编辑订单的订单和每个行项的汇总。 订单列表显示在左边缘附近，您可以选择该列表中的箭头，以显示该订单的摘要和详细信息。 详细信息：[Northwind 商贸的画布应用概述](northwind-orders-canvas-overview.md)。
+此单屏幕应用提供**Orders**实体的简单的主-详细视图，您可以在其中查看和编辑订单的订单和每个行项的汇总。 订单列表显示在左边缘附近，您可以选择该列表中的箭头，以显示该订单的摘要和详细信息。 详细信息：[有关 Northwind 商贸的画布应用的概述](northwind-orders-canvas-overview.md)。
 
 > [!div class="mx-imgBorder"]
-> Northwind 0List 中的订单和详细信息的 @no__t-no__t-1
+> Northwind 画布应用中的订单和详细信息的 ![List ](media/northwind-install/orders-canvas.png)
 
 ### <a name="model-driven"></a>模型驱动
 
 此应用对与画布应用相同的数据（在**Orders**实体中）进行操作。 在订单列表中，通过选择订单号来显示有关订单的详细信息：
 
 > [!div class="mx-imgBorder"]
-> 在 Northwind 模型驱动应用 @ no__t 中0list 订单的 @no__t
+> Northwind 模型驱动应用中的订单 ![list ](media/northwind-install/orders-model.png)
 
 订单摘要以单独的形式显示：
 
 > [!div class="mx-imgBorder"]
-> 模型驱动的应用 @ no__t 中 @no__t 0order 的详细信息
+> 模型驱动应用中的 ![order 详细信息 ](media/northwind-install/orders-model-2.png)
 
 如果向下滚动窗体，它会显示与画布应用相同的行项：
 
 > [!div class="mx-imgBorder"]
-> 0more 模型驱动的应用中的订单详细信息 @ no__t-1 @no__t
+> 模型驱动应用中 ![more 订单详细信息 ](media/northwind-install/orders-model-3.png)
 
 ## <a name="do-it-yourself"></a>自行完成
 

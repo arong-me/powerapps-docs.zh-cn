@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c908e3d25530b52b103ef58989545e46b931e791
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71987705"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>从解决方案中创建画布应用
@@ -42,17 +42,17 @@ ms.locfileid: "71987705"
 1. 在左侧导航栏中，选择 "**解决方案**"。
 
     > [!div class="mx-imgBorder"]
-    > 左侧导航栏中左侧导航栏(./media/add-app-solution/left-nav.png "解决方案选项")中的 "![解决方案" 选项]
+    > ![左侧导航栏中的 "解决方案" 选项](./media/add-app-solution/left-nav.png "左侧导航栏中的 "解决方案" 选项")
 
 1. 在标题栏下的标题栏中，选择 "**新建解决方案**"。
 
     > [!div class="mx-imgBorder"]
-    > ![新解决方案选项在横幅的 "](./media/add-app-solution/banner-new-solution.png "新建解决方案\" 选项")中
+    > ![横幅中的新解决方案选项](./media/add-app-solution/banner-new-solution.png "横幅中的新解决方案选项")
 
 1. 在出现的窗口中，为解决方案指定显示名称、发布者和版本。
 
     > [!div class="mx-imgBorder"]
-    > 新解决方案的![新解决方案](./media/add-app-solution/configure-new-solution.png "选项")的选项
+    > ![用于新解决方案的选项](./media/add-app-solution/configure-new-solution.png "用于新解决方案的选项")
 
     将根据你指定的显示名称自动生成名称（不含空格），但你可以根据需要自定义生成的名称。 如果您在这些区域中没有特定的需求，则可以为您的环境指定默认发布服务器，为版本指定**1.0** 。
 
@@ -72,14 +72,14 @@ ms.locfileid: "71987705"
 1. 在左侧导航栏中，选择 "**解决方案**"。
 
     > [!div class="mx-imgBorder"]
-    > 左侧导航栏中左侧导航栏(./media/add-app-solution/left-nav.png "解决方案选项")中的 "![解决方案" 选项]
+    > ![左侧导航栏中的 "解决方案" 选项](./media/add-app-solution/left-nav.png "左侧导航栏中的 "解决方案" 选项")
 
 1. 在解决方案列表中，选择要在其中创建画布应用的解决方案。
 
-1. 在标题栏下的标题栏中，选择 "**新建** > "**应用** >  "**画布应用**"，然后选择要创建的应用的外观规格（手机或平板电脑）。
+1. 在标题栏下的标题栏中，选择 "**新建**"  > **应用** > **画布应用**"，然后选择要创建的应用的外观规格（手机或平板电脑）。
 
     > [!div class="mx-imgBorder"]
-    > ![用于在解决方案中创建应用的选项](./media/add-app-solution/new-option.png "，用于在解决方案中创建应用")
+    > ![用于在解决方案中创建应用的选项](./media/add-app-solution/new-option.png "用于在解决方案中创建应用的选项")
 
     PowerApps Studio 在另一个浏览器选项卡中使用空白画布打开。
 
@@ -88,7 +88,7 @@ ms.locfileid: "71987705"
 1. 在选择解决方案的 "浏览器" 选项卡上，选择 "**完成**" 以刷新解决方案中组件的列表。
 
     > [!div class="mx-imgBorder"]
-    > "完成![按钮]完成"(./media/add-app-solution/done-button.png "按钮")
+    > ![完成按钮](./media/add-app-solution/done-button.png "“完成”按钮")
 
     新应用将出现在该解决方案的组件列表中。 如果保存对应用所做的任何更改，则这些更改将反映在解决方案中的版本中。
 
@@ -103,21 +103,21 @@ ms.locfileid: "71987705"
 1. 在左侧导航栏中，选择 "**解决方案**"。
 
     > [!div class="mx-imgBorder"]
-    > 左侧导航栏中左侧导航栏(./media/add-app-solution/left-nav.png "解决方案选项")中的 "![解决方案" 选项]
+    > ![左侧导航栏中的 "解决方案" 选项](./media/add-app-solution/left-nav.png "左侧导航栏中的 "解决方案" 选项")
 
 1. 在解决方案列表中，选择要将应用链接到的解决方案。
 
-1. 在标题栏下的标题栏中，选择 "**添加现有** > **应用**@no__t **"。**
+1. 在标题栏下的标题栏中，选择 "**添加现有** > **应用** > **画布应用**"。
 
     > [!div class="mx-imgBorder"]
-    > ![链接现有应用](./media/add-app-solution/add-existing.png "横幅选项")以链接现有应用的横幅选项
+    > ![链接现有应用的横幅选项](./media/add-app-solution/add-existing.png "链接现有应用的横幅选项")
 
     在此环境中的解决方案中创建的画布应用列表随即出现。
 
 1. 在应用列表中，选择要链接到解决方案的应用，然后选择 "**添加**"。
 
     > [!div class="mx-imgBorder"]
-    > ![添加按钮](./media/add-app-solution/add-button.png "添加按钮")
+    > ![添加按钮](./media/add-app-solution/add-button.png "“添加”按钮")
 
 ## <a name="known-limitations"></a>已知的限制
 
