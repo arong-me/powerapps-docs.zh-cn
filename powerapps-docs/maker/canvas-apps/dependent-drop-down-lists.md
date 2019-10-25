@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 57abde44541a2a1e40e3a8ffc55a89e37a8c6478
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71985749"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>在画布应用中创建依赖项下拉列表
@@ -66,10 +66,10 @@ ms.locfileid: "71985749"
 
 ## <a name="open-the-form"></a>打开窗体
 
-1. 打开**事件**列表，然后选择**PowerApps** > **自定义窗体**。
+1. 打开 "**事件**" 列表，然后选择 " **PowerApps** > **自定义窗体**"。
 
     > [!div class="mx-imgBorder"]
-    > ![打开 "事件" 列表，然后选择 "PowerApps > 自定义窗体"。](./media/dependent-drop-down-lists/open-form.png "打开 \"事件\" 列表，然后选择 \"PowerApps > 自定义窗体\"。")
+    > ![打开 "事件" 列表，然后选择 "PowerApps > 自定义窗体"。](./media/dependent-drop-down-lists/open-form.png "打开 "事件" 列表，然后选择 "PowerApps > 自定义窗体"。")
 
     此时会打开一个浏览器选项卡，其中包含 PowerApps Studio 中的默认窗体。
 
@@ -82,7 +82,7 @@ ms.locfileid: "71985749"
     窗体只显示您添加的字段。
 
     > [!div class="mx-imgBorder"]
-    > 不带 "标题" 和 "附件" 字段 @ no__t-1 的 @no__t 0Form
+    > 不带 "标题" 和 "附件" 字段的 ![窗体](./media/dependent-drop-down-lists/default-form.png)
 
 ## <a name="replace-the-controls"></a>替换控件
 
@@ -93,7 +93,7 @@ ms.locfileid: "71985749"
 1. 打开 "**控件类型**" 列表，然后选择 "**允许的值**"。
 
     > [!div class="mx-imgBorder"]
-    > ![Allowed 值 @ no__t-1
+    > ![允许的值](./media/dependent-drop-down-lists/change-control.png)
 
     输入机制将更改为**下拉**控件。
 
@@ -101,19 +101,19 @@ ms.locfileid: "71985749"
 
 ## <a name="add-the-locations-list"></a>添加位置列表
 
-1. 选择 "**查看** >  个**数据源** > **添加数据源**"。
+1. 选择 "**查看** > **数据源**" > **添加数据源**"。
 
 1. 选择或创建一个 SharePoint 连接，然后指定包含**位置**列表的站点。
 
 1. 选中该列表的复选框，然后选择 "**连接**"。
 
     > [!div class="mx-imgBorder"]
-    > ![Data pane @ no__t-1
+    > ![数据 "窗格](./media/dependent-drop-down-lists/select-list.png)
 
     连接列表显示 "事件列表" （窗体基于的**事件**列表）和 "**位置**" 列表，它将在窗体中标识位置和部门。
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0SharePoint 数据源 @ no__t-1
+    > ![SharePoint 数据源](./media/dependent-drop-down-lists/data-sources.png)
 
 ## <a name="unlock-the-cards"></a>解锁卡
 
@@ -130,7 +130,7 @@ ms.locfileid: "71985749"
 1. 在右侧窗格的顶部附近，通过键入或粘贴**ddLocation**来重命名所选的控件。
 
     > [!div class="mx-imgBorder"]
-    > ![Rename a control @ no__t-1
+    > ![重命名控件](./media/dependent-drop-down-lists/rename-control.png)
 
 1. 在 "**部门**" 卡中重复上述两个步骤，将**下拉**控件重命名为 " **ddDepartment**"。
 
@@ -154,7 +154,7 @@ ms.locfileid: "71985749"
 1. 在 "**匹配字段**" 下 **，选择上部列表中的**"位置"，选择下方列表中的 "**位置**"，然后选择 "**应用**"。
 
     > [!div class="mx-imgBorder"]
-    > 0Depends on link @ no__t-1 @no__t
+    > ![依赖于链接](./media/dependent-drop-down-lists/depends-on.png)
 
     **DdDepartment**的**Items**属性设置为以下公式：
 
@@ -167,7 +167,7 @@ ms.locfileid: "71985749"
     此步骤将显示文本设置为 SharePoint 中 "**位置**" 列表的 "**部门**" 列中的选项。
 
     > [!div class="mx-imgBorder"]
-    > ![Department 值 @ no__t-1
+    > ![部门值](./media/dependent-drop-down-lists/dept-value.png)
 
 ## <a name="test-the-form"></a>测试窗体
 
@@ -176,11 +176,11 @@ ms.locfileid: "71985749"
 位置和部门列表反映了 SharePoint 中 "**位置**" 列表中的信息。
 
 > [!div class="mx-imgBorder"]
-> @no__t 0Open 位置列表，将所选内容从 Renfrew 更改为 Pembroke，然后打开部门列表 @ no__t-1
+> ![打开位置列表，将所选内容从 "Renfrew" 更改为 "Pembroke"，然后打开 "部门" 列表](./media/dependent-drop-down-lists/dropdowns.gif)
 
 ## <a name="save-and-open-the-form-optional"></a>保存并打开窗体（可选）
 
-1. 打开 "**文件**" 菜单，然后选择 "**保存** > "**发布到 sharepoint**" > "**发布到 sharepoint**"。
+1. 打开 "**文件**" 菜单，然后选择 "**保存**" > **发布到 SharePoint** > "**发布到 sharepoint**"。
 
 1. 在左上角，选择返回箭头，然后选择“返回 SharePoint”。
 
@@ -194,15 +194,15 @@ ms.locfileid: "71985749"
 - 选择下拉列表，然后在右侧窗格的 "**属性**" 选项卡中选择 "**值**" 属性。
 
     > [!div class="mx-imgBorder"]
-    > ![Change 下拉 @ no__t-1
+    > ![更改下拉](./media/dependent-drop-down-lists/drop-down-display-field.png)
 
 - 选择组合框，然后确保主文本是要显示的字段。
 
     > [!div class="mx-imgBorder"]
-    > ![Change 组合框 @ no__t-1
+    > ![更改组合框](./media/dependent-drop-down-lists/combo-box-display-field.png)
 
 **我的子下拉列表包含重复项。**
-此症状可能是由于使用 SharePoint 中的**查找**列或 PowerApps 中的**选项**函数导致的。 若要删除复制，请围绕正确返回的数据环绕**不同**的函数。 详细信息：[Distinct 函数](functions/function-distinct.md)。
+此症状可能是由于使用 SharePoint 中的**查找**列或 PowerApps 中的**选项**函数导致的。 若要删除复制，请围绕正确返回的数据环绕**不同**的函数。 详细信息： [Distinct 函数](functions/function-distinct.md)。
 
 ## <a name="known-limitations"></a>已知的限制
 
