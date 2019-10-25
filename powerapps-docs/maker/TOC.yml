@@ -357,6 +357,8 @@
               href: ./canvas-apps/sharepoint-lookup-fields.md
             - name: 添加流
               href: ./canvas-apps/using-logic-flows.md
+            - name: 在画布应用中创建规则
+              href: ./canvas-apps/working-with-rules.md
             - name: 公式参考
               items:
                 - name: 概述
@@ -1348,6 +1350,8 @@
           href: ./common-data-service/navigate-specific-solution.md
         - name: 创建解决方案
           href: ./common-data-service/create-solution.md
+        - name: 使用环境变量
+          href: ./common-data-service/EnvironmentVariables.md
         - name: 查看解决方案层
           href: ./common-data-service/solution-layers.md
         - name: 查看解决方案历史记录
