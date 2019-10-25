@@ -7,23 +7,24 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 11/10/2017
+ms.date: 10/23/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 52a28f73a0a9dae0e410714102f1bc78fe706fab
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: d104bc88fb8f5306a9d086fa04bc946b6a719129
+ms.sourcegitcommit: c3e7be17c8b39bf17b2089ad3bd424e63b5645e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994722"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72822119"
 ---
-# <a name="create-a-rule-in-powerapps"></a>在 PowerApps 中创建规则
-创建根据指定条件自动修改应用的规则。 例如，根据列表项状态以红色、黄色或绿色显示列表项，或仅对特定用户（如管理人员）显示批准按钮。
+# <a name="create-a-rule-in-canvas-apps"></a>在画布应用中创建规则
+创建根据指定条件自动修改应用的规则。 例如，根据列表项状态以红色、黄色或绿色显示列表项，或仅对特定用户（如管理人员）显示批准按钮。 可以向各种控件添加规则。 本主题中添加的规则用于在滑块控件的值大于 70 时，更改标签控件的文字颜色。
 
-可以向各种控件添加规则。 本主题中添加的规则用于在滑块控件的值大于 70 时，更改标签控件的文字颜色。
+> [!IMPORTANT]
+> 2019年10月14日生效，画布应用中的规则功能已弃用。 详细信息：[博客：画布规则功能弃用](https://powerapps.microsoft.com/blog/canvas-rules-feature-deprecation/)。
 
 ## <a name="add-a-rule"></a>添加规则
 1. 选择控件（或添加并选择控件）。

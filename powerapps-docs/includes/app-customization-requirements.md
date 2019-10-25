@@ -1,12 +1,12 @@
 ---
 ms.openlocfilehash: e33b27e795335fc014d1690f5930520c2bdcba7a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "61552867"
 ---
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 1. [注册](../maker/signup-for-powerapps.md) PowerApps。
 1. 使用注册所用的相同凭据[登录](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。

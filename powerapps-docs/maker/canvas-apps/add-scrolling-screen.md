@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 9e1d6f19803e5856083266ff65497e4c0b017eff
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71987473"
 ---
 # <a name="add-a-scrolling-screen-to-a-canvas-app-in-powerapps"></a>在 PowerApps 中向画布应用添加滚动屏幕
