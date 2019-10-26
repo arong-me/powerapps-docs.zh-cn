@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/15/2019
+ms.date: 10/24/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0ce5218143a8283690cdaf7c1d9be2b1da3d629e
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 1daf6ea280710043572a0685da6daeda78f9f620
+ms.sourcegitcommit: fa6ad01cf6d025d46564d755915caaa9db517c41
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72393149"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72902426"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>画布应用的系统要求、限制和配置值
 本主题包含设备平台和 Web 浏览器要求，以及 PowerApps 的限制和配置值。
@@ -102,6 +102,7 @@ PowerApps 请求使用的 IP 地址取决于该应用所在[环境](../../admini
 | \*. azureedge.net |https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 web.powerapps.com |
 | \*. blob.core.windows.net |https | Blob 存储 |
 | \*. flow.microsoft.com | https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 web.powerapps.com |
+| *. dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |遥测 |
 | 主机 | https | PowerApps Mobile
 

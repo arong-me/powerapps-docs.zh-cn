@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 08/09/2018
+ms.date: 10/24/2018
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: af06a3707073498df65f782fc634c1e93b1760c5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 101c77b7bdd84e2d2ed31febc441e54944eb9fa3
+ms.sourcegitcommit: fa6ad01cf6d025d46564d755915caaa9db517c41
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994081"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72902453"
 ---
 # <a name="generate-a-canvas-app-in-powerapps-from-a-sharepoint-list"></a>通过 SharePoint 列表在 PowerApps 中生成画布应用
 
@@ -94,6 +94,9 @@ ms.locfileid: "71994081"
     - 若要从 SharePoint 中删除视图，请选择“删除此视图”。
 
         若要从 PowerApps 中删除应用，请[删除应用](delete-app.md)。
+
+> [!NOTE]
+> 从 SharePoint 列表创建的应用当前不会显示在 PowerApps Mobile 中。
 
 ## <a name="next-steps"></a>后续步骤
 本主题创建了一个应用，用于管理 SharePoint 列表中的数据。 下一步是通过更复杂的列表生成应用，并自定义该应用（从浏览屏幕开始）以更好地满足需求。
