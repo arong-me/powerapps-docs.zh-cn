@@ -32,6 +32,8 @@
           items:
             - name: 查看配置文件
               href: ../user/view-your-user-profile.md
+            - name: 查找管理员或支持人员
+              href: ../user/find-admin.md
             - name: 设置个人选项
               href: ../user/set-personal-options.md
             - name: 使用屏幕阅读器
@@ -85,6 +87,8 @@
               href: ../user/export-excel-static-worksheet.md
             - name: 导出到 Excel 数据透视表
               href: ../user/export-excel-pivottable.md
+            - name: 合并重复记录
+              href: ../user/merge-duplicate-records.md
         - name: 报表
           items:
             - name: 处理报表

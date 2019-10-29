@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cb8c77b60caa1f1ddf07e12f50e3cd52df764627
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 22260480d24cea999128f3c85cdf99e839d5f740
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71995601"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025915"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>在 PowerApps 中共享画布应用
 
@@ -71,7 +71,7 @@ ms.locfileid: "71995601"
     例如，你的应用可能会连接到 Common Data Service 数据库中的实体。 共享此类应用程序时，"共享" 面板会提示您管理该实体的安全性。
 
     > [!div class="mx-imgBorder"]
-    > ![Assign 安全角色 ](media/share-app/cds-assign-security-role.png)
+    > ![分配安全角色](media/share-app/cds-assign-security-role.png)
 
     有关为实体管理安全的详细信息，请参阅本主题后面的[管理实体权限](share-app.md#manage-entity-permissions)。
 
@@ -201,13 +201,13 @@ PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享�
 #### <a name="what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them"></a>必须将哪些许可证分配给来宾，才能运行与他们共享的应用？
 运行应用程序所需的与非来宾相同的许可证。 例如，如果应用不使用高级 connecters，则 PowerApps P1 许可证足以分配给来宾。  
 
-
 |                                 | SharePoint 自定义窗体 | 使用非高级连接器的独立画布应用 | 使用高级连接器的独立画布应用 | 模型驱动应用 |
 |---------------------------------|----------------------------|----------------------------------------------------|------------------------------------------------|------------------|
 | SharePoint 用户（无 PA 许可证） | x                          |                                                    |                                                |                  |
 | PowerApps 包括 w/Office    | x                          |                                                    |                                                |                  |
-| PowerApps 计划1                | x                          | x                                                  |                                                |                  |
-| PowerApps Plan2                 | x                          | x                                                  | x                                              | x                |
+| PowerApps 每个应用计划          | x                          | x                                                  | x                                              | x                |
+| PowerApps 每用户计划         | x                          | x                                                  | x                                              | x                |
+
 
 #### <a name="in-powerapps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>在 PowerApps Mobile 中，来宾如何查看其 home 租户的应用？
 访问了移动设备上的移动设备上 Azure AD 发布的画布应用的任何用户都必须注销 PowerApps，并重新登录到 PowerApps Mobile。  

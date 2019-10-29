@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b0ab20ce5e0700337bb059644c458a2665d20f1e
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71983499"
 ---
 # <a name="app-object-in-powerapps"></a>PowerApps 中的应用对象
@@ -31,7 +31,7 @@ ms.locfileid: "71983499"
 您可以为**应用**对象的某些属性编写公式。 在 "**树视图**" 窗格的顶部，选择 "**应用**" 对象，就像选择任何其他控件或屏幕一样。 通过在编辑栏左侧的下拉列表中选择某个对象的属性来查看和编辑该对象的属性。
 
 > [!div class="mx-imgBorder"]
-> "树视图" 窗格中的 ![The 应用对象 ](media/object-app/appobject.png)
+> ![树视图窗格中的应用对象](media/object-app/appobject.png)
 
 ## <a name="activescreen-property"></a>App.activescreen 属性
 
@@ -54,7 +54,7 @@ ms.locfileid: "71983499"
 更改**OnStart**属性后，通过将鼠标指针悬停在 "**树视图**" 窗格中的**应用**对象上进行测试，选择显示的省略号（...），然后选择 "**运行 OnStart**"。 与第一次加载应用时不同，现有集合和变量将被设置。 若要从空集合开始，请使用 **[ClearCollect](function-clear-collect-clearcollect.md)** 函数而不是**Collect**函数。
 
 > [!div class="mx-imgBorder"]
-> 用于运行 OnStart 的 ![App 项快捷菜单 ](media/object-app/appobject-runonstart.png)
+> 用于运行 OnStart](media/object-app/appobject-runonstart.png) 的 ![应用项快捷菜单
 
 ## <a name="confirmexit-properties"></a>ConfirmExit 属性
 
@@ -108,7 +108,7 @@ ms.locfileid: "71983499"
     如果用户更改任一格式的数据，然后尝试关闭应用而不保存这些更改，则会显示此对话框。
 
     > [!div class="mx-imgBorder"]
-    > ![Generic 确认 "对话框 ](media/object-app/confirm-native.png)
+    > ![一般确认对话框](media/object-app/confirm-native.png)
 
 1. 将**App**对象的**ConfirmExitMessage**属性设置为以下公式：
 
@@ -122,4 +122,4 @@ ms.locfileid: "71983499"
     如果用户在帐户窗体中更改了数据，然后尝试关闭应用而不保存这些更改，则会显示此对话框。
 
     > [!div class="mx-imgBorder"]
-    > ![Form 特定的确认对话框 ](media/object-app/confirm-native-custom.png)
+    > ![窗体特定的确认对话框](media/object-app/confirm-native-custom.png)

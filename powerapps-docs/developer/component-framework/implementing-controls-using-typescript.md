@@ -8,16 +8,24 @@ ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: cd57cce824c4071de12e7dc96407018dde57c2d7
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.openlocfilehash: 669bf03d7869d6fd625288a65a305a3a458cfde4
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72346822"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025761"
 ---
 # <a name="implement-components-using-typescript"></a>使用 TypeScript 实现组件
 
-本教程将指导你完成在 TypeScript 中创建新代码组件的过程。 示例组件是线性输入组件，它使用户能够使用视觉滑块输入数值，而不是在字段中键入值。 
+本主题将指导你完成使用 PowerApps CLI 在 TypeScript 中创建新代码组件的过程。 在本教程中，我们将构建一个示例线性代码组件，使用户能够使用视觉对象滑块来更改数值，而不是在字段中键入值。 
+
+生成代码组件所需的项目为：
+
+1. [创建新的组件项目](#creating-a-new-component-project)
+2. [实现清单](#implementing-manifest)
+3. [使用 TypeScript 实现组件逻辑](#implementing-component-logic)
+4. [将样式添加到代码组件](#adding-style-to-the-code-component)
+5. [打包代码组件](#packaging-your-code-components)
 
 ## <a name="creating-a-new-component-project"></a>创建新的组件项目
 
@@ -29,26 +37,28 @@ ms.locfileid: "72346822"
     mkdir LinearComponent
     ```
 
-1. 使用命令 `cd LinearComponent` 进入到新目录。 
+1. 使用命令 `cd LinearComponent`进入组件文件夹。 
    
-1. 运行以下命令以创建新的组件项目，并传递基本参数。
+1. 通过使用命令传递基本参数来创建新的组件项目。
 
    ```CLI
     pac pcf init --namespace SampleNamespace --name TSLinearInputComponent --template field
     ``` 
 
 1. 使用命令 `npm install` 安装项目生成工具。 
-2. 在所选的开发人员环境中 `C:\Users\<your name>\Documents\<My_PCF_Component>` 打开项目文件夹，并开始使用代码组件开发。 最快的启动方法是在 `C:\Users\<your name>\Documents\<My_PCF_Component>` 目录中运行 `code .` 从命令提示符运行。 此命令在 Visual Studio Code 中打开组件项目。
+1. 在所选的开发人员环境中 `C:\Users\<your name>\Documents\<My_code_Component>` 打开项目文件夹，并开始使用代码组件开发。 最快的启动方法是在 `C:\Users\<your name>\Documents\<My_code_Component>` 目录中运行 `code .` 从命令提示符运行。 此命令在 Visual Studio Code 中打开组件项目。
 
 ## <a name="implementing-manifest"></a>实现清单
 
-清单是一个 XML 文件，其中包含代码组件的元数据。 它还定义代码组件的行为。 在本教程中，将在 `<Your component Name>` 子文件夹下创建此清单文件。 当您在 Visual Studio Code 中打开 `ControlManifest.Input.xml` 文件时，您会注意到，预定义了清单文件的某些属性。 对预定义的清单文件进行更改，如下所示：
+清单是一个 XML 文件，其中包含代码组件的元数据。 它还定义代码组件的行为。 在本教程中，将在 `<Your component Name>` 子文件夹下创建此清单文件。 当您在 Visual Studio Code 中打开 `ControlManifest.Input.xml` 文件时，您会注意到，预定义了清单文件的某些属性。 详细信息：[清单](manifest-schema-reference/manifest.md)。
+
+对预定义的清单文件进行更改，如下所示：
 
 1. [控制](manifest-schema-reference/control.md)节点定义代码组件的命名空间、版本和显示名称。 现在，按如下所示定义[控制](manifest-schema-reference/control.md)节点的每个属性：
 
    - **命名空间**：代码组件的命名空间。 
    - **构造函数**：代码组件的构造函数。
-   - **版本**：组件的版本。 更新组件时，需要更新版本以查看运行时中的更改。
+   - **版本**：组件的版本。 更新组件时，需要更新版本以查看运行时中的最新更改。
    - **显示名称-键**： UI 上显示的代码组件的名称。
    - **说明-名称键**： UI 上显示的代码组件的说明。
    - **控件类型**：代码组件类型。 仅支持*标准*类型的代码组件。
@@ -59,19 +69,19 @@ ms.locfileid: "72346822"
       <control namespace="SampleNameSpace" constructor="TSLinearInputComponent" version="1.0.0" display-name-key="Linear Input Component" description-key="Allows you to enter the numeric values using the visual slider." control-type="standard">
      ```
 
-2. [属性](manifest-schema-reference/property.md)节点定义代码组件的属性，例如定义字段的数据类型。 属性节点指定为 control 元素下的子元素。 定义[属性](manifest-schema-reference/property.md)节点，如下所示：
+2. [属性](manifest-schema-reference/property.md)节点定义代码组件的属性，例如定义字段的数据类型。 属性节点指定为 `control` 元素下的子元素。 定义[属性](manifest-schema-reference/property.md)节点，如下所示：
 
    - **名称**：属性的名称。
    - **显示名称-键**：显示在 UI 上的属性的名称。
    - **description-name-key**： UI 上显示的属性的说明。 
-   - **类型组**：当要拥有两个以上的数据类型字段时，使用[类型组](manifest-schema-reference/type-group.md)。 将[类型组](manifest-schema-reference/type-group.md)元素作为同级添加到清单中的 `property` 元素。 @No__t_0 指定组件的值，并且可以包含整数、货币、浮点或小数值。
+   - **类型组**：当要拥有两个以上的数据类型字段时，使用[类型组](manifest-schema-reference/type-group.md)。 将[类型组](manifest-schema-reference/type-group.md)元素作为同级添加到清单中的 `property` 元素。 `of-type-group` 指定组件的值，并且可以包含整数、货币、浮点或小数值。
    - **用法**：有两个属性： "*绑定*" 和 "*输入*"。 绑定属性仅绑定到字段的值。 输入属性可以绑定到字段，也可以是允许静态值。
    - **必需**：定义属性是否是必需的。
 
      ```XML
       <property name="sliderValue" display-name-key="sliderValue_Display_Key" description-key="sliderValue_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
       ```
-3. "[资源](manifest-schema-reference/resources.md)" 节点定义代码组件的可视化。 它包含组成代码组件的所有资源。 在 resources 元素下，[代码](manifest-schema-reference/code.md)被指定为子元素。 按如下所示定义[资源](manifest-schema-reference/resources.md)：
+3. "[资源](manifest-schema-reference/resources.md)" 节点定义代码组件的可视化。 它包含生成代码组件的可视化和样式的所有资源。 在 resources 元素下，[代码](manifest-schema-reference/code.md)被指定为子元素。 按如下所示定义[资源](manifest-schema-reference/resources.md)：
 
    - **代码**：引用所有资源文件所在的路径。
  
@@ -229,7 +239,7 @@ export class TSLinearInputComponent
 
 ## <a name="adding-style-to-the-code-component"></a>将样式添加到代码组件
 
-开发人员和应用程序开发人员可以定义其样式，以直观地使用 CSS 表示其代码组件。 CSS 允许开发人员描述代码组件的表示形式，包括样式、颜色、布局和字体。 线性输入组件的[init](reference/control/init.md)方法会创建一个输入元素，并将类属性设置为 `linearslider`。 @No__t_0 类的样式在单独的 `CSS` 文件中定义。 其他组件资源（如 `CSS` 文件）可以与代码组件一起提供，以支持进一步的自定义。
+开发人员和应用程序开发人员可以定义其样式，以直观地使用 CSS 表示其代码组件。 CSS 允许开发人员描述代码组件的表示形式，包括样式、颜色、布局和字体。 线性输入组件的[init](reference/control/init.md)方法会创建一个输入元素，并将类属性设置为 `linearslider`。 `linearslider` 类的样式在单独的 `CSS` 文件中定义。 其他组件资源（如 `CSS` 文件）可以与代码组件一起提供，以支持进一步的自定义。
 
 1. 在 "`TSLinearInputComponent`" 文件夹下创建新的 `css` 子文件夹。 
 2. 在 `css` 子文件夹内创建新的 `TS_LinearInputComponent.css` 文件。 
@@ -329,7 +339,7 @@ npm start
 
 ## <a name="packaging-your-code-components"></a>打包代码组件
 
-按照以下步骤创建和导入[解决方案](https://docs.microsoft.com/dynamics365/customer-engagement/customize/solutions-overview)文件：
+按照以下步骤创建和导入[解决方案](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview)文件：
 
 1. 在**LinearComponent**文件夹中创建新的文件夹**解决方案**，并导航到该文件夹。 
 2. 使用以下命令在**LinearComponent**文件夹中创建一个新的解决方案项目：
@@ -366,7 +376,7 @@ npm start
     > - 在 "**代码工具**" 下，选中 " **NuGet 目标 & 生成任务**"。
 
 6. 生成的解决方案 zip 文件位于 `Solution\bin\debug` 文件夹中。
-7. Zip 文件准备就绪后，请使用 web 门户手动[将解决方案导入 Common Data Service](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/import-update-upgrade-solution) ，或查看使用 PowerApps CLI 命令导入到你的组织和[部署](import-custom-controls.md#deploying-code-components)部分进行[身份验证](import-custom-controls.md#authenticating-to-your-organization)。
+7. Zip 文件准备就绪后，请使用 web 门户手动[将解决方案导入 Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) ，或查看使用 PowerApps CLI 命令导入到你的组织和[部署](import-custom-controls.md#deploying-code-components)部分进行[身份验证](import-custom-controls.md#authenticating-to-your-organization)。
 
 ## <a name="adding-code-components-in-model-driven-apps"></a>在模型驱动应用中添加代码组件
 

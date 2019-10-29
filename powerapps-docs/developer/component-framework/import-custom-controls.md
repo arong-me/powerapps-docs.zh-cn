@@ -9,12 +9,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.topic: article
 author: Nkrb
-ms.openlocfilehash: 3042202fd1790d117c2a503bd6e69eaaea15c08a
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.openlocfilehash: 4bb581e06102ac351b3202d30fa8d418951fa291
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72346799"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025681"
 ---
 # <a name="package-a-code-component"></a>打包代码组件
 
@@ -22,12 +22,12 @@ ms.locfileid: "72346799"
 
 若要创建和导入解决方案文件：
 
-1. 使用命令 `mkdir Solutions` 创建新的文件夹，并为其命名**解决方案**（或所选的任何名称）。 使用命令 `cd Solutions` 导航到目录。
+1. 使用命令 `mkdir Solutions`在示例组件文件夹内创建一个新文件夹，并为其命名**解决方案**（或所选的任何名称）。 使用命令 `cd Solutions` 导航到目录。
 
 2. 使用命令 `pac solution init --publisher-name <enter your publisher name> --publisher-prefix <enter your publisher prefix>` 创建新的解决方案项目。 解决方案项目用于将代码组件绑定到用于导入到 Common Data Service 的解决方案 zip 文件。
 
    > [!NOTE]
-   > @No__t_0 和 `publisher-prefix` 值必须对您的环境是唯一的。
+   > `publisher-name` 和 `publisher-prefix` 值必须对您的环境是唯一的。
  
 3. 创建新的解决方案项目后，请将**解决方案**文件夹引用到创建的示例组件所在的位置。 可以使用如下所示的命令添加引用。 此引用将通知解决方案项目应在生成过程中添加哪些代码组件。 您可以在单个解决方案项目中添加对多个组件的引用。
 
@@ -45,7 +45,7 @@ ms.locfileid: "72346799"
     > - 如果在解决方案上运行 `msbuild` 命令时遇到错误，指出*项目名称不明确*，请确保解决方案名称和项目名称不相同。
 
 4. 生成成功后，生成的解决方案文件位于 `\bin\debug\` 文件夹内。
-5. 使用 web 门户手动将[解决方案导入到 Common Data Service 中](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/import-update-upgrade-solution)，或参阅使用 PowerApps CLI 命令进行身份验证，以导入[到你的组织](#authenticating-to-your-organization)和[部署](#deploying-code-components)部分。
+5. 使用 web 门户手动将[解决方案导入到 Common Data Service 中](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions)，或参阅使用 PowerApps CLI 命令进行身份验证，以导入[到你的组织](#authenticating-to-your-organization)和[部署](#deploying-code-components)部分。
 
 ## <a name="authenticating-to-your-organization"></a>向组织进行身份验证
 
@@ -80,7 +80,7 @@ ms.locfileid: "72346799"
 
 ## <a name="deploying-code-components"></a>部署代码组件 
 
-成功创建身份验证配置文件后，可以开始使用所有最新更改将代码组件推送到 Common Data Service 实例。 @No__t_0 功能可以加快内部开发人员周期开发，因为它会绕过代码组件版本控制要求，并且不需要您生成解决方案（cdsproj）来导入代码组件。 若要使用 `push` 功能，请执行以下操作：
+成功创建身份验证配置文件后，可以开始使用所有最新更改将代码组件推送到 Common Data Service 实例。 `push` 功能可以加快内部开发人员周期开发，因为它会绕过代码组件版本控制要求，并且不需要您生成解决方案（cdsproj）来导入代码组件。 若要使用 `push` 功能，请执行以下操作：
 
 1. 确保已创建有效的身份验证配置文件。
 2. 导航到在其中创建代码组件项目的根目录。

@@ -11,32 +11,33 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: 286458da2ed7b7b94f92b86355bf8785161ef778
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.openlocfilehash: 9a02b64321564b0a09e6b53223f13748358d76cf
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72347006"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025782"
 ---
 # <a name="create-and-build-a-code-component"></a>创建并生成代码组件
 
-本主题说明如何使用 PowerApps CLI 创建和部署代码组件。 确保已安装[MICROSOFT POWERAPPS CLI](https://aka.ms/PowerAppsCLI)。
+本主题演示如何使用 PowerApps CLI 创建和部署代码组件。 确保已安装[MICROSOFT POWERAPPS CLI](https://aka.ms/PowerAppsCLI)。
 
 ## <a name="create-a-new-component"></a>创建新组件
 
 若要开始，请在安装 PowerApps CLI 后打开**VS 2017 开发人员命令提示**。
 
-1. 在 VS 2017 的开发人员命令提示中，在本地计算机上创建一个新文件夹，例如，使用命令 `mkdir <Specify the folder name>` 的*C:\Users\your name\Documents\My_PCF_Component* 。
+1. 在 VS 2017 的开发人员命令提示中，使用命令 `mkdir <Specify the folder name>`在本地计算机上创建一个新文件夹，例如*C:\Users\your name\Documents\My_code_Component* 。
 2. 使用命令 `cd <specify your new folder path>` 中转到新创建的文件夹。
-3. 运行以下命令，通过传递某些基本参数来创建新的组件项目：
+3. 通过使用命令传递某些基本参数来创建新的组件项目：
 
-    `pac pcf init --namespace <specify your namespace here> --name <put component name here> --template <component type>`
+    `pac pcf init --namespace <specify your namespace here> --name <Name of the code component> --template <component type>`
  
    > [!NOTE]
-   > 当前，PowerApps CLI 支持两种类型的组件：**字段**和**数据集**。  对于画布应用，此试验预览版仅支持**字段**类型。
+   > 当前，PowerApps CLI 支持两种类型的组件：用于模型驱动应用的**字段**和**数据集**。  对于画布应用，此试验预览版仅支持**字段**类型。
 
 4. 若要检索所有必需的项目依赖项，请运行命令 `npm install`。
-5. 在所选的任何开发人员环境中 `C:\Users\<your name>\Documents\<My_PCF_Component>` 打开项目文件夹，并开始编写代码组件。 最快的入门方法是，一旦进入 `C:\Users\<your name>\Documents\<My_PCF_Component>` 目录，就可以从命令提示符运行 `code .`。 此命令在 Visual Studio Code 中打开组件项目。
+5. 在所选的任何开发人员环境中 `C:\Users\<your name>\Documents\<My_code_Component>` 打开项目文件夹，并开始编写代码组件。 最快的入门方法是，一旦进入 `C:\Users\<your name>\Documents\<My_code_Component>` 目录，就可以从命令提示符运行 `code .`。 此命令在 Visual Studio Code 中打开组件项目。
+6. 实现组件所需的项目，如清单、组件逻辑和样式，然后生成组件项目。 更多信息：[实现示例组件](implementing-controls-using-typescript.md)
 
 ## <a name="build-your-component"></a>构建组件
 
