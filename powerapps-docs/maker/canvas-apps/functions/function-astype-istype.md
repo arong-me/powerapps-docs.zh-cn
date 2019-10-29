@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 0ecb30a5a452a6ee092ccf9bc9d47f6182ef60ab
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71993002"
 ---
 # <a name="astype-and-istype-functions-in-canvas-apps"></a>画布应用中的 AsType 和 IsType 函数
@@ -100,35 +100,35 @@ If( IsType( ThisItem.'Company Name', [@Accounts] ),
 
 1. 在 "**视图**" 选项卡上，选择 "**数据源**"，然后添加 "**联系人**" 和 "**帐户**" 实体作为数据源。
     > [!div class="mx-imgBorder"]
-    > 具有两个数据源的 ![Blank 应用：帐户和联系人 ](media/function-astype-istype/contacts-add-datasources.png)
+    > ![具有两个数据源的空白应用：帐户和联系人](media/function-astype-istype/contacts-add-datasources.png)
 
 1. 插入具有**空白垂直**方向的**库**控件。
 
     > [!div class="mx-imgBorder"]
-    > ![Insert 具有空白垂直布局的库控件 ](media/function-astype-istype/contacts-customer-gallery.png)
+    > ![插入具有空白垂直布局的库控件](media/function-astype-istype/contacts-customer-gallery.png)
 
 1. 在屏幕右侧附近的 "**属性**" 选项卡上，将库的**Items**属性设置为 "**联系人**"。
 
     > [!div class="mx-imgBorder"]
-    > ![Set "属性" 窗格中的 "联系人" ](media/function-astype-istype/contacts-customer-datasource.png)
+    > ![在 "属性" 窗格中将项目设置为 Contacts](media/function-astype-istype/contacts-customer-datasource.png)
 
 1. 将库的布局设置为 "**标题" 和 "副标题**"。
 
     > [!div class="mx-imgBorder"]
-    > 从 "属性" 窗格中 ![Open 布局选取器 ](media/function-astype-istype/contacts-customer-layout.png)
+    > ![在 "属性" 窗格中打开 "布局选取器"](media/function-astype-istype/contacts-customer-layout.png)
 
     > [!div class="mx-imgBorder"]
-    > ![Set 布局到标题和副标题 ](media/function-astype-istype/contacts-customer-flyout.png)
+    > ![将布局设置为标题和副标题](media/function-astype-istype/contacts-customer-flyout.png)
 
 1. 在 "**数据**" 窗格中，打开 " **Title1** " 列表，然后选择 "**全名**"。
 
     > [!div class="mx-imgBorder"]
-    > ![Set 标题值 ](media/function-astype-istype/contacts-customer-title.png)
+    > ![设置标题值](media/function-astype-istype/contacts-customer-title.png)
 
 1. 选择**Subtitle1**标签控件。
 
     > [!div class="mx-imgBorder"]
-    > ![Set 副标题值 ](media/function-astype-istype/contacts-customer-subtitle.png)
+    > ![设置副标题值](media/function-astype-istype/contacts-customer-subtitle.png)
 
 1. 将**Subtitle1**的**Text**属性设置为以下公式：
 
@@ -141,7 +141,7 @@ If( IsType( ThisItem.'Company Name', [@Accounts] ),
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Screen 现已完成显示库中的帐户和联系人 ](media/function-astype-istype/contacts-customer-complete.png)
+    > 现在，![屏幕显示了在库中混合的帐户和联系人](media/function-astype-istype/contacts-customer-complete.png)
 
     库中的副标题显示以下值：
     - 如果 **"公司名称"** 为*空*，则为 "--"。

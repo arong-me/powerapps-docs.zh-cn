@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 48966659ca12ada12448543492731fff8431fbde
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71995800"
 ---
 # <a name="overview-of-the-canvas-app-for-northwind-traders"></a>Northwind 商贸的画布应用概述
@@ -33,7 +33,7 @@ ms.locfileid: "71995800"
 在单个屏幕中，应用用户可以显示、更新、创建和删除订单。
 
 > [!div class="mx-imgBorder"]
-> ![Complete 画布应用 ](media/northwind-orders-canvas-part1/orders-finished.png)
+> ![完成画布应用](media/northwind-orders-canvas-part1/orders-finished.png)
 
 ## <a name="explore-the-user-interface"></a>浏览用户界面
 
@@ -50,7 +50,7 @@ ms.locfileid: "71995800"
 在右下角，另一个库会显示有关所选订单中包含的产品及其数量的信息。 此库中的每一项称为订单详细信息。 应用程序用户可以通过使用中的控件或其下的控件，来添加和删除该库中的任何项。 详细信息：[创建详细信息库](northwind-orders-canvas-part3.md)。
 
 > [!div class="mx-imgBorder"]
-> 屏幕区域 ![Definition ](media/northwind-orders-canvas-part1/orders-parts.png)
+> ![屏幕区域的定义](media/northwind-orders-canvas-part1/orders-parts.png)
 
 ## <a name="explore-the-data-sources"></a>浏览数据源
 

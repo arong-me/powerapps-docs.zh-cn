@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ba852093da05c3fa69cc47b219a0bef65908c170
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71992621"
 ---
 # <a name="json-function-in-powerapps"></a>PowerApps 中的 JSON 函数
@@ -47,7 +47,7 @@ ms.locfileid: "71992621"
 | **两 &nbsp;option** | 这两个选项的布尔值（ *true*或*false*），而不是用于显示的标签。 使用布尔值，因为它是独立于语言的。 | `false` |
 | **超链接、文本** | 双引号。 函数使用反斜杠转义嵌入的双引号，将换行符替换为 "\n"，并进行其他标准 JavaScript 替换。 | `"This is a string."` |
 
-指定可选的*格式*参数以控制结果的可读性，以及如何处理不受支持的和二进制数据类型。 默认情况下，输出尽可能简洁，无需空格或换行符，不允许使用不受支持的数据类型和二进制数据。 如果指定 **&** 运算符，则可以组合多种格式。
+指定可选的*格式*参数以控制结果的可读性，以及如何处理不受支持的和二进制数据类型。 默认情况下，输出尽可能简洁，无需空格或换行符，不允许使用不受支持的数据类型和二进制数据。 如果指定**&** 运算符，则可以组合多种格式。
 
 | JSONFormat 枚举 | 描述 |
 |-----------------|-------------|
@@ -93,12 +93,12 @@ ms.locfileid: "71992621"
     **CitiesByCountry**集合是使用此数据结构创建的，通过在 "**文件**" 菜单上选择 "**集合**"，然后选择集合的名称，可以显示该集合。
 
     > [!div class="mx-imgBorder"]
-    > ![CitiesByCountry 集合 ](media/function-json/cities-grouped.png)
+    > ![CitiesByCountry 集合](media/function-json/cities-grouped.png)
 
-    你还可以通过以下方式显示此集合：选择 "**文件**" **"**  >  ** >   > "** "" "" "" "" "公式栏下的集合名称旁的向下箭头。
+    你还可以通过以下方式显示此集合：选择 "**文件**"**"**  > ** >   > "** "" "" "" "" "公式栏下的集合名称旁的向下箭头。
 
     > [!div class="mx-imgBorder"]
-    > 在编辑栏的结果视图中 ![Collection ](media/function-json/cities-grouped-resultview.png)
+    > 在公式栏的结果视图中 ![集合](media/function-json/cities-grouped-resultview.png)
 
 1. 插入另一个按钮，并将其**OnSelect**属性设置为以下公式：
 

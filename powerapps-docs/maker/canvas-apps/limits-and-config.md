@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1daf6ea280710043572a0685da6daeda78f9f620
-ms.sourcegitcommit: fa6ad01cf6d025d46564d755915caaa9db517c41
+ms.openlocfilehash: 68e702156b0a5b820dd23076551cf7970efc65a3
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72902426"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025112"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>画布应用的系统要求、限制和配置值
 本主题包含设备平台和 Web 浏览器要求，以及 PowerApps 的限制和配置值。
@@ -117,7 +117,7 @@ PowerApps 请求使用的 IP 地址取决于该应用所在[环境](../../admini
 
 每个应用计划的 PowerApps 允许单个用户在单个门户上运行2个应用程序，用于基于 PowerApps 的全部功能的特定业务方案。 此计划为用户提供了一种简单的方法，使用户可以在更广泛的采用范围之前开始使用平台。
 
-在管理员将 PowerApps 每个应用计划分配给环境之后，默认情况下，当与用户共享应用时，它们将分配给用户。
+在管理员将 PowerApps 每个应用计划分配给环境之后，默认情况下，当与用户共享应用时，它们将分配给用户。 可在[此处](https://docs.microsoft.com/power-platform/admin/capacity-add-on)了解管理员如何分配每个应用计划。
 
 按照以下步骤，在与用户共享应用时，关闭对用户的每个应用计划的分配：
 

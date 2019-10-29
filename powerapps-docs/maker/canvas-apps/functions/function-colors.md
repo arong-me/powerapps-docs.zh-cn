@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4af851160ea8a2add22add9f79dcc181a734e715
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71994858"
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>PowerApps 中的 Color 枚举与 ColorFade、ColorValue 以及 RGBA 函数
@@ -43,12 +43,12 @@ ms.locfileid: "71994858"
 在画布应用中，可以将控件彼此置于顶层，并为其后面的任何控件指定控件的透明度。 因此，颜色将与层混合。 例如，以下关系图显示了三种主要颜色如何混合为50%：
 
 > [!div class="mx-imgBorder"]
-> ![Three 主要颜色的 alpha 设置为 50% ](media/function-colors/alpha-primary.png)
+> ![3 个颜色为 50%](media/function-colors/alpha-primary.png) 的主要颜色
 
 您还可以将图像混合为支持 alpha 通道的文件格式。 例如，你无法混合 jpeg 文件，但你可以混合 .png 文件。 下图显示了上一示例中相同的红色、绿色和蓝色颜色，但红色显示为 50% alpha 通道的 .png 文件中的波形曲线（而不是圆圈）：
 
 > [!div class="mx-imgBorder"]
-> 在蓝色和绿色圆圈的前面加上50% 的 alpha 设置 ![Red 波浪线 ](media/function-colors/alpha-image.png)
+> ![红色波形曲线，其 alpha 设置为50%，位于蓝色和绿色圆圈之前](media/function-colors/alpha-image.png)
 
 如果指定了**颜色**枚举值，或者使用颜色名称或6位十六进制值生成**ColorValue**公式，则 alpha 设置为100%，这是完全不透明的。
 
