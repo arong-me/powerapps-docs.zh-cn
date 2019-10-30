@@ -135,7 +135,7 @@
           href: ./canvas-apps/sample-meeting-capture.md
     - name: 创建第一个应用
       items:
-        - name: 1 - 从数据生成应用
+        - name: 1 - 根据数据创建应用
           items:
             - name: 从 Common Data Service
               href: ./canvas-apps/data-platform-create-app.md
@@ -143,6 +143,8 @@
               href: ./canvas-apps/app-from-sharepoint.md
             - name: 从 Excel
               href: ./canvas-apps/get-started-create-from-data.md
+            - name: 从 Azure SQL 数据库
+              href: ./canvas-apps/app-from-azure-sql-database.md
         - name: 2 - 进行基本的自定义
           items:
             - name: 1 - 库
@@ -1422,6 +1424,8 @@
       href: ./canvas-apps/common-issues-and-resolutions.md
     - name: 获取会话或应用 ID
       href: ./canvas-apps/get-sessionid.md
+    - name: PowerApps 启动问题疑难解答
+      href: troubleshooting-startup-issues.md
     - name: Power Query 疑难解答
       href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
     - name: 支持

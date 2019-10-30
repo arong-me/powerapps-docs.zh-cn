@@ -1,30 +1,30 @@
 ---
 title: 安装和配置画布应用的技术支持示例 | Microsoft Docs
 description: 在 PowerApps 中安装和配置画布应用的技术支持示例的分步说明。
-author: yijw2017
+author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/08/2018
-ms.author: yijw
+ms.date: 10/29/2019
+ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5f8744d7cc6b6048debc18775e7bf3ad7cbbff22
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 6c9195bb9256c3d977300e61efe3f2cc88cfbf67
+ms.sourcegitcommit: 0e7bdaea83adaa15da4d5c9ddbcd0b2bcbee01df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990218"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73063406"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>在 PowerApps 中安装和配置技术支持的示例
 
 在 PowerApps 中安装和配置画布应用的技术支持示例的分步说明。
 
-上述步骤预计完成时间：**10-15 分钟**
+完成以下步骤的估计时间：10-15 分钟
 
 > [!TIP]
 > 有关此过程的演示，请观看此[视频](https://youtu.be/z4cdtD6hB_4)。
@@ -38,7 +38,7 @@ ms.locfileid: "71990218"
 > [!TIP]
 > 观看此[视频](https://youtu.be/sl5fXwwnvzI)，了解如何使用技术支持 PowerApp 示例。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 - [注册](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) PowerApps。
 - 必须具有有效的 SharePoint Online 许可证和创建列表的权限。
@@ -47,7 +47,7 @@ ms.locfileid: "71990218"
 
 此列表存储技术支持票证。
 
-1. 打开 Web 浏览器并导航到 [https://portal.office.com](https://admin.microsoft.com ) 。
+1. 打开 Web 浏览器并导航到 [https://portal.office.com](https://admin.microsoft.com )。
 2. 用具有创建 SharePoint 列表权限的帐户登录。
 3. 导航到要在其中存放技术支持列表的站点集合。
 4. 单击网页右上角的齿轮图标。

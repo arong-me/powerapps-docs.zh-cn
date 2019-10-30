@@ -1,30 +1,30 @@
 ---
 title: 安装和配置画布应用的零用金报销单示例 | Microsoft Docs
 description: 在 PowerApps 中安装和配置画布应用的零用金报销单示例的分步说明。
-author: yijw2017
+author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/08/2018
-ms.author: yijw
+ms.date: 10/29/2019
+ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bca1fb3760727278e42676c9f0a5ec501f9002e0
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 20b49aee68b7c8c357b49dac2218d994153da230
+ms.sourcegitcommit: 0e7bdaea83adaa15da4d5c9ddbcd0b2bcbee01df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985767"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73063389"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>在 PowerApps 中安装和配置画布应用的零用金报销单示例
 
 安装和配置零用金报销单示例的分步说明。 还可以单击[此处](https://aka.ms/previewmyexpenses)预览示例应用。
 
-上述步骤预计完成时间：**10-15 分钟**
+完成以下步骤的估计时间：10-15 分钟
 
 > [!TIP]
 > 请观看[这段视频](https://youtu.be/kJXZPILfbwU)，了解如何使用零用金报销单示例应用。 
@@ -36,7 +36,7 @@ ms.locfileid: "71985767"
 > [!TIP]
 > 观看[此](https://youtu.be/kJXZPILfbwU)视频，了解如何使用支出报表示例。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 - [注册](../signup-for-powerapps.md) PowerApps。
 

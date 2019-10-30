@@ -9,19 +9,19 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 8914bdf9415299651285b452cb1587dad03ce55d
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: e9f4c65d5b2929a1f2cc51d0d3a9d29152307752
+ms.sourcegitcommit: 133c51f10fc4fe6cd105c2a6af83fc15634143d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977648"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73068756"
 ---
 # <a name="portal-templates"></a>门户模板
 
 可以基于所选环境在 PowerApps 中创建 Common Data Service starter 门户或 Dynamics 365 门户。
 
 > [!NOTE]
-> PowerApps 门户 Studio 不完全支持现有门户和现有门户模板（社区、合作伙伴、员工自助服务、客户自助服务），并且某些组件可能不会呈现。 但是，您可以像平常一样继续编辑其余组件。 
+> PowerApps 门户 Studio 不完全支持现有门户和现有门户模板（社区、合作伙伴、员工自助服务、客户自助服务），并且某些组件可能不会呈现。 但是，您可以继续照常编辑组件的其余部分。 
 
 ## <a name="environment-with-common-data-service"></a>具有 Common Data Service 的环境
 
@@ -39,7 +39,7 @@ ms.locfileid: "72977648"
 - **合作伙伴门户**：合作伙伴门户允许拥有经销商、分销商或合作伙伴的每个组织实时访问共享活动的每个阶段。
 
     > [!NOTE]
-    > 现场服务和项目服务包必须安装在 Dynamics 365 组织中才能启用相应的选项。 有关详细信息，请参阅[集成项目服务自动化](https://docs.microsoft.com/en-us/dynamics365/portals/integrate-project-service-automation)和[集成现场服务](https://docs.microsoft.com/en-us/dynamics365/portals/integrate-field-service)。
+    > 现场服务和项目服务包必须安装在 Dynamics 365 组织中才能启用相应的选项。 有关详细信息，请参阅[集成项目服务自动化](https://docs.microsoft.com/dynamics365/portals/integrate-project-service-automation)和[集成现场服务](https://docs.microsoft.com/dynamics365/portals/integrate-field-service)。
 
 - **员工自助服务门户**：员工自助服务门户通过优化常见任务并为每个员工提供一项权威资源
 - **社区门户**：社区门户利用客户和专家之间的对等交互，有机从知识库文章、论坛和博客增加可用知识目录，并通过注释和分级
