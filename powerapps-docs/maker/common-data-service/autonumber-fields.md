@@ -33,6 +33,9 @@ search.app:
 
 您还可以激活现有文本字段的自动编号功能，方法是打开字段并从**数据类型**下拉列表框中选择**自动编号**。 同样，自动编号功能也可以随时禁用，方法是打开字段并在**数据类型**下拉列表框中选择其他选项。
 
+> [!NOTE]
+>开始记录时，数据库会预先选择自动编号值。 如果记录开始后被取消，则不会使用为其分配的编号。 如果在这段时间内用下一个序号完成了另一个记录，则记录的自动编号中将出现间隙。
+
 ## <a name="autonumber-types"></a>自动编号类型
 
 为了使自动编号字段的创建更简单，有一些预定义的默认自动编号类型，其可以覆盖最常见的场景。 
@@ -61,7 +64,7 @@ search.app:
 
 ## <a name="create-an-autonumber-field"></a>创建自动编号字段
   
-1.  登录 [PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1.  登录到 [PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
   
 2.  在左侧窗格上，展开**数据**，然后选择**实体**。
   
@@ -80,7 +83,7 @@ search.app:
 
 8. 自定义种子值或保留默认值 **1000**。
 
-9. 选择**无**。
+9. 选择**完成**。
 
 ## <a name="see-also"></a>另请参阅
  [使用 PowerApps 门户创建和编辑 Common Data Service 的字段](create-edit-field-portal.md)

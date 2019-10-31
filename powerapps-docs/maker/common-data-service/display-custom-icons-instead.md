@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerApps 在列表视图中在值旁边显示自定义图标 | MicrosoftDocs
+title: 在 PowerApps 的列表视图中在值旁边显示自定义图标 | MicrosoftDocs
 description: 了解如何在视图中显示自定义图标图形
 ms.custom: ''
 ms.date: 02/14/2019
@@ -94,7 +94,7 @@ search.app:
 <a name="SampleJavascript"></a>   
 
 ### <a name="sample-javascript-function"></a>示例 JavaScript 函数：  
- 用于显示自定义图标和工具提示的 JavaScript 函数需要下面的两个自变量：layoutxml 中指定的完整行对象和调用用户的区域设置 ID (LCID)。 LCID 参数用于指定多种语言的工具提示文本。 有关环境支持的语言的更多信息，请参阅[启用语言](/dynamics365/customer-engagement/admin/enable-languages)和[安装或升级 Dynamics 365 for Customer Engagement 的语言包](/dynamics365/customer-engagement/on-premises/install-or-upgrade-language-packs)。 有关可在代码中使用的区域设置 ID (LCID) 值的列表，请参阅 [Microsoft 分派的区域设置 ID](https://go.microsoft.com/fwlink/?linkid=829588)。
+ 用于显示自定义图标和工具提示的 JavaScript 函数需要下面的两个自变量：layoutxml 中指定的完整行对象和调用用户的区域设置 ID (LCID)。 LCID 参数用于指定多种语言的工具提示文本。 有关环境支持的语言的更多信息，请参阅[启用语言](/dynamics365/customer-engagement/admin/enable-languages)和[安装或升级语言包](/dynamics365/customer-engagement/on-premises/install-or-upgrade-language-packs)。 有关可在代码中使用的区域设置 ID (LCID) 值的列表，请参阅 [Microsoft 分派的区域设置 ID](https://go.microsoft.com/fwlink/?linkid=829588)。
 
   
  假定您将为属性的选项集类型添加自定义图标，该图标有一小组预定义的选项，那么确保使用这些选项的整数值而不是标签，以避免本地化问题。  
@@ -102,7 +102,7 @@ search.app:
  以下示例代码根据 opportunityratingcode（等级）属性中的三个值之一（“1: 热”、“2: 暖和”、“3: 冷”）显示图标和工具提示。 此示例代码还演示如何显示已本地化的工具提示文本。 要让此示例工作，必须创建带 16x16 图像且具有以下名称的三个图像 Web 资源：new_Hot、new_Warm 和 new_Cold。  
 
 > [!IMPORTANT]
-> 此示例需要商机实体，其在 Dynamics 365 for Customer Engagement 应用中提供。
+> 此示例需要商机实体，其在 Dynamics 365 Sales 应用中提供。
   
 ```javascript
 function displayIconTooltip(rowData, userLCID) {      

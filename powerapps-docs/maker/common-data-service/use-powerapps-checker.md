@@ -140,24 +140,24 @@ When you install the PowerApps checker these solution specific components are cr
 
 |解决方案组件  |规则名称  |规则说明  |
 |---------|---------|---------|
-|插件或工作流活动   | [il-specify-column](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-specify-column&client=PAChecker&source=featuredocs)  | 避免通过 Dynamics 365 for Customer Engagement 查询 APIs 选择所有列。     |
-|插件或工作流活动   | [meta-remove-dup-reg](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-dup-reg&client=PAChecker&source=featuredocs)     | 避免重复注册 Dynamics 365 for Customer Engagement 插件。     |
-|插件或工作流活动   | [il-turn-off-keepalive](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-turn-off-keepalive&client=PAChecker&source=featuredocs)   | 在 Dynamics 365 for Customer Engagement 插件中与外部主机交互时，请将 KeepAlive 设置为 false。     |
-|插件或工作流活动   | [il-avoid-unpub-metadata](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-unpub-metadata&client=PAChecker&source=featuredocs)   | 避免检索未经发布的 Dynamics 365 for Customer Engagement 元数据。     |
-|插件或工作流活动   | [il-avoid-batch-plugin](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-batch-plugin&client=PAChecker&source=featuredocs)   | 避免在 Dynamics 365 Customer Engagement 插件和工作流活动中使用批处理请求类型。    |
-|插件或工作流活动   | [meta-avoid-reg-no-attribute](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-reg-no-attribute&client=PAChecker&source=featuredocs)  | 包括使用 Dynamics 365 for Customer Engagement 插件注册过滤属性。    |
-|插件或工作流活动   | [meta-avoid-reg-retrieve](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-reg-retrieve&client=PAChecker&source=featuredocs)  | 使用为 Retrieve 和 RetrieveMultiple 消息注册的 Dynamics 365 for Customer Engagement 插件时，请务必小心谨慎。    |
-|插件或工作流活动   | [meta-remove-inactive](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-inactive&client=PAChecker&source=featuredocs)    | 删除 Dynamics 365 for Customer Engagement 中的已停用配置。    |
+|插件或工作流活动   | [il-specify-column](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-specify-column&client=PAChecker&source=featuredocs)  | 避免通过 Common Data Service 查询 API 选择所有列。     |
+|插件或工作流活动   | [meta-remove-dup-reg](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-dup-reg&client=PAChecker&source=featuredocs)     | 避免重复的 Common Data Service 插件注册。     |
+|插件或工作流活动   | [il-turn-off-keepalive](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-turn-off-keepalive&client=PAChecker&source=featuredocs)   | 在 Common Data Service 插件中与外部主机交互时，请将 KeepAlive 设置为 false。     |
+|插件或工作流活动   | [il-avoid-unpub-metadata](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-unpub-metadata&client=PAChecker&source=featuredocs)   | 避免检索未发布的 Common Data Service 元数据。     |
+|插件或工作流活动   | [il-avoid-batch-plugin](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-batch-plugin&client=PAChecker&source=featuredocs)   | 避免在 Common Data Service 插件和工作流活动中使用批处理请求类型。    |
+|插件或工作流活动   | [meta-avoid-reg-no-attribute](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-reg-no-attribute&client=PAChecker&source=featuredocs)  | 包括使用 Common Data Service 插件注册筛选属性。    |
+|插件或工作流活动   | [meta-avoid-reg-retrieve](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-reg-retrieve&client=PAChecker&source=featuredocs)  | 使用为 Retrieve 和 RetrieveMultiple 消息注册的 Common Data Service 插件时，请务必小心谨慎。    |
+|插件或工作流活动   | [meta-remove-inactive](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-inactive&client=PAChecker&source=featuredocs)    | 删除 Common Data Service 中已停用的配置    |
 |插件或工作流活动   | [il-meta-avoid-crm2011-depr-message](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-crm2011-depr-message&client=PAChecker&source=featuredocs)  | 请勿使用 Microsoft Dynamics CRM 2011 弃用的消息。     |
 |插件或工作流活动   | [meta-avoid-crm4-event](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-crm4-event&client=PAChecker&source=featuredocs) | 请勿使用 Microsoft Dynamics CRM 4.0 插件注册插件。    |
-|插件或工作流活动   | [il-avoid-specialized-update-ops](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-specialized-update-ops&client=PAChecker&source=featuredocs)  | 请勿在 Dynamics 365 for Customer Engagement 中使用特制更新操作请求。    | 
+|插件或工作流活动   | [il-avoid-specialized-update-ops](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-specialized-update-ops&client=PAChecker&source=featuredocs)  | 请勿在 Common Data Service 中使用特制更新操作请求。    | 
 | 插件或工作流活动 |  [il-use-autonumber-feature](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-use-autonumber-feature&client=PAChecker)  |使用自动编号功能，而不是自定义的自动编号解决方案。 | 
 | 插件或工作流活动  | [il-avoid-parallel-plugin](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-parallel-plugin&client=PAChecker)  | 应避免在插件中使用并行模式。  |
 | 插件或工作流活动  | [il-avoid-lock-plugin](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-lock-plugin&client=PAChecker)  | 避免在插件中锁定静态成员。  |
 | 插件或工作流活动  | [meta-avoid-retrievemultiple-annotation](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-retrievemultiple-annotation&client=PAChecker)  | 避免在批注 RetrieveMultiple 上注册插件。  |
 |Web 资源  | [web-use-async](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-async&client=PAChecker&source=featuredocs)  |  与 HTTP 和 HTTPS 资源异步交互。   |
-|Web 资源  | [meta-remove-invalid-form-handler](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-invalid-form-handler&client=PAChecker&source=featuredocs)  | 更正或删除无效的 Dynamics 365 for Customer Engagement 窗体事件注册。   |
-|Web 资源  | [meta-remove-orphaned-form-element](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-orphaned-form-element&client=PAChecker&source=featuredocs)  | 更正或删除孤立的 Dynamics 365 for Customer Engagement 窗体事件注册。   |
+|Web 资源  | [meta-remove-invalid-form-handler](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-invalid-form-handler&client=PAChecker&source=featuredocs)  | 更正或删除无效的 Common Data Service 窗体事件注册。   |
+|Web 资源  | [meta-remove-orphaned-form-element](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-orphaned-form-element&client=PAChecker&source=featuredocs)  | 更正或删除孤立的 Common Data Service 窗体事件注册。   |
 |Web 资源  | [web-avoid-modals](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-modals&client=PAChecker&source=featuredocs)  | 避免使用模式对话框。   |
 |Web 资源  | [web-avoid-crm2011-service-odata](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-odata&client=PAChecker&source=featuredocs)   | 请勿以 Microsoft Dynamics CRM 2011 OData 2.0 端点为目标。     |
 |Web 资源  | [web-avoid-crm2011-service-soap](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-soap&client=PAChecker&source=featuredocs)  | 请勿以 Microsoft Dynamics CRM 2011 SOAP 服务为目标。   |

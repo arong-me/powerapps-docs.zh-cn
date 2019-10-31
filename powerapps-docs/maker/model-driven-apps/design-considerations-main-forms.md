@@ -1,10 +1,10 @@
 ---
-title: 使用 PowerApps 的模型驱动应用程序主窗体的设计注意事项 | MicrosoftDocs
+title: 使用 PowerApps 的模型驱动应用主窗体的设计注意事项 | MicrosoftDocs
 description: 了解如何设计主窗体
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -27,7 +27,7 @@ search.app:
 
 主窗体是用户查看及与其数据交互的主要用户界面。 主窗体提供了广泛的选项，可用于模型驱动应用（Dynamics 365 for phones 除外）。  
   
- 主窗体的主要设计目标之一是一次设计，到处部署。 您为模型驱动应用或 Dynamics 365 customer engagement Web 应用程序设计的相同主窗体，也用于 Dynamics 365 for Outlook 和 Dynamics 365 for tablets。 此方法的优势在于您无需将更改集成到多个窗体中。 但是，在设计这些窗体时，需要考虑几个具有要的因素。  
+ 主窗体的主要设计目标之一是一次设计，到处部署。 您为模型驱动应用设计的相同主窗体也用于 Dynamics 365 for Outlook 和适用于平板电脑的 Dynamics 365。 此方法的优势在于您无需将更改集成到多个窗体中。 但是，在设计这些窗体时，需要考虑几个具有要的因素。  
   
 <a name="BKMK_CustomFormsForGroups"></a>   
 
@@ -52,7 +52,7 @@ search.app:
   
 -   如果您有与 Web 应用程序中的 DOM 元素交互的不支持的脚本，这些脚本在 Dynamics 365 for tablets 窗体中将无效，因为相同的 DOM 元素不可用。  
   
-- Dynamics 365 for Outlook 阅读窗格窗体不允许使用脚本。 窗体元素的可见性取决于默认设置，不能在使用脚本运行时更改。  
+- Dynamics 365 for Outlook 阅读窗格窗体不允许脚本。 窗体元素的可见性取决于默认设置，不能在使用脚本运行时更改。  
   
 <a name="BKMK_FormPerformance"></a>   
 ## <a name="form-performance"></a>窗体性能  

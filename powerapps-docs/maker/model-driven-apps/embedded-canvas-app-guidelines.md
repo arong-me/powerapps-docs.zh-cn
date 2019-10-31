@@ -1,7 +1,7 @@
 ---
 title: 嵌入式区域应用使用指南 | MicrosoftDocs
 ms.custom: ''
-ms.date: 07/24/2019
+ms.date: 08/19/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -43,6 +43,13 @@ search.app:
     - 使用应用 ID 在模型驱动窗体中嵌入现有区域应用的支持将在以后的更新中提供。
 - 使用嵌入式区域应用查看模型驱动的窗体时，如果显示错误消息“抱歉，找不到该应用”，请确保嵌入式区域应用与模型驱动的窗体在同一个解决方案中。
 - 使用嵌入式区域应用查看模型驱动的窗体时，如果显示错误消息“您似乎无权访问此应用。 请让其其负责人为您共享”，则请确保作者已与您共享了此嵌入式区域应用。 详细信息：[共享嵌入式区域应用](share-embedded-canvas-app.md)。
+- 在子网格控件上添加区域应用不再可用。
+    - 在预览版中，开发者能够在子网格控件上添加区域应用。 现在，可以将区域应用嵌入在模型驱动的窗体中，将在模型驱动窗体上添加嵌入式区域应用简化到字段。 
+    - 这使开发者更轻松，因为他们不必事先决定是作为数据上下文传递当前（主窗体）记录还是传递与当前（主窗体）记录相关的记录列表。 
+    - 开发者总是从一个字段开始，可以访问当前（主窗体）记录或与当前（主窗体）记录相关的记录列表。
+    - 要访问区域应用中的相关记录列表，开发者可以将 Common Data Service 连接器和[筛选器](../canvas-apps/functions/function-filter-lookup.md)功能与区域应用中启用的[改进数据源体验和 Common Data Service 视图](https://powerapps.microsoft.com/blog/improved-data-source-selection-and-common-data-service-views/)功能结合使用。  
+    例如，要访问*联系人*实体的*可用联系人*视图，开发者可以使用 *Filter(Contacts, 'Contacts (Views)'.'Active Contacts')*。
+    - 使用子网格控件的现有区域应用将继续运行。 但是，我们建议您迁移这些应用来改用字段。 详细信息：请参阅[迁移使用与当前（主窗体）记录相关的记录列表的模型驱动窗体上的嵌入式区域应用](embedded-canvas-app-migrate-from-preview.md#migrating-embedded-canvas-apps-on-model-driven-forms-that-use-a-list-of-records-related-to-the-current-main-form-record)了解详细信息。
 
 ## <a name="enable-an-embedded-canvas-app"></a>启用嵌入式区域应用
 1. 选择自定义为显示为嵌入式区域应用的字段。
@@ -58,6 +65,12 @@ search.app:
 
 ## <a name="known-issues-and-limitations-with-embedded-canvas-apps"></a>嵌入式区域应用的已知问题和限制
 - 只有 **Web** 客户端类型才支持使用区域应用自定义控件。 目前不支持**手机**和**平板电脑**客户端类型。
+- ModelDrivenFormIntegration 控件不为相关实体的字段提供值。 
+  - 例如，当 ModelDrivenFormIntegration 控件连接到“客户”实体时，使用 *ModelDrivenFormIntegration.Item.’Primary Contact’.’Full Name’* 将不会返回值。 
+  - 要访问相关实体的字段，开发者可以使用此处列出的两种表达式之一：
+    - *LookUp(Accounts, Account = GUID(First(ModelDrivenFormIntegration.Data).ItemId)).'Primary Contact'.'Full Name'*  
+      - *ItemId* 在创作时为空，但在运行时将具有值。
+    - *LookUp(Accounts, Account = ModelDrivenFormIntegration.Item.Account).'Primary Contact'.'Full Name'*（此表达式更易于读取，但前一个表达式的效果会稍好一些。）
 - 不能使用安全角色中的**区域应用**权限为应用用户授予嵌入式或单机区域应用的访问权限。 有关共享嵌入式区域应用的详细信息，请参阅：[共享嵌入式区域应用](share-embedded-canvas-app.md)。
 - 如果回写正在主机模型驱动的窗体中显示的相同数据，窗体将继续显示原来的数据，直到刷新。 这样做的简单方法是使用 [RefreshForm](embedded-canvas-app-actions.md#refreshformshowprompt) 方法。
 

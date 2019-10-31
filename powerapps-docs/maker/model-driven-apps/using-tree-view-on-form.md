@@ -1,7 +1,7 @@
 ---
 title: 在窗体设计器中使用树视图 | MicrosoftDocs
 ms.custom: ''
-ms.date: 04/21/2019
+ms.date: 08/26/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -24,15 +24,14 @@ search.app:
 ---
 
 # <a name="using-the-tree-view-in-the-form-designer"></a>在窗体设计器中使用树视图
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+**树视图**窗格显示组件在窗体中的图形层次结构。 树视图中的图标可帮助您快速识别字段或组件的类型。 
 
-**树视图**窗格显示控件和字段在窗体中的图形层次结构。 树视图中的图标可帮助您快速识别字段或控件的类型。 
-
-也可以使用树视图选择窗体中的字段和控件。 如果要选择窗体预览中未显示的隐藏元素，树视图非常有用。 
+也可以使用树视图选择窗体中的字段和组件。 如果要选择窗体预览中未显示的隐藏元素，树视图非常有用。 
 
 可展开或折叠树视图中的节点查看或隐藏节点内的元素。 如果选择树视图中的元素，该元素将在窗体预览中突出显示，而属性窗格则显示该元素的属性。 
 
-   ![树视图](media/tree-view.png)
+> [!div class="mx-imgBorder"] 
+> ![](media/FormDesignerTreeView.png "树视图")
 
 ### <a name="open-the-tree-view"></a>打开树视图 
 1. 打开窗体设计器创建或编辑窗体。 
@@ -41,10 +40,13 @@ search.app:
 
 ## <a name="see-also"></a>另请参阅
 [模型驱动的窗体设计器概述](form-designer-overview.md)  
-[使用窗体设计器创建或编辑窗体](create-and-edit-forms.md)  
-[使用窗体设计器添加、移动或删除字段](add-move-or-delete-fields-on-form.md)  
-[使用窗体设计器添加、移动或删除分区](add-move-or-delete-sections-on-form.md)  
-[使用窗体设计器添加、移动或删除选项卡](add-move-or-delete-tabs-on-form.md)  
-[窗体设计器中的可用属性](form-designer-properties.md)  
-[在窗体设计器中配置页眉属性](form-designer-header-properties.md)   
-[创建和编辑字段](../common-data-service/create-edit-field-portal.md)
+[使用窗体设计器创建、编辑或配置窗体](create-and-edit-forms.md)  
+[添加、配置、移动或删除窗体中的字段](add-move-or-delete-fields-on-form.md)  
+[添加、配置、移动或删除窗体中的组件](add-move-configure-or-delete-components-on-form.md)  
+[添加、配置、移动或删除窗体中的分区](add-move-or-delete-sections-on-form.md)  
+[添加、配置、移动或删除窗体中的选项卡](add-move-or-delete-tabs-on-form.md)  
+[在窗体设计器中配置页眉属性](form-designer-header-properties.md)  
+[在窗体中添加和配置子网格组件](form-designer-add-configure-subgrid.md)  
+[在窗体中添加和配置快速视图组件](form-designer-add-configure-quickview.md)  
+[在窗体中配置查找组件](form-designer-add-configure-lookup.md)  
+[创建和编辑字段](../common-data-service/create-edit-field-portal.md)  

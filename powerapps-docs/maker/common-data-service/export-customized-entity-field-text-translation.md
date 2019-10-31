@@ -4,7 +4,7 @@ description: 了解如何导出要翻译的实体和字段文本
 ms.custom: ''
 ms.date: 06/19/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -36,7 +36,7 @@ search.app:
 
 ## <a name="community-tools"></a>社区工具
 
-[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) 是一款 XrmToolBox 社区为 Dynamics 365 Customer Engagement 开发的工具。 可使用 Easy Translator 导出和导入翻译和上下文信息。 
+[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) 是 XrmToolBox 社区为 PowerApps 开发的一款工具。 可使用 Easy Translator 导出和导入翻译和上下文信息。 
 
 > [!NOTE]
 > 这些社区工具不受 Microsoft 支持。 如果您对该工具有任何疑问，请联系发布者。 详细信息：[XrmToolBox](https://www.xrmtoolbox.com)。

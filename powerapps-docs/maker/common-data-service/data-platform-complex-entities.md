@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
-ms.date: 07/17/2018
+ms.date: 09/26/2019
 ms.author: lanced
 search.audienceType:
   - maker
@@ -16,18 +16,22 @@ search.app:
 ---
 
 # <a name="complex-entities-and-licensing"></a>复杂的实体和许可
+
+> [!IMPORTANT]
+> 本主题已过期，将很快更新以反映自 2019 年 10 月 1 日起适用的最新许可变化。 有关实体许可要求的最新信息，请参阅 [PowerApps 许可指南](https://go.microsoft.com/fwlink/?linkid=2085130)。
+
 包含以下复杂服务器端逻辑的实体需要使用这些实体的应用程序或流用户具有 PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证：
 
-* 代码插件。详细信息：[插件开发](https://docs.microsoft.com/dynamics365/customer-engagement/developer/plugin-development)
-* 实时工作流。 详细信息：[工作流过程](https://docs.microsoft.com/dynamics365/customer-engagement/customize/workflow-processes)
+* 代码插件。详细信息：[插件开发](/powerapps/developer/common-data-service/plug-ins)
+* 实时工作流。 详细信息：[工作流过程](/flow/workflow-processes)
 
     > [!IMPORTANT]
     >  只转换为实时工作流的工作流被视为实时和同步。 在后台运行的工作流仍可以用于相应的 PowerApps 计划且不需要额外许可证。
 
 若要了解您是否已向实体添加了复杂的业务逻辑，请查看在您的环境中配置的插件程序集和工作流的列表。
 
-## <a name="complex-entities-installed-with-dynamics-365"></a>随 Dynamics 365 安装的复杂实体
-下表列出了包含在 Dynamics 365 应用程序安装中现成提供的复杂服务器端逻辑的实体。 此列表用作指南。 根据在您的环境中安装的 Dynamics 365 应用程序和版本，复杂实体的列表可能不同。
+## <a name="complex-entities-installed-with-dynamics-365-apps"></a>随 Dynamics 365 应用安装的复杂实体
+下表列出了包含现成的复杂服务器端逻辑的实体，这些实体是在 Dynamics 365 中安装模型驱动应用程序（如 Dynamics 365 Sales 和 Dynamics 365 Customer Service）的一部分。 此列表用作指南。 根据在您的环境中安装的 Dynamics 365 应用和版本，复杂实体的列表可能不同。
 
 > [!NOTE]
 >  如果您使用的是 Common Data Service 且未安装 Dynamics 365 应用程序或第三方解决方案，您的环境将没有包含复杂服务器端逻辑的实体。

@@ -2,7 +2,7 @@
 title: 使用现有环境和统一接口验证旧 Web 客户端应用入门指南 | MicrosoftDocs
 description: 了解如何规划和执行从旧 Web 客户端到统一接口的转换
 ms.custom: ''
-ms.date: 07/24/2019
+ms.date: 09/11/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -23,26 +23,24 @@ search.app:
   - PowerApps
   - D365CE
 ---
-
-
-<!--editor comment: I notice two mentions of Dynamics 365 Home page and both are followed by the URL but the text isn't linked. Just want to point that out in case it wasn't intentional. -->
-
-
 # <a name="quick-start-for-using-an-existing-environment-to-validate-your-legacy-web-client-app-with-the-unified-interface"></a>使用现有环境和统一接口验证旧 Web 客户端应用入门指南
+本快速入门指南介绍如何使用现有环境创建基于当前配置或默认解决方案的统一接口应用程序。 这样就可以在运行现有旧 Web 客户端应用程序的同时，探索和测试统一接口。 然后，用户可以在环境之间切换，以便进行并排查看。 
 
-本快速入门指南介绍如何使用现有环境创建基于当前配置或默认解决方案的统一接口应用程序。 这样就可以在运行现有旧 Web 客户端应用程序的同时，探索和测试统一接口。 然后，用户可以在环境之间切换，以便进行并排查看。 有关演示如何创建新沙盒环境以隔离测试，并仅查看统一接口体验的类似说明，请参阅[从 Dynamics 365 for Customer Engagement 应用程序旧 Web 客户端应用程序转换到统一接口的快速入门指南](transition-web-app.md)。
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3JzyI]
+
+有关演示如何创建新沙盒环境以隔离测试，并仅查看统一接口体验的类似说明，请参阅[从 Dynamics 365 应用程序旧 Web 客户端应用程序转换到统一接口的快速入门指南](transition-web-app.md)。
 
 > [!IMPORTANT]
->  对于装有 Dynamics 365 for Field Service 或 Dynamics 365 for Project Service Automation 应用程序的环境，请参阅 [Dynamics 365 for Customer Engagement 应用程序](transition-web-app.md#dynamics-365-for-customer-engagement-apps)。
+>  对于装有 Dynamics 365 Field Service 或 Dynamics 365 Project Service Automation 应用程序的环境，请参阅 [Dynamics 365 应用程序](transition-web-app.md#dynamics-365-apps)。
 
 ## <a name="prerequisites"></a>必备条件 
-- 现有 Dynamics 365 for Sales 或 Service 旧 Web 客户端应用程序。 
+- 现有 Dynamics 365 Sales 或 Service 旧 Web 客户端应用程序。 
 - 尽管不需要，我们还是建议使用非生产环境来测试应用程序。 详细信息：[管理沙盒实例](/dynamics365/customer-engagement/admin/manage-sandbox-instances) 
 
 ## <a name="overview"></a>概述 
 本主题面向以下客户：正在使用旧 Web 客户端应用程序，但是需要计划和执行到统一接口的转换。 若要设置并行环境，请基于现有默认解决方案按原样创建一个新的应用程序。 可以在当前开发沙盒环境中执行此操作，这样就不会影响您的现有工作。
 
-完成本主题中的步骤之后，具有相应角色的用户可以在 Dynamics 365 for Customer Engagement 下拉应用程序列表或 Dynamics 365 主页 (http://home.dynamics.com) 中的应用程序列表内看到您的新应用程序。
+完成本主题中的步骤之后，具有相应角色的用户可以在 Dynamics 365 下拉应用程序列表或 Dynamics 365 主页 (http://home.dynamics.com) 中的应用程序列表内看到您的新应用程序。
 
 ![应用程序列表](media/app-list.png)
 
@@ -58,7 +56,7 @@ search.app:
 2.  创建新的模型驱动应用程序 
 3.  配置应用程序属性  
 
-如果当前已按照[从 Dynamics 365 for Customer Engagement 应用程序旧 Web 客户端应用程序转换到统一接口的快速入门指南](transition-web-app.md)主题中的说明在开发环境中将**仅使用统一接口**模式切换为**开**，则必须将此设置切换回**关**，这样才能运行现有旧 Web 客户端应用程序。
+如果当前已按照[从 Dynamics 365 旧 Web 客户端应用程序转换到统一接口的快速入门指南](transition-web-app.md)主题中的说明在开发环境中将**仅使用统一接口**模式切换为**开**，则必须将此设置切换回**关**，这样才能运行现有旧 Web 客户端应用程序。
 
 ### <a name="create-a-new-solution-thats-based-on-the-default-solution"></a>创建基于默认解决方案的新解决方案
 1. 登录 [PowerApps 开发者门户](https://make.powerapps.com)。   
@@ -89,7 +87,7 @@ search.app:
 5. 将打开应用程序设计器，其中显示默认解决方案中包含的所有应用程序组件。 选择**发布**。  
 6. 发布流程完成后，选择**播放**。  
 
-将在浏览器中打开一个新窗口，其中包含您的新模型驱动应用程序，该应用程序内包含您的默认 Dynamics 365 for Customer Engagement 应用程序中的所有实体、站点地图和站点地图自定义项。  
+将在浏览器中打开一个新窗口，其中包含您的新模型驱动应用程序，该应用程序内包含您的默认 Dynamics 365 应用程序中的所有实体、站点地图和站点地图自定义项。  
 
 > [!div class="mx-imgBorder"] 
 > ![新统一接口应用程序](media/new-unified-interface-app.png "新统一接口应用程序")
@@ -132,7 +130,7 @@ search.app:
 
 6. 选择**保存**。 
 
-现在，具有相应角色的用户可以在 Dynamics 365 for Customer Engagement 下拉应用程序列表或 Dynamics 365 主页 (http://home.dynamics.com) 中的应用程序列表内看到您的新应用程序。 
+现在，具有相应角色的用户可以在 Dynamics 365 下拉应用程序列表或 Dynamics 365 主页 (http://home.dynamics.com) 中的应用程序列表内看到您的新应用程序。 
   
    ![应用程序列表](media/app-list.png "应用程序列表")
 
@@ -151,7 +149,7 @@ search.app:
 当应用程序展示统一接口之后，可以开始验证应用程序、流程和自定义项，以便识别转换的外观。 建议您测试所有用例，但是可以从最重要的开始，或将其分组为设计逻辑模式。 由于统一接口基于响应式设计，所以建议您始终使用不同屏幕分辨率的不同设备来执行测试。 测试应用程序时，可以验证自定义项是否兼容统一接口，是否有任何功能需要重新设计或缺少功能。  
 
 > [!IMPORTANT]
-> Common Data Service 和 Dynamics 365 for Customer Engagement 应用程序的当前版本中仍然包含若干已弃用功能。 您应检查您的应用程序中是否有任何已弃用功能，并根据需要替换为新功能。 详细信息: [Dynamics 365 Customer Engagement 中即将做出的重要更改（弃用）](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming)。
+> Dynamics 365 中的 Common Data Service 和模型驱动应用程序的当前版本中仍然包含若干已弃用功能。 您应检查您的应用程序中是否有任何已弃用功能，并根据需要替换为新功能。 详细信息：[即将做出的重要更改（弃用）](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming)
 
 > [!TIP]
 > PowerApps 检查器工具可帮助对解决方案的组件进行质量检查。  详细信息：[在 PowerApps 中使用解决方案检查器验证模型驱动应用程序](../common-data-service/use-powerapps-checker.md)

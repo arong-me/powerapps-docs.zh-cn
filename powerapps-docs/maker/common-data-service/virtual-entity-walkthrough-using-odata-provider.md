@@ -1,5 +1,5 @@
 ---
-title: 在 Common Data Service 中使用 OData 数据提供程序的虚拟实体演练 | MicrosoftDocs
+title: 在 Common Data Service 中使用 OData 数据提供程序演练虚拟实体 | MicrosoftDocs
 description: 了解如何在虚拟实体中使用 OData v4 数据提供程序
 ms.custom: ''
 ms.date: 06/04/2018
@@ -26,7 +26,7 @@ search.app:
 
 # <a name="virtual-entity-walkthrough-using-the-odata-v4-data-provider"></a>使用 OData v4 数据提供程序演练虚拟实体
 
-假设要从 Dynamics 365 for Customer Engagement 的模型驱动应用或“服务”区域内访问外部数据源中的票据信息。 在此演练中，您将使用映射到外部架构的字段对虚拟实体建模，该架构在运行时从 OData Web 服务检索票据数据。
+假设要从模型驱动应用内访问外部数据源中的票据信息。 在此演练中，您将使用映射到外部架构的字段对虚拟实体建模，该架构在运行时从 OData Web 服务检索票据数据。
 
 ## <a name="data-source-details"></a>数据源详细信息
 
@@ -152,7 +152,7 @@ Web 服务 URL：`http://contosowebservice.azurewebsites.net/odata/`
     ![发布所有自定义项](media/publishall.png)
 1. 发布了所有自定义项之后，关闭解决方案资源管理器窗口。
 
-## <a name="view-the-virtual-entity-in-action-with-dynamics-365-customer-engagement"></a>通过 Dynamics 365 customer engagement 查看使用中的虚拟实体
+## <a name="view-the-virtual-entity-in-action-with-dynamics-365"></a>通过 Dynamics 365 查看使用中的虚拟实体
 
 1. 转至**服务** > **扩展** > **票据**。
     

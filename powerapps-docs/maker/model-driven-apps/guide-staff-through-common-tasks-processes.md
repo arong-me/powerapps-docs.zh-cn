@@ -45,7 +45,7 @@ search.app:
 
 ## <a name="flows"></a>流  
   
-Microsoft Flow 中包含针对于不同目的而设计的多种类型的流程：  
+Microsoft Flow 中包含针对于不同目的而设计的若干类型的流程：  
 
 -   自动化流。 创建在被事件触发后自动执行一个或多个任务的流。 详细信息：[创建流](/flow/get-started-logic-flow)
     
@@ -55,7 +55,7 @@ Microsoft Flow 中包含针对于不同目的而设计的多种类型的流程�
   
 -   业务流程。  通过创建业务流程，确保用户输入的数据一致并且每次在应用程序中运行时都遵循相同的步骤。 更多信息：[业务流程概述](/flow/business-process-flows-overview)
 
--   工作流和操作。 Dynamics 365 customer engagement 定制员可以熟悉 Common Data Service 经典流程，即工作流和操作。 详细信息：[使用工作流过程](/flow/workflow-processes)和[操作概述](/flow/actions)
+-   工作流和操作。 Dynamics 365 定制员可以熟悉经典 Common Data Service 流程，即工作流和操作。 详细信息：[使用工作流过程](/flow/workflow-processes)和[操作概述](/flow/actions)
   
 ## <a name="next-step"></a>下一步
 

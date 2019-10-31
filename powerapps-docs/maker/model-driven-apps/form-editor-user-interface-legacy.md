@@ -1,7 +1,6 @@
 ---
 title: PowerApps 的模型驱动应用程序窗体编辑器用户界面概述 | MicrosoftDocs
-description: 了解 PowerApps 中用于编辑窗体的窗体编辑器用户界面
-keywords: 窗体；主窗体；统一接口应用；Dynamics 365 for customer engagement
+description: 了解用于在 PowerApps 中编辑窗体的窗体编辑器用户界面
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -137,8 +136,8 @@ search.app:
 ||**IFRAME**|可以向窗体添加 IFRAME 以便在一个窗体中集成另一网站的内容。| 
 ||**时间线**|在窗体中插入日程表控件。 此控件显示与窗体上实体相关的活动的日程表。|  
 ||**导航链接**|使用此选项，您可以将链接插入到窗体导航。|  
-||**计时器**|向实体窗体插入计时器控件以跟踪时间，并和 SLA 做比对。 详细信息：[添加计时器控件](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customer-service/add-timer-control-case-form-track-time-against-sla)|
-||**知识库搜索**|插入一个可供用户搜索知识文章的搜索控件。 详细信息：[知识库搜索控件](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customer-service/add-knowledge-base-search-control-forms)|  
+||**计时器**|向实体窗体插入计时器控件以跟踪时间，并和 SLA 做比对。 详细信息：[添加计时器控件](https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/add-timer-control-case-form-track-time-against-sla)|
+||**知识库搜索**|插入一个可供用户搜索知识文章的搜索控件。 详细信息：[知识库搜索控件](https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/add-knowledge-base-search-control-forms)|  
 ||**关系助手**|使用此选项，可以在窗体中插入关系助手控件。|
 
 >[!Note] 

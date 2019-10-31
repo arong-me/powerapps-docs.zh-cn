@@ -2,7 +2,7 @@
 title: Common Data Service 中的字段数据类型 | MicrosoftDocs
 description: 了解可用于您的应用的不同字段数据类型
 keywords: ''
-ms.date: 06/27/2018
+ms.date: 09/30/2019
 ms.service: powerapps
 ms.custom: null
 ms.topic: article
@@ -155,11 +155,14 @@ search.app:
 
 使用图像字段可在应用程序中显示每个记录的单个图像。 每个实体可以有一个图像字段。 可以将图像字段添加到自定义实体，但不能添加到标准实体。 有些标准实体定义了图像字段。
   
-即使实体有图像字段，在模型驱动应用程序中显示该图像还需要其他步骤。 在实体定义中，**主图像**字段值是 **[无]** 或**实体图像**。 选择**实体图像**可在应用程序中显示图像。  
+即使实体有图像字段，在模型驱动应用程序中显示该图像还需要您启用两项设置。 
+- 必须将标准实体定义**主要图像**属性设置为**默认图像**。 自定义实体需要自定义图像字段。 然后，可以在自定义实体定义中为**主要图像**值选择该图像字段。  
+- 必须为要在其中显示该图像的实体窗体启用**在窗体中显示图像**属性。  
   
 为实体启用图像显示时，没有图像的所有记录将显示占位符图像。 例如：
 
-![占位符图像](../common-data-service/media/lead-entity-form.PNG)
+> [!div class="mx-imgBorder"] 
+> ![默认实体图像](../common-data-service/media/account-record-default-image.png "默认客户实体图像")
   
 用户可以选择默认图像从计算机上载图片。 图像必须小于 5120 KB，并且必须采用以下格式之一：  
   
@@ -175,6 +178,40 @@ search.app:
   
 图像上载后，将调整其大小，最大为 144 x 144 像素。 用户应在上载图像之前调整图像大小或裁剪图像，以便以此大小正确显示。 所有图像都裁剪成正方形。 如果图像的两边都小于 144 像素，则将使用较小边的尺寸裁剪成正方形。  
 
+### <a name="add-image-support-for-a-form-in-a-custom-entity-using-solution-explorer"></a>使用解决方案资源管理器在自定义实体中为窗体添加图像支持
+1. 打开[解决方案资源管理器](../model-driven-apps/advanced-navigation.md#solution-explorer)。 
+2. 在左侧导航窗格中，展开**实体**，展开所需自定义实体，然后选择**字段**。 
+3. 在工具栏上，选择**新建**。 
+4. 在**类型**部分的**数据类型**下拉列表中选择**图像**。 
+5. 输入**显示名称**，如*自定义实体名称*。 
+6. 根据需要填写其余字段。 请注意，不能更改**名称**、**字段要求**和**可搜索**字段。 选择**保存并关闭**。 
+7. 在**主要图像**属性旁边的视图定义中，确保值设置为您在上一步中创建的自定义图像。 如果未选择，请选择。  
+    ![已选择主要图像属性](media/primary-image-property.png)
+
+8.  打开需要图像支持的窗体，如实体主窗体。 
+9.  在窗体编辑器功能区上，选择**窗体属性**。 
+10. 在**窗体属性**页面中，选择**显示**选项卡，选择**在窗体中显示图像**，然后选择**确定**。 
+
+    > [!div class="mx-imgBorder"] 
+    > ![在窗体中显示图像设置](media/show-image-on-form.png "在窗体中显示图像设置")
+
+11. 在窗体编辑器功能区上，选择**保存**，然后选择**发布**。 关闭窗体编辑器。 
+
+应用程序用户现在可选择要在窗体中显示的图像。 当应用程序用户打开记录的窗体时，可以选择要在该窗体中显示的图像。 
+
+> [!IMPORTANT]
+> 如果记录是尚未保存的新记录，尝试更改图像时，将返回“参数无效”错误。 
+
+#### <a name="change-the-image-for-a-record"></a>更改记录的图像
+1. 打开其中包含实体窗体的应用程序，然后在窗体中选择图像。 
+   > [!div class="mx-imgBorder"] 
+   > ![默认实体图像](../common-data-service/media/default-entity-image-on-form.png "默认实体图像")
+
+2. 选择**上载图像**，浏览并选择要在实体窗体中显示的图像，然后选择**更改**。 将在记录中显示该图像。 
+   > [!div class="mx-imgBorder"] 
+   > ![更改后的图像已保存到记录](../common-data-service/media/custom-entity-icon-record.png "更改后的图像已保存到记录")
+
+
 面向使用图像数据的开发人员的更多信息：
 - [实体元数据 > 实体图像](/powerapps/developer/common-data-service/entity-metadata#entity-images)
-- [Dynamics 365 Customer Engagement 开发人员指南：图像属性](/dynamics365/customer-engagement/developer/image-attributes)
+- [图像属性](/powerapps/developer/common-data-service/image-attributes)

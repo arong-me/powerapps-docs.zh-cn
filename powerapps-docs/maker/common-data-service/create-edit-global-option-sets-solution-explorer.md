@@ -1,5 +1,5 @@
 ---
-title: 使用解决方案资源管理器创建和编辑 Common Data Service 的全局选项集 | MicrosoftDocs
+title: 使用解决方案资源管理器为 Common Data Service 创建和编辑全局选项集 | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/26/2018
 ms.reviewer: ''
@@ -12,19 +12,20 @@ applies_to:
   - Dynamics 365 Version 9.x
   - PowerApps
 ms.author: matp
-manager: brycho
+manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-global-option-sets-for-common-data-service-using-solution-explorer"></a>使用解决方案资源管理器创建和编辑 Common Data Service 的全局选项集
+# <a name="create-and-edit-global-option-sets-for-common-data-service-using-solution-explorer"></a>使用解决方案资源管理器为 Common Data Service 创建和编辑全局选项集
 
 解决方案资源管理器为创建和编辑 Common Data Service 的全局选项集提供一种方法。
 
 [PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 <br />详细信息： 
-- [为 Common Data Service 创建和编辑全局选项集](create-edit-global-option-sets.md)
+- [创建和编辑 Common Data Service 的全局选项集](create-edit-global-option-sets.md)
 - [创建选项集](custom-picklists.md)
 
 ## <a name="open-solution-explorer"></a>打开解决方案资源管理器
@@ -81,7 +82,7 @@ search.app:
   
 ### <a name="see-also"></a>另请参阅
  
-[为 Common Data Service 创建和编辑全局选项集](create-edit-global-option-sets.md)<br />
+[创建和编辑 Common Data Service 的全局选项集](create-edit-global-option-sets.md)<br />
 [创建选项集](custom-picklists.md)<br />
 [创建和编辑字段](create-edit-fields.md)<br />
 [开发人员文档：自定义全局选项集](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)

@@ -1,27 +1,22 @@
 ---
-title: 在门户中呈现网站页眉和主导航栏 |MicrosoftDocs
-description: 用于在门户中呈现网站标题和主导航栏的说明和示例代码。
+title: 呈现门户的网站标题和主要导航栏 | MicrosoftDocs
+description: 在门户中呈现网站标题和主导航栏的说明和示例代码。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 3cfd5ced4da80cae70b4f51d81e30b0d909a81c3
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72974428"
+ms.reviewer: null
 ---
-# <a name="render-a-website-header-and-primary-navigation-bar"></a>呈现网站页眉和主导航栏
 
-使用门户设置、代码段、weblinks 和 sitemarkers 呈现网站标题和主导航栏。 [使用 web 模板 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] 存储源内容](store-content-web-templates.md)  
+# <a name="render-a-website-header-and-primary-navigation-bar"></a>呈现网站标题和主要导航栏
+
+使用门户设置、片段、网站链接和网站标记来呈现网站标题和主要导航栏。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [使用 Web 模板存储源内容](store-content-web-templates.md)  
 
 > [!Note]
-> 本主题中的示例仅在为应用程序禁用了跨请求标头缓存时才可正常工作。 默认情况下，它在7.0.0019 和更高版本中启用。 可以通过创建名为 Header/OutputCache/Enabled 的站点设置，并将其值设置为 false 来禁用此设置。
+> 仅在为应用程序禁用跨请求标题缓存时，本主题中的示例才能正常工作。 它在版本 7.0.0019 和更高版本中默认为已启用状态。 它可以通过创建名为 Header/OutputCache/Enabled 的网站设置并将其值设置为 false 进行禁用。
 
 
 ```xml
@@ -195,8 +190,8 @@ ms.locfileid: "72974428"
 
 ### <a name="see-also"></a>另请参阅
 
-[使用液体和 web 模板页模板创建自定义页面模板](create-custom-template.md)  
+[使用 Liquid 和 Web 模板页面模板创建自定义页面模板](create-custom-template.md)  
 [创建用于呈现 RSS 源的自定义页面模板](render-rss-custom-page-template.md)  
 [呈现与当前页关联的实体列表](render-entity-list-current-page.md)  
-[使用混合导航最多呈现三个级别的页层次结构](hybrid-navigation-render-page-hierachy.md)  
+[使用混合导航最多呈现页面层次结构的三个级别](hybrid-navigation-render-page-hierachy.md)  
 

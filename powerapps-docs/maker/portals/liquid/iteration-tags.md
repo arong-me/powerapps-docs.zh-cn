@@ -1,32 +1,27 @@
 ---
-title: 为门户使用迭代标记 |MicrosoftDocs
-description: 了解门户中可用的迭代标记
+title: 为门户使用迭代标记 | MicrosoftDocs
+description: 了解门户中的可用迭代标记
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 600ddb0ac6e016acf057e592ac638b4e07ddf8ba
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72976498"
+ms.reviewer: null
 ---
+
 # <a name="iteration-tags"></a>迭代标记
 
-迭代标记用于重复运行/呈现代码块。
+迭代标记用于重复运行/呈现一段代码。
 
-## <a name="for"></a>进行
+## <a name="for"></a>的
 
-重复执行代码块。 它最常用于循环访问数组或字典中的项。
+重复执行一段代码。 最常用于迭代数组或词典中的项目。
 
-在 for tag 块中， [forloop 对象](liquid-objects.md#forloop)可用。  
+在 for 标记块内，[forloop 对象](liquid-objects.md#forloop)可用。  
 
-**编写**
+**代码**
 
 ```
 {% for child_page in page.children %}
@@ -48,13 +43,13 @@ ms.locfileid: "72976498"
 
 ### <a name="parameters"></a>参数
 
-的的这些参数可以单独使用，也可以组合使用。
+for 的这些参数可以单独使用或组合使用。
 
-**上限**
+**限制**
 
-在给定的项数后退出循环。
+在指定项目数量后退出循环。
 
-**编写**
+**代码**
 
 ```
 {% for child_page in page.children limit:2 %}
@@ -72,11 +67,11 @@ ms.locfileid: "72976498"
 <a href=/parent/child2/>Child 2</a>
 ```
 
-**抵销**
+**offset**
 
-启动给定索引处的循环。
+在指定索引开始循环。
 
-**编写**
+**代码**
 
 ```
 {% for child_page in page.children offset:1 %}
@@ -94,11 +89,11 @@ ms.locfileid: "72976498"
 <a href=/parent/child3/>Child 3</a>
 ```
 
-**内**
+**range**
 
-定义要循环遍历的一系列数字。
+定义循环通过的数字范围。
 
-**编写**
+**代码**
 
 ```
 {% assign n = 4 %}
@@ -124,11 +119,11 @@ ms.locfileid: "72976498"
 10 11 12 14
 ```
 
-**反向**
+**reversed**
 
-从最后一个项开始，按相反的顺序循环访问循环。
+以颠倒的顺序循环，从最后一个项目开始。
 
-**编写**
+**代码**
 
 ```
 {% for child_page in page.children reversed %}
@@ -148,11 +143,11 @@ ms.locfileid: "72976498"
 <a href=/parent/child1/>Child 1</a>
 ```
 
-## <a name="cycle"></a>切换
+## <a name="cycle"></a>周期
 
-循环遍历一组字符串，并按它们作为参数传递的顺序输出它们。 每次调用循环时，将输出作为参数传递的下一个字符串。
+在一组字符串中循环，并以它们作为参数传递的顺序输出。 每次调用周期时，作为参数传递的下一个字符串将输出。
 
-**编写**
+**代码**
 
 ```
 {% for item in items %}
@@ -176,13 +171,13 @@ ms.locfileid: "72976498"
 <div class=green> Item five</div>
 ```
 
-## <a name="tablerow"></a>system.windows.documents.tablerow>
+## <a name="tablerow"></a>tablerow
 
-生成一个 HTML 表。 必须在打开 &lt;表中换行&gt; 并关闭 &lt;/table&gt; HTML 标记。
+生成 HTML 表。 必须在打开 &lt;table&gt; 和关闭 &lt;/table&gt; HTML 标记时换行。
 
-在 system.windows.documents.tablerow> 标记块中， [tablerowloop](liquid-objects.md#tablerowloop)可用。  
+在 tablerow 标记块内，[tablerowloop](liquid-objects.md#tablerowloop) 可用。  
 
-**编写**
+**代码**
 
 ```
 <table>
@@ -234,7 +229,7 @@ Child Page 4
 
 ### <a name="parameters"></a>参数
 
-Tablerowcan 的这些参数可以单独使用，也可以组合使用。
+tablerowcan 的这些参数可以单独使用或组合使用。
 
 **输出**
 
@@ -276,7 +271,7 @@ Child Page 4
 </table>
 ```
 
-**编写**
+**代码**
 
 ```
 <table>
@@ -290,15 +285,15 @@ Child Page 4
 </table>
 ```
 
-指示生成的表应具有多少行。
+指明生成的表应有多少行。
 
 **cols**
 
-**上限**
+**限制**
 
-在给定的项数后退出循环。
+在指定项目数量后退出循环。
 
-**编写**
+**代码**
 
 ```
 <table>
@@ -338,9 +333,9 @@ Child Page 2
 offset
 ```
 
-启动给定索引处的循环。
+在指定索引开始循环。
 
-**编写**
+**代码**
 
 ```
 <table>
@@ -378,11 +373,11 @@ Child Page 4
 </table>
 ```
 
-**内**
+**range**
 
-定义要循环遍历的一系列数字。
+定义循环通过的数字范围。
 
-**编写**
+**代码**
 
 ```
 <table>
@@ -398,7 +393,7 @@ Child Page 4
 
 ### <a name="see-also"></a>另请参阅
 
-
+[控制流标记](control-flow-tags.md)
+[变量标记](variable-tags.md)
 [模板标记](template-tags.md)
-[变量标记](variable-tags.md)的[控制流标记](control-flow-tags.md)
-[PowerApps common data service 实体标记](portals-entity-tags.md)
+[PowerApps Common Data Service 实体标记](portals-entity-tags.md)

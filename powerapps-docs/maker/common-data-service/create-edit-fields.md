@@ -15,6 +15,7 @@ ms.assetid: d88677fa-2caf-47b0-aec6-10a25a7ec9c3
 caps.latest.revision: 55
 ms.author: matp
 manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:
@@ -43,11 +44,11 @@ search.app:
 
 本主题中的信息将帮助您选择可以使用的设计器。 
 
-您应使用 PowerApps 门户来创建和编辑 Common Data Service 的字段，除非您需要满足下列任意一项要求：
+您应该使用 PowerApps 门户创建和编辑 Common Data Service 的字段，除非您需要满足下列要求中的任何一个：
 
 - 创建客户查找字段。 
    - 详细信息：[不同的查找类型](types-of-fields.md#different-types-of-lookups)
-- 在除 Common Data Service 默认解决方案以外的解决方案中创建字段。 
+- 在 Common Data Service 默认解决方案以外的解决方案中创建字段。 
    - 详细信息：[解决方案概述](solutions-overview.md)
 - 定义状态描述转换。 
    - 详细信息：[为案例或自定义实体定义状态描述转换](define-status-reason-transitions.md)

@@ -1,29 +1,30 @@
 ---
-title: 什么是 PowerApps 门户？ | Microsoft Docs
-description: 使用 PowerApps 设计和构建网站，使外部用户能够与 Common Data Service 中存储的数据进行交互。
+title: PowerApps 门户简介 | Microsoft Docs
+description: 使用 PowerApps 设计和构建可供外部用户与 Common Data Service 中存储的数据交互的网站。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 07/18/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 88650cba518ca5fe5d15f5e6bbaacc1a7d958b0f
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977786"
+ms.reviewer: null
 ---
-# <a name="what-is-powerapps-portals"></a>什么是 PowerApps 门户？
 
-PowerApps 决策者现在可以创建功能强大的全新体验：面向外部的网站，允许其组织外部的用户使用各种标识登录、创建和查看 Common Data Service 中的数据，甚至匿名浏览内容。 [Dynamics 365 门户](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/administer-manage-portal-dynamics-365)的全部功能（以前仅作为 dynamics 365 中模型驱动应用程序的外接程序提供）现已在 PowerApps 内完全独立提供。  
+# <a name="what-is-powerapps-portals"></a>PowerApps 门户简介
 
-这些功能具有改进的端到端体验，可用于快速创建网站并使用页面、布局和内容对其进行自定义。 决策者可以通过模板重复使用页面设计，添加窗体和视图，以显示来自 Common Data Service 的关键数据，并发布给用户。
+[!include[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
+> [!IMPORTANT]
+> - [!INCLUDE[cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
+> - 预览功能受到 Microsoft 支持部门有限支持，并且只能在所选地理区域使用。
+
+PowerApps 开发者现在可创建一种新的强大体验：面向外部的网站，可供用户在其组织外部使用各种身份登录，在 Common Data Service 中创建和查看数据，甚至以匿名方式浏览内容。 [Dynamics 365 门户](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/administer-manage-portal-dynamics-365)以前仅作为 Dynamics 365 中模型驱动应用程序的加载项提供，现在其所有功能在 PowerApps 内完全独立提供。  
+
+这些功能提供改进的端到端体验，可供开发者快速创建网站并通过页面、布局和内容对其进行自定义。 开发者可通过模板重复使用页面设计，添加窗体和视图以显示来自 Common Data Service 的关键数据，以及发布给用户。
 
 > [!NOTE]
-> 某些体验可能存在已知问题。 本文档后面的 "[已知问题](known-issues.md)" 一节中提到了这些问题。  
+> 由于 PowerApps 门户处于预览阶段，所以某些体验可能存在已知问题。 本文后面的[已知问题](known-issues.md)部分中介绍了这些问题。  
 
 
  

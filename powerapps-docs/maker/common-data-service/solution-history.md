@@ -6,10 +6,6 @@ ms.date: 05/19/2019
 ms.service: powerapps
 ms.custom: null
 ms.topic: article
-applies_to:
-  - Dynamics 365 for Customer Engagement (online)
-  - Dynamics 365 for Customer Engagement Version 9.x
-  - powerapps
 ms.assetid: null
 author: Mattp123
 ms.author: matp
@@ -39,7 +35,7 @@ search.app:
      > ![](media/solution-history-sitemap.png "解决方案历史记录区域")
 
      > [!NOTE]
-     > 要从 PowerApps 统一接口模型驱动应用进入**设置**区域，选择应用工具栏中的**设置** ![设置s](../model-driven-apps/media/powerapps-gear.png)，然后选择**高级设置**。 
+     > 要从 PowerApps 统一接口模型驱动应用进入**设置**区域，选择应用工具栏中的**设置** ![设置](../model-driven-apps/media/powerapps-gear.png)，然后选择**高级设置**。 
 
 2. 默认情况下，**自定义解决方案历史记录**视图显示。 以下视图在**解决方案历史记录**区域提供。 
 - **所有解决方案历史记录**。 显示内部系统和自定义解决方案的解决方案历史记录。 

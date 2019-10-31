@@ -26,7 +26,7 @@ search.app:
    
 # <a name="use-excel-and-word-templates"></a>使用 Excel 和 Word 模板
 
-您可以通过各种方式使用模板以加快您的工作和提高一致性。 通过 Excel 模板，您可以轻松地创建您的自定义分析并与组织中的其他人共享。 您可以使用 Word 模板创建使用 Customer Engagement 应用数据自动填充的标准化文档。
+您可以通过各种方式使用模板以加快您的工作和提高一致性。 通过 Excel 模板，您可以轻松地创建您的自定义分析并与组织中的其他人共享。 您可以使用 Word 模板创建使用 Common Data Service 数据自动填充的标准化文档。
 
 ## <a name="enable-and-work-with-excel-and-word-templates"></a>启用并使用 Excel 和 Word 模板工作
 
@@ -51,7 +51,7 @@ search.app:
    > [!div class="mx-imgBorder"] 
    > ![](media/document-templates.png "文档模板") 
 
-有关使用模板的信息，请参阅下面的 Customer Engagement 文档：
+有关使用模板的信息，请参阅下面的文档：
 
 - Word 模板：[使用 Word 模板创建标准化文档](https://docs.microsoft.com/dynamics365/customer-engagement/admin/using-word-templates-dynamics-365)
 - Excel 模板：[使用 Excel 模板分析和共享您的数据](https://docs.microsoft.com/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates)

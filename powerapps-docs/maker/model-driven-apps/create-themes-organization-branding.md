@@ -116,7 +116,7 @@ search.app:
 ### <a name="theme-contrast"></a>主题对比度  
  建议使用以下方法提供对比色：  
   
--   请仔细选择对比色。 Common Data Service 的现成默认主题拥有正确的对比度可以确保最佳使用。 为您的新主题使用类似的比率。  
+-   请仔细选择对比色。 Common Data Service 现成默认主题拥有正确的对比度可以确保最佳使用。 为您的新主题使用类似的比率。  
   
 -   对于高对比度模式，请使用默认的颜色设置。  
   
@@ -143,5 +143,5 @@ search.app:
   
 ## <a name="see-also"></a>另请参阅  
          
- [视频：Dynamics 365 Customer Engagement 中的主题](http://go.microsoft.com/fwlink/p/?LinkId=529568) [查询和编辑组织主题](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
+ [视频：主题](http://go.microsoft.com/fwlink/p/?LinkId=529568) [查询和编辑组织主题](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
 

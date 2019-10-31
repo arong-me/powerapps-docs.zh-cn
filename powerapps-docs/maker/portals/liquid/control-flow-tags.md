@@ -1,28 +1,23 @@
 ---
-title: 使用门户的控制流标记 |MicrosoftDocs
-description: 了解门户中可用的控制流标记。
+title: 为门户使用控制流标记 | MicrosoftDocs
+description: 了解门户中的可用控制流标记。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 77fcc7db0adf68cd6decbcc95e11d8e803761535
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975095"
+ms.reviewer: null
 ---
+
 # <a name="control-flow-tags"></a>控制流标记
 
-控制流标记确定应该执行的代码块以及应根据给定条件呈现的内容。 条件是使用可用的[液体运算符](liquid-operators.md)生成的，或者只是基于[给定值的真假或 falsehood 生成的](liquid-conditional-operators.md)。  
+控制流标记确定应执行哪个代码块，以及基于特定条件应呈现哪些内容ߝ。 条件使用可用的 [Liquid 运算符](liquid-operators.md)构建，或只是基于[给定值的真或假](liquid-conditional-operators.md)。  
 
-## <a name="if"></a>如果
+## <a name="if"></a>if
 
-如果满足给定条件，则执行代码块。
+如果指定条件匹配，执行代码块。
 
 ```
 {% if user.fullname == 'Dave Bowman' %}
@@ -32,9 +27,9 @@ Hello, Dave.
 {% endif %}
 ```
 
-## <a name="unless"></a>直到
+## <a name="unless"></a>unless
 
-例如，在**不**满足给定条件的情况下，它将执行代码块。
+与 if 相似，如果**不**满足指定条件，则不执行代码块。
 
 ```
 {% unless page.title == 'Home' %}
@@ -46,7 +41,7 @@ This is not the Home page.
 
 ## <a name="elsifelse"></a>elsif/else
 
-向 if 或 if 块添加更多条件。
+添加更多条件到 if 或 unless 块。
 
 ```
 {% if user.fullname == 'Dave Bowman' %}
@@ -66,7 +61,7 @@ Hello, stranger.
 
 ## <a name="casewhen"></a>case/when
 
-用于将变量与不同值进行比较的 switch 语句，并为每个值执行不同的代码块。
+将变量与不同值进行比较以及执行每个值的不同代码块的开关语句。
 
 ```
 {% case user.fullname %}
@@ -91,4 +86,4 @@ Hello, stranger.
 [迭代标记](iteration-tags.md)<br>
 [变量标记](variable-tags.md)<br>
 [模板标记](template-tags.md)<br>
-[PowerApps common data service 实体标记](portals-entity-tags.md)
+[PowerApps Common Data Service 实体标记](portals-entity-tags.md)

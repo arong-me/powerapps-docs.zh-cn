@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerApps 查询和可视化分层数据 | MicrosoftDocs
+title: 使用 PowerApps 查询及可视化分层数据 | MicrosoftDocs
 description: 了解如何查询和可视化相关的分层数据
 ms.custom: ''
 ms.date: 06/20/2018
@@ -37,7 +37,7 @@ search.app:
   
 <a name="BKMK_Querydata"></a>   
 ## <a name="query-hierarchical-data"></a>查询分层数据  
- 使用 Common Data Service，分层数据结构支持相关记录的自引用关系。 以前，要想查看分层数据，必须对相关记录进行迭代查询。 现在，只需一个步骤就可以按层次结构查询相关数据。 您将可以使用**Under**和**Not Under**逻辑查询记录。 **Under**和**Not Under**分层操作符在“高级查找”和工作流编辑中显示。 有关如何使用这些运算符的详细信息，请参阅[配置工作流步骤](/flow/configure-workflow-steps)。 有关高级查找的更多信息，请查看[创建、编辑或保存高级查找搜索](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)  
+ 使用 Common Data Service 时，分层数据结构支持相关记录的自我参照的关系。 以前，要想查看分层数据，必须对相关记录进行迭代查询。 现在，只需一个步骤就可以按层次结构查询相关数据。 您将可以使用**Under**和**Not Under**逻辑查询记录。 **Under**和**Not Under**分层操作符在“高级查找”和工作流编辑中显示。 有关如何使用这些运算符的详细信息，请参阅[配置工作流步骤](/flow/configure-workflow-steps)。 有关高级查找的更多信息，请查看[创建、编辑或保存高级查找搜索](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)  
   
  以下示例说明查询层次结构的不同方案：  
   
@@ -86,7 +86,7 @@ search.app:
   
 > [!TIP]
 >  如果可以为层次结构启用实体：  
->  在解决方案资源管理器中，展开您所需的实体。 您会看到称为**层次结构设置**的实体组件。 无法为层次结构启用的实体不具有此组件，Dynamics 365 customer engagement 销售区域实体除外。 尽管**层次结构设置**为销售区域实体显示，但不能为层次结构启用实体。  
+>  在解决方案资源管理器中，展开您所需的实体。 您会看到称为**层次结构设置**的实体组件。 无法为层次结构启用的实体不具有此组件，Dynamics 365 Sales 区域实体除外。 尽管**层次结构设置**为销售区域实体显示，但不能为层次结构启用实体。  
   
  创建可视化项时切记：  
   

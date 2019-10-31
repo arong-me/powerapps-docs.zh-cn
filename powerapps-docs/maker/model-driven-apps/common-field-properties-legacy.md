@@ -1,6 +1,6 @@
 ---
 title: PowerApps 中模型驱动应用程序的通用字段属性 | MicrosoftDocs
-description: 了解 Dynamics 365 for Customer Engagement 中主窗体的常见字段属性
+description: 了解主窗体的通用字段属性
 Keywords: 主窗体; 通用字段属性; Dynamics 365
 author: Mattp123
 ms.author: matp

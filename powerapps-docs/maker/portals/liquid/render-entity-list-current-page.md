@@ -1,24 +1,19 @@
 ---
-title: 在门户中呈现与当前页关联的实体列表 |MicrosoftDocs
+title: 在门户中呈现与当前页关联的实体列表的示例代码 | MicrosoftDocs
 description: 用于在门户中呈现与当前页关联的实体列表的示例代码。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: e31f83efb7cedfa42b6c4c9e7da83280b261d9c8
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72974865"
+ms.reviewer: null
 ---
+
 # <a name="render-the-entity-list-associated-with-the-current-page"></a>呈现与当前页关联的实体列表
 
-将与当前页关联的实体列表作为分页的可排序表进行呈现。 使用[entitylist](liquid-objects.md#entitylist)、 [entityview](liquid-objects.md#entityview)、 [PowerApps Common Data Service 实体标记](portals-entity-tags.md)、[页](liquid-objects.md#page)和[请求](liquid-objects.md#request)参数，并包括搜索和多个视图选择。  
+呈现与当前页关联的实体列表，作为分页的、可进行排序的表。 使用 [entitylist](liquid-objects.md#entitylist)、[entityview](liquid-objects.md#entityview)、[PowerApps Common Data Service  实体标记](portals-entity-tags.md)、[页面](liquid-objects.md#page)和[请求](liquid-objects.md#request)参数，并包含搜索和多个视图选择。  
 
 ```xml
 {% entitylist id:page.adx_entitylist.id %}
@@ -242,7 +237,7 @@ ms.locfileid: "72974865"
 
 ### <a name="see-also"></a>另请参阅
 
-[使用液体和 web 模板页模板创建自定义页面模板](create-custom-template.md)  
+[使用 Liquid 和 Web 模板页面模板创建自定义页面模板](create-custom-template.md)  
 [创建用于呈现 RSS 源的自定义页面模板](render-rss-custom-page-template.md)  
-[呈现网站页眉和主导航栏](render-site-header-primary-navigation.md)  
-[使用混合导航最多呈现三个级别的页层次结构](hybrid-navigation-render-page-hierachy.md)
+[呈现网站标题和主要导航栏](render-site-header-primary-navigation.md)  
+[使用混合导航最多呈现页面层次结构的三个级别](hybrid-navigation-render-page-hierachy.md)

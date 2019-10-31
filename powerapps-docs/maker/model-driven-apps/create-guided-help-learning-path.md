@@ -1,12 +1,10 @@
 ---
-title: 创建自己的引导式帮助（学习路径）（Dynamics 365 for Customer Engagement 应用）| MicrosoftDocs
+title: 创建您自己的引导式帮助（学习路径）（模型驱动应用）| MicrosoftDocs
 description: ''
 keywords: null
 ms.date: 04/30/2019
-ms.service: dynamics-365
+ms.service: powerapps
 ms.topic: article
-applies_to:
-  - Dynamics 365 for Customer Engagement (online)
 ms.assetid: 8ee3c432-5f76-4086-b9cc-6cd467ae056b
 author: Mattp123
 ms.author: matp
@@ -15,7 +13,7 @@ topic-status: Drafting
 search.audienceType:
   - customizer
 search.app:
-  - D365CE
+  - PowerApps
 ---
 
 # <a name="create-guided-help-learning-path-for-your-app"></a>为您的应用创建引导式帮助（学习路径）
@@ -32,7 +30,7 @@ search.app:
  有关可自定义帮助的更多信息，请参阅[自定义帮助体验](https://technet.microsoft.com/library/dn832079.aspx)。  
 
 <a name="Avail"></a>   
-## <a name="prerequisites"></a>必备条件   
+## <a name="prerequisites"></a>必备条件  
 
  若要创建学习路径内容，必须：  
 
@@ -100,10 +98,11 @@ search.app:
  在您发布学习路径内容时，可以使用“发布环境”来控制将内容发布到哪些与租户关联的组织。 若要发布不同内容到不同组织，创建多个发布环境，将每个组织添加到其中一个或多个组。  
 
 <a name="SecurityRoles"></a>   
-## <a name="learning-path-and-dynamics-365-for-customer-engagement-apps-security-roles"></a>学习路径和 Dynamics 365 for Customer Engagement 应用安全角色  
- [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] 使用安全角色来确定当用户在 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] 中选择“帮助”按钮、导航到页面或执行定义的操作时，将显示哪些学习路径内容。  
+## <a name="learning-path-and-common-data-service-security-roles"></a>学习路径和 Common Data Service 安全角色 
+ 
+ Common Data Service 使用安全角色来确定当用户在 Common Data Service 中选择“帮助”按钮、导航到页面或执行定义的操作时，将显示哪些学习路径内容。  
 
- 学习路径中使用的角色与 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] 组织中为安全和数据访问使用的角色相同，但是，您可以为任何或所有 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] 安全角色创建学习路径内容。  通常，您希望学习路径设计器中的安全角色与 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] 实例匹配。 但是，您可以通过从设计器中隐藏某些 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] 安全角色来简化设计器中的用户界面。 如果您稍后决定要使用从学习路径中删除的安全角色，则可以同步学习路径和 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] 之间的角色。  
+ 学习路径中使用的角色与 Common Data Service 组织中为安全和数据访问使用的角色相同，但是，您可以为任何或所有 Common Data Service 安全角色创建学习路径内容。  通常，您希望学习路径设计器中的安全角色与 Common Data Service 环境匹配。 但是，您可以通过从设计器中隐藏某些 Common Data Service 安全角色来简化设计器中的用户界面。 如果您稍后决定要使用从学习路径中删除的安全角色，则可以同步学习路径和 Common Data Service 之间的角色。  
 
  如果您的组织具有多个业务部门，安全角色可以有上级/下级关系。 仅根业务部门的安全角色同步。  
 
@@ -115,7 +114,7 @@ search.app:
 
  学习路径中包含的每个角色都具有数值。 列表中的第一个角色具有最高优先级，之后的角色具有较低优先级。 当用户被分派了触发学习路径内容显示的角色时，用户将看到该内容，即使该用户已分派了与内容不相关的优先级更低的角色。 例如，如果为用户分派了优先级 1 和优先级 20 的角色，用户将看到仅为优先级 1 角色定义的学习路径内容。  
 
- 如果在同一 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] 页或屏幕为不同角色创建不同内容，用户将看到与更高优先级的角色关联的内容。  
+ 如果在同一模型驱动应用页或屏幕为不同角色创建不同内容，用户将看到与更高优先级的角色关联的内容。  
 
 <a name="ManageRoles"></a>   
 ### <a name="manage-security-roles-and-precedence"></a>管理安全角色和优先级  
@@ -124,13 +123,13 @@ search.app:
 <a name="ConfigureRoles"></a>   
 #### <a name="configure-security-roles"></a>配置安全角色  
 
-1. 使用具有学习路径创作权限的帐户登录到 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)]。  
+1. 使用具有学习路径创作权限的帐户登录到 PowerApps。  
 
 2. 打开**内容库**。  
 
 3. 在屏幕顶部，选择**配置**。  
 
-4. 若要将安全角色与您的 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] 安全角色同步，选择**同步角色**。  
+4. 若要将安全角色与您的 Common Data Service 安全角色同步，选择**同步角色**。  
 
 5. 若要设置使用学习路径的角色的优先级顺序，使用向上或向下箭头在列表中将角色移到更高或更低位置。  
 
@@ -154,7 +153,7 @@ search.app:
 
 1. 登录到 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)]。  
 
-2. 从浏览器中显示的 URL 复制 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] 组织的服务器名称，如 *<https://contososales.crm.dynamics.com/>*。  
+2. 从浏览器中显示的 URL 复制 Common Data Service 组织的服务器名称，如 *<https://contososales.crm.dynamics.com/>*。  
 
     确保 .com 后包含斜杠 (/)。  
 
@@ -196,7 +195,7 @@ search.app:
 
 -   在网站地图中选择**培训**磁贴，然后选择**内容库**。  
 
-     ![Dynamics 365 for Customer Engagement 站点地图上的“内容库”图标](media/lp-sitemap-content-library.png "Dynamics 365 for Customer Engagement 站点地图上的“内容库”图标")  
+     ![模型驱动应用站点地图上的内容库图标](media/lp-sitemap-content-library.png "模型驱动应用站点地图上的内容库图标")  
 
 **若要从移动应用程序界面模拟器打开内容库：**  
 
@@ -278,7 +277,7 @@ search.app:
    |          **外形规格**           |                                                                                                                                                                       显示的外形规格取决于要为其创建内容的界面。 如果在使用 Web 客户端界面，则显示**台式机**和**平板电脑**。 如果是为 Web 客户端选择的，则**平板电脑**指的是在平板电脑设备上运行的浏览器，而不是移动应用程序。<br /><br /> 如果在为移动应用程序界面创建控件，将显示**平板电脑**。 这指的是运行 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] 移动应用程序的设备，但仅在平板电脑上才支持。<br /><br /> 如果在使用交互式服务中心，则显示**台式机**。 **重要信息：**[!INCLUDE[pn_crm_shortest](../../includes/pn-dyn-365-phones.md)] 中不支持学习路径。                                                                                                                                                                        |
    |     **以下情况下打开向导型任务:**     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                              选择当**页面加载**或在边栏中**单击了链接**时是否要显示向导型任务。                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
    |        **生命周期阶段**         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        此设置仅供内部使用。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-   |   **Dynamics 365 for Customer Engagement 应用安全角色**   |                                                                                                                                                                                                                                                                                                                                                                                                  选择想要为其显示向导型任务的安全角色。 您可以选择任意数量的角色。 如果用户被分派了多个角色，向导型任务将仅为最高优先级的角色显示，如本主题之前所述。                                                                                                                                                                                                                                                                                                                                                                                                   |
+   |   **Common Data Service 安全角色**   |                                                                                                                                                                                                                                                                                                                                                                                                  选择想要为其显示向导型任务的安全角色。 您可以选择任意数量的角色。 如果用户被分派了多个角色，向导型任务将仅为最高优先级的角色显示，如本主题之前所述。                                                                                                                                                                                                                                                                                                                                                                                                   |
    |             **状态**             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                显示向导型任务的状态。 状态仍旧为**草稿**，直到您将其发布。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
    |        **高级选项**        | 保存向导型任务之后，此选项才可用。 以下设置在**高级选项**下可用：<ul><li>**制作此错误向导型任务**：如果要仅在其他向导型任务有错时才显示此向导型任务，请选中此复选框。</li><li>**支持的语言**：选择此向导型任务的语言，以及用于导入和导出的语言。</li><li>**作者**：更改为此向导型任务定义的作者。</li><li>**标记**：添加或删除应用到此向导型任务的标记。 使用标记可以使在内容库中搜索内容或分类内容更容易。</li></ul><br />您还可以在**发布信息**下设置以下信息：<ul><li>**应用程序版本**：设置与内容关联的 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] 版本。</li><li>**版本**：设置您创建的内容的版本。</li><li>**创作组**：为您创建的内容设置创作组。</li><li>**发布组**：选择该内容的发布组。</li></ul> |
 
@@ -375,7 +374,7 @@ search.app:
    |         **外形规格**         |                                                  显示的外形规格取决于要为其创建内容的界面。 如果在使用 Web 客户端界面，则显示**台式机**和**平板电脑**。 如果是为 Web 客户端选择的，则**平板电脑**指的是在平板电脑设备上运行的浏览器，而不是移动应用程序。<br /><br /> 如果在为移动应用程序界面创建控件，将显示**平板电脑**。 这指的是运行 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] 移动应用程序的设备，但仅在平板电脑上才支持。<br /><br /> 如果在使用交互式服务中心，则显示**台式机**。                                                  |
    |     **以下情况下打开边栏:**      |                                                                                                                                                                                                                                                                                               选择当页面加载或用户选择页面上的链接或按钮时是否要显示边栏。                                                                                                                                                                                                                                                                                               |
    |       **生命周期阶段**       |                                                                                                                                                                                                                                                                                                                                              仅供内部使用。                                                                                                                                                                                                                                                                                                                                               |
-   | **Dynamics 365 for Customer Engagement 应用安全角色** |                                                                                                                                                                                                                  选择想要向用户显示的边栏的一个或多个角色。 您可以选择任意数量的角色。 如果用户被分派了多个角色，边栏将仅为最高优先级的角色显示，如本主题之前所述。                                                                                                                                                                                                                   |
+   | **Common Data Service 安全角色** |                                                                                                                                                                                                                  选择想要向用户显示的边栏的一个或多个角色。 您可以选择任意数量的角色。 如果用户被分派了多个角色，边栏将仅为最高优先级的角色显示，如本主题之前所述。                                                                                                                                                                                                                   |
    |          **模板**           |                                                                                                                                                                                                                                                                                       选择要用于新边栏的模板，**单列**或**两列**。 默认模板是单列边栏。                                                                                                                                                                                                                                                                                        |
    |           **状态**            |                                                                                                                                                                                                                                                                                                              显示边栏的状态。 状态仍旧为**草稿**，直到您发布边栏。                                                                                                                                                                                                                                                                                                              |
    |      **高级选项**       |                                                                         此选项不可用，直到您保存边栏。 以下**高级选项**设置可用：<ul><li>**禁用边栏页眉**</li><li>**禁用边栏标题**</li><li>**禁用边栏页脚**</li><li>**作者**：更改为边栏定义的作者。</li><li>**标记**：添加或删除应用到边栏的标记。 使用标记可以使在内容库中搜索内容或分类内容更容易。</li><li>**支持的语言**：选择此边栏的语言，以及用于导入和导出的语言。</li></ul>                                                                         |

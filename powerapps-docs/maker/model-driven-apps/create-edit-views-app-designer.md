@@ -176,9 +176,9 @@ search.app:
 
 
 ## <a name="community-tools"></a>社区工具
-**View Layout Replicator** 和**视图设计器**是 XrmToolbox 社区为 Dynamics 365 Customer Engagement 开发的工具。
+**View Layout Replicator** 和 **View Designer** 是 XrmToolbox 社区为 PowerApps 开发的工具。
 
-详细信息：[开发人员工具](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools)。
+详细信息：[开发人员工具](/powerapps/developer/common-data-service/developer-tools)。
 
 > [!NOTE]
 > 这些工具由 XrmToolBox 提供，不受 Microsoft 支持。 如果有与该工具相关的疑问，请联系发布者。 详细信息：[XrmToolBox](https://www.xrmtoolbox.com/)。 

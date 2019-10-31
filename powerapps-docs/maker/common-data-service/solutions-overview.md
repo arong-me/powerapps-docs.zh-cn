@@ -1,8 +1,8 @@
 ---
-title: 在 PowerApps 中处理解决方案 | MicrosoftDocs
+title: 在 PowerApps 中使用解决方案 | MicrosoftDocs
 description: 了解如何分发解决方案
 ms.custom: ''
-ms.date: 05/28/2019
+ms.date: 09/30/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -26,7 +26,7 @@ search.app:
    
 # <a name="solutions-overview"></a>解决方案概述  
 
-  在 PowerApps 中，解决方案被用来将应用和组件从一个环境传输到另一个环境，或将一组自定义项应用到现有应用。 解决方案可以包含一个或多个应用以及其他组件，如实体、选项集等。您可以从 [AppSource](https://appsource.microsoft.com/) 或从独立软件供应商 (ISV) 获取解决方案。
+  在 PowerApps 中，解决方案被用来将应用和组件从一个环境传输到另一个环境，或将一组自定义项应用到现有应用。 一个解决方案中可以包含一个或多个应用程序，以及其他组件，如站点地图、实体、流程、Web 资源、选项集等。  可从 [AppSource](https://appsource.microsoft.com/) 或独立软件供应商 (ISV) 获取解决方案。
   
 详细信息：[白皮书：解决方案生命周期管理](https://www.microsoft.com/en-us/download/details.aspx?id=57777)  
   
@@ -81,7 +81,9 @@ search.app:
 -   插件程序集  
   
 -   进程  
-  
+
+-   报表  
+
 -   SDK 消息处理步骤  
   
 -   安全角色  
@@ -112,8 +114,6 @@ search.app:
 >  请仅在需要将所有组件添加到您的环境并覆盖所有现有的自定义项时，安装非托管解决方案。  
   
  即使您不打算分发您的应用或自定义项，也可能需要创建并使用非托管解决方案，以便拥有一个仅包含您已经自定义的那部分应用程序的单独视图。 只要进行了自定义，就要将其添加到所创建的非托管解决方案。  
-  
- 您只能将**默认解决方案**导出为非托管解决方案。  
   
  在创建**托管**解决方案时，要在导出解决时选择**托管**选项。 如果您创建托管解决方案，则无法将其重新导入到用于创建该解决方案的同一个环境。 您只能将其导入到其他环境中。  
   

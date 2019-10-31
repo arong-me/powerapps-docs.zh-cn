@@ -12,7 +12,8 @@ applies_to:
   - Dynamics 365 Version 9.x
   - PowerApps
 ms.author: matp
-manager: brycho
+manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:
@@ -49,11 +50,11 @@ Common Data Service 中已存在一些已经配置的标准连接角色。 若�
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 
-您可以在**设置**区域中查看的多数连接角色在*内部***默认解决方案**中定义（不要与 **Common Data Services 默认解决方案**混淆）。 此内部**默认解决方案**包含系统中的所有自定义项。 若要查看**默认解决方案**，选择**所有解决方案 - 内部**视图。
+您可以在**设置**区域中查看的多数连接角色在*内部***默认解决方案中定义**（不要与 **Common Data Service 默认解决方案**混淆）。 此内部**默认解决方案**包含系统中的所有自定义项。 若要查看**默认解决方案**，选择**所有解决方案 - 内部**视图。
 
 ## <a name="add-connection-roles-to-a-solution"></a>向解决方案添加连接角色
 
-通常不建议在内部**默认解决方案**中编辑组件。 在 **Common Data Services 默认解决方案**或您创建的要使用的任何解决方案中，您可以使用**添加现有**命令将任何默认连接角色加入您的解决方案。
+通常不建议在内部**默认解决方案**中编辑组件。 在 **Common Data Service 默认解决方案**或您创建的要使用的任何解决方案中，您可以使用**添加现有**命令将任何默认连接角色加入您的解决方案。
 
 ![添加现有连接角色](media/add-existing-connection-role.png)
 
@@ -125,7 +126,7 @@ Common Data Service 中已存在一些已经配置的标准连接角色。 若�
 ### <a name="see-also"></a>另请参阅
 <!-- This is in the basics guide. It needs to be migrated -->
 [创建连接以定义和查看记录之间的关系](/dynamics365/customer-engagement/basics/create-connections-view-relationships-between-records)<br />
-[为 Common Data Service 创建和编辑全局选项集（选择列表）](create-edit-global-option-sets.md)<br />
+[创建和编辑 Common Data Service 的全局选项集（选择列表）](create-edit-global-option-sets.md)<br />
 [创建和编辑实体之间的关系](create-edit-entity-relationships.md)
 
 

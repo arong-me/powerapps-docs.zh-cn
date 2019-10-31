@@ -2,7 +2,7 @@
 title: 统一接口 Playbook | MicrosoftDocs
 description: 了解如何规划和执行从旧 Web 客户端到统一接口的转换
 ms.custom: ''
-ms.date: 07/24/2019
+ms.date: 08/29/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -40,4 +40,6 @@ search.app:
 |[统一接口 Playbook 概述](http://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/dynamics365unifiedinterfaceplaybook.pdf)      |   PDF      |
 |[第 1 章：启动](http://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch1-initiate.pptx)     |  PowerPoint       |
 |[第 2 章：探索](http://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch-2-explore.pptx)     |  PowerPoint       |
+| [第 3 章：转换](https://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch3-transition.pptx)|  PowerPoint     |
+| [第 4 章：优化](https://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch4-optimize.pptx)  | PowerPoint  |
 

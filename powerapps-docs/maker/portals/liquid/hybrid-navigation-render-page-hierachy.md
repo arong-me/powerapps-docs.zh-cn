@@ -1,28 +1,23 @@
 ---
-title: 使用混合导航来呈现门户的页面层次结构 |MicrosoftDocs
-description: 说明如何使用混合导航来呈现门户的页层次结构。
+title: 使用混合导航呈现门户的页面层次结构 | MicrosoftDocs
+description: 有关如何使用混合导航呈现门户的页面层次结构的说明。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: aace949be3cc191af5edd95c461e422b9c3217f5
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975026"
+ms.reviewer: null
 ---
-# <a name="render-up-to-three-levels-of-page-hierarchy-by-using-hybrid-navigation"></a>使用混合导航最多呈现三个级别的页层次结构
 
-此示例基于门户网站图呈现类型的混合导航，该导航可呈现最多三个级别的页层次结构。 此组件的规则如下：
+# <a name="render-up-to-three-levels-of-page-hierarchy-by-using-hybrid-navigation"></a>使用混合导航最多呈现页面层次结构的三个级别
 
-* 当前页的上级页将显示回主页（或由可选深度\_offset 参数指定的最大深度）。 
-* 如果当前页有子级，则显示这些子页面。
-* 如果当前页没有任何子级，则显示当前页的同级。
+此示例基于门户站点地图呈现最多呈现页面层次结构三个级别的混合导航类型。 此组件的规则是：
+
+* 当前页面的上级页面将显示，返回主页（或返回可选 depth\_offset 参数指定的最大深度）。 
+* 如果当前页具有子页，这些子页将显示。
+* 如果当前页没有子页，当前页的同级页将显示。
 
 ```xml
 {% assign depth_offset = depth_offset | default: 0 %}
@@ -253,7 +248,7 @@ ms.locfileid: "72975026"
 ```
 ### <a name="see-also"></a>另请参阅
 
-[使用液体和 web 模板页模板创建自定义页面模板](create-custom-template.md)  
+[使用 Liquid 和 Web 模板页面模板创建自定义页面模板](create-custom-template.md)  
 [创建用于呈现 RSS 源的自定义页面模板](render-rss-custom-page-template.md)  
 [呈现与当前页关联的实体列表](render-entity-list-current-page.md)  
-[呈现网站页眉和主导航栏](render-site-header-primary-navigation.md)  
+[呈现网站标题和主要导航栏](render-site-header-primary-navigation.md)  

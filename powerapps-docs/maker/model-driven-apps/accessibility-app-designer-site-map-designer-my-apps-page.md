@@ -19,7 +19,7 @@ search.app:
   - D365CE
 ---
 
-# <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>PowerApps 应用程序设计器、站点地图和“我的应用”页面中的辅助功能
+# <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>PowerApps 应用程序设计器、站点地图和“我的应用程序”页面中的辅助功能
 
 Microsoft 致力于使每个人都能轻松使用其产品和服务。 详细信息：[Microsoft 的辅助功能](http://www.microsoft.com/enable/default.aspx)  
  
@@ -106,4 +106,4 @@ PowerApps 提供键盘快捷方式以解决灵活性有限或行动不便人士�
 
 ## <a name="see-also"></a>另请参阅
 
-[在 Dynamics 365 Customer Engagement 应用程序中使用键盘快捷方式](https://docs.microsoft.com/dynamics365/customer-engagement/basics/keyboard-shortcuts)
+[在 PowerApps 中使用键盘快捷方式](/powerapps/user/keyboard-shortcuts)

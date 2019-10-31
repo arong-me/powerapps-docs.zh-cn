@@ -120,7 +120,7 @@ search.app:
             }
     }
 
-前一个表达式的目标部分标识应用筛选器的表和列。 运算符标识确定从 PowerApps 模型驱动型应用程序传递的数据的逻辑和值。 若要以通用方式参数化，通过使用别名构造值。 在上一个表达式中，传递了客户的 **firstname** 和 **lastname**，二者都在 Power BI 报表中的**客户名称**列搜索。 请注意 **firstname** 和 **lastname** 是客户实体的属性的唯一名称，其值将在此处传递。 
+前一个表达式的目标部分标识应用筛选器的表和列。 运算符标识确定从 PowerApps 模型驱动型应用传递的数据的逻辑和值。 若要以通用方式参数化，通过使用别名构造值。 在上一个表达式中，传递了客户的 **firstname** 和 **lastname**，二者都在 Power BI 报表中的**客户名称**列搜索。 请注意 **firstname** 和 **lastname** 是客户实体的属性的唯一名称，其值将在此处传递。 
 
 可以通过查看[构造筛选器](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#contructingfilters)中的示例并为 $schema 和 filterType 提供适当的值来创建更复杂的筛选器表达式。 请确保使用 *\"* 转义筛选器中的每个文字，以便可以正确生成 JSON。
 
@@ -146,8 +146,8 @@ search.app:
 
 ### <a name="see-also"></a>另请参阅
 
-[在PowerApps 模型驱动的个人仪表板中嵌入 Power BI 仪表板](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
+[在 PowerApps 模型驱动的个人仪表板中嵌入 Power BI 仪表板](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
 
-[将 Power BI 与 Dynamics 365 for Customer Engagement 结合使用](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi)
+[将 Power BI 与 Dynamics 365 应用结合使用](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi)
 
 [导入、更新和导出解决方案](../common-data-service/import-update-export-solutions.md)

@@ -3,7 +3,7 @@ title: 在 PowerApps 中打开模型驱动应用程序窗体编辑器 | Microsof
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -55,9 +55,9 @@ search.app:
   
 4.  选择**窗体编辑器**。  
 
-## <a name="access-the-form-editor-from-within-dynamics-365-customer-engagement"></a>从 Dynamics 365 customer engagement 中访问窗体编辑器
+## <a name="access-the-form-editor-from-within-app"></a>从站点内部访问窗体编辑器
   
- 依据实体，您可通过命令栏或功能区访问 Dynamics 365 customer engagement 中的窗体编辑器。 这两种方法都将在默认解决方案的上下文中打开窗体。 
+ 依据实体，您可通过命令栏或功能区访问窗体编辑器。 这两种方法都将在默认解决方案的上下文中打开窗体。 
 
 ## <a name="access-the-form-editor-for-an-unmanaged-solution"></a>访问非托管解决方案的窗体编辑器  
   

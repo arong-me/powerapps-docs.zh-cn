@@ -8,10 +8,6 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
 author: Mattp123
 ms.assetid: 15d123e0-b604-45dd-ab34-0b37787a04bb
 caps.latest.revision: 33
@@ -30,7 +26,7 @@ search.app:
   
 - **停用主窗体**  
   
-     可为主窗体设置活动或不活动状态。 加入此功能的主要目的是管理 Dynamics 365 customer engagement 组织升级时包括的新窗体，但也可以使用它来阻止用户使用任何主窗体。   
+     可为主窗体设置活动或不活动状态。 加入此功能的主要目的是管理 Common Data Service 环境升级时包括的新窗体，但也可以使用它来阻止用户使用任何主窗体。   
   
 - **将安全角色分派给窗体**  
   
@@ -74,7 +70,7 @@ search.app:
 客户端 API 窗体上下文 (formContext) 提供对窗体或窗体上的项目的引用，如快速视图控件或可编辑网格中的行，当前代码根据此引用执行。 详细信息：[客户端 API 窗体上下文](/dynamics365/customer-engagement/developer/clientapi/clientapi-form-context)
 
 > [!IMPORTANT]
-> 在 Dynamics 365 for Customer Engagement 应用版本 9.0 中，Xrm.Page 对象[已弃用](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated)，您应该使用在执行上下文对象中传递的 [getFormContext](/dynamics365/customer-engagement/developer/clientapi/reference/executioncontext/getformcontext) 方法返回对相应的窗体或窗体上的项目的引用。
+> Xrm.Page 对象[已弃用](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated)，您应该使用在执行上下文对象中传递的 [getFormContext](/powerapps/developer/model-driven-apps/clientapi/reference/executioncontext/getformcontext) 方法返回对相应的窗体或窗体上的项目的引用。
 <!-- 
  Finally, in the web application it is possible, but not recommended, for a developer to use scripts in the form Onload event to use the [Xrm.Page.ui.formSelector.items collection](http://go.microsoft.com/fwlink/p/?LinkID=513300) to query available forms and use the navigate method to direct users to a specific form. Remember that the [navigate method](http://go.microsoft.com/fwlink/p/?LinkID=513301) will cause the form to load again (and the Onload event to occur again). Your logic in the event handler should always check some condition before you use the navigate method to avoid an endless loop or unnecessarily restrict users options to navigate between forms.  
   

@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中创建或编辑模型驱动应用程序 Web 资源 | MicrosoftDocs
+title: 在 PowerApps 中创建或编辑模型驱动应用 Web 资源 | MicrosoftDocs
 description: 了解如何创建或编辑 Web 资源
 ms.custom: ''
 ms.date: 06/02/2018
@@ -28,7 +28,7 @@ search.app:
 开发人员通常使用 Web 资源用于扩展应用，这些应用程序使用 Web 开发中用到的文件。 应用用户可能需要管理由开发人员或设计器提供的 Web 资源。  
 
 > [!TIP]
-> 有关 Web 资源的深入讨论，请参阅[开发人员文档：Customer Engagement 的 Web 资源](/dynamics365/customer-engagement/developer/web-resources)。<br /> 有关 PowerApps 中添加的 Web 资源依赖项的信息，请参阅[开发人员文档：Web 资源依赖项](/dynamics365/customer-engagement/developer/web-resources)。
+> 有关 Web 资源的深入讨论，请参阅[开发人员文档：模型驱动应用的 Web 资源](/powerapps/developer/model-driven-apps/web-resources)。<br /> 有关 PowerApps 中添加的 Web 资源依赖项的信息，请参阅[开发人员文档：Web 资源依赖项](/dynamics365/customer-engagement/developer/web-resources)。
    
 <a name="BKMK_WhatAreWebResources"></a>
 
@@ -74,7 +74,7 @@ Web 资源是存储在系统中的虚拟文件。 每个 Web 资源都有一个�
 |**类型**|*必需*。 这是 Web 资源的类型。 保存 Web 资源之后，就不能对此进行更改。|  
 |**文本编辑器**|当 Web 资源类型表示一种文本文件时，请选择此按钮打开一个页面，使用文本编辑器编辑其内容。<br />详细信息：[正确使用文本编辑器](#use-the-text-editor-appropriately)| 
 |**语言**|允许选择一种语言。 此选项仅标记存储 Web 资源数据的记录。 它不更改 Web 资源的行为。|  
-|**上载文件**|选择**浏览…** 按钮选择要上载为 Web 资源的文件。<br />&bull; 在创建新 Web 资源或要覆盖现有的 Web 资源时，可上载文件。<br />&bull; 文件的文件名扩展必须与允许使用的扩展相匹配。<br />&bull;默认情况下，可以上载为 Web 资源的最大文件大小为 5MB。 可使用**系统设置** > **电子邮件**选项卡 > **设置附件的文件大小限制**设置来在 Dynamics 365 customer engagement 中修改此值。 更多信息：[“系统设置”对话框 -“电子邮件”选项卡](https://docs.microsoft.com/dynamics365/customer-engagement/admin/system-settings-dialog-box-email-tab) |  
+|**上载文件**|选择**浏览…** 按钮选择要上载为 Web 资源的文件。<br />&bull; 在创建新 Web 资源或要覆盖现有的 Web 资源时，可上载文件。<br />&bull; 文件的文件名扩展必须与允许使用的扩展相匹配。<br />&bull;默认情况下，可以上载为 Web 资源的最大文件大小为 5MB。 可使用**系统设置** > **电子邮件**选项卡 > **设置附件的文件大小限制**设置来修改此值。 更多信息：[“系统设置”对话框 -“电子邮件”选项卡](https://docs.microsoft.com/dynamics365/customer-engagement/admin/system-settings-dialog-box-email-tab) |  
 |**URL**|保持 Web 资源之后，此处会显示访问该 Web 资源的 URL。 选择该链接，在浏览器中查看该 Web 资源。|  
   
 添加了您的更改之后，选择**保存**，然后选择**发布**。  
@@ -136,4 +136,4 @@ Web 资源的应用程序中提供的文本编辑器只能用于简单的文本�
 [Web 资源属性](web-resource-properties-legacy.md) <br /> 
 [创建和设计窗体](create-design-forms.md) <br />
 [了解模型驱动的应用程序组件](model-driven-app-components.md) <br /> 
-[开发人员文档：Customer Engagement 的 Web 资源](/dynamics365/customer-engagement/developer/web-resources)
+[开发人员文档：模型驱动应用的 Web 资源](/powerapps/developer/model-driven-apps/web-resources)

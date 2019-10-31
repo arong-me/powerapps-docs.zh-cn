@@ -80,7 +80,7 @@ search.app:
 
 禁用组织实例的管理模式：
 
-1. 打开 Dynamics 365 for Customer Engagement 应用实例选取器：https://port.crm.dynamics.com/G/Instances/InstancePicker.aspx。
+1. 打开 Dynamics 365 实例选取器：https://port.crm.dynamics.com/G/Instances/InstancePicker.aspx。
 2. 选择运行解决方案检查器有问题的组织实例。
 3. 选择 **ADMIN**。<br/>
 ![实例管理](media/solution-checker-instance-admin.png)

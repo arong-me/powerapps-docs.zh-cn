@@ -31,7 +31,7 @@ search.app:
 
 ## <a name="view-entity-relationships"></a>查看实体关系
 
-1. 从 [PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**画布**设计模式。
+1. 从 [PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**区域**设计模式。
 2. 选择**数据** > **实体**，然后选择具有您要查看的关系的实体。
 3. 选择**关系**选项卡后，您可以选择以下视图： 
 
@@ -55,7 +55,7 @@ search.app:
 
 <!-- This may change going forward, but this is the way it is now. #2534972 -->
 > [!Important]
-> 此门户使用不同于解决方案资源管理器的术语。 术语是相反的。 解决方案资源管理器**相关实体**是此门户中的**主要实体**。 同样，解决方案资源管理器中的**主要实体**是此门户中的**相关实体**。
+> 此门户使用不同于解决方案资源管理器的术语。 解决方案资源管理器**主要实体**是此门户中的**当前实体**。
 
 根据您的选择，您将看到：
 
@@ -65,10 +65,10 @@ search.app:
 |**多对一**|![多对一关系面板](media/many-to-one-relationship-panel.png)|
 |**一对多**|![一对多关系面板](media/one-to-many-relationship-panel.png)|
 
-为您要在两个实体之间创建的关系选择**相关实体**或**主要实体**。 
+为要在两个实体之间创建的关系选择**相关实体**。 
 
 > [!NOTE]
-> 不论选择哪一项，查找字段都将在*主要*实体上创建。
+> 不论选择哪一项，查找字段都将在*当前*实体上创建。
 
 在选定实体后，您可以编辑关系的详细信息。 在本示例中，多个联系人实体记录可以与单个客户关联。
 

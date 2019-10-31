@@ -149,7 +149,7 @@ search.app:
  使用网站预览控件可映射 URL 字段并显示网站的预览。  
   
 > [!IMPORTANT]
->  一旦启用此控件，即代表您同意允许用户与外部系统共享特定的可识别设备信息。 从外部系统导入到 PowerApps 应用程序或 Dynamics 365 customer engagement 的数据，将受我们位于 [Microsoft 隐私和 Cookie](http://go.microsoft.com/fwlink/p/?LinkId=521839) 的隐私声明的约束。  
+>  一旦启用此控件，即代表您同意允许用户与外部系统共享特定的可识别设备信息。 从外部系统导入 PowerApps 应用或 Dynamics 365 应用（例如 Dynamics 365 Sales 或 Dynamics 365 Customer Service）的数据受我们在 [Microsoft 隐私与 Cookie](http://go.microsoft.com/fwlink/p/?LinkId=521839) 中的隐私声明的约束。  
 >   
 >  [隐私声明](use-the-form-editor-legacy.md#BKMK_PrivacyNotices)  
   

@@ -25,7 +25,7 @@ search.app:
 ---
 # <a name="approaching-a-user-experience-and-unified-interface-transition"></a>实现用户体验和统一接口转换
 
-这份面向业务的白皮书概述在 PowerApps 平台上模型驱动应用程序内实现用户体验改变时需要注意的计划、管制和管理原则。 这封白皮书特别关注 Dynamics 365 for Customer Engagement 应用程序（如 Dynamics 365 for Sales 和 Dynamics 365 for Service），并采用了统一接口，但是大量主题适用于所有用户体验更新。
+这份面向业务的白皮书概述在 PowerApps 平台上模型驱动应用程序内实现用户体验改变时需要注意的计划、管制和管理原则。 这封白皮书特别关注 Dynamics 365 应用程序（如 Dynamics 365 Sales 和 Dynamics 365 Customer Service），并采用了统一接口，但是大量主题适用于所有用户体验更新。
 
 总之，本指南可以帮助您：
 - 定位统一接口。

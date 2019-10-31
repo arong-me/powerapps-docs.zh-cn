@@ -16,17 +16,21 @@ search.app:
 ---
 
 # <a name="restricted-entities-requiring-dynamics-365-licenses"></a>需要 Dynamics 365 许可证的受限实体
-应用程序制造者可以使用 Common Data Service 内提供的大多数实体来为只有 PowerApps 计划 1 许可证的用户创建应用程序和流。 不过，有些实体包含需要应用程序用户有 PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证的复杂业务逻辑（有关详细信息，请参阅[实体的许可证要求](data-platform-entity-licenses.md)）。 如果需要创建、更新或删除实体内的记录，即使更小的绑定到 Dynamics 365 产品的一组实体也需要画布和模型驱动应用程序用户具有相应 Dynamics 365 产品的许可证。 这些实体称为*受限*实体。
+
+> [!IMPORTANT]
+> 本主题已过期，将很快更新以反映自 2019 年 10 月 1 日起适用的最新许可变化。 有关实体许可要求的最新信息，请参阅 [PowerApps 许可指南](https://go.microsoft.com/fwlink/?linkid=2085130)。
+
+应用开发者可以使用 Common Data Service 内提供的大多数实体来为只有 PowerApps 计划 1 许可证的用户创建应用和流。 不过，有些实体包含需要应用用户有 PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证的复杂业务逻辑（有关详细信息，请参阅[实体的许可证要求](data-platform-entity-licenses.md)）。 如果需要创建、更新或删除实体内的记录，即使更小的绑定到 Dynamics 365 产品的一组实体也需要画布和模型驱动应用程序用户具有相应 Dynamics 365 产品的许可证。 这些实体称为*受限*实体。
 
 实体可能由于下列原因被限制，需要有 Dynamics 365 许可证：
 
 * 此实体用于存储和维护通常不在应用程序之外使用的产品特定配置数据。
 * 实体由高级逻辑附带，高级逻辑在用于 Dynamics 365 产品中时以特定方式创建和维护数据。
 
-如果应用程序或流只读取实体的信息，不需要 Dynamics 365 许可证，只需要适当的 PowerApps 或 Microsoft Flow 许可证。 
+如果应用或流只读取实体的信息，不需要 Dynamics 365 许可证，只需要适当的 PowerApps 或 Microsoft Flow 许可证。 
 
 ## <a name="restricted-entities-for-create-update-and-delete-operations"></a>用于创建、更新和删除操作的受限实体
-下表列出了受限实体以及创建、更新或删除实体内所存储数据的 PowerApps 和 Microsoft Flow 应用程序用户的关联的 Dynamics 365 许可要求。 
+下表列出了受限实体以及创建、更新或删除实体内所存储数据的 PowerApps 和 Microsoft Flow 应用用户的关联的 Dynamics 365 许可要求。 
 
 |实体  |逻辑名称  |必需许可证  |
 |---------|---------|---------|

@@ -14,7 +14,8 @@ applies_to:
 ms.assetid: f06b8941-8dca-4601-b965-341cfb6fc3b2
 caps.latest.revision: 11
 ms.author: matp
-manager: brycho
+manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:
@@ -58,7 +59,7 @@ search.app:
 ## <a name="see-also"></a>另请参阅
 
 [创建选项集](custom-picklists.md)<br />
-[使用解决方案资源管理器创建和编辑 Common Data Service 的全局选项集](create-edit-global-option-sets-solution-explorer.md)<br />
+[使用解决方案资源管理器为 Common Data Service 创建和编辑全局选项集](create-edit-global-option-sets-solution-explorer.md)<br />
 [开发人员文档：自定义全局选项集](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)
   
 
