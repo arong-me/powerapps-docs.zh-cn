@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 01/09/18
+ms.date: 01/09/2018
 ms.author: stepsic
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d41807bedf85c151c8e115456b9fb3e23756629d
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 9dc1fa02737b49261dc76a06e208cea578e80dea
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61537700"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73182614"
 ---
 # <a name="create-a-flow-to-manage-project-approvals"></a>创建用于管理项目审批的流
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "61537700"
 
 在此任务中，我们将创建用于驱动项目审批流程的流。 由于 Microsoft Flow 已与 SharePoint 集成，因此可以很容易地直接通过列表创建流。 当“项目申请”列表添加有新项时，将会触发我们创建的流。 此流会向项目审批者发送电子邮件，以便其可以直接在电子邮件中批准或拒绝申请。 然后，此流会向项目申请者发送批准或拒绝电子邮件，并相应地更新 SharePoint 列表。
 
-## <a name="step-1-configure-the-flow-template"></a>步骤 1:配置流模板
+## <a name="step-1-configure-the-flow-template"></a>第 1 步：配置流模板
 1. 在“项目申请”列表中，依次单击或点击“流”和“创建流”。
    
     ![创建流](./media/sharepoint-scenario-approval-flow/03-01-01-create-flow.png)
@@ -44,11 +44,11 @@ ms.locfileid: "61537700"
    
     ![审批电子邮件联系人](./media/sharepoint-scenario-approval-flow/03-01-05-approval-email.png)
    
-    在流中的下一个框响应项目审批者的决定，并将此流路由到一个两个*分支*:**如果是**或**如果不是**。
+    此流中的下一个框对应于项目审批者的决定，并将此流路由到两个分支（“If yes”或“If no”）之一。
    
     ![审批条件](./media/sharepoint-scenario-approval-flow/03-01-06-condition.png)
 
-## <a name="step-2-create-actions-for-approve--yes"></a>步骤 2:创建用于批准操作 = yes
+## <a name="step-2-create-actions-for-approve--yes"></a>第 2 步：创建“Approve”值为“yes”时的操作
 默认情况下，此分支将批准电子邮件发送给申请者。 我们还会更新“项目申请”列表，并将项添加到“项目详细信息”列表中，因为此项目已获准。
 
 1. 在“If yes”分支中，依次单击或点击“通知项创建者已获准”和“编辑”，调出发送给申请者的电子邮件的默认选项。
@@ -96,7 +96,7 @@ ms.locfileid: "61537700"
     
     ![项创建已完成](./media/sharepoint-scenario-approval-flow/03-01-11-yes-create-complete.png)
 
-## <a name="step-3-review-action-for-approve--no"></a>步骤 3:查看批准的操作 = 否
+## <a name="step-3-review-action-for-approve--no"></a>第 3 步：检查“Approve”值为“no”时的操作
 默认情况下，此分支将拒绝电子邮件发送给申请者。 我们还会更新“项目申请”列表。 此项目不会有任何进展，因此我们不会将项添加到“项目详细信息”列表中。
 
 1. 在“If no”分支中，依次单击或点击“通知项创建者已遭拒”和“编辑”，调出发送给申请者的电子邮件的默认选项。
@@ -133,7 +133,7 @@ ms.locfileid: "61537700"
    
     ![“完成”按钮](./media/sharepoint-scenario-approval-flow/03-01-15a-done-button.png)
 
-## <a name="step-4-run-the-approval-flow"></a>步骤 4：运行审批流
+## <a name="step-4-run-the-approval-flow"></a>第 4 步：运行审批流
 1. 在“项目申请”列表中，单击“快速编辑”，并添加一项，如下所示：
    
    * “Title”的值为“New monitor for Megan”

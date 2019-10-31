@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/24/2019
+ms.date: 10/30/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 68e702156b0a5b820dd23076551cf7970efc65a3
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 2a1696437f434063b4297df220f1cb406bc993f8
+ms.sourcegitcommit: 98f6ce1531e69e2aae1000eda7548434d77cafe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73025112"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73142612"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>画布应用的系统要求、限制和配置值
 本主题包含设备平台和 Web 浏览器要求，以及 PowerApps 的限制和配置值。
@@ -27,8 +27,8 @@ ms.locfileid: "73025112"
 
 | **所需的最低版本** | **推荐版本** |
 | --- | --- |
-| iOS 9.3 或更高版本 |iOS 10 或更高版本且 RAM 至少为 2GB |
-| Android 5 或更高版本 |Android 7 或更高版本且 RAM 至少为 4GB |
+| iOS 12 或更高版本 |iOS 12 或更高版本|
+| Android 7 或更高版本 |Android 7 或更高版本 |
 | Windows 8.1 或更高版本（仅 PC） |Windows 10 Fall Creators Update 且 RAM 至少为 8GB|
 
 > [!NOTE]
