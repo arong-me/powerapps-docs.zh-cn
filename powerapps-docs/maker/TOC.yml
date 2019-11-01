@@ -741,7 +741,7 @@
           href: ./canvas-apps/share-app-resources.md
         - name: 在 Power BI 中嵌入应用
           href: ./canvas-apps/embed-powerapps-powerbi.md
-        - name: 嵌入 Teams 应用
+        - name: 在 Teams 中嵌入应用
           href: ./canvas-apps/embed-teams-app.md
     - name: 管理应用
       items:
