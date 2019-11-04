@@ -16,10 +16,10 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 76241ae2e26752a98e32e7ad72c54780da3934ae
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71705307"
 ---
 # <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>针对模型驱动应用的统一界面增强了用户体验 
@@ -30,14 +30,14 @@ ms.locfileid: "71705307"
 > ![统一界面适应屏幕](media/Reflow.png "统一界面适应屏幕")
 
 > [!NOTE]
-> 旧的 web 客户端将被弃用，并且客户必须在10月 1 2020 日之前过渡到统一的界面。 有关详细信息，请参阅 [Blog：宣布时间线移动到统一的接口](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/)。 若要了解有关如何转换的详细信息，请参阅[转换的快速入门](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app)。
+> 旧的 web 客户端将被弃用，并且客户必须在10月 1 2020 日之前过渡到统一的界面。 有关详细信息，请参阅[博客：宣布时间线移动到统一界面](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/)。 若要了解有关如何转换的详细信息，请参阅[转换的快速入门](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app)。
 
 ## <a name="navigation"></a>导航
 
 菜单选项可让你快速浏览系统中的不同应用。 它们提供对最近查看的记录和固定收藏夹的快速访问。 
 
 > [!div class="mx-imgBorder"]
-> ![模型驱动应用导航](media/nav.png "Model-driven app nav")
+> ![模型驱动的应用导航](media/nav.png "模型驱动的应用导航")
 
 1. 默认情况下，站点地图已展开并保持不变。
 2. 将突出显示你当前所在的子区域，以指示应用中的位置。

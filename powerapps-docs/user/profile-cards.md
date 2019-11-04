@@ -16,10 +16,10 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 67441e506ba2715a9994f6b81cd08426e37e0fc8
-ms.sourcegitcommit: 7c46e7ce889e2f1c5352ed2e705b0bb8968f2a89
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71950901"
 ---
 # <a name="view-the-profile-card-for-a-contact-or-user"></a>查看联系人或用户的个人资料卡
@@ -41,7 +41,7 @@ ms.locfileid: "71950901"
 4. 若要查看更多详细信息，请选择 "**显示更多**" 以展开联系人的个人资料。
  
     > [!div class="mx-imgBorder"] 
-    > ![展开联系人配置文件卡详细]信息(media/profile1.png "展开联系人配置文件卡详细信息")
+    > ![展开联系人配置文件卡详细信息](media/profile1.png "展开联系人配置文件卡详细信息")
    
  ## <a name="view-a-users-profile"></a>查看用户的配置文件
  
@@ -51,7 +51,7 @@ ms.locfileid: "71950901"
 4.  若要查看更多详细信息（例如，用户的电子邮件和共享文件），请选择 "**显示更多**" 以展开联系人的个人资料。
  
     > [!div class="mx-imgBorder"] 
-    > ![展开用户配置文件卡详细]信息(media/profile2.png "展开用户配置文件卡详细信息")
+    > ![展开用户配置文件卡详细信息](media/profile2.png "展开用户配置文件卡详细信息")
 
 
  ## <a name="faqs"></a>常见问题

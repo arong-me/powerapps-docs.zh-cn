@@ -16,10 +16,10 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 9ba051395e99dc6f2079d033c10a727a2e95da67
-ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71924570"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>将约会、电子邮件、电话呼叫、备注或任务活动添加到时间线 
@@ -34,13 +34,13 @@ ms.locfileid: "71924570"
 - 带有附件的电子邮件将与电子邮件正文一起显示在一起。
 
   > [!div class="mx-imgBorder"]
-  > ![PowerApps 中的活动时间线视图](media/TimelineViewOfActivity.png "PowerApps 中的活动时间线视图")  
+  > ![PowerApps 中活动的时间线视图](media/TimelineViewOfActivity.png "PowerApps 中活动的时间线视图")  
  
 ## <a name="add-an-activity-from-the-nav-bar"></a>从导航栏添加活动
  
 最快速添加活动的方法是使用导航栏上的快捷方式，然后将其关联到记录。 例如，可以创建电话呼叫活动，然后使用“关于”字段将其关联到系统中的联系人。
 
-1. 在导航栏上，选择“加号” ![创建记录按钮](media/create-record-button.png "创建记录按钮")，然后选择“活动”。 
+1. 在导航栏上，选择 "**加号**![创建记录" 按钮](media/create-record-button.png "创建记录按钮")，然后选择 "**活动**"。 
 
    > [!div class="mx-imgBorder"]
    > ![在 PowerApps 中添加活动的快捷方式](media/QuickCreate.png "在 PowerApps 中添加活动的快捷方式")  
@@ -60,7 +60,7 @@ ms.locfileid: "71924570"
 
 
    > [!div class="mx-imgBorder"]
-   > ![在 PowerApps 中添加电话活动](media/addphonecall.png "在 PowerApps 中添加电话活动")
+   > ![在 PowerApps 中添加手机活动](media/addphonecall.png "在 PowerApps 中添加手机活动")
   
 3. 填写电话的“主题”。
 
@@ -100,7 +100,7 @@ ms.locfileid: "71924570"
 
 
     > [!NOTE]
-    > 若要列出会话视图中的电子邮件，请在 "**设置**"  > **个性化设置**" > **电子邮件**" 选项卡，然后选择 **"显示电子邮件作为在时间线上的会话"** 。 有关个人设置的详细信息，请参阅[设置个人选项](https://docs.microsoft.com/en-us/powerapps/user/set-personal-options#email-tab-options)。 启用后，可以打开任何具有时间线的窗体，电子邮件将按最新的最新电子邮件分组到会话线程中。
+    > 若要列出会话视图中的电子邮件，请参阅 "**设置**" > "**个性化设置**" > **电子邮件**"选项卡，然后选择 **" 在时间线上显示电子邮件 "** 。 有关个人设置的详细信息，请参阅[设置个人选项](https://docs.microsoft.com/en-us/powerapps/user/set-personal-options#email-tab-options)。 启用后，可以打开任何具有时间线的窗体，电子邮件将按最新的最新电子邮件分组到会话线程中。
 
    > [!div class="mx-imgBorder"]
    > ![设置个人选项](media/emailsettings1.png "设置个人选项")
@@ -142,7 +142,7 @@ ms.locfileid: "71924570"
 
 
 > [!div class="mx-imgBorder"]
-> ![更新备注](media/addnote2.png "更新备注")
+> ![更新注释](media/addnote2.png "更新注释")
 
 ## <a name="add-a-post"></a>添加文章 
 
@@ -155,7 +155,7 @@ ms.locfileid: "71924570"
 4. 填写完成后，选择“添加”保存文章。
 
 > [!div class="mx-imgBorder"]
-> ![更新文章](media/post.png "添加文章")
+> ![更新帖子](media/post.png "添加文章")
   
   保存文章后，它将显示在时间线留言板的顶部。
   
@@ -163,7 +163,7 @@ ms.locfileid: "71924570"
 
 可以刷新时间留言板以查看最新信息。
 
-在“时间线”留言板中，选中 ![更多按钮](media/MoreButton.png "更多按钮")，然后选择“刷新时间线”。
+在**时间线**背景中，选择 "![更多" 按钮](media/MoreButton.png "更多按钮")，然后选择 "**刷新时间线**"。
 
 > [!div class="mx-imgBorder"]
 > ![刷新时间线](media/refresh.png "刷新时间线")
@@ -176,7 +176,7 @@ ms.locfileid: "71924570"
 - 在**时间线**背景中，选择 "**打开筛选器窗格**漏斗图标"。
 
 > [!div class="mx-imgBorder"]
-> ![时间线中的“筛选器”窗格](media/filterpane.png "时间线中的“筛选器”窗格")
+> ![时间线中的筛选器窗格](media/filterpane.png "时间线中的筛选器窗格")
 
 
 ## <a name="manage-activities"></a>管理活动
@@ -184,7 +184,7 @@ ms.locfileid: "71924570"
 
 
 > [!div class="mx-imgBorder"]
-> ![Manage Activities.png](media/ManageActivities.png "ManageActivities.png")
+> ![管理活动 .png](media/ManageActivities.png "ManageActivities .png")
 
 
 

@@ -16,10 +16,10 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: a4d81b9adff165267fe3e3d4d08384133aeae032
-ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71924459"
 ---
 # <a name="create-a-new-record"></a>创建新记录
@@ -31,7 +31,7 @@ ms.locfileid: "71924459"
 > [!NOTE]
 > “快速创建”选项仅适用于管理员启用的记录。
     
-1. 在导航栏上，选择加号 ![创建记录按钮](media/create-record-button.png "Create record button")，然后选择所需项。  
+1. 在导航栏上，选择 "**加号**![创建记录" 按钮](media/create-record-button.png "创建记录按钮")，然后选择所需的项。  
 
     > [!div class="mx-imgBorder"] 
     > ![创建记录按钮](media/newrecord1.png "创建记录按钮")
@@ -39,12 +39,12 @@ ms.locfileid: "71924459"
 2.  填写字段，然后选择“保存并关闭”。 或者，若要保存和创建其他记录，请选择向下箭头，然后选择 "**保存" & 新建**"。
 
      > [!div class="mx-imgBorder"] 
-     > ![保存记录](media/quick_create.png "Save a record")
+     > ![保存记录](media/quick_create.png "保存记录")
   
 > [!NOTE]
-> 屏幕上字段旁的星号 ![“必填字段”按钮](media/required-field-button.png "Required Field button") 表示该字段为必填项。 如果在选择“保存并关闭”后输入必填字段，系统将显示一条错误消息，或者如果输入信息并选择“取消”，系统将显示一条警告。
+> 屏幕上的字段旁边的星号![必填字段按钮](media/required-field-button.png "必填字段按钮")表示该字段是必填字段。 如果在选择“保存并关闭”后输入必填字段，系统将显示一条错误消息，或者如果输入信息并选择“取消”，系统将显示一条警告。
 >   
-> 屏幕上字段旁的加号 ![“建议字段”按钮](media/recommended-field-button.png "Recommended Field button") 表示组织建议你填写该字段。  
+> 屏幕上的 "字段" 旁边的加号![建议字段按钮](media/recommended-field-button.png "建议的字段按钮")表示你的组织建议你填写字段。  
 
 
 ## <a name="create-a-new-record-using-the-new-button"></a>使用 "新建" 按钮创建新记录 

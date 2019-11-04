@@ -16,17 +16,17 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 26903543232025f43f935a403800ed27170e3123
-ms.sourcegitcommit: 7c46e7ce889e2f1c5352ed2e705b0bb8968f2a89
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71940997"
 ---
 # <a name="search-for-records-in-an-app"></a>在应用中搜索记录
 
 可以通过在 Common Data Service 中使用相关性搜索或分类搜索来搜索多个实体中的记录。 
 
-- 相关性搜索跨多个实体、按相关性排序的单个列表提供快速、全面的结果。 它使用 Common Data Service 的外部专用搜索服务（由 [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] 提供支持）以提高搜索性能。 
+- 相关性搜索跨多个实体、按相关性排序的单个列表提供快速、全面的结果。 它使用 Common Data Service 的外部专用搜索服务（由 [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)]提供支持）以提高搜索性能。 
 - 分类搜索返回按实体类型（例如帐户、联系人或潜在顾客）分组的搜索结果。
 
 通常，分类搜索是默认的搜索选项。 但是，如果你的组织启用了相关性搜索，则它将成为默认搜索体验。  
@@ -37,9 +37,9 @@ ms.locfileid: "71940997"
 
 通过已分类，可以搜索以特定单词开头或使用通配符的记录。
   
-- **开头为**：结果包括以特定单词开头的记录。 例如，如果要在搜索框中搜索 "Alpine 滑雪房子"，请在 "搜索" 框中键入**alp** ;如果键入**ski**，则记录将不会显示。  
+- **开头为**：结果包含以特定单词开头的记录。 例如，如果要在搜索框中搜索 "Alpine 滑雪房子"，请在 "搜索" 框中键入**alp** ;如果键入**ski**，则记录将不会显示。  
   
-- **通配符**：例如，* ski 或 * ski @ no__t-0。 
+- **通配符**：例如，* ski 或 * ski\*。 
   
 ## <a name="relevance-search"></a>相关性搜索
   
@@ -47,7 +47,7 @@ ms.locfileid: "71940997"
 
  相关性搜索提供了以下增强功能和优点：  
   
-- 利用外部索引和 @no__t 0 搜索技术提高性能。  
+- 通过外部索引和 [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] 搜索技术提高性能。  
   
 - 查找实体中任何字段的搜索项中的任何词的匹配项。 匹配可以包括**流**、**流式处理**或**流式**处理等变形词。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "71940997"
   
 - 突出显示结果列表中的匹配项。  
 
-- 你将在存储在 Common Data Service 中的文档中找到文本的搜索结果，其中包括备注、电子邮件附件或约会中的文本。 搜索支持以下文件格式：PDF、Microsoft Office 文档、HTML、XML、ZIP、.EML、纯文本和 JSON。  
+- 你将在存储在 Common Data Service 中的文档中找到文本的搜索结果，其中包括备注、电子邮件附件或约会中的文本。 搜索支持以下文件格式： PDF、Microsoft Office 文档、HTML、XML、ZIP、.EML、纯文本和 JSON。  
   
 - 您可以搜索与您共享的记录以及您拥有的记录。  
   
@@ -71,11 +71,11 @@ ms.locfileid: "71940997"
   > - 启用关联性搜索后，组织中的所有用户都可以使用它。  
   > - 相关性搜索基于文本，并且只能在类型为 "单行文本"、"多行文本"、"选项集" 或 "查找" 的字段中搜索。 它不支持在数字或日期数据类型的字段中进行搜索。 
   
- 尽管相关性搜索可找到实体中任何字段的搜索项中的任何词的匹配项，但必须在一个字段中找到搜索词中启用了全文搜索功能 @ no__t-1all 字词的 "Quick Find @ no__t-0even"。  
+ 尽管相关性搜索可找到实体中任何字段的搜索项中的任何词的匹配项，但在 "快速查找"&mdash;中，即使启用了全文搜索&mdash;搜索词中的所有单词都必须在一个字段中找到。  
   
  在 "相关性搜索" 中，匹配越好，结果中显示的位置越高。 如果搜索词中的更多单词彼此接近，则匹配项的相关性会更高。 找到搜索词的文本量越小，相关性越高。 例如，如果您在公司名称和地址中查找搜索词，则它可能比在大文章中找到的相同词的匹配项可能更好。 由于结果是在单个列表中返回的，因此，您可以看到一条接一个地显示一条记录，如帐户、机会、潜在顾客等。 突出显示列表中匹配的单词。  
   
- 在搜索词中使用语法可获取所需的结果。 例如，键入 "**汽车银 2-门**"，以在搜索结果中包含搜索词中任何字的匹配项。 键入**car + 白银 +2-门**，仅查找包含全部三个词的匹配项。 键入 **"&#124;汽车&#124;银 2-门**" 以获取包含**汽车**、**银色**或**2 门**或全部三个单词的结果。 有关可在搜索查询中使用的语法的详细信息：[Azure 搜索中的简单查询语法](https://docs.microsoft.com/rest/api/searchservice/simple-query-syntax-in-azure-search)
+ 在搜索词中使用语法可获取所需的结果。 例如，键入 "**汽车银 2-门**"，以在搜索结果中包含搜索词中任何字的匹配项。 键入**car + 白银 +2-门**，仅查找包含全部三个词的匹配项。 键入 **"&#124;汽车&#124;银 2-门**" 以获取包含**汽车**、**银色**或**2 门**或全部三个单词的结果。 有关可在搜索查询中使用的语法的详细信息： [Azure 搜索中的简单查询语法](https://docs.microsoft.com/rest/api/searchservice/simple-query-syntax-in-azure-search)
 
 
 > [!NOTE]
@@ -92,7 +92,7 @@ ms.locfileid: "71940997"
 2. 在左侧，选择下拉菜单以在**相关性搜索**或**分类搜索**之间切换。
 
    > [!div class="mx-imgBorder"]
-   > 在相关性和已(media/switch-search.png "分类搜索之间")![切换相关性和已分类搜索] 
+   > ![在相关性和已分类搜索之间切换](media/switch-search.png "在相关性和已分类搜索之间切换") 
     
 ### <a name="set-a-default-experience"></a>设置默认体验
 
@@ -126,7 +126,7 @@ ms.locfileid: "71940997"
 -   若要搜索所有记录类型，请在 "**筛选条件：** " 下拉框中选择 "**无**"。  
 
     > [!div class="mx-imgBorder"]
-    > ![筛选搜索](media/filter-search.png "筛选器搜索")  
+    > ![筛选搜索](media/filter-search.png "筛选搜索")  
 
 ## <a name="filter-records-with-facets-works-with-relevance-search"></a>使用方面筛选记录（与相关性搜索一起使用）  
  使用 Common Data Service，现在可以通过使用 facet 和筛选器来改进搜索结果。 可在左窗格中使用方面。 执行搜索后，可以立即在四个公共字段中使用以下全局 facet：  
@@ -143,25 +143,25 @@ ms.locfileid: "71940997"
  若要将搜索结果缩小到特定实体，请在 "**记录类型**" 部分下选择实体。  
  
   > [!div class="mx-imgBorder"]
-  > (media/relevance-search-record-type-facet.png "用于缩小搜索结果范围")![的 "记录类型"]facet 用于缩小搜索结果范围  
+  > ![用于缩小搜索结果范围的记录类型方面](media/relevance-search-record-type-facet.png "用于缩小搜索结果范围的记录类型方面")  
   
  当你按特定的记录类型进行筛选时，你可以在搜索结果中包括与所选记录相关的活动和说明。 为此，请选中 "**相关说明 & 活动**" 复选框。 活动和说明将显示在顶级结果中。  
   
  
   > [!div class="mx-imgBorder"]
-  > ![在搜索结果中包括与记录类型相关的注释和活动]，(media/relevance-search-record-type-facet-related-notes-activities.png "包括与搜索结果中的记录类型相关的说明和活动")  
+  > ![在搜索结果中包括与一种记录类型相关的注释和活动](media/relevance-search-record-type-facet-related-notes-activities.png "在搜索结果中包括与一种记录类型相关的注释和活动")  
   
  电子邮件附件或约会实体中的搜索结果显示在其父记录下的搜索结果中，即电子邮件或约会。  
   
  按记录类型进行优化时，facet 范围将切换到所选实体，并且显示最多四个特定于该实体的方面。 例如，如果选择 "帐户" 实体，则除了全局方面外，还会显示主要的 "**联系人**" 方面。  
   
- 在 "**设置个人选项**" 对话框中，你还可以从你的系统管理员或客户提供给你的用户的其他方面中进行选择。 用户设置将覆盖默认设置。 @no__t[为搜索配置 facet 和筛选器](#BKMK_ConfigureFacets)  
+ 在 "**设置个人选项**" 对话框中，你还可以从你的系统管理员或客户提供给你的用户的其他方面中进行选择。 用户设置将覆盖默认设置。 [!INCLUDE[proc_more_information](../includes/proc-more-information.md)][配置搜索的方面和筛选器](#BKMK_ConfigureFacets)  
   
 ### <a name="text-based-facets"></a>基于文本的方面  
  所有查找、选项集和记录类型都是基于文本的方面。 例如，基于文本的方面所有者包含字段值的列表及其相应的计数。  
  
   > [!div class="mx-imgBorder"]
-  > 相关性搜索中基于文本的![方面]在(media/relevance-search-text-based-facets.png "相关性搜索中基于文本的方面")  
+  > ![相关性搜索中基于文本的方面](media/relevance-search-text-based-facets.png "相关性搜索中基于文本的方面")  
   
  这些方面的筛选器按计数以降序排序。 默认情况下，将显示前四个方面的值。 如果有四个以上的方面值，你将看到 "**显示更多**" 链接，你可以选择该链接来展开列表并查看最多15个顶级 facet 值。 选择每个值以筛选搜索结果，以仅显示字段包含所选值的记录。 例如，如果选择**Kim Abercrombie**，搜索结果将显示所有者为 kim Abercrombie 的所有记录。 选择 "查找" 或 "选项集" 方面值时，会将搜索结果筛选为仅包含指定值的记录。  
   
@@ -169,7 +169,7 @@ ms.locfileid: "71940997"
  与其他方面一样，可以使用日期和时间方面来筛选和查看特定时间的搜索结果。 若要选择某一范围的值，请拖动滑块或选择其中一个垂直列。  
  
   > [!div class="mx-imgBorder"]
-  > 相关性搜索日期和时间方面的![日期和时间方面](media/relevance-search-date-time-facets.png "搜索相关性搜索")  
+  > ![相关性搜索的日期和时间方面](media/relevance-search-date-time-facets.png "相关性搜索的日期和时间方面")  
   
 <a name="BKMK_ConfigureFacets"></a>   
 ### <a name="configure-facets-and-filters-for-the-search"></a>配置搜索的方面和筛选器  
