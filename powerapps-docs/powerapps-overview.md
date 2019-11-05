@@ -12,12 +12,12 @@ ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: 34b2d24771feb246d234c0ce3bd1fc655e571296
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.openlocfilehash: 23eb64171c1f339b423bdf56b53b186d2c9e14b5
+ms.sourcegitcommit: 073d8534d7ff0093370ee17a1b9b63c10c7f050c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71705278"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72041300"
 ---
 # <a name="what-is-powerapps"></a>什么是 PowerApps？
 
@@ -59,7 +59,7 @@ PowerApps 管理员可以：
 
 ## <a name="powerapps-and-dynamics-365"></a>PowerApps 和 Dynamics 365
 
-Dynamics 365 应用程序（如 Dynamics 365 for Sales、Dynamics 365 for Service、Dynamics 365 for Marketing）还使用 PowerApps 用于存储和保护数据的基础数据平台 (Common Data Service)。 这样以来，可以针对 Dynamics 365 中已使用的核心业务数据直接使用 PowerApps 和 Common Data Service 生成应用，而无需集成。 详细信息：[Dynamics 365 和 Common Data Service](maker/common-data-service/data-platform-intro.md#dynamics-365-and-the-common-data-service)
+Dynamics 365 应用程序，如 Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 Marketing 还使用 PowerApps 用于存储和保护数据的基础数据平台（Common Data Service）。 这样以来，可以针对 Dynamics 365 中已使用的核心业务数据直接使用 PowerApps 和 Common Data Service 生成应用，而无需集成。 详细信息：[Dynamics 365 和 Common Data Service](maker/common-data-service/data-platform-intro.md#dynamics-365-and-common-data-service)
 
 ## <a name="try-powerapps-for-free"></a>免费试用 PowerApps
 
