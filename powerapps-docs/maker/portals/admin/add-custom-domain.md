@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/21/2019
+ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 2e8cd720f4ad5d1ff285a6414e99f4322b60b7b0
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: cd015b656c90ec2707f3654e02b4e1a5ef65e7d2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978499"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543112"
 ---
 # <a name="add-a-custom-domain-name"></a>添加自定义域名
 
@@ -51,6 +51,6 @@ ms.locfileid: "72978499"
 7. 选择 "**完成**" 关闭向导。
 
     > [!Note]
-    > 如果要更改现有的自定义域名，则必须上传新的 SSL 证书，并按照[此处](#link-your-portal-to-a-custom-domain)所述按照向导中的步骤进行操作。
+    > 如果要更改现有的自定义域名，则必须上传新的 SSL 证书，并按照此部分中所述的步骤进行操作。
     
 
