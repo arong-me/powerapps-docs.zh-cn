@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 592399e6b5a95d27e5c0afe48541d04d444528bb
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 3147308c52439f250f8f65a81d91d99f30ae1481
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985567"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540308"
 ---
 # <a name="data-types-in-canvas-apps"></a>画布应用中的数据类型
 
@@ -34,14 +34,14 @@ ms.locfileid: "71985567"
 | **日期** | 不带时间的日期，采用应用用户的时区。 | **Date （2019，5，16）** |
 | **型** | 日期，时间为应用程序用户的时区。 | **DateTimeValue （"5 月16日 2019 1:23:09 PM"）** |
 | **GUID.EMPTY** | [全局唯一标识符](https://en.wikipedia.org/wiki/Universally_unique_identifier)。 | **GUID （）**<br>**GUID （"123e4567-e89b-12d3-a456-426655440000"）** |
-| **Hyperlink** | 包含超链接的文本字符串。 | **"http://powerapps.microsoft.com"** |
+| **Hyperlink** | 包含超链接的文本字符串。 | **"https://powerapps.microsoft.com"** |
 | **图像** | 图像的[通用资源标识符（URI）](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)文本字符串，格式为 jpeg、.png、svg、.gif 或其他常见的 web 图像格式。 | 添加为应用资源的**MyImage**<br>**"https://northwindtraders.com/logo.jpg"**<br>**"appres://blobmanager/7b12ffa2 ..."** |
 | **媒体** | 视频或音频录制的 URI 文本字符串。 | 添加为应用资源的**MyVideo**<br>**"https://northwindtraders.com/intro.mp4"**<br>**"appres://blobmanager/3ba411c ..."** |
 | **多种** | 浮点数。 | **123**<br>**-4.567**<br>**8.903e121** |
 | **选项集** | 从一组选项中选择，由数字支持。 此数据类型将可本地化的文本标签与数值组合在一起。 标签将出现在应用中，并存储数值并用于比较。 | **ThisItem. 对 orderstatus** |
-| **记录** | 数据值的记录。 此复合数据类型包含本主题中列出的其他数据类型的实例。 详细信息：[处理表](../working-with-tables.md)。 | **{Company："Northwind 商贸" <br>Staff：35，<br>NonProfit： false}** |
+| **记录** | 数据值的记录。 此复合数据类型包含本主题中列出的其他数据类型的实例。 有关详细信息[，](../working-with-tables.md)请使用表。 | **{Company： "Northwind 商贸"，<br>人员：35，<br>非盈利： false}** |
 | **记录引用** | 对实体中的记录的引用。 此类引用通常与多态查找一起使用。 详细信息：使用[引用](../working-with-references.md)。| **第一个（帐户）。Owner** |
-| **数据表** | 记录的表。  对于具有相同数据类型的字段，所有记录必须具有相同的名称，并且省略的字段将被视为*空白*。 此复合数据类型包含本主题中列出的其他数据类型的实例。 详细信息：[处理表](../working-with-tables.md)。 | @no__t 0Table （{FirstName："Sidney"，<br>LastName："Higa"} <br> {FirstName："南希" <br>LastName："Anderson"}） **
+| **数据表** | 记录的表。  对于具有相同数据类型的字段，所有记录必须具有相同的名称，并且省略的字段将被视为*空白*。 此复合数据类型包含本主题中列出的其他数据类型的实例。 有关详细信息[，](../working-with-tables.md)请使用表。 | **Table （{FirstName： "Sidney"，<br>LastName： "Higa"}，<br>{FirstName： "南"，<br>LastName： "Anderson"}）**
 | **文本** | Unicode 文本字符串。 | **"Hello，World"** |
 | **阶段** | 不带日期的时间，采用应用用户的时区。 | **时间（11，23，45）** |
 | **两个选项** | 从一组由布尔值支持的两个选项中进行选择。 此数据类型将可本地化的文本标签与布尔值组合在一起。 此标签将出现在应用中，并存储布尔值并用于比较。 | **ThisItem** |
@@ -92,7 +92,7 @@ ms.locfileid: "71985567"
 
 如果将 image 控件的**image**属性设置为相机控件的**Photo**属性，则可以在[**相机**](../controls/control-camera.md)控件中显示最近捕获的图像。 应用程序将图像保存在内存中，并且相机控件的**Photo**属性返回图像的 URI 引用。 例如，您可以拍摄一张照片，照相机的**照片**属性可能会返回 **"appres://blobmanager/7b12ffa2ea4547e5b3812cb1c7b0a2a0/1"** 。
 
-使用 URI 可以引用存储在数据库中的图像或其他媒体文件。 这样一来，应用就不会检索实际数据，直到实际需要。 例如，Common Data Service 实体中的附件可能返回 **"appres://datasources/Contacts/table/..."** 如相机示例中所示，可以通过将图像控件的**image**属性设置为此引用来显示此图像，这将检索二进制数据。
+使用 URI 可以引用存储在数据库中的图像或其他媒体文件。 这样一来，应用就不会检索实际数据，直到实际需要。 例如，Common Data Service 实体中的附件可能会返回 **"appres://datasources/Contacts/table/..."** ，如相机示例中所示，可以通过将 image 控件的**image**属性设置为此引用来显示此图像，这检索二进制数据。
 
 将媒体数据类型（如图像）保存到数据库时，应用程序将发送实际的图像或媒体数据，而不是 URI 引用。
 
@@ -123,14 +123,14 @@ ms.locfileid: "71985567"
 日期/时间值属于以下类别：
 
 - **用户本地**：这些值以[UTC （协调世界时）](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)存储，但是应用用户的时区会影响应用显示这些值的方式，以及应用用户如何指定这些值。 例如，与日本的用户相比，加拿大用户的显示时间也不同。
-- **独立**时区：应用以相同的方式显示这些值，应用用户以相同方式指定这些值，而不考虑时区。 与日本的用户一样，同一时刻与加拿大用户的显示方式相同。 不希望应用程序在不同时区中运行的应用程序作者使用这些值，因为它们的整体更简单。
+- **独立**时区：应用以相同方式显示这些值，应用用户以相同方式指定这些值，而不考虑时区。 与日本的用户一样，同一时刻与加拿大用户的显示方式相同。 不希望应用程序在不同时区中运行的应用程序作者使用这些值，因为它们的整体更简单。
 
 下表显示了一些示例：
 
 | 日期/时间类型 | 存储在数据库中的值 | 显示和输入的值7小时的 UTC | 显示的值和输入的时间为4小时东部 |
 |--------------------------|------------------------------|------------------------------|
-| **用户本地** | 星期日、&nbsp;May @ no__t-119、&nbsp;2019<br>上午4:00 | 周六，&nbsp;May @ no__t-118，&nbsp;2019<br>9:00 PM | 星期日、&nbsp;May @ no__t-119、&nbsp;2019<br>上午8:00 |
-| **独立时区** | 星期日、&nbsp;May @ no__t-119、&nbsp;2019<br>上午4:00 | 星期日、&nbsp;May @ no__t-119、&nbsp;2019<br>上午4:00 | 星期日、&nbsp;May @ no__t-119、&nbsp;2019<br>上午4:00 | 
+| **用户本地** | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午4:00 | 周六，&nbsp;可能&nbsp;18，&nbsp;2019<br>9:00 PM | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午8:00 |
+| **独立时区** | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午4:00 | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午4:00 | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午4:00 | 
 
 对于**用户本地**日期/时间，画布应用使用浏览器或设备的时区，但模型驱动应用使用用户在 Common Data Service 中的设置。 这些设置通常匹配，但如果这些设置不同，结果会有所不同。
 
@@ -150,8 +150,8 @@ ms.locfileid: "71985567"
 
 | 日期/时间类型 | 存储在数据库中的值 | 显示和输入的值7小时的 UTC | **值**函数返回 |
 |--------------------------|------------------------------|------------------------------|
-| **用户本地** | 星期日、&nbsp;May @ no__t-119、&nbsp;2019<br>上午4:00 | 周六，&nbsp;May @ no__t-118，&nbsp;2019<br>9:00 PM | 1558238400000<br> （星期日、&nbsp;May @ no__t-119、&nbsp;2019<br>4:00 AM UTC） |
-| **独立时区** | 星期日、&nbsp;May @ no__t-119、&nbsp;2019<br>上午4:00 | 星期日、&nbsp;May @ no__t-119、&nbsp;2019<br>上午4:00 |1558263600000<br> （星期日、&nbsp;May @ no__t-119、&nbsp;2019<br>11:00 AM UTC） |
+| **用户本地** | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午4:00 | 周六，&nbsp;可能&nbsp;18，&nbsp;2019<br>9:00 PM | 1558238400000<br> （星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>4:00 AM UTC） |
+| **独立时区** | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午4:00 | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午4:00 |1558263600000<br> （星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>11:00 AM UTC） |
 
 ### <a name="converting-unix-times"></a>转换 Unix 时间
 

@@ -13,32 +13,32 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ef5da72c39d06d021765500fb5d1e55299dfb1cc
-ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
+ms.openlocfilehash: 2c093adb4b63b5374de118d8d7dbb3421e352f46
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69896234"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541052"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps 常见问题和解决方法
 
 本文列出了你在使用 PowerApps 时可能遇到的一些常见问题。 并在适用情况下提供了解决方法。
 
-1. **使用验证器时在某些 Android 移动设备上登录问题**(2019 年8月21日)
+1. **使用身份验证器时，某些 Android 移动设备上的登录问题**（2019年8月21日）
 
-    在某些设备和方案中, 你可能会在使用验证器时遇到登录失败。 这是因为 OEM 限制了此功能。 有关错误和可能的缓解措施的详细信息, 请参阅[此处](https://github.com/AzureAD/azure-activedirectory-library-for-android/wiki/ADALError:-BROKER_AUTHENTICATOR_NOT_RESPONDING)。    
+    在某些设备和方案中，你可能会在使用验证器时遇到登录失败。 这是因为 OEM 限制了此功能。 有关错误和可能的缓解措施的详细信息，请参阅[此处](https://github.com/AzureAD/azure-activedirectory-library-for-android/wiki/ADALError:-BROKER_AUTHENTICATOR_NOT_RESPONDING)。    
 
-1. **Android 移动设备上的照相机问题**(1 月1日, 2019)
+1. **Android 移动设备上的照相机问题**（2019年1月1日）
 
-    如果相机控件停止在 Android 设备上工作, 请重新发布应用程序, 并将其重新打开到设备上。 照相机控件已更新以响应 Android 操作系统中的更改, 你的应用程序将在重新发布时从更新中获益。
+    如果相机控件停止在 Android 设备上工作，请重新发布应用程序，并将其重新打开到设备上。 照相机控件已更新以响应 Android 操作系统中的更改，你的应用程序将在重新发布时从更新中获益。
 
-1. **在灵活高度的库中滚动**(11 月27日, 2018)
+1. **在灵活高度的库中滚动**（11月27日，2018）
 
-    如果使用手指滚动时遇到限制, 请将其抬起, 并再次开始滚动。
+    如果使用手指滚动时遇到限制，请将其抬起，并再次开始滚动。
 
-1. **在 PowerApps For Windows 中, 用鼠标或触摸输入进行绘制不平滑**月.24, 2018)
+1. **在 PowerApps 中，用鼠标或触摸输入进行绘制不平滑**（2018年9月24日）
 
-    钢笔控件仅对在 Windows 应用中使用鼠标或触摸输入进行绘制的部分支持。 笔划可能是间歇性的。 对于平滑绘图, 请在浏览器中使用笔或运行应用程序。
+    钢笔控件仅对在 Windows 应用中使用鼠标或触摸输入进行绘制的部分支持。 笔划可能是间歇性的。 对于平滑绘图，请在浏览器中使用笔或运行应用程序。
 
 1. PowerApps Mobile 中的多个媒体控件（2018 年 8 月 2 日）
 
@@ -53,11 +53,11 @@ ms.locfileid: "69896234"
 
 1. <a name="out-of-memory"></a>浏览器内存不足（2018 年 7 月 23 日）
 
-    如果使用 PowerApps 时内存不足, 请考虑下载64位版本的 Chrome、Microsoft Edge 或 Internet Explorer。
+    如果使用 PowerApps 时内存不足，请考虑下载64位版本的 Chrome、Microsoft Edge 或 Internet Explorer。
 
 1. 从嵌入的应用启动网站（2018 年 5 月 10 日）
 
-    Internet Explorer 和 Microsoft Edge 浏览器可能会阻止启动处于受保护模式的 URL 或网站或者比加载的应用中的网站更低安全性的区域。 若要解决此问题，请为你的浏览器[更改安全和隐私设置](https://support.microsoft.com/en-us/help/17479/windows-internet-explorer-11-change-security-privacy-settings)。
+    Internet Explorer 和 Microsoft Edge 浏览器可能会阻止启动处于受保护模式的 URL 或网站或者比加载的应用中的网站更低安全性的区域。 若要解决此问题，请为你的浏览器[更改安全和隐私设置](https://support.microsoft.com/help/17479/windows-internet-explorer-11-change-security-privacy-settings)。
 
 1. 库中的组合框控件（2018 年 5 月 3 日）
 
@@ -65,7 +65,7 @@ ms.locfileid: "69896234"
 
 1. 使用自定义图像作为应用图标（2018 年 4 月 11 日）
 
-    在 PowerApps Studio for Windows 版本 3.18043 中，无法上传自定义图像以将其用作应用图标。 若要解决此问题，请使用 [PowerApps Studio for web](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上传自定义图像。 或者，可以使用 PowerApps Studio for Windows 中的一个图标并自定义背景色。
+    在 PowerApps Studio for Windows 版本 3.18043 中，无法上传自定义图像以将其用作应用图标。 若要解决此问题，请使用 [PowerApps Studio for web](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上传自定义图像。 或者，可以使用 PowerApps Studio for Windows 中的一个图标并自定义背景色。
 
 1. 跨应用复制和粘贴屏幕（2018 年 4 月 4 日）
 
@@ -101,7 +101,7 @@ ms.locfileid: "69896234"
 
 1. **在 Windows 8.1 上运行应用**
 
-    如果安装 [此适用于 Windows 8.1 的更新](https://technet.microsoft.com/library/security/ms16-118)，则无法运行在此操作系统上用 PowerApps Studio 打开的应用。 但是，你仍可以运行在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中打开的或使用 PowerApps Mobile 打开的应用。
+    如果安装 [此适用于 Windows 8.1 的更新](https://technet.microsoft.com/library/security/ms16-118)，则无法运行在此操作系统上用 PowerApps Studio 打开的应用。 但是，你仍可以运行在 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中打开的或使用 PowerApps Mobile 打开的应用。
 
 1. **带空格的列名称**
 
@@ -157,7 +157,7 @@ ms.locfileid: "69896234"
 
      有关详细信息，请参阅 [SharePoint Online](connections/connection-sharepoint-online.md#known-issues)。
 
-1. **共同创作不受支持。每次仅支持一位作者创作**。
+1. **不支持共同创作。一次一个作者，请**。
 
      如果多人同时修改同一应用，可能会损坏应用或覆盖他人所做的更改。 在他人编辑之前关闭应用。
 

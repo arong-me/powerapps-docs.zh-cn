@@ -1,109 +1,112 @@
 ---
-title: 在 PowerApps 中管理现有门户 | Microsoft Docs
-description: 有关在 PowerApps 中管理门户的说明。
+title: 管理 PowerApps 中的现有门户 |Microsoft Docs
+description: 在 PowerApps 中管理门户的说明。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 07/18/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 82fbc5d8cafa6af13af63eaff106ea028830bd01
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541907"
 ---
+# <a name="manage-existing-portals-in-powerapps"></a>管理 PowerApps 中的现有门户
 
-# <a name="manage-existing-portals-in-powerapps"></a>在 PowerApps 中管理现有门户
-
-[!include[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
-
-创建门户后，将立即在 PowerApps 主页的**最近应用程序**下显示该门户。
+创建门户后，它将显示在 PowerApps 主页的 "**最近使用的应用**" 部分下。
 
 > [!div class=mx-imgBorder]
-> ![最近应用程序](media/recent-apps.png "最近应用程序")  
+> ![最新应用](media/recent-apps.png "最新应用")  
 
-若要管理应用程序，请选择门户的**更多命令** (**…**)，然后从上下文菜单选择操作。
+若要管理应用，请为门户选择 "**更多命令**（ **...** ）"，然后从上下文菜单中选择 "操作"。
 
 > [!div class=mx-imgBorder]
-> ![门户应用程序选项](media/portal-app-options.png "门户应用程序选项")  
+> ![门户应用选项](media/portal-app-options.png "门户应用选项")  
 
 ## <a name="edit"></a>编辑
 
-打开[门户设计器](portal-designer-anatomy.md)以编辑门户的内容和组件。  
+打开[PowerApps 门户 Studio](portal-designer-anatomy.md)以编辑门户的内容和组件。  
 
 > [!div class=mx-imgBorder]
-> ![门户开发者](media/portal-maker.png "门户开发者")  
+> ![门户 maker](media/portal-maker.png "门户 maker")  
 
 ## <a name="browse"></a>浏览
 
-打开门户以浏览网站。 这将帮助您按照门户对客户的显示查看门户。
+打开门户以浏览网站。 这可以帮助你查看门户，因为它会对客户显示。
 
 > [!div class=mx-imgBorder]
 > ![门户网站](media/portal-website.png "门户网站")  
 
-此外，也可以通过在[门户设计器](portal-designer-anatomy.md)中选择**浏览网站**打开门户浏览网站，以便查看已对网站进行的更改。 将使用该网站的 URL 在新标签页中打开该网站。
+或者，还可以通过选择[PowerApps Portal Studio](portal-designer-anatomy.md)中的 "浏览"**网站**来浏览网站，以便查看对网站所做的更改。 网站将在新选项卡中打开，其中包含网站的 URL。
 
 ## <a name="share"></a>共享
 
-将门户与内部或外部用户共享。 执行**共享此门户**窗格中介绍的步骤。
+与内部或外部用户共享你的门户。 按照**共享此门户**窗格中所述的步骤操作。
 
 > [!div class=mx-imgBorder]
 > ![共享门户](media/share-portal.png "共享门户")  
 
 ### <a name="share-with-internal-users"></a>与内部用户共享
 
-若要与内部用户共享门户，首先必须创建安全角色，然后为用户分配该安全角色，使其可使用此门户。
+要与内部用户共享门户，必须首先创建安全角色，然后将用户分配到安全角色，以便他们能够使用门户。
 
 > [!NOTE]
-> 作为 Common Data Service 用户，如果您没有门户实体的相应权限，可能会看到“您无权查看此环境中的解决方案”。 或“您无权查看此环境中的网站”之类错误。 对于此预览，建议您获取相应 Common Data Service 数据库的**系统管理员**角色或至少获取**系统定制员**安全角色。
+> 作为 Common Data Service 中的用户，如果你没有门户实体的适当权限，你可能会看到一些错误，如 "你没有权限查看此环境中的解决方案。" 或 "你没有访问权限在此环境中查看网站"。 建议你处于相应 Common Data Service 数据库中的系统管理员安全角色。
 
-#### <a name="step-1-create-a-security-role"></a>步骤 1：创建安全角色
+#### <a name="step-1-create-a-security-role"></a>步骤1：创建安全角色
 
-1.  在**共享此门户**窗格中**创建安全角色**下选择**安全角色**。 将显示配置的所有安全角色的列表。
+1.  在 "**共享此门户**" 窗格的 "**创建安全角色**" 下，选择 "**安全角色**"。 将显示所有已配置安全角色的列表。
 
-2.  在“操作”工具栏上，选择**新建**。
+2.  在操作工具栏上，选择 "**新建**"。
 
-3.  在**新安全角色**窗口中，输入角色名称。
+3.  在 "**新建安全角色**" 窗口中，输入角色名称。
 
-4.  为门户中使用的所有实体设置权限。
+4.  设置门户中使用的所有实体的权限。
 
-5.  完成安全角色配置时，在工具栏上选择**保存并关闭**。
+5.  完成配置安全角色后，请在工具栏上选择 "**保存并关闭**"。
 
-有关安全角色和特权的信息，请参阅[安全角色和特权](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/security-roles-privileges)。  
+有关安全角色和权限的信息，请参阅[安全角色和特权](https://docs.microsoft.com/power-platform/admin/security-roles-privileges)。
 
-#### <a name="step-2-assign-users-to-the-security-role"></a>步骤 2：将用户分派给安全角色
+#### <a name="step-2-assign-users-to-the-security-role"></a>步骤2：将用户分配到安全角色
 
-1.  在**共享此门户**窗格中，在**向安全角色分派用户**下选择**用户**。 将显示所有用户的列表。
+1.  在 "**共享此门户**" 窗格的 "**将用户分配到安全角色**" 下，选择 "**用户**"。 将显示所有用户的列表。
 
-2.  选择要为其分派安全角色的用户。
+2.  选择要为其分配安全角色的用户。
 
-3.  选择**管理角色**。
+3.  选择“管理角色”。
 
     > [!NOTE]
-    > 如果在命令栏上无法看到**管理角色**按钮，必须通过将 URL 中的 forceUCI 设置为 0 来更改客户端。 例如，https://&lt;org\_url&gt;/main.aspx?pagetype=entitylist&etn=systemuser&forceUCI=0
+    > 如果在命令栏上看不到 "**管理角色**" 按钮，则必须通过在 URL 中将 forceUCI 设置为0来更改客户端。 例如， https://&lt;org\_url&gt;/main.aspx？ pagetype = entitylist & etn = systemuser & forceUCI = 0
 
-4.  在**管理用户角色**对话框中，选择您之前创建的安全角色，然后选择**确定**。
+4.  在 "**管理用户角色**" 对话框中，选择之前创建的安全角色，然后选择 **"确定"** 。
 
 ### <a name="share-with-external-users"></a>与外部用户共享
 
-您的门户应该以匿名方式运行，并且外部用户可以访问。 如果要尝试用于管理外部用户的角色和权限的高级功能，请参阅[配置在门户中使用的联系人](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/configure-contacts)、[为门户邀请联系人](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/invite-contacts)、[为门户创建 Web 角色](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/create-web-roles)、[分派实体权限](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/assign-entity-permissions)。  
+门户应以匿名方式工作，并且可供外部用户访问。 如果你想要尝试高级功能来管理外部用户的角色和权限，请参阅[配置用于门户的联系人](configure/configure-contacts.md)、[邀请联系人到](configure/invite-contacts.md)门户、[创建门户 web 角色](configure/create-web-roles.md)、[分配实体权限](configure/assign-entity-permissions.md).  
 
 ## <a name="settings"></a>设置
 
-显示门户设置，并可用于更改门户的名称。 也可以执行高级查找，如通过门户管理中心管理门户和处理站点设置。 设置提供 PowerApps 门户管理中心和站点设置的链接。 详细信息：[管理您的门户](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/manage-portal)和[配置门户的网站设置](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/configure-site-settings)。  
+显示门户设置，并允许您更改门户的名称。 你还可以执行高级操作，例如通过 PowerApps 门户管理中心和使用站点设置来管理门户。 设置提供指向 PowerApps 门户管理中心和站点设置的链接。 详细信息：[高级门户管理](admin/admin-overview.md)和[配置站点设置](configure/configure-site-settings.md)。  
 
 > [!div class=mx-imgBorder]
 > ![门户设置](media/portal-settings.png "门户设置")  
 
-## <a name="delete"></a>删除
+## <a name="delete"></a>Delete
 
-删除门户和托管资源。 删除门户时，其 URL 将变为不可访问。 删除门户不影响环境中的所有门户配置或解决方案，它们将保持原样。
-必须手动删除门户配置，才能从环境中完全删除门户配置。 方法是，使用门户管理应用程序，并删除门户的相应网站记录。
+删除门户和托管资源。 删除门户时，其 URL 变为不可访问。 删除门户不会影响环境中存在的任何门户配置或解决方案，它们将保持原样。
+必须手动删除门户配置才能从环境中完全删除门户配置。 为此，请使用门户管理应用，并为门户删除相应的网站记录。
 
 > [!NOTE]
-> 如果权限不足，无法删除门户，将显示错误。 为此，您必须具有系统定制员或系统管理员角色才能删除门户。 此外，还必须是 Azure Active Directory 中的门户应用程序负责人。 创建门户的用户默认为负责人，可以删除门户。 有关将自己添加为负责人的信息，请参阅[将自己添加为 Azure AD 应用程序的负责人](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/manage-portal#to-add-yourself-as-an-owner-of-the-azure-ad-application)。
+> 如果没有足够的权限删除门户，则会显示错误。 您必须具有 "系统管理员" 角色才能删除门户。 此外，你必须是 Azure Active Directory 中的门户应用程序的所有者。 默认情况下，创建门户的用户是所有者，可以删除门户。 有关将自己添加为所有者的信息，请参阅[将自己添加为 Azure AD 应用程序的所有者](admin/admin-overview.md#add-yourself-as-an-owner-of-the-azure-ad-application)。
 
 ## <a name="details"></a>详细信息
 
-显示详细信息，如门户的负责人，门户的创建和上次修改日期和时间，以及门户的 URL。
+显示详细信息，如门户所有者、创建和上次修改的日期和时间，以及门户的 URL。
 
 > [!div class=mx-imgBorder]
 > ![门户详细信息](media/portal-details.png "门户详细信息")  

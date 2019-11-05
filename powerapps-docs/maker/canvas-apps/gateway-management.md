@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 90a0bd777e808bb3aaab10b249d4fd765fbad654
-ms.sourcegitcommit: 6984ce43cc5653ccb957219d2a687907ebb5520c
+ms.openlocfilehash: 54d8fb369cb63721de16c5bf280660dbd15796b5
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72560919"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541296"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>在 PowerApps 中管理本地数据网关
 
@@ -46,7 +46,7 @@ ms.locfileid: "72560919"
 
 ## <a name="view-and-manage-gateway-permissions"></a>查看和管理网关权限
 
-1. 在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 的左侧导航栏中，依次单击或点击“**网关**”和一个网关。
+1. 在 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 的左侧导航栏中，依次单击或点击“**网关**”和一个网关。
 
 2. 通过单击或点击“**用户**”，指定用户或组，然后指定权限级别来将用户添加到网关：
 
@@ -58,7 +58,7 @@ ms.locfileid: "72560919"
 
 ## <a name="view-and-manage-gateway-connections"></a>查看和管理网关连接
 
-1. 在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 的左侧导航栏中，依次单击或点击“**网关**”和一个网关。
+1. 在 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 的左侧导航栏中，依次单击或点击“**网关**”和一个网关。
 
 2. 依次单击或点击“连接”和一个连接，查看连接的详细信息、编辑设置或删除连接。
 

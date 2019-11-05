@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2ce09240aa30c1f98926fb109a57f63c230e8d4b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 420728d60555c3aeaf5fd5e844a900d412b0c3ef
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987635"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540968"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>在 PowerApps 中向画布应用添加数据连接
 
@@ -29,11 +29,11 @@ ms.locfileid: "71987635"
 * 连接到 OneDrive，并在应用中管理 Excel 工作簿中的数据。
 * 连接到 Twilio，并从应用发送短信。
 * 连接到 Common Data Service，并更新应用程序中的实体。
-* 连接 SQL Server，然后通过应用更新表。
+* 连接到 SQL Server，并从应用更新表。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
-[注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+[注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 ## <a name="open-a-blank-app"></a>打开一个空白应用
 

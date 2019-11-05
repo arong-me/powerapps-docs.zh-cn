@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d12f667c1ff1fbf8424840b887e0f9394197ee2c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 6b3a33f327aab7e4f02c954dbd31c412e35dd661
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986053"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73539177"
 ---
-# <a name="tutorial-customize-a-gallery-in-powerapps"></a>指导在 PowerApps 中自定义库
+# <a name="tutorial-customize-a-gallery-in-powerapps"></a>教程：在 PowerApps 中自定义库
 
 本教程将自定义一个记录列表（称为一个库），以及对已在 Microsoft PowerApps 中自动生成的应用进行其他更改。 即使不进行这些更改，用户也可以管理应用中的数据，但是，如果对其进行自定义来满足组织需要，则可以更加轻松使用该应用。
 
@@ -43,15 +43,15 @@ ms.locfileid: "71986053"
 
 本教程从一个由特定数据源生成的应用开始。 但是，相同的概念适用于在 PowerApps 中生成（无论从 SharePoint 列表、Excel 表还是某些其他数据源生成）的任何应用。
 
-如果没有注册 PowerApps，请在开始使用之前先[免费注册](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+如果没有注册 PowerApps，请在开始使用之前先[免费注册](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 从 Common Data Service 的 "**帐户**" 实体[生成应用](data-platform-create-app.md)。
 
 ## <a name="open-the-generated-app"></a>打开生成的应用
 
-1. 登录 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后选择左边缘附近的“应用”。
+1. 登录 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后选择左边缘附近的“应用”。
 
 1. 找到你生成的应用，选择其省略号图标 (...)，然后选择“编辑”。
 

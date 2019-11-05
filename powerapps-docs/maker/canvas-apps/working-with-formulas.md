@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7865b2123f0d179d5d132cca838684f0c83cfd31
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 715f82a1db2c8a4bb495e41b45a3911182024158
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994796"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541610"
 ---
 # <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>PowerApps 中的画布应用公式入门
 
@@ -33,9 +33,9 @@ ms.locfileid: "71994796"
 
 本主题仅提供使用公式的概述。 浏览 [公式引用](formula-reference.md) 了解详细信息以及可以使用的函数、运算符和其他构建基块的完整列表。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
-* [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+* [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 * 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
 
 ## <a name="show-a-simple-value"></a>显示简单值
@@ -51,8 +51,8 @@ ms.locfileid: "71994796"
 
     此栏包括两个部分：
 
-   * *属性列表*：每个控件和屏幕都有一[组属性](reference-properties.md)。  使用此列表选择特定属性。  
-   * *公式*：要为此属性计算的公式，由[值、运算符和函数](formula-reference.md)组成。
+   * *属性列表*：每个控件和屏幕均有一个 [属性集](reference-properties.md)。  使用此列表选择特定属性。  
+   * *公式*：要针对此属性计算的公式，由 [值、运算符和函数](formula-reference.md) 组成。
 
      在编辑栏中，可以查看并编辑所选控件的属性或屏幕的属性（若未选择任何控件）。  可以在“**内容**”选项卡上查看所选控件的名称：
 

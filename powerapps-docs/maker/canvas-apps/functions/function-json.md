@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ba852093da05c3fa69cc47b219a0bef65908c170
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 13219dad84e693582ee649a11013d78b6fc69544
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71992621"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73538930"
 ---
 # <a name="json-function-in-powerapps"></a>PowerApps 中的 JSON 函数
 
@@ -26,7 +26,7 @@ ms.locfileid: "71992621"
 
 ## <a name="description"></a>描述
 
-**JSON**函数以文本的形式返回数据结构的 JAVASCRIPT 对象表示法（JSON）表示形式，以便它适合在网络中进行存储或传输。 [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf)和[IETF RFC 8259](https://tools.ietf.org/html/rfc8259)介绍了 JavaScript 和其他编程语言广泛使用的格式。
+**JSON**函数以文本的形式返回数据结构的 JAVASCRIPT 对象表示法（JSON）表示形式，以便它适合在网络中进行存储或传输。 [ECMA-404](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf)和[IETF RFC 8259](https://tools.ietf.org/html/rfc8259)介绍了 JavaScript 和其他编程语言广泛使用的格式。
 
 画布应用支持此表列出的[数据类型](data-types.md)以及有关其文本表示形式的详细信息：
 
@@ -47,7 +47,7 @@ ms.locfileid: "71992621"
 | **两 &nbsp;option** | 这两个选项的布尔值（ *true*或*false*），而不是用于显示的标签。 使用布尔值，因为它是独立于语言的。 | `false` |
 | **超链接、文本** | 双引号。 函数使用反斜杠转义嵌入的双引号，将换行符替换为 "\n"，并进行其他标准 JavaScript 替换。 | `"This is a string."` |
 
-指定可选的*格式*参数以控制结果的可读性，以及如何处理不受支持的和二进制数据类型。 默认情况下，输出尽可能简洁，无需空格或换行符，不允许使用不受支持的数据类型和二进制数据。 如果指定**&** 运算符，则可以组合多种格式。
+指定可选的*格式*参数以控制结果的可读性，以及如何处理不受支持的和二进制数据类型。 默认情况下，输出尽可能简洁，无需空格或换行符，不允许使用不受支持的数据类型和二进制数据。 如果指定 **&** 运算符，则可以组合多种格式。
 
 | JSONFormat 枚举 | 描述 |
 |-----------------|-------------|
@@ -95,7 +95,7 @@ ms.locfileid: "71992621"
     > [!div class="mx-imgBorder"]
     > ![CitiesByCountry 集合](media/function-json/cities-grouped.png)
 
-    你还可以通过以下方式显示此集合：选择 "**文件**"**"**  > ** >   > "** "" "" "" "" "公式栏下的集合名称旁的向下箭头。
+    你还可以通过以下方式显示此集合：选择 "**文件**" **"**  >  ** >   > "** "" "" "" "" "公式栏下的集合名称旁的向下箭头。
 
     > [!div class="mx-imgBorder"]
     > 在公式栏的结果视图中 ![集合](media/function-json/cities-grouped-resultview.png)

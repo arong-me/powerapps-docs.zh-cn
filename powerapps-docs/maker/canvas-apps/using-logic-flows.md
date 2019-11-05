@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1e5c90fcc6e4f8d4c8e1d73eadc9a31fdbfe48ef
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: bb39701a61bcfb75c6fd66e90fc7a5002efcc410
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988303"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541629"
 ---
 # <a name="start-a-flow-in-a-canvas-app"></a>启动画布应用中的流
 
@@ -27,14 +27,14 @@ ms.locfileid: "71988303"
 > [!NOTE]
 > 当用户在应用内运行流时，该用户必须具有执行流中指定的任务的权限。 否则，流将失败。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 - [注册](../signup-for-powerapps.md) PowerApps。
 - 了解如何[配置控件](add-configure-controls.md)。
 
 ## <a name="create-a-flow"></a>创建流
 
-1. 登录 [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 登录 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 1. 在左侧导航栏中，选择 "**业务逻辑**"，然后选择 "**流**"。
 

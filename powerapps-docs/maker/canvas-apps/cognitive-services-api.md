@@ -1,6 +1,6 @@
 ---
 title: 在 PowerApps 中使用认知服务 | Microsoft 文档
-description: 构建使用 Azure 认知服务文本分析 API 分析文本的基本画布应用。
+description: 构建一个使用 Azure 认知服务文本分析 API 的基本画布应用来分析文本。
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -13,21 +13,21 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ee3f7684ed1636cf2445945d1d01507733c18625
-ms.sourcegitcommit: dd74c98f48587730466e6669fc94da250d5c631e
+ms.openlocfilehash: a998ca743fe693645adaabbd32d4d3110c12068a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2019
-ms.locfileid: "66224932"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540854"
 ---
 # <a name="use-cognitive-services-in-powerapps"></a>在 PowerApps 中使用认知服务
-本文介绍如何生成使用的基本画布应用[Azure 认知服务文本分析 API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview)分析文本。 我们将介绍如何设置文本分析 API，以及如何使用[文本分析连接器](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/)连接到它。 随后将介绍如何创建调用此 API 的画布应用。
+本文介绍如何构建使用[Azure 认知服务文本分析 API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview)来分析文本的基本画布应用。 我们将介绍如何设置文本分析 API，以及如何使用[文本分析连接器](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/)连接到它。 随后将介绍如何创建调用此 API 的画布应用。
 
 > [!NOTE]
 > 如果是刚开始接触在 PowerApps 中生成应用，建议先阅读[从头开始创建应用](get-started-create-from-blank.md)，再深入研究本文。
 
 ## <a name="introduction-to-azure-cognitive-services"></a>Azure 认知服务简介
-Azure 认知服务是一组 Api、 Sdk 和服务可使您的应用程序更加智能、 富有吸引力和可发现性。 借助这些服务，你可以轻松地将智能功能添加到应用程序，这些功能包括表情和视频检测；面部、语音和视觉识别；以及语音和语言理解等。
+Azure 认知服务是一组 Api、Sdk 和服务，可让应用程序更智能、更具吸引力和可发现。 借助这些服务，你可以轻松地将智能功能添加到应用程序，这些功能包括表情和视频检测；面部、语音和视觉识别；以及语音和语言理解等。
 
 本文重点介绍如何通过文本分析 API 添加“语言理解”功能。 通过此 API 可以检测文本中的感情、关键词语、主题和语言。 我们先体验一下此 API 的演示，然后再注册预览版。
 
@@ -40,14 +40,14 @@ Azure 认知服务是一组 Api、 Sdk 和服务可使您的应用程序更加�
    
     ![文本分析 API 演示](./media/cognitive-services-api/text-analytics-demo.png)
 
-3. 此页将显示“已分析的文本”选项卡上的格式化结果和“JSON”选项卡上的 JSON 响应。[JSON](http://json.org/) 是一种表示数据的方法；在本示例中，是文本分析 API 返回的数据。
+3. 此页显示 "**分析文本**" 选项卡上的格式化结果，并显示**json**选项卡上的 json 响应。 [json](https://json.org/)是表示数据的一种方式，在这种情况下，文本分析 API 返回的数据。
 
 ## <a name="sign-up-for-the-text-analytics-api"></a>注册文本分析 API
 可免费获取此 API 的预览版，并且它与 Azure 订阅相关联。 可通过 Azure 门户管理此 API。
 
 1. 如果还没有 Azure 订阅，可以[注册免费订阅](https://azure.microsoft.com/free/)。
 
-2. 在中[本页](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesTextAnalytics)，按照下图显示了输入文本分析 api，信息。 选择“F0”（免费）定价层。
+2. 在[此页](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesTextAnalytics)中输入文本分析 API 的信息，如下图所示。 选择“F0”（免费）定价层。
    
     ![创建文本分析 API](./media/cognitive-services-api/azure-create.png)
 
@@ -71,7 +71,7 @@ Azure 认知服务是一组 Api、 Sdk 和服务可使您的应用程序更加�
 ### <a name="create-the-app-and-add-a-connection"></a>创建应用并添加连接
 首先，创建空白手机应用，并添加与文本分析连接器的连接。 如果需要关于这些任务的详细信息，请参阅[从头开始创建应用](get-started-create-from-blank.md)和[管理 PowerApps 中的连接](add-manage-connections.md)。
 
-1. 在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中，依次选择“从空白开始” > ![手机应用图标](./media/cognitive-services-api/icon-phone-app.png)（手机）>“生成此应用”。
+1. 在 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中，依次选择“从空白开始” > ![手机应用图标](./media/cognitive-services-api/icon-phone-app.png)（手机）>“生成此应用”。
 
     ![从空白开始](./media/cognitive-services-api/start-from-blank.png)
 
@@ -172,7 +172,7 @@ If( chkSentiment.Value = true,
 
   * 在 DetectLanguage() 中，将 numberOfLanguagesToDetect 硬编码为 1。不过，也可以根据应用中的某逻辑传递此参数。
 
-  * 在中**keyphrases （)** 并**detectsentiment （)** ，**语言**是硬编码为"en"，但您可以传递此参数基于应用程序中的一些逻辑。 例如，可以先检测语言，再根据 DetectLanguage() 返回的内容设置此参数。
+  * 在**KeyPhrases （）** 和**DetectSentiment （）** 中，**语言**将硬编码为 "en"，但你可以根据应用中的某些逻辑传递此参数。 例如，可以先检测语言，再根据 DetectLanguage() 返回的内容设置此参数。
 
 * 针对执行的各个调用，将结果添加到相应的集合：
 

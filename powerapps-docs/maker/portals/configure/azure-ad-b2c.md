@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: aead447bbab7f6e5758cdea0a9c6be5c0e8f41e2
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 5f902dd900e074c2e6b3f08f8848475dcd907ee4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978384"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542824"
 ---
 # <a name="azure-ad-b2c-provider-settings-for-portals"></a>门户的 Azure AD B2C 提供程序设置
 
@@ -36,7 +36,7 @@ ms.locfileid: "72978384"
 
 1. 登录到[Azure 门户](https://portal.azure.com/)。
 2. [创建 Azure AD B2C 租户](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-get-started)。
-3. 选择最左侧导航栏**[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C** 。
+3. 选择最左侧导航栏 **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C** 。
 4. [创建 Azure 应用程序](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration#register-a-web-application)。
 
    > [!Note]
@@ -470,12 +470,12 @@ ms.locfileid: "72978384"
 ### <a name="step-5-includeazureincludespn-azure-shortestmd-configuration"></a>步骤5： [!include[Azure](../../../includes/pn-azure-shortest.md)] 配置
 
 1. 登录到 [!include[Azure portal](../../../includes/pn-azure-portal.md)]。
-2. 导航到**[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C 租户管理**边栏选项卡。
+2. 导航到 **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C 租户管理**边栏选项卡。
 3. 导航到 "**设置**" > **注册或登录策略**。 将显示可用策略的列表。
 4. 选择要编辑的策略。
 5. 选择 "**编辑**"。
 6.  > **统一注册或登录页**上，选择 "**编辑策略**" > **页面 UI 自定义**"
-7. 将 "**使用自定义页**" 设置为 **"是"**。
+7. 将 "**使用自定义页**" 设置为 **"是"** 。
 8. 将**自定义页面 URI**设置为在此过程的步骤3中创建的 [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C 自定义页面网页的 URL。 例如，`https://mydomain.com/azure-ad-b2c-sign-in`。
 9. 选择“确定”。
 
@@ -497,7 +497,7 @@ ms.locfileid: "72978384"
 
 **格式**： attribute1 = claim1，attribute2 = claim2，attribute3 = claim3
 
-例如： firstname =<http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle>
+例如： firstname =<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle>
 
 > [!NOTE]
 > 确保将电子邮件地址映射到联系人的主电子邮件（emailaddress1）。 如果已将辅助电子邮件（emailaddress2）或备用电子邮件（emailaddress3）添加到联系人记录，并将其映射到电子邮件，则将不会向联系人添加标识信息，并将使用用于注册的电子邮件地址创建新的电子邮件地址主电子邮件（emailaddress1）。
@@ -512,7 +512,7 @@ Common Data Service 和标识提供程序中的数据不是直接链接的，因
 
 **格式**： attribute1 = claim1，attribute2 = claim2，attribute3 = claim3
 
-例如： firstname =<http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle> 
+例如： firstname =<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle> 
 
 声明名称是在 "登录策略" 应用程序声明中的特性旁边列出的声明类型字段。
 

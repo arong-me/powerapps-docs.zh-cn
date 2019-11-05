@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ac4699818c7f5b3a136db122fad9621d865bf5f1
-ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
+ms.openlocfilehash: 99594d99aa0ab1ae4971f3ec2eb1987bb7dcfbcc
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256108"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73539019"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>将画布应用集成到网站和其他服务中
 如果你构建的应用程序可供用户进行工作，则这些应用程序通常最有用。 通过将画布应用嵌入 iframe，你可以将这些应用集成到网站和其他服务中，如 Power BI 或 SharePoint。
@@ -42,11 +42,11 @@ https://apps.powerapps.com/play/[AppID]?source=iframe
 ```
 
 > [!IMPORTANT]
-> 截至2019年8月，URI 格式已从 https://web.powerapps.com/webplayer 更改为。 https://apps.powerapps.com/play 请更新任何嵌入的 iframe 以使用新的 URI 格式。 对以前格式的引用将重定向到新 URI 以确保兼容性。
+> 截至2019年8月，URI 格式已从 https://make.powerapps.com/webplayer 更改为 https://apps.powerapps.com/play 。 请更新任何嵌入的 iframe 以使用新的 URI 格式。 对以前格式的引用将重定向到新 URI 以确保兼容性。
 >
 > 先前格式：
 > 
-> https\://web.powerapps.com/webplayer/iframeapp？ source = iframe & appId =/providers/Microsoft.PowerApps/apps/[appId]
+> https\://make.powerapps.com/webplayer/iframeapp？ source = iframe & appId =/providers/Microsoft.PowerApps/apps/[AppID]
 
 只需将 URI 中的 [AppID] 替换成应用 ID（包括 '[' & ']'）。 稍后，我们将介绍如何获取此值，而现在将先介绍 URI 中的所有参数：
 

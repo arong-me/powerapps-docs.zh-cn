@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 0dba1794f15a710e43feaec3ca6d4d2dbc9c5fc3
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 2b4d31165ccd12b2cb5c8c2a4c8ec6f9dd04a7c7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978476"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542790"
 ---
 # <a name="configure-open-id-connect-provider-settings-for-portals"></a>为门户配置打开 ID 连接提供程序设置
 
-[OpenID connect](http://openid.net/connect/)外部标识提供程序是符合 Open ID Connect[规范](http://openid.net/developers/specs/)的服务。 集成提供程序涉及查找与提供程序关联的颁发机构（或颁发者） URL。 可以从提供身份验证工作流过程中所需的元数据的颁发机构确定配置 URL。 提供程序设置基于[OpenIdConnectAuthenticationOptions](https://msdn.microsoft.com/library/microsoft.owin.security.openidconnect.openidconnectauthenticationoptions.aspx)类的属性。
+[OpenID connect](https://openid.net/connect/)外部标识提供程序是符合 Open ID Connect[规范](https://openid.net/developers/specs/)的服务。 集成提供程序涉及查找与提供程序关联的颁发机构（或颁发者） URL。 可以从提供身份验证工作流过程中所需的元数据的颁发机构确定配置 URL。 提供程序设置基于[OpenIdConnectAuthenticationOptions](https://msdn.microsoft.com/library/microsoft.owin.security.openidconnect.openidconnectauthenticationoptions.aspx)类的属性。
 
 颁发机构 Url 的示例如下：
 
@@ -40,7 +40,7 @@ ms.locfileid: "72978476"
 4. 对于 "**登录 URL** " 和 "**应用 ID URI**"，请为这两个字段指定门户的 URL https://portal.contoso.com/
 5. 此时，将创建一个新的应用程序。 导航至菜单中的 "**配置**" 部分。
 
-    在 "**单一登录**" 部分下，更新 "第一个**回复 url** " 条目以在 URL 中包含路径： http://portal.contoso.com/signin-azure-ad 。 这对应于**RedirectUri**站点设置值
+    在 "**单一登录**" 部分下，更新 "第一个**回复 url** " 条目以在 URL 中包含路径： https://portal.contoso.com/signin-azure-ad 。 这对应于**RedirectUri**站点设置值
 
 6. 在 "**属性**" 部分下，找到 "**客户端 ID** " 字段。 这对应于**ClientId**站点设置值。
 7. 在页脚菜单中，选择 "**查看终结点**"，并记下 "**联合元数据文档**" 字段
@@ -94,13 +94,13 @@ URL 的左侧部分是**授权**值，采用以下格式之一：
 |       身份验证/OpenIdConnect/\[提供程序\]/NameClaimType        |                                                                                                                                                                              ClaimsIdentity 用于存储名称声明的声明类型。                                                                                                                                                                              |
 |       身份验证/OpenIdConnect/\[提供程序\]/RoleClaimType        |                                                                                                                                                                              ClaimsIdentity 用于存储角色声明的声明类型。                                                                                                                                                                              |
 |   身份验证/OpenIdConnect/\[提供程序\]/RequireExpirationTime    |                                                                                                                                                                              一个值，该值指示令牌是否必须具有 "过期" 值。                                                                                                                                                                              |
-|    身份验证/OpenIdConnect/\[提供程序\]/RequireSignedTokens     |                                                                                                                               一个值，该值指示 System.identitymodel xmlns =<http://ddue.schemas.microsoft.com/authoring/2003/5> 在未签名时是否有效。                                                                                                                                |
+|    身份验证/OpenIdConnect/\[提供程序\]/RequireSignedTokens     |                                                                                                                               一个值，该值指示 System.identitymodel xmlns =<https://ddue.schemas.microsoft.com/authoring/2003/5> 在未签名时是否有效。                                                                                                                                |
 |      身份验证/OpenIdConnect/\[提供程序\]/SaveSigninToken       |                                                                                                                                                                        用于控制在创建会话时是否保存原始标记的布尔值。                                                                                                                                                                        |
 |       身份验证/OpenIdConnect/\[提供程序\]/ValidateActor        |                                                                                                                                                            一个值，该值指示是否应验证 System.identitymodel. JwtSecurityToken。                                                                                                                                                            |
 |      身份验证/OpenIdConnect/\[提供程序\]/ValidateAudience      |                                                                                                                                                                       用于控制是否将在令牌验证过程中验证受众的布尔值。                                                                                                                                                                        |
 |       身份验证/OpenIdConnect/\[提供程序\]/ValidateIssuer       |                                                                                                                                                                        用于控制是否将在令牌验证过程中验证颁发者的布尔值。                                                                                                                                                                         |
 |      身份验证/OpenIdConnect/\[提供程序\]/ValidateLifetime      |                                                                                                                                                                       用于控制是否将在令牌验证过程中验证生存期的布尔值。                                                                                                                                                                        |
-|  身份验证/OpenIdConnect/\[提供程序\]/ValidateIssuerSigningKey  |                                                                                                                  一个布尔值，控制是否调用对 securityToken xmlns =<http://ddue.schemas.microsoft.com/authoring/2003/5> 进行签名的 System.identitymodel。                                                                                                                  |
+|  身份验证/OpenIdConnect/\[提供程序\]/ValidateIssuerSigningKey  |                                                                                                                  一个布尔值，控制是否调用对 securityToken xmlns =<https://ddue.schemas.microsoft.com/authoring/2003/5> 进行签名的 System.identitymodel。                                                                                                                  |
 |                                                                      |                                                                                                                                                                                                                                                                                                                                                                                                                              |
 
 ## <a name="enable-authentication-using-a-multi-tenant-azure-active-directory-application"></a>使用多租户 Azure Active Directory 应用程序启用身份验证

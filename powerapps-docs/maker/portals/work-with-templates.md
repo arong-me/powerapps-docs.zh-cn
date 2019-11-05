@@ -1,42 +1,46 @@
 ---
-title: 使用模板 | Microsoft Docs
-description: 有关在门户中使用模板的说明。
+title: 使用模板 |Microsoft Docs
+description: 使用门户中的模板的说明。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 07/18/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 207a1abdfc8145c38b8d6222f71281ce714e8947
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542368"
 ---
+# <a name="work-with-templates"></a>使用模板
 
-# <a name="work-with-templates"></a>有关模板的操作
+根据预配的门户，可以使用内置模板。 您可以使用代码编辑器来编辑模板。 例如，在预配 Common Data Service 初学者门户时，可以使用以下内置模板：
 
-可使用代码编辑器编辑内置模板。 可编辑以下模板：
+- 默认 studio 模板
+- 带有标题的页面
+- 具有子链接的页面
 
-- 100% 空白页
-- 空白页
-- 带标题的空白页
-- 登陆页
-- 带子链接的页面
-- 带侧面导航的页面
 
 > [!NOTE]
-> 建议不要编辑**配置文件**和**搜索**模板。
+> 建议不要编辑**默认的 studio 模板**、**配置文件**和**搜索**模板。
 
-若要在代码编辑器中打开模板：
+在代码编辑器中打开模板：
 
-1.  [编辑门户](manage-existing-portals.md#edit)以在门户设计器中将其打开。  
+1.  [编辑门户](manage-existing-portals.md#edit)以在 PowerApps portal Studio 中将其打开。  
 
-2.  从屏幕左侧的工具栏中选择**模板** ![模板图标](media/templates-icon.png "模板图标")。 将显示可用模板。  
+2.  在屏幕左侧的 toolbelt 中选择 "**模板**![模板" 图标](media/templates-icon.png "模板图标")。 将显示可用模板。  
 
     > [!div class=mx-imgBorder]
     > ![模板窗格](media/templates-pane.png "模板窗格")  
 
-3.  选择所需模板将其在代码编辑器中打开。
+3.  选择所需的模板以在代码编辑器中打开它。
 
-4.  编辑代码，然后保存更改。
+4.  编辑代码并保存更改。
 
 > [!NOTE]
-> 您还可以在源代码编辑器中添加 Liquid 标记以进行高级配置。 详细信息：[使用 Liquid 模板](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/custom-templates-dynamic-content)
+> - 你还可以在源代码编辑器中添加液体标记以进行高级配置。 详细信息：[使用液体模板](liquid/liquid-overview.md)
+> - 使用[门户管理应用](configure/configure-portal.md)创建的页面模板还会显示在 "**模板**" 窗格中。

@@ -13,20 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9d16e4c7b8d15611b06644520c0ee39417fd3ee0
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 29fcc240bdf0dbe926acb702c26d535fb4536c16
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994710"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73537115"
 ---
 # <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>在 PowerApps 中添加和配置画布应用控件
 
 将各种 UI 元素添加到画布应用中，然后直接在“属性”选项卡的工具栏或编辑栏中配置其各方面外观和行为。 这些 UI 元素称为“控件”，配置的各方面外观和行为称为“属性”。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
-1. 如果还没有 PowerApps 许可证，请[注册](../signup-for-powerapps.md)，然后[登录](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 如果还没有 PowerApps 许可证，请[注册](../signup-for-powerapps.md)，然后[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 1. 在 "**制作自己的应用**" 下，将鼠标悬停在**画布应用上，从空白开始**，然后选择 "**生成此应用**"。
 1. 如果系统提示你执行简介教程，请选择 "**下一步**" 以熟悉 PowerApps 界面的关键区域（或选择 "**跳过**"）。
 

@@ -13,20 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 375c4f19ed7715eed662c8456c539d5590c9f1ec
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1c930c233f96a481700748960f90d731be397af0
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993206"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540316"
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>在画布应用中创建和更新集合
 
-使用集合来存储用户可以在应用中管理的数据。 集合是一组类似的项，例如产品列表中的产品。 有关不同类型的变量的详细信息，例如集合：[了解画布应用变量](working-with-variables.md)。
+使用集合来存储用户可以在应用中管理的数据。 集合是一组类似的项，例如产品列表中的产品。 有关不同类型的变量（例如集合）的详细信息，请[了解画布应用变量](working-with-variables.md)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
-- [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+- [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 - 在 PowerApps 中创建一个应用，或打开一个现有应用。
 - 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
 
@@ -128,7 +128,7 @@ ms.locfileid: "71993206"
 
 1. 可有可无若要预览所创建的集合，请在 "**文件**" 菜单上选择 "**集合**"。
 
-有关如何在库中显示 SharePoint 列表中的数据（如日期、选项和人员）的信息，请执行以下操作：[显示库中的列表列](connections/connection-sharepoint-online.md#show-list-columns-in-a-gallery)。 有关如何在窗体中显示数据的信息（使用下拉列表、日期选取器和人员选取器）：[编辑窗体和显示窗体控件](controls/control-form-detail.md)。
+有关如何在库中显示 SharePoint 列表（如日期、选项和人员）的数据的信息，请查看库中的[列表列](connections/connection-sharepoint-online.md#show-list-columns-in-a-gallery)。 有关如何在窗体中显示数据的信息（使用下拉列表、日期选取器和人员选取器）：[编辑窗体和显示窗体控件](controls/control-form-detail.md)。
 
 ## <a name="next-steps"></a>后续步骤
 

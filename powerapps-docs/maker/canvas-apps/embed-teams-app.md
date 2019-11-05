@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 42075fbaee40ec98bec0d47e6bfd3c00dc6f9ef6
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e2cce61533bf86063d907882024a5a83c2e03fb7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73182505"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73539001"
 ---
-# <a name="embed-an-app-in-teams"></a>在团队中嵌入应用
+# <a name="embed-an-app-in-teams"></a>在 Teams 中嵌入应用
 
 你可以共享已创建的 PowerApps，只需要将其直接嵌入 Microsoft 团队即可。 完成后，用户可以选择 **+** 将你的应用添加到你所在团队中的**任意团队频道**或会话。 应用在**你的团队的选项卡**下显示为磁贴。
 
@@ -36,7 +36,7 @@ ms.locfileid: "73182505"
 
 ## <a name="download-the-app"></a>下载应用程序
 
-1. 登录到[web.powerapps.com](https://web.powerapps.com)，然后在菜单中选择 "**应用**"。
+1. 登录到[make.powerapps.com](https://make.powerapps.com)，然后在菜单中选择 "**应用**"。
 
     ![显示应用列表](./media/embed-teams-app/file-apps2.png "显示应用列表")
 

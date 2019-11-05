@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3a25654f0304fce9978ae1f7b1410cfb557ef32c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 3144f2f6517cbaa641227ff7b2f9482ed1d2e476
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995279"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542436"
 ---
 # <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>在 PowerApps 库中显示数据，并对数据进行排序和筛选
 创建一个库来显示有关多种产品的图像和文本，并对该信息进行排序和筛选。
@@ -30,11 +30,11 @@ ms.locfileid: "71995279"
 > 
 > 
 
-### <a name="prerequisites"></a>先决条件
-* [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+### <a name="prerequisites"></a>必备组件
+* [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 * 通过[模板](get-started-test-drive.md)、[数据](get-started-create-from-data.md)或[从头开始](get-started-create-from-blank.md)创建平板电脑应用。
 * 了解如何[配置控件](add-configure-controls.md)。
-* 这些步骤使用 [CreateFirstApp](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) 作为示例输入数据，其中包括 .jpg 图像。 该 zip 文件包含可以转换为 Excel 的 XML 文件。 在其他情况下，PowerApps 会自动读取 .zip 文件中的文件，并成功导入这些文件。 可以下载和使用此示例数据，或导入自己的数据。
+* 这些步骤使用 [CreateFirstApp](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) 作为示例输入数据，其中包括 .jpg 图像。 该 zip 文件包含可以转换为 Excel 的 XML 文件。 在其他情况下，PowerApps 会自动读取 .zip 文件中的文件，并成功导入这些文件。 可以下载和使用此示例数据，或导入自己的数据。
 
 ## <a name="show-data-in-a-gallery"></a>在库中显示数据
 1. 使用示例数据创建一个名为 **Inventory** 的集合。 步骤包括：  

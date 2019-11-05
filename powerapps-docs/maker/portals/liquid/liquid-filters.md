@@ -1,30 +1,35 @@
 ---
-title: 为门户使用 Liquid 筛选器 | MicrosoftDocs
-description: 了解门户中的可用 liquid 筛选器。
+title: 为门户使用液体过滤器 |MicrosoftDocs
+description: 了解门户中可用的液体筛选器。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 996b31766641376e9a01cbefc876f3eb2b7aabc7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543238"
 ---
-
 # <a name="available-liquid-filters"></a>可用 Liquid 筛选器
 
-Liquid 筛选器用于修改字符串、数字、变量和对象的输出。 这些筛选器使用 | 与应用到的值分隔开。
+液体过滤器用于修改字符串、数字、变量和对象的输出。 它们是由 | 将它们应用到的值。
 
 `{{ 'hal 9000' | upcase }} <!-- Output: HAL 9000 -->`
 
-某些筛选器接受参数。 筛选器还可合并，并按从左至右的顺序应用。
+某些筛选器接受参数。 筛选器也可以合并，并按从左至右的顺序应用。
 
 ```
 {{ 2 | times: 2 | minus: 1 }} <!-- Output: 3 -->
 
 {{ "Hello, " | append: user.firstname }} <!-- Output: Hello, Dave -->
 ```
-以下部分介绍各个筛选器。 
+以下部分介绍了各种筛选器。 
 
 ## <a name="array-filters"></a>数组筛选器
 
@@ -32,9 +37,9 @@ Liquid 筛选器用于修改字符串、数字、变量和对象的输出。 这
 
 ### <a name="batch"></a>批处理
 
-将数组划分为指定大小的多个数组。
+将一个数组分成多个具有给定大小的数组。
 
-**代码**
+**编写**
 
 ```
 {% assign batches = entityview.records | batch: 2 %}
@@ -76,11 +81,11 @@ Liquid 筛选器用于修改字符串、数字、变量和对象的输出。 这
 
 ### <a name="concat"></a>concat
 
-将两个数组连接到一个新的数组。
+将两个数组连接到一个新数组。
 
-指定单个项目作为参数，concat 返回包含原始数组的新数组，将指定项目作为最后元素。
+根据给定的单个项作为参数，concat 返回一个新数组，该数组包含原始数组，给定项作为最后一个元素。
 
-**代码**
+**编写**
 
 ```
 Group #1: {{ group1 | join: ', ' }}
@@ -104,11 +109,11 @@ Group #1 + Group #2: John, Pete, Hannah, Joan, Bill
 Group #1 + Leslie: John, Pete, Hannah, Leslie
 ```
 
-### <a name="except"></a>except
+### <a name="except"></a>只有
 
-选择指定属性没有指定值的数组中的所有对象。 （这与 **where** 相反。）
+选择数组中给定属性不具有给定值的所有对象。 （这是**where**的反向。）
 
-**代码**
+**编写**
 
 ```
 {% assign redmond = entityview.records | except: 'address1_city', 'Redmond' %}
@@ -126,13 +131,13 @@ Group #1 + Leslie: John, Pete, Hannah, Leslie
 Jack Robinson
 ```
 
-### <a name="first"></a>第一
+### <a name="first"></a>1
 
 返回数组的第一个元素。
 
-在需要在标记内使用 first 时，也可以使用特殊点符号。
+如果需要在标记内使用，则第一种方法还可以与特殊的点表示法一起使用。
 
-**代码**
+**编写**
 
 ```
 {% assign words = This is a run of text | split:   %}
@@ -156,9 +161,9 @@ The first word is This.
 
 ### <a name="group_by"></a>group_by
 
-按指定属性分组数组中的项目。
+按给定属性对数组中的项进行分组。
 
-**代码**
+**编写**
 
 ```
 {% assign groups = entityview.records | group_by: 'address1_city' %}
@@ -192,11 +197,11 @@ New York:
 Jack Robinson
 ```
 
-### <a name="join"></a>join
+### <a name="join"></a>收听
 
-将数组的元素与作为参数传递的字符结合。 结果是一个字符串。
+使用作为参数传递的字符来联接数组的元素。 结果是单个字符串。
 
-**代码**
+**编写**
 
 ```
 {% assign words = This is a run of text | split:   %}
@@ -210,13 +215,13 @@ Jack Robinson
 This, is, a, run, of, text
 ```
 
-### <a name="last"></a>最后
+### <a name="last"></a>时间
 
 返回数组的最后一个元素。
 
-在需要在标记内使用 last 时，也可以使用特殊点符号。
+如果需要在标记内使用，则最后还可以使用特殊的点表示法。
 
-**代码**
+**编写**
 
 ```
 {% assign words = This is a run of text | split:   -%}
@@ -238,13 +243,13 @@ text
 The last word is text.
 ```
 
-### <a name="order_by"></a>order\_by
+### <a name="order_by"></a>排序\_
 
-返回按数组元素的指定属性进行排序的数组的元素。
+返回按数组元素的给定特性排序的数组元素。
 
-或者，您可以提供 desc 作为第二个参数来以降序排序元素，而不是升序。
+（可选）可以提供 desc 作为第二个参数，以便按降序对元素进行排序，而不是按升序排序。
 
-**代码**
+**编写**
 
 ```
 {{ entityview.records | order_by: 'fullname' | join: ', ' }}
@@ -260,11 +265,11 @@ Dave Thomas, Jack Robinson, Jake Johnson, John Smith
 John Smith, Jake Johnson, Jack Robinson, Dave Thomas
 ```
 
-### <a name="random"></a>random
+### <a name="random"></a>随机
 
-返回数组的一个随机选择的项目。
+返回数组中随机选择的单个项。
 
-**代码**
+**编写**
 
 ```
 {{ group1 | join: ', ' }}
@@ -280,11 +285,11 @@ John, Pete, Hannah
 Pete
 ```
 
-### <a name="select"></a>select
+### <a name="select"></a>单击
 
-选择数组中每个项目的指定属性值，并作为数组返回这些值。
+为数组中的每个项选择给定属性的值，并将这些值作为数组返回。
 
-**代码**
+**编写**
 
 ```
 {{ entityview.records | select: 'address1_city' | join: ', ' }}
@@ -296,11 +301,11 @@ Pete
 Redmond, New York
 ```
 
-### <a name="shuffle"></a>shuffle
+### <a name="shuffle"></a>无
 
-适用于数组，以随机顺序返回包含相同项目的数组。
+应用到数组，以随机顺序返回具有相同项的新数组。
 
-**代码**
+**编写**
 
 ```
 {{ group1 | join: ', ' }}
@@ -316,13 +321,13 @@ John, Pete, Hannah
 Hannah, John, Pete
 ```
 
-### <a name="size"></a>size
+### <a name="size"></a>规格
 
 返回数组中的项数。
 
-在需要在标记内使用 size 时，也可以使用特殊点符号。
+如果需要在标记内使用，则大小也可以与特殊的点表示法一起使用。
 
-**代码**
+**编写**
 
 ```
 {% assign words = This is a run of text | split:   -%}
@@ -346,9 +351,9 @@ The text contains 6 words.
 
 ### <a name="skip"></a>skip
 
-跳过数组中指定的项目数，并返回其余项目。
+在数组中跳过给定数量的项，并返回剩余项。
 
-**代码**
+**编写**
 
 ```
 {% assign words = This is a run of text | split:   %}
@@ -362,11 +367,11 @@ The text contains 6 words.
 run, of, text
 ```
 
-### <a name="take"></a>take
+### <a name="take"></a>长
 
-从数组中获取指定的项目数量，返回获取的项目。
+从数组中获取给定数量的项，并返回所获取的项。
 
-**代码**
+**编写**
 
 ```
 {% assign words = This is a run of text | split:   %}
@@ -380,13 +385,13 @@ run, of, text
 This, is, a
 ```
 
-### <a name="then_by"></a>then\_by
+### <a name="then_by"></a>然后\_
 
-将其他后续排序添加到已按 **order\_by** 排序的数组。
+将其他后续排序添加到按**order\_** 排序的数组。
 
-或者，您可以提供 desc 作为第二个参数来以降序排序元素，而不是升序。
+（可选）可以提供 desc 作为第二个参数，以便按降序对元素进行排序，而不是按升序排序。
 
-**代码**
+**编写**
 
 ```
 {{ entityview.records | order_by: 'address1_city' | then_by: 'fullname' | join: ', ' }}
@@ -404,9 +409,9 @@ John Smith, Jake Johnson, Jack Robinson, Dave Thomas
 
 ### <a name="where"></a>其中
 
-选择指定属性具有指定值的数组中的所有对象。
+选择数组中给定特性具有给定值的所有对象。
 
-**代码**
+**编写**
 
 ```
 {% assign redmond = entityview.records | where: 'address1_city', 'Redmond' %}
@@ -431,17 +436,17 @@ Jake Johnson
 
 ## <a name="date-filters"></a>日期筛选器
 
-日期筛选器可以用于日期算术或将 DateTime 值转换为不同格式。
+日期筛选器可用于日期算法，或将日期时间值转换为各种格式。
 
 ### <a name="date"></a>日期
 
-使用 .NET 格式字符串确定 DateTime 值的格式。
+使用 .NET 格式字符串设置 DateTime 值的格式。
 
-[标准日期和时间格式字符串](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings)  
+[标准日期和时间格式字符串](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)  
 
-[自定义日期和时间格式字符串](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings)  
+[自定义日期和时间格式字符串](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)  
 
-**代码**
+**编写**
 
 ```
 {{ now | date: 'g' }}
@@ -457,11 +462,11 @@ Jake Johnson
 May 07, 2018
 ```
 
-### <a name="date_add_days"></a>date\_add\_days
+### <a name="date_add_days"></a>添加\_天\_日期
 
-添指定的整数和小数天数来确定 DateTime 值。 参数可以是正数或负数。
+将由整数和小数部分组成的指定天数加到 DateTime 值。 参数可以是正数也可以是负数。
 
-**代码**
+**编写**
 
 ```
 {{ now }}
@@ -481,11 +486,11 @@ May 07, 2018
 5/4/2018 7:20:46 PM
 ```
 
-### <a name="date_add_hours"></a>date\_add\_hours
+### <a name="date_add_hours"></a>添加\_小时\_日期
 
-添指定的整数和小数小时数来确定 DateTime 值。 参数可以是正数或负数。
+将由整数和小数部分组成的指定小时数添加到 DateTime 值。 参数可以是正数也可以是负数。
 
-**代码**
+**编写**
 
 ```
 {{ now }}
@@ -505,11 +510,11 @@ May 07, 2018
 5/7/2018 4:50:46 AM
 ```
 
-### <a name="date_add_minutes"></a>date\_add\_minutes
+### <a name="date_add_minutes"></a>添加\_分钟\_日期
 
-添指定的整数和小数分钟数来确定 DateTime 值。 参数可以是正数或负数。
+将由整数和小数部分组成的指定分钟数添加到 DateTime 值。 参数可以是正数也可以是负数。
 
-**代码**
+**编写**
 
 ```
 {{ now }}
@@ -530,11 +535,11 @@ May 07, 2018
 5/7/2018 7:18:16 AM
 ```
 
-### <a name="date_add_months"></a>date\_add\_months
+### <a name="date_add_months"></a>添加\_个月\_日期
 
-添指定的整数和小数月数来确定 DateTime 值。 参数可以是正数或负数。
+将指定的整月数加到 DateTime 值。 参数可以是正数也可以是负数。
 
-**代码**
+**编写**
 
 ```
 {{ now }}
@@ -554,11 +559,11 @@ May 07, 2018
 3/7/2018 7:20:46 AM
 ```
 
-### <a name="date_add_seconds"></a>date\_add\_seconds
+### <a name="date_add_seconds"></a>添加\_秒\_日期
 
-添指定的整数和小数秒数来确定 DateTime 值。 参数可以是正数或负数。
+将由整数和小数部分组成的指定秒数加到 DateTime 值。 参数可以是正数也可以是负数。
 
-**代码**
+**编写**
 
 ```
 {{ now }}
@@ -578,11 +583,11 @@ May 07, 2018
 5/7/2018 7:20:45 AM
 ```
 
-### <a name="date_add_years"></a>date\_add\_years
+### <a name="date_add_years"></a>添加\_年\_日期
 
-添指定的整数和小数年数来确定 DateTime 值。 参数可以是正数或负数。
+将指定的整年数加到 DateTime 值。 参数可以是正数也可以是负数。
 
-**代码**
+**编写**
 
 ```
 {{ now }}
@@ -602,11 +607,11 @@ May 07, 2018
 5/7/2016 7:20:46 AM
 ```
 
-### <a name="date_to_iso8601"></a>date\_to\_iso8601
+### <a name="date_to_iso8601"></a>\_iso8601 的日期\_
 
-根据 [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) 标准确定 DateTime 值的格式。 在创建 [*Atom 源*](http://tools.ietf.org/html/rfc4287)或 HTML5 &lt;time&gt; 元素时有用。  
+根据[ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)标准设置日期时间值的格式。 创建[*Atom 馈送*](https://tools.ietf.org/html/rfc4287)或 HTML5 &lt;time&gt; 元素时非常有用。  
 
-**代码**
+**编写**
 
 ```
 {{ now | date_to_iso8601 }}
@@ -618,11 +623,11 @@ May 07, 2018
 2018-05-07T07:20:46Z
 ```
 
-### <a name="date_to_rfc822"></a>date\_to\_rfc822
+### <a name="date_to_rfc822"></a>\_rfc822 的日期\_
 
-根据 [RFC 822](https://www.ietf.org/rfc/rfc0822.txt) 标准确定 DateTime 值的格式。 在创建 [*RSS 源*](http://cyber.law.harvard.edu/rss/rss.html)时有用。  
+根据[RFC 822](https://www.ietf.org/rfc/rfc0822.txt)标准设置日期时间值的格式。 创建[*RSS 源*](https://cyber.law.harvard.edu/rss/rss.html)时非常有用。  
 
-**代码**
+**编写**
 
 ```
 {{ now | date_to_rfc822 }}
@@ -637,13 +642,13 @@ Mon, 07 May 2018 07:20:46 Z
 
 ## <a name="entity-list-filters"></a>实体列表筛选器
 
-实体列表筛选器用于处理某些 [entitylist](liquid-objects.md#entitylist) 属性值，并帮助创建实体列表视图。  
+实体列表筛选器用于处理某些[entitylist](liquid-objects.md#entitylist)属性值，并帮助创建实体列表视图。  
 
-### <a name="current_sort"></a>current\_sort
+### <a name="current_sort"></a>当前\_排序
 
-指定的排序表达式，返回指定属性的当前排序方向。
+给定一个排序表达式，返回给定特性的当前排序方向。
 
-**代码**
+**编写**
 
 ```
 {{ 'name ASC, createdon DESC' | current_sort: 'createdon' }}
@@ -657,11 +662,11 @@ DESC
 
 ### <a name="metafilters"></a>metafilters
 
-将 [entitylist](liquid-objects.md#entitylist) filter\_definition JSON 值解析为筛选器选项组对象。  
+将[entitylist](liquid-objects.md#entitylist)筛选器\_定义 JSON 值分析为筛选器选项组对象。  
 
-metafilters 可以有选择地随当前属性筛选器查询和当前 [entitylist](liquid-objects.md#entitylist) 提供，允许返回的筛选器对象标记为已选择或未选择。
+metafilters 可以根据当前的属性筛选器查询和当前[entitylist](liquid-objects.md#entitylist)提供，并允许将返回的筛选器对象标记为选中或未选中。
 
-**代码**
+**编写**
 
 ```
 {% assign filters = entitylist | metafilters: params.mf, entityview %}
@@ -716,11 +721,11 @@ metafilters 可以有选择地随当前属性筛选器查询和当前 [entitylis
 {% endif %}
 ```
 
-### <a name="reverse_sort"></a>reverse\_sort
+### <a name="reverse_sort"></a>反向\_排序
 
-指定排序方向，返回相反排序顺序。
+对于排序方向，返回相反的排序方向。
 
-**代码**
+**编写**
 
 ```
 <!-- Sort direction is not case-sensitive -->
@@ -741,11 +746,11 @@ ASC
 
 ## <a name="math-filters"></a>数学筛选器
 
-数学筛选器允许您对[数字](liquid-types.md#number)执行数学运算。  
+数学筛选器允许对[数字](liquid-types.md#number)执行数学运算。  
 
-与所有筛选器一样，数学筛选器可以累积并按从左到右的顺序进行应用。
+与所有筛选器一样，数学筛选器可以链接在一起，并按从左至右的顺序应用。
 
-**代码**
+**编写**
 
 ```
 {{ 10 | times: 2 | minus: 5 | divided_by: 3 }}
@@ -759,9 +764,9 @@ ASC
 
 ### <a name="ceil"></a>ceil
 
-将值四舍五入到最接近的整数。
+将值向上舍入到最接近的整数。
 
-**代码**
+**编写**
 
 ```
 {{ 4.6 | ceil }}
@@ -777,11 +782,11 @@ ASC
 5
 ```
 
-### <a name="divided_by"></a>divided\_by
+### <a name="divided_by"></a>除以\_
 
-用另一个数除以某个数。
+将数字除以另一个数字。
 
-**代码**
+**编写**
 
 ```
 {{ 10 | divided_by: 2 }}
@@ -801,11 +806,11 @@ ASC
 3.333333
 ```
 
-### <a name="floor"></a>楼层
+### <a name="floor"></a>突破
 
-将值四舍五入到最接近的整数。
+将值向下舍入到最接近的整数。
 
-**代码**
+**编写**
 
 ```
 {{ 4.6 | floor }}
@@ -821,11 +826,11 @@ ASC
 4
 ```
 
-### <a name="minus"></a>减
+### <a name="minus"></a>差
 
-从另一个数中减去一个数。
+从一个数中减去另一个数。
 
-**代码**
+**编写**
 
 ```
 <!-- entityview.page = 11 -->
@@ -847,11 +852,11 @@ ASC
 9.1
 ```
 
-### <a name="modulo"></a>模数
+### <a name="modulo"></a>模
 
-用另一个数除以某个数，并返回余数。
+将数字除以另一个数字并返回余数。
 
-**代码**
+**编写**
 
 ```
 {{ 12 | modulo: 5 }}
@@ -863,11 +868,11 @@ ASC
 2
 ```
 
-### <a name="plus"></a>加
+### <a name="plus"></a>加号
 
-将一个数添加到另一个数。
+将数字添加到另一个数字。
 
-**代码**
+**编写**
 
 ```
 <!-- entityview.page = 11 -->
@@ -889,11 +894,11 @@ ASC
 11.1
 ```
 
-### <a name="round"></a>四舍五入
+### <a name="round"></a>圆满
 
-将某个值四舍五入到最接近的整数或指定的小数位数。
+将值舍入到最接近的整数或指定的小数位数。
 
-**代码**
+**编写**
 
 ```
 {{ 4.6 | round }}
@@ -913,11 +918,11 @@ ASC
 4.56
 ```
 
-### <a name="times"></a>乘
+### <a name="times"></a>随时
 
-用另一个数乘以某个数。
+将一个数与另一个数相乘。
 
-**代码**
+**编写**
 
 ```
 {{ 10 | times: 2 }}
@@ -940,13 +945,13 @@ ASC
 
 ## <a name="string-filters"></a>字符串筛选器
 
-字符串筛选器处理[字符串](liquid-types.md#string)。  
+字符串筛选器操作[字符串](liquid-types.md#string)。  
 
-### <a name="append"></a>追加
+### <a name="append"></a>附加
 
-追加字符串到其他字符串末尾。
+将一个字符串追加到另一个字符串的末尾。
 
-**代码**
+**编写**
 
 ```
 {{ 'filename' | append: '.js' }}
@@ -958,11 +963,11 @@ ASC
 filename.js
 ```
 
-### <a name="capitalize"></a>**capitalize**
+### <a name="capitalize"></a>**大写**
 
-大写字符串的第一个字词。
+将字符串中的第一个单词设为大写。
 
-**代码**
+**编写**
 
 ```
 {{ 'capitalize me' | capitalize }}
@@ -978,7 +983,7 @@ Capitalize Me
 
 将字符串转换为小写。
 
-**代码**
+**编写**
 
 ```
 {{ 'MIxed Case TExt' | downcase }}
@@ -990,11 +995,11 @@ Capitalize Me
 mixed case text
 ```
 
-### <a name="escape"></a>**escape**
+### <a name="escape"></a>**esc**
 
-HTML 换码字符串。
+HTML-对字符串进行转义。
 
-**代码**
+**编写**
 
 ```
 {{ '<p>test</p>' | escape }}
@@ -1006,11 +1011,11 @@ HTML 换码字符串。
 &lt;p&gt;test&lt;/p&gt;
 ```
 
-### <a name="newline_to_br"></a>**newline\_to\_br**
+### <a name="newline_to_br"></a>**向\_br\_的行**
 
-在字符串的每个换行符处插入 &lt;br /&gt; 换行 HTML 标记。
+在字符串中的每个换行符处插入一个 &lt;br/&gt; 分行符 HTML 标记。
 
-**代码**
+**编写**
 
 ```
 {% capture text %}
@@ -1036,11 +1041,11 @@ B<br />
 C<br />
 ```
 
-### <a name="prepend"></a>**prepend**
+### <a name="prepend"></a>**挂起**
 
-预置字符串到其他字符串开头。
+在另一个字符串的开头前面预置一个字符串。
 
-**代码**
+**编写**
 
 ```
 {{ 'Jane Johnson' | prepend: 'Dr. ' }}
@@ -1052,11 +1057,11 @@ C<br />
 Dr. Jane Johnson
 ```
 
-### <a name="remove"></a>**remove**
+### <a name="remove"></a>**取消**
 
-从字符串中移除所有出现的子串。
+删除字符串中出现的所有子字符串。
 
-**代码**
+**编写**
 
 ```
 {{ 'Hello, Dave. How are you, Dave?' | remove: 'Dave' }}
@@ -1068,11 +1073,11 @@ Dr. Jane Johnson
 Hello, . How are you, ?
 ```
 
-### <a name="remove_first"></a>**remove\_first**
+### <a name="remove_first"></a>**删除\_首先**
 
-从字符串中移除第一个出现的子串。
+从字符串中移除子字符串的第一个匹配项。
 
-**代码**
+**编写**
 
 ```
 {{ 'Hello, Dave. How are you, Dave?' | remove_first: 'Dave' }}
@@ -1084,11 +1089,11 @@ Hello, . How are you, ?
 Hello, . How are you, Dave?
 ```
 
-### <a name="replace"></a>**replace**
+### <a name="replace"></a>**全部**
 
-替换所有出现的含子串的字符串。
+将出现的所有字符串替换为子字符串。
 
-**代码**
+**编写**
 
 ```
 {{ 'Hello, Dave. How are you, Dave?' | replace: 'Dave', 'John' }}
@@ -1100,11 +1105,11 @@ Hello, . How are you, Dave?
 Hello, John. How are you, John?
 ```
 
-### <a name="replace_first"></a>**replace\_first**
+### <a name="replace_first"></a>**首先替换\_**
 
-替换第一个出现的包含子串的字符串。
+用子串替换字符串的第一个匹配项。
 
-**代码**
+**编写**
 
 ```
 {{ 'Hello, Dave. How are you, Dave?' | replace_first: 'Dave', 'John' }}
@@ -1116,11 +1121,11 @@ Hello, John. How are you, John?
 Hello, John. How are you, Dave?
 ```
 
-### <a name="split"></a>**split**
+### <a name="split"></a>**分割**
 
-split 筛选器将子串作为参数。 子串用作分隔符将字符串划分到数组。
+拆分筛选器使用子字符串作为参数。 子字符串用作将字符串拆分为数组的分隔符。
 
-**代码**
+**编写**
 
 ```
 {% assign words = This is a demo of the split filter | split: ' ' %}
@@ -1150,11 +1155,11 @@ Last word: filter
 All words: This, is, a, demo, of, the, split, filter
 ```
 
-### <a name="strip_html"></a>**strip\_html**
+### <a name="strip_html"></a>**去除\_html**
 
-从字符串剥离所有 HTML 标记。
+从字符串中去除所有 HTML 标记。
 
-**代码**
+**编写**
 
 ```
 <p>Hello</p>
@@ -1166,11 +1171,11 @@ All words: This, is, a, demo, of, the, split, filter
 Hello
 ```
 
-### <a name="strip_newlines"></a>**strip\_newlines**
+### <a name="strip_newlines"></a>**去除\_换行符**
 
-从字符串剥离任何换行符。
+从字符串中去除任何分行符。
 
-**代码**
+**编写**
 
 ```
 {% capture text %}
@@ -1192,11 +1197,11 @@ C
 ABC
 ```
 
-### <a name="text_to_html"></a>**text\_to\_html**
+### <a name="text_to_html"></a>**\_html 的文本\_**
 
-将纯文本字符串格式转化为简单的 HTML。 所有文本都会是 HTML 编码，空行分隔的文本块将在段落 &lt;p&gt; 标记处换行，单个换行符将替换为 &lt;br&gt;，URL 将转换为超链接。
+将纯文本字符串的格式设置为简单的 HTML。 所有文本都将经过 HTML 编码，以空行分隔的文本块将换行 &lt;p&gt; 标记中，将用 &lt;br&gt;替换单个换行符，并将 Url 转换为超链接。
 
-**代码**
+**编写**
 
 ```
 {{ note.notetext | text_to_html }}
@@ -1205,16 +1210,16 @@ ABC
 **输出**
 
 ```
-<p>This is the first paragraph of notetext. It contains a URL: <a href="http://example.com/" rel="nofollow">http://example.com</a></p>
+<p>This is the first paragraph of notetext. It contains a URL: <a href="https://example.com/" rel="nofollow">https://example.com</a></p>
 
 <p>This is a second paragraph.</p>
 ```
 
-### <a name="truncate"></a>**truncate**
+### <a name="truncate"></a>**去**
 
-将字符串截断为指定数量的字符。 省略号 (...) 追加到字符串并包括在字符数内。
+将字符串截断到给定数量的字符。 省略号（...）追加到字符串，并包含在字符计数中。
 
-**代码**
+**编写**
 
 ```
 {{ 'This is a long run of text.' | truncate: 10 }}
@@ -1226,11 +1231,11 @@ ABC
 This is...
 ```
 
-### <a name="truncate_words"></a>**truncate\_words**
+### <a name="truncate_words"></a>**截断\_字词**
 
-将字符串截断为指定数量的字词。 省略号 (...) 追加到截断的字符串。
+将字符串截断到给定数量的单词。 省略号（...）将追加到截断后的字符串中。
 
-**代码**
+**编写**
 
 ```
 {{ 'This is a long run of text.' | truncate_words: 3 }}
@@ -1246,7 +1251,7 @@ This is a...
 
 将字符串转换为大写。
 
-**代码**
+**编写**
 
 ```
 {{ 'MIxed Case TExt' | upcase }}
@@ -1258,11 +1263,11 @@ This is a...
 MIXED CASE TEXT
 ```
 
-### <a name="url_escape"></a>**url\_escape**
+### <a name="url_escape"></a>**url\_转义**
 
-URI 换码字符串，在 URL 中包括。
+对字符串进行 URI 转义，使其包含在 URL 中。
 
-**代码**
+**编写**
 
 ```
 {{ 'This & that//' | url_escape }}
@@ -1276,9 +1281,9 @@ This+%26+that%2F%2F
 
 ### <a name="xml_escape"></a>**xml\_escape**
 
-XML 换码字符串，在 XML 输出中包括。
+XML-为包含在 XML 输出中的转义字符串。
 
-**代码**
+**编写**
 
 ```
 {{ '<p>test</p>' | xml_escape }}
@@ -1293,15 +1298,15 @@ XML 换码字符串，在 XML 输出中包括。
 
 ## <a name="type-filters"></a>类型筛选器
 
-类型筛选器允许您将一个类型的值转换为其他类型。
+类型筛选器允许您将一种类型的值转换为其他类型。
 
-### <a name="boolean"></a>**boolean**
+### <a name="boolean"></a>**变量**
 
-尝试将字符串值转换为布尔值。 如果值已是布尔值，它将不做更改返回。 如果值不能转换为布尔值，将返回 null。
+尝试将字符串值转换为布尔值。 如果该值已经是布尔值，则将返回未更改的值。 如果值不能转换为布尔值，则将返回 null。
 
-该筛选器还会接受“打开”、“已启用”或“是”为 true，“关闭”、“禁用“和“否”为 false。
+此筛选器还将接受 "打开"、"已启用" 或 "是" 作为 true、"关闭"、"禁用" 和 "否" 为 false。
 
-**代码**
+**编写**
 
 ```
 {{ true | boolean }}
@@ -1325,11 +1330,11 @@ true
 false
 ```
 
-### <a name="decimal"></a>**decimal**
+### <a name="decimal"></a>**式**
 
-尝试将字符串值转换为十进制数。 如果值已是十进制数，它将不做更改返回。 如果值不能转换为十进制数，将返回 null。
+尝试将字符串值转换为十进制数字。 如果该值已经是一个十进制数，则返回的值将保持不变。 如果值不能转换为十进制数，则返回 null。
 
-**代码**
+**编写**
 
 ```
 {{ 10.1 | decimal }}
@@ -1349,11 +1354,11 @@ false
 3.14
 ```
 
-### <a name="integer"></a>**integer**
+### <a name="integer"></a>**整数**
 
-尝试将字符串值转换为整数。 如果值已是整数，它将不做更改返回。 如果值不能转换为整数，将返回 null。
+尝试将字符串值转换为整数。 如果该值已经是整数，则返回的值将保持不变。 如果值不能转换为整数，则返回 null。
 
-**代码**
+**编写**
 
 ```
 {{ 10 | integer }}
@@ -1376,26 +1381,26 @@ false
 2
 ```
 
-### <a name="string"></a>**string**
+### <a name="string"></a>**类似**
 
-尝试将字符串值转换为其字符串表示形式。 如果值已是字符串，它将不做更改返回。 如果值为 null，将返回 null。
+尝试将值转换为其字符串表示形式。 如果该值已经是字符串，则返回的值将保持不变。 如果该值为 null，则返回 null。
 
 
 
 ## <a name="url-filters"></a>URL 筛选器
 
-URL 筛选器允许您构建或提取部分 URL。
+URL 筛选器允许您生成或提取部分 Url。
 
-### <a name="add_query"></a>**add\_query**
+### <a name="add_query"></a>**添加\_查询**
 
-将查询字符串参数追加到 URL。 如果参数已存在于 URL 中，将更新参数值。
+将查询字符串参数追加到 URL。 如果 URL 中已存在此参数，则将更新参数值。
 
-如果此筛选器应用于整个绝对 URL，则将生成更新的绝对 URL。 如果将其应用于路径，则将生成更新的路径。
+如果将此筛选器应用于完全绝对 URL，则会生成一个更新的绝对 URL。 如果将它应用于路径，则会生成更新的路径。
 
-**代码**
+**编写**
 
 ```
-{{ 'http://example.com/path?page=1' | add_query: 'foo', 'bar' }}
+{{ 'https://example.com/path?page=1' | add_query: 'foo', 'bar' }}
 
 {{ '/path?page=1' | add_query: 'page', 2 }}
 ```
@@ -1403,35 +1408,35 @@ URL 筛选器允许您构建或提取部分 URL。
 **输出**
 
 ```
-http://example.com/path?page=1&foo=bar
+https://example.com/path?page=1&foo=bar
 
 /path?page=2
 ```
 
-### <a name="base"></a>**base**
+### <a name="base"></a>**基座**
 
-获取特定 URL 的基本 URL。
+获取给定 URL 的基 URL。
 
-**代码**
+**编写**
 
 ```
-{{ 'http://example.com/path?foo=bar&page=2' | base }}
+{{ 'https://example.com/path?foo=bar&page=2' | base }}
 ```
 
 **输出**
 
 ```
-http://example.com
+https://example.com
 ```
 
-### <a name="host"></a>**host**
+### <a name="host"></a>**主持人**
 
 获取 URL 的主机部分。
 
-**代码**
+**编写**
 
 ```
-{{ 'http://example.com/path?foo=bar&page=2' | host }}
+{{ 'https://example.com/path?foo=bar&page=2' | host }}
 ```
 
 **输出**
@@ -1440,14 +1445,14 @@ http://example.com
 example.com
 ```
 
-### <a name="path"></a>**path**
+### <a name="path"></a>**通道**
 
 获取 URL 的路径部分。
 
-**代码**
+**编写**
 
 ```
-{{ 'http://example.com/path?foo=bar&page=2' | path }}
+{{ 'https://example.com/path?foo=bar&page=2' | path }}
 
 {{ '/path?foo=bar&page=2' | path }}
 ```
@@ -1460,14 +1465,14 @@ example.com
 /path
 ```
 
-### <a name="path_and_query"></a>**path\_and\_query**
+### <a name="path_and_query"></a>**路径\_和\_查询**
 
 获取 URL 的路径和查询部分。
 
-**代码**
+**编写**
 
 ```
-{{ 'http://example.com/path?foo=bar&page=2' | path_and_query }}
+{{ 'https://example.com/path?foo=bar&page=2' | path_and_query }}
 
 {{ '/path?foo=bar&page=2' | path_and_query }}
 ```
@@ -1480,14 +1485,14 @@ example.com
 /path?foo=bar&page=2
 ```
 
-### <a name="port"></a>**port**
+### <a name="port"></a>**口**
 
 获取 URL 的端口号。
 
-**代码**
+**编写**
 
 ```
-{{ 'http://example.com/path?foo=bar&page=2' | port }}
+{{ 'https://example.com/path?foo=bar&page=2' | port }}
 
 {{ 'https://example.com/path?foo=bar&page=2' | port }}
 
@@ -1504,16 +1509,16 @@ example.com
 9000
 ```
 
-### <a name="remove_query"></a>**remove\_query**
+### <a name="remove_query"></a>**删除\_查询**
 
-从 URL 中移除查询字符串参数。 如果 URL 中不存在该参数，将返回未更改的 URL。
+从 URL 中删除查询字符串参数。 如果 URL 中不存在此参数，则将返回未更改的 URL。
 
-如果此筛选器应用于整个绝对 URL，则将生成更新的绝对 URL。 如果将其应用于路径，则将生成更新的路径。
+如果将此筛选器应用于完全绝对 URL，则会生成一个更新的绝对 URL。 如果将它应用于路径，则会生成更新的路径。
 
-**代码**
+**编写**
 
 ```
-{{ 'http://example.com/path?page=1' | remove_query: 'page' }}
+{{ 'https://example.com/path?page=1' | remove_query: 'page' }}
 
 {{ '/path?page=1' | remove_query: 'page' }}
 ```
@@ -1521,19 +1526,19 @@ example.com
 **输出**
 
 ```
-http://example.com/path
+https://example.com/path
 
 /path
 ```
 
-### <a name="scheme"></a>**scheme**
+### <a name="scheme"></a>**机制**
 
-获取 URL 的架构部分。
+获取 URL 的方案部分。
 
-**代码**
+**编写**
 
 ```
-{{ 'http://example.com/path?foo=bar&page=2' | scheme }}
+{{ 'https://example.com/path?foo=bar&page=2' | scheme }}
 
 {{ 'https://example.com/path?foo=bar&page=2' | scheme }}
 ```
@@ -1551,11 +1556,11 @@ https
 
 这些筛选器提供有用的常规功能。
 
-### <a name="default"></a>**default**
+### <a name="default"></a>**缺省值**
 
-返回所有没有分派值（即 null）的变量的默认值。
+返回没有赋值的任何变量的默认值（即 null）。
 
-**代码**
+**编写**
 
 ```
 {{ snippets[Header] | default: 'My Website' }}
@@ -1569,13 +1574,13 @@ https
 My Website
 ```
 
-### <a name="file_size"></a>**file\_size**
+### <a name="file_size"></a>**文件\_大小**
 
-适用于表示多个字节的数字值，使用适当比例单位返回已设定格式的文件大小。
+应用于表示字节数的数字值后，将返回具有适当刻度单位的格式化文件大小。
 
-有时，精度参数可以传递，用以控制结果中的小数位数。 默认精度为 1。
+还可以通过传递精度参数来控制结果中的小数位数。 默认精度为1。
 
-**代码**
+**编写**
 
 ```
 {{ 10000000 | file_size }}
@@ -1595,11 +1600,11 @@ My Website
 207.14 KB
 ```
 
-### <a name="has_role"></a>**has\_role**
+### <a name="has_role"></a>**具有\_角色**
 
-应用于 [user](liquid-objects.md#user)，如果用户属于指定角色返回 true。 如果不属于返回 false。  
+应用于[用户](liquid-objects.md#user)，如果用户属于给定角色，则返回 true。 如果不是，则返回 false。  
 
-**代码**
+**编写**
 
 ```
 {% assign is_admin = user | has_role: 'Administrators' %}
@@ -1611,14 +1616,14 @@ User is an administrator.
 {% endif %}
 ```
 
-### <a name="liquid"></a>**liquid**
+### <a name="liquid"></a>**输送**
 
-作为 Liquid 代码呈现字符串。 此代码有权访问当前 Liquid 执行上下文（变量等）。
+将字符串呈现为液体代码。 此代码将具有对当前液体执行上下文（变量等）的访问权限。
 
 > [!Note] 
-> 应小心地使用此筛选器，通常仅应适用于门户内容作者或其他可信的编写 Liquid 代码的用户的排除控件的下值。
+> 应慎用此筛选器，并且通常只应应用于门户内容作者特有控制的值，或者只应用于可信任以编写液体代码的其他用户。
 
-**代码**
+**编写**
 
 ```
 {{ page.adx_copy | liquid }}
@@ -1626,9 +1631,9 @@ User is an administrator.
 
 ### <a name="see-also"></a>另请参阅
 
-[使用 Web 模板存储源内容](store-content-web-templates.md)  
-[了解 Liquid 运算符](liquid-operators.md) 
-[Liquid 类型](liquid-types.md)  
-[Liquid 对象](liquid-objects.md)  
-[Liquid 标记](liquid-tags.md)  
-[Liquid 筛选器](liquid-filters.md)  
+[使用 web 模板存储源内容](store-content-web-templates.md)  
+[了解液体运算符](liquid-operators.md) 
+[液体类型](liquid-types.md)  
+[液体对象](liquid-objects.md)  
+[液体标记](liquid-tags.md)  
+[液体过滤器](liquid-filters.md)  

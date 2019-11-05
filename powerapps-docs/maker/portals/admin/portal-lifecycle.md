@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: c2ee82be5526cce41451c8a703971c0f97d32ea0
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: 5476bb0306b5d9e0767f451fba36a567a70c4c54
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977303"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542949"
 ---
 # <a name="about-portal-lifecycle"></a>关于门户生命周期
 
@@ -30,7 +30,7 @@ ms.locfileid: "72977303"
 
 门户始终创建为试用门户。 如果拥有所需的许可证，可以从 PowerApps 门户管理中心将其转换为生产。 有关将试用门户转换为生产环境的信息，请参阅[将试用门户转换为生产](#convert-a-trial-portal-to-production)。
 
-若要将试用门户转换为生产环境，环境应为外部用户提供必需的加载项，或者为内部用户提供许可证。 有关授权的详细信息，请参阅[PowerApps 和 Microsoft Flow 许可常见问题](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-flow-licensing-faq)和[powerapps 门户许可](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-powerapps-portals-licensing)。
+若要将试用门户转换为生产环境，环境应为外部用户提供必需的加载项，或者为内部用户提供许可证。 有关授权的详细信息，请参阅[PowerApps 和 Microsoft Flow 许可常见问题](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq)和[powerapps 门户许可](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-powerapps-portals-licensing)。
 
 ### <a name="suspended-portal"></a>挂起的门户
 
@@ -59,7 +59,7 @@ ms.locfileid: "72977303"
 在管理中心的其他页面上，通知会显示在页面顶部。
 
 > [!div class=mx-imgBorder]
-> ![其他选项]卡上的试用通知其他(../media/admin-center-convert-notif-all.png "选项卡上的试用通知")
+> ![其他选项卡上的试用通知](../media/admin-center-convert-notif-all.png "其他选项卡上的试用通知")
 
 将试用门户转换为生产环境：
 
@@ -68,4 +68,4 @@ ms.locfileid: "72977303"
 2.  选择 "**确认**"。
 
     > [!div class=mx-imgBorder]
-    > ![试用生产确认](../media/trial-to-prod-confirm.png "试用到生产确认")
+    > ![试用到生产确认](../media/trial-to-prod-confirm.png "试用到生产确认")

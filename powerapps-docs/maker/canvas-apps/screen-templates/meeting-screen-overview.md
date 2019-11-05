@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c53857acfdcb44faa26b2ec3e04b904e25c09aee
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2b300b0d90803ae08aaf262dde5642f4d448c05f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995655"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541438"
 ---
 # <a name="overview-of-the-meeting-screen-template-for-canvas-apps"></a>画布应用的会议屏幕模板概述
 
@@ -38,11 +38,11 @@ ms.locfileid: "71995655"
 
 从模板添加会议屏幕：
 
-1. [登录](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 PowerApps，然后在 PowerApps Studio 中创建应用或打开现有应用。
+1. [登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 PowerApps，然后在 PowerApps Studio 中创建应用或打开现有应用。
 
     本主题演示了一个手机应用，但相同的概念也适用于平板电脑应用。
 
-1. 在功能区的 "**主页**" 选项卡上，选择 "**新建屏幕**@no__t **"。**
+1. 在功能区的 "**主页**" 选项卡上，选择 "**新建屏幕** > **会议**"。
 
   填写时，会议屏幕的两个选项卡的外观如下所示：
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ac6586067105d5f6cd1ce2aab5568450804fe4c6
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 03411202ecc9c4c04713f7eb9cf6286809109684
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71991366"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541516"
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>在画布应用中创建订单库
 
@@ -38,7 +38,7 @@ ms.locfileid: "71991366"
 
 ## <a name="create-a-blank-app"></a>创建空白应用
 
-1. [登录到 PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后创建一个空的平板电脑应用。
+1. [登录到 PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后创建一个空的平板电脑应用。
 
     > [!div class="mx-imgBorder"]
     > 空白磁贴中的 ![画布应用](media/northwind-orders-canvas-part1/start-01.png)
@@ -261,7 +261,7 @@ ms.locfileid: "71991366"
 
     此公式显示蓝色下划线和[委托警告](delegation-overview.md)，因为 Common Data Service 不支持对复杂聚合函数（例如，乘法）的委托。 您可以忽略此信息，因为此示例中的任何订单都不包含500行以上的项。 如果需要其他应用，可以在**应用设置**中增加该限制。
 
-    此公式中的[**文本**](functions/function-text.md)函数添加货币符号，并使用千位分隔符和小数分隔符设置结果格式。 根据编写，该公式包括美国英语的语言标记（**[$-en-us]**）和一个美元符号（**$**）。 如果删除 language 标记，则会将其替换为基于您的语言设置的一个标记，标签将显示该标记的相应格式。 如果保留美元符号，则标签将根据用户的设置显示相应的货币符号。 但是，您可以通过将美元符号替换为您喜欢的符号来强制显示不同的符号。
+    此公式中的[**文本**](functions/function-text.md)函数添加货币符号，并使用千位分隔符和小数分隔符设置结果格式。 根据编写，该公式包括美国英语的语言标记（ **[$-en-us]** ）和一个美元符号（ **$** ）。 如果删除 language 标记，则会将其替换为基于您的语言设置的一个标记，标签将显示该标记的相应格式。 如果保留美元符号，则标签将根据用户的设置显示相应的货币符号。 但是，您可以通过将美元符号替换为您喜欢的符号来强制显示不同的符号。
 
 1. 在 "**主页**" 选项卡上，将最新标签的字体大小更改为20磅，并将其文本右对齐：
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 401d32f3d3cacee4b9b1a23a5fceb7d159623086
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 476964166a57bea23469baf0c1e7497be10ab73f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994920"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541670"
 ---
 # <a name="understand-canvas-app-forms-in-microsoft-powerapps"></a>了解 Microsoft PowerApps 中的画布应用窗体
 
@@ -36,9 +36,9 @@ ms.locfileid: "71994920"
 
 根据本主题中所述，使用公式组合这些控件，以创建整体用户体验。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
-* [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+* [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 * 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
 
 ## <a name="explore-a-generated-app"></a>浏览生成的应用
@@ -137,7 +137,7 @@ PowerApps 可以根据指定的数据源自动生成应用。 每个应用包含
 
 ![在创作体验中选择的编辑卡片和卡片控件](./media/working-with-forms/afd-edit-card-controls.png)
 
-在上图中，选定的卡片显示了 **AssetID** 字段并包含 **[文本输入](controls/control-text-input.md)** 控制，使用户能够编辑该字段的值。 （相比之下，详细信息屏幕在“[标签](controls/control-text-box.md)”控件中显示相同字段，但字段是只读的。） **[文本输入](controls/control-text-input.md)** 控件具有一个设置为 **Parent.Default** 的 **[Default](controls/properties-core.md)** 属性。 如果用户创建而不是编辑记录，该控件将显示一个初始值，用户可以更改新记录的该值。
+在上图中，选定的卡片显示了 **AssetID** 字段并包含 **[文本输入](controls/control-text-input.md)** 控制，使用户能够编辑该字段的值。 （相反，详细信息屏幕在 " **[标签](controls/control-text-box.md)** " 控件中显示相同的字段，这是只读的。） **[文本输入](controls/control-text-input.md)** 控件具有 **[默认](controls/properties-core.md)** 属性，该属性设置为**Parent。默认值**为。 如果用户创建而不是编辑记录，该控件将显示一个初始值，用户可以更改新记录的该值。
 
 在右窗格中，可以显示或隐藏每个卡片、重新排列卡片，或者将它们配置为显示不同类型的控件中的字段。
 
@@ -334,7 +334,7 @@ PowerApps 可以根据指定的数据源自动生成应用。 每个应用包含
 
 ![在浏览屏幕中排序和搜索控件](./media/working-with-forms/afd-browse-search-sort.png)
 
-当用户选择排序按钮时，库的排序顺序将会反转。 若要创建此行为，可使用*上下文变量*跟踪库的排序方向。 当用户选择该按钮时，变量将会更新，方向将会反转。 排序按钮的 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：**UpdateContext （{SortDescending1：！SortDescending1}）**
+当用户选择排序按钮时，库的排序顺序将会反转。 若要创建此行为，可使用*上下文变量*跟踪库的排序方向。 当用户选择该按钮时，变量将会更新，方向将会反转。 排序按钮的 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：**UpdateContext( {SortDescending1: !SortDescending1} )**
 
 **[UpdateContext](functions/function-updatecontext.md)** 函数创建 **SortDescending1** 上下文变量（如果不存在）。 该函数将读取该变量的值并使用 **!** 运算符将它设置为逻辑求反 。 *true* 值将变成 *false*。 *false* 值将变成 *true*。
 

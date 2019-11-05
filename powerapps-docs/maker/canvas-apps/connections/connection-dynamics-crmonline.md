@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3c061d43a766bfdcd0a560c5959756f79751a7f2
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 48605d97a8b311f806ff3556474d9bc5f32260e1
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61547129"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541075"
 ---
 # <a name="connect-to-dynamics-365-from-powerapps"></a>从 PowerApps 连接到 Dynamics 365
 通过 PowerApps，可使用很少的代码或无需代码，快速生成、自定义、共享和运行移动应用。 通过使用 Dynamics 365 连接器，只需几分钟，即可创建有用的移动应用，与组织实现共享。
@@ -29,7 +29,7 @@ ms.locfileid: "61547129"
 若要遵照本教程操作，需要一个包含 Dynamics 365 订阅的 Microsoft Office 365 帐户。
 
 ## <a name="create-a-connection"></a>创建连接
-1. [登录 PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. [登录 PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 2. 在左侧导航窗格中，单击“连接”。
    
     ![“文件”菜单上的“连接”选项](./media/connection-dynamics-crmonline/file-connections.png)
@@ -47,7 +47,7 @@ ms.locfileid: "61547129"
     将创建一个连接。
 
 ## <a name="generate-an-app-automatically"></a>自动生成应用
-1. [登录 PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后单击左下角附近的“新建应用”。
+1. [登录 PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后单击左下角附近的“新建应用”。
    
     ![新建应用](./media/connection-dynamics-crmonline/new-app.png)
 2. 在“开始使用数据”下，单击“Dynamics 365”磁贴上的“手机布局”。

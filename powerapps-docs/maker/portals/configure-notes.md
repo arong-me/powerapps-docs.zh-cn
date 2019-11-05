@@ -9,19 +9,19 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: ece59cff6ae75206a473ddc27f2e657201e0f436
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: 59ed66842874414737b7bdc04f0f4dfa51d212c8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977165"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542854"
 ---
 # <a name="configure-notes-for-entity-forms-and-web-forms-on-portals"></a>配置门户上实体窗体和 web 窗体的说明
 
 与使用 subgrids 时一样，在门户中将注释添加到托管窗体非常&mdash;简单，只需通过[窗体设计器](../model-driven-apps/create-design-forms.md)将 notes 控件添加到模型驱动器应用程序窗体即可完成。 您可以使用元数据来配置 notes 控件的行为。
 
 > [!Note]                                                           
-> 门户中显示的任何注释都需要显式[实体权限](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/assign-entity-permissions)。 对于 "读取" 和 "编辑"，必须授予 "读取" 和 "写入" 特权。 对于 "创建"，必须存在两个权限：必须为注释（批注）实体授予具有 "创建" 和 "追加" 权限的权限，第二个权限必须分配给注释与 "追加到" 特权一起附加到的实体类型。 必须在相应的 "实体窗体" 或 "web 窗体" 步骤中选择 "**启用实体权限**" 复选框，实体权限才会生效。
+> 门户中显示的任何注释都需要显式[实体权限](configure/assign-entity-permissions.md)。 对于 "读取" 和 "编辑"，必须授予 "读取" 和 "写入" 特权。 对于 "创建"，必须存在两个权限：必须为注释（批注）实体授予具有 "创建" 和 "追加" 权限的权限，第二个权限必须分配给注释与 "追加到" 特权一起附加到的实体类型。 必须在相应的 "实体窗体" 或 "web 窗体" 步骤中选择 "**启用实体权限**" 复选框，实体权限才会生效。
 
 ## <a name="notes-configuration-for-entity-forms"></a>实体窗体的说明配置
 
@@ -62,7 +62,7 @@ ms.locfileid: "72977165"
 | 错误消息         | 重写当尝试加载便笺列表时出现错误时显示的消息。                                                                     |
 | 拒绝访问消息 | 覆盖当用户没有足够的权限来查看便笺列表时显示的消息。                                                    |
 | 空消息         | 当当前实体没有可查看的注释时，将重写显示的消息。                                                              |
-| 列出订单           | 允许您设置便笺的显示顺序。 "列出订单" 设置允许您设置以下各项： <ul><li>属性：要按其进行排序的列的逻辑名称</li><li>Alias：查询中属性的别名</li><li>方向：升序（从小到大，或从1到上），或降序（从大到小，或从最后到第一）。</li></ul> ![设置列表的属性]设置列表(media/set-attributes-list-orders.png "的")属性若要添加排序规则，请选择 "列" （4）并填写详细信息。 将按顺序从列表顶部按顺序处理列出订单，其优先级最高。|
+| 列出订单           | 允许您设置便笺的显示顺序。 "列出订单" 设置允许您设置以下各项： <ul><li>属性：要按其进行排序的列的逻辑名称</li><li>Alias：查询中属性的别名</li><li>方向：升序（从小到大，或从1到上），或降序（从大到小，或从最后到第一）。</li></ul> ![设置列表顺序的属性](media/set-attributes-list-orders.png "Set list orders 属性)若要添加排序规则，请选择 "列" （4）并填写详细信息。 将按顺序从列表顶部按顺序处理列出订单，其优先级最高。|
 ||
 
 
@@ -149,11 +149,11 @@ ms.locfileid: "72977165"
 
     ![添加实体权限](media/entity-permission.png "添加实体权限")
 
-    向![实体添加 web 角色权限]向(media/entity-permission-web-roles.png "实体权限添加 web 角色")
+    ![将 web 角色添加到实体权限](media/entity-permission-web-roles.png "将 web 角色添加到实体权限")
 
 如果创建了自定义窗体并将注释部分添加到该窗体中，请确保选择 "**备注**" 作为要显示的默认选项卡。
 
-自定义窗体中的![注释]自(media/notes-activities-tab.png "定义窗体")
+![自定义窗体中的注释](media/notes-activities-tab.png "自定义窗体中的注释")
 
 ## <a name="notes-configuration-for-web-forms"></a>Web 窗体的说明配置
 

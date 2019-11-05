@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c058e5f5710c090c39c2971974d57aacd40923a8
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: bec8524ac6afc265eba5d9a6edf381c5ebf2c340
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986001"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540362"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>使用 Common Data Service 从头开始创建画布应用
 
@@ -26,7 +26,7 @@ ms.locfileid: "71986001"
 
 使用 Common Data Service 生成应用时，无需从 PowerApps 建立连接，而处理 SharePoint、Dynamics 365 或 Salesforce 等数据源时则需要这样做。 只需指定想要在应用中显示或管理的实体。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 - 在从头开始创建应用之前，请通过[生成应用](data-platform-create-app.md)并自定义应用的[库](customize-layout-sharepoint.md)、[窗体](customize-forms-sharepoint.md)和[卡](customize-card.md)来熟悉 PowerApps 基础知识。
 - [切换到一个环境](working-with-environments.md)，该环境中已创建带有示例数据的数据库。 如果有合适的许可证，则可以[创建环境](../../administrator/create-environment.md)以满足此需要。
@@ -34,7 +34,7 @@ ms.locfileid: "71986001"
 
 ## <a name="open-a-blank-app"></a>打开一个空白应用
 
-1. 登录 [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 登录 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 1. 在“生成自己的应用”下，选择“从空白开始创建画布应用”。
 
@@ -97,14 +97,14 @@ ms.locfileid: "71986001"
 1. 选择“添加字段”，然后选择这些字段对应的复选框：
 
     - **帐户名**
-    - **地址 1：街道 1**
-    - **地址 1：城市**
-    - **地址 1：邮政编码**
+    - **地址1：街道1**
+    - **地址1：城市**
+    - **地址1： ZIP/邮政编码**
     - **员工人数**
     - **年收入**
 
     > [!NOTE]
-    > 在这种情况下，您可以通过选择 "**新建字段**" 创建自定义字段，提供所需的信息，然后选择 "**完成**"。 详细信息：[创建字段](../common-data-service/create-edit-field-portal.md#create-a-field)。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "选择并添加字段")
+    > 在这种情况下，您可以通过选择 "**新建字段**" 创建自定义字段，提供所需的信息，然后选择 "**完成**"。 详细信息：[创建字段](../common-data-service/create-edit-field-portal.md#create-a-field)。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "Select and add a field")
 
 1. 选择“添加”。
 

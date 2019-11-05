@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: ed1053c758f97234ad94a09832683ff00ef17744
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: c735513bc0a8f325aaf0debca2170131d45178dc
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977556"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543128"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>将 Azure 存储 Web 资源添加到表单
 
@@ -27,7 +27,7 @@ ms.locfileid: "72977556"
 
 使用门户将一个文件（例如，附件 .zip）上传到 Azure 存储时，该文件由实体上的注释和附件的占位符表示。
 
-窗体上附件的![窗体](media/notes-attachment-lead-form.png "占位符")上的附件
+![窗体上的附件](media/notes-attachment-lead-form.png "窗体上的附件的占位符")
 
 请注意，附件文件现在命名为 "附件"。 默认情况下，Common Data Service 没有 Azure 文件的概念，因此此占位符 .txt 文件存储在 Common Data Service 中。 占位符文件的 Azure 存储上下文显示有关该文件的详细信息。
 ```
@@ -61,7 +61,7 @@ ms.locfileid: "72977556"
 
 新控件现在将呈现在页面上，使你能够在 Azure 存储中管理附件。
 
-(media/azure-file-attachment-lead-form.png "表单上")![的 azure 文件附件]
+![表单上的 Azure 文件附件](media/azure-file-attachment-lead-form.png "表单上的 Azure 文件附件")
 
 已将纸张剪辑图标替换为云图标，表示此文件存储在 Azure 存储中。 你可以继续在 Common Data Service 中存储附件;这些文件将用回形针图标表示。
 
@@ -80,11 +80,11 @@ ms.locfileid: "72977556"
 > [!Note]
 > 缩略图功能限制为大小低于 1 MB 的图像。
 
-![备注缩略]图(media/notes-thumbnail.png "备注缩略图")
+![备注缩略图](media/notes-thumbnail.png "备注缩略图")
 
 ## <a name="cors-protocol-support"></a>CORS 协议支持
 
-[跨域资源共享（CORS）](http://www.w3.org/TR/cors/)协议由一组标头组成，这些标头指示是否可与其他域共享响应。
+[跨域资源共享（CORS）](https://www.w3.org/TR/cors/)协议由一组标头组成，这些标头指示是否可与其他域共享响应。
 以下站点设置用于配置 CORS：
 
 |                 名称                  |                                                                            描述                                                                            |

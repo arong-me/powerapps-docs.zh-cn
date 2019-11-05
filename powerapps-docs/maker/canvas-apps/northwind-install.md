@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3a2c3b468c7ccc09c49221c65113e66b562f5ed1
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: dca5d5189129e7c9dfe32d27fb4c1190b830c039
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71990863"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541341"
 ---
 # <a name="install-northwind-traders-database-and-apps"></a>安装 Northwind 商贸数据库和应用
 
@@ -40,7 +40,7 @@ Northwind 商贸是一家虚构的组织，负责管理企业的订单、产品�
 
 ## <a name="install-the-solution"></a>安装解决方案
 
-1. 登录到[PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后确保你在包含 Common Data Service 数据库的环境中工作。
+1. 登录到[PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后确保你在包含 Common Data Service 数据库的环境中工作。
 
 1. 在左侧导航窗格中，选择 "**解决方案**"，然后在屏幕顶部附近的工具栏中选择 "**导入**"：
 

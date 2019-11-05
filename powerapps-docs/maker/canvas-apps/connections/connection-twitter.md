@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 476285021e6a65a32c2e16e4ff95c74be9da933a
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: f58f8e15d1bd522bd9c24d7e3e1dfe9a69b4d257
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987216"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541008"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>从 PowerApps 连接到 Twitter
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -239,7 +239,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
-| searchQuery |字符串 |是 |查询文本（可以使用 Twitter 支持的任何查询运算符： http://www.twitter.com/search) ） |
+| searchQuery |字符串 |是 |查询文本（可以使用 Twitter 支持的任何查询运算符： https://www.twitter.com/search) ） |
 | maxResults |整数 |否 |要检索的推文的最大数量，例如 {maxResults:5} |
 
 #### <a name="output-properties"></a>输出属性
@@ -299,7 +299,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 | FriendsCount |整数 |否 | |
 
 ### <a name="following"></a>关注
-获取以下内容：检索指定用户正在关注的用户
+获取关注的人：检索指定用户正在关注的用户
 
 #### <a name="input-properties"></a>输入属性
 
@@ -322,7 +322,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 | FriendsCount |整数 |否 | |
 
 ### <a name="myfollowing"></a>MyFollowing
-获取以下内容：检索我正在关注的用户
+获取我关注的人：检索我正在关注的用户
 
 #### <a name="input-properties"></a>输入属性
 
@@ -366,7 +366,7 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 | FriendsCount |整数 |否 | |
 
 ### <a name="tweet"></a>推文
-发布新的推文：推文
+发布新推文：推文
 
 #### <a name="input-properties"></a>输入属性
 
@@ -382,13 +382,13 @@ Twitter 连接已创建并已添加到你的应用。 现在可供使用。
 | TweetId |字符串 |是 | |
 
 ### <a name="onnewtweet"></a>OnNewTweet
-出现新的推文时：发布与搜索查询匹配的新推文时触发工作流
+显示新推文时：发布与搜索查询匹配的新推文时触发工作流
 
 #### <a name="input-properties"></a>输入属性
 
 | 名称 | 数据类型 | 需要 | 描述 |
 | --- | --- | --- | --- |
-| searchQuery |字符串 |是 |查询文本（可以使用 Twitter 支持的任何查询运算符： http://www.twitter.com/search) ） |
+| searchQuery |字符串 |是 |查询文本（可以使用 Twitter 支持的任何查询运算符： https://www.twitter.com/search) ） |
 
 #### <a name="output-properties"></a>输出属性
 

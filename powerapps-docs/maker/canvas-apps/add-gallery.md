@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3df6227ed33c5154e1e5dd700e6a87c3e8305f01
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 6d48b7b6ef1d9d691b733bea9af6ce74d0f2b07a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987565"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540932"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>显示 PowerApps 中项的列表
 
 通过向画布应用添加[库](controls/control-gallery.md)控件，显示任意数据源中项的列表。 本主题使用 Excel 作为数据源。 筛选该列表，方法是：将库控件配置为仅显示那些与[文本输入](controls/control-text-input.md)控件中的筛选器条件匹配的项。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 - 了解如何在 PowerApps 中[添加和配置控件](add-configure-controls.md)。
 
@@ -34,7 +34,7 @@ ms.locfileid: "71987565"
     2. 将 Excel 文件上传到[云存储帐户](connections/cloud-storage-blob-connections.md)（如 OneDrive for Business）中。
 
 - 打开空白应用：
-    1. [登录 PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+    1. [登录 PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
     1. 在“生成自己的应用”下，选择“从空白开始创建画布应用”。
 
@@ -58,7 +58,7 @@ ms.locfileid: "71987565"
 
 ## <a name="add-a-gallery-in-a-screen"></a>在屏幕中添加库
 
-1. 在 "**主页**" 选项卡上，选择 "**新建屏幕** > **列表屏幕**"。
+1. 在 "**主页**" 选项卡上，选择 "**新屏幕** > **列表屏幕**"。
 
     此时会显示一个包含**库**控件和其他控件（如搜索栏）的屏幕。
 

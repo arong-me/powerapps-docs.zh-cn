@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: a9e3f9398d8fdeadc9f5a6f7c57bbedbf972ef62
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: af5b0ae8eddb68127c7271fccb4696a23fedfc60
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978154"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542748"
 ---
 # <a name="configure-saml-20-provider-settings-for-portals"></a>为门户配置 SAML 2.0 提供程序设置
 
-若要提供外部身份验证，可以添加一个或多个符合[SAML 2.0](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0-cd-02.html)的标识提供者（IdP）。 本文档介绍如何设置各种标识提供者，使其与充当服务提供商的门户集成。  
+若要提供外部身份验证，可以添加一个或多个符合[SAML 2.0](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0-cd-02.html)的标识提供者（IdP）。 本文档介绍如何设置各种标识提供者，使其与充当服务提供商的门户集成。  
 
 ## <a name="ad-fs-idp"></a>AD FS （IdP）
 
@@ -88,7 +88,7 @@ ms.locfileid: "72978154"
 
 > [!Note]
 > 标准 [!include[](../../../includes/pn-adfs-short.md)] （IdP）配置仅使用以下设置（示例值）： Authentication/SAML2/ADFS/MetadataAddress-<https://adfs.contoso.com/FederationMetadata/2007-06/FederationMetadata.xml>  
-> - Authentication/SAML2/ADFS/AuthenticationType- http://adfs.contoso.com/adfs/services/trust    
+> - Authentication/SAML2/ADFS/AuthenticationType- https://adfs.contoso.com/adfs/services/trust    
 >   -   使用联合元数据的根元素中的**entityID**属性的值（在浏览器中打开**MetadataAddress URL** ，该浏览器是上述站点设置的值） 
 > - Authentication/SAML2/ADFS/ServiceProviderRealm- https://portal.contoso.com/  
 > - Authentication/SAML2/ADFS/AssertionConsumerServiceUrl- https://portal.contoso.com/signin-saml2  
@@ -102,7 +102,7 @@ ms.locfileid: "72978154"
 |---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Authentication/Registration/ExternalLoginEnabled              | 启用或禁用外部帐户登录和注册。 默认值： true                                                                                                                                                                                                                                                                                                                                                            |
 | Authentication/SAML2/[provider]/MetadataAddress             | 必填。 [!include[](../../../includes/pn-adfs-short.md)] （STS）服务器的[WS 联合身份验证](https://msdn.microsoft.com/library/bb498017.aspx)元数据 URL。 它通常以路径：/Federationmetadata.xml/2007-06/Federationmetadata.xml 结束。 示例： `https://adfs.contoso.com/FederationMetadata/2007-06/FederationMetadata.xml`。 [!include[](../../../includes/proc-more-information.md)] [wsfederationauthenticationoptions.wtrealm 相. MetadataAddress](https://msdn.microsoft.com/library/microsoft.owin.security.wsfederation.wsfederationauthenticationoptions.metadataaddress.aspx) |  
-| Authentication/SAML2/[provider]/AuthenticationType          | 必填。 OWIN authentication 中间件类型。 在联合元数据 XML 的根指定[entityID](https://docs.microsoft.com/azure/active-directory/develop/active-directory-federation-metadata)属性的值。 示例： `http://adfs.contoso.com/adfs/services/trust`。 [!include[](../../../includes/proc-more-information.md)] [AuthenticationOptions. AuthenticationType](https://msdn.microsoft.com/library/microsoft.owin.security.authenticationoptions.authenticationtype.aspx)                                                            |  
+| Authentication/SAML2/[provider]/AuthenticationType          | 必填。 OWIN authentication 中间件类型。 在联合元数据 XML 的根指定[entityID](https://docs.microsoft.com/azure/active-directory/develop/active-directory-federation-metadata)属性的值。 示例： `https://adfs.contoso.com/adfs/services/trust`。 [!include[](../../../includes/proc-more-information.md)] [AuthenticationOptions. AuthenticationType](https://msdn.microsoft.com/library/microsoft.owin.security.authenticationoptions.authenticationtype.aspx)                                                            |  
 | Authentication/SAML2/[provider]/ServiceProviderRealm<br>或 <br>Authentication/SAML2/[provider]/Wtrealm                      | 必填。 [!include[](../../../includes/pn-adfs-short.md)] 信赖方标识符。 示例： `https://portal.contoso.com/`。 [!include[](../../../includes/proc-more-information.md)] [wsfederationauthenticationoptions.wtrealm 相. Wtrealm](https://msdn.microsoft.com/library/microsoft.owin.security.wsfederation.wsfederationauthenticationoptions.wtrealm.aspx)                       |  
 | Authentication/SAML2/[provider]/AssertionConsumerServiceUrl<br>或<br>Authentication/SAML2/[provider]/Wreply                       | 必填。 [!include[](../../../includes/pn-adfs-short.md)] SAML 使用者断言终结点。 示例： https://portal.contoso.com/signin-saml2 。 [!include[](../../../includes/proc-more-information.md)] [wsfederationauthenticationoptions.wtrealm 相. Wreply](https://msdn.microsoft.com/library/microsoft.owin.security.wsfederation.wsfederationauthenticationoptions.wreply.aspx)                                                                                                                                                                                                  |  
 | Authentication/SAML2/[provider]/Caption                     | 您. 用户可在登录用户界面上显示的文本。 默认值： [提供程序]。 [!include[](../../../includes/proc-more-information.md)] [wsfederationauthenticationoptions.wtrealm 相](https://msdn.microsoft.com/library/microsoft.owin.security.wsfederation.wsfederationauthenticationoptions.caption.aspx)                |  
@@ -118,7 +118,7 @@ ms.locfileid: "72978154"
 
 ### <a name="idp-initiated-sign-in"></a>IdP-启动的登录
 
-[!include[](../../../includes/pn-adfs-short.md)] 支持 SAML 2.0[规范](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0-cd-02.html#5.1.4.IdP-Initiated%20SSO:%20POST%20Binding|outline)的[IdP 启动的单一登录（SSO）](https://technet.microsoft.com/library/jj127245.aspx)配置文件。 为了使门户（服务提供程序）能够正确响应 IdP 启动的 SAML 请求，必须正确编码[RelayState](http://blogs.technet.com/b/askds/archive/2012/09/27/ad-fs-2-0-relaystate.aspx)参数。  
+[!include[](../../../includes/pn-adfs-short.md)] 支持 SAML 2.0[规范](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0-cd-02.html#5.1.4.IdP-Initiated%20SSO:%20POST%20Binding|outline)的[IdP 启动的单一登录（SSO）](https://technet.microsoft.com/library/jj127245.aspx)配置文件。 为了使门户（服务提供程序）能够正确响应 IdP 启动的 SAML 请求，必须正确编码[RelayState](https://blogs.technet.com/b/askds/archive/2012/09/27/ad-fs-2-0-relaystate.aspx)参数。  
 
 要编码到 SAML RelayState 参数中的基本字符串值必须采用格式**ReturnUrl =/content/sub-content/** ，其中 **/content/sub-content/** 是你要在门户中访问的网页的路径（服务提供商）。 该路径可以替换为门户上的任何有效网页。 编码字符串值，并将其置于格式为**RPID =&lt;url 编码 RPID&gt;& RelayState =&lt;url 编码 RelayState&gt;** 的容器字符串中。 这会再次将整个字符串编码并添加到 **<https://adfs.contoso.com/adfs/ls/idpinitiatedsignon.aspx?RelayState=&lt;URL> 编码 RPID/RelayState&gt;** 格式的另一个容器。
 
@@ -221,7 +221,7 @@ Write-Output $idpInitiatedUrl
     这对应于**ServiceProviderRealm** （Wtrealm）站点设置值。
 5. 此时，将创建一个新的应用程序。 在菜单中，切换到 "**配置**" 部分。
 
-    在 "**单一登录**" 部分下，更新 "第一个**回复 url** " 条目，以将路径包含在 URL http://portal.contoso.com/signin-azure-ad 中。
+    在 "**单一登录**" 部分下，更新 "第一个**回复 url** " 条目，以将路径包含在 URL https://portal.contoso.com/signin-azure-ad 中。
 
     这对应于**AssertionConsumerServiceUrl** （Wreply）站点设置值。
 
@@ -283,7 +283,7 @@ Location 特性对应于**AssertionConsumerServiceUrl** （Wreply）设置。
 
 ### <a name="idp-initiated-sign-in"></a>IdP-启动的登录
 
-Shibboleth 支持 SAML 2.0[规范](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0-cd-02.html#5.1.4.IdP-Initiated%20SSO:%20POST%20Binding|outline)的[IDP 启动的 SSO](https://wiki.shibboleth.net/confluence/display/SHIB2/IdPUnsolicitedSSO)配置文件。 要使门户（服务提供程序）能够正确响应 IdP 启动的 SAML 请求，必须正确编码 RelayState 参数。  
+Shibboleth 支持 SAML 2.0[规范](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0-cd-02.html#5.1.4.IdP-Initiated%20SSO:%20POST%20Binding|outline)的[IDP 启动的 SSO](https://wiki.shibboleth.net/confluence/display/SHIB2/IdPUnsolicitedSSO)配置文件。 要使门户（服务提供程序）能够正确响应 IdP 启动的 SAML 请求，必须正确编码 RelayState 参数。  
 
 要编码到 SAML RelayState 参数中的基本字符串值必须采用格式**ReturnUrl =/content/sub-content/** ，其中 **/content/sub-content/** 是你要在门户中访问的网页的路径（服务提供商）。 该路径可以替换为门户上的任何有效网页。 完整的 IdP 启动的 SSO URL 的格式应 <https://idp.contoso.com/idp/profile/SAML2/Unsolicited/SSO?providerId=&lt;URL> 编码的提供程序 ID&gt;& target =&lt;URL 编码的返回路径&gt;。
 
@@ -410,17 +410,17 @@ $issuanceTransformRules = @'
 
 @RuleName = Transform [!INCLUDE[pn-ms-windows-short](../../../includes/pn-ms-windows-short.md)] Account Name to Name ID claim
 
-c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname"]
+c:[Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname"]
 
-=> issue(Type = "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType, Properties["http://schemas.xmlsoap.org/ws/2005/05/identity/claimproperties/format"] = "urn:oasis:names:tc:SAML:2.0:nameid-format:persistent");
+=> issue(Type = "https://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType, Properties["https://schemas.xmlsoap.org/ws/2005/05/identity/claimproperties/format"] = "urn:oasis:names:tc:SAML:2.0:nameid-format:persistent");
 
 @RuleTemplate = LdapClaims
 
 @RuleName = Send LDAP Claims
 
-c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"]
+c:[Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"]
 
-=> issue(store = "[!INCLUDE[pn-active-directory](../../../includes/pn-active-directory.md)]", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname", "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname", "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"), query = ";givenName,sn,mail;{{0}}", param = c.Value);
+=> issue(store = "[!INCLUDE[pn-active-directory](../../../includes/pn-active-directory.md)]", types = ("https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname", "https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname", "https://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"), query = ";givenName,sn,mail;{{0}}", param = c.Value);
 
 '@ -f $identityProviderValue
 
@@ -428,7 +428,7 @@ $issuanceAuthorizationRules = @'
 
 @RuleTemplate = AllowAllAuthzRule
 
-=> issue(Type = http://schemas.microsoft.com/authorization/claims/permit, Value = true);
+=> issue(Type = https://schemas.microsoft.com/authorization/claims/permit, Value = true);
 
 '@
 

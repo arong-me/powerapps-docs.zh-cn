@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: c9201f02074920b65fdf904c5dbe81826114f4c6
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: 3da40cfdcb88726384218c4b1df370c301f8ac16
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975463"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542567"
 ---
 # <a name="enable-azure-storage"></a>启用 Azure 存储
 
 使用 azure 的 azure 存储集成，你可以利用 Azure 的更大文件存储功能，使用相同的接口，并提供与默认文件附件相同的用户体验。 Web 文件、实体窗体和 web 窗体支持此功能。
 
-必须使用**Resource manager**作为部署模型来创建存储帐户。 [!include[More information](../../includes/proc-more-information.md)][创建 Azure 存储帐户](https://docs.microsoft.com/en-us/azure/storage/storage-create-storage-account#create-a-storage-account)。
+必须使用**Resource manager**作为部署模型来创建存储帐户。 [!include[More information](../../includes/proc-more-information.md)][创建 Azure 存储帐户](https://docs.microsoft.com/azure/storage/storage-create-storage-account#create-a-storage-account)。
 
 存储帐户运行后，门户需要某些全局设置，告诉应用程序如何查找存储帐户。 在门户管理应用程序中， > "**新建**" 中转到 "**设置**"，然后添加名为 " **FileStorage/CloudStorageAccount**" 的新设置。
 
@@ -35,13 +35,13 @@ ms.locfileid: "72975463"
 
 3. 选择 "**访问密钥**"。
 
-    ![从 Azure 门户中找到连接字符串的值]从(media/key-azure-storage.png "Azure 门户中找到连接字符串的值")
+    ![查找 Azure 门户中的连接字符串的值](media/key-azure-storage.png "从 Azure 门户中找到连接字符串的值")
 
 4. 在生成的面板中，找到标记为 "**连接字符串**" 的字段。 选择需要为其复制值的字段旁边的**复制**图标，然后将该值粘贴到新设置中：
 
     ![主连接字符串值](media/primary-connection-string-azure-storage.png "主连接字符串值")
 
-    云存储帐户的![门户设置]云(media/portal-site-setting-cloud-storage-account.png "存储帐户的设置")
+    ![云存储帐户的门户设置](media/portal-site-setting-cloud-storage-account.png "云存储帐户的门户设置")
 
 ## <a name="specify-the-storage-container"></a>指定存储容器
 
@@ -49,7 +49,7 @@ ms.locfileid: "72975463"
 
 在[门户管理应用程序](configure/configure-portal.md)中， > "**新建**" 中转到 "**设置**"，然后添加名为 " **FileStorage/CloudStorageContainerName**" 的新设置，并使用容器名称作为值。
 
-云存储容器的![门户设置容器](media/portal-site-setting-cloud-storage-container.png "门户设置")
+![云存储容器的门户设置](media/portal-site-setting-cloud-storage-container.png "云存储容器的门户设置")
 
 ## <a name="add-cors-rule"></a>添加 CORS 规则
 

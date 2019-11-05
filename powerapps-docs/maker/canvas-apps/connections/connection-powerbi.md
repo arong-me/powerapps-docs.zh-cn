@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5efcc877de7a16524c57121a91488189d4058437
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 100b69583593bd506cb6860890ee3dfcfc82ebdf
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987163"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540434"
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>从 PowerApps 连接到 Power BI
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
@@ -27,8 +27,8 @@ Power BI 是一套用于分析数据和共享见解的业务分析工具。 通�
 
 本主题演示如何在应用中使用 Power BI 连接，并列出可用的函数。
 
-## <a name="prerequisites"></a>先决条件
-* [注册](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+## <a name="prerequisites"></a>必备组件
+* [注册](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 * 添加 Power BI [连接](https://powerapps.microsoft.com/tutorials/add-manage-connections/)
 * 通过[模板](https://powerapps.microsoft.com/tutorials/get-started-test-drive/)、[数据](https://powerapps.microsoft.com/tutorials/get-started-create-from-data/)或[从头开始](https://powerapps.microsoft.com/tutorials/get-started-create-from-blank/)创建应用
 
@@ -44,7 +44,7 @@ Power BI 是一套用于分析数据和共享见解的业务分析工具。 通�
 ### <a name="view-the-status-of-an-alert"></a>查看警报状态
 若要查看警报状态，可使用从以上步骤获取的警报 ID 调用 CheckAlertStatus 函数。
 
-警报 ID 可以作为文本字符串传递（如“1234”），或作为使用 GetAlerts() 调用填充的库部分的引用传递（如 Gallery1.Selected.alertId）
+可以将警报 ID 作为文本字符串（例如 "1234"）传递，也可以作为对使用 GetAlerts （）调用（例如 Gallery1.selected alertId）进行填充的库部分的引用。
 
 若要继续，请添加一个标签，然后将[“Text”](../controls/properties-core.md)属性设置为以下公式之一：
 

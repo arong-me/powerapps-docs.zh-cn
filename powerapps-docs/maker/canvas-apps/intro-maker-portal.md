@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dd50652f0021079b4b9d4d23568ba148a8ce6a5b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: f4babe6356ab0be34b6b08a3d158462b58cbb0cd
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989980"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541229"
 ---
 # <a name="sign-in-to-powerapps-for-the-first-time"></a>首次登录到 PowerApps
 
-登录到 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 后，站点会为你提供各种选项，用于创建自己的应用、打开你或他人创建的应用和执行相关任务。 这些任务涵盖了从最简单的任务（如标识一个或多个提供访问权限的许可证）到更高级的功能（如创建与特定数据源的自定义连接）。
+登录到 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 后，站点会为你提供各种选项，用于创建自己的应用、打开你或他人创建的应用和执行相关任务。 这些任务涵盖了从最简单的任务（如标识一个或多个提供访问权限的许可证）到更高级的功能（如创建与特定数据源的自定义连接）。
 
 你可以在以下三个常规区域中选择选项：
 

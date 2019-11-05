@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ea94b076126aca3bc3dd687a853393e20901eeb8
-ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
+ms.openlocfilehash: 54d8ac3d347c0f60f82fdd73949eb2fd8545519c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256135"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541479"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>适用于 Power BI 的 PowerApps 自定义视觉对象
 
@@ -77,7 +77,7 @@ PowerApps 自定义视觉对象有以下限制：
 - PowerApps 自定义视觉对象无法筛选数据或将任何数据发送回报表。
 - 你需要单独从报表共享 PowerApps 应用。 了解如何[在 PowerApps 中共享应用](share-app.md)。
 - Power BI 报表服务器和 Power BI 的移动应用不支持 PowerApps 自定义视觉对象。
-- 如果使用 PowerBIIntegration （）函数，则必须使用支持[directquery](https://docs.microsoft.com/en-us/power-bi/desktop-directquery-data-sources)的源，并且必须使用 DirectQuery 方法创建数据连接。
+- 如果使用 PowerBIIntegration （）函数，则必须使用支持[directquery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources)的源，并且必须使用 DirectQuery 方法创建数据连接。
 - Power BI Desktop 中的 PowerApps 提供了在创建应用但在编辑时不 PowerApps Studio 的数据。 使用 Power BI Web 在编辑应用时预览数据。
 
 > [!NOTE]
@@ -85,7 +85,7 @@ PowerApps 自定义视觉对象有以下限制：
 
 ## <a name="browser-support"></a>浏览器支持
 
-下表列出了可用于查看、创建和修改 PowerApps 自定义视觉对象操作的浏览器可支持性。 支持的浏览器和操作由复选标记（ &check; ）标识。
+下表列出了可用于查看、创建和修改 PowerApps 自定义视觉对象操作的浏览器可支持性。 支持的浏览器和操作由复选标记（&check;）标识。
 
 |浏览器|显示|创建|Modify
 |-|-|-|-
@@ -105,7 +105,7 @@ PowerApps 自定义视觉对象有以下限制：
 3. 使用键盘上的**Ctrl + 右键**进入视觉对象。
 3. 使用键盘上的**Tab**键，直到选择了视觉对象的所需组件。
 
-有关详细信息，请参阅：[Power BI 辅助功能文档]( https://docs.microsoft.com/en-us/power-bi/desktop-accessibility)
+有关详细信息，请参阅： [Power BI 辅助功能文档]( https://docs.microsoft.com/power-bi/desktop-accessibility)
 
 
 ## <a name="next-steps"></a>后续步骤

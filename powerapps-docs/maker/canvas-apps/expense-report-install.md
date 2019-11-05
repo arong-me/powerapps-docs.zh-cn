@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 20b49aee68b7c8c357b49dac2218d994153da230
-ms.sourcegitcommit: 0e7bdaea83adaa15da4d5c9ddbcd0b2bcbee01df
+ms.openlocfilehash: afdeb89b0bd026b20e0c940b05be60d4d3238b81
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73063389"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540207"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>在 PowerApps 中安装和配置画布应用的零用金报销单示例
 
@@ -204,13 +204,13 @@ ms.locfileid: "73063389"
 
 1. 在 Web 浏览器中，导航到以下链接：
 
-    [http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip)。
+    [https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip)。
 
 2. 下载支出报表 PowerApps 示例包，并将其保存到计算机。
 
 ## <a name="create-connections"></a>创建连接
 
-1.  在 Web 浏览器中，导航到 [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1.  在 web 浏览器中，导航到[make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 2.  使用注册所用的同一凭据登录。
 3.  在左侧菜单中，选择“连接”。
 
@@ -239,7 +239,7 @@ ms.locfileid: "73063389"
 
 ## <a name="import-the-app"></a>导入应用
 
-1. 在 Web 浏览器中，导航到 [https://web.powerapps.com](https://web.powerapps.com )。
+1. 在 Web 浏览器中，导航到 [https://web.powerapps.com](https://make.powerapps.com )。
 1. 使用注册所用的同一凭据登录。
 1. 在左侧的导航栏中，选择“应用”，然后选择“导入包(预览)”。
 

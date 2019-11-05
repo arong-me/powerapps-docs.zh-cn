@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f201d1fbad574174e4427698ae28439f26419514
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: 7b6f1056a6d2b5ceaf1fcefe1ccc7d583470450c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63318382"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541716"
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>如何在 Excel 文件中保存图像，并将其添加到你的应用
 
@@ -74,12 +74,12 @@ ms.locfileid: "63318382"
 ## <a name="add-the-image-in-an-excel-file-to-your-app"></a>将 Excel 文件中的图像添加到应用
 在另一个示例中，你可以将图像保存至云存储帐户，然后使用 Excel 表格在应用中显示这些图像。
 
-在本示例中，我们使用包含一些 .jpeg 文件的 [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)。
+在本示例中，我们使用包含一些 .jpeg 文件的 [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)。
 
 > [!NOTE]
 > 显示 Excel 文件中的图像时，这些图像的路径必须使用正斜线。 当 PowerApps 将图像保存到 Excel 表格时（如上述步骤所述），路径将使用反斜杠。 因此，还可以使用前面示例中的 **SavePen_images**。 如果这样做，请将 Excel 表格中路径的反斜杠改为正斜杠。 否则将不会显示图像。  
 
-1. 下载 [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)，并将 **Assets** 文件夹提取到云存储帐户。
+1. 下载 [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)，并将 **Assets** 文件夹提取到云存储帐户。
 2. 在 Excel 电子表格中创建一个与下表类似的表格：
    
     ![Jackets 表格](./media/tutorial-working-with-images-in-excel/jackets.png)
@@ -95,7 +95,7 @@ ms.locfileid: "63318382"
 
 在设置项属性时，Excel 表格会自动更新，添加一个名为 **PowerAppsId** 的新列。
 
-在 Excel 表格中，图像路径可以是到图像的 URL。 下载 [Flooring Estimates](http://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx) 示例文件到你的云存储帐户，在应用中添加 `FlooringEstimates` 表格作为数据源，然后将库控件设置为 `FlooringEstimates`。 库将自动更新图像。
+在 Excel 表格中，图像路径可以是到图像的 URL。 下载 [Flooring Estimates](https://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx) 示例文件到你的云存储帐户，在应用中添加 `FlooringEstimates` 表格作为数据源，然后将库控件设置为 `FlooringEstimates`。 库将自动更新图像。
 
 ## <a name="learn-more"></a>了解更多
 [添加图像、视频或声音](add-images-pictures-audio-video.md)  

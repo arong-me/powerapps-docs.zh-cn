@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 470aa0671eddc5f4d3621c4dbdd8d81036c358e4
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 9ca7e5f14508a2dcd70967e77b29989819bfe7ba
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989416"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541599"
 ---
 # <a name="overview-of-the-calendar-screen-template-for-canvas-apps"></a>用于画布应用的日历屏幕模板概述
 
@@ -42,11 +42,11 @@ ms.locfileid: "71989416"
 
 从模板添加日历屏幕：
 
-1. [登录](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 PowerApps，然后在 PowerApps Studio 中创建应用或打开现有应用。
+1. [登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 PowerApps，然后在 PowerApps Studio 中创建应用或打开现有应用。
 
     本主题演示了一个手机应用，但相同的概念也适用于平板电脑应用。
 
-1. 在功能区的 "**主页**" 选项卡上，选择 "**新建屏幕**@no__t 2**日历**"。
+1. 在功能区的 "**主页**" 选项卡上，选择 "**新屏幕** > **日历**"。
 
     默认情况下，屏幕的外观如下所示：
 
@@ -113,7 +113,7 @@ ms.locfileid: "71989416"
     > [!NOTE]
     > 此公式从用于选择日历的下拉列表的 " **OnSelect** " 属性的默认值进行了略微编辑。 有关该控件的详细信息，请参阅[日历屏幕参考](./calendar-screen-reference.md#calendar-drop-down)中的部分。
 
-1. 将 `{YourCalendarNameHere}` （包括大括号）替换为要显示的日历的名称（例如， **calendar**）。
+1. 将 `{YourCalendarNameHere}`（包括大括号）替换为要显示的日历的名称（例如， **calendar**）。
 
     > [!IMPORTANT]
     > 以下步骤假定你已将一个日历屏幕添加到应用。 如果您添加了多个控件名称（如**iconCalendar1**），则会以不同数字结束，并且您需要相应地调整公式。
@@ -235,7 +235,7 @@ ms.locfileid: "71989416"
 
     此公式将创建一个动态数据库，这些数据设置为 **_selectedCalendarEvent**的字段值，每次用户在**CalendarEventsGallery**控件中选择一个事件时，将设置此值。 您可以通过向此库添加更多标签来扩展此库以包含更多字段，但这会提供一个很好的起点。
 
-1. 将库项设置为就地，将 "**标签**" 控件的 " **Text** " 属性设置为 `ThisItem.Title`，并将**HTML 文本**控件的 " **HtmlText** " 属性设置为 `ThisItem.Value`。
+1. 将库项设置为就地后，将 "**标签**" 控件的 " **Text** " 属性设置为 "`ThisItem.Title`"，并将**HTML 文本**控件的 " **HtmlText** " 属性设置为 "`ThisItem.Value`"。
 
 1. 在**CalendarEventsGallery**中，将 "**标题**" 控件的 " **OnSelect** " 属性设置为以下公式：
 
@@ -249,7 +249,7 @@ ms.locfileid: "71989416"
 
 ### <a name="show-event-attendees"></a>显示事件与会者
 
-@No__t-0 操作检索每个事件的各种字段，包括一组以分号分隔的必需和可选的与会者。 在此过程中，你将分析每组与会者，确定组织中的哪些与会者，并检索任何用户的 Office 365 配置文件。
+`Office365.GetEventsCalendarViewV2` 操作将检索每个事件的各种字段，包括一组以分号分隔的必需和可选的与会者。 在此过程中，你将分析每组与会者，确定组织中的哪些与会者，并检索任何用户的 Office 365 配置文件。
 
 1. 如果你的应用不包含 Office 365 用户连接器，请[添加它](../add-data-connection.md)。
 
@@ -306,11 +306,11 @@ ms.locfileid: "71989416"
     ```
     此公式大致确定与会者是否在你的组织中。 **_UserDomain**的定义只是在运行应用程序的用户的电子邮件地址中的域 URL。 此行在**AttendeeEmailsTemp**集合中创建一个名为**InOrg**的额外 true/false 列。 如果**userDomain**等效于**AttendeeEmailsTemp**特定行中的电子邮件地址的域 URL，则此列包含**true** 。
 
-    此方法并非总是准确的，但会非常接近。 例如，你所在组织中的某些与会者可能有类似 Jane@OnContoso.com 的电子邮件地址，而 **_userDomain**为 Contoso.com。 应用用户和 Jane 可能在同一公司工作，但其电子邮件地址略有不同。 对于这种情况，可能需要使用以下公式：
+    此方法并非总是准确的，但会非常接近。 例如，你所在组织中的某些与会者可能有类似 Jane@OnContoso.com的电子邮件地址，而 **_userDomain**为 Contoso.com。 应用用户和 Jane 可能在同一公司工作，但其电子邮件地址略有不同。 对于这种情况，可能需要使用以下公式：
 
     `Upper(_userDomain) in Upper(Right(Result, Len(Result) - Find("@", Result)))`
 
-    但是，此公式会将 Jane@NotTheContosoCompany.com 之类的电子邮件地址与 **_userDomain** （如 Contoso.com）进行匹配，而这些人在同一公司不起作用。
+    但是，此公式匹配电子邮件地址，Jane@NotTheContosoCompany.com 例如 **_userDomain** （如 Contoso.com），这些人在同一公司不起作用。
 
 - ClearCollect （MyPeople）
 

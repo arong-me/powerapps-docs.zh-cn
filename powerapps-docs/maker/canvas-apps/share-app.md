@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 22260480d24cea999128f3c85cdf99e839d5f740
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: c78057118a1546c781ea813552650045ab357321
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73025915"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541364"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>在 PowerApps 中共享画布应用
 
@@ -37,7 +37,7 @@ ms.locfileid: "73025915"
 
 ## <a name="share-an-app"></a>共享应用
 
-1. [登录](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) PowerApps，然后选择左边缘附近的“应用”。
+1. [登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) PowerApps，然后选择左边缘附近的“应用”。
 
     ![显示应用列表](./media/share-app/file-apps.png)
 
@@ -79,7 +79,7 @@ ms.locfileid: "73025915"
 
 1. 在 "共享" 面板的底部，选择 "**共享**"。
 
-    共享应用的每个人都可以在浏览器中的移动设备上的 PowerApps Mobile 或 AppSource on [Dynamics 365](https://home.dynamics.com)上运行它。 共同所有者可在[PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)中编辑并共享应用。
+    共享应用的每个人都可以在浏览器中的移动设备上的 PowerApps Mobile 或 AppSource on [Dynamics 365](https://home.dynamics.com)上运行它。 共同所有者可在[PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)中编辑并共享应用。
 
     如果你发送了电子邮件邀请，则与你共享该应用程序的所有人都可以通过选择邀请中的链接来运行它。
 
@@ -125,11 +125,7 @@ ms.locfileid: "73025915"
 当您共享基于 Common Data Service 的旧版本的应用程序时，您必须对该服务单独共享运行时权限。 如果你没有执行此操作的权限，请参阅你的环境管理员。
 
 ## <a name="share-with-guests"></a>与来宾共享
-
-> [!IMPORTANT]
-> - 预览功能不可用于生产，且功能有限。 在正式发布之前提供这些功能是为了让客户能够尽早体验并提供反馈。 
-> - 预览功能 Microsoft 支持部门的支持有限，只能在选定的地理区域中使用。 
-
+ 
 PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享。 这使得邀请外部业务合作伙伴、承包商和第三方能够运行公司的画布应用。 
 
 > [!NOTE]
@@ -190,7 +186,7 @@ PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享�
 > [!div class="mx-imgBorder"]  
 > ![在 SharePoint 中为来宾嵌入画布应用](media/share-app/guest_access_doc_5.PNG "在 SharePoint 中为来宾嵌入画布应用")
 
-通过 iFrame HTML 标记在 SharePoint 中嵌入画布应用时，请使用完整 web URL 引用应用。 若要查找 URL，请参阅 "http://make.powerapps.com"，选择应用，选择 "**详细信息**" 选项卡，URL 将显示在 " **Web 链接**" 下。
+通过 iFrame HTML 标记在 SharePoint 中嵌入画布应用时，请使用完整 web URL 引用应用。 若要查找 URL，请参阅 "https://make.powerapps.com"，选择应用，选择 "**详细信息**" 选项卡，URL 将显示在 " **Web 链接**" 下。
 
 > [!div class="mx-imgBorder"]  
 > ![画布应用详细信息](media/share-app/guest_access_doc_6.PNG "画布应用详细信息")
@@ -199,7 +195,7 @@ PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享�
 与非来宾一样，应用访问的基础数据源还必须可供来宾访问。
 
 #### <a name="what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them"></a>必须将哪些许可证分配给来宾，才能运行与他们共享的应用？
-运行应用程序所需的与非来宾相同的许可证。 例如，如果应用不使用高级 connecters，则 PowerApps P1 许可证足以分配给来宾。  
+运行应用程序所需的与非来宾相同的许可证。 例如，如果应用使用高级 connecters，则必须将每个应用计划的 PowerApps 或 PowerApps 每个用户计划分配给来宾。  
 
 |                                 | SharePoint 自定义窗体 | 使用非高级连接器的独立画布应用 | 使用高级连接器的独立画布应用 | 模型驱动应用 |
 |---------------------------------|----------------------------|----------------------------------------------------|------------------------------------------------|------------------|

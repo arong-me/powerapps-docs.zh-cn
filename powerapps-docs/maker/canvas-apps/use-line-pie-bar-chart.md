@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9204c26cc54f4230496943d48934af75d21c5319
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2841da7f5d7b19cd727f169c6fe89588f69bf1ec
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994954"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541679"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>在 PowerApps 中使用折线图、饼图或条形图显示数据
 
@@ -31,19 +31,19 @@ ms.locfileid: "71994954"
 
 ![][9]
 
-可以在 PowerApps 中创建并使用这些图表。 让我们开始吧。
+可以在 PowerApps 中创建并使用这些图表。 现在就开始吧。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
-* [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
-* 根据[模板](get-started-test-drive.md)、[数据](get-started-create-from-data.md)或[从头开始](get-started-create-from-blank.md)创建应用。
+* [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+* 通过[模板](get-started-test-drive.md)、[数据](get-started-create-from-data.md)或[从头开始](get-started-create-from-blank.md)构建应用。
 * 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
-* 下载 [ChartData.zip](http://pwrappssamples.blob.core.windows.net/samples/ChartData.zip)，其中包含 XML 文件形式的示例数据。 按照本主题中的步骤将其直接导入到应用中。 也可以解压缩该 .zip 文件，在 Excel 中打开 XML 文件，然后将其保存到[云存储帐户](connections/cloud-storage-blob-connections.md)。
+* 下载 [ChartData.zip](https://pwrappssamples.blob.core.windows.net/samples/ChartData.zip)，其中包含 XML 文件形式的示例数据。 按照本主题中的步骤将其直接导入到应用中。 也可以解压缩该 .zip 文件，在 Excel 中打开 XML 文件，然后将其保存到[云存储帐户](connections/cloud-storage-blob-connections.md)。
 
 ## <a name="import-the-sample-data"></a>导入示例数据
 在以下步骤中，我们将示例数据导入到名为“ProductRevenue”的集合。
 
-1. 在“插入”选项卡上，选择“控件”，然后选择“导入”：  
+1. 在“插入”选项卡上，依次选择“控件”和“导入”：  
 
     ![][11]  
 
@@ -55,7 +55,7 @@ ms.locfileid: "71994954"
 
 4. 在“打开”对话框中，选择 ChartData.zip，选择“打开”，然后按 Esc。
 
-5. 在“文件”菜单上，选择“集合”。
+5. 在“文件”菜单中选择“集合”。
 
     随即会列出包含已导入的图表数据的 ProductRevenue 集合：
 

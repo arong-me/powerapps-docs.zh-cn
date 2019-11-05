@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6c9195bb9256c3d977300e61efe3f2cc88cfbf67
-ms.sourcegitcommit: 0e7bdaea83adaa15da4d5c9ddbcd0b2bcbee01df
+ms.openlocfilehash: dd5d8b8e6757b18feb5da03c503b19e689ca3efe
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73063406"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541249"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>在 PowerApps 中安装和配置技术支持的示例
 
@@ -40,7 +40,7 @@ ms.locfileid: "73063406"
 
 ## <a name="prerequisites"></a>必备组件
 
-- [注册](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) PowerApps。
+- [注册](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) PowerApps。
 - 必须具有有效的 SharePoint Online 许可证和创建列表的权限。
 
 ## <a name="create-the-helpdesk-sharepoint-list"></a>创建技术支持 SharePoint 列表
@@ -140,11 +140,11 @@ ms.locfileid: "73063406"
 
 ## <a name="download-the-app"></a>下载应用程序
 
-1.  [下载](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) PowerApps 包并将其保存到计算机。
+1.  [下载](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) PowerApps 包并将其保存到计算机。
 
 ## <a name="create-connections"></a>创建连接
 
-1.  在 Web 浏览器中，导航到 [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1.  在 web 浏览器中，导航到[make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 2.  使用注册所用的同一凭据登录。
 3.  在左侧菜单，依次选择“数据”和“连接”。
     
@@ -174,7 +174,7 @@ ms.locfileid: "73063406"
 
 ## <a name="import-the-app"></a>导入应用
 
-1. 在 Web 浏览器中，导航到 [https://web.powerapps.com](https://web.powerapps.com )。
+1. 在 Web 浏览器中，导航到 [https://web.powerapps.com](https://make.powerapps.com )。
 2. 使用注册所用的同一凭据登录。
 3. 在左侧菜单中，选择“应用”。 
 4. 单击“导入包(预览)”。

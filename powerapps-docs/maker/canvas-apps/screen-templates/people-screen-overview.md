@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: da7f7c037010df0da30e0363f988ac616f9fb6cc
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: e4c688232e275cee1e285b22dd4885ea2126e7ad
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995663"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541382"
 ---
 # <a name="overview-of-the-people-screen-template-for-canvas-apps"></a>用于画布应用的人员屏幕模板概述
 
@@ -42,11 +42,11 @@ ms.locfileid: "71995663"
 
 从模板添加人员屏幕：
 
-1. [登录](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 PowerApps，然后在 PowerApps Studio 中创建应用或打开现有应用。
+1. [登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 PowerApps，然后在 PowerApps Studio 中创建应用或打开现有应用。
 
     本主题演示了一个手机应用，但相同的概念也适用于平板电脑应用。
 
-1. 在功能区的 "**主页**" 选项卡上，选择 "**新建" 屏幕**@no__t "**用户**"。
+1. 在功能区的 "**主页**" 选项卡上，选择 "**新屏幕** > **人员**"。
 
     默认情况下，屏幕的外观如下所示：
 
@@ -88,7 +88,7 @@ ms.locfileid: "71995663"
 
 人员屏幕缓存用户在**MyPeople**集合中的选择。 如果你的业务方案调用人员查找，你将需要了解如何使用此集合。 在这里，你将演练如何将此屏幕连接到基本的电子邮件屏幕，并向**MyPeople**集合中的用户发送电子邮件。 你还将深入了解[电子邮件屏幕](./email-screen-overview.md)的工作方式。
 
-1. 通过选择 "**视图**" 选项卡，选择 "**数据源**"，选择 "数据 @no__t 源"，然后查找 Office 365**outlook Connector，** 将 office 365 outlook 数据源添加到应用中。 可能需要选择 "**新建连接**" 才能找到它。
+1. 通过选择 "**视图**" 选项卡，选择 "**数据源**" > "**添加数据源**"，并查找 Office 365 Outlook connector，将 Office 365 outlook 数据源添加到应用。 可能需要选择 "**新建连接**" 才能找到它。
 1. 插入人脉屏幕后，插入新的空白屏幕。 在该屏幕中，添加一个后退箭头图标、两个文本输入框和一个发送图标。
 1. 将屏幕重命名为 " **EmailScreen**"，将 "向后箭头" 图标更改为 " **SubjectLine**"，将 " **BackIcon**" 的一个文本输入框重命名为 " **MessageBody**"，将 "发送" 图标更改为**SendIcon**
 1. 将**BackIcon**的**OnSelect**属性设置为 `Back()`。
@@ -103,7 +103,7 @@ ms.locfileid: "71995663"
     ```
     
     此时，你将使用 Outlook connector 发送电子邮件。 将其作为收件人列表传递 `Concat(MyPeople, UserPrincipalName & ";")`。 此公式将**MyPeople**集合中的所有电子邮件地址连接到单个字符串，并用分号分隔它们。 这与在你喜爱的电子邮件客户端的 "发件人" 行中用分号分隔的电子邮件地址不相同。
-    * 你要传递 `SubjectLine.Text` 作为消息的主题，`MessageBody.Text` 作为消息正文。
+    * 您将 `SubjectLine.Text` 作为消息的主题传递，并将 `MessageBody.Text` 为消息正文。
 1. 在 "人脉" 屏幕的右上角，插入 "**邮件**" 图标。
    将图标颜色更改为你适合的任何颜色。
 1. 将**SendIcon**的**OnSelect**属性设置为 `Navigate( EmailScreen, None )`。

@@ -1,23 +1,26 @@
 ---
-title: 已设置门户的详细信息 | MicrosoftDocs
-description: 了解设置门户时捕获哪些应用程序和可使用哪些详细信息。
+title: 预配门户的详细信息 |MicrosoftDocs
+description: 了解设置门户时捕获的详细信息以及可使用的内容。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 07/18/2019
+ms.custom: ''
+ms.date: 11/04/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: bcbc5f7f4fee69cecf28c24f0eddca106b680513
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542978"
 ---
-
 # <a name="portal-details"></a>门户详细信息
 
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+创建门户后，它将开始预配，并通过通知通知你状态。 预配门户后，会重定向到 PowerApps 门户 Studio。 你可以使用 PowerApps 门户 Studio 来创建和自定义你的网站。
 
-创建门户后，将开始设置，并通过通知告知您状态。 设置门户之后，将重定向到门户设计器。 可使用门户设计器创建和自定义网站。
-
-如果需要查看有关设置的门户的更多详细信息（如门户类型、应用程序 ID 等），可打开 [PowerApps 门户管理中心](admin-overview.md)并导航到**门户详细信息**选项卡。
+如果需要查看有关预配门户的更多详细信息，例如门户类型、应用程序 ID、门户所有者等，可以打开[PowerApps 门户管理中心](admin-overview.md)并导航到门户的 "**详细信息**" 选项卡。已创建门户的用户是门户所有者。
 
 > [!div class=mx-imgBorder]
 > ![门户详细信息](../media/portal-details-admin.png "门户详细信息")

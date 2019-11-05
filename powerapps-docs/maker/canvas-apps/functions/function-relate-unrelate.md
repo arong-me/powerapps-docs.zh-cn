@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d8ba0cef60b268caafb57e18ae80a522905ba45b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: ca0b81cb1150fb744251b3dfca30c9b6ed8f90a5
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992743"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73537109"
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>PowerApps 中的关联和取消与函数
 
@@ -60,7 +60,7 @@ ms.locfileid: "71992743"
 | 关系显示名称 | 相关实体 | 关系类型 |
 | --- | --- |
 | 产品预订 | 预约 | 一对多 |
-| 产品 &harr; 联系人 | 联系人 | 多对多 |
+| 产品 &harr; 联系 | 联系人 | 多对多 |
 
 **产品**和**预订**通过一对多关系进行关联。  将**预订**实体的第一条记录与**Products**实体的第一条记录相关联：
 
@@ -102,7 +102,7 @@ ms.locfileid: "71992743"
 
 1. 在“视图”选项卡上，选择“数据源”。
 
-1. 在 "**数据**" 窗格中，选择 "**添加数据源** > **Common Data Service** >  个**产品** > "**连接**"。  
+1. 在 "**数据**" 窗格中，选择 "**添加数据源**" > **Common Data Service** > **产品**" > **连接**"。  
 
     Products 实体是上面加载的示例数据的一部分。
 
@@ -172,7 +172,7 @@ ms.locfileid: "71992743"
 
 1. 在“视图”选项卡上，选择“数据源”。
 
-1. 在 "**数据**" 窗格中，选择 "**添加数据源** > " @no__t**Common Data Service** **@no__t-** 6 "**连接**"。
+1. 在 "**数据**" 窗格中，选择 "**添加数据源**" > **Common Data Service** > **保留** > **连接**"。
 
 1. 在**Gallery2**中，将**NextArrow2**的**OnSelect**公式设置为以下公式：
 
@@ -211,7 +211,7 @@ ms.locfileid: "71992743"
 
 示例数据不包含多对多关系，但您将在 Products 实体和 Contacts 实体之间创建一个。 用户可以将每个产品与多个联系人和每个联系人关联到多个产品。
 
-1. 在[此页](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)上，在左侧导航栏中选择 "**数据**"，然后选择 "**实体**"。
+1. 在[此页](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)上，在左侧导航栏中选择 "**数据**"，然后选择 "**实体**"。
 
     ![打开实体列表](media/function-relate-unrelate/entity-list.png)
 
@@ -225,7 +225,7 @@ ms.locfileid: "71992743"
 
     ![Product 实体的 "关系" 选项卡](media/function-relate-unrelate/entity-relationships.png)
 
-1. 选择 "**添加关系** > **个" 多对多**"。
+1. 选择 "**添加关系** > **多对多**"。
 
     ![添加多对多关系](media/function-relate-unrelate/entity-manytomany.png)
 
@@ -233,7 +233,7 @@ ms.locfileid: "71992743"
 
     ![选择 "联系人" 实体](media/function-relate-unrelate/entity-contact.png)
 
-1. 选择 "**完成**"  >  "**保存实体**"。
+1. 选择 "**完成**" > "**保存实体**"。
 
     !["产品" 实体的列表](media/function-relate-unrelate/entity-done.png)
 
@@ -273,7 +273,7 @@ ms.locfileid: "71992743"
 
 1. 在“视图”选项卡上，选择“数据源”。
 
-1. 在 "**数据**" 窗格中，选择 "**添加数据源** > **Common Data Service** > **联系人** > **连接**"。
+1. 在 "**数据**" 窗格中，选择 "**添加数据源**" > **Common Data Service** > **联系人** > **连接**"。
 
 1. 在**Gallery2**下，添加一个**组合框**控件，确保它名为**Combobox1.location**，然后将其**Items**属性设置为**Contacts**。
 

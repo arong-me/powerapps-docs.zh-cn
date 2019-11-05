@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ad7f01da3217faa1cd4c55b1d33acd03953434f5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: e8f40f9cd3b15dddfd9fdadbcd15495e33464967
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987347"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540893"
 ---
 # <a name="manage-canvas-app-connections-in-powerapps"></a>管理 PowerApps 中的画布应用连接
-在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中，创建到一个或多个数据源的连接、删除连接或更新其凭据。
+在 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中，创建到一个或多个数据源的连接、删除连接或更新其凭据。
 
 画布应用的数据连接可以连接到 SharePoint、SQL Server、Office 365、OneDrive for Business、Salesforce、Excel 以及许多其他[数据源](connections-list.md)。
 
@@ -34,9 +34,9 @@ ms.locfileid: "71987347"
 * 发送推文。
 * 连接到 Twilio，并从应用发送短信。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 1. [注册](../signup-for-powerapps.md) PowerApps。
-2. 使用注册所用的同一凭据登录到 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+2. 使用注册所用的同一凭据登录到 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 ## <a name="background-on-data-connections"></a>数据连接的背景信息
 大多数 PowerApps 应用使用称为“数据源”的外部信息，此类信息存储在云服务中。 一个常见的示例是存储在 OneDrive for Business 中的 Excel 文件中的表。 应用可通过使用**连接**访问这些数据源。
@@ -47,17 +47,17 @@ ms.locfileid: "71987347"
 
 使用 **[库](controls/control-gallery.md)** 、 **[显示窗体](controls/control-form-detail.md)** 和 **[编辑窗体](controls/control-form-detail.md)** 控件，可以轻松创建一个在数据源中读取和写入数据的应用。 若要开始操作，请阅读[了解数据窗体](working-with-forms.md)一文。
 
-除了在 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中创建和管理连接外，还可以在执行以下任务时创建连接：
+除了在 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中创建和管理连接外，还可以在执行以下任务时创建连接：
 
 * 自动生成[来自数据的应用](app-from-sharepoint.md)，如自定义 SharePoint 列表。
 * 更新现有应用，或从头开始创建应用，如 [添加连接](add-data-connection.md) 中所述。
 * 打开由其他用户创建的应用并 [与你共享](share-app.md)。
 
 > [!NOTE]
-> 若要改用 PowerApps Studio，请打开“文件”菜单，再单击或点击“连接”，随即会打开 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，可以在其中创建和管理连接。
+> 若要改用 PowerApps Studio，请打开“文件”菜单，再单击或点击“连接”，随即会打开 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，可以在其中创建和管理连接。
 
 ## <a name="create-a-new-connection"></a>创建新连接
-1. 如果尚未这样做，请登录到 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 如果尚未这样做，请登录到 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 2. 在左侧导航栏中，单击或点击“连接”。
    
     ![连接管理](./media/add-manage-connections/open-connections.png)

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ae82166b9cc21de1e25f99f7606ce7b95b2152b9
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: e534d5b3cf21cbbed78b16960a5f4a83a44bfe24
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71993967"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540355"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>从画布应用连接到 SharePoint
 
@@ -40,7 +40,7 @@ ms.locfileid: "71993967"
 
 ## <a name="create-a-connection"></a>创建连接
 
-1. [登录到 PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，在左侧导航栏中选择 "**数据** > **连接**"，然后选择左上角附近的 "**新建连接**"。
+1. [登录到 PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，在左侧导航栏中选择 "**数据** > **连接**"，然后选择左上角附近的 "**新建连接**"。
 
     > [!div class="mx-imgBorder"]
     > ![在左侧导航栏中选择 "数据 > 连接"，然后选择左上角附近的 "新建连接"。](./media/connection-sharepoint-online/new-connection.png)
@@ -52,7 +52,7 @@ ms.locfileid: "71993967"
 
 1. 执行下列一组步骤：
 
-    - 若要连接到 SharePoint Online，请选择 "**直接连接（云服务）**"，选择 "**创建**"，然后提供凭据（如果提示）。
+    - 若要连接到 SharePoint Online，请选择 "**直接连接（云服务）** "，选择 "**创建**"，然后提供凭据（如果提示）。
 
         > [!div class="mx-imgBorder"]
         > ![若要连接到 SharePoint Online，请选择 "直接连接（云服务）"](./media/connection-sharepoint-online/select-online.png)
@@ -86,7 +86,7 @@ ms.locfileid: "71993967"
     > [!div class="mx-imgBorder"]
     > !["查看" 选项卡，然后选择 "数据源"](./media/connection-sharepoint-online/view-data-sources.png)
 
-1. 在 "**数据**" 窗格中，选择 " > **SharePoint****添加数据源**"。
+1. 在 "**数据**" 窗格中，选择 " > **SharePoint** **添加数据源**"。
 
 1. 在 "**连接到 SharePoint 站点**" 下，选择 "最近使用的**站点**" 列表中的条目（或键入或粘贴要使用的站点的 URL），然后选择 "**连接**"。
 
@@ -113,20 +113,20 @@ ms.locfileid: "71993967"
 
 如果您的自定义列表包含这些类型的列中的任何一种，则使用编辑栏在**库**控件中显示该数据，以设置该库中一个或多个**标签**控件的**Text**属性：
 
-- 对于 "**选择**" 或 "**查找**" 列，请指定**ThisItem。**_ColumnName_**。值**以显示该列中的数据。
+- 对于 "**选择**" 或 "**查找**" 列，请指定**ThisItem。** _ColumnName_ **。值**以显示该列中的数据。
 
     例如，如果具有名为 **Location** 的“选择”列，请指定 **ThisItem.Location.Value**，如果有名为 **PostalCode** 的“查找”列，请指定 **ThisItem.PostalCode.Value**。
 
-- 对于 "**人员" 或 "组**" 列，请指定**ThisItem。**_ColumnName_**。DisplayName**显示用户或组的显示名称。
+- 对于 "**人员" 或 "组**" 列，请指定**ThisItem。** _ColumnName_ **。DisplayName**显示用户或组的显示名称。
 
     例如，指定 **ThisItem.Manager.DisplayName** 以显示名为 **Manager** 的“用户或用户组”列中的显示名称。
 
-    还可以显示关于用户的其他信息，如电子邮件地址或职务等。 若要显示选项的完整列表，请指定**ThisItem。**_ColumnName_**。** （包括尾随句点）。
+    还可以显示关于用户的其他信息，如电子邮件地址或职务等。 若要显示选项的完整列表，请指定**ThisItem。** _ColumnName_ **。** （包括尾随句点）。
 
     > [!NOTE]
     > 对于**system.createdby**列，请指定**ThisItem**以显示创建列表中的项的用户的显示名称。 对于“修改者”列，请指定 **ThisItem.Editor.DisplayName** 以显示更改列表中的项的用户的显示名称。
 
-- 对于 "**托管元数据**" 列，请指定**ThisItem。**_ColumnName_**。** 用于显示该列中的数据的标签。
+- 对于 "**托管元数据**" 列，请指定**ThisItem。** _ColumnName_ **。** 用于显示该列中的数据的标签。
 
     例如，如果具有名为 **Languages** 的“托管元数据”列，请指定 **ThisItem.Languages.Label**。
 
@@ -180,7 +180,7 @@ ms.locfileid: "71993967"
 
 ### <a name="lists"></a>表
 
-PowerApps 可以读取包含空格的列名，但空格将替换为十六进制转义代码 **"\_x0020\_"**。 例如，如果 SharePoint 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
+PowerApps 可以读取包含空格的列名，但空格将替换为十六进制转义代码 **"\_x0020\_"** 。 例如，如果 SharePoint 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
 
 并非所有类型的列都受支持，并且并非所有类型的列都支持所有类型的卡。
 

@@ -13,20 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b544b03fbe181265599bab520eddc2a2a646c477
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 78f091705a01a54b7e6eb008630949796ffac453
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994668"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541184"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>在 PowerApps 中使用多媒体文件
 
 本主题介绍如何在画布应用中嵌入多媒体文件、将笔绘作品上载到数据源，然后在画布应用中显示该数据源中的图像。 本主题使用的数据源是 OneDrive for Business 中的一个 Excel 文件。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
-[注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+[注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 ## <a name="add-media-from-a-file-or-the-cloud"></a>从文件或云添加媒体
 
@@ -78,12 +78,12 @@ ms.locfileid: "71994668"
 ## <a name="add-images-from-the-cloud-to-your-app"></a>将云中的图像添加到应用
 在此情景中，图像保存在云存储帐户 OneDrive for Business 中。 你要使用 Excel 表格来包含图像的路径，并在应用的库控件中显示图像。
 
-此情景使用包含一些 .jpeg 文件的 [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)。
+此情景使用包含一些 .jpeg 文件的 [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)。
 
 > [!NOTE]
 > Excel 文件中这些图像的路径必须使用正斜线。 当 PowerApps 在 Excel 表格中保存图像路径时，路径使用反斜杠。 如果使用此类中的图像路径，请将 Excel 表格中的路径更改为使用正斜杠而不是反斜杠。 否则图像不会显示。  
 
-1. 下载 [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)，并将 **Assets** 文件夹解压缩到云存储帐户。
+1. 下载 [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)，并将 **Assets** 文件夹提取到云存储帐户。
 
 2. 将 **Assets** 文件夹重命名为 **Assets_images**。
 
@@ -105,28 +105,28 @@ ms.locfileid: "71994668"
 
     设置 **Items** 属性时，会自动将名为 **PowerAppsId** 的列添加到 Excel 表格。
 
-    在 Excel 表格中，图像路径可以是到图像的 URL。 [Flooring Estimates](http://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx) 示例文件就是一个例子。 可将该文件下载到云存储帐户，在应用中添加 `FlooringEstimates` 表格作为数据源，然后将库控件设置为 `FlooringEstimates`。 库将自动更新图像。
+    在 Excel 表格中，图像路径可以是到图像的 URL。 [Flooring Estimates](https://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx) 示例文件就是一个例子。 可将该文件下载到云存储帐户，在应用中添加 `FlooringEstimates` 表格作为数据源，然后将库控件设置为 `FlooringEstimates`。 库将自动更新图像。
 
 ## <a name="upload-pen-drawings-to-the-cloud"></a>将笔绘作品上载到云
 此情景演示如何将笔绘作品上载到数据源 OneDrive for Business，然后了解绘图作品在该位置的存储方式。
 
 1. 在 Excel 中，将“图像 [image]”添加到 A1 单元格。
 
-2. 使用以下步骤创建表格：    
+2. 按以下步骤创建表格：    
 
    1. 选择 A1 单元格。
 
-   2. 在“插入”功能区中选择“表格”。
+   2. 在“插入”功能区中，选择“表格”。
 
    3. 在对话框中选择“表包含标题”，然后选择“确定”。
 
        ![创建表格](./media/add-images-pictures-audio-video/create-table.png)
 
-       Excel 文件现在采用表格格式。 有关 Excel 中表格格式设置的详细信息，请参阅[将数据设为表格格式](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370)。
+       现在，Excel 文件将为表格格式。 有关 Excel 中表格格式设置的详细信息，请参阅[将数据设为表格格式](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370)。
 
-   4. 将表格命名为 **Drawings**：
+   4. 将表格命名为“绘图”：
 
-       ![将表格重命名为 Drawings](./media/add-images-pictures-audio-video/name-media-table.png)
+       ![将表格重命名为“绘图”](./media/add-images-pictures-audio-video/name-media-table.png)
 
 3. 将该 Excel 文件以文件名 **SavePen.xlsx** 保存到 OneDrive for Business。
 
@@ -160,7 +160,7 @@ ms.locfileid: "71994668"
 
     **Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})**
 
-9. 添加“图像库”控件（“插入”选项卡 >“库”），然后将 **Items** 属性设置为 `Drawings`。 库控件的 **Image** 属性将自动设置为 `ThisItem.Image`。
+9. 添加“图像库”控件（“插入”选项卡 >“库”），然后将 **Items** 属性设置为 `Drawings`。 库控件的**图像**属性将自动设置为 `ThisItem.Image`。
 
     排列这些控件，使屏幕外观如下所示：  
 
@@ -170,15 +170,15 @@ ms.locfileid: "71994668"
 
 11. 在 MyPen 中绘制一些内容，然后选择按钮。
 
-    库控件中的第一幅图像将显示你绘制的内容。
+    库控件中显示的第一张图像是你刚刚所画内容。
 
 12. 在绘图中添加其他一些内容，并选择按钮。
 
-    库控件中的第二幅图像将显示你绘制的内容。
+    库控件中显示的第二张图像是你刚刚所画内容。
 
 13. 按 Esc 关闭预览窗口。
 
-    云存储帐户中已自动创建一个 **SavePen_images** 文件夹。 此文件夹包含保存的图像，其中 ID 代表它们的文件名。 若要显示该文件夹，可能需要刷新浏览器窗口（例如，按 F5）。
+    云存储帐户中已自动创建一个 **SavePen_images** 文件夹。 该文件夹包含你所保存的图像，其中 ID 代表它们的文件名。 若要显示该文件夹，可能需要刷新浏览器窗口（例如，按 F5）。
 
     在 **SavePen.xlsx** 中，**Image** 列指定新图像的路径。
 

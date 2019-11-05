@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2c11e05c93d5a505408948178bf3efbd31f2dbf7
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2e11de4af02347154c65500659df94a6b2183540
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986170"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73539434"
 ---
 # <a name="accessibility-properties-for-canvas-apps"></a>画布应用的辅助功能属性
 
@@ -43,7 +43,7 @@ ms.locfileid: "71986170"
 - 只有交互式控件的制表位。
 - 依次单击 "Z" 和 "Z" 顺序中的直观顺序，或按 "反 N" 顺序进行。
 
-将通过默认的**TabIndex**值满足上述要求，我们建议您不要更改它们。  默认情况下，大多数用户都能以可视化方式使用，并且它将与屏幕阅读器正常配合使用。  但在某些情况下，您可能需要覆盖默认值。  使用**TabIndex**属性和[**增强组**控件](https://powerapps.microsoft.com/en-us/blog/enhanced-group-experimental-control-with-layout-control-and-nesting/)（实验性）来对导航顺序进行调整。  
+将通过默认的**TabIndex**值满足上述要求，我们建议您不要更改它们。  默认情况下，大多数用户都能以可视化方式使用，并且它将与屏幕阅读器正常配合使用。  但在某些情况下，您可能需要覆盖默认值。  使用**TabIndex**属性和[**增强组**控件](https://powerapps.microsoft.com/blog/enhanced-group-experimental-control-with-layout-control-and-nesting/)（实验性）来对导航顺序进行调整。  
 
 **TabIndex**属性有两个建议的值：
 
@@ -54,7 +54,7 @@ ms.locfileid: "71986170"
 
 通常，导航顺序从左到右、从上到下、以 "Z" 模式进行。 顺序基于控件的**X**和**Y**属性值。 如果控件在屏幕上动态移动（例如，通过基于计时器或其他控件的**X**或**Y**计算公式），则导航顺序也会动态更改。
 
-使用[**增强组**控件](https://powerapps.microsoft.com/en-us/blog/enhanced-group-experimental-control-with-layout-control-and-nesting/)（实验性）来捆绑应在一起导航的控件，或使用 "反 N" 模式创建列。  在下面的示例中，名称字段包含在增强的组控件中，这会导致导航在移动之前继续下一步。  在此示例的底部，不使用任何组控件，导航将继续进行，并在不直观的情况下进行导航，因为控件分组。 
+使用[**增强组**控件](https://powerapps.microsoft.com/blog/enhanced-group-experimental-control-with-layout-control-and-nesting/)（实验性）来捆绑应在一起导航的控件，或使用 "反 N" 模式创建列。  在下面的示例中，名称字段包含在增强的组控件中，这会导致导航在移动之前继续下一步。  在此示例的底部，不使用任何组控件，导航将继续进行，并在不直观的情况下进行导航，因为控件分组。 
 
 ![动画显示增强型组控件，使导航在组内前进，然后移到](media/properties-accessibility/enhanced-group.gif)
 

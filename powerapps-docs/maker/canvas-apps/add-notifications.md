@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 22dfcb085c2de4aabd849e0a1fedc8a231f0e55f
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 4a72fc689fa9b4d7d84f554745e5a04ee2812b70
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987374"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541147"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>在 PowerApps 中发送推送通知
 推送通知用于移动应用中的使用者和业务情形，主要用来与应用用户进行交互，并帮助他们优先处理关键任务。 在 PowerApps 中，可以使用 PowerApps 通知连接器发送通知。 可以将原生推送通知发送到在 PowerApps 中创建的任何应用。 我们计划在今后支持更多通知类型。
@@ -60,7 +60,7 @@ ms.locfileid: "71987374"
 ## <a name="send-a-notification-from-an-app"></a>通过应用发送通知
 可以将推送通知从一个应用发送到另一个应用，也可以发送到同一个应用。
 
-1. 在 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中，转到要向其发送推送通知的应用。
+1. 在 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中，转到要向其发送推送通知的应用。
 2. 在“详细信息”选项卡上，复制此应用的“应用 ID”。
 
     ![获取应用 ID](./media/add-notifications/grab-id.png)

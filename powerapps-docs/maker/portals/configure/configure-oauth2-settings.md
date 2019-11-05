@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 25a26e6298fa3257f3db6d04ffd2937e8e71d3a1
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: be576425067079549d3174e6d6306814a6ddb13a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978522"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542800"
 ---
 # <a name="configure-oauth2-provider-settings-for-portals"></a>为门户配置 OAuth2 提供程序设置
 
@@ -31,7 +31,7 @@ ms.locfileid: "72978522"
 
 ## <a name="create-oauth-applications"></a>创建 OAuth 应用程序
 
-通常情况下，如果 OAuth 提供程序使用需要重定向 URI 值的应用设置，请指定 <http://portal.contoso.com/or> http://portal.contoso.com/signin-\[provider\]，具体取决于提供程序执行重定向 URI 验证的方式（某些提供程序需要指定完整 URL 路径以及域名）。 用提供程序的名称替换 "重定向 URI" 中\] 的 \[提供程序。
+通常情况下，如果 OAuth 提供程序使用需要重定向 URI 值的应用设置，请指定 <https://portal.contoso.com/or> https://portal.contoso.com/signin-\ [provider\] ，具体取决于提供程序执行重定向 URI 验证的方式（某些提供程序需要指定完整 URL 路径以及域名）。 用提供程序的名称替换 "重定向 URI" 中\] 的 \[提供程序。
 
 ### <a name="google"></a>Google
 
@@ -46,8 +46,8 @@ ms.locfileid: "72978522"
     - 选择 "**保存**"。
 5. 请参阅**api & auth** &gt;**凭据**，并创建新的客户端 ID。
    - 应用程序类型：**Web 应用程序**
-   - 授权 [!INCLUDE[pn-javascript](../../../includes/pn-javascript.md)] 起源： http://portal.contoso.com
-   - 授权重定向 Uri： http://portal.contoso.com/signin-google 
+   - 授权 [!INCLUDE[pn-javascript](../../../includes/pn-javascript.md)] 起源： https://portal.contoso.com
+   - 授权重定向 Uri： https://portal.contoso.com/signin-google 
    - 选择 "**创建客户端 ID**"。
 
 ### <a name="facebook-app-settings"></a>Facebook 应用设置
@@ -64,7 +64,7 @@ ms.locfileid: "72978522"
     - 应用域（可选）： portal.contoso.com 
     - 联系人电子邮件：*所选&lt;电子邮件地址&gt;* 
     - 选择 "**添加平台**"，然后选择 "**网站**"。 
-    - 网站 URL： http://portal.contoso.com/ 或 http://portal.contoso.com/signin-facebook
+    - 网站 URL： https://portal.contoso.com/ 或 https://portal.contoso.com/signin-facebook
 
 6. 选择 "**保存更改**"。
 7. 请参阅**状态 & 查看**&gt;**状态**"选项卡。
@@ -75,7 +75,7 @@ ms.locfileid: "72978522"
 1. 打开[[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)] 帐户开发人员中心](https://account.live.com/developers/applications/index)  
 2. 选择 "**创建应用程序**"，并指定**应用程序名称**。
 3. 选择 "**我接受**" 以接受条款和条件。
-4. 转到 "**设置**" &gt;" **API 设置**"，然后将 "重定向 URL" 设置为 "http://portal.contoso.com/signin-microsoft 
+4. 转到 "**设置**" &gt;" **API 设置**"，然后将 "重定向 URL" 设置为 "https://portal.contoso.com/signin-microsoft 
 
 ### <a name="twitter-apps-settings"></a>Twitter 应用设置
 
@@ -83,8 +83,8 @@ ms.locfileid: "72978522"
 2. 选择 "**创建新应用**"。
 
     - 指定应用的**名称**和**描述**。
-    - 将网站 URL 设置为 http://portal.contoso.com。
-    - 将回叫 URL 设置为 http://portal.contoso.com 或 http://portal.contoso.com/signin-twitter。
+    - 将网站 URL 设置为 https://portal.contoso.com 。
+    - 将回叫 URL 设置为 https://portal.contoso.com 或 https://portal.contoso.com/signin-twitter 。
 
 3. 选择 "**创建 Twitter 应用程序**"。
 
@@ -94,9 +94,9 @@ ms.locfileid: "72978522"
 2. 选择 "**添加新应用程序**"。
 
     - 指定**应用程序名称**、**说明**等。
-    - 将 "网站 URL" 设置为 http://portal.contoso.com。
+    - 将 "网站 URL" 设置为 https://portal.contoso.com 。
     - 设置 OAuth 用户协议/默认作用域： r\_basicprofie 和 r\_emailaddress
-    - 设置 OAuth 2.0 重定向 url： http://portal.contoso.com/signin-linkedin。
+    - 设置 OAuth 2.0 重定向 url： https://portal.contoso.com/signin-linkedin 。
 
 3. 选择 "**添加应用程序**"。
 

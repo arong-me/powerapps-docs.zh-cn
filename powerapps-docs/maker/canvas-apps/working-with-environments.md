@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d7783113c7102d9c8b292d0ee84d4329709eeaa7
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 9cff6054c9c238aeceaff63b5f178f5db3b16727
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71705244"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542334"
 ---
 # <a name="working-with-environments-and-microsoft-powerapps"></a>使用环境和 Microsoft PowerApps
 通过 PowerApps，你可以在不同的环境中工作，并在它们之间轻松切换。 有关环境的概述，请参阅 [环境概述](../../administrator/environments-overview.md)，该文章详细介绍了使用环境的原因以及如何创建和管理环境。 本文的范围将涵盖有关环境的以下主题：
@@ -45,13 +45,13 @@ ms.locfileid: "71705244"
 
 在正确的环境中创建应用：
 
-1. [登录 PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. [登录 PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 1. 如前一部分所述，选择要在其中创建应用的环境。
 
 1. 选择左边缘附近的 "**应用**"，然后选择 "**创建应用**"。
 
 ## <a name="view-apps-in-the-right-environment"></a>在正确的环境中查看应用
-无论你使用的是 [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 还是 PowerApps Studio，你所看到的应用、连接列表等始终根据在下拉菜单中选择的环境进行筛选。 如果看不到要查找的应用，请始终确认是否选择了正确的环境。
+无论你使用的是 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 还是 PowerApps Studio，你所看到的应用、连接列表等始终根据在下拉菜单中选择的环境进行筛选。 如果看不到要查找的应用，请始终确认是否选择了正确的环境。
 
 有关环境的详细信息，请参阅 [概述](../../administrator/environments-overview.md)。

@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 339a8b221474bd9d98ed8e425f730bab1dbb1e0a
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 19dca44c26565bc55dcfaace48987b69dd0a195f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978315"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542713"
 ---
 # <a name="configure-site-settings-for-portals"></a>为门户配置站点设置
 
@@ -64,10 +64,10 @@ ms.locfileid: "72978315"
 |搜索/启用|TRUE|指示是否启用搜索的布尔值。|
 |搜索/筛选器|内容： adx_webpage;事件： adx_event、adx_eventschedule;<br>博客： adx_blog、adx_blogpost、adx_blogpostcomment;<br>论坛： adx_communityforum、adx_communityforumthread、adx_communityforumpost;<br>创意： adx_ideaforum、adx_idea、adx_ideacomment;<br>问题： adx_issueforum、adx_issue、adx_issuecomment;技术支持：事件|搜索逻辑名称筛选器选项的集合。 此处定义值会将下拉筛选器选项添加到站点范围的搜索。 此值应采用名称/值对的形式，名称和值之间用冒号分隔，对用分号分隔。<br>例如： "论坛： adx_communityforum、adx_communityforumthread、adx_communityforumpost;博客： adx_blog、adx_blogpost、adx_blogpostcomment "。|
 |搜索/IndexQueryName|门户搜索|门户搜索查询使用的系统视图的名称。 默认值：门户搜索|
-|搜索/查询|+ （@Query） _title：（@Query） _logicalname： adx_webpage ~ 0.9 ^ 0。2<br> -_logicalname： adx_webfile ~ 0.9 adx_partialurl：（@Query）<br> _logicalname： adx_blogpost ~ 0.9 ^ 0.1-_logicalname： adx_communityforumthread ~ 0。9|覆盖站点搜索的查询，以应用额外的权重和筛选器。 @Query 是用户输入的查询文本。 Lucene 查询语法参考： [http://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html](http://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html)| 
+|搜索/查询|\+ （@Query） _title：（@Query） _logicalname： adx_webpage ~ 0.9 ^ 0。2<br> -_logicalname： adx_webfile ~ 0.9 adx_partialurl：（@Query）<br> _logicalname： adx_blogpost ~ 0.9 ^ 0.1-_logicalname： adx_communityforumthread ~ 0。9|覆盖站点搜索的查询，以应用额外的权重和筛选器。 @Query 是用户输入的查询文本。 Lucene 查询语法参考： [https://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html](https://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html)| 
 |搜索/词干分析器|英语|门户搜索的词干算法使用的语言。 默认值：英语|
 |CustomerSupport/DisplayAllUserActivitiesOnTimeline|FALSE| |
-|Authentication/[协议]/[Provider]/AllowContactMappingWithEmail| |允许基于电子邮件自动关联到联系人记录。 有关详细信息，请单击[此处](https://docs.microsoft.com/en-us/dynamics365/portals/azure-ad-b2c#allow-auto-association-to-a-contact-record-based-on-email)。|
+|Authentication/[协议]/[Provider]/AllowContactMappingWithEmail| |允许基于电子邮件自动关联到联系人记录。 有关详细信息，请单击[此处](azure-ad-b2c.md#allow-auto-association-to-a-contact-record-based-on-email)。|
 |||
 
 对于与各种门户功能相关的站点设置，请参阅：
@@ -79,10 +79,9 @@ ms.locfileid: "72978315"
 - [WS 联合身份验证](configure-ws-federation-settings.md)
 - [SAML 2。0](configure-saml2-settings.md)
 - [将标识提供者迁移到 Azure AD B2C](migrate-identity-providers.md)
-- [在文件附件内容内搜索](https://docs.microsoft.com/dynamics365/customer-engagement/portals/search-file-attachment)
-- [日期和时间字段的行为和格式](https://docs.microsoft.com/dynamics365/customer-engagement/portals/behavior-format-date-time-field)
-- [添加地理位置](https://docs.microsoft.com/dynamics365/customer-engagement/portals/add-geolocation)
-- [集成现场服务](https://docs.microsoft.com/dynamics365/customer-engagement/portals/integrate-field-service)
+- [在文件附件内容内搜索](search-file-attachment.md)
+- [日期和时间字段的行为和格式](behavior-format-date-time-field.md)
+- [添加地理位置](add-geolocation.md)
 - [实施一般数据保护条例](https://docs.microsoft.com/dynamics365/customer-engagement/portals/implement-gdpr)
 - [启用页眉和页脚输出缓存](https://docs.microsoft.com/dynamics365/customer-engagement/portals/enable-header-footer-output-caching)
 

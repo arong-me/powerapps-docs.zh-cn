@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: ab51a2b1a309921e32949a806adb4a7bf3273ccf
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: f94dee983d5d2d9cedf417f2843a2c10c46b82c1
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72974681"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543330"
 ---
 # <a name="manage-sharepoint-documents"></a>管理 SharePoint 文档
 
@@ -38,7 +38,7 @@ Common Data Service 支持与 [!INCLUDE[pn-microsoft-sharepoint-online](../../in
 
 ## <a name="step-1-enable-document-management-functionality-in-model-driven-apps-in-dynamics-365"></a>步骤1：在 Dynamics 365 中启用模型驱动应用中的文档管理功能
 
-你必须通过使用基于服务器的 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成在 Dynamics 365 中的模型驱动应用中启用文档管理功能。 基于服务器的 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成允许 Dynamics 365 和 [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] 中的模型驱动应用执行服务器到服务器连接。 门户将使用默认 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 站点记录。 有关如何在 Dynamics 365 的模型驱动应用中启用文档管理功能的信息，请参阅[在 dynamics 365 中设置模型驱动的应用，以使用 SharePoint Online](https://docs.microsoft.com/en-us/power-platform/admin/set-up-dynamics-365-online-to-use-sharepoint-online)。
+你必须通过使用基于服务器的 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成在 Dynamics 365 中的模型驱动应用中启用文档管理功能。 基于服务器的 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成允许 Dynamics 365 和 [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] 中的模型驱动应用执行服务器到服务器连接。 门户将使用默认 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 站点记录。 有关如何在 Dynamics 365 的模型驱动应用中启用文档管理功能的信息，请参阅[在 dynamics 365 中设置模型驱动的应用，以使用 SharePoint Online](https://docs.microsoft.com/power-platform/admin/set-up-dynamics-365-online-to-use-sharepoint-online)。
 
 ## <a name="step-2-set-up-sharepoint-integration-from-powerapps-portals-admin-center"></a>步骤2：设置 SharePoint 与 PowerApps 门户管理中心的集成
 
@@ -52,7 +52,7 @@ Common Data Service 支持与 [!INCLUDE[pn-microsoft-sharepoint-online](../../in
 2.  请参阅**设置 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成** > **启用 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成**。
 
     > [!div class=mx-imgBorder]
-    > ![启用 sharepoint 集成](media/enable-sharepoint-integration.png "启用 sharepoint 集成")
+    > ![启用 SharePoint 集成](media/enable-sharepoint-integration.png "启用 SharePoint 集成")
 
 3.  在确认窗口中选择 "**启用**"。 这会使门户能够与 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]通信。 虽然正在启用 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成，但门户在几分钟内就会重新启动并不可用。 启用 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成后，将显示一条消息。
 
@@ -61,12 +61,12 @@ Common Data Service 支持与 [!INCLUDE[pn-microsoft-sharepoint-online](../../in
 - **禁用 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成**：允许你禁用与门户的 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成。 虽然正在禁用 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成，但门户在几分钟内就会重新启动并不可用。 禁用 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成时，会出现一条消息。
 
     > [!div class=mx-imgBorder]
-    > ![禁用 sharepoint 集成](media/disable-sharepoint-integration.png "禁用 sharepoint 集成")
+    > ![禁用 SharePoint 集成](media/disable-sharepoint-integration.png "禁用 SharePoint 集成")
 
 启用或禁用 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成将更新门户的 [!INCLUDE[pn-azure-active-directory](../../includes/pn-azure-active-directory.md)] （[!INCLUDE[pn-azure-shortest](../../includes/pn-azure-shortest.md)] AD）应用程序，并分别添加或删除所需的 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 权限。 你还将被重定向以向你授予在 [!INCLUDE[pn-azure-shortest](../../includes/pn-azure-shortest.md)] AD 应用程序中进行更改的许可。 
 
 > [!div class=mx-imgBorder]
-> ![禁用 sharepoint 集成](media/sharepoint-integration-consent.png "禁用 sharepoint 集成")
+> ![禁用 SharePoint 集成](media/sharepoint-integration-consent.png "禁用 SharePoint 集成")
 
 如果未提供许可：
 
@@ -76,7 +76,7 @@ Common Data Service 支持与 [!INCLUDE[pn-microsoft-sharepoint-online](../../in
 
 
 ## <a name="step-3-enable-document-management-for-entities"></a>步骤3：为实体启用文档管理
-您必须对实体启用文档管理，以存储与 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]中的实体记录相关的文档。 有关如何为实体启用文档管理的信息，请参阅为[特定实体启用 SharePoint 文档管理](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/enable-sharepoint-document-management-specific-entities)。
+您必须对实体启用文档管理，以存储与 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]中的实体记录相关的文档。 有关如何为实体启用文档管理的信息，请参阅为[特定实体启用 SharePoint 文档管理](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-sharepoint-document-management-specific-entities)。
 
 ## <a name="step-4-configure-the-appropriate-form-to-display-documents"></a>步骤4：配置适当的窗体以显示文档
 
@@ -150,12 +150,12 @@ Common Data Service 支持与 [!INCLUDE[pn-microsoft-sharepoint-online](../../in
         c. 在窗体编辑器中打开**Web 编辑事例**。
 
          > [!div class=mx-imgBorder]
-         > ![Web 编辑用例格式](media/web-edit-case-form.png "web 编辑 case 窗体")
+         > ![Web 编辑 Case 窗体](media/web-edit-case-form.png "Web 编辑 Case 窗体")
     
         d. 选择窗体上的 "**创建于**" 字段，然后在 "**插入**" 选项卡上选择 "**子网格**"。
 
          > [!div class=mx-imgBorder]
-         > 向![Web 编辑用例窗体添加子网格]向(media/add-sub-grid.png "web 编辑事例窗体添加子网格")
+         > ![向 Web 编辑用例窗体添加子网格](media/add-sub-grid.png "向 Web 编辑用例窗体添加子网格")
     
         e. 在 "**设置属性**" 对话框中，设置以下属性，然后选择 **"确定"** ：
 
@@ -168,7 +168,7 @@ Common Data Service 支持与 [!INCLUDE[pn-microsoft-sharepoint-online](../../in
          - **默认视图**：活动文档位置
 
          > [!div class=mx-imgBorder]
-         > 子![网格属性]子(media/sub-grid-properties.png "网格属性")
+         > ![子网格属性](media/sub-grid-properties.png "子网格属性")
 
         果. 在窗体编辑器中，选择 "**保存**"，然后选择 "**发布**"。
 
@@ -189,7 +189,7 @@ Common Data Service 支持与 [!INCLUDE[pn-microsoft-sharepoint-online](../../in
          - **实体权限**：已启用
     
          > [!div class=mx-imgBorder]
-         > ![客户服务-编辑案例窗体](media/customer-service-edit-case-form.png "客户服务-编辑案例表单")
+         > ![客户服务-编辑案例窗体](media/customer-service-edit-case-form.png "客户服务-编辑案例窗体")
     
         d. 如果对窗体进行了任何更改，请选择 "**保存**"。
 
@@ -218,7 +218,7 @@ Common Data Service 支持与 [!INCLUDE[pn-microsoft-sharepoint-online](../../in
     - **权限**：读取、创建、追加、写入、删除
 
       > [!div class=mx-imgBorder]
-      > ![客户服务实体权限](media/customer-service-entity-permission.png "客户服务实体权限")
+      > ![Customer Service 实体权限](media/customer-service-entity-permission.png "Customer Service 实体权限")
   
    4. 登录到门户，确保为 "案例" 实体启用文档管理。
 
