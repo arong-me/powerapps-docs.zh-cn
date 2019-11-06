@@ -1,24 +1,24 @@
 ---
 title: 单选控件：参考 | Microsoft 文档
 description: 了解单选控件（包括属性和示例）
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 07/06/2018
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e3a1e1c5a62552f9ef034b6f4985213b65247627
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: cba6b072721efa04ce28606cd027939823c2f7c9
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986379"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649765"
 ---
 # <a name="radio-control-in-powerapps"></a>PowerApps 中的单选控件
 
@@ -38,7 +38,7 @@ ms.locfileid: "71986379"
 
 **Layout** - 选项是垂直还是水平布局。
 
-**[Value](properties-core.md)** – 输入控件的值。
+**[Value](properties-core.md)** - 输入控件的值。
 
 **Selected** –表示选定项的数据记录。
 
@@ -46,7 +46,7 @@ ms.locfileid: "71986379"
 
 **[Align](properties-text.md)** – 文本相对于其控件的水平居中的位置。
 
-**[BorderColor](properties-color-border.md)** – 控件边框的颜色。
+[BorderColor](properties-color-border.md) – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
@@ -54,39 +54,39 @@ ms.locfileid: "71986379"
 
 **[Color](properties-color-border.md)** – 控件中文本的颜色。
 
-**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
-**[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件边框的颜色。
+[DisabledBorderColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md)属性设置为 Disabled 时，该控件边框的颜色。
 
 **[DisabledColor](properties-color-border.md)** – 控件的 **[DisplayMode](properties-core.md)** 属性设置为 Disabled**Disabled** 时，该控件中的文本颜色。
 
 **[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode” **[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
 
-**[Fill](properties-color-border.md)** – 控件的背景色。
+**[Fill](properties-color-border.md)** – 控件的背景颜色。
 
-**[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
+[FocusedBorderColor](properties-color-border.md) – 当聚焦到控件时，控件的边框颜色。
 
-**[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
+[FocusedBorderThickness](properties-color-border.md) – 当聚焦到控件时，控件的边框粗细。
 
-[Font](properties-text.md) – 文本中所显示的字体系列的名称。
+**[Font](properties-text.md)** – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md)** -控件中的文本权重：**粗体**、 **Semibold**、 **Normal**或**浅**。
+**[FontWeight](properties-text.md)** – 控件中文本的粗细：**粗体**、**半粗体**、**正常**或**细体**。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
-[HoverColor](properties-color-border.md) – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。
+**[HoverColor](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。
 
-**[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景色。
+**[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景颜色。
 
 **[Italic](properties-text.md)** – 控件中的文本是否为斜体。
 
 **[LineHeight](properties-text.md)** - 文本行之间或列表项之间的距离。
 
-[OnChange](properties-core.md) – 用户更改控件的值（例如，通过调整滑块）时应用的响应方式。
+**[OnChange](properties-core.md)** - 用户更改控件的值（例如，通过调整滑块）时应用的响应方式。
 
-**[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
+[OnSelect](properties-core.md) – 用户点击或单击某个控件时应用响应的方式。
 
-[PaddingBottom](properties-size-location.md) – 控件中的文本与该控件的下边缘之间的距离。
+**[PaddingBottom](properties-size-location.md)** – 控件中的文本与该控件下边缘之间的距离。
 
 [PaddingLeft](properties-size-location.md) – 控件中的文本与该控件的左边缘之间的距离。
 
@@ -94,7 +94,7 @@ ms.locfileid: "71986379"
 
 **[PaddingTop](properties-size-location.md)** - 控件中的文本与此控件的上边缘之间的距离。
 
-[PressedColor](properties-color-border.md) – 用户在点击或单击控件时，该控件中的文本的颜色。
+**[PressedColor](properties-color-border.md)** – 用户在点击或单击控件时，该控件中的文本的颜色。
 
 **[PressedFill](properties-color-border.md)** – 用户在点击或单击控件时，该控件的背景色。
 
@@ -106,27 +106,27 @@ RadioSelectionFill - 单选按钮控件中选定选项的圆圈内显示的颜�
 
 RadioSize - 单选按钮控件中的圆圈直径。
 
-[Reset](properties-core.md) – 是否还原控件的默认值。
+**[Reset](properties-core.md)** - 控件是否还原为其默认值。
 
 **SelectedText （已弃用）** –表示选定项的字符串值。
 
 **[Size](properties-text.md)** – 控件上显示的文本的字号。
 
-[Strikethrough](properties-text.md) – 通过文本显示的线是否在控件上显示。
+**[Strikethrough](properties-text.md)** – 通过文本显示的线是否在控件上显示。
 
 **[TabIndex](properties-accessibility.md)** - 相对于其他控件的键盘导航顺序。
 
-**[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
+**[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
 
-[Underline](properties-text.md) – 在文本下方显示的线是否在控件上显示。
+**[Underline](properties-text.md)** – 在文本下方显示的线是否在控件上显示。
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
-**[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
+[Width](properties-size-location.md) – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="related-functions"></a>相关函数
 
@@ -144,7 +144,7 @@ RadioSize - 单选按钮控件中的圆圈直径。
 
     **If("Premium" in Pricing.Selected.Value, "$200 per day", "$150 per day")**
 
-    想要详细了解 [If](../functions/function-if.md) 函数或[其他函数](../formula-reference.md)吗？
+    想要详细了解 **[If](../functions/function-if.md)** 函数或[其他函数](../formula-reference.md)吗？
 
 3. 按住 Alt 键，同时选择单选按钮控件中的任一选项。
 
@@ -158,7 +158,7 @@ RadioSize - 单选按钮控件中的圆圈直径。
 
 除[标准颜色对比度要求](../accessible-apps-color.md)外，还要确保以下内容之间有足够的颜色对比度：
 
-* **RadioSelectionFill** 和 **RadioBackgroundFill**
+* RadioSelectionFill 和 RadioBackgroundFill
 * **RadioBackgroundFill** 和 **[Fill](properties-color-border.md)**
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持

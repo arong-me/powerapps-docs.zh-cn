@@ -1,24 +1,24 @@
 ---
 title: 形状控件和图标控件：参考 | Microsoft 文档
 description: 有关形状控件和图标控件的信息（包括属性和示例）
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 46f1974b5ff32cf21d1e9f24c15362c24b44fbe3
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 7cbc7d0a51a4bab24214f31321264d3347fbb152
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986337"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649742"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>PowerApps 中的形状控件和图标控件
 你可以为其配置外观和行为属性的图形。
@@ -27,7 +27,7 @@ ms.locfileid: "71986337"
 这些控件包括箭头、几何形状、操作图标和符号，你可以为其配置诸如 fill、size 和 location 之类的属性。 还可以配置其 **[OnSelect](properties-core.md)** 属性，以便在用户选择控件时应用程序做出响应。
 
 ## <a name="key-properties-icons-and-shapes"></a>键属性（图标和形状）
-**[Fill](properties-color-border.md)** – 控件的背景色。
+**[Fill](properties-color-border.md)** – 控件的背景颜色。
 
 **[OnSelect](properties-core.md)** -用户选择控件时应用的响应方式。
 
@@ -40,17 +40,17 @@ ms.locfileid: "71986337"
 **Color** ：按名称或 RGBA 值的图标的颜色。
 
 ## <a name="additional-properties"></a>其他属性
-**[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。
+[AccessibleLabel](properties-accessibility.md) – 屏幕阅读器标签。
 
-**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
-**[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
+[FocusedBorderColor](properties-color-border.md) – 当聚焦到控件时，控件的边框颜色。
 
-**[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
+[FocusedBorderThickness](properties-color-border.md) – 当聚焦到控件时，控件的边框粗细。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
-**[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景色。
+**[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景颜色。
 
 **[PressedBorderColor](properties-color-border.md)** –用户选择控件时，该控件边框的颜色。
 
@@ -60,11 +60,11 @@ ms.locfileid: "71986337"
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
-**[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
+[Width](properties-size-location.md) – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="related-functions"></a>相关函数
 
