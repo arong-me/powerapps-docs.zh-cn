@@ -1054,13 +1054,15 @@
           href: ./model-driven-apps/unified-interface-playbook.md
         - name: 接近统一接口转换
           href: ./model-driven-apps/approaching-unified-interface.md
+        - name: 清单：统一接口转换
+          href: ./model-driven-apps/checklist-transition-unified-interface.md
     - name: PowerApps 应用设计器中的辅助功能
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: 自定义 Dynamics 365 App for Outlook
       href: ./model-driven-apps/app-for-outlook-customize.md
     - name: 面向开发人员
       href: ../developer/model-driven-apps/overview.md
-- name: 门户
+- name: Portals
   items:
     - name: 什么是 PowerApps 门户？
       href: ./portals/overview.md
@@ -1072,7 +1074,9 @@
           href: ./portals/create-portal.md
         - name: 创建使用 Dynamics 365 环境的门户
           href: ./portals/create-dynamics-portal.md
-        - name: 门户设计器剖析
+        - name: 使用旧版门户加载项预配门户
+          href: ./portals/provision-portal-add-on.md
+        - name: PowerApps 门户工作室剖析
           href: ./portals/portal-designer-anatomy.md
         - name: 门户设计器支持的 Web 浏览器
           href: ./portals/supported-browser.md
@@ -1150,6 +1154,58 @@
               href: ./portals/configure/configure-saml2-settings.md
             - name: 将标识提供者迁移到 Azure AD B2C
               href: ./portals/configure/migrate-identity-providers.md
+        - name: Search
+          items:
+            - name: 关于搜索
+              href: ./portals/configure/search.md
+            - name: 使用分面搜索改进搜索
+              href: ./portals/configure/improve-portal-search-faceted-search.md
+            - name: 在文件附件中搜索
+              href: ./portals/configure/search-file-attachment.md
+        - name: 启用多语言支持
+          href: ./portals/configure/enable-multiple-language-support.md
+        - name: 创建和管理 Web 文件
+          href: ./portals/configure/web-files.md
+        - name: 管理 Web 链接
+          href: ./portals/configure/manage-web-links.md
+        - name: 创建和管理页面模板
+          href: ./portals/configure/page-templates.md
+        - name: 管理内容片段
+          href: ./portals/configure/customize-content-snippets.md
+        - name: 创建重定向 URL
+          href: ./portals/configure/add-redirect-url.md
+        - name: 使用快捷方式放置子节点
+          href: ./portals/configure/place-child-nodes.md
+        - name: “日期和时间”字段的行为和格式
+          href: ./portals/configure/behavior-format-date-time-field.md
+        - name: 在门户中的网页上添加图表
+          href: ./portals/configure/add-chart.md
+        - name: 使用实体窗体
+          href: ./portals/configure/entity-forms.md
+        - name: 使用实体列表
+          href: ./portals/configure/entity-lists.md
+        - name: 使用 Web 窗体
+          items:
+            - name: 定义 Web 窗体属性
+              href: ./portals/configure/web-form-properties.md
+            - name: Web 窗体步骤
+              items:
+                - name: 定义 Web 窗体步骤
+                  href: ./portals/configure/web-form-steps.md
+                - name: 定义加载窗体和加载选项卡步骤类型
+                  href: ./portals/configure/load-form-step.md
+                - name: 添加重定向步骤类型
+                  href: ./portals/configure/add-redirect-step.md
+                - name: 添加条件步骤类型
+                  href: ./portals/configure/add-conditional-step.md
+                - name: 添加自定义 JavaScript
+                  href: ./portals/configure/add-custom-javascript.md
+            - name: 配置 Web 窗体元数据
+              href: ./portals/configure/configure-web-form-metadata.md
+            - name: 配置 Web 窗体子网格
+              href: ./portals/configure/configure-web-form-subgrid.md
+            - name: 添加地理位置
+              href: ./portals/configure/add-geolocation.md
     - name: 高级门户自定义
       items:
         - name: 使用 Liquid 模板
@@ -1196,6 +1252,20 @@
                   href: ./portals/liquid/render-site-header-primary-navigation.md
         - name: OAuth 2.0 隐式授权流
           href: ./portals/oauth-implicit-grant-flow.md
+    - name: 门户中的用户管理和安全性
+      items:
+        - name: 配置联系人
+          href: ./portals/configure/configure-contacts.md
+        - name: 邀请联系人
+          href: ./portals/configure/invite-contacts.md
+        - name: 创建 Web 角色
+          href: ./portals/configure/create-web-roles.md
+        - name: 分配实体权限
+          href: ./portals/configure/assign-entity-permissions.md
+        - name: 控制网页访问
+          href: ./portals/configure/webpage-access-control.md
+        - name: 创建网站访问权限
+          href: ./portals/configure/website-access-permission.md
     - name: 门户中的文档存储
       items:
         - name: 配置说明

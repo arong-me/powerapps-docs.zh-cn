@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 3904de43a8e27ca555545cccdf23532970b02edd
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 44b45a019b786da01dc686ecb69f068ce1d7eef8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978131"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542674"
 ---
 # <a name="set-authentication-identity-for-a-portal"></a>设置门户的身份验证标识
 
-门户提供了基于[ASP.NET Identity](http://www.asp.net/identity) API 构建的身份验证功能。 ASP.NET Identity 在[OWIN](http://www.asp.net/aspnet/overview/owin-and-katana)框架的基础上建立，这也是身份验证系统的重要组成部分。 提供的服务包括：
+门户提供了基于[ASP.NET Identity](https://www.asp.net/identity) API 构建的身份验证功能。 ASP.NET Identity 在[OWIN](https://www.asp.net/aspnet/overview/owin-and-katana)框架的基础上建立，这也是身份验证系统的重要组成部分。 提供的服务包括：
 
 - 本地（用户名/密码）用户登录
 - 外部（社交提供商）用户通过第三方标识提供程序登录
@@ -92,7 +92,7 @@ ms.locfileid: "72978131"
 
 **相关进程：** 发送邀请
 
-必须使用门户上兑换邀请页面的 URL 自定义此工作流发送的电子邮件： http://portal.contoso.com/register/?returnurl=%2f&invitation={Invitation 代码（邀请）}
+必须使用门户上兑换邀请页面的 URL 自定义此工作流发送的电子邮件： https://portal.contoso.com/register/?returnurl=%2f&invitation={Invitation 代码（邀请）}
 
 1. 为新联系人创建邀请。
 
@@ -202,7 +202,7 @@ ms.locfileid: "72978131"
 | Authentication/Registration/ResetPasswordRequiresConfirmedEmail |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               仅为已确认的电子邮件地址启用或禁用密码重置。 如果启用，则不能使用未确认的电子邮件地址发送密码重置说明。 默认值： false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |   Authentication/Registration/TriggerLockoutOnFailedPassword    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          启用或禁用失败密码尝试的记录。 如果禁用，则不会锁定用户帐户。默认值： true                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |             Authentication/Registration/IsDemoMode              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          启用或禁用演示模式标志，仅用于开发或演示环境。 不要在生产环境中启用此设置。 演示模式还要求 web 浏览器在本地运行到 web 应用程序服务器。 启用 "演示模式" 后，将向用户显示密码重置代码和第二因素代码，以便快速访问。 默认值： false                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|    Authentication/Registration/LoginButtonAuthenticationType    | 如果门户只需要一个外部标识提供者（用于处理所有身份验证），则允许标题导航栏的 "**登录**" 按钮直接链接到该外部标识提供者的登录页（而不是链接到中间本地登录窗体和标识提供者选择页）。 只能为此操作选择单个标识提供者。 指定提供程序的[AuthenticationType](https://msdn.microsoft.com/library/microsoft.owin.security.authenticationoptions.authenticationtype.aspx)值。<br>对于使用 OpenIdConnect 的单一登录配置（如使用 Azure Active Directory B2C），用户需要提供此颁发机构。<br>对于基于 OAuth2 的提供程序，接受的值为： `Facebook, Google, Yahoo, [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)], LinkedIn, Yammer,` 或 `Twitter`<br>对于基于 WS 联合身份验证的提供程序，请使用为 "`Authentication/WsFederation/ADFS/AuthenticationType`" 和 "`Authentication/WsFederation/[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)]/\[provider\]/AuthenticationType` 网站设置" 指定的值。 示例： http://adfs.contoso.com/adfs/services/trust 、Facebook-0123456789、Google、Yahoo！、uri：[!INCLUDE[pn-ms-windows-short](../../../includes/pn-ms-windows-short.md)] LiveID。 |
+|    Authentication/Registration/LoginButtonAuthenticationType    | 如果门户只需要一个外部标识提供者（用于处理所有身份验证），则允许标题导航栏的 "**登录**" 按钮直接链接到该外部标识提供者的登录页（而不是链接到中间本地登录窗体和标识提供者选择页）。 只能为此操作选择单个标识提供者。 指定提供程序的[AuthenticationType](https://msdn.microsoft.com/library/microsoft.owin.security.authenticationoptions.authenticationtype.aspx)值。<br>对于使用 OpenIdConnect 的单一登录配置（如使用 Azure Active Directory B2C），用户需要提供此颁发机构。<br>对于基于 OAuth2 的提供程序，接受的值为： `Facebook, Google, Yahoo, [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)], LinkedIn, Yammer,` 或 `Twitter`<br>对于基于 WS 联合身份验证的提供程序，请使用为 "`Authentication/WsFederation/ADFS/AuthenticationType`" 和 "`Authentication/WsFederation/[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)]/\[provider\]/AuthenticationType` 网站设置" 指定的值。 示例： https://adfs.contoso.com/adfs/services/trust 、Facebook-0123456789、Google、Yahoo！、uri：[!INCLUDE[pn-ms-windows-short](../../../includes/pn-ms-windows-short.md)] LiveID。 |
 |                                                                 |                                                                                                                                                                                                                                                                                                  |
 
 ## <a name="enable-or-disable-user-registration"></a>启用或禁用用户注册

@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: c91add6569b3a74f26c48a70852df54d0d357657
-ms.sourcegitcommit: 5b623b64fba72dda893c97f497666d0adc39e0c6
+ms.openlocfilehash: 470d8e2a144e708162b886f6127bd6f9a498d093
+ms.sourcegitcommit: 6bec6932071db2411bb4ad1e01c059f57d8c9bca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71709219"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566974"
 ---
 <div id="main"
    class="v2">
@@ -89,7 +89,7 @@ ms.locfileid: "71709219"
                               </a>
                            </li>
                            <li>
-                              <a href="https://powerapps.microsoft.com/en-us/blog/">
+                              <a href="https://powerapps.microsoft.com/blog/">
                                  <div class="cardSize">
                                     <div class="cardPadding">
                                        <div class="card">
@@ -288,7 +288,7 @@ ms.locfileid: "71709219"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">门户</h3>
+                                    <h3 style="font-size: 1.15rem">Portals</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">什么是 PowerApps 门户？</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">创建门户</a></p>
@@ -319,7 +319,7 @@ ms.locfileid: "71709219"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/cds-processes">应用业务逻辑</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/solutions-overview">解决方案</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/wp-security">Common Data Service 安全性</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/en-us/download/details.aspx?id=57777">白皮书：使用解决方案实现 ALM</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">白皮书：使用解决方案实现 ALM</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-powerbi-connector">根据 Common Data Service 数据生成 Power BI 报表</a></p>
                                  </div>
                               </div>
@@ -608,7 +608,7 @@ ms.locfileid: "71709219"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">使用 PowerApps 检查器</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/isv-app-management">ISV 应用管理和监视</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">在 AppSource 上发布应用</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/en-us/download/details.aspx?id=57777">白皮书：使用解决方案实现 ALM</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">白皮书：使用解决方案实现 ALM</a></p>
                                  </div>
                               </div>
                            </div>
