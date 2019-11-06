@@ -1,24 +1,24 @@
 ---
 title: 条形码扫描器控件：参考 |Microsoft Docs
 description: 有关条形码扫描器控件的信息（包括属性和示例）
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 11/25/2018
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 56d8ca116b4b683d7096ef08f550dfa11c32d3c6
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: c7c3079ebbdeea0097f50acc2ce7f5d4e4089947
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986442"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650419"
 ---
 # <a name="barcode-scanner-control-for-canvas-apps"></a>用于画布应用的条形码扫描器控制
 
@@ -49,13 +49,13 @@ ms.locfileid: "71986442"
 
 ## <a name="additional-properties"></a>其他属性
 
-**[BorderColor](properties-color-border.md)** – 控件边框的颜色。
+[BorderColor](properties-color-border.md) – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
 **FlashlightEnabled** -打开扫描仪时是否自动启用闪光灯。
 
@@ -63,7 +63,7 @@ ms.locfileid: "71986442"
 
 **PreferFrontCamera** -用于扫描的正面照相机（如果可用）。
 
-**[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
+**[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
 
 **类型**-在最近成功完成的扫描中检测到的代码类型。
 
@@ -71,9 +71,9 @@ ms.locfileid: "71986442"
 
 **[Width](properties-size-location.md)** –激活扫描仪的按钮的宽度。
 
-**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 **[按钮](control-button.md)** 控件的相同准则适用于**条形码扫描器**控件，因为它是启动扫描的按钮。

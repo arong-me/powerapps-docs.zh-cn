@@ -1,24 +1,24 @@
 ---
 title: 复选框控件：参考 | Microsoft 文档
 description: 有关复选框控件的信息，包括属性和示例
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d943eacabaab8d9542352ee0b1c092244c171d86
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2a89f2afcceedada0ffdda53628e9253433e8f95
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986813"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650687"
 ---
 # <a name="check-box-control-in-powerapps"></a>PowerApps 中的复选框控件
 用户可选择或清除以将其值设置为 **true** 或 **false** 的控件。

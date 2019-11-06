@@ -1,24 +1,24 @@
 ---
 title: 评分控件 | Microsoft 文档
 description: 有关评分控件的信息（包括属性和示例）
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 774b5294f9d03564caa658a04aff0f682a7bb43f
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 212fc44b6c1cec981f17d134f4cd8f8131b7af9a
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993344"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649918"
 ---
 # <a name="rating-control-in-powerapps"></a>PowerApps 中的评分控件
 用户可以用于指示介于 1 和你指定的最大数之间的值的控件。

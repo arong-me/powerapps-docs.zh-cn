@@ -1,24 +1,24 @@
 ---
 title: Power BI 磁贴控件：参考 | Microsoft 文档
 description: 有关 Power BI 磁贴控件的信息（包括属性和示例）
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 07/07/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f258beee317fcdad46d71b504f9c8a3046bb3641
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 6ec04214bdee40cbe7ed5379a527fcd70d9229e7
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993363"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650312"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>PowerApps 中的 Power BI 磁贴控件
 
@@ -68,27 +68,27 @@ ms.locfileid: "71993363"
 
 ## <a name="additional-properties"></a>其他属性
 
-**[BorderColor](properties-color-border.md)** – 控件边框的颜色。
+[BorderColor](properties-color-border.md) – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
-**[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。 默认情况下，将打开与磁贴关联的 Power BI 报表。
+[OnSelect](properties-core.md) – 用户点击或单击某个控件时应用响应的方式。 默认情况下，将打开与磁贴关联的 Power BI 报表。
 
 TileUrl – 从 Power BI 服务请求磁贴所使用的 URL。 可以通过向 URL 追加参数将单个参数传递到 Power BI 磁贴中（例如：… & "&$filter=Town/Province eq '" & ListBox1.Selected.Abbr & "'"）。 在参数中只能使用等于运算符。
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
-**[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
+[Width](properties-size-location.md) – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="example"></a>示例
 
