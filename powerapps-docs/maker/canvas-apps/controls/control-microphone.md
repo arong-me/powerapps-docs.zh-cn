@@ -1,24 +1,24 @@
 ---
 title: 麦克风控件：参考 | Microsoft 文档
 description: 有关麦克风控件的信息（包括属性和示例）
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 915f5c15af06914cf10a749bf8d995926fd1bf2f
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2ae158e17873ed7433b301cc5c88d195515a9a5c
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993416"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650431"
 ---
 # <a name="microphone-control-in-powerapps"></a>PowerApps 中的麦克风控件
 允许应用用户从其设备录音的控件。
@@ -38,15 +38,15 @@ ms.locfileid: "71993416"
 
 **[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
-**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”  、“虚线”  、“点线”  还是“无”  。
+**[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
 **[Color](properties-color-border.md)** – 控件中文本的颜色。
 
-**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit  )、仅显示数据 (View  )，还是已禁用 (Disabled  )。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
-**[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md)  属性设置为“Disabled”  时，该控件边框的颜色。
+**[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件边框的颜色。
 
 **[DisabledColor](properties-color-border.md)** – 控件的 **[DisplayMode](properties-core.md)** 属性设置为 Disabled**Disabled** 时，该控件中的文本颜色。
 
@@ -62,13 +62,13 @@ ms.locfileid: "71993416"
 
 **[HoverBorderColor](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件边框的颜色。
 
-[HoverColor](properties-color-border.md)  – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。
+[HoverColor](properties-color-border.md) – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。
 
 **[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景颜色。
 
-[Image](properties-visual.md)  – 在图像、音频或麦克风控件中显示的图像名称。
+[Image](properties-visual.md) – 在图像、音频或麦克风控件中显示的图像名称。
 
-**[ImagePosition](properties-visual.md)** – 屏幕或控件大小与图像大小不同时，其中图像的位置（“填充”  、“适应”  、“拉伸”  、“平铺”  或“居中”  ）。
+**[ImagePosition](properties-visual.md)** – 屏幕或控件大小与图像大小不同时，其中图像的位置（“填充”、“适应”、“拉伸”、“平铺”或“居中”）。
 
 **[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 
@@ -80,7 +80,7 @@ ms.locfileid: "71993416"
 
 **[PressedFill](properties-color-border.md)** – 用户在点击或单击控件时，该控件的背景色。
 
-[Reset](properties-core.md)  – 是否还原控件的默认值。
+[Reset](properties-core.md) – 是否还原控件的默认值。
 
 **[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
 
@@ -99,24 +99,24 @@ ms.locfileid: "71993416"
 
 ## <a name="example"></a>示例
 ### <a name="add-sounds-to-a-custom-gallery-control"></a>将声音添加到自定义库控件
-1. 添加“麦克风”  ，将其命名为“MyMic”  ，并将其 **OnStop** 属性设置为以下公式：<br>
+1. 添加“麦克风”，将其命名为“MyMic”，并将其 **OnStop** 属性设置为以下公式：<br>
    **Collect(MySounds, MyMic.Audio)**
 
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
 
     想要了解有关 **[Collect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
-2. 添加“自定义库”  控件，将其移至“MyMic”  下，并将“自定义库”  控件的 **[Items](properties-core.md)** 属性设置为 **Mysounds**。
-3. 在“自定义库”  控件的模板中，添加 **[音频](control-audio-video.md)** 控件，并将其“媒体”  属性设置为 **ThisItem.Url** 。
-4. 按 F5，单击或点击“MyMic”  开始录制，然后再次单击或点击以停止录制。
-5. 在“自定义库”  控件中，单击或点击 **[音频](control-audio-video.md)** 控件中的播放按钮以播放录制的内容。
+2. 添加“自定义库”控件，将其移至“MyMic” 下，并将“自定义库”控件的 **[Items](properties-core.md)** 属性设置为 **Mysounds**。
+3. 在“自定义库”控件的模板中，添加 **[音频](control-audio-video.md)** 控件，并将其“媒体”属性设置为 **ThisItem.Url** 。
+4. 按 F5，单击或点击“MyMic”开始录制，然后再次单击或点击以停止录制。
+5. 在“自定义库”控件中，单击或点击 **[音频](control-audio-video.md)** 控件中的播放按钮以播放录制的内容。
 6. 根据需要添加多个录制内容，然后按 Esc 返回到默认工作区。
-7. （可选）在“自定义库”  控件的模板中，添加 **[按钮](control-button.md)** 控件，将 其 **[OnSelect](properties-core.md)** 属性设置为 **Remove(MySounds, ThisItem)** ，按 F5，然后单击或点击相应的“按钮”  控件删除录制。
+7. （可选）在“自定义库”控件的模板中，添加 **[按钮](control-button.md)** 控件，将 其 **[OnSelect](properties-core.md)** 属性设置为 **Remove(MySounds, ThisItem)** ，按 F5，然后单击或点击相应的“按钮”控件删除录制。
 
 使用 **[SaveData](../functions/function-savedata-loaddata.md)** 函数在本地保存录音，或使用 **[Patch](../functions/function-patch.md)** 函数更新数据源。
 
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
-适用[“按钮”](control-button.md)  的相同准则，因为“麦克风”  是专用按钮。 此外，请考虑以下方面：
+适用[按钮](control-button.md)的相同准则，因为“麦克风”是专用按钮。 此外，请考虑以下方面：
 
 ### <a name="audio-alternatives"></a>音频替代项
 * 请考虑为有语言障碍或没有麦克风的用户添加另一种输入形式。 例如， **[文本输入](control-text-input.md)** ，允许用户输入文本。
