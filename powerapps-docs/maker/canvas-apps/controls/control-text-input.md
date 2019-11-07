@@ -1,24 +1,24 @@
 ---
 title: 文本输入控件：参考 | Microsoft 文档
 description: 有关文本输入控件的信息（包括属性和示例）
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b5b8e0b9bae3a7733a8499fb096c04e19c878045
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: e17f580a98013f385080ea1189281607825ce7a8
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993281"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649877"
 ---
 # <a name="text-input-control-in-powerapps"></a>PowerApps 中的文本输入控件
 用户可在其中键入文本、数字和其他数据的框。

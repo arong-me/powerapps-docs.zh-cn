@@ -1,24 +1,24 @@
 ---
 title: 滑块控件：参考 | Microsoft 文档
 description: 有关滑块控件的信息，包括属性和示例
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4c0d108f6aac4df7d0e10a316ba51f6f35ee3338
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 45314238783e4cbf53332e8531bc0d76c679265f
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993308"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649862"
 ---
 # <a name="slider-control-in-powerapps"></a>PowerApps 中的滑块控件
 一个控件，用户可通过拖动图柄使用该控件指定值。

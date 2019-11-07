@@ -1006,6 +1006,8 @@
           href: ./model-driven-apps/templates-overview.md
         - name: 使用主题应用组织品牌
           href: ./model-driven-apps/create-themes-organization-branding.md
+        - name: 为应用创建引导式帮助
+          href: ./common-data-service/create-custom-help-pages.md
         - name: 将报告添加到应用
           href: ./model-driven-apps/add-reporting-to-app.md
           items:
@@ -1042,6 +1044,8 @@
           href: ./model-driven-apps/change-custom-entity-icons.md
         - name: 使用解决方案分发应用
           href: ./model-driven-apps/distribute-model-driven-app.md
+        - name: 启用可自定义帮助
+          href: ./model-driven-apps/use-customizable-help.md
         - name: 创建引导式帮助
           href: ./model-driven-apps/create-guided-help-learning-path.md
     - name: 转换为统一接口
@@ -1056,6 +1060,8 @@
           href: ./model-driven-apps/approaching-unified-interface.md
         - name: 清单：统一接口转换
           href: ./model-driven-apps/checklist-transition-unified-interface.md
+        - name: 常见问题解答：统一接口转换
+          href: ./model-driven-apps/faqs-transition-unified-interface.md
     - name: PowerApps 应用设计器中的辅助功能
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: 自定义 Dynamics 365 App for Outlook
