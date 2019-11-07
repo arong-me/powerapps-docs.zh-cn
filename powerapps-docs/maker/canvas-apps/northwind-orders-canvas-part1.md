@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/25/2019
+ms.date: 11/06/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 03411202ecc9c4c04713f7eb9cf6286809109684
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bbc6111800a817ecb71eec60fdba1d2dabd6c698
+ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541516"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73741502"
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>在画布应用中创建订单库
 
@@ -53,39 +53,22 @@ ms.locfileid: "73541516"
     > [!div class="mx-imgBorder"]
     > ![PowerApps Studio](media/northwind-orders-canvas-part1/start-03.png)
 
-1. 启用[实验性功能](working-with-experimental.md)，以便直接从公式栏中显示公式的结果。
-
-    1. 在 "**文件**" 菜单上，选择 "**应用设置**"，然后选择 "**高级设置**"。
-    1. 滚动到功能列表的底部，然后打开 "**启用公式栏结果" 视图**：
-
-        > [!div class="mx-imgBorder"]
-        > 实验功能 ![列表](media/northwind-orders-canvas-part1/start-04.png)
-
-1. 在左上角，选择 "返回" 箭头返回到空白画布。
-
 ## <a name="add-the-data"></a>添加数据
 
-1. 在 "**视图**" 选项卡上，选择 "**数据源**"，然后在 "**数据**" 窗格中选择 "**添加数据源**"：
+1. 在 "**视图**" 选项卡上，选择 "**数据源**"：
 
     > [!div class="mx-imgBorder"]
     > ![选择视图、数据源、添加数据源](media/northwind-orders-canvas-part1/datasource-01.png)
 
-1. 选择**Common Data Service**。
-
-    如果**Common Data Service**未出现在连接列表中，请选择 "**新建连接**"，然后添加它。
+1. 在搜索框中键入**orders** ：
 
     > [!div class="mx-imgBorder"]
     > ![连接列表](media/northwind-orders-canvas-part1/datasource-02.png)
 
-1. 在 "**选择实体**" 下，键入 "**订单**"，选择 "**订单**" 复选框，然后选择 "**连接**"：
+1. 选择要在应用中使用的**订单**数据源：
 
     > [!div class="mx-imgBorder"]
     > 实体 ![列表](media/northwind-orders-canvas-part1/datasource-03.png)
-
-    已将**Orders**数据源添加到应用：
-
-    > [!div class="mx-imgBorder"]
-    > ![数据 "窗格](media/northwind-orders-canvas-part1/datasource-04.png)
 
     **Orders**实体包含各种类型的多个字段：
 
@@ -94,7 +77,7 @@ ms.locfileid: "73541516"
 
     每个字段都有一个**显示名称**和一个**名称**，该名称有时称为逻辑名称。 这两个名称引用相同的内容。 通常情况下，在生成应用时将使用显示名称，但某些情况下需要的**名称**越多，如过程中所述。
 
-1. 在 PowerApps Studio 中，通过选择右上角的 "关闭" 图标（x）来关闭 "**数据**" 窗格。
+1. 由于我们将使用屏幕和控件，接下来，通过按下三个堆积正方形图标 PowerApps Studio 切换回左侧的**树视图**。 您可以通过按圆柱体图标随时返回到**数据源**。
 
 ## <a name="create-the-order-gallery"></a>创建订单库
 
@@ -103,7 +86,13 @@ ms.locfileid: "73541516"
     > [!div class="mx-imgBorder"]
     > ![插入、库、空白垂直](media/northwind-orders-canvas-part1/orders-01.png)
 
-1. 在编辑栏中，将库的**Items**属性设置为以下公式：
+    控件将被放置在画布上，并将显示 "飞出" 对话框，询问要连接到哪些数据源。  
+
+
+    > [!div class="mx-imgBorder"]
+    > ![库的 Set Items 属性](media/northwind-orders-canvas-part1/orders-02.png)
+
+1. 我们可以将它直接连接到此处的**订单**，但我们想要控制库的排序顺序。  忽略飞出对话框，并在编辑栏中将库的**Items**属性设置为以下公式：
 
     ```powerapps-dot
     Sort( Orders, 'Order Number', Descending )
@@ -112,7 +101,12 @@ ms.locfileid: "73541516"
     Sort 函数对该列表[**进行排序**](functions/function-sort.md)，以便先显示最新的订单（具有最高的订单号）。
 
     > [!div class="mx-imgBorder"]
-    > ![库的 Set Items 属性](media/northwind-orders-canvas-part1/orders-02.png)
+    > ![库的 Set Items 属性](media/northwind-orders-canvas-part1/orders-02b.png)
+
+1. 几分钟后，结果视图将显示在编辑栏的下方。  向下下拉箭头以查看公式的结果。  向右滚动以查看 "**订单号**" 列，并确保按所需的方式对其进行排序（从高到低）。  
+
+    > [!div class="mx-imgBorder"]
+    > ![库的 Set Items 属性](media/northwind-orders-canvas-part1/orders-02c.png)
 
 1. 在右侧边缘附近的 "**属性**" 选项卡中，打开 "**布局**" 列表：
 
@@ -126,7 +120,10 @@ ms.locfileid: "73541516"
 
     将两个[**标签**](controls/control-text-box.md)控件添加到库的模板中。 默认情况下，这些控件显示 " **Orders** " 实体的两个列，接下来将更改这些列。 将为实体中的每个记录垂直复制库的模板。
 
-1. 如果已关闭 "**数据**" 窗格，请在右侧边缘附近的 "**属性**" 选项卡中选择 "**编辑**" （**字段**旁边）。
+1. 在右侧边缘附近的 "**属性**" 选项卡中，选择 "**编辑**" （**字段**旁边）。
+
+    > [!div class="mx-imgBorder"]
+    > ![选择布局](media/northwind-orders-canvas-part1/orders-04b.png)
 
 1. 在 "**数据**" 窗格中，选择 " **Title1** " （或选择库模板中的上部标签）。
 
@@ -261,7 +258,7 @@ ms.locfileid: "73541516"
 
     此公式显示蓝色下划线和[委托警告](delegation-overview.md)，因为 Common Data Service 不支持对复杂聚合函数（例如，乘法）的委托。 您可以忽略此信息，因为此示例中的任何订单都不包含500行以上的项。 如果需要其他应用，可以在**应用设置**中增加该限制。
 
-    此公式中的[**文本**](functions/function-text.md)函数添加货币符号，并使用千位分隔符和小数分隔符设置结果格式。 根据编写，该公式包括美国英语的语言标记（ **[$-en-us]** ）和一个美元符号（ **$** ）。 如果删除 language 标记，则会将其替换为基于您的语言设置的一个标记，标签将显示该标记的相应格式。 如果保留美元符号，则标签将根据用户的设置显示相应的货币符号。 但是，您可以通过将美元符号替换为您喜欢的符号来强制显示不同的符号。
+    此公式中的[**文本**](functions/function-text.md)函数添加货币符号，并使用千位分隔符和小数分隔符设置结果格式。 根据编写，该公式包括美国英语的语言标记（**[$-en-us]**）和一个美元符号（**$**）。 如果删除 language 标记，则会将其替换为基于您的语言设置的一个标记，标签将显示该标记的相应格式。 如果保留美元符号，则标签将根据用户的设置显示相应的货币符号。 但是，您可以通过将美元符号替换为您喜欢的符号来强制显示不同的符号。
 
 1. 在 "**主页**" 选项卡上，将最新标签的字体大小更改为20磅，并将其文本右对齐：
 

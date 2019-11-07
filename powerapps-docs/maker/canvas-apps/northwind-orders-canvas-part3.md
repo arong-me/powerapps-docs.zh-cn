@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/25/2019
+ms.date: 11/06/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7a975669d1e22289b7152b830808631992389a1f
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 010d567369e9c580b57a55ad251ac5ef01da3597
+ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71991609"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73741360"
 ---
 # <a name="create-a-detail-gallery-in-a-canvas-app"></a>在画布应用中创建详细信息库
 
@@ -47,7 +47,7 @@ ms.locfileid: "71991609"
 1. 采用以下任一方式从副本中删除文本：
 
     - 双击文本将其选中，然后按 Delete。
-    - 将标签的 " **Text** " 属性设置为空字符串（ **""** ）。
+    - 将标签的 " **Text** " 属性设置为空字符串（**""**）。
 
     > [!div class="mx-imgBorder"]
     > ![从标题栏副本中删除文本](media/northwind-orders-canvas-part3/details-02.png)
@@ -64,7 +64,7 @@ ms.locfileid: "71991609"
     > [!div class="mx-imgBorder"]
     > 订单详细信息库 ![默认位置](media/northwind-orders-canvas-part3/details-04.png)
 
-1. 关闭 "**数据**" 窗格，然后将详细信息库调整到新标题栏下面的右下角：
+1. 关闭 "飞出数据源" 对话框，然后在新标题栏下调整详细信息库的大小并将其移动到右下角：
 
     > [!div class="mx-imgBorder"]
     > 订单详细信息库 ![最终位置](media/northwind-orders-canvas-part3/details-05.png)
@@ -183,7 +183,7 @@ ms.locfileid: "71991609"
     Text( ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
     ```
 
-    如果不包含语言标记（ **[$-en-us]** ），则将根据语言和区域为你添加。 如果使用其他语言标记，则需要删除位于右方括号（ **]** ）之后的 **$** ，然后在该位置添加您自己的货币符号。
+    如果不包含语言标记（**[$-en-us]**），则将根据语言和区域为你添加。 如果使用其他语言标记，则需要删除位于右方括号（**]**）之后的**$** ，然后在该位置添加您自己的货币符号。
 
     > [!div class="mx-imgBorder"]
     > ![显示单位价格](media/northwind-orders-canvas-part3/details-15.png)
@@ -201,7 +201,7 @@ ms.locfileid: "71991609"
     Text( ThisItem.Quantity * ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
     ```
 
-    同样，如果不包含语言标记（ **[$-en-us]** ），则将根据语言和区域为你添加。 如果标记不同，则需要使用自己的货币符号，而不是右方括号（ **]** ）后的 **$** 。
+    同样，如果不包含语言标记（**[$-en-us]**），则将根据语言和区域为你添加。 如果标记不同，则需要使用自己的货币符号，而不是右方括号（**]**）后的**$** 。
 
     > [!div class="mx-imgBorder"]
     > ![显示扩展价格](media/northwind-orders-canvas-part3/details-17.png)
@@ -320,32 +320,6 @@ ms.locfileid: "71991609"
     > [!div class="mx-imgBorder"]
     > ![将标签的填充更改为浅蓝色](media/northwind-orders-canvas-part3/add-details-03.png)
 
-## <a name="add-the-order-details-data-source"></a>添加订单详细信息数据源
-
-1. 在 "**视图**" 选项卡上，选择 "**数据源**"，然后在 "**数据**" 窗格中选择 "**添加数据源**"：
-
-    > [!div class="mx-imgBorder"]
-    > ![添加数据源](media/northwind-orders-canvas-part3/add-details-04.png)
-
-1. 选择**Common Data Service**：
-
-    > [!div class="mx-imgBorder"]
-    > ![选择 Common Data Service](media/northwind-orders-canvas-part3/add-details-05.png)
-
-1. 在 "**数据**" 窗格顶部的 "搜索" 框中键入 "**顺序**"，选中 "**订单详细信息**" 复选框，然后在窗格底部选择 "**连接**"：
-
-    > [!div class="mx-imgBorder"]
-    > ![指定订单详细信息实体](media/northwind-orders-canvas-part3/add-details-06.png)
-
-    你刚向应用添加了另一个数据源：
-
-    > [!div class="mx-imgBorder"]
-    > 数据源 ![列表](media/northwind-orders-canvas-part3/add-details-07.png)
-
-    您必须添加此数据源，因为虽然应用程序可以通过一对多关系读取，但是应用程序无法写回更改。 应用必须直接与相关实体进行更改。
-
-1. 关闭 "**数据**" 窗格。
-
 ## <a name="select-a-product"></a>选择产品
 
 1. 在 "**插入**" 选项卡上，选择 "**控件** > "**组合框**：
@@ -355,23 +329,12 @@ ms.locfileid: "71991609"
 
     [**组合框**](controls/control-combo-box.md)控件将显示在左上角。
 
-1. 将组合框的**Items**属性设置为以下公式：
-
-    ```powerapps-dot
-    Choices( 'Order Details'.Product )
-    ```
+1. 在 "飞出" 对话框中，选择 "**订购产品**" 数据源：
 
     > [!div class="mx-imgBorder"]
     > ![设置组合框的 Items 属性](media/northwind-orders-canvas-part3/add-details-09.png)
 
-    [**选项**](functions/function-choices.md)函数将为 "**订单详细信息**" 实体中的 "**产品**" 字段返回一个表。 此字段是多对一关系中的一个查找，因此可**选择**返回**Order Products**实体中的所有记录。
-
-    > [!NOTE]
-    > 您还可以将**选项与选项**集结合使用，以返回所有选项的表。 这些步骤未提到此方法，但您在将显示**订单状态**的组合框添加到摘要窗体中时已使用了该方法。
-
-1. 在 "**数据**" 窗格中，打开 "**主文本**" 列表，然后选择 " **nwind_productname**"。 
-
-1. 打开 " **SearchField** " 列表，然后选择 " **nwind_productname**"。
+1. 在组合框的 "**属性**" 选项卡中，选择 "**编辑**" （"**字段**" 旁边）以打开 "**数据**" 窗格。  确保**主文本**和**SearchField**设置为**nwind_productname**。
 
     指定逻辑名称，因为在此示例中，**数据**窗格不支持显示名称：
 
@@ -446,7 +409,7 @@ ms.locfileid: "71991609"
 
     使用此文本输入框，用户将指定**订单详细信息**记录的**数量**字段。
 
-1. 将此控件的**默认**属性设置为 **""** ：
+1. 将此控件的**默认**属性设置为 **""**：
 
     > [!div class="mx-imgBorder"]
     > ![设置文本输入框的 * * Default * * 属性](media/northwind-orders-canvas-part3/add-details-21.png)
@@ -477,7 +440,7 @@ ms.locfileid: "71991609"
     此控件显示 "**订单产品**" 实体的**定价**。 此值将确定**订单详细信息**记录中的 "**单价**" 字段。
 
     > [!NOTE]
-    > 对于此方案，此值是只读的，但其他方案可能会调用应用程序用户来修改它。 在这种情况下，请使用**文本输入**控件，**并将其** **默认**属性设置为标价。
+    > 对于此方案，此值是只读的，但其他方案可能会调用应用程序用户来修改它。 在这种情况下，请使用**文本输入**控件，**并将其****默认**属性设置为标价。
 
 1. 在 "**主页**" 选项卡上，将列表价格标签的文本对齐方式设置为 "**右**"：
 

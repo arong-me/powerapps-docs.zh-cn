@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c78057118a1546c781ea813552650045ab357321
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fa86d8027775bc74178699a18371fc9e2cef2917
+ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541364"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73741303"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>在 PowerApps 中共享画布应用
 
@@ -52,7 +52,7 @@ ms.locfileid: "73541364"
 1. 按名称或别名指定 Azure Active Directory 要与之共享应用的用户或安全组。
 
     - 若要允许整个组织运行应用（但不修改或共享），请在 "共享" 面板中键入**Everyone** 。
-    - 如果项由分号分隔，则可以使用别名列表、友好名称或这些项的组合（例如， **Jane Doe &lt; jane.doe@contoso.com** ）来共享应用。 如果有多个用户具有相同名称但具有不同的别名，则会将找到的第一个人员添加到列表。 如果名称或别名已经有权限或无法解析，则会出现工具提示。 
+    - 如果项由分号分隔，则可以使用别名列表、友好名称或这些项的组合（例如， **Jane Doe &lt; jane.doe@contoso.com**）来共享应用。 如果有多个用户具有相同名称但具有不同的别名，则会将找到的第一个人员添加到列表。 如果名称或别名已经有权限或无法解析，则会出现工具提示。 
 
     ![指定用户和共同所有者](./media/share-app/share-everyone.png)
 
@@ -200,7 +200,7 @@ PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享�
 |                                 | SharePoint 自定义窗体 | 使用非高级连接器的独立画布应用 | 使用高级连接器的独立画布应用 | 模型驱动应用 |
 |---------------------------------|----------------------------|----------------------------------------------------|------------------------------------------------|------------------|
 | SharePoint 用户（无 PA 许可证） | x                          |                                                    |                                                |                  |
-| PowerApps 包括 w/Office    | x                          |                                                    |                                                |                  |
+| PowerApps 包括 w/Office    | x                          | x                                                  |                                                |                  |
 | PowerApps 每个应用计划          | x                          | x                                                  | x                                              | x                |
 | PowerApps 每用户计划         | x                          | x                                                  | x                                              | x                |
 

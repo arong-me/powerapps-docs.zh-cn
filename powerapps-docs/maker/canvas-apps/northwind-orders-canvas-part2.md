@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/25/2019
+ms.date: 11/06/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d151249caebdb2a6f142943074a409bc626ff662
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 6f49057e55ea52dac98c92109752a05276eec831
+ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71995857"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73741834"
 ---
 # <a name="create-a-summary-form-in-a-canvas-app"></a>在画布应用中创建摘要窗体
 
@@ -94,28 +94,32 @@ ms.locfileid: "71995857"
     > [!div class="mx-imgBorder"]
     > ![移动 "编辑窗体" 控件并调整其大小](media/northwind-orders-canvas-part2/form-03.png)
 
-1. 在编辑栏中，将窗体的**DataSource**属性设置为以下值：
+1. 在 "**属性**" 窗格中，选择 "**数据源**" 下拉。
 
-    ```powerapps-dot
-    Orders
-    ```
+    > [!div class="mx-imgBorder"]
+    > ![设置编辑窗体控件的 DataSource 属性](media/northwind-orders-canvas-part2/form-04a.png)
+
+1. 选择 "**订单**" 数据源。
 
     > [!div class="mx-imgBorder"]
     > ![设置编辑窗体控件的 DataSource 属性](media/northwind-orders-canvas-part2/form-04.png)
 
-    您可以在右侧边缘附近的 "**属性**" 选项卡中设置相同的属性，但该方法会将您不需要的字段添加到窗体中。 如果使用公式栏，则窗体将保留为空。
-
 ## <a name="add-and-arrange-fields"></a>添加并排列字段
 
-1. 在右侧边缘附近的 "**属性**" 选项卡中，选择 "**编辑字段**"，打开 "**字段**" 窗格：
+1. 在右侧边缘附近的 "**属性**" 选项卡中，选择 "**编辑字段**"，打开 "**字段**" 窗格。
 
     > [!div class="mx-imgBorder"]
     > ![打开 "字段" 窗格](media/northwind-orders-canvas-part2/form-05.png)
 
-1. 在 "**字段**" 窗格中，选择 "**添加字段**"，然后选中 "**客户**" 和 "**员工**" 字段的复选框。
+1. 如果 "**字段**" 窗格不为空，请删除已插入的字段。  
 
     > [!div class="mx-imgBorder"]
-    > ![将 "Customer" 和 "Employee" 字段添加到 "编辑窗体" 控件](media/northwind-orders-canvas-part2/form-06.png)
+    > ![打开 "字段" 窗格](media/northwind-orders-canvas-part2/form-06a.png)
+
+1. 在 "字段列表" 为空后，选择 "**添加字段**"，然后选中 "**客户**" 和 "**员工**" 字段的复选框。
+
+    > [!div class="mx-imgBorder"]
+    > ![将 "Customer" 和 "Employee" 字段添加到 "编辑窗体" 控件](media/northwind-orders-canvas-part2/form-06b.png)
 
 1. 向下滚动，直到显示这些字段，然后选中其复选框：
 
@@ -126,11 +130,14 @@ ms.locfileid: "71995857"
     - **支付日期**
 
     > [!div class="mx-imgBorder"]
-    > ![将其他五个字段添加到 "编辑窗体" 控件](media/northwind-orders-canvas-part2/form-07.png)
+    > ![将其他五个字段添加到 "编辑窗体" 控件](media/northwind-orders-canvas-part2/form-06c.png)
+
+    > [!div class="mx-imgBorder"]
+    > ![将其他五个字段添加到 "编辑窗体" 控件](media/northwind-orders-canvas-part2/form-06d.png)
 
 1. 在 "**字段**" 窗格的底部，选择 "**添加**"，然后关闭 "**字段**" 窗格。
 
-    该窗体显示七个字段：
+    窗体显示七个字段，这些字段的顺序可能不同：
 
     > [!div class="mx-imgBorder"]
     > ![编辑窗体控件显示七个字段](media/northwind-orders-canvas-part2/form-08.png)
