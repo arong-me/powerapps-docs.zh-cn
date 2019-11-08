@@ -1,6 +1,7 @@
-- name: 开始使用：什么是 PowerApps？
-  href: ../powerapps-overview.md
+- name: 入门
   items:
+    - name: 什么是 PowerApps？
+      href: ../powerapps-overview.md
     - name: 注册 30 天试用版
       href: signup-for-powerapps.md
     - name: 注册社区计划
@@ -23,13 +24,15 @@
     - name: 从 AppSource
       href: ../user/app-source.md
     - name: 使用模型驱动应用
-      href: ../user/use-model-driven-apps.md
       items:
+        - name: 概述
+          href: ../user/use-model-driven-apps.md
         - name: 统一接口
           href: ../user/unified-interface.md
         - name: 导航和基础知识
-          href: ../user/navigation.md
           items:
+            - name: 概述
+              href: ../user/navigation.md
             - name: 查看配置文件
               href: ../user/view-your-user-profile.md
             - name: 查找管理员或支持人员
@@ -814,8 +817,9 @@
         - name: 在应用程序中嵌入画布应用
           href: ./canvas-apps/embedding-sdk.md
 - name: 模型驱动应用
-  href: ./model-driven-apps/model-driven-app-overview.md
   items:
+    - name: 什么是模型驱动应用？
+      href: ./model-driven-apps/model-driven-app-overview.md
     - name: 探索示例应用
       href: ./model-driven-apps/overview-model-driven-samples.md
     - name: 创建第一个应用
@@ -1289,11 +1293,13 @@
     - name: PowerApps 门户常见问题解答
       href: ./portals/faq.md
 - name: Common Data Service
-  href: ./common-data-service/data-platform-intro.md
   items:
+    - name: 什么是 Common Data Service？
+      href: ./common-data-service/data-platform-intro.md
     - name: 使用实体
-      href: ./common-data-service/entity-overview.md
       items:
+        - name: 安全性概览
+          href: ./common-data-service/entity-overview.md
         - name: 创建实体
           href: ./common-data-service/data-platform-create-entity.md
         - name: 创建带组件的自定义实体
