@@ -15,17 +15,17 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9f951167f56ffd3d211182a89a21d54916ee6b6e
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 729d852227b31a6a162fdf94644d1e08c1a401ee
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61531764"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543418"
 ---
 # <a name="run-a-canvas-app-on-a-mobile-device"></a>在移动设备上运行画布应用
-在创建应用或与某人共享应用时，可以在 Windows、iOS、Android 上或 Web 浏览器中运行此应用。 本主题介绍如何在移动设备上运行画布应用。 在移动设备上运行的应用可以利用移动设备功能，如定位服务和照相机。
+在创建应用或者某人与你共享应用时，可以在 Windows、iOS、Android 上或 Web 浏览器中运行此应用。 本主题介绍如何在移动设备上运行画布应用。 在移动设备上运行的应用可以利用移动设备功能，如定位服务和照相机。
 
-若要按照此步骤操作，请在开始之前先[免费注册](https://web.powerapps.com/signup?redirect=marketing&email=) PowerApps（如果还没有注册），然后从 [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) 或 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) 将 PowerApps 下载到运行有[支持的操作系统](../maker/canvas-apps/limits-and-config.md)的 iPhone、iPad 或 Android 设备上。 此外请确保有权访问自己创建的应用或其他人创建并与你共享的应用。
+若要按照此步骤操作，请在开始之前先[免费注册](https://make.powerapps.com/signup?redirect=marketing&email=) PowerApps（如果还没有注册），然后从 [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) 或 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) 将 PowerApps 下载到运行有[支持的操作系统](../maker/canvas-apps/limits-and-config.md)的 iPhone、iPad 或 Android 设备上。 此外请确保有权访问自己创建的应用或其他人创建并与你共享的应用。
 
 ## <a name="open-powerapps-and-sign-in"></a>打开 PowerApps 并登录
 在移动设备上打开 PowerApps 并用 Azure Active Directory 凭据登录。
@@ -41,13 +41,13 @@ ms.locfileid: "61531764"
 
 以下为可用筛选器：
 
-* **所有应用**:显示您有权访问的所有应用程序, 包括您创建的应用程序和其他与你共享的应用程序。
+* **全部应用**：显示有权访问的所有应用，包括自己创建的应用和其他人与自己共享的应用。
 
-* **我的应用**:显示至少运行一次的应用。
+* **我的应用**：显示至少运行了一次的应用。
 
-* **示例应用**:显示 Microsoft 提供的示例应用, 其中展示了真实的应用程序方案和虚构的数据, 以帮助您探索设计的可能性。
+* **示例应用**：显示 Microsoft 提供的示例应用，这些示例应用通过虚构数据展示真实的应用场景，可帮助发掘潜在的设计创意。
 
-* **收藏夹**:通过点击 "应用" 磁贴上的省略号 (...), 然后点击 "**收藏夹**", 显示已标记的应用。 若要从此列表中删除应用，点击应用磁贴上的省略号 (...)，然后点击“取消收藏”。
+* **收藏夹**：通过点击应用磁贴上的省略号 (...) 然后点击“收藏夹”，显示已标记的应用。 若要从此列表中删除应用，点击应用磁贴上的省略号 (...)，然后点击“取消收藏”。
 
     ![标记为收藏项](./media/run-app-client/favorite.png)
 
@@ -57,7 +57,7 @@ ms.locfileid: "61531764"
 
 如果知道要运行的应用的名称，可点击 Powerapps 顶部的搜索图标，然后在搜索框中键入应用名称的一部分。
 
-![搜索](./media/run-app-client/search.png)
+![Search](./media/run-app-client/search.png)
 
 如果已筛选应用，将在筛选的列表中进行搜索。
 
@@ -69,7 +69,7 @@ ms.locfileid: "61531764"
 ![启动应用](./media/run-app-client/run-client-app.png)
 
 ## <a name="give-consent"></a>同意
-如果应用需要连接数据源，或须具有相应权限才能使用设备功能（例如照相机或定位服务），必须先确认连接或予以同意，才能使用应用。 通常情况下，只会在首次连接时看到提示。
+如果应用需要连接数据源，或必须征得同意才能使用设备功能（例如照相机或定位服务），必须先确认连接或予以同意，然后才能使用应用。 通常情况下，只会在首次连接时看到提示。
 
 ![Connection](./media/run-app-client/app-connection.png)
 

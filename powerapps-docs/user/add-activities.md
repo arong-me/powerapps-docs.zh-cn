@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9ba051395e99dc6f2079d033c10a727a2e95da67
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: dee8b918efc60fed57cc6d8ca407e6cafe2b8060
+ms.sourcegitcommit: bee698ca0d11524377b67813a65e1a022d08c05e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71924570"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73609908"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>将约会、电子邮件、电话呼叫、备注或任务活动添加到时间线 
 
@@ -100,7 +100,7 @@ ms.locfileid: "71924570"
 
 
     > [!NOTE]
-    > 若要列出会话视图中的电子邮件，请参阅 "**设置**" > "**个性化设置**" > **电子邮件**"选项卡，然后选择 **" 在时间线上显示电子邮件 "** 。 有关个人设置的详细信息，请参阅[设置个人选项](https://docs.microsoft.com/en-us/powerapps/user/set-personal-options#email-tab-options)。 启用后，可以打开任何具有时间线的窗体，电子邮件将按最新的最新电子邮件分组到会话线程中。
+    > 若要列出会话视图中的电子邮件，请参阅 "**设置**" > "**个性化设置**" > **电子邮件**"选项卡，然后选择 **" 在时间线上显示电子邮件 "** 。 有关个人设置的详细信息，请参阅[设置个人选项](https://docs.microsoft.com/powerapps/user/set-personal-options#email-tab-options)。 启用后，可以打开任何具有时间线的窗体，电子邮件将按最新的最新电子邮件分组到会话线程中。
 
    > [!div class="mx-imgBorder"]
    > ![设置个人选项](media/emailsettings1.png "设置个人选项")
@@ -112,6 +112,9 @@ ms.locfileid: "71924570"
 ## <a name="add-an-appointment"></a>添加约会  
 
 若要向记录添加约会活动，必须先保存要向其添加活动的记录。  
+
+> [!NOTE]
+> 适用于 Outlook 的 Dynamics 365 应用、适用于手机的 Dynamics 365 的应用以及在你的移动电话 web 浏览器上运行模型驱动应用 web 客户端时，不支持定期约会。
   
 1. 打开要向其添加活动的记录。 例如，联系人记录。
   

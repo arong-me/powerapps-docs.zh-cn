@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 10/25/2019
+ms.date: 10/31/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,16 +15,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5a14662d25a7c2dda79f2399b863b959f9f70cc5
-ms.sourcegitcommit: 79ac9decef3d5aab40fbf3bc95f8f4ba03f9b3df
+ms.openlocfilehash: c0811645429c9f1e7570ceeaf316a5217e440ae4
+ms.sourcegitcommit: bee698ca0d11524377b67813a65e1a022d08c05e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "72959315"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73609884"
 ---
 # <a name="merge-duplicate-records"></a>合并重复记录 
 
-当你或其他人手动输入数据或批量导入数据时，重复的记录可能会蔓延到你的数据中。 Common Data Service 通过为帐户和联系人提供重复检测来帮助你解决可能的重复项。 管理员还可以为其他情况设置重复检测规则。  
+当你或其他人手动输入数据或批量导入数据时，重复的记录可能会蔓延到你的数据中。 Common Data Service 通过为活动记录（例如，帐户和联系人）提供重复检测来帮助你解决可能的重复项。 合并记录时，所有相关或子记录也将合并。 管理员还可以为其他情况设置重复检测规则。  
   
 例如，假设您输入一个联系人记录 Jim Glynn，以及一个移动电话号码。  重复检测规则发现已有类似的记录，并显示此对话框。  
   

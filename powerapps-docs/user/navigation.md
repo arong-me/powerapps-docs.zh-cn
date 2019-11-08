@@ -14,19 +14,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a53aaf84530935e525f1177d85f74e125711fc40
-ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
+ms.openlocfilehash: f0b095b3cb69eb7b6fd373b28eb2255291c7893a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71969190"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543512"
 ---
 #  <a name="basic-navigation-in-a-model-driven-app"></a>模型驱动应用中的基本导航 
 
 在模型驱动应用中使用导航栏转到工作区、新建记录、搜索或执行其他任务。
 
 > [!div class="mx-imgBorder"]
-> ![模型驱动应用导航](media/nav.png "Model-driven app nav")
+> ![模型驱动的应用导航](media/nav.png "模型驱动的应用导航")
 
 1. 站点地图已展开，并在默认情况下继续保留。
 2. 你当前所处的子区域已突出显示，从而指示你在应用中的位置。
@@ -47,7 +47,7 @@ ms.locfileid: "71969190"
 2. 选择最新列表中某个项旁边的固定图标，该项将添加到已固定列表。
 
    > [!div class="mx-imgBorder"]
-   > ![已固定记录](media/pinnedrecords.png "Pinned records")
+   > ![固定记录](media/pinnedrecords.png "固定记录")
 
 ## <a name="unpin-records-items-or-view"></a>取消固定记录、项或视图
 
@@ -55,23 +55,23 @@ ms.locfileid: "71969190"
 2. 选择某项旁边的取消固定图标，该项将从列表中移除。  
 
    > [!div class="mx-imgBorder"]
-   > ![取消固定记录](media/unpinnedrecords.png "Unpin records")
+   > ![取消固定记录](media/unpinnedrecords.png "取消固定记录")
 
 ## <a name="record-set-navigation"></a>记录集导航 
 使用预设的视图和查询导航浏览多个记录。 用户利用聚焦记录的导航可以在列表中的记录之间跳转并轻松导航回原来的位置，而且不会丢失工作列表，因此提高了工作效率。
 
 > [!div class="mx-imgBorder"]
-> ![记录集导航](media/recordset.png "Record set navigation")
+> ![记录集导航](media/recordset.png "记录集导航")
 
 ## <a name="reference-panel"></a>引用面板
 如果想无需离开当前所在的屏幕便可完成工作，最好使用引用面板。 你可以在当前查看的记录的上下文中，查找其他相关内容，例如某个帐户的用例或机会，无需导航到其他屏幕。
 
 > [!div class="mx-imgBorder"]
-> ![引用面板](media/reference-panel.png "Reference panel")
+> ![参考面板](media/reference-panel.png "引用面板")
 
  观看此视频，了解有关引用面板的详细信息：
 
-<div class="embeddedvideo"><iframe src="https://www.microsoft.com/en-us/videoplayer/embed/d8224c3f-6e20-4b8e-9d0d-b0f5602c7708" frameborder="0" allowfullscreen=""></iframe></div>
+<div class="embeddedvideo"><iframe src="https://www.microsoft.com/videoplayer/embed/d8224c3f-6e20-4b8e-9d0d-b0f5602c7708" frameborder="0" allowfullscreen=""></iframe></div>
 
 ## <a name="notifications"></a>通知 
 
@@ -79,15 +79,15 @@ ms.locfileid: "71969190"
 
 当你选择错误通知时，它会将你转到出现错误的窗体上的字段。
 
-![通知的示例](media/notifications.png "Example of notifications")
+![通知示例](media/notifications.png "通知示例")
 
 如果只有一个通知，你将看到单个行。
 
-![单个通知的示例](media/single_notification.png "Example of single notifications")
+![单个通知的示例](media/single_notification.png "单个通知的示例")
 
 如果有多个通知，你将看到通知的数量。 选择 v 形图标可查看每条消息。
 
-![多个通知的示例](media/multiple_notification.png "Example of multiple notifications")
+![多个通知的示例](media/multiple_notification.png "多个通知的示例")
 
 ## <a name="grids"></a>置
 

@@ -16,18 +16,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e48b568bae581f080949d5b9ca913f7c01223ee4
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 61731c59549c40e689f056372fe58f4b60968e1c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61546403"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543473"
 ---
 # <a name="run-a-model-driven-app-on-a-mobile-device"></a>在移动设备上运行模型驱动应用
 
 创建应用并与你共享后，你可以在各种热门的移动设备上运行该应用，比如 Windows、iOS、Android 或 web 浏览器。 本主题介绍如何在移动设备上运行模型驱动应用。 
 
-若要按照此步骤操作，请在开始之前先[免费注册](https://web.powerapps.com/signup?redirect=marketing&email=) PowerApps（如果还没有注册）。 此外，请确保你有权访问自己创建的应用或其他人创建并与你共享的应用。
+若要按照此步骤操作，请在开始之前先[免费注册](https://make.powerapps.com/signup?redirect=marketing&email=) PowerApps（如果还没有注册）。 此外，请确保你有权访问自己创建的应用或其他人创建并与你共享的应用。
 
 ## <a name="run-the-model-driven-app"></a>运行模型驱动应用
 
@@ -45,6 +45,6 @@ ms.locfileid: "61546403"
 
 
 ## <a name="next-steps"></a>后续步骤
-本主题介绍如何在移动设备上运行模型驱动应用。 有关以下内容的信息:
-- 使用模型驱动的应用, 请参阅[使用模型驱动的应用](use-model-driven-apps.md)
-- 在移动设备上运行画布应用, 请参阅[在移动设备上运行画布应用](run-app-client.md)
+本主题介绍如何在移动设备上运行模型驱动应用。 有关以下内容的信息：
+- 使用模型驱动的应用，请参阅[使用模型驱动的应用](use-model-driven-apps.md)
+- 在移动设备上运行画布应用，请参阅[在移动设备上运行画布应用](run-app-client.md)

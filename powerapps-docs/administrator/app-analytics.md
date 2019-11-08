@@ -14,17 +14,17 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 0f376d8e6b86a7abf65e744275fc4e90beabde43
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 1f1f0901f5ba641dfc4e183164d55225d3aeb05c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61526421"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73537069"
 ---
 # <a name="view-analytics-reports-for-your-app"></a>查看应用的分析报告
 你是否构建了一个应用并将其共享到了组织？  你是否想要知道每天有多少个同事在使用它？
 
-介绍首个 PowerApps 分析报告（目前可在 [web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 获取）；应用使用情况报告。
+介绍现在可从[make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)获取的第一个 PowerApps 分析报告;**应用使用情况报表**。
 
 可以通过应用使用情况报告跟踪过去 30 天内使用你的应用的用户数量（按日期、设备平台和位置分类）。
 
@@ -36,7 +36,7 @@ ms.locfileid: "61526421"
 ## <a name="where-do-i-find-my-apps-reports"></a>在哪里找到应用的报告？
 可以通过以下步骤查看应用的报告：
 
-1. 转到 [web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 请参阅[make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 2. 从左侧导航栏选择“应用”
    
     ![左侧导航栏](./media/app-analytics/left-nav.png)

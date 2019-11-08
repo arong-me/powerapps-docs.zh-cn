@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d1e0227284549ae293083ba5ae012d28c6178454
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.openlocfilehash: 6e23833c57b5d37c7ce7908a048dbf49fa447e06
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71705396"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541775"
 ---
 # <a name="discover-apps-via-appsource"></a>通过 AppSource 发现应用
 使用 PowerApps 生成和发布的应用是在 Dynamics 365 中在线发现并使用。 它显示你的所有应用，不管是你专门选择使用的（即通过从共享电子邮件启动或从 AppSource 打开）应用还是管理员为你提供的应用都会显示。 其中包括来自 PowerApps 的所有应用，以及 Microsoft 提供的 Dynamics 365 应用程序。 可以搜索应用、按环境进行筛选，并将最常用的应用固定在页面顶部。
@@ -29,7 +29,7 @@ ms.locfileid: "71705396"
   ![Dynamics 365 上的应用](./media/app-source/apps-dynamics365.png)
 
 ## <a name="find-apps-via-the-appsource-organization-gallery"></a>通过 AppSource 组织库查找应用
-Microsoft AppSource 现已嵌入 [Dynamics 365](http://home.dynamics.com) 主页和整个通用导航中。 它现在包括公司内部可用的专用应用库。 从主页或任务窗格中选择“获取更多应用”，然后导航到“我的组织”选项卡，查看你可以使用的应用。
+Microsoft AppSource 现已嵌入 [Dynamics 365](https://home.dynamics.com) 主页和整个通用导航中。 它现在包括公司内部可用的专用应用库。 从主页或任务窗格中选择“获取更多应用”，然后导航到“我的组织”选项卡，查看你可以使用的应用。
 
 ![Dynamics 365 上的应用](./media/app-source/getmoreapps.png)
 

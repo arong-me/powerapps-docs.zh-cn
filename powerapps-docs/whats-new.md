@@ -19,12 +19,12 @@ search.app:
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: f5d2fc5d493dd46eb6e0bed2bc8d7af754cff0dd
-ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
+ms.openlocfilehash: dc170445349e2c3b2bcca02b855914f7644bd685
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70213877"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543350"
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps 的最近更新
 
@@ -34,7 +34,7 @@ ms.locfileid: "70213877"
 
 有关过去几周发布的新功能、修复程序和改进信息，请参阅 [Microsoft PowerApps 的发布版本](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/powerapps)。
 
-若要了解有关如何在每周发行说明中浏览信息的更多信息，请阅读此[博客文章](https://powerapps.microsoft.com/en-us/blog/stay-tuned-with-the-latest-features-and-fixes-through-powerapps-weekly-release-notes/)。
+若要了解有关如何在每周发行说明中浏览信息的更多信息，请阅读此[博客文章](https://powerapps.microsoft.com/blog/stay-tuned-with-the-latest-features-and-fixes-through-powerapps-weekly-release-notes/)。
 
 > [!NOTE]
 > 版本会在几天内推出。 新功能或更新功能可能不会立即显示。

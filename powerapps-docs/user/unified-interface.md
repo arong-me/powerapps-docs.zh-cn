@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 76241ae2e26752a98e32e7ad72c54780da3934ae
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: c5c620590400fc6fe276c8107c94d89b3daa42b9
+ms.sourcegitcommit: 6380b5ac248fc5d2f5d4a34af8831b4f7b6ef1aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71705307"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801084"
 ---
 # <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>针对模型驱动应用的统一界面增强了用户体验 
 
@@ -29,8 +29,10 @@ ms.locfileid: "71705307"
 > [!div class="mx-imgBorder"]
 > ![统一界面适应屏幕](media/Reflow.png "统一界面适应屏幕")
 
+有关模型驱动应用中统一界面的概述，请观看此视频：[统一界面简介](https://www.youtube.com/watch?v=_VPOi_Iq6ko)
+
 > [!NOTE]
-> 旧的 web 客户端将被弃用，并且客户必须在10月 1 2020 日之前过渡到统一的界面。 有关详细信息，请参阅[博客：宣布时间线移动到统一界面](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/)。 若要了解有关如何转换的详细信息，请参阅[转换的快速入门](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app)。
+> 旧的 web 客户端将被弃用，并且客户必须在10月 1 2020 日之前过渡到统一的界面。 有关详细信息，请参阅[博客：宣布时间线移动到统一界面](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/)。 若要了解有关如何转换的详细信息，请参阅[转换的快速入门](https://docs.microsoft.com/powerapps/maker/model-driven-apps/transition-web-app)。
 
 ## <a name="navigation"></a>导航
 

@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dc13524f4f567365cdcb6bf9898b62fcb6eac4c4
-ms.sourcegitcommit: 7a96b693e320d0fced7a82987c012b80002cfd84
+ms.openlocfilehash: 62a7166f228545f2a200570186ee23c868650b79
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70848228"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543491"
 ---
 # <a name="add-an-app-to-microsoft-teams"></a>将应用添加到 Microsoft Teams
 
@@ -29,15 +29,15 @@ Microsoft Teams 是基于 Office 365 技术构建的聊天协作平台。 你可
 
 ![嵌入 Microsoft Teams 的应用](./media/open-app-embedded-in-teams/embedded-app.png)
 
-如果没有注册 PowerApps，请在开始之前[免费注册](https://web.powerapps.com/signup?redirect=marketing&email=)。
+如果没有注册 PowerApps，请在开始之前[免费注册](https://make.powerapps.com/signup?redirect=marketing&email=)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 若要按照此步骤操作，需要 [Office 365 订阅](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)和 [Teams 中的频道](https://www.youtube.com/watch?v=he2f1quaR7M)。
 
 ## <a name="sign-in-to-powerapps"></a>登录到 PowerApps
 
-在 [https://web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上登录到 PowerApps。
+在 [https://make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上登录到 PowerApps。
 
 ## <a name="add-an-app"></a>添加应用
 
@@ -84,7 +84,7 @@ Microsoft Teams 是基于 Office 365 技术构建的聊天协作平台。 你可
 
 * 应用必须通过安全 (https) 连接加载图像和 .pdf 文件等内容。
 * 并不是所有传感器（如“Acceleration”、“Compass”和“Location”）都受支持。
-* 仅支持这些音频格式：AAC、H264、OGG Vorbis 和 WAV。
+* 仅支持下面这些音频格式：AAC、H264、OGG Vorbis 和 WAV。
 
 ## <a name="clean-up-resources"></a>清理资源
 
