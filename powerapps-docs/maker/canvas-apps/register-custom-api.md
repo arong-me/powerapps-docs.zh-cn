@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 206a28c15b4bb23d46acb0a707bda5072a43cced
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 7beb08afe2e7a6fa68f5017ff70f95f5dcee75f8
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61540143"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899828"
 ---
 # <a name="custom-connectors-for-canvas-apps"></a>画布应用自定义连接器
 
-无需编写任何代码，即可通过 [Azure 逻辑应用](https://azure.microsoft.com/services/logic-apps)、[Microsoft Flow](https://flow.microsoft.com) 和 [PowerApps](https://powerapps.microsoft.com) 生成工作流和画布应用。 为帮助你集成数据和业务流程，这些服务提供了 [180 多个连接器](https://docs.microsoft.com/connectors/)，可用于 Microsoft 服务和产品及 GitHub、Salesforce、Twitter 等其他服务。
+无需编写任何代码，就可以通过[Azure 逻辑应用](https://azure.microsoft.com/services/logic-apps)、[电源自动化](https://flow.microsoft.com)和[PowerApps](https://powerapps.microsoft.com)构建工作流和画布应用。 为帮助你集成数据和业务流程，这些服务提供了 [180 多个连接器](https://docs.microsoft.com/connectors/)，可用于 Microsoft 服务和产品及 GitHub、Salesforce、Twitter 等其他服务。
 
 有时候，可能需要调用不可作为预生成连接器的 API、服务和系统。 为了支持更多的定制场景，你可以使用自己的触发器和操作生成自定义连接器。 我们在“连接器”文档网站上有一套完整的自定义连接器基础和高级教程。 建议从[自定义连接器概述](https://docs.microsoft.com/connectors/custom-connectors/)开始，但也可以直接转到以下主题，了解特定区域的详细信息：
 

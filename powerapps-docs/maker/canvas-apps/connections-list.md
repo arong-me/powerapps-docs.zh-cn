@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 099d59b222cf40f95214056eca8e96cfce9cc053
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 907ac3cf53709edd5a8b523479ec99816c6eec9c
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987381"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73897837"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>PowerApps 画布应用连接器概述
 数据是大多数应用（包括在 PowerApps 中生成的应用）的关键所在。 数据存储在数据源中，应用是通过创建的连接来连接数据。 连接使用特定的连接器与数据源进行通信。 PowerApps 提供连接器，适用于许多常用服务和本地数据源，包括 SharePoint、SQL Server、Office 365、Salesforce 和 Twitter。 若要开始向画布应用添加数据，请参阅[在 PowerApps 中添加数据连接](add-data-connection.md)。
@@ -58,7 +58,7 @@ ms.locfileid: "71987381"
 [Patch](functions/function-patch.md)<br>[Collect](functions/function-clear-collect-clearcollect.md)<br>[Update](functions/function-update-updateif.md)
 
 > [!NOTE]
->  **PowerApps 不能与动态架构**一起使用。 短语动态架构指的是相同操作可能返回具有不同列的其他表。 可能导致表中的列不同的情况包括操作输入参数、执行该操作的用户或角色、用户在其中工作的组以及其他人。 例如，如果以不同的输入运行，SQL Server 存储过程可能会返回不同的列。 对于动态架构的操作，连接器文档显示**此操作的输出是动态的。** 作为返回值。 与此相反，Microsoft Flow 适用于动态架构，并可能为方案提供一种解决方法。
+>  **PowerApps 不能与动态架构**一起使用。 短语动态架构指的是相同操作可能返回具有不同列的其他表。 可能导致表中的列不同的情况包括操作输入参数、执行该操作的用户或角色、用户在其中工作的组以及其他人。 例如，如果以不同的输入运行，SQL Server 存储过程可能会返回不同的列。 对于动态架构的操作，连接器文档显示**此操作的输出是动态的。** 作为返回值。 与此相反，Power 自动功能适用于动态架构，并可能为你的方案提供了解决方法。
 
 ## <a name="popular-connectors"></a>常用连接器
 

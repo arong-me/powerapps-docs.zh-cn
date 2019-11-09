@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7eb5e7385c57e0cabaab1c8457f17dc1feff96fb
-ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
+ms.openlocfilehash: 9693e45da894348acd27b96f73d1358819812ae4
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64671046"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73900331"
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>创建用于分析项目的 Power BI 报表
 > [!NOTE]
-> 本文属于介绍如何将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> 本文是有关将 PowerApps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
 在此任务中，我们将创建以两个 SharePoint 列表为依据的 Power BI 报表。 我们将把列表数据导入 Power BI Desktop 并稍作清理，再进行一些基本数据建模，并创建一组可提供数据信息的视觉对象。
 
@@ -30,9 +30,9 @@ ms.locfileid: "64671046"
 > 这个方案的[下载包](https://aka.ms/o4ia0f)包含此报表的最终版本 (project-analysis.pbix)。
 
 ## <a name="quick-review-of-power-bi-desktop"></a>快速回顾 Power BI Desktop
-在我们深入介绍如何创建报表之前，让我们先来回顾一下 Power BI Desktop。 这是一款功能非常强大的工具，具有许多功能。那么，我们将重点概述此任务将用到的工作区。 有三个主要工作区或*视图*Power BI Desktop 中：**报表**视图中，**数据**视图中，和**关系**视图。 Power BI Desktop 还包括在单独窗口中打开的“查询编辑器”。
+在我们深入介绍如何创建报表之前，让我们先来回顾一下 Power BI Desktop。 这是一款功能非常强大的工具，具有许多功能。那么，我们将重点概述此任务将用到的工作区。 Power BI Desktop 有以下三个主要工作区或视图：“报表”视图、“数据”视图和“关系”视图。 Power BI Desktop 还包括在单独窗口中打开的“查询编辑器”。
 
-以下屏幕显示了 Power BI Desktop 左侧三个视图图标：**报表**，**数据**，和**关系**，从上到下。 左侧的黄色条表示当前视图；在此示例中，显示的是“报表”视图。 选择这三个图标中的任何一个即可更改视图。
+下面的屏幕展示了 Power BI Desktop 左侧的三个视图图标，从上到下分别为“报表”、“数据”和“关系”。 左侧的黄色条表示当前视图；在此示例中，显示的是“报表”视图。 选择这三个图标中的任何一个即可更改视图。
 
 ![Power BI Desktop 视图](./media/sharepoint-scenario-build-report/05-00-00-tabs.png)
 
@@ -65,7 +65,7 @@ ms.locfileid: "64671046"
 
 ![Power BI Desktop 查询编辑器](./media/sharepoint-scenario-build-report/05-00-03-query.png)
 
-## <a name="step-1-get-data-into-power-bi-desktop"></a>步骤 1:将数据导入 Power BI Desktop
+## <a name="step-1-get-data-into-power-bi-desktop"></a>第 1 步：将数据导入 Power BI Desktop
 在这一步中，我们将先连接两个列表。 然后，我们将删除对数据分析无用的列，从而清理数据。 我们还将更改剩余一些列的数据类型，以便可以正确进行计算。 若要详细了解如何获取和清理 Power BI Desktop 中的数据，请参阅我们引导学习课程中的[获取数据](https://powerbi.microsoft.com/guided-learning/powerbi-learning-1-1-overview-of-power-bi-desktop)部分。
 
 ### <a name="connect-to-sharepoint-lists"></a>连接 SharePoint 列表
@@ -94,7 +94,7 @@ ms.locfileid: "64671046"
 2. 在中间窗格中，选择“FileSystemObjectType”列，再单击或点击“删除列”。
    
     ![删除列](./media/sharepoint-scenario-build-report/05-01-07-remove-column.png)
-3. 删除后的两个列**Id**列：**ServerRedirectedEmbedURL**并**ContentTypeId**。 
+3. 删除“Id”列后的两列，即“ServerRedirectedEmbedURL”和“ContentTypeId”列。 
    > [!TIP]
    > 按 Shift 键选择这两列，再单击或点击“删除列”。
 4. 删除“PMAssigned”列右侧的所有列（共 22 列）。 表应与下图一致：
@@ -105,11 +105,11 @@ ms.locfileid: "64671046"
     ![ 查询编辑器中的“项目申请”表](./media/sharepoint-scenario-build-report/05-01-09-table-requests.png)
 
 ### <a name="change-the-data-type-on-project-details-columns"></a>更改“项目详细信息”表中列的数据类型
-1. 选择**ProjectedDays**列中，单击或点击**数据类型：任何**，然后**整数**。
+1. 选择“ProjectedDays”列，依次单击或点击“数据类型:任意”和“整数”。
    
     ![将数据类型更改为整数](./media/sharepoint-scenario-build-report/05-01-10-datatype-number.png)
 2. 对“ActualDays”列重复执行上一步。
-3. 选择**ApprovedDate**列中，单击或点击**数据类型：任何**，然后**日期**。
+3. 选择“ApprovedDate”列，依次单击或点击“数据类型:任意”和“日期”。
    
     ![ 将数据类型更改为日期](./media/sharepoint-scenario-build-report/05-01-11-datatype-date.png)
 
@@ -117,9 +117,9 @@ ms.locfileid: "64671046"
 
 ### <a name="change-the-data-type-on-project-requests-columns"></a>更改“项目申请”表中列的数据类型
 
-1. 选择**EstimatedDays**列中，单击或点击**数据类型：任何**，然后**整数**。
+1. 选择“EstimatedDays”列，依次单击或点击“数据类型:任意”和“整数”。
 
-2. 选择**RequestDate**列中，单击或点击**数据类型：任何**，然后**日期**。
+2. 选择“RequestDate”列，依次单击或点击“数据类型:任意”和“日期”。
 
 ### <a name="apply-and-save-changes"></a>应用并保存更改
 
@@ -129,7 +129,7 @@ ms.locfileid: "64671046"
 
 2. 依次单击或点击“文件”和“保存”，保存为 project-analysis.pbix。
 
-## <a name="step-2-improve-the-data-model"></a>步骤 2:改进数据模型
+## <a name="step-2-improve-the-data-model"></a>第 2 步：改进数据模型
 至此，我们已将 SharePoint 列表中的数据拉取到 Power BI Desktop 中。我们将继续进行数据建模。 数据建模流程可能非常耗时，但可以执行我们将简要介绍的一些有意义操作，以便在 Power BI Desktop 中更深入地挖掘列表数据：
 
 * 更改两个表相互关联的方式
@@ -170,7 +170,7 @@ ms.locfileid: "64671046"
 1. 单击或点击“新建表”。
    
     ![新建表](./media/sharepoint-scenario-build-report/05-02-05-modeling-table.png)
-2. 在编辑栏中键入下面的公式：**日期 = calendarauto （）**。
+2. 在编辑栏中键入下面的公式：Dates = CALENDARAUTO()。
    
     ![键入了 Dates = CALENDARAUTO() 的编辑栏](./media/sharepoint-scenario-build-report/05-02-06-formula-bar.png)
    
@@ -185,7 +185,7 @@ ms.locfileid: "64671046"
 1. 继续留在“日期”表，单击或点击“新建列”。
    
     ![新建列](./media/sharepoint-scenario-build-report/05-02-00-modeling-column.png)
-2. 在编辑栏中键入下面的公式：**IsWeekDay = SWITCH(WEEKDAY(Dates[Date]), 1,0,7,0,1)**.
+2. 在编辑栏中键入下面的公式：IsWeekDay = SWITCH(WEEKDAY(Dates[Date]), 1,0,7,0,1)。
    
     此公式用于确定“Date”列中的日期是否为工作日。 如果日期是工作日，“IsWeekDay”列的值为 1；否则，值为 0。
 3. 按 Enter，将“IsWeekDay”列添加到“日期”表中。
@@ -268,7 +268,7 @@ ms.locfileid: "64671046"
    
     ![添加“MaxDaysPending”度量值](./media/sharepoint-scenario-build-report/05-02-12-measure-maxdayspending.png)
 
-## <a name="step-3-create-report-visualizations"></a>步骤 3:创建报表可视化效果
+## <a name="step-3-create-report-visualizations"></a>第 3 步：创建报表可视化效果
 现在要执行的这一步，许多人在想到数据分析时都会想起它：即创建可视化效果，以便我们可以发现数据模式。 在这一步中，我们将创建四个可视化效果：
 
 * 显示项目预计天数与实际天数的柱形图

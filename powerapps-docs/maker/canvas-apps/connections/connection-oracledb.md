@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c8db848e0d6874fd44fedbe9b84539e548867e76
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: df9ad0aead9681d3458d70f44f929c15c073f35a
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541036"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73897809"
 ---
 # <a name="connect-to-an-oracle-database-from-powerapps"></a>从 PowerApps 连接到 Oracle 数据库
 创建连接并在 PowerApps 中生成应用后将列出表，并在 Oracle 数据库中创建、读取、更新和删除表行。 Oracle 数据库连接支持完全委派筛选、排序和其他功能，但触发器或存储过程除外。
@@ -32,7 +32,7 @@ ms.locfileid: "73541036"
 ### <a name="install-an-on-premises-data-gateway"></a>安装本地数据网关
 若要安装网关，请按照[本教程](../gateway-management.md)中的步骤操作。
 
-本地数据网关充当网桥，提供本地数据（不位于云中的数据）与 Power BI、Microsoft Flow、逻辑应用和 PowerApps 服务之间快速安全的数据传输。 可以将同一个网关与多个服务和多个数据源一起使用。 有关详细信息，请参阅[了解网关](../gateway-reference.md)。
+本地数据网关充当桥，可在本地数据（不在云中的数据）与 Power BI、电源自动、逻辑应用和 PowerApps 服务之间提供快速且安全的数据传输。 可以将同一个网关与多个服务和多个数据源一起使用。 有关详细信息，请参阅[了解网关](../gateway-reference.md)。
 
 ### <a name="install-oracle-client"></a>安装 Oracle 客户端
 在作为本地数据网关的同一台计算机上，安装[适用于 Windows x64 的 64 位 ODAC 12c 版本 4 (12.1.0.2.4)](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)。 否则，如已知问题列表中所述，在尝试创建或使用连接时将会出现错误。

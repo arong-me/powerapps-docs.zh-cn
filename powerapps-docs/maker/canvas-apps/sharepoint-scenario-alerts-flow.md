@@ -13,20 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 89c22bec8972c0d58c559a09d4e9f0a8a8e3b7f5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: b8495c22a703a267cd3ab888247e5cbf6ef6a81d
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61537330"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73900398"
 ---
 # <a name="set-up-data-alerts-for-the-power-bi-dashboard"></a>创建 Power BI 仪表板的数据警报
 > [!NOTE]
-> 本文属于介绍如何将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> 本文是有关将 PowerApps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
 在此任务中，我们将在 Power BI 中添加警报，以便了解待审批项目的等待时间是否过长，并添加用于响应触发的警报的流。 有关警报的详细信息，请参阅 [Power BI 服务中的数据警报](https://docs.microsoft.com/power-bi/service-set-data-alerts)。
 
-## <a name="step-1-create-an-alert"></a>步骤 1:创建警报
+## <a name="step-1-create-an-alert"></a>第 1 步：创建警报
 1. 在 Power BI 服务中，打开在上一任务中创建的仪表板。
 2. 在显示一个数字的数据卡上，单击或点击省略号 (...)。
    
@@ -43,12 +43,12 @@ ms.locfileid: "61537330"
 
 即使 56 高于阀值 25，也不会立即触发警报。 警报将在数据更新时触发，我们将在[对此方案进行端到端演练](sharepoint-scenario-summary.md)中介绍具体情况。
 
-警报触发后，Power BI 会向警报创建者发送电子邮件，下一步将介绍如何使用 Microsoft Flow 发送其他邮件。
+当警报触发时，Power BI 会向警报创建者发送电子邮件，我们会在下一步中了解如何使用 Power 自动功能发送其他邮件。
 
-## <a name="step-2-create-a-flow-that-responds-to-the-alert"></a>步骤 2:创建一个流，用于响应警报
+## <a name="step-2-create-a-flow-that-responds-to-the-alert"></a>第 2 步：创建用于响应警报的流
 1. 登录 flow.microsoft.com，依次单击或点击“服务”和“Power BI”。
    
-    ![Microsoft Flow 中的 Power BI](./media/sharepoint-scenario-alerts-flow/07-01-05-power-bi.png)
+    ![电源自动 Power BI](./media/sharepoint-scenario-alerts-flow/07-01-05-power-bi.png)
 2. 单击或点击“在触发 Power BI 数据警报时，向任何受众发送电子邮件”。
    
     ![在触发 Power BI 数据警报时发送电子邮件](./media/sharepoint-scenario-alerts-flow/07-01-06-alert-flow.png)

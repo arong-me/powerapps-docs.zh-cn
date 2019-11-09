@@ -13,20 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 43e95b88cdf305e7c4b768def83a6b41fa0fcae7
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 4bb09a9aefd3db1981727642d766f308ad9d0ede
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63319348"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73900300"
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>发布 Power BI 项目报表并创建仪表板
 > [!NOTE]
-> 本文属于介绍如何将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> 本文是有关将 PowerApps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
 在此任务中，我们将把数据集和报表发布到 Power BI 服务中，然后再根据报表创建仪表板。 在许多情况下，报表包含大量可视化效果，但只有一小部分用于仪表板。 在此示例中，我们将向仪表板添加全部四个可视化效果。
 
-## <a name="step-1-publish-the-dataset-and-report"></a>步骤 1:发布数据集和报表
+## <a name="step-1-publish-the-dataset-and-report"></a>第 1 步：发布数据集和报表
 1. 在 Power BI Desktop 中的“开始”选项卡上，单击或点击“发布”。
    
     ![发布数据集和报表](./media/sharepoint-scenario-publish-report/06-01-01-publish.png)
@@ -48,7 +48,7 @@ ms.locfileid: "63319348"
    
     可以发现，在我们发布报表后，Power BI Desktop 上传了数据集 (d) 和报表 (c)。 将在 Power BI 服务（而不是 Power BI Desktop）中创建仪表板，此工作区中还没有任何仪表板 (b)。 我们快速创建一个仪表板。
 
-## <a name="step-2-configure-credentials-for-refresh"></a>步骤 2:配置刷新的凭据
+## <a name="step-2-configure-credentials-for-refresh"></a>第 2 步：配置凭据以进行刷新
 1. 在 Power BI 服务中，依次单击或点击右上角的 ![齿轮图标](./media/sharepoint-scenario-publish-report/icon-gear.png) 和“设置”。
 2. 依次单击或点击“数据集”和“project-analysis”。
    
@@ -67,7 +67,7 @@ ms.locfileid: "63319348"
    
     ![数据源已更新](./media/sharepoint-scenario-publish-report/06-01-11-updated.png)
 
-## <a name="step-3-create-a-dashboard"></a>步骤 3:创建仪表板
+## <a name="step-3-create-a-dashboard"></a>第 3 步：创建仪表板
 
 1. 若要返回到报表，请在“报表”下，单击或点击“项目分析”。
 

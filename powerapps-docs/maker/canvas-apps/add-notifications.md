@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4a72fc689fa9b4d7d84f554745e5a04ee2812b70
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d55245a6fba0383ce897030e87ccf5c4e7c6749d
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541147"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73897922"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>在 PowerApps 中发送推送通知
 推送通知用于移动应用中的使用者和业务情形，主要用来与应用用户进行交互，并帮助他们优先处理关键任务。 在 PowerApps 中，可以使用 PowerApps 通知连接器发送通知。 可以将原生推送通知发送到在 PowerApps 中创建的任何应用。 我们计划在今后支持更多通知类型。
@@ -41,7 +41,7 @@ ms.locfileid: "73541147"
 > [!NOTE]
 > 如果通过流触发推送通知，那么目前一次只能向一个用户或安全组发送通知。
 
-1. 在 [Microsoft Flow](https://flow.microsoft.com) 中，创建一个触发器，指定何时发送推送通知。
+1. 在 "[自动启动](https://flow.microsoft.com)" 中，创建一个指定何时发送推送通知的触发器。
 
     例如，建议在记录被添加到 Common Data Service 中的“用例”实体时发送通知。
 
@@ -140,7 +140,7 @@ PowerAppsNotification.SendPushNotification(
 * 通知暂不显示在适用于 Windows Phone 的 PowerApps Mobile 上。
 * 我们暂无法为仅在 Web 浏览器中运行应用的用户提供推送通知。
 * 通知显示常规 PowerApps 图标，而不是特定应用图标。
-* 使用 Microsoft Flow 时，一次只能向一个接收人发送推送通知。
+* 使用 Power 自动功能时，一次只能向一个收件人发送推送通知。
 
 有关参考信息，请参阅 [PowerApps 通知参考](https://docs.microsoft.com/connectors/powerappsnotification/)。
 

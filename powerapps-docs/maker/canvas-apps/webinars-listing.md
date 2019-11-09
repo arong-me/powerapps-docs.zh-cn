@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 040ba26d486cb16830bfd895f1c09a4e273cfa07
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: f60db0449a163c83691658095b15f41083316c91
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994776"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899184"
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps 网络研讨会列表 #
 这些网络研讨会可以帮助你使用 Microsoft PowerApps 的功能。 直播结束后，可按需观看网络研讨会。 请注意，在某些情况下，必须重新输入注册详细信息，然后才能通过电子邮件收到视频录制链接。 
@@ -70,7 +70,7 @@ ms.locfileid: "71994776"
 **PowerApps 管理 | 常见问题**
 <br>主讲人：Manas Maheshwari [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Administration-FAQ/m-p/127369#M44)
 
-@no__t 通用审核应用程序0Inside：Paul Culmsee @ no__t，查看 PowerApps 和 Flow 有哪些功能？
+**在通用审核应用内：了解 PowerApps 和 Flow 的功能，主讲人：Paul Culmsee**
 <br>主讲人：Paul Culmsee [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Inside-the-Universal-Audit-App-See-what-PowerApps-and-Flow-are/m-p/127370#M45)
 
 ## <a name="advanced-webinar-series"></a>高级网络研讨会系列 ##
@@ -90,7 +90,7 @@ ms.locfileid: "71994776"
 <br>作者：Dawid van Heerden[立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-PowerApps-and-Flow-for-Business-Process-Management/m-p/116907)
 
 ### <a name="connector-series"></a>连接器系列 ###
-**在 PowerApps 和 Microsoft Flow 中优化连接器**
+**优化 PowerApps 和电源自动执行中的连接器**
 <br>主讲人：Theresa Palmer-Boroski [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Optimizing-Connectors-in-PowerApps-and-Microsoft-Flow-by-Theresa/m-p/116874)
 
 **Teams + PowerApps 提示和技巧**
@@ -102,13 +102,13 @@ ms.locfileid: "71994776"
 **从 PowerApps 连接到本地数据**
 <br>主讲人：Archana Nair 和 Dimah Zaidalkilani [现在观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-On-Premises-Data-from-PowerApps/m-p/116885)
 
-与连接器 **Working：使用 Planner 连接器 @ no__t-0
+**使用连接器：使用 Planner 连接器**
 <br> 主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-the-Planner-Connector/m-p/116886)
 
 **结合使用功能强大的 Office Graph 和 PowerApps**
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/The-Power-of-Office-Graph-with-PowerApps/m-p/116888)
 
-与连接器 **Working：项目 Online （PWA）**
+**使用连接器：Project Online (PWA)**
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-Project-Online-PWA/m-p/116889)
 
 ## <a name="sharepoint-series"></a>SharePoint 系列 ##
@@ -150,5 +150,5 @@ ms.locfileid: "71994776"
 **在 PowerApps 中生成对话或弹出消息**
 <br>主讲人：Veronica Ward [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Dialogs-in-PowerApps-by-Veronica-Ward/m-p/117627#M39)
 
-与 PowerApps 开发人员之一0Look 在窗帘后面 @no__t：更深入地了解模板：Marie Hoeger @ no__t-0
+**与一位 PowerApps 开发人员 Marie Hoeger 一起探究幕后的秘密 - 深入了解模板**
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Developer-Intro-and-Discussing-Templates/m-p/116848)

@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 503ffa049ecd737cfd9e948c3e2af25c8cdd831d
-ms.sourcegitcommit: dbd922de8f2e97a478df64e7e9ba33b48574af5c
+ms.openlocfilehash: aa927559c13726bd2d780c7ce3841c5a53317c8f
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65088120"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899217"
 ---
 # <a name="create-a-canvas-app-to-manage-projects"></a>创建用于管理项目的画布应用
 > [!NOTE]
-> 本文属于介绍如何将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> 本文是有关将 PowerApps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
 在此任务中，我们将从头开始构建画布应用。 使用此应用，用户可以分配项目经理并更新项目详细信息。 将看到第一个应用中的一些相同控件和公式，但这次更多的是自己生成应用。 虽然此过程更加复杂，但将能学到更多知识，所以我们认为这样的取舍很公平。
 
@@ -41,14 +41,14 @@ PowerApps Studio 有三个窗格和一个功能区，可以在其中创建应用
 
 ![PowerApps Studio](./media/sharepoint-scenario-build-app/04-00-00-powerapps-studio.png)
 
-## <a name="step-1-create-screens"></a>步骤 1:创建屏幕
+## <a name="step-1-create-screens"></a>第 1 步：创建屏幕
 在进行上面的回顾后，我们将开始生成应用。
 
 ### <a name="create-and-save-the-app"></a>创建并保存应用
 1. 在 PowerApps Studio 中，依次单击或点击“新建”和“空白应用”下的“手机布局”。
    
     ![空白应用 -> 手机布局](./media/sharepoint-scenario-build-app/04-01-01-blank-phone-app.png)
-2. 单击或点击“文件”，打开“应用设置”选项卡。输入名称“项目管理应用”。
+2. 单击或点击 "**文件**"，打开 "**应用设置**" 选项卡。输入名称 "项目管理应用"。
    
     ![应用名称](./media/sharepoint-scenario-build-app/04-01-02-app-name.png)
 3. 单击或点击“另存为”，确认应用是否将保存到云中，再单击右下角的“保存”。
@@ -86,8 +86,8 @@ PowerApps Studio 有三个窗格和一个功能区，可以在其中创建应用
 
 ![所有应用屏幕](./media/sharepoint-scenario-build-app/04-01-05-all-screens.png)
 
-## <a name="step-2-connect-to-a-sharepoint-list"></a>步骤 2:连接到 SharePoint 列表
-在此步骤中，我们将连接到**项目详细信息**SharePoint 列表。 虽然我们在此应用中只使用一个列表，但可以很容易地连接两个列表（若要扩展应用的话）。
+## <a name="step-2-connect-to-a-sharepoint-list"></a>第 2 步：连接 SharePoint Online 列表
+在此步骤中，我们将连接到 "**项目详细信息**" SharePoint 列表。 虽然我们在此应用中只使用一个列表，但可以很容易地连接两个列表（若要扩展应用的话）。
 
 1. 在左侧导航栏中，单击或点击“SelectTask”屏幕。
 2. 在右侧窗格中，单击或点击“添加数据源”。
@@ -113,7 +113,7 @@ PowerApps Studio 有三个窗格和一个功能区，可以在其中创建应用
    
     ![“数据源”选项卡](./media/sharepoint-scenario-build-app/04-02-06-data-sources.png)
 
-## <a name="step-3-build-the-selecttask-screen"></a>步骤 3:生成 SelectTask 屏幕
+## <a name="step-3-build-the-selecttask-screen"></a>第 3 步：生成“SelectTask”屏幕
 在这一步中，我们将使用 PowerApps 提供的一些控件、公式和格式化选项，提供一种可转到应用中其他屏幕的途径。
 
 ### <a name="update-the-title-and-insert-introductory-text"></a>更新标题并插入介绍性文字
@@ -169,7 +169,7 @@ PowerApps Studio 有三个窗格和一个功能区，可以在其中创建应用
 
 4. 单击或点击右上角的 ![“关闭应用预览”图标](./media/sharepoint-scenario-build-app/icon-close-preview.png) ，关闭应用。
 
-## <a name="step-4-build-the-assignmanager-screen"></a>步骤 4：生成 AssignManager 屏幕
+## <a name="step-4-build-the-assignmanager-screen"></a>第 4 步：生成“AssignManager”屏幕
 在这一步中，我们将使用库来显示所有已获准但尚未分配有经理的项目。 我们将添加其他控件，以便用户可以分配经理。
 
 > [!NOTE]
@@ -291,7 +291,7 @@ PowerApps Studio 有三个窗格和一个功能区，可以在其中创建应用
    
    * “Height”属性的值为“60”
 
-   * **OnSelect** property = **Patch('Project Details', LookUp('Project Details', ID = Gallery1.Selected.ID), {PMAssigned:TextInput1.Text})**. 有关详细信息，请参阅[公式详解](#formula-deep-dive)。
+   * “OnSelect”属性的值为“Patch('Project Details', LookUp('Project Details', ID = Gallery1.Selected.ID), {PMAssigned: TextInput1.Text})”。 有关详细信息，请参阅[公式详解](#formula-deep-dive)。
 
    * 此公式用于更新“项目详细信息”列表，同时设置“PMAssigned”字段值。
 
@@ -307,7 +307,7 @@ PowerApps Studio 有三个窗格和一个功能区，可以在其中创建应用
 
 ![完成的“AssignManager”屏幕](./media/sharepoint-scenario-build-app/04-04-12-complete.png)
 
-## <a name="step-5-build-the-viewprojects-screen"></a>步骤 5：生成 viewprojects 屏幕
+## <a name="step-5-build-the-viewprojects-screen"></a>第 5 步：生成“ViewProjects”屏幕
 在这一步中，我们将更改“ViewProjects”屏幕上库的属性。 此库显示“项目详细信息”列表中的项。 先在此屏幕上选择一项，再在“UpdateDetails”屏幕上编辑详细信息。
 
 1. 在左侧导航栏中，单击或点击“ViewProjects”屏幕。
@@ -364,7 +364,7 @@ PowerApps Studio 有三个窗格和一个功能区，可以在其中创建应用
      
      ![完成的“ViewProjects”屏幕](./media/sharepoint-scenario-build-app/04-05-07-viewprojects-final.png)
 
-## <a name="step-6-build-the-updatedetails-screen"></a>步骤 6:生成 updatedetails 屏幕
+## <a name="step-6-build-the-updatedetails-screen"></a>第 6 步：生成“UpdateDetails”屏幕
 在这一步中，我们将把“UpdateDetails”屏幕上的编辑表单与我们的数据源相连，并更改一些属性和字段。 在此屏幕上，可以编辑在“ViewProjects”屏幕上选择的项目的详细信息。
 
 1. 在左侧导航栏中，单击或点击“UpdateDetails”屏幕。
@@ -404,7 +404,7 @@ PowerApps Studio 有三个窗格和一个功能区，可以在其中创建应用
 
 ![“UpdateDetails”屏幕已完成](./media/sharepoint-scenario-build-app/04-06-06-edit-final.png)
 
-## <a name="step-7-run-the-app"></a>步骤 7:运行应用
+## <a name="step-7-run-the-app"></a>第 7 步：运行应用
 至此，应用已创建完成。我们将运行应用，看看它能否正常运行。 我们将在 SharePoint 网站上添加应用链接。 虽然可以在浏览器中运行应用，但可能必须先共享应用，然后其他人才能运行。 有关详细信息，请参阅[共享应用](https://powerapps.microsoft.com/guided-learning/learning-manage-share-apps)。
 
 ### <a name="add-a-link-to-the-app"></a>添加应用链接
@@ -496,7 +496,7 @@ PowerApps Studio 有三个窗格和一个功能区，可以在其中创建应用
 ## <a name="formula-deep-dive"></a>公式详解
 这是第二个有关 PowerApps 公式的选读部分。 在第一个公式详解部分中，我们探究了 PowerApps 为三屏应用中的浏览库生成的公式之一。 在本次详解中，我们将探究对第二个应用的“AssignManager”屏幕使用的公式。 公式如下：
 
-**Patch( 'Project Details', LookUp( 'Project Details', ID = Gallery1.Selected.ID ), {PMAssigned:TextInput1.Text} )**
+**Patch （' Project Details '，LookUp （' Project Details '，ID = Gallery1.Selected.ID），{PMAssigned： TextInput1}）**
 
 此公式有何用途？ 在库中选择一项并单击“确定”按钮后，此公式便会更新“项目详细信息”列表，将“PMAssigned”列设置为在文本输入框中指定的值。 此公式使用以下函数来实现用途：
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a5b9ddb2006a53796f782db3c620fa592f2a5aed
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 505ddf8bee3108b91ef8e4ca4683ce5fe44172e8
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994887"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899275"
 ---
 # <a name="transform-your-infopath-form-to-powerapps"></a>将 InfoPath 窗体转换为 PowerApps
 
@@ -40,7 +40,7 @@ PowerApps 是一个软件即服务 (SaaS) 平台，用户无需增添任何额�
 通过 PowerApps，你可以利用用户移动设备的功能。 你可以从应用内访问加速功能、照相机、指南针、连接信息和位置信号。 这为生成用于完成工作的应用创造了无限可能性。 当然，触摸是 PowerApps 中的自动功能，生成应用时无需任何编码操作。
 
 **摆脱束缚**  
-通过 InfoPath，你通常处理的是来自一个源的数据。 但是，如果你想更新另一个源（如另一个站点集合中的 SharePoint 列表）或连接到外部服务，事情就会变得比较棘手。 代码后面的诸多概念会让你夜不能寐。 PowerApps 的设计宗旨是允许在一个应用中使用多个数据源和建立多个服务连接。 目前，[200 多个连接器](connections-list.md#all-standard-connectors)支持本地数据和云数据的组合，包括 Microsoft Flow 和 Dynamics 365 等 Microsoft Office 365 和 Azure 服务。 此外，你还可以连接到众多第三方服务，如 Dropbox、Google、Salesforce、Slack 和其他常用的目标。
+通过 InfoPath，你通常处理的是来自一个源的数据。 但是，如果你想更新另一个源（如另一个站点集合中的 SharePoint 列表）或连接到外部服务，事情就会变得比较棘手。 代码后面的诸多概念会让你夜不能寐。 PowerApps 的设计宗旨是允许在一个应用中使用多个数据源和建立多个服务连接。 目前，超过[200 个连接器](connections-list.md#all-standard-connectors)支持本地和云数据的组合，包括 Microsoft Office 365 和 Azure 服务（如电源自动和 Dynamics 365）。 此外，你还可以连接到众多第三方服务，如 Dropbox、Google、Salesforce、Slack 和其他常用的目标。
 
 现在可在用户所需的位置而不仅是原始数据所在的位置生成可缩放的解决方案。
 
@@ -62,7 +62,7 @@ PowerApps 团队和 SharePoint 团队协作创造了 SharePoint 自定义使用�
 
 ![SharePoint 集成](./media/transform-infopath/sharepoint-integration.png)
 
-PowerApps 的另一个重要功能是，能够轻松从同一表单连接到其他 SharePoint 站点集合或其他环境。 比如，是否希望一个表单能够同时在 SharePoint Online 和 SharePoint 本地环境中显示和更新数据？ 没关系。 如果安装[本地数据网关](gateway-management.md)，几分钟后便可正常运行，然后实现 PowerApps、Power BI、Microsoft Flow 和 Azure 逻辑应用与本地数据之间的连接。 不需要更改防火墙规则。 你可以通过将此应用与 Microsoft Flow 连接做进一步的设置。
+PowerApps 的另一个重要功能是，能够轻松从同一表单连接到其他 SharePoint 站点集合或其他环境。 比如，是否希望一个表单能够同时在 SharePoint Online 和 SharePoint 本地环境中显示和更新数据？ 没关系。 如果安装[本地数据网关](gateway-management.md)，你将在几分钟内启动并运行，连接 PowerApps、Power BI、使用本地数据自动化和 Azure 逻辑应用。 不需要更改防火墙规则。 您可以通过将此应用程序与电源自动连接来进一步进一步操作。
 
 ## <a name="a-standalone-sharepoint-app"></a>独立 SharePoint 应用
 
@@ -99,7 +99,7 @@ PowerApps 将生成一个可自定义的应用。
 
 若要隐藏卡而不是使其只读，请在 DisplayMode 正上方的 Visible属性中插入相似函数。
 
-另外，你还可以显示批准按钮，只要用户的电子邮件地址与审批者的电子邮件地址相匹配即可。 提示使用**用户（）。通过电子邮件**访问当前用户的电子邮件地址。）因此，你可以将审批者的电子邮件地址存储在 YourDataCard 中，然后将按钮的 Visible 属性设置为此公式：
+另外，你还可以显示批准按钮，只要用户的电子邮件地址与审批者的电子邮件地址相匹配即可。 （提示：使用**用户（）。通过电子邮件**访问当前用户的电子邮件地址。）因此，可以在**YourDataCard**中存储审批者的电子邮件地址，然后将该按钮的**Visible**属性设置为以下公式：
 
 ```If( YourDataCard.Text = User().Email, true, false )```
 
@@ -124,17 +124,17 @@ IsMatch支持大量预定义模式（如电子邮件）或创建自己的模式�
 **从应用发送电子邮件**  
 你可以通过多种方式从 PowerApps 发送电子邮件，但最简单的方式是使用 Office 365 Outlook 连接器。 利用此连接器，可以用本人身份从应用发送电子邮件。 还可以获取电子邮件和与邮箱交互的其他任务。 有关如何发送电子邮件的说明，请参考[文档](connections/connection-office365-outlook.md)或此社区[视频](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/Send-an-email-from-PowerApps/m-p/74349)。
 
-你可以通过 Microsoft Flow 并将应用连接到创建的流来发送更为复杂的邮件（例如，作为 SharePoint 审批工作流的一部分）。 将应用连接到 Microsoft Flow 后，便可使用已与外部数据和服务建立良好连接的工作流引擎（如 PowerApps）的完整功能。 有关如何连接 PowerApps 和 Microsoft Flow 的详细信息，请查看此[文档](using-logic-flows.md)。
+您可以通过使用 "电源自动" 并将您的应用程序连接到您创建的流来发送更复杂的消息（例如，作为 SharePoint 审批工作流的一部分）。 一旦你将应用程序连接到 "自动启动"，就会打开工作流引擎的全部功能，例如 PowerApps，与外部数据和服务非常良好地连接。 有关如何连接 PowerApps 和增强功能的详细信息，请查看此[文档](using-logic-flows.md)。
 
 如果仍未找到要查找的电子邮件选项，还可以使用适用于 Benchmark Email、Gmail、MailChimp、Outlook.com、SendGrid 或 SMTP 的 PowerApps 连接器。 连接性就是 PowerApps 的魅力。
 
 **工作流**  
-说到商业应用程序和业务逻辑就不得不提工作流引擎。 好消息是，PowerApps 团队并未大费周章地重新创建另一个工作流引擎。 相反，他们提供可连接 Microsoft Flow 服务的可靠连接器。 通过其易于使用的工作流引擎，可跨超过 [200 种不同服务](https://flow.microsoft.com/connectors/)自动执行进程和任务。 有关如何连接 PowerApps 和 Microsoft Flow 的详细信息，请查看此[文档](using-logic-flows.md)。
+说到商业应用程序和业务逻辑就不得不提工作流引擎。 好消息是，PowerApps 团队并未大费周章地重新创建另一个工作流引擎。 相反，它们为你提供了强大的连接器来实现电源自动服务。 通过其易于使用的工作流引擎，可跨超过 [200 种不同服务](https://flow.microsoft.com/connectors/)自动执行进程和任务。 有关如何连接 PowerApps 和增强功能的详细信息，请查看此[文档](using-logic-flows.md)。
 
 **PowerApps 的变量**  
 生成解决方案时，我们会很自然地认为必须使用变量。 PowerApps 提供了多个类型的变量，但请仅在必要时使用。 与其考虑获取数据，在变量中存储数据并引用该变量，不如考虑直接引用该数据。 如果将其与 Excel 比较，就可以更好地了解此模型。 在 Excel 中，“合计”不是变量，而是其他字段的总和。 因此，如果要在工作表的其他位置使用该值，则需指定在其中计算该合计值的单元格。 [文档](working-with-variables.md)中对此有很好的解释。 体验不同的思维过程。
 
-如果仍然需要变量（很多情况都是如此），可通过这种方式了解不同的操作选项。 请牢记，使用 PowerApps 时无需定义变量。 只需使用一个函数指定要存储的名称和值即可创建变量。 通过选择“查看”选项卡上的“变量”，可以查看你创建的变量。变量保留在内存中，其值会在应用关闭后丢失。 可以创建这几类变量：
+如果仍然需要变量（很多情况都是如此），可通过这种方式了解不同的操作选项。 请牢记，使用 PowerApps 时无需定义变量。 只需使用一个函数指定要存储的名称和值即可创建变量。 您可以通过选择 "**视图**" 选项卡上的 "**变量**" 来查看已创建的变量。变量保存在内存中，并且在关闭该应用程序时，这些变量的值将丢失。 可以创建这几类变量：
 
 - 全局变量往往是用户首先想到的变量。 使用 [Set](functions/function-set.md) 函数指定全局变量的值，并使此值可在整个应用中使用：
 
@@ -163,7 +163,7 @@ IsMatch支持大量预定义模式（如电子邮件）或创建自己的模式�
 
 ```Filter( Impacts, ddSelectType.Selected.Value in SCategory )```
 
-这样便创建了级联下拉列表。 有关详细信息，请查看 PowerApps 团队 [SharePoint：4个简单步骤中的级联下拉菜单！ ](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) 或此[社区视频](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813)。 别担心，不使用 SharePoint 也同样可以轻松完成此操作。
+这样便创建了级联下拉列表。 有关详细信息，请查看 PowerApps 团队的博客文章 [SharePoint：4 步轻松创建级联下拉列表！](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) 或此[社区视频](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813)。 别担心，不使用 SharePoint 也同样可以轻松完成此操作。
 
 **不要生成一个超级应用**  
 PowerApps 支持从另一个应用调用应用。 你可以生成一组能够相互调用甚至传递数据的应用，从而简化开发工作，而无需使用“泡泡糖”式的方法粘接出一个大型 InfoPath 表单。

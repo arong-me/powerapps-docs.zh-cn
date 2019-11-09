@@ -1,5 +1,5 @@
 ---
-title: 创建列表以便将 SharePoint Online 与 PowerApps、Microsoft Flow 和 Power BI 集成 | Microsoft 文档
+title: 为 SharePoint Online 与 PowerApps、Power 自动功能和 Power BI 的集成设置列表 |Microsoft Docs
 description: 在此任务中，我们将创建 SharePoint 列表，以用作应用、流、报表和仪表板的数据源。
 author: NickWaggoner
 manager: kvivek
@@ -13,20 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7be4a0574c1a81684188eaede4b6e80b02e7b7cc
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: ec34399818120464a2ad2caca5834baa87d8a25c
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63319169"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899167"
 ---
-# <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-microsoft-flow-and-power-bi"></a>创建列表以便将 SharePoint Online 与 PowerApps、Microsoft Flow 和 Power BI 集成
+# <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-power-automate-and-power-bi"></a>设置用于 SharePoint Online 与 PowerApps、Power 自动化和 Power BI 的集成列表
 > [!NOTE]
-> 本文属于介绍如何将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> 本文是有关将 PowerApps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
-SharePoint 具有大量共享和协作功能，但我们将专注于此方案的一项功能：[SharePoint 列表](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7)。 列表就是一系列可以与团队成员和其他网站用户共享的数据。 我们将回顾一下用于此方案的列表，以便你可以在自己的 SharePoint Online 网站中创建列表。
+SharePoint 具有大量共享和协作功能，但对于此方案，我们将重点关注其中一种功能，即 [SharePoint 列表](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7)。 列表就是一系列可以与团队成员和其他网站用户共享的数据。 我们将回顾一下用于此方案的列表，以便你可以在自己的 SharePoint Online 网站中创建列表。
 
-## <a name="step-1-understand-the-lists"></a>步骤 1:了解列表
+## <a name="step-1-understand-the-lists"></a>第 1 步：了解列表
 第一个列表是便于项目申请者添加申请的“项目申请”列表。 然后，项目审批者可以审查申请，并决定是批准还是拒绝。
 
 | **列表列** | **数据类型** | **备注** |
@@ -56,7 +56,7 @@ SharePoint 具有大量共享和协作功能，但我们将专注于此方案的
 | ActualDays |Number |对于已完成的项目 |
 | PMAssigned |单行文本 |项目经理 |
 
-## <a name="step-2-create-and-review-the-lists"></a>步骤 2:创建并检查列表
+## <a name="step-2-create-and-review-the-lists"></a>第 2 步：创建并检查列表
 若要继续完成此方案，需要创建两个 SharePoint 列表，并在其中填充示例数据。 为此，我们将介绍如何创建列表，并在其中粘贴示例数据。 请确保已从[下载包](https://aka.ms/o4ia0f)获取 Excel 文件。
 
 > [!NOTE]
@@ -105,9 +105,9 @@ SharePoint 具有大量共享和协作功能，但我们将专注于此方案的
 4. 将数据复制并粘贴到 SharePoint 内的网格中，再单击或点击“完成”。
    
     ![包含数据的已完成列表](./media/sharepoint-scenario-setup/01-01-09-full-grid.png)
-5. 使用 project-details.xlsx 工作簿，对“项目详细信息”列表重复执行列表创建和复制过程。 请参阅中的项目详细信息表[步骤 1:了解列表](#step-1-understand-the-lists)列名称和数据类型。
+5. 使用 project-details.xlsx 工作簿，对“项目详细信息”列表重复执行列表创建和复制过程。 请参阅[第 1 步：了解列表](#step-1-understand-the-lists)中的“项目详细信息”表，了解列名称和数据类型。
 
-## <a name="step-3-update-connections-to-samples---optional"></a>步骤 3:更新连接到示例-可选
+## <a name="step-3-update-connections-to-samples---optional"></a>第 3 步：为示例内容更新连接 - 可选
 正如本系列教程简介部分中所述，我们在[下载包](https://aka.ms/o4ia0f)中添加了两个示例应用和一个报表。 可以在不使用这些示例的情况下完成此方案，但若要使用示例，必须更新与 SharePoint 列表的连接。 更新为使用你自己的列表（而不是我们的列表）作为数据源。
 
 ### <a name="update-connections-for-the-sample-apps"></a>为示例应用更新连接
@@ -157,7 +157,7 @@ SharePoint 具有大量共享和协作功能，但我们将专注于此方案的
     
     ![刷新“项目详细信息”数据源](./media/sharepoint-scenario-setup/01-03-02-remove.png)
 
-11. 单击右上角的  ![“运行应用”图标](./media/sharepoint-scenario-setup/icon-run-arrow.png) 以运行应用，并确保连接有效。
+11. 单击右上角的 ![“运行应用”图标](./media/sharepoint-scenario-setup/icon-run-arrow.png) 以运行应用，并确保连接有效。
 
 12. 单击或点击“文件”，再将应用保存到云中。 
 

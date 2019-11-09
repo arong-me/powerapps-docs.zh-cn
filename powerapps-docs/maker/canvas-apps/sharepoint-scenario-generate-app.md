@@ -13,23 +13,23 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9c7e58c8127b1c2784e0b1d79e78a1cb9478054
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 9bfd103d2f8e6503e2897855a0d424807b9573e6
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321204"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899539"
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>生成用于处理项目请求的画布应用
 > [!NOTE]
-> 本文属于介绍如何将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> 本文是有关将 PowerApps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
 至此，SharePoint 列表已创建完成，我们可以生成和自定义第一个应用了。 由于 PowerApps 已与 SharePoint 集成，因此可以直接通过列表轻松生成基本的三屏应用。 使用此应用，可以查看每个列表项的摘要和详细信息、更新现有列表项，并能新建列表项。 直接通过列表创建的应用显示为相应列表的视图。 然后，可以在浏览器和移动电话上运行此应用。
 
 > [!TIP]
 > 这个方案的[下载包](https://aka.ms/o4ia0f)包含此应用的最终版本 (project-requests-app.msapp)。
 
-## <a name="step-1-generate-an-app-from-a-sharepoint-list"></a>步骤 1:生成基于 SharePoint 列表的应用
+## <a name="step-1-generate-an-app-from-a-sharepoint-list"></a>第 1 步：生成以 SharePoint 列表为依据的应用
 
 1. 在已创建的“项目申请”列表中，依次单击或点击“PowerApps”和“创建应用”。
    
@@ -39,7 +39,7 @@ ms.locfileid: "63321204"
    
     ![指定应用名称](./media/sharepoint-scenario-generate-app/02-01-02-create-app-name.png)
 
-## <a name="step-2-review-the-app-in-powerapps-studio"></a>步骤 2:查看 PowerApps Studio 中的应用程序
+## <a name="step-2-review-the-app-in-powerapps-studio"></a>第 2 步：在 PowerApps Studio 中查看应用
 
 1. 在 PowerApps Studio 中，左侧导航栏默认显示应用中屏幕和控件的分层视图。
    
@@ -59,7 +59,7 @@ ms.locfileid: "63321204"
       
       ![含缩略图视图的 PowerApps Studio](./media/sharepoint-scenario-generate-app/02-02-03-studio-screens-thumbnails.png)
 
-## <a name="step-3-customize-the-apps-browse-screen"></a>步骤 3:自定义应用的浏览屏幕
+## <a name="step-3-customize-the-apps-browse-screen"></a>第 3 步：自定义应用的浏览屏幕
 
 1. 单击或点击应用的浏览屏幕。
    
@@ -93,7 +93,7 @@ ms.locfileid: "63321204"
 
 6. 依次单击或点击“文件”和“保存”。 单击或点击 ![“返回到应用”图标](./media/sharepoint-scenario-generate-app/icon-back-to-app.png)，返回到应用。
 
-## <a name="step-4-review-the-apps-details-screen-and-edit-screen"></a>步骤 4：查看应用程序的详细信息屏幕和编辑屏幕
+## <a name="step-4-review-the-apps-details-screen-and-edit-screen"></a>第 4 步：查看应用的详细信息屏幕和编辑屏幕
 1. 单击或点击应用的详细信息屏幕。
    
     此屏幕的布局不同，包含用于显示库中选定项的详细信息的显示表单。 它包含用于编辑和删除项的控件，以及用于返回到浏览屏幕的控件。
@@ -106,7 +106,7 @@ ms.locfileid: "63321204"
 
     ![编辑表单](./media/sharepoint-scenario-generate-app/02-04-03-edit.png)
 
-## <a name="step-5-run-the-app-from-the-list"></a>步骤 5：从列表中运行应用
+## <a name="step-5-run-the-app-from-the-list"></a>第 5 步：通过列表运行应用
 
 1. 在“项目申请”列表中，依次单击或点击“所有项”和“项目申请应用”。
    
@@ -115,7 +115,7 @@ ms.locfileid: "63321204"
    
     ![打开“项目申请应用”](./media/sharepoint-scenario-generate-app/02-05-02-open-app.png)
 
-3. 在应用中，单击或点击浏览库中首项的  ![“转到详细信息”图标](./media/sharepoint-scenario-generate-app/icon-details-arrow.png) 。
+3. 在应用中，单击或点击浏览库中首项的 ![“转到详细信息”图标](./media/sharepoint-scenario-generate-app/icon-details-arrow.png) 。
    
     ![浏览库中的首项](./media/sharepoint-scenario-generate-app/02-05-04-first-item.png)
 
@@ -160,7 +160,7 @@ ms.locfileid: "63321204"
    
     **Filter ( 'Project Requests', StartsWith ( Title, TextSearchBox1.Text )**
 
-3. If 函数确定变量 SortDescending1 设置为 true 还是 false（由应用中的排序按钮进行设置）。 然后，此函数返回“Descending”或“Ascending”值。
+3. If函数确定变量 SortDescending1 设置为 true 还是 false（由应用中的排序按钮进行设置）。 然后，此函数返回“Descending”或“Ascending”值。
    
     **If ( SortDescending1, Descending, Ascending )**
 

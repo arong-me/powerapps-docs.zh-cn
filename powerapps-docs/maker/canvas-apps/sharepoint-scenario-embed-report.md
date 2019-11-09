@@ -13,22 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 92ae77237064d28e3070f7e7bc9cb94c4493a3c6
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 1ab23d8b71d36346d2013ac3b988eb2d058e2324
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321229"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73898456"
 ---
 # <a name="embed-the-power-bi-project-report-in-sharepoint-online"></a>将 Power BI 项目报表嵌入 SharePoint Online
 > [!NOTE]
-> 本文属于介绍如何将 PowerApps、Microsoft Flow 和 Power BI 与 SharePoint Online 结合使用的系列教程。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> 本文是有关将 PowerApps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
 现在，我们将把 Power BI 报表嵌入托管我们两个列表的相同 SharePoint Online 网站。 Power BI 支持多种嵌入方法，包括可将 Web 和移动视图直接集成到 SharePoint 网页的功能。
 
 使用这种嵌入类型，Power BI 可以将报表作为 Web 部件嵌入，为用户提供适当的访问权限，并且你可以单击嵌入的报表转到 powerbi.com 上的报表。 首先，我们将在 Power BI 中生成嵌入链接，然后在我们创建的网页中使用此链接。 若要详细了解如何嵌入，请参阅[使用报表 Web 部件在 SharePoint Online 中嵌入报表](https://docs.microsoft.com/power-bi/service-embed-report-spo)。
 
-## <a name="step-1-generate-an-embed-link"></a>步骤 1:生成嵌入链接
+## <a name="step-1-generate-an-embed-link"></a>第 1 步：生成嵌入链接
 1. 登录 Power BI，再单击或点击左侧导航窗格中的报表名称。
    
     ![转到报表](./media/sharepoint-scenario-embed-report/08-01-01-reports.png)
@@ -39,7 +39,7 @@ ms.locfileid: "63321229"
    
     ![适用于 SharePoint 的嵌入链接](./media/sharepoint-scenario-embed-report/08-01-03-embed-url.png)
 
-## <a name="step-2-embed-the-report"></a>步骤 2:嵌入报表
+## <a name="step-2-embed-the-report"></a>第 2 步：嵌入报表
 1. 登录 SharePoint，再单击或点击“网站内容”。
    
     ![SharePoint 网站内容](./media/sharepoint-scenario-embed-report/08-01-04-site-contents.png)
@@ -60,7 +60,7 @@ ms.locfileid: "63321229"
    
     ![报表嵌入已完成](./media/sharepoint-scenario-embed-report/08-01-09-report-complete.png)
 
-## <a name="step-3-grant-access-to-the-report"></a>步骤 3:授予对报表的访问权限。
+## <a name="step-3-grant-access-to-the-report"></a>第 3 步：授予报表访问权限。
 如果根据我们的建议使用 Office 365 组，请确保需要获取访问权限的用户是 Power BI 服务内组工作区的成员。 这样可确保用户能够查看相应组的内容。 有关详细信息，请参阅[在 Power BI 应用工作区中展开协作](https://docs.microsoft.com/power-bi/service-collaborate-power-bi-workspace)。
 
 此方案在 Power BI 中的操作部分到此结束。 我们先是将 SharePoint 列表中的数据提取到 Power BI 中，而现在整整转了一圈，又将 Power BI 报表重新嵌入 SharePoint 中。

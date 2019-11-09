@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1a5e27b59f1b19460933b61bb92b312a4b12b6f5
-ms.sourcegitcommit: 6984ce43cc5653ccb957219d2a687907ebb5520c
+ms.openlocfilehash: 60f8fb3c0c6d28bb30140017c2af07040d5ade7f
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72561042"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73898193"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>什么是本地数据网关？
 
-本地数据网关充当桥，以提供本地数据（不在云中的数据）和几个 Microsoft 云服务之间的快速、安全的数据传输。 这些云服务包括 Power BI、PowerApps、Microsoft Flow、Azure Analysis Services 和 Azure 逻辑应用。 通过使用网关，组织可以在其本地网络中保留数据库和其他数据源，但在云服务中安全地使用本地数据。
+本地数据网关充当桥，以提供本地数据（不在云中的数据）和几个 Microsoft 云服务之间的快速、安全的数据传输。 这些云服务包括 Power BI、PowerApps、功能自动化、Azure Analysis Services 和 Azure 逻辑应用。 通过使用网关，组织可以在其本地网络中保留数据库和其他数据源，但在云服务中安全地使用本地数据。
 
 ## <a name="how-the-gateway-works"></a>网关工作原理
 

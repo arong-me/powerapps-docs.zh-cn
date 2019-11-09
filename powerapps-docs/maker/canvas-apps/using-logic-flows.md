@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bb39701a61bcfb75c6fd66e90fc7a5002efcc410
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 636e9f853ada9816e87232348e5ce7ef6df2cedc
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541629"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73898306"
 ---
 # <a name="start-a-flow-in-a-canvas-app"></a>启动画布应用中的流
 
-可以使用 Microsoft Flow 来创建逻辑，以便在画布应用中发生某个事件时执行一个或多个任务。 例如，配置一个按钮，以便用户选择它时在 SharePoint 列表中创建一个项、发送电子邮件或会议请求、将文件添加到云，或执行所有上述操作。 可以在应用中配置任何用于启动流的控件，该控件在关闭 PowerApps 的情况下仍会继续运行。
+在画布应用中发生事件时，可以使用 "电源自动化" 创建执行一项或多项任务的逻辑。 例如，配置一个按钮，以便用户选择它时在 SharePoint 列表中创建一个项、发送电子邮件或会议请求、将文件添加到云，或执行所有上述操作。 可以在应用中配置任何用于启动流的控件，该控件在关闭 PowerApps 的情况下仍会继续运行。
 
 > [!NOTE]
 > 当用户在应用内运行流时，该用户必须具有执行流中指定的任务的权限。 否则，流将失败。
