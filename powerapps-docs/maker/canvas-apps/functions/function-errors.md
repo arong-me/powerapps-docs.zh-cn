@@ -30,7 +30,7 @@ ms.locfileid: "71992800"
 
 可使用 **[Validate](function-validate.md)** 和 **[DataSourceInfo](function-datasourceinfo.md)** 函数在错误出现之前避免这些错误。  请参阅[使用数据源](../working-with-data-sources.md)，了解如何处理和避免错误的更多建议。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 **Errors** 函数会返回一个错误的[表](../working-with-tables.md)，其中包含以下[列](../working-with-tables.md#columns)：
 
 * **记录**。  数据源中有错误的记录。  如果在记录的创建过程中发生错误，此列将为*空白*。
@@ -38,7 +38,7 @@ ms.locfileid: "71992800"
 * **消息**。  错误的说明。  可为最终用户显示此错误字符串。  请注意，此消息可能由数据源生成，可能会很长且包含可能对用户没有任何意义的原始列名称。
 * **错误**。  可在公式中使用以帮助解决错误的错误代码：
 
-| ErrorKind | 描述 |
+| ErrorKind | 说明 |
 | --- | --- |
 | ErrorKind.Conflict |对同一个记录进行了其他更改，从而导致更改冲突。  使用 **[Refresh](function-refresh.md)** 函数重新加载记录，尝试再次进行更改。 |
 | ErrorKind.ConstraintViolation |违反了一个或多个约束。 |
@@ -63,7 +63,7 @@ ms.locfileid: "71992800"
 ## <a name="syntax"></a>语法
 **Errors**( *DataSource* [, *Record* ] )
 
-* *DataSource* - 必需。 要为其返回错误的数据源。
+* *DataSource* – 必需。 要为其返回错误的数据源。
 * *Record* - 可选。  要为其返回错误的特定记录。 如果未指定此参数，函数将返回整个数据源的错误。
 
 ## <a name="examples"></a>示例
@@ -74,13 +74,13 @@ ms.locfileid: "71992800"
 
 通过该应用，用户将 Chocolate 记录加载到一个数据输入窗体中，然后将 **Quantity** 更改为 90。  要使用的记录置于[上下文变量](../working-with-variables.md#use-a-context-variable) **EditRecord** 中：
 
-* @no__t 0UpdateContext （{EditRecord：First （Filter （IceCream，口味 = "巧克力"））） **
+* **UpdateContext( { EditRecord: First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
 
 若要在数据源中进行此更改，请使用 **[Patch](function-patch.md)** 函数：
 
 * **Patch( IceCream, EditRecord, Gallery.Updates )**
 
-其中，**库**的计算结果为 **{数量：90}** ，因为仅修改了 "**数量**" 属性。
+其中 **Gallery.Updates** 计算结果为 **{ Quantity: 90 }** ，因为只修改了 **Quantity** 属性。
 
 但就在调用 **[Patch](function-patch.md)** 函数之前，其他人将 Chocolate 的 **Quantity** 修改为 80。  PowerApps 将检测到此情况，且不允许发生更改冲突。  可使用以下公式检查是否存在这种情况：
 
@@ -90,7 +90,7 @@ ms.locfileid: "71992800"
 
 | 记录 | 列 | 消息 | 错误 |
 | --- | --- | --- | --- |
-| 风格"巧克力"，数量：100} |空白 |“另一个用户已修改你正尝试修改的记录。 请重新加载该记录，然后重试。” |ErrorKind.Conflict |
+| { Flavor: "Chocolate", Quantity: 100 } |*blank* |“另一个用户已修改你正尝试修改的记录。 请重新加载该记录，然后重试。” |ErrorKind.Conflict |
 
 可在窗体上放置标签，向用户显示此错误。
 

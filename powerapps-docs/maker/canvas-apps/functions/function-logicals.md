@@ -24,7 +24,7 @@ ms.locfileid: "71992562"
 
 布尔逻辑函数，常用于操作比较结果和测试结果。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 如果 **And** 函数的所有参数均为 **true**，则此函数返回 **true**。
 
@@ -54,7 +54,7 @@ ms.locfileid: "71992562"
 
 本节中的示例使用以下全局变量：
 
-- **@no__t-** 1*false*
+- ** = ** *false*
 - **b** = *true*
 - **x** = 10
 - **y** = 100
@@ -68,7 +68,7 @@ Set( a, false ); Set( b, true ); Set( x, 10 ); Set( y, 100 ); Set( s, "Hello Wor
 
 选择按钮（在按住 Alt 键的同时单击），然后将 "[**标签**](../controls/control-text-box.md)" 控件的 " **Text** " 属性设置为下表第一列中的公式。
 
-| 公式 | 描述 | 结果 |
+| 公式 | 说明 | 结果 |
 |---------|-------------|--------|
 | **And （a，b）** | 测试**a**和**b**的值。  其中一个参数为*false*，因此该函数返回*false*。 | *false* |
 | **a 和 b** | 与前面的示例相同，使用 Visual Basic 表示法。 | *false* |
@@ -79,6 +79,6 @@ Set( a, false ); Set( b, true ); Set( x, 10 ); Set( y, 100 ); Set( s, "Hello Wor
 | **Not （a）** | 测试**的值。** 参数为*false*，因此函数返回相反的结果。 | *true* |
 | **不是** | 与前面的示例相同，使用 Visual Basic 表示法。 | *true* |
 | **!的** | 与上面的示例相同，使用 JavaScript 表示法。 | *true* |
-| **Len （@no__t 1 @ no__t-2） &nbsp; @ no__t-4 @ no__t-520 And @ no__t-6Not @ no__t-7IsBlank （&nbsp;s @ no__t）** | 测试**的长度**是否小于20以及它是否不是**空**值。 长度小于20，且值不为空。 因此，结果为*true*。 | *true* |
-| **或（&nbsp;Len （&nbsp; @ no__t） &nbsp; @ no__t-5 @ no__t-610，x @ no__t-7 @ no__t-8 @ no__t-9100，y @ no__t-10 @ no__t-11 @ no__t-12100 @ no__t-13）** | 测试**的长度**是否小于10， **x**是否小于100，以及**y**是否小于100。 第一个和第三个参数为 false，但第二个参数为 true。 因此，该函数返回*true*。 | *true* |
-| **Not IsBlank （&nbsp; @ no__t-2）** | 测试**s**是否为*空*，这将返回*false*。 返回的结果**不**是此结果的相反*值*。 | *true* |
+| **Len （&nbsp;s&nbsp;）&nbsp;<&nbsp;20 和&nbsp;&nbsp;&nbsp;&nbsp;）** | 测试**的长度**是否小于20以及它是否不是**空**值。 长度小于20，且值不为空。 因此，结果为*true*。 | *true* |
+| **Or （&nbsp;Len （&nbsp;s&nbsp;）&nbsp;<&nbsp;10，x&nbsp;<&nbsp;100，y&nbsp;<&nbsp;100&nbsp;）** | 测试**的长度**是否小于10， **x**是否小于100，以及**y**是否小于100。 第一个和第三个参数为 false，但第二个参数为 true。 因此，该函数返回*true*。 | *true* |
+| **Not IsBlank （&nbsp;s&nbsp;）** | 测试**s**是否为*空*，这将返回*false*。 返回的结果**不**是此结果的相反*值*。 | *true* |

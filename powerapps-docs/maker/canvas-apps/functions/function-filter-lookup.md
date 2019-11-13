@@ -21,9 +21,9 @@ ms.lasthandoff: 10/07/2019
 ms.locfileid: "71992864"
 ---
 # <a name="filter-search-and-lookup-functions-in-powerapps"></a>PowerApps 中的 Filter、Search 和 LookUp 函数
-查找[表](../working-with-tables.md)中的一个或多个[记录](../working-with-tables.md#records)。
+查找[表](../working-with-tables.md#records)中的一个或多个[记录](../working-with-tables.md)。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 **Filter** 函数查找表中满足公式的记录。  使用 **Filter** 可查找匹配一个或多个条件的一组记录并丢弃不匹配的记录。
 
 **LookUp** 函数查找表中满足公式的第一条记录。  使用 **LookUp** 可查找匹配一个或多个条件的单个记录。
@@ -50,10 +50,10 @@ ms.locfileid: "71992864"
 
 * *Table* - 必需。 要搜索的表。
 * *SearchString* - 必需。 要搜索的字符串。 如果为空白或者是空字符串，将返回所有记录。
-* *Column(s)* - 必需。 要在*表*中搜索的列的名称。 要搜索的列必须包含文本。 列名称必须是用双引号括起来的字符串。 但是，列名称必须是静态的，并且不能使用公式计算。 如果在任意这些列的数据中找到了作为部分匹配项的 *SearchString* ，将返回完整记录。
+* *Column(s)* - 必需。 要在 *表* 中搜索的列的名称。 要搜索的列必须包含文本。 列名称必须是用双引号括起来的字符串。 但是，列名称必须是静态的，并且不能使用公式计算。 如果在任意这些列的数据中找到了作为部分匹配项的 *SearchString*，将返回完整记录。
 
 > [!NOTE]
-> 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
+> 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“**x0020\_”\_** 。 例如，将“Column Name”指定为“Column_x0020_Name”。
 
 **LookUp**( *Table*, *Formula* [, *ReductionFormula* ] )
 
@@ -67,7 +67,7 @@ ms.locfileid: "71992864"
 
 ![](media/function-filter-lookup/icecream.png)
 
-| 公式 | 描述 | 结果 |
+| 公式 | 说明 | 结果 |
 | --- | --- | --- |
 | **Filter( IceCream, OnOrder > 0 )** |返回 **OnOrder** 大于零的记录。 |<style> img { max-width: none; } </style> ![](media/function-filter-lookup/icecream-onorder.png) |
 | **Filter( IceCream, Quantity + OnOrder > 225 )** |返回 **Quantity** 和 **OnOrder** 列的总和大于 225 的记录。 |![](media/function-filter-lookup/icecream-overstock.png) |
@@ -77,8 +77,8 @@ ms.locfileid: "71992864"
 | **Search( IceCream, "", "Flavor" )** |因为搜索词为空，所以将返回所有记录。 |![](media/function-filter-lookup/icecream.png) |
 | **LookUp( IceCream, Flavor = "Chocolate", Quantity )** |搜索 **Flavor** 等于“Chocolate”的记录，其中有一个此类记录。  对于找到的第一个记录，将返回该记录的 **Quantity**。 |100 |
 | **LookUp( IceCream, Quantity > 150, Quantity + OnOrder )** |搜索 **Quantity** 大于 100 的记录，其中有多个此类记录。  对于找到的第一个 **Flavor** 为“Vanilla”的记录，将返回 **Quantity** 和 **OnOrder** 列的总和。 |250 |
-| **LookUp( IceCream, Flavor = "Pistachio", OnOrder )** |搜索 **Flavor** 等于“Pistachio”的记录，其中不存在此类记录。  由于未找到匹配项，**Lookup** 将返回空白。 |空白 |
-| **LookUp( IceCream, Flavor = "Vanilla" )** |搜索 **Flavor** 等于“Vanilla”的记录，其中有一个此类记录。  由于未提供归约公式，因此将返回完整记录。 |风格"Vanilla"，数量：200，OnOrder：75} |
+| **LookUp( IceCream, Flavor = "Pistachio", OnOrder )** |搜索 **Flavor** 等于“Pistachio”的记录，其中不存在此类记录。  由于未找到匹配项，**Lookup** 将返回空白。 |*blank* |
+| **LookUp( IceCream, Flavor = "Vanilla" )** |搜索 **Flavor** 等于“Vanilla”的记录，其中有一个此类记录。  由于未提供归约公式，因此将返回完整记录。 |{ Flavor: "Vanilla", Quantity: 200, OnOrder: 75 } |
 
 ### <a name="search-user-experience"></a>搜索用户体验
 在许多应用中，你可在搜索框中键入一个或多个字符来对较大数据集中的记录列表进行筛选。 键入时，列表中仅显示与搜索条件匹配的记录。
@@ -89,9 +89,9 @@ ms.locfileid: "71992864"
 
 若要将此数据源创建为集合，请创建一个 **[按钮](../controls/control-button.md)** 控件，并将其 **OnSelect** 属性设置为以下公式：
 
-@no__t 0ClearCollect （Customers，Table （{Name："Fred Garcia"，Company："Northwind 商贸"}，{Name："Cole 莎莎"，Company："Contoso"}，{Name："Glenda Johnson"，Company："Contoso"}，{Name："Mike Collins"，Company："艾德作品"}，{Name："Colleen，公司："艾德作品"}）） **
+**ClearCollect( Customers, Table( { Name: "Fred Garcia", Company: "Northwind Traders" }, { Name: "Cole Miller", Company: "Contoso" }, { Name: "Glenda Johnson", Company: "Contoso" }, { Name: "Mike Collins", Company: "Adventure Works" }, { Name: "Colleen Jones", Company: "Adventure Works" } ) )**
 
-如此示例中所示，可在屏幕底部的[**库控件**](../controls/control-gallery.md)中显示记录列表。 在靠近屏幕顶部的位置，可添加名为 **SearchInput** 的[**文本输入**](../controls/control-text-input.md)控件，以便用户能够指定对哪些记录感兴趣。
+如此示例中所示，可在屏幕底部的[**库控件**](../controls/control-gallery.md)中显示记录列表。 在靠近屏幕顶部的位置，可添加名为 [SearchInput **的**](../controls/control-text-input.md)文本输入控件，以便用户能够指定对哪些记录感兴趣。
 
 ![](media/function-filter-lookup/customers-ux-unfiltered.png)
 
@@ -101,7 +101,7 @@ ms.locfileid: "71992864"
 
 若要基于 **Name** 列进行筛选，需将库控件的 **Items** 属性设置为以下公式之一：
 
-| 公式 | 描述 | 结果 |
+| 公式 | 说明 | 结果 |
 | --- | --- | --- |
 | **Filter( Customers, StartsWith( Name, SearchInput.Text ) )** |筛选 **Customers** 数据源，查找搜索字符串出现在 **Name** 列开头的记录。 测试不区分大小写。 如果用户在搜索框中键入 **co**，库将显示 **Colleen Jones** 和 **Cole Miller**。 库不会显示 **Mike Collins**，因为该记录的 **Name** 列不以搜索字符串开头。 |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-startswith.png) |
 | **Filter( Customers, SearchInput.Text in Name )** |筛选 **Customers** 数据源，查找搜索字符串出现在 **Name** 列中任意位置的记录。 测试不区分大小写。 如果用户在搜索框中键入 **co**，库将显示 **Colleen Jones**、**Cole Miller** 和 **Mike Collins**，因为搜索字符串都出现在所有这些记录的 **Name** 列中的某个位置。 |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-contains.png) |
@@ -109,9 +109,9 @@ ms.locfileid: "71992864"
 
 可以扩展搜索，使其包括 **Company** 列和 **Name** 列：
 
-| 公式 | 描述 | 结果 |
+| 公式 | 说明 | 结果 |
 | --- | --- | --- |
-| **Filter( Customers, StartsWith( Name, SearchInput.Text ) &#124;&#124; StartsWith( Company, SearchInput.Text ) )** |筛选 **Customers** 数据源，查找 **Name** 列或 **Company** 列以搜索字符串（例如 **co**）开头的记录。  如果任一 **StartsWith** 函数为 *true*，则 [ **&#124;&#124;** 运算符](operators.md) 为 *true*。 |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-startswith.png) |
+| **Filter( Customers, StartsWith( Name, SearchInput.Text ) &#124;&#124; StartsWith( Company, SearchInput.Text ) )** |筛选 **Customers** 数据源，查找 **Name** 列或 **Company** 列以搜索字符串（例如 **co**）开头的记录。  如果任一 [StartsWith**函数为**true](operators.md) ，则&#124;&#124; **运算符** 为 *true* 。 |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-startswith.png) |
 | **Filter( Customers, SearchInput.Text in Name &#124;&#124; SearchInput.Text in Company )** |筛选 **Customers** 数据源，查找 **Name** 列或 **Company** 列任意位置包含搜索字符串（例如 **co**）的记录。 |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-contains.png) |
 | **Search( Customers, SearchInput.Text, "Name", "Company" )** |与使用 **in** 运算符类似，**Search** 函数筛选 **Customers** 数据源，查找 **Name** 列或 **Company** 列任意位置包含搜索字符串（例如 **co**）的记录。 如果希望指定多个列和多个 **in** 运算符，那么 **Search** 函数会比 **Filter** 更易于读取和写入。 请注意，必须将列的名称括在双引号内。 |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-contains.png) |
 

@@ -23,14 +23,14 @@ ms.locfileid: "71992247"
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>PowerApps 中的 Sort 和 SortByColumns 函数
 对[表](../working-with-tables.md)进行排序。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 **Sort** 函数根据公式对表进行排序。  
 
 系统会针对表的每条[记录](../working-with-tables.md#records)计算公式，然后根据结果对表进行排序。  公式的计算结果必须是数字、字符串或布尔值；不得是表或记录。
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
-若要先按一列进行排序，然后再按另一列进行排序，请在 **Sort** 公式中嵌入另一个此公式。 例如，您可以使用此公式先按**LastName**列再按**FirstName**列排序**Contacts**表：**排序（"联系人"、"LastName"）、FirstName**
+若要先按一列进行排序，然后再按另一列进行排序，请在 **Sort** 公式中嵌入另一个此公式。 例如，可以使用以下公式先按 **LastName** 列对 **Contacts** 表进行排序，然后再按 **FirstName** 列进行排序：**Sort( Sort( Contacts, LastName ), FirstName )**
 
 还可以使用 **SortByColumns** 函数根据一列或多列对表进行排序。
 
@@ -58,7 +58,7 @@ ms.locfileid: "71992247"
 * *SortOrder(s)* - 可选。  **SortOrder.Ascending** 或 **SortOrder.Descending**。  **SortOrder.Ascending** 是默认值。  如果提供了多个 *ColumnNames* ，则最后一列必须包括 *SortOrder* 。
   
     > [!NOTE]
-  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
+  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“**x0020\_”\_** 。 例如，将“Column Name”指定为“Column_x0020_Name”。
 
 **SortByColumns**( *Table*, *ColumnName*, *SortOrderTable* )
 
@@ -67,14 +67,14 @@ ms.locfileid: "71992247"
 * *SortOrderTable* - 必需。  作为排序依据的单列表值。
   
     > [!NOTE]
-  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
+  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“**x0020\_”\_** 。 例如，将“Column Name”指定为“Column_x0020_Name”。
 
 ## <a name="examples"></a>示例
 在下面的示例中，我们将使用 **IceCream** [数据源](../working-with-data-sources.md)，其中包含下表中的数据：
 
 ![](media/function-sort/icecream.png)
 
-| 公式 | 描述 | 结果 |
+| 公式 | 说明 | 结果 |
 | --- | --- | --- |
 | **Sort( IceCream, Flavor )**<br><br>**SortByColumns( IceCream, "Flavor" )** |按 **Flavor** 列对 **IceCream** 进行排序。 由于 **Flavor** 列包含字符串，因此该表按字母顺序进行排序。 默认情况下，排序顺序为升序。 |<style> img { max-width: none; } </style> ![](media/function-sort/icecream-flavor.png) |
 | **Sort( IceCream, Quantity )**<br><br>**SortByColumns( IceCream, "Quantity" )** |按 **Quantity** 列对 **IceCream** 进行排序。  由于 **Quantity** 列包含数字，因此该表按数值大小进行排序。  默认情况下，排序顺序为升序。 |![](media/function-sort/icecream-quantity-asc.png) |
@@ -86,7 +86,7 @@ ms.locfileid: "71992247"
 ### <a name="step-by-step"></a>分步操作
 若要自行运行这些示例，请将 **IceCream** 数据源创建为[集合](../working-with-data-sources.md#collections)：
 
-1. 添加一个按钮，然后将其 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：<br>@no__t 0ClearCollect （IceCream，{口味："巧克力"，数量：100，OnOrder：150}，{口味："Vanilla"，数量：200，OnOrder：20}，{口味："草莓"，数量：300，OnOrder：0}，{口味："Mint 巧克力"，数量：60，OnOrder：100}，{口味："Pistachio"，数量：200，OnOrder：10}） **
+1. 添加一个按钮，然后将其 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：<br>**ClearCollect( IceCream, { Flavor: "Chocolate", Quantity: 100, OnOrder: 150 }, { Flavor:  "Vanilla", Quantity: 200, OnOrder: 20 }, { Flavor: "Strawberry", Quantity: 300, OnOrder: 0 }, { Flavor: "Mint Chocolate", Quantity: 60, OnOrder: 100 }, { Flavor: "Pistachio", Quantity: 200, OnOrder: 10 } )**
 2. 预览应用，选择按钮，然后按 Esc 返回到默认工作区。
 3. 选择“**文件**”菜单上的“**集合**”，调出刚刚创建的集合，然后按 Esc 返回到默认工作区。
 
