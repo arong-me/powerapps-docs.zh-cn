@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 99594d99aa0ab1ae4971f3ec2eb1987bb7dcfbcc
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c107e337733f771212359618c5761cb7a89d3177
+ms.sourcegitcommit: a7f2313a048d3b8a03516a2e4c349f3fb08f4a22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73539019"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74072542"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>将画布应用集成到网站和其他服务中
 如果你构建的应用程序可供用户进行工作，则这些应用程序通常最有用。 通过将画布应用嵌入 iframe，你可以将这些应用集成到网站和其他服务中，如 Power BI 或 SharePoint。
@@ -42,11 +42,11 @@ https://apps.powerapps.com/play/[AppID]?source=iframe
 ```
 
 > [!IMPORTANT]
-> 截至2019年8月，URI 格式已从 https://make.powerapps.com/webplayer 更改为 https://apps.powerapps.com/play 。 请更新任何嵌入的 iframe 以使用新的 URI 格式。 对以前格式的引用将重定向到新 URI 以确保兼容性。
+> 截至2019年8月，URI 格式已从 https://web.powerapps.com/webplayer 更改为 https://apps.powerapps.com/play 。 请更新任何嵌入的 iframe 以使用新的 URI 格式。 对以前格式的引用将重定向到新 URI 以确保兼容性。
 >
 > 先前格式：
 > 
-> https\://make.powerapps.com/webplayer/iframeapp？ source = iframe & appId =/providers/Microsoft.PowerApps/apps/[AppID]
+> https\://web.powerapps.com/webplayer/iframeapp？ source = iframe & appId =/providers/Microsoft.PowerApps/apps/[AppID]
 
 只需将 URI 中的 [AppID] 替换成应用 ID（包括 '[' & ']'）。 稍后，我们将介绍如何获取此值，而现在将先介绍 URI 中的所有参数：
 
@@ -54,7 +54,7 @@ https://apps.powerapps.com/play/[AppID]?source=iframe
 * **tenantid** -是支持来宾访问的可选参数，它确定要从哪个租户打开应用。 
 * **screenColor** - 用于为用户提供更好的应用加载体验。 此参数的格式为 [RGBA (red value, green value, blue value, alpha)](../canvas-apps/functions/function-colors.md)，用于控制应用加载时的屏幕颜色。 最好将此参数设置为与应用图标的颜色相同。
 * **source** - 虽然不影响应用，但建议添加描述性名称来指代嵌入来源。
-* 最后，可以使用 [Param() 函数](../canvas-apps/functions/function-param.md)添加所需的任何自定义参数，并且这些值可供应用使用。 这些参数添加到 URI 的末尾，如 `[AppID]&amp;param1=value1`。 这些参数在应用程序启动过程中是只读的。 如果需要更改它们，则必须重新启动该应用。 请注意，只有 [appid] 后的第一项应具有 "？";此后，使用 "&"，如此处所示。 
+* 最后，可以使用 [Param() 函数](../canvas-apps/functions/function-param.md)添加所需的任何自定义参数，并且这些值可供应用使用。 这些参数添加到 URI 的末尾，如 `[AppID]?source=iframe&param1=value1&param2=value2`。 这些参数在应用程序启动过程中是只读的。 如果需要更改它们，则必须重新启动该应用。 请注意，只有 [appid] 后的第一项应具有 "？";此后，使用 "&"，如此处所示。 
 
 ### <a name="get-the-app-id"></a>获取应用 ID
 可以在 powerapps.com 上获取应用 ID。 对于要嵌入的应用，请执行以下操作：
