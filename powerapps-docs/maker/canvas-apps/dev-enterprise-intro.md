@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ad4a55c2b86285434dd33fcd02e26d7e81f5a5d6
-ms.sourcegitcommit: 3c97d577ca7a2b5a91e8f9b6eb4ae23749b2c1b9
+ms.openlocfilehash: 824ce3d3767ada450d9590d9b14e539ce66cf4e7
+ms.sourcegitcommit: da16207fe9bf4e2382a9a25463b2ee8c3a680a3b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71198161"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74086492"
 ---
 # <a name="canvas-apps-for-enterprise-developers-partners-and-isvs"></a>适用于企业开发人员、合作伙伴和 ISV 的画布应用
 
@@ -30,18 +30,18 @@ ms.locfileid: "71198161"
 
 - **生成自定义连接器**：开发自定义连接器以连接到组织的数据和 web 服务。 [了解详细信息](https://docs.microsoft.com/connectors/custom-connectors/)
 
-- **生成 Azure Functions**：生成 Azure Functions，以使用自定义服务器端逻辑扩展应用。 [了解详细信息](https://docs.microsoft.com/azure/azure-functions/functions-powerapps-scenario)
+- **生成 Azure Functions**：生成 Azure Functions，以使用自定义服务器端逻辑扩展应用。 [了解详细信息](https://docs.microsoft.com/azure/azure-functions/app-service-export-api-to-powerapps-and-flow)
 
 - **嵌入应用**：通过将应用直接嵌入网站体验来创建集成解决方案，从而在组织成员工作时使用的工具中呈现应用。 [了解详细信息](embed-apps-dev.md)
 
-- **构建支持脱机的应用**：开发可脱机运行的应用，以便用户可以高效工作，无论是联机还是脱机。 [了解详细信息](offline-apps.md)
+- **生成可脱机运行的应用**：开发可脱机运行的应用，以便用户可以高效工作，无论是联机还是脱机。 [了解详细信息](offline-apps.md)
 
 ## <a name="canvas-apps-for-isvs-and-microsoft-partners"></a>适用于 Isv 和 Microsoft 合作伙伴的画布应用
 
 作为 Microsoft 合作伙伴或独立软件供应商 (ISV)，可通过扩展自己的产品来集成客户的数据和业务流程，从而加快客户采用产品的速度。
 
-- **生成并认证自定义连接器**：通过生成支持 PowerApps 与你的服务进行通信的连接器，将你的产品引入 Microsoft 云。 [了解详细信息](https://docs.microsoft.com/connectors/custom-connectors/submit-certification)
+- **生成并验证自定义连接器**：通过生成支持 PowerApps 与你的服务进行通信的连接器，将你的产品引入 Microsoft 云。 [了解详细信息](https://docs.microsoft.com/connectors/custom-connectors/submit-certification)
 
-- **在 AppSource 上列出你的解决方案**：使用 PowerApps 生成应用，并将应用发布到 AppSource 以供新客户体验，为你的企业带来新的潜在客户。 [了解详细信息](dev-appsource-test-drive.md)
+- **在 AppSource 上列出解决方案**：通过使用 PowerApps 生成应用，并将应用发布到 AppSource 以供新客户体验，为你的企业带来新的潜在客户。 [了解详细信息](dev-appsource-test-drive.md)
 
-- **立即开始免费试用**：免费注册 PowerApps 社区计划，并在专门的个人环境中开始生成应用。 [了解详细信息](../dev-community-plan.md)
+- **立即开始免费使用**：免费注册 PowerApps 社区计划，并在专门的个人环境中开始生成应用。 [了解详细信息](../dev-community-plan.md)
