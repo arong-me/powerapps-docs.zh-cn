@@ -15,19 +15,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 413201f34109e6022871667bd9773834904acbc2
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 9fbe02e0844e1e6f93880bbb43d473989cc88ad2
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61556059"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73900369"
 ---
 # <a name="use-model-driven-apps-in-powerapps"></a>在 PowerApps 中使用模型驱动的应用
 
-模型驱动的应用程序包含多个组件, 包括仪表板、窗体、视图、图表和业务流程, 它们共同有助于使应用易于使用。 本部分提供有关如何在模型驱动的应用中导航, 如何处理记录、导入/导出数据以及使用 Microsoft Flow 自动执行流程的信息。 
+模型驱动的应用程序包含多个组件，包括仪表板、窗体、视图、图表和业务流程，它们共同有助于使应用易于使用。 本部分提供有关如何在模型驱动的应用中导航，如何处理记录、导入/导出数据以及使用 Power 自动化自动执行流程的信息。 
 
 > [!IMPORTANT]
-> 由于 canvas 应用对用户体验提供了很多控制, 基本上可以是任何内容, 因此不会有很多关于如何*使用画布应用*的帮助文档。 如需有关使用画布应用的帮助，请联系你的应用创建者或 PowerApps 管理员。
+> 由于 canvas 应用对用户体验提供了很多控制，基本上可以是任何内容，因此不会有很多关于如何*使用画布应用*的帮助文档。 如需有关使用画布应用的帮助，请联系你的应用创建者或 PowerApps 管理员。
 
 ### <a name="related-topics"></a>相关主题
 

@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft Flow 自动执行模型驱动的应用中的流程 | MicrosoftDocs
+title: 使用 Power 自动化在模型驱动应用中自动执行流程 |MicrosoftDocs
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -15,39 +15,39 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0ecf255ab6e710bf65bd60e39b6dc9b8023876f6
-ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
+ms.openlocfilehash: 784a12d7ab9c525ee8bb9f68ed8fc2188433d103
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67457188"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73900381"
 ---
-# <a name="use-microsoft-flow-to-automate-processes"></a>使用 Microsoft Flow 自动执行流程
+# <a name="use-power-automate-to-automate-processes"></a>使用 Power 自动化实现流程自动化
 
-借助 Microsoft Flow，可以在你最喜爱的应用和服务之间自动执行流程。 在应用中，可以在一个或多个记录上运行流。 
+利用电源自动功能，你可以在你最喜爱的应用和服务之间创建自动化流程。 在应用中，可以在一个或多个记录上运行流。 
 
-另外，还可以从应用中打开 Microsoft Flow 以查看、编辑或创建新流。  详细信息：[开始使用 Microsoft Flow](https://docs.microsoft.com/flow/getting-started)
+此外，还可以从应用程序打开 "电源自动"，以查看、编辑或创建新流。  详细信息：[电源自动化入门](https://docs.microsoft.com/flow/getting-started)
 
 ## <a name="manage-your-flows"></a>管理流 
-从应用连接 Microsoft Flow 以管理流。
+从你的应用程序连接电源自动管理你的流。
   
 > [!NOTE]
-> 若要从应用中管理和运行 Microsoft Flow，必须在“系统设置”中为组织启用 Microsoft Flow。 详细信息：[组织中的流](https://docs.microsoft.com/flow/organization-q-and-a) 
+> 若要在你的应用程序中管理和运行自动功能，必须在系统设置中为你的组织启用电源自动执行。 详细信息：[组织中的流](https://docs.microsoft.com/flow/organization-q-and-a) 
   
-1. 在命令栏上, 选择 "**流**"。  
+1. 在命令栏上，选择 "**流**"。  
   
    > [!div class="mx-imgBorder"]
-   > ![Microsoft Flow 菜单](media/flow.png "Microsoft Flow 菜单") 
+   > ![电源自动菜单](media/flow.png "电源自动菜单") 
   
 2. 将显示以下选项：  
   
-   -   选择“创建流”可打开新浏览器选项卡并将你定位到 Microsoft Flow 网站。 在 Microsoft Flow 页上，选择“继续”可使用现有模板，选择”X”可关闭、选择流或创建其他流。  
+   -   选择 "**创建流**" 以打开新的浏览器选项卡，并将您定向到 "自动执行" 功能站点。 在 "电源自动运行" 页上，选择 "**继续**" 以使用现有模板或**X**关闭、选择或创建其他模板。  
   
-   -   选择“查看你的流”可打开新浏览器选项卡并将你定位到 Microsoft Flow 网站，将在此处显示流环境中的任何流。  
+   -   选择 "**查看你的流**" 以打开新的浏览器选项卡，并将你引导至自动执行流环境中的任何流的 "电源自动" 站点。  
   
-   -   选择“登录到流”可以连接到 Microsoft Flow，并显示可运行的流。 只有在当前未登录到 Microsoft Flow 的情况下才会显示此选项。   
+   -   选择 "**登录到流**" 以使用 "电源自动连接" 并显示要运行的可用流。 仅当你当前未登录到 "电源自动" 时，才会显示此项。   
 
-    若要了解如何创建流，请参阅[开始使用 Microsoft Flow ](https://docs.microsoft.com/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow)  
+    有关创建流的详细信息，请参阅[Power 自动执行入门](https://docs.microsoft.com/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow)  
     
  
     
