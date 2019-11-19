@@ -24,13 +24,13 @@ ms.locfileid: "73538930"
 
 为表、记录或值生成 JSON 文本字符串。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 **JSON**函数以文本的形式返回数据结构的 JAVASCRIPT 对象表示法（JSON）表示形式，以便它适合在网络中进行存储或传输。 [ECMA-404](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf)和[IETF RFC 8259](https://tools.ietf.org/html/rfc8259)介绍了 JavaScript 和其他编程语言广泛使用的格式。
 
 画布应用支持此表列出的[数据类型](data-types.md)以及有关其文本表示形式的详细信息：
 
-| 数据类型 | 描述 | 结果示例 |
+| 数据类型 | 说明 | 结果示例 |
 |-----------|-------------|---------|
 | **变量** | *true*或*false*。 | `true` |
 | 颜色 | 包含颜色的8位十六进制表示形式的字符串。 此表示形式采用的格式为 #*rrggbbaa*，其中*rr*为红色分量， *gg*为绿色， *bb*为蓝色， *aa*为 alpha 通道。 对于 alpha 通道， **00**是完全透明的，而**ff**是完全不透明的。 可以将字符串传递给[**ColorValue**](function-colors.md)函数。  | `"#102030ff"` |
@@ -40,16 +40,16 @@ ms.locfileid: "73538930"
 | **GUID.EMPTY** | 包含 GUID 值的字符串。 字母小写。 | `"751b58ac-380e-4a04-a925-9f375995cc40"`
 | **图像、媒体** | 如果指定了**IncludeBinaryData** ，则媒体文件将以字符串的形式进行编码。 不会修改使用 http：或 https： URL 方案的 Web 引用。 对内存中二进制数据的引用将用["data：*mimetype*; base64,..."](https://en.wikipedia.org/wiki/Data_URI_scheme)格式进行编码。 内存中数据包括用户使用[**照相机**](../controls/control-camera.md)控件捕获的图像，以及使用 appres：和 BLOB： URL 方案的任何其他引用。| `"data:image/jpeg;base64,/9j/4AA..."` |
 | **多种** | 对用户语言使用适当的小数点分隔符的数字。 如果需要，使用科学记数法。 | `1.345` |
-| **选项 &nbsp;set** | 选项集的数值，而不是用于显示的标签。 使用数值是因为它是独立于语言的。  | `1001` |
+| **选项&nbsp;集** | 选项集的数值，而不是用于显示的标签。 使用数值是因为它是独立于语言的。  | `1001` |
 | **阶段** | 包含 ISO 8601 *hh： mm： ss*格式的字符串。  | `"23:12:49.000"` |
 | **记录** | 以逗号分隔的列表，介于 **{** 和 **}** 之间，字段及其值之间。 此表示法类似于画布应用中的记录，但名称始终在双引号之间。 此格式不支持基于多对一关系的记录。  | `{ "First Name": "Fred", "Age": 21 }` |
 | **数据表** | 记录的以逗号分隔的列表，介于 **[** 和 **]** 之间。 此格式不支持基于一对多关系的表。  | `[ { "First Name": "Fred", "Age": 21 }, { "First Name": "Jean", "Age": 20 } ]` |
-| **两 &nbsp;option** | 这两个选项的布尔值（ *true*或*false*），而不是用于显示的标签。 使用布尔值，因为它是独立于语言的。 | `false` |
+| **两个&nbsp;选项** | 这两个选项的布尔值（ *true*或*false*），而不是用于显示的标签。 使用布尔值，因为它是独立于语言的。 | `false` |
 | **超链接、文本** | 双引号。 函数使用反斜杠转义嵌入的双引号，将换行符替换为 "\n"，并进行其他标准 JavaScript 替换。 | `"This is a string."` |
 
 指定可选的*格式*参数以控制结果的可读性，以及如何处理不受支持的和二进制数据类型。 默认情况下，输出尽可能简洁，无需空格或换行符，不允许使用不受支持的数据类型和二进制数据。 如果指定 **&** 运算符，则可以组合多种格式。
 
-| JSONFormat 枚举 | 描述 |
+| JSONFormat 枚举 | 说明 |
 |-----------------|-------------|
 | **Compact** | 默认值。  输出尽可能简洁，无添加空格或换行符。 |
 | **IndentFour** | 为提高可读性，输出包含每个列和嵌套级别的一个换行符，并为每个缩进级别使用四个空格。 |
@@ -95,7 +95,7 @@ ms.locfileid: "73538930"
     > [!div class="mx-imgBorder"]
     > ![CitiesByCountry 集合](media/function-json/cities-grouped.png)
 
-    你还可以通过以下方式显示此集合：选择 "**文件**" **"**  >  ** >   > "** "" "" "" "" "公式栏下的集合名称旁的向下箭头。
+    你还可以通过以下方式显示此集合：选择 "**文件**" **" > ** ** >  > "** "" "" "" " **" ""** "" "" "" "" "" "
 
     > [!div class="mx-imgBorder"]
     > 在公式栏的结果视图中 ![集合](media/function-json/cities-grouped-resultview.png)

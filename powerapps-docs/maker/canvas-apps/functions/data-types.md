@@ -26,7 +26,7 @@ ms.locfileid: "73540308"
 
 本文提供了有关画布应用支持的数据类型的详细信息。 当应用连接到外部数据源时，该源中的每个数据类型都将映射到画布应用的数据类型。
 
-| 数据类型 | 描述 | 示例 |
+| 数据类型 | 说明 | 示例 |
 |-----------|-------------|---------|
 | **变量** | *True*或*false*值。  如果没有比较，则可以直接在**If**、 **Filter**和其他函数中使用。  | *true* |
 | 颜色 | 颜色规范，包括 alpha 通道。 | **Color.Red**<br>**ColorValue （"#102030"）**<br>**RGBA （255，128，0，0.5）** |
@@ -34,9 +34,9 @@ ms.locfileid: "73540308"
 | **日期** | 不带时间的日期，采用应用用户的时区。 | **Date （2019，5，16）** |
 | **型** | 日期，时间为应用程序用户的时区。 | **DateTimeValue （"5 月16日 2019 1:23:09 PM"）** |
 | **GUID.EMPTY** | [全局唯一标识符](https://en.wikipedia.org/wiki/Universally_unique_identifier)。 | **GUID （）**<br>**GUID （"123e4567-e89b-12d3-a456-426655440000"）** |
-| **Hyperlink** | 包含超链接的文本字符串。 | **"https://powerapps.microsoft.com"** |
-| **图像** | 图像的[通用资源标识符（URI）](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)文本字符串，格式为 jpeg、.png、svg、.gif 或其他常见的 web 图像格式。 | 添加为应用资源的**MyImage**<br>**"https://northwindtraders.com/logo.jpg"**<br>**"appres://blobmanager/7b12ffa2 ..."** |
-| **媒体** | 视频或音频录制的 URI 文本字符串。 | 添加为应用资源的**MyVideo**<br>**"https://northwindtraders.com/intro.mp4"**<br>**"appres://blobmanager/3ba411c ..."** |
+| **Hyperlink** | 包含超链接的文本字符串。 | **https://powerapps.microsoft.com"** " |
+| **图像** | 图像的[通用资源标识符（URI）](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)文本字符串，格式为 jpeg、.png、svg、.gif 或其他常见的 web 图像格式。 | 添加为应用资源的**MyImage**<br>**https://northwindtraders.com/logo.jpg"** "<br>**"appres://blobmanager/7b12ffa2 ..."** |
+| **媒体** | 视频或音频录制的 URI 文本字符串。 | 添加为应用资源的**MyVideo**<br>**https://northwindtraders.com/intro.mp4"** "<br>**"appres://blobmanager/3ba411c ..."** |
 | **多种** | 浮点数。 | **123**<br>**-4.567**<br>**8.903e121** |
 | **选项集** | 从一组选项中选择，由数字支持。 此数据类型将可本地化的文本标签与数值组合在一起。 标签将出现在应用中，并存储数值并用于比较。 | **ThisItem. 对 orderstatus** |
 | **记录** | 数据值的记录。 此复合数据类型包含本主题中列出的其他数据类型的实例。 有关详细信息[，](../working-with-tables.md)请使用表。 | **{Company： "Northwind 商贸"，<br>人员：35，<br>非盈利： false}** |
@@ -92,7 +92,7 @@ ms.locfileid: "73540308"
 
 如果将 image 控件的**image**属性设置为相机控件的**Photo**属性，则可以在[**相机**](../controls/control-camera.md)控件中显示最近捕获的图像。 应用程序将图像保存在内存中，并且相机控件的**Photo**属性返回图像的 URI 引用。 例如，您可以拍摄一张照片，照相机的**照片**属性可能会返回 **"appres://blobmanager/7b12ffa2ea4547e5b3812cb1c7b0a2a0/1"** 。
 
-使用 URI 可以引用存储在数据库中的图像或其他媒体文件。 这样一来，应用就不会检索实际数据，直到实际需要。 例如，Common Data Service 实体中的附件可能会返回 **"appres://datasources/Contacts/table/..."** ，如相机示例中所示，可以通过将 image 控件的**image**属性设置为此引用来显示此图像，这检索二进制数据。
+使用 URI 可以引用存储在数据库中的图像或其他媒体文件。 这样一来，应用就不会检索实际数据，直到实际需要。 例如，Common Data Service 实体中的附件可能会返回 **"appres://datasources/Contacts/table/..."** ，如相机示例中所示，可以通过将图像控件的**image**属性设置为此引用来显示此图像，这将检索二进制数据。
 
 将媒体数据类型（如图像）保存到数据库时，应用程序将发送实际的图像或媒体数据，而不是 URI 引用。
 

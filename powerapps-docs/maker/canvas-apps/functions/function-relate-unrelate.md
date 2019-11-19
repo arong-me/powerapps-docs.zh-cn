@@ -24,7 +24,7 @@ ms.locfileid: "73537109"
 
 通过一对多或多对多关系对两个实体的记录进行关联和取消与。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 **关联**函数通过 Common Data Service 中的一对多或多对多关系来链接两个记录。 **取消与**函数将反转进程并删除链接。
 
@@ -201,7 +201,7 @@ ms.locfileid: "73537109"
 
     ![设置 Gallery2_1 的 Items 属性](media/function-relate-unrelate/reservations-lost.png)
 
-进行这些更改后，用户可以清除联系人的**combobox1.location**中的选定内容（如果此人未保留产品）。 未预订产品的联系人将显示在**Gallery2_1**中，用户可以在其中向产品分配每个联系人。
+进行这些更改后，用户可以清除联系人的**combobox1.location**中的选定内容（如果此人未保留产品）。 未预订产品的联系人将显示在**Gallery2_1** ，用户可在其中将每个联系人分配给产品。
 
    ![演示一对多应用中的关联和取消与函数](media/function-relate-unrelate/reservations-lostandfound.gif)
 
@@ -312,27 +312,27 @@ ms.locfileid: "73537109"
 
 1. 重复的**Screen1**。
 
-    该副本将命名为**Screen1_1** ，并构成从 contacts 端查看关系的基础。
+    该副本将命名为 " **Screen1_1** "，并构成从 "联系人" 端查看关系的基础。
 
     ![复制屏幕](media/function-relate-unrelate/contacts-duplicate.png)
 
 1. 若要创建反向视图，请在**Screen1_1**的控件上更改这些公式：
 
-    - Screen1_1. OnVisible = `Refresh( Contacts )`
-    - Gallery1_1 = `Contacts`
-    - Title1_1 = `ThisItem.'Full Name'`
-    - Label1_1 = `"Selected Contact Products"`
-    - Gallery2_1 = `Gallery1_1.Selected.Products`
-    - Title2_1 = `ThisItem.Name`
-    - Icon1_1. OnSelect = `Unrelate( Gallery1_1.Selected.Products, ThisItem )`
-    - ComboBox1_1 = `Products`
-    - Icon2_1. OnSelect = `Relate( Gallery1_1.Selected.Products, ComboBox1_1.Selected )`
+    - Screen1_1 OnVisible = `Refresh( Contacts )`
+    - Gallery1_1 Items = `Contacts`
+    - Title1_1。 Text = `ThisItem.'Full Name'`
+    - Label1_1。 Text = `"Selected Contact Products"`
+    - Gallery2_1 Items = `Gallery1_1.Selected.Products`
+    - Title2_1。 Text = `ThisItem.Name`
+    - Icon1_1 OnSelect = `Unrelate( Gallery1_1.Selected.Products, ThisItem )`
+    - ComboBox1_1 Items = `Products`
+    - Icon2_1 OnSelect = `Relate( Gallery1_1.Selected.Products, ComboBox1_1.Selected )`
 
     结果看起来非常类似于上一个屏幕，但会出现在与**联系人**端的关系上。
 
     ![显示从联系人开始的多对多关系](media/function-relate-unrelate/reverse-screen.png)
 
-1. **向下插入箭头**图标，并将其**OnSelect**属性设置为 **"导航" （Screen1，"无"）** 。  用公式**导航（Screen1_1，None）** 在**Screen1**上执行相同的操作。
+1. **向下插入箭头**图标，并将其**OnSelect**属性设置为 **"导航" （Screen1，"无"）** 。  用公式**导航（Screen1_1、无）** 对**Screen1**执行相同的操作。
 
     ![在屏幕之间添加导航](media/function-relate-unrelate/reverse-navigate.png)
 
