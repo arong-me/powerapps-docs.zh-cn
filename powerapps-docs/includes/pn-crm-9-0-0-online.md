@@ -1,1 +1,1 @@
-Dynamics 365（联机），版本 9.0
+Dynamics 365 (online) 版本 9.0
