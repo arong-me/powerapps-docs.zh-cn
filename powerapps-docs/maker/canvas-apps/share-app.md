@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fa86d8027775bc74178699a18371fc9e2cef2917
-ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
+ms.openlocfilehash: 2fdf5577f907e2beb7ead5eef3c4d7b06aeaa9c5
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73741303"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74177864"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>在 PowerApps 中共享画布应用
 
 生成满足业务需求的画布应用后，指定组织中哪些用户可以运行应用，哪些用户可以修改并重新共享应用。 按姓名指定每个用户或在 Azure Active Directory 中指定安全组。 如果每个人都可利用你的应用，则指定整个组织可以运行应用。
 
 > [!IMPORTANT]
-> 要使共享应用按预期运行，还必须管理应用所基于的数据源或源的权限，如[Common Data Service](#common-data-service)或[Excel](share-app-data.md)。 可能还需要共享应用依赖的[其他资源](share-app-resources.md)，例如流、网关或连接。
+> For a shared app to function as you expect, you must also manage permissions for the data source or sources on which the app is based, such as [Common Data Service](#common-data-service) or [Excel](share-app-data.md). 可能还需要共享应用依赖的[其他资源](share-app-resources.md)，例如流、网关或连接。
 
 ## <a name="prerequisites"></a>必备组件
 
@@ -41,200 +41,200 @@ ms.locfileid: "73741303"
 
     ![显示应用列表](./media/share-app/file-apps.png)
 
-1. 选择要共享的应用，方法是选择其图标。
+1. Select the app that you want to share by selecting its icon.
 
-    ![选择应用](./media/share-app/select-app.png)
+    ![Select an app](./media/share-app/select-app.png)
 
-1. 在横幅中选择 "**共享**"。
+1. In the banner, select **Share**.
 
     ![打开共享屏幕](./media/share-app/banner-share.png)
 
-1. 按名称或别名指定 Azure Active Directory 要与之共享应用的用户或安全组。
+1. Specify by name or alias the users or security groups in Azure Active Directory with which you want to share the app.
 
-    - 若要允许整个组织运行应用（但不修改或共享），请在 "共享" 面板中键入**Everyone** 。
-    - 如果项由分号分隔，则可以使用别名列表、友好名称或这些项的组合（例如， **Jane Doe &lt; jane.doe@contoso.com**）来共享应用。 如果有多个用户具有相同名称但具有不同的别名，则会将找到的第一个人员添加到列表。 如果名称或别名已经有权限或无法解析，则会出现工具提示。 
+    - To allow your entire organization to run the app (but not modify or share it), type **Everyone** in the sharing panel.
+    - You can share an app with a list of aliases, friendly names, or a combination of those (for example, **Jane Doe &lt;jane.doe@contoso.com** ) if the items are separated by semi-colons. If more than one person has the same name but different aliases, the first person found will be added to the list. A tooltip appears if a name or alias already has permission or can't be resolved. 
 
-    ![指定用户和共同所有者](./media/share-app/share-everyone.png)
-
-    > [!NOTE]
-    > 无法将应用与组织中的通讯组或用户或组共享到组织外部。
-
-1. 如果要允许与之共享应用的用户对其进行编辑和共享（除了运行该应用），请选中 "**共同所有者**" 复选框。
-
-    如果在[解决方案中创建了应用程序](add-app-solution.md)，则无法向该安全组授予**共同所有者**权限。
+    ![Specify users and co-owners](./media/share-app/share-everyone.png)
 
     > [!NOTE]
-    > 无论权限如何，都不能同时编辑应用。 如果一个人打开应用进行编辑，则其他人可以运行它，但不能对其进行编辑。
+    > You can't share an app with a distribution group in your organization or with a group outside your organization.
 
-1. 如果你的应用连接到用户需要其访问权限的数据，请指定这些数据。
+1. If you want to allow those with whom you're sharing the app to edit and share it (in addition to running it), select the **Co-owner** check box.
 
-    例如，你的应用可能会连接到 Common Data Service 数据库中的实体。 共享此类应用程序时，"共享" 面板会提示您管理该实体的安全性。
+    You can't grant **Co-owner** permission to a security group if you [created the app from within a solution](add-app-solution.md).
+
+    > [!NOTE]
+    > Regardless of permissions, no two people can edit an app at the same time. If one person opens the app for editing, other people can run it but not edit it.
+
+1. If your app connects to data for which users need access permissions, specify them.
+
+    For example, your app might connect to an entity in a Common Data Service database. When you share such an app, the sharing panel prompts you to manage security for that entity.
 
     > [!div class="mx-imgBorder"]
-    > ![分配安全角色](media/share-app/cds-assign-security-role.png)
+    > ![Assign a security role](media/share-app/cds-assign-security-role.png)
 
-    有关为实体管理安全的详细信息，请参阅本主题后面的[管理实体权限](share-app.md#manage-entity-permissions)。
+    For more information about managing security for an entity, see [Manage entity permissions](share-app.md#manage-entity-permissions) later in this topic.
 
-1. 若要帮助用户查找你的应用，请选中 "向**新用户发送电子邮件邀请**" 复选框。
+1. If you want to help people find your app, select the **Send an email invitation to new users** check box.
 
-1. 在 "共享" 面板的底部，选择 "**共享**"。
+1. At the bottom of the share panel, select **Share**.
 
-    共享应用的每个人都可以在浏览器中的移动设备上的 PowerApps Mobile 或 AppSource on [Dynamics 365](https://home.dynamics.com)上运行它。 共同所有者可在[PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)中编辑并共享应用。
+    Everyone with whom you shared the app can run it in PowerApps Mobile on a mobile device or in AppSource on [Dynamics 365](https://home.dynamics.com) in a browser. Co-owners can edit and share the app in [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
-    如果你发送了电子邮件邀请，则与你共享该应用程序的所有人都可以通过选择邀请中的链接来运行它。
+    If you sent an email invitation, everyone with whom you shared the app can run it by selecting a link in the invitation.
 
-    - 如果用户在移动设备上选择链接，该应用会在 PowerApps Mobile 中打开。
-    - 如果用户选择台式计算机上的链接，则会在浏览器中打开该应用。
+    - If a user selects the link on a mobile device, the app opens in PowerApps Mobile.
+    - If a user selects the link on a desktop computer, the app opens in a browser.
 
-    收到邀请的共同所有者会获得另一个链接，该链接打开应用程序以在 PowerApps Studio 中进行编辑。
+    Co-owners who receive an invitation get another link that opens the app for editing in PowerApps Studio.
 
-通过选择用户或安全组的名称，然后执行以下步骤之一，可以更改该用户或安全组的权限：
+You can change permissions for a user or a security group by selecting their name and then performing either of these steps:
 
-- 若要允许共同所有者运行应用，但不能再对其进行编辑或共享，请清除 "**共同所有者**" 复选框。
-- 若要停止与该用户或组共享应用，请选择 "删除（x）" 图标。
+- To allow co-owners to run the app but no longer edit or share it, clear the **Co-owner** check box.
+- To stop sharing the app with that user or group, select the Remove (x) icon.
 
 ## <a name="security-group-considerations"></a>安全组注意事项
 
 - 如果与某个安全组共享应用，则该组的现有成员和加入该组的任何人都将具有你为该组所指定的权限。 退出该组的任何人将失去该权限，除非他们属于有访问权限的其他组或你为他们提供个人身份的权限。
 
-- 每个安全组成员都具有与整个组相同的应用权限。 但是，可以为该组的一个或多个成员指定更高的权限，以允许他们具有更高的访问级别。 例如，你可以授予安全组运行应用程序的权限，但你也可以为属于该组的用户 B 授予 "**共同所有者**" 权限。 安全组中的每个成员都可以运行该应用，但是只有用户 B 可以编辑它。 如果向安全组授予**共同所有者**权限和用户 B 运行应用程序的权限，则该用户仍可以编辑该应用程序。
+- 每个安全组成员都具有与整个组相同的应用权限。 但是，可以为该组的一个或多个成员指定更高的权限，以允许他们具有更高的访问级别。 For example, you can give Security Group A permission to run an app, but you can also give User B, who belongs to that group, **Co-owner** permission. 安全组中的每个成员都可以运行该应用，但是只有用户 B 可以编辑它。 If you give Security Group A **Co-owner** permission and User B permission to run the app, that user can still edit the app.
 
 ## <a name="manage-entity-permissions"></a>管理实体权限
 
 ### <a name="common-data-service"></a>Common Data Service
 
-如果创建基于 Common Data Service 的应用，则还必须确保共享该应用的用户对该应用所依赖的一个或哪些实体具有适当的权限。 具体而言，这些用户必须属于一个安全角色，该安全角色可以执行创建、读取、写入和删除相关记录等任务。 在许多情况下，你需要创建一个或多个自定义安全角色，该角色具有用户运行该应用程序所需的确切权限。 然后，可以根据需要向每个用户分配一个角色。
+If you create an app based on Common Data Service, you must also ensure that the users with whom you share the app have the appropriate permissions for the entity or entities on which the app relies. Specifically, those users must belong to a security role that can perform tasks such as creating, reading, writing, and deleting relevant records. In many cases, you'll want to create one or more custom security roles with the exact permissions that users need to run the app. You can then assign a role to each user as appropriate.
 
 > [!NOTE]
-> 在撰写本文时，可以将安全角色分配给 Azure Active Directory 中的单个用户和安全组，但不能分配给 Office 组。
+> As of this writing, you can assign security roles to individual users and security groups in Azure Active Directory but not to Office groups.
 
 #### <a name="prerequisite"></a>先决条件
 
-若要分配角色，您必须对 Common Data Service 数据库具有**系统管理员**权限。
+To assign a role, you must have **System administrator** permissions for a Common Data Service database.
 
-#### <a name="assign-a-security-group-in-azure-ad-to-a-role"></a>将 Azure AD 中的安全组分配给角色
+#### <a name="assign-a-security-group-in-azure-ad-to-a-role"></a>Assign a security group in Azure AD to a role
 
-1. 在 "共享" 面板中，选择 "**数据权限**" 下**的 "分配安全角色**"。
+1. In the sharing panel, select **Assign a security role** under **Data permissions**.
 
-1. 在 Common Data Service 中选择要分配给用户的角色或角色，或要与之共享应用的 Azure AD 中的安全组。
+1. Select the role or roles in Common Data Service that you want to assign to the user or the security group in Azure AD with which you want to share the app.
      > [!div class="mx-imgBorder"] 
-     > ![安全角色列表](media/share-app/cds-assign-security-role-list.png "安全角色列表")
+     > ![Security role list](media/share-app/cds-assign-security-role-list.png "Security role list")
 
 ### <a name="common-data-service-previous-version"></a>Common Data Service（上一版本）
 
-当您共享基于 Common Data Service 的旧版本的应用程序时，您必须对该服务单独共享运行时权限。 如果你没有执行此操作的权限，请参阅你的环境管理员。
+When you share an app that's based on an older version of Common Data Service, you must share the runtime permission to the service separately. If you don’t have permission to do this, see your environment administrator.
 
-## <a name="share-with-guests"></a>与来宾共享
+## <a name="share-with-guests"></a>Share with guests
  
-PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享。 这使得邀请外部业务合作伙伴、承包商和第三方能够运行公司的画布应用。 
+PowerApps canvas apps can be shared with guest users of an Azure Active Directory tenant. This enables inviting external business partners, contractors, and third parties to run your company’s canvas apps. 
 
 > [!NOTE]
-> 只能为与他们共享的应用分配**用户**角色，而不能为其分配**共同所有者**角色。
+> Guests may only be assigned the **User** role, and not the **Co-owner** role, for apps shared with them.
 
 ### <a name="prerequisites"></a>必备组件
-- 在 Azure Active Directory （Azure AD）中，为租户启用 B2B 外部协作。 详细信息：[启用 B2B 外部协作并管理可以邀请来宾的人员](/azure/active-directory/b2b/delegate-invitations)
-    - 默认情况下启用 B2B 外部协作。 但是，租户管理员可以更改这些设置。 有关 Azure AD B2B 的详细信息，请参阅[什么是来宾用户在 AZURE AD B2B 中的访问权限？](/azure/active-directory/b2b/what-is-b2b)  
-- 对可将来宾用户添加到 Azure AD 租户的帐户的访问权限。 具有来宾邀请者角色的管理员和用户可以将来宾添加到租户。   
-- 来宾用户必须通过以下租户之一分配 PowerApps 许可证：
-    - 托管要共享的应用的租户。
-    - 来宾用户的主租户。
+- In Azure Active Directory (Azure AD), enable B2B external collaboration for the tenant. More information: [Enable B2B external collaboration and manage who can invite guests](/azure/active-directory/b2b/delegate-invitations)
+    - Enable B2B external collaboration is on by default. However, the settings can be changed by a tenant admin.  For more information about Azure AD B2B, see [What is guest user access in Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)  
+- Access to an account that can add guest users to an Azure AD tenant. Admins and users with the Guest Inviter role can add guests to a tenant.   
+- The guest user must have a license with Power Apps use rights that matches the capability of the app assigned through one of the following tenants:
+    - The tenant hosting the app being shared.
+    - The home tenant of the guest user.
 
-### <a name="steps-to-grant-guest-access"></a>授权来宾访问的步骤
-1. 选择 "**新来宾用户**"，在 Azure AD 中添加来宾用户。 详细信息：[快速入门：在 Azure AD 中添加新的来宾用户](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)。
+### <a name="steps-to-grant-guest-access"></a>Steps to grant guest access
+1. Select **New guest user** to add guest users in Azure AD. More information: [Quickstart: Add a new guest user in Azure AD](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
     > [!div class="mx-imgBorder"] 
-    > ![在 Azure AD 中添加来宾](media/share-app/guest_access_doc_1.png "在 Azure AD 中添加来宾")
-2. 如果来宾用户在其主租户中没有许可证，则为来宾用户分配许可证。
-   - 若要从 admin.microsoft.com 分配来宾用户，请参阅向[一个用户分配许可证](/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
-   - 若要从 portal.azure.com 分配来宾用户，请参阅[分配或删除许可证](/azure/active-directory/fundamentals/license-users-groups)。
+    > ![Add guest in Azure AD](media/share-app/guest_access_doc_1.png "Add guest in Azure AD")
+2. If the guest user doesn't already have a license in their home tenant, assign a license to the guest user.
+   - To assign guest users from admin.microsoft.com, see [Assign licenses to one user](/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+   - To assign guest users from portal.azure.com, see [Assign or remove licenses](/azure/active-directory/fundamentals/license-users-groups).
  
    > [!IMPORTANT]
-   > 可能需要禁用 Microsoft 365 管理中心预览才能将许可证分配给来宾。 
+   > You may need to disable the Microsoft 365 admin center preview to assign a license to a guest. 
 
-3. 共享画布应用。 
-    1. 登录到 https://make.powerapps.com  
-    2. 单击 "**应用**"，选择一个画布应用，然后在命令栏上选择 "**共享**"。 
-    3. 输入 Azure AD 租户的来宾用户的电子邮件地址。 详细信息：[什么是来宾用户在 AZURE AD B2B 中的访问权限？](/azure/active-directory/b2b/what-is-b2b)
+3. Share the canvas app. 
+    1. Sign in to https://make.powerapps.com  
+    2. Go to **Apps**, select a canvas app, and then on the command bar select **Share**. 
+    3. Enter an email address for a guest user from an Azure AD tenant. More information: [What is guest user access in Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)
           > [!div class="mx-imgBorder"] 
-          > ![与来宾共享](media/share-app/guest_access_doc_2.png "与来宾共享")
+          > ![Share with guest](media/share-app/guest_access_doc_2.png "Share with guest")
  
-共享应用以进行来宾访问后，来宾可以通过在共享过程中发送给他们的电子邮件发现和访问与他们共享的应用。
+After you share an app for guest access, guests can discover and access apps shared with them from the email sent to them as part of sharing.
 
 > [!div class="mx-imgBorder"]  
-> ![来宾接收应用共享电子邮件](media/share-app/guest_access_doc_4.png "来宾接收应用共享电子邮件")
+> ![Guests receive app share email](media/share-app/guest_access_doc_4.png "Guests receive app share email")
 
 ### <a name="frequently-asked-questions"></a>常见问题
 
-#### <a name="whats-the-difference-between-canvas-app-guest-access-and-powerapps-portals"></a>Canvas 应用来宾访问和 PowerApps 门户之间的区别是什么？ 
-画布应用支持构建一个应用，用于对业务流程进行数字化处理，而无需以传统编程语言（例如C#）编写代码。 对于画布应用的来宾访问，使由不同组织参与共同业务流程的人员团队能够访问与各种 Microsoft 和第三方源集成的相同应用资源。 详细信息： [canvas 的应用连接器概述](/powerapps/maker/canvas-apps/connections-list)。
+#### <a name="whats-the-difference-between-canvas-app-guest-access-and-powerapps-portals"></a>What’s the difference between canvas app guest access and PowerApps Portals? 
+Canvas apps enable building an app, tailored to digitizing a business processes, without writing code in a traditional programming language such as C#. Guest access for canvas apps enables teams of individuals made up of different organizations participating in a common business process to access the same app resources that may be integrated with a wide variety of Microsoft and third-party sources. More information: [Overview of canvas-app connectors for PowerApps](/powerapps/maker/canvas-apps/connections-list).
 
-[PowerApps 门户](/powerapps/maker/portals/overview) provide 能够构建低代码的响应式网站，使外部用户能够与 Common Data Service 中存储的数据进行交互。 它允许组织创建可通过匿名方式或通过其所选的登录提供者（如 LinkedIn、Microsoft 帐户或其他商业登录提供商）与组织外部的用户共享的网站。 
+[PowerApps Portals](/powerapps/maker/portals/overview) provide the ability to build low-code, responsive websites that allow external users to interact with the data stored in Common Data Service. It allows organizations to create websites that can be shared with users external to their organization either anonymously or through the login provider of their choice, such as LinkedIn, Microsoft Account, or other commercial login providers. 
 
-下表概述了 PowerApps 门户和画布应用之间的一些核心功能差异。  
+The following table outlines a few core capability differences between PowerApps Portals and canvas apps.  
 
-| | 界面 | 身份验证 | 可访问的数据源 |
+| | 界面 | 身份验证 | Accessible data sources |
 |------|--------|----------|-------------------|
-| PowerApps 门户 | 仅浏览器体验 | 允许匿名访问和经过身份验证的访问 | Common Data Service |
-| 画布应用 | 浏览器和移动应用 | 需要通过 Azure AD 进行身份验证 | 任何 ~ 150 的现成连接器和任何自定义连接器  |
+| PowerApps Portals | Browser only experience | Allows anonymous and authenticated access | Common Data Service |
+| 画布应用 | Browser and mobile apps | Requires authentication via Azure AD | Any ~150 out-of-box connectors and any custom connector  |
 ||
 
-#### <a name="can-guests-access-customized-forms-in-sharepoint"></a>来宾是否可以访问 SharePoint 中的自定义表单？
-可以。 可以使用自定义窗体访问 SharePoint 列表的任何用户都可以使用窗体创建和编辑列表中的项，而无需使用 PowerApps 许可证。
+#### <a name="can-guests-access-customized-forms-in-sharepoint"></a>Can guests access customized forms in SharePoint?
+可以。 Any user that can access a SharePoint list with a customized form can create and edit items in the list, using the form, without any Power Apps license.
 
-#### <a name="can-guests-access-apps-embedded-in-sharepoint"></a>来宾是否可以访问嵌入在 SharePoint 中的应用？ 
-可以。 但是，访问画布独立应用需要 PowerApps 许可证，包括嵌入的应用。 通过 Microsoft PowerApps 嵌入控件在 SharePoint 中嵌入画布应用时，请输入应用 id。为此，请在 "**应用程序 web 链接" 或 "ID** " 框中输入应用 ID。 
-
-> [!div class="mx-imgBorder"]  
-> ![在 SharePoint 中为来宾嵌入画布应用](media/share-app/guest_access_doc_5.PNG "在 SharePoint 中为来宾嵌入画布应用")
-
-通过 iFrame HTML 标记在 SharePoint 中嵌入画布应用时，请使用完整 web URL 引用应用。 若要查找 URL，请参阅 "https://make.powerapps.com"，选择应用，选择 "**详细信息**" 选项卡，URL 将显示在 " **Web 链接**" 下。
+#### <a name="can-guests-access-apps-embedded-in-sharepoint"></a>Can guests access apps embedded in SharePoint? 
+可以。 Though, access to canvas standalone apps require a license with Power Apps use rights that matches the capability of the app, including apps that are embedded. When embedding a canvas app in SharePoint via the Microsoft PowerApps embed control, enter the app id. To do this, enter the app ID in the **App web link or ID** box. 
 
 > [!div class="mx-imgBorder"]  
-> ![画布应用详细信息](media/share-app/guest_access_doc_6.PNG "画布应用详细信息")
+> ![Embed canvas app in SharePoint for guests](media/share-app/guest_access_doc_5.PNG "Embed canvas app in SharePoint for guests")
 
-#### <a name="how-come-guests-can-launch-the-app-shared-with-them-but-connections-fail-to-be-created"></a>来宾如何启动与他们共享的应用程序，但无法创建连接？
-与非来宾一样，应用访问的基础数据源还必须可供来宾访问。
+When embedding a canvas app in SharePoint via the iFrame HTML tag, reference the app using the full web URL. To find the URL, go to https://make.powerapps.com, select an app, select the **Details** tab, and the URL is displayed under **Web link**.
 
-#### <a name="what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them"></a>必须将哪些许可证分配给来宾，才能运行与他们共享的应用？
-运行应用程序所需的与非来宾相同的许可证。 例如，如果应用使用高级 connecters，则必须将每个应用计划的 PowerApps 或 PowerApps 每个用户计划分配给来宾。  
+> [!div class="mx-imgBorder"]  
+> ![Canvas app details](media/share-app/guest_access_doc_6.PNG "Canvas app details")
 
-|                                 | SharePoint 自定义窗体 | 使用非高级连接器的独立画布应用 | 使用高级连接器的独立画布应用 | 模型驱动应用 |
+#### <a name="how-come-guests-can-launch-the-app-shared-with-them-but-connections-fail-to-be-created"></a>How come guests can launch the app shared with them but connections fail to be created?
+As with non-guests, the underlying data source(s) accessed by the app must also be made accessible to the guest.
+
+#### <a name="what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them"></a>What license must be assigned to my guest so they can run an app shared with them?
+The same license that’s required for non-guests to run an app. For instance, if the app uses premium connecters then a PowerApps Per App Plan or a PowerApps Per User Plan must be assigned to the guest.  
+
+|                                 | SharePoint customized form | Standalone canvas app using non-premium connectors | Standalone canvas app using premium connectors | Model driven app |
 |---------------------------------|----------------------------|----------------------------------------------------|------------------------------------------------|------------------|
-| SharePoint 用户（无 PA 许可证） | x                          |                                                    |                                                |                  |
-| PowerApps 包括 w/Office    | x                          | x                                                  |                                                |                  |
-| PowerApps 每个应用计划          | x                          | x                                                  | x                                              | x                |
-| PowerApps 每用户计划         | x                          | x                                                  | x                                              | x                |
+| SharePoint user (no PA license) | x                          |                                                    |                                                |                  |
+| Power Apps Included w/ Office    | x                          | x                                                  |                                                |                  |
+| Power Apps Per App Plan          | x                          | x                                                  | x                                              | x                |
+| Power Apps Per User Plan         | x                          | x                                                  | x                                              | x                |
 
 
-#### <a name="in-powerapps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>在 PowerApps Mobile 中，来宾如何查看其 home 租户的应用？
-访问了移动设备上的移动设备上 Azure AD 发布的画布应用的任何用户都必须注销 PowerApps，并重新登录到 PowerApps Mobile。  
+#### <a name="in-powerapps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>In PowerApps Mobile, how does a guest see apps for their home tenant?
+Any user that has accessed an canvas app, on their mobile device, that’s published in an Azure AD tenant that isn’t their home tenant must sign-out of PowerApps and sign back in to PowerApps Mobile.  
 
-#### <a name="must-a-guest-accept-the-azure-ad-guest-invitation-prior-to-sharing-an-app-with-the-guest"></a>在与来宾共享应用之前，来宾是否必须接受 Azure AD 来宾邀请？
-不。 如果来宾在接受来宾邀请之前启动与他们共享的应用程序，则在启动应用程序时，会提示来宾接受邀请作为登录体验的一部分。  
+#### <a name="must-a-guest-accept-the-azure-ad-guest-invitation-prior-to-sharing-an-app-with-the-guest"></a>Must a guest accept the Azure AD guest invitation prior to sharing an app with the guest?
+不。 If a guest launches an app shared with them prior to accepting a guest invitation the guest will be prompted to accept the invitation as part of the sign-in experience while launching the app.  
 
-#### <a name="what-azure-ad-tenant-are-connections-for-a-guest-user-created-in"></a>哪个 Azure AD 租户是在中创建的来宾用户的连接？
-应用的连接始终在应用关联的 Azure AD 租户的上下文中进行。 例如，如果在 Contoso 租户中创建了一个应用，则会在 Contoso 租户的上下文中建立 Contoso 内部用户和来宾用户的连接。
+#### <a name="what-azure-ad-tenant-are-connections-for-a-guest-user-created-in"></a>What Azure AD tenant are connections for a guest user created in?
+Connections for an app are always made in the context of the Azure AD tenant the app is associated. For instance, if an app is created in the Contoso tenant then connections made for Contoso internal and guest users are made in the context of the Contoso tenant.
 
-#### <a name="can-guests-use-microsoft-graph-via-microsoft-security-graph-connector-or-a-custom-connector-using-microsoft-graph-apis"></a>来宾可以使用 Microsoft Graph 通过 Microsoft 安全图形连接器还是使用 Microsoft Graph Api 的自定义连接器？
-不需要，Azure AD 来宾无法查询 Microsoft Graph 来检索他们是来宾的租户的信息。
+#### <a name="can-guests-use-microsoft-graph-via-microsoft-security-graph-connector-or-a-custom-connector-using-microsoft-graph-apis"></a>Can guests use Microsoft Graph via Microsoft Security Graph connector or a custom connector using Microsoft Graph APIs?
+No, Azure AD guests can't query Microsoft Graph to retrieve information for a tenant in which they’re a guest.
 
-#### <a name="what-intune-policies-apply-to-guests-using-my-powerapps"></a>哪些 InTune 策略适用于使用我的 PowerApps 的来宾？
-InTune 仅应用用户的主租户的策略。 例如，如果 Alice@Contoso.com 与 Vikram@Fabrikam.com 共享应用，则 InTune 将继续在 Virkam 的设备上应用 Fabrikam.com 策略，而不考虑他运行的 PowerApps。
+#### <a name="what-intune-policies-apply-to-guests-using-my-powerapps"></a>What InTune policies apply to guests using my PowerApps?
+InTune only applies policies of a user’s home tenant. For instance, if Alice@Contoso.com shares an app with Vikram@Fabrikam.com, InTune continues to apply Fabrikam.com policies on Virkam’s device regardless of the PowerApps he runs.
 
-#### <a name="what-connectors-support-guest-access"></a>哪些连接器支持来宾访问？
-不执行任何类型的 Azure AD 身份验证的所有连接器都支持来宾访问。 下表列举了所有执行 Azure AD 身份验证的连接器，以及哪些连接器当前支持来宾访问。 其中的许多都将更新为最新版本。
+#### <a name="what-connectors-support-guest-access"></a>What connectors support guest access?
+All connectors that do not perform Azure AD authentication of any type supports guest access. The following table enumerates all connectors that perform Azure AD authentication and which connectors currently support guest access. Many of these will be updated leading up to general availability.
 
-| **Connector**                                     | **支持来宾访问**                                              |
+| **Connector**                                     | **Supports guest access**                                              |
 |---------------------------------------------------|------------------------------------------------------------------------|
 | 10to8 预约计划                      | 否                                                                     |
 | Adobe Creative Cloud                              | 否                                                                     |
 | Adobe 登录                                        | 否                                                                     |
 | Asana                                             | 否                                                                     |
-| AtBot 管理员                                       | 否                                                                     |
-| AtBot 逻辑                                       | 否                                                                     |
+| AtBot Admin                                       | 否                                                                     |
+| AtBot Logic                                       | 否                                                                     |
 | Azure AD                                          | 是                                                                    |
 | Azure 自动化                                  | 是                                                                    |
-| Azure 容器实例                          | 是                                                                    |
-| Azure 数据工厂                                | 是                                                                    |
+| Azure Container Instance                          | 是                                                                    |
+| Azure Data Factory                                | 是                                                                    |
 | Azure Data Lake                                   | 是                                                                    |
 | Azure DevOps                                      | 否                                                                     |
 | Azure 事件网格                                  | 否                                                                     |
@@ -248,25 +248,25 @@ InTune 仅应用用户的主租户的策略。 例如，如果 Alice@Contoso.com
 | Bitly                                             | 否                                                                     |
 | bttn                                              | 否                                                                     |
 | 缓冲区                                            | 否                                                                     |
-| 业务中心                                  | 否                                                                     |
+| Business Central                                  | 否                                                                     |
 | CandidateZip                                      | 否                                                                     |
 | Capsule CRM                                       | 否                                                                     |
-| 云 PKI 管理                              | 否                                                                     |
+| Cloud PKI Management                              | 否                                                                     |
 | Cognito Forms                                     | 否                                                                     |
 | Common Data Service                               | 否                                                                     |
-| Common Data Service （旧版）                      | 否                                                                     |
-| D & B 优化器                                     | 否                                                                     |
+| Common Data Service (Legacy)                      | 否                                                                     |
+| D&B Optimizer                                     | 否                                                                     |
 | Derdack SIGNL4                                    | 否                                                                     |
 | Disqus                                            | 否                                                                     |
-| 文档合并                                    | 否                                                                     |
+| Document Merge                                    | 否                                                                     |
 | Dynamics 365                                      | 否                                                                     |
-| 用于销售的 Dynamics 365 AI                         | 是                                                                    |
-| 适用于 Fin & Ops 的 Dynamics 365                        | 否                                                                     |
+| Dynamics 365 AI for Sales                         | 是                                                                    |
+| Dynamics 365 for Fin & Ops                        | 否                                                                     |
 | Enadoc                                            | 否                                                                     |
 | Eventbrite                                        | 否                                                                     |
-| Excel Online （Business）                           | 否                                                                     |
-| Excel Online （OneDrive）                           | 否                                                                     |
-| 过期提醒                               | 否                                                                     |
+| Excel Online (Business)                           | 否                                                                     |
+| Excel Online (OneDrive)                           | 否                                                                     |
+| Expiration Reminder                               | 否                                                                     |
 | FreshBooks                                        | 否                                                                     |
 | GoToMeeting                                       | 否                                                                     |
 | GoToTraining                                      | 否                                                                     |
@@ -279,17 +279,17 @@ InTune 仅应用用户的主租户的策略。 例如，如果 Alice@Contoso.com
 | JotForm                                           | 否                                                                     |
 | kintone                                           | 否                                                                     |
 | LinkedIn                                          | 否                                                                     |
-| 营销内容中心                             | 否                                                                     |
+| Marketing Content Hub                             | 否                                                                     |
 | 中型                                            | 否                                                                     |
 | Metatask                                          | 否                                                                     |
 | Microsoft Forms                                   | 否                                                                     |
 | Microsoft Forms Pro                               | 否                                                                     |
-| Microsoft Graph 安全性                          | 否                                                                     |
+| Microsoft Graph Security                          | 否                                                                     |
 | Microsoft Kaizala                                 | 否                                                                     |
-| Microsoft 学校数据同步                        | 否                                                                     |
+| Microsoft School Data Sync                        | 否                                                                     |
 | Microsoft StaffHub                                | 否                                                                     |
 | Microsoft Teams                                   | 是                                                                    |
-| Microsoft 待办事项（商业）                        | 否                                                                     |
+| Microsoft To-Do (Business)                        | 否                                                                     |
 | Muhimbi PDF                                       | 否                                                                     |
 | NetDocuments                                      | 否                                                                     |
 | Office 365 组                                 | 是                                                                    |
@@ -304,11 +304,11 @@ InTune 仅应用用户的主租户的策略。 例如，如果 Alice@Contoso.com
 | Outlook.com                                       | 否                                                                     |
 | Paylocity                                         | 否                                                                     |
 | Planner                                           | 否                                                                     |
-| Plumsail 窗体                                    | 否                                                                     |
+| Plumsail Forms                                    | 否                                                                     |
 | Power BI                                          | 是                                                                    |
 | Project Online                                    | 否                                                                     |
-| ProjectWise 设计集成                    | 否                                                                     |
-| Projectwise 共享                                 | 否                                                                     |
+| ProjectWise Design Integration                    | 否                                                                     |
+| Projectwise Share                                 | 否                                                                     |
 | SharePoint                                        | 是                                                                    |
 | SignNow                                           | 否                                                                     |
 | Skype for Business Online                         | 否                                                                     |
@@ -319,6 +319,6 @@ InTune 仅应用用户的主租户的策略。 例如，如果 Alice@Contoso.com
 | Toodledo                                          | 否                                                                     |
 | Typeform                                          | 否                                                                     |
 | Vimeo                                             | 否                                                                     |
-| Webex 团队                                       | 否                                                                     |
-| Windows Defender 高级威胁防护（ATP） | 否                                                                     |
-| Word Online （商业）                            | 否                                                                     |
+| Webex Teams                                       | 否                                                                     |
+| Windows Defender Advanced Threat Protection (ATP) | 否                                                                     |
+| Word Online (Business)                            | 否                                                                     |
