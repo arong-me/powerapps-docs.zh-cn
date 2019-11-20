@@ -11,7 +11,7 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 59ed66842874414737b7bdc04f0f4dfa51d212c8
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73542854"
@@ -62,7 +62,7 @@ ms.locfileid: "73542854"
 | 错误消息         | 重写当尝试加载便笺列表时出现错误时显示的消息。                                                                     |
 | 拒绝访问消息 | 覆盖当用户没有足够的权限来查看便笺列表时显示的消息。                                                    |
 | 空消息         | 当当前实体没有可查看的注释时，将重写显示的消息。                                                              |
-| 列出订单           | 允许您设置便笺的显示顺序。 "列出订单" 设置允许您设置以下各项： <ul><li>属性：要按其进行排序的列的逻辑名称</li><li>Alias：查询中属性的别名</li><li>方向：升序（从小到大，或从1到上），或降序（从大到小，或从最后到第一）。</li></ul> ![设置列表顺序的属性](media/set-attributes-list-orders.png "Set list orders 属性)若要添加排序规则，请选择 "列" （4）并填写详细信息。 将按顺序从列表顶部按顺序处理列出订单，其优先级最高。|
+| 列出订单           | 允许您设置便笺的显示顺序。 "列出订单" 设置允许您设置以下各项： <ul><li>属性：要按其进行排序的列的逻辑名称</li><li>Alias：查询中属性的别名</li><li>方向键升序（从小到大，或从1到上），或降序（从大到小，或从上到第一）。</li></ul> ![设置列表顺序的属性](media/set-attributes-list-orders.png "Set list orders 属性)若要添加排序规则，请选择 "列" （4）并填写详细信息。 将按顺序从列表顶部按顺序处理列出订单，其优先级最高。|
 ||
 
 
