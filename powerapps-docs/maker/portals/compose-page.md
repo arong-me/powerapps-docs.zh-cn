@@ -11,7 +11,7 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 0bedeae7952f5ec11394b680064af9016ae2b82e
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73542909"
@@ -338,7 +338,7 @@ ms.locfileid: "73542909"
 若要在画布上查看组件的源，请选择该组件，然后选择 "源代码编辑器" 图标&lt;页脚中 **/&gt;** 。
 
 > [!div class=mx-imgBorder]
-> !["代码编辑器" 图标](media/code-editor-icon.png ""代码编辑器" 图标")  
+> !["代码编辑器" 图标](media/code-editor-icon.png "代码编辑器 图标")  
 
 源代码显示在屏幕底部的 "**代码编辑器**" 窗格中。 你之前所做的更改会在源代码中更新。 若要进行更改，请更新源代码，然后选择 "**保存**"。 更改将反映在画布上。
 
