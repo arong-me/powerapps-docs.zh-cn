@@ -10,7 +10,7 @@
   
  **[!INCLUDE[pn_customerinsight_full](pn-customer-insights-full.md)]**  
   
- [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)]（在 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 中运行的一项服务）存储 [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 数据，包括有关客户的个人身份信息，以便针对“关系分析”功能计算输出。 [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)] 的预览版受这些[预览功能补充使用条款](http://go.microsoft.com/fwlink/p/?LinkId=511446)的约束。  
+ [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)]（在 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 中运行的一项服务）存储 [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 数据，包括有关客户的个人身份信息，以便针对“关系分析”功能计算输出。 [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)] 的预览版受这些[预览功能补充使用条款](https://go.microsoft.com/fwlink/p/?LinkId=511446)的约束。  
   
  [详细了解 Customer Insights 的预览版](https://azure.microsoft.com/services/customer-insights/)。  
   

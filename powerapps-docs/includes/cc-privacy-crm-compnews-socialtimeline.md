@@ -1,9 +1,1 @@
----
-ms.openlocfilehash: 574ba1628094ef94d23bafedeb87017e54b3102a
-ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67213241"
----
-当启用公司新闻和社交时间线解决方案时，帐户记录的名称、地址和行业字段中的客户数据将被发送到必应（一个使用者服务）。 因此，发送给必应的客户数据将受到 [Microsoft 隐私和 Cookie](http://go.microsoft.com/fwlink/p/?LinkID=521839) 的约束。 安装此解决方案即表示你同意将此有限的一组数据发送到必应服务。 发送给必应的数据将从贵公司的信息中剥离，并将出于诊断目的被存储起来。 请注意，可以随时卸载解决方案以停止使用此功能。
+当您启用公司新闻和社交时间线解决方案时，客户记录的名称、地址和行业字段中的客户数据将发送到必应（一项使用者服务）。 因此，发送到必应的客户数据将受 [Microsoft 隐私和 Cookie](https://go.microsoft.com/fwlink/p/?LinkID=521839) 的约束。 一旦安装此解决方案，即表示您同意向必应服务发送此有限数据集。 发送到必应的数据将被去掉您公司的信息并存储起来以便用于诊断。 请注意，您可随时卸载此解决方案来中止此功能的使用。

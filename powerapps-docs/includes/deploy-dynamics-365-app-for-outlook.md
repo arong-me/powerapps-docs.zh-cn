@@ -1,27 +1,33 @@
 ---
 title: 部署 Dynamics 365 App for Outlook | MicrosoftDocs
 ms.custom: ''
-ms.date: '2017-04-20'
+ms.date: 2017-04-20
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 09736e14-e744-48ca-a755-1b05bb55340e
 caps.latest.revision: 39
 author: jimholtz
 ms.author: jimholtz
 manager: brycho
+ms.openlocfilehash: 2df69eb2823726116ca08e893acf384afffdd957
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754111"
 ---
 # <a name="deploy-dynamics-365-app-for-outlook"></a>部署 Dynamics 365 App for Outlook
-用户在桌面、Web 或平板电脑中使用 [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] 时，可以通过 [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] 体验 [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] 的强大功能。 例如，查看有关电子邮件或约会收件人的信息，或者将 [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] 电子邮件或约会链接到 [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] 记录，如商机、客户或案例。 若要了解 [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] 提供的产品/服务的详细信息，请参阅 [Dynamics 365 App for Outlook 用户指南](http://go.microsoft.com/fwlink/p/?LinkID=613099)。  
+用户在桌面、Web 或平板电脑中使用 [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] 时，可以通过 [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] 体验 [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] 的强大功能。 例如，查看有关电子邮件或约会收件人的信息，或者将 [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] 电子邮件或约会链接到 [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] 记录，如商机、客户或案例。 若要了解 [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] 提供的产品/服务的详细信息，请参阅 [Dynamics 365 App for Outlook 用户指南](https://go.microsoft.com/fwlink/p/?LinkID=613099)。  
   
 > [!IMPORTANT]
->  [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] 与 [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] 不一样。 从 [!INCLUDE[pn_crm_8_2_0_both](../includes/pn-crm-8-2-0-both.md)] 开始，[!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] 搭配 [!INCLUDE[cc_server_side_synch](../includes/cc-server-side-synch.md)] 是首选的 [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] 与 [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] 集成方法。 **请注意，当 [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] 和 [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] 由同一用户同时使用时不支持跟踪活动。** 有关 [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] 加载项的信息，请参阅 [Dynamics 365 for Outlook 用户指南](http://go.microsoft.com/fwlink/p/?LinkID=524751)。  
+>  [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] 与 [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] 不一样。 从 [!INCLUDE[pn_crm_8_2_0_both](../includes/pn-crm-8-2-0-both.md)] 开始，[!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] 搭配 [!INCLUDE[cc_server_side_synch](../includes/cc-server-side-synch.md)] 是首选的 [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] 与 [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] 集成方法。 **请注意，当 [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] 和 [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] 由同一用户同时使用时不支持跟踪活动。** 有关 [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] 加载项的信息，请参阅 [Dynamics 365 for Outlook 用户指南](https://go.microsoft.com/fwlink/p/?LinkID=524751)。  
 >   
->  [委派用户](https://support.office.com/article/Allow-someone-else-to-manage-your-mail-and-calendar-9684B670-7588-4EEA-8717-9E5799047540)无法使用 [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] 跟踪电子邮件。 建议为委派用户使用[文件夹级别的跟踪或自动跟踪](https://www.microsoft.com/en-us/dynamics/crm-customer-center/overview-of-tracking-records-in-dynamics-365-for-outlook.aspx)。  
+>  [委派用户](https://support.office.com/article/Allow-someone-else-to-manage-your-mail-and-calendar-9684B670-7588-4EEA-8717-9E5799047540)无法使用 [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] 跟踪电子邮件。 建议为委派用户使用[文件夹级别的跟踪或自动跟踪](https://www.microsoft.com/dynamics/crm-customer-center/overview-of-tracking-records-in-dynamics-365-for-outlook.aspx)。  
   
 <a name="BKMK_Compare"></a>   
 ## <a name="comparing-dynamics-365-app-for-outlook-with-dynamics-365-for-outlook"></a>比较 Dynamics 365 App for Outlook 和 Dynamics 365 for Outlook  
@@ -157,7 +163,7 @@ manager: brycho
 ### <a name="supported-clients-per-feature"></a>每项功能支持的客户端  
  支持的 [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] 功能取决于您运行的客户端。 下表汇总了 [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] 和 [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] 的每个客户端/配置支持的功能。  
   
- ![各 Dynamics 365 App for Outlook 功能支持的客户端](media/clients-supported-for-each-dynamics-365-app-for-outlook-feature.png "各 Dynamics 365 App for Outlook 功能支持的客户端")  
+ ![支持各项 Dynamics 365 App for Outlook 功能的客户端](media/clients-supported-for-each-dynamics-365-app-for-outlook-feature.png "支持各项 Dynamics 365 App for Outlook 功能的客户端")  
   
  (1)  [!INCLUDE[pn_outlook_web_app](../includes/pn-outlook-web-app.md)] 支持 [!INCLUDE[pn_IE_10](../includes/pn-ie-10.md)]、[!INCLUDE[pn_ie_11](../includes/pn-ie-11.md)]、[!INCLUDE[pn_microsoft_edge](../includes/pn-microsoft-edge.md)]、[!INCLUDE[tn_Safari](../includes/tn-safari.md)] 9、[!INCLUDE[tn_Safari](../includes/tn-safari.md)] 10、[!INCLUDE[tn_Firefox](../includes/tn-firefox.md)] 和 [!INCLUDE[tn_chrome](../includes/tn-chrome.md)]。  
   
@@ -226,12 +232,12 @@ manager: brycho
   
 #### <a name="to-have-users-install-the-app-themselves"></a>让用户自行安装应用程序  
   
-1.  用户单击**设置**按钮 ![设置按钮](media/mp-ua-r16-settings.png "设置按钮")，然后单击 **Dynamics 365 应用**。  
+1.  用户单击**设置**按钮 ![设置按钮](media/mp-ua-r16-settings.png "设置按钮")，然后单击 **Dynamics 365 应用程序**。  
   
 2.  在 **Dynamics 365 应用程序**屏幕中，在 **[!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)]** 下面，用户单击**将应用程序添加到 [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)]**。  
   
 > [!NOTE]
->  如果需要，用户还可以自行禁用或删除加载项。 有关详细信息，请参阅 [Dynamics 365 App for Outlook 用户指南](http://go.microsoft.com/fwlink/p/?LinkID=613099)。  
+>  如果需要，用户还可以自行禁用或删除加载项。 有关详细信息，请参阅 [Dynamics 365 App for Outlook 用户指南](https://go.microsoft.com/fwlink/p/?LinkID=613099)。  
   
 <a name="BKMK_DeployOnprem"></a>   
 ## <a name="to-deploy-to-dynamics-365-on-premises-users"></a>部署到 Dynamics 365 本地用户  
@@ -246,13 +252,13 @@ manager: brycho
  如果您或您的用户安装 [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] 时遇到困难，可能是因为他们的 [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] 邮箱当前链接到其他 [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] 组织。 [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] 邮箱（电子邮件地址）只能同步一个组织的约会、联系人和任务，并且属于该组织的用户只能用 [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] 邮箱同步约会、联系人和任务。  如果要更改主要同步组织，可以覆盖 [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] 中存储的设置。 有关更多信息，请参阅[此知识库文章。](https://support.microsoft.com/en-gb/help/3211627/incomingemailrejected-error-when-attempting-to-install-dynamics-365-app-for-outlook)  
   
 <a name="BKMK_Explore"></a>   
-## <a name="explore-the-users-guide-and-train-your-users"></a>浏览用户指南和培训用户  
- 如要了解如何使用 [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)]，[请参阅 Dynamics 365 App for Outlook 用户指南](http://go.microsoft.com/fwlink/p/?LinkID=613099)。  
+## <a name="explore-the-users-guide-and-train-your-users"></a>浏览用户指南并培训用户  
+ 如要了解如何使用 [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)]，[请参阅 Dynamics 365 App for Outlook 用户指南](https://go.microsoft.com/fwlink/p/?LinkID=613099)。  
   
- ![Dynamics 365 App for Outlook 用户指南页](media/dynamics-365-app-for-outlook-user-s-guide-page.png "Dynamics 365 App for Outlook 用户指南页")  
+ ![Dynamics 365 App for Outlook 用户指南页面](media/dynamics-365-app-for-outlook-user-s-guide-page.png "Dynamics 365 App for Outlook 用户指南页面")  
   
 ## <a name="see-also"></a>另请参阅  
- [Dynamics 365 App for Outlook 用户指南](http://go.microsoft.com/fwlink/p/?LinkID=613099)   
+ [Dynamics 365 App for Outlook 用户指南](https://go.microsoft.com/fwlink/p/?LinkID=613099)   
  [阅读此博客中有关支持的客户端的更多详细信息：Dynamics 365 App for Outlook 支持矩阵](https://blogs.msdn.microsoft.com/crm/2016/12/13/dynamics-365-app-for-outlook-support-matrix/)   
  [设置电子邮件、约会、联系人和任务的服务器端同步](../Topic/Set%20up%20server-side%20synchronization%20of%20email,%20appointments,%20contacts,%20and%20tasks.md)   
  [添加用户、许可证和安全角色](https://msdn.microsoft.com/23612155-f92d-4871-a109-186419d5c19d)   
