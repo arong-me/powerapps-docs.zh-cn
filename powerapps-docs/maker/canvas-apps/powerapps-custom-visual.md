@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 09/23/2019
+ms.date: 11/20/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 54d8ac3d347c0f60f82fdd73949eb2fd8545519c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 422cbc151b6ee5c4adfd295800bf9747519132cf
+ms.sourcegitcommit: 6c91c6dae20437f263e4eb827c6b938d6aa1b6a5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541479"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74262096"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>适用于 Power BI 的 PowerApps 自定义视觉对象
 
@@ -92,9 +92,11 @@ PowerApps 自定义视觉对象有以下限制：
 |Microsoft Edge|&check;|&check;|&check;
 |Internet Explorer 11|&check;
 |Google Chrome|&check;|&check;|&check;
-|免费|&check;
+|Safari \*|&check;
 |Mozilla Firefox
 |所有其他浏览器
+
+在 Safari 中 \*，你必须启用跨站点跟踪（**首选项** > **隐私**，并清除**阻止跨站点跟踪**）以查看 PowerApps 自定义视觉对象。
 
 ## <a name="accessibility-support"></a>辅助功能支持
 

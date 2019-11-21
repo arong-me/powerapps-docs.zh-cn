@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 08/28/2017
+ms.date: 11/19/2019
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 907ac3cf53709edd5a8b523479ec99816c6eec9c
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 1fda14b7117334290c67d4d5727d93484ded7471
+ms.sourcegitcommit: 6c91c6dae20437f263e4eb827c6b938d6aa1b6a5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73897837"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74261958"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>PowerApps 画布应用连接器概述
 数据是大多数应用（包括在 PowerApps 中生成的应用）的关键所在。 数据存储在数据源中，应用是通过创建的连接来连接数据。 连接使用特定的连接器与数据源进行通信。 PowerApps 提供连接器，适用于许多常用服务和本地数据源，包括 SharePoint、SQL Server、Office 365、Salesforce 和 Twitter。 若要开始向画布应用添加数据，请参阅[在 PowerApps 中添加数据连接](add-data-connection.md)。
@@ -66,11 +66,15 @@ ms.locfileid: "73897837"
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 | --- | --- | --- | --- | --- |
-| ![Common Data Service](./media/connections-list/cdm.png) |[**Common Data Service**](../common-data-service/data-platform-intro.md) |&nbsp; |![Office 365 Outlook](./media/connections-list/office365.png) |[**Office 365 Outlook**](connections/connection-office365-outlook.md) |
-| ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; |![Excel](./media/connections-list/excel.png) |[**Excel**](connections/connection-excel.md) |
-| ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) |&nbsp; |![OneDrive for Business](./media/connections-list/onedrive.png) |[**OneDrive for Business**](connections/cloud-storage-blob-connections.md) |
-| ![Dynamics 365](./media/connections-list/dynamics-365.png) |[**Dynamics 365**](connections/connection-dynamics-crmonline.md) |&nbsp; |![OneDrive](./media/connections-list/onedrive.png) |[**OneDrive**](connections/cloud-storage-blob-connections.md) |
-| ![Office 365 用户](./media/connections-list/office365.png) |[**Office 365 用户**](connections/connection-office365-users.md) |&nbsp; |![Dropbox](./media/connections-list/dropbox.png) |[**Dropbox**](connections/cloud-storage-blob-connections.md) |
+| ![Common Data Service](./media/connections-list/cdm.png) |[**Common Data Service**](connections/connection-common-data-service.md) |&nbsp; |![云存储](./media/connections-list/onedrive.png) |[**云存储**](connections/cloud-storage-blob-connections.md) ** |
+| ![Dynamics 365](./media/connections-list/dynamics-365.png) |[**Dynamics 365**](connections/connection-dynamics-crmonline.md) |&nbsp; | ![Dynamics AX](./media/connections-list/dynamics-ax.png) |[**Dynamics AX**](connections/connection-dynamicsax.md) |
+|![Excel](./media/connections-list/excel.png) |[**Excel**](connections/connection-excel.md) |&nbsp; |![Microsoft Translator](./media/connections-list/microsoft-translator.png) |[**Microsoft Translator**](connections/connection-microsoft-translator.md) |
+|![Office 365 Outlook](./media/connections-list/office365.png) |[**Office 365 Outlook**](connections/connection-office365-outlook.md) |&nbsp; | ![Office 365 用户](./media/connections-list/office365.png) |[**Office 365 用户**](connections/connection-office365-users.md) |
+| ![Oracle](./media/connections-list/oracle-icon.png) |[**联手**](connections/connection-oracledb.md) |&nbsp; | ![Power BI](./media/connections-list/powerbi.png) |[**Power BI**](connections/connection-powerbi.md) |
+| ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
+|![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md)
+
+\* * 适用于 Azure Blob、Box、Dropbox、Google Drive、OneDrive 和 OneDrive for business
 
 ## <a name="standard-and-custom-connectors"></a>标准和自定义连接器
 PowerApps 为多个常用数据源（如上面列出的数据源）提供标准连接器。 如果 PowerApps 的标准连接器适用于要使用的数据源的类型，则应使用该连接器。 如果要连接到其他类型的数据源（如已构建的服务），请参阅[注册和使用自定义连接器](../canvas-apps/register-custom-api.md)。
