@@ -1,5 +1,5 @@
 ---
-title: 在模型驱动的应用中搜索记录 |MicrosoftDocs
+title: Search for records in model-driven apps| MicrosoftDocs
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -15,188 +15,191 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 26903543232025f43f935a403800ed27170e3123
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 18440a61eb4224c751824eaa62386615a8ad6165
+ms.sourcegitcommit: 6c91c6dae20437f263e4eb827c6b938d6aa1b6a5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71940997"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74262126"
 ---
-# <a name="search-for-records-in-an-app"></a>在应用中搜索记录
+# <a name="search-for-records-in-an-app"></a>Search for records in an app
 
-可以通过在 Common Data Service 中使用相关性搜索或分类搜索来搜索多个实体中的记录。 
+You can search for records across multiple entities by using Relevance search or Categorized search in Common Data Service. 
 
-- 相关性搜索跨多个实体、按相关性排序的单个列表提供快速、全面的结果。 它使用 Common Data Service 的外部专用搜索服务（由 [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)]提供支持）以提高搜索性能。 
-- 分类搜索返回按实体类型（例如帐户、联系人或潜在顾客）分组的搜索结果。
+- Relevance search delivers fast and comprehensive results across multiple entities, in a single list, sorted by relevance. It uses a dedicated search service external to Common Data Service (powered by [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)]) to boost search performance. 
+- Categorized search returns search results grouped by entity types, such as accounts, contacts or leads.
 
-通常，分类搜索是默认的搜索选项。 但是，如果你的组织启用了相关性搜索，则它将成为默认搜索体验。  
+Normally, Categorized search is the default search option. However, if Relevance search is enabled by your organization, it becomes the default search experience.  
+  
+## <a name="quick-find-entity-specific-quick-find-or-multi-entity-categorized-search"></a>Quick Find (entity-specific Quick Find or multi-entity Categorized Search) 
 
-若要仅查找一种类型的记录，可以使用实体网格中的 "快速查找" 视图。
-  
-## <a name="normal-quick-find-categorized-search"></a>普通快速查找（分类搜索） 
+To find records of one type only, you can use the Quick Find View in the entity's grid.
 
-通过已分类，可以搜索以特定单词开头或使用通配符的记录。
+With Categorized Search (also called multi-entity quick find), you can search records that begin with a specific word or use a wildcard.
   
-- **开头为**：结果包含以特定单词开头的记录。 例如，如果要在搜索框中搜索 "Alpine 滑雪房子"，请在 "搜索" 框中键入**alp** ;如果键入**ski**，则记录将不会显示。  
+- **Begins with**: Results include records that begin with a specific word. For example, if you want to search for “Alpine Ski House,” type **alp** in the search box; if you type **ski**, the record won’t show up.  
   
-- **通配符**：例如，* ski 或 * ski\*。 
-  
-## <a name="relevance-search"></a>相关性搜索
-  
-  除了已熟悉的其他 Common Data Service 搜索以外，还提供了相关性搜索。 如果启用了相关性搜索，你可以继续在实体网格或多实体快速查找（称为分类搜索）上使用单实体快速查找。 为了获得更全面、更快速的结果，我们建议使用关联性搜索。  
+- **Wildcard**: For example, *ski or *ski\*. 
 
- 相关性搜索提供了以下增强功能和优点：  
+  > [!NOTE]
+  >  Using a wildcard at the beginning of your Quick Find (single or multi-entity) search query may result in slower performance.
   
-- 通过外部索引和 [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] 搜索技术提高性能。  
+## <a name="relevance-search"></a>Relevance search
   
-- 查找实体中任何字段的搜索项中的任何词的匹配项。 匹配可以包括**流**、**流式处理**或**流式**处理等变形词。  
-  
-- 返回按相关性排序的单个列表中所有可搜索实体的结果，这取决于文本中匹配的单词数或它们之间的邻近性等因素。  
-  
-- 突出显示结果列表中的匹配项。  
+  Relevance Search is available in addition to other Common Data Service searches you are already familiar with. You can continue using single-entity Quick Find on the entity grid or Multi-Entity Quick Find (called Categorized Search, if you have Relevance Search enabled). For more comprehensive and faster results, we recommend using Relevance Search.  
 
-- 你将在存储在 Common Data Service 中的文档中找到文本的搜索结果，其中包括备注、电子邮件附件或约会中的文本。 搜索支持以下文件格式： PDF、Microsoft Office 文档、HTML、XML、ZIP、.EML、纯文本和 JSON。  
+ Relevance Search brings the following enhancements and benefits:  
   
-- 您可以搜索与您共享的记录以及您拥有的记录。  
+- Improves performance with external indexing and [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] search technology.  
+  
+- Finds matches to any word in the search term in any field in the entity. Matches can include inflectional words like **stream**, **streaming**, or **streamed**.  
+  
+- Returns results from all searchable entities in a single list sorted by relevance, based on factors like number of words matched or their proximity to each other in the text.  
+  
+- Highlights matches in the result list.  
+
+- You'll find search results for text in a document that is stored in Common Data Service, including text in notes, email attachments, or appointments. The following file formats are supported for search: PDF, Microsoft Office documents, HTML, XML, ZIP, EML, plain text, and JSON.  
+  
+- You can search for records that are shared with you and records that you own.  
   
   > [!NOTE]
-  >  不支持分层的安全模型。  即使您在 Common Data Service 中看到一行，因为您可以通过分层安全性来访问它，否则不会在相关性搜索中看到结果。  
+  >  Hierarchical security models aren't supported.  Even if you see a row in Common Data Service because you have access to it through hierarchical security, you won't see the result in Relevance Search.  
   
-- 还可以搜索选项集和查找。 例如，假设你想要查找名称中包含**药品**的零售商店帐户。 当你搜索**制药零售**时，你会发现结果，因为它是一个可搜索的选项集。  
+- You can also search for option sets  and lookups. For example, let's say you want to find a retail store account that has **Pharmaceuticals** in the name. When you search for **Pharmaceutical Retail**, you'll find the result because there's a match to the Industry field, which is a searchable option set.  
   
-  由于你的结果可能包括实体的混合，因此你可以通过在 "**筛选器**" 下拉列表中选择一个实体，将搜索结果缩小到特定实体。 当你按特定的记录类型进行筛选时，你可以在搜索结果中包括与所选记录相关的活动和说明。 为此，请选中 "**筛选器**" 下拉列表右侧的 "**搜索所选记录的活动和说明**" 复选框。 在 "**筛选器**" 下拉列表中选择某一记录后，将选中该复选框。如果未在 "**筛选目标**" 列表中选择实体，则会将其清除。 活动和说明作为顶级结果返回。
+  Because your results might include a mix of entities, you can narrow your search results to a specific entity by selecting an entity in the **Filter with** drop-down list. When you filter on a specific record type, you can include activities and notes related to the selected record in your search results. To do that, select the **Search activities and notes for selected records** check box to the right of the **Filter with** drop-down list. The check box is selected after you select a record in the **Filter with** drop-down list; it is cleared if you didn't select an entity in the **Filter with** list. The activities and notes are returned as top-level results.
   
   > [!NOTE]
-  > - 默认情况下禁用相关性搜索。 管理员需要为组织启用该帐户。 启用了相关性搜索后，你可能需要等待一小时或更长时间，具体取决于你的组织的规模，在开始查看应用的相关性搜索结果之前。 对于索引数据的较小更改，最长可能需要15分钟才能显示在你的系统中。
-  > - 启用关联性搜索后，组织中的所有用户都可以使用它。  
-  > - 相关性搜索基于文本，并且只能在类型为 "单行文本"、"多行文本"、"选项集" 或 "查找" 的字段中搜索。 它不支持在数字或日期数据类型的字段中进行搜索。 
+  > - Relevance Search is disabled by default. Your administrator needs to enable it for the organization. After Relevance Search is enabled, you might have to wait up to an hour or more, depending on the size of your organization, before you start seeing Relevance Search results for your apps. Smaller changes in indexed data can take up to 15 minutes to show up in your system.
+  > - Enabling Relevance Search allows all users in the organization to use it.  
+  > - Relevance search is text-based, and can search only on fields of type Single Line of Text, Multiple Lines of Text, Option Sets, or Lookups. It doesn't support searching in fields of Numeric or Date data type. 
   
- 尽管相关性搜索可找到实体中任何字段的搜索项中的任何词的匹配项，但在 "快速查找"&mdash;中，即使启用了全文搜索&mdash;搜索词中的所有单词都必须在一个字段中找到。  
+ Although Relevance Search finds matches to any word in the search term in any field in an entity, in Quick Find&mdash;even with full-text search enabled&mdash;all words from the search term must be found in one field.  
   
- 在 "相关性搜索" 中，匹配越好，结果中显示的位置越高。 如果搜索词中的更多单词彼此接近，则匹配项的相关性会更高。 找到搜索词的文本量越小，相关性越高。 例如，如果您在公司名称和地址中查找搜索词，则它可能比在大文章中找到的相同词的匹配项可能更好。 由于结果是在单个列表中返回的，因此，您可以看到一条接一个地显示一条记录，如帐户、机会、潜在顾客等。 突出显示列表中匹配的单词。  
+ In Relevance Search, the better the match, the higher it appears in the results. A match has a higher relevancy if more words from the search term are found in close proximity to each other. The smaller the amount of text where the search words are found, the higher the relevancy. For example, if you find the search words in a company name and address, it might be a better match than the same words found in a large article, far apart from each other. Because the results are returned in a single list, you can see a mix of records displayed one after another, such as accounts, opportunities, leads, and so on. The matched words in the list are highlighted.  
   
- 在搜索词中使用语法可获取所需的结果。 例如，键入 "**汽车银 2-门**"，以在搜索结果中包含搜索词中任何字的匹配项。 键入**car + 白银 +2-门**，仅查找包含全部三个词的匹配项。 键入 **"&#124;汽车&#124;银 2-门**" 以获取包含**汽车**、**银色**或**2 门**或全部三个单词的结果。 有关可在搜索查询中使用的语法的详细信息： [Azure 搜索中的简单查询语法](https://docs.microsoft.com/rest/api/searchservice/simple-query-syntax-in-azure-search)
+ Use syntax in your search term to get the results you want. For example, type **car silver 2-door** to include matches for any word in the search term in the search results. Type **car+silver+2-door** to find only matches that include all three words. Type **car&#124;silver&#124;2-door** to  get results that contain **car** or **silver** or **2-door**, or all three words. More information about syntax you can use in your search queries: [Simple query syntax in Azure Search](https://docs.microsoft.com/rest/api/searchservice/simple-query-syntax-in-azure-search)
 
 
 > [!NOTE]
-> 如果搜索词与应用中的字词匹配，则会看到 "命中" 突出显示。 搜索结果中的突出显示内容显示为粗体和斜体文本。 这通常作为字段的完整值的一部分返回，因为只突出显示匹配的字词。 
+> You'll see hit highlights when your search term matches a term in your app. The hit highlights appear as bold and italicized text in your search results. These are often returned as a portion of the full value in a field because only the matched terms are highlighted. 
   
   
 <a name=" #BKMK_DefaultOption "></a>
-## <a name="switch-between-relevance-and-categorized-search"></a>在相关性和已分类搜索之间切换
+## <a name="switch-between-relevance-and-categorized-search"></a>Switch between Relevance and Categorized search
 
-如果你的组织启用了两个搜索选项（相关性和已分类的搜索），则可以在两者之间切换。
+If your organization has turned on both search options (Relevance and Categorized search), then you can switch between the two.
 
-1. 若要在搜索类型之间切换，请在导航栏上选择 "**搜索**" 按钮。
+1. To switch between search types, on the navigation bar, select the **Search** button.
 
-2. 在左侧，选择下拉菜单以在**相关性搜索**或**分类搜索**之间切换。
+2. On the left, select the drop-down menu to switch between **Relevance Search** or **Categorized Search**.
 
    > [!div class="mx-imgBorder"]
-   > ![在相关性和已分类搜索之间切换](media/switch-search.png "在相关性和已分类搜索之间切换") 
+   > ![Switch between Relevance and Categorized search](media/switch-search.png "Switch between Relevance and Categorized search") 
     
-### <a name="set-a-default-experience"></a>设置默认体验
+### <a name="set-a-default-experience"></a>Set a default experience
 
-如果你的组织已打开这两个搜索选项，则可以在你的个人设置中选择默认的搜索体验。
+If your organization has turned on both search options then you can select a default search experience in your personal settings.
 
-1. 在页面的右上角，选择 "**设置**"，然后选择 "**个性化设置**"。  
+1. In the upper-right corner of the page, select **Settings** and then select **Personalization Settings**.  
   
    > [!div class="mx-imgBorder"]
-   > ![选择默认搜索体验](media/relevance-search-personal-settings.png "选择默认搜索体验")  
+   > ![Select default search experience](media/relevance-search-personal-settings.png "Select default search experience")  
 
-2. 在 "**常规**" 选项卡上的 "**选择默认的搜索体验**" 部分中，对于**默认的搜索体验**，选择你的默认体验。 
+2. On the **General** tab, in the **Select the default search experience** section, for the **Default Search Experience**, select your default experience. 
 
    > [!div class="mx-imgBorder"]
-   > ![选择默认搜索体验](media/default.png "选择默认搜索体验")  
+   > ![Select default search experience](media/default.png "Select default search experience")  
  
 
 
-## <a name="start-a-search"></a>开始搜索 
+## <a name="start-a-search"></a>Start a search 
  
-1.  从顶部导航栏中选择 "**搜索**" 按钮。  
+1.  From the top nav bar, select the **Search** button.  
   
-2.  在搜索框中键入搜索词，然后选择 "**搜索**" 按钮。   
+2.  Type your search words in the search box and then select **Search** button.   
 
     > [!div class="mx-imgBorder"]
-    > ![搜索选项](media/search-option.png "搜索选项")  
+    > ![Search option](media/search-option.png "Search option")  
   
-## <a name="filter-categorized-search-results"></a>筛选分类的搜索结果 
+## <a name="filter-categorized-search-results"></a>Filter Categorized Search results 
   
--   若要按一种记录类型筛选结果，请在 "搜索" 屏幕上，从 "**筛选器方式：** " 下拉框中选择一种记录类型。  
+-   To filter results by one record type, on the search screen, choose a record type from the **Filter with:** drop-down box.  
   
--   若要搜索所有记录类型，请在 "**筛选条件：** " 下拉框中选择 "**无**"。  
+-   To search against all record types, choose **None** in the **Filter with:** drop-down box.  
 
     > [!div class="mx-imgBorder"]
-    > ![筛选搜索](media/filter-search.png "筛选搜索")  
+    > ![Filter Search](media/filter-search.png "Filter Search")  
 
-## <a name="filter-records-with-facets-works-with-relevance-search"></a>使用方面筛选记录（与相关性搜索一起使用）  
- 使用 Common Data Service，现在可以通过使用 facet 和筛选器来改进搜索结果。 可在左窗格中使用方面。 执行搜索后，可以立即在四个公共字段中使用以下全局 facet：  
+## <a name="filter-records-with-facets-works-with-relevance-search"></a>Filter records with facets (works with Relevance Search)  
+ With Common Data Service, you can now refine your search results by using facets and filters. Facets are available in the left pane. Immediately after you perform a search, the following global facets are available for four common fields:  
   
--   记录类型  
+-   Record Type  
   
 -   Owner  
   
--   创建于  
+-   Created On  
   
--   修改时间  
+-   Modified On  
   
-### <a name="record-type-facets"></a>记录类型方面  
- 若要将搜索结果缩小到特定实体，请在 "**记录类型**" 部分下选择实体。  
+### <a name="record-type-facets"></a>Record Type facets  
+ To narrow your search results to a specific entity, select the entity under the **Record Type** section.  
  
   > [!div class="mx-imgBorder"]
-  > ![用于缩小搜索结果范围的记录类型方面](media/relevance-search-record-type-facet.png "用于缩小搜索结果范围的记录类型方面")  
+  > ![Record Type facet to narrow the search results](media/relevance-search-record-type-facet.png "Record Type facet used to narrow search results")  
   
- 当你按特定的记录类型进行筛选时，你可以在搜索结果中包括与所选记录相关的活动和说明。 为此，请选中 "**相关说明 & 活动**" 复选框。 活动和说明将显示在顶级结果中。  
+ When you filter on a specific record type, you can include activities and notes that are related to the selected record in your search results. To do that, select the **Related Notes & Activities** check box. The activities and notes will appear in top-level results.  
   
  
   > [!div class="mx-imgBorder"]
-  > ![在搜索结果中包括与一种记录类型相关的注释和活动](media/relevance-search-record-type-facet-related-notes-activities.png "在搜索结果中包括与一种记录类型相关的注释和活动")  
+  > ![Include notes and activities related to a record type in the search results](media/relevance-search-record-type-facet-related-notes-activities.png "Include notes and activities related to a record type in the search results")  
   
- 电子邮件附件或约会实体中的搜索结果显示在其父记录下的搜索结果中，即电子邮件或约会。  
+ Search results that are found in email attachments or appointment entities  are shown in the search results under their parent record, either Email or Appointment.  
   
- 按记录类型进行优化时，facet 范围将切换到所选实体，并且显示最多四个特定于该实体的方面。 例如，如果选择 "帐户" 实体，则除了全局方面外，还会显示主要的 "**联系人**" 方面。  
+ When you refine by record type, the facet scope switches to the selected entity, and up to four facets that are specific to the entity are shown. For example, if you select the Account entity, you'll see the **Primary Contact** facet in addition to the global facets.  
   
- 在 "**设置个人选项**" 对话框中，你还可以从你的系统管理员或客户提供给你的用户的其他方面中进行选择。 用户设置将覆盖默认设置。 [!INCLUDE[proc_more_information](../includes/proc-more-information.md)][配置搜索的方面和筛选器](#BKMK_ConfigureFacets)  
+ In the **Set Personal Options** dialog box, you can also choose other facets from the ones that your system administrator or customer has made available to you. The user setting overrides the default setting. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Configure facets and filters for the search](#BKMK_ConfigureFacets)  
   
-### <a name="text-based-facets"></a>基于文本的方面  
- 所有查找、选项集和记录类型都是基于文本的方面。 例如，基于文本的方面所有者包含字段值的列表及其相应的计数。  
+### <a name="text-based-facets"></a>Text-based facets  
+ All lookups, option sets, and record types are text-based facets. For example, the text-based facet Owner consists of a list of field values and their corresponding counts.  
  
   > [!div class="mx-imgBorder"]
-  > ![相关性搜索中基于文本的方面](media/relevance-search-text-based-facets.png "相关性搜索中基于文本的方面")  
+  > ![Text-based facet in Relevance Search](media/relevance-search-text-based-facets.png "Text-based facet in Relevance Search")  
   
- 这些方面的筛选器按计数以降序排序。 默认情况下，将显示前四个方面的值。 如果有四个以上的方面值，你将看到 "**显示更多**" 链接，你可以选择该链接来展开列表并查看最多15个顶级 facet 值。 选择每个值以筛选搜索结果，以仅显示字段包含所选值的记录。 例如，如果选择**Kim Abercrombie**，搜索结果将显示所有者为 kim Abercrombie 的所有记录。 选择 "查找" 或 "选项集" 方面值时，会将搜索结果筛选为仅包含指定值的记录。  
+ Filters in these facets are sorted in descending order by count. The top four facet values are displayed by default. When there are more than four facet values, you'll see a **SHOW MORE** link that you can select to expand the list and see up to 15 top facet values. Select each value to filter the search results to show only records where the field has the value you've selected. For example, if you select **Kim Abercrombie**, the search results will show all records where the owner is Kim Abercrombie. When you select a Lookup or Option Set facet value, search results are filtered to only include records with the value that you specified.  
   
-### <a name="date-and-time-facets"></a>日期和时间方面  
- 与其他方面一样，可以使用日期和时间方面来筛选和查看特定时间的搜索结果。 若要选择某一范围的值，请拖动滑块或选择其中一个垂直列。  
+### <a name="date-and-time-facets"></a>Date and time facets  
+ Like other facets, you can use date and time facets to filter and see search results for a specific time. To select a range of values, drag the slider or select one of the vertical columns.  
  
   > [!div class="mx-imgBorder"]
-  > ![相关性搜索的日期和时间方面](media/relevance-search-date-time-facets.png "相关性搜索的日期和时间方面")  
+  > ![Date and time facets for Relevance Search](media/relevance-search-date-time-facets.png "Date and time facets for Relevance Search")  
   
 <a name="BKMK_ConfigureFacets"></a>   
-### <a name="configure-facets-and-filters-for-the-search"></a>配置搜索的方面和筛选器  
- Facet 和筛选器可让你钻取并浏览当前搜索的结果，而无需重复优化搜索词。 在 "**设置个人选项**" 对话框中配置所需的 facet 和筛选器。  
+### <a name="configure-facets-and-filters-for-the-search"></a>Configure facets and filters for the search  
+ Facets and filters let you drill into and explore the results of your current search without having to repeatedly refine your search term. Configure the facets and filters you want in the **Set Personal Options** dialog box.  
   
 > [!NOTE]
->  系统定制员可以设置所有实体的默认体验，但您可以配置自己的方面和筛选器。  
+>  The system customizer can set the default experience for all entities, but you can configure your own facets and filters.  
   
-#### <a name="to-configure-facets-for-yourself"></a>为自己配置 facet  
+#### <a name="to-configure-facets-for-yourself"></a>To configure facets for yourself  
   
-1. 在页面的右上角，选择 "**设置**"，然后选择 "**个性化设置**"。  
+1. In the upper-right corner of the page, select **Settings** and then select **Personalization Settings**.  
   
    > [!div class="mx-imgBorder"]
-   > ![选择默认搜索体验](media/relevance-search-personal-settings.png "选择默认搜索体验")  
+   > ![Select default search experience](media/relevance-search-personal-settings.png "Select default search experience")  
   
-2. 在 "**常规**" 选项卡上，在 "**选择默认的搜索体验**" 部分的 " **facet 和筛选器**" 字段中，选择 "**配置**"。  
+2. On the **General** tab, in the **Select the default search experience** section, for the **Facets and Filters** field, select **Configure**.  
   
-3. 在 "**配置 facet 和筛选器**" 对话框中，指定要为实体查看的方面。 你的系统管理员或定制员可以为所有实体设置默认体验，但你可以在此处设置自己的体验。  
+3. In the **Configure Facets and Filters** dialog box, specify the facets you'd like to see for an entity. Your system administrator or customizer can set a default experience for all entities, but you can set your own here.  
   
-   - 在 "**选择实体**" 下拉列表中，选择要为其配置方面的实体。 此下拉列表仅包含为相关性搜索启用的实体。  
+   - In the **Select Entity** drop-down list, select an entity you want to configure facets for. This drop-down list contains only the entities that are enabled for Relevance Search.  
   
-   - 对于所选实体，请选择最多四个方面字段。 默认情况下，将在列表中选择所选实体的**快速查找**视图中的前四个可查找字段。 在任何时候，只能选择四个字段作为 facet。  
+   - For the selected entity, select up to four facet fields. By default, the first four facetable fields in the **Quick Find** view for the selected entity are selected in the list. At any time, you can only have four fields selected as facets.  
   
-     你可以一次更新多个实体。 选择 **"确定**" 后，将保存已配置的所有实体的更改。 要恢复为先前配置的实体的默认行为，请选择 "**默认**"。  
+     You can update multiple entities at one time. When you select **OK**, the changes for all entities that you've configured are saved. To revert to the default behavior for an entity that you previously configured, select **Default**.  
   
    > [!NOTE]
-   > - 如果系统定制器删除某字段或使其不再可搜索，并且您已保存该字段的分面，则它将不再显示为分面。  
-   >   -   你将只能看到默认解决方案中存在且配置为你的系统定制器可搜索的字段。  
+   > - If a system customizer deletes a field or makes it no longer searchable, and you've saved a facet for that field, it will no longer show up as a facet.  
+   >   -   You'll only see the fields that exist in the default solution and that are configured as searchable by your system customizer.  
   
  

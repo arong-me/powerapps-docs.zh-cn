@@ -1,5 +1,5 @@
 ---
-title: 对记录使用查找字段 |MicrosoftDocs
+title: Use the lookup field on a record | MicrosoftDocs
 author: mduelae
 manager: kvivek
 ms.service: powerapps
@@ -14,95 +14,100 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c37e6e9e2b540dcad2c166a4ebf9d71d3b503978
-ms.sourcegitcommit: 10b2798d8f4acd01da15412a2e9fc872d1212d7c
+ms.openlocfilehash: 4ef67695603f3badeba92f46c6da90e21715c98b
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73728407"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74177849"
 ---
 #  <a name="use-the-lookup-field-on-a-record"></a>对记录使用查阅字段
 
-查找可帮助您从相关实体中选择记录。 选择相关实体并输入搜索条件（如姓名或电子邮件地址）时，查找将自动开始解析部分文本，并显示所有匹配的记录。 如果键入搜索条件的完整文本后未显示任何记录，则显示一条消息，指出没有记录。
+Lookup helps you to choose records from a related entity. When you select a related entity and enter search criteria, such as a name or email address, lookup automatically begins to resolve the partial text and displays any matching records. If no records are displayed after you have typed the full text of your search criteria, a message is displayed specifying that there are no records.
 
-例如，可以搜索名称**Adrian Dumitrascu**。 键入**ad**时，可能会自动填充和显示可能的匹配记录。
+For example, you might search for the name **Adrian Dumitrascu**. When you type **ad**, possible matching records are automatically populated and displayed.
 
   > [!div class="mx-imgBorder"]
-  > ![自动填充匹配记录](media/automatically-populate-matching-records.png "自动填充匹配记录")
+  > ![Automatically populates matching records](media/automatically-populate-matching-records.png "Automatically populates matching records")
   
 >[!NOTE] 
->管理员可以定义查找用于解析部分搜索文本的条件。
+>An administrator can define the criteria that lookup uses for resolving partial search text.
 
-此外，还可以通过选择 "**新建**" 按钮创建新的记录。 您必须具有足够的权限才能查看 "**新建**" 按钮和创建记录。 选择查找字段时，会显示五个最近使用的记录以及五个收藏记录。 显示哪些记录取决于您的视图历史记录和您已固定的收藏夹。 
+Also, you can create a new record by selecting the **New** button. You must have sufficient permissions to view the **New** button and create a record. When you select the lookup field, the five most recently used records are displayed along with five favorite records. Which records are displayed depends on your view history and the favorites you’ve pinned. 
 
-例如，如果历史记录中只有三个记录，则 "查找" 将显示这三个记录以及七个常用记录。 如果尚未固定任何收藏夹，则只会显示最近查看的记录。
+For example, if you have only three records in your history, lookup will display those three, along with seven of your favorite records. If you have not pinned any favorites, only the most recently viewed records will be displayed.
 
-## <a name="types-of-lookups"></a>查找类型
+## <a name="types-of-lookups"></a>Types of lookups
 
-查找分为以下几个类别： 
+Lookups are classified into the following: 
 
-- **简单查找：** 从单个实体的字段中选择单个记录。 
+- **Simple lookup:** Select a single record in a field from a single entity. 
 
-- **Attributetype.partylist 类型的字段：** 用于在查找中从多个实体选择多个记录。 使用 attributetype.partylist 字段可以选择多个记录。 这允许您通过多次执行新的搜索来添加每条记录。 每次选择一条记录时，都可以为另一个记录执行新的搜索。
+- **PartyList-type fields:** Use to select multiple records from multiple entities in a lookup. Use partylist-type fields to select multiple records. This allows you to add each record by performing a new search, multiple times. Every time you select a record, you will be able to perform a new search for another record.
   
-- **相关类型字段：** 用于在查找中从多个实体选择单个记录。 
+- **Regarding-type fields:** Use to select a single record from multiple entities in a lookup. 
 
-## <a name="search-in-a-lookup-field"></a>在查找字段中搜索 
-若要搜索查找，请选择文本框并键入搜索条件。 如果为查找启用了 "最近的记录"，则在您选择文本框时将显示您最近的记录。
-
-  > [!div class="mx-imgBorder"]
-  > ![浏览查找字段](media/MRU.png "浏览查找字段")  
-
-## <a name="browse-in-a-lookup-field"></a>在查找字段中浏览
-若要浏览查找，请选择查找图标（放大镜）。 下拉列表中会显示项的完整列表。
+## <a name="search-in-a-lookup-field"></a>Search in a lookup field 
+To search a lookup, select the textbox and type your search criteria. If recent records are enabled for your lookup, your recent records will be displayed when you select the textbox.
 
   > [!div class="mx-imgBorder"]
-  > ![搜索查找字段](media/MRU_1.png "搜索查找字段")  
+  > ![Browse a lookup field](media/MRU.png "Browse a lookup field")  
+  
+>[!NOTE]   
+> The default search result for lookup search is, begins with. This means results include records that begin with a specific word. For example, if you want to search for **Alpine Ski House**, type **alp** in the search box; if you type **ski**, the record will not show up in the search result.
+>
+> For a wildcard search use asterisks: For example, type *ski or *ski.
+
+## <a name="browse-in-a-lookup-field"></a>Browse in a lookup field
+To browse a lookup, select the lookup icon (magnifying glass). A full list of items will be shown in the dropdown.
+
+  > [!div class="mx-imgBorder"]
+  > ![Search a lookup field](media/MRU_1.png "Search a lookup field")  
  
-## <a name="most-recently-used-record-type-images"></a>最近使用的记录类型图像
-最近使用的记录列表显示了有助于区分不同记录类型的图像。
+## <a name="most-recently-used-record-type-images"></a>Most recently used record type images
+The most recently used list of records shows an image to help distinguish between record types.
 
 >[!NOTE] 
->不按搜索词或所选视图筛选最新记录。
+>Recent records are not filtered by search term or selected view.
 
   > [!div class="mx-imgBorder"]
-  > ![查找字段显示图像](media/Lookup_03-MRU_Entity_Images_56[1].png "查找字段显示图像")  
+  > ![Lookup fields shows image](media/Lookup_03-MRU_Entity_Images_56[1].png "Lookup fields shows image")  
   
-## <a name="record-type-selection-list"></a>记录类型选择列表  
-如果结果跨越多个记录类型，您可以查看其中有多少条记录，并从列表中选择它们。
+## <a name="record-type-selection-list"></a>Record type selection list  
+When results span multiple record types, you can see how many types of records there are and select them from the list.
 
   > [!div class="mx-imgBorder"]
-  > ![查看多少条记录](media/Lookup_04-MultipleEntityTypes[1].gif "查看多少条记录")  
+  > ![See how many records](media/Lookup_04-MultipleEntityTypes[1].gif "See how many records")  
   
-## <a name="create-a-new-record-if-you-dont-find-an-existing-record"></a>如果找不到现有记录，则创建一个新记录
+## <a name="create-a-new-record-if-you-dont-find-an-existing-record"></a>Create a new record if you don’t find an existing record
 
-如果未找到记录，请在查找区域中选择 "**新建**" 以创建新记录。
+If you do not find a record, select **New** in the lookup area to create a new record.
 
 
-### <a name="replace-an-existing-record-from-a-lookup-field"></a>替换查找字段中的现有记录
+### <a name="replace-an-existing-record-from-a-lookup-field"></a>Replace an existing record from a lookup field
 
-使用简单的和 "相关类型" 查找时，可以替换现有记录。 搜索记录。 然后选择记录，并将其替换为新记录。
+You can replace an existing record while using simple and regarding-type lookups. Search for a record. Then select the record, and replace it with a new record.
 
-### <a name="change-a-view-in-a-lookup-field"></a>更改查找字段中的视图 
+### <a name="change-a-view-in-a-lookup-field"></a>Change a view in a lookup field 
 
-通过选择 "**更改视图**"，您可以确定：
- - 希望如何查看**联系人**、**联系人查找视图**或**活动联系人**等记录。
- - 要在记录中查看的内容，如姓名、电子邮件或电话号码。 例如，如果你只想查看你关注的联系人，请选择 "**更改视图**" \>**正在追随的联系人**。 将只显示你关注的联系人，如此处所示。 
+Selecting **Change View** lets you determine:
+ - How you want to view records such as **Contacts Being Followed**, **Contacts Lookup View**, or **Active Contacts**.
+ - What you want to view in the records, such as name, email, or telephone number. For example, if you want to view only the contacts that you follow, select **Change View** \> **Contacts being followed**. Only the contacts that you are following will be displayed, as illustrated here. 
 
-    ![更改视图联系人类型](media/change-view.png "更改视图联系人类型")
+    ![Change view contacts types](media/change-view.png "Change view contacts types")
 
 >[!IMPORTANT] 
->如果管理员未将选项配置为显示在视图中，则不会显示 "**更改视图**" 选项。
+>The **Change View** option will not be visible if your administrator hasn't configured the option to appear in your views.
 
-### <a name="choose-from-multiple-records"></a>从多个记录中选择
+### <a name="choose-from-multiple-records"></a>Choose from multiple records
 
-如果查找的字段中的记录数多于可用显示区域容纳的数量，则显示区域将折叠，也就是说，显示区域的记录将显示在未显示的记录数旁边。 若要查看所有记录，请选择该数字。 下面的图像显示折叠和非折叠字段之间的差异。
+When lookup has more records in a field than can fit in the available display area, the display area is collapsed—that is, the records that do fit the display area are shown next to the number of records that are not shown. To view all records, select the number. The following images show the difference between collapsed and non-collapsed fields.
 
-**折叠**
+**Collapsed:**
 
-![已折叠的多查找显示区域](media/collapsed-multi-lookup-display-area.png "已折叠的多查找显示区域")
+![Collapsed multi-lookup display area](media/collapsed-multi-lookup-display-area.png "Collapsed multi-lookup display area")
 
 
-**非折叠：**
+**Non-collapsed:**
 
-![非折叠多查找显示区域](media/non-collapsed-multi-lookup-display-area.png "非折叠多查找显示区域")
+![Non-collapsed multi-lookup display area](media/non-collapsed-multi-lookup-display-area.png "Non-collapsed multi-lookup display area")
