@@ -31,7 +31,7 @@ ms.locfileid: "71991828"
 PowerApps 以公式为基础，这些公式会在用户与应用交互时自动重新计算。  上下文变量不具有此优势，因此在应用的创建和理解上可能难度更大。  使用上下文变量之前，请查看[使用变量](../working-with-variables.md)。
 
 ## <a name="description"></a>说明
-若要创建或更新上下文变量，请向 **UpdateContext** 函数传递一条[记录](../working-with-tables.md#records)。 在每条记录中指定[列](../working-with-tables.md#columns)的名称，用于定义或匹配变量的名称以及要将该变量设为的值。
+若要创建或更新上下文变量，请向 [UpdateContext](../working-with-tables.md#records) 函数传递一条**记录**。 在每条记录中指定[列](../working-with-tables.md#columns)的名称，用于定义或匹配变量的名称以及要将该变量设为的值。
 
 * 如果指定之前已定义的变量的名称，**UpdateContext** 会将该变量的值设置为指定的值。
 * 如果指定尚不存在的变量的名称，**UpdateContext** 会以该名称创建一个变量并将该变量的值设置为指定的值。
@@ -62,30 +62,30 @@ PowerApps 以公式为基础，这些公式会在用户与应用交互时自动�
 
 * *UpdateRecord* - 必需。 一条记录，其中包含至少一列的名称以及该列的值。 将为每列和指定的值创建或更新上下文变量。
 
-**UpdateContext**（{ *ContextVariable1*：*Value1* [， *ContextVariable2*：*Value2* [，...]] } )
+**UpdateContext**( { *ContextVariable1*: *Value1* [, *ContextVariable2*: *Value2* [, ... ] ] } )
 
 * *ContextVariable1* - 必需。  要创建或更新的上下文变量的名称。
 * *Value1* - 必需。  要分配给上下文变量的值。
-* *ContextVariable2*：*Value2*，...-可选。 要创建或更新的其他上下文变量及其值。
+* *ContextVariable2*: *Value2*, ... - 可选。 要创建或更新的其他上下文变量及其值。
 
 ## <a name="examples"></a>示例
 
-| 公式 | 描述 | 结果 |
+| 公式 | 说明 | 结果 |
 | --- | --- | --- |
 | **UpdateContext( {&nbsp;Counter:&nbsp;1&nbsp;} )** |创建或修改上下文变量 **Counter**，将其值设置为 **1**。 |**Counter** 的值为 **1**。 可通过在公式中使用名称 **Counter** 来引用该变量。 |
 | **UpdateContext( {&nbsp;Counter:&nbsp;2&nbsp;} )** |将上一示例中 **Counter** 上下文变量的值设置为 **2**。 |**Counter** 的值为 **2**。 |
 | **UpdateContext( {&nbsp;Name:&nbsp;"Lily",&nbsp;Score:&nbsp;10&nbsp;} )** |创建或修改上下文变量 **Name** 和 **Score**，分别将它们的值设置为 **Lily** 和 **10**。 |**Name** 的值为 **Lily**，**Score** 的值为 **10**。 |
 | **UpdateContext( {&nbsp;Person:&nbsp;{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;} )** |创建或修改上下文变量 **Person**，将其值设置为一条记录。 该记录包含名为“姓名”和“地址”的两列。 “姓名”列为 **Milton**，“地址”列的值为 **1 Main St**。 |**Person** 的值为记录 **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** 。<br><br>使用名称 **Person** 整体引用此记录，或使用 **Person.Name** 或 **Person.Address** 引用此记录的单个列。 |
-| @no__t 0UpdateContext （{&nbsp;Person：Patch （@no__t 0Person，&nbsp; {Address： &nbsp; "2 @ no__t-3Main @ no__t-4St" &nbsp;} &nbsp;）} &nbsp;） |搭配使用 **[Patch](function-patch.md)** 函数更新 **Person** 上下文变量，将“地址”列的值设置为 **2 Main St**。 |**Person** 现在的值为记录 **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** 。 |
+| **UpdateContext( {&nbsp;Person: Patch(&nbsp;Person,&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;) }&nbsp;)** |搭配使用 **[Patch](function-patch.md)** 函数更新 **Person** 上下文变量，将“地址”列的值设置为 **2 Main St**。 |**Person** 现在的值为记录 **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** 。 |
 
 ### <a name="step-by-step-example"></a>分步示例
 1. 将默认屏幕命名为 **Source**，添加另一个屏幕，将其命名为 **Target**。
 2. 在 **Source** 屏幕上，添加两个按钮，设置它们的 **[Text](../controls/properties-core.md)** 属性，让其中一个按钮显示“英语”，另一个显示“西班牙语”。
-3. 将“英语”按钮的 **[OnSelect](../controls/properties-core.md)** 属性设置为此表达式：<br>**Navigate(Target, ScreenTransition.Fade, {Language:"English"})**
-4. 将“西班牙语”按钮的 **[OnSelect](../controls/properties-core.md)** 属性设置为此表达式：<br>**Navigate(Target, ScreenTransition.Fade, {Language:"Spanish"})**
+3. 将“英语” **[按钮的 ](../controls/properties-core.md)** OnSelect 属性设置为此表达式：<br>**Navigate(Target, ScreenTransition.Fade, {Language:"English"})**
+4. 将“西班牙语” **[按钮的 ](../controls/properties-core.md)** OnSelect 属性设置为此表达式：<br>**Navigate(Target, ScreenTransition.Fade, {Language:"Spanish"})**
 5. 在 **Target** 屏幕，添加一个标签，将其 **[Text](../controls/properties-core.md)** 属性设置为此表达式：<br>**If(Language="English", "Hello!", "Hola!")**
 6. 在 **Target** 屏幕上，在“插入”选项卡上选择“形状”，然后选择“返回”箭头。
-7. 将“返回”箭头的 **[OnSelect](../controls/properties-core.md)** 属性设置为此公式：<br>**Navigate(Source, ScreenTransition.Fade)**
+7. 将“返回”箭头的 **[OnSelect](../controls/properties-core.md)** 属性设置为此公式：<br>Navigate(Source, ScreenTransition.Fade)
 8. 从 **Source** 屏幕上，按 F5，然后选择表示任一语言的按钮。
 
     在 **Target** 屏幕上，标签将以对应于所选按钮的语言显示。
@@ -94,5 +94,5 @@ PowerApps 以公式为基础，这些公式会在用户与应用交互时自动�
     在 **Target** 屏幕上，标签将以对应于所选按钮的语言显示。
 10. 按 Esc 返回默认工作区。
 
-[其他示例](../add-screen-context-variables.md)
+[再举一例](../add-screen-context-variables.md)
 

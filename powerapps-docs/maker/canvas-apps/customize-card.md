@@ -26,7 +26,7 @@ ms.locfileid: "71985924"
 
 有关概述，请参阅 [了解数据卡](working-with-cards.md)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 - 了解如何 [添加和配置控件](add-configure-controls.md)。
 - 您可以仅查看本主题中的常规概念，也可以在您首先完成这些主题中的过程后逐步执行以下操作：
@@ -44,14 +44,14 @@ ms.locfileid: "71985924"
 1. 在字段列表中，选择 "**雇员数**" 的下箭头，然后打开 "**控件类型**" 下的列表。
 
     > [!div class="mx-imgBorder"]
-    > 用于数字卡片 @ no__t 的选项的 @no__t 0Drop 列表
+    > 数字卡片 ![下拉列表选项](./media/customize-card/card-selector.png)
 
 1. 选择 "**编辑滑块**"。
 
     屏幕将体现所做的更改。
 
     > [!div class="mx-imgBorder"]
-    > ![EditForm1 与 slider control @ no__t-1
+    > ![带有滑块控件的 EditForm1](./media/customize-card/add-slider.png)
 
 ## <a name="unlock-and-customize-a-card"></a>解锁和自定义卡
 
@@ -60,22 +60,22 @@ ms.locfileid: "71985924"
 1. 在**EditForm1**中，选择 "**员工**" 卡的 "**滑块**" 控件。
 
     > [!div class="mx-imgBorder"]
-    > ![Select 滑块 @ no__t-1
+    > ![选择滑块](./media/customize-card/select-slider.png)
 
 1. 在右侧窗格的 "**高级**" 选项卡上，选择锁定图标来解锁卡。
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Unlock 卡片式 @ no__t-1
+    > ![解锁卡](./media/customize-card/lock-icon.png)
 
 1. 将**滑块**控件的**Max**属性设置为10000。
 
     > [!div class="mx-imgBorder"]
-    > "高级" 选项卡上的 "0Max" 属性 @ no__t-1 @no__t
+    > "高级" 选项卡上的 ![Max 属性](./media/customize-card/max-property.png)
 
     **滑块**控件显示的值越精确。
 
     > [!div class="mx-imgBorder"]
-    > ![Slider 范围：0-10000 @ no__t-0
+    > ![滑块范围： 0-10000](./media/customize-card/final-slider.png)
 
 ## <a name="next-steps"></a>后续步骤
 

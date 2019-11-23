@@ -11,7 +11,7 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: af5b0ae8eddb68127c7271fccb4696a23fedfc60
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73542748"
@@ -64,7 +64,7 @@ ms.locfileid: "73542748"
    > - Index：暂缺（0）                                              
    > - URL： **https://portal.contoso.com/signin-saml2**
 
-8. 配置标识：指定 https://portal.contoso.com/ ，选择 "**添加**"，然后选择 "**下一步**"。
+8. 配置标识：指定 https://portal.contoso.com/，选择 "**添加**"，然后选择 "**下一步**"。
    如果适用，你可以为每个其他信赖方门户添加更多标识。 用户将可以在任何或所有可用标识之间进行身份验证。
 9. 选择 "颁发授权规则"：选择 "**允许所有用户访问此信赖方**"，然后选择 "**下一步**"。
 10. 已准备好添加信任：选择 "**下一步**"。
@@ -98,13 +98,13 @@ ms.locfileid: "73542748"
 可以通过替换 [provider] 标记的标签来配置多个 IdP 服务。 每个唯一标签形成一组与 IdP 相关的设置。 示例： ADFS、[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)]AD、MyIdP
 
 
-| 站点设置名称                                             | 描述                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| 站点设置名称                                             | 说明                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Authentication/Registration/ExternalLoginEnabled              | 启用或禁用外部帐户登录和注册。 默认值： true                                                                                                                                                                                                                                                                                                                                                            |
 | Authentication/SAML2/[provider]/MetadataAddress             | 必填。 [!include[](../../../includes/pn-adfs-short.md)] （STS）服务器的[WS 联合身份验证](https://msdn.microsoft.com/library/bb498017.aspx)元数据 URL。 它通常以路径：/Federationmetadata.xml/2007-06/Federationmetadata.xml 结束。 示例： `https://adfs.contoso.com/FederationMetadata/2007-06/FederationMetadata.xml`。 [!include[](../../../includes/proc-more-information.md)] [wsfederationauthenticationoptions.wtrealm 相. MetadataAddress](https://msdn.microsoft.com/library/microsoft.owin.security.wsfederation.wsfederationauthenticationoptions.metadataaddress.aspx) |  
 | Authentication/SAML2/[provider]/AuthenticationType          | 必填。 OWIN authentication 中间件类型。 在联合元数据 XML 的根指定[entityID](https://docs.microsoft.com/azure/active-directory/develop/active-directory-federation-metadata)属性的值。 示例： `https://adfs.contoso.com/adfs/services/trust`。 [!include[](../../../includes/proc-more-information.md)] [AuthenticationOptions. AuthenticationType](https://msdn.microsoft.com/library/microsoft.owin.security.authenticationoptions.authenticationtype.aspx)                                                            |  
 | Authentication/SAML2/[provider]/ServiceProviderRealm<br>或 <br>Authentication/SAML2/[provider]/Wtrealm                      | 必填。 [!include[](../../../includes/pn-adfs-short.md)] 信赖方标识符。 示例： `https://portal.contoso.com/`。 [!include[](../../../includes/proc-more-information.md)] [wsfederationauthenticationoptions.wtrealm 相. Wtrealm](https://msdn.microsoft.com/library/microsoft.owin.security.wsfederation.wsfederationauthenticationoptions.wtrealm.aspx)                       |  
-| Authentication/SAML2/[provider]/AssertionConsumerServiceUrl<br>或<br>Authentication/SAML2/[provider]/Wreply                       | 必填。 [!include[](../../../includes/pn-adfs-short.md)] SAML 使用者断言终结点。 示例： https://portal.contoso.com/signin-saml2 。 [!include[](../../../includes/proc-more-information.md)] [wsfederationauthenticationoptions.wtrealm 相. Wreply](https://msdn.microsoft.com/library/microsoft.owin.security.wsfederation.wsfederationauthenticationoptions.wreply.aspx)                                                                                                                                                                                                  |  
+| Authentication/SAML2/[provider]/AssertionConsumerServiceUrl<br>或<br>Authentication/SAML2/[provider]/Wreply                       | 必填。 [!include[](../../../includes/pn-adfs-short.md)] SAML 使用者断言终结点。 示例： https://portal.contoso.com/signin-saml2。 [!include[](../../../includes/proc-more-information.md)] [wsfederationauthenticationoptions.wtrealm 相. Wreply](https://msdn.microsoft.com/library/microsoft.owin.security.wsfederation.wsfederationauthenticationoptions.wreply.aspx)                                                                                                                                                                                                  |  
 | Authentication/SAML2/[provider]/Caption                     | 您. 用户可在登录用户界面上显示的文本。 默认值： [提供程序]。 [!include[](../../../includes/proc-more-information.md)] [wsfederationauthenticationoptions.wtrealm 相](https://msdn.microsoft.com/library/microsoft.owin.security.wsfederation.wsfederationauthenticationoptions.caption.aspx)                |  
 | Authentication/SAML2/[provider]/CallbackPath                | 用于处理身份验证回调的可选约束路径。 [!include[](../../../includes/proc-more-information.md)] [wsfederationauthenticationoptions.wtrealm 相. CallbackPath](https://msdn.microsoft.com/library/microsoft.owin.security.wsfederation.wsfederationauthenticationoptions.callbackpath.aspx)                                                                                                                                                                                                                      |  
 | Authentication/SAML2/[provider]/BackchannelTimeout          | 反通道通信的超时值。 示例：00:05:00 （5分钟）。 [!include[](../../../includes/proc-more-information.md)] [wsfederationauthenticationoptions.wtrealm 相. BackchannelTimeout](https://msdn.microsoft.com/library/microsoft.owin.security.wsfederation.wsfederationauthenticationoptions.backchanneltimeout.aspx)                                                                                                                                                                                                                   |  
@@ -217,11 +217,11 @@ Write-Output $idpInitiatedUrl
 1.  在目录的 "**应用程序**" 菜单下，选择 "**添加**"。
 2.  选择 **"添加我的组织正在开发的应用程序"** 。
 3.  为应用程序指定自定义名称，然后选择 " **web 应用程序和/或 WEB API**" 类型。
-4.  对于 "**登录 URL** " 和 "**应用 ID URI**"，为 https://portal.contoso.com/ 的两个字段指定门户的 URL。
+4.  对于 "**登录 URL** " 和 "**应用 ID URI**"，为 https://portal.contoso.com/的两个字段指定门户的 URL。
     这对应于**ServiceProviderRealm** （Wtrealm）站点设置值。
 5. 此时，将创建一个新的应用程序。 在菜单中，切换到 "**配置**" 部分。
 
-    在 "**单一登录**" 部分下，更新 "第一个**回复 url** " 条目，以将路径包含在 URL https://portal.contoso.com/signin-azure-ad 中。
+    在 "**单一登录**" 部分下，更新 "第一个**回复 url** " 条目，以将路径包含在 URL https://portal.contoso.com/signin-azure-ad中。
 
     这对应于**AssertionConsumerServiceUrl** （Wreply）站点设置值。
 
@@ -241,7 +241,7 @@ Write-Output $idpInitiatedUrl
 
 ## <a name="shibboleth-identity-provider-3"></a>Shibboleth 标识提供程序3
 
-使用以下准则正确地将[Shibboleth 标识提供程序](https://wiki.shibboleth.net/confluence/display/IDP30/Home)配置为 IdP 服务。 下面的示例假定 IdP 托管在域 https://idp.contoso.com 上。  
+使用以下准则正确地将[Shibboleth 标识提供程序](https://wiki.shibboleth.net/confluence/display/IDP30/Home)配置为 IdP 服务。 下面的示例假定 IdP 托管在域 https://idp.contoso.com上。  
 
 联合元数据 URL 是 https://idp.contoso.com/idp/shibboleth
 

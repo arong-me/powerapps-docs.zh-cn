@@ -11,7 +11,7 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: be576425067079549d3174e6d6306814a6ddb13a
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73542800"
@@ -31,7 +31,7 @@ ms.locfileid: "73542800"
 
 ## <a name="create-oauth-applications"></a>创建 OAuth 应用程序
 
-通常情况下，如果 OAuth 提供程序使用需要重定向 URI 值的应用设置，请指定 <https://portal.contoso.com/or> https://portal.contoso.com/signin-\ [provider\] ，具体取决于提供程序执行重定向 URI 验证的方式（某些提供程序需要指定完整 URL 路径以及域名）。 用提供程序的名称替换 "重定向 URI" 中\] 的 \[提供程序。
+通常，如果 OAuth 提供程序使用需要重定向 URI 值的应用设置，请指定 <https://portal.contoso.com/or> https://portal.contoso.com/signin-\[提供程序\]，具体取决于提供程序执行重定向 URI 验证的方式（某些提供程序需要与域名一起指定完整 URL 路径）。 用提供程序的名称替换 "重定向 URI" 中\] 的 \[提供程序。
 
 ### <a name="google"></a>Google
 
@@ -83,8 +83,8 @@ ms.locfileid: "73542800"
 2. 选择 "**创建新应用**"。
 
     - 指定应用的**名称**和**描述**。
-    - 将网站 URL 设置为 https://portal.contoso.com 。
-    - 将回叫 URL 设置为 https://portal.contoso.com 或 https://portal.contoso.com/signin-twitter 。
+    - 将网站 URL 设置为 https://portal.contoso.com。
+    - 将回叫 URL 设置为 https://portal.contoso.com 或 https://portal.contoso.com/signin-twitter。
 
 3. 选择 "**创建 Twitter 应用程序**"。
 
@@ -94,9 +94,9 @@ ms.locfileid: "73542800"
 2. 选择 "**添加新应用程序**"。
 
     - 指定**应用程序名称**、**说明**等。
-    - 将 "网站 URL" 设置为 https://portal.contoso.com 。
+    - 将 "网站 URL" 设置为 https://portal.contoso.com。
     - 设置 OAuth 用户协议/默认作用域： r\_basicprofie 和 r\_emailaddress
-    - 设置 OAuth 2.0 重定向 url： https://portal.contoso.com/signin-linkedin 。
+    - 设置 OAuth 2.0 重定向 url： https://portal.contoso.com/signin-linkedin。
 
 3. 选择 "**添加应用程序**"。
 

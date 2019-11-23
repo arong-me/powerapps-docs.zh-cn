@@ -47,8 +47,8 @@ ms.locfileid: "71989383"
 
 ![UserBrowseGallery 控件](media/people-screen/people-browse-gall.png)
 
-* 知识产权**项**<br>
-    负值用户开始键入时查找用户的逻辑：
+* 属性：**项**<br>
+    值：用户开始键入时查找用户的逻辑：
     
     ```powerapps-dot
     If( !IsBlank( Trim( TextSearchBox.Text ) ), 
@@ -61,20 +61,20 @@ ms.locfileid: "71989383"
     )
     ```
     
-此库中的项由[Office365. SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser)操作的搜索结果填充。 操作采用 `Trim(TextSearchBox)` 作为其搜索词的文本，并基于该搜索返回前15个结果。 **TextSearchBox**封装在 `Trim()` 函数中，因为用户在空格上搜索无效。
+此库中的项由[Office365. SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser)操作的搜索结果填充。 操作使用 `Trim(TextSearchBox)` 中的文本作为其搜索词，并基于该搜索返回前15个结果。 由于在空格上进行的用户搜索无效， **TextSearchBox**包装在 `Trim()` 函数中。
 
-@No__t-0 操作封装在一个 @no__t 的函数中，因为在搜索框包含用户输入的文本时，只需调用该操作。 这可以提高性能。
+由于在搜索框包含用户输入的文本时，只需调用该操作，因此 `Office365Users.SearchUser` 操作包装在 `If(!IsBlank(Trim(TextSearchBox.Text)) ... )` 函数中。 这可以提高性能。
 
 ### <a name="userbrowsegallery-title-control"></a>UserBrowseGallery 标题控件
 
 ![UserBrowseGallery 标题控件](media/people-screen/people-browse-gall-title.png)
 
-* 知识产权**文本**<br>值： `ThisItem.DisplayName`
+* 属性：**文本**<br>值： `ThisItem.DisplayName`
 
   显示用户在其 Office 365 配置文件中的显示名称。
 
-* 知识产权**OnSelect**<br>
-    负值将用户添加到应用程序级集合的代码，然后选择用户：
+* 属性： **OnSelect**<br>
+    值：要将用户添加到应用程序级集合的代码，然后选择用户：
 
     ```powerapps-dot
     Concurrent(
@@ -87,7 +87,7 @@ ms.locfileid: "71989383"
     ```
 选择此控件将同时执行三个操作：
 
-   * @No__t 将**1selectedUser**变量设置为所选的项。
+   * 将 **\_selectedUser**变量设置为所选的项。
    * 重置**TextSearchBox**中的搜索词。
    * 将所选项目添加到**MyPeople**集合，该集合是应用用户选择的所有人员的集合。
 
@@ -95,8 +95,8 @@ ms.locfileid: "71989383"
 
 ![UserBrowseGallery ProfileImage 控件](media/people-screen/people-browse-gall-image.png)
 
-* 知识产权**图像**<br>
-    负值用于检索用户的个人资料照片的逻辑。
+* 属性：**图像**<br>
+    值：用于检索用户的个人资料照片的逻辑。
 
     ```powerapps-dot
     If( !IsBlank( ThisItem.Id ) && 
@@ -108,7 +108,7 @@ ms.locfileid: "71989383"
 **Image**控件检索用户的图像，并[Office365Users. UserPhoto](https://docs.microsoft.com/connectors/office365users/#get-user-photo--v1-)操作。 但是，在执行此操作之前，它会检查两项内容：
   
    * ID 字段是否为空。 这会阻止**图像**控件在库填充到搜索结果之前尝试检索用户照片。
-   * 用户是否有照片（带有[Office365Users. UserPhotoMetadata](https://docs.microsoft.com/connectors/office365users/#get-user-photo-metadata)操作）。 这会阻止 `Office365Users.UserPhoto` 查找在用户没有配置文件图片时返回异常。
+   * 用户是否有照片（带有[Office365Users. UserPhotoMetadata](https://docs.microsoft.com/connectors/office365users/#get-user-photo-metadata)操作）。 这可以防止 `Office365Users.UserPhoto` 的查找在用户没有配置文件图片时返回异常。
 
 请注意，如果未检索到图像，则**图像**控件为空白，而**iconUser**控件则改为可见。
 
@@ -116,7 +116,7 @@ ms.locfileid: "71989383"
 
 ![PeopleAddedGallery 控件](media/people-screen/people-people-gall.png)
 
-* 知识产权**项**<br>
+* 属性：**项**<br>
     值： `MyPeople`
 
 这是通过选择**UserBrowseGallery 标题**控件进行初始化或添加到的人员的集合。
@@ -125,7 +125,7 @@ ms.locfileid: "71989383"
 
 ![PeopleAddedGallery 标题控件](media/people-screen/people-people-gall-title.png)
 
-* 知识产权**OnSelect**<br>
+* 属性： **OnSelect**<br>
     值： `Set( _selectedUser, ThisItem )`
 
 将 **_selectedUser**变量设置为在**EmailPeopleGallery**中选定的项。
@@ -134,7 +134,7 @@ ms.locfileid: "71989383"
 
 ![PeopleAddedGallery iconRemove 控件](media/people-screen/people-people-gall-delete.png)
 
-* 知识产权**OnSelect**<br>
+* 属性： **OnSelect**<br>
     值： `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
 在**MyPeople**集合中查找记录，其中**UserPrincipalName**与选定项的**userprincipalname**匹配，然后从集合中删除该记录。

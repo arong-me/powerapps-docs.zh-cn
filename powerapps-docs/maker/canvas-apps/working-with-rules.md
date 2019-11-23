@@ -101,7 +101,7 @@ ms.locfileid: "72822119"
 
 ![删除筛选器](./media/working-with-rules/rules-filter.png)
 
-## <a name="known-limitations"></a>已知的限制
+## <a name="known-limitations"></a>已知限制
 截至本文撰写之时：
 
 * 无法在条件中指定窗体或库的 ThisItem 属性。

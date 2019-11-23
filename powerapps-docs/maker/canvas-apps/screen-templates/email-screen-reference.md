@@ -52,8 +52,8 @@ ms.locfileid: "71995690"
 
 "**添加" 图标**控件允许应用程序将其组织内不存在的人员添加到正在撰写的电子邮件的收件人列表。
 
-* 知识产权**亮起**<br>
-    负值仅当用户在搜索框中键入有效的电子邮件地址时才显示控件的逻辑：
+* 属性：**可见**<br>
+    值：仅当用户在搜索框中键入有效的电子邮件地址时才显示控件的逻辑：
 
     ```powerapps-dot
     !IsBlank( TextSearchBox.Text ) &&
@@ -66,8 +66,8 @@ ms.locfileid: "71995690"
     * **TextSearchBox**中的文本是有效的电子邮件地址。
     * **TextSearchBox**中的文本在**MyPeople**集合中尚不存在。
 
-* 知识产权**OnSelect**<br>
-    负值选择此将向**MyPeople**集合添加有效的电子邮件地址。 此集合由屏幕用作收件人列表：
+* 属性： **OnSelect**<br>
+    值：如果选择此值，则会将有效的电子邮件地址添加到**MyPeople**集合。 此集合由屏幕用作收件人列表：
 
     ```powerapps-dot
     Collect( MyPeople,
@@ -86,8 +86,8 @@ ms.locfileid: "71995690"
 
    ![PeopleBrowseGallery 控件](media/email-screen/email-browse-gall.png)
 
-* 知识产权**项**<br>
-    负值键入到**TextSearchBox**控件中的搜索文本的前15个搜索结果：
+* 属性：**项**<br>
+    值：在**TextSearchBox**控件中键入的搜索文本的前15个搜索结果：
     
     ```powerapps-dot
     If( !IsBlank( Trim(TextSearchBox.Text ) ), 
@@ -95,21 +95,21 @@ ms.locfileid: "71995690"
     )
     ```
 
-  此库中的项由[Office365. SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser)操作的搜索结果填充。 操作采用 `Trim(TextSearchBox)` 作为其搜索词的文本，并基于该搜索返回前15个结果。
+  此库中的项由[Office365. SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser)操作的搜索结果填充。 操作使用 `Trim(TextSearchBox)` 中的文本作为其搜索词，并基于该搜索返回前15个结果。
   
-  **TextSearchBox**封装在 `Trim()` 函数中，因为用户在空格上搜索无效。 @No__t-0 操作封装在一个 @no__t 的函数中，这意味着仅当搜索框包含用户输入的文本时才执行该操作。 这可以提高性能。 
+  由于在空格上进行的用户搜索无效， **TextSearchBox**包装在 `Trim()` 函数中。 `Office365Users.SearchUser` 操作包装在 `If(!IsBlank(Trim(TextSearchBox.Text)) ... )` 函数中，这意味着仅当搜索框包含用户输入的文本时才执行该操作。 这可以提高性能。 
 
 ### <a name="people-browse-gallery-title-control"></a>用户浏览库标题控件
 
    ![PeopleBrowseGallery 标题控件](media/email-screen/email-browse-gall-title.png)
 
-* 知识产权**文本**<br>
+* 属性：**文本**<br>
     值： `ThisItem.DisplayName`
 
   显示用户在其 Office 365 配置文件中的显示名称。
 
-* 知识产权**OnSelect**<br>
-    负值将用户添加到应用程序级集合的代码，然后选择用户：
+* 属性： **OnSelect**<br>
+    值：要将用户添加到应用程序级集合的代码，然后选择用户：
 
     ```powerapps-dot
     Concurrent(
@@ -130,13 +130,13 @@ ms.locfileid: "71995690"
 
    ![EmailPeopleGallery 控件](media/email-screen/email-people-gall.png)
 
-* 知识产权**项**<br>
+* 属性：**项**<br>
     值： `MyPeople`
 
   这是通过选择**PeopleBrowseGallery 标题**控件进行初始化或添加到的人员的集合。
 
-* 知识产权**高**<br>
-    负值用于根据库中当前的项数设置高度的逻辑：
+* 属性：**高度**<br>
+    值：用于设置高度的逻辑，基于库中当前项目的数目：
 
     ```powerapps-dot
     Min( 
@@ -148,9 +148,9 @@ ms.locfileid: "71995690"
 
   此库的高度将调整为库中的项目数，最大高度为304。
   
-  它将 `TemplateHeight + TemplatePadding * 2` 作为**EmailPeopleGallery**的单个行的总高度，然后将其与行数相乘。 由于 `WrapCount = 2`，因此 @no__t 的实际行数为-1。
+  它将 `TemplateHeight + TemplatePadding * 2` 作为**EmailPeopleGallery**的单个行的总高度，然后将其乘以行数。 由于 `WrapCount = 2`，因此 `RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2, 0)`的实际行数。
 
-* 知识产权**ShowScrollbar**<br>
+* 属性： **ShowScrollbar**<br>
     值： `EmailPeopleGallery.Height >= 304`
   
   当库的高度达到304时，滚动条可见。
@@ -159,7 +159,7 @@ ms.locfileid: "71995690"
 
    ![EmailPeopleGallery 标题控件](media/email-screen/email-people-gall-text.png)
 
-* 知识产权**OnSelect**<br>
+* 属性： **OnSelect**<br>
     值： `Set(_selectedUser, ThisItem)`
 
   将 **_selectedUser**变量设置为在**EmailPeopleGallery**中选定的项。
@@ -168,15 +168,15 @@ ms.locfileid: "71995690"
 
    ![MonthDayGallery 标题控件](media/email-screen/email-people-gall-delete.png)
 
-* 知识产权**OnSelect**<br>
+* 属性： **OnSelect**<br>
     值： `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
   在**MyPeople**集合中查找记录，其中**UserPrincipalName**与选定项的**userprincipalname**匹配，并从集合中删除该记录。
 
 ## <a name="mail-icon"></a>邮件图标
 
-* 知识产权**OnSelect**<br>
-    负值用于发送用户电子邮件的逻辑：
+* 属性： **OnSelect**<br>
+    值：用于发送用户电子邮件的逻辑：
 
     ```powerapps-dot
     Set( _emailRecipientString, Concat( MyPeople, Mail & ";" ) );
@@ -191,14 +191,14 @@ ms.locfileid: "71995690"
     ```
 
   发送电子邮件需要用分号分隔的电子邮件地址字符串。 在前面的代码中：
-  1. 第一行代码将**MyPeople**集合中的所有行中的**Mail**字段连接到单个字符串（由分号分隔），并将 **_emailRecipientString**变量设置为该字符串负值.
+  1. 第一行代码将**MyPeople**集合中的所有行中的**Mail**字段连接到单个字符串（由分号分隔），并将 **_emailRecipientString**变量设置为该字符串值。
 
   1. 然后，它使用[Office365. SendEmail](https://docs.microsoft.com/connectors/office365/#sendemail)操作向收件人发送电子邮件。
-    操作包含三个必需参数： "**到**"、"**主题**" 和 "**正文**"，以及一个可选参数--**重要性**。 在前面的代码中，这些是 **_emailRecipientString**、 **TextEmailSubject**。Text、 **TextEmailMessage**。Text 和**Normal**。
+    操作包含三个必需参数： "**到**"、"**主题**" 和 "**正文**"，以及一个可选参数--**重要性**。 在前面的代码中，这些是 **_emailRecipientString**的**TextEmailSubject**。Text、 **TextEmailMessage**。Text 和**Normal**。
   1. 最后，它会重置**TextEmailSubject**和**TextEmailMessage**控件，并清除**MyPeople**集合。
 
-* 知识产权**DisplayMode**<br>
-    负值`If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ), DisplayMode.Edit, DisplayMode.Disabled )` 表示发送电子邮件，则电子邮件主题行必须包含文本，收件人（**MyPeople**）集合不得为空。
+* 属性： **DisplayMode**<br>
+    值：要发送的电子邮件的 `If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ), DisplayMode.Edit, DisplayMode.Disabled )`，电子邮件主题行必须包含文本，收件人（**MyPeople**）集合不得为空。
 
 ## <a name="next-steps"></a>后续步骤
 
