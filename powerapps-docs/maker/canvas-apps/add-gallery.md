@@ -24,7 +24,7 @@ ms.locfileid: "73540932"
 
 通过向画布应用添加[库](controls/control-gallery.md)控件，显示任意数据源中项的列表。 本主题使用 Excel 作为数据源。 筛选该列表，方法是：将库控件配置为仅显示那些与[文本输入](controls/control-text-input.md)控件中的筛选器条件匹配的项。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 - 了解如何在 PowerApps 中[添加和配置控件](add-configure-controls.md)。
 
