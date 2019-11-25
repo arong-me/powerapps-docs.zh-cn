@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/25/2016
+ms.date: 11/22/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e17f580a98013f385080ea1189281607825ce7a8
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 7dd961568fe9cf2a9eb58ad761403b20c99824be
+ms.sourcegitcommit: 8f32eed48adf4b24b9ca607bbf6db3d19749c46f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649877"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74415506"
 ---
 # <a name="text-input-control-in-powerapps"></a>PowerApps 中的文本输入控件
 用户可在其中键入文本、数字和其他数据的框。
@@ -55,6 +55,8 @@ ms.locfileid: "73649877"
 **[DisabledColor](properties-color-border.md)** – 控件的 **[DisplayMode](properties-core.md)** 属性设置为 Disabled**Disabled** 时，该控件中的文本颜色。
 
 **[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode” **[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
+
+**EnableSpellCheck** –文本输入控件是否应使用浏览器拼写检查函数。 适用于 Windows 的 Power Apps 不支持此属性。
 
 **[Fill](properties-color-border.md)** – 控件的背景色。
 
