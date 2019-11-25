@@ -4,24 +4,30 @@ description: 了解如何创建解决方案
 ms.custom: ''
 ms.date: 10/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Mattp123
 ms.assetid: e21a4876-08b4-417a-a644-c577a27c5cf1
 caps.latest.revision: 12
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9e57aa7395b6c8fdbcfe35c944f625d9790f592a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757652"
 ---
 # <a name="create-a-solution"></a>创建解决方案
 
@@ -29,7 +35,7 @@ search.app:
   
  有关解决方案概念的详细信息，请参阅[使用解决方案](solutions-overview.md)。  
   
-1.  登录 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后从左侧导航中选择**解决方案**。 
+1.  登录 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后从左侧导航中选择**解决方案**。 
   
 2.  选择**新建解决方案**，然后填写解决方案的必填字段。
   
@@ -51,7 +57,7 @@ search.app:
   
  执行此操作时，可能会出现**缺少必需组件** 对话框。  
    
- ![“添加必需组件”对话框](media/crm-itpro-cust-addrequiredcomponents.PNG "“添加必需组件”对话框")  
+ ![添加必需组件对话](media/crm-itpro-cust-addrequiredcomponents.PNG "添加必需组件对话")  
   
  此对话框提醒您该解决方案组件依赖于其他解决方案组件。 如果选择**否，不包含必需组件** ，则解决方案可能会在您将其导入到所有这些必需组件都不存在的其他组织中时可能会失败。 如果解决方案导入成功，则另一解决方案中的行为可能并不与原始组织完全相同，因为组件的配置方式不同于源解决方案中的组件。  
   

@@ -9,10 +9,16 @@ ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fa1602b59ed0fdfeec09a8bc7e5f1126249f071f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757476"
 ---
 # <a name="open-entity-data-in-excel"></a>在 Excel 中打开实体数据
 通过在 Microsoft Excel 中打开实体数据，可以使用 Microsoft PowerApps Excel 加载项快速轻松地查看和编辑数据。 PowerApps Excel 加载项需要 Microsoft Excel 2016。
@@ -20,7 +26,7 @@ search.app:
 ![Excel 加载项](./media/data-platform-cds-excel-addin/ExcelAddin.png "PowerApps Excel 加载项")
 
 ## <a name="open-entity-data-in-excel"></a>在 Excel 中打开实体数据
-1. 在 [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**实体**。 将显示所有实体。
+1. 在 [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**实体**。 将显示所有实体。
 2. 单击您感兴趣的实体右侧的省略号 (...)。
 3. 单击**在 Excel 中打开**，然后打开生成的工作簿。 此工作簿具有实体的绑定信息、您的环境的指针，以及 PowerApps Excel 加载项的指针。  
 4. 在 Excel 中，单击**启用编辑**启用要运行的 PowerApps Excel 加载项。 Excel 加载项在 Excel 窗口右侧的窗格中运行。
@@ -78,6 +84,6 @@ Excel 加载项自动读取所选实体的数据。 请注意，在 Excel 加载
 ## <a name="next-steps"></a>后续步骤
 * [管理实体中的字段](data-platform-manage-fields.md)
 * [定义实体之间的关系](data-platform-entity-lookup.md)
-* [使用 Common Data Service 生成应用程序](../canvas-apps/data-platform-create-app.md)
-* [使用 Common Data Service 从头创建应用程序](../canvas-apps/data-platform-create-app-scratch.md)
+* [使用 Common Data Service 生成应用](../canvas-apps/data-platform-create-app.md)
+* [使用 Common Data Service 从头开始创建应用](../canvas-apps/data-platform-create-app-scratch.md)
 

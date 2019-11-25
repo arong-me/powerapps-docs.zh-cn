@@ -5,12 +5,17 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 4a27a5364a4ae12fecc3a72dbb52115e415dcdb8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708163"
 ---
-
 # <a name="understand-liquid-operators"></a>了解 Liquid 运算符
 
 Liquid 可以访问所有公共逻辑和比较运算符。 这些可用于标记中，例如，**如果**和**除非**。

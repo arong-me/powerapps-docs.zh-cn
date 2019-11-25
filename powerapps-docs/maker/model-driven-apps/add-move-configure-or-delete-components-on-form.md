@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a40b0b9e5fc64856be931a2407a451c8d27ef8ec
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702355"
 ---
-
 # <a name="add-configure-move-or-delete-components-on-a-form"></a>添加、配置、移动或删除窗体中的组件  
 通过使用窗体设计器，开发者可以轻松添加和配置热门组件，例如[子网格](form-designer-add-configure-subgrid.md)、[快速视图](form-designer-add-configure-quickview.md)、弧形旋钮、线性滑块等。
 
@@ -30,7 +35,7 @@ search.app:
 要将组件添加到窗体中，请使用**组件**窗格。 **组件**窗格还允许您搜索以快速找到组件。  
 
 > [!div class="mx-imgBorder"] 
-> ![](media/FormDesignerComponentsPane.PNG "组件窗格")
+> ![](media/FormDesignerComponentsPane.PNG "Components pane")
 
 ### <a name="add-components-to-a-form-using-drag-and-drop"></a>使用拖放将组件添加到窗体
 > [!NOTE]

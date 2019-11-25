@@ -4,30 +4,36 @@ description: 了解如何创建、管理和使用自动编号字段
 keywords: ''
 ms.date: 02/26/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: daemelia
-ms.assetid: null
+ms.assetid: ''
 ms.author: daemelia
 manager: kvivek
 ms.reviewer: Mattp123
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5735e425dd0d19dd5e52603433d56cc37e897cd6
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758356"
 ---
 # <a name="autonumber-fields"></a>自动编号字段
 
 自动编号字段是在创建时即自动生成字母数字字符串的字段。 制造商可以按其偏好自定义这些字段的格式，然后依靠系统在运行时生成自动填充它们的匹配值。
 
-虽然自动编号字段形式上只是文本字段，具有在其基础上构建的额外功能，而 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 通过在**文本**类别下将**自动编号**呈现为不同的数据类型来简化了这个概念。 务必注意，[经典解决方案资源管理器](use-solution-explorer.md#classic-solution-explorer)不支持创建或管理自动编号字段。
+虽然自动编号字段形式上只是文本字段，具有在其基础上构建的额外功能，而 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 通过在**文本**类别下将**自动编号**呈现为不同的数据类型来简化了这个概念。 务必注意，[经典解决方案资源管理器](use-solution-explorer.md#classic-solution-explorer)不支持创建或管理自动编号字段。
 
 若要创建自动编号字段，请遵循用于[创建字段](create-edit-field-portal.md#create-a-field)的相同步骤，只需从**数据类型**下拉列表框中选择**自动编号**。 
 
@@ -64,7 +70,7 @@ search.app:
 
 ## <a name="create-an-autonumber-field"></a>创建自动编号字段
   
-1.  登录到 [PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1.  登录到 [PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
   
 2.  在左侧窗格上，展开**数据**，然后选择**实体**。
   
@@ -75,7 +81,7 @@ search.app:
 5.  在右侧窗格中，输入**显示名称**并为**数据类型**选择**自动编号**。
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/create-autonumber-field.png "创建自动编号字段")
+    > ![](media/create-autonumber-field.png "Create an autonumber field")
   
 6. 根据需要设置可选字段。 更多信息：[创建和编辑字段](create-edit-field-portal.md#create-a-field)
 

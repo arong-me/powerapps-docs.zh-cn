@@ -8,22 +8,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 00e62904-2ce9-4730-a113-02b1fedbf22e
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1d763fd341c3537f908720ea9616b1646bda1745
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2704819"
 ---
-
 # <a name="embed-a-canvas-app-on-a-model-driven-form"></a>在模型驱动的窗体上嵌入区域应用
 
 制作者可使用区域应用和低码 WYSIWYG 区域应用设计器轻松设计和创建自定义布局。 制作者还可以使用区域应用在窗体中显示来自超过200 个数据源的数据。
@@ -31,7 +36,7 @@ search.app:
 通过嵌入式区域应用，制作者可以在模型驱动的窗体上利用区域应用。 可使用嵌入式区域应用在窗体上轻松创建丰富的视觉区域，以及在来自 Common Data Service 的数据旁边显示各种来源的数据。
 
    > [!div class="mx-imgBorder"] 
-   > ![模型驱动的应用窗体中的嵌入式区域应用](media/embed-canvas-app-in-form.png "模型驱动的应用窗体中的嵌入式区域应用")
+   > ![模型驱动应用窗体中的嵌入式画布应用](media/embed-canvas-app-in-form.png "模型驱动应用窗体中的嵌入式画布应用")
 
 区域应用嵌入模型驱动的窗体中的方式与添加其他自定义控件的方式相同。 嵌入式区域应用中包含丰富的数据集成功能，可以将上下文数据从主机模型驱动的窗体导入到嵌入式区域应用。 详细信息：[在模型驱动窗体上添加嵌入式区域应用](embedded-canvas-app-add-classic-designer.md)。
 
@@ -40,7 +45,7 @@ search.app:
 有关使用嵌入式区域应用的指南和有助于诊断可能遇到的任何问题的提示，请参阅：[嵌入式区域应用使用指南](embedded-canvas-app-guidelines.md)。
 
 ## <a name="see-also"></a>另请参阅
-[PowerApps 中的区域应用是什么？](../canvas-apps/getting-started.md) <br />
+[PowerApps 中的画布应用是什么？](../canvas-apps/getting-started.md) <br />
 [在 PowerApps 中添加和配置区域应用控件](../canvas-apps/add-configure-controls.md) <br />
 [适用于 PowerApps 的区域应用连接器概述](../canvas-apps/connections-list.md) <br />
 [在模型驱动窗体上添加嵌入式区域应用](embedded-canvas-app-add-classic-designer.md) <br />

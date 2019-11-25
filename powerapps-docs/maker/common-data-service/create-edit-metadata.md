@@ -9,26 +9,31 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 88b18946-474c-4c94-8e4c-27532f930757
 caps.latest.revision: 28
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3aeb07c29178570ca17426cca46dd7cbc73a2aca
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2706975"
 ---
-
 # <a name="entities-and-metadata-in-common-data-service"></a>Common Data Service 中的实体和元数据
 
-Common Data Service 的设计是让您可以快速轻松地为您的应用程序创建数据模型。 通常，您应该不必担心本主题将介绍的元数据的一些详细信息。 但是，如果要深入了解使用 Common Data Service 的应用程序如何工作，或您在评估可能性，了解 Common Data Service 使用的元数据可能为您提供见解。
+Common Data Service 的设计是让您可以快速轻松地为您的应用程序创建数据模型。 通常，您应该不必担心本主题将介绍的元数据的一些详细信息。 但是，如果要深入了解使用 Common Data Service 的应用如何工作，或您在评估可能性，了解 Common Data Service 使用的元数据可能为您提供见解。
 
-“*元数据*”指的是有关数据的数据。 Common Data Service 为您提供了一个灵活的平台，因为它在编辑环境要使用的数据定义上相对容易。 在 Common Data Service 中，元数据是实体的集合。 实体描述存储在数据库中的数据种类。  每个实体对应于一个数据库表，实体中的每个字段（也称为属性）代表该表中的一列。 实体元数据可以控制您能创建的记录种类以及可以对记录执行的操作种类。 在使用自定义工具创建或编辑实体、字段和实体关系时，您在编辑此元数据。 
+*元数据*指的是有关数据的数据。 Common Data Service 为您提供了一个灵活的平台，因为它在编辑环境要使用的数据定义上相对容易。 在 Common Data Service 中，元数据是一个实体的集合。 实体描述存储在数据库中的数据种类。  每个实体对应于一个数据库表，实体中的每个字段（也称为属性）代表该表中的一列。 实体元数据可以控制您能创建的记录种类以及可以对记录执行的操作种类。 在使用自定义工具创建或编辑实体、字段和实体关系时，您在编辑此元数据。 
   
 用户用于与环境中的数据交互的不同客户端会依赖实体元数据，并随元数据的自定义进行调整。 但是，这些客户端要依赖其他数据来控制要显示的可视元素、要应用的自定义逻辑以及安全性应用方式。 此系统数据也存储在实体中，但实体本身不可用于自定义。
 

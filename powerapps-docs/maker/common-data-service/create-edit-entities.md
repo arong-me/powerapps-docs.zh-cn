@@ -9,18 +9,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.assetid: fa04f99d-a5f9-48cb-8bfb-f0f50718ccee
 caps.latest.revision: 41
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ba8fe12a9ecffa0ffb1116546d2bfe9ab2c62ac8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758048"
 ---
 # <a name="create-and-edit-entities-in-common-data-service"></a>在 Common Data Service 中创建和编辑实体
 
@@ -30,7 +36,7 @@ search.app:
 
 |设计器| 说明|
 |--|--|
-|[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息： <br />[教程：在 PowerApps 中创建包含组件的自定义实体](/powerapps/maker/common-data-service/create-custom-entity)<br />[使用 PowerApps 门户创建和编辑实体](create-edit-entities-portal.md)|
+|[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息： <br />[教程：在 PowerApps 中创建包含组件的自定义实体](/powerapps/maker/common-data-service/create-custom-entity)<br />[使用 PowerApps 门户创建和编辑实体](create-edit-entities-portal.md)|
 |解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。 <br />详细信息[使用解决方案资源管理器创建和编辑实体](create-edit-entities-solution-explorer.md)|
 
 > [!NOTE]
@@ -80,7 +86,7 @@ search.app:
   |**针对 Phone Express 启用**|使此实体对 Dynamics 365 for phones 应用程序可用。|
   |**邮件合并**|用户可以将此实体用于邮件合并。|
   |**Dynamics 365 for Outlook 的脱机功能**|当 Dynamics 365 for Outlook 应用程序未连接到网络时，此实体中的数据是否可用。|
-  |**Dynamics 365 for Outlook 中的阅读窗格**|实体是否在 Dynamics 365 for Outlook 应用程序的阅读窗格中可见。|
+  |**Dynamics 365 for Outlook 中的阅读窗格**|实体是否在 Dynamics 365 for Outlook 应用的阅读窗格中可见。|
   |**使用自定义帮助**|启用后，设置帮助 URL 来控制用户在单击应用程序中的帮助按钮时他们将看到的页面。 使用此设置来提供特定于您公司的实体流程的指导。|
 
 

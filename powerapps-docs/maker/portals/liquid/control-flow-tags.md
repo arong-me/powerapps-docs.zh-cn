@@ -5,12 +5,17 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 77fcc7db0adf68cd6decbcc95e11d8e803761535
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708559"
 ---
-
 # <a name="control-flow-tags"></a>控制流标记
 
 控制流标记确定应执行哪个代码块，以及基于特定条件应呈现哪些内容ߝ。 条件使用可用的 [Liquid 运算符](liquid-operators.md)构建，或只是基于[给定值的真或假](liquid-conditional-operators.md)。  

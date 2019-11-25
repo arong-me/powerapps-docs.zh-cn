@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: 0b4e6602-5701-4859-81cc-6f6fe50901b2
 caps.latest.revision: 44
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 24e1ed3f2c2836bef1d861a2ef6b4b1f61dc09b9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702619"
 ---
 # <a name="apply-business-logic-in-common-data-service"></a>在 Common Data Service 中应用业务逻辑
 
@@ -30,7 +36,7 @@ search.app:
 > [!NOTE]
 > 若要定义应用于模型驱动的应用程序中的窗体的业务规则，请参阅[为模型驱动的应用程序窗体创建业务规则](../model-driven-apps/create-business-rules-recommendations-apply-logic-form.md)
 
-也可以使用经典 Common Data Service 流程，其形式为工作流和操作。 详细信息：[Microsoft Flow：使用工作流流程](/flow/workflow-processes)和 [Microsoft Flow：操作概述](/flow/actions)。
+也可以使用经典 Common Data Service 流程，其形式为工作流和操作。 详细信息：[Microsoft Flow：使用工作流过程](/flow/workflow-processes)和[Microsoft Flow：操作概述](/flow/actions)。
 
 ## <a name="see-also"></a>另请参阅
 

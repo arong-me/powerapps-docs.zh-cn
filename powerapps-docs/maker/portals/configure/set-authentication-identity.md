@@ -1,6 +1,6 @@
 ---
-title: 设置门户的身份验证标识 |MicrosoftDocs
-description: 设置门户身份验证标识的说明。
+title: 设置门户的身份验证标识 | MicrosoftDocs
+description: 有关如何设置门户的身份验证标识的说明。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,36 +11,36 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 44b45a019b786da01dc686ecb69f068ce1d7eef8
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542674"
+ms.locfileid: "2756420"
 ---
-# <a name="set-authentication-identity-for-a-portal"></a>设置门户的身份验证标识
+# <a name="set-authentication-identity-for-a-portal"></a>设置门户的身份验证身份
 
-门户提供了基于[ASP.NET Identity](https://www.asp.net/identity) API 构建的身份验证功能。 ASP.NET Identity 在[OWIN](https://www.asp.net/aspnet/overview/owin-and-katana)框架的基础上建立，这也是身份验证系统的重要组成部分。 提供的服务包括：
+门户提供基于 [ASP.NET 身份](https://www.asp.net/identity) API 构建的身份验证功能。 ASP.NET 身份反之基于 [OWIN](https://www.asp.net/aspnet/overview/owin-and-katana) 框架构建，此框架是身份验证系统的重要组件。 提供的服务包括：
 
 - 本地（用户名/密码）用户登录
-- 外部（社交提供商）用户通过第三方标识提供程序登录
-- 通过电子邮件进行双重身份验证
+- 通过第三方身份提供程序的外部（社交提供程序）用户登录
+- 使用电子邮件的双因素身份验证
 - 电子邮件地址确认
 - 密码恢复
-- 注册预先生成联系人记录的邀请代码
+- 注册预生成的联系人记录的邀请代码注册
 
 > [!NOTE]
-> 联系人实体的门户联系人窗体上的 "**手机确认**" 字段当前不起作用。 仅当从 Adxstudio 门户升级时，才能使用此字段。
+> 联系人实体的门户联系人窗体上的**已确认移动电话号码**当前没有用。 只有当从 Adxstudio Portals 升级时才必须使用此字段。
 
 ## <a name="requirements"></a>要求
 
 门户要求：
 
-- 门户基
-- [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)] 标识
-- [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)] 标识工作流解决方案包
+- 门户基础
+- [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)] 身份
+- [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)] 身份工作流解决方案包
 
 ## <a name="authentication-overview"></a>身份验证概述
 
-返回门户访问者可以使用本地用户凭据或外部标识提供者帐户进行身份验证。 新的访问者可以通过提供用户名和密码或通过外部提供商登录来注册新用户帐户。 发送邀请代码（由门户管理员提供）的访问者可以选择兑换注册新用户帐户的过程中的代码。
+返回门户访问者可以使用本地用户凭据或外部身份提供程序帐户进行身份验证。 新访问者可以通过提供用户名和密码或通过外部提供程序登录来注册新用户帐户。 发送邀请代码（由门户管理员）的访问者可以选择在新用户帐户的注册流程中清除代码。
 
 **相关站点设置：**
 
@@ -52,66 +52,66 @@ ms.locfileid: "73542674"
 - `Authentication/Registration/RememberMeEnabled`
 - `Authentication/Registration/ResetPasswordEnabled`
 
-### <a name="sign-in-by-using-a-local-identity-or-external-identity"></a>使用本地标识或外部标识登录
+### <a name="sign-in-by-using-a-local-identity-or-external-identity"></a>使用本地身份或外部身份登录
 
 ![使用本地帐户登录](../media/sign-in-local-account.png "使用本地帐户登录")  
 
-### <a name="sign-up-by-using-a-local-identity-or-external-identity"></a>使用本地标识或外部标识注册
+### <a name="sign-up-by-using-a-local-identity-or-external-identity"></a>使用本地身份或外部身份注册
 
 ![注册新的本地帐户](../media/register-new-local-account.png "注册新的本地帐户")  
 
-### <a name="redeem-an-invitation-code-manually"></a>手动兑换邀请代码
+### <a name="redeem-an-invitation-code-manually"></a>手动清除邀请代码
 
-![使用邀请代码注册](../media/sign-up-invitation-code.png "使用邀请代码注册")  
+![使用邀请码注册](../media/sign-up-invitation-code.png "使用邀请码注册")  
 
-## <a name="forgot-password-or-password-reset"></a>忘记了密码或密码重置 
+## <a name="forgot-password-or-password-reset"></a>忘记密码或密码重置 
 
-如果需要重置密码（并且以前在其用户配置文件上指定了电子邮件地址），则可以请求将密码重置令牌发送到其电子邮件帐户。 使用重置令牌，其所有者可以选择新密码。 或者，可以放弃该令牌，使用户的原始密码不受修改。
+需要密码重置的返回访问者（之前已在用户配置文件中指定了电子邮件地址）可以请求将密码重置令牌发送到他们的电子邮件帐户。 重置令牌允许其所有者选择新密码。 或者，令牌可以丢弃保留用户的原始密码，不修改。
 
 **相关站点设置：**
 
 - `Authentication/Registration/ResetPasswordEnabled`
 - `Authentication/Registration/ResetPasswordRequiresConfirmedEmail`
 
-**相关进程：** 向联系人发送密码重置
+**相关流程：** 将密码重置发送到联系人
 
-1.  根据需要自定义工作流中的电子邮件。
-2.  提交电子邮件以调用进程。
-3.  系统将提示访问者检查电子邮件。
-4.  访问者接收密码重置电子邮件，说明。
+1.  根据需要在工作流中自定义电子邮件。
+2.  提交电子邮件到调用流程。
+3.  提示访问者检查电子邮件。
+4.  访问者收到包含说明的密码重置电子邮件。
 5.  访问者返回到重置窗体。
-6.  密码重置已完成。
+6.  密码重置完成。
 
 ## <a name="redeem-an-invitation"></a>兑换邀请
 
-兑换邀请代码允许注册访问者与专门为该访问者预先准备的现有联系人记录相关联。 通常，邀请代码通过电子邮件发送出去，但你可以使用一般代码提交窗体通过其他渠道发送代码。 提交有效的邀请代码后，将进行普通用户注册（注册）过程以设置新用户帐户。
+清除邀请代码允许注册访问者与专门为该访问者提前准备的现有联系人记录关联。 通常，邀请代码通过电子邮件发送出去，但您可以使用一般代码提交窗体通过其他渠道发送代码。 有效邀请代码提交后，常规用户注册流程开始以设置新的用户帐户。
 
 **相关站点设置：**
 
 `Authentication/Registration/InvitationEnabled`
 
-**相关进程：** 发送邀请
+**相关流程：** 发送邀请
 
-必须使用门户上兑换邀请页面的 URL 自定义此工作流发送的电子邮件： https://portal.contoso.com/register/?returnurl=%2f&invitation={Invitation 代码（邀请）}
+必须在门户中使用清除邀请页面的 URL 自定义此工作流发送的电子邮件：https://portal.contoso.com/register/?returnurl=%2f&invitation={Invitation Code(Invitation)}
 
-1. 为新联系人创建邀请。
+1. 创建针对新联系人的邀请。
 
-    ![为新联系人创建邀请](../media/create-invitation.png "为新联系人创建邀请")  
+    ![创建针对新联系人的邀请](../media/create-invitation.png "创建针对新联系人的邀请")  
 
 2. 自定义并保存新邀请。
 
     ![自定义新邀请](../media/customize-new-invitation.png "自定义新邀请")  
 
-3. 过程：发送邀请
+3. 流程：发送邀请
 4. 自定义邀请电子邮件。
 5. 邀请电子邮件打开兑换页面。
-6. 用户使用提交的邀请代码进行注册。
+6. 用户使用提交的邀请代码注册。
 
-    ![使用邀请代码注册](../media/sign-up-invitation-code.png "使用邀请代码注册")  
+    ![使用邀请码注册](../media/sign-up-invitation-code.png "使用邀请码注册")  
 
 ## <a name="manage-user-accounts-through-profile-pages"></a>通过配置文件页管理用户帐户
 
-经过身份验证的用户通过配置文件页的**安全**导航栏来管理他们的用户帐户。 用户不限于在用户注册时选择的单个本地帐户或单个外部帐户。 具有外部帐户的用户可以选择通过应用用户名和密码来创建本地帐户。 使用本地帐户启动的用户可以选择将多个外部标识关联到其帐户。 通过请求将确认电子邮件发送到电子邮件帐户，"配置文件" 页也会提醒用户确认其电子邮件地址。
+通过身份验证的用户通过配置文件页的**安全**导航栏管理其用户帐户。 用户不限于在用户注册时选择的单个本地帐户或单个外部帐户。 具有外部帐户的用户可以选择通过应用用户名和密码创建本地帐户。 从本地帐户开始的用户可以选择将多个外部身份关联到其帐户。 配置文件页也是提示用户请求确认其电子邮件地址的位置，方法是通过请求将确认电子邮件发送到其电子邮件帐户。
 
 **相关站点设置：**
 
@@ -121,159 +121,159 @@ ms.locfileid: "73542674"
 
 ## <a name="set-or-change-a-password"></a>设置或更改密码
 
-具有现有本地帐户的用户可以通过提供原始密码来应用新密码。 没有本地帐户的用户可以选择用户名和密码来设置新的本地帐户。 设置用户名后，不能对其进行更改。
+具有现有本地帐户的用户可以通过提供原始密码应用新密码。 没有本地帐户的用户可以选择用户名和密码来设置新本地帐户。 用户名设置之后无法更改。
 
 **相关站点设置：**
 
 `Authentication/Registration/LocalLoginEnabled`
 
-**相关进程：**
+**相关流程：**
 - 创建用户名和密码。
 - 更改现有密码。
 
 ## <a name="confirm-an-email-address"></a>确认电子邮件地址
 
-更改电子邮件地址（或首次设置它）会将其置于未确认状态。 用户可以请求将确认电子邮件发送到新的电子邮件地址，并且电子邮件将向用户提供完成电子邮件确认过程的说明。
+更改电子邮件地址（或首次设置）让其处于未确认的状态。 用户可以请求将确认电子邮件发送到自己的新电子邮件地址，而该电子邮件中将包含有关用户如何完成电子邮件确认流程的说明。
 
-**相关进程：** 向联系人发送电子邮件确认
+**相关流程：** 将电子邮件确认发送给联系人
 
-1. 根据需要自定义工作流中的电子邮件。 
-2. 用户提交新的电子邮件，该电子邮件处于未确认状态。
+1. 根据需要在工作流中自定义电子邮件。 
+2. 用户提交新电子邮件，该电子邮件的状态为未确认。
 3. 用户检查电子邮件以确认。
-4. 处理：向联系人发送电子邮件确认
+4. 流程：将电子邮件确认发送给联系人
 5. 自定义确认电子邮件。
-6. 用户单击确认链接即可完成确认过程。
+6. 用户点击确认链接以完成确认流程。
 
 > [!NOTE]
-> 确保为联系人指定了主电子邮件，因为确认电子邮件只发送到联系人的主电子邮件（emailaddress1）。 确认电子邮件不会发送到联系人记录的辅助电子邮件（emailaddress2）或备用电子邮件（emailaddress3）。
+> 确保为联系人指定主要电子邮件，因为确认电子邮件仅发送给联系人的主要电子邮件 (emailaddress1)。 确认电子邮件将不发送给联系人记录的次要电子邮件 (emailaddress2) 或备用电子邮件 (emailaddress3)。
 
 ## <a name="enable-two-factor-authentication"></a>启用双因素身份验证
 
-双重身份验证功能通过要求对已确认电子邮件的所有权以及标准的本地或外部帐户登录来提高用户帐户的安全性。 如果用户尝试登录到已启用双因素身份验证的帐户，则会将安全代码发送到与其帐户关联的确认电子邮件。 必须提交安全代码才能完成登录过程。 用户可以选择记住成功通过验证的浏览器，这样，从同一浏览器登录的后续登录就不需要使用安全代码。 每个用户帐户单独启用此功能，并需要确认电子邮件。
+双因素身份验证功能提高用户帐户的安全性，方法是除标准本地或外部帐户登录之外，还需要证明确认的电子邮件的所有权。 尝试登录启用了双因素身份验证帐户的用户将通过与其帐户关联的确认的电子邮件收到安全代码。 安全代码必须提交才能完成登录流程。 用户可以选择记住成功通过验证的浏览器，这样在后续登录相同浏览器时就不需要提供安全代码。 每个用户帐户单独启用此功能，还需要确认的电子邮件。
 
 > [!WARNING]
-> 如果创建并启用**Authentication/Registration/MobilePhoneEnabled**站点设置以启用旧功能，则会发生错误。 此站点设置不会现成提供，门户不支持此设置。
+> 如果您创建并启用 **Authentication/Registration/MobilePhoneEnabled** 网站设置来启用旧功能，将出现错误。 此站点设置不是现成提供的，门户不支持。
 
 **相关站点设置：**
 
 - `Authentication/Registration/TwoFactorEnabled`
 - `Authentication/Registration/RememberBrowserEnabled`
 
-**相关进程：** 向联系人发送电子邮件双因素代码
+**相关流程：** 发送电子邮件双因素代码给联系人
 
 1. 启用双因素身份验证。
 2. 选择通过电子邮件接收安全代码。
 3. 等待包含安全代码的电子邮件。
-4. 处理：向联系人发送电子邮件两个因素代码。
-5. 可以禁用双因素身份验证。
+4. 流程：发送电子邮件双因素代码给联系人。
+5. 双因素身份验证可禁用。
 
 ## <a name="manage-external-accounts"></a>管理外部帐户
 
-经过身份验证的用户可以将多个外部标识连接（注册）到其用户帐户，每个配置的标识提供程序都有一个。 连接标识后，用户可以选择使用任何连接的标识进行登录。 还可以断开现有标识，只要单个外部标识或本地标识保留。
+通过身份验证的用户可以将多个外部身份连接（注册）到其用户帐户，配置的身份提供程序每个一个。 连接身份后，用户可以选择通过连接的任意身份登录。 只要一个本地身份或外部身份保留，现有身份也可以断开连接。
 
-**相关站点设置：**
+**相关网站设置：**
 
 - `Authentication/Registration/ExternalLoginEnabled`
 
-**外部标识提供者站点设置**
+**外部身份提供程序网站设置**
 
 1.  选择要连接到用户帐户的提供程序。
 
     ![管理外部帐户](../media/manage-external-accounts.png "管理外部帐户")  
 
-2.  使用要连接的提供者登录。
+2.  使用要连接的提供程序登录。
 
-提供程序现已连接。 该提供程序还可以断开连接。
+提供程序现在已连接。 也可以断开提供程序。
 
-## <a name="enable-aspnet-identity-authentication"></a>启用 ASP.NET 标识身份验证
+## <a name="enable-aspnet-identity-authentication"></a>启用 ASP.NET 身份验证
 
-下面介绍了启用和禁用各种身份验证功能和行为的设置：
+下文介绍了启用和禁用各种身份验证功能和行为的设置：
 
 
-|                        站点设置名称                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  描述                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|                        网站设置名称                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|          Authentication/Registration/LocalLoginEnabled          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     启用或禁用基于用户名（或电子邮件）和密码的本地帐户登录。 默认值： false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|          Authentication/Registration/LocalLoginByEmail          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               使用电子邮件地址字段（而不是用户名字段）启用或禁用本地帐户登录。 默认值： false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-|        Authentication/Registration/ExternalLoginEnabled         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  启用或禁用外部帐户登录和注册。 默认值： true                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|          Authentication/Registration/RememberMeEnabled          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          选择或清除 "记住我"？当 web 浏览器关闭时，本地登录上的复选框允许经过身份验证的会话保持。 默认值： true                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|          Authentication/Registration/TwoFactorEnabled           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        启用或禁用用于启用双因素身份验证的用户选项。 具有确认电子邮件地址的用户可以选择添加双重身份验证的安全性。 默认值： false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|       Authentication/Registration/RememberBrowserEnabled        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                选择或清除 "记住浏览器"？用于保留第二因素验证（电子邮件代码）的复选框，以保留当前浏览器的第二重验证。 只要正在使用同一个浏览器，则不会要求用户在后续登录时传递第二因素验证。 默认值： true                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|        Authentication/Registration/ResetPasswordEnabled         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         启用或禁用密码重置功能。 默认值： true                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Authentication/Registration/ResetPasswordRequiresConfirmedEmail |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               仅为已确认的电子邮件地址启用或禁用密码重置。 如果启用，则不能使用未确认的电子邮件地址发送密码重置说明。 默认值： false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|   Authentication/Registration/TriggerLockoutOnFailedPassword    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          启用或禁用失败密码尝试的记录。 如果禁用，则不会锁定用户帐户。默认值： true                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|             Authentication/Registration/IsDemoMode              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          启用或禁用演示模式标志，仅用于开发或演示环境。 不要在生产环境中启用此设置。 演示模式还要求 web 浏览器在本地运行到 web 应用程序服务器。 启用 "演示模式" 后，将向用户显示密码重置代码和第二因素代码，以便快速访问。 默认值： false                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|    Authentication/Registration/LoginButtonAuthenticationType    | 如果门户只需要一个外部标识提供者（用于处理所有身份验证），则允许标题导航栏的 "**登录**" 按钮直接链接到该外部标识提供者的登录页（而不是链接到中间本地登录窗体和标识提供者选择页）。 只能为此操作选择单个标识提供者。 指定提供程序的[AuthenticationType](https://msdn.microsoft.com/library/microsoft.owin.security.authenticationoptions.authenticationtype.aspx)值。<br>对于使用 OpenIdConnect 的单一登录配置（如使用 Azure Active Directory B2C），用户需要提供此颁发机构。<br>对于基于 OAuth2 的提供程序，接受的值为： `Facebook, Google, Yahoo, [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)], LinkedIn, Yammer,` 或 `Twitter`<br>对于基于 WS 联合身份验证的提供程序，请使用为 "`Authentication/WsFederation/ADFS/AuthenticationType`" 和 "`Authentication/WsFederation/[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)]/\[provider\]/AuthenticationType` 网站设置" 指定的值。 示例： https://adfs.contoso.com/adfs/services/trust 、Facebook-0123456789、Google、Yahoo！、uri：[!INCLUDE[pn-ms-windows-short](../../../includes/pn-ms-windows-short.md)] LiveID。 |
+|          Authentication/Registration/LocalLoginEnabled          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     基于用户名（或电子邮件）和密码启用或禁用本地帐户登录。 默认值：false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|          Authentication/Registration/LocalLoginByEmail          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               使用电子邮件地址字段而不是用户名字段启用或禁用本地帐户登录。 默认值：false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|        Authentication/Registration/ExternalLoginEnabled         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  启用或禁用外部帐户登录和注册。 默认：true                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|          Authentication/Registration/RememberMeEnabled          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          本地登录时选中或清除“记住我?”复选框，以便即使 Web 浏览器关闭时也允许通过身份验证的会话仍可以继续。 默认：true                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|          Authentication/Registration/TwoFactorEnabled           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        启用或禁止用户可以启用双因素身份验证的选项。 具有确认的电子邮件地址的用户可以选择实现双因素身份验证的增加的安全性。 默认值：false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|       Authentication/Registration/RememberBrowserEnabled        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                执行双因素验证（电子邮件代码）时选中或清除“记住浏览器?”复选框，以便保持当前浏览器的双因素验证。 只要使用同一浏览器，用户在后续登录时就不需要通过双因素验证。 默认：true                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|        Authentication/Registration/ResetPasswordEnabled         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         启用或禁用密码重置功能。 默认：true                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Authentication/Registration/ResetPasswordRequiresConfirmedEmail |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               仅为确认的电子邮件地址启用或禁用密码重置。 如果启用，未确认的电子邮件地址不能用于发送密码重置指令。 默认值：false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|   Authentication/Registration/TriggerLockoutOnFailedPassword    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          启用或禁用失败的密码尝试记录。 如果禁用，用户帐户不会锁定。默认值：true                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|             Authentication/Registration/IsDemoMode              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          启用或禁用只在开发或演示环境中使用的演示模式标志。 不要对生产环境启用该设置。 演示模式还需要 Web 浏览器本地运行到 Web 应用程序服务器。 当演示模式启用时，密码重置代码和双因素代码显示给快速访问的用户。 默认值：false                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|    Authentication/Registration/LoginButtonAuthenticationType    | 如果门户只需要一个外部身份提供程序（处理所有身份验证），这允许标题导航栏的**登录**按钮直接链接到外部身份提供程序的登录页（而不是链接到中间本地登录窗体和身份提供程序选择页面）。 只可以为此操作选择一个身份提供程序。 指定提供程序的 [AuthenticationType](https://msdn.microsoft.com/library/microsoft.owin.security.authenticationoptions.authenticationtype.aspx) 值。<br>若要使用 OpenIdConnect（如使用 Azure Active Directory B2C）进行单一登录配置，用户需提供权限。<br>对于基于 OAuth2 的提供程序，可接受的值为：`Facebook, Google, Yahoo, [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)], LinkedIn, Yammer,` 或 `Twitter`<br>对于基于 WS 联合身份验证的提供程序，使用为 `Authentication/WsFederation/ADFS/AuthenticationType` 和 `Authentication/WsFederation/[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)]/\[provider\]/AuthenticationType` 网站设置指定的值。 示例：https://adfs.contoso.com/adfs/services/trust、Facebook-0123456789、Google、Yahoo!，URI：[!INCLUDE[pn-ms-windows-short](../../../includes/pn-ms-windows-short.md)]LiveID。 |
 |                                                                 |                                                                                                                                                                                                                                                                                                  |
 
 ## <a name="enable-or-disable-user-registration"></a>启用或禁用用户注册
 
-下面介绍了启用和禁用用户注册（注册）选项的设置：
+下文介绍了启用和禁用用户注册选项的设置：
 
-| 站点设置名称                                   | 描述                                                                                                                                                                             |
+| 网站设置名称                                   | 说明                                                                                                                                                                             |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 身份验证/注册/启用                 | 启用或禁用所有形式的用户注册。 必须启用注册，此部分中的其他设置才能生效。 默认值： true                                   |
-| Authentication/Registration/OpenRegistrationEnabled | 启用或禁用注册注册窗体以创建新的本地用户。 注册表单允许任何匿名访问者访问门户来创建新的用户帐户。 默认值： true |
-| Authentication/Registration/InvitationEnabled       | 启用或禁用邀请代码兑换窗体，用于注册拥有邀请代码的用户。 默认值： true                                                               |
-|Authentication/Registration/CaptchaEnabled|启用或禁用用户注册页上的 captcha。 默认值： false<br>**注意**：默认情况下，此站点设置可能不可用。 若要启用 captcha，必须创建站点设置并将其值设置为 true。 |
+| Authentication/Registration/Enabled                 | 启用或禁用用户注册的所有窗体。 必须为此节中的其他设置启用注册才能生效。 默认：true                                   |
+| Authentication/Registration/OpenRegistrationEnabled | 启用或禁用创建新本地用户的注册窗体。 注册窗体允许访问门户的所有匿名访问者创建新用户帐户。 默认：true |
+| Authentication/Registration/InvitationEnabled       | 启用或禁用拥有邀请代码的注册用户的邀请代码清除窗体。 默认：true                                                               |
+|Authentication/Registration/CaptchaEnabled|启用或禁用用户注册页的 captcha。 默认值：false<br>**注释**：此网站设置默认情况下可能不可用。 若要启用 captcha，您必须同时创建站点设置并将其值设置为 true。 |
 ||
 
 > [!NOTE]
-> 确保为用户指定了主电子邮件，因为注册是通过使用用户的主电子邮件（emailaddress1）来完成的。 不能使用联系人记录的辅助电子邮件（emailaddress2）或备用电子邮件（emailaddress3）注册该用户。
+> 确保为用户指定主要电子邮件，因为注册是使用用户的主要电子邮件 (emailaddress1) 完成的。 不能使用联系人记录的次要电子邮件 (emailaddress2) 或备用电子邮件 (emailaddress3) 注册用户。
 
 ## <a name="user-credential-validation"></a>用户凭据验证
 
-下面介绍了调整用户名和密码验证参数的设置。 当用户注册新的本地帐户或更改密码时，将发生验证。
+下文介绍了调整用户名和密码验证参数的设置： 在用户注册新的本地帐户或更改密码时进行验证。
 
-| 站点设置名称                                                       | 描述                                                                                                                                                                                         |
+| 网站设置名称                                                       | 说明                                                                                                                                                                                         |
 |-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Authentication/UserManager/PasswordValidator/EnforcePasswordPolicy      | 密码是否包含以下三个类别中的字符：<br><ul><li>大写字母，欧洲语言（A 到 Z，带有音调符号标记，希腊语和西里尔字符）</li><li>字母小写字母（a 到 z、带有音调符号标记、希腊语和西里尔字符）</li><li>以10为底的数字（0到9）</li><li>非字母数字字符（特殊字符）（例如！、$、\#、%）</li></ul>默认值： true。 有关详细信息，请执行以下操作：[密码策略](https://technet.microsoft.com/library/hh994562(v=ws.10).aspx)。                                                                                                           |  
-| Authentication/UserManager/UserValidator/AllowOnlyAlphanumericUserNames | 是否只为用户名允许字母数字字符。 默认值： false。 有关详细信息[，请： UserValidator < TUser，TKey >。AllowOnlyAlphanumericUserNames](https://msdn.microsoft.com/library/dn613211.aspx)。                                                          |  
-| Authentication/UserManager/UserValidator/RequireUniqueEmail             | 验证用户是否需要唯一的电子邮件地址。 默认值： true。 有关详细信息[，请： UserValidator < TUser，TKey >。RequireUniqueEmail](https://msdn.microsoft.com/library/dn613213.aspx)。                                                                   |  
-| Authentication/UserManager/PasswordValidator/RequiredLength             | 所需的最短密码长度。 默认值：8。 有关详细信息，请查看： [PasswordValidator. RequiredLength](https://msdn.microsoft.com/library/microsoft.aspnet.identity.passwordvalidator.requiredlength.aspx)。                                       |  
-| Authentication/UserManager/PasswordValidator/RequireNonLetterOrDigit    | 密码是否需要非字母或数字字符。 默认值： false。 有关详细信息，请查看： [PasswordValidator. RequireNonLetterOrDigit](https://msdn.microsoft.com/library/microsoft.aspnet.identity.passwordvalidator.requirenonletterordigit.aspx)。 |  
-| Authentication/UserManager/PasswordValidator/RequireDigit               | 密码是否需要数字（从0到9）。 默认值： false。 有关详细信息，请查看： [PasswordValidator. RequireDigit](https://msdn.microsoft.com/library/microsoft.aspnet.identity.passwordvalidator.requiredigit.aspx)。                |  
-| Authentication/UserManager/PasswordValidator/RequireLowercase           | 密码是否需要小写字母（从 a 到 z）。 默认值： false。 有关详细信息，请查看： [PasswordValidator. RequireLowercase](https://msdn.microsoft.com/library/microsoft.aspnet.identity.passwordvalidator.requirelowercase.aspx)。        |  
-| Authentication/UserManager/PasswordValidator/RequireUppercase           | 密码是否需要大写字母（从 A 到 Z）。 默认值： false。 有关详细信息，请查看： [PasswordValidator. RequireUppercase](https://msdn.microsoft.com/library/microsoft.aspnet.identity.passwordvalidator.requireuppercase.aspx)。       | 
+| Authentication/UserManager/PasswordValidator/EnforcePasswordPolicy      | 密码是否包含以下三种类别的字符：<br><ul><li>欧洲语言大写字母（A-Z，使用变音符号，希腊文和西里尔文字字符）</li><li>欧洲语言小写字母（a-z，使用变音符号，ß，希腊文和西里尔文字字符）</li><li>10 位基本数字 (0-9)</li><li>非字母数字字符（特殊字符）（例如，!、$、\#、%）</li></ul>默认值：true。 有关详细信息：[密码策略](https://technet.microsoft.com/library/hh994562(v=ws.10).aspx)。                                                                                                           |  
+| Authentication/UserManager/UserValidator/AllowOnlyAlphanumericUserNames | 是否允许用户名仅使用字母数字字符。 默认值：false。 有关详细信息：[UserValidator<TUser, TKey>.AllowOnlyAlphanumericUserNames](https://msdn.microsoft.com/library/dn613211.aspx)。                                                          |  
+| Authentication/UserManager/UserValidator/RequireUniqueEmail             | 验证用户是否需要唯一电子邮件地址。 默认值：true。 有关详细信息：[UserValidator<TUser, TKey>.RequireUniqueEmail](https://msdn.microsoft.com/library/dn613213.aspx)。                                                                   |  
+| Authentication/UserManager/PasswordValidator/RequiredLength             | 所需密码的最小长度。 默认值：8。 有关详细信息：[PasswordValidator.RequiredLength](https://msdn.microsoft.com/library/microsoft.aspnet.identity.passwordvalidator.requiredlength.aspx)。                                       |  
+| Authentication/UserManager/PasswordValidator/RequireNonLetterOrDigit    | 密码是否需要非字母或数字字符。 默认值：false。 有关详细信息：[PasswordValidator.RequireNonLetterOrDigit](https://msdn.microsoft.com/library/microsoft.aspnet.identity.passwordvalidator.requirenonletterordigit.aspx)。 |  
+| Authentication/UserManager/PasswordValidator/RequireDigit               | 密码是否需要数字（0 到 9）。 默认值：false。 有关详细信息：[PasswordValidator.RequireDigit](https://msdn.microsoft.com/library/microsoft.aspnet.identity.passwordvalidator.requiredigit.aspx)。                |  
+| Authentication/UserManager/PasswordValidator/RequireLowercase           | 密码是否需要小写字母（a 到 z）。 默认值：false。 有关详细信息：[PasswordValidator.RequireLowercase](https://msdn.microsoft.com/library/microsoft.aspnet.identity.passwordvalidator.requirelowercase.aspx)。        |  
+| Authentication/UserManager/PasswordValidator/RequireUppercase           | 密码是否需要大写字母（A 到 Z）。 默认值：false。 有关详细信息：[PasswordValidator.RequireUppercase](https://msdn.microsoft.com/library/microsoft.aspnet.identity.passwordvalidator.requireuppercase.aspx)。       | 
 || 
 
 ## <a name="user-account-lockout-settings"></a>用户帐户锁定设置
 
-下面介绍了定义如何以及何时从身份验证中锁定帐户的设置。 如果在很短的时间内检测到一定次数的失败密码尝试，则该用户帐户会锁定一段时间。 使用可以在锁定期限结束后重试。
+下文介绍了定义帐户如何以及何时通过身份验证锁定的设置： 当在短暂的时段内检测到一定数量的失败密码尝试时，用户帐户将被锁定一段时间。 锁定期间后用户可以重试。
 
-| 站点设置名称                                               | 描述                                                                                                                                                                                                                                     |
+| 网站设置名称                                               | 说明                                                                                                                                                                                                                                     |
 |-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Authentication/UserManager/UserLockoutEnabledByDefault          | 指示在创建用户时是否启用用户锁定。 默认值： true。 有关详细信息[，请： UserManager < TUser，TKey >。UserLockoutEnabledByDefault](https://msdn.microsoft.com/library/dn613214.aspx)。                                                                                                  |  
-| Authentication/UserManager/DefaultAccountLockoutTimeSpan        | 达到身份验证/UserManager/MaxFailedAccessAttemptsBeforeLockout 后用户被锁定的默认时间长度。 默认值：24:00:00 （1天）。 有关详细信息[，请： UserManager < TUser，TKey >。DefaultAccountLockoutTimeSpan](https://msdn.microsoft.com/library/dn613201.aspx)。                 |  
-| Authentication/UserManager/MaxFailedAccessAttemptsBeforeLockout | 锁定用户之前允许的最大访问尝试次数（如果启用了锁定）。 默认值：5。 有关详细信息[，请： UserManager < TUser，TKey >。MaxFailedAccessAttemptsBeforeLockout](https://msdn.microsoft.com/library/dn613202.aspx)。                                                                        |  
-| Authentication/ApplicationCookie/ExpireTimeSpan                 | Cookie 身份验证会话的默认时间长度为有效。 默认值：24:00:00 （1天）。 有关详细信息，请查看： [cookieauthenticationoptions.authenticationtype. ExpireTimeSpan](https://msdn.microsoft.com/library/microsoft.owin.security.cookies.cookieauthenticationoptions.expiretimespan(v=vs.113).aspx)。 |
+| Authentication/UserManager/UserLockoutEnabledByDefault          | 指定当用户创建时是否启用用户锁定。 默认值：true。 有关详细信息：[UserManager<TUser, TKey>.UserLockoutEnabledByDefault](https://msdn.microsoft.com/library/dn613214.aspx)。                                                                                                  |  
+| Authentication/UserManager/DefaultAccountLockoutTimeSpan        | 达到 Authentication/UserManager/MaxFailedAccessAttemptsBeforeLockout 后锁定用户的默认时间量。 默认值：24:00:00（1天）。 有关详细信息：[UserManager<TUser, TKey>.DefaultAccountLockoutTimeSpan](https://msdn.microsoft.com/library/dn613201.aspx)。                 |  
+| Authentication/UserManager/MaxFailedAccessAttemptsBeforeLockout | 锁定用户前允许的最大访问尝试次数（如果锁定已启用）。 默认值：5。 有关详细信息：[UserManager<TUser, TKey>.MaxFailedAccessAttemptsBeforeLockout](https://msdn.microsoft.com/library/dn613202.aspx)。                                                                        |  
+| Authentication/ApplicationCookie/ExpireTimeSpan                 | 默认时间 Cookie 身份验证会话有效。 默认值：24:00:00（1天）。 有关详细信息：[CookieAuthenticationOptions.ExpireTimeSpan](https://msdn.microsoft.com/library/microsoft.owin.security.cookies.cookieauthenticationoptions.expiretimespan(v=vs.113).aspx)。 |
 ||  
 
 ## <a name="cookie-authentication-site-settings"></a>Cookie 身份验证网站设置
 
-用于修改默认身份验证 cookie 行为的设置。 由[cookieauthenticationoptions.authenticationtype](https://msdn.microsoft.com/library/microsoft.owin.security.cookies.cookieauthenticationoptions.aspx)类定义。
+修改默认身份验证 Cookie 行为的设置。 由 [CookieAuthenticationOptions](https://msdn.microsoft.com/library/microsoft.owin.security.cookies.cookieauthenticationoptions.aspx) 类定义。
 
-| 站点设置名称   | 描述       |
+| 网站设置名称   | 说明       |
 |----------------------|------------------------------------------------|
-| Authentication/ApplicationCookie/AuthenticationType                      | 应用程序身份验证 cookie 的类型。 默认值： ApplicationCookie。 有关详细信息，请查看： [AuthenticationOptions：： AuthenticationType](https://msdn.microsoft.com/library/dn300391.aspx)。  |
-| Authentication/ApplicationCookie/CookieName                              | 确定用于保存标识的 cookie 名称。 默认值：。AspNet. Cookie。 有关详细信息，请查看： [cookieauthenticationoptions.authenticationtype：： CookieName](https://msdn.microsoft.com/library/dn385537.aspx)。  |
-| Authentication/ApplicationCookie/CookieDomain                            | 确定用于创建 cookie 的域。 有关详细信息，请查看： [cookieauthenticationoptions.authenticationtype：： CookieDomain](https://msdn.microsoft.com/library/dn385536.aspx)。  |
-| Authentication/ApplicationCookie/CookiePath                              | 确定用于创建 cookie 的路径。 默认值：/。 有关详细信息，请查看： [cookieauthenticationoptions.authenticationtype：： CookiePath](https://msdn.microsoft.com/library/dn385539.aspx)。 |
-| Authentication/ApplicationCookie/CookieHttpOnly                          | 确定浏览器是否应允许客户端 javascript 访问 cookie。 默认值： true。 有关详细信息，请查看： [cookieauthenticationoptions.authenticationtype：： CookieHttpOnly](https://msdn.microsoft.com/library/dn385540.aspx)。                     |
-| Authentication/ApplicationCookie/CookieSecure                            | 确定 cookie 是否应该只在 HTTPS 请求上传输。 默认值： SameAsRequest。 有关详细信息，请查看： [cookieauthenticationoptions.authenticationtype：： CookieSecure](https://msdn.microsoft.com/library/dn385538.aspx)。  |
-| Authentication/ApplicationCookie/ExpireTimeSpan                          | 控制应用程序 cookie 从创建的点保持有效的时间。 默认值：14天。 有关详细信息，请查看： [cookieauthenticationoptions.authenticationtype：： ExpireTimeSpan](https://msdn.microsoft.com/library/microsoft.owin.security.cookies.cookieauthenticationoptions.expiretimespan(v=vs.113).aspx)。  |
-| Authentication/ApplicationCookie/SlidingExpiration                       | SlidingExpiration 设置为 true，以指示中间件在每次处理超过过期时段一半的请求时，使用新的过期时间重新发出新的 cookie。 默认值： true。 有关详细信息，请查看： [cookieauthenticationoptions.authenticationtype：： SlidingExpiration](https://msdn.microsoft.com/library/dn385548.aspx)。 |
-| Authentication/ApplicationCookie/LoginPath                               | LoginPath 属性通知中间件，应将传出401未经授权的状态代码更改为302重定向到给定的登录路径。 默认值： ~/signin。 有关详细信息，请查看： [cookieauthenticationoptions.authenticationtype：： LoginPath](https://msdn.microsoft.com/library/dn385541.aspx)。                                            |
-| Authentication/ApplicationCookie/LogoutPath                              | 如果 LogoutPath 提供了中间件，则对该路径的请求将基于 ReturnUrlParameter 进行重定向。 有关详细信息，请查看： [cookieauthenticationoptions.authenticationtype：： LogoutPath](https://msdn.microsoft.com/library/dn385545.aspx)。               |
-| Authentication/ApplicationCookie/ReturnUrlParameter                      | ReturnUrlParameter 确定在401未授权状态代码更改为302重定向到登录路径时，中间件追加的查询字符串参数的名称。 有关详细信息，请查看： [cookieauthenticationoptions.authenticationtype：： ReturnUrlParameter](https://msdn.microsoft.com/library/dn385546.aspx)。                           |
-| Authentication/ApplicationCookie/SecurityStampValidator/ValidateInterval | 安全戳验证之间的时间段。 默认值：30分钟。 有关详细信息，请查看： [SecurityStampValidator：： OnValidateIdentity](https://msdn.microsoft.com/library/microsoft.aspnet.identity.owin.securitystampvalidator.onvalidateidentity.aspx)。                    |
-| Authentication/TwoFactorCookie/AuthenticationType                        | 双因素身份验证 cookie 的类型。 默认值： TwoFactorCookie。 有关详细信息，请查看： [AuthenticationOptions：： AuthenticationType](https://msdn.microsoft.com/library/dn300391.aspx)。            |
-| Authentication/TwoFactorCookie/ExpireTimeSpan                            | 控制两个系数 cookie 从创建的点保持有效的时间。 默认值：5分钟。 有关详细信息，请查看： [cookieauthenticationoptions.authenticationtype：： ExpireTimeSpan](https://msdn.microsoft.com/library/dn385543.aspx)。     |
+| Authentication/ApplicationCookie/AuthenticationType                      | 应用程序身份验证 Cookie 的类型。 默认：ApplicationCookie。 有关详细信息：[AuthenticationOptions::AuthenticationType](https://msdn.microsoft.com/library/dn300391.aspx)。  |
+| Authentication/ApplicationCookie/CookieName                              | 确定用于保留标识的 Cookie 名称。 默认：.AspNet.Cookies。 有关详细信息：[CookieAuthenticationOptions::CookieName](https://msdn.microsoft.com/library/dn385537.aspx)。  |
+| Authentication/ApplicationCookie/CookieDomain                            | 确定用于创建 Cookie 的域。 有关详细信息：[CookieAuthenticationOptions::CookieDomain](https://msdn.microsoft.com/library/dn385536.aspx)。  |
+| Authentication/ApplicationCookie/CookiePath                              | 确定用于创建 Cookie 的路径。 默认：/。 有关详细信息：[CookieAuthenticationOptions::CookiePath](https://msdn.microsoft.com/library/dn385539.aspx)。 |
+| Authentication/ApplicationCookie/CookieHttpOnly                          | 确定浏览器是否应该允许 Cookie 由客户端 Javascript 访问。 默认值：true。 有关详细信息：[CookieAuthenticationOptions::CookieHttpOnly](https://msdn.microsoft.com/library/dn385540.aspx)。                     |
+| Authentication/ApplicationCookie/CookieSecure                            | 确定 Cookie 是否仅应该在 HTTPS 请求中传输。 默认：SameAsRequest。 有关详细信息：[CookieAuthenticationOptions::CookieSecure](https://msdn.microsoft.com/library/dn385538.aspx)。  |
+| Authentication/ApplicationCookie/ExpireTimeSpan                          | 控制应用程序 Cookie 从创建开始持续有效的时间。 默认：14 天。 有关详细信息：[CookieAuthenticationOptions::ExpireTimeSpan](https://msdn.microsoft.com/library/microsoft.owin.security.cookies.cookieauthenticationoptions.expiretimespan(v=vs.113).aspx)。  |
+| Authentication/ApplicationCookie/SlidingExpiration                       | SlidingExpiration 设置为 true，以指示中间件无论何时处理过期时间过去一半的请求时重新发放具有新过期时间的 Cookie。 默认值：true。 有关详细信息：[CookieAuthenticationOptions::SlidingExpiration](https://msdn.microsoft.com/library/dn385548.aspx)。 |
+| Authentication/ApplicationCookie/LoginPath                               | 属性 LoginPath 通知中间件应将传出 401 未经授权状态代码更改为 302 重定向到指定登录路径。 默认：~/signin。 有关详细信息：[CookieAuthenticationOptions::LoginPath](https://msdn.microsoft.com/library/dn385541.aspx)。                                            |
+| Authentication/ApplicationCookie/LogoutPath                              | 如果向中间件提供了 LogoutPath，那么该路径的请求将基于 ReturnUrlParameter 重定向。 有关详细信息：[CookieAuthenticationOptions::LogoutPath](https://msdn.microsoft.com/library/dn385545.aspx)。               |
+| Authentication/ApplicationCookie/ReturnUrlParameter                      | ReturnUrlParameter 确定查询字符串参数的名称，其由中间件在 401 未经授权状态代码更改为 302 重定向到登录路径时追加。 有关详细信息：[CookieAuthenticationOptions::ReturnUrlParameter](https://msdn.microsoft.com/library/dn385546.aspx)。                           |
+| Authentication/ApplicationCookie/SecurityStampValidator/ValidateInterval | 两次安全戳验证之间的时间段。 默认：30 分钟。 有关详细信息：[SecurityStampValidator::OnValidateIdentity](https://msdn.microsoft.com/library/microsoft.aspnet.identity.owin.securitystampvalidator.onvalidateidentity.aspx)。                    |
+| Authentication/TwoFactorCookie/AuthenticationType                        | 双重身份验证 Cookie 的类型。 默认：TwoFactorCookie。 有关详细信息：[AuthenticationOptions::AuthenticationType](https://msdn.microsoft.com/library/dn300391.aspx)。            |
+| Authentication/TwoFactorCookie/ExpireTimeSpan                            | 控制双重 Cookie 从创建开始持续有效的时间。 默认：5 分钟。 有关详细信息：[CookieAuthenticationOptions::ExpireTimeSpan](https://msdn.microsoft.com/library/dn385543.aspx)。     |
 |||
 
 ### <a name="see-also"></a>另请参阅
 
 [配置门户身份验证](configure-portal-authentication.md)  
 [门户的 OAuth2 提供程序设置](configure-oauth2-settings.md)  
-[为门户打开 ID 连接提供程序设置](configure-openid-settings.md)  
+[门户的 Open ID Connect 提供程序设置](configure-openid-settings.md)  
 [门户的 WS 联合身份验证提供程序设置](configure-ws-federation-settings.md)  
 [门户的 SAML 2.0 提供程序设置](configure-saml2-settings.md)  

@@ -1,36 +1,41 @@
 ---
-title: 在 PowerApps 选择和配置模型驱动应用程序视图中的列 | MicrosoftDocs
+title: 在 PowerApps 中选择和配置模型驱动应用视图中的列 | MicrosoftDocs
 description: 了解如何选择和配置您的应用的视图
 keywords: ''
 ms.date: 11/27/2018
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: 31bfcf18-58c3-491c-91b5-f9b0f5424852
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 25
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d9f34be645a8e3dee1283f064e5aeda6a9d59e9a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754595"
 ---
-
 # <a name="choose-and-configure-columns-in-model-driven-app-views"></a>选择和配置模型驱动应用程序视图中的列
 
 <a name="BKMK_ChooseAndConfigureColumns"></a>   
 
- 与筛选条件一样，在 PowerApps 视图中可见的列对于视图提供的值非常重要。 在本主题中，您通过执行以下任务创建或编辑视图：  
+ 与筛选条件操作，在 PowerApps 视图中可见的列对于视图提供的值非常重要。 在本主题中，您通过执行以下任务创建或编辑视图：  
 
 -   [打开视图编辑器](choose-and-configure-columns.md#open-the-view-editor)  
    
@@ -52,7 +57,7 @@ search.app:
 
 ### <a name="open-the-view-editor"></a>打开视图编辑器
 
-1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 2.  展开**数据**，选择**实体**，选择所需实体，然后选择**视图**选项卡。 
 

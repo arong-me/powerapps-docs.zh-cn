@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 29e53691-0b18-4fde-a1d0-7490aa227898
 caps.latest.revision: 10
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d6c620f518331f46ef3e662040975cd8c6c5625a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758796"
 ---
 # <a name="define-alternate-keys-to-reference-records"></a>定义引用记录的备用键
 
@@ -49,7 +55,7 @@ search.app:
 
 |设计器| 说明|
 |--|--|
-|[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些选项不可用。<br />详细信息：[使用 PowerApps 门户定义备用键](define-alternate-keys-portal.md)|
+|[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些选项不可用。<br />详细信息：[使用 PowerApps 门户定义备用键](define-alternate-keys-portal.md)|
 |解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。<br />详细信息：[使用解决方案资源管理器定义备用键](define-alternate-keys-solution-explorer.md) |
 
 > [!NOTE]
@@ -59,7 +65,7 @@ search.app:
 
 本主题中的信息将帮助您选择可以使用的设计器。 
 
-除非您需要满足下列要求中的任何一个，否则您应该使用 [PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)创建备用键。
+除非您需要满足下列要求中的任何一个，否则您应该使用 [PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)创建备用键：
 
 - 在 Common Data Service 默认解决方案以外的解决方案中创建备用键
 - 您希望轻松跟踪所创建的跟踪支持索引创建进度的系统作业

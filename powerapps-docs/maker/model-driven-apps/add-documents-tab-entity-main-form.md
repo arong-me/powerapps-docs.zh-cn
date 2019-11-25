@@ -1,22 +1,28 @@
 ---
 title: 将“文档”选项卡添加到实体的主窗体 | MicrosoftDocs
 description: 了解如何将“文档”选项卡添加到实体的主窗体
-s.custom: null
+s.custom: ''
 ms.date: 09/05/2019
-ms.reviewer: null
+ms.reviewer: ''
 ms.service: crm-online
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: Mattp123
-ms.assetid: null
-caps.latest.revision: null
+ms.assetid: ''
+caps.latest.revision: ''
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - customizer
+- customizer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: d8a81b531f43f3e252f2df348b8ae95551e068d4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702795"
 ---
 # <a name="add-the-sharepoint-documents-tab-to-the-main-form-for-an-entity"></a>将“SharePoint 文档”选项卡添加到实体的主窗体
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -45,7 +51,7 @@ search.app:
 11. 向下滚动到 control id="*field name*" 元素，例如 **control id="address1_city"**，然后将整个元素替换为本主题中的 [XML 示例](#xml-sample-for-adding-the-documents-tab-to-a-form)。 
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/form-xml.png "XML 示例插入点")
+    > ![](media/form-xml.png "XML sample insertion point")
 
 12. 对 XML 示例进行以下修改。 
     

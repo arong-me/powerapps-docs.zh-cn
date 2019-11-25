@@ -9,12 +9,17 @@ ms.topic: conceptual
 ms.date: 05/16/2018
 ms.author: millopis
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5679d82d6ec53d579567a778043ac9542099a20e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2706667"
 ---
-
 # <a name="troubleshoot-power-query"></a>Power Query 疑难解答
 当使用 Power Query for Excel 创建包含来自外部源的数据的自定义实体时，可能会出现此错误：
 

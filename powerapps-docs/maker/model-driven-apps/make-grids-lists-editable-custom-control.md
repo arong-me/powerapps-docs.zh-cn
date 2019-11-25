@@ -4,24 +4,30 @@ description: 了解如何使用可编辑网格自定义控件
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: cefbc0c2-769b-4230-ab5a-b28a84630a42
 caps.latest.revision: 8
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8ec97723dcc5c1e17b3907c7b683ba24977b69de
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700595"
 ---
 # <a name="make-model-driven-app-grids-lists-editable-using-the-editable-grid-custom-control"></a>使用可编辑网格自定义控件将模型驱动应用程序网格（列表）设置为可编辑
 
@@ -75,7 +81,7 @@ search.app:
   
 4.  在添加的**可编辑网格**行中，选择要为其应用该网格的外形规格。 这样将把这个可编辑网格控件设置为所选外形规格的默认控件。  
   
-     ![带窗体元素选项的可编辑网格行](media/editable-grid-row-wit-factor-selection.png "带窗体元素选项的可编辑网格行")    
+     ![带外形规格选择的可编辑网格行](media/editable-grid-row-wit-factor-selection.png "带外形规格选择的可编辑网格行")    
 
    > [!NOTE]
    >  用户可以在运行时，在可编辑网格和只读网格之间切换。  
@@ -90,7 +96,7 @@ search.app:
   
     4.  如果要限制显示的记录，请选中**仅在以下情况下显示记录**复选框，从列表中选择条件，然后选择**确定**。  
   
-         ![在可编辑网格控件中添加查找](media/add-lookup-in-editable-grid-control.png "在可编辑网格控件中添加查找")  
+         ![在“可编辑网格”控件中添加查询](media/add-lookup-in-editable-grid-control.png "在“可编辑网格”控件中添加查询")  
      
 6.  如果有嵌套网格，请选择**嵌套网格视图**的铅笔按钮，然后选择嵌套网格的实体和视图。 对于**嵌套网格父 ID**，请选择实体的关系。 例如，ParentAccountID 字段连接**客户**和**联系人**实体。  
   
@@ -104,7 +110,7 @@ search.app:
   
 8.  如果要添加 JavaScript 事件，请选择**事件**选项卡，然后选择相应的实体、字段和事件。 详细信息：[开发人员文档：使用可编辑网格](/dynamics365/customer-engagement/developer/customize-dev/use-editable-grids-dynamics-365.md)  
   
-     ![在可编辑网格控件中添加事件](media/add-events-in-editable-grid-control.png "在可编辑网格控件中添加事件")  
+     ![在“可编辑网格”控件中添加事件](media/add-events-in-editable-grid-control.png "在“可编辑网格”控件中添加事件")  
   
 9. 若要保存工作，请选择操作栏中的**保存**。  
   

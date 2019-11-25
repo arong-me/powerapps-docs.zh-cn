@@ -1,27 +1,33 @@
 ---
-title: 在 PowerApps 中创建或编辑模型驱动应用程序主窗体 | MicrosoftDocs
+title: 在 PowerApps 中创建或编辑模型驱动应用主窗体 | MicrosoftDocs
 description: 了解如何创建或编辑主窗体
 ms.custom: ''
 ms.date: 05/23/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: <needs new guid>
 caps.latest.revision: 18
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 52b80ac0809bbcfe0b008e6fc31fd8b97b894959
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759192"
 ---
 # <a name="create-or-edit-a-model-driven-app-main-form-for-an-entity"></a>创建或编辑实体的模型驱动应用程序主窗体 
 
@@ -35,7 +41,7 @@ search.app:
 
 ## <a name="how-to-create-or-edit-a-main-form"></a>如何创建或编辑主窗体
   
-1.   登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1.   登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 
 > [!IMPORTANT]

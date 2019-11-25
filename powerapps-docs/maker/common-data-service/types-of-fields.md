@@ -4,28 +4,34 @@ description: 了解可用于您的应用的不同字段数据类型
 keywords: ''
 ms.date: 09/30/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 734b4ffa-5543-4f88-8517-299589f433f7
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cf8a30ae29712804cea2da42b0e448acc6286553
+ms.sourcegitcommit: e4b3b6b610f91a0c704a4fa87c6ec238aa81d25f
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2767227"
 ---
 # <a name="types-of-fields"></a>字段类型
 
-用于类型的名称取决于所使用的设计器。 [PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)使用包括数据格式确定方式的约定。 解决方案资源管理器类型使用与具有格式修饰符的数据库数据类型一致的名称。 下表包含对应的 `AttributeTypeDisplayName` API 类型。
+用于类型的名称取决于所使用的设计器。 [PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)使用包括数据格式确定方式的约定。 解决方案资源管理器类型使用与具有格式修饰符的数据库数据类型一致的名称。 下表包含对应的 `AttributeTypeDisplayName` API 类型。
 
 |门户数据类型 |解决方案资源管理器类型| API 类型|
 |--|--|--|
@@ -37,6 +43,7 @@ search.app:
 |**十进制数**|**十进制数**|`DecimalType`|
 |**持续时间**|**整数**<br />*持续时间*格式|`IntegerType`|
 |**Email**|**单行文本**<br />*电子邮件*格式|`StringType`|
+|**文件** | **文件**   | `FileType`  |
 |**浮点数**|**浮点数**|`DoubleType`|
 |**图像**|**图像**|`ImageType`|
 |**语言**|**整数**<br />*语言*格式|`IntegerType`|
@@ -152,7 +159,6 @@ search.app:
 <a name="BKMK_ImageFields"></a>
 
 ## <a name="image-fields"></a>图像字段  
-
 使用图像字段可在应用程序中显示每个记录的单个图像。 每个实体可以有一个图像字段。 可以将图像字段添加到自定义实体，但不能添加到标准实体。 有些标准实体定义了图像字段。
   
 即使实体有图像字段，在模型驱动应用程序中显示该图像还需要您启用两项设置。 
@@ -164,7 +170,7 @@ search.app:
 > [!div class="mx-imgBorder"] 
 > ![默认实体图像](../common-data-service/media/account-record-default-image.png "默认客户实体图像")
   
-用户可以选择默认图像从计算机上载图片。 图像必须小于 5120 KB，并且必须采用以下格式之一：  
+用户可以选择默认图像从计算机上载图片。 图像必须小于 10 MB，并且必须采用以下格式之一：  
   
 - jpg
 - jpeg
@@ -176,7 +182,24 @@ search.app:
   
 图像上载之后，将被转换为 .jpg 格式，并且所有下载的图像也将使用此格式。 如果上载了动画 .gif，则仅保存第一帧。  
   
-图像上载后，将调整其大小，最大为 144 x 144 像素。 用户应在上载图像之前调整图像大小或裁剪图像，以便以此大小正确显示。 所有图像都裁剪成正方形。 如果图像的两边都小于 144 像素，则将使用较小边的尺寸裁剪成正方形。  
+图像上载后，将作为“缩略图”图像调整其大小，最大为 144 x 144 像素。 用户应在上载图像之前调整图像大小或裁剪图像，以便以此大小正确显示。 所有图像都裁剪成正方形。 如果图像的两边都小于 144 像素，则将使用较小边的尺寸裁剪成正方形。  
+
+<!-- 
+By default, when an app user adds an image to display to a form or canvas app, the image displayed is the thumbnail image. To display a full image for a canvas app, see [Display a full-sized image on a canvas app form](../canvas-apps/display-full-image-on-form.md).
+
+
+### Add an image field to an entity using the PowerApps site
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
+1. Sign in to [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+2.  Select **Data** > **Entities** and then select the entity where you want to add an image field. 
+3. Select **Add field** on the command bar, enter the following properties, and then select **Done**: 
+   - **Display name**. Enter a friendly name for the field. 
+   - **Data type**. Select **Image**. 
+   - **Primary image**. When selected, the primary image field becomes the image field for the entity. You can only have one primary image for each entity. 
+   - **Maximum image size**. The maximum file size that an app user can upload to the record. 10,240 KB is the default maximum size and 10 MB is the maximum size limit. 
+   - **Can store full images**. When selected, in addition to the rescaled thumbnail image described earlier, the full image is stored when uploaded by the user for each record. Full size images are limited to 30 MB.  -->
 
 ### <a name="add-image-support-for-a-form-in-a-custom-entity-using-solution-explorer"></a>使用解决方案资源管理器在自定义实体中为窗体添加图像支持
 1. 打开[解决方案资源管理器](../model-driven-apps/advanced-navigation.md#solution-explorer)。 
@@ -186,14 +209,15 @@ search.app:
 5. 输入**显示名称**，如*自定义实体名称*。 
 6. 根据需要填写其余字段。 请注意，不能更改**名称**、**字段要求**和**可搜索**字段。 选择**保存并关闭**。 
 7. 在**主要图像**属性旁边的视图定义中，确保值设置为您在上一步中创建的自定义图像。 如果未选择，请选择。  
-    ![已选择主要图像属性](media/primary-image-property.png)
+    > [!div class="mx-imgBorder"] 
+    > ![已选择主要图像属性](media/primary-image-property.png "已选择主要图像属性")
 
 8.  打开需要图像支持的窗体，如实体主窗体。 
 9.  在窗体编辑器功能区上，选择**窗体属性**。 
 10. 在**窗体属性**页面中，选择**显示**选项卡，选择**在窗体中显示图像**，然后选择**确定**。 
 
     > [!div class="mx-imgBorder"] 
-    > ![在窗体中显示图像设置](media/show-image-on-form.png "在窗体中显示图像设置")
+    > ![在窗体设置中显示图像](media/show-image-on-form.png "在窗体设置中显示图像")
 
 11. 在窗体编辑器功能区上，选择**保存**，然后选择**发布**。 关闭窗体编辑器。 
 
@@ -202,7 +226,9 @@ search.app:
 > [!IMPORTANT]
 > 如果记录是尚未保存的新记录，尝试更改图像时，将返回“参数无效”错误。 
 
-#### <a name="change-the-image-for-a-record"></a>更改记录的图像
+### <a name="change-the-image-for-a-record"></a>更改记录的图像
+在实体窗体具有图像字段后，应用用户可以更改给定记录的图像。 
+
 1. 打开其中包含实体窗体的应用程序，然后在窗体中选择图像。 
    > [!div class="mx-imgBorder"] 
    > ![默认实体图像](../common-data-service/media/default-entity-image-on-form.png "默认实体图像")
@@ -215,3 +241,15 @@ search.app:
 面向使用图像数据的开发人员的更多信息：
 - [实体元数据 > 实体图像](/powerapps/developer/common-data-service/entity-metadata#entity-images)
 - [图像属性](/powerapps/developer/common-data-service/image-attributes)
+
+
+## <a name="file-fields"></a>文件字段
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
+当前，文件数据类型仅可用于画布应用和流。 
+
+**文件**字段用于存储二进制数据。 此字段的主要用途是存储单个图像、注释或附件。 但是，也可以存储其他形式的二进制数据。 可以将此数据类型的一个或多个字段添加到现有的标准可自定义实体或自定义实体中。
+
+默认**最大文件大小**为 32 MB，可以设置的最大大小为 128 MB。 可以为添加到实体的文件类型的每个字段分别设置文件大小限制。 
+
+面向使用文件数据的开发人员的更多信息：[文件属性](/powerapps/developer/common-data-service/file-attributes)

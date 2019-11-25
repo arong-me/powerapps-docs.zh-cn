@@ -1,12 +1,12 @@
 ---
-title: PowerApps 中模型驱动应用程序主窗体的 Web 资源属性 | MicrosoftDocs
+title: PowerApps 中模型驱动应用主窗体的 Web 资源属性 | MicrosoftDocs
 description: 了解主窗体的 Web 资源属性
 Keywords: 主窗体; Web 资源属性; Dynamics 365
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
 ms.date: 04/03/2019
@@ -14,10 +14,16 @@ ms.service: powerapps
 ms.topic: article
 ms.assetid: 82cd41ea-95b0-4606-9e7d-43eb5ce9ecd6
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: efc8f74806a464f4aa8b37df875e429ba92247b8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710143"
 ---
 # <a name="web-resource-properties-for-model-driven-app-forms"></a>模型驱动应用程序窗体的 Web 资源属性
 

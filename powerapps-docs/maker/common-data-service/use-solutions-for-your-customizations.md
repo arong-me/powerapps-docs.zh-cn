@@ -4,40 +4,45 @@ description: 了解如何自定义默认解决方案
 ms.custom: ''
 ms.date: 10/29/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: f993c4ed-1fc3-4e47-bef1-d38695ddb11a
 caps.latest.revision: 57
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0676d24ef79f2fe92da2971028a6e22fbdc76c62
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755167"
 ---
-
-# <a name="use-the-common-data-services-default-solution"></a>使用 Common Data Services 默认解决方案  
+# <a name="use-the-common-data-services-default-solution"></a>使用 Common Data Service 的默认解决方案  
   
  所有 PowerApps 环境均包括以下解决方案。
--   **Common Data Services 默认解决方案** - 这是一个基本解决方案，默认可供制造商在环境中用于自定义。
+-   **Common Data Service 默认解决方案** - 这是一个基本解决方案，默认可供制造商在环境中用于自定义。
 -   **默认解决方案** - 这是一个特殊解决方案，包含环境中所有解决方案的所有自定义项。 
 <!-- **Base Custom Controls Core** - This solution includes a core set of controls. Controls are used in user interface elements, such as fields, lists, and views. -->
 
 请注意，如果您安装或导入了其他应用程序或解决方案，其他解决方案可能在解决方案列表中提供。 
 
-默认情况下，当您构建或自定义模型驱动应用时，您使用名为 Common Data Services 默认解决方案的解决方案。 您可以打开 Common Data Services 默认解决方案查看和编辑解决方案中包含的组件。 为此，请执行以下步骤。
+默认情况下，当您构建或自定义模型驱动应用时，您使用称为 Common Data Service 默认解决方案的解决方案。 您可以打开 Common Data Service 默认解决方案查看和编辑解决方案中包含的组件。 为此，请执行以下步骤。
  
 1.  在左侧导航窗格中，选择**解决方案**。
 
-2.  在解决方案列表中，选择 **Common Data Services 默认解决方案**。
+2.  在解决方案列表中，选择 **Common Data Service 默认解决方案**。
   
 > [!TIP]
 >  如果您计划分发您制造的应用程序，请考虑更改发布商自定义项前缀。 详细信息：[解决方案发布商前缀](change-solution-publisher-prefix.md)。  
@@ -52,4 +57,4 @@ search.app:
 ## <a name="see-also"></a>另请参阅  
 [了解模型驱动的应用程序组件](../model-driven-apps/model-driven-app-components.md)
  <br/>
- [白皮书：解决方案生成器的模式和原理](http://go.microsoft.com/fwlink/p/?LinkID=533946)
+ [白皮书：解决方案生成器的模式和原理](https://go.microsoft.com/fwlink/p/?LinkID=533946)

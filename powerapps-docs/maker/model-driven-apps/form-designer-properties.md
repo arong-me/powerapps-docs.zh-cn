@@ -8,31 +8,36 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 38a2ebe769fdff6ebeeebd82824fffecae5ff00e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700331"
 ---
-
 # <a name="properties-available-in-the-form-designer"></a>窗体设计器中的可用属性
 
 位于模型驱动窗体设计器的右侧窗格，属性窗格让您可以快速查看和更新从预览或树视图选择的任何元素的属性。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/form-designer-property-pane.png "窗体设计器属性窗格")
+> ![](media/form-designer-property-pane.png "Form designer property pane")
 
 ## <a name="form-properties"></a>窗体属性
 
-|姓名  |说明  |
+|名称  |说明  |
 |---------|---------|
 |**标题**     | 输入一个对用户有意义的名称。 此名称将向使用窗体的用户显示。 如果他们可以使用为实体配置的多个窗体，则将使用此名称区分可用窗体。 <br /> 该属性是必需的。        |
 |**说明**     |  输入描述，说明此窗体与其他主窗体的不同之处。 此描述仅在解决方案资源管理器中某个实体的窗体列表中显示。        |

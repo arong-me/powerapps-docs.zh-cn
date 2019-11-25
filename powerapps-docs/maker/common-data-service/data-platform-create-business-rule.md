@@ -1,5 +1,5 @@
 ---
-title: 在 Common Data Service 中创建业务规则 | Microsoft Docs
+title: 在 Common Data Service 中创建业务规则 | MicrosoftDocs
 description: 如何在 Common Data Service 中创建业务规则的分步说明。
 author: lancedMicrosoft
 manager: kfile
@@ -9,12 +9,17 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 45d0d4ce80d1552ace70ae5b25a67e570141d261
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754727"
 ---
-
 # <a name="create-a-business-rule-for-an-entity"></a>创建实体的业务规则
 
 无需编写代码或创建插件，即可创建业务规则和建议以应用逻辑和验证。业务规则可以提供一个简单的界面来实施和维护快速更改和常用的规则。
@@ -46,7 +51,7 @@ search.app:
 
 ## <a name="create-a-business-rule"></a>创建业务规则
   
-1. 登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后单击或点按左边缘附近的**数据**向下键。
+1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后单击或点按左边缘附近的**数据**向下键。
 
 2. 在显示的列表中，单击或点按**实体**。
   
@@ -83,7 +88,7 @@ search.app:
   
     3. 若要向条件添加更多子句（如 AND 或 OR），请单击**属性**选项卡中的**新建**创建新规则，然后为该规则设置属性。 在**规则逻辑**字段中，可以指定将新规则添加为 AND 还是 OR。  
   
-        ![向条件添加新规则](./media/data-platform-cds-create-business-rule/add-new-rule-condition.png "向条件添加新规则")  
+        ![为条件添加新规则](./media/data-platform-cds-create-business-rule/add-new-rule-condition.png "为条件添加新规则")  
   
     4. 为条件设置完属性之后，请单击**应用**。  
   
@@ -91,7 +96,7 @@ search.app:
   
     1. 将一个操作组件从**组件**选项卡拖到**条件**组件旁边的加号。 如果希望满足添加时业务规则采取操作，请将该操作拖到复选标记旁边的加号，如果希望不满足条件时业务规则采取操作，请拖到 x 旁边的加号。
   
-        ![将操作拖到业务规则](./media/data-platform-cds-create-business-rule/drag-an-action-business-rule.png "将操作拖到业务规则")  
+        ![将操作拖放到业务规则](./media/data-platform-cds-create-business-rule/drag-an-action-business-rule.png "将操作拖放到业务规则")  
   
     2. 若要设置操作的属性，请单击设计器窗口中的**操作**组件，然后在**属性**选项卡中设置属性。  
   

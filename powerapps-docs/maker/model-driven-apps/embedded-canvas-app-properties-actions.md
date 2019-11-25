@@ -8,20 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 00e62904-2ce9-4730-a113-02b1fedbf22e
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 20a28b159158579b35fb9e8a1b650f718c5ef83b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2703939"
 ---
 # <a name="modeldrivenformintegration-control-properties-and-actions"></a>ModelDrivenFormIntegration 控件属性和操作
 模型驱动窗体上嵌入的区域应用包含名为 **ModelDrivenFormIntegration** 的特殊控件。 此控件负责将上下文数据从主机模型驱动的窗体带入嵌入式区域应用。  

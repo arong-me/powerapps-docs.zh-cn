@@ -1,5 +1,5 @@
 ---
-title: Common Data Service 中的“日期”和“时间”字段的行为和格式 | MicrosoftDocs
+title: Common Data Service 中的“日期和时间”字段的行为和格式 | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/25/2018
 ms.reviewer: ''
@@ -8,23 +8,29 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 73d691c7-344e-4c96-8979-c661c290bf81
 caps.latest.revision: 47
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cbb327956558e57713040ec8ab1a26d3af78c6c7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711815"
 ---
 # <a name="behavior-and-format-of-the-date-and-time-field"></a>“日期和时间”字段的行为和格式
 
-在 Common Data Service 中，“日期”和“时间”数据类型用于大多数标准实体字段。 根据字段表示的日期类型，可以选择不同的字段行为：**用户当地时间**、**仅限日期**或**时区无关**。  
+在 Common Data Service 中，日期和时间数据类型在许多标准实体字段中使用。 根据字段表示的日期类型，可以选择不同的字段行为：**用户当地时间**、**仅限日期**或**时区无关**。  
   
 <a name="Behavior"></a>   
 

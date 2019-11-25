@@ -8,27 +8,32 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d6881aaa3a55f16324e5d995e70be1e186a816bf
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759368"
 ---
-
 # <a name="add-an-embedded-canvas-app-on-a-model-driven-form"></a>在模型驱动窗体上添加嵌入式区域应用
 本主题介绍如何在模型驱动窗体上嵌入新的区域应用。
 
 假设您要创建新的区域应用，并将其嵌入到客户实体的主窗体。 为此，请按照以下步骤操作： 
 
-1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 2.  [创建或编辑实体的主窗体](create-and-edit-forms.md)，在我们的示例中是客户实体。 
 3.  在命令栏中，选择**切换到经典**在经典窗体设计器中打开窗体。
 4.  在经典窗体设计器中，选择您希望嵌入式区域应用显示的窗体上的部分。
@@ -47,7 +52,7 @@ search.app:
          - 请注意，对**应用 ID** 值进行更改将断开模型驱动型窗体与嵌入式区域应用的链接。
 12. 选择**自定义**以创建或编辑区域应用。 这会在一个新选项卡中打开 PowerApps Studio。
        > [!NOTE]
-       > 如果打开 PowerApps Studio 被 Web 浏览器弹出窗口阻止程序阻止，您必须启用 web.powerapps.com 网站或暂时禁用弹出窗口阻止程序，然后再次选择**自定义**。
+       > 如果打开 PowerApps Studio 被 Web 浏览器弹出窗口阻止程序阻止，您必须启用 make.powerapps.com 网站或暂时禁用弹出窗口阻止程序，然后再次选择**自定义**。
 13. 在 PowerApps Studio 中，请注意左侧窗格中有一个特殊的 **ModelDrivenFormIntegration** 控件。 此控件负责将上下文数据从主机模型驱动的窗体带入嵌入式区域应用。
 14. 请注意，[区域应用窗体控件](../canvas-apps/controls/control-form-detail.md)已自动添加到您的嵌入式区域应用中，并显示数据正在通过 ModelDrivenFormIntegration 控件从主机模型驱动窗体传递到该控件。 
 15. 选择**视图**选项卡，然后选择**数据源**。 请注意，您的主机模型驱动窗体的父实体的数据源（即此例中的客户）已自动添加到您的嵌入式区域应用中。

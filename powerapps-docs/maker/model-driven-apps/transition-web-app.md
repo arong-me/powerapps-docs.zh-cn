@@ -9,25 +9,31 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 14c4c18c-927c-4ea2-ba66-0531285a99a7
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: eed1efac81b882d076e0e809c93ddec63f6a75f7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759720"
 ---
 # <a name="quick-start-for-transitioning-your-legacy-web-client-application-to-unified-interface"></a>从旧 Web 客户端应用程序转换到统一接口的快速入门指南
 
 此统一接口框架使用响应式 Web 设计原则，为任何屏幕尺寸、设备或方向提供最佳的查看和交互体验。 此快速入门指南主题介绍如何使用新的非生产环境将旧 Web 客户端应用程序转换为统一接口。 
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3JwWU]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3JwWU]
 
 若要使用现有非生产环境转换 Web 客户端应用程序，请参阅[使用现有环境和统一接口验证旧 Web 客户端应用入门指南](transition-web-app-existing.md)。 
 ## <a name="prerequisites"></a>必备条件
@@ -37,7 +43,7 @@ search.app:
 ## <a name="prepare-the-environment"></a>准备环境
 首先，选择一个非生产环境并启用**将使用统一接口**模式，该模式对环境中的所有模型驱动应用程序都使用统一接口。 其中还包含最初为旧 Web 客户端配置的所有 Dynamics 365 应用程序模块。
 
-1. 登录 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**环境**，然后选择一个沙盒环境。 
+1. 登录 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**环境**，然后选择一个沙盒环境。 
 
 2. 选择**设置** > **行为**，然后打开**仅使用统一接口**。
 
@@ -47,7 +53,7 @@ search.app:
 您还可以在设置区域中设置此项。 转到**设置** > **管理** > **系统设置**，然后将**常规**选项卡上的**仅启用统一接口**设置为**是**。
 
 > [!div class="mx-imgBorder"] 
-> ![仅使用新统一接口](media/use-unified-interface-only.png "仅使用新统一接口")
+> ![仅使用新的统一接口](media/use-unified-interface-only.png "仅使用新的统一接口")
 
 
 > [!NOTE]
@@ -56,7 +62,7 @@ search.app:
 ## <a name="run-and-validate-your-application-in-the-unified-interface"></a>在统一接口中运行和验证应用程序
 运行最初为 Web 客户端应用程序的应用程序。 请注意，开启**仅使用统一接口**之后，环境中的所有可用应用程序都将使用统一接口，即使应用程序最初是针对 Web 客户端配置的也不例外。
 
-若要运行您的应用程序，请登录 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**应用程序**，然后选择要运行的应用程序。 也可以直接访问**我的应用程序**页面，如 *https://contoso.crm.dynamics.com/apps/*。
+若要运行您的应用程序，请登录 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**应用程序**，然后选择要运行的应用程序。 也可以直接访问**我的应用程序**页面，如 *https://contoso.crm.dynamics.com/apps/*。
 
 ### <a name="validate-your-app-processes-and-customizations"></a>验证您的应用程序、流程和自定义项 
 建议测试所有用例。 可以从最关键的用例开始，或将其分组为设计逻辑模式。 由于统一接口基于响应式设计，所以建议您使用不同屏幕分辨率的不同设备来执行测试。 测试应用程序时，可以验证自定义项是否兼容统一接口，是否有任何功能需要重新设计或缺少功能。 指定计划来检查这些元素，并在社区论坛发布问题和反馈。 

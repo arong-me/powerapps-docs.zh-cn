@@ -1,5 +1,5 @@
 ---
-title: '使用解决方案资源管理器创建和编辑 1:N（一对多）或 N:1（多对一）实体关系 | MicrosoftDocs'
+title: 使用解决方案资源管理器创建和编辑 1:N（一对多）或 N:1（多对一）实体关系 | MicrosoftDocs
 description: 了解如何使用 PowerApps 解决方案资源管理器创建一对多或多对一实体关系
 ms.custom: ''
 ms.date: 10/28/2018
@@ -9,24 +9,29 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3488b8228841f7b5323daee972472884e7c873d8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758136"
 ---
-
 # <a name="create-and-edit-1n-one-to-many-or-n1-many-to-one-entity-relationships-using-solution-explorer"></a>使用解决方案资源管理器创建和编辑 1:N（一对多）或 N:1（多对一）实体关系 
 
 解决方案资源管理器提供了一个为 Common Data Service 创建和编辑 1:N（一对多）或 N:1（多对一）实体关系的方法。
 
-[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 详细信息： 
+[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 详细信息： 
 - [创建 1:N（一对多）或 N:1（多对一）关系](create-edit-1n-relationships.md)
 - [在 PowerApps 门户中创建和编辑 1:N（一对多）或 N:1（多对一）实体关系](create-edit-1n-relationships-portal.md)
   

@@ -4,28 +4,33 @@ description: 了解如何配置 Azure Cosmos DB for SQL API 数据提供程序�
 keywords: SQL API
 ms.date: 02/15/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: d0031ffc-8754-4a12-b8c1-e08edc49ff73
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
-caps.latest.revision: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
+caps.latest.revision: ''
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3e9594ada54fb89f77298a4077281dcedbb8c656
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2705655"
 ---
-
 # <a name="preview-feature-azure-cosmos-db-sql-api-data-provider-requirements"></a>预览功能：Azure Cosmos DB SQL API 数据提供程序的要求
 
 本主题介绍 Azure Cosmos DB for SQL API 数据提供程序的要求，以及在您将 Azure Cosmos DB for SQL API 数据提供程序用于虚拟实体时如何配置和建议最佳实践。 
@@ -44,7 +49,7 @@ Azure Cosmos DB 是 Microsoft 全球分发的用于任务关键型应用程序�
 
 - 包含 Azure Cosmos DB 的 Azure 订阅。
 - Azure Cosmos DB SQL API 集合。
-- Azure Cosmos DB 的数据库类型应为 SQL。 
+- Azure Cosmos DB 数据库类型应为 SQL。 
 
 ## <a name="data-type-mapping"></a>数据类型映射
 
@@ -52,7 +57,7 @@ Azure Cosmos DB 是 Microsoft 全球分发的用于任务关键型应用程序�
 
 ![SQL API 文档的示例 JSON。](media/documentdbexample.png)
 
-此表指示使用 Common Data Service 的*订单*集合中 SQL API 文档的数据类型映射。
+此表指示数据类型为 Common Data Service 的*订单*集合中 SQL API 文档的数据类型映射。
 
 |SQL API 数据|Common Data Service|
 |--|--|
@@ -96,7 +101,7 @@ SQL 查询筛选支持以下运算符。
     |**名称**|键入用于描述数据源的名称。|
     |**集合名称**|包含您要在虚拟实体中显示的集合的 Azure Cosmos DB *数据库*的名称。  |
     |**授权密钥**|Azure Cosmos DB 帐户的主要密钥或辅助密钥。 您可以从您的 Azure Cosmos DB 帐户下**密钥**设置下的 Azure 管理门户找到密钥。|
-    |**Uri**|Azure Cosmos DB 集合所在的资源组的 URI。 URI 的格式类似于 `https://contoso/documents.azure.com:443`。 您可以从您的 Azure Cosmos DB 帐户下**密钥**设置下的 Azure 管理门户找到 URI。 |
+    |**Uri**|Azure Cosmos DB 集合所在的资源组的 URI。 URI 的格式类似于 `https://contoso/documents.azure.com:443`。 您可以从 Azure Cosmos DB 帐户下**密钥**设置下的 Azure 管理门户找到此 URI。 |
     |**超时(以秒为单位)**|输入数据请求超时前等待 Azure Cosmos DB 服务响应的秒数。例如，输入 30 将最多等待 30 秒才超时。 默认超时为 120 秒。|
 
     > [!div class="mx-imgBorder"] 

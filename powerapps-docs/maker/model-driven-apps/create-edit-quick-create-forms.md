@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 68ca9059-cc5a-45e7-88bd-cc57186bbb48
 caps.latest.revision: 18
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b1496fcb600524e7934fe55ca17a7a7bafb54c75
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759148"
 ---
 # <a name="create-or-edit-model-driven-app-quick-create-forms-for-a-streamlined-data-entry-experience"></a>创建或编辑模型驱动应用程序的快速创建窗体以简化数据输入体验
 
@@ -50,11 +56,12 @@ search.app:
   
 > [!NOTE]
 >  - 实体必须为要显示的快速创建窗体启用**允许快速创建**选项。 
+>  - 您还必须将实体和快速创建窗体添加到您的应用中。
 >  - 某些字段（如 CREATEDON 字段）不能添加到快速创建窗体。  
   
 ### <a name="how-to-create-a-quick-create-form"></a>如何创建快速创建窗体  
   
-1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 
 > [!IMPORTANT]
@@ -92,10 +99,10 @@ search.app:
   
 ### <a name="to-edit-a-quick-create-form"></a>编辑快速创建窗体  
   
-1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 > [!IMPORTANT]
-> “如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。    
+> 如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。    
   
 2. 展开**数据**，选择**实体**，选择所需实体，然后选择**窗体**选项卡。    
 
@@ -113,7 +120,7 @@ search.app:
 在 9.1.0.2007 更新中引入，**允许快速创建**属性可以为所有标准活动启用或禁用，除定期约会外。 此属性让您可以更改为大部分活动默认显示的窗体。 默认情况下，**允许快速创建**属性启用，快速创建窗体是显示在应用程序区域以及支持它的活动实体中的窗体。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/allow-quick-create.png "约会实体上的“允许快速创建”属性")
+> ![](media/allow-quick-create.png "Allow Quick Create property on appointment entity")
 
 
 ### <a name="unified-interface-client-form-display-behavior"></a>统一接口客户端窗体显示行为

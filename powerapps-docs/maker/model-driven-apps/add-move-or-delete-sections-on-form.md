@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 38607e27fea1c926b6cbc81471113e2b49258921
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701475"
 ---
-
 # <a name="add-configure-move-or-delete-sections-on-a-form"></a>添加、配置、移动或删除窗体中的分区 
 使用窗体设计器添加、配置、移动或删除分区。 
 
@@ -30,7 +35,7 @@ search.app:
 要将分区添加到窗体中，请使用**组件**窗格。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/FormDesignerComponentsLayout.png "布局组件")
+> ![](media/FormDesignerComponentsLayout.png "Layout components")
 
   > [!NOTE]
   >   分区只能在主窗体和快速视图窗体中添加。 详细信息：[窗体类型](types-forms.md)

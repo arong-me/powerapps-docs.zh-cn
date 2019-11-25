@@ -5,12 +5,17 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: aace949be3cc191af5edd95c461e422b9c3217f5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708339"
 ---
-
 # <a name="render-up-to-three-levels-of-page-hierarchy-by-using-hybrid-navigation"></a>使用混合导航最多呈现页面层次结构的三个级别
 
 此示例基于门户站点地图呈现最多呈现页面层次结构三个级别的混合导航类型。 此组件的规则是：

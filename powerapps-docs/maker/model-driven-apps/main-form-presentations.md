@@ -1,31 +1,37 @@
 ---
-title: PowerApps 中模型驱动应用程序的主窗体演示 | MicrosoftDocs
+title: PowerApps 中模型驱动应用的主窗体演示 | MicrosoftDocs
 description: 了解主窗体在不同设备上显示时如何呈现
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: da3ac59a-5413-46cb-b355-1987e42e3853
 caps.latest.revision: 35
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9ed031f75235cfb47a2206de0a814fb008a335bd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702531"
 ---
 # <a name="how-model-driven-app-main-forms-appear-on-different-devices"></a>模型驱动应用程序的主窗体在不同设备上的显示方式
 
-主窗体供所有模型驱动应用客户端使用。 此窗体提供一致的用户体验，不论用户使用的是 Web 浏览器、Dynamics 365 for phones、Dynamics 365 for tablets 或 Dynamics 365 for Outlook。  
+主窗体供所有模型驱动应用客户端使用。 此窗体提供一致的用户体验，不论用户使用的是 Web 浏览器、适用于手机的 Dynamics 365、适用于平板电脑的 Dynamics 365 或 Dynamics 365 for Outlook。  
   
 <a name="BKMK_MainFormPresentations"></a>   
 ## <a name="main-forms"></a>主窗体  
@@ -51,7 +57,7 @@ search.app:
 |组件|摘要|  
 |---------------|-------------|  
 |**导航栏**|使用站点地图中的数据以支持移动到应用程序的不同区域。<br /><br /> 在经典窗体中使用的导航窗格未包括在更新的窗体中。 在记录的上下文中，导航栏提供对相关记录的视图的访问。 不需要使用导航窗格或导航栏导航到相关记录，添加配置的子网格即可显示有用的相关实体记录，从而可为大多数人提供更好的体验。|  
-|**命令栏**|使用为功能区定义的数据为记录提供相关命令。<br /><br /> 前五个命令显示时后跟一个省略号 (![“更多命令”按钮](media/not-available.gif "“更多命令”按钮"))，可提供弹出式菜单来选择其他命令。|  
+|**命令栏**|使用为功能区定义的数据为记录提供相关命令。<br /><br /> 前五个命令显示时后跟一个省略号 (![“更多命令”按钮](media/not-available.gif "M更多命令按钮”))，可提供弹出式菜单来选择其他命令。|  
 |**图像**|如果实体有图像字段，并且实体**主图像** 选项设置为**默认图像** ，则当将窗体配置为显示图像时，图像可以在标题中显示。|  
 |**页眉**|放在标题中的字段在用户向下滚动到窗体的主体时仍然可见。<br /><br /> 标题中最多可放四个字段。 标题中不允许有多行文本、Web 资源或 iFrame。 标题和脚注与分区有一些共同的属性。|  
 |**流程控件**|如果某个实体有活动的业务流程，则会在标题下显示流程控件。 详细信息：[业务流程](/flow/business-process-flows-overview)|  
@@ -85,11 +91,11 @@ search.app:
   
  **平板电脑应用程序**  
   
- ![Dynamics 365 窗体回流到平板电脑应用](media/reflow-tablet-app.png "Dynamics 365 窗体回流到平板电脑应用")  
+ ![Dynamics 365 窗体回流到平板电脑应用程序](media/reflow-tablet-app.png "Dynamics 365 窗体回流到平板电脑应用程序")  
   
  **手机应用程序**  
   
- ![Dynamics 365 窗体回流到手机应用](media/custon-reflow-phone-app.png "Dynamics 365 窗体回流到手机应用")  
+ ![Dynamics 365 窗体回流到手机应用程序](media/custon-reflow-phone-app.png "Dynamics 365 窗体回流到手机应用程序")  
   
  窗体元素在 Dynamics 365 for tablets 中转换为广角全景布局，用户可在其中扫动屏幕来更改视口中的可见元素。 在 Dynamics 365 for phones 中，用户扫动屏幕查看其他元素的列或窗格，流程控制显示在每个列上方。  
   
@@ -133,7 +139,7 @@ search.app:
   
  在 Dynamics 365 for tablets 中，第二个面板以窗体上第一个选项卡的名称开头。 标题中包括的所有字段都包括在内，然后是第一个选项卡的内容。在 Dynamics 365 for phones 中，标题在第一列中显示。  
   
- ![适用于平板电脑的 CRM 的窗体的第一个面板](media/mobile-app-form-first-panel.png "适用于平板电脑的 CRM 的窗体的第一个面板")  
+ ![适用于平板电脑的 CRM 的第一个面板](media/mobile-app-form-first-panel.png "适用于平板电脑的 CRM 的第一个面板")  
   
  如果窗体有一个活动的流程，则第三个选项卡将在 Dynamics 365 for tablets 中显示该流程当前阶段的任务。 在 Dynamics 365 for phones 中，流程控件浮动在窗格上方，被选中时会在用户当前窗格上展开，其始终可见、可操作。  
   

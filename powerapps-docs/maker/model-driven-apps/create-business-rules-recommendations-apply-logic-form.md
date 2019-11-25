@@ -8,21 +8,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 00e62904-2ce9-4730-a113-02b1fedbf22e
 caps.latest.revision: 31
 author: Mattp123
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3937b56ea5ed9aa03085f48de8f4846328d6e836
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700551"
 ---
 # <a name="create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>创建业务规则和建议以在模型驱动应用程序窗体中应用逻辑
 
@@ -85,7 +91,7 @@ search.app:
   
     3.  若要向条件添加更多子句（如 AND 或 OR），请单击**属性**选项卡中的**新建**创建新规则，然后为该规则设置属性。 在**规则逻辑**字段中，可以指定将新规则添加为 AND 还是 OR。  
   
-        ![向条件添加新规则](media/add-new-rule-condition.png "向条件添加新规则")  
+        ![为条件添加新规则](media/add-new-rule-condition.png "为条件添加新规则")  
   
     4.  为条件设置完属性之后，请单击**应用**。  
   
@@ -93,7 +99,7 @@ search.app:
   
     1.  将一个操作组件从**组件**选项卡拖到**条件**组件旁边的加号。 如果希望满足添加时业务规则采取操作，请将该操作拖到复选标记旁边的加号，如果希望不满足条件时业务规则采取操作，请拖到 x 旁边的加号。  
   
-        ![将操作拖到业务规则](media/drag-an-action-business-rule.png "将操作拖到业务规则")  
+        ![将操作拖放到业务规则](media/drag-an-action-business-rule.png "将操作拖放到业务规则")  
   
     2.  若要设置操作的属性，请单击设计器窗口中的**操作**组件，然后在**属性**选项卡中设置属性。  
   
@@ -143,12 +149,12 @@ search.app:
 4.  在业务规则设计器中，选择每个条件和操作以验证每个条件和操作中引用的所有字段。 
 
      > [!div class="mx-imgBorder"] 
-     > ![](media/business-rule-field.png "实体中存在业务规则内引用的字段")
+     > ![](media/business-rule-field.png "Field referenced in business rule exists in entity")
 
  5. 验证窗体中是否也包含业务规则内引用的每个字段。 如果不包含，则将缺少的字段添加到窗体。
 
      > [!div class="mx-imgBorder"] 
-     > ![](media/account-name-on-form.png "窗体中的客户名称字段")
+     > ![](media/account-name-on-form.png "Account name field on form")
 
 ## <a name="frequently-asked-questions-faq"></a>常见问题 (FAQ)
 *业务规则能否解锁只读窗体上的字段？*

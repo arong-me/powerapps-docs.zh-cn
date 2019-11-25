@@ -1,37 +1,39 @@
 ---
-title: Power BI 与 Dynamics 365 应用结合使用 | MicrosoftDocs
-ms.custom: null
-ms.date: 12/07/2018
-ms.reviewer: null
-ms.service: crm-online
-ms.suite: null
-ms.tgt_pltfrm: null
+title: 结合使用 Power BI 和模型驱动应用 | Microsoft Docs
+ms.custom: ''
+ms.date: 10/14/2019
+ms.reviewer: ''
+ms.service: powerapps
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to:
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: 48997010-a47c-4e16-b7d2-f55d7a52ba19
-caps.latest.revision: 36
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - admin
+- admin
 search.app:
-  - D365CE
-  - Powerplatform
+- D365CE
+- Powerplatform
+ms.openlocfilehash: a05a163e8f946f35f0b3b52d8978b1bf9be4fe8b
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755936"
 ---
 # <a name="use-power-bi"></a>使用 Power BI
 
 Power BI 云服务与 Common Data Service 应用结合使用可提供自助服务分析解决方案。 Power BI 自动刷新显示的应用数据。 借助 Power BI Desktop 或 Microsoft Excel（用于报表创作的 Power Query 和用于共享仪表板的和刷新来自模型驱动应用的数据的 Power BI），您的用户拥有了一个使用应用数据的强大的新方法。  
   
 <a name="PowerBIGetstarted"></a>   
-## <a name="get-started-using-power-bi-with-dynamics-365-for-customer-engagement-apps-online"></a>将 Power BI 与 Dynamics 365 for Customer Engagement (online) 应用结合使用入门  
- 您可以通过适用于 Power BI 的 Dynamics 365 应用内容包轻松访问和分析销售、服务或营销数据。  
+## <a name="get-started-using-power-bi-with-model-driven-apps"></a>开始将 Power BI 与模型驱动应用结合使用  
+ 
+Power BI 的 Dynamics 365 应用内容包使您可以轻松访问和分析 Dynamics 365 中模型驱动应用中的数据（Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 Field Service、Dynamics 365 Marketing、Dynamics 365 Project Service Automation）。  
   
  要使用内容包创建 Power BI 仪表板，请按照以下说明操作。  
   
-1. 如果尚未注册 Power BI，[请注册 Power BI](http://powerbi.com/)。  
+1. 如果尚未注册 Power BI，[请注册 Power BI](https://powerbi.com/)。  
   
 2. 登录 Power BI 后，请选择**数据集**区域中的**获取数据**，再选择**服务**下的**获取**，然后再从下列内容包中进行选择。  
   
@@ -58,15 +60,15 @@ Power BI 云服务与 Common Data Service 应用结合使用可提供自助服�
 ### <a name="content-packs-available-for-download"></a>可下载的内容包。  
  Dynamics 365 内容包支持应用的默认现成实体。 但是，您可以通过下载 .PBIX 文件，再使用 Power BI Desktop 自定义内容包，再将其上传到 Power BI 服务的方式自定义以下内容包。  
   
-- [下载 Dynamics CRM Online Sales Manager .PBIX](http://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Sales%20Manager.pbix)  
+- [下载 Dynamics CRM Online Sales Manager .PBIX](https://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Sales%20Manager.pbix)  
   
-- [下载 Dynamics 365 for Customer Engagement (online) 应用服务管理器 .PBIX](http://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Customer%20Service%20Manager.pbix)  
+- [下载 Dynamics 365 for Customer Engagement (online) 应用服务管理器 .PBIX](https://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Customer%20Service%20Manager.pbix)  
   
   适用于 Connected Field Service 的 Power BI 报表模板让用户可以发布显示已连接设备实时检测信号的 Power BI 报表。  
   
-- [下载 Power BI Report Template for Connected Field Service for Dynamics 365 for Customer Engagement](http://download.microsoft.com/download/E/B/5/EB5ED97A-A36A-4CAE-8C04-333A1E463B4F/PowerBI%20Report%20Template%20for%20Connected%20Field%20Service%20for%20Microsoft%20Dynamics%20365.pbix)  
+- [下载 Power BI Report Template for Connected Field Service for Dynamics 365 for Customer Engagement](https://download.microsoft.com/download/E/B/5/EB5ED97A-A36A-4CAE-8C04-333A1E463B4F/PowerBI%20Report%20Template%20for%20Connected%20Field%20Service%20for%20Microsoft%20Dynamics%20365.pbix)  
   
- 关于如何自定义内容包的信息，请参阅[自定义 Dynamics 365 for Customer Engagement 应用 Power BI 内容包](customize-power-bi-content-packs.md)。 
+ 关于如何自定义内容包的信息，请参阅[自定义 Power BI 内容包](customize-power-bi-content-packs.md)。 
   
 <a name="BPI_embed"></a>   
 ## <a name="embed-power-bi-visualizations-on-personal-dashboards"></a>在个人仪表板中嵌入 Power BI 可视化  
@@ -85,9 +87,9 @@ Power BI 云服务与 Common Data Service 应用结合使用可提供自助服�
   
 4. 选择**确定**。  
   
-若要了解有关如何向个人仪表板添加 Power BI 磁贴的详细信息，请参阅[在个人仪表板中嵌入 Power BI 磁贴](/dynamics365/customer-engagement/on-premises/basics/add-edit-power-bi-visualizations-dashboard.md#embed--power-bi-tiles-on-your-personal-dashboard)。  
+若要了解有关如何向个人仪表板添加 Power BI 磁贴的详细信息，请参阅[在个人仪表板中嵌入 Power BI 磁贴](/powerapps/user/add-powerbi-dashboards#embed--power-bi-tiles-on-your-personal-dashboard)。  
   
-若要了解有关如何向个人仪表板添加 Power BI 仪表板的详细信息，请参阅[在个人仪表板中添加 Power BI 仪表板](/dynamics365/customer-engagement/on-premises/basics/add-edit-power-bi-visualizations-dashboard.md)。  
+若要了解有关如何向个人仪表板添加 Power BI 仪表板的详细信息，请参阅[在个人仪表板中添加或编辑 Power BI 可视化](/powerapps/user/add-powerbi-dashboards)。  
   
 <a name="CRMOnline_PBIDesktop"></a>   
 ## <a name="use-power-bi-desktop-to-connect-directly-to-your-instance"></a>使用 Power BI Desktop 直接连接到实例。  
@@ -109,12 +111,12 @@ Power BI 云服务与 Common Data Service 应用结合使用可提供自助服�
   
 3. 在“获取数据”列表中，选择 **Dynamics 365 Online**。  
   
-4. 输入 Dynamics 365 OData 终结点 URL。 它应看起来类似此 URL，其中 *OrganizationName* 是您的组织的名称，**v8.1** 是版本。 选择**确定**。  
+4. 输入 Dynamics 365 OData 终结点 URL。 它应看起来类似此 URL，其中 *OrganizationName* 是您的组织的名称，**v9.0** 是版本。 选择**确定**。  
   
-    https://<em>OrganizationName</em>.api.crm.dynamics.com/api/data/*v8.1*  
+    https://<em>OrganizationName</em>.api.crm.dynamics.com/api/data/*v9.0*  
   
 > [!IMPORTANT]
-> 有关不同终结点版本的详细信息，请参阅 [Web API URL 和版本]( https://msdn.microsoft.com/library/gg334391.aspx#bkmk_url_and_versions)。
+> 有关不同终结点版本的详细信息，请参阅 [Web API URL 和版本](/powerapps/developer/common-data-service/webapi/compose-http-requests-handle-errors#web-api-url-and-versions)。
  
 > [!TIP]
 >  您可以找到您的 OData 终结点 URL。 转到**设置** > **自定义** > **开发人员资源**，然后在**实例 Web API** 下找到该 URL。  

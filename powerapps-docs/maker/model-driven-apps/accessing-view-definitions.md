@@ -9,21 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Mattp123
 ms.assetid: 034c8bef-0d1c-4ef9-8da7-f81343c4553a
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3b29f863399c8a49ca0c0d60ebe2196d6de6414c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752006"
 ---
-# <a name="access-a-model-driven-app-view-definition-in-powerapps"></a>在 PowerApps 中访问模型驱动的应用程序视图定义
+# <a name="access-a-model-driven-app-view-definition-in-powerapps"></a>在 PowerApps 中访问模型驱动应用视图定义
 
  在本主题中，您打开视图定义以显示用于配置视图的属性和选项。 在 PowerApps 中，可以通过多种方法访问视图定义。 
   
@@ -33,7 +39,7 @@ search.app:
 > [!IMPORTANT]
 > 最新视图设计器版本现在正处于预览阶段。 尚未支持某些功能，如高级筛选、自定义控件和列属性。 要完成这些任务，[打开在解决方案资源管理器中进行编辑的视图](#open-a-view-for-editing-in-solution-explorer)。
 
-1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 
     > [!IMPORTANT]

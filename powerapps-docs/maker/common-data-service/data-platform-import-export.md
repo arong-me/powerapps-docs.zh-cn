@@ -8,10 +8,16 @@ ms.component: cds
 ms.date: 05/14/2018
 ms.author: sabinn
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8aad3e440e93becd4741223f1450dd8e3b34921a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755563"
 ---
 # <a name="import-or-export-data-from-common-data-service"></a>从 Common Data Service 导入或导出数据
 
@@ -34,7 +40,7 @@ search.app:
     - 将 Excel 或 CSV 文件中的数据复制到您刚才创建的模板中。
 
 1. 导入文件。  
-    a. 在 [powerapps.com](https://web.powerapps.com/) 上，展开**数据**部分。 在左侧导航窗格中选择**实体**。  
+    a. 在 [powerapps.com](https://make.powerapps.com/) 上，展开**数据**部分。 在左侧导航窗格中选择**实体**。  
     b. 选择您要导入数据的实体。  
     c. 选择顶部的省略号或菜单。 选择**获取数据**。 选择**从 Excel 获取数据**。  
 
@@ -103,7 +109,7 @@ Common Data Service 实体使用主键唯一标识 Common Data Service 实体表
 有时，在从外部源集成数据时，主键可能不起作用。 使用 Common Data Service 定义替代主键唯一标识记录的备用键。
 
 示例：  
-对于**客户**实体，您可以使用基于自然键的标识将 **transactioncurrencyid** 设置为备用键。 例如，使用**美元**而不是之前显示的 GUID 值 **88c6c893-5b45-e811-a953-000d3a33bcb9** 。 您还可以选择**货币符号**或**货币名称**作为键。
+对于**客户**实体，您可以使用基于自然键的标识将 **transactioncurrencyid** 设置为备用键。 例如，使用**美元**代替之前显示的 GUID 值 **88c6c893-5b45-e811-a953-000d3a33bcb9**。 您还可以选择**货币符号**或**货币名称**作为键。
 
    > [!div class="mx-imgBorder"] 
    > ![在**货币**实体上创建备用键的示例](./media/data-platform-import-export/create-ak.png)
@@ -117,7 +123,7 @@ Common Data Service 实体使用主键唯一标识 Common Data Service 实体表
 
 您可以从标准实体或自定义实体进行一次性数据导出。 您可以一次性从多个实体导出数据。 如果从多个实体导出数据，每个实体将导出到其自己的 Microsoft CSV 文件。
 
-1. 在 [powerapps.com](https://web.powerapps.com/) 上，展开**数据**部分。 在左侧导航窗格中选择**实体**。
+1. 在 [powerapps.com](https://make.powerapps.com/) 上，展开**数据**部分。 在左侧导航窗格中选择**实体**。
 1. 选择您要从中导出数据的实体。
 1. 选择顶部的省略号或菜单。 选择**导出**。 选择**数据**。
 

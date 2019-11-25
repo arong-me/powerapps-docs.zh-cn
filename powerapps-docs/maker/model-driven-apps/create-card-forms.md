@@ -4,43 +4,49 @@ description: 了解如何在 PowerApps 中创建和使用卡窗体
 keywords: ''
 ms.date: 03/05/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Mattp123
 ms.assetid: be93b9d7-f1c2-4ee7-8d7c-0f5c34dfa5f7
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d9adcde6d35b0f2d336bf86b8e4e26bcec1edec2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752389"
 ---
 # <a name="create-a-card-form"></a>创建卡片式窗体
 卡窗体用于统一接口应用程序的视图。 卡窗体用于以适用于移动设备的紧凑格式呈现信息。 例如，“我的可用客户”视图的默认卡窗体定义为每个客户记录显示的信息。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/account-cardform-for-myactiveaccounts-view.png "“我的可用客户”视图的客户卡窗体")
+> ![](media/account-cardform-for-myactiveaccounts-view.png "Account card form for my active accounts view")
 
 尽管可以通过与其他窗体类型相同的方式创建和编辑卡窗体，但将卡窗体添加到应用程序是不同的。 不是作为应用程序组件添加窗体，而是使用**只读网格**控件将自定义卡窗体添加到视图。 
 
 ## <a name="create-a-card-form"></a>创建卡片式窗体
-1. 若要创建卡窗体，登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
+1. 若要创建卡窗体，登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
 2. 展开**数据**，选择**实体**，选择所需实体，然后选择**窗体**选项卡。
 3. 在工具栏上，选择**添加窗体**，然后选择**卡窗体**。 或者，您可以打开属于**卡**窗体的现有**窗体类型**来对其进行编辑。
 4. 添加所需的字段。 建议您限制字段数，以便窗体在小屏幕上仍能正常显示。 
 5. 选择**保存**，然后选择**发布**。 
 
 ## <a name="add-a-card-form-to-a-view"></a>将卡窗体添加到视图 
-1. 登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 2. 展开**数据**，选择所需实体，然后选择**视图**选项卡。
 3. 选择所需的视图，然后在视图设计器工具栏上，选择**切换到经典**。
 4. 从**常规任务**窗格中选择**自定义控件**。

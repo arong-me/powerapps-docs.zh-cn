@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中更改模型驱动应用程序窗体内的导航 | MicrosoftDocs
+title: 在 PowerApps 中更改模型驱动应用窗体内的导航 | MicrosoftDocs
 description: 了解如何更改窗体内的导航
 ms.custom: ''
 ms.date: 06/06/2018
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 4c379202-9f0e-4003-a49c-efff53e7f79f
 caps.latest.revision: 63
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0d2a8be9daa7a98ab0ddd838b5a1c7388f2eb21f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710319"
 ---
 # <a name="change-navigation-within-a-model-driven-app-form"></a>更改模型驱动应用程序窗体内的导航
 

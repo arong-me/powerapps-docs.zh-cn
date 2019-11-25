@@ -1,30 +1,36 @@
 ---
 title: 在 PowerApps 中定义模型驱动应用的数据 | MicrosoftDocs
 description: 了解如何定义模型驱动应用程序的数据
-Keywords: '数据, 实体, 字段, 关系, 属性, 模型驱动应用程序'
+Keywords: 数据, 实体, 字段, 关系, 属性, 模型驱动应用程序
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018
 ms.service: powerapps
 ms.topic: article
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 65a4766be330fba6a2ec0ed25a532a5ea37f7138
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2705039"
 ---
 # <a name="define-data-for-your-model-driven-app"></a>定义模型驱动应用程序的数据
 
-模型驱动应用程序的数据在 [Common Data Service](../common-data-service/data-platform-intro.md) 中定义。 
+模型驱动应用的数据在 [Common Data Service](../common-data-service/data-platform-intro.md) 中定义。 
 
 使用以下组件定义应用程序数据：*实体*、*字段*和*关系*。
 
-有关在 Common Data Service 中使用这些组件定义模型驱动应用程序的数据的详细信息，请参阅 Common Data Service 部分下的以下主题：
+有关在 Common Data Service 中使用这些组件定义模型驱动应用的数据的详细信息，请参阅  Common Data Service 部分下的以下主题：
 
 |组件 |主题|
 |-----|----|

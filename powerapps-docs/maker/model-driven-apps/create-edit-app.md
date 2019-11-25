@@ -3,29 +3,34 @@ title: 在 PowerApps 中使用应用程序设计器创建或编辑模型驱动�
 description: 了解如何使用应用程序设计器创建或编辑应用
 keywords: ''
 ms.date: 02/05/2019
-ms.service: crm-online
-ms.custom: null
+ms.service: powerapps
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 2a44229e-44f0-4c4e-ba21-a476210d0a12
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 19
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fb852ce8b6137d16eb8544da4eb6c9b92c12e29e
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759280"
 ---
-
 # <a name="create-a-model-driven-app-by-using-the-app-designer"></a>使用应用程序设计器创建模型驱动应用
 
 在本主题中，您将了解如何使用基于磁贴的应用程序设计器创建和编辑模型驱动应用的基础知识。
@@ -38,7 +43,7 @@ search.app:
 <a name="createApp"></a>   
 ## <a name="create-an-app"></a>创建应用程序  
 
-1.  在 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **主页**页面中，为模型驱动的应用程序选择**从头开始制作模型驱动应用**选项。  
+1.  在 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **主页**页面中，为模型驱动应用选择**从头开始制作模型驱动应用**选项。  
 
     > [!IMPORTANT]
     > “如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。 
@@ -61,7 +66,7 @@ search.app:
       > [!NOTE]
       > 通过在添加站点地图时选择**默认解决方案**，将把与该站点地图关联的组件自动添加到应用。  
 
-      ![使用现有解决方案创建应用页](media/use-existing-solution-to-create-the-app.png "使用现有解决方案创建应用") 
+      ![使用现有解决方案创建应用页面](media/use-existing-solution-to-create-the-app.png "使用现有解决方案创建应用") 
 
     - **选择欢迎页**：此选项用于从组织中的可用 Web 资源进行选择。 创建的欢迎页可以包含对用户有用的信息，如视频的链接、升级说明或入门信息。 欢迎页在打开应用程序时显示。 用户可在欢迎页上选择**下次不显示此欢迎屏幕**以禁用此页面，这样应用程序下次启动时不显示。 请注意，**下次不再显示此欢迎屏幕**选项是用户级别的设置，无法由管理员或应用制造者控制。 有关如何创建 Web 资源（如可用作欢迎页的 HTML 文件）的详细信息：[创建和编辑 Web 资源以扩展 Web 应用程序](create-edit-web-resources.md)  
       
@@ -77,7 +82,7 @@ search.app:
 <a name="editApp"></a>   
 ## <a name="edit-an-app"></a>编辑应用程序  
   
-1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 > [!IMPORTANT]
 > “如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。 
@@ -88,6 +93,6 @@ search.app:
  
   
 ### <a name="next-steps"></a>后续步骤  
- [添加或编辑应用组件](add-edit-app-components.md)   
+ [添加或编辑应用程序组件](add-edit-app-components.md)   
 
 

@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 5c05f683-e1bd-4885-be23-b6973128773f
 caps.latest.revision: 15
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8f2b890766c6643da0a5363f49ef9b5c233b0b0b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2703103"
 ---
 # <a name="use-segmented-solutions-and-patches-to-export-selected-entity-assets"></a>使用细分解决方案和修补程序导出所选实体资产
 
@@ -78,7 +84,7 @@ search.app:
   
  然后，选择解决方案组件。  
   
- ![选择解决方案的组件。](media/solution-segmentation-select-components-admin.png "选择解决方案的组件。")  
+ ![选择解决方案组件。](media/solution-segmentation-select-components-admin.png "选择解决方案组件。")  
   
  按照向导进行操作。 在步骤 1 中，按字母顺序开始，选择第一个实体，即 `Account` 实体的资产，如下所示。  
   

@@ -2,42 +2,45 @@
 title: 删除模型驱动应用程序 | MicrosoftDocs
 description: 了解如何从 PowerApps 环境中删除或移除模型驱动应用程序。
 keywords: ''
-ms.date: 05/31/2018
-ms.service: crm-online
-ms.custom: null
+ms.date: 10/08/2019
+ms.service: powerapps
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: e82e7f64-37ad-41e5-acd7-16309881c6a2
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 9
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 026420ad6a5f3ab3e74c9c0d11f87f8a52ffa417
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2756200"
 ---
-
 # <a name="delete-a-model-driven-app"></a>删除模型驱动应用程序
-
 删除或移除环境中已过时的应用程序。
 
-1. 登录到 [PowerApps](https://web.powerapps.com/)。
-2. 打开[解决方案资源管理器](advanced-navigation.md#solution-explorer)。 
-3. 在解决方案窗口中，在**组件**下，选择**应用**。
-4. 选择要删除的应用，然后在命令栏上选择**删除**。
+> [!IMPORTANT]
+> 如果将模型驱动应用作为托管解决方案的一部分安装在默认解决方案中，请参阅[删除作为托管解决方案的一部分安装的模型驱动应用](#delete-a-model-driven-app-that-was-installed-as-part-of-a-managed-solution)。
 
-    ![删除应用](media/app-module-solution-window.png "删除应用")
-
-5. 在显示的确认消息中，选择**删除**。
+1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+2. 在左侧导航中，选择**应用**。 
+3. 选择要删除的应用，然后在命令栏上选择**删除**。
+4. 在显示的确认消息中，选择**删除**。
 
    将从环境中删除应用程序。
   
@@ -46,4 +49,12 @@ search.app:
 > [!NOTE]
 > 删除应用时，建议删除其关联站点地图。 如果不删除关联站点地图，首次尝试再创建一个同名应用时，站点地图设计器将显示错误。 但是，可忽略此错误，而您再次尝试创建该应用时，将不显示此错误。
 
+## <a name="delete-a-model-driven-app-that-was-installed-as-part-of-a-managed-solution"></a>删除作为托管解决方案的一部分安装的模型驱动应用
+要删除作为托管解决方案的一部分安装在环境中的模型驱动应用，请删除托管解决方案。 
+
+### <a name="delete-a-managed-solution"></a>删除托管解决方案 
+可以通过删除托管解决方案来删除该解决方案的所有组件。
+1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
+2.  在左侧导航中，选择**解决方案**。
+3.  在**解决方案**列表中，选择要删除的托管解决方案，然后在工具栏上选择**删除**。 
 

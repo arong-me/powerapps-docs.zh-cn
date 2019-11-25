@@ -10,14 +10,19 @@ ms.date: 06/21/2019
 ms.reviewer: matp
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8c912ca78a15f080801d841e4dbbb03ad5d193df
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755519"
 ---
-
 # <a name="what-is-common-data-service"></a>什么是 Common Data Service？
-Common Data Service 让您可以安全地存储和管理业务应用程序使用的数据。 Common Data Service 内的数据存储在一组实体中。 *实体*是一组用于存储数据的记录，类似于表在数据库中存储数据。 Common Data Service 包括一组覆盖典型情形的标准实体，但是，您还可以创建针对您的组织的自定义实体，并使用 Power Query 用数据填充它们。 应用程序制造者随后可以利用 PowerApps 使用此数据生成丰富的应用程序。
+Common Data Service 让您可以安全地存储和管理业务应用程序使用的数据。 Common Data Service 内的数据存储在一组实体中。 *实体*是一组用于存储数据的记录，类似于表在数据库中存储数据。 Common Data Service 包括一组覆盖典型情形的标准实体，但是，您还可以创建针对您的组织的自定义实体，并使用 Power Query 用数据填充它们。 应用制造者随后可以利用 PowerApps 使用此数据生成丰富的应用程序。
 
 ![显示业务应用程序平台的概述的屏幕截图。](./media/data-platform-cds-intro/platform.png "平台概述")
 
@@ -28,21 +33,21 @@ Common Data Service 内的标准和自定义实体为您的数据提供基于云
 
 * **易于管理** &ndash; 元数据和数据都存储在云中。 不需要担心存储方式的细节。
 * **易于保护** &ndash; 数据安全存储，以便用户只能在您授予他们访问权限时查看。 基于角色的安全性使您可以控制对组织内其他用户的实体的访问。
-* **访问您的 Dynamics 365 数据** &ndash; 来自 Dynamics 365 应用程序的数据也存储在 Common Data Service 内，让您可以快速生成利用 Dynamics 365 数据的应用程序并使用 PowerApps 扩展您的应用程序。
+* **访问您的 Dynamics 365 数据** &ndash; 来自 Dynamics 365 应用程序的数据也存储在 Common Data Service 内，让您可以快速生成利用 Dynamics 365 数据的应用并使用 PowerApps 扩展您的应用。
 * **丰富的元数据** &ndash; 数据类型和关系直接在 PowerApps 中加以利用。
 * **验证和逻辑** &ndash; 定义计算字段、业务规则、工作流和业务流程以确保数据质量并推动业务流程。
 * **生产工具** &ndash; 实体在 Microsoft Excel 的加载项内提供，以提高效率并确保数据的可访问性。
 
-## <a name="dynamics-365-and-the-common-data-service"></a>Dynamics 365 和 Common Data Service
+## <a name="dynamics-365-and-common-data-service"></a>Dynamics 365 和 Common Data Service
 
-Dynamics 365 应用程序（如 Dynamics 365 for Sales、Service 或 Talent）也使用 Common Data Service 来存储和保护应用程序使用的数据。 这使您能够直接根据 Dynamics 365 内已经使用的核心业务数据使用 PowerApps 和 Common Data Service 生成应用程序，不需要集成。
+Dynamics 365 应用程序（例如 Dynamics 365 Sales、Dynamics 365 Customer Service 或 Dynamics 365 Talent）也使用 Common Data Service 存储和保护应用程序使用的数据。 这使您能够直接根据 Dynamics 365 内已经使用的核心业务数据使用 PowerApps 和 Common Data Service 生成应用，不需要集成。
 
-* **基于您的 Dynamics 365 数据生成应用程序** &ndash; 基于 PowerApps 内的业务数据或使用 Pro Developer SDK 快速生成应用程序。
-* **管理可重复使用的业务逻辑和规则** &ndash; 已在 Dynamics 365 实体中定义的业务规则和逻辑应用于您的 PowerApps 以确保数据的一致性，不管您的用户如何访问数据或通过哪个应用程序访问。
+* **基于您的 Dynamics 365 数据生成应用** &ndash; 基于 PowerApps 内的业务数据或使用 Pro Developer SDK 快速生成应用。
+* **管理可重复使用的业务逻辑和规则** &ndash; 已在 Dynamics 365 实体中定义的业务规则和逻辑应用于您的 PowerApps 以确保数据的一致性，不管您的用户如何访问数据或通过哪个应用访问。
 * **可跨 Dynamics 365 和 PowerApps 重复使用的技能** &ndash; 具有 PowerApps 或 Dynamics 365 中以前的技能的用户现在可以跨新的 Common Data Service 平台利用这些技能。 创建实体、窗体、图表等现在在各个应用程序中是公用的。
 
     > [!NOTE]
-    > Dynamics 365 for Finance and Operations 当前需要配置数据集成器来让您的 Finance and Operations 中的业务数据在 Common Data Service 内可用。
+    > Finance and Operations 应用当前需要配置[数据集成器](/power-platform/admin/data-integrator)来让您的 Finance and Operations 应用中的业务数据在 Common Data Service 内可用。
 
 ## <a name="integrating-data-into-the-common-data-service"></a>将数据集成到 Common Data Service 中
 
@@ -75,7 +80,7 @@ Common Data Service 内的实体利用丰富的服务器端逻辑和验证来确
 Common Data Service 具有丰富的安全模型来保护数据的完整性和用户的隐私，同时还能够促进高效的数据访问和协作。 您可以结合业务部门、基于角色的安全性、基于记录的安全性和基于字段的安全性来定义用户在 Common Data Service 环境中所具有的总体信息访问权限。 详细信息：[Common Data Service 中的安全性](/power-platform/admin/wp-security) 
 
 ## <a name="developer-capabilities"></a>开发人员功能
-除了通过 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 门户提供的功能外，Common Data Service 还包括支持开发人员以编程方式访问元数据和数据以创建实体和业务逻辑并与数据交互的功能。 有关详细信息，请参阅 [Common Data Service 开发人员概述](../../developer/common-data-service/overview.md)
+除了通过 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 门户提供的功能外，Common Data Service 还包括支持开发人员以编程方式访问元数据和数据以创建实体和业务逻辑并与数据交互的功能。 有关详细信息，请参阅 [Common Data Service 开发人员概述](../../developer/common-data-service/overview.md)
 
 ## <a name="next-steps"></a>后续步骤
 开始使用 Common Data Service：

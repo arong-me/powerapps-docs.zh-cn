@@ -9,20 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
-ms.assetid: null
-caps.latest.revision: null
+ms.assetid: ''
+caps.latest.revision: ''
 ms.author: matp
 manager: kvivek
-tags: null
+tags: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4a47f082520b4680c9045209f85c26beb3586875
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752226"
 ---
 # <a name="using-an-on-premises-data-gateway-in-power-platform-dataflows"></a>在 Power Platform 数据流中使用本地数据网关
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -46,7 +52,7 @@ search.app:
 
 ## <a name="prerequisites"></a>必备条件
 
--   PowerApps 帐户。 还没有？ [注册 30 天的免费试用](https://docs.microsoft.com/en-us/powerapps/maker/signup-for-powerapps)。
+-   PowerApps 帐户。 还没有？ [注册 30 天的免费试用](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)。
 
 -   网关的管理权限。 默认为您安装的网关提供这些权限。 管理员可以为其他人授予网关的权限。 
 
@@ -55,11 +61,11 @@ search.app:
 -   只能在用户的默认环境中创建和使用网关和本地连接。 详细信息：[使用环境和 Microsoft PowerApps](../canvas-apps/working-with-environments.md)。
 
 ## <a name="install-a-gateway"></a>安装网关
-1.  在 [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 的左侧导航窗格中，选择**网关**。
+1.  在 [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 的左侧导航窗格中，选择**网关**。
 
     ![左侧导航栏中的“网关”](media/nav-pane-gateways.png)
 
-2.  从列表中选择一个网关。 如果您没有网关的管理权限，请选择[立即安装网关](http://go.microsoft.com/fwlink/?LinkID=820931)，然后按照向导中的提示操作。
+2.  从列表中选择一个网关。 如果您没有网关的管理权限，请选择[立即安装网关](https://go.microsoft.com/fwlink/?LinkID=820931)，然后按照向导中的提示操作。
 
      ![网关安装](media/install-gateway-now.png)
 
@@ -81,7 +87,7 @@ search.app:
 
 
 ## <a name="view-and-manage-gateway-permissions"></a>查看和管理网关权限
-1.  在 [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 的左侧导航窗格中，选择**网关**，然后选择所需网关。
+1.  在 [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 的左侧导航窗格中，选择**网关**，然后选择所需网关。
 
 2.  若要向网关添加用户，请选择**用户**，指定用户或组，然后指定权限级别：
 

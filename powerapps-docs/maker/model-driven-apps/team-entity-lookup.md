@@ -9,31 +9,37 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
-ms.assetid: null
+ms.assetid: ''
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3db46288b0f1fc384cae8c683648d1dd0a945d44
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710847"
 ---
 # <a name="add-the-team-entity-as-a-lookup-option-in-your-app"></a>添加团队实体充当应用程序中的查找选项
 
 在统一接口应用程序中，团队实体只有在添加到应用程序中之后才可用于查找。 例如，可以将联系人记录分配给用户或团队。  
 
 > [!div class="mx-imgBorder"] 
-> ![](media/entity-lookup-teams.png "可使用用户和团队进行实体查找")
+> ![](media/entity-lookup-teams.png "Entity lookup with both users and teams available")
 
 但是，如果应用程序中有用户实体，但是没有团队实体，则查找中仅显示用户记录。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/entity-lookup-user-only.png "仅包含用户的实体查找")
+> ![](media/entity-lookup-user-only.png "Entity lookup with users only")
 
 ## <a name="add-the-team-entity-to-an-app"></a>将团队实体添加到应用程序
 
@@ -41,7 +47,7 @@ search.app:
 2. 选择**组件**选项卡，选择**实体**，然后选择**团队**。    
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/add-team-entity-app.png "将团队实体添加到应用程序")
+    > ![](media/add-team-entity-app.png "Add the team entity to the app")
 
 3. 选择**保存**，然后选择**发布**，以便将更改提供给应用程序用户。   
 

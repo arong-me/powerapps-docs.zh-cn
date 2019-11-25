@@ -9,20 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
-ms.assetid: null
-caps.latest.revision: null
+ms.assetid: ''
+caps.latest.revision: ''
 ms.author: matp
 manager: kvivek
-tags: null
+tags: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5ad261f668c36e623b35e619e4d573401f3b547a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2705787"
 ---
 # <a name="create-and-use-dataflows-in-powerapps"></a>在 PowerApps 中创建和使用数据流
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]

@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: af866aed-2586-4b6f-bb1c-3519baae3645
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e1facad3d5d6cb95e0441800f4d743d429f50787
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2705479"
 ---
 # <a name="display-custom-icons-alongside-values-in-list-views"></a>在列表视图中在值旁边显示自定义图标
 
@@ -30,7 +36,7 @@ search.app:
  PowerApps 环境管理员和定制员可以将图形添加到视图，并使用 JavaScript 建立用于基于列值选择图形的逻辑。 此功能让您可以自定义在文本旁边显示图标或数字值的列表视图。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/icon-in-opportunity-view.png "“等级”列显示图标和文本值的所有商机视图")
+> ![](media/icon-in-opportunity-view.png "All Opportunities view with Rating column displaying icons and text value")
   
 > [!NOTE]
 >  网格图标仅在 Web 界面中显示。 不在 [!INCLUDE[pn_Outlook_short](../../includes/pn-outlook-short.md)] 或移动应用中显示。  

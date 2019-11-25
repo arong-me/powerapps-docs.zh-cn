@@ -1,5 +1,5 @@
 ---
-title: '在 PowerApps 中创建 1:N（一对多）或 N:1（多对一）实体关系概述 | MicrosoftDocs'
+title: 在 PowerApps 中创建 1:N（一对多）或 N:1（多对一）实体关系概述 | MicrosoftDocs
 description: 了解如何创建一对多或多对一实体关系
 ms.custom: ''
 ms.date: 05/27/2018
@@ -9,20 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 52c00707-b2bc-4950-abec-89baefd94f6e
 caps.latest.revision: 33
 ms.author: matp
 manager: kvivek
-tags: null
+tags: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 724a887df3a5347f1d403ac30201297abf5201aa
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758180"
 ---
 # <a name="create-one-to-many-or-many-to-one-entity-relationships-overview"></a>创建一对多或多对一实体关系概述
 
@@ -34,7 +40,7 @@ search.app:
 
 |设计器| 说明|
 |--|--|
-|[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[在 PowerApps 门户中创建和编辑 1:N（一对多）或 N:1（多对一）实体关系](create-edit-1n-relationships-portal.md)|
+|[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[在 PowerApps 门户中创建和编辑 1:N（一对多）或 N:1（多对一）实体关系](create-edit-1n-relationships-portal.md)|
 |解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。 <br />详细信息：[使用解决方案资源管理器创建和编辑 1:N（一对多）或 N:1（多对一）实体关系](create-edit-1n-relationships-solution-explorer.md) |
 
 > [!NOTE]
@@ -58,7 +64,7 @@ search.app:
 
 ## <a name="community-tools"></a>社区工具
 
-**[实体关系示意图创建器](https://www.xrmtoolbox.com/plugins/JourneyIntoCRM.XrmToolbox.ERDPlugin/)** 是 XrmToolbox 社区为 Common Data Service 开发的工具。 请参阅 [Common Data Service 的开发工具](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools)主题了解更多社区开发的工具。
+**[实体关系示意图创建器](https://www.xrmtoolbox.com/plugins/JourneyIntoCRM.XrmToolbox.ERDPlugin/)** 是 XrmToolbox 社区为 Common Data Service 开发的工具。 请参阅 [Common Data Service 的开发人员工具](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools)主题以获取更多社区开发的工具。
 
 > [!NOTE]
 > 这些社区工具不是 Microsoft 的产品，因此不能将支持延伸到这些社区工具。 如果有与该工具相关的疑问，请联系发布者。 详细信息：[XrmToolBox](https://www.xrmtoolbox.com)。

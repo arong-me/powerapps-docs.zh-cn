@@ -1,6 +1,6 @@
 ---
-title: 配置 PowerApps 中模型驱动应用程序的交互式体验仪表板 | Microsoft Docs
-description: 了解如何配置 PowerApps 中的交互式体验仪表板
+title: 配置 PowerApps 中模型驱动应用的交互式体验仪表板 | Microsoft Docs
+description: '了解如何配置 PowerApps 中的交互式体验仪表板 '
 keywords: 交互式仪表板; Customer Service; Microsoft Dynamics 365; 交互式服务中心
 author: Mattp123
 ms.author: matp
@@ -13,17 +13,22 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: d1446a95-14bf-4b15-a905-72fce07f4c76
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4e73097b6b02f98b6ac5dc83a7f1d833e07a8696
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752508"
 ---
-
 # <a name="configure-model-driven-app-interactive-experience-dashboards"></a>配置模型驱动应用程序的交互式体验仪表板
 
 交互式体验仪表板可以成为应用用户（如服务代表）查看工作负荷信息和采取行动的一站式工作区。 它们完全可配置，以安全角色为基础，且可跨多个流实时传送工作负荷信息。 交互式仪表板用户不需要在应用程序中翻页查找特定记录；他们可以直接从仪表板执行操作。 
@@ -51,7 +56,7 @@ search.app:
 ### <a name="multi-stream-dashboard-tile-view"></a>多流仪表板磁贴视图  
  同一个仪表板，只不过是在磁贴视图中。  
   
- ![多流交互式仪表板磁贴视图](media/interactive-dashboards-multi-stream-tiles.png "多流交互式仪表板磁贴视图")  
+ ![多流仪表板磁贴视图](media/interactive-dashboards-multi-stream-tiles.png "多流仪表板磁贴视图")  
   
 ### <a name="multi-stream-dashboard-layouts"></a>多流仪表板布局  
  对于多流仪表板，您可以从四种不同的布局中进行选择。  
@@ -144,7 +149,7 @@ search.app:
   
 ### <a name="configure-a-multi-stream-interactive-dashboard-using-the-4-column-layout"></a>使用 4 列布局来配置多流交互式仪表板  
  
-1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
+1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
   
 2.  选择**数据** > **实体** > 选择所需实体。 
 
@@ -198,7 +203,7 @@ search.app:
   
 #### <a name="edit-or-delete-individual-streams-of-an-existing-dashboard"></a>编辑或删除现有仪表板的单个流  
   
-1. 登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。   
+1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。   
   
 2. 选择**数据** > **实体** > 选择所需实体。 选择**仪表板**选项卡。  
   
@@ -221,7 +226,7 @@ search.app:
 
 例如，实体特定仪表板中的某些字段已预设为您为其创建仪表板的实体，您不必选择实体。  
   
-1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 2.  选择**数据** > **实体** > 选择所需实体。 
 

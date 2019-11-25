@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中使用自定义控件实现模型驱动应用程序的数据可视化 | MicrosoftDocs
+title: 在 PowerApps 中使用自定义控件实现模型驱动应用的数据可视化 | MicrosoftDocs
 description: 了解如何使用字段的自定义控件
 ms.custom: ''
 ms.date: 06/07/2018
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: 0d6064cd-4d38-4fc2-a564-735cb453a4b2
 caps.latest.revision: 8
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b34354a1bc0bdfb3556acc6ca999a1e0e8dcec74
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2756024"
 ---
 # <a name="use-custom-controls-for-model-driven-app-data-visualizations"></a>使用自定义控件实现模型驱动应用程序的数据可视化
 
@@ -42,7 +48,7 @@ search.app:
 ## <a name="use-a-custom-control-to-add-visualizations-to-a-field"></a>使用自定义控件为字段添加可视化效果  
  执行此过程中的步骤将把“商机”实体中的**预算金额**字段的默认标签和文本框字段更改为滑块自定义控件。 可使用类似步骤将现有字段替换为自定义控件或为自定义字段配置自定义控件。  
   
-1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
      
 
@@ -68,7 +74,7 @@ search.app:
     - **平板电脑**。 要使自定义控件在运行 Dynamics 365 for tablets 的平板电脑设备中可用，请选择控件旁边的**平板电脑**选项。  
   
    > [!div class="mx-imgBorder"] 
-   > ![选择用于查看自定义控件的客户端应用程序](media/choose-client.png "选择用于查看自定义控件的客户端应用程序")  
+   > ![选择用于查看自定义控件的客户端应用](media/choose-client.png "选择用于查看自定义控件的客户端应用")  
   
 7.  选择**最小**、**最大**和**步骤**旁边的 ![“编辑自定义控件属性”图标](media/ccf-pencil-icon.png "“编辑自定义控件属性”图标") 铅笔图标，按照下面的说明设置属性选项，然后选择**确定**。  
   

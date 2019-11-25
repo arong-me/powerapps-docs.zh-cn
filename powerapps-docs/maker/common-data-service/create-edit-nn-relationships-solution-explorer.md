@@ -1,5 +1,5 @@
 ---
-title: '使用解决方案资源管理器在 Common Data Service 中创建 N:N（多对多）实体关系 | MicrosoftDocs'
+title: 使用解决方案资源管理器在 Common Data Service 中创建 N:N（多对多）实体关系 | MicrosoftDocs
 description: 了解如何创建多或多关系
 ms.custom: ''
 ms.date: 05/29/2018
@@ -9,24 +9,29 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 68b64d5ec7c7f81352a2b9733310d2ec5e51d9c1
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757750"
 ---
-
 # <a name="create-nn-many-to-many-entity-relationships-in-common-data-service-using-solution-explorer"></a>使用解决方案资源管理器在 Common Data Service 中创建 N:N（多对多）实体关系
 
 解决方案资源管理器为创建和编辑 Common Data Service 的 N:N（多对多）提供一种方法。
 
-[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 详细信息：
+[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 详细信息：
 - [创建多对多 (N:N) 实体关系](create-edit-nn-relationships.md)
 - [使用 PowerApps 门户在 Common Data Service 中创建多对多实体关系](create-edit-nn-relationships-portal.md)
 

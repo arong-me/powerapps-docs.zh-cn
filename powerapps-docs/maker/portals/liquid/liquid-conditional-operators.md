@@ -5,12 +5,17 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: def132ebc0f8ef93121b10b221479a2452a1d4fb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708251"
 ---
-
 # <a name="available-liquid-conditional-operators"></a>可用 Liquid 条件运算符
 
 在条件语句（**if**、**unless**）中使用时，有些 Liquid 值将视为 true，有些则视为 false。

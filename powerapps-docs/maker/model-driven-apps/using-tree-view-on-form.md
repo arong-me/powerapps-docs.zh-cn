@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8e032cc95f64e842552308ccf9d179fc153b49fd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710407"
 ---
-
 # <a name="using-the-tree-view-in-the-form-designer"></a>在窗体设计器中使用树视图
 **树视图**窗格显示组件在窗体中的图形层次结构。 树视图中的图标可帮助您快速识别字段或组件的类型。 
 
@@ -31,7 +36,7 @@ search.app:
 可展开或折叠树视图中的节点查看或隐藏节点内的元素。 如果选择树视图中的元素，该元素将在窗体预览中突出显示，而属性窗格则显示该元素的属性。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/FormDesignerTreeView.png "树视图")
+> ![](media/FormDesignerTreeView.png "Tree view")
 
 ### <a name="open-the-tree-view"></a>打开树视图 
 1. 打开窗体设计器创建或编辑窗体。 

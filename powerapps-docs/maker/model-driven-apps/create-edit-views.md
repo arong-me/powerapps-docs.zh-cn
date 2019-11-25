@@ -1,33 +1,39 @@
 ---
-title: 在 PowerApps 中创建或编辑模型驱动应用程序视图 | MicrosoftDocs
+title: 在 PowerApps 中创建或编辑模型驱动应用视图 | MicrosoftDocs
 description: 了解如何创建或编辑视图
 ms.custom: ''
 ms.date: 06/11/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: bd1d393d-16ea-40ac-8136-26643c37dd2a
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 78de24571448c0e3c8584ef3b31583acd9d6a4f4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2704159"
 ---
 # <a name="understand-model-driven-app-views"></a>了解模型驱动应用程序视图
 
 <a name="BKMK_CreatingAndEditingViews"></a>   
 
-通过 PowerApps 应用程序，使用视图定义特定实体的记录列表如何在应用程序中显示。 视图定义：
+通过 PowerApps 应用，使用视图定义特定实体的记录列表如何在应用程序中显示。 视图定义：
 
 - 待显示的列
 - 每列宽应为

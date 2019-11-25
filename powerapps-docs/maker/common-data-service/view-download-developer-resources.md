@@ -4,22 +4,27 @@ description: 查找适用于 PowerApps 和 Common Data Service 的开发人员�
 keywords: ''
 ms.date: 09/25/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 ms.assetid: e200d242-ff3f-48e5-af32-aed050e02441
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ae293843c38e7077580effd1c7670762cec91e1e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700419"
 ---
-
 # <a name="view-or-download-developer-resources"></a>查看或下载开发人员资源
 
 本页提供面向开发人员的资源以及有关您使用的特定实例的信息。 

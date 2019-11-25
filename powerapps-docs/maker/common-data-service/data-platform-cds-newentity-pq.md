@@ -10,12 +10,17 @@ ms.component: cds
 ms.date: 03/21/2018
 ms.author: millopis
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 22920502b75d16dedba7a70ced60b9b3f373ff10
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757564"
 ---
-
 # <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>使用 Power Query 将数据添加到 Common Data Service 中的实体
 在本过程中，您将在 [Common Data Service](data-platform-intro.md) 中创建实体，并使用 Power Query 用来自 OData 源的数据填充该实体。 您可以使用相同的技巧集成这些联机和本地源的数据，其中包括：
 
@@ -32,12 +37,12 @@ search.app:
 
 如果没有 PowerApps 的许可证，您可以[免费注册](../signup-for-powerapps.md)。
 
-## <a name="prerequisites"></a>必备条件 
+## <a name="prerequisites"></a>必备条件
 要遵循本主题的做法，您必须切换到可以创建实体的[环境](../canvas-apps/working-with-environments.md)。
 
 ## <a name="specify-the-source-data"></a>指定源数据
 
-1. 登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后单击或点按左边缘附近的**数据**向下键。
+1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后单击或点按左边缘附近的**数据**向下键。
 
     ![PowerApps 主页](./media/data-platform-cds-newentity-pq/sign-in.png)
 
@@ -48,7 +53,7 @@ search.app:
     ![选择 OAuth 连接器](./media/data-platform-cds-newentity-pq/choose-odata.png)
 
 1. 在**设置连接**下，键入或粘贴该 URL，然后选择**下一步**：<br>
-`http://services.odata.org/V4/Northwind/Northwind.svc/`
+`https://services.odata.org/V4/Northwind/Northwind.svc/`
 
 1. 在表列表中，选择**客户**复选框，然后单击或点按**下一步**。
 

@@ -13,12 +13,18 @@ ms.assetid: 15d123e0-b604-45dd-ab34-0b37787a04bb
 caps.latest.revision: 33
 ms.author: matp
 manager: kvivek
-tags: null
+tags: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a3a381bbc5d2fe8e338a55d6516978d3de355834
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752582"
 ---
 # <a name="control-access-to-model-driven-app-forms"></a>控制对模型驱动应用程序窗体的访问
 
@@ -72,7 +78,7 @@ search.app:
 > [!IMPORTANT]
 > Xrm.Page 对象[已弃用](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated)，您应该使用在执行上下文对象中传递的 [getFormContext](/powerapps/developer/model-driven-apps/clientapi/reference/executioncontext/getformcontext) 方法返回对相应的窗体或窗体上的项目的引用。
 <!-- 
- Finally, in the web application it is possible, but not recommended, for a developer to use scripts in the form Onload event to use the [Xrm.Page.ui.formSelector.items collection](http://go.microsoft.com/fwlink/p/?LinkID=513300) to query available forms and use the navigate method to direct users to a specific form. Remember that the [navigate method](http://go.microsoft.com/fwlink/p/?LinkID=513301) will cause the form to load again (and the Onload event to occur again). Your logic in the event handler should always check some condition before you use the navigate method to avoid an endless loop or unnecessarily restrict users options to navigate between forms.  
+ Finally, in the web application it is possible, but not recommended, for a developer to use scripts in the form Onload event to use the [Xrm.Page.ui.formSelector.items collection](https://go.microsoft.com/fwlink/p/?LinkID=513300) to query available forms and use the navigate method to direct users to a specific form. Remember that the [navigate method](https://go.microsoft.com/fwlink/p/?LinkID=513301) will cause the form to load again (and the Onload event to occur again). Your logic in the event handler should always check some condition before you use the navigate method to avoid an endless loop or unnecessarily restrict users options to navigate between forms.  
   
  This approach will not work for Dynamics 365 for tablets because multiple forms are not available for selection.  -->
 

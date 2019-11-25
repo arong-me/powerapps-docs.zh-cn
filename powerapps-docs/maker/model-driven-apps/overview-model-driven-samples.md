@@ -11,12 +11,17 @@ ms.component: model
 ms.date: 03/08/2018
 ms.author: brdang
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5e579b7054171222819b2d1dd6bb21d9cb7400a9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711551"
 ---
-
 # <a name="model-driven-sample-apps"></a>模型驱动示例应用程序
 
 在 [powerapps.com](https://powerapps.com) 中，使用示例应用程序探索设计的可能性，在开发您自己的应用程序时发现您可以应用的概念。 每个示例应用程序使用虚构数据来演示真实的情形。 
@@ -28,7 +33,7 @@ search.app:
 
 ## <a name="get-sample-apps"></a>获取示例应用程序
 
-为了运行或编辑模型驱动示例应用程序，必须首先在 Common Data Service 数据库中设置应用程序。 请先创建试用环境和数据库，并务必选中**包含示例应用程序和数据**。
+为了运行或编辑模型驱动示例应用，必须首先在 Common Data Service 数据库中设置应用。 请先创建试用环境和数据库，并务必选中**包含示例应用程序和数据**。
 
 ![创建数据库](media/overview-model-driven-samples/create-database1.png)
 

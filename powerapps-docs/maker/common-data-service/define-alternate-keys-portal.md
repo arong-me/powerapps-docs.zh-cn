@@ -9,21 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fec01122ad00710507fb3e0976ec9f80115f06cf
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758857"
 ---
 # <a name="define-alternate-keys-using-powerapps-portal"></a>使用 PowerApps 门户定义备用键
 
-[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供通过 Common Data Service 查看和创建实体备用键的简单方法。
+[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供通过 Common Data Service 查看和创建实体备用键的简单方法。
 
 此门户支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 <br />详细信息： 
 - [定义引用记录的备用键](define-alternate-keys-reference-records.md)
@@ -31,7 +37,7 @@ search.app:
 
 ## <a name="view-alternate-keys"></a>查看备用键
 
-1. 从 [PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**画布**设计模式。
+1. 从 [PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**区域**设计模式。
 2. 选择**数据** > **实体**，然后选择您要查看的实体。
 3. 选择**键**查看定义的任何备用键的列表。
 

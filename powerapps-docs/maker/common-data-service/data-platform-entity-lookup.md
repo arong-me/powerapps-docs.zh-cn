@@ -9,12 +9,17 @@ ms.topic: conceptual
 ms.date: 02/21/2019
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ac4b57853e6dfc4c0969a4207538e15db0b58bc8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757520"
 ---
-
 # <a name="create-a-relationship-between-entities"></a>创建实体之间的关系
 一个实体中的数据通常与另一个实体中的数据相关。 例如，您可能有**教师**实体和**班级**实体，**班级**实体可能有与**教师**实体的查找关系来显示哪个教师教哪个班级。 您可以使用查找字段从**教师**实体显示数据。 这通常称为查找字段。
 
@@ -31,7 +36,7 @@ search.app:
 
 若要向实体添加查找关系，在**关系**选项卡下创建关系并指定要与其创建关系的实体。
 
-1. 在 [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**实体**。
+1. 在 [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**实体**。
 
 2. 单击或点按现有实体或[创建新实体](data-platform-create-entity.md)
 
@@ -55,7 +60,7 @@ search.app:
 
 若要添加一对多关系，在**关系**选项卡下创建关系并指定要与其创建关系的实体。
 
-1. 在 [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**实体**。
+1. 在 [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**实体**。
 
 2. 单击或点按现有实体或[创建新实体](data-platform-create-entity.md)
 
@@ -81,7 +86,7 @@ search.app:
 ## <a name="add-a-many-to-many-relationship"></a>添加多对多关系
 若要添加多对多关系，在**关系**选项卡下创建关系并指定要与其创建关系的实体。
 
-1. 在 [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**实体**。
+1. 在 [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**实体**。
 
 2. 单击或点按现有实体或[创建新实体](data-platform-create-entity.md)
 
@@ -134,6 +139,6 @@ search.app:
 在 Common Data Service 中使用**关联**功能通过一对多或多对多关系链接两个记录。 详细信息：[PowerApps 中的关联和取消关联功能](../canvas-apps/functions/function-relate-unrelate.md)
 
 ## <a name="next-steps"></a>后续步骤
-* [使用 Common Data Service 数据库生成应用程序](../canvas-apps/data-platform-create-app.md)
-* [使用 Common Data Service 数据库从头创建应用程序](../canvas-apps/data-platform-create-app-scratch.md)
+* [使用 Common Data Service 数据库生成应用](../canvas-apps/data-platform-create-app.md)
+* [使用 Common Data Service 数据库从头开始创建应用](../canvas-apps/data-platform-create-app-scratch.md)
 

@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: 44834893-0bf6-4a64-8f06-7583fe08330d
 caps.latest.revision: 11
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ecb0731d3cbba030f3b819e2b2744cb6a7b29c20
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2706887"
 ---
 # <a name="create-and-edit-virtual-entities-that-contain-data-from-an-external-data-source"></a>创建和编辑包含来自外部数据源的数据的虚拟实体
 
@@ -35,7 +41,7 @@ Common Data Service 中包含 OData 数据提供程序，可用于连接 OData v
   
 开发人员也可以构建自己的数据提供程序。 数据提供程序作为解决方案安装在环境中。 详细信息：[开发人员文档：虚拟实体入门](../../developer/common-data-service/virtual-entities/get-started-ve.md)
   
- ![虚拟实体图](media/virtual-entity-diagram.png "虚拟实体图")  
+ ![虚拟实体关系图](media/virtual-entity-diagram.png "虚拟实体关系图")  
   
 <a name="benefits"></a> 
   
@@ -101,7 +107,7 @@ Common Data Service 中包含 OData 数据提供程序，可用于连接 OData v
     |**外部名称**|在此实体映射到的外部数据源中输入表的名称。|
     |**外部集合名称**|在此实体映射到的外部数据源中输入表的复数名称。|
       
-    下面是名称为 *Movie* 的虚拟实体的示例，该实体使用 Azure Cosmos 数据库数据提供程序访问文档文件。  
+    下面是名称为 *Movie* 的虚拟实体的示例，该实体使用 Azure Cosmos DB 数据提供程序访问文档文件。  
       
     > [!div class="mx-imgBorder"] 
     > ![使用 Azure Cosmos DB 数据提供程序的虚拟实体定义](media/virtual-entity-definition.PNG)  

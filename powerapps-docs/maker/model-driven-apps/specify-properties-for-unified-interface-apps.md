@@ -1,31 +1,36 @@
 ---
-title: 在 PowerApps 中指定模型驱动统一接口应用程序的属性 | MicrosoftDocs
+title: 在 PowerApps 中指定模型驱动统一接口应用的属性 | MicrosoftDocs
 description: 了解如何配置您的应用的网格控件
 keywords: ''
 ms.date: 06/03/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 3ecea4a7-0d18-4ccd-9609-3a62179e9e1b
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 0
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: efca6e540a962295553222805052fda2c9a8ddf6
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710891"
 ---
-
 # <a name="specify-properties-for-model-driven-unified-interface-apps"></a>指定模型驱动统一接口应用程序的属性
 
 此统一接口框架使用响应式设计原则，为任何屏幕尺寸或方向提供最佳的查看和交互体验。 通过使用统一接口框架的模型驱动应用，网格（视图）控件可以响应。 如果容器尺寸减小（如在手机和较小视区上），将把网格转换为列表。 
@@ -43,7 +48,7 @@ search.app:
 1. 打开[解决方案资源管理器](advanced-navigation.md#solution-explorer)。
 2. 在导航窗格中展开**实体**，选择相应实体（如**客户**或**联系人**），然后在**控件**选项卡上，选择**添加控件**。
 
-    ![打开“添加控件”](media/UnifiedInterface_ReadOnlyGrid_AddControl.png "打开“添加控件”")
+    ![打开添加控件](media/UnifiedInterface_ReadOnlyGrid_AddControl.png "打开添加控件")
 
 3. 从控件列表选择**只读网格**，然后选择**添加**。
 
@@ -94,4 +99,4 @@ search.app:
 可在列表中显示自定义图标而不是值，并使用 JavaScript 建立用于根据列的值选择图标的逻辑。 有关条件图像的详细信息，请参阅[在列表视图中显示自定义图标而不是值](../common-data-service/display-custom-icons-instead.md)。
 
 ## <a name="next-steps"></a>后续步骤
-[ 创建或编辑视图 ](create-edit-views.md)
+[创建或编辑视图](create-edit-views.md)

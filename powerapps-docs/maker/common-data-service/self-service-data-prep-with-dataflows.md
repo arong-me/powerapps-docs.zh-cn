@@ -9,23 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
-ms.assetid: null
-caps.latest.revision: null
+ms.assetid: ''
+caps.latest.revision: ''
 ms.author: matp
 manager: kvivek
-tags: null
+tags: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 32fb0c402fce458f728b44c63e337fe07b36fd76
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754639"
 ---
-
-
 <!--note from editor: I think "dataflows" should be lowercase based on this entry in the Microsoft style guide (scroll down to find dataflows): https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=42299 -->
 
 
@@ -59,7 +63,7 @@ Common Data Model 是可供业务和分析应用程序使用的共享数据语�
 > 您必须有付费 PowerApps 套餐才能使用数据流，但是不为因为使用数据流而单独向您收费。 
 
 ### <a name="load-data-to-common-data-service"></a>将数据加载到 Common Data Service
-可使用数据流在 [Common Data Service](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro) 中填充以后要在 PowerApps 中使用的实体。 点击数次即可集成来自在线源数据源和本地部署源数据源的数据。
+可使用数据流在 [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) 中填充以后要在 PowerApps 中使用的实体。 点击数次即可集成来自在线源数据源和本地部署源数据源的数据。
 
 <!--from editor: In the last sentence above, should it change to "...on-premises data sources." ? -->
 
@@ -70,7 +74,7 @@ Common Data Model 是可供业务和分析应用程序使用的共享数据语�
 ### <a name="extend-your-capabilities-with-azure-data-and-ai-services"></a>使用 Azure Data 和 AI 服务扩展您的能力
 可将 Power Platform 数据流配置为把数据流数据存储到组织的 Azure Data Lake Storage Gen2 帐户中。 如果将环境连接到组织的 Data Lake，则数据科学家和开发人员可利用强大的 Azure 产品（如 Azure 机器学习、Azure Databricks、Azure 数据工厂等）。
 
-有关 Azure Data Lake Storage Gen2 和数据流集成的详细信息（包括如何创建组织的 Azure Data Lake 中驻留的数据流），请参阅[数据流与 Azure Data Lake 集成（预览）](/power-bi/service-dataflows-azure-data-lake-integration)。
+有关 Azure Data Lake Storage Gen2 和数据流集成的详细信息（包括如何创建组织的 Azure Data Lake 中驻留的数据流），请参阅[连接 Azure Data Lake Storage Gen2 以存储数据流](connect-azure-data-lake-storage-for-dataflow.md)。
 
 ## <a name="summary-of-self-service-data-prep-for-big-data-in-powerapps"></a>PowerApps 中的大数据自助数据准备摘要
 提供了多种方案和示例，在这些方案和示例中，您可以使用数据流通过业务数据增强控制和更快获取见解。 组织中的其他人员可通过 Common Data Service、Power BI 中的 Power Platform 数据流连接器或通过直接访问数据流在组织的 Azure Data Lake Storage Gen2 帐户中的 **Common Data Service** 文件夹利用数据流。 如果使用 Common Data Model 定义的标准数据模型（架构），业务应用程序可依赖实体的架构，也可以从数据的创建方法或从数据源提取。 数据源完成计划的运行之后，数据即准备就绪，可用于迅速建模和创建应用程序、流或 BI 建议，过去需要数月甚至更长时间才能创建。

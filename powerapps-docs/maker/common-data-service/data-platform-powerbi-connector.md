@@ -1,6 +1,6 @@
 ---
 title: 创建 PowerBI 报表 | Microsoft Docs
-description: 使用 Common Data Service 连接器从 PowerBI Desktop 连接到您的数据。
+description: 使用 Common Data Service 连接器从 PowerBI Desktop 连接到数据。
 author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
@@ -9,26 +9,32 @@ ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 24972d4c159db30c4abb142adf258a5930c8ace9
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758932"
 ---
 # <a name="create-a-power-bi-report"></a>创建 Power BI 报表
-Common Data Service 允许您使用 Power BI Desktop 直接连接到您的数据以创建报表并将其发布到 Power BI。 从 Power BI，报表可在仪表板中使用，与其他用户共享并可跨 Power BI 移动应用程序上的平台访问。
+Common Data Service 使您可以使用 Power BI Desktop 直接连接到数据，以创建报表并将其发布到 Power BI。 从 Power BI，报表可在仪表板中使用，与其他用户共享并可跨 Power BI 移动应用上的平台访问。
 
 ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/PBIDesktop.png "Power BI Desktop")
 
-## <a name="prerequisites"></a>必备条件 
+## <a name="prerequisites"></a>必备条件
 
-若要通过 Common Data Service 使用 Power BI，您需要执行以下操作：
+要将 Power BI 与 Common Data Service 结合使用，您需要满足以下条件：
 
-* 下载并安装 Power BI Desktop，这是在本地计算机上运行的免费应用程序。 您可以在[此处](https://powerbi.microsoft.com/desktop/)下载 Power BI Desktop。
+* 下载并安装 Power BI Desktop，这是在本地计算机上运行的免费应用程序。 您可以从[此处](https://powerbi.microsoft.com/desktop/)下载 Power BI Desktop。
 * 具有制造者门户访问权限和实体内的数据读取访问权限的 Common Data Service 环境。
 
 ## <a name="finding-your-common-data-service-environment-url"></a>查找您的 Common Data Service 环境 URL
 
-1. 打开 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 并选择要连接到的环境，然后单击右上角的**设置齿轮**，然后单击**高级自定义**
+1. 打开 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 并选择要连接到的环境，然后单击右上角的**设置齿轮**，然后单击**高级自定义**
 
     ![Common Data Service 环境](./media/data-platform-cds-powerbi-connector/CDSEnv1.png "Common Data Service 环境")
 
@@ -41,7 +47,7 @@ Common Data Service 允许您使用 Power BI Desktop 直接连接到您的数据
     > [!div class="mx-imgBorder"] 
     > ![Common Data Service 环境](./media/data-platform-cds-powerbi-connector/CDSEnv3.png "Common Data Service 环境")
 
-## <a name="connecting-to-common-data-service-from-power-bi-desktop"></a>从 Power BI Desktop 连接到 Common Data Service
+## <a name="connecting-to-common-data-service-from-power-bi-desktop"></a>正在从 Power BI Desktop 连接到 Common Data Service
 
 1. 启动 **Power BI Desktop**，如果是您首次启动，可能会使用欢迎屏幕提示您或将您直接带入一个空白区域 - 不论是哪种情况，均单击**获取数据**并选择**更多**打开可用于 Power BI Desktop 的数据源的完整列表。
 
@@ -99,7 +105,7 @@ Common Data Service 中的关系需要您使用 GUID 字段在 PowerBI desktop �
 虽然有些关系可能自动创建，您仍然可以查看并确保在创建报表时建立正确的关系：
 
 * 实体中的查找字段将在相关实体中包含记录的 GUID。
-* 相关实体将有格式为 "[EntityName]id" 的字段，其包含 GUID，例如，Accountid 或 MyCustomEntityid
+* 相关实体将有格式为“[EntityName]id”的字段，其包含 GUID，例如，Accountid 或 MyCustomEntityid
 * 使用 PowerBI desktop 管理关系功能，您可以在查找字段之间建立新关系，以及相关实体中的 ID 字段。
 
 

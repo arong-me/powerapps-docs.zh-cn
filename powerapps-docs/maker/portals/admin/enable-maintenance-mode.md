@@ -5,15 +5,18 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 07/18/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: e53380c39257645e9056a271226b6f7ef8c8c721
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709923"
 ---
-
 # <a name="maintenance-mode-for-a-portal"></a>门户的维护模式
-
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 有时，您的网站可能需要进行计划的维护，或由于临时断电而停机。 当客户在维护期间访问网站时，可能遇到不可预测的行为和间歇性不可用情况。 
 

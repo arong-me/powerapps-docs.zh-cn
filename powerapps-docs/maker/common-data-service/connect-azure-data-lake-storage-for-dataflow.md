@@ -9,20 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
-ms.assetid: null
-caps.latest.revision: null
+ms.assetid: ''
+caps.latest.revision: ''
 ms.author: matp
 manager: kvivek
-tags: null
+tags: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d7957f048613045a64af0caf5696e540dbb8f883
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754771"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>连接 Azure Data Lake Storage Gen2 以存储数据流
 
@@ -46,7 +52,7 @@ search.app:
 > 如果您没有 Azure 订阅，请在开始之前[创建一个免费试用帐户](https://azure.microsoft.com/free/)。
 
 ## <a name="prepare-your-azure-data-lake-storage-gen2-for-power-platform-dataflows"></a>为 Power Platform 数据流准备 Azure Data Lake Storage Gen2
-在使用 Azure Data Lake Storage Gen2 帐户配置 Power BI 之前，必须创建和配置存储帐户。 以下是 Power Platform 数据流的要求：
+在使用 Azure Data Lake Storage Gen2 帐户配置您的环境之前，必须创建和配置存储帐户。 以下是 Power Platform 数据流的要求：
 1.  必须在与 PowerApps 租户相同的 Azure Active Directory 租户中创建存储帐户。
 2.  我们建议在与您打算在其中使用帐户的 PowerApps 环境相同的区域中创建存储帐户。 要确定 PowerApps 环境在哪里，请与环境管理员联系。
 3.  存储帐户必须启用了分层命名空间功能。
@@ -56,42 +62,15 @@ search.app:
 
 ## <a name="create-the-storage-account"></a>创建存储帐户
 请按照[创建 Azure Data Lake Storage Gen2 存储帐户](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-quickstart-create-account)中的步骤操作。
-1.  确保选择与 Power BI 租户相同的位置，并将存储设置为 StorageV2（常规用途 v2）。
+1.  确保选择与环境相同的区域，并将存储设置为 StorageV2（常规用途 v2）。
 2.  确保启用分层命名空间功能。 
 3.  我们建议您将复制设置设置为“读取访问异地冗余存储 (RA-GRS)”。
-
-
-
-<!--from editor: I haven't heard of Athena before. Is it the Amazon service, https://aws.amazon.com/athena/? If so, it probably should be identified as Amazon at first mention. -->
-
-
-## <a name="create-a-cross-origin-resource-sharing-cors-rule-for-the-athena-service"></a>为 Athena 服务创建跨源资源共享 (CORS) 规则
-
-> [!NOTE]
-> Power Platform 数据流利用 Athena 服务将 Data Lake 连接到 PowerApps 环境。 在本节中，需要向 Athena 服务授予存储帐户角色，以便可以将其配置为用于数据流。
-
-接下来，您需要启用 Athena 服务以通过 Web 浏览器和 PowerApps 门户访问存储帐户。 Web 浏览器实施称为[同源策略](http://www.w3.org/Security/wiki/Same_Origin_Policy)的安全限制，该限制可阻止网页在其他域中调用 API；CORS 提供了一种允许一个域（原始域）调用另一个域中的 API 的安全方法。 有关 CORS 的详细信息，请参阅 [CORS 规范](http://www.w3.org/TR/cors/)。
-
-请按照您刚刚在 Azure 门户的设置页面上创建的存储帐户中的步骤进行操作。 在 CORS 菜单项中，选择“BLOB 服务”分区，然后输入这些详细信息。 
-
-|设置  |Value  |
-|---------|---------|
-|允许的源   | https://athena-ui-prod.trafficmanager.net     |
-|允许的方法   |  DELETE、GET、HEAD、MERGE、POST、OPTIONS、PUT、PATCH   |
-|允许的标头   | *    |
-|显示的标头   | *    |
-|最大时间 |   *  |
-
-
-下图显示了为 Athena 服务配置的 CORS 规则。
-
-![CORS 规则](media/dataflows-cores-rule.png)
 
 ## <a name="connect-your-azure-data-lake-storage-gen2-to-powerapps"></a>将 Azure Data Lake Storage Gen2 连接到 PowerApps
 在 Azure 门户中设置 Azure Data Lake Storage Gen2 帐户后，即可将其连接到特定的数据流或 PowerApps 环境。 将湖连接到环境后，环境中的其他开发者和管理员可以创建将其数据也存储在组织的湖中的数据流。 
 
 要将您的 Azure Data Lake Storage Gen2 帐户与数据流连接，请按照下列步骤操作：
-1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后验证您所在的环境。 环境切换器位于标头的右侧。 
+1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后验证您所在的环境。 环境切换器位于标头的右侧。 
 2. 在左侧导航窗格中，选择**数据**旁边的向下箭头。
 
    ![PowerApps 开发者门户“数据”选项卡](media/powerapps-portal-data.png)
@@ -108,56 +87,53 @@ search.app:
 如果尚未将存储帐户与环境关联，则会显示**链接到 Data Lake** 对话框。 您将需要登录并找到在先前步骤中创建的 Data Lake。 在此示例中，没有 Data Lake 与环境关联，因此将提示添加一个 Data Lake。 
 
 
+1. 选择存储帐户。
 
-<!--from editor: Should "storage account" be in bold because it's something the user has to select? --"
-
-1. Select storage account.
-
-    The **Select Storage Account** screen appears.
+    **选择存储帐户**屏幕将出现。
     
-    ![Select storage account](media/select-storage-account.png)
+    ![选择存储帐户](media/select-storage-account.png)
     
-2. Select the **Subscription ID** of the storage account.
-3. Select the **Resource group name** in which the storage account was created.
-4. Enter the **Storage account name**.
-5. Select **Save**.
+2. 选择存储帐户的**订阅 ID**。
+3. 选择创建存储帐户的**资源组名称**。
+4. 输入**存储帐户名称**。
+5. 选择**保存**。
 
-Once these steps are successfully completed, your Azure Data Lake Storage Gen2 account is connected to Power Platform Dataflows and you can continue to create a dataflow.
+成功完成这些步骤后，您的 Azure Data Lake Storage Gen2 帐户已连接到 Power Platform 数据流，您可以继续创建数据流。
 
-## Considerations and limitations
-There are a few considerations and limitations to keep in mind when working with your dataflow storage:
-- Linking an Azure Data Lake Store Gen2 account for dataflow storage is not supported in the default environment.
-- Once a dataflow storage location is configured for a dataflow, it can't be changed.
-- By default, any member of the environment can access dataflow data using the Power Platform Dataflows Connector. However, only the owners of a dataflow can access its files directly in Azure Data Lake Storage Gen2. To authorize additional people to access the dataflows data directly in the lake, you must authorize them to the dataflow’s CDM folder in the data lake or the data lake itself.
-- When a dataflow is deleted, its CDM folder in the lake will also be deleted. 
+## <a name="considerations-and-limitations"></a>注意事项和限制
+使用数据流存储时，需要牢记一些注意事项和限制：
+- 在默认环境中，不支持链接 Azure Data Lake Store Gen2 帐户进行数据流存储。
+- 为数据流配置数据流存储位置后，将无法更改它。
+- 默认情况下，环境的任何成员都可以使用 Power Platform 数据流连接器访问数据流数据。 但是，只有数据流的负责人才能直接在 Azure Data Lake Storage Gen2 中访问其文件。 要授权其他人直接在湖中访问数据流数据，您必须为他们授予数据湖中数据流的 **CDM 文件夹**或数据湖本身的权限。
+- 删除数据流后，其在湖中的 **CDM 文件夹**也将被删除。 
 
 > [!IMPORTANT]
-> You shouldn't change files created by dataflows in your organization’s lake or add files to a dataflow’s CDM folder. Changing files might damage dataflows or alter their behavior and is not supported. Power Platform Dataflows only grants read access to files it creates in the lake. If you authorize other people or services to the filesystem used by Power Platform Dataflows, only grant them read access to files or folders in that filesystem.
+> 您不应该在组织的湖中更改由数据流创建的文件，也不应该将文件添加到数据流的 **CDM 文件夹**中。 更改文件可能会损坏数据流或更改其行为，因此不支持。 Power Platform 数据流仅授予对其在湖中创建的文件的读取访问权限。 如果您向其他人或服务授予 Power Platform 数据流使用的文件系统的权限，则仅授予他们对该文件系统中文件或文件夹的读取权限。
 
-## Frequently asked questions
-*What if I had previously created dataflows in my organization’s Azure Data Lake Storage Gen2 and would like to change their storage location?*
+## <a name="frequently-asked-questions"></a>常见问题
+*如果我以前在组织的 Azure Data Lake Storage Gen2 中创建了数据流并且想要更改其存储位置怎么办？*
 
-   You can't change the storage location of a dataflow after it was created.
+   创建数据流后，您将无法更改其存储位置。
 
-*When can I change the dataflow storage location of an environment?*
+*什么时候可以更改环境的数据流存储位置？*
 
-   Changing the environment's dataflow storage location is not currently supported. 
+   当前不支持更改环境的数据流存储位置。 
 
-## Next steps
-This article provided guidance about how to connect an Azure Data Lake Storage Gen2 account for dataflow storage. 
+## <a name="next-steps"></a>后续步骤
+本文提供了有关如何连接 Azure Data Lake Storage Gen2 帐户进行数据流存储的指南。 
 
-For more information about dataflows, the Common Data Model, and Azure Data Lake Storage Gen2, see these articles:
-- [Self-service data prep with dataflows](https://go.microsoft.com/fwlink/?linkid=2099972)
-- [Creating and using dataflows in PowerApps](https://go.microsoft.com/fwlink/?linkid=2100076)
-- [Connect Azure Data Lake Storage Gen2 for dataflow storage](https://go.microsoft.com/fwlink/?linkid=2099973)
-- [Add data to an entity in Common Data Service](https://go.microsoft.com/fwlink/?linkid=2100075)
+有关数据流、Common Data Model 和 Azure Data Lake Storage Gen2 的详细信息，请参阅以下文章：
+- [使用数据流准备自助服务数据](https://go.microsoft.com/fwlink/?linkid=2099972)
+- [在 PowerApps 中创建和使用工作流](https://go.microsoft.com/fwlink/?linkid=2100076)
+- [连接 Azure Data Lake Storage Gen2 以存储数据流](https://go.microsoft.com/fwlink/?linkid=2099973)
+- [在 Common Data Service 中向实体添加数据](https://go.microsoft.com/fwlink/?linkid=2100075)
 
-For more information about Azure storage, see this article:
-- [Azure Storage security guide](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
+有关 Azure 存储的更多信息，请参阅此文章：
+- [Azure 存储安全指南](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
 
-For more information about the Common Data Model, see these articles:
-- [Common Data Model - overview](https://docs.microsoft.com/powerapps/common-data-model/overview) 
-- [Common Data Model folders](https://go.microsoft.com/fwlink/?linkid=2045304)
-- [CDM model file definition](https://go.microsoft.com/fwlink/?linkid=2045521)
+有关 Common Data Model 的详细信息，请参阅以下文章：
+- [Common Data Model - 概述](https://docs.microsoft.com/powerapps/common-data-model/overview) 
+- [Common Data Model 文件夹](https://go.microsoft.com/fwlink/?linkid=2045304)
+- [CDM 模型文件定义](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-You can ask questions in the [PowerApps Community](https://go.microsoft.com/fwlink/?linkid=2099971).
+您可以在 [PowerApps 社区](https://go.microsoft.com/fwlink/?linkid=2099971)中提问。

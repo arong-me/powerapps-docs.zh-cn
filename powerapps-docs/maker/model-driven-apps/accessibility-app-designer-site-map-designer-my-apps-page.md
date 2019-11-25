@@ -8,20 +8,25 @@ manager: kvivek
 ms.date: 05/20/2019
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 26c79c20-2987-476e-983a-406e0db13034
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c0f845b1b1b390bb6033efa282792b0b5116e6fc
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752050"
 ---
-
 # <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>PowerApps 应用程序设计器、站点地图和“我的应用程序”页面中的辅助功能
 
-Microsoft 致力于使每个人都能轻松使用其产品和服务。 详细信息：[Microsoft 的辅助功能](http://www.microsoft.com/enable/default.aspx)  
+Microsoft 致力于使每个人都能轻松使用其产品和服务。 详细信息：[Microsoft 的辅助功能](https://www.microsoft.com/enable/default.aspx)  
  
 本主题介绍模型驱动应用程序提供的辅助功能。  
   
@@ -31,7 +36,7 @@ PowerApps 提供键盘快捷方式以解决灵活性有限或行动不便人士�
 |“我的应用”页面|||  
 |------------------|-|-|  
 |**至**|**快捷键 (Windows)**|**快捷键 (Mac)**|  
-|创新一个新的应用程序。|Alt + N|Opt + N|  
+|创新一个新应用。|Alt + N|Opt + N|  
 |在所选磁贴上打开**其他操作**菜单。|Alt + M|Opt + N|  
 
 
@@ -96,11 +101,11 @@ PowerApps 提供键盘快捷方式以解决灵活性有限或行动不便人士�
  关于您的浏览器的辅助功能信息，请访问以下网站：  
   
   
--   [Windows 辅助功能](http://www.microsoft.com/enable/products/ie9/default.aspx)  
+-   [Windows 辅助功能](https://www.microsoft.com/enable/products/ie9/default.aspx)  
   
--   [Firefox 中的辅助功能特性](http://support.mozilla.org/kb/accessibility-features-firefox-make-firefox-and-we?redirectlocale=en-US&redirectslug=accessibility)  
+-   [Firefox 中的辅助功能特性](https://support.mozilla.org/kb/accessibility-features-firefox-make-firefox-and-we?redirectlocale=en-US&redirectslug=accessibility)  
   
--   [ Safari 中的辅助功能特性](http://www.apple.com/accessibility/)  
+-   [ Safari 中的辅助功能特性](https://www.apple.com/accessibility/)  
   
 -   [Google Chrome 辅助功能技术文档](https://sites.google.com/a/chromium.org/dev/developers/design-documents/accessibility)
 

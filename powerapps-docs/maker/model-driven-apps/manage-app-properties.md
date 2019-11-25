@@ -4,28 +4,33 @@ description: 了解如何管理您应用的属性
 keywords: ''
 ms.date: 02/05/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: e773e60f-0211-4c4b-a1af-663be4997629
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 14
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a4f28dd878ca2e862a99982564066eefacfb7892
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701871"
 ---
-
 # <a name="manage-model-driven-app-properties-in-the-app-designer"></a>在应用程序设计器中管理模型驱动应用程序的属性
 
 应用程序属性定义该应用程序的重要详细信息，如其标题或 URL。 在创建应用程序时，定义应用程序属性。 如果您希望以后更改这些应用程序的属性，则可以在应用程序设计器中执行此操作。  
@@ -33,7 +38,7 @@ search.app:
 1.  在应用程序设计器中，在右侧，选择**属性**选项卡。  
 
     > [!div class="mx-imgBorder"] 
-    > ![应用程序设计器的“属性”窗格](media/app-designer-properties-tab.png "应用程序设计器的“属性”窗格")  
+    > ![应用设计器的“属性”窗格](media/app-designer-properties-tab.png "应用设计器的“属性”窗格")  
   
 2.  根据需要更改信息：  
 

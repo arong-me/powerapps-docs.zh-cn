@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: eaa02abdc4c85d4d6abd5e5ca3afe176144c4027
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701519"
 ---
-
 # <a name="add-configure-move-or-delete-fields-on-a-form"></a>添加、配置、移动或删除窗体中的字段  
 使用窗体设计器添加、配置、移动或删除字段。
 
@@ -30,7 +35,7 @@ search.app:
 要将字段添加到窗体中，请使用**字段**窗格。 可通过**字段**窗格搜索和筛选来帮助快速找到字段。 还包括用于仅显示未使用的字段的选项。 
 
 > [!div class="mx-imgBorder"] 
->    ![](media/FormDesignerFieldsPane.png "“字段”窗格")
+>    ![](media/FormDesignerFieldsPane.png "Fields pane")
 
 ### <a name="add-fields-to-a-form-using-drag-and-drop"></a>使用拖放将字段添加到窗体
 > [!NOTE]

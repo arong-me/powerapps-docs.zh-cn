@@ -5,15 +5,18 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: b361efd6a1f44485e9b7337e3e5b3a29c1a826d4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709615"
 ---
-
 # <a name="portal-checker"></a>门户检查器
-
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 门户检查器是一个自助服务诊断工具，可供门户管理员确定门户中的常见问题。 门户检查器通过查看各种配置参数帮助确定门户的问题，并提供有关解决方法的建议。
 
@@ -38,7 +41,7 @@ ms.reviewer: null
 > [!NOTE]
 > 如果门户关闭或启用了 IP 地址筛选，将不会对门户运行某些诊断检查。
 
-有关门户检查器可诊断的常见问题列表，请参阅[门户检查器可诊断的常见门户问题及其最佳实践](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/portal-faq)。
+有关门户检查器可诊断的常见问题列表，请参阅[门户检查器可诊断的常见门户问题及其最佳实践](https://docs.microsoft.com/dynamics365/customer-engagement/portals/portal-faq)。
 
 若要运行门户检查器：
 
@@ -47,7 +50,7 @@ ms.reviewer: null
 2.  转到**运行门户检测器**。
 
     > [!div class=mx-imgBorder]
-    > ![运行门户检查器](../media/run-diagnostics.png "运行门户检查器")
+    > ![运行门户检测器](../media/run-diagnostics.png "运行门户检测器")
 
 3.  选择**运行门户检测器**。 将启动诊断会话并收集有关客户问题的数据。 将在**诊断结果**部分中显示结果。
 

@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 8478a07a-c697-4784-874b-36958eb4f95d
 caps.latest.revision: 63
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f922908611d56afc99c5ebc844ff75c94d48657c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759500"
 ---
-
 # <a name="open-the-model-driven-app-form-editor"></a>打开模型驱动应用程序窗体编辑器 
 通过窗体编辑器，您通过将组件（如分区、选项卡、字段和控件）放入窗体编辑器区域来设计窗体。 在本主题中，您将了解几个访问窗体编辑器的不同方法。
  
@@ -30,7 +35,7 @@ search.app:
 
 ## <a name="access-the-form-editor-from-the-powerapps-site"></a>从 PowerApps 站点访问窗体编辑器
 
-1. 登录到 [PowerApps](https://web.powerapps.com/)。 
+1. 登录到 [PowerApps](https://make.powerapps.com/)。 
 
 2. 选择**数据** > **实体** >，然后选择所需实体，如客户实体。 
 
@@ -51,7 +56,7 @@ search.app:
   
 2.  如果实体有多个主窗体，请确认您要编辑的那个窗体。 如果它不是您要编辑的窗体，请使用窗体选择器选择要编辑的窗体。  
   
-3.  选择**更多命令**按钮 ![“约会活动”中的“更多命令”按钮](media/more-commands.gif "“约会活动”中的“更多命令”按钮")。  
+3.  选择**更多命令**按钮 ![约会活动中的“更多命令”按钮](media/more-commands.gif "“约会活动”中的“更多命令”按钮")。  
   
 4.  选择**窗体编辑器**。  
 

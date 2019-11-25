@@ -5,12 +5,17 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: b04c6447911d1a884627bd2cbb4ad7b74b9c5ce5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708119"
 ---
-
 # <a name="available-liquid-tags"></a>可用 Liquid 标记
 
 用于告知模板要执行操作的程序逻辑的组成标记。 标记封装在 {% %} 中。

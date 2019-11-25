@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.assetid: 21a166a0-d25e-4260-a1e4-2ddc528787c2
 caps.latest.revision: 17
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4aa2b77e9a9840532193fe50d92aabd796484c60
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758368"
 ---
 # <a name="create-a-theme"></a>创建主题
 
@@ -71,7 +77,7 @@ search.app:
 ## <a name="copy-and-alter-the-existing-theme"></a>复制并修改现有主题  
  最简单、最快捷的新主题创建方法是克隆和修改现有主题，然后保存它，进行预览和发布。 
  
-1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 2.  选择**模型驱动**（左下方）。 
 
@@ -91,12 +97,12 @@ search.app:
  以下屏幕截图显示新导航颜色。  
  
  > [!div class="mx-imgBorder"] 
- > ![淡绿色主题颜色](media/theme-gentle-green.png "淡绿色主题颜色")  
+ > ![柔和的绿色主题色](media/theme-gentle-green.png "柔和的绿色主题色")  
   
  以下屏幕截图显示具有突出显示颜色的客户实体网格。  
  
  > [!div class="mx-imgBorder"] 
- > ![淡绿色主题客户网格](media/themes-gentle-green-account-grid.png "淡绿色主题客户网格")  
+ > ![柔和的绿色主题客户网格](media/themes-gentle-green-account-grid.png "柔和的绿色主题客户网格")  
   
 <a name="Publish"></a>   
 ## <a name="preview-and-publish-a-theme"></a>预览并发布主题  
@@ -146,5 +152,5 @@ search.app:
   
 ## <a name="see-also"></a>另请参阅  
          
- [视频：主题](http://go.microsoft.com/fwlink/p/?LinkId=529568) [查询和编辑组织主题](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
+ [视频：主题](https://go.microsoft.com/fwlink/p/?LinkId=529568) [查询和编辑组织主题](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
 

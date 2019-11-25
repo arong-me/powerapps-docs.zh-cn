@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 42882b630cfe34cc17e310b32c9c072f0c2d5d8a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758444"
 ---
-
 # <a name="guidelines-on-working-with-embedded-canvas-apps"></a>嵌入式区域应用使用指南
 本主题提供有关使用嵌入式区域应用的指南，以及有助于诊断可能遇到的任何问题的提示。
 
@@ -34,7 +39,7 @@ search.app:
 -   向模型驱动的窗体添加嵌入式区域应用时，请始终使用一定有值的必填字段。 如果字段无值，则不会刷新嵌入式区域应用来响应主机模型驱动的窗体上的任何数据变化。
 -   发布模型驱动的窗体也不会发布嵌入式区域应用。
      - 嵌入式区域应用需要独立于主机模型驱动的窗体发布。 详细信息：[发布应用](../canvas-apps/save-publish-app.md#publish-an-app)。
--   如果 Web 浏览器弹出窗口阻止程序已锁定通过区域应用控件属性中的**自定义**按钮打开 PowerApps Studio 创建或编辑嵌入式区域应用，则必须启用 web.powerapps.com 站点或暂时禁用该弹出窗口阻止程序，然后再次选择**自定义**。
+-   如果 Web 浏览器弹出窗口阻止程序已锁定通过区域应用控件属性中的**自定义**按钮打开 PowerApps Studio 创建或编辑嵌入式区域应用，则必须启用 make.powerapps.com 站点或暂时禁用该弹出窗口阻止程序，然后再次选择**自定义**。
 -   创建新记录时不显示嵌入式区域应用，因为需要向其传递记录上下文。
 -   ModelDrivenFormIntegration.Item 对象为只读对象。 
      - 若要回写数据，必须使用 Common Data Service 连接器。 更多信息：[Common Data Service](/connectors/commondataservice/)

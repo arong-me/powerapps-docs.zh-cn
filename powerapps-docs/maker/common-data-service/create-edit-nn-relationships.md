@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 248cecfd-c9e8-430b-b4b0-860669866084
 caps.latest.revision: 33
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 90658adac8f04ea131968816a6004b4789ff42e4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757742"
 ---
 # <a name="create-many-to-many-entity-relationships-overview"></a>创建多对多实体关系概述
 
@@ -37,7 +43,7 @@ search.app:
 
 |设计器| 说明|
 |--|--|
-|[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[使用 PowerApps 门户在 Common Data Service 中创建多对多实体关系](create-edit-nn-relationships-portal.md)|
+|[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[使用 PowerApps 门户在 Common Data Service 中创建多对多实体关系](create-edit-nn-relationships-portal.md)|
 |解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。<br />详细信息：[使用解决方案资源管理器在 Common Data Service 中创建 N:N（多对多）实体关系](create-edit-nn-relationships-solution-explorer.md) |
 
 > [!NOTE]

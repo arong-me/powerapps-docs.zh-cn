@@ -1,12 +1,12 @@
 ---
-title: PowerApps 中模型驱动应用程序的窗体属性 | MicrosoftDocs
+title: PowerApps 中模型驱动应用的窗体属性 | MicrosoftDocs
 description: 了解主窗体属性
 Keywords: 主窗体属性; Dynamics 365
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018
@@ -14,12 +14,17 @@ ms.service: powerapps
 ms.topic: article
 ms.assetid: 4ed30bb7-dca1-4de8-80f3-842152ea921a
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3a71fe6cf7771a0e15be85e0696e27226e84467e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700287"
 ---
-
 # <a name="model-driven-app-form-properties"></a>模型驱动应用程序的窗体属性 
 
 您可以在解决方案资源管理器中访问**窗体属性**。 在**组件**下，展开**实体**，然后展开所需实体，选择**窗体**。 在窗体列表中，打开**主**类型的窗体。 然后在**主页**选项卡上，选择**窗体属性**。

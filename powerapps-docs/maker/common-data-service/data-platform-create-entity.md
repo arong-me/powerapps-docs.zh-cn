@@ -8,13 +8,18 @@ ms.topic: quickstart
 ms.date: 05/01/2018
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b1331d272b30bb3455ae06a8dd726eb3a9dc630f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754947"
 ---
-
-# <a name="create-a-custom-entity"></a>创建自定义实体。
+# <a name="create-a-custom-entity"></a>创建自定义实体
 在 PowerApps 中，*实体*定义您要以记录形式跟踪的信息，通常包括公司名称、地点、产品、电子邮件和电话等属性。 然后您可以通过开发引用该实体的应用程序来显示该数据。 PowerApps 提供标准的“现成”实体来覆盖组织内的典型情形（如跟踪约会），但是有时您可能需要创建自定义实体来存储特定于组织的数据。
 
 在本主题中，您将了解如何创建名为“产品审核”的自定义实体，您可以用它来创建显示您的公司所销售的产品的评分和评论的应用程序。
@@ -22,8 +27,8 @@ search.app:
 ## <a name="prerequisites"></a>必备条件 
 若要按照此过程操作，您必须在 Common Data Service 内具有系统管理员或系统定制员安全角色。
 
-## <a name="sign-in-to-powerapps"></a>登录到 PowerApps
-在 [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 登录到 PowerApps
+## <a name="sign-in-to-powerapps"></a>登录到“PowerApps”
+在 [https://make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 登录到 PowerApps。
 
 ## <a name="create-an-entity"></a>创建实体
 1. 在导航窗格中，单击或点按**数据**以展开它，然后单击或点按**实体**。
@@ -56,7 +61,7 @@ search.app:
     
     d. 完成后，请单击**创建**。
      
-    ![新建实体](./media/data-platform-cds-create-entity/newentitypanel.png "新建实体面板")
+    ![新建实体](./media/data-platform-cds-create-entity/newentitypanel.png "“新实体”面板")
 
 4. 在实体详细信息页上，请注意，实体现在在后台设置。 完成设置后，实体将被保存并可在应用中使用。 字段、关系和密钥可以随时添加到实体（即使设置仍在进行时），但视图、窗体、图表、仪表板和业务规则只能在完成设置后添加到实体。
 

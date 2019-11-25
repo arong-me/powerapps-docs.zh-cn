@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: c765b6d9-4d87-4c2d-aae2-5b1c3b664a71
 caps.latest.revision: 28
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 400fb236df41fefc8a9cfa7175ebfd8260ec96bd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2707459"
 ---
 # <a name="entity-relationships-overview"></a>实体关系概述
 实体关系定义记录如何在数据库中相互关联。 最简单的情况是，向实体中添加查找字段将在两个实体之间形成一个新的 1:N（一对多）关系，并使您能够将该查找字段放在窗体中。 利用查找字段，用户可以将该实体的多个*子*记录与单个*父*实体记录关联。  

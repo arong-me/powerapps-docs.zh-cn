@@ -8,20 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-ms.assetid: null
-caps.latest.revision: null
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+ms.assetid: ''
+caps.latest.revision: ''
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bd2d19b18b1de7bad4d6f661ec983af49fb8f4e4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752138"
 ---
-
 # <a name="odata-v4-data-provider-configuration-requirements-and-best-practices"></a>OData v4 数据提供程序配置，要求和最佳实践
 
 本主题介绍如何配置 OData v4 数据提供程序，以及将 OData v4 数据提供程序用于连接 OData v4 Web 服务的要求和建议的最佳实践。 
@@ -75,7 +80,7 @@ search.app:
 1. 在**新数据源**属性页面中，填写以下字段，然后保存记录。  
   
     - **名称**。 键入用于描述数据源的名称。  
-    - **Uri**。 如果在使用 OData 数据提供程序，请输入 OData Web 服务的 uri。 例如，如果在使用 OData 提供程序连接到 Azure 中托管的 Web 服务，URI 可能类似 *`http://contosodataservice.azurewebsites.net/odata/`*。  
+    - **Uri**。 如果在使用 OData 数据提供程序，请输入 OData Web 服务的 uri。 例如，如果在使用 OData 提供程序连接到 Azure 中托管的 Web 服务，URI 可能类似 *`https://contosodataservice.azurewebsites.net/odata/`*。  
     - **超时(以秒为单位)**。 输入数据请求超时前等待 Web 服务响应的秒数。例如，输入 30 将最多等待 30 秒才超时。  
     - **分页模式**。 选择使用客户端还是服务器端分页控制查询结果的分页方式。 默认值为客户端分页。 如果使用服务器端分页，服务器通过使用 $skiptoken 参数（将把该参数添加到查询字符串）控制结果的分页方式。 详细信息：[跳过标记系统查询选项 ($skiptoken)](https://msdn.microsoft.com/library/dd942121.aspx)  
         -  **返回内联计数**。 返回结果集中的总数记录。 此设置用于在将数据返回到网格时启用下一页功能。 如果 OData 终结点不支持 OData $inlinecount 参数，请使用值 false。 默认值为 false。

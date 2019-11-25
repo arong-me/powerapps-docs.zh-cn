@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 0cf62817-5ff5-40bb-ad17-e1f6b0921720
 caps.latest.revision: 42
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c829665baf2688c755bdfba7debb19d7b69a1c46
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758664"
 ---
 # <a name="define-and-query-hierarchically-related-data"></a>定义和按层次结构查询相关数据
 
@@ -92,5 +98,5 @@ search.app:
 [创建和编辑 1:N（一对多）或 N:1（多对一）实体关系](create-edit-1n-relationships.md)<br />
 [使用解决方案资源管理器创建和编辑 1:N（一对多）或 N:1（多对一）实体关系](create-edit-1n-relationships-solution-explorer.md)<br />
 [使用模型驱动应用程序可视化分层数据](visualize-hierarchical-data.md)<br />
-[视频：分层安全建模](http://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)<br />
-[视频：层次结构可视化](http://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)
+[视频：分层安全建模](https://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)<br />
+[视频：层次结构可视化](https://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)

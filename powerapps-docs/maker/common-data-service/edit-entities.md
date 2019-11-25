@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 8b00780c-74f0-4e3a-b570-b9289d0d5383
 caps.latest.revision: 41
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3ec64583e2146703711b88456ff7bc91ece3e921
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757432"
 ---
 # <a name="edit-an-entity"></a>编辑实体
 
@@ -34,12 +40,12 @@ search.app:
 
 |设计器|说明|
 |--|--|
-|[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。|
+|[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。|
 |解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。|
 
 在 PowerApps 门户和解决方案资源管理器中可执行以下操作：
 
-- **编辑实体字段**。 详细信息：[创建和编辑 Common Data Service 的字段](create-edit-fields.md)
+- **编辑实体字段**。 更多信息：[创建和编辑 Common Data Service 的字段](create-edit-fields.md)
   
 - **编辑实体关系**。 详细信息：[创建和编辑实体之间的关系](create-edit-entity-relationships.md)
 

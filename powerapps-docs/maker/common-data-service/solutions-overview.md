@@ -9,26 +9,31 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: ece68f5f-ad40-4bfa-975a-3e5bafb854aa
 caps.latest.revision: 55
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 391220159917462833afac204183cdc68a94f898
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759016"
 ---
-   
 # <a name="solutions-overview"></a>解决方案概述  
 
   在 PowerApps 中，解决方案被用来将应用和组件从一个环境传输到另一个环境，或将一组自定义项应用到现有应用。 一个解决方案中可以包含一个或多个应用程序，以及其他组件，如站点地图、实体、流程、Web 资源、选项集等。  可从 [AppSource](https://appsource.microsoft.com/) 或独立软件供应商 (ISV) 获取解决方案。
   
-详细信息：[白皮书：解决方案生命周期管理](https://www.microsoft.com/en-us/download/details.aspx?id=57777)  
+详细信息：[白皮书：解决方案生命周期管理](https://www.microsoft.com/download/details.aspx?id=57777)  
   
 > [!NOTE]
 >  如果您是创建要分发的应用的 ISV，则需要使用解决方案。 有关使用解决方案的详细信息，请参阅[开发人员指南：解决方案简介](/powerapps/developer/common-data-service/introduction-solutions)。  
@@ -38,6 +43,8 @@ search.app:
 ### <a name="components"></a>组件  
  组件代表您有可能自定义的某些事项。 可以包括在解决方案中的任何项目是组件。 以下是您可以在解决方案中查看的组件的列表：  
   
+-   AI 模型
+
 -   应用程序功能区  
   
 -   文章模板  
@@ -51,6 +58,8 @@ search.app:
 -   连接角色  
   
 -   合同模板  
+
+-   自定义连接器
  
 -   自定义控件
   
@@ -61,12 +70,14 @@ search.app:
 -   实体  
   
 -   实体关系  
+
+-   环境变量
   
 -   字段  
   
 -   字段安全配置文件  
 
--   流
+-   Flow
   
 -   表单  
   
@@ -150,5 +161,5 @@ search.app:
   
 ## <a name="next-steps"></a>后续步骤  
 [导入、更新和导出解决方案](import-update-export-solutions.md) <br/>
-[导航到某个特定解决方案](navigate-specific-solution.md)
+[导航到特定解决方案](navigate-specific-solution.md)
  

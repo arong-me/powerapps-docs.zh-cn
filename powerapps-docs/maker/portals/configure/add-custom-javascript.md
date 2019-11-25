@@ -1,6 +1,6 @@
 ---
-title: 为门户使用自定义 JavaScript |MicrosoftDocs
-description: 在门户中将自定义 JavaScript 添加到表单的说明
+title: 为门户使用自定义 JavaScript | MicrosoftDocs
+description: 有关如何向门户中的窗体添加自定义 JavaScript 的说明
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,20 +11,20 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 42e31fc2ecb18d4f26327f8ccbeabe034d7a1700
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73553638"
+ms.locfileid: "2760137"
 ---
 # <a name="add-custom-javascript"></a>添加自定义 JavaScript
 
-Web 窗体步骤记录包含一个名为 "**自定义 javascript** " 的字段，该字段可用于存储 JavaScript 代码，使您能够扩展或修改窗体的视觉对象显示或功能。
+Web 窗体步骤记录包含名为**自定义 JavaScript** 的字段，该字段可用于存储 JavaScript 代码，以允许您扩展或修改窗体的直观显示或功能。
 
-JavaScript 的自定义块将添加到页面底部，紧靠在 "结束窗体标记" 元素之前。
+自定义 JavaScript 块将在关闭窗体标记元素前添加到页面底部。
 
 ## <a name="form-fields"></a>窗体字段
 
-实体字段的 HTML 输入 ID 设置为属性的逻辑名称。 这使得可以使用[jQuery](https://jquery.com/)轻松选择字段、设置值或其他客户端操作。  
+实体字段的 HTML 输入 ID 设置为属性的逻辑名称。 这通过使用 [jQuery](https://jquery.com/) 让选择字段、设置或其他客户端操作变得轻松。  
 
 ```JavaScript
 $(document).ready(function() {
@@ -33,10 +33,10 @@ $(document).ready(function() {
 ```
 
 ## <a name="additional-client-side-field-validation"></a>其他客户端字段验证
-有时您可能需要自定义窗体上的字段验证。 下面的示例演示如何添加自定义验证程序。 此示例将强制用户仅当首选联系方式的其他字段设置为电子邮件时，才指定电子邮件。
+有时您可能需要自定义窗体上的字段验证。 以下示例说明如何添加自定义验证程序。 此示例仅在“联系人的首选方法”的另一个字段设置为电子邮件时强制用户指定电子邮件。
 
 > [!NOTE]
-> 子网格中不支持客户端字段验证。
+> 客户端字段验证在子网格中不受支持。
 
 ```JavaScript
 if (window.jQuery) {
@@ -73,9 +73,9 @@ if (window.jQuery) {
 }
 ```
 
-## <a name="general-validation"></a>一般验证
+## <a name="general-validation"></a>通常的验证
 
-单击**下一个**/**提交**"按钮时，将执行名为**webFormClientValidate**的函数。 您可以扩展此方法以添加自定义验证逻辑。
+单击**下一步**/**提交**按钮之后，将执行名为 **webFormClientValidate** 的函数。 您可扩展此方法来添加自定义验证逻辑。
 
 ```JavaScript
 if (window.jQuery) {

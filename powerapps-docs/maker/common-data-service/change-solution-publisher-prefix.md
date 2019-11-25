@@ -8,23 +8,28 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.assetid: ece684h8-ad40-4bfa-975a-3e5bafb854aa
 caps.latest.revision: 55
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0dd20288c36354903ab81ee3947336479f2e4c47
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2705963"
 ---
-
 # <a name="change-the-solution-publisher-prefix"></a>更改解决方案发布商前缀
 
-您所做的每个自定义项都是解决方案的一部分。 每个解决方案都有有一个发布商。 默认情况下，您在 PowerApps 内使用的解决方案将是与 **Common Data Service 默认发布商**关联的 **Common Data Services 默认解决方案**。
+您所做的每个自定义项都是解决方案的一部分。 每个解决方案都有有一个发布商。 默认情况下，您在 PowerApps 内使用的解决方案将是与 **Common Data Service 默认发布商**关联的 **Common Data Service 默认解决方案**。
 
 将为发布商随机分配默认自定义项前缀，例如，可能是 `cr8a3`。 这意味着为您的组织创建的元数据的每个新项目的名称都会将此前缀附加到用于唯一标识项目的名称前面。 如果您创建名为 **Animal** 的新实体，Common Data Service 使用的唯一名称将是 `cr8a3_animal`。 所有新字段（属性）、关系或选项集选项同样如此。
 
@@ -39,7 +44,7 @@ search.app:
 ## <a name="change-the-solution-publisher-prefix-for-the-common-data-service-default-publisher"></a>更改 Common Data Service 默认发布商的解决方案发布商前缀  
 
  1. 在 PowerApps 门户中，选择左下角的**模型驱动**。
- 2. 单击左侧导航区域的**高级**打开 **Common Data Services 默认解决方案**
+ 2. 单击左侧导航区域的**高级**打开 **Common Data Service 默认解决方案**
  3. 在解决方案资源管理器中，选择左侧导航的**信息**区域。
  4. 单击**发布商**链接打开 **Common Data Service 默认发布商**窗体。
  5. 将**前缀**字段值编辑为所需的自定义项前缀。
@@ -47,10 +52,10 @@ search.app:
   
 ## <a name="change-the-solution-publisher-prefix-for-any-publisher"></a>更改任意发布商的解决方案发布商前缀
 
-分发其解决方案的用户通常在其创建的解决方案内工作，而不是 **Common Data Services 默认解决方案**。 通常在创建解决方案时设置自定义项前缀。 您可以通过执行以下步骤来更改您使用的其他非托管解决方案的自定义项前缀： 
+分发其解决方案的用户通常在其创建的解决方案内工作，而不是 **Common Data Service 默认解决方案**。 通常在创建解决方案时设置自定义项前缀。 您可以通过执行以下步骤来更改您使用的其他非托管解决方案的自定义项前缀： 
 
  1. 在 PowerApps 门户中，选择左下角的**模型驱动**。
- 2. 单击左侧导航区域的**高级**打开 **Common Data Services 默认解决方案**
+ 2. 单击左侧导航区域的**高级**打开 **Common Data Service 默认解决方案**
  3. 编辑页面的 URL，将 `dynamics.com` 后面的部分全部删除并重新加载页面。
  4. 导航到**设置** > **自定义** > **自定义**。 
  5. 单击**发布商**。 现在您可以看到可用发布商的列表。

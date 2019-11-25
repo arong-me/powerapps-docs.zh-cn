@@ -1,29 +1,34 @@
 ---
 title: 创建选项集 | Microsoft Docs
 description: 如何创建选项集的分步说明。
-author: clwesene
-manager: kfile
+author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6f3f47882800252c91de0efc572954f7397ac251
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757608"
 ---
-
 # <a name="create-an-option-set"></a>创建选项集
 
-选项集让您可以为应用程序内的用户包括固定值的下拉列表，以确保数据的一致性，在其他应用程序中有时也称为选择列表或选择字段。 类似于实体，有两个标准选项集，以及创建在应用程序内使用的自定义选项集的功能。
+选项集让您可以为应用程序内的用户包括固定值的下拉列表，以确保数据的一致性，在其他应用程序中有时也称为选择列表或选择字段。 类似于实体，有两个标准选项集，以及创建在应用内使用的自定义选项集的功能。
 
 选项集可通过两种方式创建，从门户中的选项集列表或在创建字段时直接在实体内。 有关如何创建实体的详细信息，请参阅[创建实体](data-platform-create-entity.md)。
 
 ## <a name="creating-an-option-set-while-adding-a-field"></a>在添加字段时创建选项集。
 
-1. 在 [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**实体**。
+1. 在 [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**实体**。
 
     ![实体详细信息](./media/data-platform-cds-create-entity/entitylist.png "实体列表")
 
@@ -65,7 +70,7 @@ search.app:
 
 ## <a name="creating-an-option-set-from-the-option-set-list"></a>从选项集列表创建选项集
 
-1. 在 [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**选项集**。
+1. 在 [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**选项集**。
 
     > [!div class="mx-imgBorder"] 
     > ![选项集](./media/data-platform-cds-newoptionset/optionsetlist.png "选项集列表")

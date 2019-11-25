@@ -1,27 +1,33 @@
 ---
-title: 在 PowerApps 中优化模型驱动应用程序窗体的性能 | MicrosoftDocs
+title: 在 PowerApps 中优化模型驱动应用窗体的性能 | MicrosoftDocs
 description: 了解如何避免导致窗体加载缓慢的窗体设计
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 59cfa5e6-638a-437f-a462-fddfd26fb07d
 caps.latest.revision: 8
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b777dc346897f87d710edc309b9e9a7eda1b711b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711595"
 ---
 # <a name="optimize-model-driven-app-form-performance"></a>优化模型驱动应用程序窗体的性能
 

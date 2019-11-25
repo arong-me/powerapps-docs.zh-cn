@@ -1,8 +1,8 @@
 ---
 title: 创建您自己的引导式帮助（学习路径）（模型驱动应用）| MicrosoftDocs
 description: ''
-keywords: null
-ms.date: 04/30/2019
+keywords: ''
+ms.date: 10/22/2019
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 8ee3c432-5f76-4086-b9cc-6cd467ae056b
@@ -11,14 +11,24 @@ ms.author: matp
 manager: kvivek
 topic-status: Drafting
 search.audienceType:
-  - customizer
+- customizer
 search.app:
-  - PowerApps
+- PowerApps
+ms.openlocfilehash: b9c0f192f96d9ce967d1b8e56266aadeb64646c9
+ms.sourcegitcommit: 7411b4cf9e30e71052fe932dfd3276e969854af4
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2768275"
 ---
-
 # <a name="create-guided-help-learning-path-for-your-app"></a>为您的应用创建引导式帮助（学习路径）
 
-使用学习路径为用户提供自定义的应用内帮助体验，其针对您的环境和您组织的特定用法和工作流定制。 学习路径促进您的应用和组织流程的学习和采用，确保数据输入和解释的一致性，并减少用户生成的错误和支持电话。 [观看有关学习路径的短片 (1:50)](https://community.dynamics.com/crm/b/crmvideos/archive/2016/05/09/introducing-learning-path-for-dynamics-crm)。  
+使用学习路径为用户提供自定义的应用内帮助体验，其针对您的环境和您组织的特定用法和工作流定制。 
+
+> [!IMPORTANT]
+> 学习路径仅在旧版 Web 客户端应用中提供。 为统一接口应用使用自定义帮助页面。 详细信息：[为您的统一接口应用创建引导式帮助](../common-data-service/create-custom-help-pages.md)
+
+学习路径促进您的应用和组织流程的学习和采用，确保数据输入和解释的一致性，并减少用户生成的错误和支持电话。 [观看有关学习路径的短片 (1:50)](https://community.dynamics.com/crm/b/crmvideos/archive/2016/05/09/introducing-learning-path-for-dynamics-crm)。  
 
 <a name="CustomHelp"></a>   
 
@@ -38,7 +48,7 @@ search.app:
 
 - 已选择加入学习路径。 此设置默认开启，但是可能已关闭。  
 
-   要确保学习路径已开启：在导航栏上，请转到**设置** ![“设置”图标](media/optionsbutton.png "“设置”图标") > **选择加入学习路径**。  
+   要确保学习路径已开启：在导航栏上，请转到**设置** ![“设置”图标](media/optionsbutton.png "设置图标") > **选择加入学习路径**。  
 
    详细信息：[学习路径（引导式帮助）的开/关切换](/dynamics365/customer-engagement/admin/on-off-switch-for-learning-path-guided-help)  
 
@@ -54,7 +64,7 @@ search.app:
 ## <a name="turn-on-learning-path-for-your-organization"></a>为您的组织启用学习路径  
  学习路径是一项可以为组织启用或禁用的可选功能。 您可以显示 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] 中包含的学习路径内容，为您的用户创建您自己的学习路径内容，或同时使用两种方法。  
 
-1. 使用管理员帐户登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 或 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)]。  
+1. 使用管理员帐户登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 或 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)]。  
 
 2. 转到**设置**，然后选择**系统**下的**管理**。 详细信息：[设置](/powerapps/maker/model-driven-apps/advanced-navigation#settings)
 
@@ -64,7 +74,7 @@ search.app:
 
     您可以启用学习路径或可自定义帮助，但不能同时启用。 确认**使用可自定义实体的自定义帮助**和**将参数追加到 URL**是否设置为**否**。  
 
-     ![“系统设置”对话框，其中显示了可选择来创作学习路径](media/lp-system-settings.png "“系统设置”对话框，其中显示了可选择来创作学习路径")  
+     ![“系统设置”对话框，其中显示了可选择来创作学习路径的选项](media/lp-system-settings.png "“系统设置”对话框，其中显示了可选择来创作学习路径的选项")  
 
 5. 选择**确定**。  
 
@@ -191,7 +201,7 @@ search.app:
 
 -   在边栏中，选择**内容库**按钮。  
 
-     ![学习路径边栏中显示的“内容库”图标](media/lp-sidebar-cl-icon.png "学习路径边栏中显示的“内容库”图标")  
+     ![在学习路径边栏显示的“内容库”图标](media/lp-sidebar-cl-icon.png "在学习路径边栏显示的“内容库”图标")  
 
 -   在网站地图中选择**培训**磁贴，然后选择**内容库**。  
 
@@ -201,11 +211,11 @@ search.app:
 
 1.  选择屏幕右下角圆圈 (...) 内的省略号。  
 
-    ![用于显示学习路径图标的省略号按钮](media/lp-cl-ellipses.png "用于显示学习路径图标的省略号按钮")  
+    ![用于显示“学习路径”图标的省略号按钮](media/lp-cl-ellipses.png "用于显示“学习路径”图标的省略号按钮")  
 
 2.  选择**学习路径内容库**。  
 
-    ![移动应用程序界面中显示的学习路径按钮](media/lp-mobile-lp-button.png "移动应用程序界面中显示的学习路径按钮")  
+    ![移动应用程序界面中显示的“学习路径”按钮](media/lp-mobile-lp-button.png "移动应用程序界面中显示的“学习路径”按钮")  
 
 
 
@@ -216,7 +226,7 @@ search.app:
 
 |柱形图|说明|  
 |------------|-----------------|  
-|**客户**|您创建向导型任务或边栏时使用的名称。 名称旁边的红色锁符号表示内容当前已签出。可将鼠标悬停在此图标上方以查看哪位用户签出了此内容。<br /><br /> ![红色锁图标表示内容已签出。](media/lp-cl-checked-out.png "红色锁图标表示内容已签出。")<br /><br /> 名称旁边的红星表示新签入的内容。<br /><br /> ![红色星号表示新签入的内容](media/lp-cl-new-check-in.png "红色星号表示新签入的内容")|  
+|**客户**|您创建向导型任务或边栏时使用的名称。 名称旁边的红色锁符号表示内容当前已签出。可将鼠标悬停在此图标上方以查看哪位用户签出了此内容。<br /><br /> ![红色锁图标表示内容已签出。](media/lp-cl-checked-out.png "R红色锁图标表示内容已签出。”)<br /><br /> 名称旁边的红星表示新签入的内容。<br /><br /> ![红色星号，指示新签入的内容](media/lp-cl-new-check-in.png "R红色星号，指示新签入的内容”)|  
 |**标题**|当您向向导型任务或边栏添加内容时提供的标题。 边栏和向导型任务的标题在添加为链接时或在返回为搜索结果时显示在链接中。|  
 |**类型**|指示内容类型的符号：边栏或向导型任务|  
 |**窗体因素**|表示创建内容时为其选择的外形规格（**台式机**或**平板电脑**）的符号。<br /><br /> 连接到移动应用程序界面模拟器或交互式服务中心后使用内容库时，不显示**外形规格**列。|  
@@ -242,7 +252,7 @@ search.app:
 ### <a name="sidebars"></a>边栏  
  用户在选择“帮助”按钮、导航至某页或选择您为其创建内容的页面上的链接或按钮时将显示边栏。 也可以创建当用户打开页面或屏幕或选择边栏上的“主页”按钮时显示的“主页”边栏。  
 
- ![边栏中的“主页”图标](media/sidebar-home.png "边栏中的“主页”图标")  
+ ![边栏上的“主页”按钮](media/sidebar-home.png "边栏上的“主页”按钮")  
 
  也可以定义当显示预期边栏时出错时显示的“错误”边栏。 您可以在边栏中包含链接、视频和其他信息以帮助用户熟悉并深入了解显示的页面或窗体，或他们可以在页面或窗体中执行的操作。  
 
@@ -263,7 +273,7 @@ search.app:
 
 3. 在内容库，选择**向导型任务**。  
 
-    ![用于在学习路径内容库中新建向导型任务的链接](media/lp-content-library-gt.png "用于在学习路径内容库中新建向导型任务的链接")  
+    ![链接以在学习路径内容库中创建新向导型任务](media/lp-content-library-gt.png "链接以在学习路径内容库中创建新向导型任务")  
 
 4. 输入一个名称并选择向导型任务的其他设置。 使用此表作为参考。  
 
@@ -359,7 +369,7 @@ search.app:
 
 3. 在内容库，选择**边栏**。  
 
-   ![用于在学习路径内容库中新建边栏的链接](media/lp-content-library-sb.png "用于在学习路径内容库中新建边栏的链接")  
+   ![链接以在学习路径内容库中创建新边栏](media/lp-content-library-sb.png "链接以在学习路径内容库中创建新边栏")  
 
 4. 输入一个名称，然后选择边栏的其他设置。 使用此表作为参考。  
 
@@ -405,11 +415,11 @@ search.app:
 
 1. 在要向其添加链接的部分中，选择**链接列表**图标。  
 
-   ![学习路径边栏中已选中的“链接列表”图标](media/lp-sidebar-links.png "学习路径边栏中已选中的“链接列表”图标")  
+   ![学习路径边栏中已选中“链接列表”图标](media/lp-sidebar-links.png "学习路径边栏中已选中“链接列表”图标")  
 
 2. 添加部分标题，然后选择 **+ 添加链接**。  
 
-   ![学习路径边栏一个部分中突出显示的“添加链接”框](media/lp-sidebar-addlink.png "学习路径边栏一个部分中突出显示的“添加链接”框")  
+   ![学习路径边栏的一部分中已突出显示“添加链接”框](media/lp-sidebar-addlink.png "学习路径边栏的一部分中已突出显示“添加链接”框")  
 
 3. 选择要添加的链接的类型，然后选择**下一步**。 您可以从以下选项中选择：  
 
@@ -501,7 +511,7 @@ search.app:
 
 <a name="Localize"></a>   
 ## <a name="localize-learning-path-controls"></a>本地化学习路径控件  
- 您可以本地化在学习路径中创建的控件的内容，使其使用用户为 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] 选择的语言向用户显示。 若要本地化控件，您只需将其导出，本地化向用户显示的字符串，然后再导入包含已本地化内容的控件。 您可以将控件导入到同一组织，或需要的任何组织。 您可以将同一个控件本地化为多种语言，然后将特定语言导入支持选择该语言的用户的特定组织。 学习路径中支持的本地化遵循 OASIS XML 本地化交换文件格式 TC (XLIFF) 2.0 标准。 有一些可自由获取的工具和教程可用于处理这种常见格式。 详细信息：[XLIFF 版本 2.0](http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html)  
+ 您可以本地化在学习路径中创建的控件的内容，使其使用用户为 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] 选择的语言向用户显示。 若要本地化控件，您只需将其导出，本地化向用户显示的字符串，然后再导入包含已本地化内容的控件。 您可以将控件导入到同一组织，或需要的任何组织。 您可以将同一个控件本地化为多种语言，然后将特定语言导入支持选择该语言的用户的特定组织。 学习路径中支持的本地化遵循 OASIS XML 本地化交换文件格式 TC (XLIFF) 2.0 标准。 有一些可自由获取的工具和教程可用于处理这种常见格式。 详细信息：[XLIFF 版本 2.0](https://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html)  
 
  有关 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] 中的用户语言设置的详细信息：[设置个人选项](/dynamics365/customer-engagement/basics/set-personal-options)  
 
@@ -509,7 +519,7 @@ search.app:
 
 2.  选择**本地化**，然后选择**导出**。  
 
-    ![学习路径“本地化”菜单中的“导出”按钮](media/lp-localize-export.png "学习路径“本地化”菜单中的“导出”按钮")  
+    ![学习路径本地化菜单中的“导出”按钮](media/lp-localize-export.png "学习路径本地化菜单中的“导出”按钮")  
 
 3.  选择要用于保存生成的 .zip 文件的选项，然后选择文件名和位置。  
 

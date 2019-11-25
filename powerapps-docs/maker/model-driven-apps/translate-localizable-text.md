@@ -4,24 +4,30 @@ description: 了解如何翻译可本地化的文本以支持多种语言
 ms.custom: ''
 ms.date: 06/03/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 3d77d149-819b-45e6-8e70-1fbe54d5c153
 caps.latest.revision: 19
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 32e6eb8439cdd5a685f761b1326a0cc891f0e6bb
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754859"
 ---
 # <a name="translate-localizable-text-for-model-driven-apps"></a>翻译模型驱动应用程序的可本地化文本
 
@@ -41,7 +47,7 @@ search.app:
 > 启用每种语言可能需要几分钟的时间。 在此期间，环境的其他用户可能无法使用您的应用程序。 您应该在对用户影响最小的时段启用语言。
 
 > [!TIP]
-> 当您启用语言时，请注意每种语言使用的 LCID 值。 该值将在可本地化文本的导出数据中代表语言。 四位数或五位数区域设置 ID 的语言代码。 可在[区域设置 ID (LCID) 图表](http://go.microsoft.com/fwlink/?LinkId=122128)中找到有效区域设置 ID 值。
+> 当您启用语言时，请注意每种语言使用的 LCID 值。 该值将在可本地化文本的导出数据中代表语言。 四位数或五位数区域设置 ID 的语言代码。 可在[区域设置 ID (LCID) 图表](https://go.microsoft.com/fwlink/?LinkId=122128)中找到有效区域设置 ID 值。
 
 ## <a name="export-the-localizable-text"></a>导出可本地化文本
 

@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
-ms.assetid: null
+ms.assetid: ''
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c7a9a9cda8b8fc3d5cb80d661a484f28617bea70
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2756068"
 ---
 # <a name="unified-interface-playbook"></a>统一接口 Playbook
 
@@ -37,9 +43,9 @@ search.app:
 
 |下载链接  |文档类型  |
 |---------|---------|
-|[统一接口 Playbook 概述](http://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/dynamics365unifiedinterfaceplaybook.pdf)      |   PDF      |
-|[第 1 章：启动](http://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch1-initiate.pptx)     |  PowerPoint       |
-|[第 2 章：探索](http://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch-2-explore.pptx)     |  PowerPoint       |
+|[统一接口 Playbook 概述](https://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/dynamics365unifiedinterfaceplaybook.pdf)      |   PDF      |
+|[第 1 章：启动](https://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch1-initiate.pptx)     |  PowerPoint       |
+|[第 2 章：探索](https://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch-2-explore.pptx)     |  PowerPoint       |
 | [第 3 章：转换](https://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch3-transition.pptx)|  PowerPoint     |
 | [第 4 章：优化](https://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch4-optimize.pptx)  | PowerPoint  |
 

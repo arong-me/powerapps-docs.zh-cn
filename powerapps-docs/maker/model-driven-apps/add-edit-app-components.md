@@ -1,31 +1,36 @@
 ---
-title: 使用 PowerApps 添加或编辑模型驱动的应用程序组件的教程 | MicrosoftDocs
+title: 使用 PowerApps 添加或编辑模型驱动应用组件的教程 | MicrosoftDocs
 description: 使用 PowerApps 应用程序设计器添加或编辑组件
 keywords: ''
 ms.date: 10/15/2018
-ms.service: crm-online
-ms.custom: null
+ms.service: powerapps
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Mattp123
 ms.assetid: be93b9d7-f1c2-4ee7-8d7c-0f5c34dfa5f7
 ms.author: matp
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 17
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c9cbb77b0b312b4376aed8b5f9d106e2c2826ea4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752182"
 ---
-
-# <a name="tutorial-add-or-edit-model-driven-app-components-in-the-powerapps-app-designer"></a>教程：在 PowerApps 应用程序设计器中添加或编辑模型驱动的应用程序组件
+# <a name="tutorial-add-or-edit-model-driven-app-components-in-the-powerapps-app-designer"></a>教程：在 PowerApps 应用程序设计器中添加或编辑模型驱动应用组件
 
 在本教程中，您将了解如何在模型驱动的应用程序中添加和移除组件。 
 
@@ -41,7 +46,7 @@ search.app:
  在右侧是您用于选择组件并设置组件属性的选项卡。  
  
  > [!div class="mx-imgBorder"]
- > ![应用程序设计器组件](../model-driven-apps/media/app-designer-canvas-components-tab.png "应用程序设计器组件")  
+ > ![应用设计器组件](../model-driven-apps/media/app-designer-canvas-components-tab.png "应用设计器组件")  
   
  在区域中，您将看到站点地图、业务流程、仪表板和实体区域。 在选择仪表板或业务流程或配置站点地图时，应用程序设计器将这些组件中使用的实体自动添加到此区域。 实体准备就绪后，您只需选择每个实体，并向其添加所需实体资产，如窗体、视图和图表。
  
@@ -51,12 +56,12 @@ search.app:
  > ![区域搜索选项](media/app-designer-search-tab.png "区域搜索")
 
 ## <a name="open-an-app"></a>打开应用
-1. 登录到 [PowerApps](https://web.powerapps.com/)。 
+1. 登录到 [PowerApps](https://make.powerapps.com/)。 
 
 2. 选择模型驱动的现有应用程序，或选择**从空白开始**。 有关如何创建应用程序的信息，请参阅[使用应用设计器创建或编辑模型驱动的应用程序](create-edit-app.md#create-an-app)。
 
 ## <a name="add-an-artifact-entity-dashboard-or-business-process-flow"></a>添加项目（实体、仪表板或业务流程）  
- 向应用添加仪表板或业务流程时，将自动向应用添加仪表板或业务流程所用实体。 在添加某个实体时，其资产的磁贴会自动添加。 将项目添加到设计器区域有以下两种方法：使用命令栏中的**添加**按钮 ![设计器中的“添加”按钮](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "设计器中的“添加”按钮")，或使用**组件**选项卡中的磁贴。  
+ 向应用添加仪表板或业务流程时，将自动向应用添加仪表板或业务流程所用实体。 在添加某个实体时，其资产的磁贴会自动添加。 将项目添加到设计器区域有以下两种方法：使用命令栏中的**添加**按钮 ![在设计器中添加按钮](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "在设计器中添加按钮") ，或使用**组件**选项卡中的磁贴。  
   
  下面是将仪表板添加到应用程序的步骤。 可以使用相同的步骤添加业务流程或实体。  
   
@@ -67,7 +72,7 @@ search.app:
     > [!TIP]
     >  也可以执行以下操作之一：  
     >   
-    > - 选择**添加** ![设计器中的“添加”按钮](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "设计器中的“添加”按钮")，然后选择**仪表板**。  
+    > - 选择**添加** ![在设计器中添加按钮](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "在设计器中添加按钮")，然后选择**仪表板**。  
     > - 在**组件**选项卡上，在**项目**下，选择**仪表板**。  
   
 2.  在**搜索**框中，键入要查找的仪表板名称的几个关键字。  
@@ -80,9 +85,9 @@ search.app:
 
      这些仪表板将添加到应用设计器区域的**仪表板**磁贴中。 **仪表板**磁贴还显示添加到应用程序的仪表板数的计数。 如果不选择仪表板，将不显示仪表板计数，而是显示**全部**，而用户使用应用时，所有仪表板均可供其使用。  
   
-     仪表板使用的所有实体也会添加到**实体视图**区域。 例如，如果添加“Customer Service 经理”仪表板，“案例”、“权限”和“队列项”实体将添加到“实体视图”区域。 对于每个实体，还会添加其资产的磁贴。 您可以使用这些磁贴添加窗体、视图和图表。 详细信息：[在 PowerApps 应用程序设计器中添加或编辑应用程序组件](add-edit-app-components.md#bkmk_AddEntityAssets)   
+     仪表板使用的所有实体也会添加到**实体视图**区域。 例如，如果添加“Customer Service 经理”仪表板，“案例”、“权限”和“队列项”实体将添加到“实体视图”区域。 对于每个实体，还会添加其资产的磁贴。 您可以使用这些磁贴添加窗体、视图和图表。 详细信息：[在 PowerApps 应用程序设计器中添加或编辑应用组件](add-edit-app-components.md#bkmk_AddEntityAssets)   
   
-    ![向应用程序设计器区域添加实体](../model-driven-apps/media/add-entity-app-designer-canvas.png "向应用程序设计器区域添加实体")  
+    ![将实体添加到应用程序设计器区域](../model-driven-apps/media/add-entity-app-designer-canvas.png "将实体添加到应用程序设计器区域")  
   
 4.  如果默认解决方案中没有您所需仪表板，请通过选择区域右侧**组件**选项卡中的**新建**创建仪表板。  
   
@@ -111,7 +116,7 @@ search.app:
     > [!NOTE]
     >  也可以执行以下操作之一：  
     >   
-    > - 选择**添加** ![设计器中的“添加”按钮](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "设计器中的“添加”按钮")，然后选择**窗体**。  
+    > - 选择**添加** ![在设计器中添加按钮](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "在设计器中添加按钮")，然后选择**窗体**。  
     > - 在**组件**选项卡，在**实体资产**下，选择**窗体**。  
   
     > [!TIP]
@@ -144,7 +149,7 @@ search.app:
     > [!NOTE]
     >  在添加视图时，可以只参考解决方案资源管理器中**视图**节点下列出的公共视图。  
   
-4. 选择下拉箭头 ![下拉箭头图标](../model-driven-apps/media/drop-down-icon.png "下拉箭头") 展开磁贴并查看已添加的窗体的列表。  
+4. 选择下拉箭头 ![下拉箭头图标](../model-driven-apps/media/drop-down-icon.png "向下箭头") 展开磁贴并查看已添加的窗体的列表。  
   
      ![应用程序设计器中已展开的窗体磁贴](../model-driven-apps/media/app-designer-expanded-form-tile.png "应用程序设计器中已展开的窗体磁贴")  
   
@@ -154,11 +159,11 @@ search.app:
   
 ## <a name="edit-or-remove-artifacts"></a>编辑或移除项目  
   
-- 若要编辑仪表板或业务流程，请选择下拉箭头 ![下拉箭头图标](../model-driven-apps/media/drop-down-icon.png "下拉箭头") 展开磁贴，然后选择与要编辑的仪表板或业务流程对应的站点地图设计器按钮 ![打开站点地图设计器按钮](../model-driven-apps/media/dynamics365-open-designer.PNG "打开站点地图设计器按钮")。  
+- 若要编辑仪表板或业务流程，请选择下拉箭头 ![下拉箭头图标](../model-driven-apps/media/drop-down-icon.png "向下箭头") 展开磁贴，然后选择与要编辑的仪表板或业务流程对应的站点地图设计器按钮 ![打开站点地图设计器按钮](../model-driven-apps/media/dynamics365-open-designer.PNG "“打开站点地图设计器”按钮")。  
   
      选定项的设计器打开。  
   
-- 若要移除仪表板或业务流程，请选择下拉箭头 ![下拉箭头图标](../model-driven-apps/media/drop-down-icon.png "下拉箭头") 展开磁贴，然后选择要移除的仪表板或业务流程。 在命令栏上，选择**移除**。  
+- 若要移除仪表板或业务流程，请选择下拉箭头 ![下拉箭头图标](../model-driven-apps/media/drop-down-icon.png "向下箭头") 展开磁贴，然后选择要移除的仪表板或业务流程。 在命令栏上，选择**移除**。  
 
     还可以通过清除**组件**选项卡上的相应复选框移除仪表板或业务流程。
   
@@ -173,7 +178,7 @@ search.app:
 
 ### <a name="edit-entity-assets"></a>编辑实体资产
   
-1. 选择下拉箭头 ![下拉箭头图标](../model-driven-apps/media/drop-down-icon.png "下拉箭头") 展开窗体、视图、图表或仪表板的磁轭。  
+1. 选择下拉箭头 ![下拉箭头图标](../model-driven-apps/media/drop-down-icon.png "向下箭头") 展开窗体、视图、图表或仪表板的磁贴。  
   
 2. 选择要编辑的窗体、视图、图表或仪表板。  
   
@@ -185,7 +190,7 @@ search.app:
 
 ### <a name="remove-entity-assets"></a>移除实体资产  
 
-1. 选择下拉箭头 ![下拉箭头图标](../model-driven-apps/media/drop-down-icon.png "下拉箭头") 展开窗体、视图、图表或仪表板的磁轭。  
+1. 选择下拉箭头 ![下拉箭头图标](../model-driven-apps/media/drop-down-icon.png "向下箭头") 展开窗体、视图、图表或仪表板的磁贴。  
   
 2. 选择要编辑的窗体、视图、图表或仪表板。
 
@@ -194,5 +199,5 @@ search.app:
 也可以选择窗体、视图、图表或仪表板磁贴，然后在**组件**选项卡上，清除要从设计器移除的资产的复选框。  
   
 ## <a name="next-steps"></a>后续步骤  
- [为应用创建站点地图](create-site-map-app.md) </br>  
- [验证和发布应用程序](validate-app.md)
+ [为应用程序创建站点地图](create-site-map-app.md) </br>  
+ [验证并发布应用程序](validate-app.md)

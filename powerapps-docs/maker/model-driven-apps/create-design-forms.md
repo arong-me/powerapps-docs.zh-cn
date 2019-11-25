@@ -8,21 +8,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 99c795e0-9165-4112-85b1-6b5e1a4aa5ec
 caps.latest.revision: 33
 ms.author: matp
 manager: kvivek
 author: Mattp123
 tags:
-  - Links to topic not migrated
+- Links to topic not migrated
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3e3a3e8bd5527f9707849bf1b54247605d447469
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2704555"
 ---
 # <a name="create-and-design-model-driven-app-forms"></a>创建和设计模型驱动应用程序窗体 
 
@@ -61,7 +67,7 @@ PowerApps 提供了许多窗体设计选项。 借助统一接口，更新了大
 3. 在**组件**选项卡上演着应用中是否包含主窗体。 验证是否已选中了要显示的窗体。 如果未选中，请选中，保存，然后发布应用。
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/forms-included-in-app.png "应用中随附窗体")
+   > ![](media/forms-included-in-app.png "Forms included with app")
    
 ### <a name="why-isnt-my-form-displayed-as-the-default-form-in-the-app"></a>为什么我的窗体在应用中不显示为默认窗体？
 可通过配置窗体顺序或在用户将默认窗体设置为个性化设置时间窗体设置为默认窗体。
@@ -69,12 +75,12 @@ PowerApps 提供了许多窗体设计选项。 借助统一接口，更新了大
 2. 在工具栏上，选择**窗体顺序** > **主窗体集**。 
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/form-order-toolbar.png "窗体顺序工具栏命令")
+   > ![](media/form-order-toolbar.png "Form Order toolbar command")
    
 3. 将显示窗体顺序。 选择窗体并使用向上箭头和向下箭头在窗体顺序内移动窗体。 列表顶部的窗体为默认窗体。 
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/form-order-dialog.png "“窗体顺序”对话框")
+   > ![](media/form-order-dialog.png "Form order dialog")
    
 4. 选择**确定**保存窗体顺序更改。
 5. 在窗体设计器工具栏上，选择**发布**以便在应用中应用窗体顺序。
@@ -83,7 +89,7 @@ PowerApps 提供了许多窗体设计选项。 借助统一接口，更新了大
 请注意，如果应用用户在应用的窗体选择器下拉列表中更改窗体的选择，该窗体将变为用户的默认窗体。 此项个性化设置将覆盖在应用中为实体指定的默认窗体。
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/change-form-user-setting.png "用于更改默认窗体的用户设置")
+   > ![](media/change-form-user-setting.png "User setting to change default form")
    
 ### <a name="related-topics"></a>相关主题  
     

@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 0cf62817-5ff5-40bb-ad17-e1f6b0921720
 caps.latest.revision: 42
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 563c773bd2bec365a3459097e4c4e8428d624c00
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755255"
 ---
 # <a name="query-and-visualize-hierarchically-related-data"></a>查询和按层次结构可视化相关数据
 
@@ -43,7 +49,7 @@ search.app:
   
  查询帐户层次结构  
   
- ![查询客户层次结构中的客户](media/query-accounts.png "查询客户层次结构中的客户")  
+ ![在客户层次结构中查询客户](media/query-accounts.png "在客户层次结构中查询客户")  
   
  查询帐户层次结构，包括相关活动  
   
@@ -56,7 +62,7 @@ search.app:
  若要按层次结构查询数据，您必须将实体的一对多或多对一自引用关系设置为分层。 要打开层次结构：  
   
 
-1. 在 [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**实体**。
+1. 在 [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**实体**。
 
 2. 单击或点按现有实体或[创建新实体](data-platform-create-entity.md)
 
@@ -80,7 +86,7 @@ search.app:
  若您选择了层次结构图标，您可以查看层次结构，左边是树状视图，右边是磁贴视图，如下所示：  
   
 > [!div class="mx-imgBorder"] 
-> ![帐户树和磁贴视图](media/hierachy-security-accounts-tile-view.png "帐户树和磁贴视图")  
+> ![客户树和磁贴视图](media/hierachy-security-accounts-tile-view.png "客户树和磁贴视图")  
   
  可为层次结构启用其他一些现有的系统实体。 这些实体包括`Case`、`Contact`、`Opportunity`、`Order`、`Quote`、`Campaign`和`Team`。 可以为层次结构启用所有自定义实体。  
   
@@ -107,9 +113,9 @@ search.app:
  对于**快速窗体视图**，我们创建名为**Widget 层次结构磁贴窗体**的快速窗体。 在此窗体中，我们在每个磁贴中添加了四个显示字段。  
   
 > [!div class="mx-imgBorder"] 
-> ![为小组件创建快速窗体](media/create-quickf-orm.png "为小组件创建快速窗体")  
+> ![小组件的快速创建窗体](media/create-quickf-orm.png "小组件的快速创建窗体")  
   
- 我们完成设置后，创建了两个记录：Standard Widget 和 Premium Widget。 通过查找字段使优质部件成为标准部件的父项后，new_Widget 网格视图描述了层次结构图标，如下所示：  
+ 在完成设置后，我们创建了两个记录：标准小组件和高级小组件。 通过查找字段使优质部件成为标准部件的父项后，new_Widget 网格视图描述了层次结构图标，如下所示：  
   
 > [!div class="mx-imgBorder"] 
 > ![小组件的层次结构网格](media/widget-hierarchy-grid.png "小组件的层次结构网格")  
@@ -120,8 +126,8 @@ search.app:
  选择分层结构图标会显示 new_Widget 分层结构，左边为树状视图，右边为磁贴视图，显示两个记录。 每个磁贴包含我们在**部件层次结构磁贴窗体**中提供的四个字段。  
  
  > [!div class="mx-imgBorder"] 
- > ![小组件的树和磁贴视图](media/widget-tree-tiles.png "小组件的树和磁贴视图")  
+ > ![小组件的树视图和磁贴视图](media/widget-tree-tiles.png "小组件的树视图和磁贴视图")  
   
 ## <a name="see-also"></a>另请参阅  
- [视频： 中的层次结构安全建模](http://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)   
- [视频：层次结构可视化](http://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)
+ [视频： 中的层次结构安全建模](https://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)   
+ [视频：层次结构可视化](https://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)

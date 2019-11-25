@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e53f4b1cfd01225285fb50626aa9ace3b804d9c2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2756904"
 ---
-
 # <a name="migrate-embedded-canvas-apps-on-model-driven-forms-created-using-the-public-preview-release"></a>迁移使用公共预览版本创建的模型驱动窗体上的嵌入式区域应用
 > [!IMPORTANT]
 > 通过最新版本，模型驱动窗体上的嵌入式区域应用已公开发布。 使用公共预览版本创建的模型驱动窗体上的任何嵌入式区域应用均应迁移到使用最新版本创建的新嵌入式区域应用。
@@ -30,7 +35,7 @@ search.app:
 
 若要迁移使用最新的公共预览版本创建的模型驱动窗体上的嵌入式区域应用，开发者首先需要使用最新版本创建新的嵌入式区域应用。 然后，开发者可以将控件从现有的嵌入式区域应用复制到新应用，添加所需的数据源，并更新被破坏的引用（如果有）。 下面提供了详细步骤。
 
-1. 登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 2. 打开使用公共预览版本创建的嵌入式区域应用以在 PowerApps Studio 中进行编辑。 有关编辑区域应用的步骤，请参阅：[编辑区域应用](../canvas-apps/edit-app.md)。
 3. 在新浏览器标签页中，按照步骤[在模型驱动窗体上添加新的嵌入式区域应用](embedded-canvas-app-add-classic-designer.md)。
 4. 使用下方步骤，将控件从使用公共预览版本创建的嵌入式区域应用复制到新的嵌入式区域应用，一次一个屏幕。
@@ -58,7 +63,7 @@ search.app:
 要迁移使用与当前（主窗体）记录相关的记录列表的模型驱动窗体上的嵌入式区域应用，请按照正面的步骤操作。
 
 1. 请按照上述部分中的步骤迁移使用最新公共预览版本创建的模型驱动窗体上的嵌入式区域应用。
-2. 使用 Common Data Service 连接器，将相关实体的数据源添加到应用。 要了解如何在区域应用中添加数据源，请参阅[在 PowerApps 中向区域应用添加数据连接](../canvas-apps/add-data-connection.md)。
+2. 使用 Common Data Service 连接器，将相关实体的数据源添加到应用。 要了解如何在画布应用中添加数据源，请参阅[在 PowerApps 中向区域应用添加数据连接](../canvas-apps/add-data-connection.md)。
 3. 在使用控件（如[库](../canvas-apps/controls/control-gallery.md)或[数据表](../canvas-apps/controls/control-data-table.md)）的相关实体的数据源时，请使用**[筛选器](../canvas-apps/functions/function-filter-lookup.md)** 功能将记录筛选为与当前（主窗体）记录相关的记录。 当前（主窗体）记录通过 **ModelDrivenFormIntegration.Item** 提供。
     > [!NOTE]
     > 嵌入式区域应用具有通过 ModelDrivenFormIntegration.Item 访问主机模型驱动窗体中的记录的完全访问权限。 举例来说，要获取名称为 **accountnumber** 且显示名称为 **Account Number** 的字段的值，您可以使用 **ModelDrivenFormIntegration.Item.accountnumber** 或 **ModelDrivenFormIntegration.Item.'Account Number'**。

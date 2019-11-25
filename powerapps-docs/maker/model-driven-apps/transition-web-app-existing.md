@@ -9,24 +9,30 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
-ms.assetid: null
+ms.assetid: ''
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e39cb11b9883e93d341232bcdcbb43dc17fa491a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759764"
 ---
 # <a name="quick-start-for-using-an-existing-environment-to-validate-your-legacy-web-client-app-with-the-unified-interface"></a>使用现有环境和统一接口验证旧 Web 客户端应用入门指南
 本快速入门指南介绍如何使用现有环境创建基于当前配置或默认解决方案的统一接口应用程序。 这样就可以在运行现有旧 Web 客户端应用程序的同时，探索和测试统一接口。 然后，用户可以在环境之间切换，以便进行并排查看。 
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3JzyI]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3JzyI]
 
 有关演示如何创建新沙盒环境以隔离测试，并仅查看统一接口体验的类似说明，请参阅[从 Dynamics 365 应用程序旧 Web 客户端应用程序转换到统一接口的快速入门指南](transition-web-app.md)。
 
@@ -40,7 +46,7 @@ search.app:
 ## <a name="overview"></a>概述 
 本主题面向以下客户：正在使用旧 Web 客户端应用程序，但是需要计划和执行到统一接口的转换。 若要设置并行环境，请基于现有默认解决方案按原样创建一个新的应用程序。 可以在当前开发沙盒环境中执行此操作，这样就不会影响您的现有工作。
 
-完成本主题中的步骤之后，具有相应角色的用户可以在 Dynamics 365 下拉应用程序列表或 Dynamics 365 主页 (http://home.dynamics.com) 中的应用程序列表内看到您的新应用程序。
+完成本主题中的步骤之后，具有相应角色的用户可以在 Dynamics 365 下拉应用程序列表或 Dynamics 365 主页 (https://home.dynamics.com) 中的应用程序列表内看到您的新应用程序。
 
 ![应用程序列表](media/app-list.png)
 
@@ -90,7 +96,7 @@ search.app:
 将在浏览器中打开一个新窗口，其中包含您的新模型驱动应用程序，该应用程序内包含您的默认 Dynamics 365 应用程序中的所有实体、站点地图和站点地图自定义项。  
 
 > [!div class="mx-imgBorder"] 
-> ![新统一接口应用程序](media/new-unified-interface-app.png "新统一接口应用程序")
+> ![新统一接口应用](media/new-unified-interface-app.png "新统一接口应用")
 
 请注意，当您回到包含 PowerApps 开发者门户**解决方案**区域的浏览器选项卡中时，您会发现您创建的解决方案中同时包含您的新模型驱动应用程序和名称类似的站点地图客户端扩展。  
 
@@ -119,18 +125,18 @@ search.app:
     > 确保为所有用户至少授予一个包含**模型驱动应用程序**权限的**读**访问权限。 可以在安全角色内的“自定义”选项卡上找到此权限。 无此权限的用户在打开任何模型驱动应用程序时，将收到错误。  请注意，已经为系统管理员和系统定制员安全角色启用了此权限。 
  
    > [!div class="mx-imgBorder"] 
-   > ![模型驱动应用程序权限](media/model-driven-app-privilege.png "模型驱动应用程序权限")
+   > ![模型驱动应用特权](media/model-driven-app-privilege.png "模型驱动应用特权")
 
 5. （可选）在**管理角色**窗格中，可扩展开**应用程序 URL 后缀**以自定义模型驱动应用程序的友好 URL。 请注意，几乎可以指定所有设置。 例如，如果输入*新建*，则预览将显示 URL *https://YourEnvironment.crm.dynamics.com/apps/new*。   
 
    > [!div class="mx-imgBorder"] 
-   > ![应用程序 URL 后缀](media/app-url-suffix.png "应用程序 URL 后缀")
+   > ![应用 URL 后缀](media/app-url-suffix.png "应用 URL 后缀")
 
    这将成为要使用和共享的友好 URL，这样用户就可以直接启动并进入统一接口体验。 用户可将此链接设置为书签，以便使用。 
 
 6. 选择**保存**。 
 
-现在，具有相应角色的用户可以在 Dynamics 365 下拉应用程序列表或 Dynamics 365 主页 (http://home.dynamics.com) 中的应用程序列表内看到您的新应用程序。 
+现在，具有相应角色的用户可以在 Dynamics 365 下拉应用程序列表或 Dynamics 365 主页 (https://home.dynamics.com) 中的应用程序列表内看到您的新应用程序。 
   
    ![应用程序列表](media/app-list.png "应用程序列表")
 

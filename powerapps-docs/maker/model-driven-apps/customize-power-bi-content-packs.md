@@ -4,26 +4,31 @@ description: 了解如何修改可用 Power BI 内容包以使用 Dynamics 365 �
 keywords: PBI
 ms.date: 09/30/2017
 ms.service: crm-online
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 for Customer Engagement (online)
+- Dynamics 365 for Customer Engagement (online)
 ms.assetid: 424d7f29-de44-4ce0-94f1-be8777ad6485
 author: Mattp123
 ms.author: matp
 manager: amyla
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 16
 topic-status: Drafting
-tags: null
+tags: ''
 search.audienceType:
-  - customizer
+- customizer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: 929230a38cf0c9ea1dc23b98550c45fa54f18545
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753802"
 ---
-
 # <a name="customize-dynamics-365-apps-power-bi-content-packs"></a>自定义 Dynamics 365 应用 Power BI 内容包
 
 Power BI 是用于可视化业务数据的一组丰富的服务和工具。  现已提供了内容包，可用于与 Power BI 一起基于标准数据模型分析 Dynamics 365 Sales、Service 和 Marketing 应用数据。 内容包使用对大多数销售。服务或市场营销报告方案都十分有用的一组实体和字段生成。  
@@ -37,17 +42,17 @@ Power BI 是用于可视化业务数据的一组丰富的服务和工具。  现
   
 ### <a name="meet-the-requirements"></a>满足要求  
   
-- [Power BI 服务注册](http://powerbi.com/)。  
+- [Power BI 服务注册](https://powerbi.com/)。  
   
 - [Power BI Desktop](https://powerbi.microsoft.com/desktop) 应用程序，用于编辑 Power BI 报表。  
   
 - 要自定义的内容包的 PBIX 文件。  
   
-  -   [下载 Dynamics CRM Online Sales Manager PBIX](http://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Sales%20Manager.pbix)  
+  -   [下载 Dynamics CRM Online Sales Manager PBIX](https://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Sales%20Manager.pbix)  
   
-  -   [下载 Dynamics CRM Online Service Manager PBIX](http://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Customer%20Service%20Manager.pbix)  
+  -   [下载 Dynamics CRM Online Service Manager PBIX](https://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Customer%20Service%20Manager.pbix)  
   
-  -   [下载 Microsoft Dynamics 365 Process Analyzer PBIX](http://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Process%20Analyzer%20-1.34b.pbix)  
+  -   [下载 Microsoft Dynamics 365 Process Analyzer PBIX](https://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Process%20Analyzer%20-1.34b.pbix)  
   
   Dynamics 365 content pack 现在仅支持美国英语。  
   
@@ -74,7 +79,7 @@ Power BI 是用于可视化业务数据的一组丰富的服务和工具。  现
   
 5. 显示“访问 OData 源”对话框时，选择**组织帐户**，然后选择**登录**。  
   
-   ![“访问 OData 源”对话框](media/pbi-odata-signin.PNG "“访问 OData 源”对话框")  
+   ![“访问 Odata 源”对话框](media/pbi-odata-signin.PNG "“访问 Odata 源”对话框")  
   
 6. 显示登录页时，输入您的凭据来为您的实例执行身份验证。  
   
@@ -258,7 +263,7 @@ Power BI 是用于可视化业务数据的一组丰富的服务和工具。  现
   
    10. 确保无语法错误，然后选择**完成**关闭“高级编辑器”。 将在“查询编辑器”中显示值和选项的表。  
   
-   ![新建选项集查询](media/pbi-optionsetquerycreated.png "新建选项集查询")  
+   ![新选项集查询](media/pbi-optionsetquerycreated.png "新选项集查询")  
   
    11. 选择**保存**，然后在系统提示时，选择**应用**。  
   
@@ -270,7 +275,7 @@ Power BI 是用于可视化业务数据的一组丰富的服务和工具。  现
   
    3.  在“合并”对话框中，选择自定义选项集的列标题，如 *new_optionset*。 在下拉列表中，选择前面创建的相应选项集查询。  显示选项集表时，选择**值**列标题将其选中。  
   
-   ![合并表选择](media/pbi-merge-tables.png "合并表选择")  
+   ![合并所选表](media/pbi-merge-tables.png "合并所选表")  
   
    4.  让联接类型保持为**左向外(全部从第一个开始，匹配从第二个开始)**，然后选择**确定**。  
   

@@ -1,29 +1,34 @@
 ---
-title: 通过 PowerApps 定义汇总字段 | MicrosoftDocs
+title: 使用 PowerApps 定义汇总字段 | MicrosoftDocs
 description: 了解如何定义汇总字段
 ms.custom: ''
 ms.date: 05/23/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: ff0504a1-01bd-4f9b-b884-7f84911d86c3
 caps.latest.revision: 58
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9691912bab995fac0b3489580aaa1fef82f9dcc8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758620"
 ---
-
 # <a name="define-rollup-fields-that-aggregate-values"></a>定义用于聚合值的汇总字段
 
 汇总字段帮助用户通过监控关键业务指标来获取数据见解。 汇总字段包含一个用与指定记录相关的记录计算所得的聚合值。 这包括常规实体和活动实体，如电子邮件和约会。
@@ -75,7 +80,7 @@ search.app:
 
 若要查看汇总作业：
 
-1. 在查看 **Common Data Services 默认解决方案**时，编辑 URL，删除 `dynamics.com` 后面的部分，然后刷新页面。
+1. 在查看 **Common Data Service 默认解决方案**时，编辑 URL，删除 `dynamics.com` 后面的部分，然后刷新页面。
 2. 在**设置**区域，选择**系统** > **系统作业**。<br />![导航到系统作业](media/navigate-system-jobs.png)
 1. 在视图选择器中，选择**定期系统作业**。
 2. 若要快速找到相关作业，可以通过系统作业类型进行筛选：**批量计算汇总字段**或**计算汇总字段**。
@@ -212,5 +217,5 @@ search.app:
 [定义计算字段](define-calculated-fields.md)<br />
 [行为和日期及时间字段的格式](behavior-format-date-time-field.md)<br />
 [定义和按层次结构查询相关数据](define-query-hierarchical-data.md)<br />
-[视频：汇总字段和计算字段](http://www.youtube.com/watch?v=RoahCH1p3T8&list=PLC3591A8FE4ADBE07&index=8)<br />
-[视频：使用 Power BI](http://www.youtube.com/watch?v=PkQe4BFlBS8&list=PLC3591A8FE4ADBE07&index=3)
+[视频：汇总字段和计算字段](https://www.youtube.com/watch?v=RoahCH1p3T8&list=PLC3591A8FE4ADBE07&index=8)<br />
+[视频：使用 Power BI](https://www.youtube.com/watch?v=PkQe4BFlBS8&list=PLC3591A8FE4ADBE07&index=3)

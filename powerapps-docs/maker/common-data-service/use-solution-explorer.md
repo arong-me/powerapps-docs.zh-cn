@@ -2,26 +2,26 @@
 title: 在 PowerApps 中使用解决方案 | MicrosoftDocs
 description: 了解如何使用解决方案创建或自定义应用
 ms.custom: ''
-ms.date: 06/17/2019
-ms.reviewer: ''
+ms.date: 10/28/2019
+ms.reviewer: tapanm
 ms.service: powerapps
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
 author: caburk
 ms.assetid: 72bacfbb-96a3-4daa-88ff-11bdaaac9a3d
 caps.latest.revision: 57
 ms.author: caburk
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 57df12285848d67a8cd85016aec0bbb033fef89a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2703147"
 ---
 # <a name="use-solutions-in-powerapps"></a>在 PowerApps 中使用解决方案
 
@@ -83,7 +83,7 @@ search.app:
  您需要执行的许多自定义将涉及到实体。 您可以使用**实体**筛选器以显示可进行某种程度的自定义的当前解决方案中的所有实体的列表。 在钻取实体后，您可以查看组成实体的组件，如以下屏幕截图中的客户实体所示。 
    
 > [!div class="mx-imgBorder"]  
-> ![显示已展开的客户实体的演示解决方案](media/solution-entity-account.png "显示已展开的客户实体的演示解决方案")  
+> ![显示展开客户实体的演示解决方案](media/solution-entity-account.png "显示展开客户实体的演示解决方案")  
 
 ## <a name="classic-solution-explorer"></a>经典解决方案资源管理器
 
@@ -91,20 +91,25 @@ search.app:
 
 ## <a name="known-limitations"></a>了解限制
 
-- 解决方案中不提供自定义连接器。
-- 区域应用必须在导入解决方案以便为连接授权之后运行。
-- 如果区域应用在托管解决方案中打包，它仍可以在目标环境中编辑，但不能重新发布。
-- 删除托管解决方案不会回滚到其他区域应用版本。 
--   区域应用访问（CRUD 和安全性）在 PowerApps 中完全托管，而不是在 Common Data Service (Common Data Service) 数据库中。
--   调用区域应用的 Common Data Service API 被阻止，不返回任何信息。 
--   基于解决方案创建的区域应用不能作为共同负责人共享到 AAD 安全组。
--   区域应用不显示在经典解决方案资源管理器中。
-- “团队流”列表中将不显示基于解决方案创建的流。
-- 按钮触发的流在解决方案中不可用。
+以下限制适用于解决方案中画布应用、流和自定义连接器的使用。 
+
 - 区域应用触发的流在解决方案中不可用。
+- 如果画布应用在托管解决方案中打包，它将无法在目标环境中编辑和重新发布。 如果应用需要在目标环境中进行编辑，请使用非托管解决方案。 
+- 连接需要身份验证和同意，这需要交互式用户会话，因此无法通过解决方案进行传输。 导入解决方案后，请播放应用以验证连接。 您也可以在导入解决方案之前在目标环境中创建连接。 
+-   作为共同负责人共享到 Azure Active Directory (AAD) 安全组的画布应用不能添加到解决方案中。 取消共享应用，然后再将其添加到解决方案中。
+-   区域应用不显示在经典解决方案资源管理器中。 使用现代化体验。
+-   画布应用访问（CRUD 和安全性）在 PowerApps 中完全托管，而不是在 Common Data Service 数据库中。
+- 画布应用和流不支持数据库操作，例如备份、还原和复制。 这些操作可能会损坏画布应用和流。
+- 删除托管解决方案不会回滚到其他画布应用版本。 而是删除应用的所有版本。
+- 导入包含流的解决方案将不会自动创建或关联所需的连接。 必须编辑流以修复连接。
+  - 如果使用托管解决方案，则会在非托管层创建可用自定义项。 因此，流的后续解决方案更新将不会得到反映。 
+- “团队流”列表中将不显示基于解决方案创建的流。 必须通过解决方案访问它们。 
+- 按钮触发的流在解决方案中不可用。
 - 从 Microsoft 365 应用程序（如 Excel）触发的流在解决方案中不可用。
 - 连接到 SharePoint 的流在解决方案中不可用。
 - 解决方案中的流不支持委派身份验证。 例如，流访问权限不会基于具有对流从其创建的 SharePoint 列表的访问权限而自动授予。
+- 在解决方案外部创建的自定义连接器目前无法添加到解决方案中。
+
 
  有关自定义解决方案中的单个组件的详细信息，请参阅以下主题：  
   

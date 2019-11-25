@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中分配模型驱动的应用程序窗体顺序 | MicrosoftDocs
+title: 在 PowerApps 中分配模型驱动应用窗体顺序 | MicrosoftDocs
 description: 了解如何在应用中分派默认表单
 ms.custom: ''
 ms.date: 03/07/2019
@@ -9,20 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 914c5694-9c80-4424-be89-9f63256b4811
 caps.latest.revision: 33
 ms.author: matp
 manager: kvivek
-tags: null
+tags: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 90190dc9021d3852d123dd63e678c7924e164838
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700859"
 ---
 # <a name="assign-model-driven-app-form-order"></a>分配模型驱动的应用程序窗体顺序
 

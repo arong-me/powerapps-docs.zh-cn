@@ -1,24 +1,30 @@
 ---
 title: 配置连接角色 | MicrosoftDocs
 ms.custom: ''
-ms.date: 05/27/2018
+ms.date: 10/17/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 028be1172621c9bdb510f5e57d16eb226b10f92b
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758224"
 ---
 # <a name="configure-connection-roles"></a>配置连接角色
 
@@ -28,16 +34,30 @@ search.app:
 
 具有**连接角色**实体写入访问权限的任何人都可以建立可供用户使用的连接。
 
+> [!IMPORTANT]
+> 要使某个实体可以用作新的或现有的连接角色的记录类型，必须为该实体启用**启用连接**属性。 
+
+## <a name="enable-connection-roles-for-an-entity"></a>为实体启用连接角色
+1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
+2. 展开**数据**，然后选择**实体**。 
+3. 选择要为连接角色启用的实体，然后在命令栏上选择**设置**。 
+4. 在**设置**窗格中，展开**协作**区域，然后选择**启用连接**。
+    > [!div class="mx-imgBorder"] 
+    > ![启用连接设置](media/enable-connections.png "启用连接设置")
+
+6. 选择**完成**。 
+
 ## <a name="view-connection-roles"></a>查看连接角色
 
 Common Data Service 中已存在一些已经配置的标准连接角色。 若要查看它们，您需要转到设置区域。 
 
 ### <a name="navigate-to-the-settings-area"></a>导航到设置区域
 
-1. 在查看模型驱动应用程序时，编辑链接将 `dynamics.com` 后面的部分全部删除并刷新页面。
-1. 导航到**设置** > **业务** > **业务管理**，然后选择**连接角色**。
+1. 在模型驱动应用中，选择**设置** > **高级设置**。 
+2. 导航到**设置** > **业务** > **业务管理**，然后选择**连接角色**。
 
-![“业务管理”设置中的连接角色](media/navigate-settings-connection-roles.png)
+   > [!div class="mx-imgBorder"] 
+    > ![“业务管理”设置中的连接角色](media/navigate-settings-connection-roles.png "“业务管理”设置中的连接角色")
 
 在该视图中，您可以查看该环境可用的所有连接角色，并且可以在此处编辑它们。
 

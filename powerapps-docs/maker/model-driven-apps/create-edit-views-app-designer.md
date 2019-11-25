@@ -4,28 +4,33 @@ description: 立即了解如何使用应用程序设计器创建或编辑视图
 keywords: ''
 ms.date: 11/27/2018
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 666ab3f3-abda-468c-b248-3a0b410286b0
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 1
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3c3e7133076eb46718ed3f60d1df4f36a012c520
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753878"
 ---
-
 # <a name="create-and-edit-public-or-system-model-driven-app-views"></a>创建和编辑模型驱动应用程序的公共视图或系统视图
 
 在本主题中，您执行使用视图所需的多个任务，如创建公共视图，将现有视图添加到应用程序，以及更改视图的列、筛选器和排序顺序。
@@ -45,7 +50,7 @@ search.app:
 
 ## <a name="create-a-public-view-in-powerapps"></a>在 PowerApps 中创建公共视图
 作为应用制造者，您可使用 PowerApps 创建和编辑公共视图。
-1. 登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 
     > [!IMPORTANT]
@@ -101,7 +106,7 @@ search.app:
 1. 在应用程序设计器中，选择所需实体视图，然后在右侧窗格上所需视图旁边选择编辑（铅笔按钮）。  
 2. 在**组件**选项卡中，选择**主实体**或**相关实体**的**列属性**列表。
 
-    ![添加列](media/ViewAppDesigner_AddColumn.png "向视图中添加列") 
+    ![添加列](media/ViewAppDesigner_AddColumn.png "将列添加到视图") 
 
 3. 从列表选择所需属性，然后将其拖到列标题。 还可以通过双击属性来添加属性。
 4. 重复步骤 3，直到添加了要在视图中显示的所有属性。
@@ -137,9 +142,9 @@ search.app:
 如果要通过使用多个字段筛选记录，可向视图添加多个筛选器。 
 
 1. 选择要分组的筛选器。
-    ![设置组筛选器](media/ViewAppDesigner_GroupFilter.png "设置组筛选器")
+    ![设置组筛选器](media/ViewAppDesigner_GroupFilter.png "Se设置组筛选器”）
 2. 选择“组 And”或“组 Or”为筛选器分组。
-    ![组筛选器选择](media/ViewAppDesigner_GroupFilterSelection.png "选择组筛选器") 如果选择**组 And**，则视图中仅显示同时满足两个条件的记录。 如果选择**组 Or**，则显示满足任何筛选条件的记录。 例如，要仅显示优先级为“高”或“普通”且状态为“活动”的记录，请选择**组 And**。
+    ![组筛选器选择](media/ViewAppDesigner_GroupFilterSelection.png "Se选择组筛选器”） 如果选择**组 And**，则视图中仅显示同时满足两个条件的记录。 如果选择**组 Or**，则显示满足任何筛选条件的记录。 例如，要仅显示优先级为“高”或“普通”且状态为“活动”的记录，请选择**组 And**。
 
 要从组中移除筛选器，请选择组，然后选择**取消组合**。 
 
@@ -152,7 +157,7 @@ search.app:
 1. 选择要用于排序的列。
 2. 选择向下箭头，然后选择**主要排序**或**次要排序**。
  
-    ![为记录排序](media/ViewAppDesigner_SortRecords.png "基于主要排序顺序和次要排序顺序为记录排序") 
+    ![对记录进行排序](media/ViewAppDesigner_SortRecords.png "基于主要排序顺序和次要排序顺序为记录排序") 
 
 如果移除为主要排序顺序选择的列，为次要排序顺序选择的列将变为主要排序顺序。
 
@@ -167,7 +172,7 @@ search.app:
 ### <a name="edit-a-public-or-system-view-in-app-designer"></a>在应用程序设计器中编辑公共视图或系统视图
 可通过添加、配置或移除列，更改公共视图或系统视图的显示方式。
 1. 在实体的**视图**列表中，选择**显示参考列表**下拉箭头 ![下拉箭头](media/DownArrow.png "下拉箭头")。
-    ![编辑视图](media/ViewAppDesigner_EditView.png "编辑公共视图或系统视图")
+    ![编辑视图](media/ViewAppDesigner_EditView.png "Ed编辑公共视图或系统视图”）
 2. 在要编辑的视图旁边，选择**打开视图设计器** ![打开视图设计器](media/dynamics365-open-designer.png "打开视图设计器")。 
 
     将在视图设计器中打开视图。 

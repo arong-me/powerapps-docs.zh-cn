@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b0724ccf7c44240fd3d3fd80fb69b6d91a80d1ed
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2705743"
 ---
-
 # <a name="configure-header-properties-in-the-form-designer"></a>在窗体设计器中配置页眉属性
 
 开发者可以控制模型驱动应用程序窗体页眉的密度，以便满足任何用户的需要。
@@ -69,13 +74,13 @@ search.app:
 如果使用高密度窗体页眉，则页眉弹出项目将显示所有页眉字段，包括页眉中直接显示的四个字段。 如果使用高密度页眉，此框架默认显示页眉弹出项目。 开发者可以控制高密度页眉的页眉弹出项目的显示。
 
 > [!div class="mx-imgBorder"] 
-> ![高密度页眉的页眉弹出项目](media/form-header-flyout-high-density.png "高密度页眉的页眉弹出项目")
+> ![具有高密度页眉的页眉弹出项目](media/form-header-flyout-high-density.png "具有高密度页眉的页眉弹出项目")
 
 ### <a name="low-density-header-flyout"></a>低密度页眉弹出项目
 如果使用低密度窗体页眉，页眉弹出项目将仅显示溢出字段，如窗体根据窗体宽度无法在页眉中直接显示的字段。 还将根据页眉中的字段数量和窗体宽度自动显示或隐藏页眉弹出项目。 如果使用低密度页眉，则开发者不能控制页眉弹出项目的显示。
 
 > [!div class="mx-imgBorder"] 
-> ![低密度页眉的页眉弹出项目](media/form-header-flyout-low-density.png "低密度页眉的页眉弹出项目")
+> ![具有低密度页眉的页眉弹出项目](media/form-header-flyout-low-density.png "具有低密度页眉的页眉弹出项目")
 
 ### <a name="show-or-hide-the-header-flyout"></a>显示或隐藏页眉弹出项目
 若要显示或隐藏模型驱动窗体的页眉弹出项目，请执行以下步骤：

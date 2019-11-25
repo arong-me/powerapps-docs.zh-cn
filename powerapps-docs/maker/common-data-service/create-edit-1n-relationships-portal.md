@@ -9,21 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 70f48af48b2a9221029735de484b555bc03a66c4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2756508"
 ---
 # <a name="create-and-edit-one-to-many-or-many-to-one-entity-relationships-using-powerapps-portal"></a>使用 PowerApps 门户创建和编辑一对多或多对一实体关系
 
-[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供为 Common Data Service 创建和编辑 1:N（一对多）或 N:1（多对一）关系的简单方法。
+[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供为 Common Data Service 创建和编辑 1:N（一对多）或 N:1（多对一）关系的简单方法。
 
 此门户支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 详细信息： 
 - [创建和编辑 1:N（一对多）或 N:1（多对一）关系](create-edit-1n-relationships.md)
@@ -31,7 +37,7 @@ search.app:
 
 ## <a name="view-entity-relationships"></a>查看实体关系
 
-1. 从 [PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**区域**设计模式。
+1. 从 [PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**区域**设计模式。
 2. 选择**数据** > **实体**，然后选择具有您要查看的关系的实体。
 3. 选择**关系**选项卡后，您可以选择以下视图： 
 

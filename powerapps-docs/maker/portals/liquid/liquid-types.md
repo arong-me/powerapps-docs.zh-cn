@@ -5,12 +5,17 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: dd6da4788f6563c2026f57914c8156caedfadad3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708075"
 ---
-
 # <a name="available-liquid-types"></a>可用 Liquid 类型
 
 Liquid 对象可以返回七个基本类型之一：**字符串**、**数字**、**布尔值**、**数组**、**词典**、**DateTime** 或**空**。 可以通过使用**分派**或**捕获**标记初始化 Liquid。

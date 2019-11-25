@@ -1,27 +1,32 @@
 ---
 title: 查看解决方案层 | MicrosoftDocs
 description: 了解如何使用解决方案层
-keywords: null
+keywords: ''
 ms.date: 04/18/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
-ms.assetid: null
+ms.assetid: ''
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
-caps.latest.revision: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
+caps.latest.revision: ''
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a5b507384b3fdf157aa029ad98d4d4203f624d8f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702091"
 ---
-
 <!--note from editor: Best practice is that H1 title and title in metadata are different.    -->
 
 # <a name="view-solution-layers"></a>查看解决方案层

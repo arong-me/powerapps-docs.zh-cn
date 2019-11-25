@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 985b876adda527eec2a1cc240c25f571d66b01fd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700375"
 ---
-
 # <a name="add-configure-move-or-delete-tabs-on-a-form"></a>添加、配置、移动或删除窗体中的选项卡  
 使用窗体设计器添加、移动或删除选项卡。
 
@@ -30,7 +35,7 @@ search.app:
 要将选项卡添加到窗体中，请使用**组件**窗格。  
 
 > [!div class="mx-imgBorder"] 
-> ![](media/FormDesignerComponentsLayout.png "布局组件")
+> ![](media/FormDesignerComponentsLayout.png "Layout components")
    
   > [!NOTE]
   >  选项卡只能在主窗体上添加。 详细信息：[窗体类型](types-forms.md)

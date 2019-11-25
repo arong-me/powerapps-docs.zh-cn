@@ -1,38 +1,43 @@
 ---
 title: 查看解决方案的历史记录 | MicrosoftDocs
 description: 了解如何查看解决方案的历史记录
-keywords: null
+keywords: ''
 ms.date: 05/19/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
-ms.assetid: null
+ms.assetid: ''
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
-caps.latest.revision: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
+caps.latest.revision: ''
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 67239062f30efb80fb8ee416614c1088e20c4075
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702179"
 ---
-
 # <a name="view-the-history-of-a-solution"></a>查看解决方案的历史记录
 您可以从模型驱动应用的**解决方案**区域查看有关解决方案操作的详细信息。 操作可以是解决方案导入、导出或删除。 解决方案历史记录显示解决方案版本、解决方案发布商、操作类型、操作开始和结束时间、操作状态等信息。
 
 > [!div class="mx-imgBorder"] 
-> ![](media/solutions-history-custom-view.png "解决方案历史记录自定义视图")
+> ![](media/solutions-history-custom-view.png "Solutions history custom view")
 
 ## <a name="view-solution-history"></a>查看解决方案历史
 1. 选择**设置**，然后选择**解决方案历史记录**。
 
      > [!div class="mx-imgBorder"] 
-     > ![](media/solution-history-sitemap.png "解决方案历史记录区域")
+     > ![](media/solution-history-sitemap.png "Solution History area")
 
      > [!NOTE]
      > 要从 PowerApps 统一接口模型驱动应用进入**设置**区域，选择应用工具栏中的**设置** ![设置](../model-driven-apps/media/powerapps-gear.png)，然后选择**高级设置**。 
@@ -57,12 +62,12 @@ search.app:
 当解决方案操作包含失败时，您可以选择它来显示包含其他错误详细信息的页面。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/solution-history-with-failure.png "包含操作错误的解决方案历史记录")
+> ![](media/solution-history-with-failure.png "Solution history with operation error")
 
 详细信息页面包含包括可帮助诊断操作失败根本原因的**异常消息**的信息。 某些错误（包括解决方案依赖项错误）也可能包含**解决方案层**链接来方便您诊断问题。 如果您需要与 Microsoft 客户支持联系，**活动 ID** 可能非常有用。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/solution-history-error-details.png "解决方案操作错误详细信息")
+> ![](media/solution-history-error-details.png "Solution operation error details")
 
 ### <a name="see-also"></a>另请参阅
 [查看解决方案层](solution-layers.md)  <br />

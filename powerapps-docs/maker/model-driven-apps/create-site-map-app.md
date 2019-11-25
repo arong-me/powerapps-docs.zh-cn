@@ -4,28 +4,33 @@ description: 了解如何为您的应用创建站点地图
 keywords: ''
 ms.date: 05/29/2018
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 2461bd71-6cb4-46b7-8d1f-6a0aa3dca809
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 18
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 852cacde56cc76dfd166471b9985f28b5b995c13
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700639"
 ---
-
 # <a name="tutorial-create-a-model-driven-app-site-map-for-an-app-using-the-site-map-designer"></a>教程：使用站点地图设计器创建模型驱动应用程序的站点地图
 
 在本教程中，您执行多项站点地图任务，如创建新站点地图以及添加区域、组和子区域。
@@ -97,7 +102,7 @@ search.app:
 <a name="bkmk_AddArea"></a>   
 ## <a name="add-an-area-to-the-site-map"></a>向站点地图添加区域  
   
-1.  选择站点地图设计器区域中的**添加** ![设计器中的“添加”按钮](media/dynamics365-designer-addbutton.PNG "设计器中的“添加”按钮")，然后选择**区域**。  
+1.  选择站点地图设计器区域中的**添加** ![设计器中的“添加”按钮](media/dynamics365-designer-addbutton.PNG "在设计器中添加按钮")，然后选择**区域**。  
   
      or  
   
@@ -119,9 +124,9 @@ search.app:
   
      在**高级**下，执行以下操作：  
   
-    - **更多标题**：如果贵组织使用多种语言，请为标题选择一种语言（区域设置），输入标题，然后选择**添加** ![站点地图设计器中的“添加”按钮](media/add-icon-sitemap-designer.png "站点地图设计器中的“添加”按钮")。 可以为组织使用的任意数量语言创建、编辑或删除标题。 但是，每种语言只能有一个标题。  
+    - **更多标题**：如果您的组织使用多种语言，请为标题选择一种语言（区域设置），输入标题，然后选择**添加** ![站点地图设计器中的“添加”按钮](media/add-icon-sitemap-designer.png "站点地图设计器中的“添加”按钮")。 可以为组织使用的任意数量语言创建、编辑或删除标题。 但是，每种语言只能有一个标题。  
   
-    - **更多说明**：如果贵组织使用多种语言，请为说明选择一种语言，输入说明，然后选择**添加** ![站点地图设计器中的“添加”按钮](media/add-icon-sitemap-designer.png "站点地图设计器中的“添加”按钮")。 可以为组织使用的任意数量语言创建、编辑或删除说明。 但是，每种语言只能有一个说明。  
+    - **更多说明**：如果您的组织使用多种语言，请为说明选择一种语言，输入说明，然后选择**添加** ![站点地图设计器中的“添加”按钮](media/add-icon-sitemap-designer.png "站点地图设计器中的“添加”按钮")。 可以为组织使用的任意数量语言创建、编辑或删除说明。 但是，每种语言只能有一个说明。  
   
     - **URL**：输入要为表示该区域的 Dynamics 365 for Outlook 文件夹渲染的 URL。  
   
@@ -129,9 +134,9 @@ search.app:
 ## <a name="add-a-group-to-the-site-map"></a>向站点地图添加组  
   
 1.  在站点地图设计器区域中选择要为其添加组的区域。  
-2.  选择**添加** ![设计器中的“添加”按钮](media/dynamics365-designer-addbutton.PNG "设计器中的“添加”按钮")，然后选择**组**。  
+2.  选择**添加** ![在设计器中添加按钮](media/dynamics365-designer-addbutton.PNG "在设计器中添加按钮")，然后选择**组**。  
   
-     or  
+     或  
   
      从**组件**选项卡中，将**组**磁贴拖放到区域中**区域**下的空框中。 将磁贴移动到区域中的正确位置时，就可以看到这个空框。  
   
@@ -147,9 +152,9 @@ search.app:
   
      在**高级**下，执行以下操作：  
   
-    - **更多标题**：如果贵组织使用多种语言，请为标题选择一种语言（区域设置），输入组的标题，然后选择**添加** ![站点地图设计器中的“添加”按钮](media/add-icon-sitemap-designer.png "站点地图设计器中的“添加”按钮")。 可以为组织使用的任意数量语言创建、编辑或删除标题。 但是，每种语言只能有一个标题。  
+    - **更多标题**：如果您的组织使用多种语言，请为标题选择一种语言（区域设置），为组输入标题，然后选择**添加** ![站点地图设计器中的“添加”按钮](media/add-icon-sitemap-designer.png "站点地图设计器中的“添加”按钮")。 可以为组织使用的任意数量语言创建、编辑或删除标题。 但是，每种语言只能有一个标题。  
   
-    - **更多说明**：如果贵组织使用多种语言，请为说明选择一种语言，输入组的说明，然后选择**添加** ![站点地图设计器中的“添加”按钮](media/add-icon-sitemap-designer.png "站点地图设计器中的“添加”按钮")。 可以为组织使用的任意数量语言创建、编辑或删除说明。 但是，每种语言只能有一个说明。  
+    - **更多说明**：如果您的组织使用多种语言，请为说明选择一种语言，为组输入说明，然后选择**添加** ![站点地图设计器中的“添加”按钮](media/add-icon-sitemap-designer.png "站点地图设计器中的“添加”按钮")。 可以为组织使用的任意数量语言创建、编辑或删除说明。 但是，每种语言只能有一个说明。  
   
     - **URL**：输入要为表示该组的 Dynamics 365 for Outlook 文件夹渲染的 URL。  
   
@@ -158,7 +163,7 @@ search.app:
 <a name="bkmk_AddSubarea"></a>   
 ## <a name="add-a-subarea-to-a-group-in-the-site-map"></a>向站点地图中的组添加子区域  
   
-1.  选择站点地图设计器区域中的**添加** ![设计器中的“添加”按钮](media/dynamics365-designer-addbutton.PNG "设计器中的“添加”按钮")，然后选择**子区域**。  
+1.  选择站点地图设计器区域中的**添加** ![设计器中的“添加”按钮](media/dynamics365-designer-addbutton.PNG "在设计器中添加按钮")，然后选择**子区域**。  
   
      or  
   
@@ -235,4 +240,4 @@ search.app:
   
 ### <a name="next-steps"></a>后续步骤  
  [创建或编辑应用](create-edit-app.md)   
- [添加或编辑应用组件](add-edit-app-components.md)
+ [添加或编辑应用程序组件](add-edit-app-components.md)

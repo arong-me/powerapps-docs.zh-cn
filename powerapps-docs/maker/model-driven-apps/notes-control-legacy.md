@@ -1,30 +1,36 @@
 ---
-title: 在 PowerApps 中设置模型驱动应用程序注释控件以访问有关公告的信息 | MicrosoftDocs
+title: 在 PowerApps 中设置模型驱动应用注释控件以访问有关公告的信息 | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: f10cdf1c-3540-439c-a171-27a10e72da45
 caps.latest.revision: 63
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bb60588e34e66fc1a0222d18e90d50af672bcc69
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711683"
 ---
 # <a name="set-up-the-model-driven-app-notes-control-to-access-information-about-posts"></a>设置模型驱动应用程序注释控件以访问有关公告的信息
 
- 在使用[更新后的窗体](main-form-presentations.md#updated-forms)的某些系统实体的 PowerApps 窗体中，“注释”控件可用于访问有关**公告**、**活动**和**注释**的信息。 对于启用了注释和活动的自定义实体，您将仅看到**注释**和**活动**。 若要包括**公告**，必须为自定义实体启用公告。  
+ 在使用[更新后的窗体](main-form-presentations.md#updated-forms)的某些系统实体的 PowerApps 窗体中，注释控件可用于访问有关**公告**、**活动**和**注释**的信息。 对于启用了注释和活动的自定义实体，您将仅看到**注释**和**活动**。 若要包括**公告**，必须为自定义实体启用公告。  
   
 ## <a name="enable-posts-for-a-custom-entity"></a>为自定义实体启用公告  
   

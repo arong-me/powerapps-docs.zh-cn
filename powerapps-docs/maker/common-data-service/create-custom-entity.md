@@ -9,15 +9,20 @@ ms.topic: tutorial
 ms.date: 01/23/2019
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 436e4f03a38efc3d61a0d4fb9f027ae6eff1c931
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754815"
 ---
+# <a name="create-a-custom-entity-that-has-components-in-powerapps"></a>在 PowerApps 中创建具有组件的自定义实体
 
-# <a name="create-a-custom-entity-that-has-components-in-powerapps"></a>在 PowerApps 中创建包含组件的自定义实体
-
-使用 PowerApps，您可以定制您的应用程序使之适合您组织的行业、命名法和特定业务过程。 PowerApps 应用开发包括添加“现成”的标准实体或创建自定义实体。 实体定义您要以记录形式跟踪的信息，通常包括公司名称、地点、产品、电子邮件和电话等属性。 
+使用 PowerApps，您可以定制您的应用使之适合您组织的行业、命名法和特定业务过程。 PowerApps 应用开发包括添加“现成”的标准实体或创建自定义实体。 实体定义您要以记录形式跟踪的信息，通常包括公司名称、地点、产品、电子邮件和电话等属性。 
 
 在本主题中，您创建实体，然后添加或自定义关键组件（如字段、关系、视图和窗体）。 您了解如何：
 
@@ -29,9 +34,9 @@ search.app:
 
 本主题将以公司 Contoso 为例，这是一家打理狗和猫造型的宠物美容公司。 Contoso 需要一个可由员工跨各种设备使用的客户和宠物跟踪应用程序。
 
-## <a name="prerequisites"></a>必备条件 
+## <a name="prerequisites"></a>必备条件
 
-登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 如果还没有 PowerApps 帐户，请从 [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 选择**免费开始**链接。
+登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 如果还没有 PowerApps 帐户，请从 [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 选择**免费开始**链接。
 
 ## <a name="create-a-custom-entity"></a>创建自定义实体。
 

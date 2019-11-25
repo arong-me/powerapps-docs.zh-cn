@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerApps 共享模型驱动应用程序 | Microsoft Docs
+title: 使用 PowerApps 共享模型驱动应用 | Microsoft Docs
 description: 了解如何共享模型驱动应用程序
 documentationcenter: ''
 author: Mattp123
@@ -13,13 +13,18 @@ ms.component: model
 ms.date: 03/19/2019
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1c44bd0ce65bd995d79f291bd6af36193c4165a5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711067"
 ---
-
-# <a name="share-a-model-driven-app-with-powerapps"></a>使用 PowerApps 共享模型驱动应用程序
+# <a name="share-a-model-driven-app-with-powerapps"></a>使用 PowerApps 共享模型驱动应用
 
 [!INCLUDE [powerapps](../../includes/powerapps.md)] 应用程序使用基于角色的安全性进行共享。 基于角色的安全性的基本概念是，权限角色包含定义了可以在应用程序内执行的操作集权限。 必须为所有应用程序用户分派一个或多个预定义角色或自定义角色。 或者，角色还可以分派给团队。 将用户或团队分派给这些角色之一时，会为该用户或团队成员授予与该角色相关联的权限集。 
 
@@ -31,7 +36,7 @@ search.app:
 ## <a name="prerequisites"></a>必备条件 
 若要共享应用程序，您必须具有 [!INCLUDE [powerapps](../../includes/powerapps.md)] 环境管理员或系统管理员角色。 
 
-## <a name="sign-in-to-powerapps"></a>登录到 PowerApps
+## <a name="sign-in-to-powerapps"></a>登录到“PowerApps”
 登录到 [PowerApps](https://powerapps.microsoft.com/)。 如果还没有 [!INCLUDE [powerapps](../../includes/powerapps.md)] 帐户，请选择**免费开始**链接。
 
 ## <a name="share-an-app"></a>共享应用程序 
@@ -119,7 +124,7 @@ search.app:
 1. 从**共享此应用程序**对话框，在**直接与用户共享您的应用程序的链接**下复制显示的 URL。
  
 2. 选择**关闭**。
-3. 在一个位置粘贴应用程序 URL 以便用户能够访问，如将它发布到 SharePoint 站点或通过电子邮件发送。
+3. 在一个位置粘贴应用 URL 以便用户能够访问，如将它发布到 SharePoint 站点或通过电子邮件发送。
 
 > [!div class="mx-imgBorder"] 
 > ![共享链接](media/share-model-driven-app/share-model-driven-URL.PNG)
@@ -135,7 +140,7 @@ search.app:
 
 |安全角色  |*权限  |说明 |
 |---------|---------|---------|
-|环境制造者     |  无       | 可以使用 Microsoft Flow 创建与环境关联的新资源，包括应用程序、连接、自定义 API、网关和流。 但是，不具有访问环境中的数据的任何权限。 更多信息：[环境概述](https://powerapps.microsoft.com/blog/powerapps-environments/)        |
+|环境制造者     |  无       | 可以使用 Microsoft Flow 创建与环境关联的新资源，包括应用、连接、自定义 API、网关和流。 但是，不具有访问环境中的数据的任何权限。 更多信息：[环境概述](https://powerapps.microsoft.com/blog/powerapps-environments/)        |
 |系统管理员     |  创建、阅读、编写、删除、自定义、安全角色       | 具有自定义或管理环境的完全权限，包括创建、修改和分派安全角色。 可以查看环境中的所有数据。 详细信息：[自定义所需的权限](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 |系统定制员     | 创建（自助）、阅读（自助）、编写（自助）、删除（自助）、自定义         | 拥有自定义环境的所有权限 但是，只能查看其创建的环境实体的记录。 详细信息：[自定义所需的权限](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 |Common Data Service 用户     |  阅读、创建（自助）、编写（自助）、删除（自助）       | 可在环境中运行应用程序并对其所有的记录执行常规任务。        |

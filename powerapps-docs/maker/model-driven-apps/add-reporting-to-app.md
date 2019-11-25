@@ -10,17 +10,23 @@ ms.assetid: b4098c96-bce1-4f57-804f-8694e6254e81
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: aba6196680d674b8ee42096e340a105b19ac8d07
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752324"
 ---
 # <a name="add-reporting-features-to-your-model-driven-app"></a>将报告功能添加到模型驱动应用
 
 PowerApps 应用可以包含可以为用户提供有用业务信息的报表。 这些报表基于 SQL Server Reporting Services，并且提供典型的 SQL Server Reporting Services 报表提供的相同功能集。
 
 > [!div class="mx-imgBorder"] 
-> ![](media/progress-against-goals-report.png "“目标进度”标准报表")
+> ![](media/progress-against-goals-report.png "Progress against goals standard report")
 
 系统报表可供所有用户使用。 创建或拥有报表的单个用户既可以将它们与特定的同事或团队共享，也可以将它们提供给组织，供所有用户运行。 这些报表使用 Common Data Service 专有的 FetchXML 查询并检索数据来生成报表。 您在 PowerApps 应用中创建的报表是基于 Fetch 的报表。
 
@@ -36,7 +42,7 @@ PowerApps 应用可以包含可以为用户提供有用业务信息的报表。 
 ## <a name="add-reporting-to-a-unified-interface-app"></a>向统一接口应用添加报告
 您可以将基于 Fetch 的报告功能添加到您的应用，以便用户能够运行、共享、创建和编辑报表。 为此，需要将报表实体添加到您的应用的站点地图。 
 
-1. 登录 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 并打开现有应用进行编辑。 
+1. 登录 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 并打开现有应用进行编辑。 
 2. 在应用程序设计器中，选择**站点地图**旁边的![用于编辑站点地图的铅笔图标](media/ccf-pencil-icon.png)。 
 3. 在站点地图设计器中，选择**添加**，然后选择**区域**。 
 4. 在**标题**框中，为区域标题输入一个名称，如 *Reports*。 
@@ -57,7 +63,7 @@ PowerApps 应用可以包含可以为用户提供有用业务信息的报表。 
 现在，应用将显示**报表**区域，用户可以在这个区域查看、运行、分派、共享和编辑其有权限的报表，并有权使用使用报表向导创建新报表。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/report-feature-in-app.png "报表视图")
+> ![](media/report-feature-in-app.png "Report view")
 
 ## <a name="options-for-creating-new-reports"></a>新建报表所用的选项
 您可以通过两种方式之一创建新报表：
@@ -73,7 +79,7 @@ PowerApps 应用可以包含可以为用户提供有用业务信息的报表。 
 若要验证某个报表可否可被组织查看：在报表列表中，打开一个模型驱动应用，选择报表，然后选择**编辑**。 在**管理**选项卡上，查看是否将**查看者**设置为**组织**。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/report-scope.png "组织级别的报表可见性")
+> ![](media/report-scope.png "Organization level report visibility")
 
 您可以将报表快照作为解决方案的一部分进行添加、导入或导出。 在模型驱动应用中，报表、子报表、报表类别、报表显示区域和报表相关记录类型都会被视为报表集的组件。 在非覆盖模式下导入解决方案更新时，如果已自定义报表集的任何组件，则会忽略对报表做出的任何解决方案更新。
 

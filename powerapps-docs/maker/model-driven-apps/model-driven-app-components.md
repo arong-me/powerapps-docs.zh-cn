@@ -1,22 +1,28 @@
 ---
-title: 了解 PowerApps 中的模型驱动应用程序组件 | MicrosoftDocs
+title: 了解 PowerApps 中的模型驱动应用组件 | MicrosoftDocs
 description: 了解模型驱动应用程序的不同组件，如数据、UI、逻辑和可视化。
-Keywords: '字段, 属性, 模型驱动的应用程序'
+Keywords: 字段, 属性, 模型驱动的应用程序
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
-ms.date: 06/27/2018
+ms.date: 10/17/2019
 ms.service: powerapps
 ms.topic: article
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b84fa7a8bc0b77bddaa4e0a22d68cd983ac735ef
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711771"
 ---
 # <a name="understand-model-driven-app-components"></a>了解模型驱动的应用程序组件
 设计良好的模型驱动应用程序包括若干您选择的组件，使用设计器创建已完成应用程序的外观和功能。 设计器用来制造应用程序的组件和组件属性成为元数据。 
@@ -24,14 +30,14 @@ search.app:
 为了解每个组件如何与应用程序设计相关，它们在此处被分到*数据*、*UI*、*逻辑*和*可视化*类别中。 
 
 ## <a name="data"></a>数据
-这些组件确定应用程序要基于的数据。
+这些组件确定应用将基于哪些数据，以及使用什么设计器来创建或编辑该组件。
 
 
 |组件  |说明  |设计器  |
 |---------|---------|---------|
 |实体     |包含所跟踪属性（例如联系人或客户）的项。 有很多标准实体都可用。 您可以自定义非系统标准实体（生产实体）或从头创建自定义实体。     | [!INCLUDE [powerapps](../../includes/powerapps.md)] 实体设计器        |
-|字段     | 与实体关联的属性。 字段由数据类型定义，这确定可输入或选择的数据的类型。 示例包括文本、数字、日期和时间、货币或查找（创建与另一个实体的关系）。 字段通常用于窗体、视图和搜索。        | [!INCLUDE [powerapps](../../includes/powerapps.md)] 实体设计器   |
 |关系     | 实体关系定义实体如何能相互关联。 有 1:N（一对多）、N:1（多对一）和 N:N（多对多）关系类型。 例如，向实体中添加查找字段将在两个实体之间创建新的 1:N 关系，并使您能够将该查找字段放在窗体中。   | [!INCLUDE [powerapps](../../includes/powerapps.md)] 实体设计器        |
+|字段     | 与实体关联的属性。 字段由数据类型定义，这确定可输入或选择的数据的类型。 示例包括文本、数字、日期和时间、货币或查找（创建与另一个实体的关系）。 字段通常用于窗体、视图和搜索。        | [!INCLUDE [powerapps](../../includes/powerapps.md)] 实体设计器   |
 |选项集字段     | 这是一个特殊的字段类型，为用户提供一组预定的选项。 每个选项都有一个数字值和标签。 添加到窗体时，该字段显示一个控件，供用户选择选项。  有两类选项集；选项集，用户从中只能选择一个选项，多选选项集，允许选择多个选项。  | [!INCLUDE [powerapps](../../includes/powerapps.md)] 选项集设计器     |
 
 详细信息：[为模型驱动应用程序定义数据](define-data-model-driven-app.md) 
@@ -62,7 +68,11 @@ search.app:
 
 ![工作流、操作和业务流程设计器](media/model-driven-app-overview/designer-mash.png)
 
-详细信息：[在您的模型驱动应用程序中应用业务逻辑](guide-staff-through-common-tasks-processes.md)
+详细信息：[在您的模型驱动应用程序中应用业务逻辑](guide-staff-through-common-tasks-processes.md) 
+
+### <a name="additional-options-for-adding-custom-business-logic"></a>添加自定义业务逻辑的其他选项
+[使用插件以扩展业务流程](../../developer/common-data-service/plug-ins.md) <br />
+[工作流扩展](../../developer/common-data-service/workflow/workflow-extensions.md)
 
 ## <a name="visualizations"></a>可视化
 确定应用程序将有的可用数据可视化和报告类型。
@@ -72,7 +82,7 @@ search.app:
 |---------|---------|---------|
 |图表     | 可在视图内、窗体上显示或添加到仪表板的单个图形可视化项。        | 图表设计器        |
 |仪表板     | 用作提供可行业务数据概览的一个或多个图形可视化项的板。        | 仪表板设计器        |
-|嵌入式 Power BI     | 将嵌入式 Power BI 磁贴和仪表板添加到您的应用程序。 Power BI 是提供商业智能见解的基于云的服务。        |  图表设计器、仪表板设计器和 Power BI 的组合       |
+|嵌入式 Power BI     | 将嵌入式 Power BI 磁贴和仪表板添加到您的应用。 Power BI 是提供商业智能见解的基于云的服务。        |  图表设计器、仪表板设计器和 Power BI 的组合       |
 
 ![示例仪表板](media/model-driven-app-overview/dashboard-designer.png)
 

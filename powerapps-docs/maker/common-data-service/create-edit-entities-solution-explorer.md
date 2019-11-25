@@ -9,18 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2ec1fb0471ad1f47f4afad083ad89e87633ce9ed
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2707283"
 ---
-
 # <a name="create-and-edit-entities-using-solution-explorer"></a>使用解决方案资源管理器创建和编辑实体
 
 您可以使用 PowerApps 门户在大多数常见情况下轻松创建实体，不过不是所有功能都在这里实现。 在需要满足[在 Common Data Service 中创建和编辑实体](create-edit-entities.md)中所述的要求时，可以通过使用解决方案资源管理器创建或编辑实体来实现。

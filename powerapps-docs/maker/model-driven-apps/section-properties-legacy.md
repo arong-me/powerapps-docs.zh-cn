@@ -1,12 +1,12 @@
 ---
-title: PowerApps 中模型驱动应用程序主窗体的分区属性 | MicrosoftDocs
+title: PowerApps 中模型驱动应用主窗体的部分属性 | MicrosoftDocs
 description: 了解主窗体的分区属性
 Keywords: 主窗体; 部分属性; Dynamics 365
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
 ms.date: 06/06/2018
@@ -14,10 +14,16 @@ ms.service: powerapps
 ms.topic: article
 ms.assetid: 2d3af6e9-e8a4-4129-b708-383b2740c015
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 45764a992215c697361f77da656182bdbb0e7783
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754991"
 ---
 # <a name="model-driven-app-form-section-properties"></a>模型驱动应用程序的窗体分区属性
 
@@ -27,8 +33,8 @@ search.app:
   
  标题和脚注类似于分区，但不能删除。 如果标题和脚注中没有内容，则不会显示。 
 
-您可以从 PowerApps 站点访问**分区属性**。 
-1. 登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+您可以从 PowerApps 站点访问**部分属性**。 
+1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 2.  展开**数据**，选择**实体**，选择所需实体，然后选择**窗体**选项卡。 
 

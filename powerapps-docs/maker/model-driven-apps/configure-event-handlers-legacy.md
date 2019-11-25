@@ -9,10 +9,16 @@ ms.service: powerapps
 ms.topic: article
 ms.assetid: dc0ebb3f-0c00-413a-968f-9cfd107055c0
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4a824183a3d208131754289984aeaa8377d4a352
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701123"
 ---
 # <a name="configure-model-driven-app-form-event-handlers"></a>配置模型驱动应用程序窗体的事件处理程序
 

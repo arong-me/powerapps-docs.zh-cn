@@ -5,12 +5,17 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: e31f83efb7cedfa42b6c4c9e7da83280b261d9c8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2707943"
 ---
-
 # <a name="render-the-entity-list-associated-with-the-current-page"></a>呈现与当前页关联的实体列表
 
 呈现与当前页关联的实体列表，作为分页的、可进行排序的表。 使用 [entitylist](liquid-objects.md#entitylist)、[entityview](liquid-objects.md#entityview)、[PowerApps Common Data Service  实体标记](portals-entity-tags.md)、[页面](liquid-objects.md#page)和[请求](liquid-objects.md#request)参数，并包含搜索和多个视图选择。  

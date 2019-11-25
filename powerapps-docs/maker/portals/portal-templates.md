@@ -1,6 +1,6 @@
 ---
-title: PowerApps 中提供的门户模板 |Microsoft Docs
-description: 了解 PowerApps 中提供的各种门户模板。
+title: PowerApps 中的可用门户模板 | Microsoft Docs
+description: 了解 PowerApps 中的各种可用门户模板。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,70 +11,70 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 01995c7d1d23d4986441e8ccdcbba59029004cdf
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541901"
+ms.locfileid: "2755672"
 ---
 # <a name="portal-templates"></a>门户模板
 
-基于 PowerApps 中选定的环境，你可以在 Dynamics 365 中包含模型驱动应用的环境中创建 Common Data Service 初学者门户或门户。
+根据 PowerApps 中的选定环境，您可以在 Dynamics 365 中包含模型驱动应用的环境中创建 Common Data Service 起点门户或门户。
 
 > [!NOTE]
-> PowerApps 门户 Studio 不完全支持现有门户和现有门户模板（社区、合作伙伴、员工自助服务、客户自助服务），并且某些组件可能不会呈现。 但是，您可以像平常一样继续编辑其余组件。
+> PowerApps 门户 Studio 中不能完全支持现有门户和现有门户模板（社区、合作伙伴、员工自助服务、客户自助服务），并且某些组件可能不呈现。 但是，可继续正常编辑其余组件。
 
 ## <a name="environment-with-common-data-service"></a>具有 Common Data Service 的环境
 
-如果选择包含 Common Data Service 的环境，则可以创建 Common Data Service 的初学者门户。 Common Data Service 入门门户随附了示例数据，可以快速入门。 它还包含以下内置示例页面：
+如果选择其中包含 Common Data Service 的环境，可创建 Common Data Service 起点门户。 Common Data Service 起点门户附带帮助您快速开始的示例数据。 它还具有以下内置示例页：
 
-- 默认 studio 模板
-- 带有标题的页面
-- 具有子链接的页面
+- 默认 Studio 模板
+- 带标题的页面
+- 带子链接的页面
 
-## <a name="environment-with-model-driven-apps-in-dynamics-365"></a>Dynamics 365 中模型驱动应用的环境 
+## <a name="environment-with-model-driven-apps-in-dynamics-365"></a>Dynamics 365 中具有模型驱动应用的环境 
 
-如果在 Dynamics 365 中选择一个包含模型驱动应用的环境（Dynamics 365 Sales，Dynamics 365 Customer Service，Dynamics 365 现场服务，Dynamics 365 行销或 Dynamics 365 Project Service Automation），则可以创建以下门户:
+如果您在 Dynamics 365 中选择包含模型驱动应用的环境（Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 Field Service、Dynamics 365 Marketing 或 Dynamics 365 Project Service Automation），则可以创建以下门户：
 
-- **客户自助服务门户**：客户自助服务门户使客户能够访问自助服务知识、支持资源、查看案例的进度以及提供反馈。
-- **合作伙伴门户**：合作伙伴门户允许拥有经销商、分销商或合作伙伴的每个组织实时访问共享活动的每个阶段。
+- **客户自助门户**：客户可通过客户自助门户访问自助服务知识，为资源提供支持，查看案例进度，以及提供反馈。
+- **合作伙伴门户**：每家拥有经销商、分销商、供应商或合作伙伴的组织都可以通过合作伙伴门户实时访问共享活动的每个阶段。
 
     > [!NOTE]
-    > 现场服务和项目服务包必须安装在 Dynamics 365 组织中才能启用相应的选项。 有关详细信息，请参阅[集成项目服务自动化](https://docs.microsoft.com/dynamics365/portals/integrate-project-service-automation)和[集成现场服务](https://docs.microsoft.com/dynamics365/portals/integrate-field-service)。
+    > 必须在 Dynamics 365 组织中安装 Field Service 和 Project Service 程序包，才能启用各自的选项。 有关详细信息，请参阅[集成 Project Service Automation](https://docs.microsoft.com/dynamics365/portals/integrate-project-service-automation) 和[集成 Field Service](https://docs.microsoft.com/dynamics365/portals/integrate-field-service)。
 
-- **员工自助服务门户**：员工自助服务门户通过优化常见任务并为每个员工提供一项权威资源
-- **社区门户**：社区门户利用客户和专家之间的对等交互，有机从知识库文章、论坛和博客增加可用知识目录，并通过注释和分级
-- **门户自空白**：创建网站以与外部和内部用户共享数据。 此模板附带了可帮助你快速入门的示例页面。 
+- **员工自助服务门户**：员工自助服务门户通过简化常见任务和让每位员工都具备来源明确的知识，培养高效且消息灵通的员工
+- **社区门户**：社区门户利用客户与专家之间端到端的交互，将可用知识的目录从知识库文章、论坛和博客有机地进行了发展，并通过评论和评分提供反馈
+- **从空白门户开始**：创建网站以便与外部用户或内部用户共享数据。 此模板随附示例页，帮助您快速入门。 
 
 ## <a name="portal-templates-features"></a>门户模板功能
 
-下表汇总了与每个门户模板关联的功能：
+下表汇总了与各门户模板关联的功能：
 
-| 具有 | 客户自助服务门户 | 合作伙伴门户 | 员工自助服务门户 | 社区门户 | 空白门户网站 | Common Data Service starter 门户|
+| 功能 | 客户自助服务门户 | 合作伙伴门户 | 员工自助服务门户 | 社区门户 | 从空白门户开始 | Common Data Service 起点门户|
 |------------------|---------------|----------------|---------------|------------------|---------------|------|
-| 世界就绪 | •  | • | • | • | • |• |
+| 全球公测 | •  | • | • | • | • |• |
 | 多语言支持 | •  | • | • | • | • |• |
 | 门户管理| • | • | • | • | •  |• |
-| 自定义和扩展性  | •   | •  | •   | •  | • |• |
-| 主题设置   | •   | •   | •    | •   | •   |• |
+| 自定义和扩展  | •   | •  | •   | •  | • |• |
+| 主题化   | •   | •   | •    | •   | •   |• |
 | 内容管理                     | •                            |                | •                            | •                |               |
 | 知识管理                   | •                            | •              | •                            | •                |               |
 | 支持/案例管理                | •                            |                | •                            | •                |               |
 | 论坛                                 | •                            |                | •                            | •                |               |
-| 多面搜索                         | •                            |                | •                            |                  |               |
+| 分面搜索                         | •                            |                | •                            |                  |               |
 | 配置文件管理                     | •                            |                | •                            |                  |               |
-| 订阅论坛线程              | •                            |                | •                            |                  |               |
-| 提出                               | •                            |                | •                            | •                |               |
+| 订阅论坛执行绪              | •                            |                | •                            |                  |               |
+| 注释                               | •                            |                | •                            | •                |               |
 | [!INCLUDE[pn-azure-shortest](../../includes/pn-azure-shortest.md)] AD 身份验证                |                              |                | •                            |                  |               |
-| 独创性                                  |                              |                |                              | •                |               |
+| 观点                                  |                              |                |                              | •                |               |
 | 博客                                  |                              |                |                              | •                |               |
-| 项目服务自动化集成 |                              | •              |                              |                  |               |
-| 现场服务集成              |                              | •              |                              |                  |               |
-| 合作伙伴加入                     |                              | •              |                              |                  |               |
-| 门户基础  |  •    | •      |  •| •| •|• |
+| Project Service Automation 集成 |                              | •              |                              |                  |               |
+| Field Service 集成              |                              | •              |                              |                  |               |
+| 合作伙伴培训                     |                              | •              |                              |                  |               |
+|  门户基础  |  •    | •      |  •| •| •|• |
 | 门户工作流|  •| •|  •| •| •|• |
 | Web 通知|  •| •|  •| •| •|• |
-| [!INCLUDE[cc-microsoft](../../includes/cc-microsoft.md)] 标识|   •|  •|  •|   •| •|• |
+| [!INCLUDE[cc-microsoft](../../includes/cc-microsoft.md)] 身份|   •|  •|  •|   •| •|• |
 | 标识工作流| •|  •| •|   •| •|• |
 | Web 窗体|  •| •|    •| •| •|• |
-| 意见|   •|  •|  •| •| •|• |
+| 反馈|   •|  •|  •| •| •|• |
 ||

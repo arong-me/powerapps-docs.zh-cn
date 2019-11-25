@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 96cae5273855fd6458a501aa0757da12ba8e1701
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701651"
 ---
 # <a name="overview-of-the-model-driven-form-designer"></a>模型驱动的窗体设计器概述
 在处理模型驱动窗体时，新模型驱动窗体设计器提供现代的 WYSIWYG 创作体验。 它包括经典模型驱动窗体设计器进行的多项改进。 
@@ -40,7 +46,7 @@ search.app:
 - 适应宽度 - 用于让窗体预览适应可用宽度的快速操作。
 
 > [!div class="mx-imgBorder"] 
-> ![](media/FormDesignerOverview.png "窗体设计器布局")
+> ![](media/FormDesignerOverview.png "Form designer layout")
 
 ## <a name="see-also"></a>另请参阅
 [使用窗体设计器创建、编辑或配置窗体](create-and-edit-forms.md)  

@@ -9,23 +9,28 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.assetid: fa04f99d-a5f9-48cb-8bfb-f0f50718ccee
 caps.latest.revision: 41
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6b1fb1e479237face89e0a19ee145f7fa428cb62
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758092"
 ---
-
 # <a name="create-and-edit-entities-using-powerapps-portal"></a>使用 PowerApps 门户创建和编辑实体
 
-[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供为 Common Data Service 创建和编辑实体的简单方法。
+[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供为 Common Data Service 创建和编辑实体的简单方法。
 
 此门户支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 详细信息： 
 - [在 Common Data Service 中创建和编辑实体](create-edit-entities.md)
@@ -33,7 +38,7 @@ search.app:
 
 ## <a name="view-entities"></a>视图实体
 
-1. 从 [PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**画布**设计模式。
+1. 从 [PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**区域**设计模式。
 2. 选择**数据** > **实体**
 
 ![视图实体](media/view-entities-portal.png)
@@ -62,7 +67,7 @@ search.app:
 |--|--|
 |**显示名称**|这是将在应用中显示的实体的单数名称。 以后可以更改此信息。|
 |**复数显示名称**|这是将在应用中显示的实体的复数名称。 以后可以更改此信息。|
-|**名称**|此字段是根据您输入的**显示名称**预填充的。 它包含 Common Data Service 解决方案发布商的自定义前缀。 保存实体后，就不能进行更改。|
+|**名称**|此字段是根据您输入的**显示名称**预填充的。 其中包括 Common Data Service 解决方案发布商的自定义前缀。 保存实体后，就不能进行更改。|
 |**说明**|提供实体用途的有意义的描述。|
 
 选择**下一步**以继续，这将关闭**新实体**面板并显示字段列表。

@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: d88677fa-2caf-47b0-aec6-10a25a7ec9c3
 caps.latest.revision: 55
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fd5d17f33490aab049a166fa53ce541bdea2235a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757916"
 ---
 # <a name="how-to-create-and-edit-fields"></a>如何创建和编辑字段
 
@@ -32,7 +38,7 @@ search.app:
 
 |设计器| 说明|
 |--|--|
-|[PowerApps 门户](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[使用 PowerApps 门户创建和编辑 Common Data Service 的字段](create-edit-field-portal.md)|
+|[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[使用 PowerApps 门户创建和编辑 Common Data Service 的字段](create-edit-field-portal.md)|
 |解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。<br />详细信息：[使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md) |
 
 > [!NOTE]

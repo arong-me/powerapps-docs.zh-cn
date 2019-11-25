@@ -1,27 +1,33 @@
 ---
-title: 在 PowerApps 中设置仪表板包括的模型驱动应用程序图表或列表的属性 | MicrosoftDocs
+title: 在 PowerApps 中设置仪表板包括的模型驱动应用图表或列表的属性 | MicrosoftDocs
 description: 了解如何设置仪表板包括的图表或列表的属性
 ms.custom: ''
 ms.date: 06/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 50fb2ab0-5c1a-4a5e-8ebc-5603fecc4da0
 caps.latest.revision: 26
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b284b42c162c44d59fc7af22905be08748d9c766
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711155"
 ---
 # <a name="set-properties-for-a-model-driven-app-chart-or-list-included-in-a-dashboard"></a>设置仪表板包括的模型驱动应用程序图表或列表的属性
 

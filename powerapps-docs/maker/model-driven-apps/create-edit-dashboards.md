@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 641885d2-4a08-41b8-b914-d9a244e4d5b1
 caps.latest.revision: 10
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1e6fa3440f0deef99f94ce94352177a105abf7b7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759236"
 ---
 # <a name="create-or-edit-model-driven-app-dashboards"></a>创建或编辑模型驱动应用程序仪表板
 
@@ -29,7 +35,7 @@ search.app:
 <a name="BKMK_createdashboard"></a>   
 ## <a name="create-a-new-dashboard"></a>创建新仪表板  
   
-1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
     > [!IMPORTANT]
     > “如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。   
@@ -51,7 +57,7 @@ search.app:
 <a name="BKMK_editdashboard"></a>   
 ## <a name="edit-an-existing-dashboard"></a>编辑现有的仪表板  
   
-1. 登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
     > [!IMPORTANT]
     > “如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。    
@@ -66,15 +72,15 @@ search.app:
   
 4.  当完成所做更改时，请务必保存然后发布它们。  
   
- 其他可以执行的系统仪表板任务包括：  
+其他可以执行的系统仪表板任务包括：  
   
-    -   从仪表板中移除列表或图表  
-  
-    -   向仪表板添加列表或图表  
-  
-    -   设置默认仪表盘  
-  
-    -   使用安全角色使仪表板只向某些角色显示    
-  
+-   从仪表板中移除列表或图表  
+
+-   向仪表板添加列表或图表  
+
+-   设置默认仪表盘  
+
+-   使用安全角色使仪表板只向某些角色显示    
+
 ## <a name="next-steps"></a>后续步骤  
 [设置中仪表板包括的图表或列表的属性](set-properties-chart-list-included-dashboard.md)

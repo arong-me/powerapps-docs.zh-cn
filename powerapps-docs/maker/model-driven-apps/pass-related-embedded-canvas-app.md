@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 44112fee976b12f12b43ca2bf70157266be4d8ce
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759412"
 ---
-
 # <a name="pass-a-list-of-related-records-as-data-context-to-an-embedded-canvas-app"></a>将一列相关记录作为数据上下文传递到嵌入式区域应用
 > [!IMPORTANT]
 > 在模型驱动窗体中嵌入的区域应用现在已退出预览，已公开发布。 下面列出的步骤已过时，仅适用于在模型驱动窗体上嵌入的区域应用的公共预览版本。
@@ -32,7 +37,7 @@ search.app:
 
 假设您要在帐户主窗体上添加嵌入式区域应用并将与当前帐户记录相关的联系人列表传递到该嵌入式区域应用。 为此，请按照以下步骤操作：
 
-1.  登录 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后打开实体（如客户实体）主窗体的窗体编辑器。
+1.  登录 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后打开实体（如客户实体）主窗体的窗体编辑器。
 2.  选择您希望嵌入式区域应用显示的窗体上的部分。
 3.  选择此部分后，在**插入**选项卡上的**控件**组中，选择**子网格**。
 4.  在**设置属性**对话框中，选择**显示**选项卡，然后在**名称**框中，为网格控件输入一个名称。
@@ -50,7 +55,7 @@ search.app:
          -  请注意，对应用 ID 值进行更改将断开模型驱动型窗体与嵌入式区域应用的链接。
 10. 选择**自定义**按钮以创建或编辑区域应用。 这会在一个新的浏览器标签页中打开 PowerApps Studio。
      > [!IMPORTANT]
-     > 如果打开 PowerApps Studio 被 Web 浏览器弹出窗口阻止程序阻止，您必须启用 web.powerapps.com 网站或暂时禁用弹出窗口阻止程序，然后再次选择**自定义**。 
+     > 如果打开 PowerApps Studio 被 Web 浏览器弹出窗口阻止程序阻止，您必须启用 make.powerapps.com 网站或暂时禁用弹出窗口阻止程序，然后再次选择**自定义**。 
 11. 在 PowerApps Studio 中，请注意左侧窗格中有一个 **ModelDrivenFormIntegration** 控件。 此控件负责将上下文数据从主机模型驱动的窗体带入嵌入式区域应用。 
 12. 选择 **Gallery1** 控件并观察**项目**属性是否设置为 **ModelDrivenFormIntegration.Data**。
 13. 在右侧的属性窗格中，在**字段**旁边，选择**编辑**。

@@ -1,7 +1,7 @@
 ---
-title: 在 PowerApps 中导航到我的应用程序、解决方案资源管理器和设置 | Microsoft Docs
-description: 了解如何在 PowerApps 中查找高级应用程序制作和自定义区域
-keywords: null
+title: 在 PowerApps 中导航到我的应用、解决方案资源管理器和设置 | Microsoft Docs
+description: 了解如何在 PowerApps 中查找高级应用制作和自定义区域
+keywords: ''
 author: Mattp123
 ms.author: matp
 manager: kvivek
@@ -13,17 +13,22 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: 60281cab-23d5-4421-ae51-f7e6c1176729
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9e28fdd31aa77a718f3a805214900954afcc3a74
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752270"
 ---
-
 # <a name="navigate-to-advanced-model-driven-app-making-and-customization-areas"></a>导航到模型驱动的高级应用程序制作和自定义区域
 
 本主题介绍如何访问 PowerApps 环境中提供的高级自定义和管理区域。
@@ -31,13 +36,13 @@ search.app:
 ## <a name="solutions"></a>解决方案
 解决方案区域是您查看、编辑、创建、导入、导出和删除托管和非托管解决方案的位置。 
 
-1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 2.  在左侧导航窗格中，选择**解决方案**。 
 
 ## <a name="solution-explorer"></a>解决方案资源管理器
-使用解决方案资源管理器执行无法从 PowerApps 主页完成的应用程序制作和自定义任务。
+使用解决方案资源管理器执行无法从 PowerApps 主页完成的应用制作和自定义任务。
 
-1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
+1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
 2.  在左侧导航窗格中，选择**解决方案**。  
 3.  选择工具栏中的**切换到经典**可打开**所有解决方案**视图。 
     请注意，在列表中选择解决方案时，**切换到经典**命令不可用。
@@ -47,7 +52,7 @@ search.app:
 “应用程序”区域中将解除您在您的环境中有权使用的所有模型驱动和画布应用程序。 除了启动应用程序之外，从“应用”区域，您还可以将安全角色分派到应用程序中。 
 
 若要共享应用程序：
-1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 2.  选择**应用程序**。
  

@@ -9,12 +9,17 @@ ms.topic: conceptual
 ms.date: 08/02/2019
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b11abbf1412fbc34b3fc12b9dd6da8c543d66bb5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702223"
 ---
-
 # <a name="sharepoint-onenote-and-onedrive-integration-with-common-data-service"></a>SharePoint、OneNote 和 OneDrive 与 Common Data Service 的集成
 
 Common Data Service 提供对 SharePoint、OneDrive 和 OneNote 集成的支持。 需要先启用 SharePoint 集成，才能与这些服务集成。   

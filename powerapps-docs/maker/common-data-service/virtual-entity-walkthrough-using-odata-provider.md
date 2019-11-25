@@ -9,21 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
-ms.assetid: null
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
+ms.assetid: ''
 caps.latest.revision: 11
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b7aa64e5ecdc620b5f376601ffb826c3708f98d3
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752094"
 ---
-
 # <a name="virtual-entity-walkthrough-using-the-odata-v4-data-provider"></a>使用 OData v4 数据提供程序演练虚拟实体
 
 假设要从模型驱动应用内访问外部数据源中的票据信息。 在此演练中，您将使用映射到外部架构的字段对虚拟实体建模，该架构在运行时从 OData Web 服务检索票据数据。
@@ -32,7 +37,7 @@ search.app:
 
 因为用于此演练的数据源拥有 OData v4 Web 服务，所以可使用您的环境随附的 OData v4 数据提供程序。
 
-Web 服务 URL：`http://contosowebservice.azurewebsites.net/odata/` 
+Web 服务 URL：`https://contosowebservice.azurewebsites.net/odata/` 
 
 > [!IMPORTANT]
 > 用于本演练的 Web 服务 url 不是可工作的 Web 服务。
@@ -69,7 +74,7 @@ Web 服务 URL：`http://contosowebservice.azurewebsites.net/odata/`
     |字段|值|
     |--|--|
     |**名称**|Contoso Sample Data Source|
-    |**URL**|`http://contosowebservice.azurewebsites.net/odata` |
+    |**URL**|`https://contosowebservice.azurewebsites.net/odata` |
     |**超时**|30|
     |**返回内联计数**|True|
 

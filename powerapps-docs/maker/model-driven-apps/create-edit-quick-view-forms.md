@@ -1,29 +1,34 @@
 ---
-title: 在 PowerApps 中创建或编辑模型驱动应用程序的快速视图窗体 | MicrosoftDocs
+title: 在 PowerApps 中创建或编辑模型驱动应用的快速视图窗体 | MicrosoftDocs
 description: 了解如何创建或编辑快速视图窗体
 ms.custom: ''
 ms.date: 05/23/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 9b101734-cc11-4d05-bd45-eb611eae9931
 caps.latest.revision: 14
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0384b233ddd9df0f88019df6064f5a99ef8af0bd
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759104"
 ---
-
 # <a name="create-a-model-driven-app-quick-view-form-to-view-information-about-a-related-entity"></a>创建模型驱动应用程序的快速视图窗体以查看有关相关实体的信息
 
 在本主题中，您可以了解如何创建快速视图窗体，以及如何向主窗体添加快速视图控件。 
@@ -38,7 +43,7 @@ search.app:
 ## <a name="create-a-quick-view-form"></a>创建快速视图窗体  
  使用窗体编辑器创建快速查看窗体，方式与创建其他窗体的方式类似。 快速查看窗体为只读。 用其创建只读窗体。  
   
-1. 登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 
     > [!IMPORTANT]
@@ -74,7 +79,7 @@ search.app:
 ## <a name="add-a-quick-view-control-to-a-main-form"></a>向主窗体添加快速视图控件  
  只能将快速视图窗体添加存在查找字段的主窗体中，查找的目标是快速视图窗体的实体。  
   
-1.  登录到 [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
     > [!IMPORTANT]
     > “如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。     
