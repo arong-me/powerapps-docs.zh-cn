@@ -1,4 +1,4 @@
-- name: 入门
+- name: 开始使用
   items:
     - name: 什么是 PowerApps？
       href: ../powerapps-overview.md
@@ -68,6 +68,8 @@
               href: ../user/track-your-progress-with-dashboard-and-charts.md
             - name: 添加 Power BI 仪表板
               href: ../user/add-powerbi-dashboards.md
+            - name: 使用 SharePoint 进行协作
+              href: ../user/collaborate-using-sharepoint.md
         - name: 搜索记录
           items:
             - name: 比较搜索和查找选项
@@ -260,6 +262,8 @@
                   href: ./canvas-apps/working-with-form-layout.md
                 - name: 了解卡片
                   href: ./canvas-apps/working-with-cards.md
+                - name: 显示完整大小的图像
+                  href: ./canvas-apps/display-full-image-on-form.md
             - name: 添加列表
               items:
                 - name: 添加列表框、下拉列表或单选按钮
@@ -374,7 +378,7 @@
                   href: ./canvas-apps/controls/properties-visual.md
                 - name: 大小和位置
                   href: ./canvas-apps/controls/properties-size-location.md
-                - name: Text
+                - name: 文本
                   href: ./canvas-apps/controls/properties-text.md
         - name: 配置应用功能
           items:
@@ -550,7 +554,7 @@
                   href: ./canvas-apps/functions/function-astype-istype.md
                 - name: JSON
                   href: ./canvas-apps/functions/function-json.md
-                - name: Language
+                - name: 语言
                   href: ./canvas-apps/functions/function-language.md
                 - name: Last
                   href: ./canvas-apps/functions/function-first-last.md
@@ -618,11 +622,11 @@
                   href: ./canvas-apps/functions/function-trig.md
                 - name: Rand
                   href: ./canvas-apps/functions/function-rand.md
-                - name: Refresh
+                - name: 刷新
                   href: ./canvas-apps/functions/function-refresh.md
                 - name: 相关
                   href: ./canvas-apps/functions/function-relate-unrelate.md
-                - name: Remove
+                - name: 移除
                   href: ./canvas-apps/functions/function-remove-removeif.md
                 - name: RemoveIf
                   href: ./canvas-apps/functions/function-remove-removeif.md
@@ -654,7 +658,7 @@
                   href: ./canvas-apps/functions/function-datetime-parts.md
                 - name: Select
                   href: ./canvas-apps/functions/function-select.md
-                - name: Set
+                - name: 设置
                   href: ./canvas-apps/functions/function-set.md
                 - name: SetFocus
                   href: ./canvas-apps/functions/function-setfocus.md
@@ -706,7 +710,7 @@
                   href: ./canvas-apps/functions/function-groupby.md
                 - name: 不相关
                   href: ./canvas-apps/functions/function-relate-unrelate.md
-                - name: Update
+                - name: 更新
                   href: ./canvas-apps/functions/function-update-updateif.md
                 - name: UpdateContext
                   href: ./canvas-apps/functions/function-updatecontext.md
@@ -728,7 +732,7 @@
                   href: ./canvas-apps/functions/function-datetime-parts.md
                 - name: 有
                   href: ./canvas-apps/functions/function-with.md
-                - name: Year
+                - name: 年
                   href: ./canvas-apps/functions/function-datetime-parts.md
         - name: 在解决方案中创建应用
           href: ./canvas-apps/add-app-solution.md
@@ -794,7 +798,7 @@
       items:
         - name: 进行基本更改
           href: ./canvas-apps/customize-list-form.md
-        - name: 了解 SharePoint 窗体集成
+        - name: 了解 SharePoint 表单集成
           href: ./canvas-apps/sharepoint-form-integration.md
     - name: 与其他技术集成
       items:
@@ -824,7 +828,7 @@
           href: ./canvas-apps/cognitive-services-api.md
         - name: 将 InfoPath 表单转换为 PowerApps
           href: ./canvas-apps/transform-infopath.md
-    - name: 面向开发人员
+    - name: 开发人员方面
       items:
         - name: 适用于企业开发人员、合作伙伴和 ISV 的画布应用
           href: ./canvas-apps/dev-enterprise-intro.md
@@ -1098,7 +1102,7 @@
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: 自定义 Dynamics 365 App for Outlook
       href: ./model-driven-apps/app-for-outlook-customize.md
-    - name: 面向开发人员
+    - name: 开发人员方面
       href: ../developer/model-driven-apps/overview.md
 - name: Portals
   items:
@@ -1194,7 +1198,7 @@
               href: ./portals/configure/configure-saml2-settings.md
             - name: 将标识提供者迁移到 Azure AD B2C
               href: ./portals/configure/migrate-identity-providers.md
-        - name: Search
+        - name: 搜索
           items:
             - name: 关于搜索
               href: ./portals/configure/search.md
@@ -1530,7 +1534,7 @@
       href: ./common-data-service/import-translated-entity-field-text.md
     - name: Common Data Service 安全性
       href: /power-platform/admin/wp-security
-    - name: 面向开发人员
+    - name: 开发人员方面
       href: ../developer/common-data-service/overview.md
 - name: AI 生成器
   items:
