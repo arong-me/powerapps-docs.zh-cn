@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm-msft
-ms.date: 9/20/2019
+ms.date: 11/26/2019
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dfed631c695cd764396a24311826bedc63eacffb
-ms.sourcegitcommit: 7016ff837eff2cb0985fc71edab95cbf99335677
+ms.openlocfilehash: 53b4adc44addb08432ad6abbe11bf2b217be1534
+ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71159835"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74598482"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>PowerApps 中的控件和属性
 
@@ -60,7 +60,7 @@ ms.locfileid: "71159835"
 
 **[编辑窗体](controls/control-form-detail.md)** – 使用窗体编辑和创建数据源中的记录。
 
-**[实体窗体](entity-form-control.md)** -实验性功能：添加动态窗体，用户可以在其中查看、导航和编辑 Common Data Service 的关系数据。
+**[实体窗体](entity-form-control.md)** – 实验性功能：添加动态窗体，用户可从中通过 Common Data Service 查看、导航和编辑关系数据。
 
 **[导出](controls/control-export-import.md)** – 导出数据以便在 PowerApps 中的其他位置使用。
 
@@ -144,9 +144,9 @@ ms.locfileid: "71159835"
 
 ### <a name="b"></a>B
 
-**[BackgroundImage](controls/properties-visual.md)** – 显示在屏幕背景中的图像文件的名称。  适用于 **[屏幕](controls/control-screen.md)** 控件。
+**[BackgroundImage](controls/properties-visual.md)** – 显示在屏幕背景中的图像文件名称。  适用于 **[屏幕](controls/control-screen.md)** 控件。
 
-**[BorderColor](controls/properties-color-border.md)** – 控件边框的颜色。  适用于许多控件。
+[BorderColor](controls/properties-color-border.md) – 控件边框的颜色。  适用于许多控件。
 
 **[BorderStyle](controls/properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。  适用于许多控件。
 
@@ -194,7 +194,7 @@ ms.locfileid: "71159835"
 
 **[DefaultDate](controls/control-date-picker.md)** – 用户更改日期控件前的初始值。  适用于 **[日期选取器](controls/control-date-picker.md)** 控件。
 
-[DefaultMode](controls/control-form-detail.md) – 表单控件的初始模式，可以是“Edit”、“New”或“View”。  适用于 **[编辑表单](controls/control-form-detail.md)** 控件。
+[DefaultMode](controls/control-form-detail.md) – 表单控件的初始模式，可以是“Edit”、“New”或“View”。  适用于 **[编辑窗体](controls/control-form-detail.md)** 控件。
 
 **[Direction](controls/control-gallery.md)** – 库中的第一个横向项是否显示在左边缘或右边缘的附近。  适用于 **[库](controls/control-gallery.md)** 控件。
 
@@ -230,7 +230,7 @@ ms.locfileid: "71159835"
 
 ### <a name="f"></a>F
 
-**[Fill](controls/properties-color-border.md)** – 控件的背景色。  适用于许多控件。
+**[Fill](controls/properties-color-border.md)** – 控件的背景颜色。  适用于许多控件。
 
 **[FindNext](controls/control-pdf-viewer.md)** – 在文档中查找 **FindText** 的下一个实例。  适用于 **[PDF 查看器](controls/control-pdf-viewer.md)** 控件。
 
@@ -238,9 +238,9 @@ ms.locfileid: "71159835"
 
 **[FindText](controls/control-pdf-viewer.md)** – 要在文档中查找的搜索词。  适用于 **[PDF 查看器](controls/control-pdf-viewer.md)** 控件。
 
-[Font](controls/properties-text.md) – 文本中所显示的字体系列的名称。  适用于许多控件。
+**[Font](controls/properties-text.md)** – 文本中所显示的字体系列的名称。  适用于许多控件。
 
-**[FontWeight](controls/properties-text.md)** -控件中的文本权重：**粗体**、 **Semibold**、 **Normal**或**浅**。  适用于许多控件。
+**[FontWeight](controls/properties-text.md)** – 控件中文本的粗细：**粗体**、**半粗体**、**正常**或**细体**。  适用于许多控件。
 
 ### <a name="g"></a>G
 
@@ -262,13 +262,13 @@ ms.locfileid: "71159835"
 
 **[HoverColor](controls/properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。  适用于许多控件。
 
-**[HoverFill](controls/properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景色。  适用于许多控件。
+**[HoverFill](controls/properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景颜色。  适用于许多控件。
 
 **[HTMLText](controls/control-html-text.md)** – HTML 文本控件中显示的文本，可能包含 HTML 标记。  适用于 **[HTML 文本](controls/control-html-text.md)** 控件。
 
 ### <a name="i"></a>I
 
-[Image](controls/properties-visual.md) – 在图像、音频或麦克风控件中显示的图像名称。  适用于 **[音频](controls/control-audio-video.md)** 、 **[图像](controls/control-image.md)** 、 **[麦克风](controls/control-microphone.md)** 和 **[视频](controls/control-audio-video.md)** 控件。
+**[Image](controls/properties-visual.md)** - 图像、音频或麦克风控件中显示的图像名称。  适用于 **[音频](controls/control-audio-video.md)** 、 **[图像](controls/control-image.md)** 、 **[麦克风](controls/control-microphone.md)** 和 **[视频](controls/control-audio-video.md)** 控件。
 
 **[ImagePosition](controls/properties-visual.md)** – 屏幕或控件大小与图像大小不同时，其中图像的位置（“填充”、“适应”、“拉伸”、“平铺”或“居中”）。  适用于许多控件。
 
@@ -288,7 +288,7 @@ ms.locfileid: "71159835"
 
 **[Items](controls/properties-core.md)** - 控件中显示的数据源，如库、列表或图表。  适用于许多控件。
 
-**[ItemsGap](controls/control-column-line-chart.md)** – 柱形图中各列之间的距离。  适用于 **[柱形图](controls/control-column-line-chart.md)** 控件。
+**[ItemsGap](controls/control-column-line-chart.md)** – 柱形图中各列之间的距离。  适用于 **[柱状图](controls/control-column-line-chart.md)** 控件。
 
 ### <a name="l"></a>L
 
@@ -296,9 +296,9 @@ ms.locfileid: "71159835"
 
 **[LastSubmit](controls/control-form-detail.md)** – 上一次成功提交的记录，包括服务器生成的任何字段。  适用于 **[编辑窗体](controls/control-form-detail.md)** 控件。
 
-**Layout** – 用户是滚动浏览库还是从上到下（**垂直**）或从左到右（**水平**）调整滑块。  适用于 **[库](controls/control-gallery.md)** 和 **[滑块](controls/control-slider.md)** 控件。
+Layout - 用户在滚动浏览库时是从上向下（**垂直**）还是从左向右（**水平**）滚动滑块。  适用于 **[库](controls/control-gallery.md)** 和 **[滑块](controls/control-slider.md)** 控件。
 
-**[LineHeight](controls/properties-text.md)** – 诸如文本行之间或列表中各项之间的距离。  适用于 **[列表框](controls/control-list-box.md)** 、 **[单选按钮](controls/control-radio.md)** 、 **[标签](controls/control-text-box.md)** 和 **[文本输入](controls/control-text-input.md)** 控件。
+**[LineHeight](controls/properties-text.md)** - 文本行之间或列表项之间的距离。  适用于 **[列表框](controls/control-list-box.md)** 、 **[单选按钮](controls/control-radio.md)** 、 **[标签](controls/control-text-box.md)** 和 **[文本输入](controls/control-text-input.md)** 控件。
 
 **[Loop](controls/control-audio-video.md)** – 音频或视频剪辑是否在播放完成后自动重新开始。  适用于 **[音频](controls/control-audio-video.md)** 和 **[视频](controls/control-audio-video.md)** 控件。
 
@@ -308,7 +308,7 @@ ms.locfileid: "71159835"
 
 **[MarkerSuffix](controls/control-column-line-chart.md)** – 在柱形图中每个值后显示的文本，其中 **[Markers](controls/control-column-line-chart.md)** 属性设置为 **true**。  适用于 **[柱状图](controls/control-column-line-chart.md)** 控件。
 
-**Max** – 用户可对滑块或评分设置的最大值。  适用于 **[评分](controls/control-rating.md)** 和 **[滑块](controls/control-slider.md)** 控件。
+**Max** - 用户可对滑块或评分设置的最大值。  适用于 **[评分](controls/control-rating.md)** 和 **[滑块](controls/control-slider.md)** 控件。
 
 **[MaxLength](controls/control-text-input.md)** – 用户可键入文本输入控件中的字符数。  适用于 **[文本输入](controls/control-text-input.md)** 控件。
 
@@ -380,11 +380,11 @@ ms.locfileid: "71159835"
 
 **[PaddingBottom](controls/properties-size-location.md)** – 控件中的文本与该控件下边缘之间的距离。  适用于许多控件。
 
-**[PaddingLeft](controls/properties-size-location.md)** – 控件中的文本与该控件左边缘之间的距离。  适用于许多控件。
+[PaddingLeft](controls/properties-size-location.md) – 控件中的文本与该控件的左边缘之间的距离。  适用于许多控件。
 
-**[PaddingRight](controls/properties-size-location.md)** – 控件中的文本与该控件右边缘之间的距离。  适用于许多控件。
+[PaddingRight](controls/properties-size-location.md) – 控件中的文本与该控件的右边缘之间的距离。  适用于许多控件。
 
-**[PaddingTop](controls/properties-size-location.md)** – 控件中的文本与该控件上边缘之间的距离。  适用于许多控件。
+**[PaddingTop](controls/properties-size-location.md)** - 控件中的文本与此控件的上边缘之间的距离。  适用于许多控件。
 
 **[Page](controls/control-pdf-viewer.md)** – 要显示的页码。  适用于 **[PDF 查看器](controls/control-pdf-viewer.md)** 控件。
 
@@ -398,7 +398,7 @@ ms.locfileid: "71159835"
 
 **[PressedBorderColor](controls/properties-color-border.md)** – 用户在点击或单击控件时，该控件边框的颜色。  适用于许多控件。
 
-[PressedColor](controls/properties-color-border.md) – 用户在点击或单击控件时，该控件中的文本的颜色。  适用于许多控件。
+**[PressedColor](controls/properties-color-border.md)** – 用户在点击或单击控件时，该控件中的文本的颜色。  适用于许多控件。
 
 **[PressedFill](controls/properties-color-border.md)** – 用户在点击或单击控件时，该控件的背景色。  适用于许多控件。
 
@@ -420,29 +420,29 @@ ms.locfileid: "71159835"
 
 **[RadiusTopRight](controls/properties-size-location.md)** – 控件右上角圆角的程度。  适用于许多控件。
 
-**RailFill** – 切换控件的值为 **false** 时该控件中矩形的背景色，或滑块控件中控点右侧线条的颜色。  适用于 **[滑块](controls/control-slider.md)** 和 **[切换](controls/control-toggle.md)** 控件。
+**RailFill** - 切换控件的值为 **false** 时该控件中矩形的背景色，或滑块控件中图柄右侧线条的颜色。  适用于 **[滑块](controls/control-slider.md)** 和 **[切换](controls/control-toggle.md)** 控件。
 
 **RailHoverFill** – 将鼠标悬停在切换控件或滑块上时，切换控件（其值为 **false**）中矩形的背景色，或滑块控件中控点右侧线条的颜色。  适用于 **[滑块](controls/control-slider.md)** 和 **[切换](controls/control-toggle.md)** 控件。
 
 **[RatingFill](controls/control-rating.md)** – 评分控件中星星的颜色。  适用于 **[评分](controls/control-rating.md)** 控件。
 
-**ReadOnly** – 用户是否可以更改滑块或评分控件的值。  适用于 **[评分](controls/control-rating.md)** 和 **[滑块](controls/control-slider.md)** 控件。
+**ReadOnly** - 用户是否可以更改滑块或评分控件的值。  适用于 **[评分](controls/control-rating.md)** 和 **[滑块](controls/control-slider.md)** 控件。
 
 **[Repeat](controls/control-timer.md)** – 计时器运行完毕后是否自动重新启动。  适用于 **[计时器](controls/control-timer.md)** 控件。
 
 **[Required](controls/control-card.md)** – 用于编辑数据源字段的卡片是否必须包含值。  适用于 **[卡片](controls/control-card.md)** 控件。
 
-[Reset](controls/properties-core.md) – 是否还原控件的默认值。  适用于许多控件。  另请参阅 [Reset](functions/function-reset.md) 函数。
+**[Reset](controls/properties-core.md)** - 控件是否还原为其默认值。  适用于许多控件。  另请参阅 [Reset](functions/function-reset.md) 函数。
 
 ### <a name="s"></a>S
 
-**Selected** – 选定的项。  适用于 **[下拉列表](controls/control-drop-down.md)** 和 **[库](controls/control-gallery.md)** 控件。
+Selected - 选定项。  适用于 **[下拉列表](controls/control-drop-down.md)** 和 **[库](controls/control-gallery.md)** 控件。
 
 **[SelectedDate](controls/control-date-picker.md)** – 日期控件中当前选定的日期。  适用于 **[日期选取器](controls/control-date-picker.md)** 控件。
 
-**[SelectionColor](controls/properties-color-border.md)** – 所选项目或列表中项目的文本颜色，或笔控件中选择工具的颜色。  适用于 **[下拉列表](controls/control-drop-down.md)** 、 **[列表框](controls/control-list-box.md)** 和 **[笔输入](controls/control-pen-input.md)** 控件。
+**[SelectionColor](controls/properties-color-border.md)** - 所选项目或列表中项目的文本颜色，或笔控件中所选工具的颜色。  适用于[下拉列表](controls/control-drop-down.md)、[列表框](controls/control-list-box.md)和[笔输入](controls/control-pen-input.md)控件。
 
-**[SelectionFill](controls/properties-color-border.md)** – 所选项目、列表中项目或笔控件中选定区域的背景色。  适用于 **[下拉列表](controls/control-drop-down.md)** 和 **[列表框](controls/control-list-box.md)** 控件。
+**[SelectionFill](controls/properties-color-border.md)** – 所选项目、列表中项目或笔控件中选定区域的背景颜色。  适用于[下拉列表](controls/control-drop-down.md)和[列表框](controls/control-list-box.md)控件。
 
 **[SelectionThickness](controls/control-pen-input.md)** – 笔输入控件的选择工具的粗细。  适用于 **[笔输入](controls/control-pen-input.md)** 控件。
 
@@ -474,9 +474,9 @@ ms.locfileid: "71159835"
 
 **[Stream](controls/control-camera.md)** – 基于 **[StreamRate](controls/control-camera.md)** 属性自动更新的图像。  适用于 **[相机](controls/control-camera.md)** 控件。
 
-**[StreamRate](controls/control-camera.md)** – 在 **[Stream](controls/control-camera.md)** 属性上更新图像的频率（以毫秒为单位）。  此值的范围为 100（1/10 秒）到 3,600,000（1 小时）。  适用于 **[相机](controls/control-camera.md)** 控件。
+**[StreamRate](controls/control-camera.md)** – 在 **[Stream](controls/control-camera.md)** 属性上更新图像的频率（以毫秒为单位）。  此值的范围介于 100（1/10 秒）到 3,600,000（1 小时）之间。  适用于 **[相机](controls/control-camera.md)** 控件。
 
-[Strikethrough](controls/properties-text.md) – 通过文本显示的线是否在控件上显示。  适用于许多控件。
+**[Strikethrough](controls/properties-text.md)** – 通过文本显示的线是否在控件上显示。  适用于许多控件。
 
 ### <a name="t"></a>T
 
@@ -490,7 +490,7 @@ ms.locfileid: "71159835"
 
 **[Time](controls/control-audio-video.md)** – 媒体控件的当前位置。  适用于 **[音频](controls/control-audio-video.md)** 和 **[视频](controls/control-audio-video.md)** 控件。
 
-**[Tooltip](controls/properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。  适用于许多控件。
+**[Tooltip](controls/properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。  适用于许多控件。
 
 **[Transition](controls/control-gallery.md)** – 用户将鼠标悬停在库中的项上时显示的视觉效果（“弹出”、“推出”或“无”）。  适用于 **[库](controls/control-gallery.md)** 控件。
 
@@ -498,7 +498,7 @@ ms.locfileid: "71159835"
 
 ### <a name="u"></a>U
 
-[Underline](controls/properties-text.md) – 在文本下方显示的线是否在控件上显示。  适用于许多控件。
+**[Underline](controls/properties-text.md)** – 在文本下方显示的线是否在控件上显示。  适用于许多控件。
 
 **[Unsaved](controls/control-form-detail.md)** – 如果 **[编辑窗体](controls/control-form-detail.md)** 控件包含尚未保存的用户更改，则此项为 True。  适用于 **[编辑窗体](controls/control-form-detail.md)** 控件。
 
@@ -510,11 +510,11 @@ ms.locfileid: "71159835"
 
 **Valid** – **[卡片](controls/control-card.md)** 或 **[编辑窗体](controls/control-form-detail.md)** 控件是否包含可提交到数据源的有效记录。  适用于 **[卡片](controls/control-card.md)** 和 **[编辑窗体](controls/control-form-detail.md)** 控件。
 
-**[Value](controls/properties-core.md)** – 输入控件的值。  适用于 **[复选框](controls/control-check-box.md)** 、 **[单选按钮](controls/control-radio.md)** 、 **[滑块](controls/control-slider.md)** 和 **[切换](controls/control-toggle.md)** 控件。
+**[Value](controls/properties-core.md)** - 输入控件的值。  适用于 **[复选框](controls/control-check-box.md)** 、 **[单选按钮](controls/control-radio.md)** 、 **[滑块](controls/control-slider.md)** 和 **[切换](controls/control-toggle.md)** 控件。
 
 **ValueFill** – 切换控件的值为 **true** 时该控件中矩形的背景色，或滑块控件中控点左侧线条的颜色。  适用于 **[滑块](controls/control-slider.md)** 和 **[切换](controls/control-toggle.md)** 控件。
 
-**ValueHoverFill** – 将鼠标指针停留在切换控件或滑块上时，切换控件（其值为 **true**）中矩形的背景色，或滑块控件中控点左侧线条的颜色。  适用于 **[滑块](controls/control-slider.md)** 和 **[切换](controls/control-toggle.md)** 控件。
+**ValueHoverFill** - 将鼠标指针停留在切换控件或滑块上时，切换控件（其值为 **true**）中矩形的背景色，或滑块控件中图柄左侧线条的颜色。  适用于 **[滑块](controls/control-slider.md)** 和 **[切换](controls/control-toggle.md)** 控件。
 
 **[VerticalAlign](controls/properties-text.md)** – 控件上的文本相对于该控件垂直居中的位置。  适用于许多控件。
 
@@ -522,7 +522,7 @@ ms.locfileid: "71159835"
 
 ### <a name="w"></a>W
 
-**[Width](controls/properties-size-location.md)** – 控件左边缘和右边缘之间的距离。  适用于许多控件。
+[Width](controls/properties-size-location.md) – 控件左边缘和右边缘之间的距离。  适用于许多控件。
 
 **[WidthFit](controls/properties-size-location.md)** - 控件是否会自动水平变宽，以填充容器控件（如“[编辑表单](controls/control-form-detail.md)”控件）的所有空白空间。 如果多张数据卡将此属性设置为“true”，那么空白空间会被这些数据卡均分。 有关详细信息，请参阅[了解数据表单布局](working-with-form-layout.md)。
 
@@ -532,13 +532,13 @@ ms.locfileid: "71159835"
 
 ### <a name="x"></a>X
 
-**[X](controls/properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。 适用于许多控件。 对于多列容器中的“[数据卡](controls/control-card.md)”控件，此属性将确定数据卡出现在哪一列。
+**[X](controls/properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。 适用于许多控件。 对于多列容器中的“[数据卡](controls/control-card.md)”控件，此属性将确定数据卡出现在哪一列。
 
 **[XLabelAngle](controls/control-column-line-chart.md)** – 柱形图或折线图的 X 轴下方的标签角度。  适用于 **[柱形图](controls/control-column-line-chart.md)** 和 **[折线图](controls/control-column-line-chart.md)** 控件。
 
 ### <a name="y"></a>Y
 
-**[Y](controls/properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。 适用于许多控件。 对于多行容器中的[数据卡](controls/control-card.md)控件，此属性将确定数据卡出现在哪一行。
+**[Y](controls/properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。 适用于许多控件。 对于多行容器中的“[数据卡](controls/control-card.md)”控件，此属性将确定数据卡出现在哪一行。
 
 **[YAxisMax](controls/control-column-line-chart.md)** – 折线图 Y 轴的最大值。  适用于“[折线图](controls/control-column-line-chart.md)”控件。
 
