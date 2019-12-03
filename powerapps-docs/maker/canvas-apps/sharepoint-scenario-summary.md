@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cba5d7bd1214866cc24ba01c64909cf15e0ca96d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d6ee64ddb2ae2f2a9c114a70970843627b92efb1
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674680"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74709709"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>对完成的 SharePoint Online 集成方案进行端到端演练
 > [!NOTE]
@@ -160,7 +160,7 @@ ms.locfileid: "74674680"
 
 我们的端到端演练和本系列教程到此结束。 建议继续访问以下网站：
 
-* [PowerApps](https://www.powerapps.com/)
+* [Power Apps](https://www.powerapps.com/)
 * [电源自动](https://flow.microsoft.com)
 * [Power BI](https://www.powerbi.com)
 * [Power User 社区](https://powerusers.microsoft.com/)
