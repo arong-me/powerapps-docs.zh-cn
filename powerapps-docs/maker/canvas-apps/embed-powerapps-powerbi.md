@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 94eb220bbe386b47e2fbb678f9487fcef8612415
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 60577eb3b6c272093222f1c14685d5ffe1d433f9
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679468"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731534"
 ---
 # <a name="embed-a-new-canvas-app-in-a-power-bi-report"></a>在 Power BI 报表中嵌入新的画布应用
 
@@ -36,7 +36,7 @@ ms.locfileid: "74679468"
 
 * [Google Chrome](https://www.google.com/chrome/browser/) 或 [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) 浏览器
 * 安装了[机会分析示例](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample)的 [Power BI 订阅](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi)
-* 了解如何[在 PowerApps 中创建应用](data-platform-create-app-scratch.md)以及如何[编辑 Power BI 报表](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)
+* 了解如何[在 Power apps 中创建应用](data-platform-create-app-scratch.md)以及如何[编辑 Power BI 报表](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)
 
 ## <a name="import-the-power-apps-custom-visual"></a>导入 Power Apps 自定义视觉对象
 

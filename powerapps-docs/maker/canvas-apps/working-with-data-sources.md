@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0bb04f9c3c1fc0d2b330e53dd39b355421af84aa
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 351e6cd6c680d4d5dc89f4e77c98bdd520f4c2ee
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674273"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732341"
 ---
-# <a name="understand-data-sources-for-canvas-apps-in-powerapps"></a>了解 PowerApps 中画布应用的数据源
+# <a name="understand-data-sources-for-canvas-apps-in-power-apps"></a>了解 Power Apps 中的画布应用的数据源
 
 在 Power Apps 中，大多数画布应用都使用存储在名为 "**数据源**" 的云服务中的外部信息。 一个常见的示例是存储在 OneDrive for Business 中的 Excel 文件中的表。 应用使用**连接**访问这些数据源。
 

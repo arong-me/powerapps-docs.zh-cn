@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5c099f68c7dd8833b2ee494ff83cbbdb2c88b923
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0c0f4744e7b323e3262a63278e7c12348142a99b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678755"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727725"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>从画布应用连接到 SharePoint
 
@@ -40,7 +40,7 @@ ms.locfileid: "74678755"
 
 ## <a name="create-a-connection"></a>创建连接
 
-1. [登录到 PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，在左侧导航栏中选择 "**数据** > **连接**"，然后选择左上角附近的 "**新建连接**"。
+1. [登录到 Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，在左侧导航栏中选择 "**数据** > **连接**"，然后选择左上角附近的 "**新建连接**"。
 
     > [!div class="mx-imgBorder"]
     > ![在左侧导航栏中选择 "数据 > 连接"，然后选择左上角附近的 "新建连接"。](./media/connection-sharepoint-online/new-connection.png)

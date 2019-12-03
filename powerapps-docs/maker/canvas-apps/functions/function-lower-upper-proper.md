@@ -1,6 +1,6 @@
 ---
 title: Lower、Upper 和 Proper 函数 | Microsoft 文档
-description: PowerApps 中 Lower、Upper 和 Proper 函数的引用信息（包括语法和示例）
+description: 适用于 Power Apps 中较低、较高和正确函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 413f07bcca9d238ab1a6f6b020f1d1436f2ca737
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 115b5e51f816778d763481999f8f487a1d64037a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984560"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730594"
 ---
-# <a name="lower-upper-and-proper-functions-in-powerapps"></a>PowerApps 中的 Lower、Upper 和 Proper 函数
+# <a name="lower-upper-and-proper-functions-in-power-apps"></a>Power Apps 中的 Lower、Upper 和正常运行
 将文本字符串中的字母转换为全部小写、全部大写或首字母大写。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Lower**、**Upper** 和 **Proper** 函数转换字符串中字母的大小写。
 
 * **Lower** 将所有大写字母转换为小写。

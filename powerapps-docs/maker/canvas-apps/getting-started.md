@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 600e474117290c5f52793c1d9c3ec72aefc35783
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 543084f04e2c5456182a17f4f193c5cf722cbe27
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676648"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729537"
 ---
 # <a name="what-are-canvas-apps-in-power-apps"></a>什么是 Power Apps 中的画布应用？
 通过 Microsoft Power Apps 中的画布设计和构建业务应用，无需以传统编程语言（例如） C#编写代码。 通过将元素拖放到画布来设计应用，就像在 PowerPoint 中设计幻灯片一样。 创建用于指定逻辑和处理数据的 Excel 类表达式。 构建应用，这些应用可与[丰富多样的 Microsoft 和第三方源](connections-list.md)中的业务数据集成。 共享应用，以便用户可在浏览器或移动设备中运行；嵌入应用，以便用户可在 SharePoint、Power BI 或 Teams 中运行。
@@ -48,7 +48,7 @@ ms.locfileid: "74676648"
 
 ## <a name="learn-more"></a>了解更多
 * 浏览左侧导航窗格中的分步式、概念式参考主题。
-* 查看可根据需要访问的[网络研讨会](webinars-listing.md)，以帮助你利用 PowerApps 的特性和功能。
+* 查看可以按需访问的[网络研讨会](webinars-listing.md)，以帮助你充分利用电源应用的特性和功能。
 * 查看用于最大程度地提高应用程序性能的[编码标准](https://aka.ms/powerappscanvasguidelines)，并使应用更易于维护。
 
 ## <a name="share-your-experience"></a>共享你的体验
@@ -58,5 +58,5 @@ ms.locfileid: "74676648"
 
 ## <a name="next-steps"></a>后续步骤
 - [注册免费许可证。](../signup-for-powerapps.md)
-- [登录 PowerApps。](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+- [登录到 Power Apps。](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 - [打开示例应用。](open-and-run-a-sample-app.md)

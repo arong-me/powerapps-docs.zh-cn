@@ -1,6 +1,6 @@
 ---
 title: Table 函数 | Microsoft 文档
-description: PowerApps 中 Table 函数的参考信息（包括语法和示例）
+description: Power Apps 中表函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2388df10fbc735f619497dc9b93dd049c8a46afa
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 900277f62d35ad36fc914e6ca83a1d03e621bafe
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680089"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729918"
 ---
-# <a name="table-function-in-powerapps"></a>PowerApps 中的 Table 函数
+# <a name="table-function-in-power-apps"></a>Power Apps 中的表函数
 创建一个临时[表](../working-with-tables.md)。
 
 ## <a name="description"></a>描述

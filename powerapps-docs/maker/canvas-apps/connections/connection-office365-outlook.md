@@ -1,6 +1,6 @@
 ---
 title: Office 365 Outlook 连接概述 | Microsoft 文档
-description: 参考信息（包括有关将 Office 365 Outlook 与 PowerApps 相连的示例）
+description: 有关 Office 365 Outlook 连接到 Power Apps 的参考信息（包括示例）
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ba568cb34c12f8b63e8c59f5cb73aa1ed6cb9f02
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1886514d036fe2b64ae82712128b14e19189fc73
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993942"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74728361"
 ---
-# <a name="connect-to-office-365-outlook-from-powerapps"></a>从 PowerApps 连接到 Office 365 Outlook
+# <a name="connect-to-office-365-outlook-from-power-apps"></a>从 Power Apps 连接到 Office 365 Outlook
 ![Office 365 Outlook](./media/connection-office365-outlook/office365icon.png)
 
 如果连接到 Office 365 Outlook，则除了其他任务之外，还可以显示、发送、删除和回复电子邮件。

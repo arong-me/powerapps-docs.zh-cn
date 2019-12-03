@@ -1,6 +1,6 @@
 ---
 title: 共享画布应用中使用的资源 | Microsoft Docs
-description: 了解如何共享画布应用在 PowerApps 中使用的资源
+description: 了解如何共享 canvas 应用在 Power Apps 中使用的资源
 author: archnair
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2160855d1b5ce67a4c11f5e227eb4d889d927d08
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a0dec0f593dee36cbdcff62667177c194abfc6e0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542348"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732479"
 ---
-# <a name="share-canvas-app-resources-in-powerapps"></a>共享 PowerApps 中的画布应用资源
+# <a name="share-canvas-app-resources-in-power-apps"></a>共享画布-Power Apps 中的应用资源
 
 [共享画布应用](share-app.md)前，先考虑应用依赖的资源类型，例如以下一个或多个资源类型：
 

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a3996603e9d5de0f3844be0a3d6b4fb8e1c62d7b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b04c1d9ecc4c2955b68f1ffeae1a5a56e74ab710
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674945"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733091"
 ---
-# <a name="share-a-canvas-app-in-powerapps"></a>在 PowerApps 中共享画布应用
+# <a name="share-a-canvas-app-in-power-apps"></a>在 Power Apps 中共享画布应用
 
 生成满足业务需求的画布应用后，指定组织中哪些用户可以运行应用，哪些用户可以修改并重新共享应用。 按姓名指定每个用户或在 Azure Active Directory 中指定安全组。 如果每个人都可利用你的应用，则指定整个组织可以运行应用。
 
@@ -79,7 +79,7 @@ ms.locfileid: "74674945"
 
 1. 在 "共享" 面板的底部，选择 "**共享**"。
 
-    共享应用的每个人都可以在移动设备上的 Power Apps Mobile 中或在浏览器的[Dynamics 365](https://home.dynamics.com)上的 AppSource 中运行该应用。 共同所有者可在[PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)中编辑并共享应用。
+    共享应用的每个人都可以在移动设备上的 Power Apps Mobile 中或在浏览器的[Dynamics 365](https://home.dynamics.com)上的 AppSource 中运行该应用。 共同所有者可以在[Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)中编辑并共享应用。
 
     如果你发送了电子邮件邀请，则与你共享该应用程序的所有人都可以通过选择邀请中的链接来运行它。
 
@@ -165,7 +165,7 @@ ms.locfileid: "74674945"
 ### <a name="frequently-asked-questions"></a>常见问题
 
 #### <a name="whats-the-difference-between-canvas-app-guest-access-and-power-apps-portals"></a>画布应用来宾访问和电源应用门户之间的区别是什么？ 
-画布应用支持构建一个应用，用于对业务流程进行数字化处理，而无需以传统编程语言（例如C#）编写代码。 对于画布应用的来宾访问，使由不同组织参与共同业务流程的人员团队能够访问与各种 Microsoft 和第三方源集成的相同应用资源。 详细信息： [canvas 的应用连接器概述](/powerapps/maker/canvas-apps/connections-list)。
+画布应用支持构建一个应用，用于对业务流程进行数字化处理，而无需以传统编程语言（例如C#）编写代码。 对于画布应用的来宾访问，使由不同组织参与共同业务流程的人员团队能够访问与各种 Microsoft 和第三方源集成的相同应用资源。 详细信息：[画布的概述-适用于电源应用的应用连接器](/powerapps/maker/canvas-apps/connections-list)。
 
 利用[Power Apps 门户](/powerapps/maker/portals/overview) 提供生成低代码的响应式网站的功能，使外部用户能够与 Common Data Service 中存储的数据进行交互。 它允许组织创建可通过匿名方式或通过其所选的登录提供者（如 LinkedIn、Microsoft 帐户或其他商业登录提供商）与组织外部的用户共享的网站。 
 

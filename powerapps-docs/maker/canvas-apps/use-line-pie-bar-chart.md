@@ -1,6 +1,6 @@
 ---
 title: 在画布应用中创建图表 | Microsoft Docs
-description: In Power Apps, show categories of data as line charts, pie charts, or bar charts in a canvas app
+description: 在 Power Apps 中，在画布应用中将数据类别显示为折线图、饼图或条形图
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 65076c38a1beeb41c9f6f308b6c0c7e82d30fc80
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8b5a5366f3de487b7d34d60d989274223340f4e6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674410"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732419"
 ---
-# <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>在 PowerApps 中使用折线图、饼图或条形图显示数据
+# <a name="show-data-in-a-line-pie-or-bar-chart-in-power-apps"></a>在 Power Apps 中的折线图、饼图或条形图中显示数据
 
 使用折线图、饼图和条形图显示画布应用中的数据。 使用图表时，所导入数据的结构应基于以下条件：
 
@@ -31,13 +31,13 @@ ms.locfileid: "74674410"
 
 ![][9]
 
-You can create and use these charts within Power Apps. 现在就开始吧。
+可以在 Power Apps 中创建并使用这些图表。 现在就开始吧。
 
 ## <a name="prerequisites"></a>必备组件
 
-* [Sign up](../signup-for-powerapps.md) for Power Apps, and then [sign in](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) using the same credentials that you used to sign up.
+* [注册](../signup-for-powerapps.md)Power Apps，然后使用注册所用的同一凭据[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 * 通过[模板](get-started-test-drive.md)、[数据](get-started-create-from-data.md)或[从头开始](get-started-create-from-blank.md)构建应用。
-* 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
+* 了解如何在 Power Apps 中[配置控件](add-configure-controls.md)。
 * 下载 [ChartData.zip](https://pwrappssamples.blob.core.windows.net/samples/ChartData.zip)，其中包含 XML 文件形式的示例数据。 按照本主题中的步骤将其直接导入到应用中。 也可以解压缩该 .zip 文件，在 Excel 中打开 XML 文件，然后将其保存到[云存储帐户](connections/cloud-storage-blob-connections.md)。
 
 ## <a name="import-the-sample-data"></a>导入示例数据

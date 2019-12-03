@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bf83473e8b53d13e58b653974495acbe2595513f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e9c4adb124971ba468ee25efbe012c124b3906e6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674214"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732325"
 ---
 # <a name="power-apps-webinar-listing"></a>Power Apps 网络研讨会列表 #
 这些网络研讨会可以帮助你利用 Microsoft Power Apps 的特性和功能。 直播结束后，可按需观看网络研讨会。 请注意，在某些情况下，必须重新输入注册详细信息，然后才能通过电子邮件收到视频录制链接。 
@@ -30,10 +30,10 @@ ms.locfileid: "74674214"
 **库控件入门**
 <br>主讲人：Audrie Gordon [立即注册并观看](https://info.microsoft.com/US-EAD-WBNR-FY17-02Feb-28-GettingStartedwithPowerAppsGalleries300759_01Registration-ForminBody.html)
 
-**PowerApps 中的公式入门**
+**Power Apps 中的公式入门**
 <br>主讲人：Audrie Gordon [立即注册并观看](https://info.microsoft.com/US-EAD-WBNR-FY17-03Mar-14-GettingStartedwithPowerAppsFormulas300770_01Registration-ForminBody.html)
 
-**PowerApps 中的表单入门**
+**Power Apps 中的表单入门**
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Getting-Started-with-PowerApp-Forms/m-p/116842)
 
 **Power Apps 控件入门**
@@ -52,7 +52,7 @@ ms.locfileid: "74674214"
 <br>主讲人：Emma Cooper [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Getting-Started-New-Office-Graph-Templates-Part-2-by-Emma-Cooper/m-p/116840)
 
 ## <a name="intermediate-webinar-series"></a>中级网络研讨会系列 ##
-**应用生命周期及 PowerApps 中的新“保存并发布”选项**
+**应用程序生命周期和 Power Apps 中的新保存和发布选项**
 <br>主讲人：Karthik Bharathy [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Application-LIfecycle-with-the-new-Save-and-publish-options-in/m-p/116860)
 
 **Power Apps 重点介绍如何使用 Lookup 函数**
@@ -64,7 +64,7 @@ ms.locfileid: "74674214"
 **来自 IWMentor 的 Laura Rogers 分享有关生产应用的最佳做法**
 <br>主讲人：Laura Rodgers [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Laura-Rogers-from-IWMentor-Shares-Best-Practices-for-Production/m-p/116871)
 
-**连接器系列 | Microsoft StaffHub（轮班规划）应用和 PowerApps**
+**连接器系列 |Microsoft StaffHub （倒班计划）应用和 Power Apps**
 <br>主讲人：Marc-André Lépine [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connector-Series-Shift-Scheduling-Apps-with-PowerApps-StaffHub/m-p/122036)
 
 **Power Apps 管理 |常见问题**
@@ -96,16 +96,16 @@ ms.locfileid: "74674214"
 **团队 + Power Apps 提示和技巧**
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Teams-PowerApps-Tips-and-Tricks/m-p/116846)
 
-**从 PowerApps 连接到 OneDrive for Business 上的 Excel 的提示**
+**有关从 Power Apps 连接到 OneDrive for business 上的 Excel 的提示**
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Pro-tips-for-connecting-to-Excel-from-PowerApps-by-Audrie-Gordon/m-p/116881)
 
-**从 PowerApps 连接到本地数据**
+**从 Power Apps 连接到本地数据**
 <br>主讲人：Archana Nair 和 Dimah Zaidalkilani [现在观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-On-Premises-Data-from-PowerApps/m-p/116885)
 
 **使用连接器：使用 Planner 连接器**
 <br> 主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-the-Planner-Connector/m-p/116886)
 
-**结合使用功能强大的 Office Graph 和 PowerApps**
+**具有电源应用的 Office 图形的强大功能**
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/The-Power-of-Office-Graph-with-PowerApps/m-p/116888)
 
 **使用连接器：Project Online (PWA)**
@@ -115,7 +115,7 @@ ms.locfileid: "74674214"
 **通过 Power Apps Studio 快速生成应用程序**
 <br>主讲人：Karthik Bharathy [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rapidly-build-applications-with-PowerApps-Studio/m-p/116849)
 
-**在 PowerApps 中重新生成 InfoPath Designer 表单**
+**在 Power Apps 中重新生成 InfoPath 设计器窗体**
 <br>主讲人：Daniel Christian [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rebuilding-an-InfoPath-Designer-Form/m-p/116909)
 
 **有关 InfoPath 设计器过渡到 Power Apps 的技巧-第1部分**
@@ -147,7 +147,7 @@ ms.locfileid: "74674214"
 **针对采用率和可用性构建应用**
 <br>主讲人：Veronica Ward [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Apps-for-Adoption-and-Usability-with-Veronica-Ward/m-p/117625#M38)
 
-**在 PowerApps 中生成对话或弹出消息**
+**在 Power Apps 中构建对话框或弹出消息**
 <br>主讲人：Veronica Ward [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Dialogs-in-PowerApps-by-Veronica-Ward/m-p/117627#M39)
 
 **查看窗帘的一个 Power Apps 开发人员，详细了解模板： Marie Hoeger**

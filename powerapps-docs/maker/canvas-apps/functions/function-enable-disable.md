@@ -1,6 +1,6 @@
 ---
 title: Enable 和 Disable 函数 | Microsoft 文档
-description: PowerApps 中 Enable 和 Disable 函数的参考信息（包括语法和示例）
+description: 适用于 Power Apps 中的 Enable 和 Disable 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1b58b57ae880f54fc7fccb5aa4c49f0e2fcad6d0
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: af1522934bcfee13c00950a3686583393699d0ad
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992758"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731107"
 ---
-# <a name="enable-and-disable-functions-in-powerapps"></a>PowerApps 中的 Enable 和 Disable 函数
+# <a name="enable-and-disable-functions-in-power-apps"></a>启用和禁用 Power Apps 中的函数
 打开或关闭[信号](signals.md)。
 
 ## <a name="overview"></a>概述
@@ -28,7 +28,7 @@ ms.locfileid: "71992758"
 
 未使用某个信号时，这个信号就会自动关闭。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Enable** 和 **Disable** 函数分别用于打开和关闭信号。
 
 这两个函数仅对 **[定位](signals.md)** 信号有效。

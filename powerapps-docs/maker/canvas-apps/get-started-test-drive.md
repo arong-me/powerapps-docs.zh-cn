@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eac22ce84d5864e79c2964d42ffa5fe37853bc97
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 682657a62db520c431bd0f594a87ae50c5e3ac0c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676257"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732178"
 ---
-# <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>根据 PowerApps 中的模板创建画布应用
+# <a name="create-a-canvas-app-from-a-template-in-power-apps"></a>使用 Power Apps 中的模板创建画布应用
 
 基于特定方案的模板自动创建画布应用，例如跟踪预算和计划休假，然后运行应用以理解其默认行为。
 
@@ -30,7 +30,7 @@ ms.locfileid: "74676257"
 
 ## <a name="create-an-app"></a>创建应用
 
-1. 登录 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 登录到[Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 1. 在“生成自己的应用”下，将鼠标悬停在“从数据开始”上，然后单击或点击“生成此应用”。
 

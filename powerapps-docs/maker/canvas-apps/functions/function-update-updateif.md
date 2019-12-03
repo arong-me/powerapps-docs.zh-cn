@@ -1,6 +1,6 @@
 ---
 title: Update 和 UpdateIf 函数 | Microsoft 文档
-description: PowerApps 中 Update 和 UpdateIf 函数的参考信息（包括语法和示例）
+description: Power Apps 中的 Update 和 UpdateIf 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8dd673c343b484e6c24e218818cdfbba654dcbb7
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0f3a843c75b86170a44dce8da0a61e672d9dab49
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983673"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730017"
 ---
-# <a name="update-and-updateif-functions-in-powerapps"></a>PowerApps 中的 Update 和 UpdateIf 函数
+# <a name="update-and-updateif-functions-in-power-apps"></a>Power Apps 中的 Update 和 UpdateIf 函数
 更新[数据源](../working-with-data-sources.md)中的[记录](../working-with-tables.md#records)。
 
 ## <a name="description"></a>描述
@@ -46,14 +46,14 @@ ms.locfileid: "71983673"
 ## <a name="syntax"></a>语法
 **Update**( *DataSource*, *OldRecord*, *NewRecord* [, **All** ] )
 
-* *DataSource* – 必需。 数据源，其中包含要替换的记录。
+* *DataSource* - 必需。 数据源，其中包含要替换的记录。
 * *OldRecord* - 必需。 要替换的记录。
 * *NewRecord* - 必需。 替换记录。 这不是更改记录。 将替换整个记录，缺失的属性将包含“空”。
 * **All** - 可选。 在集合中，同一记录可能出现多次。 指定 **All** 参数即可删除记录的所有副本。
 
 **UpdateIf**( *DataSource*, *Condition1*, *ChangeRecord1* [, *Condition2*, *ChangeRecord2*, ... ] )
 
-* *DataSource* – 必需。 数据源，其中包含要修改的一个或多个记录。
+* *DataSource* - 必需。 数据源，其中包含要修改的一个或多个记录。
 * *Condition(s)* - 必需。 一个公式，对于一个或多个需修改的记录，该公式的求值结果为 **true**。  可以在公式中使用 *DataSource* 的列名。  
 * *ChangeRecord(s)* - 必需。  对于每个相应的条件，将对符合条件的 *DataSource* 记录应用新属性值的更改记录。 如果使用大括号以内联方式提供记录，则可在属性公式中使用现有记录的属性值。
 

@@ -1,6 +1,6 @@
 ---
 title: IsMatch、Match 和 MatchAll 函数 |Microsoft Docs
-description: PowerApps 中 IsMatch、Match 和 MatchAll 函数的参考信息（包括语法）
+description: Power Apps 中的 IsMatch、Match 和 MatchAll 函数的参考信息（包括语法）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0cfc64397774abc33f27006e331238dc97e9895d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: fb150fc9e640801588e8ab7a5bef4640438679f8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680319"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730780"
 ---
-# <a name="ismatch-match-and-matchall-functions-in-powerapps"></a>PowerApps 中的 IsMatch、Match 和 MatchAll 函数
+# <a name="ismatch-match-and-matchall-functions-in-power-apps"></a>Power Apps 中的 IsMatch、Match 和 MatchAll 函数
 测试是否匹配或根据模式提取文本字符串的某些部分。
 
 ## <a name="description"></a>描述

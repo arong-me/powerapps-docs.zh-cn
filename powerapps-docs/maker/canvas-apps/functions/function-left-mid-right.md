@@ -1,6 +1,6 @@
 ---
 title: Left、Mid 和 Right 函数 | Microsoft 文档
-description: PowerApps 中 Left、Mid 和 Right 函数的参考信息（包括语法和示例）
+description: Power Apps 中 Left、Mid 和 Right 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 81220ab8df16dcea74dbdc9db48e692e379e1b4d
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 182731aaeb82b17e6040c4246f31f7fccc22f923
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992612"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730667"
 ---
-# <a name="left-mid-and-right-functions-in-powerapps"></a>PowerApps 中的 Left、Mid 和 Right 函数
+# <a name="left-mid-and-right-functions-in-power-apps"></a>Power Apps 中的 Left、Mid 和 Right 函数
 提取文本字符串的左侧、中间或右侧部分。
 
 ## <a name="description"></a>描述

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 140fa7c51c30199360a08adc86c6e118e4e5bc52
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4980d7989a65032cec28aab1bc70ae3e01d1747d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679928"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724157"
 ---
 # <a name="preview-create-a-canvas-app-from-azure-sql-database"></a>预览：创建 Azure SQL 数据库中的画布应用
 
@@ -43,7 +43,7 @@ ms.locfileid: "74679928"
 
 1. 登录到[Azure 门户](https://portal.azure.com)。
 2. 导航到 SQL 数据库。
-3. 选择 PowerApps。
+3. 选择 "电源应用"。
 
     
     ![SQL 数据库选项中的 Power Apps 选项](./media/app-from-azure-sql-database/powerapps-link-azure-portal.png "SQL 数据库中的 Power Apps 选项")
@@ -109,10 +109,10 @@ Power Apps 可以使用 Azure 门户连接到 SQL 数据库，**以允许访问 
 在本快速入门中，你使用了 SQL 数据库中的数据创建了一个应用，该应用使用 Azure 门户。 下一步，使用控件、图像和逻辑自定义应用，以便更好地满足你的业务需求。
 
 > [!div class="nextstepaction"]
-> [在 PowerApps 中设计 canvas 应用接口](add-configure-controls.md)
+> [在 Power Apps 中设计 canvas 应用接口](add-configure-controls.md)
 
 ## <a name="see-also"></a>另请参阅
 
-- [在 PowerApps 中共享画布应用](share-app.md) </br>
-- [在 PowerApps 中向画布应用添加数据连接](add-data-connection.md#add-data-source)</br>
-- [Microsoft Learn：在 PowerApps 中自定义画布应用](https://docs.microsoft.com/learn/modules/customize-apps-in-powerapps/)
+- [在 Power Apps 中共享画布应用](share-app.md) </br>
+- [在 Power Apps 中向画布应用添加数据连接](add-data-connection.md#add-data-source)</br>
+- [Microsoft Learn：在 Power Apps 中自定义画布应用](https://docs.microsoft.com/learn/modules/customize-apps-in-powerapps/)

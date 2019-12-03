@@ -1,6 +1,6 @@
 ---
 title: Patch 函数 | Microsoft 文档
-description: PowerApps 中 Patch 函数的参考信息（包括语法和示例）
+description: Power Apps 中补丁函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 711a15a93d1e3ed9839f5d51c0bfa32e00563852
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1b23ac058632c4a4b2196c48ed5ffaf6d63fc2bd
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984324"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730445"
 ---
-# <a name="patch-function-in-powerapps"></a>PowerApps 中的 Patch 函数
+# <a name="patch-function-in-power-apps"></a>Power Apps 中的修补程序函数
 在[数据源](../working-with-data-sources.md)中修改或创建一条或多条[记录](../working-with-tables.md#records)，或者合并数据源外的记录。
 
 使用 **Patch** 函数可以在复杂情况（如执行不需要用户交互的更新或使用跨多个屏幕的窗体）下修改记录。
@@ -71,14 +71,14 @@ ms.locfileid: "71984324"
 #### <a name="modify-or-create-a-record-in-a-data-source"></a>在数据源中修改或创建记录
 **Patch**( *DataSource*, *BaseRecord*, *ChangeRecord1* [, *ChangeRecord2*, … ])
 
-* *DataSource* – 必需。 包含要修改的记录或用于包含要创建的记录的数据源。
+* *DataSource* - 必需。 包含要修改的记录或用于包含要创建的记录的数据源。
 * *BaseRecord* – 必需。 要修改或创建的记录。  如果记录来自数据源，则会找到记录并进行修改。 如果使用 **[Defaults](function-defaults.md)** 函数的结果，则会创建记录。
 * *ChangeRecord(s)* – 必需。  一条或多条记录，其中包含要在 *BaseRecord* 中修改的属性。  更改记录按照参数列表从头到尾的顺序进行处理，并且使用后者的属性值替换前者的属性值。
 
 #### <a name="modify-or-create-a-set-of-records-in-a-data-source"></a>在数据源中修改或创建一组记录
 **Patch**（ *DataSource*， *BaseRecordsTable*， *ChangeRecordTable1* [， *ChangeRecordTable2*，。 ] )
 
-* *DataSource* – 必需。 包含要修改的记录或用于包含要创建的记录的数据源。
+* *DataSource* - 必需。 包含要修改的记录或用于包含要创建的记录的数据源。
 * *BaseRecordTable* – 必需。 要修改或创建的记录的表。  如果记录来自数据源，则会找到记录并进行修改。 如果使用 **[Defaults](function-defaults.md)** 函数的结果，则会创建记录。
 * *ChangeRecordTable(s)* – 必需。  记录的一个或多个表，其中包含在 *BaseRecordTable* 中要修改的每条记录的属性。  更改记录按照参数列表从头到尾的顺序进行处理，并且使用后者的属性值替换前者的属性值。
 

@@ -1,6 +1,6 @@
 ---
 title: Sort and SortByColumns 函数 | Microsoft 文档
-description: PowerApps 中 Sort 和 SortByColumns 函数的引用信息（包括语法和示例）
+description: 适用于 Power Apps 中的 Sort 和 SortByColumns 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b641ce213381dec59a20449cd17cc7919eea0fd4
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 019221618dc936166333758ba31da06e22650178
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678251"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730128"
 ---
-# <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>PowerApps 中的 Sort 和 SortByColumns 函数
+# <a name="sort-and-sortbycolumns-functions-in-power-apps"></a>对 Power Apps 中的函数进行排序和 SortByColumns
 对[表](../working-with-tables.md)进行排序。
 
 ## <a name="description"></a>描述

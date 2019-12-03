@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 945a4fd3c017363a8c43171c8e891e0c32c84a0f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e4c466a2a090836ff880301f0960302413a3e25e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675224"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732636"
 ---
 # <a name="overview-of-the-calendar-screen-template-for-canvas-apps"></a>用于画布应用的日历屏幕模板概述
 
@@ -36,7 +36,7 @@ ms.locfileid: "74675224"
 
 ## <a name="prerequisite"></a>先决条件
 
-熟悉如何[在 PowerApps 中创建应用](../data-platform-create-app-scratch.md)时添加和配置屏幕和其他控件。
+熟悉如何[在 Power Apps 中创建应用](../data-platform-create-app-scratch.md)时添加和配置屏幕和其他控件。
 
 ## <a name="default-functionality"></a>默认功能
 

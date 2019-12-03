@@ -1,6 +1,6 @@
 ---
 title: 画布应用中具有辅助功能的颜色 | Microsoft Docs
-description: PowerApps 画布应用的颜色对比度准则
+description: 适用于 Power Apps 中的画布应用的颜色对比度指南
 author: tahoon
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 44c94a712402ef26a4fa6b36d84e287d3fa506e1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 26fd45efc56ad03bc37635c29ddc7a6dbbe71568
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679284"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725378"
 ---
-# <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>PowerApps 画布应用中具有辅助功能的颜色
+# <a name="accessible-colors-for-canvas-apps-in-power-apps"></a>适用于 Power Apps 中的画布应用的可访问颜色
 画布应用中使用的颜色应方便色盲和弱视用户使用。 默认情况下，所有 Power Apps 主题都是可访问的。 在修改应用中使用的颜色时，请遵循以下准则以确保它们方便用户使用。 有多种联机工具可以帮助确定颜色对比度问题。
 
 ## <a name="minimum-contrast-for-text"></a>文本最小对比度

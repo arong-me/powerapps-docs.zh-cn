@@ -1,6 +1,6 @@
 ---
 title: Abs、Exp、Ln、Power 和 Sqrt 函数 | Microsoft 文档
-description: PowerApps 中 Abs、Sqrt 和其他函数的参考信息（包括语法和示例）
+description: 适用于 Power Apps 中的 Abs、Sqrt 和其他函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6e559f482c8ad151eb04057f3178b141150acc7d
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 925297a8e1a3f4c454cb8bbb09f75a87419cf5cb
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984429"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730487"
 ---
-# <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>PowerApps 中的 Abs、Exp、Ln、Power 和 Sqrt 函数
+# <a name="abs-exp-ln-power-and-sqrt-functions-in-power-apps"></a>Power Apps 中的 Abs、Exp、Ln、Power 和 Sqrt 函数
 计算绝对值、自然对数、平方根和 *e* 或任意数字的指定次方值结果。
 
 ## <a name="description"></a>描述

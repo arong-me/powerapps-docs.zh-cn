@@ -1,6 +1,6 @@
 ---
 title: 画布应用自定义连接器的内容链接 | Microsoft Docs
-description: 介绍了如何在 PowerApps 中创建、使用、共享和认证画布应用自定义连接器的内容的链接。
+description: 用于在 Power Apps 中创建、使用、共享和验证画布应用的自定义连接器的内容的链接。
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2997c2854979d019a71de8d00ddab37263b789d6
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 08e51d682d420d21cfadd78dccd3c303b03d1d99
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675430"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732727"
 ---
 # <a name="custom-connectors-for-canvas-apps"></a>画布应用自定义连接器
 
-无需编写任何代码，就可以通过[Azure 逻辑应用](https://azure.microsoft.com/services/logic-apps)、[电源自动化](https://flow.microsoft.com)和[PowerApps](https://powerapps.microsoft.com)构建工作流和画布应用。 为帮助你集成数据和业务流程，这些服务提供了 [180 多个连接器](https://docs.microsoft.com/connectors/)，可用于 Microsoft 服务和产品及 GitHub、Salesforce、Twitter 等其他服务。
+无需编写任何代码，就可以通过[Azure 逻辑应用](https://azure.microsoft.com/services/logic-apps)、[电源自动化](https://flow.microsoft.com)和[电源应用](https://powerapps.microsoft.com)来构建工作流和画布应用。 为帮助你集成数据和业务流程，这些服务提供了 [180 多个连接器](https://docs.microsoft.com/connectors/)，可用于 Microsoft 服务和产品及 GitHub、Salesforce、Twitter 等其他服务。
 
 有时候，可能需要调用不可作为预生成连接器的 API、服务和系统。 为了支持更多的定制场景，你可以使用自己的触发器和操作生成自定义连接器。 我们在“连接器”文档网站上有一套完整的自定义连接器基础和高级教程。 建议从[自定义连接器概述](https://docs.microsoft.com/connectors/custom-connectors/)开始，但也可以直接转到以下主题，了解特定区域的详细信息：
 

@@ -1,6 +1,6 @@
 ---
 title: Validate 函数 | Microsoft 文档
-description: PowerApps 中 Validate 函数的参考信息（包括语法和示例）
+description: Power Apps 中 Validate 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1004b5e7a921500065cca468d9b85e538110116c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1524b6f28d0ce5b1ed02fbd02d3c2df52e2b300f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71991732"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729831"
 ---
-# <a name="validate-function-in-powerapps"></a>PowerApps 中的 Validate 函数
+# <a name="validate-function-in-power-apps"></a>在 Power Apps 中验证函数
 **Validate** 函数检查单个[列](../working-with-tables.md#columns)或整条[记录](../working-with-tables.md#records)的值对[数据源](../working-with-data-sources.md)是否有效。  
 
 ## <a name="description"></a>描述
@@ -42,13 +42,13 @@ ms.locfileid: "71991732"
 ## <a name="syntax"></a>语法
 **Validate**( *DataSource*, *Column*, *Value* )
 
-* *DataSource* – 必需。 要通过其进行验证的数据源。
+* *DataSource* - 必需。 要通过其进行验证的数据源。
 * *Column* - 必需。 要验证的列。
 * *Value* - 必需。 要验证的所选列的值。
 
 **Validate**( *DataSource*, *OriginalRecord*, *Updates* )
 
-* *DataSource* – 必需。 要通过其进行验证的数据源。
+* *DataSource* - 必需。 要通过其进行验证的数据源。
 * *OriginalRecord* - 必需。  要验证其更新的记录。
 * *Updates* - 必需。  将应用于原始记录的更改。
 
@@ -59,13 +59,13 @@ ms.locfileid: "71991732"
 
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
-| **Validate( Scores, Percentage, 10 )** |对于 **Scores** 数据源的 **Percentage** 列，检查 **10** 是否为有效值。 |空白 |
+| **Validate( Scores, Percentage, 10 )** |对于 **Scores** 数据源的 **Percentage** 列，检查 **10** 是否为有效值。 |*blank* |
 | **Validate( Scores, Percentage, 120 )** |对于 **Scores** 数据源的 **Percentage** 列，检查 **120** 是否为有效值。 |“值必须为 0 到 100 之间。” |
 
 ### <a name="validate-with-a-complete-record"></a>验证完整记录
 
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
-| **Validate( Scores, EditRecord, Gallery.Updates )** |检查所有列中的值对 Scores 数据源而言是否均有效。 在本例中，Percentage 列中的值是 10。 |空白 |
+| **Validate( Scores, EditRecord, Gallery.Updates )** |检查所有列中的值对 Scores 数据源而言是否均有效。 在本例中，Percentage 列中的值是 10。 |*blank* |
 | **Validate( Scores, EditRecord, Gallery.Updates )** | 检查所有列中的值对 Scores 数据源而言是否均有效。 在本例中，Percentage 列中的值是 120。 |“值必须为 0 到 100 之间。” |
 

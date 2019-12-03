@@ -1,6 +1,6 @@
 ---
 title: Remove 和 RemoveIf 函数 | Microsoft 文档
-description: PowerApps 中 Remove 和 RemoveIf 函数的参考信息（包括语法和示例）
+description: Power Apps 中 Remove 和 RemoveIf 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 57432024254598ff8216d6fefafa5354844bb7a4
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 614474c70a8962345b13ddb256cd22d573938b47
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984304"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730403"
 ---
-# <a name="remove-and-removeif-functions-in-powerapps"></a>PowerApps 中的 Remove 和 RemoveIf 函数
+# <a name="remove-and-removeif-functions-in-power-apps"></a>在 Power Apps 中删除和 RemoveIf 函数
 从[数据源](../working-with-data-sources.md)删除[记录](../working-with-tables.md#records)。
 
 ## <a name="description"></a>描述
@@ -42,19 +42,19 @@ ms.locfileid: "71984304"
 ## <a name="syntax"></a>语法
 **Remove**( *DataSource*, *Record1* [, *Record2*, ... ] [, **All** ] )
 
-* *DataSource* – 必需。 数据源，其中包含要删除的一个或多个记录。
+* *DataSource* - 必需。 数据源，其中包含要删除的一个或多个记录。
 * *Record(s)* - 必需。 要删除的一个或多个记录。
 * **All** - 可选。 在集合中，同一记录可能出现多次。  添加 **All** 参数即可删除记录的所有副本。
 
 **Remove**( *DataSource*, *Table* [, **All** ] )
 
-* *DataSource* – 必需。 数据源，其中包含要删除的记录。
+* *DataSource* - 必需。 数据源，其中包含要删除的记录。
 * *Table* - 必需。 要删除的记录表。
 * **All** - 可选。 在集合中，同一记录可能出现多次。  添加 **All** 参数即可删除记录的所有副本。
 
 **RemoveIf**( *DataSource*, *Condition* [, ... ] )
 
-* *DataSource* – 必需。 数据源，其中包含要删除的一个或多个记录。
+* *DataSource* - 必需。 数据源，其中包含要删除的一个或多个记录。
 * *Condition(s)* - 必需。 一个公式，对于要删除的一个或多个记录，该公式的求值结果为 **true**。  可以在公式中使用 *DataSource* 中的列名。  如果指定多个 Conditions，则所有 Conditions 的求值结果都必须为 **true**，然后才能删除一个或多个记录。
 
 ## <a name="examples"></a>示例

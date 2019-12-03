@@ -1,6 +1,6 @@
 ---
 title: 在库中显示数据，并对数据进行排序和筛选 | Microsoft 文档
-description: 使用库显示图像和文本。 在 PowerApps 中对图像进行排序和筛选。
+description: 使用库显示图像和文本。 对 Power Apps 中的映像进行排序和筛选。
 author: adrianorth
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6b65a2a6fcc4899ac92238ec76d45cb4fd2d62c8
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 14925b5e50f1731efc935bc8a3379342283ec2a0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674649"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732460"
 ---
 # <a name="show-sort-and-filter-data-in-a-power-apps-gallery"></a>在 Power Apps 库中显示、排序和筛选数据
 创建一个库来显示有关多种产品的图像和文本，并对该信息进行排序和筛选。

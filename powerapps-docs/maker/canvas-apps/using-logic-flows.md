@@ -13,28 +13,28 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2482e5b4cbbcaaf168320a8cbfe3c31f486bf891
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: a4e19b4b261bb489dd5c63e4393452a500ab3df9
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674311"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732920"
 ---
 # <a name="start-a-flow-in-a-canvas-app"></a>启动画布应用中的流
 
-在画布应用中发生事件时，可以使用 "电源自动化" 创建执行一项或多项任务的逻辑。 例如，配置一个按钮，以便用户选择它时在 SharePoint 列表中创建一个项、发送电子邮件或会议请求、将文件添加到云，或执行所有上述操作。 可以在应用中配置任何用于启动流的控件，该控件在关闭 PowerApps 的情况下仍会继续运行。
+在画布应用中发生事件时，可以使用 "电源自动化" 创建执行一项或多项任务的逻辑。 例如，配置一个按钮，以便用户选择它时在 SharePoint 列表中创建一个项、发送电子邮件或会议请求、将文件添加到云，或执行所有上述操作。 您可以在应用程序中配置任何控件以启动流，即使关闭了 Power Apps，也可以继续运行。
 
 > [!NOTE]
 > 当用户在应用内运行流时，该用户必须具有执行流中指定的任务的权限。 否则，流将失败。
 
 ## <a name="prerequisites"></a>必备组件
 
-- [注册](../signup-for-powerapps.md) PowerApps。
+- [注册](../signup-for-powerapps.md)Power Apps。
 - 了解如何[配置控件](add-configure-controls.md)。
 
 ## <a name="create-a-flow"></a>创建流
 
-1. 登录 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 登录到[Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 1. 在左侧导航栏中，选择 "**业务逻辑**"，然后选择 "**流**"。
 
@@ -67,7 +67,7 @@ ms.locfileid: "74674311"
    
        ![指定列表](./media/using-logic-flows/list-fields.png)
 
-   1. 在列表中选择字段的 "输入" 框（例如**标题**），在 "动态内容" 窗格中选择 "**查看更多**"，然后选择 "**在 PowerApps 中询问**"。 
+   1. 在列表中选择字段的 "输入" 框（例如**标题**），在 "动态内容" 窗格中选择 "**查看更多**"，然后选择 "**在 Power Apps 中询问**"。 
 
        ![将 Power Apps 中的 Ask 参数添加到标题字段](./media/using-logic-flows/ask-in-powerapps.png)
 

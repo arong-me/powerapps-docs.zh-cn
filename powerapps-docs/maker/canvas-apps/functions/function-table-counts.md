@@ -1,6 +1,6 @@
 ---
 title: Count、CountA、CountIf 和 CountRows 函数 | Microsoft 文档
-description: PowerApps 中的 Count、CountA、CountIf 和 CountRows 函数的参考信息（包括语法和示例）
+description: Power Apps 中的 Count、CountA、CountIf 和 CountRows 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 70950a52050226a25270be7531f4589671f0d46f
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: a0c9d7d96b4ca6ce75993586de5a39fd33906f3b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983897"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730062"
 ---
-# <a name="count-counta-countif-and-countrows-functions-in-powerapps"></a>PowerApps 中的 Count、CountA、CountIf 和 CountRows 函数
+# <a name="count-counta-countif-and-countrows-functions-in-power-apps"></a>Power Apps 中的 Count、CountA、CountIf 和 CountRows 函数
 对[表](../working-with-tables.md)中所有[记录](../working-with-tables.md#records)计数，或对所有满足条件的记录计数。
 
 ## <a name="description"></a>描述
@@ -53,7 +53,7 @@ ms.locfileid: "71983897"
 
 ## <a name="example"></a>示例
 1. 导入或创建一个名为**清单**的[集合](../working-with-data-sources.md#collections)，如[在库中显示图像和文本](../show-images-text-gallery-sort-filter.md)所述的第一个子过程。
-2. 添加标签，然后将其 **[Text](../controls/properties-core.md)** 属性设置为以下公式：
+2. 添加一个标签，然后将其 **[Text](../controls/properties-core.md)** 属性设置为以下公式：
    
     **CountIf(Inventory, UnitsInStock < 30)**
    

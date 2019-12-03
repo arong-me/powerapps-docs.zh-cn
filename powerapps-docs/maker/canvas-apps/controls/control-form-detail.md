@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0b25a22e732c96bf35f8951602e706f71b1733a7
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8c65c20d91794c5c5d8601e117fa5755c274d02d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986730"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74722894"
 ---
-# <a name="edit-form-and-display-form-controls-in-powerapps"></a>PowerApps 中的编辑窗体和显示窗体控件
+# <a name="edit-form-and-display-form-controls-in-power-apps"></a>在 Power Apps 中编辑窗体和显示窗体控件
 在数据源中显示、编辑和创建记录。
 
 ## <a name="description"></a>描述
@@ -63,7 +63,7 @@ ms.locfileid: "71986730"
 * 如果提交成功，则会清除“Error”属性并将“ErrorKind”属性设置为“ErrorKind.None”，同时会运行“OnSuccess”公式。 如果用户创建了某个记录（即窗体以前为“新建”模式），则窗体会切换到“编辑”模式，以便用户能够编辑新创建的记录或其他记录。
 * 如果提交失败，则“Error”属性会包含数据源提供的用户友好型错误消息，对问题进行说明。 “ErrorKind”属性会根据问题进行相应的设置，同时会运行“OnFailure”公式。
 
-当两名人员尝试同时更新同一记录时，某些数据源可以检测到这种情况，并将“ErrorKind”设置为“ErrorKind.Conflict”，同时会采取补救措施，使用一个用户所做的更改刷新数据源，并重新应用该用户的更改。
+当两名人员尝试同时更新同一记录时，某些数据源可以检测到这种情况，并将 **ErrorKind** 设置为 **ErrorKind.Conflict**，同时会采取补救措施，使用一个用户所做的更改刷新数据源，并重新应用该用户的更改。
 
 > [!TIP]
 > 如果在表单上提供“取消”按钮，以允许用户放弃正在进行的更改，请将 [ResetForm](../functions/function-form.md) 函数添加到按钮的 [OnSelect](properties-core.md) 属性，即使此属性也包含用于更改屏幕的 [Navigate](../functions/function-navigate.md) 函数，也不例外。 否则，该窗体将保留用户所做的更改。
@@ -104,7 +104,7 @@ ErrorKind – 如果“SubmitForm”运行时发生错误，则此项为所发�
 
 | ErrorKind | 描述 |
 | --- | --- |
-| ErrorKind.Conflict |另一用户更改了同一记录，导致更改冲突。 请执行 [Refresh](../functions/function-refresh.md) 函数以重新加载记录，并尝试再次进行更改。 |
+| **ErrorKind.Conflict** |另一用户更改了同一记录，导致更改冲突。 请执行 [Refresh](../functions/function-refresh.md) 函数以重新加载记录，并尝试再次进行更改。 |
 | ErrorKind.None |错误为未知类型。 |
 | ErrorKind.Sync |数据源报告了错误。 请查看“Error”属性以获取详细信息。 |
 | ErrorKind.Validation |检测到一般性的验证问题。 |
@@ -152,7 +152,7 @@ Updates – 在窗体控件中加载的记录的值，用于写回到数据源�
 
 * 此属性仅适用于“编辑窗体”控件。
 * 使用此属性从控件中的卡片提取字段值。  然后即可通过调用 [Patch](../functions/function-patch.md) 函数或通过某个连接所公开的其他方法，使用这些值来手动更新数据源。  如果使用的是 [SubmitForm](../functions/function-form.md) 函数，则不需使用此属性。
-* 此属性返回值记录。  例如，如果窗体控件包含用于**名称**和**数量**字段的卡片控件，并且这些卡片的 **[更新](control-card.md)** 属性的值分别返回 "小组件" 和10，则窗体控件的 "**更新**" 属性将返回 @no__t 5 {Name："小组件"，数量：10} **。
+* 此属性返回值记录。  例如，如果窗体控件包含“Name”字段和“Quantity”字段的卡片控件，则这些卡片的 [Update](control-card.md) 属性的值会分别返回“Widget”和 10，然后窗体控件的“Updates”属性会返回“{ Name: "Widget", Quantity: 10 }”。
 
 Valid – [卡片](control-card.md)或“编辑窗体”控件是否包含可以提交到数据源的有效条目。
 
@@ -163,23 +163,23 @@ Valid – [卡片](control-card.md)或“编辑窗体”控件是否包含可以
     **SubmitButton.DisplayMode = If(IsBlank( Form.Error ) || Form.Valid, DisplayMode.Edit, DisplayMode.Disabled)**
 
 ## <a name="additional-properties"></a>其他属性
-**[BorderColor](properties-color-border.md)** – 控件边框的颜色。
+[BorderColor](properties-color-border.md) – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-**[Fill](properties-color-border.md)** – 控件的背景色。
+**[Fill](properties-color-border.md)** – 控件的背景颜色。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
-**[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
+[Width](properties-size-location.md) – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="more-information"></a>详细信息
 有关表单工作原理的完整概述，请参阅[了解数据表单](../working-with-forms.md)。

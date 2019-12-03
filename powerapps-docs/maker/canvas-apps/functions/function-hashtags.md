@@ -1,6 +1,6 @@
 ---
 title: HashTags 函数 | Microsoft 文档
-description: PowerApps 中 HashTags 函数的参考信息（包括语法和示例）
+description: Power Apps 中井号标签函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d29fa336ae96a164a6f189010c66deff970ba5a7
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: a88371e9c151ed097d2c86bcb64121c68a6d62d0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984893"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730799"
 ---
-# <a name="hashtags-function-in-powerapps"></a>PowerApps 中的 HashTags 函数
+# <a name="hashtags-function-in-power-apps"></a>Power Apps 中的井号标签函数
 从文本字符串中提取井号标签 (#strings)。
 
 ## <a name="description"></a>描述

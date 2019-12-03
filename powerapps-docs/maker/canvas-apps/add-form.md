@@ -13,20 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed7493dcc9c2ef5f0b84052a11dbadb0947af38e
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 37b7117f599c29f886da3cafeb158db145ad1364
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994194"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724907"
 ---
 # <a name="show-edit-or-add-a-record-in-a-canvas-app"></a>在画布应用中显示、编辑或添加记录
 
 在画布应用中，添加和配置 " **[显示](controls/control-form-detail.md)** 窗体" 控件以显示记录中的所有字段，还可以添加和配置 " **[编辑](controls/control-form-detail.md)** 窗体" 控件以编辑记录中的任何字段、添加记录，并将更改保存回数据源。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
-- 了解如何在 PowerApps 中[添加和配置控件](add-configure-controls.md)。
+- 了解如何在 Power Apps 中[添加和配置控件](add-configure-controls.md)。
 - 下载[此 Excel 文件](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx)，其中包含本教程的示例数据。
 - 将 Excel 文件上传到[云存储帐户](connections/cloud-storage-blob-connections.md)（如 OneDrive for Business）中。
 - 为手机创建或打开应用，[将连接添加](add-data-connection.md)到 Excel 文件中的**FlooringEstimates**表。
@@ -41,7 +41,7 @@ ms.locfileid: "71994194"
     > [!NOTE]
    > 如果不确定如何添加控件、重命名控件或设置属性，请参阅[添加和配置控件](add-configure-controls.md)。
 
-1. 在右侧窗格的 "**属性**" 选项卡上，将 "**项**" 设置为 `FlooringEstimates`，将**值**设置为 `Name`。
+1. 在右侧窗格的 "**属性**" 选项卡上，将 "**项**" 设置为 "`FlooringEstimates`"，将 "**值**" 设置为 `Name`。
 
     ![设置窗体的 Items 属性](./media/add-form/items-property.png)
 

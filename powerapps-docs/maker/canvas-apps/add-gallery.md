@@ -13,20 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fd48455f24cd07a09ce3a7cdb44b2fa6da2a0166
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 09b8f728d175edb598ee832be11cf3329d166ae7
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679238"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724783"
 ---
-# <a name="show-a-list-of-items-in-powerapps"></a>显示 PowerApps 中项的列表
+# <a name="show-a-list-of-items-in-power-apps"></a>显示 Power Apps 中的项目列表
 
 通过向画布应用添加[库](controls/control-gallery.md)控件，显示任意数据源中项的列表。 本主题使用 Excel 作为数据源。 筛选该列表，方法是：将库控件配置为仅显示那些与[文本输入](controls/control-text-input.md)控件中的筛选器条件匹配的项。
 
 ## <a name="prerequisites"></a>必备组件
 
-- 了解如何在 PowerApps 中[添加和配置控件](add-configure-controls.md)。
+- 了解如何在 Power Apps 中[添加和配置控件](add-configure-controls.md)。
 
 - 设置示例数据：
     1. 下载[此 Excel 文件](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx)，其中包含本教程的示例数据。
@@ -34,7 +34,7 @@ ms.locfileid: "74679238"
     2. 将 Excel 文件上传到[云存储帐户](connections/cloud-storage-blob-connections.md)（如 OneDrive for Business）中。
 
 - 打开空白应用：
-    1. [登录 PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+    1. [登录到 Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
     1. 在“生成自己的应用”下，选择“从空白开始创建画布应用”。
 

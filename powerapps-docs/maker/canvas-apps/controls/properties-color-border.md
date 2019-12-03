@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 528dc54fe18971ff8971b4d0d7e87c3bf3c5367a
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 69b15887894bba576364ced8bab9f47eceeb8f96
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986029"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731912"
 ---
-# <a name="color-and-border-properties-in-powerapps"></a>PowerApps 中的颜色和边框属性
+# <a name="color-and-border-properties-in-power-apps"></a>Power Apps 中的颜色和边框属性
 
 ## <a name="overview"></a>概述
 
@@ -42,7 +42,7 @@ ms.locfileid: "71986029"
 
   - **ColorFade （红灯，50%）**
 
-- [**RGBA**](../functions/function-colors.md)函数：指定颜色从0到255的红色、绿色和蓝色分量，并指定从 0% （完全透明）到 100% （完全不透明）的 alpha 通道，如以下示例中所示：
+- [**RGBA**](../functions/function-colors.md)函数：指定颜色从0到255的红色、绿色和蓝色分量，并指定从0% （完全透明）到100% （完全不透明）的 alpha 通道，如以下示例中所示：
 
   - **RGBA （255，0，255，25%）**
 
@@ -54,23 +54,23 @@ ms.locfileid: "71986029"
 
 BorderColor — 控件边框的颜色。
 
-- 适用于[添加图片](control-add-picture.md)、[音频](control-audio-video.md)、[按钮](control-button.md)、[照相机](control-camera.md)、[卡](control-card.md)、[复选框](control-check-box.md)、[柱状图](control-column-line-chart.md)、[日期选取器](control-date-picker.md)、[显示表单](control-form-detail.md)、[下拉列表](control-drop-down.md)、[编辑表单](control-form-detail.md)、[导出](control-export-import.md)、[库](control-gallery.md)、[HTML 文本](control-html-text.md)、[图像](control-image.md)、[导入](control-export-import.md)、[标签](control-text-box.md)、[折线图](control-column-line-chart.md)、[列表框](control-list-box.md)、[麦克风](control-microphone.md)、[PDF 查看器](control-pdf-viewer.md)、[笔输入](control-pen-input.md)、[饼图](control-pie-chart.md)、[单选](control-radio.md)、[评级](control-rating.md)、[滑块](control-slider.md)、[文本输入](control-text-input.md)、[计时器](control-timer.md)、[切换](control-toggle.md)和 **[视频](control-audio-video.md)** 控件。
+- 适用于 **[添加图片](control-add-picture.md)** 、 **[音频](control-audio-video.md)** 、 **[按钮](control-button.md)** 、 **[照相机](control-camera.md)** 、 **[卡片](control-card.md)** 、 **[复选框](control-check-box.md)** 、 **[柱形图](control-column-line-chart.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[显示窗体](control-form-detail.md)** 、 **[下拉](control-drop-down.md)** 列表、 **[编辑窗体](control-form-detail.md)** 、 **[导出](control-export-import.md)** 、 **[库](control-gallery.md)** 、 **[HTML 文本](control-html-text.md)** 、 **[图像](control-image.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[折线图](control-column-line-chart.md)** 、 **[列表框](control-list-box.md)** 、 **[麦克风](control-microphone.md)** 、 **[PDF 查看器](control-pdf-viewer.md)** 、 **[笔输入](control-pen-input.md)** 、 **[饼图](control-pie-chart.md)** 、 **[广播](control-radio.md)** 、 **[分级](control-rating.md)** 、 **[滑块](control-slider.md)** 、 **[文本输入](control-text-input.md)** 、 **[计时器](control-timer.md)** 、 **[切换](control-toggle.md)** 和 **[视频](control-audio-video.md)** 控件。
 
 BorderStyle – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
-- 适用于[添加图片](control-add-picture.md)、[音频](control-audio-video.md)、[按钮](control-button.md)、[照相机](control-camera.md)、[卡](control-card.md)、[复选框](control-check-box.md)、[柱状图](control-column-line-chart.md)、[日期选取器](control-date-picker.md)、[显示表单](control-form-detail.md)、[下拉列表](control-drop-down.md)、[编辑表单](control-form-detail.md)、[导出](control-export-import.md)、[库](control-gallery.md)、[HTML 文本](control-html-text.md)、[图像](control-image.md)、[导入](control-export-import.md)、[标签](control-text-box.md)、[折线图](control-column-line-chart.md)、[列表框](control-list-box.md)、[麦克风](control-microphone.md)、[PDF 查看器](control-pdf-viewer.md)、[笔输入](control-pen-input.md)、[饼图](control-pie-chart.md)、[单选](control-radio.md)、[评级](control-rating.md)、[滑块](control-slider.md)、[文本输入](control-text-input.md)、[计时器](control-timer.md)、[切换](control-toggle.md)和 **[视频](control-audio-video.md)** 控件。
+- 适用于 **[添加图片](control-add-picture.md)** 、 **[音频](control-audio-video.md)** 、 **[按钮](control-button.md)** 、 **[照相机](control-camera.md)** 、 **[卡片](control-card.md)** 、 **[复选框](control-check-box.md)** 、 **[柱形图](control-column-line-chart.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[显示窗体](control-form-detail.md)** 、 **[下拉](control-drop-down.md)** 列表、 **[编辑窗体](control-form-detail.md)** 、 **[导出](control-export-import.md)** 、 **[库](control-gallery.md)** 、 **[HTML 文本](control-html-text.md)** 、 **[图像](control-image.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[折线图](control-column-line-chart.md)** 、 **[列表框](control-list-box.md)** 、 **[麦克风](control-microphone.md)** 、 **[PDF 查看器](control-pdf-viewer.md)** 、 **[笔输入](control-pen-input.md)** 、 **[饼图](control-pie-chart.md)** 、 **[广播](control-radio.md)** 、 **[分级](control-rating.md)** 、 **[滑块](control-slider.md)** 、 **[文本输入](control-text-input.md)** 、 **[计时器](control-timer.md)** 、 **[切换](control-toggle.md)** 和 **[视频](control-audio-video.md)** 控件。
 
 **BorderThickness** – 控件边框的粗细。
 
-- 适用于[添加图片](control-add-picture.md)、[音频](control-audio-video.md)、[按钮](control-button.md)、[照相机](control-camera.md)、[卡](control-card.md)、[复选框](control-check-box.md)、[柱状图](control-column-line-chart.md)、[日期选取器](control-date-picker.md)、[显示表单](control-form-detail.md)、[下拉列表](control-drop-down.md)、[编辑表单](control-form-detail.md)、[导出](control-export-import.md)、[库](control-gallery.md)、[HTML 文本](control-html-text.md)、[图像](control-image.md)、[导入](control-export-import.md)、[标签](control-text-box.md)、[折线图](control-column-line-chart.md)、[列表框](control-list-box.md)、[麦克风](control-microphone.md)、[PDF 查看器](control-pdf-viewer.md)、[笔输入](control-pen-input.md)、[饼图](control-pie-chart.md)、[单选](control-radio.md)、[评级](control-rating.md)、[滑块](control-slider.md)、[文本输入](control-text-input.md)、[计时器](control-timer.md)、[切换](control-toggle.md)和 **[视频](control-audio-video.md)** 控件。
+- 适用于 **[添加图片](control-add-picture.md)** 、 **[音频](control-audio-video.md)** 、 **[按钮](control-button.md)** 、 **[照相机](control-camera.md)** 、 **[卡片](control-card.md)** 、 **[复选框](control-check-box.md)** 、 **[柱形图](control-column-line-chart.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[显示窗体](control-form-detail.md)** 、 **[下拉](control-drop-down.md)** 列表、 **[编辑窗体](control-form-detail.md)** 、 **[导出](control-export-import.md)** 、 **[库](control-gallery.md)** 、 **[HTML 文本](control-html-text.md)** 、 **[图像](control-image.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[折线图](control-column-line-chart.md)** 、 **[列表框](control-list-box.md)** 、 **[麦克风](control-microphone.md)** 、 **[PDF 查看器](control-pdf-viewer.md)** 、 **[笔输入](control-pen-input.md)** 、 **[饼图](control-pie-chart.md)** 、 **[广播](control-radio.md)** 、 **[分级](control-rating.md)** 、 **[滑块](control-slider.md)** 、 **[文本输入](control-text-input.md)** 、 **[计时器](control-timer.md)** 、 **[切换](control-toggle.md)** 和 **[视频](control-audio-video.md)** 控件。
 
 **Color** – 控件中文本的颜色。
 
-- 适用于[添加图片](control-add-picture.md)、[按钮](control-button.md)、[复选框](control-check-box.md)、[柱状图](control-column-line-chart.md)、[日期选取器](control-date-picker.md)、[下拉列表](control-drop-down.md)、[导出](control-export-import.md)、[HTML 文本](control-html-text.md)、[导入](control-export-import.md)、[标签](control-text-box.md)、[折线图](control-column-line-chart.md)、[列表框](control-list-box.md)、[麦克风](control-microphone.md)、[笔输入](control-pen-input.md)、[饼图](control-pie-chart.md)、[单选](control-radio.md)、[文本输入](control-text-input.md)和[计时器](control-timer.md)控件。
+- 适用于 **[添加图片](control-add-picture.md)** 、 **[按钮](control-button.md)** 、 **[复选框](control-check-box.md)** 、 **[柱形图](control-column-line-chart.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[下拉](control-drop-down.md)** 列表 **[、导出](control-export-import.md)** 、 **[HTML 文本](control-html-text.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[折线图](control-column-line-chart.md)** 、 **[列表框](control-list-box.md)** 、 **[麦克风](control-microphone.md)** 、 **[笔输入](control-pen-input.md)** 、 **[饼图](control-pie-chart.md)** 、 **[收音机](control-radio.md)** 、 **[文本输入](control-text-input.md)** 和 **[计时器](control-timer.md)** 控件。
 
 Fill – 控件的背景色。
 
-- 适用于[添加图片](control-add-picture.md)、[音频](control-audio-video.md)、[按钮](control-button.md)、[卡](control-card.md)、[复选框](control-check-box.md)、[日期选取器](control-date-picker.md)、[显示表单](control-form-detail.md)、[下拉列表](control-drop-down.md)、[编辑表单](control-form-detail.md)、[导出](control-export-import.md)、[库](control-gallery.md)、[HTML 文本](control-html-text.md)、[图标](control-shapes-icons.md)、[图像](control-image.md)、[导入](control-export-import.md)、[标签](control-text-box.md)、[列表框](control-list-box.md)、[麦克风](control-microphone.md)、[PDF 查看器](control-pdf-viewer.md)、[笔输入](control-pen-input.md)、[单选](control-radio.md)、[评级](control-rating.md)、[屏幕](control-screen.md)、[形状](control-shapes-icons.md)、[文本输入](control-text-input.md)、[计时器](control-timer.md)、[切换](control-toggle.md)和[视频](control-audio-video.md)控件。
+- 适用于 **[添加图片](control-add-picture.md)** 、 **[音频](control-audio-video.md)** 、 **[按钮](control-button.md)** 、 **[卡片](control-card.md)** 、 **[复选框](control-check-box.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[显示窗体](control-form-detail.md)** 、 **[下拉](control-drop-down.md)** 列表、 **[编辑窗体](control-form-detail.md)** 、 **[导出](control-export-import.md)** 、 **[库](control-gallery.md)** 、 **[HTML 文本](control-html-text.md)** 、 **[图标](control-shapes-icons.md)** 、 **[图像](control-image.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[列表框](control-list-box.md)** 、 **[麦克风](control-microphone.md)** 、 **[PDF 查看器](control-pdf-viewer.md)** 、 **[笔输入](control-pen-input.md)** 、 **[收音机](control-radio.md)** 、 **[分级](control-rating.md)** 、 **[屏幕](control-screen.md)** 、 **[形状](control-shapes-icons.md)** 、 **[文本输入](control-text-input.md)** 、 **[计时器](control-timer.md)** 、 **[切换](control-toggle.md)** 和 **[视频](control-audio-video.md)** 控件。
 
 ## <a name="focused"></a>Focused
 
@@ -80,15 +80,15 @@ Fill – 控件的背景色。
 
 **FocusedBorderThickness** – 聚焦时控件的边框粗细。
 
-- 这些属性适用于[添加图片](control-add-picture.md)、[附件](control-attachments.md)、[音频](control-audio-video.md)、[按钮](control-button.md)、[照相机](control-camera.md)、[复选框](control-check-box.md)、[组合框](control-combo-box.md)， [日期选取器](control-date-picker.md)、[下拉列表](control-drop-down.md)、[导出](control-export-import.md)、[库](control-gallery.md)、[图标](control-shapes-icons.md)、[图像](control-image.md)、[导入](control-export-import.md)、[标签](control-text-box.md)、[列表框](control-list-box.md)、[麦克风](control-microphone.md)、[单选](control-radio.md)、[评级](control-rating.md)、[形状](control-shapes-icons.md)、[滑块](control-slider.md)、[文本输入](control-text-input.md)、[计时器](control-timer.md)、[切换](control-toggle.md)和[视频](control-audio-video.md)控件。
+- 这些属性适用于 **[添加图片](control-add-picture.md)** 、 **[附件](control-attachments.md)** 、 **[音频](control-audio-video.md)** 、 **[按钮](control-button.md)** 、 **[照相机](control-camera.md)** 、 **[复选框](control-check-box.md)** 、 **[组合框](control-combo-box.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[下拉](control-drop-down.md)** 列表、 **[导出](control-export-import.md)** 、 **[库](control-gallery.md)** 、 **[图标](control-shapes-icons.md)** 、 **[图像](control-image.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[列表框](control-list-box.md)** 、 **[麦克风](control-microphone.md)** 、 **[广播](control-radio.md)** 、 **[分级](control-rating.md)** 、 **[形状](control-shapes-icons.md)** 、 **[滑块](control-slider.md)** 、 **[文本输入](control-text-input.md)** 、 **[计时器](control-timer.md)** 、 **[切换](control-toggle.md)** 和 **[视频](control-audio-video.md)** 控件。
 
 ## <a name="disabled"></a>Disabled
 
 以下属性在控件被禁用时起作用。  如果 [Disabled](properties-core.md) 属性设置为“true”，则可以禁用控件。
 
-DisabledBorderColor – 控件的“[DisplayMode](properties-core.md)”属性设置为“Disabled”时，该控件边框的颜色。
+**DisabledBorderColor** – 控件的 **[“DisplayMode”](properties-core.md)** 属性设置为 **“Disabled”** 时，该控件边框的颜色。
 
-- 适用于[添加图片](control-add-picture.md)、[按钮](control-button.md)、[复选框](control-check-box.md)、[柱状图](control-column-line-chart.md)、[日期选取器](control-date-picker.md)、[下拉列表](control-drop-down.md)、[导出](control-export-import.md)、[HTML 文本](control-html-text.md)、[图像](control-image.md)、[导入](control-export-import.md)、[标签](control-text-box.md)、[折线图](control-column-line-chart.md)、[列表框](control-list-box.md)、[麦克风](control-microphone.md)、[PDF 查看器](control-pdf-viewer.md)、[饼图](control-pie-chart.md)、[单选](control-radio.md)、[滑块](control-slider.md)、[文本输入](control-text-input.md)、[计时器](control-timer.md)和[切换](control-toggle.md)控件。
+- 适用于 **[添加图片](control-add-picture.md)** 、 **[按钮](control-button.md)** 、 **[复选框](control-check-box.md)** 、 **[柱形图](control-column-line-chart.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[下拉](control-drop-down.md)** 列表 **[、导出](control-export-import.md)** 、 **[HTML 文本](control-html-text.md)** 、 **[图像](control-image.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[折线图](control-column-line-chart.md)** 、 **[列表框](control-list-box.md)** 、 **[麦克风](control-microphone.md)** 、 **[PDF 查看器](control-pdf-viewer.md)** 、 **[饼图](control-pie-chart.md)** 、 **[广播](control-radio.md)** 、 **[滑块](control-slider.md)** 、 **[文本输入](control-text-input.md)** 、 **[计时器](control-timer.md)** 和 **[切换](control-toggle.md)** 控件。
 
 DisabledColor – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled” 时，该控件中的文本颜色。
 
@@ -104,7 +104,7 @@ DisabledFill– 控件的 [DisplayMode](properties-core.md) 属性设置为“Di
 
 HoverBorderColor – 用户将鼠标指针停留在控件上时，该控件边框的颜色。
 
-- 适用于[添加图片](control-add-picture.md)、[按钮](control-button.md)、[复选框](control-check-box.md)、[柱状图](control-column-line-chart.md)、[下拉列表](control-drop-down.md)、[导出](control-export-import.md)、[HTML 文本](control-html-text.md)、[图像](control-image.md)、[导入](control-export-import.md)、[标签](control-text-box.md)、[折线图](control-column-line-chart.md)、[列表框](control-list-box.md)、[麦克风](control-microphone.md)、[PDF 查看器](control-pdf-viewer.md)、[饼图](control-pie-chart.md)、[滑块](control-slider.md)、[文本输入](control-text-input.md)、[计时器](control-timer.md)和[切换](control-toggle.md)控件。
+- 适用于 **[添加图片](control-add-picture.md)** 、 **[按钮](control-button.md)** 、 **[复选框](control-check-box.md)** 、 **[柱形图](control-column-line-chart.md)** 、 **[下拉](control-drop-down.md)** 列表、 **[导出](control-export-import.md)** 、 **[HTML 文本](control-html-text.md)** 、 **[图像](control-image.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[折线图](control-column-line-chart.md)** 、 **[列表框](control-list-box.md)** 、 **[麦克风](control-microphone.md)** 、 **[PDF 查看器](control-pdf-viewer.md)** 、 **[饼图](control-pie-chart.md)** 、 **[滑块](control-slider.md)** 、 **[文本输入](control-text-input.md)** 、 **[计时器](control-timer.md)** 和 **[切换](control-toggle.md)** 控件。
 
 HoverColor – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。
 
@@ -120,7 +120,7 @@ HoverFill – 用户将鼠标指针停留在控件上时，该控件的背景色
 
 PressedBorderColor – 用户在点击或单击控件时，该控件边框的颜色。
 
-- 适用于[添加图片](control-add-picture.md)、[按钮](control-button.md)、[复选框](control-check-box.md)、[柱状图](control-column-line-chart.md)、[下拉列表](control-drop-down.md)、[导出](control-export-import.md)、[图标](control-shapes-icons.md)、[图像](control-image.md)、[导入](control-export-import.md)、[标签](control-text-box.md)、[折线图](control-column-line-chart.md)、[列表框](control-list-box.md)、[麦克风](control-microphone.md)、[PDF 查看器](control-pdf-viewer.md)、[饼图](control-pie-chart.md)、[形状](control-shapes-icons.md)、[滑块](control-slider.md)、[文本输入](control-text-input.md)、[计时器](control-timer.md)和[切换](control-toggle.md)控件。
+- 适用于 **[添加图片](control-add-picture.md)** 、 **[按钮](control-button.md)** 、 **[复选框](control-check-box.md)** 、 **[柱形图](control-column-line-chart.md)** 、 **[下拉](control-drop-down.md)** 列表、 **[导出](control-export-import.md)** 、 **[图标](control-shapes-icons.md)** 、 **[图像](control-image.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[折线图](control-column-line-chart.md)** 、 **[列表框](control-list-box.md)** 、 **[麦克风](control-microphone.md)** 、 **[PDF 查看器](control-pdf-viewer.md)** 、 **[饼图](control-pie-chart.md)** 、 **[形状](control-shapes-icons.md)** 、 **[滑块](control-slider.md)** 、 **[文本输入](control-text-input.md)** 、 **[计时器](control-timer.md)** 和 **[切换](control-toggle.md)** 控件。
 
 PressedColor – 用户在点击或单击控件时，该控件中的文本颜色。
 

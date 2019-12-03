@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8f2ff84ba79b202a888ab3909a09b3e66dd45640
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: de0aba95b4bb5c3a308b0b86b739302dc0dc70e3
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678916"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724663"
 ---
-# <a name="add-a-scrolling-screen-to-a-canvas-app-in-powerapps"></a>在 PowerApps 中向画布应用添加滚动屏幕
+# <a name="add-a-scrolling-screen-to-a-canvas-app-in-power-apps"></a>在 Power Apps 中向画布应用添加滚动屏幕
 
 在画布应用中，创建用户可以滚动浏览不同项的屏幕。 例如，创建一个手机应用，在多个图表中显示数据，当用户滚动屏幕时可浏览这些数据。
 

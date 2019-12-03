@@ -1,6 +1,6 @@
 ---
 title: Back 和 Navigate 函数 | Microsoft 文档
-description: PowerApps 中 Back 和 Navigate 函数的参考信息（包括语法和示例）
+description: Power Apps 中的导航和后退功能的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8f63321b128214d14cd2f4e521d7cc1b85c7b98f
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: db8d2bf349fe61cac154c7456a60231215e6566c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984478"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730564"
 ---
-# <a name="back-and-navigate-functions-in-powerapps"></a>Microsoft PowerApps 中的 Back 和 Navigate 函数
+# <a name="back-and-navigate-functions-in-power-apps"></a>返回和浏览 Power Apps 中的函数
 
 更改显示的屏幕。
 
@@ -94,9 +94,9 @@ ms.locfileid: "71984478"
 
 1. 向其中添加另一个屏幕。
 
-    应用包含两个空白屏幕：**Screen1**和**Screen2**。
+    应用包含两个空白屏幕： " **Screen1** " 和 " **Screen2**"。
 
-1. 将**Screen2**的**Fill**属性设置为 `Gray` 的值。
+1. 将**Screen2**的**Fill**属性设置为 `Gray`值。
 
 1. 在**Screen2**上，添加一个按钮，并将其 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：
 
@@ -120,4 +120,4 @@ ms.locfileid: "71984478"
 
 1. 重复选择每个屏幕上的按钮，以便来回弹跳。
 
-[其他示例](../add-screen-context-variables.md)
+[再举一例](../add-screen-context-variables.md)

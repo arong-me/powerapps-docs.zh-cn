@@ -1,6 +1,6 @@
 ---
 title: Revert 函数 | Microsoft 文档
-description: PowerApps 中 Revert 函数的参考信息（包括语法和示例）
+description: Power Apps 中的 Revert 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dbf1c623b18bc244e62fd962625f1d7cde35f1e4
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: efaffeac79c104d517d8e7da5b2e324fcac3eecb
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992450"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730346"
 ---
-# <a name="revert-function-in-powerapps"></a>PowerApps 中的 Revert 函数
+# <a name="revert-function-in-power-apps"></a>在 Power Apps 中恢复函数
 刷新[数据源](../working-with-data-sources.md)的[记录](../working-with-tables.md#records)并清除错误。
 
 ## <a name="description"></a>描述
-**Revert** 函数可用于刷新整个数据源或者数据源中的单个记录。 这样你就可以看到其他用户进行的更改。
+**Revert** 函数可用于刷新整个数据源或者数据源中的单个记录。 你将看到其他用户所做的更改。
 
 对于还原的记录，**Revert** 还可以从返回了 **[Errors](function-errors.md)** 函数的[表](../working-with-tables.md)中清除所有错误。
 
@@ -35,7 +35,7 @@ ms.locfileid: "71992450"
 ## <a name="syntax"></a>语法
 **Revert**( *DataSource* [, *Record* ] )
 
-* *DataSource* – 必需。 要还原的数据源。
+* *DataSource* - 必需。 要还原的数据源。
 * *Record* - 可选。  要还原的记录。  如果不指定记录，则会还原整个数据源。
 
 ## <a name="example"></a>示例
@@ -46,13 +46,13 @@ ms.locfileid: "71992450"
 另一个设备上的用户将 **Strawberry** 记录的 **Quantity** 属性改成了 **400**。  几乎在同一时间，你将同一条记录的同一个属性改成了 **500**，但不知道他人也进行了更改。
 
 随后你使用 **[Patch](function-patch.md)** 函数更新记录：<br>
-@no__t 0Patch （IceCream，First （Filter （IceCream，口味 = "草莓"）），{Quantity：500}） **
+**Patch( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ), { Quantity: 500 } )**
 
 当你检查 **[Errors](function-errors.md)** 表时，发现了如下错误：
 
 | 记录 | [列](../working-with-tables.md#columns) | 消息 | 错误 |
 | --- | --- | --- | --- |
-| **{ID：1，口味："草莓"，数量：300}** |空白 |**“另一个用户修改了你尝试修改的记录。请还原记录，然后重试。”** |**ErrorKind.Conflict** |
+| **{ ID: 1, Flavor: "Strawberry", Quantity: 300 }** |*blank* |**"您尝试修改的记录已被另一个用户修改。 请还原记录，然后重试。 "** |**ErrorKind.Conflict** |
 
 根据 **Error** 列中的内容，你可以看到一个“重新加载”按钮，其 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：<br>
 **Revert( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ) )**

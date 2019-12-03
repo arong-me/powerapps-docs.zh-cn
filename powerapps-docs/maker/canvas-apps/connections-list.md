@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6cda843ea95f79e907aa738a6546d63a6a3be270
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9449c9ab8e03159ffdc4e5657d7eb8ca92cbf0f0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678847"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724040"
 ---
-# <a name="overview-of-canvas-app-connectors-for-powerapps"></a>PowerApps 画布应用连接器概述
-数据是大多数应用程序（包括在 Power Apps 中构建的应用程序）的核心。 数据存储在数据源中，应用是通过创建的连接来连接数据。 连接使用特定的连接器与数据源进行通信。 Power Apps 为许多常用的服务和本地数据源（包括 SharePoint、SQL Server、Office 365、Salesforce 和 Twitter）提供了连接器。 若要开始向画布应用添加数据，请参阅[在 PowerApps 中添加数据连接](add-data-connection.md)。
+# <a name="overview-of-canvas-app-connectors-for-power-apps"></a>画布概述-适用于电源应用的应用连接器
+数据是大多数应用程序（包括在 Power Apps 中构建的应用程序）的核心。 数据存储在数据源中，应用是通过创建的连接来连接数据。 连接使用特定的连接器与数据源进行通信。 Power Apps 为许多常用的服务和本地数据源（包括 SharePoint、SQL Server、Office 365、Salesforce 和 Twitter）提供了连接器。 若要开始将数据添加到画布应用，请参阅[在 Power Apps 中添加数据连接](add-data-connection.md)。
 
 连接器可能会提供数据或操作的表。 某些连接器仅提供表，某些连接器仅提供操作，而某些连接器会提供两者。 此外，你的连接器可能是标准连接器或自定义连接器。
 
@@ -37,13 +37,13 @@ ms.locfileid: "74678847"
 
 有关如何用表自定义公式的详细信息，请参阅以下主题：
 
-  [了解 PowerApps 中的数据源](working-with-data-sources.md)<br> 
+  [了解 Power Apps 中的数据源](working-with-data-sources.md)<br> 
   [通过 Excel 数据生成应用](get-started-create-from-data.md)<br> 
   [从头开始创建应用](get-started-create-from-blank.md)<br>
-  [了解 PowerApp 中的表格和记录](working-with-tables.md)
+  [了解 Power Apps 中的表和记录](working-with-tables.md)
 
   > [!NOTE]
-  > 若要连接到 Excel 工作簿数据，工作簿必须托管在 OneDrive 等云存储服务中。 有关详细信息，请参阅[从 PowerApps 连接到云存储](connections/cloud-storage-blob-connections.md)。
+  > 若要连接到 Excel 工作簿数据，工作簿必须托管在 OneDrive 等云存储服务中。 有关详细信息，请参阅[从 Power Apps 连接到云存储](connections/cloud-storage-blob-connections.md)。
 
 ## <a name="actions"></a>执行
 

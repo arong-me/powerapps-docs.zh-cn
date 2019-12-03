@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2afd849a716034e4a4dbd50fd4ad58af059be18b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c1860320715798d1e3acc72af7f158f91b8f3cd0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679997"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724351"
 ---
-# <a name="use-cognitive-services-in-powerapps"></a>在 PowerApps 中使用认知服务
+# <a name="use-cognitive-services-in-power-apps"></a>使用 Power Apps 中的认知服务
 本文介绍如何构建使用[Azure 认知服务文本分析 API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview)来分析文本的基本画布应用。 我们将介绍如何设置文本分析 API，以及如何使用[文本分析连接器](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/)连接到它。 随后将介绍如何创建调用此 API 的画布应用。
 
 > [!NOTE]
@@ -69,7 +69,7 @@ Azure 认知服务是一组 Api、Sdk 和服务，可让应用程序更智能、
 现在，你已启动并运行了文本分析 API，接下来，你可以从 Power Apps 连接到它，并构建调用 API 的应用程序。 这是单屏幕应用，它提供的功能与文本分析 API 页上的演示类似。 我们来开始生成应用！
 
 ### <a name="create-the-app-and-add-a-connection"></a>创建应用并添加连接
-首先，创建空白手机应用，并添加与文本分析连接器的连接。 如果需要关于这些任务的详细信息，请参阅[从头开始创建应用](get-started-create-from-blank.md)和[管理 PowerApps 中的连接](add-manage-connections.md)。
+首先，创建空白手机应用，并添加与文本分析连接器的连接。 如果需要有关这些任务的详细信息，请参阅[从头开始创建应用](get-started-create-from-blank.md)并[管理 Power Apps 中的连接](add-manage-connections.md)。
 
 1. 在 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中，依次选择“从空白开始” > ![手机应用图标](./media/cognitive-services-api/icon-phone-app.png)（手机）>“生成此应用”。
 

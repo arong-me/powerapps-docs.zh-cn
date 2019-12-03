@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ff3e2db1c0d02fda91215ae0e5cc6dd4ae712dd9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 861d343e653a78af685a1e0cb82deb5b2ad59591
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675102"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732574"
 ---
 # <a name="overview-of-the-email-screen-template-for-canvas-apps"></a>用于画布应用的电子邮件屏幕模板概述
 
@@ -36,7 +36,7 @@ ms.locfileid: "74675102"
 
 ## <a name="prerequisite"></a>先决条件
 
-熟悉如何[在 PowerApps 中创建应用](../data-platform-create-app-scratch.md)时添加和配置屏幕和其他控件。
+熟悉如何[在 Power Apps 中创建应用](../data-platform-create-app-scratch.md)时添加和配置屏幕和其他控件。
 
 ## <a name="default-functionality"></a>默认功能
 
@@ -163,5 +163,5 @@ ms.locfileid: "74675102"
 ## <a name="next-steps"></a>后续步骤
 
 * [查看此屏幕的参考文档](./email-screen-reference.md)。
-* [详细了解 PowerApps 中的 Office 365 用户连接器](../connections/connection-office365-users.md)。
-* [查看 PowerApps 中的所有可用连接](../connections-list.md)。
+* [在 Power Apps 中了解有关 Office 365 用户连接器的详细信息](../connections/connection-office365-users.md)。
+* [查看 Power Apps 中的所有可用连接](../connections-list.md)。

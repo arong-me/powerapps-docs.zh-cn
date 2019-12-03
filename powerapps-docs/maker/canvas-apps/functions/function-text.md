@@ -1,6 +1,6 @@
 ---
 title: Text 函数 | Microsoft 文档
-description: PowerApps 中 Text 函数的引用信息（包括语法和示例）
+description: Power Apps 中的文本函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 98836d9dad8d46e88c9587c139ec58fed91fa323
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9ebc28c72d1d25c4a6e85e25a14c8addaf457318
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678137"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729974"
 ---
-# <a name="text-function-in-powerapps"></a>PowerApps 中的 Text 函数
+# <a name="text-function-in-power-apps"></a>Power Apps 中的文本函数
 将数值或日期/时间值的格式转换为文本字符串。
 
 ## <a name="description"></a>描述

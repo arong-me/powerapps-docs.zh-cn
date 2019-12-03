@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5eb7bac0197856988f344ae2779bf2b43d1f797f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 503ab33c2c31854bb39baa8d523dda41f085ae2a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679974"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724376"
 ---
-# <a name="manage-canvas-app-connections-in-powerapps"></a>管理 PowerApps 中的画布应用连接
+# <a name="manage-canvas-app-connections-in-power-apps"></a>管理画布-Power Apps 中的应用连接
 在 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中，创建到一个或多个数据源的连接、删除连接或更新其凭据。
 
 画布应用的数据连接可以连接到 SharePoint、SQL Server、Office 365、OneDrive for Business、Salesforce、Excel 以及许多其他[数据源](connections-list.md)。
@@ -35,7 +35,7 @@ ms.locfileid: "74679974"
 * 连接到 Twilio，并从应用发送短信。
 
 ## <a name="prerequisites"></a>必备组件
-1. [注册](../signup-for-powerapps.md) PowerApps。
+1. [注册](../signup-for-powerapps.md)Power Apps。
 2. 使用注册所用的同一凭据登录到 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 ## <a name="background-on-data-connections"></a>数据连接的背景信息

@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eec6400b4953f1183ffbb294093c13aebb53fe8d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e22800dc929c32f0a605137b6dc94820b984459c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678640"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727320"
 ---
 # <a name="container-control-in-power-apps-experimental"></a>Power Apps 中的容器控件（实验性）
 提供创建层次结构的功能。
 
 > [!IMPORTANT]
 > 这是一项实验性功能。 实验性功能可能随时从根本上更改或彻底消失。
-> 有关详细信息，请参阅[了解 PowerApps 中的实验性和预览功能](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview)。
+> 有关详细信息，请参阅[了解 Power Apps 中的实验性和预览功能](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview)。
 
 ## <a name="description"></a>描述
  容器可以保存一组控件并具有自己的属性。 

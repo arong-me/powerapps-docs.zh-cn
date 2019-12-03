@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bef5a66569a201a76c36da9b1e828169df7f3cb9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f1464c7ca75f4fa811a53d18866ce89037b5e47a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674828"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733039"
 ---
-# <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-powerapps"></a>在 PowerApps 中，如何使用查阅字段关联 SharePoint 列表
+# <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-power-apps"></a>如何使用 Power Apps 中的查找字段链接 SharePoint 列表
 
 本教程演示如何在画布应用中使用查阅字段连接两个 SharePoint 列表。
 

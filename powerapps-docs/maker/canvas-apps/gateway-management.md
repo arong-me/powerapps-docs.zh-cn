@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5ac2eaf3a0cfa4dc5c2a2150aa4a02ab127e5154
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b7d4471fde0bf22ec2900f303347d5d4783381ed
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676540"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729566"
 ---
-# <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>在 PowerApps 中管理本地数据网关
+# <a name="manage-an-on-premises-data-gateway-in-power-apps"></a>在 Power Apps 中管理本地数据网关
 
 安装本地数据网关，以在 Power Apps 内置的画布应用和不在云中的数据源（例如本地 SQL Server 数据库或本地 SharePoint 站点）之间快速、安全地传输数据。 查看拥有管理权限的所有网关，并管理这些网关的权限和连接。
 
@@ -35,7 +35,7 @@ ms.locfileid: "74676540"
 
 ## <a name="prerequisites"></a>必备组件
 
-* [注册](../signup-for-powerapps.md) PowerApps 时使用的用户名和密码。
+* 用于[注册](../signup-for-powerapps.md)Power Apps 的用户名和密码。
 * 网关的管理权限。 （对于安装的每个网关，默认拥有这些权限；其他网关的管理员可以授予相应网关的这些权限。）
 * 支持使用本地网关访问本地数据的许可证。 有关详细信息，请参阅[定价页](https://powerapps.microsoft.com/pricing/)的“连接性”部分。
 * 只能在用户的[默认环境](working-with-environments.md)中创建和使用网关和本地连接。

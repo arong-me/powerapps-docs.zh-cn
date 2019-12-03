@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: da6c30cc824f5bb6cf1f661d332831223c37d5b8
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: aacb19180fc41cc52a9d292fd9d3282f19cc649f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993907"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723771"
 ---
-# <a name="connect-to-office-365-users-connection-from-powerapps"></a>从 PowerApps 连接到 Office 365 用户连接
+# <a name="connect-to-office-365-users-connection-from-power-apps"></a>从 Power Apps 连接到 Office 365 用户连接
 ![Office 365 用户](./media/connection-office365-users/office365icon.png)
 
 借助 Office 365 用户，可以使用 Office 365 帐户访问组织中的用户配置文件。 你可以执行各种操作，如获取配置文件、用户的经理或者直接上级。
@@ -164,7 +164,7 @@ Office 365 用户连接已创建并已添加到你的应用。 现在可供使�
 | [UserProfile](connection-office365-users.md#userprofile) |检索特定用户配置文件。 |
 
 ### <a name="myprofile"></a>MyProfile
-获取我的个人资料：检索当前用户的配置文件。
+获取我的配置文件：检索当前用户的配置文件。
 
 #### <a name="input-properties"></a>输入属性
 无。

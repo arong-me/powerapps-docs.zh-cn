@@ -1,6 +1,6 @@
 ---
-title: 列控件 | Microsoft 文档
-description: 本主题介绍了 Microsoft PowerApps 中的“列”控件。
+title: 列控件：参考 | Microsoft 文档
+description: 本主题提供有关 Microsoft Power Apps 中的列控件的信息。
 author: chmoncay
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 21bc7e025515397fa853e5de7f2df574a3768935
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 6fcf4d94677a21f013734fedc8a4db70955f40b9
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650648"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727470"
 ---
-# <a name="column-control-in-powerapps"></a>PowerApps 中的“列”控件
-用于在“[数据表 **”** ](control-data-table.md)控件中显示单个字段。
+# <a name="column-control-in-power-apps"></a>Power Apps 中的列控件
+用于在“[数据表](control-data-table.md)”控件中显示单个字段。
 
-## <a name="description"></a>说明
-“[数据表 **”** ](control-data-table.md)控件以表格格式显示数据集，表格格式中的每一列都由“列”控件表示。 “列”控件为应用开发者提供用于自定义列外观和行为的属性。
+## <a name="description"></a>描述
+“[数据表](control-data-table.md)”控件以表格格式显示数据集，表格格式中的每一列都由“列”控件表示。 “列”控件为应用开发者提供用于自定义列外观和行为的属性。
 
 ## <a name="capabilities"></a>功能
 ### <a name="now-available"></a>现可用

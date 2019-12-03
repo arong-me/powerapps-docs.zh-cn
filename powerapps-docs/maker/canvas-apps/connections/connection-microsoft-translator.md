@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 387089ea2ee40e8a0d418ab110d7544c17d7c423
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 772f74b13d254746b75253012940efd8bda6e9d3
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679882"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723816"
 ---
-# <a name="connect-to-microsoft-translator-from-powerapps"></a>从 PowerApps 连接到 Microsoft Translator
+# <a name="connect-to-microsoft-translator-from-power-apps"></a>从 Power Apps 连接到 Microsoft Translator
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
 
 添加 Microsoft Translator 连接器，以在应用的“标签”控件中显示已翻译的文本。 例如，可以创建一个输入文本框，要求用户输入要翻译的部分文本。 在另一个标签中，可以显示已翻译的文本。

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7cbc7d0a51a4bab24214f31321264d3347fbb152
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: f46199d0265cf042ebae5dd27ae308fad7eca8e6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649742"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732050"
 ---
-# <a name="shape-controls-and-icon-controls-in-powerapps"></a>PowerApps 中的形状控件和图标控件
+# <a name="shape-controls-and-icon-controls-in-power-apps"></a>Power Apps 中的形状控件和图标控件
 你可以为其配置外观和行为属性的图形。
 
 ## <a name="description"></a>描述

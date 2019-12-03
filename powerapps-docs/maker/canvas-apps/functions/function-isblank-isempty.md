@@ -1,6 +1,6 @@
 ---
 title: Blank、Coalesce、IsBlank 和 IsEmpty 函数 | Microsoft 文档
-description: PowerApps 中 Blank、Coalesce、IsBlank 和 IsEmpty 函数的参考信息（包括语法和示例）
+description: Power Apps 中的空白、合并、IsBlank 和 IsEmpty 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -14,14 +14,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a026d801a6bda6ae82884f5fab94f09b4fdde571
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 59314375b68a73e4c46bd3274a3fefc994465b4d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680365"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730757"
 ---
-# <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>PowerApps 中的 Blank、Coalesce、IsBlank 和 IsEmpty 函数
+# <a name="blank-coalesce-isblank-and-isempty-functions-in-power-apps"></a>Power Apps 中的空白、合并、IsBlank 和 IsEmpty 函数
 测试值是否为空白值，或测试[表](../working-with-tables.md)是否不包含任何[记录](../working-with-tables.md#records)，并能创建*空白*值。
 
 ## <a name="overview"></a>概述

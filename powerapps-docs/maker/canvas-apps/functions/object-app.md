@@ -1,6 +1,6 @@
 ---
 title: 应用对象 |Microsoft Docs
-description: PowerApps 中 App 对象的参考信息（包括语法和示例）
+description: Power Apps 中的应用对象的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c2e34a9f466fcb64bcf14ef6a504d5b18b0a596d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f5f09bab44f3f229b47d9a801703b3aa10cba06d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676746"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729761"
 ---
-# <a name="app-object-in-powerapps"></a>PowerApps 中的应用对象
+# <a name="app-object-in-power-apps"></a>Power Apps 中的应用对象
 
 提供有关当前正在运行的应用程序的信息，并控制应用程序的行为。
 
@@ -83,7 +83,7 @@ ms.locfileid: "74676746"
   - 轻扫，切换到 Power Apps Mobile 中的其他应用。
   - 选择 Android 设备上的 "后退" 按钮。
 
-确认对话框的确切外观可能因 PowerApps 的各种设备和版本而异。
+确认对话框的确切外观可能因电源应用的不同设备和版本而异。
 
 "确认" 对话框不会出现在 Power Apps Studio 中。
 

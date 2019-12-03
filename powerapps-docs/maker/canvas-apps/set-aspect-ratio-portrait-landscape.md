@@ -1,6 +1,6 @@
 ---
 title: 更改画布应用的屏幕大小和方向 | Microsoft Docs
-description: 有关在 PowerApps 中更改画布应用的屏幕大小和方向等设置的分步说明
+description: 在 Power Apps 中更改设置（例如屏幕大小和画布应用的方向）的分步说明
 author: evchaki
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1d3bd48f658e31f795ca3489fa1973c48da94a22
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b6ec2006266a15b7552d1a83b2d7d67c14560470
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995625"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732978"
 ---
-# <a name="change-screen-size-and-orientation-of-a-canvas-app-in-powerapps"></a>在 PowerApps 中更改画布应用的屏幕大小和方向
+# <a name="change-screen-size-and-orientation-of-a-canvas-app-in-power-apps"></a>更改 Power Apps 中画布应用的屏幕大小和方向
 通过更改画布应用的屏幕大小和方向来自定义画布应用。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 创建应用或打开一个应用进行编辑，然后在 "**文件**" 菜单上选择 "**应用设置**"。
 
@@ -47,7 +47,7 @@ ms.locfileid: "71995625"
 
     如果关闭此设置，应用程序将调整到运行该设置的设备的纵横比，并占用所有可用空间。 应用不会缩放，因此屏幕可以显示详细信息。
 
-    如果此设置处于关闭状态，则**锁定纵横比**会自动关闭并禁用。 此外，"所有屏幕" 的 " **Width** " 属性设置为 `Max(App.Width, App.DesignWidth)`，其**Height**属性设置为 `Max(App.Height, App.DesignHeight)`，以便它们跟踪正在运行应用的窗口的尺寸。 通过此更改，你可以创建响应不同设备和窗口维度的应用。 详细信息：[创建响应式布局](create-responsive-layout.md)
+    如果此设置处于关闭状态，则**锁定纵横比**会自动关闭并禁用。 此外，"所有屏幕" 的 " **Width** " 属性设置为 "`Max(App.Width, App.DesignWidth)`"，其 "**高度**" 属性设置为 "`Max(App.Height, App.DesignHeight)` 以便它们跟踪应用运行的窗口的尺寸。 通过此更改，你可以创建响应不同设备和窗口维度的应用。 详细信息：[创建响应式布局](create-responsive-layout.md)
 
 1. 在“**锁定纵横比**”下，指定“**开**”或“**关**”。
 

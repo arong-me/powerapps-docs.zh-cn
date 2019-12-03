@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0f745516ab0c282ab6519f0bac8ac8cfd5f46598
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 284d63d7ebc0eb57e11dae055a9178b3b92646cd
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675745"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729516"
 ---
 # <a name="sign-in-to-power-apps-for-the-first-time"></a>首次登录到 Power Apps
 
-登录到 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 后，站点会为你提供各种选项，用于创建自己的应用、打开你或他人创建的应用和执行相关任务。 这些任务涵盖了从最简单的任务（如标识一个或多个提供访问权限的许可证）到更高级的功能（如创建与特定数据源的自定义连接）。
+当你登录到[电源应用](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)时，该站点会为你提供多种选项，用于创建你自己的应用、打开你或其他人创建的应用，以及执行相关的任务。 这些任务涵盖了从最简单的任务（如标识一个或多个提供访问权限的许可证）到更高级的功能（如创建与特定数据源的自定义连接）。
 
 你可以在以下三个常规区域中选择选项：
 
@@ -112,7 +112,7 @@ ms.locfileid: "74675745"
   - [画布应用连接器的概述](connections-list.md)
   - [生成并认证画布应用的自定义连接器](register-custom-api.md)
   - [管理本地数据网关](gateway-management.md)
-  - [管理 PowerApps](../../administrator/index.md)
+  - [管理 Power Apps](../../administrator/index.md)
   - [许可概述](../../administrator/pricing-billing-skus.md)
   - [生成模型驱动应用的概述](../model-driven-apps/model-driven-app-overview.md)
 

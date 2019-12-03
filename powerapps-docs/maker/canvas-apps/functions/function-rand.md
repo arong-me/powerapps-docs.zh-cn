@@ -1,6 +1,6 @@
 ---
 title: Rand 函数 | Microsoft 文档
-description: PowerApps 中 Rand 函数的参考信息（包括语法）
+description: Power Apps 中 Rand 函数的参考信息（包括语法）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e04a4e4e00d1f35f36b7e5d68cfb32d83b19b86b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 5f34be9a38f4e30bdf19f337a24580615a16697c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992532"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730428"
 ---
-# <a name="rand-function-in-powerapps"></a>PowerApps 中的 Rand 函数
+# <a name="rand-function-in-power-apps"></a>Power Apps 中的 Rand 函数
 返回一个伪随机数。
 
 ## <a name="description"></a>描述

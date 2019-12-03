@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0b8750733ac6c97d1669c1063700a3d075fbabbe
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: a12cd7c17a6aca93f254cc2e2cb89cb848245392
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678479"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731503"
 ---
 # <a name="embed-an-app-in-teams"></a>在 Teams 中嵌入应用
 
@@ -32,7 +32,7 @@ ms.locfileid: "74678479"
 ## <a name="prerequisites"></a>必备组件
 
 - 你需要有效的[Power Apps 许可证](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)。
-- 若要将应用嵌入到团队中，需要[使用 PowerApps 创建](data-platform-create-app.md)的现有应用。
+- 若要将应用嵌入到团队中，需要[使用 Power Apps 创建](data-platform-create-app.md)的现有应用。
 
 ## <a name="download-the-app"></a>下载应用程序
 

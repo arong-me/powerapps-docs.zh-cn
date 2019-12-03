@@ -1,6 +1,6 @@
 ---
 title: 了解画布应用中的表 | Microsoft Docs
-description: 有关使用 PowerApps 中画布应用表、列和记录的参考信息
+description: 有关在 Power Apps 中使用画布应用表、列和记录的参考信息
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8477ecce3ebd1953807cd348ca4080118c03991d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 777dd5452af8662569e2e51452142a1bbce3f619
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74673160"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732858"
 ---
-# <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>了解 PowerApps 中的画布应用表和记录
+# <a name="understand-canvas-app-tables-and-records-in-power-apps"></a>了解应用程序中的画布-应用表和记录
 
 在 Power Apps 中，你可以创建一个画布应用，用于访问 Microsoft Excel、SharePoint、SQL Server 以及在记录和表中存储数据的其他多个源中的信息。 若要最有效地处理此类数据，请查看这些结构的基本概念。
 

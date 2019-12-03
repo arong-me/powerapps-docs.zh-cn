@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 56e5ec7f303706ded114655e5c6d473408e9ddd7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9f80332a490289cc5b59de7131d1c2b2483633e1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680020"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725299"
 ---
-# <a name="create-accessible-canvas-apps-in-powerapps"></a>在 PowerApps 中创建提供辅助功能的画布应用
+# <a name="create-accessible-canvas-apps-in-power-apps"></a>在 Power Apps 中创建辅助性画布应用
 如果画布应用提供辅助功能，那么有视障、听障和其他障碍的用户就能够成功地使用应用。  除了遵守许多政府和组织的要求外，遵守下面的指南可以让所有用户都用起来更加方便，无论他们是否有残障。
 
 使用[辅助功能检查器](accessibility-checker.md)来帮助检查应用中的潜在辅助功能问题。 
@@ -70,4 +70,4 @@ ms.locfileid: "74680020"
 相关：
 - [辅助功能属性](controls/properties-accessibility.md)
 - [使用辅助功能检查器](accessibility-checker.md)
-- [PowerApps 中具有辅助功能的颜色](accessible-apps-color.md)
+- [Power Apps 中的可访问颜色](accessible-apps-color.md)

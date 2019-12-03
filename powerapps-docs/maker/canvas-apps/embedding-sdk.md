@@ -1,6 +1,6 @@
 ---
 title: 预览：在应用程序中嵌入画布应用 |Microsoft Docs
-description: 在 PowerApps 中使用新的嵌入 SDK 在应用程序中嵌入画布应用
+description: 使用 Power Apps 中的新嵌入 SDK 在应用程序中嵌入画布应用
 author: nkrb
 manager: kvivek
 ms.service: powerapps
@@ -12,12 +12,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fb2b04c50f8af17ec341c539c6c55d0f4c3a5bee
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0fdb73c9f27af4087cdd6ba856dfc3d4f80d85c1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679399"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731495"
 ---
 # <a name="preview-embed-canvas-apps-in-your-applications"></a>预览：在应用程序中嵌入画布应用
 

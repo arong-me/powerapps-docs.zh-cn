@@ -1,6 +1,6 @@
 ---
 title: GUID 函数 | Microsoft Docs
-description: PowerApps 中 GUID 函数的参考信息（包括语法）
+description: Power Apps 中 GUID 函数的参考信息（包括语法）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ea2668ca295d807bbc19f71c9aa9f477c3b96041
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 88028d2dc4016d294e051ecff66b590996b57966
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992681"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730864"
 ---
-# <a name="guid-function-in-powerapps"></a>PowerApps 中的 GUID 函数
+# <a name="guid-function-in-power-apps"></a>Power Apps 中的 GUID 函数
 将 GUID（[全局唯一标识符](https://en.wikipedia.org/wiki/Universally_unique_identifier)）字符串转换为 GUID 值或创建新的 GUID 值。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 使用 GUID 函数将包含 GUID 的十六进制表示形式的字符串转换为可以传递到数据库的 GUID 值。 GUID 值用作数据库系统（如 Common Data Service 和 SQL Server）的键。
 
 传递的字符串可以包含大写或小写字母，但必须是采用以下任意格式的 32 位十六进制数字：
@@ -69,7 +69,7 @@ GUID 是不带参数时使用的易失函数。 每次计算该函数时会返�
 
 在上下文中使用该值，以将新数据库记录的“状态”字段设置为完整的值：
 
-* @no__t 0Patch （产品、默认值（产品）、{Status：GUID （"F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4"）}） **
+* **Patch( Products, Default( Products ), { Status: GUID( "F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4" ) } )**
 
 你可能不希望向用户显示 GUID，但 GUID 有助于调试你的应用。 若要在前一个示例中创建的记录中显示“状态”字段的值，请将“标签”控件的“文本”属性设置为以下公式：
 

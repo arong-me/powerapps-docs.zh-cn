@@ -1,6 +1,6 @@
 ---
 title: DataSourceInfo 函数 | Microsoft 文档
-description: PowerApps 中 DataSourceInfo 函数的参考信息（包括语法和示例）
+description: Power Apps 中 DataSourceInfo 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 33a119e1e023ed8a28bdabe9ac5caba0723476df
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 559549a1221ed5e6d5c683a5a3cbaf0f2e9960ed
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985317"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731250"
 ---
-# <a name="datasourceinfo-function-in-powerapps"></a>PowerApps 中的 DataSourceInfo 函数
+# <a name="datasourceinfo-function-in-power-apps"></a>Power Apps 中的 DataSourceInfo 函数
 提供[数据源](../working-with-data-sources.md)的相关信息。
 
 ## <a name="overview"></a>概述
@@ -60,7 +60,7 @@ ms.locfileid: "71985317"
 ## <a name="syntax"></a>语法
 **DataSourceInfo**( *DataSource*, *Information*, *ColumnName* )
 
-* *DataSource* – 必需。 要使用的数据源。
+* *DataSource* - 必需。 要使用的数据源。
 * *Information* – 必需。 要检索的信息类型。
 * *ColumnName* – 可选。 对于列级信息，为字符串形式的列名称。 例如，“手机”列将传递为“Phone”（含双引号）。 对于数据源级别的信息，不能使用 ColumnName 自变量。
   

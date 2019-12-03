@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0ac00411c48cc97cb54c30ccefc3d8a6e1af5e48
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4dcc00f20de3a16f1f3125e8840f2f6d74feff32
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74673238"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733152"
 ---
-# <a name="understand-canvas-app-variables-in-powerapps"></a>了解 PowerApps 中的画布应用变量
+# <a name="understand-canvas-app-variables-in-power-apps"></a>了解 Power Apps 中的画布应用变量
 
 如果你使用过其他编程工具（例如 Visual Basic 或 JavaScript），你可能会问：**变量在哪里？** Power Apps 略有不同，需要不同的方法。 与其在生成画布应用时使用变量，不如问自己：我会在 Excel 中执行哪些操作？
 
@@ -30,7 +30,7 @@ ms.locfileid: "74673238"
 
 一般情况下，应避免使用变量。 但有时候，只有使用变量才能获得所需的体验。 当变量出现在设置其值的函数中时，它们将被隐式创建和键入。 
 
-## <a name="translate-excel-into-powerapps"></a>将 Excel 转换成 PowerApps
+## <a name="translate-excel-into-power-apps"></a>将 Excel 转换为 Power Apps
 
 ### <a name="excel"></a>Excel
 
@@ -42,17 +42,17 @@ ms.locfileid: "74673238"
 
 Excel 没有变量。 包含公式的单元格的值随输入而更改，但无法记住公式的结果，也无法将结果存储在单元格或任何其他地方。 如果更改某个单元格的值，则整个电子表格都会更改，以前计算出来的值就会丢失。 Excel 用户可以复制和粘贴单元格，但那是在用户的手动控制之下完成的，不可能通过公式来完成。
 
-### <a name="powerapps"></a>PowerApp
+### <a name="power-apps"></a>PowerApps
 
 在 Power Apps 中创建的应用的行为与 Excel 非常类似。 可以将控件添加到屏幕的任意位置，并根据其在公式中的用途为其命名，不需更新单元格。
 
 例如，可以通过添加 **[标签](controls/control-text-box.md)** 控件（名为**Label1**）和两个 **[文本输入](controls/control-text-input.md)** 控件（名为**TextInput1**和**TextInput2**），在应用中复制 Excel 行为。 如果随后将**Label1**的 **[Text](controls/properties-core.md)** 属性设置为**TextInput1 + TextInput2**，则它将始终显示**TextInput1**和**TextInput2**中的任何数字的总和。
 
-![计算 PowerApps 中两个数字之和](media/working-with-variables/recalc1.png)
+![计算 Power Apps 中两个数字之和](media/working-with-variables/recalc1.png)
 
 请注意，选择了**Label1**控件，并在屏幕顶部的编辑栏中显示其 **[文本](controls/properties-core.md)** 公式。 在这里，我们可以找到公式 **TextInput1 + TextInput2**。 该公式在这些控件之间创建了一个依赖关系，就像在 Excel 工作簿中的单元格之间创建依赖关系一样。  让我们更改**TextInput1**的值：
 
-![计算 PowerApps 中两个数字之和的动画](media/working-with-variables/recalc2.gif)
+![计算 Power Apps 中两个数字之和的动画](media/working-with-variables/recalc2.gif)
 
 用于**Label1**的公式已自动重新计算，并显示新值。
 
@@ -325,4 +325,4 @@ Power Apps 具有三种类型的变量：
 12. 按 F5 键再次预览，在文本输入控件中输入数字，然后选择按钮。 选择“保存”按钮。 关闭并重新加载应用，然后选择 "**加载**" 按钮以重新加载集合。
 
 > [!NOTE]
-> Power Apps Mobile 中的**SaveData**和**LoadData**函数，但不适用于 PowerApps 的 power apps Studio 或 web 播放器。
+> Power apps Mobile 中的**SaveData**和**LoadData**函数，但不支持 power apps Studio 或 Web player for power apps。

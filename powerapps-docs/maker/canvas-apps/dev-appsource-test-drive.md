@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3970c5181939f8ab6e8bd1ad4f396595d7083ff3
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 324c7880643a6e06bc147d1bbafb1b9638b8f2ec
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679560"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731597"
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>让客户在 AppSource 上体验画布应用
 
@@ -113,7 +113,7 @@ RemoveIf( SiteInspectorCollect, ID = record.ID )
 总之，可以创建包含嵌入数据的应用版本，从而模拟连接外部数据的应用体验。 嵌入数据后，可以在 AppSource.com 上将此应用发布为体验版解决方案。
 
 ## <a name="how-do-i-list-my-test-drive-solution-on-appsourcecom"></a>如何在 AppSource.com 上列出我的体验版解决方案？
-至此，你的应用已准备就绪，是时候将其发布到 AppSource.com 中了。 在此流程中，请先在 PowerApps.com 上填写[申请表单](https://powerapps.microsoft.com/partners/get-listed/)。
+至此，你的应用已准备就绪，是时候将其发布到 AppSource.com 中了。 若要开始此过程，请完成 Power Apps.com 上的[应用程序表单](https://powerapps.microsoft.com/partners/get-listed/)。
 
 申请后，你会收到一封电子邮件，其中介绍了如何提交要在 AppSource.com 上发布的应用。 还可以单击[此处](https://go.microsoft.com/fwlink/?linkid=851031)，下载收录完整端到端流程的新手入门文档。
 

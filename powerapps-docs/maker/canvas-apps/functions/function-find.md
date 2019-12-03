@@ -1,6 +1,6 @@
 ---
 title: Find 函数 | Microsoft 文档
-description: PowerApps 中 Find 函数的引用信息（包括语法和示例）
+description: Power Apps 中 Find 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fbdd29ed1757301f076ab6bebea548fcd7a963cc
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 62254bf46836ffc8ed5fa5b7685561b611db49a7
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984953"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730980"
 ---
-# <a name="find-function-in-powerapps"></a>PowerApps 中的 Find 函数
+# <a name="find-function-in-power-apps"></a>在 Power Apps 中查找函数
 在其他字符串中查找文本字符串（如果存在）。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Find** 函数在其他字符串中查找字符串，且区分大小写。 若要忽略大小写，需首先对参数使用 **[Lower](function-lower-upper-proper.md)** 函数。
 
 **Find** 返回找到的字符串的起始位置。  位置 1 是字符串的第一个字符。 如果在其中进行搜索的字符串中不包含要搜索的字符串，**Find** 将返回空白。

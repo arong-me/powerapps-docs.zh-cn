@@ -1,6 +1,6 @@
 ---
 title: Set 函数 | Microsoft 文档
-description: PowerApps 中 Set 函数的参考信息（包括语法和示例）
+description: Power Apps 中 Set 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 72adafedfe09a125fda2a48d5617b2cd8c79242a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6c0e4cfc1a180e183f29392181cd7699b6cb9242
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678180"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730209"
 ---
-# <a name="set-function-in-powerapps"></a>PowerApps 中的 Set 函数
+# <a name="set-function-in-power-apps"></a>在 Power Apps 中设置函数
 设置全局变量的值。
 
 ## <a name="overview"></a>概述

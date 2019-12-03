@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f2b401fb4054d63e19b1dcab29cbabf27cc3c117
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 5ee1d56e6144f0c7f4e1b3ca440063f87b7bdc5d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674629"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733071"
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>如何在 Excel 文件中保存图像，并将其添加到你的应用
 
@@ -100,5 +100,5 @@ ms.locfileid: "74674629"
 ## <a name="learn-more"></a>了解更多
 [添加图像、视频或声音](add-images-pictures-audio-video.md)  
 [在应用中显示线形图、饼形图或条形图中的数据](use-line-pie-bar-chart.md)  
-[了解 PowerApp 中的表格和记录](working-with-tables.md)
+[了解 Power Apps 中的表和记录](working-with-tables.md)
 

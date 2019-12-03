@@ -1,6 +1,6 @@
 ---
 title: ShowError 函数 | Microsoft Docs
-description: PowerApps 中 ShowErro 函数的参考信息（包括语法和示例）
+description: Power Apps 中 ShowError 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1a02a83e00b9f377f3882cb32c1e6b6606b5cc2a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 02881fdf284a174f5118e7ee0ae185cca61578f8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678226"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730186"
 ---
-# <a name="notify-function-in-powerapps"></a>PowerApps 中的 Notify 函数
+# <a name="notify-function-in-power-apps"></a>在 Power Apps 中通知功能
 向用户显示横幅消息。
 
 ## <a name="description"></a>描述
@@ -41,7 +41,7 @@ Notify 只能在[行为公式](../working-with-formulas-in-depth.md)中使用。
 
 Notify 可以搭配 [IfError](function-iferror.md) 函数使用，以检测错误并使用自定义错误消息报告错误。
 
-Power Apps 还可以使用完全不同的机制从**通知**发送推送通知。  有关详细信息，请参阅[在 PowerApps 中发送通知](../add-notifications.md)。
+Power Apps 还可以使用完全不同的机制从**通知**发送推送通知。  有关详细信息，请参阅[在 Power Apps 中发送通知](../add-notifications.md)。
 
 Notify 始终返回“true”。
 

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1b9f819ab7e047b68e60b9c78e6f7f000502abb8
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b0e189bc2bfd922839373f009fcc54a34217daba
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993316"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732055"
 ---
-# <a name="screen-control-in-powerapps"></a>PowerApps 中的屏幕控件
+# <a name="screen-control-in-power-apps"></a>Power Apps 中的屏幕控件
 
 一个包含应用中一个或多个其他控件的 UI 元素。
 
@@ -32,7 +32,7 @@ ms.locfileid: "71993316"
 
 **[BackgroundImage](properties-visual.md)** – 显示在屏幕背景中的图像文件名称。
 
-**[Fill](properties-color-border.md)** – 控件的背景色。
+**[Fill](properties-color-border.md)** – 控件的背景颜色。
 
 ## <a name="additional-properties"></a>其他属性
 

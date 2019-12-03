@@ -1,6 +1,6 @@
 ---
 title: AddColumns、DropColumns、RenameColumns 和 ShowColumns 函数 | Microsoft 文档
-description: 有关 PowerApps 中 AddColumns、DropColumns、RenameColumns 和 ShowColumns 函数的参考信息，包括语法和示例
+description: Power Apps 中的 AddColumns、DropColumns、RenameColumns 和 ShowColumns 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 55e38d2be5f43e1b13fc1894f88aac26a26bd57e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c60017202c398d7a7e73ea9ff3ccee2bd8835b42
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678203"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730052"
 ---
-# <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>PowerApps 中的 AddColumns、DropColumns、RenameColumns 和 ShowColumns 函数
+# <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-power-apps"></a>Power Apps 中的 AddColumns、DropColumns、RenameColumns 和 ShowColumns 函数
 通过添加、删除、重命名和选择[表](../working-with-tables.md)的[列](../working-with-tables.md#columns)来为表造型。
 
 ## <a name="overview"></a>概述

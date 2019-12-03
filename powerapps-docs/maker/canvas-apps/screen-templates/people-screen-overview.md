@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4f54a2f6d3bfa7c843b7b095f999050602e063b0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b530fe0623c72f9df1adda1067638a3d1a1099f1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675022"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732547"
 ---
 # <a name="overview-of-the-people-screen-template-for-canvas-apps"></a>用于画布应用的人员屏幕模板概述
 
@@ -36,7 +36,7 @@ ms.locfileid: "74675022"
 
 ## <a name="prerequisite"></a>先决条件
 
-熟悉如何[在 PowerApps 中创建应用](../data-platform-create-app-scratch.md)时添加和配置屏幕和其他控件。
+熟悉如何[在 Power Apps 中创建应用](../data-platform-create-app-scratch.md)时添加和配置屏幕和其他控件。
 
 ## <a name="default-functionality"></a>默认功能
 

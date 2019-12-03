@@ -1,6 +1,6 @@
 ---
 title: 连接到 Oracle 数据库 | Microsoft 文档
-description: 了解如何连接到 Oracle 数据库并使用它在 PowerApps 中生成应用。
+description: 了解如何连接到 Oracle Database 并将其用于在 Power Apps 中构建应用。
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 31bf18342de1191dbd816093186fe33e31755232
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b742193e2d127993779e2bba94f35c0c24ecfd7b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678732"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74728417"
 ---
-# <a name="connect-to-an-oracle-database-from-powerapps"></a>从 PowerApps 连接到 Oracle 数据库
+# <a name="connect-to-an-oracle-database-from-power-apps"></a>从 Power Apps 连接到 Oracle 数据库
 创建连接并在 Power Apps 中构建应用后，列出表，并在 Oracle 数据库中创建、读取、更新和删除表行。 Oracle 数据库连接支持完全委派筛选、排序和其他功能，但触发器或存储过程除外。
 
 ## <a name="prerequisites"></a>必备组件

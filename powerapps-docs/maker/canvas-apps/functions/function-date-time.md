@@ -1,6 +1,6 @@
 ---
 title: Date 和 Time 函数 | Microsoft 文档
-description: PowerApps 中 Date 和 Time 函数的引用信息（包括语法和示例）
+description: Power Apps 中的日期和时间函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: efd6e2cdea45f511a545ccfe2f38309bdf622110
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 01fdccf295dbf21e61790d537f74af562dce69f0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985220"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731216"
 ---
-# <a name="date-and-time-functions-in-powerapps"></a>PowerApps 中的 Date 和 Time 函数
+# <a name="date-and-time-functions-in-power-apps"></a>Power Apps 中的日期和时间函数
 将日期和时间组件转换为日期/时间值。
 
 ## <a name="description"></a>描述

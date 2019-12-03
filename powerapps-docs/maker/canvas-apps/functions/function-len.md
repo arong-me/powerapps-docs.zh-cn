@@ -1,6 +1,6 @@
 ---
 title: Len 函数 | Microsoft 文档
-description: PowerApps 中 Len 函数的参考信息（包括语法和示例）
+description: Power Apps 中的 Len 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 967d83286cd179177cfbb5558f1fc3484a332875
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 07b706d9cc0a61e204669646734cdcaf7fc50946
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984609"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730628"
 ---
-# <a name="len-function-in-powerapps"></a>PowerApps 中的 Len 函数
+# <a name="len-function-in-power-apps"></a>Power Apps 中的 Len 函数
 返回文本字符串的长度。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 如果将单个字符串指定为参数，则返回值是数字形式的长度。  如果指定一个包含字符串的单列[表](../working-with-tables.md)，则返回值是一个单列表，其中包含每个字符串的长度。 如果你有多列表，可以将其调整为单列表，如[使用表](../working-with-tables.md)中所述。
 
 如果指定[空白](function-isblank-isempty.md)字符串，则**Len**返回0。

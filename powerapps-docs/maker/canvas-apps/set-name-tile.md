@@ -1,6 +1,6 @@
 ---
 title: 更改画布应用的应用名称和图标 |Microsoft Docs
-description: 有关在 PowerApps 中更改画布应用的应用名称和图标等设置的分步说明
+description: 在 Power Apps 中更改画布应用设置（例如应用程序名称和图标）的分步说明
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 68e6b4495c6f3c69b5a0b21f1ad8a5fc26e032de
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b258e5fb9361746c30873c478d11c486b2e62727
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989094"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732498"
 ---
-# <a name="change-app-name-and-icon-for-a-canvas-app-in-powerapps"></a>在 PowerApps 中更改画布应用的应用名称和图标
+# <a name="change-app-name-and-icon-for-a-canvas-app-in-power-apps"></a>更改 Power Apps 中的画布应用的应用名称和图标
 通过更改名称和图标自定义画布应用。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 1. 创建应用或打开应用进行编辑。
 
 2. 在“**文件**”菜单上，单击或点击“**应用设置**”。

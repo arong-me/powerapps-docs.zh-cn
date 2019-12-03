@@ -1,6 +1,6 @@
 ---
 title: Split 函数 | Microsoft 文档
-description: PowerApps 中 Split 函数的参考信息（包括语法和示例）
+description: Power Apps 中 Split 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 72f92477cc8c942ee0274267c5bcb13094681873
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: d58c4b64f558ec2a9348a9a9433b9a55f69419db
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984144"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730114"
 ---
-# <a name="split-function-in-powerapps"></a>PowerApps 中的 Split 函数
+# <a name="split-function-in-power-apps"></a>Power Apps 中的 Split 函数
 将文本字符串拆分成子字符串表。
 
 ## <a name="description"></a>描述

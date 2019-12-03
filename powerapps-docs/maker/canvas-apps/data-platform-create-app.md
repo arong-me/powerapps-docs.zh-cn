@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f1737a70a8b9f6be30c73a91116c88df38609966
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b98fcb51e5b379e6507e73f680100c9702ec24a8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678548"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731668"
 ---
-# <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>在 PowerApps 中 Common Data Service 生成画布应用
+# <a name="generate-a-canvas-app-from-common-data-service-in-power-apps"></a>从 Power Apps 中的 Common Data Service 生成画布应用
 
 在 Power Apps 中，会根据[Common Data Service](../common-data-service/data-platform-intro.md)中的示例帐户列表自动生成画布应用。 在此应用中，可以浏览所有帐户、显示单个帐户的详细信息以及创建、更新或删除帐户。
 
@@ -32,7 +32,7 @@ ms.locfileid: "74678548"
 
 ## <a name="generate-an-app"></a>生成应用
 
-1. 登录到 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ，如有必要，按本主题前文所述切换环境。
+1. 登录到[Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ，如有必要，按本主题前面指定的方式切换环境。
 
 1. 在“生成自己的应用”下，将鼠标悬停在“从数据开始”上，然后选择“生成此应用”。
 

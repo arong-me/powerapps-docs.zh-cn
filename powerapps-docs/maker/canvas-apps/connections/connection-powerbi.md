@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 100b69583593bd506cb6860890ee3dfcfc82ebdf
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 40741bbaaba75f6cb1312057d5bba8c02ea15835
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540434"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723618"
 ---
-# <a name="connect-to-power-bi-from-powerapps"></a>从 PowerApps 连接到 Power BI
+# <a name="connect-to-power-bi-from-power-apps"></a>从 Power Apps 连接到 Power BI
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
 
 Power BI 是一套用于分析数据和共享见解的业务分析工具。 通过每个设备上提供的丰富的仪表板来监视业务并快速获取答案。 可以在应用中检查在 Power BI 服务中设置的数据警报的状态。 有关 Power BI 中数据警报的详细信息，请转到[文档页](https://docs.microsoft.com/power-bi/service-set-data-alerts)。

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5912723765f99539852884a3fe55738c171c64c3
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 61cf2ad5926daf8b1b5bea6310b9fb29563208e2
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678571"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731700"
 ---
-# <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>使用 PowerApps 自定义 SharePoint 列表窗体
+# <a name="customize-a-sharepoint-list-form-by-using-power-apps"></a>使用 Power Apps 自定义 SharePoint 列表窗体
 
 可以通过在浏览器中打开 Power Apps 来轻松地自定义 SharePoint 列表的窗体。 不必编写传统代码（例如 C#）或下载其他应用（例如 InfoPath）。 发布更改时，窗体嵌入到 SharePoint 列表中，供其所有用户使用。 在 Power Apps 中，你还可以查看分析报表、轻松创建条件格式以及连接到其他数据源。
 
@@ -114,7 +114,7 @@ ms.locfileid: "74678571"
 
     - **使用默认 SharePoint 窗体** - 当用户打开你的列表并在命令栏中选择“新建”时，将显示该列表的默认窗体。
 
-    - **使用在 PowerApps 中创建的自定义窗体** - 当用户打开你的列表并在命令栏中选择“新建”时，将显示自定义窗体。 （或者，可以在 PowerApps 中再次发布窗体。）
+    - **使用在 Power Apps 中创建的自定义窗体**-当用户打开列表并在命令栏中选择 "**新建**" 时，将显示自定义窗体。 （作为替代方法，可以在 Power Apps 中再次发布表单。）
 
     可以根据需要在选项之间反复切换。
 
@@ -198,11 +198,11 @@ ms.locfileid: "74678571"
 
 **问：** 是否需要使用 Power Apps 许可证来创建或使用自定义列表窗体？
 
-答：需要[包含 PowerApps 的 Office 365 计划](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus#licenses)。
+**答：** 需要[包含电源应用的 Office 365 计划](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus#licenses)。
 
 问：当来宾用户访问具有自定义窗体的列表时，会发生什么情况？
 
-答：如果来宾用户尝试访问已使用 PowerApps 自定义的列表窗体，将会收到一条错误消息。
+**答：** 如果来宾用户尝试访问已使用 Power Apps 自定义的列表窗体，会收到一条错误消息。
 
 问：作为管理员，如何在组织中获取所有自定义窗体列表？
 

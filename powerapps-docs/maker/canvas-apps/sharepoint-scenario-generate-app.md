@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 42ca4a12f75c82bb685396a857e5ae825d8d7fa1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cbf5fdaf3ae6cbba2f89124316ac6d23455a712c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674791"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733059"
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>生成用于处理项目请求的画布应用
 > [!NOTE]
@@ -166,7 +166,7 @@ ms.locfileid: "74674791"
 
 4. 此时，SortByColumns 函数可以对库进行排序。 在此示例中，这个函数是按“Title”字段（但可能不同于搜索所依据的字段）进行排序。
 
-如果你坚持看到这里，我们由衷希望你能够更好地了解此公式的工作原理，以及如何将函数和其他元素结合使用来驱动所需的应用行为。 有关详细信息，请参阅 [PowerApps 的公式参考](formula-reference.md)。
+如果你坚持看到这里，我们由衷希望你能够更好地了解此公式的工作原理，以及如何将函数和其他元素结合使用来驱动所需的应用行为。 有关详细信息，请参阅[Power Apps 的公式参考](formula-reference.md)。
 
 ## <a name="next-steps"></a>后续步骤
 本系列教程的下一步是[创建用于管理项目审批的流](sharepoint-scenario-approval-flow.md)。

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9e96b0733e139657c3105ec020470d55fe5008dd
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: af4412e2f098d6e7e5996b2de436b674cfa60a40
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678982"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724631"
 ---
-# <a name="add-images-to-excel-from-powerapps"></a>通过 PowerApps 将图像添加到 Excel 中
+# <a name="add-images-to-excel-from-power-apps"></a>从 Power Apps 向 Excel 添加图像
 自动创建应用，用户可以在其中显示、添加或删除各文件中的图像，或通过“笔”控件绘制的画图。 此应用以你创建并上载到云存储帐户中的 Excel 文件为依据。
 
 ## <a name="prerequisites"></a>必备组件

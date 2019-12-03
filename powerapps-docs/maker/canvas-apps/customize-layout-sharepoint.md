@@ -1,6 +1,6 @@
 ---
 title: 教程 - 在生成应用中自定义库 | Microsoft Docs
-description: 本教程将介绍自定义显示在库中的数据，以及在 PowerApps 中自动生成的应用的其他元素。
+description: 在本教程中，您将自定义出现在库中的数据以及在 Power Apps 中自动生成的应用程序的其他元素。
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a3afda5686c6b791243126c70b9c6d33762beae0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 02d6e3b7a3dc18ab4c7d4d3d5f510b6c3bbd227a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679652"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731726"
 ---
-# <a name="tutorial-customize-a-gallery-in-powerapps"></a>教程：在 PowerApps 中自定义库
+# <a name="tutorial-customize-a-gallery-in-power-apps"></a>教程：在 Power Apps 中自定义库
 
 在本教程中，你将自定义一系列记录（称为库），并在 Microsoft Power Apps 中自动生成的应用中进行其他更改。 即使不进行这些更改，用户也可以管理应用中的数据，但是，如果对其进行自定义来满足组织需要，则可以更加轻松使用该应用。
 
@@ -51,7 +51,7 @@ ms.locfileid: "74679652"
 
 ## <a name="open-the-generated-app"></a>打开生成的应用
 
-1. 登录 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后选择左边缘附近的“应用”。
+1. 登录到[Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后选择左边缘附近的 "**应用**"。
 
 1. 找到你生成的应用，选择其省略号图标 (...)，然后选择“编辑”。
 
