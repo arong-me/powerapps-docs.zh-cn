@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 21effecae904675e39c914145ee10df9c81ec752
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 50b783bce993d40ae88c438c115b2b859a08b7f8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679836"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723285"
 ---
-# <a name="connect-to-twitter-from-powerapps"></a>从 PowerApps 连接到 Twitter
+# <a name="connect-to-twitter-from-power-apps"></a>从 Power Apps 连接到 Twitter
 ![Twitter](./media/connection-twitter/twittericon.png)
 
 可以通过 Twitter 发布推文，并获取 Twitter 帐户的推文、时间线、好友和关注者。

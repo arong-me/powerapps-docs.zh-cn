@@ -1,6 +1,6 @@
 ---
 title: Day、Month、Year、Hour、Minute、Second 和 Weekday 函数 | Microsoft 文档
-description: PowerApps 中 Day、Month、Year、Hour、Minute、Second 和 Weekday 函数的参考信息（包括语法和示例）
+description: Power Apps 中的 Day、Month、Year、Hour、Minute、Second 和 Weekday 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bc5d17903ea5cfe834fd4e0987b4fc4613a1ad65
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 571ec9d9b18be623a60bedfc3ac04e8ed8e46b33
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992826"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731144"
 ---
-# <a name="day-month-year-hour-minute-second-and-weekday-functions-in-powerapps"></a>PowerApps 中的 Day、Month、Year、Hour、Minute、Second 和 Weekday 函数
+# <a name="day-month-year-hour-minute-second-and-weekday-functions-in-power-apps"></a>Power Apps 中的 Day、Month、Year、Hour、Minute、Second 和 Weekday 函数
 返回日期/时间值的各个部分。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Day** 函数可用于返回日期/时间值的日部分，范围是 1 到 31。
 
 **Month** 函数可用于返回日期/时间值的月部分，范围是 1 到 12。
@@ -38,7 +38,7 @@ ms.locfileid: "71992826"
 
 **Weekday** 函数可用于返回日期/时间值的星期几。  默认情况下，结果范围是 1（星期日）到 7（星期六）。  可以使用 Microsoft Excel 的 Weekday 函数代码或 StartOfWeek 枚举值来指定其他范围：
 
-| Excel 代码 | StartOfWeek 枚举 | 说明 |
+| Excel 代码 | StartOfWeek 枚举 | 描述 |
 | --- | --- | --- |
 | **1**, **17** |**StartOfWeek.Sunday** |数字 1（星期日）到 7（星期六）。  默认值。 |
 | **2**, **11** |**StartOfWeek.Monday** |数字 1（星期一）到 7（星期日）。 |
@@ -72,7 +72,7 @@ ms.locfileid: "71992826"
 | **Month(&nbsp;Now()&nbsp;)** |返回当前时间和日期的月部分。 |4 |
 | **Day(&nbsp;Now()&nbsp;)** |返回当前时间和日期的日部分。 |9 |
 | **Hour(&nbsp;Now()&nbsp;)** |返回当前时间和日期的小时部分。 |15 |
-| **Minute(&nbsp;Now()&nbsp;)** |返回当前时间和日期的分钟部分。 |59 |
+| **Minute(&nbsp;Now()&nbsp;)** |返回当前时间和日期的秒部分。 |59 |
 | **Second(&nbsp;Now()&nbsp;)** |返回当前时间和日期的秒部分。 |37 |
 | **Weekday(&nbsp;Now()&nbsp;)** |返回当前时间和日期的星期几部分，使用默认设置（星期日作为一周的第一天）。 |5 |
 | **Weekday(&nbsp;Now(),&nbsp;14&nbsp;)** |返回当前时间和日期的星期几部分（使用 Excel 代码指定的星期四作为一周的第一天）。 |1 |

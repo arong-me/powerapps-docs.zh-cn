@@ -1,6 +1,6 @@
 ---
 title: GroupBy 和 Ungroup 函数 | Microsoft 文档
-description: PowerApps 中 GroupBy 和 Ungroup 函数的参考信息（包括语法和示例）
+description: 适用于 Power Apps 中的 GroupBy 和取消组合函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c5b5ddf05201743a5ea4848793fcd05aea7def24
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 47a71ab36d67cd3b6862b7d3fe6503b9053108c8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680158"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730908"
 ---
-# <a name="groupby-and-ungroup-functions-in-powerapps"></a>PowerApps 中的 GroupBy 和 Ungroup 函数
+# <a name="groupby-and-ungroup-functions-in-power-apps"></a>在 Power Apps 中对函数进行 GroupBy 和取消分组
 对[表](../working-with-tables.md)[记录](../working-with-tables.md#records)进行分组和取消分组。
 
 ## <a name="description"></a>描述

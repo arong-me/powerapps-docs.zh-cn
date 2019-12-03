@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fce460ffe808b7a604e1cdceac05a2696b8e10ed
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 01fdadfd5ecf19d56ac115e53cef08a2cff2a254
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676152"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729652"
 ---
-# <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>在 PowerApps 中安装和配置技术支持的示例
+# <a name="install-and-configure-the-help-desk-sample-in-power-apps"></a>在 Power Apps 中安装和配置技术支持示例
 
 用于在 Power Apps 中安装和配置画布应用的技术支持示例的分步说明。
 
@@ -40,7 +40,7 @@ ms.locfileid: "74676152"
 
 ## <a name="prerequisites"></a>必备组件
 
-- [注册](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) PowerApps。
+- [注册](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)Power Apps。
 - 必须具有有效的 SharePoint Online 许可证和创建列表的权限。
 
 ## <a name="create-the-helpdesk-sharepoint-list"></a>创建技术支持 SharePoint 列表

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fbfe1b62091ff7a4fb84b899518fc941f99d7abb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9befcf4cb0e7267820c62ab78a14ee28ba985490
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674860"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732383"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>了解 SharePoint 窗体集成
 你现在可以在 Power Apps 中轻松[自定义任何 SharePoint 列表窗体](customize-list-form.md)。 在本文中，我们将详细演示这些窗体的工作原理，以及如何对其作进一步的自定义。
@@ -43,7 +43,7 @@ ms.locfileid: "74674860"
 
         ResetForm(SharePointForm1); RequestHide()
 
-* SharePointIntegration - 负责在 SharePoint 和 PowerApps 之间沟通用户操作的控件。
+* **SharePointIntegration** -负责在 SharePoint 和 Power Apps 之间传达用户操作的控件。
 
     * Data Source - 已为其自定义窗体的列表。
 
@@ -72,7 +72,7 @@ ms.locfileid: "74674860"
 这些默认值确保窗体在 SharePoint 中运行时工作，在用户与 SharePoint 中的用户交互时，它们会更改 Power Apps 窗体模式，并确保将更改提交到 SharePoint。
 
 ## <a name="understand-the-sharepointintegration-control"></a>了解 SharePointIntegration 控件
-SharePointIntegration 控件在 SharePoint 和 PowerApps 之间沟通用户操作。
+**SharePointIntegration**控件在 SharePoint 和 Power Apps 之间传达用户操作。
 
 ![](./media/sharepoint-form-integration/sharepointintegration-object.png)
 

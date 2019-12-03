@@ -1,6 +1,6 @@
 ---
 title: Acos、Acot、Asin、Atan、Atan2、Cos、Cot、Degrees、Pi、Radians、Sin 和 Tan 函数 | Microsoft 文档
-description: PowerApps 中 Abs 和 Sqrt 函数的参考信息（包括语法和示例）
+description: Power Apps 中的 Abs 和 Sqrt 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b29bce3f1237c6e98376989981f68e207439dc89
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8ff8b68dce51ce985c391de569e4be7a5a8fabb4
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984103"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729995"
 ---
-# <a name="acos-acot-asin-atan-atan2-cos-cot-degrees-pi-radians-sin-and-tan-functions-in-powerapps"></a>PowerApps 中的 Acos、Acot、Asin、Atan、Atan2、Cos、Cot、Degrees、Pi、Radians、Sin 和 Tan 函数
+# <a name="acos-acot-asin-atan-atan2-cos-cot-degrees-pi-radians-sin-and-tan-functions-in-power-apps"></a>Power Apps 中的 Acos、Acot、Asin、Atan、Atan2、Cos、Cot、度数、Pi、Radians、Sin 和 Tan 函数
 计算三角函数的值。
 
 ## <a name="description"></a>描述

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d2da924310d07869972e8d0a9a4b26649d6a56b8
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: dd5135aa04a552fc5606918a8158b40457a6eb6f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679951"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724016"
 ---
-# <a name="connect-to-cloud-storage-from-powerapps"></a>从 PowerApps 连接到云存储
+# <a name="connect-to-cloud-storage-from-power-apps"></a>从 Power Apps 连接到云存储
 Power Apps 提供几个云存储连接。 使用其中任何一种连接，都可以存储 Excel 文件，并将其中的信息用于整个应用。 这些连接包括：  
 
 | **Azure Blob** | **Box** | **Dropbox** | **Google 云端硬盘** | **OneDrive** | **OneDrive<br>for Business** |

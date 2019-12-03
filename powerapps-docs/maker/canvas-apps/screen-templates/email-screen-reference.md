@@ -1,6 +1,6 @@
 ---
 title: 画布应用的电子邮件屏幕模板参考 |Microsoft Docs
-description: 了解有关 canvas 应用的电子邮件屏幕模板在 PowerApps 中的工作原理的详细信息
+description: 了解有关画布应用的电子邮件屏蔽模板在 Power Apps 中的工作原理的详细信息
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7226433c5e95537346841f2e2f9474ea68e42dda
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f173b4898df8853ef31d1660af6efe9298f838b0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675087"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732623"
 ---
 # <a name="reference-information-about-the-email-screen-template-for-canvas-apps"></a>有关 canvas 应用的电子邮件屏幕模板的参考信息
 
@@ -34,7 +34,7 @@ ms.locfileid: "74675087"
 
 ## <a name="prerequisite"></a>先决条件
 
-熟悉如何[在 PowerApps 中创建应用](../data-platform-create-app-scratch.md)时添加和配置屏幕和其他控件。
+熟悉如何[在 Power Apps 中创建应用](../data-platform-create-app-scratch.md)时添加和配置屏幕和其他控件。
 
 ## <a name="text-search-box"></a>文本搜索框
 
@@ -203,5 +203,5 @@ ms.locfileid: "74675087"
 ## <a name="next-steps"></a>后续步骤
 
 * [了解有关此屏幕的详细信息](./email-screen-overview.md)
-* [详细了解 PowerApps 中的 Office 365 Outlook connector](../connections/connection-office365-outlook.md)
-* [详细了解 PowerApps 中的 Office 365 用户连接器](../connections/connection-office365-users.md)
+* [详细了解 Power Apps 中的 Office 365 Outlook connector](../connections/connection-office365-outlook.md)
+* [详细了解 Power Apps 中的 Office 365 用户连接器](../connections/connection-office365-users.md)

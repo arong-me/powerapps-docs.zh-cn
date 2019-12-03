@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eed7a0bd6b9ee269877b6dfe4fcfd5bc6c56e3af
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 08e54e48b371e71364edd2da09648af354a4d9ec
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678801"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723889"
 ---
-# <a name="connect-to-sql-server-from-powerapps"></a>从 PowerApps 连接到 SQL Server
+# <a name="connect-to-sql-server-from-power-apps"></a>从 Power Apps 连接到 SQL Server
 ![SQL Server 图标](./media/connection-azure-sqldatabase/sqlicon.png)
 
-在 Azure 或本地数据库中连接到 SQL Server，以便在 PowerApps 中显示其中的信息。
+在 Azure 或本地数据库中连接到 SQL Server，以便可以在 Power Apps 中显示它的信息。
 
 ## <a name="prerequisites"></a>必备组件
 
@@ -68,7 +68,7 @@ ms.locfileid: "74678801"
 8. 通过使用类似[通过 Excel 创建应用](../get-started-create-from-data.md)中介绍的技术来自定义应用，开始更改应用布局。
 
 ## <a name="build-an-app-from-scratch"></a>从头开始构建应用
-1. 使用注册 PowerApps 所用的同一帐户登录 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 使用注册电源应用时所用的同一帐户登录到[powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 。
 2. 在左侧导航栏中，单击或点击“连接”：  
    
     ![管理连接](./media/connection-azure-sqldatabase/manage-connections.png)

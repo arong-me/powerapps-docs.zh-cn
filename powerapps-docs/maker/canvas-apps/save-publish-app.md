@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7a64c7e0eeff1a48385ea251597a9e8d91c075f1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c8610f726c0bd65cec5681cd817d5c93ec3d3c1d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675346"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732701"
 ---
-# <a name="save-and-publish-a-canvas-app-in-powerapps"></a>在 PowerApps 中保存并发布画布应用
+# <a name="save-and-publish-a-canvas-app-in-power-apps"></a>在 Power Apps 中保存并发布画布应用
 每当保存画布应用的更改时，都将只对你自己和有权限编辑此应用的其他所有人自动发布更改。 完成更改后，必须显式发布更改，以便应用的所有共享对象都能使用。
 
 若要了解如何共享应用，请参阅[共享应用](share-app.md)。

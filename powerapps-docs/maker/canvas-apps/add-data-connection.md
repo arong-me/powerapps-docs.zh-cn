@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d81b1648fc3c45d0498efb9eba0cc14ffbc6142b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d1397f9fd2859611a3cd54023210a27cd5977834
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679261"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724929"
 ---
-# <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>在 PowerApps 中向画布应用添加数据连接
+# <a name="add-a-data-connection-to-a-canvas-app-in-power-apps"></a>在 Power Apps 中向画布应用添加数据连接
 
 在 Power Apps 中，将数据连接添加到现有画布应用或从头开始生成的应用。 您的应用程序可以连接到 SharePoint、Common Data Service、Salesforce、OneDrive 或[许多其他数据源](connections-list.md)。
 

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1b2c12805fc3ea8c9c7f8cee7432ac58c1183a18
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 135b85dc60f88c1cf87255f65be765afd80cc2f3
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679353"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731751"
 ---
-# <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>PowerApps 中的 Color 枚举与 ColorFade、ColorValue 以及 RGBA 函数
+# <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-power-apps"></a>Power Apps 中的 Color 枚举与 ColorFade、ColorValue 和 RGBA 函数
 
 使用内置颜色值，定义自定义颜色，并使用 alpha 通道。
 

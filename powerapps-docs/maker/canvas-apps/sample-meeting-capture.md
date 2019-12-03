@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 763e8a3cd84b4644787ce30398f8c36f016fe986
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ac2d05c8eb5d04a1a75c456d32f704284904c197
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675305"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732677"
 ---
-# <a name="set-up-and-learn-about-the-meeting-capture-sample-template-in-powerapps"></a>设置并了解 PowerApps 中的会议捕获示例模板
+# <a name="set-up-and-learn-about-the-meeting-capture-sample-template-in-power-apps"></a>设置并了解 Power Apps 中的会议捕获示例模板
 
 ## <a name="overview"></a>概述
 

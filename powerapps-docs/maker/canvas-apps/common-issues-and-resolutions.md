@@ -1,6 +1,6 @@
 ---
 title: 适用于电源应用的常见问题和解决方法 |Microsoft Docs
-description: PowerApps 中的常见问题及解决方法列表。
+description: Power Apps 中的常见问题和解决方法的列表。
 author: KumarVivek
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c8f05c74141301d0c41238daa20625874eec98aa
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b578d34217647658bb872ed22cd7ee8b3cc4a1cd
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678778"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723862"
 ---
-# <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps 常见问题和解决方法
+# <a name="common-issues-and-resolutions-for-power-apps"></a>适用于 Power Apps 的常见问题和解决方法
 
 本文列出了在使用电源应用时可能遇到的一些常见问题。 并在适用情况下提供了解决方法。
 
@@ -85,7 +85,7 @@ ms.locfileid: "74678778"
 
 1. **Android 设备上的版本 2.0.700**
 
-    如果在 Android 设备上安装 release 2.0.700，然后无法打开应用（或应用停止响应），请卸载 Power Apps，重新启动设备，然后重新安装 PowerApps。
+    如果在 Android 设备上安装 release 2.0.700，然后无法打开应用（或应用停止响应），请卸载 Power Apps，重新启动设备，然后重新安装 Power Apps。
 
 1. **打开应用时库为“空”**
 

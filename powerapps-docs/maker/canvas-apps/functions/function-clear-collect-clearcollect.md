@@ -1,6 +1,6 @@
 ---
 title: Collect、Clear 和 ClearCollect 函数 | Microsoft 文档
-description: PowerApps 中 Collect、Clear 和 ClearCollect 函数的引用信息（包括语法和示例）
+description: Power Apps 中的 Collect、Clear 和 ClearCollect 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 02a69fd7844de8965607cd828c6b3e17437ce34f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6c4d9362819790d60faaf68173c119f67b895fb9
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678387"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731348"
 ---
-# <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>PowerApps 中的 Collect、Clear 和 ClearCollect 函数
+# <a name="collect-clear-and-clearcollect-functions-in-power-apps"></a>在 Power Apps 中收集、清除和 ClearCollect 函数
 
 创建和清除[集合](../working-with-data-sources.md#collections)，以及将[记录](../working-with-tables.md#records)添加到任意[数据源](../working-with-data-sources.md)。
 

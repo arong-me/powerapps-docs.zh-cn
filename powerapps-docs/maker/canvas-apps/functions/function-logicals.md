@@ -1,6 +1,6 @@
 ---
 title: And、Or 和 Not 函数 | Microsoft 文档
-description: PowerApps 中 And、Or 和 Not 函数的参考信息，包括语法和示例
+description: Power Apps 中的 And、Or 和 Not 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a2b04e6a752ade561ec1b95658bcacda759b1a1c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1dae72a288c93b624d232402e32fe0e82cbaaead
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992562"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730616"
 ---
-# <a name="and-or-and-not-functions-in-powerapps"></a>PowerApps 中的 And、Or 和 Not 函数
+# <a name="and-or-and-not-functions-in-power-apps"></a>Power Apps 中的 and、Or 和 Not 函数
 
 布尔逻辑函数，常用于操作比较结果和测试结果。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 如果 **And** 函数的所有参数均为 **true**，则此函数返回 **true**。
 
@@ -68,7 +68,7 @@ Set( a, false ); Set( b, true ); Set( x, 10 ); Set( y, 100 ); Set( s, "Hello Wor
 
 选择按钮（在按住 Alt 键的同时单击），然后将 "[**标签**](../controls/control-text-box.md)" 控件的 " **Text** " 属性设置为下表第一列中的公式。
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 |---------|-------------|--------|
 | **And （a，b）** | 测试**a**和**b**的值。  其中一个参数为*false*，因此该函数返回*false*。 | *false* |
 | **a 和 b** | 与前面的示例相同，使用 Visual Basic 表示法。 | *false* |

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 42f5f188f107e8a5768ed9a74f463d1fc9bbc286
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e2200dece82eea17557de28a64e2bc4d228f4394
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74673192"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732896"
 ---
-# <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>PowerApps 中的画布应用公式入门
+# <a name="get-started-with-canvas-app-formulas-in-power-apps"></a>画布入门-Power Apps 中的应用公式
 
 为画布应用配置公式，不仅用于计算值和执行其他任务（与在 Excel 中的操作一样），还能（根据应用需求）响应用户输入。
 
@@ -36,7 +36,7 @@ ms.locfileid: "74673192"
 ## <a name="prerequisites"></a>必备组件
 
 * [注册](../signup-for-powerapps.md)Power Apps，并[提供注册所](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)用的相同凭据。
-* 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
+* 了解如何在 Power Apps 中[配置控件](add-configure-controls.md)。
 
 ## <a name="show-a-simple-value"></a>显示简单值
 
@@ -154,6 +154,6 @@ ms.locfileid: "74673192"
 
 ## <a name="formula-syntax"></a>公式语法
 
-在公示栏中键入公式时，不同的语法元素以不同的颜色显示，让用户更加轻松地进行查看并帮助理解长公式。 下面是 PowerApps 中的颜色代码列表。
+在公示栏中键入公式时，不同的语法元素以不同的颜色显示，让用户更加轻松地进行查看并帮助理解长公式。 下面是 Power Apps 中的颜色代码列表。
 
 ![突出显示语法](./media/working-with-formulas/syntax-highlighting.png)

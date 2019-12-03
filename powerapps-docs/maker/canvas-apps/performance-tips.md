@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0bf2502d22adb90993f5f7ebb8e05c72f51215a5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9b2e3298f09857e26df4c3707d8ae36737557b08
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675453"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732816"
 ---
-# <a name="optimize-canvas-app-performance-in-powerapps"></a>在 PowerApps 中优化画布应用性能
+# <a name="optimize-canvas-app-performance-in-power-apps"></a>优化画布-Power Apps 中的应用性能
 Microsoft 正在努力提高在 Power Apps 平台上运行的所有应用程序的性能。 但你可以按照本主题中的最佳做法提高你所创建的应用的性能。
 
 当用户打开一个应用时，在显示任何用户界面之前都会执行以下操作： 
@@ -98,7 +98,7 @@ Set(CustomerPhone, CustomerOrder.Phone);
 
 ![使用委派](./media/performance-tips/perfdelegation1.png)
 
-例如，SharePoint 列表支持来自 [**Filter**](functions/function-filter-lookup.md) 函数（而不是 [**Search**](functions/function-filter-lookup.md) 函数）的委派。 因此，如果 SharePoint 列表包含 500 个以上的项，则应使用 Filter（而不是 Search）来查找库中的项。 有关更多提示，请参阅[在 PowerApps 中使用大型 SharePoint 列表](https://powerapps.microsoft.com/blog/powerapps-now-supports-working-with-more-than-256-items-in-sharepoint-lists/)（博客文章）。 
+例如，SharePoint 列表支持来自 [**Filter**](functions/function-filter-lookup.md) 函数（而不是 [**Search**](functions/function-filter-lookup.md) 函数）的委派。 因此，如果 SharePoint 列表包含 500 个以上的项，则应使用 Filter（而不是 Search）来查找库中的项。 有关更多提示，请参阅[在 Power Apps 中使用大型 SharePoint 列表](https://powerapps.microsoft.com/blog/powerapps-now-supports-working-with-more-than-256-items-in-sharepoint-lists/)（博客文章）。 
 
 ## <a name="use-delayed-load"></a>使用延迟加载
 如果应用有 10 个以上的屏幕，无规则以及位于多个屏幕上且直接绑定到数据源的多个控件，请启用用于延迟加载的[实验性功能](working-with-experimental.md)。 如果你构建此类型的应用但不启用此功能的话，应用性能可能会受到影响，因为必须填充所有屏幕中的控件，即使在未打开的屏幕上也是如此。 此外，每当数据源发生更改时（诸如当用户添加记录时），都必须更新应用的所有屏幕。

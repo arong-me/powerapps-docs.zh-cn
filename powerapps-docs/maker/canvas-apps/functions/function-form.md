@@ -1,6 +1,6 @@
 ---
 title: EditForm、NewForm、SubmitForm、ResetForm 和 ViewForm 函数 | Microsoft 文档
-description: PowerApps 中 EditForm、NewForm、SubmitForm、ResetForm 和 ViewForm 函数的引用信息（包括语法和示例）
+description: Power Apps 中的 EditForm、NewForm、SubmitForm、ResetForm 和 ViewForm 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 20515a65a66dc3fea1236924d9c29574f63e16a8
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8cb2acc15d7d82e2c0935133ffdaf5e4f5284f0c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992704"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730901"
 ---
-# <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>PowerApps 中的 EditForm、NewForm、SubmitForm、ResetForm 和 ViewForm 函数
+# <a name="editform-newform-submitform-resetform-and-viewform-functions-in-power-apps"></a>Power Apps 中的 EditForm、NewForm、SubmitForm、ResetForm 和 ViewForm 函数
 查看、编辑或创建一个项，保存内容，以及在[编辑表单](../controls/control-form-detail.md)控件中重置控件。
 
 ## <a name="overview"></a>概述
@@ -32,7 +32,7 @@ ms.locfileid: "71992704"
 | FormMode.New |表单使用默认值填充，用户可以修改字段的值。  完成后，用户可以将记录添加到数据源。 |
 | FormMode.View |表单使用现有记录填充，但用户无法修改字段的值。 |
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 这些函数通常从 **[按钮](../controls/control-button.md)** 或 **[图像](../controls/control-image.md)** 控件的 **[OnSelect](../controls/properties-core.md)** 公式中调用，以便用户可以保存编辑、放弃编辑或创建记录。 可通过[将控件和这些函数结合使用](../working-with-forms.md)来创建完整的解决方案。
 
 这些函数不返回任何值。

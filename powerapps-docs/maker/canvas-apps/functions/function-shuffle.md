@@ -1,6 +1,6 @@
 ---
 title: Shuffle 函数 | Microsoft 文档
-description: PowerApps 中 Shuffle 函数的参考信息（包括语法和示例）
+description: Power Apps 中的无序函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 181ef038a90c9bfc7e3fe72af9514a34afce9776
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: c67e8095a7c0ed3246bce0401bbe787becd7cea0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983933"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730153"
 ---
-# <a name="shuffle-function-in-powerapps"></a>PowerApps 中的 Shuffle 函数
+# <a name="shuffle-function-in-power-apps"></a>在 Power Apps 中无序播放函数
 随机重新排列[表](../working-with-tables.md)[记录](../working-with-tables.md#records)的顺序。
 
 ## <a name="description"></a>描述

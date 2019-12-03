@@ -1,6 +1,6 @@
 ---
 title: 获取会话 ID 或画布应用 ID | Microsoft Docs
-description: 如何获取会话 ID 或画布应用 ID 以在 PowerApps 中进行故障排除
+description: 如何获取会话 ID 或画布应用 ID 以在 Power Apps 中进行故障排除
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 81c1db4ab44f3ca8517c6154f0516ca9dad5f825
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: bad3f118da62d0c4eb6c0873aa6aed03516a9085
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676518"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729620"
 ---
 # <a name="get-a-session-id-or-a-canvas-app-id"></a>获取会话 ID 或画布应用 ID
 如果你遇到在 Power Apps 中创建的画布应用的问题，你可以帮助 Microsoft 更有效地解决问题，因为你为这些问题提供了会话 ID 和/或应用 ID。
@@ -59,7 +59,7 @@ ms.locfileid: "74676518"
     ![从嵌入的应用中获取会话 ID](media/get-sessionid/embedded.png)
 
 ## <a name="get-an-app-id"></a>获取应用 ID
-1. [登录 PowerApps](https://powerapps.microsoft.com)。
+1. [登录到 Power Apps](https://powerapps.microsoft.com)。
 
 1. 在左边缘附近，选择“应用”。
 

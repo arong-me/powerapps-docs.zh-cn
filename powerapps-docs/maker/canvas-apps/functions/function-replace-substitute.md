@@ -1,6 +1,6 @@
 ---
 title: Replace 和 Substitute 函数 | Microsoft 文档
-description: PowerApps 中 Replace 和 Substitute 函数的引用信息（包括语法）
+description: Power Apps 中 Replace 和置换函数的参考信息（包括语法）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ff0e016f6ab1ad4f66651ccd3cfa2711f1d85a38
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: d58d215e4c075ce6948aa442e7fd74e250ea8d1e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992372"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730358"
 ---
-# <a name="replace-and-substitute-functions-in-powerapps"></a>PowerApps 中的 Replace 和 Substitute 函数
+# <a name="replace-and-substitute-functions-in-power-apps"></a>替换和替换 Power Apps 中的函数
 将文本字符串的一部分替换为其他字符串。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Replace** 函数按起始位置和长度标识要替换的文本。  
 
 **Substitute** 函数通过匹配字符串标识要替换的文本。 如果找到多个匹配项，则可以替换所有匹配项，也可以指定一个替换项。
@@ -61,7 +61,7 @@ ms.locfileid: "71992372"
 
 ## <a name="examples"></a>示例
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 |---------|-------------|--------|
 | **Replace （"abcdefghijk"，&nbsp;6，&nbsp;5，&nbsp;"*"）** | 将 "abcdefghijk" 中的五个字符替换为一个 "*" 字符，以第六个字符（"f"）开头。 | "abcde...z * k" |
 | **Replace （&nbsp;"2019"，&nbsp;3，&nbsp;2，&nbsp;"20"&nbsp;）** | 用 "20" 替换最后两个字符 "2019"。 | "2020" |

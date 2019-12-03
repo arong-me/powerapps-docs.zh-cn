@@ -1,6 +1,6 @@
 ---
 title: Acceleration、App、Compass、Connection 和 Location 信号 | Microsoft Docs
-description: PowerApps 中 Acceleration、App、Compass、Connection 和 Location 传感器的参考信息（包括语法和示例）
+description: Power Apps 中的加速、应用、指南针、连接和位置传感器的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a06217470482eccdf368279eaabcd297bbf73ce5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 9cd0470d6911452b38040531ec17060b3bc69fa0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983361"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729586"
 ---
-# <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>PowerApps 中的 Acceleration、App、Compass、Connection 和 Location 信号
+# <a name="acceleration-app-compass-connection-and-location-signals-in-power-apps"></a>Power Apps 中的加速、应用、指南针、连接和位置信号
 
 返回关于应用环境的信息，例如用户的全球所在位置，以及所显示的是哪个屏幕。
 
@@ -51,7 +51,7 @@ ms.locfileid: "71983361"
 | --- | --- |
 | **App.ActiveScreen** |显示的屏幕。 返回一个屏幕对象，您可以使用该对象引用屏幕的属性，或与另一个屏幕进行比较以确定要显示的屏幕。 您可以使用 " **[后退](function-navigate.md)** " 或 " **[导航](function-navigate.md)** " 功能更改显示的屏幕。 |
 
-详细信息：[**应用**对象](object-app.md)文档。
+详细信息： [**应用**对象](object-app.md)文档。
 
 ### <a name="compass"></a>Compass
 **Compass** 信号返回屏幕顶部的指南针标题。 该标题以磁北方为基础。
@@ -93,7 +93,7 @@ ms.locfileid: "71983361"
 | **Acceleration.X** |返回并排设备的加速度。 由于投手直接向前相对屏幕的顶端投掷手机，因此设备不会并排加速。 |0 |
 | **Acceleration.Y** |返回设备从前到后的加速度。 在投掷设备之初，投手为设备提供了一个较大的加速度，在半秒中内达到从 0 增至 90 英里/小时（132 英尺/秒）。 设备在空中运动时，忽略空气阻力，设备不会进一步加速。 捕手接住设备时，设备将减速至停止。 |8.2，投手投掷设备时。<br><br>0，设备在空中时。<br><br>-8.2，捕手接住设备时。 |
 | **Acceleration.Z** |返回设备从上到下的加速度。 设备在空中运动时会受重力影响。 |0，投手投掷设备前。<br><br>1，设备在空中运动时。<br><br>0，捕手接住设备后。 |
-| **Acceleration** |将加速度作为记录返回。 |X-BLADE0，Y：264，Z：0}，则会引发设备。 |
+| **Acceleration** |将加速度作为记录返回。 |{ X: 0, Y: 264, Z: 0 }，投手投掷设备时。 |
 | **Connection.Connected** |返回一个布尔值，它指示设备是否已连接到网络 |**true** |
 | **Connection.Metered** |返回一个布尔值，它指示连接是否按流量计费 |**true** |
 | **App.ActiveScreen = PlayBall** |返回一个布尔值，它指示是否显示了 **PlayBall**。 |**true** |

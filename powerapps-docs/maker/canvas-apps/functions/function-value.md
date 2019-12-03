@@ -1,6 +1,6 @@
 ---
 title: Value 函数 | Microsoft 文档
-description: PowerApps 中 Value 函数的参考信息（包括语法）
+description: Power Apps 中 Value 函数的参考信息（包括语法）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: de9cf7aa2c01b25f17aa6be7ce1f95871c3ab118
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: ec168ce00fff1abdb624a8decc1c5d44ec7bd61c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983396"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729789"
 ---
-# <a name="value-function-in-powerapps"></a>PowerApps 中的 Value 函数
+# <a name="value-function-in-power-apps"></a>Power Apps 中的值函数
 将文本字符串转换为数字。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Value** 函数将包含数字字符的文本字符串转换为数字值。 需要对用户以文本形式输入的数字执行计算时，请使用此函数。
 
 不同的语言对 **,** 和 **.** 的解释 各不相同。  默认情况下，文本使用当前用户的语言进行解释。  可以通过语言标记指定要使用的语言，使用的语言标记与 **[Language](function-language.md)** 函数返回的语言标记相同。

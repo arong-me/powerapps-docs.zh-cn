@@ -1,6 +1,6 @@
 ---
 title: User 函数 | Microsoft 文档
-description: PowerApps 中 User 函数的引用信息（包括语法）
+description: Power Apps 中用户函数的参考信息（包括语法）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f95a6f7769cde01e99bc4c18fab0ae60ae6b8c96
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d4c558e40b9bb351f3ea6b4d202ef4849cb4e85d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680135"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729873"
 ---
-# <a name="user-function-in-powerapps"></a>PowerApps 中的 User 函数
+# <a name="user-function-in-power-apps"></a>Power Apps 中的用户函数
 返回当前用户的相关信息。
 
 ## <a name="description"></a>描述

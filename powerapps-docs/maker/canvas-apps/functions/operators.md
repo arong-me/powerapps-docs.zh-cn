@@ -1,6 +1,6 @@
 ---
 title: 运算符 | Microsoft 文档
-description: PowerApps 中运算符的引用信息（包括语法和示例）
+description: Power Apps 中的运算符的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8c44db7094425366822d7924b771070d9e9a5ec5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8b1c1e5a4a65e4e6fcc90ca809a271f0fb94286a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676618"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732228"
 ---
-# <a name="operators-in-powerapps"></a>PowerApps 中的运算符
+# <a name="operators-in-power-apps"></a>Power Apps 中的运算符
 
 其中的某些运算符依赖于作者的语言。  有关详细信息，请参阅[全局应用](../global-apps.md)。
 

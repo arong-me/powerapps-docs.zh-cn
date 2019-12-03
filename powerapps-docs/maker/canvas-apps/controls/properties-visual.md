@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a28ce0103157ae877fa8f21d156998e8ea6c684c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: d9080ddeb1499d2608137aa07287b5b8b9c8cb5d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985839"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731869"
 ---
-# <a name="image-properties-in-powerapps"></a>PowerApps 中的图像属性
+# <a name="image-properties-in-power-apps"></a>Power Apps 中的映像属性
 在应用中配置图形元素，包括图像、照片和笔控件的元素。
 
 **BackgroundImage** - 显示在屏幕背景中的图像文件的名称。

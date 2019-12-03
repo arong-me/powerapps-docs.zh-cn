@@ -1,6 +1,6 @@
 ---
 title: 关联和取消与函数 |Microsoft Docs
-description: PowerApps 中的关联和取消与函数的参考信息（包括语法和示例）
+description: 有关 Power Apps 中的关联和取消与函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 94400c88740ea93b3966db8a62a461b5616eaeef
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e2b1d0e8ab264b9576c18aa7d5803be30c4a45e1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678341"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730551"
 ---
-# <a name="relate-and-unrelate-functions-in-powerapps"></a>PowerApps 中的关联和取消与函数
+# <a name="relate-and-unrelate-functions-in-power-apps"></a>Power Apps 中的关联和取消与函数
 
 通过一对多或多对多关系对两个实体的记录进行关联和取消与。
 

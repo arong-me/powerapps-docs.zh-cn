@@ -1,6 +1,6 @@
 ---
 title: 了解画布应用中的行为公式 | Microsoft Docs
-description: 有关使用行为公式（用于更改 PowerApps 中画布应用的状态）的参考信息
+description: 有关使用行为公式的参考信息，这些公式在 Power Apps 中更改 canvas 应用的状态
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 546c19dd0bc767758fcf854e383be0f075717525
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 3402931e6a20fffb68ac9af37f62a2372afc5f57
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988003"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732248"
 ---
-# <a name="understand-behavior-formulas-for-canvas-apps-in-powerapps"></a>了解 PowerApps 中画布应用的行为公式
+# <a name="understand-behavior-formulas-for-canvas-apps-in-power-apps"></a>了解 Power Apps 中的画布应用的行为公式
 
-大多数公式都是用来计算值的。  就像 Excel 电子表格一样，当值发生更改时，会自动执行重新计算。  例如，可能希望在“**标签[”](controls/control-text-box.md)** 控件中用红色显示小于零的值，用黑色显示大于等于零的值。 所以，可以将这个控件的 **[颜色](controls/properties-color-border.md)** 属性设置为以下公式：
+大多数公式都是用来计算值的。  就像 Excel 电子表格一样，当值发生更改时，会自动执行重新计算。  例如，可能希望在“[标签](controls/control-text-box.md)”控件中用红色显示小于零的值，用黑色显示大于等于零的值。 所以，可以将这个控件的 **[颜色](controls/properties-color-border.md)** 属性设置为以下公式：
 
 **If( Value(TextBox1.Text) >= 0, Color.Black, Color.Red )**
 

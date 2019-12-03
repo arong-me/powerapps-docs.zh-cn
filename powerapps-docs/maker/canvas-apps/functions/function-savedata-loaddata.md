@@ -1,6 +1,6 @@
 ---
 title: SaveData 和 LoadData 函数 | Microsoft 文档
-description: PowerApps 中 SaveData 和 LoadData 函数的参考信息（包括语法）
+description: Power Apps 中的 SaveData 和 LoadData 函数的参考信息（包括语法）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1be652ef905d73baeeafd9ddf06f74584851b457
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8ad9eee5230d46e67f3a0c5370fd0960e0c6787b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678295"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730271"
 ---
-# <a name="savedata-and-loaddata-functions-in-powerapps"></a>PowerApps 中的 SaveData 和 LoadData 函数
+# <a name="savedata-and-loaddata-functions-in-power-apps"></a>Power Apps 中的 SaveData 和 LoadData 函数
 保存并重新加载[集合](../working-with-data-sources.md#collections)。
 
 ## <a name="description"></a>描述

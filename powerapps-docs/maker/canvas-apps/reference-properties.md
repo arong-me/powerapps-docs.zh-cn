@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 53b4adc44addb08432ad6abbe11bf2b217be1534
-ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
+ms.openlocfilehash: 6a4f85b5eb4d47bb4973de6902b0a69bb98df585
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74598482"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732780"
 ---
-# <a name="controls-and-properties-in-powerapps"></a>PowerApps 中的控件和属性
+# <a name="controls-and-properties-in-power-apps"></a>Power Apps 中的控件和属性
 
 通过设置控件的属性之一配置该控件的外观和行为。 每种类型的控件都有一组不同的属性。 某些属性（例如 **Height** 和 **Width**）是几乎每种类型的控件共有的，但其他属性（例如 **CheckboxSize**）特定于某种类型的控件。
 
@@ -62,7 +62,7 @@ ms.locfileid: "74598482"
 
 **[实体窗体](entity-form-control.md)** – 实验性功能：添加动态窗体，用户可从中通过 Common Data Service 查看、导航和编辑关系数据。
 
-**[导出](controls/control-export-import.md)** – 导出数据以便在 PowerApps 中的其他位置使用。
+**[导出](controls/control-export-import.md)** –导出数据以便在 Power Apps 中的其他地方使用。
 
 **[库](controls/control-gallery.md)** – 显示可以包含多种类型的数据的记录列表。
 
@@ -72,7 +72,7 @@ ms.locfileid: "74598482"
 
 **[图像](controls/control-image.md)** – 显示本地文件或数据源等来源中的图像。
 
-**[导入](controls/control-export-import.md)** – 从 PowerApps 中的其他位置导入数据。
+**[导入](controls/control-export-import.md)** –从 Power Apps 中的其他位置导入数据。
 
 **[折线图](controls/control-column-line-chart.md)** – 以相对于两个轴的数据点显示值。
 

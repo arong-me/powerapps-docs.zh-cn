@@ -1,6 +1,6 @@
 ---
 title: JSON 函数 |Microsoft Docs
-description: PowerApps 中 JSON 函数的参考信息（包括语法）
+description: Power Apps 中 JSON 函数的参考信息（包括语法）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,24 +13,24 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 13219dad84e693582ee649a11013d78b6fc69544
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0780280298041aede5b24a9a819aa2743584f8c8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73538930"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730737"
 ---
-# <a name="json-function-in-powerapps"></a>PowerApps 中的 JSON 函数
+# <a name="json-function-in-power-apps"></a>Power Apps 中的 JSON 函数
 
 为表、记录或值生成 JSON 文本字符串。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 **JSON**函数以文本的形式返回数据结构的 JAVASCRIPT 对象表示法（JSON）表示形式，以便它适合在网络中进行存储或传输。 [ECMA-404](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf)和[IETF RFC 8259](https://tools.ietf.org/html/rfc8259)介绍了 JavaScript 和其他编程语言广泛使用的格式。
 
 画布应用支持此表列出的[数据类型](data-types.md)以及有关其文本表示形式的详细信息：
 
-| 数据类型 | 说明 | 结果示例 |
+| 数据类型 | 描述 | 结果示例 |
 |-----------|-------------|---------|
 | **变量** | *true*或*false*。 | `true` |
 | 颜色 | 包含颜色的8位十六进制表示形式的字符串。 此表示形式采用的格式为 #*rrggbbaa*，其中*rr*为红色分量， *gg*为绿色， *bb*为蓝色， *aa*为 alpha 通道。 对于 alpha 通道， **00**是完全透明的，而**ff**是完全不透明的。 可以将字符串传递给[**ColorValue**](function-colors.md)函数。  | `"#102030ff"` |
@@ -49,7 +49,7 @@ ms.locfileid: "73538930"
 
 指定可选的*格式*参数以控制结果的可读性，以及如何处理不受支持的和二进制数据类型。 默认情况下，输出尽可能简洁，无需空格或换行符，不允许使用不受支持的数据类型和二进制数据。 如果指定 **&** 运算符，则可以组合多种格式。
 
-| JSONFormat 枚举 | 说明 |
+| JSONFormat 枚举 | 描述 |
 |-----------------|-------------|
 | **Compact** | 默认值。  输出尽可能简洁，无添加空格或换行符。 |
 | **IndentFour** | 为提高可读性，输出包含每个列和嵌套级别的一个换行符，并为每个缩进级别使用四个空格。 |

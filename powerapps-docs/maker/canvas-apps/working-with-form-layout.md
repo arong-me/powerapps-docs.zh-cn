@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f447a467319f814fd79aab6827bf623d35345102
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: dbc33f1a1e4ff0434ee69ad9f7c34ead441f6776
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674537"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733175"
 ---
-# <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>了解 PowerApps 中画布应用的数据窗体布局
+# <a name="understand-data-form-layout-for-canvas-apps-in-power-apps"></a>了解 Power Apps 中的画布应用的数据窗体布局
 
 在 Power Apps 中构建画布应用时，可以轻松创建一个引人注目且高效的窗体。 例如，假设记录销售订单的基本表单如下：
 

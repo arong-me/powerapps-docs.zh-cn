@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b2a2aa1baf93008fa908ca3f73aebfde64c9b239
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ae33122d140b6c13f744acb292362d8ec804233e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680043"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725219"
 ---
-# <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>在 PowerApps 中添加和配置画布应用控件
+# <a name="add-and-configure-a-canvas-app-control-in-power-apps"></a>在 Power Apps 中添加和配置画布-应用控件
 
 将各种 UI 元素添加到画布应用中，然后直接在“属性”选项卡的工具栏或编辑栏中配置其各方面外观和行为。 这些 UI 元素称为“控件”，配置的各方面外观和行为称为“属性”。
 

@@ -1,6 +1,6 @@
 ---
 title: Choices 函数 | Microsoft 文档
-description: PowerApps 中 Choices 函数的参考信息（包括语法）
+description: Power Apps 中的选项函数的参考信息（包括语法）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7adf3391ef418a2b42861df63bc8396adc22f93a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2ebe6b2019652b1f2e59419c718136aced81c62e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679445"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731401"
 ---
-# <a name="choices-function-in-powerapps"></a>PowerApps 中的 Choices 函数
+# <a name="choices-function-in-power-apps"></a>Power Apps 中的选项功能
 返回查找列可能值的表。
 
 ## <a name="description"></a>描述

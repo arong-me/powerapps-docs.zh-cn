@@ -10,14 +10,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1c6278a9ddbea085523117c6b790af2b2b1306a0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6479111dbae5e3f4d12e9cad0d78834800ff4c35
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680066"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725574"
 ---
-# <a name="review-a-canvas-app-for-accessibility-in-powerapps"></a>在 PowerApps 中查看画布应用的辅助功能
+# <a name="review-a-canvas-app-for-accessibility-in-power-apps"></a>查看适用于 Power Apps 中辅助功能的画布应用
 
 如果在设计画布应用外观和行为时考虑辅助功能，则具有视觉、听觉或其他障碍的用户可以更轻松、更成功地使用画布应用。 如果不确定如何使应用更易于访问，可以在 Power Apps Studio 中运行辅助功能检查器。 此工具不仅可查找潜在的辅助功能问题，还会解释为什么每个问题对具有特定残疾的用户是潜在问题，并提供解决每个问题的建议。
 辅助功能检查器可检测屏幕阅读器和键盘问题，你可以使用[易于访问的颜色](accessible-apps-color.md)，找到有关如何解决颜色对比度问题的信息。

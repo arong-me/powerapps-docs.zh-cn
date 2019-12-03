@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a41c9c121c1b57545376ba16f93d249c36ddeaeb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 811f58243413c4de58e4cdb8868d838349248991
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674546"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732371"
 ---
-# <a name="transform-your-infopath-form-to-powerapps"></a>将 InfoPath 窗体转换为 PowerApps
+# <a name="transform-your-infopath-form-to-power-apps"></a>将 InfoPath 表单转换为 Power Apps
 
 是否在 InfoPath 中创造了出色的内容，很想了解如何在更可靠的平台上交付这些内容？
 
@@ -37,7 +37,7 @@ Power Apps 是一个软件即服务（SaaS）平台，旨在让你快速构建�
 你曾经尝试过生成应用，然后将其发布到 iOS 或 Android 设备吗？ 这个操作很复杂。 如果你想部署第二个应用或更新现有应用，你的用户必须执行更多的步骤。 不适用于 Power Apps。 你的用户在其设备上安装了 Power Apps Mobile，并登录。 他们就可拥有你与之共享的所有功能强大的应用。 在此之后，当你更新这些应用或向用户推送新应用时，这些应用会在用户设备上显示。 无需进行设备管理的移动应用能为你和你的业务带来巨大优势。
 
 **关于移动**  
-使用 Power Apps，你可以利用用户的移动设备的功能。 你可以从应用内访问加速功能、照相机、指南针、连接信息和位置信号。 这为生成用于完成工作的应用创造了无限可能性。 当然，触摸是 PowerApps 中的自动功能，生成应用时无需任何编码操作。
+使用 Power Apps，你可以利用用户的移动设备的功能。 你可以从应用内访问加速功能、照相机、指南针、连接信息和位置信号。 这为生成用于完成工作的应用创造了无限可能性。 当然，touch 功能在 Power Apps 中是自动的：生成应用时，无需编写任何代码。
 
 **摆脱束缚**  
 通过 InfoPath，你通常处理的是来自一个源的数据。 但是，如果你想更新另一个源（如另一个站点集合中的 SharePoint 列表）或连接到外部服务，事情就会变得比较棘手。 代码后面的诸多概念会让你夜不能寐。 Power Apps 旨在使你能够在一个应用中处理多个数据源和服务连接。 目前，超过[200 个连接器](connections-list.md#all-standard-connectors)支持本地和云数据的组合，包括 Microsoft Office 365 和 Azure 服务（如电源自动和 Dynamics 365）。 此外，你还可以连接到众多第三方服务，如 Dropbox、Google、Salesforce、Slack 和其他常用的目标。
@@ -50,7 +50,7 @@ Power Apps 是一个很好的工具，可通过两种方式更好地使 SharePoi
 
 如果想要自定义用户添加、查看或编辑其日常工作中所用列表中各项的方式，建议使用“自定义 SharePoint 表单”功能。 单击“自定义表单”会创建一个单屏&quot;表单应用&quot;，该应用将基于上下文更改模式（新建/编辑/查看）。 由 SharePoint 管理这些应用；其权限与列表编辑/查看权限相同。
 
-通过**SharePoint 创建 Power Apps 画布应用**，你可以在移动设备上单独运行应用。 你还可以在 SharePoint 页中嵌入应用程序。 单击这个功能将创建一个三屏应用（浏览列表、查看详细信息和创建/更新项）。 这些应用的权限/共享模型不依赖于 SharePoint，而是通过 PowerApps 进行管理。
+通过**SharePoint 创建 Power Apps 画布应用**，你可以在移动设备上单独运行应用。 你还可以在 SharePoint 页中嵌入应用程序。 单击这个功能将创建一个三屏应用（浏览列表、查看详细信息和创建/更新项）。 这些应用的权限/共享模式与 SharePoint 无关，而是从 Power Apps 进行管理。
 
 至此，已介绍两种选项的区别，下面的部分将概述二者的使用方法。
 
@@ -80,7 +80,7 @@ Power Apps 将为你生成可自定义的应用。
 
 ## <a name="how-do-you-do-that-with-power-apps"></a>如何通过 Power Apps 实现此目的？
 
-至此，基本概念已介绍完毕，接下来将进行深入探索。 在已经创建第一个应用的基础上，本部分将帮助你在 PowerApps 中应用一些常见的 InfoPath 概念。
+至此，基本概念已介绍完毕，接下来将进行深入探索。 使用你的第一个应用时，本部分将帮助你在 Power Apps 中应用一些常见的 InfoPath 概念。
 
 基于值隐藏/显示/锁定字段  
 成功的表单通常会通过基于值或操作更改字段的状态等来强制实施强大的业务逻辑。 使用 Power Apps，你可以将控件的**DisplayMode**属性设置为 "**编辑**" 或 "**查看**"，以指定用户是否可以更改字段。 此外，也可以使用简单的 If 公式有条件地执行此操作。 首先，选择要编辑的卡，然后选择锁定图标。 此步骤会解锁卡，以便可以更改值。
@@ -126,12 +126,12 @@ IsMatch支持大量预定义模式（如电子邮件）或创建自己的模式�
 
 您可以通过使用 "电源自动" 并将您的应用程序连接到您创建的流来发送更复杂的消息（例如，作为 SharePoint 审批工作流的一部分）。 一旦将应用程序连接到 "自动启动"，就会打开工作流引擎的全部功能，如 Power Apps，与外部数据和服务的连接非常好。 若要详细了解如何连接电源应用和电源自动执行，请查看此[文档](using-logic-flows.md)。
 
-如果仍未找到所需的电子邮件选项，还可以利用适用于基准电子邮件、Gmail、MailChimp、Outlook.com、SendGrid 或 SMTP 的 Power Apps 连接器。 连接性就是 PowerApps 的魅力。
+如果仍未找到所需的电子邮件选项，还可以利用适用于基准电子邮件、Gmail、MailChimp、Outlook.com、SendGrid 或 SMTP 的 Power Apps 连接器。 连接是高级应用程序的优点。
 
 **工作流**  
 说到商业应用程序和业务逻辑就不得不提工作流引擎。 令人欣慰的是，电源应用团队不会对轮进行一次工作，并为你带来其他工作流引擎。 相反，它们为你提供了强大的连接器来实现电源自动服务。 通过其易于使用的工作流引擎，可跨超过 [200 种不同服务](https://flow.microsoft.com/connectors/)自动执行进程和任务。 若要详细了解如何连接电源应用和电源自动执行，请查看此[文档](using-logic-flows.md)。
 
-**PowerApps 的变量**  
+**具有电源应用的变量**  
 生成解决方案时，我们会很自然地认为必须使用变量。 Power Apps 提供多种类型的变量，但只在必要时才使用它们。 与其考虑获取数据，在变量中存储数据并引用该变量，不如考虑直接引用该数据。 如果将其与 Excel 比较，就可以更好地了解此模型。 在 Excel 中，“合计”不是变量，而是其他字段的总和。 因此，如果要在工作表的其他位置使用该值，则需指定在其中计算该合计值的单元格。 [文档](working-with-variables.md)中对此有很好的解释。 体验不同的思维过程。
 
 如果仍然需要变量（很多情况都是如此），可通过这种方式了解不同的操作选项。 请记住，对于 Power Apps，无需定义变量。 只需使用一个函数指定要存储的名称和值即可创建变量。 您可以通过选择 "**视图**" 选项卡上的 "**变量**" 来查看已创建的变量。变量保存在内存中，并且在关闭该应用程序时，这些变量的值将丢失。 可以创建这几类变量：

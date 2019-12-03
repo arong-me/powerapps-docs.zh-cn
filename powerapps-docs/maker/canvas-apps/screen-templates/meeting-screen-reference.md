@@ -1,6 +1,6 @@
 ---
 title: 画布应用的会议屏幕模板参考 |Microsoft Docs
-description: 了解有关 canvas 应用的会议屏幕模板在 PowerApps 中的工作原理的详细信息
+description: 了解适用于画布应用的会议屏幕模板在 Power Apps 中的工作原理的详细信息
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 104225e61e986c4e91563945c4b09f2d83ef1a35
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 66cf9ae4cc16ba8004775ba86db3f5497fb99937
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675064"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733116"
 ---
 # <a name="reference-information-about-the-meeting-screen-template-for-canvas-apps"></a>有关 canvas 应用的会议屏幕模板的参考信息
 
@@ -41,7 +41,7 @@ ms.locfileid: "74675064"
 
 ## <a name="prerequisite"></a>先决条件
 
-熟悉如何[在 PowerApps 中创建应用](../data-platform-create-app-scratch.md)时添加和配置屏幕和其他控件。
+熟悉如何[在 Power Apps 中创建应用](../data-platform-create-app-scratch.md)时添加和配置屏幕和其他控件。
 
 ## <a name="invite-tab"></a>邀请选项卡
 
@@ -654,5 +654,5 @@ ms.locfileid: "74675064"
 ## <a name="next-steps"></a>后续步骤
 
 * [了解有关此屏幕的详细信息](./meeting-screen-overview.md)
-* [详细了解 PowerApps 中的 Office 365 Outlook connector](../connections/connection-office365-outlook.md)
-* [详细了解 PowerApps 中的 Office 365 用户连接器](../connections/connection-office365-users.md)
+* [详细了解 Power Apps 中的 Office 365 Outlook connector](../connections/connection-office365-outlook.md)
+* [详细了解 Power Apps 中的 Office 365 用户连接器](../connections/connection-office365-users.md)

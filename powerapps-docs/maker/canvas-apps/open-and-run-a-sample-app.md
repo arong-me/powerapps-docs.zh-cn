@@ -1,6 +1,6 @@
 ---
 title: 使用示例应用 | Microsoft 文档
-description: 分步介绍如何基于 PowerApps 的示例创建画布应用
+description: 基于 Power Apps 中的示例创建画布应用的分步说明
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e6ebc516c6b07f149e2b965b967966c3832476c9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 853edb00d0325e287ff69149e1d807ff2529b915
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675500"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732808"
 ---
-# <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>从 PowerApps 中的示例创建画布应用
+# <a name="create-a-canvas-app-from-a-sample-in-power-apps"></a>从 Power Apps 中的示例创建画布应用
 在本快速入门教程中，将根据示例创建一个画布应用，以便探索设计的可能性，并发现在开发自己的应用时可以应用的概念。
 
 每个示例均展示了一个实际场景，但使用的是虚构数据。 若要存储此数据，需要一个云存储帐户，如 Dropbox、GoogleDrive 或 OneDrive。
@@ -28,7 +28,7 @@ ms.locfileid: "74675500"
 如果没有适用于电源应用的许可证，可以[免费注册](../signup-for-powerapps.md)。
 
 ## <a name="open-a-sample-app"></a>打开示例应用
-1. 登录 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 登录到[Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 1. 在示例应用列表中，将鼠标悬停在示例应用（如成本估算器）上。
 
@@ -52,7 +52,7 @@ ms.locfileid: "74675500"
     - 捕获地址和使用面积等详细信息，并基于折扣和税率计算价格。
     - 筛选约会列表可显示已为其创建估算值的约会、尚未为其创建估算值的约会或所有约会。
     
-1. 完成浏览应用后，按 Esc 键（或者单击或点击右上角附近的关闭图标，具体位于 PowerApps 的标题栏下方），关闭预览模式。
+1. 浏览完应用后，按 Esc 键（或者单击或点击右上角附近的关闭图标，然后单击电源应用的标题栏下方），关闭预览模式。
 
 ## <a name="save-the-app"></a>保存应用
 1. 在左上角附近，单击或点击“文件”选项卡。

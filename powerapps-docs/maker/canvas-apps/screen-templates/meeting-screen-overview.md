@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5b8df0acad3f5ad90eb114bd5fdd5d3377b3f6fb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ac6b75d60f41cd68ee1723c913766ea701bc6ca8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675046"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732529"
 ---
 # <a name="overview-of-the-meeting-screen-template-for-canvas-apps"></a>画布应用的会议屏幕模板概述
 
@@ -32,7 +32,7 @@ ms.locfileid: "74675046"
 
 ## <a name="prerequisite"></a>先决条件
 
-熟悉如何[在 PowerApps 中创建应用](../data-platform-create-app-scratch.md)时添加和配置屏幕和其他控件。
+熟悉如何[在 Power Apps 中创建应用](../data-platform-create-app-scratch.md)时添加和配置屏幕和其他控件。
 
 ## <a name="default-functionality"></a>默认功能
 

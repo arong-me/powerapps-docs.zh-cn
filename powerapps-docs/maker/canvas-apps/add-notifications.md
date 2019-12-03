@@ -1,6 +1,6 @@
 ---
 title: 发送推送通知 | Microsoft 文档
-description: 了解如何在 PowerApps 中向应用发送原生推送通知。
+description: 了解如何在 Power Apps 中将原生推送通知发送到应用程序。
 author: kavishi
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d3f526b8795c8771d3f0e43c2951d207f7f1bfb0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b336b6d73cbd3db8aac435035d44859080208534
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678893"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724611"
 ---
-# <a name="send-a-push-notification-in-powerapps"></a>在 PowerApps 中发送推送通知
+# <a name="send-a-push-notification-in-power-apps"></a>在 Power Apps 中发送推送通知
 推送通知用于移动应用中的使用者和业务情形，主要用来与应用用户进行交互，并帮助他们优先处理关键任务。 在 Power Apps 中，你可以使用 Power Apps 通知连接器发送通知。 可以将本机推送通知发送到在 Power Apps 中创建的任何应用。 我们计划在今后支持更多通知类型。
 
 ![推送通知外观示例](./media/add-notifications/pic1-notification-screenshot.png)
@@ -60,7 +60,7 @@ ms.locfileid: "74678893"
 ## <a name="send-a-notification-from-an-app"></a>通过应用发送通知
 可以将推送通知从一个应用发送到另一个应用，也可以发送到同一个应用。
 
-1. 在 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中，转到要向其发送推送通知的应用。
+1. 在[Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)中，前往要向其发送推送通知的应用。
 2. 在“详细信息”选项卡上，复制此应用的“应用 ID”。
 
     ![获取应用 ID](./media/add-notifications/grab-id.png)

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3181c00a4ef0836c043ee0402a29d3b7dadbef21
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cda7635798b26b1936a44d7947ab1dc7c36a25c8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678870"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724192"
 ---
 # <a name="generate-a-canvas-app-in-power-apps-from-a-sharepoint-list"></a>从 SharePoint 列表的 Power Apps 生成画布应用
 
@@ -40,9 +40,9 @@ ms.locfileid: "74678870"
 > [!IMPORTANT]
 > Power Apps 不支持所有类型的 SharePoint 数据。 有关详细信息，请参阅 [已知问题](connections/connection-sharepoint-online.md#known-issues)。
 
-## <a name="generate-an-app-from-within-powerapps"></a>在 PowerApps 中生成应用
+## <a name="generate-an-app-from-within-power-apps"></a>从 Power Apps 中生成应用
 
-1. 登录 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 登录到[Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 1. 在“生成自己的应用”下，将鼠标悬停在“从数据开始”上，然后选择“生成此应用”。
 

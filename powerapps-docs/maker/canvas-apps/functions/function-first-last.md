@@ -1,6 +1,6 @@
 ---
 title: First、FirstN、Last 和 LastN 函数 | Microsoft 文档
-description: PowerApps 中 First、FirstN、Last 和 LastN 的引用信息（包括语法和示例）
+description: Power Apps 中 First、FirstN、Last 和 LastN 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 48e8311d5da00b02cbefbf6f47661c89adcc80a5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 490bc00deb41cdc58919cf5f42302ef46dd405f7
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992715"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730969"
 ---
-# <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>PowerApps 中的 First、FirstN、Last 和 LastN 函数
+# <a name="first-firstn-last-and-lastn-functions-in-power-apps"></a>Power Apps 中的 First、FirstN、Last 和 LastN 函数
 返回表中的第一组或最后一组[记录](../working-with-tables.md#records)。
 
 ## <a name="description"></a>描述

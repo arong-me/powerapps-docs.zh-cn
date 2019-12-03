@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5612f97a3dde96fdb9ea017e34986b7e21c43bd7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 58b96ab5758fd30a05d9f325cb623bbc338b0d00
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679215"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724752"
 ---
-# <a name="using-multimedia-files-in-powerapps"></a>在 PowerApps 中使用多媒体文件
+# <a name="using-multimedia-files-in-power-apps"></a>使用 Power Apps 中的多媒体文件
 
 本主题介绍如何在画布应用中嵌入多媒体文件、将笔绘作品上载到数据源，然后在画布应用中显示该数据源中的图像。 本主题使用的数据源是 OneDrive for Business 中的一个 Excel 文件。
 

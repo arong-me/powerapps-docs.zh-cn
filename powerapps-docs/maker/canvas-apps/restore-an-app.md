@@ -1,6 +1,6 @@
 ---
 title: 将画布应用还原到之前的版本 | Microsoft Docs
-description: 在 PowerApps 中还原画布应用
+description: 在 Power Apps 中还原画布应用
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b7f9c98f174700a73e8d46d103bbe597ae15c1f4
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 15351f3fcfa166c281a1bc4d3213eace8f881d11
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675412"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732755"
 ---
-# <a name="restore-a-canvas-app-to-a-previous-version-in-powerapps"></a>在 PowerApps 中将画布应用还原到之前的版本
+# <a name="restore-a-canvas-app-to-a-previous-version-in-power-apps"></a>将画布应用还原到 Power Apps 中的早期版本
 本文介绍如何将画布应用还原到从 Power Apps 帐户保存到云的以前版本。
 
 ## <a name="restore-an-app-from-your-account"></a>从帐户中还原应用

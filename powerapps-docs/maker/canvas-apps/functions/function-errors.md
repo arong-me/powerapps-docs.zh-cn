@@ -1,6 +1,6 @@
 ---
 title: Errors 函数 | Microsoft 文档
-description: PowerApps 中 Errors 函数的引用信息（包括语法和示例）
+description: Power Apps 中 Errors 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0a0871374bad90156f9b3626b58a68eb77bfb499
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 245bdbfbcf8e95b5bca6ca736ff67d5623f772f5
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680227"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731054"
 ---
-# <a name="errors-function-in-powerapps"></a>PowerApps 中的 Errors 函数
+# <a name="errors-function-in-power-apps"></a>Power Apps 中的错误函数
 提供之前对[数据源](../working-with-data-sources.md)的更改的错误信息。
 
 ## <a name="overview"></a>概述

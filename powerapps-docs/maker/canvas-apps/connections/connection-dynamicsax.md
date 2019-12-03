@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6027589bc1cb5ae5a7e23ce2969e303d62151b96
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4c0d6a2c30ed601808ad31f0be5325fc1b3858bb
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679859"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723778"
 ---
 # <a name="connect-from-microsoft-power-apps-to-dynamics-ax"></a>从 Microsoft Power Apps 连接到 Dynamics AX
 ![Dynamics AX Online](./media/connection-dynamicsax/dynamics-ax.png)
@@ -33,7 +33,7 @@ ms.locfileid: "74679859"
 
 有关如何将数据从 Dynamics AX 添加到现有应用的信息，请参阅[添加数据连接](../add-data-connection.md)。
 
-请参阅[可用连接列表](../connections-list.md)，并了解如何在 PowerApps 中[管理连接](../add-manage-connections.md)。
+查看[可用连接的列表](../connections-list.md)，并了解如何管理 Power Apps 中的[连接](../add-manage-connections.md)。
 
 ### <a name="next-steps"></a>后续步骤
 * 了解如何[显示来自数据源的数据](../add-gallery.md)。

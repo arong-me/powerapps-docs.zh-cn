@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 233fd99eeba86151f616a22955cf28c2114de43e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 500154ecde380a1cf339f934728807216d29c804
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679606"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731629"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>在画布应用中创建依赖项下拉列表
 
@@ -49,7 +49,7 @@ ms.locfileid: "74679606"
 | Pembroke       | 制品          |
 | Pembroke       | 花卉           |
 
-"**事件**列表" 显示有关每个事件的联系信息和信息。 创建日期列作为**日期**列，但将其他列创建为**单行文本**列以简化配置，并避免在 Microsoft PowerApps 中产生[委托](./delegation-overview.md)警告。
+"**事件**列表" 显示有关每个事件的联系信息和信息。 创建日期列作为**日期**列，但将其他列作为**单行文本**列创建，以简化配置，并避免 Microsoft Power Apps 中的[委托](./delegation-overview.md)警告。
 
 | 名字 | 姓氏 | 电话号码     | Location | Department | 描述       | Date      |
 |------------|-----------|------------------|----------------|------------|-------------------------|-----------|
@@ -69,7 +69,7 @@ ms.locfileid: "74679606"
 1. 打开 "**事件**" 列表，然后选择 " **PowerApps** > **自定义窗体**"。
 
     > [!div class="mx-imgBorder"]
-    > ![打开事件列表，然后选择 "电源应用 > 自定义窗体"。](./media/dependent-drop-down-lists/open-form.png "Open the Incidents list, and then select Power Apps > Customize forms.")
+    > ![打开事件列表，然后选择 "电源应用 > 自定义窗体"。](./media/dependent-drop-down-lists/open-form.png "打开事件列表，然后选择 "电源应用 > 自定义窗体"。")
 
     此时会打开一个浏览器选项卡，其中包含 Power Apps Studio 中的默认窗体。
 
@@ -206,6 +206,6 @@ ms.locfileid: "74679606"
 
 ## <a name="known-limitations"></a>已知的限制
 
-此配置可用于**下拉**控件，以及允许一次选择一项的**组合框**和**列表框**控件。 You can't use the **Depends On** configuration for any of those controls if they allow multiple selections. This approach isn't recommended for working with option sets in Common Data Service.
+此配置可用于**下拉**控件，以及允许一次选择一项的**组合框**和**列表框**控件。 如果允许多重选择，则不能对这些控件中的任何控件使用**取决**于配置。 对于使用 Common Data Service 中的选项集，不建议使用此方法。
 
-The **Depends On** configuration doesn't support static data or collections. To configure dependent drop-down lists with these sources, edit the expression directly in the formula bar. In addition, Power Apps doesn't support using two choice fields in SharePoint without any matching table of data, and you can't define **Matching field** within this UI.
+**依赖于**配置不支持静态数据或集合。 若要配置具有这些源的从属下拉列表，请直接在编辑栏中编辑表达式。 此外，Power Apps 不支持在没有任何匹配数据表的情况下使用 SharePoint 中的两个选项字段，也不能在此 UI 中定义**匹配字段**。

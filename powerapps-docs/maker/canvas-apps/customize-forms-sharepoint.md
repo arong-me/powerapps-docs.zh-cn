@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6732dabea803cd7680ef618e4e8d1c4e88f7afe5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f522f520c0f0f042e73932630980dee93bc5c89c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678617"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731760"
 ---
-# <a name="customize-a-canvas-app-form-in-powerapps"></a>自定义 PowerApps 中的画布应用窗体
+# <a name="customize-a-canvas-app-form-in-power-apps"></a>在 Power Apps 中自定义画布应用窗体
 
 在画布应用中，自定义“显示窗体”控件和“编辑窗体”控件，以便它们以最直观的顺序显示最重要的数据，帮助用户轻松了解和更新数据。
 
@@ -34,7 +34,7 @@ ms.locfileid: "74678617"
 
 ## <a name="show-and-hide-cards"></a>显示和隐藏卡
 
-1. 登录到[PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后打开生成并自定义的应用。
+1. 登录到[电源应用](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后打开生成并自定义的应用。
 
 1. 在左侧导航栏中，在搜索栏中键入或粘贴**D**以筛选元素列表，然后选择 " **DetailForm1**"。
 

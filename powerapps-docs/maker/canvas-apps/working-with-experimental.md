@@ -14,14 +14,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e1cab122851ae2ba0a4d5414d2f4c5ca088d4478
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 618192bcaafa5fef8ce2577dc5f07548d49f005e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674232"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732305"
 ---
-# <a name="understand-experimental-preview-and-deprecated-features-in-powerapps"></a>了解 PowerApps 中的实验性、预览和弃用的功能
+# <a name="understand-experimental-preview-and-deprecated-features-in-power-apps"></a>了解 Power Apps 中的实验性、预览和弃用的功能
 
 对于每个版本，我们会进行更改并添加功能，使 Power Apps 成为最佳工具来满足你的需求。 我们推动产品向前发展。  
 

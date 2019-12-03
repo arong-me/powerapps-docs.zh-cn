@@ -1,6 +1,6 @@
 ---
 title: 函数、信号和枚举 |Microsoft 文档
-description: 有关 PowerApps 中的函数、信号和枚举的参考信息。
+description: Power Apps 中的函数、信号和枚举的参考信息。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eb698f5e2775f1acfed6a7af70475a6079753abb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7712af247376d6db54aa6777eb2a3051f0e31f93
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678456"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731415"
 ---
-# <a name="formula-reference-for-powerapps"></a>PowerApps 的公式参考
+# <a name="formula-reference-for-power-apps"></a>Power Apps 的公式引用
 公式组合了许多元素。  下面列出的包括：
 
 * **函数**，它接受参数、执行操作并返回值。 例如，**Sqrt(25)** 返回 **5**。 函数模仿了 Microsoft Excel 函数。  某些函数具有副作用，例如 **SubmitForm**，该函数仅在诸如 **Button.OnSelect** 的[行为公式](working-with-formulas-in-depth.md)中适用。

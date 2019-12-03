@@ -1,6 +1,6 @@
 ---
 title: 画布应用的系统要求、限制和配置值 | Microsoft Docs
-description: PowerApps 中内置的画布应用的系统要求、限制和配置值
+description: 在 Power Apps 中内置的画布应用的系统要求、限制和配置值
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0b67dda758140608b67fa8df44eca711270b663c
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e408eed2ac0ed769b747b647ea7b1a8c3c9df8f6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675642"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729609"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>画布应用的系统要求、限制和配置值
-本主题包含设备平台和 Web 浏览器要求，以及 PowerApps 的限制和配置值。
+本主题包含设备平台和 web 浏览器要求，以及电源应用的限制和配置值。
 
 ## <a name="supported-platforms-for-running-canvas-apps-using-the-power-apps-app"></a>使用 Power Apps 应用运行画布应用的受支持平台
 

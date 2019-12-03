@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 979c24de10eab4d91a89fbaf9e33b53a09b0ba58
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f53f46562c401e978975da35c81e2ecb77a6673e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676315"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729743"
 ---
-# <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>使用 Excel 在 PowerApps 中生成画布应用
+# <a name="generate-a-canvas-app-from-excel-in-power-apps"></a>在 Power Apps 中从 Excel 生成画布应用
 
 在本主题中，将使用 Excel 表中的数据在 Power Apps 中自动生成第一个画布应用。 将选择一个 Excel 文件，生成一个应用，然后运行生成的应用。 每个生成的应用都包括屏幕，用于浏览记录、显示记录的详细信息以及创建或更新记录。 通过生成应用，可以使用 Excel 数据快速利用应用，然后自定义该应用以更好地满足需要。 
 
@@ -37,7 +37,7 @@ Excel 文件必须位于云存储帐户（如 OneDrive、GoogleDrive 或 Dropbox
 
 ## <a name="generate-the-app"></a>生成应用
 
-1. 登录 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 登录到[Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 1. 在“生成自己的应用”下，将鼠标悬停在“从数据开始”上，然后选择“生成此应用”。
 

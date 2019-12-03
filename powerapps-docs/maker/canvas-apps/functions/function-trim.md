@@ -1,6 +1,6 @@
 ---
 title: Trim 和 TrimEnds 函数 | Microsoft 文档
-description: PowerApps 中 Trim 和 TrimEnds 函数的参考信息，包括语法和示例
+description: 适用于 Power Apps 中的 Trim 和 TrimEnds 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 79f035271b2a98faf6ddb7bba716c7107e311183
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: cf87c96e2e49f9bc01f6d6c749844bd473099cad
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71991916"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729954"
 ---
-# <a name="trim-and-trimends-functions-in-powerapps"></a>PowerApps 中的 Trim 和 TrimEnds 函数
+# <a name="trim-and-trimends-functions-in-power-apps"></a>Power Apps 中的 Trim 和 TrimEnds 函数
 从文本字符串中删除多余空格。
 
 ## <a name="description"></a>描述

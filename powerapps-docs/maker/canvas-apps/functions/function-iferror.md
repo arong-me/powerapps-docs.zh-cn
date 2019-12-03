@@ -1,6 +1,6 @@
 ---
 title: IfError 函数 | Microsoft Docs
-description: PowerApps 中 IfError 函数的参考信息（包括语法和示例）
+description: Power Apps 中 IfError 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8d9916c3fa62aab947315b7c31daa96f7e528acd
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: fc114688b3a12e842d3107220c0a8967593e18c0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680273"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730817"
 ---
-# <a name="iferror-function-in-powerapps"></a>PowerApps 中的 IfError 函数
+# <a name="iferror-function-in-power-apps"></a>Power Apps 中的 IfError 函数
 
 检测错误并提供替代值或执行操作。
 

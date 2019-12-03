@@ -1,6 +1,6 @@
 ---
 title: Defaults 函数 | Microsoft 文档
-description: PowerApps 中 Defaults 函数的参考信息（包括语法和示例）
+description: Power Apps 中的默认函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b51d956f2c188e0b877530b28dec933d42c905a6
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: ad3d8198d73a698abb771aef7230c12b48ff0f56
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992832"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731123"
 ---
-# <a name="defaults-function-in-powerapps"></a>PowerApps 中的 Defaults 函数
+# <a name="defaults-function-in-power-apps"></a>Power Apps 中的默认函数
 返回[数据源](../working-with-data-sources.md)的默认值。  
 
 ## <a name="description"></a>描述
@@ -35,11 +35,11 @@ ms.locfileid: "71992832"
 ## <a name="syntax"></a>语法
 **Defaults**( *DataSource* )
 
-* *DataSource* – 必需。 需要其默认值的数据源。
+* *DataSource* - 必需。 需要其默认值的数据源。
 
 ## <a name="examples"></a>示例
 
 | 公式 | 描述 | 结果 |
 | --- | --- | --- |
-| **Defaults(&nbsp;Scores&nbsp;)** |返回 **Scores** 数据源的默认值。 |**{评分：0}** |
+| **Defaults(&nbsp;Scores&nbsp;)** |返回 **Scores** 数据源的默认值。 |**{ Score: 0 }** |
 

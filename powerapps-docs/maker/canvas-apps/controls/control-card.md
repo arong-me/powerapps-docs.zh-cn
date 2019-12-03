@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a1e9068e272d1da8a4e6b23b66d999f0688cbc00
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 7f0d4268700b8c46a15fe74da4a4825395dcfe5b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993534"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74722937"
 ---
-# <a name="card-control-in-powerapps"></a>PowerApps 中的卡片控件
+# <a name="card-control-in-power-apps"></a>Power Apps 中的卡片控件
 提供 **[显示窗体](control-form-detail.md)** 或 **[编辑窗体](control-form-detail.md)** 控件的单个字段的显示和编辑体验。
 
 ## <a name="description"></a>描述
@@ -74,18 +74,18 @@ ms.locfileid: "71993534"
 
 * 使用此属性的公式从卡片的编辑控件中请求值，以回写到数据源。 例如，将卡片的 **Update** 属性设为 **Slider.Value**，使用该卡片中的滑块的值更新数据源。
 
-**[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
+[Width](properties-size-location.md) – 控件左边缘和右边缘之间的距离。
 
 **[WidthFit](properties-size-location.md)** - 控件是否会自动水平变宽，以填充容器控件（如“[编辑表单](control-form-detail.md)”控件）的所有空白空间。 如果多张数据卡将此属性设置为“true”，那么空白空间会被这些数据卡均分。 有关详细信息，请参阅[了解数据表单布局](../working-with-form-layout.md)。
 
 ## <a name="additional-properties"></a>其他属性
-**[BorderColor](properties-color-border.md)** – 控件边框的颜色。
+[BorderColor](properties-color-border.md) – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-**[Fill](properties-color-border.md)** – 控件的背景色。
+**[Fill](properties-color-border.md)** – 控件的背景颜色。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 455ffff4813b457c2a439f2081c10418ace2e306
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ba582906c34b2831fffbfedcf645a00bd7cdb7d6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678709"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74728299"
 ---
-# <a name="connect-to-excel-from-powerapps"></a>从 PowerApps 连接到 Excel
+# <a name="connect-to-excel-from-power-apps"></a>从 Power Apps 连接到 Excel
 ![Excel](./media/connection-excel/excelicon.png)
 
 Excel *类似*一种连接。 在应用中显示 Excel 数据：
@@ -35,7 +35,7 @@ Excel *类似*一种连接。 在应用中显示 Excel 数据：
 
 [云存储连接概述](cloud-storage-blob-connections.md)中介绍了如何添加连接、将 Excel 表格作为数据源添加以及在应用中使用 Excel 数据。
 
-有关如何连接到其他数据类型的信息，请参阅 [PowerApps 的连接列表](../connections-list.md)。
+有关如何连接到其他类型的数据的信息，请参阅[适用于 Power Apps 的连接列表](../connections-list.md)。
 
 ### <a name="known-limitations"></a>已知的限制
 若要了解如何在组织内共享 Excel 数据，请[查看这些限制](cloud-storage-blob-connections.md#sharing-excel-tables)。

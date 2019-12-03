@@ -1,6 +1,6 @@
 ---
 title: Select 函数 | Microsoft Docs
-description: PowerApps 中 Select 函数的参考信息（包括语法）
+description: Power Apps 中 Select 函数的参考信息（包括语法）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed31bd165eb2289819800b6f2e01121c2681ae9e
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: bba742d85a11f05cb5f503146e7e940222edf169
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984080"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730256"
 ---
-# <a name="select-function-in-powerapps"></a>PowerApps 中的 Select 函数
+# <a name="select-function-in-power-apps"></a>在 Power Apps 中选择函数
 在控件上模拟选择操作，导致对 OnSelect 公式进行求值。
 
 ## <a name="description"></a>描述

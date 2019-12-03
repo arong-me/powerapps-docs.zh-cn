@@ -1,6 +1,6 @@
 ---
 title: Distinct 函数 | Microsoft 文档
-description: PowerApps 中 Distinct 函数的引用信息（包括语法和示例）
+description: Power Apps 中不同函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7d9ae4df7a4ad11a49b2a25ae78330d0cd807c9b
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: b77cdf452250fc30e1b8c61867f82e5f109fff49
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71985250"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731227"
 ---
-# <a name="distinct-function-in-powerapps"></a>PowerApps 中的 Distinct 函数
+# <a name="distinct-function-in-power-apps"></a>Power Apps 中的不同函数
 对[表](../working-with-tables.md)中的[记录](../working-with-tables.md#records)进行汇总，并删除重复项。
 
 ## <a name="description"></a>描述
@@ -58,7 +58,7 @@ ms.locfileid: "71985250"
     > [!div class="mx-imgBorder"]
     > ![结果视图中显示的 CityPopulations 集合](media/function-distinct/citypopulations-create.png)
 
-1. 插入 "[**数据表" 控件，**](../controls/control-data-table.md)并将其**Items**属性设置为以下公式：
+1. 插入 "[**数据表" 控件，** ](../controls/control-data-table.md)并将其**Items**属性设置为以下公式：
 
     ```powerapps-dot
     Distinct( CityPopulations, Country )

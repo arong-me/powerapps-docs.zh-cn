@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f6b34a5ea1b2f269a26ad70de6a6a530a30bc240
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 679dab28c49d71e8f28a9ace047b9481c4d53cc2
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679330"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725098"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>从解决方案中创建画布应用
 
@@ -65,7 +65,7 @@ ms.locfileid: "74679330"
 
 可以在解决方案中创建空白画布应用。 不能自动生成三屏应用，或者从解决方案内部自定义模板或示例应用。
 
-1. [登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 PowerApps。
+1. [登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 Power Apps。
 
 1. 如有必要，请切换到包含要在其中创建画布应用的解决方案的环境。
 
@@ -96,7 +96,7 @@ ms.locfileid: "74679330"
 
 如果要将应用链接到解决方案，两者都必须在相同的环境中，并且必须在解决方案中创建应用。
 
-1. [登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 PowerApps。
+1. [登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 Power Apps。
 
 1. 如有必要，请切换到包含要链接应用的解决方案的环境。
 
@@ -121,7 +121,7 @@ ms.locfileid: "74679330"
 
 ## <a name="known-limitations"></a>已知的限制
 
-有关已知限制的信息，请参阅[在 PowerApps 中使用解决方案](../common-data-service/use-solution-explorer.md#known-limitations)。 
+有关已知限制的信息，请参阅[使用 Power Apps 中的解决方案](../common-data-service/use-solution-explorer.md#known-limitations)。 
 
 ## <a name="next-steps"></a>后续步骤
 
