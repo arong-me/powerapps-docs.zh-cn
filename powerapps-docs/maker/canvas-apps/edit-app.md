@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 71cb3318ceb83b5c18ebce621a07be08fc60e9c8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 29cf712e6938d34136c3d47b2f73fbcbd3d53a00
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73536984"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679537"
 ---
 # <a name="edit-a-canvas-app-in-powerapps"></a>在 PowerApps 中编辑画布应用
-编辑自己生成、拥有或拥有“可编辑”权限的任何画布应用。 可在 PowerApps Studio 中编辑应用。 如果尝试编辑的应用已在别处打开以供编辑，将会看到一条消息，指明是你自己还是其他用户打开的。
+编辑自己生成、拥有或拥有“可编辑”权限的任何画布应用。 You can edit an app in Power Apps Studio. 如果尝试编辑的应用已在别处打开以供编辑，将会看到一条消息，指明是你自己还是其他用户打开的。
 
 ## <a name="verify-your-permissions"></a>验证权限
 1. 登录 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，再单击或点击左侧边缘“文件”菜单中的“应用”。

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c107e337733f771212359618c5761cb7a89d3177
-ms.sourcegitcommit: a7f2313a048d3b8a03516a2e4c349f3fb08f4a22
+ms.openlocfilehash: 3d67ef4b05b61f59fec49b0bbc0961970d8070bf
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74072542"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678502"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>将画布应用集成到网站和其他服务中
 如果你构建的应用程序可供用户进行工作，则这些应用程序通常最有用。 通过将画布应用嵌入 iframe，你可以将这些应用集成到网站和其他服务中，如 Power BI 或 SharePoint。
@@ -29,10 +29,10 @@ ms.locfileid: "74072542"
 
 请记住以下限制：
 
-- 只有同一租户中的 PowerApps 用户，才能访问嵌入应用。
-- 若要使用 Internet Explorer 11 访问 PowerApps，必须禁用兼容性视图。
+- 只有同一租户中的 Power Apps 用户才能访问嵌入的应用。
+- 若要使用 Internet Explorer 11 访问 Power Apps，必须关闭 "兼容性视图"。
 
-你还可以将画布应用集成到 SharePoint Online 中，而无需使用 iframe。 详细信息：[使用 PowerApps web 部件](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c)。
+你还可以将画布应用集成到 SharePoint Online 中，而无需使用 iframe。 详细信息：[使用 Power Apps web 部件](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c)。
 
 ## <a name="set-uri-parameters-for-your-app"></a>设置应用 URI 参数
 若有要嵌入的应用，第一步是设置统一资源标识符 (URI) 参数，以便 iframe 知道在何处查找应用。 URI 的格式如下：

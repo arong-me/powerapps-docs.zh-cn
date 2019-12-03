@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 73f197c7d4038748649261f4686cb07b456595e0
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 3d53a721e5abba3ce7e844420d9e8415b908cdde
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985213"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680204"
 ---
 # <a name="forall-function-in-powerapps"></a>PowerApps 中的 ForAll 函数
 针对[表](../working-with-tables.md)中的所有[记录](../working-with-tables.md#records)计算值和执行操作。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **ForAll** 函数针对表中的所有记录对公式求值。  该公式可以计算值并/或执行操作，例如修改数据或使用连接。  使用[ **With**函数](function-with.md)可计算单个记录的公式。
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "71985213"
 多个可修改数据源的函数（包括 **Collect**、**Remove** 和 **Update**）会将更改后的数据源作为其返回值来返回。  如果针对 **ForAll** 表的每条记录进行返回，则这些返回值可能很大并占用大量资源。  你还可能会发现这些返回值不是你想要的，因为 **ForAll** 可以并行操作并且可能会将这些函数的副作用与获取其结果分离开来。  幸运的是，如果来自 **ForAll** 的返回值实际上未使用（对于数据修改函数这是常见情况），则不会创建返回值，因此不需要考虑资源或排序。  但是，如果你使用 **ForAll** 的结果并且使用了返回数据源的函数之一，请仔细考虑如何安排结果的结构并首先针对小型数据集进行测试。  
 
 ### <a name="alternatives"></a>替代方法
-PowerApps 中的许多函数可以通过使用单列表一次处理多个值。  例如，**Len** 函数可以采用与 **ForAll** 相同的方式处理包含文本值的表，返回包含长度的表。  这样，在很多情况下将不需要使用 **ForAll**，因此可以更高效并且更容易阅读。
+Power Apps 中的许多函数可以通过使用单列表一次处理多个值。  例如，**Len** 函数可以采用与 **ForAll** 相同的方式处理包含文本值的表，返回包含长度的表。  这样，在很多情况下将不需要使用 **ForAll**，因此可以更高效并且更容易阅读。
 
 另一个需要注意的事项是 **ForAll** 不可委派，而诸如 **Filter** 之类的其他函数则可以。  
 
@@ -88,9 +88,9 @@ PowerApps 中的许多函数可以通过使用单列表一次处理多个值。 
 | **ForAll( Expressions, MicrosoftTranslator.Translate( Value, "fr" ) )** |针对 Expressions 表中的所有记录将 **Value** 列的内容翻译为法语（缩写为“fr”）。 |<style> img { max-width: none } </style> ![](media/function-forall/translate-fr.png) |
 
 ### <a name="copying-a-table"></a>复制表
-有时候，你需要对数据进行筛选、整形、排序和操作。  PowerApps 提供了许多用于执行这些操作的函数，例如 **Filter**、**AddColumns** 和 **Sort**。  PowerApps 将每个表视为一个值，允许它在公式中流动和并可轻松使用。      
+有时候，你需要对数据进行筛选、整形、排序和操作。  Power Apps 提供了许多用于执行此操作的函数，例如**筛选器**、 **AddColumns**和**排序**。  Power Apps 将每个表都视为一个值，从而使其可以流过公式并可轻松使用。      
 
-有时候，你希望创建此结果的副本供以后使用。  或者，你可能希望将信息从一个数据源移动到另一个数据源。  PowerApps 提供了 **Collect** 函数来复制数据。
+有时候，你希望创建此结果的副本供以后使用。  或者，你可能希望将信息从一个数据源移动到另一个数据源。  Power Apps 提供用于复制数据的**收集**功能。
 
 但是，在创建该副本之前，请仔细考虑是否确实需要该副本。  许多情况可以通过按需使用公式对基础数据源进行筛选和整形来解决。 创建副本的一些不利影响包括：
 

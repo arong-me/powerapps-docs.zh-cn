@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5e18b64910bbc7efca8c460100163e1a0716a089
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1a02a83e00b9f377f3882cb32c1e6b6606b5cc2a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992151"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678226"
 ---
 # <a name="notify-function-in-powerapps"></a>PowerApps 中的 Notify 函数
 向用户显示横幅消息。
@@ -41,11 +41,11 @@ Notify 只能在[行为公式](../working-with-formulas-in-depth.md)中使用。
 
 Notify 可以搭配 [IfError](function-iferror.md) 函数使用，以检测错误并使用自定义错误消息报告错误。
 
-PowerApps 还可以使用与 Notify 完全不同的机制发送推送通知。  有关详细信息，请参阅[在 PowerApps 中发送通知](../add-notifications.md)。
+Power Apps 还可以使用完全不同的机制从**通知**发送推送通知。  有关详细信息，请参阅[在 PowerApps 中发送通知](../add-notifications.md)。
 
 Notify 始终返回“true”。
 
-纪录如果此函数只能显示错误消息，则该函数以前名为**ShowError** 。
+注意：此函数以前名为 ShowError，只能显示错误消息。
 
 ## <a name="syntax"></a>语法
 **Notify**( *Message*, [ *NotificationType* ] )

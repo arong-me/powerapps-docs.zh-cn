@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 91d3c43ee4cd5b640a4501fde8c5cc7c1fafab2a
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2388df10fbc735f619497dc9b93dd049c8a46afa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983867"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680089"
 ---
 # <a name="table-function-in-powerapps"></a>PowerApps 中的 Table 函数
 创建一个临时[表](../working-with-tables.md)。
@@ -28,14 +28,14 @@ ms.locfileid: "71983867"
 
 该表的[列](../working-with-tables.md#columns)将是所有参数记录的所有属性的联合。 如果某个列的记录不包含值，则向该列添加空白值。
 
-表是 PowerApps 中的一个值，与字符串或数字类似。 可将表指定为函数的参数，函数可以返回表作为结果。 **Table** 不创建永久表， 而是返回由参数组成的临时表。  可以将该临时表指定为另一函数的参数、在库中将其可视化，或者将其嵌入另一表中。  请参阅[使用表](../working-with-tables.md)，了解更多详情。
+表是 Power Apps 中的一个值，与字符串或数字类似。 可将表指定为函数的参数，函数可以返回表作为结果。 **Table** 不创建永久表， 而是返回由参数组成的临时表。  可以将该临时表指定为另一函数的参数、在库中将其可视化，或者将其嵌入另一表中。  请参阅[使用表](../working-with-tables.md)，了解更多详情。
 
 也可按照 **[ value1, value2, ... ]** 语法创建单个列的表。
 
 ## <a name="syntax"></a>语法
 **Table**( *Record1* [, *Record2*, ... ] )
 
-* *Record(s)* - 必需。 要添加到表的记录。
+* *Record* - 必需。 要添加到表的记录。
 
 ## <a name="examples"></a>示例
 * 将列表框的 **[Items](../controls/properties-core.md)** 属性设置为以下公式：

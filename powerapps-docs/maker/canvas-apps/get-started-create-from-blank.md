@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 81426f24eea958b40f6d03da787a729603ec6f7f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 79d59c484f82f4d356f3b2ac40f02bdddd125901
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73537030"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676598"
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>基于 Excel 数据从头开始创建画布应用
 
@@ -39,7 +39,7 @@ ms.locfileid: "73537030"
     | 星期日 | 中午-下午 2:00 |Singh |Morgan |
     | 星期日 | 下午 2:00 - 4:00 |Batye |Nguyen |
 
-2. 将该数据格式化为名为 **Schedule** 的表，以便 PowerApps 能够分析信息。
+2. 将该数据的格式设置为表，名为**Schedule**，以便 Power Apps 能够分析信息。
 
     有关详细信息，请参阅[在 Excel 中设置表格格式](how-to-excel-tips.md)。
 
@@ -64,9 +64,9 @@ ms.locfileid: "73537030"
     > [!div class="mx-imgBorder"]
     >![指定应用的名称和格式](./media/get-started-create-from-blank/excel-demo.png)
 
-    PowerApps Studio 创建适用于手机的空白应用。
+    Power Apps Studio 创建一个适用于手机的空白应用。
 
-1. 如果打开“欢迎使用 PowerApps Studio”对话框，则选择“跳过”。
+1. 如果 "**欢迎使用 Power Apps Studio** " 对话框打开，请选择 "**跳过**"。
 
 ## <a name="connect-to-data"></a>连接到数据
 

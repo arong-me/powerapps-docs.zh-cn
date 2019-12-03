@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3348db5897b0c58d7addef775d2a871809fc491b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b2eca27d418a762820bf0955edafff435a176efb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995219"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674933"
 ---
 # <a name="share-excel-data-used-by-your-app"></a>共享应用中使用的 Excel 数据
 在[云帐户](connections/cloud-storage-blob-connections.md)（如 OneDrive）中可以与你的应用用户们共享 Excel 数据。
@@ -30,7 +30,7 @@ ms.locfileid: "71995219"
 本主题演示如何使用 Dropbox、OneDrive 和 Google Drive 共享 Excel 电子表格中的数据。 要创建一个应用来显示 Excel 文件中的数据，请参阅[基于一组数据创建应用](get-started-create-from-data.md)。
 
 ## <a name="share-data-in-dropbox"></a>在 Dropbox 中共享数据
-1. 使用创建从 PowerApps 到 Dropbox 的连接时所用的帐户登录 Dropbox。
+1. 使用用于创建从 Power Apps 到 Dropbox 的连接的同一帐户登录到 Dropbox。
 2. 选择包含 Excel 文件的文件夹，然后选择“共享”：  
    
     ![共享命令](./media/share-app-data/dropbox-share.png)
@@ -43,7 +43,7 @@ ms.locfileid: "71995219"
 有关详细信息，请参阅[在 Dropbox 上共享文件夹](https://www.dropbox.com/en/help/19)。
 
 ## <a name="share-data-in-onedrive"></a>在 OneDrive 中共享数据
-1. 使用在创建从 PowerApps 到 OneDrive 的连接时所用的帐户登录 OneDrive。
+1. 使用创建从 Power Apps 到 OneDrive 的连接时所用的同一帐户登录到 OneDrive。
 2. 选择包含文件的文件夹，然后选择“共享”：  
    
     ![共享命令](./media/share-app-data/onedrive-share.png)
@@ -60,7 +60,7 @@ ms.locfileid: "71995219"
 有关详细信息，请参阅[共享 OneDrive 文件和文件夹](https://support.office.com/article/Share-OneDrive-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07)。
 
 ## <a name="share-data-in-google-drive"></a>在 Google Drive 中共享数据
-1. 使用创建从 PowerApps 到 Google Drive 的连接时所用的帐户登录 Google Drive。
+1. 使用与你创建从 Power Apps 到 Google Drive 的连接的同一帐户登录到 Google Drive。
 2. 右键单击存储 Excel 文件的文件夹，然后选择“共享”。  
    
     ![共享命令](./media/share-app-data/googledrive-share.png)

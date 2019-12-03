@@ -1,6 +1,6 @@
 ---
 title: Average、Max、Min、StdevP、Sum 和 VarP 函数 | Microsoft 文档
-description: PowerApps 中 Average、Max、Min、StdevP、Sum 和 VarP 函数的参考信息（包括语法和示例）
+description: Power Apps 中的 Average、Max、Min、StdevP、Sum 和 VarP 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9c11c8e689254de1551bd35661d2768407cf4d6f
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 4f25888cebb81b0b18b1dd54faecfa87df4eb1d6
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985546"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678433"
 ---
 # <a name="average-max-min-stdevp-sum-and-varp-functions-in-powerapps"></a>PowerApps 中的 Average、Max、Min、StdevP、Sum 和 VarP 函数
 用于对一组数字进行汇总的聚合函数。

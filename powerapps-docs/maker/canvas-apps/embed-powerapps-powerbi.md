@@ -13,34 +13,34 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d82db4deaa123e460bce043bff10cc30ea409f15
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 94eb220bbe386b47e2fbb678f9487fcef8612415
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560122"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679468"
 ---
 # <a name="embed-a-new-canvas-app-in-a-power-bi-report"></a>在 Power BI 报表中嵌入新的画布应用
 
-使用 Power BI 时可扩展其功能，方法是向报表添加“自定义视觉对象”。 本教程使用 PowerApps 自定义视觉对象，创建可嵌入到示例报表中的画布应用。 此应用可与报表中的其他项进行交互。
+使用 Power BI 时可扩展其功能，方法是向报表添加“自定义视觉对象”。 在本教程中，将使用 Power Apps 自定义视觉对象创建嵌入到示例报表中的画布应用。 此应用可与报表中的其他项进行交互。
 
-如果没有 PowerApps 订阅，请在开始之前先创建一个[免费帐户](../signup-for-powerapps.md)。
+如果没有 Power Apps 订阅，请在开始前[创建一个免费帐户](../signup-for-powerapps.md)。
 
 在本教程中，了解如何：
 > [!div class="checklist"]
-> * 将 PowerApps 自定义视觉对象导入 Power BI 报表
+> * 将 Power Apps 自定义视觉对象导入 Power BI 报表
 > * 创建可使用报表数据的新应用
 > * 在报表中查看应用
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 * [Google Chrome](https://www.google.com/chrome/browser/) 或 [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) 浏览器
 * 安装了[机会分析示例](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample)的 [Power BI 订阅](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi)
 * 了解如何[在 PowerApps 中创建应用](data-platform-create-app-scratch.md)以及如何[编辑 Power BI 报表](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)
 
-## <a name="import-the-powerapps-custom-visual"></a>导入 PowerApps 自定义视觉对象
+## <a name="import-the-power-apps-custom-visual"></a>导入 Power Apps 自定义视觉对象
 
-第一步是导入 PowerApps 自定义视觉对象，以便在示例报表中使用。
+第一步是导入 Power Apps 自定义视觉对象，以便可以在示例报表中使用它。
 
 1. 在机会分析示例报表中，单击或点击“临近的机会”选项卡。
 
@@ -52,28 +52,28 @@ ms.locfileid: "61560122"
 
 4. 在“Power BI 视觉对象”屏幕上，搜索“PowerApps”，然后单击或点击“添加”。 Power BI 将自定义视觉对象图标添加到“可视化效果”窗格底部。
 
-    ![PowerApps 视觉对象图标](media/embed-powerapps-powerbi/powerapps-icon.png)
+    ![Power Apps 视觉对象图标](media/embed-powerapps-powerbi/powerapps-icon.png)
 
 5. 保存报告。
 
 ## <a name="create-a-new-app"></a>创建新应用
-现在，将自定义视觉对象添加到报表并基于报表中的数据创建新应用。 创建应用时，它会通过 PowerApps 与 Power BI 之间的实时数据连接启动 PowerApps Studio。
+现在，将自定义视觉对象添加到报表并基于报表中的数据创建新应用。 当你创建应用时，它会启动 Power Apps Studio，并在电源应用和 Power BI 之间建立实时数据连接。
 
 1. 移动某些报表磁贴并调整其大小，为应用留出空间。
 
     ![移动报表磁贴并调整其大小](media/embed-powerapps-powerbi/move-resize.png)
 
-2. 单击或点击 PowerApps 自定义视觉对象图标，然后调整磁贴大小以适应所提供的空间。
+2. 单击或点击 "Power Apps" 自定义视觉对象图标，然后调整磁贴的大小以适合你所做的空间。
 
 3. 在“字段”窗格中，选择“名称”、“产品代码”和“销售阶段”。 
 
     ![选择字段](media/embed-powerapps-powerbi/select-fields.png)
 
-4. 在自定义视觉对象磁贴中，选择想要在其中创建应用的 PowerApps 环境，然后单击或点击“新建”。
+4. 在 "自定义视觉对象" 磁贴中，选择要在其中创建应用的 "电源应用" 环境，然后单击或点击 "**新建**"。
 
     ![创建新应用](media/embed-powerapps-powerbi/create-new-app.png)
 
-    在 PowerApps Studio 中，会看到已创建一个基本应用，以及一个库，显示有 Power BI 中所选的一个字段。
+    在 Power Apps Studio 中，可以看到创建了基本应用，*库*显示了在 Power BI 中选择的某个字段。
 
 5.  调整库大小使其仅占用屏幕的一半。 
 
@@ -105,11 +105,11 @@ ms.locfileid: "61560122"
 ## <a name="next-steps"></a>后续步骤
 在本教程中，了解如何：
 > [!div class="checklist"]
-> * 将 PowerApps 自定义视觉对象导入 Power BI 报表
+> * 将 Power Apps 自定义视觉对象导入 Power BI 报表
 > * 创建可使用报表数据的新应用
 > * 在报表中查看应用
 
 前进到下一篇文章了解详细信息
 > [!div class="nextstepaction"]
-> [适用于 Power BI 的 PowerApps 自定义视觉对象](powerapps-custom-visual.md)
+> [适用于 Power BI 的 Power Apps 自定义视觉对象](powerapps-custom-visual.md)
 

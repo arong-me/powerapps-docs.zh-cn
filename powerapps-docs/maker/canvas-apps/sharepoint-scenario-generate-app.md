@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9bfd103d2f8e6503e2897855a0d424807b9573e6
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 42ca4a12f75c82bb685396a857e5ae825d8d7fa1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899539"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674791"
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>生成用于处理项目请求的画布应用
 > [!NOTE]
-> 本文是有关将 PowerApps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> 本文是有关将 Power Apps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
-至此，SharePoint 列表已创建完成，我们可以生成和自定义第一个应用了。 由于 PowerApps 已与 SharePoint 集成，因此可以直接通过列表轻松生成基本的三屏应用。 使用此应用，可以查看每个列表项的摘要和详细信息、更新现有列表项，并能新建列表项。 直接通过列表创建的应用显示为相应列表的视图。 然后，可以在浏览器和移动电话上运行此应用。
+至此，SharePoint 列表已创建完成，我们可以生成和自定义第一个应用了。 Power Apps 与 SharePoint 集成，因此可以轻松地直接从列表生成基本的*三屏幕应用*。 使用此应用，可以查看每个列表项的摘要和详细信息、更新现有列表项，并能新建列表项。 直接通过列表创建的应用显示为相应列表的视图。 然后，可以在浏览器和移动电话上运行此应用。
 
 > [!TIP]
 > 这个方案的[下载包](https://aka.ms/o4ia0f)包含此应用的最终版本 (project-requests-app.msapp)。
@@ -35,19 +35,19 @@ ms.locfileid: "73899539"
    
     ![创建应用](./media/sharepoint-scenario-generate-app/02-01-01-create-app.png)
 
-2. 命名应用（如“项目申请应用”），再单击或点击“创建”。 应用创建完成后，将在 PowerApps Studio 中打开。
+2. 命名应用（如“项目申请应用”），再单击或点击“创建”。 应用就绪后，它将在 Power Apps Studio 中打开。
    
     ![指定应用名称](./media/sharepoint-scenario-generate-app/02-01-02-create-app-name.png)
 
-## <a name="step-2-review-the-app-in-powerapps-studio"></a>第 2 步：在 PowerApps Studio 中查看应用
+## <a name="step-2-review-the-app-in-power-apps-studio"></a>步骤2：在 Power Apps Studio 中查看应用
 
-1. 在 PowerApps Studio 中，左侧导航栏默认显示应用中屏幕和控件的分层视图。
+1. 在 Power Apps Studio 中，左侧导航栏默认显示应用中的屏幕和控件的分层视图。
    
-    ![含分层视图的 PowerApps Studio](./media/sharepoint-scenario-generate-app/02-02-01-studio-screens-hierarchy.png)
+    ![带分层视图的 Power Apps Studio](./media/sharepoint-scenario-generate-app/02-02-01-studio-screens-hierarchy.png)
 
 2. 单击或点击缩略图图标可以切换视图。
    
-    ![PowerApps Studio 视图选择器](./media/sharepoint-scenario-generate-app/02-02-02-studio-view-selector.png)
+    ![Power Apps Studio 视图选择器](./media/sharepoint-scenario-generate-app/02-02-02-studio-view-selector.png)
 
 3. 单击或点击每个屏幕可以在中间窗格内进行查看。 此应用有三屏：
    
@@ -57,7 +57,7 @@ ms.locfileid: "73899539"
     
     (c). 编辑/创建屏幕：可用于编辑现有项或新建项。
       
-      ![含缩略图视图的 PowerApps Studio](./media/sharepoint-scenario-generate-app/02-02-03-studio-screens-thumbnails.png)
+      ![带缩略图的 Power Apps Studio](./media/sharepoint-scenario-generate-app/02-02-03-studio-screens-thumbnails.png)
 
 ## <a name="step-3-customize-the-apps-browse-screen"></a>第 3 步：自定义应用的浏览屏幕
 
@@ -89,7 +89,7 @@ ms.locfileid: "73899539"
    
     ![编辑栏](./media/sharepoint-scenario-generate-app/02-03-04-formula.png)
    
-    这样，可以按“Title”字段（而不是 PowerApps 选取的默认字段）进行排序和搜索。 有关详细信息，请参阅[公式详解](#formula-deep-dive)。
+    这样，你就可以按 "**标题**" 字段进行排序和搜索，而不是选择 Power Apps 的默认值。 有关详细信息，请参阅[公式详解](#formula-deep-dive)。
 
 6. 依次单击或点击“文件”和“保存”。 单击或点击 ![“返回到应用”图标](./media/sharepoint-scenario-generate-app/icon-back-to-app.png)，返回到应用。
 
@@ -137,7 +137,7 @@ ms.locfileid: "73899539"
 虽然这个应用非常简单，我们只进行了几项基本的自定义操作，但可以发现，很快就能生成十分有趣的内容。 我们将继续执行下一项任务，但你可以根据需要再多研究一下此应用，了解控件和公式是如何相互配合来驱动应用行为的。
 
 ## <a name="formula-deep-dive"></a>公式详解
-本部分虽为选读内容，但将有助于深入了解公式的工作原理。 在此任务的第 3 步中，我们修改了“BrowseGallery1”的“Items”属性的公式。 具体而言，我们更改为按“Title”字段（而不是 PowerApps 选取的字段）进行排序和搜索。 下面是修改后的公式：
+本部分虽为选读内容，但将有助于深入了解公式的工作原理。 在此任务的第 3 步中，我们修改了“BrowseGallery1”的“Items”属性的公式。 具体而言，我们更改了排序和搜索，以使用 "**标题**" 字段，而不是 Power Apps 选取的字段。 下面是修改后的公式：
 
 **SortByColumns ( Filter ( 'Project Requests', StartsWith ( Title, TextSearchBox1.Text ) ), "Title", If ( SortDescending1, Descending, Ascending ) )**
 

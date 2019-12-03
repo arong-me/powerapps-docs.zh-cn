@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d104bc88fb8f5306a9d086fa04bc946b6a719129
-ms.sourcegitcommit: c3e7be17c8b39bf17b2089ad3bd424e63b5645e5
+ms.openlocfilehash: 52deddf87a1c3ee4604591110cfb08eb2d2680b8
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72822119"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74672991"
 ---
 # <a name="create-a-rule-in-canvas-apps"></a>在画布应用中创建规则
 创建根据指定条件自动修改应用的规则。 例如，根据列表项状态以红色、黄色或绿色显示列表项，或仅对特定用户（如管理人员）显示批准按钮。 可以向各种控件添加规则。 本主题中添加的规则用于在滑块控件的值大于 70 时，更改标签控件的文字颜色。
@@ -51,13 +51,13 @@ ms.locfileid: "72822119"
     对于本主题，将 0 更改为 70，生成如下表达式： <br>**Slider1.Value > 70**
 
 ## <a name="add-an-action"></a>添加操作
-操作定义了在应用规则时会发生些什么。 PowerApps 可根据用户做出的控件更改自动创建操作。
+操作定义了在应用规则时会发生些什么。 Power Apps 可根据你对控件所做的更改自动创建操作。
 
 1. 单击或点击“定义操作”。
 
     ![定义操作](./media/working-with-rules/rule-define-actions.png)
 
-1. 在确认对话框中，单击或点击“开始吧”，这样 PowerApps 就会捕获接下来的更改（一个或多个）作为一项或多项操作。
+1. 在确认对话框中，单击或点击 "**转到**"，以便 Power Apps 捕获下一个或多个操作的更改或更改。
 
 1. 配置一个或多个控件，以满足条件为 true 时的预期要求。
 
@@ -101,7 +101,7 @@ ms.locfileid: "72822119"
 
 ![删除筛选器](./media/working-with-rules/rules-filter.png)
 
-## <a name="known-limitations"></a>已知限制
+## <a name="known-limitations"></a>已知的限制
 截至本文撰写之时：
 
 * 无法在条件中指定窗体或库的 ThisItem 属性。

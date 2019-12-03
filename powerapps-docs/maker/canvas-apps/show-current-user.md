@@ -1,6 +1,6 @@
 ---
 title: 在画布应用中显示有关当前用户的详细信息 | Microsoft Docs
-description: 在 PowerApps 的画布应用中，显示已登录用户的姓名和电子邮件地址
+description: 在 Power Apps 中，在画布应用中显示已登录用户的名称和电子邮件地址
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afd5dffc75dea4186058ba96adbaf0dbde8dc3d8
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: f77ec80cfaf579c836277f0e29d3b84b325a0462
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71988423"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674596"
 ---
-# <a name="show-information-about-a-powerapps-user-in-a-canvas-app"></a>在画布应用中，显示 PowerApps 用户的相关信息
+# <a name="show-information-about-a-power-apps-user-in-a-canvas-app"></a>在画布应用中显示有关 Power Apps 用户的信息
 
-在 PowerApps 中，显示与已登录画布应用的用户关联的全名、电子邮件地址和图片。 例如，可以使用此信息来自动填充窗体。
+在 "Power Apps" 中，显示与登录到画布应用的用户关联的完整名称、电子邮件地址和图片。 例如，可以使用此信息来自动填充窗体。
 
 例如，可以使用此功能：
 

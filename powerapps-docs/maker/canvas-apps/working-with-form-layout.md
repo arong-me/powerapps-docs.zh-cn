@@ -1,6 +1,6 @@
 ---
 title: 了解画布应用的数据窗体布局 | Microsoft Docs
-description: 在 PowerApps 中，使用行和列在画布应用中创建美观的窗体布局。
+description: 在 Power Apps 中，通过使用行和列在画布应用中创建外观精美的窗体布局。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2ef11e767fcf92259839c4bebe282757b0004f21
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: f447a467319f814fd79aab6827bf623d35345102
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989142"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674537"
 ---
 # <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>了解 PowerApps 中画布应用的数据窗体布局
 
-在 PowerApps 中生成画布应用时，轻松创建美观高效的窗体 例如，假设记录销售订单的基本表单如下：
+在 Power Apps 中构建画布应用时，可以轻松创建一个引人注目且高效的窗体。 例如，假设记录销售订单的基本表单如下：
 
 ![示例销售订单](./media/working-with-form-layout/sales-order.png)
 
@@ -30,9 +30,9 @@ ms.locfileid: "71989142"
 
 ## <a name="before-you-start"></a>开始之前
 
-如果你是初次接触 PowerApps（或者仅自动生成过应用），则在深入了解此主题前请[从头开始生成一个应用](get-started-create-from-blank.md)。 通过从头开始生成一个应用，会让你熟悉本主题中提及但未加说明的必备概念，例如添加数据源和控件。
+如果不熟悉电源应用（或自动生成了应用），请在深入了解本主题之前，[从头开始构建应用](get-started-create-from-blank.md)。 通过从头开始生成一个应用，会让你熟悉本主题中提及但未加说明的必备概念，例如添加数据源和控件。
 
-本主题的编写方式为：你有一个名为 "**销售订单**" 的数据源，并且该数据源包含上图中的字段。 如果你拥有 PowerApps 计划2许可证或[试用版许可证](../signup-for-powerapps.md)以及系统管理员或系统管理员权限，则可以在 Common Data Service 中[创建一个实体](../common-data-service/data-platform-create-entity.md)并添加类似字段。 
+本主题的编写方式为：你有一个名为 "**销售订单**" 的数据源，并且该数据源包含上图中的字段。 如果拥有 Power Apps 计划2许可证或[试用许可证](../signup-for-powerapps.md)、系统管理员或系统定制员权限，则可以在 Common Data Service 中[创建一个实体](../common-data-service/data-platform-create-entity.md)并添加类似字段。 
 
 ## <a name="add-a-gallery"></a>添加库
 
@@ -199,12 +199,12 @@ ms.locfileid: "71989142"
 | 数据卡在各行间自动重新布局（稍后将对此进行详细介绍） |是 |否 |
 
 ## <a name="set-width-and-height"></a>设置宽度和高度
-与 PowerApps 中的所有内容一样，表单布局受数据卡控件属性约束。 如前面所述，可以通过将控件拖到不同的位置或拖动握柄来调整控件的大小，从而更改这些属性的值。 不过，有时也会需要更精准地了解并控制这些属性，尤其是在使用公式生成动态表单时。
+与 Power Apps 中的所有内容一样，窗体的布局由卡控件上的属性控制。 如前面所述，可以通过将控件拖到不同的位置或拖动握柄来调整控件的大小，从而更改这些属性的值。 不过，有时也会需要更精准地了解并控制这些属性，尤其是在使用公式生成动态表单时。
 
-### <a name="basic-layout-x-y-and-width"></a>基本布局：X、Y 和宽度
+### <a name="basic-layout-x-y-and-width"></a>基本布局：X、Y 和 Width
 **X** 和 **Y** 属性控制卡的位置。 处理原始画布上的控件时，这些属性生成的是绝对位置。 在表单中，这些属性的含义就不同了：
 
-* **X**：行中的顺序。
+* **X**：行内顺序。
 * **Y**：行号。
 
 与画布上的控件类似，“Width”属性指定的是数据卡的最小宽度（很快将会对下限进行详细介绍）。
@@ -224,7 +224,7 @@ ms.locfileid: "71989142"
 
 可以使用此行为创建完全动态的布局，即数据卡根据 Z 顺序进行排列，尽可能填充所在行，然后再移到下一行。 若要达到此效果，请为所有数据卡设置相同的 **Y** 值，再使用 **X** 表示数据卡的顺序。
 
-### <a name="filling-spaces-widthfit"></a>填充空格：WidthFit
+### <a name="filling-spaces-widthfit"></a>填充空间：WidthFit
 上一示例中的溢出导致第一行中第二张“订单状态”数据卡后面有空间。 为了填充此空间，我们可以手动调整两张剩余数据卡的 **Width** 属性，但此方法会很麻烦。
 
 作为备选方法，可以使用“WidthFit”属性。 如果某行中的一张或多张数据卡将此属性设置为 **true**，则此行上的任何剩余空间都会被数据卡均分。 正因为此行为，我们在前面提到，数据卡的 **Width** 属性为*最小宽度*，而实际显示的宽度可能会更大。 此属性不会使卡片缩，只会使其扩大。

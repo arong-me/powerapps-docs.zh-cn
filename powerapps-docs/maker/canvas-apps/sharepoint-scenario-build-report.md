@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9693e45da894348acd27b96f73d1358819812ae4
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: dbe706b19ccc974eda95f47145ced2e9ff14a4c6
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73900331"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674875"
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>创建用于分析项目的 Power BI 报表
 > [!NOTE]
-> 本文是有关将 PowerApps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> 本文是有关将 Power Apps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
 在此任务中，我们将创建以两个 SharePoint 列表为依据的 Power BI 报表。 我们将把列表数据导入 Power BI Desktop 并稍作清理，再进行一些基本数据建模，并创建一组可提供数据信息的视觉对象。
 

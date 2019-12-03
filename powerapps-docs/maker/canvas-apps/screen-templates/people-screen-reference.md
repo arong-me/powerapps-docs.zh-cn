@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0a1626583300e6fe696415a91de68ff08596f081
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: ab4b7683d4ea550ebe5704cb7e5580ccbae48deb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989383"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674977"
 ---
 # <a name="reference-information-about-the-people-screen-template-for-canvas-apps"></a>有关 canvas 应用的人员屏幕模板的参考信息
 
-对于 PowerApps 中的画布应用，请了解人员界面模板中的每个重大控件如何为屏幕的整体默认功能提供。 此深入探讨介绍了行为公式以及其他属性的值，这些属性决定控件如何响应用户输入。 有关此屏幕默认功能的详细讨论，请参阅[用户界面概述](people-screen-overview.md)。
+对于 Power Apps 中的画布应用，请了解人员-屏幕模板中的每个重大控件如何为屏幕的整体默认功能提供帮助。 此深入探讨介绍了行为公式以及其他属性的值，这些属性决定控件如何响应用户输入。 有关此屏幕默认功能的详细讨论，请参阅[用户界面概述](people-screen-overview.md)。
 
 本主题重点介绍一些重要的控件，并说明这些控件的各种属性（例如**Items**和**OnSelect**）的设置表达式或公式：
 

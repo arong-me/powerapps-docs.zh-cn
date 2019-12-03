@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f704b96150b0021b7170fc095cc6561cd3aac908
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 44c94a712402ef26a4fa6b36d84e287d3fa506e1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987787"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679284"
 ---
 # <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>PowerApps 画布应用中具有辅助功能的颜色
-画布应用中使用的颜色应方便色盲和弱视用户使用。 默认情况下，所有 PowerApps 主题可让所有用户都轻松使用。 在修改应用中使用的颜色时，请遵循以下准则以确保它们方便用户使用。 有多种联机工具可以帮助确定颜色对比度问题。
+画布应用中使用的颜色应方便色盲和弱视用户使用。 默认情况下，所有 Power Apps 主题都是可访问的。 在修改应用中使用的颜色时，请遵循以下准则以确保它们方便用户使用。 有多种联机工具可以帮助确定颜色对比度问题。
 
 ## <a name="minimum-contrast-for-text"></a>文本最小对比度
 * 文本及其背景必须至少有 4.5:1 的对比度
@@ -55,7 +55,7 @@ ms.locfileid: "71987787"
 * [HoverFill](controls/properties-color-border.md) 和控件范围之外的颜色
 
 ### <a name="graphical-objects"></a>图形对象
-如果图像传达重要信息，请考虑检查其对比度问题。 这适用于可显示图像的控件： **[音频](controls/control-audio-video.md)** 、 **[图像](controls/control-image.md)** 、 **[麦克风](controls/control-microphone.md)** 和 **[视频](controls/control-audio-video.md)** 。
+如果图像传达重要信息，请考虑检查其对比度问题。 这适用于可在其中显示图像的控件：[音频](controls/control-audio-video.md)、[图像](controls/control-image.md)、[麦克风](controls/control-microphone.md)和[视频](controls/control-audio-video.md)。
 
 有关视频内容，请考虑检查其对比度问题。 或者另外提供[隐藏式字幕](controls/control-audio-video.md)来描述视频。
 
@@ -65,4 +65,4 @@ ms.locfileid: "71987787"
 其他提示，如[图标](controls/control-shapes-icons.md)或[斜体](controls/properties-text.md)和[下划线](controls/properties-text.md)之类的文本样式有助于传达含义。
 
 ## <a name="next-steps"></a>后续步骤
-了解 PowerApps 控件中的[辅助功能属性](controls/properties-accessibility.md)并尝试[使用辅助功能检查器](accessibility-checker.md)。
+了解 Power Apps 控件中的[辅助功能属性](controls/properties-accessibility.md)，并尝试[使用辅助功能检查器](accessibility-checker.md)。

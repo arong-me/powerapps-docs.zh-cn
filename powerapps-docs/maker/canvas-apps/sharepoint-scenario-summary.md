@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 76d4a1ffdc569a3ccfc2567229c99136e744191a
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: cba5d7bd1214866cc24ba01c64909cf15e0ca96d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899293"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674680"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>对完成的 SharePoint Online 集成方案进行端到端演练
 > [!NOTE]
-> 本文是有关将 PowerApps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> 本文是有关将 Power Apps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
 本系列教程涉及大量基础知识，包括生成画布应用和流、创建报表并将其嵌入 SharePoint 中等。 我们由衷希望你已学到很多知识，并且充分了解如何综合运用这些技术，以便可以根据自己的需求将画布应用、流和报表集成到 SharePoint 中。 最后，我们希望对此方案进行端到端演练，以展示各方面的工作是如何完美配合的。
 

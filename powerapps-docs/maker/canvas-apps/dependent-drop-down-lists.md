@@ -1,6 +1,6 @@
 ---
 title: 在画布应用中创建依赖项下拉列表 |Microsoft Docs
-description: 在 PowerApps 中，创建一个下拉列表，用于筛选画布应用中的其他下拉列表。
+description: 在 "Power Apps" 中，创建一个下拉列表，用于筛选画布应用中的其他下拉列表。
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 57abde44541a2a1e40e3a8ffc55a89e37a8c6478
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 233fd99eeba86151f616a22955cf28c2114de43e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71985749"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679606"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>在画布应用中创建依赖项下拉列表
 
@@ -69,9 +69,9 @@ ms.locfileid: "71985749"
 1. 打开 "**事件**" 列表，然后选择 " **PowerApps** > **自定义窗体**"。
 
     > [!div class="mx-imgBorder"]
-    > ![打开 "事件" 列表，然后选择 "PowerApps > 自定义窗体"。](./media/dependent-drop-down-lists/open-form.png "打开 "事件" 列表，然后选择 "PowerApps > 自定义窗体"。")
+    > ![打开事件列表，然后选择 "电源应用 > 自定义窗体"。](./media/dependent-drop-down-lists/open-form.png "Open the Incidents list, and then select Power Apps > Customize forms.")
 
-    此时会打开一个浏览器选项卡，其中包含 PowerApps Studio 中的默认窗体。
+    此时会打开一个浏览器选项卡，其中包含 Power Apps Studio 中的默认窗体。
 
 1. 可有可无在 "**字段**" 窗格中，将鼠标悬停在 "**标题**" 字段上，选择显示的省略号（...），然后选择 "**删除**"。
 
@@ -202,10 +202,10 @@ ms.locfileid: "71985749"
     > ![更改组合框](./media/dependent-drop-down-lists/combo-box-display-field.png)
 
 **我的子下拉列表包含重复项。**
-此症状可能是由于使用 SharePoint 中的**查找**列或 PowerApps 中的**选项**函数导致的。 若要删除复制，请围绕正确返回的数据环绕**不同**的函数。 详细信息： [Distinct 函数](functions/function-distinct.md)。
+此症状可能是由于使用 SharePoint 中的**查找**列或 Power Apps 中的**选项**函数所致。 若要删除复制，请围绕正确返回的数据环绕**不同**的函数。 详细信息： [Distinct 函数](functions/function-distinct.md)。
 
 ## <a name="known-limitations"></a>已知的限制
 
-此配置可用于**下拉**控件，以及允许一次选择一项的**组合框**和**列表框**控件。 如果允许多重选择，则不能对这些控件中的任何控件使用**取决**于配置。 对于使用 Common Data Service 中的选项集，不建议使用此方法。
+此配置可用于**下拉**控件，以及允许一次选择一项的**组合框**和**列表框**控件。 You can't use the **Depends On** configuration for any of those controls if they allow multiple selections. This approach isn't recommended for working with option sets in Common Data Service.
 
-**依赖于**配置不支持静态数据或集合。 若要配置具有这些源的从属下拉列表，请直接在编辑栏中编辑表达式。 此外，PowerApps 不支持在 SharePoint 中使用两个不包含任何匹配数据表的选项字段，也不能在此 UI 中定义**匹配字段**。
+The **Depends On** configuration doesn't support static data or collections. To configure dependent drop-down lists with these sources, edit the expression directly in the formula bar. In addition, Power Apps doesn't support using two choice fields in SharePoint without any matching table of data, and you can't define **Matching field** within this UI.

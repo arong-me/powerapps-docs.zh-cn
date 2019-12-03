@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 11f749f241f978ebd94e460833e98cca894fe7fa
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 81c1db4ab44f3ca8517c6154f0516ca9dad5f825
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990204"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676518"
 ---
 # <a name="get-a-session-id-or-a-canvas-app-id"></a>获取会话 ID 或画布应用 ID
-如果你在使用 PowerApps 中创建的画布应用时遇到问题，通过向 Microsoft 提供该问题的会话 ID 和/或应用 ID，可以帮助他们更有效地解决该问题。
+如果你遇到在 Power Apps 中创建的画布应用的问题，你可以帮助 Microsoft 更有效地解决问题，因为你为这些问题提供了会话 ID 和/或应用 ID。
 
 ## <a name="get-the-session-id"></a>获取会话 ID
 
@@ -32,7 +32,7 @@ ms.locfileid: "71990204"
 
 1. 在“诊断”下选择“会话详细信息”。
 
-    ![从 PowerApps Studio 中获取会话 ID](media/get-sessionid/studio.png)
+    ![从 Power Apps Studio 获取会话 ID](media/get-sessionid/studio.png)
 
 ### <a name="when-running-an-app-in-a-browser"></a>在浏览器中运行应用时
 1. 在右上角，选择齿轮图标。

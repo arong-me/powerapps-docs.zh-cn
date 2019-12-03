@@ -13,26 +13,26 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b03f60173ea09160677bd02adf8a91aae02c272d
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1d98f01920dbcbf960b1e2bb21159586318e0386
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985667"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679583"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>了解画布应用中的委派
-PowerApps 包含一组功能强大的函数，用于在画布应用中筛选、排序和成形数据表： **[筛选](functions/function-filter-lookup.md)** 、 **[排序](functions/function-sort.md)** 和 **[AddColumns](functions/function-table-shaping.md)** 函数，只需对其进行命名。 可以使用这些函数，让用户重点访问其所需的信息。 对于具有数据库背景的用户来说，使用这些函数相当于编写数据库查询。
+Power Apps 包含一组功能强大的功能，可用于在画布应用中筛选、排序和整理数据表： **[筛选](functions/function-filter-lookup.md)** 、 **[排序](functions/function-sort.md)** 和 **[AddColumns](functions/function-table-shaping.md)** 函数，只需对其进行命名即可。 可以使用这些函数，让用户重点访问其所需的信息。 对于具有数据库背景的用户来说，使用这些函数相当于编写数据库查询。
 
 若要生成有效的应用，关键是尽量减少必须转到设备的数据量。 也许在成千上万条记录中，只需要少量记录；也许单个聚合值就可以代表数千条记录。 也许只有第一组记录可以检索，而其余记录是用户在需要更多记录的情况下通过笔势输入的。 进行重点访问可以大幅缩减应用所需的处理能力、内存和网络带宽，提高用户的响应速度，即使使用的是通过移动电话网络连接的手机。 
 
-若要通过 PowerApps 公式来尽量减少通过网络传输的数据，则需使用“委派”。 简而言之，PowerApps 会将数据的处理委派给数据源，而不是将数据移到应用进行本地处理。
+*委托*是指表现力的 Power Apps 公式满足需要，最大程度地减少通过网络移动的数据。 简而言之，电源应用会将数据处理委托给数据源，而不是将数据移动到应用进行本地处理。
 
-但这会很复杂，这也是写作本文的原因，因为并非所有能够在 PowerApps 公式中表示的内容都可以委派给所有数据源。 PowerApps 语言与 Excel 的公式语言类似，旨在让用户能够完整且即时地访问内存中的整个工作簿，并且提供各种数字和文本操作函数。 因此，PowerApps 语言要比大多数数据源能够支持的语言（包括强大的数据库引擎，例如 SQL Server）丰富得多。
+这种情况变得很复杂，这篇文章的原因在于，不能将可在 Power Apps 公式中表示的所有内容委托给每个数据源。 Power Apps 语言模拟 Excel 的公式语言，它设计为对内存中完整工作簿的完整和即时访问，同时提供各种数字和文本操作函数。 因此，Power Apps 语言比大多数数据源可以支持的语言更丰富，包括功能强大的数据库引擎，如 SQL Server。
 
 **处理大型数据集需要使用数据源和能够委派的公式。** 若要让应用始终运行良好，同时要确保用户能够访问所需的全部信息，这是唯一的方式。 请注意，标识不可能委派的位置的委派警告。 如果处理的是小型数据集（不到 500 条记录），则可使用任何数据源和公式，因为当不能委派公式时，应用可以在本地处理数据。 
 
 > [!NOTE]
-> 以前，委派警告在 PowerApps 中标记为“蓝点”建议，但此后，委派建议已经重新分类为警告。 如果数据源中的数据超过 500 条记录，则不能委派函数，PowerApps 可能不能检索所有数据，应用可能会得到错误的结果。 委派警告可帮助管理应用，使其得到正确的结果。
+> 委托警告以前在 Power Apps 中标记为 "蓝色点" 建议，但委托建议已被重新分类为警告。 如果你的数据源中的数据超过500条记录并且无法委托某个函数，则 Power Apps 可能无法检索所有数据，并且你的应用程序可能会产生错误的结果。 委派警告可帮助管理应用，使其得到正确的结果。
 
 ## <a name="delegable-data-sources"></a>可委托的数据源
 仅某些表格数据源支持委托。 如果数据源支持委托，其[连接器文档](https://docs.microsoft.com/connectors/)将概述该支持。 例如，这些表格数据源是最常用的，它们支持委托：
@@ -41,7 +41,7 @@ PowerApps 包含一组功能强大的函数，用于在画布应用中筛选、�
 - [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/) 
 - [SQL Server](https://docs.microsoft.com/connectors/sql/) 
 
-导入的 Excel 工作簿（使用 "**将静态数据添加到应用**数据源"）、集合和存储在上下文变量中的表不需要委托。 所有此类数据都已在内存中，可以应用完整的 PowerApps 语言。
+导入的 Excel 工作簿（使用 "**将静态数据添加到应用**数据源"）、集合和存储在上下文变量中的表不需要委托。 所有这些数据都已在内存中，可以应用完整的 Power Apps 语言。
 
 ## <a name="delegable-functions"></a>委派函数
 下一步是仅使用那些可以委派的公式。 下面提供的是可以委派的公式元素。 但是，数据源各不相同，并非所有数据源都支持所有这些元素。 请在具体公式中查看委派警告。
@@ -70,9 +70,9 @@ PowerApps 包含一组功能强大的函数，用于在画布应用中筛选、�
 * **[*](functions/operators.md)** 、 **[/](functions/operators.md)** 、 **[Mod](functions/function-mod.md)**
 * **[Concatenate](functions/function-concatenate.md)** （包括 **[&](functions/operators.md)** ）
 * **[ExactIn](functions/operators.md)**
-* 字符串操作函数： **[Lower](functions/function-lower-upper-proper.md)** 、 **[Upper](functions/function-lower-upper-proper.md)** 、 **[Left](functions/function-left-mid-right.md)** 、 **[Mid](functions/function-left-mid-right.md)** 、 **[Len](functions/function-left-mid-right.md)** 。
-* 引发 **[位置](functions/signals.md)** ， **[加速](functions/signals.md)** ， **[罗盘](functions/signals.md)** ，。
-* Volatiles: **[Rand](functions/function-rand.md)** ，。
+* 字符串操作函数： **[Lower](functions/function-lower-upper-proper.md)** 、 **[Upper](functions/function-lower-upper-proper.md)** 、 **[Left](functions/function-left-mid-right.md)** 、 **[Mid](functions/function-left-mid-right.md)** 、 **[Len](functions/function-left-mid-right.md)** ...
+* 信号： **[Location](functions/signals.md)** 、 **[Acceleration](functions/signals.md)** 、 **[Compass](functions/signals.md)** ...
+* Volatiles： **[Rand](functions/function-rand.md)** ，。
 * [集合](working-with-variables.md)
 
 ### <a name="sorting-functions"></a>排序函数
@@ -115,9 +115,9 @@ AddColumns( Products,
 * **[GroupBy](functions/function-groupby.md)** 、 **[Ungroup](functions/function-groupby.md)**
 
 ## <a name="non-delegable-limits"></a>不可委派限制
-将在本地处理不可委派的公式。 这样就可以使用整套 PowerApps 公式语言。 但是也有代价：所有数据都必须先转到设备上，这可能需要通过网络检索大量的数据。 这可能需要一段时间，让人以为应用很慢或者可能已崩溃。
+将在本地处理不可委派的公式。 这允许使用各种 Power Apps 公式语言。 但是也有代价：所有数据都必须先转到设备上，这可能需要通过网络检索大量的数据。 这可能需要一段时间，让人以为应用很慢或者可能已崩溃。
 
-为避免出现这种情况，PowerApps 对可在本地处理的数据量施加限制：默认情况下，500记录。  我们选择此数字是为了让你仍然能够对小型数据集进行完整的访问，同时让你虽然只能看到部分结果，也能练习对大型数据集的使用。
+为避免出现这种情况，Power Apps 会对可在本地处理的数据量施加限制：默认情况下为500记录。  我们选择此数字是为了让你仍然能够对小型数据集进行完整的访问，同时让你虽然只能看到部分结果，也能练习对大型数据集的使用。
 
 显然，使用此工具时必须小心，因为这可能会让用户感到困惑。 例如，假设有一个 Filter 函数，其选择公式不能委派，需要对有一百万条记录的数据源应用该函数。 由于本地进行筛选，因此仅扫描了前 500 条记录。 如果所需记录是第 501 或第 500,001 个记录，则 Filter 不会考虑或返回该记录。
 
@@ -134,7 +134,7 @@ AddColumns( Products,
 要确保应用可以扩展为大型数据集，请将此设置降低为 1。 现在，任何无法委派的内容将会返回一条记录，在测试应用时应该很容易被检测到。 这有助于在尝试将概念证明应用用于生产时防止意外发生。
 
 ## <a name="delegation-warnings"></a>委派警告
-为使你更轻松了解可委派和不可委派的内容，PowerApps 会在你创建包含不可委派内容的公式时提供警告（黄色三角形）。
+为了更轻松地了解哪些是和不被委派，当你创建一个包含无法委派的内容的公式时，电源应用会提供警告（黄色三角形）。
 
 委派警告仅显示在针对可委派数据源进行运算的公式上。 如果没有看到警告，但你认为公式未进行适当的委派，请对照本主题前面部分的[可委派数据源](delegation-overview.md#delegable-data-sources)列表检查数据源的类型。
 

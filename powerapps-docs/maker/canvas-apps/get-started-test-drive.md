@@ -1,6 +1,6 @@
 ---
 title: 根据模板创建画布应用 | Microsoft Docs
-description: 基于 PowerApps 模板自动创建画布应用的分步说明。
+description: 基于 Power Apps 模板自动创建画布应用的分步说明。
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e127aa75d0d99a80fab5532efd555eb00b7262de
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: eac22ce84d5864e79c2964d42ffa5fe37853bc97
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73537016"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676257"
 ---
 # <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>根据 PowerApps 中的模板创建画布应用
 
@@ -26,7 +26,7 @@ ms.locfileid: "73537016"
 
 若要从模板创建一个应用，需要云存储帐户（如 DropBox、OneDrive 或 Google Drive）来存储模板的示例数据。
 
-如果没有适用于 PowerApps 的许可证，可以[免费注册](../signup-for-powerapps.md)。
+如果没有适用于电源应用的许可证，可以[免费注册](../signup-for-powerapps.md)。
 
 ## <a name="create-an-app"></a>创建应用
 
@@ -42,7 +42,7 @@ ms.locfileid: "73537016"
 
 4. 在模板列表中，单击或点击一个模板，然后单击或点击“**使用**”（靠近右下角）。
 
-    ![打开 PowerApps 模板](./media/get-started-test-drive/open-template.png)
+    ![打开电源应用模板](./media/get-started-test-drive/open-template.png)
 
     示例数据将复制到云存储帐户，应用将得以创建，此应用主页也将显示。
 

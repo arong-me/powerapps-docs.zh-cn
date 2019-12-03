@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e534d5b3cf21cbbed78b16960a5f4a83a44bfe24
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5c099f68c7dd8833b2ee494ff83cbbdb2c88b923
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540355"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678755"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>从画布应用连接到 SharePoint
 
@@ -33,7 +33,7 @@ ms.locfileid: "73540355"
 
 ## <a name="generate-an-app"></a>生成应用
 
-如果要在自定义列表中管理数据，则 PowerApps 可以[自动为您生成三个屏幕的应用程序](../app-from-sharepoint.md)。 用户可以在第一个屏幕上浏览列表，在第二个屏幕中显示项的详细信息，并在第三个屏幕中创建或更新项。
+如果要在自定义列表中管理数据，则 Power Apps 会[自动为你生成三屏应用](../app-from-sharepoint.md)。 用户可以在第一个屏幕上浏览列表，在第二个屏幕中显示项的详细信息，并在第三个屏幕中创建或更新项。
 
 > [!NOTE]
 > 如果 SharePoint 列表包含 "**选择**"、"**查找**" 或 "用户"**或 "组**" 列，请参阅本主题后面的在[库中显示数据](connection-sharepoint-online.md#show-list-columns-in-a-gallery)。
@@ -81,7 +81,7 @@ ms.locfileid: "73540355"
 
 ## <a name="add-data-to-an-existing-app"></a>将数据添加到现有应用
 
-1. 在 PowerApps Studio 中，打开要更新的应用程序，选择 "**视图**" 选项卡，然后选择 "**数据源**"。
+1. 在 Power Apps Studio 中，打开要更新的应用程序，选择 "**视图**" 选项卡，然后选择 "**数据源**"。
 
     > [!div class="mx-imgBorder"]
     > !["查看" 选项卡，然后选择 "数据源"](./media/connection-sharepoint-online/view-data-sources.png)
@@ -98,7 +98,7 @@ ms.locfileid: "73540355"
     > [!div class="mx-imgBorder"]
     > ![在 "选择列表" 下，选中要使用的文档或一个或多个列表的复选框，然后选择 "连接"](./media/connection-sharepoint-online/select-sp-tables.png)
 
-    默认情况下，并非所有类型的列表都会显示。 PowerApps 支持自定义列表，而不是基于模板的列表。 如果要使用的列表名称未显示，请滚动到底部，然后在 "**输入自定义表名称**" 框中键入列表的名称。
+    默认情况下，并非所有类型的列表都会显示。 Power Apps 支持自定义列表，而不支持基于模板的列表。 如果要使用的列表名称未显示，请滚动到底部，然后在 "**输入自定义表名称**" 框中键入列表的名称。
 
     > [!div class="mx-imgBorder"]
     > ![在包含 "输入自定义列表名称" 的框中键入列表名称。](./media/connection-sharepoint-online/custom-list.png)
@@ -160,7 +160,7 @@ ms.locfileid: "73540355"
 
 您可以[下载示例应用程序，该应用程序](https://pwrappssamples.blob.core.windows.net/samples/spdoclib_blogapp.msapp)演示了更复杂的方法来显示 SharePoint 库中的数据。
 
-1. 下载应用后，请打开[PowerApps Studio](https://us.create.powerapps.com/studio/#)，在左侧导航栏中选择 "**打开**"，然后选择 "**浏览**"。
+1. 下载应用后，打开[Power Apps Studio](https://us.create.powerapps.com/studio/#)，在左侧导航栏中选择 "**打开**"，然后选择 "**浏览**"。
 1. 在 "**打开**" 对话框中，找到并打开已下载的文件，然后按照本主题中的前两个步骤，将 SharePoint 库添加为数据源。
 
 > [!NOTE]
@@ -180,7 +180,7 @@ ms.locfileid: "73540355"
 
 ### <a name="lists"></a>表
 
-PowerApps 可以读取包含空格的列名，但空格将替换为十六进制转义代码 **"\_x0020\_"** 。 例如，如果 SharePoint 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
+Power Apps 可以读取包含空格的列名，但空格将替换为十六进制转义代码 **"\_x0020\_"** 。 例如，当在数据布局中显示或用于公式时，SharePoint 中的 **"Column Name"** 将显示为 Power Apps 中的 **"Column_x0020_Name"** 。
 
 并非所有类型的列都受支持，并且并非所有类型的列都支持所有类型的卡。
 
@@ -206,10 +206,10 @@ PowerApps 可以读取包含空格的列名，但空格将替换为十六进制�
 
 ### <a name="libraries"></a>库
 
-- 不能将文件从 PowerApps 上传到库。
+- 无法将文件从 Power Apps 上传到库。
 - 无法在 PDF 查看器控件中从库中显示 PDF 文件。
-- PowerApps Mobile 不支持**下载**功能。
-- 如果用户将在 PowerApps 移动版或 Windows 10 应用中运行应用，请使用**启动**功能在库中显示库内容。
+- Power Apps Mobile 不支持**下载**功能。
+- 如果用户将在 Power Apps Mobile 或 Windows 10 应用中运行应用，请使用**启动**功能在库中显示库内容。
 
 ## <a name="next-steps"></a>后续步骤
 

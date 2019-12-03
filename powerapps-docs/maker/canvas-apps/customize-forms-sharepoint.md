@@ -1,6 +1,6 @@
 ---
 title: 自定义画布应用中的窗体 | Microsoft Docs
-description: 在 PowerApps 中，指定画布应用窗体中要显示哪些数据、以何种顺序显示以及在哪些控件中显示。
+description: 在 Power Apps 中，指定要在画布应用窗体中显示的数据，其中显示这些数据的顺序以及控件。
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ccaa918bc0bd1e4ca666e62094fa137e31d3243f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 6732dabea803cd7680ef618e4e8d1c4e88f7afe5
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540260"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678617"
 ---
 # <a name="customize-a-canvas-app-form-in-powerapps"></a>自定义 PowerApps 中的画布应用窗体
 

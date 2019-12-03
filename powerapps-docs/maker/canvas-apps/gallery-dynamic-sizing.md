@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fb051ffcdfed2aef2cb635d8dd2bf2bcfb44176e
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 712d7ed6166b2ea655a086b1f9a4416af1e8065f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990334"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676576"
 ---
-# <a name="show-items-of-different-heights-in-a-powerapps-gallery"></a>显示 PowerApps 库中具有不同高度的项目
+# <a name="show-items-of-different-heights-in-a-power-apps-gallery"></a>显示电源应用库中具有不同高度的项目
 如果数据集中的不同项目在同一字段中包含的数据量不同，则可完全显示出包含更多数据的项目，而无需在包含较少数据的项目后面添加空格。 添加或配置**可变高度**库控件，以便可以：
 
 * 将“标签”控件配置为根据内容量进行缩放。
@@ -41,7 +41,7 @@ ms.locfileid: "71990334"
 
 2. 将 Excel 文件上传到云存储帐户（如 OneDrive、Dropbox 或 Google Drive）中。
 
-3. 在 PowerApps Studio 中，单击或点击“文件”菜单上的“新建”。
+3. 在 Power Apps Studio 中，单击或点击 "**文件**" 菜单上的 "**新建**"。
 
 4. 在“空白应用”磁贴上，单击或点击“手机布局”。
 

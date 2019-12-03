@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 48605d97a8b311f806ff3556474d9bc5f32260e1
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: dd23092f7fbe178dfe127f671e7364f5d97aaf38
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541075"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678824"
 ---
 # <a name="connect-to-dynamics-365-from-powerapps"></a>从 PowerApps 连接到 Dynamics 365
-通过 PowerApps，可使用很少的代码或无需代码，快速生成、自定义、共享和运行移动应用。 通过使用 Dynamics 365 连接器，只需几分钟，即可创建有用的移动应用，与组织实现共享。
+借助 Power Apps，无需编写代码即可快速生成、自定义、共享和运行移动应用。 通过使用 Dynamics 365 连接器，只需几分钟，即可创建有用的移动应用，与组织实现共享。
 
 按照本主题中的步骤操作，可创建相关应用，用户可在此应用中浏览、添加、删除和更新 Dynamics 365 中的联系人。 用户可通过[浏览器](../../../user/run-app-browser.md)或[移动设备](../../../user/run-app-client.md)（如手机）运行该应用。
 
@@ -52,14 +52,14 @@ ms.locfileid: "73541075"
     ![新建应用](./media/connection-dynamics-crmonline/new-app.png)
 2. 在“开始使用数据”下，单击“Dynamics 365”磁贴上的“手机布局”。
    
-    ![PowerApps 选择 Dynamics 365 连接器](./media/connection-dynamics-crmonline/phonelayout.png)
+    ![Power Apps 选择 Dynamics 365 连接器](./media/connection-dynamics-crmonline/phonelayout.png)
 3. 在“连接”下，选择所需的连接，然后选择将在应用中管理的 Dynamics 365 实例的相应数据集。
 4. 在“选择表”下，单击“联系人”，然后单击“连接”。
 5. 在左侧导航栏中，单击或点击右上角的图标，切换到缩略图视图。
    
     ![切换视图](./media/connection-dynamics-crmonline/toggle-view.png)
 
-PowerApps 会根据联系人记录生成三屏应用。
+Power Apps 根据联系人记录生成三屏应用。
 
 * **BrowseScreen1**。 用户打开应用时默认显示此屏幕。 在左侧导航栏中，此屏幕的缩略图显示在其他两个屏幕上方。
 * **DetailScreen1**。 用户单击 **BrowseScreen1** 中的某项时，将显示此屏幕。  在左侧导航栏中，**DetailScreen1** 的缩略图显示在其他两个屏幕之间。

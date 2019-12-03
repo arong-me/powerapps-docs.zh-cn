@@ -1,6 +1,6 @@
 ---
 title: 自定义 SharePoint 列表窗体 | Microsoft Docs
-description: 使用 PowerApps 自定义窗体，供用户创建和更新 SharePoint 列表中的条目。
+description: 使用 Power Apps 自定义用户在 SharePoint 列表中创建和更新条目的窗体。
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,21 +13,21 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d50d9933eaaa79011a623bc643f4eda23ba8d745
-ms.sourcegitcommit: fa6ad01cf6d025d46564d755915caaa9db517c41
+ms.openlocfilehash: 5912723765f99539852884a3fe55738c171c64c3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72902394"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678571"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>使用 PowerApps 自定义 SharePoint 列表窗体
 
-在浏览器中打开 PowerApps，可轻松自定义 SharePoint 列表窗体。 不必编写传统代码（例如 C#）或下载其他应用（例如 InfoPath）。 发布更改时，窗体嵌入到 SharePoint 列表中，供其所有用户使用。 在 PowerApps 中，还可查看分析报告、轻松创建条件格式、连接到其他数据源。
+可以通过在浏览器中打开 Power Apps 来轻松地自定义 SharePoint 列表的窗体。 不必编写传统代码（例如 C#）或下载其他应用（例如 InfoPath）。 发布更改时，窗体嵌入到 SharePoint 列表中，供其所有用户使用。 在 Power Apps 中，你还可以查看分析报表、轻松创建条件格式以及连接到其他数据源。
 
 若要按照本主题中的步骤操作，请创建一个简单列表，了解自定义的工作原理，然后可将相同的概念应用到你自己的列表。
 
 > [!NOTE]
-> - 如果“自定义窗体”选项不可用或对你的列表无效，则它可能包含[ PowerApps 不支持](connections/connection-sharepoint-online.md#known-issues)的数据类型。 此外，不能将窗体移到其他列表或[环境](working-with-environments.md)。 
+> - 如果 "**自定义窗体**" 选项不可用或不能正常用于列表，则它可能包含[Power Apps 不支持](connections/connection-sharepoint-online.md#known-issues)的数据类型。 此外，不能将窗体移到其他列表或[环境](working-with-environments.md)。 
 > - 仅在泛型列表中支持列表的自定义窗体。 即将推出对一般文档库的支持。 当前不支持自定义列表和库模板;包括但不限于公告、联系人和任务等列表。
 
 ## <a name="create-a-list"></a>创建列表
@@ -46,12 +46,12 @@ ms.locfileid: "72902394"
 
 1. 在命令栏中，选择 " **PowerApps**"，然后选择 "**自定义窗体**"。
 
-    PowerApps Studio 在同一个浏览器选项卡中打开。
+    Power Apps Studio 在同一浏览器选项卡中打开。
 
-1. 如果打开“欢迎使用 PowerApps Studio”对话框，则选择“跳过”。
+1. 如果 "**欢迎使用 Power Apps Studio** " 对话框打开，请选择 "**跳过**"。
 
 > [!div class="mx-imgBorder"]
-> ![在命令栏中，选择 "PowerApps"，然后选择 "自定义窗体"。 PowerApps Studio 将在同一浏览器选项卡中打开。如果 "欢迎使用 PowerApps Studio" 对话框打开，请选择 "跳过"。](./media/customize-list-form/create-form.gif)
+> ![在命令栏中，选择 "电源应用"，然后选择 "自定义窗体"。 Power Apps Studio 在同一浏览器选项卡中打开。如果 "欢迎使用 Power Apps Studio" 对话框打开，请选择 "跳过"。](./media/customize-list-form/create-form.gif)
 
 ## <a name="move-and-remove-a-field"></a>移动和删除字段
 
@@ -70,7 +70,7 @@ ms.locfileid: "72902394"
 
 仅当 Details 设置为“是”时，才能将 Price、Availability 和 Colors 字段配置为显示出来。
 
-1. 在左侧导航栏中，展开 " **Details_DataCard1**"，并记下出现在 " **DataCardValue**" 末尾的数字。
+1. 在左侧导航栏中，展开 " **Details_DataCard1**"，并记下**DataCardValue**末尾显示的数字。
 
 1. 将**颜色**、**可用性**和**价格**卡的**Visible**属性设置为此公式（如有必要，请将数字替换为上一步中记下的数字）：
 
@@ -134,9 +134,9 @@ ms.locfileid: "72902394"
 
 ### <a name="forms-vs-apps"></a>窗体与应用
 
-问：自定义窗体与从 SharePoint 或 PowerApps 创建的独立应用有何区别？
+**问：** 自定义窗体与我从 SharePoint 或 Power Apps 创建的独立应用程序有何不同？
 
-答：如果为 SharePoint 列表自定义窗体，窗体不会在 PowerApps Studio 或 PowerApps Mobile 中显示为应用。 只能从为其创建窗体的列表打开该窗体。
+**答：** 如果自定义 SharePoint 列表的窗体，该窗体将不会在 Power Apps Studio 或 Power Apps Mobile 中显示为应用。 只能从为其创建窗体的列表打开该窗体。
 
 问：何时应自定义窗体以管理 SharePoint 列表中的数据，何时应创建独立应用？
 
@@ -170,12 +170,12 @@ ms.locfileid: "72902394"
 
 1. 打开列表，在命令栏上选择“PowerApps”，然后选择“自定义窗体”。
 
-1. 在 PowerApps Studio 中，选择“文件”，然后选择“查看所有版本”。 “版本”页将在新的浏览器选项卡中打开。
+1. 在 Power Apps Studio 中，选择 "**文件**"，然后选择 "**查看所有版本**"。 “版本”页将在新的浏览器选项卡中打开。
 
     > [!NOTE]
     > 如果看不到“查看所有版本”按钮，请选择“保存”。 应会显示此按钮。
 
-1. 无需关闭“版本”页或浏览器选项卡，返回到其他浏览器选项卡中的“保存”页，单击或点击左侧导航窗格顶部的箭头，然后单击或点击“返回 SharePoint”来解锁窗体，并关闭 PowerApps Studio。
+1. 如果没有关闭 "**版本**" 页或浏览器选项卡，请返回到其他浏览器选项卡中的 "**保存**" 页，单击或点击左侧导航窗格顶部的箭头，然后单击或点击 "**返回 SharePoint** " 来解锁窗体并关闭 Power Apps Studio。
 
 1. 返回到其他浏览器选项卡中的“版本”页，找到你想要还原的版本，然后选择“还原”。
 
@@ -196,7 +196,7 @@ ms.locfileid: "72902394"
 
 答：任何具有 SharePoint 权限的人员都可以管理、设计或编辑关联的列表。
 
-**问：** 是否需要使用 PowerApps 许可证才能创建或使用自定义列表表单？
+**问：** 是否需要使用 Power Apps 许可证来创建或使用自定义列表窗体？
 
 答：需要[包含 PowerApps 的 Office 365 计划](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus#licenses)。
 
@@ -206,9 +206,9 @@ ms.locfileid: "72902394"
 
 问：作为管理员，如何在组织中获取所有自定义窗体列表？
 
-答：如果你是 PowerApps 的租户管理员，或者对组织的默认 PowerApps 环境具有环境管理员权限，请执行以下操作：
+**答：** 如果你是适用于你的 Power Apps 的租户管理员，或者你对你的组织的默认电源应用环境具有环境管理员权限，请执行以下操作：
 
-1. 在 [PowerApps 管理中心](https://admin.powerapps.com)，从环境列表中选择组织的默认环境。
+1. 在[Power Apps 管理中心](https://admin.powerapps.com)的环境列表中，选择你的组织的默认环境。
 
 1. 在默认环境页顶部，选择“资源”。
 

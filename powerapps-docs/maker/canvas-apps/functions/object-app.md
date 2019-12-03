@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b0ab20ce5e0700337bb059644c458a2665d20f1e
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: c2e34a9f466fcb64bcf14ef6a504d5b18b0a596d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71983499"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676746"
 ---
 # <a name="app-object-in-powerapps"></a>PowerApps 中的应用对象
 
@@ -64,7 +64,7 @@ ms.locfileid: "71983499"
 > **ConfirmExit**不适用于嵌入的应用，例如 Power BI 和 SharePoint。
 
 > [!NOTE]
-> 目前，如果启用**延迟加载**预览功能（对于新应用，默认情况下），则这些属性只能引用第一个屏幕上的控件。 如果进行了引用，PowerApps Studio 不会显示错误，但生成的已发布应用不会在 PowerApps Mobile 或浏览器中打开。 我们正在积极努力提升此限制。 同时，可以在 "高级设置"  >  "**高级设置** **" 下，** 关闭 "**文件** > **应用设置**" 中的**延迟加载**。
+> 目前，如果启用**延迟加载**预览功能（对于新应用，默认情况下），则这些属性只能引用第一个屏幕上的控件。 如果进行了引用，Power Apps Studio 不会显示错误，但生成的已发布应用不会在 Power Apps Mobile 或浏览器中打开。 我们正在积极努力提升此限制。 同时，可以在 "高级设置" > "**高级设置** **" 下，** 关闭 "**文件** > **应用设置**" 中的**延迟加载**。
 
 ### <a name="confirmexit"></a>ConfirmExit
 
@@ -78,14 +78,14 @@ ms.locfileid: "71983499"
 - 如果应用在浏览器中运行：
   - 关闭浏览器或运行应用程序的浏览器选项卡。
   - 选择浏览器的 "后退" 按钮。
-- 如果应用在 PowerApps Mobile （iOS 或 Android）中运行：
+- 如果应用在 Power Apps Mobile （iOS 或 Android）中运行：
   - 运行[**启动**](function-param.md)函数。<br>**启动**函数不会在浏览器中触发对话框，因为其他选项卡会打开，使数据不会丢失。
-  - 轻扫，切换到 PowerApps Mobile 中的其他应用。
+  - 轻扫，切换到 Power Apps Mobile 中的其他应用。
   - 选择 Android 设备上的 "后退" 按钮。
 
 确认对话框的确切外观可能因 PowerApps 的各种设备和版本而异。
 
-确认对话框不会显示在 PowerApps Studio 中。
+"确认" 对话框不会出现在 Power Apps Studio 中。
 
 ### <a name="confirmexitmessage"></a>ConfirmExitMessage
 

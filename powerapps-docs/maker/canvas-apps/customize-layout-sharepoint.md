@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6b3a33f327aab7e4f02c954dbd31c412e35dd661
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a3afda5686c6b791243126c70b9c6d33762beae0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73539177"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679652"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>教程：在 PowerApps 中自定义库
 
-本教程将自定义一个记录列表（称为一个库），以及对已在 Microsoft PowerApps 中自动生成的应用进行其他更改。 即使不进行这些更改，用户也可以管理应用中的数据，但是，如果对其进行自定义来满足组织需要，则可以更加轻松使用该应用。
+在本教程中，你将自定义一系列记录（称为库），并在 Microsoft Power Apps 中自动生成的应用中进行其他更改。 即使不进行这些更改，用户也可以管理应用中的数据，但是，如果对其进行自定义来满足组织需要，则可以更加轻松使用该应用。
 
 例如，本教程中的库默认情况下与此图形匹配。 电子邮件地址比其他数据类型更加突出，用户可基于地址中的文本对库进行排序和筛选：
 
@@ -41,9 +41,9 @@ ms.locfileid: "73539177"
 > * 更改屏幕标题
 > * 显示滚动条
 
-本教程从一个由特定数据源生成的应用开始。 但是，相同的概念适用于在 PowerApps 中生成（无论从 SharePoint 列表、Excel 表还是某些其他数据源生成）的任何应用。
+本教程从一个由特定数据源生成的应用开始。 但是，无论是从 SharePoint 列表、Excel 表还是某些其他数据源中生成的任何应用，都适用相同的概念。
 
-如果没有注册 PowerApps，请在开始使用之前先[免费注册](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+如果尚未注册 Power Apps，请在开始之前[免费注册](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 ## <a name="prerequisites"></a>必备组件
 
@@ -57,7 +57,7 @@ ms.locfileid: "73539177"
 
     ![打开应用进行编辑](./media/customize-layout-sharepoint/open-app.png)
 
-1. 如果出现“欢迎使用 PowerApps Studio”对话框，则单击“跳过”。
+1. 如果出现 "**欢迎使用 Power Apps Studio** " 对话框，请选择 "**跳过**"。
 
 ## <a name="change-the-layout"></a>更改布局
 

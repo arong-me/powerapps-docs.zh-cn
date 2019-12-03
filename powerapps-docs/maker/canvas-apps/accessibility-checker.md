@@ -10,23 +10,23 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 05ac3d3705fc56b5714d6cb704d2d3cc3dc87124
-ms.sourcegitcommit: b4df7d781cda50dfe2f6609f1cc4d2b531428b3c
+ms.openlocfilehash: 1c6278a9ddbea085523117c6b790af2b2b1306a0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70161298"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680066"
 ---
 # <a name="review-a-canvas-app-for-accessibility-in-powerapps"></a>在 PowerApps 中查看画布应用的辅助功能
 
-如果在设计画布应用外观和行为时考虑辅助功能，则具有视觉、听觉或其他障碍的用户可以更轻松、更成功地使用画布应用。 如果不确定如何使应用更易于访问，可以在 PowerApps Studio 中运行辅助功能检查器。 此工具不仅可查找潜在的辅助功能问题，还会解释为什么每个问题对具有特定残疾的用户是潜在问题，并提供解决每个问题的建议。
+如果在设计画布应用外观和行为时考虑辅助功能，则具有视觉、听觉或其他障碍的用户可以更轻松、更成功地使用画布应用。 如果不确定如何使应用更易于访问，可以在 Power Apps Studio 中运行辅助功能检查器。 此工具不仅可查找潜在的辅助功能问题，还会解释为什么每个问题对具有特定残疾的用户是潜在问题，并提供解决每个问题的建议。
 辅助功能检查器可检测屏幕阅读器和键盘问题，你可以使用[易于访问的颜色](accessible-apps-color.md)，找到有关如何解决颜色对比度问题的信息。
 
 辅助功能检查器可帮助识别可能需要更改的设置，但应该始终基于应用需要完成的任务考虑建议。 许多建议可能有价值，但你可以忽略可能弊大于利的建议。
 
 ## <a name="find-accessibility-issues"></a>查找辅助功能问题
 
-1. 在 PowerApps Studio 的右上角，选择应用检查器图标。
+1. 在 Power Apps Studio 的右上角，选择 "应用程序检查器" 图标。
 
     ![应用检查器图标](./media/accessibility-checker/app-checker-icon.png)
 
@@ -66,7 +66,7 @@ ms.locfileid: "70161298"
 | 不显示焦点                | 错误    | 当将控件的 FocusBorderThickness 设置为 0 时。 最好确保焦点边框和控件本身之间恰当的颜色对比度，，使其清晰可见。 | 将 FocusedBorderThickness 属性更改为大于 0 的值。  | 如果焦点不可见，不使用鼠标的用户在他们与应用交互时将看不见焦点。   |
 | 缺少字幕                   | 警告  | 当音频或视频控件的 ClosedCaptionsURL 属性为空时。 | 将 CLosedCaptionsURL 属性设置为字幕的 URL。 | 如果没有字幕，残疾人士可能无法获得视频或音频段中的任何信息。 |
 | 缺少有用的控件设置   | 警告  | 关闭以下任意设置时（例如显示图表的标签和标记以及显示“音频”、“视频”和“笔输入”控件的默认控件）。 | 选择警告，然后将属性设置为 true。 | 通过更改此属性设置，可让用户更好地了解应用控件的运行方式。 |
-| HTML 不可访问           | 警告  | 当 HTML 文本控件以外的控件包含 HTML 时。 在这种情况下，PowerApps 不支持自定义 HTML 元素辅助功能。 | 请使用 HTML 以外的方法，或从此元素中删除 HTML。 | 如果添加交互式 HTML 元素，应用将不会正常运行，也不可访问。 |
+| HTML 不可访问           | 警告  | 当 HTML 文本控件以外的控件包含 HTML 时。 在这种情况下，Power Apps 不支持自定义 HTML 元素的可访问性。 | 请使用 HTML 以外的方法，或从此元素中删除 HTML。 | 如果添加交互式 HTML 元素，应用将不会正常运行，也不可访问。 |
 | 关闭自动启动                 | 警告  | 将“音频”或“视频”控件的“Autostart”属性设置为 true 时。 | 将控件的“Autostart”属性设置为 false。 | 自动播放的视频和音频文件可能对用户带来干扰。 让用户选择是否播放剪辑。 |
 | 修改屏幕名称                 | 提示      | 如果屏幕具有一个默认名称，屏幕阅读器会在用户导航应用时朗读该名称。 | 为屏幕指定一个名称，用于描述屏幕内容或其用途。| 盲人、视力低下者或有阅读障碍的人可以依靠屏幕名称，使用屏幕阅读器来导航。 |
 | 添加状态指示文本          | 提示      |  当控件具有状态（如切换），但值标签已关闭时。 | 将控件的 ShowValue 属性设置为 true，显示其当前状态。 | 如果不显示控件状态，用户将不能确认他们的操作。 |

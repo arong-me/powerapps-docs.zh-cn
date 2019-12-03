@@ -14,16 +14,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a09d3a36f5db048aa077e8801a77915ccfb2bcf2
-ms.sourcegitcommit: 249d710ec06c078eb71faa6d5eb48494c8435abd
+ms.openlocfilehash: e1cab122851ae2ba0a4d5414d2f4c5ca088d4478
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73962542"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674232"
 ---
 # <a name="understand-experimental-preview-and-deprecated-features-in-powerapps"></a>了解 PowerApps 中的实验性、预览和弃用的功能
 
-对于每个版本，我们都作出更改并添加功能，使 PowerApps 成为适应你需求的最佳工具。 我们推动产品向前发展。  
+对于每个版本，我们会进行更改并添加功能，使 Power Apps 成为最佳工具来满足你的需求。 我们推动产品向前发展。  
 
 我们非常重视后向兼容性。 但是，在任何更改或改进中，我们可能会引入意外的副作用，应用可能无法完全按以前的方式运行。
 
@@ -39,7 +39,7 @@ ms.locfileid: "73962542"
 
 在每个阶段，使用该功能的人员数量会增加，帮助我们验证此功能是否为你所需的功能，并且我们不会引入意外的副作用。
 
-你的反馈对此过程至关重要。  请在 [PowerApps 社区论坛](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)中发布你的反馈。
+你的反馈对此过程至关重要。  请在[Power Apps 社区论坛](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)中发布你的反馈。
 
 功能的每个阶段持续多长时间？ 此值因功能而异。 我们需要考量许多因素，包括使用该功能的应用数、报告的问题数和需要该功能的迫切程度。 功能的某个阶段可能持续数周到数月。  如果我们无法相信，我们也可能会跳过一些阶段。
 
@@ -56,9 +56,9 @@ ms.locfileid: "73962542"
 ## <a name="documentation"></a>关于
 
 哪里可以找到有关这些功能的信息？  我们将“预览”功能视为已完成功能，你可以像了解任何其他产品功能一样对其进行了解： 
-- [PowerApps 文档](https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started)。 我们将提供有关新功能的基础知识：好处、入门方法和参考信息。
-- [PowerApps 社区论坛](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)。  其他用户将与你一起探索新功能。 学习他们的经验，并分享你的经验。
-- [PowerApps 博客](https://powerapps.microsoft.com/blog/)。  博客文章经常（但不是总是）会介绍一些新功能。
+- [Power Apps 文档](https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started)。 我们将提供有关新功能的基础知识：好处、入门方法和参考信息。
+- [Power Apps 社区论坛](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)。  其他用户将与你一起探索新功能。 学习他们的经验，并分享你的经验。
+- [Power Apps 博客](https://powerapps.microsoft.com/blog/)。  博客文章经常（但不是总是）会介绍一些新功能。
 
 实验性功能不同。  它们是正在开发的功能，我们不将其视为已完成功能。 “应用设置”窗格（见下文）中的简短说明可能是它们唯一的信息。 实验性功能通常不会显示在文档中。 社区论坛可能是相关信息的最佳来源。  在某些情况下，早期的博客文章会对此类功能进行介绍。  如果未找到足够的信息，可在论坛中提问或等待功能进入预览阶段。
 

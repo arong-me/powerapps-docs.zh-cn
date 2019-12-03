@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a94b32b21bdb2338adefdfc4c3cddc7648001087
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 457793686079a032d16d3e99960d1573e5edfbba
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73900320"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674891"
 ---
 # <a name="create-a-flow-to-manage-project-approvals"></a>创建用于管理项目审批的流
 > [!NOTE]
-> 本文是有关将 PowerApps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> 本文是有关将 Power Apps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
 在此任务中，我们将创建用于驱动项目审批流程的流。 Power 自动功能与 SharePoint 集成，因此可以轻松地直接从列表创建流。 当“项目申请”列表添加有新项时，将会触发我们创建的流。 此流会向项目审批者发送电子邮件，以便其可以直接在电子邮件中批准或拒绝申请。 然后，此流会向项目申请者发送批准或拒绝电子邮件，并相应地更新 SharePoint 列表。
 

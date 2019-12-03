@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e4c688232e275cee1e285b22dd4885ea2126e7ad
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 4f54a2f6d3bfa7c843b7b095f999050602e063b0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541382"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675022"
 ---
 # <a name="overview-of-the-people-screen-template-for-canvas-apps"></a>用于画布应用的人员屏幕模板概述
 
@@ -42,7 +42,7 @@ ms.locfileid: "73541382"
 
 从模板添加人员屏幕：
 
-1. [登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 PowerApps，然后在 PowerApps Studio 中创建应用或打开现有应用。
+1. [登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 power apps，然后在 Power apps Studio 中创建应用或打开现有应用。
 
     本主题演示了一个手机应用，但相同的概念也适用于平板电脑应用。
 

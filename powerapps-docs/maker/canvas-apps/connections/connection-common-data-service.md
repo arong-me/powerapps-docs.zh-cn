@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0970cbd51f351352c218dab3f220c6d5baa35435
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: d9f6e973aa632fe0821db3bcc493174e250afa72
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73897743"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679905"
 ---
 # <a name="connect-to-common-data-service"></a>连接到 Common Data Service
 
-可以安全地将业务数据存储在 Common Data Service 并在 PowerApps 中构建丰富的应用程序，以便用户可以管理该数据。 你还可以将这些数据集成到包含来自 Dynamics 365 的电源自动、Power BI 和数据的解决方案中。
+你可以在 Common Data Service 中安全地存储你的业务数据，并在 Power Apps 中构建丰富的应用程序，以便用户可以管理该数据。 你还可以将这些数据集成到包含来自 Dynamics 365 的电源自动、Power BI 和数据的解决方案中。
 
 默认情况下，Common Data Service 连接器连接到应用的当前环境中的数据。 如果你的应用程序移动到另一个环境，则连接器将连接到新环境中的数据。 此行为适用于使用单个环境的应用或遵循 ALM 过程的应用，用于从开发迁移到生产。
 

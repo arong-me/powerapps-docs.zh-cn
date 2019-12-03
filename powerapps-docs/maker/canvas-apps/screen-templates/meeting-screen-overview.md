@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2b300b0d90803ae08aaf262dde5642f4d448c05f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5b8df0acad3f5ad90eb114bd5fdd5d3377b3f6fb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541438"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675046"
 ---
 # <a name="overview-of-the-meeting-screen-template-for-canvas-apps"></a>画布应用的会议屏幕模板概述
 
@@ -38,7 +38,7 @@ ms.locfileid: "73541438"
 
 从模板添加会议屏幕：
 
-1. [登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 PowerApps，然后在 PowerApps Studio 中创建应用或打开现有应用。
+1. [登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 power apps，然后在 Power apps Studio 中创建应用或打开现有应用。
 
     本主题演示了一个手机应用，但相同的概念也适用于平板电脑应用。
 

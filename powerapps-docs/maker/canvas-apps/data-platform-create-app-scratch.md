@@ -1,6 +1,6 @@
 ---
 title: 使用 Common Data Service 从头开始创建画布应用 | Microsoft Docs
-description: 在 PowerApps 中，创建在 Common Data Service 中添加、更新和删除记录的画布应用。
+description: 在 Power Apps 中，创建一个画布应用以在 Common Data Service 中添加、更新和删除记录。
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,22 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bec8524ac6afc265eba5d9a6edf381c5ebf2c340
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 48cd98481cff354d4e54cb54dc38865f6dfa6a14
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540362"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679675"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>使用 Common Data Service 从头开始创建画布应用
 
 生成画布应用，以使用（内置的）标准实体和/或（组织创建的）自定义实体来管理 Common Data Service 中存储的数据。
 
-使用 Common Data Service 生成应用时，无需从 PowerApps 建立连接，而处理 SharePoint、Dynamics 365 或 Salesforce 等数据源时则需要这样做。 只需指定想要在应用中显示或管理的实体。
+在从 Common Data Service 生成应用时，无需与数据源（例如 SharePoint、Dynamics 365 或 Salesforce）建立连接。 只需指定想要在应用中显示或管理的实体。
 
 ## <a name="prerequisites"></a>必备组件
 
-- 在从头开始创建应用之前，请通过[生成应用](data-platform-create-app.md)并自定义应用的[库](customize-layout-sharepoint.md)、[窗体](customize-forms-sharepoint.md)和[卡](customize-card.md)来熟悉 PowerApps 基础知识。
+- 从头开始创建应用之前，请先通过[生成应用](data-platform-create-app.md)并自定义该应用的[库](customize-layout-sharepoint.md)、[窗体](customize-forms-sharepoint.md)和[卡](customize-card.md)来熟悉 Power Apps 的基本知识。
 - [切换到一个环境](working-with-environments.md)，该环境中已创建带有示例数据的数据库。 如果有合适的许可证，则可以[创建环境](../../administrator/create-environment.md)以满足此需要。
 - 若要创建应用，须具有[环境创建者](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles)安全角色。
 

@@ -1,6 +1,6 @@
 ---
 title: 向画布应用添加列表框、下拉列表或单选按钮 | Microsoft Docs
-description: 通过 PowerApps，在画布应用中创建或配置多选选项
+description: 在 Power Apps 中，在画布应用中创建或配置多选选项
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 211a5be4a97780a440bf151157576a5ab56933a5
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 9bf03693a182a9c6f85ad43c431b10fabf21b48d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71987503"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678939"
 ---
 # <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app"></a>向画布应用添加列表框、下拉列表或单选按钮
 

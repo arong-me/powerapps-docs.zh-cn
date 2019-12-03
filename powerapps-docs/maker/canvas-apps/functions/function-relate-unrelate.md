@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ca0b81cb1150fb744251b3dfca30c9b6ed8f90a5
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 94400c88740ea93b3966db8a62a461b5616eaeef
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73537109"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678341"
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>PowerApps 中的关联和取消与函数
 
 通过一对多或多对多关系对两个实体的记录进行关联和取消与。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 **关联**函数通过 Common Data Service 中的一对多或多对多关系来链接两个记录。 **取消与**函数将反转进程并删除链接。
 
@@ -39,7 +39,7 @@ ms.locfileid: "73537109"
 只能在[行为公式](../working-with-formulas-in-depth.md)中使用这些函数。
 
 > [!NOTE]
-> 这些函数是预览功能的一部分，并且仅当启用了 "**关系数据"、"选项集" 和 "适用于 cd 的其他新功能**" 功能时，它们的行为才可用。 这是默认情况下为新应用启用的应用级别设置。 若要查找此功能，请打开 "**文件**" 菜单，选择 "**应用设置**"，然后选择 "**高级设置**"。 你的反馈对我们非常重要，请通过 [PowerApps 社区论坛](https://powerusers.microsoft.com/t5/Expressions-and-Formulas/bd-p/How-To)提供反馈。
+> 这些函数是预览功能的一部分，并且仅当启用了 "**关系数据"、"选项集" 和 "适用于 cd 的其他新功能**" 功能时，它们的行为才可用。 这是默认情况下为新应用启用的应用级别设置。 若要查找此功能，请打开 "**文件**" 菜单，选择 "**应用设置**"，然后选择 "**高级设置**"。 你的反馈对我们非常有用-请告诉我们你在[Power Apps 社区论坛](https://powerusers.microsoft.com/t5/Expressions-and-Formulas/bd-p/How-To)中的看法。
 
 ## <a name="syntax"></a>语法
 
@@ -55,7 +55,7 @@ ms.locfileid: "73537109"
 
 ## <a name="examples"></a>示例
 
-请考虑具有以下关系的 "**产品**" 实体，如[PowerApps 门户的实体查看器](../../common-data-service/create-edit-entities-portal.md)中所示：
+请考虑具有以下关系的 "**产品**" 实体，如[Power Apps 门户的实体查看器](../../common-data-service/create-edit-entities-portal.md)中所示：
 
 | 关系显示名称 | 相关实体 | 关系类型 |
 | --- | --- |

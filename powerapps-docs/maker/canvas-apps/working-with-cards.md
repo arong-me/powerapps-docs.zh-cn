@@ -1,6 +1,6 @@
 ---
 title: 了解数据卡 | Microsoft 文档
-description: 在 PowerApps 中，使用窗体卡从数据源收集和显示信息。
+description: In Power Apps, use form cards to collect and display information from a data source.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 113d76a3b80c2ef68f5e267714e4f792c988d237
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 4e895cbd482e24a1e61d499e6baae7d1ec9c1e82
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988874"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674521"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>了解 PowerApps 中的数据卡
 
-[卡](controls/control-card.md)控件是画布应用中[编辑窗体](controls/control-form-detail.md)和[显示窗体](controls/control-form-detail.md)控件的构建基块。 表单表示整条记录，每个卡表示该记录的单个字段。
+[卡](controls/control-card.md)控件是画布应用中[编辑窗体](controls/control-form-detail.md)和[显示窗体](controls/control-form-detail.md)控件的构建基块 ******** 。 表单表示整条记录，每个卡表示该记录的单个字段。
 
 在设计工作区中选择表单控件后即可在右窗格中与卡轻松地进行交互。 在该窗格中，可以选择要显示哪些字段、每个字段的显示方式，以及按何种顺序进行显示。 此示例显示了从名为“资产”的 SharePoint 列表生成的应用中的“编辑表单”控件。
 
@@ -32,7 +32,7 @@ ms.locfileid: "71988874"
 
 ## <a name="predefined-cards"></a>预定义的卡
 
-PowerApps 为字符串、数字和其他数据类型提供了一组预定义的卡。 在右侧窗格中，你可以看到可用的变体，并可更改用于某个字段的卡：
+Power Apps offers a predefined set of cards for strings, numbers, and other data types. 在右侧窗格中，你可以看到可用的变体，并可更改用于某个字段的卡：
 
 ![](./media/working-with-cards/selected-card.png)
 
@@ -108,7 +108,7 @@ PowerApps 为字符串、数字和其他数据类型提供了一组预定义的�
 ## <a name="interact-with-a-form"></a>与表单进行交互
 在解锁卡后，你可以更改它与包含它的表单进行交互的方式。
 
-下面是有关控件应当如何与其卡配合使用以及卡应当如何与表单配合使用的一些指导原则。 它们只是指导原则。 对于 PowerApps 中的任何控件，你可以创建引用 PowerApps 中的任何其他控件的公式，对于卡和卡中的控件也是如此。 要有创造性：你可以通过许多方式创建应用。  
+下面是有关控件应当如何与其卡配合使用以及卡应当如何与表单配合使用的一些指导原则。 它们只是指导原则。 As with any control in Power Apps, you can create formulas that reference any other control in Power Apps, and that's no less true for cards and controls within cards. 要有创造性：你可以通过许多方式创建应用。  
 
 ### <a name="datafield-property"></a>DataField 属性
 卡上最重要的属性是 **[DataField](controls/control-card.md)** 属性。  此属性驱动着验证、要更新的字段以及卡的其他方面。
@@ -136,7 +136,7 @@ PowerApps 为字符串、数字和其他数据类型提供了一组预定义的�
 
 ![](./media/working-with-cards/dissect-card1.png)
 
-在此图中，数据卡中的控件已标记为：
+In this graphic, the controls within the data card have been labeled:
 
 ![](./media/working-with-cards/dissect-card2.png)
 
@@ -159,7 +159,7 @@ PowerApps 为字符串、数字和其他数据类型提供了一组预定义的�
 | **TextErrorMessage.Text** |**Parent.Error** |如果发生验证问题，则卡的 **Error** 属性会提供一条合适的错误消息。 |
 
 > [!NOTE]
-> "**父. 错误**" 属性是一个只可输出的属性，不能使用公式进行设置。 因此，此属性不会出现在左上角附近的属性列表中，也不会出现在右边缘附近的 "**属性**" 或 "**高级**" 选项卡中。 如果要编写可引用属性的公式，则该公式栏建议使用此属性。
+> The **Parent.Error** property is an output-only property that you can't set by using a formula. Therefore, this property won't appear in list of properties near the upper-left corner or in the **Properties** or **Advanced** tabs near the right edge. The formula bar suggests this property if you're writing a formula that could reference the property.
 
 为了从这些控件中提取信息并将其推送回数据源，我们提供了以下关键公式：
 

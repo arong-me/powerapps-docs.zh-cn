@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d55245a6fba0383ce897030e87ccf5c4e7c6749d
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: d3f526b8795c8771d3f0e43c2951d207f7f1bfb0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73897922"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678893"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>在 PowerApps 中发送推送通知
-推送通知用于移动应用中的使用者和业务情形，主要用来与应用用户进行交互，并帮助他们优先处理关键任务。 在 PowerApps 中，可以使用 PowerApps 通知连接器发送通知。 可以将原生推送通知发送到在 PowerApps 中创建的任何应用。 我们计划在今后支持更多通知类型。
+推送通知用于移动应用中的使用者和业务情形，主要用来与应用用户进行交互，并帮助他们优先处理关键任务。 在 Power Apps 中，你可以使用 Power Apps 通知连接器发送通知。 可以将本机推送通知发送到在 Power Apps 中创建的任何应用。 我们计划在今后支持更多通知类型。
 
 ![推送通知外观示例](./media/add-notifications/pic1-notification-screenshot.png)
 
@@ -32,10 +32,10 @@ ms.locfileid: "73897922"
 * 希望按特定时间间隔与用户进行交互，或需要用户在特定情况下进入应用。
 
 > [!NOTE]
-> 每个用户都必须在 PowerApps Mobile 中打开过一次应用，或在 [Dynamics 365](https://home.dynamics.com/) 中从 AppSource 获取过应用，才能接收推送通知。
+> 若要接收推送通知，每个用户都必须在 Power Apps Mobile 中打开应用一次，或从[Dynamics 365](https://home.dynamics.com/)的 AppSource 中获取应用。
 
 ## <a name="before-you-start"></a>开始之前
-在拥有参与者权限的应用中，添加 PowerApps 通知连接。 如果尚未生成应用，可以[通过模板快速创建一个](get-started-test-drive.md)，默认拥有所需的权限。 上面提及的教程和本教程均使用根据用例管理模板生成的应用。
+在具有**参与者**权限的应用程序中，添加一个 Power Apps 通知连接。 如果尚未生成应用，可以[通过模板快速创建一个](get-started-test-drive.md)，默认拥有所需的权限。 上面提及的教程和本教程均使用根据用例管理模板生成的应用。
 
 ## <a name="send-a-notification-from-a-flow"></a>通过流发送通知
 > [!NOTE]
@@ -46,11 +46,11 @@ ms.locfileid: "73897922"
     例如，建议在记录被添加到 Common Data Service 中的“用例”实体时发送通知。
 
     ![创建包含 Common Data Service 触发器的流的屏幕截图](./media/add-notifications/pic4-step1-flowupdated.png)
-2. 使用“PowerApps 通知”连接器创建流操作，再输入要向其发送通知的应用的应用 ID。
+2. 使用**Power Apps 通知**连接器为流创建一个操作，然后输入要向其发送通知的应用的**应用 ID** 。
 
     还可以重命名连接，以反映具体方案。
 
-    ![创建用于接收这些推送通知的 PowerApps 连接的屏幕截图](./media/add-notifications/pic5-step2-create-connection.jpg)
+    ![创建与将接收这些推送通知的 Power Apps 的连接的屏幕截图](./media/add-notifications/pic5-step2-create-connection.jpg)
 3. （可选）在用户点击推送通知后应用打开时，将参数传递给应用。
 
     此示例为选定联系人传递“用例 ID”和“初始所有者”字段。
@@ -64,7 +64,7 @@ ms.locfileid: "73897922"
 2. 在“详细信息”选项卡上，复制此应用的“应用 ID”。
 
     ![获取应用 ID](./media/add-notifications/grab-id.png)
-3. 在“连接”选项卡上，创建与 PowerApps 通知连接器的连接，并粘贴上一步中复制的应用 ID。
+3. 在 "**连接**" 选项卡上，创建与 Power Apps 通知连接器的连接，并粘贴上一步中的应用 ID。
 
     ![创建连接](./media/add-notifications/create-connection.png)
 4. 将连接添加到触发器应用。
@@ -76,7 +76,7 @@ ms.locfileid: "73897922"
 
     此示例使用窗体中的 OnSuccess 属性触发此通知。
 
-    ![PowerApps 公式](./media/add-notifications/powerapps-function.png)
+    ![Power Apps 公式](./media/add-notifications/powerapps-function.png)
 
 ## <a name="load-a-specific-page-and-context-when-a-user-taps-the-notification"></a>在用户点击通知时加载特定页和上下文
 ### <a name="pass-parameters"></a>传递参数
@@ -137,10 +137,10 @@ PowerAppsNotification.SendPushNotification(
 ```
 
 ## <a name="known-limitations"></a>已知的限制
-* 通知暂不显示在适用于 Windows Phone 的 PowerApps Mobile 上。
+* 目前，Windows Phone 上的 Power Apps Mobile 不会显示通知。
 * 我们暂无法为仅在 Web 浏览器中运行应用的用户提供推送通知。
-* 通知显示常规 PowerApps 图标，而不是特定应用图标。
+* 通知显示一般的 Power Apps 图标，而不是特定的应用图标。
 * 使用 Power 自动功能时，一次只能向一个收件人发送推送通知。
 
-有关参考信息，请参阅 [PowerApps 通知参考](https://docs.microsoft.com/connectors/powerappsnotification/)。
+有关参考信息，请参阅[Power Apps 通知参考](https://docs.microsoft.com/connectors/powerappsnotification/)。
 

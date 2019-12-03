@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 420728d60555c3aeaf5fd5e844a900d412b0c3ef
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d81b1648fc3c45d0498efb9eba0cc14ffbc6142b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540968"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679261"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>在 PowerApps 中向画布应用添加数据连接
 
-在 PowerApps 中，向现有画布应用或从头开始生成的应用添加数据连接。 您的应用程序可以连接到 SharePoint、Common Data Service、Salesforce、OneDrive 或[许多其他数据源](connections-list.md)。
+在 Power Apps 中，将数据连接添加到现有画布应用或从头开始生成的应用。 您的应用程序可以连接到 SharePoint、Common Data Service、Salesforce、OneDrive 或[许多其他数据源](connections-list.md)。
 
 阅读完本文的[后续步骤](#next-steps)是，在应用中显示和管理相应数据源中的数据，如下面这些示例所述：
 
@@ -33,7 +33,7 @@ ms.locfileid: "73540968"
 
 ## <a name="prerequisites"></a>必备组件
 
-[注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+[注册](../signup-for-powerapps.md)Power Apps，并[提供注册所](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)用的相同凭据。
 
 ## <a name="open-a-blank-app"></a>打开一个空白应用
 
@@ -41,7 +41,7 @@ ms.locfileid: "73540968"
 
 1. 指定应用的名称，然后选择 "**创建**"。
 
-1. 如果出现“欢迎使用 PowerApps Studio”对话框，则单击“跳过”。
+1. 如果出现 "**欢迎使用 Power Apps Studio** " 对话框，请选择 "**跳过**"。
 
 ## <a name="add-data-source"></a>添加数据源
 

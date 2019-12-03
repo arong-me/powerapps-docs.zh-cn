@@ -1,6 +1,6 @@
 ---
 title: 向画布应用添加滚动屏幕 | Microsoft Docs
-description: 在 PowerApps 中，创建用户可以滚动浏览更多类型内容的屏幕（与一次性显示画布应用中全部内容的屏幕相比）。
+description: 在 Power Apps 中，创建一个屏幕，用户可以滚动显示更多类型的内容，而不会在画布应用中一次显示该屏幕。
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9e1d6f19803e5856083266ff65497e4c0b017eff
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 8f2ff84ba79b202a888ab3909a09b3e66dd45640
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71987473"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678916"
 ---
 # <a name="add-a-scrolling-screen-to-a-canvas-app-in-powerapps"></a>在 PowerApps 中向画布应用添加滚动屏幕
 

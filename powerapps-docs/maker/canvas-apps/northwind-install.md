@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dca5d5189129e7c9dfe32d27fb4c1190b830c039
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fe1192adca08d1fbde82b4b49ded5f5ca6a409e0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541341"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675798"
 ---
 # <a name="install-northwind-traders-database-and-apps"></a>安装 Northwind 商贸数据库和应用
 
@@ -28,7 +28,7 @@ Northwind 商贸是一家虚构的组织，负责管理企业的订单、产品�
 
 ## <a name="prerequisites"></a>必备组件
 
-- 支持 Common Data Service 的 PowerApps 许可证。 你可以[使用免费试用版许可证](../signup-for-powerapps.md)30 天。
+- 支持 Common Data Service 的 Power Apps 许可证。 你可以[使用免费试用版许可证](../signup-for-powerapps.md)30 天。
 - 具有 Common Data Service 数据库的环境。 如果你具有相应的权限，则可以[创建此类环境](https://docs.microsoft.com/power-platform/admin/create-environment)。
 
 ## <a name="download-the-solution"></a>下载解决方案

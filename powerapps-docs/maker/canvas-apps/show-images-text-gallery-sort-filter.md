@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3144f2f6517cbaa641227ff7b2f9482ed1d2e476
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 6b65a2a6fcc4899ac92238ec76d45cb4fd2d62c8
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542436"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674649"
 ---
-# <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>在 PowerApps 库中显示数据，并对数据进行排序和筛选
+# <a name="show-sort-and-filter-data-in-a-power-apps-gallery"></a>在 Power Apps 库中显示、排序和筛选数据
 创建一个库来显示有关多种产品的图像和文本，并对该信息进行排序和筛选。
 
-在 PowerApps 中，可使用库来显示多个相关的项，正如你在目录中看到的一样。 库非常适合用于显示有关产品的信息，例如名称和价格。 在本主题中，我们将创建一个库并使用类似于 Excel 的函数对该信息进行排序和筛选。 此外，选中某项目时，该项目周围将出现边框。
+在 Power Apps 中，你可以使用库来显示多个相关项，就像你在目录中看到的一样。 库非常适合用于显示有关产品的信息，例如名称和价格。 在本主题中，我们将创建一个库并使用类似于 Excel 的函数对该信息进行排序和筛选。 此外，选中某项目时，该项目周围将出现边框。
 
 > [!NOTE]
 > 本主题使用平板电脑应用。 可以使用手机应用，但需要调整某些控件的大小。
@@ -31,10 +31,10 @@ ms.locfileid: "73542436"
 > 
 
 ### <a name="prerequisites"></a>必备组件
-* [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+* [注册](../signup-for-powerapps.md)Power Apps，然后使用注册所用的同一凭据[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 * 通过[模板](get-started-test-drive.md)、[数据](get-started-create-from-data.md)或[从头开始](get-started-create-from-blank.md)创建平板电脑应用。
 * 了解如何[配置控件](add-configure-controls.md)。
-* 这些步骤使用 [CreateFirstApp](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) 作为示例输入数据，其中包括 .jpg 图像。 该 zip 文件包含可以转换为 Excel 的 XML 文件。 在其他情况下，PowerApps 会自动读取 .zip 文件中的文件，并成功导入这些文件。 可以下载和使用此示例数据，或导入自己的数据。
+* 这些步骤使用 [CreateFirstApp](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) 作为示例输入数据，其中包括 .jpg 图像。 该 zip 文件包含可以转换为 Excel 的 XML 文件。 否则，Power Apps 会自动读取 .zip 文件中的文件并将其导入成功。 可以下载和使用此示例数据，或导入自己的数据。
 
 ## <a name="show-data-in-a-gallery"></a>在库中显示数据
 1. 使用示例数据创建一个名为 **Inventory** 的集合。 步骤包括：  

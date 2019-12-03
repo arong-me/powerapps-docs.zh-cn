@@ -13,40 +13,40 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 570d9430d7dbcc5e8d41b7128060677fe1ff45a1
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 3970c5181939f8ab6e8bd1ad4f396595d7083ff3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993064"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679560"
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>让客户在 AppSource 上体验画布应用
 
-是否热衷于在 PowerApps 中生成画布应用？ 是否想要与客户共享画布应用？ [AppSource.com](https://appsource.microsoft.com) 支持 PowerApps 体验版解决方案，该解决方案可让你与客户共享应用，为你的企业带来新的潜在客户。
+你是否热衷于在 Power Apps 中构建画布应用？ 是否想要与客户共享画布应用？ [AppSource.com](https://appsource.microsoft.com)支持 Power Apps 测试驱动器解决方案，可让你将应用与客户共享并为你的企业创造潜在顾客。
 
 ## <a name="what-is-a-test-drive-solution"></a>什么是体验版解决方案？
 
-借助体验版解决方案，客户无需注册 PowerApps 计划或安装任何应用，即可试用实际应用。 客户只需使用 Azure Active Directory (AAD) 帐户登录 AppSource.com，即可在 Web 浏览器中运行应用。 如果没有体验版解决方案，客户就只能阅读应用相关信息或观看应用介绍视频。 借助体验版解决方案，客户可以更好地了解你的解决方案以及你的应用有哪些功能。 同时，还能获得应用的实际使用体验。 客户无法了解应用的内在工作原理，因此你的知识产权是受到保护的。 我们会收集并共享启动体验版应用的用户的潜在客户信息，从而帮助你拓展业务。
+使用测试驱动器解决方案，你的客户可以试用真正的应用程序，而无需注册 Power Apps 计划或安装任何应用程序。 客户只需使用 Azure Active Directory (AAD) 帐户登录 AppSource.com，即可在 Web 浏览器中运行应用。 如果没有体验版解决方案，客户就只能阅读应用相关信息或观看应用介绍视频。 借助体验版解决方案，客户可以更好地了解你的解决方案以及你的应用有哪些功能。 同时，还能获得应用的实际使用体验。 客户无法了解应用的内在工作原理，因此你的知识产权是受到保护的。 我们会收集并共享启动体验版应用的用户的潜在客户信息，从而帮助你拓展业务。
 
 下面的示例展示了 AppSource.com 上的[应用列表](https://go.microsoft.com/fwlink/?linkid=848867)：
 
 ![示例 AppSource 列表 ](./media/dev-appsource-test-drive/sample-app-source-listing.png)
 
-选择上面应用列表中的“免费试用”链接，用户可以直接在浏览器中启动相关的 PowerApps 体验版应用：
+从上述应用列表中选择 "**免费试用**" 链接，直接在用户的浏览器中启动关联的 Power Apps 测试驱动器应用：
 
 ![示例应用 Web 播放器](./media/dev-appsource-test-drive/sample-app-web-player.png)
 
 ## <a name="how-do-i-build-a-test-drive-solution"></a>如何生成体验版解决方案？
-生成用于体验版解决方案的应用与在 PowerApps 中生成其他任何应用类似，不同之处在于使用的是嵌入数据，而不是外部数据连接。 使用嵌入数据，可以减少将应用部署给客户时遇到的障碍，这样客户就能十分顺畅地试用应用。最终分发给客户的完整解决方案通常包括数据连接，而嵌入数据则非常适用于体验版解决方案。
+为测试驱动器构建应用程序的解决方案类似于在 Power Apps 中构建任何应用程序，但使用嵌入的数据而不是外部数据连接。 使用嵌入的数据可减少将应用部署到客户的障碍，因此，对其进行尝试时无障碍。最终分发给客户的完整解决方案通常包括数据连接，但嵌入数据适用于测试驱动器解决方案。
 
-PowerApps 为生成包含嵌入数据的应用提供本机支持，因此只需提供应用要使用的示例数据即可。 应在 Excel 文件中以一个或多个表的形式捕获此类数据。 然后，在 PowerApps 中，将 Excel 表中的数据拉取到应用中，并在应用中直接使用此类数据，而不用借助外部连接。 下面的三步流程展示了如何拉取数据并在应用中使用此类数据。
+Power Apps 以本机方式支持使用嵌入数据构建应用，因此你只需使用示例数据即可使用应用。 应在 Excel 文件中以一个或多个表的形式捕获此类数据。 在 Power Apps 中，你可以将 Excel 表中的数据提取到应用程序中，并在其中进行操作，而不是通过外部连接。 下面的三步流程展示了如何拉取数据并在应用中使用此类数据。
 
-### <a name="step-1-import-data-into-the-app"></a>步骤1：将数据导入到应用中
-假设您有一个包含两个表的 Excel 文件：**SiteInspector**和**SitePhotos**。
+### <a name="step-1-import-data-into-the-app"></a>第 1 步：将数据导入应用
+假定你有一个 Excel 文件，其中包含“SiteInspector”和“SitePhotos”这两个表。
 
 ![要导入的 Excel 表](./media/dev-appsource-test-drive/excel-file.png)
 
-使用“将静态数据添加到应用”选项，将这两个表导入 PowerApps。
+使用 "**将静态数据添加到应用**" 选项，将这两个表导入到 Power Apps。
 
 ![将静态数据添加到应用](./media/dev-appsource-test-drive/static-data.png)
 
@@ -54,10 +54,10 @@ PowerApps 为生成包含嵌入数据的应用提供本机支持，因此只需�
 
 ![作为已导入的数据源的 Excel 表](./media/dev-appsource-test-drive/data-sources.png)
 
-### <a name="step-2-handling-read-only-and-read-write-scenarios"></a>步骤2：处理只读和读写方案
+### <a name="step-2-handling-read-only-and-read-write-scenarios"></a>第 2 步：处理只读和读写情境
 由于导入的是*静态*数据，因此数据为只读。 如果应用是只读的（即只向用户显示数据），请直接在应用中引用这两个表。 例如，如果要访问“SiteInspector”中“Title”字段，请在公式中使用“SiteInspector.Title”。
 
-如果应用可读写，请先将每个表中的数据拉取到*集合*（即 PowerApps 中的表格数据结构）中。 然后，使用集合，而不是表。 若要将“SiteInspector”和“SitePhotos”表中的数据拉取到“SiteInspectorCollect”和“SitePhotosCollect”集合中，请编写以下公式：
+如果你的应用程序是读写的，请首先将每个表中的数据提取到一个集合中，该*集合*是 Power Apps 中的表格数据结构。 然后，使用集合，而不是表。 若要将“SiteInspector”和“SitePhotos”表中的数据拉取到“SiteInspectorCollect”和“SitePhotosCollect”集合中，请编写以下公式：
 
 ```powerapps-dot
 ClearCollect( SiteInspectorCollect, SiteInspector ); 
@@ -72,7 +72,7 @@ ClearCollect( SitePhotosCollect, SitePhotos )
 
 现在，如果要访问“Title”字段，请在公式中使用“SiteInspectorCollect.Title”。
 
-### <a name="step-3-add-update-and-delete-data-in-your-app"></a>步骤3：在应用中添加、更新和删除数据
+### <a name="step-3-add-update-and-delete-data-in-your-app"></a>第 3 步：在应用中添加、更新和删除数据
 至此，你已了解如何直接和通过集合读取数据；现在，我们将介绍如何在集合中添加、更新和删除数据：
 
 **若要在集合中添加行**，请使用 [Collect( DataSource, Item, ... )](../canvas-apps/functions/function-clear-collect-clearcollect.md)：

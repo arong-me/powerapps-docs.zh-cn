@@ -13,23 +13,23 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 50b5af342769b2153edbf91a7b5b28e3600f81b8
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8477ecce3ebd1953807cd348ca4080118c03991d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988242"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74673160"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>了解 PowerApps 中的画布应用表和记录
 
-在 PowerApps 中，可以创建一个画布应用，用于访问 Microsoft Excel、SharePoint、SQL Server 以及在记录和表中存储数据的其他多个源中的信息。 若要最有效地处理此类数据，请查看这些结构的基本概念。
+在 Power Apps 中，你可以创建一个画布应用，用于访问 Microsoft Excel、SharePoint、SQL Server 以及在记录和表中存储数据的其他多个源中的信息。 若要最有效地处理此类数据，请查看这些结构的基本概念。
 
 * 记录包含有关个人、地点或事物的一个或多个类别的信息。 例如，记录可能包含单个客户的姓名、电子邮件地址和电话号码。 其他工具将记录称作“行”或“项”。
 * 表保存一个或多个记录，这些记录包含相同类别的信息。 例如，表可以包含 50 个客户的姓名、电子邮件地址和电话号码。
 
 在应用中，可以使用[公式](working-with-formulas.md)来创建、更新和处理记录与表。 可能需要将数据读取和写入到外部[数据源](working-with-data-sources.md)，这是一个扩展的表。 此外，可以创建一个或多个内部表，称为[集合](working-with-data-sources.md#collections)。
 
-可以构建采用表名称作为参数的各种公式，就像 Excel 中的公式采用一个或多个单元格引用作为参数。 PowerApps 中的某些公式返回一个反映所指定的其他参数的表。 例如，可以创建以下公式：
+可以构建采用表名称作为参数的各种公式，就像 Excel 中的公式采用一个或多个单元格引用作为参数。 Power Apps 中的某些公式会返回一个表，其中反映了你指定的其他参数。 例如，可以创建以下公式：
 
 * 通过将某个表指定为 **[Patch](functions/function-patch.md)** 函数的多个参数之一，来更新该表中的记录
 * 通过将某个表指定为 **[AddColumns](functions/function-table-shaping.md)** 、 **[DropColumns](functions/function-table-shaping.md)** 或 **[RenameColumns](functions/function-table-shaping.md)** 函数的参数，在该表中添加、删除和重命名列。 其中的任何函数都不会修改原始表。 函数根据指定的其他参数返回另一个表。
@@ -40,7 +40,7 @@ ms.locfileid: "71988242"
 ### <a name="records"></a>记录
 每条记录包含个人、地点或事物的至少一个类别的信息。 上面的示例针对每种产品（“巧克力”、“面包”和“水”）显示一条记录，针对每个类别的信息（“价格”、“现有数量”和“订购量”）显示一列。
 
-在公式中，可以使用大括号在表的上下文外部引用记录本身。 例如，此记录 **{Name："Strawberries"，价格：7.99}** 不与表相关联。 请注意，如该示例中的“名称”和“价格”等字段名称未括在双引号中。
+在公式中，可以使用大括号在表的上下文外部引用记录本身。 例如，此记录 **{ Name: "Strawberries", Price: 7.99 }** 不与表关联。 请注意，如该示例中的“名称”和“价格”等字段名称未括在双引号中。
 
 ### <a name="fields"></a>字段
 字段是记录中的单个信息片段。 可在特定记录的列中将此类字段可视化为值。
@@ -64,9 +64,9 @@ ms.locfileid: "71988242"
 在其他工具中，列可能称为“字段”。
 
 > [!NOTE]
-> 对于列名称带空格的 SharePoint 和 Excel 数据源，PowerApps 会将空格替换为“\_x0020\_”。 例如，如果 SharePoint 或 Excel 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
+> 对于包含带有空格的列名称的 SharePoint 和 Excel 数据源，Power Apps 会将空格替换为 **"\_x0020\_"** 。 例如，当在数据布局中显示或用于公式时，SharePoint 或 Excel 中的 **"列名"** 将显示为 **"Column_x0020_Name"** 。
 
-### <a name="table"></a>表
+### <a name="table"></a>Table
 表由一条或多条记录组成，每条记录包含多个字段，字段包含记录中的一致名称。
 
 数据源或集合中存储的任何表都有一个名称，可以使用该名称来引用该表，并将它传递给采用表作为参数的函数。  表也可以是函数或公式的结果。
@@ -80,10 +80,10 @@ ms.locfileid: "71988242"
 `[ "Strawberry", "Vanilla" ]`
 
 ## <a name="table-formulas"></a>表公式
-在 Excel 和 PowerApps 中，可以使用公式以类似的方式来处理数字和文本字符串：
+在 Excel 和 Power Apps 中，可以按类似方式使用公式来处理文本的数字和字符串：
 
 * 在 Excel 的单元格 **A1** 中键入一个值（例如 **42**），然后在另一个单元格中键入公式（例如 **A1 + 2**）即可显示值 **44**。
-* 在 PowerApps 中，将“Slider1”的“[Default](controls/properties-core.md)”属性设置为“42”，将标签的“[Text](controls/properties-core.md)”属性设置为“Slider1.Value + 2”，即可显示值“44”。
+* 在 Power Apps 中，将**slider1.value**的 **[默认](controls/properties-core.md)** 属性设置为**42**，并将标签的 " **[Text](controls/properties-core.md)** " 属性设置为 " **slider1.value + 2** " 以显示值**44**。
 
 在这两种情况下，如果更改参数的值（例如，更改单元格 **A1** 中的数字或 **Slider1** 的值），计算出的值将自动更改。
 
@@ -122,9 +122,9 @@ ms.locfileid: "71988242"
 
 ## <a name="table-functions-and-control-properties"></a>表函数和控件属性
 
-请考虑**Lower**函数。 如果 "**欢迎使用**变量" 包含文本**字符串 "hello，world"** ，则公式**Lower （欢迎）** 返回 **"hello，world"** 。  此函数不以任何方式更改该变量中的值。 **Lower**是纯函数，因为它只处理输入并生成输出。 就是这样：它没有任何副作用。 Excel 中的所有函数和 PowerApps 中的大部分函数都是纯函数，这允许自动重新计算工作簿或应用。
+请考虑**Lower**函数。 如果 "**欢迎使用**变量" 包含文本**字符串 "hello，world"** ，则公式**Lower （欢迎）** 返回 **"hello，world"** 。  此函数不以任何方式更改该变量中的值。 **Lower**是纯函数，因为它只处理输入并生成输出。 就是这样：它没有任何副作用。 Excel 中的所有函数和 Power Apps 中的大多数函数都是纯函数，这允许自动重新计算工作簿或应用。
 
-PowerApps 提供了一组函数，这些函数以相同的方式对表进行操作。 这些函数采用表作为输入并对整个表进行筛选、排序、转换、缩小和汇总。 事实上，通常采用单个值的**更低**和许多其他函数也可以采用单列表作为输入表。
+Power Apps 提供一组以相同方式对表进行操作的函数。 这些函数采用表作为输入并对整个表进行筛选、排序、转换、缩小和汇总。 事实上，通常采用单个值的**更低**和许多其他函数也可以采用单列表作为输入表。
 
 * **[Sort](functions/function-sort.md)** 、 **[Filter](functions/function-filter-lookup.md)** – 排序和筛选记录。
 * **[FirstN](functions/function-first-last.md)** 、 **[LastN](functions/function-first-last.md)** – 返回表的前 N 条或最后 N 条记录。
@@ -226,7 +226,7 @@ PowerApps 提供了一组函数，这些函数以相同的方式对表进行操�
 
 ![](media/working-with-tables/requested.png)
 
-若要在应用程序中创建此示例表，请插入一个按钮，将其 " **OnSelect** " 属性设置为此公式，然后选择该按钮（在按住 Alt 键的同时按住 PowerApps Studio）：
+若要在应用程序中创建此示例表，请插入一个按钮，将其**OnSelect**属性设置为此公式，然后选择该按钮（在按住 Alt 键的同时按下 Power Apps Studio）：
 
 ```powerapps-dot
 Set( Products,
@@ -279,7 +279,7 @@ ShowColumns(
 
 ## <a name="disambiguation"></a>消除歧义
 
-使用记录范围添加的字段名称将替代应用中来自其他位置的同一名称。  在此情况下，仍可使用 [ **@** 消除歧义](functions/operators.md)运算符访问来自记录范围外部的值：
+使用记录作用域添加的字段名称将替代应用中来自其他位置的同一名称。  在此情况下，仍可使用 [ **@** 消除歧义](functions/operators.md)运算符访问来自记录范围外部的值：
 
 * 若要访问来自嵌套记录作用域的值，请使用 **@** 运算符，其中所操作的表名称使用该模式：<br>_Table_ **[@** _FieldName_ **]**
 * 若要访问全局值，如数据源、集合和上下文变量，请使用模式 **[@** _ObjectName_ **]** （无需指派表）。
@@ -298,7 +298,7 @@ ShowColumns(
 
 可以使用 **ClearCollect( Y, ["A", "B"] )** 创建此集合。
 
-此外，使用以下公式定义名为**Value**的上下文变量：**UpdateContext （{Value： "！"}）**
+此外，使用公式 **UpdateContext( {Value: "!"} )** 定义名为 **Value** 的上下文变量
 
 我们将这些公式组合在一起。 在此上下文中，以下公式：
 
@@ -319,7 +319,7 @@ Ungroup(
 
 公式中的每个组成部分有什么作用？  最外面的 **ForAll** 函数定义 **X** 的记录范围，以便访问它所处理的每条记录的 **Value** 字段。  只需使用单词 **Value** 或使用 **X[@Value]** 即可访问该字段。
 
-最里面的 **ForAll** 函数定义 **Y** 的另一个记录范围。由于此表还包含定义的 **Value** 字段，因此此处使用了 **Value** 来引用 **Y** 记录中的字段，而不再引用 **X** 中的字段。此处，为了访问 **X** 的 **Value** 值，我们必须结合消除歧义运算符使用更长的版本。
+最内层的**ForAll**函数为**Y**定义了另一个记录范围。 由于此表还定义了**值**字段，因此使用此处的**值**将引用**Y**记录中的字段，而不再是**X**中的字段。 此处，若要访问**X**的**值**字段，必须使用长度为歧义运算符的较长版本。
 
 由于 **Y** 是最里面的记录范围，因此访问此表的字段不需要消除歧义，可以使用以下公式实现相同的结果：
 

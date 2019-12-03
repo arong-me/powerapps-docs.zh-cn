@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f60db0449a163c83691658095b15f41083316c91
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: bf83473e8b53d13e58b653974495acbe2595513f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899184"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674214"
 ---
-# <a name="powerapps-webinar-listing"></a>PowerApps 网络研讨会列表 #
-这些网络研讨会可以帮助你使用 Microsoft PowerApps 的功能。 直播结束后，可按需观看网络研讨会。 请注意，在某些情况下，必须重新输入注册详细信息，然后才能通过电子邮件收到视频录制链接。 
+# <a name="power-apps-webinar-listing"></a>Power Apps 网络研讨会列表 #
+这些网络研讨会可以帮助你利用 Microsoft Power Apps 的特性和功能。 直播结束后，可按需观看网络研讨会。 请注意，在某些情况下，必须重新输入注册详细信息，然后才能通过电子邮件收到视频录制链接。 
 
 ## <a name="beginner-webinar-series"></a>初学者网络研讨会系列 ##
 **设计不容小觑的应用的 5 大技巧**
@@ -36,13 +36,13 @@ ms.locfileid: "73899184"
 **PowerApps 中的表单入门**
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Getting-Started-with-PowerApp-Forms/m-p/116842)
 
-**PowerApps 控件入门**
+**Power Apps 控件入门**
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Introduction-to-PowerApps-Controls/m-p/116844)
 
-**PowerApps 社区机会和回报**
+**& 奖励的 Power Apps 社区商机**
 <br> 主讲人：Audrie Gordon 和 Mackenzie Lyng [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Community-Opportunities-and-Rewards/m-p/116856)
 
-**2017 年发布的 PowerApps 功能概述**
+**适用于2017的 Power Apps 功能版本概述**
 <br>主讲人：Darshan Desai [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Overview-of-PowerApps-Feature-Releases-for-2017/m-p/116858)
 
 **了解 Office Graph 模板**
@@ -55,10 +55,10 @@ ms.locfileid: "73899184"
 **应用生命周期及 PowerApps 中的新“保存并发布”选项**
 <br>主讲人：Karthik Bharathy [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Application-LIfecycle-with-the-new-Save-and-publish-options-in/m-p/116860)
 
-**PowerApps 侧重于使用 Lookup 函数**
+**Power Apps 重点介绍如何使用 Lookup 函数**
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Focus-on-Using-the-Lookup-Function/m-p/116866)
 
-**使用 PowerApps 和 Flow 创建业务线“门户”**
+**使用 Power Apps 和 Flow 创建业务线 "门户"**
 <br>主讲人：Vishwas Lele [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-PowerApps-and-Flow-to-create-Line-of-Business-portals-by/m-p/116869)
 
 **来自 IWMentor 的 Laura Rogers 分享有关生产应用的最佳做法**
@@ -67,33 +67,33 @@ ms.locfileid: "73899184"
 **连接器系列 | Microsoft StaffHub（轮班规划）应用和 PowerApps**
 <br>主讲人：Marc-André Lépine [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connector-Series-Shift-Scheduling-Apps-with-PowerApps-StaffHub/m-p/122036)
 
-**PowerApps 管理 | 常见问题**
+**Power Apps 管理 |常见问题**
 <br>主讲人：Manas Maheshwari [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Administration-FAQ/m-p/127369#M44)
 
-**在通用审核应用内：了解 PowerApps 和 Flow 的功能，主讲人：Paul Culmsee**
+**在通用审核应用内：查看 Paul Culmsee 可以使用哪些电源应用和流**
 <br>主讲人：Paul Culmsee [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Inside-the-Universal-Audit-App-See-what-PowerApps-and-Flow-are/m-p/127370#M45)
 
 ## <a name="advanced-webinar-series"></a>高级网络研讨会系列 ##
-**PowerApps 公式**
+**Power Apps 公式**
 <br>主讲人：Greg Lindhorst [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Deep-dive-on-formulas-by-Greg-Lindhorst/m-p/116899)
 
-**使用 PowerApps 生成服务器修补解决方案，主讲人：Brian Blanchard**
+**通过 Brian Blanchard 使用 Power Apps 构建服务器修补解决方案**
 <br>主讲人：Brian Blanchard 和 Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Server-Patching-Solutions-with-PowerApps-by-Brian/m-p/116901)
 
-**使用 PowerApps 生成服务器修补解决方案，主讲人：Brian Blanchard（第 2 部分）**
+**通过 Brian Blanchard 使用 Power Apps 构建服务器修补解决方案（第2部分）**
 <br>主讲人：Brian Blanchard 和 Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Server-Patching-Solutions-with-PowerApps-by-Brian/m-p/116902)
 
-**PowerApps 点击链接分析，主讲人：Vivek Bavishi**
+**单击 Vivek Bavishi 的 Power Apps Analytics**
 <br>主讲人：Vivek Bavishi 和 Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Click-Through-PowerApps-Analytics-by-Vivek-Bavishi/m-p/116906)
 
- **将 PowerApps 用于业务流程管理 (BPM)，主讲人：Dawid van Heerden**
+ **通过 Dawid van Heerden 使用适用于业务流程管理（BPM）的 Power Apps**
 <br>作者：Dawid van Heerden[立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-PowerApps-and-Flow-for-Business-Process-Management/m-p/116907)
 
 ### <a name="connector-series"></a>连接器系列 ###
-**优化 PowerApps 和电源自动执行中的连接器**
+**优化 Power Apps 中的连接器和电源自动化**
 <br>主讲人：Theresa Palmer-Boroski [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Optimizing-Connectors-in-PowerApps-and-Microsoft-Flow-by-Theresa/m-p/116874)
 
-**Teams + PowerApps 提示和技巧**
+**团队 + Power Apps 提示和技巧**
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Teams-PowerApps-Tips-and-Tricks/m-p/116846)
 
 **从 PowerApps 连接到 OneDrive for Business 上的 Excel 的提示**
@@ -112,16 +112,16 @@ ms.locfileid: "73899184"
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-Project-Online-PWA/m-p/116889)
 
 ## <a name="sharepoint-series"></a>SharePoint 系列 ##
-**使用 PowerApps Studio 快速生成应用**
+**通过 Power Apps Studio 快速生成应用程序**
 <br>主讲人：Karthik Bharathy [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rapidly-build-applications-with-PowerApps-Studio/m-p/116849)
 
 **在 PowerApps 中重新生成 InfoPath Designer 表单**
 <br>主讲人：Daniel Christian [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rebuilding-an-InfoPath-Designer-Form/m-p/116909)
 
-**从 InfoPath Designer 过渡到 PowerApps 的提示 - 第 1 部分**
+**有关 InfoPath 设计器过渡到 Power Apps 的技巧-第1部分**
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Tips-for-InfoPath-Designers-Transitioning-to-PowerApps-Part-1/m-p/116910)
 
-**从 InfoPath 过渡到 PowerApps 的提示 - 第 2 部分**
+**从 InfoPath 转换到 Power Apps 的技巧-第2部分**
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Tips-for-InfoPath-Designers-Transitioning-to-PowerApps-Part-2/m-p/116912)
 
 **SharePoint Online 中的列表表单简介**
@@ -150,5 +150,5 @@ ms.locfileid: "73899184"
 **在 PowerApps 中生成对话或弹出消息**
 <br>主讲人：Veronica Ward [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Dialogs-in-PowerApps-by-Veronica-Ward/m-p/117627#M39)
 
-**与一位 PowerApps 开发人员 Marie Hoeger 一起探究幕后的秘密 - 深入了解模板**
+**查看窗帘的一个 Power Apps 开发人员，详细了解模板： Marie Hoeger**
 <br>主讲人：Audrie Gordon [立即观看](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Developer-Intro-and-Discussing-Templates/m-p/116848)

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 69da2bbdadc40421e9962de73d531b6c19554eeb
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: f95a6f7769cde01e99bc4c18fab0ae60ae6b8c96
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983472"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680135"
 ---
 # <a name="user-function-in-powerapps"></a>PowerApps 中的 User 函数
 返回当前用户的相关信息。
@@ -33,13 +33,13 @@ ms.locfileid: "71983472"
 | **User().Image** |当前用户的图像。 此为 "blob:*identifier*" 形式的图像 URL。 将 **[Image](../controls/control-image.md)** 控件的 **[Image](../controls/properties-visual.md)** 属性设置为此值可以在应用中显示用户图像。 |
 
 > [!NOTE]
-> 返回的是当前 PowerApps 用户的相关信息。  该信息与 PowerApps 播放器和 PowerApps Studio 中显示的“帐户”信息一致，可在任何已创作的应用范围外找到。  该信息可能与当前用户在 Office 365 或其他服务中的信息不一致。
+> 返回的信息适用于当前的 Power Apps 用户。  它将与 Power Apps 播放机和工作室中显示的 "帐户" 信息匹配，在任何创作的应用程序中都可以找到此信息。  该信息可能与当前用户在 Office 365 或其他服务中的信息不一致。
 
 ## <a name="syntax"></a>语法
 **User**()
 
 ## <a name="examples"></a>示例
-当前 PowerApps 用户的信息如下：
+当前的 Power Apps 用户具有以下信息：
 
 * 全名： **"John Doe"**
 * 电子邮件地址： **“john.doe@contoso.com”**
@@ -47,8 +47,8 @@ ms.locfileid: "71983472"
 
 |       公式       |                                                                    描述                                                                    |                                                 结果                                                  |
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-|     **User()**      |                                             当前 PowerApps 用户的所有信息记录。                                             |    { FullName:&nbsp;"John Doe", Email:&nbsp;"john.doe@contoso.com", Image:&nbsp;"blob:1234...5678" }    |
-|  **User().Email**   |                                                 当前 PowerApps 用户的电子邮件地址。                                                  |                                         "john.doe@contoso.com"                                          |
-| **User().FullName** |                                                   当前 PowerApps 用户的全名。                                                    |                                               "John Doe"                                                |
-|  **User().Image**   | 当前 PowerApps 用户的图像 URL。  将 **Image** 控件的 **Image** 属性设置为此值可以在应用中显示用户图像。 | "blob:1234...5678"<br><br>使用 **ImageControl.Image**：<br>![](media/function-user/john-doe-picture.png) |
+|     **User()**      |                                             当前 Power Apps 用户的所有信息的记录。                                             |    { FullName:&nbsp;"John Doe", Email:&nbsp;"john.doe@contoso.com", Image:&nbsp;"blob:1234...5678" }    |
+|  **User().Email**   |                                                 当前 Power Apps 用户的电子邮件地址。                                                  |                                         "john.doe@contoso.com"                                          |
+| **User().FullName** |                                                   当前 Power Apps 用户的完整名称。                                                    |                                               "John Doe"                                                |
+|  **User().Image**   | 当前 Power Apps 用户的图像 URL。  将 **Image** 控件的 **Image** 属性设置为此值可以在应用中显示用户图像。 | "blob:1234...5678"<br><br>使用 **ImageControl.Image**：<br>![](media/function-user/john-doe-picture.png) |
 

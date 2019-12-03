@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9b84a8ce89863d94b9f3e4ac390c88e194a2894
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7adf3391ef418a2b42861df63bc8396adc22f93a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540195"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679445"
 ---
 # <a name="choices-function-in-powerapps"></a>PowerApps 中的 Choices 函数
 返回查找列可能值的表。
@@ -53,7 +53,7 @@ Choices 不要求列名称为字符串且括在双引号中，这一点与 [**Sh
 
     将会创建多个实体，例如 Accounts。
 
-    **注意**：实体名称在 make.powerapps.com 上是单数的，PowerApps Studio 中的复数。
+    **注意**：实体名称在 make.powerapps.com 上是单数形式，在 Power Apps Studio 中为复数。
 
     ![Common Data Service for Apps 中的 Account 实体的部分字段列表，突出显示 "主要联系人" 是查找字段](media/function-choices/entity-account.png)
 

@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7663668b77c6f8186ef54c3182230fa843f86577
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 7226433c5e95537346841f2e2f9474ea68e42dda
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995690"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675087"
 ---
 # <a name="reference-information-about-the-email-screen-template-for-canvas-apps"></a>有关 canvas 应用的电子邮件屏幕模板的参考信息
 
-对于 PowerApps 中的画布应用，请了解电子邮件屏幕模板中的每个重要控件如何为屏幕的整体默认功能提供。 这一深入探讨介绍了如何通过其他属性来确定控件如何响应用户输入。 有关此屏幕默认功能的详细讨论，请参阅[电子邮件-屏幕概述](email-screen-overview.md)。
+对于 "Power Apps 中的画布应用"，了解电子邮件屏幕模板中的每个重大控制对屏幕的整体默认功能的影响。 这一深入探讨介绍了如何通过其他属性来确定控件如何响应用户输入。 有关此屏幕默认功能的详细讨论，请参阅[电子邮件-屏幕概述](email-screen-overview.md)。
 
 本主题重点介绍一些重要的控件，并说明这些控件的各种属性（例如**Items**和**OnSelect**）的设置表达式或公式：
 

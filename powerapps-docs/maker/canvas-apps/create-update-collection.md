@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1c930c233f96a481700748960f90d731be397af0
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 47233d4ead10ab01fe57c1f0573a4123894f9e58
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540316"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678663"
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>在画布应用中创建和更新集合
 
@@ -26,13 +26,13 @@ ms.locfileid: "73540316"
 
 ## <a name="prerequisites"></a>必备组件
 
-- [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+- [注册](../signup-for-powerapps.md)Power Apps，并[提供注册所](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)用的相同凭据。
 - 在 PowerApps 中创建一个应用，或打开一个现有应用。
 - 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
 
 ## <a name="create-a-multicolumn-collection"></a>创建多列集合
 
-1. 在 PowerApps Studio 中，添加**文本输入**控件。
+1. 在 Power Apps Studio 中，添加**文本输入**控件。
 
     ![插入文本输入控件](./media/create-update-collection/add-textbox.png)
 

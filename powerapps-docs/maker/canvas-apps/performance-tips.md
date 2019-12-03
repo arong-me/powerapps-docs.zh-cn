@@ -1,6 +1,6 @@
 ---
 title: 优化画布应用性能 | Microsoft Docs
-description: 按照本主题中的最佳做法提高你在 PowerApps 中创建的画布应用的性能。
+description: 遵循本主题中的最佳做法，提高在 Power Apps 中创建的画布应用的性能。
 author: yingchin
 manager: kvivek
 ms.service: powerapps
@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9943678815b53df048ad197e3cdcbd56f4070fa3
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0bf2502d22adb90993f5f7ebb8e05c72f51215a5
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995782"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675453"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>在 PowerApps 中优化画布应用性能
-Microsoft 正致力于完善在 PowerApps 平台上运行的所有应用的性能。 但你可以按照本主题中的最佳做法提高你所创建的应用的性能。
+Microsoft 正在努力提高在 Power Apps 平台上运行的所有应用程序的性能。 但你可以按照本主题中的最佳做法提高你所创建的应用的性能。
 
 当用户打开一个应用时，在显示任何用户界面之前都会执行以下操作： 
 1. 对用户进行身份验证 - 如果用户之前从未打开过该应用，则会提示用户使用应用所需的任何连接的凭据进行登录。 如果同一用户再次打开该应用，则系统可能会再次提示该用户，具体要取决于组织的安全策略。 
-2. 获取元数据 - 检索元数据，如运行应用的 PowerApps 平台的版本以及必须从中检索数据的源。 
+2. **获取元数据**-检索元数据，例如应用运行的电源应用平台的版本以及必须从中检索数据的源。 
 3. 初始化应用 - 执行 OnStart 属性中指定的任何任务。 
 4. 呈现屏幕 - 使用应用已填充数据的控件呈现第一个屏幕。 如果用户打开其他屏幕，则应用会使用相同过程呈现这些屏幕。  
 
@@ -35,7 +35,7 @@ Microsoft 正致力于完善在 PowerApps 平台上运行的所有应用的性�
 在运行应用的同时打开 [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) 或 [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) 中的开发人员工具可以快速度量应用的性能。 如果应用经常请求30多个数据源中的数据（例如 Common Data Service、Azure SQL、SharePoint 和 OneDrive 上的 Excel），则可能需要超过15秒的时间才能返回数据。  
 
 ## <a name="limit-the-number-of-controls"></a>限制控件数 
-不要向同一应用添加 500 个以上的控件。 PowerApps 会生成 HTML DOM 以呈现每个控件。 添加的控件越多，PowerApps 所需的生成时间就越多。 
+不要向同一应用添加 500 个以上的控件。 Power Apps 会生成一个 HTML DOM 来呈现每个控件。 添加的控件越多，所需的生成时间就越多。 
 
 在某些情况下，改用库而非单个控件，可以获得相同结果并更快地启动应用。 此外，你可能需要在同一屏幕上减少控件类型数。 某些控件（如 PDF 查看器、数据表和组合框）会拉入大型执行脚本，并需要较长时间才能呈现。 
 
@@ -107,7 +107,7 @@ Set(CustomerPhone, CustomerOrder.Phone);
 使用可以委派的数据源和公式来保持应用正常运行，让用户可以访问他们所需全部信息的同时，还能够避免超过不可委派查询的 2000 数据行限制。 对于用户可在其上搜索、筛选或排序数据的数据记录列，这些列的索引如 [SQL Server](https://docs.microsoft.com/sql/relational-databases/sql-server-index-design-guide?view=sql-server-2017) 和 [SharePoint](https://support.office.com/article/Add-an-index-to-a-SharePoint-column-f3f00554-b7dc-44d1-a2ed-d477eac463b0) 文档中所述设计得当。  
 
 ## <a name="republish-apps-regularly"></a>定期重新发布应用
-[重新发布应用](https://powerapps.microsoft.com/blog/republish-your-apps-to-get-performance-improvements-and-additional-features/)（博客文章），以从 PowerApps 平台中获取性能改进和其他功能。
+重新[发布应用](https://powerapps.microsoft.com/blog/republish-your-apps-to-get-performance-improvements-and-additional-features/)（博客文章），从 Power apps 平台获取性能改进和其他功能。
 
 ## <a name="avoid-repeating-the-same-formula-in-multiple-places"></a>避免在多个位置重复相同的公式
 如果多个属性运行相同的公式（尤其是在复杂的情况下），请考虑将其设置一次，然后在后续的属性中引用第一个属性的输出。 例如，不要将控件 A、B、C、D 和 E 的**DisplayMode**属性设置为相同的复杂公式。 相反，请将的**DisplayMode**属性设置为复杂公式，将 B 的**DisplayMode**属性设置为的**DisplayMode**属性的结果，并在 C、D 和 E 中设置。

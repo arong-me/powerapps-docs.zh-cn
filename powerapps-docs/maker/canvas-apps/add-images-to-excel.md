@@ -13,29 +13,29 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d2e61a312aa3824c24b7058da4b34aa9c5cf462c
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 9e96b0733e139657c3105ec020470d55fe5008dd
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321553"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678982"
 ---
 # <a name="add-images-to-excel-from-powerapps"></a>通过 PowerApps 将图像添加到 Excel 中
 自动创建应用，用户可以在其中显示、添加或删除各文件中的图像，或通过“笔”控件绘制的画图。 此应用以你创建并上载到云存储帐户中的 Excel 文件为依据。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 * 熟悉如何[添加和配置控件](add-configure-controls.md)。
 * 熟悉如何[将 Excel 数据配置为表](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370?ui=en-US&rs=en-US&ad=US)。
-* 已建立与云存储帐户（如 Dropbox、OneDrive 或 Google 云端硬盘）的 [PowerApps 连接](add-data-connection.md)，以便可以在其中存储 Excel 文件。
+* 与云存储帐户（如 Dropbox、OneDrive 或 Google Drive）建立的[电源应用连接](add-data-connection.md)，可在其中存储 Excel 文件。
 
 ## <a name="create-the-data-source-and-the-app"></a>创建数据源和应用
 1. 在 Excel 中，向任意两个并排且正下方是空单元格的单元格（例如，A1 和 B1）添加“Caption”和“Image [image]”。
 2. 将更新的单元格及其正下方的单元格格式化为表，然后命名此表（例如，“Images”）。
    
-    ![创建表](./media/add-images-to-excel/create-table.png)
+    ![创建表格](./media/add-images-to-excel/create-table.png)
 3. 保存此文件（例如，另存为“ImageDemo”），然后将其上载到云存储帐户中。
-4. 在 PowerApps 中，依次单击或点击“文件”菜单上的“新建”（如果尚未打开应用，请单击或点击左边缘中的“新建”）和云存储帐户磁贴中的“手机布局”。
+4. 在 Power Apps 中，单击或点击 "**文件**" 菜单上的 "**新建**" （如果尚未打开应用，则沿左边缘），然后单击或点击云存储帐户磁贴中的 "**手机布局**"。
    
     ![选择云存储帐户](./media/add-images-to-excel/select-account.png)
 5. 在“选择 Excel 文件”下，单击或点击你创建的文件。

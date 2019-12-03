@@ -1,6 +1,6 @@
 ---
 title: 在解决方案中创建画布应用 |Microsoft Docs
-description: 在 PowerApps 中，在解决方案中创建一个画布应用，以便将应用部署到另一个环境
+description: 在 Power Apps 中，在解决方案中创建一个画布应用，以便将应用部署到另一个环境
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0748f78665b389d57989c9170ca21077721f6633
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f6b34a5ea1b2f269a26ad70de6a6a530a30bc240
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541001"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679330"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>从解决方案中创建画布应用
 
@@ -34,7 +34,7 @@ ms.locfileid: "73541001"
 
 如果你已经有一个要在其中创建应用程序或要将应用程序链接到的解决方案，则可以跳过此过程。
 
-1. [登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 PowerApps，然后（如有必要）切换到相应的环境：
+1. [登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 Power Apps，然后（如有必要）切换到相应的环境：
 
     - 如果要从解决方案中创建应用，请切换到包含 Common Data Service 数据库的任何环境。
     - 如果要将现有应用链接到解决方案，请切换到包含该应用的环境。
@@ -76,12 +76,12 @@ ms.locfileid: "73541001"
 
 1. 在解决方案列表中，选择要在其中创建画布应用的解决方案。
 
-1. 在标题栏下的标题栏中，选择 "**新建**"  > **应用** > **画布应用**"，然后选择要创建的应用的外观规格（手机或平板电脑）。
+1. 在标题栏下的标题栏中，选择 "**新建**" > **应用** > **画布应用**"，然后选择要创建的应用的外观规格（手机或平板电脑）。
 
     > [!div class="mx-imgBorder"]
     > ![用于在解决方案中创建应用的选项](./media/add-app-solution/new-option.png "用于在解决方案中创建应用的选项")
 
-    PowerApps Studio 在另一个浏览器选项卡中使用空白画布打开。
+    Power Apps Studio 会在另一个浏览器选项卡中使用空白画布打开。
 
 1. 创建应用（或至少进行一项更改），然后保存所做的更改。
 

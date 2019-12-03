@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b8495c22a703a267cd3ab888247e5cbf6ef6a81d
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 37ea7a123562cf4ec9216d484bd6173f33046d72
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73900398"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674810"
 ---
 # <a name="set-up-data-alerts-for-the-power-bi-dashboard"></a>创建 Power BI 仪表板的数据警报
 > [!NOTE]
-> 本文是有关将 PowerApps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> 本文是有关将 Power Apps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
 在此任务中，我们将在 Power BI 中添加警报，以便了解待审批项目的等待时间是否过长，并添加用于响应触发的警报的流。 有关警报的详细信息，请参阅 [Power BI 服务中的数据警报](https://docs.microsoft.com/power-bi/service-set-data-alerts)。
 

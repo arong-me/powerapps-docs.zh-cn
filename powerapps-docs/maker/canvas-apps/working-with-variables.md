@@ -13,20 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 036de37aa2593254d6ae665f8546fe4038dd922d
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 0ac00411c48cc97cb54c30ccefc3d8a6e1af5e48
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71994827"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74673238"
 ---
 # <a name="understand-canvas-app-variables-in-powerapps"></a>了解 PowerApps 中的画布应用变量
 
-如果你使用过其他编程工具（例如 Visual Basic 或 JavaScript），你可能会问：**变量在哪里？** PowerApps 稍有不同，需要不同的方法。 与其在生成画布应用时使用变量，不如问自己：我会在 Excel 中执行哪些操作？
+如果你使用过其他编程工具（例如 Visual Basic 或 JavaScript），你可能会问：**变量在哪里？** Power Apps 略有不同，需要不同的方法。 与其在生成画布应用时使用变量，不如问自己：我会在 Excel 中执行哪些操作？
 
-在其他工具中，你可能会显式执行某个计算，然后将结果存储在变量中。 但是，PowerApps 和 Excel 都会在输入数据更改时自动重新计算公式，因此你通常不需要创建和更新变量。 尽可能使用这种方法，你就可以更轻松地创建、了解和维护应用。
+在其他工具中，你可能会显式执行某个计算，然后将结果存储在变量中。 但是，当输入数据发生更改时，Power Apps 和 Excel 都将自动重新计算公式，因此你通常不需要创建和更新变量。 尽可能使用这种方法，你就可以更轻松地创建、了解和维护应用。
 
-某些情况下，需要在 PowerApps 中使用变量，通过添加[行为公式](working-with-formulas-in-depth.md)扩展 Excel 的模型。 这些公式在特定情况下（例如，用户选择某个按钮）运行。 在行为公式中，设置一个可在其他公式中使用的变量通常很有用。
+在某些情况下，需要使用 Power Apps 中的变量，这些变量通过添加[行为公式](working-with-formulas-in-depth.md)来扩展 Excel 的模型。 这些公式在特定情况下（例如，用户选择某个按钮）运行。 在行为公式中，设置一个可在其他公式中使用的变量通常很有用。
 
 一般情况下，应避免使用变量。 但有时候，只有使用变量才能获得所需的体验。 当变量出现在设置其值的函数中时，它们将被隐式创建和键入。 
 
@@ -44,19 +44,19 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 
 ### <a name="powerapps"></a>PowerApp
 
-在 PowerApps 中创建的应用的行为与 Excel 很类似。 可以将控件添加到屏幕的任意位置，并根据其在公式中的用途为其命名，不需更新单元格。
+在 Power Apps 中创建的应用的行为与 Excel 非常类似。 可以将控件添加到屏幕的任意位置，并根据其在公式中的用途为其命名，不需更新单元格。
 
-例如，可以通过添加**[标签](controls/control-text-box.md)** 控件（名为**Label1**）和两个**[文本输入](controls/control-text-input.md)** 控件（名为**TextInput1**和**TextInput2**），在应用中复制 Excel 行为。 如果随后将**Label1**的**[Text](controls/properties-core.md)** 属性设置为**TextInput1 + TextInput2**，则它将始终显示**TextInput1**和**TextInput2**中的任何数字的总和。
+例如，可以通过添加 **[标签](controls/control-text-box.md)** 控件（名为**Label1**）和两个 **[文本输入](controls/control-text-input.md)** 控件（名为**TextInput1**和**TextInput2**），在应用中复制 Excel 行为。 如果随后将**Label1**的 **[Text](controls/properties-core.md)** 属性设置为**TextInput1 + TextInput2**，则它将始终显示**TextInput1**和**TextInput2**中的任何数字的总和。
 
 ![计算 PowerApps 中两个数字之和](media/working-with-variables/recalc1.png)
 
-请注意，选择了**Label1**控件，并在屏幕顶部的编辑栏中显示其**[文本](controls/properties-core.md)** 公式。 在这里，我们可以找到公式 **TextInput1 + TextInput2**。 该公式在这些控件之间创建了一个依赖关系，就像在 Excel 工作簿中的单元格之间创建依赖关系一样。  让我们更改**TextInput1**的值：
+请注意，选择了**Label1**控件，并在屏幕顶部的编辑栏中显示其 **[文本](controls/properties-core.md)** 公式。 在这里，我们可以找到公式 **TextInput1 + TextInput2**。 该公式在这些控件之间创建了一个依赖关系，就像在 Excel 工作簿中的单元格之间创建依赖关系一样。  让我们更改**TextInput1**的值：
 
 ![计算 PowerApps 中两个数字之和的动画](media/working-with-variables/recalc2.gif)
 
 用于**Label1**的公式已自动重新计算，并显示新值。
 
-在 PowerApps 中，使用公式不仅可以确定控件的主值，还可以确定属性（例如格式设置）。 在下一示例中，标签的“[Color](controls/properties-color-border.md)”属性的公式会自动将负值显示为红色。 **[If](functions/function-if.md)** 函数看起来应该与 Excel 中的很相似：
+在 Power Apps 中，你可以使用公式来确定控件的主值，还可以确定属性（如格式设置）。 在下一示例中，标签的“[Color](controls/properties-color-border.md)”属性的公式会自动将负值显示为红色。 **[If](functions/function-if.md)** 函数看起来应该与 Excel 中的很相似：
 
 `If( Value(Label1.Text) < 0, Red, Black )`
 
@@ -65,18 +65,18 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 很多情况下都可以使用公式：
 
 * 启用设备的 GPS 后，地图控件就可以使用公式通过 **Location.Latitude** 和 **Location.Longitude** 来显示当前位置。  移动时，地图会自动跟踪你的位置。
-* 其他用户可能会更新[数据源](working-with-data-sources.md)。  例如，团队中的其他人可能会更新 SharePoint 列表中的项。  刷新数据源时，相关公式会根据更新的数据自动重新计算。 就此示例来说，你可以进一步将库的 **[Items](controls/properties-core.md)** 属性设置为公式 **Filter( SharePointList )**，以便自动显示新筛选的[记录](working-with-tables.md#records)集。
+* 其他用户可能会更新[数据源](working-with-data-sources.md)。  例如，团队中的其他人可能会更新 SharePoint 列表中的项。  刷新数据源时，相关公式会根据更新的数据自动重新计算。 就此示例来说，你可以进一步将库的 **[Items](controls/properties-core.md)** 属性设置为公式 **Filter( SharePointList )** ，以便自动显示新筛选的[记录](working-with-tables.md#records)集。
 
 ### <a name="benefits"></a>权益
 
 使用公式生成应用具有很多优点：
 
-* 如果你知道 Excel，你就知道 PowerApps。 二者的模型和公式语言是相同的。
-* 如果你使用过其他编程工具，可以试想一下，完成这些示例需要多少代码。  在 Visual Basic 中，需要为每个文本输入控件上发生的更改事件编写事件处理程序。  在每个这样的处理程序中，用于执行计算的代码很冗长，并且可能会出现不同步的情况，或者需要你编写通用子例程。  而在 PowerApps 中，这一切只需一个单行公式即可完成。
+* 如果你知道 Excel，则会知道 Power Apps。 二者的模型和公式语言是相同的。
+* 如果你使用过其他编程工具，可以试想一下，完成这些示例需要多少代码。  在 Visual Basic 中，需要为每个文本输入控件上发生的更改事件编写事件处理程序。  在每个这样的处理程序中，用于执行计算的代码很冗长，并且可能会出现不同步的情况，或者需要你编写通用子例程。  在 Power Apps 中，你已使用单行公式完成了所有操作。
 * 若要理解**Label1**的文本来自何处，你确切知道在何处查找： **[text](controls/properties-core.md)** 属性中的公式。  其他方式不会影响该控件的文本。  在传统编程工具中，可以从程序的任何位置通过任何事件处理程序或子例程更改该标签的值。  这就难以跟踪变量的更改时间和位置。
 * 如果用户更改了滑块控件，然后又改变了主意，则可将滑块改回其原始值。  这样一来，就好像没有做过任何更改一样：应用所显示的控件值与以前显示的一样。  不需进行分支试验并询问假设性的问题，就像在 Excel 中一样。  
 
-如果可以使用公式达到某种效果，则通常会选择使用公式。 让 PowerApps 中的公式引擎为你服务。  
+如果可以使用公式达到某种效果，则通常会选择使用公式。 让 Power Apps 中的公式引擎适合你。  
 
 ## <a name="know-when-to-use-variables"></a>了解何时使用变量
 
@@ -100,12 +100,12 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 
 ## <a name="use-a-global-variable"></a>使用全局变量
 
-创建加法机需要一个变量来存储汇总。 可用于 PowerApps 的最简单变量是全局变量。  
+创建加法机需要一个变量来存储汇总。 在 Power Apps 中使用的最简单的变量是*全局变量*。  
 
 全局变量的工作方式：
 
 * 使用 [Set](functions/function-set.md) 函数设置全局变量的值。  Set( MyVar, 1 ) 可将全局变量 MyVar 的值设置为 1。
-* 可以通过引用 Set 函数使用的名称来使用全局变量。  在这种情况下， MyVar 将返回 1。
+* 可以通过引用 Set函数使用的名称来使用全局变量。  在这种情况下， MyVar将返回 1。
 * 全局变量可以存储包括字符串、数字、记录和[表](working-with-tables.md)在内的任何值。
 
 让我们使用全局变量重新生成加法机：
@@ -118,9 +118,9 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 
     **Set （RunningTotal，RunningTotal + TextInput1）**
 
-    此公式的现有存在将**RunningTotal**作为全局变量建立，因为它是**+** 运算符。 可以在应用中的任何位置引用**RunningTotal** 。 每当用户打开此应用时， **RunningTotal**的初始值为*空白*。
+    此公式的现有存在将**RunningTotal**作为全局变量建立，因为它是 **+** 运算符。 可以在应用中的任何位置引用**RunningTotal** 。 每当用户打开此应用时， **RunningTotal**的初始值为*空白*。
 
-    用户首次选择 "**添加**" 按钮并**[设置](functions/function-set.md)**"运行" 时， **RunningTotal**设置为值**RunningTotal + TextInput1**。
+    用户首次选择 "**添加**" 按钮并 **[设置](functions/function-set.md)** "运行" 时， **RunningTotal**设置为值**RunningTotal + TextInput1**。
 
     !["添加" 按钮的 OnSelect 属性设置为 Set function](media/working-with-variables/global-variable-1.png)
 
@@ -150,7 +150,7 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 
 ## <a name="types-of-variables"></a>变量类型
 
-PowerApps 具有三种类型的变量：
+Power Apps 具有三种类型的变量：
 
 | 变量类型 | 范围 | 描述 | 建立的函数 |
 | --- | --- | --- | --- |
@@ -162,9 +162,9 @@ PowerApps 具有三种类型的变量：
 
 在**Set**、 **UpdateContext**、**导航**、**收集**或**ClearCollect**函数中出现时，将隐式创建所有变量。 若要声明变量及其类型，只需将其包含在应用中任何位置的任何函数中。 这些函数都不会创建变量;它们仅用值填充变量。 永远不会在其他编程工具中显式声明变量，并且所有类型都是隐式的。
 
-例如，可能有一个按钮控件的**OnSelect**公式等于**Set （X，1）**。 此公式将**X**建立为具有数字类型的变量。 您可以在公式中使用**X**作为数字，并且在您打开应用之后但在选择按钮之前，该变量的值为*空*。 选择该按钮时，会将**X**值指定为**1**。
+例如，可能有一个按钮控件的**OnSelect**公式等于**Set （X，1）** 。 此公式将**X**建立为具有数字类型的变量。 您可以在公式中使用**X**作为数字，并且在您打开应用之后但在选择按钮之前，该变量的值为*空*。 选择该按钮时，会将**X**值指定为**1**。
 
-如果添加了另一个按钮，并将其**OnSelect**属性设置为 **（X，"Hello"）**，则会发生错误，因为类型（文本字符串）与上一**组**（number）中的类型不匹配。 变量的所有隐式定义必须在类型上达成一致。 同样，出现这种情况的原因在于，您在公式中提到了**X** ，而不是这些公式中的任何一种确实运行过。
+如果添加了另一个按钮，并将其**OnSelect**属性设置为 **（X，"Hello"）** ，则会发生错误，因为类型（文本字符串）与上一**组**（number）中的类型不匹配。 变量的所有隐式定义必须在类型上达成一致。 同样，出现这种情况的原因在于，您在公式中提到了**X** ，而不是这些公式中的任何一种确实运行过。
 
 通过删除隐式建立变量的所有**Set**、 **UpdateContext**、**导航**、**收集**或**ClearCollect**函数，可以删除变量。 如果没有这些函数，则该变量不存在。 还必须删除对变量的任何引用，因为它们会导致错误。
 
@@ -186,7 +186,7 @@ PowerApps 具有三种类型的变量：
 
 `Pi() * Power( Radius, 2 )`
 
-如果为上下文变量指定的名称与全局变量或集合的名称相同，则上下文变量优先。 但是，如果使用[消除歧义运算符](functions/operators.md#disambiguation-operator) **@ [Radius]**，则仍可引用全局变量或集合。
+如果为上下文变量指定的名称与全局变量或集合的名称相同，则上下文变量优先。 但是，如果使用[消除歧义运算符](functions/operators.md#disambiguation-operator) **@ [Radius]** ，则仍可引用全局变量或集合。
 
 ## <a name="use-a-context-variable"></a>使用上下文变量
 
@@ -194,10 +194,10 @@ PowerApps 具有三种类型的变量：
 
 上下文变量的工作原理：
 
-* 使用**[UpdateContext](functions/function-updatecontext.md)** 或**[定位](functions/function-navigate.md)** 函数隐式创建和设置上下文变量。 当应用启动时，所有上下文变量的初始值均为*空白*。
+* 使用 **[UpdateContext](functions/function-updatecontext.md)** 或 **[定位](functions/function-navigate.md)** 函数隐式创建和设置上下文变量。 当应用启动时，所有上下文变量的初始值均为*空白*。
 * 您可以用记录更新上下文变量。 在其他编程工具中，通常使用“=”来赋值，例如“x = 1”。 上下文变量则使用 **{ x: 1 }** 这样的形式。 使用上下文变量时，请在不使用 record 语法的情况下直接使用其名称。
-* 您还可以在使用 "**[定位](functions/function-navigate.md)** 函数" 显示屏幕时设置上下文变量。 如果您将屏幕视为一种过程或子例程，此方法类似于在其他编程工具中传递参数。
-* 上下文变量的作用范围仅限于单个屏幕的上下文（**[Navigate](functions/function-navigate.md)** 除外），这也是其得名的原因。 不能超出相应的上下文使用或设置上下文变量。
+* 您还可以在使用 " **[定位](functions/function-navigate.md)** 函数" 显示屏幕时设置上下文变量。 如果您将屏幕视为一种过程或子例程，此方法类似于在其他编程工具中传递参数。
+* 上下文变量的作用范围仅限于单个屏幕的上下文（ **[Navigate](functions/function-navigate.md)** 除外），这也是其得名的原因。 不能超出相应的上下文使用或设置上下文变量。
 * 上下文变量可以存储包括字符串、数字、记录和[表](working-with-tables.md)在内的任何值。
 
 让我们使用一个上下文变量重新生成加法机：
@@ -210,7 +210,7 @@ PowerApps 具有三种类型的变量：
 
     **UpdateContext （{RunningTotal： RunningTotal + TextInput1}）**
 
-    此公式的现有存在将**RunningTotal**作为上下文变量建立，因为存在**+** 运算符。 可以在此屏幕的任何位置引用**RunningTotal** 。 每当用户打开此应用时， **RunningTotal**的初始值为*空白*。
+    此公式的现有存在将**RunningTotal**作为上下文变量建立，因为存在 **+** 运算符。 可以在此屏幕的任何位置引用**RunningTotal** 。 每当用户打开此应用时， **RunningTotal**的初始值为*空白*。
 
     用户首次选择 "**添加**" 按钮和 " **[UpdateContext](functions/function-updatecontext.md)** " 时， **RunningTotal**将设置为值 " **RunningTotal + TextInput1**"。
 
@@ -220,7 +220,7 @@ PowerApps 具有三种类型的变量：
 
     UpdateContext( { RunningTotal: 0 } )
 
-    同样，**[UpdateContext](functions/function-updatecontext.md)** 与公式 **UpdateContext( { RunningTotal: 0 } )** 一起使用。
+    同样， **[UpdateContext](functions/function-updatecontext.md)** 与公式 **UpdateContext( { RunningTotal: 0 } )** 一起使用。
 
     !["清除" 按钮的 OnSelect 属性](media/working-with-variables/context-variable-2.png)
 
@@ -259,12 +259,12 @@ PowerApps 具有三种类型的变量：
 集合工作原理：
 
 * 通过 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** 函数创建和设置集合。  可以改用 **[Collect](functions/function-clear-collect-clearcollect.md)** 函数，但该函数实际上需要另一个变量，而不能替换旧的变量。  
-* 集合是一种类型的数据源，因此也是表。 若要访问集合中的单个值，请使用 **[First](functions/function-first-last.md)** 函数，并从生成的记录中提取一个字段。 如果使用了单个值和 **[ClearCollect](functions/function-clear-collect-clearcollect.md)**，则该字段为“Value”字段，如以下示例所示：<br>
+* 集合是一种类型的数据源，因此也是表。 若要访问集合中的单个值，请使用 **[First](functions/function-first-last.md)** 函数，并从生成的记录中提取一个字段。 如果使用了单个值和 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** ，则该字段为“Value”字段，如以下示例所示：<br>
 **First(** *VariableName* **).Value**
 
 让我们使用集合重新创建加法机：
 
-1. 添加一个**[文本输入](controls/control-text-input.md)** 控件，将其命名为 **TextInput1**，同时添加两个按钮，分别命名为 **Button1** 和 **Button2**。
+1. 添加一个 **[文本输入](controls/control-text-input.md)** 控件，将其命名为 **TextInput1**，同时添加两个按钮，分别命名为 **Button1** 和 **Button2**。
 
 2. 将 **Button1** 的 **[Text](controls/properties-core.md)** 属性设置为“加”，将 **Button2** 的“Text”属性设置为“清除”。
 
@@ -278,7 +278,7 @@ PowerApps 具有三种类型的变量：
 
     !["添加" 按钮的 OnSelect 属性](media/working-with-variables/papertape-1.png)
 
-4. 若要在用户选择 "**清除**" 按钮时清除纸张磁带，请将其**[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
+4. 若要在用户选择 "**清除**" 按钮时清除纸张磁带，请将其 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
 
     Clear( PaperTape )
 
@@ -325,4 +325,4 @@ PowerApps 具有三种类型的变量：
 12. 按 F5 键再次预览，在文本输入控件中输入数字，然后选择按钮。 选择“保存”按钮。 关闭并重新加载应用，然后选择 "**加载**" 按钮以重新加载集合。
 
 > [!NOTE]
-> PowerApps Mobile 中的**SaveData**和**LoadData**函数，但不 PowerApps Studio 或 powerapps 的 web 播放器。
+> Power Apps Mobile 中的**SaveData**和**LoadData**函数，但不适用于 PowerApps 的 power apps Studio 或 web 播放器。

@@ -1,6 +1,6 @@
 ---
 title: 画布应用中的公式入门 | Microsoft Docs
-description: 在 PowerApps 中，使用公式自定义画布应用。
+description: 在 Power Apps 中，使用公式自定义画布应用。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 715f82a1db2c8a4bb495e41b45a3911182024158
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 42f5f188f107e8a5768ed9a74f463d1fc9bbc286
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541610"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74673192"
 ---
 # <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>PowerApps 中的画布应用公式入门
 
 为画布应用配置公式，不仅用于计算值和执行其他任务（与在 Excel 中的操作一样），还能（根据应用需求）响应用户输入。
 
 * 在 Excel 中生成公式，例如，填充单元格并创建表格和图表。
-* 在 PowerApps 中，生成与配置控件（而不是单元格）时类似的公式。 此外，生成专门适用于应用（而非电子表格）的公式。
+* 在 Power Apps 中，你可以在配置控件而不是单元格时生成类似的公式。 此外，生成专门适用于应用（而非电子表格）的公式。
 
 例如，生成公式以确定当用户选择按钮、调整滑块或提供其他输入时应用的响应方式。 这些公式可能会显示不同的屏幕、更新应用外部的数据源、或创建包含现有表格中数据子集的表格。
 
@@ -35,12 +35,12 @@ ms.locfileid: "73541610"
 
 ## <a name="prerequisites"></a>必备组件
 
-* [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+* [注册](../signup-for-powerapps.md)Power Apps，并[提供注册所](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)用的相同凭据。
 * 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
 
 ## <a name="show-a-simple-value"></a>显示简单值
 
-在 Excel 中，可以输入数据的特定片段，例如编号 **42** 或短语 **Hello World**，方法是将这些内容键入到单元格。 该单元格将始终显示所键入的片段所属的数据。 同样，在 PowerApps 中，只需将标签的 **[Text](controls/properties-core.md)** 属性设置为想要使用的字符的精确序列（由双引号括住），即可指定数据的某个片段。
+在 Excel 中，可以输入数据的特定片段，例如编号 **42** 或短语 **Hello World**，方法是将这些内容键入到单元格。 该单元格将始终显示所键入的片段所属的数据。 在 Power Apps 中，你可以通过将标签的 " **[Text](controls/properties-core.md)** " 属性设置为所需的确切字符序列（括在双引号内）来指定不更改的一段数据。
 
 1. 选择“**文件**”菜单上的“**新建**”（屏幕左边缘附近）。
 2. 在“**创建应用**”下，选择“**空白应用**”磁贴上的“**电话布局**”。
@@ -70,10 +70,10 @@ ms.locfileid: "73541610"
 
     在键入过程中，标签会反映此新值。  键入时，屏幕可能会显示黄色感叹号图标。 这些图标表示存在错误，但在输入有效值后，这些图标将消失。 例如，如果字符串首尾没有双引号，则无效。
 
-    在 Excel 中，可以显示一个数字，如 **42**，方法是将其键入一个单元格或键入用于解析到该数字的公式，如 **=SUM(30,12)** 。 在 PowerApps 中，可以将标签等控件的“Text”属性设置为“42”或“Sum(30,12)”，从而达到同样的效果。 无论在工作表或应用中进行了其他何种更改，单元格和标签始终都会显示此数字。
+    在 Excel 中，可以显示一个数字，如 **42**，方法是将其键入一个单元格或键入用于解析到该数字的公式，如 **=SUM(30,12)** 。 在 Power Apps 中，你可以通过将控件的 " **Text** " 属性设置为 " **42** " 或 " **Sum （30，12）** " 来实现相同的效果。 无论在工作表或应用中进行了其他何种更改，单元格和标签始终都会显示此数字。
 
     > [!NOTE]
-   > 在 PowerApps 中，并不在公式前使用等号或加号，这一点与在 Excel 中不同。 默认情况下，编辑栏将在该处键入的任何内容均视为一个公式。 此外，也不使用双引号 (") 将公式括起来（在之前的操作中使用它指定文本的字符串）。
+   > 在 Power Apps 中，你不会在公式前面加上等号或加号，就像在 Excel 中一样。 默认情况下，编辑栏将在该处键入的任何内容均视为一个公式。 此外，也不使用双引号 (") 将公式括起来（在之前的操作中使用它指定文本的字符串）。
 5. 在标签的“[Text](controls/properties-core.md)”属性中，将“"Hello World"”替换成“Sum(1,2,3)”。
 
     ![键入部分函数 Sum(1,2,3（不加右括号）显示错误](./media/working-with-formulas/label-sum-partial.png)
@@ -88,17 +88,17 @@ ms.locfileid: "73541610"
 
 ![Excel 动画重新计算两个数字之和](./media/working-with-formulas/excel-recalc.gif)
 
-在 PowerApps 中，可以通过将控件添加到屏幕并设置其属性来获得类似的结果。 此示例演示一个名为**Label1**的标签控件和两个名为**TextInput1**和**TextInput2**的 **[文本输入](controls/control-text-input.md)** 控件。
+在 Power Apps 中，你可以通过将控件添加到屏幕并设置其属性来获得类似的结果。 此示例演示一个名为**Label1**的标签控件和两个名为**TextInput1**和**TextInput2**的 **[文本输入](controls/control-text-input.md)** 控件。
 
-![PowerApps 的插图重新计算两个数字之和](./media/working-with-formulas/recalc1.png)
+![重新计算两个数字之和的电源应用的插图](./media/working-with-formulas/recalc1.png)
 
 无论在文本输入控件中键入什么数字，标签始终都会显示这些数字的总和，因为它的“[Text](controls/properties-core.md)”属性设置为以下公式：
 
 `TextInput1 + TextInput2`
 
-![PowerApps 动画重新计算两个数字之和](./media/working-with-formulas/recalc2.gif)
+![电源应用的动画重新计算两个数字之和](./media/working-with-formulas/recalc2.gif)
 
-在 Excel 中，可以使用条件格式公式来显示红色中的负值。 在 PowerApps 中，使用公式不仅可以确定控件的主值，还可以确定属性（例如格式设置）。 在下一个示例中，标签的 **[Color](controls/properties-color-border.md)** 属性的公式自动以红色显示负值。 **[If](functions/function-if.md)** 函数看起来应该与 Excel 中的很相似：
+在 Excel 中，可以使用条件格式公式来显示红色中的负值。 在 Power Apps 中，你可以使用公式来确定控件的主值，还可以确定属性（如格式设置）。 在下一个示例中，标签的 **[Color](controls/properties-color-border.md)** 属性的公式自动以红色显示负值。 **[If](functions/function-if.md)** 函数看起来应该与 Excel 中的很相似：
 
 `If( Value(Label1.Text) < 0, Red, Black )`
 
