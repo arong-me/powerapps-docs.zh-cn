@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 307950cf7e0aa67d7bf31daf29b3f8a3bb11d465
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 33dcc3ab5e1682783c997adf4dd1185d59b0db2b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984581"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678318"
 ---
 # <a name="language-function-in-powerapps"></a>PowerApps 中的 Language 函数
 返回当前用户的语言标记。
@@ -34,10 +34,10 @@ ms.locfileid: "71984581"
 | 返回值 | 描述 |
 | --- | --- |
 | **"*lg&#8209;RE*"** |*lg* 是语言 (Language) 的两字符缩写形式，*RE* 是区域 (Region) 的两字符缩写形式。  这是最常见的返回类型。  例如，对于英国 (Great Britain)，返回“en-GB”。 |
-| **"*lg*"** |*lg* 是语言的两字符缩写形式。  如果 PowerApps 获得了语言信息，但没有特定区域信息，则使用此格式。 |
+| **"*lg*"** |*lg* 是语言的两字符缩写形式。  当电源应用包含有关该语言的信息但没有特定区域的信息时，将使用此格式。 |
 | **"*lg&#8209;scrp&#8209;RE*"** |*lg* 是语言的两字符缩写形式，*scrp* 是脚本 (Script) 的四字符缩写形式，*RE* 是区域的两字符缩写形式。 |
 
-PowerApps 使用 [IETF BCP-47 语言标记](https://tools.ietf.org/html/bcp47)格式。  
+Power Apps 使用[IETF BCP-47 语言标记](https://tools.ietf.org/html/bcp47)格式。  
 
 要查看支持的语言标记列表，请在公式栏或高级视图中输入 **Value( "1", )** ，然后滚动查看建议作为第二个参数的值的区域设置列表。  
 
@@ -50,7 +50,7 @@ PowerApps 使用 [IETF BCP-47 语言标记](https://tools.ietf.org/html/bcp47)�
 ### <a name="users-locale"></a>用户的区域设置
 假设主机操作系统和/或浏览器正在使用当地的默认区域设置。
 
-| 公式 | 位置 | 返回值 |
+| 公式 | Location | 返回值 |
 | --- | --- | --- |
 | **Language()** |葡萄牙里斯本 |“pt-PT” |
 | **Language()** |巴西里约热内卢 |“pt-BR” |
@@ -72,7 +72,7 @@ PowerApps 使用 [IETF BCP-47 语言标记](https://tools.ietf.org/html/bcp47)�
     对我们而言，只需要查看区域设置（而不是区域）的语言。  如果区域因素很重要，我们可以在上面的表中包含完整的语言标记值。 
 2. 使用“插入”功能区中的“表”命令，将其设置为正确的 Excel 表。  默认情况下，其名称为“Table1”，但随时可以使用最左侧的“表工具/设计”功能区和“表名称：”文本框对其重命名。
 3. 将 Excel 文件保存到本地文件系统。   
-4. 在 PowerApps 的右侧窗格中，单击或点击“数据源”选项卡，然后单击或点击“添加数据源”。
+4. 在 Power Apps 的右窗格中，单击或点击 "**数据源**" 选项卡，然后单击或点击 "**添加数据源**"。
 5. 单击或点击“将静态数据添加到应用”，然后单击或点击保存的 Excel 文件，最后单击或点击“打开”。
 6. 选择创建的表，然后单击或点击“连接”。
 
@@ -87,7 +87,7 @@ PowerApps 使用 [IETF BCP-47 语言标记](https://tools.ietf.org/html/bcp47)�
 ### <a name="translation-service"></a>翻译服务
 你可以根据需要使用翻译服务（如 Microsoft Translator 服务）来翻译文本：  
 
-1. 在 PowerApps 的右侧窗格中，单击或点击“数据源”选项卡，然后单击或点击“添加数据源”。
+1. 在 Power Apps 的右窗格中，单击或点击 "**数据源**" 选项卡，然后单击或点击 "**添加数据源**"。
 2. 单击或点击“Microsoft Translator”。
 
 在应用中之前使用过“Hello”的所有位置，现在使用以下公式：

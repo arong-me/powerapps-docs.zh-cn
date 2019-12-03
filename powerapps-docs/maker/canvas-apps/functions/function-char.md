@@ -1,6 +1,6 @@
 ---
 title: Char 函数 | Microsoft 文档
-description: PowerApps 中 Char 函数的参考信息（包括语法和示例）
+description: Power Apps 中 Char 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 099afb1e89d1551c6c6b969c3ae3688a3cdec777
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 641b22945dc6398e0f1ab57b03813eb7db02c79f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992943"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678410"
 ---
 # <a name="char-function-in-powerapps"></a>PowerApps 中的 Char 函数
 
@@ -60,7 +60,7 @@ ms.locfileid: "71992943"
     - **TemplateSize**：30
     - **TemplatePadding**：0
 
-    **Items**属性的值与第一个库中**Items**属性的 value 列所提供的列号（`ThisItem.Value` 中的0-7）相乘。 然后，该公式将结果添加到第二个库中的行号之一（0-15 在[**ForAll**](function-forall.md)函数提供的记录范围内）。
+    **Items**属性的值与第一个库中**Items**属性的 value 列所提供的列号（`ThisItem.Value`中的0-7）相乘。 然后，该公式将结果添加到第二个库中的行号之一（0-15 在[**ForAll**](function-forall.md)函数提供的记录范围内）。
 
 1. 在第二个（垂直）库中，添加 "**标签**" 控件，并设置以下属性：
 
