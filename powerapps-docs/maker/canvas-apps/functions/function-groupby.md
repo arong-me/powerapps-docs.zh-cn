@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6354862823122d332c7e70fba08829d3fc8147eb
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: c5b5ddf05201743a5ea4848793fcd05aea7def24
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985040"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680158"
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>PowerApps 中的 GroupBy 和 Ungroup 函数
 对[表](../working-with-tables.md)[记录](../working-with-tables.md#records)进行分组和取消分组。
@@ -42,7 +42,7 @@ ms.locfileid: "71985040"
 
 **Ungroup** 会尝试保留馈送至 **GroupBy** 的记录的初始顺序。  这并不总是可行（例如，当初始表包含 *空白* 记录时）。
 
-表是 PowerApps 中的一个值，与字符串或数字类似。 可以指定一个表作为函数的自变量，然后函数可返回一个表。 **GroupBy** 和 **Ungroup** 并不修改表，而是将表视为自变量，然后返回另一个表。 请参阅[使用表](../working-with-tables.md)，了解更多详情。
+表是 Power Apps 中的一个值，与字符串或数字类似。 可以指定一个表作为函数的自变量，然后函数可返回一个表。 **GroupBy** 和 **Ungroup** 并不修改表，而是将表视为自变量，然后返回另一个表。 请参阅[使用表](../working-with-tables.md)，了解更多详情。
 
 ## <a name="syntax"></a>语法
 GroupBy( Table, ColumnName1 [, ColumnName2, ... ], GroupColumnName )
