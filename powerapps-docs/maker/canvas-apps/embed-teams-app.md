@@ -1,6 +1,6 @@
 ---
 title: 在团队中嵌入应用 |Microsoft Docs
-description: 你可以在 Microsoft 团队中嵌入 PowerApps 中创建的应用进行共享。
+description: 你可以在 Microsoft 团队中嵌入在 Power Apps 中创建的应用来共享它。
 author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e2cce61533bf86063d907882024a5a83c2e03fb7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0b8750733ac6c97d1669c1063700a3d075fbabbe
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73539001"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678479"
 ---
 # <a name="embed-an-app-in-teams"></a>在 Teams 中嵌入应用
 
-你可以共享已创建的 PowerApps，只需要将其直接嵌入 Microsoft 团队即可。 完成后，用户可以选择 **+** 将你的应用添加到你所在团队中的**任意团队频道**或会话。 应用在**你的团队的选项卡**下显示为磁贴。
+可以通过将已创建的 Power Apps 直接嵌入 Microsoft 团队来共享这些应用。 完成后，用户可以选择 **+** 将你的应用添加到你所在团队中的**任意团队频道**或会话。 应用在**你的团队的选项卡**下显示为磁贴。
 
 管理员可以上传应用程序，使其显示在 "**所有选项卡" 部分**下的租户中的**所有**团队。 请参阅[在 Microsoft 团队中共享应用](https://docs.microsoft.com/power-platform/admin/embed-app-teams)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "73539001"
 
 ## <a name="prerequisites"></a>必备组件
 
-- 你需要有效的[PowerApps 许可证](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)。
+- 你需要有效的[Power Apps 许可证](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)。
 - 若要将应用嵌入到团队中，需要[使用 PowerApps 创建](data-platform-create-app.md)的现有应用。
 
 ## <a name="download-the-app"></a>下载应用程序
@@ -44,7 +44,7 @@ ms.locfileid: "73539001"
 
     ![应用详细信息](./media/embed-teams-app/add-to-teams.png "添加到团队")
 
-3. 在 "添加到团队" 面板中，选择 "**下载**"。 然后，PowerApps 将使用已在应用程序中设置的应用程序说明和徽标生成团队清单文件。
+3. 在 "添加到团队" 面板中，选择 "**下载**"。 然后，接下来，应用程序将使用已在应用程序中设置的应用说明和徽标生成团队清单文件。
 
     ![应用详细信息](./media/embed-teams-app/download-app.png "下载应用")
 
