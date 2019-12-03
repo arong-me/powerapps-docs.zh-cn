@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f4f6ea46cadc99039fe9c43c3422640ee25bb58f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0fbbb330a8594ce953530ece623472826be14891
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674575"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733007"
 ---
-# <a name="show-text-dates-and-times-in-powerapps"></a>在 PowerApps 中显示文本、日期和时间
+# <a name="show-text-dates-and-times-in-power-apps"></a>在 Power Apps 中显示文本、日期和时间
 在 Power Apps 中，在画布应用中添加日期和时间，并设置其格式以显示正确的详细级别或反映你的区域设置。 计算两个日期相差多少时间，或者计算一个日期，该日期比指定的日期早或晚一定的时间。 将日期转换成按年、月、日表示的不同值（或者反过来），以及将时间转换成按小时、分钟、秒表示的不同值（或者反过来）。
 
 例如，从用户添加有关股票交易或客户会议的数据、来自外部源的数据或在 Power Apps 中创建的其他应用的数据。 如果该数据包含的时间为毫秒级，则为了简单起见，可将其舍入为最接近的分钟。 计算还有多少天会发生重大事件。 如果需要每隔五天安排一次客户会议，可自动计算相关日期。 如果“1985 年 5 月 10 日”是按年、月、日存储在不同的字段中，可将其合并为一个值。 也可反过来将每个日期拆分成不同的值（如果应用是对其分别进行管理的）。
@@ -28,8 +28,8 @@ ms.locfileid: "74674575"
 ## <a name="prerequisites"></a>必备组件
 
 * [注册](../signup-for-powerapps.md)Power Apps，并[提供注册所](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)用的相同凭据。
-* 在 PowerApps 中创建一个应用，或打开一个现有应用。
-* 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
+* 在 Power Apps 中创建应用或打开现有应用。
+* 了解如何在 Power Apps 中[配置控件](add-configure-controls.md)。
 
 ## <a name="show-text-in-a-label-control"></a>在“标签”控件中显示文本
 在“[标签](controls/control-text-box.md)”控件中显示文本，方法是设置“[Text](controls/properties-core.md)”属性值。 设置此属性时，既可直接在控件中键入，也可在公式栏中键入表达式。
