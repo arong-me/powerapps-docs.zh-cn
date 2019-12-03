@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7ab695d461cb980556a3027297c3e7f5ac5bde61
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0f2f51596e8973bf41e26e4ed56df9f1c6e34844
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985522"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680296"
 ---
 # <a name="concurrent-function-in-powerapps"></a>PowerApps 中的 Concurrent 函数
 并发计算多个公式。
@@ -28,7 +28,7 @@ Concurrent 函数同时计算多个公式。 通常情况下，通过将多个�
 
 在应用的 [**OnStart**](../controls/control-screen.md) 属性中，使用 **Concurrent** 在应用程序加载数据时提高性能。 如果必须等到前一个调用完成才能启动数据调用，则应用必须等待所有请求时间之和。 如果数据调用都同时启动，应用只需等待最长请求的时间。 Web 浏览器通常通过同时执行数据操作提高性能。
 
-不能预测 Concurrent 函数中的公式开始和结束求值的顺序。 Concurrent 函数中的公式不应包含对同一 Concurrent 函数中其他公式的依赖项，如果尝试这么做，PowerApps 会显示错误。 在其中，可以安全接受对 Concurrent 函数之外公式的依赖项，因为它们会在 Concurrent 函数开始之前完成。 **并发**函数后的公式可以安全地对内的公式进行依赖关系：它们将在**并发**函数完成之前全部完成，并移到链中的下一个公式（如果使用的是 **;** 运算符）。 如果要调用有副作用的函数或服务方法，请注意细微的顺序依赖关系。
+不能预测 Concurrent 函数中的公式开始和结束求值的顺序。 **并发**函数内的公式不能包含与同一**并发**函数内的其他公式的依赖关系，并且如果尝试，电源应用会显示错误。 在其中，可以安全接受对 Concurrent 函数之外公式的依赖项，因为它们会在 Concurrent 函数开始之前完成。 **并发**函数后的公式可以安全地对内的公式进行依赖关系：它们将在**并发**函数完成之前全部完成，并移到链中的下一个公式（如果使用的是 **;** 运算符）。 如果要调用有副作用的函数或服务方法，请注意细微的顺序依赖关系。
 
 可以将公式与参数中的 **;** 运算符组合在一起以进行**并发**。 例如 Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) ) 将同时计算 Set( a, 1 ); Set( b, a+1 ) 和 Set( x, 2 ); Set( y, x+2 ) 在本例中，公式内的依赖项可正常运行：a 将在 b 前设置，x 将在 y 前设置。
 
@@ -49,7 +49,7 @@ Concurrent 函数同时计算多个公式。 通常情况下，通过将多个�
 
 1. 创建应用，然后从 Common Data Service、SQL Server 或 SharePoint 添加四个数据源。 
 
-    此示例使用来自 [SQL Azure 上的示例 Adventure Works 数据库](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal)的四个表。 创建数据库后，请使用完全限定的服务器名称（例如 srvname.database.windows.net）从 PowerApps 连接到它：
+    此示例使用来自 [SQL Azure 上的示例 Adventure Works 数据库](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal)的四个表。 创建数据库后，使用完全限定的服务器名称（例如 srvname.database.windows.net）从 Power Apps 连接到该数据库：
 
     ![连接到 Azure 中的 Adventure Works 数据库](media/function-concurrent/connect-database.png)
 
@@ -74,7 +74,7 @@ Concurrent 函数同时计算多个公式。 通常情况下，通过将多个�
 
 5. 保存、关闭并重新打开应用。
 
-    PowerApps 会缓存数据，因此再次选择该按钮不一定会产生四个新请求。 每次要测试性能时，都要关闭并重新打开应用。 如果打开了网络限制，最好将其关闭，直到准备好进行另一个测试。
+    Power Apps 缓存数据，因此再次选择该按钮不一定会导致四个新请求。 每次要测试性能时，都要关闭并重新打开应用。 如果打开了网络限制，最好将其关闭，直到准备好进行另一个测试。
 
 1. 添加第二个 **[按钮](../controls/control-button.md)** 控件，并将其 OnSelect 属性设置为以下公式：
 
@@ -149,4 +149,4 @@ Concurrent 函数同时计算多个公式。 通常情况下，通过将多个�
 
     在某些情况下，法语翻译比德语翻译快，有时则相反。 二者同时开始，但由于各种原因（包括网络延迟和服务器端处理），二者相继返回。
 
-    如果应用依赖于一种语言的翻译率先结束，将出现[争用条件](https://en.wikipedia.org/wiki/Race_condition)。 幸运的是，PowerApps 会标志它能检测到的大多数执行时间依赖项。
+    如果应用依赖于一种语言的翻译率先结束，将出现[争用条件](https://en.wikipedia.org/wiki/Race_condition)。 幸运的是，Power Apps 标记了它可以检测到的最多时间依赖关系。

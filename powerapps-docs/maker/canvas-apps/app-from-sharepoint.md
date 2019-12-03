@@ -1,6 +1,6 @@
 ---
 title: 从 SharePoint 列表中生成画布应用 | Microsoft Docs
-description: 在 PowerApps 中自动生成可管理 SharePoint 列表数据的画布应用
+description: 在 Power Apps 中，自动生成画布应用以管理 SharePoint 列表中的数据
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 50f84e06206a73c39feaee286ce1f4c9258c4958
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3181c00a4ef0836c043ee0402a29d3b7dadbef21
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541108"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678870"
 ---
-# <a name="generate-a-canvas-app-in-powerapps-from-a-sharepoint-list"></a>通过 SharePoint 列表在 PowerApps 中生成画布应用
+# <a name="generate-a-canvas-app-in-power-apps-from-a-sharepoint-list"></a>从 SharePoint 列表的 Power Apps 生成画布应用
 
-本主题介绍如何基于 SharePoint 列表中的项目使用 PowerApps 自动生成画布应用。 可以从 PowerApps 或 SharePoint Online 中生成该应用。 如果通过数据网关[连接到站点](connections/connection-sharepoint-online.md#create-a-connection)，则可以在 PowerApps 中通过本地 SharePoint 站点上的列表生成应用。
+在本主题中，你将使用 Power Apps 基于 SharePoint 列表中的项自动生成画布应用。 可以从 Power Apps 或 SharePoint Online 内生成应用。 在 Power Apps 中，你可以基于本地 SharePoint 站点中的列表生成应用（如果你通过数据网关[连接到该](connections/connection-sharepoint-online.md#create-a-connection)站点）。
 
 生成的应用将包含以下三个屏幕：
 
@@ -38,7 +38,7 @@ ms.locfileid: "73541108"
 即使创建更复杂的列表（包含更多的列，涵盖更多数据类型，例如文本、日期、数字和货币），也不会更改生成应用的原则。
 
 > [!IMPORTANT]
-> PowerApps 并不支持所有类型的 SharePoint 数据。 有关详细信息，请参阅 [已知问题](connections/connection-sharepoint-online.md#known-issues)。
+> Power Apps 不支持所有类型的 SharePoint 数据。 有关详细信息，请参阅 [已知问题](connections/connection-sharepoint-online.md#known-issues)。
 
 ## <a name="generate-an-app-from-within-powerapps"></a>在 PowerApps 中生成应用
 
@@ -80,7 +80,7 @@ ms.locfileid: "73541108"
 
     ![命名应用](./media/app-from-sharepoint/app-name.png)
 
-    此时会在 Web 浏览器中出现一个新的选项卡，其中显示根据你的 SharePoint 列表自动生成的应用。 应用出现在 PowerApps Studio 中，可以在其中进行自定义。
+    此时会在 Web 浏览器中出现一个新的选项卡，其中显示根据你的 SharePoint 列表自动生成的应用。 应用会出现在 Power Apps Studio 中，你可以在其中自定义应用。
 
     ![默认应用](./media/app-from-sharepoint/default-app.png)
 
@@ -93,10 +93,10 @@ ms.locfileid: "73541108"
 
     - 若要从 SharePoint 中删除视图，请选择“删除此视图”。
 
-        若要从 PowerApps 中删除应用，请[删除应用](delete-app.md)。
+        若要从电源应用删除应用，请[删除该应用](delete-app.md)。
 
 > [!NOTE]
-> 从 SharePoint 列表创建的应用当前不会显示在 PowerApps Mobile 中。
+> 从 SharePoint 列表创建的应用当前不会显示在 Power Apps Mobile 中。
 
 ## <a name="next-steps"></a>后续步骤
 本主题创建了一个应用，用于管理 SharePoint 列表中的数据。 下一步是通过更复杂的列表生成应用，并自定义该应用（从浏览屏幕开始）以更好地满足需求。

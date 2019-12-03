@@ -13,21 +13,21 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1fda14b7117334290c67d4d5727d93484ded7471
-ms.sourcegitcommit: 6c91c6dae20437f263e4eb827c6b938d6aa1b6a5
+ms.openlocfilehash: 6cda843ea95f79e907aa738a6546d63a6a3be270
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261958"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678847"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>PowerApps 画布应用连接器概述
-数据是大多数应用（包括在 PowerApps 中生成的应用）的关键所在。 数据存储在数据源中，应用是通过创建的连接来连接数据。 连接使用特定的连接器与数据源进行通信。 PowerApps 提供连接器，适用于许多常用服务和本地数据源，包括 SharePoint、SQL Server、Office 365、Salesforce 和 Twitter。 若要开始向画布应用添加数据，请参阅[在 PowerApps 中添加数据连接](add-data-connection.md)。
+数据是大多数应用程序（包括在 Power Apps 中构建的应用程序）的核心。 数据存储在数据源中，应用是通过创建的连接来连接数据。 连接使用特定的连接器与数据源进行通信。 Power Apps 为许多常用的服务和本地数据源（包括 SharePoint、SQL Server、Office 365、Salesforce 和 Twitter）提供了连接器。 若要开始向画布应用添加数据，请参阅[在 PowerApps 中添加数据连接](add-data-connection.md)。
 
 连接器可能会提供数据或操作的表。 某些连接器仅提供表，某些连接器仅提供操作，而某些连接器会提供两者。 此外，你的连接器可能是标准连接器或自定义连接器。
 
 ## <a name="tables"></a>表
 
-如果你的连接器提供表，则添加数据源，然后选择要管理的数据源中的表。 PowerApps 会将表数据检索到应用中并为你更新数据源中的数据。 例如，可以添加一个包含名为 Lessons 的表的数据源，然后在编辑栏中将控件的 Items 属性（如库或表单）设置为以下值：
+如果你的连接器提供表，则添加数据源，然后选择要管理的数据源中的表。 Power Apps 会将表数据检索到应用程序中，并为您更新数据源中的数据。 例如，可以添加一个包含名为 Lessons 的表的数据源，然后在编辑栏中将控件的 Items 属性（如库或表单）设置为以下值：
 
  ![纯数据源 Items 属性](./media/connections-list/ItemPropertyPlain.png)
 
@@ -58,7 +58,7 @@ ms.locfileid: "74261958"
 [Patch](functions/function-patch.md)<br>[Collect](functions/function-clear-collect-clearcollect.md)<br>[Update](functions/function-update-updateif.md)
 
 > [!NOTE]
->  **PowerApps 不能与动态架构**一起使用。 短语动态架构指的是相同操作可能返回具有不同列的其他表。 可能导致表中的列不同的情况包括操作输入参数、执行该操作的用户或角色、用户在其中工作的组以及其他人。 例如，如果以不同的输入运行，SQL Server 存储过程可能会返回不同的列。 对于动态架构的操作，连接器文档显示**此操作的输出是动态的。** 作为返回值。 与此相反，Power 自动功能适用于动态架构，并可能为你的方案提供了解决方法。
+>  **Power Apps 不适用于动态架构**。 短语动态架构指的是相同操作可能返回具有不同列的其他表。 可能导致表中的列不同的情况包括操作输入参数、执行该操作的用户或角色、用户在其中工作的组以及其他人。 例如，如果以不同的输入运行，SQL Server 存储过程可能会返回不同的列。 对于动态架构的操作，连接器文档显示**此操作的输出是动态的。** 作为返回值。 与此相反，Power 自动功能适用于动态架构，并可能为你的方案提供了解决方法。
 
 ## <a name="popular-connectors"></a>常用连接器
 
@@ -77,9 +77,9 @@ ms.locfileid: "74261958"
 \* * 适用于 Azure Blob、Box、Dropbox、Google Drive、OneDrive 和 OneDrive for business
 
 ## <a name="standard-and-custom-connectors"></a>标准和自定义连接器
-PowerApps 为多个常用数据源（如上面列出的数据源）提供标准连接器。 如果 PowerApps 的标准连接器适用于要使用的数据源的类型，则应使用该连接器。 如果要连接到其他类型的数据源（如已构建的服务），请参阅[注册和使用自定义连接器](../canvas-apps/register-custom-api.md)。
+Power Apps 为许多常用数据源（如上面列出的数据源）提供*标准*连接器。 如果 Power Apps 为要使用的数据源类型提供了标准连接器，则应使用该连接器。 如果要连接到其他类型的数据源（如已构建的服务），请参阅[注册和使用自定义连接器](../canvas-apps/register-custom-api.md)。
 
 ## <a name="all-standard-connectors"></a>所有标准连接器
-请参阅 [Microsoft 连接器参考](https://docs.microsoft.com/connectors/)，查看所有标准连接器的列表。 高级连接器需要具备 PowerApps 计划 1 或计划 2。 有关详细信息，请参阅 [PowerApps 计划](https://powerapps.microsoft.com/pricing/)。
+请参阅 [Microsoft 连接器参考](https://docs.microsoft.com/connectors/)，查看所有标准连接器的列表。 高级连接器需要 Power Apps 计划1或计划2。 有关详细信息，请参阅[电源应用计划](https://powerapps.microsoft.com/pricing/)。
 
-你可以在 [PowerApps 论坛](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)中提出有关具体连接器的问题，也可以建议添加连接器或在 [PowerApps 建议](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas)中做出其他改进。
+可以在[Power apps 论坛](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)中提问有关特定连接器的问题，还可以建议连接器添加或其他改进功能以在[电源应用程序](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas)中进行学习。

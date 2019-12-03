@@ -1,6 +1,6 @@
 ---
 title: 画布应用有哪些？ | Microsoft Docs
-description: 在 PowerApps 中设计并构建画布应用后，用户可在浏览器或其移动设备中管理业务线数据
+description: 在 Power Apps 中设计和构建画布应用，以便用户可以在浏览器或其移动设备上管理业务线数据
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8b352cb4a30c090d01b2ec1b34fa8ba119265204
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 600e474117290c5f52793c1d9c3ec72aefc35783
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541265"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676648"
 ---
-# <a name="what-are-canvas-apps-in-powerapps"></a>PowerApps 中的画布应用有哪些？
-在 Microsoft PowerApps 中通过画布设计和构建业务应用，无需以传统计算机语言（如 C#）编写代码。 通过将元素拖放到画布来设计应用，就像在 PowerPoint 中设计幻灯片一样。 创建用于指定逻辑和处理数据的 Excel 类表达式。 构建应用，这些应用可与[丰富多样的 Microsoft 和第三方源](connections-list.md)中的业务数据集成。 共享应用，以便用户可在浏览器或移动设备中运行；嵌入应用，以便用户可在 SharePoint、Power BI 或 Teams 中运行。
+# <a name="what-are-canvas-apps-in-power-apps"></a>什么是 Power Apps 中的画布应用？
+通过 Microsoft Power Apps 中的画布设计和构建业务应用，无需以传统编程语言（例如） C#编写代码。 通过将元素拖放到画布来设计应用，就像在 PowerPoint 中设计幻灯片一样。 创建用于指定逻辑和处理数据的 Excel 类表达式。 构建应用，这些应用可与[丰富多样的 Microsoft 和第三方源](connections-list.md)中的业务数据集成。 共享应用，以便用户可在浏览器或移动设备中运行；嵌入应用，以便用户可在 SharePoint、Power BI 或 Teams 中运行。
 
 如果不需要自定义设计并且数据位于 Common Data Service 中，则可以从业务数据和流程中自动生成模型驱动的应用。 此类型的应用可生成格式、视图和其他组件模型，并且默认 UI 将自动调整以适应手机、笔记本电脑和其他设备。 有关此类型应用的详细信息，请参阅[创建模型驱动的应用概述](../model-driven-apps/model-driven-app-overview.md)。
 
@@ -33,9 +33,9 @@ ms.locfileid: "73541265"
 - [SharePoint](app-from-sharepoint.md)
 - [Excel](get-started-create-from-data.md)
 
-[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) PowerApps，然后选择“从数据开始”或示例应用，例如“服务台”或“预算跟踪器”。
+[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到电源应用，然后选择 "**从数据启动**" 或从示例应用（如**服务台**或**预算跟踪**器）中启动。
 
-![PowerApps 站点](./media/getting-started/create-page-samples.png)
+![Power Apps 站点](./media/getting-started/create-page-samples.png)
 
 自动生成应用后，基于用户工作流，自定义应用默认外观和行为。 例如，更改显示的数据类型、数据的排序方式甚至是用户指定数字的方法（直接键入数字或者调整滑块）。 添加并自定义[屏幕](add-screen-context-variables.md)、[库](customize-layout-sharepoint.md)、[格式](customize-forms-sharepoint.md)和其他控件。
 
@@ -52,9 +52,9 @@ ms.locfileid: "73541265"
 * 查看用于最大程度地提高应用程序性能的[编码标准](https://aka.ms/powerappscanvasguidelines)，并使应用更易于维护。
 
 ## <a name="share-your-experience"></a>共享你的体验
-* 在 [PowerApps 社区](https://aka.ms/powerapps-community)中阅读和发布内容，在此社区中任何 PowerApps 用户都可以发布问题，以供他人回答。 发布问题前，请先搜索此社区，看看自己的问题是否已经有人回答。
-* 可在 [PowerApps Ideas](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas) 上向我们反馈该如何改进 PowerApps，将想法告诉我们。
-* 创建[支持票证](https://powerapps.microsoft.com/support/pro/)，以获取技术帮助。 如果是组织的 PowerApps 管理员，也可以在 [PowerApps 管理中心](https://admin.microsoft.com/Support/Support.aspx)中打开支持票证。
+* 在[Power Apps 社区](https://aka.ms/powerapps-community)中阅读和发布，其中使用电源应用的任何人都可以发布问题，其他人可以回答。 发布问题前，请先搜索此社区，看看自己的问题是否已经有人回答。
+* 提交有关如何改进[Power apps](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas)中的 power apps 的理念。
+* 创建[支持票证](https://powerapps.microsoft.com/support/pro/)，以获取技术帮助。 如果你是组织的 Power Apps 管理员，则还可以在[Power apps 管理中心](https://admin.microsoft.com/Support/Support.aspx)中打开支持票证。
 
 ## <a name="next-steps"></a>后续步骤
 - [注册免费许可证。](../signup-for-powerapps.md)

@@ -1,5 +1,5 @@
 ---
-title: 预览版：在应用程序中嵌入画布应用 |Microsoft Docs
+title: 预览：在应用程序中嵌入画布应用 |Microsoft Docs
 description: 在 PowerApps 中使用新的嵌入 SDK 在应用程序中嵌入画布应用
 author: nkrb
 manager: kvivek
@@ -12,18 +12,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 74bd5102703809883732fd498a587a31d669f4b2
-ms.sourcegitcommit: 6dea3559e012e56fde09b95ea8a2af2a81b89a91
+ms.openlocfilehash: fb2b04c50f8af17ec341c539c6c55d0f4c3a5bee
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000069"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679399"
 ---
-# <a name="preview-embed-canvas-apps-in-your-applications"></a>预览版：在应用程序中嵌入画布应用
+# <a name="preview-embed-canvas-apps-in-your-applications"></a>预览：在应用程序中嵌入画布应用
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-PowerApps 具有高效率, 是一种低代码开发平台, 可让应用程序开发人员并使任何人都能够生成丰富的体验。 通过在应用程序中嵌入 canvas 应用, 可以快速轻松地将客户转换为应用制造商。 新的应用程序制造商可以扩展您的应用程序, 使其创建简单的自定义窗体, 以添加功能丰富的屏幕以及两者之间的一切 他们可以从应用程序中连接到数据、创建业务逻辑和协调工作流。 通过使您的客户能够充当应用程序制定者, 您的应用程序和服务最终可以跨越最后一英里的时间, 并将其完美地放入客户的工作流, 使其更加宝贵和不必要。
+强大的应用程序具有高效率，是一种低代码开发平台，可提供应用程序并使任何人都能够构建丰富的体验。 通过在应用程序中嵌入 canvas 应用，可以快速轻松地将客户转换为应用制造商。 新的应用程序制造商可以扩展您的应用程序，使其创建简单的自定义窗体，以添加功能丰富的屏幕以及两者之间的一切 他们可以从应用程序中连接到数据、创建业务逻辑和协调工作流。 通过使您的客户能够充当应用程序制定者，您的应用程序和服务最终可以跨越最后一英里的时间，并将其完美地放入客户的工作流，使其更加宝贵和不必要。
 
 新的画布应用嵌入 SDK 使你能够在应用程序中嵌入画布应用。 
 
@@ -33,7 +33,7 @@ PowerApps 具有高效率, 是一种低代码开发平台, 可让应用程序开
 
 ## <a name="using-the-canvas-apps-embedding-sdk-and-documentation"></a>使用画布应用嵌入 SDK 和文档
 
-若要了解如何下载和使用画布应用嵌入 SDK, 请在[此处](https://download.microsoft.com/download/e/6/0/e605470b-c6f4-461c-92e7-936091bf7e3c/CanvasApps-Embedding-SDK-PublicPreview.pdf)下载文档。
+若要了解如何下载和使用画布应用嵌入 SDK，请在[此处](https://download.microsoft.com/download/e/6/0/e605470b-c6f4-461c-92e7-936091bf7e3c/CanvasApps-Embedding-SDK-PublicPreview.pdf)下载文档。
 
 
 

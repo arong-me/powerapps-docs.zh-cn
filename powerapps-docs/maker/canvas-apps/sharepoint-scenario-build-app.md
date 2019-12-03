@@ -13,24 +13,24 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: aa927559c13726bd2d780c7ce3841c5a53317c8f
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 6b135f29ac020f933e4bc2c8276c3fa74d6fd762
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899217"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674996"
 ---
 # <a name="create-a-canvas-app-to-manage-projects"></a>创建用于管理项目的画布应用
 > [!NOTE]
-> 本文是有关将 PowerApps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> 本文是有关将 Power Apps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
 在此任务中，我们将从头开始构建画布应用。 使用此应用，用户可以分配项目经理并更新项目详细信息。 将看到第一个应用中的一些相同控件和公式，但这次更多的是自己生成应用。 虽然此过程更加复杂，但将能学到更多知识，所以我们认为这样的取舍很公平。
 
 > [!TIP]
 > 这个方案的[下载包](https://aka.ms/o4ia0f)包含此应用的最终版本 (project-details-app.msapp)。
 
-## <a name="quick-review-of-powerapps-studio"></a>快速回顾 PowerApps Studio
-PowerApps Studio 有三个窗格和一个功能区，可以在其中创建应用，就像在 PowerPoint 中创建幻灯片一样：
+## <a name="quick-review-of-power-apps-studio"></a>Power Apps Studio 快速查看
+Power Apps Studio 有三个窗格和一个功能区，使应用创建起来类似于在 PowerPoint 中构建幻灯片面板：
 
 1. 左侧导航栏：可以显示所有应用屏幕和控件的分层视图，也可以显示屏幕缩略图
 2. 中间窗格：包含正在处理的应用屏幕
@@ -39,13 +39,13 @@ PowerApps Studio 有三个窗格和一个功能区，可以在其中创建应用
 5. 编辑栏：可用于添加公式来定义应用行为（就像在 Excel 中一样）
 6. 功能区：可用于添加控件和自定义设计元素
 
-![PowerApps Studio](./media/sharepoint-scenario-build-app/04-00-00-powerapps-studio.png)
+![Power Apps Studio](./media/sharepoint-scenario-build-app/04-00-00-powerapps-studio.png)
 
 ## <a name="step-1-create-screens"></a>第 1 步：创建屏幕
 在进行上面的回顾后，我们将开始生成应用。
 
 ### <a name="create-and-save-the-app"></a>创建并保存应用
-1. 在 PowerApps Studio 中，依次单击或点击“新建”和“空白应用”下的“手机布局”。
+1. 在 Power Apps Studio 中，单击或点击 "**新建**"，然后在 "**空白应用**" 下，单击或点击 "**手机布局**"。
    
     ![空白应用 -> 手机布局](./media/sharepoint-scenario-build-app/04-01-01-blank-phone-app.png)
 2. 单击或点击 "**文件**"，打开 "**应用设置**" 选项卡。输入名称 "项目管理应用"。
@@ -114,7 +114,7 @@ PowerApps Studio 有三个窗格和一个功能区，可以在其中创建应用
     ![“数据源”选项卡](./media/sharepoint-scenario-build-app/04-02-06-data-sources.png)
 
 ## <a name="step-3-build-the-selecttask-screen"></a>第 3 步：生成“SelectTask”屏幕
-在这一步中，我们将使用 PowerApps 提供的一些控件、公式和格式化选项，提供一种可转到应用中其他屏幕的途径。
+在此步骤中，我们将提供一种方法，用于在应用中导航到其他屏幕-使用 Power Apps 提供的一些控件、公式和格式设置选项。
 
 ### <a name="update-the-title-and-insert-introductory-text"></a>更新标题并插入介绍性文字
 1. 在左侧导航栏中，选择“SelectTask”屏幕。
@@ -161,7 +161,7 @@ PowerApps Studio 有三个窗格和一个功能区，可以在其中创建应用
 ### <a name="run-the-app"></a>运行应用
 虽然应用尚不能执行许多操作，但可以根据需要运行应用：
 
-1. 单击或点击“SelectTask”屏幕（应用始终以 PowerApps Studio 预览模式中的选定屏幕为起始屏幕）。
+1. 单击或点击 " **SelectTask** " 屏幕（应用始终在 Power Apps Studio 的预览模式下从所选屏幕开始）。
 
 2. 单击或点击右上角的 ![“运行应用”图标](./media/sharepoint-scenario-build-app/icon-run-arrow.png) ，运行应用。
 
@@ -410,9 +410,9 @@ PowerApps Studio 有三个窗格和一个功能区，可以在其中创建应用
 ### <a name="add-a-link-to-the-app"></a>添加应用链接
 1. 在 Office 365 应用启动器中，单击或点击“PowerApps”。
    
-    ![Office 365 应用启动器中的“PowerApps”](./media/sharepoint-scenario-build-app/04-07-02a-waffle.png)
+    ![Office 365 应用启动器中的 Power Apps](./media/sharepoint-scenario-build-app/04-07-02a-waffle.png)
 
-2. 在 PowerApps 中，依次单击或点击“项目管理应用”旁边的省略号 (...) 和“打开”。
+2. 在 Power Apps 中，单击或点击 "**项目管理应用**" 的省略号（ **...** ），然后单击 "**打开**"。
    
     ![选择“项目管理应用”](./media/sharepoint-scenario-build-app/04-07-02b-select-app.png)
 
@@ -494,7 +494,7 @@ PowerApps Studio 有三个窗格和一个功能区，可以在其中创建应用
     ![更新后的 SharePoint 列表](./media/sharepoint-scenario-build-app/04-07-11-updated-list.png)
 
 ## <a name="formula-deep-dive"></a>公式详解
-这是第二个有关 PowerApps 公式的选读部分。 在第一个公式详解部分中，我们探究了 PowerApps 为三屏应用中的浏览库生成的公式之一。 在本次详解中，我们将探究对第二个应用的“AssignManager”屏幕使用的公式。 公式如下：
+这是有关 Power Apps 公式的第二个可选部分。 首先，我们在三个屏幕的应用程序中查看了 Power Apps 为浏览库生成的一个公式。 在本次详解中，我们将探究对第二个应用的“AssignManager”屏幕使用的公式。 公式如下：
 
 **Patch （' Project Details '，LookUp （' Project Details '，ID = Gallery1.Selected.ID），{PMAssigned： TextInput1}）**
 

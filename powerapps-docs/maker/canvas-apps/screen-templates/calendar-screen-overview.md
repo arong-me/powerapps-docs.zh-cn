@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9ca7e5f14508a2dcd70967e77b29989819bfe7ba
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 945a4fd3c017363a8c43171c8e891e0c32c84a0f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541599"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675224"
 ---
 # <a name="overview-of-the-calendar-screen-template-for-canvas-apps"></a>用于画布应用的日历屏幕模板概述
 
@@ -42,7 +42,7 @@ ms.locfileid: "73541599"
 
 从模板添加日历屏幕：
 
-1. [登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 PowerApps，然后在 PowerApps Studio 中创建应用或打开现有应用。
+1. [登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 power apps，然后在 Power apps Studio 中创建应用或打开现有应用。
 
     本主题演示了一个手机应用，但相同的概念也适用于平板电脑应用。
 
@@ -210,7 +210,7 @@ ms.locfileid: "73541599"
 1. 在灵活高度库中，添加 "**标签**" 控件和 " **HTML 文本**" 控件，并将 " **AutoHeight** " 属性设置为 " **true**"。
 
     > [!NOTE]
-    > PowerApps 以 HTML 文本形式检索每个事件的消息正文，因此需要在**html 文本**控件中显示该内容。
+    > Power Apps 以 HTML 文本形式检索每个事件的消息正文，因此需要在**html 文本**控件中显示该内容。
 
 1. 将**HTML 文本**控件的**Y**属性设置为以下表达式：
 
@@ -233,7 +233,7 @@ ms.locfileid: "73541599"
     )
     ```
 
-    此公式将创建一个动态数据库，这些数据设置为 **_selectedCalendarEvent**的字段值，每次用户在**CalendarEventsGallery**控件中选择一个事件时，将设置此值。 您可以通过向此库添加更多标签来扩展此库以包含更多字段，但这会提供一个很好的起点。
+    此公式将创建一个动态数据库，其设置为 **_selectedCalendarEvent**的字段值，每次用户在**CalendarEventsGallery**控件中选择一个事件时，都会设置此值。 您可以通过向此库添加更多标签来扩展此库以包含更多字段，但这会提供一个很好的起点。
 
 1. 将库项设置为就地后，将 "**标签**" 控件的 " **Text** " 属性设置为 "`ThisItem.Title`"，并将**HTML 文本**控件的 " **HtmlText** " 属性设置为 "`ThisItem.Value`"。
 
@@ -306,11 +306,11 @@ ms.locfileid: "73541599"
     ```
     此公式大致确定与会者是否在你的组织中。 **_UserDomain**的定义只是在运行应用程序的用户的电子邮件地址中的域 URL。 此行在**AttendeeEmailsTemp**集合中创建一个名为**InOrg**的额外 true/false 列。 如果**userDomain**等效于**AttendeeEmailsTemp**特定行中的电子邮件地址的域 URL，则此列包含**true** 。
 
-    此方法并非总是准确的，但会非常接近。 例如，你所在组织中的某些与会者可能有类似 Jane@OnContoso.com的电子邮件地址，而 **_userDomain**为 Contoso.com。 应用用户和 Jane 可能在同一公司工作，但其电子邮件地址略有不同。 对于这种情况，可能需要使用以下公式：
+    此方法并非总是准确的，但会非常接近。 例如，你所在组织中的某些与会者可能有类似 Jane@OnContoso.com的电子邮件地址，而 **_userDomain**是 Contoso.com。 应用用户和 Jane 可能在同一公司工作，但其电子邮件地址略有不同。 对于这种情况，可能需要使用以下公式：
 
     `Upper(_userDomain) in Upper(Right(Result, Len(Result) - Find("@", Result)))`
 
-    但是，此公式匹配电子邮件地址，Jane@NotTheContosoCompany.com 例如 **_userDomain** （如 Contoso.com），这些人在同一公司不起作用。
+    但是，此公式会将类似于 Jane@NotTheContosoCompany.com 的电子邮件地址与 **_userDomain** （如 Contoso.com）进行匹配，而这些人在同一公司工作不起作用。
 
 - ClearCollect （MyPeople）
 

@@ -1,5 +1,5 @@
 ---
-title: 为 SharePoint Online 与 PowerApps、Power 自动功能和 Power BI 的集成设置列表 |Microsoft Docs
+title: 设置列表以便与电源应用、电源自动执行和 Power BI 的 SharePoint Online 集成 |Microsoft Docs
 description: 在此任务中，我们将创建 SharePoint 列表，以用作应用、流、报表和仪表板的数据源。
 author: NickWaggoner
 manager: kvivek
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ec34399818120464a2ad2caca5834baa87d8a25c
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: c1b2e7dc4bb3f56983ddcdec39ecf7d37a283754
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899167"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674724"
 ---
-# <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-power-automate-and-power-bi"></a>设置用于 SharePoint Online 与 PowerApps、Power 自动化和 Power BI 的集成列表
+# <a name="set-up-lists-for-sharepoint-online-integration-with-power-apps-power-automate-and-power-bi"></a>设置用于 SharePoint Online 集成的列表、电源自动功能和 Power BI
 > [!NOTE]
-> 本文是有关将 PowerApps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
+> 本文是有关将 Power Apps、Power 自动功能和 Power BI 与 SharePoint Online 结合使用的系列教程的一部分。 请确保已阅读[系列介绍](sharepoint-scenario-intro.md)，了解总体情况以及相关下载内容。
 
 SharePoint 具有大量共享和协作功能，但对于此方案，我们将重点关注其中一种功能，即 [SharePoint 列表](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7)。 列表就是一系列可以与团队成员和其他网站用户共享的数据。 我们将回顾一下用于此方案的列表，以便你可以在自己的 SharePoint Online 网站中创建列表。
 
@@ -40,7 +40,7 @@ SharePoint 具有大量共享和协作功能，但对于此方案，我们将重
 | Approved |单行文本 |值：pending、yes、no |
 
 > [!NOTE]
-> 还使用由 SharePoint 生成且默认隐藏的“ID”列。 为简单起见，我们使用基本的数据类型，但实际应用可能会使用更为复杂的类型，如“Requestor”列的“Person or Group”类型。 若要了解 PowerApps 支持的数据类型，请参阅[从 Microsoft PowerApps 到 SharePoint 的连接](connections/connection-sharepoint-online.md#known-issues)。
+> 还使用由 SharePoint 生成且默认隐藏的“ID”列。 为简单起见，我们使用基本的数据类型，但实际应用可能会使用更为复杂的类型，如“Requestor”列的“Person or Group”类型。 有关电源应用支持的数据类型的信息，请参阅[从 Microsoft Power Apps 连接到 SharePoint](connections/connection-sharepoint-online.md#known-issues)。
 
 第二个列表是“项目详细信息”列表，用于跟踪所有已获准项目的详细信息，如已分配的项目经理。
 
@@ -112,15 +112,15 @@ SharePoint 具有大量共享和协作功能，但对于此方案，我们将重
 
 ### <a name="update-connections-for-the-sample-apps"></a>为示例应用更新连接
 
-1. 在[PowerApps Studio](https://create.powerapps.com/studio/)，单击或点击**打开**的左窗格中。 
+1. 在[Power Apps Studio](https://create.powerapps.com/studio/)的左窗格中，单击或点击 "**打开**"。 
 
 2. 单击或点击“浏览”，再打开下载的“project-management-app.msapp”文件。
 
-3. 单击或点击“允许”，以便 PowerApps 可以使用 SharePoint。
+3. 单击或点击 "**允许**"，以便 Power Apps 可以使用 SharePoint。
 
 4. 在功能区中的“视图”选项卡上，单击或点击“数据源”。
 
-    ![PowerApps 数据源](./media/sharepoint-scenario-setup/01-03-01-data-sources.png)
+    ![Power Apps 数据源](./media/sharepoint-scenario-setup/01-03-01-data-sources.png)
 5. 在“数据”面板中，依次单击或点击“项目详细信息”旁边的省略号 (...) 和“删除”。
    
     ![删除“项目详细信息”数据源](./media/sharepoint-scenario-setup/01-03-02-remove.png)
@@ -128,7 +128,7 @@ SharePoint 具有大量共享和协作功能，但对于此方案，我们将重
    
     ![添加数据源](./media/sharepoint-scenario-setup/01-03-03-add.png)
 
-7. 接下来，将介绍两种连接到列表的方式，具体取决于 PowerApps 是否已建立 SharePoint 连接： 
+7. 我们将介绍两种连接到该列表的方法，具体取决于 Power Apps 是否已为你建立 SharePoint 连接： 
 
     * 如果已看到 SharePoint 连接，请单击或点击此连接。
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bcadf4abfd55a317cf67196c9ba2158a001a015a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: eed7a0bd6b9ee269877b6dfe4fcfd5bc6c56e3af
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541140"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678801"
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>从 PowerApps 连接到 SQL Server
 ![SQL Server 图标](./media/connection-azure-sqldatabase/sqlicon.png)
@@ -27,7 +27,7 @@ ms.locfileid: "73541140"
 
 ## <a name="prerequisites"></a>必备组件
 
-* [注册](../../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+* [注册](../../signup-for-powerapps.md)Power Apps，并[提供注册所](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)用的相同凭据。
 * 使用主键收集包含至少一个表的数据库的以下信息：
   
   * 数据库的名称
@@ -42,7 +42,7 @@ ms.locfileid: "73541140"
   > 只能在用户的[默认环境](../working-with-environments.md)中创建和使用网关和本地连接。
 
 ## <a name="generate-an-app-automatically"></a>自动生成应用
-1. 在 PowerApps Studio 中，单击或点击“文件”菜单（沿左边缘）上的“新建”。
+1. 在 Power Apps Studio 中，单击或点击 "**文件**" 菜单（沿左边缘）上的 "**新建**"。
    
     ![“文件”菜单上的“新建”选项](./media/connection-azure-sqldatabase/file-new.png)
 2. 在“开始处理数据”下，单击或点击连接器行末尾的右箭头。
@@ -64,7 +64,7 @@ ms.locfileid: "73541140"
 6. 单击或点击“连接”。
 7. 单击或点击“选择数据集”下的选项，单击或点击“选择表”下的选项，然后单击或点击“连接”。
    
-    PowerApps 可创建在三个屏幕中显示数据的应用。 启发会建议显示的数据属性，但可能需要自定义 UI 以满足你的需求。
+    Power Apps 创建一个在三个屏幕上显示数据的应用。 启发会建议显示的数据属性，但可能需要自定义 UI 以满足你的需求。
 8. 通过使用类似[通过 Excel 创建应用](../get-started-create-from-data.md)中介绍的技术来自定义应用，开始更改应用布局。
 
 ## <a name="build-an-app-from-scratch"></a>从头开始构建应用
@@ -88,7 +88,7 @@ ms.locfileid: "73541140"
 6. 通过使用类似[从头开始创建应用](../get-started-create-from-blank.md)中介绍的技术来创建应用。
 
 ## <a name="update-an-existing-app"></a>更新现有应用
-1. 在 PowerApps Studio 中，打开想要更新的应用。
+1. 在 Power Apps Studio 中，打开要更新的应用。
 2. 在功能区中的“视图”选项卡上，单击或点击“数据源”。
 3. 单击或点击右侧窗格中的“添加数据源”。
    

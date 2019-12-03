@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5883e5f091d5454b00aead80a9daf919a2bcfc2c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 56e5ec7f303706ded114655e5c6d473408e9ddd7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994293"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680020"
 ---
 # <a name="create-accessible-canvas-apps-in-powerapps"></a>在 PowerApps 中创建提供辅助功能的画布应用
 如果画布应用提供辅助功能，那么有视障、听障和其他障碍的用户就能够成功地使用应用。  除了遵守许多政府和组织的要求外，遵守下面的指南可以让所有用户都用起来更加方便，无论他们是否有残障。
@@ -26,7 +26,7 @@ ms.locfileid: "71994293"
 使用[辅助功能检查器](accessibility-checker.md)来帮助检查应用中的潜在辅助功能问题。 
 
 ## <a name="layout-and-color"></a>布局和颜色
-符合常理的不复杂设计有助于确保所有用户都能更轻松地使用应用。  若要大量自定义应用，请遵循以下建议。  默认情况下，PowerApps 主题可方便所有用户都轻松使用。
+符合常理的不复杂设计有助于确保所有用户都能更轻松地使用应用。  若要大量自定义应用，请遵循以下建议。  默认情况下，Power Apps 主题是可访问的。
 - 确保所有元素都清晰可见，且文本大小适当。  所有内容都必须可用肉眼轻松阅读和理解。
 - 避免使用项的可见性属性来显示元素。  如果需要有条件地显示内容，请在新屏幕中创建内容，并来回导航到它。
 - 确保输入元素在屏幕上有标签。 [AccessibilityLabel](controls/properties-accessibility.md) 属性定义了屏幕阅读器将读出的内容。
@@ -42,12 +42,12 @@ ms.locfileid: "71994293"
 - 避免将选项卡索引值设置为大于零。
 
 ## <a name="screen-reader-support"></a>屏幕阅读器支持
-若要结合使用 PowerApps 和屏幕阅读器，支持的软件组合如下：
+以下软件组合是对使用屏幕阅读器来使用电源应用的受支持的建议：
 
-- **Windows**：Microsoft Edge/讲述人
+- **Windows**： Microsoft Edge/讲述人
 - **macOS**：Safari/VoiceOver
-- **Android**：PowerApps 应用/Talkback
-- **iOS**：PowerApps 应用/VoiceOver
+- **Android**： Power Apps 应用/Talkback
+- **iOS**： Power Apps 应用/VoiceOver
 
 为了确保令人满意的屏幕阅读器使用体验，建议执行以下操作：
 

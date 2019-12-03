@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7b6f1056a6d2b5ceaf1fcefe1ccc7d583470450c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f2b401fb4054d63e19b1dcab29cbabf27cc3c117
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541716"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674629"
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>如何在 Excel 文件中保存图像，并将其添加到你的应用
 
@@ -49,7 +49,7 @@ ms.locfileid: "73541716"
 3. 将 Excel 文件命名为 **SavePen.xlsx**，然后将文件保存到云存储帐户（OneDrive for Business、Dropbox 等）。
 
 ## <a name="create-an-app-with-the-pen-control"></a>使用笔控件创建应用
-1. 在 PowerApps 中，创建一个[空白应用](get-started-create-from-blank.md)。
+1. 在 Power Apps 中，创建一个[空白应用](get-started-create-from-blank.md)。
 2. 在你的应用中，添加云存储帐户作为[数据源](add-data-connection.md)。 在添加为数据源后，添加 **SavePen.xlsx** 作为连接，然后选择“绘图”表格：  
    ![连接](./media/tutorial-working-with-images-in-excel/savepen.png)  
    
@@ -77,7 +77,7 @@ ms.locfileid: "73541716"
 在本示例中，我们使用包含一些 .jpeg 文件的 [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)。
 
 > [!NOTE]
-> 显示 Excel 文件中的图像时，这些图像的路径必须使用正斜线。 当 PowerApps 将图像保存到 Excel 表格时（如上述步骤所述），路径将使用反斜杠。 因此，还可以使用前面示例中的 **SavePen_images**。 如果这样做，请将 Excel 表格中路径的反斜杠改为正斜杠。 否则将不会显示图像。  
+> 显示 Excel 文件中的图像时，这些图像的路径必须使用正斜线。 当 Power Apps 将图像保存到 Excel 表（如前面的步骤所示）时，路径将使用反斜杠。 因此，还可以使用前面示例中的 **SavePen_images**。 如果这样做，请将 Excel 表格中路径的反斜杠改为正斜杠。 否则将不会显示图像。  
 
 1. 下载 [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)，并将 **Assets** 文件夹提取到云存储帐户。
 2. 在 Excel 电子表格中创建一个与下表类似的表格：

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bbc6111800a817ecb71eec60fdba1d2dabd6c698
-ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
+ms.openlocfilehash: 06c3a02d1ea3943f64661334ca419f6f205e8b7e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73741502"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675817"
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>在画布应用中创建订单库
 
@@ -48,10 +48,10 @@ ms.locfileid: "73741502"
     > [!div class="mx-imgBorder"]
     > "从空白 ![画布应用" 对话框](media/northwind-orders-canvas-part1/start-02.png)
 
-    PowerApps Studio 随即打开，以便你可以向应用程序中添加数据源和控件：
+    打开 Power Apps Studio 后，可以将数据源和控件添加到应用：
 
     > [!div class="mx-imgBorder"]
-    > ![PowerApps Studio](media/northwind-orders-canvas-part1/start-03.png)
+    > ![Power Apps Studio](media/northwind-orders-canvas-part1/start-03.png)
 
 ## <a name="add-the-data"></a>添加数据
 
@@ -77,7 +77,7 @@ ms.locfileid: "73741502"
 
     每个字段都有一个**显示名称**和一个**名称**，该名称有时称为逻辑名称。 这两个名称引用相同的内容。 通常情况下，在生成应用时将使用显示名称，但某些情况下需要的**名称**越多，如过程中所述。
 
-1. 由于我们将使用屏幕和控件，接下来，通过按下三个堆积正方形图标 PowerApps Studio 切换回左侧的**树视图**。 您可以通过按圆柱体图标随时返回到**数据源**。
+1. 由于我们将使用屏幕和控件，接下来，在 Power Apps Studio 中，通过按三个堆积正方形图标切换回左侧的**树视图**。 您可以通过按圆柱体图标随时返回到**数据源**。
 
 ## <a name="create-the-order-gallery"></a>创建订单库
 
@@ -203,7 +203,7 @@ ms.locfileid: "73741502"
 
     如果在标签中显示某个集合中的每个选项，则会显示该名称。 可以对这些名称进行本地化，应用可识别相同的选项，无论是英语用户选择**Apple**、法语用户还是选择**Pomme**，还是西班牙语用户选择**Manzana**。 因此，不能创建依赖于某个选项的硬编码字符串的公式，如本主题后面所示。
 
-    在公式中，必须将**订单状态**括在单引号中，因为它包含空格。 但是，此名称的工作方式与 PowerApps 中任何其他名称（如**Customer**或**Company**）相同。
+    在公式中，必须将**订单状态**括在单引号中，因为它包含空格。 但是，此名称的工作方式与 Power Apps 中的任何其他名称（如**Customer**或**Company**）的工作方式相同。
 
 1. 在 "**主页**" 选项卡上，将状态标签的字体大小增加到20个点，然后右对齐文本：
 
@@ -224,7 +224,7 @@ ms.locfileid: "73741502"
     > [!div class="mx-imgBorder"]
     > ![设置状态标签的 "颜色" 属性](media/northwind-orders-canvas-part1/status-08.png)
 
-    PowerApps 禁止您创建一个公式，该公式依赖于集中每个选项的硬编码字符串，因为如果选项名称已本地化，则这些公式可能会产生不适当的结果。 相反， **Switch**函数基于用户的设置来确定标签中显示的任何字符串的颜色。
+    Power Apps 使你无法创建一个公式，该公式依赖于集中每个选项的硬编码字符串，因为当选项名称已本地化时，此类公式可能会产生不正确的结果。 相反， **Switch**函数基于用户的设置来确定标签中显示的任何字符串的颜色。
 
     设置此公式后，不同的状态值以不同的颜色显示，如上图所示。
 
@@ -258,7 +258,7 @@ ms.locfileid: "73741502"
 
     此公式显示蓝色下划线和[委托警告](delegation-overview.md)，因为 Common Data Service 不支持对复杂聚合函数（例如，乘法）的委托。 您可以忽略此信息，因为此示例中的任何订单都不包含500行以上的项。 如果需要其他应用，可以在**应用设置**中增加该限制。
 
-    此公式中的[**文本**](functions/function-text.md)函数添加货币符号，并使用千位分隔符和小数分隔符设置结果格式。 根据编写，该公式包括美国英语的语言标记（**[$-en-us]**）和一个美元符号（**$**）。 如果删除 language 标记，则会将其替换为基于您的语言设置的一个标记，标签将显示该标记的相应格式。 如果保留美元符号，则标签将根据用户的设置显示相应的货币符号。 但是，您可以通过将美元符号替换为您喜欢的符号来强制显示不同的符号。
+    此公式中的[**文本**](functions/function-text.md)函数添加货币符号，并使用千位分隔符和小数分隔符设置结果格式。 根据编写，该公式包括美国英语的语言标记（ **[$-en-us]** ）和一个美元符号（ **$** ）。 如果删除 language 标记，则会将其替换为基于您的语言设置的一个标记，标签将显示该标记的相应格式。 如果保留美元符号，则标签将根据用户的设置显示相应的货币符号。 但是，您可以通过将美元符号替换为您喜欢的符号来强制显示不同的符号。
 
 1. 在 "**主页**" 选项卡上，将最新标签的字体大小更改为20磅，并将其文本右对齐：
 

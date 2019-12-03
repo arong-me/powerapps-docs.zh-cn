@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2fdf5577f907e2beb7ead5eef3c4d7b06aeaa9c5
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.openlocfilehash: a3996603e9d5de0f3844be0a3d6b4fb8e1c62d7b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74177864"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674945"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>在 PowerApps 中共享画布应用
 
@@ -31,13 +31,13 @@ ms.locfileid: "74177864"
 
 共享应用前，必须将其保存至云（而非本地），然后发布应用。
 
-- 为应用提供有意义的名称和明确说明，以便人们了解应用的功能并且可在列表中轻松找到该应用。 在 PowerApps Studio 中的“文件”菜单上，选择“应用设置”，指定名称，然后键入或粘贴说明。
+- 为应用提供有意义的名称和明确说明，以便人们了解应用的功能并且可在列表中轻松找到该应用。 在 Power Apps Studio 的 "**文件**" 菜单上，选择 "**应用设置**"，指定名称，然后键入或粘贴说明。
 
 - 无论何时进行更改，如果想要其他人看到这些更改，必须保存并重新发布应用。
 
 ## <a name="share-an-app"></a>共享应用
 
-1. [登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) PowerApps，然后选择左边缘附近的“应用”。
+1. [登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)到 Power Apps，然后选择左边缘附近的 "**应用**"。
 
     ![显示应用列表](./media/share-app/file-apps.png)
 
@@ -52,7 +52,7 @@ ms.locfileid: "74177864"
 1. 按名称或别名指定 Azure Active Directory 要与之共享应用的用户或安全组。
 
     - 若要允许整个组织运行应用（但不修改或共享），请在 "共享" 面板中键入**Everyone** 。
-    - 如果项由分号分隔，则可以使用别名列表、友好名称或这些项的组合（例如， **Jane Doe &lt;jane.doe@contoso.com>** ）来共享应用。 如果有多个用户具有相同名称但具有不同的别名，则会将找到的第一个人员添加到列表。 如果名称或别名已经有权限或无法解析，则会出现工具提示。 
+    - 如果项由分号分隔，则可以使用别名列表、友好名称或这些项的组合（例如， **Jane Doe &lt;jane.doe@contoso.com** ）来共享应用。 如果有多个用户具有相同名称但具有不同的别名，则会将找到的第一个人员添加到列表。 如果名称或别名已经有权限或无法解析，则会出现工具提示。 
 
     ![指定用户和共同所有者](./media/share-app/share-everyone.png)
 
@@ -79,14 +79,14 @@ ms.locfileid: "74177864"
 
 1. 在 "共享" 面板的底部，选择 "**共享**"。
 
-    共享应用的每个人都可以在浏览器中的移动设备上的 PowerApps Mobile 或 AppSource on [Dynamics 365](https://home.dynamics.com)上运行它。 共同所有者可在[PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)中编辑并共享应用。
+    共享应用的每个人都可以在移动设备上的 Power Apps Mobile 中或在浏览器的[Dynamics 365](https://home.dynamics.com)上的 AppSource 中运行该应用。 共同所有者可在[PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)中编辑并共享应用。
 
     如果你发送了电子邮件邀请，则与你共享该应用程序的所有人都可以通过选择邀请中的链接来运行它。
 
-    - 如果用户在移动设备上选择链接，该应用会在 PowerApps Mobile 中打开。
+    - 如果用户在移动设备上选择链接，应用会在 Power Apps Mobile 中打开。
     - 如果用户选择台式计算机上的链接，则会在浏览器中打开该应用。
 
-    收到邀请的共同所有者会获得另一个链接，该链接打开应用程序以在 PowerApps Studio 中进行编辑。
+    收到邀请的共同所有者会获得另一个链接，该链接打开应用程序以在 Power Apps Studio 中进行编辑。
 
 通过选择用户或安全组的名称，然后执行以下步骤之一，可以更改该用户或安全组的权限：
 
@@ -126,7 +126,7 @@ ms.locfileid: "74177864"
 
 ## <a name="share-with-guests"></a>与来宾共享
  
-PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享。 这使得邀请外部业务合作伙伴、承包商和第三方能够运行公司的画布应用。 
+可以与 Azure Active Directory 租户的来宾用户共享 Power Apps 画布应用。 这使得邀请外部业务合作伙伴、承包商和第三方能够运行公司的画布应用。 
 
 > [!NOTE]
 > 只能为与他们共享的应用分配**用户**角色，而不能为其分配**共同所有者**角色。
@@ -164,16 +164,16 @@ PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享�
 
 ### <a name="frequently-asked-questions"></a>常见问题
 
-#### <a name="whats-the-difference-between-canvas-app-guest-access-and-powerapps-portals"></a>Canvas 应用来宾访问和 PowerApps 门户之间的区别是什么？ 
+#### <a name="whats-the-difference-between-canvas-app-guest-access-and-power-apps-portals"></a>画布应用来宾访问和电源应用门户之间的区别是什么？ 
 画布应用支持构建一个应用，用于对业务流程进行数字化处理，而无需以传统编程语言（例如C#）编写代码。 对于画布应用的来宾访问，使由不同组织参与共同业务流程的人员团队能够访问与各种 Microsoft 和第三方源集成的相同应用资源。 详细信息： [canvas 的应用连接器概述](/powerapps/maker/canvas-apps/connections-list)。
 
-[PowerApps 门户](/powerapps/maker/portals/overview) 提供生成低代码的响应式网站的功能，使外部用户能够与 Common Data Service 中存储的数据进行交互。 它允许组织创建可通过匿名方式或通过其所选的登录提供者（如 LinkedIn、Microsoft 帐户或其他商业登录提供商）与组织外部的用户共享的网站。 
+利用[Power Apps 门户](/powerapps/maker/portals/overview) 提供生成低代码的响应式网站的功能，使外部用户能够与 Common Data Service 中存储的数据进行交互。 它允许组织创建可通过匿名方式或通过其所选的登录提供者（如 LinkedIn、Microsoft 帐户或其他商业登录提供商）与组织外部的用户共享的网站。 
 
-下表概述了 PowerApps 门户和画布应用之间的一些核心功能差异。  
+下表概述了 Power Apps 门户和画布应用之间的一些核心功能差异。  
 
 | | 界面 | 身份验证 | 可访问的数据源 |
 |------|--------|----------|-------------------|
-| PowerApps 门户 | 仅浏览器体验 | 允许匿名访问和经过身份验证的访问 | Common Data Service |
+| Power Apps 门户 | 仅浏览器体验 | 允许匿名访问和经过身份验证的访问 | Common Data Service |
 | 画布应用 | 浏览器和移动应用 | 需要通过 Azure AD 进行身份验证 | 任何 ~ 150 的现成连接器和任何自定义连接器  |
 ||
 
@@ -181,7 +181,7 @@ PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享�
 可以。 可以使用自定义窗体访问 SharePoint 列表的任何用户都可以使用窗体创建和编辑列表中的项，而无需任何 Power Apps 许可证。
 
 #### <a name="can-guests-access-apps-embedded-in-sharepoint"></a>来宾是否可以访问嵌入在 SharePoint 中的应用？ 
-可以。 但是，访问画布独立应用需要使用与应用功能（包括嵌入的应用）相匹配的权限的 Power Apps 的许可。 通过 Microsoft PowerApps 嵌入控件在 SharePoint 中嵌入画布应用时，请输入应用 id。为此，请在 "**应用程序 web 链接" 或 "ID** " 框中输入应用 ID。 
+可以。 但是，访问画布独立应用需要使用与应用功能（包括嵌入的应用）相匹配的权限的 Power Apps 的许可。 通过 Microsoft Power Apps 嵌入控件在 SharePoint 中嵌入画布应用时，请输入应用 id。为此，请在 "**应用程序 web 链接" 或 "ID** " 框中输入应用 ID。 
 
 > [!div class="mx-imgBorder"]  
 > ![在 SharePoint 中为来宾嵌入画布应用](media/share-app/guest_access_doc_5.PNG "在 SharePoint 中为来宾嵌入画布应用")
@@ -195,7 +195,7 @@ PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享�
 与非来宾一样，应用访问的基础数据源还必须可供来宾访问。
 
 #### <a name="what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them"></a>必须将哪些许可证分配给来宾，才能运行与他们共享的应用？
-运行应用程序所需的与非来宾相同的许可证。 例如，如果应用使用高级 connecters，则必须将每个应用计划的 PowerApps 或 PowerApps 每个用户计划分配给来宾。  
+运行应用程序所需的与非来宾相同的许可证。 例如，如果应用使用高级 connecters，则每个应用计划的每个应用计划或每个用户的电源应用计划必须分配给来宾。  
 
 |                                 | SharePoint 自定义窗体 | 使用非高级连接器的独立画布应用 | 使用高级连接器的独立画布应用 | 模型驱动应用 |
 |---------------------------------|----------------------------|----------------------------------------------------|------------------------------------------------|------------------|
@@ -205,8 +205,8 @@ PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享�
 | 每个用户的电源应用计划         | x                          | x                                                  | x                                              | x                |
 
 
-#### <a name="in-powerapps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>在 PowerApps Mobile 中，来宾如何查看其 home 租户的应用？
-访问了移动设备上的移动设备上 Azure AD 发布的画布应用的任何用户都必须注销 PowerApps，并重新登录到 PowerApps Mobile。  
+#### <a name="in-power-apps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>在 Power Apps Mobile 中，来宾如何查看其 home 租户的应用？
+访问了移动设备上的移动设备上发布的画布应用的任何用户，这些应用在不是其主租户的 Azure AD 租户中发布，必须注销电源应用并重新登录到 Power Apps Mobile。  
 
 #### <a name="must-a-guest-accept-the-azure-ad-guest-invitation-prior-to-sharing-an-app-with-the-guest"></a>在与来宾共享应用之前，来宾是否必须接受 Azure AD 来宾邀请？
 不。 如果来宾在接受来宾邀请之前启动与他们共享的应用程序，则在启动应用程序时，会提示来宾接受邀请作为登录体验的一部分。  
@@ -217,8 +217,8 @@ PowerApps 画布应用可与 Azure Active Directory 租户的来宾用户共享�
 #### <a name="can-guests-use-microsoft-graph-via-microsoft-security-graph-connector-or-a-custom-connector-using-microsoft-graph-apis"></a>来宾可以使用 Microsoft Graph 通过 Microsoft 安全图形连接器还是使用 Microsoft Graph Api 的自定义连接器？
 不需要，Azure AD 来宾无法查询 Microsoft Graph 来检索他们是来宾的租户的信息。
 
-#### <a name="what-intune-policies-apply-to-guests-using-my-powerapps"></a>哪些 InTune 策略适用于使用我的 PowerApps 的来宾？
-InTune 仅应用用户的主租户的策略。 例如，如果 Alice@Contoso.com 与 Vikram@Fabrikam.com共享应用，则 InTune 将继续在 Virkam 的设备上应用 Fabrikam.com 策略，而不考虑他运行的 PowerApps。
+#### <a name="what-intune-policies-apply-to-guests-using-my-power-apps"></a>哪些 InTune 策略适用于使用我的 Power Apps 的来宾？
+InTune 仅应用用户的主租户的策略。 例如，如果 Alice@Contoso.com 与 Vikram@Fabrikam.com共享应用，则 InTune 将继续在 Virkam 的设备上应用 Fabrikam.com 策略，而不考虑该用户运行的电源应用。
 
 #### <a name="what-connectors-support-guest-access"></a>哪些连接器支持来宾访问？
 不执行任何类型的 Azure AD 身份验证的所有连接器都支持来宾访问。 下表列举了所有执行 Azure AD 身份验证的连接器，以及哪些连接器当前支持来宾访问。 其中的许多都将更新为最新版本。

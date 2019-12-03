@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 565f751017bc8c145c34058bd4dd57d047127d45
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 455ffff4813b457c2a439f2081c10418ace2e306
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987180"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678709"
 ---
 # <a name="connect-to-excel-from-powerapps"></a>从 PowerApps 连接到 Excel
 ![Excel](./media/connection-excel/excelicon.png)
@@ -31,7 +31,7 @@ Excel *类似*一种连接。 在应用中显示 Excel 数据：
 4. 通过[自动生成应用](../get-started-create-from-data.md)或添加和配置**库**控件等内容，在应用中显示此信息。
 
 > [!NOTE]
-> 从 PowerApps 连接到 Excel 表后，PowerApps 会立即创建名为 \_PowerAppsId_ 的列，并且 Excel 表的每一行都有唯一 ID。
+> 从 Power Apps 连接到 Excel 表时，它将创建一个名为 **\_PowerAppsId_** 的列，其中包含 Excel 表中每一行的唯一 ID。
 
 [云存储连接概述](cloud-storage-blob-connections.md)中介绍了如何添加连接、将 Excel 表格作为数据源添加以及在应用中使用 Excel 数据。
 

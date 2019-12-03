@@ -1,6 +1,6 @@
 ---
 title: 了解画布应用窗体 | Microsoft Docs
-description: 在 PowerApps 中，将窗体添加到画布应用中，以便从数据源收集和显示信息。
+description: In Power Apps, add a form to a canvas app so that you can collect and display information from a data source.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 476964166a57bea23469baf0c1e7497be10ab73f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 462830806165b4eb52eebb17436e11798dbdb267
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541670"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674456"
 ---
 # <a name="understand-canvas-app-forms-in-microsoft-powerapps"></a>了解 Microsoft PowerApps 中的画布应用窗体
 
@@ -38,11 +38,11 @@ ms.locfileid: "73541670"
 
 ## <a name="prerequisites"></a>必备组件
 
-* [注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+* [Sign up](../signup-for-powerapps.md) for Power Apps, and then [sign in](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) by providing the same credentials that you used to sign up.
 * 了解如何在 PowerApps 中 [配置控件](add-configure-controls.md)。
 
 ## <a name="explore-a-generated-app"></a>浏览生成的应用
-PowerApps 可以根据指定的数据源自动生成应用。 每个应用包含三个屏幕，其中显示前面所述的控件，以及用于连接控件的公式。 “现成地”运行这些应用，根据具体的目标自定义这些应用，或者探索其工作原理，以了解适用于你自己的应用的有用概念。 以下部分介绍驱动生成的应用的屏幕、控件和公式。  
+Power Apps can automatically generate an app based on a data source that you specify. 每个应用包含三个屏幕，其中显示前面所述的控件，以及用于连接控件的公式。 “现成地”运行这些应用，根据具体的目标自定义这些应用，或者探索其工作原理，以了解适用于你自己的应用的有用概念。 以下部分介绍驱动生成的应用的屏幕、控件和公式。  
 
 ### <a name="browse-screen"></a>浏览屏幕
 ![浏览屏幕控件](./media/working-with-forms/afd-browse-screen-basic.png)
@@ -137,20 +137,20 @@ PowerApps 可以根据指定的数据源自动生成应用。 每个应用包含
 
 ![在创作体验中选择的编辑卡片和卡片控件](./media/working-with-forms/afd-edit-card-controls.png)
 
-在上图中，选定的卡片显示了 **AssetID** 字段并包含 **[文本输入](controls/control-text-input.md)** 控制，使用户能够编辑该字段的值。 （相反，详细信息屏幕在 " **[标签](controls/control-text-box.md)** " 控件中显示相同的字段，这是只读的。） **[文本输入](controls/control-text-input.md)** 控件具有 **[默认](controls/properties-core.md)** 属性，该属性设置为**Parent。默认值**为。 如果用户创建而不是编辑记录，该控件将显示一个初始值，用户可以更改新记录的该值。
+在上图中，选定的卡片显示了 **AssetID** 字段并包含 **[文本输入](controls/control-text-input.md)** 控制，使用户能够编辑该字段的值。 (In contrast, the detail screen shows the same field in a **[Label](controls/control-text-box.md)** control, which is read-only.) The **[Text input](controls/control-text-input.md)** control has a **[Default](controls/properties-core.md)** property, which is set to **Parent.Default**. 如果用户创建而不是编辑记录，该控件将显示一个初始值，用户可以更改新记录的该值。
 
 在右窗格中，可以显示或隐藏每个卡片、重新排列卡片，或者将它们配置为显示不同类型的控件中的字段。
 
 ![已打开选项窗格的编辑屏幕](./media/working-with-forms/edit-screen.png)
 
 ## <a name="build-an-app-from-scratch"></a>从头开始构建应用
-了解 PowerApps 如何生成应用后，你可以自行构建一个使用本主题前面所述的相同构建基块和公式的应用。
+By understanding how Power Apps generates an app, you can build one yourself that uses the same building blocks and formulas discussed earlier in this topic.
 
 ## <a name="identify-test-data"></a>确定测试数据
 为了让本主题发挥最大的参考价值，可以从一个可以试验的数据源着手。 该数据源应该包含可以任意读取和更新的测试数据。
 
 > [!NOTE]
-> 如果使用列名称带空格的 SharePoint 列表或 Excel 表作为数据源，PowerApps 会将空格替换为“\_x0020\_”。 例如，如果 SharePoint 或 Excel 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
+> If you use a SharePoint list or an Excel table that contains column names with spaces as your data source, Power Apps will replace the spaces with **"\_x0020\_"** . For example, **"Column Name"** in SharePoint or Excel will appear as **"Column_x0020_Name"** in Power Apps when displayed in the data layout or used in a formula.
 
 若要完全根据原文参考本主题的余下部分，请创建名为“Ice Cream”的 SharePoint 列表，其中包含以下数据：
 
@@ -314,7 +314,7 @@ PowerApps 可以根据指定的数据源自动生成应用。 每个应用包含
 
     ![包含添加的“编辑”按钮的显示窗体](./media/working-with-forms/edit-icecream-error.png)
 
-在 PowerApps 基于数据生成的应用中，此控件的 **[AutoHeight](controls/control-text-box.md)** 属性设置为 *true*，以便在未出错时不会占用空间。 考虑到出错时此控件会扩大， **[编辑窗体](controls/control-form-detail.md)** 控件的 **[Height](controls/properties-size-location.md)** 和 **[Y](controls/properties-size-location.md)** 属性也会动态调整。 若要了解其他详细信息，可基于现有数据生成一个应用并查看这些属性。 未发生错误时，用于显示错误的文本框控件很短，可能需要打开“高级”视图（位于“视图”选项卡上）才能选择此控制。
+In an app that Power Apps generates from data, the **[AutoHeight](controls/control-text-box.md)** property on this control is set to *true* so that no space is consumed if no error occurs. 考虑到出错时此控件会扩大， **[编辑窗体](controls/control-form-detail.md)** 控件的 **[Height](controls/properties-size-location.md)** 和 **[Y](controls/properties-size-location.md)** 属性也会动态调整。 若要了解其他详细信息，可基于现有数据生成一个应用并查看这些属性。 未发生错误时，用于显示错误的文本框控件很短，可能需要打开“高级”视图（位于“视图”选项卡上）才能选择此控制。
 
 ![基于数据创建的应用的编辑窗体，其中已选择错误文本控件](./media/working-with-forms/edit-assets-error1.png)
 
@@ -330,7 +330,7 @@ PowerApps 可以根据指定的数据源自动生成应用。 每个应用包含
     ![刷新数据源](./media/working-with-forms/browse-icecream-refresh.png)
 
 ## <a name="search-and-sort-the-gallery"></a>搜索和排序库
-在 PowerApps 基于数据生成的应用中，我们忘记了讨论“浏览”屏幕顶部显示的两个控件。 用户可以使用这些控件搜索一个或多个记录，以及按升序和/或降序为记录列表排序。
+In the app that Power Apps generated from data, we neglected to discuss two controls at the top of the Browse screen. 用户可以使用这些控件搜索一个或多个记录，以及按升序和/或降序为记录列表排序。
 
 ![在浏览屏幕中排序和搜索控件](./media/working-with-forms/afd-browse-search-sort.png)
 

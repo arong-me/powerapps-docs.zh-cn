@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ac6e5196de03a3c2d292696f1216c443f4c5b7e6
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0cfc64397774abc33f27006e331238dc97e9895d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992649"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680319"
 ---
 # <a name="ismatch-match-and-matchall-functions-in-powerapps"></a>PowerApps 中的 IsMatch、Match 和 MatchAll 函数
 测试是否匹配或根据模式提取文本字符串的某些部分。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **IsMatch** 函数用于测试文本字符串是否与包含普通字符、预定义模式或[正则表达式](#regular-expressions)的某种模式相符。  **Match**和**MatchAll**函数返回匹配的内容，包括子匹配。  
 
 使用 **IsMatch** 函数可验证用户在 **[文本输入](../controls/control-text-input.md)** 控件中输入的内容。 例如，可以在将结果保存到数据源中之前验证用户输入的电子邮件地址是否有效。 如果输入的内容与条件不符，可添加其他控件提示用户更正输入。
@@ -32,10 +32,10 @@ ms.locfileid: "71992649"
 
 **Match**返回找到的第一个匹配项的信息记录， **MatchAll**返回找到的每个匹配项的记录表。 记录或记录包含：
 
-| 列 | 类型 | 说明 |
+| 列 | 类型 | 描述 |
 |----|----|----|
-| *命名的&#8209;子匹配项&#8209;或子匹配项* | 文本 | 每个命名的子匹配都将有自己的列。 使用 **（？&lt;*名称*&gt;** 创建命名的子匹配项。 **）** 。 如果已命名的子匹配的名称与预定义列之一相同（如下所示），则子匹配优先，并生成警告。 若要避免出现此警告，请重命名子匹配。 |
-| **FullMatch** | 文本 | 所有匹配的文本字符串。 |
+| *命名的&#8209;子匹配项&#8209;或子匹配项* | Text | 每个命名的子匹配都将有自己的列。 使用 **（？&lt;*名称*&gt;** 创建命名的子匹配项。 **）** 。 如果已命名的子匹配的名称与预定义列之一相同（如下所示），则子匹配优先，并生成警告。 若要避免出现此警告，请重命名子匹配。 |
+| **FullMatch** | Text | 所有匹配的文本字符串。 |
 | **StartMatch** | Number | 输入文本字符串中的匹配项的起始位置。 字符串的第一个字符返回1。 | 
 | **子** | 单列表文本（**列值）** | 按其在正则表达式中出现的顺序匹配的已命名和未命名子匹配的表。 通常，命名的子匹配项的使用和建议更简单。 使用[**ForAll**](function-forall.md)函数或[**Last**](function-first-last.md)（ [**FirstN**](function-first-last.md)（ **...** ））函数可处理单独的子匹配项。 如果正则表达式中未定义子匹配项，则此表将存在但为空。 |
 
@@ -63,7 +63,7 @@ ms.locfileid: "71992649"
 
 模式语言中有一些保留字符，这些字符有特殊的用途。 若要使用这些字符，请使用 **\\** （反斜杠）作为字符的前缀，以指示应按原义字符，或使用本主题后面部分介绍的预定义模式之一。 下表列出了这些特殊字符：
 
-| 特殊字符 | 说明 |
+| 特殊字符 | 描述 |
 | --- | --- |
 | **.** |圆点或句点 |
 | **?** |问号 |
@@ -82,7 +82,7 @@ ms.locfileid: "71992649"
 ### <a name="predefined-patterns"></a>预定义模式
 预定义的模式提供了一种简单的方法来匹配一组字符或多个字符的序列。 使用[字符串串联运算符 **&** ](operators.md)将您自己的文本字符串与**Match**枚举的成员合并：
 
-| Match 枚举 | 说明 | 正则表达式 |
+| Match 枚举 | 描述 | 正则表达式 |
 | --- | --- | --- |
 | **Any** |匹配任何字符。 |`.` |
 | **Comma** |匹配逗号。 |`,` |
@@ -111,7 +111,7 @@ ms.locfileid: "71992649"
 
 正则表达式的功能非常强大，许多编程语言中都有提供，并且用途广泛。 它们还可能类似于标点符号的随机序列。 本文不介绍正则表达式的所有方面，但 web 上提供丰富的信息、教程和工具。  
 
-正则表达式采用不同的方言，PowerApps 使用 JavaScript 方言的变体。 有关语法的简介，请参阅[正则表达式语法](https://msdn.microsoft.com/library/1400241x.aspx)。 支持命名的子匹配项（有时称为命名捕获组）：
+正则表达式采用不同的方言，而 Power Apps 使用 JavaScript 方言的变体。 有关语法的简介，请参阅[正则表达式语法](https://msdn.microsoft.com/library/1400241x.aspx)。 支持命名的子匹配项（有时称为命名捕获组）：
 
 - 命名的子匹配项： **（？&lt;*名称*&gt; ...）**
 - 命名的反向引用： **\\k&lt;*名称*&gt;**
@@ -121,7 +121,7 @@ ms.locfileid: "71992649"
 ## <a name="match-options"></a>匹配选项
 您可以通过指定一个或多个选项来修改这些函数的行为，可以使用字符串连接运算符（ **&amp;** ）组合这些选项。  
 
-| MatchOptions 枚举 | 说明 | 对正则表达式的影响 |
+| MatchOptions 枚举 | 描述 | 对正则表达式的影响 |
 | --- | --- | --- |
 | **BeginsWith** |模式必须与文本的开头匹配。 |在正则表达式的开头添加 **^** 。 |
 | **Complete** |**IsMatch**的默认值。 模式必须与文本的整个字符串保持一致，从开始到结尾。 |将 **^** 添加到正则表达式末尾的开头和 **$** 。 |
@@ -157,7 +157,7 @@ ms.locfileid: "71992649"
 
 用户在 **TextInput1** 中输入 **Hello world**。
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | `IsMatch( TextInput1.Text, "Hello world" )` |测试用户输入的内容是否与字符串 "Hello world" 完全匹配。 |**true** |
 | `IsMatch( TextInput1.Text, "Good bye" )` |测试用户输入的内容是否与字符串 "好再见" 完全匹配。 |**false** |
@@ -166,7 +166,7 @@ ms.locfileid: "71992649"
 
 ### <a name="predefined-patterns"></a>预定义模式
 
-|                                                            公式                                                            |                                                                说明                                                                |  结果   |
+|                                                            公式                                                            |                                                                描述                                                                |  结果   |
 |-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | `IsMatch( "123-45-7890", Digit & Digit & Digit & Hyphen & Digit & Digit & Hyphen & Digit & Digit & Digit & Digit )` |                                              匹配美国社会安全号码                                               | **true**  |
 |                                           `IsMatch( "joan@contoso.com", Email )`                                            |                                                         匹配电子邮件地址                                                          | **true**  |
@@ -175,7 +175,7 @@ ms.locfileid: "71992649"
 
 ### <a name="regular-expressions"></a>正则表达式
 
-|                                                                              公式                                                                              |                                                                                                                                  说明                                                                                                                                   |  结果   |
+|                                                                              公式                                                                              |                                                                                                                                  描述                                                                                                                                   |  结果   |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
 |                                                                    `IsMatch( "986", "\d+" )`                                                                   |                                                                                                                    匹配大于零的整数。                                                                                                                     | **true**  |
 |                                                               `IsMatch( "1.02", "\d+(\.\d\d)?" )`                                                              |                                        匹配正货币金额。 如果输入包含小数点，则输入还必须在小数点后包含两个数字字符。 例如，3.00 有效，但 3.1 无效。                                         | **true**  |
@@ -187,7 +187,7 @@ ms.locfileid: "71992649"
 
 ## <a name="match-and-matchall-examples"></a>Match 和 MatchAll 示例
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 |--------|------------|-----------|
 | `Match( "Bob Jones <bob.jones@contoso.com>", "<(?<email>" & Match.Email & ")>"` | 仅提取联系人信息的电子邮件部分。  | {<br>电子邮件：&nbsp;"bob.jones@contoso.com"，<br>FullMatch：&nbsp;"&lt;bob.jones@contoso.com>"，<br>子匹配：&nbsp;[&nbsp;"bob.jones@contoso.com"&nbsp;]，<br>StartMatch：11<br>}  
 | `Match( "Bob Jones <InvalidEmailAddress>", "<(?<email>" & Match.Email & ")>"` | 仅提取联系人信息的电子邮件部分。 找不到合法地址（没有 @ 符号），因此该函数返回*空白*。 | *blank* |  
@@ -209,7 +209,7 @@ With(
 Set( pangram, "The quick brown fox jumps over the lazy dog." )
 ```
  
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 |---------|-------------|--------|
 | `Match( pangram, "THE", IgnoreCase )` | 查找**pangram**变量包含的文本字符串中的所有匹配项。 该字符串包含两个匹配项，但只返回第一个匹配项，因为使用的是**Match**而不是**MatchAll**。 子匹配列是空的，因为未定义子匹配。  | {<br>FullMatch： "the"、<br>子匹配项： [&nbsp;]，<br>StartMatch：32<br>} |
 | `MatchAll( pangram, "the" )` | 查找**pangram**变量包含的文本字符串中的所有匹配项。 测试区分大小写，因此仅找到第二个 "" 的实例。 子匹配列是空的，因为未定义子匹配。  | <style> img { max-width: none } </style> ![](media/function-ismatch/pangram-the-one.png) |

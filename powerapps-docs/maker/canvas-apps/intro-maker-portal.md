@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 06dad46643a3de8b8727d890865c9b6f847a825f
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 0f745516ab0c282ab6519f0bac8ac8cfd5f46598
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899231"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675745"
 ---
-# <a name="sign-in-to-powerapps-for-the-first-time"></a>首次登录到 PowerApps
+# <a name="sign-in-to-power-apps-for-the-first-time"></a>首次登录到 Power Apps
 
 登录到 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 后，站点会为你提供各种选项，用于创建自己的应用、打开你或他人创建的应用和执行相关任务。 这些任务涵盖了从最简单的任务（如标识一个或多个提供访问权限的许可证）到更高级的功能（如创建与特定数据源的自定义连接）。
 
@@ -42,7 +42,7 @@ ms.locfileid: "73899231"
 
 ## <a name="choose-an-environment"></a>选择环境
 
-无论是在 Common Data Service 中创建应用、流、数据连接还是实体，在 PowerApps 中所做的大部分操作都包含在特定环境中。 环境会创建不同类型工作之间的边界；例如，组织可能有单独的环境用于不同的部门。 许多组织会使用环境将仍处于开发中的应用与已准备好广泛使用的应用进行分隔。 你可能有权限访问多个环境或只能访问一个环境。如果你具有相应权限，则可能能够创建自己的环境。
+无论是在 Common Data Service 中创建应用、流、数据连接还是实体，在 Power Apps 中执行的大部分操作都包含在特定环境中。 环境会创建不同类型工作之间的边界；例如，组织可能有单独的环境用于不同的部门。 许多组织会使用环境将仍处于开发中的应用与已准备好广泛使用的应用进行分隔。 你可能有权限访问多个环境或只能访问一个环境。如果你具有相应权限，则可能能够创建自己的环境。
 
 若要验证你所在的环境，请查找标题右侧附近的环境切换器。
 
@@ -57,7 +57,7 @@ ms.locfileid: "73899231"
 
 ## <a name="choose-an-app-type"></a>选择应用类型
 
-在 PowerApps 中，可以创建和运行以下类型的应用：
+在 Power Apps 中，你可以创建并运行以下类型的应用：
 
 - 画布应用支持设计自定义 UI 并连接到来自各种源的数据。
 - **模型驱动应用**具有标准 UI，并且仅在 Common Data Service 中连接到数据。 但是，你可以较轻松地创建其他元素，如视图、仪表板以及不同类型的业务逻辑。
@@ -93,7 +93,7 @@ ms.locfileid: "73899231"
 
     ![带有省略号的模型驱动应用列表菜单打开](media/intro-maker-portal/help-icon.png)
 
-以下两个选项均可显示指向此文档集的链接：PowerApps 社区（可以在其中与其他组织中的用户共享信息）和 PowerApps 博客（在其中公布最新功能）。
+这两个选项都显示了此文档集的链接、Power Apps 社区（你可以在其中与其他组织中的用户共享信息）和 Power Apps 博客（其中宣布了最新功能）。
 
 ## <a name="other-common-tasks"></a>其他常见任务
 
@@ -105,7 +105,7 @@ ms.locfileid: "73899231"
 
     有关详细信息，请参阅[查找和运行应用](../../user/index.md)。
 
-- 选择齿轮图标以执行以下任务：连接到数据源、标识一个或多个 PowerApps 许可证，以及打开可在其中执行管理任务的页面。
+- 选择齿轮图标以执行任务，如连接到数据源、标识 Power Apps 许可证或许可证，以及打开可执行管理任务的页面。
 
     有关详细信息，请参阅以下主题：
 

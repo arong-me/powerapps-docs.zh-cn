@@ -1,6 +1,6 @@
 ---
 title: 从 Common Data Service 生成画布应用 |Microsoft Docs
-description: 在 PowerApps 中，会自动生成画布应用以管理 Common Data Service 中的数据
+description: 在 Power Apps 中，会自动生成画布应用以管理 Common Data Service 中的数据
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7175ac7d96989de4abd7e9fa3446631ca04d5f1b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f1737a70a8b9f6be30c73a91116c88df38609966
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540149"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678548"
 ---
 # <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>在 PowerApps 中 Common Data Service 生成画布应用
 
-在 PowerApps 中，基于[Common Data Service](../common-data-service/data-platform-intro.md)中的示例帐户列表自动生成画布应用。 在此应用中，可以浏览所有帐户、显示单个帐户的详细信息以及创建、更新或删除帐户。
+在 Power Apps 中，会根据[Common Data Service](../common-data-service/data-platform-intro.md)中的示例帐户列表自动生成画布应用。 在此应用中，可以浏览所有帐户、显示单个帐户的详细信息以及创建、更新或删除帐户。
 
-如果没有注册 PowerApps，请在开始使用之前先[免费注册](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+如果尚未注册 Power Apps，请在开始之前[免费注册](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 ## <a name="prerequisites"></a>必备组件
 
@@ -44,7 +44,7 @@ ms.locfileid: "73540149"
 
 1. 在“选择表”下选择“帐户”，然后选择“连接”。
 
-1. 如果出现“欢迎使用 PowerApps Studio”对话框，则单击“跳过”。
+1. 如果出现 "**欢迎使用 Power Apps Studio** " 对话框，请选择 "**跳过**"。
 
 应用打开并显示浏览屏幕，其中的控件中将显示帐户列表，这称为一个库。 屏幕顶部附近的标题栏中将显示用于以下用途的图标：刷新库中的数据，按字母顺序对库中的数据进行排序，以及向库中添加数据。 标题栏下的一个搜索框提供一个选项，通过此选项可基于键入或粘贴的文本来筛选库中的数据。 
 

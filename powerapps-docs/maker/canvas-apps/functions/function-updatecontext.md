@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7750ad239df87e99d2321be20293b64153110fc1
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 646a5de203c713d59965f7787dabe087c0a33f51
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71991828"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678157"
 ---
 # <a name="updatecontext-function-in-powerapps"></a>PowerApps 中的 UpdateContext 函数
 创建或更新当前屏幕的[上下文变量](../working-with-variables.md#use-a-context-variable)。
@@ -28,10 +28,10 @@ ms.locfileid: "71991828"
 
 上下文变量的作用域限于一个屏幕，这意味着不能生成引用另一屏幕上的上下文变量的公式。 如果已使用另一种编程工具，可将上下文变量视为与本地变量类似。  使用 [Set 函数](function-set.md)来处理整个应用中可用的全局变量。  
 
-PowerApps 以公式为基础，这些公式会在用户与应用交互时自动重新计算。  上下文变量不具有此优势，因此在应用的创建和理解上可能难度更大。  使用上下文变量之前，请查看[使用变量](../working-with-variables.md)。
+Power Apps 基于用户与应用交互时自动重新计算的公式。  上下文变量不具有此优势，因此在应用的创建和理解上可能难度更大。  使用上下文变量之前，请查看[使用变量](../working-with-variables.md)。
 
-## <a name="description"></a>说明
-若要创建或更新上下文变量，请向 [UpdateContext](../working-with-tables.md#records) 函数传递一条**记录**。 在每条记录中指定[列](../working-with-tables.md#columns)的名称，用于定义或匹配变量的名称以及要将该变量设为的值。
+## <a name="description"></a>描述
+若要创建或更新上下文变量，请向 **UpdateContext** 函数传递一条[记录](../working-with-tables.md#records)。 在每条记录中指定[列](../working-with-tables.md#columns)的名称，用于定义或匹配变量的名称以及要将该变量设为的值。
 
 * 如果指定之前已定义的变量的名称，**UpdateContext** 会将该变量的值设置为指定的值。
 * 如果指定尚不存在的变量的名称，**UpdateContext** 会以该名称创建一个变量并将该变量的值设置为指定的值。
@@ -70,7 +70,7 @@ PowerApps 以公式为基础，这些公式会在用户与应用交互时自动�
 
 ## <a name="examples"></a>示例
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **UpdateContext( {&nbsp;Counter:&nbsp;1&nbsp;} )** |创建或修改上下文变量 **Counter**，将其值设置为 **1**。 |**Counter** 的值为 **1**。 可通过在公式中使用名称 **Counter** 来引用该变量。 |
 | **UpdateContext( {&nbsp;Counter:&nbsp;2&nbsp;} )** |将上一示例中 **Counter** 上下文变量的值设置为 **2**。 |**Counter** 的值为 **2**。 |
@@ -81,11 +81,11 @@ PowerApps 以公式为基础，这些公式会在用户与应用交互时自动�
 ### <a name="step-by-step-example"></a>分步示例
 1. 将默认屏幕命名为 **Source**，添加另一个屏幕，将其命名为 **Target**。
 2. 在 **Source** 屏幕上，添加两个按钮，设置它们的 **[Text](../controls/properties-core.md)** 属性，让其中一个按钮显示“英语”，另一个显示“西班牙语”。
-3. 将“英语” **[按钮的 ](../controls/properties-core.md)** OnSelect 属性设置为此表达式：<br>**Navigate(Target, ScreenTransition.Fade, {Language:"English"})**
-4. 将“西班牙语” **[按钮的 ](../controls/properties-core.md)** OnSelect 属性设置为此表达式：<br>**Navigate(Target, ScreenTransition.Fade, {Language:"Spanish"})**
+3. 将“英语”按钮的 **[OnSelect](../controls/properties-core.md)** 属性设置为此表达式：<br>**Navigate(Target, ScreenTransition.Fade, {Language:"English"})**
+4. 将“西班牙语”按钮的 **[OnSelect](../controls/properties-core.md)** 属性设置为此表达式：<br>**Navigate(Target, ScreenTransition.Fade, {Language:"Spanish"})**
 5. 在 **Target** 屏幕，添加一个标签，将其 **[Text](../controls/properties-core.md)** 属性设置为此表达式：<br>**If(Language="English", "Hello!", "Hola!")**
 6. 在 **Target** 屏幕上，在“插入”选项卡上选择“形状”，然后选择“返回”箭头。
-7. 将“返回”箭头的 **[OnSelect](../controls/properties-core.md)** 属性设置为此公式：<br>Navigate(Source, ScreenTransition.Fade)
+7. 将“返回”箭头的 **[OnSelect](../controls/properties-core.md)** 属性设置为此公式：<br>**Navigate(Source, ScreenTransition.Fade)**
 8. 从 **Source** 屏幕上，按 F5，然后选择表示任一语言的按钮。
 
     在 **Target** 屏幕上，标签将以对应于所选按钮的语言显示。

@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c1ee3d00bab865bf63dc06181a9430fd0a9a6674
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: fbfe1b62091ff7a4fb84b899518fc941f99d7abb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988375"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674860"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>了解 SharePoint 窗体集成
-现在可以在 PowerApps 中轻松[自定义任何 SharePoint 列表窗体](customize-list-form.md)。 在本文中，我们将详细演示这些窗体的工作原理，以及如何对其作进一步的自定义。
+你现在可以在 Power Apps 中轻松[自定义任何 SharePoint 列表窗体](customize-list-form.md)。 在本文中，我们将详细演示这些窗体的工作原理，以及如何对其作进一步的自定义。
 
 如果你已自定义 SharePoint 列表窗体，则可能已经注意到默认生成的窗体适用于所有操作，如创建、显示或编辑项。 此操作是借助生成的公式和 SharePointIntegration 控件来实现的。
 
@@ -35,7 +35,7 @@ ms.locfileid: "71988375"
 
     * Data Source - 已为其自定义窗体的列表。
 
-    * Item - 从列表中选定的项。 在 PowerApps Studio 中工作时，为方便起见，这在列表中将设置为 First() 项。
+    * Item - 从列表中选定的项。 此项设置为列表中的第一项（），方便你在 Power Apps Studio 中工作时使用。
 
         **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected),First('*YourListName*'),SharePointIntegration.Selected)**
 
@@ -69,7 +69,7 @@ ms.locfileid: "71988375"
 
         **ResetForm(SharePointForm1)**
 
-这些默认值可确保表单能够在 SharePoint 中正常运行，即当用户在 SharePoint 中与表单交互时，它们会更改 PowerApps 表单模式，并确保将更改提交到 SharePoint。
+这些默认值确保窗体在 SharePoint 中运行时工作，在用户与 SharePoint 中的用户交互时，它们会更改 Power Apps 窗体模式，并确保将更改提交到 SharePoint。
 
 ## <a name="understand-the-sharepointintegration-control"></a>了解 SharePointIntegration 控件
 SharePointIntegration 控件在 SharePoint 和 PowerApps 之间沟通用户操作。
@@ -77,7 +77,7 @@ SharePointIntegration 控件在 SharePoint 和 PowerApps 之间沟通用户操�
 ![](./media/sharepoint-form-integration/sharepointintegration-object.png)
 
 >[!NOTE]
->仅当窗体在 SharePoint 中运行时才可访问 SharePointIntegration 控件的属性，并且在 PowerApps Studio 中自定义窗体时无法访问这些属性。 这些属性可能无法在 OnStart 或 OnVisible 中使用。 
+>仅当窗体在 SharePoint 中运行时，才可以访问**SharePointIntegration**控件的属性，而不能在 Power Apps Studio 中自定义窗体。 这些属性可能无法在 OnStart 或 OnVisible 中使用。 
 
 SharePointIntegration 控件具有以下属性：
 

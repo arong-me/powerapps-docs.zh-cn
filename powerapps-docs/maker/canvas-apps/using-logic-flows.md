@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 636e9f853ada9816e87232348e5ce7ef6df2cedc
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 2482e5b4cbbcaaf168320a8cbfe3c31f486bf891
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73898306"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674311"
 ---
 # <a name="start-a-flow-in-a-canvas-app"></a>启动画布应用中的流
 
@@ -46,9 +46,9 @@ ms.locfileid: "73898306"
 
 1. 在 "搜索" 框中，键入**powerapps**，然后选择**powerapps**图标。
 
-    ![创建 PowerApps 触发器](./media/using-logic-flows/set-trigger.png)
+    ![创建 Power Apps 触发器](./media/using-logic-flows/set-trigger.png)
     
-1. 在下一页上，再次选择 PowerApps 图标，然后选择 "**新建步骤**"。
+1. 在下一页上，再次选择 "电源应用" 图标，然后选择 "**新建步骤**"。
 
 1. 在显示 "**搜索连接器和操作**" 的框中，为流指定操作，如以下示例中所示：
 
@@ -69,7 +69,7 @@ ms.locfileid: "73898306"
 
    1. 在列表中选择字段的 "输入" 框（例如**标题**），在 "动态内容" 窗格中选择 "**查看更多**"，然后选择 "**在 PowerApps 中询问**"。 
 
-       ![将“在 PowerApps 中询问”参数添加到“标题”字段](./media/using-logic-flows/ask-in-powerapps.png)
+       ![将 Power Apps 中的 Ask 参数添加到标题字段](./media/using-logic-flows/ask-in-powerapps.png)
 
 1. 可有可无指定一个或多个附加步骤，如将审批邮件发送到指定的地址，或在另一个数据源中创建相关条目。
 
@@ -91,7 +91,7 @@ ms.locfileid: "73898306"
 1. 在显示的窗格中，选择在前面的过程中创建的流。
 
     > [!NOTE]
-   > 如果创建的流不可用，请确认是否已将 PowerApps 设置为在其中创建了流的环境。
+   > 如果创建的流不可用，请确认是否已将电源应用设置为在其中创建了流的环境。
 
     ![从自定义窗格添加流](./media/using-logic-flows/add-flow-from-pane.png)
 

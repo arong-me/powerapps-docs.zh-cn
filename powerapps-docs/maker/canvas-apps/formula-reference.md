@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8ba2d504cc731725d154d8141854373fbf67dc2a
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: eb698f5e2775f1acfed6a7af70475a6079753abb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992924"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678456"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps 的公式参考
 公式组合了许多元素。  下面列出的包括：
@@ -207,7 +207,7 @@ ms.locfileid: "71992924"
 
 **[Ln](functions/function-numericals.md)** – 返回自然对数。
 
-**[LoadData](functions/function-savedata-loaddata.md)** – 从 PowerApps 专用存储中加载集合。
+**[LoadData](functions/function-savedata-loaddata.md)** –从 Power Apps 专用存储加载集合。
 
 **[Location](functions/signals.md)** – 通过使用全球定位系统 (GPS) 和其他信息将你的位置返回为地图坐标。
 
@@ -295,7 +295,7 @@ ms.locfileid: "71992924"
 **[RoundUp](functions/function-round.md)** – 向上舍入到最小的下一数字。
 
 ## <a name="s"></a>S
-**[SaveData](functions/function-savedata-loaddata.md)** – 将集合保存到 PowerApps 专用存储。
+**[SaveData](functions/function-savedata-loaddata.md)** –将集合保存到 Power Apps 专用存储。
 
 **[Search](functions/function-filter-lookup.md)** – 在表中查找其某个列中包含某个字符串的记录。  
 
@@ -303,7 +303,7 @@ ms.locfileid: "71992924"
 
 **[Select](functions/function-select.md)** - 在控件上模拟选择操作，导致对 **OnSelect** 公式进行求值。
 
-**[Set](functions/function-set.md)** – 设置全局变量的值。
+[Set](functions/function-set.md) – 设置全局变量的值。
 
 **[SetFocus](functions/function-setfocus.md)** –将输入焦点移到特定控件。
 

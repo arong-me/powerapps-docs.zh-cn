@@ -14,20 +14,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d932d43bd9474f3cd7ca63ef0ef0a51a9e74ca91
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: a026d801a6bda6ae82884f5fab94f09b4fdde571
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984743"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680365"
 ---
 # <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>PowerApps 中的 Blank、Coalesce、IsBlank 和 IsEmpty 函数
 测试值是否为空白值，或测试[表](../working-with-tables.md)是否不包含任何[记录](../working-with-tables.md#records)，并能创建*空白*值。
 
 ## <a name="overview"></a>概述
-*Blank* 是“空值”或“未知值”的占位符。  例如，如果用户未进行选择，则 **[组合框](../controls/control-combo-box.md)** 控件的**所选**属性为*空白*。 许多数据源可以存储和返回 NULL 值，这些值在 PowerApps 中表示为*空白*。
+*Blank* 是“空值”或“未知值”的占位符。  例如，如果用户未进行选择，则 **[组合框](../controls/control-combo-box.md)** 控件的**所选**属性为*空白*。 许多数据源可以存储和返回 NULL 值，这些值在 Power Apps 中表示为*空白*。
 
-PowerApps 中的任何属性或计算值都可以为*空*。  例如，布尔型数据的值通常是：**true** 或 **false**。  但除这两个外，它还可以为*空*，表示状态未知。  这类似于 Microsoft Excel，在这种情况下，工作表单元格的开头为空白，不包含任何内容，但可以保存值**TRUE**或**FALSE** （等等）。 在任何时候，都可以再次清除单元格的内容，并将其返回到*空白*状态。
+Power Apps 中的任何属性或计算值都可以为*空*。  例如，布尔型数据的值通常是：**true** 或 **false**。  但除这两个外，它还可以为*空*，表示状态未知。  这类似于 Microsoft Excel，在这种情况下，工作表单元格的开头为空白，不包含任何内容，但可以保存值**TRUE**或**FALSE** （等等）。 在任何时候，都可以再次清除单元格的内容，并将其返回到*空白*状态。
 
 *空字符串*指的是不包含任何字符的字符串。  [ **Len**函数](function-len.md)对于此类字符串返回零，可以在公式中以两个双引号编写，而不是在 `""`之间。  某些控件和数据源使用空字符串指示 "无值" 条件。  为了简化应用程序创建， **IsBlank**和**合并**函数将测试*空*值或空字符串。    
 
@@ -36,7 +36,7 @@ PowerApps 中的任何属性或计算值都可以为*空*。  例如，布尔型
 > [!NOTE]
 > 我们正在转换一段时间。  到现在为止，还使用了*空白*来报告错误，这使得不可能将有效的 "无值" 与错误区分开来。  出于此原因，目前只有本地集合支持存储*空白*值。  如果在 "文件" 菜单、"应用设置"、"高级设置" 和 "实验功能" 下启用 "公式级错误管理" 实验功能，则可以在其他数据源中存储*空白*值。  我们正在积极努力完成此功能，并将*空白*值正确地分隔开来。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Blank** 函数返回*空白*值。 此函数可用于在支持 NULL 值的数据源中存储这些值，进而可以从字段中有效删除所有值。
 
 **IsBlank**函数测试*空*值或空字符串。  此测试包含空字符串以简化应用程序的创建，因为某些数据源和控件在没有值时使用空字符串。  若要专门测试*空白*值，请使用 `if( Value = Blank(), ...` 而不是**IsBlank**。
@@ -58,7 +58,7 @@ PowerApps 中的任何属性或计算值都可以为*空*。  例如，布尔型
 
 **IsBlank**( *Value* )
 
-* *Value* – 必需。 要测试是否为*空*值或空字符串的值。
+* *Value* - 必需。 要测试是否为*空*值或空字符串的值。
 
 **IsEmpty**( *Table* )
 
@@ -104,7 +104,7 @@ PowerApps 中的任何属性或计算值都可以为*空*。  例如，布尔型
 
 ### <a name="coalesce"></a>Coalesce
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **合并（&nbsp;空白（），&nbsp;1&nbsp;）** |测试从 **Blank** 函数返回的值，此函数始终返回*空白*值。 由于第一个参数为*空*，因此将继续计算下一个参数，直到找到非*空*值和非空字符串。 |**1** |
 | **合并（""，2）** |测试第一个参数为空字符串。 由于第一个参数是空字符串，因此将继续计算下一个参数，直到找到非*空*值和非空字符串。 |**2** |
@@ -113,13 +113,13 @@ PowerApps 中的任何属性或计算值都可以为*空*。  例如，布尔型
 
 ### <a name="isblank"></a>IsBlank
 1. 从头开始创建应用，然后添加一个文本输入控件，并将其命名为“FirstName”。
-2. 添加标签，然后将其 **[Text](../controls/properties-core.md)** 属性设置为以下公式：
+2. 添加一个标签，然后将其 **[Text](../controls/properties-core.md)** 属性设置为以下公式：
 
     ```powerapps-dot
     If( IsBlank( FirstName.Text ), "First Name is a required field." )
     ```
 
-    文本输入控件的“**Text[”](../controls/properties-core.md)** 属性默认设置为“Text input”。 因为此属性包含值，所以它不是空的，标签也不会显示任何消息。
+    文本输入控件的“[Text](../controls/properties-core.md)”属性默认设置为“Text input”。 因为此属性包含值，所以它不是空的，标签也不会显示任何消息。
 3. 从文本输入控件中删除所有字符（包括空格）。
 
     由于 **[Text](../controls/properties-core.md)** 属性不再包含任何字符，因此它为空字符串，并且**IsBlank （FirstName）** 为**true**。 现在就会显示“必填字段”这样的消息了。
@@ -128,7 +128,7 @@ PowerApps 中的任何属性或计算值都可以为*空*。  例如，布尔型
 
 其他示例：
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **IsBlank （&nbsp;空白（）&nbsp;）** |测试从 **Blank** 函数返回的值，此函数始终返回*空白*值。 |**true** |
 | **IsBlank( "" )** |不包含任何字符的字符串。 |**true** |
@@ -149,7 +149,7 @@ PowerApps 中的任何属性或计算值都可以为*空*。  例如，布尔型
     ![](media/function-isblank-isempty/icecream-strawberry-chocolate.png)
 
     其中有两条记录，所以它不是空集。 **IsEmpty( IceCream )** 返回 **false**，**CountRows( IceCream )** 返回 **2**。
-4. 添加第二个按钮，然后将“**OnSelect[”](../controls/properties-core.md)** 属性设置为以下公式：
+4. 添加第二个按钮，然后将“[OnSelect](../controls/properties-core.md)”属性设置为以下公式：
 
     **Clear( IceCream )**
 5. 预览应用，单击或点击第二个按钮，然后关闭预览。  
@@ -162,7 +162,7 @@ PowerApps 中的任何属性或计算值都可以为*空*。  例如，布尔型
 
 还可以使用 **IsEmpty** 测试一个计算的表是不是空表，请参阅以下示例：
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **IsEmpty( [&nbsp;1,&nbsp;2,&nbsp;3 ] )** |单列表包含三条记录，所以，它不是空表。 |**false** |
 | **IsEmpty( [&nbsp;] )** |单列表不包含任何记录，所以它是空表。 |**true** |

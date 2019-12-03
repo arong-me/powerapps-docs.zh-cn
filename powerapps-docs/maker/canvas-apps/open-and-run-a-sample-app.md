@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7a979944d25d683c5b2b4c772cd6859e6ac52f0e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e6ebc516c6b07f149e2b965b967966c3832476c9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541569"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675500"
 ---
 # <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>从 PowerApps 中的示例创建画布应用
 在本快速入门教程中，将根据示例创建一个画布应用，以便探索设计的可能性，并发现在开发自己的应用时可以应用的概念。
 
 每个示例均展示了一个实际场景，但使用的是虚构数据。 若要存储此数据，需要一个云存储帐户，如 Dropbox、GoogleDrive 或 OneDrive。
 
-如果没有适用于 PowerApps 的许可证，可以[免费注册](../signup-for-powerapps.md)。
+如果没有适用于电源应用的许可证，可以[免费注册](../signup-for-powerapps.md)。
 
 ## <a name="open-a-sample-app"></a>打开示例应用
 1. 登录 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
@@ -36,7 +36,7 @@ ms.locfileid: "73541569"
 
 1. 单击或点击手机图标以创建适用于移动设备的应用版本（或保留选定的平板电脑图标），然后单击或点击“生成此应用”。
 
-1. 在 PowerApps Studio 中，单击或点击屏幕顶部中心附近横幅中的“生成自己的应用”。
+1. 在 Power Apps Studio 中，单击或点击屏幕顶部附近的横幅中的 "**创建我自己的应用**"。
 
     ![](./media/open-and-run-a-sample-app/banner.png)
 

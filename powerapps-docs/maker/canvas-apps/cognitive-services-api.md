@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中使用认知服务 | Microsoft 文档
+title: 使用 Power Apps 中的认知服务 |Microsoft Docs
 description: 构建一个使用 Azure 认知服务文本分析 API 的基本画布应用来分析文本。
 author: lancedMicrosoft
 manager: kvivek
@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a998ca743fe693645adaabbd32d4d3110c12068a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2afd849a716034e4a4dbd50fd4ad58af059be18b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540854"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679997"
 ---
 # <a name="use-cognitive-services-in-powerapps"></a>在 PowerApps 中使用认知服务
 本文介绍如何构建使用[Azure 认知服务文本分析 API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview)来分析文本的基本画布应用。 我们将介绍如何设置文本分析 API，以及如何使用[文本分析连接器](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/)连接到它。 随后将介绍如何创建调用此 API 的画布应用。
 
 > [!NOTE]
-> 如果是刚开始接触在 PowerApps 中生成应用，建议先阅读[从头开始创建应用](get-started-create-from-blank.md)，再深入研究本文。
+> 如果不熟悉如何在 Power Apps 中构建应用，建议先阅读[从头开始创建应用](get-started-create-from-blank.md)，然后再深入了解本文。
 
 ## <a name="introduction-to-azure-cognitive-services"></a>Azure 认知服务简介
 Azure 认知服务是一组 Api、Sdk 和服务，可让应用程序更智能、更具吸引力和可发现。 借助这些服务，你可以轻松地将智能功能添加到应用程序，这些功能包括表情和视频检测；面部、语音和视觉识别；以及语音和语言理解等。
@@ -66,7 +66,7 @@ Azure 认知服务是一组 Api、Sdk 和服务，可让应用程序更智能、
     ![API 密钥](./media/cognitive-services-api/azure-keys.png)
 
 ## <a name="build-the-app"></a>生成应用
-至此，已启动并运行文本分析 API，是时候从 PowerApps 连接到它，并生成可调用此 API 的应用了。 这是单屏幕应用，它提供的功能与文本分析 API 页上的演示类似。 我们来开始生成应用！
+现在，你已启动并运行了文本分析 API，接下来，你可以从 Power Apps 连接到它，并构建调用 API 的应用程序。 这是单屏幕应用，它提供的功能与文本分析 API 页上的演示类似。 我们来开始生成应用！
 
 ### <a name="create-the-app-and-add-a-connection"></a>创建应用并添加连接
 首先，创建空白手机应用，并添加与文本分析连接器的连接。 如果需要关于这些任务的详细信息，请参阅[从头开始创建应用](get-started-create-from-blank.md)和[管理 PowerApps 中的连接](add-manage-connections.md)。
@@ -75,7 +75,7 @@ Azure 认知服务是一组 Api、Sdk 和服务，可让应用程序更智能、
 
     ![从空白开始](./media/cognitive-services-api/start-from-blank.png)
 
-2. 在 PowerApps Studio 的中间窗格内，选择“连接到数据”。
+2. 在 Power Apps Studio 的中间窗格中，选择 "**连接到数据**"。
 
 3. 在“数据”面板中，依次单击或点击“新建连接” > “文本分析”。
 

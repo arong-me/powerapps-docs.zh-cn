@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fb0ce1bca968d0e23dc10544a824b340ab336936
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 02c9e680582b6d51a613fd8089709401f1e80b32
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650463"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679744"
 ---
 # <a name="image-control-in-powerapps"></a>PowerApps 中的图像控件
 显示来自本地文件或数据源等来源的图像的控件。
@@ -125,7 +125,7 @@ Transparency – 图像后的控件仍然可见的程度。
 
 ### <a name="show-a-set-of-images-from-a-data-source"></a>显示一组数据源的图像
 1. 下载此 [Excel 文件](https://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx)，并将其保存在本地设备上。
-2. 在 PowerApps Studio 中，创建或打开应用，再单击或点击右侧窗格中的“添加数据源”。
+2. 在 Power Apps Studio 中，创建或打开应用，然后单击或点击右侧窗格中的 "**添加数据源**"。
 
     如果右侧窗格未显示“添加数据源”选项卡，请单击或点击左侧导航栏中的任意屏幕。
 3. 单击或点击“将静态数据添加到应用”，单击或点击已下载的 Excel 文件，然后单击或点击“打开”。

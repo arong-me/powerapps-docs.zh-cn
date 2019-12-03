@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: aa51c97eff57b9659e5fd246af8016898eeeb9df
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b641ce213381dec59a20449cd17cc7919eea0fd4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992247"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678251"
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>PowerApps 中的 Sort 和 SortByColumns 函数
 对[表](../working-with-tables.md)进行排序。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Sort** 函数根据公式对表进行排序。  
 
 系统会针对表的每条[记录](../working-with-tables.md#records)计算公式，然后根据结果对表进行排序。  公式的计算结果必须是数字、字符串或布尔值；不得是表或记录。
@@ -40,7 +40,7 @@ ms.locfileid: "71992247"
 
 除了进行升序或降序排序之外，**SortByColumns** 还可以根据单列表值进行排序。  例如，可以提供 **[ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ]** 作为排序顺序，从而根据星期几的名称对记录进行排序。  所有包含 **Monday"** 的记录会先显示，随后显示包含 **Tuesday** 的记录，依此类推。  与排序顺序表不匹配的记录被置于列表末尾显示。
 
-[表](../working-with-tables.md)是 PowerApps 中的一个值，与字符串或数字类似。  可以向函数传递表，也可以从函数返回表。  **Sort** 和 **SortByColumn** 并不修改表，而是将表视为参数，然后返回排序后的新表。  请参阅[使用表](../working-with-tables.md)，了解更多详情。
+[表](../working-with-tables.md)是 Power Apps 中的一个值，与字符串或数字类似。  可以向函数传递表，也可以从函数返回表。  **Sort** 和 **SortByColumn** 并不修改表，而是将表视为参数，然后返回排序后的新表。  请参阅[使用表](../working-with-tables.md)，了解更多详情。
 
 [!INCLUDE [delegation](../../../includes/delegation.md)]
 
@@ -55,10 +55,10 @@ ms.locfileid: "71992247"
 
 * *Table* - 必需。 要排序的表。
 * *ColumnName(s)* - 必需。 要排序的列名称（以字符串形式）。
-* *SortOrder(s)* - 可选。  **SortOrder.Ascending** 或 **SortOrder.Descending**。  **SortOrder.Ascending** 是默认值。  如果提供了多个 *ColumnNames* ，则最后一列必须包括 *SortOrder* 。
+* *SortOrder(s)* - 可选。  **SortOrder.Ascending** 或 **SortOrder.Descending**。  **SortOrder.Ascending** 是默认值。  如果提供了多个 *ColumnNames*，则最后一列必须包括 *SortOrder*。
   
     > [!NOTE]
-  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“**x0020\_”\_** 。 例如，将“Column Name”指定为“Column_x0020_Name”。
+  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
 
 **SortByColumns**( *Table*, *ColumnName*, *SortOrderTable* )
 
@@ -67,14 +67,14 @@ ms.locfileid: "71992247"
 * *SortOrderTable* - 必需。  作为排序依据的单列表值。
   
     > [!NOTE]
-  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“**x0020\_”\_** 。 例如，将“Column Name”指定为“Column_x0020_Name”。
+  > 对于列名称带空格的 SharePoint 和 Excel 数据源，请将每个空格指定为“\_x0020\_”。 例如，将“Column Name”指定为“Column_x0020_Name”。
 
 ## <a name="examples"></a>示例
 在下面的示例中，我们将使用 **IceCream** [数据源](../working-with-data-sources.md)，其中包含下表中的数据：
 
 ![](media/function-sort/icecream.png)
 
-| 公式 | 说明 | 结果 |
+| 公式 | 描述 | 结果 |
 | --- | --- | --- |
 | **Sort( IceCream, Flavor )**<br><br>**SortByColumns( IceCream, "Flavor" )** |按 **Flavor** 列对 **IceCream** 进行排序。 由于 **Flavor** 列包含字符串，因此该表按字母顺序进行排序。 默认情况下，排序顺序为升序。 |<style> img { max-width: none; } </style> ![](media/function-sort/icecream-flavor.png) |
 | **Sort( IceCream, Quantity )**<br><br>**SortByColumns( IceCream, "Quantity" )** |按 **Quantity** 列对 **IceCream** 进行排序。  由于 **Quantity** 列包含数字，因此该表按数值大小进行排序。  默认情况下，排序顺序为升序。 |![](media/function-sort/icecream-quantity-asc.png) |
@@ -90,7 +90,7 @@ ms.locfileid: "71992247"
 2. 预览应用，选择按钮，然后按 Esc 返回到默认工作区。
 3. 选择“**文件**”菜单上的“**集合**”，调出刚刚创建的集合，然后按 Esc 返回到默认工作区。
 
-#### <a name="sort"></a>排序
+#### <a name="sort"></a>Sort
 1. 添加另一个按钮，然后将其 **[OnSelect](../controls/properties-core.md)** 属性设置为以下公式：<br>
    **ClearCollect( SortByFlavor, Sort( IceCream, Flavor ) )**
    

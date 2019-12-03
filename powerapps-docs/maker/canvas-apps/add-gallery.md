@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6d48b7b6ef1d9d691b733bea9af6ce74d0f2b07a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fd48455f24cd07a09ce3a7cdb44b2fa6da2a0166
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540932"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679238"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>显示 PowerApps 中项的列表
 
 通过向画布应用添加[库](controls/control-gallery.md)控件，显示任意数据源中项的列表。 本主题使用 Excel 作为数据源。 筛选该列表，方法是：将库控件配置为仅显示那些与[文本输入](controls/control-text-input.md)控件中的筛选器条件匹配的项。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备组件
 
 - 了解如何在 PowerApps 中[添加和配置控件](add-configure-controls.md)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "73540932"
 
     1. 为应用指定名称，选择“手机”，然后选择“创建”。
 
-    1. 如果出现“欢迎使用 PowerApps Studio”对话框，则单击“跳过”。
+    1. 如果出现 "**欢迎使用 Power Apps Studio** " 对话框，请选择 "**跳过**"。
 
     1. 与 Excel 文件中的“FlooringEstimates”表[建立连接](add-data-connection.md)。
 

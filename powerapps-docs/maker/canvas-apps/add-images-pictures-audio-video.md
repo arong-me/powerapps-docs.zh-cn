@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 78f091705a01a54b7e6eb008630949796ffac453
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5612f97a3dde96fdb9ea017e34986b7e21c43bd7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541184"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679215"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>在 PowerApps 中使用多媒体文件
 
@@ -26,7 +26,7 @@ ms.locfileid: "73541184"
 
 ## <a name="prerequisites"></a>必备组件
 
-[注册](../signup-for-powerapps.md) PowerApps，然后使用注册所用的同一凭据[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+[注册](../signup-for-powerapps.md)Power Apps，然后使用注册所用的同一凭据[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 ## <a name="add-media-from-a-file-or-the-cloud"></a>从文件或云添加媒体
 
@@ -67,7 +67,7 @@ ms.locfileid: "73541184"
 
 2. 发布视频后，复制其 URL。
 
-3. 通过 PowerApps 的“插入”>“媒体”添加“视频”控件。
+3. 从 "电源应用" 中，从**插入 > 媒体**添加**视频**控件。
 
 4. 将 **Media** 属性设置为已复制的 URL。
 
@@ -81,7 +81,7 @@ ms.locfileid: "73541184"
 此情景使用包含一些 .jpeg 文件的 [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)。
 
 > [!NOTE]
-> Excel 文件中这些图像的路径必须使用正斜线。 当 PowerApps 在 Excel 表格中保存图像路径时，路径使用反斜杠。 如果使用此类中的图像路径，请将 Excel 表格中的路径更改为使用正斜杠而不是反斜杠。 否则图像不会显示。  
+> Excel 文件中这些图像的路径必须使用正斜线。 当 Power Apps 在 Excel 表中保存图像路径时，该路径使用反斜杠。 如果使用此类中的图像路径，请将 Excel 表格中的路径更改为使用正斜杠而不是反斜杠。 否则图像不会显示。  
 
 1. 下载 [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)，并将 **Assets** 文件夹提取到云存储帐户。
 
@@ -130,7 +130,7 @@ ms.locfileid: "73541184"
 
 3. 将该 Excel 文件以文件名 **SavePen.xlsx** 保存到 OneDrive for Business。
 
-4. 在 PowerApps 中，创建一个[空白应用](get-started-create-from-blank.md)。
+4. 在 Power Apps 中，创建一个[空白应用](get-started-create-from-blank.md)。
 
 5. 在该应用中，将 OneDrive for Business 帐户添为[数据源](add-data-connection.md)：
 

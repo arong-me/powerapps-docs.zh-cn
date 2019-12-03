@@ -1,6 +1,6 @@
 ---
 title: 安装和配置画布应用的技术支持示例 | Microsoft Docs
-description: 在 PowerApps 中安装和配置画布应用的技术支持示例的分步说明。
+description: 用于在 Power Apps 中安装和配置画布应用的技术支持示例的分步说明。
 author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dd5d8b8e6757b18feb5da03c503b19e689ca3efe
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fce460ffe808b7a604e1cdceac05a2696b8e10ed
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541249"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676152"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>在 PowerApps 中安装和配置技术支持的示例
 
-在 PowerApps 中安装和配置画布应用的技术支持示例的分步说明。
+用于在 Power Apps 中安装和配置画布应用的技术支持示例的分步说明。
 
 完成以下步骤的估计时间：10-15 分钟
 
@@ -140,7 +140,7 @@ ms.locfileid: "73541249"
 
 ## <a name="download-the-app"></a>下载应用程序
 
-1.  [下载](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) PowerApps 包并将其保存到计算机。
+1.  [下载](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip)Power Apps 包并将其保存到计算机。
 
 ## <a name="create-connections"></a>创建连接
 
@@ -242,7 +242,7 @@ ms.locfileid: "73541249"
     
    > [!TIP]
    > 如果有多个管理员，请使用逗号分隔管理员列表。 示例："admin1@microsoft.com","admin2@microsoft.com"。
-   > 为了确保 AdminList 中的地址与 PowerApps 要求的格式匹配，请选择“视图”>“变量”>“全局”>“MyProfile”，并查看“电子邮件”列，检查要求的电子邮件格式。
+   > 若要确保 AdminList 中的地址与 Power Apps 所需的格式相匹配，请选择 "查看 > Global > MyProfile > 变量"，并查看 "Mail" 列以查看预期的电子邮件格式。
 
 1. 选择“文件” > “保存” > “发布” > “发布此版本”。
 

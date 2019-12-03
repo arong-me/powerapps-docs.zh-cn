@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e8f40f9cd3b15dddfd9fdadbcd15495e33464967
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5eb7bac0197856988f344ae2779bf2b43d1f797f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540893"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679974"
 ---
 # <a name="manage-canvas-app-connections-in-powerapps"></a>管理 PowerApps 中的画布应用连接
 在 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中，创建到一个或多个数据源的连接、删除连接或更新其凭据。
@@ -39,7 +39,7 @@ ms.locfileid: "73540893"
 2. 使用注册所用的同一凭据登录到 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 ## <a name="background-on-data-connections"></a>数据连接的背景信息
-大多数 PowerApps 应用使用称为“数据源”的外部信息，此类信息存储在云服务中。 一个常见的示例是存储在 OneDrive for Business 中的 Excel 文件中的表。 应用可通过使用**连接**访问这些数据源。
+大多数 Power Apps 应用使用称为**数据源**的外部信息，这些信息存储在云服务中。 一个常见的示例是存储在 OneDrive for Business 中的 Excel 文件中的表。 应用可通过使用**连接**访问这些数据源。
 
 最常见的数据源类型是表，它可用于检索和存储信息。 可以利用到数据源的连接，采用 Microsoft Excel 工作簿、SharePoint 列表、SQL 表和许多其他格式来读取和写入数据，并将这些数据存储在 OneDrive for Business、DropBox、SQL Server 等云服务中。
 
@@ -54,7 +54,7 @@ ms.locfileid: "73540893"
 * 打开由其他用户创建的应用并 [与你共享](share-app.md)。
 
 > [!NOTE]
-> 若要改用 PowerApps Studio，请打开“文件”菜单，再单击或点击“连接”，随即会打开 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，可以在其中创建和管理连接。
+> 如果要改为使用 Power Apps Studio，请打开 "**文件**" 菜单，然后单击或点击 "**连接**"， [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)将打开，以便你可以在其中创建和管理连接。
 
 ## <a name="create-a-new-connection"></a>创建新连接
 1. 如果尚未这样做，请登录到 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9f7349faf01d2270427c8cd5862a55e413033023
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: f7e1b4ff10a12d454380c394b2f6ae64389bc23e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650396"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679721"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PowerApps 中的 PDF 查看器控件（实验性）
 显示 PDF 文件内容的实验性控件。
@@ -27,7 +27,7 @@ ms.locfileid: "73650396"
 通过添加此类型的控件并将其“Document”属性设置为要显示的文件的 URL（用双引号括住），来显示 PDF 文件中的文本、图形和其他内容。
 
 ## <a name="limitations"></a>限制
-1. PowerApps 的安全体系结构要求 PDF 查看器仅支持 HTTPS 链接，而不支持 HTTP。  
+1. Power Apps 的安全体系结构需要 PDF 查看器仅支持 HTTPS 链接，而不支持 HTTP。  
 
 2. **文档**属性必须直接链接到 PDF 文件。 不支持服务器重定向或文档的 HTML 视图。
 

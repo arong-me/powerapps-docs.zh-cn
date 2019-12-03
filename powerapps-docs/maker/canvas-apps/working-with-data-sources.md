@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b4dde9c7b24352c1fefc62ff9ec73ba5ec82ee25
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0bb04f9c3c1fc0d2b330e53dd39b355421af84aa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988129"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674273"
 ---
 # <a name="understand-data-sources-for-canvas-apps-in-powerapps"></a>了解 PowerApps 中画布应用的数据源
 
-在 PowerApps 中，大多数画布应用使用云服务中存储的外部信息（称为“数据源”）。 常见的例子是，OneDrive for Business 中存储的 Excel 文件中的表。 应用使用**连接**访问这些数据源。
+在 Power Apps 中，大多数画布应用都使用存储在名为 "**数据源**" 的云服务中的外部信息。 一个常见的示例是存储在 OneDrive for Business 中的 Excel 文件中的表。 应用使用**连接**访问这些数据源。
 
 本文介绍不同类型的数据源，以及如何使用表数据源。
 
@@ -40,27 +40,27 @@ ms.locfileid: "71988129"
 
 ### <a name="local-data-sources"></a>本地数据源
 
-使用 **[库](controls/control-gallery.md)** 、 **[显示窗体](controls/control-form-detail.md)** 和 **[编辑窗体](controls/control-form-detail.md)** 控件可以轻松创建一个可在数据源中读取和写入数据的应用。  若要开始操作，请阅读[了解数据窗体](working-with-forms.md)一文。  
+使用 **[库](controls/control-gallery.md)** 、 **[显示窗体](controls/control-form-detail.md)** 和 **[编辑窗体](controls/control-form-detail.md)** 控件，可以轻松创建一个在数据源中读取和写入数据的应用。  若要开始操作，请阅读[了解数据窗体](working-with-forms.md)一文。  
 
-如果想要让 PowerApps 基于数据创建应用，需使用这些控件。 在幕后，应用使用内部表来存储和处理来自数据源的数据。
+当你要求 Power Apps 从数据创建应用时，将使用这些控件。 在幕后，应用使用内部表来存储和处理来自数据源的数据。
 
 一种特殊的数据源是[集合](working-with-data-sources.md#collections)，它位于应用本地，而不是基于与云中服务建立的连接，因此，无法在同一用户的设备之间或者在不同的用户之间共享信息。 可在本地加载和保存集合。
 
 ### <a name="kinds-of-tables"></a>表的类型
 
-PowerApps 应用内部的表为固定值，就如同数字或字符串是值一样。 内部表不会存储在任何位置，而只存在于应用的内存中。 无法直接修改表的结构和数据。 替代做法是通过公式创建一个新表：使用该公式创建原始表的修改副本。
+Power Apps 应用程序内部的表是固定值，正如数字或字符串是值一样。 内部表不会存储在任何位置，而只存在于应用的内存中。 无法直接修改表的结构和数据。 替代做法是通过公式创建一个新表：使用该公式创建原始表的修改副本。
 
-外部表存储在数据源中，供日后检索和共享。  PowerApps 提供用于读取和写入存储数据的“连接”。  在一个连接中可以访问多个信息表。  可以选择要在应用中使用哪些表，每个表将成为独立的 *数据源* 。  
+外部表存储在数据源中，供日后检索和共享。  Power Apps 提供 "连接" 来读取和写入存储的数据。  在一个连接中可以访问多个信息表。  可以选择要在应用中使用哪些表，每个表将成为独立的 *数据源* 。  
 
 若要了解详细信息，请参阅[使用表](working-with-tables.md)，其中更详细介绍了内部表，但该文章同样适用于驻留在云服务中的外部表。
 
 ## <a name="working-with-tables"></a>使用表
-可以像使用内部 PowerApps 表一样使用表数据源。  与内部表一样，每个数据源具有可在公式中使用的[记录](working-with-tables.md#records)、[列](working-with-tables.md#columns)和属性。 此外：
+您可以使用表数据源，与使用内部 Power Apps 表的方式相同。  与内部表一样，每个数据源具有可在公式中使用的[记录](working-with-tables.md#records)、[列](working-with-tables.md#columns)和属性。 此外：
 
 * 数据源包含的列名称和数据类型与连接中的基础表相同。
   
     > [!NOTE]
-  > 对于列名称带空格的 SharePoint 和 Excel 数据源，PowerApps 会将空格替换为“\_x0020\_”。 例如，如果 SharePoint 或 Excel 中的“Column Name”在数据布局中显示或用于公式，它将在 PowerApps 中显示为“Column_x0020_Name”。
+  > 对于包含带有空格的列名称的 SharePoint 和 Excel 数据源，Power Apps 会将空格替换为 **"\_x0020\_"** 。 例如，当在数据布局中显示或用于公式时，SharePoint 或 Excel 中的 **"列名"** 将显示为 **"Column_x0020_Name"** 。
 * 加载应用时，将自动从服务中加载数据源。  可以 **[Refresh](functions/function-refresh.md)** 函数强制刷新数据。
 * 用户运行某个应用时，可以创建、修改和删除记录，然后将这些更改推回到服务中的基础表。
   * 可以使用 **[Patch](functions/function-patch.md)** 和 **[Collect](functions/function-clear-collect-clearcollect.md)** 函数创建记录。  
@@ -70,7 +70,7 @@ PowerApps 应用内部的表为固定值，就如同数字或字符串是值一�
 * **[DataSourceInfo](functions/function-datasourceinfo.md)** 、 **[Defaults](functions/function-defaults.md)** 和 **[Validate](functions/function-validate.md)** 函数提供有关数据源的、可用于优化用户体验的信息。
 
 ### <a name="creating-data-sources"></a>创建数据源
-无法使用 PowerApps 创建连接的数据源或修改此类数据源的结构；数据源必须已在服务的某个位置存在。 例如，若要在 OneDrive 上存储的 Excel 工作簿中创建表，首先应使用 OneDrive 上的 Excel Online 创建一个工作簿。 接下来，可通过应用与该工作簿建立连接。  
+不能使用 Power Apps 创建连接的数据源，也不能修改其结构;数据源在某个服务中必须已经存在。 例如，若要在 OneDrive 上存储的 Excel 工作簿中创建表，首先应使用 OneDrive 上的 Excel Online 创建一个工作簿。 接下来，可通过应用与该工作簿建立连接。  
 
 但是， *可以* 在应用内部创建和修改集合数据源，不过，这种数据源只是临时性的。
 
@@ -80,7 +80,7 @@ PowerApps 应用内部的表为固定值，就如同数字或字符串是值一�
 * 信息通过存储服务（在本例中为 Office 365 站点的 SharePoint 列表）存储和共享。
 * 可以通过连接来向应用提供此信息。  该连接负责对访问信息的用户进行身份验证。
 * 启动应用或者调用 **[Refresh](functions/function-refresh.md)** 函数时，信息将从连接抽取到应用中的数据源供本地使用。
-* 可以使用公式读取信息，并在用户可见的控件中公开这些信息。 您可以使用屏幕上的库来显示数据源的记录，并将 **[Items](controls/properties-core.md)** 属性连结到数据源：**库。 Items = DataSource**。  使用控件的 **[Default](controls/properties-core.md)** 属性将库中的控件连接到该库。  
+* 可以使用公式读取信息，并在用户可见的控件中公开这些信息。 通过在屏幕上使用库并将 **[Items](controls/properties-core.md)** 属性连接到数据源来显示该数据源的记录：**Gallery.Items = DataSource**。  使用控件的 **[Default](controls/properties-core.md)** 属性将库中的控件连接到该库。  
 * 数据源也是一个表。  因此，在使用整个数据源之前，可以使用 **[Filter](functions/function-filter-lookup.md)** 、 **[Sort](functions/function-sort.md)** 、 **[AddColumns](functions/function-table-shaping.md)** 和其他函数来对它进行优化和补充。  还可以使用 **[Lookup](functions/function-filter-lookup.md)** 、 **[First](functions/function-first-last.md)** 、 **[Last](functions/function-first-last.md)** 和其他函数来处理单条记录。
 
 ### <a name="modify-a-record"></a>修改记录
@@ -104,7 +104,7 @@ PowerApps 应用内部的表为固定值，就如同数字或字符串是值一�
 * *可立即向用户反馈* 。  解决问题的最佳时机就是在发生问题的那一刻，用户还没有忘记前因时。  例如，当用户每次触屏或击键时，出现一段红色文本来提醒用户输入有问题。
 * *降低网络流量和用户延迟* 。  在应用中检测到的问题越多，就意味着可用于通过网络检测和解决问题的对话更少。  每次对话都需要占用一定的时间，而用户必须等待这段时间才能继续操作。
 
-PowerApps 提供两个验证工具：
+Power Apps 提供两个用于验证的工具：
 
 * 数据源可以提供有关哪些内容有效、哪些内容无效的信息。  例如，数字可能包括最小值和最大值，并且需要提供一个或多个输入项。  可以使用 **[DataSourceInfo](functions/function-datasourceinfo.md)** 函数访问此信息。  
 * **[Validate](functions/function-validate.md)** 函数使用相同的信息来检查单个列或整条记录的值。

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 114474696f85980da315b6dd225250dc1b197805
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0a0871374bad90156f9b3626b58a68eb77bfb499
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992800"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680227"
 ---
 # <a name="errors-function-in-powerapps"></a>PowerApps 中的 Errors 函数
 提供之前对[数据源](../working-with-data-sources.md)的更改的错误信息。
@@ -30,7 +30,7 @@ ms.locfileid: "71992800"
 
 可使用 **[Validate](function-validate.md)** 和 **[DataSourceInfo](function-datasourceinfo.md)** 函数在错误出现之前避免这些错误。  请参阅[使用数据源](../working-with-data-sources.md)，了解如何处理和避免错误的更多建议。
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 **Errors** 函数会返回一个错误的[表](../working-with-tables.md)，其中包含以下[列](../working-with-tables.md#columns)：
 
 * **记录**。  数据源中有错误的记录。  如果在记录的创建过程中发生错误，此列将为*空白*。
@@ -38,7 +38,7 @@ ms.locfileid: "71992800"
 * **消息**。  错误的说明。  可为最终用户显示此错误字符串。  请注意，此消息可能由数据源生成，可能会很长且包含可能对用户没有任何意义的原始列名称。
 * **错误**。  可在公式中使用以帮助解决错误的错误代码：
 
-| ErrorKind | 说明 |
+| ErrorKind | 描述 |
 | --- | --- |
 | ErrorKind.Conflict |对同一个记录进行了其他更改，从而导致更改冲突。  使用 **[Refresh](function-refresh.md)** 函数重新加载记录，尝试再次进行更改。 |
 | ErrorKind.ConstraintViolation |违反了一个或多个约束。 |
@@ -63,7 +63,7 @@ ms.locfileid: "71992800"
 ## <a name="syntax"></a>语法
 **Errors**( *DataSource* [, *Record* ] )
 
-* *DataSource* – 必需。 要为其返回错误的数据源。
+* *DataSource* - 必需。 要为其返回错误的数据源。
 * *Record* - 可选。  要为其返回错误的特定记录。 如果未指定此参数，函数将返回整个数据源的错误。
 
 ## <a name="examples"></a>示例
@@ -82,7 +82,7 @@ ms.locfileid: "71992800"
 
 其中 **Gallery.Updates** 计算结果为 **{ Quantity: 90 }** ，因为只修改了 **Quantity** 属性。
 
-但就在调用 **[Patch](function-patch.md)** 函数之前，其他人将 Chocolate 的 **Quantity** 修改为 80。  PowerApps 将检测到此情况，且不允许发生更改冲突。  可使用以下公式检查是否存在这种情况：
+但就在调用 **[Patch](function-patch.md)** 函数之前，其他人将 Chocolate 的 **Quantity** 修改为 80。  Power Apps 将检测到此情况，而不允许发生冲突的更改。  可使用以下公式检查是否存在这种情况：
 
 * **IsEmpty( Errors( IceCream, EditRecord ) )**
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f58f8e15d1bd522bd9c24d7e3e1dfe9a69b4d257
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 21effecae904675e39c914145ee10df9c81ec752
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541008"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679836"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>从 PowerApps 连接到 Twitter
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -32,7 +32,7 @@ ms.locfileid: "73541008"
 [!INCLUDE [connection-requirements](../../../includes/connection-requirements.md)]
 
 ## <a name="connect-to-twitter"></a>连接到 Twitter
-1. 打开 PowerApps，选择“新建”，然后创建一个“空白应用”。 选择手机或平板电脑布局。 平板电脑布局为你提供了多个工作区：  
+1. 打开 "电源应用"，选择 "**新建**"，然后创建一个**空白应用**。 选择手机或平板电脑布局。 平板电脑布局为你提供了多个工作区：  
 
    ![打开一个空白应用](./media/connection-twitter/blank-app.png)
 2. 在右侧窗格中，单击或点击“数据源”选项卡，然后单击或点击“添加数据源”。

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 29fcc240bdf0dbe926acb702c26d535fb4536c16
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: b2a2aa1baf93008fa908ca3f73aebfde64c9b239
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73537115"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680043"
 ---
 # <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>在 PowerApps 中添加和配置画布应用控件
 
@@ -26,9 +26,9 @@ ms.locfileid: "73537115"
 
 ## <a name="prerequisites"></a>必备组件
 
-1. 如果还没有 PowerApps 许可证，请[注册](../signup-for-powerapps.md)，然后[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 如果还没有 Power Apps 许可证，请[注册](../signup-for-powerapps.md)，然后[登录](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 1. 在 "**制作自己的应用**" 下，将鼠标悬停在**画布应用上，从空白开始**，然后选择 "**生成此应用**"。
-1. 如果系统提示你执行简介教程，请选择 "**下一步**" 以熟悉 PowerApps 界面的关键区域（或选择 "**跳过**"）。
+1. 如果系统提示你执行简介教程，请选择 "**下一步**" 以熟悉电源应用界面的关键区域（或选择 "**跳过**"）。
 
     稍后，你可以通过选择屏幕右上角附近的问号图标，然后选择 **"拍摄简介教程**"，来随时学习教程。
 

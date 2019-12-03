@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 992ff4ccfae533908acac96efaa117a726198334
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8d9916c3fa62aab947315b7c31daa96f7e528acd
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984713"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680273"
 ---
 # <a name="iferror-function-in-powerapps"></a>PowerApps 中的 IfError 函数
 
@@ -27,9 +27,9 @@ ms.locfileid: "71984713"
 ## <a name="description"></a>描述
 
 > [!NOTE]
-> 此函数是试验性功能的一部分，并可能会发生变化。 本主题描述的行为仅在 "*公式级别错误管理*" 功能打开时可用。 此应用级设置默认情况下处于关闭状态。 若要启用此功能，请打开 "*文件*" 选项卡，在左侧菜单中选择 "*应用设置*"，然后选择 "*实验性功能*"。 你的反馈对我们非常重要，请通过 [PowerApps 社区论坛](https://powerusers.microsoft.com/t5/Expressions-and-Formulas/bd-p/How-To)提供反馈。
+> 此函数是试验性功能的一部分，并可能会发生变化。 本主题描述的行为仅在 "*公式级别错误管理*" 功能打开时可用。 此应用级设置默认情况下处于关闭状态。 若要启用此功能，请打开 "*文件*" 选项卡，在左侧菜单中选择 "*应用设置*"，然后选择 "*实验性功能*"。 你的反馈对我们非常有用-请告诉我们你在[Power Apps 社区论坛](https://powerusers.microsoft.com/t5/Expressions-and-Formulas/bd-p/How-To)中的看法。
 
-**IfError**函数将测试一个或多个值，直到它找到错误结果。 如果函数发现错误，该函数将返回相应的值。 否则，该函数将返回默认值。 在任一情况下，函数可能会返回要显示的字符串、要计算的公式或其他形式的结果。 **IfError**函数类似于**If**函数：**IfError**测试错误，但**如果**测试为**true**，则为。
+**IfError**函数将测试一个或多个值，直到它找到错误结果。 如果函数发现错误，该函数将返回相应的值。 否则，该函数将返回默认值。 在任一情况下，函数可能会返回要显示的字符串、要计算的公式或其他形式的结果。 **IfError**函数类似于**If**函数： **IfError**测试错误，但**如果**测试为**true**，则为。
 
 使用**IfError**将错误值替换为有效值。 例如，如果用户输入可能会导致被零除，则使用此函数。 生成一个公式，将结果替换为0或另一个适用于应用的值，以便可以继续下游计算。 公式可以像以下示例那样简单：
 
@@ -54,7 +54,7 @@ IfError(
 
 ## <a name="syntax"></a>语法
 
-**IfError**（ *Value1*， *Fallback1* [， *Value2*， *Fallback2*，...[， *DefaultResult* ]])
+**IfError**（ *Value1*， *Fallback1* [， *Value2*， *Fallback2*，.。。[， *DefaultResult* ]])
 
 * *Value （s）* -必需。 测试错误值的公式。
 * *Fallback(s)* - 必需。 如果匹配的*值*参数返回错误，则为要计算的公式和要返回的值。

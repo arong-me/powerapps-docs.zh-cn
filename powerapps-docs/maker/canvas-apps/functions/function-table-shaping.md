@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6f2dfae897a19c66e493cbdecd897df87b8194c2
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 55e38d2be5f43e1b13fc1894f88aac26a26bd57e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992215"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678203"
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>PowerApps 中的 AddColumns、DropColumns、RenameColumns 和 ShowColumns 函数
 通过添加、删除、重命名和选择[表](../working-with-tables.md)的[列](../working-with-tables.md#columns)来为表造型。
@@ -30,7 +30,7 @@ ms.locfileid: "71992215"
 * 将计算结果列（例如，显示“数量”乘以“单价”后的结果的“总价”列）添加到某个表。
 * 使用更有意义的名称将列重命名，以便向用户显示或者在公式中使用。
 
-表是 PowerApps 中的一个值，与字符串或数字类似。  可将表指定为公式中的参数，函数可以返回表作为结果。
+表是 Power Apps 中的一个值，与字符串或数字类似。  可将表指定为公式中的参数，函数可以返回表作为结果。
 
 > [!NOTE]
 > 本主题描述的函数不会修改原始表。 相反，它们将该表作为参数，并返回一个应用了转换的新表。 请参阅[使用表](../working-with-tables.md)，了解更多详情。  

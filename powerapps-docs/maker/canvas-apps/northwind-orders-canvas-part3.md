@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 010d567369e9c580b57a55ad251ac5ef01da3597
-ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
+ms.openlocfilehash: 7e29674e689ff77599bb49c58e7b0edbc028b6be
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73741360"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675966"
 ---
 # <a name="create-a-detail-gallery-in-a-canvas-app"></a>在画布应用中创建详细信息库
 
@@ -47,7 +47,7 @@ ms.locfileid: "73741360"
 1. 采用以下任一方式从副本中删除文本：
 
     - 双击文本将其选中，然后按 Delete。
-    - 将标签的 " **Text** " 属性设置为空字符串（**""**）。
+    - 将标签的 " **Text** " 属性设置为空字符串（ **""** ）。
 
     > [!div class="mx-imgBorder"]
     > ![从标题栏副本中删除文本](media/northwind-orders-canvas-part3/details-02.png)
@@ -183,7 +183,7 @@ ms.locfileid: "73741360"
     Text( ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
     ```
 
-    如果不包含语言标记（**[$-en-us]**），则将根据语言和区域为你添加。 如果使用其他语言标记，则需要删除位于右方括号（**]**）之后的**$** ，然后在该位置添加您自己的货币符号。
+    如果不包含语言标记（ **[$-en-us]** ），则将根据语言和区域为你添加。 如果使用其他语言标记，则需要删除位于右方括号（ **]** ）之后的 **$** ，然后在该位置添加您自己的货币符号。
 
     > [!div class="mx-imgBorder"]
     > ![显示单位价格](media/northwind-orders-canvas-part3/details-15.png)
@@ -201,7 +201,7 @@ ms.locfileid: "73741360"
     Text( ThisItem.Quantity * ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
     ```
 
-    同样，如果不包含语言标记（**[$-en-us]**），则将根据语言和区域为你添加。 如果标记不同，则需要使用自己的货币符号，而不是右方括号（**]**）后的**$** 。
+    同样，如果不包含语言标记（ **[$-en-us]** ），则将根据语言和区域为你添加。 如果标记不同，则需要使用自己的货币符号，而不是右方括号（ **]** ）后的 **$** 。
 
     > [!div class="mx-imgBorder"]
     > ![显示扩展价格](media/northwind-orders-canvas-part3/details-17.png)
@@ -358,7 +358,7 @@ ms.locfileid: "73741360"
 1. 按住 Alt 键的同时，选择组合框的向下箭头。
 
     > [!TIP]
-    > 按下 Alt 键，无需打开预览模式，即可与 PowerApps Studio 中的控件交互。
+    > 按下 Alt 键，无需打开预览模式，就可以与 Power Apps Studio 中的控件交互。
 
 1. 在显示的产品列表中，选择一个产品：
 
@@ -367,7 +367,7 @@ ms.locfileid: "73741360"
 
 ## <a name="add-a-product-image"></a>添加产品映像
 
-1. 在 "**插入**" 选项卡上，选择 " **Media**  > "**图像**：
+1. 在 "**插入**" 选项卡上，选择 " **Media** > "**图像**：
 
     > [!div class="mx-imgBorder"]
     > ![插入图像控件](media/northwind-orders-canvas-part3/add-details-15.png)
@@ -392,7 +392,7 @@ ms.locfileid: "73741360"
 
 ## <a name="add-a-quantity-box"></a>添加数量框
 
-1. 在 "**插入**" 选项卡上，选择 "**文本**"  > **文本输入**：
+1. 在 "**插入**" 选项卡上，选择 "**文本**" > **文本输入**：
 
     > [!div class="mx-imgBorder"]
     > ![添加文本输入框](media/northwind-orders-canvas-part3/add-details-18.png)
@@ -409,7 +409,7 @@ ms.locfileid: "73741360"
 
     使用此文本输入框，用户将指定**订单详细信息**记录的**数量**字段。
 
-1. 将此控件的**默认**属性设置为 **""**：
+1. 将此控件的**默认**属性设置为 **""** ：
 
     > [!div class="mx-imgBorder"]
     > ![设置文本输入框的 * * Default * * 属性](media/northwind-orders-canvas-part3/add-details-21.png)
@@ -440,7 +440,7 @@ ms.locfileid: "73741360"
     此控件显示 "**订单产品**" 实体的**定价**。 此值将确定**订单详细信息**记录中的 "**单价**" 字段。
 
     > [!NOTE]
-    > 对于此方案，此值是只读的，但其他方案可能会调用应用程序用户来修改它。 在这种情况下，请使用**文本输入**控件，**并将其****默认**属性设置为标价。
+    > 对于此方案，此值是只读的，但其他方案可能会调用应用程序用户来修改它。 在这种情况下，请使用**文本输入**控件，**并将其** **默认**属性设置为标价。
 
 1. 在 "**主页**" 选项卡上，将列表价格标签的文本对齐方式设置为 "**右**"：
 
@@ -567,7 +567,7 @@ ms.locfileid: "73741360"
 
 总之，你添加了另一个库来显示订单详细信息，以及在应用程序中添加和删除订单详细信息的控件。 你使用了以下元素：
 
-- 第二个库控件，通过一对多关系链接到订单库： **Gallery2**  =  `Gallery1.Selected.'Order Details'`
+- 第二个库控件，通过一对多关系链接到订单库： **Gallery2** = `Gallery1.Selected.'Order Details'`
 - 从**订单详细信息**实体到**订单 Products**实体的多对一关系： `ThisItem.Product.'Product Name'` 和 `ThisItem.Product.Picture`
 - 用于获取产品列表的**选项**函数： `Choices( 'Order Details'.Product' )`
 - 组合框的**所选**属性为完整的多对一相关记录： `ComboBox1.Selected.Picture` 和 `ComboBox1.Selected.'List Price'`

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4eab4585a2abd8633704c76b57cde52702982e97
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 387089ea2ee40e8a0d418ab110d7544c17d7c423
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994029"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679882"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>从 PowerApps 连接到 Microsoft Translator
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -33,7 +33,7 @@ ms.locfileid: "71994029"
 [!INCLUDE [connection-requirements](../../../includes/connection-requirements.md)]
 
 ## <a name="connect-to-microsoft-translator"></a>连接到 Microsoft Translator
-1. 打开 PowerApps，选择“新建”，然后创建一个“空白应用”。 选择手机或平板电脑布局。 平板电脑布局为你提供了多个工作区：  
+1. 打开 "电源应用"，选择 "**新建**"，然后创建一个**空白应用**。 选择手机或平板电脑布局。 平板电脑布局为你提供了多个工作区：  
 
    ![打开一个空白应用](./media/connection-microsoft-translator/blank-app.png)
 2. 在右侧窗格中，单击或点击“数据”选项卡，然后单击或点击“添加数据源”。
@@ -156,7 +156,7 @@ ms.locfileid: "71994029"
 | 名称 |字符串 |否 | |
 
 ### <a name="texttospeech"></a>TextToSpeech
-文本到语音：将给定文本转换为声波格式音频流的语音
+文本到语言：将给定文本转换为声波格式音频流的语音
 
 #### <a name="input-properties"></a>输入属性
 

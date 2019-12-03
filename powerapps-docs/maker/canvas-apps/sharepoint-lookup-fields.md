@@ -1,6 +1,6 @@
 ---
 title: 在画布应用中通过查找字段创建 SharePoint 列表之间的关系 | Microsoft Docs
-description: 在 PowerApps 的画布应用中，使用查阅字段创建 SharePoint 列表之间的关系。
+description: 在 Power Apps 中，使用画布应用中的查找字段创建 SharePoint 列表之间的关系。
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2c1cce350c394d2809de4c3354b7b471af987236
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bef5a66569a201a76c36da9b1e828169df7f3cb9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541410"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674828"
 ---
 # <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-powerapps"></a>在 PowerApps 中，如何使用查阅字段关联 SharePoint 列表
 
@@ -96,7 +96,7 @@ SharePoint 提供两种查阅字段：
 ## <a name="create-an-app-from-the-assets-list"></a>根据 Assets 列表创建应用
 使用此应用向 **Assets** 列表添加数据。
 
-1. [登录到 PowerApps Studio](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 如果你是 PowerApps 新用户，可使用组织的电子邮件地址[免费注册](https://powerapps.microsoft.com)。
+1. [登录到 Power Apps Studio](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 如果不熟悉电源应用，请使用组织电子邮件地址[免费注册](https://powerapps.microsoft.com)。
 
 2. 在“文件”菜单中（沿左边缘），单击或点击“新建”，然后单击或点击“SharePoint”。
 

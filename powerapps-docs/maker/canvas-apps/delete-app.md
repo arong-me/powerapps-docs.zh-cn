@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4a60443011b700c1202c904a84ad631e25572daf
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.openlocfilehash: ddfa8def32e56ac49c2a3dc98757bb6d0bbe825a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74177592"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678525"
 ---
 # <a name="delete-a-canvas-app-from-powerapps"></a>从 PowerApps 中删除画布应用
-本文演示如何从 PowerApps 帐户及任何与应用共享的人的帐户中删除画布应用。
+本文介绍如何从 Power Apps 帐户以及与应用共享的任何人的帐户中删除画布应用。
 
 ## <a name="delete-an-app-from-your-account"></a>从帐户中删除应用
 1. 打开[powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后在左侧**树视图**窗格中选择 "**应用**"。

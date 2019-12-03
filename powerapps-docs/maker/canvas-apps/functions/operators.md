@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e96c7bda3740143339130d3e56a04703aae5fc7c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8c44db7094425366822d7924b771070d9e9a5ec5
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990234"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676618"
 ---
 # <a name="operators-in-powerapps"></a>PowerApps 中的运算符
 
@@ -52,7 +52,7 @@ ms.locfileid: "71990234"
 |                               **in**                                |                       &nbsp;                        |                                                      **&quot;The&quot; in &quot;The keyboard and the monitor...&quot;**                                                      |                                                                                                                子字符串测试（不区分大小写）                                                                                                                 |
 |                                **@**                                | [消除歧义运算符](#disambiguation-operator) |                                                                           **MyTable[@fieldname]**                                                                            |                                                                                                                       字段消除歧义                                                                                                                       |
 |                                **@**                                |                       &nbsp;                        |                                                                              **[@MyVariable]**                                                                               |                                                                                                                      全局消除歧义                                                                                                                       |
-| **,**<br>[[依赖语言](../global-apps.md)]  |                   列表分隔符                    | **If( X < 10, "Low", "Good" )**<br>**{X：12，Y：32}**<br>**[ 1, 2, 3 ]** | 分隔： <ul><li>函数调用中的参数</li><li>[记录](../working-with-tables.md#elements-of-a-table)中的字段</li><li>[表](../working-with-tables.md#inline-value-tables)中的记录</li></ul> 此字符取决于语言。 |
+| **,**<br>[[依赖语言](../global-apps.md)]  |                   列表分隔符                    | **If( X < 10, "Low", "Good" )**<br>**{ X: 12, Y: 32 }**<br>**[ 1, 2, 3 ]** | 分隔： <ul><li>函数调用中的参数</li><li>[记录](../working-with-tables.md#elements-of-a-table)中的字段</li><li>[表](../working-with-tables.md#inline-value-tables)中的记录</li></ul> 此字符取决于语言。 |
 | **;**<br>[[依赖语言](../global-apps.md)] |                  公式链接                   |                                     **Collect(T, A); Navigate(S1, &quot;&quot;)**                                     |                                                                          在行为属性中分隔函数的调用。 链接运算符依赖于语言。                                                                          |
 |                             **Parent**                              |         [Parent 运算符](#parent-operator)         |                                                                               **Parent.Fill**                                                                                |                                                                                                           控件容器属性的访问权限                                                                                                            |
 |                            **ThisItem**                             |       [ThisItem 运算符](#thisitem-operator)       |                                                                            **ThisItem.FirstName**                                                                            |                                                                                                          库或窗体控件字段的访问权限                                                                                                           |
@@ -80,9 +80,9 @@ ms.locfileid: "71990234"
 ## <a name="parent-operator"></a>Parent 运算符
 某些控件托管其他控件。 例如， **[屏幕](../controls/control-screen.md)** 、 **[库](../controls/control-gallery.md)** 、 **[卡](../controls/control-card.md)** 、 **[编辑窗体](../controls/control-form-detail.md)** 和 **[显示窗体](../controls/control-form-detail.md)** 控件都是控件的容器。 我们将托管控件称为控件内部的“父级”。
 
-PowerApps 中的任何控件都可由应用内任何位置的名称引用。 **Screen1** 可能是应用中屏幕的名称。 若要检索此屏幕的背景色，可以使用 **Screen1.Fill**。
+可以从应用内的任何位置按名称引用 Power Apps 中的任何控件。 **Screen1** 可能是应用中屏幕的名称。 若要检索此屏幕的背景色，可以使用 **Screen1.Fill**。
 
-此屏幕上的控件具有其他选项。 它们可以使用相对引用：**Parent。填充**。 **[Parent](operators.md#parent-operator)** 运算符指的是托管此控件，并使其所有属性可用的控件。 **[Parent](operators.md#parent-operator)** 非常有用，因为它不依赖于控件的名称。 可以复制并粘贴容器控件，无需调整容器内的任何引用。 在读取公式时，此运算符还使子控件和父控件之间的关系更为明确。
+此屏幕上的控件具有其他选项。 它们可以使用相对引用：**Parent.Fill**。 **[Parent](operators.md#parent-operator)** 运算符指的是托管此控件，并使其所有属性可用的控件。 **[Parent](operators.md#parent-operator)** 非常有用，因为它不依赖于控件的名称。 可以复制并粘贴容器控件，无需调整容器内的任何引用。 在读取公式时，此运算符还使子控件和父控件之间的关系更为明确。
 
 ## <a name="disambiguation-operator"></a>消除歧义运算符
 某些函数创建[记录作用域](../working-with-tables.md#record-scope)，从而在处理每个记录时访问表的字段，例如 **Filter**、**AddColumns** 和 **Sum**。  使用记录作用域添加的字段名称将替代应用中来自其他位置的同一名称。  在此情况下，仍可以使用 **@** 消除歧义运算符访问来自记录作用域外部的值：
