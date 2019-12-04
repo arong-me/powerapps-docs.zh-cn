@@ -3,9 +3,9 @@
   items:
     - name: 入门
       items:
-        - name: PowerApps 管理员有何职责？
+        - name: Power Apps 管理员有何职责？
           href: overview-role-powerapps-admin.md
-        - name: PowerApps 企业版部署白皮书
+        - name: Power Apps 企业版部署白皮书
           href: admin-powerapps-enterprise-deployment.md
     - name: 许可
       items:
@@ -23,7 +23,7 @@
           href: admin-manage-apps.md
         - name: 在租户或环境之间移动应用
           href: environment-and-tenant-migration.md
-        - name: 对 PowerApps 的 PowerShell 支持（预览版）
+        - name: 对 Power Apps 的 PowerShell 支持（预览版）
           href: powerapps-powershell.md
         - name: PowerApps 的活动日志
           href: 'https://docs.microsoft.com/power-platform/admin/logging-powerapps'
@@ -39,7 +39,7 @@
               href: powerapps-gdpr-dsr-guide-systemlogs.md
             - name: Common Data Service 数据集成
               href: data-integration-gdpr-dsr-guide.md
-            - name: PowerApps 客户数据
+            - name: Power Apps 客户数据
               href: powerapps-gdpr-dsr-guide.md
               items:
                 - name: 导出数据

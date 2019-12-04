@@ -1,6 +1,6 @@
 ---
-title: 如何在 PowerApps 中查找并运行应用？ | Microsoft Docs
-description: 有关如何查找和运行 PowerApps 应用的概述。
+title: 如何在 Power Apps 中查找并运行应用？ | Microsoft Docs
+description: 有关如何查找和运行 Power Apps 应用的概述。
 author: mduelae
 ms.service: powerapps
 ms.component: pa-user
@@ -16,20 +16,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ab91653f26bc9ca177cc5841e7dbc158b13d7696
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.openlocfilehash: 246b147ff55a7959f7ee2f2cdfa1a1e01fbd7ef1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71705286"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680434"
 ---
 # <a name="how-do-i-find-and-run-apps"></a>如何查找并运行应用？
 
-无需手动处理任务来完成工作。 借助 PowerApps，可以创建和使用画布应用或模型驱动应用来快速完成工作。 创建应用后，可以与组织共享应用。 
+无需手动处理任务来完成工作。 借助 Power Apps，可以创建和使用画布应用或模型驱动应用来快速完成工作。 创建应用后，可以与组织共享应用。 
 
 [画布应用](/powerapps/maker/canvas-apps/getting-started)为用户提供了许多对应用用户体验的控制。 应用开发者可使用模板来创建画布应用，也可按喜欢的任意方式配置该应用。 顾名思义，画布应用是一种空白画布，你可以创建应用来满足组织中用户的需求。
 
-由于画布应用本质上可以是任何应用，因此没有许多关于如何在创建后使用画布应用的帮助文档。 如需有关使用画布应用的帮助，请联系你的应用创建者或 PowerApps 管理员。
+由于画布应用本质上可以是任何应用，因此没有许多关于如何在创建后使用画布应用的帮助文档。 如需有关使用画布应用的帮助，请联系你的应用创建者或 Power Apps 管理员。
 
 [模型驱动型应用](/powerapps/maker/model-driven-apps/model-driven-app-overview)使用[统一接口](unified-interface.md)，它提供一种响应性和可访问的设计。 可以在 web 浏览器或常用的移动设备上运行应用。 该应用具有多个组件，包括仪表板、窗体、视图、图表和业务流程，这些组件使该应用易于使用。
 
@@ -38,7 +38,7 @@ ms.locfileid: "71705286"
 
 ## <a name="whats-required-to-run-apps"></a>运行应用程序需要什么？
 - 确保使用的是[支持的设备平台和浏览器](../maker/canvas-apps/limits-and-config.md)。
-- 若要运行画布应用，请从 [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) 或 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) 下载并安装 PowerApps。
+- 若要运行画布应用，请从 [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) 或 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) 下载并安装 Power Apps。
 - 要运行模型驱动型应用：
     - 如果使用手机，请从 [App Store](https://itunes.apple.com/app/dynamics-crm-for-phones/id1003997947?ls=1&mt=8) 或 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmphone) 下载并安装手机版 Dynamics 365。 
     - 如果使用平板电脑，请从 [App Store](https://itunes.apple.com/app/microsoft-dynamics-crm/id678800460?mt=8)、[Google Play](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmtablet) 或 [Microsoft Store](https://www.microsoft.com/store/p/microsoft-dynamics-365/9nblggh4rfqp) 下载平板电脑版 Dynamics 365。

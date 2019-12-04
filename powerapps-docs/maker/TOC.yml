@@ -1,6 +1,6 @@
 - name: 入门
   items:
-    - name: 什么是 PowerApps？
+    - name: 什么是 Power Apps？
       href: ../powerapps-overview.md
     - name: 注册 30 天试用版
       href: signup-for-powerapps.md
@@ -118,7 +118,7 @@
   items:
     - name: 概述
       href: index.md
-    - name: 登录到 PowerApps
+    - name: 登录到 Power Apps
       href: ./canvas-apps/intro-maker-portal.md
 - name: 画布应用
   items:
@@ -824,7 +824,7 @@
               href: ./canvas-apps/sharepoint-scenario-summary.md
         - name: 认知服务
           href: ./canvas-apps/cognitive-services-api.md
-        - name: 将 InfoPath 表单转换为 PowerApps
+        - name: 将 InfoPath 表单转换为 Power Apps
           href: ./canvas-apps/transform-infopath.md
     - name: 面向开发人员
       items:
@@ -1096,7 +1096,7 @@
           href: ./model-driven-apps/checklist-transition-unified-interface.md
         - name: 常见问题解答：统一接口转换
           href: ./model-driven-apps/faqs-transition-unified-interface.md
-    - name: PowerApps 应用设计器中的辅助功能
+    - name: Power Apps 应用设计器中的辅助功能
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: 自定义 Dynamics 365 App for Outlook
       href: ./model-driven-apps/app-for-outlook-customize.md
@@ -1104,7 +1104,7 @@
       href: ../developer/model-driven-apps/overview.md
 - name: Portals
   items:
-    - name: 什么是 PowerApps 门户？
+    - name: 什么是 Power Apps 门户？
       href: ./portals/overview.md
     - name: 设计和构建门户
       items:
@@ -1116,7 +1116,7 @@
           href: ./portals/create-dynamics-portal.md
         - name: 使用旧版门户加载项预配门户
           href: ./portals/provision-portal-add-on.md
-        - name: PowerApps 门户工作室剖析
+        - name: Power Apps 门户工作室剖析
           href: ./portals/portal-designer-anatomy.md
         - name: 门户设计器支持的 Web 浏览器
           href: ./portals/supported-browser.md
@@ -1162,7 +1162,7 @@
           href: ./portals/admin/manage-auth-key.md
         - name: 设置 IP 地址限制
           href: ./portals/admin/ip-address-restrict.md
-        - name: PowerApps 门户域的更新
+        - name: Power Apps 门户域的更新
           href: ./portals/admin/update-portal-domain.md
         - name: 清除服务器端缓存
           href: ./portals/admin/clear-server-side-cache.md
@@ -1288,7 +1288,7 @@
                   href: ./portals/liquid/variable-tags.md
                 - name: 模板标记
                   href: ./portals/liquid/template-tags.md
-                - name: PowerApps Common Data Service 实体标记
+                - name: Common Data Service 实体标记
                   href: ./portals/liquid/portals-entity-tags.md
             - name: 可用 Liquid 筛选器
               href: ./portals/liquid/liquid-filters.md
@@ -1336,7 +1336,7 @@
           href: ./portals/manage-sharepoint-documents.md
     - name: 已知问题
       href: ./portals/known-issues.md
-    - name: PowerApps 门户常见问题解答
+    - name: Power Apps 门户常见问题解答
       href: ./portals/faq.md
 - name: Common Data Service
   items:
@@ -1362,13 +1362,13 @@
           href: ./common-data-service/create-edit-virtual-entities.md
         - name: 虚拟实体 OData v4 数据提供程序
           href: ./common-data-service/virtual-entity-odata-provider-requirements.md
-        - name: 使用 PowerApps 门户定义替换键
+        - name: 使用 Power Apps 门户定义替换键
           href: ./common-data-service/define-alternate-keys-portal.md
         - name: 使用解决方案资源管理器定义替换键
           href: ./common-data-service/define-alternate-keys-solution-explorer.md
         - name: 操作指南：实体
           items:
-            - name: 如何使用 PowerApps 门户创建实体
+            - name: 如何使用 Power Apps 门户创建实体
               href: ./common-data-service/create-edit-entities-portal.md
             - name: 如何使用解决方案资源管理器创建实体
               href: ./common-data-service/create-edit-entities-solution-explorer.md
@@ -1407,7 +1407,7 @@
           href: ./common-data-service/create-edit-1n-relationships-portal.md
         - name: 使用解决方案浏览器创建一对多实体关系
           href: ./common-data-service/create-edit-1n-relationships-solution-explorer.md
-        - name: 使用 PowerApps 门户创建多对多实体关系
+        - name: 使用 Power Apps 门户创建多对多实体关系
           href: ./common-data-service/create-edit-nn-relationships-portal.md
         - name: 设置实体关系的托管属性
           href: ./common-data-service/set-managed-properties-relationships.md
@@ -1419,9 +1419,9 @@
           href: ./common-data-service/configure-connection-roles.md
         - name: 操作指南：关系
           items:
-            - name: 如何使用 PowerApps 门户创建多对多关系
+            - name: 如何使用 Power Apps 门户创建多对多关系
               href: ./common-data-service/create-edit-nn-relationships-portal.md
-            - name: 如何使用 PowerApps 解决方案浏览器创建多对多关系
+            - name: 如何使用 Power Apps 解决方案资源管理器创建多对多关系
               href: ./common-data-service/create-edit-nn-relationships-solution-explorer.md
             - name: 如何设置关系的托管属性
               href: ./common-data-service/set-managed-properties-relationships.md
@@ -1450,11 +1450,11 @@
               href: ./common-data-service/create-edit-fields.md
             - name: 如何管理字段
               href: ./common-data-service/data-platform-manage-fields.md
-            - name: 如何使用 PowerApps 门户创建字段
+            - name: 如何使用 Power Apps 门户创建字段
               href: ./common-data-service/create-edit-field-portal.md
-            - name: 如何使用 PowerApps 解决方案浏览器创建字段
+            - name: 如何使用 Power Apps 解决方案资源管理器创建字段
               href: ./common-data-service/create-edit-field-solution-explorer.md
-            - name: 如何使用 PowerApps 门户创建选项集
+            - name: 如何使用 Power Apps 门户创建选项集
               href: ./common-data-service/custom-picklists.md
             - name: 如何使用解决方案资源管理器创建全局选项集
               href: ./common-data-service/create-edit-global-option-sets-solution-explorer.md
@@ -1538,7 +1538,7 @@
       href: ../developer/common-data-service/overview.md
 - name: AI 生成器
   items:
-    - name: 使用 PowerApps 中的 AI 生成器
+    - name: 使用 Power Apps 中的 AI 生成器
       href: ../use-ai-builder.md
 - name: 相互学习
   items:
@@ -1556,7 +1556,7 @@
       href: ./canvas-apps/common-issues-and-resolutions.md
     - name: 获取会话或应用 ID
       href: ./canvas-apps/get-sessionid.md
-    - name: PowerApps 启动问题疑难解答
+    - name: Power Apps 启动问题疑难解答
       href: troubleshooting-startup-issues.md
     - name: Power Query 疑难解答
       href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
