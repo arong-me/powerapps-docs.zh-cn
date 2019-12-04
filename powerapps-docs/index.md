@@ -1,7 +1,7 @@
 ---
 layout: HubPage
-title: Microsoft PowerApps 文档 | Microsoft Docs
-description: Microsoft PowerApps 文档
+title: Microsoft Power Apps 文档 | Microsoft Docs
+description: Microsoft Power Apps 文档
 searchScope:
 - PowerApps
 featureFlags:
@@ -9,17 +9,17 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: 470d8e2a144e708162b886f6127bd6f9a498d093
-ms.sourcegitcommit: 6bec6932071db2411bb4ad1e01c059f57d8c9bca
+ms.openlocfilehash: ff7ac06904426ad990a99098b97814701e24ee22
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566974"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680181"
 ---
 <div id="main"
    class="v2">
    <div class="container">
-      <h1>PowerApps 文档</h1>
+      <h1>Power App 文档</h1>
       <ul class="pivots">
          <li>
             <a href="#home"></a>
@@ -42,8 +42,8 @@ ms.locfileid: "73566974"
                                              </div>
                                           </div>
                                           <div class="cardText">
-                                             <h3>什么是 PowerApps？</h3>
-                                             <p>首先查看 PowerApps 概述文档。</p>
+                                             <h3>什么是 Power Apps？</h3>
+                                             <p>首先查看 Power Apps 概述文档。</p>
                                           </div>
                                        </div>
                                     </div>
@@ -80,8 +80,8 @@ ms.locfileid: "73566974"
                                              </div>
                                           </div>
                                           <div class="cardText">
-                                             <h3>了解 PowerApps</h3>
-                                             <p>在 Microsoft Learn 中探索学习路径，获取 PowerApps 知识分步指南。 完全免费！</p>
+                                             <h3>了解 Power Apps</h3>
+                                             <p>在 Microsoft Learn 中探索学习路径，获取 Power Apps 知识分步指南。 完全免费！</p>
                                           </div>
                                        </div>
                                     </div>
@@ -100,7 +100,7 @@ ms.locfileid: "73566974"
                                           </div>
                                           <div class="cardText">
                                              <h3>博客</h3>
-                                             <p>阅读 PowerApps 官方博客，了解最新 PowerApps 功能和公告。</p>
+                                             <p>阅读 Power Apps 官方博客，了解最新 Power Apps 功能和公告。</p>
                                           </div>
                                        </div>
                                     </div>
@@ -119,7 +119,7 @@ ms.locfileid: "73566974"
                                           </div>
                                           <div class="cardText">
                                              <h3>社区</h3>
-                                             <p>在 PowerApps 社区论坛上与同行联系、分享创意，还可向专家学习。</p>
+                                             <p>在 Power Apps 社区论坛上与同行联系、分享创意，还可向专家学习。</p>
                                           </div>
                                        </div>
                                     </div>
@@ -138,7 +138,7 @@ ms.locfileid: "73566974"
                                           </div>
                                           <div class="cardText">
                                              <h3>许可</h3>
-                                             <p>了解 PowerApps 的各种许可选项。</p>
+                                             <p>了解 Power Apps 的各种许可选项。</p>
                                           </div>
                                        </div>
                                     </div>
@@ -215,7 +215,7 @@ ms.locfileid: "73566974"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>应用开发者无需编写代码即可快速创建自定义业务应用，从而管理其组织的任务关键型数据。 你可在 PowerApps 中创建三种类型的应用：<strong>画布应用</strong>、<strong>模型驱动应用</strong>和<strong>门户</strong>。 Common Data Service 是可便于安全存储和管理业务应用所用数据的数据平台。 详细信息：<a href="/powerapps/maker">创建应用</a>。</p>
+                           <p>应用开发者无需编写代码即可快速创建自定义业务应用，从而管理其组织的任务关键型数据。 你可在 Power Apps 中创建三种类型的应用：<strong>画布应用</strong>、<strong>模型驱动应用</strong>和<strong>门户</strong>。 Common Data Service 是可便于安全存储和管理业务应用所用数据的数据平台。 详细信息：<a href="/powerapps/maker">创建应用</a>。</p>
                            <hr/>
                            <br/>
                         </div>
@@ -290,11 +290,11 @@ ms.locfileid: "73566974"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Portals</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">什么是 PowerApps 门户？</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">什么是 Power Apps 门户？</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">创建门户</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/manage-existing-portals">管理现有门户</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/admin/admin-overview">门户管理</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/faq">PowerApps 门户常见问题解答</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/faq">Power Apps 门户常见问题解答</a></p>
                                  </div>
                               </div>
                            </div>
@@ -334,7 +334,7 @@ ms.locfileid: "73566974"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>管理员可使用 PowerApps 和 Power 平台管理中心来保护数据、管理环节和监视使用情况。</p>
+                           <p>管理员可使用 Power 平台管理中心来保护数据、管理环境和监视使用情况。</p>
                            <hr/>
                            <br/>
                         </div>
@@ -393,7 +393,7 @@ ms.locfileid: "73566974"
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/pricing-billing-skus">许可概述</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-entity-licenses">实体的许可证要求</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/powerapps-us-government">PowerApps US Government</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/powerapps-us-government">Power Apps US Government</a></p>
                                  </div>
                               </div>
                            </div>
@@ -491,7 +491,7 @@ ms.locfileid: "73566974"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/customize-visualizations-dashboards">自定义可视化效果和仪表板</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/client-scripting">通过客户端脚本编写来应用业务逻辑</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/customize-commands-ribbon">自定义命令和功能区</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/component-framework/overview">生成自定义组件（PowerApps 组件框架）</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/component-framework/overview">生成自定义组件（Power Apps 组件框架）</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/create-manage-model-driven-apps-using-code">读取、管理和发布应用</a></p>
                                  </div>
                               </div>
@@ -602,10 +602,10 @@ ms.locfileid: "73566974"
                                     <h3 style="font-size: 1.15rem">打包和分发应用/扩展</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/introduction-solutions">使用解决方案</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/build-tools-overview">用于 Azure DevOps 的 PowerApps 生成工具</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/build-tools-overview">用于 Azure DevOps 的 Power Apps 生成工具</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/compress-extract-solution-file-solutionpackager">SolutionPackager 工具</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">Package Deployer 工具</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">使用 PowerApps 检查器</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">使用 Power Apps 检查器</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/isv-app-management">ISV 应用管理和监视</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">在 AppSource 上发布应用</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">白皮书：使用解决方案实现 ALM</a></p>
