@@ -1106,6 +1106,8 @@
   items:
     - name: 什么是 Power Apps 门户？
       href: ./portals/overview.md
+    - name: 发布更新
+      href: ./portals/release-updates.md
     - name: 设计和构建门户
       items:
         - name: 门户模板
@@ -1260,6 +1262,12 @@
               href: ./portals/configure/add-geolocation.md
         - name: 在门户中实现 GDPR
           href: ./portals/configure/implement-gdpr.md
+        - name: 创建和运行广告
+          href: ./portals/configure/create-run-advertisement.md
+        - name: 通过投票收集反馈
+          href: ./portals/configure/gather-feedback-poll.md
+        - name: 创建和管理发布状态
+          href: ./portals/configure/publishing-states.md
     - name: 高级门户自定义
       items:
         - name: 使用 Liquid 模板
@@ -1338,6 +1346,8 @@
       href: ./portals/known-issues.md
     - name: Power Apps 门户常见问题解答
       href: ./portals/faq.md
+    - name: 旧版 Adxstudio Portals v7 常见问题解答
+      href: ./portals/legacy-portal-faq.md
 - name: Common Data Service
   items:
     - name: 什么是 Common Data Service？
