@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dee8b918efc60fed57cc6d8ca407e6cafe2b8060
-ms.sourcegitcommit: bee698ca0d11524377b67813a65e1a022d08c05e
+ms.openlocfilehash: e6a64a5849b351b625468894696251895375d0c2
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73609908"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74726088"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>将约会、电子邮件、电话呼叫、备注或任务活动添加到时间线 
 
@@ -34,7 +34,7 @@ ms.locfileid: "73609908"
 - 带有附件的电子邮件将与电子邮件正文一起显示在一起。
 
   > [!div class="mx-imgBorder"]
-  > ![PowerApps 中活动的时间线视图](media/TimelineViewOfActivity.png "PowerApps 中活动的时间线视图")  
+  > ![Power Apps 中活动的时间线视图](media/TimelineViewOfActivity.png "Power Apps 中活动的时间线视图")  
  
 ## <a name="add-an-activity-from-the-nav-bar"></a>从导航栏添加活动
  
@@ -43,7 +43,7 @@ ms.locfileid: "73609908"
 1. 在导航栏上，选择 "**加号**![创建记录" 按钮](media/create-record-button.png "创建记录按钮")，然后选择 "**活动**"。 
 
    > [!div class="mx-imgBorder"]
-   > ![在 PowerApps 中添加活动的快捷方式](media/QuickCreate.png "在 PowerApps 中添加活动的快捷方式")  
+   > ![在 Power Apps 中添加活动的快捷方式](media/QuickCreate.png "在 Power Apps 中添加活动的快捷方式")  
  
 2. 选择要添加的活动的类型。
 
@@ -60,7 +60,7 @@ ms.locfileid: "73609908"
 
 
    > [!div class="mx-imgBorder"]
-   > ![在 PowerApps 中添加手机活动](media/addphonecall.png "在 PowerApps 中添加手机活动")
+   > ![在 Power Apps 中添加手机活动](media/addphonecall.png "在 Power Apps 中添加手机活动")
   
 3. 填写电话的“主题”。
 
@@ -92,7 +92,7 @@ ms.locfileid: "73609908"
 
 3. 填写电子邮件的主题，并使用提供的空白区域来撰写电子邮件。
   
-4. 若要向电子邮件添加附件，请保存电子邮件。 然后，在“附件”部分，选择“ **”+** 以添加附件。  
+4. 若要向电子邮件添加附件，请保存电子邮件。 然后，在“附件”部分，选择“+”以添加附件。  
   
 5. 若要在电子邮件正文中使用模板，在命令栏上，单击“插入模板”，然后选择该模板。   
   

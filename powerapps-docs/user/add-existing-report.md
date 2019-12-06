@@ -1,6 +1,6 @@
 ---
-title: 从 PowerApps 外添加报表 |Microsoft Docs
-description: 从 PowerApps 外添加报表
+title: 从外部电源应用添加报表 |Microsoft Docs
+description: 从外部电源应用添加报表
 author: mduelae
 manager: kvivek
 ms.service: powerapps
@@ -16,16 +16,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9f775c5607720adcf233524522accb926d955289
-ms.sourcegitcommit: c4328e83f5caa58eab83757180b56ced480af220
+ms.openlocfilehash: e730d498a4d82518d0f908645e26a541c1e8c6af
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71982657"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725858"
 ---
-# <a name="add-a-report-from-outside-powerapps"></a>从 PowerApps 外添加报表
+# <a name="add-a-report-from-outside-power-apps"></a>从外部电源应用添加报表
 
-如果已在系统外创建了自定义报表，则可以轻松地将其添加到 PowerApps。
+如果已在系统外创建了自定义报表，则可以轻松地将其添加到 Power Apps。
 
 有关如何创建自定义报表的信息，请参阅[报表和分析指南](https://docs.microsoft.com/dynamics365/customer-engagement/analytics/get-started-writing-reports)。
 
@@ -57,11 +57,11 @@ ms.locfileid: "71982657"
   
    2.  "**父报表**" 文本框显示当前报表的父报表（如果存在）。  
   
-   3. **类别**。 选择 "**选择或更改此字段的值"** ![省略号]按钮(media/ellipsis-button.png "省略号")按钮按钮，然后指定要包含在此报表中的类别。  
+   3. **类别**。 选择 "**选择或更改此字段的值"** ![省略号按钮](media/ellipsis-button.png "省略号按钮")按钮，然后指定要包含在此报表中的类别。  
   
-   4. **相关记录类型**。 若要使报表出现在特定记录类型的页面上的 "报表" 列表中，请选择 "**选择或更改此字段的值"** ![省略号]按钮(media/ellipsis-button.png "省略号")按钮，然后选择 "记录类型"。  
+   4. **相关记录类型**。 若要使报表出现在特定记录类型的页面上的 "报表" 列表中，请选择 "**选择或更改此字段的值"** ![省略号按钮](media/ellipsis-button.png "省略号按钮")按钮，然后选择 "记录类型"。  
   
-   5. **显示在中**。 若要指定报表的显示位置，请选择 "**选择或更改此字段的值"** ![省略号]按钮(media/ellipsis-button.png "省略号")按钮，然后选择一个或多个选项。  
+   5. **显示在中**。 若要指定报表的显示位置，请选择 "**选择或更改此字段的值"** ![省略号按钮](media/ellipsis-button.png "省略号按钮")按钮，然后选择一个或多个选项。  
   
         如果未选择任何值，则报表对最终用户不可见。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "71982657"
 
 
 
-### <a name="see-also"></a>另请参阅
+### <a name="see-also"></a>请参阅
 [使用报表](work-with-reports.md) 
 
 [使用报表向导创建报表](create-report-with-wizard.md)

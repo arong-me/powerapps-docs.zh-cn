@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a0b4e125749d5b0179489677e9a1103cb14a0697
-ms.sourcegitcommit: 481a89e50c282f1e533a8526035dd3c38e3818a2
+ms.openlocfilehash: 2a0474b17f62e30ec41cf04001f774a42ee2e849
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72023317"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725813"
 ---
 # <a name="deactivate-or-activate-an-account-or-contact"></a>停用或激活帐户或联系人
 
@@ -37,7 +37,7 @@ ms.locfileid: "72023317"
 2.  选择要停用的活动帐户或联系人，在命令栏上选择 "**停用**"，然后确认停用。
 
     > [!div class="mx-imgBorder"]
-    > ![在 powerapps 中停用帐户](media/DeactiveAccounts.png "停用帐户")
+    > ![停用 Power Apps 中的帐户](media/DeactiveAccounts.png "停用 Power Apps 中的帐户")
 
 
 ## <a name="activate-an-account-or-contact"></a>激活帐户或联系人  
@@ -53,7 +53,7 @@ ms.locfileid: "72023317"
 5.  选择 "**激活**"，然后确认激活。  
 
     > [!div class="mx-imgBorder"]
-    > ![在 powerapps 中激活帐户](media/ActiveAccounts.png "激活 powerapps 中的帐户")  
+    > ![激活 Power Apps 中的帐户](media/ActiveAccounts.png "激活 Power Apps 中的帐户")  
 
 
 
