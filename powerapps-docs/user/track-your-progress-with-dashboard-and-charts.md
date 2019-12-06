@@ -16,32 +16,32 @@ search.app:
 - PowerApps
 - D365CE
 - D365CE
-ms.openlocfilehash: e9d046c49a2a91aaf5c65094d446ae09f41572f9
-ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
+ms.openlocfilehash: 70c6f97c2617c9d6084c3aa8a0861793a0c059d5
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71969093"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74726173"
 ---
 # <a name="track-your-progress-with-dashboards-and-charts"></a>使用仪表板和图表跟踪进度
 
 仪表板采用一系列应用程序数据，并提供见解来在易于阅读的交互式图表和图形中显示关键性能指标（KPI）和其他重要数据。 仪表板可用于所有记录类型。
 
 > [!div class="mx-imgBorder"]
-> ![仪表]板(media/Dashboard.png "仪表板") 
+> ![仪表板](media/Dashboard.png "仪表板") 
 
 -  若要查看其他仪表板布局，请选择仪表板名称旁的向下箭头，然后选择所需的布局。
 -  若要选择默认仪表板，请显示所需的仪表板，然后在屏幕顶部选择 "**设置为默认值**"。
 
    > [!div class="mx-imgBorder"]
-   > ![添加或更改仪表]板(media/add_dashboard.png "添加或更改仪表板") 
+   > ![添加或更改仪表板](media/add_dashboard.png "添加或更改仪表板") 
 
-## <a name="create-a-new-dashboard"></a>创建新仪表板
+## <a name="create-a-new-dashboard"></a>新建仪表板
 
 1. 若要创建新仪表板，请选择 "**创建 Dynamics 365 仪表板**"。 
 
    > [!div class="mx-imgBorder"]
-   > ![添加新的仪表板](media/new_dashboard.png "添加新的仪表板")
+   > ![添加新仪表板](media/new_dashboard.png "添加新仪表板")
    
 2. 选择仪表板布局，然后选择 "**创建**"。  
 
@@ -67,11 +67,11 @@ ms.locfileid: "71969093"
 
 -   将鼠标悬停在图表上可查看提供有关该图表区域的快速信息的工具提示。
 -   单击图表区域可以查看网格视图，其中包含有关图表中的数据的更多详细信息。
--   若要展开图表，请选择**展开**图表，展开图表![视图](media/expandviewbutton.png "展开 \"图表视图")" 按钮。
--   若要查看图表中的记录或刷新图表，请选择![更](media/MoreButton.png "多命令，")然后选择操作：**刷新**或**查看记录**。
+-   若要展开图表，请选择**展开**"图表" "![图表视图](media/expandviewbutton.png "展开图表视图")" 按钮。
+-   若要在图表中查看记录或刷新图表，请选择 "![更多命令](media/MoreButton.png "更多命令")"，然后选择 "操作：**刷新**" 或 "**查看记录**"。
      
      > [!div class="mx-imgBorder"]
-     > (media/ViewOfCharts.png "Powerapps 中图表")的![powerapps 视图中的图表视图]  
+     > ![Power Apps 中的图表视图](media/ViewOfCharts.png "Power Apps 中的图表视图")  
        
 
 **更改图表视图**
@@ -81,7 +81,7 @@ ms.locfileid: "71969093"
 例如，选择 "所有机会"，然后选择不同的视图，图表和网格都将刷新。
 
 > [!div class="mx-imgBorder"]
-> ![在 powerapps 中更改图表视图]在(media/ChangeChartView.png "powerapps 中更改图表视图")
+> ![更改 Power Apps 中的图表视图](media/ChangeChartView.png "更改 Power Apps 中的图表视图")
 
 ## <a name="known-issues"></a>已知问题  
 在图表设计器中，不支持在某些计算字段上添加 order by，这将导致错误。  导致这种情况的计算字段使用其他计算字段、相关实体字段或实体上的本地字段。
