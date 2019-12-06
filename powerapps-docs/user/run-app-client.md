@@ -15,20 +15,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 729d852227b31a6a162fdf94644d1e08c1a401ee
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ad34f7daacf07ebc8ecde2a8ce29c163d0c28e95
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543418"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733322"
 ---
 # <a name="run-a-canvas-app-on-a-mobile-device"></a>在移动设备上运行画布应用
 在创建应用或者某人与你共享应用时，可以在 Windows、iOS、Android 上或 Web 浏览器中运行此应用。 本主题介绍如何在移动设备上运行画布应用。 在移动设备上运行的应用可以利用移动设备功能，如定位服务和照相机。
 
-若要按照此步骤操作，请在开始之前先[免费注册](https://make.powerapps.com/signup?redirect=marketing&email=) PowerApps（如果还没有注册），然后从 [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) 或 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) 将 PowerApps 下载到运行有[支持的操作系统](../maker/canvas-apps/limits-and-config.md)的 iPhone、iPad 或 Android 设备上。 此外请确保有权访问自己创建的应用或其他人创建并与你共享的应用。
+若要按照此过程进行操作，请在开始之前[免费注册](https://make.powerapps.com/signup?redirect=marketing&email=)，然后在运行[受支持的操作系统](../maker/canvas-apps/limits-and-config.md)的 IPhone、iPad 或 Android 设备上从应用[Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) [商店](https://itunes.apple.com/app/powerapps/id1047318566?mt=8)下载 power apps。 此外请确保有权访问自己创建的应用或其他人创建并与你共享的应用。
 
-## <a name="open-powerapps-and-sign-in"></a>打开 PowerApps 并登录
-在移动设备上打开 PowerApps 并用 Azure Active Directory 凭据登录。
+## <a name="open-power-apps-and-sign-in"></a>打开电源应用并登录
+打开移动设备上的 Power Apps 并使用 Azure Active Directory 凭据登录。
 
 ![登录用户](./media/run-app-client/run-client-login.png)
 
@@ -51,7 +51,7 @@ ms.locfileid: "73543418"
 
     ![标记为收藏项](./media/run-app-client/favorite.png)
 
-筛选应用后，可按应用的最近打开（或修改）时间或名称的字母顺序对筛选列表进行排序。 关闭和重新打开 PowerApps 后，这些首选项会予以保留。
+筛选应用后，可按应用的最近打开（或修改）时间或名称的字母顺序对筛选列表进行排序。 关闭并重新打开电源应用时，将保留这些首选项。
 
 ![排序菜单](./media/run-app-client/sort-menu.png)
 
@@ -64,7 +64,7 @@ ms.locfileid: "73543418"
 ## <a name="run-an-app"></a>运行应用
 若要在移动设备上运行画布应用，点击应用磁贴。 如果其他人创建了画布应用并在电子邮件中与你共享，你可以通过点击电子邮件中的链接来运行该应用。
 
-首次使用 PowerApps 时，会看到提示通过轻扫手势关闭应用的屏幕。
+如果这是你第一次使用 Power Apps，屏幕会显示轻扫手势以关闭应用。
 
 ![启动应用](./media/run-app-client/run-client-app.png)
 
