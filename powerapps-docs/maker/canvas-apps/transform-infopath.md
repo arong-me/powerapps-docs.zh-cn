@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/05/2018
+ms.date: 12/05/2019
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 811f58243413c4de58e4cdb8868d838349248991
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 9c4796a652c6e42609010162794dcc60a6466864
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732371"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959486"
 ---
 # <a name="transform-your-infopath-form-to-power-apps"></a>将 InfoPath 表单转换为 Power Apps
 
@@ -62,7 +62,7 @@ Power Apps 和 SharePoint 团队共同合作创建了一个自定义情景，使
 
 ![SharePoint 集成](./media/transform-infopath/sharepoint-integration.png)
 
-电源应用的另一个重要功能是能够轻松地从同一窗体连接到其他 SharePoint 网站集或不同的环境。 比如，是否希望一个表单能够同时在 SharePoint Online 和 SharePoint 本地环境中显示和更新数据？ 没关系。 如果安装[本地数据网关](gateway-management.md)，则可以在几分钟内启动并运行，将 power Apps、Power BI、Power 自动功能和 Azure 逻辑应用与本地数据连接起来。 不需要更改防火墙规则。 您可以通过将此应用程序与电源自动连接来进一步进一步操作。
+电源应用的另一个重要功能是能够轻松地从同一窗体连接到其他 SharePoint 网站集或不同的环境。 比如，是否希望一个表单能够同时在 SharePoint Online 和 SharePoint 本地环境中显示和更新数据？ 没问题。 如果安装[本地数据网关](gateway-management.md)，则可以在几分钟内启动并运行，将 power Apps、Power BI、Power 自动功能和 Azure 逻辑应用与本地数据连接起来。 不需要更改防火墙规则。 您可以通过将此应用程序与电源自动连接来进一步进一步操作。
 
 ## <a name="a-standalone-sharepoint-app"></a>独立 SharePoint 应用
 
@@ -76,7 +76,7 @@ Power Apps 和 SharePoint 团队共同合作创建了一个自定义情景，使
 
 Power Apps 将为你生成可自定义的应用。
 
-对于第一个应用，请从仅包含几个不同类型字段的简单自定义列表入手。 这样既可以获得完善的基础认知，又不会觉得难以应付。 不用担心；你很快就能成为能够创建和处理复杂应用的专业人士。 如需获取有关第一个应用的演练帮助，请查看此[文档](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)或此社区[视频](https://youtu.be/BnYe_7fpZRM)。 下面的示例将演示常见的 InfoPath 任务以及如何在 Power Apps 中执行这些任务。 所有示例均基于简单的 SharePoint 列表应用生成。
+对于第一个应用，请从仅包含几个不同类型字段的简单自定义列表入手。 这样既可以获得完善的基础认知，又不会觉得难以应付。 不用担心；你很快就能成为能够创建和处理复杂应用的专业人士。 如需获取有关第一个应用的演练帮助，请查看此[文档](app-from-sharepoint.md#create-an-app-from-within-sharepoint-online)或此社区[视频](https://youtu.be/BnYe_7fpZRM)。 下面的示例将演示常见的 InfoPath 任务以及如何在 Power Apps 中执行这些任务。 所有示例均基于简单的 SharePoint 列表应用生成。
 
 ## <a name="how-do-you-do-that-with-power-apps"></a>如何通过 Power Apps 实现此目的？
 

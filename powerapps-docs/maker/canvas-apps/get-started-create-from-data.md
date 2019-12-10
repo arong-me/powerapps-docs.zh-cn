@@ -1,28 +1,28 @@
 ---
-title: 通过 Excel 生成画布应用 | Microsoft Docs
-description: 使用 Power Apps 自动生成使用云存储帐户中存储的 Excel 文件的画布应用
+title: 从 Excel 创建画布应用 |Microsoft Docs
+description: 使用 Power Apps 自动创建使用存储在云存储帐户中的 Excel 文件的画布应用
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 01/14/2019
+ms.date: 12/05/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f53f46562c401e978975da35c81e2ecb77a6673e
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 2199d94938e51154d0f616f424f674c408277b52
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729743"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959417"
 ---
-# <a name="generate-a-canvas-app-from-excel-in-power-apps"></a>在 Power Apps 中从 Excel 生成画布应用
+# <a name="create-a-canvas-app-from-excel-in-power-apps"></a>在 Power Apps 中从 Excel 创建画布应用
 
-在本主题中，将使用 Excel 表中的数据在 Power Apps 中自动生成第一个画布应用。 将选择一个 Excel 文件，生成一个应用，然后运行生成的应用。 每个生成的应用都包括屏幕，用于浏览记录、显示记录的详细信息以及创建或更新记录。 通过生成应用，可以使用 Excel 数据快速利用应用，然后自定义该应用以更好地满足需要。 
+在本主题中，将使用 Excel 表中的数据在 Power Apps 中创建第一个画布应用。 您将选择一个 Excel 文件、创建一个应用程序，然后运行您创建的应用程序。 每个创建的应用都包含用于浏览记录、显示记录详细信息以及创建或更新记录的屏幕。 通过生成应用，可以使用 Excel 数据快速利用应用，然后自定义该应用以更好地满足需要。 
 
 Excel 文件必须位于云存储帐户（如 OneDrive、GoogleDrive 或 Dropbox）中。 本主题使用 OneDrive for Business。
 
@@ -35,7 +35,7 @@ Excel 文件必须位于云存储帐户（如 OneDrive、GoogleDrive 或 Dropbox
 > [!IMPORTANT]
 > 可以使用自己的 Excel 文件，但必须将数据格式设置为表格。 有关详细信息，请参阅[设置表格格式](how-to-excel-tips.md)。 
 
-## <a name="generate-the-app"></a>生成应用
+## <a name="create-the-app"></a>创建应用程序
 
 1. 登录到[Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
@@ -79,7 +79,7 @@ Excel 文件必须位于云存储帐户（如 OneDrive、GoogleDrive 或 Dropbox
 
     1. 添加所需的任何数据，然后选择复选标记图标以保存所做的更改。
 
-        ![保存图标](./media/get-started-create-from-data/save-icon.png)
+        ![“保存”图标](./media/get-started-create-from-data/save-icon.png)
 
 1. 编辑记录：
 
@@ -93,7 +93,7 @@ Excel 文件必须位于云存储帐户（如 OneDrive、GoogleDrive 或 Dropbox
 
     1. 更新一个或多个字段，然后选择复选标记图标以保存所做的更改。
 
-        ![保存图标](./media/get-started-create-from-data/save-icon.png)
+        ![“保存”图标](./media/get-started-create-from-data/save-icon.png)
 
         作为替代方法，请选择 "取消" 图标以放弃更改。
 

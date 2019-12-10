@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: ''
-ms.date: 12/19/2017
+ms.reviewer: tapanm
+ms.date: 12/05/2019
 ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bf61592dfdb5c7226846d814b75fd8c7584a50ff
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 45f33285b288dc273caeff1e85591210cc3deb8c
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732959"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959532"
 ---
 # <a name="integrate-power-apps-power-automate-and-power-bi-with-sharepoint-online"></a>将 Power Apps、Power 自动功能和 Power BI 与 SharePoint Online 集成
 是否在使用 SharePoint Online，并希望更好地自动执行和简化业务流程？ 你是否曾经使用过电源应用、电源自动化或 Power BI，但不确定如何将它们与 SharePoint Online 一起使用？ 你来对地方了！ 这一系列教程探讨了如何基于 SharePoint 列表和三个与 SharePoint Online 集成的关键技术来生成用于项目管理的基本画布应用：电源应用、电源自动化和 Power BI。 这些技术相互配合，以便用户可以轻松衡量业务、针对结果采取措施并自动执行工作流。 完成本系列教程后，将生成如下精彩方案：
@@ -31,7 +31,7 @@ ms.locfileid: "74732959"
 ## <a name="getting-started-quickly"></a>快速入门
 相比完全成熟的项目管理和分析应用，我们在本系列教程中生成的方案非常简单，但仍需要花一些时间才能完成所有任务。 如果只是想要快速了解如何在 SharePoint 中使用 Power Apps、Power 自动功能和 Power BI，请参阅以下文章：
 
-* **PowerApps**：[使用 Power Apps 从 sharepoint 中生成应用程序](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)，并[生成用于管理 SharePoint 列表中的数据的应用程序](app-from-sharepoint.md)
+* **PowerApps**：[使用 Power Apps 在 sharepoint 中创建应用程序](app-from-sharepoint.md#create-an-app-from-within-sharepoint-online)并[创建用于管理 SharePoint 列表中的数据的应用程序](app-from-sharepoint.md)
 * **电源自动**执行：[等待批准以自动执行](https://docs.microsoft.com/flow/wait-for-approvals)
 * **Power BI**：[使用报表 Web 部件在 SharePoint Online 中嵌入报表](https://docs.microsoft.com/power-bi/service-embed-report-spo)
 

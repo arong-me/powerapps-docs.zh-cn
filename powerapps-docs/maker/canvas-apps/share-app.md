@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b04c1d9ecc4c2955b68f1ffeae1a5a56e74ab710
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: d888ee1a3cee5bf74c4f7d8cd0cbc8a13f5f9fc8
+ms.sourcegitcommit: 15c6b26ff085928459ad9b3f52fb607fae4a997d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733091"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74956868"
 ---
 # <a name="share-a-canvas-app-in-power-apps"></a>在 Power Apps 中共享画布应用
 
@@ -103,7 +103,7 @@ ms.locfileid: "74733091"
 
 ### <a name="common-data-service"></a>Common Data Service
 
-如果创建基于 Common Data Service 的应用，则还必须确保共享该应用的用户对该应用所依赖的一个或哪些实体具有适当的权限。 具体而言，这些用户必须属于一个安全角色，该安全角色可以执行创建、读取、写入和删除相关记录等任务。 在许多情况下，你需要创建一个或多个自定义安全角色，该角色具有用户运行该应用程序所需的确切权限。 然后，可以根据需要向每个用户分配一个角色。
+如果基于 Common Data Service 创建应用，还必须确保与你共享应用的用户具有应用所依赖实体的相应权限。 具体而言，这些用户必须属于能够执行创建、读取、写入以及删除相关记录等任务的安全角色。 在许多情况下，你会希望创建一个或多个自定义安全角色并包含用户运行应用所需的确切权限。 然后你可以视情况为每个用户分配角色。
 
 > [!NOTE]
 > 在撰写本文时，可以将安全角色分配给 Azure Active Directory 中的单个用户和安全组，但不能分配给 Office 组。
@@ -138,6 +138,9 @@ ms.locfileid: "74733091"
 - 来宾用户必须拥有一个许可证，其中的 Power Apps 使用的权限与通过以下租户之一分配的应用功能匹配：
     - 托管要共享的应用的租户。
     - 来宾用户的主租户。
+
+> [!NOTE]
+> 每个应用计划的电源应用的范围限定为特定环境中的应用，因此无法跨租户识别它们。 Office 和 Power Apps 随附的每个用户计划的 power Apps 不会绑定到特定环境，因此，它们可在来宾方案中跨租户识别。 
 
 ### <a name="steps-to-grant-guest-access"></a>授权来宾访问的步骤
 1. 选择 "**新来宾用户**"，在 Azure AD 中添加来宾用户。 详细信息：[快速入门：在 Azure AD 中添加新的来宾用户](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)。
@@ -230,7 +233,7 @@ InTune 仅应用用户的主租户的策略。 例如，如果 Alice@Contoso.com
 | Adobe 登录                                        | 否                                                                     |
 | Asana                                             | 否                                                                     |
 | AtBot 管理员                                       | 否                                                                     |
-| AtBot 逻辑                                       | 否                                                                     |
+| AtBot Logic                                       | 否                                                                     |
 | Azure AD                                          | 是                                                                    |
 | Azure 自动化                                  | 是                                                                    |
 | Azure 容器实例                          | 是                                                                    |
@@ -238,7 +241,7 @@ InTune 仅应用用户的主租户的策略。 例如，如果 Alice@Contoso.com
 | Azure Data Lake                                   | 是                                                                    |
 | Azure DevOps                                      | 否                                                                     |
 | Azure 事件网格                                  | 否                                                                     |
-| Azure IoT Central                                 | 是                                                                    |
+| Azure IoT 中心                                 | 是                                                                    |
 | Azure Key Vault                                   | 否                                                                     |
 | Azure Kusto                                       | 是                                                                    |
 | Azure Log Analytics                               | 是                                                                    |
@@ -248,24 +251,24 @@ InTune 仅应用用户的主租户的策略。 例如，如果 Alice@Contoso.com
 | Bitly                                             | 否                                                                     |
 | bttn                                              | 否                                                                     |
 | 缓冲区                                            | 否                                                                     |
-| 业务中心                                  | 否                                                                     |
+| Business Central                                  | 否                                                                     |
 | CandidateZip                                      | 否                                                                     |
 | Capsule CRM                                       | 否                                                                     |
-| 云 PKI 管理                              | 否                                                                     |
+| Cloud PKI Management                              | 否                                                                     |
 | Cognito Forms                                     | 否                                                                     |
 | Common Data Service                               | 否                                                                     |
-| Common Data Service （旧版）                      | 否                                                                     |
-| D & B 优化器                                     | 否                                                                     |
+| Common Data Service（旧版）                      | 否                                                                     |
+| D&B Optimizer                                     | 否                                                                     |
 | Derdack SIGNL4                                    | 否                                                                     |
 | Disqus                                            | 否                                                                     |
-| 文档合并                                    | 否                                                                     |
+| Document Merge                                    | 否                                                                     |
 | Dynamics 365                                      | 否                                                                     |
-| 用于销售的 Dynamics 365 AI                         | 是                                                                    |
-| 适用于 Fin & Ops 的 Dynamics 365                        | 否                                                                     |
+| Dynamics 365 AI for Sales                         | 是                                                                    |
+| Dynamics 365 财务和运营                        | 否                                                                     |
 | Enadoc                                            | 否                                                                     |
 | Eventbrite                                        | 否                                                                     |
-| Excel Online （Business）                           | 否                                                                     |
-| Excel Online （OneDrive）                           | 否                                                                     |
+| Excel Online（企业）                           | 否                                                                     |
+| Excel Online (OneDrive)                           | 否                                                                     |
 | 过期提醒                               | 否                                                                     |
 | FreshBooks                                        | 否                                                                     |
 | GoToMeeting                                       | 否                                                                     |
@@ -278,18 +281,18 @@ InTune 仅应用用户的主租户的策略。 例如，如果 Alice@Contoso.com
 | Intercom                                          | 否                                                                     |
 | JotForm                                           | 否                                                                     |
 | kintone                                           | 否                                                                     |
-| LinkedIn                                          | 否                                                                     |
+| 领英                                          | 否                                                                     |
 | 营销内容中心                             | 否                                                                     |
 | 中型                                            | 否                                                                     |
 | Metatask                                          | 否                                                                     |
 | Microsoft Forms                                   | 否                                                                     |
 | Microsoft Forms Pro                               | 否                                                                     |
-| Microsoft Graph 安全性                          | 否                                                                     |
+| Microsoft Graph Security                          | 否                                                                     |
 | Microsoft Kaizala                                 | 否                                                                     |
 | Microsoft 学校数据同步                        | 否                                                                     |
 | Microsoft StaffHub                                | 否                                                                     |
 | Microsoft Teams                                   | 是                                                                    |
-| Microsoft 待办事项（商业）                        | 否                                                                     |
+| 微软待办（企业）                        | 否                                                                     |
 | Muhimbi PDF                                       | 否                                                                     |
 | NetDocuments                                      | 否                                                                     |
 | Office 365 组                                 | 是                                                                    |
@@ -304,11 +307,11 @@ InTune 仅应用用户的主租户的策略。 例如，如果 Alice@Contoso.com
 | Outlook.com                                       | 否                                                                     |
 | Paylocity                                         | 否                                                                     |
 | Planner                                           | 否                                                                     |
-| Plumsail 窗体                                    | 否                                                                     |
+| Plumsail Forms                                    | 否                                                                     |
 | Power BI                                          | 是                                                                    |
 | Project Online                                    | 否                                                                     |
-| ProjectWise 设计集成                    | 否                                                                     |
-| Projectwise 共享                                 | 否                                                                     |
+| ProjectWise Design Integration                    | 否                                                                     |
+| Projectwise Share                                 | 否                                                                     |
 | SharePoint                                        | 是                                                                    |
 | SignNow                                           | 否                                                                     |
 | Skype for Business Online                         | 否                                                                     |
@@ -319,6 +322,6 @@ InTune 仅应用用户的主租户的策略。 例如，如果 Alice@Contoso.com
 | Toodledo                                          | 否                                                                     |
 | Typeform                                          | 否                                                                     |
 | Vimeo                                             | 否                                                                     |
-| Webex 团队                                       | 否                                                                     |
-| Windows Defender 高级威胁防护（ATP） | 否                                                                     |
-| Word Online （商业）                            | 否                                                                     |
+| Webex Teams                                       | 否                                                                     |
+| Windows Defender 高级威胁防护 (ATP) | 否                                                                     |
+| Word Online（企业）                            | 否                                                                     |

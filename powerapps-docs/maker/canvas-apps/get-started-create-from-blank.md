@@ -7,22 +7,22 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/26/2019
+ms.date: 12/05/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e5b961fb665ad0706d5b3c2c272a95dd4530c1d2
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 01bb3037e6223d41fd7da044b49a51abc57762de
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74709483"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959509"
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>基于 Excel 数据从头开始创建画布应用
 
-基于 Exceld 数据从头开始创建你自己的画布应用，将其格式化为表格，然后从其他源添加数据（如果需要）。 按照本教程中的步骤进行操作，可以创建包含两个屏幕的应用。 在一个屏幕上，用户可以浏览一组记录。 在另一个屏幕上，用户可以创建记录、更新记录中的一个或多个字段，或删除整条记录。 与[自动生成应用](get-started-create-from-data.md)相比，此方法耗费的时间要多得多，但经验丰富的应用创作者可以使用它根据需要生成最佳应用。
+基于 Exceld 数据从头开始创建你自己的画布应用，将其格式化为表格，然后从其他源添加数据（如果需要）。 按照本教程中的步骤进行操作，可以创建包含两个屏幕的应用。 在一个屏幕上，用户可以浏览一组记录。 在另一个屏幕上，用户可以创建记录、更新记录中的一个或多个字段，或删除整条记录。 此方法需要花费更多时间，而不[是从 Excel 创建基本应用程序](get-started-create-from-data.md)，但具有更多经验的应用程序开发人员可以使用它来构建最佳的应用程序。
 
 ## <a name="prerequisites"></a>必备组件
 
@@ -30,7 +30,7 @@ ms.locfileid: "74709483"
 
 1. 复制此数据，并将其粘贴到 Excel 文件中。
 
-    | StartDay | StartTime | 志愿者 | Backup |
+    | StartDay | StartTime | 志愿者 | 备份 |
     | --- | --- | --- | --- |
     | 星期六 |上午 10:00-中午 |Vasquez |Kumashiro |
     | 星期六 |中午-下午 2:00 |Ice |Singhal |

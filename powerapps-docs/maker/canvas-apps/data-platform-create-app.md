@@ -1,28 +1,28 @@
 ---
-title: 从 Common Data Service 生成画布应用 |Microsoft Docs
-description: 在 Power Apps 中，会自动生成画布应用以管理 Common Data Service 中的数据
+title: 从 Common Data Service 创建画布应用 |Microsoft Docs
+description: 在 Power Apps 中，会自动创建一个画布应用来管理 Common Data Service 中的数据
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: quickstart
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 05/06/2018
+ms.date: 12/05/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b98fcb51e5b379e6507e73f680100c9702ec24a8
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: c62a690073e591c693d914000511b586dfc97b69
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731668"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959371"
 ---
-# <a name="generate-a-canvas-app-from-common-data-service-in-power-apps"></a>从 Power Apps 中的 Common Data Service 生成画布应用
+# <a name="create-a-canvas-app-from-common-data-service-in-power-apps"></a>使用 Power Apps 中的 Common Data Service 创建画布应用
 
-在 Power Apps 中，会根据[Common Data Service](../common-data-service/data-platform-intro.md)中的示例帐户列表自动生成画布应用。 在此应用中，可以浏览所有帐户、显示单个帐户的详细信息以及创建、更新或删除帐户。
+在 Power Apps 中，基于[Common Data Service](../common-data-service/data-platform-intro.md)中的示例帐户列表创建画布应用。 在此应用中，可以浏览所有帐户、显示单个帐户的详细信息以及创建、更新或删除帐户。
 
 如果尚未注册 Power Apps，请在开始之前[免费注册](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "74731668"
 
 若要按照本快速入门，你必须分配到 "[环境](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles)创建者" 安全角色，并且必须[切换到](working-with-environments.md)在其中创建了 Common Data Service 的数据库、包含数据以及允许更新的环境。 如果不具备此环境但拥有管理权限，则可按此要求[创建环境](https://docs.microsoft.com/power-platform/admin/environments-administration#create-an-environment)。
 
-## <a name="generate-an-app"></a>生成应用
+## <a name="create-an-app"></a>创建应用
 
 1. 登录到[Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ，如有必要，按本主题前面指定的方式切换环境。
 
