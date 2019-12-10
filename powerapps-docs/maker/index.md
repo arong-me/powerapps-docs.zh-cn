@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.date: 07/18/2018
+ms.date: 12/05/2019
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: d41af83d0a6de68ac94327798e076b19039dadef
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 79a1a5351bc3fe72a7558697e7cf8e8dfa079ce8
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729818"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959394"
 ---
 # <a name="overview-of-creating-apps-in-power-apps"></a>概述如何在 Power Apps 中创建应用
 
@@ -33,7 +33,7 @@ Power Apps 是商业应用的高效开发平台，主要有四个组成部分：
 
 可以开始通过数据所在的 Microsoft 工具生成应用，例如：
 
-- [通过 SharePoint 列表](canvas-apps/app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)
+- [通过 SharePoint 列表](canvas-apps/app-from-sharepoint.md#create-an-app-from-within-sharepoint-online)
 - [通过 Power BI 仪表板](canvas-apps/embed-powerapps-powerbi.md)
 
 创建画布应用很简单，可以借助 Power Apps 通过多种方式查找或创建应用：
