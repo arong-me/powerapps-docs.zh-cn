@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0b1c81dd808b224ca30d9de3d4bab252a2676cf4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f44d28ab57bb012f1cb4a847920a4cf0597e3b68
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542312"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74673509"
 ---
 # <a name="understand-record-references-and-polymorphic-lookups-in-canvas-apps"></a>了解画布应用中的记录引用和多态查找
 
@@ -50,7 +50,7 @@ Common Data Service 中的每个实体都包含一个**所有者**字段。 不�
 
 若要在**Account**实体中显示该字段：
 
-1. 打开[此 PowerApps 站点](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 打开[此电源应用站点](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 1. 在左侧导航栏中，选择 "**数据** > **实体**"。
 1. 在实体列表中，选择 "**帐户**"。
 1. 在右上角，打开 "筛选器" 列表（默认设置为 "默认**值**"），然后选择 "**全部**"。
@@ -325,7 +325,7 @@ Patch( Accounts, Gallery1.Selected, { Owner: First( Teams ) } )
 > [!div class="mx-imgBorder"]
 > "数据" 窗格中 ![帐户、团队、用户和联系人实体](media/working-with-references/customer-datasources.png)
 
-"**客户**" 和 "**所有者**" 字段的处理与此类似，你可以按字面复制应用（**文件** >  "**另存为**"，然后指定其他名称）并进行以下简单替换：
+"**客户**" 和 "**所有者**" 字段的处理与此类似，你可以按字面复制应用（**文件** > "**另存为**"，然后指定其他名称）并进行以下简单替换：
 
 | Location | **所有者**示例 | **客户**示例 |
 |----------|-----------|------------------|
@@ -354,7 +354,7 @@ Filter( Contacts,
 
 **客户**和**所有者**之间的两个重要区别要求更新库中的公式和窗体：
 
-1. 当你按名称引用这些实体类型时，**帐户**与**联系人**之间的一对多关系优先。 使用 **\[\@帐户]** ，而不是使用**帐户**];使用 **\[\@联系人]** ，而不是使用**联系人**。 通过使用[全局歧义消除运算符](functions/operators.md#disambiguation-operator)，可以确保引用**IsType**和**AsType**中的实体类型。 此问题仅存在于库和窗体控件的记录上下文中。
+1. 当你按名称引用这些实体类型时，**帐户**与**联系人**之间的一对多关系优先。 使用 **\[\@帐户]** ，而不是使用**帐户**;使用 **\[\@联系人]** ，而不是使用**联系人**。 通过使用[全局歧义消除运算符](functions/operators.md#disambiguation-operator)，可以确保引用**IsType**和**AsType**中的实体类型。 此问题仅存在于库和窗体控件的记录上下文中。
 
 1. "**所有者**" 字段必须具有值，但 "**客户**" 字段可以为*空*。 若要在没有类型名称的情况下显示正确的结果，请使用[ **IsBlank**函数](functions/function-isblank-isempty.md)测试这种情况，并改为显示空的文本字符串。
 
