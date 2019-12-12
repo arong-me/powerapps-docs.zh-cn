@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ec991f54ff4b395026c9a869c315f75a549da79e
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 1c9bbfd724f588dce86c5ba2e620404f554d2bcd
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649798"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732086"
 ---
-# <a name="rich-text-editor-control-in-powerapps"></a>PowerApps 中的富文本编辑器控件
+# <a name="rich-text-editor-control-in-power-apps"></a>Power Apps 中的富文本编辑器控件
 允许最终用户设置所见即所得编辑区域内的文本格式。  输出格式为 HTML。
 
 ## <a name="description"></a>描述
@@ -28,7 +28,7 @@ ms.locfileid: "73649798"
 
 控件允许将复制的格式文本（例如， 从 Web 浏览器或 Word 中复制的格式文本）粘贴到控件。  
 
-控件的预期用途是设置文本格式，但不保证保留输入 HTML 的完整性。  编辑器会删除所有脚本、样式、对象和其他可能有影响的标记。  这意味着，如果格式文本是在 PowerApps 外部创建的，则该文本看起来可能会与在创建它的产品中所有不同。
+控件的预期用途是设置文本格式，但不保证保留输入 HTML 的完整性。  编辑器会删除所有脚本、样式、对象和其他可能有影响的标记。  这意味着，如果在 Power Apps 外部创建了丰富的文本，则该文本的外观可能与创建它的产品的外观不相同。
 
 当前支持的功能包括：
 - 粗体、斜体、下划线
@@ -50,6 +50,8 @@ ms.locfileid: "73649798"
 **[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。 应描述附件的用途。
 
 [DisplayMode](properties-core.md) – 控件是允许添加和删除文件 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+
+**EnableSpellCheck** –是否启用浏览器拼写检查器。 请注意，此功能将仅以浏览器的默认语言提供拼写检查。  适用于 Windows 的 Power Apps 不支持此属性。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 

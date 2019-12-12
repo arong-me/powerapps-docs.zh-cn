@@ -13,21 +13,21 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f29b3a782ce62c475c80804225787a0a42e85a2c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 4eaa58bc7bb27746a574c52fcd49253858a471ca
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993813"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723195"
 ---
-# <a name="data-table-control-in-powerapps"></a>PowerApps 中的数据表控件
+# <a name="data-table-control-in-power-apps"></a>Power Apps 中的数据表控件
 以表格格式显示一组数据。
 
 ## <a name="description"></a>描述
 “数据表”控件显示数据集，格式为控件显示的每个字段都有对应的列标题。 作为应用开发者，可以完全控制显示哪些字段和显示顺序。 与“库”控件一样，“数据表”控件包含指向选定行的“Selected”属性。 因此，可以将“数据表”控件与其他控件相关联。
 
 ## <a name="capabilities"></a>功能
-PowerApps 在 2017 年 5 月 5 日引入了“数据表”控件。 此部分介绍了支持和不支持的功能。
+Power Apps 在5月 5 2017 日**引入了 "** 数据表" 控件。 此部分介绍了支持和不支持的功能。
 
 ### <a name="now-available"></a>现可用
 * “数据表”控件中的数据为只读。

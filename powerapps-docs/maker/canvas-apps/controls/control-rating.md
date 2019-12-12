@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 212fc44b6c1cec981f17d134f4cd8f8131b7af9a
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: a5e91f8ff3b760e173ac01b32a68c7f60a488014
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649918"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732092"
 ---
-# <a name="rating-control-in-powerapps"></a>PowerApps 中的评分控件
+# <a name="rating-control-in-power-apps"></a>Power Apps 中的评级控制
 用户可以用于指示介于 1 和你指定的最大数之间的值的控件。
 
 ## <a name="description"></a>描述

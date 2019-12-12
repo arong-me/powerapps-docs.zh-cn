@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d211af5c34874a0ea0afe80af91c2f65495a7a60
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 0e949cb54a4835b887ae971f110f4c02e12dc7fa
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650508"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727087"
 ---
-# <a name="list-box-control-in-powerapps"></a>PowerApps 中的列表框控件
+# <a name="list-box-control-in-power-apps"></a>Power Apps 中的列表框控件
 用户可以选择一个或多个项的列表。
 
 ## <a name="description"></a>描述

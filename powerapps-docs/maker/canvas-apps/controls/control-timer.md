@@ -13,21 +13,21 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 46b5cb0761027c7e39ac95619974d2c0187225a2
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 2462f82420713e93c3ac0598a73e2dc43bc7c0b1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649644"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731942"
 ---
-# <a name="timer-control-in-powerapps"></a>PowerApps 中的计时器控件
+# <a name="timer-control-in-power-apps"></a>Power Apps 中的计时器控制
 一个控件，可确定特定时间后应用的响应方式。
 
 ## <a name="description"></a>描述
 例如，计时器可确定控件显示的时长，或在经过特定时间后更改控件的其他属性。
 
 > [!NOTE]
-> 在 PowerApps Studio 中，计时器仅在预览模式下运行。
+> 在 Power Apps Studio 中，计时器仅在预览模式下运行。
 
 
 ## <a name="key-properties"></a>关键属性

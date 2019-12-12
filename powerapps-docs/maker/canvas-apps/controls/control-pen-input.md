@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4da95086c99c03fdd56214a0d2fb637beaa6243c
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: a5645f2f0d515d7eca125f3cd89ecff0c63cfa51
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650356"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729047"
 ---
-# <a name="pen-input-control-in-powerapps"></a>PowerApps 中的笔输入控件
+# <a name="pen-input-control-in-power-apps"></a>Power Apps 中的笔输入控件
 用户可用其进行绘图、擦除和突出显示图像区域的控件。
 
 ## <a name="description"></a>描述

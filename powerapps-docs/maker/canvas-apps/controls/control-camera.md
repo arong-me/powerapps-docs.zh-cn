@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 14f802a899171dce052c8975f9fc63b07e448afc
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: c58f5695e47c27be261c6c85c273fe22952dd98a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650717"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727502"
 ---
-# <a name="camera-control-in-powerapps"></a>PowerApps 中的照相机控件
+# <a name="camera-control-in-power-apps"></a>Power Apps 中的照相机控件
 一个控件，用户通过此控件可使用设备上的照相机拍照。
 
 ## <a name="description"></a>描述

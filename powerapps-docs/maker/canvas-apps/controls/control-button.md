@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 750b02bdd3363f03ad0f32ae1fcbc59d7c5c3f3e
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 02d5f59f16b68ce7f140857591b86a5cd8e54cd5
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650733"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74722965"
 ---
-# <a name="button-control-in-powerapps"></a>PowerApps 中的按钮控件
+# <a name="button-control-in-power-apps"></a>Power Apps 中的按钮控件
 用户单击或点击后可与应用进行交互的控件。
 
 ## <a name="description"></a>描述
@@ -161,7 +161,7 @@ Pressed - 如果用户按下控件，值为“true”，否则值为“false”�
 
 ### <a name="change-a-buttons-appearance"></a>更改按钮外观
 #### <a name="change-a-buttons-shape"></a>更改按钮形状
-默认情况下，PowerApps 创建具有圆角的矩形“按钮”控件。 可以设置“[Height](properties-size-location.md)”、“[Width](properties-size-location.md)”和“[Radius](properties-size-location.md)”属性，对“按钮”控件的形状进行基本修改。
+默认情况下，电源应用创建带有圆角的矩形**按钮**控件。 可以设置“[Height](properties-size-location.md)”、“[Width](properties-size-location.md)”和“[Radius](properties-size-location.md)”属性，对“按钮”控件的形状进行基本修改。
 
 > [!NOTE]
 > [“图标”和“形状”](control-shapes-icons.md)提供了各种设计，并可执行“按钮”控件执行的一些基本函数。 不过，“[图标和形状](control-shapes-icons.md)”没有“[Text](properties-core.md)”属性。
