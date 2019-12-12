@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4a7def7990723e9531c4c7a3075c3c2259a45a37
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: d34e5d128f6a38c430432f8acfcc40edaa80c034
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650590"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727251"
 ---
-# <a name="date-picker-control-in-powerapps"></a>PowerApps 中的日期选取器控件
+# <a name="date-picker-control-in-power-apps"></a>Power Apps 中的日期选取器控件
 用户可单击或点击以指定日期的控件。
 
 ## <a name="description"></a>描述

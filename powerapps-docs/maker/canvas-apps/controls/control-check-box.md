@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2a89f2afcceedada0ffdda53628e9253433e8f95
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 7bb993de28435478c65e061e959b2fa8945e73d1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650687"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727415"
 ---
-# <a name="check-box-control-in-powerapps"></a>PowerApps 中的复选框控件
+# <a name="check-box-control-in-power-apps"></a>Power Apps 中的复选框控件
 用户可选择或清除以将其值设置为 **true** 或 **false** 的控件。
 
 ## <a name="description"></a>描述

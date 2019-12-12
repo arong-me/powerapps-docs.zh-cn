@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 05/25/2017
+ms.date: 12/02/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a532af505e579e66d3dfa0dce22a1c3ac6a4a6cc
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 449948efb53fd5fdc3b0f65f5277d50b6a831dc7
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650522"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74709387"
 ---
 # <a name="gallery-control-in-canvas-apps"></a>画布应用中的库控件
 
@@ -93,6 +93,11 @@ WrapCount - 每行或每列（具体取决于是水平布局还是垂直布局�
 ## <a name="related-functions"></a>相关函数
 
 [**Filter**( *DataSource*, *Formula* )](../functions/function-filter-lookup.md)
+
+[**重置**（*控制*）](../functions/function-reset.md) -将库重置为初始状态。 初始状态包括滚动到第一项，并选择第一个项或默认项（如果存在）。 
+
+  > [!NOTE]
+  > **重置**控件不以递归方式重置库的所有子级。
 
 ## <a name="examples"></a>示例
 

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e80f34917bba942f85e141c382cf3b1caa5e6d44
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: a116d812f8be7d8c1fb15ba2b05805536240084c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650755"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727514"
 ---
-# <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>PowerApps 中的 Web 条码-扫描器控件（实验性）
+# <a name="web-barcode-scanner-control-experimental-in-power-apps"></a>Power Apps 中的 Web 条码-扫描器控件（实验性）
 
 旧的条形码扫描控件（已过时但对于在 web 浏览器中扫描代码可能很有用）。
 

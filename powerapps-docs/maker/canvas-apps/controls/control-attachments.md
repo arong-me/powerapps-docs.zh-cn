@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5279f9368cdd832e84fba13faf8643cd7392d70b
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: abbe0165041aa3fa496bae480fa1235d9c0b159c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650809"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727646"
 ---
-# <a name="attachments-control-in-powerapps"></a>PowerApps 中的附件控件
+# <a name="attachments-control-in-power-apps"></a>Power Apps 中的附件控件
 允许用户将文件下载到其设备，以及上传和删除 SharePoint 列表或 Common Data Service 实体中的文件的控件。
 
 ## <a name="limitations"></a>限制

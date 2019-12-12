@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7dd961568fe9cf2a9eb58ad761403b20c99824be
-ms.sourcegitcommit: 8f32eed48adf4b24b9ca607bbf6db3d19749c46f
+ms.openlocfilehash: 1322fd34f4e3a59a62a414fc0e2e7ccca48fc99f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74415506"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731974"
 ---
-# <a name="text-input-control-in-powerapps"></a>PowerApps 中的文本输入控件
+# <a name="text-input-control-in-power-apps"></a>Power Apps 中的文本输入控件
 用户可在其中键入文本、数字和其他数据的框。
 
 ## <a name="description"></a>描述
