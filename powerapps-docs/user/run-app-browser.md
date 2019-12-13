@@ -1,12 +1,12 @@
 ---
 title: 在 Web 浏览器中运行应用 | Microsoft Docs
 description: 本主题介绍如何在 Web 浏览器中运行应用
-author: Mattp123
+author: mduelae
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 8/21/2019
-ms.author: matp
+ms.date: 12/05/2019
+ms.author: mkaur
 manager: kvivek
 ms.custom: ''
 ms.reviewer: ''
@@ -16,15 +16,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 76d2d4cdccc14e5c9c60cd5679bd7b88a2649380
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8ce6cfe213817cd603857bb5ea2735b188f8cb6c
+ms.sourcegitcommit: 15c6b26ff085928459ad9b3f52fb607fae4a997d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680664"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74956775"
 ---
 # <a name="run-an-app-in-a-web-browser"></a>在 Web 浏览器中运行应用
-在创建应用或者某人与你共享应用时，可以在 Windows、iOS、Android 上或 Web 浏览器中运行此应用。 本主题介绍如何在 Web 浏览器中从 [Dynamics 365 主页](https://home.dynamics.com)运行画布或模型驱动应用。
+当你创建应用，或者有人与你共享应用时，你可以在 Dynamics 365 移动应用或 tablet 上的 web 浏览器中运行该应用。 在本主题中，你将了解如何在 web 浏览器中从[Dynamics 365 主页](https://home.dynamics.com)运行画布或模型驱动应用。
+
+若要获得完整的功能和优化的体验，强烈建议使用适用于手机和平板电脑移动应用的 Dynamics 365。 如果你没有安装适用于手机和平板电脑应用的 Dynamics 365，则你仍可以在平板电脑上使用 web 浏览器，前提是你的设备具有足够高的屏幕分辨率。 有关详细信息，请查看[支持的内容](https://docs.microsoft.com/dynamics365/mobile-app/support-phones-tablets#supported-devices-for-the-mobile-app)。
+
+> [!NOTE]
+> 不支持使用手机上的 web 浏览器运行模型驱动的应用;必须使用适用于手机的 Dynamics 365 应用。
 
 要按本快速入门教程操作，需要以下内容：
 - Power Apps 许可证。 此功能适用于电源应用计划，例如[Power Apps 计划2试用版](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)，或包含 power apps 的任何[Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)或[Dynamics 365](https://dynamics.microsoft.com/pricing/)计划。 
@@ -46,7 +51,7 @@ ms.locfileid: "74680664"
 
 
 ## <a name="run-an-app-from-a-url"></a>从 URL 中运行应用
-可以在浏览器中将应用的 URL 保存为书签，并通过选择书签来运行它，也可以通过电子邮件将 URL 作为链接发送。 如果其他人创建了一个应用并将其与你的电子邮件共享，则可以通过选择电子邮件中的链接来运行该应用。 使用 URL 运行应用时，系统可能提示使用 Azure Active Directory 凭据登录。
+可以在 tablet 的浏览器中将应用的 URL 另存为书签，并通过选择书签来运行该 URL，也可以通过电子邮件发送 URL 作为链接。 如果其他人创建了一个应用并将其与你的电子邮件共享，则可以通过选择电子邮件中的链接来运行该应用。 使用 URL 运行应用时，系统可能提示使用 Azure Active Directory 凭据登录。
 
 ![](./media/run-app-browser/web-login.png)
 
