@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: abbe0165041aa3fa496bae480fa1235d9c0b159c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: f5288e6a8ee655cf24479a7de3a5904b7f1a4e07
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727646"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204033"
 ---
 # <a name="attachments-control-in-power-apps"></a>Power Apps 中的附件控件
 允许用户将文件下载到其设备，以及上传和删除 SharePoint 列表或 Common Data Service 实体中的文件的控件。
@@ -48,11 +48,11 @@ OnRemove – 当用户删除现有附件时，应用的响应方式。
 [OnSelect](properties-core.md) – 当用户单击附件时，应用的响应方式。
 
 ## <a name="additional-properties"></a>其他属性
-**[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。 应描述附件的用途。
+[AccessibleLabel](properties-accessibility.md) – 屏幕阅读器标签。 应描述附件的用途。
 
 AddAttachmentText – 用于添加新附件的链接的标签文本。
 
-**[BorderColor](properties-color-border.md)** – 控件边框的颜色。
+[BorderColor](properties-color-border.md) – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
@@ -60,9 +60,9 @@ AddAttachmentText – 用于添加新附件的链接的标签文本。
 
 [DisplayMode](properties-core.md) – 控件是允许添加和删除文件 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
-**[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
+[FocusedBorderColor](properties-color-border.md) – 当聚焦到控件时，控件的边框颜色。
 
-**[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
+[FocusedBorderThickness](properties-color-border.md) – 当聚焦到控件时，控件的边框粗细。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -70,11 +70,11 @@ MaxAttachmentsText – 当控件中的文件数达到上限时，用于替换“
 
 **NoAttachmentsText** – 在未附加任何文件时向用户显示的说明文本。
 
-**[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
+[TabIndex](properties-accessibility.md) – 相对于其他控件的键盘导航顺序。
 
 [Visible](properties-core.md) – 控件可见还是隐藏。
 
-**[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
+[Width](properties-size-location.md) – 控件左边缘和右边缘之间的距离。
 
 [X](properties-size-location.md) – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
@@ -92,7 +92,7 @@ MaxAttachmentsText – 当控件中的文件数达到上限时，用于替换“
 
     与 SharePoint 列表相关联的“附件”字段将显示在窗体中。
 
-[了解如何添加和配置控件]。(../add-configure-controls.md)
+[了解如何添加和配置控件](../add-configure-controls.md)
 
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
@@ -118,5 +118,5 @@ MaxAttachmentsText – 当控件中的文件数达到上限时，用于替换“
 * NoAttachmentsText
 
 ### <a name="keyboard-support"></a>键盘支持
-* **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
+* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness](properties-color-border.md)**”来实现此目的。

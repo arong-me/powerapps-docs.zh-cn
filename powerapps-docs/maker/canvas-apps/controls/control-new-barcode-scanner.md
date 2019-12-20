@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c7c3079ebbdeea0097f50acc2ce7f5d4e4089947
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: c83e713a5f29198779b0b9b8968bb38b98bc2a5a
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650419"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75203987"
 ---
 # <a name="barcode-scanner-control-for-canvas-apps"></a>用于画布应用的条形码扫描器控制
 
@@ -27,17 +27,6 @@ ms.locfileid: "73650419"
 ## <a name="description"></a>描述
 
 控件打开 Android 或 iOS 设备上的本机扫描仪。 在视图中时，扫描器会自动检测条形码、QR 码或数据矩阵代码。 控件不支持在 web 浏览器中进行扫描。
-
-此控件支持 QR 码、数据矩阵代码和以下类型的条码：
-
-- UPC A
-- UPC E
-- EAN 8
-- EAN 13
-- 代码39
-- 代码128
-- ITF
-- PDF 417
 
 ## <a name="key-properties"></a>关键属性
 
@@ -49,6 +38,8 @@ ms.locfileid: "73650419"
 
 ## <a name="additional-properties"></a>其他属性
 
+**BarcodeType** -要扫描的条形码类型。 可以通过连接多个条码类型来作为目标。 例如. BarcodeType. Code128 & BarcodeType**默认值： Auto**
+
 [BorderColor](properties-color-border.md) – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
@@ -59,7 +50,7 @@ ms.locfileid: "73650419"
 
 **FlashlightEnabled** -打开扫描仪时是否自动启用闪光灯。
 
-**[高度](properties-size-location.md)** –激活扫描仪的按钮的高度。
+**[高度](properties-size-location.md)**–激活扫描仪的按钮的高度。
 
 **PreferFrontCamera** -用于扫描的正面照相机（如果可用）。
 
@@ -79,6 +70,29 @@ ms.locfileid: "73650419"
 **[按钮](control-button.md)** 控件的相同准则适用于**条形码扫描器**控件，因为它是启动扫描的按钮。
 
 ### <a name="visual-alternatives"></a>直观替代项
-* 条形码扫描器是不显示扫描结果的按钮。 请考虑使用 " **[标签](control-text-box.md)** " 控件显示扫描结果。 将标签的 " **[Text](properties-core.md)** " 属性设置为条形码扫描器的**Value**属性。 将标签的 **[Live](properties-accessibility.md)** 属性设置为 "**礼貌**"，以便通知屏幕阅读器用户发生更改。 此更改使每个用户都可以访问扫描的值，而不考虑视觉对象的能力。
+* 条形码扫描器是不显示扫描结果的按钮。 请考虑使用 "**[标签](control-text-box.md)**" 控件显示扫描结果。 将标签的 " **[Text](properties-core.md)** " 属性设置为条形码扫描器的**Value**属性。 将标签的**[Live](properties-accessibility.md)** 属性设置为 "**礼貌**"，以便通知屏幕阅读器用户发生更改。 此更改使每个用户都可以访问扫描的值，而不考虑视觉对象的能力。
 
-* 具有视觉障碍和伤残障碍的用户可能不会将相机指向条形码。 请考虑为用户添加另一种形式的输入（如 **[文本输入](control-text-input.md)** 控件），以供用户输入条形码。
+* 具有视觉障碍和伤残障碍的用户可能不会将相机指向条形码。 请考虑为用户添加另一种形式的输入（如**[文本输入](control-text-input.md)** 控件），以供用户输入条形码。
+
+## <a name="barcode-availability-by-device"></a>条形码按设备提供
+
+| 条形码类型 | Android | iOS |
+|--------------|:-------:|:---:|
+|QR_CODE|✔|✔|
+|DATA_MATRIX|✔|✔|
+|UPC_A|✔|✔|
+|UPC_E|✔|✔|
+|EAN_8|✔|✔|
+|EAN_13|✔|✔|
+|CODE_39|✔|✔|
+|CODE_93|✔|✔|
+|CODE_128|✔|✔|
+|CODABAR|✔|✖|
+|ITF|✔|✔|
+|RSS14|✔|✖|
+|PDF_417|✔|✔|
+|RSS_EXPANDED|✔|✖|
+|MSI|✖|✖|
+|AZTEC|✔|✔|
+
+**注意：** 在 Auto 模式下不支持 PDF_417 和 AZTEC
