@@ -170,7 +170,7 @@
       items:
         - name: 连接到数据
           items:
-            - name: 连接列表
+            - name: 连接概述
               href: ./canvas-apps/connections-list.md
             - name: 常用连接器
               items:
@@ -1222,8 +1222,8 @@
           href: ./portals/configure/place-child-nodes.md
         - name: “日期和时间”字段的行为和格式
           href: ./portals/configure/behavior-format-date-time-field.md
-        - name: 在门户日程表中查看电子邮件记录
-          href: ./portals/configure/view-email-in-timeline.md
+        - name: 在门户时间线中查看活动
+          href: ./portals/configure/view-all-activities-in-portal-timeline.md
         - name: 为网页评分
           href: ./portals/configure/rate-webpage.md
         - name: 在门户上启用页眉和页脚输出缓存
@@ -1488,8 +1488,12 @@
           href: ./common-data-service/use-solution-explorer.md
         - name: 使用 Common Data Service 默认解决方案
           href: ./common-data-service/use-solutions-for-your-customizations.md
-        - name: 导入、更新和导出解决方案
+        - name: 导入解决方案
           href: ./common-data-service/import-update-export-solutions.md
+        - name: 更新解决方案
+          href: ./common-data-service/update-solutions.md
+        - name: 导出解决方案
+          href: ./common-data-service/export-solutions.md
         - name: 导航到特定解决方案
           href: ./common-data-service/navigate-specific-solution.md
         - name: 创建解决方案
