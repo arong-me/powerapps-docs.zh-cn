@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中排序模型驱动应用视图中的记录 | MicrosoftDocs
+title: 在 Power Apps 中排序模型驱动应用视图中的记录 | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -21,18 +21,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7cd1e7b160550b877dd0ddd7a79b6babfbf56669
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5a80764f3f00df60b54c4c7c23d2e167de2e006b
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752471"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874770"
 ---
 # <a name="sort-records-in-a-model-driven-app-view"></a>排序模型驱动应用程序视图中的记录
 
  当您创建或编辑视图时，可以将排序顺序配置为升序或降序。   
   
-1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 
 2.  展开**数据**，选择**实体**，然后选择所需实体，如**客户**。   

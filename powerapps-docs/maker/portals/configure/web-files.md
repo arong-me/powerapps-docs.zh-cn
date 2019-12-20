@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 门户中创建和管理 Web 文件 | MicrosoftDocs
+title: 在 Power Apps 门户中创建和管理 Web 文件 | MicrosoftDocs
 description: 了解如何在门户中创建和管理 Web 文件。
 author: sbmjais
 manager: shujoshi
@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: dc67db92ac502611b0c10b5d387b100e8aa43da7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0e8487e211cf685c77aef545ebc39a43968f8e40
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760158"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864906"
 ---
 # <a name="create-and-manage-web-files"></a>创建和管理 web 文件
 
@@ -24,7 +24,7 @@ Web 文件表示在用于存储图像、文档和任何其他文件类型的门�
 
 ## <a name="manage-web-files"></a>管理 Web 文件
 
-可在 PowerApps 门户中创建、编辑和删除 Web 文件。
+可在 Power Apps 门户中创建、编辑和删除 Web 文件。
 
 1. 打开[“门户管理”应用](configure-portal.md)。
 

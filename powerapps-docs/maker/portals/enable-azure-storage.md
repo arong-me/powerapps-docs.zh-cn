@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/11/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 3da40cfdcb88726384218c4b1df370c301f8ac16
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0d9b49857528cf0e55fa2ad3dfcaae2aa88b77c0
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759896"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2815959"
 ---
 # <a name="enable-azure-storage"></a>启用 Azure 存储
 
@@ -55,7 +55,7 @@ Azure 存储门户集成在默认文件附件方面使用相同界面和提供�
 
 您还必须按照下面的说明在您的 Azure 存储帐户上添加跨源资源共享 (CORS) 规则，否则您将看到常规的附件图标，而不是云图标：
 
-- **允许的源**：指定您的域。 例如，contoso.crm.dynamics.com。
+- **允许的源**：指定您的域。 例如，`http://contoso.crm.dynamics.com`。
 - **允许的动词**：GET、PUT、DELETE、HEAD、POST
 - **允许的标头**：指定原始域可能对 CORS 请求指定的请求标头。 例如，x-ms-meta-data\*、x-ms-meta-target\*。 
 - **显示的标头**：指定可能在响应 CORS 请求时发送并由浏览器向请求颁发者显示的响应标头。 例如，x-ms-meta-\*。

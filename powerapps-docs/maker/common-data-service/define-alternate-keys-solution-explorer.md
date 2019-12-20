@@ -20,20 +20,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8b1b38c94cbd4615ff0ab449944e65089865a823
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c13838bdd957d78552d71636b4a165902154e82c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758708"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865683"
 ---
 # <a name="define-alternate-keys-using-solution-explorer"></a>使用解决方案资源管理器定义备用键
 
 解决方案资源管理器为查看和创建 Common Data Service 的备用键提供一种方法。
 
-[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 <br />详细信息： 
+[Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 <br />详细信息： 
 - [定义引用记录的备用键](define-alternate-keys-reference-records.md)<br />
-- [使用 PowerApps 门户定义备用键](define-alternate-keys-portal.md)
+- [使用 Power Apps 门户定义备用键](define-alternate-keys-portal.md)
 
 ## <a name="open-solution-explorer"></a>打开解决方案资源管理器
 
@@ -72,5 +72,5 @@ ms.locfileid: "2758708"
 ### <a name="see-also"></a>另请参阅
 
 [定义引用记录的备用键](define-alternate-keys-reference-records.md)<br />
-[使用 PowerApps 门户定义备用键](define-alternate-keys-portal.md)<br />
+[使用 Power Apps 门户定义备用键](define-alternate-keys-portal.md)<br />
 [开发人员文档：定义实体的备用键](/dynamics365/customer-engagement/developer/define-alternate-keys-entity)

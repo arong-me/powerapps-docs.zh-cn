@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中使用自定义控件实现模型驱动应用的数据可视化 | MicrosoftDocs
+title: 在 Power Apps 中使用自定义控件实现模型驱动应用的数据可视化 | MicrosoftDocs
 description: 了解如何使用字段的自定义控件
 ms.custom: ''
 ms.date: 06/07/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b34354a1bc0bdfb3556acc6ca999a1e0e8dcec74
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8fd79185c4db541700e3079e9151a1193ebd6247
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756024"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874462"
 ---
 # <a name="use-custom-controls-for-model-driven-app-data-visualizations"></a>使用自定义控件实现模型驱动应用程序的数据可视化
 
@@ -48,7 +48,7 @@ ms.locfileid: "2756024"
 ## <a name="use-a-custom-control-to-add-visualizations-to-a-field"></a>使用自定义控件为字段添加可视化效果  
  执行此过程中的步骤将把“商机”实体中的**预算金额**字段的默认标签和文本框字段更改为滑块自定义控件。 可使用类似步骤将现有字段替换为自定义控件或为自定义字段配置自定义控件。  
   
-1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
      
 

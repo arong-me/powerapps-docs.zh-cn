@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5e579b7054171222819b2d1dd6bb21d9cb7400a9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 13ec511c692af8694012f94f881cb02ee1280ee2
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711551"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863144"
 ---
 # <a name="model-driven-sample-apps"></a>模型驱动示例应用程序
 
@@ -60,7 +60,7 @@ ms.locfileid: "2711551"
 - 如果对示例应用程序进行了自定义，则可能存在[依赖项](https://docs.microsoft.com/dynamics365/customer-engagement/developer/dependency-tracking-solution-components)，其必须在删除解决方案之前删除。
 
 ### <a name="steps"></a>步骤
-1. 登录到 [PowerApps 管理门户](https://admin.powerapps.com)。
+1. 登录到 [Power Apps 管理门户](https://admin.powerapps.com)。
 
 2. 选择环境。
 

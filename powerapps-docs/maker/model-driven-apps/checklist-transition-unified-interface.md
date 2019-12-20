@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 03b3db348ff88b7fd2c5e89e2b94a7d16a1fee17
-ms.sourcegitcommit: bcaffcb3135251ea3c2e828f8b59926d19520bec
+ms.openlocfilehash: 20a64e12abc70e8c1b636ab5412e2a951b5ad612
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761804"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869203"
 ---
 # <a name="checklist-unified-interface-transition"></a>检查表：统一接口转换
 
@@ -35,9 +35,9 @@ ms.locfileid: "2761804"
 
 - Dynamics 365 Project Service Automation
 
-## <a name="run-the-powerapps-solution-checker-on-your-solutions"></a>在您的解决方案上运行 PowerApps 解决方案检查器
+## <a name="run-the-power-apps-solution-checker-on-your-solutions"></a>在您的解决方案上运行 Power Apps 解决方案检查器
 
-[PowerApps 解决方案检查器](https://docs.microsoft.com/powerapps/maker/common-data-service/use-powerapps-checker)根据一组最佳实践规则对解决方案执行各种静态分析检查，并快速确定这些问题模式。 检查完成后，将收到详细报告，其中列出了确定的问题，受影响的组件和代码，以及介绍各问题解决方法的文档的链接。
+[Power Apps 解决方案检查器](https://docs.microsoft.com/powerapps/maker/common-data-service/use-powerapps-checker)根据一组最佳实践规则对解决方案执行各种静态分析检查，并快速确定这些问题模式。 检查完成后，将收到详细报告，其中列出了确定的问题，受影响的组件和代码，以及介绍各问题解决方法的文档的链接。
 
 解决方案检查器分析以下解决方案组件：
 
@@ -73,7 +73,7 @@ ms.locfileid: "2761804"
 
 ## <a name="identify-replacements-for-deprecated-client-api-code-and-features"></a>确定弃用的客户端 API 代码和功能的替换
 
-基于 **PowerApps 解决方案检查器**的输出以及弃用的客户端 API 代码和功能[即将做出的重要更改（弃用）](https://docs.microsoft.com/power-platform/important-changes-coming)，您应该对在统一接口项目中需要更正或替换的自定义项和功能有很好的了解。
+基于 **Power Apps 解决方案检查器**的输出以及弃用的客户端 API 代码和功能[即将做出的重要更改（弃用）](https://docs.microsoft.com/power-platform/important-changes-coming)，您应该对在统一接口项目中需要更正或替换的自定义项和功能有很好的了解。
 
 以下是需要注意的一些最常见区域：
 
@@ -129,7 +129,7 @@ ms.locfileid: "2761804"
 
 ### <a name="what-are-model-driven-apps"></a>什么是模型驱动应用？
 
-**模型驱动应用**是您可以使用 PowerApps 创建的一种类型的应用，可帮助您根据用户在组织中的角色为他们提供量身定制的体验。 例如，通过不同的模型驱动应用，即使销售人员使用的是来自同一环境的数据，他们的体验也可能与客户服务代表的体验完全不同。 可以在 Common Data Service 环境中创建多个模型驱动应用。 更多信息请参阅：[什么是模型驱动型应用？](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview)
+**模型驱动应用**是您可以使用 Power Apps 创建的一种类型的应用，可帮助您根据用户在组织中的角色为他们提供量身定制的体验。 例如，通过不同的模型驱动应用，即使销售人员使用的是来自同一环境的数据，他们的体验也可能与客户服务代表的体验完全不同。 可以在 Common Data Service 环境中创建多个模型驱动应用。 更多信息请参阅：[什么是模型驱动型应用？](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview)
 
 前面列出的 Dynamics 365 第一方应用是模型驱动应用的示例。
 
@@ -203,7 +203,7 @@ ms.locfileid: "2761804"
 
 -   利用窗体上的**参考面板**将多个视图、快速视图和知识库搜索功能捆绑在一个地方。
 
--   利用 [PowerApps Component Framework](https://docs.microsoft.com/powerapps/developer/component-framework/overview) 添加更多自定义控件。 您可以从社区或合作伙伴和 ISV 那里获得一些东西。
+-   利用 [Power Apps Component Framework](https://docs.microsoft.com/powerapps/developer/component-framework/overview) 添加更多自定义控件。 您可以从社区或合作伙伴和 ISV 那里获得一些东西。
 
 -   在您的窗体中嵌入[画布应用](https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started)以轻松扩展您的应用程序。 应用的无码或低码扩展，无需开发自定义 HTML/JS Web 资源。
 

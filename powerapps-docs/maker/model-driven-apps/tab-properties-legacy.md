@@ -1,5 +1,5 @@
 ---
-title: PowerApps 中模型驱动应用窗体的选项卡属性 | MicrosoftDocs
+title: Power Apps 中模型驱动应用窗体的选项卡属性 | MicrosoftDocs
 description: 了解主窗体的选项卡属性
 Keywords: 选项卡属性; Dynamics 365; 主窗体
 author: matp
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bd97c61829aaba7279f56019f0eec7fa9829a6ea
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d0653ad2089be03ff06bfd5495c8995d92ec704e
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756244"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874594"
 ---
 # <a name="tab-properties-for-model-driven-app-forms-overview"></a>模型驱动应用程序窗体的选项卡属性概述
 
@@ -31,8 +31,8 @@ ms.locfileid: "2756244"
   
  选项卡最多包含三栏，每栏的宽度可设置为总宽度的百分比。 创建新选项卡时，每个栏会预填充一个分区。  
 
-您可以从 PowerApps 站点访问**选项卡属性**。 
-1.  在 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的左下方）。  
+您可以从 Power Apps 站点访问**选项卡属性**。 
+1.  在 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的左下方）。  
 
      ![模型驱动设计模式](media/model-driven-switch.png)
 

@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 600ddb0ac6e016acf057e592ac638b4e07ddf8ba
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 582bd72897a91fac08ac86a79aa6c71cab49aaad
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2708383"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866519"
 ---
 # <a name="iteration-tags"></a>迭代标记
 
@@ -401,4 +401,4 @@ Child Page 4
 [控制流标记](control-flow-tags.md)
 [变量标记](variable-tags.md)
 [模板标记](template-tags.md)
-[PowerApps Common Data Service 实体标记](portals-entity-tags.md)
+[Power Apps Common Data Service 实体标记](portals-entity-tags.md)

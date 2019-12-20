@@ -1,6 +1,6 @@
 ---
-title: 使用 PowerApps 门户创建和编辑实体 | MicrosoftDocs
-description: 了解如何使用 PowerApps 门户创建和编辑实体
+title: 使用 Power Apps 门户创建和编辑实体 | MicrosoftDocs
+description: 了解如何使用 Power Apps 门户创建和编辑实体
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
@@ -21,16 +21,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6b1fb1e479237face89e0a19ee145f7fa428cb62
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2aa8cb6f5bb0cd3e58eda61c2b9c7b9d03637ec7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758092"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866079"
 ---
-# <a name="create-and-edit-entities-using-powerapps-portal"></a>使用 PowerApps 门户创建和编辑实体
+# <a name="create-and-edit-entities-using-power-apps-portal"></a>使用 Power Apps 门户创建和编辑实体
 
-[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供为 Common Data Service 创建和编辑实体的简单方法。
+[Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供为 Common Data Service 创建和编辑实体的简单方法。
 
 此门户支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 详细信息： 
 - [在 Common Data Service 中创建和编辑实体](create-edit-entities.md)
@@ -38,7 +38,7 @@ ms.locfileid: "2758092"
 
 ## <a name="view-entities"></a>视图实体
 
-1. 从 [PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**区域**设计模式。
+1. 从 [Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**区域**设计模式。
 2. 选择**数据** > **实体**
 
 ![视图实体](media/view-entities-portal.png)
@@ -143,7 +143,7 @@ ms.locfileid: "2758092"
 
 在[查看实体](#view-entities)时，选择实体，然后从菜单或上下文菜单中选择**删除实体**。
 
-![使用 PowerApps 门户删除实体](media/delete-entity-powerapps-portal.png)
+![使用 Power Apps 门户删除实体](media/delete-entity-powerapps-portal.png)
 
 如果实体有依赖项，阻止您删除，您将看到错误消息。 若要确定并删除所有依赖项，您需要使用解决方案资源管理器。 详细信息[确定实体依赖项](create-edit-entities-solution-explorer.md#identify-entity-dependencies)
 

@@ -2,7 +2,7 @@
 title: 连接 Azure Data Lake Storage Gen2 以存储数据流 | MicrosoftDocs
 description: 了解如何连接 Azure Data Lake Storage Gen2 以存储数据流
 ms.custom: ''
-ms.date: 09/05/2019
+ms.date: 12/05/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -23,18 +23,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d7957f048613045a64af0caf5696e540dbb8f883
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 313e33760a2bc3daf0ac645a8b99d3be22455675
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754771"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895140"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>连接 Azure Data Lake Storage Gen2 以存储数据流
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
-
 您可以配置数据流以将其数据存储在组织的 Azure Data Lake Storage Gen2 帐户中。 本文介绍了这样做所必需采取的一般步骤，并提供全程指导和最佳实践。 
+
+> [!IMPORTANT]
+> 具有分析实体功能的数据流利用“导出到数据湖”服务，这可以提供各种级别的合规性、隐私、安全和数据位置承诺。 有关**导出到数据湖**服务的详细信息，请参阅[博客文章](https://go.microsoft.com/fwlink/?linkid=2109088)。
 
 配置数据流以将其定义和数据文件存储在您的 Data Lake 中有一些优点，包括：
 - Azure Data Lake Storage Gen2 提供了高度可扩展的数据存储设施。
@@ -43,7 +44,7 @@ ms.locfileid: "2754771"
 
 ## <a name="requirements"></a>要求
 要将 Azure Data Lake Storage Gen2 用于数据流，您需要具备以下条件：
-- PowerApps 环境。 任何 PowerApps 计划都将允许您以 Azure Data Lake Storage Gen2 作为目标来创建数据流。 您需要在环境中获得开发者的授权。 
+- Power Apps 环境。 任何 Power Apps 计划都将允许您以 Azure Data Lake Storage Gen2 作为目标来创建数据流。 您需要在环境中获得开发者的授权。 
 - Azure 订阅。 您需要 Azure 订阅才能使用 Azure Data Lake Storage Gen2。
 - 资源组。 使用已有的资源组，或创建一个新资源组。
 - Azure 存储帐户。 存储帐户必须启用了 Data Lake Storage Gen2 功能。
@@ -53,8 +54,8 @@ ms.locfileid: "2754771"
 
 ## <a name="prepare-your-azure-data-lake-storage-gen2-for-power-platform-dataflows"></a>为 Power Platform 数据流准备 Azure Data Lake Storage Gen2
 在使用 Azure Data Lake Storage Gen2 帐户配置您的环境之前，必须创建和配置存储帐户。 以下是 Power Platform 数据流的要求：
-1.  必须在与 PowerApps 租户相同的 Azure Active Directory 租户中创建存储帐户。
-2.  我们建议在与您打算在其中使用帐户的 PowerApps 环境相同的区域中创建存储帐户。 要确定 PowerApps 环境在哪里，请与环境管理员联系。
+1.  必须在与 Power Apps 租户相同的 Azure Active Directory 租户中创建存储帐户。
+2.  我们建议在与您打算在其中使用帐户的 Power Apps 环境相同的区域中创建存储帐户。 要确定 Power Apps 环境在哪里，请与环境管理员联系。
 3.  存储帐户必须启用了分层命名空间功能。
 4.  您必须在存储帐户中被授予“负责人”角色。
 
@@ -66,14 +67,14 @@ ms.locfileid: "2754771"
 2.  确保启用分层命名空间功能。 
 3.  我们建议您将复制设置设置为“读取访问异地冗余存储 (RA-GRS)”。
 
-## <a name="connect-your-azure-data-lake-storage-gen2-to-powerapps"></a>将 Azure Data Lake Storage Gen2 连接到 PowerApps
-在 Azure 门户中设置 Azure Data Lake Storage Gen2 帐户后，即可将其连接到特定的数据流或 PowerApps 环境。 将湖连接到环境后，环境中的其他开发者和管理员可以创建将其数据也存储在组织的湖中的数据流。 
+## <a name="connect-your-azure-data-lake-storage-gen2-to-power-apps"></a>将 Azure Data Lake Storage Gen2 连接到 Power Apps
+在 Azure 门户中设置 Azure Data Lake Storage Gen2 帐户后，即可将其连接到特定的数据流或 Power Apps 环境。 将湖连接到环境后，环境中的其他开发者和管理员可以创建将其数据也存储在组织的湖中的数据流。 
 
 要将您的 Azure Data Lake Storage Gen2 帐户与数据流连接，请按照下列步骤操作：
-1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后验证您所在的环境。 环境切换器位于标头的右侧。 
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后验证您所在的环境。 环境切换器位于标头的右侧。 
 2. 在左侧导航窗格中，选择**数据**旁边的向下箭头。
 
-   ![PowerApps 开发者门户“数据”选项卡](media/powerapps-portal-data.png)
+   ![Power Apps 开发者门户“数据”选项卡](media/powerapps-portal-data.png)
 
 3. 在显示的列表中，选择**数据流**，然后在命令栏上选择**新建数据流**。
 
@@ -110,6 +111,11 @@ ms.locfileid: "2754771"
 > [!IMPORTANT]
 > 您不应该在组织的湖中更改由数据流创建的文件，也不应该将文件添加到数据流的 **CDM 文件夹**中。 更改文件可能会损坏数据流或更改其行为，因此不支持。 Power Platform 数据流仅授予对其在湖中创建的文件的读取访问权限。 如果您向其他人或服务授予 Power Platform 数据流使用的文件系统的权限，则仅授予他们对该文件系统中文件或文件夹的读取权限。
 
+## <a name="privacy-notice"></a>隐私声明
+通过**导出到数据湖**服务在组织中使用分析实体启用数据流创建，将把有关 Azure Data Lake Storage 帐户的详细信息（如存储帐户的名称）发送到到“导出到数据湖”服务中并存储，该服务当前不在 PowerApps 合规性边界内，可能采用的隐私和安全措施通常比 PowerApps 中的更少或不同。 请注意，随时可以解除数据湖关联，以便不再使用此功能，并将从**导出到数据湖**服务删除 Azure Data Lake Storage 帐户详细信息。
+[本文](https://go.microsoft.com/fwlink/?linkid=2109088)中提供了有关“导出到数据湖”的更多信息。
+
+
 ## <a name="frequently-asked-questions"></a>常见问题
 *如果我以前在组织的 Azure Data Lake Storage Gen2 中创建了数据流并且想要更改其存储位置怎么办？*
 
@@ -124,7 +130,7 @@ ms.locfileid: "2754771"
 
 有关数据流、Common Data Model 和 Azure Data Lake Storage Gen2 的详细信息，请参阅以下文章：
 - [使用数据流准备自助服务数据](https://go.microsoft.com/fwlink/?linkid=2099972)
-- [在 PowerApps 中创建和使用工作流](https://go.microsoft.com/fwlink/?linkid=2100076)
+- [在 Power Apps 中创建和使用工作流](https://go.microsoft.com/fwlink/?linkid=2100076)
 - [连接 Azure Data Lake Storage Gen2 以存储数据流](https://go.microsoft.com/fwlink/?linkid=2099973)
 - [在 Common Data Service 中向实体添加数据](https://go.microsoft.com/fwlink/?linkid=2100075)
 
@@ -136,4 +142,4 @@ ms.locfileid: "2754771"
 - [Common Data Model 文件夹](https://go.microsoft.com/fwlink/?linkid=2045304)
 - [CDM 模型文件定义](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-您可以在 [PowerApps 社区](https://go.microsoft.com/fwlink/?linkid=2099971)中提问。
+您可以在 [Power Apps 社区](https://go.microsoft.com/fwlink/?linkid=2099971)中提问。

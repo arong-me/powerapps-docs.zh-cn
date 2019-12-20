@@ -16,18 +16,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0f6ec9122582f338ac23143149c6f59ea63e456f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a7298400d87c4b1230e8d893e72e0116641509af
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706095"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868499"
 ---
 # <a name="perform-predefined-actions-on-the-host-model-driven-form-from-within-an-embedded-canvas-app"></a>从嵌入的区域应用内在主机模型驱动窗体上执行预定义的操作
 嵌入的区域应用提供在主机模型驱动窗体上执行预定义操作的功能。 这些操作让开发者可以导航、刷新、保存主机模型驱动窗体。 使用这些操作，嵌入的区域应用可以充当更重要的模型驱动窗体和模型驱动应用的组成部分。  

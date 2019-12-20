@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 23435229c30298a6e2ff6a3e8417b0c09dad1312
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8c4b56d78b4c7337a9baf442231636e3d35ee27c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711111"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884044"
 ---
 # <a name="share-an-embedded-canvas-app"></a>共享嵌入式区域应用
 本主题说明如何共享已创建的嵌入式区域应用。
@@ -34,7 +34,7 @@ ms.locfileid: "2711111"
 在创建并向模型驱动窗体添加了嵌入式区域应用后，您需要采取步骤以确保可以访问模型驱动窗体的所有用户还可以访问区域应用及其使用的数据。 请参阅以下指南：
 -   与您组织中的每个人或安全组或特定用户共享您的嵌入式区域应用。 详细信息：[共享应用](../canvas-apps/share-app.md#share-an-app)
 -   确保用户具有嵌入式区域应用使用的任何 Common Data Service 实体的相应权限。 详细信息：[管理实体权限](../canvas-apps/share-app.md#manage-entity-permissions)
--   确保用户具有嵌入式区域应用使用的任何云服务（如 SharePoint 或 OneDrive）上数据的相应权限。 共享步骤特定于每个云服务，超出 PowerApps 的范围。
+-   确保用户具有嵌入式区域应用使用的任何云服务（如 SharePoint 或 OneDrive）上数据的相应权限。 共享步骤特定于每个云服务，超出 Power Apps 的范围。
 
 > [!NOTE]
 > 目前，不能使用安全角色中的**区域应用**权限为应用用户授予嵌入式或单机区域应用的访问权限。

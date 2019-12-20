@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: eed1efac81b882d076e0e809c93ddec63f6a75f7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bf9b21936a0b1a9d843d248cf4941854dcdbbd7d
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759720"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874550"
 ---
 # <a name="quick-start-for-transitioning-your-legacy-web-client-application-to-unified-interface"></a>从旧 Web 客户端应用程序转换到统一接口的快速入门指南
 
@@ -43,7 +43,7 @@ ms.locfileid: "2759720"
 ## <a name="prepare-the-environment"></a>准备环境
 首先，选择一个非生产环境并启用**将使用统一接口**模式，该模式对环境中的所有模型驱动应用程序都使用统一接口。 其中还包含最初为旧 Web 客户端配置的所有 Dynamics 365 应用程序模块。
 
-1. 登录 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**环境**，然后选择一个沙盒环境。 
+1. 登录 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**环境**，然后选择一个沙盒环境。 
 
 2. 选择**设置** > **行为**，然后打开**仅使用统一接口**。
 
@@ -62,7 +62,7 @@ ms.locfileid: "2759720"
 ## <a name="run-and-validate-your-application-in-the-unified-interface"></a>在统一接口中运行和验证应用程序
 运行最初为 Web 客户端应用程序的应用程序。 请注意，开启**仅使用统一接口**之后，环境中的所有可用应用程序都将使用统一接口，即使应用程序最初是针对 Web 客户端配置的也不例外。
 
-若要运行您的应用程序，请登录 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**应用程序**，然后选择要运行的应用程序。 也可以直接访问**我的应用程序**页面，如 *https://contoso.crm.dynamics.com/apps/*。
+若要运行您的应用程序，请登录 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**应用程序**，然后选择要运行的应用程序。 也可以直接访问**我的应用程序**页面，如 *https://contoso.crm.dynamics.com/apps/*。
 
 ### <a name="validate-your-app-processes-and-customizations"></a>验证您的应用程序、流程和自定义项 
 建议测试所有用例。 可以从最关键的用例开始，或将其分组为设计逻辑模式。 由于统一接口基于响应式设计，所以建议您使用不同屏幕分辨率的不同设备来执行测试。 测试应用程序时，可以验证自定义项是否兼容统一接口，是否有任何功能需要重新设计或缺少功能。 指定计划来检查这些元素，并在社区论坛发布问题和反馈。 
@@ -118,10 +118,10 @@ ms.locfileid: "2759720"
 [统一接口 Playbook](unified-interface-playbook.md) <br />
 [实现用户体验和统一接口转换](approaching-unified-interface.md) <br />
 [关于统一接口](/dynamics365/customer-engagement/admin/about-unified-interface) <br />
-[PowerApps 中的模型驱动应用程序是什么？](model-driven-app-overview.md) <br />
+[Power Apps 中的模型驱动应用程序是什么？](model-driven-app-overview.md) <br />
 [将您的应用程序更新为统一接口](/dynamics365/customer-engagement/admin/update-apps-to-unified-interface) <br />
 [配置模型驱动应用程序的交互式体验仪表板](configure-interactive-experience-dashboards.md) <br />
 [使用自定义控件实现模型驱动应用程序的数据可视化](use-custom-controls-data-visualizations.md) <br />
-[PowerApps component framework 概述](/powerapps/developer/component-framework/overview) <br />
+[Power Apps component framework 概述](/powerapps/developer/component-framework/overview) <br />
 [适用于所有人的统一接口](/power-platform-release-plan/2019wave2/microsoft-powerapps/unified-interface-app-everybody)
 

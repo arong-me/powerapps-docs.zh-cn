@@ -23,15 +23,15 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3d1ea2b05abb592ec6d2925e813cd213b5b7492a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5ea6ed1011ce9d21c78adf6beed9a2943c9f4cd0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706139"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860443"
 ---
 # <a name="embed-a-power-bi-report-in-a-model-driven-system-form"></a>在模型驱动系统窗体中嵌入 Power BI 报表
-您可以使用 PowerApps 模型驱动应用中的 Power BI 报表将丰富的报表和分析带入您的系统窗体，让用户完成更多任务。 这可以解锁跨系统聚合数据的能力，并将其自定义到单个记录的上下文。
+您可以使用 Power Apps 模型驱动应用中的 Power BI 报表将丰富的报表和分析带入您的系统窗体，让用户完成更多任务。 这可以解锁跨系统聚合数据的能力，并将其自定义到单个记录的上下文。
  
 ## <a name="prerequisites"></a>必备条件 
 嵌入 Power BI 内容是一个可选功能，默认情况下所有环境均禁用。 在嵌入 Power BI 内容之前，必须将其启用。 详细信息：[在组织中启用 Power BI 可视化效果化](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi?#enable--visualizations-in-the-organization)。
@@ -127,14 +127,14 @@ ms.locfileid: "2706139"
     }
 ```
 
-前一个表达式的目标部分标识应用筛选器的表和列。 运算符标识确定从 PowerApps 模型驱动型应用传递的数据的逻辑和值。 若要以通用方式参数化，通过使用别名构造值。 在上一个表达式中，传递了客户的 **firstname** 和 **lastname**，二者都在 Power BI 报表中的**客户名称**列搜索。 请注意 **firstname** 和 **lastname** 是客户实体的属性的唯一名称，其值将在此处传递。 
+前一个表达式的目标部分标识应用筛选器的表和列。 运算符标识确定从 Power Apps 模型驱动型应用传递的数据的逻辑和值。 若要以通用方式参数化，通过使用别名构造值。 在上一个表达式中，传递了客户的 **firstname** 和 **lastname**，二者都在 Power BI 报表中的**客户名称**列搜索。 请注意 **firstname** 和 **lastname** 是客户实体的属性的唯一名称，其值将在此处传递。 
 
 可以通过查看[构造筛选器](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#contructingfilters)中的示例并为 $schema 和 filterType 提供适当的值来创建更复杂的筛选器表达式。 请确保使用 *\"* 转义筛选器中的每个文字，以便可以正确生成 JSON。
 
 ## <a name="known-issues-and-limitations"></a>已知问题和限制
 1. 此集成只在统一接口客户端可用，并且在支持的 Web 浏览器和移动设备上。
-2. 在 PowerApps 窗体设计器中打开此窗体将不会以有意义的方式显示控件。 这是因为此控件在窗体设计器外自定义。
-3. 系统将使用用户的 PowerApps 用户名和密码自动进行身份验证后进入 Power BI。 如果具有匹配凭据的 Power BI 客户不存在，登录提示将显示，如此处所述。 
+2. 在 Power Apps 窗体设计器中打开此窗体将不会以有意义的方式显示控件。 这是因为此控件在窗体设计器外自定义。
+3. 系统将使用用户的 Power Apps 用户名和密码自动进行身份验证后进入 Power BI。 如果具有匹配凭据的 Power BI 客户不存在，登录提示将显示，如此处所述。 
 
    > [!div class="mx-imgBorder"] 
    > ![](media/embed-powerbi/embed-powerbi-report-in-system-form-auth-1.png "Embed-powerbi-report-in-system-form-auth-1")
@@ -147,13 +147,13 @@ ms.locfileid: "2706139"
    > [!div class="mx-imgBorder"] 
    > ![](media/embed-powerbi/embed-powerbi-report-in-system-form-auth-3.png "Embed-powerbi-report-in-system-form-auth-3")
 
-5. 显示在 PowerApps 内的报表数据的视图与 Power BI 中的相同，PowerApps 安全角色和权限不会影响显示的数据。 因此，数据基本上与 Power BI 数据集创建者看到的相同。 若要应用类似于 PowerApps 安全角色和团队的数据访问限制，请使用[使用 Power BI 的行级安全性 (RLS)](https://docs.microsoft.com/power-bi/service-admin-rls)。
+5. 显示在 Power Apps 内的报表数据的视图与 Power BI 中的相同，Power Apps 安全角色和权限不会影响显示的数据。 因此，数据基本上与 Power BI 数据集创建者看到的相同。 若要应用类似于 Power Apps 安全角色和团队的数据访问限制，请使用[使用 Power BI 的行级安全性 (RLS)](https://docs.microsoft.com/power-bi/service-admin-rls)。
 6. 如果窗体在导入解决方案并发布自定义项之后未显示 Power BI 报表，请在模型驱动窗体编辑器中打开它并保存，以便窗体 JSON 重新生成。
 
 
 ### <a name="see-also"></a>另请参阅
 
-[在 PowerApps 模型驱动的个人仪表板中嵌入 Power BI 仪表板](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
+[在 Power Apps 模型驱动的个人仪表板中嵌入 Power BI 仪表板](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
 
 [将 Power BI 与 Dynamics 365 应用结合使用](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi)
 

@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 67239062f30efb80fb8ee416614c1088e20c4075
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 813a31b3b9d56dfb6742dc138ec947829613cf89
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702179"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869928"
 ---
 # <a name="view-the-history-of-a-solution"></a>查看解决方案的历史记录
 您可以从模型驱动应用的**解决方案**区域查看有关解决方案操作的详细信息。 操作可以是解决方案导入、导出或删除。 解决方案历史记录显示解决方案版本、解决方案发布商、操作类型、操作开始和结束时间、操作状态等信息。
@@ -40,7 +40,7 @@ ms.locfileid: "2702179"
      > ![](media/solution-history-sitemap.png "Solution History area")
 
      > [!NOTE]
-     > 要从 PowerApps 统一接口模型驱动应用进入**设置**区域，选择应用工具栏中的**设置** ![设置](../model-driven-apps/media/powerapps-gear.png)，然后选择**高级设置**。 
+     > 要从 Power Apps 统一接口模型驱动应用进入**设置**区域，选择应用工具栏中的**设置** ![设置](../model-driven-apps/media/powerapps-gear.png)，然后选择**高级设置**。 
 
 2. 默认情况下，**自定义解决方案历史记录**视图显示。 以下视图在**解决方案历史记录**区域提供。 
 - **所有解决方案历史记录**。 显示内部系统和自定义解决方案的解决方案历史记录。 

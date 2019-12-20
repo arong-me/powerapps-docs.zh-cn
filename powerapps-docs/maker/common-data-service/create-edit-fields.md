@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fd5d17f33490aab049a166fa53ce541bdea2235a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 004e6e00d433473b6d7a700288dc2d0e920ab884
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757916"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861371"
 ---
 # <a name="how-to-create-and-edit-fields"></a>如何创建和编辑字段
 
@@ -38,8 +38,8 @@ ms.locfileid: "2757916"
 
 |设计器| 说明|
 |--|--|
-|[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[使用 PowerApps 门户创建和编辑 Common Data Service 的字段](create-edit-field-portal.md)|
-|解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。<br />详细信息：[使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md) |
+|[Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[使用 Power Apps 门户创建和编辑 Common Data Service 的字段](create-edit-field-portal.md)|
+|解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。<br />详细信息：[使用 Power Apps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md) |
 
 > [!NOTE]
 > 您还可以使用以下方法在您的环境中创建字段：
@@ -50,7 +50,7 @@ ms.locfileid: "2757916"
 
 本主题中的信息将帮助您选择可以使用的设计器。 
 
-您应该使用 PowerApps 门户创建和编辑 Common Data Service 的字段，除非您需要满足下列要求中的任何一个：
+您应该使用 Power Apps 门户创建和编辑 Common Data Service 的字段，除非您需要满足下列要求中的任何一个：
 
 - 创建客户查找字段。 
    - 详细信息：[不同的查找类型](types-of-fields.md#different-types-of-lookups)
@@ -73,7 +73,7 @@ ms.locfileid: "2757916"
    - 详细信息：[设置字段的托管属性](set-managed-properties-for-field.md)
 
 > [!NOTE]
-> 您可以在 PowerApps 门户或解决方案资源管理器中通过在实体上创建一对多关系来创建“查找”字段。 但是仅解决方案资源管理器在创建字段时提供创建此关系的选项。
+> 您可以在 Power Apps 门户或解决方案资源管理器中通过在实体上创建一对多关系来创建“查找”字段。 但是仅解决方案资源管理器在创建字段时提供创建此关系的选项。
 
 ## <a name="community-tools"></a>社区工具
 
@@ -83,8 +83,8 @@ ms.locfileid: "2757916"
 > 这些社区工具不是 Microsoft 的产品，因此不能将支持延伸到这些社区工具。 如果有与该工具相关的疑问，请联系发布者。 详细信息：[XrmToolBox](https://www.xrmtoolbox.com)。
 
 ### <a name="see-also"></a>另请参阅  
-[使用 PowerApps 门户创建和编辑 Common Data Service 的字段](create-edit-field-portal.md)<br />
-[使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)<br />
+[使用 Power Apps 门户创建和编辑 Common Data Service 的字段](create-edit-field-portal.md)<br />
+[使用 Power Apps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)<br />
 [字段类型和字段数据类型](types-of-fields.md)<br />
 [开发人员文档：使用属性元数据](/dynamics365/customer-engagement/developer/org-service/work-attribute-metadata)
  

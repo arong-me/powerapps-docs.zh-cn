@@ -1,6 +1,6 @@
 ---
-title: PowerApps 的模型驱动应用程序窗体编辑器用户界面概述 | MicrosoftDocs
-description: 了解用于在 PowerApps 中编辑窗体的窗体编辑器用户界面
+title: Power Apps 的模型驱动应用程序窗体编辑器用户界面概述 | MicrosoftDocs
+description: 了解用于在 Power Apps 中编辑窗体的窗体编辑器用户界面
 author: Mattp123
 applies_to:
 - Dynamics 365 (online)
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 512156d6ffd4f1817fa06a1e8865386e637bfa24
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: dbd648bd96d087ce34d8482d96507fa2391902b6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701827"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884698"
 ---
 # <a name="overview-of-the-model-driven-app-form-editor-user-interface"></a>模型驱动应用程序窗体编辑器用户界面概述
 

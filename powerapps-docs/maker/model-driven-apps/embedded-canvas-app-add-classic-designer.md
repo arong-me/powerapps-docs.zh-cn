@@ -15,25 +15,25 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d6881aaa3a55f16324e5d995e70be1e186a816bf
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d229edaec03642c594eb8057927fcf44beadf7c5
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759368"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872769"
 ---
 # <a name="add-an-embedded-canvas-app-on-a-model-driven-form"></a>在模型驱动窗体上添加嵌入式区域应用
 本主题介绍如何在模型驱动窗体上嵌入新的区域应用。
 
 假设您要创建新的区域应用，并将其嵌入到客户实体的主窗体。 为此，请按照以下步骤操作： 
 
-1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 2.  [创建或编辑实体的主窗体](create-and-edit-forms.md)，在我们的示例中是客户实体。 
 3.  在命令栏中，选择**切换到经典**在经典窗体设计器中打开窗体。
 4.  在经典窗体设计器中，选择您希望嵌入式区域应用显示的窗体上的部分。
@@ -50,10 +50,10 @@ ms.locfileid: "2759368"
          - 请注意，即使此属性显示不可更改，对其进行更改也不会影响嵌入式区域应用。 这仅供您参考。
      - **应用 ID** 属性指定区域应用的 ID。 在创建区域应用时，将自动为您生成和填写应用 ID。
          - 请注意，对**应用 ID** 值进行更改将断开模型驱动型窗体与嵌入式区域应用的链接。
-12. 选择**自定义**以创建或编辑区域应用。 这会在一个新选项卡中打开 PowerApps Studio。
+12. 选择**自定义**以创建或编辑区域应用。 这会在一个新选项卡中打开 Power Apps Studio。
        > [!NOTE]
-       > 如果打开 PowerApps Studio 被 Web 浏览器弹出窗口阻止程序阻止，您必须启用 make.powerapps.com 网站或暂时禁用弹出窗口阻止程序，然后再次选择**自定义**。
-13. 在 PowerApps Studio 中，请注意左侧窗格中有一个特殊的 **ModelDrivenFormIntegration** 控件。 此控件负责将上下文数据从主机模型驱动的窗体带入嵌入式区域应用。
+       > 如果打开 Power Apps Studio 被 Web 浏览器弹出窗口阻止程序阻止，您必须启用 make.powerapps.com 网站或暂时禁用弹出窗口阻止程序，然后再次选择**自定义**。
+13. 在 Power Apps Studio 中，请注意左侧窗格中有一个特殊的 **ModelDrivenFormIntegration** 控件。 此控件负责将上下文数据从主机模型驱动的窗体带入嵌入式区域应用。
 14. 请注意，[区域应用窗体控件](../canvas-apps/controls/control-form-detail.md)已自动添加到您的嵌入式区域应用中，并显示数据正在通过 ModelDrivenFormIntegration 控件从主机模型驱动窗体传递到该控件。 
 15. 选择**视图**选项卡，然后选择**数据源**。 请注意，您的主机模型驱动窗体的父实体的数据源（即此例中的客户）已自动添加到您的嵌入式区域应用中。
 16. 选择 **Form1** 控件并观察 **DataSource** 属性是否设置为 **Accounts**。
@@ -69,7 +69,7 @@ ms.locfileid: "2759368"
 22. 在菜单上，选择**返回**。
 23. 选择已打开经典窗体设计器的浏览器选项卡。 观察区域应用控件的**应用 ID** 属性现在是否有自动填充的值。
     > [!NOTE]
-    > - 窗体设计器包含之前步骤中在其他浏览器中打开的 PowerApps Studio 的直接链接。
+    > - 窗体设计器包含之前步骤中在其他浏览器中打开的 Power Apps Studio 的直接链接。
     > - 窗体设计器侦听向其发送的应用 ID。 
     > - 在保存应用后，应用 ID 将发送到窗体设计器。
 24. 在**字段属性**对话框中，选择**显示**选项卡。

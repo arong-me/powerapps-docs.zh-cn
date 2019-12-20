@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 207a1abdfc8145c38b8d6222f71281ce714e8947
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 76e0f5cceedb2e2b1ba1bf7c5d0d7f338af920fd
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2751809"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862036"
 ---
 # <a name="work-with-templates"></a>有关模板的操作
 
@@ -30,7 +30,7 @@ ms.locfileid: "2751809"
 
 若要在代码编辑器中打开模板：
 
-1.  [编辑门户](manage-existing-portals.md#edit)以在 PowerApps 门户 Studio 中打开它。  
+1.  [编辑门户](manage-existing-portals.md#edit)以在 Power Apps 门户 Studio 中打开它。  
 
 2.  从屏幕左侧的工具栏中选择**模板** ![模板图标](media/templates-icon.png "模板图标")。 将显示可用模板。  
 

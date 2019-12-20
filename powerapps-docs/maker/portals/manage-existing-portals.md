@@ -1,6 +1,6 @@
 ---
-title: 在 PowerApps 中管理现有门户 | Microsoft Docs
-description: 有关在 PowerApps 中管理门户的说明。
+title: 在 Power Apps 中管理现有门户 | Microsoft Docs
+description: 有关在 Power Apps 中管理门户的说明。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 82fbc5d8cafa6af13af63eaff106ea028830bd01
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0921e39c93b5f63a3f9a0ea038fd97389ea2b968
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756944"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883868"
 ---
-# <a name="manage-existing-portals-in-powerapps"></a>在 PowerApps 中管理现有门户
+# <a name="manage-existing-portals-in-power-apps"></a>在 Power Apps 中管理现有门户
 
-创建门户后，将立即在 PowerApps 主页的**最近应用程序**下显示该门户。
+创建门户后，将立即在 Power Apps 主页的**最近应用程序**下显示该门户。
 
 > [!div class=mx-imgBorder]
 > ![最近应用](media/recent-apps.png "最近应用")  
@@ -30,7 +30,7 @@ ms.locfileid: "2756944"
 
 ## <a name="edit"></a>编辑
 
-打开 [PowerApps 门户 Studio](portal-designer-anatomy.md) 以编辑门户的内容和组件。  
+打开 [Power Apps 门户 Studio](portal-designer-anatomy.md) 以编辑门户的内容和组件。  
 
 > [!div class=mx-imgBorder]
 > ![门户开发者](media/portal-maker.png "门户开发者")  
@@ -42,7 +42,7 @@ ms.locfileid: "2756944"
 > [!div class=mx-imgBorder]
 > ![门户网站](media/portal-website.png "门户网站")  
 
-此外，也可以通过在 [PowerApps 门户 Studio](portal-designer-anatomy.md) 中选择**浏览网站**打开门户浏览网站，以便查看已对网站进行的更改。 将使用该网站的 URL 在新标签页中打开该网站。
+此外，也可以通过在 [Power Apps 门户 Studio](portal-designer-anatomy.md) 中选择**浏览网站**打开门户浏览网站，以便查看已对网站进行的更改。 将使用该网站的 URL 在新标签页中打开该网站。
 
 ## <a name="share"></a>共享
 
@@ -91,7 +91,7 @@ ms.locfileid: "2756944"
 
 ## <a name="settings"></a>设置
 
-显示门户设置，并可用于更改门户的名称。 也可以执行高级查找，如通过 PowerApps 门户管理中心管理门户和处理站点设置。 设置提供 PowerApps 门户管理中心和站点设置的链接。 详细信息：[高级门户管理](admin/admin-overview.md)和[配置站点设置](configure/configure-site-settings.md)。  
+显示门户设置，并可用于更改门户的名称。 也可以执行高级查找，如通过 Power Apps 门户管理中心管理门户和处理站点设置。 设置提供 Power Apps 门户管理中心和站点设置的链接。 详细信息：[高级门户管理](admin/admin-overview.md)和[配置站点设置](configure/configure-site-settings.md)。  
 
 > [!div class=mx-imgBorder]
 > ![门户设置](media/portal-settings.png "门户设置")  

@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中使用解决方案 | MicrosoftDocs
+title: 在 Power Apps 中使用解决方案 | MicrosoftDocs
 description: 了解如何分发解决方案
 ms.custom: ''
 ms.date: 09/30/2019
@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 391220159917462833afac204183cdc68a94f898
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 286d955bfa0e6b28061d6a73962da25156820c9a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759016"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870104"
 ---
 # <a name="solutions-overview"></a>解决方案概述  
 
-  在 PowerApps 中，解决方案被用来将应用和组件从一个环境传输到另一个环境，或将一组自定义项应用到现有应用。 一个解决方案中可以包含一个或多个应用程序，以及其他组件，如站点地图、实体、流程、Web 资源、选项集等。  可从 [AppSource](https://appsource.microsoft.com/) 或独立软件供应商 (ISV) 获取解决方案。
+  在 Power Apps 中，解决方案被用来将应用和组件从一个环境传输到另一个环境，或将一组自定义项应用到现有应用。 一个解决方案中可以包含一个或多个应用程序，以及其他组件，如站点地图、实体、流程、Web 资源、选项集等。  可从 [AppSource](https://appsource.microsoft.com/) 或独立软件供应商 (ISV) 获取解决方案。
   
 详细信息：[白皮书：解决方案生命周期管理](https://www.microsoft.com/download/details.aspx?id=57777)  
   

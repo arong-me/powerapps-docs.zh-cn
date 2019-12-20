@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 639b8631f1d953408d30a1fdbba9c9ae8161af4d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 529e22a70532bc906af060f58df0017786a6e802
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755123"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873846"
 ---
 # <a name="pass-the-current-record-as-data-context-to-an-embedded-canvas-app"></a>将当前记录作为数据上下文传递到嵌入式区域应用
 > [!IMPORTANT]
@@ -37,7 +37,7 @@ ms.locfileid: "2755123"
 
 假设您要在帐户主窗体上添加嵌入式区域应用并将当前帐户记录传递到该嵌入式区域应用。 为此，请按照以下步骤操作： 
 
-1.  登录 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后打开实体（如客户实体）主窗体的窗体编辑器。 
+1.  登录 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后打开实体（如客户实体）主窗体的窗体编辑器。 
 2.  选择您希望嵌入式区域应用显示的窗体上的部分。
 3.  使用字段资源管理器窗格，添加必填字段，如**帐户名称**。
       > [!IMPORTANT]
@@ -52,10 +52,10 @@ ms.locfileid: "2755123"
          - 请注意，即使此属性显示不可更改，对其进行更改也不会影响嵌入式区域应用。 这仅供您参考。
      - **应用 ID** 属性指定区域应用的 ID。 在创建区域应用时，将自动为您生成和填写应用 ID。
          - 请注意，对**应用 ID** 值进行更改将断开模型驱动型窗体与嵌入式区域应用的链接。
-10. 选择**自定义**以创建或编辑区域应用。 这会在一个新选项卡中打开 PowerApps Studio。
+10. 选择**自定义**以创建或编辑区域应用。 这会在一个新选项卡中打开 Power Apps Studio。
        > [!NOTE]
-       > 如果打开 PowerApps Studio 被 Web 浏览器弹出窗口阻止程序阻止，您必须启用 make.powerapps.com 网站或暂时禁用弹出窗口阻止程序，然后再次选择**自定义**。
-11. 在 PowerApps Studio 中，请注意左侧窗格中有一个特殊的 **ModelDrivenFormIntegration** 控件。 此控件负责将上下文数据从主机模型驱动的窗体带入嵌入式区域应用。
+       > 如果打开 Power Apps Studio 被 Web 浏览器弹出窗口阻止程序阻止，您必须启用 make.powerapps.com 网站或暂时禁用弹出窗口阻止程序，然后再次选择**自定义**。
+11. 在 Power Apps Studio 中，请注意左侧窗格中有一个特殊的 **ModelDrivenFormIntegration** 控件。 此控件负责将上下文数据从主机模型驱动的窗体带入嵌入式区域应用。
 12. 选择 **Gallery1** 控件并观察**项目**属性是否设置为 **ModelDrivenFormIntegration.Data**。
       > [!NOTE]
       > ModelDrivenFormIntegration.Data 是一列记录。 在此示例中，它只有一个记录。 若要直接引用记录，可使用 First 函数。 例如，*First(ModelDrivenFormIntegration.Data).Name*。
@@ -69,7 +69,7 @@ ms.locfileid: "2755123"
     -  第一次保存应用时将自动发布应用。
       -  在以后的保存中，选择**发布**，然后选择**发布此版本**可以让更改生效。
 20. 在菜单上选择**返回**，然后选择窗体编辑器已打开的浏览器标签页。 观察区域应用控件的**应用 ID** 属性现在是否有自动填充的值。 请注意以下事项： 
-    -   窗体编辑器包含之前步骤中在其他浏览器中打开的 PowerApps Studio 的直接链接。
+    -   窗体编辑器包含之前步骤中在其他浏览器中打开的 Power Apps Studio 的直接链接。
     -   窗体编辑器“侦听”向其发送的**应用 ID**。
     -   在保存应用后，**应用 ID** 将发送到窗体编辑器。
 21. 在**字段属性**对话框中，选择**显示**选项卡。

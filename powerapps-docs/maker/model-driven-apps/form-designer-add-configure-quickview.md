@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4d0b13a43f595c5b9bae7b9a8146b7ccb2b8308d
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 758a7d2ce925526e5c0e7062f1e5134ac519e9eb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703851"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868235"
 ---
 # <a name="add-and-configure-a-quick-view-component-on-a-form"></a>在窗体中添加和配置快速视图组件  
 显示记录详细信息的主窗体可使用快速视图组件显示相关记录（查找）的只读详细信息。 快速视图组件显示的数据由相关实体的快速视图窗格定义。 如果没有相关记录（如查找），将自动隐藏快速视图组件。

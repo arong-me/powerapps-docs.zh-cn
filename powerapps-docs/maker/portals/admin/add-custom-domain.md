@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: cd015b656c90ec2707f3654e02b4e1a5ef65e7d2
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c36a077233a83b6246634cfc456d51deec14cf40
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756816"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867355"
 ---
 # <a name="add-a-custom-domain-name"></a>添加自定义域名
 
 自定义域有助于您的客户更加轻松地找到您的支持资源，提高您的品牌知名度。 只能向一个门户添加一个自定义域名。 设置门户并获得域名后，需要 SSL 证书才能设置自定义主机名称。 可通过向导使用为域购买的 SSL 证书，以便将门户链接到自定义域。
 
-1. 打开 [PowerApps 门户管理中心](admin-overview.md)。
+1. 打开 [Power Apps 门户管理中心](admin-overview.md)。
 
 2. 转至**门户操作** > **添加自定义域名**。 将打开一个向导，供您选择 SSL 证书。
 

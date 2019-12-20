@@ -1,27 +1,24 @@
 ---
-title: PowerApps 中的可用门户模板 | Microsoft Docs
-description: 了解 PowerApps 中的各种可用门户模板。
+title: Power Apps 中的可用门户模板 | Microsoft Docs
+description: 了解 Power Apps 中的各种可用门户模板。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 01995c7d1d23d4986441e8ccdcbba59029004cdf
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f37769e63d6231869aedfd83e834ffcdd86062ea
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755672"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884505"
 ---
 # <a name="portal-templates"></a>门户模板
 
-根据 PowerApps 中的选定环境，您可以在 Dynamics 365 中包含模型驱动应用的环境中创建 Common Data Service 起点门户或门户。
-
-> [!NOTE]
-> PowerApps 门户 Studio 中不能完全支持现有门户和现有门户模板（社区、合作伙伴、员工自助服务、客户自助服务），并且某些组件可能不呈现。 但是，可继续正常编辑其余组件。
+根据 Power Apps 中的选定环境，您可以在 Dynamics 365 中包含模型驱动应用的环境中创建 Common Data Service 起点门户或门户。
 
 ## <a name="environment-with-common-data-service"></a>具有 Common Data Service 的环境
 

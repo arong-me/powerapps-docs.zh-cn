@@ -1,5 +1,5 @@
 ---
-title: 了解 PowerApps 中的模型驱动应用组件 | MicrosoftDocs
+title: 了解 Power Apps 中的模型驱动应用组件 | MicrosoftDocs
 description: 了解模型驱动应用程序的不同组件，如数据、UI、逻辑和可视化。
 Keywords: 字段, 属性, 模型驱动的应用程序
 author: Mattp123
@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b84fa7a8bc0b77bddaa4e0a22d68cd983ac735ef
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4f1c05ca41e6873a0072e8ea6720343e468e38bb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711771"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863048"
 ---
 # <a name="understand-model-driven-app-components"></a>了解模型驱动的应用程序组件
 设计良好的模型驱动应用程序包括若干您选择的组件，使用设计器创建已完成应用程序的外观和功能。 设计器用来制造应用程序的组件和组件属性成为元数据。 
@@ -64,7 +64,7 @@ ms.locfileid: "2711771"
 |工作流     |  工作流可以实现无需用户干预的业务流程自动化。 设计器使用工作流来发起不需要任何用户交互的自动化。       | 工作流设计器        |
 |操作    |  操作是让您可以直接从工作流手动调用操作（包括自定义操作）的一种流程。       |  流程设计器       |
 |业务规则     | 用于将规则或建议逻辑应用到窗体，如设置字段要求、隐藏字段或验证数据。 应用程序设计器使用简单的界面来实施和维护快速更改和常用的规则。         |  业务规则设计器       |
-|流     | 流是基于云的服务，让您可以创建应用程序与服务之间的自动工作流来获取通知、同步文件、收集数据等。        | Microsoft Flow        |
+|流     | 流是基于云的服务，让您可以创建应用程序与服务之间的自动工作流来获取通知、同步文件、收集数据等。        | Power Automate        |
 
 ![工作流、操作和业务流程设计器](media/model-driven-app-overview/designer-mash.png)
 

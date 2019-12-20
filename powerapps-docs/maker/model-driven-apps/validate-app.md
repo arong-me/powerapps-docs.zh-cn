@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2e6ae7ac84710e6558adde2949025868e6da6930
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8195103992e14094816b0bbedfd17d6a799072a0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710275"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884308"
 ---
 # <a name="validate-and-publish-a-model-driven-app-using-the-app-designer"></a>使用应用程序设计器验证和发布模型驱动应用程序
 
@@ -80,6 +80,6 @@ ms.locfileid: "2710275"
 > - 只有在保存应用后才能发布。  
 
 ## <a name="next-steps"></a>后续步骤  
-[使用 PowerApps 共享模型驱动应用](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app) <br/>
+[使用 Power Apps 共享模型驱动应用](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app) <br/>
  [在移动设备上运行模型驱动应用程序](https://docs.microsoft.com/powerapps/user/run-app-client-model-driven)   
  

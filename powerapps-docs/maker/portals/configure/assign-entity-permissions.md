@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 47730a2ba169b89534fa93221290c5598a95a8e8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c92b664c2c40c6bb6354e2666d583d5c7ed7aead
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760135"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874418"
 ---
 # <a name="add-record-based-security-by-using-entity-permissions-for-portals"></a>使用实体权限为门户添加基于记录的安全性
 
@@ -30,9 +30,11 @@ ms.locfileid: "2760135"
 
 2. 转到**门户** &gt; **Web 角色**，然后打开要向其添加权限的 Web 角色。 
 
-3. 选择**添加**将现有实体权限添加到 Web 角色。 
+3. 在**相关**下，选择**实体权限**。
 
-4. 选择**新建**则创建新的实体权限记录。
+4. 选择**添加现有实体权限**将现有实体权限添加到 Web 角色。 
+
+4. 浏览实体权限或选择**新建实体权限**以创建新的实体权限记录。
 
     ![将实体权限添加到 Web 角色](../media/add-entity-permission-web-role.png "将实体权限添加到 Web 角色")  
 
@@ -51,7 +53,7 @@ ms.locfileid: "2760135"
 
 在实体列表中，这意味着将向该列表显示的任何模型驱动应用视图添加筛选器，用于仅检索直接链接到当前用户的记录。 （根据场景，可将此关系视为所有权或管理权。）
 
-如果加载记录时此关系已存在，则实体窗体仅允许相应的“读取”、“创建”、“写入”等权限。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [在门户中定义实体窗体和自定义逻辑](entity-forms.md)。  
+如果加载记录时此关系已存在，则实体窗体仅允许相应的“读取”、“创建”、“写入”等权限。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [定义实体窗体](entity-forms.md)。  
 
 ### <a name="account-scope"></a>帐户范围
 

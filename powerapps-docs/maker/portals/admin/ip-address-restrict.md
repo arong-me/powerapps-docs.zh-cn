@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: da8e6ac6d4e86a12ba196393073706c3705e4a92
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: efc0ea8449e387d292063f16ee6e38f69863267c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756112"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867223"
 ---
 # <a name="restrict-portal-access-by-ip-address"></a>使用 IP 地址限制门户访问
 
@@ -39,7 +39,7 @@ ms.locfileid: "2756112"
 > [!NOTE]
 > 您必须指定可以由门户访问的公共 IP 地址。 专用 IP 地址不能由门户访问。
 
-1.  打开 [PowerApps 门户管理中心](admin-overview.md)。
+1.  打开 [Power Apps 门户管理中心](admin-overview.md)。
 
 2.  转到**设置 IP 地址限制**。 IP 地址列表及其类型将显示。
 
@@ -63,7 +63,7 @@ ms.locfileid: "2756112"
 
 若要从以前允许的 IP 地址中删除对门户的访问，可以从列表中删除该 IP 地址。 如果删除了所有 IP 地址，可以从所有 IP 地址访问门户。
 
-1.  打开 [PowerApps 门户管理中心](admin-overview.md)。
+1.  打开 [Power Apps 门户管理中心](admin-overview.md)。
 
 2.  转到**设置 IP 地址限制**。 IP 地址列表及其类型将显示。
 

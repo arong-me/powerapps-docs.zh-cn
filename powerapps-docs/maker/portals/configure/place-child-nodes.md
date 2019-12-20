@@ -9,19 +9,19 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: e004b0f4f37a57e37d8f847ad7221e6a50d549ed
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2a9bd271c8aaa2f1dbc0278078868606fb4c64de
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760143"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864950"
 ---
 # <a name="place-child-nodes-by-using-shortcuts-for-portals"></a>使用快捷方式为门户放置子节点
 可使用快捷方式在整个门户的站点地图中放置子节点，这些子节点指向站点地图中的其他现有节点或门户的外部 URL。 也就是说，网页、Web 文件、事件和论坛均可视为门户站点地图的“固定”节点；它们将添加到您的站点地图，而当您导航到这些节点时，将直接看到这些节点的实际内容。 另一方面，快捷方式可视为“无形”节点：它们也可添加到站点地图（不同于 Web 链接），但当您导航到这些节点时，将看见快捷方式指向的目标“固定”节点的内容，而内容将通过该节点的页面模板呈现。
 
 ## <a name="manage-shortcuts"></a>管理快捷方式
 
-快捷方式的创建、编辑和删除均可在 PowerApps 门户中执行。
+快捷方式的创建、编辑和删除均可在 Power Apps 门户中执行。
 
 1. 打开[“门户管理”应用](configure-portal.md)。
 

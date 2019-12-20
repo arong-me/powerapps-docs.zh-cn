@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cf8a30ae29712804cea2da42b0e448acc6286553
-ms.sourcegitcommit: e4b3b6b610f91a0c704a4fa87c6ec238aa81d25f
+ms.openlocfilehash: 2b54cad59b1f5a6cc4199675308f5cd48d05240d
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2767227"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873978"
 ---
 # <a name="types-of-fields"></a>字段类型
 
-用于类型的名称取决于所使用的设计器。 [PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)使用包括数据格式确定方式的约定。 解决方案资源管理器类型使用与具有格式修饰符的数据库数据类型一致的名称。 下表包含对应的 `AttributeTypeDisplayName` API 类型。
+用于类型的名称取决于所使用的设计器。 [Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)使用包括数据格式确定方式的约定。 解决方案资源管理器类型使用与具有格式修饰符的数据库数据类型一致的名称。 下表包含对应的 `AttributeTypeDisplayName` API 类型。
 
 |门户数据类型 |解决方案资源管理器类型| API 类型|
 |--|--|--|
@@ -65,8 +65,8 @@ ms.locfileid: "2767227"
 |**整数**|**整数**<br />*无*格式|`IntegerType`|
 
 要查看您可以添加或编辑的每个类型的更多描述，请参阅相应设计器的主题：
- - [使用 PowerApps 门户创建和编辑 Common Data Service 的字段：字段数据类型](create-edit-field-portal.md#field-data-types)
- - [使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段：字段数据类型](create-edit-field-solution-explorer.md#field-data-types)
+ - [使用 Power Apps 门户创建和编辑 Common Data Service 的字段：字段数据类型](create-edit-field-portal.md#field-data-types)
+ - [使用 Power Apps 解决方案资源管理器创建和编辑 Common Data Service 的字段：字段数据类型](create-edit-field-solution-explorer.md#field-data-types)
 
 有关如何在 API 中定义字段数据类型的详细信息，请参阅[属性元数据](/powerapps/developer/common-data-service/entity-attribute-metadata)
 
@@ -188,11 +188,11 @@ ms.locfileid: "2767227"
 By default, when an app user adds an image to display to a form or canvas app, the image displayed is the thumbnail image. To display a full image for a canvas app, see [Display a full-sized image on a canvas app form](../canvas-apps/display-full-image-on-form.md).
 
 
-### Add an image field to an entity using the PowerApps site
+### Add an image field to an entity using the Power Apps site
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-1. Sign in to [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1. Sign in to [Power Apps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 2.  Select **Data** > **Entities** and then select the entity where you want to add an image field. 
 3. Select **Add field** on the command bar, enter the following properties, and then select **Done**: 
    - **Display name**. Enter a friendly name for the field. 

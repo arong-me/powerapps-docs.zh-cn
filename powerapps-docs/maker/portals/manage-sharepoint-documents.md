@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: f94dee983d5d2d9cedf417f2843a2c10c46b82c1
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a4ba89a1497a6ed81d2e71f7d7a43813d47b6583
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756970"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873288"
 ---
 # <a name="manage-sharepoint-documents"></a>管理 SharePoint 文档
 
-Common Data Service 支持与 [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] 集成，您可以使用来自 Common Data Service 内的 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 的文档管理功能。 PowerApps 门户现在支持直接在门户中的实体窗体和 Web 窗体上从 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 或向其中上载和显示文档。 这使门户用户可以从门户查看、下载、添加和删除文档。 门户用户还可以创建子文件夹来管理文档。
+Common Data Service 支持与 [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] 集成，您可以使用来自 Common Data Service 内的 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 的文档管理功能。 Power Apps 门户现在支持直接在门户中的实体窗体和 Web 窗体上从 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 或向其中上载和显示文档。 这使门户用户可以从门户查看、下载、添加和删除文档。 门户用户还可以创建子文件夹来管理文档。
 
 > [!NOTE]
 > - 文档管理只能通过 [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] 使用。
@@ -28,11 +28,11 @@ Common Data Service 支持与 [!INCLUDE[pn-microsoft-sharepoint-online](../../in
 
 1.  [在 Dynamics 365 中的模型驱动应用中启用文档管理功能](#step-1-enable-document-management-functionality-in-model-driven-apps-in-dynamics-365)
 
-2.  [从 PowerApps 门户管理中心设置 SharePoint 集成](#step-2-set-up-sharepoint-integration-from-powerapps-portals-admin-center)
+2.  [从 Power Apps 门户管理中心设置 SharePoint 集成](#step-2-set-up-sharepoint-integration-from-power-apps-portals-admin-center)
 
 3.  [对实体启用文档管理](#step-3-enable-document-management-for-entities)
 
-4.  [在 PowerApps 文档中配置适当的窗体](#step-4-configure-the-appropriate-form-to-display-documents)
+4.  [在 Power Apps 文档中配置适当的窗体](#step-4-configure-the-appropriate-form-to-display-documents)
 
 5.  [创建相应的实体权限并将其分派给相应的 Web 角色](#step-5-create-appropriate-entity-permission-and-assign-it-to-the-appropriate-web-role)
 
@@ -40,14 +40,14 @@ Common Data Service 支持与 [!INCLUDE[pn-microsoft-sharepoint-online](../../in
 
 您必须使用基于服务器的 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成来在 Dynamics 365 中的模型驱动应用中启用文档管理功能 。 基于服务器的 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成允许 Dynamics 365 和 [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] 中的模型驱动应用执行服务器到服务器的连接。 默认的 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 网站记录供门户使用。 有关如何在 Dynamics 365 中的模型驱动应用中启用文档管理功能的信息，请参阅[在 Dynamics 365 中设置模型驱动应用以使用 SharePoint Online](https://docs.microsoft.com/power-platform/admin/set-up-dynamics-365-online-to-use-sharepoint-online)。
 
-## <a name="step-2-set-up-sharepoint-integration-from-powerapps-portals-admin-center"></a>步骤 2：从 PowerApps 门户管理中心设置 SharePoint 集成
+## <a name="step-2-set-up-sharepoint-integration-from-power-apps-portals-admin-center"></a>步骤 2：从 Power Apps 门户管理中心设置 SharePoint 集成
 
-若要使用 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 的文档管理功能，您必须从 PowerApps 门户管理中心启用 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成。
+若要使用 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 的文档管理功能，您必须从 Power Apps 门户管理中心启用 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成。
 
 > [!NOTE]
 > 您必须是全局管理员才可以执行此操作。
 
-1. 打开 [PowerApps 门户管理中心](admin/admin-overview.md)。
+1. 打开 [Power Apps 门户管理中心](admin/admin-overview.md)。
 
 2.  转到**设置 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成** > **启用 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成**。
 
@@ -80,7 +80,7 @@ Common Data Service 支持与 [!INCLUDE[pn-microsoft-sharepoint-online](../../in
 
 ## <a name="step-4-configure-the-appropriate-form-to-display-documents"></a>步骤 4：配置用于显示文档的合适窗体
 
-### <a name="powerapps-customization"></a>PowerApps 自定义
+### <a name="power-apps-customization"></a>Power Apps 自定义
 
 确定您要使用文档管理功能的窗体。 您必须使用模型驱动应用窗体编辑器编辑窗体，并向其添加子网格。 子网格向窗体添加分区，这允许您从门户内处理文档。 您必须在子网格中设置下列属性才可以使用此功能：
 
@@ -93,7 +93,7 @@ Common Data Service 支持与 [!INCLUDE[pn-microsoft-sharepoint-online](../../in
 > [!NOTE]
 > 必须为您要编辑窗体的实体启用文档管理。 更多信息：[对实体启用文档管理](#step-3-enable-document-management-for-entities)
 
-### <a name="powerapps-portals-configuration"></a>PowerApps 门户配置
+### <a name="power-apps-portals-configuration"></a>Power Apps 门户配置
 
 除了实体窗体或 Web 窗体所需的标准配置外，您还必须设置以下属性以启用文档管理：
 
@@ -135,7 +135,7 @@ Common Data Service 支持与 [!INCLUDE[pn-microsoft-sharepoint-online](../../in
 
 1.  按照[步骤 1](#step-1-enable-document-management-functionality-in-model-driven-apps-in-dynamics-365) 中的说明操作，以确保基于服务器的配置对于 Dynamics 365 中的模型驱动应用和 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成是完整的。
 
-2.  按照[步骤 2](#step-2-set-up-sharepoint-integration-from-powerapps-portals-admin-center) 中的说明操作，以确保门户有权与 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成。 
+2.  按照[步骤 2](#step-2-set-up-sharepoint-integration-from-power-apps-portals-admin-center) 中的说明操作，以确保门户有权与 [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 集成。 
 
 3.  按照[步骤 3](#step-3-enable-document-management-for-entities) 中的说明操作，以确保为案例实体启用了文档管理。
 
@@ -172,7 +172,7 @@ Common Data Service 支持与 [!INCLUDE[pn-microsoft-sharepoint-online](../../in
 
         f. 在窗体编辑器中，选择**保存**，然后选择**发布**。
 
-    - PowerApps 门户配置
+    - Power Apps 门户配置
 
         a. 转到**门户** > **实体窗体**。
     

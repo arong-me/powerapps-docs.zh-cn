@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 45d0d4ce80d1552ace70ae5b25a67e570141d261
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 6be1df71af6a4fab7d60414aca1a3ecd75f7dc12
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754727"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872857"
 ---
 # <a name="create-a-business-rule-for-an-entity"></a>创建实体的业务规则
 
@@ -51,7 +51,7 @@ ms.locfileid: "2754727"
 
 ## <a name="create-a-business-rule"></a>创建业务规则
   
-1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后单击或点按左边缘附近的**数据**向下键。
+1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后单击或点按左边缘附近的**数据**向下键。
 
 2. 在显示的列表中，单击或点按**实体**。
   

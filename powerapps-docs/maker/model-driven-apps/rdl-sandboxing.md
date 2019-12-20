@@ -20,16 +20,16 @@ search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: f936dc4c6b78096b74b650bf8426ba1d78c41d19
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 557959f9bb561fcb138f15011bd8320dfa5c94ff
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711375"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862872"
 ---
 # <a name="rdl-sandboxing"></a>RDL 沙盒。 
 
-在 Common Data Service 中，报表在沙盒模式下运行。 这是通过在 SQL Server Reporting Services 中启用 报表定义语言 (RDL) 沙盒功能实现的。 RDL 沙盒功能使您能够检测特定类型的资源，并限制其使用。 因此，PowerApps 模型驱动应用程序中的某些功能可能不可用。 有关详细信息，请参阅 [MSDN：启用和禁用 RDL 沙盒](https://msdn.microsoft.com/library/ee210591.aspx)。  
+在 Common Data Service 中，报表在沙盒模式下运行。 这是通过在 SQL Server Reporting Services 中启用 报表定义语言 (RDL) 沙盒功能实现的。 RDL 沙盒功能使您能够检测特定类型的资源，并限制其使用。 因此，Power Apps 模型驱动应用程序中的某些功能可能不可用。 有关详细信息，请参阅 [MSDN：启用和禁用 RDL 沙盒](https://msdn.microsoft.com/library/ee210591.aspx)。  
   
  本主题的以下各节介绍 Common Data Service 中的当前 RDL 沙盒配置设置。  
     

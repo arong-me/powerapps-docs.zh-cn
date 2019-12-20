@@ -20,20 +20,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 68b64d5ec7c7f81352a2b9733310d2ec5e51d9c1
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8c5239874449772922ec9fa89ece7d2b3a5d7f06
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757750"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861327"
 ---
 # <a name="create-nn-many-to-many-entity-relationships-in-common-data-service-using-solution-explorer"></a>使用解决方案资源管理器在 Common Data Service 中创建 N:N（多对多）实体关系
 
 解决方案资源管理器为创建和编辑 Common Data Service 的 N:N（多对多）提供一种方法。
 
-[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 详细信息：
+[Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 详细信息：
 - [创建多对多 (N:N) 实体关系](create-edit-nn-relationships.md)
-- [使用 PowerApps 门户在 Common Data Service 中创建多对多实体关系](create-edit-nn-relationships-portal.md)
+- [使用 Power Apps 门户在 Common Data Service 中创建多对多实体关系](create-edit-nn-relationships-portal.md)
 
   
 ## <a name="open-solution-explorer"></a>打开解决方案资源管理器
@@ -112,5 +112,5 @@ ms.locfileid: "2757750"
 ### <a name="see-also"></a>另请参阅
 
 [创建多对多 (N:N) 实体关系](create-edit-nn-relationships.md)<br />
-[使用 PowerApps 门户在 Common Data Service 中创建多对多实体关系](create-edit-nn-relationships-portal.md)<br />
+[使用 Power Apps 门户在 Common Data Service 中创建多对多实体关系](create-edit-nn-relationships-portal.md)<br />
 [创建和编辑 1:N（一对多）或 N:1（多对一）实体关系](create-edit-1n-relationships.md)

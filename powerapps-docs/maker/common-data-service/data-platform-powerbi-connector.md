@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24972d4c159db30c4abb142adf258a5930c8ace9
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ebecba9aedb8c475e3f8ce8628b7b24d104669e0
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758932"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873753"
 ---
 # <a name="create-a-power-bi-report"></a>创建 Power BI 报表
 Common Data Service 使您可以使用 Power BI Desktop 直接连接到数据，以创建报表并将其发布到 Power BI。 从 Power BI，报表可在仪表板中使用，与其他用户共享并可跨 Power BI 移动应用上的平台访问。
@@ -34,7 +34,7 @@ Common Data Service 使您可以使用 Power BI Desktop 直接连接到数据，
 
 ## <a name="finding-your-common-data-service-environment-url"></a>查找您的 Common Data Service 环境 URL
 
-1. 打开 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 并选择要连接到的环境，然后单击右上角的**设置齿轮**，然后单击**高级自定义**
+1. 打开 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 并选择要连接到的环境，然后单击右上角的**设置齿轮**，然后单击**高级自定义**
 
     ![Common Data Service 环境](./media/data-platform-cds-powerbi-connector/CDSEnv1.png "Common Data Service 环境")
 
@@ -57,7 +57,7 @@ Common Data Service 使您可以使用 Power BI Desktop 直接连接到数据，
 
     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport2.png "Power BI Desktop")
 
-3. 将您的 **Common Data Service 环境 URL** 复制到**服务器 URL** 字段中，然后单击**确定**。 如果是您首次使用，将提示您使用用于连接到 PowerApps 和 Common Data Service 的相同凭据登录。
+3. 将您的 **Common Data Service 环境 URL** 复制到**服务器 URL** 字段中，然后单击**确定**。 如果是您首次使用，将提示您使用用于连接到 Power Apps 和 Common Data Service 的相同凭据登录。
 
     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport3.png "Power BI Desktop")
 

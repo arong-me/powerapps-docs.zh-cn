@@ -14,12 +14,12 @@ search.audienceType:
 - customizer
 search.app:
 - PowerApps
-ms.openlocfilehash: b9c0f192f96d9ce967d1b8e56266aadeb64646c9
-ms.sourcegitcommit: 7411b4cf9e30e71052fe932dfd3276e969854af4
+ms.openlocfilehash: bd40b60a82735d2bddb3629c8b34647df9e34857
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2768275"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875389"
 ---
 # <a name="create-guided-help-learning-path-for-your-app"></a>为您的应用创建引导式帮助（学习路径）
 
@@ -44,7 +44,7 @@ ms.locfileid: "2768275"
 
  若要创建学习路径内容，必须：  
 
-- 使用 PowerApps 或 [!INCLUDE[pn_crm_online_shortest](../../includes/pn-crm-online-shortest.md)]。  
+- 使用 Power Apps 或 [!INCLUDE[pn_crm_online_shortest](../../includes/pn-crm-online-shortest.md)]。  
 
 - 已选择加入学习路径。 此设置默认开启，但是可能已关闭。  
 
@@ -64,7 +64,7 @@ ms.locfileid: "2768275"
 ## <a name="turn-on-learning-path-for-your-organization"></a>为您的组织启用学习路径  
  学习路径是一项可以为组织启用或禁用的可选功能。 您可以显示 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] 中包含的学习路径内容，为您的用户创建您自己的学习路径内容，或同时使用两种方法。  
 
-1. 使用管理员帐户登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 或 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)]。  
+1. 使用管理员帐户登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 或 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)]。  
 
 2. 转到**设置**，然后选择**系统**下的**管理**。 详细信息：[设置](/powerapps/maker/model-driven-apps/advanced-navigation#settings)
 
@@ -133,7 +133,7 @@ ms.locfileid: "2768275"
 <a name="ConfigureRoles"></a>   
 #### <a name="configure-security-roles"></a>配置安全角色  
 
-1. 使用具有学习路径创作权限的帐户登录到 PowerApps。  
+1. 使用具有学习路径创作权限的帐户登录到 Power Apps。  
 
 2. 打开**内容库**。  
 

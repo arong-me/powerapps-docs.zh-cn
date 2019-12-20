@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3db46288b0f1fc384cae8c683648d1dd0a945d44
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 81b20a326be239445422cce51a54b2e0b991d5c4
+ms.sourcegitcommit: a7f2313a048d3b8a03516a2e4c349f3fb08f4a22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710847"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "2805681"
 ---
-# <a name="add-the-team-entity-as-a-lookup-option-in-your-app"></a>添加团队实体充当应用程序中的查找选项
+# <a name="add-an-entity-as-a-lookup-option-in-your-app"></a>添加实体充当应用中的查找选项
 
-在统一接口应用程序中，团队实体只有在添加到应用程序中之后才可用于查找。 例如，可以将联系人记录分配给用户或团队。  
+在统一接口应用中，实体只有在添加到应用中之后才可用于查找。 例如，可以将联系人记录分配给用户或团队。  
 
 > [!div class="mx-imgBorder"] 
 > ![](media/entity-lookup-teams.png "Entity lookup with both users and teams available")

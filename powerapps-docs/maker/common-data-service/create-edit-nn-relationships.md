@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 90658adac8f04ea131968816a6004b4789ff42e4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 907a1147630cc779e6c1af7be2486548f1907c5a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757742"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865702"
 ---
 # <a name="create-many-to-many-entity-relationships-overview"></a>创建多对多实体关系概述
 
@@ -43,7 +43,7 @@ ms.locfileid: "2757742"
 
 |设计器| 说明|
 |--|--|
-|[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[使用 PowerApps 门户在 Common Data Service 中创建多对多实体关系](create-edit-nn-relationships-portal.md)|
+|[Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[使用 Power Apps 门户在 Common Data Service 中创建多对多实体关系](create-edit-nn-relationships-portal.md)|
 |解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。<br />详细信息：[使用解决方案资源管理器在 Common Data Service 中创建 N:N（多对多）实体关系](create-edit-nn-relationships-solution-explorer.md) |
 
 > [!NOTE]
@@ -53,7 +53,7 @@ ms.locfileid: "2757742"
 
 本主题中的信息将帮助您选择可以使用的设计器。 
 
-您应该使用 PowerApps 门户创建和编辑多对多 (N:N) 实体关系，除非您需要满足任何下列要求：
+您应该使用 Power Apps 门户创建和编辑多对多 (N:N) 实体关系，除非您需要满足任何下列要求：
 
 - 配置模型驱动应用程序的导航窗格选项。
 - 从模型驱动应用程序中的“高级查找”中隐藏关系。
@@ -61,7 +61,7 @@ ms.locfileid: "2757742"
 ## <a name="see-also"></a>另请参阅
 
 [创建和编辑实体之间的关系](create-edit-entity-relationships.md)<br />
-[使用 PowerApps 门户在 Common Data Service 中创建多对多实体关系](create-edit-nn-relationships-portal.md)<br />
+[使用 Power Apps 门户在 Common Data Service 中创建多对多实体关系](create-edit-nn-relationships-portal.md)<br />
 [使用解决方案资源管理器在 Common Data Service 中创建 N:N（多对多）实体关系](create-edit-nn-relationships-solution-explorer.md)<br />
 [开发人员文档：自定义实体关系元数据](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)<br />
 [开发人员文档：实体关系资格](https://docs.microsoft.com/dynamics365/customer-engagement/developer/entity-relationship-eligibility)

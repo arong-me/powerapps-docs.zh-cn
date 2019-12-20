@@ -1,8 +1,8 @@
 ---
-title: 在 PowerApps 中创建和使用数据流 | MicrosoftDocs
-description: 了解如何在 PowerApps 中创建和使用数据流
+title: 在 Power Apps 中创建和使用数据流 | MicrosoftDocs
+description: 了解如何在 Power Apps 中创建和使用数据流
 ms.custom: ''
-ms.date: 08/05/2019
+ms.date: 12/05/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -23,25 +23,24 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5ad261f668c36e623b35e619e4d573401f3b547a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c1f58228cb86ae7415739f5e6ffe4b3175b87b0d
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705787"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895021"
 ---
-# <a name="create-and-use-dataflows-in-powerapps"></a>在 PowerApps 中创建和使用数据流
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# <a name="create-and-use-dataflows-in-power-apps"></a>在 Power Apps 中创建和使用数据流
 
-通过 PowerApps 中提供的高级数据准备，您可以创建一个称为数据流的数据集合，然后可以使用它与来自各个源的业务数据连接、清理数据、转换数据，然后将数据加载到 Common Data Service 或您的组织的 Azure Data Lake Gen2 存储帐户中。
+通过 Power Apps 中提供的高级数据准备，您可以创建一个称为数据流的数据集合，然后可以使用它与来自各个源的业务数据连接、清理数据、转换数据，然后将数据加载到 Common Data Service 或您的组织的 Azure Data Lake Gen2 存储帐户中。
 
-数据流是在 PowerApps 服务的环境中创建和管理的实体（实体类似于表）的集合。 您可以直接在创建数据流的环境中添加和编辑数据流中的实体，以及管理数据刷新计划。
+数据流是在 Power Apps 服务的环境中创建和管理的实体（实体类似于表）的集合。 您可以直接在创建数据流的环境中添加和编辑数据流中的实体，以及管理数据刷新计划。
 
-在 PowerApps 门户中创建数据流后，您可以使用 Common Data Service 连接器或 Power BI Desktop 数据流连接器从中获取数据，具体取决于创建数据流时选择的目标。
+在 Power Apps 门户中创建数据流后，您可以使用 Common Data Service 连接器或 Power BI Desktop 数据流连接器从中获取数据，具体取决于创建数据流时选择的目标。
 
 使用数据流的三个主要步骤：
 
-1.  在 PowerApps 门户中创作数据流。 您选择加载输出数据的目标、从中获取数据的源，以及使用 Microsoft 工具（让操作简单）转换数据的 Power Query 步骤。
+1.  在 Power Apps 门户中创作数据流。 您选择加载输出数据的目标、从中获取数据的源，以及使用 Microsoft 工具（让操作简单）转换数据的 Power Query 步骤。
 
 2.  计划数据流运行。 Power Platform 数据流应以这种频率刷新数据流将加载和转换的数据。
 
@@ -52,10 +51,8 @@ ms.locfileid: "2705787"
 ## <a name="create-a-dataflow"></a>创建数据流
 数据流是在一个环境中创建的。 因此，您只能从该环境查看和管理它们。 另外，想要从您的数据流中获取数据的个人必须有权访问您在其中创建数据流的环境。
 
-> [!NOTE]
-> 当前不支持在默认环境中创建将数据加载到 Azure Data Lake Storage Gen2 的数据流。
 
-1.  登录到 PowerApps，并验证您所在的环境，在命令栏右侧附近找到环境切换器。
+1.  登录到 Power Apps，并验证您所在的环境，在命令栏右侧附近找到环境切换器。
 
     ![环境切换器](media/environment-switcher.png)
 

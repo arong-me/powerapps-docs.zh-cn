@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 857c65097800420662aafe825f61333037b4e31c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8d7dff4588b2f026c8cf4583775177e5ce687ded
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757300"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866387"
 ---
 # <a name="available-liquid-objects"></a>可用 Liquid 对象
 
@@ -40,18 +40,18 @@ Liquid 对象包含将动态内容输出到页面的属性。 例如，page 对�
 
 |   对象    |                                                                                                                                                                                          说明                                                                                                                                                                                           |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  实体   |                                                                                                 允许您按 ID 加载任何 PowerApps 实体。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [实体](#entities)                                                                                                 |
+|  实体   |                                                                                                 允许您按 ID 加载任何 Power Apps 实体。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [实体](#entities)                                                                                                 |
 |     现在     |                                          在模板呈现时，将引用当前 UTC 时间的日期/时间对象。<br>**注释**：此值由门户 Web 应用程序缓存，不会每次刷新。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [日期筛选器](liquid-filters.md#date-filters)                                          |
-|    页面     | 引用当前门户请求页面。 page 对象提供对类似于当前页面的导航痕迹、当前页面的标题或 URL、基础 PowerApps 记录的任何其他属性或相关实体等内容的访问。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [页面](#page) |
+|    页面     | 引用当前门户请求页面。 page 对象提供对类似于当前页面的导航痕迹、当前页面的标题或 URL、基础 Power Apps 记录的任何其他属性或相关实体等内容的访问。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [页面](#page) |
 |   参数    |                                                                                                                             请求参数的便捷快捷方式。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [请求](#request)                                                                                                                              |
 |   请求   |                                                                                                                        包含有关当前 HTTP 请求的信息。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [请求](#request)                                                                                                                        |
 |  设置   |                                                                                                            允许您按名称加载任何[网站设置](../configure/configure-site-settings.md)。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [设置](#settings)                                                                                                            |
 |   站点地图   |                                                                                                                               允许访问门户站点地图。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [站点地图](#sitemap)                                                                                                                                |
 | 网站标记 |                                                                                                                        允许您按名称加载任何网站标记。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [网站标记](#sitemarkers)                                                                                                                        |
 |  片段   |                                                                                                         允许您按名称加载任何[内容片段](../configure/customize-content-snippets.md)。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [片段](#snippets)                                                                                                         |
-|    用户     |                             引用当前门户用户，允许对基础 PowerApps 联系人记录的所有属性的访问。 如果没有用户登录，此变量将为 [null](liquid-types.md#null)。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [用户](#user)                              |
+|    用户     |                             引用当前门户用户，允许对基础 Power Apps 联系人记录的所有属性的访问。 如果没有用户登录，此变量将为 [null](liquid-types.md#null)。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [用户](#user)                              |
 |  Web 链接   |                                                                                                                        允许您按名称或 ID 加载任何 Web 链接集。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [weblinks](#weblinks)                                                                                                                        |
-|   网站   |                                                      引用门户网站记录，允许对门户的 PowerApps 网站 (adx\_website) 记录的所有属性的访问。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [网站](#website)                                                       |
+|   网站   |                                                      引用门户网站记录，允许对门户的 Power Apps 网站 (adx\_website) 记录的所有属性的访问。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [网站](#website)                                                       |
 
 ## <a name="ads"></a>广告
 
@@ -259,7 +259,7 @@ blogposts 对象允许您访问博客文章对象的集合。 您可以预订博
 
 ## <a name="entities"></a>实体
 
-允许您按 ID 加载任何 PowerApps 实体。 如果实体存在，实体对象将返回。 如果具有指定 ID 的实体未找到，[null](liquid-types.md#null) 将返回。  
+允许您按 ID 加载任何 Power Apps 实体。 如果实体存在，实体对象将返回。 如果具有指定 ID 的实体未找到，[null](liquid-types.md#null) 将返回。  
 
 ```
 {% assign account = entities.account['936DA01F-9ABD-4d9d-80C7-02AF85C822A8'] %}
@@ -283,17 +283,17 @@ blogposts 对象允许您访问博客文章对象的集合。 您可以预订博
 
 ### <a name="entity"></a>Entity
 
-实体对象提供对 PowerApps 实体记录的属性的访问。
+实体对象提供对 Power Apps 实体记录的属性的访问。
 
 
 |             属性              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                 编号                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    实体的 GUID ID，作为字符串。 例如，936DA01F-9ABD-4d9d-80C7-02AF85C822A8                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|           logical\_name            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   实体的 PowerApps 逻辑名称。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|           logical\_name            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   实体的 Power Apps 逻辑名称。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |               注释​​                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             加载与实体关联的任何注释（批注），顺序从旧到新 (createdon)。 注意作为注释对象返回。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |            权限             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             加载实体的实体权限声明结果。 结果作为权限对象返回。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|                URL                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    返回实体的 PowerApps 门户内容管理系统 URL 路径。 如果实体在当前网站没有有效的 URL，返回 null。 通常，这将只返回已集成到门户 CMS 的某些实体类型的值 ，除非您在您的应用程序中自定义了 URL 提供程序。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| \[属性或关系名称\] | 您可以按逻辑名称访问 PowerApps 实体的任何属性。 `{{ entity.createdon }}{% assign attribute_name = 'name' %}{{ entity[attribute_name] }}` <br>大多数实体属性值直接映射到 [Liquid 类型](liquid-types.md)：“两个选项”字段映射到布尔值，文本字段到字符串，数字/货币字段到数字，日期/时间字段到日期对象。 但是，某些属性类型作为对象返回：<ul><li>查找（实体引用）字段作为实体引用对象实体。</li><li>选项集/选择列表字段作为选项集值对象返回。</li><li>您还可以通过关系架构名称来加载所有相关实体。</li>`{{ page.adx_webpage_entitylist.adx_name }}`在关系是反身（即自引用）的情况中，反身关系对象将返回。 （否则，结果是模糊的。）`{{ page.adx_webpage_webpage.referencing.adx_name }}` <br>**注意**：加载大量相关实体或访问大量一个模板中的关系，可能会对模板呈现性能产生负面影响。 避免加载数组中、循环内每个项目的相关实体。 如有可能，使用 [PowerApps Common Data Service 实体标记](portals-entity-tags.md)加载实体的集合。 |
+|                URL                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    返回实体的 Power Apps 门户内容管理系统 URL 路径。 如果实体在当前网站没有有效的 URL，返回 null。 通常，这将只返回已集成到门户 CMS 的某些实体类型的值 ，除非您在您的应用程序中自定义了 URL 提供程序。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| \[属性或关系名称\] | 您可以按逻辑名称访问 Power Apps 实体的任何属性。 `{{ entity.createdon }}{% assign attribute_name = 'name' %}{{ entity[attribute_name] }}` <br>大多数实体属性值直接映射到 [Liquid 类型](liquid-types.md)：“两个选项”字段映射到布尔值，文本字段到字符串，数字/货币字段到数字，日期/时间字段到日期对象。 但是，某些属性类型作为对象返回：<ul><li>查找（实体引用）字段作为实体引用对象实体。</li><li>选项集/选择列表字段作为选项集值对象返回。</li><li>您还可以通过关系架构名称来加载所有相关实体。</li>`{{ page.adx_webpage_entitylist.adx_name }}`在关系是反身（即自引用）的情况中，反身关系对象将返回。 （否则，结果是模糊的。）`{{ page.adx_webpage_webpage.referencing.adx_name }}` <br>**注意**：加载大量相关实体或访问大量一个模板中的关系，可能会对模板呈现性能产生负面影响。 避免加载数组中、循环内每个项目的相关实体。 如有可能，使用 [Power Apps Common Data Service 实体标记](portals-entity-tags.md)加载实体的集合。 |
 
 ### <a name="entity-reference"></a>实体引用
 
@@ -303,7 +303,7 @@ blogposts 对象允许您访问博客文章对象的集合。 您可以预订博
 |   属性   |                                                说明                                                |
 |---------------|-----------------------------------------------------------------------------------------------------------|
 |      编号       | 引用的实体的 GUID ID，作为字符串。 <br> 例如，936DA01F-9ABD-4d9d-80C7-02AF85C822A8 |
-| logical\_name |  引用实体的 PowerApps 逻辑名称。   |
+| logical\_name |  引用实体的 Power Apps 逻辑名称。   |
 |     客户      |                           引用实体的主名称属性。                            |
 
 ### <a name="note"></a>注释
@@ -354,7 +354,7 @@ blogposts 对象允许您访问博客文章对象的集合。 您可以预订博
 
 ## <a name="entitylist"></a>entitylist
 
-entitylist 对象在 [PowerApps Common Data Service 实体标记](portals-entity-tags.md)内使用。 它可以提供对特定实体列表所有属性的访问。  
+entitylist 对象在 [Power Apps Common Data Service 实体标记](portals-entity-tags.md)内使用。 它可以提供对特定实体列表所有属性的访问。  
 
 > [!Note]                                                       
 > [呈现与当前页关联的实体列表](render-entity-list-current-page.md)
@@ -374,41 +374,41 @@ entitylist 对象在 [PowerApps Common Data Service 实体标记](portals-entity
 |              detail\_url              |                                                                                       为实体列表的详细信息视图链接/按钮返回已配置的 URL 路径。                                                                                        |
 |           empty\_list\_text           |                                                                                当实体列表视图未返回结果时，返回要显示的已配置本地化文本。                                                                                |
 |      enable\_entity\_permissions      |                                                                               如果已为此实体列表启用实体权限筛选，将返回 true。 否则，返回 false。                                                                               |
-|         entity\_logical\_name         |                                                 返回此实体列表显示的记录的 PowerApps 实体逻辑名称。 例如，contact                                                 |
+|         entity\_logical\_name         |                                                 返回此实体列表显示的记录的 Power Apps 实体逻辑名称。 例如，contact                                                 |
 |   filter\_account\_attribute\_name    |                                            返回用于查找客户的属性逻辑名称，该名称将用于按当前门户用户的上级单位来筛选结果记录。 例如，accountid                                            |
 |         filter\_apply\_label          |                                                            返回将高级属性筛选器应用到实体列表结果所用的链接/按钮的已配置本地化标签。                                                            |
 |          filter\_definition           |                      返回实体列表的 JSON 属性筛选器定义。 有关如何使用 metafilters Liquid 筛选器处理此定义的详细信息，请参阅[实体列表筛选器](liquid-filters.md#entity-list-filters)。                       |
 |            filter\_enabled            |                                                                               如果为实体列表启用了高级属性筛选，将返回 true。 否则，返回 false。                                                                               |
 | filter\_portal\_user\_attribute\_name |                                                 返回用于查找联系人的属性逻辑名称，该名称将用于按当前门户用户的联系人来筛选结果记录。 例如，contactid                                                  |
 |   filter\_website\_attribute\_name    |                                              返回用于查找 adx\_website 的属性逻辑名称，该名称将用于按当前门户网站来筛选结果记录。 例如，adx\_websiteid                                              |
-|            language\_code             |                                               返回用于选择此实体列表的所有本地化标签的 PowerApps 整数语言代码。                                                |
+|            language\_code             |                                               返回用于选择此实体列表的所有本地化标签的 Power Apps 整数语言代码。                                                |
 |              page\_size               |                                                                                                   返回实体列表的已配置结果页面大小。                                                                                                    |
 |          primary\_key\_name           |                                                                                  返回此实体列表显示的记录的主键属性逻辑名称。                                                                                  |
 |            search\_enabled            |                                                                                         如果已为此实体列表启用搜索，将返回 true。 否则，返回 false。                                                                                          |
 |          search\_placeholder          |                                                                                        返回实体列表搜索字段占位符的已配置本地化文本。                                                                                        |
 |            search\_tooltip            |                                                                                             返回实体列表搜索工具提示的已配置本地化文本。                                                                                             |
 |                 视图                 |                                                                                           以实体列表视图对象的形式返回实体列表的可用视图。                                                                                           |
-|      \[属性逻辑名称\]       | 您可以按逻辑名称访问实体列表 (adx\_entitylist) PowerApps 记录的任何属性，操作方式与[实体](liquid-objects.md#entity)对象相同。 例如，{{ entitylist.adx\_name }} |
+|      \[属性逻辑名称\]       | 您可以按逻辑名称访问实体列表 (adx\_entitylist) Power Apps 记录的任何属性，操作方式与[实体](liquid-objects.md#entity)对象相同。 例如，{{ entitylist.adx\_name }} |
 
 ### <a name="entity-list-view-attributes"></a>实体列表视图属性
 
 |          属性          |                                                                                     说明                                                                                     |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |           columns           |                                                         以实体列表视图列对象的形式返回视图列。                                                         |
-|    entity\_logical\_name    |               返回视图中包含的记录的 PowerApps 实体逻辑名称。 例如，contact                |
+|    entity\_logical\_name    |               返回视图中包含的记录的 Power Apps 实体逻辑名称。 例如，contact                |
 |             编号              |                                                                          返回视图的 GUID ID。                                                                           |
-|       language\_code        | 返回用于选择视图的所有本地化标签（列标题等）的 PowerApps 整数语言代码。 |
-|            客户             |                                          返回视图的 PowerApps 显示名称。                                          |
-| primary\_key\_logical\_name |        返回视图中包含的记录的 PowerApps 实体主键逻辑名称。 例如，contactid         |
+|       language\_code        | 返回用于选择视图的所有本地化标签（列标题等）的 Power Apps 整数语言代码。 |
+|            客户             |                                          返回视图的 Power Apps 显示名称。                                          |
+| primary\_key\_logical\_name |        返回视图中包含的记录的 Power Apps 实体主键逻辑名称。 例如，contactid         |
 |      sort\_expression       |                                               返回视图的默认排序表达式。 例如，name ASC、createdon DESC                                               |
 
 ### <a name="entity-list-view-column-attributes"></a>实体列表视图列属性
 
 |    属性     |                                                                                    说明                                                                                    |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| attribute\_type  | 以字符串形式返回列的 PowerApps 属性类型名称。 例如，Lookup、Picklist、String、Boolean、DateTime |
-|  logical\_name   |                       返回列的 PowerApps 属性逻辑名称。 例如，createdon                       |
-|       姓名       |                      返回列的本地化 PowerApps 显示名称。 例如，Created On                       |
+| attribute\_type  | 以字符串形式返回列的 Power Apps 属性类型名称。 例如，Lookup、Picklist、String、Boolean、DateTime |
+|  logical\_name   |                       返回列的 Power Apps 属性逻辑名称。 例如，createdon                       |
+|       姓名       |                      返回列的本地化 Power Apps 显示名称。 例如，Created On                       |
 | sort\_ascending  |                                      返回用于按升序将列排序的排序表达式字符串。 例如，createdon ASC                                       |
 | sort\_descending |                                     返回用于按降序将列排序的排序表达式字符串。 例如，createdon DESC                                      |
 |  sort\_disabled  |                                                   如果禁用列的排序，将返回 true。 否则，返回 false。                                                    |
@@ -425,18 +425,18 @@ entityview 对象在 entityview 标记中使用，为视图以及视图结果记
 |-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |           columns           |                         以 [entity 视图列对象](liquid-objects.md#entity-list-view-column-attributes)的形式返回视图列。                          |
 | entity\_permission\_denied  | 如果对视图结果的访问由于当前用户的权限不足被拒绝，返回 true。 如果授予对视图结果的阅读访问权限，返回 false。 |
-|    entity\_logical\_name    |                   视图结果记录的 PowerApps 实体逻辑名称。 例如，contact                   |
+|    entity\_logical\_name    |                   视图结果记录的 Power Apps 实体逻辑名称。 例如，contact                   |
 |         first\_page         |                 视图结果第一页的页码。 这将为 1，除非不返回结果，这种情况下它将是 null。                  |
-|             编号              |                            定义此 entityview 的 PowerApps 视图的 GUID ID。                             |
-|       language\_code        |             用于加载当前视图的本地化标签的 PowerApps 整数语言代码。              |
+|             编号              |                            定义此 entityview 的 Power Apps 视图的 GUID ID。                             |
+|       language\_code        |             用于加载当前视图的本地化标签的 Power Apps 整数语言代码。              |
 |         last\_page          |                                 视图结果最后一页的页码。 如果未返回结果，则将为 null。                                  |
-|            名称             |              用于定义此 entityview 的 PowerApps 视图名称，如“有效联系人”。               |
+|            名称             |              用于定义此 entityview 的 Power Apps 视图名称，如“有效联系人”。               |
 |         next\_page          |                                视图结果下一页的页码。 如果结果没有下一页面，这将为 null。                                 |
 |            页             |                                                           视图结果当前页面的页码。                                                           |
 |            页面            |                                          返回包含当前视图的所有结果页面的页码数组。                                          |
 |         page\_size          |                                                      当前视图每个页面返回的结果的数量。                                                       |
 |       previous\_page        |                              视图结果下一页的页码。 如果结果没有上一页面，这将为 null。                               |
-| primary\_key\_logical\_name |  此视图的结果实体的主键属性的 PowerApps 逻辑名称。 例如，contactid。   |
+| primary\_key\_logical\_name |  此视图的结果实体的主键属性的 Power Apps 逻辑名称。 例如，contactid。   |
 |           记录           |                                                   视图的结果记录的当前页面，作为实体对象。                                                    |
 |      sort\_expression       |                                             视图的默认排序表达式。 例如，nameASC、createdon DESC。                                              |
 |        total\_pages         |                                                              视图的结果页面的总数。                                                              |
@@ -692,7 +692,7 @@ forumposts 对象允许您访问 forumpost 对象的集合。
 
 ## <a name="knowledge"></a>知识
 
-提供对 PowerApps knowledgearticle 和用于在门户中呈现文章和类别的类别实体记录的访问权限。
+提供对 Power Apps knowledgearticle 和用于在门户中呈现文章和类别的类别实体记录的访问权限。
 
 ### <a name="attributes"></a>属性
 
@@ -831,7 +831,7 @@ forumposts 对象允许您访问 forumpost 对象的集合。
 
 引用当前门户请求页面。 此对象合并[站点地图](#sitemap)和当前请求[实体](#entities)（通常是网页）的属性。  
 
-page 对象提供对类似于当前页面的导航痕迹、当前页面的标题或 URL、基础 PowerApps 记录的任何其他属性或相关实体等内容的访问。
+page 对象提供对类似于当前页面的导航痕迹、当前页面的标题或 URL、基础 Power Apps 记录的任何其他属性或相关实体等内容的访问。
 
 ```
 <ul class=breadcrumb>
@@ -887,7 +887,7 @@ page 对象提供对类似于当前页面的导航痕迹、当前页面的标题
 |               上级               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           返回页面的父站点地图节点。 如果该页是主页，则父项将为 null。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |               title                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                页面的标题。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |                URL                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 页面的 URL。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| \[属性或关系名称\] | 您可以按逻辑名称访问页面的底层 PowerApps 记录的任何属性。<br>`{{ page.createdon }}`<br>`{% assign attribute_name = 'name' %}`<br>`{{ page[attribute_name] }}`<br>大多数实体属性值直接映射到 [Liquid 类型](liquid-types.md)：“两个选项”字段映射到布尔值，文本字段到字符串，数字/货币字段到数字，日期/时间字段到日期对象。 但是，某些属性类型作为对象返回：<ul><li>查找（实体引用）字段作为[实体引用对象](#entity-reference)返回。</li><li>选项集/选择列表字段作为[选项集值对象](#option-set-value)返回。</li> 您还可以通过关系架构名称来加载所有相关实体。 <br> `{{ page.adx_webpage_entitylist.adx_name }}`<br>在关系是反身（即自引用）的情况中，将返回[实体](#entities)对象。 （否则，结果是模糊的。）`{{ page.adx_webpage_webpage.referencing.adx_name }}` <br>**注意**：加载大量相关实体或访问大量一个模板中的关系，可能会对模板呈现性能产生负面影响。 避免加载数组中、循环内每个项目的相关实体。 如有可能，尽量使用 [PowerApps Common Data Service 实体标记](portals-entity-tags.md)加载实体的集合。 |
+| \[属性或关系名称\] | 您可以按逻辑名称访问页面的底层 Power Apps 记录的任何属性。<br>`{{ page.createdon }}`<br>`{% assign attribute_name = 'name' %}`<br>`{{ page[attribute_name] }}`<br>大多数实体属性值直接映射到 [Liquid 类型](liquid-types.md)：“两个选项”字段映射到布尔值，文本字段到字符串，数字/货币字段到数字，日期/时间字段到日期对象。 但是，某些属性类型作为对象返回：<ul><li>查找（实体引用）字段作为[实体引用对象](#entity-reference)返回。</li><li>选项集/选择列表字段作为[选项集值对象](#option-set-value)返回。</li> 您还可以通过关系架构名称来加载所有相关实体。 <br> `{{ page.adx_webpage_entitylist.adx_name }}`<br>在关系是反身（即自引用）的情况中，将返回[实体](#entities)对象。 （否则，结果是模糊的。）`{{ page.adx_webpage_webpage.referencing.adx_name }}` <br>**注意**：加载大量相关实体或访问大量一个模板中的关系，可能会对模板呈现性能产生负面影响。 避免加载数组中、循环内每个项目的相关实体。 如有可能，尽量使用 [Power Apps Common Data Service 实体标记](portals-entity-tags.md)加载实体的集合。 |
 
 ## <a name="polls"></a>轮询
 
@@ -1000,7 +1000,7 @@ polls 对象允许您选择特定的轮询或轮询位置：
 
 ## <a name="searchindex"></a>searchindex
 
-searchindex 对象在 [PowerApps Common Data Service 实体标记](portals-entity-tags.md)内使用，并且提供对查询结果的访问。  
+searchindex 对象在 [Power Apps Common Data Service 实体标记](portals-entity-tags.md)内使用，并且提供对查询结果的访问。  
 
 ```
 {% searchindex query: 'support', page: params.page, page_size: 10 %}
@@ -1049,8 +1049,8 @@ searchindex 对象在 [PowerApps Common Data Service 实体标记](portals-entit
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    实体     |                                                                                                                            结果的基础[实体](#entities)。                                                                                                                            |
 |   fragment    | 结果的相关短文本片段，与使用 &lt;em&gt; HTML 标记突出显示的指定查询匹配的术语。 请注意，某些查询类型不支持突出显示的片段，如模糊查询 (~) 和通配符查询 (\*)。 这些情况下该属性将为空。 |
-|      编号       |                                                             结果的基本记录的 PowerApps 实体 ID，作为字符串。 例如，936DA01F-9ABD-4d9d-80C7-02AF85C822A8                                                              |
-| logical\_name |                                                                           结果的基本记录的 PowerApps 实体逻辑名称。 例如，adx\_webpage                                                                           |
+|      编号       |                                                             结果的基本记录的 Power Apps 实体 ID，作为字符串。 例如，936DA01F-9ABD-4d9d-80C7-02AF85C822A8                                                              |
+| logical\_name |                                                                           结果的基本记录的 Power Apps 实体逻辑名称。 例如，adx\_webpage                                                                           |
 |    编号     |                                                            结果的数量，所有结果页，从 1 开始。 例如，第二个结果页的第一个结果，页面大小为 10，此值将为 11。                                                             |
 |     score     |                                                                                                 结果的 Lucene 评分，作为浮点值。 结果将按该值排列的顺序返回。                                                                                                 |
 |     title     |                                                                                                                                          结果的标题。                                                                                                                                          |
@@ -1177,7 +1177,7 @@ Site marker My Site Marker does not exist.
 |         属性          |                                                                                    说明                                                                                    |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |            URL             |                                                                         网站标记目标的 URL。                                                                         |
-| \[属性逻辑名称\] | 您可以按逻辑名称访问网站标记目标 PowerApps 记录的任何属性。 例如，{{ sitemarker.adx\_name }} |
+| \[属性逻辑名称\] | 您可以按逻辑名称访问网站标记目标 Power Apps 记录的任何属性。 例如，{{ sitemarker.adx\_name }} |
 
 ## <a name="snippets"></a>片段
 
@@ -1227,7 +1227,7 @@ No footer snippet was found.
 
 ## <a name="user"></a>用户
 
-引用当前门户用户，允许对基础 PowerApps 联系人记录的所有属性的访问。 如果没有用户登录，此变量将为 [null](liquid-types.md#null)。  
+引用当前门户用户，允许对基础 Power Apps 联系人记录的所有属性的访问。 如果没有用户登录，此变量将为 [null](liquid-types.md#null)。  
 
 用户是[实体](#entity)对象。  
 
@@ -1315,7 +1315,7 @@ Hello, anonymous user!
 |            客户            |                                                                        Web 链接集的名称。                                                                         |
 |           头衔            |                                                                        Web 链接集的标题。                                                                        |
 |          Weblinks          |                                                       与 Web 链接集关联的 Web 链接对象的数组。                                                        |
-| \[属性逻辑名称\] | 您可以按逻辑名称访问 Web 链接集 PowerApps 记录的任何属性。 例如，{{ weblinkset.createdon }} |
+| \[属性逻辑名称\] | 您可以按逻辑名称访问 Web 链接集 Power Apps 记录的任何属性。 例如，{{ weblinkset.createdon }} |
 
 ### <a name="web-link-attributes"></a>Web 链接属性
 
@@ -1337,7 +1337,7 @@ Hello, anonymous user!
 |           工具提示           |                                                                    Web 链接的工具提示文本。                                                                     |
 |             URL             |                                                                       Web 链接的 URL。                                                                        |
 |          Weblinks           |                                                   与 Web 链接集关联的子 Web 链接对象的数组。                                                   |
-| \[属性逻辑名称\]  | 您可以按逻辑名称访问 Web 链接 PowerApps 记录的任何属性。 例如，{{ weblink.createdon }} |
+| \[属性逻辑名称\]  | 您可以按逻辑名称访问 Web 链接 Power Apps 记录的任何属性。 例如，{{ weblink.createdon }} |
 
 ### <a name="web-link-image-attributes"></a>Web 链接图像属性
 
@@ -1350,7 +1350,7 @@ Hello, anonymous user!
 
 ## <a name="website"></a>网站
 
-引用门户网站，允许对门户的 PowerApps 网站 (adx\_website) 记录的所有属性的访问。  
+引用门户网站，允许对门户的 Power Apps 网站 (adx\_website) 记录的所有属性的访问。  
 
 > [!Note]
 > 网站是一个[实体](#entity)对象，具有所有相同属性。

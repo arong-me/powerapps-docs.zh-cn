@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: eaa02abdc4c85d4d6abd5e5ca3afe176144c4027
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d711a46676003786363f3496515dbd387024dadb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701519"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860636"
 ---
 # <a name="add-configure-move-or-delete-fields-on-a-form"></a>添加、配置、移动或删除窗体中的字段  
 使用窗体设计器添加、配置、移动或删除字段。
@@ -123,7 +123,7 @@ ms.locfileid: "2701519"
 5. 在**新建字段**对话框中，选择**数据类型**并配置字段的任何其他必需属性。
 
      > [!NOTE]
-     >   -  当您从窗体设计器中创建字段时，某些字段类型不可用。 如果所需的字段类型不可用，则可以按照[使用 PowerApps 门户创建和编辑 Common Data Service 的字段](../common-data-service/create-edit-field-portal.md)中所述的步骤进行操作
+     >   -  当您从窗体设计器中创建字段时，某些字段类型不可用。 如果所需的字段类型不可用，则可以按照[使用 Power Apps 门户创建和编辑 Common Data Service 的字段](../common-data-service/create-edit-field-portal.md)中所述的步骤进行操作
 
 6. 选择**完成**在实体上创建新字段。 该字段将显示在**字段**窗格中。
 7. 如果您要将新创建的字段添加到窗体，请按照[**将字段添加到窗体**](add-move-or-delete-fields-on-form.md#add-fields-to-a-form)一节中所述的步骤操作。

@@ -1,5 +1,5 @@
 ---
-title: 通过 PowerApps 使用默认解决方案自定义 | MicrosoftDocs
+title: 通过 Power Apps 使用默认解决方案自定义 | MicrosoftDocs
 description: 了解如何自定义默认解决方案
 ms.custom: ''
 ms.date: 10/29/2018
@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0676d24ef79f2fe92da2971028a6e22fbdc76c62
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: da116f81addf057a5f3fd4c44264bc6305e7b884
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755167"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869664"
 ---
 # <a name="use-the-common-data-services-default-solution"></a>使用 Common Data Service 的默认解决方案  
   
- 所有 PowerApps 环境均包括以下解决方案。
+ 所有 Power Apps 环境均包括以下解决方案。
 -   **Common Data Service 默认解决方案** - 这是一个基本解决方案，默认可供制造商在环境中用于自定义。
 -   **默认解决方案** - 这是一个特殊解决方案，包含环境中所有解决方案的所有自定义项。 
 <!-- **Base Custom Controls Core** - This solution includes a core set of controls. Controls are used in user interface elements, such as fields, lists, and views. -->

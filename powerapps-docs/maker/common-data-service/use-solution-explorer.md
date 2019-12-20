@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中使用解决方案 | MicrosoftDocs
+title: 在 Power Apps 中使用解决方案 | MicrosoftDocs
 description: 了解如何使用解决方案创建或自定义应用
 ms.custom: ''
 ms.date: 10/28/2019
@@ -16,22 +16,22 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 57df12285848d67a8cd85016aec0bbb033fef89a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e4d8b6b69ab820541b822fc58ce5c079df7b5b19
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703147"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885318"
 ---
-# <a name="use-solutions-in-powerapps"></a>在 PowerApps 中使用解决方案
+# <a name="use-solutions-in-power-apps"></a>在 Power Apps 中使用解决方案
 
- 在 PowerApps 内，您可以通过选择左侧导航中的**解决方案**查看解决方案列表。 然后可以选择解决方案来查看其所有组件。 
+ 在 Power Apps 内，您可以通过选择左侧导航中的**解决方案**查看解决方案列表。 然后可以选择解决方案来查看其所有组件。 
  
 > [!div class="mx-imgBorder"]  
 > ![具有所有组件的演示解决方案](media/solution-all-items-list.PNG "具有所有组件的演示解决方案")  
  
 > [!NOTE]
->  解决方案体验仅在线可用，且仅可用于环境版本 9.1.0.267 及以后版本。 若要检查您的版本，请转到 [PowerApps 管理中心](https://admin.powerapps.com/)> **环境** > 选择您的环境 > **详细信息**选项卡。对于早期版本环境，选择解决方案将在经典体验中打开它。  
+>  解决方案体验仅在线可用，且仅可用于环境版本 9.1.0.267 及以后版本。 若要检查您的版本，请转到 [Power Apps 管理中心](https://admin.powerapps.com/)> **环境** > 选择您的环境 > **详细信息**选项卡。对于早期版本环境，选择解决方案将在经典体验中打开它。  
  
  您可以通过在项目中滚动来滚动浏览解决方案中的所有组件。 如果列表中有超过 100 个项目，您可以选择**加载另外 100 个项目**来查看更多项目。 
  
@@ -87,7 +87,7 @@ ms.locfileid: "2703147"
 
 ## <a name="classic-solution-explorer"></a>经典解决方案资源管理器
 
-在 PowerApps 中，您可以通过选择左侧导航窗格中的**解决方案**，然后选择命令栏中的**切换到经典**，来查看经典方案资源管理器。 经典解决方案资源管理器是之前通过 PowerApps 中的**设置 > 高级自定义**区域提供的。 
+在 Power Apps 中，您可以通过选择左侧导航窗格中的**解决方案**，然后选择命令栏中的**切换到经典**，来查看经典方案资源管理器。 经典解决方案资源管理器是之前通过 Power Apps 中的**设置 > 高级自定义**区域提供的。 
 
 ## <a name="known-limitations"></a>了解限制
 
@@ -98,7 +98,7 @@ ms.locfileid: "2703147"
 - 连接需要身份验证和同意，这需要交互式用户会话，因此无法通过解决方案进行传输。 导入解决方案后，请播放应用以验证连接。 您也可以在导入解决方案之前在目标环境中创建连接。 
 -   作为共同负责人共享到 Azure Active Directory (AAD) 安全组的画布应用不能添加到解决方案中。 取消共享应用，然后再将其添加到解决方案中。
 -   区域应用不显示在经典解决方案资源管理器中。 使用现代化体验。
--   画布应用访问（CRUD 和安全性）在 PowerApps 中完全托管，而不是在 Common Data Service 数据库中。
+-   画布应用访问（CRUD 和安全性）在 Power Apps 中完全托管，而不是在 Common Data Service 数据库中。
 - 画布应用和流不支持数据库操作，例如备份、还原和复制。 这些操作可能会损坏画布应用和流。
 - 删除托管解决方案不会回滚到其他画布应用版本。 而是删除应用的所有版本。
 - 导入包含流的解决方案将不会自动创建或关联所需的连接。 必须编辑流以修复连接。

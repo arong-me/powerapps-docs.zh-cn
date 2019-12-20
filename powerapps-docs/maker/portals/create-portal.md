@@ -1,6 +1,6 @@
 ---
-title: 在 PowerApps 中创建门户 | MicrosoftDocs
-description: 有关在 PowerApps 中创建门户的说明。
+title: 在 Power Apps 中创建门户 | MicrosoftDocs
+description: 有关在 Power Apps 中创建门户的说明。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,22 +9,22 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: b818db8fb72fe36fcc7ea049a4e5b4cfb17eb0d9
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: b0482a5005f1cc0ca0b6e61636570b313dbd8a9c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756303"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884593"
 ---
 # <a name="create-a-common-data-service-starter-portal"></a>创建 Common Data Service 起点门户
 
-借助在 PowerApps 中构建门户的功能，您可以为外部和内部用户创建一个网站，使他们能够与存储在 Common Data Service 中的数据进行交互。
+借助在 Power Apps 中构建门户的功能，您可以为外部和内部用户创建一个网站，使他们能够与存储在 Common Data Service 中的数据进行交互。
 
 这些是创建门户网站的一些好处：
 
-- 由于数据存储在 Common Data Service 中，因此您无需像使用 SharePoint、Dynamics 365 中的模型驱动应用或 Salesforce 等数据源那样，通过 PowerApps 创建连接。 您只需要指定要在门户中显示或管理的实体。
+- 由于数据存储在 Common Data Service 中，因此您无需像使用 SharePoint、Dynamics 365 中的模型驱动应用或 Salesforce 等数据源那样，通过 Power Apps 创建连接。 您只需要指定要在门户中显示或管理的实体。
 
-- 您可以在 WYSIWYG PowerApps 门户 Studio 中通过在网页上添加和配置组件来设计门户。
+- 您可以在 WYSIWYG Power Apps 门户 Studio 中通过在网页上添加和配置组件来设计门户。
 
 您可以在新环境或现有环境中创建门户。
 
@@ -32,15 +32,18 @@ ms.locfileid: "2756303"
 
 如果选择在没有门户先决条件的现有环境中创建门户，则首先安装先决条件，然后再创建门户。 采用这种方法，门户配置可能会花费一些时间，并且在配置门户后会通知您。
 
-根据 PowerApps 中的选定环境，您可以在 Dynamics 365 中包含模型驱动应用的环境中创建 Common Data Service 起点门户或门户。
+根据 Power Apps 中的选定环境，您可以在 Dynamics 365 中包含模型驱动应用的环境中创建 Common Data Service 起点门户或门户。
 
-有关使用环境的详细信息：[使用环境和 Microsoft PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-environments)
+> [!NOTE]
+> 创建门户时，将安装一些解决方案并导入示例数据。
+
+有关使用环境的详细信息：[使用环境和 Microsoft Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-environments)
 
 有关可用门户网站模板的详细信息：[门户模板](portal-templates.md)
 
 要创建门户：
 
-1.  登录到 [PowerApps](https://make.powerapps.com)。  
+1.  登录到 [Power Apps](https://make.powerapps.com)。  
 
 2.  在**制作您自己的应用**下，选择**从空白门户开始**。
 
@@ -68,7 +71,7 @@ ms.locfileid: "2756303"
 > [!div class=mx-imgBorder]
 > ![门户已设置](media/recent-apps.png "门户已设置")
 
-要在 PowerApps 门户 Studio 中编辑门户，请参阅[编辑门户](manage-existing-portals.md#edit)。
+要在 Power Apps 门户 Studio 中编辑门户，请参阅[编辑门户](manage-existing-portals.md#edit)。
 
 > [!NOTE]
 > - 您最多可以在一个租户中创建五个门户。 但是，在环境中每种类型只能创建一个门户。
@@ -77,7 +80,7 @@ ms.locfileid: "2756303"
 > - 如果您已经使用早期的门户加载项设置了门户，则仍然可以从 [make.powerapps.com](https://make.powerapps.com) 自定义和管理门户。
 > - 从 [make.powerapps.com](https://make.powerapps.com) 设置门户不会使用早期的门户加载项。 另外，这些门户未在 **Dynamics 365 管理中心**页面上的**应用程序**选项卡下列出。
 > - 无法从 **Dynamics 365 管理中心**页面创建 Common Data Service 起点门户。
-> - PowerApps 门户在法国地区不可用。
+> - Power Apps 门户在法国地区不可用。
 
 ## <a name="create-new-environment"></a>创建新环境
 
@@ -99,12 +102,12 @@ ms.locfileid: "2756303"
 3.  选择数据库中存储的数据的货币和语言。 创建数据库后，您将无法更改货币或语言。 完成后，选择**创建我的数据库**。 数据库是通过起点门户创建的，一旦配置了门户，您便可以快速开始示例内容。
 
     > [!NOTE]
-    > **包含起点门户**选项仅在您使用**从空白门户开始**窗口中提供的选项创建环境时可用。 从 PowerApps 管理中心创建环境时，此选项不可用。
+    > **包含起点门户**选项仅在您使用**从空白门户开始**窗口中提供的选项创建环境时可用。 从 Power Apps 管理中心创建环境时，此选项不可用。
 
     > [!div class=mx-imgBorder]
     > ![创建新数据库](media/create-new-database.png "创建新数据库") 
 
-    在 Common Data Service 上创建数据库可能需要几分钟。 创建数据库后，将在 PowerApps 主页上的环境列表中选择新环境，并创建门户管理应用。 该应用不是实际的门户，而是模型驱动的配套应用，可让您执行高级配置活动。 现在，您可以继续创建用于设计面向外部的网站的门户。
+    在 Common Data Service 上创建数据库可能需要几分钟。 创建数据库后，将在 Power Apps 主页上的环境列表中选择新环境，并创建门户管理应用。 该应用不是实际的门户，而是模型驱动的配套应用，可让您执行高级配置活动。 现在，您可以继续创建用于设计面向外部的网站的门户。
 
     > [!div class=mx-imgBorder]
     > ![门户管理应用](media/portal-mgmt-app.png "门户管理应用")
@@ -112,7 +115,7 @@ ms.locfileid: "2756303"
 4. 创建环境和数据库后，在**制作您自己的应用**下，选择**从空白门户开始**。 
 
     > [!NOTE]
-    > 如果已创建数据库，但仍显示创建数据库提示，则必须刷新 PowerApps 主页，然后再选择**从空白门户开始**磁贴。
+    > 如果已创建数据库，但仍显示创建数据库提示，则必须刷新 Power Apps 主页，然后再选择**从空白门户开始**磁贴。
 
 
 ## <a name="portal-provisioning-notifications"></a>门户配置通知

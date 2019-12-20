@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 77fcc7db0adf68cd6decbcc95e11d8e803761535
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8f5b3701aedc0e0e98d203d5048577647c276120
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2708559"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864731"
 ---
 # <a name="control-flow-tags"></a>控制流标记
 
@@ -91,4 +91,4 @@ Hello, stranger.
 [迭代标记](iteration-tags.md)<br>
 [变量标记](variable-tags.md)<br>
 [模板标记](template-tags.md)<br>
-[PowerApps Common Data Service 实体标记](portals-entity-tags.md)
+[Power Apps Common Data Service 实体标记](portals-entity-tags.md)

@@ -1,5 +1,5 @@
 ---
-title: PowerApps 中模型驱动应用程序的通用字段属性 | MicrosoftDocs
+title: Power Apps 中模型驱动应用程序的通用字段属性 | MicrosoftDocs
 description: 了解主窗体的通用字段属性
 Keywords: 主窗体; 通用字段属性; Dynamics 365
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e30d84206e92162327f1faf0035450ede9c05a8a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5da30442c2768701fbc48908653d8ae065c4fce9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701299"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863540"
 ---
 # <a name="model-driven-app-common-field-properties"></a>模型驱动应用程序的通用字段属性
 

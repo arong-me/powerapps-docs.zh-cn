@@ -1,5 +1,5 @@
 ---
-title: PowerApps 中模型驱动应用主窗体的快速视图控件属性 | MicrosoftDocs
+title: Power Apps 中模型驱动应用主窗体的快速视图控件属性 | MicrosoftDocs
 description: 了解主窗体的快速视图控件属性
 Keywords: 快速视图控件属性; Dynamics 365; 主窗体
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b2d4a8f55bf9b6f3e54f948ad16be36fdecb6d20
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 549728e2fb100f927de6660dd5fc5d5aa0da4f68
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755079"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873670"
 ---
 # <a name="model-driven-app-quick-view-control-properties"></a>模型驱动应用程序的快速视图控件属性
 
@@ -32,8 +32,8 @@ ms.locfileid: "2755079"
 > [!div class="mx-imgBorder"] 
 > ![客户窗体上的联系人快速视图窗体](media/quick-view-form-contact.png "客户窗体上的联系人快速视图窗体")  
 
-您可以从 PowerApps 站点访问**快速视图控件属性**。 
-1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+您可以从 Power Apps 站点访问**快速视图控件属性**。 
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 
 2.  展开**数据**，选择**实体**，选择所需实体，然后选择**窗体**选项卡。 

@@ -1,5 +1,5 @@
 ---
-title: PowerApps 中模型驱动应用的主窗体演示 | MicrosoftDocs
+title: Power Apps 中模型驱动应用的主窗体演示 | MicrosoftDocs
 description: 了解主窗体在不同设备上显示时如何呈现
 ms.custom: ''
 ms.date: 06/27/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9ed031f75235cfb47a2206de0a814fb008a335bd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 03eca0ade83c4d241eca9e4f7a6004232aac2b87
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702531"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860091"
 ---
 # <a name="how-model-driven-app-main-forms-appear-on-different-devices"></a>模型驱动应用程序的主窗体在不同设备上的显示方式
 

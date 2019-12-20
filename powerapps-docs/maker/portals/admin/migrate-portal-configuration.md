@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 0aa057594b500c7019a4d645c70cafcfff183608
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 80f9cc89b0da2eec5d134f282507e68658e42a96
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755980"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2816371"
 ---
 # <a name="migrate-portal-configuration"></a>迁移门户配置
 
@@ -29,11 +29,16 @@ ms.locfileid: "2755980"
 > - 用于配置迁移的架构文件支持的门户的最低解决方案版本为 8.4.0.275。 但是，建议您使用解决方案的最新版本。
 
 架构文件可用于以下门户类型：
-- [社区门户](https://go.microsoft.com/fwlink/p/?linkid=2019704)
-- [客户自助服务门户](https://go.microsoft.com/fwlink/p/?linkid=2019705)
-- [合作伙伴门户](https://go.microsoft.com/fwlink/p/?linkid=2019803)
-- [员工自助服务门户](https://go.microsoft.com/fwlink/p/?linkid=2019802)
-- [自定义门户](https://go.microsoft.com/fwlink/p/?linkid=2019804)
+
+- **使用 Common Data Service 在环境中创建的门户**
+    - [自定义门户（空白门户）](https://go.microsoft.com/fwlink/p/?linkid=2110477)
+
+- **在其中包含 Dynamics 365 中的模型驱动应用的环境中创建的门户**
+    - [自定义门户（空白门户）](https://go.microsoft.com/fwlink/p/?linkid=2019804)
+    - [社区门户](https://go.microsoft.com/fwlink/p/?linkid=2019704)
+    - [客户自助服务门户](https://go.microsoft.com/fwlink/p/?linkid=2019705)
+    - [合作伙伴门户](https://go.microsoft.com/fwlink/p/?linkid=2019803)
+    - [员工自助服务门户](https://go.microsoft.com/fwlink/p/?linkid=2019802)
 
 默认的架构文件包含有关门户实体、关系和每个实体唯一性定义的信息。 详细信息：[导出门户配置数据](#export-portal-configuration-data)
 

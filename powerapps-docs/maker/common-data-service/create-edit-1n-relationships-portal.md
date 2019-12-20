@@ -1,6 +1,6 @@
 ---
-title: 使用 PowerApps 门户创建和编辑一对多或多对一实体关系 | MicrosoftDocs
-description: 了解如何使用 PowerApps 门户创建一对多或多对一实体关系
+title: 使用 Power Apps 门户创建和编辑一对多或多对一实体关系 | MicrosoftDocs
+description: 了解如何使用 Power Apps 门户创建一对多或多对一实体关系
 ms.custom: ''
 ms.date: 06/11/2018
 ms.reviewer: ''
@@ -20,16 +20,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 70f48af48b2a9221029735de484b555bc03a66c4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 27f90d74025718eafca642040e40835530177c91
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756508"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861547"
 ---
-# <a name="create-and-edit-one-to-many-or-many-to-one-entity-relationships-using-powerapps-portal"></a>使用 PowerApps 门户创建和编辑一对多或多对一实体关系
+# <a name="create-and-edit-one-to-many-or-many-to-one-entity-relationships-using-power-apps-portal"></a>使用 Power Apps 门户创建和编辑一对多或多对一实体关系
 
-[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供为 Common Data Service 创建和编辑 1:N（一对多）或 N:1（多对一）关系的简单方法。
+[Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供为 Common Data Service 创建和编辑 1:N（一对多）或 N:1（多对一）关系的简单方法。
 
 此门户支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 详细信息： 
 - [创建和编辑 1:N（一对多）或 N:1（多对一）关系](create-edit-1n-relationships.md)
@@ -37,7 +37,7 @@ ms.locfileid: "2756508"
 
 ## <a name="view-entity-relationships"></a>查看实体关系
 
-1. 从 [PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**区域**设计模式。
+1. 从 [Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**区域**设计模式。
 2. 选择**数据** > **实体**，然后选择具有您要查看的关系的实体。
 3. 选择**关系**选项卡后，您可以选择以下视图： 
 

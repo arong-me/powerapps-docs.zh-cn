@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段 | MicrosoftDocs
+title: 使用 Power Apps 解决方案资源管理器创建和编辑 Common Data Service 的字段 | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/18/2018
 ms.reviewer: ''
@@ -19,20 +19,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8bbae644cddd24bebfa03ab5e2a15a86c6ecd44e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8eee62b8190c2422e2e910fd28306a0d56da85ec
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758004"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865947"
 ---
-# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-solution-explorer"></a>使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段
+# <a name="create-and-edit-fields-for-common-data-service-using-power-apps-solution-explorer"></a>使用 Power Apps 解决方案资源管理器创建和编辑 Common Data Service 的字段
 
 解决方案资源管理器为创建和编辑 Common Data Service 的字段提供一种方法。
 
-[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 <br />详细信息： 
+[Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 <br />详细信息： 
 - [创建和编辑 Common Data Service 的字段](create-edit-fields.md)
-- [使用 PowerApps 门户创建和编辑 Common Data Service 的字段](create-edit-field-portal.md)
+- [使用 Power Apps 门户创建和编辑 Common Data Service 的字段](create-edit-field-portal.md)
   
 ## <a name="open-solution-explorer"></a>打开解决方案资源管理器
 
@@ -268,7 +268,7 @@ ms.locfileid: "2758004"
 
 ### <a name="see-also"></a>另请参阅  
 [创建和编辑 Common Data Service 的字段](create-edit-fields.md)<br />
-[使用 PowerApps 门户创建和编辑 Common Data Service 的字段](create-edit-field-portal.md)<br />
+[使用 Power Apps 门户创建和编辑 Common Data Service 的字段](create-edit-field-portal.md)<br />
 [字段类型和字段数据类型](types-of-fields.md)<br />
 [定义计算字段以自动化手动计算](define-calculated-fields.md)<br />
 [定义用于聚合值的汇总字段](define-rollup-fields.md)<br />

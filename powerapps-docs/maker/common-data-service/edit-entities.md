@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中编辑实体 | MicrosoftDocs
+title: 在 Power Apps 中编辑实体 | MicrosoftDocs
 description: 了解各种可以编辑实体的方法
 ms.custom: ''
 ms.date: 05/15/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3ec64583e2146703711b88456ff7bc91ece3e921
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: cff90011a80bd051882da08be1f479cb997a7a72
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757432"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863936"
 ---
 # <a name="edit-an-entity"></a>编辑实体
 
@@ -40,10 +40,10 @@ ms.locfileid: "2757432"
 
 |设计器|说明|
 |--|--|
-|[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。|
+|[Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。|
 |解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。|
 
-在 PowerApps 门户和解决方案资源管理器中可执行以下操作：
+在 Power Apps 门户和解决方案资源管理器中可执行以下操作：
 
 - **编辑实体字段**。 更多信息：[创建和编辑 Common Data Service 的字段](create-edit-fields.md)
   
@@ -63,9 +63,9 @@ ms.locfileid: "2757432"
 
 - **图表**。 [创建或编辑系统图表](../model-driven-apps/create-edit-system-chart.md)
 
-## <a name="edit-using-powerapps-portal-designer"></a>使用 PowerApps 门户设计器进行编辑
+## <a name="edit-using-power-apps-portal-designer"></a>使用 Power Apps 门户设计器进行编辑
 
-在 PowerApps 门户设计器中，仅有三个实体属性可以编辑：
+在 Power Apps 门户设计器中，仅有三个实体属性可以编辑：
  - 显示名称
  - 复数显示名称
  - 说明

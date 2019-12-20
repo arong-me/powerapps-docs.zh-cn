@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中创建或编辑模型驱动应用视图 | MicrosoftDocs
+title: 在 Power Apps 中创建或编辑模型驱动应用视图 | MicrosoftDocs
 description: 了解如何创建或编辑视图
 ms.custom: ''
 ms.date: 06/11/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 78de24571448c0e3c8584ef3b31583acd9d6a4f4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0835e35f5815e7704cfe3d0de24ad4429600512b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2704159"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868763"
 ---
 # <a name="understand-model-driven-app-views"></a>了解模型驱动应用程序视图
 
 <a name="BKMK_CreatingAndEditingViews"></a>   
 
-通过 PowerApps 应用，使用视图定义特定实体的记录列表如何在应用程序中显示。 视图定义：
+通过 Power Apps 应用，使用视图定义特定实体的记录列表如何在应用程序中显示。 视图定义：
 
 - 待显示的列
 - 每列宽应为
@@ -89,7 +89,7 @@ ms.locfileid: "2704159"
 
 ## <a name="places-where-you-can-access-the-view-editor-to-create-or-edit-views"></a>您可以访问视图编辑器以创建或编辑视图的位置
 
-- PowerApps 站点：您可以在**模型驱动**区域 > **数据** > **实体** > **视图**选项卡中访问视图设计器。打开现有视图或创建新视图。 详细信息：[创建或编辑视图](create-and-edit-views.md)
+- Power Apps 站点：您可以在**模型驱动**区域 > **数据** > **实体** > **视图**选项卡中访问视图设计器。打开现有视图或创建新视图。 详细信息：[创建或编辑视图](create-and-edit-views.md)
 - 应用程序设计器：如果您在处理应用程序，可能需要使用应用程序设计器，其为已创建视图提供简单、直观且具有拖放功能的 UI。 详细信息：[教程：使用应用程序设计器创建和编辑公共视图或系统视图](create-edit-views-app-designer.md)
 - 解决方案资源管理器：如果已经体验过 Dynamics 365，可能希望使用解决方案资源管理器。 详细信息：[导航到模型驱动的高级应用程序制作和自定义区域](advanced-navigation.md#solution-explorer)
  

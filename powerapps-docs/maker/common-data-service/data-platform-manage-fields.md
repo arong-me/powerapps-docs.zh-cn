@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b0c576b8eab2b547c66a90f0693becf516b01207
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fd0499f48cfb5c02d8dab45b89bd38b753850ea1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758576"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865499"
 ---
 # <a name="manage-custom-fields-in-an-entity"></a>管理实体中的自定义字段
 您可以创建和更新任何实体中的一个或多个自定义字段。 在创建自定义字段时，可以指定一组属性，如字段名、其显示名称和它将包含的数据的类型。 有关详细信息，请参阅[实体属性元数据](../../developer/common-data-service/entity-attribute-metadata.md)。
@@ -106,5 +106,5 @@ ms.locfileid: "2758576"
 * [使用 Common Data Service 数据库从头开始创建应用](../canvas-apps/data-platform-create-app-scratch.md)
 
 ## <a name="privacy-notice"></a>隐私声明
-通过 Microsoft PowerApps 通用数据模型，我们收集并在我们的诊断系统中存储自定义实体和字段名称。  我们使用此知识来改进我们客户的通用数据模型。 创建者创建的实体和字段名称帮助我们了解 Microsoft PowerApps 社区常见的情形，以及服务的标准实体功能存在的确定空白区，如与组织相关的架构。 与这些实体关联的数据库表中的数据不由 Microsoft 访问或使用，也不会在数据库配置地区以外复制。 但是，请注意，自定义实体和字段名称可以跨地区复制，并根据我们的数据保留策略删除。 Microsoft 承诺保护您的隐私，如我们的[信任中心](https://www.microsoft.com/trustcenter/Privacy/default.aspx)的详细叙述。
+通过 Microsoft Power Apps 通用数据模型，我们收集并在我们的诊断系统中存储自定义实体和字段名称。  我们使用此知识来改进我们客户的通用数据模型。 创建者创建的实体和字段名称帮助我们了解 Microsoft Power Apps 社区常见的情形，以及服务的标准实体功能存在的确定空白区，如与组织相关的架构。 与这些实体关联的数据库表中的数据不由 Microsoft 访问或使用，也不会在数据库配置地区以外复制。 但是，请注意，自定义实体和字段名称可以跨地区复制，并根据我们的数据保留策略删除。 Microsoft 承诺保护您的隐私，如我们的[信任中心](https://www.microsoft.com/trustcenter/Privacy/default.aspx)的详细叙述。
 

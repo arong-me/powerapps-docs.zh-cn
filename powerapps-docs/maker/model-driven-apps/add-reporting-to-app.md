@@ -14,21 +14,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: aba6196680d674b8ee42096e340a105b19ac8d07
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 847d132ba3d7ac3e928014fa61b04e0cb8a0ec7b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752324"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885165"
 ---
 # <a name="add-reporting-features-to-your-model-driven-app"></a>将报告功能添加到模型驱动应用
 
-PowerApps 应用可以包含可以为用户提供有用业务信息的报表。 这些报表基于 SQL Server Reporting Services，并且提供典型的 SQL Server Reporting Services 报表提供的相同功能集。
+Power Apps 应用可以包含可以为用户提供有用业务信息的报表。 这些报表基于 SQL Server Reporting Services，并且提供典型的 SQL Server Reporting Services 报表提供的相同功能集。
 
 > [!div class="mx-imgBorder"] 
 > ![](media/progress-against-goals-report.png "Progress against goals standard report")
 
-系统报表可供所有用户使用。 创建或拥有报表的单个用户既可以将它们与特定的同事或团队共享，也可以将它们提供给组织，供所有用户运行。 这些报表使用 Common Data Service 专有的 FetchXML 查询并检索数据来生成报表。 您在 PowerApps 应用中创建的报表是基于 Fetch 的报表。
+系统报表可供所有用户使用。 创建或拥有报表的单个用户既可以将它们与特定的同事或团队共享，也可以将它们提供给组织，供所有用户运行。 这些报表使用 Common Data Service 专有的 FetchXML 查询并检索数据来生成报表。 您在 Power Apps 应用中创建的报表是基于 Fetch 的报表。
 
 > [!NOTE]
 > 报表功能不能操作在移动设备上运行的区域应用和模型驱动应用，如平板电脑和手机。 
@@ -42,7 +42,7 @@ PowerApps 应用可以包含可以为用户提供有用业务信息的报表。 
 ## <a name="add-reporting-to-a-unified-interface-app"></a>向统一接口应用添加报告
 您可以将基于 Fetch 的报告功能添加到您的应用，以便用户能够运行、共享、创建和编辑报表。 为此，需要将报表实体添加到您的应用的站点地图。 
 
-1. 登录 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 并打开现有应用进行编辑。 
+1. 登录 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 并打开现有应用进行编辑。 
 2. 在应用程序设计器中，选择**站点地图**旁边的![用于编辑站点地图的铅笔图标](media/ccf-pencil-icon.png)。 
 3. 在站点地图设计器中，选择**添加**，然后选择**区域**。 
 4. 在**标题**框中，为区域标题输入一个名称，如 *Reports*。 
@@ -74,7 +74,7 @@ PowerApps 应用可以包含可以为用户提供有用业务信息的报表。 
 标准实体报表（例如客户实体的“客户摘要”报表）可供所有应用用户使用。 负责报表的用户可以与特定的同事或团队共享它们。 系统管理员和系统定制员可以使报表具有组织范围内的可见性，以便所有用户都可以使用它们。 有关如何共享报表的信息，请参阅[与其他用户和团队共享报表](../../user/work-with-reports.md#share-a-report-with-other-users-or-teams)。 
 
 ## <a name="reports-in-solutions"></a>解决方案中的报表
-报表可识别解决方案。 如果将报表作为组件添加到解决方案，则可使其成为一套单独的软件，可用于扩展 PowerApps 功能和用户界面。 唯有对组织可见的报表才能添加到解决方案中。
+报表可识别解决方案。 如果将报表作为组件添加到解决方案，则可使其成为一套单独的软件，可用于扩展 Power Apps 功能和用户界面。 唯有对组织可见的报表才能添加到解决方案中。
 
 若要验证某个报表可否可被组织查看：在报表列表中，打开一个模型驱动应用，选择报表，然后选择**编辑**。 在**管理**选项卡上，查看是否将**查看者**设置为**组织**。 
 
@@ -86,6 +86,6 @@ PowerApps 应用可以包含可以为用户提供有用业务信息的报表。 
 ## <a name="related-topics"></a>相关主题
 [使用报表](/powerapps/user/work-with-reports)<br/>
 [使用报表向导创建报表](/powerapps/user/create-report-with-wizard)<br/>
-[从 PowerApps 外部添加报表](/powerapps/user/add-existing-report)<br/>
+[从 Power Apps 外部添加报表](/powerapps/user/add-existing-report)<br/>
 [编辑报表的默认筛选器](/powerapps/user/edit-report-filter)<br/>
 [对报表进行故障排除](/powerapps/user/troubleshoot-reports)

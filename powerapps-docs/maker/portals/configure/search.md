@@ -1,5 +1,5 @@
 ---
-title: PowerApps 门户中的全局搜索 | MicrosoftDocs
+title: Power Apps 门户中的全局搜索 | MicrosoftDocs
 description: 了解全局搜索如何在门户中工作。
 author: sbmjais
 manager: shujoshi
@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: da142a452e903b890b1b395262771228e245140c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 71a06d24e628ddae508af031aa80b8a08b380905
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760132"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866695"
 ---
 # <a name="search"></a>Search
 
-在 PowerApps 门户中，可通过使用门户的全局搜索功能在多个实体中搜索记录。 您也可以使用实体列表搜索功能在实体列表记录中搜索。 
+在 Power Apps 门户中，可通过使用门户的全局搜索功能在多个实体中搜索记录。 您也可以使用实体列表搜索功能在实体列表记录中搜索。 
 
 门户中的实体列表搜索功能在后端使用 FetchXML 搜索在实体列表中定义的列，然后显示结果。 
 
@@ -36,7 +36,7 @@ ms.locfileid: "2760132"
 
 在全局搜索中，匹配程度越高，在结果中显示的位置越高。 在接近的彼此亲缘关系中找到的搜索词中的单词越多，匹配项的相关性越高。 找到搜索单词的文本量越小，相关性越高。 例如，如果在公司名和地址中找到了搜索词，则比在大型文章中找到的彼此距离遥远的相同单词的匹配情况更好。 由于结果通过单个列表返回，您可能会看到记录逐一混合显示，并突出显示匹配的工作。 
 
-以下部分详细介绍全局搜索在 PowerApps 门户中的搜索方式，并介绍各个可用配置选项。
+以下部分详细介绍全局搜索在 Power Apps 门户中的搜索方式，并介绍各个可用配置选项。
 
 ## <a name="entities-searchable-in-portal-global-search"></a>在门户全局搜索中可搜索的实体
 
@@ -188,7 +188,7 @@ Search/IndexQueryName 的默认值为“门户搜索”。
 
 ## <a name="update-search-index"></a>更新搜索索引
 
-PowerApps 门户中的搜索索引更新与缓存无效一样自动发生。 请记住这些重要事项：
+Power Apps 门户中的搜索索引更新与缓存无效一样自动发生。 请记住这些重要事项：
 
 - 启用所有搜索的实体必须启用“更改通知”元数据标志，否则不会有更改被通知到门户，搜索索引将不会更新。
 

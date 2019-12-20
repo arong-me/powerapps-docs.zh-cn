@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e1b89a4f87938ac0147a6724e27441517728baef
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 746f3b1677df7eb89ce35ef1161a291bfdb7d2be
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757828"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865859"
 ---
 # <a name="create-and-edit-global-option-sets-overview"></a>创建和编辑全局选项集概述 
 
@@ -43,7 +43,7 @@ ms.locfileid: "2757828"
 
 |设计器| 说明|
 |--|--|
-|[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[创建选项集](custom-picklists.md) |
+|[Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[创建选项集](custom-picklists.md) |
 |解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。 <br />详细信息：[使用解决方案资源管理器为 Common Data Service 创建和编辑全局选项集](create-edit-global-option-sets-solution-explorer.md) |
 
 > [!NOTE]
@@ -53,7 +53,7 @@ ms.locfileid: "2757828"
 
 本主题中的信息将帮助您选择可以使用的设计器。 
 
-您应该使用 [PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)来处理全局选项集，除非您需要满足以下任何要求：
+您应该使用 [Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)来处理全局选项集，除非您需要满足以下任何要求：
 
 - 向选项分配颜色
 - 更改选项的顺序

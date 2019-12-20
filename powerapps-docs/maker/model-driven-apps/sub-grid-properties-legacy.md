@@ -1,5 +1,5 @@
 ---
-title: PowerApps 中模型驱动应用主窗体的子网格属性 | MicrosoftDocs
+title: Power Apps 中模型驱动应用主窗体的子网格属性 | MicrosoftDocs
 description: 了解主窗体的子网格属性
 Keywords: 主窗体; 子网格属性; Dynamics 365
 author: Mattp123
@@ -18,19 +18,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a6bb86fde69554808f8cbf75f0366dc49ea485f4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ff9b79565525cee42eedfcd48c59669c4fe277d8
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759676"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872813"
 ---
 # <a name="sub-grid-properties-for-model-driven-app-main-forms-overview"></a>模型驱动应用程序主窗体的子网格属性概述
 
 可以配置窗体上的子网格以显示记录列表或图表。 在**显示**选项卡上选择**仅显示图表** 可显示图表，而不显示列表。  
 
-您可以从 PowerApps 站点访问**子网格属性**。 
-1.  在 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的左下方）。  
+您可以从 Power Apps 站点访问**子网格属性**。 
+1.  在 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的左下方）。  
 
      ![模型驱动设计模式](media/model-driven-switch.png)
 

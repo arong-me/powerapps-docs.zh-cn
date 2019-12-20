@@ -1,8 +1,8 @@
 ---
-title: 在 PowerApps 的列表视图中在值旁边显示自定义图标 | MicrosoftDocs
+title: 在 Power Apps 的列表视图中在值旁边显示自定义图标 | MicrosoftDocs
 description: 了解如何在视图中显示自定义图标图形
 ms.custom: ''
-ms.date: 02/14/2019
+ms.date: 11/20/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,36 +22,37 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e1facad3d5d6cb95e0441800f4d743d429f50787
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5a8eec0d7079b748b5b70c623c794b403b399ea2
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705479"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861059"
 ---
 # <a name="display-custom-icons-alongside-values-in-list-views"></a>在列表视图中在值旁边显示自定义图标
 
 <a name="GridIcons"></a>   
 
- PowerApps 环境管理员和定制员可以将图形添加到视图，并使用 JavaScript 建立用于基于列值选择图形的逻辑。 此功能让您可以自定义在文本旁边显示图标或数字值的列表视图。 
+ Power Apps 环境管理员和定制员可以将图形添加到视图，并使用 JavaScript 建立用于基于列值选择图形的逻辑。 此功能让您可以自定义在文本旁边显示图标或数字值的列表视图。 
+
+此示例显示商机实体的视图中的自定义图标，特定应用（如 Dynamics 365 Sales）支持该实体。 可在具有其他标准实体（如客户实体或联系人实体和自定义实体）的视图中显示自定义图标。 
 
 > [!div class="mx-imgBorder"] 
 > ![](media/icon-in-opportunity-view.png "All Opportunities view with Rating column displaying icons and text value")
   
-> [!NOTE]
->  网格图标仅在 Web 界面中显示。 不在 [!INCLUDE[pn_Outlook_short](../../includes/pn-outlook-short.md)] 或移动应用中显示。  
+列表视图中的自定义图标可以在统一接口、旧 Web 客户端、移动应用和 App for Outlook 中显示。 
   
-### <a name="add-custom-graphics-and-javascript-as-web-resources"></a>将自定义图形和 JavaScript 添加为 Web 资源  
+## <a name="add-custom-graphics-and-javascript-as-web-resources"></a>将自定义图形和 JavaScript 添加为 Web 资源  
   
 1.  创建自定义所需新图形文件。 我们建议图标大小为 16x16 像素（将缩小更大的图像）。  
   
-2.  编写一个或多个 JavaScript 函数，用于指定为哪些值显示哪些图标（要自定义的每个列通常需要一个函数）。 每个函数必须接受一个行数据对象和一个语言 (LCID) 代码充当输入，并返回包含图像名称和工具提示文本的任何数组。 有关示例函数，请参阅本主题中后文的[示例 JavaScript 函数](#SampleJavascript)。  
+2.  编写一个或多个 JavaScript 函数，用于指定为哪些值显示哪些图标（要自定义的每个列通常需要一个函数）。 每个函数必须接受一个行数据对象和一个语言 (LCID) 代码充当输入，并返回包含图像名称和工具提示文本的任何数组。 有关示例函数，请参阅本文中后文的[示例 JavaScript 函数](#SampleJavascript)。  
   
-3.  作为管理员登录到您的环境并打开解决方案资源管理器。  
+3.  作为管理员登录到您的环境并打开[解决方案资源管理器](../model-driven-apps/advanced-navigation.md#solution-explorer)。  
   
 4.  将打开**默认解决方案**弹出窗口。 此处导航到**组件** > **Web 资源**。  
   
-5.  现在您将上传自定义图形充当 Web 资源，一次一个。 选择工具栏中的**新建**按钮创建新 Web 资源。 将再打开一个弹出窗口，帮助您创建资源。 请执行以下操作：  
+5.  现在您将上传自定义图形充当 Web 资源，一次一个。 选择工具栏中的**新建**按钮创建新 Web 资源。 将再打开一个弹出窗口，帮助您创建资源。 请按照以下步骤进行操作：  
   
     1.  为新资源提供有意义的**名称**。 这是将用于从 JavaScript 代码引用各图形的名称。  
   
@@ -162,7 +163,27 @@ function displayIconTooltip(rowData, userLCID) {
   
  <!-- This results in displaying icons with tooltips in the **Rating** column that depend on the value in each row. The result could look like this:  
   
- ![Custom column graphics example](../customize/media/custom-column-graphics-example.png "Custom column graphics example")  -->
+ ![Custom column graphics example](../customize/media/custom-column-graphics-example.png "Custom column graphics example")  --> 
+
+## <a name="custom-icon-view-display-behavior"></a>自定义图标视图显示行为
+### <a name="primary-fields"></a>主字段 
+在网格列表视图中，为实体主字段应用的自定义图标取代了系统生成的默认图标。 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/mobile-primary-field-custom-icon-display.png "Primary field replaces default icon in the custom icon view")
+
+### <a name="other-fields"></a>其他字段 
+在网格列表视图中，为非实体主字段应用的自定义图标显示为除系统生成的默认图标之外的辅助图标。 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/card-form-not-primary-field.png "Not an entity primary field custom icon view")
+
+### <a name="card-forms"></a>卡窗体
+当视图配置为使用卡窗体时，自定义图标取代系统生成的默认图标。 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/card-view-icon-display.png "Card view custom icon view")
+
  
  ### <a name="see-also"></a>另请参阅
 [了解模型驱动应用程序视图](../model-driven-apps/create-edit-views.md)

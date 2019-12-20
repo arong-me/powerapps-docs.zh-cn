@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ecb0731d3cbba030f3b819e2b2744cb6a7b29c20
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 07a6d262aeaba818d5a965409ce28a90934536c3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706887"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861283"
 ---
 # <a name="create-and-edit-virtual-entities-that-contain-data-from-an-external-data-source"></a>创建和编辑包含来自外部数据源的数据的虚拟实体
 
@@ -48,7 +48,7 @@ Common Data Service 中包含 OData 数据提供程序，可用于连接 OData v
 ## <a name="virtual-entity-benefits"></a>虚拟实体的优点  
   
 - 开发人员可以实施插件以使用 Common Data Service Web 服务和插件注册工具读取外部数据。  
-- 系统定制员可使用 PowerApps 解决方案资源管理器配置数据源记录和创建虚拟实体，用于在不编写任何代码的情况下访问外部数据。  
+- 系统定制员可使用 Power Apps 解决方案资源管理器配置数据源记录和创建虚拟实体，用于在不编写任何代码的情况下访问外部数据。  
 - 最终用户使用虚拟实体创建的记录来查看字段、网格、搜索结果以及基于 Fetch XML 的报告和仪表板中的数据。  
   
 <a name="AddDataSource"></a> 

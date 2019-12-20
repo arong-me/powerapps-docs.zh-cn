@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中配置模型驱动应用程序主窗体的事件处理程序 | MicrosoftDocs
+title: 在 Power Apps 中配置模型驱动应用程序主窗体的事件处理程序 | MicrosoftDocs
 description: 了解如何配置事件处理程序
 author: Mattp123
 ms.author: matp
@@ -13,16 +13,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4a824183a3d208131754289984aeaa8377d4a352
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 385255d46ad358a8b33385e9e1495bd310cb1cb4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701123"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863621"
 ---
 # <a name="configure-model-driven-app-form-event-handlers"></a>配置模型驱动应用程序窗体的事件处理程序
 
- 可以为窗体中的以下区域配置 PowerApps 窗体的事件处理程序。  
+ 可以为窗体中的以下区域配置 Power Apps 窗体的事件处理程序。  
   
 |元素|事件|说明|  
 |-------------|-----------|-----------------|  

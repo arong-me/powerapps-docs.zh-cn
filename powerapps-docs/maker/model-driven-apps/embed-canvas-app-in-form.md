@@ -16,18 +16,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1d763fd341c3537f908720ea9616b1646bda1745
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4a2f17995d92d09ad025d643589f5993041a2f96
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2704819"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884797"
 ---
 # <a name="embed-a-canvas-app-on-a-model-driven-form"></a>在模型驱动的窗体上嵌入区域应用
 
@@ -45,9 +45,9 @@ ms.locfileid: "2704819"
 有关使用嵌入式区域应用的指南和有助于诊断可能遇到的任何问题的提示，请参阅：[嵌入式区域应用使用指南](embedded-canvas-app-guidelines.md)。
 
 ## <a name="see-also"></a>另请参阅
-[PowerApps 中的画布应用是什么？](../canvas-apps/getting-started.md) <br />
-[在 PowerApps 中添加和配置区域应用控件](../canvas-apps/add-configure-controls.md) <br />
-[适用于 PowerApps 的区域应用连接器概述](../canvas-apps/connections-list.md) <br />
+[Power Apps 中的画布应用是什么？](../canvas-apps/getting-started.md) <br />
+[在 Power Apps 中添加和配置区域应用控件](../canvas-apps/add-configure-controls.md) <br />
+[适用于 Power Apps 的区域应用连接器概述](../canvas-apps/connections-list.md) <br />
 [在模型驱动窗体上添加嵌入式区域应用](embedded-canvas-app-add-classic-designer.md) <br />
 [编辑在模型驱动窗体上嵌入的区域应用](embedded-canvas-app-edit-classic-designer.md) <br />
 [自定义在模型驱动窗体上嵌入的区域应用的屏幕尺寸和方向](embedded-canvas-app-customize-screen.md) <br />

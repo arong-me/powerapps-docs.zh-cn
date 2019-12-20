@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 应用程序设计器中管理模型驱动应用程序的属性 | MicrosoftDocs
+title: 在 Power Apps 应用程序设计器中管理模型驱动应用程序的属性 | MicrosoftDocs
 description: 了解如何管理您应用的属性
 keywords: ''
 ms.date: 02/05/2019
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a4f28dd878ca2e862a99982564066eefacfb7892
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a2f0dc0130e8a698a4407d90f3f1ce51c9873c31
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701871"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860047"
 ---
 # <a name="manage-model-driven-app-properties-in-the-app-designer"></a>在应用程序设计器中管理模型驱动应用程序的属性
 

@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中创建或编辑模型驱动应用视图 | MicrosoftDocs
+title: 在 Power Apps 中创建或编辑模型驱动应用视图 | MicrosoftDocs
 description: 了解如何创建或编辑视图
 ms.custom: ''
 ms.date: 06/11/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7a83134fb655e67dba8b0aa211ba6f25ec383832
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 68d295e6c5426296cf4fb77e794b7c6edbf37021
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759324"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875562"
 ---
 # <a name="create-or-edit-a-model-driven-app-view"></a>创建或编辑模型驱动应用程序视图
 
@@ -37,7 +37,7 @@ ms.locfileid: "2759324"
   
 ### <a name="create-a-new-view"></a>创建新视图  
   
-1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
     
 
@@ -65,11 +65,11 @@ ms.locfileid: "2759324"
 
 7.  选择**确定**关闭**编辑筛选条件**对话框，然后在视图编辑器中选择**保存并关闭**。  
   
-8.  请注意，您的视图现在已在 PowerApps 站点的**视图**选项卡上提供，这让它可以添加到应用。
+8.  请注意，您的视图现在已在 Power Apps 站点的**视图**选项卡上提供，这让它可以添加到应用。
   
 ### <a name="edit-a-view"></a>编辑视图  
   
-1.  从 PowerApps 站点的**视图**选项卡，选择**员工人数**视图。
+1.  从 Power Apps 站点的**视图**选项卡，选择**员工人数**视图。
   
 2.  将视图的**名称**更改为**在亚利桑那有 25 名或更多员工人数**，然后选择**确定**。  
 

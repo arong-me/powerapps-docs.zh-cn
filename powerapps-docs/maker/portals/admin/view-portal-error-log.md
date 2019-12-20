@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 7989c15b0c5c4cf50d4b55f518244758afc067e1
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ced53e6b3eb30668d81aca0f385f4ebd841f02fa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756640"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862476"
 ---
 # <a name="view-portal-error-logs"></a>查看门户错误日志
 
-门户管理员或开发者可以使用 PowerApps 门户为客户创建网站。 开发人员的一项常见任务是调试门户开发问题。 若要帮助调试，您可以访问详细的错误日志以了解门户的任何问题。 可通过多种方式获取门户的错误日志。
+门户管理员或开发者可以使用 Power Apps 门户为客户创建网站。 开发人员的一项常见任务是调试门户开发问题。 若要帮助调试，您可以访问详细的错误日志以了解门户的任何问题。 可通过多种方式获取门户的错误日志。
 
 ## <a name="custom-error"></a>自定义错误
 
@@ -40,7 +40,7 @@ ms.locfileid: "2756640"
 
 可在门户中禁用自定义错误，以便门户中发生任何服务器端异常时显示详细的异常消息。
 
-1. 打开 [PowerApps 门户管理中心](admin-overview.md)。
+1. 打开 [Power Apps 门户管理中心](admin-overview.md)。
 
 2. 转到**门户操作** > **禁用自定义错误**。
 
@@ -53,7 +53,7 @@ ms.locfileid: "2756640"
 
 可在门户中启用自定义错误，以便显示外观专业的页面，而不是 YSOD。 如果应用程序中发生任何异常，此页面都将提供有意义的信息。
 
-1. 打开 [PowerApps 门户管理中心](admin-overview.md)。
+1. 打开 [Power Apps 门户管理中心](admin-overview.md)。
 
 2. 转到**门户操作** > **启用自定义错误**。
 
@@ -94,14 +94,14 @@ ms.locfileid: "2756640"
 
 ## <a name="access-portal-error-logs"></a>访问门户错误日志
 
-开发和发布门户后，仍然需要可以访问门户日志，以便调试客户报告的调试问题。 若要访问日志，可以配置门户以将任何应用程序错误发送到您负责的 Azure Blob 存储帐户中。 通过访问门户错误日志，可高效响应客户查询，因为您了解问题的详细信息。 若要将门户日志存储到 Azure Blob 存储中，必须从 PowerApps 门户管理中心启用诊断日志记录。
+开发和发布门户后，仍然需要可以访问门户日志，以便调试客户报告的调试问题。 若要访问日志，可以配置门户以将任何应用程序错误发送到您负责的 Azure Blob 存储帐户中。 通过访问门户错误日志，可高效响应客户查询，因为您了解问题的详细信息。 若要将门户日志存储到 Azure Blob 存储中，必须从 Power Apps 门户管理中心启用诊断日志记录。
 
 > [!NOTE]
 > 如果更改门户相连的 Common Data Service 实例，将禁用诊断日志记录。 必须再次启用诊断日志记录。
 
 ### <a name="enable-diagnostic-logging"></a>启用诊断日志记录
 
-1. 打开 [PowerApps 门户管理中心](admin-overview.md)。
+1. 打开 [Power Apps 门户管理中心](admin-overview.md)。
 
 2. 转到**门户操作** > **启用诊断日志记录**。
 
@@ -138,7 +138,7 @@ ms.locfileid: "2756640"
  
 ### <a name="update-diagnostic-logging"></a>更新诊断日志记录
 
-1. 打开 [PowerApps 门户管理中心](admin-overview.md)。
+1. 打开 [Power Apps 门户管理中心](admin-overview.md)。
 
 2. 转到**门户操作** > **更新诊断日志记录配置**。
 
@@ -166,7 +166,7 @@ ms.locfileid: "2756640"
 
 ### <a name="disable-diagnostic-logging"></a>禁用诊断日志记录
 
-1. 打开 [PowerApps 门户管理中心](admin-overview.md)。
+1. 打开 [Power Apps 门户管理中心](admin-overview.md)。
 
 2. 转到**门户操作** > **禁用诊断日志记录**。
 

@@ -13,29 +13,29 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cd722c29bfc850cb1b55c296b4e377e14678b3ad
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5672922d04ae8ea4342139ef9179c7a871fd5ea6
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703499"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861191"
 ---
 # <a name="restricted-entities-requiring-dynamics-365-licenses"></a>需要 Dynamics 365 许可证的受限实体
 
 > [!IMPORTANT]
-> 本主题已过期，将很快更新以反映自 2019 年 10 月 1 日起适用的最新许可变化。 有关实体许可要求的最新信息，请参阅 [PowerApps 许可指南](https://go.microsoft.com/fwlink/?linkid=2085130)。
+> 本主题已过期，将很快更新以反映自 2019 年 10 月 1 日起适用的最新许可变化。 有关实体许可要求的最新信息，请参阅 [Power Apps 许可指南](https://go.microsoft.com/fwlink/?linkid=2085130)。
 
-应用开发者可以使用 Common Data Service 内提供的大多数实体来为只有 PowerApps 计划 1 许可证的用户创建应用和流。 不过，有些实体包含需要应用用户有 PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证的复杂业务逻辑（有关详细信息，请参阅[实体的许可证要求](data-platform-entity-licenses.md)）。 如果需要创建、更新或删除实体内的记录，即使更小的绑定到 Dynamics 365 产品的一组实体也需要画布和模型驱动应用程序用户具有相应 Dynamics 365 产品的许可证。 这些实体称为*受限*实体。
+应用开发者可以使用 Common Data Service 内提供的大多数实体来为只有 Power Apps 计划 1 许可证的用户创建应用和流。 不过，有些实体包含需要应用用户有 Power Apps 计划 2 或 Power Automate 计划 2 许可证的复杂业务逻辑（有关详细信息，请参阅[实体的许可证要求](data-platform-entity-licenses.md)）。 如果需要创建、更新或删除实体内的记录，即使更小的绑定到 Dynamics 365 产品的一组实体也需要画布和模型驱动应用程序用户具有相应 Dynamics 365 产品的许可证。 这些实体称为*受限*实体。
 
 实体可能由于下列原因被限制，需要有 Dynamics 365 许可证：
 
 * 此实体用于存储和维护通常不在应用程序之外使用的产品特定配置数据。
 * 实体由高级逻辑附带，高级逻辑在用于 Dynamics 365 产品中时以特定方式创建和维护数据。
 
-如果应用或流只读取实体的信息，不需要 Dynamics 365 许可证，只需要适当的 PowerApps 或 Microsoft Flow 许可证。 
+如果应用或流只读取实体的信息，不需要 Dynamics 365 许可证，只需要适当的 Power Apps 或 Power Automate 许可证。 
 
 ## <a name="restricted-entities-for-create-update-and-delete-operations"></a>用于创建、更新和删除操作的受限实体
-下表列出了受限实体以及创建、更新或删除实体内所存储数据的 PowerApps 和 Microsoft Flow 应用用户的关联的 Dynamics 365 许可要求。 
+下表列出了受限实体以及创建、更新或删除实体内所存储数据的 Power Apps 和 Power Automate 应用用户的关联的 Dynamics 365 许可要求。 
 
 |实体  |逻辑名称  |必需许可证  |
 |---------|---------|---------|
@@ -82,5 +82,5 @@ SLA| sla | Dynamics 365 for Customer Service Enterprise edition <br>**或** Dyna
 工作订单详细信息生成队列（已弃用）|msdyn_workorderdetailsgenerationqueue |Dynamics 365 for Field Service<br>**或** Dynamics 365 Customer Engagement 计划 <br> **或** Dynamics 365 计划
 
 ## <a name="licensing"></a>许可
-有关 PowerApps 和 Dynamics 365 许可证的详细信息，请参阅[许可概述](../../administrator/pricing-billing-skus.md)页面。
+有关 Power Apps 和 Dynamics 365 许可证的详细信息，请参阅[许可概述](../../administrator/pricing-billing-skus.md)页面。
 

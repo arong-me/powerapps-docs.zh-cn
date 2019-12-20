@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 19dca44c26565bc55dcfaace48987b69dd0a195f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 6f37959db1296995abe08e85995750796a93da9c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759544"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866915"
 ---
 # <a name="configure-site-settings-for-portals"></a>配置门户的网站设置
 
 网站设置是网站代码用于修改门户的行为或视觉样式的可配置命名值。 通常，当开发人员创建网站代码时，他们将引用不同组件的网站设置才能让最终用户修改设置值以修改网站，而无需更改代码、重新编译和重新部署该网站。
 
-PowerApps 门户安装程序随附的示例门户包含几种针对各种样式的可配置网站设置，可用于修改网站内许多可视元素（例如，背景样式、文本颜色和布局宽度）。
+Power Apps 门户安装程序随附的示例门户包含几种针对各种样式的可配置网站设置，可用于修改网站内许多可视元素（例如，背景样式、文本颜色和布局宽度）。
 您可以管理下列类型的站点设置：
 
 - **全局门户设置**：这些设置应用于与添加门户的 Common Data Service 环境关联的所有门户。

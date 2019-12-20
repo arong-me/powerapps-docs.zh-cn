@@ -19,18 +19,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5fce8b9f693d56cd5f0955779152dbd7d8100378
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 060d749fe3f8c7f3d2e0870b99a836571c29bd86
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757872"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865903"
 ---
 # <a name="create-and-edit-global-option-sets-for-common-data-service-using-solution-explorer"></a>使用解决方案资源管理器为 Common Data Service 创建和编辑全局选项集
 
 解决方案资源管理器为创建和编辑 Common Data Service 的全局选项集提供一种方法。
 
-[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 <br />详细信息： 
+[Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 <br />详细信息： 
 - [创建和编辑 Common Data Service 的全局选项集](create-edit-global-option-sets.md)
 - [创建选项集](custom-picklists.md)
 

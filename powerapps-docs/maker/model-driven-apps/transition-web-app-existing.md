@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e39cb11b9883e93d341232bcdcbb43dc17fa491a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 75175b34b158be75165c6bcdae5826060fb47f38
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759764"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884329"
 ---
 # <a name="quick-start-for-using-an-existing-environment-to-validate-your-legacy-web-client-app-with-the-unified-interface"></a>使用现有环境和统一接口验证旧 Web 客户端应用入门指南
 本快速入门指南介绍如何使用现有环境创建基于当前配置或默认解决方案的统一接口应用程序。 这样就可以在运行现有旧 Web 客户端应用程序的同时，探索和测试统一接口。 然后，用户可以在环境之间切换，以便进行并排查看。 
@@ -65,7 +65,7 @@ ms.locfileid: "2759764"
 如果当前已按照[从 Dynamics 365 旧 Web 客户端应用程序转换到统一接口的快速入门指南](transition-web-app.md)主题中的说明在开发环境中将**仅使用统一接口**模式切换为**开**，则必须将此设置切换回**关**，这样才能运行现有旧 Web 客户端应用程序。
 
 ### <a name="create-a-new-solution-thats-based-on-the-default-solution"></a>创建基于默认解决方案的新解决方案
-1. 登录 [PowerApps 开发者门户](https://make.powerapps.com)。   
+1. 登录 [Power Apps 开发者门户](https://make.powerapps.com)。   
 2. 从环境列表中选择所需环境。  
 3. 在左侧导航窗格中，选择**解决方案**。 
 4. 在菜单栏上，选择**新建解决方案**。 
@@ -98,7 +98,7 @@ ms.locfileid: "2759764"
 > [!div class="mx-imgBorder"] 
 > ![新统一接口应用](media/new-unified-interface-app.png "新统一接口应用")
 
-请注意，当您回到包含 PowerApps 开发者门户**解决方案**区域的浏览器选项卡中时，您会发现您创建的解决方案中同时包含您的新模型驱动应用程序和名称类似的站点地图客户端扩展。  
+请注意，当您回到包含 Power Apps 开发者门户**解决方案**区域的浏览器选项卡中时，您会发现您创建的解决方案中同时包含您的新模型驱动应用程序和名称类似的站点地图客户端扩展。  
 
 > [!div class="mx-imgBorder"] 
 > ![解决方案资产](media/solution-assets.png "解决方案资产")
@@ -158,7 +158,7 @@ ms.locfileid: "2759764"
 > Dynamics 365 中的 Common Data Service 和模型驱动应用程序的当前版本中仍然包含若干已弃用功能。 您应检查您的应用程序中是否有任何已弃用功能，并根据需要替换为新功能。 详细信息：[即将做出的重要更改（弃用）](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming)
 
 > [!TIP]
-> PowerApps 检查器工具可帮助对解决方案的组件进行质量检查。  详细信息：[在 PowerApps 中使用解决方案检查器验证模型驱动应用程序](../common-data-service/use-powerapps-checker.md)
+> Power Apps 检查器工具可帮助对解决方案的组件进行质量检查。  详细信息：[在 Power Apps 中使用解决方案检查器验证模型驱动应用程序](../common-data-service/use-powerapps-checker.md)
 
 ## <a name="next-steps"></a>后续步骤
 您的实施团队或合作伙伴可以根据您的发现预估将您的应用程序转换为统一接口所需工作量，以及识别潜在的可用性改进。 由于统一接口中有多项新特性和功能，所以有机会提升对应用程序用户的价值。 
@@ -171,9 +171,9 @@ ms.locfileid: "2759764"
 [统一接口 Playbook](unified-interface-playbook.md) <br />
 [实现用户体验和统一接口转换](approaching-unified-interface.md) <br />
 [关于统一接口](/dynamics365/customer-engagement/admin/about-unified-interface) <br />
-[PowerApps 中的模型驱动应用程序是什么？](model-driven-app-overview.md) <br />
+[Power Apps 中的模型驱动应用程序是什么？](model-driven-app-overview.md) <br />
 [将您的应用程序更新为统一接口](/dynamics365/customer-engagement/admin/update-apps-to-unified-interface) <br />
 [配置模型驱动应用程序的交互式体验仪表板](configure-interactive-experience-dashboards.md) <br />
 [使用自定义控件实现模型驱动应用程序的数据可视化](use-custom-controls-data-visualizations.md) <br />
-[PowerApps component framework 概述](/powerapps/developer/component-framework/overview) <br />
+[Power Apps component framework 概述](/powerapps/developer/component-framework/overview) <br />
 [适用于所有人的统一接口](/power-platform-release-plan/2019wave2/microsoft-powerapps/unified-interface-app-everybody)

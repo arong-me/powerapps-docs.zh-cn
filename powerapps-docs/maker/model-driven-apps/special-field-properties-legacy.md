@@ -1,5 +1,5 @@
 ---
-title: PowerApps 中模型驱动应用主窗体的特殊字段属性 | MicrosoftDocs
+title: Power Apps 中模型驱动应用主窗体的特殊字段属性 | MicrosoftDocs
 description: 了解主窗体的特殊字段属性
 Keywords: 主窗体; 特殊字段属性; Dynamics 365
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ad0fbb1208e612ba43d0a8c074ac62fab0000c2f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c98cc09bc0b7e9754af44e6602c35f4e32b382c3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711023"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865082"
 ---
 # <a name="overview-of-model-driven-app-special-field-properties"></a>模型驱动应用程序特殊字段属性概述
 

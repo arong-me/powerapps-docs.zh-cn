@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 0bedeae7952f5ec11394b680064af9016ae2b82e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a6affbb0d13af137ddd044a7ae4b6d2cddbf813c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756596"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862432"
 ---
 # <a name="compose-a-page"></a>撰写页面
 
@@ -33,11 +33,11 @@ ms.locfileid: "2756596"
     - 痕迹导航
 
 > [!NOTE]
-> 如果使用 PowerApps 门户 Studio 自定义门户，则网站用户会注意到性能影响。 我们建议您在非高峰时间在活动门户上进行更改。 
+> 如果使用 Power Apps 门户 Studio 自定义门户，则网站用户会注意到性能影响。 我们建议您在非高峰时间在活动门户上进行更改。 
 
 ## <a name="use-the-wysiwyg-editor"></a>使用 WYSIWYG 编辑器
 
-1.  [编辑门户](manage-existing-portals.md#edit)以在 PowerApps 门户 Studio 中打开它。  
+1.  [编辑门户](manage-existing-portals.md#edit)以在 Power Apps 门户 Studio 中打开它。  
 
 2.  选择要在其上添加组件的页面。
 
@@ -64,7 +64,7 @@ ms.locfileid: "2756596"
 
 分区允许您定义页面的结构并相应地安排门户组件。 将分区添加到页面后，您可以根据需要在分区内添加门户组件。
 
-1.  [编辑门户](manage-existing-portals.md#edit)以在 PowerApps 门户 Studio 中打开它。
+1.  [编辑门户](manage-existing-portals.md#edit)以在 Power Apps 门户 Studio 中打开它。
 
 2.  选择要在其中添加分区的页面。
 
@@ -115,7 +115,7 @@ ms.locfileid: "2756596"
 
 ### <a name="add-text-box"></a>添加文本框
 
-1.  [编辑门户](manage-existing-portals.md#edit)以在 PowerApps 门户 Studio 中打开它。  
+1.  [编辑门户](manage-existing-portals.md#edit)以在 Power Apps 门户 Studio 中打开它。  
 
 2.  选择要在其上添加组件的页面。
 
@@ -144,7 +144,7 @@ ms.locfileid: "2756596"
 
 ### <a name="add-image"></a>添加图像
 
-1.  [编辑门户](manage-existing-portals.md#edit)以在 PowerApps 门户 Studio 中打开它。  
+1.  [编辑门户](manage-existing-portals.md#edit)以在 Power Apps 门户 Studio 中打开它。  
 
 2.  选择要在其上添加组件的页面。
 
@@ -181,7 +181,7 @@ ms.locfileid: "2756596"
 
 ### <a name="add-iframe"></a>添加 IFrame
 
-1.  [编辑门户](manage-existing-portals.md#edit)以在 PowerApps 门户 Studio 中打开它。  
+1.  [编辑门户](manage-existing-portals.md#edit)以在 Power Apps 门户 Studio 中打开它。  
 
 2.  选择要在其上添加组件的页面。
 
@@ -209,7 +209,7 @@ ms.locfileid: "2756596"
 
 窗体是一项数据驱动配置，您可以用它来添加窗体以在门户中收集数据，而无需开发人员在门户中呈现窗体。 [窗体在 Common Data Service 中创建](https://docs.microsoft.com/powerapps/maker/model-driven-apps/form-designer-overview)，您可以在门户的网页中使用它们，或将它们与列表共同用于构建完整的 Web 应用程序。  
 
-1.  [编辑门户](manage-existing-portals.md#edit)以在 PowerApps 门户 Studio 中打开它。  
+1.  [编辑门户](manage-existing-portals.md#edit)以在 Power Apps 门户 Studio 中打开它。  
 
 2.  选择要在其上添加组件的页面。
 
@@ -264,7 +264,7 @@ ms.locfileid: "2756596"
 
 列表是数据驱动型配置，用于添加呈现记录列表的网页，而无需开发人员在门户中显示网格。 列表使用 [Common Data Service 视图](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-and-edit-views)在门户上显示记录。  
 
-1.  [编辑门户](manage-existing-portals.md#edit)以在 PowerApps 门户 Studio 中打开它。  
+1.  [编辑门户](manage-existing-portals.md#edit)以在 Power Apps 门户 Studio 中打开它。  
 
 2.  选择要在其上添加组件的页面。
 
@@ -308,7 +308,7 @@ ms.locfileid: "2756596"
 
 ### <a name="add-breadcrumb"></a>添加痕迹导航
 
-1.  [编辑门户](manage-existing-portals.md#edit)以在 PowerApps 门户 Studio 中打开它。  
+1.  [编辑门户](manage-existing-portals.md#edit)以在 Power Apps 门户 Studio 中打开它。  
 
 2.  选择要在其上添加组件的页面。
 
@@ -324,7 +324,7 @@ ms.locfileid: "2756596"
 
 创建 Web 链接集后：
 
-1.  [编辑门户](manage-existing-portals.md#edit)以在 PowerApps 门户 Studio 中打开它。
+1.  [编辑门户](manage-existing-portals.md#edit)以在 Power Apps 门户 Studio 中打开它。
 
 2.  选择页眉组件。 
 

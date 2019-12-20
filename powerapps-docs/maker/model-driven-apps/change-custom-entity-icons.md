@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中更改模型驱动应用程序的自定义实体图标 | MicrosoftDocs
+title: 在 Power Apps 中更改模型驱动应用程序的自定义实体图标 | MicrosoftDocs
 definition: Learn how to change the icon for a custom entity
 ms.custom: ''
 ms.date: 05/17/2018
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f7e23ece0ee37d15ef5401421d078e81dd5d590c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7d45a3fc5afae25f2a4e254c033f4e35be20c0ff
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700771"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869247"
 ---
 # <a name="change-model-driven-app-custom-entity-icons"></a>更改模型驱动应用程序的自定义实体图标 
 
@@ -69,7 +69,7 @@ ms.locfileid: "2700771"
   
 ## <a name="community-tools"></a>社区工具
 
-**[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)** 是一款 XrmToolbox 社区为 PowerApps 开发的工具。 请参阅 [Common Data Service 的开发人员工具](/powerapps/developer/common-data-service/developer-tools)主题了解社区开发的工具。
+**[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)** 是一款 XrmToolbox 社区为 Power Apps 开发的工具。 请参阅 [Common Data Service 的开发人员工具](/powerapps/developer/common-data-service/developer-tools)主题了解社区开发的工具。
 
 > [!NOTE]
 > 这些社区工具不是 Microsoft 的产品，因此不能将支持延伸到这些社区工具。 如果有与该工具相关的疑问，请联系发布者。 详细信息：[XrmToolBox](https://www.xrmtoolbox.com)。

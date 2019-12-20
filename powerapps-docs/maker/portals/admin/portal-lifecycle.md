@@ -1,6 +1,6 @@
 ---
-title: 关于 PowerApps 门户生命周期 | MicrosoftDocs
-description: 有关 PowerApps 门户生命周期以及将其从试用转换为生产的信息。
+title: 关于 Power Apps 门户生命周期 | MicrosoftDocs
+description: 有关 Power Apps 门户生命周期以及将其从试用转换为生产的信息。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 5476bb0306b5d9e0767f451fba36a567a70c4c54
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 60300176f0a39258bbb7030c9e30d9b2e7711990
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756772"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874638"
 ---
 # <a name="about-portal-lifecycle"></a>关于门户生命周期
 
@@ -28,13 +28,13 @@ ms.locfileid: "2756772"
 
 ### <a name="trial-portal"></a>试用门户
 
-门户总是作为试用门户创建。 如果您具有必需的许可证，则可以从 PowerApps 门户管理中心将其转换为生产门户。 有关将试用门户转换为生产门户的信息，请参阅[将试用门户转换为生产门户](#convert-a-trial-portal-to-production)。
+门户总是作为试用门户创建。 如果您具有必需的许可证，则可以从 Power Apps 门户管理中心将其转换为生产门户。 有关将试用门户转换为生产门户的信息，请参阅[将试用门户转换为生产门户](#convert-a-trial-portal-to-production)。
 
-要将试用门户转换为生产门户，环境应具有外部用户所需的加载项或内部用户的许可证。 有关许可的详细信息，请参阅 [PowerApps 和 Microsoft Flow 许可常见问题](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq)和 [PowerApps 门户许可](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-powerapps-portals-licensing)。
+要将试用门户转换为生产门户，环境应具有外部用户所需的加载项或内部用户的许可证。 有关许可的详细信息，请参阅 [Power Apps 和 Power Automate 许可常见问题](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq)和 [Power Apps 门户许可](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-power-apps-portals-licensing)。
 
 ### <a name="suspended-portal"></a>暂停的门户
 
-您将继续在 PowerApps 门户管理中心中看到有关试用门户过期的通知。 试用门户将在 30 天后过期。 如果您在试用期内没有将门户转换为生产门户，则该门户将关闭并进入暂停状态。 门户过期后，您将无法访问它。
+您将继续在 Power Apps 门户管理中心中看到有关试用门户过期的通知。 试用门户将在 30 天后过期。 如果您在试用期内没有将门户转换为生产门户，则该门户将关闭并进入暂停状态。 门户过期后，您将无法访问它。
 
 但是，已暂停的门户仍可以在暂停后的 7 天内转换为生产门户。 
 
@@ -44,14 +44,14 @@ ms.locfileid: "2756772"
 
 ## <a name="convert-a-trial-portal-to-production"></a>将试用门户转换为生产门户
 
-您可以从 PowerApps 门户管理中心中显示的通知将试用门户网站转换为生产门户。
+您可以从 Power Apps 门户管理中心中显示的通知将试用门户网站转换为生产门户。
 
 > [!NOTE]
 > 您必须被分配以下角色之一才能将试用门户转换为生产门户：
 > - 全局管理员
 > - 系统管理员
 
-当您打开 [PowerApps 门户管理中心](admin-overview.md)并导航至[门户详细信息](portal-details.md)选项卡时，您会看到有关试用过期的通知显示在**类型**字段下面。
+当您打开 [Power Apps 门户管理中心](admin-overview.md)并导航至[门户详细信息](portal-details.md)选项卡时，您会看到有关试用过期的通知显示在**类型**字段下面。
 
 > [!div class=mx-imgBorder]
 > ![“门户详细信息”选项卡上的试用通知](../media/admin-center-convert-notif.png "“门户详细信息”选项卡上的试用通知")

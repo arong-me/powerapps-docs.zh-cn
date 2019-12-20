@@ -9,23 +9,23 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 26bb1186710bbf0bc3fd40765459638245f3b027
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 077c1fee0c0a7b599516c0553ad190b6a3229dec
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756288"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864642"
 ---
 # <a name="create-and-manage-webpages"></a>创建和管理网页
 
 网页是由网站中的唯一 URL 标识的文档。 它是网站的核心对象之一，通过与其他网页的父子关系建立网站的层次结构。
 
 > [!NOTE]
-> 如果使用 PowerApps 门户 Studio 自定义门户，则网站用户会注意到性能影响。 我们建议您在非高峰时间在活动门户上进行更改。
+> 如果使用 Power Apps 门户 Studio 自定义门户，则网站用户会注意到性能影响。 我们建议您在非高峰时间在活动门户上进行更改。
 
 ## <a name="create-webpage"></a>新建网页
 
-1.  [编辑门户](manage-existing-portals.md#edit)以在 PowerApps 门户 Studio 中打开它。  
+1.  [编辑门户](manage-existing-portals.md#edit)以在 Power Apps 门户 Studio 中打开它。  
 
 2.  在命令栏中，选择**新建页面**，然后从**布局**或**固定布局**中选择一个页面。
 
@@ -66,7 +66,7 @@ ms.locfileid: "2756288"
 
 ## <a name="manage-webpage"></a>管理网页
 
-1.  [编辑门户](manage-existing-portals.md#edit)以在 PowerApps 门户 Studio 中打开它。  
+1.  [编辑门户](manage-existing-portals.md#edit)以在 Power Apps 门户 Studio 中打开它。  
 
 2.  从屏幕左侧的工具栏中选择**页面** ![页面图标](media/pages-icon.png "页面图标")。  
 

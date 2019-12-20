@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/11/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: e53380c39257645e9056a271226b6f7ef8c8c721
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: cc2c7aae9b2329bfa7b24d45049d7cbbab399e28
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709923"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862696"
 ---
 # <a name="maintenance-mode-for-a-portal"></a>门户的维护模式
 
@@ -29,7 +29,7 @@ ms.locfileid: "2709923"
 
 您可以在您的门户上启用维护模式来提供一致的消息，而不是当网站进行计划维护时处理不可预测的行为。 这将为您的门户用户提供更好的体验。
 
-1. 打开 [PowerApps 门户管理中心](admin-overview.md)。
+1. 打开 [Power Apps 门户管理中心](admin-overview.md)。
 
 3. 转到**门户操作** > **启用维护模式**。
 
@@ -45,6 +45,9 @@ ms.locfileid: "2709923"
 
     - **自定义页 URL**：只有当您选择显示自定义 HTML 页面的选项时，此字段才启用。 必须确保您提供的页面 URL 可以公开访问。 如果指定的 HTML 页无法访问，默认页将显示，其中包含为管理员提供的注释。
 
+        > [!NOTE]
+        > 自定义维护页使用 IFrame 显示页面。 因此，页面中不应包含 `x-frame-options:SAMEORIGIN` 响应标头，否则页面将不会加载。
+
 5. 选择**启用**。 在启用维护模式时，将重新启动门户，并且门户有几分钟不可用。 
 
     > [!div class=mx-imgBorder]
@@ -56,7 +59,7 @@ ms.locfileid: "2709923"
 
 当您的网站的计划维护完成时，您还可以选择禁用门户的维护模式。 您的门户用户现在可以照常浏览和访问所有网页。
 
-1. 打开 [PowerApps 门户管理中心](admin-overview.md)。
+1. 打开 [Power Apps 门户管理中心](admin-overview.md)。
 
 2. 转到**门户操作** > **配置或禁用维护模式**。
 

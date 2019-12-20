@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 59ed66842874414737b7bdc04f0f4dfa51d212c8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 9e46f1273d9c599078cbcd814ebe54f6a55701f3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756552"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862388"
 ---
 # <a name="configure-notes-for-entity-forms-and-web-forms-on-portals"></a>为门户上的实体窗体和 Web 窗体配置注释
 
@@ -62,7 +62,7 @@ ms.locfileid: "2756552"
 | 错误消息         | 覆盖在尝试加载注释列表时出现错误时显示的消息。                                                                     |
 | 拒绝访问消息 | 覆盖当用户没有足够的权限查看注释列表时显示的消息。                                                    |
 | 空消息         | 覆盖当当前实体没有任何可以查看的注释时显示的消息。                                                              |
-| 列表顺序           | 您可以设置注释将显示的顺序。 可通过“列表顺序”设置来设置以下内容： <ul><li>属性：您要按其排序的列的逻辑名称</li><li>别名：查询中属性的别名</li><li>方向：升序（最小到最大，或第一个到最后一个），或降序（最大到最小，或最后一个到第一个）。</li></ul> ![设置列表顺序的属性](media/set-attributes-list-orders.png "S设置列表顺序的属性”) 若要添加排序规则，请选择“列”(4) 并填写详细信息。 列表顺序从具有最高优先级的列表顶部开始处理。|
+| 列表顺序           | 您可以设置注释将显示的顺序。 可通过“列表顺序”设置来设置以下内容： <ul><li>属性：您要按其排序的列的逻辑名称</li><li>别名：查询中属性的别名</li><li>方向：升序（最小到最大，或第一个到最后一个），或降序（最大到最小，或最后一个到第一个）。</li></ul>  ![设置列表顺序的属性](media/set-attributes-list-orders.png "Se列表订单的属性") 若要添加排序规则，请选择“列”(4) 并填写详细信息。 列表顺序从具有最高优先级的列表顶部开始处理。|
 ||
 
 

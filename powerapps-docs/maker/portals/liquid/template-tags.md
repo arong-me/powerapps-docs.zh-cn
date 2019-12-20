@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 4475e9e2ccc474a6eeb3e7a2e959b360b3250aa8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 951b4055aa47a6fba31df5473bd517ed67c8f17d
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757036"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873209"
 ---
 # <a name="template-tags"></a>模板标记
 
@@ -22,7 +22,7 @@ ms.locfileid: "2757036"
 
 ## <a name="include"></a>包括
 
-按名称在另一个模板中包括某个模板的内容。 在 PowerApps 门户中，此其他模板来源通常是 [Web 模板](store-content-web-templates.md)。 这允许在多个位置重用常见模板片段。  
+按名称在另一个模板中包括某个模板的内容。 在 Power Apps 门户中，此其他模板来源通常是 [Web 模板](store-content-web-templates.md)。 这允许在多个位置重用常见模板片段。  
 
 在另一个模板中包括某个模板时，包括的模板可以访问父模板中定义的所有变量。
 
@@ -40,7 +40,7 @@ ms.locfileid: "2757036"
 
 与 block 标记结合使用，以提供模板继承。 这允许多个模板使用一个共享布局，同时替代父布局中特定区域。
 
-在 PowerApps 门户中，提供给标记的父模板名称通常是指  [Web 模板](store-content-web-templates.md)的名称。  
+在 Power Apps 门户中，提供给标记的父模板名称通常是指  [Web 模板](store-content-web-templates.md)的名称。  
 
 使用 extends 时，它必须是模板中的第一个内容，并且仅可后跟一个或多个 block 标记。
 
@@ -66,9 +66,13 @@ ms.locfileid: "2757036"
 
 `Hello, {{ user.fullname }}. My name is Charles.`
 
+## <a name="substitution"></a>替代
+
+如果用户已启用页眉和页脚缓存，但是希望避免缓存特定节输出，可使用此标记。 此标记在其中不缓存包装的内容块的输出的页眉和页脚中提供内容块。 如果用户使用可能经常更新的对象（如请求、页面、语言和日期），这非常有用。 例如，参考[启用了页眉和页脚缓存](../configure/enable-header-footer-output-caching.md)时的页眉和页脚 Web 模板源代码更新方案。
+
 ### <a name="see-also"></a>另请参阅
 
 [控制流标记](control-flow-tags.md)<br>
 [迭代标记](iteration-tags.md)<br>
 [变量标记](variable-tags.md)<br>
-[PowerApps Common Data Service 实体标记](portals-entity-tags.md)
+[Power Apps Common Data Service 实体标记](portals-entity-tags.md)

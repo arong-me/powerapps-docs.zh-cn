@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中定义计算字段 | MicrosoftDocs
+title: 在 Power Apps 中定义计算字段 | MicrosoftDocs
 description: 了解如何定义计算字段
 ms.custom: ''
 ms.date: 05/25/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d4f66e3f047da19fd040cccdd3f9af2da913df09
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 82bf8cad9b64f9866cb1cc856eff94eacf1f23a2
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758752"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873890"
 ---
 # <a name="define-calculated-fields-to-automate-manual-calculations"></a>定义计算字段以自动化手动计算
 
 使用计算字段将您业务流程中使用的手动计算自动化。 
 
-例如，推销员可能想知道商机的加权收入，这基于商机与概率乘积得到的预计收入。 或者，如果订单大于 500 美元，他们想要自动使用一个折扣。 计算字段可以包含简单数学运算或条件运算（如大于或 if - else 等）产生的值。 您可以使用 PowerApps 完成这些操作，并且不需要编写代码。  
+例如，推销员可能想知道商机的加权收入，这基于商机与概率乘积得到的预计收入。 或者，如果订单大于 500 美元，他们想要自动使用一个折扣。 计算字段可以包含简单数学运算或条件运算（如大于或 if - else 等）产生的值。 您可以使用 Power Apps 完成这些操作，并且不需要编写代码。  
   
 ## <a name="capabilities"></a>功能
   
@@ -60,9 +60,9 @@ ms.locfileid: "2758752"
 
 ## <a name="create-a-calculated-field"></a>创建计算字段
 
-使用字段编辑器指定计算字段。 在此示例中，我们将使用 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，不过步骤类似于使用解决方案资源管理器。 详细信息：[创建和编辑字段](create-edit-fields.md)
+使用字段编辑器指定计算字段。 在此示例中，我们将使用 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，不过步骤类似于使用解决方案资源管理器。 详细信息：[创建和编辑字段](create-edit-fields.md)
   
-1. 打开 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+1. 打开 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 1. 展开**数据** > **实体**。  
 1. 选择所需实体并选择**字段**。 选择**添加字段**。  
 1. 为字段提供所需的信息，包括**显示名称**、**名称**和**数据类型**。 

@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5ef65c12c20772a5eb8375b23290dd462b209173
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 60060865ec73dda1abed585c03232a367efb82f5
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701959"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "2779905"
 ---
 # <a name="apply-custom-business-logic-with-business-rules-and-flows-in-model-driven-apps"></a>在模型驱动的应用程序中应用带业务规则和流程的自定义业务逻辑
 
@@ -51,7 +51,7 @@ ms.locfileid: "2701959"
 
 ## <a name="flows"></a>流  
   
-Microsoft Flow 中包含针对于不同目的而设计的若干类型的流程：  
+Power Automate 中包含针对于不同目的而设计的若干类型的流程：  
 
 -   自动化流。 创建在被事件触发后自动执行一个或多个任务的流。 详细信息：[创建流](/flow/get-started-logic-flow)
     
