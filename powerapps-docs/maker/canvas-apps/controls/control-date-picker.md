@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d34e5d128f6a38c430432f8acfcc40edaa80c034
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: ae11f42fef927509461d8219b8df4134a633ae5d
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727251"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204010"
 ---
 # <a name="date-picker-control-in-power-apps"></a>Power Apps 中的日期选取器控件
 用户可单击或点击以指定日期的控件。
 
 ## <a name="description"></a>描述
-如果添加**日期选取器**控件而非 **[文本输入](control-text-input.md)** 控件，可帮助确保用户以正确的格式指定日期。
+如果添加**日期选取器**控件而非**[文本输入](control-text-input.md)** 控件，可帮助确保用户以正确的格式指定日期。
 
 ## <a name="key-properties"></a>关键属性
 **DefaultDate** - 日期控件的初始值（除非用户更改）。
@@ -39,9 +39,9 @@ ms.locfileid: "74727251"
 **Language** –确定用于设置日期格式的语言，包括月份的名称。 如果未指定此属性，语言将由用户设备设置决定。 支持的值包括 "EN-US" 和 "FR"。
 
 ## <a name="additional-properties"></a>其他属性
-**[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。
+[AccessibleLabel](properties-accessibility.md) – 屏幕阅读器标签。
 
-**[BorderColor](properties-color-border.md)** – 控件边框的颜色。
+[BorderColor](properties-color-border.md) – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
@@ -51,23 +51,23 @@ ms.locfileid: "74727251"
 
 **[DisplayMode](properties-core.md)** – 控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
-[DisabledBorderColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md)属性设置为 Disabled 时，该控件边框的颜色。
+[DisabledBorderColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件边框的颜色。
 
 **[DisabledColor](properties-color-border.md)** – 控件的 **[DisplayMode](properties-core.md)** 属性设置为 Disabled**Disabled** 时，该控件中的文本颜色。
 
-[DisabledFill](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为 Disabled 时，该控件的背景颜色。
+**[DisabledFill](properties-color-border.md)** – 控件的“DisplayMode”**[Display Mode](properties-core.md)** 属性设置为“Disabled”**Disabled**时，该控件的背景色。
 
 **EndYear** - 用户可将日期选取器控件的值设为的最后一个年份。
 
-**[Fill](properties-color-border.md)** – 控件的背景色。
+**[Fill](properties-color-border.md)** – 控件的背景颜色。
 
-**[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
+[FocusedBorderColor](properties-color-border.md) – 当聚焦到控件时，控件的边框颜色。
 
-**[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
+[FocusedBorderThickness](properties-color-border.md) – 当聚焦到控件时，控件的边框粗细。
 
-[Font](properties-text.md) – 文本中所显示的字体系列的名称。
+**[Font](properties-text.md)** – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md)** -控件中的文本权重：**粗体**、 **Semibold**、 **Normal**或**浅**。
+**[FontWeight](properties-text.md)** – 控件中文本的粗细：**粗体**、**半粗体**、**正常**或**细体**。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -79,32 +79,34 @@ ms.locfileid: "74727251"
 
 **[Italic](properties-text.md)** – 控件中的文本是否为斜体。
 
-**[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
+[OnSelect](properties-core.md) – 用户点击或单击某个控件时应用响应的方式。
 
-[PaddingBottom](properties-size-location.md) – 控件中的文本与该控件的下边缘之间的距离。
+**[PaddingBottom](properties-size-location.md)** – 控件中的文本与该控件下边缘之间的距离。
 
 [PaddingLeft](properties-size-location.md) – 控件中的文本与该控件的左边缘之间的距离。
 
 [PaddingRight](properties-size-location.md) – 控件中的文本与该控件的右边缘之间的距离。
 
-**[PaddingTop](properties-size-location.md)** – 控件中的文本与该控件的上边缘之间的距离。
+**[PaddingTop](properties-size-location.md)** - 控件中的文本与此控件的上边缘之间的距离。
 
 **[Size](properties-text.md)** – 控件上显示的文本的字号。
 
+**StartOfWeek** -要在日期选取器控件的第一天列中显示的一周中的某一天。
+
 **StartYear** - 用户可将日期选取器控件的值设为的最早年份。
 
-**[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
+[TabIndex](properties-accessibility.md) – 相对于其他控件的键盘导航顺序。
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
-**[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
+[Width](properties-size-location.md) – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="related-functions"></a>相关函数
-**[Year](../functions/function-datetime-parts.md)** ( *DateTimeValue* )
+**[Year](../functions/function-datetime-parts.md)**( *DateTimeValue* )
 
 ## <a name="example"></a>示例
 1. 添加**日期选取器**控件，并将其命名为 **Deadline**。
@@ -117,7 +119,7 @@ ms.locfileid: "74727251"
 3. 按 F5，在 **Deadline** 中选择一个日期，然后单击或点击“确定”。
 
     此时，“[标签](control-text-box.md)”控件显示今天距离所选日期还剩多少天。
-4. 若要返回到默认工作区，请按 Esc 键。
+4. 若要返回默认工作区，请按 Esc。
 
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
@@ -125,11 +127,11 @@ ms.locfileid: "74727251"
 * 适用[标准颜色对比度要求](../accessible-apps-color.md)。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
+* “AccessibleLabel”**[](properties-accessibility.md)** 必须存在。
 
 ### <a name="keyboard-support"></a>键盘支持
-* **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
+* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness](properties-color-border.md)**”来实现此目的。
 
 > [!TIP]
 > 当日历打开时，按**page up**和**page down**可在月之间导航，并按**shift + page Up** ，按**shift + page down**可在年份之间导航。

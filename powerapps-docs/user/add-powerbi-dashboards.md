@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e175ff47a66ae000fb8303a9f3de8205bcbf51d8
-ms.sourcegitcommit: 9576b34403634a8e960eb5f8e320a14c4a03746c
+ms.openlocfilehash: c386e53569b942cbc539438f9cf30cabab15bb65
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72517396"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75203918"
 ---
 # <a name="add-or-edit-power-bi-visualizations-on-your-dashboard"></a>在仪表板上添加或编辑 Power BI 可视化效果
 
@@ -29,7 +29,7 @@ ms.locfileid: "72517396"
 > [!NOTE]
 > 若要将 [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] 可视化效果添加到模型驱动应用中的个人仪表板，必须执行以下操作：  
 > 
-> - 在 "**设置**"  > **管理** > **系统设置**" > "**报表**"选项卡中为你的组织启用 [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] 可视化效果 >**允许 Power BI 可视化嵌入**。  
+> - 在 "**设置**" > **管理** > **系统设置**" > "**报表**"选项卡中为你的组织启用 [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] 可视化效果 >**允许 Power BI 可视化嵌入**。  
 > - 拥有一个 [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] 帐户，并有权访问至少一个 [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] 仪表板。  
 > - 避免将 [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] 可视化效果添加到系统面板;不支持此方法。
   
@@ -43,7 +43,7 @@ ms.locfileid: "72517396"
 
    
     > [!div class="mx-imgBorder"] 
-    > ![添加新的 Power BI 仪表板](media/pbi_1.png "添加 bew Power BI 仪表板") 
+    > ![添加新的 Power BI 仪表板](media/pbi_1.png "添加新的 Power BI 仪表板") 
 
 3. 在 " **Power BI 仪表板属性**" 对话框中，选择工作区，然后选择要嵌入到仪表板中的 "[!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)]" 仪表板。 如果要使仪表板可用于 [!INCLUDE[pn_moca_full](../includes/pn-moca-full.md)] 和 [!INCLUDE[pn_Microsoft_Dynamics_CRM_Mobile](../includes/pn-dyn-365-phones.md)]，请选择 "**为移动启用**"。
 
@@ -63,7 +63,7 @@ ms.locfileid: "72517396"
 3. 在仪表板上，选择要在其中显示磁贴的区域，然后在工具栏上选择 " **Power BI" 磁贴**。  
 
    > [!div class="mx-imgBorder"] 
-   > ![添加新 Power BI 磁贴](media/pbi_2.png "添加 bew Power BI 磁贴") 
+   > ![添加新 Power BI 磁贴](media/pbi_2.png "添加新 Power BI 磁贴") 
   
 4. 在 " **Power BI 磁贴**" 对话框中，选择工作区，然后选择要在仪表板上显示的 [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] 磁贴。 如果要使磁贴可用于 [!INCLUDE[pn_moca_full](../includes/pn-moca-full.md)] 和 [!INCLUDE[pn_Microsoft_Dynamics_CRM_Mobile](../includes/pn-dyn-365-phones.md)]，请选择 "**为移动启用**"。  
   
@@ -90,7 +90,7 @@ ms.locfileid: "72517396"
   
  
 ## <a name="share-a-personal-dashboard-that-contains-power-bi-visualizations"></a>共享包含 Power BI 可视化效果的个人仪表板  
- 若要共享包含 [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] 可视化对象的个人仪表板，必须在 Common Data Service 和 [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] 中配置共享，并且用户或组必须在两个服务中都具有相同的凭据和适当的访问级别。 若要在应用中共享你的个人仪表板，请参阅**仪表板**。 在仪表板列表中，选择所需的个人仪表板，然后选择 "**共享仪表板**"。 有关在 [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] 中共享仪表板的详细信息，请参阅[Power BI：与同事和其他人共享仪表板](https://powerbi.microsoft.com/documentation/powerbi-service-share-unshare-dashboard/)。  
+ 若要共享包含 [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] 可视化对象的个人仪表板，必须在 Common Data Service 和 [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)]中配置共享，并且用户或组必须在两个服务中都具有相同的凭据和适当的访问级别。 若要在应用中共享你的个人仪表板，请参阅**仪表板**。 在仪表板列表中，选择所需的个人仪表板，然后选择 "**共享仪表板**"。 有关在 [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)]中共享仪表板的详细信息，请参阅[Power BI：与同事和其他人共享仪表板](https://powerbi.microsoft.com/documentation/powerbi-service-share-unshare-dashboard/)。  
   
 <a name="privacy"></a>   
 ## <a name="privacy-notice"></a>隐私声明  

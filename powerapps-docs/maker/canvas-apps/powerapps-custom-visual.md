@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4db4e62bb3813b605b1ff4cdf5c2b83d969a1d3a
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 9a1ff224557bd36074f7c981a5e76a9721943afb
+ms.sourcegitcommit: 366f0d1b8309ab1fd533ebd7e1b41a69a99fd25a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74709757"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302867"
 ---
 # <a name="power-apps-custom-visual-for-power-bi"></a>适用于 Power BI 的 Power Apps 自定义视觉对象
 
@@ -44,6 +44,9 @@ Power BI 可实现数据见解和更好的决策，而使用 Power Apps，每个
 
     如果你创建一个新应用程序，电源应用程序将创建一个简单的应用程序，其中已设置了所需的组件。
 
+    > [!NOTE]
+    > 你必须在 Power BI 报表中从 Power Apps 自定义视觉对象创建新应用，以使 `PowerBIIntegration.Refresh()` 函数在应用中可用。
+
     ![新建应用](./media/powerapps-custom-visual/new-app.png)
 
 4. 现在，在 Power Apps Studio 中，可以使用在步骤2中设置的数据字段。 `PowerBIIntegration` 对象的行为类似于任何其他 Power Apps 只读数据源或集合。 可以使用该对象填充任何控件，或与其他数据源联接和使用其他数据源过滤。
@@ -62,7 +65,7 @@ Power BI 可实现数据见解和更好的决策，而使用 Power Apps，每个
 
     ![工作报表](./media/powerapps-custom-visual/working-report.gif)
 
-    如果需要对应用进行更改，请在编辑模式下打开报表，再单击或点击 Power Apps 视觉对象上的 "**更多选项**" （ **...** ），然后选择 "**编辑**"。
+    如果需要对应用进行更改，请在编辑模式下打开报表，再单击或点击 Power Apps 视觉对象上的 "**更多选项**" （**...**），然后选择 "**编辑**"。
 
     ![编辑应用](./media/powerapps-custom-visual/edit-app.png)
 
@@ -75,7 +78,9 @@ Power BI 可实现数据见解和更好的决策，而使用 Power Apps，每个
 - Power Apps 自定义视觉对象无法筛选数据或将任何数据发送回报表。
 - 需要与报表分开共享 "Power Apps" 应用。 了解如何[在 Power apps 中共享应用](share-app.md)。
 - Power BI 报表服务器和 Power BI 的移动应用不支持 Power Apps 自定义视觉对象。
-- 如果使用 PowerBIIntegration （）函数，则必须使用支持[directquery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources)的源，并且必须使用 DirectQuery 方法创建数据连接。
+- 使用 `PowerBIIntegration.Refresh()` 函数时，以下限制适用：
+    - 若要在应用中使用此功能，必须在 Power BI 报表中从 Power Apps 自定义视觉对象创建新应用。
+    - 必须使用支持[directquery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources)的源，并且必须使用 DirectQuery 方法创建数据连接。
 - Power BI Desktop 中的 power Apps 为在创建应用时，而不是在编辑时为 Power Apps Studio 提供数据。 使用 Power BI Web 在编辑应用时预览数据。
 
 > [!NOTE]
@@ -85,7 +90,7 @@ Power BI 可实现数据见解和更好的决策，而使用 Power Apps，每个
 
 下表列出了可用于查看、创建和修改 Power Apps 自定义视觉对象操作的浏览器可支持性。 支持的浏览器和操作由复选标记（&check;）标识。
 
-|浏览器|显示|创建|Modify
+|浏览器|视图|创建|Modify
 |-|-|-|-
 |Microsoft Edge|&check;|&check;|&check;
 |Internet Explorer 11|&check;
