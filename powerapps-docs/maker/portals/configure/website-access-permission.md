@@ -1,5 +1,5 @@
 ---
-title: 在 Dynamics 365 门户中创建网站访问权限 | MicrosoftDocs
+title: 在 Power Apps 门户创建网站访问权限 | MicrosoftDocs
 description: 了解如何在门户中创建网站访问权限并将其与元素关联。
 author: sbmjais
 manager: shujoshi
@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 0ac02992498204efc42a52e736284ea134ed42f5
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ab85eb4feca871089366c8675305b4f6c741f0af
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760141"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873450"
 ---
 # <a name="create-website-access-permissions"></a>创建网站访问权限
 
@@ -38,8 +38,10 @@ ms.locfileid: "2760141"
 
 4. 在**常规**下，输入名称、网站，并选择所需的权限。
 
-5. 在 **Web 角色**下，选择并添加要与其关联权限的 Web 角色。
+    ![创建网站访问权限](../media/website-access-permission.png "创建网站访问权限")
+
+5. 在 **Web 角色**下，选择**添加现有 Web 角色**，然后添加要与其关联权限的 Web 角色。
 
 6. 保存更改。
 
-    ![创建网站访问权限](../media/website-access-permission.png "创建网站访问权限")  
+    

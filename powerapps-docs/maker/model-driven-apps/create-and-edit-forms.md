@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c357649ba68e6bce1b9df51d9601507c337afd31
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3d35a73f02a1df1e3d5fd51f422b2b24263f53b5
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752416"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875606"
 ---
 # <a name="create-edit-or-configure-forms-using-the-form-designer"></a>使用窗体设计器创建、编辑或配置窗体 
 使用新的窗体设计器为模型驱动的应用创建、编辑或配置窗体。 
@@ -35,7 +35,7 @@ ms.locfileid: "2752416"
 > 新的模型驱动的窗体设计器目前不支持编辑卡窗体。 详细信息：[窗体类型](types-forms.md)
 
 ## <a name="create-a-form"></a>创建窗体 
-1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
+1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
 2. 在左侧导航窗格上，展开**数据**，然后选择**实体**。 
 3. 选择实体（如客户实体），然后选择**窗体**选项卡。 
 4. 选择**添加窗体**，然后选择下列选项之一
@@ -46,7 +46,7 @@ ms.locfileid: "2752416"
 5. 在完成对窗体的更改时，选择**保存**保存窗体，或在要保存更改并向应用用户显示时选择**发布**。  
 
 ## <a name="edit-a-form"></a>编辑窗体 
-1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
+1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
 2. 在左侧导航窗格上，展开**数据**，然后选择**实体**。 
 3. 选择实体（如客户实体），然后选择**窗体**选项卡。
 4. 选择要编辑的窗体名称。  

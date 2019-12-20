@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中使用解决方案检查器验证应用 | Microsoft Docs
+title: 在 Power Apps 中使用解决方案检查器验证应用 | Microsoft Docs
 description: 可使用解决方案检查器验证解决方案。
 author: Mattp123
 manager: kvivek
@@ -13,14 +13,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c42dfe260fd77f40cd3046f754177838b17eefc2
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e9a3fb0c291678c5c571895c900bfde10a7f42ed
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758840"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885362"
 ---
-# <a name="use-solution-checker-to-validate-your-model-driven-apps-in-powerapps"></a>在 PowerApps 中使用解决方案检查器验证模型驱动的应用
+# <a name="use-solution-checker-to-validate-your-model-driven-apps-in-power-apps"></a>在 Power Apps 中使用解决方案检查器验证模型驱动的应用
 
 为了履行复杂的业务要求，模型驱动的应用开发者通常最终会推出极为高端的解决方案，用于自定义和扩展 Common Data Service 平台。 高级实施伴随着风险上升，并带来性能、稳定性和可靠性问题，从而影响用户的体验。 确定这些问题和了解其解决方法可能非常复杂，并且很费时间。 通过解决方案检查器，您可以使用一组最佳实践规则对解决方案执行各种静态分析检查，并快速确定这些问题模式。 检查完成后，将收到详细报告，其中列出了确定的问题，受影响的组件和代码，以及介绍各问题解决方法的文档的链接。
 
@@ -33,13 +33,13 @@ ms.locfileid: "2758840"
 解决方案检查器支持可从环境中导出的非托管解决方案。 
 
 > [!NOTE]
-> - 本主题介绍如何从 PowerApps 开发者门户运行解决方案检查器。 另外还提供 PowerShell 模块，您可以使用它来直接与服务交互。 Microsoft.PowerApps.Checker.PowerShell 模块可用于对支持的本地和在线环境版本的托管和非托管解决方案进行分析，或自动化服务并将服务集成到您的版本和发布管道中。 详细信息：[Microsoft.PowerApps.Checker.PowerShell 概述]( /powershell/powerapps/overview?view=pa-ps-latest#get-started-using-the-microsoftpowerappscheckerpowershell-module) 
+> - 本主题介绍如何从 Power Apps 开发者门户运行解决方案检查器。 另外还提供 PowerShell 模块，您可以使用它来直接与服务交互。 Microsoft.PowerApps.Checker.PowerShell 模块可用于对支持的本地和在线环境版本的托管和非托管解决方案进行分析，或自动化服务并将服务集成到您的版本和发布管道中。 详细信息：[Microsoft.PowerApps.Checker.PowerShell 概述]( /powershell/powerapps/overview?view=pa-ps-latest#get-started-using-the-microsoftpowerappscheckerpowershell-module) 
 > - 解决方案检查器不使用 ECMAScript 6 (2015) 或更高版本处理包含 JavaScript 的解决方案。 如果检测到使用这些版本之一的 JavaScript，将报告 Web 资源发生了 JS001 语法问题。
 
 ## <a name="enable-the-solution-checker"></a>启用解决方案检查器
-默认情况下，所有 Common Data Service 环境中均已启用解决方案检查器。 在 PowerApps 的**解决方案**区域中选择非托管解决方案时，**解决方案检查器**菜单项可用。 如果**解决方案检查器**菜单中的**运行**选项不可用时，可以通过安装 PowerApps 检查器解决方案启用。 若要安装，请执行以下步骤：   
+默认情况下，所有 Common Data Service 环境中均已启用解决方案检查器。 在 Power Apps 的**解决方案**区域中选择非托管解决方案时，**解决方案检查器**菜单项可用。 如果**解决方案检查器**菜单中的**运行**选项不可用时，可以通过安装 Power Apps 检查器解决方案启用。 若要安装，请执行以下步骤：   
 
-1. 登录 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后选择要启用解决方案检查器的 Common Data Service 环境。 
+1. 登录 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后选择要启用解决方案检查器的 Common Data Service 环境。 
 2. 在左侧导航窗格中，选择**解决方案**。
 3. 在工具栏上，选择**解决方案检查器**，然后选择**安装** – 这将打开 Microsoft AppSource 页面。 如果浏览器阻止页面打开，需要允许弹出窗口。 
 
@@ -48,25 +48,25 @@ ms.locfileid: "2758840"
 
 4. 在 AppSource 页面中选择**免费试用**。 
 
-5. 如果您同意，请接受条款和条件，然后选择环境以安装 PowerApps 检查器解决方案。 
-6. 安装完毕后，在 PowerApps 站点上刷新**解决方案**列表以验证解决方案检查器是否可用。  
+5. 如果您同意，请接受条款和条件，然后选择环境以安装 Power Apps 检查器解决方案。 
+6. 安装完毕后，在 Power Apps 站点上刷新**解决方案**列表以验证解决方案检查器是否可用。  
 7. 若要检查解决方案，请[运行解决方案检查器](#run-the-solution-checker)。
 
 
-<!-- ### Components created with the PowerApps checker
-When you install the PowerApps checker these solution specific components are created. 
+<!-- ### Components created with the Power Apps checker
+When you install the Power Apps checker these solution specific components are created. 
 - Entities: The entities that are created are required to store the results of solution analysis and the status of analysis jobs in your environment.
    - Analysis Component
    - Analysis Job
    - Analysis Result
 - System job: A system job is created so admins can remove solution analysis data from the environment. The job contains a configuration value, currently set to remove the solution analysis data after 60 days, which an administrator can override. 
 - Security Roles: Two security roles, **Export Customizations**, and **Solution Checker** are created. These roles are required to export the solution for analysis, and storing the analysis results to the entities in your environment.
-- User principle: The **PowerApps Advisor** user is created that allows the checker to authenticate with your Common Data Service environment and assign the two security roles, Export Customizations and Solution Checker. The PowerApps Advisor is an application user and does not consume a license.  -->
+- User principle: The **Power Apps Advisor** user is created that allows the checker to authenticate with your Common Data Service environment and assign the two security roles, Export Customizations and Solution Checker. The Power Apps Advisor is an application user and does not consume a license.  -->
 
 ## <a name="run-the-solution-checker"></a>运行解决方案检查器
-在环境中安装 PowerApps 检查器之后，如果在 PowerApps 的**解决方案**区域中选择非托管解决方案，将提供**解决方案检查器**菜单项。 
+在环境中安装 Power Apps 检查器之后，如果在 Power Apps 的**解决方案**区域中选择非托管解决方案，将提供**解决方案检查器**菜单项。 
 
-1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
+1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
 2. 在左侧窗格中选择**解决方案**。 
 3. 在要分析的非托管解决方案旁边，选择 **...**，指向**解决方案检查器**，然后选择**运行**。 
 
@@ -83,7 +83,7 @@ When you install the PowerApps checker these solution specific components are cr
     
     - 此时**解决方案**列表的 **解决方案检查**列中的状态为**正在运行...**。 
     
-    - 检查完成后，您将收到电子邮件通知，PowerApps 站点的**通知**区域中也会显示通知。  
+    - 检查完成后，您将收到电子邮件通知，Power Apps 站点的**通知**区域中也会显示通知。  
 
 5.  检查完成后[查看报告](#review-the-solution-checker-report)。
 

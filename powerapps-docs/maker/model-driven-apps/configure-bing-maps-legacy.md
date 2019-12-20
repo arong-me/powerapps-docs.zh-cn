@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerApps 在模型驱动应用中配置 Bing 地图 | MicrosoftDocs
+title: 使用 Power Apps 在模型驱动应用中配置 Bing 地图 | MicrosoftDocs
 ms.custom: ''
 ms.date: 10/18/2019
 ms.reviewer: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ff7f5c01e913da60409bb60c637b37ebd4bfa096
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 132f5c2cfb5763714176a86c1ea846085588f862
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756464"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875210"
 ---
 # <a name="configure-a-map-on-a-form"></a>配置窗体上的地图
 默认情况下，在主窗体上为客户和联系人实体都配置了 Bing 地图控件，该控件提供在实体记录上显示地图的功能。 尽管默认情况下未配置，但可以将 Bing 地图控件添加到系统用户实体。 Bing 地图控件也可以与 Dynamics 365 中模型驱动应用附带的某些实体一起使用，例如 Dynamics 365 Sales 和 Dynamics 365 Customer Service。 例如，潜在顾客、报价单、订单、发票和竞争对手实体。 Bing 地图控件不能与自定义实体一起使用。  
@@ -49,7 +49,7 @@ ms.locfileid: "2756464"
     ![在窗体上启用地图](media/enable-maps.png)
 
 ## <a name="configure-a-map"></a>配置地图 
-1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
+1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
 2. 转到**数据** > **实体**，然后选择要在主窗体上配置地图的实体。 
 3. 选择**窗体**选项卡，然后选择主窗体，然后在命令栏上选择**切换到经典**。 
 4. 在经典窗体设计器上，双击**地图视图**控件以查看和编辑属性。 详细信息：[查看和编辑地图属性](#view-and-edit-map-properties)

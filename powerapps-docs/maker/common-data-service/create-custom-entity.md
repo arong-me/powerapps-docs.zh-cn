@@ -1,6 +1,6 @@
 ---
-title: 使用 PowerApps 创建包含组件的自定义实体 | Microsoft Docs
-description: 包含创建和配置实体以使用 PowerApps 应用的分步说明的主题。
+title: 使用 Power Apps 创建包含组件的自定义实体 | Microsoft Docs
+description: 包含创建和配置实体以使用 Power Apps 应用的分步说明的主题。
 author: Mattp123
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 436e4f03a38efc3d61a0d4fb9f027ae6eff1c931
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 864bc9c8cfad92bac661db0b12b47d880cc86edf
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754815"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883780"
 ---
-# <a name="create-a-custom-entity-that-has-components-in-powerapps"></a>在 PowerApps 中创建具有组件的自定义实体
+# <a name="create-a-custom-entity-that-has-components-in-power-apps"></a>在 Power Apps 中创建具有组件的自定义实体
 
-使用 PowerApps，您可以定制您的应用使之适合您组织的行业、命名法和特定业务过程。 PowerApps 应用开发包括添加“现成”的标准实体或创建自定义实体。 实体定义您要以记录形式跟踪的信息，通常包括公司名称、地点、产品、电子邮件和电话等属性。 
+使用 Power Apps，您可以定制您的应用使之适合您组织的行业、命名法和特定业务过程。 Power Apps 应用开发包括添加“现成”的标准实体或创建自定义实体。 实体定义您要以记录形式跟踪的信息，通常包括公司名称、地点、产品、电子邮件和电话等属性。 
 
 在本主题中，您创建实体，然后添加或自定义关键组件（如字段、关系、视图和窗体）。 您了解如何：
 
@@ -36,7 +36,7 @@ ms.locfileid: "2754815"
 
 ## <a name="prerequisites"></a>必备条件
 
-登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 如果还没有 PowerApps 帐户，请从 [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 选择**免费开始**链接。
+登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 如果还没有 Power Apps 帐户，请从 [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 选择**免费开始**链接。
 
 ## <a name="create-a-custom-entity"></a>创建自定义实体。
 

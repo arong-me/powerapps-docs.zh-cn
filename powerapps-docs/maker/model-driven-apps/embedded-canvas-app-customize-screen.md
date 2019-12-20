@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6be2a23a64108ec616fd95a0178d2008290bc289
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7d766a40dca689f6d0537be56edc9865437f62fa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706007"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868347"
 ---
 # <a name="customize-the-screen-size-and-orientation-of-a-canvas-app-embedded-on-a-model-driven-form"></a>自定义在模型驱动窗体上嵌入的区域应用的屏幕尺寸和方向
 本主题介绍如何自定义在模型驱动窗体上嵌入的区域应用的屏幕尺寸和方向。
@@ -34,7 +34,7 @@ ms.locfileid: "2706007"
 1.  按照步骤在模型驱动窗体上添加或编辑嵌入式区域应用。
     - [在模型驱动窗体上添加嵌入式区域应用](embedded-canvas-app-add-classic-designer.md)
     - [编辑在模型驱动窗体上嵌入的区域应用](embedded-canvas-app-edit-classic-designer.md)
-2. 通过在 PowerApps Studio 中打开的区域应用，选择**文件**选项卡，然后选择**应用设置**。
+2. 通过在 Power Apps Studio 中打开的区域应用，选择**文件**选项卡，然后选择**应用设置**。
 3. 选择**屏幕尺寸 + 方向**选项卡。默认情况下，**尺寸**设置为**自定义**。
 4. 从可用**尺寸**和**方向**选项列表中选择，或选择**自定义**，然后提供所需的**宽度**和**高度**值。
     > [!NOTE]

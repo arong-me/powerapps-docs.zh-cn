@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中为相关实体添加模型驱动应用窗体导航 | MicrosoftDocs
+title: 在 Power Apps 中为相关实体添加模型驱动应用窗体导航 | MicrosoftDocs
 description: 了解如何为相关实体添加窗体导航
 ms.custom: ''
 ms.date: 06/18/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 34b1680d7596719cd050c71af8cc6c355f6353e3
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 9751a917dc553355c89aa2a42865ad69bfee5c10
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2751897"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874882"
 ---
 # <a name="add-model-driven-app-form-navigation-for-related-entities"></a>为相关实体添加模型驱动的应用程序窗体导航
 
 在本主题中，您使用用于添加相关实体的链接的窗体导航窗格。 当应用程序用户单击记录中这些链接之一时，会显示实体的关联视图。   
   
-1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
   
     > [!IMPORTANT]

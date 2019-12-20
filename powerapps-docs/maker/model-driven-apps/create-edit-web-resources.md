@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中创建或编辑模型驱动应用 Web 资源 | MicrosoftDocs
+title: 在 Power Apps 中创建或编辑模型驱动应用 Web 资源 | MicrosoftDocs
 description: 了解如何创建或编辑 Web 资源
 ms.custom: ''
 ms.date: 06/02/2018
@@ -22,19 +22,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6711d78a217bc5bcee34f0bd209f7bdfe56249c5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4aa4e0399395861cf94740c92f35b738998b8209
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702443"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860487"
 ---
 # <a name="create-or-edit-model-driven-app-web-resources-to-extend-an-app"></a>创建或编辑模型驱动应用程序 Web 资源以扩展应用程序
 
 开发人员通常使用 Web 资源用于扩展应用，这些应用程序使用 Web 开发中用到的文件。 应用用户可能需要管理由开发人员或设计器提供的 Web 资源。  
 
 > [!TIP]
-> 有关 Web 资源的深入讨论，请参阅[开发人员文档：模型驱动应用的 Web 资源](/powerapps/developer/model-driven-apps/web-resources)。<br /> 有关 PowerApps 中添加的 Web 资源依赖项的信息，请参阅[开发人员文档：Web 资源依赖项](/dynamics365/customer-engagement/developer/web-resources)。
+> 有关 Web 资源的深入讨论，请参阅[开发人员文档：模型驱动应用的 Web 资源](/powerapps/developer/model-driven-apps/web-resources)。<br /> 有关 Power Apps 中添加的 Web 资源依赖项的信息，请参阅[开发人员文档：Web 资源依赖项](/dynamics365/customer-engagement/developer/web-resources)。
    
 <a name="BKMK_WhatAreWebResources"></a>
 

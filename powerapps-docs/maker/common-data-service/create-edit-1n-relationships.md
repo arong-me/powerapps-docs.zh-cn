@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中创建 1:N（一对多）或 N:1（多对一）实体关系概述 | MicrosoftDocs
+title: 在 Power Apps 中创建 1:N（一对多）或 N:1（多对一）实体关系概述 | MicrosoftDocs
 description: 了解如何创建一对多或多对一实体关系
 ms.custom: ''
 ms.date: 05/27/2018
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 724a887df3a5347f1d403ac30201297abf5201aa
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 07e173dff08a10de5354c08d3530605f530e512d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758180"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866123"
 ---
 # <a name="create-one-to-many-or-many-to-one-entity-relationships-overview"></a>创建一对多或多对一实体关系概述
 
@@ -40,7 +40,7 @@ ms.locfileid: "2758180"
 
 |设计器| 说明|
 |--|--|
-|[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[在 PowerApps 门户中创建和编辑 1:N（一对多）或 N:1（多对一）实体关系](create-edit-1n-relationships-portal.md)|
+|[Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息：[在 Power Apps 门户中创建和编辑 1:N（一对多）或 N:1（多对一）实体关系](create-edit-1n-relationships-portal.md)|
 |解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。 <br />详细信息：[使用解决方案资源管理器创建和编辑 1:N（一对多）或 N:1（多对一）实体关系](create-edit-1n-relationships-solution-explorer.md) |
 
 > [!NOTE]
@@ -53,7 +53,7 @@ ms.locfileid: "2758180"
 
 本主题中的信息将帮助您选择可以使用的设计器。 
 
-您应该使用 PowerApps 门户创建和编辑 1:N（一对多）或 N:1（多对一）实体关系，除非您需要满足任何下列要求：
+您应该使用 Power Apps 门户创建和编辑 1:N（一对多）或 N:1（多对一）实体关系，除非您需要满足任何下列要求：
 
 - 配置字段映射
 - 配置模型驱动应用程序的导航窗格选项
@@ -72,7 +72,7 @@ ms.locfileid: "2758180"
 ### <a name="see-also"></a>另请参阅
 
 [创建和编辑实体之间的关系](create-edit-entity-relationships.md)<br />
-[在 PowerApps 门户中创建和编辑 1:N（一对多）或 N:1（多对一）实体关系](create-edit-1n-relationships-portal.md)<br />
+[在 Power Apps 门户中创建和编辑 1:N（一对多）或 N:1（多对一）实体关系](create-edit-1n-relationships-portal.md)<br />
 [使用解决方案资源管理器创建和编辑 1:N（一对多）或 N:1（多对一）实体关系](create-edit-1n-relationships-solution-explorer.md)<br />
 [开发人员文档：自定义实体关系元数据](/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)<br />
 [开发人员文档：实体关系资格](/dynamics365/customer-engagement/developer/entity-relationship-eligibility)

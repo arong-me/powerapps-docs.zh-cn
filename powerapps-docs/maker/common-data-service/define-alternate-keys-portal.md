@@ -1,6 +1,6 @@
 ---
-title: 使用 PowerApps 门户定义备用键 | MicrosoftDocs
-description: 了解如何使用 PowerApps 门户定义备用键
+title: 使用 Power Apps 门户定义备用键 | MicrosoftDocs
+description: 了解如何使用 Power Apps 门户定义备用键
 ms.custom: ''
 ms.date: 05/31/2018
 ms.reviewer: ''
@@ -20,16 +20,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fec01122ad00710507fb3e0976ec9f80115f06cf
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d52b3fa67863a43f82f020f3894bbabf5d38df84
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758857"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865452"
 ---
-# <a name="define-alternate-keys-using-powerapps-portal"></a>使用 PowerApps 门户定义备用键
+# <a name="define-alternate-keys-using-power-apps-portal"></a>使用 Power Apps 门户定义备用键
 
-[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供通过 Common Data Service 查看和创建实体备用键的简单方法。
+[Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供通过 Common Data Service 查看和创建实体备用键的简单方法。
 
 此门户支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 <br />详细信息： 
 - [定义引用记录的备用键](define-alternate-keys-reference-records.md)
@@ -37,7 +37,7 @@ ms.locfileid: "2758857"
 
 ## <a name="view-alternate-keys"></a>查看备用键
 
-1. 从 [PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**区域**设计模式。
+1. 从 [Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**区域**设计模式。
 2. 选择**数据** > **实体**，然后选择您要查看的实体。
 3. 选择**键**查看定义的任何备用键的列表。
 

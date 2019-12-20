@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中打开模型驱动应用程序窗体编辑器 | MicrosoftDocs
+title: 在 Power Apps 中打开模型驱动应用程序窗体编辑器 | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -21,21 +21,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f922908611d56afc99c5ebc844ff75c94d48657c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5824f2acfdcf1a6dc6e3491abfdd8896528597a1
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759500"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872681"
 ---
 # <a name="open-the-model-driven-app-form-editor"></a>打开模型驱动应用程序窗体编辑器 
 通过窗体编辑器，您通过将组件（如分区、选项卡、字段和控件）放入窗体编辑器区域来设计窗体。 在本主题中，您将了解几个访问窗体编辑器的不同方法。
  
 如果编辑窗体的过程创建任何新的解决方案组件（例如，Web 资源），组件的名称将使用默认解决方案的解决方案发布商自定义前缀，而这些组件将仅包括在默认解决方案中。 如果要将任何新的解决方案组件包括在某个特定的非托管解决方案中，则应通过该非托管解决方案打开窗体编辑器。  
 
-## <a name="access-the-form-editor-from-the-powerapps-site"></a>从 PowerApps 站点访问窗体编辑器
+## <a name="access-the-form-editor-from-the-power-apps-site"></a>从 Power Apps 站点访问窗体编辑器
 
-1. 登录到 [PowerApps](https://make.powerapps.com/)。 
+1. 登录到 [Power Apps](https://make.powerapps.com/)。 
 
 2. 选择**数据** > **实体** >，然后选择所需实体，如客户实体。 
 

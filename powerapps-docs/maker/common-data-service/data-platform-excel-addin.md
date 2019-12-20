@@ -13,24 +13,24 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fa1602b59ed0fdfeec09a8bc7e5f1126249f071f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 24164d6eb03de550a1f3f4a8f3e8402154d03046
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757476"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865595"
 ---
 # <a name="open-entity-data-in-excel"></a>在 Excel 中打开实体数据
-通过在 Microsoft Excel 中打开实体数据，可以使用 Microsoft PowerApps Excel 加载项快速轻松地查看和编辑数据。 PowerApps Excel 加载项需要 Microsoft Excel 2016。
+通过在 Microsoft Excel 中打开实体数据，可以使用 Microsoft Power Apps Excel 加载项快速轻松地查看和编辑数据。 Power Apps Excel 加载项需要 Microsoft Excel 2016。
 
-![Excel 加载项](./media/data-platform-cds-excel-addin/ExcelAddin.png "PowerApps Excel 加载项")
+![Excel 加载项](./media/data-platform-cds-excel-addin/ExcelAddin.png "Power Apps Excel 加载项")
 
 ## <a name="open-entity-data-in-excel"></a>在 Excel 中打开实体数据
 1. 在 [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**实体**。 将显示所有实体。
 2. 单击您感兴趣的实体右侧的省略号 (...)。
-3. 单击**在 Excel 中打开**，然后打开生成的工作簿。 此工作簿具有实体的绑定信息、您的环境的指针，以及 PowerApps Excel 加载项的指针。  
-4. 在 Excel 中，单击**启用编辑**启用要运行的 PowerApps Excel 加载项。 Excel 加载项在 Excel 窗口右侧的窗格中运行。
-5. 如果是第一次运行 PowerApps Excel 加载项，请单击**信任此加载项**以允许 Excel 加载项运行。
+3. 单击**在 Excel 中打开**，然后打开生成的工作簿。 此工作簿具有实体的绑定信息、您的环境的指针，以及 Power Apps Excel 加载项的指针。  
+4. 在 Excel 中，单击**启用编辑**启用要运行的 Power Apps Excel 加载项。 Excel 加载项在 Excel 窗口右侧的窗格中运行。
+5. 如果是第一次运行 Power Apps Excel 加载项，请单击**信任此加载项**以允许 Excel 加载项运行。
 6. 如果提示您登录，单击**登录**，然后使用您在 [powerapps.com](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上使用的相同凭据登录。 Excel 加载项将使用之前的登录上下文并会让您自动登录（如果可以）。 因此，请确认 Excel 加载项右上角的用户名称。
 
 Excel 加载项自动读取所选实体的数据。 请注意，在 Excel 加载项将数据读取到工作簿中前，工作簿中没有数据。

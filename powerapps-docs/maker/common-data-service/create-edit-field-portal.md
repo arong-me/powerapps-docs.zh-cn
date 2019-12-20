@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerApps 门户创建和编辑 Common Data Service 的字段 | MicrosoftDocs
+title: 使用 Power Apps 门户创建和编辑 Common Data Service 的字段 | MicrosoftDocs
 ms.custom: ''
 ms.date: 08/13/2019
 ms.reviewer: ''
@@ -19,24 +19,24 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 231970fb08886b993b55dcc6506ef387c9a20018
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 21e0d713608b2c0bddcf9dc7d292973f0f58259f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757960"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861415"
 ---
-# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-portal"></a>使用 PowerApps 门户创建和编辑 Common Data Service 的字段
+# <a name="create-and-edit-fields-for-common-data-service-using-power-apps-portal"></a>使用 Power Apps 门户创建和编辑 Common Data Service 的字段
 
-[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供通过 Common Data Service 创建和编辑实体字段的简单方法。
+[Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供通过 Common Data Service 创建和编辑实体字段的简单方法。
 
 此门户支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 <br />详细信息： 
 - [创建和编辑 Common Data Service 的字段](create-edit-fields.md)
-- [使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)
+- [使用 Power Apps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)
 
 ## <a name="view-fields"></a>视图字段
 
-1. 从 [PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**区域**设计模式。
+1. 从 [Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**区域**设计模式。
 2. 选择**数据** > **实体**，然后选择具有您要查看的字段的实体。
 3. 选择**字段**选项卡后，您可以选择以下视图： 
 
@@ -233,7 +233,7 @@ ms.locfileid: "2757960"
 
 ### <a name="see-also"></a>另请参阅  
 [创建和编辑 Common Data Service 的字段](create-edit-fields.md)<br />
-[使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)<br />
+[使用 Power Apps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)<br />
 [字段类型和字段数据类型](types-of-fields.md)<br />
 [定义计算字段以自动化手动计算](define-calculated-fields.md)<br />
 [定义用于聚合值的汇总字段](define-rollup-fields.md)<br />

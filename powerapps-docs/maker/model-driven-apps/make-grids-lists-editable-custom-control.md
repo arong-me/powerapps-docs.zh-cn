@@ -1,5 +1,5 @@
 ---
-title: 通过 PowerApps 使用可编辑网格自定义控件将模型驱动应用程序网格（列表）设置为可编辑 | MicrosoftDocs
+title: 通过 Power Apps 使用可编辑网格自定义控件将模型驱动应用程序网格（列表）设置为可编辑 | MicrosoftDocs
 description: 了解如何使用可编辑网格自定义控件
 ms.custom: ''
 ms.date: 06/27/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8ec97723dcc5c1e17b3907c7b683ba24977b69de
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 866c058ad873fa278ee0bb8bf026983ed0201df7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700595"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867971"
 ---
 # <a name="make-model-driven-app-grids-lists-editable-using-the-editable-grid-custom-control"></a>使用可编辑网格自定义控件将模型驱动应用程序网格（列表）设置为可编辑
 

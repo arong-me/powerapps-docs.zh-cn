@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 22920502b75d16dedba7a70ced60b9b3f373ff10
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: cc5ce204047810704f01562a9a00668e51784769
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757564"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872878"
 ---
 # <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>使用 Power Query 将数据添加到 Common Data Service 中的实体
 在本过程中，您将在 [Common Data Service](data-platform-intro.md) 中创建实体，并使用 Power Query 用来自 OData 源的数据填充该实体。 您可以使用相同的技巧集成这些联机和本地源的数据，其中包括：
@@ -35,16 +35,16 @@ ms.locfileid: "2757564"
 
 在您将数据加载到新的或现有实体之前，您还可以筛选、转换和合并数据。
 
-如果没有 PowerApps 的许可证，您可以[免费注册](../signup-for-powerapps.md)。
+如果没有 Power Apps 的许可证，您可以[免费注册](../signup-for-powerapps.md)。
 
 ## <a name="prerequisites"></a>必备条件
 要遵循本主题的做法，您必须切换到可以创建实体的[环境](../canvas-apps/working-with-environments.md)。
 
 ## <a name="specify-the-source-data"></a>指定源数据
 
-1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后单击或点按左边缘附近的**数据**向下键。
+1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后单击或点按左边缘附近的**数据**向下键。
 
-    ![PowerApps 主页](./media/data-platform-cds-newentity-pq/sign-in.png)
+    ![Power Apps 主页](./media/data-platform-cds-newentity-pq/sign-in.png)
 
 1. 在显示的列表中，单击或点按**数据集成**，然后单击或点按窗口右上角附近的**新建项目**。
 

@@ -1,5 +1,5 @@
 ---
-title: PowerApps 中模型驱动应用的计时器控件 | MicrosoftDocs
+title: Power Apps 中模型驱动应用的计时器控件 | MicrosoftDocs
 description: 了解您如何使用计时器控件
 ms.custom: ''
 ms.date: 06/06/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 31b7f2b55f10e404841517aada26b0b38df7fbbf
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b78ac8957d45899816dd27573f352f34f16bc969
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710803"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867795"
 ---
 # <a name="model-driven-app-timer-control-overview"></a>模型驱动应用程序的计时器控件概述
 

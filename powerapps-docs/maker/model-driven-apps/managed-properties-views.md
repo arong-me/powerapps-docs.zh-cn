@@ -1,5 +1,5 @@
 ---
-title: PowerApps 的视图的模型驱动应用的托管属性 | MicrosoftDocs
+title: Power Apps 的视图的模型驱动应用的托管属性 | MicrosoftDocs
 description: 了解如何设置视图的托管属性
 ms.custom: ''
 ms.date: 06/12/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b99fe00731066a4ee0f029bdba09c7eab9d8d67b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 335084ee98cdfe82382eac775d068a62c9a429d9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702971"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860003"
 ---
 # <a name="model-driven-app-managed-properties-for-views"></a>视图的模型驱动应用程序的托管属性
 
 <a name="BKMK_ManagedProperties"></a>   
  
- 如果您已经在 PowerApps 中创建自己在托管解决方案中包含要分发的自定义公共视图，您可以选择限制从自定义视图安装解决方案的用户能力。  
+ 如果您已经在 Power Apps 中创建自己在托管解决方案中包含要分发的自定义公共视图，您可以选择限制从自定义视图安装解决方案的用户能力。  
   
  默认情况下，大多数视图具有其设置 **可自定义** 的托管属性设置为 true，以便用户可以进行自定义。 除非您具有一个非常充足的原因更改此属性，我们建议您允许用户在您的应用中自定义视图。  
   

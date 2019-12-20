@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中创建或编辑模型驱动应用程序的快速创建窗体 | MicrosoftDocs
+title: 在 Power Apps 中创建或编辑模型驱动应用程序的快速创建窗体 | MicrosoftDocs
 description: 了解如何创建或编辑快速创建窗体
 ms.custom: ''
 ms.date: 05/14/2019
@@ -22,20 +22,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b1496fcb600524e7934fe55ca17a7a7bafb54c75
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 171d64581fd0a9feb51d5a6111c79e63de1ba845
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759148"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875342"
 ---
 # <a name="create-or-edit-model-driven-app-quick-create-forms-for-a-streamlined-data-entry-experience"></a>创建或编辑模型驱动应用程序的快速创建窗体以简化数据输入体验
 
 在本主题中，您创建和编辑快速创建窗体。
 
- 使用快速创建窗体，您的应用可以获得精简的数据输入体验，并且完全支持窗体脚本和业务规则定义的逻辑。 在 PowerApps 模型驱动应用程序中，选择导航栏中的**创建**按钮或从查找或子网格创建新记录期间选择 **+ 新建**时，将显示快速创建窗体。
+ 使用快速创建窗体，您的应用可以获得精简的数据输入体验，并且完全支持窗体脚本和业务规则定义的逻辑。 在 Power Apps 模型驱动应用程序中，选择导航栏中的**创建**按钮或从查找或子网格创建新记录期间选择 **+ 新建**时，将显示快速创建窗体。
   
- Dynamics 365 移动应用程序使用快速创建窗体创建新记录。 如果已经为实体配置了快速创建窗体，移动应用程序将使用该窗体。 如果没有为实体配置快速创建窗体，PowerApps 将生成快速创建窗体，用于在移动应用程序中基于主窗体定义创建记录。  
+ Dynamics 365 移动应用程序使用快速创建窗体创建新记录。 如果已经为实体配置了快速创建窗体，移动应用程序将使用该窗体。 如果没有为实体配置快速创建窗体，Power Apps 将生成快速创建窗体，用于在移动应用程序中基于主窗体定义创建记录。  
   
 <a name="BKMK_QuickCreateFormEntities"></a>   
 ## <a name="entities-with-quick-create-forms"></a>具有快速创建窗体的实体  
@@ -61,7 +61,7 @@ ms.locfileid: "2759148"
   
 ### <a name="how-to-create-a-quick-create-form"></a>如何创建快速创建窗体  
   
-1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 
 > [!IMPORTANT]
@@ -99,7 +99,7 @@ ms.locfileid: "2759148"
   
 ### <a name="to-edit-a-quick-create-form"></a>编辑快速创建窗体  
   
-1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 > [!IMPORTANT]
 > 如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。    

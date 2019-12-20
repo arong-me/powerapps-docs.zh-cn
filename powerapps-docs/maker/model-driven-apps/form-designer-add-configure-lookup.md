@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8ba09c46a46d0a4d40891419e1f6eb787f75f096
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 67941c3793be4a7dbb6860a6787536759cc267c4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703895"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868279"
 ---
 # <a name="configure-a-lookup-component-on-a-form"></a>在窗体中配置查找组件  
 查找字段可用于链接至其他实体中的记录。 如果向窗体添加查找字段，将自动使用查找组件。 开发者可使用窗体设计器配置查找组件。

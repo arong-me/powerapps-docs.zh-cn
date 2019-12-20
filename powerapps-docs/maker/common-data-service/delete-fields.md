@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中删除字段 | MicrosoftDocs
+title: 在 Power Apps 中删除字段 | MicrosoftDocs
 description: 了解如何删除字段
 ms.custom: ''
 ms.date: 06/20/2018
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9438141001c4b3ce11bfe8c72bc14ec2866f3791
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 224c07600a13b0adf9cedd7592be7f1c2befec90
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705523"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864035"
 ---
 # <a name="delete-fields"></a>删除字段
 

@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerApps 的模型驱动应用主窗体的设计注意事项 | MicrosoftDocs
+title: 使用 Power Apps 的模型驱动应用主窗体的设计注意事项 | MicrosoftDocs
 description: 了解如何设计主窗体
 ms.custom: ''
 ms.date: 06/27/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0af7158c1734c0a73fc6658ee15f865e3d516676
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: fcf37cd2de916e2f418c8cc5417fb5e4c9c2073b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703675"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860399"
 ---
 # <a name="design-considerations-for-model-driven-app-main-forms"></a>模型驱动应用程序主窗体的设计注意事项
 

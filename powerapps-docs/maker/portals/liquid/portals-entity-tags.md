@@ -1,28 +1,28 @@
 ---
-title: 为门户使用 PowerApps Common Data Service 实体标记 | MicrosoftDocs
-description: 了解门户中的可用 PowerApps Common Data Service 实体标记。
+title: 为门户使用 Power Apps Common Data Service 实体标记 | MicrosoftDocs
+description: 了解门户中的可用 Power Apps Common Data Service 实体标记。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/28/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: b6efc3e176602d366315b9b54b66593005051e55
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f252b0c9ef0ea90f6206863fe45a36702e4ce481
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757124"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884637"
 ---
-# <a name="powerapps-common-data-service-entity-tags"></a>PowerApps Common Data Service 实体标记
+# <a name="power-apps-common-data-service-entity-tags"></a>Power Apps Common Data Service 实体标记
 
-PowerApps 实体标记用于加载和显示 PowerApps 数据，或使用其他 PowerApps 门户框架服务。 这些标记是 PowerApps 特定的 Liquid 语言扩展。
+Power Apps 实体标记用于加载和显示 Power Apps 数据，或使用其他 Power Apps 门户框架服务。 这些标记是 Power Apps 特定的 Liquid 语言扩展。
 
 ## <a name="chart"></a>图表
 
-向网页添加 PowerApps 图表。 可在网页中的“复制”字段内或 Web 模板中的“源”字段内添加图表标记。 有关向网页添加 PowerApps 图表的步骤，请参阅[向门户中的网页添加图表](../configure/add-chart.md)。
+向网页添加 Power Apps 图表。 可在网页中的“复制”字段内或 Web 模板中的“源”字段内添加图表标记。 有关向网页添加 Power Apps 图表的步骤，请参阅[向门户中的网页添加图表](../configure/add-chart.md)。
 
 ```
 {% chart id:"EE3C733D-5693-DE11-97D4-00155DA3B01E" viewid:"00000000-0000-0000-00AA-000010001006" %}
@@ -45,7 +45,7 @@ PowerApps 实体标记用于加载和显示 PowerApps 数据，或使用其他 P
 在页面内添加 Power BI 仪表板和报表。 可在网页中的**复制**字段内或 Web 模板中的**源**字段内添加此标记。 有关向门户中的网页添加 Power BI 报表或仪表板的步骤，请参阅[向门户中的网页添加 Power BI 报表或仪表板](../admin/add-powerbi-report.md)。
 
 > [!NOTE]
-> 要使该标记生效，必须从 PowerApps 门户管理中心[启用 Power BI 集成](../admin/set-up-power-bi-integration.md)。 如果未启用 Power BI 集成，则不显示仪表板或报表。
+> 要使该标记生效，必须从 Power Apps 门户管理中心[启用 Power BI 集成](../admin/set-up-power-bi-integration.md)。 如果未启用 Power BI 集成，则不显示仪表板或报表。
 
 ### <a name="parameters"></a>参数
 
@@ -56,14 +56,14 @@ powerbi 标记接受以下参数：
 Power BI 报表或仪表板的路径。 如果 Power BI 报表或仪表板安全，则必须提供身份验证类型。
 
 ```
-{% powerbi path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
+{% powerbi authentication_type:"powerbiembedded" path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
 ```
 
 **authentication_type**
 
 Power BI 报表或仪表板所需身份验证的类型。 此参数的有效值为：
 
-- **匿名**：允许您将发布嵌入到 Web Power BI 报表。 默认身份验证类型为“匿名”。
+- **匿名**：允许您将发布嵌入到 Web Power BI 报表。 默认身份验证类型为“匿名”。 身份验证类型使用“匿名”时，必须按照以下说明获取 Power BI 报表 URL：[从 Power BI 发布到 Web](https://docs.microsoft.com/power-bi/service-publish-to-web)
 
 - **AAD**：允许您将安全的 Power BI 报表或仪表板共享给经过身份验证的 Power BI Azure Active Directory 用户。
 
@@ -139,7 +139,7 @@ URL?filter=**Table**/**Field** eq '**value**'
 
 ## <a name="editable"></a>可编辑
 
-为具有该对象内容编辑权限的用户呈现特定 PowerApps 门户 CMS 对象，形式为可编辑对象。 可编辑对象包括[page](liquid-objects.md#page)、[snippets](liquid-objects.md#snippets) 和 [weblinks](liquid-objects.md#weblinks)。  
+为具有该对象内容编辑权限的用户呈现特定 Power Apps 门户 CMS 对象，形式为可编辑对象。 可编辑对象包括[page](liquid-objects.md#page)、[snippets](liquid-objects.md#snippets) 和 [weblinks](liquid-objects.md#weblinks)。  
 
 ```
 {% editable page 'adx_copy' type: 'html', title: 'Page Copy', escape: false, liquid: true %}
@@ -284,7 +284,7 @@ Loaded entity list {{ entitylist.adx_name }}.
 
 **language\_code**
 
-加载用于选择实体列表本地化标签的 PowerApps 整数语言代码。 如果未提供 language\_code，将使用门户应用程序 PowerApps 连接的默认语言。
+加载用于选择实体列表本地化标签的 Power Apps 整数语言代码。 如果未提供 language\_code，将使用门户应用程序 Power Apps 连接的默认语言。
 
 ```
 {% entitylist name:"My Entity List", language_code:1033 %}
@@ -296,7 +296,7 @@ Loaded entity list {{ entitylist.adx_name }}.
 
 ## <a name="entityview"></a>entityview
 
-按名称或 ID 加载特定 PowerApps 视图。 视图的属性 视图列元数据、分页结果记录等可使用标记区块中提供的 [entityview 对象](liquid-objects.md#entityview)进行访问。  
+按名称或 ID 加载特定 Power Apps 视图。 视图的属性 视图列元数据、分页结果记录等可使用标记区块中提供的 [entityview 对象](liquid-objects.md#entityview)进行访问。  
 
 如果成功加载视图，则将呈现区块中的内容。 如果未找到视图，则将不会呈现区块内容。
 
@@ -334,7 +334,7 @@ Loaded default view of the entity list associated with the current page, with {{
 
 ### <a name="parameters"></a>参数
 
-提供 id **或** logical\_name **之一**以及 name 来选择要加载的 PowerApps 视图。 如果两者均未提供，并且 entityview 标记嵌套在 entitylist 标记中，则将加载包含 entitylist 的默认视图。
+提供 id **或** logical\_name **之一**以及 name 来选择要加载的 Power Apps 视图。 如果两者均未提供，并且 entityview 标记嵌套在 entitylist 标记中，则将加载包含 entitylist 的默认视图。
 
 **id**
 
@@ -360,7 +360,7 @@ Loaded entity view {{ entityview.name }} using view query string request paramet
 
 **logical\_name**
 
-要加载的视图的 PowerApps 实体逻辑名称。 必须与 name 结合使用。
+要加载的视图的 Power Apps 实体逻辑名称。 必须与 name 结合使用。
 
 ```
 {% entityview logical_name:'contact', name:"Active Contacts" %}
@@ -372,7 +372,7 @@ Loaded entity view with {{ entityview.total_records }} total records.
 
 **name**
 
-要加载的视图的 PowerApps 名称。 必须与 logical\_name 结合使用。
+要加载的视图的 Power Apps 名称。 必须与 logical\_name 结合使用。
 
 ```
 {% entityview logical_name:'contact', name:"Active Contacts" %}
@@ -527,7 +527,7 @@ Loaded entity view with {{ entityview.total_records }} total records to which th
 
 **language\_code**
 
-要加载的用于选择实体视图标签（列标签等）的 PowerApps 整数语言代码。 如果未提供 language\_code，将使用门户应用程序 PowerApps 连接的默认语言。
+要加载的用于选择实体视图标签（列标签等）的 Power Apps 整数语言代码。 如果未提供 language\_code，将使用门户应用程序 Power Apps 连接的默认语言。
 
 如果在 entitylist 块中使用 entityview，entityview 将从 entitylist 中继承其语言代码配置。
 
@@ -636,7 +636,7 @@ searchindex 标记接受以下参数。
 
 **logical\_names**
 
-限制匹配结果的 PowerApps 实体逻辑名称，形式为逗号分隔的字符串。 如果不提供，将返回所有匹配的实体。
+限制匹配结果的 Power Apps 实体逻辑名称，形式为逗号分隔的字符串。 如果不提供，将返回所有匹配的实体。
 
 ```
 {% searchindex query: request.params.query, logical_names: 'kbarticle,incident' %}
@@ -681,7 +681,7 @@ searchindex 标记接受以下参数。
 
 ## <a name="entityform"></a>entityform
 
-按名称或 ID 完全呈现已配置 PowerApps 的实体窗体。  
+按名称或 ID 完全呈现已配置 Power Apps 的实体窗体。  
 
 > [!Note]
 > entityform 标记仅可用于基于 <em>[Web 模板](store-content-web-templates.md)</em>的页面模板中呈现的内容。 尝试在基于重写的页面模板中使用标记将不会呈现任何内容。 每个页面仅可呈现一个 entityform 或 webform 标记。 不会呈现第一个标记之后的 entityform 或 webform 标记。       
@@ -696,9 +696,9 @@ searchindex 标记接受以下参数。
 
 `{% entityform name:My Entity Form %}`
 
-### <a name="webform"></a>**webform**
+## <a name="webform"></a>webform
 
-按名称或 ID 完全呈现已配置 PowerApps 的 Web 窗体。 webform 标记仅可用于基于 [Web 模板](store-content-web-templates.md)的页面模板中呈现的内容。 尝试在基于重写的页面模板中使用标记将不会呈现任何内容。 每个页面仅可呈现一个 entityform 或 webform 标记。 不会呈现第一个标记之后的 entityform 或 webform 标记。                
+按名称或 ID 完全呈现已配置 Power Apps 的 Web 窗体。 webform 标记仅可用于基于 [Web 模板](store-content-web-templates.md)的页面模板中呈现的内容。 尝试在基于重写的页面模板中使用标记将不会呈现任何内容。 每个页面仅可呈现一个 entityform 或 webform 标记。 不会呈现第一个标记之后的 entityform 或 webform 标记。                
 `{% webform name: 'My Web Form' %}`
 
 ### <a name="parameters"></a>参数
@@ -708,6 +708,7 @@ searchindex 标记接受以下参数。
 希望加载的 Web 窗体的名称。
 
 `{% webform name:My Web Form %}`
+
 
 ### <a name="see-also"></a>另请参阅
 

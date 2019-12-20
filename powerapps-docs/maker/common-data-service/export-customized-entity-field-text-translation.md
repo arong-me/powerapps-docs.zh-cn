@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerApps 导出要翻译的自定义实体和字段文本 | MicrosoftDocs
+title: 使用 Power Apps 导出要翻译的自定义实体和字段文本 | MicrosoftDocs
 description: 了解如何导出要翻译的实体和字段文本
 ms.custom: ''
 ms.date: 06/19/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f14cf61f6f09df50a4245116b23f82bd2e147ef1
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9061b953aff67a4fa98c342f89dbc3bf20c4ff93
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705259"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863716"
 ---
 # <a name="translate-customized-entity-and-field-text-into-other-languages"></a>将自定义的实体和字段文本翻译为其他语言
 
@@ -42,7 +42,7 @@ ms.locfileid: "2705259"
 
 ## <a name="community-tools"></a>社区工具
 
-[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) 是 XrmToolBox 社区为 PowerApps 开发的一款工具。 可使用 Easy Translator 导出和导入翻译和上下文信息。 
+[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) 是 XrmToolBox 社区为 Power Apps 开发的一款工具。 可使用 Easy Translator 导出和导入翻译和上下文信息。 
 
 > [!NOTE]
 > 这些社区工具不受 Microsoft 支持。 如果您对该工具有任何疑问，请联系发布者。 详细信息：[XrmToolBox](https://www.xrmtoolbox.com)。

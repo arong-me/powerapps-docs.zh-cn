@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中定义模型驱动应用的数据 | MicrosoftDocs
+title: 在 Power Apps 中定义模型驱动应用的数据 | MicrosoftDocs
 description: 了解如何定义模型驱动应用程序的数据
 Keywords: 数据, 实体, 字段, 关系, 属性, 模型驱动应用程序
 author: Mattp123
@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 65a4766be330fba6a2ec0ed25a532a5ea37f7138
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7bdd0a9fdfce45c1e8d61f76cc542de09a0d344d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705039"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860355"
 ---
 # <a name="define-data-for-your-model-driven-app"></a>定义模型驱动应用程序的数据
 

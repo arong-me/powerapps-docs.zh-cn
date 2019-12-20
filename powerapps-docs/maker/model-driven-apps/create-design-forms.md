@@ -23,16 +23,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3e3a3e8bd5527f9707849bf1b54247605d447469
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d052e981d80578a2db844f3e8ff3f70ff0c07c2c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2704555"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884901"
 ---
 # <a name="create-and-design-model-driven-app-forms"></a>创建和设计模型驱动应用程序窗体 
 
-通过 PowerApps，窗体提供用户用于与其工作所需的数据交互的用户界面。 用户所用的窗体要设计成允许他们高效地查找或输入所需的信息，这很重要。 
+通过 Power Apps，窗体提供用户用于与其工作所需的数据交互的用户界面。 用户所用的窗体要设计成允许他们高效地查找或输入所需的信息，这很重要。 
 
 在默认解决方案或非托管解决方案中，您可以为允许窗体自定义的所有实体创建新窗体或编辑现有窗体。 在非托管解决方案中，可以编辑为该解决方案创建的非托管自定义实体的托管属性。
 如果您正在查看托管解决方案，则无法为实体创建新窗体或编辑现有窗体。 但是，如果托管解决方案中某个实体的托管属性设置为允许自定义，则可以为此实体添加或编辑窗体。 
@@ -40,12 +40,12 @@ ms.locfileid: "2704555"
 
 <a name="BKMK_TypesOfForms"></a> 
 ## <a name="type-of-forms"></a>窗体类型
-有不同类型的窗体，每个类型具有特定功能或用途。 详细信息：[PowerApps 中的窗体类型](types-forms.md)。  
+有不同类型的窗体，每个类型具有特定功能或用途。 详细信息：[Power Apps 中的窗体类型](types-forms.md)。  
 
   
 <a name="BKMK_FormDifferencesByEntity"></a>   
 ## <a name="updated-versus-classic-entities"></a>更新后的实体与经典实体  
-PowerApps 提供了许多窗体设计选项。 借助统一接口，更新了大多数实体以更契合响应式接口。 更新后的实体和您自己的自定义实体中包含对 Dynamics 365 for tablets 客户端、业务流程和业务规则的支持。 使用这些实体时，设计一次即可部署到所有客户端。  
+Power Apps 提供了许多窗体设计选项。 借助统一接口，更新了大多数实体以更契合响应式接口。 更新后的实体和您自己的自定义实体中包含对 Dynamics 365 for tablets 客户端、业务流程和业务规则的支持。 使用这些实体时，设计一次即可部署到所有客户端。  
   
 仍然有一些实体（此处称为经典实体）保留了来自早期版本的外观和功能。 这些实体使用频率不高。 在下面列出来了：  
   

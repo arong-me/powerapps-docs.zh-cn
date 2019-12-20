@@ -17,12 +17,12 @@ search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: d8a81b531f43f3e252f2df348b8ae95551e068d4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f245d4c2a9272d10f7aefa2b2847adba5ce0f6e5
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702795"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860795"
 ---
 # <a name="add-the-sharepoint-documents-tab-to-the-main-form-for-an-entity"></a>将“SharePoint 文档”选项卡添加到实体的主窗体
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "2702795"
 > 要使用此功能，必须启用文档管理。 详细信息：[使用 SharePoint 管理您的文档](/dynamics365/customer-engagement/admin/manage-documents-using-sharepoint)
 
 ## <a name="add-the-documents-tab-in-the-formxml"></a>在 FormXML 中添加文档选项卡 
-1.  新建解决方案。 登录 PowerApps 并转到**解决方案**，选择**新建解决方案**，然后输入必填信息和可选信息。 详细信息：[创建解决方案](../common-data-service/create-solution.md)
+1.  新建解决方案。 登录 Power Apps 并转到**解决方案**，选择**新建解决方案**，然后输入必填信息和可选信息。 详细信息：[创建解决方案](../common-data-service/create-solution.md)
 2. 将实体添加到要在主窗体上添加“文档”选项卡的解决方案中。 支持所有标准和自定义实体。 详细信息：[向解决方案添加现有组件](/powerapps/maker/common-data-service/use-solution-explorer#add-an-existing-component-to-a-solution)
 3. 在解决方案中包括实体的窗体，例如客户实体的主窗体。 在实体旁边，选择 **...**，然后选择**编辑**。 选择**窗体**选项卡。如果缺少所需的窗体，请添加它。   
 
@@ -45,7 +45,7 @@ ms.locfileid: "2702795"
 5. 在窗体设计器中，选择窗体设计器区域上的**新建选项卡**，选择**添加字段**，然后在左窗格中添加诸如*地址 1: 市/县*之类的字段。 您可以为选项卡使用任何文本或数字字段。![向选项卡添加字段](media/add-field-to-tab.png)
 6. 重命名选项卡标签。 为此，选择**新建选项卡**，然后在右侧的属性窗格中用更具描述性的内容替换**新建选项卡**，例如*文件*。
 7. 选择**保存**，选择**发布**，然后关闭窗体设计器。 
-8. 在 PowerApps 开发者主页上，选择**解决方案**，选择该解决方案，然后选择**导出**将解决方案导出为非托管解决方案。 详细信息：[导出解决方案](../common-data-service/import-update-export-solutions.md#export-solutions) 
+8. 在 Power Apps 开发者主页上，选择**解决方案**，选择该解决方案，然后选择**导出**将解决方案导出为非托管解决方案。 详细信息：[导出解决方案](../common-data-service/import-update-export-solutions.md#export-solutions) 
 9. 提取解决方案，并使用 XML 或文本编辑器打开 customization.xml 文件。 
 10. 在 customization.xml 中搜索 **label description="Files"**（或您在上一步中为选项卡标签指定的任何名称）。
 11. 向下滚动到 control id="*field name*" 元素，例如 **control id="address1_city"**，然后将整个元素替换为本主题中的 [XML 示例](#xml-sample-for-adding-the-documents-tab-to-a-form)。 

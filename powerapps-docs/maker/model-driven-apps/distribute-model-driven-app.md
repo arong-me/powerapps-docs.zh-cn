@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 72f5ad809983738526a03f306c3479f53745d991
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2d9c6692f26e16b03872696b094ccd14a649299f
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755387"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873165"
 ---
 # <a name="distribute-a-model-driven-app-using-a-solution"></a>使用解决方案分发模型驱动应用程序
 
@@ -38,7 +38,7 @@ ms.locfileid: "2755387"
 ## <a name="add-an-app-to-a-solution"></a>向解决方案中添加应用程序
 为了分发应用程序，您创建解决方案，以可以打包应用程序以供导出。
 
-1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 2. 选择**解决方案**，然后选择**新建解决方案**。
 3. 在**新建解决方案**页上填写字段，然后选择**保存**。 详细信息：[创建解决方案](../common-data-service/create-solution.md)
@@ -66,7 +66,7 @@ ms.locfileid: "2755387"
 ## <a name="import-a-solution"></a>导入解决方案  
 收到包含要导入的应用的解决方案 zip 文件时，请打开解决方案组件页，然后导入解决方案。 成功导入解决方案后，应用程序将在您的环境中可用。
 
-1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 2. 选择**解决方案**，然后在工具栏上选择**导入**。
 3. 浏览到要导入的文件，然后选择**下一步**。

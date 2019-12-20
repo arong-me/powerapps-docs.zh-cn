@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中创建或编辑模型驱动应用的快速视图窗体 | MicrosoftDocs
+title: 在 Power Apps 中创建或编辑模型驱动应用的快速视图窗体 | MicrosoftDocs
 description: 了解如何创建或编辑快速视图窗体
 ms.custom: ''
 ms.date: 05/23/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0384b233ddd9df0f88019df6064f5a99ef8af0bd
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e6a4540927ad4329bab936fac631e2693d618104
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759104"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875254"
 ---
 # <a name="create-a-model-driven-app-quick-view-form-to-view-information-about-a-related-entity"></a>创建模型驱动应用程序的快速视图窗体以查看有关相关实体的信息
 
@@ -43,7 +43,7 @@ ms.locfileid: "2759104"
 ## <a name="create-a-quick-view-form"></a>创建快速视图窗体  
  使用窗体编辑器创建快速查看窗体，方式与创建其他窗体的方式类似。 快速查看窗体为只读。 用其创建只读窗体。  
   
-1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 
     > [!IMPORTANT]
@@ -79,7 +79,7 @@ ms.locfileid: "2759104"
 ## <a name="add-a-quick-view-control-to-a-main-form"></a>向主窗体添加快速视图控件  
  只能将快速视图窗体添加存在查找字段的主窗体中，查找的目标是快速视图窗体的实体。  
   
-1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
     > [!IMPORTANT]
     > “如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。     

@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中使用模型驱动应用的主窗体及其组件 | Microsoft Docs
+title: 在 Power Apps 中使用模型驱动应用的主窗体及其组件 | Microsoft Docs
 description: 了解如何在基于统一接口的应用中使用主窗体及其组件
 keywords: 主窗体；Customer Service；客户服务中心；Dynamics 365
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 610a4baf51a2affea142b496d016d732fa626d20
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3232099a5ad1526ad351aea37e8952afc6e474bf
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755892"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884238"
 ---
 # <a name="use-the-model-driven-app-main-form-and-its-components"></a>使用模型驱动应用程序的主窗体及其组件
 
@@ -41,9 +41,9 @@ ms.locfileid: "2755892"
 > 如果在编辑窗体的过程中创建任何新的解决方案组件，则组件的名称将使用默认解决方案的解决方案发布商自定义前缀，并且这些组件将仅包含在默认解决方案中。 如果要将任何新的解决方案组件包含在某个特定的非托管解决方案中，则应通过该非托管解决方案打开窗体编辑器。
 
 
-### <a name="access-the-form-editor-through-app-designer-in-powerapps"></a>通过 PowerApps 中的应用程序设计器访问窗体编辑器
+### <a name="access-the-form-editor-through-app-designer-in-power-apps"></a>通过 Power Apps 中的应用程序设计器访问窗体编辑器
 
-1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 2.  在左侧导航窗格上选择**应用程序**，选择所需的应用程序，然后在工具栏上选择**编辑**。  
 
@@ -64,7 +64,7 @@ ms.locfileid: "2755892"
 
 ### <a name="access-the-form-editor-through-the-default-solution"></a>通过默认解决方案访问窗体编辑器
 
-1.  登录到 [PowerApps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1.  登录到 [Power Apps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 2.  展开**数据**，选择**实体**，选择所需实体，然后选择**窗体**选项卡。  
 

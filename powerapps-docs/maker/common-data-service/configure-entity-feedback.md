@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerApps 配置要反馈的实体 | MicrosoftDocs
+title: 使用 Power Apps 配置要反馈的实体 | MicrosoftDocs
 description: 了解如何启用实体的反馈
 ms.custom: ''
 ms.date: 05/18/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bdcc864aeb8c0cf63eccbc75c7b78d5352136ff9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0ccf81df57754d6b111e3769d45d8398a9907eb2
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2704951"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861635"
 ---
 # <a name="configure-an-entity-for-feedbackratings"></a>为反馈/评级配置实体
 

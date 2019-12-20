@@ -1,5 +1,5 @@
 ---
-title: 通过 PowerApps 创建和编辑模型驱动应用程序的公共视图或系统视图 | MicrosoftDocs
+title: 通过 Power Apps 创建和编辑模型驱动应用程序的公共视图或系统视图 | MicrosoftDocs
 description: 立即了解如何使用应用程序设计器创建或编辑视图
 keywords: ''
 ms.date: 11/27/2018
@@ -24,18 +24,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3c3e7133076eb46718ed3f60d1df4f36a012c520
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 03bfaec424624be1094314dbae763114892d2a59
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753878"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884857"
 ---
 # <a name="create-and-edit-public-or-system-model-driven-app-views"></a>创建和编辑模型驱动应用程序的公共视图或系统视图
 
 在本主题中，您执行使用视图所需的多个任务，如创建公共视图，将现有视图添加到应用程序，以及更改视图的列、筛选器和排序顺序。
 
-在 PowerApps 中，视图定义如何显示特定实体的记录。 视图定义以下事项：
+在 Power Apps 中，视图定义如何显示特定实体的记录。 视图定义以下事项：
 -  要显示的列（属性）
 -  列的宽度
 -  默认如何为记录排序
@@ -48,9 +48,9 @@ ms.locfileid: "2753878"
 
 详细信息：[了解视图](create-edit-views.md)
 
-## <a name="create-a-public-view-in-powerapps"></a>在 PowerApps 中创建公共视图
-作为应用制造者，您可使用 PowerApps 创建和编辑公共视图。
-1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+## <a name="create-a-public-view-in-power-apps"></a>在 Power Apps 中创建公共视图
+作为应用制造者，您可使用 Power Apps 创建和编辑公共视图。
+1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 
     > [!IMPORTANT]
@@ -84,7 +84,7 @@ ms.locfileid: "2753878"
 ### <a name="open-and-add-a-view-in-the-app-designer"></a>在应用程序设计器中打开和添加视图
 
 以下步骤介绍如何在应用程序设计器中打开和添加视图。
-1. 在 PowerApps 中，从左侧导航窗格选择**应用**，选择所需应用旁边的 **...**，然后选择**编辑**。 
+1. 在 Power Apps 中，从左侧导航窗格选择**应用**，选择所需应用旁边的 **...**，然后选择**编辑**。 
 
 2. 在应用程序设计器的**实体视图**部分中，选择**视图**。
 
@@ -181,7 +181,7 @@ ms.locfileid: "2753878"
 
 
 ## <a name="community-tools"></a>社区工具
-**View Layout Replicator** 和 **View Designer** 是 XrmToolbox 社区为 PowerApps 开发的工具。
+**View Layout Replicator** 和 **View Designer** 是 XrmToolbox 社区为 Power Apps 开发的工具。
 
 详细信息：[开发人员工具](/powerapps/developer/common-data-service/developer-tools)。
 

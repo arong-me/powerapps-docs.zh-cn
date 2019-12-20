@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9e57aa7395b6c8fdbcfe35c944f625d9790f592a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c917314137580ffee9d70f702c87bfb265a55810
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757652"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872945"
 ---
 # <a name="create-a-solution"></a>创建解决方案
 
@@ -35,7 +35,7 @@ ms.locfileid: "2757652"
   
  有关解决方案概念的详细信息，请参阅[使用解决方案](solutions-overview.md)。  
   
-1.  登录 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后从左侧导航中选择**解决方案**。 
+1.  登录 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后从左侧导航中选择**解决方案**。 
   
 2.  选择**新建解决方案**，然后填写解决方案的必填字段。
   

@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c58e70e596bc2382907da5baebfe8d901cb9f420
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 287df9ac6daa38022a269177247a5b446bdfa1fa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702311"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869972"
 ---
 # <a name="set-managed-properties-in-common-data-service-metadata"></a>在 Common Data Service 元数据中设置托管属性 
 
@@ -64,7 +64,7 @@ ms.locfileid: "2702311"
 
 ## <a name="field-managed-properties"></a>字段托管属性
 
-有关如何编辑字段的信息，请参阅[使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)。
+有关如何编辑字段的信息，请参阅[使用 Power Apps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)。
 
 在[查看字段](create-edit-field-solution-explorer.md#view-fields)时，从非托管解决方案中选择自定义字段，然后在菜单栏上选择**其他操作** >  **托管属性**。
 
@@ -100,6 +100,6 @@ ms.locfileid: "2702311"
 
 [托管属性](solutions-overview.md#managed-properties)<br />
 [使用解决方案资源管理器创建和编辑实体](create-edit-entities-solution-explorer.md)<br />
-[使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)<br />
+[使用 Power Apps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)<br />
 [使用解决方案资源管理器创建和编辑 1:N（一对多）或 N:1（多对一）实体关系](create-edit-1n-relationships-solution-explorer.md)<br />
 [使用解决方案资源管理器在 Common Data Service 中创建 N:N（多对多）实体关系](create-edit-nn-relationships-solution-explorer.md)

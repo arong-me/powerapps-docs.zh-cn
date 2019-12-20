@@ -1,5 +1,5 @@
 ---
-title: PowerApps 中模型驱动应用主窗体的 iFrame 属性 | MicrosoftDocs
+title: Power Apps 中模型驱动应用主窗体的 iFrame 属性 | MicrosoftDocs
 description: 了解主窗体的 iFrame 属性
 Keywords: 主窗体; iFrame 属性; Dynamics 365
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 532b720277cdc9649e8ef161e9ff623298c5f570
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7c4d4348726dfb53b0b54e3a8d86a1809a568b7b
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754026"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874990"
 ---
 # <a name="iframe-properties-for-model-driven-app-main-forms"></a>模型驱动应用程序主窗体的 iFrame 属性
 
@@ -31,7 +31,7 @@ ms.locfileid: "2754026"
 
 若要查看 IFrame 属性，请执行以下步骤。
 
-1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 2.  展开**数据**，选择**实体**，选择所需实体，然后选择**窗体**选项卡。 
 

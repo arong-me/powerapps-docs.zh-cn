@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerApps 门户在 Common Data Service 中创建多对多实体关系 | MicrosoftDocs
+title: 使用 Power Apps 门户在 Common Data Service 中创建多对多实体关系 | MicrosoftDocs
 description: 了解如何创建多或多关系
 ms.custom: ''
 ms.date: 06/11/2018
@@ -20,16 +20,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9a0a8ec96760c6816ea2b6caaf4bcc760b9852de
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: dd85ee8b5b44ad6db9ac70a38984eb5c04cd12d8
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757696"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865754"
 ---
-# <a name="create-many-to-many-entity-relationships-in-common-data-service-using-powerapps-portal"></a>使用 PowerApps 门户在 Common Data Service 中创建多对多实体关系
+# <a name="create-many-to-many-entity-relationships-in-common-data-service-using-power-apps-portal"></a>使用 Power Apps 门户在 Common Data Service 中创建多对多实体关系
 
-[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供为 Common Data Service 创建和编辑多对多实体关系的简单方法。
+[Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)提供为 Common Data Service 创建和编辑多对多实体关系的简单方法。
 
 此门户支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。 详细信息： 
 - [创建 N:N（多对多）实体关系](create-edit-nn-relationships.md)
@@ -37,7 +37,7 @@ ms.locfileid: "2757696"
 
 ## <a name="view-many-to-many-entity-relationships"></a>查看多对多实体关系
 
-1. 从 [PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**区域**设计模式。
+1. 从 [Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**区域**设计模式。
 2. 选择**数据** > **实体**，然后选择具有您要查看的关系的实体。
 3. 选择**关系**选项卡后，您可以选择以下视图： 
 
@@ -76,7 +76,7 @@ ms.locfileid: "2757696"
 
 选择**确定**关闭**多对多**面板。 当将更改保存到实体时，将创建关系。 
 
-一旦保存，则不能使用 [PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)更改任何内容。 若要编辑模型驱动应用程序的关系的属性，请使用[解决方案资源管理器](create-edit-nn-relationships-solution-explorer.md)。
+一旦保存，则不能使用 [Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)更改任何内容。 若要编辑模型驱动应用程序的关系的属性，请使用[解决方案资源管理器](create-edit-nn-relationships-solution-explorer.md)。
 
 ## <a name="delete-relationships"></a>删除关系
 

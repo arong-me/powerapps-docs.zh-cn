@@ -1,6 +1,6 @@
 ---
-title: 配置 PowerApps 中模型驱动应用的交互式体验仪表板 | Microsoft Docs
-description: '了解如何配置 PowerApps 中的交互式体验仪表板 '
+title: 配置 Power Apps 中模型驱动应用的交互式体验仪表板 | Microsoft Docs
+description: '了解如何配置 Power Apps 中的交互式体验仪表板 '
 keywords: 交互式仪表板; Customer Service; Microsoft Dynamics 365; 交互式服务中心
 author: Mattp123
 ms.author: matp
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4e73097b6b02f98b6ac5dc83a7f1d833e07a8696
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fefeebb0106907e59ea1fd5a13d620cdeb315774
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752508"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884989"
 ---
 # <a name="configure-model-driven-app-interactive-experience-dashboards"></a>配置模型驱动应用程序的交互式体验仪表板
 
@@ -149,7 +149,7 @@ ms.locfileid: "2752508"
   
 ### <a name="configure-a-multi-stream-interactive-dashboard-using-the-4-column-layout"></a>使用 4 列布局来配置多流交互式仪表板  
  
-1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
   
 2.  选择**数据** > **实体** > 选择所需实体。 
 
@@ -203,7 +203,7 @@ ms.locfileid: "2752508"
   
 #### <a name="edit-or-delete-individual-streams-of-an-existing-dashboard"></a>编辑或删除现有仪表板的单个流  
   
-1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。   
+1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。   
   
 2. 选择**数据** > **实体** > 选择所需实体。 选择**仪表板**选项卡。  
   
@@ -226,7 +226,7 @@ ms.locfileid: "2752508"
 
 例如，实体特定仪表板中的某些字段已预设为您为其创建仪表板的实体，您不必选择实体。  
   
-1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 2.  选择**数据** > **实体** > 选择所需实体。 
 

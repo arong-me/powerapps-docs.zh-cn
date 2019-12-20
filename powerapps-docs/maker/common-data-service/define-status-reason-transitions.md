@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerApps 定义状态描述转换 | MicrosoftDocs
+title: 使用 Power Apps 定义状态描述转换 | MicrosoftDocs
 description: 了解如何定义状态描述转换
 ms.custom: ''
 ms.date: 05/25/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9fb1fc93b5559c47cebeef4fb73ebd095a48f0a5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5dd257a07a21b2d0b0d2a449feb9df855d51d604
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705567"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861103"
 ---
 # <a name="define-status-reason-transitions-for-the-case-or-custom-entities"></a>为案例或自定义实体定义状态原因转换
 
@@ -65,7 +65,7 @@ ms.locfileid: "2705567"
 您可以修改案例实体和自定义实体的状态描述字段选项，从而定义用户可以选择的其他状态描述。 唯一的限制是有效状态的每个状态描述选项必须允许至少一个路径到无效状态。 否则，可能会产生无法解析或删除的案例。  
 
 > [!NOTE]
-> 编辑状态描述转换需要使用解决方案资源管理器。 有关如何编辑字段的信息，请参阅[使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)。
+> 编辑状态描述转换需要使用解决方案资源管理器。 有关如何编辑字段的信息，请参阅[使用 Power Apps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)。
   
  在您编辑状态描述字段时，菜单中显示**编辑状态描述转换**按钮。 
 
@@ -86,7 +86,7 @@ ms.locfileid: "2705567"
   
 ### <a name="see-also"></a>另请参阅  
 
-[使用 PowerApps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)<br />
+[使用 Power Apps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)<br />
 [实体元数据 > 实体状态](/powerapps/developer/common-data-service/entity-metadata#entity-states)<br />
 [定义自定义状态模型转换](/dynamics365/customer-engagement/developer/define-custom-state-model-transitions)
 

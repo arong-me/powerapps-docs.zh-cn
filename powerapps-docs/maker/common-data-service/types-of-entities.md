@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2587dbcd76fe228ed017b2832bb37d05f6a1e884
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: ebf5b794bcfc7ec01abf08315f1dbf59ce6e4808
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703279"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869884"
 ---
 # <a name="types-of-entities"></a>实体类型
 
@@ -72,7 +72,7 @@ ms.locfileid: "2703279"
 您可以创建新的自定义活动实体。 例如，您可以创建自定义活动实体来记录即时消息通信。 创建活动实体不同于创建非活动实体，因为不指定主要字段。 所有活动实体都有一个设置为**主题**的**主要字段** ，以及活动实体定义的其他公用字段。 这使得所有类型的活动都可以在仅显示公用字段的视图中显示。  
 
 > [!NOTE]
-> 您不能使用 PowerApps 门户创建自定义活动。 您必须使用**高级**按钮打开解决方案资源管理器。
+> 您不能使用 Power Apps 门户创建自定义活动。 您必须使用**高级**按钮打开解决方案资源管理器。
   
 若要创建自定义活动实体，请选择**定义为活动实体** 。 在选择此选项后，您将看到选择了**在活动菜单中显示** 。 通过此设置，用户可以在活动菜单中创建此类型的活动。 这不是为通常与特定事件关联并使用代码或工作流创建的活动选择的。 保存实体后，将不能更改这些设置。  
 

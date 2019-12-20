@@ -1,6 +1,6 @@
 ---
-title: 需要 PowerApps 计划 2 许可证的复杂实体 | Microsoft Docs
-description: 需要 PowerApps 计划 2 许可证的 Common Data Service 中的复杂实体列表。
+title: 需要 Power Apps 计划 2 许可证的复杂实体 | Microsoft Docs
+description: 需要 Power Apps 计划 2 许可证的 Common Data Service 中的复杂实体列表。
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -13,25 +13,25 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f5ec7419ea7369a57308e046ae820557303f0d15
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a87b41fd2688992b85fb4dde36a2e7119f4e7a9f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706623"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861235"
 ---
 # <a name="complex-entities-and-licensing"></a>复杂的实体和许可
 
 > [!IMPORTANT]
-> 本主题已过期，将很快更新以反映自 2019 年 10 月 1 日起适用的最新许可变化。 有关实体许可要求的最新信息，请参阅 [PowerApps 许可指南](https://go.microsoft.com/fwlink/?linkid=2085130)。
+> 本主题已过期，将很快更新以反映自 2019 年 10 月 1 日起适用的最新许可变化。 有关实体许可要求的最新信息，请参阅 [Power Apps 许可指南](https://go.microsoft.com/fwlink/?linkid=2085130)。
 
-包含以下复杂服务器端逻辑的实体需要使用这些实体的应用程序或流用户具有 PowerApps 计划 2 或 Microsoft Flow 计划 2 许可证：
+包含以下复杂服务器端逻辑的实体需要使用这些实体的应用程序或流用户具有 Power Apps 计划 2 或 Power Automate 计划 2 许可证：
 
 * 代码插件。详细信息：[插件开发](/powerapps/developer/common-data-service/plug-ins)
 * 实时工作流。 详细信息：[工作流过程](/flow/workflow-processes)
 
     > [!IMPORTANT]
-    >  只转换为实时工作流的工作流被视为实时和同步。 在后台运行的工作流仍可以用于相应的 PowerApps 计划且不需要额外许可证。
+    >  只转换为实时工作流的工作流被视为实时和同步。 在后台运行的工作流仍可以用于相应的 Power Apps 计划且不需要额外许可证。
 
 若要了解您是否已向实体添加了复杂的业务逻辑，请查看在您的环境中配置的插件程序集和工作流的列表。
 
@@ -178,5 +178,5 @@ ms.locfileid: "2706623"
 
 
 ## <a name="licensing"></a>许可
-有关 PowerApps 和 Dynamics 365 许可证的详细信息，请参阅[许可概述](../../administrator/pricing-billing-skus.md)页面。
+有关 Power Apps 和 Dynamics 365 许可证的详细信息，请参阅[许可概述](../../administrator/pricing-billing-skus.md)页面。
 

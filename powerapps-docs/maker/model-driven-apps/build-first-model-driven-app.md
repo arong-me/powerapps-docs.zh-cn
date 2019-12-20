@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerApps 从头构建您的第一个模型驱动应用 | Microsoft Docs
+title: 使用 Power Apps 从头构建您的第一个模型驱动应用 | Microsoft Docs
 description: 了解如何构建简单的模型驱动应用程序
 documentationcenter: ''
 author: Mattp123
@@ -17,25 +17,25 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9c41feb81fbe90c1ca675105fe898b667f61b2b9
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2a1e27dea75ba2e15ee7b96be2b7597430f89cba
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752499"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885033"
 ---
 # <a name="build-your-first-model-driven-app-from-scratch"></a>从头构建您的第一个模型驱动应用程序
-模型驱动应用程序的设计是以组件为中心的应用程序开发方法。 在本主题中，您使用 PowerApps 环境中提供的一种标准实体简化模型驱动应用的创建方法。
+模型驱动应用程序的设计是以组件为中心的应用程序开发方法。 在本主题中，您使用 Power Apps 环境中提供的一种标准实体简化模型驱动应用的创建方法。
 
 > [!TIP]
 > 若要了解有关构建模型驱动应用程序的所有信息，请从此处开始：[了解模型驱动应用程序的组件](model-driven-app-components.md)。 
 
-## <a name="sign-in-to-powerapps"></a>登录到“PowerApps”
-登录到 [PowerApps](https://make.powerapps.com/)。 如果还没有 [!INCLUDE [powerapps](../../includes/powerapps.md)] 帐户，请选择**免费开始**链接。 
+## <a name="sign-in-to-power-apps"></a>登录到“Power Apps”
+登录到 [Power Apps](https://make.powerapps.com/)。 如果还没有 [!INCLUDE [powerapps](../../includes/powerapps.md)] 帐户，请选择**免费开始**链接。 
 
 ## <a name="create-your-model-driven-app"></a>创建您的模型驱动应用程序
 
-1.  选择所需环境，或转到 [PowerApps 管理中心](https://admin.powerapps.com/)创建一个新环境。
+1.  选择所需环境，或转到 [Power Apps 管理中心](https://admin.powerapps.com/)创建一个新环境。
 
   > [!IMPORTANT]
   > 如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。   

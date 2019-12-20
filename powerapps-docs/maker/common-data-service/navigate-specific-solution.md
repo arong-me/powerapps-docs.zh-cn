@@ -1,5 +1,5 @@
 ---
-title: 通过 PowerApps 导航到特定解决方案 | MicrosoftDocs
+title: 通过 Power Apps 导航到特定解决方案 | MicrosoftDocs
 description: 了解如何在您的环境中查找和打开特定解决方案
 ms.custom: ''
 ms.date: 10/29/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3c531af12b6a28346e5e3bfcfc865f643295c32e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b8dc0df3e32b6b5174166078b03228b730c909f9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700243"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870148"
 ---
 # <a name="navigate-to-a-specific-solution"></a>导航到某个特定解决方案
 

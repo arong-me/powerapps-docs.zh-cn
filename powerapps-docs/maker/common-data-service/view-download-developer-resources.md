@@ -1,6 +1,6 @@
 ---
-title: 查看或下载适用于 PowerApps 和 Common Data Service 的开发人员资源 | MicrosoftDocs
-description: 查找适用于 PowerApps 和 Common Data Service 的开发人员资源和服务终结点 URL
+title: 查看或下载适用于 Power Apps 和 Common Data Service 的开发人员资源 | MicrosoftDocs
+description: 查找适用于 Power Apps 和 Common Data Service 的开发人员资源和服务终结点 URL
 keywords: ''
 ms.date: 09/25/2019
 ms.service: powerapps
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ae293843c38e7077580effd1c7670762cec91e1e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4cb1670334f676af1a6ddcb1e90ba47240ed46a4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700419"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869555"
 ---
 # <a name="view-or-download-developer-resources"></a>查看或下载开发人员资源
 
@@ -31,7 +31,7 @@ ms.locfileid: "2700419"
 
 ## <a name="view-the-developer-resources-page-for-your-environment"></a>查看您的环境的“开发人员资源”页
 
-1. 从 PowerApps 门户，选择 ![设置按钮](../../administrator/media/settings-button-nav-bar.png)“设置”按钮并选择**高级自定义**。
+1. 从 Power Apps 门户，选择 ![设置按钮](../../administrator/media/settings-button-nav-bar.png)“设置”按钮并选择**高级自定义**。
 
     ![高级自定义](media/advanced-customizations-menu.png)
 
@@ -44,11 +44,11 @@ ms.locfileid: "2700419"
 
 |链接 |说明|
 |---------|---------|
-|[开发人员中心](https://go.microsoft.com/fwlink/?LinkId=551006)。|在此处开始获取有关 PowerApps和 Common Data Service 的开发人员文档。|
-|[PowerApps 社区/论坛](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)|在 PowerApps 社区中提问和回答问题。|
+|[开发人员中心](https://go.microsoft.com/fwlink/?LinkId=551006)。|在此处开始获取有关 Power Apps和 Common Data Service 的开发人员文档。|
+|[Power Apps 社区/论坛](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)|在 Power Apps 社区中提问和回答问题。|
 |[NuGet包](https://www.nuget.org/profiles/crmsdk)|了解 NuGet 包，向您的项目添加 SDK 程序集。|
 |[下载工具](/powerapps/developer/common-data-service/download-tools-nuget)|您需要的工具可以从 NuGet 下载。 使用此页面的 PowerShell 脚本获取最新版本。|
-|[示例代码](https://go.microsoft.com/fwlink/?LinkId=553007)|适用于 PowerApps 的 GitHub 存储库示例。|
+|[示例代码](https://go.microsoft.com/fwlink/?LinkId=553007)|适用于 Power Apps 的 GitHub 存储库示例。|
 |[开发人员概述](https://go.microsoft.com/fwlink/?LinkId=550995)|为开发人员提供概述的主题的链接。|
 
 ## <a name="connect-your-apps-to-this-instance-of-common-data-service"></a>将您的应用程序连接到 Common Data Service 的此实例

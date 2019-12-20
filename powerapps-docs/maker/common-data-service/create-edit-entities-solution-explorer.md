@@ -19,16 +19,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2ec1fb0471ad1f47f4afad083ad89e87633ce9ed
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7774090950b179e349c6c576439ebd4ad47da67b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2707283"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883736"
 ---
 # <a name="create-and-edit-entities-using-solution-explorer"></a>使用解决方案资源管理器创建和编辑实体
 
-您可以使用 PowerApps 门户在大多数常见情况下轻松创建实体，不过不是所有功能都在这里实现。 在需要满足[在 Common Data Service 中创建和编辑实体](create-edit-entities.md)中所述的要求时，可以通过使用解决方案资源管理器创建或编辑实体来实现。
+您可以使用 Power Apps 门户在大多数常见情况下轻松创建实体，不过不是所有功能都在这里实现。 在需要满足[在 Common Data Service 中创建和编辑实体](create-edit-entities.md)中所述的要求时，可以通过使用解决方案资源管理器创建或编辑实体来实现。
 
 ## <a name="open-solution-explorer"></a>打开解决方案资源管理器
 
@@ -203,5 +203,5 @@ Both should point to this include
 
 ### <a name="see-also"></a>另请参阅
 [在 Common Data Service 中创建和编辑实体](create-edit-entities.md)<br />
-[教程：在 PowerApps 中创建包含组件的自定义实体](/powerapps/maker/common-data-service/create-custom-entity)<br />
+[教程：在 Power Apps 中创建包含组件的自定义实体](/powerapps/maker/common-data-service/create-custom-entity)<br />
 [创建解决方案](create-solution.md)

@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: cfc2fd0ca753aebfe7bc77b73c7e7ec1ca011387
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a0ccf3fe2178b711a5eb61bc64814d343c648d25
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709967"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867311"
 ---
 # <a name="change-the-base-url-of-a-portal"></a>更改门户的基础 URL
 
@@ -23,7 +23,7 @@ ms.locfileid: "2709967"
 > [!NOTE]
 > 更改门户的基础 URL 后，之前的 URL 无法再访问，其可由其他客户用于他们的门户。
 
-1.  打开 [PowerApps 门户管理中心](admin-overview.md)。
+1.  打开 [Power Apps 门户管理中心](admin-overview.md)。
 
 2.  转到**门户操作** > **更改基础 URL**。 
 

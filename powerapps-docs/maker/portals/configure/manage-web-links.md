@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 5d0ead5104765ab71848ffcf8c4aaff801a58a20
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d8e2421545247f72b5b164e08b4ac210466048c1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760145"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866827"
 ---
 # <a name="manage-web-links"></a>管理 Web 链接
 
 Web 链接可链接到任何 URL 或可链接到同一个网站内的另一个网页。 当 Web 链接指向网页，网页的安全性和发布状态也应用于 Web 链接。 Web 链接始终为 Web 链接集的一部分。 Web 链接集是一组链接，如主要导航或一组脚注链接。 Web 链结集允许将内部和外部链接分组到一起并排序，不论在站点地图中的位置如何。
 
-## <a name="manage-web-links-in-powerapps-portals"></a>在 PowerApps 门户中管理 Web 链接
+## <a name="manage-web-links-in-power-apps-portals"></a>在 Power Apps 门户中管理 Web 链接
 
 门户自定义项导入到 Common Data Service 环境后，Web 链接可以从 Web 链接集管理。
 

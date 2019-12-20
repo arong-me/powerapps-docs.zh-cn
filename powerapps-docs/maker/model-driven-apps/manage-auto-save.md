@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerApps 禁用模型驱动应用程序中的自动保存 | MicrosoftDocs
+title: 使用 Power Apps 禁用模型驱动应用程序中的自动保存 | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fda8a194a47101eb26d000ea60ede5b38b0f235d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2f09cd488165643a3336c526050abc0b9223b49f
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759456"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875650"
 ---
 # <a name="disable-auto-save-in-a-model-driven-app"></a>禁用模型驱动应用程序中的自动保存
 
@@ -63,7 +63,7 @@ ms.locfileid: "2759456"
 > [!NOTE]
 >  窗体的自动保存将被禁用，但用户每次选择右下角的 ![“自动保存”按钮](media/auto-save-icon.png "A自动保存按钮”) 按钮时，仍将保存数据。 如果用户尝试离开或者关闭数据被更改了的窗体时，则会弹出是否需要保存更改的提示，以阻止用户离开或者关闭该窗体。  
   
-1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 2.  展开**数据**，选择**实体**，选择所需实体，然后选择**窗体**选项卡。  
   

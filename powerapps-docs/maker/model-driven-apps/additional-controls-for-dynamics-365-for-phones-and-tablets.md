@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dc5f2c366d77ca49e5103c89d7114f1defd44b52
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d2883f0912f9708acf8c24b5ec32996cb96ad3c6
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752314"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863584"
 ---
 # <a name="additional-controls-for-dynamics-365-for-phones-and-tablets"></a>适用于手机和平板电脑的其他 Dynamics 365 控件 
 
@@ -155,7 +155,7 @@ ms.locfileid: "2752314"
  使用网站预览控件可映射 URL 字段并显示网站的预览。  
   
 > [!IMPORTANT]
->  一旦启用此控件，即代表您同意允许用户与外部系统共享特定的可识别设备信息。 从外部系统导入 PowerApps 应用或 Dynamics 365 应用（例如 Dynamics 365 Sales 或 Dynamics 365 Customer Service）的数据受我们在 [Microsoft 隐私与 Cookie](https://go.microsoft.com/fwlink/p/?LinkId=521839) 中的隐私声明的约束。  
+>  一旦启用此控件，即代表您同意允许用户与外部系统共享特定的可识别设备信息。 从外部系统导入 Power Apps 应用或 Dynamics 365 应用（例如 Dynamics 365 Sales 或 Dynamics 365 Customer Service）的数据受我们在 [Microsoft 隐私与 Cookie](https://go.microsoft.com/fwlink/p/?LinkId=521839) 中的隐私声明的约束。  
 >   
 >  [隐私声明](use-the-form-editor-legacy.md#BKMK_PrivacyNotices)  
   

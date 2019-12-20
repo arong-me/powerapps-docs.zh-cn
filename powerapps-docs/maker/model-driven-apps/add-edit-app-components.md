@@ -1,6 +1,6 @@
 ---
-title: 使用 PowerApps 添加或编辑模型驱动应用组件的教程 | MicrosoftDocs
-description: 使用 PowerApps 应用程序设计器添加或编辑组件
+title: 使用 Power Apps 添加或编辑模型驱动应用组件的教程 | MicrosoftDocs
+description: 使用 Power Apps 应用程序设计器添加或编辑组件
 keywords: ''
 ms.date: 10/15/2018
 ms.service: powerapps
@@ -23,14 +23,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c9cbb77b0b312b4376aed8b5f9d106e2c2826ea4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f78b990432988de5ba1d6c2b254bef8577770d16
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752182"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873538"
 ---
-# <a name="tutorial-add-or-edit-model-driven-app-components-in-the-powerapps-app-designer"></a>教程：在 PowerApps 应用程序设计器中添加或编辑模型驱动应用组件
+# <a name="tutorial-add-or-edit-model-driven-app-components-in-the-power-apps-app-designer"></a>教程：在 Power Apps 应用程序设计器中添加或编辑模型驱动应用组件
 
 在本教程中，您将了解如何在模型驱动的应用程序中添加和移除组件。 
 
@@ -56,7 +56,7 @@ ms.locfileid: "2752182"
  > ![区域搜索选项](media/app-designer-search-tab.png "区域搜索")
 
 ## <a name="open-an-app"></a>打开应用
-1. 登录到 [PowerApps](https://make.powerapps.com/)。 
+1. 登录到 [Power Apps](https://make.powerapps.com/)。 
 
 2. 选择模型驱动的现有应用程序，或选择**从空白开始**。 有关如何创建应用程序的信息，请参阅[使用应用设计器创建或编辑模型驱动的应用程序](create-edit-app.md#create-an-app)。
 
@@ -85,7 +85,7 @@ ms.locfileid: "2752182"
 
      这些仪表板将添加到应用设计器区域的**仪表板**磁贴中。 **仪表板**磁贴还显示添加到应用程序的仪表板数的计数。 如果不选择仪表板，将不显示仪表板计数，而是显示**全部**，而用户使用应用时，所有仪表板均可供其使用。  
   
-     仪表板使用的所有实体也会添加到**实体视图**区域。 例如，如果添加“Customer Service 经理”仪表板，“案例”、“权限”和“队列项”实体将添加到“实体视图”区域。 对于每个实体，还会添加其资产的磁贴。 您可以使用这些磁贴添加窗体、视图和图表。 详细信息：[在 PowerApps 应用程序设计器中添加或编辑应用组件](add-edit-app-components.md#bkmk_AddEntityAssets)   
+     仪表板使用的所有实体也会添加到**实体视图**区域。 例如，如果添加“Customer Service 经理”仪表板，“案例”、“权限”和“队列项”实体将添加到“实体视图”区域。 对于每个实体，还会添加其资产的磁贴。 您可以使用这些磁贴添加窗体、视图和图表。 详细信息：[在 Power Apps 应用程序设计器中添加或编辑应用组件](add-edit-app-components.md#bkmk_AddEntityAssets)   
   
     ![将实体添加到应用程序设计器区域](../model-driven-apps/media/add-entity-app-designer-canvas.png "将实体添加到应用程序设计器区域")  
   

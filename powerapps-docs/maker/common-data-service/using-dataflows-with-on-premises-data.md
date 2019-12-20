@@ -23,15 +23,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4a47f082520b4680c9045209f85c26beb3586875
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0b534e3c4a7aae36d38901b75b34cc87fd7f511e
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752226"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895228"
 ---
 # <a name="using-an-on-premises-data-gateway-in-power-platform-dataflows"></a>在 Power Platform 数据流中使用本地数据网关
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 可安装本地数据网关，以便在 Power Platform 数据流和非云中数据源（如本地 SQL Server 数据库或本地 SharePoint 站点）之间快速、安全地传输数据。
 可查看您拥有其管理权限的所有网关，以及管理这些网关的权限和连接。
@@ -52,13 +51,13 @@ ms.locfileid: "2752226"
 
 ## <a name="prerequisites"></a>必备条件
 
--   PowerApps 帐户。 还没有？ [注册 30 天的免费试用](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)。
+-   Power Apps 帐户。 还没有？ [注册 30 天的免费试用](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)。
 
 -   网关的管理权限。 默认为您安装的网关提供这些权限。 管理员可以为其他人授予网关的权限。 
 
--   一份支持使用本地网关访问本地数据的许可证。 有关详细信息，请参阅[查找适合的 PowerApps 计划页](https://powerapps.microsoft.com/pricing/)中的“连接到数据和系统”部分。
+-   一份支持使用本地网关访问本地数据的许可证。 有关详细信息，请参阅[查找适合的 Power Apps 计划页](https://powerapps.microsoft.com/pricing/)中的“连接到数据和系统”部分。
 
--   只能在用户的默认环境中创建和使用网关和本地连接。 详细信息：[使用环境和 Microsoft PowerApps](../canvas-apps/working-with-environments.md)。
+-   只能在用户的默认环境中创建和使用网关和本地连接。 详细信息：[使用环境和 Microsoft Power Apps](../canvas-apps/working-with-environments.md)。
 
 ## <a name="install-a-gateway"></a>安装网关
 1.  在 [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 的左侧导航窗格中，选择**网关**。
@@ -107,9 +106,9 @@ ms.locfileid: "2752226"
     - 若要共享连接，请选择**共享**，然后添加或删除用户。
 
       > [!NOTE]
-      > 只能共享某些类型的连接，如 SQL Server 连接。 有关详细信息，请参阅[在 PowerApps 中共享区域应用程序资源](../canvas-apps/share-app-resources.md)。 <br />
+      > 只能共享某些类型的连接，如 SQL Server 连接。 有关详细信息，请参阅[在 Power Apps 中共享区域应用程序资源](../canvas-apps/share-app-resources.md)。 <br />
       >
-      > 有关如何管理连接的详细信息，请参阅[在 PowerApps 中管理区域应用程序连接](../canvas-apps/add-manage-connections.md)。
+      > 有关如何管理连接的详细信息，请参阅[在 Power Apps 中管理区域应用程序连接](../canvas-apps/add-manage-connections.md)。
 
 
 ## <a name="limitations"></a>限制
@@ -127,7 +126,7 @@ ms.locfileid: "2752226"
 
 ## <a name="next-steps"></a>后续步骤
 
-- [在 PowerApps 中创建和使用数据流](create-and-use-dataflows.md)
+- [在 Power Apps 中创建和使用数据流](create-and-use-dataflows.md)
 
 - [使用 Power Query 将数据添加到 Common Data Service 中的实体](data-platform-cds-newentity-pq.md)
 

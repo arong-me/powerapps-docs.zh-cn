@@ -22,18 +22,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e5c0d84da984fbdb5d7bdb4a2f05a567f76cee09
-ms.sourcegitcommit: 7411b4cf9e30e71052fe932dfd3276e969854af4
+ms.openlocfilehash: 25ad6206fb76c1c26f182c4ff4b67c8815e7e8ba
+ms.sourcegitcommit: 94aa6fd38aab1e145e0b9a0189154fb69b0ee223
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2768398"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "2778933"
 ---
 # <a name="create-guided-help-for-your-unified-interface-app"></a>为您的统一接口应用创建引导式帮助
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-使用自定义帮助窗格和向导型任务，为您的统一接口应用程序提供为您的组织定制的自定义产品内帮助体验。 使用自定义帮助窗格提供特定于实体、窗体和语言的帮助和指南，其中包括富文本、内容链接、图像和视频链接。 自定义帮助窗格替代了旧版 Web 客户端应用程序使用的先前的学习路径引导式学习功能。
+使用自定义帮助窗格和向导型任务，为您的统一接口应用程序提供为您的组织定制的自定义产品内帮助体验。 使用自定义帮助窗格提供特定于实体、窗体和语言的帮助和指南，其中包括富文本、内容链接、图像和视频链接。 
+
+> [!IMPORTANT]
+> 自定义帮助窗格替代了旧版 Web 客户端应用程序使用的先前的学习路径引导式学习功能。
 
 ## <a name="custom-help-panes-and-learning-path"></a>自定义帮助窗格和学习路径
 自定义帮助窗格的新的引导式帮助实现不同于以前的学习路径引导式帮助功能。 这两种功能都可以为您的应用程序创建自定义帮助。 但是，自定义帮助窗格针对最常见的引导式帮助场景进行了优化。   

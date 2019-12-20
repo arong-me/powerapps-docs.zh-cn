@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 38a1ac18a5c978c7b39d6dee85afcb9adf334534
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 9c4ea4e34dacf70a9bb51c28c5761700904a3053
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755804"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862168"
 ---
 # <a name="use-oauth-20-implicit-grant-flow-within-your-portal"></a>在门户中使用 OAuth 2.0 隐式授权流 
 
@@ -127,11 +127,11 @@ GET https://aadb2cplayground.azurewebsites.net/#token=eyJ0eXAiOiJKV1QiLCJhbGciOI
 
 ## <a name="sample-code"></a>示例代码
 
-可使用以下示例代码开始对 PowerApps 门户 API 使用 OAuth 2.0 隐式授权。
+可使用以下示例代码开始对 Power Apps 门户 API 使用 OAuth 2.0 隐式授权。
 
 ### <a name="use-portal-oauth-token-with-an-external-web-api"></a>对外部 Web API 使用门户 OAuth 令牌
 
-此示例是基于 ASP.NET 的项目，用于验证 PowerApps 门户颁发的 ID 令牌。 下面提供完整示例：[对外部 Web API 使用门户 OAuth 令牌](https://github.com/microsoft/PowerApps-Samples/tree/master/portals/ExternalWebApiConsumingPortalOAuthTokenSample)。
+此示例是基于 ASP.NET 的项目，用于验证 Power Apps 门户颁发的 ID 令牌。 下面提供完整示例：[对外部 Web API 使用门户 OAuth 令牌](https://github.com/microsoft/PowerApps-Samples/tree/master/portals/ExternalWebApiConsumingPortalOAuthTokenSample)。
 
 ### <a name="authorize-endpoint-sample"></a>授权终结点示例
 
@@ -139,4 +139,4 @@ GET https://aadb2cplayground.azurewebsites.net/#token=eyJ0eXAiOiJKV1QiLCJhbGciOI
 
 ### <a name="token-endpoint-sample"></a>令牌终结点示例
 
-此示例显示在 PowerApps 门户中如何使用 getAuthenticationToken 函数和令牌终结点获取 ID 令牌。 下面提供此示例：[令牌终结点示例](https://github.com/microsoft/PowerApps-Samples/blob/master/portals/TokenEndpoint.js)。
+此示例显示在 Power Apps 门户中如何使用 getAuthenticationToken 函数和令牌终结点获取 ID 令牌。 下面提供此示例：[令牌终结点示例](https://github.com/microsoft/PowerApps-Samples/blob/master/portals/TokenEndpoint.js)。

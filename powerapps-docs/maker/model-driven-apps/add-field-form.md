@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中将字段添加到模型驱动应用窗体 | MicrosoftDocs
+title: 在 Power Apps 中将字段添加到模型驱动应用窗体 | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
@@ -21,20 +21,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1eb7d5c88031f7269472906b5bfcad7c91214417
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 38ada6c4c63807c16dd577339c287808f389681a
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2751853"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874927"
 ---
 # <a name="add-a-field-to-a-model-driven-app-form"></a>将字段添加到模型驱动的应用程序窗体 
 
-如果标准实体的 PowerApps 窗体不能满足贵组织业务需求，您可以通过更改现有字段或将添加新字段自定义窗体。 虽然编辑窗体中的现有字段可能更简单，但有时最好添加字段以处理特定业务情况。
+如果标准实体的 Power Apps 窗体不能满足贵组织业务需求，您可以通过更改现有字段或将添加新字段自定义窗体。 虽然编辑窗体中的现有字段可能更简单，但有时最好添加字段以处理特定业务情况。
 
 在本主题中，您将字段添加到窗体。   
   
-1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
 
     > [!IMPORTANT]

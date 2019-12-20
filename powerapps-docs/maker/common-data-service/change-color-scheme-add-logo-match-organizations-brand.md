@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4aa2b77e9a9840532193fe50d92aabd796484c60
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c343c3d5d34f73500aa1295086b6329936d66259
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758368"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874250"
 ---
 # <a name="create-a-theme"></a>创建主题
 
@@ -77,7 +77,7 @@ ms.locfileid: "2758368"
 ## <a name="copy-and-alter-the-existing-theme"></a>复制并修改现有主题  
  最简单、最快捷的新主题创建方法是克隆和修改现有主题，然后保存它，进行预览和发布。 
  
-1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 2.  选择**模型驱动**（左下方）。 
 

@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fe3a0a46d7e611c738ebbb4962d61bafd9c62cb8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 934aae075d185551cd1e3025880887b10689cc6d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754683"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869335"
 ---
 # <a name="approaching-a-user-experience-and-unified-interface-transition"></a>实现用户体验和统一接口转换
 
-这份面向业务的白皮书概述在 PowerApps 平台上模型驱动应用程序内实现用户体验改变时需要注意的计划、管制和管理原则。 这封白皮书特别关注 Dynamics 365 应用程序（如 Dynamics 365 Sales 和 Dynamics 365 Customer Service），并采用了统一接口，但是大量主题适用于所有用户体验更新。
+这份面向业务的白皮书概述在 Power Apps 平台上模型驱动应用程序内实现用户体验改变时需要注意的计划、管制和管理原则。 这封白皮书特别关注 Dynamics 365 应用程序（如 Dynamics 365 Sales 和 Dynamics 365 Customer Service），并采用了统一接口，但是大量主题适用于所有用户体验更新。
 
 总之，本指南可以帮助您：
 - 定位统一接口。

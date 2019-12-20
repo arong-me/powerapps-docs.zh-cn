@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中优化模型驱动应用窗体的性能 | MicrosoftDocs
+title: 在 Power Apps 中优化模型驱动应用窗体的性能 | MicrosoftDocs
 description: 了解如何避免导致窗体加载缓慢的窗体设计
 ms.custom: ''
 ms.date: 06/27/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b777dc346897f87d710edc309b9e9a7eda1b711b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5df20edea9440d407c75b114d24dcb3c0f39306a
+ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711595"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890626"
 ---
 # <a name="optimize-model-driven-app-form-performance"></a>优化模型驱动应用程序窗体的性能
 
@@ -38,8 +38,11 @@ ms.locfileid: "2711595"
  考虑用户将与窗体进行的交互以及必须在窗体中显示的数据量。  
   
  **将字段数量保持在最低**  
- 窗体中的字段越多，查看每个记录时要通过 Internet 或 Intranet 传输的数据也越多。  
-  
+ 窗体中的字段越多，查看每个记录时要通过 Internet 或 Intranet 传输的数据也越多。
+ 
+ **针对性能的设计**  
+ 设计窗体和页面时，将最重要的放在顶部，以便用户最容易访问。 将不太常用的组件移到窗体中的其他选项卡，使用基于角色的窗体而不是显示和隐藏组件，并确保不同工作流具有专用仪表板和视图。 随意使用部分来组织控件 – 这不会让窗体变慢。
+ 
 <a name="BKMK_FormScripts"></a>   
 ## <a name="form-scripts"></a>窗体脚本  
  如果您有使用窗体脚本的自定义项，请确保开发人员了解这些策略以提高性能。  

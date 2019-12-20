@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
+ms.date: 11/22/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 79e6f02f9a13f1c828efe5c472d267e707b09576
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a53bfa0a588da16e302e6986a7226e2c1bc42192
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760150"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874330"
 ---
 # <a name="about-entity-forms"></a>关于实体窗体
 
@@ -109,7 +109,7 @@ ms.locfileid: "2760150"
 |关联当前门户用户| 指示当前登录的用户的记录应与目标实体记录关联。|
 |目标实体门户用户查找属性|    存储门户用户的目标实体的属性的逻辑名称。|
 |是活动方| 布尔值指示目标实体门户用户查找属性是否属于活动方类型。|
-|附加文件|   选中以使窗体将文件上载控件包括到窗体底部以允许将文件附加到记录。|
+|附加文件|   选中以使窗体将文件上载控件包括到窗体底部以允许将文件附加到记录。 必须选择**启用实体权限**，并且为注释实体分配创建、追加和追加到权限，以便允许用户向窗体附加文件。 详细信息：[分派实体权限](assign-entity-permissions.md)<br>**注意**：如果用户无权上传文件或未选中“启用实体权限”，则窗体中不显示用于加载文件的选项。|
 |附加文件 - 存储位置|  选项：注释附件、Azure Blob 存储。 如果您的组织被配置为使用 Azure 存储，您可以选择在那里存储此实体窗体的上传文件。 否则，文件将存储为注释附件。|
 |允许多个文件|指示用户是否可以上载多个文件的布尔值。|
 |接受|    接受属性指定服务器通过文件上载接受的 MIME 文件类型。 若要指定多个值，请以逗号分隔值（例如，audio/*,video/*,image/*）。|

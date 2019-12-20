@@ -1,6 +1,6 @@
 ---
 title: 导入、更新和导出解决方案 | MicrosoftDocs
-description: 了解如何在 PowerApps 中导入、更新和导出解决方案
+description: 了解如何在 Power Apps 中导入、更新和导出解决方案
 ms.custom: ''
 ms.date: 09/30/2019
 ms.reviewer: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: de2c4a4ecefe303f607a9d7f19d892eae2c4bffb
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d726860afa8aa2f3cdbb60ede7c549df4da424d2
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701563"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884681"
 ---
 # <a name="import-update-and-export-solutions"></a>导入、更新和导出解决方案 
 
@@ -93,12 +93,12 @@ ms.locfileid: "2701563"
 <a name="BKMK_ExportSolutions"></a>   
 
 ## <a name="export-solutions"></a>导出解决方案  
- 建议您创建用于导出自定义项的非托管解决方案。 然后，定期导出您的自定义项，以便拥有备份以备不时之需。 您无法导出托管解决方案。 可以从 PowerApps 导出解决方案，也可以使用经典体验导出。 
+ 建议您创建用于导出自定义项的非托管解决方案。 然后，定期导出您的自定义项，以便拥有备份以备不时之需。 您无法导出托管解决方案。 可以从 Power Apps 导出解决方案，也可以使用经典体验导出。 
  
 > [!IMPORTANT]
 > 不支持导出默认解决方案。 
 
-### <a name="export-from-powerapps"></a>从 PowerApps 导出
+### <a name="export-from-power-apps"></a>从 Power Apps 导出
   
 1.  在左侧导航中选择**解决方案**。   
   
@@ -134,7 +134,7 @@ ms.locfileid: "2701563"
 <a name="BKMK_SettingsOptionsOnSolutionExport"></a>  
  
 ## <a name="settings-options-for-solution-export"></a>解决方案导出的设置选项  
- 如果从 PowerApps 导出解决方案，则无需阅读本节。 下表显示了从经典体验导出解决方案时可用的选项：  
+ 如果从 Power Apps 导出解决方案，则无需阅读本节。 下表显示了从经典体验导出解决方案时可用的选项：  
   
 |组|设置|说明|  
 |-----------|-------------|-----------------|  

@@ -1,6 +1,6 @@
 ---
 title: 删除模型驱动应用程序 | MicrosoftDocs
-description: 了解如何从 PowerApps 环境中删除或移除模型驱动应用程序。
+description: 了解如何从 Power Apps 环境中删除或移除模型驱动应用程序。
 keywords: ''
 ms.date: 10/08/2019
 ms.service: powerapps
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 026420ad6a5f3ab3e74c9c0d11f87f8a52ffa417
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e8f7d58f7c5cf40f6b582bc5be7970211334d271
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756200"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874816"
 ---
 # <a name="delete-a-model-driven-app"></a>删除模型驱动应用程序
 删除或移除环境中已过时的应用程序。
@@ -37,7 +37,7 @@ ms.locfileid: "2756200"
 > [!IMPORTANT]
 > 如果将模型驱动应用作为托管解决方案的一部分安装在默认解决方案中，请参阅[删除作为托管解决方案的一部分安装的模型驱动应用](#delete-a-model-driven-app-that-was-installed-as-part-of-a-managed-solution)。
 
-1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 2. 在左侧导航中，选择**应用**。 
 3. 选择要删除的应用，然后在命令栏上选择**删除**。
 4. 在显示的确认消息中，选择**删除**。
@@ -54,7 +54,7 @@ ms.locfileid: "2756200"
 
 ### <a name="delete-a-managed-solution"></a>删除托管解决方案 
 可以通过删除托管解决方案来删除该解决方案的所有组件。
-1.  登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
 2.  在左侧导航中，选择**解决方案**。
 3.  在**解决方案**列表中，选择要删除的托管解决方案，然后在工具栏上选择**删除**。 
 

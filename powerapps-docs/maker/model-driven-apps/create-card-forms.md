@@ -1,6 +1,6 @@
 ---
-title: 使用 PowerApps 创建卡窗体 | MicrosoftDocs
-description: 了解如何在 PowerApps 中创建和使用卡窗体
+title: 使用 Power Apps 创建卡窗体 | MicrosoftDocs
+description: 了解如何在 Power Apps 中创建和使用卡窗体
 keywords: ''
 ms.date: 03/05/2019
 ms.service: powerapps
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d9adcde6d35b0f2d336bf86b8e4e26bcec1edec2
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2e39935c3373974bd968c93ee0fce2743f39360d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752389"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884945"
 ---
 # <a name="create-a-card-form"></a>创建卡片式窗体
 卡窗体用于统一接口应用程序的视图。 卡窗体用于以适用于移动设备的紧凑格式呈现信息。 例如，“我的可用客户”视图的默认卡窗体定义为每个客户记录显示的信息。 
@@ -39,14 +39,14 @@ ms.locfileid: "2752389"
 尽管可以通过与其他窗体类型相同的方式创建和编辑卡窗体，但将卡窗体添加到应用程序是不同的。 不是作为应用程序组件添加窗体，而是使用**只读网格**控件将自定义卡窗体添加到视图。 
 
 ## <a name="create-a-card-form"></a>创建卡片式窗体
-1. 若要创建卡窗体，登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
+1. 若要创建卡窗体，登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
 2. 展开**数据**，选择**实体**，选择所需实体，然后选择**窗体**选项卡。
 3. 在工具栏上，选择**添加窗体**，然后选择**卡窗体**。 或者，您可以打开属于**卡**窗体的现有**窗体类型**来对其进行编辑。
 4. 添加所需的字段。 建议您限制字段数，以便窗体在小屏幕上仍能正常显示。 
 5. 选择**保存**，然后选择**发布**。 
 
 ## <a name="add-a-card-form-to-a-view"></a>将卡窗体添加到视图 
-1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 2. 展开**数据**，选择所需实体，然后选择**视图**选项卡。
 3. 选择所需的视图，然后在视图设计器工具栏上，选择**切换到经典**。
 4. 从**常规任务**窗格中选择**自定义控件**。

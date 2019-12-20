@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerApps 定义汇总字段 | MicrosoftDocs
+title: 使用 Power Apps 定义汇总字段 | MicrosoftDocs
 description: 了解如何定义汇总字段
 ms.custom: ''
 ms.date: 05/23/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9691912bab995fac0b3489580aaa1fef82f9dcc8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e0c254635d6d51ee037ef7865f4b67b72710f319
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758620"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863980"
 ---
 # <a name="define-rollup-fields-that-aggregate-values"></a>定义用于聚合值的汇总字段
 
 汇总字段帮助用户通过监控关键业务指标来获取数据见解。 汇总字段包含一个用与指定记录相关的记录计算所得的聚合值。 这包括常规实体和活动实体，如电子邮件和约会。
 
-在更复杂的方案中，可以通过记录层次结构聚合数据。 作为一名管理员或定制员，您可以通过使用 PowerApps 中的自定义工具来定义汇总字段，而无需编写代码。  
+在更复杂的方案中，可以通过记录层次结构聚合数据。 作为一名管理员或定制员，您可以通过使用 Power Apps 中的自定义工具来定义汇总字段，而无需编写代码。  
   
 <a name="BKMK_benefitsandcapabilities"></a> 
  

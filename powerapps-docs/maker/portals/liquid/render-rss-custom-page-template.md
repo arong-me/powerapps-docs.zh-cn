@@ -9,25 +9,25 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 240af2f54e153490794358dc1598b72a16fe1c38
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 998a233f5051c1445d56dbeeba1f2d7faff5811d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757168"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862300"
 ---
 # <a name="create-a-custom-page-template-to-render-an-rss-feed"></a>创建用于呈现 RSS 源的自定义页面模板
 在此示例中，我们将创建一个自定义页面模板，用于呈现新闻文章的 [RSS 源](https://en.wikipedia.org/wiki/RSS)，使用 Liquid 和 Web 模板页模板。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [使用 Web 模板存储源内容](store-content-web-templates.md)  
 
-## <a name="step-1-create-a-new-powerapps-view"></a>步骤 1：创建新 PowerApps 视图
+## <a name="step-1-create-a-new-power-apps-view"></a>步骤 1：创建新 Power Apps 视图
 
-首先，我们将创建我们将用于加载源数据的新 PowerApps 视图。 在此示例中，我们将在网页中建立一个视图，然后使用此实体存储我们的文章。 我们可以使用此视图排序和筛选结果，并作为列包含我们需要在 Liquid 模板中提供的实体属性。
+首先，我们将创建我们将用于加载源数据的新 Power Apps 视图。 在此示例中，我们将在网页中建立一个视图，然后使用此实体存储我们的文章。 我们可以使用此视图排序和筛选结果，并作为列包含我们需要在 Liquid 模板中提供的实体属性。
 
 ![编辑页面模板](../media/edit-page-template.png "编辑页面模板")  
 
 ## <a name="step-2-create-a-web-template-for-rss-feed"></a>步骤 2：创建 RSS 源的 Web 模板
 
-在此步骤中，我们将为 RSS 源创建 Web 模板。 此模板要应用于我们网站的特定网页，因此我们将使用该页的标题和摘要作为源的标题和说明。 我们将使用 entityview 标记加载我们新创建的“新闻文章”视图。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [PowerApps Common Data Service 实体标记](portals-entity-tags.md). 请注意，我们还将 Web 模板的 **MIME 类型**字段设置为 application/rss+xml。 这指示在呈现我们的模板时可以是哪种响应内容类型。  
+在此步骤中，我们将为 RSS 源创建 Web 模板。 此模板要应用于我们网站的特定网页，因此我们将使用该页的标题和摘要作为源的标题和说明。 我们将使用 entityview 标记加载我们新创建的“新闻文章”视图。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Power Apps Common Data Service 实体标记](portals-entity-tags.md). 请注意，我们还将 Web 模板的 **MIME 类型**字段设置为 application/rss+xml。 这指示在呈现我们的模板时可以是哪种响应内容类型。  
 
 ![为 RSS 源配置 Web 模板](../media/web-template-rss-feed.png "为 RSS 源配置 Web 模板")  
 
@@ -67,7 +67,7 @@ x现在只需使用 RSS 源模板创建新网页来托管我们的源。 在我�
 
 ![RSS 源示例](../media/rss-feed-example.png "RSS 源示例")  
 
-在此示例中，我们看到了我们如何合并 Liquid、Web 模板、PowerApps 视图和门户内容管理功能来创建自定义 RSS 源。 这些功能的组合为任何门户应用程序增加强大的自定义功能。
+在此示例中，我们看到了我们如何合并 Liquid、Web 模板、Power Apps 视图和门户内容管理功能来创建自定义 RSS 源。 这些功能的组合为任何门户应用程序增加强大的自定义功能。
 
 ### <a name="see-also"></a>另请参阅
 

@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 7b5bbc05ca7adf7fad9725215f8a7d6c06c035bb
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 31ae1238638ed4d10401f1c0a0fb5922a95263e5
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709527"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867174"
 ---
 # <a name="reset-a-portal"></a>重置门户
 
@@ -28,7 +28,7 @@ ms.locfileid: "2709527"
 
 要重置配置的门户：
 
-1.  打开 [PowerApps 门户管理中心](admin-overview.md)。
+1.  打开 [Power Apps 门户管理中心](admin-overview.md)。
 
 2.  转到**门户操作** > **重置门户**。
 
@@ -39,8 +39,8 @@ ms.locfileid: "2709527"
 
 > [!NOTE]
 > - 如果您不具有关联的 Azure Active Directory 应用程序的适当权限，将显示错误。 您必须与全局管理员联系获得适当权限。
-> - 如果您已使用早期的门户加载项设置了门户，并且门户已成功重置，则 Dynamics 365 管理中心的**应用程序**选项卡上的门户名称及其状态不会更改。 例如，如果您的门户名称和状态分别为门户 1 和已配置，那么在重置门户后，这些值不会更改。 如果您要更改门户名称，您可以在 PowerApps 门户管理中心的**门户详细信息**选项卡上进行更改。 但是，状态值无法还原到“未配置”。
-> - 请务必注意，**应用程序**选项卡上的门户状态不表示其设置状态，不会影响门户的功能。 它只显示您是否曾访问相应门户的 PowerApps 门户管理中心。
+> - 如果已使用较低版本门户加载项预配了门户，并且已成功重置了门户，则 **Dynamics 365 管理中心**页**应用程序**选项卡上的门户名称和门户状态不变。 例如，如果您的门户名称和状态分别为门户 1 和已配置，那么在重置门户后，这些值不会更改。 如果您要更改门户名称，您可以在 Power Apps 门户管理中心的**门户详细信息**选项卡上进行更改。 但是，状态值无法还原到“未配置”。
+> - 请务必注意，**应用程序**选项卡上的门户状态不表示其设置状态，不会影响门户的功能。 它只显示您是否曾访问相应门户的 Power Apps 门户管理中心。
 
 如果您的门户未正确设置，其将进入错误状态，并显示以下屏幕。 在这种情况下，您可以通过选择错误屏幕上的**重置门户**来重置门户。
 
@@ -53,7 +53,7 @@ ms.locfileid: "2709527"
 
 ### <a name="reset-request-could-not-be-submitted"></a>无法提交重置请求
 
-如果门户重置请求无法提交，错误将如下图所示。 在这种情况下，您必须关闭并重新打开 PowerApps 门户管理中心，然后尝试再次重置门户。 如果此问题仍然存在，请与 Microsoft 支持联系。
+如果门户重置请求无法提交，错误将如下图所示。 在这种情况下，您必须关闭并重新打开 Power Apps 门户管理中心，然后尝试再次重置门户。 如果此问题仍然存在，请与 Microsoft 支持联系。
 
 > [!div class=mx-imgBorder]
 > ![重置门户时出错](../media/reset-portal-request-error.png "重置门户时出错")

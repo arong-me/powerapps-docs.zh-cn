@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ba8fe12a9ecffa0ffb1116546d2bfe9ab2c62ac8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c13092daaa86abbcba5ef65dc809f29d9a6a6f12
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758048"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883692"
 ---
 # <a name="create-and-edit-entities-in-common-data-service"></a>在 Common Data Service 中创建和编辑实体
 
@@ -36,7 +36,7 @@ ms.locfileid: "2758048"
 
 |设计器| 说明|
 |--|--|
-|[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息： <br />[教程：在 PowerApps 中创建包含组件的自定义实体](/powerapps/maker/common-data-service/create-custom-entity)<br />[使用 PowerApps 门户创建和编辑实体](create-edit-entities-portal.md)|
+|[Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些特殊设置不可用。<br />详细信息： <br />[教程：在 Power Apps 中创建包含组件的自定义实体](/powerapps/maker/common-data-service/create-custom-entity)<br />[使用 Power Apps 门户创建和编辑实体](create-edit-entities-portal.md)|
 |解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。 <br />详细信息[使用解决方案资源管理器创建和编辑实体](create-edit-entities-solution-explorer.md)|
 
 > [!NOTE]
@@ -46,9 +46,9 @@ ms.locfileid: "2758048"
 > - 开发人员可以使用[元数据服务](/powerapps/developer/common-data-service/use-web-services#metadata-services)编写程序。
 
 
-## <a name="entity-options-not-available-in-the-powerapps-portal"></a>PowerApps 门户中不可用的实体选项
+## <a name="entity-options-not-available-in-the-power-apps-portal"></a>Power Apps 门户中不可用的实体选项
 
-本主题中的信息将帮助您选择可以使用的设计器。 除非您需要满足下列要求中的任何一个，否则您可以使用 PowerApps 门户创建实体。
+本主题中的信息将帮助您选择可以使用的设计器。 除非您需要满足下列要求中的任何一个，否则您可以使用 Power Apps 门户创建实体。
 
 - 控制自定义项前缀
 
@@ -56,7 +56,7 @@ ms.locfileid: "2758048"
 
 - 创建由组织负责的实体
 
-  默认情况下，PowerApps 门户将创建**用户或团队**负责的实体。 使用解决方案资源管理器将所有权设置为**组织**。 详细信息：[实体所有权](types-of-entities.md#entity-ownership)
+  默认情况下，Power Apps 门户将创建**用户或团队**负责的实体。 使用解决方案资源管理器将所有权设置为**组织**。 详细信息：[实体所有权](types-of-entities.md#entity-ownership)
 
 - 创建活动实体
 
@@ -81,18 +81,18 @@ ms.locfileid: "2758048"
   |**更改跟踪**|从最初解压缩或最后同步数据开始就检测被更改的数据，从而以永久方法支持数据同步。  |
   |**颜色**|在模型驱动应用程序中设置用于实体的颜色。|
   |**文档管理**|在执行了其他任务来启用组织的文档管理后，启用此功能可以让此实体加入与 SharePoint 的集成。 |
-  |**重复检测**|如果为组织启用了重复检测，启用此选项将允许为此实体创建重复检测规则。|
+  |**重复检测**|如果为组织启用了重复检测，启用此选项后，您将能够为此实体创建重复检测规则。|
   |**为移动设备启用**|使此实体对 Dynamics 365 for phones 和 Dynamics 365 for tablets 应用程序可用。 您还可以选择将此实体设为**在移动设备中为只读**。<br /><br /> 如果实体的窗体需要不被 Dynamics 365 for phones 和 Dynamics 365 for tablets 应用程序支持的扩展，请使用此设置确保移动应用程序用户不能编辑这些实体的数据。|
   |**针对 Phone Express 启用**|使此实体对 Dynamics 365 for phones 应用程序可用。|
   |**邮件合并**|用户可以将此实体用于邮件合并。|
   |**Dynamics 365 for Outlook 的脱机功能**|当 Dynamics 365 for Outlook 应用程序未连接到网络时，此实体中的数据是否可用。|
   |**Dynamics 365 for Outlook 中的阅读窗格**|实体是否在 Dynamics 365 for Outlook 应用的阅读窗格中可见。|
-  |**使用自定义帮助**|启用后，设置帮助 URL 来控制用户在单击应用程序中的帮助按钮时他们将看到的页面。 使用此设置来提供特定于您公司的实体流程的指导。|
+  |**使用自定义帮助**|启用后，设置“帮助 URL”来控制用户单击应用程序中的帮助按钮后会看到的页面。 使用此设置来提供特定于您公司的实体流程的指导。|
 
 
 ### <a name="see-also"></a>另请参阅
 
 [使用解决方案资源管理器创建和编辑实体](create-edit-entities-solution-explorer.md)<br />
-[教程：在 PowerApps 中创建包含组件的自定义实体](/powerapps/maker/common-data-service/create-custom-entity)<br />
+[教程：在 Power Apps 中创建包含组件的自定义实体](/powerapps/maker/common-data-service/create-custom-entity)<br />
 [编辑实体](edit-entities.md)<br />
 [开发人员文档：创建自定义实体](/dynamics365/customer-engagement/developer/org-service/create-custom-entity)

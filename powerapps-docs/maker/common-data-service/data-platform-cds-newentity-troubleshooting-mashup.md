@@ -13,19 +13,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5679d82d6ec53d579567a778043ac9542099a20e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9b1f0152782a31b13d6209fe3911ed10792652af
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706667"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864235"
 ---
 # <a name="troubleshoot-power-query"></a>Power Query 疑难解答
 当使用 Power Query for Excel 创建包含来自外部源的数据的自定义实体时，可能会出现此错误：
 
 >“您的 Azure Active Directory 管理员设置了阻止您使用此功能的策略。 请与您的管理员联系，他可以代表您授予此功能的权限。”
 
-如果 Power Query 无法访问 PowerApps 或 Common Data Service 中组织的数据时，将显示此错误。 此情况会在两组情形下出现：
+如果 Power Query 无法访问 Power Apps 或 Common Data Service 中组织的数据时，将显示此错误。 此情况会在两组情形下出现：
 
 * Azure Active Directory (Azure AD) 租户管理员已经禁用了用户同意应用程序代表他们访问公司数据的功能。
 * 使用非托管 Active Directory 租户。 非托管租户是一个目录，没有为完成自助注册服务创建的全局管理员。 要修复此情形，用户必须首先转换为托管租户，然后按照解决这个问题的两个解决方案之一操作。 解决方案在下一部分介绍。
@@ -52,7 +52,7 @@ ms.locfileid: "2706667"
 
 用户可以通过查询编辑器并通过可从查询编辑器访问的**选项**对话框更新混合 Web 应用程序及其他信息（如查询名称和混合 Web 应用程序元数据）。
 
-在 PowerApps 中，通过执行以下操作访问查询编辑器：
+在 Power Apps 中，通过执行以下操作访问查询编辑器：
 1. 转到**数据**窗格，展开它，然后选择**实体**。 
 2. 选择省略号 (...)，然后选择**编辑查询**。
 3. 在功能区，选择**选项**按钮，然后选择**导出诊断**按钮。
@@ -60,9 +60,9 @@ ms.locfileid: "2706667"
 
 ## <a name="delete-personal-data"></a>删除个人数据
 
-多数数据会在 30 天内自动删除。 对于有关混合 Web 应用程序的数据和元数据，用户必须通过 PowerApps 删除其所有混合 Web 应用程序。 所有关联数据和元数据将在 30 天内删除。
+多数数据会在 30 天内自动删除。 对于有关混合 Web 应用程序的数据和元数据，用户必须通过 Power Apps 删除其所有混合 Web 应用程序。 所有关联数据和元数据将在 30 天内删除。
 
-从 Power Apps 中删除混合 Web 应用程序：
+若要从 Power Apps 删除混合 Web 应用程序：
 1. 删除数据集成器项目，其可以从同名选项卡中删除。
 2. 选择省略号 (...)，然后选择**删除**选项。
 
@@ -79,7 +79,7 @@ ms.locfileid: "2706667"
 2. 在功能区，选择**选项**按钮。
 3. 选择**诊断导出**按钮。
 
-在 PowerApps 中，可以通过执行以下操作访问查询编辑器：
+在 Power Apps 中，可以通过执行以下操作访问查询编辑器：
 1. 转到**数据**窗格，展开它，然后选择**实体**。
 2. 选择省略号 (...)，然后选择**编辑查询**。 
 3. 在功能区，选择**选项**按钮，然后选择**导出诊断**按钮。

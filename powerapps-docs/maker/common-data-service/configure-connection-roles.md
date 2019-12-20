@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 028be1172621c9bdb510f5e57d16eb226b10f92b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 434dea11e5238167e824561e247bc23ddbb7839b
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758224"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874154"
 ---
 # <a name="configure-connection-roles"></a>配置连接角色
 
@@ -38,7 +38,7 @@ ms.locfileid: "2758224"
 > 要使某个实体可以用作新的或现有的连接角色的记录类型，必须为该实体启用**启用连接**属性。 
 
 ## <a name="enable-connection-roles-for-an-entity"></a>为实体启用连接角色
-1. 登录到 [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
+1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
 2. 展开**数据**，然后选择**实体**。 
 3. 选择要为连接角色启用的实体，然后在命令栏上选择**设置**。 
 4. 在**设置**窗格中，展开**协作**区域，然后选择**启用连接**。

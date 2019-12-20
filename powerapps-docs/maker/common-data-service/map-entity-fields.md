@@ -1,5 +1,5 @@
 ---
-title: 在 PowerApps 中映射实体字段 | MicrosoftDocs
+title: 在 Power Apps 中映射实体字段 | MicrosoftDocs
 description: 了解如何映射实体字段
 ms.custom: ''
 ms.date: 05/29/2018
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7175a56b4658d19510c007efbf4bdcd02d88db2f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a5da8b9ecfb2bbba2a4e03fbc0d28301c41e2a7c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2704599"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860883"
 ---
 # <a name="map-entity-fields"></a>映射实体字段
  

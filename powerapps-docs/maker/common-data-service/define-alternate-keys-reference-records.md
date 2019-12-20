@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d6c620f518331f46ef3e662040975cd8c6c5625a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7ad5f422c0d45bbeb60ae43e687329b1fb770c2b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758796"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861147"
 ---
 # <a name="define-alternate-keys-to-reference-records"></a>定义引用记录的备用键
 
@@ -38,7 +38,7 @@ ms.locfileid: "2758796"
 例如，若要使用备用键标识客户记录，您可以使用客户编号或客户编号字段并结合其他一些字段（包含不应更改的值）。
 
 > [!NOTE]
-> 尽管您可以通过 PowerApps 定义备用键，在代码中，它们只能通过编程方式使用。 若要了解以编程方式使用备用键的详细信息，请参阅：   
+> 尽管您可以通过 Power Apps 定义备用键，在代码中，它们只能通过编程方式使用。 若要了解以编程方式使用备用键的详细信息，请参阅：   
 > - [开发人员文档：使用备用键创建记录](/dynamics365/customer-engagement/developer/use-alternate-key-create-record) 
 > - [开发人员文档：使用备用键通过 Web API 检索记录](/dynamics365/customer-engagement/developer/webapi/retrieve-entity-using-web-api#retrieve-using-an-alternate-key)
 
@@ -55,7 +55,7 @@ ms.locfileid: "2758796"
 
 |设计器| 说明|
 |--|--|
-|[PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些选项不可用。<br />详细信息：[使用 PowerApps 门户定义备用键](define-alternate-keys-portal.md)|
+|[Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|提供简单的简化体验，但是有些选项不可用。<br />详细信息：[使用 Power Apps 门户定义备用键](define-alternate-keys-portal.md)|
 |解决方案资源管理器|不那么简单，但提供更多灵活性可减少常见要求。<br />详细信息：[使用解决方案资源管理器定义备用键](define-alternate-keys-solution-explorer.md) |
 
 > [!NOTE]
@@ -65,7 +65,7 @@ ms.locfileid: "2758796"
 
 本主题中的信息将帮助您选择可以使用的设计器。 
 
-除非您需要满足下列要求中的任何一个，否则您应该使用 [PowerApps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)创建备用键：
+除非您需要满足下列要求中的任何一个，否则您应该使用 [Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)创建备用键：
 
 - 在 Common Data Service 默认解决方案以外的解决方案中创建备用键
 - 您希望轻松跟踪所创建的跟踪支持索引创建进度的系统作业
@@ -120,7 +120,7 @@ ms.locfileid: "2758796"
   
 ### <a name="see-also"></a>另请参阅  
 
-[使用 PowerApps 门户定义备用键](define-alternate-keys-portal.md)<br />
+[使用 Power Apps 门户定义备用键](define-alternate-keys-portal.md)<br />
 [使用解决方案资源管理器定义备用键](define-alternate-keys-solution-explorer.md)<br />
 [开发人员文档：定义实体的备用键](/dynamics365/customer-engagement/developer/define-alternate-keys-entity)<br />
 [开发人员文档：使用备用键创建记录](/dynamics365/customer-engagement/developer/use-alternate-key-create-record)

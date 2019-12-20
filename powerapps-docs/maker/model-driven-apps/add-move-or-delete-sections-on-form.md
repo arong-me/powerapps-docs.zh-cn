@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 38607e27fea1c926b6cbc81471113e2b49258921
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c8ead91a40fc0f79f801fee64c8eff2891723264
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701475"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863804"
 ---
 # <a name="add-configure-move-or-delete-sections-on-a-form"></a>添加、配置、移动或删除窗体中的分区 
 使用窗体设计器添加、配置、移动或删除分区。 
