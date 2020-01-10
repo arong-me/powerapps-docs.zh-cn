@@ -15,18 +15,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 08859f70e047d1c53379e8a79f56997d6beedc58
-ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
+ms.openlocfilehash: 78b4e997a398bfb806a4e89a70c0ed3e466be381
+ms.sourcegitcommit: e3d3a608ef74e1d90ca74ed38de3e5aebc624713
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67456990"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "75333601"
 ---
 # <a name="frequently-asked-questions-about-activities-and-the-timeline-wall"></a>有关活动和时间轴留言板的常见问题  
 
 ## <a name="is-a-title-required-when-adding-a-new-note"></a>添加新注释时需要标题吗？
 
-不。 向活动添加注释时，会将标题字段标记为强制字段，但不是必需的。 这是旧版 Web 客户端中的一个已知问题。
+版本号 向活动添加注释时，会将标题字段标记为强制字段，但不是必需的。 这是旧版 Web 客户端中的一个已知问题。
 
 ## <a name="for-an-appointment-when-i-choose-the-option-to-save-as-draft-it-doesnt-show-that-the-appointment-has-been-saved-as-a-draft"></a>当我对约会选择“保存为草稿”选项时，它不会显示该约会已保存为草稿。
 
@@ -34,11 +34,11 @@ ms.locfileid: "67456990"
 
 ## <a name="can-i-add-activities-to-read-only-records"></a>可以向只读记录添加活动吗？
 
-可以。 可以向只读实体（例如注释、电话呼叫、任务等等）添加活动。 
+是。 可以向只读实体（例如注释、电话呼叫、任务等等）添加活动。 
 
 ## <a name="are-html-tags-supported-in-notes"></a>注释是否支持 HTML 标记？
 
-不。 为任何记录或实体创建注释活动时，不支持 HTML 标记。 例如, 如果将添加`<TAG> </TAG>`到便笺字段, 则它将显示为。 `<TAG_XXX="XX"> </TAG>`
+版本号 为任何记录或实体创建注释活动时，不支持 HTML 标记。 例如，如果您将 `<TAG> </TAG>` 添加到注释字段，则它将显示为 `<TAG_XXX="XX"> </TAG>`。
 
 ## <a name="how-can-i-improve-performance-on-timeline-wall"></a>如何提高时间轴留言板性能？
 
@@ -51,7 +51,12 @@ ms.locfileid: "67456990"
 
 在 Dynamics 365 中选择“打印预览”选项时，“时间轴留言板”不会显示在可用列表中。 用户将看到“注释”，但它不会显示任务或电子邮件。
 
+## <a name="see-also"></a>另请参阅
 
+[设置时间线控件](../maker/model-driven-apps/set-up-timeline-control.md)
 
+[时间线控件常见问题解答](../maker/model-driven-apps/faqs-timeline-control.md)
 
+[向时间线添加约会、电子邮件、电话呼叫、便笺或任务活动](add-activities.md)
 
+[客户服务中心应用中的时间线部分](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)

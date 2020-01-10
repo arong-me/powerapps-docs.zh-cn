@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e6a64a5849b351b625468894696251895375d0c2
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 7f437b649111c4ff51d21f35e73dabb442c57112
+ms.sourcegitcommit: e3d3a608ef74e1d90ca74ed38de3e5aebc624713
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74726088"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "75333624"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>将约会、电子邮件、电话呼叫、备注或任务活动添加到时间线 
 
@@ -189,5 +189,12 @@ ms.locfileid: "74726088"
 > [!div class="mx-imgBorder"]
 > ![管理活动 .png](media/ManageActivities.png "ManageActivities .png")
 
+## <a name="see-also"></a>另请参阅
 
+[设置时间线控件](../maker/model-driven-apps/set-up-timeline-control.md)
 
+[时间线控件常见问题解答](../maker/model-driven-apps/faqs-timeline-control.md)
+
+[有关活动和时间线留言板的常见问题解答](faq-for-timeline-and-activity.md)
+
+[客户服务中心应用中的时间线部分](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9a1ff224557bd36074f7c981a5e76a9721943afb
-ms.sourcegitcommit: 366f0d1b8309ab1fd533ebd7e1b41a69a99fd25a
+ms.openlocfilehash: c5814eedfd05ea5bba19a469dad1b3e28c311974
+ms.sourcegitcommit: 6f94650ea540db69d2723c3c5dff9de8c59056cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302867"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75859117"
 ---
 # <a name="power-apps-custom-visual-for-power-bi"></a>适用于 Power BI 的 Power Apps 自定义视觉对象
 
@@ -65,7 +65,7 @@ Power BI 可实现数据见解和更好的决策，而使用 Power Apps，每个
 
     ![工作报表](./media/powerapps-custom-visual/working-report.gif)
 
-    如果需要对应用进行更改，请在编辑模式下打开报表，再单击或点击 Power Apps 视觉对象上的 "**更多选项**" （**...**），然后选择 "**编辑**"。
+    如果需要对应用进行更改，请在编辑模式下打开报表，再单击或点击 Power Apps 视觉对象上的 "**更多选项**" （ **...** ），然后选择 "**编辑**"。
 
     ![编辑应用](./media/powerapps-custom-visual/edit-app.png)
 
@@ -77,7 +77,7 @@ Power BI 可实现数据见解和更好的决策，而使用 Power Apps，每个
 - Power Apps 自定义视觉对象无法触发刷新 Power BI 报表和 Power BI Power BI Desktop 内的数据源。 如果将应用程序中的数据写回与报表相同的数据源，则所做的更改将不会立即反映在 Power BI Desktop 中。 更改会在下一个计划的刷新后得到反映。
 - Power Apps 自定义视觉对象无法筛选数据或将任何数据发送回报表。
 - 需要与报表分开共享 "Power Apps" 应用。 了解如何[在 Power apps 中共享应用](share-app.md)。
-- Power BI 报表服务器和 Power BI 的移动应用不支持 Power Apps 自定义视觉对象。
+- Power BI 报表服务器不支持 Power Apps 自定义视觉对象。
 - 使用 `PowerBIIntegration.Refresh()` 函数时，以下限制适用：
     - 若要在应用中使用此功能，必须在 Power BI 报表中从 Power Apps 自定义视觉对象创建新应用。
     - 必须使用支持[directquery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources)的源，并且必须使用 DirectQuery 方法创建数据连接。
@@ -90,7 +90,7 @@ Power BI 可实现数据见解和更好的决策，而使用 Power Apps，每个
 
 下表列出了可用于查看、创建和修改 Power Apps 自定义视觉对象操作的浏览器可支持性。 支持的浏览器和操作由复选标记（&check;）标识。
 
-|浏览器|视图|创建|Modify
+|浏览器|视图|创建|修改
 |-|-|-|-
 |Microsoft Edge|&check;|&check;|&check;
 |Internet Explorer 11|&check;
