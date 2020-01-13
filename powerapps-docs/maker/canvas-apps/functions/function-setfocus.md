@@ -1,6 +1,6 @@
 ---
 title: SetFocus 函数 |Microsoft Docs
-description: PowerApps 中 SetFocus 函数的参考信息（包括语法）
+description: Power Apps 中的 SetFocus 函数的参考信息（包括语法）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cdf34c3c4909697b70a105e5145620ab5bd31ea9
-ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
+ms.openlocfilehash: 6347a76765fef433880754038d4e098fcb0fd6ee
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71038158"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730234"
 ---
-# <a name="setfocus-function-in-powerapps"></a>PowerApps 中的 SetFocus 函数
+# <a name="setfocus-function-in-power-apps"></a>Power Apps 中的 SetFocus 函数
 将输入焦点移到特定控件。 
 
 ## <a name="description"></a>描述
@@ -39,7 +39,7 @@ ms.locfileid: "71038158"
 - [**Button**](../controls/control-button.md)控件
 - [**Icon**](../controls/control-shapes-icons.md)控件
 - [**图像**](../controls/control-image.md)控件
-- “[**标签**](../controls/control-text-box.md)”控件
+- [“标签”](../controls/control-text-box.md)控件
 - [**TextInput**](../controls/control-text-input.md)控件
 
 不能将焦点设置到[**库**](../controls/control-gallery.md)控件、[**编辑窗体**](../controls/control-form-detail.md)控件或[组件](../create-component.md)中的控件。  **SetFocus**可用于 scrollbale 屏幕中的控件。
@@ -53,7 +53,7 @@ ms.locfileid: "71038158"
 只能在[行为公式](../working-with-formulas-in-depth.md)中使用**SetFocus** 。
 
 ## <a name="syntax"></a>语法
-**SetFocus**（*控制*）
+**SetFocus**（*控件*）
 
 * *Control* – 必需。  用于给输入焦点的控件。
 
@@ -79,16 +79,16 @@ SetFocus( BillingName )
 1. 添加 " [**文本输入**" 控件](../controls/control-text-input.md)并将其重命名为**ShippingName**。
 1. 添加 " [**文本输入**" 控件](../controls/control-text-input.md)并将其重命名为**ShippingAddress**。
 1. 添加一个[**复选框**控件](../controls/control-check-box.md)，并将其重命名为**SyncAddresses**。
-1. 将此控件的 " **Text** " 属性设置为`"Use Shipping address as Billing address"`公式。
+1. 将此控件的**Text**属性设置为 `"Use Shipping address as Billing address"`的公式。
 1. 添加 " [**文本输入**" 控件](../controls/control-text-input.md)并将其重命名为**BillingName**。
-1. 将此控件的**默认**属性设置为公式`ShippingName`。
-1. 将此控件的**DisplayMode**属性设置为公式`If( SyncAddresses.Value, DisplayMode.View, DisplayMode.Edit )`。  这会根据复选框控件的状态自动启用或禁用此控件。
+1. 将此控件的**默认**属性设置为公式 `ShippingName`。
+1. 将此控件的**DisplayMode**属性设置为公式 `If( SyncAddresses.Value, DisplayMode.View, DisplayMode.Edit )`。  这会根据复选框控件的状态自动启用或禁用此控件。
 1. 添加 " [**文本输入**" 控件](../controls/control-text-input.md)并将其重命名为**BillingAddress**。
-1. 将此控件的**默认**属性设置为公式`ShippingAddress`。
-1. 将此控件的**DisplayMode**属性设置为公式`If( SyncAddresses.Value, DisplayMode.View, DisplayMode.Edit )`。  这会根据复选框控件的状态自动启用或禁用此控件。
-1. 将复选框的 "**默认**属性" 设置为 " `true`公式"。  这将默认计费地址使用与送货地址相同的值。
-1. 将复选框的 " **OnCheck** " 属性设置为公式`Reset( BillingName ); Reset( BillingAddress )`。  如果用户选择同步发货和帐单地址，这将清除 "计费地址" 字段中的任何用户输入，以允许每个字段的**默认**属性从相应的 "发货地址" 字段中提取值。
-1. 将复选框的 " **OnUncheck** " 属性设置为公式`SetFocus( BillingName )`。  如果用户选择具有不同的帐单地址，则会将焦点移到计费地址中的第一个控件。  由于控件的**DisplayMode**属性的原因，这些控件将处于启用状态。
+1. 将此控件的**默认**属性设置为公式 `ShippingAddress`。
+1. 将此控件的**DisplayMode**属性设置为公式 `If( SyncAddresses.Value, DisplayMode.View, DisplayMode.Edit )`。  这会根据复选框控件的状态自动启用或禁用此控件。
+1. 将复选框的 "**默认**属性" 设置为 "公式 `true`"。  这将默认计费地址使用与送货地址相同的值。
+1. 将复选框的 " **OnCheck** " 属性设置为 "公式 `Reset( BillingName ); Reset( BillingAddress )`"。  如果用户选择同步发货和帐单地址，这将清除 "计费地址" 字段中的任何用户输入，以允许每个字段的**默认**属性从相应的 "发货地址" 字段中提取值。
+1. 将复选框的 " **OnUncheck** " 属性设置为 "公式 `SetFocus( BillingName )`"。  如果用户选择具有不同的帐单地址，则会将焦点移到计费地址中的第一个控件。  由于控件的**DisplayMode**属性的原因，这些控件将处于启用状态。
 
 ### <a name="focus-on-validation-issues"></a>专注于验证问题
 
@@ -127,7 +127,7 @@ If( IsBlank( Name ),
 1. 在 "**插入**" 菜单中，选择 "**新屏幕**"，然后选择 "可**滚动**"。
 1. 在屏幕的中心部分，添加**文本输入**控件，并**将其命名**为**Street1**、 **Street2**、 **City**、**县**、 **StateProvince**、**邮政编码**和**手机**。 在每个控件上方添加**标签**控件以标识字段。  如果分区不够长而无法容纳所有控件，则可能需要调整此部分的大小。
 1. 在屏幕顶部的 "可滚动" 部分上方添加复选标记[**图标**控件](../controls/control-shapes-icons.md)。  
-1. 将图标控件的 " **OnSelect** " 属性设置为上面`If( IsBlank( ...`给出的公式。
+1. 将图标控件的 " **OnSelect** " 属性设置为上面给定的公式 `If( IsBlank( ...`。
 
 ### <a name="focus-when-displaying-a-screen"></a>显示屏幕时的焦点
 
@@ -150,8 +150,8 @@ SetFocus( Name )
 
 若要创建此示例：
 1. 在上面创建 "关注验证问题" 应用。
-1. 在此屏幕上，将 " **OnVisible** " 属性设置`SetFocus( Name )`为公式。
+1. 在此屏幕上，将**OnVisible**属性设置为公式 `SetFocus( Name )`。
 1. 添加第二个屏幕。
 1. 添加[**按钮**控件](../controls/control-button.md)。
-1. 将此控件的**OnSelect**属性设置为公式`Navigate( Screen1 )`。
+1. 将此控件的**OnSelect**属性设置为 `Navigate( Screen1 )`的公式。
 1. 从此屏幕预览应用。  按按钮。  将对**OnVisible**公式进行计算，并将 "**名称**" 字段自动置于焦点。

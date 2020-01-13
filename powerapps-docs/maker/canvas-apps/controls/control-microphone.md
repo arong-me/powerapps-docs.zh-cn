@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2ae158e17873ed7433b301cc5c88d195515a9a5c
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: b2da6fd3ac8c4d69eb702ac7537dfefa2e5e94f6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650431"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729091"
 ---
-# <a name="microphone-control-in-powerapps"></a>PowerApps 中的麦克风控件
+# <a name="microphone-control-in-power-apps"></a>Power Apps 中的麦克风控件
 允许应用用户从其设备录音的控件。
 
 ## <a name="description"></a>描述
@@ -128,4 +128,4 @@ ms.locfileid: "73650431"
 这是除[标准颜色对比度](../accessible-apps-color.md)以外的要求。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
+* [“AccessibleLabel”](properties-accessibility.md)必须存在。
