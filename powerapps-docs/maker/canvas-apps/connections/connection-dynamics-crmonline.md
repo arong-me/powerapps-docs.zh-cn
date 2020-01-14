@@ -6,24 +6,27 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 07/12/2017
+ms.date: 11/27/2019
 ms.author: matp
-ms.reviewer: ''
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 37818e3c7cca175218826c1707ab83cd5c193ae7
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 4285a80d3751285929378336aa9806b3639f3457
+ms.sourcegitcommit: 54d52a9c3c9242f95be54f4444054d9c41ed577c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723924"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75928962"
 ---
 # <a name="connect-to-dynamics-365-from-power-apps"></a>从 Power Apps 连接到 Dynamics 365
 借助 Power Apps，无需编写代码即可快速生成、自定义、共享和运行移动应用。 通过使用 Dynamics 365 连接器，只需几分钟，即可创建有用的移动应用，与组织实现共享。
 
-按照本主题中的步骤操作，可创建相关应用，用户可在此应用中浏览、添加、删除和更新 Dynamics 365 中的联系人。 用户可通过[浏览器](../../../user/run-app-browser.md)或[移动设备](../../../user/run-app-client.md)（如手机）运行该应用。
+通过执行本主题中的步骤，你将创建一个应用，用户可在其中浏览、添加、删除和更新 Dynamics 365 中模型驱动应用程序的联系人，dynamics 365 Sales，Dynamics 365 Customer Service，Dynamics 365 现场服务，Dynamics 365 行销和 Dynamics 365 项目服务自动化。 用户可通过[浏览器](../../../user/run-app-browser.md)或[移动设备](../../../user/run-app-client.md)（如手机）运行该应用。
+
+> [!NOTE]
+> 在 Dynamics 365 中连接到模型驱动的应用时，我们建议使用更可靠的[Common Data Service 连接器](connection-common-data-service.md)。
 
 ## <a name="prerequisite"></a>先决条件
 若要遵照本教程操作，需要一个包含 Dynamics 365 订阅的 Microsoft Office 365 帐户。
@@ -35,7 +38,7 @@ ms.locfileid: "74723924"
     ![“文件”菜单上的“连接”选项](./media/connection-dynamics-crmonline/file-connections.png)
 3. 在右上角附近，单击“新建连接”。
    
-    ![新建连接](./media/connection-dynamics-crmonline/new-connection.png)
+    ![新连接](./media/connection-dynamics-crmonline/new-connection.png)
 4. 在连接列表中，单击 **Dynamics 365**。
    
     ![“文件”菜单上的“连接”选项](./media/connection-dynamics-crmonline/connection-d365.png)
