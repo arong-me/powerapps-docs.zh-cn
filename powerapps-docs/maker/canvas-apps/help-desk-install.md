@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/29/2019
+ms.date: 01/15/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 01fdadfd5ecf19d56ac115e53cef08a2cff2a254
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 4eafe6aaafb2fe461a98212a64d3858ebf5f5f0f
+ms.sourcegitcommit: 1c4ab1859febccf79a835bd2f168e7e12a953a18
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729652"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111107"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-power-apps"></a>在 Power Apps 中安装和配置技术支持示例
 
@@ -31,7 +31,7 @@ ms.locfileid: "74729652"
 
 ## <a name="overview-of-the-sample"></a>示例概述
 
-技术支持提供了一个用户友好的体验，可让最终用户与支持专业人员联系。 快速找到最重要问题的答案、跟踪公开票证的进度，并查看以前请求的详细信息。 要拥有此应用，需完成少量设置。
+技术支持提供用户友好体验，方便最终用户与支持专业人员交流。 快速找到最重要问题的答案，跟踪开放票证的进度，并查看之前的请求的详细信息。 要拥有此应用，需完成少量设置。
 
 ![技术支持 PowerApp 的打开屏幕](./media/help-desk-install/Login-screen.png)
 
@@ -47,7 +47,7 @@ ms.locfileid: "74729652"
 
 此列表存储技术支持票证。
 
-1. 打开 Web 浏览器并导航到 [https://portal.office.com](https://admin.microsoft.com )。
+1. 打开 Web 浏览器并导航到 [https://portal.office.com](https://admin.microsoft.com ) 。
 2. 用具有创建 SharePoint 列表权限的帐户登录。
 3. 导航到要在其中存放技术支持列表的站点集合。
 4. 单击网页右上角的齿轮图标。
@@ -70,7 +70,7 @@ ms.locfileid: "74729652"
 4. 在“此列中的信息类型为”单选按钮列表中，选择“多行文本”。
 5. 在“要求此列包含信息”单选按钮列表中，选择“是”。
 6. 在“指定允许的文本类型”单选按钮列表中，选择“纯文本”。
-7. 单击“确定”。
+7. 单击**确定**。
 
 ### <a name="create-category-column"></a>创建“类别”列
 
@@ -83,7 +83,7 @@ ms.locfileid: "74729652"
 5. 在“强制使用唯一值”单选按钮列表中，选择“否”。
 6. 在“选项显示方式”单选按钮列表中，选择“下拉菜单”。
 7. 在“默认值”文本框中，输入“笔记本电脑/电脑设备问题”。
-8. 单击“确定”。
+8. 单击**确定**。
 
 ### <a name="create-percentcomplete-column"></a>创建 PercentComplete 列
 
@@ -91,7 +91,7 @@ ms.locfileid: "74729652"
 2. 在“列名”文本框中，输入“PercentComplete”。
 3. 在“此列中的信息类型为”单选按钮列表中，选择“数字 (1, 10, 100)”。
 4. 在“要求此列包含信息”单选按钮列表中，选择“否”。
-5. 单击“确定”。
+5. 单击**确定**。
 
 ### <a name="create-priority-column"></a>创建“优先级”列
 
@@ -100,12 +100,12 @@ ms.locfileid: "74729652"
 3. 在“此列中的信息类型为”单选按钮列表中，选择“选项”。
 4. 在“在单独行上输入每个选项”文本框中，输入以下值，每个值单独占一行： 
     - 高
-    - MEDIUM
+    - 中型
     - 低
 5. 在“强制使用唯一值”单选按钮列表中，选择“否”。
 6. 在“选项显示方式”单选按钮列表中，选择“下拉菜单”。
 7. 在“默认值”文本框中，输入“低”。
-8. 单击“确定”。
+8. 单击**确定**。
 
 ### <a name="create-taskstatus-column"></a>创建“任务状态”列
 
@@ -115,13 +115,13 @@ ms.locfileid: "74729652"
 4. 在“在单独行上输入每个选项”文本框中，输入以下值，每个值单独占一行： 
     - 未启动
     - 进行中
-    - 已完成
+    - COMPLETED
     - 已推迟
     - 等待 CSR
 5. 在“强制使用唯一值”单选按钮列表中，选择“否”。
 6. 在“选项显示方式”单选按钮列表中，选择“下拉菜单”。
 7. 在“默认值”文本框中，输入“未启动”。
-8. 单击“确定”。
+8. 单击**确定**。
 
 ### <a name="create-assignedto-column"></a>创建“分配对象”列
 
@@ -130,15 +130,15 @@ ms.locfileid: "74729652"
 3. 在“此列中的信息类型为”单选按钮列表中，选择“用户或用户组”。
 4. 在“要求此列包含信息”单选按钮列表中，选择“否”。
 5. 在“允许多选”单选按钮列表中，选择“否”。
-6. 单击“确定”。
+6. 单击**确定**。
 
 ### <a name="edit-title-column"></a>编辑“标题”列
 
 1. 单击“标题”列链接。
 2. 在“要求此列包含信息”单选按钮列表中，选择“否”。
-3. 单击“确定”。
+3. 单击**确定**。
 
-## <a name="download-the-app"></a>下载应用程序
+## <a name="download-the-app"></a>下载应用
 
 1.  [下载](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip)Power Apps 包并将其保存到计算机。
 
@@ -233,7 +233,7 @@ ms.locfileid: "74729652"
 
 ### <a name="update-admin-list"></a>更新管理员列表
 
-1. 选择“登录屏幕”。
+1. 选择**应用**。
 2. 从下拉列表中选择“OnStart”。
 3. 展开公式窗口，查找“AdminList”集合。
 4. 将“user@microsoft.com”替换为你的技术支持管理员。
