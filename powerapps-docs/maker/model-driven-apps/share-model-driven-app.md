@@ -10,19 +10,19 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 11/18/2019
+ms.date: 12/17/2019
 ms.author: matp
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f11eebcb220ff877b0cd750f2d94338cadc5ceea
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: bcdc8241692cd1713f4c0f4cd2f4c0d8959dffe4
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884000"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909360"
 ---
 # <a name="share-a-model-driven-app-with-power-apps"></a>使用 Power Apps 共享模型驱动应用
 
@@ -167,7 +167,11 @@ ms.locfileid: "2884000"
 
 *除非另外指定，否则权限是全局范围。
 
-## <a name="next-steps"></a>后续步骤
+## <a name="use-azure-active-directory-groups-to-manage-access"></a>使用 Azure Active Directory 组管理访问权限
+管理员可以使用其组织的 Azure Active Directory (Azure AD) 组管理已获得许可的 Common Data Service 用户的访问权限。 两种 Azure AD 组（“办公室”和“安全”）均可用用于保护用户的应用访问权限。 详细信息：[关于组团队](/power-platform/admin/manage-teams.md#about-group-teams) 
+
+
+### <a name="see-also"></a>另请参阅
 [在移动设备上运行模型驱动应用程序](../../user/run-app-client-model-driven.md)
 
 

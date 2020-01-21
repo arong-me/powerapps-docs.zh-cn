@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c1f58228cb86ae7415739f5e6ffe4b3175b87b0d
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: 03cdea2884f5ae4ac889218c4d9b87a48f1f8d81
+ms.sourcegitcommit: c2de40124037825308fbccf71f3a221198a928f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895021"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2944331"
 ---
 # <a name="create-and-use-dataflows-in-power-apps"></a>在 Power Apps 中创建和使用数据流
 
@@ -51,6 +51,8 @@ ms.locfileid: "2895021"
 ## <a name="create-a-dataflow"></a>创建数据流
 数据流是在一个环境中创建的。 因此，您只能从该环境查看和管理它们。 另外，想要从您的数据流中获取数据的个人必须有权访问您在其中创建数据流的环境。
 
+> [!NOTE]
+> Power Apps 社区计划许可证现在不支持创建数据流。
 
 1.  登录到 Power Apps，并验证您所在的环境，在命令栏右侧附近找到环境切换器。
 

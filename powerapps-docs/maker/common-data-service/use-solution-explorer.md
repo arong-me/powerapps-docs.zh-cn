@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e4d8b6b69ab820541b822fc58ce5c079df7b5b19
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 9c4473b0b1cdcb2549b84a100a19c1663f795b2d
+ms.sourcegitcommit: df15c909ba27c9ed83197305a4ee1f01e46a826b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885318"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2936227"
 ---
 # <a name="use-solutions-in-power-apps"></a>在 Power Apps 中使用解决方案
 
@@ -93,7 +93,7 @@ ms.locfileid: "2885318"
 
 以下限制适用于解决方案中画布应用、流和自定义连接器的使用。 
 
-- 区域应用触发的流在解决方案中不可用。
+- 解决方案中现在不支持区域应用按钮触发的流。 在解决方案外部创建应用和流，然后导出 .msapp 文件以使用嵌入式按钮触发的流迁移区域应用。 
 - 如果画布应用在托管解决方案中打包，它将无法在目标环境中编辑和重新发布。 如果应用需要在目标环境中进行编辑，请使用非托管解决方案。 
 - 连接需要身份验证和同意，这需要交互式用户会话，因此无法通过解决方案进行传输。 导入解决方案后，请播放应用以验证连接。 您也可以在导入解决方案之前在目标环境中创建连接。 
 -   作为共同负责人共享到 Azure Active Directory (AAD) 安全组的画布应用不能添加到解决方案中。 取消共享应用，然后再将其添加到解决方案中。

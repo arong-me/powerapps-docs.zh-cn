@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 12/26/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 60300176f0a39258bbb7030c9e30d9b2e7711990
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.reviewer: tapanm
+ms.openlocfilehash: 26e02d2b8c8a8d47ed41727e13150875bfa307a4
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874638"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934494"
 ---
 # <a name="about-portal-lifecycle"></a>关于门户生命周期
 
@@ -69,3 +69,26 @@ ms.locfileid: "2874638"
 
     > [!div class=mx-imgBorder]
     > ![试用到生产确认](../media/trial-to-prod-confirm.png "试用到生产确认")
+
+## <a name="considerations-for-add-on-portals"></a>附加产品门户的注意事项
+
+以下情况适用于[使用之前购买的门户附加产品计划预配的](../provision-portal-add-on.md)门户。
+
+### <a name="trial-add-on-portal"></a>试用附加产品门户
+
+试用附加产品门户在 30 天后到期。 到期门户将暂挂 7 天。 暂挂期结束后，将删除门户。 配置期或暂挂期内，仍然可以将试用附加产品门户转换为生产门户。
+
+### <a name="production-add-on-portal"></a>生产附加产品门户
+
+生产附加产品门户在购买的许可证期限结束时到期。 生产附加产品目的暂挂期取决于购买的许可证计划。 暂挂期结束后，将删除门户。 当门户处于已配置状态或暂挂状态时，可以延长生产附加产品门户的许可证。 延长许可证期限之后，可以将已暂挂的门户转换为已配置状态。
+
+> [!IMPORTANT]
+> 暂挂或删除门户可能导致功能丢失。 确保及时延长即将到期的附加产品门户的许可证期限以避免暂挂或删除。
+
+### <a name="reset-add-on-portal"></a>重置附加产品门户
+
+可执行以下步骤[重置](reset-portal.md)使用之前购买的较早门户附加产品计划预配的门户。
+
+## <a name="see-also"></a>另请参阅
+
+[Power Apps 门户常见问题解答](../faq.md)
