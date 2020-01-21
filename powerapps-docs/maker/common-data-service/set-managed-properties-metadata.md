@@ -2,7 +2,7 @@
 title: 在 Common Data Service 元数据中设置托管属性 | MicrosoftDocs
 description: 了解如何在解决方案中为元数据项目设置托管属性。
 ms.custom: ''
-ms.date: 05/30/2018
+ms.date: 12/19/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,37 +22,45 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 287df9ac6daa38022a269177247a5b446bdfa1fa
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4e0c0432626896acdabf89133c86510b651e3859
+ms.sourcegitcommit: 366f0d1b8309ab1fd533ebd7e1b41a69a99fd25a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2869972"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2917901"
 ---
 # <a name="set-managed-properties-in-common-data-service-metadata"></a>在 Common Data Service 元数据中设置托管属性 
 
 托管属性仅适用于以下情况：元数据包括在某个托管解决方案中，并将该解决方案导入到另一个环境。 利用这些设置，解决方案制造者可以对其允许安装托管解决方案的用户拥有的自定义级别有一定的控制。 
+
+可以查看和更改非托管组件的托管属性。 可以查看，但是不能更改托管组件的托管属性。 
 
 > [!TIP]
 > 允许用户在处理业务数据的解决方案中扩展元数据通常是一个好主意。 这会允许他们以对标准实体采用的相同方法根据其需要定制您的解决方案。
 >
 >对于提供支持解决方案的功能但不包含业务数据的元数据，最好限制允许进行哪些自定义。
 
-必须使用解决方案资源管理器设置托管属性。
-
-[!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 
 ## <a name="entity-managed-properties"></a>实体的托管属性
+1.  登录 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后从左侧窗格中选择**解决方案**。 
+2.  打开所需的解决方案。 
+3.  从解决方案中的组件列表选择要查看或编辑其托管属性的非托管实体旁边的 **…**， 然后选择**托管属性**。 
 
-在[查看实体](create-edit-entities-solution-explorer.md#view-entities)时，选择实体，然后在菜单栏中选择**托管属性**。  这将打开**设置托管属性**对话框。
+    > [!div class="mx-imgBorder"] 
+    > ![实体托管属性命令](media/entity-managed-properties.png "实体托管属性命令")
 
-![设置实体托管属性](media/set-managed-properties.png)
+    将显示托管属性页。 
+
+    > [!div class="mx-imgBorder"] 
+    > <img src="media/managed-properties-dialog.png" alt="Managed properties pane" height="572" width="300">
+
+<!-- [Managed properties pane](media/managed-properties-dialog.png "Managed properties pane") -->
   
 实体具有的托管属性比其他任何类型的解决方案组件都多。 如果实体可以自定义，则可设置以下选项。  
 
 |选项|说明|
 |--|--|
-|**可以自定义** |控制所有其他选项。 如果此选项为 `False`，则其他设置都不适用。 如果这是 `True`，则可指定其他自定义选项。 当为 `False` 时，等同于将所有其他选项设置为 false。|
+|**允许自定义项** |控制所有其他选项。 如果此选项为 `False`，则其他设置都不适用。 如果这是 `True`，则可指定其他自定义选项。 当为 `False` 时，等同于将所有其他选项设置为 false。|
 |**可以修改显示名称**|是否能修改实体显示名称。|
 |**可以更改其他属性** |适用于其他选项包含的任何项目。|
 |**可以创建新表单**|能否为此实体创建新窗体。|

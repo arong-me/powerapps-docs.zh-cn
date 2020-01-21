@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/18/2019
+ms.date: 12/20/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 80f9cc89b0da2eec5d134f282507e68658e42a96
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.reviewer: tapanm
+ms.openlocfilehash: 2a3f9e6eba00446ce953975c99721d99bbe78338
+ms.sourcegitcommit: 8ba5f6b88dbd71eb3663dfeec5f0b4427c1543c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2816371"
+ms.lasthandoff: 12/27/2019
+ms.locfileid: "2924275"
 ---
 # <a name="migrate-portal-configuration"></a>迁移门户配置
 
@@ -45,7 +45,12 @@ ms.locfileid: "2816371"
 导出配置数据后，必须将其导入目标环境。 详细信息：[导入门户配置数据](#import-portal-configuration-data)
 
 > [!NOTE]
-> 提供架构文件是为了减少从头构建架构所需的工作。 可以使用工具提供的标准方法针对您的实施定制架构。 可以在配置迁移工具中加载架构文件，并可以进行更改来添加、移除和修改实体、属性等。
+> 配置迁移工具使用架构导出和导入配置数据。 此工具不迁移实体和实体架构。 当配置数据与所选架构不匹配时，如果缺少元素（如实体和字段），迁移可能会失败。
+>
+> 导出期间，确保源环境中包含配置迁移工具架构文件中指定的门户实体。 仍然可以更改架构文件以添加，删除和修改实体，属性等，以迁移配置数据子集。
+>
+> 导入期间，确保目标环境中包含已安装的相同门户类型，以及所有额外自定义设置，如作为解决方案单独导入的实体、字段、窗体或视图。
+
 
 ## <a name="export-portal-configuration-data"></a>导出门户配置数据
 

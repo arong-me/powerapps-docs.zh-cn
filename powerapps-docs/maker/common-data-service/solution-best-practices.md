@@ -22,19 +22,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 810fd536da5236f5ac7490505e82e78179ab61da
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 40c59ccdebe8ee5192510b5d8ac7e825c6b68c58
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865279"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909404"
 ---
 # <a name="best-practices-when-working-with-solutions"></a>使用解决方案时的最佳实践 
 本主题介绍使用解决方案时的最佳实践。 
 
 
 ## <a name="use-a-single-managed-solution-to-manage-a-model-driven-app"></a>使用单个托管解决方案来管理模型驱动应用 
-要更新托管解决方案中包含的应用，请使用更新或修补程序解决方案。 请勿在具有相同模型驱动应用的环境中安装其他托管解决方案。 详细信息：[更新解决方案](import-update-export-solutions.md#update-solutions)和[使用细分解决方案和修补程序导出选定的实体资产](use-segmented-solutions-patches-simplify-updates.md) 
+要更新托管解决方案中包含的应用，请使用更新或修补程序解决方案。 请勿在具有相同模型驱动应用的环境中安装其他托管解决方案。 详细信息：[更新解决方案](update-solutions.md)和[使用细分解决方案和修补程序导出选定的实体资产](use-segmented-solutions-patches-simplify-updates.md) 
 
 
 ## <a name="use-security-roles-to-manage-app-access"></a>使用安全角色管理应用访问

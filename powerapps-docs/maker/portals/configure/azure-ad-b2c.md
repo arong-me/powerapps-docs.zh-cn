@@ -2,19 +2,19 @@
 title: 门户的 Azure AD B2C 提供程序设置 | MicrosoftDocs
 description: 为门户启用 Azure AD B2C 提供程序设置的说明。
 author: sbmjais
-manager: shujoshi
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/18/2019
+ms.date: 01/03/2020
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 5f902dd900e074c2e6b3f08f8848475dcd907ee4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.reviewer: tapanm
+ms.openlocfilehash: e8275fa256b00736501990c3abf127777097d938
+ms.sourcegitcommit: 82eec5da9c97fcb6ed50ae8e582f326af9278aa7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755475"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935192"
 ---
 # <a name="azure-ad-b2c-provider-settings-for-portals"></a>门户的 Azure AD B2C 提供程序设置
 
@@ -522,4 +522,8 @@ Common Data Service 中和身份提供程序中的数据不直接关联，因此
 
 **名称**：身份验证/[协议]/[提供程序]/AllowContactMappingWithEmail
 
-**说明**：指定联系人是否映射到相应的电子邮件。 当设置为 true 时，此设置将唯一的联系人记录与匹配的电子邮件地址关联，然后在用户成功登录后自动将外部身份提供程序分配到联系人。 默认情况下，它设置为 false。
+**说明**：指定联系人是否映射到相应的电子邮件。 当设置为 true 时，此设置将唯一的联系人记录与匹配的电子邮件地址关联，然后在用户成功登录后自动将外部身份提供程序分配到联系人。 默认情况下，它设置为 *false*。
+
+**名称**：Authentication/UserManager/UserValidator/RequireUniqueEmail
+
+**描述**：指定验证用户是否需要唯一电子邮件地址。 使用现有联系人电子邮件地址登录时，必须将此设置设置为 false。 默认情况下设置为 *true*，可能导致已有电子邮件地址的联系人记录的登录尝试失败。

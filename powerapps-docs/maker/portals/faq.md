@@ -6,21 +6,25 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/03/2019
+ms.date: 12/27/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 28df2292d18f38a78e913a9805ac39a33f6aaf54
-ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
+ms.reviewer: tapanm
+ms.openlocfilehash: 35f68ef861ac8908e1eb9227df6768b7a2c2c9f3
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "2890717"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934094"
 ---
 # <a name="power-apps-portals-faq"></a>Power Apps 门户常见问题解答
 
 我们编译了一个常见问题列表并提供了简短的答案来帮助你快速获得所需信息。
 
 ## <a name="general"></a>常规
+
+### <a name="when-is-an-add-on-portal-in-suspended-state"></a>附加产品门户何时处于暂挂状态？
+
+到期后，[使用之前购买的门户附加产品计划预配的](provision-portal-add-on.md)门户将暂挂。 对于试用门户，到期期间为 30 天，但是，生产中已购买许可证的附加产品门户可能有所不同。 7 天后将删除暂挂试用门户，但是，生产门户的暂挂期可能不同。 有关更多详细信息，请参阅附加产品门户的[门户生命周期](./admin/portal-lifecycle.md#considerations-for-add-on-portals)。
 
 ### <a name="how-do-i-redirect-a-user-to-a-default-page-after-signing-in"></a>如何在用户登录后将用户重定向到默认页面？
 
@@ -115,11 +119,7 @@ Set-TenantSettings -RequestBody @{ "disablePortalsCreationByNonAdminUsers" = $fa
 
 ### <a name="how-do-i-get-a-portal-subscription"></a>如何获取门户订阅？
 
-可以通过以下方法之一获取门户订阅：
-
-- 购买特定类型和数量的用户许可证会提供一个门户加载项。 详细信息请参阅 Dynamics 365 定价和许可指南。 请务必注意，通过用户许可证只能获得一个门户加载项，即使您购买了多个类型或数量的有效许可证。
-
-- 其他门户订阅可以通过购买门户加载项订阅购买。 如果您具有适当的 Dynamics 365 许可证，此订阅是加载项订阅，可供购买。
+[Power Apps 门户](overview.md) 现在在 Power Apps 中完全独立存在。 不再需要许可证即可预配门户。 用户对门户的访问需要许可证，具体取决于角色类型。 有关更多详细信息，请参阅 [Power Apps 门户许可常见问题](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-power-apps-portals-licensing)。
 
 ### <a name="how-do-i-change-the-audience-and-type-of-a-portal-after-it-is-provisioned"></a>如何在设置门户后更改门户的访问群体和类型？
 

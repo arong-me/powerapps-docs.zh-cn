@@ -2,7 +2,7 @@
 title: 在 Power Apps 中使用解决方案 | MicrosoftDocs
 description: 了解如何分发解决方案
 ms.custom: ''
-ms.date: 09/30/2019
+ms.date: 12/04/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 286d955bfa0e6b28061d6a73962da25156820c9a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 71ddf991d25f144ce24b078cf73ffc6b971de36f
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2870104"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909163"
 ---
 # <a name="solutions-overview"></a>解决方案概述  
 
@@ -41,73 +41,80 @@ ms.locfileid: "2870104"
 
 <a name="BKMK_SolutionComponents"></a>   
 ### <a name="components"></a>组件  
- 组件代表您有可能自定义的某些事项。 可以包括在解决方案中的任何项目是组件。 以下是您可以在解决方案中查看的组件的列表：  
-  
--   AI 模型
+ 组件代表您有可能自定义的某些事项。 可以包括在解决方案中的任何项目是组件。 若要查看解决方案中包含的组件，请在解决方案资源管理器中转到**设置** > **解决方案**，然后打开所需解决方案。 这些组件包含在**组件**列表中。 
 
--   应用程序功能区  
-  
--   文章模板  
-  
--   业务规则  
+> [!div class="mx-imgBorder"] 
+> ![解决方案中的组件](media/components-in-solution.png "解决方案中的组件") 
 
--   区域应用程序 
-  
--   图表  
-  
--   连接角色  
-  
--   合同模板  
+若要查看可添加到解决方案的组件类型的列表，请参阅 [ComponentType 选项](../../developer/common-data-service/reference/entities/solutioncomponent.md#componenttype-options)。
 
--   自定义连接器
+<!-- The following is a list of components that you can view in a solution:  
+  
+-   AI Model
+
+-   Application Ribbon  
+  
+-   Article Template  
+  
+-   Business Rule  
+
+-   Canvas App 
+  
+-   Chart  
+  
+-   Connection Role  
+  
+-   Contract Template  
+
+-   Custom Connector
  
--   自定义控件
+-   Custom Control
   
--   仪表板  
+-   Dashboard  
   
--   电子邮件模板  
+-   Email Template  
   
--   实体  
+-   Entity  
   
--   实体关系  
+-   Entity Relationship  
 
--   环境变量
+-   Environment variable
   
--   字段  
+-   Field  
   
--   字段安全配置文件  
+-   Field Security Profile  
 
 -   Flow
   
--   表单  
+-   Form  
   
--   邮件合并模板  
+-   Mail Merge Template  
   
--   消息  
+-   Message  
 
--   模型驱动应用程序
+-   Model-driven app
   
--   选项集  
+-   Option Set  
   
--   插件程序集  
+-   Plug-in Assembly  
   
--   进程  
+-   Process  
 
--   报表  
+-   Report  
 
--   SDK 消息处理步骤  
+-   Sdk Message Processing Step  
   
--   安全角色  
+-   Security Role  
   
--   服务端点  
+-   Service Endpoint  
   
--   站点地图  
+-   Site Map  
 
--   虚拟实体数据提供程序
+-   Virtual Entity Data Provider
 
--   虚拟实体数据源
+-   Virtual Entity Data Source
   
--   Web 资源  
+-   Web Resource  -->
   
  某些组件嵌套在其他组件内。 例如，实体包含窗体、视图、图表、字段、实体关系、消息和业务规则。 其中的每个组件都需要存在一个实体。 字段不能存在于实体之外。 我们称之为字段依赖于实体。 实际的组件类型的数量是之前列表中所示的两倍，但其中大多数不嵌套在其他组件内且不在应用程序中显示。  
   

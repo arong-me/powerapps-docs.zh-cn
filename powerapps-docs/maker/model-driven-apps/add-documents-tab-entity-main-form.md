@@ -17,12 +17,12 @@ search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: f245d4c2a9272d10f7aefa2b2847adba5ce0f6e5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: fae464925ea755a1f9fd0cd77426bfdbaad6141c
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2860795"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909316"
 ---
 # <a name="add-the-sharepoint-documents-tab-to-the-main-form-for-an-entity"></a>将“SharePoint 文档”选项卡添加到实体的主窗体
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "2860795"
 5. 在窗体设计器中，选择窗体设计器区域上的**新建选项卡**，选择**添加字段**，然后在左窗格中添加诸如*地址 1: 市/县*之类的字段。 您可以为选项卡使用任何文本或数字字段。![向选项卡添加字段](media/add-field-to-tab.png)
 6. 重命名选项卡标签。 为此，选择**新建选项卡**，然后在右侧的属性窗格中用更具描述性的内容替换**新建选项卡**，例如*文件*。
 7. 选择**保存**，选择**发布**，然后关闭窗体设计器。 
-8. 在 Power Apps 开发者主页上，选择**解决方案**，选择该解决方案，然后选择**导出**将解决方案导出为非托管解决方案。 详细信息：[导出解决方案](../common-data-service/import-update-export-solutions.md#export-solutions) 
+8. 在 Power Apps 开发者主页上，选择**解决方案**，选择该解决方案，然后选择**导出**将解决方案导出为非托管解决方案。 详细信息：[导出解决方案](../common-data-service/export-solutions.md) 
 9. 提取解决方案，并使用 XML 或文本编辑器打开 customization.xml 文件。 
 10. 在 customization.xml 中搜索 **label description="Files"**（或您在上一步中为选项卡标签指定的任何名称）。
 11. 向下滚动到 control id="*field name*" 元素，例如 **control id="address1_city"**，然后将整个元素替换为本主题中的 [XML 示例](#xml-sample-for-adding-the-documents-tab-to-a-form)。 

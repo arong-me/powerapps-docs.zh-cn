@@ -5,19 +5,19 @@ author: Mattp123
 ms.service: powerapps
 ms.component: cds
 ms.topic: quickstart
-ms.date: 05/01/2018
+ms.date: 12/23/2019
 ms.author: matp
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e24249573f6c7e56ff16de6808e2423acbf3c0cf
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: d5ce493618d5a7b7d736f56714fcfa2a1c6ba068
+ms.sourcegitcommit: da1a13776f3e27d6b3d2157d17196681e6fe3619
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884176"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "2922812"
 ---
 # <a name="create-a-custom-entity"></a>创建自定义实体
 在 Power Apps 中，*实体*定义您要以记录形式跟踪的信息，通常包括公司名称、地点、产品、电子邮件和电话等属性。 然后您可以通过开发引用该实体的应用程序来显示该数据。 Power Apps 提供标准的“现成”实体来覆盖组织内的典型情形（如跟踪约会），但是有时您可能需要创建自定义实体来存储特定于组织的数据。
@@ -58,8 +58,17 @@ ms.locfileid: "2884176"
     此外，请注意，主字段还有其自己的**名称**框，其类似于以上所述的实体名称。 主字段名称将在输入显示名称时自动填充，其使用与实体相同的前缀，并且无法在创建实体后更改。
 
     c. 打开**更多设置**部分，展开**说明**折叠。 如果需要，您可以为实体输入说明（如果其他人员将使用此实体，说明会很有用）。 
+
+    d. 从**选择实体类型**下拉列表选择**活动**实体选项，以便将实体作为活动启用。
+
+    e. 确保已选中**显示在活动菜单中**复选框。 此选项确保活动会显示在活动菜单中。
+
+      > [!Note]
+      > 创建实体前确保选中**显示在活动菜单中**选项。
+
+    f. 展开**创建和更新设置**，然后选中**启用快速创建窗体**复选框。 此选项确保您可以使用快速创建窗体创建记录。
     
-    d. 完成后，请单击**创建**。
+    g. 完成后，请单击**创建**。
      
     ![新建实体](./media/data-platform-cds-create-entity/newentitypanel.png "“新实体”面板")
 
