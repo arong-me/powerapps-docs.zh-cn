@@ -1,5 +1,5 @@
 ---
-title: 适用于电源应用的常见问题和解决方法 |Microsoft Docs
+title: Power Apps 常见问题和解决方法 | Microsoft Docs
 description: Power Apps 中的常见问题和解决方法的列表。
 author: KumarVivek
 manager: kvivek
@@ -13,99 +13,111 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b578d34217647658bb872ed22cd7ee8b3cc4a1cd
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: 254034d608e5824f2e6358bfa84bb7f7fe9f178c
+ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723862"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76315303"
 ---
-# <a name="common-issues-and-resolutions-for-power-apps"></a>适用于 Power Apps 的常见问题和解决方法
+# <a name="common-issues-and-resolutions-for-power-apps"></a>Power Apps 常见问题和解决方法
 
-本文列出了在使用电源应用时可能遇到的一些常见问题。 并在适用情况下提供了解决方法。
+本文列出了你在使用 Power Apps 时可能遇到的一些常见问题。 并在适用情况下提供了解决方法。
 
-1. **使用身份验证器时，某些 Android 移动设备上的登录问题**（2019年8月21日）
+1. 通过 Microsoft Edge 导入时相机图像翻转（2020 年 1 月 20 日） 
 
-    在某些设备和方案中，你可能会在使用验证器时遇到登录失败。 这是因为 OEM 限制了此功能。 有关错误和可能的缓解措施的详细信息，请参阅[此处](https://github.com/AzureAD/azure-activedirectory-library-for-android/wiki/ADALError:-BROKER_AUTHENTICATOR_NOT_RESPONDING)。    
+    结合使用相机和 Microsoft Edge 浏览器时，图像可能会翻转。  这是 Microsoft Edge 的缺陷导致的。  要缓解此问题，请使用新的 Edge Chromium 或其他浏览器。
+    
+1. 相机图像不包含元数据信息（2020 年 1 月 20 日） 
 
-1. **Android 移动设备上的照相机问题**（2019年1月1日）
+    使用相机控件时，图像不包含元数据信息。 这是相机拍照方式限制所导致的。 为缓解此问题，请使用[添加图片控件](controls/control-add-picture.md)。
 
-    如果相机控件停止在 Android 设备上工作，请重新发布应用程序，并将其重新打开到设备上。 照相机控件已更新以响应 Android 操作系统中的更改，你的应用程序将在重新发布时从更新中获益。
+1. 从 iOS 添加的图像不包含元数据信息（2020 年 1 月 20 日） 
 
-1. **在灵活高度的库中滚动**（11月27日，2018）
+    在 iOS 上使用“添加图片控件”时，通过相机或图像库导入的图像不包含元数据。  
 
-    如果使用手指滚动时遇到限制，请将其抬起，并再次开始滚动。
+1. 使用验证器时某些 Android 移动设备上出现登录问题（2019 年 8 月 21 日） 
 
-1. **在适用于 Windows 的 Power Apps 中，用鼠标或触摸输入进行绘制不平滑**（2018年9月24日）
+    在某些设备和情况下，你可能会在使用验证器时登录失败。 这是限制此功能的 OEM 导致的。 要详细了解此问题及可能的缓解方法，请参阅[此处](https://github.com/AzureAD/azure-activedirectory-library-for-android/wiki/ADALError:-BROKER_AUTHENTICATOR_NOT_RESPONDING)。    
 
-    钢笔控件仅对在 Windows 应用中使用鼠标或触摸输入进行绘制的部分支持。 笔划可能是间歇性的。 对于平滑绘图，请在浏览器中使用笔或运行应用程序。
+1. Android 移动设备上的相机问题（2019 年 1 月 1 日） 
 
-1. **Power Apps Mobile 中的多个媒体控件**（2018年8月2日）
+    如果某 Android 设备上的相机控件停止工作，请重新发布你的应用，再在该设备上重新打开它。 之前更新了相机控件来响应 Android 操作系统中的更改；在你重新发布后，你的应用将从此次更新中获益。
 
-    Power Apps Mobile 在各种类型的设备上运行，其中某些设备具有特定于该平台的限制：
+1. 在高度灵活的图像库中滚动（2018 年 11 月 27 日） 
 
-    - 可在除 iPhone 设备之外的所有平台上同时在多个视频控件中播放视频。
-    - 可在除 Web 播放器之外的所有平台上同时使用多个麦克风控件录制音频。
+    如果在用手指滚动时遇到限制，请抬起手指，再重新开始滚动。
 
-1. 重新发布应用（2018 年 8 月 2 日）
+1. 在 Windows 版 Power Apps 中用鼠标绘图或触控输入时操作卡顿  （2018 年 9 月 24 日）
 
-    如果你尚未在几个月内更新应用，请将其重新发布以与最新版本的 Power Apps 同步，其中包括性能改进和其他修复。
+    在 Windows 应用中，笔控件仅部分支持用鼠标绘图或触控输入。 笔划可能不连贯。 要顺畅绘制，请使用触笔或在浏览器中运行应用。
 
-1. <a name="out-of-memory"></a>浏览器内存不足（2018 年 7 月 23 日）
+1. 移动版 Power Apps 中的欧媒体控件（2018 年 8 月 2 日） 
 
-    如果使用 Power Apps 时内存不足，请考虑下载64位版本的 Chrome、Microsoft Edge 或 Internet Explorer。
+    移动版 Power Apps 可在各种类型的设备上运行，其中某些设备具有特定于该平台的限制：
 
-1. 从嵌入的应用启动网站（2018 年 5 月 10 日）
+    - 可在除 iPhone 设备之外的所有平台上同时在多个视频控件中播放视频  。
+    - 可在除 Web 播放器之外的所有平台上同时使用多个麦克风控件录制音频  。
+
+1. 重新发布应用  （2018 年 8 月 2 日）
+
+    如果几个月内都未更新应用，请重新发布该应用，使其与最新版本的 Power Apps 同步，新版本中包括性能改进和其他修补程序。
+
+1. <a name="out-of-memory"></a>浏览器内存不足  （2018 年 7 月 23 日）
+
+    如果使用 Power Apps 时内存不足，请考虑下载 64 位版本的 Chrome、Microsoft Edge 或 Internet Explorer。
+
+1.  从嵌入的应用启动网站（2018 年 5 月 10 日）
 
     Internet Explorer 和 Microsoft Edge 浏览器可能会阻止启动处于受保护模式的 URL 或网站或者比加载的应用中的网站更低安全性的区域。 若要解决此问题，请为你的浏览器[更改安全和隐私设置](https://support.microsoft.com/help/17479/windows-internet-explorer-11-change-security-privacy-settings)。
 
-1. 库中的组合框控件（2018 年 5 月 3 日）
+1. 库中的组合框控件  （2018 年 5 月 3 日）
 
-    在图库中使用“组合框”控件时，用户滚动库时不保留其选项。 如果在不滚动的库中使用“组合框”控件，将不出现此问题。 当前未提供解决方法。
+    在图库中使用“组合框”控件时，用户滚动库时不保留其选项  。 如果在不滚动的库中使用“组合框”控件，将不出现此问题  。 当前未提供解决方法。
 
-1. 使用自定义图像作为应用图标（2018 年 4 月 11 日）
+1. 使用自定义图像作为应用图标  （2018 年 4 月 11 日）
 
-    在适用于 Windows 版本3.18043 的 Power Apps Studio 中，无法上传自定义映像以用作应用图标。 若要解决此问题，请使用[Power Apps Studio for web](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)上传自定义映像。 或者，你可以使用适用于 Windows 的 Power Apps Studio 附带的其中一个图标，并自定义背景色。
+    在 Windows 版 Power Apps Studio 版本 3.18043 中，无法上传自定义图像用作应用图标。 要解决此问题，请使用 [Web 版 Power Apps Studio](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上传自定义图像。 也可使用 Windows 版 Power Apps Studio 中的某个图标并自定义背景色。
 
-1. 跨应用复制和粘贴屏幕（2018 年 4 月 4 日）
+1. 跨应用复制和粘贴屏幕  （2018 年 4 月 4 日）
 
     当前不支持跨应用复制和粘贴屏幕。 若要解决此问题，向目标应用添加新屏幕，从源应用屏幕中复制控件，然后将其粘贴到目标应用屏幕。
 
-1. 更改 SharePoint 窗体布局（2018 年 3 月 7 日）
+1. 更改 SharePoint 窗体布局  （2018 年 3 月 7 日）
 
-    自定义某些语言的 SharePoint 列表表单时，如果尝试将布局从纵向（默认）更改为横向，应用可能会显示多个错误（控件中的黄色三角形）。 若要修复这些错误并保留横向布局，请单击“撤消”。
+    自定义某些语言的 SharePoint 列表表单时，如果尝试将布局从纵向（默认）更改为横向，应用可能会显示多个错误（控件中的黄色三角形）。 若要修复这些错误并保留横向布局，请单击“撤消”  。
 
 1. **“数据表”控件**
 
-    如果复制并粘贴“数据表”控件，且它的 Items 属性设置为包含 Filter 函数的公式，新“数据表”控件的 Items 属性的公式以包含 _1 后缀的字段名称结尾。 这就会导致字段名称无效，且数据表不显示任何数据。 若要解决此问题，请在复制此控件前，先确认 Filter 函数从数据源中引用的任何字段都不与“数据表”控件中的列同名。 如果是，请重命名“数据表”控件中的列。 也可以从无效的字段名称中删除 _1 后缀，让它们与实体中的名称保持一致。
+    如果复制并粘贴“数据表”  控件，且它的 Items  属性设置为包含 Filter  函数的公式，新“数据表”  控件的 Items  属性的公式以包含 _1  后缀的字段名称结尾。 这就会导致字段名称无效，且数据表不显示任何数据。 若要解决此问题，请在复制此控件前，先确认 Filter  函数从数据源中引用的任何字段都不与“数据表”  控件中的列同名。 如果是，请重命名“数据表”  控件中的列。 也可以从无效的字段名称中删除 _1  后缀，让它们与实体中的名称保持一致。
 
-1. **Power Apps Studio for Windows 中的照相机控件**
+1. **Windows 版 Power Apps Studio 中的相机控件**
 
-    如果添加了照相机控件或打开使用照相机控件的应用，则 Power Apps Studio for Windows 可能会崩溃。 若要避免此问题，请在添加或使用照相机控件时使用[Power Apps Studio for web](create-app-browser.md) 。
+    如果添加相机控件或打开使用相机控件的应用，则 Windows 版 Power Apps Studio 可能会崩溃。 为避免发生此问题，请在添加或使用相机控件时，使用 [Web 版 Power Apps Studio](create-app-browser.md)。
 
 1. **Android 设备上的版本 2.0.700**
 
-    如果在 Android 设备上安装 release 2.0.700，然后无法打开应用（或应用停止响应），请卸载 Power Apps，重新启动设备，然后重新安装 Power Apps。
+    如果在 Android 设备上安装版本 2.0.700，然后无法打开应用（或应用停止响应），请先卸载 Power Apps 并重启设备，再重新安装 Power Apps。
 
 1. **打开应用时库为“空”**
 
     通过数据自动生成应用，保存应用，然后将其重新打开，浏览库时可能不会立即显示数据。 若要解决此问题，请在搜索框中至少键入一个字符，然后删除键入的文本。 这样库就能按预期方式显示数据了。
 
-1. **升级 Windows 8.1 上的 Power Apps**
+1. **在 Windows 8.1 上升级 Power Apps**
 
-    如果在运行 Windows 8 或 Windows 8.1 的计算机上安装 Power Apps，请使 Windows 应用商店应用程序处于打开和活动状态，使用 "设置" 超级按钮检查更新，然后安装它们。
+    如果安装 Power Apps 的计算机上运行的是 Windows 8 或 Windows 8.1，请打开 Windows 应用商店应用并使其保持活动状态，使用“设置”超级按钮检查更新程序，然后安装更新程序。
 
 1. **自定义连接器和 Common Data Service**
 
-    如果使用 Power Apps build 2.0.540 或更早版本创建的应用依赖于 Common Data Service 中的数据库和在不同环境中至少有一个自定义连接器，则需要将连接器部署到与数据库相同的环境，并更新应用程序以使用 th新建连接器。 否则，将出现一个对话框，通知用户找不到此 API。 有关详细信息，请参阅[环境概述](../../administrator/environments-overview.md)。
+    如果使用 Power Apps 内部版本 2.0.540 或更低版本创建的应用依赖 Common Data Service 中的数据库且至少依赖其他环境中的一个自定义连接器，则需要将连接器部署到该数据库所在的环境中，并将应用更新为使用新连接器。 否则，将出现一个对话框，通知用户找不到此 API。 有关详细信息，请参阅[环境概述](../../administrator/environments-overview.md)。
 
 1. **在 Windows 8.1 上运行应用**
 
-    如果[为 Windows 8.1 安装此更新](https://technet.microsoft.com/library/security/ms16-118)，则无法运行在该操作系统上的 Power apps Studio 中打开的应用。 但是，你仍然可以运行在[powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)中打开的应用或使用 Power apps Mobile。
+    如果安装[适用于 Windows 8.1 的此更新](https://technet.microsoft.com/library/security/ms16-118)，则无法运行此操作系统上用 Power Apps Studio 打开的应用。 但是，你仍可运行在 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中打开的或使用移动版 Power Apps 打开的应用。
 
 1. **带空格的列名称**
 
-    如果你使用的是包含空格的 SharePoint 列表或 Excel 表，则 Power Apps 会将其替换为 **"\_x0020\_"** 。 例如，当在数据布局中显示或用于公式时，SharePoint 或 Excel 中的 **"列名"** 将显示为 **"Column_x0020_Name"** 。
+    如果使用的 SharePoint 列表或 Excel 表的列名称包含空格，Power Apps 会将空格替换为“\_x0020\_”  。 例如，如果 SharePoint 或 Excel 中的“Column Name”在数据布局中显示或用于公式，则它将在 Power Apps 中显示为“Column_x0020_Name”   。
 
 1. **更改共享应用中的流**
 
@@ -131,7 +143,7 @@ ms.locfileid: "74723862"
 
 1. **在浏览器中创建和修改应用**
 
-    在 power apps studio for Windows 中，你可以在 Power Apps Studio for web 中执行许多（但不是全部）相同的操作。 有关详细信息，请参阅 [在浏览器中创建应用](create-app-browser.md)。
+    在 Web 版 Power Apps Studio 中，可执行能在 Windows 版 Power Apps Studio 中完成的多项操作，但不是全部操作。 有关详细信息，请参阅 [在浏览器中创建应用](create-app-browser.md)。
 
 1. **更改实体中的标题字段**
 
@@ -139,15 +151,15 @@ ms.locfileid: "74723862"
 
 1. **连接到本地 SharePoint 的应用**
 
-    如果共享的应用依赖于未自动共享的连接（例如本地 SharePoint 站点），则用户在单击或点击“**登录**”，在浏览器中打开应用时，将看到不包含任何文本的对话框。 要关闭对话框，请单击或点击右上角的关闭 (X) 图标。 如果在 Power Apps Studio 或 Power Apps Mobile 中打开该应用，则不会显示该对话框。 有关共享连接的详细信息，请参阅 [共享应用资源](share-app-resources.md)。
+    如果共享的应用依赖于未自动共享的连接（例如本地 SharePoint 站点），则用户在单击或点击“**登录**”，在浏览器中打开应用时，将看到不包含任何文本的对话框。 要关闭对话框，请单击或点击右上角的关闭 (X) 图标。 如果在 Power Apps Studio 或移动版 Power Apps 中打开应用，则不显示此对话框。 有关共享连接的详细信息，请参阅 [共享应用资源](share-app-resources.md)。
 
-1. **当 Power Apps 从数据生成应用时，不会自动配置用于排序和搜索的字段**。
+1. **Power Apps 通过数据生成应用时，系统不会自动配置用于排序和搜索的字段**。
 
    要配置此字段，按照 [添加库](add-gallery.md) 中筛选和排序部分所述，编辑库的 **[项](controls/properties-core.md)** 公式。
 
 1. **通过数据创建的应用只能访问数据源的前 500 条记录**。
 
-     通常情况下，通过将操作委托给数据源，Power Apps 可以使用任何大小的数据源。 对于无法委派的操作，Power Apps 在创作时将发出警告，并仅对数据源的前500条记录执行操作。  请参阅 [筛选器函数](functions/function-filter-lookup.md) 文章，了解有关委派的详细信息。
+     一般情况下，通过向数据源委派操作，Power Apps 可用于任意大小的数据源。 对于不能委派的操作，Power Apps 在创作时将发出警告，并仅对该数据源的前 500 条记录执行操作。  请参阅 [筛选器函数](functions/function-filter-lookup.md) 文章，了解有关委派的详细信息。
 
 1. **Excel 数据必须为表格式**。
 
@@ -157,7 +169,7 @@ ms.locfileid: "74723862"
 
      有关详细信息，请参阅 [SharePoint Online](connections/connection-sharepoint-online.md#known-issues)。
 
-1. **不支持共同创作。一次一个作者，请**。
+1. **共同创作不受支持。每次仅支持一位作者创作**。
 
      如果多人同时修改同一应用，可能会损坏应用或覆盖他人所做的更改。 在他人编辑之前关闭应用。
 
