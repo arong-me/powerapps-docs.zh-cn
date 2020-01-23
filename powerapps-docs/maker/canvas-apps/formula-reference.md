@@ -1,26 +1,26 @@
 ---
 title: 函数、信号和枚举 |Microsoft 文档
-description: Power Apps 中的函数、信号和枚举的参考信息。
+description: 有关 Power Apps 中的函数、信号和枚举的参考信息。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 08/15/2019
+ms.date: 12/19/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7712af247376d6db54aa6777eb2a3051f0e31f93
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: 30046f0b9f2a47e7231b00aafe1633a7242e43c6
+ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731415"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76315391"
 ---
-# <a name="formula-reference-for-power-apps"></a>Power Apps 的公式引用
+# <a name="formula-reference-for-power-apps"></a>Power Apps 的公式参考
 公式组合了许多元素。  下面列出的包括：
 
 * **函数**，它接受参数、执行操作并返回值。 例如，**Sqrt(25)** 返回 **5**。 函数模仿了 Microsoft Excel 函数。  某些函数具有副作用，例如 **SubmitForm**，该函数仅在诸如 **Button.OnSelect** 的[行为公式](working-with-formulas-in-depth.md)中适用。
@@ -47,11 +47,13 @@ ms.locfileid: "74731415"
 
 **[And](functions/function-logicals.md)** – 布尔逻辑与。  如果所有参数都为 **true**，则返回 **true**。  还可以使用 [ **&&** 运算符](functions/operators.md)。
 
-**[应用](functions/object-app.md)** –提供当前正在运行的应用的相关信息，并控制应用的行为。
+**[App](functions/object-app.md)** - 提供有关当前正在运行的应用及对应用行为的控制的信息。
 
 **[Asin](functions/function-trig.md)** – 以弧度为单位返回某个数字的反正弦值。
 
-**[AsType](functions/function-astype-istype.md)** –将记录引用视为特定实体类型。
+**[Assert](functions/function-assert.md)** - 在测试中求值得出 true 或 false。
+
+**[AsType](functions/function-astype-istype.md)** - 将记录引用视为特定实体类型。
 
 **[Atan](functions/function-trig.md)** – 以弧度为单位返回某个数字的反正切值。
 
@@ -77,7 +79,7 @@ ms.locfileid: "74731415"
 
 **[Clock](functions/function-clock-calendar.md)** – 检索有关当前区域设置的时钟信息。
 
-**[Coalesce](functions/function-isblank-isempty.md)** – 替换空值并保留非空值不变。
+**[Coalesce](functions/function-isblank-isempty.md)** – 替换空  值并保留非空  值不变。
 
 **[Collect](functions/function-clear-collect-clearcollect.md)** – 创建一个集合或者向数据源添加数据。
 
@@ -175,7 +177,7 @@ ms.locfileid: "74731415"
 ## <a name="i"></a>I
 **[If](functions/function-if.md)** – 如果条件为 true，返回一个值，否则返回另一个值。 
 
-**[IfError](functions/function-iferror.md)**  - 检测错误并提供替代值或执行操作。 
+**[IfError](functions/function-iferror.md)** - 检测错误并提供替代值或执行操作。 
 
 **[IsBlank](functions/function-isblank-isempty.md)** – 检查是否为[空](functions/function-isblank-isempty.md)值。
 
@@ -187,10 +189,10 @@ ms.locfileid: "74731415"
 
 **[IsToday](functions/function-now-today-istoday.md)** – 检查某个日期/时间值是否为今天的某个时间。
 
-**[IsType](functions/function-astype-istype.md)** –检查记录引用是否引用特定的实体类型。
+**[IsType](functions/function-astype-istype.md)** - 检查记录引用是否指代特定实体类型。
 
 ## <a name="j"></a>J
-**[JSON](functions/function-json.md)** -为表、记录或值生成 JSON 文本字符串。
+**[JSON](functions/function-json.md)** - 生成表、记录或值的 JSON 文本字符串。
 
 ## <a name="l"></a>L
 **[Language](functions/function-language.md)** – 返回当前用户的语言标记。
@@ -207,7 +209,7 @@ ms.locfileid: "74731415"
 
 **[Ln](functions/function-numericals.md)** – 返回自然对数。
 
-**[LoadData](functions/function-savedata-loaddata.md)** –从 Power Apps 专用存储加载集合。
+**[LoadData](functions/function-savedata-loaddata.md)** - 从 Power Apps 专用存储中加载集合。
 
 **[Location](functions/signals.md)** – 通过使用全球定位系统 (GPS) 和其他信息将你的位置返回为地图坐标。
 
@@ -216,9 +218,9 @@ ms.locfileid: "74731415"
 **[Lower](functions/function-lower-upper-proper.md)** – 将文本字符串中的字母转换为全部小写。
 
 ## <a name="m"></a>M
-**[Match](functions/function-ismatch.md)** –根据模式提取子字符串。  可以使用正则表达式。
+**[Match](functions/function-ismatch.md)** - 基于模式提取子字符串。  可以使用正则表达式。
 
-**[MatchAll](functions/function-ismatch.md)** –根据模式提取多个子字符串。  可以使用正则表达式。
+**[MatchAll](functions/function-ismatch.md)** - 基于模式提取多个子字符串。  可以使用正则表达式。
 
 **[Max](functions/function-aggregates.md)** – 某个表表达式或一组参数的最大值。
 
@@ -268,7 +270,7 @@ ms.locfileid: "74731415"
 
 **[Refresh](functions/function-refresh.md)** – 刷新数据源的记录。
 
-**[关联](functions/function-relate-unrelate.md)** –通过一对多或多对多关系来关联两个实体的记录。
+**[Relate](functions/function-relate-unrelate.md)** - 通过一对多或多对多关系得出的两个实体的相关记录。
 
 **[Remove](functions/function-remove-removeif.md)** – 从数据源中删除一条或多条特定记录。
 
@@ -278,7 +280,7 @@ ms.locfileid: "74731415"
 
 **[Replace](functions/function-replace-substitute.md)** – 从字符串的起始位置开始，将一个字符串的一部分替换为另一个字符串。
 
-[Reset](functions/function-reset.md) - 将输入控件重置为默认值，放弃任何用户更改。
+[Reset](functions/function-reset.md)  - 将输入控件重置为默认值，放弃任何用户更改。
 
 **[ResetForm](functions/function-form.md)** – 重置用于编辑某个现有项的表单控件。
 
@@ -295,7 +297,7 @@ ms.locfileid: "74731415"
 **[RoundUp](functions/function-round.md)** – 向上舍入到最小的下一数字。
 
 ## <a name="s"></a>S
-**[SaveData](functions/function-savedata-loaddata.md)** –将集合保存到 Power Apps 专用存储。
+**[SaveData](functions/function-savedata-loaddata.md)** - 将集合保存到 Power Apps 专用存储。
 
 **[Search](functions/function-filter-lookup.md)** – 在表中查找其某个列中包含某个字符串的记录。  
 
@@ -303,9 +305,11 @@ ms.locfileid: "74731415"
 
 **[Select](functions/function-select.md)** - 在控件上模拟选择操作，导致对 **OnSelect** 公式进行求值。
 
-[Set](functions/function-set.md) – 设置全局变量的值。
+**[Set](functions/function-set.md)** – 设置全局变量的值。
 
-**[SetFocus](functions/function-setfocus.md)** –将输入焦点移到特定控件。
+**[SetFocus](functions/function-setfocus.md)** - 将输入焦点移动到特定控件。
+
+**[SetPropertry](functions/function-setproperty.md)** - 使用输入控件模拟交互。
 
 **[ShowColumns](functions/function-table-shaping.md)** – 返回仅包含所选列的表。
 
@@ -338,7 +342,7 @@ ms.locfileid: "74731415"
 
 **[Tan](functions/function-trig.md)** - 返回以弧度为单位指定的角度的正切值。
 
-**[Text](functions/function-text.md)** –转换任何值，并将数字或日期/时间值的格式设置为文本字符串。
+**[Text](functions/function-text.md)** - 转换任何值并将数字或日期/时间值的格式设置为文本字符串。
 
 **[ThisItem](functions/operators.md#thisitem-operator)** – 当在库或表单中时，返回容器中当前项的数据。
 
@@ -350,6 +354,8 @@ ms.locfileid: "74731415"
 
 **[Today](functions/function-now-today-istoday.md)** – 返回当前的日期/时间值。
 
+**[Trace](functions/function-trace.md)** - 在测试结果中提供额外的信息。
+
 **[Trim](functions/function-trim.md)** – 从文本字符串的末尾和内部删除多余的空格。
 
 **[TrimEnds](functions/function-trim.md)** – 仅从文本字符串的末尾删除多余的空格。
@@ -357,11 +363,11 @@ ms.locfileid: "74731415"
 ## <a name="u"></a>U
 **[Ungroup](functions/function-groupby.md)** – 删除某个分组。
 
-**[取消与](functions/function-relate-unrelate.md)** – Unrelates 一对多或多对多关系中的两个实体的记录。
+**[Unrelate](functions/function-relate-unrelate.md)** - 从一对多或多对多关系得出的两个实体的不相关记录。
 
 **[Update](functions/function-update-updateif.md)** – 替换数据源中的某条记录。
 
-[UpdateContext](functions/function-updatecontext.md) – 设置当前屏幕的一个或多个[上下文变量](working-with-variables.md#use-a-context-variable)的值。
+[UpdateContext](functions/function-updatecontext.md)  – 设置当前屏幕的一个或多个[上下文变量](working-with-variables.md#use-a-context-variable)的值。
 
 **[UpdateIf](functions/function-update-updateif.md)** – 基于某个条件修改数据源中的一组记录。
 
@@ -381,7 +387,7 @@ ms.locfileid: "74731415"
 ## <a name="w"></a>W
 **[Weekday](functions/function-datetime-parts.md)** – 检索日期/时间值的星期几部分。
 
-**[With](functions/function-with.md)** –计算值并对单个记录执行操作，包括命名值的内联记录。
+**[With](functions/function-with.md)** - 计算值的结果并对单个记录（包括命名值中的内联记录）执行操作。
 
 ## <a name="y"></a>Y
 **[Year](functions/function-datetime-parts.md)** – 检索日期/时间值的年份部分。  
