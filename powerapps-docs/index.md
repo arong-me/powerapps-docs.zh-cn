@@ -9,17 +9,17 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - PowerApps-hub
-ms.openlocfilehash: 707f714ca658faa6255ee2e79c08184cb6f2a2fb
-ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
+ms.openlocfilehash: 8374df8f8e440fb7ae3e2c481d201f3d1cfeaf23
+ms.sourcegitcommit: 2fd8b682e2d4c1e6a45c851b56f37f842ef18224
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74959555"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76708792"
 ---
 <div id="main"
    class="v2">
    <div class="container">
-      <h1>Power App 文档</h1>
+      <h1>Power Apps 文档</h1>
       <ul class="pivots">
          <li>
             <a href="#home"></a>
@@ -61,7 +61,7 @@ ms.locfileid: "74959555"
                                              </div>
                                           </div>
                                           <div class="cardText">
-                                             <h3>新功能</h3>
+                                             <h3>新增功能</h3>
                                              <p>了解在过去几周内发布的，以及在未来几个月中即将发布的新功能。</p>
                                           </div>
                                        </div>
@@ -81,7 +81,7 @@ ms.locfileid: "74959555"
                                           </div>
                                           <div class="cardText">
                                              <h3>了解 Power Apps</h3>
-                                             <p>在 Microsoft Learn 中探索学习路径，获取 Power Apps 知识分步指南。 完全免费！</p>
+                                             <p>在 Microsoft Learn 中探索学习路径，获取 Power Apps 知识分步指南。 它是免费的！</p>
                                           </div>
                                        </div>
                                     </div>
@@ -215,7 +215,7 @@ ms.locfileid: "74959555"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>应用开发者无需编写代码即可快速创建自定义业务应用，从而管理其组织的任务关键型数据。 你可在 Power Apps 中创建三种类型的应用：<strong>画布应用</strong>、<strong>模型驱动应用</strong>和<strong>门户</strong>。 Common Data Service 是可便于安全存储和管理业务应用所用数据的数据平台。 详细信息：<a href="/powerapps/maker">创建应用</a>。</p>
+                           <p>应用开发者无需编写代码即可快速创建自定义业务应用，从而管理其组织的任务关键型数据。 你可在 Power Apps 中创建三种类型的应用：<strong>画布应用</strong>、<strong>模型驱动应用</strong>和<strong>门户</strong>。 Common Data Service 是可便于安全存储和管理业务应用所用数据的数据平台。 更多信息：<a href="/powerapps/maker">创建应用</a>。</p>
                            <hr/>
                            <br/>
                         </div>
@@ -287,7 +287,7 @@ ms.locfileid: "74959555"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Portals</h3>
+                                    <h3 style="font-size: 1.15rem">门户</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">什么是 Power Apps 门户？</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">创建门户</a></p>
@@ -354,6 +354,7 @@ ms.locfileid: "74959555"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">获取帮助和支持</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">选择加入 2019 版 Wave 2</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">管理设置</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">白皮书：管理低代码开发平台</a></p>
                                  </div>
                               </div>
                            </div>
@@ -441,7 +442,7 @@ ms.locfileid: "74959555"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">入门</h3>
+                                    <h3 style="font-size: 1.15rem">开始使用</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/overview">Common Data Service：开发人员概述</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/overview">模型驱动应用：开发人员概述</a></p>
@@ -643,7 +644,7 @@ ms.locfileid: "74959555"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">最佳实践</h3>
+                                    <h3 style="font-size: 1.15rem">最佳做法</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/best-practices">Common Data Service</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/best-practices">模型驱动应用</a></p>
