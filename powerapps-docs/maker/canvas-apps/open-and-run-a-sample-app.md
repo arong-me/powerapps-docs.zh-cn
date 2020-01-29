@@ -1,50 +1,49 @@
 ---
 title: 使用示例应用 | Microsoft 文档
-description: 基于 Power Apps 中的示例创建画布应用的分步说明
-author: tapanm-msft
+description: 分步介绍如何基于 PowerApps 中的示例创建画布应用
+author: wimcoor
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: ''
-ms.date: 03/11/2018
-ms.author: tapanm
+ms.reviewer: tapanm
+ms.date: 01/22/2020
+ms.author: wimcoor
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 853edb00d0325e287ff69149e1d807ff2529b915
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: 555651715109585bec0214e95ec105a067d061ce
+ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732808"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76536709"
 ---
-# <a name="create-a-canvas-app-from-a-sample-in-power-apps"></a>从 Power Apps 中的示例创建画布应用
+# <a name="create-a-canvas-app-from-a-sample-in-power-apps"></a>基于 PowerApps 中的示例创建画布应用
 在本快速入门教程中，将根据示例创建一个画布应用，以便探索设计的可能性，并发现在开发自己的应用时可以应用的概念。
 
-每个示例均展示了一个实际场景，但使用的是虚构数据。 若要存储此数据，需要一个云存储帐户，如 Dropbox、GoogleDrive 或 OneDrive。
+每个示例均展示了一个实际场景，但使用的是虚构数据。 
 
-如果没有适用于电源应用的许可证，可以[免费注册](../signup-for-powerapps.md)。
+如果没有适用于 PowerApps 的许可证，可以[免费注册](../signup-for-powerapps.md)。
 
 ## <a name="open-a-sample-app"></a>打开示例应用
-1. 登录到[Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 登录到 [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
-1. 在示例应用列表中，将鼠标悬停在示例应用（如成本估算器）上。
+1. 选择“所有模板”  。
 
-    ![](./media/open-and-run-a-sample-app/cost-estimator.png)
+1. 从示例应用列表中选择一个示例应用，例如成本估算器  。
 
-1. 单击或点击手机图标以创建适用于移动设备的应用版本（或保留选定的平板电脑图标），然后单击或点击“生成此应用”。
+    ![](./media/open-and-run-a-sample-app/cost-estimator-app.png)
 
-1. 在 Power Apps Studio 中，单击或点击屏幕顶部附近的横幅中的 "**创建我自己的应用**"。
+1. 更新应用名称，并选择“创建”以创建应用  。
 
-    ![](./media/open-and-run-a-sample-app/banner.png)
+    > [!NOTE]
+    > 某些示例应用只能在手机或平板电脑布局中使用。 有关布局的更多详细信息，请阅读[在画布应用中创建响应式布局](create-responsive-layout.md)。 如果你选择的示例应用有手机和平板电脑布局选项，请选择你需要的布局。
 
-1. 指定要存储此应用虚构数据的云存储帐户，然后为该帐户提供凭据。
+1. 按 F5 键（或选择右上角附近的播放按钮）打开“预览”模式。
 
-1. 按 F5（或者单击或点击靠近右上角的播放按钮）即可打开预览模式。
-
-    ![](./media/open-and-run-a-sample-app/open-preview.png)
+    ![](./media/open-and-run-a-sample-app/open-preview-app.png)
 
     每个示例表示不同的场景，其中包含各种屏幕和其他控件。 如果打开了成本估算器示例，则可以使用默认应用执行以下任务：
 
@@ -52,19 +51,19 @@ ms.locfileid: "74732808"
     - 捕获地址和使用面积等详细信息，并基于折扣和税率计算价格。
     - 筛选约会列表可显示已为其创建估算值的约会、尚未为其创建估算值的约会或所有约会。
     
-1. 浏览完应用后，按 Esc 键（或者单击或点击右上角附近的关闭图标，然后单击电源应用的标题栏下方），关闭预览模式。
+1. 完成浏览应用后，按 Esc 键（或者单击或点击右上角附近的关闭图标，具体位于 PowerApps 的标题栏下方），关闭预览模式。
 
 ## <a name="save-the-app"></a>保存应用
-1. 在左上角附近，单击或点击“文件”选项卡。
+1. 在左上角附近，选择“文件”选项卡  。
 
-1. 在“应用设置”页中，查看默认设置。
+1. 在“设置”页面中，查看默认设置  。
 
-    ![](./media/open-and-run-a-sample-app/app-settings.png)
+    ![](./media/open-and-run-a-sample-app/settings-app.png)
 
-1. 在左边缘附近单击或点击“保存”。 
+1. 在左边缘附近单击或点击“保存”  。 
 
 ## <a name="next-steps"></a>后续步骤
-在本快速入门中，你基于一个示例创建了自己的应用，该示例使用你的云帐户中存储的虚构数据。 若要深入了解如何创建应用，还可以基于其他源（例如 Common Data Service、SharePoint 或 Excel）中的数据自动生成应用。
+在本快速入门中，你创建了一个使用虚构数据的示例。 要获得有关如何创建应用的更多帮助，你还可以基于其他数据源（例如 Common Data Service、SharePoint 或 Excel）中的数据自动生成应用。
 
 > [!div class="nextstepaction"]
 > [生成应用](data-platform-create-app.md)
