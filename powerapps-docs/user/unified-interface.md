@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 9/23/2019
+ms.date: 1/29/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c5c620590400fc6fe276c8107c94d89b3daa42b9
-ms.sourcegitcommit: 6380b5ac248fc5d2f5d4a34af8831b4f7b6ef1aa
+ms.openlocfilehash: 66888b11d3dc3f62dcc174fbf0f2827c9d9f4867
+ms.sourcegitcommit: d0f02fdaa125feaea884932e1ef31b8fea1bd10c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801084"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886480"
 ---
 # <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>针对模型驱动应用的统一界面增强了用户体验 
 
@@ -36,16 +36,18 @@ ms.locfileid: "73801084"
 
 ## <a name="navigation"></a>导航
 
-菜单选项可让你快速浏览系统中的不同应用。 它们提供对最近查看的记录和固定收藏夹的快速访问。 
+菜单选项可让你快速浏览系统中的不同应用。 它们提供对最近查看的记录和固定收藏夹的快速访问。
 
-> [!div class="mx-imgBorder"]
-> ![模型驱动的应用导航](media/nav.png "模型驱动的应用导航")
+![导航控件，展开视图](media/nav-expanded.png "导航控件，展开视图")
 
-1. 默认情况下，站点地图已展开并保持不变。
-2. 将突出显示你当前所在的子区域，以指示应用中的位置。
-3. “最近”和“已固定”项置顶以便于访问。 
-4. 使用区域切换器选择应用。
-5. 图标的命令栏使用独特颜色以显示命令之间的差异。
+例
+
+1. **应用选择器**：打开此菜单以在应用之间移动。
+1. **折叠/展开按钮**：选择此按钮可折叠导航器，以便为页面的主要部分留出更多空间。 如果导航器已折叠，请选择此按钮将其再次展开。
+1. **最近记录**：展开此项可以查看最近使用过的记录列表。 在此处选择要打开的记录。 选择此处列出的记录旁边的图钉图标，将其添加到收藏夹（固定的记录）。
+1. **收藏夹记录**：展开此项可以查看并打开你喜欢（固定）的记录。 使用 "**最近的记录**" 列表在此处添加记录。 选择此处列出的记录旁边的 "删除 pin" 图标，将其从此列表中删除。
+1. **实体导航器**：此区域列出了当前工作区可用的每个实体和仪表板。 在此处选择任何条目以打开该实体的命名仪表板或列表视图。
+1. **工作区选择器**：打开此菜单以移动到其他工作区。 当前工作区在此处命名为。
 
 有关详细信息，请参阅[模型驱动应用中的基本导航](navigation.md)。
 
