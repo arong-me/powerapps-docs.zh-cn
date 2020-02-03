@@ -31,7 +31,7 @@
           href: ../user/unified-interface.md
         - name: 导航和基础知识
           items:
-            - name: 概述
+            - name: 基本导航
               href: ../user/navigation.md
             - name: 查看配置文件
               href: ../user/view-your-user-profile.md
@@ -72,12 +72,14 @@
               href: ../user/collaborate-using-sharepoint.md
         - name: 搜索记录
           items:
-            - name: 比较搜索和查找选项
-              href: ../user/search-and-find.md
-            - name: 搜索记录
-              href: ../user/search-records.md
-            - name: 使用高级查找
-              href: ../user/create-edit-or-save-advanced-find-search.md
+            - name: 比较搜索选项
+              href: ../user/search.md
+            - name: 相关性搜索
+              href: ../user/relevance-search.md
+            - name: 快速查找
+              href: ../user/quick-find.md
+            - name: 高级查找
+              href: ../user/advanced-find.md
         - name: 导入和导出数据
           items:
             - name: 导入数据
