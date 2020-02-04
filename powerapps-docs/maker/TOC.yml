@@ -1562,8 +1562,10 @@
       href: ./common-data-service/data-platform-powerbi-connector.md
     - name: 翻译自定义的实体和字段文本
       href: ./common-data-service/export-customized-entity-field-text-translation.md
-    - name: 将已翻译的实体和字段文本导入应用
+    - name: 导入已翻译的实体和字段文本
       href: ./common-data-service/import-translated-entity-field-text.md
+    - name: 导出到数据湖
+      href: ./common-data-service/export-to-data-lake.md
     - name: Common Data Service 安全性
       href: /power-platform/admin/wp-security
     - name: API 限制概述
