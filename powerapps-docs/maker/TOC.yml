@@ -33,6 +33,8 @@
           items:
             - name: 基本导航
               href: ../user/navigation.md
+            - name: 使用网格筛选器
+              href: ../user/grid-filters.md
             - name: 查看配置文件
               href: ../user/view-your-user-profile.md
             - name: 查找管理员或支持人员
@@ -43,15 +45,20 @@
               href: ../user/screen-reader.md
             - name: 键盘快捷方式
               href: ../user/keyboard-shortcuts.md
-        - name: 处理记录
+        - name: 处理记录和活动
           items:
             - name: 创建记录
               href: ../user/create-a-record.md
             - name: 将活动添加到日程表
               href: ../user/add-activities.md
-              items:
-                - name: 活动 FAQ
-                  href: ../user/faq-for-timeline-and-activity.md
+            - name: 活动 FAQ
+              href: ../user/faq-for-timeline-and-activity.md
+            - name: 通过“活动”网格查看和创建电子邮件
+              href: ../user/view-create-email.md
+            - name: 使用增强的电子邮件体验发送电子邮件
+              href: ../user/enhanced-email.md
+            - name: 插入电子邮件模板
+              href: ../user/insert-email-template.md
             - name: 对记录使用查阅字段
               href: ../user/lookup-field.md
             - name: 查看配置文件卡
