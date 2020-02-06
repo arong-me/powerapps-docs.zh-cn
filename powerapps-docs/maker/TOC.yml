@@ -1517,7 +1517,7 @@
           href: ./common-data-service/use-solutions-for-your-customizations.md
         - name: 导入解决方案
           href: ./common-data-service/import-update-export-solutions.md
-        - name: 更新解决方案
+        - name: 更新或升级解决方案
           href: ./common-data-service/update-solutions.md
         - name: 导出解决方案
           href: ./common-data-service/export-solutions.md
@@ -1537,7 +1537,7 @@
           href: ./common-data-service/common-issues-resolutions-solution-checker.md
         - name: 使用分段解决方案
           href: ./common-data-service/use-segmented-solutions-patches-simplify-updates.md
-        - name: 更改解决方案发布者前缀
+        - name: 解决方案发布商概述
           href: ./common-data-service/change-solution-publisher-prefix.md
         - name: 设置元数据中的托管​​属性
           href: ./common-data-service/set-managed-properties-metadata.md
