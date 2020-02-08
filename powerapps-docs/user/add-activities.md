@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 02/03/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7f437b649111c4ff51d21f35e73dabb442c57112
-ms.sourcegitcommit: e3d3a608ef74e1d90ca74ed38de3e5aebc624713
+ms.openlocfilehash: 1a721f5dfa0a07d270e6b1d9d310236bebb21023
+ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "75333624"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76973276"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>将约会、电子邮件、电话呼叫、备注或任务活动添加到时间线 
 
@@ -34,7 +34,16 @@ ms.locfileid: "75333624"
 - 带有附件的电子邮件将与电子邮件正文一起显示在一起。
 
   > [!div class="mx-imgBorder"]
-  > ![Power Apps 中活动的时间线视图](media/TimelineViewOfActivity.png "Power Apps 中活动的时间线视图")  
+  > ![Power Apps 中活动的时间线视图](media/TimelineViewOfActivity.png "Power Apps 中活动的时间线视图")
+
+  1. 搜索记录
+  2. 记笔记
+  3. 添加信息和活动
+  4. 筛选器
+  5. 更多命令
+  6. 活动状态
+  7. 活动图标
+  8. 日期和时间
  
 ## <a name="add-an-activity-from-the-nav-bar"></a>从导航栏添加活动
  
@@ -68,7 +77,7 @@ ms.locfileid: "75333624"
   
      “被叫方”字段会自动填充你添加了电话呼叫活动的记录。 可以视需要选择其他记录。  
   
-4. 默认情况下，将方向设置为“拨出”。 可以通过选中“拨出”将其更改为“来电”。 
+4. 默认情况下，将方向设置为“拨出”。 可以通过选中“拨出”将其更改为“来电”。
   
 5. 填写完成后，选择“保存”，保存活动。  
   
@@ -92,21 +101,23 @@ ms.locfileid: "75333624"
 
 3. 填写电子邮件的主题，并使用提供的空白区域来撰写电子邮件。
   
-4. 若要向电子邮件添加附件，请保存电子邮件。 然后，在“附件”部分，选择“+”以添加附件。  
+4. 若要向电子邮件添加附件，请保存电子邮件。 然后，在“附件”部分，选择“ **”+** 以添加附件。  
   
-5. 若要在电子邮件正文中使用模板，在命令栏上，单击“插入模板”，然后选择该模板。   
+5. 若要将模板用于电子邮件正文，请在命令栏上，选择 "**插入模板**"，然后选择模板。 有关插入电子邮件模板的详细信息，请参阅[插入电子邮件模板](insert-email-template.md)。 
   
 6. 填写完成后，选择“发送”。 
 
 
-    > [!NOTE]
-    > 若要列出会话视图中的电子邮件，请参阅 "**设置**" > "**个性化设置**" > **电子邮件**"选项卡，然后选择 **" 在时间线上显示电子邮件 "** 。 有关个人设置的详细信息，请参阅[设置个人选项](https://docs.microsoft.com/powerapps/user/set-personal-options#email-tab-options)。 启用后，可以打开任何具有时间线的窗体，电子邮件将按最新的最新电子邮件分组到会话线程中。
+
+### <a name="list-emails-in-a-conversation-view"></a>列出会话视图中的电子邮件
+
+若要列出会话视图中的电子邮件，请参阅 "**设置**" > "**个性化设置**" > **电子邮件**"选项卡，然后选择 **" 在时间线上显示电子邮件 "** 。 有关个人设置的详细信息，请参阅[设置个人选项](https://docs.microsoft.com/powerapps/user/set-personal-options#email-tab-options)。 启用后，可以打开任何具有时间线的窗体，电子邮件将按最新的最新电子邮件分组到会话线程中。
 
    > [!div class="mx-imgBorder"]
    > ![设置个人选项](media/emailsettings1.png "设置个人选项")
    
-    > [!div class="mx-imgBorder"]
-    > ![设置个人选项电子邮件](media/emailsettings2.png "设置电子邮件的个人选项")
+   > [!div class="mx-imgBorder"]
+   > ![设置个人选项电子邮件](media/emailsettings2.png "设置电子邮件的个人选项")
 
   
 ## <a name="add-an-appointment"></a>添加约会  
@@ -141,7 +152,7 @@ ms.locfileid: "75333624"
    > [!div class="mx-imgBorder"]
    > ![添加备注](media/addnote.png "添加备注")
 
-添加备注后，可以删除或编辑备注。
+添加备注后，可以删除或编辑备注。 选择注释，或将光标悬停在便笺上，以查看 "编辑" 和 "删除" 图标。
 
 
 > [!div class="mx-imgBorder"]
@@ -178,16 +189,14 @@ ms.locfileid: "75333624"
 
 - 在**时间线**背景中，选择 "**打开筛选器窗格**漏斗图标"。
 
-> [!div class="mx-imgBorder"]
-> ![时间线中的筛选器窗格](media/filterpane.png "时间线中的筛选器窗格")
+
+![时间线筛选器窗格](media/timeline-filter5.png "时间线中的筛选器窗格")中的 "![筛选器" 窗格](media/timeline-filter2.png "时间线中的筛选器窗格")
 
 
 ## <a name="manage-activities"></a>管理活动
 从时间线留言板中直接管理活动，包括向其他用户分配活动、删除或关闭活动、向队列添加活动、打开关联的记录或编辑备注和文章。
 
-
-> [!div class="mx-imgBorder"]
-> ![管理活动 .png](media/ManageActivities.png "ManageActivities .png")
+  ![时间线命令栏选项](media/timeline-options1.png "时间线命令栏选项")![时间线命令栏选项](media/timeline-options2.png "时间线命令栏选项")![时间线命令栏选项](media/timeline-options3.png "时间线命令栏选项")![时间线命令栏选项](media/timeline-options4.png "时间线命令栏选项")
 
 ## <a name="see-also"></a>另请参阅
 

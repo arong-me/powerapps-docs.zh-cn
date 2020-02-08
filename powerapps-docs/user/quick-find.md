@@ -15,32 +15,32 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 23152da4aa8d50247f4132399c25861dbc7a66ac
-ms.sourcegitcommit: 4d858e628c89d245317d6192801d136f3591ea52
+ms.openlocfilehash: 42691193a90d56f773de5723c4c27e883b3216ad
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76832348"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76918607"
 ---
 # <a name="using-quick-find-to-search-for-records"></a>使用 "快速查找" 搜索记录
 
 ## <a name="single-entity-quick-find"></a>单实体快速查找
 
-单实体快速查找仅用于查找一种类型的记录。 此搜索选项可从视图中获取。 
+单实体快速查找用于查找只有一种类型的记录。 此搜索选项可从视图中获取。 
 
    > [!div class="mx-imgBorder"]
    > ![单实体快速查找](media/single-quick-find-search-box.png "单实体 "快速查找" 搜索框") 
 
-## <a name="multi-entity-quick-find-categorized-search"></a>多实体快速查找（分类搜索）
+## <a name="multiple-entity-quick-find-categorized-search"></a>多实体快速查找（分类搜索）
 
 多实体快速查找也称为分类搜索。 
 
-1.  若要启动分类搜索，请从顶部导航栏中选择 "**搜索**" 按钮。  
+1.  若要启动分类搜索，请从顶部导航栏中选择 "**搜索**"。  
 
      > [!div class="mx-imgBorder"]
-     > ![全局搜索按钮](media/global-search-button.png "全局搜索按钮")   
+     > ![全局搜索按钮](media/global-search-button.png "全局搜索")
   
-2.  在搜索框中键入搜索词，然后选择 "**搜索**" 按钮。 分类搜索返回按实体类型（如帐户或联系人）分组的结果。
+2.  在搜索框中键入搜索词，然后选择 "**搜索**"。 分类搜索返回按实体类型（如帐户或联系人）分组的结果。
 
      > [!div class="mx-imgBorder"]
      > ![分类的搜索结果](media/categorized-search-results.png "分类搜索结果页") 
@@ -62,6 +62,4 @@ ms.locfileid: "76832348"
     > ![筛选分类的搜索结果](media/filter-categorized-search-results.png "筛选分类的搜索结果")  
 
   
--   若要搜索所有记录类型，请从 "**筛选依据**" 列表中选择 "**无**"。  
-
-
+-   若要搜索所有记录类型，请从 "**筛选器**" 列表中选择 "**无**"。  
