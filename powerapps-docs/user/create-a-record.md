@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 02/03/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a4d81b9adff165267fe3e3d4d08384133aeae032
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: bf8ee15b37e9fcae5027bb91e89ceb225325dcc5
+ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71924459"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77054873"
 ---
 # <a name="create-a-new-record"></a>创建新记录
 
@@ -57,8 +57,26 @@ ms.locfileid: "71924459"
   
 3. 填写新联系人的相应详细信息，然后选择 "**保存并关闭**"。
 
+    > [!NOTE]
+    > 如果有未保存的更改，并尝试尝试其他记录或窗体，则会弹出一个**未保存的更改**对话框。 如果选择 "**保存并继续**"，则它将尝试保存你的信息并打开你想要转到的页面。 如果选择 "保存并继续"，而在字段中出现错误，则对话框将关闭，并且你将在页面上保留以修复错误，然后才能离开。
+
     > [!div class="mx-imgBorder"] 
     > ![新建按钮](media/newrecord3.png "新建按钮")
 
-    > [!NOTE]
-    > 如果有未保存的更改，并尝试尝试其他记录或窗体，则会弹出一个**未保存的更改**对话框。 如果选择 "**保存并继续**"，则它将尝试保存你的信息并打开你想要转到的页面。 如果选择 "保存并继续"，而在字段中出现错误，则对话框将关闭，并且你将在页面上保留以修复错误，然后才能离开。
+ 
+ ## <a name="preview-use-the-save-or-save--close-option-when-editing-a-record"></a>预览：编辑记录时使用 "保存" 或 "保存 & 关闭" 选项 
+ 
+编辑现有记录时，使用命令栏上的 "**保存**" 或 "**保存" & "关闭**" 按钮。 在此版本之前，"**保存**" 选项仅在右下角可用。
+
+> [!NOTE]
+> 这是一项早期的访问功能。 你可以提前选择在你的环境中启用此功能，这将允许你测试这些功能，然后在你的环境中采用它们。 有关如何启用这些功能的信息，请参阅[选择加入 2020 release wave 1 更新](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates)。
+
+
+1. 从左侧导航窗格中，选择要编辑的记录类型。 例如，选择 "**帐户**"。
+2. 打开要编辑的帐户记录，并对记录进行更改。
+3. 若要保存所做的更改，请在命令栏上，选择 "**保存**" 或 "**保存" & 关闭**"。 "**保存**" 选项在右下角仍可用。
+
+    > [!div class="mx-imgBorder"] 
+    > ![保存对记录的选项](media/saveoptionalwaysvisible.png "保存对记录的选项")
+
+

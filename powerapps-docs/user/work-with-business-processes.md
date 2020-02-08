@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6b1e53d95145cc947681971264c0b160d0510e92
-ms.sourcegitcommit: d0f02fdaa125feaea884932e1ef31b8fea1bd10c
+ms.openlocfilehash: 7dd0d9a3dc9b78b693565d66f1894484b686b946
+ms.sourcegitcommit: dc379bede57da58b5787eda5437eb94b662e21ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886468"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77037358"
 ---
 # <a name="work-with-business-processes"></a>处理业务流程
 
@@ -47,4 +47,4 @@ ms.locfileid: "76886468"
 系统附带了常见任务的业务流程。 但是，大多数组织会对这些流程自定义，从而使其符合它们的工作方式。 或者，你可以将已针对行业或业务目标自定义的流程添加到系统中。 换言之，你在此处看到的内容可能与你在系统中看到的流程栏并不完全相同。 但无论如何，进程栏的工作效果对每个人来说都是一样的。 在字段中输入数据，然后将客户移动到下一个阶段即可。
 
 
-有关如何创建和管理业务流程流的详细信息，请参阅为[实体创建业务规则](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-create-business-rule)。
+有关如何将自定义业务逻辑应用于业务规则和流的详细信息，请参阅[在模型驱动的应用中将自定义业务逻辑应用于业务规则和流](https://docs.microsoft.com/powerapps/maker/model-driven-apps/guide-staff-through-common-tasks-processes)。

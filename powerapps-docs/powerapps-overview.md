@@ -1,5 +1,5 @@
 ---
-title: 什么是电源应用？ | Microsoft Docs
+title: 什么是 Power Apps？ | Microsoft Docs
 description: 提供有关电源应用的概述，并讨论最终用户、应用制造商、管理员和 pro 开发人员如何使用 Power Apps。
 author: KumarVivek
 manager: annbe
@@ -12,20 +12,20 @@ ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: 70086d5ec6e30a917f817a2d3f4012745949c99e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 91f785582c2595043fe9de78c4a35a4b9e02dc9d
+ms.sourcegitcommit: 68a31e3fa4d1635ccf4cd8bd9da5fba1bfecefa4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680641"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051858"
 ---
-# <a name="what-is-power-apps"></a>什么是电源应用？
+# <a name="what-is-power-apps"></a>什么是 Power Apps？
 
 Power Apps 是一套应用程序、服务、连接器和数据平台，它提供了一个快速应用程序开发环境，用于根据业务需求构建自定义应用程序。 使用 Power Apps，你可以快速生成自定义业务应用，用于连接到存储在基础数据平台（[Common Data Service](/powerapps/maker/common-data-service/data-platform-intro)）*或*各种在线和本地数据源（SharePoint、Excel、Office 365、Dynamics 365、SQL Server 等 *）中的*业务数据。 
 
 使用 Power Apps 构建的应用提供丰富的业务逻辑和工作流功能，以将手动业务流程转换为数字的自动化流程。 此外，使用 Power Apps 构建的应用程序具有响应式设计，可在浏览器或移动设备（手机或平板电脑）上无缝运行。 通过使用户能够在不编写代码的情况下生成功能丰富的自定义业务应用程序，使应用程序 "大众化" 成为自定义业务应用程序。
 
-Power Apps 还提供一个可扩展的平台，让专业开发者以编程方式与数据和元数据交互、应用业务逻辑、创建自定义连接器以及与外部数据集成。
+Power Apps 还提供了一个可扩展的平台，让 pro 开发人员以编程方式与数据和元数据进行交互，应用业务逻辑，创建自定义连接器，并与外部数据集成。
 
 有关详细信息，请参阅 YouTube 上的[Power Apps 通道](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg)。
 
@@ -68,3 +68,7 @@ Dynamics 365 应用程序，如 Dynamics 365 Sales、Dynamics 365 Customer Servi
 ## <a name="purchase-power-apps"></a>购买 Power Apps
 
 如果已决定购买 Power Apps，请参阅此处了解详细信息：[购买 Power apps](/power-platform/admin/signup-for-powerapps-admin)。
+
+## <a name="power-apps-us-government-plans"></a>Power Apps 美国政府计划
+
+Power Apps 美国政府由美国政府组织提供的多个计划，以应对美国公共部门的独特和不断发展的要求。 Power Apps GCC 环境为云服务的联邦要求提供符合性，其中包括 FedRAMP 高、DoD DISA IL2，以及刑事司法系统（CJI 数据类型）的要求。 详细信息： [Power APPS 美国政府](/power-platform/admin/powerapps-us-government)版
