@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 05/19/2019
+ms.date: 02/07/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a97294431ce58b4ceb751f9b164ecb6457f049f0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 07f6663b2448a0ca2f4785a523929278fe1b5c1f
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679422"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089826"
 ---
 # <a name="data-types-in-canvas-apps"></a>画布应用中的数据类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "74679422"
 
 本文提供了有关画布应用支持的数据类型的详细信息。 当应用连接到外部数据源时，该源中的每个数据类型都将映射到画布应用的数据类型。
 
-| 数据类型 | 描述 | 示例 |
+| 数据类型 | 说明 | 示例 |
 |-----------|-------------|---------|
 | **变量** | *True*或*false*值。  如果没有比较，则可以直接在**If**、 **Filter**和其他函数中使用。  | *true* |
 | 颜色 | 颜色规范，包括 alpha 通道。 | **Color.Red**<br>**ColorValue （"#102030"）**<br>**RGBA （255，128，0，0.5）** |
@@ -41,14 +41,14 @@ ms.locfileid: "74679422"
 | **选项集** | 从一组选项中选择，由数字支持。 此数据类型将可本地化的文本标签与数值组合在一起。 标签将出现在应用中，并存储数值并用于比较。 | **ThisItem. 对 orderstatus** |
 | **记录** | 数据值的记录。 此复合数据类型包含本主题中列出的其他数据类型的实例。 有关详细信息[，](../working-with-tables.md)请使用表。 | **{Company： "Northwind 商贸"，<br>人员：35，<br>非盈利： false}** |
 | **记录引用** | 对实体中的记录的引用。 此类引用通常与多态查找一起使用。 详细信息：使用[引用](../working-with-references.md)。| **第一个（帐户）。Owner** |
-| **数据表** | 记录的表。  对于具有相同数据类型的字段，所有记录必须具有相同的名称，并且省略的字段将被视为*空白*。 此复合数据类型包含本主题中列出的其他数据类型的实例。 有关详细信息[，](../working-with-tables.md)请使用表。 | **Table （{FirstName： "Sidney"，<br>LastName： "Higa"}，<br>{FirstName： "南"，<br>LastName： "Anderson"}）**
+| **表格** | 记录的表。  对于具有相同数据类型的字段，所有记录必须具有相同的名称，并且省略的字段将被视为*空白*。 此复合数据类型包含本主题中列出的其他数据类型的实例。 有关详细信息[，](../working-with-tables.md)请使用表。 | **Table （{FirstName： "Sidney"，<br>LastName： "Higa"}，<br>{FirstName： "南"，<br>LastName： "Anderson"}）**
 | **文本** | Unicode 文本字符串。 | **"Hello，World"** |
 | **阶段** | 不带日期的时间，采用应用用户的时区。 | **时间（11，23，45）** |
 | **两个选项** | 从一组由布尔值支持的两个选项中进行选择。 此数据类型将可本地化的文本标签与布尔值组合在一起。 此标签将出现在应用中，并存储布尔值并用于比较。 | **ThisItem** |
 
 其中的许多数据类型都是类似的，并且具有相同的基础表示形式，如作为**文本**处理的**超链接**字段。  其他数据类型在窗体和其他控件中提供了更好的默认体验。
 
-## <a name="blank"></a>Blank
+## <a name="blank"></a>空白
 
 所有数据类型的值都为*空*（即，没有值）。 术语 "null" 通常用于此概念中的数据库。  
 
@@ -61,6 +61,20 @@ ms.locfileid: "74679422"
 ## <a name="text-hyperlink-image-and-media"></a>文本、超链接、图像和媒体
 
 这四种数据类型都基于[Unicode](https://en.wikipedia.org/wiki/Unicode)文本字符串。
+
+### <a name="embedded-text"></a>嵌入文本
+
+公式中嵌入的文本字符串用双引号引起来。  将两个双引号一起使用来表示文本字符串中的单个双引号。  例如，在[**按钮**](../controls/control-button.md)控件的**OnSelect**属性中使用以下公式：
+
+```powerapps-dot
+Notify( "Jane said ""Hello, World!""" )
+```
+
+当按钮被按下时，将会出现一个横幅，其中，第一个和最后一个双引号将被省略（因为它们分隔文本字符串），在**Hello，World！** 使用单个双引号替换：
+
+![消息 Jane 为 "Hello，World" 的弹出通知](media/data-types/literal-string.png)
+
+单引号不用于包含特殊字符的[标识符名称](operators.md#identifier-names)，并且在文本字符串中没有任何意义。  
 
 ### <a name="image-and-media-resources"></a>图像和媒体资源
 
@@ -92,7 +106,7 @@ ms.locfileid: "74679422"
 
 如果将 image 控件的**image**属性设置为相机控件的**Photo**属性，则可以在[**相机**](../controls/control-camera.md)控件中显示最近捕获的图像。 应用程序将图像保存在内存中，并且相机控件的**Photo**属性返回图像的 URI 引用。 例如，您可以拍摄一张照片，照相机的**照片**属性可能会返回 **"appres://blobmanager/7b12ffa2ea4547e5b3812cb1c7b0a2a0/1"** 。
 
-使用 URI 可以引用存储在数据库中的图像或其他媒体文件。 这样一来，应用就不会检索实际数据，直到实际需要。 例如，Common Data Service 实体中的附件可能会返回 **"appres://datasources/Contacts/table/..."** ，如相机示例中所示，可以通过将 image 控件的**image**属性设置为此引用来显示此图像，这检索二进制数据。
+使用 URI 可以引用存储在数据库中的图像或其他媒体文件。 这样一来，应用就不会检索实际数据，直到实际需要。 例如，Common Data Service 实体中的附件可能会返回 **"appres://datasources/Contacts/table/..."** ，如相机示例中所示，可以通过将图像控件的**image**属性设置为此引用来显示此图像，这将检索二进制数据。
 
 将媒体数据类型（如图像）保存到数据库时，应用程序将发送实际的图像或媒体数据，而不是 URI 引用。
 
@@ -129,7 +143,7 @@ ms.locfileid: "74679422"
 
 | 日期/时间类型 | 存储在数据库中的值 | 显示和输入的值7小时的 UTC | 显示的值和输入的时间为4小时东部 |
 |--------------------------|------------------------------|------------------------------|
-| **用户本地** | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午4:00 | 周六，&nbsp;可能&nbsp;18，&nbsp;2019<br>9:00 PM | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午8:00 |
+| **用户本地** | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午4:00 | 周六，&nbsp;可能&nbsp;18，&nbsp;2019<br>晚上 9:00 | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午8:00 |
 | **独立时区** | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午4:00 | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午4:00 | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午4:00 | 
 
 对于**用户本地**日期/时间，画布应用使用浏览器或设备的时区，但模型驱动应用使用用户在 Common Data Service 中的设置。 这些设置通常匹配，但如果这些设置不同，结果会有所不同。
@@ -150,7 +164,7 @@ ms.locfileid: "74679422"
 
 | 日期/时间类型 | 存储在数据库中的值 | 显示和输入的值7小时的 UTC | **值**函数返回 |
 |--------------------------|------------------------------|------------------------------|
-| **用户本地** | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午4:00 | 周六，&nbsp;可能&nbsp;18，&nbsp;2019<br>9:00 PM | 1558238400000<br> （星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>4:00 AM UTC） |
+| **用户本地** | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午4:00 | 周六，&nbsp;可能&nbsp;18，&nbsp;2019<br>晚上 9:00 | 1558238400000<br> （星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>4:00 AM UTC） |
 | **独立时区** | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午4:00 | 星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>上午4:00 |1558263600000<br> （星期日，&nbsp;可能&nbsp;19，&nbsp;2019<br>11:00 AM UTC） |
 
 ### <a name="converting-unix-times"></a>转换 Unix 时间

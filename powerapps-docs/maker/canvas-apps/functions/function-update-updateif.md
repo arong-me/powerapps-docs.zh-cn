@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0f3a843c75b86170a44dce8da0a61e672d9dab49
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 89b761469f792eb342e0d3d99ff291561ea29ff6
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74730017"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089894"
 ---
 # <a name="update-and-updateif-functions-in-power-apps"></a>Power Apps 中的 Update 和 UpdateIf 函数
-更新[数据源](../working-with-data-sources.md)中的[记录](../working-with-tables.md#records)。
+更新[数据源](../working-with-tables.md#records)中的[记录](../working-with-data-sources.md)。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 ### <a name="update-function"></a>Update 函数
 使用 **Update** 函数可替换数据源中的整个记录， 而使用 **UpdateIf** 和 **[Patch](function-patch.md)** 函数则可修改记录中的一个或多个值，对其他值不作处理。
 
@@ -62,10 +62,10 @@ ms.locfileid: "74730017"
 
 ![](media/function-update-updateif/icecream.png)
 
-| 公式 | 描述 | 结果 |
+| 公式 | 说明 | 结果 |
 | --- | --- | --- |
-| **Update(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;), {&nbsp;ID:&nbsp;1,&nbsp;Flavor:&nbsp;"Mint&nbsp;Chocolate",&nbsp;Quantity:150&nbsp;} )** |替换数据源中的某条记录。 |<style> img { max-width: none } </style> ![](media/function-update-updateif/icecream-mint.png)<br><br>修改了 **IceCream** 数据源。 |
-| **UpdateIf(&nbsp;IceCream, Quantity > 175, {&nbsp;Quantity:&nbsp;Quantity&nbsp;+&nbsp;10&nbsp;} )** |修改其 **Quantity** 大于 **150** 的记录。  **Quantity** 字段按 10 递增，其他字段不进行修改。 |![](media/function-update-updateif/icecream-mint-plus10.png)<br><br>修改了 **IceCream** 数据源。 |
+| **Update(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;), {&nbsp;ID:&nbsp;1,&nbsp;Flavor:&nbsp;"Mint&nbsp;Chocolate",&nbsp;Quantity:150&nbsp;} )** |替换数据源中的某条记录。 |<style>img {最大宽度：无}</style> ![](media/function-update-updateif/icecream-mint.png)<br><br>修改了 **IceCream** 数据源。 |
+| **UpdateIf(&nbsp;IceCream, Quantity > 175, {&nbsp;Quantity:&nbsp;Quantity&nbsp;+&nbsp;10&nbsp;} )** |修改**数量**大于**175**的记录。  **Quantity** 字段按 10 递增，其他字段不进行修改。 |![](media/function-update-updateif/icecream-mint-plus10.png)<br><br>修改了 **IceCream** 数据源。 |
 | **Update(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream, Flavor="Strawberry"&nbsp;)&nbsp;),<br>{&nbsp;ID:&nbsp;3, Flavor:&nbsp;"Strawberry Swirl"} )** |替换数据源中的某条记录。 替换记录中未提供 **Quantity** 属性，因此在结果中该属性将为“空”。 |![](media/function-update-updateif/icecream-mint-swirl.png)<br><br>修改了 **IceCream** 数据源。 |
 | **UpdateIf(&nbsp;IceCream, true, {&nbsp;Quantity:&nbsp;0&nbsp;} )** |将数据源中所有记录的 **Quantity** 属性的值设置为 0。 |![ ](./media/function-update-updateif/icecream-mint-zero.png)<br> <br>修改了 **IceCream** 数据源。 |
 

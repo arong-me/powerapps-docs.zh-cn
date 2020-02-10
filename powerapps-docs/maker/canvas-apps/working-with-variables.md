@@ -7,22 +7,22 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 02/28/2019
+ms.date: 02/07/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4dcc00f20de3a16f1f3125e8840f2f6d74feff32
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: d7fb0e386309f207809204d4f9f582aa3aedfe7e
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733152"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089917"
 ---
 # <a name="understand-canvas-app-variables-in-power-apps"></a>了解 Power Apps 中的画布应用变量
 
-如果你使用过其他编程工具（例如 Visual Basic 或 JavaScript），你可能会问：**变量在哪里？** Power Apps 略有不同，需要不同的方法。 与其在生成画布应用时使用变量，不如问自己：我会在 Excel 中执行哪些操作？
+如果使用了其他编程工具，如 Visual Basic 或 JavaScript，则可能会询问：**变量在何处？** Power Apps 略有不同，需要不同的方法。 构建画布应用程序时，请询问自己：**我将在 Excel 中执行哪些操作？**
 
 在其他工具中，你可能会显式执行某个计算，然后将结果存储在变量中。 但是，当输入数据发生更改时，Power Apps 和 Excel 都将自动重新计算公式，因此你通常不需要创建和更新变量。 尽可能使用这种方法，你就可以更轻松地创建、了解和维护应用。
 
@@ -82,7 +82,7 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 
 让我们将简单的加法器更改一下，使之操作起来就像一台老式的带汇总功能的加法机。 如果选择“加”按钮，则会将一个数字加到汇总中。 如果选择“清除”按钮，则会将汇总重置为零。
 
-| 显示 | 描述 |
+| 显示 | 说明 |
 |----|----|
 | 带有文本输入控件、标签和两个按钮的<style>img {max width： none}</style> ![应用程序](media/working-with-variables/button-changes-state-1.png) | 当应用程序启动时，运行总计为0。<br><br>红点在文本输入框中表示用户的手指，其中用户输入**77**。 |
 | ![文本输入控件包含77，正在按 "添加" 按钮](media/working-with-variables/button-changes-state-2.png) | 用户选择 "**添加**" 按钮。 |
@@ -152,11 +152,11 @@ Excel 没有变量。 包含公式的单元格的值随输入而更改，但无�
 
 Power Apps 具有三种类型的变量：
 
-| 变量类型 | 范围 | 描述 | 建立的函数 |
+| 变量类型 | 范围 | 说明 | 建立的函数 |
 | --- | --- | --- | --- |
-| 全局变量 |App |用法最为简单。 包含可从应用程序的任何位置进行引用的数字、文本字符串、布尔值、记录、表等。 |[Set](functions/function-set.md) |
+| 全局变量 |应用 |用法最为简单。 包含可从应用程序的任何位置进行引用的数字、文本字符串、布尔值、记录、表等。 |[Set](functions/function-set.md) |
 | 上下文变量 |屏幕 |非常适合将值传递到屏幕，与其他语言中的过程的参数非常类似。 只能从一个屏幕中引用。 |[UpdateContext](functions/function-updatecontext.md)<br>[Navigate](functions/function-navigate.md) |
-| 集合 |App |包含可从应用程序中的任何位置引用的表。 允许修改表的内容，而不是作为一个整体进行设置。 可以保存到本地设备，以供将来使用。 |[Collect](functions/function-clear-collect-clearcollect.md)<br>[ClearCollect](functions/function-clear-collect-clearcollect.md) |
+| 集合 |应用 |包含可从应用程序中的任何位置引用的表。 允许修改表的内容，而不是作为一个整体进行设置。 可以保存到本地设备，以供将来使用。 |[Collect](functions/function-clear-collect-clearcollect.md)<br>[ClearCollect](functions/function-clear-collect-clearcollect.md) |
 
 ## <a name="create-and-remove-variables"></a>创建和删除变量
 
@@ -186,7 +186,7 @@ Power Apps 具有三种类型的变量：
 
 `Pi() * Power( Radius, 2 )`
 
-如果为上下文变量指定的名称与全局变量或集合的名称相同，则上下文变量优先。 但是，如果使用[消除歧义运算符](functions/operators.md#disambiguation-operator) **@ [Radius]** ，则仍可引用全局变量或集合。
+如果为上下文变量指定的名称与全局变量或集合的名称相同，则上下文变量优先。 但是，如果使用[消除歧义运算符](functions/operators.md#disambiguation-operator) **[@Radius]** ，则仍可引用全局变量或集合。
 
 ## <a name="use-a-context-variable"></a>使用上下文变量
 
@@ -195,7 +195,7 @@ Power Apps 具有三种类型的变量：
 上下文变量的工作原理：
 
 * 使用 **[UpdateContext](functions/function-updatecontext.md)** 或 **[定位](functions/function-navigate.md)** 函数隐式创建和设置上下文变量。 当应用启动时，所有上下文变量的初始值均为*空白*。
-* 您可以用记录更新上下文变量。 在其他编程工具中，通常使用“=”来赋值，例如“x = 1”。 上下文变量则使用 **{ x: 1 }** 这样的形式。 使用上下文变量时，请在不使用 record 语法的情况下直接使用其名称。
+* 您可以用记录更新上下文变量。 在其他编程工具中，通常使用“=”来赋值，例如“x = 1”。 对于上下文变量，请使用 **{x：1}** 。 使用上下文变量时，请在不使用 record 语法的情况下直接使用其名称。
 * 您还可以在使用 " **[定位](functions/function-navigate.md)** 函数" 显示屏幕时设置上下文变量。 如果您将屏幕视为一种过程或子例程，此方法类似于在其他编程工具中传递参数。
 * 上下文变量的作用范围仅限于单个屏幕的上下文（ **[Navigate](functions/function-navigate.md)** 除外），这也是其得名的原因。 不能超出相应的上下文使用或设置上下文变量。
 * 上下文变量可以存储包括字符串、数字、记录和[表](working-with-tables.md)在内的任何值。
@@ -208,7 +208,7 @@ Power Apps 具有三种类型的变量：
 
 3. 若要在用户选择“加”按钮时更新汇总，请将 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
 
-    **UpdateContext （{RunningTotal： RunningTotal + TextInput1}）**
+    **UpdateContext （{RunningTotal：RunningTotal + TextInput1}）**
 
     此公式的现有存在将**RunningTotal**作为上下文变量建立，因为存在 **+** 运算符。 可以在此屏幕的任何位置引用**RunningTotal** 。 每当用户打开此应用时， **RunningTotal**的初始值为*空白*。
 
@@ -218,9 +218,9 @@ Power Apps 具有三种类型的变量：
 
 4. 若要在用户选择“清除”按钮时将汇总设置为 **0**，请将 **[OnSelect](controls/properties-core.md)** 属性设置为以下公式：
 
-    UpdateContext( { RunningTotal: 0 } )
+    **UpdateContext （{RunningTotal：0}）**
 
-    同样， **[UpdateContext](functions/function-updatecontext.md)** 与公式 **UpdateContext( { RunningTotal: 0 } )** 一起使用。
+    同样， **[UpdateContext](functions/function-updatecontext.md)** 与公式一起使用 **UpdateContext （{RunningTotal：0}）** 。
 
     !["清除" 按钮的 OnSelect 属性](media/working-with-variables/context-variable-2.png)
 
@@ -260,7 +260,7 @@ Power Apps 具有三种类型的变量：
 
 * 通过 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** 函数创建和设置集合。  可以改用 **[Collect](functions/function-clear-collect-clearcollect.md)** 函数，但该函数实际上需要另一个变量，而不能替换旧的变量。  
 * 集合是一种类型的数据源，因此也是表。 若要访问集合中的单个值，请使用 **[First](functions/function-first-last.md)** 函数，并从生成的记录中提取一个字段。 如果使用了单个值和 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** ，则该字段为“Value”字段，如以下示例所示：<br>
-**First(** *VariableName* **).Value**
+**First （** *VariableName* **）。值**
 
 让我们使用集合重新创建加法机：
 

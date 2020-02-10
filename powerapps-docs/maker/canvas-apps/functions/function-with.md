@@ -7,23 +7,23 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 08/15/2019
+ms.date: 02/07/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 886482e9093fa44c34fb1f72b93d51181d4fbc10
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 0d1105577459cc447fbd2a14a946ce5651d4d236
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729868"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089710"
 ---
 # <a name="with-function-in-power-apps"></a>带有 Power Apps 中的函数
 计算值并对单个[记录](../working-with-tables.md#records)执行操作，包括命名值的内联记录。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 **With**函数为单个记录计算公式。  该公式可以计算值并/或执行操作，例如修改数据或使用连接。  使用[ **ForAll**函数](function-forall.md)可以计算记录表中所有记录的公式。
 
@@ -112,7 +112,7 @@ With( Patch( Orders, Defaults( Orders ), { OrderStatus: "New" } ),
 
 ```powerapps-dot
 With( 
-    Match( "PT2H1M39S", "PT(?:<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
+    Match( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
     Time( Value( hours ), Value( minutes ), Value( seconds ) )
 )
 // Result: 2:01 AM (as shown in a label control, use the Text function to see the seconds)
