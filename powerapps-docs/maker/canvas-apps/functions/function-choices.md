@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2ebe6b2019652b1f2e59419c718136aced81c62e
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: ab805ec283ca43c96982eb04357ded9aed934a03
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731401"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089871"
 ---
 # <a name="choices-function-in-power-apps"></a>Power Apps 中的选项功能
 返回查找列可能值的表。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 Choices 函数返回查找列可能值的表。  
 
 使用 Choices 函数提供选项列表让用户选择。 此函数通常与[**组合框**](../controls/control-combo-box.md)控件一起用在编辑窗体中。
@@ -32,7 +32,7 @@ Choices 函数返回查找列可能值的表。
 
 由于 Choices 会返回表，因此可使用 [**Filter**](function-filter-lookup.md)[**Sort**](function-sort.md)、[**AddColumns**](function-table-shaping.md) 以及其他所有表操作函数对表进行筛选、排序和定型。 
 
-目前，不能[委派](../delegation-overview.md) Choices。 如果此限制在你的应用中造成问题，请将外部实体添加为数据源，并直接使用它。 
+此时，无法[委托](../delegation-overview.md)**选项**。 如果此限制在你的应用中造成问题，请将外部实体添加为数据源，并直接使用它。 
 
 Choices 不要求列名称为字符串且括在双引号中，这一点与 [**ShowColumns**](function-table-shaping.md)、[**Search**](function-filter-lookup.md) 和其他表函数不同。 就像直接引用列一样提供公式。
 
@@ -63,7 +63,7 @@ Choices 不要求列名称为字符串且括在双引号中，这一点与 [**Sh
 
     对于每个帐户，不是指定了联系人作为主要联系人，就是主要联系人为*空白*。
 
-1. 从 **Accounts** 实体[生成应用](../data-platform-create-app.md)。
+1. 从 [Accounts](../data-platform-create-app.md) 实体**生成应用**。
 
 1. 在左边缘附近的屏幕和控件列表中，向下滚动到显示出 EditScreen1，并选择其下方的 EditForm1。
 
@@ -92,7 +92,7 @@ Choices 不要求列名称为字符串且括在双引号中，这一点与 [**Sh
 
      ![包含窗体控件的画布屏幕。 主联系人卡片内的组合框控件处于选中状态，并且具有公式选择（"主要联系人"）的 "Items" 属性随即出现](media/function-choices/accounts-primary-contact.png)
 
-1. 在“开始”选项卡上，选择“新建屏幕”，然后选择“Blank”。
+1. 出于说明目的，可以在 **"数据表" 控件中**查看 "**选择**" 函数返回的整个表。  在“开始”选项卡上，选择“新建屏幕”，然后选择“Blank”。
 
 1. 在“插入”选项卡上，选择“数据表”。
 

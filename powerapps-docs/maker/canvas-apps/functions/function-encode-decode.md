@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fe02683e0b420a97fe674543a2f0d16bb076f266
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 259ab99ca38a472fda5c8cd8cdf99533a5f5dfc2
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731029"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089733"
 ---
 # <a name="encodeurl-and-plaintext-functions-in-power-apps"></a>Power Apps 中的 EncodeUrl 和明文函数
 编码和解码字符串。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 **EncodeUrl**函数对 URL 字符串进行编码，并用% 和十六进制数替换某些非字母数字字符。  
 
 **纯文本**函数删除 HTML 和 XML 标记，并将某些标记（如这些标记）转换为适当的符号：
@@ -46,7 +46,7 @@ ms.locfileid: "74731029"
 如果文本库中显示 RSS 源，然后将该库中标签的 **[Text](../controls/properties-core.md)** 属性设置为 **ThisItem.description**，该标签可能会显示原始的 HTML 或 XML 代码，如此示例所示：
 
 ```html
-    <p>We have done an unusually&nbsp;&quot;deep&quot; globalization and localization.<p>
+    <p>We have done an unusually&nbsp;&quot;deep&quot; globalization and localization.</p>
 ```
 
 如果将标签的 **[Text](../controls/properties-core.md)** 属性设置为 **PlainText(ThisItem.description)** ，将如此示例中所示显示文本：

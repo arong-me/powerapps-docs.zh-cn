@@ -7,30 +7,30 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 07/24/2017
+ms.date: 02/07/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8b1c1e5a4a65e4e6fcc90ca809a271f0fb94286a
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 45227e7babf3f4e0130358db60082a0eb9cb8675
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732228"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089779"
 ---
 # <a name="operators-in-power-apps"></a>Power Apps 中的运算符
 
 其中的某些运算符依赖于作者的语言。  有关详细信息，请参阅[全局应用](../global-apps.md)。
 
 
-|                               符号                                |                        类型                         |                                                                                    语法                                                                                    |                                                                                                                           描述                                                                                                                            |
+|                               符号                                |                        类型                         |                                                                                    语法                                                                                    |                                                                                                                           说明                                                                                                                            |
 |---------------------------------------------------------------------|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                **.**                                |                  属性选择器                  |                                                               **Slider1.Value<br>Color.Red<br>Acceleration.X**                                                               |                                               从[表](../working-with-tables.md)、控件、[信号](signals.md) 或枚举中提取属性。  对于向后兼容性， **!** 也可以使用。                                                |
 | **.**<br>[[依赖语言](../global-apps.md)]  |                  小数分隔符                  |                                                             **1.23**                                                           |                                                                              整数和小数之间的分隔符。 字符取决于语言。                                                                              |
 |                               **( )**                               |                     括号                     |                                                               **Filter(T, A &lt; 10)**<br><br>**(1 + 2) \* 3**                                                               |                                                                                           强制执行优先顺序和较大表达式中的组子表达式                                                                                           |
-|                                **+**                                |                算数运算符                 |                                                                                  **1 + 2**                                                                                   |                                                                                                                             加法                                                                                                                             |
+|                                **+**                                |                算数运算符                 |                                                                                  **1 + 2**                                                                                   |                                                                                                                             相加                                                                                                                             |
 |                                **-**                                |                       &nbsp;                        |                                                                                  **2 - 1**                                                                                   |                                                                                                                       减法和减号                                                                                                                       |
 |                              *                               |                       &nbsp;                        |                                                                                  **2 \* 3**                                                                                  |                                                                                                                          乘法                                                                                                                          |
 |                                **/**                                |                       &nbsp;                        |                                                                                  **2 / 3**                                                                                   |                                                                                                   除法（另请参阅 **[Mod](function-mod.md)** 函数）                                                                                                    |
@@ -42,8 +42,8 @@ ms.locfileid: "74732228"
 |                              **&lt;**                               |                       &nbsp;                        |                                                                              **Price &lt; 100**                                                                              |                                                                                                                            小于                                                                                                                             |
 |                              **&lt;=**                              |                       &nbsp;                        |                                                                             **Price &lt;= 100**                                                                              |                                                                                                                      小于或等于                                                                                                                       |
 |                            **&lt;&gt;**                             |                       &nbsp;                        |                                                                            **Price &lt;&gt; 100**                                                                            |                                                                                                                           不等于                                                                                                                           |
-|                              **&amp;**                              |            字符串连接运算符            |                                                      **&quot;hello&quot; &amp; &quot; &quot; &amp; &quot;world&quot;**                                                       |                                                                                                             使多个字符串连续显示                                                                                                             |
-|                      &amp;&amp; 或 And                      |                  逻辑运算符                  |                                       **Price &lt; 100 &amp;&amp; Slider1.Value = 20**<br>或 Price &lt; 100 And Slider1.Value = 20                                       |                                                                                         逻辑关联，相当于 **[And](function-logicals.md)** 函数                                                                                          |
+|                              **&amp;**                              |            字符串连接运算符            |                                                      **&quot;hello&quot; &amp; &quot; &quot; &amp; world &quot;** &quot;                                                       |                                                                                                             使多个字符串连续显示                                                                                                             |
+|                      **&amp;&amp;** 或 And                      |                  逻辑运算符                  |                                       **Price &lt; 100 &amp;&amp; Slider1.Value = 20**<br>或 Price  **100 And Slider1.Value = 20&lt;**                                       |                                                                                         逻辑关联，相当于 **[And](function-logicals.md)** 函数                                                                                          |
 |                     **&#124;&#124;** 或 **Or**                      |                       &nbsp;                        |                                        **Price &lt; 100 &#124;&#124; Slider1.Value = 20** 或 **Price &lt; 100 Or Slider1.Value = 20**                                        |                                                                                          逻辑或，相当于 **[Or](function-logicals.md)** 函数                                                                                          |
 |                          **!** 或 **Not**                           |                       &nbsp;                        |                                                              **!(Price &lt; 100)** 或 **Not (Price &lt; 100)**                                                               |                                                                                           逻辑非，相当于 **[Not](function-logicals.md)** 函数                                                                                           |
 |                             **exactin**                             |  [成员运算符](#in-and-exactin-operators)  |                                                                   **Gallery1.Selected exactin SavedItems**                                                                   |                                                                                       属于[集合](../working-with-data-sources.md#collections)或表                                                                                        |
@@ -57,8 +57,27 @@ ms.locfileid: "74732228"
 |                             **Parent**                              |         [Parent 运算符](#parent-operator)         |                                                                               **Parent.Fill**                                                                                |                                                                                                           控件容器属性的访问权限                                                                                                            |
 |                            **ThisItem**                             |       [ThisItem 运算符](#thisitem-operator)       |                                                                            **ThisItem.FirstName**                                                                            |                                                                                                          库或窗体控件字段的访问权限                                                                                                           |
 
+## <a name="identifier-names"></a>标识符名称
+
+变量、数据源、列和其他对象的名称可以包含任何[Unicode](https://en.wikipedia.org/wiki/Unicode)。
+
+使用单引号将包含空格或其他特殊字符的名称括起来。  将两个单引号一起使用，以在名称中表示一个单引号。  不包含特殊字符的名称不需要用单引号引起来。
+
+下面是你可能会在表中遇到的一些示例列名称，以及如何在公式中表示它们：
+
+| 数据库中的列名称   | 公式中的列引用 |
+|-----------------------------|-------------------------------|
+| SimpleName                  | ```SimpleName``` |
+| NameWith123Numbers          | ```NameWith123Numbers``` |
+| 带有空格的名称            | ```'Name with spaces'``` |
+| 用双引号括起来的名称   | ```'Name with "double" quotes'``` |
+| 带单引号的名称   | ```'Name with ''single'' quotes'``` |
+| 带有 @ at 符号的名称      | ```'Name with an @ at sign'``` |
+
+双引号用于[指定文本字符串](data-types.md#embedded-text)。    
+
 ## <a name="in-and-exactin-operators"></a>in 和 exactin 运算符
-可以使用 **[in](operators.md#in-and-exactin-operators)** 和 **[exactin](operators.md#in-and-exactin-operators)** 运算符查找[数据源](../working-with-data-sources.md)中的字符串，如集合或导入的表。 **[in](operators.md#in-and-exactin-operators)** 运算符标识匹配项（不区分大小写），而 **[exactin](operators.md#in-and-exactin-operators)** 运算符仅在大小写相同时标识匹配项。 下面是一个示例：
+可以使用 **[in](operators.md#in-and-exactin-operators)** 和 **[exactin](operators.md#in-and-exactin-operators)** 运算符查找[数据源](../working-with-data-sources.md)中的字符串，如集合或导入的表。 **[in](operators.md#in-and-exactin-operators)** 运算符标识匹配项（不区分大小写），而 **[exactin](operators.md#in-and-exactin-operators)** 运算符仅在大小写相同时标识匹配项。 示例如下：
 
 1. 创建或导入一个名为“清单”的集合，并在库中显示它，如[在库中显示图像和文本](../show-images-text-gallery-sort-filter.md)所述的第一个过程。
 2. 将库的 **[Items](../controls/properties-core.md)** 属性设置为以下公式：
@@ -73,7 +92,7 @@ ms.locfileid: "74732228"
 ## <a name="thisitem-operator"></a>ThisItem 运算符
 通过将数据绑定到表或集合，可以在 **[库](../controls/control-gallery.md)** 、 **[编辑窗体](../controls/control-form-detail.md)** 或 **[显示窗体](../controls/control-form-detail.md)** 控件中显示数据。  这些控件是其他卡和控件的容器。  容器内的每个卡或控件均能通过 **[ThisItem](operators.md#thisitem-operator)** 运算符访问绑定的数据。   
 
-使用 **[ThisItem](operators.md#thisitem-operator)** 运算符指定外部控件内的每个卡或控件的数据的[列](../working-with-tables.md#columns)。 例如，[在库中显示图像和文本](../show-images-text-gallery-sort-filter.md)的产品库中的运算符指定图像控件显示产品设计、上部标签显示产品名称，而下部标签显示库存单位数。
+使用 **[ThisItem](operators.md#thisitem-operator)** 运算符可指定要在外部控件中的每个卡片或控件中显示的数据[列](../working-with-tables.md#columns)。 例如，[在库中显示图像和文本](../show-images-text-gallery-sort-filter.md)的产品库中的运算符指定图像控件显示产品设计、上部标签显示产品名称，而下部标签显示库存单位数。
 
 对于嵌套库， **[ThisItem](operators.md#thisitem-operator)** 指的是最里面的库的项。 假定内部和外部库的行字段不冲突，还可以直接使用未限定的字段（列）名称。 此方法启用内部库中的规则，以引用外部库的项。
 
@@ -85,7 +104,7 @@ ms.locfileid: "74732228"
 此屏幕上的控件具有其他选项。 它们可以使用相对引用：**Parent.Fill**。 **[Parent](operators.md#parent-operator)** 运算符指的是托管此控件，并使其所有属性可用的控件。 **[Parent](operators.md#parent-operator)** 非常有用，因为它不依赖于控件的名称。 可以复制并粘贴容器控件，无需调整容器内的任何引用。 在读取公式时，此运算符还使子控件和父控件之间的关系更为明确。
 
 ## <a name="disambiguation-operator"></a>消除歧义运算符
-某些函数创建[记录作用域](../working-with-tables.md#record-scope)，从而在处理每个记录时访问表的字段，例如 **Filter**、**AddColumns** 和 **Sum**。  使用记录作用域添加的字段名称将替代应用中来自其他位置的同一名称。  在此情况下，仍可以使用 **@** 消除歧义运算符访问来自记录作用域外部的值：
+某些函数创建[记录作用域](../working-with-tables.md#record-scope)，从而在处理每个记录时访问表的字段，例如 **Filter**、**AddColumns** 和 **Sum**。  使用记录范围添加的字段名称将替代应用中来自其他位置的同一名称。  在此情况下，仍可以使用 **@** 消除歧义运算符访问来自记录作用域外部的值：
 
 * 若要访问来自嵌套记录作用域的值，请使用 **@** 运算符，其中所操作的表名称使用该模式：<br>_Table_ **[@** _FieldName_ **]**
 * 若要访问全局值，如数据源、集合和上下文变量，请使用模式 **[@** _ObjectName_ **]** （无需指派表）。
