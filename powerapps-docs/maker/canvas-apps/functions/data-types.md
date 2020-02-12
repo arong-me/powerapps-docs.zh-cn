@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 07f6663b2448a0ca2f4785a523929278fe1b5c1f
-ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
+ms.openlocfilehash: 87af59cfc755ea7ad33f3891ae4f27589318eddc
+ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77089826"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77145446"
 ---
 # <a name="data-types-in-canvas-apps"></a>画布应用中的数据类型
 
@@ -190,12 +190,12 @@ SQL Server 具有[ **Datetime**、 **Datetime2**和其他](https://docs.microsof
 画布应用以[ISO 8601 持续时间格式](https://en.wikipedia.org/wiki/ISO_8601#Durations)将 SQL Server 中的[**Time**](https://docs.microsoft.com/sql/t-sql/data-types/time-transact-sql)数据类型的值作为文本字符串进行读取和写入。 例如，必须分析此字符串格式，并使用[**time**](function-date-time.md)函数将文本字符串 **"PT2H1M39S"** 转换为**时间**值：
 
 ```powerapps-dot
-First(
-    ForAll(
-        MatchAll( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
-        Time( Value( hours ), Value( minutes ), Value( seconds ) )
-    )
-).Value
+With( 
+    Match( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
+    Time( Value( hours ), Value( minutes ), Value( seconds ) )
+)
+// Result: 2:01 AM (as shown in a label control, use the Text function to see the seconds)
+
 ```
 
 ### <a name="mixing-date-and-time-information"></a>混合日期和时间信息

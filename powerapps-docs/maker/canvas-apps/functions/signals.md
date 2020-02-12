@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 05/29/2019
+ms.date: 02/07/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9cd0470d6911452b38040531ec17060b3bc69fa0
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 1cd90e345b41f8316e8cd8c50f4077ee1f64ee91
+ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729586"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77145391"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-power-apps"></a>Power Apps 中的加速、应用、指南针、连接和位置信号
 
@@ -37,17 +37,17 @@ ms.locfileid: "74729586"
 
 **Acceleration** 信号以相对于设备屏幕的三维方式返回设备的加速度。 Acceleration 的测量单位为 g（9.81 m/s<sup>2</sup> 或 32.2 ft/s<sup>2</sup>）（地球由于重力而在其表面对物体产生的加速度）。
 
-| 属性 | 描述 |
+| 属性 | 说明 |
 | --- | --- |
 | **Acceleration.X** |右侧和左侧。  右侧为正数。 |
 | **Acceleration.Y** |前方和后方。  前方为正数。 |
 | **Acceleration.Z** |上方和下方。  上方为正数。 |
 
-### <a name="app"></a>App
+### <a name="app"></a>应用程序
 
 除了其他属性，**应用程序**对象还包含指示所显示屏幕的信号。
 
-| 属性 | 描述 |
+| 属性 | 说明 |
 | --- | --- |
 | **App.ActiveScreen** |显示的屏幕。 返回一个屏幕对象，您可以使用该对象引用屏幕的属性，或与另一个屏幕进行比较以确定要显示的屏幕。 您可以使用 " **[后退](function-navigate.md)** " 或 " **[导航](function-navigate.md)** " 功能更改显示的屏幕。 |
 
@@ -56,14 +56,14 @@ ms.locfileid: "74729586"
 ### <a name="compass"></a>Compass
 **Compass** 信号返回屏幕顶部的指南针标题。 该标题以磁北方为基础。
 
-| 属性 | 描述 |
+| 属性 | 说明 |
 | --- | --- |
 | **Compass.Heading** |标题以度为单位。  返回一个介于 0 到 360 之间的数值，0 表示北方。 |
 
-### <a name="connection"></a>Connection
+### <a name="connection"></a>连接
 **Connection** 信号返回网络连接的相关信息。 如果连接按流量计费，建议限制通过网络发送或接受数据的量。
 
-| 属性 | 描述 |
+| 属性 | 说明 |
 | --- | --- |
 | **Connection.Connected** |返回一个布尔值 **true** 或 **false**，指示设备是否已连接到网络。 |
 | **Connection.Metered** |返回一个布尔值 **true** 或 **false**，指示连接是否按流量计费。 |
@@ -75,16 +75,16 @@ ms.locfileid: "74729586"
 
 随着位置在不断改变，位置上的依赖项将不断被重新计算，这将消耗设备电池的电量。 要维护电池寿命，可使用 **[Enable](function-enable-disable.md)** 和 **[Disable](function-enable-disable.md)** 函数打开或关闭位置更新。 如果显示的屏幕不依赖于位置信息，位置将自动关闭。
 
-| 属性 | 描述 |
+| 属性 | 说明 |
 | --- | --- |
 | **Location.Altitude** |返回一个指示海拔高度的数值（用英尺表示）。 |
-| **Location.Latitude** |返回一个介于 - 90 至 90 之间的数值，该值指示从赤道起以度数表示的纬度。 正数表示赤道以北的位置。 |
-| **Location.Longitude** |返回一个介于 0 至 180 之间的数值，该值指示从英国格林威治以西起用度数表示的经度。 |
+| **Location.Latitude** |返回一个从-90 到90的数字，它指示纬度，从赤道的角度来度量。 正数表示赤道以北的位置。 |
+| **Location.Longitude** |返回一个数字，从–180到180，指示经度，单位为英国的格林尼治度。  正数指示 Greenwhich 的东部位置。 |
 
 ## <a name="examples"></a>示例
 在棒球域中，罐状指针从罐间球场到 home 盘子上的收集者。 该手机相对于地面是平行移动的，手机的屏幕顶端指向捕手，且投手在投掷过程中未使手机发生旋转。 在该位置，这部手机连接的是按流量计费的移动网络服务，没有 WiFi。 将显示 **PlayBall** 屏幕。   
 
-| 公式 | 描述 | 结果 |
+| 公式 | 说明 | 结果 |
 | --- | --- | --- |
 | **Location.Latitude** |返回当前位置的纬度。 此字段位于地图坐标 47.591 N，122.333 W。 |47.591<br><br>纬度将随球在投手和捕手之间的移动而不断更改。 |
 | **Location.Longitude** |返回当前位置的经度。 |122.333<br><br>经度将随球在投手和捕手之间的移动而不断更改。 |
