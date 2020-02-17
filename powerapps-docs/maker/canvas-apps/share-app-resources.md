@@ -1,24 +1,24 @@
 ---
 title: 共享画布应用中使用的资源 | Microsoft Docs
 description: 了解如何共享 canvas 应用在 Power Apps 中使用的资源
-author: archnair
+author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 06/28/2016
-ms.author: archanan
+ms.date: 02/03/2020
+ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a0dec0f593dee36cbdcff62667177c194abfc6e0
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: a1385e45fbbd932e0575c5c5b69b051dc292c824
+ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732479"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77282325"
 ---
 # <a name="share-canvas-app-resources-in-power-apps"></a>共享画布-Power Apps 中的应用资源
 
@@ -40,11 +40,21 @@ ms.locfileid: "74732479"
 
 ## <a name="connections"></a>连接
 
-某些类型的连接（如 SQL Server）会自动共享，而其他类型的连接则需用户自行创建到应用中的数据源或源的连接。
+与其他用户共享应用时，某些连接（例如，通过 SQL 或 Windows 身份验证 SQL Server）会与应用进行[隐式共享](share-app-resources.md#implicit-sharing)。 其他连接需要用户创建其自己的连接（如 OneDrive for Business 或 SQL Server 与 Azure AD 身份验证）。
 
-在 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，可以确定某个连接是否会自动共享，并可更新共享权限。 在左侧导航栏中，依次单击或点击“**管理**”、“**连接**”，然后单击或点击一个连接。 如果出现“**共享**”选项卡，则连接将自动共享。
+当你与其他用户共享应用时，你可以确定是否自动将连接作为应用的一部分进行共享;允许您更新共享权限。 为此，请在 make.powerapps.com 中选择 "**数据**"，并从左侧导航 -> **连接**"。 然后选择所需的连接。 如果 "**共享**" 按钮出现在顶部导航栏上，或者如果选择 "*更多命令*（...）" 时显示 "**共享**" 选项，则所选连接可与其他用户共享。
 
-  ![连接详细信息页中的“共享”选项卡](./media/share-app-resources/shared-connections.png)
+  ![OneDrive for business 不共享](./media/share-app-resources/shared-connections-odb.png)
+
+  ![与 SQL Server 共享 SQL 身份验证连接](./media/share-app-resources/shared-connections-sqlauth.png)
+
+### <a name="implicit-sharing"></a>隐式共享
+
+共享使用可共享的连接的应用时，应用连接会与应用一起**隐式共享**。 例如，当你跳到 make.powerapps.com，选择 "**应用**"，选择使用此连接的应用，选择 "*更多命令*（...）"，然后选择 "**共享**" 时，将显示以下消息：
+
+  ![隐式权限警告](./media/share-app-resources/share-app-implicit-permission.png)
+
+如果选择 "**确认**"，并与其他用户共享选定的应用，则应用连接将与应用一起隐式共享。
 
 ## <a name="on-premises-data-gateways"></a>本地数据网关
 如果创建和共享的应用包含本地源的数据，则[本地数据网关](gateway-management.md)本身及该网关的某些类型的连接将自动共享。 对于任何没有自动共享的连接，可以手动将其共享（如之前部分所述），或让应用提示用户创建其自己的连接。 若要显示已配置网关的连接：
