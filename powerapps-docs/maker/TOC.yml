@@ -1018,6 +1018,8 @@
                   href: ./model-driven-apps/create-edit-views-app-designer.md
                 - name: 选择并配置视图中的列
                   href: ./model-driven-apps/choose-and-configure-columns.md
+                - name: 在应用视图中创建或编辑筛选器
+                  href: ./model-driven-apps/create-edit-view-filters.md
                 - name: 操作指南：视图
                   items:
                     - name: 如何使网格可编辑
