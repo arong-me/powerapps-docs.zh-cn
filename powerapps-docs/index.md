@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - PowerApps-hub
-ms.openlocfilehash: ed27dfe0846924d14de7d7837977d73c9f02e1c4
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: c32a87a38029f4a01750f04ecc2f9c0d0314ac66
+ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76974863"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77282381"
 ---
 <div id="main"
    class="v2">
@@ -350,11 +350,11 @@ ms.locfileid: "76974863"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Power 平台管理中心</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-guide">管理 Power 平台</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-documentation">管理 Power 平台</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">获取帮助和支持</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">选择加入 2019 版 Wave 2</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">管理设置</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">白皮书：管理低代码开发平台</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/opt-in-early-access-updates">选择启用早期访问更新</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/wp-security">安全概念</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">管理设置</a></p>                                    
                                  </div>
                               </div>
                            </div>
@@ -411,9 +411,28 @@ ms.locfileid: "76974863"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">环境与安全性</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/environments-administration">管理环境</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/database-security">配置环境安全性</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-view-apps">查看环境中的应用</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/environments-overview">环境概述</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/trial-environments">试用环境</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/database-security">环境安全</a></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="cardSize">
+                           <div class="cardPadding">
+                              <div class="card">
+                                 <div class="cardImageOuter">
+                                    <div class="cardImage">
+                                       <img alt="" src="media/index/i_guidelines.svg">
+                                    </div>
+                                 </div>
+                                 <div class="cardText">
+                                    <h3 style="font-size: 1.15rem">资源</h3>
+                                    <hr/>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">白皮书：管理 Power Apps 和 Power Automate 企业部署</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://powerapps.microsoft.com/blog/introducing-the-powerapps-center-of-excellence-starter-kit/">Power Apps Center of Excellence (CoE) 初学者工具包</a></p>
                                  </div>
                               </div>
                            </div>
