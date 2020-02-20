@@ -18,7 +18,7 @@ search.app:
 - D365CE
 ms.openlocfilehash: 8f1105fc88fe87aabceaa10160b96e2d7299cbe0
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74733219"
@@ -27,7 +27,7 @@ ms.locfileid: "74733219"
 
 无论你的数据是存储在电子表格、手机还是电子邮件程序中，都可以使用下面的方法将数据导入应用。 例如，你可能希望将你的客户联系人列表从 Excel 电子表格导入应用，以便在一个位置即可跟踪所有客户信息。
   
-## <a name="step-1-get-your-import-file-ready"></a>步骤1：准备好导入文件  
+## <a name="step-1-get-your-import-file-ready"></a>步骤 1：准备好导入文件  
 首先，将数据导出到 Excel 文件。 支持以下文件格式：
  - Excel 工作簿 (.xlsx)
  - 逗号分隔值 (.csv)
@@ -66,7 +66,7 @@ ms.locfileid: "74733219"
     |公司所在国家/地区|  
     |电子邮件地址|  
   
-3.  保存该文件。  
+3.  保存文件。  
   
 ### <a name="export-data-from-your-phone"></a>从手机中导出数据  
 
@@ -76,25 +76,25 @@ ms.locfileid: "74733219"
   
 若要查找应用，请搜索手机的在线商店。  
   
-## <a name="step-2-import-the-file"></a>步骤2：导入文件 
+## <a name="step-2-import-the-file"></a>步骤 2：导入文件 
   
-1. 在命令栏上，选择“从 Excel 导入”或“从 CSV 导入”。
+1. 在命令栏上，选择“从 Excel 导入”  或“从 CSV 导入”  。
 
    > [!div class="mx-imgBorder"]
    > ![Power Apps 中的主菜单](media/import.png "Power Apps 中的主菜单")
   
-2. 浏览到保存了包含导出的联系人的文件的文件夹。 依次选择“文件”、“打开”，然后选择“下一步”。  
+2. 浏览到保存了包含导出的联系人的文件的文件夹。 依次选择“文件”  、“打开”，然后选择“下一步”  。  
   
    > [!TIP]
    > 一次只能导入一个文件。 若要导入更多文件，请稍后再次运行向导。
    
-3. 查看文件名称，并使用“查看映射”选项验证字段和数据分隔符是否正确无误。 如果一切正常，请选择“完成导入”。  
+3. 查看文件名称，并使用“查看映射”  选项验证字段和数据分隔符是否正确无误。 如果一切正常，请选择“完成导入”  。  
  
-## <a name="step-3-check-that-the-import-is-successful"></a>步骤3：检查导入是否成功
+## <a name="step-3-check-that-the-import-is-successful"></a>步骤 3：检查导入是否成功
 
 向导完成后，检查数据（例如，联系人列表）以确保其正确导入。  
   
-1. 在主菜单中，转到“联系人”。
+1. 在主菜单中，转到“联系人”  。
   
 2. 滚动联系人列表。 检查是否每个人都已列出，并验证字段内容是否准确。
 
@@ -103,8 +103,8 @@ ms.locfileid: "74733219"
 如果要为东亚语言导入包含双字节字符的数据，请务必将该文件编码为 UTF-8 BOM。 普通 UTF-8 可能还不够。
 
 1. 使用 Visual Studio Code 打开 CSV 文件。
-2. 在底部栏中，单击标签“UTF-8”（随即打开弹出窗口）。 
-3. 选择“保存时使用编码”。 
+2. 在底部栏中，单击标签“UTF-8”  （随即打开弹出窗口）。 
+3. 选择“保存时使用编码”  。 
 
 现在可以为该文件选取 UTF-8 BOM 编码了。
 
