@@ -17,66 +17,66 @@ search.app:
 - D365CE
 ms.openlocfilehash: bf8ee15b37e9fcae5027bb91e89ceb225325dcc5
 ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/06/2020
 ms.locfileid: "77054873"
 ---
 # <a name="create-a-new-record"></a>创建新记录
 
-## <a name="create-a-new-record-using-the--option-on-the-command-bar"></a>使用命令栏上的 "+" 选项创建新记录
+## <a name="create-a-new-record-using-the--option-on-the-command-bar"></a>使用命令栏上的“+”选项新建记录
 
-使用“新建记录”命令或“快速创建”，可以轻松快速地将几乎任何类型的信息输入系统。 该命令在导航栏中，因此无论何时需要将新信息输入系统，都可以随时使用。 您还可以保存一条记录，并直接通过 "**快速创建**" 窗体创建一个记录。
+使用“新建记录”  命令或“快速创建”  ，可以轻松快速地将几乎任何类型的信息输入系统。 该命令在导航栏中，因此无论何时需要将新信息输入系统，都可以随时使用。 还可以从“快速创建”窗体直接保存记录和新建记录  。
 
 > [!NOTE]
-> “快速创建”选项仅适用于管理员启用的记录。
+> “快速创建”  选项仅适用于管理员启用的记录。
     
-1. 在导航栏上，选择 "**加号**![创建记录" 按钮](media/create-record-button.png "创建记录按钮")，然后选择所需的项。  
+1. 在导航栏上，选择“加号”![“创建记录”按钮](media/create-record-button.png "“创建记录”按钮")，然后选择所需项  。  
 
     > [!div class="mx-imgBorder"] 
-    > ![创建记录按钮](media/newrecord1.png "创建记录按钮")
+    > ![“创建记录”按钮](media/newrecord1.png "“创建记录”按钮")
   
-2.  填写字段，然后选择“保存并关闭”。 或者，若要保存和创建其他记录，请选择向下箭头，然后选择 "**保存" & 新建**"。
+2.  填写字段，然后选择“保存并关闭”  。 或者，若要保存和创建其他记录，请选择向下箭头，然后选择“保存并新建”  。
 
      > [!div class="mx-imgBorder"] 
      > ![保存记录](media/quick_create.png "保存记录")
   
 > [!NOTE]
-> 屏幕上的字段旁边的星号![必填字段按钮](media/required-field-button.png "必填字段按钮")表示该字段是必填字段。 如果在选择“保存并关闭”后输入必填字段，系统将显示一条错误消息，或者如果输入信息并选择“取消”，系统将显示一条警告。
+> 屏幕上字段旁的星号![“必填字段”按钮](media/required-field-button.png "“必填字段”按钮")表示该字段为必填项。 如果在选择“保存并关闭”后输入必填字段，系统将显示一条错误消息，或者如果输入信息并选择“取消”，系统将显示一条警告   。
 >   
-> 屏幕上的 "字段" 旁边的加号![建议字段按钮](media/recommended-field-button.png "建议的字段按钮")表示你的组织建议你填写字段。  
+> 屏幕上字段旁的加号![“建议字段”按钮](media/recommended-field-button.png "“建议字段”按钮")表示组织建议你填写该字段。  
 
 
-## <a name="create-a-new-record-using-the-new-button"></a>使用 "新建" 按钮创建新记录 
+## <a name="create-a-new-record-using-the-new-button"></a>使用“新建”按钮新建记录 
 
-1. 从左侧导航窗格中，选择 "记录类型"。 例如，选择 "**联系人**" 创建新的联系人记录。
-2. 在命令栏上，选择 " **+ 新建**"。
+1. 从左侧导航窗格，选择记录类型。 例如，选择“联系人”可新建联系人记录  。
+2. 在命令栏上，选择“+ 新建”  。
 
     > [!div class="mx-imgBorder"] 
-    > ![新建按钮](media/newrecord2.png "新建按钮")
+    > ![“新建”按钮](media/newrecord2.png "“新建”按钮")
   
-3. 填写新联系人的相应详细信息，然后选择 "**保存并关闭**"。
+3. 填写新联系人的相应详细信息，然后选择“保存并关闭”  。
 
     > [!NOTE]
-    > 如果有未保存的更改，并尝试尝试其他记录或窗体，则会弹出一个**未保存的更改**对话框。 如果选择 "**保存并继续**"，则它将尝试保存你的信息并打开你想要转到的页面。 如果选择 "保存并继续"，而在字段中出现错误，则对话框将关闭，并且你将在页面上保留以修复错误，然后才能离开。
+    > 如果你未保存更改，并尝试转到其他记录或窗体，则系统会弹出“未保存的更改”对话框  。 如果选择“保存并继续”，则系统会尝试保存信息并打开你要转到的页面  。 如果选择“保存并继续”，但字段中出现错误，则对话框将关闭，并且你将继续停留在该页面，修复错误后才能离开。
 
     > [!div class="mx-imgBorder"] 
-    > ![新建按钮](media/newrecord3.png "新建按钮")
+    > ![“新建”按钮](media/newrecord3.png "“新建”按钮")
 
  
- ## <a name="preview-use-the-save-or-save--close-option-when-editing-a-record"></a>预览：编辑记录时使用 "保存" 或 "保存 & 关闭" 选项 
+ ## <a name="preview-use-the-save-or-save--close-option-when-editing-a-record"></a>预览：编辑记录时使用“保存”或“保存并关闭”选项 
  
-编辑现有记录时，使用命令栏上的 "**保存**" 或 "**保存" & "关闭**" 按钮。 在此版本之前，"**保存**" 选项仅在右下角可用。
+编辑现有记录时，使用命令栏上的“保存”或“保存并关闭”按钮   。 在此版本之前，“保存”选项位于右下角  。
 
 > [!NOTE]
-> 这是一项早期的访问功能。 你可以提前选择在你的环境中启用此功能，这将允许你测试这些功能，然后在你的环境中采用它们。 有关如何启用这些功能的信息，请参阅[选择加入 2020 release wave 1 更新](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates)。
+> 这是一项抢先体验功能。 你可以选择提前在环境中启用此功能，以便测试这些功能，然后在环境中采用。 如需了解如何启用这些功能的信息，请参阅[选择加入 2020 版第 1 波更新](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates)。
 
 
-1. 从左侧导航窗格中，选择要编辑的记录类型。 例如，选择 "**帐户**"。
-2. 打开要编辑的帐户记录，并对记录进行更改。
-3. 若要保存所做的更改，请在命令栏上，选择 "**保存**" 或 "**保存" & 关闭**"。 "**保存**" 选项在右下角仍可用。
+1. 从左侧导航窗格中，选择要编辑的记录类型。 例如，选择“帐户”  。
+2. 打开要编辑的帐户记录，然后对记录进行更改。
+3. 若要保存更改，请在命令栏上选择“保存”或“保存并关闭”   。 “保存”选项仍位于右下角  。
 
     > [!div class="mx-imgBorder"] 
-    > ![保存对记录的选项](media/saveoptionalwaysvisible.png "保存对记录的选项")
+    > ![记录上的“保存”选项](media/saveoptionalwaysvisible.png "记录上的“保存”选项")
 
 
