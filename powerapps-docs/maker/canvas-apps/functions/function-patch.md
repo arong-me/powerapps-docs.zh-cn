@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1b23ac058632c4a4b2196c48ed5ffaf6d63fc2bd
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: d0363088f3cdfede3c7d81db229e90b788e4515d
+ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74730445"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77530802"
 ---
 # <a name="patch-function-in-power-apps"></a>Power Apps 中的修补程序函数
-在[数据源](../working-with-data-sources.md)中修改或创建一条或多条[记录](../working-with-tables.md#records)，或者合并数据源外的记录。
+在[数据源](../working-with-tables.md#records)中修改或创建一条或多条[记录](../working-with-data-sources.md)，或者合并数据源外的记录。
 
 使用 **Patch** 函数可以在复杂情况（如执行不需要用户交互的更新或使用跨多个屏幕的窗体）下修改记录。
 
@@ -34,13 +34,13 @@ ms.locfileid: "74730445"
 
 结合使用 **Patch** 和 **[Defaults](function-defaults.md)** 函数可创建记录。 可以利用此行为生成[一个屏幕](../working-with-data-sources.md)，以供创建和编辑记录。 例如，以下公式为名为 Contoso 的客户创建记录：
 
-`Patch( Customers, Defaults( Customer ), { Name: “Contoso” } )`
+`Patch( Customers, Defaults( Customers ), { Name: “Contoso” } )`
 
 即使不需要使用数据源，也可以使用 **Patch** 来合并两条或多条记录。 例如，以下公式将两个记录合并成一个同时识别 Contoso 的电话号码和位置的记录：
 
 `Patch( { Name: "Contoso", Phone: “1-212-555-1234” }, { Name: "Contoso", Location: “Midtown”  } )`
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 ### <a name="modify-or-create-a-record-in-a-data-source"></a>在数据源中修改或创建记录
 要在数据源中使用这个函数，请指定数据源，然后指定一条基本记录：
 
@@ -89,11 +89,11 @@ ms.locfileid: "74730445"
 
 ## <a name="examples"></a>示例
 #### <a name="modify-or-create-a-record-in-a-data-source"></a>在数据源中修改或创建记录
-在以下示例中，你会在名为 **IceCream** 的数据源中修改或创建一条记录。该数据源包含这个[表](../working-with-tables.md)中的数据，并且会在 **ID** [列](../working-with-tables.md#columns)中自动生成相应的值：
+在这些示例中，你将在名为**IceCream**的数据源中修改或创建记录，其中包含此[表](../working-with-tables.md)中的数据，并自动生成**ID** [列](../working-with-tables.md#columns)中的值：
 
 ![](media/function-patch/icecream.png)
 
-| 公式 | 描述 | 结果 |
+| 公式 | 说明 | 结果 |
 | --- | --- | --- |
 | **Patch(&nbsp;IceCream,<br>First( Filter( IceCream, Flavor = "Chocolate" ) ), {&nbsp;Quantity:&nbsp;400&nbsp;} )** |修改 **IceCream** 数据源中的记录：<ul><li> 要修改的记录的 **ID** 列的值为 **1**。 （这个 ID 的记录为 **Chocolate**。）</li><li>将 **Quantity** 列的值更改为 **400**。 |{&nbsp;ID:&nbsp;1, Flavor:&nbsp;"Chocolate", Quantity:&nbsp;400 }<br><br>已修改 **IceCream** 数据源中的 **Chocolate** 条目。 |
 | **Patch( IceCream, Defaults(&nbsp;IceCream ), {&nbsp;Flavor:&nbsp;“Strawberry”&nbsp;}&nbsp;)** |在 **IceCream** 数据源中创建一条记录。<ul><li>**ID** 列包含的值为 **3**，这是数据源自动生成的。</li><li>**Quantity** 列的值为 **0**，在 **IceCream** 数据源中，这是该列的默认值，由 **[Defaults](function-defaults.md)** 函数指定。<li>**Flavor** 列的值为 **Strawberry**。</li> |{ ID:&nbsp;3, Flavor:&nbsp;“Strawberry”, Quantity:&nbsp;0&nbsp;}<br><br>已在  **IceCream** 数据源中创建 **Strawberry** 条目。 |
@@ -104,7 +104,7 @@ ms.locfileid: "74730445"
 
 #### <a name="merge-records-outside-of-a-data-source"></a>合并数据源外的记录
 
-| 公式 | 描述 | 结果 |
+| 公式 | 说明 | 结果 |
 | --- | --- | --- |
 | **Patch(&nbsp;{&nbsp;Name:&nbsp;"James",&nbsp;Score:&nbsp;90&nbsp;}, {&nbsp;Name:&nbsp;"Jim",&nbsp;Passed:&nbsp;true&nbsp;} )** |合并数据源外的两条记录：<br><ul><li>两条记录的 **Name** 列中的值不相同。 结果包含离参数列表的末尾更近的记录中的值 (**Jim**)，而不是离开头更近的记录中的值 (**James**)。</li><li>第一条记录包含第二条记录中不存在的一列 (**Score**)。 结果包含这一列及其值 (**90**)。</li><li>第二条记录包含第一条记录中不存在的一列 (**Passed**)。 结果包含这一列及其值 (**true**)。 |{&nbsp;Name:&nbsp;"Jim", Score:&nbsp;90, Passed:&nbsp;true&nbsp;} |
 

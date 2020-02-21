@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/29/2019
+ms.date: 02/18/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a12cd7c17a6aca93f254cc2e2cb89cb848245392
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 7f98025fbc3a2f392b45cce22af41d075a3bfaac
+ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731503"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77530849"
 ---
 # <a name="embed-an-app-in-teams"></a>在 Teams 中嵌入应用
 
@@ -29,12 +29,12 @@ ms.locfileid: "74731503"
 > [!NOTE]
 > 团队自定义应用策略必须设置为允许上传自定义应用。 如果无法在团队中嵌入你的应用，请与管理员联系，查看他们是否已设置[自定义应用设置](https://docs.microsoft.com/MicrosoftTeams/teams-custom-app-policies-and-settings#custom-app-policy-and-settings)。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 - 你需要有效的[Power Apps 许可证](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)。
 - 若要将应用嵌入到团队中，需要[使用 Power Apps 创建](data-platform-create-app.md)的现有应用。
 
-## <a name="download-the-app"></a>下载应用程序
+## <a name="download-the-app"></a>下载应用
 
 1. 登录到[make.powerapps.com](https://make.powerapps.com)，然后在菜单中选择 "**应用**"。
 
@@ -62,6 +62,21 @@ ms.locfileid: "74731503"
 ## <a name="publish-the-app-to-the-teams-catalogue"></a>将应用发布到团队目录
 
 如果你是管理员，则还可以将[应用发布](https://docs.microsoft.com/microsoftteams/tenant-apps-catalog-teams)到 Microsoft 团队目录。
+
+## <a name="improve-the-performance-of-your-app"></a>提高应用程序的性能
+
+您可以选择在团队内预加载应用程序以提高性能。
+
+1. 登录到[make.powerapps.com](https://make.powerapps.com)，然后在菜单中选择 "**应用**"。
+
+2. 选择要在团队中共享的应用的 "**更多操作**（...）"，然后选择 "**设置**"。
+
+3. 在 "设置" 面板中，将 "**预加载应用**" 切换为 **"是"** 。 然后，在团队中嵌入应用时，电源应用将预加载应用。
+
+    ![应用详细信息](./media/embed-teams-app/preload-app.png "预加载应用以提高性能")
+
+4. 要使更改生效，请将应用重新导入到团队中。
+
 
 ### <a name="see-also"></a>另请参阅
 
