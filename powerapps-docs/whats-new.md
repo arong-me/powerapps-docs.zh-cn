@@ -7,7 +7,7 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.reviewer: ''
-ms.date: 11/26/2019
+ms.date: 02/18/2020
 ms.author: kvivek
 search.audienceType:
 - maker
@@ -19,12 +19,12 @@ search.app:
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: f3eaab5226946c3a5cfbb99c7b4029d587fca247
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d07cec7afb328917b7fe8e01038fad0fa5d3d516
+ms.sourcegitcommit: 1137abc4660ffb3432adbc702b1c5dae3293aa58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680342"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77479142"
 ---
 # <a name="whats-new-in-power-apps"></a>Power Apps 中的新增功能有哪些？
 
@@ -41,7 +41,9 @@ ms.locfileid: "74680342"
 
 ## <a name="release-plan"></a>发布计划
 
-有关可用于规划的未来几个月内发布的新功能的信息，请参阅 [2019 第二波发布计划](https://docs.microsoft.com/power-platform-release-plan/2019wave2/microsoft-powerapps/planned-features)
+有关可用于规划的未来几个月内发布的新功能的信息，请参阅：
+- [2019 版本系列 2 计划](https://docs.microsoft.com/power-platform-release-plan/2019wave2/microsoft-powerapps/planned-features)
+- [2020 版本系列 1 计划](https://docs.microsoft.com/power-platform-release-plan/2020wave1/microsoft-powerapps/planned-features)
 
 ## <a name="known-limitations"></a>已知限制
 

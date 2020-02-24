@@ -8,18 +8,18 @@ ms.topic: article
 author: shubhadaj
 ms.author: shujoshi
 manager: annbe
-ms.openlocfilehash: 6f3c603284e5f5d53380f5caa932cafac11e2d7a
-ms.sourcegitcommit: 68a31e3fa4d1635ccf4cd8bd9da5fba1bfecefa4
+ms.openlocfilehash: 546f94f67608ab735d2c2eb6bb39f105335549f7
+ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051927"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77282583"
 ---
 # <a name="preview-send-email-using-the-enhanced-email-experience"></a>预览：使用增强的电子邮件体验发送电子邮件
 
 使用增强的电子邮件体验发送电子邮件是一项抢先体验功能。 你可以提前选择加入，以在环境中启用这些功能。 这样即可测试这些功能，然后在环境中采用。 如需了解如何启用这些功能的信息，请参阅[选择加入 2020 版第 1 波更新](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates)。
 
-通过模型驱动应用中增强的电子邮件体验，无需离开正在处理的记录，即可撰写电子邮件。 使用增强的电子邮件体验，你可以：
+通过模型驱动应用中增强的电子邮件体验，无需离开正在处理的记录即可撰写电子邮件。 使用增强的电子邮件体验，你可以：
 
 - 导航到其他页面，而不会丢失电子邮件内容。
 - 最小化电子邮件窗口以返回到正在处理的记录。
