@@ -1,20 +1,20 @@
 ---
 title: 门户 Power Apps 门户 Studio 解析 | Microsoft Docs
 description: 了解 Power Apps 门户 Studio 的解析。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/29/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: bb5102107d9d152e2f95d608959efe035f79a5b8
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 6b04cc8d392e5a633240c1a01467e6be3272464c
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884549"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2981481"
 ---
 # <a name="power-apps-portals-studio-anatomy"></a>Power Apps 门户 Studio 解析
 

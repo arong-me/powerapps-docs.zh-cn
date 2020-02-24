@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c917314137580ffee9d70f702c87bfb265a55810
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 25ea1db66e61d3e0b03090a0a91f35bd90d7b649
+ms.sourcegitcommit: b746aad895b152259680f5179dcee0281c951d0a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872945"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "2948820"
 ---
 # <a name="create-a-solution"></a>创建解决方案
 
@@ -43,7 +43,7 @@ ms.locfileid: "2872945"
     |-----------|-----------------|  
     |**显示名称**|在解决方案列表中显示的名称。 以后可以更改此属性。|  
     |**姓名**|解决方案的唯一名称。 这是使用您在“显示名称”字段中输入的值生成的。 可以在保存解决方案之前编辑此值，但在保存了解决方案之后，将无法对其进行更改。|  
-    |**发布者**|可以选择默认发布商，也可以创建一个新发布商。 除非您打算分发您的解决方案，否则应仅使用您的组织的默认发布商。|  
+    |**发布者**|可以选择默认发布商，也可以创建一个新发布商。 建议您为组织创建要在其中使用解决方案的环境中一致使用的发布商。 详细信息：[更改任何发布商的解决方案发布商前缀](change-solution-publisher-prefix.md#change-the-solution-publisher-prefix-for-any-publisher) |  
     |**版本**|输入您的解决方案的版本号。 此数据仅在导出解决方案时有重要意义。 在导出解决方案时，版本号将包括在文件名中。|  
   
 3.  选择**保存**。  

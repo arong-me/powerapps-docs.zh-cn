@@ -1,20 +1,20 @@
 ---
 title: 设置门户的身份验证标识 | MicrosoftDocs
 description: 有关如何设置门户的身份验证标识的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 44b45a019b786da01dc686ecb69f068ce1d7eef8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2faab3a6f41bbcd9a239c52fb00ce27919347879
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756420"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980280"
 ---
 # <a name="set-authentication-identity-for-a-portal"></a>设置门户的身份验证身份
 

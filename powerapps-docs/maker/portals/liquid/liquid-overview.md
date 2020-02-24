@@ -1,20 +1,20 @@
 ---
 title: 为门户添加动态内容和创建自定义模板 | MicrosoftDocs
 description: 了解如何在门户中使用 Liquid 这种开源模板语言。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 4667a328775a41b254f80250caebaf88a8110a9f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cda93410ee9580a7479e6b67353058a997a0b3d6
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866471"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2981129"
 ---
 # <a name="work-with-liquid-templates"></a>使用 Liquid 模板
 

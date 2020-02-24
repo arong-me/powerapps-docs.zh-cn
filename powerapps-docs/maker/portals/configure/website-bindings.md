@@ -1,20 +1,20 @@
 ---
 title: 在门户中创建和管理网站绑定 | MicrosoftDocs
 description: 了解如何在门户中创建和管理网站绑定。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/12/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: f2cc1c3aad7f8aaf4b9dc1f554d7a7a1d91d62e8
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 294e1040f79ed5a25521ae2a861ccd30cdbfaf3e
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866600"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977530"
 ---
 # <a name="create-and-manage-website-bindings"></a>创建和管理网站绑定
 

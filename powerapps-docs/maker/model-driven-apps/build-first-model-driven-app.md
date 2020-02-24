@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2a1e27dea75ba2e15ee7b96be2b7597430f89cba
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 04c083624b8f9d971698c97d133cdd209a8a6e5c
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885033"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004918"
 ---
 # <a name="build-your-first-model-driven-app-from-scratch"></a>从头构建您的第一个模型驱动应用程序
 模型驱动应用程序的设计是以组件为中心的应用程序开发方法。 在本主题中，您使用 Power Apps 环境中提供的一种标准实体简化模型驱动应用的创建方法。

@@ -1,20 +1,20 @@
 ---
 title: 配置门户的 WS 联合身份验证提供程序 | MicrosoftDocs
 description: 有关如何添加和配置门户的 WS-Federation 提供程序设置的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 2a668f501a54472da0335344997c049794794783
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f210a5c806ce3ac894e647fc882a4e3d8f4c0167
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759588"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977653"
 ---
 # <a name="configure-ws-federation-provider-settings-for-portals"></a>配置门户的 WS 联合身份验证提供程序设置
 
@@ -107,7 +107,7 @@ Get-ADFSEndpoint -AddressPath /FederationMetadata/2007-06/FederationMetadata.xml
 |  Authentication/WsFederation/ADFS/ValidateIssuerSigningKey  |                                                                                                                                                         控制签署 securityToken xmlns=<https://ddue.schemas.microsoft.com/authoring/2003/5> 的 System.IdentityModel.Tokens.SecurityKey 的验证是否调用的布尔值。                                                                                                                                                          |
 |            Authentication/WsFederation/ADFS/Whr             |                                                                                                                                       在身份提供程序重定向 URL 中指定“whr”参数。 有关详细信息：[wsFederation](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation)。                                                                                                                                       |
 
-## <a name="ws-federation-settings-for-includepn-azure-active-directoryincludespn-azure-active-directorymd"></a>[!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)] 的 WS 联合身份验证设置
+## <a name="ws-federation-settings-for-pn-azure-active-directory"></a>[!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)] 的 WS 联合身份验证设置
 
 介绍 AD FS 的上一章节也可以适用于 [!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)] ([[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] AD](https://msdn.microsoft.com/library/azure/mt168838.aspx))，因为 [!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] AD 行为与遵守标准 [WS 联合身份验证](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide) 的安全令牌服务相似。 开始登录到 [[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] 管理门户](https://msdn.microsoft.com/library/azure/hh967611.aspx#bkmk_azureportal)并创建或选择现有目录。 提供目录时，按照说明[将应用程序添加](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)到目录。
 

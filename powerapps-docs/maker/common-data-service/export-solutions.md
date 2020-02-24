@@ -2,7 +2,7 @@
 title: 导出解决方案 | MicrosoftDocs
 description: 了解如何在 Power Apps 中导出解决方案
 ms.custom: ''
-ms.date: 09/30/2019
+ms.date: 01/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3ab3bc284b6bc9e6749d8aabae5e0fbd7a1edbec
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 496cc3bcf55dfdff26a51f221df7b22d5ac7479f
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914305"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017654"
 ---
 # <a name="export-solutions"></a>导出解决方案  
  建议您创建用于导出自定义项的非托管解决方案。 然后，定期导出您的自定义项，以便拥有备份以备不时之需。 您无法导出托管解决方案。 可以从 Power Apps 导出解决方案，也可以使用经典体验导出。 
@@ -34,18 +34,26 @@ ms.locfileid: "2914305"
 > [!IMPORTANT]
 > 不支持导出默认解决方案。 
 
-### <a name="export-from-power-apps"></a>从 Power Apps 导出
+## <a name="export-from-power-apps"></a>从 Power Apps 导出
   
-1.  在左侧导航中选择**解决方案**。   
+1.  登录 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后从左侧导航中选择**解决方案**。   
   
-2.  在列表中选择要导出的解决方案，然后选择**导出**。 
+2.  在解决方案列表中，选择要导出的非托管解决方案，然后选择**导出**。 请注意，不能导出托管解决方案。 
 
-3.  选择数据包类型**非托管**或**托管**。 这将开始导出，并且可能需要几分钟才会完成。 完成后，Web 浏览器指定的下载文件夹中将包含导出 .zip 文件。
+3. 将显示**导出前**右窗格。 在以下选项中进行选择，然后选择**下一步**：  
+    - **发布所有更改**。 解决方案组件只有在导出后才能发布。 
+    - **检查问题**。 针对解决方案运行解决方案检查器以检测性能和稳定性问题。
 
-    > [!div class="mx-imgBorder"]  
-    > ![导出解决方案](media/solution-export.png "导出解决方案") 
+4.  将显示**导出此解决方案**右窗格。 输入以下选项或在以下选项中进行选择，然后选择**导出**：  
+    - **版本号**：Power Apps 在显示当前版本时自动递增解决方案版本。 您可以接受默认版本，也可以输入您自己的版本。 
+    - **导出为**：选择包类型，即**托管**或**非托管**。 
 
-### <a name="export-from-the-classic-experience"></a>从经典体验导出
+   <!-- UI has changed  [!div class="mx-imgBorder"]  
+    > ![Export solution](media/solution-export.png "Export solution")  -->
+
+导出可能需要几分钟的时间才能完成。 完成后，Web 浏览器指定的下载文件夹中将包含导出 .zip 文件。
+
+## <a name="export-from-the-classic-experience"></a>从经典体验导出
 
 1.  在左侧导航中选择**解决方案**，然后选择**切换到经典**。 
   
@@ -69,7 +77,7 @@ ms.locfileid: "2914305"
 
 <a name="BKMK_SettingsOptionsOnSolutionExport"></a>  
  
-## <a name="settings-options-for-solution-export"></a>解决方案导出的设置选项  
+### <a name="settings-options-for-solution-export"></a>解决方案导出的设置选项  
  如果从 Power Apps 导出解决方案，则无需阅读本节。 下表显示了从经典体验导出解决方案时可用的选项：  
   
 |组|设置|说明|  
@@ -120,7 +128,7 @@ ms.locfileid: "2914305"
 |自动标记时间间隔|在 Outlook 中用于电子邮件自动标记的普通轮询频率。|  
 |ISV 配置|服务日历外观配置|可以定义服务日历的视觉样式。
 
-详细信息：[服务日历外观配置](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration)|
+详细信息：[服务日历外观配置](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration)
 
 ### <a name="see-also"></a>另请参阅
 [导入解决方案](import-update-export-solutions.md) <br />

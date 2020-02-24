@@ -1,20 +1,20 @@
 ---
 title: 在门户上使用轮询收集反馈 | MicrosoftDocs
 description: 有关如何在门户中创建轮询并用于收集反馈的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/22/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 3278c20c83dfcb0a5088183bf279a6e07118f855
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 561c67076e981c236f491638cdb6814ec56edcd7
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875717"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979947"
 ---
 # <a name="gather-feedback-by-using-polls-on-a-portal"></a>在门户上使用轮询收集反馈
 

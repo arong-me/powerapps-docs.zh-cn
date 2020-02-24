@@ -1,20 +1,20 @@
 ---
 title: 在 Power Apps 门户中实施一般数据保护条例 | MicrosoftDocs
 description: 了解如何在 Power Apps 门户中实施常规数据保护法规。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/18/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 6ab1f29eac3835ed1699c2656c39034480bd495d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 80a60ae7b1dd8810ee3509dfe9fcd108dffceb5d
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866871"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980029"
 ---
 # <a name="implementing-general-data-protection-regulations-in-your-power-apps-portals"></a>在 Power Apps 门户中实施一般数据保护条例
 

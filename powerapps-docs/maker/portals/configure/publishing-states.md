@@ -1,20 +1,20 @@
 ---
 title: 在 Power Apps 门户中创建和管理发布状态 | MicrosoftDocs
 description: 了解如何在门户中创建和管理发布状态。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/22/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 5ba33887a0b99cc3ddf1eb118ca506a9b740d015
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 6daf92aa4d821b66b8388826d69dcb8bbd99ddb4
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883887"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980513"
 ---
 # <a name="create-and-manage-publishing-states"></a>创建和管理发布状态
 

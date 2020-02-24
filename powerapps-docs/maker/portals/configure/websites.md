@@ -1,20 +1,20 @@
 ---
 title: 管理门户中的网站 | MicrosoftDocs
 description: 了解如何管理门户中的网站。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/14/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 8f085f6958be120d689d04cad904804b8f891530
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.openlocfilehash: ae3d928a6beb05819c7c752503993a7b789a0fd7
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2817643"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2976861"
 ---
 # <a name="manage-websites"></a>管理网站
 

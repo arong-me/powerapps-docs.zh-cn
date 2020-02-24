@@ -1,20 +1,20 @@
 ---
 title: 配置门户的 OpenID Connect 提供程序设置 | MicrosoftDocs
 description: 有关如何添加和配置门户的 OpenID Connect 提供程序设置的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 2b4d31165ccd12b2cb5c8c2a4c8ec6f9dd04a7c7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: b36150e7193975305fb8a478852070628268d4ee
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755343"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979193"
 ---
 # <a name="configure-open-id-connect-provider-settings-for-portals"></a>配置门户的 Open ID Connect 提供程序设置
 
@@ -30,7 +30,7 @@ ms.locfileid: "2755343"
 > [!Note]
 > Google OpenID Connect 终结点目前不支持，因为基础库仍然处于版本的早期阶段，存在要解决的兼容性问题。 可以改用[门户的 OAuth2 提供程序设置](configure-oauth2-settings.md)终结点。
 
-## <a name="openid-settings-for-includepn-azure-active-directoryincludespn-azure-active-directorymd"></a>[!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)] 的 OpenID 设置
+## <a name="openid-settings-for-pn-azure-active-directory"></a>[!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)] 的 OpenID 设置
 
 开始登录到 [[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] 管理门户](https://msdn.microsoft.com/library/azure/hh967611.aspx#bkmk_azureportal)并创建或选择现有目录。 提供目录时，按照说明[将应用程序添加](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)到目录。  
 

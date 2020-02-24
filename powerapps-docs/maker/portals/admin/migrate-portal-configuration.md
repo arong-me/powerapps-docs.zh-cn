@@ -1,20 +1,20 @@
 ---
 title: 迁移门户配置 | MicrosoftDocs
 description: 了解如何迁移门户配置。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/20/2019
-ms.author: shjais
+ms.date: 01/08/2020
+ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 2a3f9e6eba00446ce953975c99721d99bbe78338
-ms.sourcegitcommit: 8ba5f6b88dbd71eb3663dfeec5f0b4427c1543c0
+ms.openlocfilehash: cb0e92db15cf3f33ca89975ec3bd8750ca8ee6e2
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "2924275"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978489"
 ---
 # <a name="migrate-portal-configuration"></a>迁移门户配置
 
@@ -86,9 +86,6 @@ ms.locfileid: "2924275"
 
     > [!div class=mx-imgBorder]
     > ![配置数据导出进度](../media/export-config-status.png "配置数据导出进度")
-
-    > [!IMPORTANT]
-    > 配置迁移工具不支持在实体中筛选记录。 默认情况下，将导出所选实体中的所有记录。 因此，如果您创建了多个网站记录，所有网站记录都将导出。
 
 9.  选择**退出**关闭工具。
 

@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 75175b34b158be75165c6bcdae5826060fb47f38
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 4c0b7f3e477990accf3b92e9e3964fc2751deb19
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884329"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005159"
 ---
 # <a name="quick-start-for-using-an-existing-environment-to-validate-your-legacy-web-client-app-with-the-unified-interface"></a>使用现有环境和统一接口验证旧 Web 客户端应用入门指南
 本快速入门指南介绍如何使用现有环境创建基于当前配置或默认解决方案的统一接口应用程序。 这样就可以在运行现有旧 Web 客户端应用程序的同时，探索和测试统一接口。 然后，用户可以在环境之间切换，以便进行并排查看。 

@@ -1,20 +1,20 @@
 ---
 title: 管理 Web 链接 | MicrosoftDocs
 description: 关于管理 Web 链接的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: d8e2421545247f72b5b164e08b4ac210466048c1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: a466c47b9349e7fb2692ff509ecb61f54779e1be
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866827"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979946"
 ---
 # <a name="manage-web-links"></a>管理 Web 链接
 

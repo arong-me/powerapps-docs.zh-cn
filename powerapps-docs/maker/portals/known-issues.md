@@ -1,25 +1,27 @@
 ---
 title: Power Apps 门户中的已知问题 | Microsoft Docs
 description: 了解 Power Apps 门户中的已知问题
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: shjais
+ms.date: 01/17/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 584dc1518179c17e929c46b3659fad37085f1c31
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4c7f5aaa46acd255f15e0a040f44710a608d34a2
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866542"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977345"
 ---
 # <a name="known-issues"></a>已知问题
 
 
 ## <a name="general-issues"></a>常见问题
+
+- 更新后的 Yahoo YDN OAuth 提供商终结点与 Power Apps 门户之间的现有兼容性问题导致用户暂时不可以通过 [Yahoo 身份提供程序](./configure/configure-oauth2-settings.md#yahoo-ydn-app-settings)的身份验证。
 
 - 应用程序的**修改日期**可能不正确，因为这些应用程序是提前设置的应用程序，可能之前已经过设置。
 

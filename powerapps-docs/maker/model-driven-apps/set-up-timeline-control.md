@@ -1,7 +1,7 @@
 ---
 title: 设置 PowerApps 中的时间线控件（部分）| MicrosoftDocs
 description: 了解如何设置 PowerApps 中的时间线控件（部分）
-ms.date: 12/23/2019
+ms.date: 02/03/2020
 ms.service: powerapps
 author: kabala123
 ms.assetid: 7F495EE1-1208-49DA-9B02-17855CEB2FDF
@@ -12,19 +12,28 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 10c526c8e8df192b6f5b4e7fb31224e0742bf90a
-ms.sourcegitcommit: 8ba5f6b88dbd71eb3663dfeec5f0b4427c1543c0
+ms.openlocfilehash: 8afb5427a74b879b0e407b1038705a0bbc15920b
+ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "2924436"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3013090"
 ---
 # <a name="set-up-timeline-section-control"></a>设置时间线部分（控件）
 
 可根据企业或组织需求自定义“时间线”中用于跟踪与客户或联系人之间所有通信的活动。
 
   > [!div class="mx-imgBorder"]
-  > ![PowerApps 中的活动的时间线视图](../../user/media/TimelineViewOfActivity.png "PowerApps 中的活动的时间线视图")  
+  > ![PowerApps 中的活动的时间线视图](../../user/media/TimelineViewOfActivity.png "PowerApps 中的活动的时间线视图")
+
+  1. 搜索记录
+  2. 记笔记
+  3. 添加信息和活动
+  4. Filter
+  5. 更多命令
+  6. 活动状态
+  7. 活动图标
+  8. 日期和时间
 
 若要了解详细信息，请参阅[向时间线添加约会、电子邮件、电话联络、注释或任务活动](../../user/add-activities.md)。
 
@@ -68,7 +77,7 @@ ms.locfileid: "2924436"
 
 8.  为**筛选条件**容器中的**显示这些模块**字段选择**显示选定项**选项。
 
-9.  选择要对用户显示的模块。
+9.  选择要对用户显示的模块。 仅选择您的组织需要的模块。
 
 10. 在**其他选项**容器中指定以下项。
 
@@ -78,7 +87,7 @@ ms.locfileid: "2924436"
     | 创建体验的默认模块 | 选择时间线中的默认创建体验所属模块。 <br><br> 默认值为**注释**。  | 注意 |
     | 显示筛选器窗格 | 如果要对用户显示筛选器图标，请选中此复选框。 如果将此复选框保留为空，则不会向用户提供筛选器。 |  |
     | 默认情况下展开筛选器窗格 | 默认情况下，如果希望在展开模式下显示筛选器窗格，请选中此复选框。 |
-    | Sort | 根据时间线中显示的记录选择排序顺序。 排序基于为活动选择的字段。 如果“公告”、“注释”或“活动”无字段，则基于**上次更新时间**字段进行排序。 <br><br>默认排序顺序为**降序**。  | 降序 |
+    | Sort | 根据时间线中显示的记录选择排序顺序。 排序基于为活动选择的字段。 如果“公告”、“注释”或“活动”无字段，则基于**上次更新时间**字段进行排序。 <br><br> 默认排序顺序为**降序**。  <br><br> **注意：** 更改排序顺序不会更改时间线控件中显示的时间属性。 若要自定义时间线卡窗体，请参阅[自定义卡窗体](#customize-the-card-form)。  | 降序 |
     | 结果数量 | 选择**更多**选项前时间线中显示的最大记录数量。 只要选择**更多**选项，时间线都会显示所配置记录的数量。 可配置的值范围为 1 到 50。 <br><br> 默认值为 **10**。 | 10 |
 
     > [!div class=mx-imgBorder] 
@@ -90,7 +99,7 @@ ms.locfileid: "2924436"
 
 ## <a name="customize-activity"></a>自定义活动
 
-作为定制员，您可以按照企业需求选择希望哪些实体向用户显示活动。
+作为定制员，您可以选择希望哪些实体按照业务要求对用户显示活动。 要获得更好的性能，请仅选择特定于业务的活动，不选择不使用的活动。
 
 1.  登录到您的 `https://<YourOrgURL>.dynamics.com/apps` 环境。
 
@@ -158,6 +167,8 @@ ms.locfileid: "2924436"
    1. 来自 \<负责人\> 的电子邮件
    2. 主题
    3. 说明
+   4. 活动状态
+   5. 日期和时间
 
 修改**电子邮件卡**窗体（从**电子邮件**窗体）并更新**客户**实体中**交互式体验的客户**窗体中的选项之后，可以看到以下变化。
 
@@ -176,6 +187,7 @@ ms.locfileid: "2924436"
    1. 负责人\<姓名\>
    2. 优先级
    3. 说明
+   4. 活动状态
 
 下面是活动的默认字符串：
 
@@ -191,14 +203,20 @@ ms.locfileid: "2924436"
 
 ## <a name="customize-field-sections"></a>自定义字段部分
 
-在时间线部分中，用户可以看到每个活动一个卡（基于启用的活动）。 每个卡在折叠模式和展开模式下显示特定字段。 例如，在折叠模式和展开模式下看到**电子邮件**活动卡。 
+在时间线部分中，用户可以看到每个活动一个卡（基于启用的活动）。 每个卡在折叠模式和展开模式下显示特定字段。 例如，在折叠模式、悬停模式和展开模式下查看**电子邮件**活动卡。 
 
-电子邮件卡折叠模式：
+**电子邮件卡折叠模式**：默认情况下，活动卡处于折叠模式。
+
 
    > [!div class=mx-imgBorder] 
    > ![折叠模式下的时间线卡](media/email.png "折叠模式下的时间线卡")
 
-时间线卡展开模式：
+**电子邮件卡悬停模式**：悬停光标时，可以看到特定于每种活动卡类型的一些命令。
+
+   > [!div class=mx-imgBorder] 
+   > ![折叠模式下的时间线卡](media/email-hover.png "折叠模式下的时间线卡")
+
+**时间线卡展开模式**：在卡上进行选择时，其展开，并显示特定于每个活动卡类型的少量命令。
 
    > [!div class=mx-imgBorder] 
    > ![展开模式下的时间线卡](media/email-expanded.png "展开模式下的时间线卡")
@@ -230,9 +248,16 @@ ms.locfileid: "2924436"
    > [!div class=mx-imgBorder] 
    > ![折叠模式下的电子邮件卡](media/email-card-collapsed.png "折叠模式下的电子邮件卡")
 
+**电子邮件卡悬停模式**
+
+悬停模式下显示 **页眉**部分中的字段 **1** 和 **2**  ，和 **详细信息** 部分中的字段 **3** 和 **4** 。
+
+   > [!div class=mx-imgBorder] 
+   > ![折叠模式下的电子邮件卡](media/email-card-hover.png "折叠模式下的电子邮件卡")
+
 **电子邮件卡展开模式**
 
-**详细信息**部分中的字段 **5** 在折叠模式下显示。
+展开模式下显示**详细信息**部分中的字段**5**。
 
    > [!div class=mx-imgBorder] 
    > ![展开模式下的电子邮件卡](media/email-card-expanded.png "展开模式下的电子邮件卡")
@@ -247,9 +272,9 @@ ms.locfileid: "2924436"
 
 4.  展开默认解决方案窗格中**组件**下的**实体**。
 
-5.  选择实体，然后选择**窗体**。 例如，选择**任务**实体。
+5.  选择实体，然后选择**窗体**。 例如，选择**电子邮件**实体。
 
-6.  从列表中选择**任务卡窗体**记录。 将在新浏览器窗口中打开**任务卡窗体**。
+6.  从列表中选择**电子邮件卡窗体**记录。 将在新的浏览器窗口中打开**电子邮件卡窗体**。
 
 7.  添加、移动或删除字段。 若要了解详细信息，请参阅[在窗体中添加、配置、移动或删除字段](add-move-or-delete-fields-on-form.md)。
 
@@ -383,7 +408,7 @@ ms.locfileid: "2924436"
 
 1.  登录到您的 `https://<YourOrgURL>.dynamics.com/apps` 环境。
 
-2.  打开模型驱动应用，然后在命令栏上，选择**设置** ![设置](../model-driven-apps/media/powerapps-gear.png) > **高级设置**。
+2. 打开模型驱动应用，然后在命令栏上，选择**设置** ![设置](../model-driven-apps/media/powerapps-gear.png) > **高级设置**。
 
 3.  转到**设置** > **自定义** > **自定义系统**。 将在新浏览器窗口中打开解决方案资源管理器页面。  
 
@@ -407,6 +432,25 @@ ms.locfileid: "2924436"
 
    > [!div class=mx-imgBorder] 
    > ![选择要显示的时间线模块](media/timeline-activity.png "选择要显示的时间线模块")
+
+## <a name="enable-or-disable-rich-text-editor-for-notes-in-timeline"></a>为时间线中的注释启用或禁用富文本编辑器
+
+用户可使用富文本编辑器有重点的为注释创建丰富的格式正确的内容。 此编辑器引入了常用的文字处理器功能。 若要了解详细信息，请参阅[记笔记](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#take-a-note)。
+
+默认已启用此功能。 如果以后要对用户禁用和启用，请执行以下步骤：
+
+1.  登录到您的 `https://<YourOrgURL>.dynamics.com/apps` 环境。
+
+2. 打开一个模型驱动应用，然后在命令栏上选择**设置** ![设置](../model-driven-apps/media/powerapps-gear.png) > **管理** > **系统设置**。
+
+3. 在**系统设置**对话框中的**常规**选项卡下，向下滚动并选中或取消选中**使用富文本更轻松地设置时间线中创建的注释的格式**字段。 的复选框。
+
+4. 选择**确定**。
+
+    > [!div class=mx-imgBorder] 
+    > ![启用富文本编辑器](media/timeline-note-enable-rich-text-editor.png "启用富文本编辑器")
+
+将根据复选框的选择情况对用户启用或禁用富文本编辑器。 
 
 ## <a name="see-also"></a>另请参阅
 

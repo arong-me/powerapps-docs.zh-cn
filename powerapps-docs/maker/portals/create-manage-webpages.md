@@ -1,20 +1,20 @@
 ---
 title: 创建和管理网页 | Microsoft Docs
 description: 有关如何在门户中创建和管理网页的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 077c1fee0c0a7b599516c0553ad190b6a3229dec
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 542622e814c2d650cbf3d6a4d3354bb363174e12
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2864642"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980689"
 ---
 # <a name="create-and-manage-webpages"></a>创建和管理网页
 

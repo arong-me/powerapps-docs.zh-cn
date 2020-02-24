@@ -2,7 +2,7 @@
 title: 导入解决方案 | MicrosoftDocs
 description: 了解如何在 Power Apps 中导入解决方案
 ms.custom: ''
-ms.date: 09/30/2019
+ms.date: 01/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,29 +22,29 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0eb65eb9ac1240769ba0cc885cb9c2e30a8f83f9
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 504e66801c122810da12810d9b19e5069136f7d6
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909448"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017609"
 ---
 # <a name="import-solutions"></a>导入解决方案 
 
  可以使用以下步骤手动导入解决方案。 只能导入从受信任源获取的解决方案。 自定义项可能包含可向外部源发送数据的代码。   
   
-1.  在左侧导航中选择**解决方案**。  
+1.  登录 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后从左侧导航中选择**解决方案**。  
   
-2.  在解决方案列表菜单，选择**导入**。  
+2.  在命令栏上选择**导入**。  
 
     > [!div class="mx-imgBorder"]  
     > ![导入解决方案](media/solution-import.png "导入解决方案") 
   
-3.  在**导入解决方案**对话框的**选择解决方案包**步骤中，选择**选择文件**并浏览找到包含要导入的解决方案的压缩（.zip 或 .cab）文件。 
+3.  在**选择解决方案包**页中，选择**浏览**找到包含要导入的解决方案的压缩（.zip 或 .cab）文件。 
   
 4.  选择**下一步**。  
   
-5.  查看有关解决方案的信息。 选择**导入**。  
+5.  将显示有关解决方案的信息。 选择**导入**。  
   
 6. 在完成导入期间，可能需要等待一会儿。 查看结果，然后选择**关闭**。  
   

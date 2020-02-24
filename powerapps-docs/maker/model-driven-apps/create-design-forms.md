@@ -1,7 +1,7 @@
 ---
 title: 创建和设计模型驱动应用程序窗体 | MicrosoftDocs
 ms.custom: ''
-ms.date: 12/06/2018
+ms.date: 01/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d052e981d80578a2db844f3e8ff3f70ff0c07c2c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 2e64771257519bded104aa49bde84ac993e1b361
+ms.sourcegitcommit: 60a721432b3fa2abd14ccb3bd16a6b34e13ada85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884901"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026413"
 ---
 # <a name="create-and-design-model-driven-app-forms"></a>创建和设计模型驱动应用程序窗体 
 
@@ -42,6 +42,8 @@ ms.locfileid: "2884901"
 ## <a name="type-of-forms"></a>窗体类型
 有不同类型的窗体，每个类型具有特定功能或用途。 详细信息：[Power Apps 中的窗体类型](types-forms.md)。  
 
+## <a name="main-form-dialogs-preview"></a>主窗体对话框（预览）
+借助客户端 API，可使用主窗体对话框，以便用户在父窗体或基本窗体中打开相关记录实体，无需离开窗体。 详细信息：[使用客户端 API 在对话框中打开主窗体](../../developer/model-driven-apps/customize-entity-forms.md#open-main-form-in-a-dialog-using-client-api) 
   
 <a name="BKMK_FormDifferencesByEntity"></a>   
 ## <a name="updated-versus-classic-entities"></a>更新后的实体与经典实体  
@@ -57,6 +59,7 @@ Power Apps 提供了许多窗体设计选项。 借助统一接口，更新了�
 |价目表|队列项|报价单产品|汇总字段|汇总查询|  
 |已保存视图|服务|服务活动|SharePoint 站点|场所|  
 |区域|单位|计价单位组|||  
+
   
 ## <a name="form-display-faq"></a>窗体显示常见问题
 

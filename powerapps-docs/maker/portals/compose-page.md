@@ -1,20 +1,20 @@
 ---
 title: 撰写网页 | Microsoft Docs
 description: 在门户中撰写网页的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: a6affbb0d13af137ddd044a7ae4b6d2cddbf813c
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.date: 01/10/2020
+ms.author: tapanm
+ms.reviewer: tapanm
+ms.openlocfilehash: ec982dded0d67719effc0c2b0b4faecc19e656b8
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862432"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979765"
 ---
 # <a name="compose-a-page"></a>撰写页面
 
@@ -197,13 +197,16 @@ ms.locfileid: "2862432"
 
     - **高度**：输入 IFrame 的高度。
 
-    - **链接**：输入要在 IFrame 中显示的网站的 URL。 仅接受安全链接—即 https:// 是强制的。 默认情况下，<https://www.bing.com> 可以用作值。
+        > [!NOTE]
+        > 您还可以选择区域内的 IFrame 并拖动手柄来调整其大小。
 
+    - **链接**：输入要在 IFrame 中显示的网站的 URL。 仅接受安全链接—即 https:// 是强制的。 默认情况下，<https://www.bing.com> 可以用作值。
+    
         > [!div class=mx-imgBorder]
         > ![iFrame 属性](media/iframe-props.png "iFrame 属性")  
 
-    > [!NOTE]
-    > 您还可以选择区域内的 IFrame 并拖动手柄来调整其大小。
+> [!NOTE]
+> 也可以按照[向网站添加机器人](https://docs.microsoft.com/power-virtual-agents/publication-connect-bot-to-web-channels#custom-website)中描述的步骤，以类似的方式向 IFrame 添加 [Power Virtual Agent](https://docs.microsoft.com/power-virtual-agents/fundamentals-what-is-power-virtual-agents) 机器人。
 
 ### <a name="add-form"></a>添加窗体
 

@@ -2,7 +2,7 @@
 title: 使用 Power Apps 定义汇总字段 | MicrosoftDocs
 description: 了解如何定义汇总字段
 ms.custom: ''
-ms.date: 05/23/2018
+ms.date: 01/23/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e0c254635d6d51ee037ef7865f4b67b72710f319
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ee3e6b75202e901e72af7bc353770add253f2038
+ms.sourcegitcommit: 2fd8b682e2d4c1e6a45c851b56f37f842ef18224
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2863980"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "2982445"
 ---
 # <a name="define-rollup-fields-that-aggregate-values"></a>定义用于聚合值的汇总字段
 
@@ -94,9 +94,10 @@ ms.locfileid: "2863980"
 **计算汇总字段**是一个定期作业，进行指定实体的现有记录中所有汇总字段的增量计算。 每个实体只有一个**计算汇总字段**。 增量计算意味着在上一次**批量计算汇总字段**作业完成执行后，**计算汇总字段**作业才处理创建、更新或删除计算汇总字段作业流程的记录。 默认最大定期设置为一小时。 在删除上一个汇总字段时，创建并删除实体上的第一个汇总字段，并自动创建该作业。  
 
 ## <a name="online-recalculation-option"></a>联机重新计算选项
-如果您悬停在表单中的汇总字段上，您可以看到上次汇总时间并且可以通过选择字段旁的刷新图标刷新汇总值，如下所示：  
+窗体中的汇总字段显示上次计算的计算器图像、汇总值和时间。 若要重新计算，请选择计算器图像，然后选择显示的**重新计算**按钮。 
 
-![客户窗体中的汇总字段](media/rollup-field-on-account-form.png)
+> [!div class="mx-imgBorder"] 
+> ![客户窗体中的汇总字段](media/rollup-field-on-account-form.png)
   
 
 使用联机重计算选项时要注意（在表单中手动刷新）：  

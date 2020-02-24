@@ -1,20 +1,20 @@
 ---
 title: 在门户中呈现与当前页关联的实体列表的示例代码 | MicrosoftDocs
 description: 用于在门户中呈现与当前页关联的实体列表的示例代码。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 73b8af19419bb59fe63e7ecea92188d6cff4c180
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 73149bc45d61f344b62f7a5e733848f11287c369
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866343"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980865"
 ---
 # <a name="render-the-entity-list-associated-with-the-current-page"></a>呈现与当前页关联的实体列表
 

@@ -1,26 +1,49 @@
 ---
 title: 常见问题 | Microsoft Docs
 description: Power Apps 门户中的常见问题。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/27/2019
-ms.author: shjais
-ms.reviewer: tapanm
-ms.openlocfilehash: 35f68ef861ac8908e1eb9227df6768b7a2c2c9f3
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.date: 01/17/2020
+ms.author: tapanm
+ms.reviewer: ''
+ms.openlocfilehash: bf76d2a8a3e91d9e20de9d70543af0bda4a57040
+ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934094"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2988067"
 ---
 # <a name="power-apps-portals-faq"></a>Power Apps 门户常见问题解答
 
 我们编译了一个常见问题列表并提供了简短的答案来帮助你快速获得所需信息。
 
 ## <a name="general"></a>常规
+
+### <a name="what-is-the-difference-between-power-apps-portals-dynamics-365-portals-and-add-on-portals"></a>Power Apps 门户、Dynamics 365 门户与附加产品门户之间有何区别？
+
+随着 2019 年 10 月 1 日启动 Power Apps 门户，Dynamics 365 门户称为 Power Apps 门户。 换句话说，所有门户都称为 **Power Apps 门户**。
+
+2019 年 10 月 1 日之后在门户中进行的一个重大变化是许可模型。 之前，门户是经过许可的 Dynamics 365 应用附加产品，而某些 Dynamics 365 许可证中则包含默认门户附加产品。 2019 年 10 月 1 日之后，门户[基于用途进行许可](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-power-apps-portals-licensing)。 所有现有门户都属于当前客户合同决定的过渡期的一部分，之后需要将其转换为新的许可模型。
+
+可以从 [Power Apps 门户管理中心](./admin/admin-overview.md)检查门户的类型：
+
+![Power Apps 门户类型](./media/power-apps-portals-type.png)
+
+对于附加产品门户，已经为门户类型添加了“附加产品”前缀。 例如，列出的生产加载项门户类型为“生产（附加产品）”。
+
+采用基于容量的许可证和采用基于附加产品的许可证的 Power Apps 门户之间不存在功能差异。 但是，采用基于容量的许可证和采用基于附加产品的许可证的门户的预配方法不同。
+
+可以按照下列文章中介绍的步骤创建采用基于容量的许可证的 Power Apps 门户。
+
+- [创建 Common Data Service 起点门户](create-portal.md)
+- [创建采用 Dynamics 365 环境的门户](create-dynamics-portal.md)
+
+若要创建采用基于附加产品的许可证的 Power Apps 门户，请参阅[使用门户附加产品预配门户](provision-portal-add-on.md)。
+
+有关基于附加产品的许可证和基于容量的许可证之间的许可差异，请参阅 [Power Apps 门户许可常见问题解答](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#what-is-the-difference-between-power-apps-portals-and-dynamics-365-portals-in-terms-of-licensing)。
 
 ### <a name="when-is-an-add-on-portal-in-suspended-state"></a>附加产品门户何时处于暂挂状态？
 
@@ -204,6 +227,15 @@ Set-TenantSettings -RequestBody @{ "disablePortalsCreationByNonAdminUsers" = $fa
 在启用诊断日志记录时，可通过使用常规错误页上显示的活动 ID 搜索用户报告的特定错误。 活动 ID 随错误详细信息一起记录，对于查找实际问题很有用。
 
 ## <a name="portal-administration-and-management"></a>门户管理
+
+### <a name="do-portals-use-any-static-content-from-cdns-content-delivery-network-that-i-need-to-whitelist"></a>门户是否是否来自 CDN（内容交付网络）且需要加入白名单的任何静态内容？
+
+可以。 Power Apps 门户使用来自 Azure CDN 且包含默认 JavaScript 和之前作为门户应用的一部分呈现的演示文稿的 CSS 文件的门户自带静态资产。 必须将以下 CDN URL 加入白名单，才能成功呈现门户。
+
+    https://content.powerapps.com/resource/powerappsportal
+
+> [!NOTE]
+> Microsoft 政府云中托管的 Power Apps 门户不使用 CDN。
 
 ### <a name="how-do-i-use-a-custom-login-provider-on-my-portal"></a>如何在我的门户中使用自定义登录提供程序？
 

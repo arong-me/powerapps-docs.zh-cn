@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2b5a84179a4d9c6598331a6e728326a2318f9a9a
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 8e7bb5e6ac623b1fc3cbf9a496746ebf2bbf71c7
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883604"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004823"
 ---
 # <a name="what-is-common-data-service"></a>什么是 Common Data Service？
 Common Data Service 让您可以安全地存储和管理业务应用程序使用的数据。 Common Data Service 内的数据存储在一组实体中。 *实体*是一组用于存储数据的记录，类似于表在数据库中存储数据。 Common Data Service 包括一组覆盖典型情形的标准实体，但是，您还可以创建针对您的组织的自定义实体，并使用 Power Query 用数据填充它们。 应用制造者随后可以利用 Power Apps 使用此数据生成丰富的应用程序。

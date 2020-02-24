@@ -1,26 +1,34 @@
 ---
 title: 在门户中使用 OAuth 2.0 隐式授权流 | MicrosoftDocs
 description: 了解如何使用门户中的 OAuth 隐式授权流向外部 API 发起客户端调用并保护它们。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: shjais
+ms.date: 01/24/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 9c4ea4e34dacf70a9bb51c28c5761700904a3053
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: a69d77122a6beb657a322da156e3cf895b5bec36
+ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862168"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2988022"
 ---
 # <a name="use-oauth-20-implicit-grant-flow-within-your-portal"></a>在门户中使用 OAuth 2.0 隐式授权流 
 
 此功能可以让客户使用 OAuth 隐式授权流向外部 API 发起客户端调用并保护它们。 它提供了获取安全访问令牌（将包含供按照 OAuth 2.0 隐式授权流的外部授权 API 使用的用户身份信息）的终结点。 已登录用户的身份信息是以受保护的方式传递到外部 AJAX 调用。 这不仅有助于开发人员传递身份验证上下文，还会帮助用户使用此机制保护他们的 API。
 
 OAuth 2.0 隐式授权流支持客户端可以调用来获取 ID 令牌的终结点。 有两个终结点用于此目的：[授权](#authorize-endpoint-details)和[令牌](#token-endpoint-details)。
+
+> [!NOTE]
+> Power Apps 门户支持以下 OpenIdConnect 流和响应类型：
+>
+> - 响应类型为 *id_token* 或 *id_token token* 的**隐式流**。
+> - 响应类型为 *code id_token* 的**混合流**。
+>
+> **不支持**响应类型为Authorization Code Flow *code* 的**授权代码流**。 有关详细信息，请参阅针对身份验证的 [OpenID Connect](https://openid.net/specs/openid-connect-core-1_0.html#Authentication) 文档。
 
 ## <a name="authorize-endpoint-details"></a>授权终结点详细信息 
 

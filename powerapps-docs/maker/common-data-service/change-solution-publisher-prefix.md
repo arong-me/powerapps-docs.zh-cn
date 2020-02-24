@@ -1,7 +1,7 @@
 ---
-title: 更改解决方案发布商前缀 | MicrosoftDocs
+title: 解决方案发布商概述 | MicrosoftDocs
 ms.custom: ''
-ms.date: 05/11/2018
+ms.date: 02/03/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -20,46 +20,50 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f78aefd09433c956d278db7d1c7ae209b5239450
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b54afabbed9e7dfcc53fe887f600593e77a02a7f
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861679"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017558"
 ---
-# <a name="change-the-solution-publisher-prefix"></a>更改解决方案发布商前缀
+# <a name="solution-publisher-overview"></a>解决方案发布商概述
 
-您所做的每个自定义项都是解决方案的一部分。 每个解决方案都有有一个发布商。 默认情况下，您在 Power Apps 内使用的解决方案将是与 **Common Data Service 默认发布商**关联的 **Common Data Service 默认解决方案**。
+您创建的每个应用或所做的每个自定义项都是解决方案的一部分。 每个解决方案都有有一个发布商。 发布商是您在创建解决方案时创建的。 
 
-将为发布商随机分配默认自定义项前缀，例如，可能是 `cr8a3`。 这意味着为您的组织创建的元数据的每个新项目的名称都会将此前缀附加到用于唯一标识项目的名称前面。 如果您创建名为 **Animal** 的新实体，Common Data Service 使用的唯一名称将是 `cr8a3_animal`。 所有新字段（属性）、关系或选项集选项同样如此。
+> [!div class="mx-imgBorder"] 
+> <img src="media/solution-publisher-select.png" alt="Select solution publisher" height="731" width="416">
 
-除非您分发解决方案以便它可以与为其他解决方案发布商创建的元数据项目一同安装，自定义项前缀是什么确实不重要。 使用您的应用程序的多数用户都不会看到它。 但会向开发人员以及执行生成报表等任务的其他技术人员公开。 它提供了一种了解哪些解决方案添加到项目的快速方法。
+解决方案发布商指定应用程序是谁开发的。 可通过前缀快速了解项目是哪些解决方案添加的。 因此，您应该创建解决方案发布商并指定有意义的前缀。 在查看导入的解决方案中的元数据项时，这尤其重要。 例如，其中包含 fundraiser 示例应用的解决方案将 *sample* 用作发布商前缀。 
 
-为此，很多用户喜欢更改解决方案发布商前缀以使它更有意义，特别是在查看元数据项目（包括从其他解决方案导入的项目）时。 
+> [!div class="mx-imgBorder"] 
+> ![Fundraiser 解决方案发布商前缀](media/fundraiser-sample-app-prefix.png)
 
 > [!NOTE]
-> 如果更改解决方案发布商前缀，您应在创建新元数据项目前更改。 您不能更改元数据项目的名称。
-> 在更改自定义项前缀值时，确保用 Tab 键跳转到下一个字段。 **选项值前缀** 将根据自定义前缀自动生成一个编号。 在将选项添加到选项集时将使用此编号，并提供一个指示符，指示使用了那个解决方案来添加选项。 
+> 若要更改解决方案发布商前缀，您应在创建任何新应用或元数据项目前更改。 您不能更改元数据项目的名称。 
 
-## <a name="change-the-solution-publisher-prefix-for-the-common-data-service-default-publisher"></a>更改 Common Data Service 默认发布商的解决方案发布商前缀  
+## <a name="common-data-services-default-solution"></a>Common Data Service 的默认解决方案
+Power Apps 中的默认解决方案是 Common Data Service 的默认解决方案，其与 Common Data Service 默认发布商关联。 将为发布商随机分配默认发布商前缀，例如，可能是 *cr8a3*。 这意味着默认解决方案中创建的元数据的每个新项目的名称都会将此前缀附加到用于唯一标识项目的名称前面。 如果您创建名为 *Animal* 的新实体，Common Data Service 使用的唯一名称将是 *cr8a3_animal*。 所有新字段（属性）、关系或选项集选项同样如此。 如果要自定义默认解决方案，请考虑更改发布商前缀。 
 
- 1. 在 Power Apps 门户中，选择左下角的**模型驱动**。
- 2. 单击左侧导航区域的**高级**打开 **Common Data Service 默认解决方案**
- 3. 在解决方案资源管理器中，选择左侧导航的**信息**区域。
- 4. 单击**发布商**链接打开 **Common Data Service 默认发布商**窗体。
- 5. 将**前缀**字段值编辑为所需的自定义项前缀。
- 6. 单击**保存并关闭**。
-  
-## <a name="change-the-solution-publisher-prefix-for-any-publisher"></a>更改任意发布商的解决方案发布商前缀
+## <a name="create-a-solution-publisher"></a>创建解决方案发布商
+1.  在 Power Apps 门户中，选择**设置**（齿轮），然后选择**高级设置**。 
+2.  选择**设置** > **自定义** > **发布商**。 
+3.  在 **发布商主视图**命令栏中，选择**新建**。 
+4.  输入所需信息： 
+   - **显示名称**。 输入发布商的显示名称。 
+   - **名称**. 输入发布商的唯一名称。 
+   - **前缀**。 输入所需发布商前缀。 
+   -    **选项值前缀**。 此字段基于发布商前缀生成一个编号。 在将选项添加到选项集时将使用此编号，并提供一个指示符，指示使用了那个解决方案来添加选项。 
+   - **联系人详细信息**。 （可选）可添加联系人和地址信息。
+5. 选择**保存并关闭**。
 
-分发其解决方案的用户通常在其创建的解决方案内工作，而不是 **Common Data Service 默认解决方案**。 通常在创建解决方案时设置自定义项前缀。 您可以通过执行以下步骤来更改您使用的其他非托管解决方案的自定义项前缀： 
+## <a name="change-a-solution-publisher"></a>更改解决方案发布商
+可通过以下步骤更改非托管解决方案的解决方案发布商。
+1.  在 Power Apps 门户中，选择**解决方案**，选择所需解决方案旁边的 **...**， 然后选择**设置**。 
+2.  在**解决方案设置**窗格中，选择**编辑发布商**。 
+3.  将**显示名称**和**前缀**字段编辑为所需值。 **选项值前缀**字段基于发布商前缀生成一个编号。 在将选项添加到选项集时将使用此编号，并提供一个指示符，指示使用了那个解决方案来添加选项。 
+4.  除了前缀，还可以在**联系人详细信息**部分中更改解决方案发布商显示名称、联系信息和地址。 
+5.  选择**保存并关闭**。
 
- 1. 在 Power Apps 门户中，选择左下角的**模型驱动**。
- 2. 单击左侧导航区域的**高级**打开 **Common Data Service 默认解决方案**
- 3. 编辑页面的 URL，将 `dynamics.com` 后面的部分全部删除并重新加载页面。
- 4. 导航到**设置** > **自定义** > **自定义**。 
- 5. 单击**发布商**。 现在您可以看到可用发布商的列表。
- 6. 单击您要编辑的发布商以打开发布商窗体。
- 7. 将**前缀**字段值编辑为所需的自定义项前缀。
- 6. 单击**保存并关闭**。
-  
+### <a name="see-also"></a>另请参阅
+[创建解决方案](create-solution.md)

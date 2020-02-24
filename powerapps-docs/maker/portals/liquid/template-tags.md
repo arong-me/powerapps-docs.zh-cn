@@ -1,24 +1,90 @@
 ---
 title: 为门户使用模板标记 | MicrosoftDocs
 description: 了解门户中的可用模板标记
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: shjais
+ms.date: 01/24/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 951b4055aa47a6fba31df5473bd517ed67c8f17d
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: a152fc23b71b2e564bad28a9f1717c15acfe9a60
+ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2873209"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2987975"
 ---
 # <a name="template-tags"></a>模板标记
 
 模板标记通过各种方式控制模板的输出，并允许将多个模板合并到单个输出。
+
+## <a name="fetchxml"></a>fetchxml
+
+让您可以从 CDS 查询数据，并通过页面显示结果。
+
+> [!NOTE]
+> 可以在[使用 FetchXML 查询数据](https://docs.microsoft.com/powerapps/developer/common-data-service/use-fetchxml-construct-query)中了解有关使用 fetchxml 查询数据的详细信息。
+
+```
+{% fetchxml resultVariable %}
+<!— Fetchxml query -->
+...
+{% endfetchxml %}
+```
+
+### <a name="results-attribute"></a>结果属性
+
+提供的变量（上面的示例中为“resultVariable”）中的结果属性中存储 FetchXML 查询结果和其他一些属性。
+
+- *实体*
+
+    此属性中包含 fetchxml 查询的结果。 可以循环访问结果，并将其用于 Web 模板中。
+
+    ```
+    <table> 
+    {% for entityVariable in resultVariable.results.entities %} 
+    <tr> 
+    <td>Attribut-1: {{ entityVariable.attribute1 }}</td> 
+    <td>Attribut-2: {{ entityVariable.attribute2 }}</td> 
+    </tr> 
+    {% endfor %} 
+    </table> 
+    ```
+
+- *EntityName*
+
+    获取实体的逻辑名称。
+
+- *延长日期*
+
+    获取包含额外数据的结构。
+
+- *MinActiveRowVersion*
+
+    获取最低活动行版本值。
+
+- *MoreRecords*
+
+    了解是否有更多可用记录。
+
+- *PagingCookie*
+
+    获取当前分页信息。
+
+- *TotalRecordCount*
+
+    获取集合中的记录总数。 <br/>
+    执行查询时，ReturnTotalRecordCount 为 true。
+
+- *TotalRecordCountLimitExceeded*
+
+    获取查询结果是否超过记录总计数。
+
+### <a name="xml-attribute"></a>XML 属性
+
+提供的变量（上面的示例中为“resultVariable”）中的 XML 属性中存储可用于从 Common Data Service 获取数据的结果查询。 当您希望了解如何对此 *fetchxml* 标记应用实体权限时，此属性对调试用途非常有用。  
 
 ## <a name="include"></a>包括
 
