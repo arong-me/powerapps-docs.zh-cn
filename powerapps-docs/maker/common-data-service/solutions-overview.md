@@ -2,7 +2,7 @@
 title: 在 Power Apps 中使用解决方案 | MicrosoftDocs
 description: 了解如何分发解决方案
 ms.custom: ''
-ms.date: 12/04/2019
+ms.date: 01/21/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 71ddf991d25f144ce24b078cf73ffc6b971de36f
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 309b6721d60d06e81926bfc0f97ff192f936686a
+ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909163"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2975793"
 ---
 # <a name="solutions-overview"></a>解决方案概述  
 
@@ -40,8 +40,8 @@ ms.locfileid: "2909163"
   
 
 <a name="BKMK_SolutionComponents"></a>   
-### <a name="components"></a>组件  
- 组件代表您有可能自定义的某些事项。 可以包括在解决方案中的任何项目是组件。 若要查看解决方案中包含的组件，请在解决方案资源管理器中转到**设置** > **解决方案**，然后打开所需解决方案。 这些组件包含在**组件**列表中。 
+## <a name="components"></a>组件  
+ 组件代表您有可能自定义的某些事项。 可以包括在解决方案中的任何项目是组件。 若要查看解决方案中包含的组件，请在解决方案资源管理器中转到**设置** > **解决方案**，然后打开所需解决方案。 这些组件包含在**组件**列表中。 请注意，不能编辑托管解决方案中包含的组件。 
 
 > [!div class="mx-imgBorder"] 
 > ![解决方案中的组件](media/components-in-solution.png "解决方案中的组件") 
@@ -121,7 +121,7 @@ ms.locfileid: "2909163"
  拥有组件的目的是跟踪对我们可以使用托管属性以及所有依赖项自定义的内容的所有限制，从而可以将其导出、导入和（在托管解决方案中）删除，而不会有任何遗漏。  
   
 <a name="BKMK_ManagedAndUnmanagedSolutions"></a>   
-### <a name="managed-and-unmanaged-solutions"></a>托管和非托管解决方案  
+## <a name="managed-and-unmanaged-solutions"></a>托管和非托管解决方案  
  存在**托管**和**非托管**解决方案。 在将**托管**解决方案导入后，无法进行修改，但可以将其卸载。 可以通过卸载解决方案来删除该解决方案的所有组件。  
   
  在导入**非托管**解决方案时，可以将该解决方案的所有组件添加到您的环境中。 无法通过卸载解决方案删除组件。  
@@ -156,17 +156,22 @@ ms.locfileid: "2909163"
  这是您可在环境中实际看到的内容。 默认系统解决方案以及托管解决方案，加上已经应用的任何非托管自定义项。  
   
 <a name="BKMK_ManagedProperties"></a>   
-### <a name="managed-properties"></a>托管属性  
+## <a name="managed-properties"></a>托管属性  
  有些组件不能自定义。 系统解决方案中的这些组件具有阻止您自定义它们的元数据。 这此元数据称为**托管属性**。 托管解决方案的发布商还可以设置托管属性，从而阻止您通过他们不希望您采用的方式来自定义其解决方案。  
   
 <a name="BKMK_Dependencies"></a>   
-### <a name="solution-dependencies"></a>解决方案依赖项  
+## <a name="solution-dependencies"></a>解决方案依赖项  
  由于托管解决方案分层方式的原因，有些托管解决方案可能会依赖其他托管解决方案中的解决方案组件。 有些解决方案发布商会利用这一点来构建模块化的解决方案。 您可能需要先安装“基本”托管解决方案，然后再安装一个托管解决方案以进一步自定义基本托管解决方案中的组件。 第二个托管解决方案依赖于第一解决方案中的解决方案组件。  
   
  系统会跟踪解决方案之间的这些依赖关系。 如果您尝试安装的解决方案需要未安装的某个基本解决方案，则将无法安装该解决方案。 您将收到一条消息，指示该解决方案需要先安装另一个解决方案。 同样，由于依赖关系，当仍然安装了依赖于基本解决方案的解决方案时，将无法卸载基本解决方案。 您必须先卸载依赖的解决方案，然后才能卸载基本解决方案。  
+ 
+## <a name="solution-publisher-prefix"></a>解决方案发布商前缀 
+
+默认情况下，您在 Power Apps 内使用的解决方案将是与 **Common Data Service 默认发布商**关联的 **Common Data Service 默认解决方案**。 将为发布商随机分配默认自定义项前缀，例如，可能是 `cr8a3`。 这意味着为您的组织创建的元数据的每个新项目的名称都会将此前缀附加到用于唯一标识项目的名称前面。 
+
+建议更改解决方案发布商前缀，使其更有意义。 详细信息：[更改解决方案发布商前缀](change-solution-publisher-prefix.md)
   
-  
-## <a name="next-steps"></a>后续步骤  
+### <a name="next-steps"></a>后续步骤  
 [导入、更新和导出解决方案](import-update-export-solutions.md) <br/>
 [导航到特定解决方案](navigate-specific-solution.md)
  

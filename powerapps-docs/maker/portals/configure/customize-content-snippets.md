@@ -1,20 +1,20 @@
 ---
 title: 使用门户上的内容片段自定义内容 | MicrosoftDocs
 description: 了解如何使用内容片段自定义内容。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 362bbe27850e8e72d7af4b2fb32b42796334d579
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ef85ea6f62f6b0f90a7463a11c4bf4566eee251a
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760152"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977149"
 ---
 # <a name="customize-content-by-using-content-snippets"></a>使用内容片段自定义内容
 

@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9c4473b0b1cdcb2549b84a100a19c1663f795b2d
-ms.sourcegitcommit: df15c909ba27c9ed83197305a4ee1f01e46a826b
+ms.openlocfilehash: c926e0fb48791879ea88c19212b30c79731cb3be
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "2936227"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004844"
 ---
 # <a name="use-solutions-in-power-apps"></a>在 Power Apps 中使用解决方案
 
@@ -95,7 +95,7 @@ ms.locfileid: "2936227"
 
 - 解决方案中现在不支持区域应用按钮触发的流。 在解决方案外部创建应用和流，然后导出 .msapp 文件以使用嵌入式按钮触发的流迁移区域应用。 
 - 如果画布应用在托管解决方案中打包，它将无法在目标环境中编辑和重新发布。 如果应用需要在目标环境中进行编辑，请使用非托管解决方案。 
-- 连接需要身份验证和同意，这需要交互式用户会话，因此无法通过解决方案进行传输。 导入解决方案后，请播放应用以验证连接。 您也可以在导入解决方案之前在目标环境中创建连接。 
+- 连接需要身份验证和同意，这需要交互式用户会话，因此无法通过解决方案进行传输。 导入解决方案后，请播放应用以验证连接。 也可以在导入解决方案之前，在目标环境中创建连接。 
 -   作为共同负责人共享到 Azure Active Directory (AAD) 安全组的画布应用不能添加到解决方案中。 取消共享应用，然后再将其添加到解决方案中。
 -   区域应用不显示在经典解决方案资源管理器中。 使用现代化体验。
 -   画布应用访问（CRUD 和安全性）在 Power Apps 中完全托管，而不是在 Common Data Service 数据库中。

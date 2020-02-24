@@ -1,20 +1,20 @@
 ---
 title: 添加网页以在门户中呈现记录列表 | MicrosoftDocs
 description: 有关如何添加和配置以在门户中呈现记录列表的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/18/2019
-ms.author: shjais
+ms.date: 02/05/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 4fa68ace39f9a1b2dbcb2d9111e71364fde49fbc
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 96c5ede672a57b6f01a87cf8aacf093db57ab234
+ms.sourcegitcommit: 2d21c2c65875f97dff6d5843611d4221a4282f22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874374"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027673"
 ---
 # <a name="about-entity-lists"></a>关于实体列表
 
@@ -284,6 +284,10 @@ $(document).ready(function (){
 此外，为列表定义的任何操作都将根据记录服从该操作的相应权限。 也就是说，如果您具有记录的编辑权限，将为该记录启用编辑操作。 这同样适用于删除、创建等。 请注意，如果没有可用记录，加载列表时，将显示一条消息来说明这种情况。
 
 但是，优秀的网站设计要求如果用户的角色没有实体的任何权限（即他们始终不应查看任何记录），则根本不应访问页面。 理想情况下，应使用网页访问权限保护页面。
+
+如果已经通过选中**启用实体权限**保护了实体列表，但是希望显示适用于已登录用户的记录级操作，则必须将 **EntityList/ShowRecordLevelActions** 站点设置的值设置为 **true**。 例如，有两位用户：Preston 和 Teddy。 Preston 拥有服务案例实体的所有联系人级访问权限，而 Teddy 则拥有全局读取访问权限。 如果创建实体列表以显示所有服务案例记录，Preston 将看到可对与其联系人有关的记录执行的所有操作（查看、编辑和删除）。 在其他记录中，只能看到**查看**操作。 另一方面，Teddy 只能看到所有记录的**查看**操作。
+
+如果 **EntityList/ShowRecordLevelActions** 站点设置设置为 **false**，并且实体具有多项权限，则将显示所有记录级操作。 但是，当用户尝试执行无权执行的操作时，将显示错误。
 
 ## <a name="adding-a-view-details-page"></a>添加视图详细信息页面
 

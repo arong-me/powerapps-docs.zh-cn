@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 637ee2f171eaae493a219e245c2bf1147cd13bd2
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 54a2aeed489cf3e3621bcf21f5f6e0f12b15deff
+ms.sourcegitcommit: 2d21c2c65875f97dff6d5843611d4221a4282f22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2867487"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027574"
 ---
 # <a name="show-or-hide-model-driven-app-form-elements"></a>显示或隐藏模型驱动应用程序窗体元素
 
@@ -36,7 +36,10 @@ ms.locfileid: "2867487"
 > [!NOTE]
 >  建议不要通过隐藏窗体来加强安全性。 隐藏元素时，用户可通过多种方式查看窗体中的所有元素和数据。 
   
- 与其设计依赖脚本来控制选项可见性的窗体，不如考虑业务流程、对话框或者切换到不同窗体是否可能更适合满足您的要求。 如果使用脚本，请确保可能隐藏的任一元素是否默认为隐藏状态。 仅在您的逻辑需要时才使用脚本显示隐藏元素。 这样，就不会在不支持脚本的显示方式中显示隐藏元素。  
+ 与其设计依赖脚本来控制选项可见性的窗体，不如考虑业务流程、对话框或者切换到不同窗体是否可能更适合满足您的要求。 如果使用脚本，请确保可能隐藏的任一元素是否默认为隐藏状态。 仅在您的逻辑需要时才使用脚本显示隐藏元素。 这样，就不会在不支持脚本的显示方式中显示隐藏元素。
+ 
+ > [!NOTE]
+> 在统一接口中，对于其中的字段未跨越多列的部分，隐藏该部分中的一个字段将把下面的字段在窗体中向上移动。 如果某个字段在一个部分中跨越两列以上，则隐藏该部分中具有控件的字段不会将下面的字段在窗体中向上移动。 您将在该部分中隐藏的字段所在位置看到更多空白。
 
 ## <a name="next-steps"></a>后续步骤
 

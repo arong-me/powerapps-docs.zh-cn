@@ -1,20 +1,20 @@
 ---
 title: 查看门户错误日志并将其存储到 Azure Blob 存储中 | MicrosoftDocs
 description: 了解如何查看门户错误日志并将其存储到 Azure Blob 存储帐户中。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: ced53e6b3eb30668d81aca0f385f4ebd841f02fa
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4b7fe184dce7475bf2b7fc373fc98d875fffb515
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862476"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979853"
 ---
 # <a name="view-portal-error-logs"></a>查看门户错误日志
 

@@ -1,20 +1,20 @@
 ---
 title: 使用快捷方式为门户放置子节点 | MicrosoftDocs
 description: 有关如何使用快捷方式为门户放置子节点的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 2a9bd271c8aaa2f1dbc0278078868606fb4c64de
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e438803fa817d1b02a303a6a6e4873f2ba1e295f
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2864950"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980557"
 ---
 # <a name="place-child-nodes-by-using-shortcuts-for-portals"></a>使用快捷方式为门户放置子节点
 可使用快捷方式在整个门户的站点地图中放置子节点，这些子节点指向站点地图中的其他现有节点或门户的外部 URL。 也就是说，网页、Web 文件、事件和论坛均可视为门户站点地图的“固定”节点；它们将添加到您的站点地图，而当您导航到这些节点时，将直接看到这些节点的实际内容。 另一方面，快捷方式可视为“无形”节点：它们也可添加到站点地图（不同于 Web 链接），但当您导航到这些节点时，将看见快捷方式指向的目标“固定”节点的内容，而内容将通过该节点的页面模板呈现。

@@ -1,20 +1,20 @@
 ---
 title: 配置门户身份验证 | MicrosoftDocs
 description: 了解如何为门户配置身份验证。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: b285ce6e3a93efb72ed867149ce0740f7ee96579
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: acae3e962ed23e9cdff9cf74c1b6c5b7706c23be
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755299"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979149"
 ---
 # <a name="configure-portal-authentication"></a>配置门户身份验证
 

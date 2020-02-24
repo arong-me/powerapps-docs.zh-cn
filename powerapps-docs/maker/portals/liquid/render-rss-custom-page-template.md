@@ -1,20 +1,20 @@
 ---
 title: 为门户使用自定义页面模板呈现 RSS 源 | MicrosoftDocs
 description: 有关如何创建自定义页面模板并用于呈现 RSS 源的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 998a233f5051c1445d56dbeeba1f2d7faff5811d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d2c4956bd6d5e1a15e6308b4e40442ef15502178
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862300"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980997"
 ---
 # <a name="create-a-custom-page-template-to-render-an-rss-feed"></a>创建用于呈现 RSS 源的自定义页面模板
 在此示例中，我们将创建一个自定义页面模板，用于呈现新闻文章的 [RSS 源](https://en.wikipedia.org/wiki/RSS)，使用 Liquid 和 Web 模板页模板。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [使用 Web 模板存储源内容](store-content-web-templates.md)  

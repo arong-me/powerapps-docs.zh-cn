@@ -1,20 +1,20 @@
 ---
 title: 更改门户的 Dynamics 365 实例、访问群体或类型 | MicrosoftDocs
 description: 了解如何更改门户的 Dynamics 365 实例、访问群体或类型。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/18/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 09bc9cec4a585232dac0063d797166de35215a4f
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.openlocfilehash: 35aaf6df8c7450901f8966bbd34e19e9b4b340c9
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2817995"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978225"
 ---
 # <a name="change-the-dynamics-365-instance-audience-or-type-of-portal"></a>更改门户的 Dynamics 365 实例、访问群体或类型
 

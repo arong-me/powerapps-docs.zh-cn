@@ -1,20 +1,20 @@
 ---
 title: 向门户网页添加图表 | MicrosoftDocs
 description: 用于将模型驱动应用中创建的图表添加到门户网页的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
-ms.author: shjais
+ms.date: 01/29/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 3cc2e390b988689e9a21317d80aa7d94d2ea9e6d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3d9a2ec3ef4e2589c51717629213dfe73d3418eb
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760131"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012563"
 ---
 # <a name="add-a-chart-created-in-a-model-driven-app-to-a-webpage-in-portal"></a>将模型驱动应用中创建的图表添加到门户网页
 
@@ -52,21 +52,20 @@ ms.locfileid: "2760131"
 
 必须打开视图编辑器才能获取用于 Liquid 图表标记的视图 ID。
  
-1.  转至目标实体，如**销售** > **潜在顾客**。
-2.  从视图下拉标题中选择所需视图。
-3.  从工具栏中选择**视图**。 此时将打开“视图”窗口。
+1. 转到 make.powerapps.com，然后选择相应环境。
+1. 在左侧导航栏中，选择“数据 > 实体”。
+1. 选择相应的实体，然后转到“视图”选项卡。
+1. 您可以查看视图列表。 转到选项 (...)，然后选择“编辑视图”。
+1. 从“视图”窗口的地址栏复制 id 值。
 
-    ![在视图编辑器中查看潜在顾客](../media/dynamics365-chart-view.png "在视图编辑器中查看潜在顾客")
+    ![查看窗体的 ID](../media/dynamics365-chart-viewid.png)
 
-4. 从“视图”窗口的 URL 复制 **id** 值。
+1. 将此 ID粘贴到 viewid 参数的 Liquid 图表标记声明中，如：
 
-    ![从视图编辑器获取视图 ID](../media/dynamics365-chart-viewid.png "从视图编辑器获取视图 ID")
-
-5. 将此 ID粘贴到 viewid 参数的 Liquid 图表标记声明中，如：
-
+    ```
     <!—Leads by Source – Open Leads -->
-
-    {% chart id:"EE3C733D-5693-DE11-97D4-00155DA3B01E" viewid:"00000000-0000-0000-00AA-000010001006" %}
+    {% chart id:"EE3C733D-5693-DE11-97D4-00155DA3B01E" viewid:"00000000-0000-0000-00AA-000010001004" %}
+    ```
 
 ## <a name="entity-permission-requirement"></a>实体权限要求
 

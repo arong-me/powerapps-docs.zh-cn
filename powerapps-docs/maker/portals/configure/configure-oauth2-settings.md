@@ -1,20 +1,20 @@
 ---
 title: 配置门户的 OAuth2 提供程序设置 | MicrosoftDocs
 description: 有关如何添加和配置门户的 OAuth2 提供程序设置的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/18/2019
-ms.author: shjais
+ms.date: 01/17/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: be576425067079549d3174e6d6306814a6ddb13a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 6065c842831aa9aa0c225d12470a4469fe51146d
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755431"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012668"
 ---
 # <a name="configure-oauth2-provider-settings-for-portals"></a>配置门户的 OAuth2 提供程序设置
 
@@ -33,24 +33,40 @@ ms.locfileid: "2755431"
 
 一般来说，如果 OAuth 提供程序使用需要重定向 URI 值的应用设置，请根据提供程序如何执行重定向 URI 验证（部分提供程序需要随域名指定完整 URL 路径）指定 <https://portal.contoso.com/or> https://portal.contoso.com/signin-\[provider\]。 将替代重定向 URI 中替代 \[provider\] 的提供程序的名称。
 
-### <a name="google"></a>Google
+## <a name="google-people-api-settings"></a>Google People API 设置
 
-[Google OAuth2 API 凭据说明](https://developers.google.com/accounts/docs/OpenIDConnect#appsetup)  
+> [!NOTE]
+> 已弃用 [Google+ API](https://developers.google.com/people/legacy)。 我们强烈建议您迁移到 [Google People API](https://developers.google.com/people)。
 
-1. 打开 [Google 开发人员控制台](https://console.developers.google.com/)  
-2. 创建 API 项目或打开现有项目
-3. 转至 **API 和 auth**&gt;**API**，在**社交 API** 下，选择 **Google+ API**，然后选择**启用 API**
-4. 转至 **API 和 auth** &gt;**同意屏幕**。
-    - 指定**电子邮件地址**。
-    - 指定自定义**产品名称**。
-    - 选择**保存**。
-5. 转至 **API 和 auth** &gt;**凭据**并创建新客户端 ID。
-   - 应用程序类型：**Web 应用程序**
-   - 授权的 [!INCLUDE[pn-javascript](../../../includes/pn-javascript.md)] 起源：https://portal.contoso.com
-   - 授权的重定向 URI：https://portal.contoso.com/signin-google 
-   - 选择**创建客户端 ID**。
+请执行以下步骤为 Power Apps 门户配置 [Google 的 OAuth 2.0 身份验证] 以执行用户身份验证。
 
-### <a name="facebook-app-settings"></a>Facebook 应用程序设置
+1. 打开 [Google 开发人员控制台](https://console.developers.google.com/)。  
+1. 创建 API 项目或打开现有项目。
+1. 从 API 和服务仪表板选择**启用 API 和服务**。
+1. 搜索并启用 API **Google People API**。
+1. 在 **Google APIs** 内，选择左侧导航中的 **Credentials**。
+
+    > [!NOTE]
+    > 如果已经为同意屏幕配置了门户顶级域，可以跳过步骤 6 到 14，直接转到步骤 15。 但是，如果已配置了同意屏幕，但是未添加门户顶级域，请在转到步骤 15 之前，执行步骤 11。
+
+1. 选择**配置同意屏幕**。
+1. 选择**外部**用户类型。
+1. 选择**创建**。
+1. 键入**应用程序名称**，需要时，上传徽标的图像。
+1. 选择相应的**支持电子邮件**。
+1. 在**授权域**中，为顶级域键入 **powerappsportals.com**。 如果尚未[更新您的 Power Apps 门户域名](../admin/update-portal-domain.md)，请使用 **microsoftcrmportals.com**。 如果已经配置了[自定义域名](../admin/add-custom-domain.md)，也可以输入此域名。 
+1. 根据需要提供主页、隐私政策和服务条款的链接。 
+1. 选择**保存**。
+1. 从左侧导航菜单中选择**凭据**。
+1. 从**创建凭据**下拉菜单选择 **Oauth 客户端 ID**。
+1. 应用程序类型选择 **Web 应用程序**。
+1. 键入 Oauth 客户端 ID 的**名称**。
+1. 在**授权的 JavaScript 起源**列表中键入您的 Power Apps 门户 URL。
+1. **授权重定向 URI** 键入 Power Apps 门户 URL 加 **/signin-google**。 例如，如果门户 URL 为 https://contoso.powerappsportals.com，则授权重定向 URIs 字段应该为 https://contoso.powerappsportals.com/signin-google。
+1. 选择**创建**。
+1. 复制 **Oauth 客户端**中的**客户端 ID** 和**客户端密码**，然后配置 Power Apps 门户中的 [OAuth2 站点设置](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-oauth2-settings#create-site-settings-by-using-oauth2)。
+
+## <a name="facebook-app-settings"></a>Facebook 应用程序设置
 
 1. 打开 [Facebook 开发人员应用程序仪表板](https://developers.facebook.com/apps)  
 2. 选择**添加新应用程序**。
@@ -70,14 +86,14 @@ ms.locfileid: "2755431"
 7. 转至**状态和审查** &gt; **状态**选项卡。
 8. 提示将该应用程序及其所有功能提供给公众时，选择**是**。 必须在上面的步骤 5 中填写了有效数据，才能启用此设置。
 
-### <a name="includecc-microsoftincludescc-microsoftmd-application-settings"></a>[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)] 应用程序设置
+### <a name="cc-microsoft-application-settings"></a>[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)] 应用程序设置
 
 1. 打开 [[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)] 帐户开发人员中心](https://account.live.com/developers/applications/index)  
 2. 选择**创建应用程序**并指定**应用程序名称**。
 3. 选择**我接受**以接受条款和条件。
 4. 转到**设置** &gt; **API 设置**，然后将重定向 URL 设置为 https://portal.contoso.com/signin-microsoft 
 
-### <a name="twitter-apps-settings"></a>Twitter 应用程序设置
+## <a name="twitter-apps-settings"></a>Twitter 应用程序设置
 
 1. 打开 [Twitter 应用程序管理](https://apps.twitter.com/)。 
 2. 选择**新建应用程序**。
@@ -88,7 +104,7 @@ ms.locfileid: "2755431"
 
 3. 选择**创建您的 Twitter 应用程序**。
 
-### <a name="linkedin-app-settings"></a>LinkedIn 应用程序设置
+## <a name="linkedin-app-settings"></a>LinkedIn 应用程序设置
 
 1. 打开 [LinkedIn 开发人员网络](https://www.linkedin.com/secure/developer)。  
 2. 选择**添加新应用程序**。
@@ -100,7 +116,10 @@ ms.locfileid: "2755431"
 
 3. 选择**添加应用程序**。
 
-### <a name="yahoo-ydn-app-settings"></a>Yahoo! YDN 应用程序设置
+## <a name="yahoo-ydn-app-settings"></a>Yahoo! YDN 应用程序设置
+
+> [!NOTE]
+> 更新后的 Yahoo YDN OAuth 提供商终结点与 Power Apps 门户之间的现有兼容性问题导致用户暂时不可以通过 Yahoo 身份提供程序的身份验证。
 
 1. 打开 [Yahoo! 开发人员网络](https://developer.yahoo.com/apps)。
 2. 选择**创建应用程序**。

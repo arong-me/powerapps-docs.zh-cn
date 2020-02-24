@@ -1,7 +1,7 @@
 ---
 title: Power Apps 中的时间线控件（部分）的常见问题解答 | MicrosoftDocs
 description: Power Apps 中的时间线控件（部分）的常见问题解答
-ms.date: 12/23/2019
+ms.date: 02/03/2020
 ms.service: powerapps
 author: kabala123
 ms.assetid: 7F495EE1-1208-49DA-9B02-17855CEB2FDF
@@ -12,12 +12,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4851f4e5dc173f8861db0ba0b761e01f2537b0e8
-ms.sourcegitcommit: 8ba5f6b88dbd71eb3663dfeec5f0b4427c1543c0
+ms.openlocfilehash: 6556ee415f2ee3340f6e36f417a25299871c1860
+ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "2924392"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3013045"
 ---
 # <a name="faqs-for-timeline-control"></a>时间线控件的常见问题解答
 
@@ -93,6 +93,11 @@ ms.locfileid: "2924392"
 **您没有权限执行此操作。请与您的系统管理员联系。**
 
 若要缓解此问题，请在命令栏定义中取消隐藏这些按钮。
+
+
+## <a name="why-my-users-see-different-activities-and-records-in-their-my-activities-stream-in-the-dashboard"></a>为什么我的用户在仪表板中“我的活动”流中看到的活动和记录不同？
+
+仪表板中的**我的活动**流显示特定用户负责的记录和活动。 例如，用户 **A** 看到的是 **A** 负责的记录和活动，而用户 **B** 看到的则是 **B** 负责的记录和活动。
 
 ## <a name="see-also"></a>另请参阅
 

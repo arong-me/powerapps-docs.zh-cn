@@ -1,20 +1,20 @@
 ---
 title: 使用混合导航呈现门户的页面层次结构 | MicrosoftDocs
 description: 有关如何使用混合导航呈现门户的页面层次结构的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: aace949be3cc191af5edd95c461e422b9c3217f5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 2fa7927d13a7cb940bb1d2d9b1281110a196b48f
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2708339"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978929"
 ---
 # <a name="render-up-to-three-levels-of-page-hierarchy-by-using-hybrid-navigation"></a>使用混合导航最多呈现页面层次结构的三个级别
 

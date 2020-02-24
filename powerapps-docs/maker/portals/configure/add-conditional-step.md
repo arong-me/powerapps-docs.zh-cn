@@ -1,20 +1,20 @@
 ---
 title: 为门户配置条件步骤类型 | MicrosoftDocs
 description: 有关如何添加和配置门户的条件步骤类型的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: ec3e568b239bf66c0d4554e244d5afef2d5ef673
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 698f2e16cdefee0708acbcbd413a1c229a577839
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760157"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979633"
 ---
 # <a name="add-a-conditional-step-type"></a>添加条件步骤类型
 

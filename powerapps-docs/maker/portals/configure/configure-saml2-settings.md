@@ -1,20 +1,20 @@
 ---
 title: 配置门户的 SAML 2.0 提供程序设置 | MicrosoftDocs
 description: 有关如何添加和配置门户的 SAML 2.0 提供程序设置的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: af5b0ae8eddb68127c7271fccb4696a23fedfc60
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 4126ba564027291d8bbcb853f0769aa67f0de7d7
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759632"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979105"
 ---
 # <a name="configure-saml-20-provider-settings-for-portals"></a>配置门户的 SAML 2.0 提供程序设置
 
@@ -210,7 +210,7 @@ $idpInitiatedUrl = {0}?RelayState={1} -f $adfsPath, $encodedPathRpid
 Write-Output $idpInitiatedUrl
 ```
 
-## <a name="saml-20-settings-for-includepn-azure-active-directoryincludespn-azure-active-directorymd"></a>[!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)] 的 SAML 2.0 设置
+## <a name="saml-20-settings-for-pn-azure-active-directory"></a>[!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)] 的 SAML 2.0 设置
 
 介绍 [!include[](../../../includes/pn-adfs-short.md)] 的上一章节也可以适用于 [[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] AD](https://msdn.microsoft.com/library/azure/mt168838.aspx)，因为 [!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] AD 行为与标准 [SAML 2.0](https://msdn.microsoft.com/library/azure/dn195591.aspx)&ndash; 兼容 IdP 相似。 首先登录到 [[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] 管理门户](https://msdn.microsoft.com/library/azure/hh967611.aspx#bkmk_azureportal)并创建或选择现有目录。 提供目录时，按照说明[将应用程序添加](https://msdn.microsoft.com/library/azure/dn132599.aspx)到目录。  
 

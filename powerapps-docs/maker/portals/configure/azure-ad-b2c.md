@@ -1,20 +1,20 @@
 ---
 title: 门户的 Azure AD B2C 提供程序设置 | MicrosoftDocs
 description: 为门户启用 Azure AD B2C 提供程序设置的说明。
-author: sbmjais
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 01/03/2020
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: e8275fa256b00736501990c3abf127777097d938
-ms.sourcegitcommit: 82eec5da9c97fcb6ed50ae8e582f326af9278aa7
+ms.openlocfilehash: 5328415e8f55d9997bbe14a9ecca271b12a9ae31
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935192"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979545"
 ---
 # <a name="azure-ad-b2c-provider-settings-for-portals"></a>门户的 Azure AD B2C 提供程序设置
 
@@ -124,7 +124,7 @@ ms.locfileid: "2935192"
 
 **值**：注册已被禁用。
 
-## <a name="customize-the-includeazureincludespn-azure-shortestmd-ad-b2c-user-interface"></a>自定义 [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C 用户界面
+## <a name="customize-the-includeazure-ad-b2c-user-interface"></a>自定义 [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C 用户界面
 
 [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C 支持用户界面自定义。 您可以自定义注册和登录方案的用户体验。
 
@@ -467,7 +467,7 @@ ms.locfileid: "2935192"
 
 有关其他 CORS 设置的完整列表，请参阅 [CORS 协议支持](../add-web-resource.md#cors-protocol-support)。
 
-### <a name="step-5-includeazureincludespn-azure-shortestmd-configuration"></a>步骤 5：[!include[Azure](../../../includes/pn-azure-shortest.md)] 配置
+### <a name="step-5-includeazure-configuration"></a>步骤 5：[!include[Azure](../../../includes/pn-azure-shortest.md)] 配置
 
 1. 登录到你的 [!include[Azure portal](../../../includes/pn-azure-portal.md)]。
 2. 导航到 **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C 租户管理**边栏选项卡。
@@ -483,7 +483,7 @@ ms.locfileid: "2935192"
 
 当用户首次登录或后续时，联合身份提供程序提供基于用户登录相关数据库的声明。 这些声明可在身份提供程序中进行配置。
 
-### <a name="includeazureincludespn-azure-shortestmd-ad-b2c-email-claims"></a>[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C 电子邮件声明
+### <a name="includeazure-ad-b2c-email-claims"></a>[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C 电子邮件声明
 
 [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C 将电子邮件声明作为集合发送。 门户接受在集合中提供的第一封电子邮件作为联系人的主要电子邮件地址。
 

@@ -1,20 +1,20 @@
 ---
 title: 使用分面搜索改进门户搜索 | MicrosoftDocs
 description: 有关如何启用或禁用分面搜索的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 6b605acf1d11ecbc98760810f390f63c9a27a0a6
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 49985feb494e43350d1e2c8ecb014f405439892a
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760148"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980469"
 ---
 # <a name="use-faceted-search-to-improve-portal-search"></a>使用分面搜索改进门户搜索
 

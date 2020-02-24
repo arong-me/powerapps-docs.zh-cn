@@ -1,20 +1,20 @@
 ---
 title: 向门户内的网页添加 Power BI 报表或仪表板 | MicrosoftDocs
 description: 有关向门户内的网页添加 Power BI 报表或仪表板的简介。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/22/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 722789d726d02b306eb794aa51665c13ce7f495d
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: babd35989529b66f0c32cdd6e61ba2ef77e8c601
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874682"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977609"
 ---
 # <a name="add-a-power-bi-report-or-dashboard-to-a-web-page-in-portal"></a>向门户内的网页添加 Power BI 报表或仪表板
 

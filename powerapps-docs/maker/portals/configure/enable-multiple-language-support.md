@@ -1,20 +1,20 @@
 ---
 title: 启用多语言门户支持 | MicrosoftDocs
 description: 有关如何为门户启用多种语言和如何使用多种语言创建内容的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: f8da1ac4be7098fc712faef82f6c9566d5f10512
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a91ffe1c00b7dbcc40b786731e956bfdd8fc6d94
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760154"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012713"
 ---
 # <a name="enable-multiple-language-portal-support"></a>启用多语言门户支持
 业务不限于一个地区或一种语言。 一个门户可以以多种语言显示内容，以便接触全球的客户。 可将门户的内容翻译为多种语言，同时保留单一内容层次结构。
@@ -32,6 +32,8 @@ ms.locfileid: "2760154"
    ![添加新门户语言](../media/add-new-portal-language.png "添加新门户语言")
 
    ![为门户设置默认语言](../media/set-default-language-portal.png "为门户设置默认语言")
+
+   ![支持的语言](../media/supported-languages.png "支持的语言")
 
 > [!Note]
 > 如果在已设置门户后激活新语言，则可[导入元数据翻译](../admin/import-metadata-translation.md)以获取为新激活语言翻译的元数据。

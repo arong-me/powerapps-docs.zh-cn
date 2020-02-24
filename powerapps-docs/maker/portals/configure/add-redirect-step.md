@@ -1,20 +1,20 @@
 ---
 title: 配置门户的重定向步骤类型 | MicrosoftDocs
 description: 有关如何添加和配置门户的重定向步骤的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 3cf76cccfd247bdcfb4ee32e99682d2b9e95e139
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e82d19a7adb43bcb8fddaeac88a5e238ee96eae1
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760133"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979589"
 ---
 # <a name="add-a-redirect-step-type"></a>添加重定向步骤类型
 

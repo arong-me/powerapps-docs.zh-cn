@@ -1,20 +1,20 @@
 ---
 title: 为门户配置加载窗体和加载选项卡步骤类型 | MicrosoftDocs
 description: 有关如何定义门户中的加载窗体和加载选项卡步骤类型的说明。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: e9e1fe038562f78359db485c84a77bcc95118d82
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 634ded2a7ab03e953c13ca0abe568eaecb3b75a7
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760146"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979897"
 ---
 # <a name="define-a-load-form-and-load-tab-step-type"></a>定义加载窗体和加载选项卡步骤类型
 

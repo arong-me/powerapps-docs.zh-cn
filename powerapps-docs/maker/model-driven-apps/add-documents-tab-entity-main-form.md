@@ -2,7 +2,7 @@
 title: 将“文档”选项卡添加到实体的主窗体 | MicrosoftDocs
 description: 了解如何将“文档”选项卡添加到实体的主窗体
 s.custom: ''
-ms.date: 09/05/2019
+ms.date: 01/06/2020
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -17,14 +17,14 @@ search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: fae464925ea755a1f9fd0cd77426bfdbaad6141c
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: c08c3fa1f6291278728db15200e9cb71de699f8a
+ms.sourcegitcommit: 54d52a9c3c9242f95be54f4444054d9c41ed577c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909316"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "2951992"
 ---
-# <a name="add-the-sharepoint-documents-tab-to-the-main-form-for-an-entity"></a>将“SharePoint 文档”选项卡添加到实体的主窗体
+# <a name="add-or-remove-the-sharepoint-documents-tab-to-the-main-form-for-any-entity"></a>在任何实体的主窗体中添加或删除 SharePoint 文档选项卡
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 在实体主窗体上添加选项卡以显示 SharePoint 文档可帮助用户发现和使用模型驱动应用中可用的 SharePoint 集成功能。 
@@ -86,6 +86,16 @@ ms.locfileid: "2909316"
     </parameters> 
   </control> 
 ```
+
+## <a name="remove-the-documents-tab"></a>删除文档选项卡
+1.   登录 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，在左窗格中，展开**数据**，然后选择**实体**。 
+2.  选择所需实体，选择**窗体**选项卡，然后打开需要删除其中的文件选项卡的窗体。 
+3. 选择**文件**选项卡，然后在窗体设计器工具栏上选择**删除**。 
+
+    ![删除文件选项卡](media/delete-files-tab.png)
+
+4. 在窗体设计器工具栏中，选择**发布**。
+
 
 ### <a name="see-also"></a>另请参阅
 [使用 SharePoint 管理您的文档](/dynamics365/customer-engagement/admin/manage-documents-using-sharepoint)
