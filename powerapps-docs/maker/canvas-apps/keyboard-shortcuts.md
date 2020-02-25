@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6c6f033027fb9ce29ba443efab2b5c14ec5ea013
-ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
+ms.openlocfilehash: 2f41edb15bec061887ebe41f375cb1498280857c
+ms.sourcegitcommit: 0e41cc0c944e6b0ee22a7e183e40c52fd553b7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77145367"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77563680"
 ---
 # <a name="keyboard-shortcuts-for-canvas-apps"></a>画布应用的键盘快捷方式
 
@@ -32,6 +32,7 @@ ms.locfileid: "77145367"
 | Ctrl + O （或 Alt + F） | 打开文件。 |
 | Ctrl + Shift + S （或 Alt + P） | 使用其他名称保存应用。 |
 | Ctrl+S | 用相同的名称或首次保存应用。 |
+| Ctrl+Shift+P | 保存应用并激活 "发布" 对话框。 |
 | F12 | 下载应用文件（. project-requests-app.msapp）。 |
 | Alt+F | 打开 "**文件**" 菜单。 |
 
@@ -39,10 +40,10 @@ ms.locfileid: "77145367"
 
 | 快捷方式 | 操作 |
 |--|--|
-| 输入 | 运行所选的命令。 |
+| Enter | 运行所选的命令。 |
 | Tab | 在所选选项卡上的命令之间移动，然后在下一个选项卡之间移动。 |
 | Ctrl+F6 | 导航到下一个路标。 |
-| Ctrl + Shift + F6 | 导航到上一个路标。 |
+| Ctrl+Shift+F6 | 导航到上一个路标。 |
 | Alt + I | 选择 "**插入**" 选项卡。 |
 
 ## <a name="editing"></a>编辑
