@@ -13,22 +13,23 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 61cf2ad5926daf8b1b5bea6310b9fb29563208e2
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 9e8a7fe44c10d4f189136e05013b68fbd407fe9c
+ms.sourcegitcommit: 0e41cc0c944e6b0ee22a7e183e40c52fd553b7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731700"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77563711"
 ---
-# <a name="customize-a-sharepoint-list-form-by-using-power-apps"></a>使用 Power Apps 自定义 SharePoint 列表窗体
+# <a name="customize-a-sharepoint-list-or-library-form-by-using-power-apps"></a>使用 Power Apps 自定义 SharePoint 列表或库表单
 
-可以通过在浏览器中打开 Power Apps 来轻松地自定义 SharePoint 列表的窗体。 不必编写传统代码（例如 C#）或下载其他应用（例如 InfoPath）。 发布更改时，窗体嵌入到 SharePoint 列表中，供其所有用户使用。 在 Power Apps 中，你还可以查看分析报表、轻松创建条件格式以及连接到其他数据源。
+通过在浏览器中打开 Power Apps，可以轻松地自定义 SharePoint 列表或 SharePoint 文档库的窗体。 不必编写传统代码（例如 C#）或下载其他应用（例如 InfoPath）。 发布更改时，窗体嵌入到 SharePoint 列表中，供其所有用户使用。 在 Power Apps 中，你还可以查看分析报表、轻松创建条件格式以及连接到其他数据源。
 
 若要按照本主题中的步骤操作，请创建一个简单列表，了解自定义的工作原理，然后可将相同的概念应用到你自己的列表。
 
 > [!NOTE]
 > - 如果 "**自定义窗体**" 选项不可用或不能正常用于列表，则它可能包含[Power Apps 不支持](connections/connection-sharepoint-online.md#known-issues)的数据类型。 此外，不能将窗体移到其他列表或[环境](working-with-environments.md)。 
 > - 仅在泛型列表中支持列表的自定义窗体。 即将推出对一般文档库的支持。 当前不支持自定义列表和库模板;包括但不限于公告、联系人和任务等列表。
+> - 文档库的自定义窗体仅支持编辑自定义元数据。 不支持编辑或管理文件。
 
 ## <a name="create-a-list"></a>创建列表
 
@@ -130,7 +131,7 @@ ms.locfileid: "74731700"
 
     ![删除自定义窗体](./media/customize-list-form/use-default-sharepoint.png)
 
-## <a name="q--a"></a>问 &
+## <a name="q--a"></a>问题解答
 
 ### <a name="forms-vs-apps"></a>窗体与应用
 
@@ -144,15 +145,15 @@ ms.locfileid: "74731700"
 
 问：对于同一列表，可以既自定义窗体又创建应用吗？
 
-答：相同。
+答：可以。
 
 问：可以使用相同功能自定义窗体和创建应用吗？
 
-答：相同。
+答：可以。
 
 问：可以在组织中的默认环境之外自定义窗体吗？
 
-**答：** 不能。
+**答：** 否。
 
 ### <a name="manage-your-custom-form"></a>管理自定义窗体
 
@@ -162,11 +163,11 @@ ms.locfileid: "74731700"
 
 问：能否更新窗体，而不让其他人看到我的更改？
 
-答：相同。 可以根据需要多次进行更改和保存，但所做的更改对其他人不可见，除非你两次选择“发布到 SharePoint”。
+答：可以。 可以根据需要多次进行更改和保存，但所做的更改对其他人不可见，除非你两次选择“发布到 SharePoint”。
 
 问：如果我自定义列表窗体但出现一个错误，是否可以还原到以前的版本？
 
-答：相同。
+答：可以。
 
 1. 打开列表，在命令栏上选择“PowerApps”，然后选择“自定义窗体”。
 
@@ -184,7 +185,7 @@ ms.locfileid: "74731700"
 
 问：能否将窗体从一个列表移动到另一个列表？
 
-**答：** 不能。
+**答：** 否。
 
 ### <a name="administer-your-custom-form"></a>管理自定义窗体
 
