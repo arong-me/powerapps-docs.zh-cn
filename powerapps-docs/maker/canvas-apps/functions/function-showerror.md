@@ -1,34 +1,34 @@
 ---
-title: ShowError 函数 | Microsoft Docs
-description: Power Apps 中 ShowError 函数的参考信息（包括语法和示例）
+title: 通知函数 |Microsoft Docs
+description: Power Apps 中 Notify 函数的参考信息（包括语法和示例）
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 06/05/2018
+ms.date: 02/28/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 02881fdf284a174f5118e7ee0ae185cca61578f8
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: bc3a27960a95b47115e1b7a43863572ce0c44334
+ms.sourcegitcommit: ed583eb94720a9645bfd79776311792a958077b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74730186"
+ms.lasthandoff: 03/01/2020
+ms.locfileid: "78204383"
 ---
 # <a name="notify-function-in-power-apps"></a>在 Power Apps 中通知功能
 向用户显示横幅消息。
 
-## <a name="description"></a>描述
-Notify 函数在屏幕顶部向用户显示一条横幅消息，覆盖当前显示的内容。  
+## <a name="description"></a>说明
+Notify 函数在屏幕顶部向用户显示一条横幅消息，覆盖当前显示的内容。  通知将保留，直到用户将其关闭，另一个通知替换它，或者默认为10秒的超时过期。
 
 根据消息的类型，使用适当的颜色和图标。   该类型由该函数的第二个参数指定：
 
-| NotificationType 参数 | 描述 |
+| NotificationType 参数 | 说明 |
 | --- | --- |
 | **NotificationType.Error** | 显示该消息表示错误。 |
 | **NotificationType.Information**（默认） | 显示该消息表示信息。  |
@@ -45,13 +45,14 @@ Power Apps 还可以使用完全不同的机制从**通知**发送推送通知�
 
 Notify 始终返回“true”。
 
-注意：此函数以前名为 ShowError，只能显示错误消息。
+注意:如果此函数只能显示错误消息，则该函数以前名为**ShowError** 。
 
 ## <a name="syntax"></a>语法
-**Notify**( *Message*, [ *NotificationType* ] )
+**通知**（ *Message* [， *NotificationType* [， *Timeout* ]]）
 
 * *Message* - 必需。  要向用户显示的消息。
 * *NotificationType* - 可选。  从上表中显示的消息类型。  默认值为 NotificationType.Information。  
+* *Timeout* –可选。  自动关闭通知之前要等待的毫秒数。  默认值为10秒（或10000毫秒）。  通知将会无限期显示，*超时*为0。
 
 ## <a name="examples"></a>示例
 
@@ -65,7 +66,7 @@ Notify 始终返回“true”。
 
 3. 单击或按下该按钮。  
 
-    每次单击该按钮时，会将消息“Hello, World”作为信息显示给用户。
+    每次单击该按钮时，会将消息“Hello, World”作为信息显示给用户。  如果用户不取消或再次按下此按钮，它将在10秒（默认超时）内自动取消。
 
     ![在创作环境中，显示 Button.OnSelect、调用 Notify 并将生成的“Hello, World”消息作为蓝色横幅消息显示给用户](media/function-showerror/hello-world.png)
 
@@ -75,26 +76,26 @@ Notify 始终返回“true”。
 
 5. 单击或按下该按钮。
 
-    现在，每次单击该按钮时，会将消息“Hello, World”作为错误显示给用户。
+    现在，每次单击该按钮时，会将消息“Hello, World”作为错误显示给用户。  如果用户不取消或再次按下此按钮，它将在10秒（默认超时）内自动取消。
 
     ![在创作环境中，显示 Button.OnSelect、调用 Notify 并将生成的“Hello, World”消息作为红色横幅消息显示给用户](media/function-showerror/hello-world-error.png)
 
 4. 更改消息的类型以指示警告。  更改公式中的第二个参数：
 
-    **Notify( "Hello, World", NotificationType.Warning )**
+    **通知（"Hello，World"，NotificationType. Warning，4000）**
 
 5. 单击或按下该按钮。
 
-    现在，每次单击该按钮时，会将消息“Hello, World”作为警告显示给用户。
+    现在，每次单击该按钮时，会将消息“Hello, World”作为警告显示给用户。  如果用户不取消或再次按下此按钮，它将在4秒（4000毫秒）内自动取消。
 
     ![在创作环境中，显示 Button.OnSelect、调用 Notify 并将生成的“Hello, World”消息作为橙色横幅消息显示给用户](media/function-showerror/hello-world-warning.png)
 
 4. 更改消息的类型以指示成功。  更改公式中的第二个参数：
 
-    **Notify( "Hello, World", NotificationType.Success )**
+    **通知（"Hello，World"，NotificationType 成功，0）**
 
 5. 单击或按下该按钮。
 
-    现在，每次单击该按钮时，会将消息“Hello, World”显示给用户表示成功。
+    现在，每次单击该按钮时，会将消息“Hello, World”显示给用户表示成功。  如果为**0** ，则仅用户或按下该按钮时，通知将被消除。
 
     ![在创作环境中，显示 Button.OnSelect、调用 Notify 并将生成的“Hello, World”消息作为绿色横幅消息显示给用户](media/function-showerror/hello-world-success.png)

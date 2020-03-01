@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: efd5b1ca4f30a5ab1131765d2bb38d21af7c2d2b
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 578e196bfa55f33416de1ee551d1e63e106a612a
+ms.sourcegitcommit: ed583eb94720a9645bfd79776311792a958077b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731373"
+ms.lasthandoff: 03/01/2020
+ms.locfileid: "78204360"
 ---
 # <a name="char-function-in-power-apps"></a>Power Apps 中的 Char 函数
 
 将字符代码转换为字符串。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 **Char**函数使用对应的 ASCII 字符将数字转换为字符串。
 
@@ -36,7 +36,7 @@ ms.locfileid: "74731373"
 
 ## <a name="examples"></a>示例
 
-| 公式 | 描述 | 结果 |
+| 公式 | 说明 | 结果 |
 | --- | --- | --- |
 | **Char( 65 )** |返回 ASCII 代码 65 对应的字符。 |的 |
 | **Char( 105 )** |返回 ASCII 代码 105 对应的字符。 |看到 |
@@ -54,7 +54,7 @@ ms.locfileid: "74731373"
 
 1. 在该库中，添加一个具有**空白垂直**布局的**库**控件，然后设置以下属性：
 
-    - **项**： `ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 )`
+    - **项**： `ForAll( [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 )`
     - **宽度**：100
     - **高度**：500
     - **TemplateSize**：30
@@ -79,7 +79,7 @@ ms.locfileid: "74731373"
 
 若要显示扩展的 ASCII 字符，请将第二个库的**Items**属性设置为此公式，这会将128添加到每个字符值：
 
-`ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 + 128)`
+`ForAll( [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 + 128)`
 
 ![扩展的 ASCII 字符](media/function-char/chart-higher.png)
 
