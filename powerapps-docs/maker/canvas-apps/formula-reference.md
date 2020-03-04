@@ -13,24 +13,24 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 30046f0b9f2a47e7231b00aafe1633a7242e43c6
-ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
-ms.translationtype: HT
+ms.openlocfilehash: c70d73cb2dcdd9fd1832a10c4c89029cdb5c45ad
+ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76315391"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78264932"
 ---
 # <a name="formula-reference-for-power-apps"></a>Power Apps 的公式参考
 公式组合了许多元素。  下面列出的包括：
 
-* **函数**，它接受参数、执行操作并返回值。 例如，**Sqrt(25)** 返回 **5**。 函数模仿了 Microsoft Excel 函数。  某些函数具有副作用，例如 **SubmitForm**，该函数仅在诸如 **Button.OnSelect** 的[行为公式](working-with-formulas-in-depth.md)中适用。
+* **函数**，它接受参数、执行操作并返回值。 例如，**Sqrt(25)** 返回 **5**。 函数模仿了 Microsoft Excel 函数。  某些函数具有副作用，例如 **SubmitForm**，该函数仅在诸如 [Button.OnSelect](working-with-formulas-in-depth.md) 的**行为公式**中适用。
 * **信号**，它返回关于环境的信息。 例如， **[Location](functions/signals.md)** 返回设备的当前 GPS 坐标。 信号不接受参数，也没有副作用。
 * **枚举**，它返回预定义的常量值。 例如， **[Color](functions/function-colors.md)** 是一个具有预定义值 **Color.Red**、**Color.Blue** 等等的枚举。  此处包括了通用枚举；函数特定的枚举随函数进行了介绍。
 * **已命名运算符**，例如 **[ThisItem](functions/operators.md#thisitem-operator)** 和 **[Parent](functions/operators.md#parent-operator)** ，用于从容器内访问信息。
 
 其他元素包括：
 
-* [所有运算符](functions/operators.md)
+* [运算符和标识符](functions/operators.md)
 * [控件及其属性](reference-properties.md)
 * [数据类型](functions/data-types.md)
 
@@ -79,7 +79,7 @@ ms.locfileid: "76315391"
 
 **[Clock](functions/function-clock-calendar.md)** – 检索有关当前区域设置的时钟信息。
 
-**[Coalesce](functions/function-isblank-isempty.md)** – 替换空  值并保留非空  值不变。
+**[Coalesce](functions/function-isblank-isempty.md)** – 替换空值并保留非空值不变。
 
 **[Collect](functions/function-clear-collect-clearcollect.md)** – 创建一个集合或者向数据源添加数据。
 
@@ -209,7 +209,7 @@ ms.locfileid: "76315391"
 
 **[Ln](functions/function-numericals.md)** – 返回自然对数。
 
-**[LoadData](functions/function-savedata-loaddata.md)** - 从 Power Apps 专用存储中加载集合。
+**[LoadData](functions/function-savedata-loaddata.md)** –从本地设备的存储加载集合。
 
 **[Location](functions/signals.md)** – 通过使用全球定位系统 (GPS) 和其他信息将你的位置返回为地图坐标。
 
@@ -280,7 +280,7 @@ ms.locfileid: "76315391"
 
 **[Replace](functions/function-replace-substitute.md)** – 从字符串的起始位置开始，将一个字符串的一部分替换为另一个字符串。
 
-[Reset](functions/function-reset.md)  - 将输入控件重置为默认值，放弃任何用户更改。
+**[Reset](functions/function-reset.md)** - 将输入控件重置为默认值，放弃任何用户更改。
 
 **[ResetForm](functions/function-form.md)** – 重置用于编辑某个现有项的表单控件。
 
@@ -297,7 +297,7 @@ ms.locfileid: "76315391"
 **[RoundUp](functions/function-round.md)** – 向上舍入到最小的下一数字。
 
 ## <a name="s"></a>S
-**[SaveData](functions/function-savedata-loaddata.md)** - 将集合保存到 Power Apps 专用存储。
+**[SaveData](functions/function-savedata-loaddata.md)** –将集合保存到本地设备的存储中。
 
 **[Search](functions/function-filter-lookup.md)** – 在表中查找其某个列中包含某个字符串的记录。  
 
@@ -367,7 +367,7 @@ ms.locfileid: "76315391"
 
 **[Update](functions/function-update-updateif.md)** – 替换数据源中的某条记录。
 
-[UpdateContext](functions/function-updatecontext.md)  – 设置当前屏幕的一个或多个[上下文变量](working-with-variables.md#use-a-context-variable)的值。
+**[UpdateContext](functions/function-updatecontext.md)** – 设置当前屏幕的一个或多个[上下文变量](working-with-variables.md#use-a-context-variable)的值。
 
 **[UpdateIf](functions/function-update-updateif.md)** – 基于某个条件修改数据源中的一组记录。
 

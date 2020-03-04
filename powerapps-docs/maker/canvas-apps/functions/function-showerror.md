@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bc3a27960a95b47115e1b7a43863572ce0c44334
-ms.sourcegitcommit: ed583eb94720a9645bfd79776311792a958077b8
+ms.openlocfilehash: 9a4facf4689ed09e7628411f1c55739f8980336f
+ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2020
-ms.locfileid: "78204383"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78265469"
 ---
 # <a name="notify-function-in-power-apps"></a>在 Power Apps 中通知功能
 向用户显示横幅消息。
@@ -60,9 +60,11 @@ Notify 始终返回“true”。
 
 1. 向屏幕添加“按钮”控件。
 
-2. 将按钮的 OnSelect 属性设置为：
+2. 将该**按钮**的**OnSelect**属性设置为公式：
 
-    **Notify( "Hello, World" )**
+    ```powerapps-dot
+    Notify( "Hello, World" )
+    ```
 
 3. 单击或按下该按钮。  
 
@@ -72,7 +74,9 @@ Notify 始终返回“true”。
 
 4. 更改消息的类型以指示错误。  将第二个参数添加到公式中：
 
-    **Notify( "Hello, World", NotificationType.Error )**
+    ```powerapps-dot
+    Notify( "Hello, World", NotificationType.Error )
+    ```
 
 5. 单击或按下该按钮。
 
@@ -82,7 +86,9 @@ Notify 始终返回“true”。
 
 4. 更改消息的类型以指示警告。  更改公式中的第二个参数：
 
-    **通知（"Hello，World"，NotificationType. Warning，4000）**
+    ```powerapps-dot
+    Notify( "Hello, World", NotificationType.Warning, 4000 )
+    ```
 
 5. 单击或按下该按钮。
 
@@ -92,7 +98,9 @@ Notify 始终返回“true”。
 
 4. 更改消息的类型以指示成功。  更改公式中的第二个参数：
 
-    **通知（"Hello，World"，NotificationType 成功，0）**
+    ```powerapps-dot
+    Notify( "Hello, World", NotificationType.Success, 0 )
+    ```
 
 5. 单击或按下该按钮。
 

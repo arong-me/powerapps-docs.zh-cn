@@ -7,26 +7,28 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 01/31/2019
+ms.date: 02/29/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1dbf192664f2c8a812650b487a9931de0160eeab
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6ec1a55713b3cce0a98c02058124b5b3d159b376
+ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675513"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78265571"
 ---
 # <a name="develop-offline-capable-canvas-apps"></a>开发可脱机运行的画布应用
 
 即使移动用户的连接受到限制或没有任何连接，它们也经常需要提高工作效率。 生成画布应用时，可以执行以下任务：
 
 - 脱机时打开 Power Apps Mobile 并运行应用。
-- 使用 [Connection](../canvas-apps/functions/signals.md#connection) 信号对象确定应用何时处于脱机、联机或按流量计费的连接状态中。
-- 在脱机时使用[集合](../canvas-apps/create-update-collection.md)或利用 [LoadData 和 SaveData](../canvas-apps/functions/function-savedata-loaddata.md) 等函数进行基本数据存储。
+- 使用 [Connection](functions/signals.md#connection) 信号对象确定应用何时处于脱机、联机或按流量计费的连接状态中。
+- 脱机时，使用[集合](create-update-collection.md)并利用[ **LoadData**和**SaveData** ](functions/function-savedata-loaddata.md)函数进行基本数据存储。
+
+本文包含使用 Twitter 数据的示例。  [ **LoadData**和**SaveData**函数引用](functions/function-savedata-loaddata.md)中包含一个甚至不需要连接的更简单的示例。
 
 ## <a name="limitations"></a>限制
 
