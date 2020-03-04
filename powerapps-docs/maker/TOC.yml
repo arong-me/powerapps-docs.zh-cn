@@ -91,6 +91,12 @@
               href: ../user/track-your-progress-with-dashboard-and-charts.md
             - name: 添加 Power BI 仪表板
               href: ../user/add-powerbi-dashboards.md
+        - name: 协作
+          items:
+            - name: 使用 OneDrive for Business
+              href: ../user/one-drive.md
+            - name: 使用 OneNote 做笔记
+              href: ../user/onenote.md
             - name: 使用 SharePoint 进行协作
               href: ../user/collaborate-using-sharepoint.md
         - name: 搜索记录
