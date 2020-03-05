@@ -11,12 +11,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3c2864a7953e115c650ff5cee879d2a1227acdb4
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: b86f6c94a7a267fc28a70216c6b89d154cd7b865
+ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77911304"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78293215"
 ---
 # <a name="create-a-component-for-canvas-apps"></a>为画布应用创建组件
 
