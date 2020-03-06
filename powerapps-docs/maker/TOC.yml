@@ -169,6 +169,8 @@
           href: ./canvas-apps/help-desk-install.md
         - name: 会议捕获应用
           href: ./canvas-apps/sample-meeting-capture.md
+        - name: 危机通信应用
+          href: ./canvas-apps/sample-crisis-communication-app.md
     - name: 创建第一个应用
       items:
         - name: 1 - 从模板创建应用
