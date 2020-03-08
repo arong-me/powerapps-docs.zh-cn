@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/04/2020
+ms.date: 03/06/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a547eac25e71467fb751e0a0c6eb30eccdac48ec
-ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
+ms.openlocfilehash: afd7875b804822aa264b134764ed6c35349a3dcf
+ms.sourcegitcommit: b65d5a0cbd5f97a5fa9137c44fe146fb900fd1b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78293456"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78909577"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>设置并了解 Power Apps 中的危机通信示例模板
 
@@ -153,6 +153,9 @@ ms.locfileid: "78293456"
 1. 从命令栏中选择 "**导入**"。
 1. 上传 GitHub 存储库中的**CrisisCommunication**文件：
 
+    > [!NOTE]
+    > 如果你的租户在 GCC 环境中，请使用**CrisisCommunicationGCC**。
+
     ![导入应用程序包](media/sample-crisis-communication-app/31-Import-App.png)
 
 1. 选择“导入”。
@@ -220,18 +223,31 @@ ms.locfileid: "78293456"
 1. 提取通道 ID，该 ID 是 `https://teams.microsoft.com/l/channel/` 之后和 `/General`之前的所有内容。 <br> 例如，在以下 URL 中，通道 ID `19%3ab2fa9fc20f3042a9b63fc5890e1813f8%40thread.tacv2`：
    
    `https://teams.microsoft.com/l/channel/19%3ab2fa9fc20f3042a9b63fc5890e1813f8%40thread.tacv2/General?groupId=8bc7c0c2-0d4c-4fb8-af99-32da74c9237b&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47`，
-   
+
 1. 导航到[flow.microsoft.com](https://flow.microsoft.com)。
+
 1. 从左侧导航栏中选择 **"我的流**"。
-1. 选择**更多命令**（...） 对于**RequestHelp** ，选择 "**编辑**"。
+
+1. 选择**更多命令**（...） 对于**CrisisCommunication** ，选择 "**编辑**"。
+
     ![编辑应用](media/sample-crisis-communication-app/20-Edit-Flow.png)
+
 1. 打开 "**团队 Id** " 卡。
+
 1. 将团队 ID 粘贴到 "**值**" 字段中。
+
 1. 打开**通道 ID**卡。
+
 1. 将通道 ID 粘贴到 "**值**" 字段中。
+
     ![设置团队 Id](media/sample-crisis-communication-app/22-Set-Team-IDs.png)
 
+1. 向下滚动到 "**获取时间**" 操作，并通过所选的源和目标时间更新 "**转换时区**" 的操作：
+
+    ![转换时区](media/sample-crisis-communication-app/convert-time-zone.png)
+
 ## <a name="import-and-set-up-the-admin-app"></a>导入并设置管理应用
+
 若要管理已导入的应用，需要对管理应用重复相同的步骤。
 
 1. 登录到 [Power Apps](https://make.powerapps.com)。
@@ -417,6 +433,9 @@ ms.locfileid: "78293456"
 1. 选择命令栏中的 "**导入**" 按钮。
 1. 从 GitHub 存储库上传**CrisisCommunicationNewsNotification**包：
 
+    > [!NOTE]
+    > 如果你的租户在 GCC 环境中，请使用**CrisisCommunicationNewsNotificationGCC**。
+
     ![上传 CrisisCommunicationNewsNotification](media/sample-crisis-communication-app/upload-news-notification.png)
 
 1. 通过为每个连接选择 "**在导入时选择**" 链接并完成表单，为新流添加连接：
@@ -460,6 +479,10 @@ ms.locfileid: "78293456"
 
 1. 导入完成后，返回到 **"我的流**"。
 1. 选择新导入的流**通知用户有关新的危机通信新闻**。
+
+    > [!NOTE]
+    > 如果上传了 GCC 包，则流名称将**通知用户有关新的危机通信新闻**。
+
 1. 从命令栏中选择 "**编辑**"。
 1. 打开**发布新项时**调用的卡片。
 1. 将**站点地址**更改为你的 SharePoint 站点的名称。
@@ -511,6 +534,20 @@ ms.locfileid: "78293456"
 
 ![Power Query 高级编辑器更新](media/sample-crisis-communication-app/005-PowerQuery-AdvancedEditorUpdates-nolines.PNG)
 
+如果在更新连接信息后看到任何连接错误，则可能需要更新用于连接到 SharePoint 列表的凭据。 请按照以下步骤更新连接：
+
+1. 选择 "**文件**" 菜单、"**选项和设置**"，然后选择 "**数据源设置**"：
+
+    ![数据源设置](media/sample-crisis-communication-app/PBI-1-DataSourceSettings.PNG)
+
+1. 选择**编辑权限**：
+
+    ![编辑权限](media/sample-crisis-communication-app/PBI-2-DataSourceSettings-EditPermissions.PNG)
+
+1. 确保 "*凭据*类型" 设置为 "*组织帐户*"，并使用凭据访问 SharePoint 列表。
+
+    ![编辑权限](media/sample-crisis-communication-app/PBI-3-OrganizationalAccount.PNG)
+
 选择 "**关闭 & 应用**" 以更新报表以从 SharePoint 列表中提取数据。
 
 ![Power Query 关闭并应用](media/sample-crisis-communication-app/006-PowerQuery-CloseAndApply-nolines.PNG)
@@ -518,6 +555,8 @@ ms.locfileid: "78293456"
 现在，我们有了一个 Power BI 报表，其中显示当天办公室缺勤的地理信息，以及一段时间内此类请假的趋势。 现在，我们可以发布报表，以便组织中的其他人可以看到它。
 
 ![Power BI 发布报表](media/sample-crisis-communication-app/007-PowerBI-Publish-nolines.PNG)
+
+你的报表现在已发布。 可以与组织中的其他人共享它。 您还可以[计划报表刷新频率](https://docs.microsoft.com/power-bi/refresh-scheduled-refresh)。
 
 ## <a name="integrate-your-app-into-teams"></a>将你的应用集成到团队
 
@@ -596,6 +635,9 @@ ms.locfileid: "78293456"
 1. 搜索并选择 Power BI 报表。
 1. 选择“保存”。
 
+***免责声明：*** *此应用是一个示例，可与 Microsoft Power Apps 和团队一起使用，以仅分发参考信息。此应用程序不适用于本应用，也不能用作医疗设备、临床支持、诊断工具或其他旨在用于诊断、硬化、缓解、治疗或防范疾病或其他情况的技术，Microsoft 不会出于此目的向使用此应用程序授予任何许可或权利。 此应用程序的设计不是专业的医疗建议、诊断、治疗或毋庸置疑的替代方案，因此不应如此。 客户对此应用程序的任何使用承担了唯一的风险和责任。 Microsoft 不保证在连接与之中提供的应用程序或任何材料将足以满足任何医疗目的或满足任何人的健康或医疗要求。*  
+
 ## <a name="next-steps"></a>后续步骤
+
 - [公式参考](https://docs.microsoft.com/powerapps/maker/canvas-apps/formula-reference)
 - [控件参考](https://docs.microsoft.com/powerapps/maker/canvas-apps/reference-properties)

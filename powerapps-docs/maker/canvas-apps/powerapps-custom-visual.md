@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 12/02/2019
+ms.date: 03/06/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c5814eedfd05ea5bba19a469dad1b3e28c311974
-ms.sourcegitcommit: 6f94650ea540db69d2723c3c5dff9de8c59056cd
+ms.openlocfilehash: 3e06023319cdc799dd7573e830f499fbcf15348d
+ms.sourcegitcommit: 14723b60c9568169c7d7becea06051e7314080bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75859117"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856857"
 ---
 # <a name="power-apps-custom-visual-for-power-bi"></a>适用于 Power BI 的 Power Apps 自定义视觉对象
 
@@ -82,6 +82,7 @@ Power BI 可实现数据见解和更好的决策，而使用 Power Apps，每个
     - 若要在应用中使用此功能，必须在 Power BI 报表中从 Power Apps 自定义视觉对象创建新应用。
     - 必须使用支持[directquery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources)的源，并且必须使用 DirectQuery 方法创建数据连接。
 - Power BI Desktop 中的 power Apps 为在创建应用时，而不是在编辑时为 Power Apps Studio 提供数据。 使用 Power BI Web 在编辑应用时预览数据。
+- Power BI 移动应用不支持在 Power Apps 视觉对象中进行麦克风控制。
 
 > [!NOTE]
 > 建议先将报表发布到 Power BI 服务，然后创建或修改应用。

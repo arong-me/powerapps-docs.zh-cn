@@ -6,21 +6,23 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: ''
-ms.date: 11/27/2019
-ms.author: tapanm
+ms.reviewer: tapanm
+ms.date: 03/04/2020
+ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e2b11b536c29a31053353f3c2616a594208e8acf
-ms.sourcegitcommit: 54d52a9c3c9242f95be54f4444054d9c41ed577c
+ms.openlocfilehash: 227482b383acd3117cc78eddf97698ffa9146698
+ms.sourcegitcommit: 56c8c7cc64695ccb00e0d021c9f98cf70b69b4a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75928891"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78845161"
 ---
 # <a name="connect-to-common-data-service"></a>连接到 Common Data Service
+
+## <a name="overview"></a>概述
 
 你可以在 Common Data Service 中安全地存储你的业务数据，并在 Power Apps 中构建丰富的应用程序，以便用户可以管理该数据。 你还可以将这些数据集成到包含来自 Dynamics 365 的电源自动、Power BI 和数据的解决方案中。
 
@@ -40,4 +42,6 @@ ms.locfileid: "75928891"
 
 Common Data Service 连接器比 Dynamics 365 连接器和接近的特征奇偶校验更可靠。
 
-详细信息：[什么是 Common Data Service？](../../common-data-service/data-platform-intro.md)
+### <a name="common-data-service-and-the-improved-data-source-experience"></a>Common Data Service 和改进的数据源体验
+
+如果在2019年11月之前创建了一个带有 Common Data Service 连接器的画布应用，则可能没有 Common Data Service 的最新版本的权益。 有关更多详细信息以及升级连接，请阅读[Common Data Service 连接改进](../use-native-cds-connector.md)。
