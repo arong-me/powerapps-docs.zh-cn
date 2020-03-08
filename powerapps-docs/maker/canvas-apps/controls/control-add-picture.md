@@ -13,25 +13,25 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d7c1361593595c89bb67781f78a8f67e23f97cac
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 37c98470d3239cefa008235f295aaf9af2db3f5a
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723136"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404187"
 ---
 # <a name="add-picture-control-in-power-apps"></a>在 Power Apps 中添加图片控件
 拍摄照片或加载本地设备中的图像。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 借助此控件，用户可以拍摄照片或者上传自己设备中的图像文件，并使用此内容更新数据源。 在移动设备上，用户将看到设备的选择对话框，以供在拍摄照片或选择已有照片之间进行选择。
 
-此控件是包含两个控件的分组控件：“图像”和“添加媒体按钮”。 如果不上传任何图像，“图像”控件将显示已上传的图像或占位符。 “添加媒体按钮”提示要上传的图像。
+此控件是包含两个控件的分组控件：**图像**和 "**添加图片" 按钮**。 如果不上传任何图像，“图像”控件将显示已上传的图像或占位符。 "**添加图片" 按钮**提示输入要上传的图像。
 
 有关“图像”属性，请参阅[图像控件引用](control-image.md)。
 
-## <a name="add-media-button-properties"></a>“添加媒体按钮”属性
-[AccessibleLabel](properties-accessibility.md) – 屏幕阅读器标签。 应描述添加图片的用途。
+## <a name="add-picture-button-properties"></a>添加图片按钮属性
+**[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。 应描述添加图片的用途。
 
 **[Align](properties-text.md)** – 文本相对于其控件的水平居中的位置。
 
@@ -63,7 +63,7 @@ ChangePictureText – 上传图像时按钮上显示的文本。
 
 [Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md)** -控件中的文本权重：**粗体**、 **Semibold**、 **Normal**或**浅**。
+**[FontWeight](properties-text.md)** - 控件中文本的粗细：粗体、半粗体、一般或较细。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -71,7 +71,7 @@ ChangePictureText – 上传图像时按钮上显示的文本。
 
 [HoverColor](properties-color-border.md) – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。
 
-**[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景色。
+**[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景颜色。
 
 **[Italic](properties-text.md)** – 控件中的文本是否为斜体。
 
@@ -142,12 +142,12 @@ ChangePictureText – 上传图像时按钮上显示的文本。
 适用[按钮](control-button.md)和[图像](control-image.md)的相同准则。 此外，请考虑以下方面：
 
 ### <a name="color-contrast"></a>颜色对比度
-* “添加媒体按钮”必须在其文本和背景之间有足够的对比度。 由于已上传的图像可能具有不同的颜色，请在“添加媒体按钮”上使用不透明的 **[Fill](properties-color-border.md)** 以确保一致对比度。
+* "**添加图片" 按钮**的文本和背景必须具有足够的对比度。 由于上传的图像可能具有不同的颜色，因此请在 "**添加图片" 按钮**上使用不透明 **[填充](properties-color-border.md)** 以确保对比度一致。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* “添加媒体按钮”必须具有“Text”和“ChangePictureText”，提示用户添加或更改图片。
+* "**添加图片" 按钮**的**文本**和**ChangePictureText**必须提示用户添加或更改图片。
 
 ### <a name="keyboard-support"></a>键盘支持
-* “添加媒体按钮”必须具有为零或更大的 **[TabIndex](properties-accessibility.md)** ，以便键盘用户可以导航到它。
-* “添加媒体按钮”必须具有清晰可见的焦点指示器。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
+* "**添加图片" 按钮**的 **[TabIndex](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* "**添加图片" 按钮**必须具有明显可见的聚焦标记。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。
  
