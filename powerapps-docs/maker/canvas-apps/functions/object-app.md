@@ -14,17 +14,17 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: f5f09bab44f3f229b47d9a801703b3aa10cba06d
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729761"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404341"
 ---
 # <a name="app-object-in-power-apps"></a>Power Apps 中的应用对象
 
 提供有关当前正在运行的应用程序的信息，并控制应用程序的行为。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 与控件一样，**应用程序**对象提供的属性用于标识显示的屏幕，并提示用户保存更改，使其不会丢失。 每个应用程序都有一个**应用程序**对象。
 
