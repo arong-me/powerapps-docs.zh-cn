@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 8c7f982f4d2eca1b097a312f74aff70063bf3396
-ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78265137"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403201"
 ---
 # <a name="operators-and-identifiers-in-power-apps"></a>Power Apps 中的运算符和标识符
 

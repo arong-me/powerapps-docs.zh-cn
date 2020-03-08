@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d1397f9fd2859611a3cd54023210a27cd5977834
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724929"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404594"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-power-apps"></a>在 Power Apps 中向画布应用添加数据连接
 
@@ -31,7 +31,7 @@ ms.locfileid: "74724929"
 * 连接到 Common Data Service，并更新应用程序中的实体。
 * 连接到 SQL Server，并从应用更新表。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 [注册](../signup-for-powerapps.md)Power Apps，并[提供注册所](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)用的相同凭据。
 

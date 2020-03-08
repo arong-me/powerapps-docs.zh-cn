@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1cd90e345b41f8316e8cd8c50f4077ee1f64ee91
-ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77145391"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403446"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-power-apps"></a>Power Apps 中的加速、应用、指南针、连接和位置信号
 
