@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1322fd34f4e3a59a62a414fc0e2e7ccca48fc99f
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731974"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404197"
 ---
 # <a name="text-input-control-in-power-apps"></a>Power Apps 中的文本输入控件
 用户可在其中键入文本、数字和其他数据的框。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 用户可通过将数据键入文本输入控件来进行指定。 根据配置应用的方式，该数据可能会被添加到某个数据源、用于计算临时值或以其他某种方式合并。
 
 ## <a name="key-properties"></a>关键属性
@@ -48,7 +48,7 @@ ms.locfileid: "74731974"
 
 **DelayOutput** - 如果设置为 true，用户输入会延迟半秒后注册。  可帮助延迟成本高昂的操作，直到用户完成输入文本（例如，输入用在其他公式中时有益于筛选）。
 
-[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
 **[DisabledBorderColor](properties-color-border.md)** – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件边框的颜色。
 
@@ -66,7 +66,7 @@ ms.locfileid: "74731974"
 
 [Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md)** -控件中的文本权重：**粗体**、 **Semibold**、 **Normal**或**浅**。
+**[FontWeight](properties-text.md)** - 控件中文本的粗细：粗体、半粗体、一般或较细。
 
 **Format** – 用户输入是仅在数量上进行限制，还是限制所有文本。
 
@@ -78,7 +78,7 @@ ms.locfileid: "74731974"
 
 [HoverColor](properties-color-border.md) – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。
 
-**[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景色。
+**[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景颜色。
 
 **[Italic](properties-text.md)** – 控件中的文本是否为斜体。
 
@@ -178,7 +178,7 @@ ms.locfileid: "74731974"
 * 适用[标准颜色对比度要求](../accessible-apps-color.md)。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
+* [“AccessibleLabel”](properties-accessibility.md)必须存在。
 
 ### <a name="keyboard-support"></a>键盘支持
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
