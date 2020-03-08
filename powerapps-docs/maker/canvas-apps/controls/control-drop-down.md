@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: cc9b12f6cf899d0a57e56eda9fe0dd4bc5ba6c2e
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723116"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403843"
 ---
 # <a name="drop-down-control-in-power-apps"></a>Power Apps 中的下拉控件
 一个列表，在用户不将其打开的情况下，该表仅显示第一项。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 “下拉列表”控件可以节省屏幕的实际空间，尤其是在列表包含大量选项时。 此控件仅占用一行空间，除非用户选择箭头符号来显示更多选项。  该控件最多显示 500 项。
 
 ## <a name="key-properties"></a>关键属性
@@ -33,7 +33,7 @@ ms.locfileid: "74723116"
   
 Value - 要在控件中显示的数据列（例如，如果数据源具有多列）。
 
-**Selected** –表示选定项的数据记录。
+**Selected** - 表示选定项的数据记录。
 
 **AllowEmptySelection** –如果未选择任何项，控件是否显示空选择。 应用用户还可以通过选择空白项来清除其选择。
 
@@ -68,7 +68,7 @@ Value - 要在控件中显示的数据列（例如，如果数据源具有多列
 
 [Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md)** -控件中的文本权重：**粗体**、 **Semibold**、 **Normal**或**浅**。
+**[FontWeight](properties-text.md)** - 控件中文本的粗细：粗体、半粗体、一般或较细。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -76,7 +76,7 @@ Value - 要在控件中显示的数据列（例如，如果数据源具有多列
 
 [HoverColor](properties-color-border.md) – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。
 
-**[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景色。
+**[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景颜色。
 
 **[Italic](properties-text.md)** – 控件中的文本是否为斜体。
 
@@ -100,7 +100,7 @@ Value - 要在控件中显示的数据列（例如，如果数据源具有多列
 
 [Reset](properties-core.md) – 是否还原控件的默认值。
 
-**SelectedText （已弃用）** –表示选定项的字符串值。
+**SelectedText (Deprecated)** - 表示选定项的字符串值。
 
 [SelectionColor](properties-color-border.md) – 所选项目或列表中项目的文本颜色，或笔控件中选择工具的颜色。
 
@@ -164,7 +164,7 @@ Value - 要在控件中显示的数据列（例如，如果数据源具有多列
 这是除[标准颜色对比度](../accessible-apps-color.md)以外的要求。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
+* [“AccessibleLabel”](properties-accessibility.md)必须存在。
 
 ### <a name="keyboard-support"></a>键盘支持
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
