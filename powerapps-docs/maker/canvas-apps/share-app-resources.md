@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a1385e45fbbd932e0575c5c5b69b051dc292c824
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: 77ccf02395c4d697a6d2054dd1a6dedda26d6e6e
+ms.sourcegitcommit: 56c8c7cc64695ccb00e0d021c9f98cf70b69b4a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77282325"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78845162"
 ---
 # <a name="share-canvas-app-resources-in-power-apps"></a>共享画布-Power Apps 中的应用资源
 
@@ -40,7 +40,7 @@ ms.locfileid: "77282325"
 
 ## <a name="connections"></a>连接
 
-与其他用户共享应用时，某些连接（例如，通过 SQL 或 Windows 身份验证 SQL Server）会与应用进行[隐式共享](share-app-resources.md#implicit-sharing)。 其他连接需要用户创建其自己的连接（如 OneDrive for Business 或 SQL Server 与 Azure AD 身份验证）。
+与其他用户共享应用时，某些连接（例如，通过 SQL 或 Windows 身份验证 SQL Server）会与应用进行[隐式共享](share-app-resources.md#implicit-sharing)。 其他连接要求用户创建自己的连接，并显式 grant security 权限（例如 Common Data Service、OneDrive for business 的安全角色、SQL Server 与 Azure AD 身份验证）。
 
 当你与其他用户共享应用时，你可以确定是否自动将连接作为应用的一部分进行共享;允许您更新共享权限。 为此，请在 make.powerapps.com 中选择 "**数据**"，并从左侧导航 -> **连接**"。 然后选择所需的连接。 如果 "**共享**" 按钮出现在顶部导航栏上，或者如果选择 "*更多命令*（...）" 时显示 "**共享**" 选项，则所选连接可与其他用户共享。
 

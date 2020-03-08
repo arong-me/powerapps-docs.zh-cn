@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d7fb0e386309f207809204d4f9f582aa3aedfe7e
-ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77089917"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403160"
 ---
 # <a name="understand-canvas-app-variables-in-power-apps"></a>了解 Power Apps 中的画布应用变量
 
