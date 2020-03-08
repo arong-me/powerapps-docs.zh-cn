@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1d98f01920dbcbf960b1e2bb21159586318e0386
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679583"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403549"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>了解画布应用中的委派
-Power Apps 包含一组功能强大的功能，可用于在画布应用中筛选、排序和整理数据表： **[筛选](functions/function-filter-lookup.md)** 、 **[排序](functions/function-sort.md)** 和 **[AddColumns](functions/function-table-shaping.md)** 函数，只需对其进行命名即可。 可以使用这些函数，让用户重点访问其所需的信息。 对于具有数据库背景的用户来说，使用这些函数相当于编写数据库查询。
+Power Apps 包含一组功能强大的功能，用于在画布应用中筛选、排序和成形数据表： **[筛选](functions/function-filter-lookup.md)** 、 **[排序](functions/function-sort.md)** 和 **[AddColumns](functions/function-table-shaping.md)** 函数，只需对其进行命名。 可以使用这些函数，让用户重点访问其所需的信息。 对于具有数据库背景的用户来说，使用这些函数相当于编写数据库查询。
 
 若要生成有效的应用，关键是尽量减少必须转到设备的数据量。 也许在成千上万条记录中，只需要少量记录；也许单个聚合值就可以代表数千条记录。 也许只有第一组记录可以检索，而其余记录是用户在需要更多记录的情况下通过笔势输入的。 进行重点访问可以大幅缩减应用所需的处理能力、内存和网络带宽，提高用户的响应速度，即使使用的是通过移动电话网络连接的手机。 
 
@@ -70,9 +70,9 @@ Power Apps 包含一组功能强大的功能，可用于在画布应用中筛选
 * **[*](functions/operators.md)** 、 **[/](functions/operators.md)** 、 **[Mod](functions/function-mod.md)**
 * **[Concatenate](functions/function-concatenate.md)** （包括 **[&](functions/operators.md)** ）
 * **[ExactIn](functions/operators.md)**
-* 字符串操作函数： **[Lower](functions/function-lower-upper-proper.md)** 、 **[Upper](functions/function-lower-upper-proper.md)** 、 **[Left](functions/function-left-mid-right.md)** 、 **[Mid](functions/function-left-mid-right.md)** 、 **[Len](functions/function-left-mid-right.md)** ...
-* 信号： **[Location](functions/signals.md)** 、 **[Acceleration](functions/signals.md)** 、 **[Compass](functions/signals.md)** ...
-* Volatiles： **[Rand](functions/function-rand.md)** ，。
+* 字符串操作函数： **[Lower](functions/function-lower-upper-proper.md)** 、 **[Upper](functions/function-lower-upper-proper.md)** 、 **[Left](functions/function-left-mid-right.md)** 、 **[Mid](functions/function-left-mid-right.md)** 、 **[Len](functions/function-left-mid-right.md)** 。
+* 引发 **[位置](functions/signals.md)** ， **[加速](functions/signals.md)** ， **[罗盘](functions/signals.md)** ，。
+* Volatiles: **[Rand](functions/function-rand.md)** ，。
 * [集合](working-with-variables.md)
 
 ### <a name="sorting-functions"></a>排序函数
@@ -117,7 +117,7 @@ AddColumns( Products,
 ## <a name="non-delegable-limits"></a>不可委派限制
 将在本地处理不可委派的公式。 这允许使用各种 Power Apps 公式语言。 但是也有代价：所有数据都必须先转到设备上，这可能需要通过网络检索大量的数据。 这可能需要一段时间，让人以为应用很慢或者可能已崩溃。
 
-为避免出现这种情况，Power Apps 会对可在本地处理的数据量施加限制：默认情况下为500记录。  我们选择此数字是为了让你仍然能够对小型数据集进行完整的访问，同时让你虽然只能看到部分结果，也能练习对大型数据集的使用。
+为避免出现这种情况，Power Apps 对可在本地处理的数据量施加限制：默认情况下，500记录。  我们选择此数字是为了让你仍然能够对小型数据集进行完整的访问，同时让你虽然只能看到部分结果，也能练习对大型数据集的使用。
 
 显然，使用此工具时必须小心，因为这可能会让用户感到困惑。 例如，假设有一个 Filter 函数，其选择公式不能委派，需要对有一百万条记录的数据源应用该函数。 由于本地进行筛选，因此仅扫描了前 500 条记录。 如果所需记录是第 501 或第 500,001 个记录，则 Filter 不会考虑或返回该记录。
 
