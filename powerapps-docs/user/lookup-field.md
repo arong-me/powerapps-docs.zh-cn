@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4ef67695603f3badeba92f46c6da90e21715c98b
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.openlocfilehash: 482d06a91d3cb3a7c22e41e4e880aa72294d2b3f
+ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74177849"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78264957"
 ---
 #  <a name="use-the-lookup-field-on-a-record"></a>对记录使用查阅字段
 
@@ -54,9 +54,9 @@ ms.locfileid: "74177849"
   > ![浏览查阅字段](media/MRU.png "浏览查阅字段")  
   
 >[!NOTE]   
-> 查阅搜索的默认搜索结果为“开头”。 这意味着，结果包括以特定词开头的记录。 例如，如果要搜索“Alpine Ski House”，请在搜索框中键入“alp”；如果键入“ski”，则该记录不会显示在搜索结果中    。
+> 查阅搜索的默认搜索结果是“开头为”  。 这意味着，结果包括以特定词开头的记录。 例如，如果要搜索“Alpine Ski House”，请在搜索框中键入“alp”；如果键入“ski”，则该记录不会显示在搜索结果中    。
 >
-> 若要进行通配符搜索，请使用星号：例如，键入 *ski 或 *ski。
+> 若要进行通配符搜索，请使用星号：例如，键入 \*ski 或 \*ski\*。
 
 ## <a name="browse-in-a-lookup-field"></a>在查阅字段中浏览
 若要浏览查阅，请选择查阅图标（放大镜）。 下拉列表中会显示项的完整列表。
