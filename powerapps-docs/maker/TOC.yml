@@ -208,7 +208,11 @@
             - name: 常用连接器
               items:
                 - name: Common Data Service
-                  href: canvas-apps/connections/connection-common-data-service.md
+                  items:
+                    - name: 概述
+                      href: canvas-apps/connections/connection-common-data-service.md
+                    - name: 改进
+                      href: canvas-apps/use-native-cds-connector.md
                 - name: 云存储
                   href: canvas-apps/connections/cloud-storage-blob-connections.md
                 - name: Dynamics 365
@@ -1555,6 +1559,8 @@
           href: ./common-data-service/update-solutions.md
         - name: 导出解决方案
           href: ./common-data-service/export-solutions.md
+        - name: 创建解决方案修补程序
+          href: ./common-data-service/solution-patches.md
         - name: 如何合并托管解决方案
           href: ./common-data-service/how-managed-solutions-merged.md
         - name: 使用环境变量
