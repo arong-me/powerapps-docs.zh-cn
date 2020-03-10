@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 04/23/2018
+ms.date: 03/09/2020
 ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5288e6a8ee655cf24479a7de3a5904b7f1a4e07
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 35e4107934134a229817deb258bacf5e36c9dbb6
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204033"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78970981"
 ---
 # <a name="attachments-control-in-power-apps"></a>Power Apps 中的附件控件
 允许用户将文件下载到其设备，以及上传和删除 SharePoint 列表或 Common Data Service 实体中的文件的控件。
@@ -31,7 +31,7 @@ ms.locfileid: "75204033"
 
 1. 仅当文件为 10 MB 或更小时，才能上载文件。  
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 使用 "**附件**" 控件，可以打开、添加和删除 SharePoint 列表或 Common Data Service 实体中的文件。
 
 ## <a name="key-properties"></a>关键属性
@@ -48,11 +48,11 @@ OnRemove – 当用户删除现有附件时，应用的响应方式。
 [OnSelect](properties-core.md) – 当用户单击附件时，应用的响应方式。
 
 ## <a name="additional-properties"></a>其他属性
-[AccessibleLabel](properties-accessibility.md) – 屏幕阅读器标签。 应描述附件的用途。
+**[AccessibleLabel](properties-accessibility.md)** – 屏幕阅读器标签。 应描述附件的用途。
 
 AddAttachmentText – 用于添加新附件的链接的标签文本。
 
-[BorderColor](properties-color-border.md) – 控件边框的颜色。
+**[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
@@ -60,9 +60,9 @@ AddAttachmentText – 用于添加新附件的链接的标签文本。
 
 [DisplayMode](properties-core.md) – 控件是允许添加和删除文件 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
-[FocusedBorderColor](properties-color-border.md) – 当聚焦到控件时，控件的边框颜色。
+**[FocusedBorderColor](properties-color-border.md)** – 当聚焦到控件时，控件的边框颜色。
 
-[FocusedBorderThickness](properties-color-border.md) – 当聚焦到控件时，控件的边框粗细。
+**[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -70,11 +70,11 @@ MaxAttachmentsText – 当控件中的文件数达到上限时，用于替换“
 
 **NoAttachmentsText** – 在未附加任何文件时向用户显示的说明文本。
 
-[TabIndex](properties-accessibility.md) – 相对于其他控件的键盘导航顺序。
+**[TabIndex](properties-accessibility.md)** – 相对于其他控件的键盘导航顺序。
 
 [Visible](properties-core.md) – 控件可见还是隐藏。
 
-[Width](properties-size-location.md) – 控件左边缘和右边缘之间的距离。
+**[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
 [X](properties-size-location.md) – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
@@ -82,13 +82,15 @@ MaxAttachmentsText – 当控件中的文件数达到上限时，用于替换“
 
 
 ## <a name="example"></a>示例
-1. 使用 SharePoint 列表作为数据源从数据中创建一个应用。 或者，在应用中添加一个窗体，并设置 SharePoint 列表作为其数据源。
+1. 向应用程序添加窗体，并将 SharePoint 列表设置为其数据源。
 
-2. 在左侧树视图中选择“窗体”控件。
+2. 在左侧的树视图中选择 "**显示窗体**" 控件。 您还可以改用 "**编辑表单**"。
 
-3. 单击右侧选项面板中“属性”选项卡中的“数据”。
+3. 在右侧 "选项" 面板的 "属性" 选项卡中选择 "**数据源**"，并选择连接到的 SharePoint 列表。
 
-4. 在“字段”下，启用“附件”字段。
+4. 选择 "**编辑**字段 *"* 部分，然后选择 "**添加字段**"。 
+
+5. 选择 "**附件**" 字段并选择 "**添加**"。
 
     与 SharePoint 列表相关联的“附件”字段将显示在窗体中。
 
@@ -118,5 +120,5 @@ MaxAttachmentsText – 当控件中的文件数达到上限时，用于替换“
 * NoAttachmentsText
 
 ### <a name="keyboard-support"></a>键盘支持
-* “TabIndex”**[](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
-* 焦点指示器必须清晰可见。 可以使用**[“FocusedBorderColor”](properties-color-border.md)** 和**[“FocusedBorderThickness](properties-color-border.md)**”来实现此目的。
+* **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。
+* 焦点指示器必须清晰可见。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。

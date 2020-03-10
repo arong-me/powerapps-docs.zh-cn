@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 6cabcfe58841a5d507ec31b6279cc9a00922850f
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731992"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404160"
 ---
 # <a name="slider-control-in-power-apps"></a>Power Apps 中的滑块控件
 一个控件，用户可通过拖动图柄使用该控件指定值。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 用户可通过左右或上下拖动滑块图柄来指示介于指定的最小值和最大值之间的值，具体取决于所选方向。
 
 ## <a name="key-properties"></a>关键属性
@@ -130,7 +130,7 @@ HandleSize – 句柄直径。
 * RailHoverFill 和背景色
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
+* [“AccessibleLabel”](properties-accessibility.md)必须存在。
 
 ### <a name="keyboard-support"></a>键盘支持
 * **[“TabIndex”](properties-accessibility.md)** 必须为零或更大，以便键盘用户可以导航到它。

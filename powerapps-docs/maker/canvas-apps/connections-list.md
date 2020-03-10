@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d78ce9b571ed925e68747f2307d59f5f143e13eb
-ms.sourcegitcommit: 366f0d1b8309ab1fd533ebd7e1b41a69a99fd25a
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302907"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403404"
 ---
 # <a name="overview-of-canvas-app-connectors-for-power-apps"></a>画布概述-适用于电源应用的应用连接器
 数据是大多数应用程序（包括在 Power Apps 中构建的应用程序）的核心。 数据存储在数据源中，应用是通过创建的连接来连接数据。 连接使用特定的连接器与数据源进行通信。 Power Apps 为许多常用的服务和本地数据源（包括 SharePoint、SQL Server、Office 365、Salesforce 和 Twitter）提供了连接器。 若要开始将数据添加到画布应用，请参阅[在 Power Apps 中添加数据连接](add-data-connection.md)。
@@ -45,9 +45,9 @@ ms.locfileid: "75302907"
   > [!NOTE]
   > 若要连接到 Excel 工作簿数据，工作簿必须托管在 OneDrive 等云存储服务中。 有关详细信息，请参阅[从 Power Apps 连接到云存储](connections/cloud-storage-blob-connections.md)。
 
-## <a name="actions"></a>执行
+## <a name="actions"></a>Actions
 
-如果你的连接器提供操作，则必须与前面一样仍选择数据源。 而不是选择表作为下一步，但是，通过编辑将显示数据的控件的 Items 属性，可以手动将控件连接到操作。 Items 属性所设置的公式指定用于检索数据的操作。 例如，如果连接到 Yammer，然后将 Items 属性设置为数据源的名称，则应用不会检索任何数据。 若要用数据填充控件，请指定 **GetMessagesInGroup(5033622).messages** 等操作。
+如果你的连接器提供操作，则必须与前面一样仍选择数据源。 而不是选择表作为下一步，但是，通过编辑将显示数据的控件的Items 属性，可以手动将控件连接到操作。 Items 属性所设置的公式指定用于检索数据的操作。 例如，如果连接到 Yammer，然后将 Items 属性设置为数据源的名称，则应用不会检索任何数据。 若要用数据填充控件，请指定 **GetMessagesInGroup(5033622).messages** 等操作。
 
 ![操作数据源 Items 属性](./media/connections-list/ItemPropertyAction.png)
 
@@ -74,7 +74,7 @@ ms.locfileid: "75302907"
 | ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
 |![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md)
 
-* * 适用于 Azure Blob、Box、Dropbox、Google Drive、OneDrive 和 OneDrive for business
+\* * 适用于 Azure Blob、Box、Dropbox、Google Drive、OneDrive 和 OneDrive for business
 
 ## <a name="standard-and-custom-connectors"></a>标准和自定义连接器
 Power Apps 为许多常用数据源（如上面列出的数据源）提供*标准*连接器。 如果 Power Apps 为要使用的数据源类型提供了标准连接器，则应使用该连接器。 如果要连接到其他类型的数据源（如已构建的服务），请参阅[注册和使用自定义连接器](../canvas-apps/register-custom-api.md)。

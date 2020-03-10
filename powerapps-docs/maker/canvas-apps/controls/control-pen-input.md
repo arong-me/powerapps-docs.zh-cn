@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a5645f2f0d515d7eca125f3cd89ecff0c63cfa51
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729047"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403870"
 ---
 # <a name="pen-input-control-in-power-apps"></a>Power Apps 中的笔输入控件
 用户可用其进行绘图、擦除和突出显示图像区域的控件。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 用户可以像使用白板一样来使用该控件，绘制关系图和写字都能被转换为键入的文本。
 
 ## <a name="key-properties"></a>关键属性

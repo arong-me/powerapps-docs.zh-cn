@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a7e41f9becc6cf974bffdeca127e549191ee9379
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74730688"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403268"
 ---
 # <a name="language-function-in-power-apps"></a>Power Apps 中的语言功能
 返回当前用户的语言标记。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 **Language** 函数可使用语言标记的形式返回当前用户的语言、脚本或区域。
 
 使用不同区域设置的语言信息定制应用。  例如，如果你正在创建要在意大利和法国使用的应用，可以使用 **Language** 函数自动向位于这些不同位置的用户显示意大利语和法语字符串。 
@@ -31,7 +31,7 @@ ms.locfileid: "74730688"
 ### <a name="language-tags"></a>语言标记
 “语言标记”可以是下面三种格式之一：
 
-| 返回值 | 描述 |
+| 返回值 | 说明 |
 | --- | --- |
 | **"*lg&#8209;RE*"** |*lg* 是语言 (Language) 的两字符缩写形式，*RE* 是区域 (Region) 的两字符缩写形式。  这是最常见的返回类型。  例如，对于英国 (Great Britain)，返回“en-GB”。 |
 | **"*lg*"** |*lg* 是语言的两字符缩写形式。  当电源应用包含有关该语言的信息但没有特定区域的信息时，将使用此格式。 |

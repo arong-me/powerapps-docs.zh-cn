@@ -1,32 +1,32 @@
 ---
 title: Text 属性 | Microsoft 文档
 description: Text、Tooltip 和 HintText 等属性的参考资料
-author: gregli-msft
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/25/2016
-ms.author: gregli
+ms.date: 03/09/2020
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e65bbf31ade0d6eda655d5d307dd8af7ea9b024d
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 9cf65673f0835f174533e30335411f5b864ffb68
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731875"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78970912"
 ---
 # <a name="text-properties-in-power-apps"></a>Power Apps 中的文本属性
-配置控件上显示的文本、工具提示中显示的文本以及当用户键入数据时作为提示显示的文本，并指定其他文本相关特征。
+配置控件上显示的文本，作为用户键入数据时的提示，并指定其他与文本相关的特征。
 
 ## <a name="text-appearance"></a>文本外观
 **Font**：文本中所显示的字体系列的名称。
 
-* 适用于 **[添加图片](control-add-picture.md)** 、 **[按钮](control-button.md)** 、 **[复选框](control-check-box.md)** 、 **[柱形图](control-column-line-chart.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[下拉](control-drop-down.md)** 列表、 **[导出](control-export-import.md)** 、 **[HTML 文本](control-html-text.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[折线图](control-column-line-chart.md)** 、 **[列表框](control-list-box.md)** 、 **[饼图](control-pie-chart.md)** 、 **[单选按钮](control-radio.md)** 、 **[文本输入](control-text-input.md)** 和 **[计时器](control-timer.md)** 控件。
+* 适用于 **[添加图片](control-add-picture.md)** 、 **[按钮](control-button.md)** 、 **[复选框](control-check-box.md)** 、 **[柱形图](control-column-line-chart.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[下拉列表](control-drop-down.md)** 、 **[导出](control-export-import.md)** 、 **[HTML 文本](control-html-text.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[折线图](control-column-line-chart.md)** 、 **[列表框](control-list-box.md)** 、 **[饼图](control-pie-chart.md)** 、 **[单选按钮](control-radio.md)** 、 **[文本输入](control-text-input.md)** 和 **[计时器](control-timer.md)** 控件。
 
 **FontWeight**：控件中文本的粗细：“粗体”、“半粗体”、“正常”或“细体”。
 
@@ -38,7 +38,7 @@ ms.locfileid: "74731875"
 
 **Size**：控件上显示的文本的字号。
 
-* 适用于 **[添加图片](control-add-picture.md)** 、 **[按钮](control-button.md)** 、 **[复选框](control-check-box.md)** 、 **[柱形图](control-column-line-chart.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[下拉](control-drop-down.md)** 列表、 **[导出](control-export-import.md)** 、 **[HTML 文本](control-html-text.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[折线图](control-column-line-chart.md)** 、 **[列表框](control-list-box.md)** 、 **[笔输入](control-pen-input.md)** 、 **[饼图](control-pie-chart.md)** 、 **[单选按钮](control-radio.md)** 、 **[文本输入](control-text-input.md)** 和 **[计时器](control-timer.md)** 控件。
+* 适用于 **[添加图片](control-add-picture.md)** 、 **[按钮](control-button.md)** 、 **[复选框](control-check-box.md)** 、 **[柱形图](control-column-line-chart.md)** 、 **[日期选取器](control-date-picker.md)** 、 **[下拉列表](control-drop-down.md)** 、 **[导出](control-export-import.md)** 、 **[HTML 文本](control-html-text.md)** 、 **[导入](control-export-import.md)** 、 **[标签](control-text-box.md)** 、 **[折线图](control-column-line-chart.md)** 、 **[列表框](control-list-box.md)** 、 **[笔输入](control-pen-input.md)** 、 **[饼图](control-pie-chart.md)** 、 **[单选按钮](control-radio.md)** 、 **[文本输入](control-text-input.md)** 和 **[计时器](control-timer.md)** 控件。
 
 **Strikethrough**：贯穿文本的线是否在控件上显示。
 
