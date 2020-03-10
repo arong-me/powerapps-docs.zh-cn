@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: dd5135aa04a552fc5606918a8158b40457a6eb6f
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724016"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404257"
 ---
 # <a name="connect-to-cloud-storage-from-power-apps"></a>从 Power Apps 连接到云存储
 Power Apps 提供几个云存储连接。 使用其中任何一种连接，都可以存储 Excel 文件，并将其中的信息用于整个应用。 这些连接包括：  
@@ -34,7 +34,7 @@ Power Apps 提供几个云存储连接。 使用其中任何一种连接，都�
   1. 打开 Excel 文件，然后在数据中选择要使用的任意单元格。
   2. 选择插入”选项卡上的“表格”。
   3. 在“另存为表”对话框中，选中“我的表包含标题”复选框，然后选择“确定”。
-  4. 保存所做更改。
+  4. 保存更改。
 
 ## <a name="connect-to-the-cloud-storage-connection"></a>连接云存储连接
 1. 在 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 中，展开“管理”，然后选择“连接”：  
@@ -85,7 +85,7 @@ Power Apps 提供几个云存储连接。 使用其中任何一种连接，都�
 
 涉及 Excel 文件的连接器存在[某些限制](#sharing-excel-tables)。
 
-## <a name="known-limitations"></a>已知的限制
+## <a name="known-limitations"></a>已知限制
 如果尝试在应用中使用 Excel 连接时，**数据类型不受支持**或**未格式化为表**，请[将数据格式化为表](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)。
 
 如果 Excel 数据包含计算列，则无法用于生成应用，也无法将相应数据添加到现有应用中。
@@ -100,7 +100,7 @@ Power Apps 提供几个云存储连接。 使用其中任何一种连接，都�
 ## <a name="helpful-links"></a>有用链接
 查看所有[可用连接](../connections-list.md)。  
 了解如何向应用[添加连接](../add-manage-connections.md)和[数据源](../add-data-connection.md)。  
-[了解表和记录](../working-with-tables.md)（内含表数据源）。  
+[了解表和记录](../working-with-tables.md)以及表格数据源。  
 其他一些库资源包括[显示项列表](../add-gallery.md)和[显示库中的图像和文本](../show-images-text-gallery-sort-filter.md)。
 
 <!--Icon references-->

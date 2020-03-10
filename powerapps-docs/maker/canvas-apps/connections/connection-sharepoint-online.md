@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 0c0f4744e7b323e3262a63278e7c12348142a99b
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727725"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403391"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>从画布应用连接到 SharePoint
 
@@ -178,7 +178,7 @@ ms.locfileid: "74727725"
 
 ## <a name="known-issues"></a>已知问题
 
-### <a name="lists"></a>表
+### <a name="lists"></a>列表
 
 Power Apps 可以读取包含空格的列名，但空格将替换为十六进制转义代码 **"\_x0020\_"** 。 例如，当在数据布局中显示或用于公式时，SharePoint 中的 **"Column Name"** 将显示为 Power Apps 中的 **"Column_x0020_Name"** 。
 
@@ -189,8 +189,8 @@ Power Apps 可以读取包含空格的列名，但空格将替换为十六进制
 | 单行文本 |是 |查看文本 |
 | 多行文本 |是 |查看文本 |
 | 选择 |是 |视图查找<br>编辑查找<br>查看多选<br>编辑多选 |
-| Number |是 |视图百分比<br>视图分级<br>查看文本 |
-| 货币 |是 |视图百分比<br>视图分级<br>查看文本 |
+| 数字 |是 |视图百分比<br>视图分级<br>查看文本 |
+| Currency |是 |视图百分比<br>视图分级<br>查看文本 |
 | 日期和时间 |是 |查看文本 |
 | 查找 |是 |视图查找<br>编辑查找<br>查看多选<br>编辑多选 |
 | 布尔值（是/否） |是 |查看文本<br>视图切换 |
@@ -199,10 +199,10 @@ Power Apps 可以读取包含空格的列名，但空格将替换为十六进制
 | 图片 |是（只读） |视图图像<br>查看文本 |
 | 附件 |是（只读） |查看附件|
 | 已计算 |是（只读） | |
-| 任务结果 |否 | |
-| 外部数据 |否 | |
+| 任务结果 |是 | |
+| 外部数据 |是 | |
 | 托管元数据 |是（只读） | |
-| 评分 |否 | |
+| Rating |是 | |
 
 ### <a name="libraries"></a>库
 

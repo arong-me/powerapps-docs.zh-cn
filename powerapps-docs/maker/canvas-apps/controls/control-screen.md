@@ -14,17 +14,17 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b0e189bc2bfd922839373f009fcc54a34217daba
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732055"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404329"
 ---
 # <a name="screen-control-in-power-apps"></a>Power Apps 中的屏幕控件
 
 一个包含应用中一个或多个其他控件的 UI 元素。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 大多数应用都有多个“屏幕”控件，其中包含[标签](control-text-box.md)控件、[按钮](control-button.md)控件和其他显示数据和支持导航的控件。 有关如何添加屏幕、对屏幕重新排序和配置导航的信息，请查看[添加屏幕](../add-screen-context-variables.md)。
 
@@ -32,7 +32,7 @@ ms.locfileid: "74732055"
 
 **[BackgroundImage](properties-visual.md)** – 显示在屏幕背景中的图像文件名称。
 
-**[Fill](properties-color-border.md)** – 控件的背景颜色。
+**[Fill](properties-color-border.md)** – 控件的背景色。
 
 ## <a name="additional-properties"></a>其他属性
 

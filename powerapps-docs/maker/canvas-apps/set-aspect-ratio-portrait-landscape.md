@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b6ec2006266a15b7552d1a83b2d7d67c14560470
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732978"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404323"
 ---
 # <a name="change-screen-size-and-orientation-of-a-canvas-app-in-power-apps"></a>更改 Power Apps 中画布应用的屏幕大小和方向
 通过更改画布应用的屏幕大小和方向来自定义画布应用。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 创建应用或打开一个应用进行编辑，然后在 "**文件**" 菜单上选择 "**应用设置**"。
 

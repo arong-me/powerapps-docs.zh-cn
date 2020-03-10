@@ -14,17 +14,17 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 66de4ee34cf52f3c351fe3f9c624596e5dd1211d
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649844"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404054"
 ---
 # <a name="label-control-in-canvas-apps"></a>画布应用中的标签控件
 
 一个框，显示文本、数字、日期或货币等数据。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 标签按键入时原封不动地显示指定为文本字符串的数据，或显示指定为公式（计算结果为文本字符串）的数据。 标签通常作为标识另一控件（如评分或音频控件）的标签出现在其他任何控件（如标识屏幕的横幅）之外，或出现在库中以显示项的特定类型信息。
 
@@ -66,7 +66,7 @@ ms.locfileid: "73649844"
 
 **[FocusedBorderThickness](properties-color-border.md)** – 当聚焦到控件时，控件的边框粗细。
 
-**[FontWeight](properties-text.md)** -控件中的文本权重：**粗体**、 **Semibold**、 **Normal**或**浅**。
+**[FontWeight](properties-text.md)** - 控件中文本的粗细：粗体、半粗体、一般或较细。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -74,7 +74,7 @@ ms.locfileid: "73649844"
 
 [HoverColor](properties-color-border.md) – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。
 
-**[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景色。
+**[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景颜色。
 
 **[Italic](properties-text.md)** – 控件中的文本是否为斜体。
 
@@ -192,4 +192,4 @@ ms.locfileid: "73649844"
 ### <a name="keyboard-support"></a>键盘支持
 
 * 如果文本用作按钮或链接， **[“TabIndex”](properties-accessibility.md)** 必须为零或更大。 这允许键盘用户导航到它。
-* 如果文本用作按钮或链接，焦点指示器必须清楚显示。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness](properties-color-border.md)** ”来实现此目的。
+* 如果文本用作按钮或链接，焦点指示器必须清楚显示。 可以使用 **[“FocusedBorderColor”](properties-color-border.md)** 和 **[“FocusedBorderThickness”](properties-color-border.md)** 来实现此目的。

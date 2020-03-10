@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afd7875b804822aa264b134764ed6c35349a3dcf
-ms.sourcegitcommit: b65d5a0cbd5f97a5fa9137c44fe146fb900fd1b9
+ms.openlocfilehash: 7dd989bcd87e910812bf41509585c31c1fc107a9
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78909577"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78971010"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>设置并了解 Power Apps 中的危机通信示例模板
 
@@ -158,6 +158,7 @@ ms.locfileid: "78909577"
 
     ![导入应用程序包](media/sample-crisis-communication-app/31-Import-App.png)
 
+1. 通过选择 "*在导入期间使用 Select* " 超链接选择适当的连接，完成**Microsoft 团队连接**和**Office 365 用户连接**的**导入设置**。 如果它已不存在，则可能必须创建[新连接](add-data-connection.md)。
 1. 选择“导入”。
 
 ### <a name="update-the-sharepoint-connections"></a>更新 SharePoint 连接
@@ -197,6 +198,81 @@ ms.locfileid: "78909577"
     ![连接 SharePoint 列表](media/sample-crisis-communication-app/sharepoint-lists.png)
 
 1. **保存**并**发布**应用。
+
+#### <a name="disable-location-updates"></a>禁用位置更新
+
+此应用记录用户位置，并在用户设置其状态时将其存储在 SharePoint 站点中。 这允许危机管理团队查看 Power BI 报表中的数据。
+
+若要禁用此功能，请执行以下步骤：
+
+  1. 搜索**btnDateRange**控件
+  1. 在编辑栏中打开**btnDateRante**控件的**OnSelect**属性。
+  1. 在**OnSelect**属性的编辑栏中复制并粘贴以下代码片段：
+
+  ```
+  UpdateContext({locSaveDates: true});
+
+// Store the output properties of the calendar in static variables and collections.
+Set(varStartDate,First(Sort(Filter(selectedDates,ComponentId=CalendarDatePicker_1.Id),Date,Ascending)).Date);
+Set(varEndDate,First(Sort(Filter(selectedDates,ComponentId=CalendarDatePicker_1.Id),Date,Descending)).Date);
+
+// Create a new record for work status for each date selected in the date range.
+ForAll(
+    Filter(
+        RenameColumns(selectedDates,"Date","DisplayDate"),
+        ComponentId=CalendarDatePicker_1.Id,
+        !(DisplayDate in colDates.Date)
+    ),
+    Patch('CI_Employee Status',Defaults('CI_Employee Status'),
+        {
+            Title: varUser.userPrincipalName,
+            Date: DisplayDate,
+            Notes: "",
+            PresenceStatus: LookUp(Choices('CI_Employee Status'.PresenceStatus),Value=WorkStatus_1.Selected.Value),
+            
+             
+            Latitude: Blank(),
+            Longitude: Blank()
+        }
+    )
+);
+
+// Update existing dates with the new status.
+ForAll(
+    AddColumns(
+        Filter(
+            RenameColumns(selectedDates,"Date","DisplayDate"),
+            ComponentId=CalendarDatePicker_1.Id,
+            DisplayDate in colDates.Date
+        ),
+        
+        // Get the current record for each existing date.
+        "LookUpId",LookUp(RenameColumns(colDates,"ID","DateId"),And(Title=varUser.userPrincipalName,Date=DisplayDate)).DateId
+    ),
+    Patch('CI_Employee Status',LookUp('CI_Employee Status',ID=LookUpId),
+        {
+            PresenceStatus: LookUp(Choices('CI_Employee Status'.PresenceStatus),Value=WorkStatus_1.Selected.Value)
+        }
+    )
+);
+
+If(
+    IsEmpty(Errors('CI_Employee Status')),
+    Notify("You successfully submitted your work status.",NotificationType.Success,5000);
+    
+    // Update the list of work status for the logged-in user.
+    ClearCollect(colDates,Filter('CI_Employee Status',Title=varUser.userPrincipalName));
+    
+    Navigate('Share to Team Screen',LookUp(colStyles,Key="navigation_transition").Value),
+    
+    Notify(
+        LookUp(colTranslations,Locale=varLanguage).WorkStatusError,
+        NotificationType.Warning
+    )
+);
+
+UpdateContext({locSaveDates: false})
+```
 
 ### <a name="update-the-request-help-flow"></a>更新请求帮助流
 
