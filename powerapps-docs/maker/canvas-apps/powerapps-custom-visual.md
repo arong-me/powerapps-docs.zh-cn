@@ -1,5 +1,5 @@
 ---
-title: 适用于 Power BI 的 Power Apps 自定义视觉对象 |Microsoft Docs
+title: 适用于 Power BI 的 Power Apps 视觉对象 |Microsoft Docs
 description: 有关嵌入使用相同数据源并可像 PowerBI 中其他报表项一样进行筛选的画布应用的步骤和限制
 author: chmoncay
 manager: kvivek
@@ -7,28 +7,28 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/06/2020
+ms.date: 03/11/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3e06023319cdc799dd7573e830f499fbcf15348d
-ms.sourcegitcommit: 14723b60c9568169c7d7becea06051e7314080bc
+ms.openlocfilehash: b3678c01210d5cb0398ce12e2111dba516404cfe
+ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78856857"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133606"
 ---
-# <a name="power-apps-custom-visual-for-power-bi"></a>适用于 Power BI 的 Power Apps 自定义视觉对象
+# <a name="power-apps-visual-for-power-bi"></a>适用于 Power BI 的 Power Apps 视觉对象
 
-Power BI 可实现数据见解和更好的决策，而使用 Power Apps，每个人都可以构建和使用连接到业务数据的应用。 使用 Power Apps 自定义视觉对象，可以将上下文感知数据传递给画布应用，这会在对报表进行更改时进行实时更新。 现在，应用用户可直接通过 Power BI 报表和仪表板获取业务见解并相应采取行动。
+Power BI 可实现数据见解和更好的决策，而使用 Power Apps，每个人都可以构建和使用连接到业务数据的应用。 使用 Power Apps 视觉对象，可以将上下文感知数据传递给画布应用，这会在对报表进行更改时进行实时更新。 现在，应用用户可直接通过 Power BI 报表和仪表板获取业务见解并相应采取行动。
 
-## <a name="using-the-power-apps-custom-visual"></a>使用 Power Apps 自定义视觉对象
+## <a name="using-the-power-apps-visual"></a>使用 Power Apps 视觉对象
 
-让我们看一下在 Power BI 报表中使用 Power Apps 自定义视觉对象所需的步骤。
+让我们看一下在 Power BI 报表中使用 Power Apps 视觉对象所需的步骤。
 
-1. 默认情况下，在 Power BI 服务中提供 Power Apps 自定义视觉对象。 如果你正在使用 Power BI Desktop 但看不到此版本，则必须升级到 Power BI Desktop 的最新版本。
+1. 默认情况下，可在 Power BI 服务中使用 Power Apps 视觉对象。 如果你正在使用 Power BI Desktop 但看不到此版本，则必须升级到 Power BI Desktop 的最新版本。
 
 2. 将 "Power Apps" 视觉对象添加到报表，并设置与其关联的数据字段。
 
@@ -45,7 +45,7 @@ Power BI 可实现数据见解和更好的决策，而使用 Power Apps，每个
     如果你创建一个新应用程序，电源应用程序将创建一个简单的应用程序，其中已设置了所需的组件。
 
     > [!NOTE]
-    > 你必须在 Power BI 报表中从 Power Apps 自定义视觉对象创建新应用，以使 `PowerBIIntegration.Refresh()` 函数在应用中可用。
+    > 你必须在 Power BI 报表中从 Power Apps 视觉对象创建一个新应用，以便 `PowerBIIntegration.Refresh()` 函数在应用中可用。
 
     ![新建应用](./media/powerapps-custom-visual/new-app.png)
 
@@ -69,17 +69,17 @@ Power BI 可实现数据见解和更好的决策，而使用 Power Apps，每个
 
     ![编辑应用](./media/powerapps-custom-visual/edit-app.png)
 
-## <a name="limitations-of-the-power-apps-custom-visual"></a>Power Apps 自定义视觉对象的限制
+## <a name="limitations-of-the-power-apps-visual"></a>Power Apps 视觉对象的限制
 
-适用于 Power Apps 自定义视觉对象的以下限制：
+适用于 Power Apps 视觉对象的以下限制：
 
 - 如果更改与视觉对象关联的数据字段，必须通过选择省略号 (...)，然后选择“编辑”，从 Power BI 服务内部编辑应用。 否则，所做的更改不会传播到 Power Apps，应用将以意外的方式运行。
-- Power Apps 自定义视觉对象无法触发刷新 Power BI 报表和 Power BI Power BI Desktop 内的数据源。 如果将应用程序中的数据写回与报表相同的数据源，则所做的更改将不会立即反映在 Power BI Desktop 中。 更改会在下一个计划的刷新后得到反映。
-- Power Apps 自定义视觉对象无法筛选数据或将任何数据发送回报表。
+- Power Apps 视觉对象无法触发刷新 Power BI 报表和 Power BI Power BI Desktop 内的数据源。 如果将应用程序中的数据写回与报表相同的数据源，则所做的更改将不会立即反映在 Power BI Desktop 中。 更改会在下一个计划的刷新后得到反映。
+- Power Apps 视觉对象无法筛选数据或将任何数据发送回报表。
 - 需要与报表分开共享 "Power Apps" 应用。 了解如何[在 Power apps 中共享应用](share-app.md)。
-- Power BI 报表服务器不支持 Power Apps 自定义视觉对象。
+- Power BI 报表服务器不支持 Power Apps 视觉对象。
 - 使用 `PowerBIIntegration.Refresh()` 函数时，以下限制适用：
-    - 若要在应用中使用此功能，必须在 Power BI 报表中从 Power Apps 自定义视觉对象创建新应用。
+    - 若要在应用中使用此功能，你必须从 Power BI 报表中的 Power Apps 视觉对象创建新应用。
     - 必须使用支持[directquery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources)的源，并且必须使用 DirectQuery 方法创建数据连接。
 - Power BI Desktop 中的 power Apps 为在创建应用时，而不是在编辑时为 Power Apps Studio 提供数据。 使用 Power BI Web 在编辑应用时预览数据。
 - Power BI 移动应用不支持在 Power Apps 视觉对象中进行麦克风控制。
@@ -89,7 +89,7 @@ Power BI 可实现数据见解和更好的决策，而使用 Power Apps，每个
 
 ## <a name="browser-support"></a>浏览器支持
 
-下表列出了可用于查看、创建和修改 Power Apps 自定义视觉对象操作的浏览器可支持性。 支持的浏览器和操作由复选标记（&check;）标识。
+下表列出了可用于查看、创建和修改 Power Apps 视觉对象操作的浏览器可支持性。 支持的浏览器和操作由复选标记（&check;）标识。
 
 |浏览器|视图|创建|修改
 |-|-|-|-
@@ -100,7 +100,7 @@ Power BI 可实现数据见解和更好的决策，而使用 Power Apps，每个
 |Mozilla Firefox
 |所有其他浏览器
 
-在 Safari 中 \*，你必须启用跨站点跟踪（**首选项** > **隐私**，并清除**阻止跨站点跟踪**）以查看 Power Apps 自定义视觉对象。
+在 Safari 中 \*，你必须启用跨站点跟踪（**首选项** > **隐私**，并清除**阻止跨站点跟踪**）以查看电源应用视觉对象。
 
 ## <a name="accessibility-support"></a>辅助功能支持
 
@@ -116,5 +116,5 @@ Power BI 可实现数据见解和更好的决策，而使用 Power Apps，每个
 
 ## <a name="next-steps"></a>后续步骤
 
-* 演练简单的[分步教程](embed-powerapps-powerbi.md)。
+* 演练简单的[分步教程](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-powerapp)。
 * 请查看我们的[视频](https://aka.ms/powerappscustomvisualvideo)。

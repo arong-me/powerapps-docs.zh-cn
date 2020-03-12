@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 23bfbb3b97764a427d5422e4ad207d4af7cc1589
-ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
+ms.openlocfilehash: 927b8dae59a4dc6fc55d74c1998b0d434eb8356c
+ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77530779"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133579"
 ---
 # <a name="trace-function"></a>Trace 函数 
 
@@ -28,10 +28,10 @@ ms.locfileid: "77530779"
 
 ## <a name="syntax"></a>语法
 
-Trace(message, severity, custom_record)
+*Trace （message，trace_severity，custom_record）*
 
 - *Message* - 必需。 要跟踪的信息。 在测试中，这会在 TestCaseResult 记录的 Traces 表中创建一条记录。 
-- Severity - 可选。 Application Insights 中记录的 Trace 的严重性级别。 选项包括 Information、Warning 或 Error。 
+- *Trace_severity* -可选。 Application Insights 中记录的 Trace 的严重性级别。 选项包括 TraceSeverity、TraceSeverity 或 TraceSeverity。 
 - custom_record - 可选。 包含将记录到 Application Insights 中的自定义数据的记录。 
   
 
