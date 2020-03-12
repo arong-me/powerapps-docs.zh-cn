@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 13ec511c692af8694012f94f881cb02ee1280ee2
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 65a650b979c4196eff8c103717a63aea5309ec57
+ms.sourcegitcommit: 551af7e0273862b28d9b2387671a4eeaf719eb37
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404361"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79084642"
 ---
 # <a name="model-driven-sample-apps"></a>模型驱动示例应用
 
@@ -33,10 +33,10 @@ ms.locfileid: "78404361"
 
 ## <a name="get-sample-apps"></a>获取示例应用
 
-若要播放或编辑模型驱动示例应用，必须首先在 Common Data Service 数据库中预配应用。 首先创建试用环境和数据库，并确保选中“包括示例应用和数据”。
+若要播放或编辑模型驱动示例应用，必须首先在 Common Data Service 数据库中预配应用。 首先创建一个试用环境和数据库，并确保选择**Depoly 示例应用和数据**。
 
-![创建数据库](media/overview-model-driven-samples/create-database1.png)
-
+> [!div class="mx-imgBorder"] 
+> ![创建数据库](media/overview-model-driven-samples/create-database1.png)
 
 > [!IMPORTANT]
 > 此选项会在数据库中安装所有可用示例应用。 示例应用适用于教育和演示目的，我们不建议在生产数据库中安装它们。 
@@ -45,13 +45,13 @@ ms.locfileid: "78404361"
 
 1. 登录到[powerapps.com](https://powerapps.com)  
 
-    
+2. 从 "**创建**" 页中，选择示例应用并单击 "**创建**"。
 
-2. 在 "**创建**" 页上，将鼠标悬停在示例应用上，然后单击 "**生成此应用**"。
+> [!div class="mx-imgBorder"] 
+> ![模型示例应用](media/overview-model-driven-samples/model-driven-create-page-sample.png)
 
-![模型示例应用](media/overview-model-driven-samples/model-driven-create-page-sample.png)
+3. 此时将打开应用设计器，为自定义应用提供多个选项。
 
-3. 此时将打开应用设计器，为自定义应用提供多个选项。 
 4. 有关其他自定义选项，请在门户的左侧导航栏中单击 "**高级**"。
 
 ## <a name="remove-sample-apps-and-data"></a>删除示例应用和数据 

@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/06/2020
+ms.date: 03/11/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7dd989bcd87e910812bf41509585c31c1fc107a9
-ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
+ms.openlocfilehash: 742d33b2d87969df19fe6c0e82f96ecfa9da27e4
+ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "78971010"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133621"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>设置并了解 Power Apps 中的危机通信示例模板
 
@@ -37,12 +37,20 @@ ms.locfileid: "78971010"
 - 导入流以向用户发送通知
 - 创建集中管理的团队，以聚合数据并有效响应问题
 
+> [!NOTE]
+> "危机通信示例" 模板还适用于 "Power Apps 和 Power 适用于 Power Apps 和 Power Apps 的服务 Url 与商业版本不同。 详细信息：[电源应用美国政府服务 url](https://docs.microsoft.com/power-platform/admin/powerapps-us-government#power-apps-us-government-service-urls)和[电源自动执行美国政府服务 url](https://docs.microsoft.com/power-automate/us-govt#power-automate-us-government-service-urls)。
+
 ## <a name="prerequisites"></a>先决条件
 
 - [注册](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)电源应用的 。
 - 您必须具有有效的 SharePoint Online 许可证和权限才能创建列表。
 - 您必须有一个公共 SharePoint 站点，您可以在其中存储应用程序的数据。
 - 从[aka.ms/CrisisCommunicationSolution](https://aka.ms/CrisisCommunicationSolution)下载资产。
+
+> [!IMPORTANT]
+> 有关与**危机通信应用**相关的任何反馈或问题，请使用以下链接：
+> - **[意见](https://aka.ms/crisis-communication-feedback)**
+> - **[发放](https://aka.ms/crisis-communication-issues)**
 
 ## <a name="create-a-home-for-your-data"></a>为数据创建家庭
 
@@ -119,7 +127,7 @@ ms.locfileid: "78971010"
 
 > [!NOTE]
 > 你可能会收到一条错误，指出需要位置服务。
-如果发生这种情况，请在重试之前允许定位服务自动启动并刷新页面。
+如果发生这种情况，则允许定位服务在重试之前自动完成并刷新页面。
 
 然后，流将在 SharePoint 站点中创建以下 SharePoint 列表：
 
@@ -136,7 +144,7 @@ ms.locfileid: "78971010"
 
 > [!NOTE]
 > - 上面列出的所有列表列都应被视为依赖项。
-    请防止列表意外进行架构更改（例如，允许添加新列，但删除列可能会破坏应用程序。）
+    防止列表意外进行架构更改（例如，允许添加新列，但删除列可能会破坏应用。）
 > - 删除列表项时请小心;删除列表项会删除历史记录。 可以将弃用值从 "*否*" 切换为 *"是"* 以从联系人、新闻、faq 或链接中删除记录。
 
 ## <a name="import-and-set-up-the-crisis-communication-app"></a>导入并设置危机通信应用
@@ -169,9 +177,7 @@ ms.locfileid: "78971010"
 
     ![编辑应用](media/sample-crisis-communication-app/05-Edit-App.png)
 
-1. **登录**或创建任何所需的连接，并选择 "**允许**"：
-
-    ![允许连接](media/sample-crisis-communication-app/allow-connections.png)
+1. **登录**或创建任何所需的连接，然后选择 "**允许**"。
 
 1. 在左窗格中导航到数据源：
 
@@ -199,11 +205,11 @@ ms.locfileid: "78971010"
 
 1. **保存**并**发布**应用。
 
-#### <a name="disable-location-updates"></a>禁用位置更新
+#### <a name="enable-location-updates"></a>启用位置更新
 
-此应用记录用户位置，并在用户设置其状态时将其存储在 SharePoint 站点中。 这允许危机管理团队查看 Power BI 报表中的数据。
+此应用允许你记录用户的位置，并在用户设置其状态时将其存储在 SharePoint 站点中。 危机管理团队可以在 Power BI 报表中查看此数据。
 
-若要禁用此功能，请执行以下步骤：
+若要启用此功能，请执行以下步骤：
 
   1. 搜索**btnDateRange**控件
   1. 在编辑栏中打开**btnDateRante**控件的**OnSelect**属性。
@@ -231,8 +237,8 @@ ForAll(
             PresenceStatus: LookUp(Choices('CI_Employee Status'.PresenceStatus),Value=WorkStatus_1.Selected.Value),
             
              
-            Latitude: Blank(),
-            Longitude: Blank()
+            Latitude: Location.Latitude,
+            Longitude: Location.Longitude
         }
     )
 );
@@ -329,7 +335,7 @@ UpdateContext({locSaveDates: false})
 1. 登录到 [Power Apps](https://make.powerapps.com)。
 1. 从左侧导航栏中选择 "**应用**"。
 1. 从命令栏中选择 "**导入**"。
-1. 上传 GitHub 存储库中的**CrisisCommunicationAdminApp**文件：
+1. 上传 GitHub 存储库中的**CrisisCommunicationAdmin**文件：
 
     ![导入应用程序包](media/sample-crisis-communication-app/import-app.png)
 
@@ -390,15 +396,19 @@ UpdateContext({locSaveDates: false})
 
 填写所有字段，然后选择 "**保存**"。
 
-| **字段名称** | **SharePoint 中的逻辑名称** | 用途 |
-|-|-|-|
-| 管理员电子邮件 | AdminContactEmail | 用于通知其他正在管理应用程序的用户。 |
-| 徽标 URL | Logo | 将在左上角显示的应用的徽标。 |
-| AAD 组 ID | AADGroupID | 用于向最终用户发送通知，告知最终用户有关内部公司更新的信息，请通过*通知用户了解新的危机通信新闻*流。 |  
-| 应用程序 URL | AppURL | 应用的位置，以便在新的*危机通信新闻流上通知用户*可以在选择 "**阅读更多**" 后重定向用户。 | 
-| 政府 RSS 源 | GovernmentRSSFeed | 用于在应用程序中填充世界上的新闻功能。 如果你想要从受信任的源向你的员工提供其他信息，则此方法很有用。 |
-| 通知方法 | PreferredSentNotification | 由在*新的危机通信新闻流上通知用户*，用于确定它在发出通知时应使用哪个分发通道。 |
-| 功能标志 | Feature1 .。。8 | 用于禁用或启用应用程序中的每个功能。 |
+| **字段名称** | **SharePoint 中的逻辑名称** | 用途 | **示例** |
+|-|-|-|-|
+| 管理员电子邮件 | AdminContactEmail | 用于通知其他正在管理应用程序的用户。  | admin@contoso.com |
+| 徽标 URL | Logo | 将在左上角显示的应用的徽标。 | https://contoso.com/logo.png |
+| AAD 组 ID | AADGroupID | 用于向最终用户发送通知，告知最终用户有关内部公司更新的信息，请通过*通知用户了解新的危机通信新闻*流。 请按照下面的说明来获取组的 AAD ID。 | c0ddf873-b4fe-4602-b3a9-502dd944c8d5 |
+| 应用程序 URL | AppURL | 最终用户应用的位置，以便在*新的危机通信新闻流上通知用户*可以在选择 "**阅读更多**" 后重定向用户。 | https://apps.preview.powerapps.com/play/<app URL>？ tenantId =<tenant ID>
+| 政府 RSS 源 | GovernmentRSSFeed | 用于在应用程序中填充世界上的新闻功能。 如果你想要从受信任的源向你的员工提供其他信息，则此方法很有用。 | https://www.who.int/rss-feeds/news-english.xml |
+| 通知方法 | PreferredSentNotification | 由在*新的危机通信新闻流上通知用户*，用于确定它在发出通知时应使用哪个分发通道。 此字段为必填字段。 | 电子邮件，团队通知，推送通知 |
+| 功能标志 | Feature1 .。。8 | 用于禁用或启用应用程序中的每个功能。 |  |
+
+> [!NOTE]
+> GCC 当前不支持团队通知和推送通知。
+
 
 #### <a name="finding-the-aad-of-your-distribution-group"></a>查找通讯组的 AAD
 1. 导航到[aad.portal.azure.com](https://aad.portal.azure.com)
@@ -587,7 +597,7 @@ UpdateContext({locSaveDates: false})
 
 ## <a name="monitor-office-absences-with-power-bi"></a>用 Power BI 监视办公室请假
 
-部署了应用后，人们开始通知他们出于各种原因（例如，病假或在家工作），就可以使用 Power BI 报表来跟踪这些人员所在的数量和位置，你现在可以使用报表来跟踪这些人员的位置。
+部署了应用后，人们开始通知他们出于各种原因（例如，病假或在家工作），就可以使用 Power BI 报表来跟踪这些人员所在的数量和位置，你现在可以使用报表来跟踪这些人员的位置。 请注意，你需要[启用位置跟踪](#enable-location-updates)以使地图控件正常工作。
 
 若要开始，可以使用已下载的[资产包](#prerequisites)中提供的示例报表 "状态报告 .pbix"。
 如果需要，请下载[Power BI Desktop](https://powerbi.microsoft.com/downloads)。 我们还需要在之前创建的**CI_Employee 状态**SharePoint 列表中显示一些信息，因此让我们先来了解一下。 在网站中打开列表，并在 "设置" 图标下选择 "列表设置"：
@@ -710,6 +720,25 @@ UpdateContext({locSaveDates: false})
 1. 搜索并选择**Power BI**。
 1. 搜索并选择 Power BI 报表。
 1. 选择“保存”。
+
+## <a name="faq"></a>常见问题
+
+1. **运行此解决方案需要哪些许可证？**
+
+    - 此应用中的解决方案使用 Office 连接器。 因此，Office 中的种子 Power Apps 许可证足以运行和播放用户和管理应用。 有关详细信息，请参阅[Power Platform 许可概述](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)。 
+    - 如果要使用 Power BI 报表（打包为解决方案的一部分），则需要具有 Power BI 许可证。 阅读[Power BI 定价](https://powerbi.microsoft.com/pricing/)详细信息。
+
+1. **如果我有关于解决方案的反馈，我应该怎么办？**
+
+    我们非常乐意知道如何部署和自定义此解决方案。 若要分享你的体验，请参阅[aka.ms/crisis-communication-feedback](https://aka.ms/crisis-communication-feedback)。
+
+1. **我似乎在应用中发现了 bug;我应该从哪里着手？**
+
+   若要使用解决方案提交 bug，请参阅[aka.ms/crisis-communication-issues](https://aka.ms/crisis-communication-issues)。
+
+1. **GCC 当前不支持哪些功能？**
+
+    适用于团队和推送通知连接器的电源自动机器人连接器当前不适用于 GCC。 使用电子邮件选项向用户通知适用于 GCC 的内部新闻更新。
 
 ***免责声明：*** *此应用是一个示例，可与 Microsoft Power Apps 和团队一起使用，以仅分发参考信息。此应用程序不适用于本应用，也不能用作医疗设备、临床支持、诊断工具或其他旨在用于诊断、硬化、缓解、治疗或防范疾病或其他情况的技术，Microsoft 不会出于此目的向使用此应用程序授予任何许可或权利。 此应用程序的设计不是专业的医疗建议、诊断、治疗或毋庸置疑的替代方案，因此不应如此。 客户对此应用程序的任何使用承担了唯一的风险和责任。 Microsoft 不保证在连接与之中提供的应用程序或任何材料将足以满足任何医疗目的或满足任何人的健康或医疗要求。*  
 
