@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1322fd34f4e3a59a62a414fc0e2e7ccca48fc99f
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404197"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212322"
 ---
 # <a name="text-input-control-in-power-apps"></a>Power Apps 中的文本输入控件
 用户可在其中键入文本、数字和其他数据的框。

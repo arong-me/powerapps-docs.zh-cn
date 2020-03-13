@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b2da6fd3ac8c4d69eb702ac7537dfefa2e5e94f6
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403869"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211954"
 ---
 # <a name="microphone-control-in-power-apps"></a>Power Apps 中的麦克风控件
 允许应用用户从其设备录音的控件。

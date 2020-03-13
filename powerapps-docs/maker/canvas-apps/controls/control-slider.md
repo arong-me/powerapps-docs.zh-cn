@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 6cabcfe58841a5d507ec31b6279cc9a00922850f
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404160"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212115"
 ---
 # <a name="slider-control-in-power-apps"></a>Power Apps 中的滑块控件
 一个控件，用户可通过拖动图柄使用该控件指定值。

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: cc9b12f6cf899d0a57e56eda9fe0dd4bc5ba6c2e
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403843"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212207"
 ---
 # <a name="drop-down-control-in-power-apps"></a>Power Apps 中的下拉控件
 一个列表，在用户不将其打开的情况下，该表仅显示第一项。
