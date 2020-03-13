@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d1397f9fd2859611a3cd54023210a27cd5977834
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404594"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212276"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-power-apps"></a>在 Power Apps 中向画布应用添加数据连接
 
