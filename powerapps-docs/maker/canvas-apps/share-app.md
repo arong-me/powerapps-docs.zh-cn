@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e21db21ff9c161e8ae8ab55d4d3ef295da7d419e
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75676199"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211379"
 ---
 # <a name="share-a-canvas-app-in-power-apps"></a>在 Power Apps 中共享画布应用
 
@@ -27,7 +27,7 @@ ms.locfileid: "75676199"
 > [!IMPORTANT]
 > 要使共享应用按预期运行，还必须管理应用所基于的数据源或源的权限，如[Common Data Service](#common-data-service)或[Excel](share-app-data.md)。 可能还需要共享应用依赖的[其他资源](share-app-resources.md)，例如流、网关或连接。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 共享应用前，必须将其保存至云（而非本地），然后发布应用。
 
@@ -52,7 +52,7 @@ ms.locfileid: "75676199"
 1. 按名称或别名指定 Azure Active Directory 要与之共享应用的用户或安全组。
 
     - 若要允许整个组织运行应用（但不修改或共享），请在 "共享" 面板中键入**Everyone** 。
-    - 如果项由分号分隔，则可以使用别名列表、友好名称或这些项的组合（例如， **Jane Doe &lt;jane.doe@contoso.com** ）来共享应用。 如果有多个用户具有相同名称但具有不同的别名，则会将找到的第一个人员添加到列表。 如果名称或别名已经有权限或无法解析，则会出现工具提示。 
+    - 如果项由分号分隔，则可以使用别名列表、友好名称或这些项的组合（例如， **Jane Doe &lt;jane.doe@contoso.com>**）来共享应用。 如果有多个用户具有相同名称但具有不同的别名，则会将找到的第一个人员添加到列表。 如果名称或别名已经有权限或无法解析，则会出现工具提示。 
 
     ![指定用户和共同所有者](./media/share-app/share-everyone.png)
 
@@ -111,7 +111,7 @@ ms.locfileid: "75676199"
 
 1. 使用 PowerShell[连接到 Azure AD](https://docs.microsoft.com/powershell/module/azuread/connect-azuread) ：
 
-    ![Connect-AzureAD](media/share-app/azure_cmdlet_connect.png)
+    ![连接-AzureAD](media/share-app/azure_cmdlet_connect.png)
 
 1. 使用 ```Get-AzureADGroup -ObjectId <ObjectID\> |
     select *```获取[组详细信息](https://docs.microsoft.com/powershell/module/AzureAD/Get-AzureADGroup)。 <br> 在输出中，确保将属性**SecurityEnabled**设置为**True**：
@@ -133,7 +133,7 @@ ms.locfileid: "75676199"
 
 ### <a name="common-data-service"></a>Common Data Service
 
-如果基于 Common Data Service 创建应用，还必须确保与你共享应用的用户具有应用所依赖实体的相应权限。 具体而言，这些用户必须属于能够执行创建、读取、写入以及删除相关记录等任务的安全角色。 在许多情况下，你会希望创建一个或多个自定义安全角色并包含用户运行应用所需的确切权限。 然后你可以视情况为每个用户分配角色。
+如果创建基于 Common Data Service 的应用，则还必须确保共享该应用的用户对该应用所依赖的一个或哪些实体具有适当的权限。 具体而言，这些用户必须属于一个安全角色，该安全角色可以执行创建、读取、写入和删除相关记录等任务。 在许多情况下，你需要创建一个或多个自定义安全角色，该角色具有用户运行该应用程序所需的确切权限。 然后，可以根据需要向每个用户分配一个角色。
 
 > [!NOTE]
 > 在撰写本文时，可以将安全角色分配给 Azure Active Directory 中的单个用户和安全组，但不能分配给 Office 组。
@@ -161,7 +161,7 @@ ms.locfileid: "75676199"
 > [!NOTE]
 > 只能为与他们共享的应用分配**用户**角色，而不能为其分配**共同所有者**角色。
 
-### <a name="prerequisites"></a>必备组件
+### <a name="prerequisites"></a>先决条件
 - 在 Azure Active Directory （Azure AD）中，为租户启用 B2B 外部协作。 详细信息：[启用 B2B 外部协作并管理可以邀请来宾的人员](/azure/active-directory/b2b/delegate-invitations)
     - 默认情况下启用 B2B 外部协作。 但是，租户管理员可以更改这些设置。 有关 Azure AD B2B 的详细信息，请参阅[什么是来宾用户在 AZURE AD B2B 中的访问权限？](/azure/active-directory/b2b/what-is-b2b)  
 - 对可将来宾用户添加到 Azure AD 租户的帐户的访问权限。 具有来宾邀请者角色的管理员和用户可以将来宾添加到租户。   
@@ -195,7 +195,7 @@ ms.locfileid: "75676199"
 > [!div class="mx-imgBorder"]  
 > ![来宾接收应用共享电子邮件](media/share-app/guest_access_doc_4.png "来宾接收应用共享电子邮件")
 
-### <a name="frequently-asked-questions"></a>常见问题解答
+### <a name="frequently-asked-questions"></a>常见问题
 
 #### <a name="whats-the-difference-between-canvas-app-guest-access-and-power-apps-portals"></a>画布应用来宾访问和电源应用门户之间的区别是什么？ 
 画布应用支持构建一个应用，用于对业务流程进行数字化处理，而无需以传统编程语言（例如C#）编写代码。 对于画布应用的来宾访问，使由不同组织参与共同业务流程的人员团队能够访问与各种 Microsoft 和第三方源集成的相同应用资源。 详细信息：[画布的概述-适用于电源应用的应用连接器](/powerapps/maker/canvas-apps/connections-list)。
@@ -204,17 +204,17 @@ ms.locfileid: "75676199"
 
 下表概述了 Power Apps 门户和画布应用之间的一些核心功能差异。  
 
-| | 界面 | 身份验证 | 可访问的数据源 |
+| | 接口 | 身份验证 | 可访问的数据源 |
 |------|--------|----------|-------------------|
 | Power Apps 门户 | 仅浏览器体验 | 允许匿名访问和经过身份验证的访问 | Common Data Service |
 | 画布应用 | 浏览器和移动应用 | 需要通过 Azure AD 进行身份验证 | 任何 ~ 150 的现成连接器和任何自定义连接器  |
 ||
 
 #### <a name="can-guests-access-customized-forms-in-sharepoint"></a>来宾是否可以访问 SharePoint 中的自定义表单？
-是。 可以使用自定义窗体访问 SharePoint 列表的任何用户都可以使用窗体创建和编辑列表中的项，而无需任何 Power Apps 许可证。
+可以。 可以使用自定义窗体访问 SharePoint 列表的任何用户都可以使用窗体创建和编辑列表中的项，而无需任何 Power Apps 许可证。
 
 #### <a name="can-guests-access-apps-embedded-in-sharepoint"></a>来宾是否可以访问嵌入在 SharePoint 中的应用？ 
-是。 但是，访问画布独立应用需要使用与应用功能（包括嵌入的应用）相匹配的权限的 Power Apps 的许可。 通过 Microsoft Power Apps 嵌入控件在 SharePoint 中嵌入画布应用时，请输入应用 id。为此，请在 "**应用程序 web 链接" 或 "ID** " 框中输入应用 ID。 
+可以。 但是，访问画布独立应用需要使用与应用功能（包括嵌入的应用）相匹配的权限的 Power Apps 的许可。 通过 Microsoft Power Apps 嵌入控件在 SharePoint 中嵌入画布应用时，请输入应用 id。为此，请在 "**应用程序 web 链接" 或 "ID** " 框中输入应用 ID。 
 
 > [!div class="mx-imgBorder"]  
 > ![在 SharePoint 中为来宾嵌入画布应用](media/share-app/guest_access_doc_5.PNG "在 SharePoint 中为来宾嵌入画布应用")
@@ -243,7 +243,7 @@ ms.locfileid: "75676199"
 访问了移动设备上的移动设备上发布的画布应用的任何用户，这些应用在不是其主租户的 Azure AD 租户中发布，必须注销电源应用并重新登录到 Power Apps Mobile。  
 
 #### <a name="must-a-guest-accept-the-azure-ad-guest-invitation-prior-to-sharing-an-app-with-the-guest"></a>在与来宾共享应用之前，来宾是否必须接受 Azure AD 来宾邀请？
-版本号 如果来宾在接受来宾邀请之前启动与他们共享的应用程序，则在启动应用程序时，会提示来宾接受邀请作为登录体验的一部分。  
+No。 如果来宾在接受来宾邀请之前启动与他们共享的应用程序，则在启动应用程序时，会提示来宾接受邀请作为登录体验的一部分。  
 
 #### <a name="what-azure-ad-tenant-are-connections-for-a-guest-user-created-in"></a>哪个 Azure AD 租户是在中创建的来宾用户的连接？
 应用的连接始终在应用关联的 Azure AD 租户的上下文中进行。 例如，如果在 Contoso 租户中创建了一个应用，则会在 Contoso 租户的上下文中建立 Contoso 内部用户和来宾用户的连接。
@@ -259,100 +259,100 @@ InTune 仅应用用户的主租户的策略。 例如，如果 Alice@Contoso.com
 
 | **Connector**                                     | **支持来宾访问**                                              |
 |---------------------------------------------------|------------------------------------------------------------------------|
-| 10to8 预约计划                      | 否                                                                     |
-| Adobe Creative Cloud                              | 否                                                                     |
-| Adobe 登录                                        | 否                                                                     |
-| Asana                                             | 否                                                                     |
-| AtBot 管理员                                       | 否                                                                     |
-| AtBot Logic                                       | 否                                                                     |
+| 10to8 预约计划                      | 是                                                                     |
+| Adobe Creative Cloud                              | 是                                                                     |
+| Adobe 登录                                        | 是                                                                     |
+| Asana                                             | 是                                                                     |
+| AtBot 管理员                                       | 是                                                                     |
+| AtBot 逻辑                                       | 是                                                                     |
 | Azure AD                                          | 是                                                                    |
-| Azure 自动化                                  | 是                                                                    |
+| Azure Automation                                  | 是                                                                    |
 | Azure 容器实例                          | 是                                                                    |
 | Azure 数据工厂                                | 是                                                                    |
-| Azure 数据湖                                   | 是                                                                    |
-| Azure DevOps                                      | 否                                                                     |
-| Azure 事件网格                                  | 否                                                                     |
-| Azure IoT 中心                                 | 是                                                                    |
-| Azure Key Vault                                   | 否                                                                     |
+| Azure Data Lake                                   | 是                                                                    |
+| Azure DevOps                                      | 是                                                                     |
+| Azure 事件网格                                  | 是                                                                     |
+| Azure IoT Central                                 | 是                                                                    |
+| Azure 密钥保管库                                   | 是                                                                     |
 | Azure Kusto                                       | 是                                                                    |
 | Azure Log Analytics                               | 是                                                                    |
 | Azure 资源管理器                            | 是                                                                    |
-| Basecamp 2                                        | 否                                                                     |
-| Bitbucket                                         | 否                                                                     |
-| Bitly                                             | 否                                                                     |
-| bttn                                              | 否                                                                     |
-| 缓冲区                                            | 否                                                                     |
-| Business Central                                  | 否                                                                     |
-| CandidateZip                                      | 否                                                                     |
-| Capsule CRM                                       | 否                                                                     |
-| Cloud PKI Management                              | 否                                                                     |
-| Cognito Forms                                     | 否                                                                     |
-| Common Data Service                               | 否                                                                     |
-| Common Data Service（旧版）                      | 否                                                                     |
-| D&B Optimizer                                     | 否                                                                     |
-| Derdack SIGNL4                                    | 否                                                                     |
-| Disqus                                            | 否                                                                     |
-| Document Merge                                    | 否                                                                     |
-| Dynamics 365                                      | 否                                                                     |
-| Dynamics 365 AI for Sales                         | 是                                                                    |
-| Dynamics 365 财务和运营                        | 否                                                                     |
-| Enadoc                                            | 否                                                                     |
-| Eventbrite                                        | 否                                                                     |
-| Excel Online（企业）                           | 否                                                                     |
-| Excel Online (OneDrive)                           | 否                                                                     |
-| 过期提醒                               | 否                                                                     |
-| FreshBooks                                        | 否                                                                     |
-| GoToMeeting                                       | 否                                                                     |
-| GoToTraining                                      | 否                                                                     |
-| GoToWebinar                                       | 否                                                                     |
-| Harvest                                           | 否                                                                     |
-| 使用 Azure AD 的 HTTP                                | 否                                                                     |
-| Infusionsoft                                      | 否                                                                     |
-| Inoreader                                         | 否                                                                     |
-| Intercom                                          | 否                                                                     |
-| JotForm                                           | 否                                                                     |
-| kintone                                           | 否                                                                     |
-| 领英                                          | 否                                                                     |
-| 营销内容中心                             | 否                                                                     |
-| 中                                            | 否                                                                     |
-| Metatask                                          | 否                                                                     |
-| Microsoft Forms                                   | 否                                                                     |
-| Microsoft Forms Pro                               | 否                                                                     |
-| Microsoft Graph Security                          | 否                                                                     |
-| Microsoft Kaizala                                 | 否                                                                     |
-| Microsoft 学校数据同步                        | 否                                                                     |
-| Microsoft StaffHub                                | 否                                                                     |
+| Basecamp 2                                        | 是                                                                     |
+| Bitbucket                                         | 是                                                                     |
+| Bitly                                             | 是                                                                     |
+| bttn                                              | 是                                                                     |
+| Buffer                                            | 是                                                                     |
+| 业务中心                                  | 是                                                                     |
+| CandidateZip                                      | 是                                                                     |
+| Capsule CRM                                       | 是                                                                     |
+| 云 PKI 管理                              | 是                                                                     |
+| Cognito Forms                                     | 是                                                                     |
+| Common Data Service                               | 是                                                                     |
+| Common Data Service （旧版）                      | 是                                                                     |
+| D & B 优化器                                     | 是                                                                     |
+| Derdack SIGNL4                                    | 是                                                                     |
+| Disqus                                            | 是                                                                     |
+| 文档合并                                    | 是                                                                     |
+| Dynamics 365                                      | 是                                                                     |
+| 用于销售的 Dynamics 365 AI                         | 是                                                                    |
+| 适用于 Fin & Ops 的 Dynamics 365                        | 是                                                                     |
+| Enadoc                                            | 是                                                                     |
+| Eventbrite                                        | 是                                                                     |
+| Excel Online （Business）                           | 是                                                                     |
+| Excel Online （OneDrive）                           | 是                                                                     |
+| 过期提醒                               | 是                                                                     |
+| FreshBooks                                        | 是                                                                     |
+| GoToMeeting                                       | 是                                                                     |
+| GoToTraining                                      | 是                                                                     |
+| GoToWebinar                                       | 是                                                                     |
+| Harvest                                           | 是                                                                     |
+| 使用 Azure AD 的 HTTP                                | 是                                                                     |
+| Infusionsoft                                      | 是                                                                     |
+| Inoreader                                         | 是                                                                     |
+| Intercom                                          | 是                                                                     |
+| JotForm                                           | 是                                                                     |
+| kintone                                           | 是                                                                     |
+| LinkedIn                                          | 是                                                                     |
+| 营销内容中心                             | 是                                                                     |
+| 中等                                            | 是                                                                     |
+| Metatask                                          | 是                                                                     |
+| Microsoft Forms                                   | 是                                                                     |
+| Microsoft Forms Pro                               | 是                                                                     |
+| Microsoft Graph Security                          | 是                                                                     |
+| Microsoft Kaizala                                 | 是                                                                     |
+| Microsoft 学校数据同步                        | 是                                                                     |
+| Microsoft StaffHub                                | 是                                                                     |
 | Microsoft Teams                                   | 是                                                                    |
-| 微软待办（企业）                        | 否                                                                     |
-| Muhimbi PDF                                       | 否                                                                     |
-| NetDocuments                                      | 否                                                                     |
+| Microsoft 待办事项（商业）                        | 是                                                                     |
+| Muhimbi PDF                                       | 是                                                                     |
+| NetDocuments                                      | 是                                                                     |
 | Office 365 组                                 | 是                                                                    |
-| Office 365 Outlook                                | 否                                                                     |
+| Office 365 Outlook                                | 是                                                                     |
 | Office 365 用户                                  | 是                                                                    |
-| Office 365 视频                                  | 否                                                                     |
-| OneDrive                                          | 否                                                                     |
-| OneDrive for Business                             | 否                                                                     |
-| OneNote（企业版）                                | 否                                                                     |
-| Outlook Customer Manager                          | 否                                                                     |
+| Office 365 Video                                  | 是                                                                     |
+| OneDrive                                          | 是                                                                     |
+| OneDrive for Business                             | 是                                                                     |
+| OneNote（企业版）                                | 是                                                                     |
+| Outlook Customer Manager                          | 是                                                                     |
 | Outlook 任务                                     | 是                                                                    |
-| Outlook.com                                       | 否                                                                     |
-| Paylocity                                         | 否                                                                     |
-| Planner                                           | 否                                                                     |
-| Plumsail Forms                                    | 否                                                                     |
-| Excel                                          | 是                                                                    |
-| Project Online                                    | 否                                                                     |
-| ProjectWise Design Integration                    | 否                                                                     |
-| Projectwise Share                                 | 否                                                                     |
+| Outlook.com                                       | 是                                                                     |
+| Paylocity                                         | 是                                                                     |
+| 规划器                                           | 是                                                                     |
+| Plumsail 窗体                                    | 是                                                                     |
+| Power BI                                          | 是                                                                    |
+| Project Online                                    | 是                                                                     |
+| ProjectWise 设计集成                    | 是                                                                     |
+| Projectwise 共享                                 | 是                                                                     |
 | SharePoint                                        | 是                                                                    |
-| SignNow                                           | 否                                                                     |
-| Skype for Business Online                         | 否                                                                     |
-| Soft1                                             | 否                                                                     |
-| Stormboard                                        | 否                                                                     |
-| Survey123                                         | 否                                                                     |
-| SurveyMonkey                                      | 否                                                                     |
-| Toodledo                                          | 否                                                                     |
-| Typeform                                          | 否                                                                     |
-| Vimeo                                             | 否                                                                     |
-| Webex Teams                                       | 否                                                                     |
-| Windows Defender 高级威胁防护 (ATP) | 否                                                                     |
-| Word Online（企业）                            | 否                                                                     |
+| SignNow                                           | 是                                                                     |
+| Skype for Business Online                         | 是                                                                     |
+| Soft1                                             | 是                                                                     |
+| Stormboard                                        | 是                                                                     |
+| Survey123                                         | 是                                                                     |
+| SurveyMonkey                                      | 是                                                                     |
+| Toodledo                                          | 是                                                                     |
+| Typeform                                          | 是                                                                     |
+| Vimeo                                             | 是                                                                     |
+| Webex 团队                                       | 是                                                                     |
+| Windows Defender 高级威胁防护（ATP） | 是                                                                     |
+| Word Online （商业）                            | 是                                                                     |

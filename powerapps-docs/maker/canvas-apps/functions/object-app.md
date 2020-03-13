@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: f5f09bab44f3f229b47d9a801703b3aa10cba06d
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404341"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212161"
 ---
 # <a name="app-object-in-power-apps"></a>Power Apps 中的应用对象
 
@@ -39,19 +39,19 @@ ms.locfileid: "78404341"
 
 此属性返回一个屏幕对象，您可以使用该屏幕对象引用屏幕的属性，或与另一个屏幕进行比较以确定显示的屏幕。 还可以使用表达式**App.ActiveScreen.Name**来检索显示的屏幕的名称。
 
-使用 " **[后退](function-navigate.md)** " 或 " **[导航](function-navigate.md)** " 功能可更改显示的屏幕。
+使用 "**[后退](function-navigate.md)**" 或 "**[导航](function-navigate.md)**" 功能可更改显示的屏幕。
 
 ## <a name="onstart-property"></a>OnStart 属性
 
 当用户启动应用程序时，将运行**OnStart**属性。 应用程序制造商通常使用此属性来执行以下任务：
 
-- 使用 **[Collect](function-clear-collect-clearcollect.md)** 函数检索数据并将其缓存到集合中。
-- 使用 **[set](function-set.md)** 函数设置全局变量。
-- 使用 **[导航](function-navigate.md)** 函数导航到初始屏幕。
+- 使用**[Collect](function-clear-collect-clearcollect.md)** 函数检索数据并将其缓存到集合中。
+- 使用**[set](function-set.md)** 函数设置全局变量。
+- 使用**[导航](function-navigate.md)** 函数导航到初始屏幕。
 
-在第一个屏幕出现之前计算此公式。 未加载屏幕，因此无法通过 **[UpdateContext](function-updatecontext.md)** 函数设置上下文变量。 但是，可以通过**导航**函数传递上下文变量。
+在第一个屏幕出现之前计算此公式。 未加载屏幕，因此无法通过**[UpdateContext](function-updatecontext.md)** 函数设置上下文变量。 但是，可以通过**导航**函数传递上下文变量。
 
-更改**OnStart**属性后，通过将鼠标指针悬停在 "**树视图**" 窗格中的**应用**对象上进行测试，选择显示的省略号（...），然后选择 "**运行 OnStart**"。 与第一次加载应用时不同，现有集合和变量将被设置。 若要从空集合开始，请使用 **[ClearCollect](function-clear-collect-clearcollect.md)** 函数而不是**Collect**函数。
+更改**OnStart**属性后，通过将鼠标指针悬停在 "**树视图**" 窗格中的**应用**对象上进行测试，选择显示的省略号（...），然后选择 "**运行 OnStart**"。 与第一次加载应用时不同，现有集合和变量将被设置。 若要从空集合开始，请使用**[ClearCollect](function-clear-collect-clearcollect.md)** 函数而不是**Collect**函数。
 
 > [!div class="mx-imgBorder"]
 > 用于运行 OnStart](media/object-app/appobject-runonstart.png) 的 ![应用项快捷菜单

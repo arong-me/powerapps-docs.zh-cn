@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/11/2020
+ms.date: 03/12/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 742d33b2d87969df19fe6c0e82f96ecfa9da27e4
-ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
+ms.openlocfilehash: 60d8cf270c7706de8a82bc7fe3ee66787404264a
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79133621"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79209400"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>设置并了解 Power Apps 中的危机通信示例模板
 
@@ -40,6 +40,12 @@ ms.locfileid: "79133621"
 > [!NOTE]
 > "危机通信示例" 模板还适用于 "Power Apps 和 Power 适用于 Power Apps 和 Power Apps 的服务 Url 与商业版本不同。 详细信息：[电源应用美国政府服务 url](https://docs.microsoft.com/power-platform/admin/powerapps-us-government#power-apps-us-government-service-urls)和[电源自动执行美国政府服务 url](https://docs.microsoft.com/power-automate/us-govt#power-automate-us-government-service-urls)。
 
+## <a name="demo-crisis-communication-app"></a>演示：危机通信应用
+
+观看如何使用危机通信解决方案：
+
+> [!VIDEO https://www.youtube.com/embed/23SypLXiOTw]
+
 ## <a name="prerequisites"></a>先决条件
 
 - [注册](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)电源应用的 。
@@ -51,6 +57,12 @@ ms.locfileid: "79133621"
 > 有关与**危机通信应用**相关的任何反馈或问题，请使用以下链接：
 > - **[意见](https://aka.ms/crisis-communication-feedback)**
 > - **[发放](https://aka.ms/crisis-communication-issues)**
+
+## <a name="demo-build-and-deploy-crisis-communication-app"></a>演示：构建和部署危机通信应用
+
+观看如何构建和部署危机通信应用：
+
+> [!VIDEO https://www.youtube.com/embed/Wykrwf9dZ-Y]
 
 ## <a name="create-a-home-for-your-data"></a>为数据创建家庭
 
@@ -205,9 +217,12 @@ ms.locfileid: "79133621"
 
 1. **保存**并**发布**应用。
 
-#### <a name="enable-location-updates"></a>启用位置更新
+#### <a name="optional-enable-location-updates"></a>可选：启用位置更新
 
-此应用允许你记录用户的位置，并在用户设置其状态时将其存储在 SharePoint 站点中。 危机管理团队可以在 Power BI 报表中查看此数据。
+此应用允许你记录用户的位置，并在用户设置其状态时将其存储在 SharePoint 站点中。  危机管理团队可以在 Power BI 报表中查看此数据。 
+
+> [!NOTE]
+> 启用位置更新是可选的。 如果你不想跟踪用户位置，则可以跳过此部分。
 
 若要启用此功能，请执行以下步骤：
 
@@ -216,68 +231,84 @@ ms.locfileid: "79133621"
   1. 在**OnSelect**属性的编辑栏中复制并粘贴以下代码片段：
 
   ```
-  UpdateContext({locSaveDates: true});
-
-// Store the output properties of the calendar in static variables and collections.
-Set(varStartDate,First(Sort(Filter(selectedDates,ComponentId=CalendarDatePicker_1.Id),Date,Ascending)).Date);
-Set(varEndDate,First(Sort(Filter(selectedDates,ComponentId=CalendarDatePicker_1.Id),Date,Descending)).Date);
-
-// Create a new record for work status for each date selected in the date range.
-ForAll(
-    Filter(
-        RenameColumns(selectedDates,"Date","DisplayDate"),
-        ComponentId=CalendarDatePicker_1.Id,
-        !(DisplayDate in colDates.Date)
-    ),
-    Patch('CI_Employee Status',Defaults('CI_Employee Status'),
-        {
-            Title: varUser.userPrincipalName,
-            Date: DisplayDate,
-            Notes: "",
-            PresenceStatus: LookUp(Choices('CI_Employee Status'.PresenceStatus),Value=WorkStatus_1.Selected.Value),
-            
-             
-            Latitude: Location.Latitude,
-            Longitude: Location.Longitude
-        }
-    )
-);
-
-// Update existing dates with the new status.
-ForAll(
-    AddColumns(
+    UpdateContext({locSaveDates: true});
+    // Store the output properties of the calendar in static variables and collections.
+    Set(varStartDate,First(Sort(Filter(selectedDates,ComponentId=CalendarComponent.Id),Date,Ascending)).Date);
+    Set(varEndDate,First(Sort(Filter(selectedDates,ComponentId=CalendarComponent.Id),Date,Descending)).Date);
+    // Create a new record for work status for each date selected in the date range.
+    ForAll(
         Filter(
             RenameColumns(selectedDates,"Date","DisplayDate"),
-            ComponentId=CalendarDatePicker_1.Id,
-            DisplayDate in colDates.Date
+            ComponentId=CalendarComponent.Id,
+            !(DisplayDate in colDates.Date)
         ),
+        Patch('CI_Employee Status',Defaults('CI_Employee Status'),
+            {
+                Title: varUser.userPrincipalName,
+                Date: DisplayDate,
+                Notes: "",
+                PresenceStatus: LookUp(colWorkStatus,Value=WorkStatusComponent.Selected.Value),
+                Latitude: Text(Location.Latitude),
+                Longitude: Text(Location.Longitude)
+            }
+        )
+    );
+    // Update existing dates with the new status.
+    ForAll(
+        AddColumns(
+            Filter(
+                RenameColumns(selectedDates,"Date","DisplayDate"),
+                ComponentId=CalendarComponent.Id,
+                DisplayDate in colDates.Date
+            ),
+            
+            // Get the current record for each existing date.
+            "LookUpId",LookUp(RenameColumns(colDates,"ID","DateId"),And(Title=varUser.userPrincipalName,Date=DisplayDate)).DateId
+        ),
+        Patch('CI_Employee Status',LookUp('CI_Employee Status',ID=LookUpId),
+            {
+                PresenceStatus: LookUp(colWorkStatus,Value=WorkStatusComponent.Selected.Value)
+            }
+        )
+    );
+    If(
+        IsEmpty(Errors('CI_Employee Status')),
         
-        // Get the current record for each existing date.
-        "LookUpId",LookUp(RenameColumns(colDates,"ID","DateId"),And(Title=varUser.userPrincipalName,Date=DisplayDate)).DateId
-    ),
-    Patch('CI_Employee Status',LookUp('CI_Employee Status',ID=LookUpId),
-        {
-            PresenceStatus: LookUp(Choices('CI_Employee Status'.PresenceStatus),Value=WorkStatus_1.Selected.Value)
-        }
-    )
-);
-
-If(
-    IsEmpty(Errors('CI_Employee Status')),
-    Notify("You successfully submitted your work status.",NotificationType.Success,5000);
-    
-    // Update the list of work status for the logged-in user.
-    ClearCollect(colDates,Filter('CI_Employee Status',Title=varUser.userPrincipalName));
-    
-    Navigate('Share to Team Screen',LookUp(colStyles,Key="navigation_transition").Value),
-    
-    Notify(
-        LookUp(colTranslations,Locale=varLanguage).WorkStatusError,
-        NotificationType.Warning
-    )
-);
-
-UpdateContext({locSaveDates: false})
+        // Update the list of work status for the logged-in user.
+        ClearCollect(colDates,Filter('CI_Employee Status',Title=varUser.userPrincipalName));
+        // Send an email receipt to the logged-in user.
+        UpdateContext(
+            {
+                locReceiptSuccess: 
+                Office365Outlook.SendEmailV2(
+                    varUser.mail,
+                    Proper(WorkStatusComponent.Selected.Value) & ": " & varStartDate & " - " & varEndDate,
+                    Switch(
+                        WorkStatusComponent.Selected.Value,
+                        "working from home",varString.WorkStatusMessageHome,
+                        "out of office",varString.WorkStatusMessageOutOfOffice
+                    ) & ": " &
+                    // Create a bulleted list of dates
+                    "<ul>" & 
+                        Concat(Sort(Filter(selectedDates,ComponentId=CalendarComponent.Id),Date),"<li>" & Date & Char(10)) &
+                    "</ul>"
+                )
+            }
+        );
+        If(
+            locReceiptSuccess,
+            Notify("You successfully submitted your work status. An email has been sent to you with a summary.",NotificationType.Success,5000),
+            Notify("There was an error sending an email summary, but you successfully submitted your work status.",NotificationType.Success,5000);
+        );
+        
+        Navigate('Share to Team Screen',LookUp(colStyles,Key="navigation_transition").Value),
+        
+        Notify(
+            varString.WorkStatusError,
+            NotificationType.Warning
+        )
+    );
+    UpdateContext({locSaveDates: false})
 ```
 
 ### <a name="update-the-request-help-flow"></a>更新请求帮助流
@@ -327,6 +358,33 @@ UpdateContext({locSaveDates: false})
 1. 向下滚动到 "**获取时间**" 操作，并通过所选的源和目标时间更新 "**转换时区**" 的操作：
 
     ![转换时区](media/sample-crisis-communication-app/convert-time-zone.png)
+
+## <a name="optional-configure-shared-inbox"></a>可选：配置共享收件箱
+
+在将收件箱发送给团队之前， **CrisisCommunication**流将请求从收件箱拉取请求。 若要将请求电子邮件发送到共享收件箱，请执行以下步骤。
+
+> [!NOTE]
+> 共享收件箱的配置是可选的。 如果你不希望将请求电子邮件发送到共享收件箱，则可以跳过此部分。
+
+1. 在*编辑*模式下打开**CrisisCommunication**流。
+1. 从**电子邮件到达 V3 时**选择 **...** 。
+1. 选择“**删除**”：
+
+     ![删除连接器](media/sample-crisis-communication-app/33-delete-connector.png)
+
+1. 搜索并选择**新电子邮件到达共享邮箱（V2）的时间**。
+1. 在 "**邮箱地址**" 中输入共享收件箱地址。
+1. 打开**注释**卡。
+1. 选择 "**添加动态值**" 按钮作为**值**。
+1. 搜索并选择**正文**：
+
+     ![选择正文](media/sample-crisis-communication-app/35-body.png)
+
+1. 打开 "**获取用户配置文件卡（V2）** " 卡。
+1. 选择 "**添加动态值**" 按钮。
+1. 搜索**并选择：**
+
+     ![选择来源](media/sample-crisis-communication-app/34-from.png)
 
 ## <a name="import-and-set-up-the-admin-app"></a>导入并设置管理应用
 
@@ -398,7 +456,7 @@ UpdateContext({locSaveDates: false})
 
 | **字段名称** | **SharePoint 中的逻辑名称** | 用途 | **示例** |
 |-|-|-|-|
-| 管理员电子邮件 | AdminContactEmail | 用于通知其他正在管理应用程序的用户。  | admin@contoso.com |
+| 管理员电子邮件 | AdminContactEmail | 这是发送电子邮件请求的位置。 它们应设置为你的电子邮件地址。 如果要将通知发送到其他收件箱，请遵循[可选的共享收件箱配置](#optional-configure-shared-inbox)。 | admin@contoso.com |
 | 徽标 URL | Logo | 将在左上角显示的应用的徽标。 | https://contoso.com/logo.png |
 | AAD 组 ID | AADGroupID | 用于向最终用户发送通知，告知最终用户有关内部公司更新的信息，请通过*通知用户了解新的危机通信新闻*流。 请按照下面的说明来获取组的 AAD ID。 | c0ddf873-b4fe-4602-b3a9-502dd944c8d5 |
 | 应用程序 URL | AppURL | 最终用户应用的位置，以便在*新的危机通信新闻流上通知用户*可以在选择 "**阅读更多**" 后重定向用户。 | https://apps.preview.powerapps.com/play/<app URL>？ tenantId =<tenant ID>
@@ -533,7 +591,7 @@ UpdateContext({locSaveDates: false})
 
     ![创建新连接](media/sample-crisis-communication-app/create-connection.png)
 
-1. 搜索连接的名称;例如， **PowerApps 通知（预览）** ：
+1. 搜索连接的名称;例如， **PowerApps 通知（预览）**：
 
     ![通知](media/sample-crisis-communication-app/notifications.png)
 
@@ -597,7 +655,7 @@ UpdateContext({locSaveDates: false})
 
 ## <a name="monitor-office-absences-with-power-bi"></a>用 Power BI 监视办公室请假
 
-部署了应用后，人们开始通知他们出于各种原因（例如，病假或在家工作），就可以使用 Power BI 报表来跟踪这些人员所在的数量和位置，你现在可以使用报表来跟踪这些人员的位置。 请注意，你需要[启用位置跟踪](#enable-location-updates)以使地图控件正常工作。
+部署了应用后，人们开始通知他们出于各种原因（例如，病假或在家工作），就可以使用 Power BI 报表来跟踪这些人员所在的数量和位置，你现在可以使用报表来跟踪这些人员的位置。 请注意，你需要[启用位置跟踪](#optional-enable-location-updates)以使地图控件正常工作。
 
 若要开始，可以使用已下载的[资产包](#prerequisites)中提供的示例报表 "状态报告 .pbix"。
 如果需要，请下载[Power BI Desktop](https://powerbi.microsoft.com/downloads)。 我们还需要在之前创建的**CI_Employee 状态**SharePoint 列表中显示一些信息，因此让我们先来了解一下。 在网站中打开列表，并在 "设置" 图标下选择 "列表设置"：
@@ -678,7 +736,7 @@ UpdateContext({locSaveDates: false})
 
     ![应用安装策略](media/sample-crisis-communication-app/27-Setup-Policies.png)
 
-1. 选择 "**全局（组织范围设置）** "。
+1. 选择 "**全局（组织范围设置）**"。
 1. 选择 "**添加应用**"。
 
     ![添加应用](media/sample-crisis-communication-app/28-Add-App.png)

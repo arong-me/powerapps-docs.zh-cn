@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a7e41f9becc6cf974bffdeca127e549191ee9379
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403268"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212575"
 ---
 # <a name="language-function-in-power-apps"></a>Power Apps 中的语言功能
 返回当前用户的语言标记。
@@ -39,7 +39,7 @@ ms.locfileid: "78403268"
 
 Power Apps 使用[IETF BCP-47 语言标记](https://tools.ietf.org/html/bcp47)格式。  
 
-要查看支持的语言标记列表，请在公式栏或高级视图中输入 **Value( "1", )** ，然后滚动查看建议作为第二个参数的值的区域设置列表。  
+要查看支持的语言标记列表，请在公式栏或高级视图中输入 **Value( "1", )**，然后滚动查看建议作为第二个参数的值的区域设置列表。  
 
 **[Text](function-text.md)** 和 **[Value](function-value.md)** 函数也使用语言标记。  这些函数可基于全球化考虑来回转换文本字符串。  将语言标记传递给这些函数时，如果区域没有区别，则只需使用标记的语言部分。
 

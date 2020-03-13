@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e5c321617f08b6747824757344e3cc61b1abf27b
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403269"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211540"
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-power-apps"></a>Power Apps 中的 DateAdd、DateDiff 和 TimeZoneOffset 函数
 加上或发现日期/时间值的差值，并转换本地时间和 UTC。

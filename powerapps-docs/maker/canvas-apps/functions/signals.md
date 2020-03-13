@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1cd90e345b41f8316e8cd8c50f4077ee1f64ee91
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403446"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212621"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-power-apps"></a>Power Apps 中的加速、应用、指南针、连接和位置信号
 
@@ -49,7 +49,7 @@ ms.locfileid: "78403446"
 
 | 属性 | 说明 |
 | --- | --- |
-| **App.ActiveScreen** |显示的屏幕。 返回一个屏幕对象，您可以使用该对象引用屏幕的属性，或与另一个屏幕进行比较以确定要显示的屏幕。 您可以使用 " **[后退](function-navigate.md)** " 或 " **[导航](function-navigate.md)** " 功能更改显示的屏幕。 |
+| **App.ActiveScreen** |显示的屏幕。 返回一个屏幕对象，您可以使用该对象引用屏幕的属性，或与另一个屏幕进行比较以确定要显示的屏幕。 您可以使用 "**[后退](function-navigate.md)**" 或 "**[导航](function-navigate.md)**" 功能更改显示的屏幕。 |
 
 详细信息： [**应用**对象](object-app.md)文档。
 
