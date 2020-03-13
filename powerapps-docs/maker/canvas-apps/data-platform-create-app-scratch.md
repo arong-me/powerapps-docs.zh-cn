@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 624dd66a2f0574a33f4bb796b88e3e4d5845c973
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74709567"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211747"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>使用 Common Data Service 从头开始创建画布应用
 
@@ -26,7 +26,7 @@ ms.locfileid: "74709567"
 
 在从 Common Data Service 生成应用时，无需与数据源（例如 SharePoint、Dynamics 365 或 Salesforce）建立连接。 只需指定想要在应用中显示或管理的实体。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>系统必备
 
 - 从头开始创建应用之前，请先通过[生成应用](data-platform-create-app.md)并自定义该应用的[库](customize-layout-sharepoint.md)、[窗体](customize-forms-sharepoint.md)和[卡](customize-card.md)来熟悉 Power Apps 的基本知识。
 - [切换到一个环境](working-with-environments.md)，该环境中已创建带有示例数据的数据库。 如果有合适的许可证，则可以[创建环境](../../administrator/create-environment.md)以满足此需要。
@@ -34,7 +34,7 @@ ms.locfileid: "74709567"
 
 ## <a name="open-a-blank-app"></a>打开一个空白应用
 
-1. 登录到[Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. 登录到 [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 1. 在“生成自己的应用”下，选择“从空白开始创建画布应用”。
 
@@ -97,16 +97,16 @@ ms.locfileid: "74709567"
 1. 选择“添加字段”，然后选择这些字段对应的复选框：
 
     - **帐户名**
-    - **地址1：街道1**
-    - **地址1：城市**
-    - **地址1： ZIP/邮政编码**
+    - **地址 1：街道 1**
+    - **地址 1：城市**
+    - **地址 1：邮政编码**
     - **员工人数**
     - **年收入**
 
     > [!NOTE]
     > 在这种情况下，您可以通过选择 "**新建字段**" 创建自定义字段，提供所需的信息，然后选择 "**完成**"。 详细信息：[创建字段](../common-data-service/create-edit-field-portal.md#create-a-field)。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "Select and add a field")
 
-1. 选择“添加”。
+1. 选择 **添加** 。
 
 1. 将标题栏的“文本”属性设置为显示“创建/编辑”。
 
@@ -146,7 +146,7 @@ ms.locfileid: "74709567"
 
     `SubmitForm(EditForm1); Navigate(BrowseScreen, ScreenTransition.None)`
 
-    ![“选中标记”图标](./media/data-platform-create-app-scratch/checkmark-icon.png)
+    ![“复选标记”图标](./media/data-platform-create-app-scratch/checkmark-icon.png)
 
 1. 在“插入”选项卡上，选择“图标”，然后选择“垃圾桶”图标。
 

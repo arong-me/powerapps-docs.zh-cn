@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 777dd5452af8662569e2e51452142a1bbce3f619
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403428"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212759"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-power-apps"></a>了解应用程序中的画布-应用表和记录
 
@@ -284,7 +284,7 @@ ShowColumns(
 * 若要访问来自嵌套记录作用域的值，请使用 **@** 运算符，其中所操作的表名称使用该模式：<br>_Table_ **[@** _FieldName_ **]**
 * 若要访问全局值，如数据源、集合和上下文变量，请使用模式 **[@** _ObjectName_ **]** （无需指派表）。
 
-如果正在操作的表是一个表达式，如**Filter （** _table_ **，**，**）** ，则不能使用消除歧义运算符。  只有最里面的记录范围可以在不使用消除歧义运算符的情况下从此表表达式访问字段。
+如果正在操作的表是一个表达式，如**Filter （** _table_ **，** .。**）** ，则不能使用消除歧义运算符。  只有最里面的记录范围可以在不使用消除歧义运算符的情况下从此表表达式访问字段。
 
 例如，假设有一个集合 **X**：
 

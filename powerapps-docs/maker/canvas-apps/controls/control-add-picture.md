@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 37c98470d3239cefa008235f295aaf9af2db3f5a
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404187"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211517"
 ---
 # <a name="add-picture-control-in-power-apps"></a>在 Power Apps 中添加图片控件
 拍摄照片或加载本地设备中的图像。

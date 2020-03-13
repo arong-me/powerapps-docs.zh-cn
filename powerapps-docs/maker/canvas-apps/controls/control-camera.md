@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: f70e6d8015a75f26d0716a144c7f524181f34664
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403935"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211770"
 ---
 # <a name="camera-control-in-power-apps"></a>Power Apps 中的相机控件
 一个控件，用户通过此控件可使用设备上的照相机拍照。
