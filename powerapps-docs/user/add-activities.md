@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 02/13/2020
+ms.date: 03/10/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 91da88baa13204f8538ba3eb673a515e539f7fa7
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: 58e64d275a7d1380cd580a86f9899053b140b99e
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77282485"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78970947"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>将约会、电子邮件、电话呼叫、备注或任务活动添加到时间线 
 
@@ -63,7 +63,7 @@ ms.locfileid: "77282485"
 
 ## <a name="add-an-activity-from-within-a-record"></a>从记录内部添加活动
 
-还可打开一条记录，然后向该记录添加活动。 
+还可以打开记录，然后向记录添加活动。 
 
    > [!div class="mx-imgBorder"]
    > ![在 Power Apps 中添加活动的快捷方式](media/add_new_activity_from_record.gif "在 Power Apps 中添加活动的快捷方式") 
@@ -204,6 +204,9 @@ ms.locfileid: "77282485"
 使用筛选器窗格按记录类型或活动类型和日期快速筛选时间线留言板中的活动、备注或文章。 可以同时选择多个筛选器和筛选器选项。 可以筛选和查看活动截止日期、修改日期或活动状态。
 
 - 在“时间线”部分，选择“打开筛选器窗格”，然后选择要筛选活动的方式   。
+
+ > [!Note]
+ > 当你在浏览器中缩小时，“筛选器”窗格和时间线记录显示在两列中。 当时间线在多列中显示时，“筛选器”窗格显示为与时间线记录并排的列。 若要了解详细信息，请参阅[“筛选器”窗格以两列模式显示](../maker/model-driven-apps/faqs-timeline-control.md#why-my-agents-see-the-filter-pane-even-when-the-expand-filter-pane-by-default-check-box-is-cleared)。 
 
   > [!div class="mx-imgBorder"]
   > ![时间线中的“筛选器”窗格](media/timeline-filter2.png "时间线中的“筛选器”窗格") ![时间线中的“筛选器”窗格](media/timeline-filter5.png "时间线中的“筛选器”窗格")
