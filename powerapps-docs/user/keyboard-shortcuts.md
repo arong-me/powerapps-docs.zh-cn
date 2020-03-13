@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7fbcbe315f3af9554d53329f35469af4ca236181
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: b5f273fcc14b7c8bd9cbde947133fd70d4a2a432
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733203"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79035606"
 ---
 # <a name="use-keyboard-shortcuts-in-power-apps"></a>使用 Power Apps 中的键盘快捷方式
 
@@ -31,7 +31,7 @@ ms.locfileid: "74733203"
 
 ## <a name="form-shortcuts"></a>窗体快捷方式
 
-<!--does the N/A mean not available? If so, why include them? -->
+
 
 
 |任务  | 统一接口 |
@@ -152,8 +152,6 @@ ms.locfileid: "74733203"
 |移动到图表中的第一个元素 | 选项卡 |
 |移动到下一个数据点 | 向右键 (→) 或向下键 (↓) |
 |移动到上一个数据点 | 向右键 (→) 或向上键 (↑) |
-|移动到第一个数据点 | 开始 |
-|移动到最后一个数据点 | 结束 |
 |移动到标记图中的“查看更多”按钮  | 选项卡 |
 |从“查看更多”按钮移动到标记图中的标记  | Shift+Tab |
 |当焦点位于交互式仪表板中的数据点上时筛选仪表板 | Enter 或空格键  |
