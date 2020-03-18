@@ -7,22 +7,22 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 02/18/2020
+ms.date: 03/16/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7f98025fbc3a2f392b45cce22af41d075a3bfaac
-ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
+ms.openlocfilehash: 088e817c8ef829b340032af577193888079c832a
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77530849"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436818"
 ---
 # <a name="embed-an-app-in-teams"></a>在 Teams 中嵌入应用
 
-可以通过将已创建的 Power Apps 直接嵌入 Microsoft 团队来共享这些应用。 完成后，用户可以选择 **+** 将你的应用添加到你所在团队中的**任意团队频道**或会话。 应用在**你的团队的选项卡**下显示为磁贴。
+你可以通过将创建的应用直接嵌入 Microsoft 团队来共享该应用。 完成后，用户可以选择 **+** 将你的应用添加到你所在团队中的**任意团队频道**或会话。 应用在**你的团队的选项卡**下显示为磁贴。
 
 管理员可以上传应用程序，使其显示在 "**所有选项卡" 部分**下的租户中的**所有**团队。 请参阅[在 Microsoft 团队中共享应用](https://docs.microsoft.com/power-platform/admin/embed-app-teams)。
 
@@ -59,9 +59,58 @@ ms.locfileid: "77530849"
 
 2. 选择 "**添加**" 以将应用添加为个人应用，或选择 "**添加到团队**"，将应用添加为现有通道或会话中的选项卡。
 
-## <a name="publish-the-app-to-the-teams-catalogue"></a>将应用发布到团队目录
+## <a name="publish-the-app-to-the-teams-catalog"></a>将应用发布到团队目录
 
 如果你是管理员，则还可以将[应用发布](https://docs.microsoft.com/microsoftteams/tenant-apps-catalog-teams)到 Microsoft 团队目录。
+
+## <a name="use-context-from-teams"></a>使用团队上下文
+
+若要通过团队构建深度集成的应用，可以将团队的上下文变量与 `Param()` 函数结合使用。 例如，在屏幕的 "**填充**" 属性中使用以下公式，根据用户在团队内的主题更改应用的背景：
+
+```
+Switch(
+        Param("theme"),
+        "dark",
+        RGBA(
+            32,
+            31,
+            31,
+            1
+        ),
+        "contrast",
+        RGBA(
+            0,
+            0,
+            0,
+            1
+        ),
+        RGBA(
+            243,
+            242,
+            241,
+            1
+        )
+    )
+```
+
+若要测试该应用，请将其发布，然后在团队内进行播放。
+
+支持团队中的以下上下文变量：
+
+- 区域设置
+- channelId
+- channelType
+- chatId
+- groupId
+- hostClientType
+- subEntityId
+- teamId
+- teamType
+- Theme — 主题
+- userTeamRole
+
+> [!NOTE]
+> 此功能是在2020年3月添加的。 如果在此之前将应用嵌入到团队中，可能需要重新将应用添加到团队才能使用此功能。
 
 ## <a name="improve-the-performance-of-your-app"></a>提高应用程序的性能
 
@@ -71,12 +120,14 @@ ms.locfileid: "77530849"
 
 2. 选择要在团队中共享的应用的 "**更多操作**（...）"，然后选择 "**设置**"。
 
-3. 在 "设置" 面板中，将 "**预加载应用**" 切换为 **"是"** 。 然后，在团队中嵌入应用时，电源应用将预加载应用。
+3. 在 "设置" 面板中，将 "**预加载应用**" 切换为 **"是"** 。 然后，只要嵌入到团队中，应用就会预先加载。
 
     ![应用详细信息](./media/embed-teams-app/preload-app.png "预加载应用以提高性能")
 
-4. 要使更改生效，请将应用重新导入到团队中。
+4. 要使更改生效，请删除应用并将其重新添加到团队。
 
+> [!NOTE]
+> 这允许用户在对嵌入的方案进行身份验证时下载应用程序文件。 但是，用户只能在身份验证成功后运行你的应用。 这可确保你的应用数据对未经身份验证的用户不可用。
 
 ### <a name="see-also"></a>另请参阅
 
