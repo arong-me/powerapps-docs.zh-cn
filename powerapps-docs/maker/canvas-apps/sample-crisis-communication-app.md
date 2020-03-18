@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 60d8cf270c7706de8a82bc7fe3ee66787404264a
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: ce3974f399948f1f9ccd125c0b9727f51abc644b
+ms.sourcegitcommit: 3066c2800a939fbcaaac4262c802843e2d80b88c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79209400"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79431845"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>设置并了解 Power Apps 中的危机通信示例模板
 
@@ -591,7 +591,7 @@ ms.locfileid: "79209400"
 
     ![创建新连接](media/sample-crisis-communication-app/create-connection.png)
 
-1. 搜索连接的名称;例如， **PowerApps 通知（预览）**：
+1. 搜索连接的名称;例如， **PowerApps 通知（预览）** ：
 
     ![通知](media/sample-crisis-communication-app/notifications.png)
 
@@ -736,7 +736,7 @@ ms.locfileid: "79209400"
 
     ![应用安装策略](media/sample-crisis-communication-app/27-Setup-Policies.png)
 
-1. 选择 "**全局（组织范围设置）**"。
+1. 选择 "**全局（组织范围设置）** "。
 1. 选择 "**添加应用**"。
 
     ![添加应用](media/sample-crisis-communication-app/28-Add-App.png)
@@ -798,7 +798,12 @@ ms.locfileid: "79209400"
 
     适用于团队和推送通知连接器的电源自动机器人连接器当前不适用于 GCC。 使用电子邮件选项向用户通知适用于 GCC 的内部新闻更新。
 
-***免责声明：*** *此应用是一个示例，可与 Microsoft Power Apps 和团队一起使用，以仅分发参考信息。此应用程序不适用于本应用，也不能用作医疗设备、临床支持、诊断工具或其他旨在用于诊断、硬化、缓解、治疗或防范疾病或其他情况的技术，Microsoft 不会出于此目的向使用此应用程序授予任何许可或权利。 此应用程序的设计不是专业的医疗建议、诊断、治疗或毋庸置疑的替代方案，因此不应如此。 客户对此应用程序的任何使用承担了唯一的风险和责任。 Microsoft 不保证在连接与之中提供的应用程序或任何材料将足以满足任何医疗目的或满足任何人的健康或医疗要求。*  
+## <a name="issues--feedback"></a>& 反馈问题
+
+- 有关*危机通信示例模板*的**反馈**，请参阅[aka.ms/crisis-communication-feedback](https://aka.ms/crisis-communication-feedback)。
+- 若要报告*危机通信应用*的**问题**，请参阅[aka.ms/crisis-communication-issues](https://aka.ms/crisis-communication-issues)。
+
+***免责声明：*** *此应用是一个示例，可与 Microsoft Power Apps 和团队一起使用，以仅分发参考信息。此应用程序不适用于本应用，也不能用作医疗设备、临床支持、诊断工具或其他旨在用于诊断、硬化、缓解、治疗或防范疾病或其他情况的技术，Microsoft 不会出于此目的向使用此应用程序授予任何许可或权利。 此应用程序的设计不是专业的医疗建议、诊断、治疗或毋庸置疑的替代方案，因此不应如此。 客户对此应用程序的任何使用承担了唯一的风险和责任。 Microsoft 不保证在连接与之中提供的应用程序或任何材料将足以满足任何医疗目的或满足任何人的健康或医疗要求。* 
 
 ## <a name="next-steps"></a>后续步骤
 
