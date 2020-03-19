@@ -1233,6 +1233,8 @@
           href: ./portals/admin/portal-lifecycle.md
         - name: 升级门户
           href: ./portals/admin/upgrade-portal.md
+        - name: 门户使用的 Cookie
+          href: ./portals/admin/portal-cookies.md
     - name: 高级门户配置
       items:
         - name: 概述
