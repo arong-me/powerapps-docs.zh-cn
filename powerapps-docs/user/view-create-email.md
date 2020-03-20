@@ -8,12 +8,12 @@ ms.topic: article
 author: lalexms
 ms.author: lalexms
 manager: shujoshi
-ms.openlocfilehash: 7a0dee04334f52518c1746b6650f75ebfb67634d
-ms.sourcegitcommit: 68a31e3fa4d1635ccf4cd8bd9da5fba1bfecefa4
+ms.openlocfilehash: 7d4930b03f175133a769226a407436d37f698633
+ms.sourcegitcommit: 3066c2800a939fbcaaac4262c802843e2d80b88c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051904"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79431730"
 ---
 # <a name="preview-view-and-create-email-through-the-activities-grid"></a>预览：通过“活动”网格查看和创建电子邮件
 
@@ -37,9 +37,9 @@ Dynamics 365 模型驱动应用可通过电子邮件与客户进行交互。 电
 
 查看电子邮件：
 
-1. 在模型驱动应用的站点地图中，选择“活动” ****。 
+1. 在模型驱动应用的站点地图中，选择“活动”  。 
 
-2. 依次选择“所有活动”下拉列表和“已接收电子邮件”。
+2. 依次选择“所有活动”下拉列表和“已接收电子邮件”   。
 
     ![view-email](media/view-email.png "显示已接收电子邮件")
 
@@ -49,15 +49,15 @@ Dynamics 365 模型驱动应用可通过电子邮件与客户进行交互。 电
 
 以下步骤详细说明了如何创建电子邮件。
 
-1. 在模型驱动应用的站点地图中，选择“活动”。
+1. 在模型驱动应用的站点地图中，选择“活动”  。
 
-2. 在命令栏上选择“电子邮件”。 此时将打开新的电子邮件窗口。
+2. 在命令栏上选择“电子邮件”  。 此时将打开新的电子邮件窗口。
 
     ![create-email](media/create-email.png "新建电子邮件")
 
-    根据当前已登录用户，自动填充“发件人”字段。
+    根据当前已登录用户，自动填充“发件人”字段  。
 
-3. 直接在编辑器中撰写电子邮件，或者选择“插入模板”，搜索并应用模板。 如需详细了解如何插入电子邮件模板，请参阅[插入电子邮件模板](insert-email-template.md)。
+3. 直接在编辑器中撰写电子邮件，或者选择“插入模板”，搜索并应用模板  。 如需详细了解如何插入电子邮件模板，请参阅[插入电子邮件模板](insert-email-template.md)。
 
 4. 要在全屏窗口中撰写电子邮件，请选择展开图标。
 
@@ -83,7 +83,7 @@ Dynamics 365 模型驱动应用可通过电子邮件与客户进行交互。 电
 
     ![email-toolbar](media/email-toolbar.png "使用富文本编辑器功能")
 
-5. 完成此操作后，选择“发送”。
+5. 完成此操作后，选择“发送”  。
 
 
 ### <a name="see-also"></a>另请参阅
