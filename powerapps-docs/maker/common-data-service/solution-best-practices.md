@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 40c59ccdebe8ee5192510b5d8ac7e825c6b68c58
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 39f3780d0c8bbe33512b5eaec2719bd6f3912d91
+ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909404"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100047"
 ---
 # <a name="best-practices-when-working-with-solutions"></a>使用解决方案时的最佳实践 
 本主题介绍使用解决方案时的最佳实践。 
@@ -38,7 +38,7 @@ ms.locfileid: "2909404"
 
 
 ## <a name="use-security-roles-to-manage-app-access"></a>使用安全角色管理应用访问
-模型驱动应用应分配安全角色，以控制用户访问。 详细信息：[向应用添加安全角色](../model-driven-apps/share-model-driven-app.md#add-security-roles-to-the-app) 
+模型驱动应用应分配安全角色，以控制用户访问。 详细信息：[与 Power Apps 共享模型驱动应用](../model-driven-apps/share-model-driven-app.md) 
 
 ## <a name="delete-the-managed-solution-to-delete-a-model-driven-app"></a>删除托管解决方案以删除模型驱动应用 
 要删除作为托管解决方案的一部分安装在默认解决方案中的模型驱动应用，请删除托管解决方案。 

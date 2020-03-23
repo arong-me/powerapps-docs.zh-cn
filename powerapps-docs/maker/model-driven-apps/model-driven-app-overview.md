@@ -10,23 +10,23 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 08/09/2018
+ms.date: 02/12/2020
 ms.author: matp
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 11febe03a69fe774f2c0394ee5d3a016c901498d
-ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
+ms.openlocfilehash: d29ec6ca429efb4a7c221b888c77f01841542a18
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "2890636"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069791"
 ---
 # <a name="what-are-model-driven-apps-in-power-apps"></a>Power Apps 中的模型驱动应用程序是什么？
 
-模型驱动应用程序的设计是以组件为中心的应用程序开发方法。 模型驱动应用程序的设计不需要代码，您制造的应用程序可以很简单，也可以非常复杂。  与画布应用程序的开发不同，其设计器对应用程序布局进行完全控制，而使用模型驱动应用程序，很多布局由您确定，大部分由您添加到应用程序的组件指定。 
+模型驱动应用程序的设计是以组件为中心的应用程序开发方法。 模型驱动应用程序的设计不需要代码，您制造的应用程序可以很简单，也可以非常复杂。  与画布应用程序的开发不同，其设计器对应用程序布局进行完全控制，而使用模型驱动应用程序，很多布局由您确定，大部分由您添加到应用程序的组件指定。
 
 ![示例模型驱动应用程序](media/model-driven-app-overview/model-app-sample.png)
 

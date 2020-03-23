@@ -2,7 +2,7 @@
 title: 删除模型驱动应用程序 | MicrosoftDocs
 description: 了解如何从 Power Apps 环境中删除或移除模型驱动应用程序。
 keywords: ''
-ms.date: 10/08/2019
+ms.date: 02/14/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
@@ -24,18 +24,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e8f7d58f7c5cf40f6b582bc5be7970211334d271
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 56510a744cfe010a3f52724e5b98a65a65e783e2
+ms.sourcegitcommit: 97a36c9df2a7067a29fb6bd254975dadc2bc16fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874816"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3072764"
 ---
 # <a name="delete-a-model-driven-app"></a>删除模型驱动应用程序
 删除或移除环境中已过时的应用程序。
 
 > [!IMPORTANT]
-> 如果将模型驱动应用作为托管解决方案的一部分安装在默认解决方案中，请参阅[删除作为托管解决方案的一部分安装的模型驱动应用](#delete-a-model-driven-app-that-was-installed-as-part-of-a-managed-solution)。
+> - 如果将模型驱动应用作为托管解决方案的一部分安装在默认解决方案中，请参阅[删除作为托管解决方案的一部分安装的模型驱动应用](#delete-a-model-driven-app-that-was-installed-as-part-of-a-managed-solution)。
+> - 无法删除第一方模型驱动应用，例如 Dynamics 365 Sales、Dynamics 365 Customer Service 和 Dynamics 365 Field Service。 您可以通过删除分派给应用的安全角色来对用户隐藏这些应用。 请注意，在模型驱动应用实体中，这些应用仍将对具有环境制造者、系统管理员和系统定制员角色的用户或具有创建权限的任何用户可见。 
 
 1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 2. 在左侧导航中，选择**应用**。 

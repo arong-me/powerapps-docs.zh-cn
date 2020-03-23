@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c13092daaa86abbcba5ef65dc809f29d9a6a6f12
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: d700c76009f45c4e28f78732e7ae52ab57693ccb
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883692"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040473"
 ---
 # <a name="create-and-edit-entities-in-common-data-service"></a>在 Common Data Service 中创建和编辑实体
 
@@ -45,7 +45,6 @@ ms.locfileid: "2883692"
 > - 使用 Power Query 创建新实体并使用数据填充它们。 详细信息：[使用 Power Query 将数据添加到 Common Data Service 中的实体](/powerapps/maker/common-data-service/data-platform-cds-newentity-pq)。
 > - 开发人员可以使用[元数据服务](/powerapps/developer/common-data-service/use-web-services#metadata-services)编写程序。
 
-
 ## <a name="entity-options-not-available-in-the-power-apps-portal"></a>Power Apps 门户中不可用的实体选项
 
 本主题中的信息将帮助您选择可以使用的设计器。 除非您需要满足下列要求中的任何一个，否则您可以使用 Power Apps 门户创建实体。
@@ -53,14 +52,6 @@ ms.locfileid: "2883692"
 - 控制自定义项前缀
 
   您创建的任何自定义实体的名称中都包含自定义前缀。 这是根据您在其中工作的解决方案的解决方案发布商设置的。 如果您关心自定义前缀，请确保在非托管解决方案中工作，其中的自定义前缀是您需要的此实体的前缀。 详细信息[更改解决方案发布商前缀](change-solution-publisher-prefix.md)。
-
-- 创建由组织负责的实体
-
-  默认情况下，Power Apps 门户将创建**用户或团队**负责的实体。 使用解决方案资源管理器将所有权设置为**组织**。 详细信息：[实体所有权](types-of-entities.md#entity-ownership)
-
-- 创建活动实体
-
-  活动实体是一种特殊类型的实体，跟踪可在日历上为其进行输入的操作。 详细信息：[活动实体](types-of-entities.md#activity-entities)。
 
 - 更改自定义实体的图标
 
@@ -74,19 +65,13 @@ ms.locfileid: "2883692"
 
   |选项   |说明  |
   |---------|---------|
-  |**访问团队**|为此实体创建团队模板。 |
-  |**允许快速创建**|在为此实体创建并发布了**快速创建窗体**之后，用户可以选择使用导航窗格中的**创建**按钮来创建新的记录。 更多信息：[创建和设计窗体](../model-driven-apps/create-design-forms.md)<br /><br /> 如果为某个自定义活动实体启用了此选项，则当用户使用导航窗格中的**创建**按钮时，自定义活动将出现在活动实体的组中。 但是，由于活动不支持快速创建窗体，因此，当单击自定义实体图标时，将使用主窗体。|
   |**显示此实体的区域**|在 Web 应用程序中选择其中一个可用站点地图区域以显示此实体。 这不适用于模型驱动应用程序。|
   |**审核**|在为组织启用了审核后，将允许更改随时间获取的实体记录。 为实体启用审核后，也会对其所有字段启用审核。 可以选择或清除要对其启用审核的字段。|
-  |**更改跟踪**|从最初解压缩或最后同步数据开始就检测被更改的数据，从而以永久方法支持数据同步。  |
   |**颜色**|在模型驱动应用程序中设置用于实体的颜色。|
-  |**文档管理**|在执行了其他任务来启用组织的文档管理后，启用此功能可以让此实体加入与 SharePoint 的集成。 |
-  |**重复检测**|如果为组织启用了重复检测，启用此选项后，您将能够为此实体创建重复检测规则。|
+  |**文档管理**|在执行了其他任务以启用组织文档管理后，启用此功能可以让此实体加入与 SharePoint 的集成。 |
   |**为移动设备启用**|使此实体对 Dynamics 365 for phones 和 Dynamics 365 for tablets 应用程序可用。 您还可以选择将此实体设为**在移动设备中为只读**。<br /><br /> 如果实体的窗体需要不被 Dynamics 365 for phones 和 Dynamics 365 for tablets 应用程序支持的扩展，请使用此设置确保移动应用程序用户不能编辑这些实体的数据。|
   |**针对 Phone Express 启用**|使此实体对 Dynamics 365 for phones 应用程序可用。|
-  |**邮件合并**|用户可以将此实体用于邮件合并。|
-  |**Dynamics 365 for Outlook 的脱机功能**|当 Dynamics 365 for Outlook 应用程序未连接到网络时，此实体中的数据是否可用。|
-  |**Dynamics 365 for Outlook 中的阅读窗格**|实体是否在 Dynamics 365 for Outlook 应用的阅读窗格中可见。|
+  |**Dynamics 365 for Outlook 中的阅读窗格**|实体是否在 Dynamics 365 for Outlook 应用程序的阅读窗格中可见。|
   |**使用自定义帮助**|启用后，设置“帮助 URL”来控制用户单击应用程序中的帮助按钮后会看到的页面。 使用此设置来提供特定于您公司的实体流程的指导。|
 
 

@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: d1e8048f4cc4dbb2023788fcc3d3cf28fdfb7f7b
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 97c049394bac97106b6de970d40f07321ed927bd
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979677"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069615"
 ---
 # <a name="configure-notes-for-entity-forms-and-web-forms-on-portals"></a>为门户上的实体窗体和 Web 窗体配置注释
 
@@ -158,3 +158,6 @@ ms.locfileid: "2979677"
 ## <a name="notes-configuration-for-web-forms"></a>Web 窗体的注释配置
 
 Web 窗体注释的配置方法与[实体窗体注释](#notes-configuration-for-entity-forms)相同。 首先必须为具有注释的 Web 窗体步骤创建元数据记录，然后添加注释配置元数据。
+
+> [!NOTE]
+> 注释说明必须加上 *WEB* 前缀（即前后带有星号 (*) 的“WEB”关键字），才能在门户上显示。

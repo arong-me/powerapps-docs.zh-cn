@@ -10,69 +10,65 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 12/17/2019
+ms.date: 03/04/2020
 ms.author: matp
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bcdc8241692cd1713f4c0f4cd2f4c0d8959dffe4
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 42ba7e8416477890614b00f6aa89ea241287475b
+ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909360"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3099915"
 ---
 # <a name="share-a-model-driven-app-with-power-apps"></a>使用 Power Apps 共享模型驱动应用
 
 [!INCLUDE [powerapps](../../includes/powerapps.md)] 应用程序使用基于角色的安全性进行共享。 基于角色的安全性的基本概念是，权限角色包含定义了可以在应用程序内执行的操作集权限。 必须为所有应用程序用户分派一个或多个预定义角色或自定义角色。 或者，角色还可以分派给团队。 将用户或团队分派给这些角色之一时，会为该用户或团队成员授予与该角色相关联的权限集。 
 
 ## <a name="prerequisites"></a>先决条件
-若要共享应用程序，您必须具有 [!INCLUDE [powerapps](../../includes/powerapps.md)] 环境管理员或系统管理员角色。 
+确保您具有一个[安全角色](https://docs.microsoft.com/power-platform/admin/security-roles-privileges)，其权限等于或大于您分配给应用用户和其他用户的角色。 
 
-## <a name="share-your-app-for-basic-use"></a>共享应用以供基本使用
-若要添加权限以便应用用户可以在环境内运行应用和为自己负责的记录执行常见任务，请使用 **Common Data Service 用户**安全角色。
-1.  在 [Power Apps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点中，选择**应用**，选择要共享的模型驱动应用旁边的 **…**，然后选择**共享**。 
-    > [!IMPORTANT]
-    > 共享模型驱动应用的步骤与共享区域应用的步骤不同。 有关共享区域应用的步骤，请参阅[在 Power Apps 中共享区域应用](../canvas-apps/share-app.md)。 
+## <a name="create-a-security-role-for-your-app"></a>为您的应用创建安全角色
+模型驱动应用通常包含自定义实体和其他自定义配置。 首先[创建安全角色](#create-a-security-role-for-your-app)并具有您应用中使用的所有组件的权限，这一点很重要。  
+> [!NOTE]
+> 如果现有角色授予应用中的数据的访问权限，则可以跳过此步骤。 
 
-2.  在**将用户分派给安全角色**下选择**安全用户**。
-3.  从已启用用户列表中选择要为其授予您的应用的访问权限的用户，然后在命令栏上选择**管理角色**。 
-4.  在**管理用户角色**对话框中，选择 **Common Data Service 用户**安全角色，然后选择**确定**。 
-
+## <a name="preview-share-a-model-driven-app"></a>预览：共享模型驱动应用 
+共享模型驱动应用涉及两个主要步骤。 首先，将一个或多个安全角色与应用关联，然后将安全角色分配给用户。 
+1. 访问 https://make.powerapps.com
+2. 选择一个模型驱动应用并单击**共享**。
+3. 选择该应用，然后从列表中选择安全角色。
     > [!div class="mx-imgBorder"] 
-    > ![](media/share-model-driven-app/select-common-data-service-user.png "Select Common Data Service User")
+    > ![](media/share-model-driven-app/share-app.png "Assign a role to the app")
+4. 搜索用户
+5. 选择用户，然后从列表中选择一个角色。
+    > [!div class="mx-imgBorder"] 
+    > ![](media/share-model-driven-app/share-user.png "Assign a role to the user")
+6. 单击**共享**。
 
-5. [向应用程序添加安全角色](#add-security-roles-to-the-app)
-6. [共享应用程序的链接](#share-the-link-to-your-app)
+### <a name="share-the-link-to-your-app"></a>共享应用程序的链接
+与共享画布应用不同，共享模型驱动应用当前不会发送包含应用链接的电子邮件。
 
-具有 Common Data Service 用户安全角色的用户现在可访问您的应用。 
+要获取指向应用的直接链接：
+1. 编辑应用并单击**属性**选项卡
+2. 复制**统一接口 URL**。
+3. 在一个位置粘贴应用 URL 以便用户能够访问，如将它发布到 SharePoint 站点或通过电子邮件发送。
 
-## <a name="share-a-model-driven-app-for-specific-use"></a>共享模型驱动应用以供特殊使用
-此部分中，将使用两个安全角色执行任务以共享模型驱动应用，每个安全角色特定于应用用户的需要。 您了解如何：
-- 创建自定义安全角色
-- 将用户分派给自定义安全角色
-- 为应用程序分派安全角色
 
-### <a name="tutorial-overview"></a>教程概述 
-此部分将以公司 Contoso 为例，其经营为狗和猫服务的宠物美容业务。 包含跟踪宠物美容业务的自定义实体的应用程序已经创建并发布。 现在必须共享该应用程序，以便宠物美容人员可以使用它。 若要共享应用程序，管理员或应用程序制造者向用户和应用程序分派一个或多个安全角色。 
-
-### <a name="create-or-configure-a-security-role"></a>创建或配置安全角色
-[!INCLUDE [powerapps](../../includes/powerapps.md)] 环境包含[预定义的安全角色](#about-predefined-security-roles)，这些角色反映了常见用户任务，并且定义了访问级别以匹配安全性最佳实践目标：提供对使用应用程序所需的最少量的业务数据的访问。 请记住，Contoso 宠物美容应用程序基于自定义实体。 由于实体是自定义的，必须明确指定权限，然后用户才可以使用它。 为此，您可以选择执行以下操作之一。
+## <a name="create-or-configure-a-security-role"></a>创建或配置安全角色
+[!INCLUDE [powerapps](../../includes/powerapps.md)] 环境包含[预定义的安全角色](#about-predefined-security-roles)，这些角色反映了常见用户任务，并且定义了访问级别以匹配安全性最佳实践目标：提供对使用应用程序所需的最少量的业务数据的访问。 例如，如果您的应用基于自定义实体，则必须明确指定实体特权，然后用户才可以使用它。 为此，您可以选择执行以下操作之一。
 - 扩展现有的预定义的安全角色，以便它在基于自定义实体的记录中包括权限。 
 - 为管理应用程序用户的权限创建自定义安全角色。 
-
-由于维护宠物美容记录的环境还用于 Contoso 业务运行的其他应用程序，因此将创建特定于宠物美容应用程序的自定义安全角色。 此外，还需要两组不同的访问权限。
-- 宠物美容技术人员只需阅读、更新和附加其他记录，以便其安全角色具有阅读、编写和附加权限。 
-- 宠物美容计划人员需要宠物美容技术人员所具有的所有权限，以及创建、附加、删除和共享功能，以便其安全角色具有创建、阅读、编写、附加、删除、分派、附加到和共享权限。
 
 有关访问和范围权限的详细信息，请参阅[安全角色](https://docs.microsoft.com/dynamics365/customer-engagement/admin/security-roles-privileges#security-roles)。
 
 ### <a name="create-a-custom-security-role"></a>创建自定义安全角色
 1. 在 [!INCLUDE [powerapps](../../includes/powerapps.md)] 站点中，选择**应用**，选择要共享的应用旁边的 **…**，然后选择**共享**。
 
-2. 在**共享此应用程序**对话框中，在**创建安全角色**下选择**安全设置**。
+2. 选择该应用，然后展开安全角色列表。
 
 3. 在**所有角色**页上，选择**新建**。  
 
@@ -88,6 +84,9 @@ ms.locfileid: "2909360"
 7. 由于宠物美容应用程序还与客户实体之间存在关系，选择**核心记录**选项卡，在**客户**行选择**阅读**四次直到组织范围的全局![组织全局范围](media/share-model-driven-app/organizational-scope-privilege.png)已选择。 
 
 8. 选择**自定义**选项卡，然后在权限列表中，选择**模型驱动应用程序**旁边的**读取**权限，以便选择组织范围 ![组织全局范围](media/share-model-driven-app/organizational-scope-privilege.png)。
+
+    > [!div class="mx-imgBorder"] 
+    > ![选择应用程序的安全角色](media/app-access-specific-use.png)
 
 9. 选择**保存并关闭**。 
 
@@ -109,49 +108,33 @@ ms.locfileid: "2909360"
 1. 在**共享此应用程序**对话框中，在**向安全角色分派用户**下选择**安全用户**。
 2. 在显示的列表中，选择宠物美容人员用户，然后在命令栏上选择**管理角色**。
 
+3. 单击**管理安全角色**。
     > [!div class="mx-imgBorder"] 
-    > ![管理角色](media/share-model-driven-app/select-users-for-security-roles.png)
+    > ![](media/share-model-driven-app/manage-roles.png "Manage roles")
 
-3. 在**管理用户角色**对话框中，选择您之前创建的**宠物美容技术人员**安全角色，然后选择**确定**。
+4. 在**所有角色**页面上，选择 **Common Data Service 用户**，然后依次单击**操作**、**复制角色**。 
 
-#### <a name="assign-a-security-role-to-pet-grooming-schedulers"></a>向宠物美容计划人员分派安全角色
-1. 在**共享此应用程序**对话框中，在**向安全角色分派用户**下选择**安全用户**。
-2. 在显示的列表中，选择宠物美容计划人员。
-3. 选择**管理角色**。
-4. 在**管理用户角色**对话框中，选择您之前创建的**宠物美容计划人员**安全角色，然后选择**确定**。
+> [!TIP]
+> 您还可以创建新的空角色，而不是复制现有角色。 
 
+6. 在**角色名称**框中，提供描述性的角色名称，例如*我的自定义应用访问*。  单击**确定**。
 
-## <a name="add-security-roles-to-the-app"></a>向应用程序添加安全角色
-需要将一个或多个安全角色分派到应用程序。 用户基于被分配的安全角色拥有访问应用程序的权限。
-1. 在**共享此应用程序**对话框中，在**向应用程序添加安全角色**下选择**我的应用程序**。
-2. 在应用的应用程序磁贴的右下角，选择**更多选项 (...)**，然后选择**管理角色**。
+7. 从安全角色设计器，选择操作（如阅读、编写、删除）和[访问级别](https://docs.microsoft.com/power-platform/admin/security-roles-privileges#security-roles)。 访问级别确定用户在环境层次结构中可以执行某项操作的深度或高度。 
 
-    ![管理应用程序的角色](media/share-model-driven-app/manage-roles.png)
+8. 选择**自定义实体**选项卡，然后找到您的应用使用的自定义实体。 
 
-4. 在**角色**分区，您可以选择是否授予应用程序访问所有安全角色或选择角色的权限。 若需应用的基本访问权限，请选择 **Common Data Service 用户**安全角色。 若需更具体的访问权限，请选择其他标准，或自定义或定制安全角色。 例如，选择您在此部分前面创建的**宠物美容计划人员**和**宠物美容技术人员**角色。 
+9.  在自定义实体所在的行中，设置每个权限的访问级别。  
 
-    > [!div class="mx-imgBorder"] 
-    > ![选择应用程序的安全角色](media/share-model-driven-app/app-security-roles.png)
+10. 对应用中使用的其他实体重复上述操作。 
 
-5. 选择**保存**。 
- 
+11. 选择**自定义**选项卡，确保为**模型驱动应用**设置了**读取**权限，以便选择组织访问级别 ![组织全局范围](media/share-model-driven-app/organizational-scope-privilege.png)。
 
     > [!IMPORTANT]
-    > 已获得**模型驱动应用**的**创建**或**写入**权限的用户可以访问环境中的所有应用，即使不属于有权访问这些应用的任何角色。
+    > 授予**模型驱动应用**权限**读取**、**创建**和**写入**的用户有权访问环境中的所有应用，即使他们不属于有权访问应用的任何角色。
     > ![模型驱动应用的创建和写入权限](media/app-access-cds.png)
 
-## <a name="share-the-link-to-your-app"></a>共享应用程序的链接
-1. 从**共享此应用程序**对话框，在**直接与用户共享您的应用程序的链接**下复制显示的 URL。
-   > [!div class="mx-imgBorder"] 
-   > ![共享链接](media/share-model-driven-app/share-model-driven-url.png)
+12. 选择**保存并关闭**。 
 
-2. 选择**关闭**。
-3. 在一个位置粘贴应用 URL 以便用户能够访问，如将它发布到 SharePoint 站点或通过电子邮件发送。
-
-您还可以在应用程序设计器中的**属性**选项卡上找到应用程序 URL。 
-
-> [!div class="mx-imgBorder"] 
-> ![复制应用程序 URL](media/share-model-driven-app/app-designer-copy-web-url.png)
 
 ## <a name="about-predefined-security-roles"></a>关于预定义的安全角色
 这些预定义角色随 [!INCLUDE [powerapps](../../includes/powerapps.md)] 环境提供。
@@ -174,5 +157,6 @@ ms.locfileid: "2909360"
 ### <a name="see-also"></a>另请参阅
 [在移动设备上运行模型驱动应用程序](../../user/run-app-client-model-driven.md)
 
+[创建用户和分配安全角色](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)
 
 

@@ -2,7 +2,7 @@
 title: 创建解决方案 | MicrosoftDocs
 description: 了解如何创建解决方案
 ms.custom: ''
-ms.date: 10/30/2018
+ms.date: 02/28/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 25ea1db66e61d3e0b03090a0a91f35bd90d7b649
-ms.sourcegitcommit: b746aad895b152259680f5179dcee0281c951d0a
+ms.openlocfilehash: f4f2b4941e049a08bde978a318f5fda39f3dd30e
+ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "2948820"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "3093716"
 ---
 # <a name="create-a-solution"></a>创建解决方案
 
-因为默认解决方案包含所有解决方案组件，因此，如果您创建了一个单独的解决方案并在其中完成了所有自定义，则可以更加容易地直接查找已经自定义的解决方案组件。 这样可以轻松地将您的解决方案的备份导出为一个较小的文件。 如果选择执行此操作，则务必记住将您编辑的所有解决方案组件添加到此解决方案中。 在创建新的解决方案组件时，应始终在此解决方案组的上下文中创建这些组件。 这样一来，解决方案发布商自定义前缀将得到一致的应用。 在您的解决方案中创建了解决方案组件或向其中添加了现有解决方案组件后，还可以根据需要在默认解决方案中编辑它们。  
+若要仅查找和使用自定义的组件，请创建一个解决方案，并在其中完成所有自定义。 然后，在添加、编辑和创建组件时，请始终记住在自定义解决方案的上下文中进行工作。 这样，您就可以轻松导出解决方案，以将其导入到其他环境或作为备份。   
   
- 有关解决方案概念的详细信息，请参阅[使用解决方案](solutions-overview.md)。  
+有关解决方案概念的详细信息，请参阅[使用解决方案](solutions-overview.md)。  
   
 1.  登录 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后从左侧导航中选择**解决方案**。 
   
@@ -43,7 +43,7 @@ ms.locfileid: "2948820"
     |-----------|-----------------|  
     |**显示名称**|在解决方案列表中显示的名称。 以后可以更改此属性。|  
     |**姓名**|解决方案的唯一名称。 这是使用您在“显示名称”字段中输入的值生成的。 可以在保存解决方案之前编辑此值，但在保存了解决方案之后，将无法对其进行更改。|  
-    |**发布者**|可以选择默认发布商，也可以创建一个新发布商。 建议您为组织创建要在其中使用解决方案的环境中一致使用的发布商。 详细信息：[更改任何发布商的解决方案发布商前缀](change-solution-publisher-prefix.md#change-the-solution-publisher-prefix-for-any-publisher) |  
+    |**发布者**|可以选择默认发布商，也可以创建一个新发布商。 建议您为组织创建要在其中使用解决方案的环境中一致使用的发布商。 详细信息：[解决方案发布商概述](change-solution-publisher-prefix.md) |  
     |**版本**|输入您的解决方案的版本号。 此数据仅在导出解决方案时有重要意义。 在导出解决方案时，版本号将包括在文件名中。|  
   
 3.  选择**保存**。  
@@ -68,5 +68,22 @@ ms.locfileid: "2948820"
 > [!IMPORTANT]
 >  如果您计划在解决方案中包括约会，强烈建议您不要在单独的解决方案中分别只包括约会和定期约会。 如果安装然后卸载具有不同约会类型的单独解决方案，则会遇到 SQL Server 错误，并且必须重新创建约会。 
 
-## <a name="see-also"></a>另请参阅
+## <a name="publish-changes"></a>发布更改 
+
+ 有些对用户界面进行更改自定义项需要先发布，然后用户才能在应用程序中使用它们。 
+ 
+### <a name="publish-your-customizations"></a>发布自定义项
+
+1.  在左侧导航中选择**解决方案**。
+
+2.  选择要发布以打开的解决方案。
+
+3.  在命令列表中，选择**发布所有自定义项**。  
+
+![发布所有自定义项](media/publish-all-customizations.PNG "发布所有自定义项")  
+  
+> [!IMPORTANT]
+>  准备自定义项可能需要花费一些时间。 如果看到一条消息说明浏览器页面不响应，请等待页面响应，请勿将其关闭。  
+
+### <a name="see-also"></a>另请参阅
  [使用解决方案](use-solution-explorer.md)

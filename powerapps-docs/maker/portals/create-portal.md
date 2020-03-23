@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 02/07/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: fb5799514de32d3046ccba7479b3019da64bf4aa
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 987541aff2cb3585fa19c1c9f8007ad4a79b163d
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2976993"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "3033086"
 ---
 # <a name="create-a-common-data-service-starter-portal"></a>创建 Common Data Service 起点门户
 
@@ -56,6 +56,9 @@ ms.locfileid: "2976993"
 
 5.  在**从空白门户开始**窗口中，输入门户的名称和网站的地址，然后从下拉列表中选择一种语言。 完成后，选择**创建**。
 
+    > [!TIP]
+    > 若要使用其他语言创建门户，必须首先[在环境中启用该语言](https://docs.microsoft.com/power-platform/admin/enable-languages#enable-the-language)，以便在语言下拉列表中提供该语言。
+
     > [!div class=mx-imgBorder]
     > ![创建新门户](media/create-new-portal.png "创建新门户")  
 
@@ -74,7 +77,7 @@ ms.locfileid: "2976993"
 要在 Power Apps 门户 Studio 中编辑门户，请参阅[编辑门户](manage-existing-portals.md#edit)。
 
 > [!NOTE]
-> - 您最多可以在一个租户中创建五个门户。 但是，在环境中每种类型只能创建一个门户。
+> - 在环境中每个类型和每种语言只能创建一个门户。
 > - 如果权限不足，无法配置门户，将显示错误。 您必须在 Common Data Service 中具有系统管理员角色才能创建门户。 您还必须在用户记录的**客户端访问许可证(CAL)信息**下将**访问模式**设置为**读写**。
 > - 如果您购买了早期的门户加载项，并且想要使用该加载项来设置门户，则必须转到 **Dynamics 365 管理中心**页面。 详细信息：[使用早期的门户加载项设置门户](provision-portal-add-on.md)
 > - 如果您已经使用早期的门户加载项设置了门户，则仍然可以从 [make.powerapps.com](https://make.powerapps.com) 自定义和管理门户。

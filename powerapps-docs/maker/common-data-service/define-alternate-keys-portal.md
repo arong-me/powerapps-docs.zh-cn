@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d52b3fa67863a43f82f020f3894bbabf5d38df84
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b0528015899ccc624fed1d83566c445f348343c9
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865452"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040423"
 ---
 # <a name="define-alternate-keys-using-power-apps-portal"></a>使用 Power Apps 门户定义备用键
 
@@ -37,9 +37,8 @@ ms.locfileid: "2865452"
 
 ## <a name="view-alternate-keys"></a>查看备用键
 
-1. 从 [Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**区域**设计模式。
-2. 选择**数据** > **实体**，然后选择您要查看的实体。
-3. 选择**键**查看定义的任何备用键的列表。
+1. 从 [Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**数据** > **实体**，然后选择您要查看的实体。
+2. 选择**键**查看定义的任何备用键的列表。
 
     ![查看备用键](media/view-alternate-keys-portal.png)
 

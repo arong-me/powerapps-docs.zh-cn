@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c8ead91a40fc0f79f801fee64c8eff2891723264
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2731520659633c305e19e02b67670bb12796dc50
+ms.sourcegitcommit: ed583eb94720a9645bfd79776311792a958077b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2863804"
+ms.lasthandoff: 03/01/2020
+ms.locfileid: "3094010"
 ---
 # <a name="add-configure-move-or-delete-sections-on-a-form"></a>添加、配置、移动或删除窗体中的分区 
 使用窗体设计器添加、配置、移动或删除分区。 
@@ -113,7 +113,8 @@ ms.locfileid: "2863804"
     >   - 如果误删了分区，在命令栏上，选择**撤销**将窗体恢复为之前的状态。 
     >   - 不能删除包含必需字段或已锁定字段的分区。 
     >   - 不能删除已锁定部分。 
-    >   - 一个选项卡的每个选项卡栏需要至少一个分区。 如果删除选项卡栏中剩余的最后一个分区，新分区将会自动添加。 
+    >   - 一个选项卡的每个选项卡栏需要至少一个分区。 如果删除选项卡栏中剩余的最后一个分区，新分区将会自动添加。
+    >   - 在统一接口中，如果您已选择隐藏某些部分（包括标题和边框），则不会呈现这些部分。  这与旧版 Web 客户端不同，这样设计是为确保窗体在不同的视图端口之间正确呈现（从宽到窄）。
 
 ### <a name="see-also"></a>另请参阅
 [模型驱动的窗体设计器概述](form-designer-overview.md)  
