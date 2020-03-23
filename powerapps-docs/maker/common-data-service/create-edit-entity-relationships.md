@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f96485d0c47da3b1d48ed9e1cafad89984133535
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 89a28060f7894afe49d0abe36b4461d6e2cbc474
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865991"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040379"
 ---
 # <a name="entity-relationships-overview"></a>实体关系概述
 实体关系定义记录如何在数据库中相互关联。 最简单的情况是，向实体中添加查找字段将在两个实体之间形成一个新的 1:N（一对多）关系，并使您能够将该查找字段放在窗体中。 利用查找字段，用户可以将该实体的多个*子*记录与单个*父*实体记录关联。  
@@ -108,6 +108,13 @@ ms.locfileid: "2865991"
 |**合并**|当主要实体记录合并时，会发生什么情况？|全部级联<br />无级联|
 |**汇总视图**|与此关系关联的汇总视图的预期行为是什么？ |全部级联<br />可用项的级联<br />用户负责项的级联<br />无级联|
 
+> [!NOTE]
+> 在下列情况下，将不会执行分配、删除、合并和重定父级操作：
+> - 如果原始父记录和请求的操作包含相同值。 示例：尝试触发分配和选择已是记录负责人的联系人
+> - 尝试对已运行级联操作的父记录执行操作
+
+> [!NOTE]
+> 执行分配时，会在重新分配发生时自动停用记录上当前处于活动状态的工作流或业务规则。 如果记录的新负责人想要继续使用该工作流或业务规则，则需要将其重新激活。
 
 ### <a name="parental-entity-relationships"></a>父级实体关系
 可以具有 1:N 关系的每对实体之间可以具有多个 1:N 关系。 但通常只能将其中一个关系视为父实体关系。

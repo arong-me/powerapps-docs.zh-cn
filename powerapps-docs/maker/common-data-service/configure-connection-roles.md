@@ -1,7 +1,7 @@
 ---
 title: 配置连接角色 | MicrosoftDocs
 ms.custom: ''
-ms.date: 10/17/2019
+ms.date: 02/11/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 434dea11e5238167e824561e247bc23ddbb7839b
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 0827acf9d7699e6bf88374d57a6e5218e3000ef5
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874154"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040472"
 ---
 # <a name="configure-connection-roles"></a>配置连接角色
 
@@ -49,46 +49,54 @@ ms.locfileid: "2874154"
 
 ## <a name="view-connection-roles"></a>查看连接角色
 
-Common Data Service 中已存在一些已经配置的标准连接角色。 若要查看它们，您需要转到设置区域。 
+Common Data Service 中已存在一些已经配置的标准连接角色。  
 
-### <a name="navigate-to-the-settings-area"></a>导航到设置区域
+1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后在左窗格中选择**解决方案**。 
+2. 打开所需的非托管解决方案。 
+3. 在命令栏上，选择**添加现有**，然后选择**连接角色**。 
+   将显示可用连接角色的列表。 
+4. 选择**取消**可关闭**添加现有连接角色**对话框，而不向解决方案添加连接角色。
 
-1. 在模型驱动应用中，选择**设置** > **高级设置**。 
+> [!NOTE]
+> - 如果想要使用解决方案分发连接角色，请确保它们包含在您要分发的解决方案中。 详细信息：[向解决方案添加连接角色](#add-connection-roles-to-a-solution)
+
+### <a name="view-and-edit-connection-roles-using-the-classic-experience"></a>使用经典体验查看和编辑连接角色
+
+您可以在**设置**区域中查看的多数连接角色在*内部*的**默认解决方案中定义**（不要与 **Common Data Services 默认解决方案**混淆）。 此内部**默认解决方案**包含系统中的所有自定义项。 若要查看**默认解决方案**，选择**所有解决方案 - 内部**视图。 
+
+1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，在命令栏上选择**设置** ![设置](media/powerapps-gear.png)，然后选择**高级设置**。
 2. 导航到**设置** > **业务** > **业务管理**，然后选择**连接角色**。
 
    > [!div class="mx-imgBorder"] 
-    > ![“业务管理”设置中的连接角色](media/navigate-settings-connection-roles.png "“业务管理”设置中的连接角色")
+   > ![“业务管理”设置中的连接角色](media/navigate-settings-connection-roles.png "“业务管理”设置中的连接角色")
 
 在该视图中，您可以查看该环境可用的所有连接角色，并且可以在此处编辑它们。
 
-> [!NOTE]
-> 如果想要使用解决方案分发连接角色，请确保它们包含在您要分发的解决方案中。 详细信息：[向解决方案添加连接角色](#add-connection-roles-to-a-solution)
-
-## <a name="view-connection-roles-in-the-solution-explorer"></a>在解决方案资源管理器中查看连接角色。
-
+## <a name="add-connection-roles-to-a-solution"></a>向解决方案添加连接角色
 由于连接角色*可识别解决方案*，这意味着它们可以包括在解决方案中，您也可以将连接角色添加到要分发的解决方案中。
 
-[!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
+通常不建议在内部**默认解决方案**中编辑组件。 在您创建的要使用的解决方案中，您可以使用**解决方案**区域的**添加现有**命令将任何可用连接角色加入您的解决方案。
 
-您可以在**设置**区域中查看的多数连接角色在*内部***默认解决方案中定义**（不要与 **Common Data Service 默认解决方案**混淆）。 此内部**默认解决方案**包含系统中的所有自定义项。 若要查看**默认解决方案**，选择**所有解决方案 - 内部**视图。
-
-## <a name="add-connection-roles-to-a-solution"></a>向解决方案添加连接角色
-
-通常不建议在内部**默认解决方案**中编辑组件。 在 **Common Data Service 默认解决方案**或您创建的要使用的任何解决方案中，您可以使用**添加现有**命令将任何默认连接角色加入您的解决方案。
-
-![添加现有连接角色](media/add-existing-connection-role.png)
+> [!div class="mx-imgBorder"] 
+> ![添加现有连接角色](media/add-existing-connection-role.png)
 
 在您将连接角色添加到解决方案中后，您可以在其可见的位置进行编辑。
 
-## <a name="create-or-edit-connection-roles"></a>创建或编辑连接角色。
+> [!NOTE]
+> 在从解决方案导出连接角色时，不会将连接角色状态包含在连接角色中。 因此，在将解决方案导入目标环境时，默认情况下状态将设置为可用。 
+
+
+## <a name="create-a-connection-role"></a>创建连接角色
 
 > [!IMPORTANT]
 > 如果您想要分发包括新连接角色或对现有连接角色的更改的解决方案，您必须将其添加到你将分发的解决方案中。 使用**设置**区域编辑或添加新连接角色会将这些连接角色添加到内部**默认解决方案**，且不会在您将分发的解决方案中包含这些连接角色，除非您首先将其添加到解决方案中。 详细信息[向解决方案添加连接角色](#add-connection-roles-to-a-solution)
 
-在**连接角色**列表中，选择一个连接角色进行编辑。
-定义在窗体中明确调用的连接角色有三个步骤。
+1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后在左窗格中选择**解决方案**。 
+2. 打开所需的非托管解决方案，然后在命令栏上选择**新建** > **其他** > **连接角色**。 
+3. 完成窗体上的三个步骤来[描述连接角色](#describe-the-connection-role)。
 
-![创建“连接角色”窗体](media/create-connection-role-form.png)
+   > [!div class="mx-imgBorder"] 
+   > ![创建“连接角色”窗体](media/create-connection-role-form.png)
 
 ### <a name="describe-the-connection-role"></a>描述连接角色
 
@@ -114,14 +122,14 @@ Common Data Service 中已存在一些已经配置的标准连接角色。 若�
 
 您可以通过编辑**类别**全局选项集添加新类别或修改现有类别。 详细信息：[为 Common Data Service 创建和编辑全局选项集（选择列表）](create-edit-global-option-sets.md)
 
-### <a name="select-record-types"></a>选择记录类型
+#### <a name="select-record-types"></a>选择记录类型
 
 选择哪些记录类型应用于连接。
 
 > [!NOTE]
 > 默认情况下选择**所有**，不过请确保您考虑了哪些类型适合您在添加的连接角色。
 
-### <a name="matching-connection-roles"></a>匹配的连接角色
+#### <a name="matching-connection-roles"></a>匹配的连接角色
 
 在该可选步骤中，您可以定义以对应方式应用的所有角色。 这不是必要的，但是如果加以定义，连接会更有意义。
 

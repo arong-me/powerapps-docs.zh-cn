@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9887132a8cba9a68faf0d9f16b2e7dbc64221f1b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4ede184ad0629e71094c2f7ffdc8d71eb04460e7
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2863744"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040731"
 ---
 # <a name="import-translated-entity-and-field-text-back-into-an-app"></a>将经过翻译的实体和字段文本导回应用
 
@@ -39,12 +39,15 @@ ms.locfileid: "2863744"
 > - 您导入的文件必须是在根目录中包含 CrmTranslations.xml 和 [Content_Types].xml 文件的压缩文件。  
 > - 无法导入长度超过 500 个字符的已翻译文本。 如果翻译文件中的任何一项的长度超过 500 个字符，则导入过程将失败。 如果导入过程失败，请检查文件中导致失败的行并减少该行的字符数，然后重新尝试导入。 同时注意在导入已翻译的文本后，您必须重新发布自定义项。  
   
-1. 打开[解决方案资源管理器](../model-driven-apps/advanced-navigation.md#solution-explorer)。  
+1. 在 [https://make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 登录到 Power Apps。
+
+2. 选择**解决方案**，然后选择要从中导入已翻译文本的非托管解决方案。
+
+3. 在解决方案资源管理器的“操作”工具栏上，选择**翻译**，然后选择**导入翻译**。
+
+4.  在**导入已翻译的文本**对话框中，指定包含翻译文本的文件，然后选择**导入**。  
   
-2. 在解决方案资源管理器的“操作”工具栏上，选择**导入翻译**。  
-3.  在**导入已翻译的文本**对话框中，指定包含翻译文本的文件，然后选择**导入**。  
-  
-4.  导入完成后，选择**关闭**。  
+5.  导入完成后，选择**关闭**。  
   
 > [!NOTE]
 >  发布自定义项会干扰常规系统运行。 我们建议您以对用户造成的干扰最少为宗旨，合理安排发布时间。  

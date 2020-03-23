@@ -2,7 +2,7 @@
 title: 常见问题解答：转换到统一接口 | MicrosoftDocs
 description: 有关将用户从旧的 Web 客户端转移到统一接口的转换过程的常见问题解答。
 ms.custom: ''
-ms.date: 12/20/2019
+ms.date: 02/26/2020
 ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e06fa6901ec123307adaabdbbb6071e5a11c47cc
-ms.sourcegitcommit: 41a78575a6533c45c7cf4c012f8ed30c4e43aae8
+ms.openlocfilehash: 003bc58cc0c4db717a92d75d6157b7b53eb3629c
+ms.sourcegitcommit: bb1a684d4ce2d342ad092a29ebca2bb502736e6e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2918098"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "3087780"
 ---
 # <a name="faqs-transition-to-unified-interface"></a>常见问题解答：转换到统一接口
 
@@ -79,7 +79,7 @@ ms.locfileid: "2918098"
 
 ### <a name="my-environment-has-been-transitioned-but-i-am-finding-blocking-issues-for-my-users-and-want-to-move-back-to-the-legacy-web-client-is-this-possible"></a>我的环境已转换，但是我发现我的用户有阻止问题，我希望恢复为旧 Web 客户端。 这样可以吗？
 
-可以，转换后 10 天内您仍可以切换回旧版 Web 客户端。 您可以在最初的前 4 天进行[手动切换](https://docs.microsoft.com/power-platform/admin/enable-unified-interface-only)，或在此之后，通过常规渠道提交支持请求，因为手动切换将被禁用。 
+可以，转换后 10 天内您仍可以切换回旧版 Web 客户端。 您可以将[切换手动](https://docs.microsoft.com/power-platform/admin/enable-unified-interface-only)设置为前 10 天，或者提交[标准支持请求](https://admin.powerplatform.microsoft.com/support?referer=mbssupport)并将问题类型设置为“从旧 Web 客户端到统一接口的转换”，因为手动切换将被禁用。 
 
 > [!NOTE]
 > 这 10 天需要在 2020 年 10 月 1 日之前，因为旧版 Web 客户端在该日期之后将不再可用。
@@ -116,9 +116,9 @@ ms.locfileid: "2918098"
 
 ### <a name="if-i-already-have-an-environment-transitioned-to-unified-interface-will-i-still-be-able-to-switch-back-to-the-legacy-web-client-manually"></a>如果我已经将环境转换为统一接口，是否仍然可以手动切换回旧版 Web 客户端？
 
-如果您的环境至少转换了 4 天，我们会注意禁用手动切换回旧版 Web 客户端的功能。 
+如果您的环境至少转换了 10 天，我们会注意禁用手动切换回旧版 Web 客户端的功能。 
 
-如果您发现此功能已被禁用并且需要切换回去，请从您通常的渠道提交支持请求以进行评估。
+如果您发现此功能已被禁用，并且需要切换回去，请提交[标准支持请求](https://admin.powerplatform.microsoft.com/support?referer=mbssupport)并将问题类型设置为“从旧 Web 客户端到统一接口的转换”。
 
 ### <a name="is-there-a-specific-day-and-time-when-approved-transitions-will-take-place"></a>已批准转换是否在具体日期和时间进行？ 
 

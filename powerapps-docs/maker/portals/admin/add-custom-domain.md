@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 4c657afc77e710769a803d313b36a7437c3e3f9a
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: e354a3a784a984e070f5948b4b14c9eb4c32417b
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977523"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069527"
 ---
 # <a name="add-a-custom-domain-name"></a>添加自定义域名
 
@@ -31,10 +31,12 @@ ms.locfileid: "2977523"
      > [!Note]
      > SSL 证书必须满足以下要求：
      > - 由可信证书颁发机构签署
-     > - 导出为密码保护的 PFX 文件
+     > - [导出](https://docs.microsoft.com/powershell/module/pkiclient/export-pfxcertificate?view=win10-ps)为密码保护的 PFX 文件
      > - 包含长度至少为 2048 位的私钥
      > - 包含证书链中的所有中间证书
      > - 必须已启用 SHA2；受欢迎的浏览器已移除了对 SHA1 的支持
+     > 
+     > 将 SSL 证书导出为密码保护的 PFX 文件的步骤可能因您的证书提供商而异。 请与您的证书提供商联系以获取建议。 例如，某些提供商可能建议使用来自 [OpenSSL](https://www.openssl.org/) 或 [OpenSSL 二进制文件](https://wiki.openssl.org/index.php/Binaries)站点的 OpenSSL 第三方工具。 
 
 4. 选择**下一步**。
 

@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2aa8cb6f5bb0cd3e58eda61c2b9c7b9d03637ec7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 199399fe75103df2d8fde902d54a803ec56fc395
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866079"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040555"
 ---
 # <a name="create-and-edit-entities-using-power-apps-portal"></a>使用 Power Apps 门户创建和编辑实体
 
@@ -38,8 +38,7 @@ ms.locfileid: "2866079"
 
 ## <a name="view-entities"></a>视图实体
 
-1. 从 [Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**模型驱动**或**区域**设计模式。
-2. 选择**数据** > **实体**
+1. 从 [Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**数据** > **实体**。
 
 ![视图实体](media/view-entities-portal.png)
 
@@ -50,6 +49,7 @@ ms.locfileid: "2866079"
  |视图|说明|
  |--|--|
  |**所有**| 显示所有实体|
+ |**托管**| 仅显示托管和标准实体|
  |**自定义**|仅显示自定义实体|
  |**默认**|仅显示标准实体 |
 
@@ -68,23 +68,33 @@ ms.locfileid: "2866079"
 |**显示名称**|这是将在应用中显示的实体的单数名称。 以后可以更改此信息。|
 |**复数显示名称**|这是将在应用中显示的实体的复数名称。 以后可以更改此信息。|
 |**名称**|此字段是根据您输入的**显示名称**预填充的。 其中包括 Common Data Service 解决方案发布商的自定义前缀。 保存实体后，就不能进行更改。|
+|**主要名称**|这是此时唯一可见的字段。| 如果要更改字段的**显示名称**或**名称**，可以编辑该字段。
+|**显示名称**|这是您的记录的主要用户友好文本标识符（通常为名称或数字）。 当用户需要从记录列表中进行选择时，会向用户显示此字段的值。
+|**名称**|此字段是根据您输入的**显示名称**预填充的。 其中包括 Common Data Service 解决方案发布商的自定义前缀。 保存实体后，就不能进行更改。|
+
+选择**启用附件**可将注释和文件追加到此实体的记录中。
+
+选择**更多设置**。 对于实体，这些设置是可选的。
+
+|字段|说明|
+|--|--|
 |**说明**|提供实体用途的有意义的描述。|
+|**实体类型和所有权**|将实体类型切换到“活动实体”可以创建可管理任务的实体。 **所有权**的类型定义谁可以对记录执行操作。|
+|**协作**|启用功能可以帮助用户更加轻松地在此实体上协同工作。|
+|**创建和更新设置**|您可以启用快速创建窗体，为您的应用提供简化的数据输入体验。 重复检测让您可以设置重复检测策略并创建重复检测规则。 更改跟踪提供以永久方法保持数据同步的方式。|
+|**Dynamics 365 for Outlook**|配置此实体在 Outlook 中的显示方式。|
 
-选择**下一步**以继续，这将关闭**新实体**面板并显示字段列表。
+选择**创建**以继续，这将关闭**新实体**面板并显示字段列表。
 
-**主要名称**字段是此时唯一可见的字段。 如果要更改字段的**显示名称**或**名称**，请选择**主要名称**字段进行编辑。 默认值如下所示：
+实体的**主要名称**字段将显示在字段列表中。 如果要更改字段的**显示名称**或**名称**，请选择**主要名称**字段进行编辑。 默认值如下所示：
 
 ![“主要名称”面板](media/primary-name-panel.png)
-
-选择**保存实体**创建实体或继续编辑实体。
-
-![保存实体](media/save-entity-portal.png)
 
 ## <a name="edit-an-entity"></a>编辑实体
 
 在[查看实体](#view-entities)时，选择要编辑的实体。
 
-如果要编辑实体的**显示名称**、**复数显示名称**或**描述**，从菜单选择“设置”。
+如果要编辑实体的**显示名称**、**复数显示名称**或**描述**，从菜单选择**设置**。
 
 ![实体设置](media/entity-settings-portal.png)
 
@@ -141,7 +151,7 @@ ms.locfileid: "2866079"
 > [!NOTE]
 > 从删除的实体中恢复数据的唯一方法是从删除实体前的某个点恢复数据库。 详细信息：[备份和还原实例](/dynamics365/customer-engagement/admin/backup-restore-instances)
 
-在[查看实体](#view-entities)时，选择实体，然后从菜单或上下文菜单中选择**删除实体**。
+在[查看实体](#view-entities)时，选择实体，然后从菜单中选择**删除实体**。
 
 ![使用 Power Apps 门户删除实体](media/delete-entity-powerapps-portal.png)
 

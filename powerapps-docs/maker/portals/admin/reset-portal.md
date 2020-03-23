@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 02/11/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 96e661f5774cedff7a3bc2317f02273af7041d13
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: b788d0b1a0935949e7114e220ad714fa6495c294
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978665"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069439"
 ---
 # <a name="reset-a-portal"></a>重置门户
 
@@ -41,7 +41,8 @@ ms.locfileid: "2978665"
 > - 如果您不具有关联的 Azure Active Directory 应用程序的适当权限，将显示错误。 您必须与全局管理员联系获得适当权限。
 > - 如果已使用较低版本门户加载项预配了门户，并且已成功重置了门户，则 **Dynamics 365 管理中心**页**应用程序**选项卡上的门户名称和门户状态不变。 例如，如果您的门户名称和状态分别为门户 1 和已配置，那么在重置门户后，这些值不会更改。 如果您要更改门户名称，您可以在 Power Apps 门户管理中心的**门户详细信息**选项卡上进行更改。 但是，状态值无法还原到“未配置”。
 > - 请务必注意，**应用程序**选项卡上的门户状态不表示其设置状态，不会影响门户的功能。 它只显示您是否曾访问相应门户的 Power Apps 门户管理中心。
-
+> - 如果您使用旧版门户附加产品设置了门户，您可以将门户重置为**未配置**状态，然后[创建新门户](../provision-portal-add-on.md)。
+ 
 如果您的门户未正确设置，其将进入错误状态，并显示以下屏幕。 在这种情况下，您可以通过选择错误屏幕上的**重置门户**来重置门户。
 
 > [!div class=mx-imgBorder]

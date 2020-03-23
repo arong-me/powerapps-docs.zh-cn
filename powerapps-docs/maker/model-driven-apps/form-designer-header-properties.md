@@ -21,19 +21,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1832d3bd9fc222f3c71089ae386e455a53f512f7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 67173c01bc6a96f0ada55c62688db76ca0af0596
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2868147"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069659"
 ---
 # <a name="configure-header-properties-in-the-form-designer"></a>在窗体设计器中配置页眉属性
 
 开发者可以控制模型驱动应用程序窗体页眉的密度，以便满足任何用户的需要。
-
-> [!NOTE]
-> 只有选择参加了 2019 年发行版本第 2 波提前预览的环境才提供此功能。 详细信息：[提前参加 2019 年发行版本第 2 波](https://docs.microsoft.com/power-platform/admin/preview-october-2019-updates) 
 
 ## <a name="high-density-header"></a>高密度页眉
 
@@ -147,6 +144,10 @@ ms.locfileid: "2868147"
 此消息告知开发者，说明其正在尝试将字段从窗体主体移到窗体页眉。 这样做将使其成为只读字段。 所以开发者可以选择将字段移到页眉，还是向页眉添加字段的副本。 将字段移到页眉将让用户不能在窗体主体中的原始位置编辑该字段。 将字段副本添加到页眉则会让该字段留在原始位置，从而确保用户可以继续在窗体主体内编辑该字段。
 
 ### <a name="form-headers-now-default-to-high-density-to-display-more-data-use-the-new-form-designer-to-edit-header-density"></a>窗体页眉现在默认使用高密度以显示更多数据。 请使用新窗体设计器编辑页眉密度。  
+当开发者打开配置为使用低密度页眉的主窗体进行编辑时，将在经典窗体编辑器中显示此消息。  
+  
+此消息可帮助提高对高密度页眉及其优点的关注，而开发者应该使用新的窗体编辑器来配置页眉密度。  
+
 当开发者打开配置为使用低密度页眉的主窗体进行编辑时，将在经典窗体编辑器中显示此消息。 
 
 此消息可帮助提高对高密度页眉及其优点的关注，而开发者应该使用新的窗体编辑器来配置页眉密度。  

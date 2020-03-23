@@ -13,17 +13,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24164d6eb03de550a1f3f4a8f3e8402154d03046
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7cf24511fd8f314fde5f653608c1a4fa43ebc4e4
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865595"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040643"
 ---
 # <a name="open-entity-data-in-excel"></a>在 Excel 中打开实体数据
 通过在 Microsoft Excel 中打开实体数据，可以使用 Microsoft Power Apps Excel 加载项快速轻松地查看和编辑数据。 Power Apps Excel 加载项需要 Microsoft Excel 2016。
 
 ![Excel 加载项](./media/data-platform-cds-excel-addin/ExcelAddin.png "Power Apps Excel 加载项")
+
+若要安装 Power Apps Excel 加载项，请参阅 [Microsoft PowerApps Office 加载项](https://appsource.microsoft.com/en-us/product/office/WA104380330?tab=Overview)。 有关如何添加或删除 Office Excel 加载项的详细信息，请参阅[在 Excel 中添加或删除加载项](https://support.office.com/en-us/article/add-or-remove-add-ins-in-excel-0af570c4-5cf3-4fa9-9b88-403625a0b460)。
 
 ## <a name="open-entity-data-in-excel"></a>在 Excel 中打开实体数据
 1. 在 [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**实体**。 将显示所有实体。

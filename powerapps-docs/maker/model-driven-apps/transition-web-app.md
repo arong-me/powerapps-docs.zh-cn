@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bf9b21936a0b1a9d843d248cf4941854dcdbbd7d
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 8db8442c7cb5a53d1c836f814e6d7b1d5e58a84a
+ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874550"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029662"
 ---
 # <a name="quick-start-for-transitioning-your-legacy-web-client-application-to-unified-interface"></a>从旧 Web 客户端应用程序转换到统一接口的快速入门指南
 
@@ -49,11 +49,6 @@ ms.locfileid: "2874550"
 
    > [!div class="mx-imgBorder"] 
    > ![仅使用统一接口设置](media/use-unified-interface-only-pac.png)
-
-您还可以在设置区域中设置此项。 转到**设置** > **管理** > **系统设置**，然后将**常规**选项卡上的**仅启用统一接口**设置为**是**。
-
-> [!div class="mx-imgBorder"] 
-> ![仅使用新的统一接口](media/use-unified-interface-only.png "仅使用新的统一接口")
 
 
 > [!NOTE]

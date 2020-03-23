@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 01/07/2020
+ms.date: 02/12/2020
 ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 8575bdc4379091204dbdfe4fd04d9d2d56a06cc9
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: ceb25954357efeafec6b33338ff4b617af82ebda
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2976817"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069747"
 ---
 # <a name="enable-azure-storage"></a>启用 Azure 存储
 
@@ -24,6 +24,8 @@ Azure 存储门户集成在默认文件附件方面使用相同界面和提供�
 
 运行存储帐户后，门户需要特定的全局设置以告知应用程序如何查找您的存储帐户。 在门户管理应用中，转至**设置** > **新建**，然后添加名为 **FileStorage/CloudStorageAccount** 的新设置。
 
+Azure 存储集成仅适用于在实体窗体元数据中配置的**注释**。 如果您使用可以使用**时间线**设置的**门户评论**，将不使用 Azure Blob 作为存储。 虽然“门户评论”还可为以附件形式上载文件提供功能，但是这些文件只存储在 Common Data Service 中。
+ 
 > [!NOTE]
 > 上传文件大小的上限为 125 MB。
 

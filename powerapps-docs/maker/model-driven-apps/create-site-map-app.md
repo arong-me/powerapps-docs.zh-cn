@@ -1,5 +1,5 @@
 ---
-title: 在 Power Apps 中创建模型驱动应用程序的应用程序站点地图 | MicrosoftDocs
+title: 在 Power Apps 中创建模型驱动应用站点地图 | MicrosoftDocs
 description: 了解如何为您的应用创建站点地图
 keywords: ''
 ms.date: 05/29/2018
@@ -24,14 +24,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d225bba7469ba25f170bfa1f77af226996a9946b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2dcfea33867b6a5113ed6fd36e20d529608ed0ab
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2860311"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091345"
 ---
-# <a name="tutorial-create-a-model-driven-app-site-map-for-an-app-using-the-site-map-designer"></a>教程：使用站点地图设计器创建模型驱动应用程序的站点地图
+# <a name="create-a-model-driven-app-site-map-using-the-site-map-designer"></a>使用站点地图设计器创建模型驱动应用站点地图
 
 在本教程中，您执行多项站点地图任务，如创建新站点地图以及添加区域、组和子区域。
 

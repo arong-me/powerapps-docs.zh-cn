@@ -6,21 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 01/17/2020
+ms.date: 03/04/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: bf76d2a8a3e91d9e20de9d70543af0bda4a57040
-ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
+ms.openlocfilehash: 9293288a8f3de86807342466771d197754b65706
+ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2988067"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100003"
 ---
 # <a name="power-apps-portals-faq"></a>Power Apps 门户常见问题解答
 
 我们编译了一个常见问题列表并提供了简短的答案来帮助你快速获得所需信息。
 
 ## <a name="general"></a>常规
+
+### <a name="does-power-apps-portals-support-tls-12"></a>Power Apps 门户是否支持 TLS 1.2？
+
+Power Apps 门户版本 8.3 及更高版本支持 [TLS 1.2](https://support.microsoft.com/help/4041984/portal-capabilities-for-microsoft-dynamics-365-version-8-3-2-85-releas)。
 
 ### <a name="what-is-the-difference-between-power-apps-portals-dynamics-365-portals-and-add-on-portals"></a>Power Apps 门户、Dynamics 365 门户与附加产品门户之间有何区别？
 
@@ -32,9 +36,11 @@ ms.locfileid: "2988067"
 
 ![Power Apps 门户类型](./media/power-apps-portals-type.png)
 
-对于附加产品门户，已经为门户类型添加了“附加产品”前缀。 例如，列出的生产加载项门户类型为“生产（附加产品）”。
+采用基于容量的许可证和采用基于附加产品的许可证的 Power Apps 门户之间的其他区别：
 
-采用基于容量的许可证和采用基于附加产品的许可证的 Power Apps 门户之间不存在功能差异。 但是，采用基于容量的许可证和采用基于附加产品的许可证的门户的预配方法不同。
+- 对于附加产品门户，已经为门户类型添加了“附加产品”前缀。 例如，列出的生产加载项门户类型为“生产（附加产品）”。
+- 与基于附加产品的许可证门户相比，Power Apps 门户具有[不同的缓存机制](https://powerapps.microsoft.com/en-us/blog/publishing-changes-to-powerapps-portals/)。
+- 采用基于容量的许可证与采用基于附加产品的许可证的门户的预配方法不同。
 
 可以按照下列文章中介绍的步骤创建采用基于容量的许可证的 Power Apps 门户。
 
@@ -213,6 +219,10 @@ Set-TenantSettings -RequestBody @{ "disablePortalsCreationByNonAdminUsers" = $fa
 您的门户将重新启动并重新开始工作。
 
 ## <a name="debugging-and-fixing-problems"></a>调试和修复问题
+
+### <a name="performance-of-entity-forms-actions-such-as-createupdatedelete-on-entity-forms-take-a-lot-of-time-to-complete-or-timeout"></a>实体窗体的性能：诸如在实体窗体上创建/更新/删除等操作需要大量的时间完成或超时。
+
+发生这种情况的原因有多种，具体取决于您的数据以及在 Common Data Service 中对该实体执行的自定义。 在解决来自门户的记录操作的此类与性能相关的问题时，请确保在那些可能会造成这些延迟的事件上没有注册同步插件。 如果可能，请尝试以异步方式实现它们，以使其不暂候或延迟事务。
 
 ### <a name="when-accessing-my-portal-i-see-a-generic-error-page-how-can-i-see-the-actual-error"></a>在访问我的门户时，我看到常规错误页。 我如何才能看到实际错误？
 

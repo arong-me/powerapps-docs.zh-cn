@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9859fd06ca31ed44d22474cd92491fc3194252c6
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cf8fdf1b14ef7bbc503c49fac217bb071bd56305
+ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861723"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029754"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>解决方案检查器的常见问题和解决
 
@@ -220,7 +220,7 @@ ms.locfileid: "2861723"
 
 请参考[知识库文章 #4337537：导出无效 - 业务流程实体缺失](https://support.microsoft.com/en-hk/help/4337537/invalid-export-business-process-entity-missing)，了解此问题和解决步骤的详细信息。
 
-## <a name="solution-cchecker-fails-to-export-patched-solutions"></a>解决方案检查器无法导出已修补的解决方案
+## <a name="solution-checker-fails-to-export-patched-solutions"></a>解决方案检查器无法导出已修补的解决方案
 
 如果解决方案已应用了[修补程序](https://docs.microsoft.com/powerapps/developer/common-data-service/create-patches-simplify-solution-updates)，解决方案检查器将无法导出解决方案以进行分析。 在解决方案应用了修补程序后，原始解决方案将被锁定，只要将解决方案确定为父解决方案的组织中有相关修补程序，其将无法更改或导出，
 
