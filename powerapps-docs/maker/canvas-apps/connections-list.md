@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 00273fefd24b9e0f76ed284b2f9ab526fb7706d6
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: c0710f36b5c49037d5104ab1085d1c990290b967
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211839"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122887"
 ---
 # <a name="overview-of-canvas-app-connectors-for-power-apps"></a>画布概述-适用于电源应用的应用连接器
 数据是大多数应用程序（包括在 Power Apps 中构建的应用程序）的核心。 数据存储在数据源中，应用是通过创建的连接来连接数据。 连接使用特定的连接器与数据源进行通信。 Power Apps 为许多常用的服务和本地数据源（包括 SharePoint、SQL Server、Office 365、Salesforce 和 Twitter）提供了连接器。 若要开始将数据添加到画布应用，请参阅[在 Power Apps 中添加数据连接](add-data-connection.md)。
@@ -47,7 +47,7 @@ ms.locfileid: "79211839"
 
 ## <a name="actions"></a>Actions
 
-如果你的连接器提供操作，则必须与前面一样仍选择数据源。 而不是选择表作为下一步，但是，通过编辑将显示数据的控件的 Items 属性，可以手动将控件连接到操作。 Items 属性所设置的公式指定用于检索数据的操作。 例如，如果连接到 Yammer，然后将 Items 属性设置为数据源的名称，则应用不会检索任何数据。 若要用数据填充控件，请指定 **GetMessagesInGroup(5033622).messages** 等操作。
+如果你的连接器提供操作，则必须与前面一样仍选择数据源。 而不是选择表作为下一步，但是，通过编辑将显示数据的控件的Items 属性，可以手动将控件连接到操作。 Items 属性所设置的公式指定用于检索数据的操作。 例如，如果连接到 Yammer，然后将 Items 属性设置为数据源的名称，则应用不会检索任何数据。 若要用数据填充控件，请指定 **GetMessagesInGroup(5033622).messages** 等操作。
 
 ![操作数据源 Items 属性](./media/connections-list/ItemPropertyAction.png)
 
@@ -74,7 +74,7 @@ ms.locfileid: "79211839"
 | ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
 |![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md)
 
-* * 适用于 Azure Blob、Box、Dropbox、Google Drive、OneDrive 和 OneDrive for business
+\* * 适用于 Azure Blob、Box、Dropbox、Google Drive、OneDrive 和 OneDrive for business
 
 ## <a name="standard-and-custom-connectors"></a>标准和自定义连接器
 Power Apps 为许多常用数据源提供*标准*连接器。 如果 Power Apps 为要使用的数据源类型提供了标准连接器，则应使用该连接器。 如果要连接到其他类型的数据源（如已构建的服务），请参阅[注册和使用自定义连接器](../canvas-apps/register-custom-api.md)。
@@ -102,4 +102,4 @@ Power Apps 为许多常用数据源提供*标准*连接器。 如果 Power Apps 
 
 ### <a name="windows-authentication"></a>Windows 身份验证
 
-这种类型的连接不太安全，因为它也不依赖于最终用户身份验证。  需要连接到**本地**数据源时，请使用 Windows 身份验证。  此类连接的一个示例是指具有 SQL Server 的本地服务器。  连接必须通过网关。  由于它通过网关，连接器可以访问该数据源中的所有数据。 因此，可使用提供的 Windows 凭据访问的任何信息都可用于连接器。 发布应用程序后，该连接也将发布并可供用户使用。   这意味着，最终用户还可以使用此相同的连接创建应用程序，并访问该计算机上的数据。  与该应用共享的用户也会**隐式共享**与数据源的连接。  当数据源仅位于本地服务器上并且该源上的数据可自由共享时，此类型的连接可能有效。
+这种类型的连接不太安全，因为它不依赖于最终用户身份验证。 需要连接到**本地**数据源时，请使用 Windows 身份验证。 此类连接的一个示例是指具有 SQL Server 的本地服务器。 连接必须通过网关。 由于它通过网关，连接器可以访问该数据源中的所有数据。 因此，可使用提供的 Windows 凭据访问的任何信息都可用于连接器。 发布应用程序后，该连接也将发布并可供用户使用。  这意味着，最终用户还可以使用此相同的连接创建应用程序，并访问该计算机上的数据。 与该应用共享的用户也会**隐式共享**与数据源的连接。 当数据源仅位于本地服务器上并且该源上的数据可自由共享时，此类型的连接可能有效。
