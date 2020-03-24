@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 12/19/2019
+ms.date: 03/21/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c70d73cb2dcdd9fd1832a10c4c89029cdb5c45ad
-ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
+ms.openlocfilehash: 49f25d01c646916738e583729e12e7b0544f7390
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78264932"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122802"
 ---
 # <a name="formula-reference-for-power-apps"></a>Power Apps 的公式参考
 公式组合了许多元素。  下面列出的包括：
@@ -149,7 +149,7 @@ ms.locfileid: "78264932"
 
 **[EncodeUrl](functions/function-encode-decode.md)** – 使用 URL 编码对特殊字符进行编码。
 
-**[Exit](functions/function-exit.md)** – 退出当前正在运行的应用。
+**[Exit](functions/function-exit.md)** –退出当前正在运行的应用程序，并选择性地注销当前用户。
 
 **[Exp](functions/function-numericals.md)** - 返回 *e* 的乘幂。
 

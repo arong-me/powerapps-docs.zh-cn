@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a8ef720b45f3a9e02129c79f883b007a1fac3b22
-ms.sourcegitcommit: 0ca700b2982a4dec430f0b02b00cb1b3a045cf1c
+ms.openlocfilehash: febec328c291972563599eb56a32f80e22eb070a
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "79543049"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122536"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>设置并了解 Power Apps 中的危机通信示例模板
 <!--note from editor: Suggest moving the overview into the usual overview position (i.e. after the H1). Other notes: According to the Docs Contributor Guide, graphic file names should be all lowercase, including the extension. I didn't change this, but something to note for next time. -->
@@ -509,7 +509,7 @@ ms.locfileid: "79543049"
 
 完成下表中所示的所有字段，然后选择 "**保存**"。
 
-| **字段名称** | **SharePoint 中的逻辑名称** | 用途 | **示例** |
+| **字段名称** | **SharePoint 中的逻辑名称** | 用途 | 示例 |
 |-|-|-|-|
 | 管理员电子邮件 | AdminContactEmail | 这是发送电子邮件请求的位置。 它们应设置为你的电子邮件地址。 如果要将通知发送到其他收件箱，请参阅本文前面的[可选共享收件箱配置](#optional-configure-shared-inbox)。 | admin@contoso.com |
 | 徽标 URL | Logo | 在左上角显示的应用的徽标。 | https://contoso.com/logo.png |
@@ -608,7 +608,7 @@ ms.locfileid: "79543049"
 | **字段名称** | **SharePoint 中的逻辑名称** | 用途 |
 |-|-|-|
 | 职务 | 职务 | 常见问题解答中的问题。 |
-| 级别 | 级别 | 问题在常见问题解答中的顺序。 |
+| 排名 | 排名 | 问题在常见问题解答中的顺序。 |
 | Answer | Answer | 常见问题解答中的问题的答案。 |
 | 不推荐使用 | 不推荐使用 | 用于隐藏常见问题中的问题。 |
 
@@ -700,6 +700,31 @@ ms.locfileid: "79543049"
 > [!NOTE]
 > 如果你的某个连接尚未获得授权，你可能会收到错误。
 如果出现这种情况，请打开包含未经授权的连接和重新授权的卡。
+
+
+### <a name="optional-sending-notifications-to-more-than-999-users"></a>可选：向超过999个用户发送通知
+
+"当前**获取组成员**" 操作仅限拉取999个用户（默认为100个用户）。 若要分发给更多用户，可以改为改为将电子邮件发送到通讯组。
+
+1. 删除以下卡：**获取组成员**并**在首选发送通知设置上切换**：
+
+    ![删除操作](media/sample-crisis-communication-app/36-delete-actions.png)
+
+1. 添加新操作。
+
+1. 搜索并选择 "**发送电子邮件（V2）** "：
+
+    ![添加发送电子邮件](media/sample-crisis-communication-app/37-add-send-an-email.png)
+
+1. 在 "**到**" 字段中，键入你的通讯组的名称。
+
+1. 在 "**使用者**" 字段中，选择 "**添加动态值**" 按钮，然后添加 "**当新闻项目发布时**" 卡上的 "**标题**" 字段：
+
+    ![添加标题](media/sample-crisis-communication-app/38-add-title.png)
+
+1. 在 "**正文**" 字段中，选择 "**添加动态值**" 按钮，然后添加 "**当新闻项目发布时**" 卡时的 "**详细信息**" 字段。
+
+1. 选择“保存”。
 
 ### <a name="test-the-news-notification-flow"></a>测试新闻通知流
 

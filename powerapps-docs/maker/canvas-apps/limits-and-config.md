@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/30/2019
+ms.date: 03/19/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 18abbc91426c74b48aefd51f1867d8bff806d718
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 7e434de24af417b5871c762d1aecd64cc41c5c72
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211494"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122762"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>画布应用的系统要求、限制和配置值
 本主题包含设备平台和 web 浏览器要求，以及画布应用的限制和配置值。
@@ -92,6 +92,7 @@ ms.locfileid: "79211494"
 
 | 域 | 协议 | 使用 |
 | --- | --- | --- |
+| api.bap.microsoft.com<br/>api.businessappdiscovery.microsoft.com | https | 环境权限管理|
 | management.azure.com |https |RP |
 | msmanaged-na.azure-apim.net |https |连接器运行时/API |
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
@@ -102,9 +103,10 @@ ms.locfileid: "79211494"
 | \*. azureedge.net |https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 make.powerapps.com |
 | \*. blob.core.windows.net |https | Blob 存储 |
 | \*. flow.microsoft.com | https | create.powerapps.com、make.powerapps.com、content.powerapps.com 和 make.powerapps.com |
-| *. dynamics.com | https | Common Data Service |
+| \*. dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |遥测 |
-| localhost | https | Power Apps Mobile
+| localhost | https | Power Apps Mobile|
+
 
 > [!NOTE]
 > 如果使用的是 VPN，则必须将其配置为从适用于移动设备的隧道上排除 localhost。
