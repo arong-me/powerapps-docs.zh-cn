@@ -23,11 +23,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 03eca0ade83c4d241eca9e4f7a6004232aac2b87
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2860091"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3108036"
 ---
 # <a name="how-model-driven-app-main-forms-appear-on-different-devices"></a>模型驱动应用程序的主窗体在不同设备上的显示方式
 
@@ -57,7 +57,7 @@ ms.locfileid: "2860091"
 |组件|摘要|  
 |---------------|-------------|  
 |**导航栏**|使用站点地图中的数据以支持移动到应用程序的不同区域。<br /><br /> 在经典窗体中使用的导航窗格未包括在更新的窗体中。 在记录的上下文中，导航栏提供对相关记录的视图的访问。 不需要使用导航窗格或导航栏导航到相关记录，添加配置的子网格即可显示有用的相关实体记录，从而可为大多数人提供更好的体验。|  
-|**命令栏**|使用为功能区定义的数据为记录提供相关命令。<br /><br /> 前五个命令显示时后跟一个省略号 (![“更多命令”按钮](media/not-available.gif "M更多命令按钮”))，可提供弹出式菜单来选择其他命令。|  
+|**命令栏**|使用为功能区定义的数据为记录提供相关命令。<br /><br /> 前五个命令显示时后跟一个省略号 (![“更多命令”按钮](media/not-available.gif "更多命令按钮"))，可提供弹出式菜单来选择其他命令。|  
 |**图像**|如果实体有图像字段，并且实体**主图像** 选项设置为**默认图像** ，则当将窗体配置为显示图像时，图像可以在标题中显示。|  
 |**页眉**|放在标题中的字段在用户向下滚动到窗体的主体时仍然可见。<br /><br /> 标题中最多可放四个字段。 标题中不允许有多行文本、Web 资源或 iFrame。 标题和脚注与分区有一些共同的属性。|  
 |**流程控件**|如果某个实体有活动的业务流程，则会在标题下显示流程控件。 详细信息：[业务流程](/flow/business-process-flows-overview)|  

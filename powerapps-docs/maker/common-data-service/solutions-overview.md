@@ -23,11 +23,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 309b6721d60d06e81926bfc0f97ff192f936686a
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2975793"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3108051"
 ---
 # <a name="solutions-overview"></a>解决方案概述  
 
@@ -167,7 +167,7 @@ ms.locfileid: "2975793"
  
 ## <a name="solution-publisher-prefix"></a>解决方案发布商前缀 
 
-默认情况下，您在 Power Apps 内使用的解决方案将是与 **Common Data Service 默认发布商**关联的 **Common Data Service 默认解决方案**。 将为发布商随机分配默认自定义项前缀，例如，可能是 `cr8a3`。 这意味着为您的组织创建的元数据的每个新项目的名称都会将此前缀附加到用于唯一标识项目的名称前面。 
+默认情况下，您在 Power Apps 内使用的解决方案将是与 **Common Data Service 默认发布商**关联的 **Common Data Services 默认解决方案**。 将为发布商随机分配默认自定义项前缀，例如，可能是 `cr8a3`。 这意味着为您的组织创建的元数据的每个新项目的名称都会将此前缀附加到用于唯一标识项目的名称前面。 
 
 建议更改解决方案发布商前缀，使其更有意义。 详细信息：[更改解决方案发布商前缀](change-solution-publisher-prefix.md)
   
