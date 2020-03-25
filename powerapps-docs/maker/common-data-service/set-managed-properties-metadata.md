@@ -2,7 +2,7 @@
 title: 在 Common Data Service 元数据中设置托管属性 | MicrosoftDocs
 description: 了解如何在解决方案中为元数据项目设置托管属性。
 ms.custom: ''
-ms.date: 12/19/2019
+ms.date: 03/03/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,29 +22,26 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4e0c0432626896acdabf89133c86510b651e3859
-ms.sourcegitcommit: 366f0d1b8309ab1fd533ebd7e1b41a69a99fd25a
+ms.openlocfilehash: 0f75c9c38b3fbd74f330de5e80a2c0f7df8d6e13
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917901"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109201"
 ---
 # <a name="set-managed-properties-in-common-data-service-metadata"></a>在 Common Data Service 元数据中设置托管属性 
+可以使用托管属性来控制哪些托管解决方案组件可自定义。 ISV 应该允许在有意义时对解决方案组件进行自定义。 这样，组织可以根据其特殊需要自定义您的解决方案。 限制或消除提供解决方案核心功能的关键解决方案组件的自定义，以便您可以按可预见的方式支持和维护它。 对于大多数非 ISV 开发环境，我们建议您不要允许自定义托管解决方案组件。 
 
-托管属性仅适用于以下情况：元数据包括在某个托管解决方案中，并将该解决方案导入到另一个环境。 利用这些设置，解决方案制造者可以对其允许安装托管解决方案的用户拥有的自定义级别有一定的控制。 
+托管属性旨在保护解决方案免遭可能导致它中断的修改。 托管属性不提供数字版权管理 (DRM) 或者用于许可解决方案或控制谁可以安装它的功能。
 
-可以查看和更改非托管组件的托管属性。 可以查看，但是不能更改托管组件的托管属性。 
+当解决方案在开发环境的非托管层处于非托管状态时，您将应用托管属性。 托管属性将在您打包托管解决方案并将它安装在不同环境中后生效。 导入托管解决方案后，只能使用原始发布者的解决方案更新来更新托管属性。 
 
-> [!TIP]
-> 允许用户在处理业务数据的解决方案中扩展元数据通常是一个好主意。 这会允许他们以对标准实体采用的相同方法根据其需要定制您的解决方案。
->
->对于提供支持解决方案的功能但不包含业务数据的元数据，最好限制允许进行哪些自定义。
+在查看解决方案组件列表时，大多数解决方案组件提供**托管属性**菜单项。 当您导入包含这些组件的托管解决方案时，可以查看但不能更改其托管属性。
 
-
-## <a name="entity-managed-properties"></a>实体的托管属性
+## <a name="view-and-edit-entity-managed-properties"></a>查看和编辑实体托管属性
 1.  登录 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，然后从左侧窗格中选择**解决方案**。 
 2.  打开所需的解决方案。 
-3.  从解决方案中的组件列表选择要查看或编辑其托管属性的非托管实体旁边的 **…**， 然后选择**托管属性**。 
+3.  从解决方案中的组件列表选择要查看或编辑其托管属性的非托管实体旁边的 **…**， 在要查看其托管属性的实体旁边，然后选择**托管属性**。 
 
     > [!div class="mx-imgBorder"] 
     > ![实体托管属性命令](media/entity-managed-properties.png "实体托管属性命令")
@@ -54,8 +51,6 @@ ms.locfileid: "2917901"
     > [!div class="mx-imgBorder"] 
     > <img src="media/managed-properties-dialog.png" alt="Managed properties pane" height="572" width="300">
 
-<!-- [Managed properties pane](media/managed-properties-dialog.png "Managed properties pane") -->
-  
 实体具有的托管属性比其他任何类型的解决方案组件都多。 如果实体可以自定义，则可设置以下选项。  
 
 |选项|说明|
@@ -70,44 +65,45 @@ ms.locfileid: "2917901"
 |**是否可以启用更改跟踪** |实体**更改跟踪**属性是否可更改。|
 |**可启用到外部搜索索引的同步** |实体是否可以配置为启用相关性搜索"。 详细信息：[配置相关性搜索以改进搜索结果和性能](/dynamics365/customer-engagement/admin/configure-relevance-search-organization) |
 
-## <a name="field-managed-properties"></a>字段托管属性
+## <a name="view-and-edit-field-managed-properties"></a>查看和编辑字段托管属性
+在解决方案中的自定义字段旁边，选择 **…** 然后选择**托管属性**。
+
+这将打开**托管属性**窗格。
+> [!div class="mx-imgBorder"] 
+> <img src="media/field-managed-prop.png" alt="Field managed properties" height="525" width="295">
+
+**允许自定义**选项控制其他所有选项。 如果此选项被禁用，则其他设置都不适用。 如果启用，则可指定其他自定义选项。  
+  
+如果字段可以自定义，您可以启用以下选项。  
+  
+- **可以修改显示名称**
+- **可以更改其他属性**：此属性控制没有特定托管属性的任何其他自定义项。 
+- **可以创建新表单** 
+- **可以创建新图表** 
+- **可以创建新视图** 
+- **可以更改分层关系** 
+- **可以启用更改跟踪** 
+- **支持同步到外部搜索索引**
+
+禁用所有单个选项等同于禁用**允许自定义**。  
+
+应用您的选择，然后选择**完成**关闭窗格。
+
+> [!NOTE]
+> 如果此字段是**日期和时间**字段，另外的**可更改日期和时间行为**属性可用。 详细信息：[日期及时间字段的行为和格式](behavior-format-date-time-field.md) 
 
 有关如何编辑字段的信息，请参阅[使用 Power Apps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)。
 
-在[查看字段](create-edit-field-solution-explorer.md#view-fields)时，从非托管解决方案中选择自定义字段，然后在菜单栏上选择**其他操作** >  **托管属性**。
+## <a name="view-and-edit-other-component-managed-properties"></a>查看和编辑其他组件的托管属性
+您可以查看和编辑许多其他解决方案组件的托管属性，例如 Web 资源、流程、图表或仪表板。 在解决方案中在组件旁边，选择 **…** 然后选择**托管属性**。 
 
-![查看字段托管属性](media/view-field-managed-properties-solution-explorer.png)  
-  
-这将打开**设置托管属性**对话框。
-
-![设置字段托管属性](media/set-field-managed-property.png)
-
-**可以自定义** 选项控制其他所有选项。 如果此选项为 **False**，则其他设置都不适用。 如果这是 **True**，则可指定其他自定义选项。  
-  
-如果字段可以自定义，柯将以下选项设置为 **True** 或 **False**。  
-  
-- **可以修改显示名称**
-- **可以更改需求级别** 
-- **可以更改其他属性**：此属性控制没有特定托管属性的任何其他自定义项。
-
-将所有单个选项设置为 **False**，等同于将**可以自定义**设置为 **False**。  
-
-应用您的选择并单击**设置**关闭对话框。
-
-> [!NOTE]
-> 如果此字段是**日期和时间**字段，另外的**可更改日期和时间行为**属性可用。 详细信息：[日期及时间字段的行为和格式](behavior-format-date-time-field.md)
-
-## <a name="relationship-managed-properties"></a>关系托管属性
-
-在查看实体关系时，从非托管解决方案中选择关系，然后在菜单栏上选择**其他操作** > **托管属性**。
+## <a name="view-and-edit-relationship-managed-properties"></a>查看和编辑关系托管属性
+在[解决方案资源管理器](../model-driven-apps/advanced-navigation.md#solution-explorer)中查看实体关系时，从非托管解决方案中选择关系，然后在菜单栏上选择**其他操作** > **托管属性**。
   
 对于关系，唯一的托管属性是**可以自定义**。 这一个设置控制可对实体关系做出的所有更改。 
 
-
 ### <a name="see-also"></a>另请参阅
 
-[托管属性](solutions-overview.md#managed-properties)<br />
-[使用解决方案资源管理器创建和编辑实体](create-edit-entities-solution-explorer.md)<br />
-[使用 Power Apps 解决方案资源管理器创建和编辑 Common Data Service 的字段](create-edit-field-solution-explorer.md)<br />
-[使用解决方案资源管理器创建和编辑 1:N（一对多）或 N:1（多对一）实体关系](create-edit-1n-relationships-solution-explorer.md)<br />
-[使用解决方案资源管理器在 Common Data Service 中创建 N:N（多对多）实体关系](create-edit-nn-relationships-solution-explorer.md)
+[导出解决方案](export-solutions.md) <br />
+[解决方案概述](solutions-overview.md)
+

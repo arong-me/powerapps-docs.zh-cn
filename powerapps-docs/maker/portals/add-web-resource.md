@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 01/07/2020
+ms.date: 02/11/2020
 ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 32bde2ec2c97f33c426a57b17216a7086930eaca
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 0c011c61c2084662d1e759d7226140dcf3ddfad6
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977904"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109194"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>将 Azure 存储 Web 资源添加到窗体
 
@@ -22,8 +22,8 @@ ms.locfileid: "2977904"
 
 若要启用将来自特定窗体的附件上载到 Azure 存储，则必须将 Web 资源添加到该窗体，且必须[为您的组织配置 Azure 存储](enable-azure-storage.md)。
 
-> [!Note]
-> 在此示例中，窗体将添加到潜在顾客实体的潜在顾客窗体。 我们建议在编辑现有窗体时要注意。
+> [!NOTE]
+在此示例中，窗体将添加到潜在顾客实体的潜在顾客窗体。 我们建议在编辑现有窗体时要注意。
 
 当使用门户将文件（例如，attachments.zip）上载到 Azure 存储时，它由对实体的注释和附件的占位符代表。
 
@@ -87,13 +87,15 @@ ms.locfileid: "2977904"
 [跨源资源共享 (CORS)](https://www.w3.org/TR/cors/)协议包含一组指示是否与其他源共享响应的标题。
 以下站点设置用于配置 CORS：
 
-|                 客户                  |                                                                            说明                                                                            |
-|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| HTTP/Access-Control-Allow-Credentials | 该标题的唯一有效值是 true（区分大小写）。 如果您不需要凭据，请完全忽略此标题（不将其值设置为 false）。 |
-|   HTTP/Access-Control-Allow-Headers   |                                                   用逗号分隔的受支持的 HTTP 请求标题的列表。                                                   |
-|   HTTP/Access-Control-Allow-Methods   |                                      用逗号分隔的允许的 HTTP 请求方法（如 GET、POST、OPTIONS）的列表。                                       |
-|   HTTP/Access-Control-Allow-Origin    |                   若要允许任何资源访问您的资源，则可以指定 \*。 否则，请指定可以访问资源的 URI。                   |
-|  HTTP/Access-Control-Expose-Headers   |                用逗号分隔的除资源可以使用且可以公开的简单响应标题以外的 HTTP 标题名称的列表。                 |
-|      HTTP/Access-Control-Max-Age      |                                                       结果进行缓存的最大秒数。                                                        |
-|                                       |                                                                                                                                                                   |
-
+| 站点设置 | 请求头 | 说明 |
+|-|-|-|
+| HTTP/Access-Control-Allow-Credentials | Access-Control-Allow-Credentials | 该标题的唯一有效值是 true（区分大小写）。 如果您不需要凭据，请完全忽略此标题（不将其值设置为 false）。 
+| HTTP/Access-Control-Allow-Headers | Access-Control-Allow-Headers | 用逗号分隔的受支持的 HTTP 请求标题的列表。
+| HTTP/Access-Control-Allow-Methods | Access-Control-Allow-Methods | 用逗号分隔的允许的 HTTP 请求方法（如 GET、POST、OPTIONS）的列表。
+| HTTP/Access-Control-Allow-Origin | Access-Control-Allow-Origin | 若要允许任何资源访问您的资源，则可以指定 \*。 否则，请指定可以访问资源的 URI。                   |
+|  HTTP/Access-Control-Expose-Headers | Access-Control-Expose-Headers | 用逗号分隔的除资源可以使用且可以公开的简单响应标题以外的 HTTP 标题名称的列表。
+| HTTP/Access-Control-Max-Age | Access-Control-Max-Age |  结果进行缓存的最大秒数。
+| HTTP/Content-Security-Policy | Content-Security-Policy | 控制允许用户代理为给定页面加载的资源。
+| HTTP/Content-Security-Policy-Report-Only | Content-Security-Policy-Report-Only | 允许 Web 开发人员通过监视（而不是强制）其效果来试验策略。 这些冲突报告包含通过 HTTP POST 请求发送到指定 URI 的 JSON 文档。
+| HTTP/X-Frame-Options | X-Frame-Options | 指示是否应该允许浏览器在 *\<frame\>*、*\<iframe\>*、*\<embed\>* 或 *\<object\>* 中呈现页面。
+| HTTP/X-Content-Type-Options | X-Content-Type-Options | 禁用 MIME 探查并强制浏览器使用*内容类型*中给出的类型。

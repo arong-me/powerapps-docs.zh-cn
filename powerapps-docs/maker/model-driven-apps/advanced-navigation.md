@@ -23,11 +23,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: e0e9e71f1df22d091597add562b8a863504ed0aa
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885077"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3108034"
 ---
 # <a name="navigate-to-advanced-model-driven-app-making-and-customization-areas"></a>导航到模型驱动的高级应用程序制作和自定义区域
 
