@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 01/02/2020
+ms.date: 03/24/2020
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e21db21ff9c161e8ae8ab55d4d3ef295da7d419e
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 6cbbc3442a54a0c84ff82b7e32f255c2b400d073
+ms.sourcegitcommit: 3f89b04359df19f8fa5167e2607509bb97e60fe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211379"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80242869"
 ---
 # <a name="share-a-canvas-app-in-power-apps"></a>在 Power Apps 中共享画布应用
 
@@ -52,7 +52,7 @@ ms.locfileid: "79211379"
 1. 按名称或别名指定 Azure Active Directory 要与之共享应用的用户或安全组。
 
     - 若要允许整个组织运行应用（但不修改或共享），请在 "共享" 面板中键入**Everyone** 。
-    - 如果项由分号分隔，则可以使用别名列表、友好名称或这些项的组合（例如， **Jane Doe &lt;jane.doe@contoso.com>**）来共享应用。 如果有多个用户具有相同名称但具有不同的别名，则会将找到的第一个人员添加到列表。 如果名称或别名已经有权限或无法解析，则会出现工具提示。 
+    - 如果项由分号分隔，则可以使用别名列表、友好名称或这些项的组合（例如， **Jane Doe &lt;jane.doe@contoso.com>** ）来共享应用。 如果有多个用户具有相同名称但具有不同的别名，则会将找到的第一个人员添加到列表。 如果名称或别名已经有权限或无法解析，则会出现工具提示。 
 
     ![指定用户和共同所有者](./media/share-app/share-everyone.png)
 
@@ -159,7 +159,8 @@ ms.locfileid: "79211379"
 可以与 Azure Active Directory 租户的来宾用户共享 Power Apps 画布应用。 这使得邀请外部业务合作伙伴、承包商和第三方能够运行公司的画布应用。 
 
 > [!NOTE]
-> 只能为与他们共享的应用分配**用户**角色，而不能为其分配**共同所有者**角色。
+> - 只能为与他们共享的应用分配**用户**角色，而不能为其分配**共同所有者**角色。
+> - Power Apps 画布应用来宾访问利用 Azure B2B。 Power Apps 可识别[AZURE B2B 文档](https://docs.microsoft.com/azure/active-directory/b2b/user-properties)中的州1–4概述的来宾。 Power Apps 无法识别使用[Azure AD 直接联合](https://docs.microsoft.com/azure/active-directory/b2b/direct-federation)身份验证的来宾。 
 
 ### <a name="prerequisites"></a>先决条件
 - 在 Azure Active Directory （Azure AD）中，为租户启用 B2B 外部协作。 详细信息：[启用 B2B 外部协作并管理可以邀请来宾的人员](/azure/active-directory/b2b/delegate-invitations)
@@ -241,6 +242,9 @@ ms.locfileid: "79211379"
 
 #### <a name="in-power-apps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>在 Power Apps Mobile 中，来宾如何查看其 home 租户的应用？
 访问了移动设备上的移动设备上发布的画布应用的任何用户，这些应用在不是其主租户的 Azure AD 租户中发布，必须注销电源应用并重新登录到 Power Apps Mobile。  
+
+#### <a name="in-power-apps-mobile-how-does-a-guest-see-apps-in-the-guest-tenant"></a>在 Power Apps Mobile 中，来宾如何查看来宾租户中的应用？
+作为来宾用户，打开来宾租户中的应用共享时收到的电子邮件，然后选择 "**打开应用**" 按钮。 这同时适用于 Azure Active Directory 和 Microsoft 帐户用户。   
 
 #### <a name="must-a-guest-accept-the-azure-ad-guest-invitation-prior-to-sharing-an-app-with-the-guest"></a>在与来宾共享应用之前，来宾是否必须接受 Azure AD 来宾邀请？
 No。 如果来宾在接受来宾邀请之前启动与他们共享的应用程序，则在启动应用程序时，会提示来宾接受邀请作为登录体验的一部分。  
