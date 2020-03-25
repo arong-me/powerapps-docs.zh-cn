@@ -1559,8 +1559,6 @@
           href: ./common-data-service/update-solutions.md
         - name: 导出解决方案
           href: ./common-data-service/export-solutions.md
-        - name: 创建解决方案修补程序
-          href: ./common-data-service/solution-patches.md
         - name: 如何合并托管解决方案
           href: ./common-data-service/how-managed-solutions-merged.md
         - name: 使用环境变量
@@ -1579,6 +1577,10 @@
           href: ./common-data-service/set-managed-properties-metadata.md
         - name: 最佳做法
           href: ./common-data-service/solution-best-practices.md
+        - name: 高级主题
+          items:
+            - name: 创建解决方案修补程序
+              href: ./common-data-service/solution-patches.md
     - name: 使用数据流
       href: ./common-data-service/self-service-data-prep-with-dataflows.md
       items:
