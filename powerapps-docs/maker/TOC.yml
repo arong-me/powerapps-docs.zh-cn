@@ -1551,36 +1551,41 @@
           href: ./common-data-service/use-solutions-for-your-customizations.md
         - name: 解决方案发布商概述
           href: ./common-data-service/change-solution-publisher-prefix.md
-        - name: 创建解决方案
-          href: ./common-data-service/create-solution.md
-        - name: 导入解决方案
-          href: ./common-data-service/import-update-export-solutions.md
-        - name: 更新或升级解决方案
-          href: ./common-data-service/update-solutions.md
-        - name: 导出解决方案
-          href: ./common-data-service/export-solutions.md
-        - name: 如何合并托管解决方案
-          href: ./common-data-service/how-managed-solutions-merged.md
-        - name: 使用环境变量
-          href: ./common-data-service/EnvironmentVariables.md
-        - name: 查看解决方案层
-          href: ./common-data-service/solution-layers.md
-        - name: 查看解决方案历史记录
-          href: ./common-data-service/solution-history.md
-        - name: 使用解决方案检查器
-          href: ./common-data-service/use-powerapps-checker.md
-        - name: 常见问题和解决方法：解决方案检查器
-          href: ./common-data-service/common-issues-resolutions-solution-checker.md
         - name: 使用分段解决方案
           href: ./common-data-service/use-segmented-solutions-patches-simplify-updates.md
-        - name: 设置元数据中的托管​​属性
-          href: ./common-data-service/set-managed-properties-metadata.md
+        - name: 如何合并托管解决方案
+          href: ./common-data-service/how-managed-solutions-merged.md
+        - name: 使用解决方案检查器
+          href: ./common-data-service/use-powerapps-checker.md
+          items:
+            - name: 常见问题和解决方法：解决方案检查器
+              href: ./common-data-service/common-issues-resolutions-solution-checker.md
         - name: 最佳做法
           href: ./common-data-service/solution-best-practices.md
-        - name: 高级主题
+        - name: 操作方法
           items:
             - name: 创建解决方案修补程序
               href: ./common-data-service/solution-patches.md
+            - name: 创建解决方案
+              href: ./common-data-service/create-solution.md
+            - name: 更新或升级解决方案
+              href: ./common-data-service/update-solutions.md
+            - name: 导入解决方案
+              href: ./common-data-service/import-update-export-solutions.md
+            - name: 导出解决方案
+              href: ./common-data-service/export-solutions.md
+            - name: 使用环境变量
+              href: ./common-data-service/EnvironmentVariables.md
+            - name: 查看解决方案层
+              href: ./common-data-service/solution-layers.md
+            - name: 查看解决方案历史记录
+              href: ./common-data-service/solution-history.md
+            - name: 设置元数据中的托管​​属性
+              href: ./common-data-service/set-managed-properties-metadata.md
+            - name: 高级主题
+              items:
+                - name: 创建解决方案修补程序
+                  href: ./common-data-service/solution-patches.md
     - name: 使用数据流
       href: ./common-data-service/self-service-data-prep-with-dataflows.md
       items:
