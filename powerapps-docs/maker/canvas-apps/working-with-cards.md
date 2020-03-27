@@ -14,15 +14,15 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4b159bbfe568e4f3a6501a0d98af83ac062b8c19
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732949"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212782"
 ---
 # <a name="understand-data-cards-in-power-apps"></a>了解 Power Apps 中的数据卡
 
-[卡](controls/control-card.md)控件是画布应用中[编辑窗体](controls/control-form-detail.md)和[显示窗体](controls/control-form-detail.md)控件的构建基块 ******** 。 表单表示整条记录，每个卡表示该记录的单个字段。
+[卡](controls/control-card.md)控件是画布应用中[编辑窗体](controls/control-form-detail.md)和[显示窗体](controls/control-form-detail.md)控件的构建基块********。 表单表示整条记录，每个卡表示该记录的单个字段。
 
 在设计工作区中选择表单控件后即可在右窗格中与卡轻松地进行交互。 在该窗格中，可以选择要显示哪些字段、每个字段的显示方式，以及按何种顺序进行显示。 此示例显示了从名为“资产”的 SharePoint 列表生成的应用中的“编辑表单”控件。
 
@@ -45,14 +45,14 @@ Power Apps 为字符串、数字和其他数据类型提供了一组预定义的
 ![](./media/working-with-cards/add-security-code.png)
 
 ## <a name="customize-a-card"></a>自定义卡片
-卡还包含其他控件。 在“编辑表单”控件中，用户在你从“插入”选项卡添加的标准 **[文本输入](controls/control-text-input.md)** 控件中输入数据。  
+卡还包含其他控件。 在“编辑表单”控件中，用户在你从“插入”选项卡添加的标准**[文本输入](controls/control-text-input.md)** 控件中输入数据。  
 
 下面，让我们举例说明如何通过操作其中的控件来更改卡的外观。
 
 1. 首先，让我们返回到最近为 **SecurityCode** 字段插入的卡。 通过单击或点击一次来选择此卡：
    
     ![](./media/working-with-cards/select-security-code.png)
-2. 选择该卡内的 **[文本输入](controls/control-text-input.md)** 控件（通过单击或点击输入控件本身）。
+2. 选择该卡内的**[文本输入](controls/control-text-input.md)** 控件（通过单击或点击输入控件本身）。
    
     ![](./media/working-with-cards/select-text-input.png)
 3. 通过拖动选择框在卡内移动此控件，通过沿选择框的边缘拖动手柄来调整控件大小：
@@ -66,9 +66,9 @@ Power Apps 为字符串、数字和其他数据类型提供了一组预定义的
 
 ![](./media/working-with-cards/advanced-locked.png)
 
-我们会立即看到卡的最重要属性之一： **[DataField](controls/control-card.md)** 属性。 此属性指示用户在此卡中可以看到和编辑数据源的哪个字段。  
+我们会立即看到卡的最重要属性之一：**[DataField](controls/control-card.md)** 属性。 此属性指示用户在此卡中可以看到和编辑数据源的哪个字段。  
 
-在“高级”选项卡上，顶部的横幅指示此卡的属性处于锁定状态。 在 **[DataField](controls/control-card.md)** 、 **[DisplayName](controls/control-card.md)** 和 **[Required](controls/control-card.md)** 属性旁边还会显示一个锁图标。 右侧窗格创建了这些公式，锁可以防止意外更改这些属性。
+在“高级”选项卡上，顶部的横幅指示此卡的属性处于锁定状态。 在 **[DataField](controls/control-card.md)**、**[DisplayName](controls/control-card.md)** 和 **[Required](controls/control-card.md)** 属性旁边还会显示一个锁图标。 右侧窗格创建了这些公式，锁可以防止意外更改这些属性。
 
 ![](./media/working-with-cards/lock-icons.png)
 
@@ -76,7 +76,7 @@ Power Apps 为字符串、数字和其他数据类型提供了一组预定义的
 
 ![](./media/working-with-cards/unlocked-card.png)
 
-让我们来修改 **[DisplayName](controls/control-card.md)** ，在 **Asset** 和 **ID** 之间放置一个空格。 通过执行此更改，我们更改了为我们生成的内容。  在右侧窗格中，此卡有一个不同的标签：
+让我们来修改 **[DisplayName](controls/control-card.md)**，在 **Asset** 和 **ID** 之间放置一个空格。 通过执行此更改，我们更改了为我们生成的内容。  在右侧窗格中，此卡有一个不同的标签：
 
 ![](./media/working-with-cards/change-display-name.png)
 
@@ -123,7 +123,7 @@ Power Apps 为字符串、数字和其他数据类型提供了一组预定义的
 默认情况下，**DefaultValue** 和 **[Required](controls/control-card.md)** 属性是基于 **[DataField](controls/control-card.md)** 属性从数据源的元数据获取的。 你可以使用自己的逻辑替代这些公式，通过使用 **[DataSourceInfo](functions/function-datasourceinfo.md)** 函数集成数据源的元数据。
 
 ### <a name="information-flowing-out"></a>流出的信息
-在用户使用卡中的控件修改记录后， **[SubmitForm](functions/function-form.md)** 函数会将这些更改保存到数据源。 当该函数运行时，表单控件将读取每个卡的 **[DataField](controls/control-card.md)** 属性的值来了解要更改哪个字段。  
+在用户使用卡中的控件修改记录后，**[SubmitForm](functions/function-form.md)** 函数会将这些更改保存到数据源。 当该函数运行时，表单控件将读取每个卡的 **[DataField](controls/control-card.md)** 属性的值来了解要更改哪个字段。  
 
 表单控件还会读取每个卡的 **[Update](controls/control-card.md)** 属性的值。 此值将存储在此字段的数据源中。 这是要应用另一个转换的地方，也许要反转在卡的 **[Default](controls/properties-core.md)** 公式中应用的转换。
 
@@ -142,16 +142,16 @@ Power Apps 为字符串、数字和其他数据类型提供了一组预定义的
 
 四个控件使得此卡可以工作：
 
-| 名称 | 类型 | 描述 |
+| 名称 | Type | 说明 |
 | --- | --- | --- |
 | **TextRequiredStar** |“[标签](controls/control-text-box.md)”控件 |显示一个星号，这通常在数据输入表单上用来指示某个字段是必填的。 |
-| **TextFieldDisplayName** |“[标签](controls/control-text-box.md)”控件 |显示此字段的用户友好名称。 此名称可以不同于数据源的架构中的名称。 |
+| **TextFieldDisplayName** |**[“标签”](controls/control-text-box.md)** 控件 |显示此字段的用户友好名称。 此名称可以不同于数据源的架构中的名称。 |
 | **InputText** |**输入文本**控件 |显示字段的初始值并允许用户更改该值。 |
-| **TextErrorMessage** |“[标签](controls/control-text-box.md)”控件 |如果验证时出现问题，则向用户显示一条用户友好错误消息。 如果字段为必填字段，还可以确保字段具有值。 |
+| **TextErrorMessage** |**[“标签”](controls/control-text-box.md)** 控件 |如果验证时出现问题，则向用户显示一条用户友好错误消息。 如果字段为必填字段，还可以确保字段具有值。 |
 
 若要为这些控件填充数据，可以通过以下关键公式从卡的属性驱动其属性。 注意，这些公式中没有一个引用特定的字段。 相反，所有信息都来自卡。
 
-| 控件属性 | 公式 | 描述 |
+| 控件属性 | Formula | 说明 |
 | --- | --- | --- |
 | **TextRequiredStar.Visible** |**Parent.Required** |只有当字段为必填字段时，星星才会显示。 Required 是由你或数据源的元数据驱动的一个公式。 |
 | **TextFieldDisplayName.Text** |**Parent.DisplayName** |此文本框控件显示用户友好名称，这是由你或数据源的元数据提供的，并且是在卡的 **[DisplayName](controls/control-card.md)** 属性中设置的。 |
@@ -163,7 +163,7 @@ Power Apps 为字符串、数字和其他数据类型提供了一组预定义的
 
 为了从这些控件中提取信息并将其推送回数据源，我们提供了以下关键公式：
 
-| 控件名称 | 公式 | 描述 |
+| 控件名称 | Formula | 说明 |
 | --- | --- | --- |
 | **DataCard.DataField** |**"ApproverEmail"** |用户可以在此卡中显示和编辑的字段的名称。 |
 | **DataCard.Update** |**InputText.Text** |在 **[SubmitForm](functions/function-form.md)** 运行时要验证并推送回数据源的值。 |
