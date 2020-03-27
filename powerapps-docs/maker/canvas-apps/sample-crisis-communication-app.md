@@ -7,21 +7,21 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/18/2020
+ms.date: 03/25/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: febec328c291972563599eb56a32f80e22eb070a
-ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
+ms.openlocfilehash: b4a356903c741b97a9b8dbe49d402f71f7196f0b
+ms.sourcegitcommit: 77e00640a59a7db9d67d3ac52f74d264cbe3a494
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80122536"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80328544"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>设置并了解 Power Apps 中的危机通信示例模板
-<!--note from editor: Suggest moving the overview into the usual overview position (i.e. after the H1). Other notes: According to the Docs Contributor Guide, graphic file names should be all lowercase, including the extension. I didn't change this, but something to note for next time. -->
+
 危机通信应用提供用户友好的体验，以将用户连接到有关危机的信息。 快速获取内部公司新闻的更新，获取常见问题的答案，并获取对链接和紧急联系人等重要信息的访问权限。 要拥有此应用，需完成少量设置。
 
 在本演练中，您将学习如何：
@@ -81,7 +81,7 @@ ms.locfileid: "80122536"
 
     ![网站设置](media/sample-crisis-communication-app/03-Privacy-Settings.png)
 
-1. 选择 **“下一步”** 。
+1. 选择 **“下一步”**。
 1. 添加站点的其他所有者（可选）。
 1. 选择“完成”。
 
@@ -150,7 +150,7 @@ ms.locfileid: "80122536"
 | CI_CompanyNews | **公司新闻**项的集合。 | 用于管理 *[App Name]* 应用中显示的新闻项目的列表。 你可以使用 "已**弃用**" 列从应用程序视图中删除新闻项<!--edit okay, here and below? You use this pattern ("remove ___ from the app views") in the "Helpful tips" description, and it seems a bit more descriptive than "filter ___ out of the app".-->，同时将它们作为记录保留。 | 
 | CI_FAQ  | 常见问题。 | *[应用名称]* 应用的常见问题列表。 您可以使用 "已**弃用**" 列从应用程序视图中删除 FAQ 项，同时将它们作为记录保留。 |
 | CI_UsefulLinks<!--edit okay? The sharepoint-lists.png screenshot later in this article shows it as "Usefulinks," which probably isn't correct either.--> | 有用的超链接列表。 | *[应用名称]* 应用的有用超链接列表。 您可以使用 "已**弃用**" 列从应用程序视图中删除超链接项，同时将它们作为记录保留。 |
-| CI_Employee | 跟踪当前员工状态。 示例：**在家工作** **、请假、** 休假和**on personal leave** **休假**。  **注意**：假设状态为 "正在**工作**"，并且不包含在列表选项中。 | <!--Please check the following edit carefully. This cell was duplicated by mistake from the previous row. Does the note about the "Deprecated" column apply here?-->指示 *[App Name]* 应用的员工状态的消息列表。 您可以使用 "已**弃用**" 列从应用程序视图中删除状态消息，同时将它们作为记录保留。 |
+| CI_Employee | 跟踪当前员工状态。 示例：**在家工作** **、请假、** 休假和**on personal leave****休假**。  **注意**：假设状态为 "正在**工作**"，并且不包含在列表选项中。 | <!--Please check the following edit carefully. This cell was duplicated by mistake from the previous row. Does the note about the "Deprecated" column apply here?-->指示 *[App Name]* 应用的员工状态的消息列表。 您可以使用 "已**弃用**" 列从应用程序视图中删除状态消息，同时将它们作为记录保留。 |
 | CI_HelpfulTips             | 用户为其对等方提供的有用提示。 | *[应用名称]* 应用的共享提示管理列表。 您可以使用 "已**弃用**" 列从应用程序视图中删除提示，同时将它们作为记录保留。  |
 
 > [!NOTE]
@@ -430,7 +430,7 @@ ms.locfileid: "80122536"
 1. 搜索并选择**新电子邮件到达共享邮箱（V2）的时间**。
 1. 在 "**邮箱地址**" 中输入共享收件箱地址。
 1. 打开**注释**卡。
-1. 选择 "为**值** **添加动态值**"。
+1. 选择 "为**值****添加动态值**"。
 1. 搜索并选择 "**正文**"。
 
      ![选择正文](media/sample-crisis-communication-app/35-body.png)
@@ -647,7 +647,7 @@ ms.locfileid: "80122536"
 
     ![创建新连接](media/sample-crisis-communication-app/create-connection.png)
 
-1. 搜索连接的名称;例如， **PowerApps 通知（预览）** 。
+1. 搜索连接的名称;例如， **PowerApps 通知（预览）**。
 
     ![连接名称示例](media/sample-crisis-communication-app/notifications.png)
 
@@ -702,27 +702,21 @@ ms.locfileid: "80122536"
 如果出现这种情况，请打开包含未经授权的连接和重新授权的卡。
 
 
-### <a name="optional-sending-notifications-to-more-than-999-users"></a>可选：向超过999个用户发送通知
+### <a name="optional-sending-notifications-to-more-than-5000-users"></a>可选：向超过5000个用户发送通知
 
-"当前**获取组成员**" 操作仅限拉取999个用户（默认为100个用户）。 若要分发给更多用户，可以改为改为将电子邮件发送到通讯组。
+如果你使用的是 "Power 自动" 办公室许可证，则 "当前**获取组成员**" 操作仅限拉取5000个用户。 如果你有高级许可证，并且想要分发给最多100000个用户，则可以按照以下步骤发送到更多用户。
 
-1. 删除以下卡：**获取组成员**并**在首选发送通知设置上切换**：
+1. 选择 "**获取组成员**" 卡的 " **...** " 菜单。
 
-    ![删除操作](media/sample-crisis-communication-app/36-delete-actions.png)
+    ![选择 .。。下拉菜单](media/sample-crisis-communication-app/40-Settings.png)
 
-1. 添加新操作。
+1. 单击“设置”。
 
-1. 搜索并选择 "**发送电子邮件（V2）** "：
+1. 将**阈值**字段更改为100000
 
-    ![添加发送电子邮件](media/sample-crisis-communication-app/37-add-send-an-email.png)
+    ![设置阈值字段](media/sample-crisis-communication-app/41-Threshold.png)
 
-1. 在 "**到**" 字段中，键入你的通讯组的名称。
-
-1. 在 "**使用者**" 字段中，选择 "**添加动态值**" 按钮，然后添加 "**当新闻项目发布时**" 卡上的 "**标题**" 字段：
-
-    ![添加标题](media/sample-crisis-communication-app/38-add-title.png)
-
-1. 在 "**正文**" 字段中，选择 "**添加动态值**" 按钮，然后添加 "**当新闻项目发布时**" 卡时的 "**详细信息**" 字段。
+1. 选择**完成**
 
 1. 选择“保存”。
 
@@ -823,7 +817,7 @@ ms.locfileid: "80122536"
 
     ![应用安装策略](media/sample-crisis-communication-app/27-Setup-Policies.png)
 
-1. 选择 "**全局（组织范围设置）** "。
+1. 选择 "**全局（组织范围设置）**"。
 1. 选择 "**添加应用**"。
 
     ![添加应用](media/sample-crisis-communication-app/28-Add-App.png)
@@ -840,7 +834,7 @@ ms.locfileid: "80122536"
 
 ### <a name="create-a-central-crisis-management-team-in-teams"></a>在团队中创建中心危机管理团队<a name="create-a-central-crisis-management-teams-team"></a>
 
-为了协调你的危机响应，你需要在团队中创建一个中心危机管理团队，并使用所有相关信息来填充它。
+为了协调你的危机响应，你需要在团队中创建一个中心危机管理团队，并使用所有相关信息来填充它。 此团队只需与中心响应团队共享。
 
 1. 中转到团队。
 1. 选择左侧应用栏中的 "**团队**"。
@@ -886,6 +880,10 @@ ms.locfileid: "80122536"
 * **GCC 当前不支持哪些功能？**
 
     适用于团队和推送通知连接器的电源自动机器人连接器当前不适用于 GCC。 使用电子邮件选项来通知用户有关内部新闻更新的信息。
+
+* **如何更新应用程序？**
+
+    若要更新应用程序，请按照[aka.ms/CrisisCommunicationSolution](https://aka.ms/CrisisCommunicationSolution)上概述的步骤进行操作。
 
 ## <a name="issues-and-feedback"></a>问题和反馈
 
