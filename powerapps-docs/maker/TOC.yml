@@ -827,6 +827,8 @@
           href: ./canvas-apps/edit-app.md
         - name: 删除应用
           href: ./canvas-apps/delete-app.md
+        - name: 应用许可证标志
+          href: ./canvas-apps/license-designation.md
         - name: 还原到之前的版本
           href: ./canvas-apps/restore-an-app.md
         - name: 更改应用名称和磁贴
@@ -877,6 +879,8 @@
           href: ./canvas-apps/cognitive-services-api.md
         - name: 将 InfoPath 表单转换为 Power Apps
           href: ./canvas-apps/transform-infopath.md
+        - name: 使用 Application Insights 分析应用遥测
+          href: ./canvas-apps/application-insights.md
     - name: 面向开发人员
       items:
         - name: 适用于企业开发人员、合作伙伴和 ISV 的画布应用
