@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/24/2020
+ms.date: 03/30/2020
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6cbbc3442a54a0c84ff82b7e32f255c2b400d073
-ms.sourcegitcommit: 3f89b04359df19f8fa5167e2607509bb97e60fe0
+ms.openlocfilehash: 7d47d5fc808ebd13a101093b58b1e3e890730f25
+ms.sourcegitcommit: 204d73f30be2fd63e13e3c64cbfa62b8d667df33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80242869"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80406343"
 ---
 # <a name="share-a-canvas-app-in-power-apps"></a>在 Power Apps 中共享画布应用
 
@@ -191,7 +191,7 @@ ms.locfileid: "80242869"
           > [!div class="mx-imgBorder"] 
           > ![与来宾共享](media/share-app/guest_access_doc_2.png "与来宾共享")
  
-共享应用以进行来宾访问后，来宾可以通过在共享过程中发送给他们的电子邮件发现和访问与他们共享的应用。
+共享应用以进行来宾访问后，来宾可以通过在共享过程中发送给他们的电子邮件发现和访问与他们共享的应用。 你还可以改为与来宾直接共享应用 URL。 若要查找 URL，请依次单击 " [Power Apps](https://make.powerapps.com)"、"从左窗格中选择**应用**"、"**应用**"，然后选择 "**详细信息**" 选项卡。" **Web 链接**" 下会显示应用 URL。
 
 > [!div class="mx-imgBorder"]  
 > ![来宾接收应用共享电子邮件](media/share-app/guest_access_doc_4.png "来宾接收应用共享电子邮件")
