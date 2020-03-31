@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 10/29/2019
+ms.date: 03/30/2020
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4980d7989a65032cec28aab1bc70ae3e01d1747d
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: c17fff957091a13e26e4bbbb3bc90f34fa5659f7
+ms.sourcegitcommit: 204d73f30be2fd63e13e3c64cbfa62b8d667df33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724157"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80406091"
 ---
 # <a name="preview-create-a-canvas-app-from-azure-sql-database"></a>预览：创建 Azure SQL 数据库中的画布应用
 
@@ -27,36 +27,38 @@ ms.locfileid: "74724157"
 在本主题中，你将在几分钟内使用 Azure SQL 数据库中的数据创建一个具有 Power Apps 的应用。 你将拥有一个功能齐全的应用程序，其中包含你的数据，你可以自定义该应用以适应你的业务需求并在任何设备上共享。
 
 > [!IMPORTANT]
-> - 这是一项预览功能。
-> - 预览功能的可用性和受限功能可能会受到限制。 预览版功能在正式发布之前提供，因此客户可以提前获取访问权限并提供反馈。
+> - 这是预览功能。
+> - 预览功能可能具有有限的可用性和受限制的功能。 预览功能在正式发布之前可用，以便客户可以提前访问并提供反馈。
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 - 你的浏览器必须启用弹出窗口。
 - 需要一个 Azure 订阅。 </br>如果没有 Azure 订阅，请[创建一个免费帐户](https://azure.microsoft.com/free/)。
 - 需要具有对现有 SQL 数据库的访问权限。 </br> 如果没有现有的 SQL 数据库，请[创建新的数据库](https://docs.microsoft.com/azure/sql-database/sql-database-single-database-get-started?tabs=azure-portal)。
 - 需要在 "防火墙设置" 中允许 Power Apps 区域的[IP 地址或 Azure 服务](#app-access-to-sql-database)访问 SQL 数据库。
 - SQL 数据库表必须至少具有一个文本数据类型的列。
-- 你需要有效的 Power Apps 许可证或注册[30 天试用版许可证](../signup-for-powerapps.md)。
 
-## <a name="create-an-app"></a>创建应用
+## <a name="create-an-app-from-azure-portal"></a>从 Azure 门户创建应用
 
-1. 登录到[Azure 门户](https://portal.azure.com)。
+> [!TIP]
+> 你还可以创建一个使用[Power Apps](https://make.powerapps.com)中的 Azure SQL 数据库的应用程序。 有关详细信息，请参阅[适用于 Power Apps 的 SQL Server 连接器](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections/connection-azure-sqldatabase)。
+
+1. 登录[Azure 门户](https://portal.azure.com)。
 2. 导航到 SQL 数据库。
 3. 选择 "电源应用"。
-
     
     ![SQL 数据库选项中的 Power Apps 选项](./media/app-from-azure-sql-database/powerapps-link-azure-portal.png "SQL 数据库中的 Power Apps 选项")
 
-    > [!NOTE]
-    > 如果没有 Power Apps 许可证，你会看到蓝色信息栏，其中包含用于开始试用的链接。 选择启动试用版时，将转到新的选项卡，你将在其中注册许可证。 完成后，返回到 Azure 门户并刷新边栏选项卡以继续。
-
 4. 键入应用程序的名称，例如 "站点检查"、"Fundraiser" 或 "预算跟踪器"。
 
-5. 输入 SQL 身份验证密码，并在需要时更改用户名。
+5. 输入 SQL 身份验证密码，并根据需要更改用户名。
+    
+    > [!NOTE]
+    > 如果要使用 Azure AD 集成身份验证（而不是使用 Azure SQL 数据库进行 SQL 身份验证），请改为从[电源应用](https://make.powerapps.com)创建应用，并使用[SQL Server 连接器](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections/connection-azure-sqldatabase)。
+
 6. 从下拉列表中选择要用于创建应用的表。
 
-7. 选择“创建”。
+7. 选择 **“创建”** 。
 
 
     ![指定应用的信息](./media/app-from-azure-sql-database/powerapps-create-page-azure-portal.png "指定应用的信息")
@@ -94,7 +96,7 @@ Power Apps 可以使用 Azure 门户连接到 SQL 数据库，**以允许访问 
 ## <a name="limitations"></a>限制
 
 - 应用名称只能包含字母、数字、连字符、括号或下划线。
-- Power Apps 需要 SQL 身份验证以连接到 SQL 数据库。
+- 从 Azure 门户创建应用需要 SQL 身份验证。
 - 从 Azure 门户创建画布应用时，只能选择一个表。 如果要通过添加更多的数据连接来添加更多的表和其他数据源，请在创建应用后自定义应用。
 - Power Apps 无法使用 VNet 服务终结点连接到 SQL 数据库。 有关详细信息，请阅读[允许通过 VNet 服务终结点访问](https://docs.microsoft.com/azure/sql-database/sql-database-vnet-service-endpoint-rule-overview)。
 
@@ -106,7 +108,7 @@ Power Apps 可以使用 Azure 门户连接到 SQL 数据库，**以允许访问 
 
 ## <a name="next-steps"></a>后续步骤
 
-在本快速入门中，你使用了 SQL 数据库中的数据创建了一个应用，该应用使用 Azure 门户。 下一步，使用控件、图像和逻辑自定义应用，以便更好地满足你的业务需求。
+下一步[，通过添加](https://make.powerapps.com)其他控件、图像和逻辑来自定义应用，以便更好地满足你的业务需求。
 
 > [!div class="nextstepaction"]
 > [在 Power Apps 中设计 canvas 应用接口](add-configure-controls.md)
