@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/25/2020
+ms.date: 03/31/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 465f18474c7054467db8e22bb1702db250177395
-ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
+ms.openlocfilehash: fedcec7c8f3f093bf59b3ef607cbe4fbeea6ac54
+ms.sourcegitcommit: f5d15c973b2a129a0cc29a74cf8eaf6b24fbf36d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "80375069"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80516720"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>设置并了解 Power Apps 中的危机通信示例模板
 
@@ -725,6 +725,30 @@ ms.locfileid: "80375069"
 1. 在 "**正文**" 字段中，选择 "**添加动态值**" 按钮，然后添加 "**当新闻项目发布时**" 卡时的 "**详细信息**" 字段。
 
 1. 选择“保存”。
+
+### <a name="optional-deep-link-teams-notification-into-teams-app"></a>可选：深层链接团队通知到团队应用
+
+如果希望团队通知直接在团队内部打开画布应用，请执行以下步骤：
+
+1. 更新应用 URL，使其指向管理应用中的 "团队" 深层链接。 <br>
+在管理应用程序中，将 "应用程序 URL" 更改为以下位置，其中 `App ID` 是应用的 ID。
+
+    ```
+    https://teams.microsoft.com/l/entity/<APP ID>/<APP ID>
+    ```
+
+    ![管理应用](media/sample-crisis-communication-app/42-admin-app.png)
+
+1. 更新在通知流内生成的应用程序链接。 <br> 打开 "设置应用链接变量" 卡，将 "值" 表达式更改为以下内容：
+
+    ```
+    concat(items('Apply_to_each')?['AppUrl'], if(greater(indexOf(items('Apply_to_each')?['AppUrl'], '?'),0),'&','?'), 'context=%7B%22subEntityId%22%3A%22',triggerBody()?['ID'],'%22%7D')
+    ```
+    ![更改流设置](media/sample-crisis-communication-app/43-flow-settings.png)
+
+1. 更新画布应用以使用团队上下文变量深入链接到正确的新闻文章。 <br> 对于应用的**OnStart**属性，请将参数从 `newsid` 更改为 `subEntityId`。
+
+    ![更改 OnStart](media/sample-crisis-communication-app/44-onstart.png)
 
 ### <a name="test-the-news-notification-flow"></a>测试新闻通知流
 
