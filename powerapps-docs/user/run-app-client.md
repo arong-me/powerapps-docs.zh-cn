@@ -1,12 +1,12 @@
 ---
 title: 在移动设备上运行基于画布的应用 | Microsoft Docs
 description: 了解如何在移动设备上运行画布应用。
-author: Mattp123
+author: mduelae
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 11/16/2018
-ms.author: matp
+ms.date: 04/1/2020
+ms.author: mkaur
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ad34f7daacf07ebc8ecde2a8ce29c163d0c28e95
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 1494c1624fc37b59b5e20b0cdaa15a9c9edb33e3
+ms.sourcegitcommit: 39f6feb699512e9c2bf71ef1a1238b32b639da02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733322"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527473"
 ---
 # <a name="run-a-canvas-app-on-a-mobile-device"></a>在移动设备上运行画布应用
 在创建应用或与某人共享应用时，可以在 Windows、iOS、Android 上或 Web 浏览器中运行此应用。 本主题介绍如何在移动设备上运行画布应用。 在移动设备上运行的应用可以利用移动设备功能，如定位服务和照相机。
@@ -66,7 +66,7 @@ ms.locfileid: "74733322"
 
 首次使用 Power Apps 时，屏幕将显示通过轻扫手势关闭应用。
 
-![启动应用](./media/run-app-client/run-client-app.png)
+![启动应用](media/run_client.png)
 
 ## <a name="give-consent"></a>同意
 如果应用需要连接数据源，或须具有相应权限才能使用设备功能（例如照相机或定位服务），必须先确认连接或予以同意，才能使用应用。 通常情况下，只会在首次连接时看到提示。
