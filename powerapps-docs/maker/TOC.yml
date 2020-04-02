@@ -29,13 +29,13 @@
   items:
     - name: 在浏览器中
       href: ../user/run-app-browser.md
+    - name: 在手机上（预览）
+      href: ../user/run-canvas-and-model-apps-on-mobile.md
     - name: 在手机（画布）上
       href: ../user/run-app-client.md
-    - name: 在手机（模型驱动）上
-      href: ../user/run-app-client-model-driven.md
-    - name: 在 SharePoint Online 页上（画布）
+    - name: 在 SharePoint Online 页上（画布应用）
       href: ../user/powerapps-web-part.md
-    - name: 在 Microsoft Teams 中（画布）
+    - name: 在 Microsoft Teams 中（画布应用）
       href: ../user/open-app-embedded-in-teams.md
     - name: 从 AppSource
       href: ../user/app-source.md
@@ -143,6 +143,8 @@
               href: ../user/work-with-business-processes.md
             - name: 使用流
               href: ../user/use-flows.md
+    - name: 在移动设备上使用模型驱动应用（预览）
+      href: ../user/use-custom-model-driven-app-on-mobile.md
     - name: 使用 Dynamics 365 App for Outlook
       href: ../user/use-outlook-app.md
 - name: 创建应用
