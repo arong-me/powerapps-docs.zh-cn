@@ -51,6 +51,8 @@
               href: ../user/navigation.md
             - name: 使用网格筛选器
               href: ../user/grid-filters.md
+            - name: 使用高级网格筛选器创建个人视图
+              href: ../user/grid-filters-advanced.md
             - name: 查看配置文件
               href: ../user/view-your-user-profile.md
             - name: 查找管理员或支持人员
@@ -937,7 +939,7 @@
                   href: ./model-driven-apps/create-site-map-app.md
                 - name: 添加或编辑应用组件
                   href: ./model-driven-apps/add-edit-app-components.md
-                - name: 添加团队条目，作为一个查找选项
+                - name: 添加实体作为查找
                   href: ./model-driven-apps/team-entity-lookup.md
             - name: 使用窗体
               href: ./model-driven-apps/create-design-forms.md
@@ -1630,9 +1632,9 @@
       href: ../use-ai-builder.md
 - name: 示例应用和解决方案
   items:
-    - name: 危机通信应用
+    - name: 危机通信
       href: ./canvas-apps/sample-crisis-communication-app.md
-    - name: 紧急响应解决方案
+    - name: 医院紧急响应
       items:
         - name: 概述
           href: ../sample-apps/emergency-response/overview.md
