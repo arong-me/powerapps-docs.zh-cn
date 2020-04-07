@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/21/2020
+ms.date: 04/02/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1e66c9a6c079baef3b7f67631c4a21cda6334478
-ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
+ms.openlocfilehash: e0ed91cc66f5b42bbea769443ad086476245029c
+ms.sourcegitcommit: 49b69129262a9b530e69508e84c3822b742066df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80122784"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80759800"
 ---
 # <a name="exit-function-in-power-apps"></a>Power Apps 中的 Exit 函数
 退出当前正在运行的应用程序，并选择性地注销当前用户。
@@ -30,12 +30,12 @@ ms.locfileid: "80122784"
 
 使用可选的*Signout*参数将当前用户从 Power Apps 中注销。 当共享设备以确保用户安全时， *Signout*非常有用。
 
-创作应用程序时，调用**Exit**不会退出或注销用户。  但是，它不会停止计算公式的其余部分。
+创作应用程序时，调用**Exit**不会退出或注销用户。  但是，它会停止计算公式的其余部分。
 
 **Exit**只能在[行为公式](../working-with-formulas-in-depth.md)中使用。
 
 > [!NOTE]
-> 在 web 浏览器中运行应用程序时，不支持注销。
+> 在 web 浏览器中运行应用程序时，不支持使用**Exit**函数进行注销。
 
 ## <a name="syntax"></a>语法
 **Exit**（[*Signout*]）
