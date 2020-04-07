@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 482d06a91d3cb3a7c22e41e4e880aa72294d2b3f
-ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
+ms.openlocfilehash: 91f027af2f7d8b10fcfd15380fae46f62bc5603b
+ms.sourcegitcommit: 10861337ce87866b58cc98dda6eab8d985c9220c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78264957"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80615382"
 ---
 #  <a name="use-the-lookup-field-on-a-record"></a>对记录使用查阅字段
 
@@ -96,8 +96,11 @@ ms.locfileid: "78264957"
 
     ![更改视图联系人类型](media/change-view.png "更改视图联系人类型")
 
->[!IMPORTANT] 
->如果你的管理员尚未将“更改视图”选项配置为在视图中显示，则该选项将不可见  。
+### <a name="filter-by-only-my-records-or-filter-by-related-primary-contact"></a>筛选依据：“仅限我的记录”或“按相关主要联系人筛选”
+
+要应用其他筛选器，请在“更改视图”菜单中，选择“仅限我的记录”或“按相关主要联系人筛选”    。
+
+![添加更多筛选器](media/extra_filters.png "添加更多筛选器")
 
 ### <a name="choose-from-multiple-records"></a>从多条记录中选择
 
