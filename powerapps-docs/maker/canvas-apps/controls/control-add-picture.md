@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 37c98470d3239cefa008235f295aaf9af2db3f5a
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 3f2afd3a1097ec0b201b5857509f1ff42d1fedad
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211517"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871272"
 ---
 # <a name="add-picture-control-in-power-apps"></a>在 Power Apps 中添加图片控件
 拍摄照片或加载本地设备中的图像。
@@ -121,19 +121,20 @@ ChangePictureText – 上传图像时按钮上显示的文本。
 1. 添加“添加图片”控件，然后三击该控件。
    
     不知道如何[添加、命名和配置控件](../add-configure-controls.md)？
-2. 在“打开”对话框中，单击或点击图像文件，然后单击或点击“打开”。
-3. 添加“[按钮](control-button.md)”控件，将其移到“添加图片”控件下方，然后将“[按钮](control-button.md)”控件的 “[OnSelect](properties-core.md)”属性设置为以下公式：<br>
+1. 在“打开”对话框中，单击或点击图像文件，然后单击或点击“打开”。
+1. 添加“[按钮](control-button.md)”控件，将其移到“添加图片”控件下方，然后将“[按钮](control-button.md)”控件的 “[OnSelect](properties-core.md)”属性设置为以下公式：<br>
    **Collect(MyPix, AddMediaButton1.Media)**
    
     想要了解有关 **[Collect](../functions/function-clear-collect-clearcollect.md)** 函数或[其他函数](../formula-reference.md)的详细信息？
-4. 添加“图像库”控件，并将其 “[项](properties-core.md)”属性设置为 **MyPix**。
-5. 按 F5，然后单击或点击“[按钮](control-button.md)”控件。
+1. 添加**垂直库**控件，并将其 **[Items](properties-core.md)** 属性设置为**MyPix**。
+1. 选择库中的 " **[图像](control-image.md)** " 控件，并将其 " **image** " 属性设置为 " **ThisItem**"。
+1. 按 F5，然后单击或点击“[按钮](control-button.md)”控件。
    
-    来自“添加图片”控件的图像将显示在“图像库”控件中。 如果图像和“图像库”控件中的“[图像](control-image.md)”控件纵横比不相同，请将“[图像](properties-visual.md)”[”控件的“](control-image.md)ImagePosition属性设置为“适应”。
-6. 单击或点击“添加图片”控件，单击或点击另一个图像文件，单击或点击“打开”，然后单击或点击所添加的“[按钮](control-button.md)”控件。
+    "**添加图片**" 控件中的图像将显示在**垂直 allery**控件中。 如果图像与 "**垂直库**" 控件中的 **[图像](control-image.md)** 控件具有相同的纵横比，请将 **[图像](control-image.md)** 控件的 " **[ImagePosition](properties-visual.md)** " 属性设置为 "**适合**"。
+1. 单击或点击“添加图片”控件，单击或点击另一个图像文件，单击或点击“打开”，然后单击或点击所添加的“[按钮](control-button.md)”控件。
    
     第二个图像将显示在“图像库”控件中。
-7. （可选）重复上述步骤一次或多次，然后按 Ecs 返回默认工作区。
+1. （可选）重复上述步骤一次或多次，然后按 Ecs 返回默认工作区。
 
 使用 **[SaveData](../functions/function-savedata-loaddata.md)** 函数本地保存图像或使用 **[Patch](../functions/function-patch.md)** 函数更新数据源。
 
