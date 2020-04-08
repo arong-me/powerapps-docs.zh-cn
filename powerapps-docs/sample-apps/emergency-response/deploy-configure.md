@@ -6,18 +6,18 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/30/2020
+ms.date: 04/02/2020
 ms.author: kvivek
 ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: f126a415cfe42e38e2131967a29564fc0255f6bb
-ms.sourcegitcommit: b6beb1b76d9ddb0f9846253f895d581bda9012ba
+ms.openlocfilehash: bd85066993a317af0d9a594fa856ce1d5800b849
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80417464"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80625003"
 ---
 # <a name="deploy-and-configure-the-emergency-response-app"></a>部署和配置紧急响应应用
 
@@ -325,6 +325,9 @@ ms.locfileid: "80417464"
 
 为了使前端用户能够借助其移动设备中的画布应用使用数据，必须与他们共享这些应用。 使用 Azure AD 组可以更轻松地与用户组共享应用。
 
+> [!IMPORTANT]
+> 请确保你计划与之共享这些应用的用户或组已  有权访问你的环境。 通常，在[设置环境](#step-1-sign-up-for-power-apps-and-create-an-environment)时，你已添加用户或组。 也可以按照此处的步骤操作，先将用户添加到你的环境，并授予相应访问权限，再与用户共享这些应用：[创建用户并分配安全角色](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)。
+
 1.  登录到 [Power Apps](https://make.powerapps.com)
 
 2.  在左侧导航窗格中，选择“应用”  以查看所有应用的列表。
@@ -387,6 +390,9 @@ ms.locfileid: "80417464"
 ### <a name="step-10-share-model-driven-app-with-admins-in-your-organization"></a>步骤 10：与组织中的管理员共享模型驱动应用
 
 为了让管理员用户能够使用管理员应用（模型驱动应用），必须与他们共享这些应用。 使用 Azure AD 组可以更轻松地与管理员用户组共享应用。
+
+> [!IMPORTANT]
+> 请确保你计划与之共享此应用的用户或组已  有权访问你的环境。 通常，在[设置环境](#step-1-sign-up-for-power-apps-and-create-an-environment)时，你已添加用户或组。 也可以按照此处的步骤操作，先将用户添加到你的环境，并授予相应访问权限，再与用户共享此应用：[创建用户并分配安全角色](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)。
 
 1. 登录到 [Power Apps](https://make.powerapps.com)。
 
