@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 75450ef67217bdc7a1b86086fd07f1d3adbd7831
-ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
+ms.openlocfilehash: ca48ccaf4aca72301d3a8b7f2eb79885d7c7cdf5
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436796"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871318"
 ---
 # <a name="gallery-control-in-canvas-apps"></a>画布应用中的库控件
 
@@ -61,6 +61,8 @@ AllItems - 库中的所有项，其中包括属于库模板的附加控件值。
 
 [BorderThickness](properties-color-border.md) – 控件边框的粗细。
 
+**DelayItemLoading** -在屏幕首次加载之前，延迟加载项（行）。
+
 [DisplayMode](properties-core.md) –控件是允许用户输入（**Edit**）、仅显示数据（**View**），还是已禁用（**disabled**）。
 
 [Fill](properties-color-border.md) – 控件的背景色。
@@ -68,6 +70,10 @@ AllItems - 库中的所有项，其中包括属于库模板的附加控件值。
 [Height](properties-size-location.md) - 控件上边缘和下边缘之间的距离。
 
 **ItemAccessibleLabel** –屏幕阅读器的每个库项的标签。 应说明每个项的内容。
+
+**LoadingSpinner** （**无**、**控件**或**数据**）-如果没有，则不会显示微调框。 当控件 |出现显示空行的呈现过程时，将显示数据微调框。
+
+**LoadingSpinnerColor** -加载微调框的填充颜色。  默认设置为 "边框"。
 
 NavigationStep - 当库的“ShowNavigation”属性设为“true”，且用户选择库任意一端的导航箭头时，库的滚动距离。
 

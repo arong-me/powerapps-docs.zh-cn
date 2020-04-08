@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b0e189bc2bfd922839373f009fcc54a34217daba
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: ac06720b1d7037cab540c91ab8a42f6c269b0edb
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211885"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871295"
 ---
 # <a name="screen-control-in-power-apps"></a>Power Apps 中的屏幕控件
 
@@ -39,6 +39,10 @@ ms.locfileid: "79211885"
 **Height** -屏幕的高度。 如果应用有响应（"[**缩放到合适**](../set-aspect-ratio-portrait-landscape.md#change-screen-size-and-orientation)" 处于**关闭状态**），并且运行该应用的设备小于此属性，则屏幕可以垂直滚动。
 
 **[ImagePosition](properties-visual.md)** – 屏幕或控件大小与图像大小不同时，其中图像的位置（“填充”、“适应”、“拉伸”、“平铺”或“居中”）。
+
+**LoadingSpinner** （**无**、**控件**或**数据**）-如果没有，则不会显示微调框。 当控件 |数据将显示微调，直到屏幕级别上的所有子控件可见。 **注释。不考虑嵌套控件。**
+
+**LoadingSpinnerColor** -加载微调框的填充颜色。
 
 **名称**-屏幕的名称。
 

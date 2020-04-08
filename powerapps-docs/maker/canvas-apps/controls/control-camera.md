@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 03/16/2020
+ms.date: 04/07/2020
 ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fd3c468134e979732ead5e0144e60aaf1b3e38df
-ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
+ms.openlocfilehash: 59c0f85dd71c9dc512e348d6d8ee9686d6945fa1
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436793"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871111"
 ---
 # <a name="camera-control-in-power-apps"></a>Power Apps 中的相机控件
 
@@ -43,7 +43,15 @@ ms.locfileid: "79436793"
 
 ## <a name="key-properties"></a>关键属性
 
-**Camera** - 在具有多个照相机的设备上，应用所使用的照相机的数字 ID。
+**AvailableDevices** –设备上可用相机的表。
+
+表包含两列： 
+- 要与**相机**属性一起使用的*Id*号 
+- 设备提供的用于标识相机的*名称*。 某些平台可能包括*正面*或*背面*，以帮助找到照相机。
+
+*注意*：并非表中的所有设备都可在应用中使用。  有些特定的驱动程序或应用程序可能专门用于特定目的。  
+
+**照相机**–要使用的照相机的数字 ID。  对于具有多个照相机的设备很有用。  
 
 **OnStream** - 更新 **Stream** 属性时应用的响应方式。
 
@@ -99,7 +107,7 @@ ms.locfileid: "79436793"
 
 1. 在出现提示时，授权应用程序使用设备的照相机。
 
-1. 添加**图像**控件。
+1. 添加[**图像**](../controls/control-image.md)控件。
 
 1. 将**image**控件的**image**属性设置为以下公式：
 
@@ -112,7 +120,7 @@ ms.locfileid: "79436793"
 
 1. 按 F5 预览应用程序。
 
-1. 通过选择或点击 "照相机" 控件拍摄图片。  你应会在图像控件中看到结果。
+1. 通过选择或点击 "照相机" 控件拍摄图片。 你应会在图像控件中看到结果。
 
 ### <a name="add-pictures-to-an-image-gallery-control"></a>向图像库控件添加图片
 
@@ -156,6 +164,34 @@ ms.locfileid: "79436793"
 1. 按 F5，然后选择图片将其删除。
 
 使用[SaveData](../functions/function-savedata-loaddata.md)函数将图片保存在本地，或使用[Patch](../functions/function-patch.md)函数更新数据源。
+
+### <a name="change-the-active-camera-from-a-drop-down"></a>从下拉更改活动相机
+
+1. [添加](../add-configure-controls.md)**相机**控件。
+
+1. 在出现提示时，授权应用程序使用设备的照相机。
+    
+1. [添加](../add-configure-controls.md)[下拉](control-drop-down.md)控件。
+
+1. 将 dropdown 的**Items** prroperty 设置为：
+
+    ```powerapps-dot
+    Camera1.AvailableDevices
+    ```
+
+    > [!NOTE]
+      > 根据需要替换摄像控件名称*Camera1* 。
+    
+1. 将相机的**相机**属性设置为： 
+
+    ```powerapps-dot
+    Dropdown1.Selected.Id
+    ```
+
+    > [!NOTE]
+      > 根据需要替换下拉控件名称*Dropdown1* 。
+
+1. 按 F5，然后从下拉列表中选择一项以更改相机。
 
 ## <a name="accessibility-guidelines"></a>辅助功能准则
 
