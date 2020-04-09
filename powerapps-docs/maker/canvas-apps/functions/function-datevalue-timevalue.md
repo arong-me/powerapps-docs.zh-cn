@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/16/2020
+ms.date: 04/08/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fc28b370b36be8d309c292e110d0b927d08c4a11
-ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
+ms.openlocfilehash: 2fc1a91b4468926ee98351f79d7ce2e84133aa46
+ms.sourcegitcommit: 7d3caf698d367a56af9e16c43af8005adb9f87cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436738"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80987239"
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-power-apps"></a>Power Apps 中的 DateValue、TimeValue 和 DateTimeValue 函数
 
@@ -39,8 +39,11 @@ ms.locfileid: "79436738"
 
 日期必须采用以下格式之一︰
 
-- MM/DD/YYYY
-- DD/MM/YYYY
+- MM/DD/YYYY 或 MM-DD
+- Yyyy/MM/YYYY 或 DD-MM
+- YYYY/MM/DD 或 YYYY-MM-DD
+- MM/DD/YY 或 MM DD YY
+- DD/MM/YY 或 DD MM-YY
 - DD Mon YYYY
 - Month DD, YYYY
 
@@ -76,7 +79,7 @@ ms.locfileid: "79436738"
     设备设置为 " **en** "，则将标签显示为**周六，2014年10月11日**。
   
     > [!NOTE]
-    > 与**datetimeformat.longdatetime**相比，你可以将多个选项与**DateTimeFormat**一起使用。 若要显示选项列表，请在编辑栏中键入参数，后跟惊叹号（ **！** ）。
+    > 可以将多个选项与**DateTimeFormat**枚举一起使用。 若要显示选项列表，请在编辑栏中键入参数后跟一个点或句点（ **.** ）或检查[**文本**函数引用](function-text.md)。
 
 - 转换法语区域设置中的日期，并将结果显示为长日期。 在此示例中，月份和月份的日期以不同于英语的方式解释。
 
@@ -109,7 +112,7 @@ ms.locfileid: "79436738"
     设备设置为 " **en** "，则将标签显示为**周六，10月11日，2014 1:50:24 PM**。
   
   > [!NOTE]
-  > 与**datetimeformat.longdatetime**相比，你可以将多个选项与**DateTimeFormat**一起使用。 若要显示选项列表，请在编辑栏中键入参数，后跟惊叹号（ **！** ）。
+  > 可以将多个选项与**DateTimeFormat**枚举一起使用。 若要显示选项列表，请在编辑栏中键入参数后跟一个点或句点（ **.** ）或检查[**文本**函数引用](function-text.md)。
 
 - 转换法语区域设置中的日期和时间字符串。 每月的月份和日期以不同的方式解释。
 
