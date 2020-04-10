@@ -1,23 +1,21 @@
 ---
 title: 在模型驱动应用中查看和创建电子邮件 | MicrosoftDocs
 description: 使用模型驱动应用时查看和创建电子邮件。
-ms.date: 02/03/2020
+ms.date: 04/09/2020
 ms.service:
 - dynamics-365
 ms.topic: article
 author: lalexms
 ms.author: lalexms
 manager: shujoshi
-ms.openlocfilehash: 7d4930b03f175133a769226a407436d37f698633
-ms.sourcegitcommit: 3066c2800a939fbcaaac4262c802843e2d80b88c
+ms.openlocfilehash: 1ec0a3f6903bb5bcccf429e6f11941206a5e4f72
+ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79431730"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81007999"
 ---
-# <a name="preview-view-and-create-email-through-the-activities-grid"></a>预览：通过“活动”网格查看和创建电子邮件
-
-通过“活动”网格查看和创建电子邮件是一项抢先体验功能。 你可以提前选择加入，以在环境中启用这些功能。 这样即可测试这些功能，然后在环境中采用。 如需了解如何启用这些功能的信息，请参阅[选择加入 2020 版第 1 波更新](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates)。
+# <a name="view-and-create-email-through-the-activities-grid"></a>通过“活动”网格查看和创建电子邮件
 
 Dynamics 365 模型驱动应用可通过电子邮件与客户进行交互。 电子邮件功能支持以下操作：
 
