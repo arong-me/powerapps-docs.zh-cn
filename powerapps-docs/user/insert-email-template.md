@@ -1,23 +1,21 @@
 ---
 title: 在模型驱动应用中撰写电子邮件时插入电子邮件模板 |MicrosoftDocs
 description: 撰写电子邮件时插入预设格式的电子邮件。
-ms.date: 02/03/2020
+ms.date: 04/09/2020
 ms.service:
 - dynamics-365-sales
 ms.topic: article
 author: sbmjais
 ms.author: shjais
 manager: shujoshi
-ms.openlocfilehash: abbef00f3b93809dadf617c4180b52a1372e625a
-ms.sourcegitcommit: 68a31e3fa4d1635ccf4cd8bd9da5fba1bfecefa4
+ms.openlocfilehash: 8f5b607375cccd03b3bcea2bd5d50664e7033ae4
+ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051835"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81007976"
 ---
-# <a name="preview-insert-an-email-template"></a>预览：插入电子邮件模板
-
-插入电子邮件模板是一项抢先体验功能。 你可以提前选择加入，以在环境中启用这些功能。 这样即可测试这些功能，然后在环境中采用。 如需了解如何启用这些功能的信息，请参阅[选择加入 2020 版第 1 波更新](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates)。
+# <a name="insert-an-email-template"></a>插入电子邮件模板
 
 你可以使用电子邮件模板（一种预设格式的电子邮件）快速创建和发送电子邮件。 可以在撰写电子邮件时通过选择命令行上的“插入模板”来插入模板  。 可用模板的列表显示在“电子邮件模板”窗口中  。 “最近使用的模板”部分会显示四个最近使用过的模板  。 “所有模板”部分会按字母顺序显示所有立即可用的电子邮件模板（全局和特定于实体）的列表  。 全局模板显示为“用户”类型。 如果创建了自定义电子邮件模板，可在此处查看。 有关创建自定义电子邮件模板的信息，请参阅 [创建电子邮件模板](https://docs.microsoft.com/power-platform/admin/create-templates-email)。
 

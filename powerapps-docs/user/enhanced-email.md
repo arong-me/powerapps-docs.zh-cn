@@ -1,23 +1,21 @@
 ---
 title: 预览：在模型驱动应用中使用增强的电子邮件体验发送电子邮件 | Microsoft Docs
 description: 使用增强的电子邮件体验，无需离开正在处理的内容，即可撰写电子邮件。
-ms.date: 02/03/2020
+ms.date: 04/09/2020
 ms.service:
 - dynamics-365-sales
 ms.topic: article
 author: shubhadaj
 ms.author: shujoshi
 manager: annbe
-ms.openlocfilehash: 546f94f67608ab735d2c2eb6bb39f105335549f7
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: bc4b7023e56ae75b34f797089a812ab4ea1f8d84
+ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77282583"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81007930"
 ---
-# <a name="preview-send-email-using-the-enhanced-email-experience"></a>预览：使用增强的电子邮件体验发送电子邮件
-
-使用增强的电子邮件体验发送电子邮件是一项抢先体验功能。 你可以提前选择加入，以在环境中启用这些功能。 这样即可测试这些功能，然后在环境中采用。 如需了解如何启用这些功能的信息，请参阅[选择加入 2020 版第 1 波更新](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates)。
+# <a name="send-email-using-the-enhanced-email-experience"></a>使用增强的电子邮件体验发送电子邮件
 
 通过模型驱动应用中增强的电子邮件体验，无需离开正在处理的记录即可撰写电子邮件。 使用增强的电子邮件体验，你可以：
 
