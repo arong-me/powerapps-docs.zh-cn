@@ -7,23 +7,23 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/25/2016
+ms.date: 04/10/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: df568e6a61ca43f6c98ee80c33ed9efe4148de9e
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: a8136fc1ce04ed696aeb68af7139d1b538dd879e
+ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729077"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223325"
 ---
 # <a name="pdf-viewer-control-experimental-in-power-apps"></a>Power Apps 中的 PDF 查看器控件（实验性）
 显示 PDF 文件内容的实验性控件。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 通过添加此类型的控件并将其“Document”属性设置为要显示的文件的 URL（用双引号括住），来显示 PDF 文件中的文本、图形和其他内容。
 
 ## <a name="limitations"></a>限制
@@ -37,15 +37,13 @@ ms.locfileid: "74729077"
 
 如果控件无法打开文档，应用程序用户可以在外部浏览器中打开 PDF 文档来解决这些限制。 所有外部文档的控件菜单中也有此选项。
 
-应用程序制造商可以通过在应用中包含 PDF 文档作为媒体资源来解决这些限制。 这样，PDF 查看器控件即可始终显示文档。
-
 ## <a name="key-properties"></a>关键属性
 Document – 用双引号括住的 PDF 文件的 URL。
 
 ## <a name="additional-properties"></a>其他属性
 ActualZoom – 控件的实际缩放量，可能与“Zoom”属性请求的缩放量不同。
 
-[BorderColor](properties-color-border.md) – 控件边框的颜色。
+**[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
@@ -57,9 +55,9 @@ CurrentFindText – 当前正在使用的搜索词。
 
 [DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
-[DisabledBorderColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md)属性设置为 Disabled 时，该控件边框的颜色。
+[DisabledBorderColor](properties-color-border.md) – 控件的 [DisplayMode](properties-core.md) 属性设置为“Disabled”时，该控件边框的颜色。
 
-**[Fill](properties-color-border.md)** – 控件的背景颜色。
+**[Fill](properties-color-border.md)** – 控件的背景色。
 
 FindNext – 在文档中查找 FindText 的下一个实例。
 
@@ -71,17 +69,17 @@ FindText – 要在文档中查找的搜索词。
 
 **[HoverBorderColor](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件边框的颜色。
 
-[OnSelect](properties-core.md) – 用户点击或单击某个控件时应用响应的方式。
+**[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。
 
 OnStateChange – 控件状态发生更改时应用响应的方式。
 
-**[PaddingBottom](properties-size-location.md)** – 控件中的文本与该控件下边缘之间的距离。
+[PaddingBottom](properties-size-location.md) – 控件中的文本与该控件的下边缘之间的距离。
 
 [PaddingLeft](properties-size-location.md) – 控件中的文本与该控件的左边缘之间的距离。
 
 [PaddingRight](properties-size-location.md) – 控件中的文本与该控件的右边缘之间的距离。
 
-**[PaddingTop](properties-size-location.md)** - 控件中的文本与此控件的上边缘之间的距离。
+**[PaddingTop](properties-size-location.md)** – 控件中的文本与该控件的上边缘之间的距离。
 
 Page – 要显示的页码。
 
@@ -89,25 +87,25 @@ PageCount – 文档中的页数。
 
 **[PressedBorderColor](properties-color-border.md)** – 用户在点击或单击控件时，该控件边框的颜色。
 
-**ShowControls** – 音频或视频播放器是否显示播放按钮和音量滑块等组件，笔控件是否显示绘图、擦除和清除图标等。
+ShowControls – 音频或视频播放器是否显示播放按钮和音量滑块等组件，笔控件是否显示绘图、擦除和清除图标等。
 
-**[Tooltip](properties-core.md)** - 用户将鼠标悬停在控件上时显示的解释性文本。
+**[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
-[Width](properties-size-location.md) – 控件左边缘和右边缘之间的距离。
+**[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
-**Zoom** – 相机中图像被放大的百分比或 PDF 查看器中文件的视图百分比。
+Zoom – 相机中图像被放大的百分比或 PDF 查看器中文件的视图百分比。
 
 ## <a name="example"></a>示例
 
 添加“PDF 查看器”控件，并将其“Document”属性设置为 PDF 文件的 URL（用双引号括住），如下例所示：
 
-  **"https://blog.mozilla.org/security/files/2015/05/HTTPS-FAQ.pdf"**
+  "https://blog.mozilla.org/security/files/2015/05/HTTPS-FAQ.pdf"
 
 此控件显示 PDF 文件。
 

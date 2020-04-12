@@ -7,28 +7,31 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 09/13/2017
+ms.date: 04/10/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 68fad4cb2c73bcaeb448212012133c171d682cb4
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 9193b3d4ba16b5dca10a8dab471eb731f07d56bf
+ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723003"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223371"
 ---
 # <a name="combo-box-control-in-power-apps"></a>Power Apps 中的组合框控件
 用户可以在其中提供的选项之间进行选择的控件。  支持搜索和多重选择。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 使用组合框控件，可以搜索要选择的项。  由于搜索是在服务器端对 SearchField 属性执行，因此性能不受非常大的数据源影响。  
 
 单选或多重选择模式是通过 SelectMultiple 属性进行配置。
 
 搜索要选择的项时，可以对所有项修改“数据”窗格中的“布局”设置，选择是显示一个数据值、两个数据值，还是一张图片和两个值（“人员”模板）。
+
+> [!NOTE]
+> 如果希望搜索包含*数字*的项，请将数字转换为带[text （）](https://docs.microsoft.com/powerapps/maker/canvas-apps/functions/function-text)函数的文本。 例如， *Text （12345）* 。
 
 ## <a name="people-picker"></a>人员选取器
 若要将组合框用作人员选取器，请从“数据”窗格的“布局”设置中选择“人员”模板，并配置要显示的如下人员相关数据属性。
@@ -112,7 +115,7 @@ ms.locfileid: "74723003"
 这是除[标准颜色对比度](../accessible-apps-color.md)以外的要求。
 
 ### <a name="screen-reader-support"></a>屏幕阅读器支持
-* **[“AccessibleLabel”](properties-accessibility.md)** 必须存在。
+* [“AccessibleLabel”](properties-accessibility.md)必须存在。
 
     > [!NOTE]
   > 在触摸屏上，屏幕阅读器用户可以按顺序导航组合框中的内容。 组合框充当一个按钮，在选中时会显示或隐藏其内容。
