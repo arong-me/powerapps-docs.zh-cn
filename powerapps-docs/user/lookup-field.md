@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 91f027af2f7d8b10fcfd15380fae46f62bc5603b
-ms.sourcegitcommit: 10861337ce87866b58cc98dda6eab8d985c9220c
+ms.openlocfilehash: bdb1b0bf1a500087f11804f6da55d1c3abe2eaf3
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80615382"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871341"
 ---
 #  <a name="use-the-lookup-field-on-a-record"></a>对记录使用查阅字段
 
@@ -68,7 +68,7 @@ ms.locfileid: "80615382"
 最近使用的记录列表显示了有助于区分不同记录类型的图像。
 
 >[!NOTE] 
->不按搜索词或所选视图筛选最近使用的记录。
+>最近的记录不按搜索词、选定视图或相关记录筛选。
 
   > [!div class="mx-imgBorder"]
   > ![查阅字段显示图像](media/Lookup_03-MRU_Entity_Images_56[1].png "查阅字段显示图像")  
