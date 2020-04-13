@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5523ef67ed6912f7eae36228884b0c9a300d0785
-ms.sourcegitcommit: 39f6feb699512e9c2bf71ef1a1238b32b639da02
+ms.openlocfilehash: fbd6233eb775fb7f1c48ec6cc05006ac0237f72d
+ms.sourcegitcommit: abdc8c609a7a221ce4ca6b051a84b7083bdbe1ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80530000"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80645580"
 ---
 # <a name="run-canvas-apps-and-model-driven-apps-on-a-mobile-device"></a>在移动设备上运行画布应用和模型驱动应用
 
@@ -31,7 +31,7 @@ ms.locfileid: "80530000"
 要了解如何使用在 Power Apps 移动应用上运行的模型驱动应用，请参阅[有关在 Power Apps 移动应用上运行的模型驱动应用的用户指南](use-custom-model-driven-app-on-mobile.md)。
 
 > [!IMPORTANT]
-> 用于 Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 Field Service、Dynamics 365 Marketing 和 Dynamics 365 Project Service Automation 的模型驱动应用<!--Via Dynamics Style Guide. If this sentence doesn't apply to all these products, maybe only mention Sales, Customer Service, and Field Service as you do in use-custom-model-driven-app-on-mobile.md? "Dynamics verticals" is out of brand.--> 不在 Power Apps 移动应用中运行。 你此时要使用适用于手机和平板电脑应用的 Dynamics 365。 详细信息：[适用于手机和平板电脑的 Dynamics 365 用户指南](https://docs.microsoft.com/dynamics365/mobile-app/dynamics-365-phones-tablets-users-guide)
+> 用于 Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 Field Service、Dynamics 365 Marketing 和 Dynamics 365 Project Service Automation 的模型驱动应用<!--Via Dynamics Style Guide. If this sentence doesn't apply to all these products, maybe only mention Sales, Customer Service, and Field Service as you do in use-custom-model-driven-app-on-mobile.md? "Dynamics verticals" is out of brand.--> 不在 Power Apps 移动应用中运行。 你此时要使用适用于手机和平板电脑应用的 Dynamics 365。 更多信息：[适用于手机和平板电脑的 Dynamics 365 用户指南](https://docs.microsoft.com/dynamics365/mobile-app/dynamics-365-phones-tablets-users-guide)
 
 ![移动版 Power Apps](media/powerappsmobile.png "Power Apps 移动用户界面")
 
@@ -155,8 +155,7 @@ ms.locfileid: "80530000"
 
 我们仍在解决一些已知问题，并将随着时间的推移发布修复程序。 请确保在最新的预览版本可用时立即手动更新到该版本。 
 
-一些已知问题包括：
+已知问题：
 
-- 在脱机模式下打开 Power Apps 应用时，应用列表中不显示任何应用
 - 模型驱动应用中的图标有时会消失。
 
