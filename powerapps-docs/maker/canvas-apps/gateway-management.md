@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/16/2019
+ms.date: 04/14/2020
 ms.author: arthii
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b7d4471fde0bf22ec2900f303347d5d4783381ed
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 0956668fa3576dca58c728396d0c4c08473df73f
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729566"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385203"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-power-apps"></a>在 Power Apps 中管理本地数据网关
 
@@ -33,16 +33,16 @@ ms.locfileid: "74729566"
 * Filesystem
 * DB2
 
-## <a name="prerequisites"></a>必备组件
+## <a name="prerequisites"></a>先决条件
 
 * 用于[注册](../signup-for-powerapps.md)Power Apps 的用户名和密码。
-* 网关的管理权限。 （对于安装的每个网关，默认拥有这些权限；其他网关的管理员可以授予相应网关的这些权限。）
+* 网关的管理权限。 （安装每个网关时，用户默认获得这些权限，而其他网关的管理员也可以将其网关的这些权限授予用户。）
 * 支持使用本地网关访问本地数据的许可证。 有关详细信息，请参阅[定价页](https://powerapps.microsoft.com/pricing/)的“连接性”部分。
-* 只能在用户的[默认环境](working-with-environments.md)中创建和使用网关和本地连接。
+* 网关和本地连接只能在用户的[默认环境](working-with-environments.md)中创建和使用。
 
 ## <a name="install-a-gateway"></a>安装网关
 
-若要安装网关，请按照[安装本地数据网关](/data-integration/gateway/service-gateway-install)中的步骤操作。 在标准模式下安装网关，因为_本地数据网关（个人模式）_ 仅适用于 Power BI。
+若要安装网关，请按照[安装本地数据网关](/data-integration/gateway/service-gateway-install)中的步骤进行操作。 在标准模式下安装网关，因为“本地数据网关（个人模式）”仅适用于 Power BI。
 
 ## <a name="view-and-manage-gateway-permissions"></a>查看和管理网关权限
 
@@ -55,6 +55,9 @@ ms.locfileid: "74729566"
    * **管理员**：管理员可以完全控制网关，包括添加用户、设置权限、创建与所有可用数据源的连接和删除网关。
 
 对于“可使用”和“可使用和共享”权限级别，请选择用户可以通过网关连接的数据源。
+
+> [!NOTE]
+> **可以使用**和**可以使用 + share**不适用于自定义连接器。
 
 ## <a name="view-and-manage-gateway-connections"></a>查看和管理网关连接
 
