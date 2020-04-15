@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2462f82420713e93c3ac0598a73e2dc43bc7c0b1
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 88c96535de5fc4f77da06ca11ba3f6c49b37bcdd
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731942"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385226"
 ---
 # <a name="timer-control-in-power-apps"></a>Power Apps 中的计时器控制
 一个控件，可确定特定时间后应用的响应方式。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 例如，计时器可确定控件显示的时长，或在经过特定时间后更改控件的其他属性。
 
 > [!NOTE]
@@ -31,7 +31,7 @@ ms.locfileid: "74731942"
 
 
 ## <a name="key-properties"></a>关键属性
-**Duration** – 计时器运行的时长（毫秒计）。  不存在最大值。
+**Duration** – 计时器运行的时长（毫秒计）。 最大值为24小时（以毫秒表示）。 默认值为60秒。
 
 **OnTimerEnd** - 计时器运行完毕时应用的响应方式。
 
@@ -68,7 +68,7 @@ ms.locfileid: "74731942"
 
 [Font](properties-text.md) – 文本中所显示的字体系列的名称。
 
-**[FontWeight](properties-text.md)** -控件中的文本权重：**粗体**、 **Semibold**、 **Normal**或**浅**。
+**[FontWeight](properties-text.md)** - 控件中文本的粗细：粗体、半粗体、一般或较细。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
@@ -76,7 +76,7 @@ ms.locfileid: "74731942"
 
 [HoverColor](properties-color-border.md) – 用户将鼠标指针停留在控件上时，该控件中的文本颜色。
 
-**[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景色。
+**[HoverFill](properties-color-border.md)** – 用户将鼠标指针停留在控件上时，该控件的背景颜色。
 
 **[Italic](properties-text.md)** – 控件中的文本是否为斜体。
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d35150434d8fec7694f493f2d62c67997e2c839c
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 0610e1cfabde8bd62e083ca1cff65825c28918e4
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79212460"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385249"
 ---
 # <a name="image-control-in-power-apps"></a>Power Apps 中的图像控件
 显示来自本地文件或数据源等来源的图像的控件。
@@ -100,7 +100,7 @@ OriginalWidth – 使用“CalculateOriginalDimensions”属性启用的图像�
 
 **[Tooltip](properties-core.md)** – 用户将鼠标悬停在控件上时显示的解释性文本。
 
-Transparency – 图像后的控件仍然可见的程度。
+Transparency – 图像后的控件仍然可见的程度。 十进制值的范围为0到1。  其中0为不透明，0.5 为半透明，1为透明。 
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
