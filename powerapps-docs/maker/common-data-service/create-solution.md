@@ -2,7 +2,7 @@
 title: 创建解决方案 | MicrosoftDocs
 description: 了解如何创建解决方案
 ms.custom: ''
-ms.date: 02/28/2020
+ms.date: 03/20/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f4f2b4941e049a08bde978a318f5fda39f3dd30e
-ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
+ms.openlocfilehash: 59c041d7fe74e1a1dbbce9f1516057d324447478
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "3093716"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162183"
 ---
 # <a name="create-a-solution"></a>创建解决方案
 
@@ -61,12 +61,13 @@ ms.locfileid: "3093716"
   
  此对话框提醒您该解决方案组件依赖于其他解决方案组件。 如果选择**否，不包含必需组件** ，则解决方案可能会在您将其导入到所有这些必需组件都不存在的其他组织中时可能会失败。 如果解决方案导入成功，则另一解决方案中的行为可能并不与原始组织完全相同，因为组件的配置方式不同于源解决方案中的组件。  
   
- 通常，如果您打算将解决方案导出到其他组件，更安全的做法是将必需组件包括在内。 如果当您添加个人解决方案组件时没有添加这些组件，您可以稍后返回，选择所添加的解决方案组件并从选单中择菜**添加所需组件**。  
+选择实体组件时，建议您使用解决方案细分，以便在分发解决方案更新时仅包括新的或更新的实体组件。 利用解决方案细分，您可以在包含所选实体资产（例如实体字段、窗体和视图）的解决方案中工作，而不是包含所有资产的整个实体。 详细信息：[使用细分解决方案](use-segmented-solutions-patches-simplify-updates.md)
   
  如果您不打算导出解决方案，或者只打算将其导出为非托管解决方案并将其重新导入回同一组织，则不必包括必需组件。 如果曾导出解决方案，则将看到另一个警告，指示缺少某些必需组件。 如果只是要将该解决方案导入回同一组织，可可忽略此警告。 不使用第三方编辑工具编辑应用程序导航或功能区的步骤会期望您将解决方案重新导出到同一组织。  
 
+<!-- >
 > [!IMPORTANT]
->  如果您计划在解决方案中包括约会，强烈建议您不要在单独的解决方案中分别只包括约会和定期约会。 如果安装然后卸载具有不同约会类型的单独解决方案，则会遇到 SQL Server 错误，并且必须重新创建约会。 
+>  If you plan to include appointments in solutions, we strongly recommend that you don’t include only appointments and only recurring appointments in separate solutions. If you install and uninstall separate solutions with different appointment types, you’ll encounter a SQL Server error and you’ll have to re-create the appointments.  -->
 
 ## <a name="publish-changes"></a>发布更改 
 

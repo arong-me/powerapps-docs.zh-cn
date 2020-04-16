@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 03/24/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 97c049394bac97106b6de970d40f07321ed927bd
-ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
+ms.openlocfilehash: 11bd758bae85e8af91dc8c821d9a7083755e30b5
+ms.sourcegitcommit: ee95def32000accdb58a13492f0d0cec1770d98c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "3069615"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "3165524"
 ---
 # <a name="configure-notes-for-entity-forms-and-web-forms-on-portals"></a>为门户上的实体窗体和 Web 窗体配置注释
 
@@ -160,4 +160,4 @@ ms.locfileid: "3069615"
 Web 窗体注释的配置方法与[实体窗体注释](#notes-configuration-for-entity-forms)相同。 首先必须为具有注释的 Web 窗体步骤创建元数据记录，然后添加注释配置元数据。
 
 > [!NOTE]
-> 注释说明必须加上 *WEB* 前缀（即前后带有星号 (*) 的“WEB”关键字），才能在门户上显示。
+> 注释说明必须加上 **\*WEB\*** 前缀（*前后带有星号 (\*) 的“WEB”关键字*），才能在门户上显示。

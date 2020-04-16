@@ -20,18 +20,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 10ab6feca7843d64d20938561d44748fc6756768
-ms.sourcegitcommit: dc379bede57da58b5787eda5437eb94b662e21ed
+ms.openlocfilehash: 1b5d71f8683b5cb86f79d90540dcf5aa99f6415d
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3028327"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3114210"
 ---
 # <a name="solution-layers"></a>解决方案层
 
-托管和非托管解决方案位于 Common Data Service 环境中的不同层上。 在 Common Data Service 中，有两个不同的层：  
+托管和非托管解决方案位于 Common Data Service 环境中的不同级别上。 在 Common Data Service 中，有两个不同的层级：  
 - 非托管层。 所有导入的非托管解决方案和非托管自定义项都存在于此层。 非托管层是一个单层。  
-- 托管层。 所有导入的托管解决方案和系统解决方案都存在于此层。 如果安装了多个托管解决方案，则安装的第一个托管解决方案在后安装的托管解决方案下面。 也就是说，安装的第二个解决方案可以自定义之前安装的那个解决方案。 当两托管解决方案的定义有冲突时，一般规则是“后来者赢”。 如果卸载托管解决方案，则其下方的托管解决方案后生效。 如果卸载所有托管解决方案，则应用系统解决方案中定义的默认行为。 系统层是托管层的基础。 系统层包含系统解决方案，其包括所有标准实体和组件。 系统解决方案定义您能或不能使用托管属性自定义的内容。 托管解决方案的发布商具有相同的能力，可以限制您对他们在其解决方案中添加的解决方案组件的自定义能力。 您可以自定义没有阻止您自定义它们的托管属性的任何解决方案组件。 详细信息：[在 Common Data Service 元数据中设置托管属性](set-managed-properties-metadata.md) 
+- 托管层。 所有导入的托管解决方案和系统解决方案都存在于此级别。 如果安装了多个托管解决方案，则安装的最后一个托管解决方案在之前安装的托管解决方案上面。 也就是说，安装的第二个解决方案可以自定义之前安装的那个解决方案。 当两个托管解决方案的定义相互冲突时，运行时行为要么是“后来者赢”，要么是实现合并逻辑。  如果卸载托管解决方案，则其下方的托管解决方案后生效。 如果卸载所有托管解决方案，则应用系统解决方案中定义的默认行为。 系统层是托管层级的基础。 系统层包含平台运行所需的实体和组件。 
 
 ![解决方案层](media/solution-layers.png)
 

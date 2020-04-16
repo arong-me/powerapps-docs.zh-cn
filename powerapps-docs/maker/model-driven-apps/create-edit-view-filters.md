@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7645910490aee24b7f3c2b239f1a6dd841b67df2
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: 3a36cf57710da4e6306c7de48e19d4af6c722f10
+ms.sourcegitcommit: abdc8c609a7a221ce4ca6b051a84b7083bdbe1ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "3060208"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225572"
 ---
 # <a name="create-or-edit-filters-in-model-driven-app-views"></a>在模型驱动应用视图中创建或编辑筛选器
 
@@ -142,7 +142,8 @@ Power Apps 视图中的筛选器对视图提供的值很重要。 您应用的�
     > [!div class="mx-imgBorder"] 
     > ![分组条件筛选器](media/group-conditions-filter.png "分组条件筛选器")
 
-### <a name="next-steps"></a>后续步骤
-[选择和配置活动](choose-and-configure-columns.md)  
+### <a name="see-also"></a>另请参阅
+[使用高级网格筛选器编辑或创建个人视图](../../user/grid-filters-advanced.md)
+[选择和配置列](choose-and-configure-columns.md)  
 [编辑筛选条件](edit-filter-criteria.md)  
 [创建 1:N（一对多）或 N:1（多对一）关系](../common-data-service/create-edit-1n-relationships.md)

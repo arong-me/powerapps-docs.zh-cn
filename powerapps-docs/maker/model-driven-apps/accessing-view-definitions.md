@@ -2,7 +2,7 @@
 title: 访问模型驱动的应用程序视图定义 | MicrosoftDocs
 description: 在本主题中，您将了解如何访问实体视图
 ms.custom: ''
-ms.date: 11/27/2018
+ms.date: 03/23/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 43a35f82f93260b4f4a8f6b5084e6827e46eff8f
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 26d9abdd0703519d36c5f51a20a8617e4801f552
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885121"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166650"
 ---
 # <a name="access-a-model-driven-app-view-definition-in-power-apps"></a>在 Power Apps 中访问模型驱动应用视图定义
 
@@ -41,11 +41,8 @@ ms.locfileid: "2885121"
 
 1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
-
-    > [!IMPORTANT]
-    > “如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。 
-
 2.  展开**数据**，选择**实体**，然后选择所需实体，如**客户**实体。   
+
 3. 选择**视图**选项卡。
 
     > [!div class="mx-imgBorder"] 

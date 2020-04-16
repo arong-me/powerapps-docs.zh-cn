@@ -14,17 +14,17 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 11e131918e629f9373441c4307b0f4fc51e6dd30
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: bbc56604668a82582092ed305876618651118403
+ms.sourcegitcommit: 3066c2800a939fbcaaac4262c802843e2d80b88c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3108043"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "3134107"
 ---
 # <a name="what-is-common-data-service"></a>什么是 Common Data Service？
 Common Data Service 让您可以安全地存储和管理业务应用程序使用的数据。 Common Data Service 内的数据存储在一组实体中。 *实体*是一组用于存储数据的记录，类似于表在数据库中存储数据。 Common Data Service 包括一组覆盖典型情形的标准实体，但是，您还可以创建针对您的组织的自定义实体，并使用 Power Query 用数据填充它们。 应用制造者随后可以利用 Power Apps 使用此数据生成丰富的应用程序。
 
-![显示业务应用程序平台的概述的屏幕截图。](./media/data-platform-cds-intro/platform.png "平台概述")
+![显示 Power Platform 概览的屏幕截图。](./media/data-platform-cds-intro/platform.png "Power Platform 中的 Common Data Service")
 
 有关购买计划以使用 Common Data Service 的信息，请参阅[定价信息](../../administrator/pricing-billing-skus.md)。
 
@@ -51,7 +51,7 @@ Dynamics 365 应用程序（例如 Dynamics 365 Sales、Dynamics 365 Customer Se
 
 ## <a name="integrating-data-into-the-common-data-service"></a>将数据集成到 Common Data Service 中
 
-生成应用程序通常涉及来自多个源的数据，虽然这有时可以在应用程序级别进行，但也存在其他一些情况，将此数据一起集成到通用存储，以实现更简单的应用程序生成体验，并集成一组逻辑以维护数据并对数据进行操作。 Common Data Service 允许数据从多个源集成到随后可以在 Power Apps、Flow 和 Power BI 中使用的单个存储，一同集成的还有 Dynamics 365 应用程序已经提供的数据。
+生成应用程序通常涉及来自多个源的数据，虽然这有时可以在应用程序级别进行，但也存在其他一些情况，将此数据一起集成到通用存储，以实现更简单的应用程序生成体验，并集成一组逻辑以维护数据并对数据进行操作。 Common Data Service 允许数据从多个源集成到随后可以在 Power Apps、Power Automate、Power BI 和 Power Virtual Agents 中使用的单个存储，一同集成的还有 Dynamics 365 应用程序已经提供的数据。
 
 * **安排的与其他系统的集成** &ndash; 保留在其他应用程序内的数据可以与 Common Data Service 定期同步，以允许您利用 Power Apps 中的其他应用程序数据。
 * **使用 PowerQuery 转换和导入数据** &ndash; 在导入到 Common Data Service 时转换数据可以通过 PowerQuery 从很多联机数据源进行，这是一项跨 Excel 和 Power BI 使用的通用工具。

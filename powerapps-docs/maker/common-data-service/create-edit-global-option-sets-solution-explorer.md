@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 060d749fe3f8c7f3d2e0870b99a836571c29bd86
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 68663e52d3e0111d5a374b2fc434edcaa2294074
+ms.sourcegitcommit: 3f89b04359df19f8fa5167e2607509bb97e60fe0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865903"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "3165295"
 ---
 # <a name="create-and-edit-global-option-sets-for-common-data-service-using-solution-explorer"></a>使用解决方案资源管理器为 Common Data Service 创建和编辑全局选项集
 
@@ -76,6 +76,9 @@ ms.locfileid: "2865903"
 在查看全局选项集时，选择您要编辑的选项集来打开面板以对选项集进行编辑。
 
 除了更改分配给选项的**名称**字段值或数字**值**，您可以在创建全局选项集时进行可以进行的任何更改。
+
+> [!NOTE]
+> 如果选项集是托管解决方案的一部分，则无法对其进行编辑。 若要编辑托管解决方案选项集，您必须与解决方案负责人联系。
 
 [!INCLUDE [cc_remove-option-warning](../../includes/cc_remove-option-warning.md)]
 

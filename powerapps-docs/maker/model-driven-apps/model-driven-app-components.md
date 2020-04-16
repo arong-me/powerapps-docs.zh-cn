@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4f1c05ca41e6873a0072e8ea6720343e468e38bb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 31578198bb468a2a4269b7fda23a2ac2cc2cab73
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2863048"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3136289"
 ---
 # <a name="understand-model-driven-app-components"></a>了解模型驱动的应用程序组件
 设计良好的模型驱动应用程序包括若干您选择的组件，使用设计器创建已完成应用程序的外观和功能。 设计器用来制造应用程序的组件和组件属性成为元数据。 
@@ -52,7 +52,8 @@ ms.locfileid: "2863048"
 |表单     | 一组与您的组织跟踪的实体项目匹配的指定实体的数据输入字段。 例如，一组数据输入字段，其中的用户输入相关信息跟踪客户之前的订单以及请求的特定重新排序日期。        | 窗体设计器        |
 |视图     | 视图定义特定实体的记录列表如何在应用程序中显示。 视图定义要显示的列、每列的宽度、排序行为和默认筛选器。   |  视图设计器       |
 
-![应用程序设计器和窗体设计器](media/model-driven-app-overview/app-and-form-designers.png)
+> [!div class="mx-imgBorder"] 
+> ![应用程序设计器和窗体设计器](media/model-driven-app-overview/app-and-form-designers.png "应用程序设计器和窗体设计器")
 
 ## <a name="logic"></a>逻辑
 确定应用程序将具有的业务流程、规则和自动化。 [!INCLUDE [powerapps](../../includes/powerapps.md)] 制造者使用特定于流程或规则类型的设计器。 
@@ -66,7 +67,7 @@ ms.locfileid: "2863048"
 |业务规则     | 用于将规则或建议逻辑应用到窗体，如设置字段要求、隐藏字段或验证数据。 应用程序设计器使用简单的界面来实施和维护快速更改和常用的规则。         |  业务规则设计器       |
 |流     | 流是基于云的服务，让您可以创建应用程序与服务之间的自动工作流来获取通知、同步文件、收集数据等。        | Power Automate        |
 
-![工作流、操作和业务流程设计器](media/model-driven-app-overview/designer-mash.png)
+![工作流、操作和业务流程设计器](media/model-driven-app-overview/designer-mash.png "工作流、操作和业务流程设计器")
 
 详细信息：[在您的模型驱动应用程序中应用业务逻辑](guide-staff-through-common-tasks-processes.md) 
 
@@ -84,18 +85,23 @@ ms.locfileid: "2863048"
 |仪表板     | 用作提供可行业务数据概览的一个或多个图形可视化项的板。        | 仪表板设计器        |
 |嵌入式 Power BI     | 将嵌入式 Power BI 磁贴和仪表板添加到您的应用。 Power BI 是提供商业智能见解的基于云的服务。        |  图表设计器、仪表板设计器和 Power BI 的组合       |
 
-![示例仪表板](media/model-driven-app-overview/dashboard-designer.png)
+> [!div class="mx-imgBorder"] 
+> ![示例仪表板](media/model-driven-app-overview/dashboard-designer.png "示例仪表板")
 
 ## <a name="advanced-model-driven-app-making"></a>高级模型驱动应用程序制造
 解决方案资源管理器是一项用于构建高级模型驱动应用程序的综合工具。 在解决方案资源管理器中，可以使用工具左侧的导航窗格导航包含所有应用程序组件的层次结构。
 
-![解决方案资源管理器](media/model-driven-app-overview/solutionexplorer-entitiescollapsed.png)
+> [!div class="mx-imgBorder"] 
+> ![解决方案资源管理器](media/model-driven-app-overview/solutionexplorer-entitiescollapsed.png "解决方案资源管理器")
 
-若要打开解决方案资源管理器，选择 [!INCLUDE [powerapps](../../includes/powerapps.md)] 左侧窗格的**模型驱动**。
+要打开解决方案资源管理器， 
 
-  ![选择“模型驱动”](media/model-driven-app-overview/app-type-picker-mod.png)
+1. 在 [!INCLUDE [powerapps](../../includes/powerapps.md)] 主页上，选择**设置**，然后选择**高级设置**。
 
-然后选择**高级**选项卡。
+2. 在“Dynamics 365 业务管理”页上，选择**设置**，选择**自定义**，然后选择**自定义系统**。
+
+  > [!div class="mx-imgBorder"] 
+  > ![打开解决方案资源管理器](media/model-driven-app-overview/app-settings-solutions-explorer.png "打开解决方案资源管理器")
 
 详细信息：[高级应用程序制作和自定义](advanced-navigation.md)
 

@@ -9,7 +9,7 @@ applies_to:
 - powerapps
 ms.author: matp
 manager: kvivek
-ms.date: 06/18/2018
+ms.date: 03/18/2020
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 1b7e6a0c-18a9-47e2-aa7d-0cffb8c93b19
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7c4d4348726dfb53b0b54e3a8d86a1809a568b7b
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 0775689b2edab8cdbee1b9a595ff73e56ee9af9b
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874990"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166723"
 ---
 # <a name="iframe-properties-for-model-driven-app-main-forms"></a>模型驱动应用程序主窗体的 iFrame 属性
 
@@ -35,9 +35,14 @@ ms.locfileid: "2874990"
 
 2.  展开**数据**，选择**实体**，选择所需实体，然后选择**窗体**选项卡。 
 
-3. 在窗体列表中，打开**主**类型的窗体。 然后在**插入**选项卡上，选择 IFRAME 查看 IFRAME 属性。
+3. 在窗体列表中，打开**主**类型的窗体。
 
-![iframe 属性](media/iframe-properties.png)
+4.  选择**切换到经典**在经典窗体设计器中编辑窗体。
+
+4.  在**插入**选项卡上，选择 IFRAME 查看 IFRAME 属性。
+
+      > [!div class="mx-imgBorder"] 
+      > ![iframe 属性](media/iframe-properties.png)
 
 
 > [!NOTE]

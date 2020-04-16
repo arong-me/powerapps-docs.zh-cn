@@ -23,11 +23,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 0f75c9c38b3fbd74f330de5e80a2c0f7df8d6e13
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109201"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124945"
 ---
 # <a name="set-managed-properties-in-common-data-service-metadata"></a>在 Common Data Service 元数据中设置托管属性 
 可以使用托管属性来控制哪些托管解决方案组件可自定义。 ISV 应该允许在有意义时对解决方案组件进行自定义。 这样，组织可以根据其特殊需要自定义您的解决方案。 限制或消除提供解决方案核心功能的关键解决方案组件的自定义，以便您可以按可预见的方式支持和维护它。 对于大多数非 ISV 开发环境，我们建议您不要允许自定义托管解决方案组件。 

@@ -2,7 +2,7 @@
 title: 使用 Common Data Service 创建和编辑虚拟实体 | MicrosoftDocs
 description: 了解如何创建虚拟实体
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 03/03/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 07a6d262aeaba818d5a965409ce28a90934536c3
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c8fdc0a1f6cd29117b78c19526f0e03dfe28718e
+ms.sourcegitcommit: 3e6c499a65ada8a9f28022a02f64030b0c069a17
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861283"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226457"
 ---
 # <a name="create-and-edit-virtual-entities-that-contain-data-from-an-external-data-source"></a>创建和编辑包含来自外部数据源的数据的虚拟实体
 
@@ -150,6 +150,7 @@ Common Data Service 中包含 OData 数据提供程序，可用于连接 OData v
 - 建议在高级查找中使用虚拟实体时，针对单个数据源。 例如，不支持创建最终在 Common Data Service 本机数据与虚拟实体外部数据之间创建联接的高级查找。  
 - 更新时验证的字段元数据属性不应用于虚拟实体。 例如，可将虚拟实体字段中的整数字段设置为最小值为零。 但是，因为该值来自外部数据源，所以从虚拟实体检索时，查询将返回小于零的值。  查询中不表示最小值属性。  您仍需将该值筛选为大于 0（如果需要这样）。
 - 虚拟实体不支持更改跟踪，因此不能使用 Common Data Service 功能（如数据导出服务）同步。
+- 使用包含的 OData v4 数据提供程序的虚拟实体在出站端口 443 上启用。
   
 ### <a name="see-also"></a>另请参阅  
 

@@ -2,7 +2,7 @@
 title: 使用 Power Apps 添加或编辑模型驱动应用组件的教程 | MicrosoftDocs
 description: 使用 Power Apps 应用程序设计器添加或编辑组件
 keywords: ''
-ms.date: 10/15/2018
+ms.date: 03/05/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f78b990432988de5ba1d6c2b254bef8577770d16
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 5f357bd55060258ca8545fae6ad4bb3c7621ab5c
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2873538"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3136465"
 ---
 # <a name="tutorial-add-or-edit-model-driven-app-components-in-the-power-apps-app-designer"></a>教程：在 Power Apps 应用程序设计器中添加或编辑模型驱动应用组件
 
@@ -41,7 +41,8 @@ ms.locfileid: "2873538"
 ## <a name="app-designer-layout"></a>应用程序设计器布局  
  应用程序设计器有两个主要区域。 在左侧是添加组件的区域。  
   
-![应用设计器区域](../model-driven-apps/media/app-designer-canvas-pane.png)
+ > [!div class="mx-imgBorder"]
+ > ![应用设计器区域](../model-driven-apps/media/app-designer-canvas-pane.png "应用设计器区域")
 
  在右侧是您用于选择组件并设置组件属性的选项卡。  
  
@@ -58,7 +59,7 @@ ms.locfileid: "2873538"
 ## <a name="open-an-app"></a>打开应用
 1. 登录到 [Power Apps](https://make.powerapps.com/)。 
 
-2. 选择模型驱动的现有应用程序，或选择**从空白开始**。 有关如何创建应用程序的信息，请参阅[使用应用设计器创建或编辑模型驱动的应用程序](create-edit-app.md#create-an-app)。
+2. 选择模型驱动的现有应用程序，或选择**从头开始制作模型驱动应用**。 有关如何创建应用程序的信息，请参阅[使用应用设计器创建或编辑模型驱动的应用程序](create-edit-app.md#create-an-app)。
 
 ## <a name="add-an-artifact-entity-dashboard-or-business-process-flow"></a>添加项目（实体、仪表板或业务流程）  
  向应用添加仪表板或业务流程时，将自动向应用添加仪表板或业务流程所用实体。 在添加某个实体时，其资产的磁贴会自动添加。 将项目添加到设计器区域有以下两种方法：使用命令栏中的**添加**按钮 ![在设计器中添加按钮](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "在设计器中添加按钮") ，或使用**组件**选项卡中的磁贴。  
@@ -87,7 +88,8 @@ ms.locfileid: "2873538"
   
      仪表板使用的所有实体也会添加到**实体视图**区域。 例如，如果添加“Customer Service 经理”仪表板，“案例”、“权限”和“队列项”实体将添加到“实体视图”区域。 对于每个实体，还会添加其资产的磁贴。 您可以使用这些磁贴添加窗体、视图和图表。 详细信息：[在 Power Apps 应用程序设计器中添加或编辑应用组件](add-edit-app-components.md#bkmk_AddEntityAssets)   
   
-    ![将实体添加到应用程序设计器区域](../model-driven-apps/media/add-entity-app-designer-canvas.png "将实体添加到应用程序设计器区域")  
+    > [!div class="mx-imgBorder"]
+    > ![将实体添加到应用程序设计器区域](../model-driven-apps/media/add-entity-app-designer-canvas.png "将实体添加到应用程序设计器区域")  
   
 4.  如果默认解决方案中没有您所需仪表板，请通过选择区域右侧**组件**选项卡中的**新建**创建仪表板。  
   

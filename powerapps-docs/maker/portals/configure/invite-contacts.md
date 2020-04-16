@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
+ms.date: 03/16/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 74ad7201f84e7b96c785d77092048e24d24f3333
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: f6e6989e1005f12fd3e9d3a02222a8cd95226cca
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2980271"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3136209"
 ---
 # <a name="invite-contacts-to-your-portals"></a>为门户邀请联系人
 
@@ -29,7 +29,7 @@ ms.locfileid: "2980271"
 
 邀请收兑可以使用任何身份验证选项来完成。 有关门户身份验证的文档，请参阅[设置门户的身份验证标识](set-authentication-identity.md)并选择适用于您的门户版本和配置的模型。 用户将在收兑时采用管理员提供的任何设置。 将为邀请和联系人创建邀请收兑活动。
 
-邀请通过**发送邀请**工作流进行发送。 默认情况下，该工作流将创建包含常规消息的电子邮件并将其发送到受邀联系人的主要电子邮件地址。 **发送邀请**工作流包含需要编辑的电子邮件模板，以包含门户的特定消息和门户的**邀请收兑页面**的正确超链接。
+邀请通过**发送邀请**工作流进行发送。 默认情况下，该工作流将创建包含常规消息的电子邮件并将其发送到受邀联系人的主要电子邮件地址。 “抄送”和“密件抄送”字段中的电子邮件地址将被忽略，以确保通信的安全。 **发送邀请**工作流包含需要编辑的电子邮件模板，以包含门户的特定消息和门户的**邀请收兑页面**的正确超链接。
 
 若要编辑**发送邀请**工作流电子邮件模板，请找到该模板并停用。 停用之后，编辑电子邮件模板，以发送所需邮件并提供门户的**邀请收兑页面**的链接。
 
