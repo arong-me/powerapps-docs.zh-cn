@@ -1,6 +1,6 @@
 ---
-title: 通过 Power Apps 使用默认解决方案自定义 | MicrosoftDocs
-description: 了解如何自定义默认解决方案
+title: 使用解决方案自定义 Power Apps | MicrosoftDocs
+description: 了解如何自定义 Power Apps
 ms.custom: ''
 ms.date: 02/20/2020
 ms.reviewer: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1525cdb41cb7e809a54b6389472e5be842a87697
-ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
+ms.openlocfilehash: e32920e3a3ae2bd3c65bfaae6da4b875d4dff645
+ms.sourcegitcommit: 3e6c499a65ada8a9f28022a02f64030b0c069a17
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "3093607"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226413"
 ---
 # <a name="use-a-solution-to-customize"></a>使用解决方案进行自定义
 我们建议您创建一个解决方案来管理您的自定义。 使用自定义解决方案，您可以轻松地找到已自定义的解决方案组件，一致地使用解决方案发布商前缀，并将解决方案导出以分发到其他环境。  

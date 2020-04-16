@@ -6,24 +6,24 @@ manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
-ms.date: 05/01/2018
+ms.date: 03/20/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5672922d04ae8ea4342139ef9179c7a871fd5ea6
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e6f2518a4ee7b141c9c480d9a8f32bc923882f73
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861191"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154754"
 ---
 # <a name="restricted-entities-requiring-dynamics-365-licenses"></a>需要 Dynamics 365 许可证的受限实体
 
 > [!IMPORTANT]
-> 本主题已过期，将很快更新以反映自 2019 年 10 月 1 日起适用的最新许可变化。 有关实体许可要求的最新信息，请参阅 [Power Apps 许可指南](https://go.microsoft.com/fwlink/?linkid=2085130)。
+> 有关实体许可要求的最新信息，请参阅 [Power Apps 许可指南](https://go.microsoft.com/fwlink/p/?linkid=2085130)。
 
 应用开发者可以使用 Common Data Service 内提供的大多数实体来为只有 Power Apps 计划 1 许可证的用户创建应用和流。 不过，有些实体包含需要应用用户有 Power Apps 计划 2 或 Power Automate 计划 2 许可证的复杂业务逻辑（有关详细信息，请参阅[实体的许可证要求](data-platform-entity-licenses.md)）。 如果需要创建、更新或删除实体内的记录，即使更小的绑定到 Dynamics 365 产品的一组实体也需要画布和模型驱动应用程序用户具有相应 Dynamics 365 产品的许可证。 这些实体称为*受限*实体。
 

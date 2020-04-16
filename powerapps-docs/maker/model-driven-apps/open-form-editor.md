@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5824f2acfdcf1a6dc6e3491abfdd8896528597a1
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 2b2e19a11e176729ecaaa47fceb95f27999bb219
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872681"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166606"
 ---
 # <a name="open-the-model-driven-app-form-editor"></a>打开模型驱动应用程序窗体编辑器 
 通过窗体编辑器，您通过将组件（如分区、选项卡、字段和控件）放入窗体编辑器区域来设计窗体。 在本主题中，您将了解几个访问窗体编辑器的不同方法。
@@ -68,9 +68,11 @@ ms.locfileid: "2872681"
   
 1.  打开[解决方案](advanced-navigation.md#solutions)。  
   
-2.  双击要使用的非托管解决方案。  
+2.  选择要使用的非托管解决方案。  
   
-3.  查找具有要编辑的窗体的实体。 如果没有实体，则需要添加实体。 详细信息：[向非托管解决方案添加实体](#add-an-entity-to-an-unmanaged-solution) 
+3.  打开具有要编辑的窗体的实体。 如果没有实体，则需要添加实体。 详细信息：[向非托管解决方案添加实体](#add-an-entity-to-an-unmanaged-solution)
+
+4.  选择**窗体**选项卡，然后打开要编辑的窗体。
   
 ### <a name="add-an-entity-to-an-unmanaged-solution"></a>将实体添加到非托管解决方案  
   

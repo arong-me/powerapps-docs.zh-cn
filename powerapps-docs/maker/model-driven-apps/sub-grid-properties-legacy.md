@@ -9,7 +9,7 @@ applies_to:
 - powerapps
 ms.author: matp
 manager: kvivek
-ms.date: 06/07/2018
+ms.date: 03/17/2020
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 82892cd3-3436-4677-b96b-f2ccd0a4f078
@@ -18,29 +18,61 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ff9b79565525cee42eedfcd48c59669c4fe277d8
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: c71afbf34f2e74afbcbd31f67d9164606d80d83b
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872813"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3167002"
 ---
 # <a name="sub-grid-properties-for-model-driven-app-main-forms-overview"></a>模型驱动应用程序主窗体的子网格属性概述
 
-可以配置窗体上的子网格以显示记录列表或图表。 在**显示**选项卡上选择**仅显示图表** 可显示图表，而不显示列表。  
+可以配置窗体上的子网格以显示记录列表。  
 
 您可以从 Power Apps 站点访问**子网格属性**。 
-1.  在 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 站点，选择**模型驱动**（导航窗格的左下方）。  
-
-     ![模型驱动设计模式](media/model-driven-switch.png)
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
 2.  展开**数据**，选择**实体**，选择所需实体，然后选择**窗体**选项卡。 
 
-3.  在窗体列表中，打开**主**类型的窗体。 然后在**插入**选项卡上，选择**子网格**查看子网格属性。
+3.  在窗体列表中，打开类型为**主要**的窗体，然后选择**组件**。 
 
-    ![子网格属性](media/sub-grid-properties.png)
-  
-|Tab|属性|说明|  
+4.  在“组件”窗格中，选择**子网格**。
+
+    > [!div class="mx-imgBorder"] 
+    > ![选择子网格视图](media/sub-grid-views.png "选择子网格视图")
+
+5.  在**实体**中，选择要在子网格中显示其记录的实体。 将筛选**实体**下拉列表以仅列出与当前实体有关的实体。
+
+6.  在**默认视图**中，选择子网格的默认视图。 这是在“实体”属性中选择的实体的视图，用于获取记录列表并在子网格中显示。
+
+7.  选择**显示相关记录**以仅显示与窗体中显示的当前记录有关的记录。
+
+8.  选择**完成**将子网格添加到窗体。 子网格的属性将出现在“属性”窗格中。
+
+    > [!div class="mx-imgBorder"] 
+    > ![子网格属性](media/newform-designer-sub-grid-properties.png "子网格属性")
+
+|属性|说明|  
+|--------------|-----------------|  
+|**名称**|**必需**：子网格的唯一名称，在脚本中引用子网格时使用该名称。 该名称只能包含字母数字字符和下划线。|  
+|**标签**|**必需**：可本地化的子网格标签，向用户显示。|  
+|**隐藏标签**|是否应在窗体上显示标签。 如果启用**显示搜索框**，这是必需选项。 您也可以选择加入面板标题颜色。|  
+|**在电话上隐藏**|指定分区是否应对手机提供。|
+|**显示相关记录**| 子网格将仅显示与当前记录相关的记录。<br /> 如果您未选择此属性，子网格将显示仅按默认视图筛选的记录；如果启用了视图选择器，则显示按用户选择的视图筛选的记录。<br /><br /> 您选择的选项将影响显示列表控件的行为。 详细信息：[显示列表行为](#show-list-behavior) |  
+|**实体**|根据您为**显示相关记录**选择的选项，此列表将显示以下两者之一：<br /><br /> - 仅相关记录：与此实体相关的实体列表，以及该实体上定义括号中关系的查找字段的名称。<br />- 所有记录类型：所有实体的列表。|  
+|**默认视图**|选择将在默认情况下应用的视图。 如果您不使用**视图选择器** 属性启用其他任何视图。 这将是唯一的视图。<br /><br /> 使用**编辑** 按钮打开默认视图进行编辑。 使用**新建**按钮创建要用于此子网格的新视图。|  
+|**允许用户更改视图**|选择后，应用程序用户可从默认视图切换到实体属性中选择的实体的另一个视图。|
+
+## <a name="sub-grid-properties-for-model-driven-app-main-forms-classic"></a>模型驱动应用主窗体的子网格属性：经典
+
+可以使用经典窗体设计器配置窗体上的子网格以显示记录列表或图表。 在**显示**选项卡上选择**仅显示图表** 可显示图表，而不显示列表。
+
+  > [!div class="mx-imgBorder"] 
+  > ![子网格属性](media/sub-grid-properties.png "子网格属性")
+
+使用窗体中的子网格组件时，可使用经典窗体设计器配置一些属性。
+
+|选项卡|属性|说明|  
 |---------|--------------|-----------------|  
 |**显示器**|**名称**|**必需**：子网格的唯一名称，在脚本中引用子网格时使用该名称。 该名称只能包含字母数字字符和下划线。|  
 ||**标签**|**必需**：可本地化的子网格标签，向用户显示。|  

@@ -13,20 +13,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6f3f47882800252c91de0efc572954f7397ac251
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 375ead78421dae021841009c5c6d1308fa4ed24b
+ms.sourcegitcommit: ca7df48f819795d28ccfcd4a862639e20a7fe8fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757608"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3169061"
 ---
 # <a name="create-an-option-set"></a>创建选项集
 
 选项集让您可以为应用程序内的用户包括固定值的下拉列表，以确保数据的一致性，在其他应用程序中有时也称为选择列表或选择字段。 类似于实体，有两个标准选项集，以及创建在应用内使用的自定义选项集的功能。
 
-选项集可通过两种方式创建，从门户中的选项集列表或在创建字段时直接在实体内。 有关如何创建实体的详细信息，请参阅[创建实体](data-platform-create-entity.md)。
+选项集可通过两种方式创建，从门户中的**选项集**列表或在创建字段时直接在实体内。 有关如何创建实体的详细信息，请参阅[创建实体](data-platform-create-entity.md)。
 
-## <a name="creating-an-option-set-while-adding-a-field"></a>在添加字段时创建选项集。
+## <a name="creating-an-option-set-while-adding-a-field"></a>在添加字段时创建选项集
 
 1. 在 [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 上，展开**数据**部分并单击或点按左侧导航窗格中的**实体**。
 
@@ -38,10 +38,10 @@ ms.locfileid: "2757608"
 
 4. 在新字段面板中，为您的字段输入**显示名称**，**名称**将自动填充并用作字段的唯一名称。 **显示名称**在将此字段呈现给您的用户时使用，**名称**在生成应用程序时使用，使用表达式和公式形式。
 
+5. 单击**数据类型**下拉列表并选择**选项集**或**多选选项集**。
+
     > [!div class="mx-imgBorder"] 
     > ![新建字段](./media/data-platform-cds-create-entity/newfieldpanel.png "新建字段面板")
-
-5. 单击**数据类型**下拉列表并选择**选项集**或**多选选项集**。
 
 6. 单击**选项集**下拉列表并选择**新建选项集**
 
@@ -91,7 +91,7 @@ ms.locfileid: "2757608"
 
 ## <a name="global-and-local-option-sets"></a>全局和本地选项集
 
-默认情况下，选项集创建为全局选项集，这让它们可以在多个实体中重复使用。 在创建您可以选择来将选项集设置为**本地**的新选项集时，位于**查看更多**选项下。 此选项只可用于添加字段时创建选项集时，且不通过选项集列表。 本地选项集只能由其创建时所基于的实体和字段，不能在其他实体上重复使用。 此方法仅向对本地选项集有特定需求的高级用户。
+默认情况下，选项集创建为全局选项集，这让它们可以在多个实体中重复使用。 在创建您可以选择来将选项集设置为**本地**的新选项集时，位于**查看更多**选项下。 此选项只可用于添加字段时创建选项集时，且不通过**选项集**列表。 本地选项集只能由其创建时所基于的实体和字段，不能在其他实体上重复使用。 此方法仅向对本地选项集有特定需求的高级用户。
 
 > [!IMPORTANT]
 > 在将选项集创建为本地或全局后将无法更改。

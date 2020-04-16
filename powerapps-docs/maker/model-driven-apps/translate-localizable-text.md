@@ -2,7 +2,7 @@
 title: 翻译模型驱动应用程序的可本地化文本 | MicrosoftDocs
 description: 了解如何翻译可本地化的文本以支持多种语言
 ms.custom: ''
-ms.date: 06/03/2018
+ms.date: 03/05/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 32e6eb8439cdd5a685f761b1326a0cc891f0e6bb
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d0f8f154d4a2cb92a062b7ce37f9e6a0b17e9b6b
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754859"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3136377"
 ---
 # <a name="translate-localizable-text-for-model-driven-apps"></a>翻译模型驱动应用程序的可本地化文本
 
@@ -51,20 +51,25 @@ ms.locfileid: "2754859"
 
 ## <a name="export-the-localizable-text"></a>导出可本地化文本
 
-将导出的可本地化文本的范围是包含可本地化文本的非托管解决方案。 这只能使用解决方案资源管理器执行
+将导出的可本地化文本的范围是包含可本地化文本的非托管解决方案。
 
-[!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
+<!-- [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)] -->
 
-在菜单栏中打开包含可本地化文本的非托管解决方案，选择**翻译** > **导出翻译**。 
+1. 在 Power Apps 门户中，选择**解决方案**。
 
-![导出转换](media/export-localizable-text.png)
+2. 在**所有解决方案**列表中，选择包含所需的可本地化文本的非托管解决方案。
 
-您应看到一条警报，显示：
-> 导出要翻译的自定义标签可能需要几分钟时间。 在首次导出完成前不要再次单击导出链接。 是否确实要立即导出？ 
+3. 在菜单栏中，选择**翻译** > **导出翻译**。 
 
-如果要继续，请单击**确定**。
+    > [!div class="mx-imgBorder"] 
+    > ![导出转换](media/export-localizable-text.png "导出转换")
 
-导出完成后，可以在下载文件夹中找到名称类似于 `CrmTranslations_{0}_{1}.zip` 的文件，其中 `{0}` 是解决方案的唯一名称，`{1}` 是解决方案的版本号。
+    您可以看到一条警报，显示：
+    > 导出要翻译的自定义标签可能需要几分钟时间。 在首次导出完成前不要再次单击导出链接。 是否确实要立即导出？
+    
+    > 如果要继续，请单击**确定**。
+
+导出完毕后，保存翻译 zip 文件。 此文件的名称类似于 `CrmTranslations_{0}_{1}.zip`，其中 `{0}` 是解决方案的唯一名称，`{1}` 是解决方案的版本号。
 
 ## <a name="get-the-localizable-text-translated"></a>翻译可本地化的文本
 
@@ -84,7 +89,7 @@ ms.locfileid: "2754859"
 
 在 Excel 中查看数据时，请查看**本地化标签**选项卡。
 
-![导出的要进行本地化的文本](media/localized-labels-tab-exported-languages.png)
+![导出的要进行本地化的文本](media/localized-labels-tab-exported-languages.png "导出的要进行本地化的文本")
 
 任何自定义实体或字段将具有可本地化文本的空单元格。 为这些项添加本地化值。
 
@@ -117,13 +122,14 @@ ms.locfileid: "2754859"
 
 在您从中导出翻译的同一个非托管解决方案中，在菜单中选择**翻译** > **导入翻译**。 
 
-![导入翻译](media/import-translations.png)
+<!-- ![Import translations](media/import-translations.png) -->
+
+> [!div class="mx-imgBorder"] 
+> ![导入所选文件](media/import-translated-text-dialog.png "导入已本地化的文本")
 
 选择包含压缩的已翻译文本的文件，然后选择**导入**。
 
-![导入所选文件](media/import-translated-text-dialog.png)
-
-在翻译的文本导入后，应该发布所有自定义项以查看您的应用程序的更改；
+在翻译的文本导入后，应该发布所有自定义项以查看您的应用程序的更改。
 
 ## <a name="community-tools"></a>社区工具
 
@@ -137,4 +143,3 @@ ms.locfileid: "2754859"
 ## <a name="next-steps"></a>后续步骤
 [组织的区域和语言选项](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-languages)<br />
 [编辑系统实体消息](../common-data-service/edit-system-entity-messages.md)
-

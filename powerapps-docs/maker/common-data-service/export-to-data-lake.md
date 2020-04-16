@@ -2,7 +2,7 @@
 title: 导出到数据湖 | MicrosoftDocs
 description: 了解如何在 Power Apps 中将实体数据导出到 Azure Data Lake 中
 ms.custom: ''
-ms.date: 01/28/2020
+ms.date: 03/04/2020
 ms.reviewer: Mattp123
 ms.service: powerapps
 ms.suite: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6adf35a76df347ca8a99bd12620e7beea4b403d5
-ms.sourcegitcommit: 97a36c9df2a7067a29fb6bd254975dadc2bc16fa
+ms.openlocfilehash: 04913c04d6f8209ed3d0a11105964627eec96220
+ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3072852"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3119889"
 ---
 # <a name="export-entity-data-to-azure-data-lake-storage-gen2"></a>将实体数据导出到 Azure Data Lake Storage Gen2
 
@@ -78,6 +78,10 @@ ms.locfileid: "3072852"
    - **订购**。 选择您的 Azure 订阅。 
    - **资源组**。 选择其中包含 Storage v2（一般用途 v2）存储帐户的资源组。
    - **存储帐户**。 选择要用于导出的 Storage v2（一般用途 v2）存储帐户。 
+
+    > [!NOTE]
+    > 在将 Common Data Service 环境链接到数据湖的过程中，您将向存储帐户授予“导出到 Data Lake”服务访问权限。 请确保满足了创建和配置 Azure Data Lake Storage 帐户以及为自己授予存储帐户负责人角色的[先决条件](#prerequisites)。 另外，您将授予 Power Platform 数据流服务访问您的存储帐户的权限。 详细信息：[使用数据流自助准备数据](self-service-data-prep-with-dataflows.md).  
+
 4. 选择要导出到数据湖的实体，然后选择**保存**。 只能导出已启用了更改跟踪的实体。 详细信息：[启用更改跟踪](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
 
    > [!div class="mx-imgBorder"] 

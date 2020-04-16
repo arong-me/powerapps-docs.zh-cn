@@ -1,7 +1,7 @@
 ---
 title: Power Apps 中的时间线控件（部分）的常见问题解答 | MicrosoftDocs
 description: Power Apps 中的时间线控件（部分）的常见问题解答
-ms.date: 02/03/2020
+ms.date: 03/10/2020
 ms.service: powerapps
 author: kabala123
 ms.assetid: 7F495EE1-1208-49DA-9B02-17855CEB2FDF
@@ -12,12 +12,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6556ee415f2ee3340f6e36f417a25299871c1860
-ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
+ms.openlocfilehash: c664ca490f3a03d02dfe273c26d061698242a6c3
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3013045"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3114354"
 ---
 # <a name="faqs-for-timeline-control"></a>时间线控件的常见问题解答
 
@@ -98,6 +98,11 @@ ms.locfileid: "3013045"
 ## <a name="why-my-users-see-different-activities-and-records-in-their-my-activities-stream-in-the-dashboard"></a>为什么我的用户在仪表板中“我的活动”流中看到的活动和记录不同？
 
 仪表板中的**我的活动**流显示特定用户负责的记录和活动。 例如，用户 **A** 看到的是 **A** 负责的记录和活动，而用户 **B** 看到的则是 **B** 负责的记录和活动。
+
+
+## <a name="why-my-agents-see-the-filter-pane-even-when-the-expand-filter-pane-by-default-check-box-is-cleared"></a>为什么即使清除了“默认情况下展开筛选器窗格”复选框，我的代理也仍会看到筛选器窗格？
+
+当时间线显示在多个列上时，筛选器窗格将在时间线记录旁边显示为一列。 即使您已清除“时间线”配置中的**默认情况下展开筛选器窗格**复选框，此筛选器窗格也始终会显示给您的代理。
 
 ## <a name="see-also"></a>另请参阅
 

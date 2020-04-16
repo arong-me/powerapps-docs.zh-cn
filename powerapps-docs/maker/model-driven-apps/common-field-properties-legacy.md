@@ -5,7 +5,7 @@ Keywords: 主窗体; 通用字段属性; Dynamics 365
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.date: 06/18/2018
+ms.date: 02/25/2020
 ms.service: powerapps
 ms.topic: article
 applies_to:
@@ -18,20 +18,49 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5da30442c2768701fbc48908653d8ae065c4fce9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8729292ca14cff762b31ef886ecdc0c90856110e
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2863540"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3136421"
 ---
 # <a name="model-driven-app-common-field-properties"></a>模型驱动应用程序的通用字段属性
 
- 窗体中的字段显示用户用于查看或编辑实体记录中的数据的控件。 可以将字段格式设置成在分区中最多占用四栏。  
+您可以使用 Power Apps 解决方案资源管理器或 Power Apps 门户查看和编辑模型驱动应用的实体字段的通用属性。 Power Apps 门户提供通过 Common Data Service 创建和编辑实体字段的简单方法。
+此门户支持配置最常见的选项，但是某些选项只能使用解决方案资源管理器设置。
+
+## <a name="common-field-properties-in-power-apps-portal"></a>Power Apps 门户中的通用字段属性
+
+1. 从 [Power Apps 门户](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)，选择**数据** > **实体**，然后选择具有您要查看的字段的实体。
+
+2. 选择要查看的字段。
+
+    > [!div class="mx-imgBorder"]
+    > <img src="media/common-field-prop-powerapps.png" alt="Common field properties in Power Apps portal" height="658" width="300">
+
+
+下表介绍了字段的通用属性。 有些类型的字段具有特殊属性。 这些在[创建和编辑 Common Data Service 的字段](../common-data-service/create-edit-field-portal.md)中进行了介绍。
+
+ |属性|说明|
+ |--|--|
+ |**显示名称**|用户界面中要为字段显示的文本。|
+ |**名称**|在整个环境中的唯一名称。 名称将根据您输入的显示名称为您生成，不过您可以在保存之前进行编辑。 在创建字段后，不能更改名称，因为它将在您的应用程序或代码中引用。 名称会将 **Common Data Service 默认发布商**的自定义项前缀附加到字段的前面。|
+ |**数据类型**|控制值如何在某些应用程序中存储以及如何确定格式。 一旦保存字段，将无法更改数据类型，除非将文本字段转换为自动编号字段。|
+ |**必填**| 如果此字段中无数据，将无法保存记录。 |
+ |**可搜索**| 此字段会出现在“高级查找”中，并且可在自定义视图时使用。 |
+ |**计算或汇总**| 用于自动化手动计算。 使用值、日期或文本。|
+ |**高级选项**| 添加说明，并指定字段的最大长度和 IME 模式。
+
+有许多不同类型的字段，但是，您只能创建其中一部分。 有关所有字段类型的详细信息，请参阅[字段类型和字段数据类型](../common-data-service/types-of-fields.md)。 您可以根据所选择的**数据类型**设置其他选项。
+
+## <a name="common-field-properties-in-solution-explorer"></a>解决方案资源管理器中的通用字段属性
+ 
+窗体中的字段显示用户用于查看或编辑实体记录中的数据的控件。 可以将字段格式设置成在分区中最多占用四栏。  
 
 您可以在解决方案资源管理器中访问**常见字段属性**。 在**组件**下，展开**实体**，然后展开所需实体，选择**窗体**。 在窗体列表中，打开**主**类型的窗体。 然后双击字段之一查看常见字段属性。
 
-![common-field-properties](media/common-field-properties.png)
+![解决方案资源管理器中的通用字段属性](media/common-field-properties.png "解决方案资源管理器中的通用字段属性")
   
 下表介绍了所有字段具有的属性。 有些类型的字段具有特殊属性。 这些在[特殊字段属性](special-field-properties-legacy.md)中介绍。  
   

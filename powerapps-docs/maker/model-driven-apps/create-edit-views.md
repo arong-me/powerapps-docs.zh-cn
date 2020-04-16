@@ -2,7 +2,7 @@
 title: 在 Power Apps 中创建或编辑模型驱动应用视图 | MicrosoftDocs
 description: 了解如何创建或编辑视图
 ms.custom: ''
-ms.date: 06/11/2018
+ms.date: 03/19/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0835e35f5815e7704cfe3d0de24ad4429600512b
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 0d84734a618aac445f5b7dd1b46e0d9de8c97dca
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3108044"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166782"
 ---
 # <a name="understand-model-driven-app-views"></a>了解模型驱动应用程序视图
 
@@ -89,7 +89,7 @@ ms.locfileid: "3108044"
 
 ## <a name="places-where-you-can-access-the-view-editor-to-create-or-edit-views"></a>您可以访问视图编辑器以创建或编辑视图的位置
 
-- Power Apps 站点：您可以在**模型驱动**区域 > **数据** > **实体** > **视图**选项卡中访问视图设计器。打开现有视图或创建新视图。 详细信息：[创建或编辑视图](create-and-edit-views.md)
+- Power Apps 站点：若要访问视图设计器，请选择**数据** > **实体**，选择一个实体，然后选择**视图**选项卡。打开现有视图或创建一个新视图。 详细信息：[创建或编辑视图](create-and-edit-views.md)
 - 应用程序设计器：如果您在处理应用程序，可能需要使用应用程序设计器，其为已创建视图提供简单、直观且具有拖放功能的 UI。 详细信息：[教程：使用应用程序设计器创建和编辑公共视图或系统视图](create-edit-views-app-designer.md)
 - 解决方案资源管理器：如果已经体验过 Dynamics 365，可能希望使用解决方案资源管理器。 详细信息：[导航到模型驱动的高级应用程序制作和自定义区域](advanced-navigation.md#solution-explorer)
  

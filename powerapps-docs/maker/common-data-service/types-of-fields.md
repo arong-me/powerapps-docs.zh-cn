@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2b54cad59b1f5a6cc4199675308f5cd48d05240d
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 2c98ab7d40d89460995e69aed86dcdecc97ada25
+ms.sourcegitcommit: abdc8c609a7a221ce4ca6b051a84b7083bdbe1ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3108045"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225616"
 ---
 # <a name="types-of-fields"></a>字段类型
 
@@ -152,7 +152,7 @@ ms.locfileid: "3108045"
 |-----------------|-----------------|  
 |**简单**|允许对特定实体的单个引用。 所有自定义查找都是此类型。|  
 |**客户**|允许对客户或联系人记录的单个引用。|  
-|**负责人**|允许对团队或用户记录的单个引用。 所有团队或用户负责的实体具有其中之一。 详细信息：[添加团队实体充当应用程序中的查找选项](../model-driven-apps/team-entity-lookup.md)|  
+|**负责人**|允许对团队或用户记录的单个引用。 所有团队或用户负责的实体具有其中之一。 详细信息：[将实体添加为应用中的查找选项](../model-driven-apps/team-entity-lookup.md)|  
 |**PartyList**|允许对多个实体的多个引用。 这些查找在“电子邮件”实体**收件人**和**抄送**字段中。 在“电话”和“约会”实体中也使用它们。|  
 |**相关**|允许对多个实体的单个引用。 这些查找在活动中使用的相关字段中。|  
 

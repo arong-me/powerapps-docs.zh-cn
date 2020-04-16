@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cf8fdf1b14ef7bbc503c49fac217bb071bd56305
-ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
+ms.openlocfilehash: 2280ea28178a85429367ea0359660b3b94f5f99b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029754"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154710"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>解决方案检查器的常见问题和解决
 
@@ -224,7 +224,7 @@ ms.locfileid: "3029754"
 
 如果解决方案已应用了[修补程序](https://docs.microsoft.com/powerapps/developer/common-data-service/create-patches-simplify-solution-updates)，解决方案检查器将无法导出解决方案以进行分析。 在解决方案应用了修补程序后，原始解决方案将被锁定，只要将解决方案确定为父解决方案的组织中有相关修补程序，其将无法更改或导出，
 
-若要解决该问题，可以克隆解决方案，以便与解决方案相关的所有修补程都汇总到新建的解决方案中。 这将解锁解决方案并允许将解决方案从系统中导出。  有关详细信息，请参阅[克隆解决方案](use-segmented-solutions-patches-simplify-updates.md#clone-a-solution)。
+若要解决该问题，可以克隆解决方案，以便与解决方案相关的所有修补程都汇总到新建的解决方案中。 这将解锁解决方案并允许将解决方案从系统中导出。  有关详细信息，请参阅[克隆解决方案](solution-patches.md#clone-a-solution)。
 
 ## <a name="solution-checker-will-not-analyze-empty-solutions"></a>解决方案检查器不分析空解决方案
 

@@ -6,24 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
-ms.date: 09/26/2019
+ms.date: 03/20/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a87b41fd2688992b85fb4dde36a2e7119f4e7a9f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e497b7dcf1b815acfaad7df170e3801083b8433e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861235"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156558"
 ---
 # <a name="complex-entities-and-licensing"></a>复杂的实体和许可
 
 > [!IMPORTANT]
-> 本主题已过期，将很快更新以反映自 2019 年 10 月 1 日起适用的最新许可变化。 有关实体许可要求的最新信息，请参阅 [Power Apps 许可指南](https://go.microsoft.com/fwlink/?linkid=2085130)。
+> 复杂实体仅适用于 Power Apps 计划 1 和计划 2 许可证，不适用于每个应用的 Power Apps 和每个用户计划的 Power Apps。
+> 有关实体许可要求的最新信息，请参阅 [Power Apps 许可指南](https://go.microsoft.com/fwlink/p/?linkid=2085130)。
 
 包含以下复杂服务器端逻辑的实体需要使用这些实体的应用程序或流用户具有 Power Apps 计划 2 或 Power Automate 计划 2 许可证：
 

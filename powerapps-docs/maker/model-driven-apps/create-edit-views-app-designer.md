@@ -2,7 +2,7 @@
 title: 通过 Power Apps 创建和编辑模型驱动应用程序的公共视图或系统视图 | MicrosoftDocs
 description: 立即了解如何使用应用程序设计器创建或编辑视图
 keywords: ''
-ms.date: 11/27/2018
+ms.date: 03/23/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 03bfaec424624be1094314dbae763114892d2a59
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 10aa1623cbc3ff90788257641afd71ac0e149375
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884857"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166826"
 ---
 # <a name="create-and-edit-public-or-system-model-driven-app-views"></a>创建和编辑模型驱动应用程序的公共视图或系统视图
 
@@ -52,10 +52,6 @@ ms.locfileid: "2884857"
 作为应用制造者，您可使用 Power Apps 创建和编辑公共视图。
 1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。  
 
-
-    > [!IMPORTANT]
-    > “如果**模型驱动**的设计模式不可用，您可能需要[创建环境](https://docs.microsoft.com/powerapps/administrator/create-environment)。   
-  
 2.  展开**数据**，选择**实体**，选择所需实体，然后选择**视图**选项卡。 
 
 3. 在工具栏上，选择**添加视图**。 
@@ -142,9 +138,9 @@ ms.locfileid: "2884857"
 如果要通过使用多个字段筛选记录，可向视图添加多个筛选器。 
 
 1. 选择要分组的筛选器。
-    ![设置组筛选器](media/ViewAppDesigner_GroupFilter.png "Se设置组筛选器”）
+    ![设置组筛选器](media/ViewAppDesigner_GroupFilter.png "设置组筛选器")
 2. 选择“组 And”或“组 Or”为筛选器分组。
-    ![组筛选器选择](media/ViewAppDesigner_GroupFilterSelection.png "Se选择组筛选器”） 如果选择**组 And**，则视图中仅显示同时满足两个条件的记录。 如果选择**组 Or**，则显示满足任何筛选条件的记录。 例如，要仅显示优先级为“高”或“普通”且状态为“活动”的记录，请选择**组 And**。
+    ![组筛选器选择](media/ViewAppDesigner_GroupFilterSelection.png "选择组筛选器") 如果选择**组 And**，则视图中仅显示同时满足两个条件的记录。 如果选择**组 Or**，则显示满足任何筛选条件的记录。 例如，要仅显示优先级为“高”或“普通”且状态为“活动”的记录，请选择**组 And**。
 
 要从组中移除筛选器，请选择组，然后选择**取消组合**。 
 
@@ -172,7 +168,7 @@ ms.locfileid: "2884857"
 ### <a name="edit-a-public-or-system-view-in-app-designer"></a>在应用程序设计器中编辑公共视图或系统视图
 可通过添加、配置或移除列，更改公共视图或系统视图的显示方式。
 1. 在实体的**视图**列表中，选择**显示参考列表**下拉箭头 ![下拉箭头](media/DownArrow.png "下拉箭头")。
-    ![编辑视图](media/ViewAppDesigner_EditView.png "Ed编辑公共视图或系统视图”）
+    ![编辑视图](media/ViewAppDesigner_EditView.png "编辑公共视图或系统视图")
 2. 在要编辑的视图旁边，选择**打开视图设计器** ![打开视图设计器](media/dynamics365-open-designer.png "打开视图设计器")。 
 
     将在视图设计器中打开视图。 

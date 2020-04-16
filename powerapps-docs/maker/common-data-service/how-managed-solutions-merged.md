@@ -16,11 +16,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 7b6a5d741179c26799badfd6c7427e06941f5851
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3108049"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124901"
 ---
 # <a name="understand-how-managed-solutions-are-merged"></a>了解如何合并托管的解决方案
 
