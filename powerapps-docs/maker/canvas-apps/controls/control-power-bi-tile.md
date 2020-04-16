@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ac8f7a3838d29324408a6041c9ad0e9cdbcfa666
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 959f8eaee539febbb7c00441453da9bab23a1812
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74728332"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81441756"
 ---
 # <a name="power-bi-tile-control-in-power-apps"></a>Power Apps 中的 Power BI 磁贴控件
 
@@ -26,7 +26,7 @@ ms.locfileid: "74728332"
 
 没有 Power BI？ [注册](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi)。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 通过在应用内显示 **[Power BI 磁贴](https://docs.microsoft.com/power-bi/service-dashboard-tiles)** 来利用现有数据分析和报告。 在选项面板的“数据”选项卡中，设置磁贴的 Workspace、Dashboard 和 Tile 属性，指定要显示的磁贴。
 
@@ -54,7 +54,13 @@ ms.locfileid: "74728332"
 &$filter=<TableName>/<ColumnName> eq '<Value>'
 ```
 
-参数将筛选图块所源自的报表的数据集中的值。
+参数将筛选图块所源自的报表的数据集中的值。 不过，筛选功能具有以下限制：
+
+- 只能应用一个筛选器。
+- 仅支持 `eq` 运算符。
+- 字段类型必须是字符串。
+
+您可以使用 Power BI 报表中的计算字段将其他值类型转换为字符串，或将多个字段合并为一个。
 
 ## <a name="key-properties"></a>关键属性
 
@@ -68,27 +74,27 @@ ms.locfileid: "74728332"
 
 ## <a name="additional-properties"></a>其他属性
 
-[BorderColor](properties-color-border.md) – 控件边框的颜色。
+**[BorderColor](properties-color-border.md)** – 控件边框的颜色。
 
 **[BorderStyle](properties-color-border.md)** – 控件边框是“实线”、“虚线”、“点线”还是“无”。
 
 **[BorderThickness](properties-color-border.md)** – 控件边框的粗细。
 
-[DisplayMode](properties-core.md) – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
+**[DisplayMode](properties-core.md)** – 此控件是允许用户输入 (Edit)、仅显示数据 (View)，还是已禁用 (Disabled)。
 
 **[Height](properties-size-location.md)** – 控件上边缘和下边缘之间的距离。
 
-[OnSelect](properties-core.md) – 用户点击或单击某个控件时应用响应的方式。 默认情况下，将打开与磁贴关联的 Power BI 报表。
+**[OnSelect](properties-core.md)** – 用户点击或单击某个控件时应用响应的方式。 默认情况下，将打开与磁贴关联的 Power BI 报表。
 
 TileUrl – 从 Power BI 服务请求磁贴所使用的 URL。 可以通过向 URL 追加参数将单个参数传递到 Power BI 磁贴中（例如：… & "&$filter=Town/Province eq '" & ListBox1.Selected.Abbr & "'"）。 在参数中只能使用等于运算符。
 
 **[Visible](properties-core.md)** – 控件显示还是隐藏。
 
-[Width](properties-size-location.md) – 控件左边缘和右边缘之间的距离。
+**[Width](properties-size-location.md)** – 控件左边缘和右边缘之间的距离。
 
-**[X](properties-size-location.md)** - 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
+**[X](properties-size-location.md)** – 控件左边缘与其父容器（如果没有父容器，则为屏幕）左边缘之间的距离。
 
-**[Y](properties-size-location.md)** - 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
+**[Y](properties-size-location.md)** – 控件上边缘与其父容器（如果没有父容器，则为屏幕）上边缘之间的距离。
 
 ## <a name="example"></a>示例
 
