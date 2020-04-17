@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dc5ad83a127c812c2a97750ce0fbd05abee50bc7
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
-ms.translationtype: HT
+ms.openlocfilehash: b4f4576105ab29b1576fdef0bc3988433bbc1419
+ms.sourcegitcommit: 223c3d19ec4fbe43fcc7a16b76423c00f8602ecd
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76541166"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81488941"
 ---
 # <a name="test-studio-experimental"></a>Test Studio（实验性功能） 
 
@@ -59,7 +59,7 @@ Power Apps Test Studio 是一种用于编写、组织和自动执行画布应用
 
 在上面的支出应用示例中，你可以编写一个断言来验证所创建支出报表的支出行项目是否与成本无关。
 
-## <a name="best-practices"></a>最佳做法
+## <a name="best-practices"></a>最佳实践
 
 使用 Test Studio 测试画布应用时，请考虑以下最佳做法，以最大程度提高应用质量：
 
@@ -100,3 +100,11 @@ Power Apps Test Studio 是一种用于编写、组织和自动执行画布应用
 - 需要为应用启用公式级错误管理实验性功能。
 - 支持 [Select](./functions/function-select.md) 和 [SetProperty](./functions/function-setproperty.md) 函数中未列出的控件。
 - 人员类型列。
+
+## <a name="next-steps"></a>后续步骤
+
+- [使用 Test Studio](working-with-test-studio.md)
+
+### <a name="see-also"></a>另请参阅
+
+- [用 Azure DevOps 管道经典编辑器自动执行测试](test-studio-classic-pipeline-editor.md)
