@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 79ae7206c729a9628ee183e0c64c395f6a235b7c
-ms.sourcegitcommit: 86c81c9efb105d11f4def49eef823af6c69059a4
+ms.openlocfilehash: 9e3192d6eda9730250e35b7ce6cd488b89037d43
+ms.sourcegitcommit: 223c3d19ec4fbe43fcc7a16b76423c00f8602ecd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77034387"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489033"
 ---
 # <a name="working-with-test-studio-experimental"></a>使用 Test Studio（实验性功能）
 
@@ -114,7 +114,7 @@ ms.locfileid: "77034387"
     > [!NOTE]
     > 选择“在上方插入一个步骤”后，将在当前步骤的上方添加一个新的空步骤。 你还可以改用 Assert、SetProperty、Select 或 Trace 操作。 这会添加带有可编辑的相应操作公式的步骤。
 
-3. 更新步骤描述。 例如，“在数据库中对 Kudo 记录计数”。
+3. 更新步骤描述。 例如，"在数据库中计数 Kudo"。
 
 4. 在执行测试前，在操作输入中输入表达式或公式以对数据库中的记录进行计数。
 
@@ -311,7 +311,7 @@ TestSuiteResult 记录包含以下属性：
 
 - 通过电子邮件发送结果：
 
-    ```Office365.SendMailV2(“someone@example.com”, “Test case results”, JSON(TestCaseResult, JSONFormat.IndentFour))```
+    ```Office365.SendMailV2("someone@example.com", "Test case results", JSON(TestCaseResult, JSONFormat.IndentFour))```
 
 - 接收测试结果的应用通知：
 
@@ -336,3 +336,7 @@ TestSuiteResult 记录包含以下属性：
 - [SetProperty](./functions/function-setproperty.md)
 - [断言](./functions/function-assert.md)
 - [轨迹](./functions/function-trace.md)
+
+## <a name="next-steps"></a>后续步骤
+
+- [用 Azure DevOps 管道经典编辑器自动执行测试](test-studio-classic-pipeline-editor.md)
