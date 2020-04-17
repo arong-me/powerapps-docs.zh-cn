@@ -849,6 +849,10 @@
           href: ./canvas-apps/test-studio.md
         - name: 使用 Test Studio
           href: ./canvas-apps/working-with-test-studio.md
+        - name: 使用 Azure DevOps 管道自动执行测试
+          items:
+            - name: 使用经典编辑器配置管道
+              href: ./canvas-apps/test-studio-classic-pipeline-editor.md
     - name: 自定义 SharePoint 列表窗体
       items:
         - name: 进行基本更改
@@ -1638,9 +1642,11 @@
       items:
         - name: 概述
           href: ../sample-apps/emergency-response/overview.md
-        - name: 部署和配置应用
+        - name: 部署应用
           href: ../sample-apps/emergency-response/deploy-configure.md
-        - name: 使用应用
+        - name: 使用管理应用和仪表板
+          href: ../sample-apps/emergency-response/configure-data-reporting.md
+        - name: 使用移动应用
           href: ../sample-apps/emergency-response/use.md
 - name: 相互学习
   items:
