@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - PowerApps-hub
-ms.openlocfilehash: 113f2f25016ba7470264f66380a1955c6fda3d08
-ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
+ms.openlocfilehash: 28ad263c2e61973edc0068d0d9211e6a94f1e4c2
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77530825"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81441802"
 ---
 <div id="main"
    class="v2">
@@ -137,7 +137,7 @@ ms.locfileid: "77530825"
                                              </div>
                                           </div>
                                           <div class="cardText">
-                                             <h3>授权</h3>
+                                             <h3>许可</h3>
                                              <p>了解 Power Apps 的各种许可选项。</p>
                                           </div>
                                        </div>
@@ -215,7 +215,7 @@ ms.locfileid: "77530825"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>应用开发者无需编写代码即可快速创建自定义业务应用，从而管理其组织的任务关键型数据。 你可在 Power Apps 中创建三种类型的应用：<strong>画布应用</strong>、<strong>模型驱动应用</strong>和<strong>门户</strong>。 Common Data Service 是可便于安全存储和管理业务应用所用数据的数据平台。 详细信息：<a href="/powerapps/maker">创建应用</a>。</p>
+                           <p>应用开发者无需编写代码即可快速创建自定义业务应用，从而管理其组织的任务关键型数据。 你可在 Power Apps 中创建三种类型的应用：<strong>画布应用</strong>、<strong>模型驱动应用</strong>和<strong>门户</strong>。 Common Data Service 是可便于安全存储和管理业务应用所用数据的数据平台。 更多信息：<a href="/powerapps/maker">创建应用</a>。</p>
                            <hr/>
                            <br/>
                         </div>
@@ -314,7 +314,7 @@ ms.locfileid: "77530825"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-intro">什么是 Common Data Service？</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/entity-overview">实体</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/relationships-overview">实体关系</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/fields-overview">Fields</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/fields-overview">字段</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/cds-processes">应用业务逻辑</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/solutions-overview">解决方案</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/wp-security">Common Data Service 安全性</a></p>
@@ -432,7 +432,7 @@ ms.locfileid: "77530825"
                                     <h3 style="font-size: 1.15rem">资源</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">白皮书：管理 Power Apps 和 Power Automate 企业部署</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://powerapps.microsoft.com/blog/introducing-the-powerapps-center-of-excellence-starter-kit/">Power Apps Center of Excellence (CoE) 初学者工具包</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/power-platform/guidance/coe/starter-kit">Power Apps Center of Excellence (CoE) 初学者工具包</a></p>
                                  </div>
                               </div>
                            </div>
@@ -461,7 +461,7 @@ ms.locfileid: "77530825"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">入门</h3>
+                                    <h3 style="font-size: 1.15rem">开始使用</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/overview">Common Data Service：开发人员概述</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/overview">模型驱动应用：开发人员概述</a></p>
