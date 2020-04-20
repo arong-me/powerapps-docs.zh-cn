@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b5f273fcc14b7c8bd9cbde947133fd70d4a2a432
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: a3e1bb7acbe645a6a1c9ae39dfe37634ac2c2deb
+ms.sourcegitcommit: 365155c2d81a78958561b89b46285f5bcbffa853
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79035606"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224594"
 ---
 # <a name="use-keyboard-shortcuts-in-power-apps"></a>使用 Power Apps 中的键盘快捷方式
 
@@ -69,8 +69,8 @@ ms.locfileid: "79035606"
 
 |任务  | 统一接口|
 |---------|---------|
-|当焦点位于列标题上时，按列排序 | Enter 键 |
-|当焦点位于列标题上时，打开筛选器对话框 | 空格键|
+|当焦点位于列标题上时，按列排序 | 按空格键至下拉列表，然后按向下键选择操作，最后按 Enter |
+|当焦点位于列标题上时，打开筛选器对话框 | 按空格键至下拉列表，然后按向下键选择“筛选条件”  选项，最后按 Enter |
 |当焦点位于单元格上时，移动到下一个字段 |  向右键 (→)  | 
 |当焦点位于单元格上时，移动到上一个字段   |  向左键 (←)|
 |当焦点位于列标题上时，移动到下一个列标题 |  选项卡  | 
