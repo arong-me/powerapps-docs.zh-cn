@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/11/2020
+ms.date: 04/09/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 372b710115609115e8090d21821c45a1037472ab
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 4ddc8daba01d281a483d51b1ce7a42205d0c6e93
+ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125561"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "3256667"
 ---
 # <a name="about-entity-forms"></a>关于实体窗体
 
@@ -33,7 +33,7 @@ ms.locfileid: "3125561"
 > [!Note]
 > - **实体窗体**必须与窗体的指定网站的网页关联才可在网站中查看。
 > - 实体窗格中不支持连接实体子网格。 如果使用窗体设计器向窗体添加连接实体子网格，在门户中显示该窗体并使用连接实体时，将显示错误消息。
-> - 重复字段、多选选项集、自定义控件和业务规则在实体窗体中不支持。
+> - 重复字段、多选选项集、自定义控件、参与方列表字段和业务规则在实体窗体中不支持。
 > - 业务规则和客户端 API 可在只读窗体上启用锁定字段。
 > - 如果在“插入”模式下创建实体窗体，则不能更改按钮的对齐方式或在实体窗体上方放置操作按钮。
 > - 如果在窗体上将查找控件呈现为下拉列表，则相关记录筛选器将不工作。

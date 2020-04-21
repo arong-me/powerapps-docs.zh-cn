@@ -1,7 +1,7 @@
 ---
 title: Common Data Service 实体关系概述 | MicrosoftDocs
 ms.custom: ''
-ms.date: 04/25/2019
+ms.date: 04/13/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 89a28060f7894afe49d0abe36b4461d6e2cbc474
-ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
+ms.openlocfilehash: 279b2419af515b4a75265069d8b19ba348004b94
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040379"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3265092"
 ---
 # <a name="entity-relationships-overview"></a>实体关系概述
 实体关系定义记录如何在数据库中相互关联。 最简单的情况是，向实体中添加查找字段将在两个实体之间形成一个新的 1:N（一对多）关系，并使您能够将该查找字段放在窗体中。 利用查找字段，用户可以将该实体的多个*子*记录与单个*父*实体记录关联。  

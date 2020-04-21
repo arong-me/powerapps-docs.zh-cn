@@ -2,7 +2,7 @@
 title: 解决方案检查器的常见问题和解决 | Microsoft Docs
 description: " 解决方案检查器内的常见问题和解决的列表"
 keywords: ''
-ms.date: 02/11/2019
+ms.date: 04/07/2020
 ms.service: powerapps
 ms.custom:
 - ''
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2280ea28178a85429367ea0359660b3b94f5f99b
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: fb40f10fae12afb16f59c98c6e1a43c3acf64e89
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154710"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238402"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>解决方案检查器的常见问题和解决
 
@@ -46,6 +46,12 @@ ms.locfileid: "3154710"
 选择门户通知将链接到这个常见问题页面以提供进一步的疑难解答。 如果提供的常见问题之一未解决问题，还将返回一个参考编号。 请向 Microsoft 支持提供此参考编号以进行进一步调查。
 
 ![失败通知](media/solution-checker-failure-notification.png)
+
+
+## <a name="solution-checker-fails-to-check-default-solution"></a>解决方案检查器无法检查默认解决方案
+
+解决方案检查器从 Common Data Service 环境导出解决方案以进行分析。 不支持导出默认解决方案，且检查可能无法成功完成。 详细信息：[解决方案检查器无法导出较大解决方案](#solution-checker-fails-to-export-large-solutions)。
+
 
 ## <a name="solution-checker-fails-due-to-unsupported-version-of-power-apps-checker"></a>解决方案检查器由于不支持的 Power Apps 检查器版本而失败
 

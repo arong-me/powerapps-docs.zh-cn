@@ -2,7 +2,7 @@
 title: 在 Common Data Service 中创建多对多实体关系概述 | MicrosoftDocs
 description: 了解如何创建多或多实体关系
 ms.custom: ''
-ms.date: 05/29/2018
+ms.date: 04/07/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,16 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 907a1147630cc779e6c1af7be2486548f1907c5a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 5f5c0f78f94ae2ec452bcbf6f5d677723d5ede52
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865702"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238270"
 ---
 # <a name="create-many-to-many-entity-relationships-overview"></a>创建多对多实体关系概述
 
 一对多 (1:N) 实体关系确立记录之间的层次结构。 对于多对多 (N:N) 关系，没有明确的层次结构。 没有要配置的查找字段或行为。 可以将使用多对多关系创建的记录视为对等的，并且关系是相互的。  
+
+多对多关系的示例在 Dynamics 365 Sales 应用附带的两个标准实体之间定义。 “商机”实体与“竞争对手”实体有 N:N 关系。 这允许将多个竞争对手添加到商机中，并将多个商机与同一竞争对手相关联。 
   
 使用多对多关系，关系（或相交）实体存储关联实体的数据。 此实体与两个相关实体都有一对多实体关系，并且仅存储定义关系的必要值。 您无法将自定义字段添加到关系实体，并永远不会显示在用户界面中。 
   

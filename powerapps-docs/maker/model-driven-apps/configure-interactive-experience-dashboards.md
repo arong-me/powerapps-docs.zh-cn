@@ -1,12 +1,12 @@
 ---
-title: 配置 Power Apps 中模型驱动应用的交互式体验仪表板 | Microsoft Docs
-description: '了解如何配置 Power Apps 中的交互式体验仪表板 '
+title: 在 Power Apps 中创建和配置模型驱动应用的交互式体验仪表板 | Microsoft Docs
+description: 了解如何在 Power Apps 中创建和配置交互式体验仪表板
 keywords: 交互式仪表板; Customer Service; Microsoft Dynamics 365; 交互式服务中心
 author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.custom: ''
-ms.date: 04/19/2019
+ms.date: 04/08/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,20 +22,23 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fefeebb0106907e59ea1fd5a13d620cdeb315774
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 584aeae66230e94296b386023c00f95d07c51a13
+ms.sourcegitcommit: 7d3caf698d367a56af9e16c43af8005adb9f87cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884989"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3250045"
 ---
-# <a name="configure-model-driven-app-interactive-experience-dashboards"></a>配置模型驱动应用程序的交互式体验仪表板
+# <a name="create-and-configure-model-driven-app-interactive-experience-dashboards"></a>创建和配置模型驱动应用的交互式体验仪表板
 
 交互式体验仪表板可以成为应用用户（如服务代表）查看工作负荷信息和采取行动的一站式工作区。 它们完全可配置，以安全角色为基础，且可跨多个流实时传送工作负荷信息。 交互式仪表板用户不需要在应用程序中翻页查找特定记录；他们可以直接从仪表板执行操作。 
 
  交互式体验仪表板有两种形式：多流和单流。 此外，多流仪表板可以是主页仪表板或实体特定仪表板。 实体特定仪表板是在用户界面的不同部分中配置的，且部分预加载了特定于实体的配置信息。  
   
  多流仪表板通过多个数据流实时显示数据。 您可以在仪表板上配置的流的数量没有限制。 一个流中的数据只能基于一个实体，但每个流可以基于一个不同的实体。 在实体特定仪表板中，所有流均基于同一实体。 数据从各种视图或队列中流出，例如**我的活动**、**我的案例**或**银行队列中的案例**。 
+ 
+> [!NOTE]
+> 此处描述的示例使用“案例”实体，该实体在 Dynamics 365 Customer Service 应用中提供。
   
  单流仪表板通过一个基于实体视图或队列的流来显示实时数据。 磁贴位于仪表板的右侧，并且始终都会显示。 单流仪表板通常对第 2 层服务领导或经理很有帮助，他们监控数量较少但更复杂或已升级的案例。  
   
@@ -97,11 +100,12 @@ ms.locfileid: "2884989"
   
 ### <a name="configure-the-appears-in-global-filter-in-interactive-experience-option"></a>配置“以交互式体验显示在全局筛选器中”选项
 
-1. 打开[解决方案资源管理器](advanced-navigation.md#solution-explorer)。  
-2. 在**组件**下，展开**实体**，然后展开所需实体。
-3. 在导航窗格中，选择**字段**，然后在网格中，双击要启用的字段。
-4. 在**常规**选项卡中，选中**以交互式体验的形式显示在全局筛选器中**复选框。 选择**保存并关闭**。
-5. 选择**发布所有自定义项**使您的更改生效。
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
+2.  选择**解决方案**，打开您需要的解决方案，然后在工具栏上，选择**切换到经典**。 
+3. 在**组件**下，展开**实体**，然后展开所需实体。
+4. 在导航窗格中，选择**字段**，然后在网格中，双击要启用的字段。
+5. 在**常规**选项卡中，选中**以交互式体验的形式显示在全局筛选器中**复选框。 选择**保存并关闭**。
+6. 选择**发布所有自定义项**使您的更改生效。
   
  当在仪表板标题上单击全局筛选器图标时，您为**以交互式体验显示在全局筛选器中**启用的字段将显示在全局筛选器浮出控件窗口中。 在浮出控件窗口中，服务代表可以选择他们要在图表中，以及在基于筛选器实体的流和磁贴中对其进行全局筛选的字段。   
   
@@ -114,11 +118,12 @@ ms.locfileid: "2884989"
   
 ### <a name="configure-the-sortable-in-interactive-experience-dashboard-option"></a>配置“在交互式体验仪表板中可排序”选项
   
-1. 打开[解决方案资源管理器](advanced-navigation.md#solution-explorer)。  
-2. 在**组件**下，展开**实体**，然后展开所需实体。
-3. 在导航窗格中，选择字段，然后在网格中，双击要启用的字段。
-4. 在**常规**选项卡中，选中**在交互式体验仪表板中可排序**复选框。 选择**保存并关闭**。
-5. 选择**发布所有自定义项**使您的更改生效。
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
+2.  选择**解决方案**，打开您需要的解决方案，然后在工具栏上，选择**切换到经典**。 
+3. 在**组件**下，展开**实体**，然后展开所需实体。
+4. 在导航窗格中，选择**字段**，然后在网格中，双击要启用的字段。
+5. 在**常规**选项卡中，选中**在交互式体验仪表板中可排序**复选框。 选择**保存并关闭**。
+6. 选择**发布所有自定义项**使您的更改生效。
   
 为排序配置的字段将在流标题上的下拉列表中显示。 
 
@@ -131,44 +136,50 @@ ms.locfileid: "2884989"
   
 #### <a name="enable-security-roles-for-interactive-dashboards"></a>为交互式仪表板启用安全角色
 
-1. 打开[解决方案资源管理器](advanced-navigation.md#solution-explorer)。  
+1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
   
-2. 在**组件**下，选择**仪表板**。  
+2.  选择**解决方案**，然后打开您需要的解决方案。 
+
+3.  选择所需的仪表板，然后在工具栏上选择**启用安全角色**。 
   
-3.  在网格中，选择所需的交互式仪表板并选择任务栏上的**启用安全角色**。  
-  
+    > [!div class="mx-imgBorder"] 
+    > ![启用安全角色](media/dashboard-enable-security-roles.png)
+
 4.  在**分派安全角色**对话框，选择**仅向这些选定安全角色显示**选项，然后选择要启用的角色。 选择**确定**。  
+
+     ![启用安全角色](media/security-roles.png "启用安全角色")    
   
-5.  选择**发布所有自定义项**使您的更改生效。    
+5.  选择**发布**以便使所做的更改生效。    
   
- ![启用安全角色](media/security-roles.png "启用安全角色")    
   
 <a name="BKMK_Configure"></a>   
-## <a name="configure-interactive-experience-dashboards"></a>配置交互式体验仪表板  
- 以下部分介绍如何配置各种类型的交互式仪表板。  
+## <a name="create-interactive-experience-dashboards"></a>创建交互式体验仪表板  
+以下部分介绍如何创建然后配置各种类型的交互式仪表板。  
   
 ### <a name="configure-a-multi-stream-interactive-dashboard-using-the-4-column-layout"></a>使用 4 列布局来配置多流交互式仪表板  
  
 1.  登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 
   
-2.  选择**数据** > **实体** > 选择所需实体。 
+2.  选择**解决方案**，打开您需要的解决方案，然后在工具栏上，选择**切换到经典**。 
 
-3.  选择**仪表板**选项卡，然后在工具栏上选择**添加仪表板**。 
+3.  在左侧导航窗格中，选择**仪表板**，在工具栏上选择**新建**，然后选择**交互式体验仪表板**。 
+
+    ![新建交互式体验仪表板](media/interactive-exp-dash-sol-explorer.png)
   
 4.  选择布局，2、3 或 4 列宽。  
   
 5.  仪表板窗体打开后，在窗体的顶部填写筛选信息，如下所示。  
  
- > [!div class="mx-imgBorder"] 
- > ![添加可视筛选器](media/interactive-dashboards-add-visual-filters.png "添加可视筛选器")  
+    > [!div class="mx-imgBorder"] 
+    > ![添加可视筛选器](media/interactive-dashboards-add-visual-filters.png "添加可视筛选器")  
   
    - **筛选器实体**：可视筛选器和全局筛选器属性基于此实体。  
       
-    - **实体视图**：可视筛选器基于此视图。  
+   - **实体视图**：可视筛选器基于此视图。  
       
-    - **筛选依据**：对其应用时间范围筛选器的字段。  
+   - **筛选依据**：对其应用时间范围筛选器的字段。  
       
-    - **时间范围**：**筛选依据**字段的默认时间范围筛选器值。  
+   - **时间范围**：**筛选依据**字段的默认时间范围筛选器值。  
       
  指定筛选信息后，请开始为图表和数据流添加组件。 若要添加组件，只需选择图表或流中间的元素，当对话框出现时，从下拉列表中选择所需的信息，如以下插图所示。  
   
@@ -205,23 +216,17 @@ ms.locfileid: "2884989"
   
 1. 登录到 [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。   
   
-2. 选择**数据** > **实体** > 选择所需实体。 选择**仪表板**选项卡。  
+2. 选择**解决方案**，打开您需要的解决方案，然后打开交互式仪表板。  
   
-     -或-  
-   
-   打开[解决方案资源管理器](advanced-navigation.md#solution-explorer)，然后在**组件**下选择**仪表板**。
+3.  选择要编辑的流以选中它，然后选择**编辑组件**。  
   
-3.  在网格中，选择要编辑的交互式仪表板，以将其打开。  
+4.  根据您想要将视图还是队列添加至流，选择流的视图或队列详细信息，然后选择**设置**。  
   
-4.  选择要编辑的流以选中它，然后选择**编辑组件**。  
+5.  选择**保存**。  
   
-5.  根据您想要将视图还是队列添加至流，选择流的视图或队列详细信息，然后选择**设置**。  
+ 您还可从仪表板删除单个流。 为此，选择该流，然后在工具栏上，选择**删除**。  
   
-6.  选择**保存**。  
-  
- 您还可从仪表板删除单个流。 为此，选择该流，然后在命令栏上，选择**删除**。  
-  
-### <a name="configure-an-entity-specific-dashboard"></a>配置实体特定仪表板  
+### <a name="create-an-entity-specific-dashboard"></a>创建实体特定仪表板  
  实体特定仪表板是多流仪表板。 配置此仪表板类似于配置主页多流仪表板，但您要在 UI 中的不同位置执行此操作，还有其他细微差异。 
 
 例如，实体特定仪表板中的某些字段已预设为您为其创建仪表板的实体，您不必选择实体。  
@@ -244,7 +249,7 @@ ms.locfileid: "2884989"
   
 <a name="BKMK_ConfigureColors"></a>   
 ## <a name="configure-dashboard-colors"></a>配置仪表板颜色  
- 对于所有**选项集**和**两个选项**类型字段（如**案例**实体的**案例类型**、**IsEscalated** 或**优先级**），您可以配置某个特定颜色，该颜色将在图表和流中针对特定字段值显示。 例如，在交互式图表中，高优先级案例可以显示为红色，中优先级案例可以显示为蓝色，低优先级案例可以显示为绿色。 在流中，工作项说明旁边的颜色中将有一条细竖线。  
+对于所有**选项集**和**两个选项**类型字段（如**案例**实体的**案例类型**、**IsEscalated** 或**优先级**），您可以配置某个特定颜色，该颜色将在图表和流中针对特定字段值显示。 例如，在交互式图表中，高优先级案例可以显示为红色，中优先级案例可以显示为蓝色，低优先级案例可以显示为绿色。 在流中，工作项说明旁边的颜色中将有一条细竖线。  
   
 > [!NOTE]
 >  颜色编码不可用于标记图和圆环图。 这些图表在仪表板上显示为白色、灰色和黑色阴影。  
@@ -258,7 +263,7 @@ ms.locfileid: "2884989"
   
 5.  当**修改列表值**对话框出现时，在**颜色**文本框中设置新值。 选择**确定**。  
   
-     选择**保存并关闭**。  
+6.  选择**保存并关闭**。  
   
 7.  选择**发布**以便使所做的更改生效。  
   
@@ -267,7 +272,7 @@ ms.locfileid: "2884989"
  > [!div class="mx-imgBorder"] 
  > ![更改仪表板中的颜色](media/edit-color.png "更改仪表板中的颜色")  
   
-当**修改列表值**对话框打开时，选择颜色，如下所示：  
+当**修改列表值**对话框打开时，输入十六进制颜色代码，如此处显示的 #800000：  
   
  ![修改仪表板颜色](media/modify-color.png "修改仪表板颜色")  
 
