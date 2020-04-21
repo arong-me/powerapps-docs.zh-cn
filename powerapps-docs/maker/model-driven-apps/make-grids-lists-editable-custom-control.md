@@ -2,7 +2,7 @@
 title: 通过 Power Apps 使用可编辑网格自定义控件将模型驱动应用程序网格（列表）设置为可编辑 | MicrosoftDocs
 description: 了解如何使用可编辑网格自定义控件
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 04/09/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 866c058ad873fa278ee0bb8bf026983ed0201df7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: edb149b72716eb22e97ffce2d54a14be3bf84de5
+ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2867971"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258503"
 ---
 # <a name="make-model-driven-app-grids-lists-editable-using-the-editable-grid-custom-control"></a>使用可编辑网格自定义控件将模型驱动应用程序网格（列表）设置为可编辑
 
@@ -47,7 +47,7 @@ ms.locfileid: "2867971"
   
 -   通过键盘或鼠标导航  
   
--   分组和排序（可以按当前视图中的任何列分组/排序）  
+-   分组和排序（可以按当前视图中的任何列分组/排序客户端上的记录）  
   
 -   筛选  
   
@@ -140,7 +140,11 @@ ms.locfileid: "2867971"
 |客户<br /><br /> 约会<br /><br /> 可预订的资源<br /><br /> 可预订资源的预订<br /><br /> 可预订资源的预订标题<br /><br /> 可预订资源的类别<br /><br /> 可预订资源的类别 Assn<br /><br /> 可预订资源的特征<br /><br /> 可预订资源组<br /><br /> 预订状态<br /><br /> 案例<br /><br /> 类别<br /><br /> 特征<br /><br /> 竞争对手<br /><br /> 联系人<br /><br /> 电子邮件<br /><br /> 权利<br /><br /> 反馈<br /><br /> 发票<br /><br /> 知识文章<br /><br /> 知识文章视图<br /><br /> 知识库记录<br /><br /> 潜在顾客<br /><br /> 商机<br /><br /> 订单<br /><br /> 电话联络<br /><br /> 价目表<br /><br /> 产品<br /><br /> 队列<br /><br /> 报价单<br /><br /> 评分模型<br /><br /> 评分值<br /><br /> SLA KPI 实例<br /><br /> 社交活动<br /><br /> 社区个人资料<br /><br /> 同步错误<br /><br /> 任务<br /><br /> 团队<br /><br /> 用户|活动<br /><br /> 附件<br /><br /> 渠道访问配置文件规则项<br /><br /> 竞争对手地址<br /><br /> 连接<br /><br /> 连接角色<br /><br /> 电子邮件签名<br /><br /> 电子邮件模板<br /><br /> 已过期流程<br /><br /> 发票产品<br /><br /> 知识文章事件<br /><br /> 潜在顾客转化为商机销售<br /><br /> 进程<br /><br /> 邮箱<br /><br /> 新流程<br /><br /> 注释<br /><br /> 商机产品<br /><br /> 商机销售流程<br /><br /> 订单产品<br /><br /> 组织<br /><br /> 电话转化为案例流程<br /><br /> 价目表项<br /><br /> 队列项<br /><br /> 报价单产品<br /><br /> Sharepoint 文档<br /><br /> 翻译流程|市场活动<br /><br /> 市场活动项目<br /><br /> 市场活动响应<br /><br /> 渠道访问配置文件<br /><br /> 渠道访问配置文件规则<br /><br /> 合同<br /><br /> 权利模板<br /><br /> 外部参与方<br /><br /> 传真<br /><br /> 信件<br /><br /> 市场营销列表<br /><br /> 位置<br /><br /> 快速市场活动<br /><br /> 定期约会<br /><br /> 销售宣传资料<br /><br /> SLA|  
  
 ##  <a name="data-types-that-arent-editable-in-an-editable-grid"></a>可编辑网格中不可编辑的数据类型
-以下数据类型在可编辑网格中不可编辑：客户和 Partylist 查找字段、复合（地址）字段、状态字段、与查找实体有关的字段（如客户实体包含联系人查找，其中的联系人字段可编辑，但是 EmailAddress(Contact) 字段不可编辑）。  
+以下数据类型在可编辑网格中不可编辑：客户和 Partylist 查找字段、复合（地址）字段、状态字段、与查找实体有关的字段（如客户实体包含联系人查找，其中的联系人字段可编辑，但是 EmailAddres(Contact) 字段不可编辑）。 
+
+## <a name="group-by-views-work-on-client-side-only"></a>按视图分组仅在客户端可用
+分组行为仅在客户端可用，不能跨页面。 “分组依据”是仅限客户端使用的功能，只能在一个数据页上使用。 “分组依据”不会根据服务器上的完整数据集向您显示所有选项。 “分组依据”仅显示当前页上的分组。 您可以通过使用自定义控件配置中的属性来禁用分组。 详细信息：[将主网格设置为可编辑](#make-main-grids-editable)
+
  
 ## <a name="next-steps"></a>后续步骤  
  [在可编辑网格中使用键盘快捷方式](https://docs.microsoft.com/dynamics365/customer-engagement/basics/keyboard-shortcuts#editable-grids-views)

@@ -2,7 +2,7 @@
 title: 解决方案层 | MicrosoftDocs
 description: 了解如何使用解决方案层
 keywords: ''
-ms.date: 02/05/2020
+ms.date: 03/13/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1b5d71f8683b5cb86f79d90540dcf5aa99f6415d
-ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
+ms.openlocfilehash: 9c9e95e477e2ccb0bce9eac2256221486412f584
+ms.sourcegitcommit: 6fce86edacd9bfe49f8114a2a69bc18302cd01f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3114210"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260672"
 ---
 # <a name="solution-layers"></a>解决方案层
 
@@ -67,6 +67,12 @@ Common Data Service 用于合并自定义项的进程强调维护解决方案的
 
    > [!div class="mx-imgBorder"] 
    > ![解决方案层的所有属性](media/solution-layers-all-prop.png "解决方案层的所有属性")
+5. 选择 **LocalizedLabels** 选项卡可显示在解决方案层中有标签字段的组件的信息。 将按照 **languageid** 列中所示显示基本语言和任何导入的翻译文本。 如果不存在任何标签，将不显示该选项卡。  
+   > [!div class="mx-imgBorder"] 
+   > ![解决方案层本地化标签](media/localized-labels.png "解决方案层本地化标签")
+
+    选择标签查看其完全分层。
 
 ### <a name="see-also"></a>另请参阅
+[翻译模型驱动应用程序的可本地化文本](../model-driven-apps/translate-localizable-text.md) <br />
 [解决方案概述](solutions-overview.md)

@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 01/03/2020
 ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 5328415e8f55d9997bbe14a9ecca271b12a9ae31
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 37a515486afd2c57fa07cea24905584e9515ba60
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979545"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238490"
 ---
 # <a name="azure-ad-b2c-provider-settings-for-portals"></a>门户的 Azure AD B2C 提供程序设置
 
@@ -28,29 +28,31 @@ ms.locfileid: "2979545"
 |-------------------|-------|-----------------------------------------------------------------------|
 | 应用程序名称  |       | 作为信赖方表示门户的应用程序的名称 |
 | 应用程序 ID    |       | 在 Azure Active Directory B2C 中创建的与应用程序有关的应用程序商店 ID。  |
-| Policy-Signin-URL |       | 在元数据端点中定义的颁发者 (iss) URL。                |
+| 颁发者 URL |       | 在元数据端点中定义的颁发者 (iss) URL。                |
 | Federation-Name   |       | 用于标识联合提供程序类型的唯一名称，例如“B2C”。 这将用于在站点设置名称中对此特定提供程序的配置设置分组。                                                                      |
 | | | |
 
 ### <a name="use-azure-ad-b2c-as-an-identity-provider-for-your-portal"></a>使用 Azure AD B2C 作为您的门户的身份提供程序
 
 1. 登录到您的 [Azure 门户](https://portal.azure.com/)。
-2. [创建 Azure AD B2C 租户](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-get-started)。
-3. 选择最左侧导航栏上的 **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C**。
-4. [创建 Azure 应用程序](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration#register-a-web-application)。
+1. [创建 Azure AD B2C 租户](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-get-started)。
+1. 选择最左侧导航栏上的 **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C**。
+1. [创建 Azure 应用程序](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration#register-a-web-application)。
 
    > [!Note]
    > 您必须为**允许隐式流程**字段选择**是**，并在**回复 URL** 字段中指定您的门户 URL。 **回复 URL** 字段中的值应使用 [门户域]/登录-[联合-名称] 格式。 例如，`https://contosocommunity.microsoftcrmportals.com/signin-B2C`。
 
-5. 复制应用程序名称，然后输入为上表中的应用程序-名称的值。
-6. 复制应用程序 ID，然后输入为上表中的应用程序-ID 的值。
-7. [创建注册或登录策略](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-sign-up-or-sign-in-policy)。
-8. 选择策略，然后选择 **编辑**。
-9. 选择**令牌、会话和 SSO 配置**。
-10. 从**颁发者 (iss) 声明**列表中，选择路径中有 **/tfp** 的 URL。
-11. 保存策略。
-12. 选择**此策略的元数据端点**字段中的 URL。
-13. 复制颁发者字段的值并作为上表中的策略-登录-URL 的值输入。 
+1. 复制应用程序名称，然后输入为上表中的应用程序-名称的值。
+1. 复制应用程序（客户端）ID，然后输入为上表中的应用程序 ID 的值。
+1. [创建注册或登录策略](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-sign-up-or-sign-in-policy)。
+1. 导航到 **Azure AD B2C** 资源。
+1. 选择“策略”下的**用户流**。
+1. 选择新创建的“注册和登录”策略。
+1. 从**设置**列表中，选择**属性**
+1. 在**令牌兼容性设置**下，从**颁发者 (iss) 声明**列表中，选择路径中有 **/tfp** 的 URL。
+1. 保存策略。
+1. 选择**此策略的元数据端点**字段中的 URL。
+1. 复制颁发者字段的值并作为上表中的颁发者 URL 的值输入。 
 
 ## <a name="portal-configuration"></a>门户配置
 
@@ -64,7 +66,7 @@ ms.locfileid: "2979545"
 5. 创建以下站点设置：
    -   **名称**：身份验证/OpenIdConnect/[联合-名称]/机构
 
-       **值**：[策略-登录-URL]
+       **值**：[颁发者 URL]
    -   **名称**：身份验证/OpenIdConnect/[联合-名称]/ClientId
 
        **值**：[应用程序-ID]
@@ -80,7 +82,7 @@ ms.locfileid: "2979545"
 7. 若要将您的门户硬编码到一个身份提供程序，请创建以下站点设置：
    - **名称**：Authentication/Registration/LoginButtonAuthenticationType
 
-     **值**：[策略-登录-URL]
+     **值**：[颁发者 URL]
 
 8. 若要支持密码重置，请创建[此处](#password-reset) 描述的所需站点设置。
 9. 若要支持声明映射，请创建[此处](#claims-mapping) 描述的所需站点设置。
@@ -94,7 +96,7 @@ ms.locfileid: "2979545"
 | 站点设置                                                        | 说明                                                                                                          |
 |---------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | 身份验证/OpenIdConnect/[联合-名称]/PasswordResetPolicyId | 密码重置策略的 ID。                                                                                     |
-| 身份验证/OpenIdConnect/[联合-名称]/ValidIssuers         | 包括 [策略-登录-URL] 的颁发者和密码重置策略的颁发者的逗号分隔的列表。 |
+| 身份验证/OpenIdConnect/[联合-名称]/ValidIssuers         | 包括 [颁发者 URL] 的颁发者和密码重置策略的颁发者的逗号分隔的列表。 |
 |身份验证/OpenIdConnect/[联合-名称]/DefaultPolicyId | 登录或注册 ID 策略。|
 |||
 

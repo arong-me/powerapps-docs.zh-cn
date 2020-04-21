@@ -12,12 +12,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d5ce493618d5a7b7d736f56714fcfa2a1c6ba068
-ms.sourcegitcommit: da1a13776f3e27d6b3d2157d17196681e6fe3619
+ms.openlocfilehash: b85441d10f3079e90f911939d3752e5ccce91bc6
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "2922812"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238314"
 ---
 # <a name="create-a-custom-entity"></a>创建自定义实体
 在 Power Apps 中，*实体*定义您要以记录形式跟踪的信息，通常包括公司名称、地点、产品、电子邮件和电话等属性。 然后您可以通过开发引用该实体的应用程序来显示该数据。 Power Apps 提供标准的“现成”实体来覆盖组织内的典型情形（如跟踪约会），但是有时您可能需要创建自定义实体来存储特定于组织的数据。
@@ -66,7 +66,7 @@ ms.locfileid: "2922812"
       > [!Note]
       > 创建实体前确保选中**显示在活动菜单中**选项。
 
-    f. 展开**创建和更新设置**，然后选中**启用快速创建窗体**复选框。 此选项确保您可以使用快速创建窗体创建记录。
+    f. 展开**创建和更新设置**，然后选中**启用快速创建窗体**复选框。 此选项可确保您可以使用快速创建窗体创建记录。
     
     g. 完成后，请单击**创建**。
      

@@ -1,29 +1,27 @@
 ---
 title: 实体的许可证要求 | Microsoft Docs
 description: 阐述 Common Data Service 内实体的许可证要求。
-author: lancedMicrosoft
-manager: kvivek
+author: KumarVivek
 ms.service: powerapps
-ms.component: cds
 ms.topic: conceptual
-ms.date: 03/20/2020
-ms.author: lanced
+ms.date: 04/15/2020
+ms.author: kvivek
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0a6b950c35043ecf47f45373f758ce62953945e7
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: eddcaff1464b0ac541b97f19889e2635f47d9cd9
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156514"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3264772"
 ---
 # <a name="license-requirements-for-entities"></a>实体的许可证要求
 
 > [!IMPORTANT]
-> 有关实体许可要求的最新信息，请参阅 [Power Apps 许可指南](https://go.microsoft.com/fwlink/p/?linkid=2085130)。
+> 本主题已过期，将很快更新以反映自 2019 年 10 月 1 日起适用的最新许可变化。 有关实体许可要求的最新信息，请参阅 [Power Apps 许可指南](https://go.microsoft.com/fwlink/p/?linkid=2085130)。
 
 应用程序制造者可以使用 Common Data Service 内提供的多数实体（包括自定义实体或属于通用数据模型一部分的实体）来为有 Power Apps 计划 1 或 Power Automate 计划 1 许可证的用户创建应用程序和流。 在有些情况下，实体包含复杂的业务逻辑或绑定到需要应用程序用户具有特定许可证的 Dynamics 365 应用程序。 
 
